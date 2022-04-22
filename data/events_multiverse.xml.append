@@ -8429,7 +8429,7 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		  </choice>
 		</event>
 		<event name="FM_MODULAR_HULL_CAPSTONE_PARTICLE">
-		  <text>Install the Particlized Shields? [8 Layer Energy Shield (Stacks with others), but Shields take twice as long to recharge.]</text>
+		  <text>Install the Particlized Shields? [8 Layer Energy Shield (Stacks with others), but Shields recharge speed is reduced by 50%]</text>
 		  <choice req="pilot" max_group="1" blue="false">
 		    <text>Install the Particlized Shields.</text>
 		    <event>
@@ -8455,7 +8455,7 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		  </choice>
 		</event>
 		<event name="FM_MODULAR_HULL_CAPSTONE_UPLINK">
-		  <text>Install the Weapon Uplink Matrices? [Crew take -5% less damage and deal 25% more for each powered weapon bar, however weapons cooldown 40% slower.]</text>
+		  <text>Install the Weapon Uplink Matrices? [Crew take -5% less damage and deal 25% more for each powered weapon bar, however weapons recharge 40% slower.]</text>
 		  <choice req="pilot" max_group="1" blue="false">
 		    <text>Install the Weapon Uplink Matrices.</text>
 		    <event>
@@ -8481,7 +8481,7 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		  </choice>
 		</event>
 		<event name="FM_MODULAR_HULL_CAPSTONE_PERFECT">
-		  <text>Install the Perfect Onboard Efficency? [+5% reload and sheild recharge speed, +5% to all crew stats]</text>
+		  <text>Install the Perfect Onboard Efficency? [+5% reload and shield recharge speed, +5% to all crew stats]</text>
 		  <choice req="pilot" max_group="1" blue="false">
 		    <text>Perfect your Onboard Efficency.</text>
 		    <event>

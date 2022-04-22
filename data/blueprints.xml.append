@@ -12299,7 +12299,6 @@ Buy/Sell Price: 120~/60~
 	<title> Drone Boost MK II</title>
 	<desc>Your drones gain tripled movement and a 50% boost to combat/sabotage damage and repair/extinguishing speed. Stacks with other boosters.</desc>
 	<cost>0</cost>
-	<cost>0</cost>
 	<rarity>0</rarity>
 	<stackable>false</stackable>
 </augBlueprint>
@@ -12316,7 +12315,6 @@ Buy/Sell Price: 120~/60~
 	<title> Drone Boost MK KAI</title>
 	<desc>Your crew drones recharge their abilities twice as fast.</desc>
 	<cost>0</cost>
-	<cost>0</cost>
 	<rarity>0</rarity>
 	<stackable>false</stackable>
 </augBlueprint>
@@ -12324,7 +12322,6 @@ Buy/Sell Price: 120~/60~
 <augBlueprint name="NANOMACHINE_ARMOR_ENEMY">
 	<title>NANOMACHINE_ARMOR</title>
 	<desc>Your crew drones recharge their abilities twice as fast.</desc>
-	<cost>0</cost>
 	<cost>0</cost>
 	<rarity>0</rarity>
 	<stackable>false</stackable>
@@ -12334,7 +12331,6 @@ Buy/Sell Price: 120~/60~
 	<title>Garden Kindling</title>
 	<desc>Gives your Orchid Fire-Lilys the active ability to start a fire every 15 seconds.</desc>
 	<cost>0</cost>
-	<cost>0</cost>
 	<rarity>0</rarity>
 	<stackable>false</stackable>
 </augBlueprint>
@@ -12343,7 +12339,6 @@ Buy/Sell Price: 120~/60~
 	<title>Greenhouse Kindling</title>
 	<desc>Gives your Orchid Fire-Lilies the active ability to start a fire every 15 seconds.</desc>
 	<cost>0</cost>
-	<cost>0</cost>
 	<rarity>0</rarity>
 	<stackable>false</stackable>
 </augBlueprint>
@@ -12351,7 +12346,6 @@ Buy/Sell Price: 120~/60~
 <augBlueprint name="FIRE_HEART">
 	<title>Scrapmetal Fireheart</title>
 	<desc>"Fuel the fires, Feel the heat!" All normal Lanius crew heal from fire, have a slower oxygen drain, and deal 20% less combat damage.</desc>
-	<cost>0</cost>
 	<cost>0</cost>
 	<rarity>0</rarity>
 	<stackable>false</stackable>
@@ -12414,7 +12408,7 @@ Buy/Sell Price: 120~/60~
 <augBlueprint name="TWISTED_LOSTSUN">
 	<title>Reality-Bent Vessel</title>
 	<desc>This vessel can only survive for 75 seconds in combat before tearing itself apart via the FTL drive. End battles quickly or suffer an instant death.</desc>
-	<cost>0</cost>
+	<cost>75</cost>
 	<bp>9</bp>
 	<rarity>0</rarity>
 	<stackable>false</stackable>
@@ -12448,7 +12442,7 @@ Buy/Sell Price: 120~/60~
 <augBlueprint name="LOCKED_SUPER_DEPRESSION">
 	<title>Motivation Succer</title>
 	<desc>Casts a depressive effect on the enemy crew, causing them to drain one more power than usual from their own systems.</desc>
-	<cost>0</cost>
+	<cost>5</cost>
 	<rarity>0</rarity>
 	<stackable>false</stackable>
 </augBlueprint>
@@ -12471,7 +12465,7 @@ Buy/Sell Price: 120~/60~
 <augBlueprint name="PACIFISTIC_REGENERATION">
 	<title>Pacifistic Regeneration</title>
 	<desc>For every living enemy crew aboard your ship, all allied crew constantly regenerate at 2.0 hp/s (only affects crew aboard your own ship.)</desc>
-	<cost>0</cost>
+	<cost>50</cost>
 	<rarity>0</rarity>
 	<stackable>false</stackable>
 	<bp>0</bp>
@@ -12524,7 +12518,7 @@ Buy/Sell Price: 120~/60~
   <augBlueprint name="FM_MODULAR_HULL_FORTIFIED">
     <title>Fortified Plating</title>
     <desc>+10% hull resist</desc>
-    <cost>0</cost>
+    <cost>40</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
@@ -12532,7 +12526,7 @@ Buy/Sell Price: 120~/60~
   <augBlueprint name="FM_MODULAR_HULL_ENCASED">
     <title>Encased Systems</title>
     <desc>+15% sys resist</desc>
-    <cost>0</cost>
+    <cost>40</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
@@ -12540,23 +12534,56 @@ Buy/Sell Price: 120~/60~
   <augBlueprint name="FM_MODULAR_HULL_RESILIENT">
     <title>Resilient Construction</title>
     <desc>-20% mult sabotage on ship</desc>
-    <cost>0</cost>
+    <cost>25</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_SCRAP">
+	<augBlueprint name="FM_MODULAR_HULL_GUARDIAN">
+		<title>Guardian Protocols</title>
+		<desc>your crew takes 13% less damage (multiplicatively)</desc>
+		<cost>30</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="FM_MODULAR_HULL_FLOORING">
+		<title>Inteligent Flooring</title>
+		<desc>your crew move 45% faster on your ship and enemy crew moves 15% slower on your ship (multiplicatively)</desc>
+		<cost>20</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="FM_MODULAR_HULL_AERO">
+		<title>Inspirational Aerosols</title>
+		<desc>your crew recharge abilities 100% faster(linear), enemy crew recharge their ability 30% slower(multiplicatively)</desc>
+		<cost>90</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="FM_MODULAR_HULL_RESPIRATION">
+		<title>Enhanced Respiration Grid</title>
+		<desc>x0.8 suffocation speed for your crew on your ship, scales multiplicatively for each power in your o2 system (no effect at 0 power)</desc>
+		<cost>45</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="FM_MODULAR_HULL_SCRAP">
     <title>Scrap Magnet Module</title>
     <desc>A small scrap collection magnet that raises scrap income by 5%</desc>
-    <cost>0</cost>
+    <cost>25</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
+	<!--page 2-->
 	<augBlueprint name="FM_MODULAR_HULL_VENGEANCE1">
     <title>Prismatic Hullguard Cultivator</title>
     <desc>60% to fire two lasers that deal 1 damage(10% fire)</desc>
-    <cost>0</cost>
+    <cost>50</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
@@ -12564,7 +12591,7 @@ Buy/Sell Price: 120~/60~
 	<augBlueprint name="FM_MODULAR_HULL_VENGEANCE2">
     <title>Crystalline Hullguard Cultivator</title>
     <desc>60% to fire two crystals that deal 1 damage(1sp, 40% fire and breach)</desc>
-    <cost>0</cost>
+    <cost>65</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
@@ -12572,343 +12599,298 @@ Buy/Sell Price: 120~/60~
 	<augBlueprint name="FM_MODULAR_HULL_VENGEANCE3">
     <title>Forgefire Hullguard Cultivator</title>
     <desc>60% to fire two magnetic fragments that deal 2 damage(10sp, 100% accuracy 10% fire and 50% breach, hullbust)</desc>
-    <cost>0</cost>
+    <cost>80</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
+	<!--turrets-->
   <augBlueprint name="FM_MODULAR_HULL_TURRET_MED">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
-
-  <augBlueprint name="FM_MODULAR_HULL_TURRET_CLONE">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>Modular Turret (med)</title>
+    <desc>7 dps to enemy crew/drones in this system.</desc>
+    <cost>45</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_TURRET_OXYGEN">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>Modular Turret (oxygen)</title>
+    <desc>7 dps to enemy crew/drones in this system.</desc>
+    <cost>45</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_TURRET_TELEPORTER">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>Modular Turret (teleporter)</title>
+    <desc>7 dps to enemy crew/drones in this system.</desc>
+    <cost>45</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_TURRET_ARTILLERY">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>Modular Turret (artillery)</title>
+    <desc>7 dps to enemy crew/drones in this system.</desc>
+    <cost>45</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_TURRET_CLOAKING">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>Modular Turret (cloak)</title>
+    <desc>7 dps to enemy crew/drones in this system.</desc>
+    <cost>45</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_TURRET_MIND">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>Modular Turret (mind)</title>
+    <desc>7 dps to enemy crew/drones in this system.</desc>
+    <cost>45</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_TURRET_HACKING">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>Modular Turret (hacking)</title>
+    <desc>7 dps to enemy crew/drones in this system.</desc>
+    <cost>45</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_TURRET_DRONES">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>Modular Turret (drones)</title>
+    <desc>7 dps to enemy crew/drones in this system.</desc>
+    <cost>45</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_TURRET_ENGINES">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>Modular Turret (engines)</title>
+    <desc>7 dps to enemy crew/drones in this system.</desc>
+    <cost>45</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_TURRET_WEAPONS">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>Modular Turret (weapons)</title>
+    <desc>7 dps to enemy crew/drones in this system.</desc>
+    <cost>45</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_TURRET_SHIELDS">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>Modular Turret (shields)</title>
+    <desc>7 dps to enemy crew/drones in this system.</desc>
+    <cost>45</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_TURRET_SENSORS">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>Modular Turret (sensors)</title>
+    <desc>7 dps to enemy crew/drones in this system.</desc>
+    <cost>45</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_TURRET_DOORS">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>Modular Turret (doors)</title>
+    <desc>7 dps to enemy crew/drones in this system.</desc>
+    <cost>45</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_TURRET_PILOT">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>Modular Turret (pilot)</title>
+    <desc>7 dps to enemy crew/drones in this system.</desc>
+    <cost>45</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_TURRET_BATTERY">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>Modular Turret (battery)</title>
+    <desc>7 dps to enemy crew/drones in this system.</desc>
+    <cost>45</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_TURRET_TEMPORAL">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>Modular Turret (temporal)</title>
+    <desc>7 dps to enemy crew/drones in this system.</desc>
+    <cost>45</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
+	<!--system update-->
   <augBlueprint name="FM_MODULAR_HULL_UPDATE_SHIELDS">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>System update (shields)</title>
+    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+    <cost>40</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_UPDATE_ENGINES">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>System update (engines)</title>
+    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+    <cost>40</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_UPDATE_MED">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
-
-  <augBlueprint name="FM_MODULAR_HULL_UPDATE_CLONEBAY">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>System update (medical)</title>
+    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+    <cost>40</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_UPDATE_OXYGEN">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>System update (oxygen)</title>
+    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+    <cost>40</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_UPDATE_TELEPORTER">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>System update (teleporter)</title>
+    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+    <cost>40</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_UPDATE_CLOAKING">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>System update (cloak)</title>
+    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+    <cost>40</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_UPDATE_ARTILLERY">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>System update (artillery)</title>
+    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+    <cost>40</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_UPDATE_MIND">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>System update (mind)</title>
+    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+    <cost>40</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_UPDATE_HACKING">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>System update (hacking)</title>
+    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+    <cost>40</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_UPDATE_WEAPONS">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>System update (weapons)</title>
+    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+    <cost>40</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_UPDATE_PILOT">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>System update (pilot)</title>
+    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+    <cost>40</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_UPDATE_SENSORS">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>System update (sensors)</title>
+    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+    <cost>40</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_UPDATE_DOORS">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>System update (doors)</title>
+    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+    <cost>40</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_UPDATE_BATTERY">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>System update (battery)</title>
+    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+    <cost>40</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_UPDATE_TEMPORAL">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>System update (temporal)</title>
+    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+    <cost>40</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_GUARDIAN">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
-
-  <augBlueprint name="FM_MODULAR_HULL_FLOORING">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
-
-  <augBlueprint name="FM_MODULAR_HULL_AERO">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
-
-  <augBlueprint name="FM_MODULAR_HULL_RESPIRATION">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
-
+	<!--capstones-->
   <augBlueprint name="FM_MODULAR_HULL_SALT">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>Saline Hull Body</title>
+    <desc>+100% ion res, non-geological/non-metal crew take 0.5dps</desc>
+    <cost>150</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_DUSK">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>Depricated Duskbringer Reactor</title>
+    <desc>+25% reload speed and shield recharge speed, your crew stats are reducd by 20% (damage taken +20%)</desc>
+    <cost>110</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_COMPRESS">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>Compressor Bypass Manifolds</title>
+    <desc>+30% weapon reload speed, -60% shield recharge speed</desc>
+    <cost>80</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_PARTICLE">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>Particlized Shields</title>
+    <desc>8 Layer Energy Shield (Stacks with others), but Shields recharge speed is reduced by 50%</desc>
+    <cost>100</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
 
   <augBlueprint name="FM_MODULAR_HULL_UPLINK">
-    <title>Modular Hull</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself.</desc>
-    <cost>0</cost>
+    <title>Weapon Uplink Matrices</title>
+    <desc>Crew take -5% less damage and deal 25% more for each powered weapon bar, however weapons recharge 40% slower.</desc>
+    <cost>95</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
@@ -12916,7 +12898,7 @@ Buy/Sell Price: 120~/60~
   <augBlueprint name="FM_MODULAR_HULL_PERFECT">
     <title>Perfect Onboard Efficency</title>
     <desc>+5% everything (crew stats, reload, shield)</desc>
-    <cost>0</cost>
+    <cost>140</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
@@ -12924,7 +12906,7 @@ Buy/Sell Price: 120~/60~
   <augBlueprint name="FM_MODULAR_HULL_MURAL">
     <title>Aftermarket Murals</title>
     <desc>+30% crew stats, 50% chance to tkae extra dmg</desc>
-    <cost>0</cost>
+    <cost>85</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
