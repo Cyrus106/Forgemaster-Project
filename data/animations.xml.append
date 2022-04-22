@@ -9,10 +9,10 @@
 <!--	 ╫ ╫  = Weapons -->
 <!--	 ≈ ≈  = Projectiles -->
 <!--	 ♂ ♂  = Hyperspace Stuff -->
- 
-	
 
-<!-- © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © ©  -->  
+
+
+<!-- © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © ©  -->
 <!-- © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © © ©  -->
 
 <!--"Regular"  CREW-->
@@ -182,155 +182,12 @@
 </anim>
 
 
-<animSheet name="fm_forgemasterperson_player" w="350" h="455" fw="35" fh="35">people/fm_forgemasterperson_player_base.png</animSheet>
-
-<anim name="fm_forgemasterperson_player_clone">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="6" x="0" y="2"/>
-	<time>1.0</time>
-</anim>
-
-<anim name="fm_forgemasterperson_player_death_right">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="7" x="3" y="0"/>
-	<time>1.0</time>
-</anim>
-
-<anim name="fm_forgemasterperson_player_death_left">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="7" x="3" y="0"/>
-	<time>1.0</time>
-</anim>
-
-<anim name="fm_forgemasterperson_player_walk_down">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="4" x="0" y="12"/>
-	<time>1.0</time>
-</anim>
-
-<anim name="fm_forgemasterperson_player_walk_right">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="4" x="4" y="12"/>
-	<time>1.0</time>
-</anim>
-
-<anim name="fm_forgemasterperson_player_walk_up">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="4" x="0" y="11"/>
-	<time>1.0</time>
-</anim>
-
-<anim name="fm_forgemasterperson_player_walk_left">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="4" x="4" y="11"/>
-	<time>1.0</time>
-</anim>
-
-<anim name="fm_forgemasterperson_player_shoot_down">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="4" x="0" y="10"/>
-	<time>1.0</time>
-</anim>
-
-<anim name="fm_forgemasterperson_player_shoot_right">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="4" x="4" y="10"/>
-	<time>1.0</time>
-</anim>
-
-<anim name="fm_forgemasterperson_player_shoot_up">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="4" x="0" y="9"/>
-	<time>1.0</time>
-</anim>
-
-<anim name="fm_forgemasterperson_player_shoot_left">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="4" x="4" y="9"/>
-	<time>1.0</time>
-</anim>
 
 
-<anim name="fm_forgemasterperson_player_fire_down">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="10" x="0" y="8"/>
-	<time>1.0</time>
-</anim>
 
-<anim name="fm_forgemasterperson_player_fire_right">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="10" x="0" y="8"/>
-	<time>1.0</time>
-</anim>
-
-<anim name="fm_forgemasterperson_player_fire_up">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="10" x="0" y="8"/>
-	<time>1.0</time>
-</anim>
-
-<anim name="fm_forgemasterperson_player_fire_left">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="10" x="0" y="8"/>
-	<time>1.0</time>
-</anim>
-
-<anim name="fm_forgemasterperson_player_repair">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="8" x="0" y="7"/>
-	<time>1.0</time>
-</anim>
-
-<anim name="fm_forgemasterperson_player_punch_up">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="6" x="3" y="1"/>
-	<time>1.0</time>
-</anim>
-
-<anim name="fm_forgemasterperson_player_punch_down">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="6" x="0" y="6"/>
-	<time>1.0</time>
-</anim>
-
-<anim name="fm_forgemasterperson_player_teleport">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="9" x="0" y="3"/>
-	<time>0.5</time>
-</anim>
-
-
-<anim name="fm_forgemasterperson_player_type_right">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="4" x="0" y="5"/>
-	<time>1</time>
-</anim>
-<anim name="fm_forgemasterperson_player_type_left">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="4" x="4" y="5"/>
-	<time>1</time>
-</anim>
-<anim name="fm_forgemasterperson_player_type_up">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="4" x="0" y="4"/>
-	<time>1</time>
-</anim>
-<anim name="fm_forgemasterperson_player_type_down">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="4" x="4" y="4"/>
-	<time>1</time>
-</anim>
-
-<anim name="fm_forgemasterperson_player_portrait">
-	<sheet>fm_forgemasterperson_player</sheet>
-	<desc length="1" x="0" y="0"/>
-	<time>1</time>
-</anim>
-
-
-<!--PLATED ANIMATIONS 
+<!--PLATED ANIMATIONS
 *******************
-	PLATED ANIMATIONS 
+	PLATED ANIMATIONS
 ********************
 -->
 
@@ -517,15 +374,15 @@
 
 <anim name="fm_ion_anomaly_crew_death_right">
 	<sheet>fm_ion_anomaly_crew</sheet>
-	<desc length="4" x="0" y="1"/>	
-	<time>0.3</time> 
+	<desc length="4" x="0" y="1"/>
+	<time>0.3</time>
 	<!--<time>40</time>-->
 </anim>
 
 <anim name="fm_ion_anomaly_crew_death_left">
 	<sheet>fm_ion_anomaly_crew</sheet>
 	<desc length="4" x="0" y="1"/>
-	<time>0.3</time> 
+	<time>0.3</time>
 	<!--<time>40</time>-->
 </anim>
 
@@ -598,102 +455,18 @@
 
 </FTL>
 
-	<FTL><!--ION ANOMALY ANIMATIONS ENEMY -->
-
-<animSheet name="fm_ion_anomaly_crew_enemy" w="280" h="105" fw="35" fh="35">people/fm_ion_anomaly_crew_base.png</animSheet>
-
-<anim name="fm_ion_anomaly_crew_enemy_death_right">
-	<sheet>fm_ion_anomaly_crew_enemy</sheet>
-	<desc length="4" x="0" y="1"/>
-	<time>0.3</time>
-</anim>
-
-<anim name="fm_ion_anomaly_crew_enemy_death_left">
-	<sheet>fm_ion_anomaly_crew_enemy</sheet>
-	<desc length="4" x="0" y="1"/>
-	<time>0.3</time>
-</anim>
-
-<anim name="fm_ion_anomaly_crew_enemy_walk_down">
-	<sheet>fm_ion_anomaly_crew_enemy</sheet>
-	<desc length="4" x="0" y="2"/>
-	<time>0.3</time>
-</anim>
-
-<anim name="fm_ion_anomaly_crew_enemy_walk_left">
-	<sheet>fm_ion_anomaly_crew_enemy</sheet>
-	<desc length="4" x="0" y="2"/>
-	<time>0.3</time>
-</anim>
-
-<anim name="fm_ion_anomaly_crew_enemy_walk_up">
-	<sheet>fm_ion_anomaly_crew_enemy</sheet>
-	<desc length="4" x="0" y="2"/>
-	<time>0.3</time>
-</anim>
-
-<anim name="fm_ion_anomaly_crew_enemy_walk_right">
-	<sheet>fm_ion_anomaly_crew_enemy</sheet>
-	<desc length="4" x="0" y="2"/>
-	<time>0.3</time>
-</anim>
-
-
-<anim name="fm_ion_anomaly_crew_enemy_shoot_down">
-	<sheet>fm_ion_anomaly_crew_enemy</sheet>
-	<desc length="4" x="0" y="2"/>
-	<time>0.3</time>
-</anim>
-
-<anim name="fm_ion_anomaly_crew_enemy_shoot_right">
-	<sheet>fm_ion_anomaly_crew_enemy</sheet>
-	<desc length="4" x="0" y="2"/>
-	<time>0.3</time>
-</anim>
-
-<anim name="fm_ion_anomaly_crew_enemy_shoot_up">
-	<sheet>fm_ion_anomaly_crew_enemy</sheet>
-	<desc length="4" x="0" y="2"/>
-	<time>0.3</time>
-</anim>
-
-<anim name="fm_ion_anomaly_crew_enemy_shoot_left">
-	<sheet>fm_ion_anomaly_crew_enemy</sheet>
-	<desc length="4" x="0" y="2"/>
-	<time>0.3</time>
-</anim>
-
-<anim name="fm_ion_anomaly_crew_enemy_punch_up">
-	<sheet>fm_ion_anomaly_crew_enemy</sheet>
-	<desc length="8" x="0" y="2"/>
-	<time>0.3</time>
-</anim>
-
-<anim name="fm_ion_anomaly_crew_enemy_punch_down">
-	<sheet>fm_ion_anomaly_crew_enemy</sheet>
-	<desc length="8" x="0" y="2"/>
-	<time>0.3</time>
-</anim>
-
-<anim name="fm_ion_anomaly_crew_enemy_portrait">
-	<sheet>fm_ion_anomaly_crew_enemy</sheet>
-	<desc length="4" x="0" y="2"/>
-	<time>1</time>
-</anim>
-
-</FTL>
 
 	<FTL><!--ENERGY FLAK DRAIN -->
 
 
 <anim name="fm_power_drain_death_right">
-	<sheet>fm_ion_anomaly_crew_enemy</sheet>
+	<sheet>fm_ion_anomaly_crew</sheet>
 	<desc length="4" x="0" y="1"/>
 	<time>12</time>
 </anim>
 
 <anim name="fm_power_drain_death_left">
-	<sheet>fm_ion_anomaly_crew_enemy</sheet>
+	<sheet>fm_ion_anomaly_crew</sheet>
 	<desc length="4" x="0" y="1"/>
 	<time>12</time>
 </anim>
@@ -825,7 +598,7 @@
 	<time>1</time>
 </anim>
 </FTL>
-	
+
 	<FTL><!--ANCALAGON CRYSTAL RED ANIMATIONS -->
 <animSheet name="fm_crystal_red" w="700" h="105" fw="35" fh="35">people/fm_crystal_red_base.png</animSheet>
 <anim name="fm_crystal_red_clone">
@@ -949,7 +722,7 @@
 	<time>1</time>
 </anim>
 </FTL>
-	
+
 	<FTL><!--ANCALAGON CRYSTAL BLUE ANIMATIONS -->
 <animSheet name="fm_crystal_blue" w="700" h="105" fw="35" fh="35">people/fm_crystal_blue_base.png</animSheet>
 <anim name="fm_crystal_blue_clone">
@@ -1073,7 +846,7 @@
 	<time>1</time>
 </anim>
 </FTL>
-	
+
 	<FTL><!--ANCALAGON CRYSTAL GREEN ANIMATIONS -->
 <animSheet name="fm_crystal_green" w="700" h="105" fw="35" fh="35">people/fm_crystal_green_base.png</animSheet>
 <anim name="fm_crystal_green_clone">
@@ -1197,7 +970,7 @@
 	<time>1</time>
 </anim>
 </FTL>
-	
+
 	<FTL><!--ANCALAGON CRYSTAL WHITE ANIMATIONS -->
 <animSheet name="fm_crystal_white" w="700" h="105" fw="35" fh="35">people/fm_crystal_white_base.png</animSheet>
 <anim name="fm_crystal_white_clone">
@@ -1321,7 +1094,7 @@
 	<time>1</time>
 </anim>
 </FTL>
-	
+
 	<FTL><!--ANCALAGON CRYSTAL BLACK ANIMATIONS -->
 <animSheet name="fm_crystal_black" w="700" h="105" fw="35" fh="35">people/fm_crystal_black_base.png</animSheet>
 <anim name="fm_crystal_black_clone">
@@ -1445,7 +1218,7 @@
 	<time>1</time>
 </anim>
 </FTL>
-	
+
 	<FTL><!--REMINGTON AND MOSSBERG ANIMATIONS -->
 	<animSheet name="remington_shield" w="90" h="32" fw="30" fh="32">people/engi_defender_shield.png</animSheet>
 <anim name="remington_shield">
@@ -1575,7 +1348,7 @@
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 </anim>
-	
+
 <animSheet name="mossberg_shield" w="90" h="32" fw="30" fh="32">people/engi_defender_shield.png</animSheet>
 <anim name="mossberg_shield">
 	<sheet>mossberg_shield</sheet>
@@ -1703,14 +1476,14 @@
 	<sheet>mossberg</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
-</anim>	
-	
+</anim>
+
 	</FTL>
-	
+
 	<FTL> <!--BEANS FM HOLY-->
 	<!--
 *******************
-BEANS FM HOLY ANIMATIONS 
+BEANS FM HOLY ANIMATIONS
 ********************
 -->
 <animSheet name="fm_holy10" w="420" h="280" fw="35" fh="35">people/fm_holy10_base.png</animSheet>
@@ -1760,13 +1533,13 @@ BEANS FM HOLY ANIMATIONS
 	<time>1</time>
 </anim>
 
-	
+
 	</FTL>
-	
+
 	<FTL> <!--BURNING TINY BUG-->
 	<!--
 *******************
-BURNING TINY SPIDER ANIMATIONS 
+BURNING TINY SPIDER ANIMATIONS
 ********************
 -->
 <animSheet name="fm_holy11" w="315" h="490" fw="35" fh="35">people/fm_holy11_base.png</animSheet>
@@ -1836,9 +1609,9 @@ BURNING TINY SPIDER ANIMATIONS
 	<time>1</time>
 </anim>
 
-	
+
 	</FTL>
-	
+
 	<FTL> <!--NEBULA BOOM-->
 <anim name="fm_holy13_death_right">
 	<sheet>artillery_cealaformer_explosion</sheet>
@@ -1852,11 +1625,11 @@ BURNING TINY SPIDER ANIMATIONS
 	<time>5</time>
 </anim>
 </FTL>
-	
+
 	<FTL>  <!--ORCHID FIRE ANIMATIONS  -->
 	<!--
 *******************
-	ORCHID FIRE ANIMATIONS 
+	ORCHID FIRE ANIMATIONS
 ********************
 -->
 <animSheet name="orchid_fire" w="490" h="805" fw="35" fh="35">people/orchid_fire_base.png</animSheet>
@@ -1981,10 +1754,10 @@ BURNING TINY SPIDER ANIMATIONS
 	<time>0.5</time>
 </anim>
 	</FTL>
-	
+
 	<FTL><!--GLITCH HUMANS  -->
-	
-<animSheet name="explosion_fm_human_eyes" w="960" h="320" fw="960" fh="320">effects/no_eyes.png</animSheet>	
+
+<animSheet name="explosion_fm_human_eyes" w="960" h="320" fw="960" fh="320">effects/no_eyes.png</animSheet>
 
 
 <animSheet name="fm_human_texture" w="315" h="455" fw="35" fh="35">people/fm_human_texture_base.png</animSheet>
@@ -2109,22 +1882,22 @@ BURNING TINY SPIDER ANIMATIONS
 	<time>1</time>
 </anim>
 	</FTL>
-	
+
 	<FTL><!--ION ANOMALY ANIMATIONS -->
 
 <animSheet name="fm_power" w="140" h="70" fw="35" fh="35">people/fm_power_base.png</animSheet>
 
 <anim name="fm_power_death_right">
 	<sheet>fm_ion_anomaly_crew</sheet>
-	<desc length="4" x="0" y="0"/>	
-	<time>10</time> 
+	<desc length="4" x="0" y="0"/>
+	<time>10</time>
 	<!--<time>40</time>-->
 </anim>
 
 <anim name="fm_power_death_left">
 	<sheet>fm_ion_anomaly_crew</sheet>
 	<desc length="4" x="0" y="0"/>
-	<time>10</time> 
+	<time>10</time>
 	<!--<time>40</time>-->
 </anim>
 
@@ -2257,11 +2030,11 @@ BURNING TINY SPIDER ANIMATIONS
 </anim>
 </FTL>
 	</FTL>
-	
+
 	<FTL> <!-- ELDRITCH HORRORS OTHER-->
 	<!--
 *******************
-HUSK SLUG ANIMATIONS 
+HUSK SLUG ANIMATIONS
 ********************
 -->
 
@@ -2395,16 +2168,16 @@ HUSK SLUG ANIMATIONS
 	<desc length="4" x="4" y="3"/>
 	<time>0.75</time>
 </anim>
-
 <anim name="husk_slug_portrait">
 	<sheet>husk_slug</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 </anim>
 
-	</FTL>
-<!-- φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ -->  
-<!-- φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ --> 
+
+</FTL>
+<!-- φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ -->
+<!-- φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ -->
 
 
 <!--DRONE CREW-->
@@ -2497,74 +2270,62 @@ HUSK SLUG ANIMATIONS
 <FTL>  <!--Ancalagon Monitor-->
 <animSheet name="fm_ancalagon_monitor" w="280" h="245" fw="35" fh="35">people/fm_ancalagon_monitor_base.png</animSheet>
 <anim name="fm_ancalagon_monitor_death_right">
-	<sheet>fm_ancalagon_monitor</sheet>
+	<sheet>technorecon</sheet>
 	<desc length="10" x="0" y="5"/>
 	<time>1.0</time>
 </anim>
 <anim name="fm_ancalagon_monitor_death_left">
-	<sheet>fm_ancalagon_monitor</sheet>
+	<sheet>technorecon</sheet>
 	<desc length="10" x="0" y="5"/>
 	<time>1.0</time>
 </anim>
 <anim name="fm_ancalagon_monitor_walk_down">
-	<sheet>fm_ancalagon_monitor</sheet>
-	<desc length="4" x="0" y="6"/>
-	<time>0.5</time>
-</anim>
-<anim name="fm_ancalagon_monitor_walk_right">
-	<sheet>fm_ancalagon_monitor</sheet>
+	<sheet>technorecon</sheet>
 	<desc length="4" x="0" y="4"/>
 	<time>0.5</time>
 </anim>
-<anim name="fm_ancalagon_monitor_walk_up">
-	<sheet>fm_ancalagon_monitor</sheet>
-	<desc length="4" x="0" y="5"/>
-	<time>0.5</time>
-</anim>
-<anim name="fm_ancalagon_monitor_walk_left">
-	<sheet>fm_ancalagon_monitor</sheet>
+<anim name="fm_ancalagon_monitor_walk_right">
+	<sheet>technorecon</sheet>
 	<desc length="4" x="0" y="3"/>
 	<time>0.5</time>
 </anim>
+<anim name="fm_ancalagon_monitor_walk_up">
+	<sheet>technorecon</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.5</time>
+</anim>
+<anim name="fm_ancalagon_monitor_walk_left">
+	<sheet>technorecon</sheet>
+	<desc length="4" x="4" y="3"/>
+	<time>0.5</time>
+</anim>
 <anim name="fm_ancalagon_monitor_shoot_down">
-	<sheet>fm_ancalagon_monitor</sheet>
-	<desc length="4" x="4" y="6"/>
+	<sheet>technorecon</sheet>
+	<desc length="4" x="0" y="2"/>
 	<time>0.1</time>
 </anim>
 <anim name="fm_ancalagon_monitor_shoot_right">
-	<sheet>fm_ancalagon_monitor</sheet>
-	<desc length="4" x="4" y="4"/>
+	<sheet>technorecon</sheet>
+	<desc length="4" x="4" y="2"/>
 	<time>0.1</time>
 </anim>
 <anim name="fm_ancalagon_monitor_shoot_up">
-	<sheet>fm_ancalagon_monitor</sheet>
-	<desc length="4" x="4" y="5"/>
+	<sheet>technorecon</sheet>
+	<desc length="4" x="0" y="1"/>
 	<time>0.1</time>
 </anim>
 <anim name="fm_ancalagon_monitor_shoot_left">
-	<sheet>fm_ancalagon_monitor</sheet>
-	<desc length="4" x="4" y="3"/>
+	<sheet>technorecon</sheet>
+	<desc length="4" x="4" y="1"/>
 	<time>0.1</time>
 </anim>
 <anim name="fm_ancalagon_monitor_teleport">
-	<sheet>fm_ancalagon_monitor</sheet>
-	<desc length="6" x="2" y="0"/>
+	<sheet>technorecon</sheet>
+	<desc length="7" x="0" y="6"/>
 	<time>0.5</time>
 </anim>
-<anim name="fm_fire_intruder_power_down">
-	<sheet>fm_fire_intruder</sheet>
-	<desc length="4" x="0" y="2"/>
-	<time>1.0</time>
-</anim>
-
-<anim name="fm_fire_intruder_power_up">
-	<sheet>fm_fire_intruder</sheet>
-	<desc length="4" x="4" y="2"/>
-	<time>1.0</time>
-</anim>
-
 <anim name="fm_ancalagon_monitor_portrait">
-	<sheet>fm_ancalagon_monitor</sheet>
+	<sheet>technorecon</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 </anim>
@@ -2834,349 +2595,20 @@ HUSK SLUG ANIMATIONS
 </FTL>
 
 <FTL> <!--Twisted Manning Enemy-->
-<animSheet name="manningenemy_2" w="455" h="315" fw="35" fh="35">people/manningenemy_2_base.png</animSheet>
-<animSheet name="manningenemy_2_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
-<anim name="manningenemy_2_death_right">
-	<sheet>manningenemy_2_death</sheet>
-	<desc length="10" x="0" y="0"/>
-	<time>1.0</time>
-</anim>
-<anim name="manningenemy_2_death_left">
-	<sheet>manningenemy_2_death</sheet>
-	<desc length="10" x="0" y="0"/>
-	<time>1.0</time>
-</anim>
-<anim name="manningenemy_2_walk_down">
-	<sheet>manningenemy_2</sheet>
-	<desc length="4" x="0" y="5"/>
-	<time>1.0</time>
-</anim>
-<anim name="manningenemy_2_walk_right">
-	<sheet>manningenemy_2</sheet>
-	<desc length="4" x="0" y="6"/>
-	<time>1.0</time>
-</anim>
-<anim name="manningenemy_2_walk_up">
-	<sheet>manningenemy_2</sheet>
-	<desc length="4" x="4" y="5"/>
-	<time>1.0</time>
-</anim>
-<anim name="manningenemy_2_walk_left">
-	<sheet>manningenemy_2</sheet>
-	<desc length="4" x="4" y="6"/>
-	<time>1.0</time>
-</anim>
-<anim name="manningenemy_2_shoot_down">
-	<sheet>manningenemy_2</sheet>
-	<desc length="4" x="0" y="1"/>
-	<time>1.0</time>
-</anim>
-<anim name="manningenemy_2_shoot_right">
-	<sheet>manningenemy_2</sheet>
-	<desc length="4" x="0" y="2"/>
-	<time>1.0</time>
-</anim>
-<anim name="manningenemy_2_shoot_up">
-	<sheet>manningenemy_2</sheet>
-	<desc length="4" x="4" y="1"/>
-	<time>1.0</time>
-</anim>
-<anim name="manningenemy_2_shoot_left">
-	<sheet>manningenemy_2</sheet>
-	<desc length="4" x="4" y="2"/>
-	<time>1.0</time>
-</anim>
-<anim name="manningenemy_2_type_right">
-	<sheet>manningenemy_2</sheet>
-	<desc length="4" x="0" y="4"/>
-	<time>1</time>
-</anim>
-<anim name="manningenemy_2_type_left">
-	<sheet>manningenemy_2</sheet>
-	<desc length="4" x="4" y="4"/>
-	<time>1</time>
-</anim>
-<anim name="manningenemy_2_type_up">
-	<sheet>manningenemy_2</sheet>
-	<desc length="4" x="4" y="3"/>
-	<time>1</time>
-</anim>
-<anim name="manningenemy_2_type_down">
-	<sheet>manningenemy_2</sheet>
-	<desc length="4" x="0" y="3"/>
-	<time>1</time>
-</anim>
-<anim name="manningenemy_2_power_down">
-	<sheet>manningenemy_2</sheet>
-	<desc length="9" x="0" y="7"/>
-	<time>1.0</time>
-</anim>
-<anim name="manningenemy_2_power_up">
-	<sheet>manningenemy_2</sheet>
-	<desc length="13" x="0" y="8"/>
-	<time>1.0</time>
-</anim>
-<anim name="manningenemy_2_portrait">
-	<sheet>manningenemy_2</sheet>
-	<desc length="1" x="0" y="0"/>
-	<time>1</time>
-</anim>
+
 </FTL>
 
 <FTL>  <!--Twisted Mender-->
-<animSheet name="twisted_mender" w="455" h="315" fw="35" fh="35">people/twisted_mender_base.png</animSheet>
-<animSheet name="twisted_mender_death" w="320" h="32" fh="32" fw="32">people/explosion_ancient.png</animSheet>
-<anim name="twisted_mender_death_right">
-	<sheet>twisted_mender_death</sheet>
-	<desc length="10" x="0" y="0"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_mender_death_left">
-	<sheet>twisted_mender_death</sheet>
-	<desc length="10" x="0" y="0"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_mender_walk_down">
-	<sheet>twisted_mender</sheet>
-	<desc length="8" x="0" y="8"/>
-	<time>0.25</time>
-</anim>
-<anim name="twisted_mender_walk_right">
-	<sheet>twisted_mender</sheet>
-	<desc length="8" x="0" y="8"/>
-	<time>0.25</time>
-</anim>
-<anim name="twisted_mender_walk_up">
-	<sheet>twisted_mender</sheet>
-	<desc length="8" x="0" y="8"/>
-	<time>0.25</time>
-</anim>
-<anim name="twisted_mender_walk_left">
-	<sheet>twisted_mender</sheet>
-	<desc length="8" x="0" y="8"/>
-	<time>0.25</time>
-</anim>
-<anim name="twisted_mender_repair">
-	<sheet>twisted_mender</sheet>
-	<desc length="8" x="0" y="7"/>
-	<time>0.7</time>
-</anim>
-<anim name="twisted_mender_fire_down">
-	<sheet>twisted_mender</sheet>
-	<desc length="8" x="0" y="7"/>
-	<time>0.25</time>
-</anim>
-<anim name="twisted_mender_fire_right">
-	<sheet>twisted_mender</sheet>
-	<desc length="8" x="0" y="7"/>
-	<time>0.25</time>
-</anim>
-<anim name="twisted_mender_fire_up">
-	<sheet>twisted_mender</sheet>
-	<desc length="8" x="0" y="7"/>
-	<time>0.25</time>
-</anim>
-<anim name="twisted_mender_fire_left">
-	<sheet>twisted_mender</sheet>
-	<desc length="8" x="0" y="7"/>
-	<time>0.5</time>
-</anim>
-<anim name="twisted_mender_power_down">
-	<sheet>twisted_mender</sheet>
-	<desc length="13" x="0" y="1"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_mender_power_up">
-	<sheet>twisted_mender</sheet>
-	<desc length="13" x="0" y="2"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_mender_portrait">
-	<sheet>twisted_mender</sheet>
-	<desc length="1" x="0" y="0"/>
-	<time>1</time>
-</anim>
-<anim name="twisted_mender_shoot_down">
-	<sheet>twisted_mender</sheet>
-	<desc length="8" x="0" y="6"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_mender_shoot_right">
-	<sheet>twisted_mender</sheet>
-	<desc length="8" x="0" y="4"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_mender_shoot_up">
-	<sheet>twisted_mender</sheet>
-	<desc length="8" x="0" y="5"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_mender_shoot_left">
-	<sheet>twisted_mender</sheet>
-	<desc length="8" x="0" y="3"/>
-	<time>1.0</time>
-</anim>
+
 
 </FTL>
 
 <FTL> <!--Twisted Battle Drone II-->
-<animSheet name="twisted_drone_battle2" w="280" h="210" fw="35" fh="35">people/twisted_drone_battle2_base.png</animSheet>
-<animSheet name="twisted_drone_battle2_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
-<anim name="twisted_drone_battle2_death_right">
-	<sheet>twisted_drone_battle2_death</sheet>
-	<desc length="10" x="0" y="0"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_drone_battle2_death_left">
-	<sheet>twisted_drone_battle2_death</sheet>
-	<desc length="10" x="0" y="0"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_drone_battle2_walk_down">
-	<sheet>twisted_drone_battle2</sheet>
-	<desc length="4" x="0" y="5"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_drone_battle2_walk_right">
-	<sheet>twisted_drone_battle2</sheet>
-	<desc length="4" x="4" y="5"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_drone_battle2_walk_up">
-	<sheet>twisted_drone_battle2</sheet>
-	<desc length="4" x="0" y="4"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_drone_battle2_walk_left">
-	<sheet>twisted_drone_battle2</sheet>
-	<desc length="4" x="4" y="4"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_drone_battle2_shoot_down">
-	<sheet>twisted_drone_battle2</sheet>
-	<desc length="3" x="0" y="3"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_drone_battle2_shoot_right">
-	<sheet>twisted_drone_battle2</sheet>
-	<desc length="3" x="3" y="3"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_drone_battle2_shoot_up">
-	<sheet>twisted_drone_battle2</sheet>
-	<desc length="3" x="2" y="0"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_drone_battle2_shoot_left">
-	<sheet>twisted_drone_battle2</sheet>
-	<desc length="3" x="5" y="0"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_drone_battle2_power_down">
-	<sheet>twisted_drone_battle2</sheet>
-	<desc length="7" x="0" y="2"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_drone_battle2_power_up">
-	<sheet>twisted_drone_battle2</sheet>
-	<desc length="7" x="0" y="1"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_drone_battle2_fly">
-	<sheet>twisted_drone_battle2</sheet>
-	<desc length="1" x="0" y="0"/>
-	<time>1</time>
-</anim>
-<anim name="twisted_drone_battle2_portrait">
-	<sheet>twisted_drone_battle2</sheet>
-	<desc length="1" x="0" y="0"/>
-	<time>1</time>
-</anim>
+
 </FTL>
 
 <FTL> <!--Twisted Surgeon-->
-<animSheet name="twisted_surgeon" w="420" h="350" fw="35" fh="35">people/twisted_surgeon_base.png</animSheet>
-<animSheet name="twisted_surgeon_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
-<anim name="twisted_surgeon_death_right">
-	<sheet>twisted_surgeon_death</sheet>
-	<desc length="10" x="0" y="0"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_surgeon_death_left">
-	<sheet>twisted_surgeon_death</sheet>
-	<desc length="10" x="0" y="0"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_surgeon_walk_down">
-	<sheet>twisted_surgeon</sheet>
-	<desc length="4" x="0" y="9"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_surgeon_walk_right">
-	<sheet>twisted_surgeon</sheet>
-	<desc length="4" x="0" y="8"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_surgeon_walk_up">
-	<sheet>twisted_surgeon</sheet>
-	<desc length="4" x="0" y="6"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_surgeon_walk_left">
-	<sheet>twisted_surgeon</sheet>
-	<desc length="4" x="0" y="7"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_surgeon_punch_down">
-	<sheet>twisted_surgeon</sheet>
-	<desc length="10" x="0" y="5"/>
-	<time>0.75</time>
-</anim>
-<anim name="twisted_surgeon_punch_up">
-	<sheet>twisted_surgeon</sheet>
-	<desc length="10" x="0" y="2"/>
-	<time>0.75</time>
-</anim>
-<anim name="twisted_surgeon_shoot_down">
-	<sheet>twisted_surgeon</sheet>
-	<desc length="10" x="0" y="5"/>
-	<time>0.75</time>
-</anim>
-<anim name="twisted_surgeon_shoot_right">
-	<sheet>twisted_surgeon</sheet>
-	<desc length="10" x="0" y="4"/>
-	<time>0.75</time>
-</anim>
-<anim name="twisted_surgeon_shoot_up">
-	<sheet>twisted_surgeon</sheet>
-	<desc length="10" x="0" y="2"/>
-	<time>0.75</time>
-</anim>
-<anim name="twisted_surgeon_shoot_left">
-	<sheet>twisted_surgeon</sheet>
-	<desc length="10" x="0" y="3"/>
-	<time>0.75</time>
-</anim>
-<anim name="twisted_surgeon_power_down">
-	<sheet>twisted_surgeon</sheet>
-	<desc length="8" x="2" y="0"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_surgeon_power_up">
-	<sheet>twisted_surgeon</sheet>
-	<desc length="8" x="2" y="1"/>
-	<time>1.0</time>
-</anim>
-<anim name="twisted_surgeon_fly">
-	<sheet>twisted_surgeon</sheet>
-	<desc length="1" x="0" y="0"/>
-	<time>1</time>
-</anim>
-<anim name="twisted_surgeon_portrait">
-	<sheet>twisted_surgeon</sheet>
-	<desc length="1" x="0" y="0"/>
-	<time>1</time>
-</anim>
+
 </FTL>
 
 <FTL> <!--Twisted YingYang-->
@@ -3440,16 +2872,16 @@ HUSK SLUG ANIMATIONS
 </FTL>
 
 
-<!-- π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π  -->  
-<!-- π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π  -->  
+<!-- π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π  -->
+<!-- π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π π  -->
 
 <!--  CREW EFFECTS
 -->
 
 
 
-<!-- ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫   -->  
-<!-- ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫   -->  
+<!-- ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫   -->
+<!-- ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫   -->
 
 
 <!--WEAPON ANIMATIONS, SORTED BY CATEGORY!-->
@@ -3457,15 +2889,15 @@ HUSK SLUG ANIMATIONS
 w= the Width of the Sprite Sheet
 h= the Height of the Sprite Sheet
 fw= the Width of a Single frame in the Sprite Sheet
-fh= the Height of a Single frame in the Sprite Sheet	
+fh= the Height of a Single frame in the Sprite Sheet
 length= the length of the sheet in frames. Put the TOTAL frames here. if theres 11 frames, put 11.
 Fire Frame: The frame on the sheet where the weapon is firing. Weapon frame count starts at "0" not "1" oddly enough
 Charged Frame: The frame on the sheet where the weapon is fully charged
 firePoint: The coordinate where the projectile comes from, can determine this using gimp's pixel coordinate tool
 mountPoint: The coordinate where the mount attaches to the ship, can determine this using gimp's pixel coordinate tool.
-As for mount points, the X is half of the length of the sprites bracket, and the Y is typically 1/4 the length of the sprite	
+As for mount points, the X is half of the length of the sprites bracket, and the Y is typically 1/4 the length of the sprite
 chargeImage: image used for the charge glow?
-boostImage: used for Chain animation? 
+boostImage: used for Chain animation?
 
 try this later
 <boost>beam_menaulion_chargeglow</boost>	-->
@@ -3666,7 +3098,7 @@ try this later
 	<firePoint  x="29" y="7"/>
 	<mountPoint x="7" y="75"/>
 	<chargeImage>weapon_energy/R4-FM_energy_flak_glow.png</chargeImage>
-</weaponAnim>	
+</weaponAnim>
 
 <animSheet name="fm_pulse_1" w="475" h="62" fw="25" fh="62">weapon_energy/fm_pulse_1.png</animSheet>
 <weaponAnim name="fm_pulse_1">
@@ -3677,7 +3109,29 @@ try this later
 	<firePoint  x="14" y="2"/>
 	<mountPoint x="3" y="52"/>
 	<chargeImage>weapon_energy/fm_pulse_1_glow.png</chargeImage>
-</weaponAnim>	
+</weaponAnim>
+
+<animSheet name="fm_pulse_2" w="572" h="69" fw="26" fh="69">weapon_energy/fm_pulse_2.png</animSheet>
+<weaponAnim name="fm_pulse_2">
+	<sheet>fm_pulse_2</sheet>
+	<desc length="22" x="0" y="0"/>
+	<chargedFrame>8</chargedFrame>
+	<fireFrame>9</fireFrame>
+	<firePoint  x="14" y="2"/>
+	<mountPoint x="3" y="52"/>
+	<chargeImage>weapon_energy/fm_pulse_2_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="fm_pulse_3" w="750" h="79" fw="30" fh="79">weapon_energy/fm_pulse_3.png</animSheet>
+<weaponAnim name="fm_pulse_3">
+	<sheet>fm_pulse_3</sheet>
+	<desc length="25" x="0" y="0"/>
+	<chargedFrame>8</chargedFrame>
+	<fireFrame>9</fireFrame>
+	<firePoint  x="15" y="2"/>
+	<mountPoint x="3" y="52"/>
+	<chargeImage>weapon_energy/fm_pulse_3_glow.png</chargeImage>
+</weaponAnim>
 
 </FTL>
 
@@ -3691,7 +3145,7 @@ try this later
 	<fireFrame>2</fireFrame>
 	<firePoint  x="31" y="51"/>
 	<mountPoint x="12" y="63"/>
-	<chargeImage>weapon_beams/fm_tainted_fed_arty_glow.png</chargeImage>	
+	<chargeImage>weapon_beams/fm_tainted_fed_arty_glow.png</chargeImage>
 </weaponAnim>
 
 <animSheet name="fm_beam_menaulion" w="506" h="102" fw="46" fh="102">weapon_beams/fm_beam_guillotine_chain.png</animSheet>
@@ -3703,7 +3157,7 @@ try this later
 	<firePoint  x="24" y="55"/>
 	<mountPoint x="5" y="90"/>
 	<chargeImage>weapon_beams/fm_beam_guillotine_chain_glow.png</chargeImage>
-	<boost>beam_menaulion_glow_chain</boost>	
+	<boost>beam_menaulion_glow_chain</boost>
 </weaponAnim>
 
 <animSheet name="fm_beam_mining_2" w="366" h="193" fw="40" fh="193">weapon_beams/fm_beam_mining_2.png</animSheet>
@@ -3714,7 +3168,7 @@ try this later
 	<fireFrame>2</fireFrame>
 	<firePoint  x="25" y="130"/>
 	<mountPoint x="13" y="153"/>
-	<chargeImage>weapon_beams/fm_beam_mining_2_glow.png</chargeImage>	
+	<chargeImage>weapon_beams/fm_beam_mining_2_glow.png</chargeImage>
 </weaponAnim>
 
 <animSheet name="fm_beam_mining_3" w="3008" h="190" fw="64" fh="190">weapon_beams/fm_beam_mining_3_shorter.png</animSheet>
@@ -3725,7 +3179,7 @@ try this later
 	<fireFrame>2</fireFrame>
 	<firePoint  x="41" y="112"/>
 	<mountPoint x="24" y="148"/>
-	<chargeImage>weapon_beams/fm_beam_mining_3_shorter_glow.png</chargeImage>	
+	<chargeImage>weapon_beams/fm_beam_mining_3_shorter_glow.png</chargeImage>
 </weaponAnim>
 
 <animSheet name="fm_beam_particle_pierce" w="370" h="80" fw="37" fh="80">weapon_beams/fm_beam_particle_pierce.png</animSheet>
@@ -3736,7 +3190,7 @@ try this later
 	<fireFrame>2</fireFrame>
 	<firePoint  x="21" y="49"/>
 	<mountPoint x="2" y="70"/>
-	<chargeImage>weapon_beams/fm_beam_particle_pierce_glow.png</chargeImage>	
+	<chargeImage>weapon_beams/fm_beam_particle_pierce_glow.png</chargeImage>
 </weaponAnim>
 
 <animSheet name="fm_beam_devourer" w="392" h="90" fw="49" fh="90">weapon_beams/fm_beam_devourer.png</animSheet>
@@ -3936,6 +3390,16 @@ try this later
 	<chargeImage>weapon_mines/fm_royal_minelauncher_glow.png</chargeImage>
 </weaponAnim>
 
+<animSheet name="fm_minelauncher_bio" w="700" h="47" fw="35" fh="47">weapon_mines/fm_rad_minelauncher.png</animSheet>
+<weaponAnim name="fm_minelauncher_bio">
+	<sheet>fm_minelauncher_bio</sheet>
+	<desc length="20" x="0" y="0"/>
+	<chargedFrame>19</chargedFrame>
+	<fireFrame>20</fireFrame>
+	<firePoint  x="20" y="2"/>
+	<mountPoint x="3" y="43"/>
+</weaponAnim>
+
 </FTL>
 
 	<FTL><!-- FLAK-->
@@ -4069,7 +3533,7 @@ try this later
 	<firePoint  x="18" y="19"/>
 	<mountPoint x="5" y="37"/>
 	<chargeImage>weapon_flak/fm_shotgun_aetheric_glow.png</chargeImage>
-</weaponAnim>	
+</weaponAnim>
 
 <animSheet name="fm_shotgun_cursed" w="336" h="58" fw="42" fh="58">weapon_flak/fm_shotgun_cursed.png</animSheet>
 <weaponAnim name="fm_shotgun_cursed">
@@ -4084,7 +3548,7 @@ try this later
 </FTL>
 
 
-<!-- ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈   -->  
+<!-- ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈   -->
 <!-- ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈ ≈   -->
 
 <!-- PROJECTILE ANIMATIONS, SORTED BY CATEGORY!-->
@@ -4142,8 +3606,8 @@ try this later
 </anim>
 
 
-	
-	
+
+
 	</FTL>
 
 	<FTL><!-- ION PROJECTILES -->
@@ -4171,7 +3635,7 @@ try this later
 </anim>
 
 	</FTL>
-	
+
 	<FTL><!--  MINELAUNCHER PROJECTILES -->
 
 <animSheet name="fm_minelauncher_zesty_proj" w="22" h="22" fw="22" fh="22">weapon_projectiles/fm_mine_zesty.png</animSheet>
@@ -4193,6 +3657,20 @@ try this later
 	<sheet>fm_mine_crystal</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1.00</time>
+</anim>
+
+<animSheet name="fm_crysterino" w="130" h="32" fw="130" fh="32">weapon_projectiles/fm_crysterino.png</animSheet>
+<anim name="fm_crysterino">
+	<sheet>fm_crysterino</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.00</time>
+</anim>
+
+<animSheet name="fm_mine_bio" w="22" h="22" fw="22" fh="22">weapon_projectiles/fm_mine_bio.png</animSheet>
+<anim name="fm_mine_bio">
+	<sheet>fm_mine_bio</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
 </anim>
 
 <!-- XMAS STUFF
@@ -4301,7 +3779,7 @@ try this later
 	<desc length="3" x="0" y="0"/>
 	<time>1</time>
 </anim>
-	
+
 <animSheet name="debris_large_shadow" w="96" h="32" fw="32" fh="32">weapon_projectiles/debris_large_shadow.png</animSheet>
 <anim name="debris_large_shadow">
 	<sheet>debris_large_shadow</sheet>
@@ -4321,15 +3799,15 @@ try this later
 	<sheet>debris_small_shadow</sheet>
 	<desc length="6" x="0" y="0"/>
 	<time>1.0</time>
-</anim>	
-	
+</anim>
+
 <animSheet name="energy_shot2" w="24" h="24" fw="24" fh="24">projectiles/energy.png</animSheet>
 <anim name="energy_shot2">
 	<sheet>energy_shot2</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>0.3</time>
-</anim>	
-	
+</anim>
+
 	</FTL>
 
 	<FTL><!-- ORGANIC PROJECTILES -->
@@ -4344,7 +3822,7 @@ try this later
 
 
 	<FTL><!-- TEST FROM CE -->
-	
+
 
 <animSheet name="fm_emp_wave_shot" w="64" h="73" fw="64" fh="73">weapon_projectiles/fm_emp_wave.png</animSheet>
 <anim name="fm_emp_wave_shot">
@@ -4376,80 +3854,110 @@ try this later
 
 	</FTL>
 
+<FTL><!--drone arty-->
+
+	<animSheet name="fm_drone_artillery_shot" w="152" h="23" fw="19" fh="23">weapon_projectiles/Mystery_Drone_Pod.png</animSheet>
+	<anim name="fm_drone_artillery_shot">
+		<sheet>fm_drone_artillery_shot</sheet>
+		<desc length="8" x="0" y="0"/>
+		<time>0.8</time>
+	</anim>
+
+</FTL>
 
 
 
-
-<!-- ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂   -->  
-<!-- ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂   --> 
+<!-- ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂   -->
+<!-- ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂   -->
 
 	<FTL> <!--ROOM ANIMATIONS FOR NOW-->
-	
-	
+
+
 	<animSheet name="resist_2x5" w="70" h="175" fw="70" fh="175">effects/resist_2x5.png</animSheet>
 	<anim name="resist_2x5">
 	<sheet>resist_2x5</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 	</anim>
-	
+
 	<animSheet name="energized_icon" w="35" h="35" fw="35" fh="35">effects/energized_ico.png</animSheet>
 	<anim name="energized_icon">
 	<sheet>energized_icon</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 	</anim>
-	
+
 	<animSheet name="fm_energy_resist_2x2" w="70" h="70" fw="70" fh="70">effects/forgergized_2x2.png</animSheet>
 	<anim name="fm_energy_resist_2x2">
 	<sheet>fm_energy_resist_2x2</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 	</anim>
-	
+
 	<animSheet name="fm_energy_resist_1x2" w="35" h="70" fw="35" fh="70">effects/forgergized_1x2.png</animSheet>
 	<anim name="fm_energy_resist_1x2">
 	<sheet>fm_energy_resist_1x2</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 	</anim>
-	
+
 	<animSheet name="fm_energy_resist_3x2" w="105" h="70" fw="105" fh="70">effects/forgergized_3x2.png</animSheet>
 	<anim name="fm_energy_resist_3x2">
 	<sheet>fm_energy_resist_3x2</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 	</anim>
-	
+
 	<animSheet name="resist_icon75" w="35" h="35" fw="35" fh="35">effects/resist_ico_75.png</animSheet>
 	<anim name="resist_icon75">
 	<sheet>resist_icon75</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 	</anim>
-	
+
 	<animSheet name="resist_icon50" w="35" h="35" fw="35" fh="35">effects/resist_ico_50.png</animSheet>
 	<anim name="resist_icon50">
 	<sheet>resist_icon50</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 	</anim>
-	
+
 	<animSheet name="resist_icon25" w="35" h="35" fw="35" fh="35">effects/resist_ico_25.png</animSheet>
 	<anim name="resist_icon25">
 	<sheet>resist_icon25</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 	</anim>
-	
+
 	<animSheet name="resist_icon10" w="35" h="35" fw="35" fh="35">effects/resist_ico_10.png</animSheet>
 	<anim name="resist_icon10">
 	<sheet>resist_icon10</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 	</anim>
-	
-	
+
+	<!--flavor anims-->
+	<animSheet name="printer_3" w="1260" h="35" fw="70" fh="35">effects/printer_3.png</animSheet>
+	<animSheet name="printer_4" w="630" h="35" fw="35" fh="35">effects/printer_4.png</animSheet>
+
+	<anim name="printer_2x1">
+		<sheet>printer_3</sheet>
+		<desc length="18" x="0" y="0"/>
+		<time>5</time>
+	</anim>
+	<anim name="printer_1x1">
+		<sheet>printer_4</sheet>
+		<desc length="18" x="0" y="0"/>
+		<time>5</time>
+	</anim>
+	<!--turret upgrade effect anim-->
+	<animSheet name="gunny" w="384" h="32" fw="32" fh="32">people/gunny.png</animSheet>
+	<anim name="gunny">
+		<sheet>gunny</sheet>
+		<desc length="12" x="0" y="0" />
+		<time>0.3</time>
+	</anim>
+
 	</FTL>
 
 	<FTL><!--Hyperspace beta additions-->
@@ -4749,7 +4257,7 @@ try this later
 	<desc length="4" x="0" y="0"/>
 	<time>0.5</time>
 	</anim>
-	
+
 	<animSheet name="focus_shadow" w="90" h="56" fw="30" fh="56">weapon_shadows/focus_shadow.png</animSheet>
 <weaponAnim name="focus_shadow">
 	<sheet>focus_shadow</sheet>
@@ -4783,7 +4291,7 @@ try this later
 	<mountPoint x="4" y="42"/>
 	<chargeImage>weapon_shadows/shotgun_shadow_glow.png</chargeImage>
 </weaponAnim>
-	
+
 	</FTL>
 
 
@@ -4934,5 +4442,3 @@ try this later
 	<time>1</time>
 </anim>
 -->
-
-

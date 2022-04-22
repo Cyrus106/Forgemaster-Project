@@ -3,10 +3,10 @@
 
 <!--   FORGEMASTER VARIANTS OF NORMAL SHIPS
 **********************************************************************************************************************
-                                              
+
 **********************************************************************************************************************
 -->
-	
+
 <ship name="FM_SHIP_ROCK_FIGHT" auto_blueprint="LIST_SHIPS_ROCK_FIGHT">
 	<destroyed load="FM_ISHI_ROCK_DEST"/>
 	<deadCrew load="FM_ISHI_ROCK_DEAD"/>
@@ -21,22 +21,22 @@
 
 <!--   FORGEMASTER VARIANTS OF MV TRAVELLERS
 **********************************************************************************************************************
-                                              
+
 **********************************************************************************************************************
 -->
 
 <!--CLANSMAN B-->
 
 <ship name="FM_BOSS_CLAN1" auto_blueprint="FM_MT_BOSS_CLAN_SUICIDE">
-	 
-   
-	
+
+
+
 	<destroyed load="FM_BOSS_CLAN1_SHIP_DESTROYED"/>
 	<deadCrew load="FM_BOSS_CLAN1_SHIP_DESTROYED2"/>
 </ship>
 <event name="FM_BOSS_CLAN1_SUICIDE">
 	<text>From out of the tunnel comes a massive cruiser vessel, it appears to be a Smuggler clan ship!</text>
-	<ship load="FM_BOSS_CLAN1" hostile="false"/> 
+	<ship load="FM_BOSS_CLAN1" hostile="false"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
@@ -49,7 +49,7 @@
 		<text>Continue...</text>
 		<event>
 		<text>The ship begins powering its weapons. Prepare for battle. </text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -59,7 +59,7 @@
 	</choice>
 </event>
 </choice>
-	
+
 
 </event>
 </choice>
@@ -80,21 +80,21 @@
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
 		<text>Internalize the Mind Clouder...
 		[Your crew is now immune to mind control effects.]</text>
-		<event>	
+		<event>
 		<hiddenAug>HID_BRAIN_DONATION</hiddenAug>
 			<text>You retrieve the Ambrosia lab and begin replicating the Ambrosia drug, then make certain to dole it out to all of your crew. </text>
 		<choice hidden="true">
 		<text>Continue...</text>
-		<event>		
-		<text>Your crew is now immune to mind control effects. [The Augment has been internalized!]</text>	
+		<event>
+		<text>Your crew is now immune to mind control effects. [The Augment has been internalized!]</text>
 		<choice hidden="true">
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
+	</event>
+
 </choice>
-</event> 
+</event>
 </choice>
 
 
@@ -102,27 +102,27 @@
 	<choice hidden="false" req="HID_BRAIN_DONATION" max_group="2" blue="false">
 					<text>You already have Mind Clouder.</text>
 					<event>
-					<item_modify>			
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-					<choice hidden="false">
-					<text>Continue...</text>
-					<event/>				
-					</choice>	
-					</event>
-					</choice>	
-	<choice hidden="false" req="CLAN1_SCRAPPED" max_group="2" blue="false">
-					<text>You already scrapped Mind Clouder.</text>
-					<event>
-					<item_modify>			
+					<item_modify>
 					<item type="fuel" min="1" max="1"/>
 				</item_modify>
 					<choice hidden="false">
 					<text>Continue...</text>
 					<event/>
-					</choice>	
+					</choice>
 					</event>
-					</choice>			
+					</choice>
+	<choice hidden="false" req="CLAN1_SCRAPPED" max_group="2" blue="false">
+					<text>You already scrapped Mind Clouder.</text>
+					<event>
+					<item_modify>
+					<item type="fuel" min="1" max="1"/>
+				</item_modify>
+					<choice hidden="false">
+					<text>Continue...</text>
+					<event/>
+					</choice>
+					</event>
+					</choice>
 	<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 	<text>Scrap the Mind Clouder.</text>
 	<event>
@@ -136,7 +136,7 @@
 				<hiddenAug>CLAN1_SCRAPPED</hiddenAug>
 	</event>
 	</choice>
-	</event> 
+	</event>
 
 <event name="FM_BOSS_CLAN1_SHIP_DESTROYED2">
 	<playMusic></playMusic>
@@ -154,47 +154,47 @@
 	<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
 		<text>Internalize the Mind Clouder...
 		[Your crew is now immune to mind control effects.]</text>
-		<event>	
+		<event>
 		<hiddenAug>HID_BRAIN_DONATION</hiddenAug>
 			<text>You retrieve the Ambrosia lab and begin replicating the Ambrosia drug, then make certain to dole it out to all of your crew. </text>
 		<choice hidden="true">
 		<text>Continue...</text>
 		<event>
-		<text>Your crew is now immune to mind control effects. [The Augment has been internalized!]</text>	
+		<text>Your crew is now immune to mind control effects. [The Augment has been internalized!]</text>
 		<choice hidden="true">
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
-		
+
 	</choice>
-</event> 
+</event>
 </choice>
-</event> 
+</event>
 </choice>
 
 	<choice hidden="false" req="HID_BRAIN_DONATION" max_group="2" blue="false">
 				<text>You already have Mind Clouder.</text>
 					<event>
-					<item_modify>			
+					<item_modify>
 					<item type="fuel" min="1" max="1"/>
 					</item_modify>
 					<choice hidden="false">
 					<text>Continue...</text>
 					<event/>
-					</choice>	
+					</choice>
 					</event>
-					</choice>		
+					</choice>
 	<choice hidden="false" req="CLAN1_SCRAPPED" max_group="2" blue="false">
 				<text>You already scrapped Mind Clouder.</text>
 					<event>
-					<item_modify>			
+					<item_modify>
 					<item type="fuel" min="1" max="1"/>
 					</item_modify>
 					<choice hidden="false">
 					<text>Continue...</text>
 					<event/>
-					</choice>	
+					</choice>
 					</event>
-					</choice>		
+					</choice>
 	<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Mind Clouder.</text>
 <event>
@@ -208,7 +208,7 @@
 			<hiddenAug>CLAN1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 
 <!--DUSKBRINGER B-->
@@ -219,7 +219,7 @@
 </ship>
 <event name="FM_BOSS_DUSK1_SUICIDE">
 	<text>From out of the tunnel comes a massive cruiser vessel, it appears to be a Duskbringer ship!</text>
-	<ship load="FM_BOSS_DUSK1_SHIP" hostile="false"/> 
+	<ship load="FM_BOSS_DUSK1_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
@@ -232,7 +232,7 @@
 		<text>Continue...</text>
 		<event>
 		<text>The ship begins powering its weapons. Prepare for battle. </text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -254,7 +254,7 @@
 		<item type="fuel" min="2" max="2"/>
 	</item_modify>
 	<hiddenAug>ACH_FM_BOSS_DUSK1</hiddenAug>
-	
+
 	<choice hidden="true" req="HID_DEATH_VESTS2" max_group="1" blue="false">
 				<text>You already have Twilight Vests.</text>
 				<event load="OPTION_INVALID"/>
@@ -273,36 +273,36 @@
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
+	</event>
+
 </choice>
-</event> 
+</event>
 </choice>
 
 	<choice hidden="false" req="HID_DEATH_VESTS2" max_group="2" blue="false">
 					<text>You already have Twlight Vests.</text>
 						<event>
-						<item_modify>			
+						<item_modify>
 						<item type="fuel" min="1" max="1"/>
 						</item_modify>
 						<choice hidden="false">
 						<text>Continue...</text>
 						<event/>
-						</choice>	
+						</choice>
 						</event>
-						</choice>		
+						</choice>
 	<choice hidden="false" req="DUSK1_SCRAPPED" max_group="2" blue="false">
 					<text>You already scrapped Twlight Vests.</text>
 						<event>
-						<item_modify>			
+						<item_modify>
 						<item type="fuel" min="1" max="1"/>
 						</item_modify>
 						<choice hidden="false">
 						<text>Continue...</text>
 						<event/>
-						</choice>	
+						</choice>
 						</event>
-						</choice>		
+						</choice>
 	<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 	<text>Scrap the Twilight Vests.</text>
 	<event>
@@ -316,7 +316,7 @@
 				<hiddenAug>DUSK1_SCRAPPED</hiddenAug>
 	</event>
 	</choice>
-	</event> 
+	</event>
 
 <event name="FM_BOSS_DUSK1_SHIP_DESTROYED2">
 		<playMusic></playMusic>
@@ -340,41 +340,41 @@
 		<text>Continue...</text>
 		<event>
 		<hiddenAug>HID_DEATH_VESTS2</hiddenAug>
-			<text>Adds a death effect to all non-Zoltan allied crew, making them explode for 45 crew damage against enemies, and sometimes start fires. [The Augment has been internalized!]</text>	
+			<text>Adds a death effect to all non-Zoltan allied crew, making them explode for 45 crew damage against enemies, and sometimes start fires. [The Augment has been internalized!]</text>
 		<choice hidden="true">
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
-		
+
 	</choice>
-</event> 
+</event>
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_DEATH_VESTS2" max_group="2" blue="false">
 				<text>You already have Twlight Vests.</text>
 					<event>
-					<item_modify>			
+					<item_modify>
 					<item type="fuel" min="1" max="1"/>
 					</item_modify>
 					<choice hidden="false">
 					<text>Continue...</text>
 					<event/>
-					</choice>	
+					</choice>
 					</event>
-					</choice>		
+					</choice>
 <choice hidden="false" req="DUSK1_SCRAPPED" max_group="2" blue="false">
 				<text>You already scrapped Twlight Vests.</text>
 					<event>
-					<item_modify>			
+					<item_modify>
 					<item type="fuel" min="1" max="1"/>
 					</item_modify>
 					<choice hidden="false">
 					<text>Continue...</text>
 					<event/>
-					</choice>	
+					</choice>
 					</event>
-					</choice>		
+					</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Twilight Vests.</text>
 <event>
@@ -388,7 +388,7 @@
 			<hiddenAug>DUSK1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 
 <!--ENGI C-->
@@ -398,12 +398,12 @@
 </ship>
 <event name="FM_BOSS_ENGI1_SUICIDE">
 	<text>From out of the tunnel comes a massive cruiser vessel, of Engi design! The ship appears to be made of of various parts from different styles of Engi ships, an odd amalgam unlike anything you've seen.</text>
-	<ship load="FM_BOSS_ENGI1_SHIP" hostile="false"/> 
+	<ship load="FM_BOSS_ENGI1_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
 			<text>"Don't bother, my ship constantly replicates itself with nanomachines, Captain. It hardens in response to physical trauma."</text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<choice hidden="true">
 				<text>What does that even mean? [The Engi appears to scale with the number of drones on-board their ship.]</text>
@@ -421,7 +421,7 @@
 		<item type="fuel" min="2" max="2"/>
 	</item_modify>
 	<hiddenAug>ACH_FM_BOSS_ENGI1</hiddenAug>
-		
+
 	<choice hidden="true" req="HID_UPG_DRONE_COOLDOWN" max_group="1" blue="false">
 				<text>You already have Drone Booster "Kai".</text>
 				<event load="OPTION_INVALID"/>
@@ -440,36 +440,36 @@
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
+	</event>
+
 </choice>
-</event> 
+</event>
 </choice>
-	
+
 	<choice hidden="false" req="HID_UPG_DRONE_COOLDOWN" max_group="2" blue="false">
 						<text>You already have Drone Booster "Kai".</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 	<choice hidden="false" req="ENGI1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Drone Booster "Kai".</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 	<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Drone Booster "Kai".</text>
 <event>
@@ -483,7 +483,7 @@
 			<hiddenAug>ENGI1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <event name="FM_BOSS_ENGI1_DESTROYED2">
 	<playMusic></playMusic>
@@ -511,36 +511,36 @@
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
+	</event>
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_UPG_DRONE_COOLDOWN" max_group="2" blue="false">
 					<text>You already have Drone Booster "Kai".</text>
 						<event>
-						<item_modify>			
+						<item_modify>
 						<item type="fuel" min="1" max="1"/>
 						</item_modify>
 						<choice hidden="false">
 						<text>Continue...</text>
 						<event/>
-						</choice>	
+						</choice>
 						</event>
-						</choice>		
+						</choice>
 <choice hidden="false" req="ENGI1_SCRAPPED" max_group="2" blue="false">
 					<text>You already scrapped Drone Booster "Kai".</text>
 						<event>
-						<item_modify>			
+						<item_modify>
 						<item type="fuel" min="1" max="1"/>
 						</item_modify>
 						<choice hidden="false">
 						<text>Continue...</text>
 						<event/>
-						</choice>	
+						</choice>
 						</event>
-						</choice>		
+						</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Drone Booster "Kai".</text>
 <event>
@@ -554,7 +554,7 @@
 			<hiddenAug>ENGI1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <!--FREEMANTIS B-->
 <ship name="FM_BOSS_FREE1_SHIP" auto_blueprint="FM_BOSS_FREE1">
@@ -563,7 +563,7 @@
 </ship>
 <event name="FM_BOSS_FREE1_SUICIDE">
 	<text>From out of the tunnel comes a massive cruiser vessel, it appears to be painted vibrantly, with a strange flag on it. It may be a Free Mantis vessel!</text>
-	<ship load="FM_BOSS_FREE1_SHIP" hostile="false"/> 
+	<ship load="FM_BOSS_FREE1_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
@@ -575,8 +575,8 @@
 		<choice hidden="true">
 		<text>Continue...</text>
 		<event>
-		<text>The ship begins powering its weapons. Prepare for battle. </text>			
-			<ship hostile="true"/> 
+		<text>The ship begins powering its weapons. Prepare for battle. </text>
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -586,7 +586,7 @@
 	</choice>
 </event>
 </choice>
-	
+
 
 </event>
 </choice>
@@ -600,7 +600,7 @@
 		<item type="fuel" min="2" max="2"/>
 	</item_modify>
 	<hiddenAug>ACH_FM_BOSS_FREE1</hiddenAug>
-	
+
 	<choice hidden="true" req="HID_TEA_EARL" max_group="1" blue="false">
 				<text>You already have Earl Grey tea.</text>
 				<event load="OPTION_INVALID"/>
@@ -619,36 +619,36 @@
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
+	</event>
+
 </choice>
-</event> 
+</event>
 </choice>
 
 	<choice hidden="false" req="HID_TEA_EARL" max_group="2" blue="false">
 						<text>You already have Earl Grey tea.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 	<choice hidden="false" req="FREE1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Earl Grey tea.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 	<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Earl Grey tea.</text>
 <event>
@@ -662,7 +662,7 @@
 			<hiddenAug>FREE1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <event name="FM_BOSS_FREE1_DESTROYED2">
 	<playMusic></playMusic>
@@ -691,36 +691,36 @@
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
+	</event>
+
 </choice>
-</event> 
+</event>
 </choice>
 
 	<choice hidden="false" req="HID_TEA_EARL" max_group="2" blue="false">
 						<text>You already have Earl Grey tea.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 	<choice hidden="false" req="FREE1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Earl Grey tea.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 	<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Earl Grey tea.</text>
 <event>
@@ -734,7 +734,7 @@
 			<hiddenAug>FREE1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <!--LOSTSUN B-->
 <ship name="FM_BOSS_LOSTSUN1_SHIP" auto_blueprint="FM_BOSS_LOSTSUN1">
@@ -743,13 +743,13 @@
 </ship>
 <event name="FM_BOSS_LOSTSUN1_SUICIDE">
 	<text>From out of the tunnel comes a massive cruiser vessel, of Lost Sun design! The ship seems to be armored and covered with a massive, ancient shield. It wields one of the nastiest arsenals you've ever seen. Something seems...off about it however.</text>
-	<ship load="FM_BOSS_LOSTSUN1_SHIP" hostile="false"/> 
+	<ship load="FM_BOSS_LOSTSUN1_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
 			<text>The Lost Sun captain grunts. "Hmmph. We finally found you son. We travelled across countless realities for this very moment. It appears the fabric of space and time has taken its toll on our vessel from taking this colossal gamble however. I'd wager we have 90 seconds before we fall apart. But fear not, that is plenty of time to stop a galactic horror such as you! Not even reality bending can stop us now!"
 			[A powerful jamming signal strikes your vessel, all combat augments and combat checks are disabled! Some of your systems appear damaged as well.]</text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<triggeredEvent event="FM_BOSS_LOSTSUN1_CRUMBLE1" time="15" thisFight="true">
 			<triggeredEventBox load="DEFAULT_SMALL">
@@ -795,37 +795,37 @@
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_REALITY_RELOADER" max_group="2" blue="false">
 					<text>You already have Reality Reloader.</text>
 						<event>
-						<item_modify>			
+						<item_modify>
 						<item type="fuel" min="1" max="1"/>
 						</item_modify>
 						<choice hidden="false">
 						<text>Continue...</text>
 						<event/>
-						</choice>	
+						</choice>
 						</event>
-						</choice>		
+						</choice>
 <choice hidden="false" req="LOSTSUN1_SCRAPPED" max_group="2" blue="false">
 					<text>You already scrapped Reality Reloader.</text>
 						<event>
-						<item_modify>			
+						<item_modify>
 						<item type="fuel" min="1" max="1"/>
 						</item_modify>
 						<choice hidden="false">
 						<text>Continue...</text>
 						<event/>
-						</choice>	
+						</choice>
 						</event>
-						</choice>		
+						</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Reality Reloader.</text>
 <event>
@@ -839,7 +839,7 @@
 			<hiddenAug>LOSTSUN1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <event name="FM_BOSS_LOSTSUN1_DESTROYED2">
 		<playMusic></playMusic>
@@ -849,7 +849,7 @@
 		<item type="fuel" min="2" max="2"/>
 	</item_modify>
 	<hiddenAug>ACH_FM_BOSS_LOSTSUN1</hiddenAug>
-		
+
 		<choice hidden="true" req="HID_REALITY_RELOADER" max_group="1" blue="false">
 				<text>You already have Reality Reloader.</text>
 				<event load="OPTION_INVALID"/>
@@ -868,36 +868,36 @@
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
+	</event>
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_REALITY_RELOADER" max_group="2" blue="false">
 					<text>You already have Reality Reloader.</text>
 						<event>
-						<item_modify>			
+						<item_modify>
 						<item type="fuel" min="1" max="1"/>
 						</item_modify>
 						<choice hidden="false">
 						<text>Continue...</text>
 						<event/>
-						</choice>	
+						</choice>
 						</event>
-						</choice>		
+						</choice>
 <choice hidden="false" req="LOSTSUN1_SCRAPPED" max_group="2" blue="false">
 					<text>You already scrapped Reality Reloader.</text>
 						<event>
-						<item_modify>			
+						<item_modify>
 						<item type="fuel" min="1" max="1"/>
 						</item_modify>
 						<choice hidden="false">
 						<text>Continue...</text>
 						<event/>
-						</choice>	
+						</choice>
 						</event>
-						</choice>		
+						</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Reality Reloader.</text>
 <event>
@@ -911,7 +911,7 @@
 			<hiddenAug>LOSTSUN1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <event name="FM_BOSS_LOSTSUN1_CRUMBLE1">
 	<text>15 seconds into the fight and you observe a massive explosion erupt from within the enemy ship. What in the world just happened? A huge chunk of the ship's thrusters appear to have disintegrated as well.</text>
@@ -926,7 +926,7 @@
 			</triggeredEventBox>
 			<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
 			</triggeredEvent>
-			
+
 		</event>
 	</choice>
 </event>
@@ -944,7 +944,7 @@
 			</triggeredEventBox>
 			<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
 			</triggeredEvent>
-			
+
 		</event>
 	</choice>
 </event>
@@ -962,7 +962,7 @@
 			</triggeredEventBox>
 			<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
 			</triggeredEvent>
-			
+
 		</event>
 	</choice>
 </event>
@@ -980,7 +980,7 @@
 			</triggeredEventBox>
 			<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
 			</triggeredEvent>
-			
+
 		</event>
 	</choice>
 </event>
@@ -998,7 +998,7 @@
 			</triggeredEventBox>
 			<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
 			</triggeredEvent>
-			
+
 		</event>
 	</choice>
 </event>
@@ -1010,8 +1010,8 @@
 	<choice hidden="true">
 		<text>That was...odd.</text>
 		<event>
-		
-			
+
+
 		</event>
 	</choice>
 </event>
@@ -1024,7 +1024,7 @@
 </ship>
 <event name="FM_BOSS_MANTIS1_SUICIDE">
 	<text>From out of the tunnel comes a massive cruiser vessel, it appears to be a ship with a massive scar. It may be a Mantis vessel!</text>
-	<ship load="FM_BOSS_MANTIS1_SHIP" hostile="false"/> 
+	<ship load="FM_BOSS_MANTIS1_SHIP" hostile="false"/>
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<choice hidden="true">
 		<text>Continue...</text>
@@ -1037,12 +1037,12 @@
 		<choice hidden="true">
 		<text>Continue...</text>
 		<event>
-		<text>It appears they are having trouble powering their teleporter. Act fast! You'll have no time for a combat check.</text>	
+		<text>It appears they are having trouble powering their teleporter. Act fast! You'll have no time for a combat check.</text>
 		<choice hidden="true">
 		<text>Continue...</text>
-		<event>		
+		<event>
 		<text>The ship begins powering its weapons. Prepare for battle. </text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<status type="limit" target="enemy" system="teleporter" amount="0"/>
 			<triggeredEvent event="COMBAT_CHECK_JAM_TELEPORTER_POWERDOWN" time="30" thisFight="true">
@@ -1073,7 +1073,7 @@
 		<item type="fuel" min="2" max="2"/>
 	</item_modify>
 	<hiddenAug>ACH_FM_BOSS_MANTIS1</hiddenAug>
-	
+
 		<choice hidden="true" req="HID_MANTIS_RELOADER" max_group="1" blue="false">
 				<text>You already have Pheromone Accelerator.</text>
 				<event load="OPTION_INVALID"/>
@@ -1092,38 +1092,38 @@
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 
 <choice hidden="false" req="HID_MANTIS_RELOADER" max_group="2" blue="false">
 						<text>You already have Pheromone Accelerator.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 	<choice hidden="false" req="MANTIS1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Pheromone Accelerator.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Pheromone Accelerator.</text>
 <event>
@@ -1137,7 +1137,7 @@
 			<hiddenAug>MANTIS1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <event name="FM_BOSS_MANTIS1_DESTROYED2">
 	<playMusic></playMusic>
@@ -1147,7 +1147,7 @@
 		<item_modify>
 		<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		
+
 		<choice hidden="true" req="HID_MANTIS_RELOADER" max_group="1" blue="false">
 				<text>You already have Pheromone Accelerator.</text>
 				<event load="OPTION_INVALID"/>
@@ -1166,37 +1166,37 @@
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_MANTIS_RELOADER" max_group="2" blue="false">
 						<text>You already have Pheromone Accelerator.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 	<choice hidden="false" req="MANTIS1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Pheromone Accelerator.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Pheromone Accelerator.</text>
 <event>
@@ -1210,7 +1210,7 @@
 			<hiddenAug>MANTIS1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 
 <!--MONK B-->
@@ -1220,12 +1220,12 @@
 </ship>
 <event name="FM_BOSS_MONK1_SUICIDE">
 	<text>From out of the tunnel comes a massive cruiser vessel, of Monk design! It's uncharacteristic of Zoltan Monk ships to be so well armed, though it seems most of their weaponry is Ion and Stun related!</text>
-	<ship load="FM_BOSS_MONK1_SHIP" hostile="false"/> 
+	<ship load="FM_BOSS_MONK1_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
 			<text>"You need to learn to relax, and meditate. Fortunately, we have just the equipment to make you, if you do not comply."</text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -1262,18 +1262,18 @@
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_FM_UPG_AETHER_SHIELDS" max_group="2" blue="false">
 						<text>You already have Aether Ascension Shields.</text>
 						<choice>Continue...</choice>
 						<event>
-						<item_modify>			
+						<item_modify>
 						<item type="fuel" min="1" max="1"/>
 					</item_modify>
 						<event/>
@@ -1283,7 +1283,7 @@
 						<text>You already scrapped Aether Ascension Shields.</text>
 						<choice>Continue...</choice>
 						<event>
-						<item_modify>			
+						<item_modify>
 						<item type="fuel" min="1" max="1"/>
 					</item_modify>
 						<event/>
@@ -1302,7 +1302,7 @@
 			<hiddenAug>MONK1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <event name="FM_BOSS_MONK1_DESTROYED2">
 	<playMusic></playMusic>
@@ -1331,37 +1331,37 @@
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_FM_UPG_AETHER_SHIELDS" max_group="2" blue="false">
 						<text>You already have Aether Ascension Shields.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 	<choice hidden="false" req="MONK1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Aether Ascension Shields.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Aether Ascension Shields.</text>
 <event>
@@ -1375,7 +1375,7 @@
 			<hiddenAug>MONK1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 
 <!--ROCK C-->
@@ -1385,13 +1385,13 @@
 </ship>
 <event name="FM_BOSS_R1_SUICIDE">
 	<text>From out of the tunnel comes a massive cruiser vessel, it appears to be a Rock vessel made out of gold!</text>
-	<ship load="FM_BOSS_R1_SHIP" hostile="false"/> 
+	<ship load="FM_BOSS_R1_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
 			<text>You are hailed by the ship, and you reluctantly accept. "Five minutes, five minutes is all I need to kick your ass." A Rockman with a strange accent says to you, with a nasty tone.</text>
-			
-	
+
+
 	<choice hidden="true">
 		<text>Make it three minutes, chump.</text>
 		<event>
@@ -1400,7 +1400,7 @@
 		<text>Continue...</text>
 		<event>
 		<text>The ship activates its 4 artillery. They appear to be slow to charge but have a chain effect. Better be quick! </text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -1410,7 +1410,7 @@
 	</choice>
 </event>
 </choice>
-	
+
 
 </event>
 </choice>
@@ -1443,37 +1443,37 @@
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_FREEDOM_ROCK" max_group="2" blue="false">
 						<text>You already have Rockmen Relic of Freedom.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 	<choice hidden="false" req="R1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Rockmen Relic of Freedom.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Rockmen Relic of Freedom.</text>
 <event>
@@ -1487,7 +1487,7 @@
 			<hiddenAug>R1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <event name="FM_BOSS_R1_SHIP_DESTROYED2">
 	<playMusic></playMusic>
@@ -1516,37 +1516,37 @@
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_FREEDOM_ROCK" max_group="2" blue="false">
 						<text>You already have Rockmen Relic of Freedom.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 	<choice hidden="false" req="R1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Rockmen Relic of Freedom.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Rockmen Relic of Freedom.</text>
 <event>
@@ -1560,7 +1560,7 @@
 			<hiddenAug>R1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 
 <!--SEPARATIST B-->
@@ -1570,15 +1570,15 @@
 </ship>
 <event name="FM_BOSS_SEPA1_SUICIDE">
 	<text>From out of the tunnel comes a massive cruiser vessel, of Separatist design! The ship appears to be split in two halves, and resembles some sort of old Earth symbolism...</text>
-	<ship load="FM_BOSS_SEPA1_SHIP" hostile="false"/> 
+	<ship load="FM_BOSS_SEPA1_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
 			<text>"Nothing is completely yin nor is it completely yang. All things in the material universe contain the seed of their opposite force... Therefore, yin can become yang and yang can also become yin, though both yin and yang are needed for the whole to be complete. All in the eye of the beholder - some of the most destructive forces in the world (fire & water), can also have the power of beauty."</text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<status type="limit" target="enemy" system="weapons" amount="7"/>
-			
+
 			<triggeredEvent event="FM_BOSS_SEPA1_YANG" time="30" thisFight="true">
 			<triggeredEventBox load="DEFAULT_SMALL">
 							<tooltip>The enemy is slowly flipping between two auras.</tooltip>
@@ -1626,37 +1626,37 @@
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="AUG_MAGATAMA" max_group="2" blue="false">
 						<text>You already have Magatama.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 	<choice hidden="false" req="SEPA1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Magatama.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Magatama.</text>
 <event>
@@ -1670,7 +1670,7 @@
 			<hiddenAug>SEPA1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <event name="FM_BOSS_SEPA1_DESTROYED2">
 	<playMusic></playMusic>
@@ -1699,37 +1699,37 @@
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="AUG_MAGATAMA" max_group="2" blue="false">
 						<text>You already have Magatama.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 	<choice hidden="false" req="SEPA1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Magatama.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Magatama.</text>
 <event>
@@ -1743,7 +1743,7 @@
 			<hiddenAug>SEPA1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <event name="FM_BOSS_SEPA1_YING">
 	<text>You notice the strange glow emitting from the vessel change from white to black. The ship's system specs seem to be shifting!</text>
@@ -1759,7 +1759,7 @@
 			</triggeredEventBox>
 			<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
 			</triggeredEvent>
-			
+
 		</event>
 	</choice>
 </event>
@@ -1778,7 +1778,7 @@
 			</triggeredEventBox>
 			<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
 			</triggeredEvent>
-			
+
 		</event>
 	</choice>
 </event>
@@ -1791,7 +1791,7 @@
 </ship>
 <event name="FM_BOSS_SLUG1_SUICIDE">
 	<text>From out of the tunnel comes a massive cruiser vessel, of Slug design! The bright hull of the cruiser draws your attention, though the arsenal its pointing straight at you is quite distracting as well.</text>
-	<ship load="FM_BOSS_SLUG1_SHIP" hostile="false"/> 
+	<ship load="FM_BOSS_SLUG1_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
@@ -1800,10 +1800,10 @@
 			<choice hidden="true">
 			<text>But why are you using ancient weaponry?</text>
 			<event>
-			<text>"What? Ancient weaponry? These are just my lightersssss, you think I can get this thing sssssstarted with a match?" The slug takes a drag that lasts minutes before continuing, 
-			
+			<text>"What? Ancient weaponry? These are just my lightersssss, you think I can get this thing sssssstarted with a match?" The slug takes a drag that lasts minutes before continuing,
+
 			"Ah well, not like you're going to be able to ssssstop me with that thing."</text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -1842,37 +1842,37 @@
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_MALBORO_RED" max_group="2" blue="false">
 						<text>You already have Malboro Quasar.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 	<choice hidden="false" req="SLUG1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Malboro Quasar.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Malboro Quasar.</text>
 <event>
@@ -1886,7 +1886,7 @@
 			<hiddenAug>SLUG1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <event name="FM_BOSS_SLUG1_DESTROYED2">
 	<playMusic></playMusic>
@@ -1915,37 +1915,37 @@
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_MALBORO_RED" max_group="2" blue="false">
 						<text>You already have Malboro Quasar.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 	<choice hidden="false" req="SLUG1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Malboro Quasar.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Malboro Quasar.</text>
 <event>
@@ -1959,7 +1959,7 @@
 			<hiddenAug>SLUG1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <!--STEALTH B-->
 <ship name="FM_BOSS_STEALTH1_SHIP" auto_blueprint="FM_BOSS_STEALTH1">
@@ -1968,7 +1968,7 @@
 </ship>
 <event name="FM_BOSS_STEALTH1_SUICIDE">
 	<text>From out of the tunnel comes a massive cruiser vessel, of Stealth design! There appears to be something...very wrong with its camoflague. Purple?</text>
-	<ship load="FM_BOSS_STEALTH1_SHIP" hostile="false"/> 
+	<ship load="FM_BOSS_STEALTH1_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
@@ -1981,7 +1981,7 @@
 		<text>Continue...</text>
 		<event>
 		<text>The ship activates its weapons. They appear odd, but not too dangerous at a glance. </text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -1991,7 +1991,7 @@
 	</choice>
 </event>
 </choice>
-	
+
 
 </event>
 </choice>
@@ -2014,7 +2014,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 	</choice>
-</event> 
+</event>
 
 <event name="FM_BOSS_STEALTH1_DESTROYED2">
 	<playMusic></playMusic>
@@ -2033,7 +2033,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 	</choice>
-</event>	
+</event>
 
 <!--ZOLTAN C-->
 <ship name="FM_BOSS_ZOLTAN1_SHIP" auto_blueprint="FM_BOSS_ZOLTAN1">
@@ -2042,12 +2042,12 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 </ship>
 <event name="FM_BOSS_ZOLTAN1_SUICIDE">
 	<text>From out of the tunnel comes a massive cruiser vessel, of Zoltan design! The ship glows with energy, and it's safe to say the Zoltan crew aboard have kept their reactor well supplied.</text>
-	<ship load="FM_BOSS_ZOLTAN1_SHIP" hostile="false"/> 
+	<ship load="FM_BOSS_ZOLTAN1_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
 			<text>"Federation vessel, this is CFB-65. Your head is currently wanted by several inter-dimensional governments. However, this is not why we have come here. We have found you in violation of protocol-UX534-W, which states clearly that military vessels exceeding the maximum reality bending threshold allocated for this universe are to....be rewarded and ignored! I'm sorry, but this is the law. Take our reward and leave this sector. Or ELSE"</text>
-			
+
 			<choice hidden="true">
 		<text>Wait...what? Sure I'll take your reward.</text>
 		<event>
@@ -2056,13 +2056,13 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 	</item_modify>
 			<text>"Thank you Federation Vessel. We will also be confiscating this...for galactic safety of course." They appear to have hacked into your systems and removed the C.U.R.A. Drive Hacker!</text>
 			<remove name="CURA_MVBOSS_SPAWNER"/>
-			
+
 			<choice hidden="true">
 				<text>Wait that wasn't part of the deal!</text>
 				<event>
 				<text>"Farewell, you greedy imbecile." The Zoltan captain responds, jumping away quickly.</text>
-				<instantEscape/>   
-				
+				<instantEscape/>
+
 				</event>
 			</choice>
 		</event>
@@ -2070,9 +2070,9 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<choice hidden="false">
 		<text>I want nothing that you are offering.</text>
 		<event>
-		
+
 			<text>"Federation vessel, your actions violate our laws. Prepare to die swiftly and with dignity.</text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -2092,7 +2092,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<item type="fuel" min="2" max="2"/>
 	</item_modify>
 	<hiddenAug>ACH_FM_BOSS_ZOLTAN1</hiddenAug>
-	
+
 		<choice hidden="true" req="HID_LAB_ZOLTAN_LIMIT_RELEASE" max_group="1" blue="false">
 				<text>You already have Limit Release.</text>
 				<event load="OPTION_INVALID"/>
@@ -2111,37 +2111,37 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_LAB_ZOLTAN_LIMIT_RELEASE" max_group="2" blue="false">
 						<text>You already have Limit Release.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 	<choice hidden="false" req="ZOLTAN1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Limit Release.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Limit Release.</text>
 <event>
@@ -2155,7 +2155,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 			<hiddenAug>ZOLTAN1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <event name="FM_BOSS_ZOLTAN1_DESTROYED2">
 	<playMusic></playMusic>
@@ -2165,7 +2165,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<item type="fuel" min="2" max="2"/>
 	</item_modify>
 	<hiddenAug>ACH_FM_BOSS_ZOLTAN1</hiddenAug>
-	
+
 		<choice hidden="true" req="HID_LAB_ZOLTAN_LIMIT_RELEASE" max_group="1" blue="false">
 				<text>You already have Limit Release.</text>
 				<event load="OPTION_INVALID"/>
@@ -2184,37 +2184,37 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_LAB_ZOLTAN_LIMIT_RELEASE" max_group="2" blue="false">
 						<text>You already have Limit Release.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 	<choice hidden="false" req="ZOLTAN1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Limit Release.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Limit Release.</text>
 <event>
@@ -2228,7 +2228,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 			<hiddenAug>ZOLTAN1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <!--SHELL C-->
 <ship name="FM_BOSS_SHELL1_SHIP" auto_blueprint="FM_BOSS_SHELL1">
@@ -2237,7 +2237,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 </ship>
 <event name="FM_BOSS_SHELL1_SUICIDE">
 <text>From out of the tunnel comes a massive cruiser vessel, of Shell design! A bright light shines through the cracks on the ship, pulsing the colors of the rainbow, and some odd ones as well</text>
-	<ship load="FM_BOSS_SHELL1_SHIP" hostile="false"/> 
+	<ship load="FM_BOSS_SHELL1_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
@@ -2246,7 +2246,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 			<text>Very well, I will honor your request.</text>
 			<event>
 			<text>The ship activates its weapons. They appear to be gas weapons, protect your crew as best you can! And you observe that the enemy crew appears to be extremely durable, crew combat may be very foolish.  </text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -2266,7 +2266,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<item type="fuel" min="2" max="2"/>
 	</item_modify>
 	<hiddenAug>ACH_FM_BOSS_SHELL1</hiddenAug>
-	
+
 	<choice hidden="true" req="HID_COMBUSTION_VIRUS" max_group="1" blue="false">
 				<text>You already have Combustion Bioweapon.</text>
 				<event load="OPTION_INVALID"/>
@@ -2285,36 +2285,36 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-</event> 
-	
+</event>
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_COMBUSTION_VIRUS" max_group="2" blue="false">
 						<text>You already have Combustion Bioweapon.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>		
+							</choice>
 	<choice hidden="false" req="SHELL1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Combustion Bioweapon.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Destroy the Combustion Bioweapon.</text>
 <event>
@@ -2328,7 +2328,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 			<hiddenAug>SHELL1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 <!--
 <event name="FM_BOSS_SHELL1_DESTROYED2">
 	<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate an attache case with countless syringes filled with a neon purple liquid, they don't appear to be properly sealed either. It appears to radiate otherworldly energy. You recall that the Shell told you to destroy it.</text>
@@ -2351,10 +2351,10 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-</event> 
-	
+</event>
+
 </choice>
-</event> 
+</event>
 </choice>
 <choice hidden="false">
 <text>Destroy the Combustion Bioweapon.</text>
@@ -2381,7 +2381,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 			<ship hostile="true"/>
 		</event>
 	</choice>
-</event> 
+</event>
 
 <!--ENGINEER B-->
 <ship name="FM_BOSS_ENGINEER1_SHIP" auto_blueprint="FM_BOSS_ENGINEER1">
@@ -2390,12 +2390,12 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 </ship>
 <event name="FM_BOSS_ENGINEER1_SUICIDE">
 	<text>From out of the tunnel comes a massive cruiser vessel, of Rebel Engineer design! It looks like a medical vessel, though it's armed to the TEETH.</text>
-	<ship load="FM_BOSS_ENGINEER1_SHIP" hostile="false"/> 
+	<ship load="FM_BOSS_ENGINEER1_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
 			<text>".tnecca diputs siz gnidloh fo derit ma'z I ,ylkciuq eid ,esaelP !nuf eb dluohs siZ ?lessev noitaredeF haz ,hooooO ?ere' evah ewv od tahv ,mmmH"</text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -2433,37 +2433,37 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_UPG_DRONE_SPEED_2" max_group="2" blue="false">
 						<text>You already have Drone Boost MK II.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 	<choice hidden="false" req="ENGINEER1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Drone Boost MK II.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Drone Boost MK II.</text>
 <event>
@@ -2477,7 +2477,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 			<hiddenAug>ENGINEER1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <event name="FM_BOSS_ENGINEER1_DESTROYED2">
 	<playMusic></playMusic>
@@ -2508,37 +2508,37 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_UPG_DRONE_SPEED_2" max_group="2" blue="false">
 						<text>You already have Drone Boost MK II.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 	<choice hidden="false" req="ENGINEER1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Drone Boost MK II.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Drone Boost MK II.</text>
 <event>
@@ -2552,7 +2552,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 			<hiddenAug>ENGINEER1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 
 <!--LANIUS B-->
@@ -2562,13 +2562,13 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 </ship>
 <event name="FM_BOSS_LANIUS1_SUICIDE">
 	<text>From out of the tunnel comes a massive cruiser vessel, of Lanius design! The ship glitters in the light of the nearby star, as its scarlet hull and sharp spikes lurch towards you. But this one feels...different. Its lights are red and you feel almost...hungry looking at it. You can't quite put your finger on it.</text>
-	<ship load="FM_BOSS_LANIUS1_SHIP" hostile="false"/> 
+	<ship load="FM_BOSS_LANIUS1_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
-			<text>Your comms are immediately hacked by the vessel. It begins to flood your ship with noise: "proshutë, hirugiharra, бекон, slanina, cansalada, cansalada, slanina, bacon, spek, peekon, pekoni, μπέικον, szalonna, beikon, bagún, bekons, сланина, bejken, 
+			<text>Your comms are immediately hacked by the vessel. It begins to flood your ship with noise: "proshutë, hirugiharra, бекон, slanina, cansalada, cansalada, slanina, bacon, spek, peekon, pekoni, μπέικον, szalonna, beikon, bagún, bekons, сланина, bejken,
 			boczek, tocino, cig moch, בייקאָן." This repeats over and over...this must be a brainwashing tactic!     </text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<choice hidden="true">
 				<text>Counterattack!</text>
@@ -2605,37 +2605,37 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_FIRE_HEART" max_group="2" blue="false">
 						<text>You already have Scrapmetal Fireheart.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 	<choice hidden="false" req="LANIUS1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Scrapmetal Fireheart.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Scrapmetal Fireheart.</text>
 <event>
@@ -2649,7 +2649,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 			<hiddenAug>LANIUS1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <event name="FM_BOSS_LANIUS1_DESTROYED2">
 	<playMusic></playMusic>
@@ -2659,7 +2659,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<item type="fuel" min="2" max="2"/>
 	</item_modify>
 	<hiddenAug>ACH_FM_BOSS_LANIUS1</hiddenAug>
-		
+
 		<choice hidden="true" req="HID_FIRE_HEART" max_group="1" blue="false">
 				<text>You already have Scrapmetal Fireheart.</text>
 				<event load="OPTION_INVALID"/>
@@ -2678,37 +2678,37 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_FIRE_HEART" max_group="2" blue="false">
 						<text>You already have Scrapmetal Fireheart.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 	<choice hidden="false" req="LANIUS1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Scrapmetal Fireheart.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Scrapmetal Fireheart.</text>
 <event>
@@ -2722,27 +2722,20 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 			<hiddenAug>LANIUS1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 
 <!--KESTREL B-->
 <ship name="FM_BOSS_KES1_SHIP" auto_blueprint="FM_BOSS_KES1">
-	 
-    <triggeredEvent name="ZUUL TIME" event="FM_KES1_BOARD1"  enemyCrew="7" thisFight="true"/>
-	<triggeredEvent name="VINZ TIME" event="FM_KES1_BOARD2"  enemyCrew="6" thisFight="true"/>
-	<triggeredEvent name="PSYCH TIME" event="FM_KES1_BOARD3"  enemyCrew="5" thisFight="true"/>
-	<triggeredEvent name="SLIMER TIME" event="FM_KES1_BOARD4"  enemyCrew="4" thisFight="true"/>
-	<triggeredEvent name="COLERI TIME" event="FM_KES1_BOARD5"  enemyCrew="3" thisFight="true"/>
-	<triggeredEvent name="GOZER TIME" event="FM_KES1_BOARD6"  enemyCrew="2" thisFight="true"/>
-	<triggeredEvent name="ELEANOR TIME" event="FM_KES1_BOARD7"  enemyCrew="1" thisFight="true"/>
-	
-	
+
+
+
 	<destroyed load="FM_BOSS_KES1_SHIP_DESTROYED"/>
 	<deadCrew load="FM_BOSS_KES1_SHIP_DESTROYED2"/>
 </ship>
 <event name="FM_BOSS_KES1_SUICIDE">
 	<text>From out of the tunnel comes a massive cruiser vessel, it appears to be an ancient, ugly Kestrel model! Something about the ship makes you....very uneasy</text>
-	<ship load="FM_BOSS_KES1_SHIP" hostile="false"/> 
+	<ship load="FM_BOSS_KES1_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
@@ -2756,7 +2749,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<event>
 		<status type="limit" target="enemy" system="weapons" amount="0"/>
 		<text>The enemy seems more depressed, their weapons go entirely offline and their ability to jam your systems is gone. Poor guy.</text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 		<playMusic>Twisted</playMusic>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -2778,7 +2771,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 			<status type="limit" target="player" system="weapons" amount="0"/>
 			<status type="limit" target="player" system="drones" amount="0"/>
 			<status type="limit" target="player" system="artillery" amount="0"/>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -2800,7 +2793,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 			<status type="limit" target="player" system="weapons" amount="0"/>
 			<status type="limit" target="player" system="drones" amount="0"/>
 			<status type="limit" target="player" system="artillery" amount="0"/>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -2817,6 +2810,10 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 
 <event name="FM_BOSS_KES1_SHIP_DESTROYED">
 	<playMusic></playMusic>
+	<status type="clear" target="player" system="teleporter" amount="100"/>
+	<status type="clear" target="player" system="weapons" amount="100"/>
+	<status type="clear" target="player" system="drones" amount="100"/>
+	<status type="clear" target="player" system="artillery" amount="100"/>
 	<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking.  You also locate what appears to be a small mini refrigerator, labelled "Property of Gozer". It gives off an otherworldly aura.</text>
 	<autoReward level="HIGH">scrap_only</autoReward>
 	<item_modify>
@@ -2842,37 +2839,37 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_GOZER_FRIDGE" max_group="2" blue="false">
 						<text>You already have Gozer's Fridge.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 	<choice hidden="false" req="KES1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Gozer's Fridge.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap Gozer's Fridge.</text>
 <event>
@@ -2886,10 +2883,14 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 			<hiddenAug>KES1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <event name="FM_BOSS_KES1_SHIP_DESTROYED2">
 	<playMusic></playMusic>
+	<status type="clear" target="player" system="teleporter" amount="100"/>
+	<status type="clear" target="player" system="weapons" amount="100"/>
+	<status type="clear" target="player" system="drones" amount="100"/>
+	<status type="clear" target="player" system="artillery" amount="100"/>
 	<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears to be a small mini refrigerator, labelled "Property of Gozer". It gives off an otherworldly aura.</text>
 	<autoReward level="HIGH">scrap_only</autoReward>
 	<item_modify>
@@ -2915,37 +2916,37 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_GOZER_FRIDGE" max_group="2" blue="false">
 						<text>You already have Gozer's Fridge.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 	<choice hidden="false" req="KES1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Gozer's Fridge.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap Gozer's Fridge.</text>
 <event>
@@ -2959,7 +2960,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 			<hiddenAug>KES1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <event name="FM_KES1_BOARD1">
 <boarders min="2" max="2" class="gbzuul"/>
@@ -2998,12 +2999,12 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 </ship>
 <event name="FM_BOSS_FED1_SUICIDE">
 	<text>From out of the tunnel comes a massive cruiser vessel, of Federation design! However, judging from the very odd paint job and decals, it's safe to assume the Federation is no longer the owner of this vessel.</text>
-	<ship load="FM_BOSS_FED1_SHIP" hostile="false"/> 
+	<ship load="FM_BOSS_FED1_SHIP" hostile="false"/>
 	<choice hidden="true" >
 		<text>Continue...</text>
 		<event>
 			<text>"Hold it right there, criminal scum! I SAW what you did in all those other realities. I've brought my Eradicator Beam with me to inflict swift justice upon you!"</text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -3040,37 +3041,37 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_UPG_WEAPONS_REPLICATOR_2" max_group="2" blue="false">
 						<text>You already have Twisted Ammo Fabricator.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 	<choice hidden="false" req="FED1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Twisted Ammo Fabricator.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Twisted Ammo Fabricator.</text>
 <event>
@@ -3084,7 +3085,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 			<hiddenAug>FED1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <event name="FM_BOSS_FED1_DESTROYED2">
 	<playMusic></playMusic>
@@ -3112,38 +3113,38 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<choice hidden="true">
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
-		</choice>	
-	</event> 
-	
-	
+		</choice>
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_UPG_WEAPONS_REPLICATOR_2" max_group="2" blue="false">
 						<text>You already have Twisted Ammo Fabricator.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 	<choice hidden="false" req="FED1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Twisted Ammo Fabricator.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Twisted Ammo Fabricator.</text>
 <event>
@@ -3157,7 +3158,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 			<hiddenAug>FED1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <!--ORCHID B-->
 <ship name="FM_BOSS_ORCHID1_SHIP" auto_blueprint="FM_BOSS_ORCHID1">
@@ -3166,7 +3167,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 </ship>
 <event name="FM_BOSS_ORCHID1_SUICIDE">
 	<text>From out of the tunnel comes a massive cruiser vessel, of Orchid design! The ship here seems to bear an unusual resemblance to an Earth fruit known as the "Strawberry" but with a blue coloration, though that's probably a coincidence.</text>
-	<ship load="FM_BOSS_ORCHID1_SHIP" hostile="false"/> 
+	<ship load="FM_BOSS_ORCHID1_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
@@ -3176,7 +3177,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<event>
 			<text>The Orchid continues: "What did the grape say when it was crushed? Nothing, but it let out a little wine." he pauses for your laugh, but it never comes. "When does a farmer dance? When he drops the beet."
 
-"Why did the apricot ask a prune to dinner? Because he couldn’t find a date." 
+"Why did the apricot ask a prune to dinner? Because he couldn’t find a date."
 
 "I’m a succa for puns!"</text>
 			<choice hidden="true">
@@ -3190,11 +3191,11 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 			<choice hidden="true">
 		<text>Please stop, no more.</text>
 		<event>
-			<text>The Orchid scoffs: "I yam what I yam, I like big buds and I cannot lie, you need to herb your enthusiasm." he responds. 
-			
-			"What I'm saying is, you're a terrible audience. I'll see you in hell friend. Perhaps you'll GROW a better sense of humor!" 
+			<text>The Orchid scoffs: "I yam what I yam, I like big buds and I cannot lie, you need to herb your enthusiasm." he responds.
+
+			"What I'm saying is, you're a terrible audience. I'll see you in hell friend. Perhaps you'll GROW a better sense of humor!"
 			You still didn't laugh. </text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -3223,7 +3224,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 	</choice>
-</event> 
+</event>
 
 <event name="FM_BOSS_ORCHID1_DESTROYED2">
 	<playMusic></playMusic>
@@ -3248,17 +3249,17 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 </ship>
 <event name="FM_BOSS_CRYSTAL1_SUICIDE">
 	<text>From out of the tunnel comes a massive cruiser vessel, of Crystal design! They appear to have a strange and dangerous looking flak weapon! </text>
-	<ship load="FM_BOSS_CRYSTAL1_SHIP" hostile="false"/> 
+	<ship load="FM_BOSS_CRYSTAL1_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
 			<text>The ship does not hail you at all, it simply immediately attacks. </text>
-		
+
 		<choice hidden="true">
 		<text>Continue...</text>
 		<event>
 		<text>The ship begins powering its weapons. Prepare for battle. </text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -3268,7 +3269,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 	</choice>
 </event>
 </choice>
-	
+
 
 </event>
 
@@ -3286,7 +3287,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 	</choice>
-</event> 
+</event>
 
 <event name="FM_BOSS_CRYSTAL1_SHIP_DESTROYED2">
 	<playMusic></playMusic>
@@ -3311,7 +3312,7 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 </ship>
 <event name="FM_BOSS_TUCO1_SUICIDE">
 	<text>From out of the tunnel comes a massive cruiser vessel, of Hephaestus design! It appears to have been entirely remodelled however, it is covered in advertising, toys, and other...."cute" decorations. What in the world is going on?</text>
-	<ship load="FM_BOSS_TUCO1_SHIP" hostile="false"/> 
+	<ship load="FM_BOSS_TUCO1_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
@@ -3327,7 +3328,7 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 			<text>You've seen enough, do the right thing. Attack.</text>
 			<event>
 			<text>As soon as you activate your weapons, another recording plays. "Naughty visitors get put in PERMANENT Time out. Let's go kids, time for an intruder drill!"</text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -3349,8 +3350,8 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 		<item type="fuel" min="2" max="2"/>
 	</item_modify>
 	<hiddenAug>ACH_FM_BOSS_TUCO1</hiddenAug>
-		
-		
+
+
 		<choice hidden="true" req="HID_GOLDEN_TUCO" max_group="1" blue="false">
 				<text>You already have Golden Tuco.</text>
 				<event load="OPTION_INVALID"/>
@@ -3369,37 +3370,37 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_GOLDEN_TUCO" max_group="2" blue="false">
 						<text>You already have Golden Tuco.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 	<choice hidden="false" req="TUCO1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Golden Tuco.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Golden Tuco.</text>
 <event>
@@ -3413,7 +3414,7 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 			<hiddenAug>TUCO1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <event name="FM_BOSS_TUCO1_DESTROYED2">
 	<playMusic></playMusic>
@@ -3442,37 +3443,37 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_GOLDEN_TUCO" max_group="2" blue="false">
 						<text>You already have Golden Tuco.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 	<choice hidden="false" req="TUCO1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Golden Tuco.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Golden Tuco.</text>
 <event>
@@ -3486,19 +3487,19 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 			<hiddenAug>TUCO1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 
 <!--LEECH C-->
 <ship name="FM_BOSS_LEECH1_SHIP" auto_blueprint="FM_BOSS_LEECH1">
 	 <triggeredEvent name="FM_LEECH_SPARES_YOU" event="FM_LEECH_SPARES" playerHull="3" playerCrew="1" thisFight="true"/>
-	
+
 	<destroyed load="FM_BOSS_LEECH1_DESTROYED"/>
 	<deadCrew load="FM_BOSS_LEECH1_DESTROYED2"/>
 </ship>
 <event name="FM_BOSS_LEECH1_SUICIDE">
 	<text>From out of the tunnel comes a massive cruiser vessel, it is a ship painted in very....emotive colors? It appears to be a Leech vessel!</text>
-	<ship load="FM_BOSS_LEECH1_SHIP" hostile="false"/> 
+	<ship load="FM_BOSS_LEECH1_SHIP" hostile="false"/>
 	<status type="limit" target="enemy" system="drones" amount="0"/>
 	<choice hidden="true">
 		<text>Continue...</text>
@@ -3507,42 +3508,42 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 		<choice hidden="true">
 		<text>Hail the leeches.</text>
 		<event>
-		<text>You hail the leeches, they ignore you. You hail them 17 more times and finally a very sad looking leech answers the call. He says nothing and stares at you blankly. </text>	
+		<text>You hail the leeches, they ignore you. You hail them 17 more times and finally a very sad looking leech answers the call. He says nothing and stares at you blankly. </text>
 		<choice hidden="true">
 		<text>Hello?</text>
-		<event>		
+		<event>
 		<text>"...I'm so sad and alone after she left me man, you wouldn't understand." the Leech responds, catching you off guard. He sobs lightly. </text>
 		<choice hidden="true">
 		<text>Who left you?</text>
-		<event>	
+		<event>
 		<text>The Leech blows his nose and thinks for a moment. "...I'm sorry, who are you again?" </text>
 		<choice hidden="true">
 		<text>I'm a friend, I can help if you wish</text>
-		<event>		
-		<text>"R-really? O-ok so here's what is wrong..." The Leech begins. He starts talking, and talking, and talking. About problems that barely seem to have a relation at times. 
-		
-		About his Abusive fat Leech father that has locked himself in his "Pleasure room" with his drone lovers, about his favorite Leech serial killer Jeremy the 986th not writing poetry anymore, how his girlfriend of 2 weeks dumped him, and how he can't stop killing people just like his idol Jeremy. He can't get their screams out of his head. He is too sad to even move anymore unless he has to fight someone. </text>		
+		<event>
+		<text>"R-really? O-ok so here's what is wrong..." The Leech begins. He starts talking, and talking, and talking. About problems that barely seem to have a relation at times.
+
+		About his Abusive fat Leech father that has locked himself in his "Pleasure room" with his drone lovers, about his favorite Leech serial killer Jeremy the 986th not writing poetry anymore, how his girlfriend of 2 weeks dumped him, and how he can't stop killing people just like his idol Jeremy. He can't get their screams out of his head. He is too sad to even move anymore unless he has to fight someone. </text>
 		<choice hidden="true">
 		<text>I've changed my mind, you're too far gone. </text>
-		<event>	
-		<ship hostile="true"/> 
+		<event>
+		<ship hostile="true"/>
 		<playMusic>Twisted</playMusic>
 		<status type="limit" target="enemy" system="drones" amount="0"/>
-		<text>Please don't....I don't want to see your face in my dreams as you haunt me. Please leave.</text>	
+		<text>Please don't....I don't want to see your face in my dreams as you haunt me. Please leave.</text>
 			<choice hidden="true">
 			<text>I'd love to, but you're jamming my FTL </text>
 				<event load="COMBAT_CHECK"/>
 			</choice>
 		</event>
 	</choice>
-	
+
 </event>
 </choice>
 				<choice hidden="true">
 				<text>I am in a huge hurry, please unjam my FTL.</text>
-				<event>	
+				<event>
 				<text>"...I knew you wouldn't understand us...but I don't know how to unjam it. You'll have to destroy us. I'm sorry... </text>
-				<ship hostile="true"/> 
+				<ship hostile="true"/>
 				<playMusic>Twisted</playMusic>
 				<status type="limit" target="enemy" system="drones" amount="0"/>
 					<choice hidden="true">
@@ -3589,37 +3590,37 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_DEPRESSION_EMITTER" max_group="2" blue="false">
 						<text>You already have Depression Emitter.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 	<choice hidden="false" req="LEECH1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Depression Emitter.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Depression Emitter.</text>
 <event>
@@ -3633,7 +3634,7 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 			<hiddenAug>LEECH1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <event name="FM_BOSS_LEECH1_DESTROYED2">
 	<playMusic></playMusic>
@@ -3662,37 +3663,37 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
-	
+	</event>
+
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_DEPRESSION_EMITTER" max_group="2" blue="false">
 						<text>You already have Depression Emitter.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 	<choice hidden="false" req="LEECH1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Depression Emitter.</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Depression Emitter.</text>
 <event>
@@ -3706,7 +3707,7 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 			<hiddenAug>LEECH1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <event name="FM_LEECH_SPARES">
 	<text>It seems you're on your last legs. You won't survive much longer, the Leech hails you one last time. "I-I can't do it....please go. I don't want to hear your screams in my dreams."</text>
@@ -3735,7 +3736,7 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 </ship>
 <event name="FM_BOSS_CLAN1_SUICIDE_NO_CORDS">
 	<text>From out of the tunnel comes a massive cruiser vessel, it appears to be a Smuggler clan ship!</text>
-	<ship load="FM_BOSS_CLAN1_NO" hostile="false"/> 
+	<ship load="FM_BOSS_CLAN1_NO" hostile="false"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
@@ -3748,7 +3749,7 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 		<text>Continue...</text>
 		<event>
 		<text>The ship begins powering its weapons. Prepare for battle. </text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -3758,7 +3759,7 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 	</choice>
 </event>
 </choice>
-	
+
 
 </event>
 </choice>
@@ -3779,21 +3780,21 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
 		<text>Internalize the Mind Clouder...
 		[Your crew is now immune to mind control effects.]</text>
-		<event>	
+		<event>
 		<hiddenAug>HID_BRAIN_DONATION</hiddenAug>
 			<text>You retrieve the Ambrosia lab and begin replicating the Ambrosia drug, then make certain to dole it out to all of your crew. </text>
 		<choice hidden="true">
 		<text>Continue...</text>
-		<event>		
-		<text>Your crew is now immune to mind control effects. [The Augment has been internalized!]</text>	
+		<event>
+		<text>Your crew is now immune to mind control effects. [The Augment has been internalized!]</text>
 		<choice hidden="true">
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
+	</event>
+
 </choice>
-</event> 
+</event>
 </choice>
 
 
@@ -3801,27 +3802,27 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 	<choice hidden="false" req="HID_BRAIN_DONATION" max_group="2" blue="false">
 					<text>You already have Mind Clouder.</text>
 						<event>
-						<item_modify>			
+						<item_modify>
 						<item type="fuel" min="1" max="1"/>
 						</item_modify>
 						<choice hidden="false">
 						<text>Continue...</text>
 						<event/>
-						</choice>	
+						</choice>
 						</event>
-						</choice>	
+						</choice>
 	<choice hidden="false" req="CLAN1_SCRAPPED" max_group="2" blue="false">
 					<text>You already scrapped Mind Clouder.</text>
 						<event>
-						<item_modify>			
+						<item_modify>
 						<item type="fuel" min="1" max="1"/>
 						</item_modify>
 						<choice hidden="false">
 						<text>Continue...</text>
 						<event/>
-						</choice>	
+						</choice>
 						</event>
-						</choice>					
+						</choice>
 	<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 	<text>Scrap the Mind Clouder.</text>
 	<event>
@@ -3835,7 +3836,7 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 				<hiddenAug>CLAN1_SCRAPPED</hiddenAug>
 	</event>
 	</choice>
-	</event> 
+	</event>
 
 <event name="FM_BOSS_CLAN1_SHIP_DESTROYED2_NO_CORDS">
 	<playMusic></playMusic>
@@ -3853,47 +3854,47 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 	<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
 		<text>Internalize the Mind Clouder...
 		[Your crew is now immune to mind control effects.]</text>
-		<event>	
+		<event>
 		<hiddenAug>HID_BRAIN_DONATION</hiddenAug>
 			<text>You retrieve the Ambrosia lab and begin replicating the Ambrosia drug, then make certain to dole it out to all of your crew. </text>
 		<choice hidden="true">
 		<text>Continue...</text>
 		<event>
-		<text>Your crew is now immune to mind control effects. [The Augment has been internalized!]</text>	
+		<text>Your crew is now immune to mind control effects. [The Augment has been internalized!]</text>
 		<choice hidden="true">
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
-		
+
 	</choice>
-</event> 
+</event>
 </choice>
-</event> 
+</event>
 </choice>
 
 	<choice hidden="false" req="HID_BRAIN_DONATION" max_group="2" blue="false">
 				<text>You already have Mind Clouder.</text>
 					<event>
-					<item_modify>			
+					<item_modify>
 					<item type="fuel" min="1" max="1"/>
 					</item_modify>
 					<choice hidden="false">
 					<text>Continue...</text>
 					<event/>
-					</choice>	
+					</choice>
 					</event>
-					</choice>	
+					</choice>
 	<choice hidden="false" req="CLAN1_SCRAPPED" max_group="2" blue="false">
 				<text>You already scrapped Mind Clouder.</text>
 					<event>
-					<item_modify>			
+					<item_modify>
 					<item type="fuel" min="1" max="1"/>
 					</item_modify>
 					<choice hidden="false">
 					<text>Continue...</text>
 					<event/>
-					</choice>	
+					</choice>
 					</event>
-					</choice>	
+					</choice>
 	<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Mind Clouder.</text>
 <event>
@@ -3907,7 +3908,7 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 			<hiddenAug>CLAN1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 
 <!--DUSKBRINGER B-->
@@ -3918,7 +3919,7 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 </ship>
 <event name="FM_BOSS_DUSK1_SUICIDE_NO_CORDS">
 	<text>From out of the tunnel comes a massive cruiser vessel, it appears to be a Duskbringer ship!</text>
-	<ship load="FM_BOSS_DUSK1_SHIP_NO" hostile="false"/> 
+	<ship load="FM_BOSS_DUSK1_SHIP_NO" hostile="false"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
@@ -3931,7 +3932,7 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 		<text>Continue...</text>
 		<event>
 		<text>The ship begins powering its weapons. Prepare for battle. </text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -3941,7 +3942,7 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 	</choice>
 </event>
 </choice>
-	
+
 
 </event>
 </choice>
@@ -3955,7 +3956,7 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 		<item type="fuel" min="2" max="2"/>
 	</item_modify>
 	<hiddenAug>ACH_FM_BOSS_DUSK1</hiddenAug>
-	
+
 	<choice hidden="true" req="HID_DEATH_VESTS2" max_group="1" blue="false">
 				<text>You already have Twilight Vests.</text>
 				<event load="OPTION_INVALID"/>
@@ -3974,36 +3975,36 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
+	</event>
+
 </choice>
-</event> 
+</event>
 </choice>
 
 	<choice hidden="false" req="HID_DEATH_VESTS2" max_group="2" blue="false">
 					<text>You already have Twlight Vests.</text>
 						<event>
-						<item_modify>			
+						<item_modify>
 						<item type="fuel" min="1" max="1"/>
 						</item_modify>
 						<choice hidden="false">
 						<text>Continue...</text>
 						<event/>
-						</choice>	
+						</choice>
 						</event>
-						</choice>	
+						</choice>
 	<choice hidden="false" req="DUSK1_SCRAPPED" max_group="2" blue="false">
 					<text>You already scrapped Twlight Vests.</text>
 						<event>
-						<item_modify>			
+						<item_modify>
 						<item type="fuel" min="1" max="1"/>
 						</item_modify>
 						<choice hidden="false">
 						<text>Continue...</text>
 						<event/>
-						</choice>	
+						</choice>
 						</event>
-						</choice>	
+						</choice>
 	<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 	<text>Scrap the Twilight Vests.</text>
 	<event>
@@ -4017,7 +4018,7 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 				<hiddenAug>DUSK1_SCRAPPED</hiddenAug>
 	</event>
 	</choice>
-	</event> 
+	</event>
 
 <event name="FM_BOSS_DUSK1_SHIP_DESTROYED2_NO_CORDS">
 	<playMusic></playMusic>
@@ -4041,41 +4042,41 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 		<text>Continue...</text>
 		<event>
 		<hiddenAug>HID_DEATH_VESTS2</hiddenAug>
-			<text>Adds a death effect to all non-Zoltan allied crew, making them explode for 45 crew damage against enemies, and sometimes start fires. [The Augment has been internalized!]</text>	
+			<text>Adds a death effect to all non-Zoltan allied crew, making them explode for 45 crew damage against enemies, and sometimes start fires. [The Augment has been internalized!]</text>
 		<choice hidden="true">
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
-		
+
 	</choice>
-</event> 
+</event>
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_DEATH_VESTS2" max_group="2" blue="false">
 				<text>You already have Twlight Vests.</text>
 					<event>
-					<item_modify>			
+					<item_modify>
 					<item type="fuel" min="1" max="1"/>
 					</item_modify>
 					<choice hidden="false">
 					<text>Continue...</text>
 					<event/>
-					</choice>	
+					</choice>
 					</event>
-					</choice>	
+					</choice>
 <choice hidden="false" req="DUSK1_SCRAPPED" max_group="2" blue="false">
 				<text>You already scrapped Twlight Vests.</text>
 					<event>
-					<item_modify>			
+					<item_modify>
 					<item type="fuel" min="1" max="1"/>
 					</item_modify>
 					<choice hidden="false">
 					<text>Continue...</text>
 					<event/>
-					</choice>	
+					</choice>
 					</event>
-					</choice>	
+					</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Twilight Vests.</text>
 <event>
@@ -4089,7 +4090,7 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 			<hiddenAug>DUSK1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 
 <!--ENGI C-->
@@ -4099,12 +4100,12 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 </ship>
 <event name="FM_BOSS_ENGI1_SUICIDE_NO_CORDS">
 	<text>From out of the tunnel comes a massive cruiser vessel, of Engi design! The ship appears to be made of of various parts from different styles of Engi ships, an odd amalgam unlike anything you've seen.</text>
-	<ship load="FM_BOSS_ENGI1_SHIP_NO" hostile="false"/> 
+	<ship load="FM_BOSS_ENGI1_SHIP_NO" hostile="false"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
 			<text>"Don't bother, my ship constantly replicates itself with nanomachines, Captain. It hardens in response to physical trauma."</text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<playMusic>Twisted</playMusic>
 			<choice hidden="true">
 				<text>What does that even mean? [The Engi appears to scale with the number of drones on-board their ship.]</text>
@@ -4122,7 +4123,7 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 		<item type="fuel" min="2" max="2"/>
 	</item_modify>
 	<hiddenAug>ACH_FM_BOSS_ENGI1</hiddenAug>
-		
+
 	<choice hidden="true" req="HID_UPG_DRONE_COOLDOWN" max_group="1" blue="false">
 				<text>You already have Drone Booster "Kai".</text>
 				<event load="OPTION_INVALID"/>
@@ -4141,36 +4142,36 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
+	</event>
+
 </choice>
-</event> 
+</event>
 </choice>
-	
+
 	<choice hidden="false" req="HID_UPG_DRONE_COOLDOWN" max_group="2" blue="false">
 						<text>You already have Drone Booster "Kai".</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 	<choice hidden="false" req="ENGI1_SCRAPPED" max_group="2" blue="false">
 						<text>You already scrapped Drone Booster "Kai".</text>
 							<event>
-							<item_modify>			
+							<item_modify>
 							<item type="fuel" min="1" max="1"/>
 							</item_modify>
 							<choice hidden="false">
 							<text>Continue...</text>
 							<event/>
-							</choice>	
+							</choice>
 							</event>
-							</choice>	
+							</choice>
 	<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Drone Booster "Kai".</text>
 <event>
@@ -4184,7 +4185,7 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 			<hiddenAug>ENGI1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 <event name="FM_BOSS_ENGI1_DESTROYED2_NO_CORDS">
 	<playMusic></playMusic>
@@ -4212,36 +4213,36 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 		<text>Continue...</text>
 		<event load="STORAGE_CHECK"/>
 		</choice>
-	</event> 
-	
+	</event>
+
 </choice>
-</event> 
+</event>
 </choice>
 
 <choice hidden="false" req="HID_UPG_DRONE_COOLDOWN" max_group="2" blue="false">
 					<text>You already have Drone Booster "Kai".</text>
 						<event>
-						<item_modify>			
+						<item_modify>
 						<item type="fuel" min="1" max="1"/>
 						</item_modify>
 						<choice hidden="false">
 						<text>Continue...</text>
 						<event/>
-						</choice>	
+						</choice>
 						</event>
-						</choice>	
+						</choice>
 <choice hidden="false" req="ENGI1_SCRAPPED" max_group="2" blue="false">
 					<text>You already scrapped Drone Booster "Kai".</text>
 						<event>
-						<item_modify>			
+						<item_modify>
 						<item type="fuel" min="1" max="1"/>
 						</item_modify>
 						<choice hidden="false">
 						<text>Continue...</text>
 						<event/>
-						</choice>	
+						</choice>
 						</event>
-						</choice>	
+						</choice>
 <choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 <text>Scrap the Drone Booster "Kai".</text>
 <event>
@@ -4255,7 +4256,7 @@ WE HO-HOPE YOU ENJOY YOUR-YOUR-YOUR-my meal..."</text>
 			<hiddenAug>ENGI1_SCRAPPED</hiddenAug>
 </event>
 </choice>
-</event> 
+</event>
 
 
 

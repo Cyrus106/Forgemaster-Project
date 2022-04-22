@@ -4,37 +4,38 @@
 <moreInfoOn volume="10">ui/select_up1.wav</moreInfoOn>
 <moreInfoOff volume="10">ui/select_down2.wav</moreInfoOff>
 
+
 <music>
-	<track> 
+	<track>
 		<name>BleakFuture</name>
 		<explore>Bleak Future.ogg</explore>
 	</track>
 	</music>
-	
+
 	<music>
-	<track> 
+	<track>
 		<name>Bellona</name>
 		<explore>Bellona Station.ogg</explore>
 	</track>
-	
-	<track> 
+
+	<track>
 		<name>Bellona2</name>
 		<explore>Bellona Station 2.ogg</explore>
 	</track>
-	
-	<track> 
+
+	<track>
 		<name>Bellona3</name>
 		<explore>Bellona Station 3.ogg</explore>
 	</track>
-	
-	<track> 
+
+	<track>
 		<name>Twisted</name>
 		<explore>Twisted.ogg</explore>
 	</track>
-	
+
 	</music>
-	
-<fm_ancalagon_shot volume="6">weapons/fm_ancalagon_shot.ogg</fm_ancalagon_shot>	
+
+<fm_ancalagon_shot volume="6">weapons/fm_ancalagon_shot.ogg</fm_ancalagon_shot>
 
 <fm_bullsquid_shot volume="4">weapons/fm_bullsquid_spit.ogg</fm_bullsquid_shot>
 <fm_bullsquid_shot2 volume="4">weapons/fm_bullsquid_spit2.ogg</fm_bullsquid_shot2>
@@ -44,7 +45,7 @@
 <fm_bullsquid_shot_hit3 volume="4">weapons/fm_bullsquid_hit3.ogg</fm_bullsquid_shot_hit3>
 <fm_bullsquid_shot_miss volume="4">weapons/fm_bullsquid_spit_miss.ogg</fm_bullsquid_shot_miss>
 
-
+<fm_drone_artillery_launch volume="6">weapons/fm_drone_artillery_launch.ogg</fm_drone_artillery_launch>
 
 <fm_death_lad_shot volume="4">weapons/fm_absolution.ogg</fm_death_lad_shot>
 <fm_death_lad_shot_2 volume="4">weapons/fm_absolution_2.ogg</fm_death_lad_shot_2>

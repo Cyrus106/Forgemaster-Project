@@ -23,7 +23,7 @@
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
 	<weaponList missiles="50" count="4" load="FM_FORGEMASTER_LOADOUT" />
-	
+
 	<droneList drones="20" count="6">
 		<drone name="FM_FIRE_INTRUDER" />
 		<drone name="FM_FIRE_INTRUDER" />
@@ -35,7 +35,7 @@
 	<boardingAI>sabotage</boardingAI>
 	<aug name="FM_NANO_FORGE_ACCELERANT" />
 	<aug name="UPG_MEDBAY_NANO_FORGEMASTER_ENEMY" />
-	
+
 </shipBlueprint>
 
 <shipBlueprint name="FM_FORGEMASTER_CRUISER_ENEMY_LAST_STRAW" layout="z_FM_FORGEMASTER_CRUISER_ENEMY" img="FM_FORGEMASTER_CRUISER_ENEMY">
@@ -55,7 +55,7 @@
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>6</droneSlots>
-	<weaponList missiles="99" count="4"> 
+	<weaponList missiles="99" count="4">
 		<weapon name="FM_SHOTGUN_ANOMALY_MEGA" />
 		<weapon name="FM_MISSILES_BURST_FIRE_MEGA_PISSED" />
 		<weapon name="FM_MISSILES_BURST_FIRE_MEGA_PISSED" />
@@ -111,7 +111,7 @@
 	<class>Renegade Cruiser</class>
 	<systemList>
 		<engines power="2" max="2" room="19" start="true" />
-		
+
 		<medbay power="2" max="2" room="11" start="true" />
 		<oxygen power="2" max="2" room="8" start="true" />
 		<pilot power="2" max="2" room="0" start="true" />
@@ -840,7 +840,7 @@
 		<weapon name="FM_ROYAL_MINELAUNCHER" />
 		<weapon name="FM_ANCIENT_ION_1_KAI" />
 		<weapon name="FM_ANCIENT_ION_1_KAI2" />
-		
+
 	</weaponList>
 	<droneList drones="20" count="4">
 		<drone name="ROYAL_DEFENSE_1" />
@@ -924,7 +924,7 @@
 	<boardingAI>sabotage</boardingAI>
 	<aug name="ANCIENT_SHIELD" />
 	<aug name="EX_BREACH_SEALANT" />
-	
+
 </shipBlueprint>
 
 <shipBlueprint name="FM_BOSS_LEECH1" layout="zmt_boss_leech_suicide" img="zmt_boss_leech_suicide">
@@ -1081,7 +1081,7 @@
 <blueprintList name="LIST_GUNBOM_TWINS">
 	<name>remington</name>
 	<name>mossberg</name>
-	
+
 </blueprintList>
 
 <blueprintList name="LIST_ANCALAGON">
@@ -1105,12 +1105,12 @@
 	<name>fm_holy6</name>
 	<name>fm_holy7</name>
 	<name>fm_holy8</name>
-	<name>fm_holy9</name> 
-	<name>fm_holy10</name> 
+	<name>fm_holy9</name>
+	<name>fm_holy10</name>
 	<name>fm_holy11</name>
 	<name>fm_holy12</name>
 	<name>fm_holy13</name>
-	<name>fm_holy14</name> 
+	<name>fm_holy14</name>
 	<name>fm_holy15</name>
 	<name>fm_holy16</name>
 	<name>fm_holy17</name>
@@ -1173,6 +1173,189 @@
 	<name>lanius_welder</name>
 </blueprintList>
 
+<blueprintList name="LIST_CREW_NOSALT">
+	<name>LIST_CREW_ROCK</name>
+	<name>LIST_CREW_GHOST</name>
+	<name>LIST_CREW_CRYSTAL</name>
+	<name>LIST_CREW_ENGI</name>
+	<name>LIST_CREW_LANIUS</name>
+	<name>LIST_CREW_ANCIENT_ALL</name>
+</blueprintList>
+
+<blueprintList name="LIST_FM_PLSNOEFFECT">
+	<name>LIST_FM_HOLYSHIT</name>
+	<name>acid</name>
+	<name>fm_repair_hull</name>
+	<name>fm_ion_anomaly_crew</name>
+	<name>fm_ion_anomaly_crew_enemy</name>
+	<name>fm_ion_instant_1</name>
+	<name>fm_ion_instant_2</name>
+	<name>fm_ion_instant_3</name>
+	<name>fm_ion_instant_4</name>
+	<name>fm_explode_instant</name>
+	<name>fm_human_rip</name>
+	<name>fm_drone_hack</name>
+	<name>fm_terminus</name>
+	<name>fm_bio_cloud</name>
+</blueprintList>
+<blueprintList name="LIST_FM_PLSNOEFFECT_VIRUS">
+	<name>LIST_FM_PLSNOEFFECT</name>
+	<name>LIST_CREW_SHELL</name>
+	<name>LIST_CREW_ENGI</name>
+	<name>LIST_CREW_COGNITIVE_ALL</name>
+</blueprintList>
+<blueprintList name="LIST_FM_PLSNOEFFECT_DEATH">
+	<name>LIST_FM_PLSNOEFFECT</name>
+	<name>human_legion_pyro</name>
+	<name>unique_jerry_pony</name>
+	<name>unique_jerry_pony_crystal</name>
+	<name>zoltan</name>
+	<name>zoltan_devotee</name>
+	<name>zoltan_martyr</name>
+	<name>zoltan_peacekeeper</name>
+	<name>zoltan_monk</name>
+	<name>unique_devorak</name>
+	<name>symbiote</name>
+	<name>crystal_sentinel</name>
+	<name>unique_ruwen</name>
+	<name>shell_radiant</name>
+	<name>goldtoxic</name>
+	<name>technomender</name>
+	<name>hologram</name>
+</blueprintList>
+<blueprintList name="LIST_FM_FAKEDRONES">
+	<name>divrepair</name>
+	<name>repairboarder</name>
+	<name>drone_recon</name>
+	<name>drone_recon_boarder</name>
+	<name>drone_recon_defense</name>
+	<name>doctor</name>
+	<name>surgeon</name>
+	<name>drone_holodrone</name>
+	<name>manning</name>
+	<name>manningenemy</name>
+	<name>loot_separatist_1</name>
+	<name>yinyang_ship</name>
+	<name>yinyang_board</name>
+	<name>drone_battle</name>
+	<name>drone_battle2</name>
+	<name>butler</name>
+	<name>a55</name>
+  <name>gana</name>
+	<name>mender</name>
+	<name>menderr</name>
+	<name>director</name>
+	<name>atom</name>
+	<name>atomr</name>
+	<name>roomba</name>
+
+	<name>fm_fire_intruder</name>
+	<name>fm_ancalagon_battle</name>
+	<name>manningenemy_2</name>
+	<name>twisted_mender</name>
+	<name>twisted_yinyang_ship</name>
+	<name>twisted_yinyang_board</name>
+	<name>twisted_surgeon</name>
+	<name>twisted_drone_battle2</name>
+
+  <name>battle</name>
+  <name>repair</name>
+</blueprintList>
+
+<!-- twisted slug stuff-->
+<blueprintList name = "LIST_ABC_AUGMENTEDLANIUS_DRONEREWARD">
+	<name>MENDER</name>
+	<name>ANCIENT_COMBAT_LASER</name>
+	<name>ANCIENT_COMBAT_LASER</name>
+</blueprintList>
+
+<blueprintList name = "LIST_ABC_AUGMENTEDLANIUS_WEAPONREWARD">
+	<name>ANCIENT_LASER</name>
+	<name>ANCIENT_LASER</name>
+	<name>ANCIENT_BEAM</name>
+	<name>ANCIENT_BEAM</name>
+	<name>ANCIENT_BOMB</name>
+	<name>ANCIENT_HAVOC</name>
+	<name>ANCIENT_ION_1</name>
+	<name>ANCIENT_FOCUS</name>
+</blueprintList>
+
+<blueprintList name = "LIST_ABC_AUGMENTEDLANIUS_AUGMENTREWARD">
+	<name>ANCIENT_PROTECTANT</name>
+	<name>ANCIENT_DNA</name>
+</blueprintList>
+
+
+
+
+<blueprintList name = "LIST_ABC_OBELISK_DRONEREWARD">
+	<name>ANCIENT_DEFENSE_1</name>
+	<name>ATOM_DEFEND</name>
+	<name>DIRECTOR</name>
+	<name>ATOM_DEFEND</name>
+	<name>DIRECTOR</name>
+	<name>ANCIENT_COMBAT_LASER_2</name>
+	<name>ANCIENT_COMBAT_ION</name>
+	<name>ANCIENT_COMBAT_MISSILE</name>
+</blueprintList>
+
+<blueprintList name = "LIST_ABC_OBELISK_WEAPONREWARD">
+	<name>ANCIENT_LASER_2</name>
+	<name>ANCIENT_LASER_2</name>
+	<name>ANCIENT_LASER_2</name>
+	<name>ANCIENT_LASER_3</name>
+	<name>ANCIENT_BEAM_2</name>
+	<name>ANCIENT_BEAM_2</name>
+	<name>ANCIENT_BEAM_3</name>
+	<name>ANCIENT_MINELAUNCHER</name>
+	<name>ANCIENT_STUN</name>
+	<name>ANCIENT_FOCUS_2</name>
+	<name>ANCIENT_ION_2</name>
+	<name>ANCIENT_MISSILES</name>
+</blueprintList>
+
+<blueprintList name = "LIST_ABC_OBELISK_AUGMENTREWARD">
+	<name>ANCIENT_SHIELD</name>
+	<name>ANCIENT_REPLICATOR</name>
+</blueprintList>
+
+
+
+
+
+
+
+<blueprintList name = "LIST_ABC_ROYALOBELISK_DRONEREWARD">
+	<name>ATOMR_BOARDER</name>
+	<name>ATOMR_BOARDER</name>
+	<name>MENDERR</name>
+	<name>ROYAL_DEFENSE_1</name>
+	<name>ROYAL_COMBAT_LASER_2</name>
+	<name>ROYAL_COMBAT_LASER_2</name>
+	<name>ROYAL_COMBAT_MISSILE</name>
+	<name>ROYAL_COMBAT_ION</name>
+</blueprintList>
+
+<blueprintList name = "LIST_ABC_ROYALOBELISK_WEAPONREWARD">
+	<name>ROYAL_LASER_3</name>
+	<name>ROYAL_LASER_3</name>
+	<name>ROYAL_BEAM_3</name>
+	<name>ROYAL_HAVOC</name>
+	<name>ROYAL_HAVOC</name>
+	<name>ROYAL_FOCUS</name>
+	<name>ROYAL_MISSILES</name>
+	<name>ROYAL_BOMB</name>
+	<name>ROYAL_BOMB</name>
+	<name>ROYAL_ION_2</name>
+	<name>FM_ROYAL_MINELAUNCHER</name>
+</blueprintList>
+
+<blueprintList name = "LIST_ABC_ROYALOBELISK_AUGMENTREWARD">
+	<name>WEAPON_PREIGNITE</name>
+	<name>ROYAL_SHIELD</name>
+</blueprintList>
+
+
 <!--FORGEMASTER BP LISTS NEW END -->
 
 
@@ -1199,10 +1382,11 @@
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "BLUELIST_MINELAUNCHERS_ALL">
-    <mod-append:name>FM_MINELAUNCHER_HULL</mod-append:name>
+	<mod-append:name>FM_MINELAUNCHER_HULL</mod-append:name>
 	<mod-append:name>FM_SHOTGUN_OSMIUM</mod-append:name>
 	<mod-append:name>FM_SHOTGUN_NOBELIUM</mod-append:name>
-    <mod-append:name>FM_SHOTGUN_HASSIUM</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_HASSIUM</mod-append:name>
+	<mod-append:name>FM_ROYAL_MINELAUNCHER</mod-append:name>
 
 </mod:findName>
 
@@ -1212,14 +1396,16 @@
     <mod-append:name>FM_BEAM_PARTICLE_PIERCE</mod-append:name>
     <mod-append:name>FM_MISSILES_BURST_FIRE</mod-append:name>
     <mod-append:name>FM_MISSILES_BURST_FIRE_PLAYER</mod-append:name>
-	<mod-append:name>FM_MISSILES_BURST_FIRE_MEGA</mod-append:name>
+		<mod-append:name>FM_MISSILES_BURST_FIRE_MEGA</mod-append:name>
     <mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
+		<mod-append:name>FM_ROYAL_MINELAUNCHER</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "BLUELIST_WEAPONS_FIRE_NODAMAGE">
     <mod-append:name>FM_FLAMETHROWER</mod-append:name>
     <mod-append:name>FM_ION_TRI_FIRE</mod-append:name>
     <mod-append:name>FM_BEAM_PARTICLE_PIERCE</mod-append:name>
+		<mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "BLUELIST_FIRE_NONBALLISTIC">
@@ -1229,10 +1415,11 @@
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "BLUELIST_FIRE_BALLISTIC">
-     <mod-append:name>FM_MISSILES_BURST_FIRE</mod-append:name>
-    <mod-append:name>FM_MISSILES_BURST_FIRE_PLAYER</mod-append:name>
+	<mod-append:name>FM_MISSILES_BURST_FIRE</mod-append:name>
 	<mod-append:name>FM_MISSILES_BURST_FIRE_MEGA</mod-append:name>
-    <mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
+	<mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
+	<mod-append:name>FM_MISSILES_BURST_FIRE_PLAYER</mod-append:name>
+	<mod-append:name>FM_ROYAL_MINELAUNCHER</mod-append:name>
 </mod:findName>
 
 
@@ -1241,36 +1428,93 @@
 </blueprintList>
 
 <mod:findName type = "blueprintList" name = "LIST_CREW_ROCK">
-    <mod-append:name>fm_plated</mod-append:name>
-	 <mod-append:name>fm_forgemasterperson</mod-append:name>
-	  <mod-append:name>fm_forgemasterperson_player</mod-append:name>
+	<mod-append:name>fm_plated</mod-append:name>
+	<mod-append:name>fm_forgemasterperson</mod-append:name>
+	<mod-append:name>fm_forgemasterperson_player</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "LIST_CREW_SLUG">
+    <mod-append:name>husk_slug_player</mod-append:name>
+</mod:findName>
+<mod:findName type = "blueprintList" name = "LIST_CREW_MORPH_SLUG">
+    <mod-append:name>husk_slug_player</mod-append:name>
+</mod:findName>
+<mod:findName type = "blueprintList" name = "LIST_CREW_ALL_CRAPBUCKET">
+    <mod-append:name>husk_slug_player</mod-append:name>
+		<mod-append:name>fm_plated</mod-append:name>
+		<mod-append:name>fm_human_texture</mod-append:name>
+</mod:findName>
+<mod:findName type = "blueprintList" name = "LIST_CREW_ALIENS">
+    <mod-append:name>husk_slug_player</mod-append:name>
+		<mod-append:name>fm_plated</mod-append:name>
+		<mod-append:name>fm_forgemasterperson</mod-append:name>
+		<mod-append:name>fm_forgemasterperson_player</mod-append:name>
+		<mod-append:name>remington</mod-append:name>
+		<mod-append:name>mossberg</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "LIST_CREW_MORPH_HUMAN">
+	<mod-append:name>fm_human_texture</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "LIST_CREW_HUMAN">
+	<mod-append:name>fm_human_texture</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "LIST_CREW_UNIQUE_CRAPBUCKET">
+    <mod-append:name>fm_forgemasterperson_player</mod-append:name>
+		<mod-append:name>remington</mod-append:name>
+		<mod-append:name>mossberg</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "LIST_CREW_MORPH_ROCK">
+	<mod-append:name>fm_plated</mod-append:name>
+	<mod-append:name>fm_forgemasterperson</mod-append:name>
+	<mod-append:name>fm_forgemasterperson_player</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "LIST_CREW_ORCHID">
     <mod-append:name>orchid_fire</mod-append:name>
 </mod:findName>
 
+<mod:findName type = "blueprintList" name = "LIST_CREW_MORPH_ORCHID">
+    <mod-append:name>orchid_fire</mod-append:name>
+</mod:findName>
+
 <mod:findName type = "blueprintList" name = "LIST_CHECKCREW_ROCK">
-    <mod-append:name>fm_plated</mod-append:name>
+	<mod-append:name>fm_plated</mod-append:name>
 	<mod-append:name>fm_forgemasterperson</mod-append:name>
 	<mod-append:name>fm_forgemasterperson_player</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "BLUELIST_CREW_NOFIRE">
-    <mod-append:name>fm_plated</mod-append:name>
-	 <mod-append:name>fm_forgemasterperson</mod-append:name>
-	  <mod-append:name>fm_forgemasterperson_player</mod-append:name>
+	<mod-append:name>fm_forgemasterperson_player</mod-append:name>
+	<mod-append:name>fm_plated</mod-append:name>
+	<mod-append:name>fm_forgemasterperson</mod-append:name>
+	<mod-append:name>orchid_fire</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "BLUELIST_ION">
 	<mod-append:name>FM_ION_TRI_FIRE</mod-append:name>
-    <mod-append:name>FM_CHAINGUN_ION</mod-append:name>
 	<mod-append:name>FM_BEAM_ION_PIERCE</mod-append:name>
+	<mod-append:name>FM_CHAINGUN_ION</mod-append:name>
+	<mod-append:name>FM_PHASER_SUFFOCATION</mod-append:name>
+	<mod-append:name>FM_LASER_ION_MEGA</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "BLUELIST_ENERGY">
 	<mod-append:name>FM_SHOTGUN_ENERGY</mod-append:name>
-    <mod-append:name>FM_PULSE_1</mod-append:name>
+	<mod-append:name>FM_PULSE_1</mod-append:name>
+	<mod-append:name>FM_PULSE_2</mod-append:name>
+	<mod-append:name>FM_PULSE_2_PLAYER</mod-append:name>
+	<mod-append:name>FM_PULSE_3</mod-append:name>
+	<mod-append:name>FM_FOCUS_ENERGY_1</mod-append:name>
+	<mod-append:name>FM_FOCUS_ENERGY_2</mod-append:name>
+	<mod-append:name>FM_FOCUS_ENERGY_2_PLAYER</mod-append:name>
+	<mod-append:name>FM_FOCUS_ENERGY_3</mod-append:name>
+	<mod-append:name>FM_MISSILES_CLOAK_STUN</mod-append:name>
+	<mod-append:name>FM_MISSILES_CLOAK_STUN_PLAYER</mod-append:name>
+	<mod-append:name>FM_ENERGY_DISC</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "LIST_CREW_PARAGON_UNIQUE">
@@ -1279,13 +1523,12 @@
 	 <mod-append:name>fm_forgemasterperson_player</mod-append:name>
 </mod:findName>
 
-<mod:findName type = "blueprintList" name = "BLUELIST_WEAPONS_FIRE_NODAMAGE">
-    <mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
-</mod:findName>
 
 
 <mod:findName type = "blueprintList" name = "BLUELIST_AETHER">
-    <mod-append:name>FM_SHOTGUN_AETHER</mod-append:name>
+	<mod-append:name>FM_ROYAL_MINELAUNCHER</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_AETHER</mod-append:name>
+	<mod-append:name>FM_ROYAL_MINELAUNCHER</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "LIST_CREW_DEFENDER">
@@ -1313,13 +1556,86 @@
 	 <mod-append:name>FM_COMBAT_2_LASER_PLAYER</mod-append:name>
 </mod:findName>
 
+
+<mod:findName type = "blueprintList" name = "BLUELIST_BEAMS_ALL">
+	<mod-append:name>FM_BEAM_PARTICLE_PIERCE</mod-append:name>
+	<mod-append:name>FM_BEAM_MINING_2</mod-append:name>
+	<mod-append:name>FM_BEAM_GUILLOTINE_CHAIN</mod-append:name>
+	<mod-append:name>FM_BEAM_GUILLOTINE_CHAIN_PLAYER</mod-append:name>
+	<mod-append:name>FM_BEAM_EXPLOSION</mod-append:name>
+	<mod-append:name>FM_BEAM_EXPLOSION_EGG</mod-append:name>
+	<mod-append:name>FM_BEAM_EXPLOSION_PLAYER</mod-append:name>
+	<mod-append:name>FM_BEAM_ION_PIERCE</mod-append:name>
+	<mod-append:name>FM_AN_BEAM</mod-append:name>
+	<mod-append:name>FM_BEAM_BASILISK</mod-append:name>
+	<mod-append:name>FM_BEAM_GUILLOTINE_CHAIN_PLAYER_INVIS</mod-append:name>
+	<mod-append:name>TAINTED_BEAM_3_ARTY</mod-append:name>
+	<mod-append:name>ZOLTAN_DELETER_ARTY_CHAIN</mod-append:name>
+	<mod-append:name>BEAM_ADAPT_3_ARTY_CHAIN</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "BLUELIST_BEAMS_DAMAGE">
+	<mod-append:name>FM_BEAM_MINING_2</mod-append:name>
+	<mod-append:name>FM_BEAM_EXPLOSION</mod-append:name>
+	<mod-append:name>FM_BEAM_EXPLOSION_EGG</mod-append:name>
+	<mod-append:name>FM_BEAM_EXPLOSION_PLAYER</mod-append:name>
+	<mod-append:name>FM_AN_BEAM</mod-append:name>
+	<mod-append:name>TAINTED_BEAM_3_ARTY</mod-append:name>
+	<mod-append:name>BEAM_ADAPT_3_ARTY_CHAIN</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "BLUELIST_ANTIBIO">
+	<mod-append:name>FM_BEAM_GUILLOTINE_CHAIN</mod-append:name>
+	<mod-append:name>FM_BEAM_GUILLOTINE_CHAIN_PLAYER</mod-append:name>
+	<mod-append:name>FM_BEAM_BASILISK</mod-append:name>
+	<mod-append:name>FM_BEAM_GUILLOTINE_CHAIN_PLAYER_INVIS</mod-append:name>
+	<mod-append:name>ZOLTAN_DELETER_ARTY_CHAIN</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_ANOMALY</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_ANOMALY_PLAYER</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_ANOMALY_MEGA</mod-append:name>
+	<mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
+	<mod-append:name>FM_LASER_HUMAN</mod-append:name>
+	<mod-append:name>FM_LASER_ANOMALY_1</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_RHENIUM</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_SILVER</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_PALLADIUM</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_IRIDIUM</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_PLATINUM</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_OSMIUM</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_NOBELIUM</mod-append:name>
+	<mod-append:name>BOMB_BREACH_1_ENEMY_ARTY_CHAIN</mod-append:name>
+	<mod-append:name>FM_LASER_DEBT_COLLECT</mod-append:name>
+	<mod-append:name>FM_BOMB_CRYSTAL_BIO</mod-append:name>
+	<mod-append:name>FM_MINELAUNCHER_BIO</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_HASSIUM</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "BLUELIST_ANTIBIO_NODAMAGE">
+	<mod-append:name>FM_BEAM_GUILLOTINE_CHAIN</mod-append:name>
+	<mod-append:name>FM_BEAM_GUILLOTINE_CHAIN_PLAYER</mod-append:name>
+	<mod-append:name>FM_BEAM_BASILISK</mod-append:name>
+	<mod-append:name>FM_BEAM_GUILLOTINE_CHAIN_PLAYER_INVIS</mod-append:name>
+	<mod-append:name>ZOLTAN_DELETER_ARTY_CHAIN</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_ANOMALY</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_ANOMALY_PLAYER</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_ANOMALY_MEGA</mod-append:name>
+	<mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
+	<mod-append:name>FM_LASER_HUMAN</mod-append:name>
+	<mod-append:name>FM_LASER_ANOMALY_1</mod-append:name>
+	<mod-append:name>BOMB_BREACH_1_ENEMY_ARTY_CHAIN</mod-append:name>
+	<mod-append:name>FM_LASER_DEBT_COLLECT</mod-append:name>
+	<mod-append:name>FM_BOMB_CRYSTAL_BIO</mod-append:name>
+	<mod-append:name>FM_MINELAUNCHER_BIO</mod-append:name>
+</mod:findName>
+
+
 <mod:findName type = "blueprintList" name = "BLUELIST_DRONES_DEFENSE">
     <mod-append:name>FM_DEFENSE_3_MEGA</mod-append:name>
-	 
+
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "BLUELIST_DRONES_BOARDING">
-    <mod-append:name>FM_ANCALAGON_BATTLE</mod-append:name>
+	<mod-append:name>FM_ANCALAGON_BATTLE</mod-append:name>
 	<mod-append:name>FM_ANCALAGON_DEFEND</mod-append:name>
 	<mod-append:name>TWISTED_SURGEON_BATTLE</mod-append:name>
 	<mod-append:name>TWISTED_SURGEON_BOARDER</mod-append:name>
@@ -1327,7 +1643,7 @@
 	<mod-append:name>TWISTED_YINYANG_BOARDER</mod-append:name>
 	<mod-append:name>TWISTED_BATTLETOG2_DEFEND</mod-append:name>
 	<mod-append:name>TWISTED_BATTLETOG2_BOARDER</mod-append:name>
-	
+
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "LIST_CREW_MORPH_BATTLE2">
@@ -1346,11 +1662,16 @@
 
 <mod:findName type = "blueprintList" name = "BLUELIST_BOMBS">
     <mod-append:name>FM_AN_DYNAMO</mod-append:name>
+		<mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
+		<mod-append:name>FM_BOMB_CRYSTAL_BIO</mod-append:name>
 </mod:findName>
 
-<mod:findName type = "blueprintList" name = "LIST_CHECK_AUGMENTS">
-    <mod-append:name>CURA_MVBOSS_SPAWNER</mod-append:name>
+<mod:findName type = "blueprintList" name = "BLUELIST_BOMBS_CREWDAMAGE">
+		<mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
+		<mod-append:name>FM_BOMB_CRYSTAL_BIO</mod-append:name>
 </mod:findName>
+
+
 
 
 
@@ -1416,7 +1737,7 @@
 	<name>FM_BOMB_CRYSTAL_FIRE_ENEMY</name>
 	<name>FM_BOMB_CRYSTAL_FIRE_ENEMY</name>
 	<name>FM_IRIDIUM_ENEMY</name>
-	<name>FM_SHOTGUN_AETHER_ENEMY</name>	
+	<name>FM_SHOTGUN_AETHER_ENEMY</name>
 	<name>FM_ION_TRI_FIRE_ENEMY</name>
 	<name>FM_ION_TRI_FIRE_ENEMY</name>
 	<name>FM_ENERGY_DISC_ENEMY</name>
@@ -1433,7 +1754,7 @@
 	<name>FM_BOMB_CRYSTAL_FIRE_ENEMY</name>
 	<name>FM_IRIDIUM_ENEMY</name>
 	<name>FM_SHOTGUN_AETHER_ENEMY</name>
-	
+
 
 </blueprintList>
 
@@ -1523,6 +1844,7 @@
 	<name>SHOTGUN_3</name>
 	<name>ENERGY_CHARGEGUN</name>
 	<name>ENERGY_CHARGEGUN</name>
+
 </blueprintList>
 
 <blueprintList name="FM_SHOP_FORGEMASTER_WEAPON_2_PLAYER">
@@ -1547,10 +1869,9 @@
 	<name>LASER_PARTICLE_2</name>
 	<name>LASER_HEAVY_1</name>
 	<name>LASER_HEAVY_1</name>
-	<name>LASER_BURST_1</name>
-	<name>LASER_BURST_1</name>
-	
-	
+	<name>LASER_BURST_2</name>
+	<name>LASER_BURST_2</name>
+
 </blueprintList>
 
 <blueprintList name="FM_SHOP_FORGEMASTER_WEAPON_3_PLAYER">
@@ -1568,6 +1889,9 @@
 	<name>BOMB_FIRE</name>
 	<name>BOMB_BIO</name>
 	<name>BOMB_BIO</name>
+	<name>MISSILES_BIO</name>
+	<name>MISSILES_BIO</name>
+
 </blueprintList>
 
 <blueprintList name="FM_SHOP_FORGEMASTER_RARE_WEAPON_LIST">
@@ -1588,6 +1912,9 @@
 	<name>LASER_PARTICLE_2</name>
 	<name>BOMB_ION</name>
 	<name>LASER_PIERCE_2</name>
+	<name>LASER_BURST_5</name>
+	<name>LASER_BURST_5</name>
+
 </blueprintList>
 
 <blueprintList name="FM_SHOP_FORGEMASTER_RARE_AUG_LIST">
@@ -1601,7 +1928,7 @@
 	<name>EX_LAB_LANIUS_HEALTH</name>
 	<name>EX_LAB_ROCK_SKIN</name>
 	<name>EX_PAYLOAD_CREATOR</name>
-	
+
 </blueprintList>
 
 <blueprintList name="FM_SHOP_FORGEMASTER_PLUS_WEAPON_LIST">

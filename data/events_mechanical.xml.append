@@ -1,0 +1,177 @@
+<!--twisted Lostsun-->
+<event name="LOAD_DEATH_TIMER">
+	<triggeredEvent event="LOSTSUN_DEATH" time="75" thisFight="true">
+		<triggeredEventBox load="DEFAULT_SMALL">
+			<tooltip>Your time left in this realm...</tooltip>
+		</triggeredEventBox>
+		<timerSounds load="LOSTSUN_DEATH_TIMERSOUNDS"/>
+	</triggeredEvent>
+</event>
+<event name="LOSTSUN_DEATH">
+	<damage amount="9999" system="engines"/>
+</event>
+
+<!--twisted Leech-->
+<event name="DEPRESS_CHARGE_INITIAL">
+	<triggeredEvent event="DEPRESS_CHARGED" time="10" thisFight="true">
+		<triggeredEventBox load="DEFAULT_SMALL">
+			<tooltip>Disruptor Preparing</tooltip>
+		</triggeredEventBox>
+	</triggeredEvent>
+	<triggeredEvent event="DEPRESS_DEACTIVATE" jumps="1"/>
+</event>
+<event name="DEPRESS_ACTIVATE">
+	<triggeredEvent event="DEPRESS_CHARGED" time="30" thisFight="true">
+		<triggeredEventBox load="DEFAULT_SMALL">
+			<tooltip>Disruptor Recharging</tooltip>
+		</triggeredEventBox>
+	</triggeredEvent>
+	<triggeredEvent event="DEPRESS_DEACTIVATE" time="15" thisFight="true">
+		<triggeredEventBox load="DEFAULT_SMALL">
+			<tooltip>Disruptor Active</tooltip>
+		</triggeredEventBox>
+	</triggeredEvent>
+	<hiddenAug>ABILITY_DEPRESS_TOGGLE</hiddenAug>
+</event>
+
+<event name="DEPRESS_DEACTIVATE">
+	<removeItem>HIDDEN ABILITY_DEPRESS_TOGGLE</removeItem>
+</event>
+
+<event name="DEPRESS_CHARGED">
+	<eventButton name="UI_DEPRESS_ACTIVATE">
+		<event load="DEPRESS_ACTIVATE"/>
+		<image border="12">statusUI/top_storage_on</image>
+		<text border="3">DEPRESS</text>
+		<location>0</location>
+		<tooltip>Press to Depress</tooltip>
+		<inactiveTooltip>Inactive</inactiveTooltip>
+		<color r="235" g="245" b="229"/>
+		<activeColor r="235" g="245" b="229"/>
+		<inactiveColor r="164" g="171" b="160"/>
+		<selectedColor r="255" g="230" b="94"/>
+		<textColor r="25" g="49" b="51"/>
+		<jumpClear>true</jumpClear>
+		<once>true</once>
+		<noDanger>false</noDanger>
+		<hideInactive>false</hideInactive>
+	</eventButton>
+</event>
+
+<!--twisted Monk	-->
+<event name="TWISTED_BLESSING_KILLCOUNT"> <!--this checks if enemy has crew in first place so auto ships can't be ck-d-->
+	<triggeredEvent event="TWISTED_BLESSING_CREWKILL_CHECK" thisFight="true">
+		<enemyCrew amount="1" includeClonebay="true"/>
+		<enemyDeaths amount="1" includeClonebay="false" countNewCrew="true"/>
+	</triggeredEvent>
+</event>
+<event name="TWISTED_BLESSING_CREWKILL_CHECK"> <!-- this checks if enemy has no more crew-->
+	<triggeredEvent event="TWISTED_BLESSING_KILLCOUNT_INCREMENT" thisFight="true">
+		<enemyCrew amount="0" includeClonebay="true"/>
+	</triggeredEvent>
+</event>
+<!-- this adds one to the twisted blessing counter every time you get a crew kill-->
+<event name= "TWISTED_BLESSING_KILLCOUNT_INCREMENT">
+	<text>An efficient and brutal victory. Your benefactors are undoubtedly pleased with your work. (1 rage gained)</text>
+	<variable name = "twisted_blessing_counter" op = "add" val = "1"/>
+</event>
+
+
+<!--FM spawning-->
+<event name="FORGEMASTER_SPAWNER">
+	<loadEventList seeded="false" default="TRUENOTHING">
+		<event name="SPAWNFM_FIRSTMEETING" req="FMSPAWN_FIRSTMEET"/>
+		<event name="SPAWNFM_PHONECALL" req="FMSPAWN_CALL" />
+	</loadEventList>
+</event>
+
+<event name="TRUENOTHING"/>
+
+<event name="SPAWNFM_FIRSTMEETING">
+	<text>[Forgemaster deployed!]</text>
+	<noQuestText/>
+	<quest event="FORGEMASTER"/>
+	<variable name="forgemaster_spawntriggered" op="add" val="1"/>
+</event>
+
+<event name="SPAWNFM_PHONECALL">
+	<text>[Alastair the Forgemaster has arrived!]</text>
+	<noQuestText/>
+	<quest event="FORGEMASTER_PHONE_CALL"/>
+	<variable name="forgemaster_spawntriggered" op="add" val="1"/>
+</event>
+
+
+<!--all the modular armor stuff-->
+<!--special module effect events-->
+<event name="LOAD_FASTSHIELD">
+  <status type="limit" target="player" system="shields" amount="2" />
+</event>
+<event name="LOAD_FASTWEAPON">
+  <status type="limit" target="player" system="weapons" amount="3" />
+</event>
+<event name="LOAD_MAGNETIC">
+  <status type="loss" target="player" system="reactor" amount="3" />
+</event>
+<!--overcharmd stuff, if more than 15 notches used-->
+<event name="OVERCHARMED_EFFECT">
+  <damage amount="0" effect="breach" room="random"/>
+  <damage amount="0" effect="fire" room="random"/>
+  <triggeredEvent name="OVERCHARMED_TRIGGER" event="OVERCHARMED_EFFECT">
+    <playerDamage amount="1" countRepairs="false"/>
+  </triggeredEvent>
+</event>
+<event name="OVERCHARMED">
+  <triggeredEvent name="OVERCHARMED_TRIGGER" event="OVERCHARMED_EFFECT">
+    <playerDamage amount="1" countRepairs="false"/>
+  </triggeredEvent>
+  <queueEvent>OVERCHARMED_MESSAGE</queueEvent>
+  <loadEvent>FORGEMASTER_PHONE_EVENT_LOAD</loadEvent>
+</event>
+<event name="OVERCHARMED_MESSAGE">
+  <text>As you finish installing your modules you notice that you have exeeded the structual limit of the modular hull, causing instability. It appears that due to those structural instabilities it has become quite unstable. Lets hope it won't impeede you too much.</text>
+</event>
+
+<event name="MURALS_DAMAGE">
+  <loadEventList first="false" generate="false" seeded="false">
+    <event name="MURALS_DAMAGE_REAL_SYSTEM"/>
+    <event name="MURALS_DAMAGE_REAL"/>
+    <event name="MURALS_DAMAGE_REAL"/>
+    <event name="MURALS_DAMAGE_REAL_NOTHING"/>
+    <event name="MURALS_DAMAGE_REAL_NOTHING"/>
+    <event name="MURALS_DAMAGE_REAL_NOTHING"/>
+  </loadEventList>
+</event>
+
+<event name="MURALS_DAMAGE_REAL">
+  <damage amount="1" />
+  <triggeredEvent name="MURALS_TRIGGER" event="MURALS_DAMAGE">
+    <playerDamage amount="1" countRepairs="false"/>
+  </triggeredEvent>
+</event>
+<event name="MURALS_DAMAGE_REAL_SYSTEM">
+  <damage amount="1" system="random" />
+  <triggeredEvent name="MURALS_TRIGGER" event="MURALS_DAMAGE">
+    <playerDamage amount="1" countRepairs="false"/>
+  </triggeredEvent>
+</event>
+<event name="MURALS_DAMAGE_REAL_NOTHING">
+  <triggeredEvent name="MURALS_TRIGGER" event="MURALS_DAMAGE">
+    <playerDamage amount="1" countRepairs="false"/>
+  </triggeredEvent>
+</event>
+<!--debugging for modular armor-->
+<event name="MURALS_STOP">
+  <text>stopped murals effect</text>
+  <clearTriggeredEvent name="MURALS_TRIGGER"/>
+</event>
+<event name="MURALS_START">
+  <text>activated murals effect</text>
+  <triggeredEvent name="MURALS_TRIGGER" event="MURALS_DAMAGE">
+    <playerDamage amount="1" countRepairs="false"/>
+  </triggeredEvent>
+</event>
+<event name="OVERCHARMED_STOP">
+  <text>stopped overcharmed effect</text>
+  <clearTriggeredEvent name="OVERCHARMED_TRIGGER"/>
+</event>

@@ -1,18 +1,119 @@
 <metadata>
   <title><![CDATA[ FTL: FORGEMASTER]]></title>
   <threadUrl><![CDATA[https://subsetgames.com/forum/viewtopic.php?f=11&t=35332]]></threadUrl>
-  <author><![CDATA[ Cyrus106, Abstrusity, Maxine, Radish, and SeaDragonet. ]]></author>
+  <author><![CDATA[ Cyrus106, Abstrusity, Maxine, Radish, and SeaDragonet. "and most importantly Kommandant_Julk"]]></author>
    <version><![CDATA[ 0.4.0 ]]></version>
   <description>
-<![CDATA[ 
+<![CDATA[
 A major expansion for Multiverse! It includes new NPCs, quests, weapons, sectors, bosses, and more. Drones and augments are coming soon! The primary new feature is: the weapon crafting system, which allows you to combine
-numerous weapon combinations into stronger variants (or at the very least, side-grades).These weapons are intended to shine brightest when used on ships with less weapon slots and make use of the newest most complex features hyperspace has to offer for a completely unique feel! New tooltips will appear on weapon components that can be used for crafting! 
+numerous weapon combinations into stronger variants (or at the very least, side-grades).These weapons are intended to shine brightest when used on ships with less weapon slots and make use of the newest most complex features hyperspace has to offer for a completely unique feel! New tooltips will appear on weapon components that can be used for crafting!
 
+(experimental build with optimized forgemaster spawning by Julk)
+changes:
+hotfix 22
+- fixed all FM minelaunchers to work and have consequences for delay (5.1 broke it)
+  - also added the option to create fleet delay using royal onslaught (same as onslaught but 1 cheaper)
+- removed the old FM spawning quest appending, added new one
+  - FM first encounter quest doesn't spawn anymore after you visited him (now it should work...i hope)
+  - now spawns first meeting, phone event or none at all upon arrival in sector (depending on sector and hidden augs)
+  - if FM spawned successfully but wasn't visited you will need to call him again next sector
+  - added a failsafe var to prevent spawning of multiple fm events per sector in case multiple spawning events get called
+- reenabled the FM beacon tooltips
+- added most of tinyfixes mod to FM
+  - fixed malform suzerain id
+  - fixed crew fire/suffocation res
+  - added custom twisted lost sun death timer sounds
+  - added haromy ending victory marker
+- fixed twisted crystal armor to actually only trigger on 50% of hits
+- added hellfire missiles accuracy (+10%)
+- added royal onslaught to blueprint lists (minelauncher, fire weapons, balistic fire weapons, aether)
+- added the crystal bombs to the bomb lists
+- added fire orchids to fire immune crew list
+- fixed at 2 id change that caused a bug with COMBUSTION_VIRUS
+- updated the notoriety events caused by fm weapons to use variables/have an effect on the diffrent notoriety types that use var as of the current MV version
+  - killing/saving Winchester now affects Forgemaster notoriety
+    - also affects free mantis and Kleptocracy notoriety (only in the negative for now) (will maybe make custom versions later?)
+- fixed terminus desc overwrite (30s->20s)
+- implemented the 'dirty bombs' mine launcher (including crafting and minelaying, tooltips for materials not included)
+- fixed a certain burst laser spawning clonable crew (i hope it is fixed...)
 
+hotfix 23
+- added playable twisted crystal
+- reworked playable twisted cruiser ids
+- added tips for terra nova, ishimura and photon lasers
+- fixed tips for a lot of fm ingedients being broken
+- fixed stun crystals not having the tooltip
+- fixed the plated o2 tank upgrade menu not letting you leave
+- removed defense laser from forgemaster shop pool
+- fixed terra nova having 2 sp
+- sussy bl2 has the bl2 crafting tip now
+- slightly altered last stand Fm spawning behaviour
+- added variable to track if you obtained a twin from the gunbom quest, dialog that you got one of the twins should only trigger if you obtaind one from the event
+- fixed (and re-added after having it removed along with guard evetnt file oops)the gunbom choice at free mantis guard (now gives free mantis with correct id)
+- gave playable and enemy twisted crystal cruiser a little hull printing 3d-printer
+- fixed twisted crystal o2 room
+- fixed twisted engi floor and room images
+- added twisted mantis miniship
+- fixed id of Winchester when obtaining him from gunbom quest
+- added twisted lost sun miniship and updated crystal miniship
+- ending dialog for gunbom now mentions you having a twin if you got one from the quest and still have one at the end of the fight
+- added an extra icon to twisted lost sun boss
+- slightly altered some texts of some icons
+- added twisted fed and orchid miniships
+- fixed twisted fed cloak room image
+- added a missing door to twisted crystal
+- put ramming options into a sub-menu of combat check
+- added appends for bio weapon and beam weapon lists
+- added twisted engi miniship!
+- slightly altered twisted crystal miniship
+- added twistd clansmen, duskbringer and zoltan miniships
+- adjusted twisted fed miniship
+- addd missing door on twisted crystal for real
+
+hotfix 24
+- removed rednundant doors from twisted crystal boss (accidentally gave it the player layout two hotfixes ago...oops)
+- added playable twisted leech (miniship included)
+- added playable twisted stealth (miniship, weapons and tully text included)
+- gave some twisted ships that didn't have it 35 max reactor
+- fixed multiple typos in harmony ending (thx Meloo)
+- added twisted engineer (miniship included)
+- added special storage check event for twisted stealth to upgrade cloak to 6
+- fixed twited Engi having completely uncapped systems
+- twisted enginner arty has new projectile, the "drones" are affected by drone boosters and Engineer crew upgrade
+- fixed a typo i think?
+- fixed the forgemaster menu not showing page 2 crafting for ion guns in the first menu
+
+hotfix 25
+- updated twisted clansmen cruiser
+- added twisted Monk
+- fixed storage button messing with FM jump event
+- fixed some naming inconsistencies
+- FM_MODULAR_HULL_CREWKILL now no longer affects your crew but actually makes enemy crew die faster
+- made jump event crafting use the normal crafting event (using aliases)
+- made titanium sys casing stack so encased systems actually stacks
+- removed some redundant code (appends for crew labs that use lists)
+- fixed decayser
+
+hotfix 26
+- updated crew ids to work in 5.2.3
+- combustion virus and twilight vests use lists now, makes updating unaffected crew as easy as adding one line instead of 5 in different locations
+- FM_MISSILES_CLOAK_STUN_PLAYER and FM_PULSE_2_PLAYER exist and can be crafted
+- fixed jump event alias not working properly
+- added a bunch of stuff to their respective lists
+- added twisted slug
+- added smoker slug to all relevant lists
+- added crew to all the lists they should be in
+- added a few more missing lists so fm crew can now appear on crapbucket C!
+- fixed a few miniship errors
+- smoker slugs can now suffocate!
+- removed a bunch of code/images relating to duplicate versions of crew/drones
+- made turrets take less notches
+- added a new capstone and 3 different vengeance modules
+- modular hull section can be accessed from the jump menu
 0.4.0 Features:
 
 --44 weapons (including the 0.3.4 weapons of course)
--6 new drones (2 exclusive to one line of ships)
+-5 new drones (2 exclusive to one line of ships)
 -A few new augments
 -A new NPC, Alastair the Forgemaster who will now be the facility used for crafting Forgemaster weapons. He will charge you for his services of course, so crafting is no longer free and crafting prices will be used to attempt to balance the risk / reward of each craft.
 -The NPC also sells NINE weapons every time you visit him, and can only display weapons in his store that are used for crafting his recipes
@@ -51,46 +152,46 @@ Intended features to be added in future updates:
 
 
 
- -Credit to Enchanter for the 'Mystery' Beam Sprite. Credit to Robin and DoomElement for the Ishimura Beam Sprite. 
- 
+ -Credit to Enchanter for the 'Mystery' Beam Sprite. Credit to Robin and DoomElement for the Ishimura Beam Sprite.
+
  -Thanks to Abstrusity for their COUNTLESS fantastic artwork contributions (Basilisk anyone?). I couldn't have been as proud of this project as I am without your help, support, hard work, and passion for working on this. Thank you!
- 
+
  -Thanks to Pupi and CgJunior for coding pointers
- 
+
  -Thanks to my Mysterious Dashing artist friend for the Flamethrower sprite
- 
+
  -Thanks to the shipyard in general for being a fantastic and helpful resource!
- 
+
  -Thanks to SallySpartan for letting me utilize assets from his Eldritch Horrors FTL Addon! Much love
- 
+
  -Thanks to ARS+ Hyperspace edition for some asset inspiration (currently we use none of their assets, don't mesh with Multiverse's art style, but I'd rather give credit ahead of time!)
- 
+
  -Thanks to Digger4money for letting me use their....literal "Shitshow" Sprite.
- 
+
  -Thanks to Radish for the Bullsquid sprite.
- 
+
  -Thanks to R4 for the Crystal Beam Sprite.
- 
+
  -Thanks to BetelgeuseBear for the Hacker Drone, and Cursed Flak sprites. And I'm sure many other awesome art contributions as well.
- 
+
  -Thanks to Sgt.Apples for the GunHydra ship sprite.
- 
+
  -Thanks to my soon-to-be-Wife Maxine for writing, art, and banner creation.
- 
+
  -Thanks to NASA and JPL for the copyright-free images.
- 
+
  -Thanks to https://unsplash.com/photos/F2SrBdv9swk and wallpaperaccess.com for backgrounds.
- 
+
  -Thanks to Zenith for the Mossberg and Remington Engi sprites!
- 
+
  -Thanks to Uielicious for a very in-depth grammar pass on any content she experienced.
- 
+
  -Thanks to The Return of Florida Man for countless weapon concepts, crew character development concepts, and crazy weird bug fixes
- 
+
  -A Special thanks for Julk for some code contributions regarding the ending marker, Twisted Lostsun timer and Forgemaster spawning behaviour.
- 
+
  -An EXTRA SPECIAL THANKS to the ENTIRE Playtester team!
- 
+
  INCLUDING
  --BetelgeuseBear
  --Digger4money
@@ -104,7 +205,7 @@ Intended features to be added in future updates:
  --Uielicious
  --Wildcatsson
  --Xears
- 
+
  -Numerous weapon sounds from Zapsplat.com
 If I forget you in the credits, PLEASE LET ME KNOW. I prefer to credit people
 

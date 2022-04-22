@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<!--
 <roomLayout name="engines_2">
 	<computerGlow x="5" y="53" dir="DOWN" />
 </roomLayout>
@@ -18,7 +18,7 @@
 </roomLayout>
 <roomLayout name="pilot">
 	<computerGlow name="glow_pilot" x="19" y="9" dir="RIGHT" />
-</roomLayout>
+</roomLayout>-->
 <roomLayout name="fm_engines">
 	<computerGlow x="5" y="53" dir="DOWN" />
 </roomLayout>
@@ -34,3 +34,6 @@
 	<computerGlow x="19" y="40" dir="RIGHT" />
 </roomLayout>
 
+<roomLayout name="shields_15 - thinner">
+	<computerGlow x="40" y="1" dir="UP" />
+</roomLayout>

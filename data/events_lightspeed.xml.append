@@ -4,94 +4,94 @@
 	<event/>
 </event>
 <event name = "FM_ATLAS_EQUIPMENT">
-<text>Would you like to contact the Forgemaster?</text>
-		
+	<text>Would you like to contact the Forgemaster?</text>
+
 
 	<choice hidden="true" req="MARKER_KILLED_FORGEMASTER_BEACON" lvl="1" max_group="600">
-        <text>Out of habit you attempt to reach out to the Forgemaster, but then you remember that you killed him. You monster.</text>
+		<text>Out of habit you attempt to reach out to the Forgemaster, but then you remember that you killed him. You monster.</text>
 		<event load="OPTION_INVALID"/>
-		</choice>	
-	
-       
-		
+	</choice>
+
+
+
 
 	<choice hidden="true" req="FORGEMASTER_PHONE_CALL_CONFIRM"  max_group="1" blue="false">
-       <text>You've already called the Forgemaster via one of the three methods.</text>
+		<text>You've already called the Forgemaster via one of the three methods.</text>
 		<event load="OPTION_INVALID"/>
-					</choice>				
-	<choice hidden="true" req="FORGEMASTER_PHONE_CALL_CONFIRM"  max_group="2" blue="false"> 
-        <text>You've already called the Forgemaster via one of the three methods.</text>
+	</choice>
+	<choice hidden="true" req="FORGEMASTER_PHONE_CALL_CONFIRM"  max_group="2" blue="false">
+		<text>You've already called the Forgemaster via one of the three methods.</text>
 		<event load="OPTION_INVALID"/>
-					</choice>
+	</choice>
 	<choice hidden="true" req="FORGEMASTER_PHONE_CALL_CONFIRM"  max_group="3" blue="false">
-      <text>You've already called the Forgemaster via one of the three methods.</text>
+		<text>You've already called the Forgemaster via one of the three methods.</text>
 		<event load="OPTION_INVALID"/>
-					</choice>
-					
-	
+	</choice>
+
+
 	<choice hidden="true" req="FORGEMASTER_PHONE"  max_group="1" blue="false">
-        <text>Use fuel to boost the power of your Transmitter to contact the Forgemaster.[Cost: 5{]</text>
-		<event>     
-		  <text>You burn your excess fuel reserves, funneling the energy into your transmitter and broadcasting the Forgemaster's subspace identifier. If Alastair is anywhere in the region, he'll have heard your call.</text>
-            <item_modify>
-                <item type="fuel" min="-5" max="-5"/>
-            </item_modify>
-            <choice hidden="true">
-			 <text>Continue...</text>
-			<event>
-                <text>Transmitter Signal Sent...</text>
-                 <hiddenAug>FORGEMASTER_PHONE_CALL_CONFIRM</hiddenAug>
-					   <choice hidden="true">
-						 <text>Continue...</text> <!-- PHONE CALL TEXT LIST HERE? -->
-							<event load="FM_CALL_QUESTION_FORGEMASTER_LOAD"/>
-								</choice>
-        
-								</event>
-							</choice>
-						</event>
-					</choice>
-	<choice hidden="true" req="FORGEMASTER_PHONE"  max_group="2" blue="false"> 
-        <text>Whip up a long-range ballistic message cylinder to contact the Forgemaster.[Cost: 4}]</text>
+		<text>Use fuel to boost the power of your Transmitter to contact the Forgemaster.[Cost: 5{]</text>
 		<event>
-			   <text>You pull together some excess explosives, constructing a hyperspeed-capable ballistic vessel containing a request to meet up with Alastair. You wire its targeting systems to his subspace identifier and give the order to launch it. If Alastair's anywhere it can find, he'll be ready to meet up.</text>
-            <item_modify>
+			<text>You burn your excess fuel reserves, funneling the energy into your transmitter and broadcasting the Forgemaster's subspace identifier. If Alastair is anywhere in the region, he'll have heard your call.</text>
+			<item_modify>
+				<item type="fuel" min="-5" max="-5"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>Transmitter Signal Sent...</text>
+					<hiddenAug>FORGEMASTER_PHONE_CALL_CONFIRM</hiddenAug>
+					<choice hidden="true">
+						<text>Continue...</text> <!-- PHONE CALL TEXT LIST HERE? -->
+						<event load="FM_CALL_QUESTION_FORGEMASTER_LOAD"/>
+					</choice>
+
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="FORGEMASTER_PHONE"  max_group="2" blue="false">
+		<text>Whip up a long-range ballistic message cylinder to contact the Forgemaster.[Cost: 4}]</text>
+		<event>
+			<text>You pull together some excess explosives, constructing a hyperspeed-capable ballistic vessel containing a request to meet up with Alastair. You wire its targeting systems to his subspace identifier and give the order to launch it. If Alastair's anywhere it can find, he'll be ready to meet up.</text>
+			<item_modify>
 				<item type="missiles" min="-4" max="-4"/>
 			</item_modify>
-            <choice hidden="true">
-			   <text>Continue...</text>
-			<event>
-                <text>Transmitter Signal Sent...</text>
-                 <hiddenAug>FORGEMASTER_PHONE_CALL_CONFIRM</hiddenAug>
-					   <choice hidden="true">
-						 <text>Continue...</text> <!-- PHONE CALL TEXT LIST HERE? -->
-							<event load="FM_CALL_QUESTION_FORGEMASTER_LOAD"/>
-								</choice>
-        
-								</event>
-							</choice>
-						</event>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>Transmitter Signal Sent...</text>
+					<hiddenAug>FORGEMASTER_PHONE_CALL_CONFIRM</hiddenAug>
+					<choice hidden="true">
+						<text>Continue...</text> <!-- PHONE CALL TEXT LIST HERE? -->
+						<event load="FM_CALL_QUESTION_FORGEMASTER_LOAD"/>
 					</choice>
+
+				</event>
+			</choice>
+		</event>
+	</choice>
 	<choice hidden="true" req="FORGEMASTER_PHONE"  max_group="3" blue="false">
-        <text>Send a hyperspeed messenger drone to contact the Forgemaster.[Cost: 3|]</text>
-		<event> 
-			  <text>You use some drone components and prepare a robust long-range drone equipped for hyperspeed travel. You load in a request for Alastair to meet you in the next sector and set the drone's comms to find his subspace identifier. Hopefully it makes it to him - if he gets the message, he'll be ready.</text>
-           <item_modify>
+		<text>Send a hyperspeed messenger drone to contact the Forgemaster.[Cost: 3|]</text>
+		<event>
+			<text>You use some drone components and prepare a robust long-range drone equipped for hyperspeed travel. You load in a request for Alastair to meet you in the next sector and set the drone's comms to find his subspace identifier. Hopefully it makes it to him - if he gets the message, he'll be ready.</text>
+			<item_modify>
 				<item type="drones" min="-3" max="-3"/>
 			</item_modify>
-            <choice hidden="true">
-			  <text>Continue...</text>
-			<event>
-                <text>Transmitter Signal Sent...</text>
-                 <hiddenAug>FORGEMASTER_PHONE_CALL_CONFIRM</hiddenAug>
-					   <choice hidden="true">
-						 <text>Continue...</text> <!-- PHONE CALL TEXT LIST HERE? -->
-							<event load="FM_CALL_QUESTION_FORGEMASTER_LOAD"/>
-								</choice>
-        
-								</event>
-							</choice>
-						</event>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>Transmitter Signal Sent...</text>
+					<hiddenAug>FORGEMASTER_PHONE_CALL_CONFIRM</hiddenAug>
+					<choice hidden="true">
+						<text>Continue...</text> <!-- PHONE CALL TEXT LIST HERE? -->
+						<event load="FM_CALL_QUESTION_FORGEMASTER_LOAD"/>
 					</choice>
+
+				</event>
+			</choice>
+		</event>
+	</choice>
 
 	<choice hidden="true" req="pilot" lvl="1"  max_group="4" blue="false">>
 		<text>Nevermind.</text>
@@ -101,9 +101,9 @@
 </event>
 
 <mod:findName type = "event" name = "ATLAS_MENU">
-		
 
-<mod-append:choice hidden="true" req="FORGEMASTER_PHONE" lvl="1"  max_group="621"  >
+
+	<mod-append:choice hidden="true" req="FORGEMASTER_PHONE" lvl="1"  max_group="621"  >
 		<text>[Forgemaster] Contact Alastair.</text>
 		<event load="FM_ATLAS_EQUIPMENT"/>
 	</mod-append:choice>
@@ -111,475 +111,485 @@
 		<text>[Forgemaster] Contact Alastair.</text>
 		<event load="FM_ATLAS_EQUIPMENT"/>
 	</mod-append:choice>
-    
-<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Do something aboard the ship.</mod:selector>
-        <mod:setAttributes  max_group="620" blue="true"/>
-    </mod:findWithChildLike>
-	
+
 	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>[Federation Database] Learn about the Atlas.</mod:selector>
-        <mod:setAttributes  max_group="623" blue="true"/>
-    </mod:findWithChildLike>
-	
-		<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>View available tasks from C.U.R.A.</mod:selector>
-        <mod:setAttributes  max_group="622" blue="true"/>
-    </mod:findWithChildLike>
-	
+		<mod:selector>Do something aboard the ship.</mod:selector>
+		<mod:setAttributes  max_group="620" blue="true"/>
+	</mod:findWithChildLike>
+
 	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Federation Capital.</mod:selector>
-        <mod:setAttributes  max_group="800" blue="false"/>
-    </mod:findWithChildLike>
-		
+		<mod:selector>[Federation Database] Learn about the Atlas.</mod:selector>
+		<mod:setAttributes  max_group="623" blue="true"/>
+	</mod:findWithChildLike>
+
 	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Mining Sector.</mod:selector>
-        <mod:setAttributes  max_group="801" blue="false"/>
-    </mod:findWithChildLike>
-	
+		<mod:selector>View available tasks from C.U.R.A.</mod:selector>
+		<mod:setAttributes  max_group="622" blue="true"/>
+	</mod:findWithChildLike>
+
 	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Civilian Sector.</mod:selector>
-        <mod:setAttributes  max_group="802" blue="false"/>
-    </mod:findWithChildLike>
-	
+		<mod:selector>Proceed to the Federation Capital.</mod:selector>
+		<mod:setAttributes  max_group="800" blue="false"/>
+	</mod:findWithChildLike>
+
 	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Union Coreworlds.</mod:selector>
-        <mod:setAttributes  max_group="803" blue="false"/>
-    </mod:findWithChildLike>
-	
+		<mod:selector>Proceed to the Mining Sector.</mod:selector>
+		<mod:setAttributes  max_group="801" blue="false"/>
+	</mod:findWithChildLike>
+
 	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Militia Encampment.</mod:selector>
-        <mod:setAttributes  max_group="804" blue="false"/>
-    </mod:findWithChildLike>
-	
+		<mod:selector>Proceed to the Civilian Sector.</mod:selector>
+		<mod:setAttributes  max_group="802" blue="false"/>
+	</mod:findWithChildLike>
+
 	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Engi Sector.</mod:selector>
-        <mod:setAttributes  max_group="805" blue="false"/>
-    </mod:findWithChildLike>
-	
+		<mod:selector>Proceed to the Union Coreworlds.</mod:selector>
+		<mod:setAttributes  max_group="803" blue="false"/>
+	</mod:findWithChildLike>
+
 	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Engi Harmony.</mod:selector>
-        <mod:setAttributes  max_group="806" blue="false"/>
-    </mod:findWithChildLike>
-	
+		<mod:selector>Proceed to the Militia Encampment.</mod:selector>
+		<mod:setAttributes  max_group="804" blue="false"/>
+	</mod:findWithChildLike>
+
 	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Zoltan Sector.</mod:selector>
-        <mod:setAttributes  max_group="807" blue="false"/>
-    </mod:findWithChildLike>
-	
+		<mod:selector>Proceed to the Engi Sector.</mod:selector>
+		<mod:setAttributes  max_group="805" blue="false"/>
+	</mod:findWithChildLike>
+
 	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Zoltan Capital.</mod:selector>
-        <mod:setAttributes  max_group="808" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
+		<mod:selector>Proceed to the Engi Harmony.</mod:selector>
+		<mod:setAttributes  max_group="806" blue="false"/>
+	</mod:findWithChildLike>
+
 	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Orchid Sector.</mod:selector>
-        <mod:setAttributes  max_group="809" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
+		<mod:selector>Proceed to the Zoltan Sector.</mod:selector>
+		<mod:setAttributes  max_group="807" blue="false"/>
+	</mod:findWithChildLike>
+
 	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Orchid Gardenworlds.</mod:selector>
-        <mod:setAttributes  max_group="810" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Free Mantis Sector.</mod:selector>
-        <mod:setAttributes  max_group="811" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Hunting Grounds.</mod:selector>
-        <mod:setAttributes  max_group="812" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Separatist Sector.</mod:selector>
-        <mod:setAttributes  max_group="813" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Crystalline Sector.</mod:selector>
-        <mod:setAttributes  max_group="814" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Crystalline New-Homeworlds.</mod:selector>
-        <mod:setAttributes  max_group="815" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Outcast Sector.</mod:selector>
-        <mod:setAttributes  max_group="816" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Theocracy Badlands.</mod:selector>
-        <mod:setAttributes  max_group="817" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Federation Sector.</mod:selector>
-        <mod:setAttributes  max_group="818" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Rebel Sector.</mod:selector>
-        <mod:setAttributes  max_group="819" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Rebel Stronghold.</mod:selector>
-        <mod:setAttributes  max_group="820" blue="false"/>
-    </mod:findWithChildLike>
-	
-	
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Pirate Sector.</mod:selector>
-        <mod:setAttributes  max_group="821" blue="false"/>
-    </mod:findWithChildLike>
-		
-		
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Black Market.</mod:selector>
-        <mod:setAttributes  max_group="822" blue="false"/>
-    </mod:findWithChildLike>
-		
-		
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Mantis Sector.</mod:selector>
-        <mod:setAttributes  max_group="823" blue="false"/>
-    </mod:findWithChildLike>
-		
-		
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Mantis Hive.</mod:selector>
-        <mod:setAttributes  max_group="824" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Rock Sector.</mod:selector>
-        <mod:setAttributes  max_group="824" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Rock Homeworlds.</mod:selector>
-        <mod:setAttributes  max_group="825" blue="false"/>
-    </mod:findWithChildLike>
-		
-		
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Lost Sun Stronghold.</mod:selector>
-        <mod:setAttributes  max_group="826" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Duskbringer Sector.</mod:selector>
-        <mod:setAttributes  max_group="827" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Duskbringer Capitol.</mod:selector>
-        <mod:setAttributes  max_group="828" blue="false"/>
-    </mod:findWithChildLike>
-	
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Coalition Stronghold.</mod:selector>
-        <mod:setAttributes  max_group="829" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Automated Shipyards.</mod:selector>
-        <mod:setAttributes  max_group="830" blue="false"/>
-    </mod:findWithChildLike>
-	
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Central Shipyards.</mod:selector>
-        <mod:setAttributes  max_group="831" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Wentworths' HQ.</mod:selector>
-        <mod:setAttributes  max_group="832" blue="false"/>
-    </mod:findWithChildLike>
-	
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Abandoned Sector.</mod:selector>
-        <mod:setAttributes  max_group="833" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Lanius Swarmlands.</mod:selector>
-        <mod:setAttributes  max_group="834" blue="false"/>
-    </mod:findWithChildLike>
-	
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Nebula Sector.</mod:selector>
-        <mod:setAttributes  max_group="835" blue="false"/>
-    </mod:findWithChildLike>
-	
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Slug Sector.</mod:selector>
-        <mod:setAttributes  max_group="836" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Slug Homeworlds.</mod:selector>
-        <mod:setAttributes  max_group="837" blue="false"/>
-    </mod:findWithChildLike>
-	
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Guild Territory.</mod:selector>
-        <mod:setAttributes  max_group="838" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Leech Sector.</mod:selector>
-        <mod:setAttributes  max_group="839" blue="false"/>
-    </mod:findWithChildLike>
-	
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Leech Capital.</mod:selector>
-        <mod:setAttributes  max_group="840" blue="false"/>
-    </mod:findWithChildLike>
-	
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Shell Sector.</mod:selector>
-        <mod:setAttributes  max_group="841" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Central Shell Space.</mod:selector>
-        <mod:setAttributes  max_group="842" blue="false"/>
-    </mod:findWithChildLike>
-	
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Shell Science Center.</mod:selector>
-        <mod:setAttributes  max_group="843" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Vagabond Nebula.</mod:selector>
-        <mod:setAttributes  max_group="844" blue="false"/>
-    </mod:findWithChildLike>
+		<mod:selector>Proceed to the Zoltan Capital.</mod:selector>
+		<mod:setAttributes  max_group="808" blue="false"/>
+	</mod:findWithChildLike>
 
 
 	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Spectral Wastelands.</mod:selector>
-        <mod:setAttributes  max_group="845" blue="false"/>
-    </mod:findWithChildLike>
-	
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Spectral Nebula.</mod:selector>
-        <mod:setAttributes  max_group="846" blue="false"/>
-    </mod:findWithChildLike>
-	
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Spectral Capital.</mod:selector>
-        <mod:setAttributes  max_group="847" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Monk Refuge.</mod:selector>
-        <mod:setAttributes  max_group="848" blue="false"/>
-    </mod:findWithChildLike>
-	
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Ancient Recovery Site.</mod:selector>
-        <mod:setAttributes  max_group="849" blue="false"/>
-    </mod:findWithChildLike>
-			
-			
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Obelisk Sector.</mod:selector>
-        <mod:setAttributes  max_group="850" blue="false"/>
-    </mod:findWithChildLike>	
-	
-	<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Proceed to the Crystalline Origins.</mod:selector>
-        <mod:setAttributes  max_group="851" blue="false"/>
-    </mod:findWithChildLike>
+		<mod:selector>Proceed to the Orchid Sector.</mod:selector>
+		<mod:setAttributes  max_group="809" blue="false"/>
+	</mod:findWithChildLike>
 
-			
-			
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Orchid Gardenworlds.</mod:selector>
+		<mod:setAttributes  max_group="810" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Free Mantis Sector.</mod:selector>
+		<mod:setAttributes  max_group="811" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Hunting Grounds.</mod:selector>
+		<mod:setAttributes  max_group="812" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Separatist Sector.</mod:selector>
+		<mod:setAttributes  max_group="813" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Crystalline Sector.</mod:selector>
+		<mod:setAttributes  max_group="814" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Crystalline New-Homeworlds.</mod:selector>
+		<mod:setAttributes  max_group="815" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Outcast Sector.</mod:selector>
+		<mod:setAttributes  max_group="816" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Theocracy Badlands.</mod:selector>
+		<mod:setAttributes  max_group="817" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Federation Sector.</mod:selector>
+		<mod:setAttributes  max_group="818" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Rebel Sector.</mod:selector>
+		<mod:setAttributes  max_group="819" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Rebel Stronghold.</mod:selector>
+		<mod:setAttributes  max_group="820" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Pirate Sector.</mod:selector>
+		<mod:setAttributes  max_group="821" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Black Market.</mod:selector>
+		<mod:setAttributes  max_group="822" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Mantis Sector.</mod:selector>
+		<mod:setAttributes  max_group="823" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Mantis Hive.</mod:selector>
+		<mod:setAttributes  max_group="824" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Rock Sector.</mod:selector>
+		<mod:setAttributes  max_group="824" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Rock Homeworlds.</mod:selector>
+		<mod:setAttributes  max_group="825" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Lost Sun Stronghold.</mod:selector>
+		<mod:setAttributes  max_group="826" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Duskbringer Sector.</mod:selector>
+		<mod:setAttributes  max_group="827" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Duskbringer Capitol.</mod:selector>
+		<mod:setAttributes  max_group="828" blue="false"/>
+	</mod:findWithChildLike>
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Coalition Stronghold.</mod:selector>
+		<mod:setAttributes  max_group="829" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Automated Shipyards.</mod:selector>
+		<mod:setAttributes  max_group="830" blue="false"/>
+	</mod:findWithChildLike>
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Central Shipyards.</mod:selector>
+		<mod:setAttributes  max_group="831" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Wentworths' HQ.</mod:selector>
+		<mod:setAttributes  max_group="832" blue="false"/>
+	</mod:findWithChildLike>
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Abandoned Sector.</mod:selector>
+		<mod:setAttributes  max_group="833" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Lanius Swarmlands.</mod:selector>
+		<mod:setAttributes  max_group="834" blue="false"/>
+	</mod:findWithChildLike>
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Nebula Sector.</mod:selector>
+		<mod:setAttributes  max_group="835" blue="false"/>
+	</mod:findWithChildLike>
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Slug Sector.</mod:selector>
+		<mod:setAttributes  max_group="836" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Slug Homeworlds.</mod:selector>
+		<mod:setAttributes  max_group="837" blue="false"/>
+	</mod:findWithChildLike>
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Guild Territory.</mod:selector>
+		<mod:setAttributes  max_group="838" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Leech Sector.</mod:selector>
+		<mod:setAttributes  max_group="839" blue="false"/>
+	</mod:findWithChildLike>
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Leech Capital.</mod:selector>
+		<mod:setAttributes  max_group="840" blue="false"/>
+	</mod:findWithChildLike>
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Shell Sector.</mod:selector>
+		<mod:setAttributes  max_group="841" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Central Shell Space.</mod:selector>
+		<mod:setAttributes  max_group="842" blue="false"/>
+	</mod:findWithChildLike>
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Shell Science Center.</mod:selector>
+		<mod:setAttributes  max_group="843" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Vagabond Nebula.</mod:selector>
+		<mod:setAttributes  max_group="844" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Spectral Wastelands.</mod:selector>
+		<mod:setAttributes  max_group="845" blue="false"/>
+	</mod:findWithChildLike>
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Spectral Nebula.</mod:selector>
+		<mod:setAttributes  max_group="846" blue="false"/>
+	</mod:findWithChildLike>
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Spectral Capital.</mod:selector>
+		<mod:setAttributes  max_group="847" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Monk Refuge.</mod:selector>
+		<mod:setAttributes  max_group="848" blue="false"/>
+	</mod:findWithChildLike>
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Ancient Recovery Site.</mod:selector>
+		<mod:setAttributes  max_group="849" blue="false"/>
+	</mod:findWithChildLike>
+
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Obelisk Sector.</mod:selector>
+		<mod:setAttributes  max_group="850" blue="false"/>
+	</mod:findWithChildLike>
+
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Proceed to the Crystalline Origins.</mod:selector>
+		<mod:setAttributes  max_group="851" blue="false"/>
+	</mod:findWithChildLike>
+
+
+
 
 </mod:findName>
 
 <event name="FM_ATLAS_MENU_CALL_ONLY_LOAD"> <!--  Recursion call -->
 	<event/>
 </event>
-<event name="FM_ATLAS_MENU_CALL_ONLY">	
-<text>Who else shall you call?</text>
+<event name="FM_ATLAS_MENU_CALL_ONLY">
+	<text>Who else shall you call?</text>
 
-				
-	<choice hidden="true" req="FORGEMASTER_PHONE"  max_group="1" blue="true">				
-	 <text>[Forgemaster] Contact Alastair.</text>
-	<event load="FM_ATLAS_MENU_CALL_ONLY2"/>
-	</choice>
-				
-	<choice hidden="true" req="pilot"  max_group="4" blue="false">				
-	 <text>Nevermind, I don't want to call anyone else.</text>
-	<event load="ATLAS_MENU_NOEQUIPMENT"/>
-	</choice>
-</event>		
 
-<event name="FM_ATLAS_MENU_CALL_ONLY2">	
-<text>Select your contact method.</text>
+	<choice hidden="true" req="FORGEMASTER_PHONE"  max_group="1" blue="true">
+		<text>[Forgemaster] Contact Alastair.</text>
+		<event load="FM_ATLAS_MENU_CALL_ONLY2"/>
+	</choice>
+
+	<choice hidden="true" req="pilot"  max_group="4" blue="false">
+		<text>Nevermind, I don't want to call anyone else.</text>
+		<event load="ATLAS_MENU_NOEQUIPMENT"/>
+	</choice>
+</event>
+
+<event name="FM_ATLAS_MENU_CALL_ONLY2">
+	<text>Select your contact method.</text>
 
 	<choice hidden="true" req="FORGEMASTER_PHONE_CALL_CONFIRM"  max_group="1" blue="false">
-       <text>You've already called the Forgemaster via one of the three methods.</text>
+		<text>You've already called the Forgemaster via one of the three methods.</text>
 		<event load="OPTION_INVALID"/>
-					</choice>
-					
-	<choice hidden="true" req="FORGEMASTER_PHONE_CALL_CONFIRM"  max_group="2" blue="false"> 
-        <text>You've already called the Forgemaster via one of the three methods.</text>
+	</choice>
+
+	<choice hidden="true" req="FORGEMASTER_PHONE_CALL_CONFIRM"  max_group="2" blue="false">
+		<text>You've already called the Forgemaster via one of the three methods.</text>
 		<event load="OPTION_INVALID"/>
-					</choice>
+	</choice>
 	<choice hidden="true" req="FORGEMASTER_PHONE_CALL_CONFIRM"  max_group="3" blue="false">
-      <text>You've already called the Forgemaster via one of the three methods.</text>
+		<text>You've already called the Forgemaster via one of the three methods.</text>
 		<event load="OPTION_INVALID"/>
+	</choice>
+
+	<choice hidden="true" req="MARKER_KILLED_FORGEMASTER_BEACON" lvl="1" max_group="600">
+		<text>Out of habit you attempt to reach out to the Forgemaster, but then you remember that you killed him. You monster.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+
+
+	<choice hidden="true" req="FORGEMASTER_PHONE"  max_group="1" blue="false">
+		<text>Use fuel to boost the power of your Transmitter to contact the Forgemaster.[Cost: 5{]</text>
+		<event>
+			<text>You burn your excess fuel reserves, funneling the energy into your transmitter and broadcasting the Forgemaster's subspace identifier. If Alastair is anywhere in the region, he'll have heard your call.</text>
+			<item_modify>
+				<item type="fuel" min="-5" max="-5"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>Transmitter Signal Sent...</text>
+					<hiddenAug>FORGEMASTER_PHONE_CALL_CONFIRM</hiddenAug>
+					<choice hidden="true">
+						<text>Continue...</text> <!-- PHONE CALL TEXT LIST HERE? -->
+						<event load="ATLAS_MENU_NOEQUIPMENT"/>
 					</choice>
 
-<choice hidden="true" req="MARKER_KILLED_FORGEMASTER_BEACON" lvl="1" max_group="600">
-        <text>Out of habit you attempt to reach out to the Forgemaster, but then you remember that you killed him. You monster.</text>
-		<event load="OPTION_INVALID"/>
-		</choice>	
-	
-       
-	<choice hidden="true" req="FORGEMASTER_PHONE"  max_group="1" blue="false">
-        <text>Use fuel to boost the power of your Transmitter to contact the Forgemaster.[Cost: 5{]</text>
-		<event>     
-		  <text>You burn your excess fuel reserves, funneling the energy into your transmitter and broadcasting the Forgemaster's subspace identifier. If Alastair is anywhere in the region, he'll have heard your call.</text>
-            <item_modify>
-                <item type="fuel" min="-5" max="-5"/>
-            </item_modify>
-            <choice hidden="true">
-			 <text>Continue...</text>
-			<event>
-                <text>Transmitter Signal Sent...</text>
-                 <hiddenAug>FORGEMASTER_PHONE_CALL_CONFIRM</hiddenAug>
-					   <choice hidden="true">
-						 <text>Continue...</text> <!-- PHONE CALL TEXT LIST HERE? -->
-							<event load="ATLAS_MENU_NOEQUIPMENT"/>
-								</choice>
-        
-								</event>
-							</choice>
-						</event>
-					</choice>
-	<choice hidden="true" req="FORGEMASTER_PHONE"  max_group="2" blue="false"> 
-        <text>Whip up a long-range ballistic message cylinder to contact the Forgemaster.[Cost: 4}]</text>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="FORGEMASTER_PHONE"  max_group="2" blue="false">
+		<text>Whip up a long-range ballistic message cylinder to contact the Forgemaster.[Cost: 4}]</text>
 		<event>
-			   <text>You pull together some excess explosives, constructing a hyperspeed-capable ballistic vessel containing a request to meet up with Alastair. You wire its targeting systems to his subspace identifier and give the order to launch it. If Alastair's anywhere it can find, he'll be ready to meet up.</text>
-            <item_modify>
+			<text>You pull together some excess explosives, constructing a hyperspeed-capable ballistic vessel containing a request to meet up with Alastair. You wire its targeting systems to his subspace identifier and give the order to launch it. If Alastair's anywhere it can find, he'll be ready to meet up.</text>
+			<item_modify>
 				<item type="missiles" min="-4" max="-4"/>
 			</item_modify>
-            <choice hidden="true">
-			   <text>Continue...</text>
-			<event>
-                <text>Transmitter Signal Sent...</text>
-                 <hiddenAug>FORGEMASTER_PHONE_CALL_CONFIRM</hiddenAug>
-					   <choice hidden="true">
-						 <text>Continue...</text> <!-- PHONE CALL TEXT LIST HERE? -->
-							<event load="ATLAS_MENU_NOEQUIPMENT"/>
-								</choice>
-        
-								</event>
-							</choice>
-						</event>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>Transmitter Signal Sent...</text>
+					<hiddenAug>FORGEMASTER_PHONE_CALL_CONFIRM</hiddenAug>
+					<choice hidden="true">
+						<text>Continue...</text> <!-- PHONE CALL TEXT LIST HERE? -->
+						<event load="ATLAS_MENU_NOEQUIPMENT"/>
 					</choice>
+
+				</event>
+			</choice>
+		</event>
+	</choice>
 	<choice hidden="true" req="FORGEMASTER_PHONE"  max_group="3" blue="false">
-        <text>Send a hyperspeed messenger drone to contact the Forgemaster.[Cost: 3|]</text>
-		<event> 
-			  <text>You use some drone components and prepare a robust long-range drone equipped for hyperspeed travel. You load in a request for Alastair to meet you in the next sector and set the drone's comms to find his subspace identifier. Hopefully it makes it to him - if he gets the message, he'll be ready.</text>
-           <item_modify>
+		<text>Send a hyperspeed messenger drone to contact the Forgemaster.[Cost: 3|]</text>
+		<event>
+			<text>You use some drone components and prepare a robust long-range drone equipped for hyperspeed travel. You load in a request for Alastair to meet you in the next sector and set the drone's comms to find his subspace identifier. Hopefully it makes it to him - if he gets the message, he'll be ready.</text>
+			<item_modify>
 				<item type="drones" min="-3" max="-3"/>
 			</item_modify>
-            <choice hidden="true">
-			  <text>Continue...</text>
-			<event>
-                <text>Transmitter Signal Sent...</text>
-                 <hiddenAug>FORGEMASTER_PHONE_CALL_CONFIRM</hiddenAug>
-					   <choice hidden="true">
-						 <text>Continue...</text> <!-- PHONE CALL TEXT LIST HERE? -->
-							<event load="ATLAS_MENU_NOEQUIPMENT"/>
-								</choice>
-        
-								</event>
-							</choice>
-						</event>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>Transmitter Signal Sent...</text>
+					<hiddenAug>FORGEMASTER_PHONE_CALL_CONFIRM</hiddenAug>
+					<choice hidden="true">
+						<text>Continue...</text> <!-- PHONE CALL TEXT LIST HERE? -->
+						<event load="ATLAS_MENU_NOEQUIPMENT"/>
 					</choice>
-					
-					
-	<choice hidden="true" req="pilot"  max_group="4" blue="false">				
-	 <text>Nevermind, I don't want to call anyone else.</text>
-	<event load="ATLAS_MENU_NOEQUIPMENT"/>
+
+				</event>
+			</choice>
+		</event>
 	</choice>
-</event>	
+
+
+	<choice hidden="true" req="pilot"  max_group="4" blue="false">
+		<text>Nevermind, I don't want to call anyone else.</text>
+		<event load="ATLAS_MENU_NOEQUIPMENT"/>
+	</choice>
+</event>
 
 
 <event name="FM_CALL_QUESTION_FORGEMASTER_LOAD"> <!--  Recursion call -->
 	<event/>
 </event>
-<event name="FM_CALL_QUESTION_FORGEMASTER">	
-<text>Would you like to call anybody else?</text> 
-<choice hidden="true">
+<event name="FM_CALL_QUESTION_FORGEMASTER">
+	<text>Would you like to call anybody else?</text>
+	<choice hidden="true">
 		<text>Sure, let's see who we can call.</text>
 		<event load="FM_CALL_QUESTION_FORGEMASTER2"/>
 	</choice>
-					
-					
-	<choice hidden="true" req="pilot"  max_group="4" blue="false">				
-	 <text>Nevermind, I don't want to call anyone else.</text>
-	<event load="ATLAS_MENU_NOEQUIPMENT"/>
+
+
+	<choice hidden="true" req="pilot"  max_group="4" blue="false">
+		<text>Nevermind, I don't want to call anyone else.</text>
+		<event load="ATLAS_MENU_NOEQUIPMENT"/>
 	</choice>
-</event>		
+</event>
 
 
-<event name="FM_CALL_QUESTION_FORGEMASTER2">	
-<text>Who else shall you call?</text>
+<event name="FM_CALL_QUESTION_FORGEMASTER2">
+	<text>Who else shall you call?</text>
 
-<choice hidden="true" req="ACH_BOSS_CURA"  max_group="1" blue="true">
+	<choice hidden="true" req="ACH_BOSS_CURA"  max_group="1" blue="true">
 		<text>C.U.R.A. is in no state to provide you with tasks anymore...</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 
-<choice hidden="true" req="loc_task_accepted"  max_group="1" blue="true">
+	<choice hidden="true" req="loc_task_accepted"  max_group="1" blue="true">
 		<text>View available tasks from C.U.R.A.</text>
 		<event load="CURA_TASK_MENU"/>
 	</choice>
-					
-					
-	<choice hidden="true" req="pilot"  max_group="4" blue="false">				
-	 <text>Nevermind, I don't want to call anyone else.</text>
-	<event load="ATLAS_MENU_NOEQUIPMENT"/>
+
+
+	<choice hidden="true" req="pilot"  max_group="4" blue="false">
+		<text>Nevermind, I don't want to call anyone else.</text>
+		<event load="ATLAS_MENU_NOEQUIPMENT"/>
 	</choice>
-</event>				
-								
-<!--  Twisted Sector-->					
+</event>
+
+<!-- new FM spawning trigger appending-->
+<mod:findName type="event" name="LOAD_ATLAS_MARKER">
+	<mod-append:queueEvent>FORGEMASTER_SPAWNER</mod-append:queueEvent>
+	<mod-append:variable name="forgemaster_spawntriggered" op="set" val="0"/>
+</mod:findName>
+<mod:findWithChildLike type="event" child-type="secretSector">
+	<mod-append:queueEvent>FORGEMASTER_SPAWNER</mod-append:queueEvent>
+	<mod-append:variable name="forgemaster_spawntriggered" op="set" val="0"/>
+</mod:findWithChildLike>
+
+<!--  Twisted Sector-->
 <event name="ENTER_TWISTED">
 	<text load="TEXT_LIGHTSPEED"/>
 	<img back="BACKGROUND_LIGHTSPEED" planet="NONE"/>
@@ -590,66 +600,65 @@
 </event>
 <event name="TWISTED_WARP">
 	<text>Name: Twisted Sector
-	Type: Neutral
-	Unique: True
-	Dominant Faction: N/A
-	Rebel Threat Level: Low
-	
-	An abandoned sector owned by C.U.R.A.</text>
-	<playSound>lightspeed</playSound>
-	<choice hidden="true">
-		<text>Exit Hyperspeed.</text>
-		<event load="FM_START_TWISTED"/>
-	</choice>
-	<choice hidden="true" req="COORDS" blue="false">
-		<text>Reroute.</text>
-		<event load="REROUTE_MENU"/>
-	</choice>
-</event>
+		Type: Neutral
+		Unique: True
+		Dominant Faction: N/A
+		Rebel Threat Level: Low
 
-<mod:findName type = "event" name = "REROUTE_MENU">
-<mod-append:choice hidden="true" req="coords_twisted" blue="false" max_group="620">
-		<text>Jump to the Twisted Sector.</text>
-		<event load="LIGHTSPEED_SECTOR_WARP_TWISTED"/>
-</mod-append:choice>
-</mod:findName>	
+		An abandoned sector owned by C.U.R.A.</text>
+		<playSound>lightspeed</playSound>
+		<choice hidden="true">
+			<text>Exit Hyperspeed.</text>
+			<event load="FM_START_TWISTED"/>
+		</choice>
+		<choice hidden="true" req="COORDS" blue="false">
+			<text>Reroute.</text>
+			<event load="REROUTE_MENU"/>
+		</choice>
+	</event>
 
-<mod:findName type = "event" name = "REROUTE_MENU_LASTSTAND">
-<mod-append:choice hidden="true" req="coords_twisted" blue="false" max_group="620">
-		<text>Jump to the Twisted Sector.</text>
-		<event load="LIGHTSPEED_SECTOR_WARP_TWISTED"/>
-</mod-append:choice>
-</mod:findName>	
+	<mod:findName type = "event" name = "REROUTE_MENU">
+		<mod-append:choice hidden="true" req="coords_twisted" blue="false" max_group="620">
+			<text>Jump to the Twisted Sector.</text>
+			<event load="LIGHTSPEED_SECTOR_WARP_TWISTED"/>
+		</mod-append:choice>
+	</mod:findName>
 
-<event name="LIGHTSPEED_SECTOR_WARP_TWISTED">
-	<text>You are about to reroute. Below is the Atlas entry for this sector.
-	Name: Twisted Sector
-	Type: Neutral
-	Unique: True
-	Dominant Faction: N/A
-	Rebel Threat Level: Low
-	
-	INSERT LORE HERE
-	[Warning: Rerouting means you will miss any quests that would have spawned in the next sector.]</text>
-	<choice hidden="true">
-		<text>Continue with the jump.</text>
-		<event>
-			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
-			<variable name="coords_twisted" op="set" val="0"/>
+	<mod:findName type = "event" name = "REROUTE_MENU_LASTSTAND">
+		<mod-append:choice hidden="true" req="coords_twisted" blue="false" max_group="620">
+			<text>Jump to the Twisted Sector.</text>
+			<event load="LIGHTSPEED_SECTOR_WARP_TWISTED"/>
+		</mod-append:choice>
+	</mod:findName>
+
+	<event name="LIGHTSPEED_SECTOR_WARP_TWISTED">
+		<text>You are about to reroute. Below is the Atlas entry for this sector.
+			Name: Twisted Sector
+			Type: Neutral
+			Unique: True
+			Dominant Faction: N/A
+			Rebel Threat Level: Low
+
+			INSERT LORE HERE
+			[Warning: Rerouting means you will miss any quests that would have spawned in the next sector.]</text>
 			<choice hidden="true">
-				<text>Continue...</text>
-				<event load="JUMP_TO_TWISTED"/>
+				<text>Continue with the jump.</text>
+				<event>
+					<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+					<variable name="coords_twisted" op="set" val="0"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="JUMP_TO_TWISTED"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Nevermind.</text>
+				<event>
+					<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+				</event>
 			</choice>
 		</event>
-	</choice>
-	<choice hidden="true">
-		<text>Nevermind.</text>
-		<event>
-			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		<event name="JUMP_TO_TWISTED">
+			<secretSector/>
 		</event>
-	</choice>
-</event>
-<event name="JUMP_TO_TWISTED">
-	<secretSector/>
-</event>	
-	

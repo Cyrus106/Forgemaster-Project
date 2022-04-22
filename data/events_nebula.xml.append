@@ -16,7 +16,7 @@
             </item_modify>
 			<choice hidden="true">
 						<text>Continue...</text>
-						<event load="MORALITY_UPDATE_FORGEMASTER"/>
+						<event load="MORALITY_UPDATE_FORGEMASTER_GENERAL"/>
 					</choice>
             </event>
 					</mod-append:choice>
