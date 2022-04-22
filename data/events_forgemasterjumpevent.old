@@ -1,0 +1,3578 @@
+<jumpEvent>FORGEMASTER_SECOND_PROMPT</jumpEvent>
+
+<FTL><!--FORGE MASTER JUMP EVENT VERSION-->
+<!--FORGE MASTER JUMP EVENT VERSION
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	CRAFT WEAPONS
+	NOTE: LATER, CHANGE THESE TO 'craft (weapon type)' and then have the 
+	choice required be a weapon list (such as a list of beams used as components) instead!
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+<event name="FM2_FORGE_WEAPON_LOAD">
+	<event/>
+</event>
+<event name="FM2_FORGE_WEAPON">
+	<text>Select a weapon category to forge.</text>
+	<checkCargo/>
+		<!--LASERS CATEGORY-->
+		<choice req="FM_LASER_FORGE_LIST" lvl="1"  max_group="1" hidden="true">
+        <text>Review Laser Weapons.</text>
+        <event load="FM_FORGE_WEAPON_LASER_LOAD"/>
+		</choice>
+		
+		<choice req="FM_LASER_FORGE_LIST" lvl="0" max_group="1" hidden="true" blue="false">
+        <text>Review Laser Weapons.</text>
+        <event load="FM_FORGE_WEAPON_LASER_LOAD"/>
+		</choice>
+		
+	
+		<!--ION/ENERGY CATEGORY-->
+		<choice req="FM_ION_FORGE_LIST" lvl="1"  max_group="2" hidden="true">
+        <text>Review Ion Weapons.</text>
+        <event load="FM_FORGE_WEAPON_ION_LOAD"/>
+		</choice>
+		
+		<choice req="FM_ION_FORGE_LIST" lvl="0" max_group="2" hidden="true" blue="false">
+        <text>Review Ion Weapons.</text>
+        <event load="FM_FORGE_WEAPON_ION_LOAD"/>
+		</choice>
+		
+		
+	
+		
+		<!--BEAM CATEGORY-->
+		<choice req="FM_BEAM_FORGE_LIST" lvl="1"  max_group="3" hidden="true">
+        <text>Review Beam Weapons.</text>
+        <event load="FM_FORGE_WEAPON_BEAM_LOAD"/>
+		</choice>
+		
+		<choice req="FM_BEAM_FORGE_LIST" lvl="0" max_group="3" hidden="true" blue="false">
+        <text>Review Beam Weapons.</text>
+        <event load="FM_FORGE_WEAPON_BEAM_LOAD"/>
+		</choice>
+		
+		<!--Pinpoint CATEGORY-->
+		<choice req="FM_PINPOINT_FORGE_LIST" lvl="1"  max_group="4" hidden="true">
+        <text>Review Pinpoint Weapons.</text>
+        <event load="FM_FORGE_WEAPON_PINPOINT_LOAD"/>
+		</choice>
+		
+		<choice req="FM_PINPOINT_FORGE_LIST" lvl="0" max_group="4" hidden="true" blue="false">
+        <text>Review Pinpoint Weapons.</text>
+        <event load="FM_FORGE_WEAPON_PINPOINT_LOAD"/>
+		</choice>
+		
+		
+		<!--FLAK CATEGORY-->
+		<choice req="FM_FLAK_FORGE_LIST" lvl="1"  max_group="5" hidden="true">
+        <text>Review Flak Weapons.</text>
+        <event load="FM_FORGE_WEAPON_FLAK_LOAD"/>
+		</choice>
+		
+		<choice req="FM_FLAK_FORGE_LIST" lvl="0" max_group="5" hidden="true" blue="false">
+        <text>Review Flak Weapons.</text>
+        <event load="FM_FORGE_WEAPON_FLAK_LOAD"/>
+		</choice>
+		
+		
+		
+		<!--EXPLOSIVE CATEGORY-->
+		
+		<choice req="FM_EXPLOSIVE_FORGE_LIST" lvl="1"  max_group="6" hidden="true">
+        <text>Review Explosive Weapons.</text>
+        <event load="FM_FORGE_WEAPON_EXPLOSIVES_LOAD"/>
+		</choice>
+		
+		<choice req="FM_EXPLOSIVE_FORGE_LIST" lvl="0" max_group="6" hidden="true" blue="false">
+        <text>Review Explosive Weapons.</text>
+        <event load="FM_FORGE_WEAPON_EXPLOSIVES_LOAD"/>
+		</choice>
+		
+		
+		
+		<!--ORGANIC CATEGORY-->
+	
+	
+		<choice req="FM_ORGANIC_FORGE_LIST" lvl="1"  max_group="7" hidden="true">
+        <text>Review Organic Weapons.</text>
+        <event load="FM_FORGE_WEAPON_ORGANIC_LOAD"/>
+		</choice>
+		
+		<choice req="FM_ORGANIC_FORGE_LIST" lvl="0" max_group="7" hidden="true" blue="false">
+        <text>Review Organic Weapons.</text>
+        <event load="FM_FORGE_WEAPON_ORGANIC_LOAD"/>
+		</choice>
+		
+		<choice req="FM_SHOTGUN_BRONZE_LIST_UPGRADE" lvl="1"  max_group="8" hidden="true">
+        <text>Review Upgrade List</text>
+        <event load="FM_FORGE_WEAPON_UPGRADE_LOAD"/>
+		</choice>
+		
+		<choice req="FM_SHOTGUN_BRONZE_LIST_UPGRADE" lvl="0" max_group="8" hidden="true" blue="false">
+        <text>Review Upgrade List</text>
+        <event load="FM_FORGE_WEAPON_UPGRADE_LOAD"/>
+		</choice>
+
+			<choice req="pilot" lvl="1" max_group="9" hidden="true" blue="false">
+			<text>Nevermind.</text>
+			<event load="FORGEMASTER_PHONE_EVENT"/>
+			</choice>
+</event>
+
+
+
+	<!--CRAFT WEAPONS. STORAGE CRAFT WEAPON LIST 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	CRAFT WEAPONS
+	NOTE: LATER, CHANGE THESE TO 'craft (weapon type)' and then have the 
+	choice required be a weapon list (such as a list of beams used as components) instead!
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+<!--LASERS CRAFT CATEGORY-->
+<event name="FM2_FORGE_WEAPON_LASER_LOAD">	<!--LASERS CRAFT CATEGORY-->
+	<event/>
+</event>
+<event name="FM2_FORGE_WEAPON_LASER">
+
+	<text>Which weapon would you like to craft?</text>
+	<checkCargo/>
+	
+	
+		<choice req="FM_LASER_ANOMALY_1_LIST" lvl="1" blue="false" hidden="true" max_group="1">
+		<text>Install the Anti-Bio laser core in the Frost I chassis to forge the 'TLALOC' Anomaly Laser</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_LASER_ANOMALY_1"/>
+		</choice>
+		
+		<choice req="FM_LASER_ANOMALY_1_LIST" lvl="0" blue="false" hidden="true" max_group="1">
+		<text>You must have a Frost I and Anti-Bio laser to forge this weapon.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+		
+		<choice req="FM_FLAMETHROWER_LIST1" lvl="1" blue="false" hidden="true" max_group="2">
+		<text>Use a gaseous form for fuel and ignite it with the Fire-Starter to forge the Dazhbog Flamethrower.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_FLAMETHROWER"/>
+		</choice>
+		
+		<choice req="FM_FLAMETHROWER_LIST1" lvl="0" blue="false" hidden="true" max_group="2">
+		<text>You must have a Fire-Starter laser and gaseous form to forge this weapon.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+		
+		<choice req="FM_PHASER_SUFFOCATION_LIST" lvl="1" blue="false" hidden="true" max_group="3">
+		<text>Dissolve a Lanius in a Phaser II's energy field to forge the 'Decayser'.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_PHASER_SUFFOCATION"/>
+		</choice>
+		
+		<choice req="FM_PHASER_SUFFOCATION_LIST" lvl="0" blue="false" hidden="true" max_group="3">
+		<text>You must have a Lanius crewmember and Phaser II weapon to forge this weapon.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+	
+		<choice req="FM_LASER_PHOTON_LIST" lvl="1" blue="false" hidden="true" max_group="4">
+		<text>Photon FLAVOR HERE</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_LASER_PHOTON"/>
+		</choice>
+		
+		<choice req="FM_LASER_PHOTON_LIST" lvl="0" blue="false" hidden="true" max_group="4">
+		<text>You must have a Particle Laser I and a Light Laser I to forge the Photon Laser I.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+		
+		<choice req="FM_LASER_PHOTON_2_LIST" lvl="1" blue="false" hidden="true" max_group="5">
+		<text>Photon 2 FLAVOR HERE</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_LASER_PHOTON_2"/>
+		</choice>
+		
+		<choice req="FM_LASER_PHOTON_2_LIST" lvl="0" blue="false" hidden="true" max_group="5">
+		<text>You must have a Particle Laser II and a Light Laser II to forge the Photon Laser II.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+		
+		<!--PAGE 2 OPTION-->
+		<choice req="FM_LASER_PAGE2_LIST" lvl="1" max_group="6" hidden="true" blue="true">
+			<text>Page 2, Craft Ready!</text>
+			<event load="FM2_FORGE_WEAPON_LASER_2"/>
+			</choice>
+		<!--PAGE 2 OPTION-->
+		<choice req="pilot" lvl="1" max_group="6" hidden="true" blue="false">
+			<text>Page 2.</text>
+			<event load="FM2_FORGE_WEAPON_LASER_2"/>
+			</choice>
+		
+		<choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
+			<text>Nevermind.</text>
+			<event load="FM2_FORGE_WEAPON_LOAD"/>
+			</choice>
+			</event>
+			
+		<!--PAGE 2-->
+<event name="FM_FORGE_WEAPON_LASER_2">
+
+	<text>Page 2: Which weapon would you like to craft? </text>
+	<checkCargo/>
+		
+		<choice req="FM_LASER_HUMAN_LIST" lvl="1" blue="false" hidden="true" max_group="1">
+		<text>Install the Anti-Bio laser core in the Heavy I chassis to forge the 'Rebel Ripper' Laser.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_LASER_HUMAN"/>
+		</choice>
+		
+		<choice req="FM_LASER_HUMAN_LIST" lvl="0" blue="false" hidden="true" max_group="1">
+		<text>You must have a Anti-Bio Laser and a Heavy Laser I to forge the 'Rebel Ripper' Laser.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+		
+			<!--Back 1 PAGE-->
+			<choice req="pilot" lvl="1" max_group="6" hidden="true" blue="false">
+			<text>Back 1 Page.</text>
+			<event load="FM2_FORGE_WEAPON_LASER_LOAD"/>
+			</choice>
+			
+			<!--Back to main craft menu-->
+			<choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
+			<text>Nevermind, back to main menu.</text>
+			<event load="FM2_FORGE_WEAPON_LOAD"/>
+			</choice>
+			</event>
+
+		
+	
+	
+	<!--ION/ENERGY CRAFT CATEGORY-->
+<event name="FM_FORGE_WEAPON_ION_LOAD">	<!--ION/ENERGY CRAFT CATEGORY-->
+	<event/>
+</event>
+<event name="FM_FORGE_WEAPON_ION">
+	<text>Which weapon would you like to craft?</text>
+	<checkCargo/>
+	
+		<choice req="FM_DISC_LAUNCHER_LIST1" lvl="1" blue="false" hidden="true" max_group="1">
+		<text>Load scrap into a minelauncher and energize it with the Hullbuster Energy weapon to forge the TARANIS Energized Disc.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_DISC1"/>
+		</choice>
+		
+		<choice req="FM_DISC_LAUNCHER_LIST2" lvl="1" blue="false" hidden="true" max_group="1">
+		<text>Load scrap into a minelauncher and energize it with the Hullbuster Energy weapon to forge the TARANIS Energized Disc.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_DISC2"/>
+		</choice>
+		
+		<choice req="FM_DISC_LAUNCHER_LIST3" lvl="1" blue="false" hidden="true" max_group="1">
+		<text>Load scrap into a minelauncher and energize it with the Hullbuster Energy weapon to forge the TARANIS Energized Disc.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_DISC3"/>
+		</choice>
+		
+		
+		<choice req="FM_DISC_LAUNCHER_LIST4" lvl="1" blue="false" hidden="true" max_group="1">
+		<text>Load scrap into a minelauncher and energize it with the Hullbuster Energy weapon to forge the TARANIS Energized Disc.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_DISC4"/>
+		</choice>
+		
+		<choice req="FM_DISC_LAUNCHER_LIST1" lvl="0" blue="false" hidden="true" max_group="1">
+		<text>You must have a basic minelauncher and Hullbuster Energy weapon to forge this weapon.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+		
+		<choice req="FM_ION_TRI_FIRE_LIST" lvl="1" blue="false" hidden="true" max_group="2">
+		<text>Use a Tri-ion and Fire Ion weapon to forge the 'Cerberus' Ion.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_ION_TRI_FIRE"/>
+		</choice>
+		
+		<choice req="FM_ION_TRI_FIRE_LIST" lvl="0" blue="false" hidden="true" max_group="2">
+		<text>You must have a Tri-ion and Fire Ion weapon to forge this weapon.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+		
+		<choice req="FM_CHAINGUN_ION_LIST1" lvl="1" blue="false" hidden="true" max_group="3">
+		<text>Replace the barrels of the Vulcan with the Charge Ion's energized coils to forge the 'Vesta' Gatling Ion.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_CHAINGUN_ION1"/>
+		</choice>
+		
+		<choice req="FM_CHAINGUN_ION_LIST2" lvl="1" blue="false" hidden="true" max_group="3">
+		<text>Replace the barrels of the Vulcan with the Charge Ion's energized coils to forge the 'Vesta' Gatling Ion.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_CHAINGUN_ION2"/>
+		</choice>
+		
+		<choice req="FM_CHAINGUN_ION_LIST1" lvl="0" blue="false" hidden="true" max_group="3">
+		<text>You must have a Vulcan and Charge Ion weapon to forge this weapon.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+		
+		<choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_WEAPON_LOAD"/>
+	</choice>
+	</event>
+
+	
+	
+	
+	<!--BEAM/Pinpoint CRAFT CATEGORY-->
+<event name="FM_FORGE_WEAPON_BEAM_LOAD">	<!--BEAM/Pinpoint CRAFT CATEGORY-->
+	<event/>
+</event>
+<event name="FM_FORGE_WEAPON_BEAM">
+	<text>Which weapon would you like to craft?</text>
+	<checkCargo/>
+	
+	
+		<choice req="FM_BEAM_MINING_2_LIST" lvl="1" blue="false" hidden="true" max_group="1">
+		<text>Dissassemble and combine the Pike II and Mining beams to forge the Ishimura Mega Beam.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_MINING_2"/>
+		</choice>
+		
+		<choice req="FM_BEAM_MINING_2_LIST" lvl="0" blue="false" hidden="true" max_group="1">
+		<text>You must have a Pike II and Mining beam to forge this weapon.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+		
+		<choice req="FM_BEAM_PARTICLE_PIERCE_LIST" lvl="1" blue="false" hidden="true" max_group="2">
+		<text>Install the Particle Beam technology in the Guisarme's frame to forge the 'Earspoon' Beam.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_PARTICLE_PIERCE"/>
+		</choice>
+		
+		<choice req="FM_BEAM_PARTICLE_PIERCE_LIST" lvl="0" blue="false" hidden="true" max_group="2">
+		<text>You must have a Particle and Guisarme beam to forge this weapon.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+		
+		<choice req="FM_BEAM_GUILLOTINE_CHAIN_LIST" lvl="1" blue="false" hidden="true" max_group="3">
+		<text>Provide the Murder-Bots with scrap to reconfigure the Fauchard to their hearts' content.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_GUILLOTINE_CHAIN"/>
+		</choice>
+		
+		<choice req="FM_BEAM_GUILLOTINE_CHAIN_LIST" lvl="0" blue="false" hidden="true" max_group="3">
+		<text>You must have a Fauchard beam and something truly murderous to forge this weapon.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+		
+		<choice req="FM_BEAM_EXPLOSION_LIST" lvl="1" blue="false" hidden="true" max_group="4">
+		<text>Rewire the Halberd beam to use its length as a teleportation lock-on for the Small Bomb to forge the 'Valefor' beam.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_EXPLOSION"/>
+		</choice>
+		
+		<choice req="FM_BEAM_EXPLOSION_LIST" lvl="0" blue="false" hidden="true" max_group="4">
+		<text>You must have a Small Bomb and Halberd beam to forge this weapon.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+
+
+		<choice req="pilot" lvl="1" max_group="8" hidden="true" blue="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_WEAPON_LOAD"/>
+	</choice>
+	</event>
+
+<event name="FM_FORGE_WEAPON_PINPOINT_LOAD">	<!--BEAM/Pinpoint CRAFT CATEGORY-->
+	<event/>
+</event>
+<event name="FM_FORGE_WEAPON_PINPOINT">
+	<text>Which weapon would you like to craft?</text>
+	<checkCargo/>
+	
+	
+		<choice req="FM_FOCUS_FUELED_1_LIST" lvl="1" blue="false" hidden="true" max_group="1">
+		<text>Finagle the Cinquedea Pinpoint into the Hermes missile shell to forge the 'Parazonium' Pinpoint.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_FUELED_1"/>
+		</choice>
+		
+		<choice req="FM_FOCUS_FUELED_1_LIST" lvl="0" blue="false" hidden="true" max_group="1">
+		<text>You must have a Cinquedea pinpoint and Hermes missile to forge this weapon.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+		
+		<choice req="FM_FOCUS_ENERGY_1_LIST" lvl="1" blue="false" hidden="true" max_group="2">
+		<text>Replace the Dirk's power source with an Energy I core to forge the 'Ebony' Pinpoint.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_1"/>
+		</choice>
+		
+		<choice req="FM_FOCUS_ENERGY_1_LIST" lvl="0" blue="false" hidden="true" max_group="2">
+		<text>You must have a Dirk pinpoint and Energy I weapon to forge this weapon.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+		
+		<choice req="FM_FOCUS_ENERGY_2_LIST" lvl="1" blue="false" hidden="true" max_group="3">
+		<text>Replace the Misericorde's power source with an Energy II core to forge the 'Hemlock' Pinpoint.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_2"/>
+		</choice>
+		
+		<choice req="FM_FOCUS_ENERGY_2_LIST" lvl="0" blue="false" hidden="true" max_group="3">
+		<text>You must have a Misericorde pinpoint and Energy II weapon to forge this weapon.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+		
+		<choice req="FM_FOCUS_ENERGY_3_LIST" lvl="1" blue="false" hidden="true" max_group="4">
+		<text>Replace the Stiletto's power source with an Energy III core to forge the 'Greenheart' Pinpoint.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_3"/>
+		</choice>
+		
+		<choice req="FM_FOCUS_ENERGY_3_LIST" lvl="0" blue="false" hidden="true" max_group="4">
+		<text>You must have a Stiletto pinpoint and Energy III weapon to forge this weapon.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+
+		
+		<choice req="pilot" lvl="1" max_group="8" hidden="true" blue="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_WEAPON_LOAD"/>
+	</choice>
+	</event>
+	
+	
+	<!--FLAK CRAFT CATEGORY-->
+<event name="FM_FORGE_WEAPON_FLAK_LOAD">	<!--FLAK CRAFT CATEGORY-->
+	<event/>
+</event>
+<event name="FM_FORGE_WEAPON_FLAK">
+	<text>Which weapon would you like to craft?</text>
+	<checkCargo/>
+	<choice req="FM_SHOTGUN_ANOMALY_LIST_MEGA" lvl="1" blue="false" hidden="true" max_group="1">
+		<text>Install the Frost II(+) cooling module in the Toxic Flak(+) chassis to forge the 'KHEIMON' Anomaly Dispenser, costing 2 less power.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY_MEGA"/>
+		</choice>	
+
+		<choice req="FM_SHOTGUN_ANOMALY_LIST_PLUS_2" lvl="1" blue="false" hidden="true" max_group="1">
+		<text>Install the Frost II cooling module in the Toxic Flak(+) chassis to forge the 'KHEIMON' Anomaly Dispenser, costing 1 less power.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY_PLUS_2"/>
+		</choice>
+
+		<choice req="FM_SHOTGUN_ANOMALY_LIST_PLUS" lvl="1" blue="false" hidden="true" max_group="1">
+		<text>Install the Frost II(+) cooling module in the Toxic Flak chassis to forge the 'KHEIMON' Anomaly Dispenser, costing 1 less power.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY_PLUS"/>
+		</choice>
+		
+		<choice req="FM_SHOTGUN_ANOMALY_LIST" lvl="1" blue="false" hidden="true" max_group="2">
+		<text>Install the Frost II cooling module in the Toxic Flak chassis to forge the 'KHEIMON' Anomaly Dispenser.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY"/>
+		</choice>
+		
+		<choice req="FM_SHOTGUN_ANOMALY_LIST" lvl="0" blue="false" hidden="true" max_group="2">
+		<text>You must have a Frost II laser and Toxic flak launcher to forge this weapon.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+		
+		<choice req="FM_SHOTGUN_BRONZE_LIST_FORGE" lvl="1" blue="false" hidden="true" max_group="3">
+		<text>Infuse your Flak I with crystalline growths to forge the Bronze Flak.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE"/>
+		</choice>
+		
+		<choice req="FM_SHOTGUN_BRONZE_LIST_FORGE" lvl="0" blue="false" hidden="true" max_group="3">
+		<text>You must have a crystalline weapon and a Flak I to forge the Bronze Flak.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+		
+		
+		
+		
+		<choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_WEAPON_LOAD"/>
+	</choice>
+	</event>
+	
+	
+	
+	<!--EXPLOSIVE CRAFT CATEGORY-->
+<event name="FM_FORGE_WEAPON_EXPLOSIVES_LOAD">	<!--EXPLOSIVE CRAFT CATEGORY-->
+	<event/>
+</event>
+<event name="FM_FORGE_WEAPON_EXPLOSIVES">
+	<text>Which weapon would you like to craft?</text>
+	<checkCargo/>
+	
+		<choice req="FM_MISSILES_BURST_FIRE_LIST_MEGA_PLUS" lvl="1" blue="false" hidden="true" max_group="1">
+		<text>Dissassemble and combine the Ares(+) and Hades(+) missiles to forge the 'Hellfire' Burst Missile++, costing 2 less power.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_MISSILES_BURST_FIRE_MEGA"/>
+		</choice>
+		
+		<choice req="FM_MISSILES_BURST_FIRE_LIST_PLUS" lvl="1" blue="false" hidden="true" max_group="1">
+		<text>Dissassemble and combine the Ares and Hades(+) missiles to forge the 'Hellfire' Burst Missile+, costing 1 less power.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_MISSILES_BURST_FIRE_PLAYER"/>
+		</choice>
+	
+		<choice req="FM_MISSILES_BURST_FIRE_LIST_PLUS_TYPE2" lvl="1" blue="false" hidden="true" max_group="1">
+		<text>Dissassemble and combine the Ares(+) and Hades missiles to forge the 'Hellfire' Burst Missile+, costing 1 less power.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_MISSILES_BURST_FIRE_PLAYER2"/>
+		</choice>
+	
+		<choice req="FM_MISSILES_BURST_FIRE_LIST" lvl="1" blue="false" hidden="true" max_group="2">
+		<text>Dissassemble and combine the Ares and Hades missiles to forge the 'Hellfire' Burst Missile.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_MISSILES_BURST_FIRE"/>
+		</choice>
+		
+		<choice req="FM_MISSILES_BURST_FIRE_LIST" lvl="0" blue="false" hidden="true" max_group="2">
+		<text>You must have an Ares and Hades missile to forge this weapon.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+		
+		<choice req="FM_MISSILES_CLOAK_STUN_LIST" lvl="1" blue="false" hidden="true" max_group="3">
+		<text>Upgrade the Nyx missile's cloaking field with an Energy Stunner core to forge the 'Chernobog' Missile.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_MISSILES_CLOAK_STUN"/>
+		</choice>
+		
+		<choice req="FM_MISSILES_CLOAK_STUN_LIST" lvl="0" blue="false" hidden="true" max_group="3">
+		<text>You must have a Nyx missile launcher and Energy Stunner weapon to forge this weapon.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+		
+		<choice req="FM_BOMB_CRYSTAL_FIRE_LIST" lvl="1" blue="false" hidden="true" max_group="4">
+		<text>Infuse the Lockdown Bomb's crystals with the Fire Bomb to forge the Ovenator Bomb.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_BOMB_CRYSTAL_FIRE"/>
+		</choice>
+		
+		<choice req="FM_BOMB_CRYSTAL_FIRE_LIST" lvl="0" blue="false" hidden="true" max_group="4">
+		<text>You must have a Lockdown and Fire bomb to forge this weapon</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+		
+		<choice req="FM_BOMB_CRYSTAL_BIO_LIST" lvl="1" blue="false" hidden="true" max_group="5">
+		<text>Infuse the Lockdown Bomb's crystals with the Bio Bomb to forge the Life Restraining Order Bomb.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_BOMB_CRYSTAL_BIO"/>
+		</choice>
+		
+		<choice req="FM_BOMB_CRYSTAL_BIO_LIST" lvl="0" blue="false" hidden="true" max_group="5">
+		<text>You must have a Lockdown and Bio bomb to forge this weapon.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+		
+		<choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_WEAPON_LOAD"/>
+	</choice>
+	</event>
+	
+	
+	<!--ORGANIC CRAFT CATEGORY-->
+<event name="FM_FORGE_WEAPON_ORGANIC_LOAD">	<!--ORGANIC CRAFT CATEGORY-->
+	<event/>
+</event>
+<event name="FM_FORGE_WEAPON_ORGANIC">
+	<text>Which weapon would you like to craft?</text>
+	<checkCargo/>
+	
+	<choice req="FM_BEAM_BASILISK_FORGE_LIST" lvl="1" blue="false" hidden="true" max_group="1">
+		<text>Your Leech is eyeing your Elite Kernel weapon hungrily...</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_BASILISK"/>
+		</choice>
+		
+		<choice req="FM_BEAM_BASILISK_FORGE_LIST" lvl="0" blue="false" hidden="true" max_group="1">
+		<text>You must have a truly ravenous creature and a high-quality salad to sate its appetite to forge this weapon.</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+		
+		
+		<choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_WEAPON_LOAD"/>
+	</choice>
+	</event>
+	
+	<!--UPGRADE CRAFT CATEGORY-->
+<event name="FM_FORGE_WEAPON_UPGRADE_LOAD">	<!--UPGRADE CRAFT CATEGORY-->
+	<event/>
+</event>
+<event name="FM_FORGE_WEAPON_UPGRADE">
+	<text>Which weapon would you like to craft?</text>
+	<checkCargo/>
+	
+	<choice req="FM_SHOTGUN_BRONZE_LIST_UPGRADE" lvl="1" blue="false" hidden="true" max_group="1">
+		<text>Upgrade the Metal Flak Line</text>
+		<event load="NPC_STORAGE_CHECK_UPGRADE_LISTFULL"/>
+		</choice>
+		
+	<choice req="FM_SHOTGUN_BRONZE_LIST_UPGRADE" lvl="0" blue="false" hidden="true" max_group="1">
+		<text>You require a Bronze Flak-Line weapon Tier 1--->Tier 9 to proceed</text>
+		<event load="OPTION_INVALID"/>
+		</choice>
+		
+		
+		<choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_WEAPON_LOAD"/>
+	</choice>
+	</event>
+	
+	<!--LASERS CRAFT CATEGORY-->
+	<event name="NPC_STORAGE_CHECK_CREATE_LASER_ANOMALY_1">
+	<checkCargo/>
+	<text>Currently viewing the 'TLALOC' Anomaly Laser.</text>
+	<choice hidden="false" req="FM_LASER_ANOMALY_1_LIST" blue="false">
+		<text>Craft the 'TLALOC' Anomaly Laser</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_LASER_ANOMALY_1"/>
+			<item_modify>
+			<item type="scrap" min="-40" max="-60"/>
+		</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="LASER_BIO"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="LASER_FROST_1"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_LASER_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_FLAMETHROWER">
+	<checkCargo/>
+	<text>Currently viewing the Dazhbog Flamethrower.</text>
+	<choice hidden="true" req="LIST_CREW_GOUL" blue="false"> 
+		<text>Craft the Dazhbog Flamethrower using a Goul.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_FLAMETHROWER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="LASER_FIRE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="goul">
+							<clone>false</clone>
+							<text>You carefully package the Goul into the fuel chamber of the Flamethrower.</text>
+							</removeCrew>
+							
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true" req="LIST_CREW_PHANTOM" blue="false"> 
+		<text>Craft the Dazhbog Flamethrower using a Phantom.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_FLAMETHROWER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="LASER_FIRE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="goul">
+							<clone>false</clone>
+							<text>You carefully package the Goul into the fuel chamber of the Flamethrower.</text>
+							</removeCrew>
+							
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true" req="LIST_CREW_MARE" blue="false"> 
+		<text>Craft the Dazhbog Flamethrower using a Mare.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_FLAMETHROWER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="LASER_FIRE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="goul">
+							<clone>false</clone>
+							<text>You carefully package the Goul into the fuel chamber of the Flamethrower.</text>
+							</removeCrew>
+							
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true" req="LIST_CREW_WRAITH" blue="false"> 
+		<text>Craft the Dazhbog Flamethrower using a Wraith.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_FLAMETHROWER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="LASER_FIRE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="goul">
+							<clone>false</clone>
+							<text>You carefully package the Goul into the fuel chamber of the Flamethrower.</text>
+							</removeCrew>
+							
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_LASER_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_PHASER_SUFFOCATION">
+	<checkCargo/>
+	<text>Currently viewing the 'Decayser'.</text>
+	<choice hidden="false" blue="false">
+		<text>Craft the 'Decayser'.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_PHASER_SUFFOCATION"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="ION_PIERCE_2"/>
+				<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="anaerobic">
+							<clone>false</clone>
+							<text>The Lanius begins to decay as you channel the Phaser's energies into it, melding into and reshaping the weapon's metal.</text>
+							</removeCrew> <!--II PUT LASER_BIO HERE BECAUSE FOR SOME REASON removeCrew is crashing the game. See OG code below
+								////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+								
+								////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+								-->
+
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_LASER_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_LASER_PHOTON">
+	<checkCargo/>
+	<text>Currently viewing the Photon Laser I.</text>
+	<choice hidden="false"  blue="false">
+		<text>Craft the Photon Laser I.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_LASER_PHOTON"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="LASER_LIGHT"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="LASER_PARTICLE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_LASER_PHOTON_2">
+	<checkCargo/>
+	<text>Currently viewing the Photon Laser II.</text>
+	<choice hidden="false"  blue="false">
+		<text>Craft the Photon Laser II.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_LASER_PHOTON_2"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="LASER_LIGHT_2"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="LASER_PARTICLE_2"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_LASER_HUMAN">
+	<checkCargo/>
+	<text>Currently viewing the 'Rebel Ripper'.</text>
+	<choice hidden="false"  blue="false">
+		<text>Craft the 'Rebel Ripper'.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_LASER_HUMAN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="LASER_BIO"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="LASER_HEAVY_1"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_GODKILLER">
+	<checkCargo/>
+	<text>Currently viewing the God Killer.</text>
+	<choice hidden="false" blue="false">
+		<text>Change the weapon setting from "Semi-Auto" to "Full Auto"[Cost: 100~].</text>
+		<event>
+			<text>Proceed with Tweaking?</text>
+			<weapon name="FM_GATLING_ANCIENT"/>
+			<choice hidden="true">
+					<text>Continue...</text>
+					<event>
+						<text>...</text>
+						<item_modify>
+							<item type="scrap" min="-100" max="-100"/>
+				
+						</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="GATLING_ANCIENT"/>
+					
+							<choice hidden="true">
+								<text>Alastair scratches his head "Why would they leave that on Semi? So strange. Well, don't abuse this power, or I may have to take this from you lad!" he says, with a jolly laugh.</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_LASER_LOAD"/>
+	</choice>
+	</event>
+	
+	
+	<!--ION/ENERGY CRAFT CATEGORY-->
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_DISC1">
+	<checkCargo/>
+	<text>Currently viewing the 'TARANIS' Energized Disc.</text>
+	<choice hidden="false"  blue="false">
+		<text>Craft the 'TARANIS' Energized Disc.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_ENERGY_DISC"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="ENERGY_HULL"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="MINELAUNCHER_1"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_ION_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_DISC2">
+	<checkCargo/>
+	<text>Currently viewing the 'TARANIS' Energized Disc.</text>
+	<choice hidden="false"  blue="false">
+		<text>Craft the 'TARANIS' Energized Disc.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_ENERGY_DISC"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="ENERGY_HULL"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="MINELAUNCHER_2"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_ION_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_DISC3">
+	<checkCargo/>
+	<text>Currently viewing the 'TARANIS' Energized Disc.</text>
+	<choice hidden="false"  blue="false">
+		<text>Craft the 'TARANIS' Energized Disc.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_ENERGY_DISC"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="ENERGY_HULL"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="MINELAUNCHER_FIRE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_ION_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_DISC4">
+	<checkCargo/>
+	<text>Currently viewing the 'TARANIS' Energized Disc.</text>
+	<choice hidden="false"  blue="false">
+		<text>Craft the 'TARANIS' Energized Disc.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_ENERGY_DISC"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="ENERGY_HULL"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="MINELAUNCHER_STUN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_ION_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_ION_TRI_FIRE">
+	<checkCargo/>
+	<text>Currently viewing the 'Cerberus' Ion.</text>
+	<choice hidden="false"  blue="false">
+		<text>Craft the 'Cerberus' Ion.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_ION_TRI_FIRE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="ION_FIRE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="ION_TRI"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_ION_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_CHAINGUN_ION1">
+	<checkCargo/>
+	<text>Currently viewing the 'Vesta' Gatling Ion.</text>
+	<choice hidden="false"  blue="false">
+		<text>Craft the 'Vesta' Gatling Ion.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_CHAINGUN_ION"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="ION_CHARGEGUN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="LASER_CHAINGUN_2"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_ION_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_CHAINGUN_ION2">
+	<checkCargo/>
+	<text>Currently viewing the 'Vesta' Gatling Ion.</text>
+	<choice hidden="false"  blue="false">
+		<text>Craft the 'Vesta' Gatling Ion.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_CHAINGUN_ION"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="ION_CHARGEGUN_2"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="LASER_CHAINGUN_2"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_ION_LOAD"/>
+	</choice>
+	</event>
+	
+	<!--BEAM/Pinpoint CRAFT CATEGORY-->
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_BEAM_MINING_2">
+	<checkCargo/>
+	<text>Currently viewing the Ishimura Beam.</text>
+	<choice hidden="false"  blue="false">
+		<text>Craft the Ishimura Beam.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_BEAM_MINING_2"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="BEAM_LONG_2"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="BEAM_MINING"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_BEAM_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_BEAM_PARTICLE_PIERCE">
+	<checkCargo/>
+	<text>Currently viewing the 'Earspoon' Beam.</text>
+	<choice hidden="false" req="BEAM_PARTICLE" blue="false">
+		<text>Craft the 'Earspoon' Beam.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_BEAM_PARTICLE_PIERCE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="BEAM_PARTICLE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="BEAM_PIERCE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_BEAM_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_BEAM_GUILLOTINE_CHAIN">
+	<checkCargo/>
+	<text>Currently viewing the Menaulion Beam. What a beauty!</text>
+	<choice hidden="true">
+		<text>Feed the Murder-Bots? [Cost: 150~, 10}, 10|] </text>
+		<event>
+			<text>...</text>
+				<item_modify>
+				<item type="scrap" min="-150" max="-150"/>
+				<item type="missiles" min="-10" max="-10"/>
+				<item type="drones" min="-10" max="-10"/>
+			</item_modify>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="NANOBOT_DEFENSE_SYSTEM"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="BEAM_GUILLOTINE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="FM_BEAM_GUILLOTINE_CHAIN"/>
+							<choice hidden="true">
+								<text>Congrats! Enjoy killing everything.</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+   </event>
+</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_BEAM_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_BEAM_EXPLOSION">
+	<checkCargo/>
+	<text>Currently viewing the 'Valefor' Beam.</text>
+	<choice hidden="false"  blue="false">
+		<text>Craft the 'Valefor' Beam.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_BEAM_EXPLOSION"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="BOMB_1"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="BEAM_2"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_BEAM_LOAD"/>
+	</choice>
+	</event>
+
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_FUELED_1">
+	<checkCargo/>
+	<text>Currently viewing the 'Parazonium' Pinpoint. </text>
+	<choice hidden="false" blue="false">
+		<text>Craft the 'Parazonium' Pinpoint.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_FOCUS_FUELED_1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MISSILES_3"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="FOCUS_CHAIN"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_PINPOINT_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_1">
+	<checkCargo/>
+	<text>Currently viewing the 'Ebony' Pinpoint.</text>
+	<choice hidden="false"  blue="false">
+		<text>Craft the ''Ebony' Pinpoint.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_FOCUS_ENERGY_1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="ENERGY_1"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="FOCUS_1"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_PINPOINT_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_2">
+	<checkCargo/>
+	<text>Currently viewing the 'Hemlock' Pinpoint.</text>
+	<choice hidden="false"  blue="false">
+		<text>Craft the 'Hemlock' Pinpoint.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_FOCUS_ENERGY_2"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="ENERGY_2"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="FOCUS_2"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_PINPOINT_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_3">
+	<checkCargo/>
+	<text>Currently viewing the 'Greenheart' Pinpoint.</text>
+	<choice hidden="false"  blue="false">
+		<text>Craft the 'Greenheart' Pinpoint.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_FOCUS_ENERGY_3"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="ENERGY_3"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="FOCUS_3"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_PINPOINT_LOAD"/>
+	</choice>
+	</event>
+	
+	
+	<!--FLAK CRAFT CATEGORY-->
+	
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY_MEGA">
+	<checkCargo/>
+	<text>Currently viewing the 'KHEIMON' Anomaly Dispenser++.</text>
+	<choice hidden="false"  blue="false">
+		<text>'KHEIMON' Anomaly Dispenser++.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_SHOTGUN_ANOMALY_MEGA"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="LASER_FROST_2_PLAYER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="SHOTGUN_TOXIC_PLAYER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_FLAK_LOAD"/>
+	</choice>
+	</event>
+
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY_PLUS_2">
+	<checkCargo/>
+	<text>Currently viewing the 'KHEIMON' Anomaly Dispenser+.</text>
+	<choice hidden="false"  blue="false">
+		<text>'KHEIMON' Anomaly Dispenser+.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_SHOTGUN_ANOMALY_PLAYER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="LASER_FROST_2"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="SHOTGUN_TOXIC_PLAYER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_FLAK_LOAD"/>
+	</choice>
+	</event>
+
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY_PLUS">
+	<checkCargo/>
+	<text>Currently viewing the 'KHEIMON' Anomaly Dispenser+.</text>
+	<choice hidden="false"  blue="false">
+		<text>'KHEIMON' Anomaly Dispenser+.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_SHOTGUN_ANOMALY_PLAYER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="LASER_FROST_2_PLAYER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="SHOTGUN_TOXIC"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_FLAK_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY">
+	<checkCargo/>
+	<text>Currently viewing the 'KHEIMON' Anomaly Dispenser.</text>
+	<choice hidden="false"  blue="false">
+		<text>'KHEIMON' Anomaly Dispenser.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_SHOTGUN_ANOMALY"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="LASER_FROST_2"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="SHOTGUN_TOXIC"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_FLAK_LOAD"/>
+	</choice>
+	</event>
+	
+	
+	<!--BRONZE FLAK SUB MENU. MAKE 15 choices, one for each crystal flak choice. then make a craft submenu for each with that choice. 
+	Hide any options that the player doesn't have, grey out option only if they have none!-->
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE_LOAD">	<!--SHOTGUN BRONZE LOAD-->
+	<event/>
+</event>
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE">
+	<text>Which weapon would you like to craft?</text>
+	<checkCargo/>
+	
+		<choice req="CRYSTAL_BURST_1"  blue="false" hidden="true" max_group="1">
+		<text>Install the Crystal Burst I in the Flak I.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE1"/>
+		</choice>
+		<choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_FLAK_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE1">
+	<checkCargo/>
+	<text>Currently viewing the Bronze Flak.</text>
+	<choice hidden="false"  blue="false">
+		<text>Bronze Flak.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_SHOTGUN_BRONZE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="SHOTGUN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="CRYSTAL_BURST_1"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE_LOAD"/>
+	</choice>
+	
+	
+	<!--FLAK BRONZE CRAFT OPTIONS
+	<choice hidden="true" req="CRYSTAL_BURST_1_RED" blue="false">
+		<text>Allow your Leech to gorge on the Burst Elite Kernel Launcher.</text>
+		<event>
+			<text>The leech looks almost...TOO eager.</text>
+			<weapon name="FM_BEAM_BASILISK"/>
+			<choice hidden="true" req="KERNEL_2_ELITE" blue="false">
+				<text>The leech greedily devours the Burst Elite Kernel.</text>
+				<event>
+					<text>...</text>
+					<remove name="KERNEL_2_ELITE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="leech">
+								<clone>false</clone>
+									<text>The Leech gorges upon the Elite Kernel Weapon, merging with it in a strange organic fashion.</text>
+							</removeCrew>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true" req="CRYSTAL_BURST_2" blue="false">
+		<text>Allow your Leech to gorge on the Heavy Elite Kernel Launcher.</text>
+		<event>
+			<text>The leech looks almost...TOO eager.</text>
+			<weapon name="FM_BEAM_BASILISK"/>
+			<choice hidden="true" req="KERNEL_HEAVY_ELITE" blue="false">
+				<text>The leech greedily devours the Heavy Elite Kernel Launcher.</text>
+				<event>
+					<text>...</text>
+					<remove name="KERNEL_HEAVY_ELITE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="leech">
+								<clone>false</clone>
+									<text>The Leech gorges upon the Elite Kernel Weapon, merging with it in a strange organic fashion.</text>
+							</removeCrew>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true" req="CRYSTAL_BURST_2_RED" blue="false">
+		<text>Allow your Leech to gorge on the Anti-Hull Elite Kernel Launcher.</text>
+		<event>
+			<text>The leech looks almost...TOO eager.</text>
+			<weapon name="FM_BEAM_BASILISK"/>
+			<choice hidden="true" req="KERNEL_HULL_ELITE" blue="false">
+				<text>The leech greedily devours the Anti-Hull Elite Kernel Launcher.</text>
+				<event>
+					<text>...</text>
+					<remove name="KERNEL_HULL_ELITE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="leech">
+								<clone>false</clone>
+									<text>The Leech gorges upon the Elite Kernel Weapon, merging with it in a strange organic fashion.</text>
+							</removeCrew>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	
+	<choice hidden="true" req="CRYSTAL_HEAVY_1" blue="false">
+		<text>Allow your Leech to gorge on the Chain Elite Kernel Launcher.</text>
+		<event>
+			<text>The leech looks almost...TOO eager.</text>
+			<weapon name="FM_BEAM_BASILISK"/>
+			<choice hidden="true" req="KERNEL_CHAIN_ELITE" blue="false">
+				<text>The leech greedily devours the Chain Elite Kernel Launcher.</text>
+				<event>
+					<text>...</text>
+					<remove name="KERNEL_CHAIN_ELITE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="leech">
+								<clone>false</clone>
+									<text>The Leech gorges upon the Elite Kernel Weapon, merging with it in a strange organic fashion.</text>
+							</removeCrew>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true" req="CRYSTAL_HEAVY_1_RED" blue="false">
+		<text>Allow your Leech to gorge on the Charge Elite Kernel Launcher.</text>
+		<event>
+			<text>The leech looks almost...TOO eager.</text>
+			<weapon name="FM_BEAM_BASILISK"/>
+			<choice hidden="true" req="KERNEL_CHARGE_ELITE" blue="false">
+				<text>The leech greedily devours the Charge Elite Kernel Launcher.</text>
+				<event>
+					<text>...</text>
+					<remove name="KERNEL_CHARGE_ELITE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="leech">
+								<clone>false</clone>
+									<text>The Leech gorges upon the Elite Kernel Weapon, merging with it in a strange organic fashion.</text>
+							</removeCrew>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true" req="CRYSTAL_HEAVY_2" blue="false">
+		<text>Allow your Leech to gorge on the Elite Kernel Launcher.</text>
+		<event>
+			<text> The leech looks almost...TOO eager.</text>
+			<weapon name="FM_BEAM_BASILISK"/>
+			<choice hidden="true" req="KERNEL_1_ELITE" blue="false">
+				<text>The leech greedily devours the Elite Kernel Launcher.</text>
+				<event>
+					<text>...</text>
+					<remove name="KERNEL_1_ELITE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="leech">
+								<clone>false</clone>
+									<text>The Leech gorges upon the Elite Kernel Weapon, merging with it in a strange organic fashion.</text>
+							</removeCrew>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true" req="CRYSTAL_HEAVY_2_RED" blue="false">
+		<text>Allow your Leech to gorge on the Burst Elite Kernel Launcher.</text>
+		<event>
+			<text>The leech looks almost...TOO eager.</text>
+			<weapon name="FM_BEAM_BASILISK"/>
+			<choice hidden="true" req="KERNEL_2_ELITE" blue="false">
+				<text>The leech greedily devours the Burst Elite Kernel.</text>
+				<event>
+					<text>...</text>
+					<remove name="KERNEL_2_ELITE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="leech">
+								<clone>false</clone>
+									<text>The Leech gorges upon the Elite Kernel Weapon, merging with it in a strange organic fashion.</text>
+							</removeCrew>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true" req="CRYSTAL_STUN_BURST" blue="false">
+		<text>Allow your Leech to gorge on the Heavy Elite Kernel Launcher.</text>
+		<event>
+			<text>The leech looks almost...TOO eager.</text>
+			<weapon name="FM_BEAM_BASILISK"/>
+			<choice hidden="true" req="KERNEL_HEAVY_ELITE" blue="false">
+				<text>The leech greedily devours the Heavy Elite Kernel Launcher.</text>
+				<event>
+					<text>...</text>
+					<remove name="KERNEL_HEAVY_ELITE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="leech">
+								<clone>false</clone>
+									<text>The Leech gorges upon the Elite Kernel Weapon, merging with it in a strange organic fashion.</text>
+							</removeCrew>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true" req="CRYSTAL_STUN_BURST_RED" blue="false">
+		<text>Allow your Leech to gorge on the Anti-Hull Elite Kernel Launcher.</text>
+		<event>
+			<text>The leech looks almost...TOO eager.</text>
+			<weapon name="FM_BEAM_BASILISK"/>
+			<choice hidden="true" req="KERNEL_HULL_ELITE" blue="false">
+				<text>The leech greedily devours the Anti-Hull Elite Kernel Launcher.</text>
+				<event>
+					<text>...</text>
+					<remove name="KERNEL_HULL_ELITE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="leech">
+								<clone>false</clone>
+									<text>The Leech gorges upon the Elite Kernel Weapon, merging with it in a strange organic fashion.</text>
+							</removeCrew>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	
+	<choice hidden="true" req="CRYSTAL_SHOTGUN" blue="false">
+		<text>Allow your Leech to gorge on the Chain Elite Kernel Launcher.</text>
+		<event>
+			<text>The leech looks almost...TOO eager.</text>
+			<weapon name="FM_BEAM_BASILISK"/>
+			<choice hidden="true" req="KERNEL_CHAIN_ELITE" blue="false">
+				<text>The leech greedily devours the Chain Elite Kernel Launcher.</text>
+				<event>
+					<text>...</text>
+					<remove name="KERNEL_CHAIN_ELITE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="leech">
+								<clone>false</clone>
+									<text>The Leech gorges upon the Elite Kernel Weapon, merging with it in a strange organic fashion.</text>
+							</removeCrew>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true" req="CRYSTAL_SHOTGUN_RED" blue="false">
+		<text>Allow your Leech to gorge on the Charge Elite Kernel Launcher.</text>
+		<event>
+			<text>The leech looks almost...TOO eager.</text>
+			<weapon name="FM_BEAM_BASILISK"/>
+			<choice hidden="true" req="KERNEL_CHARGE_ELITE" blue="false">
+				<text>The leech greedily devours the Charge Elite Kernel Launcher.</text>
+				<event>
+					<text>...</text>
+					<remove name="KERNEL_CHARGE_ELITE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="leech">
+								<clone>false</clone>
+									<text>The Leech gorges upon the Elite Kernel Weapon, merging with it in a strange organic fashion.</text>
+							</removeCrew>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true" req="CRYSTAL_CHARGEGUN" blue="false">
+		<text>Allow your Leech to gorge on the Heavy Elite Kernel Launcher.</text>
+		<event>
+			<text>The leech looks almost...TOO eager.</text>
+			<weapon name="FM_BEAM_BASILISK"/>
+			<choice hidden="true" req="KERNEL_HEAVY_ELITE" blue="false">
+				<text>The leech greedily devours the Heavy Elite Kernel Launcher.</text>
+				<event>
+					<text>...</text>
+					<remove name="KERNEL_HEAVY_ELITE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="leech">
+								<clone>false</clone>
+									<text>The Leech gorges upon the Elite Kernel Weapon, merging with it in a strange organic fashion.</text>
+							</removeCrew>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true" req="CRYSTAL_CHARGEGUN_RED" blue="false">
+		<text>Allow your Leech to gorge on the Anti-Hull Elite Kernel Launcher.</text>
+		<event>
+			<text>The leech looks almost...TOO eager.</text>
+			<weapon name="FM_BEAM_BASILISK"/>
+			<choice hidden="true" req="KERNEL_HULL_ELITE" blue="false">
+				<text>The leech greedily devours the Anti-Hull Elite Kernel Launcher.</text>
+				<event>
+					<text>...</text>
+					<remove name="KERNEL_HULL_ELITE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="leech">
+								<clone>false</clone>
+									<text>The Leech gorges upon the Elite Kernel Weapon, merging with it in a strange organic fashion.</text>
+							</removeCrew>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true" req="MINELAUNCHER_CRYSTAL" blue="false">
+		<text>Allow your Leech to gorge on the Chain Elite Kernel Launcher.</text>
+		<event>
+			<text>The leech looks almost...TOO eager.</text>
+			<weapon name="FM_BEAM_BASILISK"/>
+			<choice hidden="true" req="KERNEL_CHAIN_ELITE" blue="false">
+				<text>The leech greedily devours the Chain Elite Kernel Launcher.</text>
+				<event>
+					<text>...</text>
+					<remove name="KERNEL_CHAIN_ELITE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="leech">
+								<clone>false</clone>
+									<text>The Leech gorges upon the Elite Kernel Weapon, merging with it in a strange organic fashion.</text>
+							</removeCrew>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	-->
+	
+	
+	
+	</event>
+	
+	<!--EXPLOSIVE CRAFT CATEGORY-->
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_MISSILES_BURST_FIRE">
+	<checkCargo/>
+	<text>Currently viewing the 'Hellfire' Missiles.</text>
+	<choice hidden="false"  blue="false">
+		<text>'Hellfire' Missiles.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_MISSILES_BURST_FIRE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MISSILES_4"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="MISSILES_FIRE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_EXPLOSIVES_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_MISSILES_BURST_FIRE_PLAYER">
+	<checkCargo/>
+	<text>Currently viewing the 'Hellfire' Missiles+.</text>
+	<choice hidden="false"  blue="false">
+		<text>'Hellfire' Missiles+.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_MISSILES_BURST_FIRE_PLAYER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MISSILES_4"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="MISSILES_FIRE_PLAYER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_EXPLOSIVES_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_MISSILES_BURST_FIRE_PLAYER2">
+	<checkCargo/>
+	<text>Currently viewing the 'Hellfire' Missiles+.</text>
+	<choice hidden="false"  blue="false">
+		<text>'Hellfire' Missiles+.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_MISSILES_BURST_FIRE_PLAYER"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MISSILES_4_PLAYER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="MISSILES_FIRE"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_EXPLOSIVES_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_MISSILES_BURST_FIRE_MEGA">
+	<checkCargo/>
+	<text>Currently viewing the 'Hellfire' Missiles++.</text>
+	<choice hidden="false"  blue="false">
+		<text>'Hellfire' Missiles++.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_MISSILES_BURST_FIRE_MEGA"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="MISSILES_4_PLAYER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="MISSILES_FIRE_PLAYER"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_EXPLOSIVES_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_MISSILES_CLOAK_STUN">
+	<checkCargo/>
+	<text>Currently viewing the 'Chernobog' Missile.</text>
+	<choice hidden="false"  blue="false">
+		<text>'Chernobog' Missile.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_MISSILES_CLOAK_STUN"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="ENERGY_STUN"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="MISSILES_CLOAK"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_EXPLOSIVES_LOAD"/>
+	</choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_BOMB_CRYSTAL_FIRE">
+	<checkCargo/>
+	<text>Currently viewing the Ovenator Bomb.</text>
+	<choice hidden="false"  blue="false">
+		<text>Ovenator Bomb.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_BOMB_CRYSTAL_FIRE"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="BOMB_FIRE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="BOMB_LOCK"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_EXPLOSIVES_LOAD"/>
+	</choice>
+	</event>
+
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_BOMB_CRYSTAL_BIO">
+	<checkCargo/>
+	<text>Currently viewing the Life Restraining Order Bomb.</text>
+	<choice hidden="false"  blue="false">
+		<text>Life Restraining Order.</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_BOMB_CRYSTAL_BIO"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="BOMB_BIO"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<remove name="BOMB_LOCK"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_EXPLOSIVES_LOAD"/>
+	</choice>
+	</event>
+	
+	<!--ORGANIC CRAFT CATEGORY-->
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_BEAM_BASILISK">
+	<checkCargo/>
+	<text>You browse the Elite Kernel Weapons stored on your ship.</text>
+	<choice hidden="true" req="KERNEL_1_ELITE" blue="false">
+		<text>Allow your Leech to gorge on the Elite Kernel Launcher.</text>
+		<event>
+			<text> The leech looks almost...TOO eager.</text>
+			<weapon name="FM_BEAM_BASILISK"/>
+			<choice hidden="true" req="KERNEL_1_ELITE" blue="false">
+				<text>The leech greedily devours the Elite Kernel Launcher.</text>
+				<event>
+					<text>...</text>
+					<remove name="KERNEL_1_ELITE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="leech">
+								<clone>false</clone>
+									<text>The Leech gorges upon the Elite Kernel Weapon, merging with it in a strange organic fashion.</text>
+							</removeCrew>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	
+	
+	<choice hidden="true" req="KERNEL_2_ELITE" blue="false">
+		<text>Allow your Leech to gorge on the Burst Elite Kernel Launcher.</text>
+		<event>
+			<text>The leech looks almost...TOO eager.</text>
+			<weapon name="FM_BEAM_BASILISK"/>
+			<choice hidden="true" req="KERNEL_2_ELITE" blue="false">
+				<text>The leech greedily devours the Burst Elite Kernel.</text>
+				<event>
+					<text>...</text>
+					<remove name="KERNEL_2_ELITE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="leech">
+								<clone>false</clone>
+									<text>The Leech gorges upon the Elite Kernel Weapon, merging with it in a strange organic fashion.</text>
+							</removeCrew>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true" req="KERNEL_HEAVY_ELITE" blue="false">
+		<text>Allow your Leech to gorge on the Heavy Elite Kernel Launcher.</text>
+		<event>
+			<text>The leech looks almost...TOO eager.</text>
+			<weapon name="FM_BEAM_BASILISK"/>
+			<choice hidden="true" req="KERNEL_HEAVY_ELITE" blue="false">
+				<text>The leech greedily devours the Heavy Elite Kernel Launcher.</text>
+				<event>
+					<text>...</text>
+					<remove name="KERNEL_HEAVY_ELITE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="leech">
+								<clone>false</clone>
+									<text>The Leech gorges upon the Elite Kernel Weapon, merging with it in a strange organic fashion.</text>
+							</removeCrew>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true" req="KERNEL_HULL_ELITE" blue="false">
+		<text>Allow your Leech to gorge on the Anti-Hull Elite Kernel Launcher.</text>
+		<event>
+			<text>The leech looks almost...TOO eager.</text>
+			<weapon name="FM_BEAM_BASILISK"/>
+			<choice hidden="true" req="KERNEL_HULL_ELITE" blue="false">
+				<text>The leech greedily devours the Anti-Hull Elite Kernel Launcher.</text>
+				<event>
+					<text>...</text>
+					<remove name="KERNEL_HULL_ELITE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="leech">
+								<clone>false</clone>
+									<text>The Leech gorges upon the Elite Kernel Weapon, merging with it in a strange organic fashion.</text>
+							</removeCrew>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	
+	<choice hidden="true" req="KERNEL_CHAIN_ELITE" blue="false">
+		<text>Allow your Leech to gorge on the Chain Elite Kernel Launcher.</text>
+		<event>
+			<text>The leech looks almost...TOO eager.</text>
+			<weapon name="FM_BEAM_BASILISK"/>
+			<choice hidden="true" req="KERNEL_CHAIN_ELITE" blue="false">
+				<text>The leech greedily devours the Chain Elite Kernel Launcher.</text>
+				<event>
+					<text>...</text>
+					<remove name="KERNEL_CHAIN_ELITE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="leech">
+								<clone>false</clone>
+									<text>The Leech gorges upon the Elite Kernel Weapon, merging with it in a strange organic fashion.</text>
+							</removeCrew>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true" req="KERNEL_CHARGE_ELITE" blue="false">
+		<text>Allow your Leech to gorge on the Charge Elite Kernel Launcher.</text>
+		<event>
+			<text>The leech looks almost...TOO eager.</text>
+			<weapon name="FM_BEAM_BASILISK"/>
+			<choice hidden="true" req="KERNEL_CHARGE_ELITE" blue="false">
+				<text>The leech greedily devours the Charge Elite Kernel Launcher.</text>
+				<event>
+					<text>...</text>
+					<remove name="KERNEL_CHARGE_ELITE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<removeCrew class="leech">
+								<clone>false</clone>
+									<text>The Leech gorges upon the Elite Kernel Weapon, merging with it in a strange organic fashion.</text>
+							</removeCrew>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_ORGANIC_LOAD"/>
+	</choice>
+	
+	</event>
+	
+	<!--UPGRADE CRAFT CATEGORY-->
+<event name="NPC_STORAGE_CHECK_UPGRADE_LISTFULL_LOAD">	<!--UPGRADE CRAFT CATEGORY-->
+	<event/>
+</event>
+<event name="NPC_STORAGE_CHECK_UPGRADE_LISTFULL">
+<checkCargo/>
+	<text>Which Weapon shall you upgrade?</text>
+
+ <!-- Do you want to upgrade a weapon in the Bronze Flak Line? -->	
+<choice req="FM_SHOTGUN_BRONZE"  max_group="600" hidden="true">
+        <text>Upgrade the Bronze Flak Weapon</text>
+        <event load="NPC_STORAGE_CHECK_UPGRADE_BRONZE"/>
+</choice>
+
+<choice req="FM_SHOTGUN_INDIUM"  max_group="600" hidden="true">
+        <text>Upgrade the Indium Flak Weapon</text>
+        <event load="NPC_STORAGE_CHECK_UPGRADE_INDIUM"/>
+</choice>
+
+<choice req="FM_SHOTGUN_RHENIUM"  max_group="600" hidden="true">
+        <text>Upgrade the Rhenium Flak Weapon</text>
+        <event load="NPC_STORAGE_CHECK_UPGRADE_RHENIUM"/>
+</choice>
+
+<choice req="FM_SHOTGUN_SILVER"  max_group="600" hidden="true">
+        <text>Upgrade the Silver Flak Weapon</text>
+        <event load="NPC_STORAGE_CHECK_UPGRADE_SILVER"/>
+</choice>
+
+<choice req="FM_SHOTGUN_PALLADIUM"  max_group="600" hidden="true">
+        <text>Upgrade the Palladium Flak Weapon</text>
+        <event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM"/>
+</choice>
+
+<choice req="FM_SHOTGUN_IRIDIUM"  max_group="600" hidden="true">
+        <text>Upgrade the Iridium Flak Weapon</text>
+        <event load="NPC_STORAGE_CHECK_UPGRADE_IRIDIUM"/>
+</choice>
+
+<choice req="FM_SHOTGUN_PLATINUM"  max_group="600" hidden="true">
+        <text>Upgrade the Platinum Flak Weapon</text>
+        <event load="NPC_STORAGE_CHECK_UPGRADE_PLATINUM"/>
+</choice>
+
+<choice req="FM_SHOTGUN_OSMIUM"  max_group="600" hidden="true">
+        <text>Upgrade the Osmium Flak Weapon</text>
+        <event load="NPC_STORAGE_CHECK_UPGRADE_OSMIUM"/>
+</choice>
+
+<choice req="FM_SHOTGUN_NOBELIUM"  max_group="600" hidden="true">
+        <text>Upgrade the Nobelium Flak Weapon</text>
+        <event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM"/>
+</choice>
+
+<choice req="pilot" lvl="1" max_group="605" hidden="true" blue="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_WEAPON_LOAD"/>
+	</choice>
+	</event>
+
+
+	
+	<!-- UPGRADE BRONZE FLAK WEAPON LINE! -->	
+	<event name="NPC_STORAGE_CHECK_UPGRADE_BRONZE">
+	<checkCargo/>
+	<text>Currently viewing the Bronze Flak</text>
+	<choice hidden="false"  blue="false">
+		<text>Upgrade Bronze Flak using scrap? [Cost: 100~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->	
+		<event>
+			<text>...</text>
+				<item_modify>
+				<item type="scrap" min="-100" max="-100"/>
+				<!--<item type="missiles" min="-10" max="-10"/>-->	
+				<!--<item type="drones" min="-10" max="-10"/>>-->	
+			</item_modify>
+			
+			<!-- KEEP THIS LINE IN IF A WEAPON IS NEEDED FOR CRAFTING THE NEXT STAGE
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="NANOBOT_DEFENSE_SYSTEM"/>-->
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="FM_SHOTGUN_BRONZE"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="FM_SHOTGUN_INDIUM"/>
+							<choice hidden="true">
+								<text>Upgrade to Indium Flak Complete!</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event> 
+	</choice>  
+  <!-- </event>--><!-- un-comment this event and choice tag one line below if a weapon is needed to upgrade the stage -->
+<!--</choice>-->
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_LOAD"/>
+	</choice>
+	</event>
+
+	<event name="NPC_STORAGE_CHECK_UPGRADE_INDIUM">
+	<checkCargo/>
+	<text>Currently viewing the Indium Flak</text>
+	<choice hidden="false"  blue="false">
+		<text>Upgrade Indium Flak using scrap? [Cost: 150~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->	
+		<event>
+			<text>...</text>
+				<item_modify>
+				<item type="scrap" min="-150" max="-150"/>
+				<!--<item type="missiles" min="-10" max="-10"/>-->	
+				<!--<item type="drones" min="-10" max="-10"/>>-->	
+			</item_modify>
+			
+			<!-- KEEP THIS LINE IN IF A WEAPON IS NEEDED FOR CRAFTING THE NEXT STAGE
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="NANOBOT_DEFENSE_SYSTEM"/>-->
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="FM_SHOTGUN_INDIUM"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="FM_SHOTGUN_RHENIUM"/>
+							<choice hidden="true">
+								<text>Upgrade to Rhenium Flak Complete!</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event> 
+	</choice>  
+  <!-- </event>--><!-- un-comment this event and choice tag one line below if a weapon is needed to upgrade the stage -->
+<!--</choice>-->
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_LOAD"/>
+	</choice>
+	</event>
+
+	<event name="NPC_STORAGE_CHECK_UPGRADE_RHENIUM">
+	<checkCargo/>
+	<text>Currently viewing the Rhenium Flak</text>
+	<choice hidden="false"  blue="false">
+		<text>Upgrade Rhenium Flak using scrap? [Cost: 200~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->	
+		<event>
+			<text>...</text>
+				<item_modify>
+				<item type="scrap" min="-200" max="-200"/>
+				<!--<item type="missiles" min="-10" max="-10"/>-->	
+				<!--<item type="drones" min="-10" max="-10"/>>-->	
+			</item_modify>
+			
+			<!-- KEEP THIS LINE IN IF A WEAPON IS NEEDED FOR CRAFTING THE NEXT STAGE
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="NANOBOT_DEFENSE_SYSTEM"/>-->
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="FM_SHOTGUN_RHENIUM"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="FM_SHOTGUN_SILVER"/>
+							<choice hidden="true">
+								<text>Upgrade to Silver Flak Complete!</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event> 
+	</choice>  
+  <!-- </event>--><!-- un-comment this event and choice tag one line below if a weapon is needed to upgrade the stage -->
+<!--</choice>-->
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_LOAD"/>
+	</choice>
+	</event>
+
+	<event name="NPC_STORAGE_CHECK_UPGRADE_SILVER">
+	<checkCargo/>
+	<text>Currently viewing the Silver Flak</text>
+	<choice hidden="false"  blue="false">
+		<text>Upgrade Silver Flak using scrap? [Cost: 250~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->	
+		<event>
+			<text>...</text>
+				<item_modify>
+				<item type="scrap" min="-250" max="-250"/>
+				<!--<item type="missiles" min="-10" max="-10"/>-->	
+				<!--<item type="drones" min="-10" max="-10"/>>-->	
+			</item_modify>
+			
+			<!-- KEEP THIS LINE IN IF A WEAPON IS NEEDED FOR CRAFTING THE NEXT STAGE
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="NANOBOT_DEFENSE_SYSTEM"/>-->
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="FM_SHOTGUN_SILVER"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="FM_SHOTGUN_PALLADIUM"/>
+							<choice hidden="true">
+								<text>Upgrade to Palladium Flak Complete!</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event> 
+	</choice>  
+  <!-- </event>--><!-- un-comment this event and choice tag one line below if a weapon is needed to upgrade the stage -->
+<!--</choice>-->
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_LOAD"/>
+	</choice>
+	</event>
+
+	<event name="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM">
+	<checkCargo/>
+	<text>Currently viewing the Palladium Flak.</text>
+	<choice hidden="true" req="CRYSTAL_BURST_1_RED" max_group="1"  blue="false">
+		<text>Upgrade Palladium Flak using scrap and Elite Crystal Burst I? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->	
+		<event>
+			<text>...</text>
+				<item_modify>
+				<item type="scrap" min="-260" max="-260"/>
+				<!--<item type="missiles" min="-10" max="-10"/>-->	
+				<!--<item type="drones" min="-10" max="-10"/>>-->	
+			</item_modify>
+			
+			
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="CRYSTAL_BURST_1_RED"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="FM_SHOTGUN_PALLADIUM"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="FM_SHOTGUN_IRIDIUM"/>
+							<choice hidden="true">
+								<text>Upgrade to Iridium Flak Complete!</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event> 
+	</choice>  
+  </event>
+</choice>
+	
+	<choice hidden="true" req="CRYSTAL_BURST_2_RED" max_group="2"  blue="false">
+		<text>Upgrade Palladium Flak using scrap and Elite Crystal Burst I? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->	
+		<event>
+			<text>...</text>
+				<item_modify>
+				<item type="scrap" min="-260" max="-260"/>
+				<!--<item type="missiles" min="-10" max="-10"/>-->	
+				<!--<item type="drones" min="-10" max="-10"/>>-->	
+			</item_modify>
+			
+			
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="CRYSTAL_BURST_2_RED"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="FM_SHOTGUN_PALLADIUM"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="FM_SHOTGUN_IRIDIUM"/>
+							<choice hidden="true">
+								<text>Upgrade to Iridium Flak Complete!</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event> 
+	</choice>  
+  </event>
+</choice>
+	
+	<choice hidden="true" req="CRYSTAL_HEAVY_1_RED" max_group="3"  blue="false">
+		<text>Upgrade Palladium Flak using scrap and Elite Crystal Burst I? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->	
+		<event>
+			<text>...</text>
+				<item_modify>
+				<item type="scrap" min="-260" max="-260"/>
+				<!--<item type="missiles" min="-10" max="-10"/>-->	
+				<!--<item type="drones" min="-10" max="-10"/>>-->	
+			</item_modify>
+			
+			
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="CRYSTAL_HEAVY_1_RED"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="FM_SHOTGUN_PALLADIUM"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="FM_SHOTGUN_IRIDIUM"/>
+							<choice hidden="true">
+								<text>Upgrade to Iridium Flak Complete!</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event> 
+	</choice>  
+  </event>
+</choice>
+	
+	<choice hidden="true" req="CRYSTAL_HEAVY_2_RED" max_group="4"  blue="false">
+		<text>Upgrade Palladium Flak using scrap and Elite Crystal Burst I? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->	
+		<event>
+			<text>...</text>
+				<item_modify>
+				<item type="scrap" min="-260" max="-260"/>
+				<!--<item type="missiles" min="-10" max="-10"/>-->	
+				<!--<item type="drones" min="-10" max="-10"/>>-->	
+			</item_modify>
+			
+			
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="CRYSTAL_HEAVY_2_RED"/>-->
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="FM_SHOTGUN_PALLADIUM"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="FM_SHOTGUN_IRIDIUM"/>
+							<choice hidden="true">
+								<text>Upgrade to Iridium Flak Complete!</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event> 
+	</choice>  
+  </event>
+</choice>
+	
+	<choice hidden="true" req="CRYSTAL_STUN_BURST_RED" max_group="5"  blue="false">
+		<text>Upgrade Palladium Flak using scrap and Elite Crystal Burst I? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->	
+		<event>
+			<text>...</text>
+				<item_modify>
+				<item type="scrap" min="-260" max="-260"/>
+				<!--<item type="missiles" min="-10" max="-10"/>-->	
+				<!--<item type="drones" min="-10" max="-10"/>>-->	
+			</item_modify>
+			
+			
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="CRYSTAL_STUN_BURST_RED"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="FM_SHOTGUN_PALLADIUM"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="FM_SHOTGUN_IRIDIUM"/>
+							<choice hidden="true">
+								<text>Upgrade to Iridium Flak Complete!</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event> 
+	</choice>  
+  </event>
+</choice>
+	
+	<choice hidden="true" req="CRYSTAL_SHOTGUN_RED" max_group="6"  blue="false">
+		<text>Upgrade Palladium Flak using scrap and Elite Crystal Burst I? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->	
+		<event>
+			<text>...</text>
+				<item_modify>
+				<item type="scrap" min="-260" max="-260"/>
+				<!--<item type="missiles" min="-10" max="-10"/>-->	
+				<!--<item type="drones" min="-10" max="-10"/>>-->	
+			</item_modify>
+			
+			
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="CRYSTAL_SHOTGUN_RED"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="FM_SHOTGUN_PALLADIUM"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="FM_SHOTGUN_IRIDIUM"/>
+							<choice hidden="true">
+								<text>Upgrade to Iridium Flak Complete!</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event> 
+	</choice>  
+  </event>
+</choice>
+	
+	<choice hidden="true" req="CRYSTAL_CHARGEGUN_RED" max_group="7"  blue="false">
+		<text>Upgrade Palladium Flak using scrap and Elite Crystal Burst I? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->	
+		<event>
+			<text>...</text>
+				<item_modify>
+				<item type="scrap" min="-260" max="-260"/>
+				<!--<item type="missiles" min="-10" max="-10"/>-->	
+				<!--<item type="drones" min="-10" max="-10"/>>-->	
+			</item_modify>
+			
+			
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="CRYSTAL_CHARGEGUN_RED"/>-->
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="FM_SHOTGUN_PALLADIUM"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="FM_SHOTGUN_IRIDIUM"/>
+							<choice hidden="true">
+								<text>Upgrade to Iridium Flak Complete!</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event> 
+	</choice>  
+  </event>
+</choice>
+	
+	<choice hidden="false" req="pilot" lvl="1" max_group="8" blue="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_LOAD"/>
+	</choice>
+	</event>
+
+	<event name="NPC_STORAGE_CHECK_UPGRADE_IRIDIUM">
+	<checkCargo/>
+	<text>Currently viewing the Iridium Flak</text>
+	<choice hidden="false"  blue="false">
+		<text>Upgrade Iridium Flak using scrap? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->	
+		<event>
+			<text>...</text>
+				<item_modify>
+				<item type="scrap" min="-260" max="-260"/>
+				<!--<item type="missiles" min="-10" max="-10"/>-->	
+				<!--<item type="drones" min="-10" max="-10"/>>-->	
+			</item_modify>
+			
+			<!-- KEEP THIS LINE IN IF A WEAPON IS NEEDED FOR CRAFTING THE NEXT STAGE
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="NANOBOT_DEFENSE_SYSTEM"/>-->
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="FM_SHOTGUN_IRIDIUM"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="FM_SHOTGUN_PLATINUM"/>
+							<choice hidden="true">
+								<text>Upgrade to Platinum Flak Complete!</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event> 
+	</choice>  
+  <!-- </event>--><!-- un-comment this event and choice tag one line below if a weapon is needed to upgrade the stage -->
+<!--</choice>-->
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_LOAD"/>
+	</choice>
+	</event>
+
+	<event name="NPC_STORAGE_CHECK_UPGRADE_PLATINUM">
+	<checkCargo/>
+	<text>Currently viewing the Platinum Flak</text>
+	<choice hidden="false"  blue="false">
+		<text>Upgrade Platinum Flak using scrap? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->	
+		<event>
+			<text>...</text>
+				<item_modify>
+				<item type="scrap" min="-260" max="-260"/>
+				<!--<item type="missiles" min="-10" max="-10"/>-->	
+				<!--<item type="drones" min="-10" max="-10"/>>-->	
+			</item_modify>
+			
+			<!-- KEEP THIS LINE IN IF A WEAPON IS NEEDED FOR CRAFTING THE NEXT STAGE
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="NANOBOT_DEFENSE_SYSTEM"/>-->
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="FM_SHOTGUN_PLATINUM"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="FM_SHOTGUN_OSMIUM"/>
+							<choice hidden="true">
+								<text>Upgrade to Osmium Flak Complete!</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event> 
+	</choice>  
+  <!-- </event>--><!-- un-comment this event and choice tag one line below if a weapon is needed to upgrade the stage -->
+<!--</choice>-->
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_LOAD"/>
+	</choice>
+	</event>
+
+	<event name="NPC_STORAGE_CHECK_UPGRADE_OSMIUM">
+	<checkCargo/>
+	<text>Currently viewing the Osmium Flak</text>
+	<choice hidden="false"  blue="false">
+		<text>Upgrade Osmium Flak using scrap? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->	
+		<event>
+			<text>...</text>
+				<item_modify>
+				<item type="scrap" min="-260" max="-260"/>
+				<!--<item type="missiles" min="-10" max="-10"/>-->	
+				<!--<item type="drones" min="-10" max="-10"/>>-->	
+			</item_modify>
+			
+			<!-- KEEP THIS LINE IN IF A WEAPON IS NEEDED FOR CRAFTING THE NEXT STAGE
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="NANOBOT_DEFENSE_SYSTEM"/>-->
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="FM_SHOTGUN_OSMIUM"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="FM_SHOTGUN_NOBELIUM"/>
+							<choice hidden="true">
+								<text>Upgrade to Nobelium Flak Complete!</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event> 
+	</choice>  
+  <!-- </event>--><!-- un-comment this event and choice tag one line below if a weapon is needed to upgrade the stage -->
+<!--</choice>-->
+	<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_LOAD"/>
+	</choice>
+	</event>
+
+	<event name="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM">
+	<checkCargo/>
+	<text>Currently viewing the Nobelium Flak.</text>
+	<choice hidden="true" req="CRYSTAL_BURST_1_RED" max_group="1"  blue="false">
+		<text>Upgrade Nobelium Flak using scrap and Elite Crystal Burst I? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->	
+		<event>
+			<text>...</text>
+				<item_modify>
+				<item type="scrap" min="-260" max="-260"/>
+				<!--<item type="missiles" min="-10" max="-10"/>-->	
+				<!--<item type="drones" min="-10" max="-10"/>>-->	
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="CRYSTAL_BURST_1_RED"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="FM_SHOTGUN_NOBELIUM"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="FM_SHOTGUN_HASSIUM"/>
+							<choice hidden="true">
+								<text>Upgrade to Hassium Flak Complete!</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event> 
+	</choice>  
+  </event>
+</choice>
+	
+	<choice hidden="true" req="CRYSTAL_BURST_2_RED" max_group="2"  blue="false">
+		<text>Upgrade Nobelium Flak using scrap and Elite Crystal Burst I? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->	
+		<event>
+			<text>...</text>
+				<item_modify>
+				<item type="scrap" min="-260" max="-260"/>
+				<!--<item type="missiles" min="-10" max="-10"/>-->	
+				<!--<item type="drones" min="-10" max="-10"/>>-->	
+			</item_modify>
+			
+			
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="CRYSTAL_BURST_2_RED"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="FM_SHOTGUN_NOBELIUM"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="FM_SHOTGUN_HASSIUM"/>
+							<choice hidden="true">
+								<text>Upgrade to Hassium Flak Complete!</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event> 
+	</choice>  
+  </event>
+</choice>
+	
+	<choice hidden="true" req="CRYSTAL_HEAVY_1_RED" max_group="3"  blue="false">
+		<text>Upgrade Nobelium Flak using scrap and Elite Crystal Burst I? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->	
+		<event>
+			<text>...</text>
+				<item_modify>
+				<item type="scrap" min="-260" max="-260"/>
+				<!--<item type="missiles" min="-10" max="-10"/>-->	
+				<!--<item type="drones" min="-10" max="-10"/>>-->	
+			</item_modify>
+			
+			
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="CRYSTAL_HEAVY_1_RED"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="FM_SHOTGUN_NOBELIUM"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="FM_SHOTGUN_HASSIUM"/>
+							<choice hidden="true">
+								<text>Upgrade to Hassium Flak Complete!</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event> 
+	</choice>  
+  </event>
+</choice>
+	
+	<choice hidden="true" req="CRYSTAL_HEAVY_2_RED" max_group="4"  blue="false">
+		<text>Upgrade Nobelium Flak using scrap and Elite Crystal Burst I? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->	
+		<event>
+			<text>...</text>
+				<item_modify>
+				<item type="scrap" min="-260" max="-260"/>
+				<!--<item type="missiles" min="-10" max="-10"/>-->	
+				<!--<item type="drones" min="-10" max="-10"/>>-->	
+			</item_modify>
+			
+			
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="CRYSTAL_HEAVY_2_RED"/>-->
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="FM_SHOTGUN_NOBELIUM"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="FM_SHOTGUN_HASSIUM"/>
+							<choice hidden="true">
+								<text>Upgrade to Hassium Flak Complete!</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event> 
+	</choice>  
+  </event>
+</choice>
+	
+	<choice hidden="true" req="CRYSTAL_STUN_BURST_RED" max_group="5"  blue="false">
+		<text>Upgrade Nobelium Flak using scrap and Elite Crystal Burst I? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->	
+		<event>
+			<text>...</text>
+				<item_modify>
+				<item type="scrap" min="-260" max="-260"/>
+				<!--<item type="missiles" min="-10" max="-10"/>-->	
+				<!--<item type="drones" min="-10" max="-10"/>>-->	
+			</item_modify>
+			
+			
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="CRYSTAL_STUN_BURST_RED"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="FM_SHOTGUN_NOBELIUM"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="FM_SHOTGUN_HASSIUM"/>
+							<choice hidden="true">
+								<text>Upgrade to Hassium Flak Complete!</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event> 
+	</choice>  
+  </event>
+</choice>
+	
+	<choice hidden="true" req="CRYSTAL_SHOTGUN_RED" max_group="6"  blue="false">
+		<text>Upgrade Nobelium Flak using scrap and Elite Crystal Burst I? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->	
+		<event>
+			<text>...</text>
+				<item_modify>
+				<item type="scrap" min="-260" max="-260"/>
+				<!--<item type="missiles" min="-10" max="-10"/>-->	
+				<!--<item type="drones" min="-10" max="-10"/>>-->	
+			</item_modify>
+			
+			
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="CRYSTAL_SHOTGUN_RED"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="FM_SHOTGUN_NOBELIUM"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="FM_SHOTGUN_HASSIUM"/>
+							<choice hidden="true">
+								<text>Upgrade to Hassium Flak Complete!</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event> 
+	</choice>  
+  </event>
+</choice>
+	
+	<choice hidden="true" req="CRYSTAL_CHARGEGUN_RED" max_group="7"  blue="false">
+		<text>Upgrade Nobelium Flak using scrap and Elite Crystal Burst I? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->	
+		<event>
+			<text>...</text>
+				<item_modify>
+				<item type="scrap" min="-260" max="-260"/>
+				<!--<item type="missiles" min="-10" max="-10"/>-->	
+				<!--<item type="drones" min="-10" max="-10"/>>-->	
+			</item_modify>
+			
+			
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="CRYSTAL_CHARGEGUN_RED"/>-->
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...</text>
+					<remove name="FM_SHOTGUN_NOBELIUM"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>...</text>
+							<weapon name="FM_SHOTGUN_HASSIUM"/>
+							<choice hidden="true">
+								<text>Upgrade to Hassium Flak Complete!</text>
+								<event load="FM_FORGE_WEAPON_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event> 
+	</choice>  
+  </event>
+</choice>
+	
+	<choice hidden="false" req="pilot" lvl="1" max_group="8" blue="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_WEAPON_LOAD"/>
+	</choice>
+	</event>
+
+</FTL>
+	<!-- END OF UPGRADE BRONZE FLAK WEAPON LINE! -->	
+	<event name="FORGEMASTER_SECOND_PROMPT" >
+	<text>Alastair speaks up over your comms "before you go lad, are you sure you don't need to craft anything?</text>
+
+	
+
+	<choice hidden="true" req="FM_FORGE_LIST_CHECK" lvl="1" max_group="3" blue="true"> <!--  CRAFT MENU -->
+	<text>Forge a new weapon, for a price.</text>
+		<event load="FM2_NPC_CREATE"/>
+	</choice>
+	
+	<choice hidden="true" req="pilot" lvl="1" max_group="3" blue="false"> <!--  CRAFT MENU CHANGE THIS SO IT CALLS FM_NPC_CREATE_NONE EVENTUALLY, SO HE HAS DIFFERENT DIALOGUE FOR NO INGREDIENTS IF POSSIBLE -->
+	<text>Check Forge recipes.</text>
+		<event load="FM2_NPC_CREATE_NONE"/>
+	</choice>
+	
+	
+	<choice hidden="true" req="pilot" lvl="1" max_group="5" blue="false"> <!--  ATTACK -->
+		<text>Attack while his guard is down!!</text>
+		<event load="FM_ATTACK_SECOND"/>
+	</choice>
+
+	<choice hidden="true" req="pilot" lvl="1" max_group="6" blue="false"> <!--  Do nothing -->
+		<text>Decline his offer.</text>
+		<event>
+			<text>"Perhaps later, lad! I'm sure if you come back with some interesting things, I'll be able to find you something extraordinary."</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event> 
+
+
+	<!--  FORGEMASTER INITIAL CRAFT MENU: INGREDIENTS MET-->
+	<event name="FM2_NPC_CREATE">
+	<text>Ohoho, lad! My trusty forge Martha will be eating good tonight! These have potential, what do you say? Shall I create something interesting for you?" </text>
+	
+	<choice hidden="true" req="pilot" lvl="1" max_group="1" blue="true"> <!--  CRAFT MENU -->
+	<text>Forge a New Weapon, for a price.</text>
+		<event load="FM2_FORGE_WEAPON_LOAD"/>
+	</choice>
+	
+
+	<choice hidden="true" req="pilot" lvl="1" max_group="5" blue="false"> <!--  Do nothing -->
+		<text>Decline his offer.</text>
+		<event>
+			<text>Alastair looks crestfallen. "Come back later when you want me to make something awesome, lad. I guess."</text>
+			<choice>
+				<text>I changed my mind, show me what you can do.</text> 
+				<event load="FM2_FORGE_WEAPON_LOAD"/> 
+			</choice>
+			<choice>
+				<text>Do something onboard the ship.</text> 
+				<event load="STORAGE_CHECK"/>
+				
+			</choice>
+		</event>
+	</choice>
+	
+	
+	</event>
+
+
+<!-- <text>Ohohoh Lad! You don't appear to have the materials needed to feed my lovely forge, Martha. But you are welcome to review the recipes she likes baked best!</text>-->
+
+	<event name="FM2_NPC_CREATE_NONE">
+	<text>Ohoho, lad! Everyday is a new opportunity to learn! Interested in what I can create are ya? It's a shame you can't make anything right now, but you're free to browse the potential!" </text>
+	
+	<choice hidden="true" req="pilot" lvl="1" max_group="1" blue="false"> <!--  CRAFT MENU -->
+	<text>Review Recipes.</text>
+		<event load="FM2_FORGE_WEAPON_LOAD"/>
+	</choice>
+	
+
+	<choice hidden="true" req="pilot" lvl="1" max_group="5" blue="false"> <!--  Do nothing -->
+		<text>Decline his offer.</text>
+		<event>
+			<text>Alastair looks crestfallen. "Come back later when you want me to make something awesome, lad. I guess."</text>
+			<choice>
+				<text>I changed my mind, show me what you can do.</text> 
+				<event load="FM2_FORGE_WEAPON_LOAD"/> 
+			</choice>
+			<choice>
+				<text>Do something onboard the ship.</text> 
+				<event load="STORAGE_CHECK"/>
+				
+			</choice>
+		</event>
+	</choice>
+	
+	
+	</event>

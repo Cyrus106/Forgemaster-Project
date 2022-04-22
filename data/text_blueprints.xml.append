@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--PLAYER SHIP
+	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+		PLAYER SHIP
+	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	-->	
+
+<text name="text_PLAYER_SHIP_FORGEMASTER_1_class">Forgemaster Cruiser</text>
+<text name="text_PLAYER_SHIP_FORGEMASTER_1_name">Magma Heart</text>
+<text name="text_PLAYER_SHIP_FORGEMASTER_1_desc">The Forgemaster's Beloved cruiser for when he feels like going on Vacation.</text>
+<text name="ship_PLAYER_SHIP_FORGEMASTER_1_unlock">Defeat the legendary blacksmith to unlock this ship. </text>
+
+
+<text name="text_PLAYER_SHIP_GUNSHIP_FM_class">GunBomination</text>
+<text name="text_PLAYER_SHIP_GUNSHIP_FM_name">Gun Hydra</text>
+<text name="text_PLAYER_SHIP_GUNSHIP_FM_desc">A free mantis skipped the part of the Manual that explained the limitations of weapon usage, went crazy on the weapon budget, and broke the weapon systems. Thankfully, he had enough funds for a Prototype Drone system!</text>
+<text name="ship_PLAYER_SHIP_GUNSHIP_FM_unlock">Rescue an old friend of the blacksmith from a heavy debt. </text>
+
+<text name="text_PLAYER_SHIP_GUNSHIP_FM_2_class">GunBomination</text>
+<text name="text_PLAYER_SHIP_GUNSHIP_FM_2_name">Gun Cobra</text>
+<text name="text_PLAYER_SHIP_GUNSHIP_FM_2_desc">The same wealthy Free Mantis tried this crazy project again. He still overloaded the weapon systems. Thankfully, he had enough funds for a Prototype Teleporter, and setup plenty of beds on the now-inert weaponry inside the ship for crew to reside.</text>
+<text name="ship_PLAYER_SHIP_GUNSHIP_FM_2_unlock">Assist some slugs in claiming a heavy debt. </text>
+
+<text name="text_PLAYER_SHIP_GUNSHIP_FM_3_class">GunBomination</text>
+<text name="text_PLAYER_SHIP_GUNSHIP_FM_3_name">Gun TitanoBoa</text>
+<text name="text_PLAYER_SHIP_GUNSHIP_FM_3_desc">After his second failed project, the wealthy Free Mantis went on a drunken bender and decided the best course of action is to bring the weapons to the enemy. This ship is equipped for ramming speeds! Can physically attack the enemy ship.</text>
+<text name="ship_PLAYER_SHIP_GUNSHIP_FM_3_unlock">Unlock both Gunbomination A and B.</text>
+
+<text name="text_PLAYER_SHIP_GUNSHIP_ELITE_class">GunBomination II</text>
+<text name="text_PLAYER_SHIP_GUNSHIP_ELITE_name">Gun Hydra Awakened</text>
+<text name="text_PLAYER_SHIP_GUNSHIP_ELITE_desc">A free mantis installed some Aether Reactors and got some of the weapons working again! This ship is unholy mess to repair now, but is a force to be reckoned with.</text>
+<text name="ship_PLAYER_SHIP_GUNSHIP_ELITE_unlock">Beat the game with the Gunbomination Type C to unlock this ship.</text>
+
+
+<text name="text_PLAYER_SHIP_GUNSHIP_ELITE_2_class">GunBomination II</text>
+<text name="text_PLAYER_SHIP_GUNSHIP_ELITE_2_name">Gun Destitute</text>
+<text name="text_PLAYER_SHIP_GUNSHIP_ELITE_2_desc">Faced with bankruptcy from his failed ship design ventures, the bank has begun to repossess parts of his ships to pay off his unfathomable amounts of debt. This won't stop the now penniless Free Mantis from going out in a blaze of glory!</text>
+<text name="ship_PLAYER_SHIP_GUNSHIP_ELITE_2_unlock">Unlock both Gunbomination II A, and Forgemaster Cruiser A, to unlock this special ship.</text>
+
+<text name="text_PLAYER_SHIP_GUNSHIP_FUTURE_class">GunBomination III</text>
+<text name="text_PLAYER_SHIP_GUNSHIP_FUTURE_name">GunBom Anti-Harmony</text>
+<text name="text_PLAYER_SHIP_GUNSHIP_FUTURE_desc">Travelled to our current time via a literal wormhole, this is the only reality where Winchester's debt is cleared due to a mysterious Renegade generously paying off his debt. This ship hails from a future ravaged by the Harmony. What could've happened?</text>
+<text name="ship_PLAYER_SHIP_GUNSHIP_FUTURE_unlock">Change the course of history by preventing a future Multiverse-level conflict from ever occurring. Hope you have lots of scrap!</text>
+
+<text name="text_PLAYER_SHIP_FMTESTING_class">Ultimate Testing cruiser</text>
+<text name="text_PLAYER_SHIP_FMTESTING_name">The True Tester</text>
+<text name="text_PLAYER_SHIP_FMTESTING_desc">A cruiser made specifically for playtesting forgemaster, but can probably be used outside of it too. Has all the stuff you need to test things properly, but the UI is glitchy, be aware. FOR ANY GLITCHES WITH THIS THING PLEASE COMPLAIN TO DIGGER NOT CYRUS.</text>
+
+<text name="text_FM_GUNHYDRA_ENEMY_class">GunBomination Enemy</text>
+
+<text name="text_FM_SLUG_DEBT_COLLECT_class">Clairvoyant Debt Shark</text>
+
+<text name="text_MT_BOSS_ROCK_EXTREME_class">Renegade Cruiser</text>
+
+<text name="text_MT_BOSS_CLANSMAN_EXTREME_class">Renegade Cruiser</text>
+
+<text name="text_MT_BOSS_KESTREL_EXTREME_class">Renegade Cruiser</text>
+
+<text name="text_PLAYER_SHIP_FM_TWISTED_CRYSTAL_class">Twisted Renegade Cruiser</text>
+<text name="text_PLAYER_SHIP_FM_TWISTED_CRYSTAL_name">Evanescent Abyss</text>
+<text name="text_PLAYER_SHIP_FM_TWISTED_CRYSTAL_desc">Maxcrew: 12 - Clonebay, Doors, Drones, Engines, Oxygen, Piloting, Shields, Teleporter, Weapons,</text>
+
+<text name="text_PLAYER_SHIP_TWISTED_DUSK_class">Twisted Renegade Cruiser</text>
+<text name="text_PLAYER_SHIP_TWISTED_DUSK_name">Ripley's Apostasy</text>
+<text name="text_PLAYER_SHIP_TWISTED_DUSK_desc">Created by a Duskbringer with a very clear goal in mind: to set the Guinness Multiverse record for the most war crimes in one fight.</text>
+
+<text name="text_PLAYER_SHIP_TWISTED_CLAN_class">Twisted Renegade Cruiser</text>
+<text name="text_PLAYER_SHIP_TWISTED_CLAN_name">Flenser's Bargain</text>
+<text name="text_PLAYER_SHIP_TWISTED_CLAN_desc">These slugs ooze charisma when they 'politely' ask you to donate your organs. Its for a good cause!</text>
+
+<text name="text_PLAYER_SHIP_TWISTED_ENGI_class">Twisted Renegade Cruiser</text>
+<text name="text_PLAYER_SHIP_TWISTED_ENGI_name">Nanowar Within</text>
+<text name="text_PLAYER_SHIP_TWISTED_ENGI_desc">Countless nanomachines inhabit this vessel. Their relentless swarming allow them to boost all Engi crew significantly, scaling their health, damage, speed, and hazard resist with the amount of its special drones it has deployed.</text>
+
+<text name="text_PLAYER_SHIP_CRACKED_FM_BOSS_MANTIS1_class">Twisted Renegade Cruiser</text>
+<text name="text_PLAYER_SHIP_CRACKED_FM_BOSS_MANTIS1_name">Zerg Rush</text>
+<text name="text_PLAYER_SHIP_CRACKED_FM_BOSS_MANTIS1_desc">The Mantis went all in on their teleporter. It's about to get real cramped on the enemy ship! As a downside, the shields are capped at three bubbles.</text>
+
+<text name="text_PLAYER_SHIP_TWISTED_FEDERATION_class">Twisted Renegade Federation</text>
+<text name="text_PLAYER_SHIP_TWISTED_FEDERATION_name">Divine Intervention</text>
+<text name="text_PLAYER_SHIP_TWISTED_FEDERATION_desc">This ship is equipped with an extremely powerful Artillery Beam that tears through enemy ships. They forgot to buy a weapons system however, whoops!</text>
+
+<text name="text_PLAYER_SHIP_TWISTED_LOSTSUN_class">Twisted Renegade Lostsun</text>
+<text name="text_PLAYER_SHIP_TWISTED_LOSTSUN_name">Deja Mort</text>
+<text name="text_PLAYER_SHIP_TWISTED_LOSTSUN_desc">Maxcrew: 7 - Drones, Engines, Medbay, Mind Control, Oxygen, Piloting, Shields, Teleporter, Weapons,</text>
+
+<text name="text_PLAYER_SHIP_TWISTED_ZOLTAN_class">Twisted Renegade Zoltan</text>
+<text name="text_PLAYER_SHIP_TWISTED_ZOLTAN_name">Ministry's Fist</text>
+<text name="text_PLAYER_SHIP_TWISTED_ZOLTAN_desc">Zoltans are tired of being pushed around and being treated like living batteries. They may not be as experienced as peacekeepers, but these zoltans have a few tricks up their sleeves!</text>
+
+
+
+<!--BOSSES
+	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+		BOSSES
+	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	-->	
+
+
+<text name="text_FM_FORGEMASTER_CRUISER_ENEMY_class">Forgemaster Cruiser</text>
+
+<text name="system_temporal_title">Temporal Manipulator</text>
+<text name="system_temporal_desc">Changes the rate of time in one room. Upgrading increases duration and time dilation strength.</text>

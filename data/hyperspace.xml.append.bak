@@ -1,0 +1,2091 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FTL>
+
+<!--SHIPS
+	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+		SHIPS
+	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	-->
+	
+<mod:findLike type="ships">
+		<mod-append:ship name="PLAYER_SHIP_FORGEMASTER_1" b="false" c="false" />
+		<mod-append:ship name="PLAYER_SHIP_GUNSHIP_FM" b="true" c="true" />
+		<mod-append:ship name="PLAYER_SHIP_GUNSHIP_ELITE" b="true" c="false"/>
+		<mod-append:customShip name="PLAYER_SHIP_FORGEMASTER_1">
+			<hiddenAug>SHIP_MULTIVERSE</hiddenAug>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<crewLimit>8</crewLimit>
+			<crew>
+				<crusader room="0" name="James NotForgemaster" />
+				<rock room="2" name="Cyrus is" />
+				<rock room="18" name="not Human" />
+			</crew>
+		</mod-append:customShip>
+		
+		<mod-append:customShip name="PLAYER_SHIP_GUNSHIP_FM">
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<crewLimit>10</crewLimit>
+			<crew>
+				<warlord room="0" name="Winchester" />
+			</crew>
+		</mod-append:customShip>
+		<mod-append:customShip name="PLAYER_SHIP_GUNSHIP_FM_2">
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<crewLimit>20</crewLimit>
+			<crew>
+				<warlord room="0" name="Winchester" />
+			</crew>
+		</mod-append:customShip>
+		<mod-append:customShip name="PLAYER_SHIP_GUNSHIP_FM_3">
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>TRINKET_SPEED</hiddenAug>
+			<crewLimit>15</crewLimit>
+			<crew>
+				<warlord room="0" name="Winchester" />
+			</crew>
+		</mod-append:customShip>
+		<mod-append:customShip name="PLAYER_SHIP_GUNSHIP_ELITE">
+			<hiddenAug>TRINKET_WAR</hiddenAug>
+			<hiddenAug>COMIC_WAR</hiddenAug>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<crewLimit>10</crewLimit>
+			<crew>
+				<warlord room="0" name="Winchester" />
+			</crew>
+		</mod-append:customShip>
+		<mod-append:customShip name="PLAYER_SHIP_GUNSHIP_ELITE_2">
+			<hiddenAug>TRINKET_WAR</hiddenAug>
+			<hiddenAug>COMIC_WAR</hiddenAug>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<crewLimit>20</crewLimit>
+			<crew>
+				<warlord room="0" name="Winchester" />	
+			</crew>
+			</mod-append:customShip>
+		<mod-append:customShip name="FM_FORGEMASTER_CRUISER_ENEMY">
+			<shipIcons>
+				<shipIcon>icon_threat</shipIcon>
+				
+				<shipIcon>icon_auto</shipIcon>
+			</shipIcons>
+			<hpCap>50</hpCap>
+			<crew>
+				<crusader room="18" name="Officer 1"/>  <!--pilot-->
+				<crusader room="4" name="Officer 2"/>  
+				<crusader room="3" name="Officer 3"/>  <!--weapons-->
+				<crusader room="3" name="Andrew"/>
+				<crusader room="3" name="Ferrel"/>
+				<crusader room="0" name="Convy"/> <!--drones-->
+				<crusader room="2" name="Palermo"/> <!--engines-->
+				<crusader room="1" name="Pterodactyl"/> <!--shields-->
+			
+			</crew>
+		
+		</mod-append:customShip>
+		
+		</mod:findLike>
+
+<events> <!--BOSS BOX
+	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+		BOSS BOX
+	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	-->
+ <bossShip>FM_FORGEMASTER_CRUISER_ENEMY</bossShip>
+</events>
+
+
+<!-- FORGEMASTER EVENTS BEGIN \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	<events>  <!-- FORGING WEAPONS REQUIREMENTS (<req> lists) CHECK, READ COMMENTS ONE LINE BELOW -->	
+		   <!-- FOR EACH <req> line in these weapon lists:   declare the LIST name, which is checked for in events_storage.xml, and then the components of the list. Make sure type = "all" is declared so it knows everything in the list must be found! -->
+
+
+<!-- LASER WEAPON LIST! -->	
+<req name="FM_LASER_ANOMALY_1_LIST" type="all"> <!-- Frost Laser I + Anti-Bio Laser -->
+		<name>LASER_BIO</name>
+		<name>LASER_FROST_1</name>
+</req>
+
+				<!-- FLAMETHROWER SUB-LIST -->	
+<req name="FM_FLAMETHROWER_LIST1" type="all"> <!-- Fire Starter Laser + Ghost Crew -->	
+		<name>goul</name>
+		<name>LASER_FIRE</name>
+</req>
+
+<req name="FM_FLAMETHROWER_LIST2" type="all"> <!-- Fire Starter Laser + Ghost Crew -->	
+		<name>phantom</name>
+		<name>LASER_FIRE</name>
+</req>
+
+<req name="FM_FLAMETHROWER_LIST3" type="all"> <!-- Fire Starter Laser + Ghost Crew -->	
+		<name>mare</name>
+		<name>LASER_FIRE</name>
+</req>
+
+<req name="FM_FLAMETHROWER_LIST4" type="all"> <!-- Fire Starter Laser + Ghost Crew -->	
+		<name>wraith</name>
+		<name>LASER_FIRE</name>
+</req>
+				<!-- FLAMETHROWER SUB-LIST END -->	
+
+<req name="FM_PHASER_SUFFOCATION_LIST" type="all"> <!-- Lanius + PHASE II Ion -->	
+		<name>anaerobic</name>
+		<name>ION_PIERCE_2</name>
+</req>
+
+
+<!-- ION/ENERGY WEAPON LIST! -->	
+<req name="FM_ION_TRI_FIRE_LIST" type="all"> <!-- Fire Ion + Trion -->
+		<name>ION_FIRE</name>
+		<name>ION_TRI</name>
+</req>
+
+				<!-- ION CHAINGUN SUB-LIST  -->	
+<req name="FM_CHAINGUN_ION_LIST1" type="all"> <!-- Vulcan + Charge Ion -->
+		<name>ION_CHARGEGUN</name>
+		<name>LASER_CHAINGUN_2</name>
+</req>
+
+<req name="FM_CHAINGUN_ION_LIST2" type="all"> <!-- Vulcan + Charge Ion II -->
+		<name>ION_CHARGEGUN_2</name>
+		<name>LASER_CHAINGUN_2</name>
+</req>
+				<!-- ION CHAINGUN SUB-LIST END  -->	
+		
+		
+				<!-- DISC LAUNCHER SUB-LIST  -->	
+<req name="FM_DISC_LAUNCHER_LIST1" type="all"> <!-- Heavy Energy + Geb -->
+		<name>ENERGY_HULL</name>
+		<name>MINELAUNCHER_1</name>
+</req>
+
+<req name="FM_DISC_LAUNCHER_LIST2" type="all"> <!-- Heavy Energy + Osirus -->
+		<name>ENERGY_HULL</name>
+		<name>MINELAUNCHER_2</name>
+</req>
+
+<req name="FM_DISC_LAUNCHER_LIST3" type="all"> <!-- Heavy Energy + Sekhmet -->
+		<name>ENERGY_HULL</name>
+		<name>MINELAUNCHER_FIRE</name>
+</req>
+ 
+<req name="FM_DISC_LAUNCHER_LIST4" type="all"> <!-- Heavy Energy + Anubis -->
+		<name>ENERGY_HULL</name>
+		<name>MINELAUNCHER_STUN</name>
+</req>
+				<!-- DISC LAUNCHER SUB-LIST END -->	
+
+
+<!-- BEAM/PINPOINT WEAPON LIST! -->	
+<req name="FM_BEAM_MINING_2_LIST" type="all"> <!-- Mining Beam + Pike II -->	
+		<name>BEAM_MINING</name>
+		<name>BEAM_LONG_2</name>
+</req>
+
+<req name="FM_BEAM_PARTICLE_PIERCE_LIST" type="all"> <!-- Particle Beam + Pierce Beam -->	
+		<name>BEAM_PARTICLE</name>
+		<name>BEAM_PIERCE</name>
+</req>
+
+<req name="FM_BEAM_GUILLOTINE_CHAIN_LIST" type="all"> <!-- Murder Bot Dispersal + Fauchard Beam -->	
+		<name>NANOBOT_DEFENSE_SYSTEM</name>
+		<name>BEAM_GUILLOTINE</name>
+</req>
+
+<req name="FM_BEAM_EXPLOSION_LIST" type="all"> <!-- Small Bomb + Halberd -->	
+		<name>BOMB_1</name>
+		<name>BEAM_2</name>
+</req>
+
+<req name="FM_FOCUS_FUELED_1_LIST" type="all"> <!-- Cinquedea Focus + Hermes -->	
+		<name>FOCUS_CHAIN</name>
+		<name>MISSILES_3</name>
+</req>
+
+<req name="FM_FOCUS_ENERGY_1_LIST" type="all">  <!-- Dirk + Energy 1 -->	
+		<name>ENERGY_1</name>
+		<name>FOCUS_1</name>
+</req>
+
+<req name="FM_FOCUS_ENERGY_2_LIST" type="all"> <!-- Misericord Focus + Energy 2 -->	
+		<name>ENERGY_2</name>
+		<name>FOCUS_2</name>
+</req>
+
+<req name="FM_FOCUS_ENERGY_3_LIST" type="all"> <!-- Stiletto Focus + Energy 3 -->	
+		<name>ENERGY_3</name>
+		<name>FOCUS_3</name>
+</req>
+
+
+
+			
+<!-- FLAK WEAPON LIST! -->	
+
+<req name="FM_SHOTGUN_ANOMALY_LIST" type="all"> <!-- Frost Laser II + Toxic Flak -->
+		<name>SHOTGUN_TOXIC</name>
+		<name>LASER_FROST_2</name>
+</req>
+
+<req name="FM_SHOTGUN_ANOMALY_LIST_PLUS" type="all">  <!--Frost Laser II(+) + Toxic Flak -->
+		<name>SHOTGUN_TOXIC</name>
+		<name>LASER_FROST_2_PLAYER</name>
+</req>
+
+<req name="FM_SHOTGUN_ANOMALY_LIST_PLUS_2" type="all">  <!--Frost Laser II + Toxic Flak(+) -->
+		<name>SHOTGUN_TOXIC_PLAYER</name>
+		<name>LASER_FROST_2</name>
+</req>
+
+<req name="FM_SHOTGUN_ANOMALY_LIST_MEGA" type="all">  <!--Frost Laser II(+) + Toxic Flak(+) -->
+		<name>SHOTGUN_TOXIC_PLAYER</name>
+		<name>LASER_FROST_2_PLAYER</name>
+</req>
+
+				<!-- BRONZE FLAK SUB-LIST -->	
+<req name="FM_SHOTGUN_BRONZE_LIST_1" type="all"> <!-- Crystal Burst Mark I + Flak I -->
+		<name>SHOTGUN</name>
+		<name>CRYSTAL_BURST_1</name>
+</req>
+
+<req name="FM_SHOTGUN_BRONZE_LIST_2" type="all"> <!-- Elite Crystal Burst Mark I + Flak I -->
+		<name>SHOTGUN</name>
+		<name>CRYSTAL_BURST_1_RED</name>
+</req>
+
+<req name="FM_SHOTGUN_BRONZE_LIST_3" type="all"> <!-- Crystal Burst Mark II + Flak I -->
+		<name>SHOTGUN</name>
+		<name>CRYSTAL_BURST_2</name>
+</req>
+
+<req name="FM_SHOTGUN_BRONZE_LIST_4" type="all"> <!-- Elite Crystal Burst Mark II + Flak I -->
+		<name>SHOTGUN</name>
+		<name>CRYSTAL_BURST_2_RED</name>
+</req>
+
+<req name="FM_SHOTGUN_BRONZE_LIST_5" type="all"> <!-- Heavy Crystal Mark I + Flak I -->
+		<name>SHOTGUN</name>
+		<name>CRYSTAL_HEAVY_1</name>
+</req>
+
+<req name="FM_SHOTGUN_BRONZE_LIST_6" type="all"> <!-- Elite Heavy Crystal Mark I + Flak I -->
+		<name>SHOTGUN</name>
+		<name>CRYSTAL_HEAVY_1_RED</name>
+</req>
+
+<req name="FM_SHOTGUN_BRONZE_LIST_7" type="all"> <!-- Heavy Crystal Mark II + Flak I -->
+		<name>SHOTGUN</name>
+		<name>CRYSTAL_HEAVY_2</name>
+</req>
+
+<req name="FM_SHOTGUN_BRONZE_LIST_8" type="all"> <!-- Elite Heavy Crystal Mark II + Flak I -->
+		<name>SHOTGUN</name>
+		<name>CRYSTAL_HEAVY_2_RED</name>
+</req>
+
+<req name="FM_SHOTGUN_BRONZE_LIST_9" type="all"> <!-- Blunt Crystal Burst + Flak I -->
+		<name>SHOTGUN</name>
+		<name>CRYSTAL_STUN_BURST</name>
+</req>
+
+<req name="FM_SHOTGUN_BRONZE_LIST_10" type="all"> <!-- Elite Blunt Crystal Burst + Flak I -->
+		<name>SHOTGUN</name>
+		<name>CRYSTAL_STUN_BURST_RED</name>
+</req>
+
+<req name="FM_SHOTGUN_BRONZE_LIST_11" type="all"> <!-- Crystal Scatter + Flak I -->
+		<name>SHOTGUN</name>
+		<name>CRYSTAL_SHOTGUN</name>
+</req>
+
+<req name="FM_SHOTGUN_BRONZE_LIST_12" type="all"> <!-- Elite Crystal Scatter + Flak I -->
+		<name>SHOTGUN</name>
+		<name>CRYSTAL_SHOTGUN_RED</name>
+</req>
+
+<req name="FM_SHOTGUN_BRONZE_LIST_13" type="all"> <!-- Crystal Charger + Flak I -->
+		<name>SHOTGUN</name>
+		<name>CRYSTAL_CHARGEGUN</name>
+</req>
+
+<req name="FM_SHOTGUN_BRONZE_LIST_14" type="all"> <!-- Elite Crystal Charger + Flak I -->
+		<name>SHOTGUN</name>
+		<name>CRYSTAL_CHARGEGUN_RED</name>
+</req>
+
+<req name="FM_SHOTGUN_BRONZE_LIST_15" type="all"> <!-- Shard Launcher + Flak I -->
+		<name>SHOTGUN</name>
+		<name>MINELAUNCHER_CRYSTAL</name>
+</req>
+
+
+				<!-- BRONZE FLAK SUB-LIST END -->	
+
+
+
+<!-- EXPLOSIVE WEAPON LIST! -->	
+<req name="FM_MISSILES_BURST_FIRE_LIST" type="all"> <!-- Ares + Hades -->	
+		<name>MISSILES_4</name>
+		<name>MISSILES_FIRE</name>
+</req>
+
+<req name="FM_MISSILES_BURST_FIRE_LIST_PLUS" type="all"> <!-- Ares + Hades(+) -->	
+		<name>MISSILES_4</name>
+		<name>MISSILES_FIRE_PLAYER</name>
+</req>
+
+<req name="FM_MISSILES_BURST_FIRE_LIST_PLUS_TYPE2" type="all"> <!-- Ares(+) + Hades -->	
+		<name>MISSILES_4_PLAYER</name>
+		<name>MISSILES_FIRE</name>
+</req>
+
+<req name="FM_MISSILES_BURST_FIRE_LIST_MEGA_PLUS" type="all"> <!-- Ares(+) + Hades(+) -->	
+		<name>MISSILES_4_PLAYER</name>
+		<name>MISSILES_FIRE_PLAYER</name>
+</req>
+
+<req name="FM_MISSILES_CLOAK_STUN_LIST" type="all"> <!-- NYX + Stun Energy-->	
+		<name>MISSILES_CLOAK</name>
+		<name>ENERGY_STUN</name>
+</req>
+
+
+<req name="FM_BOMB_CRYSTAL_FIRE_LIST" type="all"> <!-- Fire Bomb + Crystal Bomb -->	
+		<name>BOMB_FIRE</name>
+		<name>BOMB_LOCK</name>
+</req>
+
+<req name="FM_BOMB_CRYSTAL_BIO_LIST" type="all"> <!-- Bio Bomb + Crystal Bomb -->	
+		<name>BOMB_BIO</name>
+		<name>BOMB_LOCK</name>
+</req>
+
+<req name="FM_BOMB_CRUNCH" type="all"> <!-- UNKNOWN COMPONENTS -->	
+		<name>BOMB_BIO</name>
+		<name>BOMB_LOCK</name>
+</req>
+
+
+<!-- ORGANIC WEAPON LIST! -->		
+
+	<!-- BASILISK SUB-LIST -->	
+<req name="FM_BEAM_BASILISK_LIST_1" type="all"> <!-- Elite Kernel + Leech Crew -->	
+		<name>leech</name>
+		<name>KERNEL_1_ELITE</name>
+</req>
+
+<req name="FM_BEAM_BASILISK_LIST_2" type="all"> <!-- Burst Elite Kernel + Leech Crew -->
+		<name>leech</name>
+		<name>KERNEL_2_ELITE</name>
+</req>
+
+<req name="FM_BEAM_BASILISK_LIST_3" type="all"> <!-- Heavy Elite Kernel + Leech Crew -->
+		<name>leech</name>
+		<name>KERNEL_HEAVY_ELITE</name>
+</req>
+
+<req name="FM_BEAM_BASILISK_LIST_4" type="all"> <!-- Hull Elite Kernel + Leech Crew -->
+		<name>leech</name>
+		<name>KERNEL_HULL_ELITE</name>
+</req>
+
+<req name="FM_BEAM_BASILISK_LIST_5" type="all"> <!-- Chain Elite Kernel + Leech Crew -->
+		<name>leech</name>
+		<name>KERNEL_CHAIN_ELITE</name>
+</req>
+
+<req name="FM_BEAM_BASILISK_LIST_6" type="all"> <!-- Charge Elite Kernel + Leech Crew -->
+		<name>leech</name>
+		<name>KERNEL_CHARGE_ELITE</name>
+</req>
+				<!-- BASILISK SUB-LIST END -->	
+
+
+</events> 
+
+
+<!-- CRAFTING MENU FOR STORAGE_CHECK PLEASE MAKE SURE THIS STAYS THE SAME AS THE "NPC CRAFT MENU!!"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+		 FORGEMASTER EVENTS
+	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	-->
+	<events> <!-- CRAFTING WEAPONS STORAGE CHECK EVENTS, Involves the Primary Menu, and Recursion checks to prevent infinite loops -->
+		<!-- AFTER THE <req>lists above are declared, the "STORAGE_CHECK_CREATE_XXX" code is needed, for taking you to the different sub menus of both selecting a weapon to craft, and crafting it!  -->	
+	 
+	 
+	 <!-- CRAFTING SELECT A WEAPON LIST! CREATE_LOAD IS WHAT ALLOWS THE STORAGE CHECK TO BE "recursive" and prevent infinite loops and crashes. CREATE_LOAD MUST call the regular version. so CREATE_LOAD must call CREATE, CREATE_LASER_LOAD must call CREATE_LASER, etc.
+	 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	
+			                  CRAFTING WEAPONS
+	 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	
+	 -->
+	<event name="STORAGE_CHECK_CREATE_LOAD">
+        <loadEvent>STORAGE_CHECK_CREATE</loadEvent>
+    </event>
+	<event name="STORAGE_CHECK_CREATE" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<!-- CRAFTING WEAPONS THE SIX INITIAL CATEGORIES, RECURSIVE CHECKS TO PREVENT CRASHES. THESE ARE CALLED IN EVENTS_STORAGE.XML
+	 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	
+			                  CRAFTING WEAPONS
+	 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	
+	 -->
+	
+	
+	
+	
+	<event name="STORAGE_CHECK_CREATE_LASER_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_LASER_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->	
+        <loadEvent>STORAGE_CHECK_CREATE_LASER</loadEvent>
+    </event>
+	<event name="STORAGE_CHECK_CREATE_LASER" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_LASER_ANOMALY_1" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_FM_FLAMETHROWER" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_FM_PHASER_SUFFOCATION" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	
+	<event name="STORAGE_CHECK_CREATE_ION_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_ION_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->	
+        <loadEvent>STORAGE_CHECK_CREATE_ION</loadEvent>
+    </event>
+	<event name="STORAGE_CHECK_CREATE_ION" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_FM_ENERGY_DISC1" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_FM_ENERGY_DISC2" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_FM_ENERGY_DISC3" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_FM_ENERGY_DISC4" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_FM_ENERGY_DISC1" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_FM_CHAINGUN_ION1" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_FM_CHAINGUN_ION2" recursive="true">
+        <checkCargo/>
+    </event>
+
+        
+	
+	
+	
+	<event name="STORAGE_CHECK_CREATE_BEAM_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_BEAM_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->	
+        <loadEvent>STORAGE_CHECK_CREATE_BEAM</loadEvent>
+    </event>
+	<event name="STORAGE_CHECK_CREATE_BEAM" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	
+	
+	<event name="STORAGE_CHECK_CREATE_FM_BEAM_MINING_2" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_FM_BEAM_PARTICLE_PIERCE" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_FM_BEAM_GUILLOTINE_CHAIN" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_PINPOINT_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_PINPOINT_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->	
+        <loadEvent>STORAGE_CHECK_CREATE_PINPOINT</loadEvent>
+    </event>
+	<event name="STORAGE_CHECK_CREATE_PINPOINT" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	
+	<event name="STORAGE_CHECK_CREATE_FM_FOCUS_FUELED_1" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_1" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_2" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_3" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	
+	<event name="STORAGE_CHECK_CREATE_FLAK_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_FLAK_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->	
+        <loadEvent>STORAGE_CHECK_CREATE_FLAK</loadEvent>
+    </event>
+	<event name="STORAGE_CHECK_CREATE_FLAK" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	
+	
+	<event name="STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY_MEGA" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY_PLUS" recursive="true">
+        <checkCargo/>
+    </event>
+
+	<event name="STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY_PLUS_2" recursive="true">
+        <checkCargo/>
+    </event>
+
+	<event name="STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY" recursive="true">
+        <checkCargo/>
+    </event>
+
+	<event name="STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE_LOAD">
+        <loadEvent>STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE</loadEvent>
+    </event>
+	<event name="STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE1" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_EXPLOSIVES_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_EXPLOSIVE_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->	
+        <loadEvent>STORAGE_CHECK_CREATE_EXPLOSIVES</loadEvent>
+    </event>
+	<event name="STORAGE_CHECK_CREATE_EXPLOSIVES" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_FM_MISSILES_BURST_FIRE" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_FM_MISSILES_CLOAK_STUN" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_FM_BOMB_CRYSTAL_FIRE" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_FM_BOMB_CRYSTAL_BIO" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="STORAGE_CHECK_CREATE_ORGANIC_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_ORGANIC_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->	
+        <loadEvent>STORAGE_CHECK_CREATE_ORGANIC</loadEvent>
+    </event>
+	<event name="STORAGE_CHECK_CREATE_ORGANIC" recursive="true">
+        <checkCargo/>
+    </event>
+
+	<event name="STORAGE_CHECK_CREATE_FM_BEAM_BASILISK" recursive="true">
+        <checkCargo/>
+    </event>
+
+
+	<event name="STORAGE_CHECK_CREATE_UPGRADE_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_UPGRADE_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->	
+        <loadEvent>STORAGE_CHECK_CREATE_UPGRADE</loadEvent>
+    </event>
+	<event name="STORAGE_CHECK_CREATE_UPGRADE" recursive="true">
+        <checkCargo/>
+    </event>
+
+	<event name="STORAGE_CHECK_UPGRADE_LISTFULL_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_UPGRADE_LISTFULL_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->	
+        <loadEvent>STORAGE_CHECK_UPGRADE_LISTFULL</loadEvent>
+    </event>
+	<event name="STORAGE_CHECK_UPGRADE_LISTFULL" recursive="true">
+        <checkCargo/>
+    </event>
+
+
+</events> 
+
+	<events>  <!-- Ingredient list Check for the Forge Mod. It includes: Do you have the ingredients? Which category of weapon do you have the ingredients for? -->	
+	
+<!-- Events list for the Forge Mod. It includes: Do you have the ingredients? Which category of weapon do you have the ingredients for? -->		
+	
+<req name="FM_LASER_FORGE_LIST" type="any"> <!-- Do you have the ingredients for a laser weapon? If so, light up the category option BLUE in the crafting category menu! -->	
+		<name>FM_LASER_ANOMALY_1_LIST</name>
+		<name>FM_FLAMETHROWER_LIST1</name>
+		<name>FM_FLAMETHROWER_LIST2</name>
+		<name>FM_FLAMETHROWER_LIST3</name>
+		<name>FM_FLAMETHROWER_LIST4</name>
+		<name>FM_PHASER_SUFFOCATION_LIST</name>
+</req>
+
+<req name="FM_ION_FORGE_LIST" type="any"> <!-- Do you have the ingredients for a Ion/Energy weapon? If so, light up the category option BLUE in the crafting category menu! -->	
+		<name>FM_ION_TRI_FIRE_LIST</name>	
+		<name>FM_DISC_LAUNCHER_LIST1</name>	
+		<name>FM_DISC_LAUNCHER_LIST2</name>	
+		<name>FM_DISC_LAUNCHER_LIST3</name>	
+		<name>FM_DISC_LAUNCHER_LIST4</name>	
+		<name>FM_CHAINGUN_ION_LIST1</name>	
+		<name>FM_CHAINGUN_ION_LIST2</name>	
+		
+</req>
+
+<req name="FM_BEAM_FORGE_LIST" type="any"> <!-- Do you have the ingredients for a Beam/Pinpoint weapon? If so, light up the category option BLUE in the crafting category menu! -->	
+		<name>FM_BEAM_MINING_2_LIST</name>	
+		<name>FM_BEAM_PARTICLE_PIERCE_LIST</name>	
+		<name>FM_BEAM_GUILLOTINE_CHAIN_LIST</name>
+		<name>FM_BEAM_EXPLOSION_LIST</name>
+		
+</req>
+
+<req name="FM_PINPOINT_FORGE_LIST" type="any"> <!-- Do you have the ingredients for a Beam/Pinpoint weapon? If so, light up the category option BLUE in the crafting category menu! -->	
+		<name>FM_FOCUS_FUELED_1_LIST</name>
+		<name>FM_FOCUS_ENERGY_1_LIST</name>
+		<name>FM_FOCUS_ENERGY_2_LIST</name>
+		<name>FM_FOCUS_ENERGY_3_LIST</name>
+		
+		
+</req>
+
+<req name="FM_FLAK_FORGE_LIST" type="any"> <!-- Do you have the ingredients for a Flak weapon? If so, light up the category option BLUE in the crafting category menu! -->	
+		<name>FM_SHOTGUN_ANOMALY_LIST</name>	
+		<name>FM_SHOTGUN_ANOMALY_LIST_PLUS</name>
+		<name>FM_SHOTGUN_ANOMALY_LIST_PLUS_2</name>
+		<name>FM_SHOTGUN_ANOMALY_LIST_MEGA</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_1</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_2</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_3</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_4</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_5</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_6</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_7</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_8</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_9</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_10</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_11</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_12</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_13</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_14</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_15</name>
+</req>
+
+<req name="FM_EXPLOSIVE_FORGE_LIST" type="any"> <!-- Do you have the ingredients for a Explosive weapon? If so, light up the category option BLUE in the crafting category menu! -->	
+		<name>FM_MISSILES_BURST_FIRE_LIST</name>	
+		<name>FM_MISSILES_BURST_FIRE_LIST_PLUS</name>
+		<name>FM_MISSILES_BURST_FIRE_LIST_PLUS_TYPE2</name>
+		<name>FM_MISSILES_BURST_FIRE_LIST_MEGA_PLUS</name>
+		<name>FM_MISSILES_CLOAK_STUN_LIST</name>	
+		<name>FM_BOMB_CRYSTAL_FIRE_LIST</name>	
+		<name>FM_BOMB_CRYSTAL_BIO_LIST</name>	
+		
+</req>
+
+<req name="FM_ORGANIC_FORGE_LIST" type="any"> <!-- Do you have the ingredients for a Organic weapon? If so, light up the category option BLUE in the crafting category menu! -->	
+		<name>FM_BEAM_BASILISK_LIST_1</name>
+		<name>FM_BEAM_BASILISK_LIST_2</name>
+		<name>FM_BEAM_BASILISK_LIST_3</name>
+		<name>FM_BEAM_BASILISK_LIST_4</name>
+		<name>FM_BEAM_BASILISK_LIST_5</name>
+		<name>FM_BEAM_BASILISK_LIST_6</name>	
+</req>
+
+<req name="FM_BEAM_BASILISK_FORGE_LIST" type="any"> <!-- Do you have the ingredients for the Basilisk? If so, light up the category option BLUE in the crafting category menu! -->	
+		<name>FM_BEAM_BASILISK_LIST_1</name>
+		<name>FM_BEAM_BASILISK_LIST_2</name>
+		<name>FM_BEAM_BASILISK_LIST_3</name>
+		<name>FM_BEAM_BASILISK_LIST_4</name>
+		<name>FM_BEAM_BASILISK_LIST_5</name>
+		<name>FM_BEAM_BASILISK_LIST_6</name>	
+</req>
+
+<req name="FM_SHOTGUN_BRONZE_LIST_FORGE" type="any"> <!-- Do you have the ingredients for a Bronze Flak ? If so, light up the category option BLUE in the crafting category menu! -->	
+		<name>FM_SHOTGUN_BRONZE_LIST_1</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_2</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_3</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_4</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_5</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_6</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_7</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_8</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_9</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_10</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_11</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_12</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_13</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_14</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_15</name>	
+</req>
+
+<req name="FM_SHOTGUN_BRONZE_LIST_UPGRADE" type="any"> <!-- Do you have a Bronze Flak weapon that can be upgraded ? If so, light up the category option WHITE in the crafting category menu! -->	
+		<name>FM_SHOTGUN_BRONZE</name>
+		<name>FM_SHOTGUN_INDIUM</name>
+		<name>FM_SHOTGUN_RHENIUM</name>
+		<name>FM_SHOTGUN_SILVER</name>
+		<name>FM_SHOTGUN_PALLADIUM</name>
+		<name>FM_SHOTGUN_IRIDIUM</name>
+		<name>FM_SHOTGUN_PLATINUM</name>
+		<name>FM_SHOTGUN_OSMIUM</name>
+		<name>FM_SHOTGUN_NOBELIUM</name>
+</req>
+
+
+<req name="FM_FORGE_LIST_CHECK" type="any"> <!-- If none are met, show the recipe list at the storage check! These are all ingredient checks -->	
+		<name>FM_LASER_ANOMALY_1_LIST</name> <!-- Laser Start-->	
+		<name>FM_FLAMETHROWER_LIST1</name>
+		<name>FM_FLAMETHROWER_LIST2</name>
+		<name>FM_FLAMETHROWER_LIST3</name>
+		<name>FM_FLAMETHROWER_LIST4</name>
+		<name>FM_PHASER_SUFFOCATION_LIST</name> <!-- Laser End-->
+		<name>FM_ION_TRI_FIRE_LIST</name> <!-- Ion Start-->
+		<name>FM_CHAINGUN_ION_LIST1</name>
+		<name>FM_CHAINGUN_ION_LIST2</name>
+		<name>FM_DISC_LAUNCHER_LIST1</name>
+		<name>FM_DISC_LAUNCHER_LIST2</name>
+		<name>FM_DISC_LAUNCHER_LIST3</name>
+		<name>FM_DISC_LAUNCHER_LIST4</name> 	<!-- Ion End-->
+		<name>FM_BEAM_MINING_2_LIST</name> 		<!-- Beam Start-->
+		<name>FM_BEAM_PARTICLE_PIERCE_LIST</name>
+		<name>FM_BEAM_GUILLOTINE_CHAIN_LIST</name>
+		<name>FM_BEAM_EXPLOSION_LIST</name>		<!-- Beam End-->
+		<name>FM_FOCUS_FUELED_1_LIST</name> <!-- Pinpoint Start-->
+		<name>FM_FOCUS_ENERGY_1_LIST</name> 
+		<name>FM_FOCUS_ENERGY_2_LIST</name>
+		<name>FM_FOCUS_ENERGY_3_LIST</name> <!-- Pinpoint End-->
+		<name>FM_MISSILES_BURST_FIRE_LIST</name> <!-- Explosive Start-->
+		<name>FM_MISSILES_BURST_FIRE_LIST_PLUS</name>
+		<name>FM_MISSILES_BURST_FIRE_LIST_PLUS_TYPE2</name>
+		<name>FM_MISSILES_BURST_FIRE_LIST_MEGA_PLUS</name>
+		<name>FM_MISSILES_CLOAK_STUN_LIST</name>
+		<name>FM_BOMB_CRYSTAL_FIRE_LIST</name>	
+		<name>FM_BOMB_CRYSTAL_BIO_LIST</name>	<!-- Explosive End--> 
+		<name>FM_SHOTGUN_ANOMALY_LIST</name>    <!-- Flak Start-->
+		<name>FM_SHOTGUN_ANOMALY_LIST_PLUS</name>
+		<name>FM_SHOTGUN_ANOMALY_LIST_PLUS_2</name>
+		<name>FM_SHOTGUN_ANOMALY_LIST_MEGA</name>
+		<name>FM_SHOTGUN_BRONZE_LIST_1</name>   <!-- Flak End-->
+		<name>FM_BEAM_BASILISK_LIST_1</name>    <!-- Organic Start-->
+		<name>FM_BEAM_BASILISK_LIST_2</name>
+		<name>FM_BEAM_BASILISK_LIST_3</name>
+		<name>FM_BEAM_BASILISK_LIST_4</name>
+		<name>FM_BEAM_BASILISK_LIST_5</name>
+		<name>FM_BEAM_BASILISK_LIST_6</name>    <!-- Organic End-->
+</req>
+
+
+	<!--storage check for the Parazonium, to make sure you are able to AMP it in the combat check -->	
+<req name="FM_FOCUS_FUELED_LIST" type="any">  <!--This check is used in my events_storage.xml, in the line [<mod:findName type = "event" name = "COMBAT_CHECK_REAL">] -->	
+		<name>FM_FOCUS_FUELED_1</name>
+		<name>FM_FOCUS_FUELED_2</name>
+		<name>FM_FOCUS_FUELED_3</name>
+		<name>FM_FOCUS_FUELED_4</name>
+		<name>FM_FOCUS_FUELED_5</name>
+</req>	
+
+	</events> 
+	
+	
+	
+	<!-- FORGEMASTER NPC CRAFT MENU \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+		 FORGEMASTER NPC CRAFT MENU
+	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	-->
+	<events>
+	<event name="FM_FORGE_WEAPON_LOAD">
+        <loadEvent>FM_FORGE_WEAPON</loadEvent>
+    </event>
+	<event name="FM_FORGE_WEAPON" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="FM_FORGE_WEAPON_LASER_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_LASER_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->	
+        <loadEvent>FM_FORGE_WEAPON_LASER</loadEvent>
+    </event>
+	<event name="FM_FORGE_WEAPON_LASER" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_LASER_ANOMALY_1" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_FLAMETHROWER" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_PHASER_SUFFOCATION" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	
+	<event name="FM_FORGE_WEAPON_ION_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_ION_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->	
+        <loadEvent>FM_FORGE_WEAPON_ION</loadEvent>
+    </event>
+	<event name="FM_FORGE_WEAPON_ION" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_DISC1" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_DISC2" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_DISC3" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_DISC4" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_DISC1" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_CHAINGUN_ION1" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_CHAINGUN_ION2" recursive="true">
+        <checkCargo/>
+    </event>
+
+        
+	
+	
+	
+	<event name="FM_FORGE_WEAPON_BEAM_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_BEAM_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->	
+        <loadEvent>FM_FORGE_WEAPON_BEAM</loadEvent>
+    </event>
+	<event name="FM_FORGE_WEAPON_BEAM" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_BEAM_MINING_2" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_BEAM_PARTICLE_PIERCE" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_BEAM_GUILLOTINE_CHAIN" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="FM_FORGE_WEAPON_PINPOINT_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_PINPOINT_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->	
+        <loadEvent>FM_FORGE_WEAPON_PINPOINT</loadEvent>
+    </event>
+	<event name="FM_FORGE_WEAPON_PINPOINT" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_FUELED_1" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_1" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_2" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_3" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	
+	<event name="FM_FORGE_WEAPON_FLAK_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_FLAK_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->	
+        <loadEvent>FM_FORGE_WEAPON_FLAK</loadEvent>
+    </event>
+	<event name="FM_FORGE_WEAPON_FLAK" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY_MEGA" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY_PLUS" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY_PLUS_2" recursive="true">
+        <checkCargo/>
+    </event>
+
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY" recursive="true">
+        <checkCargo/>
+    </event>
+
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE_LOAD">
+        <loadEvent>NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE</loadEvent>
+    </event>
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE1" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	
+	<event name="FM_FORGE_WEAPON_EXPLOSIVES_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_EXPLOSIVE_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->	
+        <loadEvent>FM_FORGE_WEAPON_EXPLOSIVES</loadEvent>
+    </event>
+	<event name="FM_FORGE_WEAPON_EXPLOSIVES" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_MISSILES_BURST_FIRE" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_MISSILES_CLOAK_STUN" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_BOMB_CRYSTAL_FIRE" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_BOMB_CRYSTAL_BIO" recursive="true">
+        <checkCargo/>
+    </event>
+	
+	<event name="FM_FORGE_WEAPON_ORGANIC_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_ORGANIC_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->	
+        <loadEvent>FM_FORGE_WEAPON_ORGANIC</loadEvent>
+    </event>
+	<event name="FM_FORGE_WEAPON_ORGANIC" recursive="true">
+        <checkCargo/>
+    </event>
+
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_BEAM_BASILISK" recursive="true">
+        <checkCargo/>
+    </event>
+
+
+	<event name="FM_FORGE_WEAPON_UPGRADE_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_UPGRADE_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->	
+        <loadEvent>FM_FORGE_WEAPON_UPGRADE</loadEvent>
+    </event>
+	<event name="FM_FORGE_WEAPON_UPGRADE" recursive="true">
+        <checkCargo/>
+    </event>
+
+	<event name="NPC_STORAGE_CHECK_UPGRADE_LISTFULL_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_UPGRADE_LISTFULL_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->	
+        <loadEvent>NPC_STORAGE_CHECK_UPGRADE_LISTFULL</loadEvent>
+    </event>
+	<event name="NPC_STORAGE_CHECK_UPGRADE_LISTFULL" recursive="true">
+        <checkCargo/>
+    </event>
+
+</events>
+
+
+	
+	
+	
+	<!-- FORGEMASTER NPC CRAFT MENU END \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+		 FORGEMASTER NPC CRAFT MENU
+	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	-->
+	
+		<!-- FORGEMASTER NPC CRAFT MENU END \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+		 FORGEMASTER NPC CRAFT MENU
+	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	-->
+	
+	
+    <events> <!-- Forgemaster event Story events -->
+	
+<req name="FORGEMASTER_BEACON_CHECK_MEET" type="all">
+	<req max_lvl="0">
+		<name>FORGEMASTER_HAS_MET</name>
+	</req>
+</req>
+
+<req name="FORGEMASTER_BEACON_CHECK_PHONE" type="any">
+	<req>
+		<name>FORGEMASTER_PHONE_CALL_CONFIRM</name>
+	</req>
+</req>
+
+<req name="FORGEMASTER_BEACON_CHECK_OTHER" type="all">
+	<req max_lvl="0">
+		<name>FORGEMASTER_IS_DEAD</name>
+	</req>
+</req>
+
+<event name="FORGEMASTER_PHONE_EVENT">
+       <removeItem>HIDDEN FORGEMASTER_PHONE_CALL_CONFIRM</removeItem>
+	</event>
+
+
+</events> 
+	<store> <!-- Forgemaster STORES-->
+
+<customStore id="FM_DEV">
+        <itemPurchaseLimit>2</itemPurchaseLimit>
+		<category type="WEAPONS">
+			<customTitle>FORGE MASTER DEV</customTitle>
+            <item>
+                <blueprint>FM_SHOP_FORGEMASTER_WEAPON_1</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>FM_SHOP_FORGEMASTER_WEAPON_2</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>FM_SHOP_FORGEMASTER_WEAPON_3</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+        </category>
+		<category type="WEAPONS">
+			<customTitle>FORGE MASTER DEV</customTitle>
+            <item>
+                <blueprint>FM_SHOP_FORGEMASTER_WEAPON_4</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item> 
+			<item>
+                <blueprint>FM_SHOP_FORGEMASTER_WEAPON_5</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    			
+            <item>
+                <blueprint>FM_SHOP_FORGEMASTER_WEAPON_6</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+        </category>
+    </customStore>
+</store>
+
+	
+	
+<!-- FORGEMASTER EVENTS END \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	
+		<!--Crew Abilities and Crew
+	\\\\\\\\\\\\\\\\\\\\\\\\\
+	         Crew Abilities and Crew
+			 CREW RELY ON:
+			 blueprints-hyperspace-animations
+	\\\\\\\\\\\\\\\\\\\\\\\\\
+	-->
+	<mod:findLike type="crew"> <!-- Acid crew -->	
+	<mod-append:race name="acid">
+		<maxHealth>150</maxHealth>
+		<repairSpeed>0</repairSpeed>
+		<canFight>false</canFight>
+		<canRepair>false</canRepair>
+		<canSabotage>true</canSabotage>
+		<canSuffocate>false</canSuffocate>
+		<fireDamageMultiplier>4</fireDamageMultiplier>
+		<canMan>false</canMan>
+		<noClone>true</noClone>
+		<noSlot>true</noSlot>
+		<controllable>false</controllable>
+		<canPhaseThroughDoors>true</canPhaseThroughDoors>
+		<moveSpeedMultiplier>0.05</moveSpeedMultiplier>
+		<sabotageSpeedMultiplier>0.4</sabotageSpeedMultiplier>
+		<damageMultiplier>0</damageMultiplier>
+		<damageTakenMultiplier>0.5</damageTakenMultiplier> 
+		<animBase>mantis</animBase>
+		<deathSounds>
+			<deathSound>mantisDeath</deathSound>
+		</deathSounds>
+		<shootingSounds>
+			<shootingSound>mantisSpit1</shootingSound>
+			<shootingSound>mantisSpit2</shootingSound>
+			<shootingSound>mantisSpit3</shootingSound>
+		</shootingSounds>
+		<powerEffect>
+			<cooldown>0</cooldown>
+			<powerSounds>
+				<finishSound>mantisSplat1</finishSound>
+				<finishSound>mantisSplat2</finishSound>
+				<finishSound>mantisSplat3</finishSound>
+			</powerSounds>
+			<persDamage>12</persDamage>
+			<friendlyFire>true</friendlyFire>
+			<shipFriendlyFire>true</shipFriendlyFire>
+			
+			<buttonText>Corrosion</buttonText>
+			<tooltip>Burns through the hull every 10 seconds, does passive damage to crew in the same room constantly</tooltip>
+			<cooldownColor r="171" g="223" b="255"/>
+			<activateWhenReady enemiesOnly="false">true</activateWhenReady>
+			</powerEffect>
+		<passiveStatBoosts>   
+			
+         <statBoost name="trueHealAmount">
+                    <boostType>FLAT</boostType>
+                    <amount>-1</amount>
+                    <shipTarget>CURRENT_ROOM</shipTarget>
+                    <crewTarget>ALL</crewTarget>
+                    <priority>999999</priority>
+                </statBoost>
+				  <statBoost name="trueHealAmount">
+                    <boostType>FLAT</boostType>
+                    <amount>-9999999</amount>
+					<affectsSelf>true</affectsSelf>
+                    <shipTarget>PLAYER_SHIP</shipTarget>
+                    <crewTarget>ALL</crewTarget>
+					  <priority>999999</priority>
+						<whiteList>
+							<acid/>
+							</whiteList>
+                  
+								</statBoost>
+		 <statBoost name="moveSpeedMultiplier">
+           	<boostType>MULT</boostType>
+			<amount>0.5</amount>
+			<shipTarget>CURRENT_ROOM</shipTarget>
+            <crewTarget>ALL</crewTarget>
+            <priority>999999</priority>
+        </statBoost>
+	
+		
+		 <statBoost name="canMan">
+           	<boostType>SET</boostType>
+			<value>false</value>
+			<shipTarget>CURRENT_ROOM</shipTarget>
+            <crewTarget>ALL</crewTarget>
+            <priority>999999</priority>
+        </statBoost>
+		</passiveStatBoosts>  	
+			
+		
+		<hasDeathExplosion>true</hasDeathExplosion>
+		
+		<deathEffect>
+			<spawnCrew>
+						<number>2</number>
+						<race>engi</race>
+					</spawnCrew>
+		</deathEffect>
+		
+		<deathSounds>
+			<deathSound>energyDeath</deathSound>
+		</deathSounds>
+	
+	</mod-append:race>
+	</mod:findLike>
+	
+	<mod:findLike type="crew"> <!-- Hull Repair crew -->	
+	<mod-append:race name="fm_repair_hull">
+			<maxHealth>100</maxHealth>
+			<repairSpeed>0</repairSpeed>
+			<canFight>false</canFight>
+			<canRepair>false</canRepair>
+			<canSabotage>false</canSabotage>
+			<canSuffocate>false</canSuffocate>
+			<fireDamageMultiplier>0</fireDamageMultiplier>
+			<canMan>false</canMan>
+			<noClone>true</noClone>
+			<noSlot>true</noSlot>
+			<controllable>false</controllable>
+			<canPhaseThroughDoors>true</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+			<damageMultiplier>0</damageMultiplier>
+			<damageTakenMultiplier>0.0</damageTakenMultiplier> 
+			<animBase>mantis</animBase>
+			<deathSounds>
+				<deathSound>energyDeath</deathSound>
+			</deathSounds>
+			<shootingSounds>
+				<shootingSound>mantisSpit1</shootingSound>
+				<shootingSound>mantisSpit2</shootingSound>
+				<shootingSound>mantisSpit3</shootingSound>
+			</shootingSounds>
+			<deathEffect>
+				<sysDamage>0</sysDamage>
+				<persDamage>0</persDamage>
+				<damage>-1</damage>
+				<friendlyFire>true</friendlyFire>
+				<shipFriendlyFire>true</shipFriendlyFire>
+			</deathEffect>
+				
+			
+		
+		</mod-append:race>
+		</mod:findLike>
+
+	<mod:findLike type="crew"> <!-- Ebony Ion crew -->
+		<mod-append:race name="fm_ion_instant_2">
+			<maxHealth>100</maxHealth>
+			<repairSpeed>0</repairSpeed>
+			<canFight>false</canFight>
+			<canRepair>false</canRepair>
+			<canSabotage>false</canSabotage>
+			<canSuffocate>false</canSuffocate>
+			<fireDamageMultiplier>0</fireDamageMultiplier>
+			<canMan>false</canMan>
+			<noClone>true</noClone>
+			<noSlot>true</noSlot>
+			<controllable>false</controllable>
+			<canPhaseThroughDoors>true</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+			<damageMultiplier>0</damageMultiplier>
+			<damageTakenMultiplier>0.0</damageTakenMultiplier> 
+			<animBase>mantis</animBase>
+			<deathSounds>
+				<deathSound>energyDeath</deathSound>
+			</deathSounds>
+			<shootingSounds>
+				<shootingSound>mantisSpit1</shootingSound>
+				<shootingSound>mantisSpit2</shootingSound>
+				<shootingSound>mantisSpit3</shootingSound>
+			</shootingSounds>
+			<deathEffect>
+				<ion>2</ion>
+				<stun>3</stun>
+				<friendlyFire>true</friendlyFire>
+				<shipFriendlyFire>true</shipFriendlyFire>
+			</deathEffect>
+				
+			
+		
+		</mod-append:race>
+		</mod:findLike>
+		
+	<mod:findLike type="crew"> <!-- Hemlock Ion crew -->
+		<mod-append:race name="fm_ion_instant_3">
+			<maxHealth>100</maxHealth>
+			<repairSpeed>0</repairSpeed>
+			<canFight>false</canFight>
+			<canRepair>false</canRepair>
+			<canSabotage>false</canSabotage>
+			<canSuffocate>false</canSuffocate>
+			<fireDamageMultiplier>0</fireDamageMultiplier>
+			<canMan>false</canMan>
+			<noClone>true</noClone>
+			<noSlot>true</noSlot>
+			<controllable>false</controllable>
+			<canPhaseThroughDoors>true</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+			<damageMultiplier>0</damageMultiplier>
+			<damageTakenMultiplier>0.0</damageTakenMultiplier> 
+			<animBase>mantis</animBase>
+			<deathSounds>
+				<deathSound>energyDeath</deathSound>
+			</deathSounds>
+			<shootingSounds>
+				<shootingSound>mantisSpit1</shootingSound>
+				<shootingSound>mantisSpit2</shootingSound>
+				<shootingSound>mantisSpit3</shootingSound>
+			</shootingSounds>
+			<deathEffect>
+				<ion>3</ion>
+				<stun>5</stun>
+				<friendlyFire>true</friendlyFire>
+				<shipFriendlyFire>true</shipFriendlyFire>
+			</deathEffect>
+				
+			
+		
+		</mod-append:race>
+		</mod:findLike>
+		
+	<mod:findLike type="crew"> <!-- Green Heart Ion crew -->
+		<mod-append:race name="fm_ion_instant_4">
+			<maxHealth>100</maxHealth>
+			<repairSpeed>0</repairSpeed>
+			<canFight>false</canFight>
+			<canRepair>false</canRepair>
+			<canSabotage>false</canSabotage>
+			<canSuffocate>false</canSuffocate>
+			<fireDamageMultiplier>0</fireDamageMultiplier>
+			<canMan>false</canMan>
+			<noClone>true</noClone>
+			<noSlot>true</noSlot>
+			<controllable>false</controllable>
+			<canPhaseThroughDoors>true</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+			<damageMultiplier>0</damageMultiplier>
+			<damageTakenMultiplier>0.0</damageTakenMultiplier> 
+			<animBase>mantis</animBase>
+			<deathSounds>
+				<deathSound>energyDeath</deathSound>
+			</deathSounds>
+			<shootingSounds>
+				<shootingSound>mantisSpit1</shootingSound>
+				<shootingSound>mantisSpit2</shootingSound>
+				<shootingSound>mantisSpit3</shootingSound>
+			</shootingSounds>
+			<deathEffect>
+				<ion>4</ion>
+				<stun>6</stun>
+				<friendlyFire>true</friendlyFire>
+				<shipFriendlyFire>true</shipFriendlyFire>
+			</deathEffect>
+				
+			
+		
+		</mod-append:race>
+		</mod:findLike>
+			
+	<mod:findLike type="crew"> <!-- Valefor Explosion crew -->
+		<mod-append:race name="fm_explode_instant">
+			<maxHealth>75</maxHealth>
+			<repairSpeed>0</repairSpeed>
+			<canFight>false</canFight>
+			<canRepair>false</canRepair>
+			<canSabotage>false</canSabotage>
+			<canSuffocate>false</canSuffocate>
+			<fireDamageMultiplier>0</fireDamageMultiplier>
+			<canMan>false</canMan>
+			<noClone>true</noClone>
+			<noSlot>true</noSlot>
+			<controllable>false</controllable>
+			<canPhaseThroughDoors>true</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+			<damageMultiplier>0</damageMultiplier>
+			<damageTakenMultiplier>0.0</damageTakenMultiplier> 
+			<animBase>mantis</animBase>
+		<deathSounds>
+			<deathSound>explosion_heavy</deathSound>
+		</deathSounds>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
+		<hasDeathExplosion>true</hasDeathExplosion>
+		<deathEffect>
+			<damage>1</damage>
+				<breachChance>2</breachChance>
+				<stun>6</stun>
+				<friendlyFire>true</friendlyFire>
+				<shipFriendlyFire>true</shipFriendlyFire>
+		</deathEffect>
+				
+		</mod-append:race>
+		</mod:findLike>
+	
+	<mod:findLike type="crew"> <!-- Rebel Ripper Crew -->
+		<mod-append:race name="fm_human_rip">
+			<maxHealth>100</maxHealth>
+			<repairSpeed>0</repairSpeed>
+			<canFight>false</canFight>
+			<canRepair>false</canRepair>
+			<canSabotage>false</canSabotage>
+			<canSuffocate>false</canSuffocate>
+			<fireDamageMultiplier>0</fireDamageMultiplier>
+			<canMan>false</canMan>
+			<noClone>true</noClone>
+			<noSlot>true</noSlot>
+			<controllable>false</controllable>
+			<canPhaseThroughDoors>true</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+			<damageMultiplier>0</damageMultiplier>
+			<damageTakenMultiplier>0.0</damageTakenMultiplier> 
+			<animBase>mantis</animBase>
+			<powerEffect>
+			<cooldown>0</cooldown>
+			<jumpCooldown>full</jumpCooldown>
+			<powerCharges>1</powerCharges>
+			<affectsSelf>true</affectsSelf>
+			<activateWhenReady enemiesOnly="false">true</activateWhenReady>       
+			<powerSounds>
+				<finishSound>spiderRoar</finishSound> <!--needs unique sfx-->
+			</powerSounds>
+			<buttonText>RACISM CHECK</buttonText>
+			<cooldownColor r="135" g="201" b="65"/>
+				<cooldownColor r="215" g="165" b="230"/>
+				<finishSounds>
+					<finishSound>mantisSplat1</finishSound>
+					<finishSound>mantisSplat2</finishSound>
+					<finishSound>mantisSplat3</finishSound>
+				</finishSounds>
+				<enemyHealth>-180.0</enemyHealth>  
+					<whiteList>
+							<human/>
+							<rebel/>
+							<rebelmedic/>
+							<engineer/>
+							<medic/>
+							<mfk/>
+							<soldier/>
+							<legionpyro/>
+							<legion/>
+							<tully/>
+							<detective/>
+							<vance/>
+							<jerry/>
+							<jerryg/>
+							<ponyj/>
+							<nemesis/>
+							<nemesismfk/>
+							<angel/>
+							<fm_human_rip/>
+							</whiteList>
+		</powerEffect>
+			<deathSounds>
+				<deathSound>energyDeath</deathSound>
+			</deathSounds>
+			<shootingSounds>
+				<shootingSound>mantisSpit1</shootingSound>
+				<shootingSound>mantisSpit2</shootingSound>
+				<shootingSound>mantisSpit3</shootingSound>
+			</shootingSounds>
+			
+				
+			
+		
+		</mod-append:race>
+		</mod:findLike>
+	
+	<mod:findLike type="crew"> <!-- Holy Shit Permutation 1, 1 hull damage -->
+		<mod-append:race name="fm_holy1">
+			<maxHealth>10</maxHealth>
+			<repairSpeed>0</repairSpeed>
+			<canFight>false</canFight>
+			<canRepair>false</canRepair>
+			<canSabotage>false</canSabotage>
+			<canSuffocate>false</canSuffocate>
+			<fireDamageMultiplier>0</fireDamageMultiplier>
+			<canMan>false</canMan>
+			<noClone>true</noClone>
+			<noSlot>true</noSlot>
+			<controllable>false</controllable>
+			<canPhaseThroughDoors>true</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+			<damageMultiplier>0</damageMultiplier>
+			<damageTakenMultiplier>0.0</damageTakenMultiplier> 
+			<animBase>mantis</animBase>
+		<deathSounds>
+			<deathSound>explosion_heavy</deathSound>
+		</deathSounds>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
+		<hasDeathExplosion>true</hasDeathExplosion>
+		<deathEffect>
+			<damage>1</damage>
+				<!--<breachChance>2</breachChance>
+				<stun>6</stun>
+				<friendlyFire>true</friendlyFire>
+				<shipFriendlyFire>true</shipFriendlyFire>-->
+		</deathEffect>
+				
+		</mod-append:race>
+		</mod:findLike>
+	
+	<mod:findLike type="crew"> <!-- Holy Shit Permutation 2, 1 ion damage -->
+		<mod-append:race name="fm_holy2">
+			<maxHealth>10</maxHealth>
+			<repairSpeed>0</repairSpeed>
+			<canFight>false</canFight>
+			<canRepair>false</canRepair>
+			<canSabotage>false</canSabotage>
+			<canSuffocate>false</canSuffocate>
+			<fireDamageMultiplier>0</fireDamageMultiplier>
+			<canMan>false</canMan>
+			<noClone>true</noClone>
+			<noSlot>true</noSlot>
+			<controllable>false</controllable>
+			<canPhaseThroughDoors>true</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+			<damageMultiplier>0</damageMultiplier>
+			<damageTakenMultiplier>0.0</damageTakenMultiplier> 
+			<animBase>mantis</animBase>
+		<deathSounds>
+			<deathSound>explosion_heavy</deathSound>
+		</deathSounds>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
+		<hasDeathExplosion>true</hasDeathExplosion>
+		<deathEffect>
+			<ion>1</ion>
+				<!--<breachChance>2</breachChance>
+				<stun>6</stun>
+				<friendlyFire>true</friendlyFire>
+				<shipFriendlyFire>true</shipFriendlyFire>-->
+		</deathEffect>
+				
+		</mod-append:race>
+		</mod:findLike>
+		
+	<mod:findLike type="crew"> <!-- Holy Shit Permutation 3, 1 crew damage -->
+		<mod-append:race name="fm_holy3">
+			<maxHealth>10</maxHealth>
+			<repairSpeed>0</repairSpeed>
+			<canFight>false</canFight>
+			<canRepair>false</canRepair>
+			<canSabotage>false</canSabotage>
+			<canSuffocate>false</canSuffocate>
+			<fireDamageMultiplier>0</fireDamageMultiplier>
+			<canMan>false</canMan>
+			<noClone>true</noClone>
+			<noSlot>true</noSlot>
+			<controllable>false</controllable>
+			<canPhaseThroughDoors>true</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+			<damageMultiplier>0</damageMultiplier>
+			<damageTakenMultiplier>0.0</damageTakenMultiplier> 
+			<animBase>mantis</animBase>
+		<deathSounds>
+			<deathSound>explosion_heavy</deathSound>
+		</deathSounds>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
+		<hasDeathExplosion>true</hasDeathExplosion>
+		<deathEffect>
+			<persDamage>1</persDamage>
+				<!--<breachChance>2</breachChance>
+				<stun>6</stun>
+				<friendlyFire>true</friendlyFire>
+				<shipFriendlyFire>true</shipFriendlyFire>-->
+		</deathEffect>
+				
+		</mod-append:race>
+		</mod:findLike>
+		
+	<mod:findLike type="crew"> <!-- Holy Shit Permutation 4, 1 system damage -->
+		<mod-append:race name="fm_holy4">
+			<maxHealth>10</maxHealth>
+			<repairSpeed>0</repairSpeed>
+			<canFight>false</canFight>
+			<canRepair>false</canRepair>
+			<canSabotage>false</canSabotage>
+			<canSuffocate>false</canSuffocate>
+			<fireDamageMultiplier>0</fireDamageMultiplier>
+			<canMan>false</canMan>
+			<noClone>true</noClone>
+			<noSlot>true</noSlot>
+			<controllable>false</controllable>
+			<canPhaseThroughDoors>true</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+			<damageMultiplier>0</damageMultiplier>
+			<damageTakenMultiplier>0.0</damageTakenMultiplier> 
+			<animBase>mantis</animBase>
+		<deathSounds>
+			<deathSound>explosion_heavy</deathSound>
+		</deathSounds>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
+		<hasDeathExplosion>true</hasDeathExplosion>
+		<deathEffect>
+		<sysDamage>1</sysDamage>
+				<!--<breachChance>2</breachChance>
+				<stun>6</stun>
+				<friendlyFire>true</friendlyFire>
+				<shipFriendlyFire>true</shipFriendlyFire>-->
+		</deathEffect>
+				
+		</mod-append:race>
+		</mod:findLike>
+		
+	<mod:findLike type="crew"> <!-- Holy Shit Permutation 5, Fire -->
+		<mod-append:race name="fm_holy5">
+			<maxHealth>10</maxHealth>
+			<repairSpeed>0</repairSpeed>
+			<canFight>false</canFight>
+			<canRepair>false</canRepair>
+			<canSabotage>false</canSabotage>
+			<canSuffocate>false</canSuffocate>
+			<fireDamageMultiplier>0</fireDamageMultiplier>
+			<canMan>false</canMan>
+			<noClone>true</noClone>
+			<noSlot>true</noSlot>
+			<controllable>false</controllable>
+			<canPhaseThroughDoors>true</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+			<damageMultiplier>0</damageMultiplier>
+			<damageTakenMultiplier>0.0</damageTakenMultiplier> 
+			<animBase>mantis</animBase>
+		<deathSounds>
+			<deathSound>explosion_heavy</deathSound>
+		</deathSounds>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
+		<hasDeathExplosion>true</hasDeathExplosion>
+		<deathEffect>
+			<fireChance>10</fireChance>
+				<!--<breachChance>2</breachChance>
+				<stun>6</stun>
+				<friendlyFire>true</friendlyFire>
+				<shipFriendlyFire>true</shipFriendlyFire>-->
+		</deathEffect>
+				
+		</mod-append:race>
+		</mod:findLike>
+		
+	<mod:findLike type="crew"> <!-- Holy Shit Permutation 6, Breach -->
+		<mod-append:race name="fm_holy6">
+			<maxHealth>10</maxHealth>
+			<repairSpeed>0</repairSpeed>
+			<canFight>false</canFight>
+			<canRepair>false</canRepair>
+			<canSabotage>false</canSabotage>
+			<canSuffocate>false</canSuffocate>
+			<fireDamageMultiplier>0</fireDamageMultiplier>
+			<canMan>false</canMan>
+			<noClone>true</noClone>
+			<noSlot>true</noSlot>
+			<controllable>false</controllable>
+			<canPhaseThroughDoors>true</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+			<damageMultiplier>0</damageMultiplier>
+			<damageTakenMultiplier>0.0</damageTakenMultiplier> 
+			<animBase>mantis</animBase>
+		<deathSounds>
+			<deathSound>explosion_heavy</deathSound>
+		</deathSounds>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
+		<hasDeathExplosion>true</hasDeathExplosion>
+		<deathEffect>
+			<breachChance>10</breachChance>
+		
+		</deathEffect>
+				
+		</mod-append:race>
+		</mod:findLike>
+		
+	<mod:findLike type="crew"> <!-- Holy Shit Permutation 7, 3 crew, Stun 300 seconds -->
+		<mod-append:race name="fm_holy7">
+			<maxHealth>10</maxHealth>
+			<repairSpeed>0</repairSpeed>
+			<canFight>false</canFight>
+			<canRepair>false</canRepair>
+			<canSabotage>false</canSabotage>
+			<canSuffocate>false</canSuffocate>
+			<fireDamageMultiplier>0</fireDamageMultiplier>
+			<canMan>false</canMan>
+			<noClone>true</noClone>
+			<noSlot>true</noSlot>
+			<controllable>false</controllable>
+			<canPhaseThroughDoors>true</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+			<damageMultiplier>0</damageMultiplier>
+			<damageTakenMultiplier>0.0</damageTakenMultiplier> 
+			<animBase>mantis</animBase>
+		<deathSounds>
+			<deathSound>explosion_heavy</deathSound>
+		</deathSounds>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
+		<hasDeathExplosion>true</hasDeathExplosion>
+		<deathEffect>
+			<persDamage>3</persDamage>
+			<stun>300</stun>
+				<!--<breachChance>2</breachChance>
+				<stun>6</stun>
+				<friendlyFire>true</friendlyFire>
+				<shipFriendlyFire>true</shipFriendlyFire>-->
+		</deathEffect>
+				
+		</mod-append:race>
+		</mod:findLike>
+		
+	<mod:findLike type="crew"> <!-- Holy Shit Permutation 8, 2 damage each -->
+		<mod-append:race name="fm_holy8">
+			<maxHealth>10</maxHealth>
+			<repairSpeed>0</repairSpeed>
+			<canFight>false</canFight>
+			<canRepair>false</canRepair>
+			<canSabotage>false</canSabotage>
+			<canSuffocate>false</canSuffocate>
+			<fireDamageMultiplier>0</fireDamageMultiplier>
+			<canMan>false</canMan>
+			<noClone>true</noClone>
+			<noSlot>true</noSlot>
+			<controllable>false</controllable>
+			<canPhaseThroughDoors>true</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+			<damageMultiplier>0</damageMultiplier>
+			<damageTakenMultiplier>0.0</damageTakenMultiplier> 
+			<animBase>mantis</animBase>
+		<deathSounds>
+			<deathSound>explosion_heavy</deathSound>
+		</deathSounds>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
+		<hasDeathExplosion>true</hasDeathExplosion>
+		<deathEffect>
+			<damage>2</damage>
+			<ion>2</ion>
+			<persDamage>2</persDamage>
+				<!--<breachChance>2</breachChance>
+				<stun>6</stun>
+				<friendlyFire>true</friendlyFire>
+				<shipFriendlyFire>true</shipFriendlyFire>-->
+		</deathEffect>
+				
+		</mod-append:race>
+		</mod:findLike>
+		
+	<mod:findLike type="crew"> <!-- Holy Shit Permutation 9, 10 hull damage -->
+		<mod-append:race name="fm_holy9">
+			<maxHealth>10</maxHealth>
+			<repairSpeed>0</repairSpeed>
+			<canFight>false</canFight>
+			<canRepair>false</canRepair>
+			<canSabotage>false</canSabotage>
+			<canSuffocate>false</canSuffocate>
+			<fireDamageMultiplier>0</fireDamageMultiplier>
+			<canMan>false</canMan>
+			<noClone>true</noClone>
+			<noSlot>true</noSlot>
+			<controllable>false</controllable>
+			<canPhaseThroughDoors>true</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+			<damageMultiplier>0</damageMultiplier>
+			<damageTakenMultiplier>0.0</damageTakenMultiplier> 
+			<animBase>mantis</animBase>
+		<deathSounds>
+			<deathSound>explosion_heavy</deathSound>
+		</deathSounds>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
+		<hasDeathExplosion>true</hasDeathExplosion>
+		<deathEffect>
+			<damage>10</damage>
+				<!--<breachChance>2</breachChance>
+				<stun>6</stun>
+				<friendlyFire>true</friendlyFire>
+				<shipFriendlyFire>true</shipFriendlyFire>-->
+		</deathEffect>
+				
+		</mod-append:race>
+		</mod:findLike>
+		
+	<mod:findLike type="crew"> <!-- The Forgemaster Crew -->
+		<mod-append:race name="fm_forgemasterperson">
+			<maxHealth>200</maxHealth>
+			<repairSpeed>3</repairSpeed>
+			<canFight>true</canFight>
+			<canRepair>true</canRepair>
+			<canSabotage>true</canSabotage>
+			<canSuffocate>true</canSuffocate>
+			<damageMultiplier>3.0</damageMultiplier>
+			<rangedDamageMultiplier>0.5</rangedDamageMultiplier>
+			<damageTakenMultiplier>0.5</damageTakenMultiplier>
+			<suffocationModifier>0.5</suffocationModifier>
+			<fireDamageMultiplier>0.0</fireDamageMultiplier>
+			<stunMultiplier>0.01</stunMultiplier>
+			<fireRepairMultiplier>5.0</fireRepairMultiplier>
+			<canMan>true</canMan>
+			<noClone>false</noClone>
+			<noSlot>false</noSlot>
+			<controllable>true</controllable>
+			<canPhaseThroughDoors>false</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+			<sabotageSpeedMultiplier>1.5</sabotageSpeedMultiplier>
+			<animBase>rock</animBase>
+			<deathSounds>
+				<deathSound>rockDeath</deathSound>
+			</deathSounds>
+			<shootingSounds>
+				<shootingSound>rockThrow1</shootingSound>
+				<shootingSound>rockThrow2</shootingSound>
+				<shootingSound>rockThrow3</shootingSound>
+			</shootingSounds>
+			<repairSounds animSoundFrame="5">
+				<repairSound>rockThud1</repairSound>
+				<repairSound>rockThud2</repairSound>
+				<repairSound>rockThud3</repairSound>
+			</repairSounds>
+				
+		</mod-append:race>
+		</mod:findLike>	
+	
+	<mod:findLike type="crew"> <!-- The Plated Crew -->
+		<mod-append:race name="fm_plated">
+			<maxHealth>160</maxHealth>
+			<repairSpeed>1.5</repairSpeed>
+			<canFight>true</canFight>
+			<canRepair>true</canRepair>
+			<canSabotage>true</canSabotage>
+			<canSuffocate>true</canSuffocate>
+			<damageMultiplier>1.3</damageMultiplier>
+			<rangedDamageMultiplier>1.3</rangedDamageMultiplier>
+			<damageTakenMultiplier>0.75</damageTakenMultiplier>
+			<suffocationModifier>0.75</suffocationModifier>
+			<fireDamageMultiplier>0.0</fireDamageMultiplier>
+			<stunMultiplier>0.3</stunMultiplier>
+			<fireRepairMultiplier>3.0</fireRepairMultiplier>
+			<canMan>true</canMan>
+			<noClone>false</noClone>
+			<noSlot>false</noSlot>
+			<controllable>true</controllable>
+			<canPhaseThroughDoors>false</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
+			<sabotageSpeedMultiplier>0.7</sabotageSpeedMultiplier>
+			<animBase>rock</animBase>
+			<deathSounds>
+				<deathSound>rockDeath</deathSound>
+			</deathSounds>
+			<shootingSounds>
+				<shootingSound>rockThrow1</shootingSound>
+				<shootingSound>rockThrow2</shootingSound>
+				<shootingSound>rockThrow3</shootingSound>
+			</shootingSounds>
+			<repairSounds animSoundFrame="5">
+				<repairSound>rockThud1</repairSound>
+				<repairSound>rockThud2</repairSound>
+				<repairSound>rockThud3</repairSound>
+			</repairSounds>
+		<powerEffect> <!--POWER FOR NOW-->
+			<cooldown>10</cooldown>
+			<jumpCooldown>full</jumpCooldown>
+			<powerCharges>2</powerCharges>
+			<chargesPerJump>1</chargesPerJump>
+			<powerSounds>
+				<powerSound>explosionShell</powerSound>
+			</powerSounds>
+			<req>
+				<minHealth>55</minHealth>
+				<systemInRoom/>
+			</req>
+			<req type="enemy">
+				<minHealth>70</minHealth>
+				<systemInRoom damaged="true"/>
+				<playerShip/> <!--enemy ship-->
+			</req>
+			<sysDamage>-5</sysDamage>
+			<damage>-3</damage>
+			<friendlyFire>true</friendlyFire>
+			<shipFriendlyFire>true</shipFriendlyFire>
+			<buttonText>Forge Metal</buttonText>
+			<tooltip>Ready:  Repair the current system. Self heal</tooltip>
+			<cooldownColor r="202" g="79" b="226"/>
+			<effectAnim>explosion_repair</effectAnim>
+			<activateWhenReady enemiesOnly="true">true</activateWhenReady>
+			<selfHealth>90</selfHealth>
+		</powerEffect>
+	
+				
+				
+		</mod-append:race>
+		</mod:findLike>	
+	
+		<!--Drone Abilities and Drones
+	\\\\\\\\\\\\\\\\\\\\\\\\\
+	        Drone Abilities and Drones
+			 Boarder Drones rely on:
+			 blueprints-hyperspace-animations
+	\\\\\\\\\\\\\\\\\\\\\\\\\
+	-->
+	<mod:findLike type="crew">  <!--Fire Intruder Drone! -->	
+		<mod-append:race name="fm_fire_intruder">	<!--Fire Intruder Drone! -->
+			<canFight>false</canFight>
+			<canSabotage>false</canSabotage>
+			<canRepair>false</canRepair>
+			<canSuffocate>false</canSuffocate>
+			<canMan>false</canMan>
+			<maxHealth>148</maxHealth>
+
+				<damageMultiplier>1.1</damageMultiplier>
+				<fireDamageMultiplier>0.0</fireDamageMultiplier>
+				<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+				<stunMultiplier>0.25</stunMultiplier>
+				<powerEffect>
+					<cooldown>15</cooldown>
+					<jumpCooldown>full</jumpCooldown>
+					<powerSounds>
+					<powerSound>fireBomb</powerSound>
+						</powerSounds>
+            <req>
+                <systemInRoom/>
+                <enemyShip/>
+            </req>
+            <friendlyFire>false</friendlyFire>
+			<fireChance>10</fireChance>
+            <ion>1</ion>
+            <stun>7</stun>
+            <animFrame>-1</animFrame>
+            <buttonText>FIRE</buttonText>
+            <tooltip>Automatic: activates an Fire pulse</tooltip>
+            <cooldownColor r="0" g="235" b="255"/>
+          <effectAnim>explosion_random</effectAnim>
+            <activateWhenReady enemiesOnly="false">true</activateWhenReady>
+            <temporaryEffect>
+                <duration>2</duration>
+                <cooldownColor r="10" g="255" b="255"/>
+                <controllable>false</controllable>
+                <canFight>false</canFight>
+                <canRepair>false</canRepair>
+                <canSabotage>false</canSabotage>
+                <canMan>false</canMan>
+                <moveSpeedMultiplier>0</moveSpeedMultiplier>
+            </temporaryEffect>
+        </powerEffect>
+				
+			
+		
+		</mod-append:race>
+		</mod:findLike>
+	
+	
+	<mod:findLike type="drones">  <!--Fire Intruder Drone! -->	
+		<mod-append:drone name="fm_fire_intruder">	<!--Fire Intruder Drone! Drone hyperspace declare -->	
+			<crewBlueprint>fm_fire_intruder</crewBlueprint>
+			<tooltipName>Fire Intruder</tooltipName>
+		</mod-append:drone>
+		</mod:findLike>
+	
+	
+	
+	<!--EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
+	\\\\\\\\\\\\\\\\\\\\\\\\\
+	EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
+	\\\\\\\\\\\\\\\\\\\\\\\\\
+	<mod:findLike type="crew">
+	<mod-append:race name="acid">
+	<mod-append:race name="acid">
+		<maxHealth>150</maxHealth>
+		<repairSpeed>0</repairSpeed>
+		<canFight>false</canFight>
+		<canRepair>false</canRepair>
+		<canSabotage>true</canSabotage>
+		<canSuffocate>false</canSuffocate>
+		<fireDamageMultiplier>4</fireDamageMultiplier>
+		<canMan>false</canMan>
+		<noClone>true</noClone>
+		<noSlot>true</noSlot>
+		<controllable>false</controllable>
+		<canPhaseThroughDoors>true</canPhaseThroughDoors>
+		<moveSpeedMultiplier>0</moveSpeedMultiplier>
+		<damageMultiplier>0</damageMultiplier>
+		<damageTakenMultiplier>0.2</damageTakenMultiplier> 
+		<animBase>mantis</animBase>
+		<deathSounds>
+			<deathSound>mantisDeath</deathSound>
+		</deathSounds>
+		<shootingSounds>
+			<shootingSound>mantisSpit1</shootingSound>
+			<shootingSound>mantisSpit2</shootingSound>
+			<shootingSound>mantisSpit3</shootingSound>
+		</shootingSounds>
+		<powerEffect>
+			<cooldown>10</cooldown>
+			<powerSounds>
+				<finishSound>mantisSplat1</finishSound>
+				<finishSound>mantisSplat2</finishSound>
+				<finishSound>mantisSplat3</finishSound>
+			</powerSounds>
+			<damage>1</damage>
+			<breachChance>10</breachChance>
+			<friendlyFire>true</friendlyFire>
+			<shipFriendlyFire>true</shipFriendlyFire>
+			
+			<buttonText>Corrosion</buttonText>
+			<tooltip>Burns through the hull every 10 seconds, does passive damage to crew in the same room constantly</tooltip>
+			<cooldownColor r="171" g="223" b="255"/>
+			<activateWhenReady enemiesOnly="false">true</activateWhenReady>
+			</powerEffect>
+		<passiveStatBoosts>   
+			
+         <statBoost name="trueHealAmount">
+                    <boostType>FLAT</boostType>
+                    <amount>-3</amount>
+                    <shipTarget>CURRENT_ROOM</shipTarget>
+                    <crewTarget>ALL</crewTarget>
+                    <priority>999999</priority>
+                </statBoost>
+				  <statBoost name="trueHealAmount">
+                    <boostType>FLAT</boostType>
+                    <amount>-9999999</amount>
+                    <shipTarget>PLAYER_SHIP</shipTarget>
+                    <crewTarget>ALL</crewTarget>
+					  <priority>999999</priority>
+						<whiteList>
+							<acid/>
+							</whiteList>
+                  
+								</statBoost>
+		 <statBoost name="canRepair">
+           	<boostType>SET</boostType>
+			<value>false</value>
+			<shipTarget>CURRENT_ROOM</shipTarget>
+            <crewTarget>ALL</crewTarget>
+            <priority>999999</priority>
+        </statBoost>
+		 <statBoost name="canFight">
+           	<boostType>SET</boostType>
+			<value>false</value>
+			<shipTarget>CURRENT_ROOM</shipTarget>
+            <crewTarget>ALL</crewTarget>
+            <priority>999999</priority>
+        </statBoost>
+		 <statBoost name="canSabotage">
+           	<boostType>SET</boostType>
+			<value>false</value>
+			<shipTarget>CURRENT_ROOM</shipTarget>
+            <crewTarget>ALL</crewTarget>
+            <priority>999999</priority>
+        </statBoost>
+		 <statBoost name="canMan">
+           	<boostType>SET</boostType>
+			<value>false</value>
+			<shipTarget>CURRENT_ROOM</shipTarget>
+            <crewTarget>ALL</crewTarget>
+            <priority>999999</priority>
+        </statBoost>
+		</passiveStatBoosts>  	
+			
+		
+	
+	</mod-append:race>
+	</mod:findLike>
+	\\\\\\\\\\\\\\\\\\\\\\\\\
+	-->
+	
+		<!--LOCKED AUGMENTS
+	\\\\\\\\\\\\\\\\\\\\\\\\\
+	      LOCKED AUGMENTS
+	\\\\\\\\\\\\\\\\\\\\\\\\\
+	-->
+	
+	<augments> <!--LOCKED AUGMENTS -->
+	<aug name="LOCKED_RAMMING_SPEED">
+		<function name="RAMMING_SPEED" value="1" useForReqs="true" warning="false"/>
+		<locked/>
+    </aug>
+	</augments>
+	</FTL>

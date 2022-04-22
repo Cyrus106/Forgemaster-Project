@@ -1,0 +1,531 @@
+<textList name="TEXT_START_TWISTED">
+	<text>You have arrived in the Twisted sector. A message is transmitted to you directly by C.U.R.A. "Welcome to my lovely abandoned sector, Renegade. I took the opportunity to purchase it and detonate several prototype Multiverse Destabilization Munitions at random locations within. You should be able to call these "Twisted" individuals directly to you if you wish at these locations. This was not cheap, and I'm only allowing you to come here once so do not disappoint me, Renegade.</text>
+
+</textList>
+<event name="FM_START_TWISTED">
+<modifyPursuit amount="-10"/>
+	<preventQuest/>
+	<beaconType id="map_icon_start" global="false">
+		<color r="46" g="252" b="51" a="1"/>
+	</beaconType>
+	<text load="TEXT_START_TWISTED"/>
+	<img back="FM_TWISTED_SECTOR_IMAGE" planet="NONE"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
+
+<event name="FM_START_RITUAL">
+<img back="FM_TWISTED_SECTOR_IMAGE" planet="NONE"/>
+<text>You've arrived at one of this sector's unusual beacons. You perform a quick scan using the software provided by C.U.R.A., it informs you that the anomously properties of this beacon force causes anything called by the C.U.R.A. Drive Hacker to be pulled directly to this beacon, but there is only enough energy to do this once per beacon. </text>
+	<choice hidden="true">
+		<text>Attempt to utilize your C.U.R.A. Drive Hacker.</text>
+		<event load="FM_CURA_DRIVE_HACKER_MENU"/>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind, let's leave.</text>
+		<event>
+		<text>You decide against sticking around to try calling any vessels to the beacon. The anomalous properties of the beacon make you and your crew feel very ill, so you don't like the idea of sticking around.</text>
+		<event/>
+		</event>
+	</choice>
+	
+</event>
+
+
+<event name="FM_CURA_DRIVE_HACKER_MENU">
+<text>You've arrived at one of this sector's unusual beacons. The anomously properties of this beacon force anything called by the C.U.R.A. Drive Hacker to be pulled directly to this beacon. You wonder if this could be used to pull your ship to these beacons in the future.</text>
+	<choice req="ACH_FM_BOSS_DONE" lvl="1" max_group="3" hidden="true" blue="false">
+        <text>(C.U.R.A. Drive Hacker) You already obtained your reward. You wonder how exactly this benefit C.U.R.A.?</text>
+        <event load="OPTION_INVALID"/>
+</choice>
+
+<choice req="FM_CURA_QUEST_LIST" lvl="1" max_group="3" hidden="false" blue="true">
+        <text>(C.U.R.A. Drive Hacker) Obtain your Reward..</text>
+        <event load="FM_STORAGE_CHECK_AUG_MVBOSS_SPAWNER_REWARD"/>
+</choice>
+<choice req="CURA_MVBOSS_SPAWNER" lvl="1" max_group="3" hidden="false" blue="true">
+        <text>(C.U.R.A. Drive Hacker) Summon an Twisted MV Traveler.</text>
+        <event load="FM_STORAGE_CHECK_AUG_MVBOSS_SPAWNER_LIST_SECTOR"/>
+ </choice>   
+<choice hidden="true">
+		<text>Nevermind, let's leave.</text>
+		<event>
+		<text>You decide against sticking around to try calling any vessels to the beacon. The anomalous properties of the beacon make you and your crew feel very ill, so you don't like the idea of sticking around.</text>
+		<event/>
+		</event>
+	</choice>	
+</event>
+
+<event name="FM_STORAGE_CHECK_AUG_MVBOSS_SPAWNER_LIST_SECTOR">
+	<text>You check what ships are available to be summoned currently. For each set of 3 ships you defeat, 3 more will become available to challenge. Summoning an Twisted MV boss will take 2{.
+	[NOTE: All rewards from these bosses DO NOT stack.]</text>
+	
+	
+	<choice req="ACH_FM_BOSS_CRYSTAL1" lvl="1" max_group="1" hidden="true" blue="false">
+		<text>You already defeated the Twisted Crystal.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="ACH_FM_BOSS_TUCO1" lvl="1" max_group="2" hidden="true" blue="false">
+		<text>You already defeated the Twisted Tuco.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="ACH_FM_BOSS_LEECH1" lvl="1" max_group="3" hidden="true" blue="false">
+		<text>You already defeated the Twisted Leech.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	
+	<choice req="FM_BOSS_LIST_18" lvl="1" max_group="1" hidden="false" blue="false">
+		<text>Twisted Crystal C - Drops Twisted Crystal Armor</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			 <choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_CRYSTAL1_SUICIDE"/> 
+			 </choice>
+		</event>
+	</choice>
+	<choice req="FM_BOSS_LIST_18" lvl="1" max_group="2" hidden="false" blue="false">
+		<text>Twisted Tuco B - Drops a rare collectable.</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			 <choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_TUCO1_SUICIDE"/> 
+			 </choice>
+		</event>
+	</choice>
+	<choice req="FM_BOSS_LIST_18" lvl="1" max_group="3" hidden="false" blue="false">
+		<text>Twisted Leech C - Drops a strange emitter</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			<choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_LEECH1_SUICIDE"/> 
+			 </choice>
+		</event>
+	</choice>
+	
+	<choice req="ACH_FM_BOSS_KES1" lvl="1" max_group="1" hidden="true" blue="false">
+		<text>You already defeated the Twisted Kestrel.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="ACH_FM_BOSS_FED1" lvl="1" max_group="2" hidden="true" blue="false">
+		<text>You already defeated the Twisted Federation.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="ACH_FM_BOSS_ORCHID1" lvl="1" max_group="3" hidden="true" blue="false">
+		<text>You already defeated the Twisted Orchid.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	
+	<choice req="FM_BOSS_LIST_15" lvl="1" max_group="1" hidden="false" blue="false">
+		<text>Twisted Kestrel B - A....fridge?</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			 <choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_KES1_SUICIDE"/> 
+			 </choice>
+		</event>
+	</choice>
+	<choice req="FM_BOSS_LIST_15" lvl="1" max_group="2" hidden="false" blue="false">
+		<text>Twisted Federation B - Drops an unique replicator.</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			 <choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_FED1_SUICIDE"/> 
+			 </choice>
+		</event>
+	</choice>
+	<choice req="FM_BOSS_LIST_15" lvl="1" max_group="3" hidden="false" blue="false">
+		<text>Twisted Orchid B - Drops some friends.</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			<choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_ORCHID1_SUICIDE"/> 
+			 </choice>
+		</event>
+	</choice>
+	
+	<choice req="ACH_FM_BOSS_LANIUS1" lvl="1" max_group="1" hidden="true" blue="false">
+		<text>You already defeated the Twisted Lanius.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="ACH_FM_BOSS_SHELL1" lvl="1" max_group="2" hidden="true" blue="false">
+		<text>You already defeated the Twisted Shell.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="ACH_FM_BOSS_ENGINEER1" lvl="1" max_group="3" hidden="true" blue="false">
+		<text>You already defeated the Twisted Engineer.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<!-- NEW CHOICES TO ADD THAT COST MORE BUT SUMMON DIRECTLY
+	<choice req="FM_BOSS_LIST_12" lvl="1" max_group="4" hidden="false" blue="true">
+		<text>DRAG Twisted Lanius B's Portal directly to you - Drops a Heart.[Costs Extra]</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light near your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-4" max="-4"/>
+				<item type="missiles" min="-7" max="-7"/>
+				<item type="scrap" min="-40" max="-40"/>
+				<item type="drones" min="-2" max="-2"/>
+			</item_modify>
+			<event load="FM_BOSS_LANIUS1_SUICIDE"/>
+		</event>
+	</choice>
+	<choice req="FM_BOSS_LIST_12" lvl="1" max_group="5" hidden="false" blue="false">
+		<text>Twisted Shell C - Drops an attache case.</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			<quest event="FM_BOSS_SHELL1_SUICIDE"/>
+		</event>
+	</choice>
+	<choice req="FM_BOSS_LIST_12" lvl="1" max_group="6" hidden="false" blue="false">
+		<text>Twisted Engineer B - Drops Drone Booster II</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			<quest event="FM_BOSS_ENGINEER1_SUICIDE"/>
+		</event>
+	</choice>
+	
+	<choice req="ACH_FM_BOSS_LANIUS1" lvl="1" max_group="4" hidden="true" blue="false">
+		<text>You already defeated the Twisted Lanius.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="ACH_FM_BOSS_SHELL1" lvl="1" max_group="5" hidden="true" blue="false">
+		<text>You already defeated the Twisted Shell.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="ACH_FM_BOSS_ENGINEER1" lvl="1" max_group="6" hidden="true" blue="false">
+		<text>You already defeated the Twisted Engineer.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	-->
+	<choice req="FM_BOSS_LIST_12" lvl="1" max_group="1" hidden="false" blue="false">
+		<text>Twisted Lanius B - Drops a Heart.</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			 <choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_LANIUS1_SUICIDE"/> 
+			 </choice>
+		</event>
+	</choice>
+	<choice req="FM_BOSS_LIST_12" lvl="1" max_group="2" hidden="false" blue="false">
+		<text>Twisted Shell C - Drops an attache case.</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			 <choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_SHELL1_SUICIDE"/> 
+			 </choice>
+		</event>
+	</choice>
+	<choice req="FM_BOSS_LIST_12" lvl="1" max_group="3" hidden="false" blue="false">
+		<text>Twisted Engineer B - Drops Drone Booster II</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			 <choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_ENGINEER1_SUICIDE"/> 
+			 </choice>
+		</event>
+	</choice>
+	
+	<choice req="ACH_FM_BOSS_SLUG1" lvl="1" max_group="1" hidden="true" blue="false">
+		<text>You already defeated the Twisted Slug.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="ACH_FM_BOSS_STEALTH1" lvl="1" max_group="2" hidden="true" blue="false">
+		<text>You already defeated the Twisted Stealth.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="ACH_FM_BOSS_ZOLTAN1" lvl="1" max_group="3" hidden="true" blue="false">
+		<text>You already defeated the Twisted Zoltan.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	
+	<choice req="FM_BOSS_LIST_9" lvl="1" max_group="1" hidden="false" blue="false">
+		<text>Twisted Slug C - Drops Malboro.</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			 <choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_SLUG1_SUICIDE"/> 
+			 </choice>
+		</event>
+	</choice>
+	<choice req="FM_BOSS_LIST_9" lvl="1" max_group="2" hidden="false" blue="false">
+		<text>Twisted Stealth B - Drops ?13Xzzzzzzz$</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			 <choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_STEALTH1_SUICIDE"/> 
+			 </choice>
+		</event>
+	</choice>
+	<choice req="FM_BOSS_LIST_9" lvl="1" max_group="3" hidden="false" blue="false">
+		<text>Twisted Zoltan C - Drops Limiter Removal</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			<choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_ZOLTAN1_SUICIDE"/> 
+			 </choice>
+		</event>
+	</choice>
+	
+	<choice req="ACH_FM_BOSS_MONK1" lvl="1" max_group="1" hidden="true" blue="false">
+		<text>You already defeated the Twisted Monk.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="ACH_FM_BOSS_R1" lvl="1" max_group="2" hidden="true" blue="false">
+		<text>You already defeated the Twisted Rockman.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="ACH_FM_BOSS_LOSTSUN1" lvl="1" max_group="3" hidden="true" blue="false">
+		<text>You already defeated the Twisted Lost Sun.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	
+	<choice req="FM_BOSS_LIST_6" lvl="1" max_group="1" hidden="false" blue="false">
+		<text>Twisted Monk B - Drops Aether Ascension Shields</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			 <choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_MONK1_SUICIDE"/> 
+			 </choice>
+		</event>
+	</choice>
+	<choice req="FM_BOSS_LIST_6" lvl="1" max_group="2" hidden="false" blue="false">
+		<text>Twisted Rock C - Drops the Rockmen Relic of Freedom</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			<choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_R1_SUICIDE"/> 
+			 </choice>
+		</event>
+	</choice>
+	<choice req="FM_BOSS_LIST_6" lvl="1" max_group="3" hidden="false" blue="false">
+		<text>Twisted Lost Sun B - Drops Reality-Bent Reloader.</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			<choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_LOSTSUN1_SUICIDE"/> 
+			 </choice>
+		</event>
+	</choice>
+	
+	<choice req="ACH_FM_BOSS_FREE1" lvl="1" max_group="1" hidden="true" blue="false">
+		<text>You already defeated the Twisted Free Mantis.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="ACH_FM_BOSS_SEPA1" lvl="1" max_group="2" hidden="true" blue="false">
+		<text>You already defeated the Twisted Separatist.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="ACH_FM_BOSS_MANTIS1" lvl="1" max_group="3" hidden="true" blue="false">
+		<text>You already defeated the Twisted Mantis.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+
+	<choice req="FM_BOSS_LIST_3" lvl="1" max_group="1" hidden="false" blue="false">
+		<text>Twisted Free Mantis B - Drops a refreshment.</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			<choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_FREE1_SUICIDE"/> 
+			 </choice>
+		</event>
+	</choice>
+	<choice req="FM_BOSS_LIST_3" lvl="1" max_group="2" hidden="false" blue="false">
+		<text>Twisted Separatist B - Drops Magatama</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			<choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_SEPA1_SUICIDE"/> 
+			 </choice>
+		</event>
+	</choice>
+	<choice req="FM_BOSS_LIST_3" lvl="1" max_group="3" hidden="false" blue="false">
+		<text>Twisted Mantis B - Drops Pheromone Accelerator</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			<choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_MANTIS1_SUICIDE"/> 
+			 </choice>
+		</event>
+	</choice>
+	
+	<choice req="ACH_FM_BOSS_CLAN1" lvl="1" max_group="1" hidden="true" blue="false">
+		<text>You already defeated the Twisted Clansman.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="ACH_FM_BOSS_DUSK1" lvl="1" max_group="2" hidden="true" blue="false">
+		<text>You already defeated the Twisted Duskbringer.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="ACH_FM_BOSS_ENGI1" lvl="1" max_group="3" hidden="true" blue="false">
+		<text>You already defeated the Twisted Engi.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	
+	<choice req="loc_coords_twisted" lvl="1" max_group="1" hidden="false" blue="false">
+		<text>Twisted Clansman B - Drops Mind Clouder</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			<choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_CLAN1_SUICIDE_NO_CORDS"/> 
+			 </choice>
+		</event>
+	</choice>
+	<choice req="loc_coords_twisted" lvl="1" max_group="2" hidden="false" blue="false">
+		<text>Twisted Duskbringer B - Drops Twlight Vests</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			<choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_DUSK1_SUICIDE_NO_CORDS"/> 
+			 </choice>
+		</event>
+	</choice>
+	<choice req="loc_coords_twisted" lvl="1" max_group="3" hidden="false" blue="false">
+		<text>Twisted Engi C - Drops Drone Booster "Kai"</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			<choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_ENGI1_SUICIDE_NO_CORDS"/> 
+			 </choice>
+		</event>
+	</choice>
+	
+	<choice req="pilot" lvl="1" max_group="1" hidden="false" blue="false">
+		<text>Twisted Clansman B - Drops Mind Clouder</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			<choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_CLAN1_SUICIDE_NO_CORDS"/> 
+			 </choice>
+		</event>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="2" hidden="false" blue="false">
+		<text>Twisted Duskbringer B - Drops Twlight Vests</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			 <choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_DUSK1_SUICIDE_NO_CORDS"/> 
+			 </choice>
+		</event>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="3" hidden="false" blue="false">
+		<text>Twisted Engi C - Drops Drone Booster "Kai"</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<item_modify>
+				<item type="fuel" min="-2" max="-2"/>
+			</item_modify>
+			<choice>
+			<text>Continue...</text>
+			 <event load="FM_BOSS_ENGI1_SUICIDE_NO_CORDS"/> 
+			 </choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind, let's leave.</text>
+		<event>
+		<text>You decide against sticking around to try calling any vessels to the beacon. The anomalous properties of the beacon make you and your crew feel very ill, so you don't like the idea of sticking around.</text>
+		<event/>
+		</event>
+	</choice>
+
+</event>

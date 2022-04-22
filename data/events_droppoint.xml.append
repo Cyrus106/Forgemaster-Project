@@ -1,0 +1,54 @@
+
+
+<mod:findName type = "event" name = "MV_TERRAFORMING_SCAN">
+	
+	<mod-append:choice hidden="true" req="FM_BEAM_MINING_2" >
+        <text>(Ishimura Beam) "Terraform" the moon yourself, first.</text> 
+		<event>
+			<text>Diverting the majority of your ship's power to the Ishimura beam, you begin cracking open the moon, revealing parts of it's surface and numerous valuable resources. </text>
+			 <choice hidden="true">
+						<text>Continue...</text> 
+						<event>
+						<damage amount="2" system="random"/>
+					    <text>Before you can truly get started, a missile plunges into your ship's hull. Your comms still open, the stubby Rockman captain is nearly foaming at the mouth he is so angry with you. "What the hell is wrong with you? I refuse to allow this on my watch! All hands, man the weapons." he quickly spits out, cutting comms right after.  </text>
+						<ship load="FM_SHIP_ROCK_FIGHT" hostile="true"/>
+						<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+			
+            </event>
+		</choice>
+	</event>
+					</mod-append:choice>
+	</mod:findName>
+	
+	
+					
+	<event name="FM_ISHI_ROCK_DEST">
+	
+	<text>With the terraforming team's ship destroyed, you continue *ahem* "Terraforming". The moon's crust cracks apart, releasing unknown gases sealed within the moon's mantle. Fortunately this a problem for somebody else. You gather the scrap you came for, and leave.</text>  <!-- His death event -->
+	<modifyPursuit amount="2"/>
+            <item_modify>
+                <item type="scrap" min="95" max="170"/>
+				<item type="fuel" min="3" max="9"/>
+            </item_modify>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="MORALITY_UPDATE_FORGEMASTER"/>
+	</choice>
+</event> 
+
+<event name="FM_ISHI_ROCK_DEAD">
+	
+	<text>With the terraforming team's ship floating lifelessly, you continue *ahem* "Terraforming". The moon's crust cracks apart, releasing unknown gases sealed within the moon's mantle. Fortunately this a problem for somebody else. You gather the scrap you came for, and leave.</text>  <!-- His death event -->
+	<modifyPursuit amount="2"/>
+            <item_modify>
+                <item type="scrap" min="120" max="195"/>
+				<item type="fuel" min="5" max="9"/>
+            </item_modify>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="MORALITY_UPDATE_FORGEMASTER"/>
+	</choice>
+</event> 

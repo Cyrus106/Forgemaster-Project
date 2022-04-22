@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+
+
+<img x="-105" y="-69" w="423" h="638" />
+<offsets>
+	<floor x="211" y="319" />
+	<cloak x="26" y="15" />
+</offsets>
+<weaponMounts>
+	<mount x="67" y="430" rotate="false" mirror="false" gib="3" slide="up" />
+</weaponMounts>
+<explosion><gib1><velocity min="0.10883479062995803" max="0.36278263543319345" /><direction min="341" max="381" /><angular min="-0.7" max="0.7" /><x>66</x><y>2</y></gib1><gib2><velocity min="0.1" max="0.1" /><direction min="308" max="348" /><angular min="-0.7" max="0.7" /><x>100</x><y>12</y></gib2><gib3><velocity min="0.1" max="0.1" /><direction min="132" max="172" /><angular min="-0.7" max="0.7" /><x>1</x><y>157</y></gib3><gib4><velocity min="0.1" max="0.1" /><direction min="159" max="199" /><angular min="-0.7" max="0.7" /><x>1</x><y>220</y></gib4><gib5><velocity min="0.11348508395895064" max="0.37828361319650217" /><direction min="159" max="199" /><angular min="-0.7" max="0.7" /><x>1</x><y>428</y></gib5></explosion>
+

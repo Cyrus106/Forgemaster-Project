@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mod:findName type = "event" name = "START_BEACON_ANCIENT">
+
+	<mod-append:noQuestText/>
+		<mod-append:quest event="FORGEMASTER_PHONE_CALL">
+		</mod-append:quest>
+
+
+</mod:findName>
+
+<mod:findName type = "event" name = "START_BEACON_ROYAL">
+
+	<mod-append:noQuestText/>
+		<mod-append:quest event="FORGEMASTER_PHONE_CALL">
+		</mod-append:quest>
+
+
+</mod:findName>
+
+<!-- TEST FOR ADDING AN OPTION TO THIS DIALOGUE!
+<mod:findName type="event" name="START_BEACON_ANCIENT">
+  <mod:findLike type="choice">
+    <mod:findLike type="event">
+      <mod-append:choice hidden="true" req="FM_BEAM_MINING_2" >
+        <text>(Ishimura Beam) Attempt to mine the much larger asteroids.</text> 
+		<event>
+			<text>You effortlessly a very high amount of usable material from the nearest asteroids while waiting for the FTL to charge.</text>
+			
+            <item_modify>
+                <item type="scrap" min="56" max="78"/>
+			
+            </item_modify>
+            </event>
+					</mod-append:choice>
+    </mod:findLike>
+  </mod:findLike>
+</mod:findName> -->

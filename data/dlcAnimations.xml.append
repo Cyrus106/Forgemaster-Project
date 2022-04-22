@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FTL>
+
+
+<animSheet name="beam_menaulion_glow_chain" w="184" h="102" fw="46" fh="102">weapon_beams/beam_menaulion_glow_chain.png</animSheet>
+<anim name="beam_menaulion_glow_chain">
+	<sheet>beam_menaulion_glow_chain</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="ion_charger_2_charge" w="156" h="49" fw="39" fh="49">weapon_ion/w_ion_charger_2_charges.png</animSheet>
+<anim name="ion_charger_2_charge">
+	<sheet>ion_charger_2_charge</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+</FTL>

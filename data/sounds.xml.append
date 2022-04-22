@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phase volume="6">aliens/bp_phase.ogg</phase>
+<moreInfoOn volume="10">ui/select_up1.wav</moreInfoOn>
+<moreInfoOff volume="10">ui/select_down2.wav</moreInfoOff>
+
+<music>
+	<track> 
+		<name>BleakFuture</name>
+		<explore>Bleak Future.ogg</explore>
+	</track>
+	</music>
+	
+	<music>
+	<track> 
+		<name>Bellona</name>
+		<explore>Bellona Station.ogg</explore>
+	</track>
+	
+	<track> 
+		<name>Bellona2</name>
+		<explore>Bellona Station 2.ogg</explore>
+	</track>
+	
+	<track> 
+		<name>Bellona3</name>
+		<explore>Bellona Station 3.ogg</explore>
+	</track>
+	
+	<track> 
+		<name>Twisted</name>
+		<explore>Twisted.ogg</explore>
+	</track>
+	
+	</music>
+	
+<fm_ancalagon_shot volume="6">weapons/fm_ancalagon_shot.ogg</fm_ancalagon_shot>	
+
+<fm_bullsquid_shot volume="4">weapons/fm_bullsquid_spit.ogg</fm_bullsquid_shot>
+<fm_bullsquid_shot2 volume="4">weapons/fm_bullsquid_spit2.ogg</fm_bullsquid_shot2>
+<fm_bullsquid_shot3 volume="4">weapons/fm_bullsquid_spit3.ogg</fm_bullsquid_shot3>
+<fm_bullsquid_shot_hit volume="4">weapons/fm_bullsquid_hit.ogg</fm_bullsquid_shot_hit>
+<fm_bullsquid_shot_hit2 volume="4">weapons/fm_bullsquid_hit2.ogg</fm_bullsquid_shot_hit2>
+<fm_bullsquid_shot_hit3 volume="4">weapons/fm_bullsquid_hit3.ogg</fm_bullsquid_shot_hit3>
+<fm_bullsquid_shot_miss volume="4">weapons/fm_bullsquid_spit_miss.ogg</fm_bullsquid_shot_miss>
+
+
+
+<fm_death_lad_shot volume="4">weapons/fm_absolution.ogg</fm_death_lad_shot>
+<fm_death_lad_shot_2 volume="4">weapons/fm_absolution_2.ogg</fm_death_lad_shot_2>
+
+<fm_flamethrower_shot volume="4">weapons/fm_flamethrower.ogg</fm_flamethrower_shot>
+<fm_flamethrower_shield volume="2">weapons/fm_flamethrower_shield.ogg</fm_flamethrower_shield>
+
+<fm_menaulion_shoot volume="5">weapons/fm_menaulion_beam.ogg</fm_menaulion_shoot>
+<fm_terminus_hit1 volume="4">weapons/fm_terminus1.ogg</fm_terminus_hit1>
+<fm_terminus_hit2 volume="4">weapons/fm_terminus2.ogg</fm_terminus_hit2>
+<fm_terminus_launch volume="5">weapons/fm_terminus_launch.ogg</fm_terminus_launch>
+
+<silence volume="5">explosions/silence.ogg</silence>

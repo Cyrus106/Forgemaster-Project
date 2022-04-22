@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<mod:findName type="event" name="COALITION_REBEL_STRANDED">
+    <mod:findLike type="choice">
+        <mod:findLike type="event">
+		 <mod:findLike type="choice">
+			<mod:findLike type="event">
+			<mod-append:choice hidden="true" req="fm_plated" >
+         <text>(Plated) Have your Plated perform the repairs.</text> 
+							<event>
+							<text>It takes a while, but you're able to patch up the damage. The Rebel captain is surprised at your willingness to help. "Maybe I misjudged you... don't think this changes anything, but it's only right that you are paid for your efforts."</text>
+							<modifyPursuit amount="1"/>
+							<autoReward level="HIGH">weapon</autoReward>
+						</event>
+					
+</mod-append:choice>
+            <mod-append:choice hidden="true" req="fm_forgemasterperson_player" >
+         <text>(Alastair) Have Alastair work his magic on the stranded Rebel ship repairs.</text> 
+		 <event>
+		<text>Alastair repairs the ship with relative ease. While repairing the ship, an old torn sweater catches his eye. Alastair refuses to return to the ship until he has finished repairing it with a needle and string from his toolbox. He hands it to the captain of the Rebel ship; The captain is left nearly in tears "This was my late wife's last gift to me..." the Rebel explains, holding back a few tears. "I was wrong about you aliens, and it seems I was lied to since birth, so perhaps now is my chance to make things right. I'm coming with you." He says sternly, following Alastair aboard your ship.</text>
+				<modifyPursuit amount="1"/>
+				<crewMember amount="1" class="mfk"/>
+				
+			</event>
+</mod-append:choice>
+       <mod:findWithChildLike type="choice" child-type="text">
+	<mod:selector>We can't help.</mod:selector>
+        <mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>
+    </mod:findWithChildLike> 
+	 </mod:findLike>
+			
+			 </mod:findLike>
+    </mod:findLike>  
+        </mod:findLike>
+    
+</mod:findName>

@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<FTL>
+
+
+
+
+
+
+
+<!--
+<descriptionOverride>Description.
+	
+Required Power: 1
+Charge Time: 20 seconds
+Shield Piercing: 1
+Fire Chance: 50%
+Breach Chance: 80%
+Stun Chance: 20%</descriptionOverride>
+-->
+
+
+<!--    WEAPON TIPS 
+**********************************************************************************************************************
+                                         WEAPON TIPS 
+**********************************************************************************************************************
+-->
+<text name="bomb_biohazard">This bomb prevents the crew hit from healing from med bays, or being revived by clone bays. 30 second duration. Radiation weapons do bursts of heavy crew damage, have minor breach chances, and weaken enemy crew. Enemies hit will move and repair 66% slower, and will be stunned 75% longer.</text>  
+<text name="bomb_crime">Makes all crew types burn, even rocks. All crew hit take 1.75x damage from fire, and put out fires 70% slower. 15 second duration.</text>  
+<text name="bomb_compactinator">This extremely expensive bomb takes the hit allied crew off of the ship's crew slot database. As a result you can have more crew in your ship!
+	DEV NOTE: Please remember, if a crew is added to your ship and every room is full, the game WILL crash. Same with enemy boarders, if there is no
+	space for them, your game will crash until this is patched in Hyperspace. Use CONSERVATIVELY and count your crew and rooms before usage!</text>  
+<text name="flamethrower">DOES NOT pierce shields or pop them, fire this when the enemy shields are down and unleash hell on their ship.</text>  
+<text name="ion_lanius">Fires a piercing ion shot that causes crew struck by it to become able to suffocate, take 2.5x more damage from suffocation, and very slowly drain the room's oxygen for 15 seconds.</text>  
+<text name="parazonium">DOES NOT use missiles to fire, but cannot fire if you don't have enough missiles! Can be amplified at combat checks.</text>  
+<text name="tip_focusenergy">Only deals Ion Damage when hitting a room in the enemy ship, does not deal ion damage when hitting shields!</text>  
+<text name="tip_ancalagon">Ancalagon weapons have a chance to spawn an Ancalagon Crystal hazard. There are 5 types: red, blue, green, a rarer white, and the rarest, black.</text>  
+<text name="tip_gnunslung">This weapon pops 1 shield, deals no hull damage (only destroys ships if they have very low hull) and inflicts a 30 crew stacking damage DoT effect. Radiation weapons do bursts of heavy crew damage, have minor breach chances, and weaken enemy crew. Enemies hit will move and repair 66% slower, and will be stunned 75% longer.</text>  
+<text name="tip_ancalagon_drone_laser">10% Chance to spawn an Ancalagon Crystal hazard. There are 5 types: red, blue, green, a rarer white, and the rarest, black.</text>  
+<text name="tip_missiles_heavy">Tip: Heavy missiles always carry hull-bust attributes, and can be used to take down critical systems when necessary.</text>
+<text name="tip_terminus">A massive wyrm from another dimension rams into the enemy ship violently. Ignores Zoltan Shields but can be targetted by drones. Paralyzes the enemy crew on the enemy ship while slowly draining their health upon impact for 20 seconds.</text>  
+
+<!--    CRAFT TIPS
+**********************************************************************************************************************
+                                         CRAFT TIPS
+**********************************************************************************************************************
+-->
+
+
+
+<!--    LASER CRAFT TIPS -->
+
+<!--    TLALOC -->
+
+<text name="fm_tip_frost_1">Tip: Frost lasers lock down rooms that they hit, making them valuable in impeding enemy crew movements.
+
+FM: A COMPONENT for forging the TLALOC Laser[100~], alongside the other COMPONENT Irradiation Laser. </text>
+
+<text name="fm_tip_laser_bio">Tip: Radiation weapons do bursts of heavy crew damage, have minor breach chances, and weaken enemy crew. Enemies hit will move and repair 66% slower, and will be stunned 75% longer.
+
+FM: A COMPONENT for forging the TLALOC Laser[100~], alongside the other COMPONENT Frost Laser I.
+
+FM: A COMPONENT for forging the Rebel Ripper Laser[100~], alongside the other COMPONENT Heavy Laser I.</text>
+    
+
+<!--    DAZHBOG -->
+
+<text name="fm_tip_laser_fire">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
+
+FM: A COMPONENT for forging the Dazhbog Flamethrower[70~], alongside the other COMPONENT called [REDACTED].</text>
+
+<!--    DECAYSER -->
+
+<text name="fm_tip_decayser">Tip: Phasers pierce additional shield layers. They will do ion damage for the first shield layer pierced, plus additional damage to whatever system they hit.
+
+FM: A COMPONENT for forging the Decayser[70~], alongside the other COMPONENT called [REDACTED].</text>
+
+<!--    PHOTON I -->
+
+<text name="fm_tip_laser_light">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
+
+FM: A COMPONENT for forging the Photon I[100~], alongside the other COMPONENT Particle Accelerator MK I.</text>
+
+<text name="fm_tip_laser_particle">Tip: Particle accelerators fire in a radius much like Flak. Each projectile does small system damage and has a reasonable fire chance, which can be devastating against its target.
+
+FM: A COMPONENT for forging the Photon I[100~], alongside the other COMPONENT Light Laser I.</text>
+
+
+<!--    PHOTON II -->
+
+<text name="fm_tip_laser_light_2">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
+
+FM: A COMPONENT for forging the Photon II[120~], alongside the other COMPONENT Particle Accelerator MK II.</text>
+
+<text name="fm_tip_laser_particle_2">Tip: Particle accelerators fire in a radius much like Flak. Each projectile does small system damage and has a reasonable fire chance, which can be devastating against its target.
+
+FM: A COMPONENT for forging the Photon II[120~], alongside the other COMPONENT Light Laser II.</text>
+
+<!--    REBEL RIPPER -->
+
+<text name="fm_tip_laser_heavy_1">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
+
+A COMPONENT for forging the Rebel Ripper Laser[100~], alongside the other COMPONENT Irradiation Laser.</text>
+
+
+
+<!--    ABSOLUTION -->
+
+<text name="fm_tip_bomb_ion">Tip: Bombs teleport past shields and defense drones to land directly on the ship. Like missiles, they cost one missile to launch. They never damage hull, but can be effective at disrupting crew and systems. You can even launch them at boarders on your own ship.
+
+FM: A COMPONENT for forging the Absolution[280~, 15], alongside the other COMPONENT Pierce Laser MK II.</text>
+
+<text name="fm_tip_laser_pierce_2">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
+
+FM: A COMPONENT for forging the Absolution[280~, 15}], alongside the other COMPONENT Ion Bomb.</text>
+
+
+<!--    ION CRAFT TIPS -->
+
+<!--    CERBERUS -->
+
+<text name="fm_tip_ion_fire">Tip: Fire ions act much like any ordinary ion, but start fires in the room they hit. If they hit while the shields are still up, they will not start a fire. 
+
+FM: A COMPONENT for forging the Cerberus Ion[100~], alongside the other COMPONENT Tri-Ion.</text>
+
+<text name="fm_tip_ion_tri">Tip: For every one point of ion damage, one power bar is removed from the target system and it is then locked for 5 seconds, preventing re-powering. If an ion weapon hits shields, the damage is automatically applied to the Shield System.
+
+FM: A COMPONENT for forging the Cerberus Ion[100~], alongside the other COMPONENT Fire Ion.</text>
+
+<!--    TARANIS -->
+
+<text name="fm_tip_hull_energy">Tip: Energy weapons are very versatile as they can do both ion and hull damage, but do not damage crew or systems.
+
+FM: A COMPONENT for forging the TARANIS Disc Launcher[130~], alongside the other COMPONENTS Geb, Osiris, Sekhmet, and Anubis. You only need 1 other component</text>
+
+<text name="fm_tip_minelauncher_1">Tip: Mine Launchers have reasonable status effect chances and fire massive bursts of slow moving mines which pierce all shields. 
+
+FM: A COMPONENT for forging the TARANIS Disc Launcher[130~], alongside the other COMPONENT Heavy Energy.</text>
+
+<text name="fm_tip_minelauncher_2">Tip: Mine Launchers have reasonable status effect chances and fire massive bursts of slow moving mines which pierce all shields. 
+
+FM: A COMPONENT for forging the TARANIS Disc Launcher[130~], alongside the other COMPONENT Heavy Energy.</text>
+
+<text name="fm_tip_minelauncher_fire">Tip: Mine Launchers have reasonable status effect chances and fire massive bursts of slow moving mines which pierce all shields. 
+
+FM: A COMPONENT for forging the TARANIS Disc Launcher[130~], alongside the other COMPONENT Heavy Energy.</text>
+
+<text name="fm_tip_minelauncher_stun">Tip: FM: A COMPONENT for forging the TARANIS Disc Launcher[130~], alongside the other COMPONENT Heavy Energy.</text>
+
+<!--    VESTA -->
+
+<text name="fm_tip_laser_vulcan">Tip: Chain lasers decrease their cooldown every time they fire. Check the green lights on the weapon to see how many times it has fired.
+
+FM: A COMPONENT for forging the Vesta[170-200~], alongside the other COMPONENT Ion Charger I OR Ion Charger II.</text>
+
+<text name="fm_tip_ion_charger_1">Tip: Charge weapons can be charged multiple times to generate more firepower. You can save time and fire the weapon prematurely but it will have fewer shots ready as a result.
+
+FM: A COMPONENT for forging the Vesta[170-200~], alongside the other COMPONENT Vulcan.</text>
+
+<text name="fm_tip_ion_charger_2">Tip: Charge weapons can be charged multiple times to generate more firepower. You can save time and fire the weapon prematurely but it will have fewer shots ready as a result.
+
+FM: A COMPONENT for forging the Vesta[170-200~], alongside the other COMPONENT Vulcan.</text>
+
+<!--   EXIDIA -->
+<text name="fm_tip_shotgun_3">Tip: Flak weapons target an area instead of a single room. This loss of accuracy means more firepower and speed than their laser counterparts.
+
+FM: A COMPONENT for forging the Exidia Energy Diffuser[140~], alongside the other COMPONENT, ANY Energy Charger.</text>
+
+<text name="fm_tip_energy_charger">Tip: Charge weapons can be charged multiple times to generate more firepower.
+
+FM: A COMPONENT for forging the Exidia Energy Diffuser[140~], alongside the other COMPONENT, Flak III.</text>
+
+<!--   PULSE -->
+<text name="fm_tip_laser_1">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
+
+FM: A COMPONENT for forging the Pulse Laser [55~], alongside the other COMPONENT Energy I.</text>
+
+
+
+
+
+<!--    BEAM CRAFT TIPS -->
+
+<!--    ISHIMURA -->
+
+<text name="fm_tip_beam_mining">Tip: The Mining Beam pierces one shield layer, which means it will not lose any damage for the first shield bubble it pierces. Each layer after that will reduce damage by one.
+
+FM: A COMPONENT for forging the Ishimura Beam[250~], alongside the other COMPONENT Pike II.</text>
+
+<text name="fm_tip_beam_long_2">Tip: For every shield bar on the enemy, a beam's damage is reduced by one. For example, a three damage beam against two shield bars will cause one damage in every room it hits.
+
+FM: A COMPONENT for forging the Ishimura Beam[250~], alongside the other COMPONENT Mining Beam.</text>
+
+<!--    EARSPOON -->
+
+<text name="fm_tip_beam_pierce">Tip: This Phase Beam pierces two shield layers, which means it will not lose any damage for the first two shield bubbles it pierces. Each layer after that will reduce damage by one.
+
+FM: A COMPONENT for forging the Earspoon Beam[120~], alongside the other COMPONENT Particle Beam.</text>
+
+<text name="fm_tip_beam_particle">Tip: The Particle Beam does no hull or crew damage, nor can it pierce shields. However, once shields are down it can do heavy damage to systems and light fires.
+
+FM: A COMPONENT for forging the Earspoon Beam[120~], alongside the other COMPONENT 'Guisarme' Beam.</text>
+
+<!--    MURDEROUS -->
+
+<text name="fm_tip_beam_guillotine">Tip: This Beam does both crew and system damage, making it a very versatile weapon.
+
+FM: A COMPONENT for forging something Murderous[200~, 20}, 15|], alongside the other COMPONENT called [REDACTED].</text>
+
+
+<!--    VALEFOR -->
+
+<text name="fm_tip_bomb_1">Tip: Bombs teleport past shields and defense drones to land directly on the ship. Like missiles, they cost one missile to launch. They never damage hull, but can be effective at disrupting crew and systems. You can even launch them at boarders on your own ship.
+
+FM: A COMPONENT for forging the Valefor Explosion Beam[125~], alongside the other COMPONENT Halberd Beam.</text>
+
+<text name="fm_tip_beam_2">Tip: For every shield bar on the enemy, a beam's damage is reduced by one. For example, a three damage beam against two shield bars will cause one damage in every room it hits.
+
+FM: A COMPONENT for forging the Valefor Explosion Beam[125~], alongside the other COMPONENT Bomb Launcher.</text>
+
+<!--    KONTOS -->
+
+<text name="fm_tip_ion_1">Tip: For every one point of ion damage, one power bar is removed from the target system and it is then locked for 5 seconds, preventing re-powering. If an ion weapon hits shields, the damage is automatically applied to the Shield System.
+
+FM: A COMPONENT for forging the Kontos Ion Beam[100~], alongside the other COMPONENT 'Ranseur' Beam.</text>
+
+<text name="fm_tip_ion_2">Tip: For every one point of ion damage, one power bar is removed from the target system and it is then locked for 5 seconds, preventing re-powering. If an ion weapon hits shields, the damage is automatically applied to the Shield System.
+
+FM: A COMPONENT for forging the Kontos Ion Beam[100~], alongside the other COMPONENT 'Ranseur' Beam.</text>
+
+<text name="fm_tip_beam_breach">Tip: The Breach Beam creates a breach on every tile it hits, and can also pierce a shield layer!
+
+FM: A COMPONENT for forging the Kontos Ion Beam[100~], alongside the other COMPONENT Simple Ion OR Ion Barrage Mark I .</text>
+
+
+<!--    PINPOINT CRAFT TIPS -->
+
+<!--    PARAZONIUM -->
+
+<text name="fm_tip_missiles_3">Tip: Heavy missiles always carry hull-bust attributes, and can be used to take down critical systems when necessary.
+
+FM: A COMPONENT for forging the Parazonium Focus[100~], alongside the other COMPONENT 'Cinquedea' Pinpoint.</text>
+
+<text name="fm_tip_focus_chain">Tip: Adaptive weapons increase in damage each time they are fired. The damage increase amount and limit depends on the weapon.
+
+FM: A COMPONENT for forging the Parazonium Focus[100~], alongside the other COMPONENT 'Hermes' Heavy Missiles.</text>
+
+<!--    EBONY -->
+
+<text name="fm_tip_energy_1">Tip: Energy weapons are very versatile as they can do both ion and hull damage, but do not damage crew or systems.
+
+FM: A COMPONENT for forging the Ebony Energy Pinpoint[70~], alongside the other COMPONENT 'Dirk' Pinpoint.
+
+FM: A COMPONENT for forging the Pulse Laser [55~], alongside the other COMPONENT Burst Laser I.</text>
+
+<text name="fm_tip_focus_1">Tip: Pinpoints do higher damage than Beams but have shorter trails. Just like Beams, their damage is reduced by 1 for each shield layer it pierces.
+
+FM: A COMPONENT for forging the Ebony Energy Pinpoint[70~], alongside the other COMPONENT Energy Cannon I.</text>
+
+<!--    HEMLOCK + TERRA NOVA  -->
+
+<text name="fm_tip_energy_2">Tip: Energy weapons are very versatile as they can do both ion and hull damage, but do not damage crew or systems.
+
+FM: A COMPONENT for forging the Hemlock Energy Pinpoint[100~], alongside the other COMPONENT 'Misericorde' Pinpoint.</text>
+
+<text name="fm_tip_focus_2">Tip: Pinpoints do higher damage than Beams but have shorter trails. Just like Beams, their damage is reduced by 1 for each shield layer it pierces.
+
+FM: A COMPONENT for forging the Hemlock Energy Pinpoint[100~], alongside the other COMPONENT Energy Cannon II.
+
+FM: A COMPONENT for forging the Terra Nova Pinpoint[100~], alongside the other COMPONENT Ishimura Beam.</text>
+
+<!--    GREEN HEART + TERRA NOVA -->
+
+<text name="fm_tip_energy_3">Tip: Energy weapons are very versatile as they can do both ion and hull damage, but do not damage crew or systems.
+
+FM: A COMPONENT for forging the Green Heart Energy Pinpoint[100~], alongside the other COMPONENT 'Stiletto' Pinpoint.</text>
+
+<text name="fm_tip_focus_3">Tip: Pinpoints do higher damage than Beams but have shorter trails. Just like Beams, their damage is reduced by 1 for each shield layer it pierces.
+
+FM: A COMPONENT for forging the Green Heart Energy Pinpoint[100~], alongside the other COMPONENT Energy Cannon III.
+
+FM: A COMPONENT for forging the Terra Nova Pinpoint[100~], alongside the other COMPONENT Ishimura Beam.</text>
+
+
+<!--    FLAK CRAFT TIPS -->
+
+<!--    AETHER FLAK -->
+
+<text name="fm_tip_shotgun_4">Tip: Flak weapons target an area instead of a single room. This loss of accuracy means more firepower and speed than their laser counterparts.
+
+FM: A COMPONENT for forging the [REDACTED] Flak[200~], alongside some forgotten technology.</text>
+
+<!--    KHEIMON -->
+
+<text name="fm_tip_shotgun_toxic">Tip: Flak weapons target an area instead of a single room. This loss of accuracy means more firepower and speed than their laser counterparts.
+
+FM: A COMPONENT for forging the KHEIMON Anomaly Launcher[70~], alongside the other COMPONENT Frost Laser II.</text>
+
+<text name="fm_tip_laser_frost_2">Tip: Frost lasers lock down rooms that they hit, making them valuable in impeding enemy crew movements.
+
+FM: A COMPONENT for forging the KHEIMON Anomaly Launcher[70~], alongside the other COMPONENT Irradiation Flak.</text>
+
+<!--    BRONZE FLAK -->
+
+<text name="fm_tip_shotgun_2">Tip: Flak weapons target an area instead of a single room. This loss of accuracy means more firepower and speed than their laser counterparts.
+
+FM: A COMPONENT for forging the Bronze Metal Flak[10~], alongside the other COMPONENT, ANY Crystal weapon.
+
+FM: A COMPONENT for forging the Carnifex Flak[130~], alongside the other COMPONENT, Lanius and Clonebay 3.</text>
+
+
+<!--    APPEND TO ALLLLL CRYSTAL WEAPONS -->
+<text name="fm_tip_crystal">Tip: Crystal weapons pierce a single layer of shields. Only level 2 shields and higher can stop them.
+
+FM: A COMPONENT for forging the Bronze Metal Flak[10~], alongside the other COMPONENT Flak II.</text>
+
+<text name="fm_tip_crystal_minelauncher">FM: A COMPONENT for forging the Bronze Metal Flak[10~], alongside the other COMPONENT Flak II.</text>
+
+
+<!--    EXPLOSIVE CRAFT TIPS -->
+
+<!--    HELLFIRE -->
+
+<text name="fm_tip_missiles_4">Tip: Heavy missiles always carry hull-bust attributes, and can be used to take down critical systems when necessary.
+
+FM: A COMPONENT for forging the 'Hellfire' Burst Missiles[150~], alongside the other COMPONENT 'Hades' Heavy Missiles.</text>
+
+<text name="fm_tip_missiles_fire">Tip: Missiles will ignore all enemy shields, but cost one missile to launch. Enemy defense drones will shoot down incoming missiles.
+
+FM: A COMPONENT for forging the 'Hellfire' Burst Missiles[150~], alongside the other COMPONENT 'Ares' Heavy Missiles.</text>
+
+
+<!--    CHERNOBOG -->
+
+<text name="fm_tip_missile_cloak">FM: A COMPONENT for forging the 'Chernobog' Missiles, alongside the other COMPONENT Energy Stunner.</text>
+
+<text name="fm_tip_energy_stun">Tip: Energy weapons are very versatile as they can do both ion and hull damage, but do not damage crew or systems.
+
+FM: A COMPONENT for forging the 'Chernobog' Missiles[100~], alongside the other COMPONENT 'Nyx' Missile.</text>
+
+
+<!--    OVENATOR -->
+
+<text name="fm_tip_bomb_fire">Tip: Bombs teleport past shields and defense drones to land directly on the ship. Cost 1 missile, and can be launched at your ship as well.
+
+FM: A COMPONENT for forging the Project #7[80~], alongside the other COMPONENT Crystal Lockdown Bomb.</text>
+
+<!--    LIFE R.O -->
+
+<text name="fm_tip_bomb_bio">Tip: Bombs teleport past shields.
+
+FM: A COMPONENT for forging Project #22[80~], alongside the other COMPONENT Crystal Lockdown Bomb.</text>
+
+<text name="fm_tip_bomb_lock">Tip: Bombs teleport past shields and defense drones to land directly on the ship. Cost 1 missile, and can be launched at your ship as well.
+
+FM: A COMPONENT for forging the Project #22[80~], alongside the other COMPONENT Irradtion Bomb.
+FM: A COMPONENT for forging the Project #7[80~], alongside the other COMPONENT Fire Bomb.</text>
+
+<!--    Ba-Pef -->
+
+<text name="fm_tip_laser_hull_2">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
+
+FM: A COMPONENT for forging the 'Ba-Pef'[80~] Minelauncher, alongside the other COMPONENT Sobek.</text>
+
+<text name="fm_tip_minelauncher_breach">Tip: Mine Launchers have reasonable status effect chances and fire massive bursts of slow moving mines which pierce all shields. 
+
+FM: A COMPONENT for forging the 'Ba-Pef' Minelauncher[80~], alongside the other COMPONENT Hull Laser II.</text>
+
+<!--    ORGANIC CRAFT TIPS -->
+
+<!--    BASILISK -->
+
+<text name="fm_tip_elite_kernel">Tip: Elite Kernels are stronger variants of Kernel weapons. They have a 65% chance to ignore their ammo cost and have a guaranteed stun chance.
+FM: A COMPONENT for forging the Basilisk Beam, alongside the other COMPONENT called [REDACTED].</text>
+
+
+
+
+
+
+<!-- 
+**********************************************************************************************************************
+                                        Forgemaster event nodes BEGIN
+**********************************************************************************************************************
+-->
+
+<text name="map_icon_forgemaster">FORGEMASTER</text>
+<text name="map_icon_forgemaster_2">FORGEMASTER</text>
+<text name="map_icon_gunbom">WINCHESTER</text>
+
+<!-- 
+**********************************************************************************************************************
+                                        Forgemaster event nodes END
+**********************************************************************************************************************
+-->
+
+
+
+
+<!-- 
+**********************************************************************************************************************
+                                        ENDING STUFF
+**********************************************************************************************************************
+-->
+
+<text name="fm_credit_victory_future">Congratulations, you've completed the secret Harmony bleak future ending! This is an interactive teaser I designed for the Harmony Conflict I eventually plan to design in a far-future update of Forgemaster! See you then!</text>
+
+</FTL>

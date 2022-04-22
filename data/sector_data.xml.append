@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sectorDescription name="SECRET_TWISTED" unique="true">   
+	<nameList>
+		<name>Twisted Sector</name>
+	</nameList>
+	<trackList>
+		<track>crystal</track>
+	</trackList>
+	<startEvent>FM_START_TWISTED</startEvent>
+	<exitBeacon event="FINISH_BEACON" nebulaEvent="FINISH_BEACON_NEBULA"/>
+	<rebelBeacon event="FLEET_THREAT_LOW" nebulaEvent="FLEET_THREAT_LOW_NEBULA"/>
+	<removeFirstBeaconNebula/>
+	<event name="FM_START_RITUAL" min="22" max="23"/>
+</sectorDescription>
+
+
+<mod:findName type="sectorDescription" name="SECTOR_ZOLTAN">
+ <mod:findLike type="rarityList">
+  <mod-append:blueprint name="FM_LASER_BURST_3" rarity="5"/>
+   </mod:findLike>
+</mod:findName>	
+
+<mod:findName type="sectorDescription" name="SECTOR_ZOLTAN_UNIQUE">
+ <mod:findLike type="rarityList">
+  <mod-append:blueprint name="FM_LASER_BURST_3" rarity="5"/>
+   </mod:findLike>
+</mod:findName>	
+
+<mod:findName type="sectorDescription" name="SECTOR_MONK">
+ <mod:findLike type="rarityList">
+  <mod-append:blueprint name="FM_LASER_BURST_3" rarity="5"/>
+   </mod:findLike>
+   </mod:findName>	
+   
+   
+   <mod:findName type="sectorDescription" name="SECTOR_DUSKBRINGER">
+ <mod:findLike type="rarityList">
+  <mod-append:blueprint name="FM_LASER_BURST_3" rarity="5"/>
+   </mod:findLike>
+   </mod:findName>	
+   
+   
+   <mod:findName type="sectorDescription" name="SECTOR_DUSKBRINGER_UNIQUE">
+ <mod:findLike type="rarityList">
+  <mod-append:blueprint name="FM_LASER_BURST_3" rarity="5"/>
+   </mod:findLike>
+   </mod:findName>	

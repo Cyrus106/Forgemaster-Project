@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FTL>
+
+		<mod:findName type="event" name="TRUE_LAST_STAND_START">
+    <mod:findLike type="choice"><mod:selector lvl="0" />
+        <mod:findLike type="event">
+            <mod-append:choice hidden="true" max_group="1" req="SHIP_GUNBOM" blue="false">
+                <text>Contact Federation command.</text>
+                <event>
+					<text>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. Tully's eyes widen at the number of weapons mounted to your hull. One of the officers begins ordering Federation troops to grab all the reserve ammunition they have, but Tully raises a hand to silence them. "How....are you powering all those weapons?" He asks, an eyebrow raised.</text>
+                    <choice hidden="true">
+						<text>I actually am unable to power a single weapon on this ship.</text> 
+						<event>
+					    <text>Tully groans and covers his face in his hands for a moment, as if contemplating his life choices. Then looks back up at the vid screen. "...you're our last hope. I certainly hope you know what you are doing." </text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LAST_STAND_START_2"/>
+					</choice>
+				</event>
+				</choice>
+                </event>
+            </mod-append:choice>
+			
+			  <!--  <mod-append:choice hidden="true" max_group="1" req="SHIP_FORGEMASTER" blue="false">
+                <text>Contact Federation command.</text>
+                <event>
+					<text> Tully test</text>
+                    <choice hidden="true">
+						<text>Tully test player reply</text> 
+						<event>
+					    <text>Tully groans TEST </text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LAST_STAND_START_2"/>
+					</choice>
+				</event>
+				</choice>
+                </event>
+            </mod-append:choice>-->
+        </mod:findLike>
+    </mod:findLike>
+	
+	<mod-append:noQuestText/>
+		<mod-append:quest event="FORGEMASTER_PHONE_CALL">
+		</mod-append:quest>
+	
+</mod:findName>
+
+
+<mod:findName type="event" name="BOSS_GROUND_FIGHT">
+    <mod:findLike type="choice">
+        <mod:findLike type="event">
+		 <mod:findLike type="choice">
+		  <mod:findLike type="event">
+		  <mod-append:choice hidden="true" max_group="600" req="fm_plated" blue="true">
+              <text>(Plated) Send a plated down for repairs and support.</text>
+						<event>
+							<text>"Perfect, this'll help us greatly. Thank you Captain."</text>
+							
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="BOSS_GROUND_FIGHT_HELP"/>
+							</choice>
+						</event>
+            </mod-append:choice>
+            <mod-append:choice hidden="true" max_group="601" req="fm_forgemasterperson" blue="true">
+              <text>(Alastair) Quickly repair some equipment, perhaps crack a few skulls while he is at it.</text>
+						<event>
+							<text>"Perfect, this'll help us greatly. Thank you so much Captain. This rock soldier you sent down to assist is certainly something else"</text>
+							
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="BOSS_GROUND_FIGHT_HELP"/>
+							</choice>
+						</event>
+            </mod-append:choice>
+			 <mod:findWithChildLike type="choice" child-type="text">
+	<mod:selector>We can't help.</mod:selector>
+        <mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>
+    </mod:findWithChildLike> 
+			  </mod:findLike>
+		</mod:findLike>    
+        </mod:findLike>
+    </mod:findLike>
+</mod:findName>
+
+
+	</FTL>	
+		<!--
+			<choice hidden="true" max_group="1" req="SHIP_GUNBOM" blue="false">
+				<text>Contact Federation command.</text>
+				<event>
+					<text>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. Tully's eyes widen at the number of weapons mounted to your hull. One of the officers begins ordering Federation troops to grab all the reserve ammunition they have, but Tully raises a hand to silence them. "How....are you powering all those weapons?" He asks, an eyebrow raised.</text>
+					<choice hidden="true">
+						<text>I actually am unable to power a single weapon on this ship.</text> 
+						<event>
+						
+							<text>Tully groans and covers his face in his hands for a moment, as if contemplating his life choices. Then looks back up at the vid screen. "...you're our last hope. I certainly hope you know what you are doing." </text>
+					
+					<choice hidden="true">
+						<text>Continue</text>
+						<event load="LAST_STAND_START_2"/>
+					</choice>
+				</event>
+			</choice>
+		
+		</event>
+	</choice>
+	-->
+
+<!-- TEMPLATE to add ships to Tully
+
+<mod:findName type="event" name="LAST_STAND_START"> or TRUE_LAST_STAND_START. I think it is TRUE_LAST_STAND_START
+    <mod:findLike type="choice"><mod:selector lvl="0" />
+        <mod:findLike type="event">
+            <mod-append:choice hidden="true" max_group="1" req="SHIP_insert your own" blue="false">
+                <text>Contact Federation command.</text>
+                <event>
+                    <text>tully quip here</text>
+                    <choice hidden="true">
+                        <text>Continue...</text>
+                        <event load="LAST_STAND_START_2"/>
+                    </choice>
+                </event>
+            </mod-append:choice>
+        </mod:findLike>
+    </mod:findLike>
+</mod:findName>
+
+</FTL> -->

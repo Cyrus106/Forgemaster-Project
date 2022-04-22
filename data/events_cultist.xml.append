@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Crystal Homeworlds -->
+<mod:findName type = "event" name = "START_ORIGINS">
+
+	<mod-append:noQuestText/>
+		<mod-append:quest event="FORGEMASTER_PHONE_CALL">
+		</mod-append:quest>
+
+</mod:findName>
+
+<mod:findName type = "event" name = "GUARD_CULTIST">
+		
+	<mod-append:noQuestText/>
+		<mod-append:quest event="FORGEMASTER">
+		</mod-append:quest>
+
+</mod:findName>
+	

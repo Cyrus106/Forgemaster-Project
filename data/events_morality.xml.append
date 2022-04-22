@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FTL>
+<!--
+<choice hidden="true">
+	<text>Continue...</text>
+	<event load="MORALITY_UPDATE_GENERAL"/>
+</choice>
+-->
+<event name="MORALITY_UPDATE_FORGEMASTER">
+	<text>[NOTORIETY INCREASED]
+	Your actions here, justifiable or not, will likely not go over well with the Forgemaster, as well as the Federation or Militia. Continuously perform actions like this and you might start to see negative reactions from certain guards, Federation forces, or the Forgemaster himself.</text>
+</event>
+
+<event name="MORALITY_UPDATE_FORGEMASTER_ORCHID">
+	<text>[NOTORIETY INCREASED]
+	Your actions here, justifiable or not, will likely not go over well with the Forgemaster, as well as the Orchid. Continuously perform actions like this and you might start to see negative reactions from certain guards, Orchid forces, or the Forgemaster himself.</text>
+</event>
+
+<event name="MORALITY_UPDATE_FORGEMASTER_ZOLTAN">
+	<text>[NOTORIETY INCREASED]
+	Your actions here, justifiable or not, will likely not go over well with the Forgemaster, as well as the Zoltan. Continuously perform actions like this and you might start to see negative reactions from certain guards, Zoltan forces, or the Forgemaster himself.</text>
+</event>
+
+<event name="MORALITY_UPDATE_FORGEMASTER_ENGI">
+	<text>[NOTORIETY INCREASED]
+	Your actions here, justifiable or not, will likely not go over well with the Forgemaster, as well as the Engi. Continuously perform actions like this and you might start to see negative reactions from certain guards, Engi forces, or the Forgemaster himself.</text>
+</event>
+
+
+</FTL>
