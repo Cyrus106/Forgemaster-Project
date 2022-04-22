@@ -2816,68 +2816,7 @@
 	
 </weaponBlueprint>
 	
-	<weaponBlueprint name="FM_TEST3">
-    <type>BURST</type>
-    <title>TEST</title>
-    <short>TEST</short>
-    <desc>TEST</desc>
-	<tooltip>TEST</tooltip>
-    <damage>1</damage>
-    <shots>1</shots>
-	<spawnCrew>
-        <race>fm_power</race>
-        <number>1</number>
-        <noSlot>true</noSlot>
-		<lifetime>5</lifetime>
-       <statBoosts>
-            <statBoost name="noClone">
-                <boostType>SET</boostType>
-                <value>true</value>
-                <shipTarget>ALL</shipTarget>
-                <crewTarget>ALL</crewTarget>
-                <priority>999999</priority>
-            </statBoost>
-            <statBoost name="maxHealth">
-                <boostType>FLAT</boostType>
-                <amount>-1000000</amount>
-                <shipTarget>ALL</shipTarget>
-                <crewTarget>ALL</crewTarget>
-                <priority>999999</priority>
-            </statBoost>
-        </statBoosts>
-    </spawnCrew>	
-    <cooldown>3</cooldown>
-    <power>2</power>
-    <cost>160</cost>
-    <bp>2</bp>
-    <rarity>0</rarity>
-	<speed>30</speed>
-   <projectiles>
-		<projectile count="3" fake="false">laser_burst</projectile>
-		</projectiles>
-	<accuracyMod>100</accuracyMod>
-	
-    <launchSounds>
-        <sound>lightLaser1</sound>
-        <sound>lightLaser2</sound>
-        <sound>lightLaser3</sound>
-    </launchSounds>
-    <hitShipSounds>
-        <sound>hitHull2</sound>
-        <sound>hitHull3</sound>
-    </hitShipSounds>
-    <hitShieldSounds>
-        <sound>hitShield1</sound>
-        <sound>hitShield2</sound>
-        <sound>hitShield3</sound>
-    </hitShieldSounds>
-    <missSounds>
-        <sound>miss</sound>
-    </missSounds>
-    <weaponArt>laser_burst_1</weaponArt>
-    <iconImage>laser</iconImage>
-	
-</weaponBlueprint>
+
 	
 	
 	<weaponBlueprint name="FM_GATLING_ANCIENT"> <!--Improved Godkiller, costs 10 scrap to make at Forgemaster-->
