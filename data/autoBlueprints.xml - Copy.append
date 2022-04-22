@@ -1,0 +1,1960 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--ENEMY SHIPS-->
+
+
+<shipBlueprint name="FM_FORGEMASTER_CRUISER_ENEMY" layout="z_FM_FORGEMASTER_CRUISER_ENEMY" img="FM_FORGEMASTER_CRUISER_ENEMY">
+	<class>Forgemaster Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="3" max="3" room="15" start="true" />
+		<medbay power="4" max="4" room="5" start="true" />
+		<doors power="4" max="4" room="12" start="true" />
+		<drones power="6" max="6" room="0" start="true" />
+		<engines power="2" max="2" room="2" start="true" />
+		<oxygen power="2" max="3" room="3" start="true" />
+		<pilot power="3" max="3" room="17" start="true" />
+		<shields power="4" max="4" room="1" start="true" />
+		<weapons power="12" max="12" room="8" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="50" count="4" load="FM_FORGEMASTER_LOADOUT" />
+	
+	<droneList drones="20" count="6">
+		<drone name="FM_FIRE_INTRUDER" />
+		<drone name="FM_FIRE_INTRUDER" />
+
+	</droneList>
+	<health amount="27" />
+	<maxPower amount="99" />
+	<crewCount amount="1" max="3" class="fm_plated" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="FM_NANO_FORGE_ACCELERANT" />
+	<aug name="UPG_MEDBAY_NANO_FORGEMASTER_ENEMY" />
+	
+</shipBlueprint>
+
+<shipBlueprint name="FM_FORGEMASTER_CRUISER_ENEMY_LAST_STRAW" layout="z_FM_FORGEMASTER_CRUISER_ENEMY" img="FM_FORGEMASTER_CRUISER_ENEMY">
+	<class>Forgemaster Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="3" max="3" room="15" start="true" />
+		<clonebay power="2" max="3" room="5" start="true" />
+		<doors power="4" max="4" room="12" start="true" />
+		<drones power="12" max="12" room="0" start="true" />
+		<engines power="4" max="4" room="2" start="true" />
+		<oxygen power="2" max="3" room="3" start="true" />
+		<pilot power="3" max="3" room="17" start="true" />
+		<shields power="4" max="4" room="1" start="true" />
+		<weapons power="12" max="12" room="8" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>6</droneSlots>
+	<weaponList missiles="99" count="4"> 
+		<weapon name="FM_SHOTGUN_ANOMALY_MEGA" />
+		<weapon name="FM_MISSILES_BURST_FIRE_MEGA_PISSED" />
+		<weapon name="FM_MISSILES_BURST_FIRE_MEGA_PISSED" />
+		<weapon name="FM_LASER_ANOMALY_1" />
+		</weaponList>
+	<droneList drones="20" count="6">
+		<drone name="FM_FIRE_INTRUDER" />
+		<drone name="FM_FIRE_INTRUDER" />
+		<drone name="FM_FIRE_INTRUDER" />
+		<drone name="FM_AN_COMBAT_1_LASER" />
+		<drone name="FM_AN_COMBAT_1_LASER" />
+		<drone name="FM_FIRE_INTRUDER" />
+
+	</droneList>
+	<health amount="32" />
+	<maxPower amount="99" />
+	<crewCount amount="1" max="1" class="fm_plated" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="FM_NANO_FORGE_ACCELERANT" />
+	<aug name="UPG_MEDBAY_NANO_FORGEMASTER_ENEMY" />
+	<aug name="SYSTEM_CASING" />
+	<aug name="FM_SUPER_AUTO_COOLDOWN" />
+
+</shipBlueprint>
+
+<shipBlueprint name="FM_MT_BOSS_ORCHID_EXTREME" layout="mt_boss_orchid" img="mt_boss_orchid">
+	<class>Renegade Cruiser</class>
+	<systemList>
+		<engines power="2" max="2" room="19" start="true" />
+		<hacking power="2" max="2" room="2" start="true" />
+		<medbay power="2" max="2" room="11" start="true" />
+		<oxygen power="2" max="2" room="8" start="true" />
+		<pilot power="2" max="2" room="0" start="true" />
+		<shields power="4" max="12" room="4" start="true" />
+		<weapons power="12" max="12" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="16" count="4">
+		<weapon name="KERNEL_2_ELITE" />
+		<weapon name="KERNEL_FIRE" />
+		<weapon name="LASER_HEAVY_3" />
+		<weapon name="FM_BEAM_ION_PIERCE" />
+	</weaponList>
+	<droneList drones="5" count="0" />
+	<crewCount amount="1" max="1" class="orchid_vampweed" />
+	<health amount="18" />
+	<maxPower amount="30" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="FM_MT_BOSS_ORCHID_TEST" layout="mt_boss_orchid" img="mt_boss_orchid">
+	<class>Renegade Cruiser</class>
+	<systemList>
+		<engines power="2" max="2" room="19" start="true" />
+		
+		<medbay power="2" max="2" room="11" start="true" />
+		<oxygen power="2" max="2" room="8" start="true" />
+		<pilot power="2" max="2" room="0" start="true" />
+		<shields power="4" max="12" room="4" start="true" />
+		<weapons power="0" max="0" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="16" count="4">
+		<weapon name="ION_1" />
+	</weaponList>
+	<droneList drones="5" count="0" />
+	<crewCount amount="1" max="1" class="orchid_vampweed" />
+	<health amount="35" />
+	<maxPower amount="30" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="FM_SLUG_DEBT_COLLECT" layout="fm_slug_collector" img="fm_slug_collector">
+	<class>Clairvoyant Debt Shark</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="1" max="3" room="3" start="false" />
+		<doors power="1" max="3" room="2" start="false" />
+		<engines power="1" max="2" room="8" start="true" />
+		<hacking power="1" max="3" room="6" start="false" />
+		<medbay power="1" max="3" room="3" start="false" />
+		<mind power="1" max="2" room="5" start="true" />
+		<oxygen power="1" max="2" room="10" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="9" start="true" />
+		<teleporter power="1" max="3" room="7" start="true" />
+		<weapons power="2" max="10" room="4" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="20" count="4">
+		<weapon name="FM_LASER_DEBT_COLLECT" />
+		<weapon name="MODULAR_MISSILE_FIRE_BIO" />
+		<weapon name="ION_BIO" />
+		<weapon name="FM_LASER_DEBT_COLLECT" />
+	</weaponList>
+	<droneList drones="10" count="0" />
+	<health amount="16" />
+	<maxPower amount="30" />
+	<crewCount amount="3" max="10" class="slug_saboteur" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL" />
+</shipBlueprint>
+
+<shipBlueprint name="FM_GUNHYDRA_ENEMY" layout="ZFM_GUNHYDRA_ENEMY" img="FM_GUNHYDRA_ENEMY">
+	<class>GunBomination</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<battery power="1" max="1" room="1" start="true" />
+		<cloaking power="1" max="2" room="13" start="true" />
+		<doors power="1" max="3" room="4" start="true" />
+		<drones power="18" max="18" room="14" start="true" />
+		<engines power="1" max="3" room="10" start="true" />
+		<hacking power="1" max="1" room="8" start="true" />
+		<medbay power="1" max="1" room="11" start="true" />
+		<mind power="1" max="2" room="9" start="true" />
+		<oxygen power="1" max="1" room="12" start="true" />
+		<pilot power="2" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="6" start="true" />
+	</systemList>
+	<weaponSlots>0</weaponSlots>
+	<droneSlots>8</droneSlots>
+	<weaponList missiles="0" count="0" />
+	<droneList drones="99" count="8">
+		<drone name="BATTLETOG2_DEFEND_GUNBOM" />
+		<drone name="BATTLETOG2_BOARDER_GUNBOM" />
+		<drone name="COMBAT_2_LASER_GUNBOM" />
+		<drone name="LOOT_ENGI_2" />
+		<drone name="ION_1_AMP3_ENEMY" />
+		<drone name="LOOT_LANIUS_2" />
+		<drone name="LOOT_AUTO_2" />
+		<drone name="DEFENSE_3_ENEMY" />
+	</droneList>
+	<health amount="18" />
+	<maxPower amount="36" />
+	<crewCount amount="1" max="4" class="mantis_free" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="EX_DRONE_SPEED" />
+	<aug name="DRONE_SPEED" />
+	<aug name="TRINKET_SHIELD" />
+</shipBlueprint>
+
+<!-- SUICIDE MISSION BOSSES -->
+<shipBlueprint name="FM_MT_BOSS_CLAN_SUICIDE" layout="mt_boss_clansmen_suicide" img="mt_boss_clansmen_suicide">
+	<class>Twisted Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<artillery power="3" max="5" room="3" start="true" weapon="BOMB_ION_ENEMY_ARTY" />
+		<artillery power="3" max="5" room="4" start="true" weapon="BOMB_ION_ENEMY_ARTY" />
+		<doors power="3" max="3" room="9" start="true" />
+		<engines power="2" max="2" room="10" start="true" />
+		<clonebay power="3" max="3" room="7" start="true" />
+		<oxygen power="4" max="4" room="11" start="true" />
+		<pilot power="3" max="3" room="0" start="true" />
+		<mind power="3" max="3" room="12" start="true" />
+		<shields power="4" max="10" room="2" start="true" />
+		<teleporter power="1" max="2" room="13" start="true" />
+		<weapons power="8" max="10" room="1" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="45" count="4">
+		<weapon name="LOOT_KNIGHT_1" />
+		<weapon name="ION_INSTANT" />
+		<weapon name="MODULAR_LASER_FIRE_LOCKDOWN" />
+		<weapon name="MODULAR_LASER_FIRE_STUN" />
+	</weaponList>
+	<droneList drones="9" count="0" />
+	<health amount="24" />
+	<maxPower amount="999" />
+	<crewCount amount="1" max="1" class="slug_clansman" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL" />
+	<aug name="SYSTEM_CASING_NEW" />
+</shipBlueprint>
+
+<shipBlueprint name="FM_BOSS_CRYSTAL1" layout="zmt_boss_crystal_suicide" img="zmt_boss_crystal_suicide">
+	<class>Twisted Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="3" max="3" room="19" start="true" />
+		<doors power="3" max="3" room="21" start="true" />
+		<drones power="10" max="10" room="8" start="true" />
+		<engines power="4" max="4" room="12" start="true" />
+		<oxygen power="3" max="3" room="11" start="true" />
+		<pilot power="3" max="3" room="1" start="true" />
+		<shields power="6" max="10" room="6" start="true" />
+		<teleporter power="3" max="3" room="3" start="true" />
+		<weapons power="13" max="13" room="0" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="20" count="4">
+		<weapon name="CRYSTAL_BURST_2_RED" />
+		<weapon name="ANCIENT_ION_2" />
+		<weapon name="FM_SHOTGUN_PLATINUM_ENEMY" />
+		<weapon name="MISSILES_ENERGY" />
+	</weaponList>
+	<droneList drones="5" count="3">
+		<drone name="ATOMR_BOARDER" />
+		<drone name="HELLRAISER_FIRE" />
+		<drone name="HELLRAISER_FIRE" />
+	</droneList>
+	<health amount="45" />
+	<maxPower amount="999" />
+	<crewCount amount="1" max="1" class="crystal_sentinel" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="CRYSTAL_ARMOR_ENEMY" />
+	<aug name="TWISTED_CRYSTAL_ARMOR_50" />
+	<aug name="EX_FIRE_EXTINGUISHERS" />
+</shipBlueprint>
+
+<shipBlueprint name="FM_BOSS_ENGI1" layout="zmt_boss_engi_suicide" img="zmt_boss_engi_suicide">
+	<class>Twisted Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="3" max="3" room="1" start="true" />
+		<drones power="8" max="8" room="2" start="true" />
+		<engines power="2" max="2" room="9" start="true" />
+		<medbay power="3" max="3" room="11" start="true" />
+		<oxygen power="4" max="4" room="15" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="6" max="10" room="3" start="true" />
+		<weapons power="10" max="14" room="12" start="true" />
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>8</droneSlots>
+	<weaponList missiles="30" count="5">
+		<weapon name="ENERGY_2_PLAYER" />
+		<weapon name="MISSILES_3_ENEMY" />
+		<weapon name="SNIPER" />
+		<weapon name="SHOTGUN_TOGGLE_ION" />
+		<weapon name="LOOT_MATH_6" />
+	</weaponList>
+	<droneList drones="3" count="9">
+		<drone name="DEFENSE_2" />
+		<drone name="GUARDIAN_2_DRONE" />
+		<drone name="MENDERR" />
+	</droneList>
+	<health amount="900" />
+	<maxPower amount="999" />
+	<crewCount amount="1" max="1" class="engi" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="UPG_MEDBAY_NANO" />
+	<aug name="UPG_DRONE_SPEED" />
+</shipBlueprint>
+
+<shipBlueprint name="FM_BOSS_ORCHID1" layout="zmt_boss_orchid_orchid" img="zmt_boss_orchid_orchid">
+	<class>Twisted Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<engines power="3" max="3" room="19" start="true" />
+		<teleporter power="3" max="3" room="3" start="true" />
+		<drones power="8" max="8" room="5" start="true" />
+		<hacking power="2" max="2" room="2" start="true" />
+		<medbay power="2" max="2" room="11" start="true" />
+		<oxygen power="1" max="1" room="8" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="6" max="10" room="4" start="true" />
+		<weapons power="9" max="12" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="24" count="4">
+		<weapon name="LOOT_LOSTSUN_1" />
+		<weapon name="MODULAR_LASER_ACCURACY" />
+		<weapon name="LASER_FIRE_SPECIAL" />
+		<weapon name="MODULAR_LASER_FIRE_PIERCE" />
+	</weaponList>
+	<droneList drones="8" count="2">
+		<drone name="ION_1_AMP3_ENEMY" />
+		<drone name="PEST_RAD_ENEMY" />
+	</droneList>
+	<health amount="32" />
+	<maxPower amount="999" />
+	<crewCount amount="1" max="1" class="orchid_fire" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="LAB_ORCHID_THORNS" />
+	<aug name="LAB_ORCHID_TOTIPOTENCY" />
+	<aug name="ORCHID_KINDLING_ENEMY" />
+</shipBlueprint>
+
+<shipBlueprint name="FM_BOSS_SHELL1" layout="zmt_boss_shell_suicide" img="zmt_boss_shell_suicide">
+	<class>Twisted Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="2" max="2" room="5" start="true" />
+		<clonebay power="3" max="3" room="16" start="true" />
+		<doors power="3" max="3" room="12" start="true" />
+		<engines power="2" max="2" room="23" start="true" />
+		<oxygen power="4" max="4" room="6" start="true" />
+		<pilot power="3" max="3" room="0" start="true" />
+		<shields power="5" max="12" room="17" start="true" />
+		<drones power="4" max="10" room="24" start="true" />
+		<weapons power="7" max="15" room="15" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="40" count="4">
+		<weapon name="FM_PHASER_SUFFOCATION_ENEMY" />
+		<weapon name="SHELL_LAUNCHER" />
+		<weapon name="SPORE_CHAIN" />
+		<weapon name="SPORE_CHAIN" />
+	</weaponList>
+	<droneList drones="5" count="2">
+		<drone name="DEFENSE_TRINITY_MISSILE" />
+		<drone name="DEFENSE_TRINITY_DRONE" />
+	</droneList>
+	<health amount="35" />
+	<maxPower amount="999" />
+	<crewCount amount="1" max="1" class="shell" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="TOXIC_GAS" />
+	<aug name="RADIANT_GAS" />
+	<aug name="NANOBOT_DEFENSE_SYSTEM" />
+</shipBlueprint>
+
+<shipBlueprint name="FM_BOSS_FED1" layout="zmt_boss_fed_suicide" img="zmt_boss_fed_suicide">
+	<class>Twisted Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<artillery power="3" max="3" room="23" start="true" weapon="TAINTED_BEAM_3_ARTY_ENEMY" />
+		<cloaking power="2" max="2" room="7" start="true" />
+		<doors power="3" max="3" room="17" start="true" />
+		<drones power="1" max="1" room="13" start="true" />
+		<engines power="1" max="1" room="10" start="true" />
+		<hacking power="2" max="2" room="5" start="true" />
+		<medbay power="3" max="3" room="14" start="true" />
+		<oxygen power="2" max="2" room="6" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="6" max="10" room="9" start="true" />
+		<weapons power="8" max="8" room="22" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>1</droneSlots>
+	<weaponList missiles="12" count="4">
+		<weapon name="BOMB_BREACH_1_ENEMY" />
+		<weapon name="LOOT_DUSKBRINGER_1" />
+		<weapon name="LASER_BURST_5" />
+		<weapon name="MINELAUNCHER_1" />
+	</weaponList>
+	<droneList drones="2" count="1">
+		<drone name="COMBAT_1_LASER" />
+	</droneList>
+	<health amount="32" />
+	<maxPower amount="999" />
+	<crewCount amount="1" max="1" class="rock_outcast" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ANCIENT_SHIELD" />
+	<aug name="UPG_AETHER_SHIELDS" />
+</shipBlueprint>
+
+<shipBlueprint name="FM_BOSS_ENGINEER1" layout="zmt_boss_engineer_suicide" img="zmt_boss_engineer_suicide">
+	<class>Twisted Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="2" max="2" room="16" start="true" />
+		<drones power="8" max="12" room="19" start="true" />
+		<engines power="2" max="2" room="24" start="true" />
+		<medbay power="2" max="2" room="6" start="true" />
+		<oxygen power="2" max="2" room="2" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="4" max="10" room="8" start="true" />
+		<teleporter power="3" max="3" room="15" start="true" />
+		<weapons power="12" max="12" room="3" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="LASER_HEAVY_3" />
+		<weapon name="LASER_HEAVY_3" />
+		<weapon name="ION_BIO" />
+		<weapon name="SHOTGUN_2" />
+	</weaponList>
+	<droneList drones="10" count="4">
+		<drone name="SURGEON_BOARDER" />
+		<drone name="SURGEON_BOARDER" />
+		<drone name="SURGEON_BATTLE" />
+		<drone name="ROOMBA_BOARDER" />
+	</droneList>
+	<health amount="32" />
+	<maxPower amount="999" />
+	<crewCount amount="1" max="1" class="human_engineer" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="UPG_MEDBAY_NANO" />
+	<aug name="UPG_DRONE_SPEED_2" />
+</shipBlueprint>
+
+<shipBlueprint name="FM_BOSS_R1" layout="zmt_boss_rock_suicide" img="zmt_boss_rock_suicide"> <!-- SUICIDE MISSION ROCK -->
+	<class>Twisted Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<artillery power="2" max="4" room="12" start="true" weapon="ZOLTAN_DELETER_ARTY_CHAIN" />
+		<artillery power="2" max="4" room="3" start="true" weapon="BOMB_BREACH_1_ENEMY_ARTY_CHAIN" />
+		<artillery power="2" max="4" room="13" start="true" weapon="KERNEL_CHAIN_ELITE_ENEMY_ARTY" />
+		<artillery power="2" max="4" room="0" start="true" weapon="BEAM_ADAPT_3_ARTY_CHAIN" />
+		<cloaking power="5" max="5" room="15" start="true" />
+		<medbay power="3" max="3" room="16" start="true" />
+		<doors power="2" max="2" room="14" start="true" />
+		<drones power="12" max="12" room="8" start="true" />
+		<engines power="3" max="3" room="7" start="true" />
+		<hacking power="1" max="1" room="9" start="true" />
+		<oxygen power="2" max="3" room="17" start="true" />
+		<pilot power="2" max="2" room="10" start="true" />
+		<shields power="4" max="5" room="2" start="true" />
+		<teleporter power="1" max="1" room="6" start="true" />
+		<weapons power="4" max="9" room="5" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="16" count="4">
+		<weapon name="SHOTGUN_GOLD_3" />
+		<weapon name="SHOTGUN_GOLD" />
+		<weapon name="MISSILES_3_ENEMY" />
+		<weapon name="LOOT_MILITIA_1" />
+	</weaponList>
+	<droneList drones="20" count="3">
+		<drone name="OMNI_DRONE" />
+		<drone name="GUARDIAN_1_MISSILE" />
+		<drone name="GUARDIAN_2_DRONE" />
+	</droneList>
+	<health amount="20" />
+	<maxPower amount="999" />
+	<crewCount amount="1" max="1" class="rock_crusader" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="PALADIN_ARMOR" />
+	<aug name="LAB_ROCK_SPEED" />
+	<aug name="LAB_ROCK_SKIN" />
+</shipBlueprint>
+
+<shipBlueprint name="FM_BOSS_LANIUS1" layout="zmt_boss_lanius_suicide" img="zmt_boss_lanius_suicide">
+	<class>Twisted Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="2" max="2" room="5" start="true" />
+		<drones power="5" max="5" room="9" start="true" />
+		<engines power="2" max="2" room="12" start="true" />
+		<medbay power="2" max="2" room="10" start="true" />
+		<mind power="1" max="1" room="17" start="true" />
+		<pilot power="2" max="2" room="0" start="true" />
+		<shields power="6" max="10" room="7" start="true" />
+		<teleporter power="2" max="2" room="14" start="true" />
+		<weapons power="8" max="16" room="8" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="SHOTGUN_TOGGLE_FIRE" />
+		<weapon name="SHOTGUN_STEEL" />
+		<weapon name="SHOTGUN_TOGGLE_TOXIC" />
+		<weapon name="SHOTGUN_TOGGLE_ION" />
+	</weaponList>
+	<droneList drones="3" count="4">
+		<drone name="BATTLETOG2_BOARDER" />
+		<drone name="FLAK_1_AMP2" />
+		<drone name="GUARDIAN_2_DRONE" />
+	</droneList>
+	<health amount="29" />
+	<maxPower amount="999" />
+	<crewCount amount="1" max="1" class="lanius" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SPEED_SUITS" />
+	<aug name="NANOBOT_DEFENSE_SYSTEM" />
+	<aug name="LAB_LANIUS_HEALTH" />
+</shipBlueprint>
+
+<shipBlueprint name="FM_BOSS_FREE1" layout="zmt_boss_freemantis_suicide" img="zmt_boss_freemantis_suicide">
+	<class>Twisted Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="4" max="4" room="11" start="true" />
+		<doors power="3" max="3" room="8" start="true" />
+		<engines power="3" max="3" room="16" start="true" />
+		<medbay power="3" max="3" room="9" start="true" />
+		<oxygen power="4" max="4" room="12" start="true" />
+		<pilot power="2" max="2" room="0" start="true" />
+		<shields power="6" max="10" room="10" start="true" />
+		<drones power="6" max="12" room="14" start="true" />
+		<weapons power="8" max="8" room="2" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>7</droneSlots>
+	<weaponList missiles="7" count="4">
+		<weapon name="UNSPOOLER_ENEMY" />
+		<weapon name="UNSPOOLER_ENEMY" />
+		<weapon name="SCANNER_BAIT" />
+		<weapon name="SCANNER_BAIT" />
+	</weaponList>
+	<droneList drones="99" count="7">
+		<drone name="BOARDER_ION" />
+		<drone name="BOARDER_ION" />
+		<drone name="BOARDER_ION" />
+		<drone name="BOARDER_ION" />
+		<drone name="BOARDER_ION" />
+		<drone name="BOARDER_ION" />
+		<drone name="DEFENSE_3_ENEMY" />
+	</droneList>
+	<health amount="23" />
+	<maxPower amount="999" />
+	<crewCount amount="1" max="1" class="roomba" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SUPER_CREW_STIMS" />
+</shipBlueprint>
+
+<shipBlueprint name="FM_BOSS_MANTIS1" layout="zmt_boss_mantis_suicide" img="zmt_boss_mantis_suicide">
+	<class>Twisted Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="2" max="2" room="13" start="true" />
+		<doors power="3" max="3" room="17" start="true" />
+		<drones power="8" max="8" room="6" start="true" />
+		<engines power="3" max="3" room="10" start="true" />
+		<oxygen power="3" max="3" room="4" start="true" />
+		<pilot power="2" max="3" room="0" start="true" />
+		<shields power="6" max="10" room="16" start="true" />
+		<teleporter power="2" max="3" room="7" start="true" />
+		<weapons power="6" max="10" room="5" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="15" count="4">
+		<weapon name="ANCIENT_BOMB_ENEMY" />
+		<weapon name="ANCIENT_BOMB_ENEMY" />
+		<weapon name="LASER_LIGHT_2" />
+		<weapon name="LASER_LIGHT_2" />
+	</weaponList>
+	<droneList drones="5" count="2">
+		<drone name="ANCIENT_DEFENSE_1_ENEMY" />
+		<drone name="DEFENSE_2_ENEMY" />
+	</droneList>
+	<health amount="24" />
+	<maxPower amount="999" />
+	<crewCount amount="1" max="1" class="mantis_suzerain" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="CREW_STIMS" />
+</shipBlueprint>
+
+<shipBlueprint name="FM_BOSS_DUSK1" layout="zmt_boss_duskbringer_suicide" img="zmt_boss_duskbringer_suicide">
+	<class>Twisted Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="3" max="3" room="5" start="true" />
+		<doors power="3" max="3" room="1" start="true" />
+		<engines power="2" max="2" room="19" start="true" />
+		<oxygen power="4" max="4" room="18" start="true" />
+		<pilot power="3" max="3" room="0" start="true" />
+		<shields power="6" max="8" room="17" start="true" />
+		<teleporter power="4" max="4" room="10" start="true" />
+		<weapons power="8" max="16" room="3" start="true" />
+	</systemList>
+	<weaponSlots>5</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="99" count="5">
+		<weapon name="CLONE_CANNON_CRUSADER_SPECIAL" />
+		<weapon name="CLONE_CANNON_CHIEF_SPECIAL" />
+		<weapon name="CLONE_CANNON_SYMBIOTE_SPECIAL" />
+		<weapon name="CLONE_CANNON_HATCH_SPECIAL" />
+		<weapon name="CLONE_CANNON_BABYORCHID_TWEAK" />
+	</weaponList>
+	<droneList drones="8" count="2">
+		<drone name="ATOMR_DEFEND" />
+		<drone name="GUARDIAN_2_MISSILE" />
+	</droneList>
+	<health amount="22" />
+	<maxPower amount="999" />
+	<crewCount amount="1" max="1" class="zoltan_martyr" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="UPG_AETHER_SHIELDS" />
+	<aug name="ROYAL_SHIELD" />
+	<aug name="SALT_ARMOR" />
+</shipBlueprint>
+
+<shipBlueprint name="FM_BOSS_TUCO1" layout="zmt_boss_tuco_suicide" img="zmt_boss_tuco_suicide">
+	<class>Twisted Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="3" max="3" room="14" start="true" />
+		<drones power="8" max="8" room="16" start="true" />
+		<engines power="1" max="1" room="13" start="true" />
+		<medbay power="2" max="2" room="12" start="true" />
+		<mind power="2" max="2" room="7" start="true" />
+		<oxygen power="3" max="3" room="1" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="6" max="10" room="10" start="true" />
+		<teleporter power="2" max="2" room="11" start="true" />
+		<weapons power="8" max="10" room="9" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="7" count="4">
+		<weapon name="SLOTGUN" />
+		<weapon name="SLOTGUN" />
+		<weapon name="HORSE_GUN" />
+		<weapon name="HORSE_GUN" />
+	</weaponList>
+	<droneList drones="5" count="3">
+		<drone name="GUARDIAN_1_DRONE" />
+		<drone name="BATTLETOG2_DEFEND" />
+		<drone name="BATTLETOG2_DEFEND" />
+	</droneList>
+	<health amount="38" />
+	<maxPower amount="999" />
+	<crewCount amount="1" max="1" class="butler" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="EX_ION_ARMOR" />
+	<aug name="LOCKED_COAL_AUG" />
+</shipBlueprint>
+
+<shipBlueprint name="FM_BOSS_MONK1" layout="zmt_boss_monk_suicide" img="zmt_boss_monk_suicide">
+	<class>Twisted Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="3" max="3" room="6" start="true" />
+		<drones power="10" max="10" room="0" start="true" />
+		<engines power="2" max="2" room="10" start="true" />
+		<medbay power="2" max="2" room="1" start="true" />
+		<oxygen power="4" max="4" room="4" start="true" />
+		<pilot power="1" max="1" room="2" start="true" />
+		<shields power="6" max="12" room="19" start="true" />
+		<weapons power="8" max="10" room="22" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="FM_BEAM_ION_PIERCE" />
+		<weapon name="ANCIENT_STUN" />
+		<weapon name="ANCIENT_STUN" />
+		<weapon name="LASER_STUN" />
+	</weaponList>
+	<droneList drones="8" count="4">
+		<drone name="GUARDIAN_1_MISSILE" />
+		<drone name="LOOT_SEPARATIST_1_DEFEND" />
+		<drone name="DEFENSE_2_ENEMY" />
+		<drone name="GUARDIAN_1_MISSILE" />
+	</droneList>
+	<health amount="24" />
+	<maxPower amount="999" />
+	<crewCount amount="1" max="1" class="zoltan_monk" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ION_ARMOR" />
+	<aug name="ENERGY_SHIELD" />
+</shipBlueprint>
+
+<shipBlueprint name="FM_BOSS_SEPA1" layout="zmt_boss_separatist_suicide" img="zmt_boss_separatist_suicide">
+	<class>Twisted Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<doors power="4" max="4" room="14" start="true" />
+		<drones power="20" max="20" room="5" start="true" />
+		<engines power="1" max="1" room="12" start="true" />
+		<hacking power="3" max="3" room="6" start="true" />
+		<medbay power="4" max="4" room="11" start="true" />
+		<oxygen power="4" max="4" room="4" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="12" max="16" room="15" start="true" />
+		<weapons power="10" max="14" room="13" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>6</droneSlots>
+	<weaponList missiles="5" count="4">
+		<weapon name="LASER_FIRE_SPECIAL" />
+		<weapon name="LASER_FROST_1" />
+		<weapon name="CRYSTAL_SHOTGUN" />
+		<weapon name="ION_CHAIN_CHARGEGUN" />
+	</weaponList>
+	<droneList drones="16" count="16">
+		<drone name="FM_HACKER_DRONE" />
+		<drone name="FM_HACKER_DRONE" />
+		<drone name="YINYANG_BATTLE" />
+		<drone name="YINYANG_BOARDER" />
+		<drone name="DEFENSE_TRINITY_MISSILE" />
+		<drone name="DEFENSE_TRINITY_MISSILE" />
+	</droneList>
+	<health amount="24" />
+	<maxPower amount="999" />
+	<crewCount amount="1" max="1" class="engi_separatist" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="UPG_MEDBAY_NANO" />
+	<aug name="NO_GHOST" />
+</shipBlueprint>
+
+<shipBlueprint name="FM_BOSS_STEALTH1" layout="zmt_boss_stealth_suicide" img="zmt_boss_stealth_suicide">
+		<class>Twisted Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="6" max="6" room="7" start="true" />
+		<doors power="3" max="3" room="13" start="true" />
+		<engines power="6" max="6" room="8" start="true" />
+		<hacking power="3" max="3" room="14" start="true" />
+		<medbay power="4" max="4" room="3" start="true" />
+		<oxygen power="4" max="4" room="1" start="true" />
+		<pilot power="2" max="2" room="0" start="true" />
+		<shields power="8" max="8" room="2" start="true" />
+		<weapons power="12" max="12" room="4" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="FOCUS_SHADOW" />
+		<weapon name="LASER_SHADOW" />
+		<weapon name="LASER_SHADOW" />
+		<weapon name="SHOTGUN_SHADOW" />
+	</weaponList>
+	<droneList drones="2" count="0" />
+	<health amount="26" />
+	<maxPower amount="999" />
+	<crewCount amount="1" max="1" class="fm_human_texture" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="CLOAK_FIRE" />
+	<aug name="EX_CLOAK_FIRE" />
+</shipBlueprint>
+
+<shipBlueprint name="FM_BOSS_KES1" layout="zmt_boss_kestrel_suicide" img="zmt_boss_kestrel_suicide">
+		<class>Twisted Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<artillery power="4" max="4" room="14" start="true" weapon="ARTILLERY_COALITION_CEALAFORMER" />
+		<artillery power="4" max="4" room="11" start="true" weapon="ARTILLERY_COALITION_CEALAFORMER" />
+		<doors power="3" max="3" room="1" start="true" />
+		<engines power="5" max="5" room="17" start="true" />
+		<pilot power="3" max="3" room="0" start="true" />
+		<shields power="6" max="10" room="7" start="true" />
+		<weapons power="14" max="14" room="10" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="FM_CHAINGUN_ION_SUICIDE" />
+		<weapon name="FM_CHAINGUN_ION_SUICIDE" />
+		<weapon name="FM_CHAINGUN_ION_SUICIDE" />
+		<weapon name="FM_CHAINGUN_ION_SUICIDE" />
+	</weaponList>
+	<droneList drones="0" count="0" />
+	<health amount="25" />
+	<maxPower amount="999" />
+	<crewCount amount="1" max="1" class="phantom" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="SALT_ARMOR" />
+	<aug name="AGGRESSIVE_GHOST_SPLITTER" />
+</shipBlueprint>
+
+<shipBlueprint name="FM_BOSS_LOSTSUN1" layout="zmt_boss_lostsun_suicide" img="zmt_boss_lostsun_suicide">
+	<class>Twisted Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<drones power="16" max="16" room="8" start="true" />
+		<engines power="6" max="6" room="6" start="true" />
+		<medbay power="4" max="4" room="0" start="true" />
+		<mind power="3" max="3" room="7" start="true" />
+		<oxygen power="4" max="4" room="13" start="true" />
+		<pilot power="3" max="3" room="9" start="true" />
+		<shields power="16" max="16" room="3" start="true" />
+		<teleporter power="4" max="4" room="5" start="true" />
+		<weapons power="9" max="16" room="4" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="99" count="4">
+		<weapon name="FM_ROYAL_MINELAUNCHER" />
+		<weapon name="FM_ROYAL_MINELAUNCHER" />
+		<weapon name="FM_ANCIENT_ION_1_KAI" />
+		<weapon name="FM_ANCIENT_ION_1_KAI2" />
+		
+	</weaponList>
+	<droneList drones="20" count="4">
+		<drone name="ROYAL_DEFENSE_1" />
+		<drone name="ROYAL_DEFENSE_1" />
+		<drone name="ROYAL_DEFENSE_1" />
+		<drone name="ROYAL_DEFENSE_1" />
+	</droneList>
+	<health amount="25" />
+	<maxPower amount="999" />
+	<crewCount amount="1" max="1" class="rock_commando" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="REGEN_ARMOR" />
+	<aug name="SYLVAN_SHIELD_PRIME" />
+</shipBlueprint>
+
+<shipBlueprint name="FM_BOSS_SLUG1" layout="zmt_boss_slug_suicide" img="zmt_boss_slug_suicide">
+	<class>Twisted Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="2" max="2" room="3" start="true" />
+		<clonebay power="3" max="3" room="18" start="true" />
+		<doors power="3" max="3" room="12" start="true" />
+		<drones power="5" max="5" room="0" start="true" />
+		<engines power="2" max="2" room="17" start="true" />
+		<mind power="3" max="3" room="15" start="true" />
+		<oxygen power="4" max="4" room="9" start="true" />
+		<pilot power="1" max="1" room="5" start="true" />
+		<shields power="6" max="12" room="11" start="true" />
+		<weapons power="14" max="14" room="10" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="10" count="4">
+		<weapon name="ANCIENT_FOCUS_2_SMOKER" />
+		<weapon name="ANCIENT_FOCUS_2_SMOKER" />
+		<weapon name="ION_TRI" />
+		<weapon name="ION_TRI" />
+	</weaponList>
+	<droneList drones="20" count="2">
+		<drone name="ENERGY_1_AMP3_ENEMY" />
+		<drone name="FLAK_1_AMP2" />
+	</droneList>
+	<health amount="24" />
+	<maxPower amount="999" />
+	<crewCount amount="1" max="1" class="slug_ranger" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL" />
+	<aug name="UPG_WEAPONS_PERFORMANCE" />
+	<aug name="EX_SHIELD_RECHARGE" />
+</shipBlueprint>
+
+<shipBlueprint name="FM_BOSS_ZOLTAN1" layout="zmt_boss_zoltan_suicide" img="zmt_boss_zoltan_suicide">
+	<class>Twisted Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="4" max="4" room="4" start="true" />
+		<doors power="3" max="3" room="6" start="true" />
+		<engines power="2" max="2" room="8" start="true" />
+		<mind power="3" max="3" room="9" start="true" />
+		<oxygen power="4" max="4" room="14" start="true" />
+		<pilot power="2" max="2" room="3" start="true" />
+		<shields power="6" max="10" room="17" start="true" />
+		<weapons power="10" max="10" room="12" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>1</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="ENERGY_CHAINGUN" />
+		<weapon name="ENERGY_CHAINGUN" />
+		<weapon name="FM_FOCUS_ENERGY_2_PLAYER" />
+		<weapon name="ENERGY_CONSERVATIVE" />
+	</weaponList>
+	<droneList drones="5" count="1">
+		<drone name="DEFENSE_2" />
+	</droneList>
+	<health amount="18" />
+	<maxPower amount="999" />
+	<crewCount amount="1" max="1" class="engi_defender" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ANCIENT_SHIELD" />
+	<aug name="EX_BREACH_SEALANT" />
+	
+</shipBlueprint>
+
+<shipBlueprint name="FM_BOSS_LEECH1" layout="zmt_boss_leech_suicide" img="zmt_boss_leech_suicide">
+	<class>Twisted Renegade Cruiser</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="2" max="2" room="2" start="true" />
+		<clonebay power="2" max="2" room="8" start="true" />
+		<doors power="3" max="3" room="5" start="true" />
+		<drones power="1" max="1" room="11" start="true" />
+		<engines power="1" max="1" room="9" start="true" />
+		<hacking power="3" max="3" room="1" start="true" />
+		<oxygen power="3" max="3" room="14" start="true" />
+		<pilot power="2" max="2" room="0" start="true" />
+		<shields power="6" max="12" room="7" start="true" />
+		<weapons power="9" max="13" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="FM_BEAM_BASILISK_ENEMY" />
+		<weapon name="ION_BIO" />
+		<weapon name="LASER_LIGHT" />
+		<weapon name="BOMB_CONSERVRECYCLER" />
+	</weaponList>
+	<droneList drones="99" count="3">
+		<drone name="BUTLER_DEFENSE" />
+		<drone name="BUTLER_DEFENSE" />
+		<drone name="BUTLER_DEFENSE" />
+	</droneList>
+	<health amount="45" />
+	<maxPower amount="999" />
+	<crewCount amount="1" max="1" class="leech_ampere" />
+	<boardingAI>invasion</boardingAI>
+	<aug name="DEPRESSION_EMITTER" />
+	<aug name="UPG_SHIELD_ION" />
+</shipBlueprint>
+
+
+
+<!-- SUICIDE MISSION BOSSES END -->
+
+
+<!--ENEMY SHIPS END-->
+
+
+<!--FORGEMASTER BP LISTS NEW -->
+
+<blueprintList name="LIST_GUNBOM">
+	<name>LASER_BURST_8</name>
+	<name>GATLING_VERSION4</name>
+	<name>LASER_FROST_2_PLAYER</name>
+	<name>MISSILES_ENERGY</name>
+	<name>MISSILES_2</name>
+	<name>MISSILES_3</name>
+	<name>MISSILES_4_PLAYER</name>
+	<name>MISSILES_ROCK</name>
+	<name>CRYSTAL_BURST_1_RED</name>
+	<name>CRYSTAL_BURST_2_RED</name>
+	<name>CRYSTAL_HEAVY_1_RED</name>
+	<name>CRYSTAL_HEAVY_2_RED</name>
+	<name>CRYSTAL_STUN_RED</name>
+	<name>MINELAUNCHER_CRYSTAL</name>
+	<name>ZENITH_1</name>
+	<name>LANCE_1</name>
+	<name>BOMB_CLUSTER</name>
+	<name>ANCIENT_LASER_2</name>
+	<name>ANCIENT_LASER_3</name>
+	<name>ANCIENT_BOMB</name>
+	<name>ANCIENT_MINELAUNCHER</name>
+	<name>ANCIENT_BEAM_2</name>
+	<name>ANCIENT_BEAM_3</name>
+	<name>ANCIENT_HAVOC</name>
+	<name>ANCIENT_FOCUS</name>
+	<name>ANCIENT_FOCUS_2</name>
+	<name>ANCIENT_ION_1</name>
+	<name>ANCIENT_ION_2</name>
+	<name>ANCIENT_STUN</name>
+	<name>ROYAL_LASER_3</name>
+	<name>ROYAL_BEAM_3</name>
+	<name>ROYAL_HAVOC</name>
+	<name>ROYAL_FOCUS</name>
+	<name>ROYAL_BOMB</name>
+	<name>ROYAL_ION_2</name>
+	<name>LASER_BURST_SYLVAN</name>
+	<name>LASER_BURST_5_SYLVAN</name>
+	<name>BEAM_4_SYLVAN</name>
+	<name>CRASH_LASER</name>
+	<name>ION_PIERCE_CHAIN</name>
+	<name>LASER_FIRE_SPECIAL</name>
+	<name>LASER_BISHOP</name>
+	<name>BOMB_CHERRI</name>
+	<name>LASER_CHAINGUN_GOLD</name>
+	<name>SALT_LAUNCHER</name>
+	<name>SHOTGUN_GOLD</name>
+	<name>SHOTGUN_GOLD_3</name>
+	<name>BEAM_SHELL</name>
+	<name>ZOLTAN_DELETER</name>
+	<name>GATLING_VERSION1</name>
+	<name>GATLING_SYLVAN</name>
+	<name>GATLING_SYLVAN_HONOR</name>
+	<name>LOOT_CIVILIAN_1</name>
+	<name>LOOT_MILITIA_1</name>
+	<name>LOOT_FEDERATION_1</name>
+	<name>LOOT_COALITION_1</name>
+	<name>LOOT_DUSKBRINGER_1</name>
+	<name>LOOT_FREEMANTIS_1</name>
+	<name>LOOT_LOSTSUN_1</name>
+	<name>LOOT_LOSTSUN_2</name>
+	<name>LOOT_MANTIS_2</name>
+	<name>LOOT_REBEL_1</name>
+	<name>LOOT_ROCK_1</name>
+	<name>LOOT_ZOLTAN_1</name>
+	<name>LOOT_ZOLTAN_2</name>
+	<name>LOOT_KNIGHT_1</name>
+	<name>LOOT_SHELL_1</name>
+	<name>LOOT_CULTIST_1</name>
+	<name>LOOT_AUG_1</name>
+	<name>LOOT_MATH_1</name>
+	<name>LOOT_MATH_7</name>
+	<name>BEAM_BATTERY</name>
+	<name>BIG_ION</name>
+	<name>MISSILES_OBSIDIAN</name>
+	<name>SHOTGUN_TOGGLE_FIRE</name>
+	<name>SHELL_LAUNCHER</name>
+	<name>MINELAUNCHER_GIANT</name>
+	<name>CRYSTAL_BURST_FIRE</name>
+	<name>STRAWBERRY</name>
+	<name>SHOTGUN_TOXIC_PLAYER</name>
+	<name>CLONE_CANNON_BABYORCHID</name>
+	<name>CLONE_CANNON_PHANTOM_ALPHA</name>
+	<name>CLONE_CANNON_GOUL_ALPHA</name>
+	<name>CLONE_CANNON_MARE_ALPHA</name>
+	<name>CLONE_CANNON_WRAITH_ALPHA</name>
+	<name>CLONE_CANNON_PEACE</name>
+	<name>CLONE_CANNON_DEVORAK</name>
+	<name>FM_LASER_ION_MEGA</name>
+	<name>FM_PHASER_SUFFOCATION</name>
+	<name>FM_CHAINGUN_ION</name>
+	<name>FM_BEAM_GUILLOTINE_CHAIN</name>
+	<name>FM_BEAM_EXPLOSION</name>
+	<name>FM_BEAM_MINING_2</name>
+	<name>FM_BEAM_PARTICLE_PIERCE</name>
+	<name>FM_FOCUS_FUELED_1</name>
+	<name>FM_FOCUS_ENERGY_3</name>
+	<name>FM_SHOTGUN_ANOMALY_MEGA</name>
+	<name>FM_SHOTGUN_HASSIUM</name>
+	<name>FM_MISSILES_BURST_FIRE_MEGA</name>
+	<name>FM_MISSILES_CLOAK_STUN</name>
+	<name>FM_BEAM_BASILISK</name>
+</blueprintList>
+
+<blueprintList name="LIST_GUNBOM_TWINS">
+	<name>remington</name>
+	<name>mossberg</name>
+	
+</blueprintList>
+
+<blueprintList name="LIST_ANCALAGON">
+	<name>FM_AN_DYNAMO</name>
+	<name>FM_AN_LASER</name>
+	<name>FM_AN_BEAM</name>
+</blueprintList>
+
+<blueprintList name="LIST_ANCALAGON_DRONES">
+	<name>FM_ANCALAGON_BATTLE</name>
+	<name>FM_AN_DEFENSE_3_LASER</name>
+	<name>FM_AN_COMBAT_1_LASER</name>
+</blueprintList>
+
+<blueprintList name="LIST_FM_HOLYSHIT">
+	<name>fm_holy1</name>
+	<name>fm_holy2</name>
+	<name>fm_holy3</name>
+	<name>fm_holy4</name>
+	<name>fm_holy5</name>
+	<name>fm_holy6</name>
+	<name>fm_holy7</name>
+	<name>fm_holy8</name>
+	<name>fm_holy9</name> 
+	<name>fm_holy10</name> 
+	<name>fm_holy11</name>
+	<name>fm_holy12</name>
+	<name>fm_holy13</name>
+	<name>fm_holy14</name> 
+	<name>fm_holy15</name>
+	<name>fm_holy16</name>
+	<name>fm_holy17</name>
+	<name>fm_holy18</name>
+	<name>fm_holy19</name>
+	<name>fm_holy20</name>
+<!--	<name>fm_holy21</name>
+	<name>fm_holy22</name>
+	<name>fm_holy23</name>
+	<name>fm_holy24</name>
+	<name>fm_holy25</name>
+	<name>fm_holy26</name>
+	<name>fm_holy27</name>
+	<name>fm_holy28</name>
+	<name>fm_holy29</name>
+	<name>fm_holy30</name>-->
+</blueprintList>
+
+<blueprintList name="LIST_FM_XMAS">
+	<name>saturn_cub</name>
+	<name>bast_cub</name>
+	<name>panther_cub</name>
+	<name>beans</name>
+
+</blueprintList>
+
+<blueprintList name="FOCUS_4LIST">
+	<name>FM_FOCUS_FUELED_1</name>
+	<name>FM_FOCUS_FUELED_2</name>
+	<name>FM_FOCUS_FUELED_3</name>
+	<name>FM_FOCUS_FUELED_4</name>
+	<name>FM_FOCUS_FUELED_5</name>
+</blueprintList>
+
+<blueprintList name="CREATE_ELITE_KERNEL">
+	<name>KERNEL_1_ELITE</name>
+	<name>KERNEL_2_ELITE</name>
+	<name>KERNEL_HEAVY_ELITE</name>
+	<name>KERNEL_HULL_ELITE</name>
+	<name>KERNEL_CHAIN_ELITE</name>
+	<name>KERNEL_CHARGE_ELITE</name>
+</blueprintList>
+
+<blueprintList name="FM_LIST_HUMANS">
+	<name>LIST_CREW_HUMAN</name>
+	<name>LIST_CREW_ENGINEER</name>
+	<name>LIST_CREW_JERRY</name>
+</blueprintList>
+
+<blueprintList name="FM_LIST_LANIUS">
+	<name>lanius</name>
+	<name>lanius</name>
+	<name>lanius</name>
+	<name>lanius</name>
+	<name>lanius</name>
+	<name>lanius</name>
+	<name>lanius</name>
+	<name>lanius_welder</name>
+	<name>lanius_welder</name>
+	<name>lanius_welder</name>
+</blueprintList>
+
+<!--FORGEMASTER BP LISTS NEW END -->
+
+
+
+
+
+<!--FORGEMASTER BP LIST APPENDS-->
+
+<mod:findName type = "blueprintList" name = "LIST_CHECK_TOGGLES_AND_AMPS">
+    <mod-append:name>FM_FOCUS_FUELED_1</mod-append:name>
+    <mod-append:name>FM_FOCUS_FUELED_2</mod-append:name>
+    <mod-append:name>FM_FOCUS_FUELED_3</mod-append:name>
+    <mod-append:name>FM_FOCUS_FUELED_4</mod-append:name>
+    <mod-append:name>FM_FOCUS_FUELED_5</mod-append:name>
+	<mod-append:name>FM_ANCALAGON_DEFEND</mod-append:name>
+	<mod-append:name>FM_ANCALAGON_BATTLE</mod-append:name>
+	<mod-append:name>FM_LIST_TOGGLE_COMBAT_2_PLAYER</mod-append:name>
+	<mod-append:name>TWISTED_SURGEON_BATTLE</mod-append:name>
+	<mod-append:name>TWISTED_SURGEON_BOARDER</mod-append:name>
+	<mod-append:name>TWISTED_YINYANG_BATTLE</mod-append:name>
+	<mod-append:name>TWISTED_YINYANG_BOARDER</mod-append:name>
+	<mod-append:name>TWISTED_BATTLETOG2_DEFEND</mod-append:name>
+	<mod-append:name>TWISTED_BATTLETOG2_BOARDER</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "BLUELIST_MINELAUNCHERS_ALL">
+    <mod-append:name>FM_MINELAUNCHER_HULL</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_OSMIUM</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_NOBELIUM</mod-append:name>
+    <mod-append:name>FM_SHOTGUN_HASSIUM</mod-append:name>
+
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "BLUELIST_WEAPONS_FIRE_ALL">
+    <mod-append:name>FM_FLAMETHROWER</mod-append:name>
+    <mod-append:name>FM_ION_TRI_FIRE</mod-append:name>
+    <mod-append:name>FM_BEAM_PARTICLE_PIERCE</mod-append:name>
+    <mod-append:name>FM_MISSILES_BURST_FIRE</mod-append:name>
+    <mod-append:name>FM_MISSILES_BURST_FIRE_PLAYER</mod-append:name>
+	<mod-append:name>FM_MISSILES_BURST_FIRE_MEGA</mod-append:name>
+    <mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "BLUELIST_WEAPONS_FIRE_NODAMAGE">
+    <mod-append:name>FM_FLAMETHROWER</mod-append:name>
+    <mod-append:name>FM_ION_TRI_FIRE</mod-append:name>
+    <mod-append:name>FM_BEAM_PARTICLE_PIERCE</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "BLUELIST_FIRE_NONBALLISTIC">
+    <mod-append:name>FM_FLAMETHROWER</mod-append:name>
+    <mod-append:name>FM_ION_TRI_FIRE</mod-append:name>
+    <mod-append:name>FM_BEAM_PARTICLE_PIERCE</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "BLUELIST_FIRE_BALLISTIC">
+     <mod-append:name>FM_MISSILES_BURST_FIRE</mod-append:name>
+    <mod-append:name>FM_MISSILES_BURST_FIRE_PLAYER</mod-append:name>
+	<mod-append:name>FM_MISSILES_BURST_FIRE_MEGA</mod-append:name>
+    <mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
+</mod:findName>
+
+
+<blueprintList name="LIST_CREW_GENERIC_LEECH">
+	<name>leech</name>
+</blueprintList>
+
+<mod:findName type = "blueprintList" name = "LIST_CREW_ROCK">
+    <mod-append:name>fm_plated</mod-append:name>
+	 <mod-append:name>fm_forgemasterperson</mod-append:name>
+	  <mod-append:name>fm_forgemasterperson_player</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "LIST_CREW_ORCHID">
+    <mod-append:name>orchid_fire</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "LIST_CHECKCREW_ROCK">
+    <mod-append:name>fm_plated</mod-append:name>
+	<mod-append:name>fm_forgemasterperson</mod-append:name>
+	<mod-append:name>fm_forgemasterperson_player</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "BLUELIST_CREW_NOFIRE">
+    <mod-append:name>fm_plated</mod-append:name>
+	 <mod-append:name>fm_forgemasterperson</mod-append:name>
+	  <mod-append:name>fm_forgemasterperson_player</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "BLUELIST_ION">
+	<mod-append:name>FM_ION_TRI_FIRE</mod-append:name>
+    <mod-append:name>FM_CHAINGUN_ION</mod-append:name>
+	<mod-append:name>FM_BEAM_ION_PIERCE</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "BLUELIST_ENERGY">
+	<mod-append:name>FM_SHOTGUN_ENERGY</mod-append:name>
+    <mod-append:name>FM_PULSE_1</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "LIST_CREW_PARAGON_UNIQUE">
+    <mod-append:name>fm_plated</mod-append:name>
+	<mod-append:name>fm_forgemasterperson</mod-append:name>
+	 <mod-append:name>fm_forgemasterperson_player</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "BLUELIST_WEAPONS_FIRE_NODAMAGE">
+    <mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
+</mod:findName>
+
+
+<mod:findName type = "blueprintList" name = "BLUELIST_AETHER">
+    <mod-append:name>FM_SHOTGUN_AETHER</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "LIST_CREW_DEFENDER">
+    <mod-append:name>remington</mod-append:name>
+	<mod-append:name>mossberg</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "LIST_CREW_ENGI">
+    <mod-append:name>remington</mod-append:name>
+	<mod-append:name>mossberg</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "LIST_CHECKCREW_ENGI">
+    <mod-append:name>remington</mod-append:name>
+	<mod-append:name>mossberg</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "LIST_CREW_ELITE">
+    <mod-append:name>remington</mod-append:name>
+	<mod-append:name>mossberg</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "BLUELIST_DRONES_BEAM">
+    <mod-append:name>FM_COMBAT_2_BEAM_PLAYER</mod-append:name>
+	 <mod-append:name>FM_COMBAT_2_LASER_PLAYER</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "BLUELIST_DRONES_DEFENSE">
+    <mod-append:name>FM_DEFENSE_3_MEGA</mod-append:name>
+	 
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "BLUELIST_DRONES_BOARDING">
+    <mod-append:name>FM_ANCALAGON_BATTLE</mod-append:name>
+	<mod-append:name>FM_ANCALAGON_DEFEND</mod-append:name>
+	<mod-append:name>TWISTED_SURGEON_BATTLE</mod-append:name>
+	<mod-append:name>TWISTED_SURGEON_BOARDER</mod-append:name>
+	<mod-append:name>TWISTED_YINYANG_BATTLE</mod-append:name>
+	<mod-append:name>TWISTED_YINYANG_BOARDER</mod-append:name>
+	<mod-append:name>TWISTED_BATTLETOG2_DEFEND</mod-append:name>
+	<mod-append:name>TWISTED_BATTLETOG2_BOARDER</mod-append:name>
+	
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "LIST_CREW_MORPH_BATTLE2">
+	<mod-append:name>TWISTED_BATTLETOG2_DEFEND</mod-append:name>
+	<mod-append:name>TWISTED_BATTLETOG2_BOARDER</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "BLUELIST_DRONES_MEDICAL">
+	<mod-append:name>TWISTED_SURGEON_BATTLE</mod-append:name>
+	<mod-append:name>TWISTED_SURGEON_BOARDER</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "BLUELIST_DRONES_REPAIR_CREW">
+	<mod-append:name>TWISTED_MENDER</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "BLUELIST_BOMBS">
+    <mod-append:name>FM_AN_DYNAMO</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "LIST_CHECK_AUGMENTS">
+    <mod-append:name>CURA_MVBOSS_SPAWNER</mod-append:name>
+</mod:findName>
+
+
+
+
+
+<!--FORGEMASTER BP LIST APPENDS END-->
+
+
+
+
+
+<!-- Forgemaster STORES-->
+
+<blueprintList name="FM_FORGEMASTER_LOADOUT"> <!-- Forgemaster ONLY STORE FOR NOW-->
+	<name>FM_LASER_ION_MEGA_ENEMY</name>
+	<name>FM_ION_TRI_FIRE_ENEMY</name>
+	<name>FM_ION_TRI_FIRE_ENEMY</name>
+	<name>FM_FOCUS_ENERGY_3_ENEMY</name>
+	<name>FM_FOCUS_ENERGY_3_ENEMY</name>
+	<name>FM_FOCUS_ENERGY_3_ENEMY</name>
+	<name>FM_FOCUS_ENERGY_3_ENEMY</name>
+	<name>FM_CHAINGUN_ION_ENEMY</name>
+	<name>FM_BEAM_PARTICLE_PIERCE_ENEMY</name>
+	<name>FM_BEAM_PARTICLE_PIERCE_ENEMY</name>
+	<name>FM_BEAM_PARTICLE_PIERCE_ENEMY</name>
+	<name>FM_LASER_PHOTON_2_ENEMY</name>
+	<name>FM_LASER_PHOTON_2_ENEMY</name>
+	<name>FM_LASER_PHOTON_2_ENEMY</name>
+	<name>FM_LASER_PHOTON_2_ENEMY</name>
+	<name>FM_BEAM_ION_PIERCE_ENEMY</name>
+	<name>FM_BEAM_ION_PIERCE_ENEMY</name>
+	<name>FM_BEAM_ION_PIERCE_ENEMY</name>
+	<name>FM_BEAM_ION_PIERCE_ENEMY</name>
+	<name>FM_BEAM_MINING_2_ENEMY</name>
+	<name>FM_BEAM_EXPLOSION_ENEMY</name>
+	<name>FM_SHOTGUN_ANOMALY_ENEMY</name>
+	<name>FM_SHOTGUN_ANOMALY_ENEMY</name>
+	<name>FM_MISSILES_BURST_FIRE_ENEMY</name>
+	<name>FM_MINELAUNCHER_HULL_ENEMY</name>
+	<name>FM_MINELAUNCHER_HULL_ENEMY</name>
+	<name>FM_BOMB_CRYSTAL_FIRE_ENEMY</name>
+	<name>FM_BOMB_CRYSTAL_FIRE_ENEMY</name>
+	<name>FM_IRIDIUM_ENEMY</name>
+	<name>FM_SHOTGUN_AETHER_ENEMY</name>
+	<name>FM_ION_TRI_FIRE_ENEMY</name>
+	<name>FM_ION_TRI_FIRE_ENEMY</name>
+	<name>FM_ENERGY_DISC_ENEMY</name>
+	<name>FM_ENERGY_DISC_ENEMY</name>
+	<name>FM_CHAINGUN_ION_ENEMY</name>
+	<name>FM_BEAM_PARTICLE_PIERCE_ENEMY</name>
+	<name>FM_BEAM_PARTICLE_PIERCE_ENEMY</name>
+	<name>FM_BEAM_PARTICLE_PIERCE_ENEMY</name>
+	<name>FM_BEAM_EXPLOSION_ENEMY</name>
+	<name>FM_BEAM_EXPLOSION_ENEMY</name>
+	<name>FM_BEAM_EXPLOSION_ENEMY</name>
+	<name>FM_SHOTGUN_ANOMALY_ENEMY</name>
+	<name>FM_SHOTGUN_ANOMALY_ENEMY</name>
+	<name>FM_MISSILES_BURST_FIRE_ENEMY</name>
+	<name>FM_MISSILES_CLOAK_STUN_ENEMY</name>
+	<name>FM_MISSILES_CLOAK_STUN_ENEMY</name>
+	<name>FM_MINELAUNCHER_HULL_ENEMY</name>
+	<name>FM_MINELAUNCHER_HULL_ENEMY</name>
+	<name>FM_BOMB_CRYSTAL_FIRE_ENEMY</name>
+	<name>FM_BOMB_CRYSTAL_FIRE_ENEMY</name>
+	<name>FM_IRIDIUM_ENEMY</name>
+	<name>FM_SHOTGUN_AETHER_ENEMY</name>	
+	<name>FM_ION_TRI_FIRE_ENEMY</name>
+	<name>FM_ION_TRI_FIRE_ENEMY</name>
+	<name>FM_ENERGY_DISC_ENEMY</name>
+	<name>FM_CHAINGUN_ION_ENEMY</name>
+
+	<name>FM_BEAM_EXPLOSION_ENEMY</name>
+	<name>FM_SHOTGUN_ANOMALY_ENEMY</name>
+	<name>FM_SHOTGUN_ANOMALY_ENEMY</name>
+	<name>FM_MISSILES_CLOAK_STUN_ENEMY</name>
+	<name>FM_MISSILES_CLOAK_STUN_ENEMY</name>
+	<name>FM_MINELAUNCHER_HULL_ENEMY</name>
+	<name>FM_MINELAUNCHER_HULL_ENEMY</name>
+	<name>FM_BOMB_CRYSTAL_FIRE_ENEMY</name>
+	<name>FM_BOMB_CRYSTAL_FIRE_ENEMY</name>
+	<name>FM_IRIDIUM_ENEMY</name>
+	<name>FM_SHOTGUN_AETHER_ENEMY</name>
+	
+
+</blueprintList>
+
+<blueprintList name="FM_SHOP_FORGEMASTER_WEAPON_1_PLAYER">
+	<name>LASER_BIO</name>
+	<name>LASER_BIO</name>
+	<name>LASER_BIO</name>
+	<name>ION_TRI</name>
+	<name>ION_TRI</name>
+	<name>ION_TRI</name>
+	<name>MINELAUNCHER_STUN</name>
+	<name>MINELAUNCHER_STUN</name>
+	<name>MINELAUNCHER_STUN</name>
+	<name>BEAM_PARTICLE</name>
+	<name>BEAM_PARTICLE</name>
+	<name>BEAM_PARTICLE</name>
+	<name>BEAM_GUILLOTINE</name>
+	<name>BEAM_GUILLOTINE</name>
+	<name>BEAM_GUILLOTINE</name>
+	<name>BOMB_1</name>
+	<name>BOMB_1</name>
+	<name>BOMB_1</name>
+	<name>BEAM_2</name>
+	<name>BEAM_2</name>
+	<name>BEAM_2</name>
+	<name>FOCUS_CHAIN</name>
+	<name>FOCUS_CHAIN</name>
+	<name>FOCUS_CHAIN</name>
+	<name>MISSILES_3</name>
+	<name>MISSILES_3</name>
+	<name>ENERGY_1</name>
+	<name>ENERGY_1</name>
+	<name>ENERGY_1</name>
+	<name>FOCUS_1</name>
+	<name>FOCUS_1</name>
+	<name>FOCUS_1</name>
+	<name>ENERGY_2</name>
+	<name>ENERGY_2</name>
+	<name>ENERGY_2</name>
+	<name>FOCUS_2</name>
+	<name>FOCUS_2</name>
+	<name>FOCUS_2</name>
+	<name>ENERGY_3</name>
+	<name>ENERGY_3</name>
+	<name>ENERGY_3</name>
+	<name>FOCUS_3</name>
+	<name>FOCUS_3</name>
+	<name>FOCUS_3</name>
+	<name>SHOTGUN_TOXIC</name>
+	<name>SHOTGUN_TOXIC</name>
+	<name>SHOTGUN_TOXIC</name>
+	<name>LASER_FROST_2</name>
+	<name>LASER_FROST_2</name>
+	<name>LASER_FROST_2</name>
+	<name>SHOTGUN_2</name>
+	<name>SHOTGUN_2</name>
+	<name>SHOTGUN_2</name>
+	<name>CRYSTAL_BURST_1</name>
+	<name>CRYSTAL_BURST_1</name>
+	<name>CRYSTAL_BURST_1</name>
+	<name>BOMB_LOCK</name>
+	<name>BOMB_LOCK</name>
+	<name>KERNEL_1_ELITE</name>
+	<name>KERNEL_1_ELITE</name>
+	<name>MISSILES_CLOAK</name>
+	<name>ENERGY_STUN</name>
+	<name>MISSILES_4</name>
+	<name>MISSILES_FIRE</name>
+	<name>BEAM_MINING</name>
+	<name>BOMB_ION</name>
+	<name>LASER_PIERCE_2</name>
+	<name>BEAM_LONG_2</name>
+	<name>ION_2</name>
+	<name>BEAM_BREACH</name>
+	<name>ION_2</name>
+	<name>LASER_HULL_2</name>
+	<name>LASER_HULL_2</name>
+	<name>MINELAUNCHER_BREACH</name>
+	<name>MINELAUNCHER_BREACH</name>
+	<name>SHOTGUN_4</name>
+	<name>SHOTGUN_4</name>
+	<name>LASER_LIGHT</name>
+	<name>LASER_LIGHT</name>
+	<name>LASER_LIGHT_2</name>
+	<name>LASER_LIGHT_2</name>
+	<name>SHOTGUN_3</name>
+	<name>SHOTGUN_3</name>
+	<name>ENERGY_CHARGEGUN</name>
+	<name>ENERGY_CHARGEGUN</name>
+</blueprintList>
+
+<blueprintList name="FM_SHOP_FORGEMASTER_WEAPON_2_PLAYER">
+	<name>LASER_FROST_1</name>
+	<name>LASER_FROST_1</name>
+	<name>LASER_FROST_1</name>
+	<name>ION_PIERCE_2</name>
+	<name>ION_PIERCE_2</name>
+	<name>ION_PIERCE_2</name>
+	<name>ION_FIRE</name>
+	<name>ION_FIRE</name>
+	<name>ION_FIRE</name>
+	<name>MINELAUNCHER_1</name>
+	<name>BEAM_PIERCE</name>
+	<name>BEAM_PIERCE</name>
+	<name>BEAM_PIERCE</name>
+	<name>LASER_PARTICLE</name>
+	<name>LASER_PARTICLE</name>
+	<name>LASER_PARTICLE</name>
+	<name>LASER_PARTICLE_2</name>
+	<name>LASER_PARTICLE_2</name>
+	<name>LASER_PARTICLE_2</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_BURST_1</name>
+	<name>LASER_BURST_1</name>
+	
+	
+</blueprintList>
+
+<blueprintList name="FM_SHOP_FORGEMASTER_WEAPON_3_PLAYER">
+	<name>ION_CHARGEGUN_2</name>
+	<name>ION_CHARGEGUN_2</name>
+	<name>ION_CHARGEGUN</name>
+	<name>ION_CHARGEGUN</name>
+	<name>LASER_CHAINGUN_2</name>
+	<name>ENERGY_HULL</name>
+	<name>ENERGY_HULL</name>
+	<name>MINELAUNCHER_2</name>
+	<name>MINELAUNCHER_2</name>
+	<name>BOMB_FIRE</name>
+	<name>BOMB_FIRE</name>
+	<name>BOMB_FIRE</name>
+	<name>BOMB_BIO</name>
+	<name>BOMB_BIO</name>
+</blueprintList>
+
+<blueprintList name="FM_SHOP_FORGEMASTER_RARE_WEAPON_LIST">
+	<name>BEAM_GUILLOTINE</name>
+	<name>FOCUS_CHAIN</name>
+	<name>MISSILES_3</name>
+	<name>SHOTGUN_TOXIC</name>
+	<name>LASER_FROST_2</name>
+	<name>MISSILES_CLOAK</name>
+	<name>ENERGY_STUN</name>
+	<name>MISSILES_4</name>
+	<name>MISSILES_4</name>
+	<name>MISSILES_FIRE</name>
+	<name>BEAM_MINING</name>
+	<name>BEAM_MINING</name>
+	<name>BEAM_LONG_2</name>
+	<name>LASER_LIGHT_2</name>
+	<name>LASER_PARTICLE_2</name>
+	<name>BOMB_ION</name>
+	<name>LASER_PIERCE_2</name>
+</blueprintList>
+
+<blueprintList name="FM_SHOP_FORGEMASTER_RARE_AUG_LIST">
+	<name>EX_TELEPORT_HEAL</name>
+	<name>EX_MEDBAY_SPEED</name>
+	<name>NANOBOT_DEFENSE_SYSTEM</name>
+	<name>NANOBOT_DEFENSE_SYSTEM</name>
+	<name>EX_TELEPORT_HEAL</name>
+	<name>EX_MEDBAY_SPEED</name>
+	<name>REGEN_ARMOR</name>
+	<name>EX_LAB_LANIUS_HEALTH</name>
+	<name>EX_LAB_ROCK_SKIN</name>
+	<name>EX_PAYLOAD_CREATOR</name>
+	
+</blueprintList>
+
+<blueprintList name="FM_SHOP_FORGEMASTER_PLUS_WEAPON_LIST">
+	<name>MISSILES_4_PLAYER</name>
+	<name>MISSILES_FIRE_PLAYER</name>
+	<name>SHOTGUN_TOXIC_PLAYER</name>
+	<name>LASER_FROST_2_PLAYER</name>
+	<name>ENERGY_2_PLAYER</name>
+	<name>BEAM_2_PLAYER</name>
+	<name>BEAM_GUILLOTINE_PLAYER</name>
+</blueprintList>
+
+
+<blueprintList name="FM_CRYSTAL_LIST">
+	<name>fm_crystal_red</name>
+	<name>fm_crystal_red</name>
+	<name>fm_crystal_red</name>
+	<name>fm_crystal_red</name>
+	<name>fm_crystal_red</name>
+	<name>fm_crystal_blue</name>
+	<name>fm_crystal_blue</name>
+	<name>fm_crystal_blue</name>
+	<name>fm_crystal_blue</name>
+	<name>fm_crystal_blue</name>
+	<name>fm_crystal_green</name>
+	<name>fm_crystal_green</name>
+	<name>fm_crystal_green</name>
+	<name>fm_crystal_green</name>
+	<name>fm_crystal_green</name>
+	<name>fm_crystal_white</name>
+	<name>fm_crystal_white</name>
+	<name>fm_crystal_black</name>
+</blueprintList>
+
+
+
+<!-- Forgemaster STORES END
+**********************************************************************************************************************
+                                        Forgemaster STORES END
+**********************************************************************************************************************
+-->
+
+<!-- MFK SURPRISE
+**********************************************************************************************************************
+                                       MFK SURPRISE
+**********************************************************************************************************************
+-->
+<blueprintList name="LIST_SHIPS_REBEL_GENERIC_ACE">
+	<name>MU_REBEL_RIGGER_ACE</name>
+	<name>MU_REBEL_FIGHTER_ACE</name>
+	<name>MU_REBEL_SKIRMISHER_ACE</name>
+	<name>MU_REBEL_BOMBER_ACE</name>
+	<name>MU_REBEL_INSTIGATOR_ACE</name>
+	<name>MU_REBEL_PREDATOR_ACE</name>
+	<name>MU_REBEL_DROPSHIP_ACE</name>
+	<name>MU_REBEL_ASSAULT_ACE</name>
+	<name>MU_REBEL_LIGHT_CRUISER_ACE</name>
+	<name>MU_REBEL_MARAUDER_ACE</name>
+	<name>MU_REBEL_TRANSPORT_ACE</name>
+	<name>MU_REBEL_JAILER_ACE</name>
+</blueprintList>
+
+
+<shipBlueprint name="MU_REBEL_RIGGER_ACE" layout="mu_rebel_rigger" img="mu_rebel_rigger">
+	<class>Rebel Rigger</class>
+	<systemList>
+		<doors power="1" max="2" room="5" start="false" />
+		<drones power="2" max="8" room="1" start="true" />
+		<engines power="1" max="2" room="7" start="true" />
+		<medbay power="1" max="3" room="3" start="false" />
+		<oxygen power="1" max="3" room="2" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="8" room="4" start="true" />
+		<weapons power="1" max="6" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="10" count="4" load="LIST_WEAPONS_REBEL" />
+	<droneList drones="4" count="2" load="LIST_DRONES_ENEMY_STANDARD" />
+	<health amount="9" />
+	<maxPower amount="7" />
+	<crewCount amount="3" max="5" class="LIST_CREW_REBEL_RANDOM" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<!--FIGHTER-->
+<shipBlueprint name="MU_REBEL_FIGHTER_ACE" layout="mu_rebel_fighter" img="mu_rebel_fighter">
+	<class>Rebel Fighter</class>
+	<systemList>
+		<engines power="2" max="3" room="5" start="true" />
+		<medbay power="1" max="2" room="3" start="false" />
+		<oxygen power="1" max="3" room="2" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="6" start="true" />
+		<teleporter power="1" max="1" room="1" start="false" />
+		<weapons power="2" max="8" room="4" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="10" count="4" load="LIST_WEAPONS_REBEL" />
+	<droneList drones="0" count="2" />
+	<health amount="10" />
+	<maxPower amount="7" />
+	<crewCount amount="3" max="6" class="LIST_CREW_REBEL_RANDOM" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<!--SKIRMISHER-->
+<shipBlueprint name="MU_REBEL_SKIRMISHER_ACE" layout="mu_rebel_skirmisher" img="mu_rebel_skirmisher">
+	<class>Rebel Skirmisher</class>
+	<maxSector>4</maxSector>
+	<systemList>
+		<clonebay power="1" max="2" room="10" start="false" />
+		<engines power="1" max="2" room="1" start="true" />
+		<medbay power="1" max="2" room="10" start="false" />
+		<oxygen power="1" max="2" room="7" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="6" room="3" start="true" />
+		<teleporter power="1" max="1" room="4" start="false" />
+		<weapons power="2" max="6" room="2" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="9" count="4" load="LIST_WEAPONS_REBEL" />
+	<droneList drones="0" count="0" />
+	<health amount="7" />
+	<maxPower amount="8" />
+	<crewCount amount="2" max="5" class="LIST_CREW_REBEL_RANDOM" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<!--BOMBER-->
+<shipBlueprint name="MU_REBEL_BOMBER_ACE" layout="mu_rebel_bomber" img="mu_rebel_bomber">
+	<class>Rebel Bomber</class>
+	<minSector>2</minSector>
+	<systemList>
+		<cloaking power="1" max="2" room="8" start="false" />
+		<doors power="1" max="3" room="5" start="false" />
+		<drones power="2" max="5" room="1" start="false" />
+		<engines power="1" max="2" room="2" start="true" />
+		<oxygen power="1" max="3" room="6" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="9" start="true" />
+		<teleporter power="1" max="2" room="7" start="false" />
+		<weapons power="2" max="8" room="10" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="25" count="4" load="LIST_WEAPONS_REBEL" />
+	<droneList drones="10" count="2" load="LIST_DRONES_ENEMY_COMBAT" />
+	<health amount="10" />
+	<maxPower amount="10" />
+	<crewCount amount="3" max="8" class="LIST_CREW_REBEL_RANDOM" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<!--INSTIGATOR-->
+<shipBlueprint name="MU_REBEL_INSTIGATOR_ACE" layout="mu_rebel_instigator" img="mu_rebel_instigator">
+	<class>Rebel Instigator</class>
+	<minSector>1</minSector>
+	<systemList>
+		<clonebay power="1" max="1" room="3" start="false" />
+		<doors power="1" max="3" room="4" start="false" />
+		<engines power="1" max="2" room="1" start="true" />
+		<medbay power="1" max="1" room="3" start="false" />
+		<mind power="1" max="3" room="2" start="false" />
+		<oxygen power="1" max="3" room="5" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="7" start="true" />
+		<weapons power="2" max="6" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="10" count="4" load="LIST_WEAPONS_REBEL" />
+	<droneList drones="0" count="0" />
+	<health amount="9" />
+	<maxPower amount="8" />
+	<crewCount amount="2" max="8" class="LIST_CREW_REBEL_RANDOM" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<!--PREDATOR-->
+<shipBlueprint name="MU_REBEL_PREDATOR_ACE" layout="mu_rebel_predator" img="mu_rebel_predator">
+	<class>Rebel Predator</class>
+	<minSector>1</minSector>
+	<systemList>
+		<clonebay power="1" max="1" room="6" start="false" />
+		<doors power="1" max="2" room="7" start="false" />
+		<engines power="1" max="2" room="2" start="true" />
+		<medbay power="1" max="1" room="6" start="false" />
+		<oxygen power="1" max="3" room="4" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="8" room="8" start="true" />
+		<teleporter power="1" max="3" room="5" start="false" />
+		<weapons power="2" max="5" room="1" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="10" count="4" load="LIST_WEAPONS_REBEL" />
+	<droneList drones="0" count="0" />
+	<health amount="9" />
+	<maxPower amount="7" />
+	<crewCount amount="2" max="7" class="LIST_CREW_REBEL_RANDOM" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<!--DROPSHIP-->
+<shipBlueprint name="MU_REBEL_DROPSHIP_ACE" layout="mu_rebel_dropship" img="mu_rebel_dropship">
+	<class>Rebel Dropship</class>
+	<minSector>2</minSector>
+	<systemList>
+		<clonebay power="1" max="3" room="7" start="false" />
+		<doors power="1" max="3" room="11" start="false" />
+		<engines power="1" max="2" room="2" start="true" />
+		<medbay power="1" max="3" room="7" start="false" />
+		<oxygen power="1" max="3" room="10" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="2" max="8" room="3" start="true" />
+		<teleporter power="2" max="3" room="1" start="true" />
+		<weapons power="1" max="5" room="4" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="10" count="4" load="LIST_WEAPONS_REBEL" />
+	<droneList drones="0" count="0" />
+	<health amount="12" />
+	<maxPower amount="8" />
+	<crewCount amount="3" max="9" class="LIST_CREW_REBEL_RANDOM" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<!--ASSAULT-->
+<shipBlueprint name="MU_REBEL_ASSAULT_ACE" layout="mu_rebel_assault" img="mu_rebel_assault">
+	<class>Rebel Assault</class>
+	<minSector>2</minSector>
+	<systemList>
+		<cloaking power="1" max="2" room="3" start="false" />
+		<clonebay power="1" max="3" room="4" start="false" />
+		<doors power="1" max="3" room="10" start="false" />
+		<engines power="1" max="2" room="2" start="true" />
+		<medbay power="1" max="3" room="4" start="false" />
+		<oxygen power="1" max="3" room="9" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="5" start="true" />
+		<teleporter power="1" max="2" room="1" start="false" />
+		<weapons power="2" max="9" room="7" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="12" count="4" load="LIST_WEAPONS_REBEL" />
+	<droneList drones="0" count="0" />
+	<health amount="10" />
+	<maxPower amount="8" />
+	<crewCount amount="3" max="9" class="LIST_CREW_REBEL_RANDOM" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<!--LIGHT CRUISER-->
+<shipBlueprint name="MU_REBEL_LIGHT_CRUISER_ACE" layout="mu_rebel_light_cruiser" img="mu_rebel_light_cruiser">
+	<class>Rebel Light Cruiser</class>
+	<minSector>2</minSector>
+	<systemList>
+		<cloaking power="1" max="2" room="1" start="false" />
+		<doors power="1" max="3" room="6" start="false" />
+		<engines power="1" max="2" room="3" start="true" />
+		<oxygen power="1" max="2" room="7" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="4" start="true" />
+		<weapons power="2" max="7" room="5" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="10" count="4" load="LIST_WEAPONS_REBEL" />
+	<droneList drones="0" count="0" />
+	<health amount="10" />
+	<maxPower amount="8" />
+	<crewCount amount="3" max="9" class="LIST_CREW_REBEL_RANDOM" />
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>mu_mercenary_rebel_light_cruiser</cloakImage>
+</shipBlueprint>
+
+
+
+<!--MARAUDER-->
+<shipBlueprint name="MU_REBEL_MARAUDER_ACE" layout="mu_rebel_marauder" img="mu_rebel_marauder">
+	<class>Rebel Marauder</class>
+	<minSector>1</minSector>
+	<systemList>
+		<cloaking power="1" max="2" room="7" start="false" />
+		<doors power="1" max="3" room="4" start="false" />
+		<drones power="2" max="6" room="3" start="false" />
+		<engines power="1" max="2" room="1" start="true" />
+		<oxygen power="1" max="2" room="5" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="8" room="6" start="true" />
+		<weapons power="2" max="8" room="2" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>1</droneSlots>
+	<weaponList missiles="12" count="4" load="LIST_WEAPONS_REBEL" />
+	<droneList drones="5" count="1" load="LIST_DRONES_ENEMY_COMBAT" />
+	<health amount="12" />
+	<maxPower amount="9" />
+	<crewCount amount="3" max="8" class="LIST_CREW_REBEL_RANDOM" />
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>mu_ghostbuster</cloakImage>
+</shipBlueprint>
+
+<!--TRANSPORT-->
+<shipBlueprint name="MU_REBEL_TRANSPORT_ACE" layout="mu_rebel_transport" img="mu_rebel_transport">
+	<class>Rebel Transport</class>
+	<systemList>
+		<clonebay power="1" max="3" room="8" start="false" />
+		<doors power="1" max="3" room="14" start="false" />
+		<drones power="2" max="7" room="15" start="false" />
+		<engines power="1" max="2" room="2" start="true" />
+		<medbay power="1" max="3" room="8" start="false" />
+		<oxygen power="1" max="2" room="4" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="8" room="12" start="true" />
+		<teleporter power="1" max="3" room="3" start="true" />
+		<weapons power="2" max="8" room="13" start="true" />
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="8" count="2" load="LIST_WEAPONS_REBEL" />
+	<droneList drones="8" count="2" load="LIST_DRONES_ENEMY_COMBAT" />
+	<health amount="11" />
+	<maxPower amount="9" />
+	<crewCount amount="2" max="7" class="LIST_CREW_REBEL_RANDOM" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<!--JAILER-->
+<shipBlueprint name="MU_REBEL_JAILER_ACE" layout="mu_rebel_jailer" img="mu_rebel_jailer">
+	<class>Rebel Jailer</class>
+	<systemList>
+		<doors power="1" max="3" room="4" start="true" />
+		<engines power="1" max="2" room="1" start="true" />
+		<medbay power="1" max="3" room="7" start="false" />
+		<mind power="1" max="3" room="6" start="false" />
+		<oxygen power="1" max="3" room="5" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="8" room="2" start="true" />
+		<teleporter power="1" max="3" room="8" start="false" />
+		<weapons power="1" max="6" room="3" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="10" count="4" load="LIST_WEAPONS_REBEL" />
+	<droneList drones="0" count="0" />
+	<health amount="10" />
+	<maxPower amount="7" />
+	<crewCount amount="3" max="9" class="LIST_CREW_REBEL_RANDOM" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
