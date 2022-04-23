@@ -6340,55 +6340,66 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		    <text>You cannot Install ship-wide modules now, install a Capstone first!</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
-		  <!--system modules-->
+			<!--vengeance modules-->
 		  <choice req="CAN_INSTALL_MODULE_TRUE" lvl="1" max_group="4" blue="false" hidden="true">
+		    <text>Install vengenace modules</text>
+		    <event>
+		      <loadEvent>FM_MODULAR_HULL_MODULES_VENGEANCE</loadEvent>
+		    </event>
+		  </choice>
+		  <choice req="CAN_INSTALL_MODULE_FALSE" lvl="1" max_group="4" blue="false" hidden="true">
+		    <text>You cannot Install vengeance modules now, install a Capstone first!</text>
+		    <event load="OPTION_INVALID"/>
+		  </choice>
+		  <!--system modules-->
+		  <choice req="CAN_INSTALL_MODULE_TRUE" lvl="1" max_group="5" blue="false" hidden="true">
 		    <text>Install system modules</text>
 		    <event>
 		      <loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS</loadEvent>
 		    </event>
 		  </choice>
-		  <choice req="CAN_INSTALL_MODULE_FALSE" lvl="1" max_group="4" blue="false" hidden="true">
+		  <choice req="CAN_INSTALL_MODULE_FALSE" lvl="1" max_group="5" blue="false" hidden="true">
 		    <text>You cannot Install system modules now, install a Capstone first!</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <!--capstone install menu-->
-		  <choice req="CAN_INSTALL_CAPSTONE1_TRUE" lvl="1" max_group="5" blue="true" hidden="true">
+		  <choice req="CAN_INSTALL_CAPSTONE1_TRUE" lvl="1" max_group="6" blue="true" hidden="true">
 		    <text>Install your first Capstone module.</text>
 		    <event>
 		      <loadEvent>FM_MODULAR_HULL_CAPSTONE</loadEvent>
 		    </event>
 		  </choice>
-		  <choice req="CAN_INSTALL_CAPSTONE2_TRUE" lvl="1" max_group="5" blue="true" hidden="true">
+		  <choice req="CAN_INSTALL_CAPSTONE2_TRUE" lvl="1" max_group="6" blue="true" hidden="true">
 		    <text>Install your second Capstone module.</text>
 		    <event>
 		      <loadEvent>FM_MODULAR_HULL_CAPSTONE</loadEvent>
 		    </event>
 		  </choice>
-		  <choice req="CAN_INSTALL_CAPSTONE3_TRUE" lvl="1" max_group="5" blue="true" hidden="true">
+		  <choice req="CAN_INSTALL_CAPSTONE3_TRUE" lvl="1" max_group="6" blue="true" hidden="true">
 		    <text>Install your third (and last) Capstone module!</text>
 		    <event>
 		      <loadEvent>FM_MODULAR_HULL_CAPSTONE</loadEvent>
 		    </event>
 		  </choice>
-		  <choice req="CAN_INSTALL_CAPSTONE1_FALSE" lvl="1" max_group="5" blue="false" hidden="true">
+		  <choice req="CAN_INSTALL_CAPSTONE1_FALSE" lvl="1" max_group="6" blue="false" hidden="true">
 		    <text>You cannot Install your first Capstone module yet, use 5 upgrade notches first!</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
-		  <choice req="CAN_INSTALL_CAPSTONE2_FALSE" lvl="1" max_group="5" blue="false" hidden="true">
+		  <choice req="CAN_INSTALL_CAPSTONE2_FALSE" lvl="1" max_group="6" blue="false" hidden="true">
 		    <text>You cannot Install your second Capstone module yet, use 10 upgrade notches first!</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
-		  <choice req="CAN_INSTALL_CAPSTONE3_FALSE" lvl="1" max_group="5" blue="false" hidden="true">
+		  <choice req="CAN_INSTALL_CAPSTONE3_FALSE" lvl="1" max_group="6" blue="false" hidden="true">
 		    <text>You cannot Install your third (and last) Capstone module yet, use 15 upgrade notches first!</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
-		  <choice req="FM_MODULAR_HULL" lvl="1" max_group="6" blue="false"><!--Installed module list-->
+		  <choice req="FM_MODULAR_HULL" lvl="1" max_group="8" blue="false"><!--Installed module list-->
 		    <text>Check your installed modules here!</text>
 		    <event>
 		      <loadEvent>FM_MODULAR_HULL_MODULES_INSTALLED</loadEvent>
 		    </event>
 		  </choice>
-		  <choice req="pilot" lvl="1" max_group="7" blue="false">
+		  <choice req="pilot" lvl="1" max_group="9" blue="false">
 		    <text>Nevermind.</text>
 		    <event>
 					<variable name="overcharmed_active" op="set" value="1"/>
@@ -6511,12 +6522,13 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		    <text>Scrap Magnet Module [maxed]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
+			<!--
 			<choice req="pilot" max_group="10" blue="false">
 		    <text>Page 2.</text>
 		    <event>
 		      <loadEvent>FM_MODULAR_HULL_MODULES_SHIP2</loadEvent>
 		    </event>
-		  </choice>
+		  </choice>-->
 		  <choice req="pilot" max_group="11" blue="false">
 		    <text>Nevermind.</text>
 		    <event>
@@ -6525,8 +6537,24 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		  </choice>
 		</event>
 
+		<!--
 		<event name="FM_MODULAR_HULL_MODULES_SHIP2">
 		  <text>Here you can see the ship-wide modules you can install (You can select the option to see the effects before installing).</text>
+			<choice req="pilot" max_group="10" blue="false">
+		    <text>Page 1.</text>
+		    <event>
+		      <loadEvent>FM_MODULAR_HULL_MODULES_SHIP</loadEvent>
+		    </event>
+		  </choice>
+		  <choice req="pilot" max_group="11" blue="false">
+		    <text>Nevermind.</text>
+		    <event>
+		      <loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+		    </event>
+		  </choice>
+		</event>-->
+		<event name="FM_MODULAR_HULL_MODULES_VENGEANCE">
+		  <text>Here you can see the vengeance modules you can install (You can select the option to see the effects before installing).</text>
 			<choice req="pilot" max_group="2" blue="false">
 		    <text>Prismatic Hullguard Cultivator [50~]</text>
 		    <event>
@@ -6543,12 +6571,6 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		    <text>Forgefire Hullguard Cultivator [80~]</text>
 		    <event>
 		      <loadEvent>FM_MODULAR_HULL_MODULE_VENGEANCE3</loadEvent>
-		    </event>
-		  </choice>
-			<choice req="pilot" max_group="10" blue="false">
-		    <text>Page 1.</text>
-		    <event>
-		      <loadEvent>FM_MODULAR_HULL_MODULES_SHIP</loadEvent>
 		    </event>
 		  </choice>
 		  <choice req="pilot" max_group="11" blue="false">
