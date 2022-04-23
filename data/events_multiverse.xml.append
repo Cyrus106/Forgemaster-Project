@@ -6232,9 +6232,6 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		<event name="FM_MODULAR_HULL_MAIN_LOAD">
 		  <event/>
 		</event>
-		<event name="FM_MODULAR_HULL_MODULES_SYSTEMS2">
-		  <event/>
-		</event>
 
 		<event name="FM_MODULAR_HULL_MAIN">
 		  <text>This is where you can install and modify your very own Modular Hull (tm)!</text>
@@ -6512,24 +6509,13 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		    <text>Enhanced Respiration Grid Module [maxed]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
-		  <choice req="pilot" max_group="9" blue="false">
-		    <text>Scrap Magnet Module [25~]</text>
-		    <event>
-		      <loadEvent>FM_MODULAR_HULL_MODULE_SCRAP</loadEvent>
-		    </event>
-		  </choice>
-		  <choice req="FM_MODULAR_HULL_SCRAP" lvl="3" max_group="9" blue="false" hidden="true">
-		    <text>Scrap Magnet Module [maxed]</text>
-		    <event load="OPTION_INVALID"/>
-		  </choice>
-			<!--
-			<choice req="pilot" max_group="10" blue="false">
+			<choice req="pilot" max_group="9" blue="false">
 		    <text>Page 2.</text>
 		    <event>
 		      <loadEvent>FM_MODULAR_HULL_MODULES_SHIP2</loadEvent>
 		    </event>
-		  </choice>-->
-		  <choice req="pilot" max_group="11" blue="false">
+		  </choice>
+		  <choice req="pilot" max_group="10" blue="false">
 		    <text>Nevermind.</text>
 		    <event>
 		      <loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
@@ -6537,22 +6523,31 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		  </choice>
 		</event>
 
-		<!--
 		<event name="FM_MODULAR_HULL_MODULES_SHIP2">
 		  <text>Here you can see the ship-wide modules you can install (You can select the option to see the effects before installing).</text>
-			<choice req="pilot" max_group="10" blue="false">
+		  <choice req="pilot" max_group="2" blue="false">
+		    <text>Scrap Magnet Module [25~]</text>
+		    <event>
+		      <loadEvent>FM_MODULAR_HULL_MODULE_SCRAP</loadEvent>
+		    </event>
+		  </choice>
+		  <choice req="FM_MODULAR_HULL_SCRAP" lvl="3" max_group="2" blue="false" hidden="true">
+		    <text>Scrap Magnet Module [maxed]</text>
+		    <event load="OPTION_INVALID"/>
+		  </choice>
+			<choice req="pilot" max_group="9" blue="false">
 		    <text>Page 1.</text>
 		    <event>
 		      <loadEvent>FM_MODULAR_HULL_MODULES_SHIP</loadEvent>
 		    </event>
 		  </choice>
-		  <choice req="pilot" max_group="11" blue="false">
+		  <choice req="pilot" max_group="10" blue="false">
 		    <text>Nevermind.</text>
 		    <event>
 		      <loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
 		    </event>
 		  </choice>
-		</event>-->
+		</event>
 		<event name="FM_MODULAR_HULL_MODULES_VENGEANCE">
 		  <text>Here you can see the vengeance modules you can install (You can select the option to see the effects before installing).</text>
 			<choice req="pilot" max_group="2" blue="false">
@@ -8295,47 +8290,69 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		    <text>Perfect Onboard Efficency Capstone [installed]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
-		  <choice req="FM_MODULAR_HULL_FASTSHIELD" lvl="0" max_lvl="0" max_group="9" blue="false">
+			<choice req="pilot" max_group="9" blue="false">
+		    <text>Page 2.</text>
+		    <event>
+		      <loadEvent>FM_MODULAR_HULL_CAPSTONE2</loadEvent>
+		    </event>
+		  </choice>
+		  <choice req="pilot" max_group="10" blue="false">
+		    <text>Nevermind.</text>
+		    <event>
+		      <loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+		    </event>
+		  </choice>
+		</event>
+
+		<event name="FM_MODULAR_HULL_CAPSTONE2">
+		  <text>Here you can see the ship-wide modules you can install (You can select the option to see the effects before installing).</text>
+			<choice req="FM_MODULAR_HULL_FASTSHIELD" lvl="0" max_lvl="0" max_group="2" blue="false">
 		    <text>Infinitum Cyclo-Barrier Capstone [80~]</text>
 		    <event>
 		      <loadEvent>FM_MODULAR_HULL_CAPSTONE_FASTSHIELD</loadEvent>
 		    </event>
 		  </choice>
-		  <choice req="FM_MODULAR_HULL_FASTSHIELD" lvl="1" max_group="9" blue="false" hidden="true">
+		  <choice req="FM_MODULAR_HULL_FASTSHIELD" lvl="1" max_group="2" blue="false" hidden="true">
 		    <text>Infinitum Cyclo-Barrier Capstone [installed]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
-		  <choice req="FM_MODULAR_HULL_FASTWEAPON" lvl="0" max_lvl="0" max_group="10" blue="false">
+		  <choice req="FM_MODULAR_HULL_FASTWEAPON" lvl="0" max_lvl="0" max_group="3" blue="false">
 		    <text>Infinitum Cyclo-Arsenal Capstone [80~]</text>
 		    <event>
 		      <loadEvent>FM_MODULAR_HULL_CAPSTONE_FASTWEAPON</loadEvent>
 		    </event>
 		  </choice>
-		  <choice req="FM_MODULAR_HULL_FASTWEAPON" lvl="1" max_group="10" blue="false" hidden="true">
+		  <choice req="FM_MODULAR_HULL_FASTWEAPON" lvl="1" max_group="3" blue="false" hidden="true">
 		    <text>Infinitum Cyclo-Arsenal Capstone [installed]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
-		  <choice req="FM_MODULAR_HULL_CREWKILL" lvl="0" max_lvl="0" max_group="11" blue="false">
+		  <choice req="FM_MODULAR_HULL_CREWKILL" lvl="0" max_lvl="0" max_group="4" blue="false">
 		    <text>Metaplasmatic Corrosion Aura Capstone [105~]</text>
 		    <event>
 		      <loadEvent>FM_MODULAR_HULL_CAPSTONE_CREWKILL</loadEvent>
 		    </event>
 		  </choice>
-		  <choice req="FM_MODULAR_HULL_CREWKILL" lvl="1" max_group="11" blue="false" hidden="true">
+		  <choice req="FM_MODULAR_HULL_CREWKILL" lvl="1" max_group="4" blue="false" hidden="true">
 		    <text>Metaplasmatic Corrosion Aura Capstone [installed]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
-			<choice req="FM_MODULAR_HULL_MAGNETIC" lvl="0" max_lvl="0" max_group="12" blue="false">
+			<choice req="FM_MODULAR_HULL_MAGNETIC" lvl="0" max_lvl="0" max_group="5" blue="false">
 		    <text>Electromagnetic Hull Body Capstone [100~]</text>
 		    <event>
 		      <loadEvent>FM_MODULAR_HULL_CAPSTONE_MAGNETIC</loadEvent>
 		    </event>
 		  </choice>
-		  <choice req="FM_MODULAR_HULL_MAGNETIC" lvl="1" max_group="12" blue="false" hidden="true">
+		  <choice req="FM_MODULAR_HULL_MAGNETIC" lvl="1" max_group="5" blue="false" hidden="true">
 		    <text>Electromagnetic Hull Body Capstone [installed]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
-		  <choice req="pilot" max_group="12" blue="false">
+			<choice req="pilot" max_group="9" blue="false">
+		    <text>Page 1.</text>
+		    <event>
+		      <loadEvent>FM_MODULAR_HULL_CAPSTONE</loadEvent>
+		    </event>
+		  </choice>
+		  <choice req="pilot" max_group="10" blue="false">
 		    <text>Nevermind.</text>
 		    <event>
 		      <loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
@@ -8595,7 +8612,7 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		  </choice>
 		</event>
 		<event name="FM_MODULAR_HULL_CAPSTONE_CREWKILL">
-		  <text>Install the Metaplasmatic Corrosion Aura? [enemy crew takes +200% damage from everything, but only 50% from combat]</text>
+		  <text>Install the Metaplasmatic Corrosion Aura? [enemy crew takes x3 damage from everything, but only 50% from combat]</text>
 		  <choice req="pilot" max_group="1" blue="false">
 		    <text>Install the Metaplasmatic Corrosion Aura.</text>
 		    <event>
@@ -8701,7 +8718,7 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_CREWKILL" max_group="110" blue="false" hidden="true">
-		    <text>Metaplasmatic Corrosion Aura[enemy crew takes +200% damage from everything, but only 50% from combat]</text>
+		    <text>Metaplasmatic Corrosion Aura[enemy crew takes x3 damage from everything, but only 50% from combat]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 			<choice req="FM_MODULAR_HULL_MAGNETIC" max_group="111" blue="false" hidden="true">
