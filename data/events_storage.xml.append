@@ -6034,7 +6034,7 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 	<!-- AUGMENT USAGE MENU -->
 <mod:findName type = "event" name = "STORAGE_CHECK_AUG">
 
-  <mod-append:choice req="TWISTED_ANCIENT_BOUNTY" blue ="false">
+  <mod-append:choice req="TWISTED_ANCIENT_BOUNTY">
     <text>(Aether Bounty Codex) Check the Codex for potential targets.</text>
 		<event load="STORAGE_CHECK_TWISTED_ANCIENT_BOUNTY"/>
   </mod-append:choice>
@@ -6048,7 +6048,7 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
         <event load="FM_STORAGE_CHECK_AUG_MVBOSS_SPAWNER_REWARD"/>
 </mod-append:choice>
 <mod-append:choice req="CURA_MVBOSS_SPAWNER" lvl="1" max_group="3" hidden="false" blue="true">
-        <text>(C.U.R.A. Drive Hacker) Summon an Twisted MV Traveler.</text>
+        <text>(C.U.R.A. Drive Hacker) Summon a Twisted MV Traveler.</text>
         <event load="FM_STORAGE_CHECK_AUG_MVBOSS_SPAWNER_LIST"/>
 
 </mod-append:choice>
