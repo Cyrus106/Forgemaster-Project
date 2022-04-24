@@ -6612,10 +6612,6 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		<text>While Lanius ships are nearly always in vacuum, this one feels even more silent than you would expect. There's little of value left onboard except for some surprisingly high-grade scrap material in the dining hall.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
-	<event>
-		<text>While Lanius ships are nearly always in vacuum, this one feels even more silent than you would expect. There's little of value left onboard except for some surprisingly high-grade scrap material in the dining hall.</text>
-		<autoReward level="LOW">scrap_only</autoReward>
-	</event>
 </eventList>
 
 
@@ -6756,7 +6752,7 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		<text>You find some corrupted drone schematics aboard the ship's computers, and manage to construct a complete blueprint after a short while.</text>
 		<drone name="LIST_ABC_AUGMENTEDLANIUS_DRONEREWARD"/>
 	</event>
-		<event>
+  <event>
 		<text>You find some corrupted drone schematics aboard the ship's computers, and manage to construct a complete blueprint after a short while.</text>
 		<drone name="LIST_ABC_AUGMENTEDLANIUS_DRONEREWARD"/>
 	</event>
