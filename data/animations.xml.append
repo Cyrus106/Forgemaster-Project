@@ -2461,7 +2461,7 @@ HUSK SLUG ANIMATIONS
 </anim>
 
 <anim name="fm_drone_hack_walk_down">
-<sheet>fm_drone_hack</sheet>
+	<sheet>fm_drone_hack</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1.0</time>
 </anim>
@@ -3133,6 +3133,16 @@ try this later
 	<chargeImage>weapon_energy/fm_pulse_3_glow.png</chargeImage>
 </weaponAnim>
 
+<animSheet name="pulsedeep_cannon" w="1680" h="64" fw="48" fh="64">weapon_energy/pulsedeep_cannon.png</animSheet>
+<weaponAnim name="pulsedeep_cannon">
+	<sheet>pulsedeep_cannon</sheet>
+	<desc length="35" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>6</fireFrame>
+	<firePoint  x="32" y="7"/>
+	<mountPoint x="4" y="48"/>
+</weaponAnim>
+
 </FTL>
 
 	<FTL><!-- BEAMS-->
@@ -3616,6 +3626,13 @@ try this later
 	<sheet>fm_disc_shot</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>0.3</time>
+</anim>
+
+<animSheet name="explosion_pulsedeep_cannon" w="1792" h="64" fw="64" fh="64">effects/pulsedeep_cannon_explosion.png</animSheet>
+<anim name="explosion_pulsedeep_cannon">
+	<sheet>explosion_pulsedeep_cannon</sheet>
+	<desc length="28" x="0" y="0"/>
+	<time>0.5</time>
 </anim>
 	</FTL>
 

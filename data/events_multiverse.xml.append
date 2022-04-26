@@ -6440,7 +6440,7 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		<event name="FM_MODULAR_HULL_MODULES_SHIP">
 		  <text>Here you can see the ship-wide modules you can install (You can select the option to see the effects before installing).</text>
 		  <choice req="pilot" max_group="2" blue="false">
-		    <text>Fortified Plating Module [40~]</text>
+		    <text>Fortified Plating Module [50~]</text>
 		    <event>
 		      <loadEvent>FM_MODULAR_HULL_MODULE_FORTIFIED</loadEvent>
 		    </event>
@@ -6577,15 +6577,15 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		</event>
 
 		<event name="FM_MODULAR_HULL_MODULE_FORTIFIED">
-		  <text>Install Fortified Plating? [+10% hull resist chance, 5 can be installed, uses 2 upgrade notches]</text>
+		  <text>Install Fortified Plating? [+5% hull resist chance, 5 can be installed, uses 1 upgrade notches]</text>
 		  <choice req="pilot" max_group="1" blue="false">
 		    <text>Install the Fortified Plating.</text>
 		    <event>
 		      <text>Fortified Plating has been installed!</text>
 		      <hiddenAug>FM_MODULAR_HULL_FORTIFIED</hiddenAug>
-		      <variable name="fm_hull_upgrade_point" op="add" value="2"/>
+		      <variable name="fm_hull_upgrade_point" op="add" value="1"/>
 		      <item_modify>
-		        <item type="scrap" min="-40" max="-40"/>
+		        <item type="scrap" min="-50" max="-50"/>
 		      </item_modify>
 		      <choice blue="false">
 		        <text>Continue...</text>
@@ -8317,7 +8317,7 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_FASTWEAPON" lvl="0" max_lvl="0" max_group="3" blue="false">
-		    <text>Infinitum Cyclo-Arsenal Capstone [80~]</text>
+		    <text>Infinitum Cyclo-Arsenal Capstone [120~]</text>
 		    <event>
 		      <loadEvent>FM_MODULAR_HULL_CAPSTONE_FASTWEAPON</loadEvent>
 		    </event>
@@ -8591,7 +8591,7 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		      <hiddenAug>FM_MODULAR_HULL_FASTWEAPON</hiddenAug>
 		      <variable name="fm_hull_capstones" op="add" value="1"/>
 		      <item_modify>
-		        <item type="scrap" min="-80" max="-80"/>
+		        <item type="scrap" min="-120" max="-120"/>
 		      </item_modify>
 		      <triggeredEvent event="LOAD_FASTWEAPON" loops="999999999">
 		        <jumps amount="1" type="1"/>
@@ -8727,63 +8727,63 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		  </choice>
 		  <!--Fortified-->
 		  <choice req="FM_MODULAR_HULL_FORTIFIED" lvl="1" max_group="201" blue="false" hidden="true">
-		    <text>Fortified Plating Module [+10% hull resist]</text>
+		    <text>Fortified Plating Module [+5% hull resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_FORTIFIED" lvl="2" max_group="201" blue="false" hidden="true">
-		    <text>Fortified Plating Module(x2) [+20% hull resist]</text>
+		    <text>Fortified Plating Module(x2) [+10% hull resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_FORTIFIED" lvl="3" max_group="201" blue="false" hidden="true">
-		    <text>Fortified Plating Module(x3) [+30% hull resist]</text>
+		    <text>Fortified Plating Module(x3) [+15% hull resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_FORTIFIED" lvl="4" max_group="201" blue="false" hidden="true">
-		    <text>Fortified Plating Module(x4) [+40% hull resist]</text>
+		    <text>Fortified Plating Module(x4) [+20% hull resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_FORTIFIED" lvl="5" max_group="201" blue="false" hidden="true">
-		    <text>Fortified Plating Module(x5) [+50% hull resist]</text>
+		    <text>Fortified Plating Module(x5) [+25% hull resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_FORTIFIED" lvl="6" max_group="201" blue="false" hidden="true">
-		    <text>Fortified Plating Module(x6) [+60% hull resist]</text>
+		    <text>Fortified Plating Module(x6) [+30% hull resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_FORTIFIED" lvl="7" max_group="201" blue="false" hidden="true">
-		    <text>Fortified Plating Module(x7) [+70% hull resist]</text>
+		    <text>Fortified Plating Module(x7) [+35% hull resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_FORTIFIED" lvl="8" max_group="201" blue="false" hidden="true">
-		    <text>Fortified Plating Module(x8) [+80% hull resist]</text>
+		    <text>Fortified Plating Module(x8) [+40% hull resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_FORTIFIED" lvl="9" max_group="201" blue="false" hidden="true">
-		    <text>Fortified Plating Module(x9) [+90% hull resist]</text>
+		    <text>Fortified Plating Module(x9) [+45% hull resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_FORTIFIED" lvl="10" max_group="201" blue="false" hidden="true">
-		    <text>Fortified Plating Module(x10) [+100% hull resist]</text>
+		    <text>Fortified Plating Module(x10) [+50% hull resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_FORTIFIED" lvl="11" max_group="201" blue="false" hidden="true">
-		    <text>Fortified Plating Module(x11) [+110% hull resist]</text>
+		    <text>Fortified Plating Module(x11) [+55% hull resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_FORTIFIED" lvl="12" max_group="201" blue="false" hidden="true">
-		    <text>Fortified Plating Module(x12) [-120% hull resist]</text>
+		    <text>Fortified Plating Module(x12) [+60% hull resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_FORTIFIED" lvl="13" max_group="201" blue="false" hidden="true">
-		    <text>Fortified Plating Module(x13) [-130% hull resist]</text>
+		    <text>Fortified Plating Module(x13) [+65% hull resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_FORTIFIED" lvl="14" max_group="201" blue="false" hidden="true">
-		    <text>Fortified Plating Module(x14) [-140% hull resist]</text>
+		    <text>Fortified Plating Module(x14) [+70% hull resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_FORTIFIED" lvl="15" max_group="201" blue="false" hidden="true">
-		    <text>Fortified Plating Module(x15) [-150% hull resist]</text>
+		    <text>Fortified Plating Module(x15) [+75% hull resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <!--Encased-->
