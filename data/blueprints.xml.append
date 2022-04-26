@@ -751,6 +751,82 @@
 	<aug name="FM_DRONE_REPAIR_SYSTEM" />
 </shipBlueprint>
 
+<shipBlueprint name="PLAYER_SHIP_TWISTED2" layout="zmt_player_freemantis_suicide" img="zmt_player_freemantis_suicide">
+	<class>Twisted Renegade Free Mantis</class>
+	<name>Queen and Country</name>
+	<desc>These strange Mantis bear the banner of a land old and forgotten, and carry a powerful piece of technology from Ancient Britannia.</desc>
+	<systemList>
+		<artillery power="1" max ="4" room="13" start="false" weapon="ARTILLERY_BEAM" img="room_artillery_3" />
+		<battery power="1" max="2" room="5" start="false" img="room_battery_14" />
+		<cloaking power="1" room="3" start="true" img="fm_room_cloaking_3" />
+		<clonebay power="1" room="8" start="false">
+			<slot>
+				<number>3</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="14" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" max ="8" room="1" start="false" img="room_drones_9" />
+		<engines power="3" room="9" start="true" img="room_engines">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="17" start="false" img="room_hacking_7" />
+		<medbay power="1" room="8" start="true" img="room_medbay_FM_1">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="2" start="false" img="room_mind_4" />
+		<oxygen power="1" room="4" start="true" img="room_oxygen_2" />
+		<pilot power="1" room="0" start="true" img="room_pilot_4">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="15" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max ="8" room="6" start="false" img="room_shields_7">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="7" start="true" />
+		<weapons power="1" max ="8" room="16" start="true" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="2" count="4">
+		<weapon name="LASER_CHARGE_CHAIN" />
+	</weaponList>
+	<droneList drones="0" count="2" />
+	<health amount="30" />
+	<maxPower amount="7" />
+	<crewCount amount="1" class="engi_separatist" />
+	<crewCount amount="1" class="mantis_warlord" />
+	<crewCount amount="1" class="mantis_free" />
+	<crewCount amount="1" class="unique_freddy" />
+	<aug name="TWISTED_MANTIS_UPGRADER"/>
+</shipBlueprint>
+
+
 <shipBlueprint name="PLAYER_SHIP_TWISTED2_3" layout="zmt_player_mantis_suicide" img="zmt_player_mantis_suicide">
 	<class>Twisted Renegade Mantis</class>
 	<name>Zerg Rush</name>
@@ -2113,6 +2189,21 @@
 	<powerList>
 		<power>4x suffocation speed</power>
 		<power>2x suffocation speed for everyone due to second-hand smoke</power>
+	</powerList>
+</crewBlueprint>
+
+<crewBlueprint name="mantis_crackerjack">
+	<desc>British Elite Free Mantis Crew. A Free Mantis chief with a heavy addiction to the most dangerous beverage in the Multiverse: Tea.</desc>
+	<title>Free Mantis Crackerjack</title>
+	<short>Crackerjack</short>
+	<cost>95</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Active Ability: Enters a most patriotic frenzy, slashing across every enemy in the room while also massively increasing movement speed.</power>
+		<power>Max Health is reduced to 90</power>
+		<power>Takes only 0.7x damage in combat</power>
+		<power>1x movement speed and damage</power>
+		<power>Breaks down doors extremely rapidly</power>
 	</powerList>
 </crewBlueprint>
 
@@ -12492,6 +12583,23 @@ Buy/Sell Price: 120~/60~
 	<title>Aether Bounty Codex</title>
 	<desc>After finding some Aether tech of their own, these Obelisk-hating slugs decided that there was no better way to use it than to wipe the Multiverse clean of every last Ancient, as well as anybody else stupid enough to get in their way.</desc>
 	<cost>560</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<bp>0</bp>
+</augBlueprint>
+
+<augBlueprint name="TWISTED_MANTIS_UPGRADER">
+	<title>Queen's Tea</title>
+	<desc>The preferred beverage of an immortal monarch who rules over the distant cluster of Britannia. Each level of the Life Support system that is powered provides a 15% combat damage boost to all allied crew, but also reduces repair speed by 25%. Can be used to upgrade/convert your mantis crew during storage checks, although her Majesty demands a tax for her power...</desc>
+	<cost>200</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="SHIP_TWISTED_FREEMANTIS">
+	<title>Twisted Free Mantis Cruiser</title>
+	<desc>YOU SHOULD NEVER SEE THIS</desc>
+	<cost>0</cost>
 	<rarity>0</rarity>
 	<stackable>false</stackable>
 	<bp>0</bp>

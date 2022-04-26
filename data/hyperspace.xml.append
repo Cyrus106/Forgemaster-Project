@@ -141,7 +141,7 @@
 	<mod-append:ship name="PLAYER_SHIP_TWISTED1" a="true" b="true" c="true" > <!--guild,dusk,engi-->
 		<splitVictoryAchievement>true</splitVictoryAchievement>
 	</mod-append:ship>
-	<mod-append:ship name="PLAYER_SHIP_TWISTED2" a="false" b="false" c="true" > <!--Fmantis,seppy,mantis-->
+	<mod-append:ship name="PLAYER_SHIP_TWISTED2" a="true" b="false" c="true" > <!--Fmantis,seppy,mantis-->
 		<splitVictoryAchievement>true</splitVictoryAchievement>
 	</mod-append:ship>
 	<mod-append:ship name="PLAYER_SHIP_TWISTED3" a="true" b="false" c="true" > <!--monk,rock,lostsun-->
@@ -325,6 +325,13 @@
 		<increment>5</increment>
 	</customReactor>
 
+</mod-append:customShip>
+
+<mod-append:customShip name="PLAYER_SHIP_TWISTED2"> <!--free mantis-->
+			<hiddenAug>SHIP_TWISTED_FREEMANTIS</hiddenAug>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<crewLimit>12</crewLimit>
+			<customReactor maxLevel="35"/>
 </mod-append:customShip>
 
 <mod-append:customShip name="PLAYER_SHIP_TWISTED2_3"><!--mantis-->
@@ -7711,6 +7718,64 @@
 
 				</crew>
 
+				<crew> <!-- Free Mantis Crackerjack -->
+				<race name="mantis_crackerjack">
+				<maxHealth>90</maxHealth>
+				<doorDamageMultiplier>10</doorDamageMultiplier>
+				<repairSpeed>0.5</repairSpeed>
+				<moveSpeedMultiplier>1</moveSpeedMultiplier>
+				<damageMultiplier>1</damageMultiplier>
+				<damageTakenMultiplier>0.7</damageTakenMultiplier>
+				<animBase>mantis</animBase>
+				<deathSounds>
+					<deathSound>mantisDeath</deathSound>
+				</deathSounds>
+				<shootingSounds>
+					<shootingSound>mantisSpit1</shootingSound>
+					<shootingSound>mantisSpit2</shootingSound>
+					<shootingSound>mantisSpit3</shootingSound>
+				</shootingSounds>
+				<powerEffect>
+					<cooldown>15</cooldown>
+					<jumpCooldown>full</jumpCooldown>
+					<powerSounds>
+						<powerSound>mantisSlash</powerSound>
+					</powerSounds>
+					<req type="enemy">
+						<enemyInRoom/>
+					</req>
+					<activateWhenReady enemiesOnly="true">true</activateWhenReady>
+					<buttonText>TEATIME</buttonText>
+					<tooltip>Ready: Inflict 50 damage to all enemies in the room over the course of 5 seconds with a devastating fury of slashes. Movement speed increases to 9x during the duration of the effect.</tooltip>
+					<cooldownColor r="88" g="39" b="16"/>
+					<temporaryEffect>
+						<duration>5</duration>
+						<cooldownColor r="244" g="88" b="2"/>
+						<finishSounds>
+							<finishSound>mantisSplat1</finishSound>
+							<finishSound>mantisSplat2</finishSound>
+							<finishSound>mantisSplat3</finishSound>
+						</finishSounds>
+						<effectAnim>pheromones_c</effectAnim>
+						<moveSpeedMultiplier>9</moveSpeedMultiplier>
+						<statBoosts>
+							<statBoost name="trueHealAmount">
+								<boostType>FLAT</boostType>
+								<amount>-10</amount>
+								<shipTarget>CURRENT_ROOM</shipTarget>
+								<crewTarget>ENEMIES</crewTarget>
+								<droneTarget>ALL</droneTarget>
+								<affectsSelf>false</affectsSelf>
+								<priority>0</priority>
+								<boostAnim>slashy</boostAnim>
+							</statBoost>
+						</statBoosts>
+					</temporaryEffect>
+				</powerEffect>
+
+				</race>
+				</crew>
+
 				<crew> <!-- Ebony Ion crew, 2 ion damage -->
 					<race name="fm_power">
 						<maxHealth>100</maxHealth>
@@ -12467,6 +12532,107 @@
 
 			</augments>
 
+	<augments> <!--Twisted Free Mantis Augments-->
+		<aug name="TWISTED_MANTIS_UPGRADER">
+		<locked/>
+			<function name="CREW_STIMS" value="0" useForReqs="true" warning="false"/>
+		<statBoosts>
+			<statBoost name="damageMultiplier">
+				<boostType>MULT</boostType>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<amount>1.15</amount>
+				<priority>0</priority>
+				<systemPowerDependency>
+					<oxygen/>
+				</systemPowerDependency>
+				<systemPowerScaling>
+					<noSys>0</noSys>
+					<noPwr>0</noPwr>
+					<onePwr>1</onePwr>
+					<twoPwr>2</twoPwr>
+					<threePwr>3</threePwr>
+					<fourPwr>4</fourPwr>
+					<fivePwr>5</fivePwr>
+					<sixPwr>6</sixPwr>
+					<sevenPwr>7</sevenPwr>
+					<eightPwr>8</eightPwr>
+					<ninePwr>9</ninePwr>
+					<tenPwr>10</tenPwr>
+					<elevenPwr>11</elevenPwr>
+					<twelvePwr>12</twelvePwr>
+					<thirteenPwr>13</thirteenPwr>
+					<fourteenPwr>14</fourteenPwr>
+					<fifteenPwr>15</fifteenPwr>
+					<sixteenPwr>16</sixteenPwr>
+					<seventeenPwr>17</seventeenPwr>
+					<eighteenPwr>18</eighteenPwr>
+					<nineteenPwr>19</nineteenPwr>
+					<twentyPwr>20</twentyPwr>
+					<twentyonePwr>21</twentyonePwr>
+					<twentytwoPwr>22</twentytwoPwr>
+					<twentythreePwr>23</twentythreePwr>
+					<twentyfourPwr>24</twentyfourPwr>
+					<twentyfivePwr>25</twentyfivePwr>
+					<twentysixPwr>26</twentysixPwr>
+					<twentysevenPwr>27</twentysevenPwr>
+					<twentyeightPwr>28</twentyeightPwr>
+					<twentyninePwr>29</twentyninePwr>
+					<thirtyPwr>30</thirtyPwr>
+				</systemPowerScaling>
+			</statBoost>
+			<statBoost name="repairSpeed">
+				<boostType>MULT</boostType>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<amount>0.75</amount>
+				<priority>0</priority>
+				<systemPowerDependency>
+					<oxygen/>
+				</systemPowerDependency>
+				<systemPowerScaling>
+					<noSys>0</noSys>
+					<noPwr>0</noPwr>
+					<onePwr>1</onePwr>
+					<twoPwr>2</twoPwr>
+					<threePwr>3</threePwr>
+					<fourPwr>4</fourPwr>
+					<fivePwr>5</fivePwr>
+					<sixPwr>6</sixPwr>
+					<sevenPwr>7</sevenPwr>
+					<eightPwr>8</eightPwr>
+					<ninePwr>9</ninePwr>
+					<tenPwr>10</tenPwr>
+					<elevenPwr>11</elevenPwr>
+					<twelvePwr>12</twelvePwr>
+					<thirteenPwr>13</thirteenPwr>
+					<fourteenPwr>14</fourteenPwr>
+					<fifteenPwr>15</fifteenPwr>
+					<sixteenPwr>16</sixteenPwr>
+					<seventeenPwr>17</seventeenPwr>
+					<eighteenPwr>18</eighteenPwr>
+					<nineteenPwr>19</nineteenPwr>
+					<twentyPwr>20</twentyPwr>
+					<twentyonePwr>21</twentyonePwr>
+					<twentytwoPwr>22</twentytwoPwr>
+					<twentythreePwr>23</twentythreePwr>
+					<twentyfourPwr>24</twentyfourPwr>
+					<twentyfivePwr>25</twentyfivePwr>
+					<twentysixPwr>26</twentysixPwr>
+					<twentysevenPwr>27</twentysevenPwr>
+					<twentyeightPwr>28</twentyeightPwr>
+					<twentyninePwr>29</twentyninePwr>
+					<thirtyPwr>30</thirtyPwr>
+				</systemPowerScaling>
+			</statBoost>
+		</statBoosts>
+
+
+		</aug>
+	</augments>
+
 			<augments> <!--FORGEMASTER AUGMENTS for Energized Rooms -->
 				<aug name="ENERGIZED_ROOM_MEDBAY">
 					<statBoosts>
@@ -13302,6 +13468,7 @@
 			<mod:findName name="LIST_CHECK_AUGMENTS">
 				<mod-append:name>TWISTED_ANCIENT_BOUNTY</mod-append:name>
 				<mod-append:name>CURA_MVBOSS_SPAWNER</mod-append:name>
+				<mod-append:name>TWISTED_MANTIS_UPGRADER</mod-append:name>
 			</mod:findName>
 		</mod:findLike>
 

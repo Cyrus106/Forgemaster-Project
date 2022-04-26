@@ -6033,7 +6033,10 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 
 	<!-- AUGMENT USAGE MENU -->
 <mod:findName type = "event" name = "STORAGE_CHECK_AUG">
-
+  <mod-append:choice req="TWISTED_MANTIS_UPGRADER" blue ="true">
+      <text>Have a tea party with some of Her Majesty's finest tea.</text>
+      <event load="STORAGE_CHECK_AUG_TWISTED_MANTIS_UPGRADE_MENU"/>
+  </mod-append:choice>
   <mod-append:choice req="TWISTED_ANCIENT_BOUNTY">
     <text>(Aether Bounty Codex) Check the Codex for potential targets.</text>
 		<event load="STORAGE_CHECK_TWISTED_ANCIENT_BOUNTY"/>
@@ -6934,6 +6937,188 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 	</event>
 
 </eventList>
+
+
+<!--Queen's Tea Mantis Upgrades-->
+<event name="STORAGE_CHECK_AUG_TWISTED_MANTIS_UPGRADE_MENU">
+
+	<text>Whom shall you share the tea with?</text>
+	<choice hidden="true" req="mantis" blue="false" max_group="0">
+	<text>Convert your Hive Mantis into a Free Mantis. [Tax: 10~]</text>
+		<event>
+			<text load="TEXT_TWISTED_MANTIS_UPGRADE_MANTIS_TO_FREE_MANTIS"/>
+				<transformRace class="mantis">mantis_free</transformRace>
+						<item_modify>
+						<item type="scrap" min="-10" max="-10"/>
+						</item_modify>
+				<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+				</choice>
+			</event>
+    </choice>
+
+	<choice hidden="true" req="mantis" lvl = "0" blue = "false" max_group="0">
+		<text>You do not have a Hive Mantis to convert into a Free Mantis. [Tax: 10~]</text>
+		<event load="OPTION_INVALID"/>
+    </choice>
+
+	<choice hidden="true" req="mantis" blue="false" max_group="1">
+	<text>Convert your Hive Mantis into a Suzerain. [Tax: 20~]</text>
+		<event>
+			<text load="TEXT_TWISTED_MANTIS_UPGRADE_MANTIS_TO_SUZERAIN"/>
+				<transformRace class="mantis">mantis_suzerain</transformRace>
+						<item_modify>
+						<item type="scrap" min="-20" max="-20"/>
+						</item_modify>
+				<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+				</choice>
+			</event>
+    </choice>
+
+	<choice hidden="true" req="mantis" lvl = "0" blue = "false" max_group="1">
+		<text>You do not have a Hive Mantis to convert into a Suzerain. [Tax: 20~]</text>
+		<event load="OPTION_INVALID"/>
+    </choice>
+
+	<choice hidden="true" req="mantis_suzerain" blue="false" max_group ="2">
+	<text>Convert your Suzerain into a Bishop. [Tax: 30~]</text>
+		<event>
+			<text load="TEXT_TWISTED_MANTIS_UPGRADE_SUZERAIN_TO_BISHOP"/>
+				<transformRace class="mantis_suzerain">mantis_bishop</transformRace>
+						<item_modify>
+						<item type="scrap" min="-30" max="-30"/>
+						</item_modify>
+				<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+				</choice>
+			</event>
+    </choice>
+
+	<choice hidden="true" req="mantis_suzerain" lvl = "0" blue = "false" max_group="2">
+		<text>You do not have a Suzerain to convert into a Bishop. [Tax: 30~]</text>
+		<event load="OPTION_INVALID"/>
+    </choice>
+
+	<choice hidden="true" req="mantis_free" blue="false" max_group="3">
+	<text>Convert your Free Mantis into a Hive Mantis. [Tax: 10~]</text>
+		<event>
+			<text load="TEXT_TWISTED_MANTIS_UPGRADE_FREE_MANTIS_TO_MANTIS"/>
+				<transformRace class="mantis_free">mantis</transformRace>
+						<item_modify>
+						<item type="scrap" min="-10" max="-10"/>
+						</item_modify>
+				<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+				</choice>
+			</event>
+    </choice>
+
+	<choice hidden="true" req="mantis_free" lvl = "0" blue = "false" max_group="3">
+		<text>You do not have a Free Mantis to convert into a Hive Mantis. [Tax: 10~]</text>
+		<event load="OPTION_INVALID"/>
+    </choice>
+
+	<choice hidden="true" req="mantis_free" blue="false" max_group="4">
+	<text>Convert your Free Mantis into a Warlord. [Tax: 20~]</text>
+		<event>
+			<text load="TEXT_TWISTED_MANTIS_UPGRADE_FREE_MANTIS_TO_WARLORD"/>
+				<transformRace class="mantis_free">mantis_warlord</transformRace>
+						<item_modify>
+						<item type="scrap" min="-20" max="-20"/>
+						</item_modify>
+				<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+				</choice>
+			</event>
+    </choice>
+
+	<choice hidden="true" req="mantis_free" lvl = "0" blue = "false" max_group="4">
+		<text>You do not have a Free Mantis to convert into a Warlord. [Tax: 20~]</text>
+		<event load="OPTION_INVALID"/>
+    </choice>
+
+	<choice hidden="true" req="mantis_warlord" blue="false" max_group ="5">
+	<text>Convert your Warlord into a Crackerjack. [Tax: 30~]</text>
+		<event>
+			<text load="TEXT_TWISTED_MANTIS_UPGRADE_WARLORD_TO_CRACKERJACK"/>
+				<transformRace class="mantis_warlord">mantis_crackerjack</transformRace>
+						<item_modify>
+						<item type="scrap" min="-30" max="-30"/>
+						</item_modify>
+				<choice hidden="true">
+				<text>Continue...</text>
+				<event load="STORAGE_CHECK"/>
+				</choice>
+			</event>
+    </choice>
+
+	<choice hidden="true" req="mantis_warlord" lvl = "0" blue = "false" max_group="5">
+		<text>You do not have a Warlord to convert into a Crackerjack. [Tax: 30~]</text>
+		<event load="OPTION_INVALID"/>
+    </choice>
+
+
+	<choice req="pilot" lvl="1" blue="false" max_group="6">
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
+
+
+<!--Flavor text list for upgrading hive mantis to free mantis-->
+<textList name="TEXT_TWISTED_MANTIS_UPGRADE_MANTIS_TO_FREE_MANTIS">
+	<text>Your Mantis is initially hostile towards the idea of consuming such a strange beverage, but eventually they relent and take a sip of the Queen's Tea. Within moments, you can see their once battle-hardened expression fade into a carefree smile.</text>
+	<text>You sit your Mantis down and attempt to explain proper teatime etiquette to them. When that fails, you tell them that teatime was an Old Earth warrior's tradition, fit for only the bravest and most brutal. You're barely halfway through your improvised explanation when your Mantis grabs the tea and begins chugging vigorously. You step back, knowing better than to get in between a Mantis and their prey.</text>
+	<text>You enter the dining hall to find that your Mantis has spilled their tea for the sixth time in the past hour. The problem is quickly solved once you acquire a sippie cup for them, and the tea immediately begins to take effect.</text>
+	<text>Your Mantis is surprisingly willing to partake in the Queen's Tea! You're somewhat confused, until they ask how you managed to obtain tea from Leikonpliiinakra herself. You do your best to put on a straight face and give a convincing reply.</text>
+</textList>
+
+<!--Flavor text list for upgrading hive mantis to suzerain-->
+<textList name="TEXT_TWISTED_MANTIS_UPGRADE_MANTIS_TO_SUZERAIN">
+	<text>You invite your Mantis to enjoy some of the Queen's Tea alongside you before the next jump. As they take a sip, their eyes widen at once. "Captain, what is being put in beverages? It very strong, and making for good drinkings!" You ask them how they feel, and they respond by sawing the table clean in half in mere moments! "I feeling very strong like Mantis warrior, Captain! Am ready to do the killings!"</text>
+	<text>Your Mantis carefully observes the small teacup in front of them with a curious expression. "This is for drinkings, yes?" You nod, and gesture for them to go ahead and have some. They sip the tea hesitantly at first, then greedily gulp the rest of it down. You shudder to imagine what the Queen would say about her beloved tea being consumed in such an unruly manner.</text>
+	<text>You find your Mantis practicing a strange haka in their quarters. They barely pause for a moment to accept the tea from you, and immediately return to their motions after guzzling it down. They say nothing else, but you take note of the newly-found vigor in their movements.</text>
+	<text>Your Mantis is eating a dish that you don't recognize in the cafeteria. You carefully replace their drink with the Queen's Tea when they aren't looking, and leave before they notice you. Later, you get an automated alert from the ship's training center, informing you that one of your crew has completed all of the standard combat simulations without flaw. You put in a request for some more advanced training protocols.</text>
+</textList>
+
+<!--Flavor text list for upgrading suzerain to bishop-->
+<textList name="TEXT_TWISTED_MANTIS_UPGRADE_SUZERAIN_TO_BISHOP">
+	<text>You upgrade your suzerain to a bishop</text>
+	<text>You upgrade your suzerain to a bishop</text>
+	<text>You upgrade your suzerain to a bishop</text>
+	<text>You upgrade your suzerain to a bishop</text>
+</textList>
+
+<!--Flavor text list for upgrading free mantis to hive mantis-->
+<textList name="TEXT_TWISTED_MANTIS_UPGRADE_FREE_MANTIS_TO_MANTIS">
+	<text>You upgrade your free mantis to a mantis</text>
+	<text>You upgrade your free mantis to a mantis</text>
+	<text>You upgrade your free mantis to a mantis</text>
+	<text>You upgrade your free mantis to a mantis</text>
+</textList>
+
+<!--Flavor text list for upgrading free mantis to warlord-->
+<textList name="TEXT_TWISTED_MANTIS_UPGRADE_FREE_MANTIS_TO_WARLORD">
+	<text>You upgrade your free mantis to a warlord</text>
+	<text>You upgrade your free mantis to a warlord</text>
+	<text>You upgrade your free mantis to a warlord</text>
+	<text>You upgrade your free mantis to a warlord</text>
+</textList>
+
+<!--Flavor text list for upgrading warlord to crackerjack-->
+<textList name="TEXT_TWISTED_MANTIS_UPGRADE_WARLORD_TO_CRACKERJACK">
+	<text>you upgrade your warlord to a crackerjack</text>
+	<text>you upgrade your warlord to a crackerjack</text>
+	<text>you upgrade your warlord to a crackerjack</text>
+	<text>you upgrade your warlord to a crackerjack</text>
+</textList>
+
 
 
 <!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #       -->
