@@ -13326,7 +13326,7 @@
 
 			    <!--ship-wide upgrades-->
 			    <aug name="FM_MODULAR_HULL_FORTIFIED">
-			      <function name="ROCK_ARMOR" value="0.10" useForReqs="false"/>
+			      <function name="ROCK_ARMOR" value="0.05" useForReqs="false"/>
 			    </aug>
 
 			    <aug name="FM_MODULAR_HULL_ENCASED">

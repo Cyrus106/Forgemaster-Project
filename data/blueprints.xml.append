@@ -12517,8 +12517,8 @@ Buy/Sell Price: 120~/60~
 
   <augBlueprint name="FM_MODULAR_HULL_FORTIFIED">
     <title>Fortified Plating</title>
-    <desc>+10% hull resist</desc>
-    <cost>40</cost>
+    <desc>+5% hull resist</desc>
+    <cost>50</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
@@ -13282,6 +13282,129 @@ At empty beacons provides 4 fleet delay for 15 missiles, but increases general n
 	</colorList>
 </crewBlueprint>
 
+<weaponBlueprint name="FM_PULSEDEEP">
+	<type>LASER</type>
+	<tip>tip_focusenergy</tip>
+	<title>Pulsedeep Cannon</title>
+	<short>Pulsedeep C.</short>
+	<desc>A combination of Energy and Ion technology. Deals 2 bonus ion damage on a room hit. May start fires and breaches.</desc>
+	<descriptionOverride>A combination of Energy and Ion technology. Deals 2 bonus ion damage on a room hit. Hit crew are periodically Stunned. May start fires and breaches.
+
+		Stats:
+		Required Power: 3
+		Charge Time: 13 seconds
+
+		Shots Per Charge: 1
+
+		2x hull damage on systemless rooms.
+		2x ion damage on system rooms.
+		Base Hull Damage: 2
+		Total Crew Damage: 30
+		Ion Damage: 2
+
+
+		Fire Chance: 10%
+		Breach Chance: 10% (Adjusted: 9%)
+		Stun Chance: 100% (3 seconds long)
+
+		Buy/Sell Price: 126~/63~
+	</descriptionOverride>
+	<tooltip>One damage per room beam weapon</tooltip>
+	<tooltipOverride>Required Power: 3
+		Charge Time: 13 seconds
+
+		Shots Per Charge: 1
+
+		2x hull damage on systemless rooms.
+		2x ion damage on system rooms.
+		Base Hull Damage: 2
+		Total Crew Damage: 30
+		Ion Damage: 2
+
+
+		Fire Chance: 10%
+		Breach Chance: 10% (Adjusted: 9%)
+		Stun Chance: 100% (3 seconds long) </tooltipOverride>
+	<damage>2</damage>
+	<ion>2</ion>
+	<noSysDamage/>
+	<hullBust>1</hullBust>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>1</breachChance>
+	<stun>3</stun>
+	<cooldown>13</cooldown>
+	<speed>40</speed>
+	<power>3</power>
+	<cost>126</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<image>plusedeep_cannon_proj</image>
+	<explosion>explosion_pulsedeep_cannon</explosion>
+	<launchSounds>
+		<sound>energy</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>ionHit1</sound>
+		<sound>ionHit2</sound>
+		<sound>ionHit3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>ionShields1</sound>
+		<sound>ionShields2</sound>
+		<sound>ionShields3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>pulsedeep_cannon</weaponArt>
+	<iconImage>ion</iconImage>
+	<spawnCrew>
+		<race>fm_ion_instant_2</race>
+		<number>1</number>
+		<noSlot>true</noSlot>
+		<statBoosts>
+			<statBoost name="noClone">
+				<boostType>SET</boostType>
+				<value>true</value>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<priority>999999</priority>
+			</statBoost>
+			<statBoost name="maxHealth">
+				<boostType>FLAT</boostType>
+				<amount>-1000000</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<priority>999999</priority>
+			</statBoost>
+		</statBoosts>
+	</spawnCrew>
+	<statBoosts>
+		<statBoost name="powerEffect">
+			<boostType>SET</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ENEMIES</crewTarget>
+			<priority>999999</priority>
+			<blackList load="LIST_FM_PLSNOEFFECT"/>
+			<powerEffect>
+				<cooldown>6</cooldown>
+				<jumpCooldown>full</jumpCooldown>
+				<powerSounds>
+					<powerSound>ionHit1</powerSound>
+				</powerSounds>
+				<stun>2</stun>
+				<friendlyFire>true</friendlyFire>
+				<shipFriendlyFire>true</shipFriendlyFire>
+				<buttonText>CONCUSSION</buttonText>
+				<tooltip>Ready: Take 15 damage and stun for 2s.</tooltip>
+				<cooldownColor r="170" g="206" b="39"/>
+				<effectAnim>explosion_ion</effectAnim>
+				<selfHealth>-15</selfHealth>
+				<affectsSelf>true</affectsSelf>
+			</powerEffect>
+</weaponBlueprint>
+
 <!--
 <shipBlueprint name="PLAYER_SHIP_KESTRAL" layout="kestral" img="kestral">
 	<class>Testrel V2</class>
@@ -13338,7 +13461,7 @@ At empty beacons provides 4 fleet delay for 15 missiles, but increases general n
 		<stackable>false</stackable>
 	</augBlueprint>
 
-<augBlueprint name="INTERNALIZED_AUG_COUNTER">
+	<augBlueprint name="INTERNALIZED_AUG_COUNTER">
 		<title>(IZD_NANOBOT_DEFENSE_SYSTEM)</title>
 		<desc>You're not supposed to see this. Signed, The Ghost Hugger</desc>
 		<cost>0</cost>
