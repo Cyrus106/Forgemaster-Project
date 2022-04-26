@@ -11,6 +11,7 @@ numerous weapon combinations into stronger variants (or at the very least, side-
 (experimental build with optimized forgemaster spawning by Julk)
 changes:
 hotfix 22
+
 - fixed all FM minelaunchers to work and have consequences for delay (5.1 broke it)
   - also added the option to create fleet delay using royal onslaught (same as onslaught but 1 cheaper)
 - removed the old FM spawning quest appending, added new one
@@ -196,6 +197,7 @@ Intended features to be added in future updates:
 
  -An EXTRA SPECIAL THANKS to the ENTIRE Playtester team!
 
+-Thanks to Github for making this so easy
  INCLUDING
  --BetelgeuseBear
  --Digger4money
