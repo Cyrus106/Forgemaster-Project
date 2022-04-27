@@ -1443,6 +1443,7 @@
     <mod-append:name>husk_slug_player</mod-append:name>
 		<mod-append:name>fm_plated</mod-append:name>
 		<mod-append:name>fm_human_texture</mod-append:name>
+		<mod-append:name>mantis_crackerjack</mod-append:name>
 </mod:findName>
 <mod:findName type = "blueprintList" name = "LIST_CREW_ALIENS">
     <mod-append:name>husk_slug_player</mod-append:name>
@@ -1451,6 +1452,7 @@
 		<mod-append:name>fm_forgemasterperson_player</mod-append:name>
 		<mod-append:name>remington</mod-append:name>
 		<mod-append:name>mossberg</mod-append:name>
+		<mod-append:name>mantis_crackerjack</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "LIST_CREW_MORPH_HUMAN">
@@ -1462,6 +1464,12 @@
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "LIST_CREW_UNIQUE_CRAPBUCKET">
+    <mod-append:name>fm_forgemasterperson_player</mod-append:name>
+		<mod-append:name>remington</mod-append:name>
+		<mod-append:name>mossberg</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "LIST_CREW_UNIQUE">
     <mod-append:name>fm_forgemasterperson_player</mod-append:name>
 		<mod-append:name>remington</mod-append:name>
 		<mod-append:name>mossberg</mod-append:name>
@@ -1479,6 +1487,18 @@
 
 <mod:findName type = "blueprintList" name = "LIST_CREW_MORPH_ORCHID">
     <mod-append:name>orchid_fire</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "LIST_CREW_MANTIS">
+	<mod-append:name>mantis_crackerjack</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "LIST_CREW_FREEMAN">
+	<mod-append:name>mantis_crackerjack</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "LIST_CREW_MORPH_FREEMANTIS">
+	<mod-append:name>mantis_crackerjack</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "LIST_CHECKCREW_ROCK">
@@ -1547,8 +1567,10 @@
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "LIST_CREW_ELITE">
-    <mod-append:name>remington</mod-append:name>
+	<mod-append:name>remington</mod-append:name>
 	<mod-append:name>mossberg</mod-append:name>
+	<mod-append:name>fm_plated</mod-append:name>
+	<mod-append:name>mantis_crackerjack</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "BLUELIST_DRONES_BEAM">

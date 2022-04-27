@@ -819,10 +819,12 @@
 	<droneList drones="0" count="2" />
 	<health amount="30" />
 	<maxPower amount="7" />
-	<crewCount amount="1" class="engi_separatist" />
-	<crewCount amount="1" class="mantis_warlord" />
-	<crewCount amount="1" class="mantis_free" />
-	<crewCount amount="1" class="unique_freddy" />
+	<crew>
+		<mantis_warlord room="0"/>
+		<engi_separatist room="9"/>
+		<mantis_free room="16"/>
+		<unique_freddy room="7" name="Freddy" />
+	</crew>
 	<aug name="TWISTED_MANTIS_UPGRADER"/>
 </shipBlueprint>
 
