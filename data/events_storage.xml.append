@@ -9306,4 +9306,23 @@ The player will then eliminate candidates (based on the opponent's response) by 
   	</choice>
 
   </event>
+
+  <mod:findName type="event" name="COMBAT_CHECK_EQUALIZER">
+    <mod:findLike type="choice">
+      <mod:selector req="weapons" />
+      <mod:findLike type="event">
+        <mod-append:triggeredEvent event="RELIMIT_WEAPONS_1" thisFight="true" clearOnJump="true">
+          <time amount="0.1"/>
+        </mod-append:triggeredEvent>
+      </mod:findLike>
+    </mod:findLike>
+    <mod:findLike type="choice">
+      <mod:selector req="shields" />
+      <mod:findLike type="event">
+        <mod-append:triggeredEvent event="RELIMIT_SHIELDS_0" thisFight="true" clearOnJump="true">
+          <time amount="0.1"/>
+        </mod-append:triggeredEvent>
+      </mod:findLike>
+    </mod:findLike>
+  </mod:findName>
 </FTL>

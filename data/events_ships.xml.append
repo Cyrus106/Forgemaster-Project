@@ -2740,73 +2740,80 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 		<text>Continue...</text>
 		<event>
 			<text>You are immediately hailed by the ship. "Are you the Gatekeeper?" An otherworldly chorus of voices asks, but you can't make out much on the screen.</text>
-	<choice hidden="false" req="TWISTED_LOSTSUN" lvl="1" max_group="1" blue="true">
-	<text>(Twisted Lostsun) I seriously don't have time for games.</text>
-		<event>
-		<text>"O-Oh...I had a whole speech planned about keys and gates, I s-suppose that was rude of me."</text>
-		<choice hidden="false" req="TWISTED_LOSTSUN" lvl="1" max_group="1" blue="false">
-		<text>Yeah, it kinda was.</text>
-		<event>
-		<status type="limit" target="enemy" system="weapons" amount="0"/>
-		<text>The enemy seems more depressed, their weapons go entirely offline and their ability to jam your systems is gone. Poor guy.</text>
-			<ship hostile="true"/>
-		<playMusic>Twisted</playMusic>
-			<choice hidden="true">
-				<text>Continue...</text>
-				<event load="COMBAT_CHECK"/>
+			<choice hidden="false" req="TWISTED_LOSTSUN" lvl="1" max_group="1" blue="true">
+				<text>(Twisted Lostsun) I seriously don't have time for games.</text>
+				<event>
+					<text>"O-Oh...I had a whole speech planned about keys and gates, I s-suppose that was rude of me."</text>
+					<choice hidden="false" req="TWISTED_LOSTSUN" lvl="1" max_group="1" blue="false">
+						<text>Yeah, it kinda was.</text>
+						<event>
+							<status type="limit" target="enemy" system="weapons" amount="0"/>
+							<text>The enemy seems more depressed, their weapons go entirely offline and their ability to jam your systems is gone. Poor guy.</text>
+							<ship hostile="true"/>
+							<playMusic>Twisted</playMusic>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="COMBAT_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
 			</choice>
-		</event>
-	</choice>
-</event>
-	</choice>
-	<choice hidden="true" req="pilot" lvl="1" max_group="2" blue="false">
-		<text>Yes, I'm the Gatekeeper.</text>
-		<event>
-		<text>"Good, I am the Keymaster. It is time for us to become one. Using our supreme splitter powers, we will be aboard your vessel and will claim your soul, Gatekeeper." </text>
-	<choice hidden="true">
-		<text>Why not just use a teleporter?</text>
-		<event>
-		<text>"....what is a teleporter?" the chorus of voices responds. "You aim to trick me Gatekeeper, but I'm wise to your tricks. It is time to die!"[Some kind of electro-magnetic slimes begins pouring out of your systems, disabling most of them. A majority appear to be sabotaged!] </text>
-			<status type="limit" target="player" system="teleporter" amount="0"/>
-			<status type="limit" target="player" system="weapons" amount="0"/>
-			<status type="limit" target="player" system="drones" amount="0"/>
-			<status type="limit" target="player" system="artillery" amount="0"/>
-			<ship hostile="true"/>
-			<playMusic>Twisted</playMusic>
-			<choice hidden="true">
-				<text>Continue...</text>
-				<event load="COMBAT_CHECK"/>
+			<choice hidden="true" req="pilot" lvl="1" max_group="2" blue="false">
+				<text>Yes, I'm the Gatekeeper.</text>
+				<event>
+					<text>"Good, I am the Keymaster. It is time for us to become one. Using our supreme splitter powers, we will be aboard your vessel and will claim your soul, Gatekeeper." </text>
+					<choice hidden="true">
+						<text>Why not just use a teleporter?</text>
+						<event>
+							<text>"....what is a teleporter?" the chorus of voices responds. "You aim to trick me Gatekeeper, but I'm wise to your tricks. It is time to die!"[Some kind of electro-magnetic slimes begins pouring out of your systems, disabling most of them. A majority appear to be sabotaged!] </text>
+							<status type="limit" target="player" system="teleporter" amount="0"/>
+							<status type="limit" target="player" system="weapons" amount="0"/>
+							<status type="limit" target="player" system="drones" amount="0"/>
+							<status type="limit" target="player" system="artillery" amount="0"/>
+							<triggeredEvent event="TWISTED_KESTREL_RELIMIT" thisFight="true" clearOnJump="true">
+								<time amount="0.1"/>
+							</triggeredEvent>
+							<ship hostile="true"/>
+							<playMusic>Twisted</playMusic>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="COMBAT_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
 			</choice>
-		</event>
-	</choice>
-</event>
-	</choice>
-	<choice hidden="true" req="pilot" lvl="1" max_group="3" blue="false">
-		<text>Excuse me?</text>
-		<event>
-		<text>I am the Keymaster. I can tell you are feigning ignorance. I will find out myself if you are hiding the Gatekeeper onboard. Using our supreme splitter powers, we will be aboard your vessel and will claim your soul."</text>
-		<choice hidden="true">
-		<text>Why not just use a teleporter?</text>
-		<event>
-		<text>"....what is a teleporter?" the chorus of voices responds. "You aim to trick me, but I'm wise to your tricks. It is time to die!"[Some kind of electro-magnetic slimes begins pouring out of your systems, disabling most of them. A majority appear to be sabotaged!] </text>
-			<status type="limit" target="player" system="teleporter" amount="0"/>
-			<status type="limit" target="player" system="weapons" amount="0"/>
-			<status type="limit" target="player" system="drones" amount="0"/>
-			<status type="limit" target="player" system="artillery" amount="0"/>
-			<ship hostile="true"/>
-			<playMusic>Twisted</playMusic>
-			<choice hidden="true">
-				<text>Continue...</text>
-				<event load="COMBAT_CHECK"/>
+			<choice hidden="true" req="pilot" lvl="1" max_group="3" blue="false">
+				<text>Excuse me?</text>
+				<event>
+					<text>I am the Keymaster. I can tell you are feigning ignorance. I will find out myself if you are hiding the Gatekeeper onboard. Using our supreme splitter powers, we will be aboard your vessel and will claim your soul."</text>
+					<choice hidden="true">
+						<text>Why not just use a teleporter?</text>
+						<event>
+							<text>"....what is a teleporter?" the chorus of voices responds. "You aim to trick me, but I'm wise to your tricks. It is time to die!"[Some kind of electro-magnetic slimes begins pouring out of your systems, disabling most of them. A majority appear to be sabotaged!] </text>
+							<status type="limit" target="player" system="teleporter" amount="0"/>
+							<status type="limit" target="player" system="weapons" amount="0"/>
+							<status type="limit" target="player" system="drones" amount="0"/>
+							<status type="limit" target="player" system="artillery" amount="0"/>
+							<triggeredEvent event="RELIMIT_WEAPONS_0" thisFight="true" clearOnJump="true">
+								<time amount="0.1"/>
+							</triggeredEvent>
+							<ship hostile="true"/>
+							<playMusic>Twisted</playMusic>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="COMBAT_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
 			</choice>
-		</event>
-	</choice>
-</event>
-</choice>
 
+		</event>
+	</choice>
 </event>
-</choice>
-</event>
+
 
 <event name="FM_BOSS_KES1_SHIP_DESTROYED">
 	<playMusic></playMusic>
@@ -2821,68 +2828,69 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 	</item_modify>
 	<hiddenAug>ACH_FM_BOSS_KES1</hiddenAug>
 
-		<choice hidden="true" req="HID_GOZER_FRIDGE" max_group="1" blue="false">
-				<text>You already have Gozer's Fridge.</text>
-				<event load="OPTION_INVALID"/>
-				</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+	<choice hidden="true" req="HID_GOZER_FRIDGE" max_group="1" blue="false">
+		<text>You already have Gozer's Fridge.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
 		<text>Internalize the Gozer's Fridge...
-		[Your Ghost crew can no longer phase through walls, but they feel incredibly durable! All Ghosts in your crew gain 70% max health and 30% movement speed.]</text>
+			[Your Ghost crew can no longer phase through walls, but they feel incredibly durable! All Ghosts in your crew gain 70% max health and 30% movement speed.]
+		</text>
 		<event>
-		<hiddenAug>HID_GOZER_FRIDGE</hiddenAug>
-		<text>You add Gozer's Fridge into your ship's cafeteria. </text>
-		<choice hidden="true">
-		<text>Continue...</text>
+			<hiddenAug>HID_GOZER_FRIDGE</hiddenAug>
+			<text>You add Gozer's Fridge into your ship's cafeteria. </text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>Your Ghost crew can no longer phase through walls, but they feel incredibly durable! All Ghosts in your crew gain 70% max health and 30% movement speed. [The Augment has been internalized!]</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+
+
+			</choice>
+		</event>
+	</choice>
+
+	<choice hidden="false" req="HID_GOZER_FRIDGE" max_group="2" blue="false">
+		<text>You already have Gozer's Fridge.</text>
 		<event>
-		<text>Your Ghost crew can no longer phase through walls, but they feel incredibly durable! All Ghosts in your crew gain 70% max health and 30% movement speed. [The Augment has been internalized!]</text>
-		<choice hidden="true">
-		<text>Continue...</text>
-		<event load="STORAGE_CHECK"/>
-		</choice>
-	</event>
-
-
-</choice>
-</event>
-</choice>
-
-<choice hidden="false" req="HID_GOZER_FRIDGE" max_group="2" blue="false">
-						<text>You already have Gozer's Fridge.</text>
-							<event>
-							<item_modify>
-							<item type="fuel" min="1" max="1"/>
-							</item_modify>
-							<choice hidden="false">
-							<text>Continue...</text>
-							<event/>
-							</choice>
-							</event>
-							</choice>
+			<item_modify>
+				<item type="fuel" min="1" max="1"/>
+			</item_modify>
+			<choice hidden="false">
+				<text>Continue...</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
 	<choice hidden="false" req="KES1_SCRAPPED" max_group="2" blue="false">
-						<text>You already scrapped Gozer's Fridge.</text>
-							<event>
-							<item_modify>
-							<item type="fuel" min="1" max="1"/>
-							</item_modify>
-							<choice hidden="false">
-							<text>Continue...</text>
-							<event/>
-							</choice>
-							</event>
-							</choice>
-<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-<text>Scrap Gozer's Fridge.</text>
-<event>
-<text>You scrap Gozer's Fridge for valuable resources.</text>
-<item_modify>
+		<text>You already scrapped Gozer's Fridge.</text>
+		<event>
+			<item_modify>
+				<item type="fuel" min="1" max="1"/>
+			</item_modify>
+			<choice hidden="false">
+				<text>Continue...</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<text>Scrap Gozer's Fridge.</text>
+		<event>
+			<text>You scrap Gozer's Fridge for valuable resources.</text>
+			<item_modify>
 				<item type="scrap" min="100" max="100"/>
 				<item type="missiles" min="10" max="10"/>
 				<item type="drones" min="10" max="10"/>
 				<item type="fuel" min="4" max="4"/>
 			</item_modify>
 			<hiddenAug>KES1_SCRAPPED</hiddenAug>
-</event>
-</choice>
+		</event>
+	</choice>
 </event>
 
 <event name="FM_BOSS_KES1_SHIP_DESTROYED2">
@@ -2898,96 +2906,97 @@ Missing material : materials/FTL: SOURCE/weapon/lowfield_textureg.vmt Missing ma
 	</item_modify>
 	<hiddenAug>ACH_FM_BOSS_KES1</hiddenAug>
 
-		<choice hidden="true" req="HID_GOZER_FRIDGE" max_group="1" blue="false">
-				<text>You already have Gozer's Fridge.</text>
-				<event load="OPTION_INVALID"/>
-				</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+	<choice hidden="true" req="HID_GOZER_FRIDGE" max_group="1" blue="false">
+		<text>You already have Gozer's Fridge.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
 		<text>Internalize the Gozer's Fridge...
-		[Your Ghost crew can no longer phase through walls, but they feel incredibly durable! All Ghosts in your crew gain 70% max health and 30% movement speed.]</text>
+			[Your Ghost crew can no longer phase through walls, but they feel incredibly durable! All Ghosts in your crew gain 70% max health and 30% movement speed.]
+		</text>
 		<event>
-		<hiddenAug>HID_GOZER_FRIDGE</hiddenAug>
-		<text>You add Gozer's Fridge into your ship's cafeteria. </text>
-		<choice hidden="true">
-		<text>Continue...</text>
+			<hiddenAug>HID_GOZER_FRIDGE</hiddenAug>
+			<text>You add Gozer's Fridge into your ship's cafeteria. </text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>Your Ghost crew can no longer phase through walls, but they feel incredibly durable! All Ghosts in your crew gain 70% max health and 30% movement speed. [The Augment has been internalized!]</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+				</event>
+
+
+			</choice>
+		</event>
+	</choice>
+
+	<choice hidden="false" req="HID_GOZER_FRIDGE" max_group="2" blue="false">
+		<text>You already have Gozer's Fridge.</text>
 		<event>
-		<text>Your Ghost crew can no longer phase through walls, but they feel incredibly durable! All Ghosts in your crew gain 70% max health and 30% movement speed. [The Augment has been internalized!]</text>
-		<choice hidden="true">
-		<text>Continue...</text>
-		<event load="STORAGE_CHECK"/>
-		</choice>
-	</event>
-
-
-</choice>
-</event>
-</choice>
-
-<choice hidden="false" req="HID_GOZER_FRIDGE" max_group="2" blue="false">
-						<text>You already have Gozer's Fridge.</text>
-							<event>
-							<item_modify>
-							<item type="fuel" min="1" max="1"/>
-							</item_modify>
-							<choice hidden="false">
-							<text>Continue...</text>
-							<event/>
-							</choice>
-							</event>
-							</choice>
+			<item_modify>
+				<item type="fuel" min="1" max="1"/>
+			</item_modify>
+			<choice hidden="false">
+				<text>Continue...</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
 	<choice hidden="false" req="KES1_SCRAPPED" max_group="2" blue="false">
-						<text>You already scrapped Gozer's Fridge.</text>
-							<event>
-							<item_modify>
-							<item type="fuel" min="1" max="1"/>
-							</item_modify>
-							<choice hidden="false">
-							<text>Continue...</text>
-							<event/>
-							</choice>
-							</event>
-							</choice>
-<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-<text>Scrap Gozer's Fridge.</text>
-<event>
-<text>You scrap Gozer's Fridge for valuable resources.</text>
-<item_modify>
+		<text>You already scrapped Gozer's Fridge.</text>
+		<event>
+			<item_modify>
+				<item type="fuel" min="1" max="1"/>
+			</item_modify>
+			<choice hidden="false">
+				<text>Continue...</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<text>Scrap Gozer's Fridge.</text>
+		<event>
+			<text>You scrap Gozer's Fridge for valuable resources.</text>
+			<item_modify>
 				<item type="scrap" min="100" max="100"/>
 				<item type="missiles" min="10" max="10"/>
 				<item type="drones" min="10" max="10"/>
 				<item type="fuel" min="4" max="4"/>
 			</item_modify>
 			<hiddenAug>KES1_SCRAPPED</hiddenAug>
-</event>
-</choice>
+		</event>
+	</choice>
 </event>
 
 <event name="FM_KES1_BOARD1">
-<boarders min="2" max="2" class="gbzuul"/>
+	<boarders min="2" max="2" class="gbzuul"/>
 </event>
 
 <event name="FM_KES1_BOARD2">
-<boarders min="2" max="2" class="gbvinz"/>
+	<boarders min="2" max="2" class="gbvinz"/>
 </event>
 
 <event name="FM_KES1_BOARD3">
-<boarders min="2" max="2" class="gbpsych"/>
+	<boarders min="2" max="2" class="gbpsych"/>
 </event>
 
 <event name="FM_KES1_BOARD4">
-<boarders min="2" max="2" class="gbslimer"/>
+	<boarders min="2" max="2" class="gbslimer"/>
 </event>
 
 <event name="FM_KES1_BOARD5">
-<boarders min="2" max="2" class="gbscoleri"/>
+	<boarders min="2" max="2" class="gbscoleri"/>
 </event>
 
 <event name="FM_KES1_BOARD6">
-<boarders min="2" max="2" class="gbgozer"/>
+	<boarders min="2" max="2" class="gbgozer"/>
 </event>
 
 <event name="FM_KES1_BOARD7">
-<boarders min="2" max="2" class="gbeleanor"/>
+	<boarders min="2" max="2" class="gbeleanor"/>
 </event>
 
 

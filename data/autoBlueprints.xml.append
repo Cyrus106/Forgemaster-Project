@@ -1535,6 +1535,7 @@
 	<mod-append:name>FM_MISSILES_CLOAK_STUN</mod-append:name>
 	<mod-append:name>FM_MISSILES_CLOAK_STUN_PLAYER</mod-append:name>
 	<mod-append:name>FM_ENERGY_DISC</mod-append:name>
+	<mod-append:name>FM_PULSEDEEP</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "LIST_CREW_PARAGON_UNIQUE">

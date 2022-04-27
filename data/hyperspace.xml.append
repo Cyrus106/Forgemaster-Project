@@ -13497,7 +13497,7 @@
 			    </aug>
 
 			    <aug name="FM_MODULAR_HULL_ENCASED">
-			      <function name="SYSTEM_CASING" value="0.15" useForReqs="false"/>
+			      <function name="SYSTEM_CASING" value="0.10" useForReqs="false"/>
 			    </aug>
 
 			    <aug name="FM_MODULAR_HULL_RESILIENT">
@@ -14605,8 +14605,8 @@
 			    </aug>
 
 			    <aug name="FM_MODULAR_HULL_DUSK">
-			      <function name="AUTO_COOLDOWN" value="0.25" useForReqs="false" warning="false"/>
-			      <function name="SHIELD_RECHARGE" value="0.25" useForReqs="false" warning="false"/>
+			      <function name="AUTO_COOLDOWN" value="0.20" useForReqs="false" warning="false"/>
+			      <function name="SHIELD_RECHARGE" value="0.20" useForReqs="false" warning="false"/>
 			      <statBoosts>
 			        <statBoost name="maxHealth">
 			          <boostType>MULT</boostType>

@@ -6450,7 +6450,7 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="pilot" max_group="3" blue="false">
-		    <text>Encased Systems Module [40~]</text>
+		    <text>Encased Systems Module [65~]</text>
 		    <event>
 		      <loadEvent>FM_MODULAR_HULL_MODULE_ENCASED</loadEvent>
 		    </event>
@@ -6603,7 +6603,7 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		  </choice>
 		</event>
 		<event name="FM_MODULAR_HULL_MODULE_ENCASED">
-		  <text>Install Encased Systems? [+15% system resist chance, 5 can be installed, uses 2 upgrade notches]</text>
+		  <text>Install Encased Systems? [+10% system resist chance, 5 can be installed, uses 2 upgrade notches]</text>
 		  <choice req="pilot" max_group="1" blue="false">
 		    <text>Install the Encased Systems.</text>
 		    <event>
@@ -6611,7 +6611,7 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		      <hiddenAug>FM_MODULAR_HULL_ENCASED</hiddenAug>
 		      <variable name="fm_hull_upgrade_point" op="add" value="2"/>
 		      <item_modify>
-		        <item type="scrap" min="-40" max="-40"/>
+		        <item type="scrap" min="-65" max="-65"/>
 		      </item_modify>
 		      <choice blue="false">
 		        <text>Continue...</text>
@@ -8387,7 +8387,7 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		  </choice>
 		</event>
 		<event name="FM_MODULAR_HULL_CAPSTONE_DUSK">
-		  <text>Install the Depricated Duskbringer Reactor? [+25% reload speed and shield recharge speed, your crew stats are reducd by 20% (damage taken +20%)]</text>
+		  <text>Install the Depricated Duskbringer Reactor? [+20% reload speed and shield recharge speed, your crew stats are reducd by 20% (damage taken +20%)]</text>
 		  <choice req="pilot" max_group="1" blue="false">
 		    <text>Install the Duskbringer Reactor.</text>
 		    <event>
@@ -8546,7 +8546,7 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		  </choice>
 		</event>
 		<event name="FM_MODULAR_HULL_CAPSTONE_FASTSHIELD">
-		  <text>Install Infinitum Cyclo-Barrier? [+800% Shield recharge, shield system is limited to 2 bars, no manning in shields system]</text>
+		  <text>Install Infinitum Cyclo-Barrier? [+800% Shield recharge, shield system is limited to 4 bars, no manning in shields system]</text>
 		  <choice req="shields" lvl="0" max_group="1" blue="false" hidden="true">
 		    <text>you can't install the Infinitum Cyclo-Barrier, you need a Shield system to direct power to.</text>
 		    <event load="OPTION_INVALID"/>
@@ -8686,7 +8686,7 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_DUSK" max_group="102" blue="false" hidden="true">
-		    <text>Depricated Duskbringer Reactor[+25% reload/shield recharge, -20% all beneficial crew stats, +20% damage taken]</text>
+		    <text>Depricated Duskbringer Reactor[+20% reload/shield recharge, -20% all beneficial crew stats, +20% damage taken]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_MURAL" max_group="103" blue="false" hidden="true">
@@ -8710,7 +8710,7 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_FASTSHIELD" max_group="108" blue="false" hidden="true">
-		    <text>Infinitum Cyclo-Barrier[+800% shield recharge, 2 max shield power, no manning]</text>
+		    <text>Infinitum Cyclo-Barrier[+800% shield recharge, 4 max shield power, no manning]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_FASTWEAPON" max_group="109" blue="false" hidden="true">
@@ -8788,43 +8788,43 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 		  </choice>
 		  <!--Encased-->
 		  <choice req="FM_MODULAR_HULL_ENCASED" lvl="1" max_group="202" blue="false" hidden="true">
-		    <text>Encased Systems Module [+15% sys resist]</text>
+		    <text>Encased Systems Module [+10% sys resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_ENCASED" lvl="2" max_group="202" blue="false" hidden="true">
-		    <text>Encased Systems Module(x2) [+30% sys resist]</text>
+		    <text>Encased Systems Module(x2) [+20% sys resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_ENCASED" lvl="3" max_group="202" blue="false" hidden="true">
-		    <text>Encased Systems Module(x3) [+45% sys resist]</text>
+		    <text>Encased Systems Module(x3) [+30% sys resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_ENCASED" lvl="4" max_group="202" blue="false" hidden="true">
-		    <text>Encased Systems Module(x4) [+60% sys resist]</text>
+		    <text>Encased Systems Module(x4) [+40% sys resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_ENCASED" lvl="5" max_group="202" blue="false" hidden="true">
-		    <text>Encased Systems Module(x5) [+75% sys resist]</text>
+		    <text>Encased Systems Module(x5) [+50% sys resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_ENCASED" lvl="6" max_group="202" blue="false" hidden="true">
-		    <text>Encased Systems Module(x6) [+90% sys resist]</text>
+		    <text>Encased Systems Module(x6) [+60% sys resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_ENCASED" lvl="7" max_group="202" blue="false" hidden="true">
-		    <text>Encased Systems Module(x7) [+105% sys resist]</text>
+		    <text>Encased Systems Module(x7) [+70% sys resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_ENCASED" lvl="8" max_group="202" blue="false" hidden="true">
-		    <text>Encased Systems Module(x8) [+120% sys resist]</text>
+		    <text>Encased Systems Module(x8) [+80% sys resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_ENCASED" lvl="9" max_group="202" blue="false" hidden="true">
-		    <text>Encased Systems Module(x9) [+135% sys resist]</text>
+		    <text>Encased Systems Module(x9) [+90% sys resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <choice req="FM_MODULAR_HULL_ENCASED" lvl="10" max_group="202" blue="false" hidden="true">
-		    <text>Encased Systems Module(x10) [+150% sys resist]</text>
+		    <text>Encased Systems Module(x10) [+100% sys resist]</text>
 		    <event load="OPTION_INVALID"/>
 		  </choice>
 		  <!--Resilient-->
@@ -9372,6 +9372,12 @@ Several minutes later, a pristine weapon surmounted by an off-putting purplish c
 
 		</event>
 
+		<!-- Very important thing to not nerf leah-->
+		<mod:findName type="event" name="NEMESIS_HACK">
+			<mod-append:triggeredEvent event="RELIMIT_SHIELDS_0" thisFight="true" clearOnJump="true">
+				<time amount="0.1"/>
+			</mod-append:triggeredEvent>
+		</mod:findName>
 
 
 

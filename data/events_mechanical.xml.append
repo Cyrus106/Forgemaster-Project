@@ -105,13 +105,36 @@
 <!--all the modular armor stuff-->
 <!--special module effect events-->
 <event name="LOAD_FASTSHIELD">
-  <status type="limit" target="player" system="shields" amount="2" />
+  <status type="limit" target="player" system="shields" amount="4" />
 </event>
 <event name="LOAD_FASTWEAPON">
   <status type="limit" target="player" system="weapons" amount="3" />
 </event>
 <event name="LOAD_MAGNETIC">
   <status type="loss" target="player" system="reactor" amount="3" />
+</event>
+
+<event name="RELIMIT_WEAPONS_0">
+	<status type="limit" target="player" system="weapons" amount="0"/>
+</event>
+<event name="RELIMIT_WEAPONS_1">
+	<status type="limit" target="player" system="weapons" amount="1"/>
+</event>
+<event name="RELIMIT_WEAPONS_2">
+	<status type="limit" target="player" system="weapons" amount="2"/>
+</event>
+
+<event name="RELIMIT_SHIELDS_0">
+	<status type="limit" target="player" system="shields" amount="0"/>
+</event>
+<event name="RELIMIT_SHIELDS_1">
+	<status type="limit" target="player" system="shields" amount="1"/>
+</event>
+<event name="RELIMIT_SHIELDS_2">
+	<status type="limit" target="player" system="shields" amount="2"/>
+</event>
+<event name="RELIMIT_SHIELDS_3">
+	<status type="limit" target="player" system="shields" amount="3"/>
 </event>
 <!--overcharmd stuff, if more than 15 notches used-->
 <event name="OVERCHARMED_EFFECT">

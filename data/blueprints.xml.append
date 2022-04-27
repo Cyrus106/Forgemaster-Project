@@ -12635,8 +12635,8 @@ Buy/Sell Price: 120~/60~
 
   <augBlueprint name="FM_MODULAR_HULL_ENCASED">
     <title>Encased Systems</title>
-    <desc>+15% sys resist</desc>
-    <cost>40</cost>
+    <desc>+10% sys resist</desc>
+    <cost>65</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
@@ -12975,7 +12975,7 @@ Buy/Sell Price: 120~/60~
 
   <augBlueprint name="FM_MODULAR_HULL_DUSK">
     <title>Depricated Duskbringer Reactor</title>
-    <desc>+25% reload speed and shield recharge speed, your crew stats are reducd by 20% (damage taken +20%)</desc>
+    <desc>+20% reload speed and shield recharge speed, your crew stats are reducd by 20% (damage taken +20%)</desc>
     <cost>110</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
@@ -13023,7 +13023,7 @@ Buy/Sell Price: 120~/60~
 
   <augBlueprint name="FM_MODULAR_HULL_FASTSHIELD">
     <title>Infinitum Cyclo-Barrier</title>
-    <desc>+800% Shield recharge speed, shield limited to lvl 2 (1 bubble), but no shields manning</desc>
+    <desc>+800% Shield recharge speed, shield limited to lvl 4 (2 bubble), but no shields manning</desc>
     <cost>80</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
