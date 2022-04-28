@@ -3775,6 +3775,13 @@ try this later
 	<time>0.3</time>
 </anim>
 
+<animSheet name="plusedeep_cannon_proj" w="36" h="11" fw="36" fh="11">weapons_projectiles/pulsedeep_cannon_proj.png</animSheet>
+<anim name="plusedeep_cannon_proj">
+	<sheet>plusedeep_cannon_proj</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
 <animSheet name="explosion_pulsedeep_cannon" w="1792" h="64" fw="64" fh="64">effects/pulsedeep_cannon_explosion.png</animSheet>
 <anim name="explosion_pulsedeep_cannon">
 	<sheet>explosion_pulsedeep_cannon</sheet>

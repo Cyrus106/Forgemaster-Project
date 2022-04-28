@@ -3808,7 +3808,7 @@
 
 Stats:
 Required Power: 1
-Charge Time: 8 seconds
+Charge Time: 10 seconds
 
 Shot Radius: 35
 Shots Per Charge: 3
@@ -3823,7 +3823,7 @@ Buy/Sell Price: 120~/60~
 
 	<tooltip>test</tooltip>
     <tooltipOverride>Required Power: 1
-Charge Time: 8 seconds
+Charge Time: 10 seconds
 
 Shot Radius: 35
 Shots Per Charge: 3
@@ -3838,7 +3838,7 @@ Breach Chance: 10% (Adjusted: 8%) </tooltipOverride>
     <shots>3</shots>
     <fireChance>2</fireChance>
 	<breachChance>1</breachChance>
-    <cooldown>8</cooldown>
+    <cooldown>10</cooldown>
     <power>1</power>
     <cost>120</cost>
 	<fireTime>0.2</fireTime>
@@ -3901,7 +3901,7 @@ Breach Chance: 10% (Adjusted: 8%) </tooltipOverride>
 
 Stats:
 Required Power: 2
-Charge Time: 8 seconds
+Charge Time: 11 seconds
 
 Shot Radius: 35
 Shots Per Charge: 5
@@ -3916,7 +3916,7 @@ Buy/Sell Price: 160~/80~
 
 	<tooltip>test</tooltip>
 	<tooltipOverride>Required Power: 2
-Charge Time: 8 seconds
+Charge Time: 11 seconds
 
 Shot Radius: 35
 Shots Per Charge: 5
@@ -3931,7 +3931,7 @@ Breach Chance: 10% (Adjusted: 8%)</tooltipOverride>
     <shots>5</shots>
     <fireChance>2</fireChance>
 	<breachChance>1</breachChance>
-    <cooldown>8</cooldown>
+    <cooldown>11</cooldown>
     <power>2</power>
     <cost>160</cost>
 	<fireTime>0.2</fireTime>
