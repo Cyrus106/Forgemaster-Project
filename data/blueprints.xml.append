@@ -13513,6 +13513,8 @@ At empty beacons provides 4 fleet delay for 15 missiles, but increases general n
 				<selfHealth>-15</selfHealth>
 				<affectsSelf>true</affectsSelf>
 			</powerEffect>
+		</statBoost>
+	</statBoosts>
 </weaponBlueprint>
 
 <!--
