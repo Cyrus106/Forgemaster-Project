@@ -13439,6 +13439,7 @@ At empty beacons provides 4 fleet delay for 15 missiles, but increases general n
 	<ion>2</ion>
 	<noSysDamage/>
 	<hullBust>1</hullBust>
+	<shots>1</shots>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<breachChance>1</breachChance>
@@ -13449,7 +13450,7 @@ At empty beacons provides 4 fleet delay for 15 missiles, but increases general n
 	<cost>126</cost>
 	<bp>2</bp>
 	<rarity>0</rarity>
-	<image>plusedeep_cannon_proj</image>
+	<image>pulsedeep_cannon_proj</image>
 	<explosion>explosion_pulsedeep_cannon</explosion>
 	<launchSounds>
 		<sound>energy</sound>
