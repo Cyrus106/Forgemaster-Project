@@ -12091,6 +12091,64 @@ Buy/Sell Price: 120~/60~
 
 	</FTL>
 
+	<FTL><!--funny surge/test stuff-->
+		<weaponBlueprint name="BARRAGE_FLAK_SHIELD">
+			<type>MISSILES</type>
+			<flavorType>Power Surge</flavorType>
+			<drone_targetable>1</drone_targetable>
+			<title>Shield Flak Barrage</title>
+			<short>Shield Flak Barrage</short>
+			<tip>tip_flak</tip>
+			<desc>YOU SHOULD NEVER SEE THIS.</desc>
+			<damage>0</damage>
+			<speed>1</speed>
+			<shots>1</shots>
+			<sp>0</sp>
+			<accuracyMod>-100</accuracyMod>
+			<fireChance>0</fireChance>
+			<breachChance>0</breachChance>
+			<cost>0</cost>
+			<rarity>0</rarity>
+			<image>debris_large_defend</image>
+			<launchSounds>
+				<sound>flak</sound>
+			</launchSounds>
+			<weaponArt>shotgun</weaponArt>
+			<iconImage>flak</iconImage>
+		</weaponBlueprint>
+		<weaponBlueprint name="BARRAGE_FLAK_SHIELD2">
+			<type>BURST</type>
+			<flavorType>Power Surge</flavorType>
+			<drone_targetable>1</drone_targetable>
+			<title>Shield Flak Barrage</title>
+			<short>Shield Flak Barrage</short>
+			<tip>tip_flak</tip>
+			<desc>YOU SHOULD NEVER SEE THIS.</desc>
+			<radius>4200000</radius>
+			<damage>0</damage>
+			<sysDamage>-1</sysDamage>
+			<accuracyMod>-100</accuracyMod>
+			<speed>1</speed>
+			<shots>1</shots>
+			<sp>0</sp>
+			<spin>60</spin>
+			<fireChance>0</fireChance>
+			<breachChance>2</breachChance>
+			<cost>0</cost>
+			<rarity>0</rarity>
+			<projectiles>
+				<projectile count="1" fake="false">debris_large_defend</projectile>
+			</projectiles>
+			<launchSounds>
+				<sound>flak</sound>
+			</launchSounds>
+			<weaponArt>shotgun</weaponArt>
+			<iconImage>flak</iconImage>
+		</weaponBlueprint>
+
+	</FTL>
+
+
 
 <!-- ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝	-->
 <!-- ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝	-->

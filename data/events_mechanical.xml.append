@@ -198,3 +198,45 @@
   <text>stopped overcharmed effect</text>
   <clearTriggeredEvent name="OVERCHARMED_TRIGGER"/>
 </event>
+
+
+<event name="SURGE_FLAK_DEFEND">
+	<superBarrage player="true" name="SURGE_FLAK_DEFEND"/>
+</event>
+<event name="SURGE_FLAK_DEFEND2">
+	<superBarrage player="true" name="SURGE_FLAK_DEFEND2"/>
+</event>
+<event name="DEFENSE_FLAK_SPAWN">
+	<eventButton name="UI_FLAK_DEFEND_BUTTON">
+        <event load="SURGE_FLAK_DEFEND"/>
+        <image>statusUI/button_surge_defend</image>
+				<location>0</location>
+				<customLocation x="116" y="489"/>
+        <tooltip>funny flak surge!</tooltip>
+        <inactiveTooltip>Unavailable: You cannot do this while in danger!</inactiveTooltip>
+        <color r="255" g="255" b="255"/>
+        <activeColor r="255" g="255" b="255"/>
+        <inactiveColor r="160" g="162" b="171"/>
+        <selectedColor r="58" g="127" b="255"/>
+        <textColor r="23" g="44" b="62"/>
+        <jumpClear>false</jumpClear>
+        <noDanger>false</noDanger>
+    </eventButton>
+</event>
+<event name="DEFENSE_FLAK_SPAWN2">
+	<eventButton name="UI_FLAK_DEFEND_BUTTON2">
+        <event load="SURGE_FLAK_DEFEND2"/>
+        <image>statusUI/button_surge_defend</image>
+				<location>0</location>
+				<customLocation x="116" y="440"/>
+        <tooltip>funny flak surge2!</tooltip>
+        <inactiveTooltip>Unavailable: You cannot do this while in danger!</inactiveTooltip>
+        <color r="255" g="255" b="255"/>
+        <activeColor r="255" g="255" b="255"/>
+        <inactiveColor r="160" g="162" b="171"/>
+        <selectedColor r="58" g="127" b="255"/>
+        <textColor r="23" g="44" b="62"/>
+        <jumpClear>false</jumpClear>
+        <noDanger>false</noDanger>
+    </eventButton>
+</event>

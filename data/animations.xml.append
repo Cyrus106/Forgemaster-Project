@@ -3979,6 +3979,13 @@ try this later
 	<time>0.3</time>
 </anim>
 
+<animSheet name="debris_large_defend" w="96" h="672" fw="32" fh="672">weapon_projectiles/debris_large_defend.png</animSheet>
+<anim name="debris_large_defend">
+	<sheet>debris_large_defend</sheet>
+	<desc length="3" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
 	</FTL>
 
 	<FTL><!-- ORGANIC PROJECTILES -->

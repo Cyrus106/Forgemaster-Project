@@ -15043,4 +15043,13 @@
 			    </event>
 
 			  </events>
+
+				<boss>
+					<surgeBarrage name="SURGE_FLAK_DEFEND2">
+						<weapon name="BARRAGE_FLAK_SHIELD" count="20"/>
+					</surgeBarrage>
+					<surgeBarrage name="SURGE_FLAK_DEFEND">
+						<weapon name="BARRAGE_FLAK_SHIELD2" count="20"/>
+					</surgeBarrage>
+				</boss>
 			</FTL>
