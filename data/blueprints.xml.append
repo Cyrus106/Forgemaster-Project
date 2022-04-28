@@ -12093,14 +12093,14 @@ Buy/Sell Price: 120~/60~
 
 	<FTL><!--funny surge/test stuff-->
 		<weaponBlueprint name="BARRAGE_FLAK_SHIELD">
-			<type>MISSILES</type>
+			<type>LASER</type>
 			<flavorType>Power Surge</flavorType>
 			<drone_targetable>1</drone_targetable>
 			<title>Shield Flak Barrage</title>
 			<short>Shield Flak Barrage</short>
 			<tip>tip_flak</tip>
 			<desc>YOU SHOULD NEVER SEE THIS.</desc>
-			<damage>0</damage>
+			<damage>1</damage>
 			<speed>1</speed>
 			<shots>1</shots>
 			<sp>0</sp>
@@ -12109,7 +12109,7 @@ Buy/Sell Price: 120~/60~
 			<breachChance>0</breachChance>
 			<cost>0</cost>
 			<rarity>0</rarity>
-			<image>debris_large_defend</image>
+			<image>debris_large</image>
 			<launchSounds>
 				<sound>flak</sound>
 			</launchSounds>
@@ -12125,7 +12125,7 @@ Buy/Sell Price: 120~/60~
 			<tip>tip_flak</tip>
 			<desc>YOU SHOULD NEVER SEE THIS.</desc>
 			<radius>4200000</radius>
-			<damage>0</damage>
+			<damage>1</damage>
 			<sysDamage>-1</sysDamage>
 			<accuracyMod>-100</accuracyMod>
 			<speed>1</speed>
