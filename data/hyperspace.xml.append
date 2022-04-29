@@ -1711,83 +1711,6 @@
 	</events>
 
 
-	<events>	<!-- LASER WEAPON LIST Reqs! STORAGE CHECK VERSION! -->
-		<!--FORGEMASTER STORAGE CHECK HE'S DEAD-->
-		<req name="FM_LASER_ANOMALY_1_LIST_STORAGE" type="all"> <!-- Frost Laser I + Anti-Bio Laser -->
-			<name>LASER_BIO</name>
-			<name>LASER_FROST_1</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<!-- FLAMETHROWER SUB-LIST -->
-		<req name="FM_FLAMETHROWER_LIST_STORAGE1" type="all"> <!-- Fire Starter Laser + Ghost Crew -->
-			<name>phantom_goul</name>
-			<name>LASER_FIRE</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_FLAMETHROWER_LIST_STORAGE2" type="all"> <!-- Fire Starter Laser + Ghost Crew -->
-			<name>phantom</name>
-			<name>LASER_FIRE</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_FLAMETHROWER_LIST_STORAGE3" type="all"> <!-- Fire Starter Laser + Ghost Crew -->
-			<name>phantom_mare</name>
-			<name>LASER_FIRE</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_FLAMETHROWER_LIST_STORAGE4" type="all"> <!-- Fire Starter Laser + Ghost Crew -->
-			<name>phantom_wraith</name>
-			<name>LASER_FIRE</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_FLAMETHROWER_FORGE_LIST_STORAGE" type="any"> <!-- Do you have the ingredients for a Basilisk? weapon? If so, light up the category option BLUE in the crafting category menu! -->
-			<name>FM_FLAMETHROWER_LIST_STORAGE1</name>
-			<name>FM_FLAMETHROWER_LIST_STORAGE2</name>
-			<name>FM_FLAMETHROWER_LIST_STORAGE3</name>
-			<name>FM_FLAMETHROWER_LIST_STORAGE4</name>
-
-		</req>
-		<!-- FLAMETHROWER SUB-LIST END -->
-
-		<req name="FM_PHASER_SUFFOCATION_LIST_STORAGE" type="all"> <!-- Lanius + PHASE II Ion -->
-			<name>lanius</name>
-			<name>ION_PIERCE_2</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_LASER_PHOTON_LIST_STORAGE" type="all"> <!-- Laser Light + Laser Particle -->
-			<name>LASER_PARTICLE</name>
-			<name>LASER_LIGHT</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_LASER_PHOTON_2_LIST_STORAGE" type="all"> <!-- Laser Light 2 + Laser Particle 2 -->
-			<name>LASER_PARTICLE_2</name>
-			<name>LASER_LIGHT_2</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-
-
-		<!--PAGE 2 Recipe checks-->
-		<req name="FM_LASER_HUMAN_LIST_STORAGE" type="all"> <!-- Heavy Laser I + Anti-Bio Laser -->
-			<name>LASER_HEAVY_1</name>
-			<name>LASER_BIO</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_LASER_ION_MEGA_LIST_STORAGE" type="all"> <!-- Piercing Laser II + Ion Bomb -->
-			<name>LASER_PIERCE_2</name>
-			<name>BOMB_ION</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-	</events>
-
 
 	<!-- Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω -->
 
@@ -1871,102 +1794,14 @@
 			<name>ENERGY_3</name>
 		</req>
 
+		<req name="FM_PULSEDEEP_LIST" type="all"> <!-- Burst Laser I + Energy I -->
+			<name>ENERGY_HULL</name>
+			<name>ION_HEAVY</name>
+		</req>
+
+
 	</events>
 
-
-	<events>   <!-- ION/ENERGY WEAPON LIST Reqs! STORAGE CHECK VERSION! -->
-		<!--FORGEMASTER STORAGE CHECK HE'S DEAD-->
-		<req name="FM_ION_TRI_FIRE_LIST_STORAGE" type="all"> <!-- Fire Ion + Trion -->
-			<name>ION_FIRE</name>
-			<name>ION_TRI</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<!-- ION CHAINGUN SUB-LIST  -->
-		<req name="FM_CHAINGUN_ION_LIST_STORAGE1" type="all"> <!-- Vulcan + Charge Ion -->
-			<name>ION_CHARGEGUN</name>
-			<name>LASER_CHAINGUN_2</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_CHAINGUN_ION_LIST_STORAGE2" type="all"> <!-- Vulcan + Charge Ion II -->
-			<name>ION_CHARGEGUN_2</name>
-			<name>LASER_CHAINGUN_2</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_CHAINGUN_ION_FORGE_LIST_STORAGE" type="any"> <!-- Do you have the ingredients for a Ion/Energy weapon? If so, light up the category option BLUE in the crafting category menu! -->
-			<name>FM_CHAINGUN_ION_LIST_STORAGE1</name>
-			<name>FM_CHAINGUN_ION_LIST_STORAGE2</name>
-		</req>
-		<!-- ION CHAINGUN SUB-LIST END  -->
-
-
-		<!-- DISC LAUNCHER SUB-LIST  -->
-		<req name="FM_DISC_LAUNCHER_LIST_STORAGE1" type="all"> <!-- Heavy Energy + Geb -->
-			<name>ENERGY_HULL</name>
-			<name>MINELAUNCHER_1</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_DISC_LAUNCHER_LIST_STORAGE2" type="all"> <!-- Heavy Energy + Osirus -->
-			<name>ENERGY_HULL</name>
-			<name>MINELAUNCHER_2</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_DISC_LAUNCHER_LIST_STORAGE3" type="all"> <!-- Heavy Energy + Sekhmet -->
-			<name>ENERGY_HULL</name>
-			<name>MINELAUNCHER_FIRE</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_DISC_LAUNCHER_LIST_STORAGE4" type="all"> <!-- Heavy Energy + Anubis -->
-			<name>ENERGY_HULL</name>
-			<name>MINELAUNCHER_STUN</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_DISC_LAUNCHER_FORGE_LIST_STORAGE" type="any"> <!-- Do you have the ingredients for a Ion/Energy weapon? If so, light up the category option BLUE in the crafting category menu! -->
-			<name>FM_DISC_LAUNCHER_LIST_STORAGE1</name>
-			<name>FM_DISC_LAUNCHER_LIST_STORAGE2</name>
-			<name>FM_DISC_LAUNCHER_LIST_STORAGE3</name>
-			<name>FM_DISC_LAUNCHER_LIST_STORAGE4</name>
-
-		</req>
-		<!-- DISC LAUNCHER SUB-LIST END -->
-
-		<req name="FM_SHOTGUN_ENERGY_LIST_STORAGE" type="all"> <!-- Flak III + Energy Charegun -->
-			<name>SHOTGUN_3</name>
-			<name>ENERGY_CHARGEGUN</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_PULSE_1_LIST_STORAGE" type="all"> <!-- Burst Laser I + Energy I -->
-			<name>LASER_BURST_2</name>
-			<name>ENERGY_1</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_PULSE_2_LIST_STORAGE" type="all"> <!-- Burst Laser II + Energy II -->
-			<name>LASER_BURST_3</name>
-			<name>ENERGY_2</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_PULSE_2_LIST_STORAGE_PLUS" type="all"> <!-- Burst Laser II + Energy II+ -->
-			<name>LASER_BURST_3</name>
-			<name>ENERGY_2_PLAYER</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_PULSE_3_LIST_STORAGE" type="all"> <!-- Burst Laser III + Energy III -->
-			<name>LASER_BURST_5</name>
-			<name>ENERGY_3</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-	</events>
 
 
 	<!-- Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω -->
@@ -2067,106 +1902,6 @@
 		</req>
 	</events>
 
-
-	<events> 	<!-- BEAM/PINPOINT WEAPON LIST Reqs! STORAGE CHECK VERSION! -->
-		<!--FORGEMASTER STORAGE CHECK HE'S DEAD-->
-		<req name="FM_BEAM_MINING_2_LIST_STORAGE" type="all"> <!-- Mining Beam + Pike II -->
-			<name>BEAM_MINING</name>
-			<name>BEAM_LONG_2</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_BEAM_MINING_3_LIST_STORAGE" type="all"> <!-- Ishimura + Misericord -->
-			<name>FM_BEAM_MINING_2</name>
-			<name>FOCUS_2</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_BEAM_MINING_3_LIST_STORAGE_2" type="all"> <!-- Ishimura + Stiletto -->
-			<name>FM_BEAM_MINING_2</name>
-			<name>FOCUS_3</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_BEAM_PARTICLE_PIERCE_LIST_STORAGE" type="all"> <!-- Particle Beam + Pierce Beam -->
-			<name>BEAM_PARTICLE</name>
-			<name>BEAM_PIERCE</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_BEAM_GUILLOTINE_CHAIN_LIST_STORAGE" type="all"> <!-- Murder Bot Dispersal + Fauchard Beam -->
-			<name>NANOBOT_DEFENSE_SYSTEM</name>
-			<name>BEAM_GUILLOTINE</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_BEAM_GUILLOTINE_CHAIN_LIST_STORAGE_PLUS" type="all"> <!-- Murder Bot Dispersal + Fauchard Beam -->
-			<name>NANOBOT_DEFENSE_SYSTEM</name>
-			<name>BEAM_GUILLOTINE_PLAYER</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_BEAM_EXPLOSION_LIST_STORAGE" type="all"> <!-- Small Bomb + Halberd -->
-			<name>BOMB_1</name>
-			<name>BEAM_2</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_BEAM_EXPLOSION_LIST_STORAGE_PLUS" type="all"> <!-- Small Bomb + Halberd -->
-			<name>BOMB_1</name>
-			<name>BEAM_2_PLAYER</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_FOCUS_FUELED_1_LIST_STORAGE" type="all"> <!-- Cinquedea Focus + Hermes -->
-			<name>FOCUS_CHAIN</name>
-			<name>MISSILES_3</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_FOCUS_ENERGY_1_LIST_STORAGE" type="all">  <!-- Dirk + Energy 1 -->
-			<name>ENERGY_1</name>
-			<name>FOCUS_1</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_FOCUS_ENERGY_2_LIST_STORAGE" type="all"> <!-- Misericord Focus + Energy 2 -->
-			<name>ENERGY_2</name>
-			<name>FOCUS_2</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_FOCUS_ENERGY_2_LIST_STORAGE_PLUS" type="all"> <!-- Misericord Focus + Energy 2 -->
-			<name>ENERGY_2_PLAYER</name>
-			<name>FOCUS_2</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_FOCUS_ENERGY_3_LIST_STORAGE" type="all"> <!-- Stiletto Focus + Energy 3 -->
-			<name>ENERGY_3</name>
-			<name>FOCUS_3</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_BEAM_ION_PIERCE_LIST_STORAGE1" type="all"> <!-- Ranseur + Basic Ion -->
-			<name>ION_1</name>
-			<name>BEAM_BREACH</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_BEAM_ION_PIERCE_LIST_STORAGE2" type="all"> <!-- Ranseur + Ion II -->
-			<name>ION_2</name>
-			<name>BEAM_BREACH</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_BEAM_ION_PIERCE_FORGE_LIST_STORAGE" type="any"> <!-- Do you have the ingredients for a Ion/Energy weapon? If so, light up the category option BLUE in the crafting category menu! -->
-			<name>FM_BEAM_ION_PIERCE_LIST_STORAGE1</name>
-			<name>FM_BEAM_ION_PIERCE_LIST_STORAGE2</name>
-		</req>
-
-
-	</events>
 
 
 	<!-- Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω -->
@@ -2404,253 +2139,6 @@
 	</events>
 
 
-	<events>   <!-- FLAK WEAPON LIST Reqs! STORAGE CHECK VERSION! -->
-
-		<!--FORGEMASTER STORAGE CHECK HE'S DEAD-->
-		<req name="FM_SHOTGUN_ANOMALY_LIST_STORAGE" type="all"> <!-- Frost Laser II + Toxic Flak -->
-			<name>SHOTGUN_TOXIC</name>
-			<name>LASER_FROST_2</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_ANOMALY_LIST_STORAGE_PLUS" type="all">  <!--Frost Laser II(+) + Toxic Flak -->
-			<name>SHOTGUN_TOXIC</name>
-			<name>LASER_FROST_2_PLAYER</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_ANOMALY_LIST_STORAGE_PLUS_2" type="all">  <!--Frost Laser II + Toxic Flak(+) -->
-			<name>SHOTGUN_TOXIC_PLAYER</name>
-			<name>LASER_FROST_2</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_ANOMALY_LIST_STORAGE_MEGA" type="all">  <!--Frost Laser II(+) + Toxic Flak(+) -->
-			<name>SHOTGUN_TOXIC_PLAYER</name>
-			<name>LASER_FROST_2_PLAYER</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_AETHER_LIST_STORAGE" type="all">  <!--Flak III + Aether Tech -->
-			<name>SHOTGUN_4</name>
-			<name>BLUELIST_AETHER</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_CURSED_LIST_STORAGE" type="all">  <!--FLAK II + CLONE 3 + Lanius -->
-			<name>SHOTGUN_2</name>
-			<name>LANIUS</name>
-			<req lvl="3">
-				<name>clonebay</name>
-				<name>MARKER_OBTAINED_FORGE</name>
-			</req>
-		</req>
-
-		<!-- BRONZE FLAK SUB-LIST -->
-		<req name="FM_SHOTGUN_BRONZE_LIST_STORAGE_1" type="all"> <!-- Crystal Burst Mark I + Flak I -->
-			<name>SHOTGUN_2</name>
-			<name>CRYSTAL_BURST_1</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_STORAGE_2" type="all"> <!-- Elite Crystal Burst Mark I + Flak I -->
-			<name>SHOTGUN_2</name>
-			<name>CRYSTAL_BURST_1_RED</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_STORAGE_3" type="all"> <!-- Crystal Burst Mark II + Flak I -->
-			<name>SHOTGUN_2</name>
-			<name>CRYSTAL_BURST_2</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_STORAGE_4" type="all"> <!-- Elite Crystal Burst Mark II + Flak I -->
-			<name>SHOTGUN_2</name>
-			<name>CRYSTAL_BURST_2_RED</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_STORAGE_5" type="all"> <!-- Heavy Crystal Mark I + Flak I -->
-			<name>SHOTGUN_2</name>
-			<name>CRYSTAL_HEAVY_1</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_STORAGE_6" type="all"> <!-- Elite Heavy Crystal Mark I + Flak I -->
-			<name>SHOTGUN_2</name>
-			<name>CRYSTAL_HEAVY_1_RED</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_STORAGE_7" type="all"> <!-- Heavy Crystal Mark II + Flak I -->
-			<name>SHOTGUN_2</name>
-			<name>CRYSTAL_HEAVY_2</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_STORAGE_8" type="all"> <!-- Elite Heavy Crystal Mark II + Flak I -->
-			<name>SHOTGUN_2</name>
-			<name>CRYSTAL_HEAVY_2_RED</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_STORAGE_9" type="all"> <!-- Blunt Crystal Burst + Flak I -->
-			<name>SHOTGUN_2</name>
-			<name>CRYSTAL_STUN</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_STORAGE_10" type="all"> <!-- Elite Blunt Crystal Burst + Flak I -->
-			<name>SHOTGUN_2</name>
-			<name>CRYSTAL_STUN_RED</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_STORAGE_11" type="all"> <!-- Crystal Scatter + Flak I -->
-			<name>SHOTGUN_2</name>
-			<name>CRYSTAL_SHOTGUN</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_STORAGE_12" type="all"> <!-- Elite Crystal Scatter + Flak I -->
-			<name>SHOTGUN_2</name>
-			<name>CRYSTAL_SHOTGUN_RED</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_STORAGE_13" type="all"> <!-- Crystal Charger + Flak I -->
-			<name>SHOTGUN_2</name>
-			<name>CRYSTAL_CHARGEGUN</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_STORAGE_14" type="all"> <!-- Elite Crystal Charger + Flak I -->
-			<name>SHOTGUN_2</name>
-			<name>CRYSTAL_CHARGEGUN_RED</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_STORAGE_15" type="all"> <!-- Shard Launcher + Flak I -->
-			<name>SHOTGUN_2</name>
-			<name>MINELAUNCHER_CRYSTAL</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_FORGE_STORAGE" type="any"> <!-- Do you have the ingredients for a Bronze Flak ? If so, light up the category option BLUE in the crafting category menu! -->
-			<name>FM_SHOTGUN_BRONZE_LIST_STORAGE_1</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_STORAGE_2</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_STORAGE_3</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_STORAGE_4</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_STORAGE_5</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_STORAGE_6</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_STORAGE_7</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_STORAGE_8</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_STORAGE_9</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_STORAGE_10</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_STORAGE_11</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_STORAGE_12</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_STORAGE_13</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_STORAGE_14</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_STORAGE_15</name>
-		</req>
-
-		<!-- PALLADIUM SUB SUB-LIST -->
-
-		<req name="FM_SHOTGUN_PALLADIUM_LIST_STORAGE_1" type="all"> <!-- Elite Crystal Burst Mark I + Palladium -->
-			<name>FM_SHOTGUN_PALLADIUM</name>
-			<name>CRYSTAL_BURST_1_RED</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_PALLADIUM_LIST_STORAGE_2" type="all"> <!-- Elite Crystal Burst Mark II + Palladium -->
-			<name>FM_SHOTGUN_PALLADIUM</name>
-			<name>CRYSTAL_BURST_2_RED</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_PALLADIUM_LIST_STORAGE_3" type="all"> <!-- Elite Heavy Crystal Mark I + Palladium -->
-			<name>FM_SHOTGUN_PALLADIUM</name>
-			<name>CRYSTAL_HEAVY_1_RED</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_PALLADIUM_LIST_STORAGE_4" type="all"> <!-- Elite Heavy Crystal Mark II + Palladium -->
-			<name>FM_SHOTGUN_PALLADIUM</name>
-			<name>CRYSTAL_HEAVY_2_RED</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_PALLADIUM_LIST_STORAGE_5" type="all"> <!-- Elite Blunt Crystal Burst + Palladium -->
-			<name>FM_SHOTGUN_PALLADIUM</name>
-			<name>CRYSTAL_STUN_RED</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_PALLADIUM_LIST_STORAGE_6" type="all"> <!-- Elite Crystal Scatter + Palladium -->
-			<name>FM_SHOTGUN_PALLADIUM</name>
-			<name>CRYSTAL_SHOTGUN_RED</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_PALLADIUM_LIST_STORAGE_7" type="all"> <!-- Elite Crystal Charger + Palladium -->
-			<name>FM_SHOTGUN_PALLADIUM</name>
-			<name>CRYSTAL_CHARGEGUN_RED</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-
-
-
-		<!-- NOBELLIUM SUB SUB-LIST -->
-
-		<req name="FM_SHOTGUN_NOBELIUM_LIST_STORAGE_1" type="all"> <!-- Elite Crystal Burst Mark I + Nobelium -->
-			<name>FM_SHOTGUN_NOBELIUM</name>
-			<name>CRYSTAL_BURST_1_RED</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_NOBELIUM_LIST_STORAGE_2" type="all"> <!-- Elite Crystal Burst Mark II + Nobelium -->
-			<name>FM_SHOTGUN_NOBELIUM</name>
-			<name>CRYSTAL_BURST_2_RED</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_NOBELIUM_LIST_STORAGE_3" type="all"> <!-- Elite Heavy Crystal Mark I + Nobelium -->
-			<name>FM_SHOTGUN_NOBELIUM</name>
-			<name>CRYSTAL_HEAVY_1_RED</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_NOBELIUM_LIST_STORAGE_4" type="all"> <!-- Elite Heavy Crystal Mark II + Nobelium -->
-			<name>FM_SHOTGUN_NOBELIUM</name>
-			<name>CRYSTAL_HEAVY_2_RED</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_NOBELIUM_LIST_STORAGE_5" type="all"> <!-- Elite Blunt Crystal Burst + Nobelium -->
-			<name>FM_SHOTGUN_NOBELIUM</name>
-			<name>CRYSTAL_STUN_RED</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_NOBELIUM_LIST_STORAGE_6" type="all"> <!-- Elite Crystal Scatter + Nobelium -->
-			<name>FM_SHOTGUN_NOBELIUM</name>
-			<name>CRYSTAL_SHOTGUN_RED</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_SHOTGUN_NOBELIUM_LIST_STORAGE_7" type="all"> <!-- Elite Crystal Charger + Nobelium -->
-			<name>FM_SHOTGUN_NOBELIUM</name>
-			<name>CRYSTAL_CHARGEGUN_RED</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-
-		<!-- BRONZE FLAK SUB-LIST END -->
-
-	</events>
-
 
 	<!-- Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω -->
 
@@ -2716,78 +2204,6 @@
 	</events>
 
 
-	<events>   <!-- EXPLOSIVE WEAPON LIST Reqs! STORAGE CHECK VERSION! -->
-		<!--FORGEMASTER STORAGE CHECK HE'S DEAD-->
-
-		<req name="FM_MISSILES_BURST_FIRE_LIST_STORAGE" type="all"> <!-- Ares + Hades -->
-			<name>MISSILES_4</name>
-			<name>MISSILES_FIRE</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_MISSILES_BURST_FIRE_LIST_STORAGE_PLUS" type="all"> <!-- Ares + Hades(+) -->
-			<name>MISSILES_4</name>
-			<name>MISSILES_FIRE_PLAYER</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_MISSILES_BURST_FIRE_LIST_STORAGE_PLUS_TYPE2" type="all"> <!-- Ares(+) + Hades -->
-			<name>MISSILES_4_PLAYER</name>
-			<name>MISSILES_FIRE</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_MISSILES_BURST_FIRE_LIST_STORAGE_MEGA_PLUS" type="all"> <!-- Ares(+) + Hades(+) -->
-			<name>MISSILES_4_PLAYER</name>
-			<name>MISSILES_FIRE_PLAYER</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_MISSILES_CLOAK_STUN_LIST_STORAGE" type="all"> <!-- NYX + Stun Energy-->
-			<name>MISSILES_CLOAK</name>
-			<name>ENERGY_STUN</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_MISSILES_CLOAK_STUN_LIST_STORAGE_PLUS" type="all"> <!-- NYX + Stun Energy-->
-			<name>MISSILES_CLOAK</name>
-			<name>ENERGY_STUN_PLAYER</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_BOMB_CRYSTAL_FIRE_LIST_STORAGE" type="all"> <!-- Fire Bomb + Crystal Bomb -->
-			<name>BOMB_FIRE</name>
-			<name>BOMB_LOCK</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_BOMB_CRYSTAL_BIO_LIST_STORAGE" type="all"> <!-- Bio Bomb + Crystal Bomb -->
-			<name>BOMB_BIO</name>
-			<name>BOMB_LOCK</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_BOMB_CRUNCH_LIST_STORAGE" type="all"> <!-- UNKNOWN COMPONENTS -->
-			<name>BOMB_BIO</name>
-			<name>BOMB_LOCK</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_BOMBLAUNCHER_HULL_LIST_STORAGE" type="all"> <!-- Hull Laser 2 + Sobek Mine Launcher -->
-			<name>LASER_HULL_2</name>
-			<name>MINELAUNCHER_BREACH</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_MINELAUNCHER_BIO_LIST_STORAGE" type="all"> <!-- Ascelpius Missile + Osiris MineLauncher -->
-			<name>MISSILES_BIO</name>
-			<name>MINELAUNCHER_2</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-
-	</events>
-
 
 	<!-- Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω -->
 
@@ -2829,50 +2245,6 @@
 
 	</events>
 
-
-	<events>   <!-- ORGANIC WEAPON LIST Reqs! STORAGE CHECK VERSION! -->
-		<!--FORGEMASTER STORAGE CHECK HE'S DEAD-->
-		<!-- BASILISK SUB-LIST -->
-		<req name="FM_BEAM_BASILISK_LIST_STORAGE_1" type="all"> <!-- Elite Kernel + Leech Crew -->
-			<name>leech</name>
-			<name>KERNEL_1_ELITE</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_BEAM_BASILISK_LIST_STORAGE_2" type="all"> <!-- Burst Elite Kernel + Leech Crew -->
-			<name>leech</name>
-			<name>KERNEL_2_ELITE</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_BEAM_BASILISK_LIST_STORAGE_3" type="all"> <!-- Heavy Elite Kernel + Leech Crew -->
-			<name>leech</name>
-			<name>KERNEL_HEAVY_ELITE</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_BEAM_BASILISK_LIST_STORAGE_4" type="all"> <!-- Hull Elite Kernel + Leech Crew -->
-			<name>leech</name>
-			<name>KERNEL_HULL_ELITE</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_BEAM_BASILISK_LIST_STORAGE_5" type="all"> <!-- Chain Elite Kernel + Leech Crew -->
-			<name>leech</name>
-			<name>KERNEL_CHAIN_ELITE</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-
-		<req name="FM_BEAM_BASILISK_LIST_STORAGE_6" type="all"> <!-- Charge Elite Kernel + Leech Crew -->
-			<name>leech</name>
-			<name>KERNEL_CHARGE_ELITE</name>
-			<name>MARKER_OBTAINED_FORGE</name>
-		</req>
-		<!-- BASILISK SUB-LIST END -->
-
-
-
-	</events>
 
 	<!-- Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω Ω -->
 
@@ -3232,15 +2604,9 @@
 
 		</req>
 
-		<req name="FM_LASER_FORGE_LIST_STORAGE" type="any"> <!-- Do you have the ingredients for a laser weapon? If so, light up the category option BLUE in the crafting category menu! -->
-			<name>FM_LASER_ANOMALY_1_LIST_STORAGE</name>
-			<name>FM_FLAMETHROWER_FORGE_LIST_STORAGE</name>
-			<name>FM_PHASER_SUFFOCATION_LIST_STORAGE</name>
-			<name>FM_LASER_PHOTON_LIST_STORAGE</name>
-			<name>FM_LASER_PHOTON_2_LIST_STORAGE</name>
-			<name>FM_LASER_HUMAN_LIST_STORAGE</name>
-			<name>FM_LASER_ION_MEGA_LIST_STORAGE</name>
-			<name>GATLING_ANCIENT</name>
+		<req name="FM_LASER_FORGE_LIST_STORAGE" type="all"> <!-- Do you have the ingredients for a laser weapon? If so, light up the category option BLUE in the crafting category menu! -->
+			<name>FM_LASER_FORGE_LIST</name>
+			<name>MARKER_OBTAINED_FORGE</name>
 		</req>
 
 
@@ -3255,17 +2621,12 @@
 			<name>FM_PULSE_2_LIST</name>
 			<name>FM_PULSE_2_LIST_PLUS</name>
 			<name>FM_PULSE_3_LIST</name>
+			<name>FM_PULSEDEEP_LIST</name>
 		</req>
 
-		<req name="FM_ION_FORGE_LIST_STORAGE" type="any"> <!-- Do you have the ingredients for a Ion/Energy weapon? If so, light up the category option BLUE in the crafting category menu! -->
-			<name>FM_ION_TRI_FIRE_LIST_STORAGE</name>
-			<name>FM_DISC_LAUNCHER_FORGE_LIST_STORAGE</name>
-			<name>FM_CHAINGUN_ION_FORGE_LIST_STORAGE</name>
-			<name>FM_SHOTGUN_ENERGY_LIST_STORAGE</name>
-			<name>FM_PULSE_1_LIST_STORAGE</name>
-			<name>FM_PULSE_2_LIST_STORAGE</name>
-			<name>FM_PULSE_2_LIST_STORAGE_PLUS</name>
-			<name>FM_PULSE_3_LIST_STORAGE</name>
+		<req name="FM_ION_FORGE_LIST_STORAGE" type="all"> <!-- Do you have the ingredients for a Ion/Energy weapon? If so, light up the category option BLUE in the crafting category menu! -->
+			<name>FM_ION_FORGE_LIST</name>
+			<name>MARKER_OBTAINED_FORGE</name>
 		</req>
 
 
@@ -3285,17 +2646,9 @@
 
 		</req>
 
-		<req name="FM_BEAM_FORGE_LIST_STORAGE" type="any"> <!-- Do you have the ingredients for a Beam/Pinpoint weapon? If so, light up the category option BLUE in the crafting category menu! -->
-			<name>FM_BEAM_MINING_2_LIST_STORAGE</name>
-			<name>FM_BEAM_MINING_3_LIST_STORAGE</name>
-			<name>FM_BEAM_MINING_3_LIST_STORAGE_2</name>
-			<name>FM_BEAM_PARTICLE_PIERCE_LIST_STORAGE</name>
-			<name>FM_BEAM_GUILLOTINE_CHAIN_LIST_STORAGE</name>
-			<name>FM_BEAM_GUILLOTINE_CHAIN_LIST_STORAGE_PLUS</name>
-			<name>FM_BEAM_EXPLOSION_LIST_STORAGE</name>
-			<name>FM_BEAM_EXPLOSION_LIST_STORAGE_PLUS</name>
-			<name>FM_BEAM_ION_PIERCE_FORGE_LIST_STORAGE</name>
-
+		<req name="FM_BEAM_FORGE_LIST_STORAGE" type="all"> <!-- Do you have the ingredients for a Beam/Pinpoint weapon? If so, light up the category option BLUE in the crafting category menu! -->
+			<name>FM_BEAM_FORGE_LIST</name>
+			<name>MARKER_OBTAINED_FORGE</name>
 		</req>
 
 
@@ -3309,13 +2662,9 @@
 
 		</req>
 
-		<req name="FM_PINPOINT_FORGE_LIST_STORAGE" type="any"> <!-- Do you have the ingredients for a Beam/Pinpoint weapon? If so, light up the category option BLUE in the crafting category menu! -->
-			<name>FM_FOCUS_FUELED_1_LIST_STORAGE</name>
-			<name>FM_FOCUS_ENERGY_1_LIST_STORAGE</name>
-			<name>FM_FOCUS_ENERGY_2_LIST_STORAGE</name>
-			<name>FM_FOCUS_ENERGY_2_LIST_STORAGE_PLUS</name>
-			<name>FM_FOCUS_ENERGY_3_LIST_STORAGE</name>
-
+		<req name="FM_PINPOINT_FORGE_LIST_STORAGE" type="all"> <!-- Do you have the ingredients for a Beam/Pinpoint weapon? If so, light up the category option BLUE in the crafting category menu! -->
+			<name>FM_PINPOINT_FORGE_LIST</name>
+			<name>MARKER_OBTAINED_FORGE</name>
 		</req>
 
 
@@ -3330,14 +2679,9 @@
 			<name>FM_SHOTGUN_CURSED_LIST</name>
 		</req>
 
-		<req name="FM_FLAK_FORGE_LIST_STORAGE" type="any"> <!-- Do you have the ingredients for a Flak weapon? If so, light up the category option BLUE in the crafting category menu! -->
-			<name>FM_SHOTGUN_ANOMALY_LIST_STORAGE</name>
-			<name>FM_SHOTGUN_ANOMALY_LIST_STORAGE_PLUS</name>
-			<name>FM_SHOTGUN_ANOMALY_LIST_STORAGE_PLUS_2</name>
-			<name>FM_SHOTGUN_ANOMALY_LIST_STORAGE_MEGA</name>
-			<name>FM_SHOTGUN_AETHER_LIST_STORAGE</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_FORGE_STORAGE</name>
-			<name>FM_SHOTGUN_CURSED_LIST_STORAGE</name>
+		<req name="FM_FLAK_FORGE_LIST_STORAGE" type="all"> <!-- Do you have the ingredients for a Flak weapon? If so, light up the category option BLUE in the crafting category menu! -->
+			<name>FM_FLAK_FORGE_LIST</name>
+			<name>MARKER_OBTAINED_FORGE</name>
 		</req>
 
 
@@ -3357,18 +2701,9 @@
 
 		</req>
 
-		<req name="FM_EXPLOSIVE_FORGE_LIST_STORAGE" type="any"> <!-- Do you have the ingredients for a Explosive weapon? If so, light up the category option BLUE in the crafting category menu! -->
-			<name>FM_MISSILES_BURST_FIRE_LIST_STORAGE</name>
-			<name>FM_MISSILES_BURST_FIRE_LIST_STORAGE_PLUS</name>
-			<name>FM_MISSILES_BURST_FIRE_LIST_STORAGE_PLUS_TYPE2</name>
-			<name>FM_MISSILES_BURST_FIRE_LIST_STORAGE_MEGA_PLUS</name>
-			<name>FM_MISSILES_CLOAK_STUN_LIST_STORAGE</name>
-			<name>FM_MISSILES_CLOAK_STUN_LIST_STORAGE_PLUS</name>
-			<name>FM_BOMB_CRYSTAL_FIRE_LIST_STORAGE</name>
-			<name>FM_BOMB_CRYSTAL_BIO_LIST_STORAGE</name>
-			<name>FM_BOMBLAUNCHER_HULL_LIST_STORAGE</name>
-			<name>FM_MINELAUNCHER_BIO_LIST_STORAGE</name>
-
+		<req name="FM_EXPLOSIVE_FORGE_LIST_STORAGE" type="all"> <!-- Do you have the ingredients for a Explosive weapon? If so, light up the category option BLUE in the crafting category menu! -->
+			<name>FM_EXPLOSIVE_FORGE_LIST</name>
+			<name>MARKER_OBTAINED_FORGE</name>
 		</req>
 
 
@@ -3382,13 +2717,9 @@
 			<name>FM_BEAM_BASILISK_LIST_6</name>
 		</req>
 
-		<req name="FM_ORGANIC_FORGE_LIST_STORAGE" type="any"> <!-- Do you have the ingredients for a Organic weapon? If so, light up the category option BLUE in the crafting category menu! -->
-			<name>FM_BEAM_BASILISK_LIST_STORAGE_1</name>
-			<name>FM_BEAM_BASILISK_LIST_STORAGE_2</name>
-			<name>FM_BEAM_BASILISK_LIST_STORAGE_3</name>
-			<name>FM_BEAM_BASILISK_LIST_STORAGE_4</name>
-			<name>FM_BEAM_BASILISK_LIST_STORAGE_5</name>
-			<name>FM_BEAM_BASILISK_LIST_STORAGE_6</name>
+		<req name="FM_ORGANIC_FORGE_LIST_STORAGE" type="all"> <!-- Do you have the ingredients for a Organic weapon? If so, light up the category option BLUE in the crafting category menu! -->
+			<name>FM_ORGANIC_FORGE_LIST</name>
+			<name>MARKER_OBTAINED_FORGE</name>
 		</req>
 
 
@@ -3403,13 +2734,9 @@
 		</req>
 
 		<!-- ORGANIC WEAPON FULL BASILISK LIST! STORAGE CHECK VERSION -->
-		<req name="FM_ORGANIC_BASILISK_FORGE_LIST_STORAGE" type="any"> <!-- Do you have the ingredients for a Basilisk? weapon? If so, light up the category option BLUE in the crafting category menu! -->
-			<name>FM_BEAM_BASILISK_LIST_STORAGE_1</name>
-			<name>FM_BEAM_BASILISK_LIST_STORAGE_2</name>
-			<name>FM_BEAM_BASILISK_LIST_STORAGE_3</name>
-			<name>FM_BEAM_BASILISK_LIST_STORAGE_4</name>
-			<name>FM_BEAM_BASILISK_LIST_STORAGE_5</name>
-			<name>FM_BEAM_BASILISK_LIST_STORAGE_6</name>
+		<req name="FM_ORGANIC_BASILISK_FORGE_LIST_STORAGE" type="all"> <!-- Do you have the ingredients for a Basilisk? weapon? If so, light up the category option BLUE in the crafting category menu! -->
+			<name>FM_ORGANIC_BASILISK_FORGE_LIST</name>
+			<name>MARKER_OBTAINED_FORGE</name>
 		</req>
 
 		<!-- ORGANIC WEAPON FULL BASILISK LIST! NPC VERSION -->
@@ -3439,126 +2766,18 @@
 
 		<!-- FULL CHECK, CHECKS ALL LISTS FOR VERY SPECIFIC EVENTS -->
 		<req name="FM_FORGE_LIST_CHECK" type="any"> <!-- If none are met, show the recipe list at the storage check! These are all ingredient checks -->
-			<name>FM_LASER_ANOMALY_1_LIST</name> <!-- Laser Start-->
-			<name>FM_FLAMETHROWER_LIST1</name>
-			<name>FM_FLAMETHROWER_LIST2</name>
-			<name>FM_FLAMETHROWER_LIST3</name>
-			<name>FM_FLAMETHROWER_LIST4</name>
-			<name>FM_PHASER_SUFFOCATION_LIST</name>
-			<name>FM_LASER_PHOTON_LIST</name>
-			<name>FM_LASER_PHOTON_2_LIST</name>
-			<name>FM_LASER_HUMAN_LIST</name>
-			<name>FM_LASER_ION_MEGA_LIST</name> <!-- Laser End-->
-			<name>FM_ION_TRI_FIRE_LIST</name> <!-- Ion Start-->
-			<name>FM_CHAINGUN_ION_LIST1</name>
-			<name>FM_CHAINGUN_ION_LIST2</name>
-			<name>FM_DISC_LAUNCHER_LIST1</name>
-			<name>FM_DISC_LAUNCHER_LIST2</name>
-			<name>FM_DISC_LAUNCHER_LIST3</name>
-			<name>FM_DISC_LAUNCHER_LIST4</name>
-			<name>FM_SHOTGUN_ENERGY_LIST</name>
-			<name>FM_PULSE_1_LIST</name>
-			<name>FM_PULSE_2_LIST</name>
-			<name>FM_PULSE_2_LIST_PLUS</name>
-			<name>FM_PULSE_3_LIST</name><!-- Ion End-->
-			<name>FM_BEAM_MINING_2_LIST</name> 		<!-- Beam Start-->
-			<name>FM_BEAM_MINING_3_LIST</name>
-			<name>FM_BEAM_MINING_3_LIST_2</name>
-			<name>FM_BEAM_PARTICLE_PIERCE_LIST</name>
-			<name>FM_BEAM_GUILLOTINE_CHAIN_LIST</name>
-			<name>FM_BEAM_GUILLOTINE_CHAIN_LIST_PLUS</name>
-			<name>FM_BEAM_EXPLOSION_LIST</name>
-			<name>FM_BEAM_EXPLOSION_LIST_PLUS</name>
-			<name>FM_BEAM_ION_PIERCE_LIST1</name>
-			<name>FM_BEAM_ION_PIERCE_LIST2</name>	<!-- Beam End-->
-			<name>FM_FOCUS_FUELED_1_LIST</name> <!-- Pinpoint Start-->
-			<name>FM_FOCUS_ENERGY_1_LIST</name>
-			<name>FM_FOCUS_ENERGY_2_LIST</name>
-			<name>FM_FOCUS_ENERGY_2_LIST_PLUS</name>
-			<name>FM_FOCUS_ENERGY_3_LIST</name> <!-- Pinpoint End-->
-			<name>FM_MISSILES_BURST_FIRE_LIST</name> <!-- Explosive Start-->
-			<name>FM_MISSILES_BURST_FIRE_LIST_PLUS</name>
-			<name>FM_MISSILES_BURST_FIRE_LIST_PLUS_TYPE2</name>
-			<name>FM_MISSILES_BURST_FIRE_LIST_MEGA_PLUS</name>
-			<name>FM_MISSILES_CLOAK_STUN_LIST</name>
-			<name>FM_MISSILES_CLOAK_STUN_LIST_PLUS</name>
-			<name>FM_BOMB_CRYSTAL_FIRE_LIST</name>
-			<name>FM_BOMB_CRYSTAL_BIO_LIST</name>
-			<name>FM_BOMBLAUNCHER_HULL_LIST</name>			<!-- Explosive End-->
-			<name>FM_SHOTGUN_ANOMALY_LIST</name>    <!-- Flak Start-->
-			<name>FM_SHOTGUN_ANOMALY_LIST_PLUS</name>
-			<name>FM_SHOTGUN_ANOMALY_LIST_PLUS_2</name>
-			<name>FM_SHOTGUN_ANOMALY_LIST_MEGA</name>
-			<name>FM_SHOTGUN_AETHER_LIST</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_FORGE</name>
-			<name>FM_SHOTGUN_CURSED_LIST</name>		<!-- Flak End-->
-			<name>FM_BEAM_BASILISK_LIST_1</name>    <!-- Organic Start-->
-			<name>FM_BEAM_BASILISK_LIST_2</name>
-			<name>FM_BEAM_BASILISK_LIST_3</name>
-			<name>FM_BEAM_BASILISK_LIST_4</name>
-			<name>FM_BEAM_BASILISK_LIST_5</name>
-			<name>FM_BEAM_BASILISK_LIST_6</name>    <!-- Organic End-->
+			<name>FM_LASER_FORGE_LIST</name>
+			<name>FM_ION_FORGE_LIST</name>
+			<name>FM_BEAM_FORGE_LIST</name>
+			<name>FM_PINPOINT_FORGE_LIST</name>
+			<name>FM_EXPLOSIVE_FORGE_LIST</name>
+			<name>FM_FLAK_FORGE_LIST</name>
+			<name>FM_ORGANIC_FORGE_LIST</name>
 		</req>
 		<!-- FULL CHECK, CHECKS ALL LISTS FOR VERY SPECIFIC EVENTS. STORAGE CHECK VERSION -->
-		<req name="FM_FORGE_LIST_CHECK_STORAGE" type="any"> <!-- If none are met, show the recipe list at the storage check! These are all ingredient checks -->
-			<name>FM_LASER_ANOMALY_1_LIST_STORAGE</name> <!-- Laser Start-->
-			<name>FM_FLAMETHROWER_LIST_STORAGE1</name>
-			<name>FM_FLAMETHROWER_LIST_STORAGE2</name>
-			<name>FM_FLAMETHROWER_LIST_STORAGE3</name>
-			<name>FM_FLAMETHROWER_LIST_STORAGE4</name>
-			<name>FM_PHASER_SUFFOCATION_LIST</name>
-			<name>FM_PHASER_SUFFOCATION_LIST_STORAGE</name>
-			<name>FM_LASER_PHOTON_LIST_STORAGE</name>
-			<name>FM_LASER_PHOTON_2_LIST_STORAGE</name>
-			<name>FM_LASER_HUMAN_LIST_STORAGE</name>
-			<name>FM_LASER_ION_MEGA_LIST_STORAGE</name> <!-- Laser End-->
-			<name>FM_ION_TRI_FIRE_LIST_STORAGE</name> <!-- Ion Start-->
-			<name>FM_CHAINGUN_ION_LIST_STORAGE1</name>
-			<name>FM_CHAINGUN_ION_LIST_STORAGE2</name>
-			<name>FM_DISC_LAUNCHER_LIST_STORAGE1</name>
-			<name>FM_DISC_LAUNCHER_LIST_STORAGE2</name>
-			<name>FM_DISC_LAUNCHER_LIST_STORAGE3</name>
-			<name>FM_DISC_LAUNCHER_LIST_STORAGE4</name>
-			<name>FM_SHOTGUN_ENERGY_LIST_STORAGE</name>
-			<name>FM_PULSE_1_LIST_STORAGE</name>
-			<name>FM_PULSE_2_LIST_STORAGE</name>
-			<name>FM_PULSE_2_LIST_STORAGE_PLUS</name>
-			<name>FM_PULSE_3_LIST_STORAGE</name><!-- Ion End-->
-			<name>FM_BEAM_MINING_2_LIST_STORAGE</name> 		<!-- Beam Start-->
-			<name>FM_BEAM_MINING_3_LIST_STORAGE</name>
-			<name>FM_BEAM_MINING_3_LIST_STORAGE_2</name>
-			<name>FM_BEAM_PARTICLE_PIERCE_LIST_STORAGE</name>
-			<name>FM_BEAM_GUILLOTINE_CHAIN_LIST_STORAGE</name>
-			<name>FM_BEAM_GUILLOTINE_CHAIN_LIST_STORAGE_PLUS</name>
-			<name>FM_BEAM_EXPLOSION_LIST_STORAGE</name>
-			<name>FM_BEAM_EXPLOSION_LIST_STORAGE_PLUS</name>
-			<name>FM_BEAM_ION_PIERCE_LIST_STORAGE1</name>
-			<name>FM_BEAM_ION_PIERCE_LIST_STORAGE2</name>	<!-- Beam End-->
-			<name>FM_FOCUS_FUELED_1_LIST_STORAGE</name> <!-- Pinpoint Start-->
-			<name>FM_FOCUS_ENERGY_1_LIST_STORAGE</name>
-			<name>FM_FOCUS_ENERGY_2_LIST_STORAGE</name>
-			<name>FM_FOCUS_ENERGY_2_LIST_STORAGE_PLUS</name>
-			<name>FM_FOCUS_ENERGY_3_LIST_STORAGE</name> <!-- Pinpoint End-->
-			<name>FM_MISSILES_BURST_FIRE_LIST_STORAGE</name> <!-- Explosive Start-->
-			<name>FM_MISSILES_BURST_FIRE_LIST_STORAGE_PLUS</name>
-			<name>FM_MISSILES_BURST_FIRE_LIST_STORAGE_PLUS_TYPE2</name>
-			<name>FM_MISSILES_BURST_FIRE_LIST_STORAGE_MEGA_PLUS</name>
-			<name>FM_MISSILES_CLOAK_STUN_LIST_STORAGE</name>
-			<name>FM_MISSILES_CLOAK_STUN_LIST_STORAGE_PLUS</name>
-			<name>FM_BOMB_CRYSTAL_FIRE_LIST_STORAGE</name>
-			<name>FM_BOMB_CRYSTAL_BIO_LIST_STORAGE</name>
-			<name>FM_BOMBLAUNCHER_HULL_LIST_STORAGE</name>			<!-- Explosive End-->
-			<name>FM_SHOTGUN_ANOMALY_LIST_STORAGE</name>    <!-- Flak Start-->
-			<name>FM_SHOTGUN_ANOMALY_LIST_STORAGE_PLUS</name>
-			<name>FM_SHOTGUN_ANOMALY_LIST_STORAGE_PLUS_2</name>
-			<name>FM_SHOTGUN_ANOMALY_LIST_STORAGE_MEGA</name>
-			<name>FM_SHOTGUN_AETHER_LIST_STORAGE</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_FORGE_STORAGE</name>
-			<name>FM_SHOTGUN_CURSED_LIST_STORAGE</name>		<!-- Flak End-->
-			<name>FM_ORGANIC_BASILISK_FORGE_LIST_STORAGE</name>    <!-- Organic Start-->
-			<!-- Organic End-->
-
-
+		<req name="FM_FORGE_LIST_CHECK_STORAGE" type="all"> <!-- If none are met, show the recipe list at the storage check! These are all ingredient checks -->
+			<name>FM_FORGE_LIST_CHECK</name>
+			<name>MARKER_OBTAINED_FORGE</name>
 		</req>
 
 		<!--storage check for the Parazonium, to make sure you are able to AMP it in the combat check -->
@@ -13392,7 +12611,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 </FTL>
 
 <FTL><!--Modular armor stuff, augment effects, variables, reqs, like all of it-->
-	
+
 	<augments>
 		<!-- Modular Hull Basic Upgrades -->
 		<aug name="FM_MODULAR_HULL">

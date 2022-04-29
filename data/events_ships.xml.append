@@ -1588,7 +1588,7 @@
 			<choice hidden="true">
 			<text>...I beg your pardon?</text>
 			<event>
-			<text>"Now, I know I am not a craftsman… but greatness is in the act of creation and not necessarily in the finished product. Creating is the yin to the yang of our consumption and the doorway to beauty that we all want to walk through. Creating is how I tell the world I love it. Killing you, is how I tell you I love you."</text>
+			<text>"Now, I know I am not a craftsman... but greatness is in the act of creation and not necessarily in the finished product. Creating is the yin to the yang of our consumption and the doorway to beauty that we all want to walk through. Creating is how I tell the world I love it. Killing you, is how I tell you I love you."</text>
 			<choice hidden="true">
 				<text>That escalated quickly.</text>
 				<event load="COMBAT_CHECK"/>
