@@ -9665,6 +9665,17 @@
 			<event load="FM_FS_CLOSET_CROWBAR"/>
 		</choice>
 
+		<choice hidden="true" req="FM_FS_GRAPPLING_HOOK" lvl="1" max_group="3" blue="false">
+			<text>You already have a Grappling Hook.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+
+		<choice hidden="true" req="FM_FS_ROPE" lvl="1" max_group="3" blue="true">
+			<text>(ROPE) Combine the rope with a hook found in the closet to make a make-shift grappling hook.</text>
+			<event load="FM_FS_CLOSET_MAKE_GRAPPLING_HOOK"/>
+		</choice>
+
+
 
 		<choice hidden="false" req="pilot" lvl="1" max_group="8" blue="false">
 			<text>Leave the room and return to the airlock.</text>
@@ -9690,6 +9701,16 @@
 			<text>Leave the room and return to the airlock.</text>
 			<event load="FM_FS_AIRLOCK_HUB_LOAD"/>
 		</choice>
+	</event>
+
+	<event name="FM_FS_CLOSET_MAKE_GRAPPLING_HOOK">
+		<text>You create a grappling hook using duct tape and a hook you found in here. Perhaps you can retrieve the attache case with this?</text>
+		<hiddenAug>FM_FS_GRAPPLING_HOOK</hiddenAug>
+		<choice hidden="false" req="pilot" lvl="1" max_group="8" blue="false">
+			<text>Leave the room and return to the airlock.</text>
+			<event load="FM_FS_AIRLOCK_HUB_LOAD"/>
+		</choice>
+
 	</event>
 
 	<event name="FM_FS_SECURITY_LOAD"> <!--  Recursion call -->
