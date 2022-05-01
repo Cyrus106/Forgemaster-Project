@@ -3254,10 +3254,10 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_BEAM_GUILLOTINE_CHAIN">
 		<checkCargo/>
 		<text>Currently viewing the Menaulion Beam.</text>
-		<choice hidden="true">
-			<text>Craft the Menaulion Beam.</text>
+		<choice hidden="true" req="LOCKED_NANOBOT_DEFENSE_SYSTEM" blue="false">
+			<text>Craft the Menaulion Beam using the locked Murder-Bot Dispersal.</text>
 			<event>
-				<text>Alastair raises a curious eyebrow. "The Menaulion is certainly a choice. I wonder what enemies you face that you would choose this over anything else."</text>
+				<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_1"/>
 				<item_modify>
 					<item type="scrap" min="-200" max="-200"/>
 					<item type="missiles" min="-20" max="-20"/>
@@ -3266,24 +3266,102 @@
 				<choice hidden="true">
 					<text>Continue...</text>
 					<event>
-						<text>Though Alastair prefers to let his customers watch him work, he motions for a Plated to escort you away. As the Plated walks, he explains. "Alastair loves to teach, but safety is more of a concern. He can't sell to you if you're dead from radiation sickness, now can he?" The Plated pauses, hoping for your laughter with gleaming eyes, and then sighs. "Nobody ever laughs at that one. Is it too gruesome?" His shoulders slump a little as he opens a door to the lower part of the ship and guides you to a lead lined room. "If anything goes wrong, an alarm will go off. There's radiation equipment in here with an instruction manual in every language available if need, though I'm sure you're fine."
-						</text>
+						<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_2"/>
 						<remove name="BEAM_GUILLOTINE"/>
 						<choice hidden="true">
 							<text>Continue...</text>
 							<event>
-								<text>The door dings, making you think that perhaps you'll need to start learning how to switch an old Geiger counter on. Thankfully, it was just the Plated coming to get you. He leads you across the lower deck to a part of the ship that has a small enclosed workspace with glass walls. You see Alastair working with the tiny invaders very carefully. He waves, points down, and makes a throat slitting motion. You can see the nanomachines are inactive, but you know he'd be dead in a microsecond if they got loose.
-								</text>
+								<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_3"/>
+								<remove name="LOCKED_NANOBOT_DEFENSE_SYSTEM"/>
+								<choice hidden="true">
+									<text>Continue...</text>
+									<event>
+										<metaVariable name="FM_LORE_MENAULION" op="set" val="1"/>
+										<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_4"/>
+										<weapon name="FM_BEAM_GUILLOTINE_CHAIN"/>
+										<choice hidden="true">
+											<text>Continue...</text>
+											<event>
+												<loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
+											</event>
+										</choice>
+									</event>
+								</choice>
+							</event>
+						</choice>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice hidden="true" req="FM_NO_IZD_MURDERBOTS" lvl="1" blue="false">
+			<text>Craft the Menaulion Beam using the Murder-Bot Dispersal.</text>
+			<event>
+				<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_1"/>
+				<item_modify>
+					<item type="scrap" min="-200" max="-200"/>
+					<item type="missiles" min="-20" max="-20"/>
+					<item type="drones" min="-15" max="-15"/>
+				</item_modify>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event>
+						<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_2"/>
+						<remove name="BEAM_GUILLOTINE"/>
+						<choice hidden="true">
+							<text>Continue...</text>
+							<event>
+								<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_3"/>
 								<remove name="NANOBOT_DEFENSE_SYSTEM"/>
 								<choice hidden="true">
 									<text>Continue...</text>
 									<event>
 										<metaVariable name="FM_LORE_MENAULION" op="set" val="1"/>
-										<text>With radiation and nanomachines safely contained, Alastair emerges from the workspace with your new weapon in tow, escorting you back to the upper deck. "Nobody believed the rumors about this weapon when it was first made. You've got to have guts to make one of these on your own ship, or be totally insane. You decide which one applies to me!" Alastair gives you a hearty laugh and sends you on your way.</text>
+										<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_4"/>
 										<weapon name="FM_BEAM_GUILLOTINE_CHAIN"/>
 										<choice hidden="true">
 											<text>Continue...</text>
-											<event load="FM_BEAM_GUILLOTINE_CHAIN_INTERNAL_NPC_ADDON_CHECK"/>
+											<event>
+												<loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
+											</event>
+										</choice>
+									</event>
+								</choice>
+							</event>
+						</choice>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice hidden="true" req="IZD_NANOBOT_DEFENSE_SYSTEM" lvl="1" blue="false">
+			<text>Craft the Menaulion Beam using the internalized Murder-Bot Dispersal.</text>
+			<event>
+				<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_1"/>
+				<item_modify>
+					<item type="scrap" min="-200" max="-200"/>
+					<item type="missiles" min="-20" max="-20"/>
+					<item type="drones" min="-15" max="-15"/>
+				</item_modify>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event>
+						<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_2"/>
+						<remove name="BEAM_GUILLOTINE"/>
+						<choice hidden="true">
+							<text>Continue...</text>
+							<event>
+								<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_3"/>
+								<removeItem>HIDDEN IZD_NANOBOT_DEFENSE_SYSTEM</removeItem>
+								<choice hidden="true">
+									<text>Continue...</text>
+									<event>
+										<metaVariable name="FM_LORE_MENAULION" op="set" val="1"/>
+										<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_4"/>
+										<weapon name="FM_BEAM_GUILLOTINE_CHAIN"/>
+										<choice hidden="true">
+											<text>Continue...</text>
+											<event>
+												<loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
+											</event>
 										</choice>
 									</event>
 								</choice>
@@ -3302,10 +3380,10 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_BEAM_GUILLOTINE_CHAIN_PLAYER">
 		<checkCargo/>
 		<text>Currently viewing the Menaulion Beam.</text>
-		<choice hidden="true">
-			<text>Craft the Menaulion Beam.</text>
+		<choice hidden="true" req="LOCKED_NANOBOT_DEFENSE_SYSTEM" blue="false">
+			<text>Craft the Menaulion Beam using the locked MurderBot Dispersal.</text>
 			<event>
-				<text>Alastair raises a curious eyebrow. "The Menaulion is certainly a choice. I wonder what enemies you face that you would choose this over anything else."</text>
+				<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_1"/>
 				<item_modify>
 					<item type="scrap" min="-200" max="-200"/>
 					<item type="missiles" min="-20" max="-20"/>
@@ -3314,22 +3392,24 @@
 				<choice hidden="true">
 					<text>Continue...</text>
 					<event>
-						<text>Though Alastair prefers to let his customers watch him work, he motions for a Plated to escort you away. As the Plated walks, he explains. "Alastair loves to teach, but safety is more of a concern. He can't sell to you if you're dead from radiation sickness, now can he?" The Plated pauses, hoping for your laughter with gleaming eyes, and then sighs. "Nobody ever laughs at that one. Is it too gruesome?" His shoulders slump a little as he opens a door to the lower part of the ship and guides you to a lead lined room. "If anything goes wrong, an alarm will go off. There's radiation equipment in here with an instruction manual in every language available if need, though I'm sure you're fine."</text>
+						<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_2"/>
 						<remove name="BEAM_GUILLOTINE_PLAYER"/>
 						<choice hidden="true">
 							<text>Continue...</text>
 							<event>
-								<text>The door dings, making you think that perhaps you'll need to start learning how to switch an old Geiger counter on. Thankfully, it was just the Plated coming to get you. He leads you across the lower deck to a part of the ship that has a small enclosed workspace with glass walls. You see Alastair working with the tiny invaders very carefully. He waves, points down, and makes a throat slitting motion. You can see the nanomachines are inactive, but you know he'd be dead in a microsecond if they got loose.</text>
-								<remove name="NANOBOT_DEFENSE_SYSTEM"/>
+								<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_3"/>
+								<remove name="LOCKED_NANOBOT_DEFENSE_SYSTEM"/>
 								<choice hidden="true">
 									<text>Continue...</text>
 									<event>
 										<metaVariable name="FM_LORE_MENAULION" op="set" val="1"/>
-										<text>With radiation and nanomachines safely contained, Alastair emerges from the workspace with your new weapon in tow, escorting you back to the upper deck. "Nobody believed the rumors about this weapon when it was first made. You've got to have guts to make one of these on your own ship, or be totally insane. You decide which one applies to me!" Alastair gives you a hearty laugh and sends you on your way.</text>
+										<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_4"/>
 										<weapon name="FM_BEAM_GUILLOTINE_CHAIN_PLAYER"/>
 										<choice hidden="true">
 											<text>Continue...</text>
-											<event load="FM_BEAM_GUILLOTINE_CHAIN_INTERNAL_NPC_ADDON_CHECK"/>
+											<event>
+												<loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
+											</event>
 										</choice>
 									</event>
 								</choice>
@@ -3339,26 +3419,101 @@
 				</choice>
 			</event>
 		</choice>
+		<choice hidden="true" req="FM_NO_IZD_MURDERBOTS" lvl="1" blue="false">
+			<text>Craft the Menaulion Beam using the Murder-Bot Dispersal.</text>
+			<event>
+				<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_1"/>
+				<item_modify>
+					<item type="scrap" min="-200" max="-200"/>
+					<item type="missiles" min="-20" max="-20"/>
+					<item type="drones" min="-15" max="-15"/>
+				</item_modify>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event>
+						<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_2"/>
+						<remove name="BEAM_GUILLOTINE_PLAYER"/>
+						<choice hidden="true">
+							<text>Continue...</text>
+							<event>
+								<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_3"/>
+								<remove name="NANOBOT_DEFENSE_SYSTEM"/>
+								<choice hidden="true">
+									<text>Continue...</text>
+									<event>
+										<metaVariable name="FM_LORE_MENAULION" op="set" val="1"/>
+										<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_4"/>
+										<weapon name="FM_BEAM_GUILLOTINE_CHAIN_PLAYER"/>
+										<choice hidden="true">
+											<text>Continue...</text>
+											<event>
+												<loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
+											</event>
+										</choice>
+									</event>
+								</choice>
+							</event>
+						</choice>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice hidden="true" req="IZD_NANOBOT_DEFENSE_SYSTEM" lvl="1" blue="false">
+			<text>Craft the Menaulion Beam using the internalized Murder-Bot Dispersal.</text>
+			<event>
+				<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_1"/>
+				<item_modify>
+					<item type="scrap" min="-200" max="-200"/>
+					<item type="missiles" min="-20" max="-20"/>
+					<item type="drones" min="-15" max="-15"/>
+				</item_modify>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event>
+						<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_2"/>
+						<remove name="BEAM_GUILLOTINE_PLAYER"/>
+						<choice hidden="true">
+							<text>Continue...</text>
+							<event>
+								<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_3"/>
+								<removeItem>HIDDEN IZD_NANOBOT_DEFENSE_SYSTEM</removeItem>
+								<choice hidden="true">
+									<text>Continue...</text>
+									<event>
+										<metaVariable name="FM_LORE_MENAULION" op="set" val="1"/>
+										<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_4"/>
+										<weapon name="FM_BEAM_GUILLOTINE_CHAIN_PLAYER"/>
+										<choice hidden="true">
+											<text>Continue...</text>
+											<event>
+												<loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
+											</event>
+										</choice>
+									</event>
+								</choice>
+							</event>
+						</choice>
+					</event>
+				</choice>
+			</event>
+		</choice>
+
 		<choice hidden="false">
 			<text>Nevermind.</text>
 			<event load="FM_FORGE_WEAPON_BEAM_LOAD"/>
 		</choice>
 	</event>
 
-	<event name="FM_BEAM_GUILLOTINE_CHAIN_INTERNAL_ADDON_CHECK">
-		<event/>
-	</event>
-
-	<event name="FM_BEAM_GUILLOTINE_CHAIN_INTERNAL_NPC_ADDON_CHECK">
-		<event/>
-	</event>
-
 	<event name="FM_BEAM_EXPLOSION_INTERNAL_ADDON_CHECK">
-		<event/>
+		<hiddenAug>VALEFOR_EASTER_EGG</hiddenAug>
+
+		<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
 	</event>
 
 	<event name="FM_BEAM_EXPLOSION_INTERNAL_NPC_ADDON_CHECK">
-		<event/>
+		<hiddenAug>VALEFOR_EASTER_EGG</hiddenAug>
+
+		<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
 	</event>
 
 
@@ -11765,12 +11920,12 @@
 		<text>What would you like to try?</text>
 
 
-		<choice hidden="true" req="FM_LIST_MAGNET_SUCCESS" lvl="1" max_group="1" blue="true">
+		<choice hidden="true" req="FM_FS_LIST_MAGNET_SUCCESS" lvl="1" max_group="1" blue="true">
 			<text>(MAGNET TOOL) You already obtained the Attache Case using the magnet!</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<choice hidden="true" req="FM_LIST_MAGNET_FAIL" lvl="1" max_group="1" blue="true">
+		<choice hidden="true" req="FM_FS_LIST_MAGNET_FAIL" lvl="1" max_group="1" blue="true">
 			<text>(MAGNET TOOL) Unfortunately the Attache Case fell into the abyss below. There's no way to get it now.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -11781,12 +11936,12 @@
 		</choice>
 
 
-		<choice hidden="true" req="FM_LIST_POLE_SUCCESS" lvl="1" max_group="2" blue="true">
+		<choice hidden="true" req="FM_FS_LIST_POLE_SUCCESS" lvl="1" max_group="2" blue="true">
 			<text>(IMPROVED POLE) You already obtained the Attache Case using the magnet!</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<choice hidden="true" req="FM_LIST_POLE_FAIL" lvl="1" max_group="2" blue="true">
+		<choice hidden="true" req="FM_FS_LIST_POLE_FAIL" lvl="1" max_group="2" blue="true">
 			<text>(IMPROVED POLE) Unfortunately the Attache Case fell into the abyss below. There's no way to get it now.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -11797,12 +11952,12 @@
 		</choice>
 
 
-		<choice hidden="true" req="FM_LIST_ROPE_SUCCESS" lvl="1" max_group="3" blue="true">
+		<choice hidden="true" req="FM_FS_LIST_ROPE_SUCCESS" lvl="1" max_group="3" blue="true">
 			<text>(GRAPPLING HOOK) You already obtained the Attache Case using the magnet!</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<choice hidden="true" req="FM_LIST_ROPE_FAIL" lvl="1" max_group="3" blue="true">
+		<choice hidden="true" req="FM_FS_LIST_ROPE_FAIL" lvl="1" max_group="3" blue="true">
 			<text>(GRAPPLING HOOK) Unfortunately the Attache Case fell into the abyss below. There's no way to get it now.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -12043,7 +12198,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<choice hidden="true" req="FM_LIST_POLE" lvl="1" max_group="2" blue="true">
+		<choice hidden="true" req="FM_FS_LIST_POLE" lvl="1" max_group="2" blue="true">
 			<text>(DUCT TAPE) Combine the duct tape with the poles found in storage to make a make-shift sturdier pole.</text>
 			<event load="FM_FS_COALITION_STORAGE_MAKE_POLE"/>
 		</choice>
@@ -12188,12 +12343,12 @@
 			<event load="FM_FS_FEDERATION_INFIRMARY_HUB_LOAD"/>
 		</choice>
 
-		<choice hidden="true" req="LIST_KILL_ENGI_INFIRMARY" lvl="1" max_group="1" blue="true">
+		<choice hidden="true" req="FM_FS_LIST_KILL_ENGI_INFIRMARY" lvl="1" max_group="1" blue="true">
 			<text>(EXTINGUISHER AND GRENADE) Burn the nanomachine swarm to a crisp. </text>
 			<event load="FM_FS_FEDERATION_INFIRMARY_ACCESS_GAINED"/>
 		</choice>
 
-		<choice hidden="true" req="LIST_KILL_ENGI_INFIRMARY_MISSING" lvl="1" max_group="1" blue="true">
+		<choice hidden="true" req="FM_FS_LIST_KILL_ENGI_INFIRMARY_MISSING" lvl="1" max_group="1" blue="true">
 			<text>(GRENADE) While your grenade would make an EXCELLENT tool to eliminate the nanomachine swarm, you would simply burn anything useful in that room to the ground. You'll need a method to put out the fire. </text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -12872,7 +13027,7 @@
 	<event name="FM_FS_3RD_LONGHALL">
 		<text>You and your crew follow the long hallway to another blast door (of course it is, why are you not surprised). A sign above the door reads "BELLONA COMMAND CENTER". There is both a card reader, and keypad to the right of the massive door. It looks far too thick for anything you might find to break through, so you'll need that card and code to proceed.</text>
 
-		<choice hidden="false" req="FM_LIST_COMMAND_DOOR" lvl="1" max_group="1" blue="true">
+		<choice hidden="false" req="FM_FS_LIST_COMMAND_DOOR" lvl="1" max_group="1" blue="true">
 			<text>(Security Card and Command Code) Swipe the Security Level 5 Card and input the Command Code to proceed.</text>
 			<event load="FM_FS_3RD_COMMAND_GRANTED_DOOR"/>
 		</choice>
@@ -13217,7 +13372,7 @@
 			<event/>
 		</choice>
 	</event>
-
+</FTL>
 
 
 <!-- MAKE SURE TO DECLARE THE QUEST MARKER IN BLUEPRINTS.XML.APPEND!!!!

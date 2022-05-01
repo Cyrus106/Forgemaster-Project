@@ -1830,14 +1830,31 @@
 		</req>
 
 		<req name="FM_BEAM_GUILLOTINE_CHAIN_LIST" type="all"> <!-- Murder Bot Dispersal + Fauchard Beam -->
-			<name>NANOBOT_DEFENSE_SYSTEM</name>
+			<req>
+				<name>NANOBOT_DEFENSE_SYSTEM</name>
+				<name>LOCKED_NANOBOT_DEFENSE_SYSTEM</name>
+				<name>IZD_NANOBOT_DEFENSE_SYSTEM</name>
+			</req>
 			<name>BEAM_GUILLOTINE</name>
 		</req>
 
 		<req name="FM_BEAM_GUILLOTINE_CHAIN_LIST_PLUS" type="all"> <!-- Murder Bot Dispersal + Fauchard Beam(+) -->
-			<name>NANOBOT_DEFENSE_SYSTEM</name>
+			<req>
+				<name>NANOBOT_DEFENSE_SYSTEM</name>
+				<name>LOCKED_NANOBOT_DEFENSE_SYSTEM</name>
+				<name>IZD_NANOBOT_DEFENSE_SYSTEM</name>
+			</req>
 			<name>BEAM_GUILLOTINE_PLAYER</name>
 		</req>
+
+		<req name="FM_NO_IZD_MURDERBOTS" type="all">
+			<req lvl="0">
+				<name>IZD_NANOBOT_DEFENSE_SYSTEM</name>
+			</req>
+			<name>NANOBOT_DEFENSE_SYSTEM</name>
+		</req>
+
+
 
 
 		<req name="FM_BEAM_EXPLOSION_LIST" type="all"> <!-- Small Bomb + Halberd -->
@@ -3319,19 +3336,7 @@
 			<loadEvent>STORAGE_CHECK</loadEvent>
 		</event>
 
-		<event name="FM_BEAM_GUILLOTINE_CHAIN_INTERNAL_ADDON_CHECK"> <!-- If you are using the internalize addon, this removes the internalize Murder bots upgrade-->
-			<removeItem>HIDDEN IZD_NANOBOT_DEFENSE_SYSTEM</removeItem>
-			<removeItem>HIDDEN INTERNALIZED_AUG_COUNTER</removeItem>
 
-			<loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
-		</event>
-
-		<event name="FM_BEAM_GUILLOTINE_CHAIN_INTERNAL_NPC_ADDON_CHECK"> <!-- If you are using the internalize addon, this removes the internalize Murder bots upgrade-->
-			<removeItem>HIDDEN IZD_NANOBOT_DEFENSE_SYSTEM</removeItem>
-			<removeItem>HIDDEN INTERNALIZED_AUG_COUNTER</removeItem>
-
-			<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-		</event>
 		<!--
 		<event name="FM2_BEAM_GUILLOTINE_CHAIN_INTERNAL_NPC_ADDON_CHECK"> <!- If you are using the internalize addon, this removes the internalize Murder bots upgrade->
 		<removeItem>HIDDEN IZD_NANOBOT_DEFENSE_SYSTEM</removeItem>
@@ -3339,18 +3344,7 @@
 
 		<loadEvent>FM2_FORGE_WEAPON_LOAD</loadEvent></event>-->
 
-		<event name="FM_BEAM_EXPLOSION_INTERNAL_ADDON_CHECK"> <!-- If you are using the internalize addon, this removes the internalize Murder bots upgrade-->
-			<hiddenAug>VALEFOR_EASTER_EGG</hiddenAug>
 
-
-			<loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
-		</event>
-
-		<event name="FM_BEAM_EXPLOSION_INTERNAL_NPC_ADDON_CHECK"> <!-- If you are using the internalize addon, this removes the internalize Murder bots upgrade-->
-			<hiddenAug>VALEFOR_EASTER_EGG</hiddenAug>
-
-			<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-		</event>
 		<!--
 		<event name="FM2_BEAM_EXPLOSION_INTERNAL_NPC_ADDON_CHECK"> <!- If you are using the internalize addon, this removes the internalize Murder bots upgrade->
 		<hiddenAug>VALEFOR_EASTER_EGG</hiddenAug>
@@ -3540,57 +3534,57 @@
 
 	<events> <!-- Forgemaster HARMONY ENDING SPACESTATION EVENT REQS -->
 
-		<req name="LIST_KILL_ENGI_INFIRMARY_MISSING" type="all">
+		<req name="FM_FS_LIST_KILL_ENGI_INFIRMARY_MISSING" type="all">
 			<name>FM_FS_FIRE_GRENADE</name>
 			<name>MARKER_ENGI_IN_INFIRMARY</name>
 		</req>
 
-		<req name="LIST_KILL_ENGI_INFIRMARY" type="all">
+		<req name="FM_FS_LIST_KILL_ENGI_INFIRMARY" type="all">
 			<name>FM_FS_FIRE_GRENADE</name>
 			<name>FM_FS_EXTINGUISHER</name>
 			<name>MARKER_ENGI_IN_INFIRMARY</name>
 		</req>
 
-		<req name="FM_LIST_POLE" type="all">
+		<req name="FM_FS_LIST_POLE" type="all">
 			<name>FM_FS_DUCT_TAPE</name>
 			<name>MARKER_NEED_POLE</name>
 		</req>
 
-		<req name="FM_LIST_POLE_FAIL" type="all">
+		<req name="FM_FS_LIST_POLE_FAIL" type="all">
 			<name>FM_FS_DUCT_POLE</name>
 			<name>MARKER_NEED_POLE</name>
 			<name>MARKER_CASE_FELL</name>
 		</req>
 
-		<req name="FM_LIST_POLE_SUCCESS" type="all">
+		<req name="FM_FS_LIST_POLE_SUCCESS" type="all">
 			<name>FM_FS_DUCT_POLE</name>
 			<name>MARKER_NEED_POLE</name>
 			<name>MARKER_CASE_OBTAINED</name>
 		</req>
 
-		<req name="FM_LIST_ROPE_FAIL" type="all">
+		<req name="FM_FS_LIST_ROPE_FAIL" type="all">
 			<name>FM_FS_GRAPPLING_HOOK</name>
 			<name>MARKER_ROPE_OBTAINED</name>
 			<name>MARKER_CASE_FELL</name>
 		</req>
 
-		<req name="FM_LIST_ROPE_SUCCESS" type="all">
+		<req name="FM_FS_LIST_ROPE_SUCCESS" type="all">
 			<name>FM_FS_GRAPPLING_HOOK</name>
 			<name>MARKER_ROPE_OBTAINED</name>
 			<name>MARKER_CASE_OBTAINED</name>
 		</req>
 
-		<req name="FM_LIST_MAGNET_FAIL" type="all">
+		<req name="FM_FS_LIST_MAGNET_FAIL" type="all">
 			<name>FM_FS_MAGNET_TOOL</name>
 			<name>MARKER_CASE_FELL</name>
 		</req>
 
-		<req name="FM_LIST_MAGNET_SUCCESS" type="all">
+		<req name="FM_FS_LIST_MAGNET_SUCCESS" type="all">
 			<name>FM_FS_MAGNET_TOOL</name>
 			<name>MARKER_CASE_OBTAINED</name>
 		</req>
 
-		<req name="FM_LIST_COMMAND_DOOR" type="all">
+		<req name="FM_FS_LIST_COMMAND_DOOR" type="all">
 			<name>FM_FS_KEYCARD_5</name>
 			<name>FM_FS_COMMAND_CODE</name>
 		</req>

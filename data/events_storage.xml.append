@@ -2656,7 +2656,46 @@
   <event name="STORAGE_CHECK_CREATE_FM_BEAM_GUILLOTINE_CHAIN_PLAYER">
     <checkCargo/>
     <text>Currently viewing the Menaulion Beam†. What a beauty!</text>
-    <choice hidden="true">
+    <choice hidden="true"  req="LOCKED_NANOBOT_DEFENSE_SYSTEM" blue="false">
+      <text>Feed the locked Murder-Bots? [Cost: 100~, 10}, 10|] </text>
+      <event>
+        <text>...</text>
+        <item_modify>
+          <item type="scrap" min="-100" max="-100"/>
+          <item type="missiles" min="-10" max="-10"/>
+          <item type="drones" min="-10" max="-10"/>
+        </item_modify>
+
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <text>...</text>
+            <remove name="LOCKED_NANOBOT_DEFENSE_SYSTEM"/>
+            <choice hidden="true">
+              <text>Continue...</text>
+              <event>
+                <text>...</text>
+                <remove name="BEAM_GUILLOTINE_PLAYER"/>
+                <choice hidden="true">
+                  <text>Continue...</text>
+                  <event>
+                    <text>...</text>
+                    <weapon name="FM_BEAM_GUILLOTINE_CHAIN_PLAYER"/>
+                    <choice hidden="true">
+                      <text>Congrats! Enjoy killing everything.</text>
+                      <event>
+												<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+											</event>
+                    </choice>
+                  </event>
+                </choice>
+              </event>
+            </choice>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice hidden="true"  req="FM_NO_IZD_MURDERBOTS" blue="false">
       <text>Feed the Murder-Bots? [Cost: 100~, 10}, 10|] </text>
       <event>
         <text>...</text>
@@ -2683,7 +2722,48 @@
                     <weapon name="FM_BEAM_GUILLOTINE_CHAIN_PLAYER"/>
                     <choice hidden="true">
                       <text>Congrats! Enjoy killing everything.</text>
-                      <event load="FM_BEAM_GUILLOTINE_CHAIN_INTERNAL_ADDON_CHECK"/>
+                      <event>
+												<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+											</event>
+                    </choice>
+                  </event>
+                </choice>
+              </event>
+            </choice>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice hidden="true"  req="IZD_NANOBOT_DEFENSE_SYSTEM" blue="false">
+      <text>Feed the internalized Murder-Bots? [Cost: 100~, 10}, 10|] </text>
+      <event>
+        <text>...</text>
+        <item_modify>
+          <item type="scrap" min="-100" max="-100"/>
+          <item type="missiles" min="-10" max="-10"/>
+          <item type="drones" min="-10" max="-10"/>
+        </item_modify>
+
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <text>...</text>
+            <removeItem>HIDDEN IZD_NANOBOT_DEFENSE_SYSTEM</removeItem>
+            <choice hidden="true">
+              <text>Continue...</text>
+              <event>
+                <text>...</text>
+                <remove name="BEAM_GUILLOTINE_PLAYER"/>
+                <choice hidden="true">
+                  <text>Continue...</text>
+                  <event>
+                    <text>...</text>
+                    <weapon name="FM_BEAM_GUILLOTINE_CHAIN_PLAYER"/>
+                    <choice hidden="true">
+                      <text>Congrats! Enjoy killing everything.</text>
+                      <event>
+												<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+											</event>
                     </choice>
                   </event>
                 </choice>
@@ -2702,7 +2782,46 @@
   <event name="STORAGE_CHECK_CREATE_FM_BEAM_GUILLOTINE_CHAIN">
     <checkCargo/>
     <text>Currently viewing the Menaulion Beam. What a beauty!</text>
-    <choice hidden="true">
+    <choice hidden="true"  req="LOCKED_NANOBOT_DEFENSE_SYSTEM" blue="false">
+      <text>Feed the locked Murder-Bots? [Cost: 100~, 10}, 10|] </text>
+      <event>
+        <text>...</text>
+        <item_modify>
+          <item type="scrap" min="-100" max="-100"/>
+          <item type="missiles" min="-10" max="-10"/>
+          <item type="drones" min="-10" max="-10"/>
+        </item_modify>
+
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <text>...</text>
+            <remove name="LOCKED_NANOBOT_DEFENSE_SYSTEM"/>
+            <choice hidden="true">
+              <text>Continue...</text>
+              <event>
+                <text>...</text>
+                <remove name="BEAM_GUILLOTINE"/>
+                <choice hidden="true">
+                  <text>Continue...</text>
+                  <event>
+                    <text>...</text>
+                    <weapon name="FM_BEAM_GUILLOTINE_CHAIN"/>
+                    <choice hidden="true">
+                      <text>Congrats! Enjoy killing everything.</text>
+                      <event>
+												<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+											</event>
+                    </choice>
+                  </event>
+                </choice>
+              </event>
+            </choice>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice hidden="true"  req="FM_NO_IZD_MURDERBOTS" blue="false">
       <text>Feed the Murder-Bots? [Cost: 100~, 10}, 10|] </text>
       <event>
         <text>...</text>
@@ -2729,7 +2848,48 @@
                     <weapon name="FM_BEAM_GUILLOTINE_CHAIN"/>
                     <choice hidden="true">
                       <text>Congrats! Enjoy killing everything.</text>
-                      <event load="FM_BEAM_GUILLOTINE_CHAIN_INTERNAL_ADDON_CHECK"/>
+                      <event>
+												<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+											</event>
+                    </choice>
+                  </event>
+                </choice>
+              </event>
+            </choice>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice hidden="true"  req="IZD_NANOBOT_DEFENSE_SYSTEM" blue="false">
+      <text>Feed the internalized Murder-Bots? [Cost: 100~, 10}, 10|] </text>
+      <event>
+        <text>...</text>
+        <item_modify>
+          <item type="scrap" min="-100" max="-100"/>
+          <item type="missiles" min="-10" max="-10"/>
+          <item type="drones" min="-10" max="-10"/>
+        </item_modify>
+
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <text>...</text>
+            <removeItem>HIDDEN IZD_NANOBOT_DEFENSE_SYSTEM</removeItem>
+            <choice hidden="true">
+              <text>Continue...</text>
+              <event>
+                <text>...</text>
+                <remove name="BEAM_GUILLOTINE"/>
+                <choice hidden="true">
+                  <text>Continue...</text>
+                  <event>
+                    <text>...</text>
+                    <weapon name="FM_BEAM_GUILLOTINE_CHAIN"/>
+                    <choice hidden="true">
+                      <text>Congrats! Enjoy killing everything.</text>
+                      <event>
+												<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+											</event>
                     </choice>
                   </event>
                 </choice>
