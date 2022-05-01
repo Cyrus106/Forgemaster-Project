@@ -105,13 +105,36 @@
 <!--all the modular armor stuff-->
 <!--special module effect events-->
 <event name="LOAD_FASTSHIELD">
-  <status type="limit" target="player" system="shields" amount="2" />
+  <status type="limit" target="player" system="shields" amount="4" />
 </event>
 <event name="LOAD_FASTWEAPON">
   <status type="limit" target="player" system="weapons" amount="3" />
 </event>
 <event name="LOAD_MAGNETIC">
   <status type="loss" target="player" system="reactor" amount="3" />
+</event>
+
+<event name="RELIMIT_WEAPONS_0">
+	<status type="limit" target="player" system="weapons" amount="0"/>
+</event>
+<event name="RELIMIT_WEAPONS_1">
+	<status type="limit" target="player" system="weapons" amount="1"/>
+</event>
+<event name="RELIMIT_WEAPONS_2">
+	<status type="limit" target="player" system="weapons" amount="2"/>
+</event>
+
+<event name="RELIMIT_SHIELDS_0">
+	<status type="limit" target="player" system="shields" amount="0"/>
+</event>
+<event name="RELIMIT_SHIELDS_1">
+	<status type="limit" target="player" system="shields" amount="1"/>
+</event>
+<event name="RELIMIT_SHIELDS_2">
+	<status type="limit" target="player" system="shields" amount="2"/>
+</event>
+<event name="RELIMIT_SHIELDS_3">
+	<status type="limit" target="player" system="shields" amount="3"/>
 </event>
 <!--overcharmd stuff, if more than 15 notches used-->
 <event name="OVERCHARMED_EFFECT">
@@ -174,4 +197,46 @@
 <event name="OVERCHARMED_STOP">
   <text>stopped overcharmed effect</text>
   <clearTriggeredEvent name="OVERCHARMED_TRIGGER"/>
+</event>
+
+
+<event name="SURGE_FLAK_DEFEND">
+	<superBarrage player="true" name="SURGE_FLAK_DEFEND"/>
+</event>
+<event name="SURGE_FLAK_DEFEND2">
+	<superBarrage player="true" name="SURGE_FLAK_DEFEND2"/>
+</event>
+<event name="DEFENSE_FLAK_SPAWN">
+	<eventButton name="UI_FLAK_DEFEND_BUTTON">
+        <event load="SURGE_FLAK_DEFEND"/>
+        <image>statusUI/button_surge_defend</image>
+				<location>0</location>
+				<customLocation x="116" y="489"/>
+        <tooltip>funny flak surge!</tooltip>
+        <inactiveTooltip>Unavailable: You cannot do this while in danger!</inactiveTooltip>
+        <color r="255" g="255" b="255"/>
+        <activeColor r="255" g="255" b="255"/>
+        <inactiveColor r="160" g="162" b="171"/>
+        <selectedColor r="58" g="127" b="255"/>
+        <textColor r="23" g="44" b="62"/>
+        <jumpClear>false</jumpClear>
+        <noDanger>false</noDanger>
+    </eventButton>
+</event>
+<event name="DEFENSE_FLAK_SPAWN2">
+	<eventButton name="UI_FLAK_DEFEND_BUTTON2">
+        <event load="SURGE_FLAK_DEFEND2"/>
+        <image>statusUI/button_surge_defend</image>
+				<location>0</location>
+				<customLocation x="116" y="440"/>
+        <tooltip>funny flak surge2!</tooltip>
+        <inactiveTooltip>Unavailable: You cannot do this while in danger!</inactiveTooltip>
+        <color r="255" g="255" b="255"/>
+        <activeColor r="255" g="255" b="255"/>
+        <inactiveColor r="160" g="162" b="171"/>
+        <selectedColor r="58" g="127" b="255"/>
+        <textColor r="23" g="44" b="62"/>
+        <jumpClear>false</jumpClear>
+        <noDanger>false</noDanger>
+    </eventButton>
 </event>

@@ -2176,6 +2176,153 @@ HUSK SLUG ANIMATIONS
 
 
 </FTL>
+
+<FTL>
+	<!--PLAYABLE TWISTED FREE MANTIS CREW-->
+<!--
+*******************
+FREE MANTIS CRACKERJACK ANIMATIONS
+********************
+-->
+<animSheet name="mantis_crackerjack" w="350" h="490" fw="35" fh="35">people/mantis_crackerjack_base.png</animSheet>
+<anim name="mantis_crackerjack_clone">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.7</time>
+</anim>
+<anim name="mantis_crackerjack_death_left">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="7" x="0" y="1"/>
+	<time>0.7</time>
+</anim>
+<anim name="mantis_crackerjack_death_right">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="7" x="0" y="1"/>
+	<time>0.7</time>
+</anim>
+<anim name="mantis_crackerjack_walk_down">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="5" x="0" y="13"/>
+	<time>1.0</time>
+</anim>
+<anim name="mantis_crackerjack_walk_right">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="5" x="5" y="13"/>
+	<time>1.0</time>
+</anim>
+<anim name="mantis_crackerjack_walk_up">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="5" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="mantis_crackerjack_walk_left">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="5" x="5" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="mantis_crackerjack_shoot_down">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="mantis_crackerjack_shoot_right">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="mantis_crackerjack_shoot_up">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="4" x="2" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="mantis_crackerjack_shoot_left">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="4" x="6" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="mantis_crackerjack_fire_down">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="4" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="mantis_crackerjack_fire_right">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="4" x="4" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="mantis_crackerjack_fire_up">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="mantis_crackerjack_fire_left">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="mantis_crackerjack_repair">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="9" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="mantis_crackerjack_punch_up">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="10" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="mantis_crackerjack_punch_down">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="10" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="mantis_crackerjack_teleport">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="mantis_crackerjack_type_right">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>1</time>
+</anim>
+<anim name="mantis_crackerjack_type_left">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>1</time>
+</anim>
+<anim name="mantis_crackerjack_type_up">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>1</time>
+</anim>
+<anim name="mantis_crackerjack_type_down">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>1</time>
+</anim>
+<anim name="mantis_crackerjack_portrait">
+	<sheet>mantis_crackerjack</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<!--FREE MANTIS CRACKERJACK ABILITY ANIMATIONS-->
+<animSheet name="pheromones_c" w="352" h="32" fw="32" fh="32">people/pheromones_c.png</animSheet>
+<anim name="pheromones_c">
+	<sheet>pheromones_c</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="slashy" w="420" h="35" fw="35" fh="35">people/slashy.png</animSheet>
+<anim name="slashy">
+	<sheet>slashy</sheet>
+	<desc length="12" x="0" y="0"/>
+	<time>0.6</time>
+</anim>
+
+</FTL>
+
 <!-- φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ -->
 <!-- φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ φ -->
 
@@ -3138,7 +3285,7 @@ try this later
 	<sheet>pulsedeep_cannon</sheet>
 	<desc length="35" x="0" y="0"/>
 	<chargedFrame>5</chargedFrame>
-	<fireFrame>6</fireFrame>
+	<fireFrame>34</fireFrame>
 	<firePoint  x="32" y="7"/>
 	<mountPoint x="4" y="48"/>
 </weaponAnim>
@@ -3628,6 +3775,13 @@ try this later
 	<time>0.3</time>
 </anim>
 
+<animSheet name="pulsedeep_cannon_proj" w="36" h="11" fw="36" fh="11">weapon_projectiles/pulsedeep_cannon_proj.png</animSheet>
+<anim name="pulsedeep_cannon_proj">
+	<sheet>pulsedeep_cannon_proj</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+
 <animSheet name="explosion_pulsedeep_cannon" w="1792" h="64" fw="64" fh="64">effects/pulsedeep_cannon_explosion.png</animSheet>
 <anim name="explosion_pulsedeep_cannon">
 	<sheet>explosion_pulsedeep_cannon</sheet>
@@ -3823,6 +3977,13 @@ try this later
 	<sheet>energy_shot2</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>0.3</time>
+</anim>
+
+<animSheet name="debris_large_defend" w="96" h="672" fw="32" fh="672">weapon_projectiles/debris_large_defend.png</animSheet>
+<anim name="debris_large_defend">
+	<sheet>debris_large_defend</sheet>
+	<desc length="3" x="0" y="0"/>
+	<time>1.0</time>
 </anim>
 
 	</FTL>

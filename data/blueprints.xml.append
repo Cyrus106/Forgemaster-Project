@@ -751,6 +751,84 @@
 	<aug name="FM_DRONE_REPAIR_SYSTEM" />
 </shipBlueprint>
 
+<shipBlueprint name="PLAYER_SHIP_TWISTED2" layout="zmt_player_freemantis_suicide" img="zmt_player_freemantis_suicide">
+	<class>Twisted Renegade Free Mantis</class>
+	<name>Queen and Country</name>
+	<desc>These strange Mantis bear the banner of a land old and forgotten, and carry a powerful piece of technology from Ancient Britannia.</desc>
+	<systemList>
+		<artillery power="1" max ="4" room="13" start="false" weapon="ARTILLERY_BEAM" img="room_artillery_3" />
+		<battery power="1" max="2" room="5" start="false" img="room_battery_14" />
+		<cloaking power="1" room="3" start="true" img="fm_room_cloaking_3" />
+		<clonebay power="1" room="8" start="false">
+			<slot>
+				<number>3</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="14" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" max ="8" room="1" start="false" img="room_drones_9" />
+		<engines power="3" room="9" start="true" img="room_engines">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="17" start="false" img="room_hacking_7" />
+		<medbay power="1" room="8" start="true" img="room_medbay_FM_1">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="2" start="false" img="room_mind_4" />
+		<oxygen power="1" room="4" start="true" img="room_oxygen_2" />
+		<pilot power="1" room="0" start="true" img="room_pilot_4">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="15" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max ="8" room="6" start="false" img="room_shields_7">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="7" start="true" />
+		<weapons power="1" max ="8" room="16" start="true" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="2" count="4">
+		<weapon name="LASER_CHARGE_CHAIN" />
+	</weaponList>
+	<droneList drones="0" count="2" />
+	<health amount="30" />
+	<maxPower amount="7" />
+	<crew>
+		<mantis_warlord room="0"/>
+		<engi_separatist room="9"/>
+		<mantis_free room="16"/>
+		<unique_freddy room="7" name="Freddy" />
+	</crew>
+	<aug name="TWISTED_MANTIS_UPGRADER"/>
+</shipBlueprint>
+
+
 <shipBlueprint name="PLAYER_SHIP_TWISTED2_3" layout="zmt_player_mantis_suicide" img="zmt_player_mantis_suicide">
 	<class>Twisted Renegade Mantis</class>
 	<name>Zerg Rush</name>
@@ -2113,6 +2191,21 @@
 	<powerList>
 		<power>4x suffocation speed</power>
 		<power>2x suffocation speed for everyone due to second-hand smoke</power>
+	</powerList>
+</crewBlueprint>
+
+<crewBlueprint name="mantis_crackerjack">
+	<desc>British Elite Free Mantis Crew. A Free Mantis chief with a heavy addiction to the most dangerous beverage in the Multiverse: Tea.</desc>
+	<title>Free Mantis Crackerjack</title>
+	<short>Crackerjack</short>
+	<cost>95</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Active Ability: Enters a most patriotic frenzy, slashing across every enemy in the room while also massively increasing movement speed.</power>
+		<power>Max Health is reduced to 90</power>
+		<power>Takes only 0.7x damage in combat</power>
+		<power>1x movement speed and damage</power>
+		<power>Breaks down doors extremely rapidly</power>
 	</powerList>
 </crewBlueprint>
 
@@ -3715,7 +3808,7 @@
 
 Stats:
 Required Power: 1
-Charge Time: 8 seconds
+Charge Time: 10 seconds
 
 Shot Radius: 35
 Shots Per Charge: 3
@@ -3730,7 +3823,7 @@ Buy/Sell Price: 120~/60~
 
 	<tooltip>test</tooltip>
     <tooltipOverride>Required Power: 1
-Charge Time: 8 seconds
+Charge Time: 10 seconds
 
 Shot Radius: 35
 Shots Per Charge: 3
@@ -3745,7 +3838,7 @@ Breach Chance: 10% (Adjusted: 8%) </tooltipOverride>
     <shots>3</shots>
     <fireChance>2</fireChance>
 	<breachChance>1</breachChance>
-    <cooldown>8</cooldown>
+    <cooldown>10</cooldown>
     <power>1</power>
     <cost>120</cost>
 	<fireTime>0.2</fireTime>
@@ -3808,7 +3901,7 @@ Breach Chance: 10% (Adjusted: 8%) </tooltipOverride>
 
 Stats:
 Required Power: 2
-Charge Time: 8 seconds
+Charge Time: 11 seconds
 
 Shot Radius: 35
 Shots Per Charge: 5
@@ -3823,7 +3916,7 @@ Buy/Sell Price: 160~/80~
 
 	<tooltip>test</tooltip>
 	<tooltipOverride>Required Power: 2
-Charge Time: 8 seconds
+Charge Time: 11 seconds
 
 Shot Radius: 35
 Shots Per Charge: 5
@@ -3838,7 +3931,7 @@ Breach Chance: 10% (Adjusted: 8%)</tooltipOverride>
     <shots>5</shots>
     <fireChance>2</fireChance>
 	<breachChance>1</breachChance>
-    <cooldown>8</cooldown>
+    <cooldown>11</cooldown>
     <power>2</power>
     <cost>160</cost>
 	<fireTime>0.2</fireTime>
@@ -11998,6 +12091,64 @@ Buy/Sell Price: 120~/60~
 
 	</FTL>
 
+	<FTL><!--funny surge/test stuff-->
+		<weaponBlueprint name="BARRAGE_FLAK_SHIELD">
+			<type>LASER</type>
+			<flavorType>Power Surge</flavorType>
+			<drone_targetable>1</drone_targetable>
+			<title>Shield Flak Barrage</title>
+			<short>Shield Flak Barrage</short>
+			<tip>tip_flak</tip>
+			<desc>YOU SHOULD NEVER SEE THIS.</desc>
+			<damage>1</damage>
+			<speed>1</speed>
+			<shots>1</shots>
+			<sp>0</sp>
+			<accuracyMod>-100</accuracyMod>
+			<fireChance>0</fireChance>
+			<breachChance>0</breachChance>
+			<cost>0</cost>
+			<rarity>0</rarity>
+			<image>debris_large</image>
+			<launchSounds>
+				<sound>flak</sound>
+			</launchSounds>
+			<weaponArt>shotgun</weaponArt>
+			<iconImage>flak</iconImage>
+		</weaponBlueprint>
+		<weaponBlueprint name="BARRAGE_FLAK_SHIELD2">
+			<type>BURST</type>
+			<flavorType>Power Surge</flavorType>
+			<drone_targetable>1</drone_targetable>
+			<title>Shield Flak Barrage</title>
+			<short>Shield Flak Barrage</short>
+			<tip>tip_flak</tip>
+			<desc>YOU SHOULD NEVER SEE THIS.</desc>
+			<radius>4200000</radius>
+			<damage>1</damage>
+			<sysDamage>-1</sysDamage>
+			<accuracyMod>-100</accuracyMod>
+			<speed>1</speed>
+			<shots>1</shots>
+			<sp>0</sp>
+			<spin>60</spin>
+			<fireChance>0</fireChance>
+			<breachChance>2</breachChance>
+			<cost>0</cost>
+			<rarity>0</rarity>
+			<projectiles>
+				<projectile count="1" fake="false">debris_large_defend</projectile>
+			</projectiles>
+			<launchSounds>
+				<sound>flak</sound>
+			</launchSounds>
+			<weaponArt>shotgun</weaponArt>
+			<iconImage>flak</iconImage>
+		</weaponBlueprint>
+
+	</FTL>
+
+
 
 <!-- ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝	-->
 <!-- ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝	-->
@@ -12497,6 +12648,23 @@ Buy/Sell Price: 120~/60~
 	<bp>0</bp>
 </augBlueprint>
 
+<augBlueprint name="TWISTED_MANTIS_UPGRADER">
+	<title>Queen's Tea</title>
+	<desc>The preferred beverage of an immortal monarch who rules over the distant cluster of Britannia. Each level of the Life Support system that is powered provides a 15% combat damage boost to all allied crew, but also reduces repair speed by 25%. Can be used to upgrade/convert your mantis crew during storage checks, although her Majesty demands a tax for her power...</desc>
+	<cost>200</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="SHIP_TWISTED_FREEMANTIS">
+	<title>Twisted Free Mantis Cruiser</title>
+	<desc>YOU SHOULD NEVER SEE THIS</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<bp>0</bp>
+</augBlueprint>
+
 <mod:findName type="augBlueprint" name="EX_MEDBAY_SPEED">   <!--PRICE TWEAK. -->
 	 <mod-overwrite:cost>60</mod-overwrite:cost>
 </mod:findName>
@@ -12525,8 +12693,8 @@ Buy/Sell Price: 120~/60~
 
   <augBlueprint name="FM_MODULAR_HULL_ENCASED">
     <title>Encased Systems</title>
-    <desc>+15% sys resist</desc>
-    <cost>40</cost>
+    <desc>+10% sys resist</desc>
+    <cost>65</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
@@ -12865,7 +13033,7 @@ Buy/Sell Price: 120~/60~
 
   <augBlueprint name="FM_MODULAR_HULL_DUSK">
     <title>Depricated Duskbringer Reactor</title>
-    <desc>+25% reload speed and shield recharge speed, your crew stats are reducd by 20% (damage taken +20%)</desc>
+    <desc>+20% reload speed and shield recharge speed, your crew stats are reducd by 20% (damage taken +20%)</desc>
     <cost>110</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
@@ -12913,7 +13081,7 @@ Buy/Sell Price: 120~/60~
 
   <augBlueprint name="FM_MODULAR_HULL_FASTSHIELD">
     <title>Infinitum Cyclo-Barrier</title>
-    <desc>+800% Shield recharge speed, shield limited to lvl 2 (1 bubble), but no shields manning</desc>
+    <desc>+800% Shield recharge speed, shield limited to lvl 4 (2 bubble), but no shields manning</desc>
     <cost>80</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
@@ -12922,7 +13090,7 @@ Buy/Sell Price: 120~/60~
   <augBlueprint name="FM_MODULAR_HULL_FASTWEAPON">
     <title>Infinitum Cyclo-Arsenal</title>
     <desc>+166% Weapon reload speed, weapons limited to lvl 3, no weapons manning</desc>
-    <cost>80</cost>
+    <cost>120</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
@@ -13307,7 +13475,7 @@ At empty beacons provides 4 fleet delay for 15 missiles, but increases general n
 		Breach Chance: 10% (Adjusted: 9%)
 		Stun Chance: 100% (3 seconds long)
 
-		Buy/Sell Price: 126~/63~
+		Buy/Sell Price: 226~/113~
 	</descriptionOverride>
 	<tooltip>One damage per room beam weapon</tooltip>
 	<tooltipOverride>Required Power: 3
@@ -13329,6 +13497,7 @@ At empty beacons provides 4 fleet delay for 15 missiles, but increases general n
 	<ion>2</ion>
 	<noSysDamage/>
 	<hullBust>1</hullBust>
+	<shots>1</shots>
 	<sp>0</sp>
 	<fireChance>1</fireChance>
 	<breachChance>1</breachChance>
@@ -13336,10 +13505,10 @@ At empty beacons provides 4 fleet delay for 15 missiles, but increases general n
 	<cooldown>13</cooldown>
 	<speed>40</speed>
 	<power>3</power>
-	<cost>126</cost>
+	<cost>226</cost>
 	<bp>2</bp>
 	<rarity>0</rarity>
-	<image>plusedeep_cannon_proj</image>
+	<image>pulsedeep_cannon_proj</image>
 	<explosion>explosion_pulsedeep_cannon</explosion>
 	<launchSounds>
 		<sound>energy</sound>
@@ -13403,6 +13572,8 @@ At empty beacons provides 4 fleet delay for 15 missiles, but increases general n
 				<selfHealth>-15</selfHealth>
 				<affectsSelf>true</affectsSelf>
 			</powerEffect>
+		</statBoost>
+	</statBoosts>
 </weaponBlueprint>
 
 <!--

@@ -5,7 +5,7 @@
 	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 		PLAYER SHIP
 	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-	-->	
+	-->
 
 <text name="text_PLAYER_SHIP_FORGEMASTER_1_class">Forgemaster Cruiser</text>
 <text name="text_PLAYER_SHIP_FORGEMASTER_1_name">Magma Heart</text>
@@ -96,10 +96,23 @@
 	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 		BOSSES
 	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-	-->	
+	-->
 
 
 <text name="text_FM_FORGEMASTER_CRUISER_ENEMY_class">Forgemaster Cruiser</text>
 
 <text name="system_temporal_title">Temporal Manipulator</text>
 <text name="system_temporal_desc">Changes the rate of time in one room. Upgrading increases duration and time dilation strength.</text>
+
+
+<!-- WEAPON CRAFTING-->
+<text name="text_CREATE_FM_SHOTGUN_BRONZE_1">Alastair's eyes light up as you make your request. "This, I can absolutely work with. Give me those guns and you'll have yourself a fine weapon before you in no time. I go way back with them, so I guarantee a product of utmost quality in very little time."</text>
+<text name="text_CREATE_FM_SHOTGUN_BRONZE_2">"Flak weapons are among the first I teach any Plated to craft, because they are the first gun I learned to craft. Their versatility lends itself to mistakes, whereas a more precise gun requires a completely perfect barrel." Alastair hoists the gun up on the table and begins dismantling it before you without taking his eyes away from you and continues speaking.
+
+  "Normally I'd leave this task to one of my apprentices, but I particularly like the final product here and prefer to make this one myself." A Plated quietly swoops past, scooping the parts up and taking them to another part of the ship.
+</text>
+<text name="text_CREATE_FM_SHOTGUN_BRONZE_3">With the Flak II dismantled, Alastair turns his attention towards the Crystal weapon. He places his hand on it gently, with clear reverence for the weapon before him. "Although I now know they are no gods, I still have respect for the Crystalline race. Their discovery, in part, made me who I am today.
+
+  The wide array of weapons and the organics of them will impress me until the day I die, and perhaps even in my afterlife if there is such a thing." He looks back to you and gives a firm nod. "This will need some more gentle equipment- I'll be back in a moment," and Alastair disappears into another room, sealing it behind him.
+</text>
+<text name="text_CREATE_FM_SHOTGUN_BRONZE_4">After some time, Alastair returns with the final product. "Aye, this certainly is a favorite of mine. In a way, it tells my story thus far. It is a strange weapon, alright, and I am glad to have made it for you. I hope that you'll bring it back to continue it's story, and with it, my own."</text>
