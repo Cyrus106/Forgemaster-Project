@@ -4382,6 +4382,48 @@
 		</race>
 	</crew>
 
+	<crew> <!-- Ion Missile Hack Drone Crew -->
+						<race name="fm_missile_ion">
+							<animSheet>fm_drone_hack</animSheet>
+							<maxHealth>100</maxHealth>
+							<repairSpeed>0</repairSpeed>
+							<canFight>false</canFight>
+							<canRepair>false</canRepair>
+							<canSabotage>false</canSabotage>
+							<canSuffocate>false</canSuffocate>
+							<fireDamageMultiplier>0</fireDamageMultiplier>
+							<canTeleport>false</canTeleport>
+							<resistsMindControl>true</resistsMindControl>
+							<canTeleport>false</canTeleport>
+							<canMan>false</canMan>
+							<noClone>true</noClone>
+							<noSlot>true</noSlot>
+							<controllable>false</controllable>
+							<selectable>false</selectable>
+							<canPhaseThroughDoors>true</canPhaseThroughDoors>
+							<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+							<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+							<damageMultiplier>0.0</damageMultiplier>
+							<damageTakenMultiplier>0.75</damageTakenMultiplier>
+							<animBase>mantis</animBase>
+							<powerEffect>
+								<cooldown>13</cooldown>
+								<activateWhenReady enemiesOnly="false">true</activateWhenReady>
+	                                <ion>2</ion>
+				                        <friendlyFire>true</friendlyFire>
+				                        <shipFriendlyFire>true</shipFriendlyFire>
+							</powerEffect>
+							<deathSounds>
+								<deathSound>energyDeath</deathSound>
+							</deathSounds>
+							<shootingSounds>
+								<shootingSound>mantisSpit1</shootingSound>
+								<shootingSound>mantisSpit2</shootingSound>
+								<shootingSound>mantisSpit3</shootingSound>
+							</shootingSounds>
+						</race>
+					</crew>
+
 	<crew> <!-- The Forgemaster Crew -->
 		<race name="fm_forgemasterperson">
 			<maxHealth>200</maxHealth>
@@ -13425,6 +13467,15 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<variable name="fm_hull_upgrade_point" op="set" value="0"/>
 		<variable name="fm_hull_capstones" op="set" value="0"/>
 		<variable name="overcharmed_active" op="set" value="0"/>
+		<variable name="overcharmed_charges" op="set" value="0"/>
+		<req name="OVERCHARMED_RELOADING" type="sum">
+			<req type="sum" const="-15">
+				<name>fm_hull_upgrade_point</name>
+			</req>
+			<req type="sum" mult="-1">
+				<name>overcharmed_charges</name>
+			</req>
+		</req>
 		<req name="CAN_INSTALL_CAPSTONE1_TRUE" type="all">
 			<name>FM_MODULAR_HULL</name>
 			<name>CAN_INSTALL_CAPSTONE</name>
