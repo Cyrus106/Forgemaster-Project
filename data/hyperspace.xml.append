@@ -2218,6 +2218,11 @@
 			<name>MINELAUNCHER_2</name>
 		</req>
 
+		<req name="FM_ION_MISSILES" type="all"> <!-- Hermes + Ion II-->
+			<name>MISSILES_3</name>
+			<name>ION_3</name>
+		</req>
+
 	</events>
 
 
@@ -2715,7 +2720,7 @@
 			<name>FM_BOMB_CRYSTAL_BIO_LIST</name>
 			<name>FM_BOMBLAUNCHER_HULL_LIST</name>
 			<name>FM_MINELAUNCHER_BIO_LIST</name>
-
+			<name>FM_ION_MISSILES_LIST</name>
 		</req>
 
 		<req name="FM_EXPLOSIVE_FORGE_LIST_STORAGE" type="all"> <!-- Do you have the ingredients for a Explosive weapon? If so, light up the category option BLUE in the crafting category menu! -->
@@ -4383,46 +4388,46 @@
 	</crew>
 
 	<crew> <!-- Ion Missile Hack Drone Crew -->
-						<race name="fm_missile_ion">
-							<animSheet>fm_drone_hack</animSheet>
-							<maxHealth>100</maxHealth>
-							<repairSpeed>0</repairSpeed>
-							<canFight>false</canFight>
-							<canRepair>false</canRepair>
-							<canSabotage>false</canSabotage>
-							<canSuffocate>false</canSuffocate>
-							<fireDamageMultiplier>0</fireDamageMultiplier>
-							<canTeleport>false</canTeleport>
-							<resistsMindControl>true</resistsMindControl>
-							<canTeleport>false</canTeleport>
-							<canMan>false</canMan>
-							<noClone>true</noClone>
-							<noSlot>true</noSlot>
-							<controllable>false</controllable>
-							<selectable>false</selectable>
-							<canPhaseThroughDoors>true</canPhaseThroughDoors>
-							<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
-							<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
-							<damageMultiplier>0.0</damageMultiplier>
-							<damageTakenMultiplier>0.75</damageTakenMultiplier>
-							<animBase>mantis</animBase>
-							<powerEffect>
-								<cooldown>13</cooldown>
-								<activateWhenReady enemiesOnly="false">true</activateWhenReady>
-	                                <ion>2</ion>
-				                        <friendlyFire>true</friendlyFire>
-				                        <shipFriendlyFire>true</shipFriendlyFire>
-							</powerEffect>
-							<deathSounds>
-								<deathSound>energyDeath</deathSound>
-							</deathSounds>
-							<shootingSounds>
-								<shootingSound>mantisSpit1</shootingSound>
-								<shootingSound>mantisSpit2</shootingSound>
-								<shootingSound>mantisSpit3</shootingSound>
-							</shootingSounds>
-						</race>
-					</crew>
+		<race name="fm_missile_ion">
+			<animSheet>fm_drone_hack</animSheet>
+			<maxHealth>100</maxHealth>
+			<repairSpeed>0</repairSpeed>
+			<canFight>false</canFight>
+			<canRepair>false</canRepair>
+			<canSabotage>false</canSabotage>
+			<canSuffocate>false</canSuffocate>
+			<fireDamageMultiplier>0</fireDamageMultiplier>
+			<canTeleport>false</canTeleport>
+			<resistsMindControl>true</resistsMindControl>
+			<canTeleport>false</canTeleport>
+			<canMan>false</canMan>
+			<noClone>true</noClone>
+			<noSlot>true</noSlot>
+			<controllable>false</controllable>
+			<selectable>false</selectable>
+			<canPhaseThroughDoors>true</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+			<damageMultiplier>0.0</damageMultiplier>
+			<damageTakenMultiplier>0.75</damageTakenMultiplier>
+			<animBase>mantis</animBase>
+			<powerEffect>
+				<cooldown>13</cooldown>
+				<activateWhenReady enemiesOnly="false">true</activateWhenReady>
+				<ion>2</ion>
+				<friendlyFire>true</friendlyFire>
+				<shipFriendlyFire>true</shipFriendlyFire>
+			</powerEffect>
+			<deathSounds>
+				<deathSound>energyDeath</deathSound>
+			</deathSounds>
+			<shootingSounds>
+				<shootingSound>mantisSpit1</shootingSound>
+				<shootingSound>mantisSpit2</shootingSound>
+				<shootingSound>mantisSpit3</shootingSound>
+			</shootingSounds>
+		</race>
+	</crew>
 
 	<crew> <!-- The Forgemaster Crew -->
 		<race name="fm_forgemasterperson">

@@ -137,24 +137,6 @@
 	<event name="RELIMIT_SHIELDS_3">
 		<status type="limit" target="player" system="shields" amount="3"/>
 	</event>
-	<!--overcharmd stuff, if more than 15 notches used-->
-	<event name="OVERCHARMED_EFFECT">
-		<damage amount="0" effect="breach" room="random"/>
-		<damage amount="0" effect="fire" room="random"/>
-		<triggeredEvent name="OVERCHARMED_TRIGGER" event="OVERCHARMED_EFFECT">
-			<playerDamage amount="1" countRepairs="false"/>
-		</triggeredEvent>
-	</event>
-	<event name="OVERCHARMED">
-		<triggeredEvent name="OVERCHARMED_TRIGGER" event="OVERCHARMED_FINISH">
-			<playerDamage amount="1" countRepairs="false"/>
-		</triggeredEvent>
-		<queueEvent>OVERCHARMED_MESSAGE</queueEvent>
-		<loadEvent>FORGEMASTER_PHONE_EVENT_LOAD</loadEvent>
-	</event>
-	<event name="OVERCHARMED_MESSAGE">
-		<text>As you finish installing your modules you notice that you have exeeded the structual limit of the modular hull, causing instability. It appears that due to those structural instabilities it has become quite unstable. Lets hope it won't impeede you too much.</text>
-	</event>
 
 	<event name="MURALS_DAMAGE">
 		<loadEventList first="false" generate="false" seeded="false">
@@ -184,22 +166,17 @@
 			<playerDamage amount="1" countRepairs="false"/>
 		</triggeredEvent>
 	</event>
-	<!--debugging for modular armor-->
-	<event name="MURALS_STOP">
-		<text>stopped murals effect</text>
-		<clearTriggeredEvent name="MURALS_TRIGGER"/>
-	</event>
-	<event name="MURALS_START">
-		<text>activated murals effect</text>
-		<triggeredEvent name="MURALS_TRIGGER" event="MURALS_DAMAGE">
+	<!--overcharmd stuff, if more than 15 notches used-->
+	<event name="OVERCHARMED">
+		<triggeredEvent name="OVERCHARMED_TRIGGER" event="OVERCHARMED_FINISH">
 			<playerDamage amount="1" countRepairs="false"/>
 		</triggeredEvent>
+		<queueEvent>OVERCHARMED_MESSAGE</queueEvent>
+		<loadEvent>FORGEMASTER_PHONE_EVENT_LOAD</loadEvent>
 	</event>
-	<event name="OVERCHARMED_STOP">
-		<text>stopped overcharmed effect</text>
-		<clearTriggeredEvent name="OVERCHARMED_TRIGGER"/>
+	<event name="OVERCHARMED_MESSAGE">
+		<text>As you finish installing your modules you notice that you have exeeded the structual limit of the modular hull, causing instability. It appears that due to those structural instabilities it has become quite unstable. Lets hope it won't impeede you too much.</text>
 	</event>
-
 
 	<event name="OVERCHARMED_BOOM">
 		<variable name="overcharmed_charges" op="add" value="-1"/>
@@ -227,6 +204,23 @@
 			<playerDamage amount="1" countRepairs="false"/>
 		</triggeredEvent>
 	</event>
+
+	<!--debugging for modular armor-->
+	<event name="MURALS_STOP">
+		<text>stopped murals effect</text>
+		<clearTriggeredEvent name="MURALS_TRIGGER"/>
+	</event>
+	<event name="MURALS_START">
+		<text>activated murals effect</text>
+		<triggeredEvent name="MURALS_TRIGGER" event="MURALS_DAMAGE">
+			<playerDamage amount="1" countRepairs="false"/>
+		</triggeredEvent>
+	</event>
+	<event name="OVERCHARMED_STOP">
+		<text>stopped overcharmed effect</text>
+		<clearTriggeredEvent name="OVERCHARMED_TRIGGER"/>
+	</event>
+
 </FTL>
 <FTL>
 	<event name="SURGE_FLAK_DEFEND">

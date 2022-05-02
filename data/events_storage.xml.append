@@ -1514,6 +1514,16 @@
       <event load="OPTION_INVALID"/>
     </choice>
 
+    <choice req="FM_ION_MISSILES_LIST" lvl="1" blue="false" hidden="true" max_group="5">
+      <text>Combine the Hermes Heavy Missile and Ion II to forge the 'Debilitatum' Heavy Missiles.</text>
+      <event load="STORAGE_CHECK_CREATE_FM_ION_MISSILES"/>
+    </choice>
+
+    <choice req="FM_ION_MISSILES_LIST" lvl="0" blue="false" hidden="true" max_group="5">
+      <text>You must have a Hermes Heavy Missile and Ion II to forge this weapon.</text>
+      <event load="OPTION_INVALID"/>
+    </choice>
+
     <!--Back 1 PAGE-->
     <choice req="pilot" lvl="1" max_group="6" hidden="true" blue="false">
       <text>Back 1 Page.</text>
@@ -1693,19 +1703,17 @@
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="LASER_BIO"/>
-            <choice hidden="true">
-              <text>Continue...</text>
+            <loadEventList>
               <event>
-                <text>...</text>
-                <remove name="LASER_FROST_1"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
+                <remove name="LASER_BIO"/>
+                <loadEventList>
+                  <event>
+                    <remove name="LASER_FROST_1"/>
+                    <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
+                  </event>
+                </loadEventList>
               </event>
-            </choice>
+            </loadEventList>
           </event>
         </choice>
       </event>
@@ -4247,6 +4255,38 @@
     <choice hidden="false">
       <text>Nevermind.</text>
       <event load="STORAGE_CHECK_CREATE_EXPLOSIVES_LOAD"/>
+    </choice>
+  </event>
+
+  <event name="STORAGE_CHECK_CREATE_FM_ION_MISSILES">
+    <checkCargo/>
+    <text>Currently viewing the 'Debilitatum' Heavy Missiles.</text>
+    <choice hidden="false" req="FM_ION_MISSILES_LIST" blue="false">
+      <text>Craft the 'Debilitatum' Heavy Missiles</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <weapon name="FM_ION_MISSILES"/>
+        <choice>
+          <text>Continue...</text>
+          <event>
+            <loadEventList>
+              <event>
+                <remove name="MISSILES_3"/>
+                <loadEventList>
+                  <event>
+                    <remove name="ION_3"/>
+                    <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
+                  </event>
+                </loadEventList>
+              </event>
+            </loadEventList>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice hidden="false">
+      <text>Nevermind.</text>
+      <event load="STORAGE_CHECK_CREATE_LASER_LOAD"/>
     </choice>
   </event>
 
