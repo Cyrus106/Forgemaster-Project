@@ -3507,7 +3507,7 @@
 	<event name="FM_BEAM_EXPLOSION_INTERNAL_ADDON_CHECK">
 		<hiddenAug>VALEFOR_EASTER_EGG</hiddenAug>
 
-		<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+		<loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
 	</event>
 
 	<event name="FM_BEAM_EXPLOSION_INTERNAL_NPC_ADDON_CHECK">
@@ -10473,7 +10473,7 @@
 
 	<event name="FM_FS_APARTMENT_107A_DESK_TERMINAL_NEWS_LOAD"> <!--  Recursion call -->
 
-			<loadEvent>FM_FS_APARTMENT_107A_DESK_TERMINAL_NEWS_</loadEvent>
+			<loadEvent>FM_FS_APARTMENT_107A_DESK_TERMINAL_NEWS</loadEvent>
 
 	</event>
 	<event name="FM_FS_APARTMENT_107A_DESK_TERMINAL_NEWS"> <!--  APARTMENT 107A NEWS ARTICLE -->

@@ -2218,7 +2218,7 @@
 			<name>MINELAUNCHER_2</name>
 		</req>
 
-		<req name="FM_ION_MISSILES" type="all"> <!-- Hermes + Ion II-->
+		<req name="FM_ION_MISSILES_LIST" type="all"> <!-- Hermes + Ion II-->
 			<name>MISSILES_3</name>
 			<name>ION_3</name>
 		</req>

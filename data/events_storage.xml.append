@@ -1478,12 +1478,12 @@
       <event load="STORAGE_CHECK_CREATE_EXPLOSIVES_2"/>
     </choice>
     <!--PAGE 2 OPTION-->
-    <choice req="pilot" lvl="1" max_group="6" hidden="true" blue="false">
+    <choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
       <text>Page 2.</text>
       <event load="STORAGE_CHECK_CREATE_EXPLOSIVES_2"/>
     </choice>
 
-    <choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
+    <choice req="pilot" lvl="1" max_group="8" hidden="true" blue="false">
       <text>Nevermind.</text>
       <event load="STORAGE_CHECK_CREATE_LOAD"/>
     </choice>
@@ -1700,20 +1700,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_LASER_ANOMALY_1"/>
+        <removeItem>LASER_BIO</removeItem>
+        <removeItem>LASER_FROST_1</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <loadEventList>
-              <event>
-                <remove name="LASER_BIO"/>
-                <loadEventList>
-                  <event>
-                    <remove name="LASER_FROST_1"/>
-                    <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
-                  </event>
-                </loadEventList>
-              </event>
-            </loadEventList>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -1902,22 +1894,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_LASER_PHOTON"/>
+        <removeItem>LASER_LIGHT</removeItem>
+        <removeItem>LASER_PARTICLE</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="LASER_LIGHT"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="LASER_PARTICLE"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -1936,22 +1918,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_LASER_PHOTON_2"/>
+        <removeItem>LASER_LIGHT_2</removeItem>
+        <removeItem>LASER_PARTICLE_2</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="LASER_LIGHT_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="LASER_PARTICLE_2"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -1970,22 +1942,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_LASER_HUMAN"/>
+        <removeItem>LASER_HEAVY_1</removeItem>
+        <removeItem>LASER_PARTICLE_2</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="LASER_BIO"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="LASER_HEAVY_1"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -2007,22 +1969,12 @@
         <item_modify>
           <item type="scrap" min="-150" max="-150"/>
         </item_modify>
+        <removeItem>LASER_PIERCE_2</removeItem>
+        <removeItem>BOMB_ION</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="BOMB_ION"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="LASER_PIERCE_2"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -2043,23 +1995,15 @@
         <item_modify>
           <item type="scrap" min="-10" max="-10"/>
         </item_modify>
-
+        <remove name="GATLING_ANCIENT"/>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
             <text>...</text>
-            <remove name="GATLING_ANCIENT"/>
+            <weapon name="FM_GATLING_ANCIENT"/>
             <choice hidden="true">
               <text>Continue...</text>
-              <event>
-                <text>... </text>
-                <weapon name="FM_GATLING_ANCIENT"/>
-
-                <choice hidden="true">
-                  <text>...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
+              <event load="STORAGE_CHECK_CREATE_LOAD"/>
             </choice>
           </event>
         </choice>
@@ -2087,22 +2031,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_ENERGY_DISC"/>
+        <removeItem>ENERGY_HULL</removeItem>
+        <removeItem>MINELAUNCHER_1</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="ENERGY_HULL"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="MINELAUNCHER_1"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -2113,22 +2047,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_ENERGY_DISC"/>
+        <removeItem>ENERGY_HULL</removeItem>
+        <removeItem>MINELAUNCHER_2</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="ENERGY_HULL"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="MINELAUNCHER_2"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -2140,22 +2064,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_ENERGY_DISC"/>
+        <removeItem>ENERGY_HULL</removeItem>
+        <removeItem>MINELAUNCHER_FIRE</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="ENERGY_HULL"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="MINELAUNCHER_FIRE"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -2166,22 +2080,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_ENERGY_DISC"/>
+        <removeItem>ENERGY_HULL</removeItem>
+        <removeItem>MINELAUNCHER_STUN</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="ENERGY_HULL"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="MINELAUNCHER_STUN"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -2236,22 +2140,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_CHAINGUN_ION"/>
+        <removeItem>ION_CHARGEGUN</removeItem>
+        <removeItem>LASER_CHAINGUN_2</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="ION_CHARGEGUN"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="LASER_CHAINGUN_2"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -2262,22 +2156,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_CHAINGUN_ION"/>
+        <removeItem>ION_CHARGEGUN</removeItem>
+        <removeItem>LASER_CHAINGUN_2</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="ION_CHARGEGUN_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="LASER_CHAINGUN_2"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -2333,22 +2217,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_PULSE_1"/>
+        <removeItem>ENERGY_1</removeItem>
+        <removeItem>LASER_BURST_2</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="ENERGY_1"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="LASER_BURST_2"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -2364,29 +2238,12 @@
   <event name="STORAGE_CHECK_CREATE_FM_PULSE_2">
     <checkCargo/>
     <text>Currently viewing the Pulse Laser II.</text>
-    <choice hidden="false"  blue="false">
-      <text>Craft the Pulse Laser II.</text>
+    <removeItem>ENERGY_2</removeItem>
+    <removeItem>LASER_BURST_3</removeItem>
+    <choice hidden="true">
+      <text>Continue...</text>
       <event>
-        <text>Proceed with crafting?</text>
-        <weapon name="FM_PULSE_2"/>
-        <choice hidden="true">
-          <text>Continue...</text>
-          <event>
-            <text>...</text>
-            <remove name="ENERGY_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="LASER_BURST_3"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
-          </event>
-        </choice>
+        <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
       </event>
     </choice>
 
@@ -2405,22 +2262,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_PULSE_2_PLAYER"/>
+        <removeItem>ENERGY_2_PLAYER</removeItem>
+        <removeItem>LASER_BURST_3</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="ENERGY_2_PLAYER"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="LASER_BURST_3"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -2441,22 +2288,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_PULSE_3"/>
+        <removeItem>ENERGY_3</removeItem>
+        <removeItem>LASER_BURST_5</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="ENERGY_3"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="LASER_BURST_5"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -2478,22 +2315,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_PULSEDEEP"/>
+        <removeItem>ENERGY_HULL</removeItem>
+        <removeItem>ION_HEAVY</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="ENERGY_HULL"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="ION_HEAVY"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -2525,24 +2352,14 @@
         <text>Proceed with crafting?</text>
         <weapon name="FM_BEAM_MINING_2"/>
         <item_modify>
-          <item type="scrap" min="-220" max="-220"/>
+          <item type="scrap" min="-150" max="-150"/>
         </item_modify>
+        <removeItem>BEAM_LONG_2</removeItem>
+        <removeItem>BEAM_MINING</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="BEAM_LONG_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="BEAM_MINING"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -2564,24 +2381,15 @@
         <item_modify>
           <item type="scrap" min="-50" max="-50"/>
         </item_modify>
+        <removeItem>FM_BEAM_MINING_2</removeItem>
+        <removeItem>FOCUS_2</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="FM_BEAM_MINING_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="FOCUS_2"/>
-                <choice hidden="true">
-                  <text>Continue...</text> <!--Third locked in screen, Continue option, the ONLY text the player can select and see-->
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
+      </event>
       </event>
     </choice>
     <choice hidden="false">
@@ -2601,22 +2409,12 @@
         <item_modify>
           <item type="scrap" min="-50" max="-50"/>
         </item_modify>
+        <removeItem>FM_BEAM_MINING_2</removeItem>
+        <removeItem>FOCUS_3</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="FM_BEAM_MINING_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="FOCUS_3"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -2635,22 +2433,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_BEAM_PARTICLE_PIERCE"/>
+        <removeItem>BEAM_PARTICLE</removeItem>
+        <removeItem>BEAM_PIERCE</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="BEAM_PARTICLE"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="BEAM_PIERCE"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -2673,30 +2461,17 @@
           <item type="missiles" min="-10" max="-10"/>
           <item type="drones" min="-10" max="-10"/>
         </item_modify>
-
+        <removeItem>LOCKED_NANOBOT_DEFENSE_SYSTEM"</removeItem>
+        <removeItem>BEAM_GUILLOTINE_PLAYER</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
             <text>...</text>
-            <remove name="LOCKED_NANOBOT_DEFENSE_SYSTEM"/>
+            <weapon name="FM_BEAM_GUILLOTINE_CHAIN_PLAYER"/>
             <choice hidden="true">
-              <text>Continue...</text>
+              <text>Congrats! Enjoy killing everything.</text>
               <event>
-                <text>...</text>
-                <remove name="BEAM_GUILLOTINE_PLAYER"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event>
-                    <text>...</text>
-                    <weapon name="FM_BEAM_GUILLOTINE_CHAIN_PLAYER"/>
-                    <choice hidden="true">
-                      <text>Congrats! Enjoy killing everything.</text>
-                      <event>
-												<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-											</event>
-                    </choice>
-                  </event>
-                </choice>
+                <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
               </event>
             </choice>
           </event>
@@ -2712,30 +2487,17 @@
           <item type="missiles" min="-10" max="-10"/>
           <item type="drones" min="-10" max="-10"/>
         </item_modify>
-
+        <removeItem>NANOBOT_DEFENSE_SYSTEM"</removeItem>
+        <removeItem>BEAM_GUILLOTINE_PLAYER</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
             <text>...</text>
-            <remove name="NANOBOT_DEFENSE_SYSTEM"/>
+            <weapon name="FM_BEAM_GUILLOTINE_CHAIN_PLAYER"/>
             <choice hidden="true">
-              <text>Continue...</text>
+              <text>Congrats! Enjoy killing everything.</text>
               <event>
-                <text>...</text>
-                <remove name="BEAM_GUILLOTINE_PLAYER"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event>
-                    <text>...</text>
-                    <weapon name="FM_BEAM_GUILLOTINE_CHAIN_PLAYER"/>
-                    <choice hidden="true">
-                      <text>Congrats! Enjoy killing everything.</text>
-                      <event>
-												<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-											</event>
-                    </choice>
-                  </event>
-                </choice>
+                <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
               </event>
             </choice>
           </event>
@@ -2751,30 +2513,17 @@
           <item type="missiles" min="-10" max="-10"/>
           <item type="drones" min="-10" max="-10"/>
         </item_modify>
-
+        <removeItem>HIDDEN IZD_NANOBOT_DEFENSE_SYSTEM</removeItem>
+        <removeItem>BEAM_GUILLOTINE_PLAYER</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
             <text>...</text>
-            <removeItem>HIDDEN IZD_NANOBOT_DEFENSE_SYSTEM</removeItem>
+            <weapon name="FM_BEAM_GUILLOTINE_CHAIN_PLAYER"/>
             <choice hidden="true">
-              <text>Continue...</text>
+              <text>Congrats! Enjoy killing everything.</text>
               <event>
-                <text>...</text>
-                <remove name="BEAM_GUILLOTINE_PLAYER"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event>
-                    <text>...</text>
-                    <weapon name="FM_BEAM_GUILLOTINE_CHAIN_PLAYER"/>
-                    <choice hidden="true">
-                      <text>Congrats! Enjoy killing everything.</text>
-                      <event>
-												<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-											</event>
-                    </choice>
-                  </event>
-                </choice>
+                <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
               </event>
             </choice>
           </event>
@@ -2799,30 +2548,17 @@
           <item type="missiles" min="-10" max="-10"/>
           <item type="drones" min="-10" max="-10"/>
         </item_modify>
-
+        <removeItem>LOCKED_NANOBOT_DEFENSE_SYSTEM"</removeItem>
+        <removeItem>BEAM_GUILLOTINE</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
             <text>...</text>
-            <remove name="LOCKED_NANOBOT_DEFENSE_SYSTEM"/>
+            <weapon name="FM_BEAM_GUILLOTINE_CHAIN"/>
             <choice hidden="true">
-              <text>Continue...</text>
+              <text>Congrats! Enjoy killing everything.</text>
               <event>
-                <text>...</text>
-                <remove name="BEAM_GUILLOTINE"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event>
-                    <text>...</text>
-                    <weapon name="FM_BEAM_GUILLOTINE_CHAIN"/>
-                    <choice hidden="true">
-                      <text>Congrats! Enjoy killing everything.</text>
-                      <event>
-												<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-											</event>
-                    </choice>
-                  </event>
-                </choice>
+                <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
               </event>
             </choice>
           </event>
@@ -2838,30 +2574,17 @@
           <item type="missiles" min="-10" max="-10"/>
           <item type="drones" min="-10" max="-10"/>
         </item_modify>
-
+        <removeItem>NANOBOT_DEFENSE_SYSTEM"</removeItem>
+        <removeItem>BEAM_GUILLOTINE</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
             <text>...</text>
-            <remove name="NANOBOT_DEFENSE_SYSTEM"/>
+            <weapon name="FM_BEAM_GUILLOTINE_CHAIN"/>
             <choice hidden="true">
-              <text>Continue...</text>
+              <text>Congrats! Enjoy killing everything.</text>
               <event>
-                <text>...</text>
-                <remove name="BEAM_GUILLOTINE"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event>
-                    <text>...</text>
-                    <weapon name="FM_BEAM_GUILLOTINE_CHAIN"/>
-                    <choice hidden="true">
-                      <text>Congrats! Enjoy killing everything.</text>
-                      <event>
-												<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-											</event>
-                    </choice>
-                  </event>
-                </choice>
+                <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
               </event>
             </choice>
           </event>
@@ -2877,30 +2600,17 @@
           <item type="missiles" min="-10" max="-10"/>
           <item type="drones" min="-10" max="-10"/>
         </item_modify>
-
+        <removeItem>HIDDEN IZD_NANOBOT_DEFENSE_SYSTEM</removeItem>
+        <removeItem>BEAM_GUILLOTINE_PLAYER</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
             <text>...</text>
-            <removeItem>HIDDEN IZD_NANOBOT_DEFENSE_SYSTEM</removeItem>
+            <weapon name="FM_BEAM_GUILLOTINE_CHAIN_PLAYER"/>
             <choice hidden="true">
-              <text>Continue...</text>
+              <text>Congrats! Enjoy killing everything.</text>
               <event>
-                <text>...</text>
-                <remove name="BEAM_GUILLOTINE"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event>
-                    <text>...</text>
-                    <weapon name="FM_BEAM_GUILLOTINE_CHAIN"/>
-                    <choice hidden="true">
-                      <text>Congrats! Enjoy killing everything.</text>
-                      <event>
-												<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-											</event>
-                    </choice>
-                  </event>
-                </choice>
+                <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
               </event>
             </choice>
           </event>
@@ -2921,22 +2631,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_BEAM_EXPLOSION"/>
+        <removeItem>BOMB_1</removeItem>
+        <removeItem>BEAM_2</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="BOMB_1"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="BEAM_2"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="FM_BEAM_EXPLOSION_INTERNAL_ADDON_CHECK"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -2955,24 +2655,15 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_BEAM_EXPLOSION_EGG"/>
+        <removeItem>BOMB_1</removeItem>
+        <removeItem>BEAM_2</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="BOMB_1"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="BEAM_2"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="FM_BEAM_EXPLOSION_INTERNAL_ADDON_CHECK"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
+      </event>
       </event>
     </choice>
     <choice hidden="false">
@@ -2989,22 +2680,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_BEAM_EXPLOSION_PLAYER"/>
+        <removeItem>BOMB_1</removeItem>
+        <removeItem>BEAM_2_PLAYER</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="BOMB_1"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="BEAM_2_PLAYER"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="FM_BEAM_EXPLOSION_INTERNAL_ADDON_CHECK"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3024,22 +2705,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_BEAM_ION_PIERCE"/>
+        <removeItem>ION_1</removeItem>
+        <removeItem>BEAM_BREACH</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="ION_1"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="BEAM_BREACH"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3050,22 +2721,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_BEAM_ION_PIERCE"/>
+        <removeItem>ION_2</removeItem>
+        <removeItem>BEAM_BREACH</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="ION_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="BEAM_BREACH"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3908,8 +3569,8 @@
   </event>
 
 
+</FTL>
 
-	</FTL>
 
 
 
@@ -3926,22 +3587,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_MISSILES_BURST_FIRE"/>
+        <removeItem>MISSILES_4</removeItem>
+        <removeItem>MISSILES_FIRE</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="MISSILES_4"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="MISSILES_FIRE"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3960,22 +3611,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_MISSILES_BURST_FIRE_PLAYER"/>
+        <removeItem>MISSILES_4</removeItem>
+        <removeItem>MISSILES_FIRE_PLAYER</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="MISSILES_4"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="MISSILES_FIRE_PLAYER"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3994,22 +3635,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_MISSILES_BURST_FIRE_PLAYER"/>
+        <removeItem>MISSILES_4_PLAYER</removeItem>
+        <removeItem>MISSILES_FIRE</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="MISSILES_4_PLAYER"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="MISSILES_FIRE"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -4028,22 +3659,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_MISSILES_BURST_FIRE_MEGA"/>
+        <removeItem>MISSILES_4_PLAYER</removeItem>
+        <removeItem>MISSILES_FIRE_PLAYER</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="MISSILES_4_PLAYER"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="MISSILES_FIRE_PLAYER"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -4062,22 +3683,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_MISSILES_CLOAK_STUN"/>
+        <removeItem>ENERGY_STUN</removeItem>
+        <removeItem>MISSILES_CLOAK</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="ENERGY_STUN"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="MISSILES_CLOAK"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -4088,7 +3699,7 @@
     </choice>
   </event>
 
-  <event name="STORAGE_CHECK_CREATE_FM_MISSILES_CLOAK_STUN">
+  <event name="STORAGE_CHECK_CREATE_FM_MISSILES_CLOAK_STUN_PLAYER">
     <checkCargo/>
     <text>Currently viewing the 'Chernobog' Missile†.</text>
     <choice hidden="false"  blue="false">
@@ -4096,22 +3707,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_MISSILES_CLOAK_STUN_PLAYER"/>
+        <removeItem>ENERGY_STUN_PLAYER</removeItem>
+        <removeItem>MISSILES_CLOAK</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="ENERGY_STUN_PLAYER"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="MISSILES_CLOAK"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -4130,22 +3731,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_BOMB_CRYSTAL_FIRE"/>
+        <removeItem>BOMB_FIRE</removeItem>
+        <removeItem>BOMB_LOCK</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="BOMB_FIRE"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="BOMB_LOCK"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -4164,22 +3755,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_BOMB_CRYSTAL_BIO"/>
+        <removeItem>BOMB_BIO</removeItem>
+        <removeItem>BOMB_LOCK</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="BOMB_BIO"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="BOMB_LOCK"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -4198,22 +3779,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_MINELAUNCHER_HULL"/>
+        <removeItem>LASER_HULL_2</removeItem>
+        <removeItem>MINELAUNCHER_BREACH</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="LASER_HULL_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="MINELAUNCHER_BREACH"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -4232,22 +3803,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_MINELAUNCHER_BIO"/>
+        <removeItem>MISSILES_BIO</removeItem>
+        <removeItem>MINELAUNCHER_2</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="MISSILES_BIO"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="MINELAUNCHER_2"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_EXPLOSIVES_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -4266,27 +3827,19 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_ION_MISSILES"/>
-        <choice>
+        <removeItem>MISSILES_3</removeItem>
+        <removeItem>ION_3</removeItem>
+        <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <loadEventList>
-              <event>
-                <remove name="MISSILES_3"/>
-                <loadEventList>
-                  <event>
-                    <remove name="ION_3"/>
-                    <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
-                  </event>
-                </loadEventList>
-              </event>
-            </loadEventList>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
     </choice>
     <choice hidden="false">
       <text>Nevermind.</text>
-      <event load="STORAGE_CHECK_CREATE_LASER_LOAD"/>
+      <event load="STORAGE_CHECK_CREATE_EXPLOSIVES_LOAD"/>
     </choice>
   </event>
 
