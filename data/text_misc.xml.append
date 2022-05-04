@@ -140,7 +140,9 @@ FM: A COMPONENT for forging the Cerberus Ion[100~], alongside the other COMPONEN
 
 <text name="fm_tip_hull_energy">Tip: Energy weapons are very versatile as they can do both ion and hull damage, but do not damage crew or systems.
 
-FM: A COMPONENT for forging the TARANIS Disc Launcher[130~], alongside the other COMPONENTS Geb, Osiris, Sekhmet, and Anubis. You only need 1 other component</text>
+FM: A COMPONENT for forging the TARANIS Disc Launcher[130~], alongside the other COMPONENTS Geb, Osiris, Sekhmet, and Anubis. You only need 1 other component.
+
+FM: A COMPONENT for forging the Pulsedeep Cannon[80~], alongside the other COMPONENT Heavy Ion.</text>
 
 <text name="fm_tip_minelauncher_1">Tip: Mine Launchers have reasonable status effect chances and fire massive bursts of slow moving mines which pierce all shields.
 
@@ -194,7 +196,9 @@ FM: A COMPONENT for forging the Pulse Laser II [130~], alongside the other COMPO
 
 FM: A COMPONENT for forging the Pulse Laser III [155~], alongside the other COMPONENT Energy III.</text>
 
+<text name="fm_tip_ion_heavy">Tip: For every one point of ion damage, one power bar is removed from the target system and it is then locked for 5 seconds, preventing re-powering. If an ion weapon hits shields, the damage is automatically applied to the Shield System.
 
+FM: A COMPONENT for forging the Pulsedeep Cannon[80~], alongside the other COMPONENT Heavy Ion.</text>
 
 
 <!--    BEAM CRAFT TIPS -->
@@ -248,7 +252,7 @@ FM: A COMPONENT for forging the Kontos Ion Beam[100~], alongside the other COMPO
 
 <text name="fm_tip_beam_breach">Tip: The Breach Beam creates a breach on every tile it hits, and can also pierce a shield layer!
 
-FM: A COMPONENT for forging the Kontos Ion Beam[100~], alongside the other COMPONENT Simple Ion OR Ion Barrage Mark I .</text>
+FM: A COMPONENT for forging the Kontos Ion Beam[100~], alongside the other COMPONENT Simple Ion OR Ion Barrage MK I .</text>
 
 
 <!--    PINPOINT CRAFT TIPS -->
@@ -257,7 +261,9 @@ FM: A COMPONENT for forging the Kontos Ion Beam[100~], alongside the other COMPO
 
 <text name="fm_tip_missiles_3">Tip: Heavy missiles always carry hull-bust attributes, and can be used to take down critical systems when necessary.
 
-FM: A COMPONENT for forging the Parazonium Focus[100~], alongside the other COMPONENT 'Cinquedea' Pinpoint.</text>
+FM: A COMPONENT for forging the Parazonium Focus[100~], alongside the other COMPONENT 'Cinquedea' Pinpoint.
+
+FM: A COMPONENT for forging the 'Debilitatum' Heavy Missiles[80~], alongside the other COMPONENT Ion Barrage MK II.</text>
 
 <text name="fm_tip_focus_chain">Tip: Adaptive weapons increase in damage each time they are fired. The damage increase amount and limit depends on the weapon.
 
@@ -391,6 +397,13 @@ FM: A COMPONENT for forging the 'Ba-Pef' Minelauncher[80~], alongside the other 
 <text name="fm_tip_missiles_bio">Tip: Missiles will ignore all enemy shields, but cost one missile to launch. Enemy defense drones will shoot down incoming missiles.
 
 FM: A COMPONENT for forging the 'Dirty Bomb' Mine Launcher[140~], alongside the other COMPONENT 'Osiris' Mine Launcher.</text>
+
+<!-- 'Debilitatum' Heavy Missiles -->
+
+<text name="fm_tip_ion_3">Tip: For every one point of ion damage, one power bar is removed from the target system and it is then locked for 5 seconds, preventing re-powering. If an ion weapon hits shields, the damage is automatically applied to the Shield System.
+
+FM: A COMPONENT for forging the 'Debilitatum' Heavy Missiles[80~], alongside the other COMPONENT 'Hermes' Heavy Missiles .</text>
+
 
 <!--    ORGANIC CRAFT TIPS -->
 

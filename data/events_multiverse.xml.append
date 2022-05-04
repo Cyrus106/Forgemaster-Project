@@ -2079,6 +2079,15 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 
+		<choice req="FM_ION_MISSILE_LIST" lvl="1" blue="false" hidden="true" max_group="3">
+		  <text>Combine the Hermes Missile and Ion II to forge the 'Debilitatum' Heavy Missiles.[Cost: 80~]</text>
+		  <event load="NPC_STORAGE_CHECK_CREATE_FM_ION_MISSILES"/>
+		</choice>
+
+		<choice req="FM_ION_MISSILES_LIST" lvl="0" blue="false" hidden="true" max_group="3">
+		  <text>You must have a Hermes Missile and Ion II to forge this weapon.</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
 		<!--Back 1 PAGE-->
 		<choice req="pilot" lvl="1" max_group="6" hidden="true" blue="false">
 			<text>Back 1 Page.</text>
@@ -5028,6 +5037,33 @@
 			<event load="FM_FORGE_WEAPON_LOAD"/>
 		</choice>
 	</event>
+
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_ION_MISSILES">
+    <checkCargo/>
+    <text>Currently viewing the 'Debilitatum' Heavy Missiles.</text>
+    <choice hidden="false" req="FM_ION_MISSILES_LIST" blue="false">
+      <text>Craft the 'Debilitatum' Heavy Missiles</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <weapon name="FM_ION_MISSILES"/>
+				<item_modify>
+					<item type="scrap" min="-80" max="-80"/>
+				</item_modify>
+        <removeItem>MISSILES_3</removeItem>
+        <removeItem>ION_3</removeItem>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice hidden="false">
+      <text>Nevermind.</text>
+      <event load="FM_FORGE_WEAPON_LOAD"/>
+    </choice>
+  </event>
 
 	<!--ORGANIC CRAFT CATEGORY-->
 

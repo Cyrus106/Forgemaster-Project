@@ -1150,7 +1150,7 @@
 
 
     <choice req="FM_BEAM_MINING_2_LIST" lvl="1" blue="false" hidden="true" max_group="1">
-      <text>Dissassemble and combine the Pike II and Mining beams to forge the Ishimura Beam.[Cost: 220~]</text>
+      <text>Dissassemble and combine the Pike II and Mining beams to forge the Ishimura Beam.[Cost: 150~]</text>
       <event load="STORAGE_CHECK_CREATE_FM_BEAM_MINING_2"/>
     </choice>
 
@@ -1375,7 +1375,7 @@
     </choice>
 
     <choice req="FM_SHOTGUN_AETHER_LIST" lvl="1" blue="false" hidden="true" max_group="4">
-      <text>Install Aether Tech into your Flak IV. [Cost: 200~]</text>
+      <text>Install Aether Tech into your Flak IV. [Cost: 150~]</text>
       <event load="STORAGE_CHECK_CREATE_FM_SHOTGUN_AETHER"/>
     </choice>
 
@@ -2754,22 +2754,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_FOCUS_FUELED_1"/>
+        <removeItem>MISSILES_3</removeItem>
+        <removeItem>FOCUS_CHAIN</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="MISSILES_3"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="FOCUS_CHAIN"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -2788,22 +2778,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_FOCUS_ENERGY_1"/>
+        <removeItem>ENERGY_1</removeItem>
+        <removeItem>FOCUS_1</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="ENERGY_1"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="FOCUS_1"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -2822,22 +2802,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_FOCUS_ENERGY_2"/>
+        <removeItem>ENERGY_2</removeItem>
+        <removeItem>FOCUS_2</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="ENERGY_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="FOCUS_2"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -2856,22 +2826,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_FOCUS_ENERGY_2_PLAYER"/>
+        <removeItem>ENERGY_2_PLAYER</removeItem>
+        <removeItem>FOCUS_2</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="ENERGY_2_PLAYER"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="FOCUS_2"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -2890,6 +2850,14 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_FOCUS_ENERGY_3"/>
+        <removeItem>ENERGY_3</removeItem>
+        <removeItem>FOCUS_3</removeItem>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
+          </event>
+        </choice>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
@@ -2932,22 +2900,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_SHOTGUN_ANOMALY"/>
+        <removeItem>LASER_FROST_2</removeItem>
+        <removeItem>SHOTGUN_TOXIC</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="LASER_FROST_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="SHOTGUN_TOXIC"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -2966,22 +2924,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_SHOTGUN_ANOMALY_PLAYER"/>
+        <removeItem>LASER_FROST_2_PLAYER</removeItem>
+        <removeItem>SHOTGUN_TOXIC</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="LASER_FROST_2_PLAYER"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="SHOTGUN_TOXIC"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3000,22 +2948,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_SHOTGUN_ANOMALY_PLAYER"/>
+        <removeItem>LASER_FROST_2</removeItem>
+        <removeItem>SHOTGUN_TOXIC_PLAYER</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="LASER_FROST_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="SHOTGUN_TOXIC_PLAYER"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3034,22 +2972,12 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_SHOTGUN_ANOMALY_MEGA"/>
+        <removeItem>LASER_FROST_2_PLAYER</removeItem>
+        <removeItem>SHOTGUN_TOXIC_PLAYER</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="LASER_FROST_2_PLAYER"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="SHOTGUN_TOXIC_PLAYER"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3069,17 +2997,13 @@
         <text>Proceed with crafting?</text>
         <weapon name="FM_SHOTGUN_AETHER"/>
         <item_modify>
-          <item type="scrap" min="-200" max="-200"/>
+          <item type="scrap" min="-150" max="-150"/>
         </item_modify>
+        <removeItem>SHOTGUN_4</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="SHOTGUN_4"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event load="STORAGE_CHECK_CREATE_LOAD"/>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3098,15 +3022,11 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_SHOTGUN_CURSED"/>
+        <removeItem>SHOTGUN_2</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="SHOTGUN_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event load="STORAGE_CHECK_CREATE_LOAD"/>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3135,22 +3055,12 @@
         <item_modify>
           <item type="scrap" min="-10" max="-10"/>
         </item_modify>
+        <removeItem>SHOTGUN_2</removeItem>
+        <removeItem>CRYSTAL_BURST_1</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="SHOTGUN_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="CRYSTAL_BURST_1"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3164,22 +3074,12 @@
         <item_modify>
           <item type="scrap" min="-10" max="-10"/>
         </item_modify>
+        <removeItem>SHOTGUN_2</removeItem>
+        <removeItem>CRYSTAL_BURST_1_RED</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="SHOTGUN_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="CRYSTAL_BURST_1_RED"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3193,22 +3093,12 @@
         <item_modify>
           <item type="scrap" min="-10" max="-10"/>
         </item_modify>
+        <removeItem>SHOTGUN_2</removeItem>
+        <removeItem>CRYSTAL_BURST_2</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="SHOTGUN_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="CRYSTAL_BURST_2"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3222,22 +3112,12 @@
         <item_modify>
           <item type="scrap" min="-10" max="-10"/>
         </item_modify>
+        <removeItem>SHOTGUN_2</removeItem>
+        <removeItem>CRYSTAL_BURST_2_RED</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="SHOTGUN_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="CRYSTAL_BURST_2_RED"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3251,22 +3131,12 @@
         <item_modify>
           <item type="scrap" min="-10" max="-10"/>
         </item_modify>
+        <removeItem>SHOTGUN_2</removeItem>
+        <removeItem>CRYSTAL_HEAVY_1</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="SHOTGUN_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="CRYSTAL_HEAVY_1"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3280,22 +3150,12 @@
         <item_modify>
           <item type="scrap" min="-10" max="-10"/>
         </item_modify>
+        <removeItem>SHOTGUN_2</removeItem>
+        <removeItem>CRYSTAL_HEAVY_1_RED</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="SHOTGUN_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="CRYSTAL_HEAVY_1_RED"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3309,22 +3169,12 @@
         <item_modify>
           <item type="scrap" min="-10" max="-10"/>
         </item_modify>
+        <removeItem>SHOTGUN_2</removeItem>
+        <removeItem>CRYSTAL_HEAVY_2</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="SHOTGUN_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="CRYSTAL_HEAVY_2"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3338,22 +3188,12 @@
         <item_modify>
           <item type="scrap" min="-10" max="-10"/>
         </item_modify>
+        <removeItem>SHOTGUN_2</removeItem>
+        <removeItem>CRYSTAL_HEAVY_2_RED</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="SHOTGUN_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="CRYSTAL_HEAVY_2_RED"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3367,22 +3207,12 @@
         <item_modify>
           <item type="scrap" min="-10" max="-10"/>
         </item_modify>
+        <removeItem>SHOTGUN_2</removeItem>
+        <removeItem>CRYSTAL_STUN</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="SHOTGUN_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="CRYSTAL_STUN"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3396,22 +3226,12 @@
         <item_modify>
           <item type="scrap" min="-10" max="-10"/>
         </item_modify>
+        <removeItem>SHOTGUN_2</removeItem>
+        <removeItem>CRYSTAL_STUN_RED</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="SHOTGUN_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="CRYSTAL_STUN_RED"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3425,22 +3245,12 @@
         <item_modify>
           <item type="scrap" min="-10" max="-10"/>
         </item_modify>
+        <removeItem>SHOTGUN_2</removeItem>
+        <removeItem>CRYSTAL_SHOTGUN</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="SHOTGUN_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="CRYSTAL_SHOTGUN"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3454,22 +3264,12 @@
         <item_modify>
           <item type="scrap" min="-10" max="-10"/>
         </item_modify>
+        <removeItem>SHOTGUN_2</removeItem>
+        <removeItem>CRYSTAL_SHOTGUN_RED</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="SHOTGUN_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="CRYSTAL_SHOTGUN_RED"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3483,22 +3283,12 @@
         <item_modify>
           <item type="scrap" min="-10" max="-10"/>
         </item_modify>
+        <removeItem>SHOTGUN_2</removeItem>
+        <removeItem>CRYSTAL_CHARGEGUN</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="SHOTGUN_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="CRYSTAL_CHARGEGUN"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3512,22 +3302,12 @@
         <item_modify>
           <item type="scrap" min="-10" max="-10"/>
         </item_modify>
+        <removeItem>SHOTGUN_2</removeItem>
+        <removeItem>CRYSTAL_CHARGEGUN_RED</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="SHOTGUN_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="CRYSTAL_CHARGEGUN_RED"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>
@@ -3541,22 +3321,12 @@
         <item_modify>
           <item type="scrap" min="-10" max="-10"/>
         </item_modify>
+        <removeItem>SHOTGUN_2</removeItem>
+        <removeItem>MINELAUNCHER_CRYSTAL</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>...</text>
-            <remove name="SHOTGUN_2"/>
-            <choice hidden="true">
-              <text>Continue...</text>
-              <event>
-                <text>...</text>
-                <remove name="MINELAUNCHER_CRYSTAL"/>
-                <choice hidden="true">
-                  <text>Continue...</text>
-                  <event load="STORAGE_CHECK_CREATE_LOAD"/>
-                </choice>
-              </event>
-            </choice>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>

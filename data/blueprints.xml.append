@@ -13861,6 +13861,9 @@ At empty beacons provides 3 fleet delay for 17 missiles.</mod-overwrite:desc>
 		  <mod-overwrite:tip>fm_tip_laser_vulcan</mod-overwrite:tip>
  </mod:findName>
  -->
+ <mod:findName type = "weaponBlueprint" name = "ION_HEAVY">
+ 		 <mod-overwrite:tip>fm_tip_ion_heavy</mod-overwrite:tip>
+ </mod:findName>
 
 
 <!--    BEAM CRAFT TIPS -->
@@ -14152,6 +14155,11 @@ At empty beacons provides 3 fleet delay for 17 missiles.</mod-overwrite:desc>
 
 <mod:findName type = "weaponBlueprint" name = "MINELAUNCHER_2">
 		 <mod-overwrite:tip>fm_tip_minelauncher_2</mod-overwrite:tip>
+</mod:findName>
+
+<!-- 'Debilitatum' Heavy Missiles-->
+<mod:findName type = "weaponBlueprint" name = "ION_3">
+		<mod-overwrite:tip>fm_tip_ion_3</mod-overwrite:tip>
 </mod:findName>
 
 <!--    ORGANIC CRAFT TIPS -->
