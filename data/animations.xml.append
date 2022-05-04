@@ -3833,7 +3833,7 @@ try this later
 		<time>1.00</time>
 	</anim>
 
-	<animSheet name="fm_crysterino" w="130" h="32" fw="130" fh="32">weapon_projectiles/fm_crysterino.png</animSheet>
+	<animSheet name="fm_crysterino" w="130" h="32" fw="130" fh="32">weapon_projectiles/crysterino.png</animSheet>
 	<anim name="fm_crysterino">
 		<sheet>fm_crysterino</sheet>
 		<desc length="1" x="0" y="0"/>

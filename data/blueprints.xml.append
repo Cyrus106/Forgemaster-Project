@@ -5243,6 +5243,7 @@
 		</tooltipOverride>
 		<damage>2</damage>
 		<ion>2</ion>
+		<fireTime>1</fireTime>
 		<noSysDamage/>
 		<hullBust>1</hullBust>
 		<shots>1</shots>
@@ -12035,11 +12036,11 @@
 		<tip>tip_mine</tip>
 		<title>Shard Launcher</title>
 		<short>Shard</short>
-		<desc>2 magnetic fragments, 2 damage, 10% fire 50% breach, 10sp, 100% accuracy, hullbust, 5s stun</desc>
+		<desc>2 magnetic fragments, 1 damage, 10% fire 50% breach, 10sp, 100% accuracy, hullbust, 5s stun</desc>
 		<tooltip>Fires 1 missile; does 1 damage; pierces all shields.</tooltip>
 		<drone_targetable>0</drone_targetable>
 		<radius>60</radius>
-		<damage>2</damage>
+		<damage>1</damage>
 		<shots>1</shots>
 		<sp>10</sp>
 		<accuracyMod>115</accuracyMod>
@@ -13039,7 +13040,7 @@
 
 	<augBlueprint name="FM_MODULAR_HULL_VENGEANCE3">
     <title>Forgefire Hullguard Cultivator</title>
-    <desc>60% to fire two magnetic fragments that deal 2 damage(10sp, 100% accuracy 10% fire and 50% breach, hullbust)</desc>
+    <desc>60% to fire two magnetic fragments that deal 1 damage(10sp, 100% accuracy 10% fire and 50% breach, hullbust)</desc>
     <cost>80</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
