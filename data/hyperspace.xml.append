@@ -10,6 +10,7 @@
 
 	<events>
 		<eventFile>twisted</eventFile>
+		<eventFile>flakjuice</eventFile>
 	</events>
 </FTL>
 
@@ -3534,7 +3535,8 @@
 		<variable name="rep_forgemaster" op="set" val="0"/> <!--forgemaster Notoriety-->
 		<variabme name="fm_obtainedtwin" op="set" val="0"/> <!--did you get a twin from gunbom?-->
 		<variable name="twisted_blessing_counter" op = "set" value = "0"/> <!--"blessing" counter for twisted monk-->
-
+		<variable name="flak_resource_counter" op = "set" value = "0"/><!--Base flak resource counter for the Flak Forge-->
+		<variable name="flak_special_resource_counter" op = "set" value = "0"/><!--Special flak resource counter for the Flak Forge-->
 	</events>
 
 	<events> <!-- Forgemaster HARMONY ENDING SPACESTATION EVENT REQS -->
@@ -12030,6 +12032,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<mod-append:name>TWISTED_ANCIENT_BOUNTY</mod-append:name>
 			<mod-append:name>CURA_MVBOSS_SPAWNER</mod-append:name>
 			<mod-append:name>TWISTED_MANTIS_UPGRADER</mod-append:name>
+			<mod-append:name>TWISTED_FLAK_FORGE</mod-append:name>
 		</mod:findName>
 	</mod:findLike>
 

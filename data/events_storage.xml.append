@@ -5516,6 +5516,10 @@
       <text>Have a tea party with some of Her Majesty's finest tea.</text>
       <event load="STORAGE_CHECK_AUG_TWISTED_MANTIS_UPGRADE_MENU"/>
     </mod-append:choice>
+    <mod-append:choice req="TWISTED_FLAK_FORGE" blue ="true">
+      <text>Make use of the Flak Forge (Placeholder, you should never see this for now).</text>
+      <event load="STORAGE_CHECK_TWISTED_FLAK_FORGE_MENU"/>
+    </mod-append:choice>
     <mod-append:choice req="TWISTED_ANCIENT_BOUNTY">
       <text>(Aether Bounty Codex) Check the Codex for potential targets.</text>
       <event load="STORAGE_CHECK_TWISTED_ANCIENT_BOUNTY"/>
