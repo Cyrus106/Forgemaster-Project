@@ -3450,8 +3450,8 @@
 
 	<weaponBlueprint name="FM_GATLING_ANCIENT"> <!--Improved Godkiller, costs 10 scrap to make at Forgemaster-->
 		<type>BURST</type>
-		<title>'God Killer'</title>
-		<short>'Killer'</short>
+		<title>'God Killer'[Hull]</title>
+		<short>'Killer'[Hull]</short>
 		<tip>tip_chain_laser</tip>
 		<desc>A weapon capable of killing gods, wielded previously by the tyrant of the entire Multiverse.</desc>
 		<tooltip>Cooldown drops the more it fires. Can chain up to 7 times!</tooltip>
@@ -3491,6 +3491,120 @@
 		<weaponArt>gatling_ancient</weaponArt>
 		<iconImage>laser_chain</iconImage>
 	</weaponBlueprint>
+
+	<weaponBlueprint name="FM_GATLING_ANCIENT_CK"> <!--Improved Godkiller, costs 10 scrap to make at Forgemaster-->
+		<type>BURST</type>
+		<title>'God Killer'[Crew]</title>
+		<short>'Killer'[Crew]</short>
+		<tip>tip_chain_laser</tip>
+		<desc>A weapon capable of killing gods, wielded previously by the tyrant of the entire Multiverse.</desc>
+		<tooltip>Cooldown drops the more it fires. Can chain up to 7 times!</tooltip>
+		<damage>1</damage>
+		<radius>50</radius>
+		<shots>1</shots>
+		<sp>1</sp>
+		<fireChance>10</fireChance>
+		<breachChance>0</breachChance>
+		<cooldown>0</cooldown>
+		<power>2</power>
+		<simultaneousFire>true</simultaneousFire>
+		<fireTime>0.02</fireTime>
+		<cost>9999</cost>
+		<bp>2</bp>
+		<rarity>0</rarity>
+		<spawnCrew>
+			<race>fm_repair_hull</race>
+			<number>1</number>
+			<lifetime>0.1</lifetime>
+			<noSlot>true</noSlot>
+			<statBoosts>
+				<statBoost name="noClone">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+				<statBoost name="maxHealth">
+					<boostType>FLAT</boostType>
+					<amount>-1000000</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+
+			</statBoosts>
+		</spawnCrew>
+		<projectiles>
+			<projectile count="3" fake="false">laser_stun</projectile>
+		</projectiles>
+		<launchSounds>
+			<sound>lightLaser1</sound>
+			<sound>lightLaser2</sound>
+			<sound>lightLaser3</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>gatling_ancient</weaponArt>
+		<iconImage>laser_chain</iconImage>
+	</weaponBlueprint>
+
+	<weaponBlueprint name="FM_GATLING_ANCIENT_ION"> <!--Improved Godkiller, costs 10 scrap to make at Forgemaster-->
+		<type>BURST</type>
+		<title>'God Killer'[Ion]</title>
+		<short>'Killer'[Ion]</short>
+		<tip>tip_chain_laser</tip>
+		<desc>A weapon capable of killing gods, wielded previously by the tyrant of the entire Multiverse.</desc>
+		<tooltip>Cooldown drops the more it fires. Can chain up to 7 times!</tooltip>
+		<damage>0</damage>
+		<ion>1</ion>
+		<radius>50</radius>
+		<shots>1</shots>
+		<sp>1</sp>
+		<fireChance>10</fireChance>
+		<breachChance>0</breachChance>
+		<cooldown>0</cooldown>
+		<power>2</power>
+		<simultaneousFire>true</simultaneousFire>
+		<fireTime>0.02</fireTime>
+		<cost>9999</cost>
+		<bp>2</bp>
+		<rarity>0</rarity>
+		<projectiles>
+			<projectile count="3" fake="false">ion_4_shot</projectile>
+		</projectiles>
+		<launchSounds>
+			<sound>ionShoot1</sound>
+			<sound>ionShoot2</sound>
+			<sound>ionShoot3</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>ionHit1</sound>
+			<sound>ionHit2</sound>
+			<sound>ionHit3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>ionShields1</sound>
+			<sound>ionShields2</sound>
+			<sound>ionShields3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>gatling_ancient</weaponArt>
+		<iconImage>laser_chain</iconImage>
+	</weaponBlueprint>
+
 
 	<weaponBlueprint name="FM_STATUS">
 		<type>BURST</type>
