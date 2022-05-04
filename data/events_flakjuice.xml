@@ -1,9 +1,9 @@
 <event name="STORAGE_CHECK_TWISTED_FLAK_FORGE_MENU"> <!--Placeholder event while I get this script working-->
   <text>What would you like to do?</text>
-    <choice hidden="true">
+    <!--<choice hidden="true">
         <text>Redeem a weapon</text>
         <event load="FLAK_JUICER" />
-    </choice>
+    </choice> causes crashes probably-->
 
     <choice hidden="true">
         <text>Create a flak (WIP)</text>
