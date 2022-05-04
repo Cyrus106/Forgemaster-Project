@@ -108,6 +108,7 @@
 		<mod-append:event name="GIVE_DEATH_LOSTSUN" req="TWISTED_LOSTSUN"/>
 		<mod-append:event name="GIVE_DEPRESSION_TWISTEDLEECH" req="LOCKED_SUPER_DEPRESSION"/>
 		<mod-append:event name="GIVE_RAGE_TWISTEDMONK" req = "TWISTED_BLESSING"/>
+		<mod-append:event name="GIVE_FLAK_TWISTEDLANIUS" req = "TWISTED_FLAK_FORGE"/>
 	</mod:findLike>
 </mod:findName>
 
@@ -138,5 +139,26 @@
             <tooltip>The debt owed to you.</tooltip>
         </triggeredEventBox>
     </triggeredEvent>
+		<loadEvent>START_BEACON_EXPLAIN</loadEvent>
+</event>
+
+<event name="GIVE_FLAK_TWISTEDLANIUS">
+	<triggeredEvent event="TRUENOTHING">
+        <req name="flak_resource_counter" lvl="9999"/>
+        <triggeredEventBox>
+            <image name="statusUI/rage_counter.png" x="10" y="7" w="59" h="26" left="4" right="4" top="4" bottom="4"/>
+            <text type="req" x="42" y="8"/>
+            <tooltip>Your base flak resource.</tooltip>
+        </triggeredEventBox>
+    </triggeredEvent>
+
+		<triggeredEvent event="TRUENOTHING">
+					<req name="flak_special_resource_counter" lvl="9999"/>
+					<triggeredEventBox>
+							<image name="statusUI/rage_counter.png" x="80" y="7" w="59" h="26" left="4" right="4" top="4" bottom="4"/>
+							<text type="req" x="112" y="8"/>
+							<tooltip>Your special Flak resource.</tooltip>
+					</triggeredEventBox>
+			</triggeredEvent>
 		<loadEvent>START_BEACON_EXPLAIN</loadEvent>
 </event>
