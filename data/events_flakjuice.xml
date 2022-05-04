@@ -1,13 +1,13 @@
 <event name="STORAGE_CHECK_TWISTED_FLAK_FORGE_MENU"> <!--Placeholder event while I get this script working-->
   <text>What would you like to do?</text>
-    <!--<choice hidden="true">
+    <choice hidden="true">
         <text>Redeem a weapon</text>
         <event load="FLAK_JUICER" />
-    </choice> causes crashes probably-->
+    </choice>
 
     <choice hidden="true">
         <text>Create a flak (WIP)</text>
-        <event load="FLAK_REDEMPTION">
+        <event load="FLAK_REDEMPTION"/>
     </choice>
 
     <choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
