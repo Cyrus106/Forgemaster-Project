@@ -13053,6 +13053,14 @@
 		<bp>0</bp>
 	</augBlueprint>
 
+	<augBlueprint name="TWISTED_FLAK_FORGE">
+		<title>Flak Forge</title>
+		<desc>These Lanius have perfected the art that is Flak weaponry, and have built this incredible piece of technology in order to convert lesser weapons into their perfect form. Unfortunately, they got their blueprints all mixed up. Hope you're feeling lucky!</desc>
+		<cost>200</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+
 	<mod:findName type="augBlueprint" name="EX_MEDBAY_SPEED">   <!--PRICE TWEAK. -->
 		<mod-overwrite:cost>60</mod-overwrite:cost>
 	</mod:findName>

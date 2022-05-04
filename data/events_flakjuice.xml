@@ -1,0 +1,7 @@
+<event name="STORAGE_CHECK_TWISTED_FLAK_FORGE_MENU"> <!--Placeholder event while I get this script working-->
+  <text>Placeholder Event</text>
+    <choice hidden="true">
+      <text>Go back to the storage check</text>
+      <event load="STORAGE_CHECK" />
+    </choice>
+</event>
