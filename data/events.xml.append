@@ -152,13 +152,17 @@
         </triggeredEventBox>
     </triggeredEvent>
 
-		<triggeredEvent event="TRUENOTHING">
+		<triggeredEvent event="CANNOTUSETRUENOTHINGTWICE">
 					<req name="flak_special_resource_counter" lvl="9999"/>
-					<triggeredEventBox pos="scrap">
+					<triggeredEventBox>
 							<image name="statusUI/rage_counter.png" x="10" y="7" w="59" h="26" left="4" right="4" top="4" bottom="4"/>
 							<text type="req" x="42" y="8"/>
 							<tooltip>Your special flak resource.</tooltip>
 					</triggeredEventBox>
 			</triggeredEvent>
 		<loadEvent>START_BEACON_EXPLAIN</loadEvent>
+</event>
+
+<event name="CANNOTUSETRUENOTHINGTWICE">
+	<event/>
 </event>
