@@ -257,18 +257,6 @@
 <!--Vertaal's Auto-Generated Monstrosity TM, do not look unless you want to experience maxmimum spaghetti!-->
 <event name="FLAK_JUICER">
 	<text>Which weapon would you like to redeem?</text>
-	<choice req="">
-		<text>Redeem a ERROR for 4 Flak Points</text>
-		<event>
-			<text>You have successfully redeemed your weapon</text>
-			<variable name="flak_resource_counter" op="add" val="4" />
-			<remove name="" />
-			<choice hidden="true">
-				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
-			</choice>
-		</event>
-	</choice>
 	<choice req="LASER_BURST_2_A">
 		<text>Redeem a Burst Laser Mark I for 10 Flak Points</text>
 		<event>
