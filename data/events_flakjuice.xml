@@ -83,7 +83,7 @@
         </event>
     </choice>
 
-    <choice hidden="true" req="flak_resource_counter" max_lvl="1" blue="false">
+    <choice hidden="true" req="flak_resource_counter" lvl="0" max_lvl="1" blue="false">
         <text>Spend a small amount of normal flak resource (costs 2 flak points)</text>
         <event load="OPTION_INVALID"/>
     </choice>
@@ -102,7 +102,7 @@
         </event>
     </choice>
 
-    <choice hidden="true" req="flak_resource_counter" max_lvl="2" blue="false">
+    <choice hidden="true" req="flak_resource_counter" lvl="0" max_lvl="2" blue="false">
         <text>Spend a medium amount of normal flak resource (costs 3 flak points)</text>
         <event load="OPTION_INVALID"/>
     </choice>
@@ -120,7 +120,7 @@
         </event>
     </choice>
 
-    <choice hidden="true" req="flak_resource_counter" max_lvl="3" blue="false">
+    <choice hidden="true" req="flak_resource_counter" lvl="0" max_lvl="3" blue="false">
         <text>Spend a large amount of normal flak resource (costs 4 flak points)</text>
         <event load="OPTION_INVALID"/>
     </choice>
@@ -138,7 +138,7 @@
         </event>
     </choice>
 
-    <choice hidden="true" req="flak_resource_counter" max_lvl="4" blue="false">
+    <choice hidden="true" req="flak_resource_counter" lvl="0" max_lvl="4" blue="false">
         <text>Spend a massive amount of normal flak resource (costs 5 flak points)</text>
         <event load="OPTION_INVALID"/>
     </choice>
@@ -184,7 +184,7 @@
       </event>
   </choice>
 
-  <choice hidden="true" req="flak_special_resource_counter" max_lvl="1" blue="false">
+  <choice hidden="true" req="flak_special_resource_counter" lvl="0" max_lvl="1" blue="false">
       <text>Spend a small amount of special flak resource (costs 2 special flak points)</text>
       <event load="OPTION_INVALID"/>
   </choice>
@@ -203,7 +203,7 @@
       </event>
   </choice>
 
-  <choice hidden="true" req="flak_special_resource_counter" max_lvl="2" blue="false">
+  <choice hidden="true" req="flak_special_resource_counter" lvl="0" max_lvl="2" blue="false">
       <text>Spend a medium amount of special flak resource (costs 3 special flak points)</text>
       <event load="OPTION_INVALID"/>
   </choice>
@@ -221,7 +221,7 @@
       </event>
   </choice>
 
-  <choice hidden="true" req="flak_special_resource_counter" max_lvl="3" blue="false">
+  <choice hidden="true" req="flak_special_resource_counter" lvl="0" max_lvl="3" blue="false">
       <text>Spend a large amount of special flak resource (costs 4 special flak points)</text>
       <event load="OPTION_INVALID"/>
   </choice>
@@ -239,7 +239,7 @@
       </event>
   </choice>
 
-  <choice hidden="true" req="flak_special_resource_counter" max_lvl="4" blue="false">
+  <choice hidden="true" req="flak_special_resource_counter" lvl="0" max_lvl="4" blue="false">
       <text>Spend a massive amount of special flak resource (costs 5 special flak points)</text>
       <event load="OPTION_INVALID"/>
   </choice>
