@@ -1262,6 +1262,12 @@
   <name>repair</name>
 </blueprintList>
 
+<blueprintList name="LIST_FM_GATLING_ANCIENT">
+	<name>FM_GATLING_ANCIENT</name>
+	<name>FM_GATLING_ANCIENT_PHOTON</name>
+	<name>FM_GATLING_ANCIENT_ION</name>
+	<name>FM_GATLING_ANCIENT_YES</name>
+</blueprintList>
 <!-- twisted slug stuff-->
 <blueprintList name = "LIST_ABC_AUGMENTEDLANIUS_DRONEREWARD">
 	<name>MENDER</name>
@@ -1525,6 +1531,7 @@
 	<mod-append:name>FM_CHAINGUN_ION</mod-append:name>
 	<mod-append:name>FM_PHASER_SUFFOCATION</mod-append:name>
 	<mod-append:name>FM_LASER_ION_MEGA</mod-append:name>
+	<mod-append:name>LIST_FM_GATLING_ANCIENT</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "BLUELIST_ENERGY">
@@ -1580,8 +1587,8 @@
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "BLUELIST_DRONES_BEAM">
-    <mod-append:name>FM_COMBAT_2_BEAM_PLAYER</mod-append:name>
-	 <mod-append:name>FM_COMBAT_2_LASER_PLAYER</mod-append:name>
+	<mod-append:name>FM_COMBAT_2_BEAM_PLAYER</mod-append:name>
+	<mod-append:name>FM_COMBAT_2_LASER_PLAYER</mod-append:name>
 </mod:findName>
 
 
@@ -1636,6 +1643,7 @@
 	<mod-append:name>FM_BOMB_CRYSTAL_BIO</mod-append:name>
 	<mod-append:name>FM_MINELAUNCHER_BIO</mod-append:name>
 	<mod-append:name>FM_SHOTGUN_HASSIUM</mod-append:name>
+	<mod-append:name>LIST_FM_GATLING_ANCIENT</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "BLUELIST_ANTIBIO_NODAMAGE">
@@ -1654,6 +1662,7 @@
 	<mod-append:name>FM_LASER_DEBT_COLLECT</mod-append:name>
 	<mod-append:name>FM_BOMB_CRYSTAL_BIO</mod-append:name>
 	<mod-append:name>FM_MINELAUNCHER_BIO</mod-append:name>
+	<mod-append:name>LIST_FM_GATLING_ANCIENT</mod-append:name>
 </mod:findName>
 
 
