@@ -13476,6 +13476,9 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<variable name="fm_hull_capstones" op="set" value="0"/>
 		<variable name="overcharmed_active" op="set" value="0"/>
 		<variable name="overcharmed_charges" op="set" value="0"/>
+		<req name="V_POINTS" type="sum" mult="0.2">
+			<name>fm_hull_upgrade_point</name>
+		</req>
 		<req name="OVERCHARMED_RELOADING" type="sum">
 			<req type="sum" const="-15">
 				<name>fm_hull_upgrade_point</name>

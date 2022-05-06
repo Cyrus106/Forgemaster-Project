@@ -1365,11 +1365,11 @@
 <!--FORGEMASTER BP LIST APPENDS-->
 
 <mod:findName type = "blueprintList" name = "LIST_CHECK_TOGGLES_AND_AMPS">
-    <mod-append:name>FM_FOCUS_FUELED_1</mod-append:name>
-    <mod-append:name>FM_FOCUS_FUELED_2</mod-append:name>
-    <mod-append:name>FM_FOCUS_FUELED_3</mod-append:name>
-    <mod-append:name>FM_FOCUS_FUELED_4</mod-append:name>
-    <mod-append:name>FM_FOCUS_FUELED_5</mod-append:name>
+  <mod-append:name>FM_FOCUS_FUELED_1</mod-append:name>
+  <mod-append:name>FM_FOCUS_FUELED_2</mod-append:name>
+  <mod-append:name>FM_FOCUS_FUELED_3</mod-append:name>
+  <mod-append:name>FM_FOCUS_FUELED_4</mod-append:name>
+  <mod-append:name>FM_FOCUS_FUELED_5</mod-append:name>
 	<mod-append:name>FM_ANCALAGON_DEFEND</mod-append:name>
 	<mod-append:name>FM_ANCALAGON_BATTLE</mod-append:name>
 	<mod-append:name>FM_LIST_TOGGLE_COMBAT_2_PLAYER</mod-append:name>
@@ -1379,10 +1379,15 @@
 	<mod-append:name>TWISTED_YINYANG_BOARDER</mod-append:name>
 	<mod-append:name>TWISTED_BATTLETOG2_DEFEND</mod-append:name>
 	<mod-append:name>TWISTED_BATTLETOG2_BOARDER</mod-append:name>
+	<mod-append:name>FM_GATLING_ANCIENT</mod-append:name>
+	<mod-append:name>FM_GATLING_ANCIENT_PHOTON</mod-append:name>
+	<mod-append:name>FM_GATLING_ANCIENT_ION</mod-append:name>
+	<mod-append:name>FM_GATLING_ANCIENT_YES</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "BLUELIST_MINELAUNCHERS_ALL">
 	<mod-append:name>FM_MINELAUNCHER_HULL</mod-append:name>
+	<mod-append:name>FM_MINELAUNCHER_BIO</mod-append:name>
 	<mod-append:name>FM_SHOTGUN_OSMIUM</mod-append:name>
 	<mod-append:name>FM_SHOTGUN_NOBELIUM</mod-append:name>
 	<mod-append:name>FM_SHOTGUN_HASSIUM</mod-append:name>

@@ -3885,8 +3885,22 @@
       <text>(Twisted Surgeon) Set the state of the drone. [Current mode: Boarding]</text>
       <event load="FM_COMBAT_CHECK_SURGEON_BOARDER"/>
     </mod-append:choice>
-
-
+    <mod-append:choice req="FM_GATLING_ANCIENT" lvl="1" max_group="613" hidden="true" blue="false">
+      <text>(God Killer) Set the state of the God Killer. [Current mode: Hull]</text>
+      <event load="FM_COMBAT_CHECK_FM_GATLING_ANCIENT_HULL"/>
+    </mod-append:choice>
+    <mod-append:choice req="FM_GATLING_ANCIENT_PHOTON" lvl="1" max_group="614" hidden="true" blue="false">
+      <text>(God Killer) Set the state of the God Killer. [Current mode: Photon]</text>
+      <event load="FM_COMBAT_CHECK_FM_GATLING_ANCIENT_PHOTON"/>
+    </mod-append:choice>
+    <mod-append:choice req="FM_GATLING_ANCIENT_ION" lvl="1" max_group="615" hidden="true" blue="false">
+      <text>(God Killer) Set the state of the God Killer. [Current mode: Ion]</text>
+      <event load="FM_COMBAT_CHECK_FM_GATLING_ANCIENT_ION"/>
+    </mod-append:choice>
+    <mod-append:choice req="FM_GATLING_ANCIENT_YES" lvl="1" max_group="616" hidden="true" blue="false">
+      <text>(God Killer) Set the state of the God Killer. [Current mode: Yes]</text>
+      <event load="FM_COMBAT_CHECK_FM_GATLING_ANCIENT_YES"/>
+    </mod-append:choice>
     <!-- Move other menus example options to the bottom -->
     <mod:findWithChildLike type="choice" child-type="text">
       <mod:selector>Return to main combat menu.</mod:selector>
@@ -4519,6 +4533,327 @@
     </choice>
   </event>
 
+
+  <!--COMBAT CHECKS EVENTS, FOR THE GOD KILLER
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  COMBAT CHECKS EVENTS, FOR THE GOD KILLER
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+  <event name="FM_COMBAT_CHECK_FM_GATLING_ANCIENT_HULL">
+    <text>What power do you want to set the weapon to?
+      Current stats; [power 2/cooldown 0/damage 1/fire % 100]
+    </text>
+    <choice hidden="true">
+      <text>Set the weapon to 2 power. [power 2/cooldown 0/pops shields/system damage 1 /crew damage 15/fire % 100]</text>
+      <event>
+        <text>You start calibrating the weapon...</text>
+        <remove name="FM_GATLING_ANCIENT"/>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <text>You finish calibrating the weapon successfully.</text>
+            <weapon name="FM_GATLING_ANCIENT_PHOTON"/>
+            <choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK"/>
+            </choice>
+            <choice blue="false" req="loc_flagship" lvl="1" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK_FLAGSHIP"/>
+            </choice>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice hidden="true">
+      <text>Set the weapon to 2 power. [power 2/cooldown 0/ion damage 1/fire % 100]</text>
+      <event>
+        <text>You start calibrating the weapon...</text>
+        <remove name="FM_GATLING_ANCIENT"/>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <text>You finish calibrating the weapon successfully.</text>
+            <weapon name="FM_GATLING_ANCIENT_ION"/>
+            <choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK"/>
+            </choice>
+            <choice blue="false" req="loc_flagship" lvl="1" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK_FLAGSHIP"/>
+            </choice>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice hidden="true">
+      <text>Set the weapon to 2 power. [power 2/cooldown 0/ion damage 1/system damage 1/crew damage 15/lockdown/brach % 50/fire % 50]</text>
+      <event>
+        <text>You start calibrating the weapon...</text>
+        <remove name="FM_GATLING_ANCIENT"/>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <text>You finish calibrating the weapon successfully.</text>
+            <weapon name="FM_GATLING_ANCIENT_YES"/>
+            <choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK"/>
+            </choice>
+            <choice blue="false" req="loc_flagship" lvl="1" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK_FLAGSHIP"/>
+            </choice>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+      <text>Do something else instead.</text>
+      <event load="COMBAT_CHECK"/>
+    </choice>
+    <choice blue="false" req="loc_flagship" lvl="1" max_group="1">
+      <text>Do something else instead.</text>
+      <event load="COMBAT_CHECK_FLAGSHIP"/>
+    </choice>
+  </event>
+  <event name="FM_COMBAT_CHECK_FM_GATLING_ANCIENT_PHOTON">
+    <text>What power do you want to set the weapon to?
+      Current stats; [power 2/cooldown 0/pops shields/system damage 1 /crew damage 15/fire % 100]
+    </text>
+    <choice hidden="true">
+      <text>Set the weapon to 2 power. [power 2/cooldown 0/damage 1/fire % 100]</text>
+      <event>
+        <text>You start calibrating the weapon...</text>
+        <remove name="FM_GATLING_ANCIENT_PHOTON"/>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <text>You finish calibrating the weapon successfully.</text>
+            <weapon name="FM_GATLING_ANCIENT"/>
+            <choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK"/>
+            </choice>
+            <choice blue="false" req="loc_flagship" lvl="1" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK_FLAGSHIP"/>
+            </choice>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice hidden="true">
+      <text>Set the weapon to 2 power. [power 2/cooldown 0/ion damage 1/fire % 100]</text>
+      <event>
+        <text>You start calibrating the weapon...</text>
+        <remove name="FM_GATLING_ANCIENT_PHOTON"/>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <text>You finish calibrating the weapon successfully.</text>
+            <weapon name="FM_GATLING_ANCIENT_ION"/>
+            <choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK"/>
+            </choice>
+            <choice blue="false" req="loc_flagship" lvl="1" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK_FLAGSHIP"/>
+            </choice>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice hidden="true">
+      <text>Set the weapon to 2 power. [power 2/cooldown 0/ion damage 1/system damage 1/crew damage 15/lockdown/brach % 50/fire % 50]</text>
+      <event>
+        <text>You start calibrating the weapon...</text>
+        <remove name="FM_GATLING_ANCIENT_PHOTON"/>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <text>You finish calibrating the weapon successfully.</text>
+            <weapon name="FM_GATLING_ANCIENT_YES"/>
+            <choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK"/>
+            </choice>
+            <choice blue="false" req="loc_flagship" lvl="1" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK_FLAGSHIP"/>
+            </choice>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+      <text>Do something else instead.</text>
+      <event load="COMBAT_CHECK"/>
+    </choice>
+    <choice blue="false" req="loc_flagship" lvl="1" max_group="1">
+      <text>Do something else instead.</text>
+      <event load="COMBAT_CHECK_FLAGSHIP"/>
+    </choice>
+  </event>
+  <event name="FM_COMBAT_CHECK_FM_GATLING_ANCIENT_ION">
+    <text>What power do you want to set the weapon to?
+      Current stats; [power 2/cooldown 0/ion damage 1/fire % 100]
+    </text>
+    <choice hidden="true">
+      <text>Set the weapon to 2 power. [power 2/cooldown 0/damage 1/fire % 100]</text>
+      <event>
+        <text>You start calibrating the weapon...</text>
+        <remove name="FM_GATLING_ANCIENT_ION"/>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <text>You finish calibrating the weapon successfully.</text>
+            <weapon name="FM_GATLING_ANCIENT"/>
+            <choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK"/>
+            </choice>
+            <choice blue="false" req="loc_flagship" lvl="1" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK_FLAGSHIP"/>
+            </choice>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice hidden="true">
+      <text>Set the weapon to 2 power. [power 2/cooldown 0/pops shields/system damage 1 /crew damage 15/fire % 100]</text>
+      <event>
+        <text>You start calibrating the weapon...</text>
+        <remove name="FM_GATLING_ANCIENT_ION"/>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <text>You finish calibrating the weapon successfully.</text>
+            <weapon name="FM_GATLING_ANCIENT_PHOTON"/>
+            <choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK"/>
+            </choice>
+            <choice blue="false" req="loc_flagship" lvl="1" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK_FLAGSHIP"/>
+            </choice>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice hidden="true">
+      <text>Set the weapon to 2 power. [power 2/cooldown 0/ion damage 1/system damage 1/crew damage 15/lockdown/brach % 50/fire % 50]</text>
+      <event>
+        <text>You start calibrating the weapon...</text>
+        <remove name="FM_GATLING_ANCIENT_ION"/>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <text>You finish calibrating the weapon successfully.</text>
+            <weapon name="FM_GATLING_ANCIENT_YES"/>
+            <choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK"/>
+            </choice>
+            <choice blue="false" req="loc_flagship" lvl="1" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK_FLAGSHIP"/>
+            </choice>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+      <text>Do something else instead.</text>
+      <event load="COMBAT_CHECK"/>
+    </choice>
+    <choice blue="false" req="loc_flagship" lvl="1" max_group="1">
+      <text>Do something else instead.</text>
+      <event load="COMBAT_CHECK_FLAGSHIP"/>
+    </choice>
+  </event>
+  <event name="FM_COMBAT_CHECK_FM_GATLING_ANCIENT_YES">
+    <text>What power do you want to set the weapon to?
+      Current stats; [power 2/cooldown 0/ion damage 1/system damage 1/crew damage 15/lockdown/brach % 50/fire % 50]
+    </text>
+    <choice hidden="true">
+      <text>Set the weapon to 2 power. [power 2/cooldown 0/damage 1/fire % 100]</text>
+      <event>
+        <text>You start calibrating the weapon...</text>
+        <remove name="FM_GATLING_ANCIENT_YES"/>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <text>You finish calibrating the weapon successfully.</text>
+            <weapon name="FM_GATLING_ANCIENT"/>
+            <choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK"/>
+            </choice>
+            <choice blue="false" req="loc_flagship" lvl="1" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK_FLAGSHIP"/>
+            </choice>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice hidden="true">
+      <text>Set the weapon to 2 power. [power 2/cooldown 0/pops shields/system damage 1 /crew damage 15/fire % 100]</text>
+      <event>
+        <text>You start calibrating the weapon...</text>
+        <remove name="FM_GATLING_ANCIENT_YES"/>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <text>You finish calibrating the weapon successfully.</text>
+            <weapon name="FM_GATLING_ANCIENT_PHOTON"/>
+            <choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK"/>
+            </choice>
+            <choice blue="false" req="loc_flagship" lvl="1" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK_FLAGSHIP"/>
+            </choice>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice hidden="true">
+      <text>Set the weapon to 2 power. [power 2/cooldown 0/ion damage 1/fire % 100]</text>
+      <event>
+        <text>You start calibrating the weapon...</text>
+        <remove name="FM_GATLING_ANCIENT_YES"/>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <text>You finish calibrating the weapon successfully.</text>
+            <weapon name="FM_GATLING_ANCIENT_ION"/>
+            <choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK"/>
+            </choice>
+            <choice blue="false" req="loc_flagship" lvl="1" max_group="1">
+              <text>Continue...</text>
+              <event load="COMBAT_CHECK_FLAGSHIP"/>
+            </choice>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+      <text>Do something else instead.</text>
+      <event load="COMBAT_CHECK"/>
+    </choice>
+    <choice blue="false" req="loc_flagship" lvl="1" max_group="1">
+      <text>Do something else instead.</text>
+      <event load="COMBAT_CHECK_FLAGSHIP"/>
+    </choice>
+  </event>
 
   <!--COMBAT CHECKS EVENTS, FOR RAMMING SPEED
   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\

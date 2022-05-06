@@ -3492,7 +3492,7 @@
 		<iconImage>laser_chain</iconImage>
 	</weaponBlueprint>
 
-	<weaponBlueprint name="FM_GATLING_ANCIENT_CK"> <!--Improved Godkiller, costs 10 scrap to make at Forgemaster-->
+	<weaponBlueprint name="FM_GATLING_ANCIENT_PHOTON"> <!--Improved Godkiller, costs 10 scrap to make at Forgemaster-->
 		<type>BURST</type>
 		<title>'God Killer'[Crew]</title>
 		<short>'Killer'[Crew]</short>
@@ -3587,6 +3587,53 @@
 			<sound>ionShoot1</sound>
 			<sound>ionShoot2</sound>
 			<sound>ionShoot3</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>ionHit1</sound>
+			<sound>ionHit2</sound>
+			<sound>ionHit3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>ionShields1</sound>
+			<sound>ionShields2</sound>
+			<sound>ionShields3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>gatling_ancient_ion</weaponArt>
+		<iconImage>laser_chain</iconImage>
+	</weaponBlueprint>
+
+	<weaponBlueprint name="FM_GATLING_ANCIENT_YES"> <!--Improved Godkiller, costs 10 scrap to make at Forgemaster-->
+		<type>BURST</type>
+		<title>'God Killer'[Yes]</title>
+		<short>'Killer'[Yes]</short>
+		<tip>tip_chain_laser</tip>
+		<desc>A weapon capable of killing gods, wielded previously by the tyrant of the entire Multiverse.</desc>
+		<tooltip>Cooldown drops the more it fires. Can chain up to 7 times!</tooltip>
+		<damage>0</damage>
+		<ion>1</ion>
+		<sysDamage>1</sysDamage>
+		<persDamage>1</persDamage>
+		<radius>50</radius>
+		<shots>1</shots>
+		<lockdown>1</lockdown>
+		<sp>1</sp>
+		<fireChance>5</fireChance>
+		<breachChance>10</breachChance>
+		<cooldown>0</cooldown>
+		<power>2</power>
+		<simultaneousFire>true</simultaneousFire>
+		<fireTime>0.02</fireTime>
+		<cost>9999</cost>
+		<bp>2</bp>
+		<rarity>0</rarity>
+		<projectiles>
+			<projectile count="3" fake="false">energy_shot</projectile>
+		</projectiles>
+		<launchSounds>
+			<sound>ancient_ion</sound>
 		</launchSounds>
 		<hitShipSounds>
 			<sound>ionHit1</sound>
@@ -13523,304 +13570,246 @@
 <!-- ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂   -->
 <!-- ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂ ♂   -->
 
-	<FTL><!--HYPERSPACE BETA STUFF-->
-<!--HYPERSPACE BETA STUFF-->
-
-<systemBlueprint name="temporal">
-	<type>temporal</type>
-	<title id="system_temporal_title"/>
-	<desc id="system_temporal_desc"/>
-	<startPower>1</startPower>
-	<maxPower>3</maxPower>
-	<rarity>1</rarity>
-	<upgradeCost>
-		<level>40</level> <!-- level 2 -->
-		<level>80</level> <!-- level 3 -->
-		<level>120</level> <!-- imaginary level 4 -->
-	</upgradeCost>
-	<cost>80</cost>
-</systemBlueprint>
+<FTL><!--HYPERSPACE BETA STUFF-->
+	<!--HYPERSPACE BETA STUFF-->
 
 
-<augBlueprint name="FTL_JUMPER_GOOD">
-    <title>Adv. FTL Navigation II</title>
-	<desc>Allows you to jump to any beacon in a sector.</desc>
-    <cost>30</cost>
-    <bp>4</bp>
-    <rarity>0</rarity>
-    <value>0</value>
-    <stackable>false</stackable>
-</augBlueprint>
 
-<augBlueprint name="BOARDER_RECOVERY">
-	<title>Boarder Retro-Thrusters</title>
-	<desc>Non-destroyed boarding drones will be retrieved at the end of combat.</desc>
-	<cost>50</cost>
-	<bp>8</bp>
-	<rarity>0</rarity>
-	<stackable>false</stackable>
-</augBlueprint>
+	<!--
+	<crewBlueprint name="testCrew">
+		<desc>test race</desc>
+		<cost>50</cost>
+		<bp>2</bp>
+		<title>Test</title>
+		<short>Test</short>
+		<rarity>3</rarity>
+		<powerList>
+			<power>test power</power>
+			<power>test power 2</power>
+			<power>test power 3</power>
+		</powerList>
+	</crewBlueprint>	-->
 
-<augBlueprint name="MIND_ORDER">
-	<title>Neural Reins</title>
-	<desc>Allows direct control of mind controlled enemy crew. Also takes ownership of any effects being applied by that crew.</desc>
-	<cost>50</cost>
-	<bp>8</bp>
-	<rarity>0</rarity>
-	<stackable>false</stackable>
-</augBlueprint>
+	<!--
+	<weaponBlueprint name="WEAPON_NAME">
+		...
+		<freeMissileChance>0.0</freeMissileChance>       Probability that the weapon does not consume missiles when fired. Rolled separately from explosive replicator.
+		<descriptionOverride>TEXT</descriptionOverride>  Replaces weapon description with custom text.
+		<hideEventTooltip>false</hideEventTooltip>       Prevents showing event tooltip on hover in events; useful for mystery weapons or weapons whose stats should otherwise not be seen on the event screen.
+		<accuracyMod>0</accuracyMod>                     Changes weapon accuracy. This is equivalent to subtracting accuracyMod from the enemy's evasion for this weapon when performing the evasion check.
+		<noSysDamage>false</noSysDamage>                 If true, then normal damage does not inflict corresponding system damage, only actual <sysDamage> will.
+		<noPersDamage>false</noPersDamage>               If true, then normal damage does not inflict corresponding crew damage, only actual <persDamage> will.
+		<ionBeamFix>false</ionBeamFix>                   If true, prevents ion beams from inflicting ion damage to shields on every frame (instead it will be similar to beams hitting zoltan shields).
+		<simultaneousFire>false</simultaneousFire>       If true, all shots/charges will fire at once, rather than sequentially.
+		<fireTime>0.0</false>                            Overrides the firing animation speed. Default is 1.0 for bombs and charge weapons, and 0.25 for other weapons. Does not apply to beams.
 
-<crewBlueprint name="ghost">
-	<desc>Ghosts of the past crew.</desc>
-	<cost>50</cost>
-	<bp>2</bp>
-	<title>Ghost</title>
-	<short>Ghost</short>
-	<rarity>0</rarity>
-	<powerList>
-		<power>Can survive without oxygen</power>
-		<power>Maximum health is reduced</power>
-		<power>Can phase through doors</power>
-	</powerList>
-</crewBlueprint>
-
-<!--
-<crewBlueprint name="testCrew">
-	<desc>test race</desc>
-	<cost>50</cost>
-	<bp>2</bp>
-	<title>Test</title>
-	<short>Test</short>
-	<rarity>3</rarity>
-	<powerList>
-		<power>test power</power>
-		<power>test power 2</power>
-		<power>test power 3</power>
-	</powerList>
-</crewBlueprint>
--->
-
-<!--
-<weaponBlueprint name="WEAPON_NAME">
-	...
-	<freeMissileChance>0.0</freeMissileChance>       Probability that the weapon does not consume missiles when fired. Rolled separately from explosive replicator.
-	<descriptionOverride>TEXT</descriptionOverride>  Replaces weapon description with custom text.
-	<hideEventTooltip>false</hideEventTooltip>       Prevents showing event tooltip on hover in events; useful for mystery weapons or weapons whose stats should otherwise not be seen on the event screen.
-	<accuracyMod>0</accuracyMod>                     Changes weapon accuracy. This is equivalent to subtracting accuracyMod from the enemy's evasion for this weapon when performing the evasion check.
-	<noSysDamage>false</noSysDamage>                 If true, then normal damage does not inflict corresponding system damage, only actual <sysDamage> will.
-	<noPersDamage>false</noPersDamage>               If true, then normal damage does not inflict corresponding crew damage, only actual <persDamage> will.
-	<ionBeamFix>false</ionBeamFix>                   If true, prevents ion beams from inflicting ion damage to shields on every frame (instead it will be similar to beams hitting zoltan shields).
-	<simultaneousFire>false</simultaneousFire>       If true, all shots/charges will fire at once, rather than sequentially.
-	<fireTime>0.0</false>                            Overrides the firing animation speed. Default is 1.0 for bombs and charge weapons, and 0.25 for other weapons. Does not apply to beams.
-
-	<statBoostChance>0</statBoostChance>             Chance to apply stat boosts as listed below.
-	<statBoosts>                                     Same as statBoosts for crew/augment/etc. - list of all stat boosts to apply.
-		<statBoost>                                  Conditions for stat boost are checked on application. Once applied, the effect is continuous. Use a nested self statboost if you want to check conditions continuously.
-			<duration>10</duration>                  Duration in seconds. If this tag is not included, the stat boost is permanent.
-			...
-		</statBoost>
-	</statBoosts>
-
-	<crewSpawnChance>0</crewSpawnChance>             Chance to spawn the crew listed below.
-	<spawnCrew>                                      Include as many <spawnCrew> tags as you need.
-		<race>human</race>                           Race to spawn.
-		<name>Gun-Born</name>                        Custom name to assign.
-		<number>1</number>                           Number of crew to spawn.
-		<healthPercentage>1.0</healthPercentage>     Fraction of max health to spawn with.
-		<lifetime>30</lifetime>                      After this amount of time passes, the crewmember will die permanently.
-		<statBoosts>                                 Stat boosts (temporary or permanent) to apply to the spawned crewmember. Will check conditions on creation only.
-			...
+		<statBoostChance>0</statBoostChance>             Chance to apply stat boosts as listed below.
+		<statBoosts>                                     Same as statBoosts for crew/augment/etc. - list of all stat boosts to apply.
+			<statBoost>                                  Conditions for stat boost are checked on application. Once applied, the effect is continuous. Use a nested self statboost if you want to check conditions continuously.
+				<duration>10</duration>                  Duration in seconds. If this tag is not included, the stat boost is permanent.
+				...
+			</statBoost>
 		</statBoosts>
-		<noSlot>false</noSlot>                       If true, forces the crewmember to not take up a slot. Good for temporary spawns.
-	</spawnCrew>
 
-	<iconScale>1.0</iconScale>                       Scales the weapon icon in equipment/store/hangar screens.
-</weaponBlueprint>
--->
+		<crewSpawnChance>0</crewSpawnChance>             Chance to spawn the crew listed below.
+		<spawnCrew>                                      Include as many <spawnCrew> tags as you need.
+			<race>human</race>                           Race to spawn.
+			<name>Gun-Born</name>                        Custom name to assign.
+			<number>1</number>                           Number of crew to spawn.
+			<healthPercentage>1.0</healthPercentage>     Fraction of max health to spawn with.
+			<lifetime>30</lifetime>                      After this amount of time passes, the crewmember will die permanently.
+			<statBoosts>                                 Stat boosts (temporary or permanent) to apply to the spawned crewmember. Will check conditions on creation only.
+				...
+			</statBoosts>
+			<noSlot>false</noSlot>                       If true, forces the crewmember to not take up a slot. Good for temporary spawns.
+		</spawnCrew>
 
-<weaponBlueprint name="FM_LASER_BURST_3">
-    <type>BURST</type>
-	<title>Burst Laser MK II</title>
-	<short>Burst II</short>
-	<tip>fm_tip_laser_2</tip>
-	<descriptionOverride>Improved Burst laser weapon. Still very efficeint, but requires more power.
+		<iconScale>1.0</iconScale>                       Scales the weapon icon in equipment/store/hangar screens.
+	</weaponBlueprint>-->
 
-Stats:
-Required Power: 2
-Charge Time: 13 seconds
+	<weaponBlueprint name="FM_LASER_BURST_3">
+		<type>BURST</type>
+		<title>Burst Laser MK II</title>
+		<short>Burst II</short>
+		<tip>fm_tip_laser_2</tip>
+		<descriptionOverride>Improved Burst laser weapon. Still very efficeint, but requires more power.
 
-Shots Per Charge: 3
+			Stats:
+			Required Power: 2
+			Charge Time: 13 seconds
 
-Base Hull Damage: 1
-Total System Damage: 1
-Total Crew Damage: 15
+			Shots Per Charge: 3
 
-Fire Chance: 10%
+			Base Hull Damage: 1
+			Total System Damage: 1
+			Total Crew Damage: 15
 
-Buy/Sell Price: 70~/35~
-</descriptionOverride>
-	<desc>Improved Burst Laser weapon. Still very efficient, but requires more power.</desc>
-	<tooltip>Burst laser; 1 damage, 2 shots. 13 second cooldown.</tooltip>
-	<tooltipOverride>Required Power: 2
-Charge Time: 13 seconds
+			Fire Chance: 10%
 
-Shots Per Charge: 3
+			Buy/Sell Price: 70~/35~
+		</descriptionOverride>
+		<desc>Improved Burst Laser weapon. Still very efficient, but requires more power.</desc>
+		<tooltip>Burst laser; 1 damage, 2 shots. 13 second cooldown.</tooltip>
+		<tooltipOverride>Required Power: 2
+			Charge Time: 13 seconds
 
-Base Hull Damage: 1
-Total System Damage: 1
-Total Crew Damage: 15
+			Shots Per Charge: 3
 
-Fire Chance: 10% </tooltipOverride>
-	<damage>1</damage>
-	<shots>1</shots>
-	<sp>0</sp>
-	<fireChance>1</fireChance>
-	<fireTime>5</fireTime>
-	<breachChance>0</breachChance>
-	<statBoosts>
-		<statBoost name="trueHealAmount">
-			<boostType>FLAT</boostType>
-			<amount>-1</amount>
-			<shipTarget>ALL</shipTarget>
-			<crewTarget>ENEMIES</crewTarget>
-			<droneTarget>CREW</droneTarget>
-			<duration>180</duration>
-			<boostAnim>pheromones_f</boostAnim>
-			<blackList>
-				<fm_ancalagon_battle/>
-				<fm_meatman/>
-			</blackList>
-			<priority>-100</priority>
-		</statBoost>
+			Base Hull Damage: 1
+			Total System Damage: 1
+			Total Crew Damage: 15
 
-		<statBoost name="deathEffect">
-			<boostType>SET</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
-			<value>true</value>
-			<shipTarget>ALL</shipTarget>
-			<crewTarget>ENEMIES</crewTarget>
-			<priority>999999</priority>
-			<blackList>
-				<fm_ancalagon_battle/>
-				<fm_meatman/>
-			</blackList>
-			<deathEffect>
-				<spawnCrew>
-					<race>fm_meatman</race>
-					<number>1</number>
-					<enemy>true</enemy>
-					<noSlot>true</noSlot>
+			Fire Chance: 10%
+		</tooltipOverride>
+		<damage>1</damage>
+		<shots>1</shots>
+		<sp>0</sp>
+		<fireChance>1</fireChance>
+		<fireTime>5</fireTime>
+		<breachChance>0</breachChance>
+		<statBoosts>
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<amount>-1</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<duration>180</duration>
+				<boostAnim>pheromones_f</boostAnim>
+				<blackList>
+					<fm_ancalagon_battle/>
+					<fm_meatman/>
+				</blackList>
+				<priority>-100</priority>
+			</statBoost>
 
-				</spawnCrew>
-			</deathEffect>
-		</statBoost>
+			<statBoost name="deathEffect">
+				<boostType>SET</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
+				<value>true</value>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<priority>999999</priority>
+				<blackList>
+					<fm_ancalagon_battle/>
+					<fm_meatman/>
+				</blackList>
+				<deathEffect>
+					<spawnCrew>
+						<race>fm_meatman</race>
+						<number>1</number>
+						<enemy>true</enemy>
+						<noSlot>true</noSlot>
 
-	</statBoosts>
-	<cooldown>13</cooldown>
-	<power>2</power>
-	<cost>68</cost>
-	<bp>7</bp>
-	<rarity>0</rarity>
-	<projectiles>
-		<projectile count="5" fake="false">fm_bullsquid_spit</projectile>
-	</projectiles>
-	<launchSounds>
-		<sound>lightLaser1</sound>
-		<sound>lightLaser2</sound>
-		<sound>lightLaser3</sound>
-	</launchSounds>
-	<hitShipSounds>
-		<sound>hitHull2</sound>
-		<sound>hitHull3</sound>
-	</hitShipSounds>
-	<hitShieldSounds>
-		<sound>hitShield1</sound>
-		<sound>hitShield2</sound>
-		<sound>hitShield3</sound>
-	</hitShieldSounds>
-	<missSounds>
+					</spawnCrew>
+				</deathEffect>
+			</statBoost>
 
-		<sound>miss</sound>
-	</missSounds>
+		</statBoosts>
+		<cooldown>13</cooldown>
+		<power>2</power>
+		<cost>68</cost>
+		<bp>7</bp>
+		<rarity>0</rarity>
+		<projectiles>
+			<projectile count="5" fake="false">fm_bullsquid_spit</projectile>
+		</projectiles>
+		<launchSounds>
+			<sound>lightLaser1</sound>
+			<sound>lightLaser2</sound>
+			<sound>lightLaser3</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
 
-	<weaponArt>fm_laser_burst_3</weaponArt>
-	<iconImage>laser</iconImage>
-</weaponBlueprint>
+			<sound>miss</sound>
+		</missSounds>
 
-<crewBlueprint name="fm_meatman"> <!--Meaty surprise-->
+		<weaponArt>fm_laser_burst_3</weaponArt>
+		<iconImage>laser</iconImage>
+	</weaponBlueprint>
 
-	<desc>MEAT MEN</desc>
-	<title>MEAT</title>
-	<short>MEAT</short>
-	<cost>50</cost>
-	<bp>2</bp>
-	<rarity>0</rarity>
-	<powerList>
-       <power>: Virus Meat men</power>
-       <power>: Medium well done</power>
-	</powerList>
-	<colorList>
-		<layer>
-		<color r="17" g="255" b="0" a="0.7"/>
-		</layer>
-	</colorList>
-</crewBlueprint>
+	<crewBlueprint name="fm_meatman"> <!--Meaty surprise-->
 
-
-
-
-
-
+		<desc>MEAT MEN</desc>
+		<title>MEAT</title>
+		<short>MEAT</short>
+		<cost>50</cost>
+		<bp>2</bp>
+		<rarity>0</rarity>
+		<powerList>
+			<power>: Virus Meat men</power>
+			<power>: Medium well done</power>
+		</powerList>
+		<colorList>
+			<layer>
+				<color r="17" g="255" b="0" a="0.7"/>
+			</layer>
+		</colorList>
+	</crewBlueprint>
 
 
-<!--
-<shipBlueprint name="PLAYER_SHIP_KESTRAL" layout="kestral" img="kestral">
-	<class>Testrel V2</class>
-	<name>The Testrel V2</name>
-	<desc>This class of ship was decommissioned from Federation service years ago. After a number of refits and updating this classic ship is ready for battle.</desc>
-	<systemList>
-		<pilot power="2" room="0" start="true" img="room_pilot"/>
-		<doors power="2" room="2" start="true" img="room_doors"/>
-		<medbay power="2" room="4" start="true" img="room_medbay"/>
-		<oxygen power="2" room="13" start="true" img="room_oxygen"/>
-		<shields power="8" room="5" start="true" img="room_shields"/>
-		<engines power="5" room="14" start="true" img="room_engines"/>
-		<weapons power="7" room="10" start="true" img="room_weapons"/>
-		<drones power="4" room="1" start="true"/>
-		<teleporter power="2" room="15"	start="true"/>
-		<test power="2" room="8" start="true"/>
-	</systemList>
-	<weaponSlots>4</weaponSlots>
-	<droneSlots>2</droneSlots>
-	<weaponList count="4" missiles="16">
-		<weapon name="MISSILES_2"/>
-		<weapon name="LASER_BURST_3"/>
-		<weapon name="MISSILES_2"/>
-		<weapon name="LASER_BURST_3"/>
-	</weaponList>
-	<droneList count="2" drones="10">
-		<drone name="DRONE_BEAM"/>
-		<drone name="REPAIR"/>
-	</droneList>
-	<health amount="30"/>
-	<maxPower amount ="28"/>
-	<crewCount amount = "1" class="ghost"/>
-	<crewCount amount = "1" class="testCrew"/>
-</shipBlueprint>
--->
+
+
+
+
+
+
+	<!--
+	<shipBlueprint name="PLAYER_SHIP_KESTRAL" layout="kestral" img="kestral">
+		<class>Testrel V2</class>
+		<name>The Testrel V2</name>
+		<desc>This class of ship was decommissioned from Federation service years ago. After a number of refits and updating this classic ship is ready for battle.</desc>
+		<systemList>
+			<pilot power="2" room="0" start="true" img="room_pilot"/>
+			<doors power="2" room="2" start="true" img="room_doors"/>
+			<medbay power="2" room="4" start="true" img="room_medbay"/>
+			<oxygen power="2" room="13" start="true" img="room_oxygen"/>
+			<shields power="8" room="5" start="true" img="room_shields"/>
+			<engines power="5" room="14" start="true" img="room_engines"/>
+			<weapons power="7" room="10" start="true" img="room_weapons"/>
+			<drones power="4" room="1" start="true"/>
+			<teleporter power="2" room="15"	start="true"/>
+			<test power="2" room="8" start="true"/>
+		</systemList>
+		<weaponSlots>4</weaponSlots>
+		<droneSlots>2</droneSlots>
+		<weaponList count="4" missiles="16">
+			<weapon name="MISSILES_2"/>
+			<weapon name="LASER_BURST_3"/>
+			<weapon name="MISSILES_2"/>
+			<weapon name="LASER_BURST_3"/>
+		</weaponList>
+		<droneList count="2" drones="10">
+			<drone name="DRONE_BEAM"/>
+			<drone name="REPAIR"/>
+		</droneList>
+		<health amount="30"/>
+		<maxPower amount ="28"/>
+		<crewCount amount = "1" class="ghost"/>
+		<crewCount amount = "1" class="testCrew"/>
+	</shipBlueprint>	-->
 </FTL>
 
-	<FTL> <!--ADDON COMPATIBILITY-->
+<FTL> <!--ADDON COMPATIBILITY-->
 
-<augBlueprint name="ADDON_INSTALLED_FORGEMASTER">
-    <title>Thank you for installing FORGEMASTER!</title>
-    <desc>Thank you for installing FORGEMASTER!</desc>
-    <cost>0</cost>
-    <rarity>0</rarity>
-    <stackable>false</stackable>
-    <bp>0</bp>
-</augBlueprint>
+	<augBlueprint name="ADDON_INSTALLED_FORGEMASTER">
+		<title>Thank you for installing FORGEMASTER!</title>
+		<desc>Thank you for installing FORGEMASTER!</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+		<bp>0</bp>
+	</augBlueprint>
 
-<augBlueprint name="IZD_NANOBOT_DEFENSE_SYSTEM">
+	<augBlueprint name="IZD_NANOBOT_DEFENSE_SYSTEM">
 		<title>(IZD_NANOBOT_DEFENSE_SYSTEM)</title>
 		<desc>You're not supposed to see this. Signed, The Ghost Hugger</desc>
 		<cost>0</cost>
@@ -13838,506 +13827,486 @@ Fire Chance: 10% </tooltipOverride>
 
 </FTL>
 
-	<FTL> <!-- TOOLTIP OVERRIDE -->
+<FTL> <!-- TOOLTIP OVERRIDE -->
 
-<!--    LASER CRAFT TIPS -->
+	<!--    LASER CRAFT TIPS -->
 
-<!-- TLALOC -->
- <mod:findName type = "weaponBlueprint" name = "LASER_FROST_1">
-		  <mod-overwrite:tip>fm_tip_frost_1</mod-overwrite:tip>
- </mod:findName>
+	<!-- TLALOC -->
+	<mod:findName type = "weaponBlueprint" name = "LASER_FROST_1">
+		<mod-overwrite:tip>fm_tip_frost_1</mod-overwrite:tip>
+	</mod:findName>
 
 
- <mod:findName type = "weaponBlueprint" name = "LASER_BIO">
-		  <mod-overwrite:tip>fm_tip_laser_bio</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "LASER_BIO">
+		<mod-overwrite:tip>fm_tip_laser_bio</mod-overwrite:tip>
+	</mod:findName>
 
-<!--DAHZBOG-->
+	<!--DAHZBOG-->
 
- <mod:findName type = "weaponBlueprint" name = "LASER_FIRE">
-		  <mod-overwrite:tip>fm_tip_laser_fire</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "LASER_FIRE">
+		<mod-overwrite:tip>fm_tip_laser_fire</mod-overwrite:tip>
+	</mod:findName>
 
- <!--DECAYSER-->
-  <mod:findName type = "weaponBlueprint" name = "ION_PIERCE_2">
-		  <mod-overwrite:tip>fm_tip_decayser</mod-overwrite:tip>
- </mod:findName>
+	<!--DECAYSER-->
+	<mod:findName type = "weaponBlueprint" name = "ION_PIERCE_2">
+		<mod-overwrite:tip>fm_tip_decayser</mod-overwrite:tip>
+	</mod:findName>
 
- <!-- PHOTON I -->
+	<!-- PHOTON I -->
 
-  <mod:findName type = "weaponBlueprint" name = "LASER_LIGHT">
-		  <mod-overwrite:tip>fm_tip_laser_light</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "LASER_LIGHT">
+		<mod-overwrite:tip>fm_tip_laser_light</mod-overwrite:tip>
+	</mod:findName>
 
-  <mod:findName type = "weaponBlueprint" name = "LASER_PARTICLE">
-		  <mod-overwrite:tip>fm_tip_laser_particle</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "LASER_PARTICLE">
+		<mod-overwrite:tip>fm_tip_laser_particle</mod-overwrite:tip>
+	</mod:findName>
 
- <!-- PHOTON II -->
+	<!-- PHOTON II -->
 
-  <mod:findName type = "weaponBlueprint" name = "LASER_LIGHT_2">
-		  <mod-overwrite:tip>fm_tip_laser_light_2</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "LASER_LIGHT_2">
+		<mod-overwrite:tip>fm_tip_laser_light_2</mod-overwrite:tip>
+	</mod:findName>
 
-  <mod:findName type = "weaponBlueprint" name = "LASER_PARTICLE_2">
-		  <mod-overwrite:tip>fm_tip_laser_particle_2</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "LASER_PARTICLE_2">
+		<mod-overwrite:tip>fm_tip_laser_particle_2</mod-overwrite:tip>
+	</mod:findName>
 
-<!-- REBEL RIPPER -->
+	<!-- REBEL RIPPER -->
 
- <mod:findName type = "weaponBlueprint" name = "LASER_HEAVY_1">
-		  <mod-overwrite:tip>fm_tip_laser_heavy_1</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "LASER_HEAVY_1">
+		<mod-overwrite:tip>fm_tip_laser_heavy_1</mod-overwrite:tip>
+	</mod:findName>
 
- <!-- ABSOLUTION -->
-  <mod:findName type = "weaponBlueprint" name = "BOMB_ION">
-		  <mod-overwrite:tip>fm_tip_bomb_ion</mod-overwrite:tip>
- </mod:findName>
+	<!-- ABSOLUTION -->
+	<mod:findName type = "weaponBlueprint" name = "BOMB_ION">
+		<mod-overwrite:tip>fm_tip_bomb_ion</mod-overwrite:tip>
+	</mod:findName>
 
-  <mod:findName type = "weaponBlueprint" name = "LASER_PIERCE_2">
-		  <mod-overwrite:tip>fm_tip_laser_pierce_2</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "LASER_PIERCE_2">
+		<mod-overwrite:tip>fm_tip_laser_pierce_2</mod-overwrite:tip>
+	</mod:findName>
 
-<!--    ION CRAFT TIPS -->
+	<!--    ION CRAFT TIPS -->
 
-<!-- CERBERUS -->
+	<!-- CERBERUS -->
 
-<mod:findName type = "weaponBlueprint" name = "ION_FIRE">
-		 <mod-overwrite:tip>fm_tip_ion_fire</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "ION_FIRE">
+		<mod-overwrite:tip>fm_tip_ion_fire</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "ION_TRI">
-		  <mod-overwrite:tip>fm_tip_ion_tri</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "ION_TRI">
+		<mod-overwrite:tip>fm_tip_ion_tri</mod-overwrite:tip>
+	</mod:findName>
 
 
-<!-- TARANIS -->
+	<!-- TARANIS -->
 
-<mod:findName type = "weaponBlueprint" name = "ENERGY_HULL">
-		 <mod-overwrite:tip>fm_tip_hull_energy</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "ENERGY_HULL">
+		<mod-overwrite:tip>fm_tip_hull_energy</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "MINELAUNCHER_1">
-<mod-overwrite:desc>Mine Launchers charge quickly and fire a burst of slow moving projectiles.
+	<mod:findName type = "weaponBlueprint" name = "MINELAUNCHER_1">
+		<mod-overwrite:desc>Mine Launchers charge quickly and fire a burst of slow moving projectiles.
 
-At empty beacons provides 2 fleet delay for 13 missiles.</mod-overwrite:desc>
-		  <mod-overwrite:tip>fm_tip_minelauncher_1</mod-overwrite:tip>
- </mod:findName>
+			At empty beacons provides 2 fleet delay for 13 missiles.
+		</mod-overwrite:desc>
+		<mod-overwrite:tip>fm_tip_minelauncher_1</mod-overwrite:tip>
+	</mod:findName>
 
- <mod:findName type = "weaponBlueprint" name = "MINELAUNCHER_2">
- <mod-overwrite:desc>Mine Launchers charge quickly and fire a burst of slow moving projectiles.
+	<mod:findName type = "weaponBlueprint" name = "MINELAUNCHER_2">
+		<mod-overwrite:desc>Mine Launchers charge quickly and fire a burst of slow moving projectiles.
 
-At empty beacons provides 2 fleet delay for 10 missiles.</mod-overwrite:desc>
-		  <mod-overwrite:tip>fm_tip_minelauncher_2</mod-overwrite:tip>
- </mod:findName>
+			At empty beacons provides 2 fleet delay for 10 missiles.
+		</mod-overwrite:desc>
+		<mod-overwrite:tip>fm_tip_minelauncher_2</mod-overwrite:tip>
+	</mod:findName>
 
- <mod:findName type = "weaponBlueprint" name = "MINELAUNCHER_FIRE">
- <mod-overwrite:desc>Mine Launchers charge quickly and fire a burst of slow moving projectiles. Modified variant that always starts fires.
+	<mod:findName type = "weaponBlueprint" name = "MINELAUNCHER_FIRE">
+		<mod-overwrite:desc>Mine Launchers charge quickly and fire a burst of slow moving projectiles. Modified variant that always starts fires.
 
-At empty beacons provides 3 fleet delay for 17 missiles.</mod-overwrite:desc>
-		  <mod-overwrite:tip>fm_tip_minelauncher_fire</mod-overwrite:tip>
- </mod:findName>
+			At empty beacons provides 3 fleet delay for 17 missiles.
+		</mod-overwrite:desc>
+		<mod-overwrite:tip>fm_tip_minelauncher_fire</mod-overwrite:tip>
+	</mod:findName>
 
-  <mod:findName type = "weaponBlueprint" name = "MINELAUNCHER_STUN">
-  <mod-overwrite:desc>Mine Launchers charge quickly and fire a burst of slow moving projectiles. Modified variant that stuns crew for a long time.
+	<mod:findName type = "weaponBlueprint" name = "MINELAUNCHER_STUN">
+		<mod-overwrite:desc>Mine Launchers charge quickly and fire a burst of slow moving projectiles. Modified variant that stuns crew for a long time.
 
-At empty beacons provides 3 fleet delay for 17 missiles.</mod-overwrite:desc>
-		  <mod-overwrite:tip>fm_tip_minelauncher_stun</mod-overwrite:tip>
- </mod:findName>
+			At empty beacons provides 3 fleet delay for 17 missiles.
+		</mod-overwrite:desc>
+		<mod-overwrite:tip>fm_tip_minelauncher_stun</mod-overwrite:tip>
+	</mod:findName>
 
-<!-- VESTA -->
+	<!-- VESTA -->
 
-  <!-- GOES IN dlcBlueprints.xml!!
-<mod:findName type = "weaponBlueprint" name = "ION_CHARGEGUN">
-		 <mod-overwrite:tip>fm_tip_ion_charger_1</mod-overwrite:tip>
- </mod:findName>
-  -->
+	<mod:findName type = "weaponBlueprint" name = "ION_CHARGEGUN_2">
+		<mod-overwrite:tip>fm_tip_ion_charger_2</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "ION_CHARGEGUN_2">
-		 <mod-overwrite:tip>fm_tip_ion_charger_2</mod-overwrite:tip>
- </mod:findName>
+	<!-- EXIDIA -->
+	<mod:findName type = "weaponBlueprint" name = "SHOTGUN_3">
+		<mod-overwrite:tip>fm_tip_shotgun_3</mod-overwrite:tip>
+	</mod:findName>
 
- <!-- EXIDIA -->
- <mod:findName type = "weaponBlueprint" name = "SHOTGUN_3">
-		 <mod-overwrite:tip>fm_tip_shotgun_3</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "ENERGY_CHARGEGUN">
+		<mod-overwrite:tip>fm_tip_energy_charger</mod-overwrite:tip>
+	</mod:findName>
 
-  <mod:findName type = "weaponBlueprint" name = "ENERGY_CHARGEGUN">
-		 <mod-overwrite:tip>fm_tip_energy_charger</mod-overwrite:tip>
- </mod:findName>
+	<!--   PULSE -->
+	<mod:findName type = "weaponBlueprint" name = "LASER_BURST_2">
+		<mod-overwrite:tip>fm_tip_laser_1</mod-overwrite:tip>
+	</mod:findName>
 
-<!--   PULSE -->
- <mod:findName type = "weaponBlueprint" name = "LASER_BURST_2">
-		 <mod-overwrite:tip>fm_tip_laser_1</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "LASER_BURST_3">
+		<mod-overwrite:tip>fm_tip_laser_2</mod-overwrite:tip>
+	</mod:findName>
 
-  <mod:findName type = "weaponBlueprint" name = "LASER_BURST_3">
-		 <mod-overwrite:tip>fm_tip_laser_2</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "LASER_BURST_5">
+		<mod-overwrite:tip>fm_tip_laser_3</mod-overwrite:tip>
+	</mod:findName>
 
-  <mod:findName type = "weaponBlueprint" name = "LASER_BURST_5">
-		 <mod-overwrite:tip>fm_tip_laser_3</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "ION_HEAVY">
+		<mod-overwrite:tip>fm_tip_ion_heavy</mod-overwrite:tip>
+	</mod:findName>
 
-  <!-- GOES IN dlcBlueprints.xml!!
-<mod:findName type = "weaponBlueprint" name = "LASER_CHAINGUN_2">
-		  <mod-overwrite:tip>fm_tip_laser_vulcan</mod-overwrite:tip>
- </mod:findName>
- -->
- <mod:findName type = "weaponBlueprint" name = "ION_HEAVY">
- 		 <mod-overwrite:tip>fm_tip_ion_heavy</mod-overwrite:tip>
- </mod:findName>
 
+	<!--    BEAM CRAFT TIPS -->
 
-<!--    BEAM CRAFT TIPS -->
+	<!-- ISHIMURA -->
 
-<!-- ISHIMURA -->
+	<mod:findName type = "weaponBlueprint" name = "BEAM_MINING">
+		<mod-overwrite:tip>fm_tip_beam_mining</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "BEAM_MINING">
-		 <mod-overwrite:tip>fm_tip_beam_mining</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "BEAM_LONG_2">
+		<mod-overwrite:tip>fm_tip_beam_long_2</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "BEAM_LONG_2">
-		  <mod-overwrite:tip>fm_tip_beam_long_2</mod-overwrite:tip>
- </mod:findName>
 
 
 
 
+	<!-- EARSPOON -->
 
-<!-- EARSPOON -->
+	<mod:findName type = "weaponBlueprint" name = "BEAM_PARTICLE">
+		<mod-overwrite:tip>fm_tip_beam_particle</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "BEAM_PARTICLE">
-		 <mod-overwrite:tip>fm_tip_beam_particle</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "BEAM_PIERCE">
+		<mod-overwrite:tip>fm_tip_beam_pierce</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "BEAM_PIERCE">
-		  <mod-overwrite:tip>fm_tip_beam_pierce</mod-overwrite:tip>
- </mod:findName>
+	<!-- MURDEROUS -->
 
-<!-- MURDEROUS -->
+	<mod:findName type = "weaponBlueprint" name = "BEAM_GUILLOTINE">
+		<mod-overwrite:tip>fm_tip_beam_guillotine</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "BEAM_GUILLOTINE">
-		 <mod-overwrite:tip>fm_tip_beam_guillotine</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "BEAM_GUILLOTINE_PLAYER">
+		<mod-overwrite:tip>fm_tip_beam_guillotine</mod-overwrite:tip>
+	</mod:findName>
 
- <mod:findName type = "weaponBlueprint" name = "BEAM_GUILLOTINE_PLAYER">
-		 <mod-overwrite:tip>fm_tip_beam_guillotine</mod-overwrite:tip>
- </mod:findName>
 
 
+	<!-- VALEFOR -->
 
-<!-- VALEFOR -->
+	<mod:findName type = "weaponBlueprint" name = "BOMB_1">
+		<mod-overwrite:tip>fm_tip_bomb_1</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "BOMB_1">
-		 <mod-overwrite:tip>fm_tip_bomb_1</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "BEAM_2">
+		<mod-overwrite:tip>fm_tip_beam_2</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "BEAM_2">
-		  <mod-overwrite:tip>fm_tip_beam_2</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "BEAM_2_PLAYER">
+		<mod-overwrite:tip>fm_tip_beam_2</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "BEAM_2_PLAYER">
-		  <mod-overwrite:tip>fm_tip_beam_2</mod-overwrite:tip>
- </mod:findName>
+	<!-- KONTOS -->
 
-<!-- KONTOS -->
+	<mod:findName type = "weaponBlueprint" name = "ION_1">
+		<mod-overwrite:tip>fm_tip_ion_1</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "ION_1">
-		 <mod-overwrite:tip>fm_tip_ion_1</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "ION_2">
+		<mod-overwrite:tip>fm_tip_ion_2</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "ION_2">
-		 <mod-overwrite:tip>fm_tip_ion_2</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "BEAM_BREACH">
+		<mod-overwrite:tip>fm_tip_beam_breach</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "BEAM_BREACH">
-		  <mod-overwrite:tip>fm_tip_beam_breach</mod-overwrite:tip>
- </mod:findName>
 
+	<!--    PINPOINT CRAFT TIPS -->
 
-<!--    PINPOINT CRAFT TIPS -->
+	<!-- PARAZONIUM -->
 
-<!-- PARAZONIUM -->
+	<mod:findName type = "weaponBlueprint" name = "MISSILES_3">
+		<mod-overwrite:tip>fm_tip_missiles_3</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "MISSILES_3">
-		 <mod-overwrite:tip>fm_tip_missiles_3</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "FOCUS_CHAIN">
+		<mod-overwrite:tip>fm_tip_focus_chain</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "FOCUS_CHAIN">
-		 <mod-overwrite:tip>fm_tip_focus_chain</mod-overwrite:tip>
-</mod:findName>
+	<!-- EBONY -->
 
-<!-- EBONY -->
+	<mod:findName type = "weaponBlueprint" name = "ENERGY_1">
+		<mod-overwrite:tip>fm_tip_energy_1</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "ENERGY_1">
-		 <mod-overwrite:tip>fm_tip_energy_1</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "FOCUS_1">
+		<mod-overwrite:tip>fm_tip_focus_1</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "FOCUS_1">
-		 <mod-overwrite:tip>fm_tip_focus_1</mod-overwrite:tip>
-</mod:findName>
+	<!-- HEMLOCK + TERRA NOVA -->
 
-<!-- HEMLOCK + TERRA NOVA -->
+	<mod:findName type = "weaponBlueprint" name = "ENERGY_2">
+		<mod-overwrite:tip>fm_tip_energy_2</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "ENERGY_2">
-		 <mod-overwrite:tip>fm_tip_energy_2</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "ENERGY_2_PLAYER">
+		<mod-overwrite:tip>fm_tip_energy_2</mod-overwrite:tip>
+	</mod:findName>
 
- <mod:findName type = "weaponBlueprint" name = "ENERGY_2_PLAYER">
-		 <mod-overwrite:tip>fm_tip_energy_2</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "FOCUS_2">
+		<mod-overwrite:tip>fm_tip_focus_2</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "FOCUS_2">
-		 <mod-overwrite:tip>fm_tip_focus_2</mod-overwrite:tip>
-</mod:findName>
 
 
+	<!-- GREEN HEART + TERRA NOVA -->
 
-<!-- GREEN HEART + TERRA NOVA -->
+	<mod:findName type = "weaponBlueprint" name = "ENERGY_3">
+		<mod-overwrite:tip>fm_tip_energy_3</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "ENERGY_3">
-		 <mod-overwrite:tip>fm_tip_energy_3</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "FOCUS_3">
+		<mod-overwrite:tip>fm_tip_focus_3</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "FOCUS_3">
-		 <mod-overwrite:tip>fm_tip_focus_3</mod-overwrite:tip>
-</mod:findName>
 
+	<!--    FLAK CRAFT TIPS -->
 
-<!--    FLAK CRAFT TIPS -->
+	<!-- KHEIMON -->
 
+	<mod:findName type = "weaponBlueprint" name = "LASER_FROST_2">
+		<mod-overwrite:tip>fm_tip_laser_frost_2</mod-overwrite:tip>
+	</mod:findName>
 
-<!-- AETHER FLAK -->
- <!-- GOES IN dlcBlueprints.xml!!
-<mod:findName type = "weaponBlueprint" name = "SHOTGUN_3">
-		 <mod-overwrite:tip>fm_tip_shotgun_3</mod-overwrite:tip>
- </mod:findName>
-  -->
+	<mod:findName type = "weaponBlueprint" name = "LASER_FROST_2_PLAYER">
+		<mod-overwrite:tip>fm_tip_laser_frost_2</mod-overwrite:tip>
+	</mod:findName>
 
-<!-- KHEIMON -->
+	<!-- GOES IN dlcBlueprints.xml!!
+	<mod:findName type = "weaponBlueprint" name = "SHOTGUN_TOXIC">
+		<mod-overwrite:tip>fm_tip_shotgun_toxic</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "LASER_FROST_2">
-		 <mod-overwrite:tip>fm_tip_laser_frost_2</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "SHOTGUN_TOXIC_PLAYER">
+		<mod-overwrite:tip>fm_tip_shotgun_toxic</mod-overwrite:tip>
+	</mod:findName>   -->
 
- <mod:findName type = "weaponBlueprint" name = "LASER_FROST_2_PLAYER">
-		 <mod-overwrite:tip>fm_tip_laser_frost_2</mod-overwrite:tip>
- </mod:findName>
+	<!-- BRONZE FLAK -->
 
- <!-- GOES IN dlcBlueprints.xml!!
-<mod:findName type = "weaponBlueprint" name = "SHOTGUN_TOXIC">
-		 <mod-overwrite:tip>fm_tip_shotgun_toxic</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_BURST_1">
+		<mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "SHOTGUN_TOXIC_PLAYER">
-		 <mod-overwrite:tip>fm_tip_shotgun_toxic</mod-overwrite:tip>
-</mod:findName>   -->
+	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_BURST_1_RED">
+		<mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
+	</mod:findName>
 
-<!-- BRONZE FLAK -->
+	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_BURST_2">
+		<mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
+	</mod:findName>
 
- <!-- GOES IN dlcBlueprints.xml!!
-<mod:findName type = "weaponBlueprint" name = "SHOTGUN">
-		 <mod-overwrite:tip>fm_tip_shotgun_1</mod-overwrite:tip>
- </mod:findName>
- -->
+	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_BURST_2_RED">
+		<mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "CRYSTAL_BURST_1">
-		 <mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_HEAVY_1">
+		<mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "CRYSTAL_BURST_1_RED">
-		 <mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_HEAVY_1_RED">
+		<mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "CRYSTAL_BURST_2">
-		 <mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_HEAVY_2">
+		<mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "CRYSTAL_BURST_2_RED">
-		 <mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_HEAVY_2_RED">
+		<mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "CRYSTAL_HEAVY_1">
-		 <mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_STUN">
+		<mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "CRYSTAL_HEAVY_1_RED">
-		 <mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_STUN_RED">
+		<mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "CRYSTAL_HEAVY_2">
-		 <mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_SHOTGUN">
+		<mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "CRYSTAL_HEAVY_2_RED">
-		 <mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_SHOTGUN_RED">
+		<mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "CRYSTAL_STUN">
-		 <mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_CHARGEGUN">
+		<mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "CRYSTAL_STUN_RED">
-		 <mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_CHARGEGUN_RED">
+		<mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "CRYSTAL_SHOTGUN">
-		 <mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "MINELAUNCHER_CRYSTAL">
+		<mod-overwrite:tip>fm_tip_crystal_minelauncher</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "CRYSTAL_SHOTGUN_RED">
-		 <mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
-</mod:findName>
+	<!--    EXPLOSIVE CRAFT TIPS -->
 
-<mod:findName type = "weaponBlueprint" name = "CRYSTAL_CHARGEGUN">
-		 <mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
-</mod:findName>
+	<!-- HELLFIRE -->
 
-<mod:findName type = "weaponBlueprint" name = "CRYSTAL_CHARGEGUN_RED">
-		 <mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "MISSILES_4">
+		<mod-overwrite:tip>fm_tip_missiles_4</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "MINELAUNCHER_CRYSTAL">
-		 <mod-overwrite:tip>fm_tip_crystal_minelauncher</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "MISSILES_4_PLAYER">
+		<mod-overwrite:tip>fm_tip_missiles_4</mod-overwrite:tip>
+	</mod:findName>
 
-<!--    EXPLOSIVE CRAFT TIPS -->
+	<mod:findName type = "weaponBlueprint" name = "MISSILES_FIRE">
+		<mod-overwrite:tip>fm_tip_missiles_fire</mod-overwrite:tip>
+	</mod:findName>
 
-<!-- HELLFIRE -->
+	<mod:findName type = "weaponBlueprint" name = "MISSILES_FIRE_PLAYER">
+		<mod-overwrite:tip>fm_tip_missiles_fire</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "MISSILES_4">
-		 <mod-overwrite:tip>fm_tip_missiles_4</mod-overwrite:tip>
-</mod:findName>
+	<!-- CHERNOBOG -->
 
-<mod:findName type = "weaponBlueprint" name = "MISSILES_4_PLAYER">
-		 <mod-overwrite:tip>fm_tip_missiles_4</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "MISSILES_CLOAK">
+		<mod-overwrite:desc>A Missile with cloaking technology that travels slower, it is undetectable by certain Defense Drones and cannot miss.</mod-overwrite:desc>
+		<mod-overwrite:tip>fm_tip_missile_cloak</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "MISSILES_FIRE">
-		 <mod-overwrite:tip>fm_tip_missiles_fire</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "ENERGY_STUN">
+		<mod-overwrite:tip>fm_tip_energy_stun</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "MISSILES_FIRE_PLAYER">
-		 <mod-overwrite:tip>fm_tip_missiles_fire</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "ENERGY_STUN_PLAYER">
+		<mod-overwrite:tip>fm_tip_energy_stun</mod-overwrite:tip>
+	</mod:findName>
 
-<!-- CHERNOBOG -->
+	<!-- OVENATOR -->
 
-<mod:findName type = "weaponBlueprint" name = "MISSILES_CLOAK">
-<mod-overwrite:desc>A Missile with cloaking technology that travels slower, it is undetectable by certain Defense Drones and cannot miss.</mod-overwrite:desc>
-		 <mod-overwrite:tip>fm_tip_missile_cloak</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "BOMB_FIRE">
+		<mod-overwrite:tip>fm_tip_bomb_fire</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "ENERGY_STUN">
-		 <mod-overwrite:tip>fm_tip_energy_stun</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "BOMB_LOCK">
+		<mod-overwrite:tip>fm_tip_bomb_lock</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "ENERGY_STUN_PLAYER">
-		 <mod-overwrite:tip>fm_tip_energy_stun</mod-overwrite:tip>
-</mod:findName>
+	<!-- LIFE R.O -->
 
-<!-- OVENATOR -->
+	<mod:findName type = "weaponBlueprint" name = "BOMB_BIO">
+		<mod-overwrite:tip>fm_tip_bomb_bio</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "BOMB_FIRE">
-		 <mod-overwrite:tip>fm_tip_bomb_fire</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "BOMB_LOCK">
+		<mod-overwrite:tip>fm_tip_bomb_lock</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "BOMB_LOCK">
-		 <mod-overwrite:tip>fm_tip_bomb_lock</mod-overwrite:tip>
-</mod:findName>
+	<!-- BA-PEF -->
 
-<!-- LIFE R.O -->
+	<mod:findName type = "weaponBlueprint" name = "LASER_HULL_2">
+		<mod-overwrite:tip>fm_tip_laser_hull_2</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "BOMB_BIO">
-		 <mod-overwrite:tip>fm_tip_bomb_bio</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "MINELAUNCHER_BREACH">
+		<mod-overwrite:desc>Mine Launchers charge quickly and fire a burst of slow moving projectiles. Modified variant that always opens breaches.
 
-<mod:findName type = "weaponBlueprint" name = "BOMB_LOCK">
-		 <mod-overwrite:tip>fm_tip_bomb_lock</mod-overwrite:tip>
-</mod:findName>
+			At empty beacons provides 3 fleet delay for 17 missiles.
+		</mod-overwrite:desc>
+		<mod-overwrite:tip>fm_tip_minelauncher_breach</mod-overwrite:tip>
+	</mod:findName>
 
-<!-- BA-PEF -->
+	<!-- DIRTY LAUNCHER -->
 
-<mod:findName type = "weaponBlueprint" name = "LASER_HULL_2">
-		 <mod-overwrite:tip>fm_tip_laser_hull_2</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "MISSILES_BIO">
+		<mod-overwrite:tip>fm_tip_missiles_bio</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "MINELAUNCHER_BREACH">
-		 <mod-overwrite:desc>Mine Launchers charge quickly and fire a burst of slow moving projectiles. Modified variant that always opens breaches.
+	<mod:findName type = "weaponBlueprint" name = "MINELAUNCHER_2">
+		<mod-overwrite:tip>fm_tip_minelauncher_2</mod-overwrite:tip>
+	</mod:findName>
 
-At empty beacons provides 3 fleet delay for 17 missiles.</mod-overwrite:desc>
-		 <mod-overwrite:tip>fm_tip_minelauncher_breach</mod-overwrite:tip>
-</mod:findName>
-
-<!-- DIRTY LAUNCHER -->
-
-<mod:findName type = "weaponBlueprint" name = "MISSILES_BIO">
-		 <mod-overwrite:tip>fm_tip_missiles_bio</mod-overwrite:tip>
-</mod:findName>
-
-<mod:findName type = "weaponBlueprint" name = "MINELAUNCHER_2">
-		 <mod-overwrite:tip>fm_tip_minelauncher_2</mod-overwrite:tip>
-</mod:findName>
-
-<!-- 'Debilitatum' Heavy Missiles-->
-<mod:findName type = "weaponBlueprint" name = "ION_3">
+	<!-- 'Debilitatum' Heavy Missiles-->
+	<mod:findName type = "weaponBlueprint" name = "ION_3">
 		<mod-overwrite:tip>fm_tip_ion_3</mod-overwrite:tip>
-</mod:findName>
+	</mod:findName>
 
-<!--    ORGANIC CRAFT TIPS -->
+	<!--    ORGANIC CRAFT TIPS -->
 
-<!-- BASILISK -->
+	<!-- BASILISK -->
 
-<mod:findName type = "weaponBlueprint" name = "KERNEL_1_ELITE">
-		 <mod-overwrite:tip>fm_tip_elite_kernel</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "KERNEL_1_ELITE">
+		<mod-overwrite:tip>fm_tip_elite_kernel</mod-overwrite:tip>
+	</mod:findName>
 
- <mod:findName type = "weaponBlueprint" name = "KERNEL_2_ELITE">
-		 <mod-overwrite:tip>fm_tip_elite_kernel</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "KERNEL_2_ELITE">
+		<mod-overwrite:tip>fm_tip_elite_kernel</mod-overwrite:tip>
+	</mod:findName>
 
- <mod:findName type = "weaponBlueprint" name = "KERNEL_HEAVY_ELITE">
-		 <mod-overwrite:tip>fm_tip_elite_kernel</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "KERNEL_HEAVY_ELITE">
+		<mod-overwrite:tip>fm_tip_elite_kernel</mod-overwrite:tip>
+	</mod:findName>
 
- <mod:findName type = "weaponBlueprint" name = "KERNEL_HULL_ELITE">
- <mod-overwrite:desc>This weapon uses kernels of giant plants from the Orchid home planet as ammunition. Powerful Elite version with a longer stun and higher chance to ignore their ammo cost.</mod-overwrite:desc>
-		 <mod-overwrite:tip>fm_tip_elite_kernel</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "KERNEL_HULL_ELITE">
+		<mod-overwrite:desc>This weapon uses kernels of giant plants from the Orchid home planet as ammunition. Powerful Elite version with a longer stun and higher chance to ignore their ammo cost.</mod-overwrite:desc>
+		<mod-overwrite:tip>fm_tip_elite_kernel</mod-overwrite:tip>
+	</mod:findName>
 
- <mod:findName type = "weaponBlueprint" name = "KERNEL_CHAIN_ELITE">
-		 <mod-overwrite:tip>fm_tip_elite_kernel</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "KERNEL_CHAIN_ELITE">
+		<mod-overwrite:tip>fm_tip_elite_kernel</mod-overwrite:tip>
+	</mod:findName>
 
- <mod:findName type = "weaponBlueprint" name = "KERNEL_CHARGE_ELITE">
-		 <mod-overwrite:tip>fm_tip_elite_kernel</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "KERNEL_CHARGE_ELITE">
+		<mod-overwrite:tip>fm_tip_elite_kernel</mod-overwrite:tip>
+	</mod:findName>
 
-<!--   dlcblueprint stuff in-case it is moved to blueprints. -->
-<mod:findName type = "weaponBlueprint" name = "SHOTGUN_2">
-		 <mod-overwrite:tip>fm_tip_shotgun_2</mod-overwrite:tip>
- </mod:findName>
+	<!--   dlcblueprint stuff in-case it is moved to blueprints. -->
+	<mod:findName type = "weaponBlueprint" name = "SHOTGUN_2">
+		<mod-overwrite:tip>fm_tip_shotgun_2</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "SHOTGUN_TOXIC">
-		 <mod-overwrite:tip>fm_tip_shotgun_toxic</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "SHOTGUN_TOXIC">
+		<mod-overwrite:tip>fm_tip_shotgun_toxic</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "SHOTGUN_TOXIC_PLAYER">
-		 <mod-overwrite:tip>fm_tip_shotgun_toxic</mod-overwrite:tip>
-</mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "SHOTGUN_TOXIC_PLAYER">
+		<mod-overwrite:tip>fm_tip_shotgun_toxic</mod-overwrite:tip>
+	</mod:findName>
 
-<mod:findName type = "weaponBlueprint" name = "SHOTGUN_4">
-		 <mod-overwrite:tip>fm_tip_shotgun_4</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "SHOTGUN_4">
+		<mod-overwrite:tip>fm_tip_shotgun_4</mod-overwrite:tip>
+	</mod:findName>
 
- <mod:findName type = "weaponBlueprint" name = "LASER_CHAINGUN_2">
-		  <mod-overwrite:tip>fm_tip_laser_vulcan</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "LASER_CHAINGUN_2">
+		<mod-overwrite:tip>fm_tip_laser_vulcan</mod-overwrite:tip>
+	</mod:findName>
 
- <mod:findName type = "weaponBlueprint" name = "ION_CHARGEGUN">
-		 <mod-overwrite:tip>fm_tip_ion_charger_1</mod-overwrite:tip>
- </mod:findName>
+	<mod:findName type = "weaponBlueprint" name = "ION_CHARGEGUN">
+		<mod-overwrite:tip>fm_tip_ion_charger_1</mod-overwrite:tip>
+	</mod:findName>
 
 
 </FTL>

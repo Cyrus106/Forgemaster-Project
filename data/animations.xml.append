@@ -3276,6 +3276,16 @@ try this later
 		<mountPoint x="4" y="48"/>
 	</weaponAnim>
 
+	<animSheet name="gatling_ancient_ion" w="363" h="100" fw="33" fh="100">weapon_ion/boiao.png</animSheet>
+	<weaponAnim name="gatling_ancient_ion">
+		<sheet>gatling_ancient_ion</sheet>
+		<desc length="11" x="0" y="0"/>
+		<chargedFrame>5</chargedFrame>
+		<fireFrame>6</fireFrame>
+		<firePoint  x="17" y="20"/>
+		<mountPoint x="4" y="79"/>
+	</weaponAnim>
+
 </FTL>
 
 <FTL><!-- BEAMS-->
