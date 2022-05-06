@@ -1279,6 +1279,81 @@
 		<aug name="FM_ZOLTAN_PERSONAL_SHIELD" />
 	</shipBlueprint>
 
+	<shipBlueprint name="PLAYER_SHIP_TWISTED5" layout="zmt_player_lanius_suicide" img="zmt_player_lanius_suicide">
+	<class>Twisted Renegade Lanius</class>
+	<name>The Bloodsteel</name>
+	<desc>The Lanius race is well known for their metal-manipulation abilities, and this ship heavily capitalizes upon that. Using a special forge, this ship can repurpose other weapons into flak! (Also has toggle flak artillery for the time being, for the funny)</desc>
+	<systemList>
+		<artillery power="1" room="21" start="true" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+		<battery power="1" max="2" room="22" start="false" img="room_battery_10" />
+		<cloaking power="1" room="20" start="false" img="room_cloaking_3" />
+		<clonebay power="1" room="4" start="false">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="8" start="true" img="room_doors_4">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="2" max="8" room="3" start="false" img="room_drones_4" />
+		<engines power="1" room="5" start="true" img="room_engines">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="17" start="false" img="room_hacking_4" />
+		<medbay power="1" room="4" start="true" img="room_medbay">
+			<slot>
+				<number>1</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="16" start="false" img="room_mind_9" />
+		<oxygen power="1" room="14" start="false" img="room_oxygen_12" />
+		<pilot power="1" room="0" start="true" img="room_pilot_4">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="2" room="11" start="true" img="room_sensors_6">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="10" start="true" img="room_shields_4">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="13" start="false" />
+		<weapons power="2" max="8" room="9" start="true" img="room_weapons_5">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="5" count="4">
+		<weapon name="SHOTGUN_TOXIC_PLAYER" />
+	</weaponList>
+	<droneList drones="5" count="2" />
+	<health amount="30" />
+	<maxPower amount="7" />
+	<crewCount amount="1" class="lanius_welder" />
+	<crewCount amount="1" class="lanius" />
+	<crewCount amount="1" class="lanius" />
+	<aug name="EX_AUTO_COOLDOWN" />
+	<aug name="TWISTED_FLAK_FORGE"/>
+</shipBlueprint>
+
 	<shipBlueprint name="PLAYER_SHIP_TWISTED5_3" layout="zmt_player_engineer_suicide" img="zmt_player_engineer_suicide">
 		<class>Twisted Renegade Engineer</class>
 		<name>The Conagher</name>
@@ -8992,6 +9067,52 @@
 		<weaponArt>fm_tainted_fed_arty</weaponArt>
 		<iconImage>beam</iconImage>
 	</weaponBlueprint>
+
+	<weaponBlueprint name="SHOTGUN_TOGGLE_FIRE_INVIS"> <!--Artillery for the twisted lanius-->
+	<type>BURST</type>
+	<drone_targetable>1</drone_targetable>
+	<title>Toggle Flak [F]</title>
+	<short>Toggle [F]</short>
+	<tip>tip_flak</tip>
+	<desc>A special Flak weapon which fires 7 shots, each of which will always start a fire.</desc>
+	<tooltip>Fires a blast of debris across a random area doing up to 7 damage.</tooltip>
+	<radius>52</radius>
+	<damage>1</damage>
+	<spin>720</spin>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>10</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>20</cooldown>
+	<power>4</power>
+	<cost>100</cost>
+	<bp>10</bp>
+	<speed>26</speed>
+	<rarity>0</rarity>
+	<projectiles>
+		<projectile count="7" fake="false">debris_large_fire</projectile>
+		<projectile count="5" fake="true">debris_small</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>flak</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>flakImpact1</sound>
+		<sound>flakImpact2</sound>
+		<sound>flakImpact3</sound>
+		<sound>flakImpact4</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>fm_holyshit_invis</weaponArt>
+	<iconImage>flak</iconImage>
+</weaponBlueprint>
 
 
 </FTL>
