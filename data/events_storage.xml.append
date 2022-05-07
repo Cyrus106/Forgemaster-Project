@@ -6955,7 +6955,10 @@
     <system name="artillery"/>
     <variable name="flak_resource_counter" op="add" val="-50" min="0" max="0"/>
     <text>you install an artillery system onto your ship</text>
-    <event load="STORAGE_CHECK"/>
+    <choice>
+      <text>Continue...</text>
+      <event load="STORAGE_CHECK"/>
+    </choice>
   </event>
 
 </FTL>
