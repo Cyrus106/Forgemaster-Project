@@ -1280,88 +1280,88 @@
 	</shipBlueprint>
 
 	<shipBlueprint name="PLAYER_SHIP_TWISTED5" layout="zmt_player_lanius_suicide" img="zmt_player_lanius_suicide">
-	<class>Twisted Renegade Lanius</class>
-	<name>The Bloodsteel</name>
-	<desc>The Lanius race is well known for their metal-manipulation abilities, and this ship heavily capitalizes upon that. Using a special forge, this ship can repurpose other weapons into flak! (Also can install 10 toggle flak artillery for the time being, for the funny)</desc>
-	<systemList>
-		<artillery power="1" room="1" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
-		<artillery power="1" room="2" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
-		<artillery power="1" room="6" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
-		<artillery power="1" room="7" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
-		<artillery power="1" room="12" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
-		<artillery power="1" room="15" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
-		<artillery power="1" room="18" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
-		<artillery power="1" room="19" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
-		<artillery power="1" room="21" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
-		<artillery power="1" room="23" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
-		<battery power="1" max="2" room="22" start="false" img="room_battery_10" />
-		<cloaking power="1" room="20" start="false" img="room_cloaking_3" />
-		<clonebay power="1" room="4" start="false">
-			<slot>
-				<number>1</number>
-			</slot>
-		</clonebay>
-		<doors power="1" room="8" start="true" img="room_doors_4">
-			<slot>
-				<direction>right</direction>
-				<number>0</number>
-			</slot>
-		</doors>
-		<drones power="2" max="8" room="3" start="false" img="room_drones_4" />
-		<engines power="1" room="5" start="true" img="room_engines">
-			<slot>
-				<direction>down</direction>
-				<number>2</number>
-			</slot>
-		</engines>
-		<hacking power="1" room="17" start="false" img="room_hacking_4" />
-		<medbay power="1" room="4" start="true" img="room_medbay">
-			<slot>
-				<number>1</number>
-			</slot>
-		</medbay>
-		<mind power="1" room="16" start="false" img="room_mind_9" />
-		<oxygen power="1" room="14" start="false" img="room_oxygen_12" />
-		<pilot power="1" room="0" start="true" img="room_pilot_4">
-			<slot>
-				<direction>right</direction>
-				<number>0</number>
-			</slot>
-		</pilot>
-		<sensors power="2" room="11" start="true" img="room_sensors_6">
-			<slot>
-				<direction>right</direction>
-				<number>1</number>
-			</slot>
-		</sensors>
-		<shields power="2" max="8" room="10" start="true" img="room_shields_4">
-			<slot>
-				<direction>left</direction>
-				<number>0</number>
-			</slot>
-		</shields>
-		<teleporter power="1" room="13" start="false" />
-		<weapons power="2" max="8" room="9" start="true" img="room_weapons_5">
-			<slot>
-				<direction>right</direction>
-				<number>1</number>
-			</slot>
-		</weapons>
-	</systemList>
-	<weaponSlots>4</weaponSlots>
-	<droneSlots>2</droneSlots>
-	<weaponList missiles="5" count="4">
-		<weapon name="SHOTGUN_TOXIC_PLAYER" />
-	</weaponList>
-	<droneList drones="5" count="2" />
-	<health amount="30" />
-	<maxPower amount="7" />
-	<crewCount amount="1" class="lanius_welder" />
-	<crewCount amount="1" class="lanius" />
-	<crewCount amount="1" class="lanius" />
-	<aug name="EX_AUTO_COOLDOWN" />
-	<aug name="TWISTED_FLAK_FORGE"/>
-</shipBlueprint>
+		<class>Twisted Renegade Lanius</class>
+		<name>The Bloodsteel</name>
+		<desc>The Lanius race is well known for their metal-manipulation abilities, and this ship heavily capitalizes upon that. Using a special forge, this ship can repurpose other weapons into flak! (Also can install 10 toggle flak artillery for the time being, for the funny)</desc>
+		<systemList>
+			<artillery power="1" room="1" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+			<artillery power="1" room="2" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+			<artillery power="1" room="6" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+			<artillery power="1" room="7" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+			<artillery power="1" room="12" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+			<artillery power="1" room="15" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+			<artillery power="1" room="18" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+			<artillery power="1" room="19" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+			<artillery power="1" room="21" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+			<artillery power="1" room="23" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+			<battery power="1" max="2" room="22" start="false" img="room_battery_10" />
+			<cloaking power="1" room="20" start="false" img="room_cloaking_3" />
+			<clonebay power="1" room="4" start="false">
+				<slot>
+					<number>1</number>
+				</slot>
+			</clonebay>
+			<doors power="1" room="8" start="true" img="room_doors_4">
+				<slot>
+					<direction>right</direction>
+					<number>0</number>
+				</slot>
+			</doors>
+			<drones power="2" max="8" room="3" start="false" img="room_drones_4" />
+			<engines power="1" room="5" start="true" img="room_engines">
+				<slot>
+					<direction>down</direction>
+					<number>2</number>
+				</slot>
+			</engines>
+			<hacking power="1" room="17" start="false" img="room_hacking_4" />
+			<medbay power="1" room="4" start="true" img="room_medbay">
+				<slot>
+					<number>1</number>
+				</slot>
+			</medbay>
+			<mind power="1" room="16" start="false" img="room_mind_9" />
+			<oxygen power="1" room="14" start="false" img="room_oxygen_12" />
+			<pilot power="1" room="0" start="true" img="room_pilot_4">
+				<slot>
+					<direction>right</direction>
+					<number>0</number>
+				</slot>
+			</pilot>
+			<sensors power="2" room="11" start="true" img="room_sensors_6">
+				<slot>
+					<direction>right</direction>
+					<number>1</number>
+				</slot>
+			</sensors>
+			<shields power="2" max="8" room="10" start="true" img="room_shields_4">
+				<slot>
+					<direction>left</direction>
+					<number>0</number>
+				</slot>
+			</shields>
+			<teleporter power="1" room="13" start="false" />
+			<weapons power="2" max="8" room="9" start="true" img="room_weapons_5">
+				<slot>
+					<direction>right</direction>
+					<number>1</number>
+				</slot>
+			</weapons>
+		</systemList>
+		<weaponSlots>4</weaponSlots>
+		<droneSlots>2</droneSlots>
+		<weaponList missiles="5" count="4">
+			<weapon name="SHOTGUN_TOXIC_PLAYER" />
+		</weaponList>
+		<droneList drones="5" count="2" />
+		<health amount="30" />
+		<maxPower amount="7" />
+		<crewCount amount="1" class="lanius_welder" />
+		<crewCount amount="1" class="lanius" />
+		<crewCount amount="1" class="lanius" />
+		<aug name="EX_AUTO_COOLDOWN" />
+		<aug name="TWISTED_FLAK_FORGE"/>
+	</shipBlueprint>
 
 	<shipBlueprint name="PLAYER_SHIP_TWISTED5_3" layout="zmt_player_engineer_suicide" img="zmt_player_engineer_suicide">
 		<class>Twisted Renegade Engineer</class>
@@ -7850,12 +7850,12 @@
 	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_ION_MISSILES">
-	    <type>BURST</type>
+		<type>BURST</type>
 		<drone_targetable>1</drone_targetable>
-		 <title>'Debilitatum' Heavy Missiles</title>
-	    <short>'Debilitatum'</short>
-	    <desc>This incredible weapon deploys a specialised drone pod that attaches to systems, doing 3 Ion damage every 13s.</desc>
-	    <tooltip>Fires 5 missile; does 2 damage each; pierces all shields.</tooltip>
+		<title>'Debilitatum' Heavy Missiles</title>
+		<short>'Debilitatum'</short>
+		<desc>This incredible weapon deploys a specialised drone pod that attaches to systems, doing 3 Ion damage every 13s.</desc>
+		<tooltip>Fires 5 missile; does 2 damage each; pierces all shields.</tooltip>
 		<radius>30</radius>
 		<missiles>1</missiles>
 		<damage>2</damage>
@@ -7875,39 +7875,38 @@
 		<projectiles>
 			<projectile count="1" fake="false">fm_ion_missiles_proj</projectile>
 		</projectiles>
-	    <launchSounds>
-	        <sound>smallMissile1</sound>
-	        <sound>smallMissile2</sound>
-	    </launchSounds>
-	    <hitShipSounds>
-	        <sound>explosion_heavy</sound>
-	    </hitShipSounds>
-	    <hitShieldSounds>
-	        <sound>hitShield1</sound>
-	        <sound>hitShield2</sound>
-	        <sound>hitShield3</sound>
-	    </hitShieldSounds>
-	    <missSounds>
-	        <sound>miss</sound>
-	    </missSounds>
-	    <weaponArt>fm_ion_missiles</weaponArt>
-	    <iconImage>missile</iconImage>
+		<launchSounds>
+			<sound>smallMissile1</sound>
+			<sound>smallMissile2</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>explosion_heavy</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_ion_missiles</weaponArt>
+		<iconImage>missile</iconImage>
 		<spawnCrew>
-	        <race>fm_missile_ion</race>
-	        <number>1</number>
-	        <noSlot>true</noSlot>
-	        <statBoosts>
-	            <statBoost name="noClone">
-	                <boostType>SET</boostType>
-	                <value>true</value>
-	                <shipTarget>ALL</shipTarget>
-	                <crewTarget>ALL</crewTarget>
-	                <priority>999999</priority>
-	            </statBoost>
-	        </statBoosts>
-	    </spawnCrew>
+			<race>fm_missile_ion</race>
+			<number>1</number>
+			<noSlot>true</noSlot>
+			<statBoosts>
+				<statBoost name="noClone">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+			</statBoosts>
+		</spawnCrew>
 	</weaponBlueprint>
-	</FTL>
 
 </FTL>
 
