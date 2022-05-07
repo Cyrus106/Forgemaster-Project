@@ -3547,6 +3547,9 @@
 		<variable name="twisted_blessing_counter" op = "set" value = "0"/> <!--"blessing" counter for twisted monk-->
 		<variable name="flak_resource_counter" op = "set" value = "0"/><!--Base flak resource counter for the Flak Forge-->
 		<variable name="flak_special_resource_counter" op = "set" value = "0"/><!--Special flak resource counter for the Flak Forge-->
+		<req name="CAN_INSTALL_FLAK_ARTILLERY" type="sum" lvl="50">
+			<name>flak_resource_counter</name>
+		</req>
 	</events>
 
 	<events> <!-- Forgemaster HARMONY ENDING SPACESTATION EVENT REQS -->
@@ -13492,9 +13495,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<variable name="fm_hull_capstones" op="set" value="0"/>
 		<variable name="overcharmed_active" op="set" value="0"/>
 		<variable name="overcharmed_charges" op="set" value="0"/>
-		<req name="V_POINTS" type="sum" mult="0.2">
-			<name>fm_hull_upgrade_point</name>
-		</req>
+		<metaVariable name="fm_infinite_upgradepoints" op="set" value="0"/>
 		<req name="OVERCHARMED_RELOADING" type="sum">
 			<req type="sum" const="-15">
 				<name>fm_hull_upgrade_point</name>
@@ -13524,6 +13525,11 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<name>fm_hull_capstones</name>
 			</req>
 		</req>
+		<req name="CAN_INSTALL_CAPSTONEEXTRA_TRUE" type="all">
+			<name>FM_MODULAR_HULL</name>
+			<name>CAN_INSTALL_CAPSTONEEXTRA</name>
+			<name>fm_infinite_upgradepoints</name>
+		</req>
 		<req name="CAN_INSTALL_CAPSTONE1_FALSE" type="all">
 			<name>FM_MODULAR_HULL</name>
 			<req lvl="0" max_lvl="0">
@@ -13550,6 +13556,16 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<req lvl="2" max_lvl="2">
 				<name>fm_hull_capstones</name>
 			</req>
+		</req>
+		<req name="CAN_INSTALL_CAPSTONEEXTRA_FALSE" type="all">
+			<name>FM_MODULAR_HULL</name>
+			<req lvl="0" max_lvl="0">
+				<name>CAN_INSTALL_CAPSTONEEXTRA</name>
+			</req>
+			<req lvl="4">
+				<name>fm_hull_capstones</name>
+			</req>
+			<name>fm_infinite_upgradepoints</name>
 		</req>
 
 		<req name="CAN_INSTALL_MODULE_TRUE" type="all">
@@ -13613,6 +13629,72 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<req lvl="2" max_lvl="2">
 					<name>fm_hull_capstones</name>
 				</req>
+			</req>
+		</req>
+		<req name="CAN_INSTALL_CAPSTONEEXTRA">
+			<req type="all"><!--IV-->
+				<req lvl="20">
+					<name>fm_hull_upgrade_point</name>
+				</req>
+				<req lvl="3" max_lvl="3">
+					<name>fm_hull_capstones</name>
+				</req>
+			</req>
+			<req type="all"><!--V-->
+				<req lvl="25">
+					<name>fm_hull_upgrade_point</name>
+				</req>
+				<req lvl="4" max_lvl="4">
+					<name>fm_hull_capstones</name>
+				</req>
+			</req>
+			<req type="all"><!--VI-->
+				<req lvl="30">
+					<name>fm_hull_upgrade_point</name>
+				</req>
+				<req lvl="5" max_lvl="5">
+					<name>fm_hull_capstones</name>
+				</req>
+			</req>
+			<req type="all"><!--VII-->
+				<req lvl="35">
+					<name>fm_hull_upgrade_point</name>
+				</req>
+				<req lvl="6" max_lvl="6">
+					<name>fm_hull_capstones</name>
+				</req>
+			</req>
+			<req type="all"><!--VIII-->
+				<req lvl="40">
+					<name>fm_hull_upgrade_point</name>
+				</req>
+				<req lvl="7" max_lvl="7">
+					<name>fm_hull_capstones</name>
+				</req>
+			</req>
+			<req type="all"><!--IX-->
+			  <req lvl="45">
+			    <name>fm_hull_upgrade_point</name>
+			  </req>
+			  <req lvl="8" max_lvl="8">
+			    <name>fm_hull_capstones</name>
+			  </req>
+			</req>
+			<req type="all"><!--X-->
+			  <req lvl="50">
+			    <name>fm_hull_upgrade_point</name>
+			  </req>
+			  <req lvl="9" max_lvl="9">
+			    <name>fm_hull_capstones</name>
+			  </req>
+			</req>
+			<req type="all"><!--XI-->
+			  <req lvl="55">
+			    <name>fm_hull_upgrade_point</name>
+			  </req>
+			  <req lvl="10" max_lvl="10">
+			    <name>fm_hull_capstones</name>
+			  </req>
 			</req>
 		</req>
 

@@ -5854,6 +5854,33 @@
       <text>Make use of the Flak Forge (Placeholder, you should never see this for now).</text>
       <event load="STORAGE_CHECK_TWISTED_FLAK_FORGE_MENU"/>
     </mod-append:choice>
+    <mod-append:choice req="TWISTED_FLAK_FORGE" blue ="true">
+      <text>Make use of the Flak Forge to install an artillery system.</text>
+      <event>
+        <text>Do you want to install an artillery system? (bypasses system limit if u got full systems)</text>
+        <choice req="CAN_INSTALL_FLAK_ARTILLERY" max_group="1" blue ="true">
+          <text>install an artillery system [-50 flak juice]</text>
+          <event>
+            <loadEvent>INSTALL_ARTILLERY</loadEvent>
+          </event>
+        </choice>
+        <choice req="CAN_INSTALL_FLAK_ARTILLERY" lvl="0" hidden="true" blue ="true" max_group="1">
+          <text>you cannot install an artillery system</text>
+          <event load="OPTION_INVALID"/>
+        </choice>
+
+        <choice req="SHOTGUN_TOGGLE_FIRE_INVIS" lvl="10" hidden="true" blue ="true" max_group="1">
+          <text>you can't fit any more artillery systems on your ship</text>
+          <event load="OPTION_INVALID"/>
+        </choice>
+
+        <choice hidden="true" req="pilot" lvl="1" blue="false" max_group="2">
+      		   <text>Nevermind...</text>
+      		   <event load="STORAGE_CHECK" />
+      	</choice>
+
+      </event>
+    </mod-append:choice>
     <mod-append:choice req="TWISTED_ANCIENT_BOUNTY">
       <text>(Aether Bounty Codex) Check the Codex for potential targets.</text>
       <event load="STORAGE_CHECK_TWISTED_ANCIENT_BOUNTY"/>
@@ -6923,6 +6950,13 @@
     <text>you upgrade your warlord to a crackerjack</text>
     <text>you upgrade your warlord to a crackerjack</text>
   </textList>
+
+  <event name="INSTALL_ARTILLERY">
+    <system name="artillery"/>
+    <variable name="flak_resource_counter" op="add" val="-50" min="0" max="0"/>
+    <text>you install an artillery system onto your ship</text>
+    <event load="STORAGE_CHECK"/>
+  </event>
 
 </FTL>
 

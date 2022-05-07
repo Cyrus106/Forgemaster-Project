@@ -1282,9 +1282,18 @@
 	<shipBlueprint name="PLAYER_SHIP_TWISTED5" layout="zmt_player_lanius_suicide" img="zmt_player_lanius_suicide">
 	<class>Twisted Renegade Lanius</class>
 	<name>The Bloodsteel</name>
-	<desc>The Lanius race is well known for their metal-manipulation abilities, and this ship heavily capitalizes upon that. Using a special forge, this ship can repurpose other weapons into flak! (Also has toggle flak artillery for the time being, for the funny)</desc>
+	<desc>The Lanius race is well known for their metal-manipulation abilities, and this ship heavily capitalizes upon that. Using a special forge, this ship can repurpose other weapons into flak! (Also can install 10 toggle flak artillery for the time being, for the funny)</desc>
 	<systemList>
-		<artillery power="1" room="21" start="true" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+		<artillery power="1" room="1" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+		<artillery power="1" room="2" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+		<artillery power="1" room="6" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+		<artillery power="1" room="7" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+		<artillery power="1" room="12" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+		<artillery power="1" room="15" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+		<artillery power="1" room="18" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+		<artillery power="1" room="19" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+		<artillery power="1" room="21" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+		<artillery power="1" room="23" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
 		<battery power="1" max="2" room="22" start="false" img="room_battery_10" />
 		<cloaking power="1" room="20" start="false" img="room_cloaking_3" />
 		<clonebay power="1" room="4" start="false">

@@ -52,11 +52,11 @@
 <event name="FLAK_REDEMPTION_NORMAL">
     <text>You look deep into the Flak Forge. How many resources are you going to spend?</text>
 
-    <choice hidden="true" req="flak_resource_counter" lvl="1">
-        <text>Spend a meager amount of normal flak resource (costs 1 flak point)</text>
+    <choice hidden="true" req="flak_resource_counter" lvl="10">
+        <text>Spend a meager amount of normal flak resource (costs 10 flak point)</text>
         <event>
             <text>You feed the materials into the forge and wait. Suddenly, a brand new flak weapon is dispensed! It isn't much, but it'll keep you going for sure!</text>
-            <variable name="flak_resource_counter" op = "add" value = "-1"/>
+            <variable name="flak_resource_counter" op = "add" value = "-10"/>
             <weapon name="LIST_FLAK_FORGE_NORMAL_1"/>
             <choice hidden="true">
       				<text>Continue...</text>
@@ -65,16 +65,16 @@
         </event>
     </choice>
 
-    <choice hidden="true" req="flak_resource_counter" lvl="0" max_lvl="0" blue="false">
-        <text>Spend a meager amount of normal flak resource (costs 1 flak point)</text>
+    <choice hidden="true" req="flak_resource_counter" lvl="0" max_lvl="9" blue="false">
+        <text>Spend a meager amount of normal flak resource (costs 10 flak point)</text>
         <event load="OPTION_INVALID"/>
     </choice>
 
-    <choice hidden="true" req="flak_resource_counter" lvl="2">
-        <text>Spend a small amount of normal flak resource (costs 2 flak points)</text>
+    <choice hidden="true" req="flak_resource_counter" lvl="20">
+        <text>Spend a small amount of normal flak resource (costs 20 flak points)</text>
         <event>
             <text>You feed the materials into the forge and wait. After a few minutes, a flak weapon is formed before your very eyes! You prepare to mount it on your ship and move on.</text>
-            <variable name="flak_resource_counter" op = "add" value = "-2"/>
+            <variable name="flak_resource_counter" op = "add" value = "-20"/>
             <weapon name="LIST_FLAK_FORGE_NORMAL_2"/>
             <choice hidden="true">
       				<text>Continue...</text>
@@ -83,17 +83,17 @@
         </event>
     </choice>
 
-    <choice hidden="true" req="flak_resource_counter" lvl="0" max_lvl="1" blue="false">
-        <text>Spend a small amount of normal flak resource (costs 2 flak points)</text>
+    <choice hidden="true" req="flak_resource_counter" lvl="0" max_lvl="19" blue="false">
+        <text>Spend a small amount of normal flak resource (costs 20 flak points)</text>
         <event load="OPTION_INVALID"/>
     </choice>
 
 
-    <choice hidden="true" req="flak_resource_counter" lvl="3">
-        <text>Spend a medium amount of normal flak resource (costs 3 flak points)</text>
+    <choice hidden="true" req="flak_resource_counter" lvl="30">
+        <text>Spend a medium amount of normal flak resource (costs 30 flak points)</text>
         <event>
             <text>You feed the materials into the forge and wait. After a few minutes, a flak weapon is formed before your very eyes! It's certainly a substantial armament, but you know what the forge is capable of...</text>
-            <variable name="flak_resource_counter" op = "add" value = "-3"/>
+            <variable name="flak_resource_counter" op = "add" value = "-30"/>
             <weapon name="LIST_FLAK_FORGE_NORMAL_3"/>
             <choice hidden="true">
       				<text>Continue...</text>
@@ -102,16 +102,16 @@
         </event>
     </choice>
 
-    <choice hidden="true" req="flak_resource_counter" lvl="0" max_lvl="2" blue="false">
-        <text>Spend a medium amount of normal flak resource (costs 3 flak points)</text>
+    <choice hidden="true" req="flak_resource_counter" lvl="0" max_lvl="29" blue="false">
+        <text>Spend a medium amount of normal flak resource (costs 30 flak points)</text>
         <event load="OPTION_INVALID"/>
     </choice>
 
-    <choice hidden="true" req="flak_resource_counter" lvl="4">
-        <text>Spend a large amount of normal flak resource (costs 4 flak points)</text>
+    <choice hidden="true" req="flak_resource_counter" lvl="40">
+        <text>Spend a large amount of normal flak resource (costs 40 flak points)</text>
         <event>
             <text>You feed the materials into the forge and wait. After a few minutes, a flak weapon is formed before your very eyes! Your crew stare in appreciation at your new prize.</text>
-            <variable name="flak_resource_counter" op = "add" value = "-4"/>
+            <variable name="flak_resource_counter" op = "add" value = "-40"/>
             <weapon name="LIST_FLAK_FORGE_NORMAL_4"/>
             <choice hidden="true">
               <text>Continue...</text>
@@ -120,16 +120,16 @@
         </event>
     </choice>
 
-    <choice hidden="true" req="flak_resource_counter" lvl="0" max_lvl="3" blue="false">
-        <text>Spend a large amount of normal flak resource (costs 4 flak points)</text>
+    <choice hidden="true" req="flak_resource_counter" lvl="0" max_lvl="39" blue="false">
+        <text>Spend a large amount of normal flak resource (costs 40 flak points)</text>
         <event load="OPTION_INVALID"/>
     </choice>
 
-    <choice hidden="true" req="flak_resource_counter" lvl="5">
-        <text>Spend a massive amount of normal flak resource (costs 5 flak points)</text>
+    <choice hidden="true" req="flak_resource_counter" lvl="50">
+        <text>Spend a massive amount of normal flak resource (costs 50 flak points)</text>
         <event>
             <text>You feed the materials into the forge and wait. You hold you breath in anticipation as the forge reveals the fruits of your efforts. Now THIS... is a weapon. </text>
-            <variable name="flak_resource_counter" op = "add" value = "-5"/>
+            <variable name="flak_resource_counter" op = "add" value = "-50"/>
             <weapon name="LIST_FLAK_FORGE_NORMAL_5"/>
             <choice hidden="true">
               <text>Continue...</text>
@@ -138,8 +138,8 @@
         </event>
     </choice>
 
-    <choice hidden="true" req="flak_resource_counter" lvl="0" max_lvl="4" blue="false">
-        <text>Spend a massive amount of normal flak resource (costs 5 flak points)</text>
+    <choice hidden="true" req="flak_resource_counter" lvl="0" max_lvl="49" blue="false">
+        <text>Spend a massive amount of normal flak resource (costs 50 flak points)</text>
         <event load="OPTION_INVALID"/>
     </choice>
 
@@ -153,11 +153,11 @@
 <event name="FLAK_REDEMPTION_SPECIAL">
   <text>You look deep into the Flak Forge. How many resources are you going to spend?</text>
 
-  <choice hidden="true" req="flak_special_resource_counter" lvl="1">
+  <choice hidden="true" req="flak_special_resource_counter" lvl="10">
       <text>Spend a meager amount of special flak resource (costs 1 special flak point)</text>
       <event>
           <text>You feed the materials into the forge and wait. Suddenly, a brand new flak weapon is dispensed! It isn't much, but it'll keep you going for sure!</text>
-          <variable name="flak_special_resource_counter" op = "add" value = "-1"/>
+          <variable name="flak_special_resource_counter" op = "add" value = "-10"/>
           <weapon name="LIST_FLAK_FORGE_SPECIAL_1"/>
           <choice hidden="true">
             <text>Continue...</text>
@@ -166,16 +166,16 @@
       </event>
   </choice>
 
-  <choice hidden="true" req="flak_special_resource_counter" lvl="0" max_lvl="0" blue="false">
-      <text>Spend a meager amount of special flak resource (costs 1 special flak point)</text>
+  <choice hidden="true" req="flak_special_resource_counter" lvl="0" max_lvl="9" blue="false">
+      <text>Spend a meager amount of special flak resource (costs 10 special flak point)</text>
       <event load="OPTION_INVALID"/>
   </choice>
 
   <choice hidden="true" req="flak_special_resource_counter" lvl="2">
-      <text>Spend a small amount of special flak resource (costs 2 special flak points)</text>
+      <text>Spend a small amount of special flak resource (costs 20 special flak points)</text>
       <event>
           <text>You feed the materials into the forge and wait. After a few minutes, a flak weapon is formed before your very eyes! You prepare to mount it on your ship and move on.</text>
-          <variable name="flak_special_resource_counter" op = "add" value = "-2"/>
+          <variable name="flak_special_resource_counter" op = "add" value = "-20"/>
           <weapon name="LIST_FLAK_FORGE_SPECIAL_2"/>
           <choice hidden="true">
             <text>Continue...</text>
@@ -184,17 +184,17 @@
       </event>
   </choice>
 
-  <choice hidden="true" req="flak_special_resource_counter" lvl="0" max_lvl="1" blue="false">
-      <text>Spend a small amount of special flak resource (costs 2 special flak points)</text>
+  <choice hidden="true" req="flak_special_resource_counter" lvl="0" max_lvl="19" blue="false">
+      <text>Spend a small amount of special flak resource (costs 20 special flak points)</text>
       <event load="OPTION_INVALID"/>
   </choice>
 
 
-  <choice hidden="true" req="flak_special_resource_counter" lvl="3">
-      <text>Spend a medium amount of special flak resource (costs 3 special flak points)</text>
+  <choice hidden="true" req="flak_special_resource_counter" lvl="30">
+      <text>Spend a medium amount of special flak resource (costs 30 special flak points)</text>
       <event>
           <text>You feed the materials into the forge and wait. After a few minutes, a flak weapon is formed before your very eyes! It's certainly a substantial armament, but you know what the forge is capable of...</text>
-          <variable name="flak_special_resource_counter" op = "add" value = "-3"/>
+          <variable name="flak_special_resource_counter" op = "add" value = "-30"/>
           <weapon name="LIST_FLAK_FORGE_SPECIAL_3"/>
           <choice hidden="true">
             <text>Continue...</text>
@@ -203,16 +203,16 @@
       </event>
   </choice>
 
-  <choice hidden="true" req="flak_special_resource_counter" lvl="0" max_lvl="2" blue="false">
-      <text>Spend a medium amount of special flak resource (costs 3 special flak points)</text>
+  <choice hidden="true" req="flak_special_resource_counter" lvl="0" max_lvl="29" blue="false">
+      <text>Spend a medium amount of special flak resource (costs 30 special flak points)</text>
       <event load="OPTION_INVALID"/>
   </choice>
 
-  <choice hidden="true" req="flak_special_resource_counter" lvl="4">
-      <text>Spend a large amount of special flak resource (costs 4 special flak points)</text>
+  <choice hidden="true" req="flak_special_resource_counter" lvl="40">
+      <text>Spend a large amount of special flak resource (costs 40 special flak points)</text>
       <event>
           <text>You feed the materials into the forge and wait. After a few minutes, a flak weapon is formed before your very eyes! Your crew stare in appreciation at your new prize.</text>
-          <variable name="flak_special_resource_counter" op = "add" value = "-4"/>
+          <variable name="flak_special_resource_counter" op = "add" value = "-40"/>
           <weapon name="LIST_FLAK_FORGE_SPECIAL_4"/>
           <choice hidden="true">
             <text>Continue...</text>
@@ -221,16 +221,16 @@
       </event>
   </choice>
 
-  <choice hidden="true" req="flak_special_resource_counter" lvl="0" max_lvl="3" blue="false">
-      <text>Spend a large amount of special flak resource (costs 4 special flak points)</text>
+  <choice hidden="true" req="flak_special_resource_counter" lvl="0" max_lvl="39" blue="false">
+      <text>Spend a large amount of special flak resource (costs 40 special flak points)</text>
       <event load="OPTION_INVALID"/>
   </choice>
 
-  <choice hidden="true" req="flak_special_resource_counter" lvl="5">
-      <text>Spend a massive amount of special flak resource (costs 5 special flak points)</text>
+  <choice hidden="true" req="flak_special_resource_counter" lvl="50">
+      <text>Spend a massive amount of special flak resource (costs 50 special flak points)</text>
       <event>
           <text>You feed the materials into the forge and wait. You hold you breath in anticipation as the forge reveals the fruits of your efforts. Now THIS... is a weapon. </text>
-          <variable name="flak_special_resource_counter" op = "add" value = "-5"/>
+          <variable name="flak_special_resource_counter" op = "add" value = "-50"/>
           <weapon name="LIST_FLAK_FORGE_SPECIAL_5"/>
           <choice hidden="true">
             <text>Continue...</text>
@@ -239,8 +239,8 @@
       </event>
   </choice>
 
-  <choice hidden="true" req="flak_special_resource_counter" lvl="0" max_lvl="4" blue="false">
-      <text>Spend a massive amount of special flak resource (costs 5 special flak points)</text>
+  <choice hidden="true" req="flak_special_resource_counter" lvl="0" max_lvl="49" blue="false">
+      <text>Spend a massive amount of special flak resource (costs 50 special flak points)</text>
       <event load="OPTION_INVALID"/>
   </choice>
 

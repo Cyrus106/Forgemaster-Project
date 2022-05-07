@@ -6466,16 +6466,36 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_point" lvl="18" max_lvl="18" max_group="2" blue="false" hidden="true">
-			<text>Currently 18 upgrade notches in use, how did you get here?.</text>
+			<text>Currently 18 upgrade notches in use..."overcharmed III"</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_point" lvl="19" max_lvl="19" max_group="2" blue="false" hidden="true">
-			<text>Currently 19 upgrade notches in use, ...this must be wrong.</text>
+			<text>Currently 19 upgrade notches in use..."overcharmed IV"</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_point" lvl="20" max_lvl="20" max_group="2" blue="false" hidden="true">
-			<text>Currently 20 upgrade notches in use, are you a hacker or something?...</text>
+			<text>Currently 20 upgrade notches in use..."overcharmed V"</text>
 			<event load="OPTION_INVALID"/>
+		</choice>
+    <choice req="fm_hull_upgrade_point" lvl="21" max_lvl="21" max_group="2" blue="false" hidden="true">
+		   <text>Currently 21 upgrade notches in use..."overcharmed VI"</text>
+		   <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="22" max_lvl="22" max_group="2" blue="false" hidden="true">
+		  <text>Currently 22 upgrade notches in use..."overcharmed VII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="23" max_lvl="23" max_group="2" blue="false" hidden="true">
+		  <text>Currently 23 upgrade notches in use..."overcharmed VIII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="24" max_lvl="24" max_group="2" blue="false" hidden="true">
+		  <text>Currently 24 upgrade notches in use..."overcharmed IX"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="25" max_lvl="25" max_group="2" blue="false" hidden="true">
+		  <text>Currently 25 upgrade notches in use..."overcharmed X"</text>
+		  <event load="OPTION_INVALID"/>
 		</choice>
 		<!--Ship modules-->
 		<choice req="CAN_INSTALL_MODULE_TRUE" lvl="1" max_group="3" blue="false" hidden="true">
@@ -6529,6 +6549,12 @@
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE</loadEvent>
 			</event>
 		</choice>
+		<choice req="CAN_INSTALL_CAPSTONEEXTRA_TRUE" lvl="1" max_group="6" blue="true" hidden="true">
+			<text>Install an extra... Capstone module?!</text>
+			<event>
+				<loadEvent>FM_MODULAR_HULL_CAPSTONE</loadEvent>
+			</event>
+		</choice>
 		<choice req="CAN_INSTALL_CAPSTONE1_FALSE" lvl="1" max_group="6" blue="false" hidden="true">
 			<text>You cannot Install your first Capstone module yet, use 5 upgrade notches first!</text>
 			<event load="OPTION_INVALID"/>
@@ -6539,6 +6565,10 @@
 		</choice>
 		<choice req="CAN_INSTALL_CAPSTONE3_FALSE" lvl="1" max_group="6" blue="false" hidden="true">
 			<text>You cannot Install your third (and last) Capstone module yet, use 15 upgrade notches first!</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="CAN_INSTALL_CAPSTONEEXTRA_FALSE" lvl="1" max_group="6" blue="false" hidden="true">
+			<text>You cannot Install even more Capstone modules, its illegal!</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL" lvl="1" max_group="8" blue="false"><!--Installed module list-->
