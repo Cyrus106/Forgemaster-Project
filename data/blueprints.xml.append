@@ -1293,7 +1293,6 @@
 			<artillery power="1" room="18" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
 			<artillery power="1" room="19" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
 			<artillery power="1" room="21" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
-			<artillery power="1" room="23" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
 			<battery power="1" max="2" room="22" start="false" img="room_battery_10" />
 			<cloaking power="1" room="20" start="false" img="room_cloaking_3" />
 			<clonebay power="1" room="4" start="false">
@@ -1356,9 +1355,11 @@
 		<droneList drones="5" count="2" />
 		<health amount="30" />
 		<maxPower amount="7" />
-		<crewCount amount="1" class="lanius_welder" />
-		<crewCount amount="1" class="lanius" />
-		<crewCount amount="1" class="lanius" />
+		<crew>
+			<unique_eater name="bacon" room="0"/>
+			<unique_eater name="Speck" room="5"/>
+			<lanius_welder room="9"/>
+		</crew>
 		<aug name="EX_AUTO_COOLDOWN" />
 		<aug name="TWISTED_FLAK_FORGE"/>
 	</shipBlueprint>
@@ -3578,8 +3579,8 @@
 
 	<weaponBlueprint name="FM_GATLING_ANCIENT_PHOTON"> <!--Improved Godkiller, costs 10 scrap to make at Forgemaster-->
 		<type>BURST</type>
-		<title>'God Killer'[Crew]</title>
-		<short>'Killer'[Crew]</short>
+		<title>'God Killer'[Photon]</title>
+		<short>'Killer'[Photon]</short>
 		<tip>tip_chain_laser</tip>
 		<desc>A weapon capable of killing gods, wielded previously by the tyrant of the entire Multiverse.</desc>
 		<tooltip>Cooldown drops the more it fires. Can chain up to 7 times!</tooltip>
@@ -3592,26 +3593,18 @@
 		<cooldown>0</cooldown>
 		<power>2</power>
 		<simultaneousFire>true</simultaneousFire>
-		<fireTime>0.02</fireTime>
+		<fireTime>0.05</fireTime>
 		<cost>9999</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
 		<spawnCrew>
 			<race>fm_repair_hull</race>
 			<number>1</number>
-			<lifetime>0.1</lifetime>
 			<noSlot>true</noSlot>
 			<statBoosts>
 				<statBoost name="noClone">
 					<boostType>SET</boostType>
 					<value>true</value>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
@@ -3662,10 +3655,11 @@
 		<simultaneousFire>true</simultaneousFire>
 		<fireTime>0.02</fireTime>
 		<cost>9999</cost>
+		<spin>720</spin>
 		<bp>2</bp>
 		<rarity>0</rarity>
 		<projectiles>
-			<projectile count="3" fake="false">ion_4_shot</projectile>
+			<projectile count="3" fake="false">ion_1_shot</projectile>
 		</projectiles>
 		<launchSounds>
 			<sound>ionShoot1</sound>
@@ -4093,13 +4087,6 @@
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
 				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
 
 			</statBoosts>
 		</spawnCrew>
@@ -4183,13 +4170,6 @@
 				<statBoost name="noClone">
 					<boostType>SET</boostType>
 					<value>true</value>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
@@ -4497,13 +4477,6 @@
 				<statBoost name="noClone">
 					<boostType>SET</boostType>
 					<value>true</value>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
@@ -5534,13 +5507,6 @@
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
 				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
 			</statBoosts>
 		</spawnCrew>
 		<statBoosts>
@@ -5915,13 +5881,6 @@
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
 				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
 			</statBoosts>
 		</spawnCrew>
 	</weaponBlueprint>
@@ -5996,13 +5955,6 @@
 				<statBoost name="noClone">
 					<boostType>SET</boostType>
 					<value>true</value>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
@@ -6085,13 +6037,6 @@
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
 				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
 			</statBoosts>
 		</spawnCrew>
 	</weaponBlueprint>
@@ -6160,13 +6105,6 @@
 				<statBoost name="noClone">
 					<boostType>SET</boostType>
 					<value>true</value>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
@@ -6472,13 +6410,6 @@
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
 				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
 			</statBoosts>
 		</spawnCrew>
 	</weaponBlueprint>
@@ -6552,13 +6483,6 @@
 				<statBoost name="noClone">
 					<boostType>SET</boostType>
 					<value>true</value>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
@@ -6640,13 +6564,6 @@
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
 				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
 			</statBoosts>
 		</spawnCrew>
 	</weaponBlueprint>
@@ -6720,13 +6637,6 @@
 				<statBoost name="noClone">
 					<boostType>SET</boostType>
 					<value>true</value>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
@@ -7733,13 +7643,6 @@
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
 				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
 			</statBoosts>
 		</spawnCrew>
 	</weaponBlueprint>
@@ -7834,13 +7737,6 @@
 				<statBoost name="noClone">
 					<boostType>SET</boostType>
 					<value>true</value>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
@@ -9574,13 +9470,6 @@
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
 				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
 
 			</statBoosts>
 		</spawnCrew>
@@ -9635,13 +9524,6 @@
 				<statBoost name="noClone">
 					<boostType>SET</boostType>
 					<value>true</value>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
@@ -10132,13 +10014,6 @@
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
 				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
 			</statBoosts>
 		</spawnCrew>
 	</weaponBlueprint>
@@ -10195,13 +10070,6 @@
 				<statBoost name="noClone">
 					<boostType>SET</boostType>
 					<value>true</value>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
@@ -10393,13 +10261,6 @@
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
 				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
 			</statBoosts>
 		</spawnCrew>
 	</weaponBlueprint>
@@ -10446,13 +10307,6 @@
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
 				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
 			</statBoosts>
 		</spawnCrew>
 	</weaponBlueprint>
@@ -10495,13 +10349,6 @@
 				<statBoost name="noClone">
 					<boostType>SET</boostType>
 					<value>true</value>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
@@ -11178,13 +11025,6 @@
 				<statBoost name="noClone">
 					<boostType>SET</boostType>
 					<value>true</value>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>

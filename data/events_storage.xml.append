@@ -274,90 +274,41 @@
       </event>
     </choice>
 
-    <choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false"><!--PAGE 2 OPTION-->
-      <text>Page 2.</text>
-      <event load="FM_STORAGE_CHECK_JOURNAL_2_LOAD"/>
-    </choice>
-    <choice req="pilot" lvl="1" max_group="8" hidden="true" blue="false"><!--PAGE 2 OPTION-->
-      <text>Nevermind.</text>
-      <event load="STORAGE_CHECK"/>
-    </choice>
-  </event>
-
-  <!--PAGE 2-->
-  <event name="FM_STORAGE_CHECK_JOURNAL_2_LOAD">	<!--LORE JOURNAL-->
-    <event/>
-  </event>
-  <event name="FM_STORAGE_CHECK_JOURNAL_2">
-    <text>Page 2: Reviewing gathered Forgemaster Lore... </text>
-    <checkCargo/>
-
-    <choice req="FM_LORE_PROJECT22" lvl="1" blue="false" hidden="true" max_group="1">
+    <choice req="FM_LORE_PROJECT22" lvl="1" blue="false" hidden="true" max_group="7">
       <text>Review Project #22: Unnamed lore.</text>
       <event>
         <loadEvent>FM_LORE_PROJECT22_READ</loadEvent>
       </event>
     </choice>
-    <choice req="FM_LORE_PHOTON" lvl="1" blue="false" hidden="true" max_group="2">
+
+    <choice req="FM_LORE_PHOTON" lvl="1" blue="false" hidden="true" max_group="8">
       <text>Review Photon Laser I Lore.</text>
       <event>
         <loadEvent>FM_LORE_PHOTON_READ</loadEvent>
       </event>
     </choice>
 
-    <choice req="FM_LORE_PHOTON2" lvl="1" blue="false" hidden="true" max_group="3">
+    <choice req="FM_LORE_PHOTON2" lvl="1" blue="false" hidden="true" max_group="9">
       <text>Review Photon Laser II Lore.</text>
       <event>
         <loadEvent>FM_LORE_PHOTON2_READ</loadEvent>
       </event>
     </choice>
 
-    <choice req="FM_LORE_MENAULION" lvl="1" blue="false" hidden="true" max_group="4">
+    <choice req="FM_LORE_MENAULION" lvl="1" blue="false" hidden="true" max_group="10">
       <text>Review Menaulion Beam Lore.</text>
       <event>
         <loadEvent>FM_LORE_MENAULION_READ</loadEvent>
       </event>
     </choice>
 
-    <!-- PAGE 3 OPTION-->
-    <choice req="pilot" lvl="1" max_group="6" hidden="true" blue="false">
-      <text>Page 3.</text>
-      <event load="FM_STORAGE_CHECK_JOURNAL_3_LOAD"/>
-    </choice>
 
-
-    <!--Back 1 PAGE-->
-    <choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
-      <text>Go back to page 1.</text>
-      <event load="FM_STORAGE_CHECK_JOURNAL_LOAD"/>
-    </choice>
-
-    <!--Back to main craft menu-->
-    <choice req="pilot" lvl="1" max_group="8" hidden="true" blue="false">
-      <text>Nevermind, back to main menu.</text>
+    <choice req="pilot" lvl="1" max_group="20" hidden="true" blue="false">
+      <text>Nevermind.</text>
       <event load="STORAGE_CHECK"/>
     </choice>
   </event>
 
-  <event name="FM_STORAGE_CHECK_JOURNAL_3_LOAD">	<!--LORE JOURNAL-->
-    <event/>
-  </event>
-  <event name="FM_STORAGE_CHECK_JOURNAL_3">
-
-    <text>Page 3: Reviewing gathered Forgemaster Lore... </text>
-    <checkCargo/>
-    <!-- PAGE 3 OPTION-->
-    <choice req="pilot" lvl="1" max_group="6" hidden="true" blue="false">
-      <text>Go back to page 2.</text>
-      <event load="FM_STORAGE_CHECK_JOURNAL_2_LOAD"/>
-    </choice>
-
-    <!--Back to main  menu-->
-    <choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
-      <text>Nevermind, back to main menu.</text>
-      <event load="STORAGE_CHECK"/>
-    </choice>
-  </event>
 
 </FTL>
 
@@ -875,7 +826,7 @@
   </event>
 </FTL>
 <!--NOTE: THE ABOVE MENU IS RARELY EVER CHANGED CODE-WISE! Might need new pages in the future?-->
-
+<!-- lol, why tho, we got new hs thing!-->
 
 
 <!-- ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫ ╫   -->
@@ -943,61 +894,33 @@
       <event load="OPTION_INVALID"/>
     </choice>
 
-    <!--PAGE 2 OPTION-->
-    <choice req="FM_LASER_PAGE2_LIST" lvl="1" max_group="6" hidden="true" blue="true">
-      <text>Page 2, Craft Ready!</text>
-      <event load="STORAGE_CHECK_CREATE_LASER_2"/>
-    </choice>
-    <!--PAGE 2 OPTION-->
-    <choice req="pilot" lvl="1" max_group="6" hidden="true" blue="false">
-      <text>Page 2.</text>
-      <event load="STORAGE_CHECK_CREATE_LASER_2"/>
-    </choice>
-
-    <choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
-      <text>Nevermind.</text>
-      <event load="STORAGE_CHECK_CREATE_LOAD"/>
-    </choice>
-  </event>
-
-  <!--PAGE 2-->
-  <event name="STORAGE_CHECK_CREATE_LASER_2">
-
-    <text>Page 2: Which weapon would you like to craft? </text>
-    <checkCargo/>
-
-    <choice req="FM_LASER_HUMAN_LIST" lvl="1" blue="false" hidden="true" max_group="1">
+    <choice req="FM_LASER_HUMAN_LIST" lvl="1" blue="false" hidden="true" max_group="6">
       <text>Install the Irradiation Laser core in the Heavy I chassis to forge the 'Rebel Ripper' Laser.</text>
       <event load="STORAGE_CHECK_CREATE_FM_LASER_HUMAN"/>
     </choice>
 
-    <choice req="FM_LASER_HUMAN_LIST" lvl="0" blue="false" hidden="true" max_group="1">
+    <choice req="FM_LASER_HUMAN_LIST" lvl="0" blue="false" hidden="true" max_group="6">
       <text>You must have a Irradiation Laser and a Heavy Laser I to forge the 'Rebel Ripper' Laser.</text>
       <event load="OPTION_INVALID"/>
     </choice>
 
-    <choice req="FM_LASER_ION_MEGA_LIST" lvl="1" blue="false" hidden="true" max_group="2">
+    <choice req="FM_LASER_ION_MEGA_LIST" lvl="1" blue="false" hidden="true" max_group="7">
       <text>Using the extra scrap, you create a much larger hull to improve the Piercing Laser's Chassis, Install the teleport tech of the Ion Bomb, and then tamper with some coordinates you probably shouldn't.</text>
       <event load="STORAGE_CHECK_CREATE_FM_LASER_ION_MEGA"/>
     </choice>
 
-    <choice req="FM_LASER_ION_MEGA_LIST" lvl="0" blue="false" hidden="true" max_group="2">
+    <choice req="FM_LASER_ION_MEGA_LIST" lvl="0" blue="false" hidden="true" max_group="7">
       <text>You must have a hefty amount of scrap, an Ion Bomb teleport tech, and the core of a Piercing Laser II to craft this weapon.</text>
       <event load="OPTION_INVALID"/>
     </choice>
 
-    <choice req="GATLING_ANCIENT" lvl="1" blue="true" hidden="true" max_group="3">
+    <choice req="GATLING_ANCIENT" lvl="1" blue="true" hidden="true" max_group="8">
       <text>Have Alastair tweak the Godkiller.[Cost: 100]</text>
       <event load="STORAGE_CHECK_CREATE_FM_GODKILLER"/>
     </choice>
-    <!--Back 1 PAGE-->
-    <choice req="pilot" lvl="1" max_group="6" hidden="true" blue="false">
-      <text>Back 1 Page.</text>
-      <event load="STORAGE_CHECK_CREATE_LASER_LOAD"/>
-    </choice>
 
     <!--Back to main craft menu-->
-    <choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
+    <choice req="pilot" lvl="1" max_group="20" hidden="true" blue="false">
       <text>Nevermind, back to main menu.</text>
       <event load="STORAGE_CHECK_CREATE_LOAD"/>
     </choice>
@@ -1054,84 +977,53 @@
       <event load="OPTION_INVALID"/>
     </choice>
 
-
-
-    <!--PAGE 2 OPTION-->
-    <choice req="FM_ION_PAGE2_LIST" lvl="1" max_group="5" hidden="true" blue="true">
-      <text>Page 2, Craft Ready!</text>
-      <event load="STORAGE_CHECK_CREATE_ION_2"/>
-    </choice>
-    <!--PAGE 2 OPTION-->
-    <choice req="pilot" lvl="1" max_group="5" hidden="true" blue="false">
-      <text>Page 2.</text>
-      <event load="STORAGE_CHECK_CREATE_ION_2"/>
-    </choice>
-
-    <choice req="pilot" lvl="1" max_group="6" hidden="true" blue="false">
-      <text>Nevermind.</text>
-      <event load="STORAGE_CHECK_CREATE_LOAD"/>
-    </choice>
-  </event>
-
-  <!--PAGE 2-->
-  <event name="STORAGE_CHECK_CREATE_ION_2">
-
-    <text>Page 2: Which weapon would you like to craft? </text>
-    <checkCargo/>
-
-    <choice req="FM_PULSE_1_LIST" lvl="1" blue="false" hidden="true" max_group="1">
+    <choice req="FM_PULSE_1_LIST" lvl="1" blue="false" hidden="true" max_group="5">
       <text>Combine the Burst Laser I and Energy I to forge the Pulse Laser I.</text>
       <event load="STORAGE_CHECK_CREATE_FM_PULSE"/>
     </choice>
 
-    <choice req="FM_PULSE_1_LIST" lvl="0" blue="false" hidden="true" max_group="1">
+    <choice req="FM_PULSE_1_LIST" lvl="0" blue="false" hidden="true" max_group="5">
       <text>You must have a Burst Laser I and Energy I to forge this weapon.</text>
       <event load="OPTION_INVALID"/>
     </choice>
 
-    <choice req="FM_PULSE_2_LIST_PLUS" lvl="1" blue="false" hidden="true" max_group="2">
+    <choice req="FM_PULSE_2_LIST_PLUS" lvl="1" blue="false" hidden="true" max_group="6">
       <text>Combine the Burst Laser II and Energy II† to forge the Pulse Laser II†.</text>
       <event load="STORAGE_CHECK_CREATE_FM_PULSE_2_PLAYER"/>
     </choice>
 
-    <choice req="FM_PULSE_2_LIST" lvl="1" blue="false" hidden="true" max_group="3">
+    <choice req="FM_PULSE_2_LIST" lvl="1" blue="false" hidden="true" max_group="7">
       <text>Combine the Burst Laser II and Energy II to forge the Pulse Laser II.</text>
       <event load="STORAGE_CHECK_CREATE_FM_PULSE_2"/>
     </choice>
 
-    <choice req="FM_PULSE_2_LIST" lvl="0" blue="false" hidden="true" max_group="3">
+    <choice req="FM_PULSE_2_LIST" lvl="0" blue="false" hidden="true" max_group="7">
       <text>You must have a Burst Laser II and Energy II to forge this weapon.</text>
       <event load="OPTION_INVALID"/>
     </choice>
 
-    <choice req="FM_PULSE_3_LIST" lvl="1" blue="false" hidden="true" max_group="4">
+    <choice req="FM_PULSE_3_LIST" lvl="1" blue="false" hidden="true" max_group="8">
       <text>Combine the Burst Laser III and Energy III to forge the Pulse Laser III.</text>
       <event load="STORAGE_CHECK_CREATE_FM_PULSE_3"/>
     </choice>
 
-    <choice req="FM_PULSE_3_LIST" lvl="0" blue="false" hidden="true" max_group="4">
+    <choice req="FM_PULSE_3_LIST" lvl="0" blue="false" hidden="true" max_group="8">
       <text>You must have a Burst Laser III and Energy III to forge this weapon.</text>
       <event load="OPTION_INVALID"/>
     </choice>
 
-    <choice req="FM_PULSEDEEP_LIST" lvl="1" blue="false" hidden="true" max_group="5">
+    <choice req="FM_PULSEDEEP_LIST" lvl="1" blue="false" hidden="true" max_group="9">
       <text>Combine the Heavy Energy and Heavy Ion to forge the Pulsedeep Cannon.</text>
       <event load="STORAGE_CHECK_CREATE_FM_PULSEDEEP"/>
     </choice>
 
-    <choice req="FM_PULSEDEEP_LIST" lvl="0" blue="false" hidden="true" max_group="5">
+    <choice req="FM_PULSEDEEP_LIST" lvl="0" blue="false" hidden="true" max_group="9">
       <text>You must have a Heavy Energy and Heavy Ion to forge this weapon.</text>
       <event load="OPTION_INVALID"/>
     </choice>
 
-    <!--Back 1 PAGE-->
-    <choice req="pilot" lvl="1" max_group="6" hidden="true" blue="false">
-      <text>Back 1 Page.</text>
-      <event load="STORAGE_CHECK_CREATE_ION_LOAD"/>
-    </choice>
-
     <!--Back to main craft menu-->
-    <choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
+    <choice req="pilot" lvl="1" max_group="20" hidden="true" blue="false">
       <text>Nevermind, back to main menu.</text>
       <event load="STORAGE_CHECK_CREATE_LOAD"/>
     </choice>
@@ -1214,39 +1106,17 @@
       <event load="OPTION_INVALID"/>
     </choice>
 
-    <!--PAGE 2 OPTION-->
-    <choice req="FM_BEAM_PAGE2_LIST" lvl="1" max_group="8" hidden="true" blue="true">
-      <text>Page 2, Craft Ready!</text>
-      <event load="STORAGE_CHECK_CREATE_BEAM_2"/>
-    </choice>
-    <!--PAGE 2 OPTION-->
-    <choice req="pilot" lvl="1" max_group="8" hidden="true" blue="false">
-      <text>Page 2.</text>
-      <event load="STORAGE_CHECK_CREATE_BEAM_2"/>
-    </choice>
-
-    <choice req="pilot" lvl="1" max_group="9" hidden="true" blue="false">
-      <text>Nevermind.</text>
-      <event load="STORAGE_CHECK_CREATE_LOAD"/>
-    </choice>
-  </event>
-
-  <event name="STORAGE_CHECK_CREATE_BEAM_2">
-
-    <text>Page 2: Which weapon would you like to craft? </text>
-    <checkCargo/>
-
-    <choice req="FM_BEAM_MINING_3_LIST" lvl="1" blue="false" hidden="true" max_group="1">
+    <choice req="FM_BEAM_MINING_3_LIST" lvl="1" blue="false" hidden="true" max_group="8">
       <text>Combine the Misericorde and Ishimura Beam to forge the Terra Nova 'ShipCracker'.[Cost: 50~]</text>
       <event load="STORAGE_CHECK_CREATE_FM_BEAM_MINING_3"/>
     </choice>
 
-    <choice req="FM_BEAM_MINING_3_LIST_2" lvl="1" blue="false" hidden="true" max_group="1">
+    <choice req="FM_BEAM_MINING_3_LIST_2" lvl="1" blue="false" hidden="true" max_group="9">
       <text>Combine the Stiletto and Ishimura Beam to forge the Terra Nova 'ShipCracker'.[Cost: 50~]</text>
       <event load="STORAGE_CHECK_CREATE_FM_BEAM_MINING_3_2"/>
     </choice>
 
-    <choice req="FM_BEAM_MINING_3_LIST" lvl="0" blue="false" hidden="true" max_group="1">
+    <choice req="FM_BEAM_MINING_3_LIST_ANY" lvl="0" blue="false" hidden="true" max_group="9">
       <text>You must have a Misericorde (or Stiletto) and Ishimura Beam to forge this weapon.</text>
       <event load="OPTION_INVALID"/>
     </choice>
@@ -1472,66 +1342,38 @@
       <event load="OPTION_INVALID"/>
     </choice>
 
-    <!--PAGE 2 OPTION-->
-    <choice req="FM_EXPLOSIVE_PAGE2_LIST" lvl="1" max_group="7" hidden="true" blue="true">
-      <text>Page 2, Craft Ready!</text>
-      <event load="STORAGE_CHECK_CREATE_EXPLOSIVES_2"/>
-    </choice>
-    <!--PAGE 2 OPTION-->
-    <choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
-      <text>Page 2.</text>
-      <event load="STORAGE_CHECK_CREATE_EXPLOSIVES_2"/>
-    </choice>
-
-    <choice req="pilot" lvl="1" max_group="8" hidden="true" blue="false">
-      <text>Nevermind.</text>
-      <event load="STORAGE_CHECK_CREATE_LOAD"/>
-    </choice>
-  </event>
-
-  <event name="STORAGE_CHECK_CREATE_EXPLOSIVES_2">
-
-    <text>Page 2: Which weapon would you like to craft? </text>
-    <checkCargo/>
-
-    <choice req="FM_BOMBLAUNCHER_HULL_LIST" lvl="1" blue="false" hidden="true" max_group="1">
+    <choice req="FM_BOMBLAUNCHER_HULL_LIST" lvl="1" blue="false" hidden="true" max_group="7">
       <text>Jury-Rig the power core of the Hull Laser II into the Sobek Mine launcher to forge this weapon.</text>
       <event load="STORAGE_CHECK_CREATE_FM_BOMBLAUNCHER_HULL"/>
     </choice>
 
-    <choice req="FM_BOMBLAUNCHER_HULL_LIST" lvl="0" blue="false" hidden="true" max_group="1">
+    <choice req="FM_BOMBLAUNCHER_HULL_LIST" lvl="0" blue="false" hidden="true" max_group="7">
       <text>You must have a Sobek MineLauncher and Hull Laser II to forge this weapon.</text>
       <event load="OPTION_INVALID"/>
     </choice>
 
-    <choice req="FM_MINELAUNCHER_BIO_LIST" lvl="1" blue="false" hidden="true" max_group="2">
+    <choice req="FM_MINELAUNCHER_BIO_LIST" lvl="1" blue="false" hidden="true" max_group="8">
       <text>Tear the core of the Ascelpius out and fit it to the Osiris.</text>
       <event load="STORAGE_CHECK_CREATE_FM_MINELAUNCHER_BIO"/>
     </choice>
 
-    <choice req="FM_MINELAUNCHER_BIO_LIST" lvl="0" blue="false" hidden="true" max_group="2">
+    <choice req="FM_MINELAUNCHER_BIO_LIST" lvl="0" blue="false" hidden="true" max_group="8">
       <text>You must have an Ascelpius Missile and an Osiris Minelauncher to forge this weapon.</text>
       <event load="OPTION_INVALID"/>
     </choice>
 
-    <choice req="FM_ION_MISSILES_LIST" lvl="1" blue="false" hidden="true" max_group="5">
+    <choice req="FM_ION_MISSILES_LIST" lvl="1" blue="false" hidden="true" max_group="9">
       <text>Combine the Hermes Heavy Missile and Ion II to forge the 'Debilitatum' Heavy Missiles.</text>
       <event load="STORAGE_CHECK_CREATE_FM_ION_MISSILES"/>
     </choice>
 
-    <choice req="FM_ION_MISSILES_LIST" lvl="0" blue="false" hidden="true" max_group="5">
+    <choice req="FM_ION_MISSILES_LIST" lvl="0" blue="false" hidden="true" max_group="9">
       <text>You must have a Hermes Heavy Missile and Ion II to forge this weapon.</text>
       <event load="OPTION_INVALID"/>
     </choice>
 
-    <!--Back 1 PAGE-->
-    <choice req="pilot" lvl="1" max_group="6" hidden="true" blue="false">
-      <text>Back 1 Page.</text>
-      <event load="STORAGE_CHECK_CREATE_EXPLOSIVES_LOAD"/>
-    </choice>
-
     <!--Back to main craft menu-->
-    <choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
+    <choice req="pilot" lvl="1" max_group="20" hidden="true" blue="false">
       <text>Nevermind, back to main menu.</text>
       <event load="STORAGE_CHECK_CREATE_LOAD"/>
     </choice>
@@ -5868,7 +5710,7 @@
           <event load="OPTION_INVALID"/>
         </choice>
 
-        <choice req="SHOTGUN_TOGGLE_FIRE_INVIS" lvl="10" hidden="true" blue ="true" max_group="1">
+        <choice req="SHOTGUN_TOGGLE_FIRE_INVIS" lvl="9" hidden="true" blue ="true" max_group="1">
           <text>you can't fit any more artillery systems on your ship</text>
           <event load="OPTION_INVALID"/>
         </choice>

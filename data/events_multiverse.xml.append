@@ -1516,62 +1516,33 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<!--PAGE 2 OPTION-->
-		<choice req="FM_LASER_PAGE2_LIST" lvl="1" max_group="6" hidden="true" blue="true">
-			<text>Page 2, Craft Ready!</text>
-			<event load="FM_FORGE_WEAPON_LASER_2"/>
-		</choice>
-		<!--PAGE 2 OPTION-->
-		<choice req="pilot" lvl="1" max_group="6" hidden="true" blue="false">
-			<text>Page 2.</text>
-			<event load="FM_FORGE_WEAPON_LASER_2"/>
-		</choice>
-
-		<choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
-			<text>Nevermind.</text>
-			<event load="FM_FORGE_WEAPON_LOAD"/>
-		</choice>
-	</event>
-
-	<!--PAGE 2-->
-	<event name="FM_FORGE_WEAPON_LASER_2">
-
-		<text>Page 2: Which weapon would you like to craft? </text>
-		<checkCargo/>
-
-		<choice req="FM_LASER_HUMAN_LIST" lvl="1" blue="false" hidden="true" max_group="1">
+		<choice req="FM_LASER_HUMAN_LIST" lvl="1" blue="false" hidden="true" max_group="6">
 			<text>Install the Irradiation Laser core in the Heavy I chassis to forge the 'Rebel Ripper' Laser. [Cost: 100~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_LASER_HUMAN"/>
 		</choice>
 
-		<choice req="FM_LASER_HUMAN_LIST" lvl="0" blue="false" hidden="true" max_group="1">
+		<choice req="FM_LASER_HUMAN_LIST" lvl="0" blue="false" hidden="true" max_group="6">
 			<text>You must have a Irradiation Laser and a Heavy Laser I to forge the 'Rebel Ripper' Laser.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<choice req="FM_LASER_ION_MEGA_LIST" lvl="1" blue="false" hidden="true" max_group="2">
+		<choice req="FM_LASER_ION_MEGA_LIST" lvl="1" blue="false" hidden="true" max_group="7">
 			<text>Forge the Absolution.[Cost: 280~, 15}]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_LASER_ION_MEGA"/>
 		</choice>
 
-		<choice req="FM_LASER_ION_MEGA_LIST" lvl="0" blue="false" hidden="true" max_group="2">
+		<choice req="FM_LASER_ION_MEGA_LIST" lvl="0" blue="false" hidden="true" max_group="7">
 			<text>You must have a hefty amount of scrap, an Ion Bomb teleport tech, and the core of a Piercing Laser II to craft this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<choice req="GATLING_ANCIENT" lvl="1" blue="true" hidden="true" max_group="3">
+		<choice req="GATLING_ANCIENT" lvl="1" blue="true" hidden="true" max_group="8">
 			<text>Have Alastair tweak the Godkiller.[Cost: 10]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_GODKILLER"/>
 		</choice>
 
-		<!--Back 1 PAGE-->
-		<choice req="pilot" lvl="1" max_group="6" hidden="true" blue="false">
-			<text>Back 1 Page.</text>
-			<event load="FM_FORGE_WEAPON_LASER_LOAD"/>
-		</choice>
-
 		<!--Back to main craft menu-->
-		<choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
+		<choice req="pilot" lvl="1" max_group="20" hidden="true" blue="false">
 			<text>Nevermind, back to main menu.</text>
 			<event load="FM_FORGE_WEAPON_LOAD"/>
 		</choice>
@@ -1628,83 +1599,53 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<!--PAGE 2 OPTION-->
-		<choice req="FM_ION_PAGE2_LIST" lvl="1" max_group="5" hidden="true" blue="true">
-			<text>Page 2, Craft Ready!</text>
-			<event load="FM_FORGE_WEAPON_ION_2"/>
-		</choice>
-		<!--PAGE 2 OPTION-->
-		<choice req="pilot" lvl="1" max_group="5" hidden="true" blue="false">
-			<text>Page 2.</text>
-			<event load="FM_FORGE_WEAPON_ION_2"/>
-		</choice>
-
-		<choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
-			<text>Nevermind.</text>
-			<event load="FM_FORGE_WEAPON_LOAD"/>
-		</choice>
-	</event>
-
-
-	<event name="FM_FORGE_WEAPON_ION_2">
-
-		<text>Page 2: Which weapon would you like to craft? </text>
-		<checkCargo/>
-
-		<choice req="FM_PULSE_1_LIST" lvl="1" blue="false" hidden="true" max_group="1">
+		<choice req="FM_PULSE_1_LIST" lvl="1" blue="false" hidden="true" max_group="5">
 			<text>Combine the Burst Laser I and Energy I to forge the Pulse Laser I. [Cost: 105~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_PULSE"/>
 		</choice>
 
-		<choice req="FM_PULSE_1_LIST" lvl="0" blue="false" hidden="true" max_group="1">
+		<choice req="FM_PULSE_1_LIST" lvl="0" blue="false" hidden="true" max_group="5">
 			<text>You must have a Burst Laser I and Energy I to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<choice req="FM_PULSE_2_LIST_PLUS" lvl="1" blue="false" hidden="true" max_group="3">
+		<choice req="FM_PULSE_2_LIST_PLUS" lvl="1" blue="false" hidden="true" max_group="6">
 			<text>Combine the Burst Laser II and Energy II† to forge the Pulse Laser II†. [Cost: 130~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_PULSE_2_PLAYER"/>
 		</choice>
 
-		<choice req="FM_PULSE_2_LIST" lvl="1" blue="false" hidden="true" max_group="3">
+		<choice req="FM_PULSE_2_LIST" lvl="1" blue="false" hidden="true" max_group="7">
 			<text>Combine the Burst Laser II and Energy II to forge the Pulse Laser II. [Cost: 130~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_PULSE_2"/>
 		</choice>
 
-		<choice req="FM_PULSE_2_LIST" lvl="0" blue="false" hidden="true" max_group="3">
+		<choice req="FM_PULSE_2_LIST" lvl="0" blue="false" hidden="true" max_group="7">
 			<text>You must have a Burst Laser II and Energy II to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<choice req="FM_PULSE_3_LIST" lvl="1" blue="false" hidden="true" max_group="4">
+		<choice req="FM_PULSE_3_LIST" lvl="1" blue="false" hidden="true" max_group="8">
 			<text>Combine the Burst Laser III and Energy III to forge the Pulse Laser III. [Cost: 155~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_PULSE_3"/>
 		</choice>
 
-		<choice req="FM_PULSE_3_LIST" lvl="0" blue="false" hidden="true" max_group="4">
+		<choice req="FM_PULSE_3_LIST" lvl="0" blue="false" hidden="true" max_group="8">
 			<text>You must have a Burst Laser III and Energy III to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-
-		<choice req="FM_PULSEDEEP_LIST" lvl="1" blue="false" hidden="true" max_group="5">
+		<choice req="FM_PULSEDEEP_LIST" lvl="1" blue="false" hidden="true" max_group="9">
 			<text>Combine the Heavy Energy and Heavy Ion to forge the Pulsedeep Cannon. [Cost: 80~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_PULSEDEEP"/>
 		</choice>
 
-		<choice req="FM_PULSEDEEP_LIST" lvl="0" blue="false" hidden="true" max_group="5">
+		<choice req="FM_PULSEDEEP_LIST" lvl="0" blue="false" hidden="true" max_group="9">
 			<text>You must have a Heavy Energy and Heavy Ion to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<!--Back 1 PAGE-->
-		<choice req="pilot" lvl="1" max_group="8" hidden="true" blue="false">
-			<text>Back 1 Page.</text>
-			<event load="FM_FORGE_WEAPON_ION_LOAD"/>
-		</choice>
-
 		<!--Back to main craft menu-->
-		<choice req="pilot" lvl="1" max_group="9" hidden="true" blue="false">
+		<choice req="pilot" lvl="1" max_group="20" hidden="true" blue="false">
 			<text>Nevermind, back to main menu.</text>
 			<event load="FM_FORGE_WEAPON_LOAD"/>
 		</choice>
@@ -1785,56 +1726,27 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<!--PAGE 2 OPTION-->
-		<choice req="FM_BEAM_PAGE2_LIST" lvl="1" max_group="8" hidden="true" blue="true">
-			<text>Page 2, Craft Ready!</text>
-			<event load="FM_FORGE_WEAPON_BEAM_2"/>
-		</choice>
-		<!--PAGE 2 OPTION-->
-		<choice req="pilot" lvl="1" max_group="8" hidden="true" blue="false">
-			<text>Page 2.</text>
-			<event load="FM_FORGE_WEAPON_BEAM_2"/>
+		<choice req="FM_BEAM_MINING_3_LIST" lvl="1" blue="false" hidden="true" max_group="8">
+			<text>Combine the Misericorde and Ishimura Beam to forge the Terra Nova 'ShipCracker'.[Cost: 100~]</text>
+			<event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_MINING_3"/>
 		</choice>
 
+		<choice req="FM_BEAM_MINING_3_LIST_2" lvl="1" blue="false" hidden="true" max_group="9">
+			<text>Combine the Stiletto and Ishimura Beam to forge the Terra Nova 'ShipCracker'.[Cost: 100~]</text>
+			<event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_MINING_3_2"/>
+		</choice>
 
-		<choice req="pilot" lvl="1" max_group="9" hidden="true" blue="false">
+		<choice req="FM_BEAM_MINING_3_LIST_ANY" lvl="0" blue="false" hidden="true" max_group="8">
+			<text>You must have a Misericorde (or Stiletto) and Ishimura Beam to forge this weapon.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+
+		<choice req="pilot" lvl="1" max_group="20" hidden="true" blue="false">
 			<text>Nevermind.</text>
 			<event load="FM_FORGE_WEAPON_LOAD"/>
 		</choice>
 	</event>
 
-	<event name="FM_FORGE_WEAPON_BEAM_2">
-
-		<text>Page 2: Which weapon would you like to craft? </text>
-		<checkCargo/>
-
-		<choice req="FM_BEAM_MINING_3_LIST" lvl="1" blue="false" hidden="true" max_group="1">
-			<text>Combine the Misericorde and Ishimura Beam to forge the Terra Nova 'ShipCracker'.[Cost: 100~]</text>
-			<event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_MINING_3"/>
-		</choice>
-
-		<choice req="FM_BEAM_MINING_3_LIST_2" lvl="1" blue="false" hidden="true" max_group="1">
-			<text>Combine the Stiletto and Ishimura Beam to forge the Terra Nova 'ShipCracker'.[Cost: 100~]</text>
-			<event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_MINING_3_2"/>
-		</choice>
-
-		<choice req="FM_BEAM_MINING_3_LIST" lvl="0" blue="false" hidden="true" max_group="1">
-			<text>You must have a Misericorde (or Stiletto) and Ishimura Beam to forge this weapon.</text>
-			<event load="OPTION_INVALID"/>
-		</choice>
-
-		<!--Back 1 PAGE-->
-		<choice req="pilot" lvl="1" max_group="6" hidden="true" blue="false">
-			<text>Back 1 Page.</text>
-			<event load="FM_FORGE_WEAPON_BEAM_LOAD"/>
-		</choice>
-
-		<!--Back to main craft menu-->
-		<choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
-			<text>Nevermind, back to main menu.</text>
-			<event load="FM_FORGE_WEAPON_LOAD"/>
-		</choice>
-	</event>
 
 	<event name="FM_FORGE_WEAPON_PINPOINT_LOAD">	<!--BEAM/Pinpoint CRAFT CATEGORY-->
 		<event/>
@@ -2036,66 +1948,38 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<!--PAGE 2 OPTION-->
-		<choice req="FM_EXPLOSIVES_PAGE2_LIST" lvl="1" max_group="6" hidden="true" blue="true">
-			<text>Page 2, Craft Ready!</text>
-			<event load="FM_FORGE_WEAPON_EXPLOSIVES_2"/>
-		</choice>
-		<!--PAGE 2 OPTION-->
-		<choice req="pilot" lvl="1" max_group="6" hidden="true" blue="false">
-			<text>Page 2.</text>
-			<event load="FM_FORGE_WEAPON_EXPLOSIVES_2"/>
-		</choice>
-
-		<choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
-			<text>Nevermind.</text>
-			<event load="FM_FORGE_WEAPON_LOAD"/>
-		</choice>
-	</event>
-
-	<!--PAGE 2-->
-	<event name="FM_FORGE_WEAPON_EXPLOSIVES_2">
-
-		<text>Page 2: Which weapon would you like to craft? </text>
-		<checkCargo/>
-
-		<choice req="FM_BOMBLAUNCHER_HULL_LIST" lvl="1" blue="false" hidden="true" max_group="1">
+		<choice req="FM_BOMBLAUNCHER_HULL_LIST" lvl="1" blue="false" hidden="true" max_group="6">
 			<text>Jury-Rig the power core of the Hull Laser II into the Sobek Mine launcher to forge this weapon.[Cost: 80~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_BOMBLAUNCHER_HULL"/>
 		</choice>
 
-		<choice req="FM_BOMBLAUNCHER_HULL_LIST" lvl="0" blue="false" hidden="true" max_group="1">
+		<choice req="FM_BOMBLAUNCHER_HULL_LIST" lvl="0" blue="false" hidden="true" max_group="6">
 			<text>You must have a Sobek MineLauncher and Hull Laser II to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<choice req="FM_MINELAUNCHER_BIO_LIST" lvl="1" blue="false" hidden="true" max_group="2">
+		<choice req="FM_MINELAUNCHER_BIO_LIST" lvl="1" blue="false" hidden="true" max_group="7">
 			<text>Tear the core of the Ascelpius out and fit it to the Osiris.[Cost: 140~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_MINELAUNCHER_BIO"/>
 		</choice>
 
-		<choice req="FM_MINELAUNCHER_BIO_LIST" lvl="0" blue="false" hidden="true" max_group="2">
+		<choice req="FM_MINELAUNCHER_BIO_LIST" lvl="0" blue="false" hidden="true" max_group="7">
 			<text>You must have an Ascelpius Missile and an Osiris Minelauncher to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<choice req="FM_ION_MISSILE_LIST" lvl="1" blue="false" hidden="true" max_group="3">
+		<choice req="FM_ION_MISSILE_LIST" lvl="1" blue="false" hidden="true" max_group="8">
 		  <text>Combine the Hermes Missile and Ion II to forge the 'Debilitatum' Heavy Missiles.[Cost: 80~]</text>
 		  <event load="NPC_STORAGE_CHECK_CREATE_FM_ION_MISSILES"/>
 		</choice>
 
-		<choice req="FM_ION_MISSILES_LIST" lvl="0" blue="false" hidden="true" max_group="3">
+		<choice req="FM_ION_MISSILES_LIST" lvl="0" blue="false" hidden="true" max_group="8">
 		  <text>You must have a Hermes Missile and Ion II to forge this weapon.</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<!--Back 1 PAGE-->
-		<choice req="pilot" lvl="1" max_group="6" hidden="true" blue="false">
-			<text>Back 1 Page.</text>
-			<event load="FM_FORGE_WEAPON_EXPLOSIVES_LOAD"/>
-		</choice>
 
 		<!--Back to main craft menu-->
-		<choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
+		<choice req="pilot" lvl="1" max_group="20" hidden="true" blue="false">
 			<text>Nevermind, back to main menu.</text>
 			<event load="FM_FORGE_WEAPON_LOAD"/>
 		</choice>
@@ -6497,6 +6381,246 @@
 		  <text>Currently 25 upgrade notches in use..."overcharmed X"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="26" max_lvl="26" max_group="2" blue="false" hidden="true">
+		  <text>Currently 26 upgrade notches in use..."overcharmed XI"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="27" max_lvl="27" max_group="2" blue="false" hidden="true">
+		  <text>Currently 27 upgrade notches in use..."overcharmed XII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="28" max_lvl="28" max_group="2" blue="false" hidden="true">
+		  <text>Currently 28 upgrade notches in use..."overcharmed XIII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="29" max_lvl="29" max_group="2" blue="false" hidden="true">
+		  <text>Currently 29 upgrade notches in use..."overcharmed XIV"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="30" max_lvl="30" max_group="2" blue="false" hidden="true">
+		  <text>Currently 30 upgrade notches in use..."overcharmed XV"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="31" max_lvl="31" max_group="2" blue="false" hidden="true">
+		  <text>Currently 31 upgrade notches in use..."overcharmed XVI"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="32" max_lvl="32" max_group="2" blue="false" hidden="true">
+		  <text>Currently 32 upgrade notches in use..."overcharmed XVII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="33" max_lvl="33" max_group="2" blue="false" hidden="true">
+		  <text>Currently 33 upgrade notches in use..."overcharmed XVIII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="34" max_lvl="34" max_group="2" blue="false" hidden="true">
+		  <text>Currently 34 upgrade notches in use..."overcharmed XIX"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="35" max_lvl="35" max_group="2" blue="false" hidden="true">
+		  <text>Currently 35 upgrade notches in use..."overcharmed XX"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="36" max_lvl="36" max_group="2" blue="false" hidden="true">
+		  <text>Currently 36 upgrade notches in use..."overcharmed XXI"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="37" max_lvl="37" max_group="2" blue="false" hidden="true">
+		  <text>Currently 37 upgrade notches in use..."overcharmed XXII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="38" max_lvl="38" max_group="2" blue="false" hidden="true">
+		  <text>Currently 38 upgrade notches in use..."overcharmed XXIII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="39" max_lvl="39" max_group="2" blue="false" hidden="true">
+		  <text>Currently 39 upgrade notches in use..."overcharmed XXIV"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="40" max_lvl="40" max_group="2" blue="false" hidden="true">
+		  <text>Currently 40 upgrade notches in use..."overcharmed XXV"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="41" max_lvl="41" max_group="2" blue="false" hidden="true">
+		  <text>Currently 41 upgrade notches in use..."overcharmed XXVI"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="42" max_lvl="42" max_group="2" blue="false" hidden="true">
+		  <text>Currently 42 upgrade notches in use..."overcharmed XXVII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="43" max_lvl="43" max_group="2" blue="false" hidden="true">
+		  <text>Currently 43 upgrade notches in use..."overcharmed XXVIII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="44" max_lvl="44" max_group="2" blue="false" hidden="true">
+		  <text>Currently 44 upgrade notches in use..."overcharmed XXIX"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="45" max_lvl="45" max_group="2" blue="false" hidden="true">
+		  <text>Currently 45 upgrade notches in use..."overcharmed XXX"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="46" max_lvl="46" max_group="2" blue="false" hidden="true">
+		  <text>Currently 46 upgrade notches in use..."overcharmed XXXI"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="47" max_lvl="47" max_group="2" blue="false" hidden="true">
+		  <text>Currently 47 upgrade notches in use..."overcharmed XXXII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="48" max_lvl="48" max_group="2" blue="false" hidden="true">
+		  <text>Currently 48 upgrade notches in use..."overcharmed XXXIII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="49" max_lvl="49" max_group="2" blue="false" hidden="true">
+		  <text>Currently 49 upgrade notches in use..."overcharmed XXXIV"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="50" max_lvl="50" max_group="2" blue="false" hidden="true">
+		  <text>Currently 50 upgrade notches in use..."overcharmed XXXV"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="51" max_lvl="51" max_group="2" blue="false" hidden="true">
+		  <text>Currently 51 upgrade notches in use..."overcharmed XXXVI"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="52" max_lvl="52" max_group="2" blue="false" hidden="true">
+		  <text>Currently 52 upgrade notches in use..."overcharmed XXXVII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="53" max_lvl="53" max_group="2" blue="false" hidden="true">
+		  <text>Currently 53 upgrade notches in use..."overcharmed XXXVIII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="54" max_lvl="54" max_group="2" blue="false" hidden="true">
+		  <text>Currently 54 upgrade notches in use..."overcharmed XXXIX"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="55" max_lvl="55" max_group="2" blue="false" hidden="true">
+		  <text>Currently 55 upgrade notches in use..."overcharmed XL"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="56" max_lvl="56" max_group="2" blue="false" hidden="true">
+		  <text>Currently 56 upgrade notches in use..."overcharmed XLI"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="57" max_lvl="57" max_group="2" blue="false" hidden="true">
+		  <text>Currently 57 upgrade notches in use..."overcharmed XLII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="58" max_lvl="58" max_group="2" blue="false" hidden="true">
+		  <text>Currently 58 upgrade notches in use..."overcharmed XLIII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="59" max_lvl="59" max_group="2" blue="false" hidden="true">
+		  <text>Currently 59 upgrade notches in use..."overcharmed XLIV"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="60" max_lvl="60" max_group="2" blue="false" hidden="true">
+		  <text>Currently 60 upgrade notches in use..."overcharmed XLV"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="61" max_lvl="61" max_group="2" blue="false" hidden="true">
+		  <text>Currently 61 upgrade notches in use..."overcharmed XLVI"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="62" max_lvl="62" max_group="2" blue="false" hidden="true">
+		  <text>Currently 62 upgrade notches in use..."overcharmed XLVII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="63" max_lvl="63" max_group="2" blue="false" hidden="true">
+		  <text>Currently 63 upgrade notches in use..."overcharmed XLVIII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="64" max_lvl="64" max_group="2" blue="false" hidden="true">
+		  <text>Currently 64 upgrade notches in use..."overcharmed XLIX"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="65" max_lvl="65" max_group="2" blue="false" hidden="true">
+		  <text>Currently 65 upgrade notches in use..."overcharmed L"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="66" max_lvl="66" max_group="2" blue="false" hidden="true">
+		  <text>Currently 66 upgrade notches in use..."overcharmed LI"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="67" max_lvl="67" max_group="2" blue="false" hidden="true">
+		  <text>Currently 67 upgrade notches in use..."overcharmed LII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="68" max_lvl="68" max_group="2" blue="false" hidden="true">
+		  <text>Currently 68 upgrade notches in use..."overcharmed LIII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="69" max_lvl="69" max_group="2" blue="false" hidden="true">
+		  <text>Currently 69 upgrade notches in use..."overcharmed LIV"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="70" max_lvl="70" max_group="2" blue="false" hidden="true">
+		  <text>Currently 70 upgrade notches in use..."overcharmed LV"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="71" max_lvl="71" max_group="2" blue="false" hidden="true">
+		  <text>Currently 71 upgrade notches in use..."overcharmed LVI"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="72" max_lvl="72" max_group="2" blue="false" hidden="true">
+		  <text>Currently 72 upgrade notches in use..."overcharmed LVII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="73" max_lvl="73" max_group="2" blue="false" hidden="true">
+		  <text>Currently 73 upgrade notches in use..."overcharmed LVIII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="74" max_lvl="74" max_group="2" blue="false" hidden="true">
+		  <text>Currently 74 upgrade notches in use..."overcharmed LIX"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="75" max_lvl="75" max_group="2" blue="false" hidden="true">
+		  <text>Currently 75 upgrade notches in use..."overcharmed LX"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="76" max_lvl="76" max_group="2" blue="false" hidden="true">
+		  <text>Currently 76 upgrade notches in use..."overcharmed LXI"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="77" max_lvl="77" max_group="2" blue="false" hidden="true">
+		  <text>Currently 77 upgrade notches in use..."overcharmed LXII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="78" max_lvl="78" max_group="2" blue="false" hidden="true">
+		  <text>Currently 78 upgrade notches in use..."overcharmed LXIII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="79" max_lvl="79" max_group="2" blue="false" hidden="true">
+		  <text>Currently 79 upgrade notches in use..."overcharmed LXIV"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="80" max_lvl="80" max_group="2" blue="false" hidden="true">
+		  <text>Currently 80 upgrade notches in use..."overcharmed LXV"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="81" max_lvl="81" max_group="2" blue="false" hidden="true">
+		  <text>Currently 81 upgrade notches in use..."overcharmed LXVI"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="82" max_lvl="82" max_group="2" blue="false" hidden="true">
+		  <text>Currently 82 upgrade notches in use..."overcharmed LXVII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="83" max_lvl="83" max_group="2" blue="false" hidden="true">
+		  <text>Currently 83 upgrade notches in use..."overcharmed LXVIII"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="84" max_lvl="84" max_group="2" blue="false" hidden="true">
+		  <text>Currently 84 upgrade notches in use..."overcharmed LXIX"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="fm_hull_upgrade_point" lvl="85" max_lvl="85" max_group="2" blue="false" hidden="true">
+		  <text>Currently 85 upgrade notches in use..."overcharmed LXX"</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
 		<!--Ship modules-->
 		<choice req="CAN_INSTALL_MODULE_TRUE" lvl="1" max_group="3" blue="false" hidden="true">
 			<text>Install ship-wide modules</text>
@@ -6666,7 +6790,7 @@
 				<loadEvent>FM_MODULAR_HULL_MODULE_FLOORING</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FLOORING" lvl="6" max_group="5" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FLOORING" lvl="6" max_group="6" blue="false" hidden="true">
 			<text>Intelligent Flooring Module [maxed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -6676,7 +6800,7 @@
 				<loadEvent>FM_MODULAR_HULL_MODULE_AERO</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_AERO" lvl="5" max_group="8" blue="false"  hidden="true">
+		<choice req="FM_MODULAR_HULL_AERO" lvl="5" max_group="7" blue="false"  hidden="true">
 			<text>Inspirational Aerosols Module [maxed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -6691,36 +6815,14 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="pilot" max_group="9" blue="false">
-			<text>Page 2.</text>
-			<event>
-				<loadEvent>FM_MODULAR_HULL_MODULES_SHIP2</loadEvent>
-			</event>
-		</choice>
-		<choice req="pilot" max_group="10" blue="false">
-			<text>Nevermind.</text>
-			<event>
-				<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
-			</event>
-		</choice>
-	</event>
-
-	<event name="FM_MODULAR_HULL_MODULES_SHIP2">
-		<text>Here you can see the ship-wide modules you can install (You can select the option to see the effects before installing).</text>
-		<choice req="pilot" max_group="2" blue="false">
 			<text>Scrap Magnet Module [25~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MODULE_SCRAP</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_SCRAP" lvl="3" max_group="2" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_SCRAP" lvl="3" max_group="9" blue="false" hidden="true">
 			<text>Scrap Magnet Module [maxed]</text>
 			<event load="OPTION_INVALID"/>
-		</choice>
-		<choice req="pilot" max_group="9" blue="false">
-			<text>Page 1.</text>
-			<event>
-				<loadEvent>FM_MODULAR_HULL_MODULES_SHIP</loadEvent>
-			</event>
 		</choice>
 		<choice req="pilot" max_group="10" blue="false">
 			<text>Nevermind.</text>
@@ -7048,127 +7150,106 @@
 	<!--system module installation-->
 	<event name="FM_MODULAR_HULL_MODULES_SYSTEMS">
 		<text>Here you can select the system you want to install modules to.</text>
-		<choice req="weapons" max_group="1" blue="false">
+		<choice req="weapons"  blue="false">
 			<text>The Weapons.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_WEAPONS</loadEvent>
 			</event>
 		</choice>
-		<choice req="shields" max_group="2" blue="false">
+		<choice req="shields"  blue="false">
 			<text>The Shields.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_SHIELDS</loadEvent>
 			</event>
 		</choice>
-		<choice req="engines" max_group="3" blue="false">
+		<choice req="engines"  blue="false">
 			<text>The Engines.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_ENGINES</loadEvent>
 			</event>
 		</choice>
-		<choice req="medbay" max_group="4" blue="false">
+		<choice req="medbay"  blue="false">
 			<text>The Medbay.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_MED</loadEvent>
 			</event>
 		</choice>
-		<choice req="clonebay" max_group="4" blue="false">
+		<choice req="clonebay"  blue="false">
 			<text>The Clonebay.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_MED</loadEvent>
 			</event>
 		</choice>
-		<choice req="drones" max_group="5" blue="false">
+		<choice req="drones"  blue="false">
 			<text>The Drones.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_DRONES</loadEvent>
 			</event>
 		</choice>
-		<choice req="oxygen" max_group="6" blue="false">
+		<choice req="oxygen"  blue="false">
 			<text>The Oxygen.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_OXYGEN</loadEvent>
 			</event>
 		</choice>
-		<choice req="teleporter" max_group="7" blue="false">
+		<choice req="teleporter"  blue="false">
 			<text>The Teleporter.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_TELEPORTER</loadEvent>
 			</event>
 		</choice>
-		<choice req="cloaking" max_group="8" blue="false">
+		<choice req="cloaking"  blue="false">
 			<text>The Cloaking.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_CLOAKING</loadEvent>
 			</event>
 		</choice>
-		<choice req="pilot" max_group="9" blue="false">
-			<text>The Page 2.</text>
-			<event>
-				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS2</loadEvent>
-			</event>
-		</choice>
-		<choice req="pilot" max_group="10" blue="false">
-			<text>The Nevermind.</text>
-			<event>
-				<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
-			</event>
-		</choice>
-	</event>
-	<event name="FM_MODULAR_HULL_MODULES_SYSTEMS2">
-		<text>Here you can select the system you want to install modules to.</text>
-		<choice req="artillery" max_group="1" blue="false">
+		<choice req="artillery"  blue="false">
 			<text>The Artillery.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_ARTILLERY</loadEvent>
 			</event>
 		</choice>
-		<choice req="hacking" max_group="2" blue="false">
+		<choice req="hacking"  blue="false">
 			<text>The Hacking.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_HACKING</loadEvent>
 			</event>
 		</choice>
-		<choice req="mind" max_group="3" blue="false">
+		<choice req="mind"  blue="false">
 			<text>The Mind Control.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_MIND</loadEvent>
 			</event>
 		</choice>
-		<choice req="temporal" max_group="4" blue="false">
+		<choice req="temporal"  blue="false">
 			<text>The Temporal Manipulator.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_TEMPORAL</loadEvent>
 			</event>
 		</choice>
-		<choice req="pilot" max_group="5" blue="false">
+		<choice req="pilot"  blue="false">
 			<text>The Piloting.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_PILOT</loadEvent>
 			</event>
 		</choice>
-		<choice req="sensors" max_group="6" blue="false">
+		<choice req="sensors" blue="false">
 			<text>The Sensors.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_SENSORS</loadEvent>
 			</event>
 		</choice>
-		<choice req="doors" max_group="7" blue="false">
+		<choice req="doors" blue="false">
 			<text>The Doors.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_DOORS</loadEvent>
 			</event>
 		</choice>
-		<choice req="battery" max_group="8" blue="false">
+		<choice req="battery"  blue="false">
 			<text>The Battery.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_BATTERY</loadEvent>
-			</event>
-		</choice>
-		<choice req="pilot" max_group="9" blue="false">
-			<text>The Page 1.</text>
-			<event>
-				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS</loadEvent>
 			</event>
 		</choice>
 		<choice req="pilot" max_group="10" blue="false">
@@ -7788,7 +7869,6 @@
 			</event>
 		</choice>
 	</event>
-	<!--page 2-->
 	<event name="FM_MODULAR_HULL_SYSTEM_ARTILLERY">
 		<text>What do you want to install to the Cloaking system?</text>
 		<choice req="FM_MODULAR_HULL_UPDATE_ARTILLERY" lvl="0" max_group="1" blue="false">
@@ -8401,139 +8481,117 @@
 	<!--capstone stuff-->
 	<event name="FM_MODULAR_HULL_CAPSTONE">
 		<text>Here you can see the capstone modules you can install, 3 can be installed in total, upon reaching 5, 10 and 15 upgrade notches (you can select the option to see the effects before installing)</text>
-		<choice req="FM_MODULAR_HULL_SALT" lvl="0" max_lvl="0" max_group="2" blue="false">
+		<choice req="FM_MODULAR_HULL_SALT" lvl="0" max_lvl="0"  blue="false">
 			<text>Saline Hull Body Capstone [150~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_SALT</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_SALT" lvl="1" max_group="2" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_SALT" lvl="1"  blue="false" hidden="true">
 			<text>Saline Hull Body Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_DUSK" lvl="0" max_lvl="0" max_group="3" blue="false">
+		<choice req="FM_MODULAR_HULL_DUSK" lvl="0" max_lvl="0"  blue="false">
 			<text>Depricated Duskbringer Reactor Capstone [110~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_DUSK</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_DUSK" lvl="1" max_group="3" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_DUSK" lvl="1"  blue="false" hidden="true">
 			<text>Depricated Duskbringer Reactor Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_MURAL" lvl="0" max_lvl="0" max_group="4" blue="false">
+		<choice req="FM_MODULAR_HULL_MURAL" lvl="0" max_lvl="0"  blue="false">
 			<text>Aftermarket Hull Murals Capstone [85~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_MURAL</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_MURAL" lvl="1" max_group="4" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_MURAL" lvl="1"  blue="false" hidden="true">
 			<text>Aftermarket Hull Murals Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_COMPRESS" lvl="0" max_lvl="0" max_group="5" blue="false">
+		<choice req="FM_MODULAR_HULL_COMPRESS" lvl="0" max_lvl="0"  blue="false">
 			<text>Compressor Bypass Manifold Capstone [80~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_COMPRESS</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_COMPRESS" lvl="1" max_group="5" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_COMPRESS" lvl="1"  blue="false" hidden="true">
 			<text>Compressor Bypass Manifold Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_PARTICLE" lvl="0" max_lvl="0" max_group="6" blue="false">
+		<choice req="FM_MODULAR_HULL_PARTICLE" lvl="0" max_lvl="0"  blue="false">
 			<text>Particlized Shields Capstone [100~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_PARTICLE</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_PARTICLE" lvl="1" max_group="6" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_PARTICLE" lvl="1"  blue="false" hidden="true">
 			<text>Particlized Shields Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPLINK" lvl="0" max_lvl="0" max_group="7" blue="false">
+		<choice req="FM_MODULAR_HULL_UPLINK" lvl="0" max_lvl="0"  blue="false">
 			<text>Weapon Uplink Matrices Capstone [95~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_UPLINK</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPLINK" lvl="1" max_group="7" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPLINK" lvl="1"  blue="false" hidden="true">
 			<text>Weapon Uplink Matrices Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_PERFECT" lvl="0" max_lvl="0" max_group="8" blue="false">
+		<choice req="FM_MODULAR_HULL_PERFECT" lvl="0" max_lvl="0"  blue="false">
 			<text>Perfect Onboard Efficency Capstone [140~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_PERFECT</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_PERFECT" lvl="1" max_group="8" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_PERFECT" lvl="1"  blue="false" hidden="true">
 			<text>Perfect Onboard Efficency Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="pilot" max_group="9" blue="false">
-			<text>Page 2.</text>
-			<event>
-				<loadEvent>FM_MODULAR_HULL_CAPSTONE2</loadEvent>
-			</event>
-		</choice>
-		<choice req="pilot" max_group="10" blue="false">
-			<text>Nevermind.</text>
-			<event>
-				<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
-			</event>
-		</choice>
-	</event>
-
-	<event name="FM_MODULAR_HULL_CAPSTONE2">
-		<text>Here you can see the ship-wide modules you can install (You can select the option to see the effects before installing).</text>
-		<choice req="FM_MODULAR_HULL_FASTSHIELD" lvl="0" max_lvl="0" max_group="2" blue="false">
+		<choice req="FM_MODULAR_HULL_FASTSHIELD" lvl="0" max_lvl="0"  blue="false">
 			<text>Infinitum Cyclo-Barrier Capstone [80~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_FASTSHIELD</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FASTSHIELD" lvl="1" max_group="2" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FASTSHIELD" lvl="1"  blue="false" hidden="true">
 			<text>Infinitum Cyclo-Barrier Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FASTWEAPON" lvl="0" max_lvl="0" max_group="3" blue="false">
+		<choice req="FM_MODULAR_HULL_FASTWEAPON" lvl="0" max_lvl="0"  blue="false">
 			<text>Infinitum Cyclo-Arsenal Capstone [120~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_FASTWEAPON</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FASTWEAPON" lvl="1" max_group="3" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FASTWEAPON" lvl="1"  blue="false" hidden="true">
 			<text>Infinitum Cyclo-Arsenal Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_CREWKILL" lvl="0" max_lvl="0" max_group="4" blue="false">
+		<choice req="FM_MODULAR_HULL_CREWKILL" lvl="0" max_lvl="0"  blue="false">
 			<text>Metaplasmatic Corrosion Aura Capstone [105~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_CREWKILL</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_CREWKILL" lvl="1" max_group="4" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_CREWKILL" lvl="1"  blue="false" hidden="true">
 			<text>Metaplasmatic Corrosion Aura Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_MAGNETIC" lvl="0" max_lvl="0" max_group="5" blue="false">
+		<choice req="FM_MODULAR_HULL_MAGNETIC" lvl="0" max_lvl="0"  blue="false">
 			<text>Electromagnetic Hull Body Capstone [100~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_MAGNETIC</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_MAGNETIC" lvl="1" max_group="5" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_MAGNETIC" lvl="1"  blue="false" hidden="true">
 			<text>Electromagnetic Hull Body Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="pilot" max_group="9" blue="false">
-			<text>Page 1.</text>
-			<event>
-				<loadEvent>FM_MODULAR_HULL_CAPSTONE</loadEvent>
-			</event>
-		</choice>
-		<choice req="pilot" max_group="10" blue="false">
+		<choice req="pilot" max_group="1" blue="false">
 			<text>Nevermind.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>

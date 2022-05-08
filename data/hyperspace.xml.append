@@ -1699,16 +1699,6 @@
 			<name>LASER_LIGHT_2</name>
 		</req>
 
-
-		<!--PAGE 2 -->
-		<req name="FM_LASER_PAGE2_LIST" type="any"> <!-- PAGE 2 CHECK LASER-->
-			<name>FM_LASER_HUMAN_LIST</name>
-			<name>FM_LASER_ION_MEGA_LIST</name>
-			<name>GATLING_ANCIENT</name>
-		</req>
-
-
-		<!--PAGE 2 Recipe checks-->
 		<req name="FM_LASER_HUMAN_LIST" type="all"> <!-- Heavy Laser I + Anti-Bio Laser -->
 			<name>LASER_HEAVY_1</name>
 			<name>LASER_BIO</name>
@@ -1834,6 +1824,10 @@
 			<name>FM_BEAM_MINING_2</name>
 			<name>FOCUS_3</name>
 		</req>
+		<req name="FM_BEAM_MINING_3_LIST_ANY" type="any">
+			<name>FM_BEAM_MINING_3_LIST</name>
+			<name>FM_BEAM_MINING_3_LIST_2</name>
+		</req>
 
 		<req name="FM_BEAM_PARTICLE_PIERCE_LIST" type="all"> <!-- Particle Beam + Pierce Beam -->
 			<name>BEAM_PARTICLE</name>
@@ -1922,11 +1916,6 @@
 		<req name="FM_BEAM_ION_PIERCE_FORGE_LIST" type="any"> <!-- Do you have the ingredients for a Ion/Energy weapon? If so, light up the category option BLUE in the crafting category menu! -->
 			<name>FM_BEAM_ION_PIERCE_LIST1</name>
 			<name>FM_BEAM_ION_PIERCE_LIST2</name>
-		</req>
-
-		<req name="FM_BEAM_PAGE2_LIST" type="any"> <!-- PAGE 2 CHECK BEAM-->
-			<name>FM_BEAM_MINING_3_LIST</name>
-			<name>FM_BEAM_MINING_3_LIST_2</name>
 		</req>
 	</events>
 
@@ -3768,7 +3757,7 @@
 
 	<crew> <!-- Hull Repair crew -->
 		<race name="fm_repair_hull">
-			<maxHealth>100</maxHealth>
+			<maxHealth>0</maxHealth>
 			<repairSpeed>0</repairSpeed>
 			<canFight>false</canFight>
 			<canRepair>false</canRepair>
@@ -4040,7 +4029,7 @@
 
 	<crew> <!-- Kontos Ion crew, 1 ion damage -->
 		<race name="fm_ion_instant_1">
-			<maxHealth>100</maxHealth>
+			<maxHealth>0</maxHealth>
 			<repairSpeed>0</repairSpeed>
 			<canFight>false</canFight>
 			<canRepair>false</canRepair>
@@ -4084,7 +4073,7 @@
 
 	<crew> <!-- Ebony Ion crew, 2 ion damage -->
 		<race name="fm_ion_instant_2">
-			<maxHealth>100</maxHealth>
+			<maxHealth>0</maxHealth>
 			<repairSpeed>0</repairSpeed>
 			<canFight>false</canFight>
 			<canRepair>false</canRepair>
@@ -4126,7 +4115,7 @@
 
 	<crew> <!-- Hemlock Ion crew, 3 ion damage-->
 		<race name="fm_ion_instant_3">
-			<maxHealth>100</maxHealth>
+			<maxHealth>0</maxHealth>
 			<repairSpeed>0</repairSpeed>
 			<canFight>false</canFight>
 			<canRepair>false</canRepair>
@@ -4168,7 +4157,7 @@
 
 	<crew> <!-- Green Heart Ion crew, 4 ion damage -->
 		<race name="fm_ion_instant_4">
-			<maxHealth>100</maxHealth>
+			<maxHealth>0</maxHealth>
 			<repairSpeed>0</repairSpeed>
 			<canFight>false</canFight>
 			<canRepair>false</canRepair>
@@ -4283,7 +4272,7 @@
 
 	<crew> <!-- Valefor Explosion crew -->
 		<race name="fm_explode_instant">
-			<maxHealth>75</maxHealth>
+			<maxHealth>0</maxHealth>
 			<repairSpeed>0</repairSpeed>
 			<canFight>false</canFight>
 			<canRepair>false</canRepair>
@@ -13603,6 +13592,96 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<req lvl="2" max_lvl="2">
 					<name>fm_hull_capstones</name>
 				</req>
+			</req>
+			<req type="all"><!--IV-->
+			  <req max_lvl="19">
+			   <name>fm_hull_upgrade_point</name>
+			  </req>
+			  <req lvl="3" max_lvl="3">
+			    <name>fm_hull_capstones</name>
+			  </req>
+			  <name>fm_infinite_upgradepoints</name>
+			</req>
+			<req type="all"><!--V-->
+			  <req max_lvl="24">
+			   <name>fm_hull_upgrade_point</name>
+			  </req>
+			  <req lvl="4" max_lvl="4">
+			    <name>fm_hull_capstones</name>
+			  </req>
+			  <name>fm_infinite_upgradepoints</name>
+			</req>
+			<req type="all"><!--VI-->
+			  <req max_lvl="29">
+			   <name>fm_hull_upgrade_point</name>
+			  </req>
+			  <req lvl="5" max_lvl="5">
+			    <name>fm_hull_capstones</name>
+			  </req>
+			  <name>fm_infinite_upgradepoints</name>
+			</req>
+			<req type="all"><!--VII-->
+			  <req max_lvl="34">
+			   <name>fm_hull_upgrade_point</name>
+			  </req>
+			  <req lvl="6" max_lvl="6">
+			    <name>fm_hull_capstones</name>
+			  </req>
+			  <name>fm_infinite_upgradepoints</name>
+			</req>
+			<req type="all"><!--VIII-->
+			  <req max_lvl="39">
+			   <name>fm_hull_upgrade_point</name>
+			  </req>
+			  <req lvl="7" max_lvl="7">
+			    <name>fm_hull_capstones</name>
+			  </req>
+			  <name>fm_infinite_upgradepoints</name>
+			</req>
+			<req type="all"><!--IX-->
+			  <req max_lvl="44">
+			   <name>fm_hull_upgrade_point</name>
+			  </req>
+			  <req lvl="8" max_lvl="8">
+			    <name>fm_hull_capstones</name>
+			  </req>
+			  <name>fm_infinite_upgradepoints</name>
+			</req>
+			<req type="all"><!--X-->
+			  <req max_lvl="49">
+			   <name>fm_hull_upgrade_point</name>
+			  </req>
+			  <req lvl="9" max_lvl="9">
+			    <name>fm_hull_capstones</name>
+			  </req>
+			  <name>fm_infinite_upgradepoints</name>
+			</req>
+			<req type="all"><!--XI-->
+			  <req max_lvl="54">
+			   <name>fm_hull_upgrade_point</name>
+			  </req>
+			  <req lvl="10" max_lvl="10">
+			    <name>fm_hull_capstones</name>
+			  </req>
+			  <name>fm_infinite_upgradepoints</name>
+			</req>
+			<req type="all"><!--XII-->
+			  <req max_lvl="59">
+			   <name>fm_hull_upgrade_point</name>
+			  </req>
+			  <req lvl="11" max_lvl="11">
+			    <name>fm_hull_capstones</name>
+			  </req>
+			  <name>fm_infinite_upgradepoints</name>
+			</req>
+			<req type="all"><!--XIII-->
+			  <req max_lvl="64">
+			   <name>fm_hull_upgrade_point</name>
+			  </req>
+			  <req lvl="12" max_lvl="12">
+			    <name>fm_hull_capstones</name>
+			  </req>
+			  <name>fm_infinite_upgradepoints</name>
 			</req>
 		</req>
 		<req name="CAN_INSTALL_CAPSTONE">
