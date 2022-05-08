@@ -1121,14 +1121,8 @@
       <event load="OPTION_INVALID"/>
     </choice>
 
-    <!--Back 1 PAGE-->
-    <choice req="pilot" lvl="1" max_group="6" hidden="true" blue="false">
-      <text>Back 1 Page.</text>
-      <event load="STORAGE_CHECK_CREATE_LASER_LOAD"/>
-    </choice>
-
     <!--Back to main craft menu-->
-    <choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
+    <choice req="pilot" lvl="1" max_group="20" hidden="true" blue="false">
       <text>Nevermind, back to main menu.</text>
       <event load="STORAGE_CHECK_CREATE_LOAD"/>
     </choice>

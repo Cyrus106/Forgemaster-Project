@@ -180,7 +180,7 @@
 
 	<event name="OVERCHARMED_BOOM">
 		<variable name="overcharmed_charges" op="add" value="-1"/>
-		<damage amount="0" effect="random" room="random"/>
+		<damage amount="0" effect="random" system="random"/>
 		<loadEventList generate="false" seeded="false" default="OVERCHARMED_FINISH">
 			<event name="OVERCHARMED_BOOM_LOAD" req="overcharmed_charges"/> <!--When counter  is positive-->
 		</loadEventList>

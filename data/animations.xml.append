@@ -475,7 +475,7 @@
 </FTL>
 
 <FTL><!--ACID ANIMATIONS -->
-	<animSheet name="acid" w="218" h="78" fw="31" fh="26">people/acid_base.png</animSheet>
+	<animSheet name="acid" w="217" h="78" fw="31" fh="26">people/acid_base.png</animSheet>
 	<anim name="acid_clone">
 		<sheet>acid</sheet>
 		<desc length="6" x="0" y="2"/>
@@ -538,7 +538,7 @@
 	</anim>
 	<anim name="acid_fire_right">
 		<sheet>acid</sheet>
-		<desc length="4" x="4" y="9"/>
+		<desc length="4" x="0" y="0"/>
 		<time>1.0</time>
 	</anim>
 	<anim name="acid_fire_up">
@@ -548,17 +548,17 @@
 	</anim>
 	<anim name="acid_fire_left">
 		<sheet>acid</sheet>
-		<desc length="4" x="4" y="8"/>
+		<desc length="4" x="0" y="8"/>
 		<time>1.0</time>
 	</anim>
 	<anim name="acid_repair">
 		<sheet>acid</sheet>
-		<desc length="9" x="0" y="7"/>
+		<desc length="4" x="0" y="0"/>
 		<time>1.0</time>
 	</anim>
 	<anim name="acid_punch_up">
 		<sheet>acid</sheet>
-		<desc length="6" x="3" y="1"/>
+		<desc length="4" x="0" y="1"/>
 		<time>1.0</time>
 	</anim>
 	<anim name="acid_punch_down">
@@ -568,7 +568,7 @@
 	</anim>
 	<anim name="acid_teleport">
 		<sheet>acid</sheet>
-		<desc length="9" x="0" y="3"/>
+		<desc length="4" x="0" y="3"/>
 		<time>0.5</time>
 	</anim>
 	<anim name="acid_type_right">
@@ -578,7 +578,7 @@
 	</anim>
 	<anim name="acid_type_left">
 		<sheet>acid</sheet>
-		<desc length="4" x="4" y="5"/>
+		<desc length="4" x="0" y="5"/>
 		<time>0.75</time>
 	</anim>
 	<anim name="acid_type_up">
@@ -588,7 +588,7 @@
 	</anim>
 	<anim name="acid_type_down">
 		<sheet>acid</sheet>
-		<desc length="4" x="4" y="4"/>
+		<desc length="4" x="0" y="4"/>
 		<time>0.75</time>
 	</anim>
 	<anim name="acid_portrait">
@@ -3313,7 +3313,7 @@ try this later
 		<boost>beam_menaulion_glow_chain</boost>
 	</weaponAnim>
 
-	<animSheet name="fm_beam_mining_2" w="366" h="193" fw="40" fh="193">weapon_beams/fm_beam_mining_2.png</animSheet>
+	<animSheet name="fm_beam_mining_2" w="360" h="193" fw="40" fh="193">weapon_beams/fm_beam_mining_2.png</animSheet>
 	<weaponAnim name="fm_beam_mining_2">
 		<sheet>fm_beam_mining_2</sheet>
 		<desc length="9" x="0" y="0"/>
@@ -3458,7 +3458,7 @@ try this later
 		<fireFrame>2</fireFrame>
 		<firePoint  x="16" y="15"/>
 		<mountPoint x="3" y="40"/>
-		<chargeImage>weapon_missile/fm_missiles_cloak_stun_glow.png</chargeImage>
+		<chargeImage>weapon_missiles/fm_missiles_cloak_stun_glow.png</chargeImage>
 	</weaponAnim>
 
 	<animSheet name="fm_ion_missiles" w="248" h="78" fw="31" fh="78">weapon_missiles/fm_ion_missiles.png</animSheet>
