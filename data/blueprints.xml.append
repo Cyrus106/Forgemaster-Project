@@ -980,6 +980,87 @@
 		<aug name="LOCKED_ENERGY_SHIELD" />
 		<aug name="PACIFISTIC_REGENERATION" />
 	</shipBlueprint>
+
+	<shipBlueprint name="PLAYER_SHIP_TWISTED3_2" layout="zmt_player_rock_suicide" img="zmt_player_rock_suicide">
+		<class>Twisted Renegade Rock</class>
+		<name>The Vulture</name>
+		<desc>This vessel lacks conventional defenses, and must make use of its armor to keep itself intact long enough for its artilleries to charge.</desc>
+		<systemList>
+			<artillery power="1" room="3" start="true" weapon="ZOLTAN_DELETER" img="room_artillery_invis_long" />
+			<artillery power="1" room="1" start="true" weapon="BOMB_BREACH_1" img="room_artillery_invis_long" />
+			<artillery power="1" room="2" start="true" weapon="KERNEL_CHAIN_ELITE" img="room_artillery_invis_long" />
+			<artillery power="1" room="0" start="true" weapon="BEAM_ADAPT_3" img="room_artillery_invis_long" />
+			<battery power="1" max="2" room="11" start="false" img="room_battery_6" />
+			<!--<cloaking power="1" room="4" start="true" img="room_cloaking_10" /> in case we feel like allowing the ship to get cloaking-->
+			<clonebay power="1" room="5" start="true">
+				<slot>
+					<number>2</number>
+				</slot>
+			</clonebay>
+			<doors power="2" room="16" start="true" img="room_doors_3">
+				<slot>
+					<direction>right</direction>
+					<number>1</number>
+				</slot>
+			</doors>
+			<drones power="2" max="8" room="9" start="false" img="room_drones" />
+			<engines power="1" room="8" start="true" img="room_engines_9">
+				<slot>
+					<direction>up</direction>
+					<number>1</number>
+				</slot>
+			</engines>
+			<hacking power="1" room="14" start="false" img="room_hacking_orchid" />
+			<medbay power="1" room="5" start="false" img="room_medbay_7">
+				<slot>
+					<number>2</number>
+				</slot>
+			</medbay>
+			<mind power="1" room="6" start="false" img="fm_room_mind_10_modified" />
+			<oxygen power="1" room="18" start="true" img="room_oxygen_13" />
+			<pilot power="1" room="15" start="true" img="room_pilot_4">
+				<slot>
+					<direction>right</direction>
+					<number>0</number>
+				</slot>
+			</pilot>
+			<sensors power="1" room="17" start="true" img="room_sensors_2">
+				<slot>
+					<direction>up</direction>
+					<number>0</number>
+				</slot>
+			</sensors>
+			<shields power="1" max="1" room="10" start="true" img="fm_room_shields_8_cropped">
+				<slot>
+					<direction>left</direction>
+					<number>2</number>
+				</slot>
+			</shields>
+			<teleporter power="1" room="19" start="false" />
+			<weapons power="1" max="4" room="7" start="true" img="room_weapons_3">
+				<slot>
+					<direction>up</direction>
+					<number>1</number>
+				</slot>
+			</weapons>
+		</systemList>
+		<weaponSlots>3</weaponSlots>
+		<droneSlots>2</droneSlots>
+		<weaponList missiles="5" count="3">
+			<weapon name="SHOTGUN_GOLD_3" />
+			<weapon name="LASER_HEAVY_PIERCE" />
+		</weaponList>
+		<droneList drones="0" count="2" />
+		<health amount="45" />
+		<maxPower amount="7" />
+		<crewCount amount="1" class="engi_defender" />
+		<crewCount amount="1" class="crystal" />
+		<crewCount amount="1" class="rock" />
+		<aug name="OBSIDIAN_ARMOR_1" />
+		<aug name="SCRAP_COLLECTOR"/>
+		<aug name="SCRAP_COLLECTOR"/>
+	</shipBlueprint>
+
 	<shipBlueprint name="PLAYER_SHIP_TWISTED3_3" layout="zmt_player_lostsun_suicide" img="zmt_player_lostsun_suicide">
 		<class>Twisted Renegade Lostsun</class>
 		<name>Deja Mort</name>
