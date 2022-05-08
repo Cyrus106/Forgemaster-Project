@@ -136,7 +136,7 @@
 		<mod-append:ship name="PLAYER_SHIP_TWISTED2" a="true" b="false" c="true" > <!--Fmantis,seppy,mantis-->
 			<splitVictoryAchievement>true</splitVictoryAchievement>
 		</mod-append:ship>
-		<mod-append:ship name="PLAYER_SHIP_TWISTED3" a="true" b="false" c="true" > <!--monk,rock,lostsun-->
+		<mod-append:ship name="PLAYER_SHIP_TWISTED3" a="true" b="true" c="true" > <!--monk,rock,lostsun-->
 			<splitVictoryAchievement>true</splitVictoryAchievement>
 		</mod-append:ship>
 		<mod-append:ship name="PLAYER_SHIP_TWISTED4" a="true" b="true" c="true" > <!--slug,stealth,Zoltan-->
@@ -348,6 +348,47 @@
 				</room>
 			</rooms>
 		</mod-append:customShip>
+
+		<mod-append:customShip name="PLAYER_SHIP_TWISTED3_2"><!--Twisted Rock-->
+			<hiddenAug>SHIP_ROCK</hiddenAug>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<crewLimit>9</crewLimit>
+			<customReactor maxLevel="55">
+				<baseCost>15</baseCost>
+				<increment>5</increment>
+			</customReactor>
+			<rooms>
+				<room id="0"> <!--upper right artillery, Tsukiyari-->
+					<roomAnim renderLayer="0">resist_2x2</roomAnim>
+					<!--<roomAnim renderLayer="1"></roomAnim> for artillery room images later-->
+					<roomAnim renderLayer="3">resist_icon</roomAnim>
+					<sysDamageResistChance>100</sysDamageResistChance>
+				</room>
+
+				<room id="3"> <!--upper left artillery, Zoltan Deleter-->
+					<roomAnim renderLayer="0">resist_2x2</roomAnim>
+					<!--<roomAnim renderLayer="1"></roomAnim> for artillery room images later-->
+					<roomAnim renderLayer="3">resist_icon</roomAnim>
+					<sysDamageResistChance>100</sysDamageResistChance>
+				</room>
+
+				<room id="2"> <!--lower left artillery, Elite Chain Kernel-->
+					<roomAnim renderLayer="0">resist_2x2</roomAnim>
+					<!--<roomAnim renderLayer="1"></roomAnim> for artillery room images later-->
+					<roomAnim renderLayer="3">resist_icon</roomAnim>
+					<sysDamageResistChance>100</sysDamageResistChance>
+				</room>
+
+				<room id="1"> <!--lower right artillery, breach bomb-->
+					<roomAnim renderLayer="0">resist_2x2</roomAnim>
+					<!--<roomAnim renderLayer="1"></roomAnim> for artillery room images later-->
+					<roomAnim renderLayer="3">resist_icon</roomAnim>
+					<sysDamageResistChance>100</sysDamageResistChance>
+				</room>
+			</rooms>
+			<systemLimit>12</systemLimit>
+		</mod-append:customShip>
+
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED3_3"><!--lostsun-->
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<hiddenAug>SHIP_MULTIVERSE</hiddenAug>
