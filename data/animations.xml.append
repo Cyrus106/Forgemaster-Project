@@ -4127,6 +4127,14 @@ try this later
 		<time>1</time>
 	</anim>
 
+	<!--turret upgrade effect anim-->
+	<animSheet name="gunny" w="384" h="32" fw="32" fh="32">people/gunny.png</animSheet>
+	<anim name="gunny">
+		<sheet>gunny</sheet>
+		<desc length="12" x="0" y="0" />
+		<time>0.3</time>
+	</anim>
+
 	<!--flavor anims-->
 	<animSheet name="printer_3" w="1260" h="35" fw="70" fh="35">effects/printer_3.png</animSheet>
 	<animSheet name="printer_4" w="630" h="35" fw="35" fh="35">effects/printer_4.png</animSheet>
@@ -4141,14 +4149,20 @@ try this later
 		<desc length="18" x="0" y="0"/>
 		<time>5</time>
 	</anim>
-	<!--turret upgrade effect anim-->
-	<animSheet name="gunny" w="384" h="32" fw="32" fh="32">people/gunny.png</animSheet>
-	<anim name="gunny">
-		<sheet>gunny</sheet>
-		<desc length="12" x="0" y="0" />
-		<time>0.3</time>
-	</anim>
 
+	<animSheet name="room_cloaking_10_shadow" w="70" h="70" fw="70" fh="70">ship/interior/room_cloaking_10_shadow.png</animSheet>
+	<animSheet name="overlay_cloaking_hack" w="140" h="70" fw="70" fh="70">effects/s_cloaking_overlay_hack.png</animSheet>
+
+	<anim name="room_cloaking_10_shadow">
+		<sheet>room_cloaking_10_shadow</sheet>
+		<desc length="1" x="0" y="0"/>
+		<time>1</time>
+	</anim>
+	<anim name="overlay_cloaking_hack">
+		<sheet>overlay_cloaking_hack</sheet>
+		<desc length="2" x="0" y="0"/>
+		<time>1</time>
+	</anim>
 </FTL>
 
 <FTL><!--Hyperspace beta additions-->

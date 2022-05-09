@@ -984,7 +984,7 @@
 	<shipBlueprint name="PLAYER_SHIP_TWISTED3_2" layout="zmt_player_rock_suicide" img="zmt_player_rock_suicide">
 		<class>Twisted Renegade Rock</class>
 		<name>The Vulture</name>
-		<desc>This vessel lacks conventional defenses, and must make use of its armor to keep itself intact long enough for its artilleries to charge.</desc>
+		<desc>In an effort to become truly invulnerable, these Rockmen attempted to make their ship’s cloaking system last indefinitely by redirecting all the energy out of the shield system. They succeeded, although only the cloaking system itself managed to actually disappear, therefore this vessel lacks conventional defenses, and must make use of its armor to keep itself intact long enough for its artilleries to charge.</desc>
 		<systemList>
 			<artillery power="1" room="3" start="true" weapon="ZOLTAN_DELETER_ARTY_CHAIN" img="room_artillery_invis_long" />
 			<artillery power="1" room="1" start="true" weapon="BOMB_BREACH_1_ENEMY_ARTY_CHAIN" img="room_artillery_invis_long" />

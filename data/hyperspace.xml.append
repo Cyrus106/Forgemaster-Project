@@ -385,6 +385,14 @@
 					<roomAnim renderLayer="3">resist_icon</roomAnim>
 					<sysDamageResistChance>100</sysDamageResistChance>
 				</room>
+
+				<room id="4"> <!--""cloaking""-->
+					<roomAnim renderLayer="0">resist_2x2</roomAnim>
+					<roomAnim renderlayer="1">room_cloaking_10_shadow</roomAnim>
+					<roomAnim renderlayer="3">overlay_cloaking_hack</roomAnim>
+					<roomAnim renderLayer="3">resist_icon</roomAnim>
+					<sysDamageResistChance>100</sysDamageResistChance>
+				</room>
 			</rooms>
 			<systemLimit>13</systemLimit>
 		</mod-append:customShip>
