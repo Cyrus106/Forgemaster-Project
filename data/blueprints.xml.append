@@ -986,10 +986,10 @@
 		<name>The Vulture</name>
 		<desc>This vessel lacks conventional defenses, and must make use of its armor to keep itself intact long enough for its artilleries to charge.</desc>
 		<systemList>
-			<artillery power="1" room="3" start="true" weapon="ZOLTAN_DELETER" img="room_artillery_invis_long" />
-			<artillery power="1" room="1" start="true" weapon="BOMB_BREACH_1" img="room_artillery_invis_long" />
-			<artillery power="1" room="2" start="true" weapon="KERNEL_CHAIN_ELITE" img="room_artillery_invis_long" />
-			<artillery power="1" room="0" start="true" weapon="BEAM_ADAPT_3" img="room_artillery_invis_long" />
+			<artillery power="1" room="3" start="true" weapon="ZOLTAN_DELETER_ARTY_CHAIN" img="room_artillery_invis_long" />
+			<artillery power="1" room="1" start="true" weapon="BOMB_BREACH_1_ENEMY_ARTY_CHAIN" img="room_artillery_invis_long" />
+			<artillery power="1" room="2" start="true" weapon="KERNEL_CHAIN_ELITE_ENEMY_ARTY" img="room_artillery_invis_long" />
+			<artillery power="1" room="0" start="true" weapon="BEAM_ADAPT_3_ARTY_CHAIN" img="room_artillery_invis_long" />
 			<battery power="1" max="2" room="11" start="false" img="room_battery_6" />
 			<!--<cloaking power="1" room="4" start="true" img="room_cloaking_10" /> in case we feel like allowing the ship to get cloaking-->
 			<clonebay power="1" room="5" start="true">
@@ -11450,7 +11450,7 @@
 			<g>8</g>
 			<b>200</b>
 		</color>
-		<speed>1</speed>
+		<speed>20</speed>
 		<power>2</power>
 		<cost>100</cost>
 		<bp>6</bp>
