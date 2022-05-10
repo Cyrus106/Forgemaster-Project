@@ -983,8 +983,8 @@
 		<name>The Vulture</name>
 		<desc>In an effort to become truly invulnerable, these Rockmen attempted to make their ship’s cloaking system last indefinitely by redirecting all the energy out of the shield system. They succeeded, although only the cloaking system itself managed to actually disappear, leaving its armor as the only defense.</desc>
 		<systemList>
-			<artillery power="2" room="0" start="true" weapon="BEAM_ADAPT_3_ARTY_CHAIN" img="room_artillery_invis_long" />
-			<artillery power="2" room="3" start="true" weapon="ZOLTAN_DELETER_ARTY_CHAIN" img="room_artillery_invis_long" />
+			<artillery power="2" room="0" start="true" weapon="BEAM_ADAPT_3_PLAYER_ARTY_CHAIN" img="room_artillery_invis_long" />
+			<artillery power="2" room="3" start="true" weapon="ZOLTAN_DELETER_PLAYER_ARTY_CHAIN" img="room_artillery_invis_long" />
 			<artillery power="2" room="1" start="true" weapon="BOMB_BREACH_1_PLAYER_ARTY_CHAIN" img="room_artillery_invis_long" />
 			<artillery power="2" room="2" start="true" weapon="KERNEL_CHAIN_ELITE_PLAYER_ARTY" img="room_artillery_invis_long" />
 			<battery power="1" max="2" room="11" start="false" img="room_battery_6" />
@@ -9095,6 +9095,103 @@
 		<iconImage>flak</iconImage>
 	</weaponBlueprint>
 
+	<weaponBlueprint name="BEAM_ADAPT_3_PLAYER_ARTY_CHAIN">
+		<type>BEAM</type>
+		<tip>tip_adapter</tip>
+		<title>Tsukiyari Beam</title>
+		<short>Tsukiyari</short>
+		<desc>This advanced Beam was a prototype upgrade of the well known Kamayari and Suyari Beams.
+			Base Cooldown: 44
+		</desc>
+		<tooltip>Adaptive beam, chains by 1.5 dmg.</tooltip>
+		<damage>2</damage>
+		<sp>0</sp>
+		<fireChance>0</fireChance>
+		<breachChance>2</breachChance>
+		<cooldown>44</cooldown>
+		<power>5</power>
+		<cost>170</cost>
+		<bp>7</bp>
+		<rarity>0</rarity>
+		<length>80</length>
+		<image>beam_contact</image>
+		<boost>
+			<type>damage</type>
+			<amount>1.5</amount>
+			<count>999</count>
+		</boost>
+		<launchSounds>
+			<sound>beam2</sound>
+		</launchSounds>
+		<launchSounds>
+			<sound>beam2</sound>
+		</launchSounds>
+		<weaponArt>beam_longbow3</weaponArt>
+		<iconImage>beam</iconImage>
+	</weaponBlueprint>
+
+	<weaponBlueprint name="ZOLTAN_DELETER_PLAYER_ARTY_CHAIN">
+		<type>BEAM</type>
+		<tip>tip_zolt_deleter</tip>
+		<title>Zoltan Deleter</title>
+		<short>Zolt Deleter</short>
+		<desc>If this weapon used on any other race, you are to be killed on sight. Does moderate damage to any type of crew, but instantly kills all Zoltans.
+			Base Cooldown: 35 -> 15
+		</desc>
+		<tooltip>Chaining 45 crew dmg beam(instakills zoltans)</tooltip>
+		<damage>0</damage>
+		<persDamage>3</persDamage>
+		<sp>10</sp>
+		<fireChance>0</fireChance>
+		<breachChance>0</breachChance>
+		<cooldown>35</cooldown>
+		<boost>
+			<type>cooldown</type>
+			<amount>4</amount>
+			<count>5</count>
+		</boost>
+		<statBoosts>
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<amount>-999999</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<affectsSelf>true</affectsSelf>
+				<maxStacks>1</maxStacks>
+				<duration>1</duration>
+				<boostAnim>bio_poison</boostAnim>
+				<whiteList>
+					<zoltan/>
+					<zoltan_monk/>
+					<zoltan_devotee/>
+					<zoltan_martyr/>
+					<zoltan_peacekeeper/>
+					<unique_devorak/>
+					<symbiote/>
+					<zoltan_osmian_enemy/>
+					<zoltan_osmian/>
+				</whiteList>
+			</statBoost>
+		</statBoosts>
+		<color>
+			<r>255</r>
+			<g>8</g>
+			<b>200</b>
+		</color>
+		<speed>20</speed>
+		<power>2</power>
+		<cost>100</cost>
+		<bp>6</bp>
+		<rarity>0</rarity>
+		<length>90</length>
+		<image>beam_contact</image>
+		<launchSounds>
+			<sound>beam2</sound>
+		</launchSounds>
+		<weaponArt>zoltan_deleter</weaponArt>
+		<iconImage>beam</iconImage>
+	</weaponBlueprint>
+
 	<weaponBlueprint name="KERNEL_CHAIN_ELITE_PLAYER_ARTY">
 		<type>MISSILES</type>
 		<flavorType>Kernel Launcher</flavorType>
@@ -9102,7 +9199,7 @@
 		<title>Elite Chain Kernel</title>
 		<short>€ Kernel Chain</short>
 		<desc>This weapon uses kernels of giant plants from the Orchid home planet as ammunition. Powerful Elite version with a guaranteed stun.
-			Base Cooldown: 52 -> 22
+			Base Cooldown: 30 -> 15
 		</desc>
 		<tooltip>Cooldown drops the more it fires.</tooltip>
 		<damage>1</damage>
@@ -9112,7 +9209,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>1</breachChance>
 		<stunChance>10</stunChance>
-		<cooldown>52</cooldown>
+		<cooldown>30</cooldown>
 		<power>3</power>
 		<cost>85</cost>
 		<bp>6</bp>
@@ -9120,7 +9217,7 @@
 		<image>kernel_projectile_elite</image>
 		<boost>
 			<type>cooldown</type>
-			<amount>10</amount>
+			<amount>5</amount>
 			<count>3</count>
 		</boost>
 		<launchSounds>
@@ -9150,7 +9247,7 @@
 		<short>Breach B.</short>
 		<locked>1</locked>
 		<desc>Self-teleporting explosive designed to damage systems and cause a breach, becomes faster with after shot.
-			Base Cooldown: 52 -> 34
+			Base Cooldown: 26 -> 14
 		</desc>
 		<tooltip>Bomb weapon; does 2 damage to systems, and creates a hull breach.</tooltip>
 		<damage>0</damage>
@@ -9161,12 +9258,12 @@
 		<sp>0</sp>
 		<boost>
 			<type>cooldown</type>
-			<amount>3.0</amount>
+			<amount>2.0</amount>
 			<count>6</count>
 		</boost>
 		<fireChance>0</fireChance>
 		<breachChance>10</breachChance>
-		<cooldown>52</cooldown>
+		<cooldown>26</cooldown>
 		<power>1</power>
 		<cost>50</cost>
 		<bp>4</bp>
@@ -11536,7 +11633,7 @@
 			<g>8</g>
 			<b>200</b>
 		</color>
-		<speed>20</speed>
+		<speed>1</speed>
 		<power>2</power>
 		<cost>100</cost>
 		<bp>6</bp>
