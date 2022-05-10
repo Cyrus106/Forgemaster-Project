@@ -985,7 +985,7 @@
 		<systemList>
 			<artillery power="2" room="0" start="true" weapon="BEAM_ADAPT_3_ARTY_CHAIN" img="room_artillery_invis_long" />
 			<artillery power="2" room="3" start="true" weapon="ZOLTAN_DELETER_ARTY_CHAIN" img="room_artillery_invis_long" />
-			<artillery power="2" room="1" start="true" weapon="BOMB_BREACH_1_PLAYER_ARTY_CHAIN " img="room_artillery_invis_long" />
+			<artillery power="2" room="1" start="true" weapon="BOMB_BREACH_1_PLAYER_ARTY_CHAIN" img="room_artillery_invis_long" />
 			<artillery power="2" room="2" start="true" weapon="KERNEL_CHAIN_ELITE_PLAYER_ARTY" img="room_artillery_invis_long" />
 			<battery power="1" max="2" room="11" start="false" img="room_battery_6" />
 			<!--<cloaking power="1" room="4" start="true" img="room_cloaking_10" /> in case we feel like allowing the ship to get cloaking-->
@@ -11493,10 +11493,10 @@
 		<tip>tip_zolt_deleter</tip>
 		<title>Zoltan Deleter</title>
 		<short>Zolt Deleter</short>
-		<desc>If this weapon used on any other race, you are to be killed on sight. Does moderate damage to any type of crew, but condemns all Zoltans to certain death.
+		<desc>If this weapon used on any other race, you are to be killed on sight. Does moderate damage to any type of crew, but instantly kills all Zoltans.
 			Base Cooldown: 70 -> 50
 		</desc>
-		<tooltip>2 power beam weapon that greatly damages enemy crew.</tooltip>
+		<tooltip>Chaining 45 crew dmg beam(instakills zoltans)</tooltip>
 		<damage>0</damage>
 		<persDamage>3</persDamage>
 		<sp>10</sp>
@@ -11595,7 +11595,7 @@
 		<desc>This advanced Beam was a prototype upgrade of the well known Kamayari and Suyari Beams.
 			Base Cooldown: 88
 		</desc>
-		<tooltip>Boss Loot.</tooltip>
+		<tooltip>Adaptive beam, chains by 1.5 dmg.</tooltip>
 		<damage>2</damage>
 		<sp>0</sp>
 		<fireChance>0</fireChance>
