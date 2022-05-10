@@ -1968,7 +1968,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<choice req="FM_ION_MISSILE_LIST" lvl="1" blue="false" hidden="true" max_group="8">
+		<choice req="FM_ION_MISSILES_LIST" lvl="1" blue="false" hidden="true" max_group="8">
 		  <text>Combine the Hermes Missile and Ion II to forge the 'Debilitatum' Heavy Missiles.[Cost: 80~]</text>
 		  <event load="NPC_STORAGE_CHECK_CREATE_FM_ION_MISSILES"/>
 		</choice>

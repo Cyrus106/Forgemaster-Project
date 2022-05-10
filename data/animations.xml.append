@@ -3280,8 +3280,8 @@ try this later
 	<weaponAnim name="gatling_ancient_ion">
 		<sheet>gatling_ancient_ion</sheet>
 		<desc length="11" x="0" y="0"/>
-		<chargedFrame>5</chargedFrame>
-		<fireFrame>6</fireFrame>
+		<chargedFrame>4</chargedFrame>
+		<fireFrame>5</fireFrame>
 		<firePoint  x="17" y="20"/>
 		<mountPoint x="4" y="79"/>
 	</weaponAnim>

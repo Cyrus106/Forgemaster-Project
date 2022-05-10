@@ -984,7 +984,7 @@
 	<shipBlueprint name="PLAYER_SHIP_TWISTED3_2" layout="zmt_player_rock_suicide" img="zmt_player_rock_suicide">
 		<class>Twisted Renegade Rock</class>
 		<name>The Vulture</name>
-		<desc>In an effort to become truly invulnerable, these Rockmen attempted to make their ship’s cloaking system last indefinitely by redirecting all the energy out of the shield system. They succeeded, although only the cloaking system itself managed to actually disappear, therefore this vessel lacks conventional defenses, and must make use of its armor to keep itself intact long enough for its artilleries to charge.</desc>
+		<desc>In an effort to become truly invulnerable, these Rockmen attempted to make their ship’s cloaking system last indefinitely by redirecting all the energy out of the shield system. They succeeded, although only the cloaking system itself managed to actually disappear, leaving its armor as the only defense.</desc>
 		<systemList>
 			<artillery power="1" room="3" start="true" weapon="ZOLTAN_DELETER_ARTY_CHAIN" img="room_artillery_invis_long" />
 			<artillery power="1" room="1" start="true" weapon="BOMB_BREACH_1_ENEMY_ARTY_CHAIN" img="room_artillery_invis_long" />
@@ -3739,6 +3739,7 @@
 		<spin>720</spin>
 		<bp>2</bp>
 		<rarity>0</rarity>
+		<explosion>explosion_big1_ion</explosion>
 		<projectiles>
 			<projectile count="3" fake="false">ion_1_shot</projectile>
 		</projectiles>
@@ -9054,50 +9055,137 @@
 	</weaponBlueprint>
 
 	<weaponBlueprint name="SHOTGUN_TOGGLE_FIRE_INVIS"> <!--Artillery for the twisted lanius-->
-	<type>BURST</type>
-	<drone_targetable>1</drone_targetable>
-	<title>Toggle Flak [F]</title>
-	<short>Toggle [F]</short>
-	<tip>tip_flak</tip>
-	<desc>A special Flak weapon which fires 7 shots, each of which will always start a fire.</desc>
-	<tooltip>Fires a blast of debris across a random area doing up to 7 damage.</tooltip>
-	<radius>52</radius>
-	<damage>1</damage>
-	<spin>720</spin>
-	<shots>1</shots>
-	<sp>0</sp>
-	<fireChance>10</fireChance>
-	<breachChance>0</breachChance>
-	<cooldown>20</cooldown>
-	<power>4</power>
-	<cost>100</cost>
-	<bp>10</bp>
-	<speed>26</speed>
-	<rarity>0</rarity>
-	<projectiles>
-		<projectile count="7" fake="false">debris_large_fire</projectile>
-		<projectile count="5" fake="true">debris_small</projectile>
-	</projectiles>
-	<launchSounds>
-		<sound>flak</sound>
-	</launchSounds>
-	<hitShipSounds>
-		<sound>flakImpact1</sound>
-		<sound>flakImpact2</sound>
-		<sound>flakImpact3</sound>
-		<sound>flakImpact4</sound>
-	</hitShipSounds>
-	<hitShieldSounds>
-		<sound>hitShield1</sound>
-		<sound>hitShield2</sound>
-		<sound>hitShield3</sound>
-	</hitShieldSounds>
-	<missSounds>
-		<sound>miss</sound>
-	</missSounds>
-	<weaponArt>fm_holyshit_invis</weaponArt>
-	<iconImage>flak</iconImage>
-</weaponBlueprint>
+		<type>BURST</type>
+		<drone_targetable>1</drone_targetable>
+		<title>Toggle Flak [F]</title>
+		<short>Toggle [F]</short>
+		<tip>tip_flak</tip>
+		<desc>A special Flak weapon which fires 7 shots, each of which will always start a fire.</desc>
+		<tooltip>Fires a blast of debris across a random area doing up to 7 damage.</tooltip>
+		<radius>52</radius>
+		<damage>1</damage>
+		<spin>720</spin>
+		<shots>1</shots>
+		<sp>0</sp>
+		<fireChance>10</fireChance>
+		<breachChance>0</breachChance>
+		<cooldown>20</cooldown>
+		<power>4</power>
+		<cost>100</cost>
+		<bp>10</bp>
+		<speed>26</speed>
+		<rarity>0</rarity>
+		<projectiles>
+			<projectile count="7" fake="false">debris_large_fire</projectile>
+			<projectile count="5" fake="true">debris_small</projectile>
+		</projectiles>
+		<launchSounds>
+			<sound>flak</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>flakImpact1</sound>
+			<sound>flakImpact2</sound>
+			<sound>flakImpact3</sound>
+			<sound>flakImpact4</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_holyshit_invis</weaponArt>
+		<iconImage>flak</iconImage>
+	</weaponBlueprint>
+
+	<weaponBlueprint name="KERNEL_CHAIN_ELITE_PLAYER_ARTY">
+		<type>MISSILES</type>
+		<flavorType>Kernel Launcher</flavorType>
+		<tip>tip_kernel_elite</tip>
+		<title>Elite Chain Kernel</title>
+		<short>€ Kernel Chain</short>
+		<desc>This weapon uses kernels of giant plants from the Orchid home planet as ammunition. Powerful Elite version with a guaranteed stun.
+			Base Cooldown: 52 -> 22
+		</desc>
+		<tooltip>Cooldown drops the more it fires.</tooltip>
+		<damage>1</damage>
+		<shots>1</shots>
+		<sp>10</sp>
+		<stun>7</stun>
+		<fireChance>0</fireChance>
+		<breachChance>1</breachChance>
+		<stunChance>10</stunChance>
+		<cooldown>52</cooldown>
+		<power>3</power>
+		<cost>85</cost>
+		<bp>6</bp>
+		<rarity>0</rarity>
+		<image>kernel_projectile_elite</image>
+		<boost>
+			<type>cooldown</type>
+			<amount>10</amount>
+			<count>3</count>
+		</boost>
+		<launchSounds>
+			<sound>kernel_launch1</sound>
+			<sound>kernel_launch2</sound>
+			<sound>kernel_launch3</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>smallExplosion</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>kernel_chain_elite</weaponArt>
+		<iconImage>missile</iconImage>
+	</weaponBlueprint>
+
+	<weaponBlueprint name="BOMB_BREACH_1_PLAYER_ARTY_CHAIN">
+		<type>BOMB</type>
+		<tip>tip_bombs</tip>
+		<title>Breach Bomb</title>
+		<short>Breach B.</short>
+		<locked>1</locked>
+		<desc>Self-teleporting explosive designed to damage systems and cause a breach, becomes faster with after shot.
+			Base Cooldown: 52 -> 34
+		</desc>
+		<tooltip>Bomb weapon; does 2 damage to systems, and creates a hull breach.</tooltip>
+		<damage>0</damage>
+		<sysDamage>2</sysDamage>
+		<persDamage>2</persDamage>
+		<shots>1</shots>
+		<sp>0</sp>
+		<boost>
+			<type>cooldown</type>
+			<amount>3.0</amount>
+			<count>6</count>
+		</boost>
+		<fireChance>0</fireChance>
+		<breachChance>10</breachChance>
+		<cooldown>52</cooldown>
+		<power>1</power>
+		<cost>50</cost>
+		<bp>4</bp>
+		<rarity>0</rarity>
+		<image>bomb_breach</image>
+		<explosion>explosion_random</explosion>
+		<launchSounds>
+			<sound>bombTeleport</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>smallExplosion</sound>
+		</hitShipSounds>
+		<weaponArt>bomblauncher_breach</weaponArt>
+		<iconImage>bomb</iconImage>
+	</weaponBlueprint>
 
 
 </FTL>
@@ -11409,7 +11497,9 @@
 		<tip>tip_zolt_deleter</tip>
 		<title>Zoltan Deleter</title>
 		<short>Zolt Deleter</short>
-		<desc>Though it can be used to damage other crew, several governments have passed laws that if this weapon is brandished at any other race, you are to be killed on sight. Does moderate damage to any type of crew, but condemns all Zoltans to certain death.</desc>
+		<desc>Though it can be used to damage other crew, several governments have passed laws that if this weapon is brandished at any other race, you are to be killed on sight. Does moderate damage to any type of crew, but condemns all Zoltans to certain death.
+			Base Cooldown: 70 -> 50
+		</desc>
 		<tooltip>2 power beam weapon that greatly damages enemy crew.</tooltip>
 		<damage>0</damage>
 		<persDamage>3</persDamage>
@@ -11506,7 +11596,9 @@
 		<tip>tip_adapter</tip>
 		<title>Tsukiyari Beam</title>
 		<short>Tsukiyari</short>
-		<desc>This advanced Beam was a prototype upgrade of the well known Kamayari and Suyari Beams.</desc>
+		<desc>This advanced Beam was a prototype upgrade of the well known Kamayari and Suyari Beams.
+			Base Cooldown: 88
+		</desc>
 		<tooltip>Boss Loot.</tooltip>
 		<damage>2</damage>
 		<sp>0</sp>
