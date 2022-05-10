@@ -1365,6 +1365,55 @@
 <!--Twisted Lanius Stuff (Flak Forge)-->
 <blueprintList name = "LIST_FLAK_FORGE_NORMAL_1">
 	<name>SHOTGUN_1</name>
+
+	<!-- All normally obtainable forgemaster flaks
+	<name>FM_SHOTGUN_ENERGY</name>
+	<name>FM_SHOTGUN_ANOMALY</name>
+	<name>FM_SHOTGUN_ANOMALY_PLAYER</name>
+	<name>FM_SHOTGUN_ANOMALY_MEGA</name>
+	<name>FM_SHOTGUN_AETHER</name>
+	<name>FM_SHOTGUN_BRONZE</name>
+	<name>FM_SHOTGUN_INDIUM</name>
+	<name>FM_SHOTGUN_RHENIUM</name>
+	<name>FM_SHOTGUN_SILVER</name>
+	<name>FM_SHOTGUN_PALLADIUM</name>
+	<name>FM_SHOTGUN_IRIDIUM</name>
+	<name>FM_SHOTGUN_PLATINUM</name>
+	<name>FM_SHOTGUN_OSMIUM</name>
+	<name>FM_SHOTGUN_NOBELIUM</name>
+	<name>FM_SHOTGUN_HASSIUM</name>
+	<name>FM_SHOTGUN_CURSED</name>-->
+
+
+	<!-- All MV flaks. Considering giving the flak redemption event a small chance to roll from the "maybe" list, and comment on "You're not sure if this is even a flak, but a weapon is a weapon, and you're not one to look a gift horse in the mouth."
+	<name>SHOTGUN_1</name>
+	<name>SHOTGUN_2</name>
+	<name>SHOTGUN_2_PLAYER</name>
+	<name>SHOTGUN_3</name>
+	<name>SHOTGUN_4</name>
+	<name>SHOTGUN_CHARGE</name>
+	<name>SHOTGUN_CHAIN</name>
+	<name>SHOTGUN_INSTANT</name>
+	<name>SHOTGUN_FIRE</name>
+	<name>SHOTGUN_ION</name>
+	<name>SHOTGUN_TOXIC</name>
+	<name>SHOTGUN_TOXIC_PLAYER</name>
+	<name>SHOTGUN_GOLD_3</name>
+	<name>SHOTGUN_GOLD</name>
+	<name>LOOT_LEECH_1</name>
+	<name>LOOT_AUG_1</name>
+	<name>LOOT_MATH_3</name>
+	<name>SHOTGUN_STEEL</name>
+	<name>SHOTGUN_TOGGLE_FIRE</name>
+	<name>SHOTGUN_TOGGLE_ION</name>
+	<name>SHOTGUN_TOGGLE_TOXIC</name>
+
+	<name>SLOTGUN</name> maybe?
+	<name>SALT_LAUNCHER</name>maybe?
+	<name>CLONE_CANNON</name>maybe?
+	<name>CRYSTAL_SHOTGUN</name> maybe?
+	<name>CRYSTAL_SHOTGUN_RED</name> maybe?
+-->
 </blueprintList>
 
 <blueprintList name = "LIST_FLAK_FORGE_NORMAL_2">
