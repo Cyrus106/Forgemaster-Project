@@ -316,7 +316,6 @@
 			<crewLimit>12</crewLimit>
 			<customReactor maxLevel="35"/>
 		</mod-append:customShip>
-
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED2_3"><!--mantis-->
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<hiddenAug>SHIP_MULTIVERSE</hiddenAug>
@@ -334,7 +333,7 @@
 
 		</mod-append:customShip>
 
-		<mod-append:customShip name="PLAYER_SHIP_TWISTED3">
+		<mod-append:customShip name="PLAYER_SHIP_TWISTED3"><!--monk-->
 			<hiddenAug>SHIP_MONK</hiddenAug>
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<hiddenAug>TWISTED_BLESSING</hiddenAug>
@@ -348,7 +347,6 @@
 				</room>
 			</rooms>
 		</mod-append:customShip>
-
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED3_2"><!--Twisted Rock-->
 			<hiddenAug>SHIP_ROCK</hiddenAug>
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
@@ -389,6 +387,7 @@
 				<room id="4"> <!--""cloaking""-->
 					<roomAnim renderLayer="0">resist_2x2</roomAnim>
 					<roomAnim renderlayer="1">room_cloaking_10_shadow</roomAnim>
+					<roomAnim renderlayer="3">stun_spark_big</roomAnim>
 					<roomAnim renderlayer="3">overlay_cloaking_hack</roomAnim>
 					<roomAnim renderLayer="3">resist_icon</roomAnim>
 					<sysDamageResistChance>100</sysDamageResistChance>
@@ -396,7 +395,6 @@
 			</rooms>
 			<systemLimit>13</systemLimit>
 		</mod-append:customShip>
-
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED3_3"><!--lostsun-->
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<hiddenAug>SHIP_MULTIVERSE</hiddenAug>
@@ -417,7 +415,7 @@
 			</crew>
 		</mod-append:customShip>
 
-		<mod-append:customShip name="PLAYER_SHIP_TWISTED4">
+		<mod-append:customShip name="PLAYER_SHIP_TWISTED4"><!--slug-->
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<hiddenAug>LOCKED_SLUG_GEL</hiddenAug>
 			<hiddenAug>SHIP_TWISTED_KLEPTOCRACY</hiddenAug>
@@ -456,7 +454,7 @@
 			</customReactor>
 		</mod-append:customShip>
 
-		<mod-append:customShip name="PLAYER_SHIP_TWISTED5">
+		<mod-append:customShip name="PLAYER_SHIP_TWISTED5"><!--lanius-->
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<crewLimit>10</crewLimit>
 			<systemLimit>9</systemLimit>
@@ -465,7 +463,6 @@
 				<increment>5</increment>
 			</customReactor>
 		</mod-append:customShip>
-
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED5_3"><!--engineer-->
 			<crewLimit>8</crewLimit>
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>

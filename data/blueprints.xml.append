@@ -826,8 +826,6 @@
 		</crew>
 		<aug name="TWISTED_MANTIS_UPGRADER"/>
 	</shipBlueprint>
-
-
 	<shipBlueprint name="PLAYER_SHIP_TWISTED2_3" layout="zmt_player_mantis_suicide" img="zmt_player_mantis_suicide">
 		<class>Twisted Renegade Mantis</class>
 		<name>Zerg Rush</name>
@@ -980,16 +978,15 @@
 		<aug name="LOCKED_ENERGY_SHIELD" />
 		<aug name="PACIFISTIC_REGENERATION" />
 	</shipBlueprint>
-
 	<shipBlueprint name="PLAYER_SHIP_TWISTED3_2" layout="zmt_player_rock_suicide" img="zmt_player_rock_suicide">
 		<class>Twisted Renegade Rock</class>
 		<name>The Vulture</name>
 		<desc>In an effort to become truly invulnerable, these Rockmen attempted to make their ship’s cloaking system last indefinitely by redirecting all the energy out of the shield system. They succeeded, although only the cloaking system itself managed to actually disappear, leaving its armor as the only defense.</desc>
 		<systemList>
-			<artillery power="1" room="3" start="true" weapon="ZOLTAN_DELETER_ARTY_CHAIN" img="room_artillery_invis_long" />
-			<artillery power="1" room="1" start="true" weapon="BOMB_BREACH_1_ENEMY_ARTY_CHAIN" img="room_artillery_invis_long" />
-			<artillery power="1" room="2" start="true" weapon="KERNEL_CHAIN_ELITE_ENEMY_ARTY" img="room_artillery_invis_long" />
-			<artillery power="1" room="0" start="true" weapon="BEAM_ADAPT_3_ARTY_CHAIN" img="room_artillery_invis_long" />
+			<artillery power="2" room="0" start="true" weapon="BEAM_ADAPT_3_ARTY_CHAIN" img="room_artillery_invis_long" />
+			<artillery power="2" room="3" start="true" weapon="ZOLTAN_DELETER_ARTY_CHAIN" img="room_artillery_invis_long" />
+			<artillery power="2" room="1" start="true" weapon="BOMB_BREACH_1_PLAYER_ARTY_CHAIN " img="room_artillery_invis_long" />
+			<artillery power="2" room="2" start="true" weapon="KERNEL_CHAIN_ELITE_PLAYER_ARTY" img="room_artillery_invis_long" />
 			<battery power="1" max="2" room="11" start="false" img="room_battery_6" />
 			<!--<cloaking power="1" room="4" start="true" img="room_cloaking_10" /> in case we feel like allowing the ship to get cloaking-->
 			<clonebay power="1" room="5" start="true">
@@ -1060,7 +1057,6 @@
 		<aug name="SCRAP_COLLECTOR"/>
 		<aug name="SCRAP_COLLECTOR"/>
 	</shipBlueprint>
-
 	<shipBlueprint name="PLAYER_SHIP_TWISTED3_3" layout="zmt_player_lostsun_suicide" img="zmt_player_lostsun_suicide">
 		<class>Twisted Renegade Lostsun</class>
 		<name>Deja Mort</name>
@@ -1444,7 +1440,6 @@
 		<aug name="EX_AUTO_COOLDOWN" />
 		<aug name="TWISTED_FLAK_FORGE"/>
 	</shipBlueprint>
-
 	<shipBlueprint name="PLAYER_SHIP_TWISTED5_3" layout="zmt_player_engineer_suicide" img="zmt_player_engineer_suicide">
 		<class>Twisted Renegade Engineer</class>
 		<name>The Conagher</name>
@@ -9162,6 +9157,7 @@
 		<sysDamage>2</sysDamage>
 		<persDamage>2</persDamage>
 		<shots>1</shots>
+		<accuracyMod>30</accuracyMod>
 		<sp>0</sp>
 		<boost>
 			<type>cooldown</type>
@@ -11497,7 +11493,7 @@
 		<tip>tip_zolt_deleter</tip>
 		<title>Zoltan Deleter</title>
 		<short>Zolt Deleter</short>
-		<desc>Though it can be used to damage other crew, several governments have passed laws that if this weapon is brandished at any other race, you are to be killed on sight. Does moderate damage to any type of crew, but condemns all Zoltans to certain death.
+		<desc>If this weapon used on any other race, you are to be killed on sight. Does moderate damage to any type of crew, but condemns all Zoltans to certain death.
 			Base Cooldown: 70 -> 50
 		</desc>
 		<tooltip>2 power beam weapon that greatly damages enemy crew.</tooltip>
