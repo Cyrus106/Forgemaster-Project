@@ -394,10 +394,7 @@
 				</room>
 
 				<room id="10"> <!--"Shields"-->
-					<roomAnim renderLayer="0">resist_1x2</roomAnim>
 					<roomAnim renderlayer="1">fm_room_shields_8_cropped-sheet</roomAnim>
-					<roomAnim renderLayer="3">resist_icon</roomAnim>
-					<sysDamageResistChance>100</sysDamageResistChance>
 				</room>
 
 
