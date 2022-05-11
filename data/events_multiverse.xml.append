@@ -6265,11 +6265,12 @@
 <!-- FORGEMASTER MODULAR ARMOR MENU \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
 <FTL>
 	<event name="FM_MODULAR_HULL_MAIN_LOAD">
-		<event/>
+		<loadEvent>FM_MODULAR_HULL_MAIN</loadEvent>
 	</event>
 
 	<event name="FM_MODULAR_HULL_MAIN">
 		<text>This is where you can install and modify your very own Modular Hull (tm)!</text>
+		<clearTriggeredEvent name="FM_HULL_LIMITER_LOAD"/>
 		<choice req="FM_MODULAR_HULL" lvl="0" max_lvl="0" max_group="2" blue="false" hidden="true"><!--first install of hull-->
 			<text>Install modular armor</text>
 			<event>
@@ -6704,7 +6705,9 @@
 		<choice req="pilot" lvl="1" max_group="9" blue="false">
 			<text>Nevermind.</text>
 			<event>
-				<variable name="overcharmed_active" op="set" value="1"/>
+				<triggeredEvent name="FM_HULL_LIMITER_LOAD" event="FM_HULL_LIMITER_LOAD" loops="999999999">
+					<jumps amount="1" type="1"/>
+				</triggeredEvent>
 				<loadEventList default="FORGEMASTER_PHONE_EVENT_LOAD">
 					<event name="OVERCHARMED" req="IS_OVERCHARMED"/>
 				</loadEventList>
@@ -7941,7 +7944,7 @@
 		<choice req="pilot" max_group="3" blue="false">
 			<text>Nevermind.</text>
 			<event>
-				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS2</loadEvent>
+				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS</loadEvent>
 			</event>
 		</choice>
 	</event>
@@ -8017,7 +8020,7 @@
 		<choice req="pilot" max_group="3" blue="false">
 			<text>Nevermind.</text>
 			<event>
-				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS2</loadEvent>
+				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS</loadEvent>
 			</event>
 		</choice>
 	</event>
@@ -8093,7 +8096,7 @@
 		<choice req="pilot" max_group="3" blue="false">
 			<text>Nevermind.</text>
 			<event>
-				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS2</loadEvent>
+				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS</loadEvent>
 			</event>
 		</choice>
 	</event>
@@ -8169,7 +8172,7 @@
 		<choice req="pilot" max_group="3" blue="false">
 			<text>Nevermind.</text>
 			<event>
-				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS2</loadEvent>
+				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS</loadEvent>
 			</event>
 		</choice>
 	</event>
@@ -8245,7 +8248,7 @@
 		<choice req="pilot" max_group="3" blue="false">
 			<text>Nevermind.</text>
 			<event>
-				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS2</loadEvent>
+				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS</loadEvent>
 			</event>
 		</choice>
 	</event>
@@ -8321,7 +8324,7 @@
 		<choice req="pilot" max_group="3" blue="false">
 			<text>Nevermind.</text>
 			<event>
-				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS2</loadEvent>
+				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS</loadEvent>
 			</event>
 		</choice>
 	</event>
@@ -8397,7 +8400,7 @@
 		<choice req="pilot" max_group="3" blue="false">
 			<text>Nevermind.</text>
 			<event>
-				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS2</loadEvent>
+				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS</loadEvent>
 			</event>
 		</choice>
 	</event>
@@ -8473,7 +8476,7 @@
 		<choice req="pilot" max_group="3" blue="false">
 			<text>Nevermind.</text>
 			<event>
-				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS2</loadEvent>
+				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS</loadEvent>
 			</event>
 		</choice>
 	</event>
@@ -8799,9 +8802,6 @@
 				<item_modify>
 					<item type="scrap" min="-80" max="-80"/>
 				</item_modify>
-				<triggeredEvent event="LOAD_FASTSHIELD" loops="999999999">
-					<jumps amount="1" type="1"/>
-				</triggeredEvent>
 				<choice blue="false">
 					<text>Continue...</text>
 					<event>
@@ -8832,9 +8832,6 @@
 				<item_modify>
 					<item type="scrap" min="-120" max="-120"/>
 				</item_modify>
-				<triggeredEvent event="LOAD_FASTWEAPON" loops="999999999">
-					<jumps amount="1" type="1"/>
-				</triggeredEvent>
 				<choice blue="false">
 					<text>Continue...</text>
 					<event>
@@ -8878,10 +8875,6 @@
 	</event>
 	<event name="FM_MODULAR_HULL_CAPSTONE_MAGNETIC">
 		<text>Electromagnetic Hull Body [+80% ion res, +10% sys res, +10% scrap, scrap magnet effect, -3 reactor]</text>
-		<choice req="weapons" lvl="0" max_group="1" blue="false" hidden="true">
-			<text>you can't install the Infinitum Cyclo-Arsenal, you need a weapon system to draw power from</text>
-			<event load="OPTION_INVALID"/>
-		</choice>
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Install The Electromagnetic Hull Body!</text>
 			<event>
@@ -8890,11 +8883,7 @@
 				<variable name="fm_hull_capstones" op="add" value="1"/>
 				<item_modify>
 					<item type="scrap" min="-100" max="-100"/>
-				</item_modify>
-				<triggeredEvent event="LOAD_MAGNETIC" loops="999999999">
-					<jumps amount="1" type="1"/>
-				</triggeredEvent>
-				<choice blue="false">
+				</item_modify>				<choice blue="false">
 					<text>Continue...</text>
 					<event>
 						<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>

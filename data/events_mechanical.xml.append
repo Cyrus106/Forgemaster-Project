@@ -105,11 +105,31 @@
 
 <FTL><!--all the modular armor stuff-->
 	<!--special module effect events-->
-	<event name="LOAD_FASTSHIELD">
-		<status type="limit" target="player" system="shields" amount="4" />
+	<event name="FM_HULL_LIMITER_LOAD">
+	  <loadEvent>FM_HULL_LIMITER_REACTOR</loadEvent>
+	</event>
+	<event name="FM_HULL_LIMITER_WEAPON">
+		<loadEventList default="FM_HULL_LIMITER_SHIELD">
+			<event load="LOAD_FASTWEAPON" req="LIMIT_CHECK_WEAPON" lvl="3"/>
+		</loadEventList>
+	</event>
+	<event name="FM_HULL_LIMITER_SHIELD">
+		<loadEventList default="FM_HULL_LIMITER_REACTOR">
+			<event load="LOAD_FASTWEAPON" req="LIMIT_CHECK_SHIELD" lvl="4"/>
+		</loadEventList>
+	</event>
+	<event name="FM_HULL_LIMITER_REACTOR">
+		<loadEventList default="TRUENOTHING">
+			<event load="LOAD_MAGNETIC" req="LIMIT_CHECK_REACTOR" lvl="3"/>
+		</loadEventList>
 	</event>
 	<event name="LOAD_FASTWEAPON">
 		<status type="limit" target="player" system="weapons" amount="3" />
+		<loadEvent>FM_HULL_LIMITER_SHIELD</loadEvent>
+	</event>
+	<event name="LOAD_FASTSHIELD">
+		<status type="limit" target="player" system="shields" amount="4" />
+		<loadEvent>FM_HULL_LIMITER_REACTOR</loadEvent>
 	</event>
 	<event name="LOAD_MAGNETIC">
 		<status type="loss" target="player" system="reactor" amount="3" />
@@ -171,6 +191,7 @@
 		<triggeredEvent name="OVERCHARMED_TRIGGER" event="OVERCHARMED_RELOAD">
 			<playerDamage amount="1" countRepairs="false"/>
 		</triggeredEvent>
+		<variable name="overcharmed_active" op="set" value="1"/>
 		<loadEvent>OVERCHARMED_MESSAGE</loadEvent>
 		<queueEvent>FORGEMASTER_PHONE_EVENT_LOAD</queueEvent>
 	</event>
