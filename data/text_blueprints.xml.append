@@ -104,7 +104,25 @@
 <text name="system_temporal_title">Temporal Manipulator</text>
 <text name="system_temporal_desc">Changes the rate of time in one room. Upgrading increases duration and time dilation strength.</text>
 
+<!--ENGI AND ZOLTAN EVENT BLUE OPTION STUFF-->
+<text name="text_DISTRESS_ENGI_PARTY_1">*Record Scratch* Hold on, hold on. What are you doing? Why are you doing this? What did they do to hurt you? They're just partying, trying to learn about other cultures and enjoy their lives. What gives you the right to play god and massacre them for monetary gain? Stop it. Don't do this.</text>
+<text name="text_DISTRESS_ENGI_PARTY_1_PROCEED">What the...? Who is talking?</text>
+<text name="text_DISTRESS_ENGI_PARTY_2">Its me, your brain. Trying to convince you not to commit a massive warcrime. Lets just sloooowly power down those weapons yeah?</text>
+<text name="text_DISTRESS_ENGI_PARTY_2_PROCEED">The Federation MUST defeat the Rebels, this justifies any means necessary to procure resources.</text>
+<text name="text_DISTRESS_ENGI_PARTY_3">Is THAT what you tell yourself to help you sleep at night? Jesus christ dude, what's this going to buy you, an oxygen upgrade? Just TALK to them, they might help you!</text>
+<text name="text_DISTRESS_ENGI_PARTY_3_PROCEED">Why take SOME resources when I could take ALL resources?</text>
+<text name="text_DISTRESS_ENGI_PARTY_4">Dude you made Turkeys with paint smeared all over your hands at the age of 4 in Kindergarden. You bought flowers for the teacher because you thought her dress was pretty. How did we get here? This is wrong, you don't have to do it.</text>
+<text name="text_DISTRESS_ENGI_PARTY_4_PROCEED">What if I can't afford a gun next sector? I really want a Hermes! Or maybe a Vulcan? Hrm....or a Chain Energy?</text>
+<text name="text_DISTRESS_ENGI_PARTY_5">I'm speechless. You REALLY won't stop, will you?</text>
+<text name="text_DISTRESS_ENGI_PARTY_5_PROCEED">Absolutely not, I'm going to loot them dry.</text>
+<text name="text_DISTRESS_ENGI_PARTY_6">Alright. You know what? FINE. Do it, see if I care. What's next, killing Orchid children for sport? Enjoy your blood-stained loot</text>
 
+<text name="text_DISTRESS_ENGI_PARTY_STOP">Fine, I'll stop.</text>
+<text name="text_DISTRESS_ENGI_PARTY_STOP_OK">Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
+<text name="text_DISTRESS_ENGI_PARTY_STOP_OK_LAST">I....wha? O-ok....maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
+
+<text name="text_DISTRESS_ZOLTAN_MANTIS_1">Advise that you will fire again if they do not give up any valuable resources.</text>
+<text name="text_DISTRESS_ZOLTAN_MANTIS_2">The Zoltan ship provides a spare weapon, and the Mantis warship provides any spare resources it has. You carry on your merry way, leaving the two crippled ships to sort out their differences.</text>
 <!-- WEAPON CRAFTING-->
 <text name="text_CREATE_FM_SHOTGUN_BRONZE_1">Alastair's eyes light up as you make your request. "This, I can absolutely work with. Give me those guns and you'll have yourself a fine weapon before you in no time. I go way back with them, so I guarantee a product of utmost quality in very little time."</text>
 <text name="text_CREATE_FM_SHOTGUN_BRONZE_2">"Flak weapons are among the first I teach any Plated to craft, because they are the first gun I learned to craft. Their versatility lends itself to mistakes, whereas a more precise gun requires a completely perfect barrel." Alastair hoists the gun up on the table and begins dismantling it before you without taking his eyes away from you and continues speaking.

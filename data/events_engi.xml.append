@@ -14,21 +14,21 @@
 			<text>An Engi wearing a purple party hat appears onscreen. In the backgrounds are colorful rapidly flashing lights and several Slugs dancing. "Commence greetings. Inquiry: knowledge of how to 'party hard.' Request: mind-altering substances for gratification, recommended by Slug visitors."</text>
 			<choice hidden="true" req="BLUELIST_ION">
 				<text>(Ion Weapon) Zap the Engi, it's close enough.</text>
-				<event>	
+				<event>
 					<text>The Engi flails like a puppet for a few minutes. Once it regains control over itself, its screen begins to rapidly flash colors, and it speaks very slowly. "Graaaaatituuuuuude. Thiiiiiis is: dooooope. Aaaaacceeeeept cooompeeeensaaaaaatiooon."</text>
 					<autoReward level="MED">stuff</autoReward>
 				</event>
 			</choice>
 			<choice hidden="true" req="CREW_STIMS">
 				<text>(Mantis Pheromones) Disperse the pheromones over their ship.</text>
-				<event>	
+				<event>
 					<text>A steady distribution of the pheromones certainly has... an effect on the crew. You may have given them too much, because now the Slugs are trying to climb the walls and the Engi are hugging the drones. While they're distracted you scrap some of the exterior regions of their ship.</text>
 					<autoReward level="MED">scrap_only</autoReward>
 				</event>
 			</choice>
 			<choice hidden="true" req="LIST_CREW_ORCHID">
 				<text>(Orchid Crew) Have your Orchid work some magic on them.</text>
-				<event>	
+				<event>
 					<text>The Orchids have a unique ability to put others in a... "daze". The effect is visible on the Slugs and Engi who begin to act very strangely. They pay you for your "assistance."</text>
 					<autoReward level="MED">scrap_only</autoReward>
 				</event>
@@ -56,2279 +56,1601 @@
 </event>
 
 <mod:findName type = "event" name = "DISTRESS_ENGI_PARTY">
- <mod:findLike type="choice" start="0" limit="1">
- <mod:findLike type="event">
-		
-	<mod-append:choice req="FM_MISSILES_BURST_FIRE" lvl="1" max_group="600" hidden="true" blue="true">
-     		<text>(Hellfire) Heat up the party! That'll teach these lazy bastards.[Cost: 2}]</text>
-		<event>
-			<text>*Record Scratch* Hold on, hold on. What are you doing? Why are you doing this? What did they do to hurt you? They're just partying, trying to learn about other cultures and enjoy their lives. What gives you the right to play god and massacre them for monetary gain? Stop it. Don't do this.</text>		
-				<choice hidden="true">
-				<text>What the...? Who is talking?</text>
-				<event>
-				<text>Its me, your brain. Trying to convince you not to commit a massive warcrime. Lets just sloooowly power down those weapons yeah?</text>
-				<choice hidden="true">
-				<text>The Federation MUST defeat the Rebels, this justifies any means necessary to procure resources.</text>
-				<event>
-				<text>Is THAT what you tell yourself to help you sleep at night? Jesus christ dude, what's this going to buy you, an oxygen upgrade? Just TALK to them, they might help you!</text>
-				<choice hidden="true">
-				<text>Why take SOME resources when I could take ALL resources?</text>
-				<event>
-				<text>Dude you made Turkeys with paint smeared all over your hands at the age of 4 in Kindergarden. You bought flowers for the teacher because you thought her dress was pretty. How did we get here? This is wrong, you don't have to do it.</text>
-				<choice hidden="true">
-				<text>What if I can't afford a gun next sector? I really want a Hermes! Or maybe a Vulcan? Hrm....or a Chain Energy?</text>
-				<event>
-				<text>I'm speechless. You REALLY won't stop, will you?</text>
-				<choice hidden="true">
-				<text>Absolutely not, I'm going to loot them dry.</text>
-				<event>
-				<text>Alright. You know what? FINE. Do it, see if I care. What's next, killing Orchid children for sport? Enjoy your blood-stained loot</text>
-				<choice hidden="true">
-				<text>Fire the Hellfire Missiles.</text>
-				<event>							
-				<item_modify>
-				<item type="scrap" min="50" max="90"/>
-				<item type="fuel" min="2" max="4"/>
-				<item type="missiles" min="-2" max="-2"/>
-				</item_modify>				
-				<text>Your Hellfire Missiles annihilate the vessel without resistance, and you collect your delicious loot.</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
-			</choice>
-		</event>
-	</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>I....wha? O-ok....maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>			
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>	
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-			
-</mod-append:choice>
+	<mod:findLike type="choice" start="0" limit="1">
+		<mod:findLike type="event">
 
-	<mod-append:choice req="FM_MISSILES_BURST_FIRE_PLAYER" lvl="1" max_group="600" hidden="true" blue="true">
-     		<text>(Hellfire) Heat up the party! That'll teach these lazy bastards.[Cost: 2}]</text>
-		<event>
-			<text>*Record Scratch* Hold on, hold on. What are you doing? Why are you doing this? What did they do to hurt you? They're just partying, trying to learn about other cultures and enjoy their lives. What gives you the right to play god and massacre them for monetary gain? Stop it. Don't do this.</text>		
-				<choice hidden="true">
-				<text>What the...? Who is talking?</text>
+			<mod-append:choice req="ANY_FM_MISSILES_BURST_FIRE" lvl="1" max_group="600" hidden="true" blue="true">
+				<text>(Hellfire) Heat up the party! That'll teach these lazy bastards.[Cost: 2}]</text>
 				<event>
-				<text>Its me, your brain. Trying to convince you not to commit a massive warcrime. Lets just sloooowly power down those weapons yeah?</text>
-				<choice hidden="true">
-				<text>The Federation MUST defeat the Rebels, this justifies any means necessary to procure resources.</text>
-				<event>
-				<text>Is THAT what you tell yourself to help you sleep at night? Jesus christ dude, what's this going to buy you, an oxygen upgrade? Just TALK to them, they might help you!</text>
-				<choice hidden="true">
-				<text>Why take SOME resources when I could take ALL resources?</text>
-				<event>
-				<text>Dude you made Turkeys with paint smeared all over your hands at the age of 4 in Kindergarden. You bought flowers for the teacher because you thought her dress was pretty. How did we get here? This is wrong, you don't have to do it.</text>
-				<choice hidden="true">
-				<text>What if I can't afford a gun next sector? I really want a Hermes! Or maybe a Vulcan? Hrm....or a Chain Energy?</text>
-				<event>
-				<text>I'm speechless. You REALLY won't stop, will you?</text>
-				<choice hidden="true">
-				<text>Absolutely not, I'm going to loot them dry.</text>
-				<event>
-				<text>Alright. You know what? FINE. Do it, see if I care. What's next, killing Orchid children for sport? Enjoy your blood-stained loot.</text>
-				<choice hidden="true">
-				<text>Fire the Hellfire Missiles.</text>
-				<event>							
-				<item_modify>
-				<item type="scrap" min="50" max="90"/>
-				<item type="fuel" min="2" max="4"/>
-				<item type="missiles" min="-2" max="-2"/>
-				</item_modify>				
-				<text>Your Hellfire Missiles annihilate the vessel without resistance, and you collect your delicious loot.</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
-			</choice>
-		</event>
-	</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>I....wha? O-ok....maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>			
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>	
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-			
-</mod-append:choice>
+					<text id="text_DISTRESS_ENGI_PARTY_1"/>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_1_PROCEED"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_2"/>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_2_PROCEED"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_3"/>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_3_PROCEED"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_4"/>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_4_PROCEED"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_5"/>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_5_PROCEED"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_6"/>
+															<choice hidden="true">
+																<text>Fire the Hellfire Missiles.</text>
+																<event>
+																	<item_modify>
+																		<item type="scrap" min="50" max="90"/>
+																		<item type="fuel" min="2" max="4"/>
+																		<item type="missiles" min="-2" max="-2"/>
+																	</item_modify>
+																	<text>Your Hellfire Missiles annihilate the vessel without resistance, and you collect your delicious loot.</text>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
+																	</choice>
+																</event>
+															</choice>
+															<choice hidden="true">
+																<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+																<event>
+																	<text id="text_DISTRESS_ENGI_PARTY_STOP_OK_LAST"/>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+															<choice hidden="true">
+																<text>Continue...</text>
+																<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
 
-	<mod-append:choice req="FM_MISSILES_BURST_FIRE_MEGA" lvl="1" max_group="600" hidden="true" blue="true">
-     		<text>(Hellfire) Heat up the party! That'll teach these lazy bastards.[Cost: 2}]</text>
-		<event>
-			<text>*Record Scratch* Hold on, hold on. What are you doing? Why are you doing this? What did they do to hurt you? They're just partying, trying to learn about other cultures and enjoy their lives. What gives you the right to play god and massacre them for monetary gain? Stop it. Don't do this.</text>		
-				<choice hidden="true">
-				<text>What the...? Who is talking?</text>
-				<event>
-				<text>Its me, your brain. Trying to convince you not to commit a massive warcrime. Lets just sloooowly power down those weapons yeah?</text>
-				<choice hidden="true">
-				<text>The Federation MUST defeat the Rebels, this justifies any means necessary to procure resources.</text>
-				<event>
-				<text>Is THAT what you tell yourself to help you sleep at night? Jesus christ dude, what's this going to buy you, an oxygen upgrade? Just TALK to them, they might help you!</text>
-				<choice hidden="true">
-				<text>Why take SOME resources when I could take ALL resources?</text>
-				<event>
-				<text>Dude you made Turkeys with paint smeared all over your hands at the age of 4 in Kindergarden. You bought flowers for the teacher because you thought her dress was pretty. How did we get here? This is wrong, you don't have to do it.</text>
-				<choice hidden="true">
-				<text>What if I can't afford a gun next sector? I really want a Hermes! Or maybe a Vulcan? Hrm....or a Chain Energy?</text>
-				<event>
-				<text>I'm speechless. You REALLY won't stop, will you?</text>
-				<choice hidden="true">
-				<text>Absolutely not, I'm going to loot them dry.</text>
-				<event>
-				<text>Alright. You know what? FINE. Do it, see if I care. What's next, killing Orchid children for sport? Enjoy your blood-stained loot.</text>
-				<choice hidden="true">
-				<text>Fire the Hellfire Missiles.</text>
-				<event>							
-				<item_modify>
-				<item type="scrap" min="50" max="90"/>
-				<item type="fuel" min="2" max="4"/>
-				<item type="missiles" min="-2" max="-2"/>
-				</item_modify>				
-				<text>Your Hellfire Missiles annihilate the vessel without resistance, and you collect your delicious loot.</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
-			</choice>
-		</event>
-	</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>I....wha? O-ok....maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>			
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>	
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-				
-</mod-append:choice>
+			</mod-append:choice>
 
-	<mod-append:choice req="FM_MINELAUNCHER_HULL" lvl="1" max_group="601" hidden="true" blue="true">
-     		<text>(Ba-Pef) Make this their last party. Block all the exits.[Cost: 1}]</text>
-		<event>
-			
-			<text>*Record Scratch* Hold on, hold on. What are you doing? Why are you doing this? What did they do to hurt you? They're just partying, trying to learn about other cultures and enjoy their lives. What gives you the right to play god and massacre them for monetary gain? Stop it. Don't do this.</text>		
-				<choice hidden="true">
-				<text>What the...? Who is talking?</text>
+			<mod-append:choice req="FM_MINELAUNCHER_HULL" lvl="1" max_group="601" hidden="true" blue="true">
+				<text>(Ba-Pef) Make this their last party. Block all the exits.[Cost: 1}]</text>
 				<event>
-				<text>Its me, your brain. Trying to convince you not to commit a massive warcrime. Lets just sloooowly power down those weapons yeah?</text>
-				<choice hidden="true">
-				<text>The Federation MUST defeat the Rebels, this justifies any means necessary to procure resources.</text>
-				<event>
-				<text>Is THAT what you tell yourself to help you sleep at night? Jesus christ dude, what's this going to buy you, an oxygen upgrade? Just TALK to them, they might help you!</text>
-				<choice hidden="true">
-				<text>Why take SOME resources when I could take ALL resources?</text>
-				<event>
-				<text>Dude you made Turkeys with paint smeared all over your hands at the age of 4 in Kindergarden. You bought flowers for the teacher because you thought her dress was pretty. How did we get here? This is wrong, you don't have to do it.</text>
-				<choice hidden="true">
-				<text>What if I can't afford a gun next sector? I really want a Hermes! Or maybe a Vulcan? Hrm....or a Chain Energy?</text>
-				<event>
-				<text>I'm speechless. You REALLY won't stop, will you?</text>
-				<choice hidden="true">
-				<text>Absolutely not, I'm going to loot them dry.</text>
-				<event>
-				<text>Alright. You know what? FINE. Do it, see if I care. What's next, killing Orchid children for sport? Enjoy your blood-stained loot</text>
-				<choice hidden="true">
-				<text>Fire the 'Ba-Pef' Minelauncher.</text>
-				<event>							
-				<item_modify>
-				<item type="scrap" min="50" max="90"/>
-				<item type="fuel" min="2" max="4"/>
-				<item type="missiles" min="-1" max="-1"/>
-				</item_modify>				
-				<text>Your 'Ba-Pef' mines block all the exits, so none of the party patrons can escape. You dismantle the other ships parked near the vessel, knowing they can't return to them using their personal shuttles.</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
-			</choice>
-		</event>
-	</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>I....wha? O-ok....maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>			
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>	
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>				
-</mod-append:choice>
 
-	<mod-append:choice req="FM_SHOTGUN_NOBELIUM" lvl="1" max_group="602" hidden="true" blue="true">
-     		<text>(Nobelium) Shred these partying coward's ships to pieces, how dare they party during a civil war?</text>
-		<event>
-			<text>*Record Scratch* Hold on, hold on. What are you doing? Why are you doing this? What did they do to hurt you? They're just partying, trying to learn about other cultures and enjoy their lives. What gives you the right to play god and massacre them for monetary gain? Stop it. Don't do this.</text>		
-				<choice hidden="true">
-				<text>What the...? Who is talking?</text>
-				<event>
-				<text>Its me, your brain. Trying to convince you not to commit a massive warcrime. Lets just sloooowly power down those weapons yeah?</text>
-				<choice hidden="true">
-				<text>The Federation MUST defeat the Rebels, this justifies any means necessary to procure resources.</text>
-				<event>
-				<text>Is THAT what you tell yourself to help you sleep at night? Jesus christ dude, what's this going to buy you, an oxygen upgrade? Just TALK to them, they might help you!</text>
-				<choice hidden="true">
-				<text>Why take SOME resources when I could take ALL resources?</text>
-				<event>
-				<text>Dude you made Turkeys with paint smeared all over your hands at the age of 4 in Kindergarden. You bought flowers for the teacher because you thought her dress was pretty. How did we get here? This is wrong, you don't have to do it.</text>
-				<choice hidden="true">
-				<text>What if I can't afford a gun next sector? I really want a Hermes! Or maybe a Vulcan? Hrm....or a Chain Energy?</text>
-				<event>
-				<text>I'm speechless. You REALLY won't stop, will you?</text>
-				<choice hidden="true">
-				<text>Absolutely not, I'm going to loot them dry.</text>
-				<event>
-				<text>Alright. You know what? FINE. Do it, see if I care. What's next, killing Orchid children for sport? Enjoy your blood-stained loot</text>
-				<choice hidden="true">
-				<text>Fire the Nobelium Flak.</text>
-				<event>							
-				<item_modify>
-				<item type="scrap" min="50" max="90"/>
-				<item type="fuel" min="2" max="4"/>
-				</item_modify>				
-				<text>Your Nobelium Flak shreds into the hulls of the parked ships present near the party. It also smashes into the partying engi vessel's hull, shredding it like swiss cheese. Nobody reached an escape pod in time.</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
-			</choice>
-		</event>
-	</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>I....wha? O-ok....maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>			
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>	
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-			
-</mod-append:choice>
+					<text id="text_DISTRESS_ENGI_PARTY_1"/>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_1_PROCEED"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_2"/>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_2_PROCEED"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_3"/>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_3_PROCEED"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_4"/>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_4_PROCEED"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_5"/>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_5_PROCEED"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_6"/>
+															<choice hidden="true">
+																<text>Fire the 'Ba-Pef' Minelauncher.</text>
+																<event>
+																	<item_modify>
+																		<item type="scrap" min="50" max="90"/>
+																		<item type="fuel" min="2" max="4"/>
+																		<item type="missiles" min="-1" max="-1"/>
+																	</item_modify>
+																	<text>Your 'Ba-Pef' mines block all the exits, so none of the party patrons can escape. You dismantle the other ships parked near the vessel, knowing they can't return to them using their personal shuttles.</text>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
+																	</choice>
+																</event>
+															</choice>
+															<choice hidden="true">
+																<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+																<event>
+																	<text id="text_DISTRESS_ENGI_PARTY_STOP_OK_LAST"/>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+															<choice hidden="true">
+																<text>Continue...</text>
+																<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</mod-append:choice>
 
-	<mod-append:choice req="FM_SHOTGUN_HASSIUM" lvl="1" max_group="603" hidden="true" blue="true">
-     		<text>(Hassium) Shred these partying coward's ships to pieces, how dare they party during a civil war?</text>
-		<event>
-			<text>*Record Scratch* Hold on, hold on. What are you doing? Why are you doing this? What did they do to hurt you? They're just partying, trying to learn about other cultures and enjoy their lives. What gives you the right to play god and massacre them for monetary gain? Stop it. Don't do this.</text>		
-				<choice hidden="true">
-				<text>What the...? Who is talking?</text>
+			<mod-append:choice req="FM_SHOTGUN_NOBELIUM" lvl="1" max_group="602" hidden="true" blue="true">
+				<text>(Nobelium) Shred these partying coward's ships to pieces, how dare they party during a civil war?</text>
 				<event>
-				<text>Its me, your brain. Trying to convince you not to commit a massive warcrime. Lets just sloooowly power down those weapons yeah?</text>
-				<choice hidden="true">
-				<text>The Federation MUST defeat the Rebels, this justifies any means necessary to procure resources.</text>
+					<text id="text_DISTRESS_ENGI_PARTY_1"/>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_1_PROCEED"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_2"/>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_2_PROCEED"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_3"/>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_3_PROCEED"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_4"/>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_4_PROCEED"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_5"/>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_5_PROCEED"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_6"/>
+															<choice hidden="true">
+																<text>Fire the Nobelium Flak.</text>
+																<event>
+																	<item_modify>
+																		<item type="scrap" min="50" max="90"/>
+																		<item type="fuel" min="2" max="4"/>
+																	</item_modify>
+																	<text>Your Nobelium Flak shreds into the hulls of the parked ships present near the party. It also smashes into the partying engi vessel's hull, shredding it like swiss cheese. Nobody reached an escape pod in time.</text>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
+																	</choice>
+																</event>
+															</choice>
+															<choice hidden="true">
+																<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+																<event>
+																	<text id="text_DISTRESS_ENGI_PARTY_STOP_OK_LAST"/>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+															<choice hidden="true">
+																<text>Continue...</text>
+																<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+
+			</mod-append:choice>
+
+			<mod-append:choice req="FM_SHOTGUN_HASSIUM" lvl="1" max_group="603" hidden="true" blue="true">
+				<text>(Hassium) Shred these partying coward's ships to pieces, how dare they party during a civil war?</text>
 				<event>
-				<text>Is THAT what you tell yourself to help you sleep at night? Jesus christ dude, what's this going to buy you, an oxygen upgrade? Just TALK to them, they might help you!</text>
-				<choice hidden="true">
-				<text>Why take SOME resources when I could take ALL resources?</text>
+					<text id="text_DISTRESS_ENGI_PARTY_1"/>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_1_PROCEED"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_2"/>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_2_PROCEED"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_3"/>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_3_PROCEED"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_4"/>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_4_PROCEED"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_5"/>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_5_PROCEED"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_6"/>
+															<choice hidden="true">
+																<text>Fire the Hassium Flak.</text>
+																<event>
+																	<item_modify>
+																		<item type="scrap" min="50" max="90"/>
+																		<item type="fuel" min="2" max="4"/>
+																	</item_modify>
+																	<text>Your Hassium Flak shreds into the hulls of the parked ships present near the party. It also smashes into the partying engi vessel's hull, shredding it like swiss cheese. Nobody reached an escape pod in time.</text>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
+																	</choice>
+																</event>
+															</choice>
+															<choice hidden="true">
+																<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+																<event>
+																	<text id="text_DISTRESS_ENGI_PARTY_STOP_OK_LAST"/>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+															<choice hidden="true">
+																<text>Continue...</text>
+																<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+
+			</mod-append:choice>
+
+			<mod-append:choice req="FM_LASER_HUMAN" lvl="1" max_group="604" hidden="true" blue="true">
+				<text>(Rebel Ripper) Shoot into the party to fish for any humans, what if there is a Rebel spy in their midst?</text>
 				<event>
-				<text>Dude you made Turkeys with paint smeared all over your hands at the age of 4 in Kindergarden. You bought flowers for the teacher because you thought her dress was pretty. How did we get here? This is wrong, you don't have to do it.</text>
-				<choice hidden="true">
-				<text>What if I can't afford a gun next sector? I really want a Hermes! Or maybe a Vulcan? Hrm....or a Chain Energy?</text>
+					<text id="text_DISTRESS_ENGI_PARTY_1"/>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_1_PROCEED"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_2"/>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_2_PROCEED"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_3"/>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_3_PROCEED"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_4"/>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_4_PROCEED"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_5"/>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_5_PROCEED"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_6"/>
+															<choice hidden="true">
+																<text>Fire the Rebel Ripper.</text>
+																<event>
+																	<item_modify>
+																		<item type="scrap" min="90" max="130"/>
+																		<item type="fuel" min="2" max="5"/>
+																	</item_modify>
+																	<text>Your Rebel Ripper laser peppers the engi vessel for "Rebel spies". Turns out the entire ship was filled with "Rebel spies". With all the party patrons dead, you loot all their ships safely for scrap, and find some fuel as well.</text>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
+																	</choice>
+																</event>
+															</choice>
+															<choice hidden="true">
+																<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+																<event>
+																	<text id="text_DISTRESS_ENGI_PARTY_STOP_OK_LAST"/>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+															<choice hidden="true">
+																<text>Continue...</text>
+																<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+
+			</mod-append:choice>
+
+			<mod-append:choice req="FM_LASER_ION_MEGA" lvl="1" max_group="605" hidden="true" blue="true">
+				<text>(Absolution) Add some "surprise party-goers" to the mix to "party hard".</text>
 				<event>
-				<text>I'm speechless. You REALLY won't stop, will you?</text>
-				<choice hidden="true">
-				<text>Absolutely not, I'm going to loot them dry.</text>
+					<text id="text_DISTRESS_ENGI_PARTY_1"/>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_1_PROCEED"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_2"/>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_2_PROCEED"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_3"/>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_3_PROCEED"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_4"/>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_4_PROCEED"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_5"/>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_5_PROCEED"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_6"/>
+															<choice hidden="true">
+																<text>Fire the Absolution.</text>
+																<event>
+																	<item_modify>
+																		<item type="scrap" min="70" max="110"/>
+																		<item type="fuel" min="2" max="5"/>
+																	</item_modify>
+																	<text>Your Absolution fills their party vessel with Ion Anomaly clouds. You are glad the first thing they disabled was their Oxygen, so you didn't have to hear their obnoxious screams as they were torn apart by Anomalous vortexes. You loot the vessels docked near the party vessel.</text>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
+																	</choice>
+																</event>
+															</choice>
+															<choice hidden="true">
+																<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+																<event>
+																	<text id="text_DISTRESS_ENGI_PARTY_STOP_OK_LAST"/>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+															<choice hidden="true">
+																<text>Continue...</text>
+																<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+
+			</mod-append:choice>
+
+			<mod-append:choice req="ANY_FM_BEAM_GUILLOTINE_CHAIN" lvl="1" max_group="606" hidden="true" blue="true">
+				<text>(Menaulion) Kill them all before they can even blink. There is a civil war going on, how dare they party?!</text>
 				<event>
-				<text>Alright. You know what? FINE. Do it, see if I care. What's next, killing Orchid children for sport? Enjoy your blood-stained loot</text>
-				<choice hidden="true">
-				<text>Fire the Hassium Flak.</text>
-				<event>							
-				<item_modify>
-				<item type="scrap" min="50" max="90"/>
-				<item type="fuel" min="2" max="4"/>
-				</item_modify>				
-				<text>Your Hassium Flak shreds into the hulls of the parked ships present near the party. It also smashes into the partying engi vessel's hull, shredding it like swiss cheese. Nobody reached an escape pod in time.</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
-			</choice>
-		</event>
-	</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>I....wha? O-ok....maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>			
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>	
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-			
-</mod-append:choice>
-	
-	<mod-append:choice req="FM_LASER_HUMAN" lvl="1" max_group="604" hidden="true" blue="true">
-     		<text>(Rebel Ripper) Shoot into the party to fish for any humans, what if there is a Rebel spy in their midst?</text>
-		<event>
-			<text>*Record Scratch* Hold on, hold on. What are you doing? Why are you doing this? What did they do to hurt you? They're just partying, trying to learn about other cultures and enjoy their lives. What gives you the right to play god and massacre them for monetary gain? Stop it. Don't do this.</text>		
-				<choice hidden="true">
-				<text>What the...? Who is talking?</text>
-				<event>
-				<text>Its me, your brain. Trying to convince you not to commit a massive warcrime. Lets just sloooowly power down those weapons yeah?</text>
-				<choice hidden="true">
-				<text>The Federation MUST defeat the Rebels, this justifies any means necessary to procure resources.</text>
-				<event>
-				<text>Is THAT what you tell yourself to help you sleep at night? Jesus christ dude, what's this going to buy you, an oxygen upgrade? Just TALK to them, they might help you!</text>
-				<choice hidden="true">
-				<text>Why take SOME resources when I could take ALL resources?</text>
-				<event>
-				<text>Dude you made Turkeys with paint smeared all over your hands at the age of 4 in Kindergarden. You bought flowers for the teacher because you thought her dress was pretty. How did we get here? This is wrong, you don't have to do it.</text>
-				<choice hidden="true">
-				<text>What if I can't afford a gun next sector? I really want a Hermes! Or maybe a Vulcan? Hrm....or a Chain Energy?</text>
-				<event>
-				<text>I'm speechless. You REALLY won't stop, will you?</text>
-				<choice hidden="true">
-				<text>Absolutely not, I'm going to loot them dry.</text>
-				<event>
-				<text>Alright. You know what? FINE. Do it, see if I care. What's next, killing Orchid children for sport? Enjoy your blood-stained loot</text>
-				<choice hidden="true">
-				<text>Fire the Rebel Ripper.</text>
-				<event>							
-				<item_modify>
-				<item type="scrap" min="90" max="130"/>
-				<item type="fuel" min="2" max="5"/>
-				</item_modify>				
-				<text>Your Rebel Ripper laser peppers the engi vessel for "Rebel spies". Turns out the entire ship was filled with "Rebel spies". With all the party patrons dead, you loot all their ships safely for scrap, and find some fuel as well.</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
-			</choice>
-		</event>
-	</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>I....wha? O-ok....maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>			
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>	
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-			
-</mod-append:choice>
-	
-	<mod-append:choice req="FM_LASER_ION_MEGA" lvl="1" max_group="605" hidden="true" blue="true">
-     		<text>(Absolution) Add some "surprise party-goers" to the mix to "party hard".</text>
-		<event>
-			<text>*Record Scratch* Hold on, hold on. What are you doing? Why are you doing this? What did they do to hurt you? They're just partying, trying to learn about other cultures and enjoy their lives. What gives you the right to play god and massacre them for monetary gain? Stop it. Don't do this.</text>		
-				<choice hidden="true">
-				<text>What the...? Who is talking?</text>
-				<event>
-				<text>Its me, your brain. Trying to convince you not to commit a massive warcrime. Lets just sloooowly power down those weapons yeah?</text>
-				<choice hidden="true">
-				<text>The Federation MUST defeat the Rebels, this justifies any means necessary to procure resources.</text>
-				<event>
-				<text>Is THAT what you tell yourself to help you sleep at night? Jesus christ dude, what's this going to buy you, an oxygen upgrade? Just TALK to them, they might help you!</text>
-				<choice hidden="true">
-				<text>Why take SOME resources when I could take ALL resources?</text>
-				<event>
-				<text>Dude you made Turkeys with paint smeared all over your hands at the age of 4 in Kindergarden. You bought flowers for the teacher because you thought her dress was pretty. How did we get here? This is wrong, you don't have to do it.</text>
-				<choice hidden="true">
-				<text>What if I can't afford a gun next sector? I really want a Hermes! Or maybe a Vulcan? Hrm....or a Chain Energy?</text>
-				<event>
-				<text>I'm speechless. You REALLY won't stop, will you?</text>
-				<choice hidden="true">
-				<text>Absolutely not, I'm going to loot them dry.</text>
-				<event>
-				<text>Alright. You know what? FINE. Do it, see if I care. What's next, killing Orchid children for sport? Enjoy your blood-stained loot</text>
-				<choice hidden="true">
-				<text>Fire the Absolution.</text>
-				<event>							
-				<item_modify>
-				<item type="scrap" min="70" max="110"/>
-				<item type="fuel" min="2" max="5"/>
-				</item_modify>				
-				<text>Your Absolution fills their party vessel with Ion Anomaly clouds. You are glad the first thing they disabled was their Oxygen, so you didn't have to hear their obnoxious screams as they were torn apart by Anomalous vortexes. You loot the vessels docked near the party vessel.</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
-			</choice>
-		</event>
-	</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>I....wha? O-ok....maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>			
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>	
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-			
-</mod-append:choice>
-	
-	<mod-append:choice req="FM_BEAM_GUILLOTINE_CHAIN" lvl="1" max_group="606" hidden="true" blue="true">
-     		<text>(Menaulion) Kill them all before they can even blink. There is a civil war going on, how dare they party?!</text>
-		<event>
-			<text>*Record Scratch* Hold on, hold on. What are you doing? Why are you doing this? What did they do to hurt you? They're just partying, trying to learn about other cultures and enjoy their lives. What gives you the right to play god and massacre them for monetary gain? Stop it. Don't do this.</text>		
-				<choice hidden="true">
-				<text>What the...? Who is talking?</text>
-				<event>
-				<text>Its me, your brain. Trying to convince you not to commit a massive warcrime. Lets just sloooowly power down those weapons yeah?</text>
-				<choice hidden="true">
-				<text>The Federation MUST defeat the Rebels, this justifies any means necessary to procure resources.</text>
-				<event>
-				<text>Is THAT what you tell yourself to help you sleep at night? Jesus christ dude, what's this going to buy you, an oxygen upgrade? Just TALK to them, they might help you!</text>
-				<choice hidden="true">
-				<text>Why take SOME resources when I could take ALL resources?</text>
-				<event>
-				<text>Dude you made Turkeys with paint smeared all over your hands at the age of 4 in Kindergarden. You bought flowers for the teacher because you thought her dress was pretty. How did we get here? This is wrong, you don't have to do it.</text>
-				<choice hidden="true">
-				<text>What if I can't afford a gun next sector? I really want a Hermes! Or maybe a Vulcan? Hrm....or a Chain Energy?</text>
-				<event>
-				<text>I'm speechless. You REALLY won't stop, will you?</text>
-				<choice hidden="true">
-				<text>Absolutely not, I'm going to loot them dry.</text>
-				<event>
-				<text>Alright. You know what? FINE. Do it, see if I care. What's next, killing Orchid children for sport? Enjoy your blood-stained loot</text>
-				<choice hidden="true">
-				<text>Fire the Menaulion.</text>
-				<event>							
-				<item_modify>
-				<item type="scrap" min="90" max="130"/>
-				<item type="fuel" min="2" max="5"/>
-				</item_modify>				
-				<text>Every living thing on the ship is dead within seconds, they probably didn't even know they were in danger before they died. You loot the engi party vessel, and the other empty vessels docked nearby. Your findings are VERY profitable.</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
-			</choice>
-		</event>
-	</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>I....wha? O-ok....maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>			
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>	
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-			
-</mod-append:choice>
-	
-	<mod-append:choice req="FM_BEAM_GUILLOTINE_CHAIN_PLAYER" lvl="1" max_group="606" hidden="true" blue="true">
-     		<text>(Menaulion) Kill them all before they can even blink. There is a civil war going on, how dare they party?!</text>
-		<event>
-			<text>*Record Scratch* Hold on, hold on. What are you doing? Why are you doing this? What did they do to hurt you? They're just partying, trying to learn about other cultures and enjoy their lives. What gives you the right to play god and massacre them for monetary gain? Stop it. Don't do this.</text>		
-				<choice hidden="true">
-				<text>What the...? Who is talking?</text>
-				<event>
-				<text>Its me, your brain. Trying to convince you not to commit a massive warcrime. Lets just sloooowly power down those weapons yeah?</text>
-				<choice hidden="true">
-				<text>The Federation MUST defeat the Rebels, this justifies any means necessary to procure resources.</text>
-				<event>
-				<text>Is THAT what you tell yourself to help you sleep at night? Jesus christ dude, what's this going to buy you, an oxygen upgrade? Just TALK to them, they might help you!</text>
-				<choice hidden="true">
-				<text>Why take SOME resources when I could take ALL resources?</text>
-				<event>
-				<text>Dude you made Turkeys with paint smeared all over your hands at the age of 4 in Kindergarden. You bought flowers for the teacher because you thought her dress was pretty. How did we get here? This is wrong, you don't have to do it.</text>
-				<choice hidden="true">
-				<text>What if I can't afford a gun next sector? I really want a Hermes! Or maybe a Vulcan? Hrm....or a Chain Energy?</text>
-				<event>
-				<text>I'm speechless. You REALLY won't stop, will you?</text>
-				<choice hidden="true">
-				<text>Absolutely not, I'm going to loot them dry.</text>
-				<event>
-				<text>Alright. You know what? FINE. Do it, see if I care. What's next, killing Orchid children for sport? Enjoy your blood-stained loot</text>
-				<choice hidden="true">
-				<text>Fire the Menaulion.</text>
-				<event>							
-				<item_modify>
-				<item type="scrap" min="90" max="130"/>
-				<item type="fuel" min="2" max="5"/>
-				</item_modify>				
-				<text>Every living thing on the ship is dead within seconds, they probably didn't even know they were in danger before they died. You loot the engi party vessel, and the other empty vessels docked nearby. Your findings are VERY profitable.</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
-			</choice>
-		</event>
-	</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>I....wha? O-ok....maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>			
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>	
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-			
-</mod-append:choice>
-	
-<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>We can't help.</mod:selector>
-        <mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>
-    </mod:findWithChildLike>
+					<text id="text_DISTRESS_ENGI_PARTY_1"/>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_1_PROCEED"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_2"/>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_2_PROCEED"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_3"/>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_3_PROCEED"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_4"/>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_4_PROCEED"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_5"/>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_5_PROCEED"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_6"/>
+															<choice hidden="true">
+																<text>Fire the Menaulion.</text>
+																<event>
+																	<item_modify>
+																		<item type="scrap" min="90" max="130"/>
+																		<item type="fuel" min="2" max="5"/>
+																	</item_modify>
+																	<text>Every living thing on the ship is dead within seconds, they probably didn't even know they were in danger before they died. You loot the engi party vessel, and the other empty vessels docked nearby. Your findings are VERY profitable.</text>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
+																	</choice>
+																</event>
+															</choice>
+															<choice hidden="true">
+																<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+																<event>
+																	<text id="text_DISTRESS_ENGI_PARTY_STOP_OK_LAST"/>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+															<choice hidden="true">
+																<text>Continue...</text>
+																<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+
+			</mod-append:choice>
+
+			<mod:findWithChildLike type="choice" child-type="text">
+				<mod:selector>We can't help.</mod:selector>
+				<mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>
+			</mod:findWithChildLike>
 
 		</mod:findLike>
-    </mod:findLike>
+	</mod:findLike>
 
-</mod:findName>	
+</mod:findName>
 
 <mod:findName type = "event" name = "DISTRESS_ENGI_PARTY_REPEAT">
- <mod:findLike type="choice" start="0" limit="1">
- <mod:findLike type="event" >
-		
-	<mod-append:choice req="FM_MISSILES_BURST_FIRE" lvl="1" max_group="600" hidden="true" blue="true">
-     		<text>(Hellfire) Heat up the party! That'll teach these lazy bastards.[Cost: 2}]</text>
-		<event>
-			<text>*Record Scratch* Hold on, hold on. What are you doing? Why are you doing this? What did they do to hurt you? They're just partying, trying to learn about other cultures and enjoy their lives. What gives you the right to play god and massacre them for monetary gain? Stop it. Don't do this.</text>		
-				<choice hidden="true">
-				<text>What the...? Who is talking?</text>
-				<event>
-				<text>Its me, your brain. Trying to convince you not to commit a massive warcrime. Lets just sloooowly power down those weapons yeah?</text>
-				<choice hidden="true">
-				<text>The Federation MUST defeat the Rebels, this justifies any means necessary to procure resources.</text>
-				<event>
-				<text>Is THAT what you tell yourself to help you sleep at night? Jesus christ dude, what's this going to buy you, an oxygen upgrade? Just TALK to them, they might help you!</text>
-				<choice hidden="true">
-				<text>Why take SOME resources when I could take ALL resources?</text>
-				<event>
-				<text>Dude you made Turkeys with paint smeared all over your hands at the age of 4 in Kindergarden. You bought flowers for the teacher because you thought her dress was pretty. How did we get here? This is wrong, you don't have to do it.</text>
-				<choice hidden="true">
-				<text>What if I can't afford a gun next sector? I really want a Hermes! Or maybe a Vulcan? Hrm....or a Chain Energy?</text>
-				<event>
-				<text>I'm speechless. You REALLY won't stop, will you?</text>
-				<choice hidden="true">
-				<text>Absolutely not, I'm going to loot them dry.</text>
-				<event>
-				<text>Alright. You know what? FINE. Do it, see if I care. What's next, killing Orchid children for sport? Enjoy your blood-stained loot</text>
-				<choice hidden="true">
-				<text>Fire the Hellfire Missiles.</text>
-				<event>							
-				<item_modify>
-				<item type="scrap" min="50" max="90"/>
-				<item type="fuel" min="2" max="4"/>
-				<item type="missiles" min="-2" max="-2"/>
-				</item_modify>				
-				<text>Your Hellfire Missiles annihilate the vessel without resistance, and you collect your delicious loot.</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
-			</choice>
-		</event>
-	</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>I....wha? O-ok....maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>			
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>	
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-			
-</mod-append:choice>
+	<mod:findLike type="choice" start="0" limit="1">
+		<mod:findLike type="event" >
 
-	<mod-append:choice req="FM_MISSILES_BURST_FIRE_PLAYER" lvl="1" max_group="600" hidden="true" blue="true">
-     		<text>(Hellfire) Heat up the party! That'll teach these lazy bastards.[Cost: 2}]</text>
-		<event>
-			<text>*Record Scratch* Hold on, hold on. What are you doing? Why are you doing this? What did they do to hurt you? They're just partying, trying to learn about other cultures and enjoy their lives. What gives you the right to play god and massacre them for monetary gain? Stop it. Don't do this.</text>		
-				<choice hidden="true">
-				<text>What the...? Who is talking?</text>
+			<mod-append:choice req="ANY_FM_MISSILES_BURST_FIRE" lvl="1" max_group="600" hidden="true" blue="true">
+				<text>(Hellfire) Heat up the party! That'll teach these lazy bastards.[Cost: 2}]</text>
 				<event>
-				<text>Its me, your brain. Trying to convince you not to commit a massive warcrime. Lets just sloooowly power down those weapons yeah?</text>
-				<choice hidden="true">
-				<text>The Federation MUST defeat the Rebels, this justifies any means necessary to procure resources.</text>
-				<event>
-				<text>Is THAT what you tell yourself to help you sleep at night? Jesus christ dude, what's this going to buy you, an oxygen upgrade? Just TALK to them, they might help you!</text>
-				<choice hidden="true">
-				<text>Why take SOME resources when I could take ALL resources?</text>
-				<event>
-				<text>Dude you made Turkeys with paint smeared all over your hands at the age of 4 in Kindergarden. You bought flowers for the teacher because you thought her dress was pretty. How did we get here? This is wrong, you don't have to do it.</text>
-				<choice hidden="true">
-				<text>What if I can't afford a gun next sector? I really want a Hermes! Or maybe a Vulcan? Hrm....or a Chain Energy?</text>
-				<event>
-				<text>I'm speechless. You REALLY won't stop, will you?</text>
-				<choice hidden="true">
-				<text>Absolutely not, I'm going to loot them dry.</text>
-				<event>
-				<text>Alright. You know what? FINE. Do it, see if I care. What's next, killing Orchid children for sport? Enjoy your blood-stained loot</text>
-				<choice hidden="true">
-				<text>Fire the Hellfire Missiles.</text>
-				<event>							
-				<item_modify>
-				<item type="scrap" min="50" max="90"/>
-				<item type="fuel" min="2" max="4"/>
-				<item type="missiles" min="-2" max="-2"/>
-				</item_modify>				
-				<text>Your Hellfire Missiles annihilate the vessel without resistance, and you collect your delicious loot.</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
-			</choice>
-		</event>
-	</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>I....wha? O-ok....maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>			
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>	
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-			
-</mod-append:choice>
+					<text id="text_DISTRESS_ENGI_PARTY_1"/>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_1_PROCEED"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_2"/>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_2_PROCEED"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_3"/>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_3_PROCEED"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_4"/>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_4_PROCEED"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_5"/>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_5_PROCEED"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_6"/>
+															<choice hidden="true">
+																<text>Fire the Hellfire Missiles.</text>
+																<event>
+																	<item_modify>
+																		<item type="scrap" min="50" max="90"/>
+																		<item type="fuel" min="2" max="4"/>
+																		<item type="missiles" min="-2" max="-2"/>
+																	</item_modify>
+																	<text>Your Hellfire Missiles annihilate the vessel without resistance, and you collect your delicious loot.</text>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
+																	</choice>
+																</event>
+															</choice>
+															<choice hidden="true">
+																<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+																<event>
+																	<text id="text_DISTRESS_ENGI_PARTY_STOP_OK_LAST"/>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+															<choice hidden="true">
+																<text>Continue...</text>
+																<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
 
-	<mod-append:choice req="FM_MISSILES_BURST_FIRE_MEGA" lvl="1" max_group="600" hidden="true" blue="true">
-     		<text>(Hellfire) Heat up the party! That'll teach these lazy bastards.[Cost: 2}]</text>
-		<event>
-			<text>*Record Scratch* Hold on, hold on. What are you doing? Why are you doing this? What did they do to hurt you? They're just partying, trying to learn about other cultures and enjoy their lives. What gives you the right to play god and massacre them for monetary gain? Stop it. Don't do this.</text>		
-				<choice hidden="true">
-				<text>What the...? Who is talking?</text>
-				<event>
-				<text>Its me, your brain. Trying to convince you not to commit a massive warcrime. Lets just sloooowly power down those weapons yeah?</text>
-				<choice hidden="true">
-				<text>The Federation MUST defeat the Rebels, this justifies any means necessary to procure resources.</text>
-				<event>
-				<text>Is THAT what you tell yourself to help you sleep at night? Jesus christ dude, what's this going to buy you, an oxygen upgrade? Just TALK to them, they might help you!</text>
-				<choice hidden="true">
-				<text>Why take SOME resources when I could take ALL resources?</text>
-				<event>
-				<text>Dude you made Turkeys with paint smeared all over your hands at the age of 4 in Kindergarden. You bought flowers for the teacher because you thought her dress was pretty. How did we get here? This is wrong, you don't have to do it.</text>
-				<choice hidden="true">
-				<text>What if I can't afford a gun next sector? I really want a Hermes! Or maybe a Vulcan? Hrm....or a Chain Energy?</text>
-				<event>
-				<text>I'm speechless. You REALLY won't stop, will you?</text>
-				<choice hidden="true">
-				<text>Absolutely not, I'm going to loot them dry.</text>
-				<event>
-				<text>Alright. You know what? FINE. Do it, see if I care. What's next, killing Orchid children for sport? Enjoy your blood-stained loot</text>
-				<choice hidden="true">
-				<text>Fire the Hellfire Missiles.</text>
-				<event>							
-				<item_modify>
-				<item type="scrap" min="50" max="90"/>
-				<item type="fuel" min="2" max="4"/>
-				<item type="missiles" min="-2" max="-2"/>
-				</item_modify>				
-				<text>Your Hellfire Missiles annihilate the vessel without resistance, and you collect your delicious loot.</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
-			</choice>
-		</event>
-	</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>I....wha? O-ok....maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>			
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>	
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-				
-</mod-append:choice>
+			</mod-append:choice>
 
-	<mod-append:choice req="FM_MINELAUNCHER_HULL" lvl="1" max_group="601" hidden="true" blue="true">
-     		<text>(Ba-Pef) Make this their last party. Block all the exits.[Cost: 1}]</text>
-		<event>
-			
-			<text>*Record Scratch* Hold on, hold on. What are you doing? Why are you doing this? What did they do to hurt you? They're just partying, trying to learn about other cultures and enjoy their lives. What gives you the right to play god and massacre them for monetary gain? Stop it. Don't do this.</text>		
-				<choice hidden="true">
-				<text>What the...? Who is talking?</text>
+			<mod-append:choice req="FM_MINELAUNCHER_HULL" lvl="1" max_group="601" hidden="true" blue="true">
+				<text>(Ba-Pef) Make this their last party. Block all the exits.[Cost: 1}]</text>
 				<event>
-				<text>Its me, your brain. Trying to convince you not to commit a massive warcrime. Lets just sloooowly power down those weapons yeah?</text>
-				<choice hidden="true">
-				<text>The Federation MUST defeat the Rebels, this justifies any means necessary to procure resources.</text>
-				<event>
-				<text>Is THAT what you tell yourself to help you sleep at night? Jesus christ dude, what's this going to buy you, an oxygen upgrade? Just TALK to them, they might help you!</text>
-				<choice hidden="true">
-				<text>Why take SOME resources when I could take ALL resources?</text>
-				<event>
-				<text>Dude you made Turkeys with paint smeared all over your hands at the age of 4 in Kindergarden. You bought flowers for the teacher because you thought her dress was pretty. How did we get here? This is wrong, you don't have to do it.</text>
-				<choice hidden="true">
-				<text>What if I can't afford a gun next sector? I really want a Hermes! Or maybe a Vulcan? Hrm....or a Chain Energy?</text>
-				<event>
-				<text>I'm speechless. You REALLY won't stop, will you?</text>
-				<choice hidden="true">
-				<text>Absolutely not, I'm going to loot them dry.</text>
-				<event>
-				<text>Alright. You know what? FINE. Do it, see if I care. What's next, killing Orchid children for sport? Enjoy your blood-stained loot</text>
-				<choice hidden="true">
-				<text>Fire the 'Ba-Pef' Minelauncher.</text>
-				<event>							
-				<item_modify>
-				<item type="scrap" min="50" max="90"/>
-				<item type="fuel" min="2" max="4"/>
-				<item type="missiles" min="-1" max="-1"/>
-				</item_modify>				
-				<text>Your 'Ba-Pef' mines block all the exits, so none of the party patrons can escape. You dismantle the other ships parked near the vessel, knowing they can't return to them using their personal shuttles.</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
-			</choice>
-		</event>
-	</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>I....wha? O-ok....maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>			
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>	
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>				
-</mod-append:choice>
 
-	<mod-append:choice req="FM_SHOTGUN_NOBELIUM" lvl="1" max_group="602" hidden="true" blue="true">
-     		<text>(Nobelium) Shred these partying coward's ships to pieces, how dare they party during a civil war?</text>
-		<event>
-			<text>*Record Scratch* Hold on, hold on. What are you doing? Why are you doing this? What did they do to hurt you? They're just partying, trying to learn about other cultures and enjoy their lives. What gives you the right to play god and massacre them for monetary gain? Stop it. Don't do this.</text>		
-				<choice hidden="true">
-				<text>What the...? Who is talking?</text>
-				<event>
-				<text>Its me, your brain. Trying to convince you not to commit a massive warcrime. Lets just sloooowly power down those weapons yeah?</text>
-				<choice hidden="true">
-				<text>The Federation MUST defeat the Rebels, this justifies any means necessary to procure resources.</text>
-				<event>
-				<text>Is THAT what you tell yourself to help you sleep at night? Jesus christ dude, what's this going to buy you, an oxygen upgrade? Just TALK to them, they might help you!</text>
-				<choice hidden="true">
-				<text>Why take SOME resources when I could take ALL resources?</text>
-				<event>
-				<text>Dude you made Turkeys with paint smeared all over your hands at the age of 4 in Kindergarden. You bought flowers for the teacher because you thought her dress was pretty. How did we get here? This is wrong, you don't have to do it.</text>
-				<choice hidden="true">
-				<text>What if I can't afford a gun next sector? I really want a Hermes! Or maybe a Vulcan? Hrm....or a Chain Energy?</text>
-				<event>
-				<text>I'm speechless. You REALLY won't stop, will you?</text>
-				<choice hidden="true">
-				<text>Absolutely not, I'm going to loot them dry.</text>
-				<event>
-				<text>Alright. You know what? FINE. Do it, see if I care. What's next, killing Orchid children for sport? Enjoy your blood-stained loot</text>
-				<choice hidden="true">
-				<text>Fire the Nobelium Flak.</text>
-				<event>							
-				<item_modify>
-				<item type="scrap" min="50" max="90"/>
-				<item type="fuel" min="2" max="4"/>
-				</item_modify>				
-				<text>Your Nobelium Flak shreds into the hulls of the parked ships present near the party. It also smashes into the partying engi vessel's hull, shredding it like swiss cheese. Nobody reached an escape pod in time.</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
-			</choice>
-		</event>
-	</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>I....wha? O-ok....maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>			
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>	
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-			
-</mod-append:choice>
+					<text id="text_DISTRESS_ENGI_PARTY_1"/>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_1_PROCEED"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_2"/>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_2_PROCEED"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_3"/>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_3_PROCEED"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_4"/>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_4_PROCEED"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_5"/>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_5_PROCEED"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_6"/>
+															<choice hidden="true">
+																<text>Fire the 'Ba-Pef' Minelauncher.</text>
+																<event>
+																	<item_modify>
+																		<item type="scrap" min="50" max="90"/>
+																		<item type="fuel" min="2" max="4"/>
+																		<item type="missiles" min="-1" max="-1"/>
+																	</item_modify>
+																	<text>Your 'Ba-Pef' mines block all the exits, so none of the party patrons can escape. You dismantle the other ships parked near the vessel, knowing they can't return to them using their personal shuttles.</text>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
+																	</choice>
+																</event>
+															</choice>
+															<choice hidden="true">
+																<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+																<event>
+																	<text id="text_DISTRESS_ENGI_PARTY_STOP_OK_LAST"/>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+															<choice hidden="true">
+																<text>Continue...</text>
+																<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</mod-append:choice>
 
-	<mod-append:choice req="FM_SHOTGUN_HASSIUM" lvl="1" max_group="603" hidden="true" blue="true">
-     		<text>(Hassium) Shred these partying coward's ships to pieces, how dare they party during a civil war?</text>
-		<event>
-			<text>*Record Scratch* Hold on, hold on. What are you doing? Why are you doing this? What did they do to hurt you? They're just partying, trying to learn about other cultures and enjoy their lives. What gives you the right to play god and massacre them for monetary gain? Stop it. Don't do this.</text>		
-				<choice hidden="true">
-				<text>What the...? Who is talking?</text>
+			<mod-append:choice req="FM_SHOTGUN_NOBELIUM" lvl="1" max_group="602" hidden="true" blue="true">
+				<text>(Nobelium) Shred these partying coward's ships to pieces, how dare they party during a civil war?</text>
 				<event>
-				<text>Its me, your brain. Trying to convince you not to commit a massive warcrime. Lets just sloooowly power down those weapons yeah?</text>
-				<choice hidden="true">
-				<text>The Federation MUST defeat the Rebels, this justifies any means necessary to procure resources.</text>
+					<text id="text_DISTRESS_ENGI_PARTY_1"/>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_1_PROCEED"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_2"/>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_2_PROCEED"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_3"/>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_3_PROCEED"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_4"/>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_4_PROCEED"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_5"/>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_5_PROCEED"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_6"/>
+															<choice hidden="true">
+																<text>Fire the Nobelium Flak.</text>
+																<event>
+																	<item_modify>
+																		<item type="scrap" min="50" max="90"/>
+																		<item type="fuel" min="2" max="4"/>
+																	</item_modify>
+																	<text>Your Nobelium Flak shreds into the hulls of the parked ships present near the party. It also smashes into the partying engi vessel's hull, shredding it like swiss cheese. Nobody reached an escape pod in time.</text>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
+																	</choice>
+																</event>
+															</choice>
+															<choice hidden="true">
+																<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+																<event>
+																	<text id="text_DISTRESS_ENGI_PARTY_STOP_OK_LAST"/>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+															<choice hidden="true">
+																<text>Continue...</text>
+																<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+
+			</mod-append:choice>
+
+			<mod-append:choice req="FM_SHOTGUN_HASSIUM" lvl="1" max_group="603" hidden="true" blue="true">
+				<text>(Hassium) Shred these partying coward's ships to pieces, how dare they party during a civil war?</text>
 				<event>
-				<text>Is THAT what you tell yourself to help you sleep at night? Jesus christ dude, what's this going to buy you, an oxygen upgrade? Just TALK to them, they might help you!</text>
-				<choice hidden="true">
-				<text>Why take SOME resources when I could take ALL resources?</text>
+					<text id="text_DISTRESS_ENGI_PARTY_1"/>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_1_PROCEED"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_2"/>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_2_PROCEED"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_3"/>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_3_PROCEED"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_4"/>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_4_PROCEED"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_5"/>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_5_PROCEED"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_6"/>
+															<choice hidden="true">
+																<text>Fire the Hassium Flak.</text>
+																<event>
+																	<item_modify>
+																		<item type="scrap" min="50" max="90"/>
+																		<item type="fuel" min="2" max="4"/>
+																	</item_modify>
+																	<text>Your Hassium Flak shreds into the hulls of the parked ships present near the party. It also smashes into the partying engi vessel's hull, shredding it like swiss cheese. Nobody reached an escape pod in time.</text>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
+																	</choice>
+																</event>
+															</choice>
+															<choice hidden="true">
+																<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+																<event>
+																	<text id="text_DISTRESS_ENGI_PARTY_STOP_OK_LAST"/>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+															<choice hidden="true">
+																<text>Continue...</text>
+																<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+
+			</mod-append:choice>
+
+			<mod-append:choice req="FM_LASER_HUMAN" lvl="1" max_group="604" hidden="true" blue="true">
+				<text>(Rebel Ripper) Shoot into the party to fish for any humans, what if there is a Rebel spy in their midst?</text>
 				<event>
-				<text>Dude you made Turkeys with paint smeared all over your hands at the age of 4 in Kindergarden. You bought flowers for the teacher because you thought her dress was pretty. How did we get here? This is wrong, you don't have to do it.</text>
-				<choice hidden="true">
-				<text>What if I can't afford a gun next sector? I really want a Hermes! Or maybe a Vulcan? Hrm....or a Chain Energy?</text>
+					<text id="text_DISTRESS_ENGI_PARTY_1"/>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_1_PROCEED"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_2"/>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_2_PROCEED"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_3"/>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_3_PROCEED"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_4"/>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_4_PROCEED"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_5"/>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_5_PROCEED"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_6"/>
+															<choice hidden="true">
+																<text>Fire the Rebel Ripper.</text>
+																<event>
+																	<item_modify>
+																		<item type="scrap" min="90" max="130"/>
+																		<item type="fuel" min="2" max="5"/>
+																	</item_modify>
+																	<text>Your Rebel Ripper laser peppers the engi vessel for "Rebel spies". Turns out the entire ship was filled with "Rebel spies". With all the party patrons dead, you loot all their ships safely for scrap, and find some fuel as well.</text>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
+																	</choice>
+																</event>
+															</choice>
+															<choice hidden="true">
+																<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+																<event>
+																	<text id="text_DISTRESS_ENGI_PARTY_STOP_OK_LAST"/>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+															<choice hidden="true">
+																<text>Continue...</text>
+																<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+
+			</mod-append:choice>
+
+			<mod-append:choice req="FM_LASER_ION_MEGA" lvl="1" max_group="605" hidden="true" blue="true">
+				<text>(Absolution) Add some "surprise party-goers" to the mix to "party hard".</text>
 				<event>
-				<text>I'm speechless. You REALLY won't stop, will you?</text>
-				<choice hidden="true">
-				<text>Absolutely not, I'm going to loot them dry.</text>
+					<text id="text_DISTRESS_ENGI_PARTY_1"/>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_1_PROCEED"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_2"/>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_2_PROCEED"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_3"/>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_3_PROCEED"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_4"/>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_4_PROCEED"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_5"/>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_5_PROCEED"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_6"/>
+															<choice hidden="true">
+																<text>Fire the Absolution.</text>
+																<event>
+																	<item_modify>
+																		<item type="scrap" min="70" max="110"/>
+																		<item type="fuel" min="2" max="5"/>
+																	</item_modify>
+																	<text>Your Absolution fills their party vessel with Ion Anomaly clouds. You are glad the first thing they disabled was their Oxygen, so you didn't have to hear their obnoxious screams as they were torn apart by Anomalous vortexes. You loot the vessels docked near the party vessel.</text>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
+																	</choice>
+																</event>
+															</choice>
+															<choice hidden="true">
+																<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+																<event>
+																	<text id="text_DISTRESS_ENGI_PARTY_STOP_OK_LAST"/>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+															<choice hidden="true">
+																<text>Continue...</text>
+																<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+
+			</mod-append:choice>
+
+			<mod-append:choice req="ANY_FM_BEAM_GUILLOTINE_CHAIN" lvl="1" max_group="606" hidden="true" blue="true">
+				<text>(Menaulion) Kill them all before they can even blink. There is a civil war going on, how dare they party?!</text>
 				<event>
-				<text>Alright. You know what? FINE. Do it, see if I care. What's next, killing Orchid children for sport? Enjoy your blood-stained loot</text>
-				<choice hidden="true">
-				<text>Fire the Hassium Flak.</text>
-				<event>							
-				<item_modify>
-				<item type="scrap" min="50" max="90"/>
-				<item type="fuel" min="2" max="4"/>
-				</item_modify>				
-				<text>Your Hassium Flak shreds into the hulls of the parked ships present near the party. It also smashes into the partying engi vessel's hull, shredding it like swiss cheese. Nobody reached an escape pod in time.</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
-			</choice>
-		</event>
-	</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>I....wha? O-ok....maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>			
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>	
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-			
-</mod-append:choice>
-	
-	<mod-append:choice req="FM_LASER_HUMAN" lvl="1" max_group="604" hidden="true" blue="true">
-     		<text>(Rebel Ripper) Shoot into the party to fish for any humans, what if there is a Rebel spy in their midst?</text>
-		<event>
-			<text>*Record Scratch* Hold on, hold on. What are you doing? Why are you doing this? What did they do to hurt you? They're just partying, trying to learn about other cultures and enjoy their lives. What gives you the right to play god and massacre them for monetary gain? Stop it. Don't do this.</text>		
-				<choice hidden="true">
-				<text>What the...? Who is talking?</text>
-				<event>
-				<text>Its me, your brain. Trying to convince you not to commit a massive warcrime. Lets just sloooowly power down those weapons yeah?</text>
-				<choice hidden="true">
-				<text>The Federation MUST defeat the Rebels, this justifies any means necessary to procure resources.</text>
-				<event>
-				<text>Is THAT what you tell yourself to help you sleep at night? Jesus christ dude, what's this going to buy you, an oxygen upgrade? Just TALK to them, they might help you!</text>
-				<choice hidden="true">
-				<text>Why take SOME resources when I could take ALL resources?</text>
-				<event>
-				<text>Dude you made Turkeys with paint smeared all over your hands at the age of 4 in Kindergarden. You bought flowers for the teacher because you thought her dress was pretty. How did we get here? This is wrong, you don't have to do it.</text>
-				<choice hidden="true">
-				<text>What if I can't afford a gun next sector? I really want a Hermes! Or maybe a Vulcan? Hrm....or a Chain Energy?</text>
-				<event>
-				<text>I'm speechless. You REALLY won't stop, will you?</text>
-				<choice hidden="true">
-				<text>Absolutely not, I'm going to loot them dry.</text>
-				<event>
-				<text>Alright. You know what? FINE. Do it, see if I care. What's next, killing Orchid children for sport? Enjoy your blood-stained loot</text>
-				<choice hidden="true">
-				<text>Fire the Rebel Ripper.</text>
-				<event>							
-				<item_modify>
-				<item type="scrap" min="90" max="130"/>
-				<item type="fuel" min="2" max="5"/>
-				</item_modify>				
-				<text>Your Rebel Ripper laser peppers the engi vessel for "Rebel spies". Turns out the entire ship was filled with "Rebel spies". With all the party patrons dead, you loot all their ships safely for scrap, and find some fuel as well.</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
-			</choice>
-		</event>
-	</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>I....wha? O-ok....maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>			
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>	
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-			
-</mod-append:choice>
-	
-	<mod-append:choice req="FM_LASER_ION_MEGA" lvl="1" max_group="605" hidden="true" blue="true">
-     		<text>(Absolution) Add some "surprise party-goers" to the mix to "party hard".</text>
-		<event>
-			<text>*Record Scratch* Hold on, hold on. What are you doing? Why are you doing this? What did they do to hurt you? They're just partying, trying to learn about other cultures and enjoy their lives. What gives you the right to play god and massacre them for monetary gain? Stop it. Don't do this.</text>		
-				<choice hidden="true">
-				<text>What the...? Who is talking?</text>
-				<event>
-				<text>Its me, your brain. Trying to convince you not to commit a massive warcrime. Lets just sloooowly power down those weapons yeah?</text>
-				<choice hidden="true">
-				<text>The Federation MUST defeat the Rebels, this justifies any means necessary to procure resources.</text>
-				<event>
-				<text>Is THAT what you tell yourself to help you sleep at night? Jesus christ dude, what's this going to buy you, an oxygen upgrade? Just TALK to them, they might help you!</text>
-				<choice hidden="true">
-				<text>Why take SOME resources when I could take ALL resources?</text>
-				<event>
-				<text>Dude you made Turkeys with paint smeared all over your hands at the age of 4 in Kindergarden. You bought flowers for the teacher because you thought her dress was pretty. How did we get here? This is wrong, you don't have to do it.</text>
-				<choice hidden="true">
-				<text>What if I can't afford a gun next sector? I really want a Hermes! Or maybe a Vulcan? Hrm....or a Chain Energy?</text>
-				<event>
-				<text>I'm speechless. You REALLY won't stop, will you?</text>
-				<choice hidden="true">
-				<text>Absolutely not, I'm going to loot them dry.</text>
-				<event>
-				<text>Alright. You know what? FINE. Do it, see if I care. What's next, killing Orchid children for sport? Enjoy your blood-stained loot</text>
-				<choice hidden="true">
-				<text>Fire the Absolution.</text>
-				<event>							
-				<item_modify>
-				<item type="scrap" min="70" max="110"/>
-				<item type="fuel" min="2" max="5"/>
-				</item_modify>				
-				<text>Your Absolution fills their party vessel with Ion Anomaly clouds. You are glad the first thing they disabled was their Oxygen, so you didn't have to hear their obnoxious screams as they were torn apart by Anomalous vortexes. You loot the vessels docked near the party vessel.</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
-			</choice>
-		</event>
-	</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>I....wha? O-ok....maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>			
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>	
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-			
-</mod-append:choice>
-	
-	<mod-append:choice req="FM_BEAM_GUILLOTINE_CHAIN" lvl="1" max_group="606" hidden="true" blue="true">
-     		<text>(Menaulion) Kill them all before they can even blink. There is a civil war going on, how dare they party?!</text>
-		<event>
-			<text>*Record Scratch* Hold on, hold on. What are you doing? Why are you doing this? What did they do to hurt you? They're just partying, trying to learn about other cultures and enjoy their lives. What gives you the right to play god and massacre them for monetary gain? Stop it. Don't do this.</text>		
-				<choice hidden="true">
-				<text>What the...? Who is talking?</text>
-				<event>
-				<text>Its me, your brain. Trying to convince you not to commit a massive warcrime. Lets just sloooowly power down those weapons yeah?</text>
-				<choice hidden="true">
-				<text>The Federation MUST defeat the Rebels, this justifies any means necessary to procure resources.</text>
-				<event>
-				<text>Is THAT what you tell yourself to help you sleep at night? Jesus christ dude, what's this going to buy you, an oxygen upgrade? Just TALK to them, they might help you!</text>
-				<choice hidden="true">
-				<text>Why take SOME resources when I could take ALL resources?</text>
-				<event>
-				<text>Dude you made Turkeys with paint smeared all over your hands at the age of 4 in Kindergarden. You bought flowers for the teacher because you thought her dress was pretty. How did we get here? This is wrong, you don't have to do it.</text>
-				<choice hidden="true">
-				<text>What if I can't afford a gun next sector? I really want a Hermes! Or maybe a Vulcan? Hrm....or a Chain Energy?</text>
-				<event>
-				<text>I'm speechless. You REALLY won't stop, will you?</text>
-				<choice hidden="true">
-				<text>Absolutely not, I'm going to loot them dry.</text>
-				<event>
-				<text>Alright. You know what? FINE. Do it, see if I care. What's next, killing Orchid children for sport? Enjoy your blood-stained loot</text>
-				<choice hidden="true">
-				<text>Fire the Menaulion.</text>
-				<event>							
-				<item_modify>
-				<item type="scrap" min="90" max="130"/>
-				<item type="fuel" min="2" max="5"/>
-				</item_modify>				
-				<text>Every living thing on the ship is dead within seconds, they probably didn't even know they were in danger before they died. You loot the engi party vessel, and the other empty vessels docked nearby. Your findings are VERY profitable.</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
-			</choice>
-		</event>
-	</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>I....wha? O-ok....maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>			
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>	
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-			
-</mod-append:choice>
-	
-	<mod-append:choice req="FM_BEAM_GUILLOTINE_CHAIN_PLAYER" lvl="1" max_group="606" hidden="true" blue="true">
-     		<text>(Menaulion) Kill them all before they can even blink. There is a civil war going on, how dare they party?!</text>
-		<event>
-			<text>*Record Scratch* Hold on, hold on. What are you doing? Why are you doing this? What did they do to hurt you? They're just partying, trying to learn about other cultures and enjoy their lives. What gives you the right to play god and massacre them for monetary gain? Stop it. Don't do this.</text>		
-				<choice hidden="true">
-				<text>What the...? Who is talking?</text>
-				<event>
-				<text>Its me, your brain. Trying to convince you not to commit a massive warcrime. Lets just sloooowly power down those weapons yeah?</text>
-				<choice hidden="true">
-				<text>The Federation MUST defeat the Rebels, this justifies any means necessary to procure resources.</text>
-				<event>
-				<text>Is THAT what you tell yourself to help you sleep at night? Jesus christ dude, what's this going to buy you, an oxygen upgrade? Just TALK to them, they might help you!</text>
-				<choice hidden="true">
-				<text>Why take SOME resources when I could take ALL resources?</text>
-				<event>
-				<text>Dude you made Turkeys with paint smeared all over your hands at the age of 4 in Kindergarden. You bought flowers for the teacher because you thought her dress was pretty. How did we get here? This is wrong, you don't have to do it.</text>
-				<choice hidden="true">
-				<text>What if I can't afford a gun next sector? I really want a Hermes! Or maybe a Vulcan? Hrm....or a Chain Energy?</text>
-				<event>
-				<text>I'm speechless. You REALLY won't stop, will you?</text>
-				<choice hidden="true">
-				<text>Absolutely not, I'm going to loot them dry.</text>
-				<event>
-				<text>Alright. You know what? FINE. Do it, see if I care. What's next, killing Orchid children for sport? Enjoy your blood-stained loot</text>
-				<choice hidden="true">
-				<text>Fire the Menaulion.</text>
-				<event>							
-				<item_modify>
-				<item type="scrap" min="90" max="130"/>
-				<item type="fuel" min="2" max="5"/>
-				</item_modify>				
-				<text>Every living thing on the ship is dead within seconds, they probably didn't even know they were in danger before they died. You loot the engi party vessel, and the other empty vessels docked nearby. Your findings are VERY profitable.</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
-			</choice>
-		</event>
-	</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>I....wha? O-ok....maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>			
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>	
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-</choice>
-<choice hidden="true">
-				<text>Fine, I'll stop.</text>
-				<event>
-				<text>Maybe you really do have a heart after all. Ok great, lets try this again, but without aimless killing yes?</text>
-				<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DISTRESS_ENGI_PARTY_LOAD"/>
-				</choice>
-			</event>
-		</choice>
-	</event>
-			
-</mod-append:choice>
-	
-<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>We can't help.</mod:selector>
-        <mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>
-    </mod:findWithChildLike>
+					<text id="text_DISTRESS_ENGI_PARTY_1"/>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_1_PROCEED"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_2"/>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_2_PROCEED"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_3"/>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_3_PROCEED"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_4"/>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_4_PROCEED"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_5"/>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_5_PROCEED"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_6"/>
+															<choice hidden="true">
+																<text>Fire the Menaulion.</text>
+																<event>
+																	<item_modify>
+																		<item type="scrap" min="90" max="130"/>
+																		<item type="fuel" min="2" max="5"/>
+																	</item_modify>
+																	<text>Every living thing on the ship is dead within seconds, they probably didn't even know they were in danger before they died. You loot the engi party vessel, and the other empty vessels docked nearby. Your findings are VERY profitable.</text>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
+																	</choice>
+																</event>
+															</choice>
+															<choice hidden="true">
+																<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+																<event>
+																	<text id="text_DISTRESS_ENGI_PARTY_STOP_OK_LAST"/>
+																	<choice hidden="true">
+																		<text>Continue...</text>
+																		<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+																	</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+													<choice hidden="true">
+														<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+														<event>
+															<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+															<choice hidden="true">
+																<text>Continue...</text>
+																<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+															</choice>
+														</event>
+													</choice>
+												</event>
+											</choice>
+											<choice hidden="true">
+												<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+												<event>
+													<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+													<choice hidden="true">
+														<text>Continue...</text>
+														<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+													</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+										<event>
+											<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+											<choice hidden="true">
+												<text>Continue...</text>
+												<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+								<event>
+									<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text id="text_DISTRESS_ENGI_PARTY_STOP"/>
+						<event>
+							<text id="text_DISTRESS_ENGI_PARTY_STOP_OK"/>
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="DISTRESS_ENGI_PARTY_LOAD"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+
+			</mod-append:choice>
+
+			<mod:findWithChildLike type="choice" child-type="text">
+				<mod:selector>We can't help.</mod:selector>
+				<mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>
+			</mod:findWithChildLike>
 
 		</mod:findLike>
-    </mod:findLike>
+	</mod:findLike>
 
-</mod:findName>	
-
-
+</mod:findName>

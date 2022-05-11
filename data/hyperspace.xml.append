@@ -3099,10 +3099,16 @@
 		<event name="DISTRESS_ENGI_PARTY_REPEAT" recursive="true">
 
 		</event>
-
-
-
-
+		<req name="ANY_FM_MISSILES_BURST_FIRE">
+			<name>FM_MISSILES_BURST_FIRE</name>
+			<name>FM_MISSILES_BURST_FIRE_PLAYER</name>
+			<name>FM_MISSILES_BURST_FIRE_MEGA</name>
+		</req>
+		<req name="ANY_FM_BEAM_GUILLOTINE_CHAIN">
+			<name>FM_BEAM_GUILLOTINE_CHAIN</name>
+			<name>FM_BEAM_GUILLOTINE_CHAIN_PLAYER</name>
+			<name>FM_BEAM_GUILLOTINE_CHAIN_PLAYER_INVIS</name>
+		</req>
 	</events>
 
 	<events> <!-- Forgemaster Crew Talks -->
