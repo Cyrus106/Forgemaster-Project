@@ -105,9 +105,25 @@
 
 <FTL><!--all the modular armor stuff-->
 	<!--special module effect events-->
-	<event name="FM_HULL_LIMITER_LOAD">
-	  <loadEvent>FM_HULL_LIMITER_REACTOR</loadEvent>
+	<event name="FM_JUMP_STUFF_LOAD">
+	  <loadEvent>FM_JUMP_LOSTSUN</loadEvent>
 	</event>
+	<event name="FM_JUMP_LOSTSUN">
+		<loadEventList default="FM_JUMP_LEECH">
+			<event load="LOAD_DEATH_TIMER" req="TWISTED_LOSTSUN" lvl="1"/>
+		</loadEventList>
+	</event>
+	<event name="FM_JUMP_LEECH">
+		<loadEventList default="FM_JUMP_MONK">
+			<event load="DEPRESS_CHARGE_INITIAL" req="LOCKED_SUPER_DEPRESSION" lvl="1"/>
+		</loadEventList>
+	</event>
+	<event name="FM_JUMP_MONK">
+		<loadEventList default="FM_HULL_LIMITER_WEAPON">
+			<event load="TWISTED_BLESSING_KILLCOUN" req="TWISTED_BLESSING" lvl="1"/>
+		</loadEventList>
+	</event>
+
 	<event name="FM_HULL_LIMITER_WEAPON">
 		<loadEventList default="FM_HULL_LIMITER_SHIELD">
 			<event load="LOAD_FASTWEAPON" req="LIMIT_CHECK_WEAPON" lvl="3"/>
@@ -115,13 +131,18 @@
 	</event>
 	<event name="FM_HULL_LIMITER_SHIELD">
 		<loadEventList default="FM_HULL_LIMITER_REACTOR">
-			<event load="LOAD_FASTWEAPON" req="LIMIT_CHECK_SHIELD" lvl="4"/>
+			<event load="LOAD_FASTSHIELD" req="LIMIT_CHECK_SHIELD" lvl="4"/>
 		</loadEventList>
 	</event>
 	<event name="FM_HULL_LIMITER_REACTOR">
-		<loadEventList default="TRUENOTHING">
+		<loadEventList default="FM_JUMP_END">
 			<event load="LOAD_MAGNETIC" req="LIMIT_CHECK_REACTOR" lvl="3"/>
 		</loadEventList>
+	</event>
+	<event name="FM_JUMP_END">
+		<triggeredEvent name="FM_JUMP_STUFF_LOAD" event="FM_HULL_LIMITER_LOAD">
+			<jumps amount="1" type="1"/>
+		</triggeredEvent>
 	</event>
 	<event name="LOAD_FASTWEAPON">
 		<status type="limit" target="player" system="weapons" amount="3" />

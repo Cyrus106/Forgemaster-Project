@@ -104,37 +104,21 @@
 </mod:findName>
 
 <mod:findName type="event" name="START_BEACON_EXPLAIN_LOAD">
+	<mod-append:triggeredEvent name="FM_JUMP_STUFF_LOAD" event="FM_HULL_LIMITER_LOAD">
+		<jumps amount="1" type="1"/>
+	</mod-append:triggeredEvent>
 	<mod:findLike type="loadEventList">
-		<mod-append:event name="GIVE_DEATH_LOSTSUN" req="TWISTED_LOSTSUN"/>
-		<mod-append:event name="GIVE_DEPRESSION_TWISTEDLEECH" req="LOCKED_SUPER_DEPRESSION"/>
 		<mod-append:event name="GIVE_RAGE_TWISTEDMONK" req = "TWISTED_BLESSING"/>
 		<mod-append:event name="GIVE_FLAK_TWISTEDLANIUS" req = "TWISTED_FLAK_FORGE"/>
 	</mod:findLike>
 </mod:findName>
 
 
-<event name="GIVE_DEATH_LOSTSUN">
-	<triggeredEvent event="LOAD_DEATH_TIMER" loops="999999999">
-		<jumps amount="1" type="1"/>
-	</triggeredEvent>
-	<loadEvent>START_BEACON_EXPLAIN</loadEvent>
-</event>
-
-<event name="GIVE_DEPRESSION_TWISTEDLEECH">
-	<triggeredEvent event="DEPRESS_CHARGE_INITIAL" loops="999999999">
-		<jumps amount="1" type="1"/>
-	</triggeredEvent>
-	<loadEvent>START_BEACON_EXPLAIN</loadEvent>
-</event>
-
 <event name="GIVE_RAGE_TWISTEDMONK">
-	<triggeredEvent event="TWISTED_BLESSING_KILLCOUNT" loops="999999999">
-		<jumps amount="1" type="1"/>
-	</triggeredEvent>
 	<triggeredEvent event="TRUENOTHING">
         <req name="twisted_blessing_counter" lvl="9999"/>
         <triggeredEventBox>
-            <image name="statusUI/rage_counter.png" x="10" y="7" w="59" h="26" left="4" right="4" top="4" bottom="4"/>
+          <image name="statusUI/rage_counter.png" x="10" y="7" w="59" h="26" left="4" right="4" top="4" bottom="4"/>
             <text type="req" x="42" y="8"/>
             <tooltip>The debt owed to you.</tooltip>
         </triggeredEventBox>

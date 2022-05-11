@@ -6270,7 +6270,6 @@
 
 	<event name="FM_MODULAR_HULL_MAIN">
 		<text>This is where you can install and modify your very own Modular Hull (tm)!</text>
-		<clearTriggeredEvent name="FM_HULL_LIMITER_LOAD"/>
 		<choice req="FM_MODULAR_HULL" lvl="0" max_lvl="0" max_group="2" blue="false" hidden="true"><!--first install of hull-->
 			<text>Install modular armor</text>
 			<event>
@@ -6705,9 +6704,6 @@
 		<choice req="pilot" lvl="1" max_group="9" blue="false">
 			<text>Nevermind.</text>
 			<event>
-				<triggeredEvent name="FM_HULL_LIMITER_LOAD" event="FM_HULL_LIMITER_LOAD" loops="999999999">
-					<jumps amount="1" type="1"/>
-				</triggeredEvent>
 				<loadEventList default="FORGEMASTER_PHONE_EVENT_LOAD">
 					<event name="OVERCHARMED" req="IS_OVERCHARMED"/>
 				</loadEventList>
