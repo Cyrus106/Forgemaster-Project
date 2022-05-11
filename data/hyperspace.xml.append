@@ -392,6 +392,12 @@
 					<roomAnim renderLayer="3">resist_icon</roomAnim>
 					<sysDamageResistChance>100</sysDamageResistChance>
 				</room>
+
+				<room id="10"> <!--"Shields"-->
+					<roomAnim renderlayer="1">fm_room_shields_8_cropped-sheet</roomAnim>
+				</room>
+
+
 			</rooms>
 			<systemLimit>13</systemLimit>
 		</mod-append:customShip>
