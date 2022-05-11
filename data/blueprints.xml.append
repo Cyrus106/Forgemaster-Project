@@ -9183,7 +9183,7 @@
 		<cost>100</cost>
 		<bp>6</bp>
 		<rarity>0</rarity>
-		<length>90</length>
+		<length>180</length>
 		<image>beam_contact</image>
 		<launchSounds>
 			<sound>beam2</sound>
@@ -9199,7 +9199,7 @@
 		<title>Elite Chain Kernel</title>
 		<short>€ Kernel Chain</short>
 		<desc>This weapon uses kernels of giant plants from the Orchid home planet as ammunition. Powerful Elite version with a guaranteed stun.
-			Base Cooldown: 30 -> 15
+			Base Cooldown: 30 -> 7.5
 		</desc>
 		<tooltip>Cooldown drops the more it fires.</tooltip>
 		<damage>1</damage>
@@ -9217,7 +9217,7 @@
 		<image>kernel_projectile_elite</image>
 		<boost>
 			<type>cooldown</type>
-			<amount>5</amount>
+			<amount>7.5</amount>
 			<count>3</count>
 		</boost>
 		<launchSounds>
@@ -9247,7 +9247,7 @@
 		<short>Breach B.</short>
 		<locked>1</locked>
 		<desc>Self-teleporting explosive designed to damage systems and cause a breach, becomes faster with after shot.
-			Base Cooldown: 26 -> 14
+			Base Cooldown: 26 -> 11
 		</desc>
 		<tooltip>Bomb weapon; does 2 damage to systems, and creates a hull breach.</tooltip>
 		<damage>0</damage>
@@ -9258,7 +9258,7 @@
 		<sp>0</sp>
 		<boost>
 			<type>cooldown</type>
-			<amount>2.0</amount>
+			<amount>2.5</amount>
 			<count>6</count>
 		</boost>
 		<fireChance>0</fireChance>

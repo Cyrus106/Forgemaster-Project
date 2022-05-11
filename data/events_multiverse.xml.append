@@ -8883,7 +8883,8 @@
 				<variable name="fm_hull_capstones" op="add" value="1"/>
 				<item_modify>
 					<item type="scrap" min="-100" max="-100"/>
-				</item_modify>				<choice blue="false">
+				</item_modify>
+				<choice blue="false">
 					<text>Continue...</text>
 					<event>
 						<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
@@ -8902,698 +8903,729 @@
 	<!--installed module list-->
 	<event name="FM_MODULAR_HULL_MODULES_INSTALLED">
 		<text>here you can see which modules/capstones you have installed[press +/- to zoom]</text>
-		<choice req="pilot" max_group="1" blue="false">
+		<choice req="pilot" max_group="0" blue="false">
 			<text>Nevermind.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
 			</event>
 		</choice>
 		<!--capstones-->
-		<choice req="FM_MODULAR_HULL_SALT" max_group="101" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_SALT"  blue="false" hidden="true">
 			<text>Saline Hull Body[+100% ion resist chance, most crew take 0.5dps]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_DUSK" max_group="102" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_DUSK"  blue="false" hidden="true">
 			<text>Depricated Duskbringer Reactor[+20% reload/shield recharge, -20% all beneficial crew stats, +20% damage taken]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_MURAL" max_group="103" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_MURAL"  blue="false" hidden="true">
 			<text>Aftermarket Hull Murals[all beneficial crew stats +30%, 50% chance to take 1 dmg when hit]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_COMPRESS" max_group="104" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_COMPRESS"  blue="false" hidden="true">
 			<text>Compressor Bypass Manifold[+30% weapon reload, -60% shield recharge]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_PARTICLE" max_group="105" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_PARTICLE"  blue="false" hidden="true">
 			<text>Particlized Shields[+8zs, -50% shield recharge]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPLINK" max_group="106" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPLINK"  blue="false" hidden="true">
 			<text>Weapon Uplink Matrices[-40% weapon reload, +25% crew dmg and -5% crew dmg per weapon power]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_PERFECT" max_group="107" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_PERFECT"  blue="false" hidden="true">
 			<text>Perfect Onboard Efficency[+5% reload speed/shield recharge, +5% to all crew stats]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FASTSHIELD" max_group="108" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FASTSHIELD"  blue="false" hidden="true">
 			<text>Infinitum Cyclo-Barrier[+800% shield recharge, 4 max shield power, no manning]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FASTWEAPON" max_group="109" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FASTWEAPON"  blue="false" hidden="true">
 			<text>Infinitum Cyclo-Arsenal[+166% reload, 3 max weapon power, no manning]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_CREWKILL" max_group="110" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_CREWKILL"  blue="false" hidden="true">
 			<text>Metaplasmatic Corrosion Aura[enemy crew takes x3 damage from everything, but only 50% from combat]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_MAGNETIC" max_group="111" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_MAGNETIC"  blue="false" hidden="true">
 			<text>Electromagnetic Hull Body [+80% ion res, +10% sys res, +10% scrap, scrap magnet effect, -3 reactor]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<!--Fortified-->
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="1" max_group="201" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="1" max_lvl="1"  blue="false" hidden="true">
 			<text>Fortified Plating Module [+5% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="2" max_group="201" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="2" max_lvl="2"  blue="false" hidden="true">
 			<text>Fortified Plating Module(x2) [+10% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="3" max_group="201" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="3" max_lvl="3"  blue="false" hidden="true">
 			<text>Fortified Plating Module(x3) [+15% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="4" max_group="201" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="4" max_lvl="4"  blue="false" hidden="true">
 			<text>Fortified Plating Module(x4) [+20% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="5" max_group="201" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="5" max_lvl="5"  blue="false" hidden="true">
 			<text>Fortified Plating Module(x5) [+25% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="6" max_group="201" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="6" max_lvl="6"  blue="false" hidden="true">
 			<text>Fortified Plating Module(x6) [+30% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="7" max_group="201" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="7" max_lvl="7"  blue="false" hidden="true">
 			<text>Fortified Plating Module(x7) [+35% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="8" max_group="201" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="8" max_lvl="8"  blue="false" hidden="true">
 			<text>Fortified Plating Module(x8) [+40% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="9" max_group="201" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="9" max_lvl="9"  blue="false" hidden="true">
 			<text>Fortified Plating Module(x9) [+45% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="10" max_group="201" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="10" max_lvl="10"   blue="false" hidden="true">
 			<text>Fortified Plating Module(x10) [+50% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="11" max_group="201" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="11" max_lvl="11"  blue="false" hidden="true">
 			<text>Fortified Plating Module(x11) [+55% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="12" max_group="201" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="12" max_lvl="12"  blue="false" hidden="true">
 			<text>Fortified Plating Module(x12) [+60% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="13" max_group="201" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="13" max_lvl="13"  blue="false" hidden="true">
 			<text>Fortified Plating Module(x13) [+65% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="14" max_group="201" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="14" max_lvl="14"  blue="false" hidden="true">
 			<text>Fortified Plating Module(x14) [+70% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="15" max_group="201" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="15" max_lvl="15"  blue="false" hidden="true">
 			<text>Fortified Plating Module(x15) [+75% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="16" max_lvl="16"  blue="false" hidden="true">
+			<text>Fortified Plating Module(x16) [+80% hull resist]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="17" max_lvl="17"  blue="false" hidden="true">
+			<text>Fortified Plating Module(x17) [+85% hull resist]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="18" max_lvl="18"  blue="false" hidden="true">
+			<text>Fortified Plating Module(x18) [+90% hull resist]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="19" max_lvl="19"  blue="false" hidden="true">
+			<text>Fortified Plating Module(x19) [+95% hull resist]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="20" max_lvl="20"   blue="false" hidden="true">
+			<text>Fortified Plating Module(x20) [+100% hull resist]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
 		<!--Encased-->
-		<choice req="FM_MODULAR_HULL_ENCASED" lvl="1" max_group="202" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_ENCASED" lvl="1" max_lvl="1" blue="false" hidden="true">
 			<text>Encased Systems Module [+10% sys resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_ENCASED" lvl="2" max_group="202" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_ENCASED" lvl="2" max_lvl="2" blue="false" hidden="true">
 			<text>Encased Systems Module(x2) [+20% sys resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_ENCASED" lvl="3" max_group="202" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_ENCASED" lvl="3" max_lvl="3" blue="false" hidden="true">
 			<text>Encased Systems Module(x3) [+30% sys resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_ENCASED" lvl="4" max_group="202" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_ENCASED" lvl="4" max_lvl="4" blue="false" hidden="true">
 			<text>Encased Systems Module(x4) [+40% sys resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_ENCASED" lvl="5" max_group="202" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_ENCASED" lvl="5" max_lvl="5" blue="false" hidden="true">
 			<text>Encased Systems Module(x5) [+50% sys resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_ENCASED" lvl="6" max_group="202" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_ENCASED" lvl="6" max_lvl="6" blue="false" hidden="true">
 			<text>Encased Systems Module(x6) [+60% sys resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_ENCASED" lvl="7" max_group="202" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_ENCASED" lvl="7" max_lvl="7" blue="false" hidden="true">
 			<text>Encased Systems Module(x7) [+70% sys resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_ENCASED" lvl="8" max_group="202" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_ENCASED" lvl="8" max_lvl="8" blue="false" hidden="true">
 			<text>Encased Systems Module(x8) [+80% sys resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_ENCASED" lvl="9" max_group="202" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_ENCASED" lvl="9" max_lvl="9" blue="false" hidden="true">
 			<text>Encased Systems Module(x9) [+90% sys resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_ENCASED" lvl="10" max_group="202" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_ENCASED" lvl="10" max_lvl="10" blue="false" hidden="true">
 			<text>Encased Systems Module(x10) [+100% sys resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<!--Resilient-->
-		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="1" max_group="203" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="1" max_lvl="1" blue="false" hidden="true">
 			<text>Resilient Construction Module [on ship: -20% sabo dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="2" max_group="203" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="2" max_lvl="2" blue="false" hidden="true">
 			<text>Resilient Construction Module(x2) [on ship: -36% sabo dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="3" max_group="203" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="3" max_lvl="3" blue="false" hidden="true">
 			<text>Resilient Construction Module(x3) [on ship: -48.8% sabo dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="4" max_group="203" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="4" max_lvl="4" blue="false" hidden="true">
 			<text>Resilient Construction Module(x4) [on ship: -59.04% sabo dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="5" max_group="203" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="5" max_lvl="5" blue="false" hidden="true">
 			<text>Resilient Construction Module(x5) [on ship: -67.232% sabo dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="6" max_group="203" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="6" max_lvl="6" blue="false" hidden="true">
 			<text>Resilient Construction Module(x6) [on ship: -73.786% sabo dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="7" max_group="203" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="7" max_lvl="7" blue="false" hidden="true">
 			<text>Resilient Construction Module(x7) [on ship: -79.028% sabo dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="8" max_group="203" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="8" max_lvl="8" blue="false" hidden="true">
 			<text>Resilient Construction Module(x8) [on ship: -83.223% sabo dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="9" max_group="203" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="9" max_lvl="9" blue="false" hidden="true">
 			<text>Resilient Construction Module(x9) [on ship: -86.578% sabo dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="10" max_group="203" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="10" max_lvl="10" blue="false" hidden="true">
 			<text>Resilient Construction Module(x10) [on ship: -89.263% sabo dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="11" max_group="203" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="11" max_lvl="11" blue="false" hidden="true">
 			<text>Resilient Construction Module(x11) [on ship: -91.41% sabo dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="12" max_group="203" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="12" max_lvl="12" blue="false" hidden="true">
 			<text>Resilient Construction Module(x12) [on ship: -93.128% sabo dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="13" max_group="203" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="13" max_lvl="13" blue="false" hidden="true">
 			<text>Resilient Construction Module(x13) [on ship: -94.502% sabo dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="14" max_group="203" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="14" max_lvl="14" blue="false" hidden="true">
 			<text>Resilient Construction Module(x14) [on ship: -95.602% sabo dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="15" max_group="203" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="15" max_lvl="15" blue="false" hidden="true">
 			<text>Resilient Construction Module(x15) [on ship: -96.482% sabo dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<!--Guardian-->
-		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="1" max_group="204" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="1" max_lvl="1" blue="false" hidden="true">
 			<text>Guardian Protocols Module [on ship: crew take -13% dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="2" max_group="204" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="2" max_lvl="2" blue="false" hidden="true">
 			<text>Guardian Protocols Module(x2) [on ship: crew take -24.31% dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="3" max_group="204" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="3" max_lvl="3" blue="false" hidden="true">
 			<text>Guardian Protocols Module(x3) [on ship: crew take -34.15% dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="4" max_group="204" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="4" max_lvl="4" blue="false" hidden="true">
 			<text>Guardian Protocols Module(x4) [on ship: crew take -42.71% dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="5" max_group="204" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="5" max_lvl="5" blue="false" hidden="true">
 			<text>Guardian Protocols Module(x5) [on ship: crew take -50.158% dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="6" max_group="204" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="6" max_lvl="6" blue="false" hidden="true">
 			<text>Guardian Protocols Module(x6) [on ship: crew take -56.637% dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="7" max_group="204" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="7" max_lvl="7" blue="false" hidden="true">
 			<text>Guardian Protocols Module(x7) [on ship: crew take -62.275% dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="8" max_group="204" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="8" max_lvl="8" blue="false" hidden="true">
 			<text>Guardian Protocols Module(x8) [on ship: crew take -67.179% dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="9" max_group="204" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="9" max_lvl="9" blue="false" hidden="true">
 			<text>Guardian Protocols Module(x9) [on ship: crew take -71.446% dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="10" max_group="204" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="10" max_lvl="10" blue="false" hidden="true">
 			<text>Guardian Protocols Module(x10) [on ship: crew take -75.158% dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="11" max_group="204" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="11" max_lvl="11" blue="false" hidden="true">
 			<text>Guardian Protocols Module(x11) [on ship: crew take -78.387% dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="12" max_group="204" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="12" max_lvl="12" blue="false" hidden="true">
 			<text>Guardian Protocols Module(x12) [on ship: crew take -81.197% dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="13" max_group="204" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="13" max_lvl="13" blue="false" hidden="true">
 			<text>Guardian Protocols Module(x13) [on ship: crew take -83.641% dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="14" max_group="204" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="14" max_lvl="14" blue="false" hidden="true">
 			<text>Guardian Protocols Module(x14) [on ship: crew take -85.768% dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="15" max_group="204" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="15" max_lvl="15" blue="false" hidden="true">
 			<text>Guardian Protocols Module(x15) [on ship: crew take -87.618% dmg]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<!--Flooring-->
-		<choice req="FM_MODULAR_HULL_FLOORING" lvl="1" max_group="205" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FLOORING" lvl="1" max_lvl="1" blue="false" hidden="true">
 			<text>Intelligent Flooring Module [on ship: +45% ally speed, -15% enemy speed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FLOORING" lvl="2" max_group="205" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FLOORING" lvl="2" max_lvl="2" blue="false" hidden="true">
 			<text>Intelligent Flooring Module(x2) [on ship: +110.25% ally speed, -27.75% enemy speed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FLOORING" lvl="3" max_group="205" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FLOORING" lvl="3" max_lvl="3" blue="false" hidden="true">
 			<text>Intelligent Flooring Module(x3) [on ship: +204.863% ally speed, -38.686% enemy speed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FLOORING" lvl="4" max_group="205" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FLOORING" lvl="4" max_lvl="4" blue="false" hidden="true">
 			<text>Intelligent Flooring Module(x4) [on ship: +342.05% ally speed, -47.7% enemy speed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FLOORING" lvl="5" max_group="205" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FLOORING" lvl="5" max_lvl="5" blue="false" hidden="true">
 			<text>Intelligent Flooring Module(x5) [on ship: +540.973% ally speed, -55.621% enemy speed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FLOORING" lvl="6" max_group="205" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FLOORING" lvl="6" max_lvl="6" blue="false" hidden="true">
 			<text>Intelligent Flooring Module(x6) [on ship: +829.411% ally speed, -62.285% enemy speed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<!--Aerosols-->
-		<choice req="FM_MODULAR_HULL_AERO" lvl="1" max_group="206" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_AERO" lvl="1" max_lvl="1" blue="false" hidden="true">
 			<text>Inspirational Aerosols Module [on ship: +100% ally ability reload, -30% enemy ability reload]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_AERO" lvl="2" max_group="206" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_AERO" lvl="2" max_lvl="2" blue="false" hidden="true">
 			<text>Inspirational Aerosols Module(x2) [on ship: +200% ally ability reload, -51% enemy ability reload]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_AERO" lvl="3" max_group="206" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_AERO" lvl="3" max_lvl="3" blue="false" hidden="true">
 			<text>Inspirational Aerosols Module(x3) [on ship: +300% ally ability reload, -65.7% enemy ability reload]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_AERO" lvl="4" max_group="206" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_AERO" lvl="4" max_lvl="4" blue="false" hidden="true">
 			<text>Inspirational Aerosols Module(x4) [on ship: +400% ally ability reload, -76.99% enemy ability reload]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_AERO" lvl="5" max_group="206" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_AERO" lvl="5" max_lvl="5" blue="false" hidden="true">
 			<text>Inspirational Aerosols Module(x5) [on ship: +500% ally ability reload, -83.193% enemy ability reload]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<!--Respiration-->
-		<choice req="FM_MODULAR_HULL_RESPIRATION" lvl="1" max_group="207" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_RESPIRATION" lvl="1"  blue="false" hidden="true">
 			<text>Enhanced Respiration Grid Module [on ship: x0.8 suffocation, scales multiplicatively with o2 power]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<!--scrap-->
-		<choice req="FM_MODULAR_HULL_SCRAP" lvl="1" max_group="208" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_SCRAP" lvl="1" max_lvl="1" blue="false" hidden="true">
 			<text>Scrap Magnet Module [+5% scrap]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_SCRAP" lvl="2" max_group="208" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_SCRAP" lvl="2" max_lvl="2" blue="false" hidden="true">
 			<text>Scrap Magnet Module(x2) [+10% scrap]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_SCRAP" lvl="3" max_group="208" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_SCRAP" lvl="3" max_lvl="3" blue="false" hidden="true">
 			<text>Scrap Magnet Module(x3) [+15% scrap]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<!--vengeance1-->
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="1" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="1" max_lvl="1" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="2" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="2" max_lvl="2" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x2) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="3" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="3" max_lvl="3" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x3) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="4" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="4" max_lvl="4" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x4) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="5" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="5" max_lvl="5" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x5) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="6" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="6" max_lvl="6" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x6) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="7" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="7" max_lvl="7" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x7) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="8" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="8" max_lvl="8" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x8) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="9" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="9" max_lvl="9" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x9) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="10" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="10" max_lvl="10" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x10) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="11" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="11" max_lvl="11" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x11) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="12" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="12" max_lvl="12" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x12) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="13" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="13" max_lvl="13" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x13) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="14" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="14" max_lvl="14" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x14) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="15" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="15" max_lvl="15" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x15) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="16" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="16" max_lvl="16" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x16) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="17" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="17" max_lvl="17" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x17) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="18" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="18" max_lvl="18" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x18) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="19" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="19" max_lvl="19" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x19) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="20" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="20" max_lvl="20" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x20) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="21" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="21" max_lvl="21" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x21) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="22" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="22" max_lvl="22" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x22) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="23" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="23" max_lvl="23" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x23) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="24" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="24" max_lvl="24" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x24) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="25" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="25" max_lvl="25" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x25) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="26" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="26" max_lvl="26" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x26) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="27" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="27" max_lvl="27" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x27) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="28" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="28" max_lvl="28" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x28) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="29" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="29" max_lvl="29" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x29) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="30" max_group="251" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="30" max_lvl="30" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x30) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="31"  blue="false" hidden="true">
+			<text>Prismatic Hullguard Cultivator(x31+) [60% 2 laser vengeance]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
 		<!--vengeance2-->
-		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="1" max_group="252" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="1" max_lvl="1" blue="false" hidden="true">
 			<text>Crystalline Hullguard Cultivator [60% 2 crystal vengeance(40%fire, 40%breach, 1sp)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="2" max_group="252" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="2" max_lvl="2" blue="false" hidden="true">
 			<text>Crystalline Hullguard Cultivator(x2) [60% 2 crystal vengeance(40%fire, 40%breach, 1sp)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="3" max_group="252" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="3" max_lvl="3" blue="false" hidden="true">
 			<text>Crystalline Hullguard Cultivator(x3) [60% 2 crystal vengeance(40%fire, 40%breach, 1sp)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="4" max_group="252" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="4" max_lvl="4" blue="false" hidden="true">
 			<text>Crystalline Hullguard Cultivator(x4) [60% 2 crystal vengeance(40%fire, 40%breach, 1sp)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="5" max_group="252" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="5" max_lvl="5" blue="false" hidden="true">
 			<text>Crystalline Hullguard Cultivator(x5) [60% 2 crystal vengeance(40%fire, 40%breach, 1sp)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="6" max_group="252" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="6" max_lvl="6" blue="false" hidden="true">
 			<text>Crystalline Hullguard Cultivator(x6) [60% 2 crystal vengeance(40%fire, 40%breach, 1sp)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="7" max_group="252" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="7" max_lvl="7" blue="false" hidden="true">
 			<text>Crystalline Hullguard Cultivator(x7) [60% 2 crystal vengeance(40%fire, 40%breach, 1sp)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="8" max_group="252" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="8" max_lvl="8" blue="false" hidden="true">
 			<text>Crystalline Hullguard Cultivator(x8) [60% 2 crystal vengeance(40%fire, 40%breach, 1sp)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="9" max_group="252" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="9" max_lvl="9" blue="false" hidden="true">
 			<text>Crystalline Hullguard Cultivator(x9) [60% 2 crystal vengeance(40%fire, 40%breach, 1sp)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="10" max_group="252" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="10" max_lvl="10" blue="false" hidden="true">
 			<text>Crystalline Hullguard Cultivator(x10) [60% 2 crystal vengeance(40%fire, 40%breach, 1sp)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="11" max_group="252" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="11" max_lvl="11" blue="false" hidden="true">
 			<text>Crystalline Hullguard Cultivator(x11) [60% 2 crystal vengeance(40%fire, 40%breach, 1sp)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="12" max_group="252" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="12" max_lvl="12" blue="false" hidden="true">
 			<text>Crystalline Hullguard Cultivator(x12) [60% 2 crystal vengeance(40%fire, 40%breach, 1sp)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="13" max_group="252" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="13" max_lvl="13" blue="false" hidden="true">
 			<text>Crystalline Hullguard Cultivator(x13) [60% 2 crystal vengeance(40%fire, 40%breach, 1sp)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="14" max_group="252" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="14" max_lvl="14" blue="false" hidden="true">
 			<text>Crystalline Hullguard Cultivator(x14) [60% 2 crystal vengeance(40%fire, 40%breach, 1sp)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="15" max_group="252" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="15" max_lvl="15" blue="false" hidden="true">
 			<text>Crystalline Hullguard Cultivator(x15) [60% 2 crystal vengeance(40%fire, 40%breach, 1sp)]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="FM_MODULAR_HULL_VENGEANCE2" lvl="16" blue="false" hidden="true">
+			<text>Crystalline Hullguard Cultivator(x16+) [60% 2 crystal vengeance(40%fire, 40%breach, 1sp)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
 		<!--vengeance3-->
-		<choice req="FM_MODULAR_HULL_VENGEANCE3" lvl="1" max_group="253" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE3" lvl="1" max_lvl="1" blue="false" hidden="true">
 			<text>Forgefire Hullguard Cultivator [60% 2 magnetic fragment vengeance(10%fire, 50%breach, 10sp, hullbust, 5s stun)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE3" lvl="2" max_group="253" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE3" lvl="2" max_lvl="2" blue="false" hidden="true">
 			<text>Forgefire Hullguard Cultivator(x2) [60% 2 magnetic fragment vengeance(10%fire, 50%breach, 10sp, hullbust, 5s stun)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE3" lvl="3" max_group="253" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE3" lvl="3" max_lvl="3" blue="false" hidden="true">
 			<text>Forgefire Hullguard Cultivator(x3) [60% 2 magnetic fragment vengeance(10%fire, 50%breach, 10sp, hullbust, 5s stun)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE3" lvl="4" max_group="253" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE3" lvl="4" max_lvl="4" blue="false" hidden="true">
 			<text>Forgefire Hullguard Cultivator(x4) [60% 2 magnetic fragment vengeance(10%fire, 50%breach, 10sp, hullbust, 5s stun)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE3" lvl="5" max_group="253" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE3" lvl="5" max_lvl="5" blue="false" hidden="true">
 			<text>Forgefire Hullguard Cultivator(x5) [60% 2 magnetic fragment vengeance(10%fire, 50%breach, 10sp, hullbust, 5s stun)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE3" lvl="6" max_group="253" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE3" lvl="6" max_lvl="6" blue="false" hidden="true">
 			<text>Forgefire Hullguard Cultivator(x6) [60% 2 magnetic fragment vengeance(10%fire, 50%breach, 10sp, hullbust, 5s stun)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE3" lvl="7" max_group="253" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE3" lvl="7" max_lvl="7" blue="false" hidden="true">
 			<text>Forgefire Hullguard Cultivator(x7) [60% 2 magnetic fragment vengeance(10%fire, 50%breach, 10sp, hullbust, 5s stun)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE3" lvl="8" max_group="253" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE3" lvl="8" max_lvl="8" blue="false" hidden="true">
 			<text>Forgefire Hullguard Cultivator(x8) [60% 2 magnetic fragment vengeance(10%fire, 50%breach, 10sp, hullbust, 5s stun)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE3" lvl="9" max_group="253" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE3" lvl="9" max_lvl="9" blue="false" hidden="true">
 			<text>Forgefire Hullguard Cultivator(x9) [60% 2 magnetic fragment vengeance(10%fire, 50%breach, 10sp, hullbust, 5s stun)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE3" lvl="10" max_group="253" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE3" lvl="10" max_lvl="10" blue="false" hidden="true">
 			<text>Forgefire Hullguard Cultivator(x10) [60% 2 magnetic fragment vengeance(10%fire, 50%breach, 10sp, hullbust, 5s stun)]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="FM_MODULAR_HULL_VENGEANCE3" lvl="11" blue="false" hidden="true">
+			<text>Forgefire Hullguard Cultivator(x11+) [60% 2 magnetic fragment vengeance(10%fire, 50%breach, 10sp, hullbust, 5s stun)]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
 		<!--system Update-->
-		<choice req="FM_MODULAR_HULL_UPDATE_WEAPONS" lvl="1" max_group="301" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_WEAPONS" lvl="1"  blue="false" hidden="true">
 			<text>System Update Module(Weapons) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_SHIELDS" lvl="1" max_group="302" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_SHIELDS" lvl="1"  blue="false" hidden="true">
 			<text>System Update Module(Shields) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_ENGINES" lvl="1" max_group="303" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_ENGINES" lvl="1"  blue="false" hidden="true">
 			<text>System Update Module(Engines) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_MED" lvl="1" max_group="304" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_MED" lvl="1"  blue="false" hidden="true">
 			<text>System Update Module(Medical) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_DRONES" lvl="1" max_group="305" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_DRONES" lvl="1"  blue="false" hidden="true">
 			<text>System Update Module(Drones) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_OXYGEN" lvl="1" max_group="306" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_OXYGEN" lvl="1"  blue="false" hidden="true">
 			<text>System Update Module(Oxygen) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_TELEPORTER" lvl="1" max_group="307" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_TELEPORTER" lvl="1"  blue="false" hidden="true">
 			<text>System Update Module(Teleporter) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_CLOAKING" lvl="1" max_group="308" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_CLOAKING" lvl="1"  blue="false" hidden="true">
 			<text>System Update Module(Cloaking) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_ARTILLERY" lvl="1" max_group="309" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_ARTILLERY" lvl="1"  blue="false" hidden="true">
 			<text>System Update Module(Artillery) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_HACKING" lvl="1" max_group="310" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_HACKING" lvl="1"  blue="false" hidden="true">
 			<text>System Update Module(Hacking) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_MIND" lvl="1" max_group="311" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_MIND" lvl="1"  blue="false" hidden="true">
 			<text>System Update Module(Mind Control) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_TEMPORAL" lvl="1" max_group="312" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_TEMPORAL" lvl="1"  blue="false" hidden="true">
 			<text>System Update Module(Temporal Manipulator) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_PILOT" lvl="1" max_group="312" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_PILOT" lvl="1"  blue="false" hidden="true">
 			<text>System Update Module(Piloting) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_SENSORS" lvl="1" max_group="313" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_SENSORS" lvl="1"  blue="false" hidden="true">
 			<text>System Update Module(Sensors) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_DOORS" lvl="1" max_group="314" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_DOORS" lvl="1"  blue="false" hidden="true">
 			<text>System Update Module(Doors) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_BATTERY" lvl="1" max_group="315" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_BATTERY" lvl="1"  blue="false" hidden="true">
 			<text>System Update Module(Battery) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<!--Micro-Turret-->
-		<choice req="FM_MODULAR_HULL_TURRET_WEAPONS" lvl="1" max_group="316" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_WEAPONS" lvl="1"  blue="false" hidden="true">
 			<text>Micro-Turret Integration Module(Weapons) [7dps in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_SHIELDS" lvl="1" max_group="317" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_SHIELDS" lvl="1"  blue="false" hidden="true">
 			<text>Micro-Turret Integration Module(Shields) [7dps in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_ENGINES" lvl="1" max_group="318" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_ENGINES" lvl="1"  blue="false" hidden="true">
 			<text>Micro-Turret Integration Module(Engines) [7dps in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_MED" lvl="1" max_group="319" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_MED" lvl="1"  blue="false" hidden="true">
 			<text>Micro-Turret Integration Module(Medical) [7dps in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_DRONES" lvl="1" max_group="310" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_DRONES" lvl="1"  blue="false" hidden="true">
 			<text>Micro-Turret Integration Module(Drones) [7dps in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_OXYGEN" lvl="1" max_group="311" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_OXYGEN" lvl="1"  blue="false" hidden="true">
 			<text>Micro-Turret Integration Module(Oxygen) [7dps in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_TELEPORTER" lvl="1" max_group="312" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_TELEPORTER" lvl="1"  blue="false" hidden="true">
 			<text>Micro-Turret Integration Module(Teleporter) [7dps in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_CLOAKING" lvl="1" max_group="313" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_CLOAKING" lvl="1"  blue="false" hidden="true">
 			<text>Micro-Turret Integration Module(Cloaking) [7dps in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_ARTILLERY" lvl="1" max_group="314" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_ARTILLERY" lvl="1"  blue="false" hidden="true">
 			<text>Micro-Turret Integration Module(Artillery) [7dps in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_HACKING" lvl="1" max_group="315" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_HACKING" lvl="1"  blue="false" hidden="true">
 			<text>Micro-Turret Integration Module(Hacking) [7dps in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_MIND" lvl="1" max_group="316" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_MIND" lvl="1"  blue="false" hidden="true">
 			<text>Micro-Turret Integration Module(Mind Control) [7dps in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_TEMPORAL" lvl="1" max_group="317" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_TEMPORAL" lvl="1"  blue="false" hidden="true">
 			<text>Micro-Turret Integration Module(Temporal Manipulator) [7dps in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_PILOT" lvl="1" max_group="318" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_PILOT" lvl="1"  blue="false" hidden="true">
 			<text>Micro-Turret Integration Module(Piloting) [7dps in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_SENSORS" lvl="1" max_group="319" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_SENSORS" lvl="1"  blue="false" hidden="true">
 			<text>Micro-Turret Integration Module(Sensors) [7dps in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_DOORS" lvl="1" max_group="320" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_DOORS" lvl="1"  blue="false" hidden="true">
 			<text>Micro-Turret Integration Module(Doors) [7dps in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_BATTERY" lvl="1" max_group="321" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_BATTERY" lvl="1"  blue="false" hidden="true">
 			<text>Micro-Turret Integration Module(Battery) [7dps in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
