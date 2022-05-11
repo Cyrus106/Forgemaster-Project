@@ -1027,7 +1027,7 @@
 					<number>0</number>
 				</slot>
 			</sensors>
-			<shields power="1" max="1" room="10" start="true" img="fm_room_shields_8_cropped">
+			<shields power="1" max="1" room="10" start="true" img="nothing"> <!-- image was "fm_room_shields_8_cropped"-->
 				<slot>
 					<direction>left</direction>
 					<number>2</number>
