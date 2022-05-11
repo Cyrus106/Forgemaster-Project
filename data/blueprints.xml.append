@@ -989,7 +989,7 @@
 			<artillery power="2" room="2" start="true" weapon="KERNEL_CHAIN_ELITE_PLAYER_ARTY" img="room_artillery_invis_long" />
 			<battery power="1" max="2" room="11" start="false" img="room_battery_6" />
 			<!--<cloaking power="1" room="4" start="true" img="room_cloaking_10" /> in case we feel like allowing the ship to get cloaking-->
-			<clonebay power="1" room="5" start="true">
+			<clonebay power="1" room="5" start="false">
 				<slot>
 					<number>2</number>
 				</slot>
@@ -1008,7 +1008,7 @@
 				</slot>
 			</engines>
 			<hacking power="1" room="14" start="false" img="room_hacking_orchid" />
-			<medbay power="1" room="5" start="false" img="room_medbay_7">
+			<medbay power="1" room="5" start="true" img="room_medbay_7">
 				<slot>
 					<number>2</number>
 				</slot>
