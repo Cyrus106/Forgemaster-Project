@@ -11268,6 +11268,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<function name="DRONE_RECOVERY" value="1" useForReqs="true"/>
 			<locked/>
 		</aug>
+	</augments>
 
 	<augments> <!--FORGEMASTER AUGMENTS for Energized Rooms -->
 		<aug name="ENERGIZED_ROOM_MEDBAY">
@@ -13885,4 +13886,17 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<weapon name="BARRAGE_FLAK_SHIELD2" count="20"/>
 		</surgeBarrage>
 	</boss>
+</FTL>
+
+<FTL>
+	<rewards>
+		<reward name="hull_arm_scrap">
+			<resourceRewards>
+				<resource name="scrap" level="HIGH"/>
+				<resource name="scrap" level="HIGH"/>
+				<resource name="scrap" level="HIGH"/>
+				<resource name="scrap" level="HIGH"/>
+			</resourceRewards>
+		</reward>
+	</rewards>
 </FTL>
