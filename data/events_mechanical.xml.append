@@ -206,7 +206,7 @@
 		</loadEventList>
 	</event>
 	<event name="FM_ONDAMAGE_OVERCHARMED">
-		<loadEventList default="FMON_DAMAGE_HULL_ARM">
+		<loadEventList default="FM_ONDAMAGE_HULL_ARM">
 			<event req="fm_hull_upgrade_point" lvl="16">
 				<loadEvent>FM_ONDAMAGE_OVERCHARMED</loadEvent>
 				<queueEvent>OVERCHARMED_RELOAD</queueEvent>
@@ -227,8 +227,10 @@
 		</triggeredEvent>
 	</event>
 
-	<event namee="HULL_ARM_SCRAP">
-		<autoReward level="HIGH">scrap_only</autoReward>
+	<event name="HULL_ARM_SCRAP">
+		<item_modify>
+			<item type="scrap" min="100" max="200"/>
+		</item_modify>
 	</event>
 
 	<event name="MURALS_DAMAGE">
