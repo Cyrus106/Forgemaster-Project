@@ -157,7 +157,7 @@
 		</loadEventList>
 	</event>
 	<event name="FM_JUMP_END">
-		<triggeredEvent name="FM_ONJUMP_STUFF_LOAD" event="FM_HULL_LIMITER_LOAD">
+		<triggeredEvent name="FM_ONJUMP_STUFF" event="FM_ONJUMP_STUFF_LOAD">
 			<jumps amount="1" type="0"/>
 		</triggeredEvent>
 	</event>
@@ -228,7 +228,7 @@
 	</event>
 
 	<event namee="HULL_ARM_SCRAP">
-		<autoReward level="HIGH">hull_arm_scrap</autoReward>
+		<autoReward level="HIGH">scrap_only</autoReward>
 	</event>
 
 	<event name="MURALS_DAMAGE">
@@ -295,7 +295,7 @@
 	<event name="RESET_ONJUMP">
 		<text>ONJUMP has been reset</text>
 		<clearTriggeredEvent name="FM_ONJUMP_STUFF"/>
-		<triggeredEvent name="FM_ONJUMP_STUFF" event="FM_HULL_LIMITER_LOAD">
+		<triggeredEvent name="FM_ONJUMP_STUFF" event="FM_ONJUMP_STUFF_LOAD">
 			<jumps amount="1" type="1"/>
 		</triggeredEvent>
 	</event>
