@@ -104,8 +104,11 @@
 </mod:findName>
 
 <mod:findName type="event" name="START_BEACON_EXPLAIN_LOAD">
-	<mod-append:triggeredEvent name="FM_JUMP_STUFF_LOAD" event="FM_HULL_LIMITER_LOAD">
+	<mod-append:triggeredEvent name="FM_ONJUMP_STUFF_LOAD" event="FM_HULL_LIMITER_LOAD">
 		<jumps amount="1" type="1"/>
+	</mod-append:triggeredEvent>
+	<mod-append:triggeredEvent name="FM_ONDAMAGE_STUFF" event="FM_ONDAMAGE_STUFF_LOAD">
+		<playerDamage amount="1" countRepairs="false"/>
 	</mod-append:triggeredEvent>
 	<mod:findLike type="loadEventList">
 		<mod-append:event name="GIVE_RAGE_TWISTEDMONK" req = "TWISTED_BLESSING"/>

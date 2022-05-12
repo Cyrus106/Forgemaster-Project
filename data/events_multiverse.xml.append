@@ -8658,9 +8658,6 @@
 				<text>The Aftermarket Hull Murals have been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_MURAL</hiddenAug>
 				<variable name="fm_hull_capstones" op="add" value="1"/>
-				<triggeredEvent name="MURALS_TRIGGER" event="MURALS_DAMAGE">
-					<playerDamage amount="1" countRepairs="false"/>
-				</triggeredEvent>
 				<item_modify>
 					<item type="scrap" min="-85" max="-85"/>
 				</item_modify>

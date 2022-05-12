@@ -1054,8 +1054,7 @@
 		<crewCount amount="1" class="crystal" />
 		<crewCount amount="1" class="rock" />
 		<aug name="OBSIDIAN_ARMOR_1" />
-		<aug name="SCRAP_COLLECTOR"/>
-		<aug name="SCRAP_COLLECTOR"/>
+		<aug name="TWISTED_HULL_ARM"/>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED3_3" layout="zmt_player_lostsun_suicide" img="zmt_player_lostsun_suicide">
 		<class>Twisted Renegade Lostsun</class>
@@ -13343,10 +13342,21 @@
 		<stackable>false</stackable>
 	</augBlueprint>
 
+	<augBlueprint name="TWISTED_HULL_ARM">
+		<title>Self Arm</title>
+		<desc>a versitile capable of grabbing drones and magintizing debris - additionaly, it can grab ripped-off pieces of your hull to deconstruct thme for scrap.</desc>
+		<cost>100</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+
 	<mod:findName type="augBlueprint" name="EX_MEDBAY_SPEED">   <!--PRICE TWEAK. -->
 		<mod-overwrite:cost>60</mod-overwrite:cost>
 	</mod:findName>
 
+	<!--Abstrusity — Yesterday at 19:10
+	solution: make the augment 'self arm'
+	"a versatile arm capable of grabbing drones and magnetizing debris - additionally, it can grab ripped-off pieces of your hull to deconstruct for shiny golden scrap."-->
 
 </FTL>
 <!--all the Modular armor augments-->

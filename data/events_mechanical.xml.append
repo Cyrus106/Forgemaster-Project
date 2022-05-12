@@ -62,8 +62,7 @@
 	<!--twisted Monk	-->
 	<event name="TWISTED_BLESSING_KILLCOUNT"> <!--this checks if enemy has crew in first place so auto ships can't be ck-d-->
 		<triggeredEvent event="TWISTED_BLESSING_CREWKILL_CHECK" thisFight="true">
-			<enemyCrew amount="1" includeClonebay="true"/>
-			<enemyDeaths amount="1" includeClonebay="false" countNewCrew="true"/>
+			<enemyDeaths amount="1" includeClonebay="false" countNewCrew="false"/>
 		</triggeredEvent>
 	</event>
 	<event name="TWISTED_BLESSING_CREWKILL_CHECK"> <!-- this checks if enemy has no more crew-->
@@ -105,52 +104,68 @@
 
 <FTL><!--all the modular armor stuff-->
 	<!--special module effect events-->
-	<event name="FM_JUMP_STUFF_LOAD">
+	<event name="FM_ONJUMP_STUFF_LOAD">
 	  <loadEvent>FM_JUMP_LOSTSUN</loadEvent>
 	</event>
 	<event name="FM_JUMP_LOSTSUN">
 		<loadEventList default="FM_JUMP_LEECH">
-			<event load="LOAD_DEATH_TIMER" req="TWISTED_LOSTSUN" lvl="1"/>
+			<event req="TWISTED_LOSTSUN" lvl="1">
+				<loadEvent>FM_JUMP_LEECH</loadEvent>
+				<queueEvent>LOAD_DEATH_TIMER</queueEvent>
+			</event>
 		</loadEventList>
 	</event>
 	<event name="FM_JUMP_LEECH">
 		<loadEventList default="FM_JUMP_MONK">
-			<event load="DEPRESS_CHARGE_INITIAL" req="LOCKED_SUPER_DEPRESSION" lvl="1"/>
+			<event req="LOCKED_SUPER_DEPRESSION" lvl="1">
+				<loadEvent>FM_JUMP_MONK</loadEvent>
+				<queueEvent>DEPRESS_CHARGE_INITIAL</queueEvent>
+			</event>
 		</loadEventList>
 	</event>
 	<event name="FM_JUMP_MONK">
 		<loadEventList default="FM_HULL_LIMITER_WEAPON">
-			<event load="TWISTED_BLESSING_KILLCOUN" req="TWISTED_BLESSING" lvl="1"/>
+			<event req="TWISTED_BLESSING" lvl="1">
+				<loadEvent>FM_HULL_LIMITER_WEAPON</loadEvent>
+				<queueEvent>TWISTED_BLESSING_KILLCOUNT</queueEvent>
+			</event>
 		</loadEventList>
 	</event>
 
 	<event name="FM_HULL_LIMITER_WEAPON">
 		<loadEventList default="FM_HULL_LIMITER_SHIELD">
-			<event load="LOAD_FASTWEAPON" req="LIMIT_CHECK_WEAPON" lvl="3"/>
+			<event req="LIMIT_CHECK_WEAPON" lvl="3">
+				<loadEvent>FM_HULL_LIMITER_SHIELD</loadEvent>
+				<queueEvent>LOAD_FASTWEAPON</queueEvent>
+			</event>
 		</loadEventList>
 	</event>
 	<event name="FM_HULL_LIMITER_SHIELD">
 		<loadEventList default="FM_HULL_LIMITER_REACTOR">
-			<event load="LOAD_FASTSHIELD" req="LIMIT_CHECK_SHIELD" lvl="4"/>
+			<event req="LIMIT_CHECK_SHIELD" lvl="4">
+				<loadEvent>FM_HULL_LIMITER_REACTOR</loadEvent>
+				<queueEvent>LOAD_FASTSHIELD</queueEvent>
+			</event>
 		</loadEventList>
 	</event>
 	<event name="FM_HULL_LIMITER_REACTOR">
 		<loadEventList default="FM_JUMP_END">
-			<event load="LOAD_MAGNETIC" req="LIMIT_CHECK_REACTOR" lvl="3"/>
+			<event req="LIMIT_CHECK_REACTOR" lvl="3">
+				<loadEvent>FM_JUMP_END</loadEvent>
+				<queueEvent>LOAD_MAGNETIC</queueEvent>
+			</event>
 		</loadEventList>
 	</event>
 	<event name="FM_JUMP_END">
-		<triggeredEvent name="FM_JUMP_STUFF_LOAD" event="FM_HULL_LIMITER_LOAD">
-			<jumps amount="1" type="1"/>
+		<triggeredEvent name="FM_ONJUMP_STUFF_LOAD" event="FM_HULL_LIMITER_LOAD">
+			<jumps amount="1" type="0"/>
 		</triggeredEvent>
 	</event>
 	<event name="LOAD_FASTWEAPON">
 		<status type="limit" target="player" system="weapons" amount="3" />
-		<loadEvent>FM_HULL_LIMITER_SHIELD</loadEvent>
 	</event>
 	<event name="LOAD_FASTSHIELD">
 		<status type="limit" target="player" system="shields" amount="4" />
-		<loadEvent>FM_HULL_LIMITER_REACTOR</loadEvent>
 	</event>
 	<event name="LOAD_MAGNETIC">
 		<status type="loss" target="player" system="reactor" amount="3" />
@@ -179,6 +194,45 @@
 		<status type="limit" target="player" system="shields" amount="3"/>
 	</event>
 
+	<event name="FM_ONDAMAGE_STUFF_LOAD">
+	  <loadEvent>FM_ONDAMAGE_MURALS</loadEvent>
+	</event>
+	<event name="FM_ONDDAMAGE_MURALS">
+		<loadEventList default="FM_ONDAMAGE_OVERCHARMED">
+			<event req="FM_MODULAR_HULL_MURAL" lvl="1">
+				<loadEvent>FM_ONDAMAGE_OVERCHARMED</loadEvent>
+				<queueEvent>MURALS_DAMAGE</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="FM_ONDAMAGE_OVERCHARMED">
+		<loadEventList default="FMON_DAMAGE_HULL_ARM">
+			<event req="fm_hull_upgrade_point" lvl="16">
+				<loadEvent>FM_ONDAMAGE_OVERCHARMED</loadEvent>
+				<queueEvent>OVERCHARMED_RELOAD</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="FM_ONDAMAGE_HULL_ARM">
+		<loadEventList default="FM_ONDAMAGE_END">
+			<event load="HULL_ARM_SCRAP" req="TWISTED_HULL_ARM" lvl="1">
+				<loadEvent>FM_ONDAMAGE_END</loadEvent>
+				<queueEvent>HULL_ARM_SCRA</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="FM_ONDAMAGE_END">
+		<triggeredEvent name="FM_ONDAMAGE_STUFF_LOAD" event="FM_ONDAMAGE_STUFF_LOAD">
+			<playerDamage amount="1" countRepairs="false"/>
+		</triggeredEvent>
+	</event>
+
+	<event namee="HULL_ARM_SCRAP">
+		<item_modify>
+			<item type="scrap" min="100" max="200"/>
+		</item_modify>
+	</event>
+
 	<event name="MURALS_DAMAGE">
 		<loadEventList first="false" generate="false" seeded="false">
 			<event name="MURALS_DAMAGE_REAL_SYSTEM"/>
@@ -192,26 +246,14 @@
 
 	<event name="MURALS_DAMAGE_REAL">
 		<damage amount="1" />
-		<triggeredEvent name="MURALS_TRIGGER" event="MURALS_DAMAGE">
-			<playerDamage amount="1" countRepairs="false"/>
-		</triggeredEvent>
 	</event>
 	<event name="MURALS_DAMAGE_REAL_SYSTEM">
 		<damage amount="1" system="random" />
-		<triggeredEvent name="MURALS_TRIGGER" event="MURALS_DAMAGE">
-			<playerDamage amount="1" countRepairs="false"/>
-		</triggeredEvent>
 	</event>
 	<event name="MURALS_DAMAGE_REAL_NOTHING">
-		<triggeredEvent name="MURALS_TRIGGER" event="MURALS_DAMAGE">
-			<playerDamage amount="1" countRepairs="false"/>
-		</triggeredEvent>
 	</event>
 	<!--overcharmd stuff, if more than 15 notches used-->
 	<event name="OVERCHARMED">
-		<triggeredEvent name="OVERCHARMED_TRIGGER" event="OVERCHARMED_RELOAD">
-			<playerDamage amount="1" countRepairs="false"/>
-		</triggeredEvent>
 		<variable name="overcharmed_active" op="set" value="1"/>
 		<loadEvent>OVERCHARMED_MESSAGE</loadEvent>
 		<queueEvent>FORGEMASTER_PHONE_EVENT_LOAD</queueEvent>
@@ -242,21 +284,25 @@
 		<loadEvent>OVERCHARMED_RELOAD</loadEvent>
 	</event>
 	<event name="OVERCHARMED_FINISH">
-		<triggeredEvent name="OVERCHARMED_TRIGGER" event="OVERCHARMED_RELOAD">
-			<playerDamage amount="1" countRepairs="false"/>
-		</triggeredEvent>
 	</event>
 
 	<!--debugging for modular armor-->
-	<event name="MURALS_STOP">
-		<text>stopped murals effect</text>
-		<clearTriggeredEvent name="MURALS_TRIGGER"/>
+	<event name="RESET_ONDAMAGE">
+		<text>ONDAMAGE has been reset</text>
+		<clearTriggeredEvent name="FM_ONDAMAGE_STUFF"/>
+		<triggeredEvent name="FM_ONDAMAGE_STUFF" event="FM_ONDAMAGE_STUFF_LOAD">
+			<playerDamage amount="1" countRepairs="false"/>
+		</triggeredEvent>
+	</event>
+	<event name="RESET_ONJUMP">
+		<text>ONJUMP has been reset</text>
+		<clearTriggeredEvent name="FM_ONJUMP_STUFF"/>
+		<triggeredEvent name="FM_ONJUMP_STUFF" event="FM_HULL_LIMITER_LOAD">
+			<jumps amount="1" type="1"/>
+		</triggeredEvent>
 	</event>
 	<event name="MURALS_START">
 		<text>activated murals effect</text>
-		<triggeredEvent name="MURALS_TRIGGER" event="MURALS_DAMAGE">
-			<playerDamage amount="1" countRepairs="false"/>
-		</triggeredEvent>
 	</event>
 	<event name="OVERCHARMED_STOP">
 		<text>stopped overcharmed effect</text>
