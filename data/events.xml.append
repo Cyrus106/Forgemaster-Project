@@ -16,9 +16,9 @@
 
 <mod:findName type = "event" name = "DISTRESS_CRASH_LANDING">
 	<mod-append:choice hidden="true" req="FM_BEAM_MINING_2" >
-		<text>(Ishimura Beam) Forget the signal, crack open the planet for resources, you're sure its' uninhabited!</text>
+		<text>(Ishimura Beam) Forget the signal, crack open the planet for resources, you're sure it's uninhabited!</text>
 		<event>
-			<text>Diverting the majority of your ship's power to the Ishimura beam, you begin cracking open the planet, revealing parts of it's surface and numerous valuable resources. After a long and tedious process, you procure a massive amount of scrap. The magma you revealed from cracking open the planet's surface flows onto nearby structures that look a bit like buildings. You grab the massive quantity of scrap and leave as quickly as able. Deep down, you know what you've done...</text>
+			<text>Diverting the majority of your ship's power to the Ishimura beam, you begin cracking open the planet, revealing parts of its surface and numerous valuable resources. After a long and tedious process, you procure a massive amount of scrap. The magma you revealed from cracking open the planet's surface flows onto nearby structures that look a bit like buildings. You grab the massive quantity of scrap and leave as quickly as able. Deep down, you know what you've done...</text>
 			<modifyPursuit amount="2"/>
 			<item_modify>
 				<item type="scrap" min="95" max="170"/>
@@ -39,7 +39,7 @@
 		<mod-append:choice hidden="true" req="fm_plated" >
 			<text>(Plated) Have your Plated repair their ship.</text>
 			<event>
-				<text>The Plated repairs their ship surprisingly fast. The Federation ship is very impressed with their work, and send you a gift as thanks.</text>
+				<text>The Plated repairs their ship surprisingly fast. The Federation ship is very impressed with their work, and sends you a gift as thanks.</text>
 
 
 				<item_modify>
@@ -51,7 +51,7 @@
 		<mod-append:choice hidden="true" req="fm_forgemasterperson" >
 			<text>(Alastair) Have Alastair work his magic on the repair process.</text>
 			<event>
-				<text>Alastair repairs the ship with relative ease, and even improves the efficiency of the ship's on-board systems for them as a gift. The Federation ship is extremely impressed with his work, and send you a very hefty gift as thanks.</text>
+				<text>Alastair repairs the ship with relative ease, and even improves the efficiency of the ship's on-board systems for them as a gift. The Federation ship is extremely impressed with his work, and sends you a very hefty gift as thanks.</text>
 				<weapon name="GIFTLIST_FEDERATION"/>
 
 				<item_modify>
@@ -75,7 +75,7 @@
 		<mod-append:choice hidden="true" req="fm_plated" >
 			<text>(Plated) Have your Plated repair their ship.</text>
 			<event>
-				<text>The Plated repairs their ship surprisingly fast. The Federation ship is very impressed with their work, and send you a gift as thanks.</text>
+				<text>The Plated repairs their ship surprisingly fast. The Federation ship is very impressed with their work, and sends you a gift as thanks.</text>
 
 
 				<item_modify>
@@ -87,7 +87,7 @@
 		<mod-append:choice hidden="true" req="fm_forgemasterperson" >
 			<text>(Alastair) Have Alastair work his magic on the repair process.</text>
 			<event>
-				<text>Alastair repairs the ship with relative ease, and even improves the efficiency of the ship's on-board systems for them as a gift. The Federation ship is extremely impressed with his work, and send you a very hefty gift as thanks.</text>
+				<text>Alastair repairs the ship with relative ease, and even improves the efficiency of the ship's on-board systems for them as a gift. The Federation ship is extremely impressed with his work, and sends you a very hefty gift as thanks.</text>
 				<weapon name="GIFTLIST_FEDERATION"/>
 
 				<item_modify>

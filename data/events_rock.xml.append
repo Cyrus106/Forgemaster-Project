@@ -5,18 +5,18 @@
 <mod-append:choice req="FM_BEAM_MINING_2" lvl="1" max_group="600" hidden="true" blue="true">
      		<text>(Ishimura) Just look at my girth! And the extreme length!</text>
 		<event>
-			<text>The rock is actually shocked. "I feel bad for the poor lady that has to..."contend" with that member of your ship's arsenal. She won't be wal-...flying for weeks. You deserve a reward for having such a large weapon hung on your hull."</text>
+			<text>The Rock is actually shocked. "I feel bad for the poor lady that has to..."contend" with that member of your ship's arsenal. She won't be wal-...flying for weeks. You deserve a reward for having such a large weapon hung on your hull."</text>
 			<weapon name="LIST_WEAPONS_ROCK_BIGGUNS"/>
 			<item_modify>
 			<item type="scrap" min="45" max="78"/>
 				<item type="missiles" min="5" max="7"/>
-			</item_modify>	
+			</item_modify>
 		</event>
-	
+
 	</mod-append:choice>
 <mod:findWithChildLike type="choice" child-type="text">
 	<mod:selector>Ignore them.</mod:selector>
         <mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>
     </mod:findWithChildLike>
 
-</mod:findName>	
+</mod:findName>

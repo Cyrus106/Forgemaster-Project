@@ -37,20 +37,20 @@
 			<lastStand>false</lastStand>
 		</quest>
 		<img back="FM_CALM" planet="PLANET_INVISIBLE"/>
-		<text>You caught up with the slug. In his panic, it appears you have pushed his engines too far, leaving him cornered and unable to escape. There is one lone Moon floating in empty space nearby, with a planet behind you.</text>
+		<text>You caught up with the Slug. In his panic, it appears you have pushed his engines too far, leaving him cornered and unable to escape. There is one lone moon floating in empty space nearby, with a planet behind you.</text>
 		<choice hidden="true" req="FM_BEAM_MINING_2">
 			<text>(Ishimura) Hail them, with your giant mining beam at the ready. How dare they waste your time.</text>
 			<event>
-				<text>You lecture the slug on how truly obnoxious it is to be given pop-quizzes on the number of moons in a stupid Nebula in the middle of nowhere, especially by some rude Slug. "I'm ssssorry I thoug-" the Slug stammers, but you don't let him finish.</text>
+				<text>You lecture the Slug on how truly obnoxious it is to be given pop-quizzes on the number of moons in a stupid nebula in the middle of nowhere, especially by some rude Slug. "I'm ssssorry I thoug-" the Slug stammers, but you don't let him finish.</text>
 				<choice hidden="true">
-					<text>Ask them how many Moons are at this beacon.</text>
+					<text>Ask them how many moons are at this beacon.</text>
 					<event>
-						<text>"Uh....One?" the slug replies nervously.</text>
+						<text>"Uh....One?" the Slug replies nervously.</text>
 						<choice hidden="true" blue="true" req="pilot" lvl="1" >
 							<text>(Ishimura) Zero.</text>
 							<event>
 								<changeBackground>FM_MOON_BOOM</changeBackground>
-								<text>You obliterate the small moon behind the slug, sending chunks of it flying everywhere. The Slug ship ends up being crushed as collateral when chunks of the moon ram into it, as it is unable to avoid them. Might as well collect some scrap from the damage you have caused.</text>
+								<text>You obliterate the small moon behind the Slug, sending chunks of it flying everywhere. The Slug ship ends up being crushed as collateral when chunks of the moon ram into it, as it is unable to avoid them. Might as well collect some scrap from the damage you have caused.</text>
 								<item_modify>
 									<item type="scrap" min="40" max="73"/>
 									<item type="fuel" min="3" max="5"/>
@@ -69,13 +69,13 @@
 		<choice hidden="true" >
 			<text>Hail them, explaining you just want to talk.</text>
 			<event>
-				<text>You lecture the slug on how truly obnoxious it is to be given pop-quizzes on the number of moons in a stupid Nebula in the middle of nowhere, especially by some rude Slug. "I'm sorry I thoug-" the Slug stammers, but you don't let him finish.</text>
+				<text>You lecture the Slug on how truly obnoxious it is to be given pop-quizzes on the number of moons in a stupid nebula in the middle of nowhere, especially by some rude Slug. "I'm sorry I thoug-" the Slug stammers, but you don't let him finish.</text>
 				<choice hidden="true">
-					<text>Ask them what possessed them to be so truly obnoxious</text>
+					<text>Ask them what possessed them to be so truly obnoxious.</text>
 					<event>
 						<text>"Uh....I thought it was funny?" the Slug replies nervously.</text>
 						<choice hidden="true" >
-							<text>It wasn't, don't let me catch you doing it again</text>
+							<text>It wasn't, don't let me catch you doing it again.</text>
 							<event>
 								<text>The slug agrees to never do this again, and sends you a small gift as thanks.</text>
 								<item_modify>
