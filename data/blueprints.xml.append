@@ -4336,29 +4336,7 @@
 				<crewTarget>ALL</crewTarget>
 				<duration>1</duration>
 				<priority>999999</priority>
-				<whiteList>
-					<human/>
-					<human_rebel/>
-					<human_rebel_medic/>
-					<human_engineer/>
-					<human_medic/>
-					<human_mfk/>
-					<human_soldier/>
-					<human_legion_pyro/>
-					<human_legion/>
-					<unique_tully/>
-					<unique_haynes/>
-					<unique_vance/>
-					<unique_jerry/>
-					<unique_cyra/>
-					<unique_jerry_gun/>
-					<unique_jerry_pony/>
-					<unique_jerry_pony_crystal/>
-					<unique_leah/>
-					<unique_leah_mfk/>
-					<human_angel/>
-					<fm_human_rip/>
-				</whiteList>
+				<whiteList load="LIST_CREW_HUMAN"/>
 
 			</statBoost>
 		</statBoosts>
@@ -9844,29 +9822,7 @@
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
-				<whiteList>
-					<human/>
-					<human_rebel/>
-					<human_rebel_medic/>
-					<human_engineer/>
-					<human_medic/>
-					<human_mfk/>
-					<human_soldier/>
-					<human_legion_pyro/>
-					<human_legion/>
-					<unique_tully/>
-					<unique_haynes/>
-					<unique_vance/>
-					<unique_jerry/>
-					<unique_cyra/>
-					<unique_jerry_gun/>
-					<unique_jerry_pony/>
-					<unique_jerry_pony_crystal/>
-					<unique_leah/>
-					<unique_leah_mfk/>
-					<human_angel/>
-					<fm_human_rip/>
-				</whiteList>
+				<whiteList load="LIST_CREW_HUMAN"/>
 
 			</statBoost>
 		</statBoosts>
@@ -13344,7 +13300,7 @@
 
 	<augBlueprint name="TWISTED_HULL_ARM">
 		<title>Self Arm</title>
-		<desc>a versitile capable of grabbing drones and magintizing debris - additionaly, it can grab ripped-off pieces of your hull to deconstruct them for scrap.</desc>
+		<desc>a versatile capable of grabbing drones and magnetizing debris - additionaly, it can grab ripped-off pieces of your hull to deconstruct them for scrap.</desc>
 		<cost>100</cost>
 		<rarity>0</rarity>
 		<stackable>true</stackable>

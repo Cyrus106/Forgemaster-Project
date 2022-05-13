@@ -208,21 +208,21 @@
 	<event name="FM_ONDAMAGE_OVERCHARMED">
 		<loadEventList default="FM_ONDAMAGE_HULL_ARM">
 			<event req="fm_hull_upgrade_point" lvl="16">
-				<loadEvent>FM_ONDAMAGE_OVERCHARMED</loadEvent>
+				<loadEvent>FM_ONDAMAGE_HULL_ARM</loadEvent>
 				<queueEvent>OVERCHARMED_RELOAD</queueEvent>
 			</event>
 		</loadEventList>
 	</event>
 	<event name="FM_ONDAMAGE_HULL_ARM">
 		<loadEventList default="FM_ONDAMAGE_END">
-			<event load="HULL_ARM_SCRAP" req="TWISTED_HULL_ARM" lvl="1">
+			<event req="TWISTED_HULL_ARM" lvl="1">
 				<loadEvent>FM_ONDAMAGE_END</loadEvent>
 				<queueEvent>HULL_ARM_SCRAP</queueEvent>
 			</event>
 		</loadEventList>
 	</event>
 	<event name="FM_ONDAMAGE_END">
-		<triggeredEvent name="FM_ONDAMAGE_STUFF_LOAD" event="FM_ONDAMAGE_STUFF_LOAD">
+		<triggeredEvent name="FM_ONDAMAGE_STUFF" event="FM_ONDAMAGE_STUFF_LOAD">
 			<playerDamage amount="1" countRepairs="false"/>
 		</triggeredEvent>
 	</event>
