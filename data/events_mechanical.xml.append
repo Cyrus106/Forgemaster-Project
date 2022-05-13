@@ -200,8 +200,8 @@
 	<event name="FM_ONDAMAGE_MURALS">
 		<loadEventList default="FM_ONDAMAGE_OVERCHARMED">
 			<event req="FM_MODULAR_HULL_MURAL" lvl="1">
-				<loadEvent>FM_ONDAMAGE_OVERCHARMED</loadEvent>
-				<queueEvent>MURALS_DAMAGE</queueEvent>
+				<loadEvent>MURALS_DAMAGE</loadEvent>
+				<queueEvent>FM_ONDAMAGE_OVERCHARMED</queueEvent>
 			</event>
 		</loadEventList>
 	</event>
@@ -228,8 +228,10 @@
 	</event>
 
 	<event name="HULL_ARM_SCRAP">
+		<disableScrapScore/>                                                                    Any scrap gained from this event is not added to the player's score.
+		<disableScrapAugments/>
 		<item_modify>
-			<item type="scrap" min="100" max="200"/>
+			<item type="scrap" min="10" max="20"/>
 		</item_modify>
 	</event>
 
@@ -303,10 +305,6 @@
 	</event>
 	<event name="MURALS_START">
 		<text>activated murals effect</text>
-	</event>
-	<event name="OVERCHARMED_STOP">
-		<text>stopped overcharmed effect</text>
-		<clearTriggeredEvent name="OVERCHARMED_TRIGGER"/>
 	</event>
 
 </FTL>
