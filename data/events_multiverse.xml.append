@@ -6273,7 +6273,11 @@
 		<choice req="FM_MODULAR_HULL" lvl="0" max_lvl="0" max_group="2" blue="false" hidden="true"><!--first install of hull-->
 			<text>Install modular armor</text>
 			<event>
-				<loadEvent>FM_MODULAR_HULL_INSTALL</loadEvent>
+				<loadEventList default="FM_MODULAR_HULL_INSTALL">
+					<event req="BLUELIST_OBSIDIAN">
+						<loadEvent>FM_MODULAR_HULL_INSTALL_LITE</loadEvent>
+					</event>
+				</loadEventList>
 			</event>
 		</choice>
 		<!--Point display-->
@@ -6739,6 +6743,31 @@
 			</event>
 		</choice>
 	</event>
+	<event name="FM_MODULAR_HULL_INSTALL_LITE">
+		<text>Do you wish to install your very own Modular Hull (tm)? [allows installation of further upgrades.]</text>
+		<choice req="pilot" max_group="1" blue="false">
+			<text>Install the Modular Hull (lite).</text>
+			<event>
+				<text>Alastair's Modular Hull (tm) has been installed!</text>
+				<augment name="FM_MODULAR_HULL_LITE"/>
+				<item_modify>
+					<item type="scrap" min="-20" max="-20"/>
+				</item_modify>
+				<choice blue="false">
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FORGEMASTER_PHONE_EVENT_LOAD</loadEvent>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice req="pilot" max_group="2" blue="false">
+			<text>Nevermind.</text>
+			<event>
+				<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+			</event>
+		</choice>
+	</event>
 
 	<!--ship-wide module installation-->
 	<event name="FM_MODULAR_HULL_MODULES_SHIP">
@@ -6860,7 +6889,7 @@
 
 	<event name="FM_MODULAR_HULL_MODULE_FORTIFIED">
 		<text>Install Fortified Plating? [+5% hull resist chance, 5 can be installed, uses 1 upgrade notches]</text>
-		<choice req="pilot" max_group="1" blue="false">
+		<choice req="FM_MODULAR_HULL_LITE" lvl="0" max_group="1" blue="false">
 			<text>Install the Fortified Plating.</text>
 			<event>
 				<text>Fortified Plating has been installed!</text>
@@ -6876,6 +6905,10 @@
 					</event>
 				</choice>
 			</event>
+		</choice>
+		<choice req="FM_MODULAR_HULL_LITE" max_group="1" hidden="true" blue="false">
+			<text>Your hull is incompatible with the Fortified Plating.</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="pilot" max_group="2" blue="false">
 			<text>Nevermind.</text>

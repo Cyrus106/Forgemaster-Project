@@ -349,6 +349,7 @@
 		</mod-append:customShip>
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED3_2"><!--Twisted Rock-->
 			<hiddenAug>SHIP_ROCK</hiddenAug>
+			<hiddenAug>SHIP_TWISTED_ROCK</hiddenAug>
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<crewLimit>9</crewLimit>
 			<customReactor maxLevel="55">
@@ -12057,6 +12058,31 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 
 </FTL>
 
+<FTL>
+	<mod:findLike type="events">
+		<mod:findName type="req" name="EXTERNAL_MAGNET_ARM">
+			<mod:findLike type="req" start="1">
+				<mod-append:name>TWISTED_HULL_ARM</mod-append:name>
+				<mod-append:name>IZD_TWISTED_HULL_ARM</mod-append:name>
+				<mod-append:name>FM_MODULAR_HULL_MAGNETIC</mod-append:name>
+			</mod:findLike>
+		</mod:findName>
+		<mod:findName type="req" name="EXTERNAL_DRONE_RECOVERY">
+			<mod:findLike type="req" start="1">
+				<mod-append:name>TWISTED_HULL_ARM</mod-append:name>
+				<mod-append:name>IZD_TWISTED_HULL_ARM</mod-append:name>
+			</mod:findLike>
+		</mod:findName>
+		<mod:findName type="req" name="EXTERNAL_SCRAP_COLLECTOR">
+			<mod:findLike type="req" start="1">
+				<mod-append:name>TWISTED_HULL_ARM</mod-append:name>
+				<mod-append:name>IZD_TWISTED_HULL_ARM</mod-append:name>
+				<mod-append:name>FM_MODULAR_HULL_MAGNETIC</mod-append:name>
+				<mod-append:name>FM_MODULAR_HULL_SCRAP</mod-append:name>
+			</mod:findLike>
+		</mod:findName>
+	</mod:findLike>
+</FTL>
 
 <!-- LAB INSTALLS AND INTERNAL INSTALLS -->
 <FTL>
@@ -12129,6 +12155,10 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<!-- Modular Hull Basic Upgrades -->
 		<aug name="FM_MODULAR_HULL">
 			<function name="ROCK_ARMOR" value="0.05" useForReqs="false"/>
+			<locked/>
+		</aug>
+		<aug name="FM_MODULAR_HULL_LITE">
+			<function name="FM_MODULAR_HULL" value="0.00" useForReqs="true" warning="false"/>
 			<locked/>
 		</aug>
 

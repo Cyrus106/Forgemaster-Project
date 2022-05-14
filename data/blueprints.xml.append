@@ -13300,10 +13300,18 @@
 
 	<augBlueprint name="TWISTED_HULL_ARM">
 		<title>Self Arm</title>
-		<desc>a versatile capable of grabbing drones and magnetizing debris - additionaly, it can grab ripped-off pieces of your hull to deconstruct them for scrap.</desc>
+		<desc>A versatile capable of grabbing drones and magnetizing debris. Additionally, it can grab ripped-off pieces of your hull to deconstruct them for scrap.</desc>
 		<cost>100</cost>
 		<rarity>0</rarity>
 		<stackable>true</stackable>
+	</augBlueprint>
+	<augBlueprint name="SHIP_TWISTED_ROCK">
+		<title>Twisted Rock Cruiser</title>
+		<desc>YOU SHOULD NEVER SEE THIS</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+		<bp>0</bp>
 	</augBlueprint>
 
 	<mod:findName type="augBlueprint" name="EX_MEDBAY_SPEED">   <!--PRICE TWEAK. -->
@@ -13323,6 +13331,13 @@
     <title>Alastair's Modular Hull (tm)</title>
     <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself. Provides 5% resistance to hull damage even with no modules Installed.</desc>
     <cost>40</cost>
+    <rarity>0</rarity>
+    <stackable>true</stackable>
+  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_LITE">
+    <title>Alastair's Modular Hull (tm)</title>
+    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself. No exta resistance because there was no space to fit the plating on your ship.</desc>
+    <cost>20</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
