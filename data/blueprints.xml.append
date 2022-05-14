@@ -4336,7 +4336,13 @@
 				<crewTarget>ALL</crewTarget>
 				<duration>1</duration>
 				<priority>999999</priority>
-				<whiteList load="LIST_CREW_HUMAN"/>
+				<whiteList load="LIST_CREW_HUMAN">
+					<unique_leah/>
+					<unique_leah_mfk/>
+					<unique_vance/>
+					<human_rebel/>
+					<human_rebel_medic/>
+				</whiteList>
 
 			</statBoost>
 		</statBoosts>
@@ -9822,7 +9828,13 @@
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
-				<whiteList load="LIST_CREW_HUMAN"/>
+				<whiteList load="LIST_CREW_HUMAN">
+					<unique_leah/>
+					<unique_leah_mfk/>
+					<unique_vance/>
+					<human_rebel/>
+					<human_rebel_medic/>
+				</whiteList>
 
 			</statBoost>
 		</statBoosts>

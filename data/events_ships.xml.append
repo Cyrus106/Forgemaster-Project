@@ -2828,7 +2828,7 @@
 								<status type="limit" target="player" system="weapons" amount="0"/>
 								<status type="limit" target="player" system="drones" amount="0"/>
 								<status type="limit" target="player" system="artillery" amount="0"/>
-								<triggeredEvent event="TWISTED_KESTREL_RELIMIT" thisFight="true" clearOnJump="true">
+								<triggeredEvent event="RELIMIT_WEAPONS_0" thisFight="true" clearOnJump="true">
 									<time amount="0.1"/>
 								</triggeredEvent>
 								<ship hostile="true"/>

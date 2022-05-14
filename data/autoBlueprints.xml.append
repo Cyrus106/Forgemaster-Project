@@ -1625,6 +1625,7 @@
 	<mod-append:name>FM_PHASER_SUFFOCATION</mod-append:name>
 	<mod-append:name>FM_LASER_ION_MEGA</mod-append:name>
 	<mod-append:name>LIST_FM_GATLING_ANCIENT</mod-append:name>
+	<mod-append:name>FM_ION_MISSILES</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "BLUELIST_ENERGY">
@@ -1700,6 +1701,8 @@
 	<mod-append:name>TAINTED_BEAM_3_ARTY</mod-append:name>
 	<mod-append:name>ZOLTAN_DELETER_ARTY_CHAIN</mod-append:name>
 	<mod-append:name>BEAM_ADAPT_3_ARTY_CHAIN</mod-append:name>
+	<mod-append:name>ZOLTAN_DELETER_PLAYER_ARTY_CHAIN</mod-append:name>
+	<mod-append:name>BEAM_ADAPT_3_PLAYER_ARTY_CHAIN</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "BLUELIST_BEAMS_DAMAGE">
@@ -1710,6 +1713,7 @@
 	<mod-append:name>FM_AN_BEAM</mod-append:name>
 	<mod-append:name>TAINTED_BEAM_3_ARTY</mod-append:name>
 	<mod-append:name>BEAM_ADAPT_3_ARTY_CHAIN</mod-append:name>
+	<mod-append:name>BEAM_ADAPT_3_PLAYER_ARTY_CHAIN</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "BLUELIST_ANTIBIO">
@@ -1718,6 +1722,7 @@
 	<mod-append:name>FM_BEAM_BASILISK</mod-append:name>
 	<mod-append:name>FM_BEAM_GUILLOTINE_CHAIN_PLAYER_INVIS</mod-append:name>
 	<mod-append:name>ZOLTAN_DELETER_ARTY_CHAIN</mod-append:name>
+	<mod-append:name>ZOLTAN_DELETER_PLAYER_ARTY_CHAIN</mod-append:name>
 	<mod-append:name>FM_SHOTGUN_ANOMALY</mod-append:name>
 	<mod-append:name>FM_SHOTGUN_ANOMALY_PLAYER</mod-append:name>
 	<mod-append:name>FM_SHOTGUN_ANOMALY_MEGA</mod-append:name>
@@ -1745,6 +1750,7 @@
 	<mod-append:name>FM_BEAM_BASILISK</mod-append:name>
 	<mod-append:name>FM_BEAM_GUILLOTINE_CHAIN_PLAYER_INVIS</mod-append:name>
 	<mod-append:name>ZOLTAN_DELETER_ARTY_CHAIN</mod-append:name>
+	<mod-append:name>ZOLTAN_DELETER_PLAYER_ARTY_CHAIN</mod-append:name>
 	<mod-append:name>FM_SHOTGUN_ANOMALY</mod-append:name>
 	<mod-append:name>FM_SHOTGUN_ANOMALY_PLAYER</mod-append:name>
 	<mod-append:name>FM_SHOTGUN_ANOMALY_MEGA</mod-append:name>
@@ -1794,11 +1800,13 @@
     <mod-append:name>FM_AN_DYNAMO</mod-append:name>
 		<mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
 		<mod-append:name>FM_BOMB_CRYSTAL_BIO</mod-append:name>
+		<mod-append:name>BOMB_BREACH_1_PLAYER_ARTY_CHAIN</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "BLUELIST_BOMBS_CREWDAMAGE">
 		<mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
 		<mod-append:name>FM_BOMB_CRYSTAL_BIO</mod-append:name>
+		<mod-append:name>BOMB_BREACH_1_PLAYER_ARTY_CHAIN</mod-append:name>
 </mod:findName>
 
 

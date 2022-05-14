@@ -3916,7 +3916,10 @@
 					<affectsSelf>true</affectsSelf>
 					<maxStacks>1</maxStacks>
 					<duration>10</duration>
-					<blackList>fm_ion_anomaly_crew_enemy</blackList>
+					<blackList>
+						<fm_ion_anomaly_crew/>
+						<fm_ion_anomaly_crew_enemy/>
+					</blackList>
 				</statBoost>
 				<statBoost name="repairSpeed">
 					<boostType>MULT</boostType>
@@ -3926,7 +3929,10 @@
 					<affectsSelf>true</affectsSelf>
 					<maxStacks>1</maxStacks>
 					<duration>10</duration>
-					<blackList>fm_ion_anomaly_crew_enemy</blackList>
+					<blackList>
+						<fm_ion_anomaly_crew/>
+						<fm_ion_anomaly_crew_enemy/>
+					</blackList>
 				</statBoost>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
@@ -3936,6 +3942,7 @@
 					<priority>999999</priority>
 					<blackList>
 						<fm_ion_anomaly_crew/>
+						<fm_ion_anomaly_crew_enemy/>
 					</blackList>
 				</statBoost>
 				<statBoost name="moveSpeedMultiplier">
@@ -3946,6 +3953,7 @@
 					<priority>999999</priority>
 					<blackList>
 						<fm_ion_anomaly_crew/>
+						<fm_ion_anomaly_crew_enemy/>
 					</blackList>
 				</statBoost>
 				<statBoost name="canMan">
@@ -4032,7 +4040,10 @@
 					<affectsSelf>true</affectsSelf>
 					<maxStacks>1</maxStacks>
 					<duration>10</duration>
-					<blackList>fm_ion_anomaly_crew_enemy</blackList>
+					<blackList>
+						<fm_ion_anomaly_crew/>
+						<fm_ion_anomaly_crew_enemy/>
+					</blackList>
 				</statBoost>
 				<statBoost name="repairSpeed">
 					<boostType>MULT</boostType>
@@ -4042,7 +4053,10 @@
 					<affectsSelf>true</affectsSelf>
 					<maxStacks>1</maxStacks>
 					<duration>10</duration>
-					<blackList>fm_ion_anomaly_crew_enemy</blackList>
+					<blackList>
+						<fm_ion_anomaly_crew/>
+						<fm_ion_anomaly_crew_enemy/>
+					</blackList>
 				</statBoost>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
@@ -4052,6 +4066,7 @@
 					<priority>999999</priority>
 					<blackList>
 						<fm_ion_anomaly_crew/>
+						<fm_ion_anomaly_crew_enemy/>
 					</blackList>
 				</statBoost>
 				<statBoost name="moveSpeedMultiplier">
@@ -4062,6 +4077,7 @@
 					<priority>999999</priority>
 					<blackList>
 						<fm_ion_anomaly_crew/>
+						<fm_ion_anomaly_crew_enemy/>
 					</blackList>
 				</statBoost>
 				<statBoost name="canMan">
@@ -6304,6 +6320,7 @@
 					<priority>999999</priority>
 					<blackList>
 						<husk_slug/>
+						<husk_slug_player/>
 					</blackList>
 				</statBoost>
 
@@ -6331,6 +6348,7 @@
 					<priority>999999</priority>
 					<blackList>
 						<husk_slug/>
+						<husk_slug_player/>
 					</blackList>
 				</statBoost>
 
@@ -10605,14 +10623,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<priority>999</priority>
-					<whiteList>
-						<shell/>
-						<shell_scientist/>
-						<shell_mechanic/>
-						<shell_guardian/>
-						<shell_radiant/>
-						<unique_alkali/>
-					</whiteList>
+					<whiteList load="LIST_CREW_SHELL"/>
 
 				</statBoost>
 
@@ -10622,14 +10633,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<priority>999</priority>
-					<whiteList>
-						<shell/>
-						<shell_scientist/>
-						<shell_mechanic/>
-						<shell_guardian/>
-						<shell_radiant/>
-						<unique_alkali/>
-					</whiteList>
+					<whiteList load="LIST_CREW_SHELL"/>
 
 				</statBoost>
 
@@ -10639,14 +10643,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<priority>999</priority>
-					<whiteList>
-						<shell/>
-						<shell_scientist/>
-						<shell_mechanic/>
-						<shell_guardian/>
-						<shell_radiant/>
-						<unique_alkali/>
-					</whiteList>
+					<whiteList load="LIST_CREW_SHELL"/>
 
 				</statBoost>
 			</statBoosts>
@@ -10872,14 +10869,6 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<crewTarget>ALLIES</crewTarget>
 					<affectsSelf>false</affectsSelf>
 					<priority>0</priority>
-					<whiteList>
-						<wirekin/>
-						<wirekinmant/>
-						<wirekincrys/>
-						<purifier/>
-						<purifiermant/>
-						<purifiercrys/>
-					</whiteList>
 				</statBoost>
 				<statBoost name="healSpeed">
 					<boostType>MULT</boostType>
@@ -11495,32 +11484,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 						<affectsSelf>false</affectsSelf>
 						<priority>0</priority>
 						<boostAnim>engineer_buff</boostAnim>
-						<whiteList>
-							<a55 />
-							<gana />
-							<battle />
-							<drone_battle/>
-							<drone_battle2/>
-							<yinyang_ship/>
-							<yinyang_board/>
-							<loot_separatist_1/>
-							<repairboarder/>
-							<repair/>
-							<divrepair/>
-							<butler/>
-							<drone_recon_boarder/>
-							<drone_recon_defense/>
-							<doctor/>
-							<surgeon/>
-							<manning/>
-							<manningenemy/>
-							<drone_holodrone/>
-							<mender/>
-							<mender/>
-							<atom/>
-							<atomr/>
-							<roomba/>
-						</whiteList>
+						<whiteList load="LIST_FM_FAKEDRONES"/>
 					</statBoost>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
@@ -11539,32 +11503,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 						<droneTarget>CREW</droneTarget>
 						<affectsSelf>false</affectsSelf>
 						<priority>0</priority>
-						<whiteList>
-							<a55 />
-							<gana />
-							<battle />
-							<drone_battle/>
-							<drone_battle2/>
-							<yinyang_ship/>
-							<yinyang_board/>
-							<loot_separatist_1/>
-							<repairboarder/>
-							<repair/>
-							<divrepair/>
-							<butler/>
-							<drone_recon_boarder/>
-							<drone_recon_defense/>
-							<doctor/>
-							<surgeon/>
-							<manning/>
-							<manningenemy/>
-							<drone_holodrone/>
-							<mender/>
-							<mender/>
-							<atom/>
-							<atomr/>
-							<roomba/>
-						</whiteList>
+						<whiteList load="LIST_FM_FAKEDRONES"/>
 					</statBoost>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
@@ -11583,32 +11522,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 						<droneTarget>CREW</droneTarget>
 						<affectsSelf>false</affectsSelf>
 						<priority>0</priority>
-						<whiteList>
-							<a55 />
-							<gana />
-							<battle />
-							<drone_battle/>
-							<drone_battle2/>
-							<yinyang_ship/>
-							<yinyang_board/>
-							<loot_separatist_1/>
-							<repairboarder/>
-							<repair/>
-							<divrepair/>
-							<butler/>
-							<drone_recon_boarder/>
-							<drone_recon_defense/>
-							<doctor/>
-							<surgeon/>
-							<manning/>
-							<manningenemy/>
-							<drone_holodrone/>
-							<mender/>
-							<mender/>
-							<atom/>
-							<atomr/>
-							<roomba/>
-						</whiteList>
+						<whiteList load="LIST_FM_FAKEDRONES"/>
 					</statBoost>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
@@ -11640,32 +11554,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 						<noPwr>0</noPwr>
 						<onePwr>1</onePwr>
 					</systemPowerScaling>
-					<whiteList>
-						<a55 />
-						<gana />
-						<battle />
-						<drone_battle/>
-						<drone_battle2/>
-						<yinyang_ship/>
-						<yinyang_board/>
-						<loot_separatist_1/>
-						<repairboarder/>
-						<repair/>
-						<divrepair/>
-						<butler/>
-						<drone_recon_boarder/>
-						<drone_recon_defense/>
-						<doctor/>
-						<surgeon/>
-						<manning/>
-						<manningenemy/>
-						<drone_holodrone/>
-						<mender/>
-						<mender/>
-						<atom/>
-						<atomr/>
-						<roomba/>
-					</whiteList>
+					<whiteList list="LIST_FM_FAKEDRONES"/>
 				</mod-append:statBoost>
 				<mod-append:statBoost name="damageMultiplier">
 					<boostType>MULT</boostType>
@@ -11682,8 +11571,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 						<noPwr>0</noPwr>
 						<onePwr>1</onePwr>
 					</systemPowerScaling>
-					<whiteList>
-						<a55 />
+					<whiteList load="LIST_FM_FAKEDRONES"/>
 						<gana />
 						<battle />
 						<drone_battle/>
@@ -11724,32 +11612,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 						<noPwr>0</noPwr>
 						<onePwr>1</onePwr>
 					</systemPowerScaling>
-					<whiteList>
-						<a55 />
-						<gana />
-						<battle />
-						<drone_battle/>
-						<drone_battle2/>
-						<yinyang_ship/>
-						<yinyang_board/>
-						<loot_separatist_1/>
-						<repairboarder/>
-						<repair/>
-						<divrepair/>
-						<butler/>
-						<drone_recon_boarder/>
-						<drone_recon_defense/>
-						<doctor/>
-						<surgeon/>
-						<manning/>
-						<manningenemy/>
-						<drone_holodrone/>
-						<mender/>
-						<mender/>
-						<atom/>
-						<atomr/>
-						<roomba/>
-					</whiteList>
+					<whiteList load="LIST_FM_FAKEDRONES"/>
 				</mod-append:statBoost>
 				<mod-append:statBoost name="repairSpeed">
 					<boostType>MULT</boostType>
@@ -11766,32 +11629,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 						<noPwr>0</noPwr>
 						<onePwr>1</onePwr>
 					</systemPowerScaling>
-					<whiteList>
-						<a55 />
-						<gana />
-						<battle />
-						<drone_battle/>
-						<drone_battle2/>
-						<yinyang_ship/>
-						<yinyang_board/>
-						<loot_separatist_1/>
-						<repairboarder/>
-						<repair/>
-						<divrepair/>
-						<butler/>
-						<drone_recon_boarder/>
-						<drone_recon_defense/>
-						<doctor/>
-						<surgeon/>
-						<manning/>
-						<manningenemy/>
-						<drone_holodrone/>
-						<mender/>
-						<mender/>
-						<atom/>
-						<atomr/>
-						<roomba/>
-					</whiteList>
+					<whiteList load="LIST_FM_FAKEDRONES"/>
 				</mod-append:statBoost>
 				<mod-append:statBoost name="fireRepairMultiplier">
 					<boostType>MULT</boostType>
@@ -11808,32 +11646,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 						<noPwr>0</noPwr>
 						<onePwr>1</onePwr>
 					</systemPowerScaling>
-					<whiteList>
-						<a55 />
-						<gana />
-						<battle />
-						<drone_battle/>
-						<drone_battle2/>
-						<yinyang_ship/>
-						<yinyang_board/>
-						<loot_separatist_1/>
-						<repairboarder/>
-						<repair/>
-						<divrepair/>
-						<butler/>
-						<drone_recon_boarder/>
-						<drone_recon_defense/>
-						<doctor/>
-						<surgeon/>
-						<manning/>
-						<manningenemy/>
-						<drone_holodrone/>
-						<mender/>
-						<mender/>
-						<atom/>
-						<atomr/>
-						<roomba/>
-					</whiteList>
+					<whiteList load="LIST_FM_FAKEDRONES"/>
 				</mod-append:statBoost>
 			</mod:findLike>
 		</mod:findName>
@@ -11857,32 +11670,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 						<noPwr>0</noPwr>
 						<onePwr>1</onePwr>
 					</systemPowerScaling>
-					<whiteList>
-						<a55 />
-						<gana />
-						<battle />
-						<drone_battle/>
-						<drone_battle2/>
-						<yinyang_ship/>
-						<yinyang_board/>
-						<loot_separatist_1/>
-						<repairboarder/>
-						<repair/>
-						<divrepair/>
-						<butler/>
-						<drone_recon_boarder/>
-						<drone_recon_defense/>
-						<doctor/>
-						<surgeon/>
-						<manning/>
-						<manningenemy/>
-						<drone_holodrone/>
-						<mender/>
-						<mender/>
-						<atom/>
-						<atomr/>
-						<roomba/>
-					</whiteList>
+					<whiteList load="LIST_FM_FAKEDRONES"/>
 				</mod-append:statBoost>
 				<mod-append:statBoost name="damageMultiplier">
 					<boostType>MULT</boostType>
@@ -11899,32 +11687,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 						<noPwr>0</noPwr>
 						<onePwr>1</onePwr>
 					</systemPowerScaling>
-					<whiteList>
-						<a55 />
-						<gana />
-						<battle />
-						<drone_battle/>
-						<drone_battle2/>
-						<yinyang_ship/>
-						<yinyang_board/>
-						<loot_separatist_1/>
-						<repairboarder/>
-						<repair/>
-						<divrepair/>
-						<butler/>
-						<drone_recon_boarder/>
-						<drone_recon_defense/>
-						<doctor/>
-						<surgeon/>
-						<manning/>
-						<manningenemy/>
-						<drone_holodrone/>
-						<mender/>
-						<mender/>
-						<atom/>
-						<atomr/>
-						<roomba/>
-					</whiteList>
+					<whiteList load="LIST_FM_FAKEDRONES"/>
 				</mod-append:statBoost>
 				<mod-append:statBoost name="sabotageSpeedMultiplier">
 					<boostType>MULT</boostType>
@@ -11941,32 +11704,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 						<noPwr>0</noPwr>
 						<onePwr>1</onePwr>
 					</systemPowerScaling>
-					<whiteList>
-						<a55 />
-						<gana />
-						<battle />
-						<drone_battle/>
-						<drone_battle2/>
-						<yinyang_ship/>
-						<yinyang_board/>
-						<loot_separatist_1/>
-						<repairboarder/>
-						<repair/>
-						<divrepair/>
-						<butler/>
-						<drone_recon_boarder/>
-						<drone_recon_defense/>
-						<doctor/>
-						<surgeon/>
-						<manning/>
-						<manningenemy/>
-						<drone_holodrone/>
-						<mender/>
-						<mender/>
-						<atom/>
-						<atomr/>
-						<roomba/>
-					</whiteList>
+					<whiteList load="LIST_FM_FAKEDRONES"/>
 				</mod-append:statBoost>
 				<mod-append:statBoost name="repairSpeed">
 					<boostType>MULT</boostType>
@@ -11983,32 +11721,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 						<noPwr>0</noPwr>
 						<onePwr>1</onePwr>
 					</systemPowerScaling>
-					<whiteList>
-						<a55 />
-						<gana />
-						<battle />
-						<drone_battle/>
-						<drone_battle2/>
-						<yinyang_ship/>
-						<yinyang_board/>
-						<loot_separatist_1/>
-						<repairboarder/>
-						<repair/>
-						<divrepair/>
-						<butler/>
-						<drone_recon_boarder/>
-						<drone_recon_defense/>
-						<doctor/>
-						<surgeon/>
-						<manning/>
-						<manningenemy/>
-						<drone_holodrone/>
-						<mender/>
-						<mender/>
-						<atom/>
-						<atomr/>
-						<roomba/>
-					</whiteList>
+					<whiteList load="LIST_FM_FAKEDRONES"/>
 				</mod-append:statBoost>
 				<mod-append:statBoost name="fireRepairMultiplier">
 					<boostType>MULT</boostType>
@@ -12025,32 +11738,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 						<noPwr>0</noPwr>
 						<onePwr>1</onePwr>
 					</systemPowerScaling>
-					<whiteList>
-						<a55 />
-						<gana />
-						<battle />
-						<drone_battle/>
-						<drone_battle2/>
-						<yinyang_ship/>
-						<yinyang_board/>
-						<loot_separatist_1/>
-						<repairboarder/>
-						<repair/>
-						<divrepair/>
-						<butler/>
-						<drone_recon_boarder/>
-						<drone_recon_defense/>
-						<doctor/>
-						<surgeon/>
-						<manning/>
-						<manningenemy/>
-						<drone_holodrone/>
-						<mender/>
-						<mender/>
-						<atom/>
-						<atomr/>
-						<roomba/>
-					</whiteList>
+					<whiteList load="LIST_FM_FAKEDRONES"/>
 				</mod-append:statBoost>
 			</mod:findLike>
 		</mod:findName>
