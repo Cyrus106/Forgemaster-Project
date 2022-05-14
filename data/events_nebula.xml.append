@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <mod:findName type = "event" name = "NEBULA_NEW_PLANET">
-	
-       
+
+
 	<mod-append:choice hidden="true" req="FM_BEAM_MINING_2" >
-        <text>(Ishimura Beam) Nobody will miss one lousy Planet. Get to planet cracking.</text> 
+        <text>(Ishimura Beam) Nobody will miss one lousy planet. Get to planet cracking.</text>
 		<event>
-			<text>Diverting the majority of your ship's power to the Ishimura beam, you begin cracking open the planet, revealing parts of it's surface and numerous valuable resources. Congratulations, you just caused the extinction of several thousand species and you tore a large chunk out of the planet.</text>
+			<text>Diverting the majority of your ship's power to the Ishimura beam, you begin cracking open the planet, revealing parts of its surface and numerous valuable resources. Congratulations, you just caused the extinction of several thousand species and you tore a large chunk out of the planet.</text>
 			<changeBackground>FM_MOON_BOOM</changeBackground>
 			<img planet="PLANET_INVISIBLE"/>
 			<modifyPursuit amount="2"/>

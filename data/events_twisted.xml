@@ -18,7 +18,7 @@
 
 <event name="FM_START_RITUAL">
 <img back="FM_TWISTED_SECTOR_IMAGE" planet="NONE"/>
-<text>You've arrived at one of this sector's unusual beacons. You perform a quick scan using the software provided by C.U.R.A., it informs you that the anomously properties of this beacon force causes anything called by the C.U.R.A. Drive Hacker to be pulled directly to this beacon, but there is only enough energy to do this once per beacon. </text>
+<text>You've arrived at one of this sector's unusual beacons. You perform a quick scan using the software provided by C.U.R.A., it informs you that the anomalous properties of this beacon force causes anything called by the C.U.R.A. Drive Hacker to be pulled directly to this beacon, but there is only enough energy to do this once per beacon. </text>
 	<choice hidden="true">
 		<text>Attempt to utilize your C.U.R.A. Drive Hacker.</text>
 		<event load="FM_CURA_DRIVE_HACKER_MENU"/>
@@ -30,12 +30,12 @@
 		<event/>
 		</event>
 	</choice>
-	
+
 </event>
 
 
 <event name="FM_CURA_DRIVE_HACKER_MENU">
-<text>You've arrived at one of this sector's unusual beacons. The anomously properties of this beacon force anything called by the C.U.R.A. Drive Hacker to be pulled directly to this beacon. You wonder if this could be used to pull your ship to these beacons in the future.</text>
+<text>You've arrived at one of this sector's unusual beacons. The anomalous properties of this beacon force anything called by the C.U.R.A. Drive Hacker to be pulled directly to this beacon. You wonder if this could be used to pull your ship to these beacons in the future.</text>
 	<choice req="ACH_FM_BOSS_DONE" lvl="1" max_group="3" hidden="true" blue="false">
         <text>(C.U.R.A. Drive Hacker) You already obtained your reward. You wonder how exactly this benefit C.U.R.A.?</text>
         <event load="OPTION_INVALID"/>
@@ -48,21 +48,21 @@
 <choice req="CURA_MVBOSS_SPAWNER" lvl="1" max_group="3" hidden="false" blue="true">
         <text>(C.U.R.A. Drive Hacker) Summon an Twisted MV Traveler.</text>
         <event load="FM_STORAGE_CHECK_AUG_MVBOSS_SPAWNER_LIST_SECTOR"/>
- </choice>   
+ </choice>
 <choice hidden="true">
 		<text>Nevermind, let's leave.</text>
 		<event>
 		<text>You decide against sticking around to try calling any vessels to the beacon. The anomalous properties of the beacon make you and your crew feel very ill, so you don't like the idea of sticking around.</text>
 		<event/>
 		</event>
-	</choice>	
+	</choice>
 </event>
 
 <event name="FM_STORAGE_CHECK_AUG_MVBOSS_SPAWNER_LIST_SECTOR">
 	<text>You check what ships are available to be summoned currently. For each set of 3 ships you defeat, 3 more will become available to challenge. Summoning an Twisted MV boss will take 2{.
 	[NOTE: All rewards from these bosses DO NOT stack.]</text>
-	
-	
+
+
 	<choice req="ACH_FM_BOSS_CRYSTAL1" lvl="1" max_group="1" hidden="true" blue="false">
 		<text>You already defeated the Twisted Crystal.</text>
 		<event load="OPTION_INVALID"/>
@@ -75,7 +75,7 @@
 		<text>You already defeated the Twisted Leech.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	
+
 	<choice req="FM_BOSS_LIST_18" lvl="1" max_group="1" hidden="false" blue="false">
 		<text>Twisted Crystal C - Drops Twisted Crystal Armor</text>
 		<event>
@@ -85,7 +85,7 @@
 			</item_modify>
 			 <choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_CRYSTAL1_SUICIDE"/> 
+			 <event load="FM_BOSS_CRYSTAL1_SUICIDE"/>
 			 </choice>
 		</event>
 	</choice>
@@ -98,7 +98,7 @@
 			</item_modify>
 			 <choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_TUCO1_SUICIDE"/> 
+			 <event load="FM_BOSS_TUCO1_SUICIDE"/>
 			 </choice>
 		</event>
 	</choice>
@@ -111,11 +111,11 @@
 			</item_modify>
 			<choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_LEECH1_SUICIDE"/> 
+			 <event load="FM_BOSS_LEECH1_SUICIDE"/>
 			 </choice>
 		</event>
 	</choice>
-	
+
 	<choice req="ACH_FM_BOSS_KES1" lvl="1" max_group="1" hidden="true" blue="false">
 		<text>You already defeated the Twisted Kestrel.</text>
 		<event load="OPTION_INVALID"/>
@@ -128,7 +128,7 @@
 		<text>You already defeated the Twisted Orchid.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	
+
 	<choice req="FM_BOSS_LIST_15" lvl="1" max_group="1" hidden="false" blue="false">
 		<text>Twisted Kestrel B - A....fridge?</text>
 		<event>
@@ -138,7 +138,7 @@
 			</item_modify>
 			 <choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_KES1_SUICIDE"/> 
+			 <event load="FM_BOSS_KES1_SUICIDE"/>
 			 </choice>
 		</event>
 	</choice>
@@ -151,7 +151,7 @@
 			</item_modify>
 			 <choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_FED1_SUICIDE"/> 
+			 <event load="FM_BOSS_FED1_SUICIDE"/>
 			 </choice>
 		</event>
 	</choice>
@@ -164,11 +164,11 @@
 			</item_modify>
 			<choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_ORCHID1_SUICIDE"/> 
+			 <event load="FM_BOSS_ORCHID1_SUICIDE"/>
 			 </choice>
 		</event>
 	</choice>
-	
+
 	<choice req="ACH_FM_BOSS_LANIUS1" lvl="1" max_group="1" hidden="true" blue="false">
 		<text>You already defeated the Twisted Lanius.</text>
 		<event load="OPTION_INVALID"/>
@@ -215,7 +215,7 @@
 			<quest event="FM_BOSS_ENGINEER1_SUICIDE"/>
 		</event>
 	</choice>
-	
+
 	<choice req="ACH_FM_BOSS_LANIUS1" lvl="1" max_group="4" hidden="true" blue="false">
 		<text>You already defeated the Twisted Lanius.</text>
 		<event load="OPTION_INVALID"/>
@@ -238,7 +238,7 @@
 			</item_modify>
 			 <choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_LANIUS1_SUICIDE"/> 
+			 <event load="FM_BOSS_LANIUS1_SUICIDE"/>
 			 </choice>
 		</event>
 	</choice>
@@ -251,7 +251,7 @@
 			</item_modify>
 			 <choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_SHELL1_SUICIDE"/> 
+			 <event load="FM_BOSS_SHELL1_SUICIDE"/>
 			 </choice>
 		</event>
 	</choice>
@@ -264,11 +264,11 @@
 			</item_modify>
 			 <choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_ENGINEER1_SUICIDE"/> 
+			 <event load="FM_BOSS_ENGINEER1_SUICIDE"/>
 			 </choice>
 		</event>
 	</choice>
-	
+
 	<choice req="ACH_FM_BOSS_SLUG1" lvl="1" max_group="1" hidden="true" blue="false">
 		<text>You already defeated the Twisted Slug.</text>
 		<event load="OPTION_INVALID"/>
@@ -281,7 +281,7 @@
 		<text>You already defeated the Twisted Zoltan.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	
+
 	<choice req="FM_BOSS_LIST_9" lvl="1" max_group="1" hidden="false" blue="false">
 		<text>Twisted Slug C - Drops Malboro.</text>
 		<event>
@@ -291,7 +291,7 @@
 			</item_modify>
 			 <choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_SLUG1_SUICIDE"/> 
+			 <event load="FM_BOSS_SLUG1_SUICIDE"/>
 			 </choice>
 		</event>
 	</choice>
@@ -304,7 +304,7 @@
 			</item_modify>
 			 <choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_STEALTH1_SUICIDE"/> 
+			 <event load="FM_BOSS_STEALTH1_SUICIDE"/>
 			 </choice>
 		</event>
 	</choice>
@@ -317,11 +317,11 @@
 			</item_modify>
 			<choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_ZOLTAN1_SUICIDE"/> 
+			 <event load="FM_BOSS_ZOLTAN1_SUICIDE"/>
 			 </choice>
 		</event>
 	</choice>
-	
+
 	<choice req="ACH_FM_BOSS_MONK1" lvl="1" max_group="1" hidden="true" blue="false">
 		<text>You already defeated the Twisted Monk.</text>
 		<event load="OPTION_INVALID"/>
@@ -334,7 +334,7 @@
 		<text>You already defeated the Twisted Lost Sun.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	
+
 	<choice req="FM_BOSS_LIST_6" lvl="1" max_group="1" hidden="false" blue="false">
 		<text>Twisted Monk B - Drops Aether Ascension Shields</text>
 		<event>
@@ -344,7 +344,7 @@
 			</item_modify>
 			 <choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_MONK1_SUICIDE"/> 
+			 <event load="FM_BOSS_MONK1_SUICIDE"/>
 			 </choice>
 		</event>
 	</choice>
@@ -357,7 +357,7 @@
 			</item_modify>
 			<choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_R1_SUICIDE"/> 
+			 <event load="FM_BOSS_R1_SUICIDE"/>
 			 </choice>
 		</event>
 	</choice>
@@ -370,11 +370,11 @@
 			</item_modify>
 			<choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_LOSTSUN1_SUICIDE"/> 
+			 <event load="FM_BOSS_LOSTSUN1_SUICIDE"/>
 			 </choice>
 		</event>
 	</choice>
-	
+
 	<choice req="ACH_FM_BOSS_FREE1" lvl="1" max_group="1" hidden="true" blue="false">
 		<text>You already defeated the Twisted Free Mantis.</text>
 		<event load="OPTION_INVALID"/>
@@ -397,7 +397,7 @@
 			</item_modify>
 			<choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_FREE1_SUICIDE"/> 
+			 <event load="FM_BOSS_FREE1_SUICIDE"/>
 			 </choice>
 		</event>
 	</choice>
@@ -410,7 +410,7 @@
 			</item_modify>
 			<choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_SEPA1_SUICIDE"/> 
+			 <event load="FM_BOSS_SEPA1_SUICIDE"/>
 			 </choice>
 		</event>
 	</choice>
@@ -423,11 +423,11 @@
 			</item_modify>
 			<choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_MANTIS1_SUICIDE"/> 
+			 <event load="FM_BOSS_MANTIS1_SUICIDE"/>
 			 </choice>
 		</event>
 	</choice>
-	
+
 	<choice req="ACH_FM_BOSS_CLAN1" lvl="1" max_group="1" hidden="true" blue="false">
 		<text>You already defeated the Twisted Clansman.</text>
 		<event load="OPTION_INVALID"/>
@@ -440,7 +440,7 @@
 		<text>You already defeated the Twisted Engi.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	
+
 	<choice req="loc_coords_twisted" lvl="1" max_group="1" hidden="false" blue="false">
 		<text>Twisted Clansman B - Drops Mind Clouder</text>
 		<event>
@@ -450,7 +450,7 @@
 			</item_modify>
 			<choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_CLAN1_SUICIDE_NO_CORDS"/> 
+			 <event load="FM_BOSS_CLAN1_SUICIDE_NO_CORDS"/>
 			 </choice>
 		</event>
 	</choice>
@@ -463,7 +463,7 @@
 			</item_modify>
 			<choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_DUSK1_SUICIDE_NO_CORDS"/> 
+			 <event load="FM_BOSS_DUSK1_SUICIDE_NO_CORDS"/>
 			 </choice>
 		</event>
 	</choice>
@@ -476,11 +476,11 @@
 			</item_modify>
 			<choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_ENGI1_SUICIDE_NO_CORDS"/> 
+			 <event load="FM_BOSS_ENGI1_SUICIDE_NO_CORDS"/>
 			 </choice>
 		</event>
 	</choice>
-	
+
 	<choice req="pilot" lvl="1" max_group="1" hidden="false" blue="false">
 		<text>Twisted Clansman B - Drops Mind Clouder</text>
 		<event>
@@ -490,7 +490,7 @@
 			</item_modify>
 			<choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_CLAN1_SUICIDE_NO_CORDS"/> 
+			 <event load="FM_BOSS_CLAN1_SUICIDE_NO_CORDS"/>
 			 </choice>
 		</event>
 	</choice>
@@ -503,7 +503,7 @@
 			</item_modify>
 			 <choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_DUSK1_SUICIDE_NO_CORDS"/> 
+			 <event load="FM_BOSS_DUSK1_SUICIDE_NO_CORDS"/>
 			 </choice>
 		</event>
 	</choice>
@@ -516,7 +516,7 @@
 			</item_modify>
 			<choice>
 			<text>Continue...</text>
-			 <event load="FM_BOSS_ENGI1_SUICIDE_NO_CORDS"/> 
+			 <event load="FM_BOSS_ENGI1_SUICIDE_NO_CORDS"/>
 			 </choice>
 		</event>
 	</choice>

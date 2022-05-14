@@ -316,7 +316,7 @@
 																		<item type="scrap" min="50" max="90"/>
 																		<item type="fuel" min="2" max="4"/>
 																	</item_modify>
-																	<text>Your Nobelium Flak shreds into the hulls of the parked ships present near the party. It also smashes into the partying engi vessel's hull, shredding it like swiss cheese. Nobody reached an escape pod in time.</text>
+																	<text>Your Nobelium Flak shreds into the hulls of the parked ships present near the party. It also smashes into the partying Engi vessel's hull, shredding it like swiss cheese. Nobody reached an escape pod in time.</text>
 																	<choice hidden="true">
 																		<text>Continue...</text>
 																		<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
@@ -428,7 +428,7 @@
 																		<item type="scrap" min="50" max="90"/>
 																		<item type="fuel" min="2" max="4"/>
 																	</item_modify>
-																	<text>Your Hassium Flak shreds into the hulls of the parked ships present near the party. It also smashes into the partying engi vessel's hull, shredding it like swiss cheese. Nobody reached an escape pod in time.</text>
+																	<text>Your Hassium Flak shreds into the hulls of the parked ships present near the party. It also smashes into the partying Engi vessel's hull, shredding it like swiss cheese. Nobody reached an escape pod in time.</text>
 																	<choice hidden="true">
 																		<text>Continue...</text>
 																		<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
@@ -540,7 +540,7 @@
 																		<item type="scrap" min="90" max="130"/>
 																		<item type="fuel" min="2" max="5"/>
 																	</item_modify>
-																	<text>Your Rebel Ripper laser peppers the engi vessel for "Rebel spies". Turns out the entire ship was filled with "Rebel spies". With all the party patrons dead, you loot all their ships safely for scrap, and find some fuel as well.</text>
+																	<text>Your Rebel Ripper laser peppers the Engi vessel for "Rebel spies". Turns out the entire ship was filled with "Rebel spies". With all the party patrons dead, you loot all their ships safely for scrap, and find some fuel as well.</text>
 																	<choice hidden="true">
 																		<text>Continue...</text>
 																		<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
@@ -764,7 +764,7 @@
 																		<item type="scrap" min="90" max="130"/>
 																		<item type="fuel" min="2" max="5"/>
 																	</item_modify>
-																	<text>Every living thing on the ship is dead within seconds, they probably didn't even know they were in danger before they died. You loot the engi party vessel, and the other empty vessels docked nearby. Your findings are VERY profitable.</text>
+																	<text>Every living thing on the ship is dead within seconds, they probably didn't even know they were in danger before they died. You loot the Engi party vessel, and the other empty vessels docked nearby. Your findings are VERY profitable.</text>
 																	<choice hidden="true">
 																		<text>Continue...</text>
 																		<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
@@ -1116,7 +1116,7 @@
 																		<item type="scrap" min="50" max="90"/>
 																		<item type="fuel" min="2" max="4"/>
 																	</item_modify>
-																	<text>Your Nobelium Flak shreds into the hulls of the parked ships present near the party. It also smashes into the partying engi vessel's hull, shredding it like swiss cheese. Nobody reached an escape pod in time.</text>
+																	<text>Your Nobelium Flak shreds into the hulls of the parked ships present near the party. It also smashes into the partying Engi vessel's hull, shredding it like swiss cheese. Nobody reached an escape pod in time.</text>
 																	<choice hidden="true">
 																		<text>Continue...</text>
 																		<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
@@ -1228,7 +1228,7 @@
 																		<item type="scrap" min="50" max="90"/>
 																		<item type="fuel" min="2" max="4"/>
 																	</item_modify>
-																	<text>Your Hassium Flak shreds into the hulls of the parked ships present near the party. It also smashes into the partying engi vessel's hull, shredding it like swiss cheese. Nobody reached an escape pod in time.</text>
+																	<text>Your Hassium Flak shreds into the hulls of the parked ships present near the party. It also smashes into the partying Engi vessel's hull, shredding it like swiss cheese. Nobody reached an escape pod in time.</text>
 																	<choice hidden="true">
 																		<text>Continue...</text>
 																		<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
@@ -1340,7 +1340,7 @@
 																		<item type="scrap" min="90" max="130"/>
 																		<item type="fuel" min="2" max="5"/>
 																	</item_modify>
-																	<text>Your Rebel Ripper laser peppers the engi vessel for "Rebel spies". Turns out the entire ship was filled with "Rebel spies". With all the party patrons dead, you loot all their ships safely for scrap, and find some fuel as well.</text>
+																	<text>Your Rebel Ripper laser peppers the Engi vessel for "Rebel spies". Turns out the entire ship was filled with "Rebel spies". With all the party patrons dead, you loot all their ships safely for scrap, and find some fuel as well.</text>
 																	<choice hidden="true">
 																		<text>Continue...</text>
 																		<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>
@@ -1564,7 +1564,7 @@
 																		<item type="scrap" min="90" max="130"/>
 																		<item type="fuel" min="2" max="5"/>
 																	</item_modify>
-																	<text>Every living thing on the ship is dead within seconds, they probably didn't even know they were in danger before they died. You loot the engi party vessel, and the other empty vessels docked nearby. Your findings are VERY profitable.</text>
+																	<text>Every living thing on the ship is dead within seconds, they probably didn't even know they were in danger before they died. You loot the Engi party vessel, and the other empty vessels docked nearby. Your findings are VERY profitable.</text>
 																	<choice hidden="true">
 																		<text>Continue...</text>
 																		<event load="MORALITY_UPDATE_FORGEMASTER_ENGI"/>

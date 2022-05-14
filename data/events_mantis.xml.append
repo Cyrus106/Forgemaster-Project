@@ -6,7 +6,7 @@
    <choice hidden="true" req="SHIP_GUNBOM" max_group="1" blue="false">
         <text>Continue...</text>
 		<event>
-		 <text>The Mantis changes his mind, "Ship Scary, enough weapons to take out entire fleet. FLEE!"</text>
+		 <text>The Mantis changes his mind, "Ship scary, enough weapons to take out entire fleet. FLEE!"</text>
 		 <instantEscape/>
 		<choice hidden="true">
 				<text>Check the storage.</text>
@@ -28,12 +28,12 @@
 <mod-append:choice req="SHIP_GUNBOM" lvl="1" max_group="600" hidden="true" blue="true">
      		<text>(GunBom) Hail the ship and attempt to talk your way out since you have no weapons.</text>
 		<event>
-			<text>The Bishop accepts your hail, much to your surprise. The do not give you time to explain how your weapons do not work, and begin to speak: "Queen Leikonpliiinakra would like ship. How ship so many weapon? You tell me or die, seem fair to me." the Bishop says, demandingly.</text>
+			<text>The Bishop accepts your hail, much to your surprise. They do not give you time to explain how your weapons do not work, and begin to speak: "Queen Leikonpliiinakra would like ship. How ship so many weapon? You tell me or die, seem fair to me." the Bishop says, demandingly.</text>
 			<choice hidden="true">
 		<text>Explain to the Bishop that none of the weapons work on this hunk of junk.</text>
 		<event>
 			<text>The Bishop seems almost stunned, then confused, then VERY angry. It pounds the console near it angrily, stating "You WASTE Bishop time. You die in name of Queen!"</text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event load="COMBAT_CHECK"/>
@@ -44,12 +44,12 @@
 		<text>(Lie): Accept the Bishop's offer and give them a tour of the ship's "features".</text>
 		<event>
 			<text>The Bishop accepts and teleports aboard your ship, and calmly states "You give tour and ship blueprints, Queen will love."</text>
-			
+
 			<choice hidden="true">
 				<text>Show the Bishop your Reactor and how it "powers" the weapons.</text>
 				<event>
-				<text>The Bishop follows you to the Reactor room. One of your crew foolishly left the system power reading console up, which clearly shows that no power flows to the weapon systems whatsoever. "You TRICK me. For this, you face DEATH!" the Bishop howls, instantly warping back to its' ship.</text>
-				<ship hostile="true"/> 
+				<text>The Bishop follows you to the Reactor room. One of your crew foolishly left the system power reading console up, which clearly shows that no power flows to the weapon systems whatsoever. "You TRICK me. For this, you face DEATH!" the Bishop howls, instantly warping back to its ship.</text>
+				<ship hostile="true"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event load="COMBAT_CHECK"/>
@@ -59,7 +59,7 @@
 			<choice hidden="true">
 				<text>Show the Bishop your Weapons, and how they are "expertly" wired to different parts of the ship, such as a desk fan in the crew quarters.</text>
 				<event>
-				<text>The Bishop follows you to the Weapons room. It politely asks you for a pen and paper, and frantically scribbles notes in a hilarious fashion as you bullshit your way out of this situation. You lie through your teeth, telling the Mantis how by plugging a power line into itself you can generate "infinite energy" and power all of these weapons. The Bishop cannot contain its' excitement.</text>
+				<text>The Bishop follows you to the Weapons room. It politely asks you for a pen and paper, and frantically scribbles notes in a hilarious fashion as you bullshit your way out of this situation. You lie through your teeth, telling the Mantis how by plugging a power line into itself you can generate "infinite energy" and power all of these weapons. The Bishop cannot contain its excitement.</text>
 				<choice hidden="true">
 				<text>Continue...</text>
 				<event>
@@ -87,11 +87,11 @@
 		<event>
 			<text>The Mantis and Slug glance at each other for a solid minute, then look back at you. "Perhapsss I wasss too quick to judge." The Slug says, clearly calming down a bit. "You....not stupid ones. I sorry." the Mantis responds. "Now this new ship is truly stupid one. Look at stupid ship!". The Mantis continues, mocking you. Both the Mantis and the Slug make peace, while mocking you constantly until you cut comms.</text>
 		</event>
-	
+
 	</mod-append:choice>
 
 
-</mod:findName>	
+</mod:findName>
 
 <mod:findName type = "event" name = "MANTIS_BROKEN_TELEPORTER">
 <mod-append:choice req="fm_forgemasterperson" lvl="1" max_group="600" hidden="true" blue="true">
@@ -103,7 +103,7 @@
 				<item type="drones" min="4" max="4"/>
 				 </item_modify>
 		</event>
-	
+
 	</mod-append:choice>
 
 <mod:findWithChildLike type="choice" child-type="text">

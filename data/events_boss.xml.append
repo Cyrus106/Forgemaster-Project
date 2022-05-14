@@ -25,11 +25,11 @@
 				<text>Contact Federation command.</text>
 				<event>
 					<text>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. Tully's squints at the sight of your ship. Then turns around to the officers behind.
-						"Is there a ship here or is the screen broken?" He asks, cleearly unsure if you aren't just a rendering error on the display.</text>
+						"Is there a ship here or is the screen broken?" He asks, clearly unsure if you aren't just a rendering error on the display.</text>
 					<choice hidden="true">
 						<text>This actually is a ship, yes.</text>
 						<event>
-							<text>Tully blinks for a moment, as if checking if there is really a ship on the scanners. Then looks back up at the vid screen. "...huh...guess we should get our sensors checked then...after you destroyed the flagship that is." </text>
+							<text>Tully blinks for a moment, as if to check if there is really a ship on the scanners. He looks back up at the vid screen. "...Huh...guess we should get our sensors checked then...after you destroyed the flagship that is." </text>
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event load="LAST_STAND_START_2"/>
@@ -66,7 +66,7 @@
 		 <mod:findLike type="choice">
 		  <mod:findLike type="event">
 		  <mod-append:choice hidden="true" max_group="600" req="fm_plated" blue="true">
-              <text>(Plated) Send a plated down for repairs and support.</text>
+              <text>(Plated) Send a Plated down for repairs and support.</text>
 						<event>
 							<text>"Perfect, this'll help us greatly. Thank you Captain."</text>
 
@@ -77,9 +77,9 @@
 						</event>
             </mod-append:choice>
             <mod-append:choice hidden="true" max_group="601" req="fm_forgemasterperson" blue="true">
-              <text>(Alastair) Quickly repair some equipment, perhaps crack a few skulls while he is at it.</text>
+              <text>(Alastair) Send Alastair to quickly repair some equipment, and perhaps crack a few skulls while he's at it.</text>
 						<event>
-							<text>"Perfect, this'll help us greatly. Thank you so much Captain. This rock soldier you sent down to assist is certainly something else"</text>
+							<text>"Perfect, this'll help us greatly. Thank you so much Captain. This Rock soldier you sent down to assist is certainly something else!"</text>
 
 							<choice hidden="true">
 								<text>Continue...</text>

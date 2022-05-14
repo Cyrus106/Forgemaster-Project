@@ -2,14 +2,14 @@
 
 
 		<mod:findName type="event" name="DUSK_MILITIA_ESCORT">
-		
+
 		 <mod:findLike type="choice" start="0" limit="1">
         <mod:findLike type="event">
             <mod-append:choice hidden="true" max_group="601" req="fm_plated" blue="true">
               	<text>(Plated) Offer to have your Plated repair their hull.</text>
 				<event>
-					<text>The Militiamen are surprised by your offer, but they gratiously accept.</text>
-					
+					<text>The Militiamen are surprised by your offer, but they graciously accept.</text>
+
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event>
@@ -19,15 +19,15 @@
 						</event>
 					</choice>
 				</event>
-			
+
             </mod-append:choice>
     <mod:findLike type="choice">
         <mod:findLike type="event">
             <mod-append:choice hidden="true" max_group="602" req="fm_forgemasterperson" blue="true">
               	<text>(Alastair) Offer to have Alastair fix up their hull.</text>
 				<event>
-					<text>The Militiamen are surprised by your offer, but they gratiously accept.</text>
-					
+					<text>The Militiamen are surprised by your offer, but they graciously accept.</text>
+
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event>
@@ -37,16 +37,16 @@
 						</event>
 					</choice>
 				</event>
-			
+
             </mod-append:choice>
-			
-			    
+
+
         </mod:findLike>
     </mod:findLike>
-	
-	
-  
-	</mod:findLike>  
+
+
+
+	</mod:findLike>
         </mod:findLike>
     <mod:findWithChildLike type="choice" child-type="text">
 	<mod:selector>Ignore them.</mod:selector>
