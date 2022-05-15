@@ -1808,7 +1808,10 @@
 		<mod-append:name>FM_BOMB_CRYSTAL_BIO</mod-append:name>
 		<mod-append:name>BOMB_BREACH_1_PLAYER_ARTY_CHAIN</mod-append:name>
 </mod:findName>
-
+<mod:findName type = "blueprintList" name = "BLUELIST_ARMOR">
+		<mod-append:name>FM_MODULAR_HULL</mod-append:name>
+		<mod-append:name>FM_MODULAR_HULL_LITE</mod-append:name>
+</mod:findName>
 
 
 

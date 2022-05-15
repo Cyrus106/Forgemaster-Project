@@ -271,8 +271,178 @@
 			<event name="OVERCHARMED_BOOM_LOAD" req="overcharmed_charges"/> <!--When counter  is positive-->
 		</loadEventList>
 	</event>
+	<event name="OVERCHARMED_BOOM2">
+		<variable name="overcharmed_charges" op="add" value="-2"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<loadEventList generate="false" seeded="false" default="OVERCHARMED_FINISH">
+			<event name="OVERCHARMED_BOOM_LOAD" req="overcharmed_charges"/> <!--When counter  is positive-->
+		</loadEventList>
+	</event>
+	<event name="OVERCHARMED_BOOM4">
+		<variable name="overcharmed_charges" op="add" value="-4"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<loadEventList generate="false" seeded="false" default="OVERCHARMED_FINISH">
+			<event name="OVERCHARMED_BOOM_LOAD" req="overcharmed_charges"/> <!--When counter  is positive-->
+		</loadEventList>
+	</event>
+	<event name="OVERCHARMED_BOOM8">
+		<variable name="overcharmed_charges" op="add" value="-8"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<loadEventList generate="false" seeded="false" default="OVERCHARMED_FINISH">
+			<event name="OVERCHARMED_BOOM_LOAD" req="overcharmed_charges"/> <!--When counter  is positive-->
+		</loadEventList>
+	</event>
+	<event name="OVERCHARMED_BOOM16">
+		<variable name="overcharmed_charges" op="add" value="-16"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<loadEventList generate="false" seeded="false" default="OVERCHARMED_FINISH">
+			<event name="OVERCHARMED_BOOM_LOAD" req="overcharmed_charges"/> <!--When counter  is positive-->
+		</loadEventList>
+	</event>
+	<event name="OVERCHARMED_BOOM32">
+		<variable name="overcharmed_charges" op="add" value="-32"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<loadEventList generate="false" seeded="false" default="OVERCHARMED_FINISH">
+			<event name="OVERCHARMED_BOOM_LOAD" req="overcharmed_charges"/> <!--When counter  is positive-->
+		</loadEventList>
+	</event>
+	<event name="OVERCHARMED_BOOM64">
+		<variable name="overcharmed_charges" op="add" value="-64"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<damage amount="0" effect="random" system="random"/>
+		<loadEventList generate="false" seeded="false" default="OVERCHARMED_FINISH">
+			<event name="OVERCHARMED_BOOM_LOAD" req="overcharmed_charges"/> <!--When counter  is positive-->
+		</loadEventList>
+	</event>
 	<event name="OVERCHARMED_BOOM_LOAD">
-		<loadEvent>OVERCHARMED_BOOM</loadEvent>
+		<loadEventList first="true" seeded="false" generate="false">
+			<event load="OVERCHARMED_BOOM64" req="overcharmed_charges" lvl="64"/>
+			<event load="OVERCHARMED_BOOM32" req="overcharmed_charges" lvl="32"/>
+			<event load="OVERCHARMED_BOOM16" req="overcharmed_charges" lvl="16"/>
+			<event load="OVERCHARMED_BOOM8" req="overcharmed_charges" lvl="8"/>
+			<event load="OVERCHARMED_BOOM4" req="overcharmed_charges" lvl="4"/>
+			<event load="OVERCHARMED_BOOM2" req="overcharmed_charges" lvl="2"/>
+			<event load="OVERCHARMED_BOOM" req="overcharmed_charges"/>
+		</loadEventList>
 	</event>
 	<event name="OVERCHARMED_RELOAD">
 		<loadEventList generate="false" seeded="false" default="OVERCHARMED_BOOM">

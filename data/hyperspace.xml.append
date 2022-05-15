@@ -11571,31 +11571,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 						<noPwr>0</noPwr>
 						<onePwr>1</onePwr>
 					</systemPowerScaling>
-					<whiteList load="LIST_FM_FAKEDRONES">
-						<gana />
-						<battle />
-						<drone_battle/>
-						<drone_battle2/>
-						<yinyang_ship/>
-						<yinyang_board/>
-						<loot_separatist_1/>
-						<repairboarder/>
-						<repair/>
-						<divrepair/>
-						<butler/>
-						<drone_recon_boarder/>
-						<drone_recon_defense/>
-						<doctor/>
-						<surgeon/>
-						<manning/>
-						<manningenemy/>
-						<drone_holodrone/>
-						<mender/>
-						<mender/>
-						<atom/>
-						<atomr/>
-						<roomba/>
-					</whiteList>
+					<whiteList load="LIST_FM_FAKEDRONES"/>
 				</mod-append:statBoost>
 				<mod-append:statBoost name="sabotageSpeedMultiplier">
 					<boostType>MULT</boostType>
