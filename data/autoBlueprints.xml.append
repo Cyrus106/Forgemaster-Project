@@ -1198,6 +1198,91 @@
 	<name>fm_terminus</name>
 	<name>fm_bio_cloud</name>
 </blueprintList>
+
+<blueprintList name="LIST_FM_NOABDUCT"><!--I am aware that this could be made more concise by making it so that things are refered to by other lists,
+        but I have it like this because the script reads all of the actual IDs from this list.
+        If you want to do anything involving the list please let me know, so I can update the script and other code if necessary -Vertaal-->
+    <name>hologram</name>
+    <name>acid</name>
+		<name>fm_repair_hull</name>
+		<name>fm_ion_anomaly_crew</name>
+		<name>fm_ion_anomaly_crew_enemy</name>
+		<name>fm_ion_instant_1</name>
+		<name>fm_ion_instant_2</name>
+		<name>fm_ion_instant_3</name>
+		<name>fm_ion_instant_4</name>
+		<name>fm_explode_instant</name>
+		<name>fm_human_rip</name>
+		<name>fm_drone_hack</name>
+		<name>fm_terminus</name>
+		<name>fm_bio_cloud</name>
+    <name>divrepair</name>
+		<name>repairboarder</name>
+		<name>drone_recon</name>
+		<name>drone_recon_boarder</name>
+		<name>drone_recon_defense</name>
+		<name>doctor</name>
+		<name>surgeon</name>
+		<name>drone_holodrone</name>
+		<name>manning</name>
+		<name>manningenemy</name>
+		<name>loot_separatist_1</name>
+		<name>yinyang_ship</name>
+		<name>yinyang_board</name>
+		<name>drone_battle</name>
+		<name>drone_battle2</name>
+		<name>butler</name>
+		<name>a55</name>
+    <name>gana</name>
+		<name>mender</name>
+		<name>menderr</name>
+		<name>director</name>
+		<name>atom</name>
+		<name>atomr</name>
+		<name>roomba</name>
+		<name>fm_fire_intruder</name>
+		<name>fm_ancalagon_battle</name>
+		<name>manningenemy_2</name>
+		<name>twisted_mender</name>
+		<name>twisted_yinyang_ship</name>
+		<name>twisted_yinyang_board</name>
+		<name>twisted_surgeon</name>
+		<name>twisted_drone_battle2</name>
+    <name>battle</name>
+    <name>repair</name>
+    <name>fm_holy1</name>
+		<name>fm_holy2</name>
+		<name>fm_holy3</name>
+		<name>fm_holy4</name>
+		<name>fm_holy5</name>
+		<name>fm_holy6</name>
+		<name>fm_holy7</name>
+		<name>fm_holy8</name>
+		<name>fm_holy9</name>
+		<name>fm_holy10</name>
+		<name>fm_holy11</name>
+		<name>fm_holy12</name>
+		<name>fm_holy13</name>
+		<name>fm_holy14</name>
+		<name>fm_holy15</name>
+		<name>fm_holy16</name>
+		<name>fm_holy17</name>
+		<name>fm_holy18</name>
+		<name>fm_holy19</name>
+		<name>fm_holy20</name>
+  	<name>fm_meatman</name>
+  	<name>fm_ancalagon_monitor</name>
+  	<name>fm_crystal_black</name>
+  	<name>fm_crystal_white</name>
+  	<name>fm_crystal_green</name>
+  	<name>fm_crystal_blue</name>
+  	<name>fm_crystal_red</name>
+  	<name>fm_missile_ion</name>
+  	<name>fm_power_drain</name>
+  	<name>fm_power</name>
+  	<name>battery</name>
+  </blueprintList>
+
 <blueprintList name="LIST_FM_PLSNOEFFECT_VIRUS">
 	<name>LIST_FM_PLSNOEFFECT</name>
 	<name>LIST_CREW_SHELL</name>
