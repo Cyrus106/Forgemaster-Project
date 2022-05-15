@@ -4161,15 +4161,15 @@ try this later
 	<anim name="overlay_cloaking_hack">
 		<sheet>overlay_cloaking_hack</sheet>
 		<desc length="2" x="0" y="0"/>
-		<time>1</time>
+		<time>0.5</time>
 	</anim>
 
-<animSheet name="fm_room_shields_8_cropped-sheet" w="245" h="70" fw="35" fh="70">ship/interior/fm_room_shields_8_cropped-sheet.png</animSheet> <!-- Twisted Rock Shield Animation-->
-<anim name="fm_room_shields_8_cropped-sheet">
-	<sheet>fm_room_shields_8_cropped-sheet</sheet>
-	<desc length="7" x="0" y="0"/>
-	<time>1</time>
-</anim>
+	<animSheet name="fm_room_shields_8_cropped-sheet" w="245" h="70" fw="35" fh="70">ship/interior/fm_room_shields_8_cropped-sheet.png</animSheet> <!-- Twisted Rock Shield Animation-->
+	<anim name="fm_room_shields_8_cropped-sheet">
+		<sheet>fm_room_shields_8_cropped-sheet</sheet>
+		<desc length="7" x="0" y="0"/>
+		<time>1</time>
+	</anim>
 
 </FTL>
 

@@ -6285,343 +6285,343 @@
 			<text>Currently no upgrade notches in use, 5 until the first capstone upgrade needs to be installed.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="1" max_lvl="1" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="1" max_lvl="1" max_group="2" blue="false" hidden="true">
 			<text>Currently 1 upgrade notch in use, 4 until the first capstone upgrade needs to be installed.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="2" max_lvl="2" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="2" max_lvl="2" max_group="2" blue="false" hidden="true">
 			<text>Currently 2 upgrade notches in use, 3 until the first capstone upgrade needs to be installed.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="3" max_lvl="3" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="3" max_lvl="3" max_group="2" blue="false" hidden="true">
 			<text>Currently 3 upgrade notches in use, 2 until the first capstone upgrade needs to be installed.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="4" max_lvl="4" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="4" max_lvl="4" max_group="2" blue="false" hidden="true">
 			<text>Currently 4 upgrade notches in use, 1 until the first capstone upgrade needs to be installed.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="5" max_lvl="5" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="5" max_lvl="5" max_group="2" blue="false" hidden="true">
 			<text>Currently 5 upgrade notches in use, the first capstone upgrade needs to be installed.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="6" max_lvl="6" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="6" max_lvl="6" max_group="2" blue="false" hidden="true">
 			<text>Currently 6 upgrade notches in use, 4 until the second capstone upgrade needs to be installed.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="7" max_lvl="7" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="7" max_lvl="7" max_group="2" blue="false" hidden="true">
 			<text>Currently 7 upgrade notches in use, 3 until the second capstone upgrade needs to be installed.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="8" max_lvl="8" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="8" max_lvl="8" max_group="2" blue="false" hidden="true">
 			<text>Currently 8 upgrade notches in use, 2 until the second capstone upgrade needs to be installed.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="9" max_lvl="9" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="9" max_lvl="9" max_group="2" blue="false" hidden="true">
 			<text>Currently 9 upgrade notches in use, 1 until the second capstone upgrade needs to be installed.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="10" max_lvl="10" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="10" max_lvl="10" max_group="2" blue="false" hidden="true">
 			<text>Currently 10 upgrade notches in use, the second capstone upgrade needs to be installed.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="11" max_lvl="11" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="11" max_lvl="11" max_group="2" blue="false" hidden="true">
 			<text>Currently 11 upgrade notches in use, 4 until the third capstone upgrade needs to be installed.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="12" max_lvl="12" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="12" max_lvl="12" max_group="2" blue="false" hidden="true">
 			<text>Currently 12 upgrade notches in use, 3 until the third capstone upgrade needs to be installed.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="13" max_lvl="13" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="13" max_lvl="13" max_group="2" blue="false" hidden="true">
 			<text>Currently 13 upgrade notches in use, 2 until the third capstone upgrade needs to be installed.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="14" max_lvl="14" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="14" max_lvl="14" max_group="2" blue="false" hidden="true">
 			<text>Currently 14 upgrade notches in use, 1 until the third capstone upgrade needs to be installed.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="15" max_lvl="15" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="15" max_lvl="15" max_group="2" blue="false" hidden="true">
 			<text>Currently 15 upgrade notches in use. You're maxed out!</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="16" max_lvl="16" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="16" max_lvl="16" max_group="2" blue="false" hidden="true">
 			<text>Currently 16 upgrade notches in use..."Overcharmed"</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="17" max_lvl="17" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="17" max_lvl="17" max_group="2" blue="false" hidden="true">
 			<text>Currently 17 upgrade notches in use..."overcharmed II"</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="18" max_lvl="18" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="18" max_lvl="18" max_group="2" blue="false" hidden="true">
 			<text>Currently 18 upgrade notches in use..."overcharmed III"</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="19" max_lvl="19" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="19" max_lvl="19" max_group="2" blue="false" hidden="true">
 			<text>Currently 19 upgrade notches in use..."overcharmed IV"</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="20" max_lvl="20" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="20" max_lvl="20" max_group="2" blue="false" hidden="true">
 			<text>Currently 20 upgrade notches in use..."overcharmed V"</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-    <choice req="fm_hull_upgrade_point" lvl="21" max_lvl="21" max_group="2" blue="false" hidden="true">
+    <choice req="FM_HULL_UPGRADE_POINTS" lvl="21" max_lvl="21" max_group="2" blue="false" hidden="true">
 		   <text>Currently 21 upgrade notches in use..."overcharmed VI"</text>
 		   <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="22" max_lvl="22" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="22" max_lvl="22" max_group="2" blue="false" hidden="true">
 		  <text>Currently 22 upgrade notches in use..."overcharmed VII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="23" max_lvl="23" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="23" max_lvl="23" max_group="2" blue="false" hidden="true">
 		  <text>Currently 23 upgrade notches in use..."overcharmed VIII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="24" max_lvl="24" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="24" max_lvl="24" max_group="2" blue="false" hidden="true">
 		  <text>Currently 24 upgrade notches in use..."overcharmed IX"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="25" max_lvl="25" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="25" max_lvl="25" max_group="2" blue="false" hidden="true">
 		  <text>Currently 25 upgrade notches in use..."overcharmed X"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="26" max_lvl="26" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="26" max_lvl="26" max_group="2" blue="false" hidden="true">
 		  <text>Currently 26 upgrade notches in use..."overcharmed XI"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="27" max_lvl="27" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="27" max_lvl="27" max_group="2" blue="false" hidden="true">
 		  <text>Currently 27 upgrade notches in use..."overcharmed XII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="28" max_lvl="28" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="28" max_lvl="28" max_group="2" blue="false" hidden="true">
 		  <text>Currently 28 upgrade notches in use..."overcharmed XIII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="29" max_lvl="29" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="29" max_lvl="29" max_group="2" blue="false" hidden="true">
 		  <text>Currently 29 upgrade notches in use..."overcharmed XIV"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="30" max_lvl="30" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="30" max_lvl="30" max_group="2" blue="false" hidden="true">
 		  <text>Currently 30 upgrade notches in use..."overcharmed XV"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="31" max_lvl="31" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="31" max_lvl="31" max_group="2" blue="false" hidden="true">
 		  <text>Currently 31 upgrade notches in use..."overcharmed XVI"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="32" max_lvl="32" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="32" max_lvl="32" max_group="2" blue="false" hidden="true">
 		  <text>Currently 32 upgrade notches in use..."overcharmed XVII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="33" max_lvl="33" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="33" max_lvl="33" max_group="2" blue="false" hidden="true">
 		  <text>Currently 33 upgrade notches in use..."overcharmed XVIII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="34" max_lvl="34" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="34" max_lvl="34" max_group="2" blue="false" hidden="true">
 		  <text>Currently 34 upgrade notches in use..."overcharmed XIX"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="35" max_lvl="35" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="35" max_lvl="35" max_group="2" blue="false" hidden="true">
 		  <text>Currently 35 upgrade notches in use..."overcharmed XX"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="36" max_lvl="36" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="36" max_lvl="36" max_group="2" blue="false" hidden="true">
 		  <text>Currently 36 upgrade notches in use..."overcharmed XXI"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="37" max_lvl="37" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="37" max_lvl="37" max_group="2" blue="false" hidden="true">
 		  <text>Currently 37 upgrade notches in use..."overcharmed XXII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="38" max_lvl="38" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="38" max_lvl="38" max_group="2" blue="false" hidden="true">
 		  <text>Currently 38 upgrade notches in use..."overcharmed XXIII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="39" max_lvl="39" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="39" max_lvl="39" max_group="2" blue="false" hidden="true">
 		  <text>Currently 39 upgrade notches in use..."overcharmed XXIV"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="40" max_lvl="40" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="40" max_lvl="40" max_group="2" blue="false" hidden="true">
 		  <text>Currently 40 upgrade notches in use..."overcharmed XXV"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="41" max_lvl="41" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="41" max_lvl="41" max_group="2" blue="false" hidden="true">
 		  <text>Currently 41 upgrade notches in use..."overcharmed XXVI"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="42" max_lvl="42" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="42" max_lvl="42" max_group="2" blue="false" hidden="true">
 		  <text>Currently 42 upgrade notches in use..."overcharmed XXVII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="43" max_lvl="43" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="43" max_lvl="43" max_group="2" blue="false" hidden="true">
 		  <text>Currently 43 upgrade notches in use..."overcharmed XXVIII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="44" max_lvl="44" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="44" max_lvl="44" max_group="2" blue="false" hidden="true">
 		  <text>Currently 44 upgrade notches in use..."overcharmed XXIX"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="45" max_lvl="45" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="45" max_lvl="45" max_group="2" blue="false" hidden="true">
 		  <text>Currently 45 upgrade notches in use..."overcharmed XXX"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="46" max_lvl="46" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="46" max_lvl="46" max_group="2" blue="false" hidden="true">
 		  <text>Currently 46 upgrade notches in use..."overcharmed XXXI"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="47" max_lvl="47" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="47" max_lvl="47" max_group="2" blue="false" hidden="true">
 		  <text>Currently 47 upgrade notches in use..."overcharmed XXXII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="48" max_lvl="48" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="48" max_lvl="48" max_group="2" blue="false" hidden="true">
 		  <text>Currently 48 upgrade notches in use..."overcharmed XXXIII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="49" max_lvl="49" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="49" max_lvl="49" max_group="2" blue="false" hidden="true">
 		  <text>Currently 49 upgrade notches in use..."overcharmed XXXIV"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="50" max_lvl="50" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="50" max_lvl="50" max_group="2" blue="false" hidden="true">
 		  <text>Currently 50 upgrade notches in use..."overcharmed XXXV"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="51" max_lvl="51" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="51" max_lvl="51" max_group="2" blue="false" hidden="true">
 		  <text>Currently 51 upgrade notches in use..."overcharmed XXXVI"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="52" max_lvl="52" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="52" max_lvl="52" max_group="2" blue="false" hidden="true">
 		  <text>Currently 52 upgrade notches in use..."overcharmed XXXVII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="53" max_lvl="53" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="53" max_lvl="53" max_group="2" blue="false" hidden="true">
 		  <text>Currently 53 upgrade notches in use..."overcharmed XXXVIII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="54" max_lvl="54" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="54" max_lvl="54" max_group="2" blue="false" hidden="true">
 		  <text>Currently 54 upgrade notches in use..."overcharmed XXXIX"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="55" max_lvl="55" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="55" max_lvl="55" max_group="2" blue="false" hidden="true">
 		  <text>Currently 55 upgrade notches in use..."overcharmed XL"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="56" max_lvl="56" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="56" max_lvl="56" max_group="2" blue="false" hidden="true">
 		  <text>Currently 56 upgrade notches in use..."overcharmed XLI"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="57" max_lvl="57" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="57" max_lvl="57" max_group="2" blue="false" hidden="true">
 		  <text>Currently 57 upgrade notches in use..."overcharmed XLII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="58" max_lvl="58" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="58" max_lvl="58" max_group="2" blue="false" hidden="true">
 		  <text>Currently 58 upgrade notches in use..."overcharmed XLIII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="59" max_lvl="59" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="59" max_lvl="59" max_group="2" blue="false" hidden="true">
 		  <text>Currently 59 upgrade notches in use..."overcharmed XLIV"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="60" max_lvl="60" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="60" max_lvl="60" max_group="2" blue="false" hidden="true">
 		  <text>Currently 60 upgrade notches in use..."overcharmed XLV"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="61" max_lvl="61" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="61" max_lvl="61" max_group="2" blue="false" hidden="true">
 		  <text>Currently 61 upgrade notches in use..."overcharmed XLVI"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="62" max_lvl="62" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="62" max_lvl="62" max_group="2" blue="false" hidden="true">
 		  <text>Currently 62 upgrade notches in use..."overcharmed XLVII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="63" max_lvl="63" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="63" max_lvl="63" max_group="2" blue="false" hidden="true">
 		  <text>Currently 63 upgrade notches in use..."overcharmed XLVIII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="64" max_lvl="64" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="64" max_lvl="64" max_group="2" blue="false" hidden="true">
 		  <text>Currently 64 upgrade notches in use..."overcharmed XLIX"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="65" max_lvl="65" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="65" max_lvl="65" max_group="2" blue="false" hidden="true">
 		  <text>Currently 65 upgrade notches in use..."overcharmed L"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="66" max_lvl="66" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="66" max_lvl="66" max_group="2" blue="false" hidden="true">
 		  <text>Currently 66 upgrade notches in use..."overcharmed LI"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="67" max_lvl="67" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="67" max_lvl="67" max_group="2" blue="false" hidden="true">
 		  <text>Currently 67 upgrade notches in use..."overcharmed LII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="68" max_lvl="68" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="68" max_lvl="68" max_group="2" blue="false" hidden="true">
 		  <text>Currently 68 upgrade notches in use..."overcharmed LIII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="69" max_lvl="69" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="69" max_lvl="69" max_group="2" blue="false" hidden="true">
 		  <text>Currently 69 upgrade notches in use..."overcharmed LIV"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="70" max_lvl="70" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="70" max_lvl="70" max_group="2" blue="false" hidden="true">
 		  <text>Currently 70 upgrade notches in use..."overcharmed LV"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="71" max_lvl="71" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="71" max_lvl="71" max_group="2" blue="false" hidden="true">
 		  <text>Currently 71 upgrade notches in use..."overcharmed LVI"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="72" max_lvl="72" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="72" max_lvl="72" max_group="2" blue="false" hidden="true">
 		  <text>Currently 72 upgrade notches in use..."overcharmed LVII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="73" max_lvl="73" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="73" max_lvl="73" max_group="2" blue="false" hidden="true">
 		  <text>Currently 73 upgrade notches in use..."overcharmed LVIII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="74" max_lvl="74" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="74" max_lvl="74" max_group="2" blue="false" hidden="true">
 		  <text>Currently 74 upgrade notches in use..."overcharmed LIX"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="75" max_lvl="75" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="75" max_lvl="75" max_group="2" blue="false" hidden="true">
 		  <text>Currently 75 upgrade notches in use..."overcharmed LX"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="76" max_lvl="76" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="76" max_lvl="76" max_group="2" blue="false" hidden="true">
 		  <text>Currently 76 upgrade notches in use..."overcharmed LXI"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="77" max_lvl="77" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="77" max_lvl="77" max_group="2" blue="false" hidden="true">
 		  <text>Currently 77 upgrade notches in use..."overcharmed LXII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="78" max_lvl="78" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="78" max_lvl="78" max_group="2" blue="false" hidden="true">
 		  <text>Currently 78 upgrade notches in use..."overcharmed LXIII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="79" max_lvl="79" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="79" max_lvl="79" max_group="2" blue="false" hidden="true">
 		  <text>Currently 79 upgrade notches in use..."overcharmed LXIV"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="80" max_lvl="80" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="80" max_lvl="80" max_group="2" blue="false" hidden="true">
 		  <text>Currently 80 upgrade notches in use..."overcharmed LXV"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="81" max_lvl="81" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="81" max_lvl="81" max_group="2" blue="false" hidden="true">
 		  <text>Currently 81 upgrade notches in use..."overcharmed LXVI"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="82" max_lvl="82" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="82" max_lvl="82" max_group="2" blue="false" hidden="true">
 		  <text>Currently 82 upgrade notches in use..."overcharmed LXVII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="83" max_lvl="83" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="83" max_lvl="83" max_group="2" blue="false" hidden="true">
 		  <text>Currently 83 upgrade notches in use..."overcharmed LXVIII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="84" max_lvl="84" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="84" max_lvl="84" max_group="2" blue="false" hidden="true">
 		  <text>Currently 84 upgrade notches in use..."overcharmed LXIX"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="fm_hull_upgrade_point" lvl="85" max_lvl="85" max_group="2" blue="false" hidden="true">
+		<choice req="FM_HULL_UPGRADE_POINTS" lvl="85" max_lvl="85" max_group="2" blue="false" hidden="true">
 		  <text>Currently 85 upgrade notches in use..."overcharmed LXX"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
@@ -6894,7 +6894,7 @@
 			<event>
 				<text>Fortified Plating has been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_FORTIFIED</hiddenAug>
-				<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 				<item_modify>
 					<item type="scrap" min="-50" max="-50"/>
 				</item_modify>
@@ -6924,7 +6924,7 @@
 			<event>
 				<text>Encased Systems have been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_ENCASED</hiddenAug>
-				<variable name="fm_hull_upgrade_point" op="add" value="2"/>
+
 				<item_modify>
 					<item type="scrap" min="-65" max="-65"/>
 				</item_modify>
@@ -6950,7 +6950,7 @@
 			<event>
 				<text>Resilient Construction has been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_RESILIENT</hiddenAug>
-				<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 				<item_modify>
 					<item type="scrap" min="-25" max="-25"/>
 				</item_modify>
@@ -6976,7 +6976,7 @@
 			<event>
 				<text>Guardian Protocols have been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_GUARDIAN</hiddenAug>
-				<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 				<item_modify>
 					<item type="scrap" min="-30" max="-30"/>
 				</item_modify>
@@ -7002,7 +7002,7 @@
 			<event>
 				<text>Intelligent Flooring has been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_FLOORING</hiddenAug>
-				<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 				<item_modify>
 					<item type="scrap" min="-20" max="-20"/>
 				</item_modify>
@@ -7028,7 +7028,7 @@
 			<event>
 				<text>Inspirational Aerosols have been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_AERO</hiddenAug>
-				<variable name="fm_hull_upgrade_point" op="add" value="3"/>
+
 				<item_modify>
 					<item type="scrap" min="-90" max="-90"/>
 				</item_modify>
@@ -7054,7 +7054,7 @@
 			<event>
 				<text>Enhanced Respiration Grid has been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_RESPIRATION</hiddenAug>
-				<variable name="fm_hull_upgrade_point" op="add" value="2"/>
+
 				<item_modify>
 					<item type="scrap" min="-45" max="-45"/>
 				</item_modify>
@@ -7080,7 +7080,7 @@
 			<event>
 				<text>Scrap Magnet has been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_SCRAP</hiddenAug>
-				<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 				<item_modify>
 					<item type="scrap" min="-25" max="-25"/>
 				</item_modify>
@@ -7107,7 +7107,7 @@
 			<event>
 				<text>Prismatic Hullguard Cultivator has been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_VENGEANCE1</hiddenAug>
-				<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 				<item_modify>
 					<item type="scrap" min="-50" max="-50"/>
 				</item_modify>
@@ -7133,7 +7133,7 @@
 			<event>
 				<text>Crystalline Hullguard Cultivator has been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_VENGEANCE2</hiddenAug>
-				<variable name="fm_hull_upgrade_point" op="add" value="2"/>
+
 				<item_modify>
 					<item type="scrap" min="-65" max="-65"/>
 				</item_modify>
@@ -7159,7 +7159,7 @@
 			<event>
 				<text>Forgefire Hullguard Cultivator has been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_VENGEANCE3</hiddenAug>
-				<variable name="fm_hull_upgrade_point" op="add" value="3"/>
+
 				<item_modify>
 					<item type="scrap" min="-80" max="-80"/>
 				</item_modify>
@@ -7304,7 +7304,7 @@
 					<event>
 						<text>System Update has been installed to your Weapons system!</text>
 						<hiddenAug>FM_MODULAR_HULL_UPDATE_WEAPONS</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-40" max="-40"/>
 						</item_modify>
@@ -7337,7 +7337,7 @@
 					<event>
 						<text>Micro-Turret Integration has been installed to your Weapons system!</text>
 						<hiddenAug>FM_MODULAR_HULL_TURRET_WEAPONS</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-45" max="-45"/>
 						</item_modify>
@@ -7380,7 +7380,7 @@
 					<event>
 						<text>System Update has been installed to your Shields system!</text>
 						<hiddenAug>FM_MODULAR_HULL_UPDATE_SHIELDS</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-40" max="-40"/>
 						</item_modify>
@@ -7413,7 +7413,7 @@
 					<event>
 						<text>Micro-Turret Integration has been installed to your Shields system!</text>
 						<hiddenAug>FM_MODULAR_HULL_TURRET_SHIELDS</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-45" max="-45"/>
 						</item_modify>
@@ -7456,7 +7456,7 @@
 					<event>
 						<text>System Update has been installed to your Engines system!</text>
 						<hiddenAug>FM_MODULAR_HULL_UPDATE_ENGINES</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-40" max="-40"/>
 						</item_modify>
@@ -7489,7 +7489,7 @@
 					<event>
 						<text>Micro-Turret Integration has been installed to your Engines system!</text>
 						<hiddenAug>FM_MODULAR_HULL_TURRET_ENGINES</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-45" max="-45"/>
 						</item_modify>
@@ -7532,7 +7532,7 @@
 					<event>
 						<text>System Update has been installed to your Medical system!</text>
 						<hiddenAug>FM_MODULAR_HULL_UPDATE_MED</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-40" max="-40"/>
 						</item_modify>
@@ -7565,7 +7565,7 @@
 					<event>
 						<text>Micro-Turret Integration has been installed to your Medical system!</text>
 						<hiddenAug>FM_MODULAR_HULL_TURRET_MED</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-45" max="-45"/>
 						</item_modify>
@@ -7608,7 +7608,7 @@
 					<event>
 						<text>System Update has been installed to your Drones system!</text>
 						<hiddenAug>FM_MODULAR_HULL_UPDATE_DRONES</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-40" max="-40"/>
 						</item_modify>
@@ -7641,7 +7641,7 @@
 					<event>
 						<text>Micro-Turret Integration has been installed to your Drones system!</text>
 						<hiddenAug>FM_MODULAR_HULL_TURRET_DRONES</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-45" max="-45"/>
 						</item_modify>
@@ -7684,7 +7684,7 @@
 					<event>
 						<text>System Update has been installed to your Oxygen system!</text>
 						<hiddenAug>FM_MODULAR_HULL_UPDATE_OXYGEN</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-40" max="-40"/>
 						</item_modify>
@@ -7717,7 +7717,7 @@
 					<event>
 						<text>Micro-Turret Integration has been installed to your Oxygen system!</text>
 						<hiddenAug>FM_MODULAR_HULL_TURRET_OXYGEN</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-45" max="-45"/>
 						</item_modify>
@@ -7760,7 +7760,7 @@
 					<event>
 						<text>System Update has been installed to your Teleporter system!</text>
 						<hiddenAug>FM_MODULAR_HULL_UPDATE_TELEPORTER</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-40" max="-40"/>
 						</item_modify>
@@ -7793,7 +7793,7 @@
 					<event>
 						<text>Micro-Turret Integration has been installed to your Teleporter system!</text>
 						<hiddenAug>FM_MODULAR_HULL_TURRET_TELEPORTER</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-45" max="-45"/>
 						</item_modify>
@@ -7836,7 +7836,7 @@
 					<event>
 						<text>System Update has been installed to your Cloaking system!</text>
 						<hiddenAug>FM_MODULAR_HULL_UPDATE_CLOAKING</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-40" max="-40"/>
 						</item_modify>
@@ -7869,7 +7869,7 @@
 					<event>
 						<text>Micro-Turret Integration has been installed to your Cloaking system!</text>
 						<hiddenAug>FM_MODULAR_HULL_TURRET_CLOAKING</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-45" max="-45"/>
 						</item_modify>
@@ -7912,7 +7912,7 @@
 					<event>
 						<text>System Update has been installed to your Artillery system!</text>
 						<hiddenAug>FM_MODULAR_HULL_UPDATE_ARTILLERY</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-40" max="-40"/>
 						</item_modify>
@@ -7945,7 +7945,7 @@
 					<event>
 						<text>Micro-Turret Integration has been installed to your Artillery system!</text>
 						<hiddenAug>FM_MODULAR_HULL_TURRET_ARTILLERY</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-45" max="-45"/>
 						</item_modify>
@@ -7988,7 +7988,7 @@
 					<event>
 						<text>System Update has been installed to your Hacking system!</text>
 						<hiddenAug>FM_MODULAR_HULL_UPDATE_HACKING</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-40" max="-40"/>
 						</item_modify>
@@ -8021,7 +8021,7 @@
 					<event>
 						<text>Micro-Turret Integration has been installed to your Hacking system!</text>
 						<hiddenAug>FM_MODULAR_HULL_TURRET_HACKING</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-45" max="-45"/>
 						</item_modify>
@@ -8064,7 +8064,7 @@
 					<event>
 						<text>System Update has been installed to your Mind Control system!</text>
 						<hiddenAug>FM_MODULAR_HULL_UPDATE_MIND</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-40" max="-40"/>
 						</item_modify>
@@ -8097,7 +8097,7 @@
 					<event>
 						<text>Micro-Turret Integration has been installed to your Mind Control system!</text>
 						<hiddenAug>FM_MODULAR_HULL_TURRET_MIND</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-45" max="-45"/>
 						</item_modify>
@@ -8140,7 +8140,7 @@
 					<event>
 						<text>System Update has been installed to your Temporal Manipulator system!</text>
 						<hiddenAug>FM_MODULAR_HULL_UPDATE_TEMPORAL</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-40" max="-40"/>
 						</item_modify>
@@ -8173,7 +8173,7 @@
 					<event>
 						<text>Micro-Turret Integration has been installed to your Temporal Manipulator system!</text>
 						<hiddenAug>FM_MODULAR_HULL_TURRET_TEMPORAL</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-45" max="-45"/>
 						</item_modify>
@@ -8216,7 +8216,7 @@
 					<event>
 						<text>System Update has been installed to your Piloting subsystem!</text>
 						<hiddenAug>FM_MODULAR_HULL_UPDATE_PILOT</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-40" max="-40"/>
 						</item_modify>
@@ -8249,7 +8249,7 @@
 					<event>
 						<text>Micro-Turret Integration has been installed to your Piloting subsystem!</text>
 						<hiddenAug>FM_MODULAR_HULL_TURRET_PILOT</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-45" max="-45"/>
 						</item_modify>
@@ -8292,7 +8292,7 @@
 					<event>
 						<text>System Update has been installed to your Sensors subsystem!</text>
 						<hiddenAug>FM_MODULAR_HULL_UPDATE_SENSORS</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-40" max="-40"/>
 						</item_modify>
@@ -8325,7 +8325,7 @@
 					<event>
 						<text>Micro-Turret Integration has been installed to your Sensors subsystem!</text>
 						<hiddenAug>FM_MODULAR_HULL_TURRET_SENSORS</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-45" max="-45"/>
 						</item_modify>
@@ -8368,7 +8368,7 @@
 					<event>
 						<text>System Update has been installed to your Doors subsystem!</text>
 						<hiddenAug>FM_MODULAR_HULL_UPDATE_DOORS</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-40" max="-40"/>
 						</item_modify>
@@ -8401,7 +8401,7 @@
 					<event>
 						<text>Micro-Turret Integration has been installed to your Doors subsystem!</text>
 						<hiddenAug>FM_MODULAR_HULL_TURRET_DOORS</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-45" max="-45"/>
 						</item_modify>
@@ -8444,7 +8444,7 @@
 					<event>
 						<text>System Update has been installed to your Battery subsystem!</text>
 						<hiddenAug>FM_MODULAR_HULL_UPDATE_BATTERY</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-40" max="-40"/>
 						</item_modify>
@@ -8477,7 +8477,7 @@
 					<event>
 						<text>Micro-Turret Integration has been installed to your Battery subsystem!</text>
 						<hiddenAug>FM_MODULAR_HULL_TURRET_BATTERY</hiddenAug>
-						<variable name="fm_hull_upgrade_point" op="add" value="1"/>
+
 						<item_modify>
 							<item type="scrap" min="-45" max="-45"/>
 						</item_modify>
@@ -8638,7 +8638,7 @@
 			<event>
 				<text>The Saline Hull Body has been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_SALT</hiddenAug>
-				<variable name="fm_hull_capstones" op="add" value="1"/>
+
 				<item_modify>
 					<item type="scrap" min="-150" max="-150"/>
 				</item_modify>
@@ -8664,7 +8664,7 @@
 			<event>
 				<text>The Depricated Duskbringer Reactor has been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_DUSK</hiddenAug>
-				<variable name="fm_hull_capstones" op="add" value="1"/>
+
 				<item_modify>
 					<item type="scrap" min="-110" max="-110"/>
 				</item_modify>
@@ -8690,7 +8690,7 @@
 			<event>
 				<text>The Aftermarket Hull Murals have been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_MURAL</hiddenAug>
-				<variable name="fm_hull_capstones" op="add" value="1"/>
+
 				<item_modify>
 					<item type="scrap" min="-85" max="-85"/>
 				</item_modify>
@@ -8716,7 +8716,7 @@
 			<event>
 				<text>The Compressor Bypass Manifold has been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_COMPRESS</hiddenAug>
-				<variable name="fm_hull_capstones" op="add" value="1"/>
+
 				<item_modify>
 					<item type="scrap" min="-80" max="-80"/>
 				</item_modify>
@@ -8742,7 +8742,7 @@
 			<event>
 				<text>The Particlized Shields have been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_PARTICLE</hiddenAug>
-				<variable name="fm_hull_capstones" op="add" value="1"/>
+
 				<item_modify>
 					<item type="scrap" min="-100" max="-100"/>
 				</item_modify>
@@ -8768,7 +8768,7 @@
 			<event>
 				<text>The Weapon Uplink Matrices have been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_UPLINK</hiddenAug>
-				<variable name="fm_hull_capstones" op="add" value="1"/>
+
 				<item_modify>
 					<item type="scrap" min="-95" max="-95"/>
 				</item_modify>
@@ -8794,7 +8794,7 @@
 			<event>
 				<text>The Perfect Onboard Efficency has been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_PERFECT</hiddenAug>
-				<variable name="fm_hull_capstones" op="add" value="1"/>
+
 				<item_modify>
 					<item type="scrap" min="-140" max="-140"/>
 				</item_modify>
@@ -8824,7 +8824,7 @@
 			<event>
 				<text>The Infinitum Cyclo-Barrier has been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_FASTSHIELD</hiddenAug>
-				<variable name="fm_hull_capstones" op="add" value="1"/>
+
 				<item_modify>
 					<item type="scrap" min="-80" max="-80"/>
 				</item_modify>
@@ -8854,7 +8854,7 @@
 			<event>
 				<text>The Infinitum Cyclo-Arsenal has been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_FASTWEAPON</hiddenAug>
-				<variable name="fm_hull_capstones" op="add" value="1"/>
+
 				<item_modify>
 					<item type="scrap" min="-120" max="-120"/>
 				</item_modify>
@@ -8880,7 +8880,7 @@
 			<event>
 				<text>The Metaplasmatic Corrosion Aura has been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_CREWKILL</hiddenAug>
-				<variable name="fm_hull_capstones" op="add" value="1"/>
+
 				<item_modify>
 					<item type="scrap" min="-105" max="-105"/>
 				</item_modify>
@@ -8906,7 +8906,7 @@
 			<event>
 				<text>The Electromagnetic Hull Body has been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_MAGNETIC</hiddenAug>
-				<variable name="fm_hull_capstones" op="add" value="1"/>
+
 				<item_modify>
 					<item type="scrap" min="-100" max="-100"/>
 				</item_modify>

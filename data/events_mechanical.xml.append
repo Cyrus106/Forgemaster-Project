@@ -207,7 +207,7 @@
 	</event>
 	<event name="FM_ONDAMAGE_OVERCHARMED">
 		<loadEventList default="FM_ONDAMAGE_HULL_ARM">
-			<event req="fm_hull_upgrade_point" lvl="16">
+			<event req="FM_HULL_UPGRADE_POINTS" lvl="16">
 				<loadEvent>FM_ONDAMAGE_HULL_ARM</loadEvent>
 				<queueEvent>OVERCHARMED_RELOAD</queueEvent>
 			</event>
