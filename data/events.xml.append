@@ -116,6 +116,11 @@
 	</mod:findLike>
 </mod:findName>
 
+<mod:findName type="event" name="START_BEACON">
+	<!-- This tells the game to give the hidden augment associated with your addon being installed to the player
+	right at the beginning of the game. -->
+	<mod-append:hiddenAug>ADDON_INSTALLED_FORGEMASTER</mod-append:hiddenAug>
+</mod:findName>
 
 <event name="GIVE_RAGE_TWISTEDMONK">
 	<triggeredEvent event="TRUENOTHING">

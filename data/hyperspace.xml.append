@@ -11825,16 +11825,6 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<mod-append:name>TWISTED_FLAK_FORGE</mod-append:name>
 		</mod:findName>
 	</mod:findLike>
-
-
-	<!-- ADDON COMPATIBILITY -->
-	<events>
-		<mod:findName type="event" name="START_BEACON">
-			<!-- This tells the game to give the hidden augment associated with your addon being installed to the player
-			right at the beginning of the game. -->
-			<mod-append:hiddenAug>ADDON_INSTALLED_FORGEMASTER</mod-append:hiddenAug>
-		</mod:findName>
-	</events>
 </FTL>
 
 <FTL><!--Modular armor stuff, augment effects, variables, reqs, like all of it-->
