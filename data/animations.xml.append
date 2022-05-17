@@ -3036,6 +3036,20 @@ try this later
 <boost>beam_menaulion_chargeglow</boost>	-->
 
 <FTL><!-- LASERS-->
+
+	<animSheet name="fm_abduct_laser" w="1440" h="95" fw="45" fh="95">weapon_laser/fm_abduct_laser.png</animSheet>
+	<weaponAnim name="fm_abduct_laser">
+		<sheet>fm_abduct_laser</sheet>
+		<desc length="32" x="0" y="0"/>
+		<chargedFrame>1</chargedFrame>
+		<fireFrame>20</fireFrame>
+		<firePoint  x="25" y="21"/>
+		<mountPoint x="2" y="75"/>
+		<chargeImage>weapon_laser/fm_abduct_laser_glow.png</chargeImage>
+	</weaponAnim>
+
+
+
 	<animSheet name="fm_flamethrower" w="825" h="60" fw="33" fh="60">weapon_flamethrower/fm_flamethrower.png</animSheet>
 	<weaponAnim name="fm_flamethrower">
 		<sheet>fm_flamethrower</sheet>
@@ -3719,6 +3733,15 @@ try this later
 
 
 <FTL><!-- LASER PROJECTILES -->
+
+	<animSheet name="fm_abduct_laser_proj" w="80" h="15" fw="80" fh="15">weapon_projectiles/fm_abduct_laser_proj.png</animSheet>
+	<anim name="fm_abduct_laser_proj">
+		<sheet>fm_abduct_laser_proj</sheet>
+		<desc length="1" x="0" y="0"/>
+		<time>1</time>
+	</anim>
+
+
 	<animSheet name="fm_flamethrower_shot" w="80" h="27" fw="80" fh="27">weapon_projectiles/fm_fireparticle1.png</animSheet>
 	<anim name="fm_flamethrower_shot">
 		<sheet>fm_flamethrower_shot</sheet>
