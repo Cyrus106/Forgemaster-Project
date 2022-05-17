@@ -3910,17 +3910,21 @@
 		<short>Abduction Laser</short>
 		<tip>tip_laser</tip>
 		<desc>Yoinky the crew, sploinky the crew.</desc>
-		<tooltip>Abduction laser; 0 damage, 1 shot. 9 second cooldown.</tooltip>
+		<tooltip>Abduction laser; 0 damage, 1 shot. 3 second cooldown, cannot miss.</tooltip>
 		<damage>0</damage>
 		<shots>1</shots>
 		<sp>10</sp>
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
-		<cooldown>9</cooldown>
+		<cooldown>3</cooldown>
+		<speed>90</speed>
+		<accuracyMod>100</accuracyMod>
 
 		<statBoosts>
 
 			<!-- The way this works: the first two statboosts kill crew and prevent them from cloning, and the last, repeated statboost makes it so they spawn a boarder on your ship when dying.-->
+
+
 
 			<statBoost name="maxHealth"> <!--INSTANTLY KILL CREW, ENEMY ONLY-->
 				<boostType>SET</boostType>
@@ -3942,6 +3946,49 @@
 				<blackList load="LIST_FM_NOABDUCT"/>
 			</statBoost>
 
+			<!--Just some stuff I was testing out-->
+			<!--<statBoost name="temporaryEffect">
+				<boostType>SET</boostType>
+				<value>true</value>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<priority>999999</priority>
+				<droneTarget>CREW</droneTarget>
+				<blackList load="LIST_FM_NOABDUCT"/>
+				<duration>0.5</duration>
+				<animSheet baseVisible="false">fm_forgemasterperson_teleport</animSheet>
+			</statBoost>-->
+
+			<!--<statBoost name="powerEffect">
+					<boostType>SET</boostType>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<priority>999999</priority>
+					<blackList load="LIST_FM_NOABDUCT"/>
+					<powerEffect>
+						<effectAnim>fm_forgemasterperson_charge</effectAnim>
+						<animFrame>0</animFrame>
+						<selfHealth>-9999999</selfHealth>
+						<cooldown>0</cooldown>
+						<powerCharges>1</powerCharges>
+						<activateWhenReady enemiesOnly="false">true</activateWhenReady>
+						<jumpCooldown>full</jumpCooldown>
+						<powerSounds>
+							<powerSound>silence</powerSound>
+						</powerSounds>
+						<temporaryEffect>
+							<duration>0.5</duration>
+							<cooldownColor r="198" g="198" b="198"/>
+							<finishSounds>
+								<finishSound>silence</finishSound>
+							</finishSounds>
+							<animSheet baseVisible="false">fm_forgemasterperson_charge</animSheet>
+						</temporaryEffect>
+						<buttonText>TELEPORT</buttonText>
+						<tooltip>Ready: Get Yoinked.</tooltip>
+						<cooldownColor r="170" g="206" b="39"/>
+					</powerEffect>
+			</statBoost>  -->
 
 			<!--<statBoost name="deathEffect"> Repeat for every race, where race_id is the actual id
 				<boostType>SET</boostType>
@@ -7188,17 +7235,21 @@
 		</statBoosts>
 		<power>1</power>
 		<cost>40</cost>
+		<fireTime>0.6</fireTime>
 		<bp>2</bp>
 		<rarity>0</rarity>
-		<image>laser_burst</image>
+		<image>fm_abduct_laser_proj</image>
 		<launchSounds>
-			<sound>lightLaser1</sound>
+			<!--<sound>lightLaser1</sound>
 			<sound>lightLaser2</sound>
-			<sound>lightLaser3</sound>
+			<sound>lightLaser3</sound>-->
+
+			<sound>fm_ancalagon_shot</sound>
 		</launchSounds>
 		<hitShipSounds>
-			<sound>hitHull2</sound>
-			<sound>hitHull3</sound>
+			<!--<sound>hitHull2</sound>
+			<sound>hitHull3</sound>-->
+			<sound>teleport</sound>
 		</hitShipSounds>
 		<hitShieldSounds>
 			<sound>hitShield1</sound>
@@ -7208,7 +7259,7 @@
 		<missSounds>
 			<sound>miss</sound>
 		</missSounds>
-		<weaponArt>laser_burst_1</weaponArt>
+		<weaponArt>fm_abduct_laser</weaponArt>
 		<iconImage>laser</iconImage>
 	</weaponBlueprint>
 
