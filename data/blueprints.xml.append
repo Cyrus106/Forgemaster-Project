@@ -594,7 +594,7 @@
 		<droneList drones="4" count="2" />
 		<health amount="30" />
 		<maxPower amount="9" />
-		<aug name="SLUG_GEL" />
+		<aug name="LOCKED_SLUG_GEL" />
 		<aug name="BRAIN_DONATION" />
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED1_2" layout="zmt_player_duskbringer_suicide" img="player_ship_cracked_zmt_boss_duskbringer_suicide">
@@ -8937,7 +8937,7 @@
 				<priority>999999</priority>
 				<blackList load="LIST_FM_PLSNOEFFECT"/>
 				<powerEffect>
-					<cooldown>6</cooldown>
+					<cooldown>4</cooldown>
 					<activateWhenReady enemiesOnly="false">true</activateWhenReady>
 					<jumpCooldown>full</jumpCooldown>
 					<powerSounds>
@@ -8952,6 +8952,19 @@
 					<effectAnim>explosion_ion</effectAnim>
 					<selfHealth>-15</selfHealth>
 					<affectsSelf>true</affectsSelf>
+					<temporaryEffect>                                                                      Creates a temporary effect with the ability, modifying the crewmember's stats. Modified stats replace the original stats.
+						<duration>2</duration>                                                            Duration of the temporary effect.
+						<cooldownColor r="167" g="250" b="255"/>
+						<controllable>false</controllable>
+						<noAI>true</noAI>
+						<moveSpeedMultiplier>0</moveSpeedMultiplier>
+						<canFight>false</canFight>
+						<canRepair>false</canRepair>
+						<canSabotage>false</canSabotage>
+						<effectAnim>mindcontrol</effectAnim>                       Adds an additional animSheet on top of the normal crew sheet, and optionally hides the normal crew sheet.
+						<animFrame>0</animFrame>
+						<stunMultiplier>5.0</stunMultiplier>
+					</temporaryEffect>
 				</powerEffect>
 			</statBoost>
 		</statBoosts>
