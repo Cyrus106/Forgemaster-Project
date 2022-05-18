@@ -11262,7 +11262,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 	</augments>
 
 
-<!--All weapons (including some addon compat) vengeance augments-->
+	<!--All weapons (including some addon compat) vengeance augments-->
 	<augments>
 		<aug name="FM_VENGEANCE_SILLY_ARTILLERY_BEAM_MINING">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
