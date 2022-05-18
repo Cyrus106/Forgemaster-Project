@@ -6647,56 +6647,69 @@
 			<text>You cannot Install vengeance modules now, install a Capstone first!</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<!--system modules-->
+
+		<!--More vengeance modules-->
 		<choice req="CAN_INSTALL_MODULE_TRUE" lvl="1" max_group="5" blue="false" hidden="true">
+			<text>Install more vengenace modules</text>
+			<event>
+				<loadEvent>VENGEFUL_INSTALL</loadEvent>
+			</event>
+		</choice>
+		<choice req="CAN_INSTALL_MODULE_FALSE" lvl="1" max_group="5" blue="false" hidden="true">
+			<text>You cannot Install vengeance modules now, install a Capstone first!</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+
+		<!--system modules-->
+		<choice req="CAN_INSTALL_MODULE_TRUE" lvl="1" max_group="6" blue="false" hidden="true">
 			<text>Install system modules</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS</loadEvent>
 			</event>
 		</choice>
-		<choice req="CAN_INSTALL_MODULE_FALSE" lvl="1" max_group="5" blue="false" hidden="true">
+		<choice req="CAN_INSTALL_MODULE_FALSE" lvl="1" max_group="6" blue="false" hidden="true">
 			<text>You cannot Install system modules now, install a Capstone first!</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<!--capstone install menu-->
-		<choice req="CAN_INSTALL_CAPSTONE1_TRUE" lvl="1" max_group="6" blue="true" hidden="true">
+		<choice req="CAN_INSTALL_CAPSTONE1_TRUE" lvl="1" max_group="7" blue="true" hidden="true">
 			<text>Install your first Capstone module.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE</loadEvent>
 			</event>
 		</choice>
-		<choice req="CAN_INSTALL_CAPSTONE2_TRUE" lvl="1" max_group="6" blue="true" hidden="true">
+		<choice req="CAN_INSTALL_CAPSTONE2_TRUE" lvl="1" max_group="7" blue="true" hidden="true">
 			<text>Install your second Capstone module.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE</loadEvent>
 			</event>
 		</choice>
-		<choice req="CAN_INSTALL_CAPSTONE3_TRUE" lvl="1" max_group="6" blue="true" hidden="true">
+		<choice req="CAN_INSTALL_CAPSTONE3_TRUE" lvl="1" max_group="7" blue="true" hidden="true">
 			<text>Install your third (and last) Capstone module!</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE</loadEvent>
 			</event>
 		</choice>
-		<choice req="CAN_INSTALL_CAPSTONEEXTRA_TRUE" lvl="1" max_group="6" blue="true" hidden="true">
+		<choice req="CAN_INSTALL_CAPSTONEEXTRA_TRUE" lvl="1" max_group="7" blue="true" hidden="true">
 			<text>Install an extra... Capstone module?!</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE</loadEvent>
 			</event>
 		</choice>
-		<choice req="CAN_INSTALL_CAPSTONE1_FALSE" lvl="1" max_group="6" blue="false" hidden="true">
+		<choice req="CAN_INSTALL_CAPSTONE1_FALSE" lvl="1" max_group="7" blue="false" hidden="true">
 			<text>You cannot Install your first Capstone module yet, use 5 upgrade notches first!</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="CAN_INSTALL_CAPSTONE2_FALSE" lvl="1" max_group="6" blue="false" hidden="true">
+		<choice req="CAN_INSTALL_CAPSTONE2_FALSE" lvl="1" max_group="7" blue="false" hidden="true">
 			<text>You cannot Install your second Capstone module yet, use 10 upgrade notches first!</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="CAN_INSTALL_CAPSTONE3_FALSE" lvl="1" max_group="6" blue="false" hidden="true">
+		<choice req="CAN_INSTALL_CAPSTONE3_FALSE" lvl="1" max_group="7" blue="false" hidden="true">
 			<text>You cannot Install your third (and last) Capstone module yet, use 15 upgrade notches first!</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="CAN_INSTALL_CAPSTONEEXTRA_FALSE" lvl="1" max_group="6" blue="false" hidden="true">
-			<text>You cannot Install even more Capstone modules, its illegal!</text>
+		<choice req="CAN_INSTALL_CAPSTONEEXTRA_FALSE" lvl="1" max_group="7" blue="false" hidden="true">
+			<text>You cannot Install even more Capstone modules, it's illegal!</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL" lvl="1" max_group="8" blue="false"><!--Installed module list-->

@@ -11,7 +11,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_BURST_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -26,7 +28,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_BURST_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -41,7 +45,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_BURST_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -56,7 +62,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_BURST_5</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -71,7 +79,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_BURST_8</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -86,7 +96,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_HEAVY_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -101,7 +113,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_HEAVY_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -116,7 +130,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_HEAVY_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -131,7 +147,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_HEAVY_CHAINGUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -146,7 +164,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_HEAVY_PIERCE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -161,7 +181,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_HULL_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -176,7 +198,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_HULL_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -191,7 +215,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_HULL_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -206,7 +232,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_HULL_CHAINGUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -221,7 +249,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_LIGHT</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -236,7 +266,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_LIGHT_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -251,7 +283,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_PIERCE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -266,7 +300,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_PIERCE_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -281,7 +317,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_CHAINGUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -296,7 +334,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_CHAINGUN_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -311,7 +351,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_CHARGEGUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -326,7 +368,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_CHARGEGUN_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -341,7 +385,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_CHARGEGUN_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -356,7 +402,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_CHARGE_CHAIN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -371,7 +419,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_CHAINGUN_DAMAGE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -386,7 +436,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_FIRE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -401,7 +453,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -416,7 +470,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_FROST_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -431,7 +487,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_FROST_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -446,7 +504,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_FROST_2_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -461,7 +521,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -476,7 +538,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_PARTICLE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -491,7 +555,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_PARTICLE_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -506,7 +572,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_PARTICLE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -521,7 +589,9 @@
 			<hiddenAug>FM_VENGEANCE_MISSILES_PARTICLE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -536,7 +606,9 @@
 			<hiddenAug>FM_VENGEANCE_MISSILES_PARTICLE_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -551,7 +623,9 @@
 			<hiddenAug>FM_VENGEANCE_MISSILES_ENERGY</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -566,7 +640,9 @@
 			<hiddenAug>FM_VENGEANCE_ION_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -581,7 +657,9 @@
 			<hiddenAug>FM_VENGEANCE_ION_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -596,7 +674,9 @@
 			<hiddenAug>FM_VENGEANCE_ION_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -611,7 +691,9 @@
 			<hiddenAug>FM_VENGEANCE_ION_4</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -626,7 +708,9 @@
 			<hiddenAug>FM_VENGEANCE_ION_TRI</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -641,7 +725,9 @@
 			<hiddenAug>FM_VENGEANCE_ION_INSTANT</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -656,7 +742,9 @@
 			<hiddenAug>FM_VENGEANCE_ION_CHAINGUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -671,7 +759,9 @@
 			<hiddenAug>FM_VENGEANCE_ION_CHARGEGUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -686,7 +776,9 @@
 			<hiddenAug>FM_VENGEANCE_ION_CHARGEGUN_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -701,7 +793,9 @@
 			<hiddenAug>FM_VENGEANCE_ION_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -716,7 +810,9 @@
 			<hiddenAug>FM_VENGEANCE_ION_STUN_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -731,7 +827,9 @@
 			<hiddenAug>FM_VENGEANCE_ION_STUN_HEAVY</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -746,7 +844,9 @@
 			<hiddenAug>FM_VENGEANCE_ION_STUN_CHARGEGUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -761,7 +861,9 @@
 			<hiddenAug>FM_VENGEANCE_ION_STUN_CHARGEGUN_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -776,7 +878,9 @@
 			<hiddenAug>FM_VENGEANCE_ION_PIERCE_DISCO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -791,7 +895,9 @@
 			<hiddenAug>FM_VENGEANCE_ION_PIERCE_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -806,7 +912,9 @@
 			<hiddenAug>FM_VENGEANCE_ION_PIERCE_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -821,7 +929,9 @@
 			<hiddenAug>FM_VENGEANCE_ION_FIRE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -836,7 +946,9 @@
 			<hiddenAug>FM_VENGEANCE_ION_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -851,7 +963,9 @@
 			<hiddenAug>FM_VENGEANCE_MISSILES_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -866,7 +980,9 @@
 			<hiddenAug>FM_VENGEANCE_MISSILES_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -881,7 +997,9 @@
 			<hiddenAug>FM_VENGEANCE_MISSILES_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -896,7 +1014,9 @@
 			<hiddenAug>FM_VENGEANCE_MISSILES_4</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -911,7 +1031,9 @@
 			<hiddenAug>FM_VENGEANCE_MISSILES_4_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -926,7 +1048,9 @@
 			<hiddenAug>FM_VENGEANCE_MISSILES_BURST</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -941,7 +1065,9 @@
 			<hiddenAug>FM_VENGEANCE_MISSILES_BURST_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -956,7 +1082,9 @@
 			<hiddenAug>FM_VENGEANCE_MISSILES_BURST_2_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -971,7 +1099,9 @@
 			<hiddenAug>FM_VENGEANCE_MISSILES_CLOAK</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -986,7 +1116,9 @@
 			<hiddenAug>FM_VENGEANCE_MISSILES_FIRE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1001,7 +1133,9 @@
 			<hiddenAug>FM_VENGEANCE_MISSILES_FIRE_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1016,7 +1150,9 @@
 			<hiddenAug>FM_VENGEANCE_MISSILES_FREE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1031,7 +1167,9 @@
 			<hiddenAug>FM_VENGEANCE_MISSILES_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1046,7 +1184,9 @@
 			<hiddenAug>FM_VENGEANCE_MISSILES_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1061,7 +1201,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1076,7 +1218,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1091,7 +1235,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_2_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1106,7 +1252,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1121,7 +1269,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_4</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1136,7 +1286,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_LONG</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1151,7 +1303,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_LONG_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1166,7 +1320,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_SCYTHE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1181,7 +1337,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_CHAIN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1196,7 +1354,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_PIERCE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1211,7 +1371,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_FIRE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1226,7 +1388,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_FIRE_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1241,7 +1405,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_FIRE_PIERCE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1256,7 +1422,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_FIRE_INSTANT</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1271,7 +1439,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_BREACH</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1286,7 +1456,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_HULL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1301,7 +1473,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_HULL_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1316,7 +1490,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_MINING</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1331,7 +1507,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_ADAPT</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1346,7 +1524,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_ADAPT_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1361,7 +1541,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1376,7 +1558,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_BIO_CHAIN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1391,7 +1575,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1406,7 +1592,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_GUILLOTINE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1421,7 +1609,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_GUILLOTINE_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1436,7 +1626,9 @@
 			<hiddenAug>FM_VENGEANCE_FOCUS_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1451,7 +1643,9 @@
 			<hiddenAug>FM_VENGEANCE_FOCUS_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1466,7 +1660,9 @@
 			<hiddenAug>FM_VENGEANCE_FOCUS_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1481,7 +1677,9 @@
 			<hiddenAug>FM_VENGEANCE_FOCUS_CHAIN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1496,7 +1694,9 @@
 			<hiddenAug>FM_VENGEANCE_FOCUS_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1511,7 +1711,9 @@
 			<hiddenAug>FM_VENGEANCE_FOCUS_BIO_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1526,7 +1728,9 @@
 			<hiddenAug>FM_VENGEANCE_BOMB_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1541,7 +1745,9 @@
 			<hiddenAug>FM_VENGEANCE_BOMB_BREACH_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1556,7 +1762,9 @@
 			<hiddenAug>FM_VENGEANCE_BOMB_FIRE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1571,7 +1779,9 @@
 			<hiddenAug>FM_VENGEANCE_BOMB_FREE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1586,7 +1796,9 @@
 			<hiddenAug>FM_VENGEANCE_BOMB_ION</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1601,7 +1813,9 @@
 			<hiddenAug>FM_VENGEANCE_BOMB_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1616,7 +1830,9 @@
 			<hiddenAug>FM_VENGEANCE_BOMB_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1631,7 +1847,9 @@
 			<hiddenAug>FM_VENGEANCE_BOMB_LOCK</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1646,7 +1864,9 @@
 			<hiddenAug>FM_VENGEANCE_BOMB_HEAL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1661,7 +1881,9 @@
 			<hiddenAug>FM_VENGEANCE_BOMB_HEAL_SYSTEM</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1676,7 +1898,9 @@
 			<hiddenAug>FM_VENGEANCE_BOMB_HEAL_SYSTEM_STRONG</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1691,7 +1915,9 @@
 			<hiddenAug>FM_VENGEANCE_BOMB_BUFF</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1706,7 +1932,9 @@
 			<hiddenAug>FM_VENGEANCE_ENERGY_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1721,7 +1949,9 @@
 			<hiddenAug>FM_VENGEANCE_ENERGY_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1736,7 +1966,9 @@
 			<hiddenAug>FM_VENGEANCE_ENERGY_2_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1751,7 +1983,9 @@
 			<hiddenAug>FM_VENGEANCE_ENERGY_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1766,7 +2000,9 @@
 			<hiddenAug>FM_VENGEANCE_ENERGY_HULL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1781,7 +2017,9 @@
 			<hiddenAug>FM_VENGEANCE_ENERGY_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1796,7 +2034,9 @@
 			<hiddenAug>FM_VENGEANCE_ENERGY_STUN_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1811,7 +2051,9 @@
 			<hiddenAug>FM_VENGEANCE_ENERGY_CHAINGUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1826,7 +2068,9 @@
 			<hiddenAug>FM_VENGEANCE_ENERGY_CHARGEGUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1841,7 +2085,9 @@
 			<hiddenAug>FM_VENGEANCE_ENERGY_CHARGEGUN_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1856,7 +2102,9 @@
 			<hiddenAug>FM_VENGEANCE_SHOTGUN_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1871,7 +2119,9 @@
 			<hiddenAug>FM_VENGEANCE_SHOTGUN_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1886,7 +2136,9 @@
 			<hiddenAug>FM_VENGEANCE_SHOTGUN_2_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1901,7 +2153,9 @@
 			<hiddenAug>FM_VENGEANCE_SHOTGUN_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1916,7 +2170,9 @@
 			<hiddenAug>FM_VENGEANCE_SHOTGUN_4</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1931,7 +2187,9 @@
 			<hiddenAug>FM_VENGEANCE_SHOTGUN_CHARGE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1946,7 +2204,9 @@
 			<hiddenAug>FM_VENGEANCE_SHOTGUN_CHAIN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1961,7 +2221,9 @@
 			<hiddenAug>FM_VENGEANCE_SHOTGUN_INSTANT</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1976,7 +2238,9 @@
 			<hiddenAug>FM_VENGEANCE_SHOTGUN_FIRE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -1991,7 +2255,9 @@
 			<hiddenAug>FM_VENGEANCE_SHOTGUN_ION</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2006,7 +2272,9 @@
 			<hiddenAug>FM_VENGEANCE_SHOTGUN_TOXIC</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2021,7 +2289,9 @@
 			<hiddenAug>FM_VENGEANCE_SHOTGUN_TOXIC_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2036,7 +2306,9 @@
 			<hiddenAug>FM_VENGEANCE_KERNEL_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2051,7 +2323,9 @@
 			<hiddenAug>FM_VENGEANCE_KERNEL_1_ELITE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2066,7 +2340,9 @@
 			<hiddenAug>FM_VENGEANCE_KERNEL_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2081,7 +2357,9 @@
 			<hiddenAug>FM_VENGEANCE_KERNEL_2_ELITE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2096,7 +2374,9 @@
 			<hiddenAug>FM_VENGEANCE_KERNEL_HEAVY</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2111,7 +2391,9 @@
 			<hiddenAug>FM_VENGEANCE_KERNEL_HEAVY_ELITE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2126,7 +2408,9 @@
 			<hiddenAug>FM_VENGEANCE_KERNEL_FIRE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2141,7 +2425,9 @@
 			<hiddenAug>FM_VENGEANCE_KERNEL_CHAIN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2156,7 +2442,9 @@
 			<hiddenAug>FM_VENGEANCE_KERNEL_CHAIN_ELITE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2171,7 +2459,9 @@
 			<hiddenAug>FM_VENGEANCE_KERNEL_CHARGE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2186,7 +2476,9 @@
 			<hiddenAug>FM_VENGEANCE_KERNEL_CHARGE_ELITE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2201,7 +2493,9 @@
 			<hiddenAug>FM_VENGEANCE_SPORE_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2216,7 +2510,9 @@
 			<hiddenAug>FM_VENGEANCE_SPORE_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2231,7 +2527,9 @@
 			<hiddenAug>FM_VENGEANCE_SPORE_HEAVY</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2246,7 +2544,9 @@
 			<hiddenAug>FM_VENGEANCE_SPORE_CHAIN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2261,7 +2561,9 @@
 			<hiddenAug>FM_VENGEANCE_SPORE_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2276,7 +2578,9 @@
 			<hiddenAug>FM_VENGEANCE_CRYSTAL_BURST_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2291,7 +2595,9 @@
 			<hiddenAug>FM_VENGEANCE_CRYSTAL_BURST_1_RED</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2306,7 +2612,9 @@
 			<hiddenAug>FM_VENGEANCE_CRYSTAL_BURST_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2321,7 +2629,9 @@
 			<hiddenAug>FM_VENGEANCE_CRYSTAL_BURST_2_RED</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2336,7 +2646,9 @@
 			<hiddenAug>FM_VENGEANCE_CRYSTAL_HEAVY_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2351,7 +2663,9 @@
 			<hiddenAug>FM_VENGEANCE_CRYSTAL_HEAVY_1_RED</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2366,7 +2680,9 @@
 			<hiddenAug>FM_VENGEANCE_CRYSTAL_HEAVY_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2381,7 +2697,9 @@
 			<hiddenAug>FM_VENGEANCE_CRYSTAL_HEAVY_2_RED</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2396,7 +2714,9 @@
 			<hiddenAug>FM_VENGEANCE_CRYSTAL_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2411,7 +2731,9 @@
 			<hiddenAug>FM_VENGEANCE_CRYSTAL_STUN_RED</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2426,7 +2748,9 @@
 			<hiddenAug>FM_VENGEANCE_CRYSTAL_SHOTGUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2441,7 +2765,9 @@
 			<hiddenAug>FM_VENGEANCE_CRYSTAL_SHOTGUN_RED</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2456,7 +2782,9 @@
 			<hiddenAug>FM_VENGEANCE_CRYSTAL_CHARGEGUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2471,7 +2799,9 @@
 			<hiddenAug>FM_VENGEANCE_CRYSTAL_CHARGEGUN_RED</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2486,7 +2816,9 @@
 			<hiddenAug>FM_VENGEANCE_MINELAUNCHER_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2501,7 +2833,9 @@
 			<hiddenAug>FM_VENGEANCE_MINELAUNCHER_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2516,7 +2850,9 @@
 			<hiddenAug>FM_VENGEANCE_MINELAUNCHER_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2531,7 +2867,9 @@
 			<hiddenAug>FM_VENGEANCE_MINELAUNCHER_FREE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2546,7 +2884,9 @@
 			<hiddenAug>FM_VENGEANCE_MINELAUNCHER_FIRE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2561,7 +2901,9 @@
 			<hiddenAug>FM_VENGEANCE_MINELAUNCHER_BREACH</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2576,7 +2918,9 @@
 			<hiddenAug>FM_VENGEANCE_MINELAUNCHER_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2591,7 +2935,9 @@
 			<hiddenAug>FM_VENGEANCE_MINELAUNCHER_CRYSTAL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2606,7 +2952,9 @@
 			<hiddenAug>FM_VENGEANCE_MINELAUNCHER_KERNEL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2621,7 +2969,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_CONSERVATIVE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2636,7 +2986,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_CONSERVATIVE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2651,7 +3003,9 @@
 			<hiddenAug>FM_VENGEANCE_ION_CONSERVATIVE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2666,7 +3020,9 @@
 			<hiddenAug>FM_VENGEANCE_MISSILES_CONSERVATIVE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2681,7 +3037,9 @@
 			<hiddenAug>FM_VENGEANCE_BOMB_CONSERVATIVE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2696,7 +3054,9 @@
 			<hiddenAug>FM_VENGEANCE_ENERGY_CONSERVATIVE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2711,7 +3071,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_BIO_CONSERVATIVE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2726,7 +3088,9 @@
 			<hiddenAug>FM_VENGEANCE_ZENITH_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2741,7 +3105,9 @@
 			<hiddenAug>FM_VENGEANCE_LANCE_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2756,7 +3122,9 @@
 			<hiddenAug>FM_VENGEANCE_BOMB_CLUSTER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2771,7 +3139,9 @@
 			<hiddenAug>FM_VENGEANCE_ANCIENT_LASER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2786,7 +3156,9 @@
 			<hiddenAug>FM_VENGEANCE_ANCIENT_LASER_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2801,7 +3173,9 @@
 			<hiddenAug>FM_VENGEANCE_ANCIENT_LASER_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2816,7 +3190,9 @@
 			<hiddenAug>FM_VENGEANCE_ANCIENT_MISSILES</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2831,7 +3207,9 @@
 			<hiddenAug>FM_VENGEANCE_ANCIENT_BOMB</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2846,7 +3224,9 @@
 			<hiddenAug>FM_VENGEANCE_ANCIENT_MINELAUNCHER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2861,7 +3241,9 @@
 			<hiddenAug>FM_VENGEANCE_ANCIENT_BEAM</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2876,7 +3258,9 @@
 			<hiddenAug>FM_VENGEANCE_ANCIENT_BEAM_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2891,7 +3275,9 @@
 			<hiddenAug>FM_VENGEANCE_ANCIENT_BEAM_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2906,7 +3292,9 @@
 			<hiddenAug>FM_VENGEANCE_ANCIENT_HAVOC</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2921,7 +3309,9 @@
 			<hiddenAug>FM_VENGEANCE_ANCIENT_FOCUS</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2936,7 +3326,9 @@
 			<hiddenAug>FM_VENGEANCE_ANCIENT_FOCUS_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2951,7 +3343,9 @@
 			<hiddenAug>FM_VENGEANCE_ANCIENT_ION_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2966,7 +3360,9 @@
 			<hiddenAug>FM_VENGEANCE_ANCIENT_ION_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2981,7 +3377,9 @@
 			<hiddenAug>FM_VENGEANCE_ANCIENT_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -2996,7 +3394,9 @@
 			<hiddenAug>FM_VENGEANCE_ROYAL_LASER_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3011,7 +3411,9 @@
 			<hiddenAug>FM_VENGEANCE_ROYAL_BEAM_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3026,7 +3428,9 @@
 			<hiddenAug>FM_VENGEANCE_ROYAL_HAVOC</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3041,7 +3445,9 @@
 			<hiddenAug>FM_VENGEANCE_ROYAL_FOCUS</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3056,7 +3462,9 @@
 			<hiddenAug>FM_VENGEANCE_ROYAL_MISSILES</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3071,7 +3479,9 @@
 			<hiddenAug>FM_VENGEANCE_ROYAL_BOMB</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3086,7 +3496,9 @@
 			<hiddenAug>FM_VENGEANCE_ROYAL_ION_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3101,7 +3513,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_REPAIR</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3116,7 +3530,9 @@
 			<hiddenAug>FM_VENGEANCE_CRASH_LASER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3131,7 +3547,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_HARDSCIFI</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3146,7 +3564,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_BURST_SYLVAN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3161,7 +3581,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_BURST_5_SYLVAN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3176,7 +3598,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_4_SYLVAN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3191,7 +3615,9 @@
 			<hiddenAug>FM_VENGEANCE_SHOTGUN_GOLD_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3206,7 +3632,9 @@
 			<hiddenAug>FM_VENGEANCE_HORSE_GUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3221,7 +3649,9 @@
 			<hiddenAug>FM_VENGEANCE_MISSILES_ROCK</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3236,7 +3666,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_BISHOP</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3251,7 +3683,9 @@
 			<hiddenAug>FM_VENGEANCE_ION_PIERCE_CHAIN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3266,7 +3700,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_FIRE_SPECIAL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3281,7 +3717,9 @@
 			<hiddenAug>FM_VENGEANCE_BOMB_CHERRI</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3296,7 +3734,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_CHAINGUN_GOLD</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3311,7 +3751,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_CHAINGUN_GOLD_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3326,7 +3768,9 @@
 			<hiddenAug>FM_VENGEANCE_SALT_LAUNCHER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3341,7 +3785,9 @@
 			<hiddenAug>FM_VENGEANCE_SHOTGUN_GOLD</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3356,7 +3802,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_SHELL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3371,7 +3819,9 @@
 			<hiddenAug>FM_VENGEANCE_ZOLTAN_DELETER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3386,7 +3836,9 @@
 			<hiddenAug>FM_VENGEANCE_GATLING_VERSION1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3401,7 +3853,9 @@
 			<hiddenAug>FM_VENGEANCE_GATLING_VERSION2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3416,7 +3870,9 @@
 			<hiddenAug>FM_VENGEANCE_GATLING_VERSION3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3431,7 +3887,9 @@
 			<hiddenAug>FM_VENGEANCE_GATLING_VERSION4</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3446,7 +3904,9 @@
 			<hiddenAug>FM_VENGEANCE_GATLING_VERSION5</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3461,7 +3921,9 @@
 			<hiddenAug>FM_VENGEANCE_GATLING_VERSION6</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3476,7 +3938,9 @@
 			<hiddenAug>FM_VENGEANCE_GATLING_VERSION7</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3491,7 +3955,9 @@
 			<hiddenAug>FM_VENGEANCE_GATLING_VERSION8</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3506,7 +3972,9 @@
 			<hiddenAug>FM_VENGEANCE_GATLING_SYLVAN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3521,7 +3989,9 @@
 			<hiddenAug>FM_VENGEANCE_GATLING_SYLVAN_HONOR</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3536,7 +4006,9 @@
 			<hiddenAug>FM_VENGEANCE_GATLING_ANCIENT</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3551,7 +4023,9 @@
 			<hiddenAug>FM_VENGEANCE_PART_GATLING_BARREL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3566,7 +4040,9 @@
 			<hiddenAug>FM_VENGEANCE_PART_GATLING_BASE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3581,7 +4057,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_CIVILIAN_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3596,7 +4074,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_MILITIA_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3611,7 +4091,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_FEDERATION_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3626,7 +4108,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_COALITION_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3641,7 +4125,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_DUSKBRINGER_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3656,7 +4142,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_FREEMANTIS_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3671,7 +4159,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_LOSTSUN_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3686,7 +4176,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_LOSTSUN_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3701,7 +4193,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_MANTIS_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3716,7 +4210,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_MANTIS_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3731,7 +4227,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_REBEL_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3746,7 +4244,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_ROCK_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3761,7 +4261,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_ZOLTAN_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3776,7 +4278,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_ZOLTAN_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3791,7 +4295,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_SLUG_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3806,7 +4312,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_CLAN_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3821,7 +4329,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_KNIGHT_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3836,7 +4346,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_SHELL_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3851,7 +4363,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_LEECH_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3866,7 +4380,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_CULTIST_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3881,7 +4397,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_DYNASTY_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3896,7 +4414,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_AUG_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3911,7 +4431,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_MATH_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3926,7 +4448,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_MATH_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3941,7 +4465,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_MATH_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3956,7 +4482,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_MATH_4</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3971,7 +4499,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_MATH_5</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -3986,7 +4516,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_MATH_6</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4001,7 +4533,9 @@
 			<hiddenAug>FM_VENGEANCE_LOOT_MATH_7</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4016,7 +4550,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_BATTERY</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4031,7 +4567,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_ADAPT_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4046,7 +4584,9 @@
 			<hiddenAug>FM_VENGEANCE_BIG_ION</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4061,7 +4601,9 @@
 			<hiddenAug>FM_VENGEANCE_BOMB_CONSERVRECYCLER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4076,7 +4618,9 @@
 			<hiddenAug>FM_VENGEANCE_BOMB_DRAIN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4091,7 +4635,9 @@
 			<hiddenAug>FM_VENGEANCE_FROST_CHARGEGUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4106,7 +4652,9 @@
 			<hiddenAug>FM_VENGEANCE_ION_CHAIN_CHARGEGUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4121,7 +4669,9 @@
 			<hiddenAug>FM_VENGEANCE_MISSILES_OBSIDIAN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4136,7 +4686,9 @@
 			<hiddenAug>FM_VENGEANCE_SNIPER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4151,7 +4703,9 @@
 			<hiddenAug>FM_VENGEANCE_SHOTGUN_STEEL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4166,7 +4720,9 @@
 			<hiddenAug>FM_VENGEANCE_SLOTGUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4181,7 +4737,9 @@
 			<hiddenAug>FM_VENGEANCE_SHOTGUN_TOGGLE_FIRE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4196,7 +4754,9 @@
 			<hiddenAug>FM_VENGEANCE_SHOTGUN_TOGGLE_ION</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4211,7 +4771,9 @@
 			<hiddenAug>FM_VENGEANCE_SHOTGUN_TOGGLE_TOXIC</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4226,7 +4788,9 @@
 			<hiddenAug>FM_VENGEANCE_SHELL_LAUNCHER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4241,7 +4805,9 @@
 			<hiddenAug>FM_VENGEANCE_UNSPOOLER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4256,7 +4822,9 @@
 			<hiddenAug>FM_VENGEANCE_MINELAUNCHER_GIANT</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4271,7 +4839,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_LIGHT_CHARGEGUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4286,7 +4856,9 @@
 			<hiddenAug>FM_VENGEANCE_CRYSTAL_BURST_FIRE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4301,7 +4873,9 @@
 			<hiddenAug>FM_VENGEANCE_STRAWBERRY</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4316,7 +4890,9 @@
 			<hiddenAug>FM_VENGEANCE_BOMB_ELITE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4331,7 +4907,9 @@
 			<hiddenAug>FM_VENGEANCE_GASTER_BLASTER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4346,7 +4924,9 @@
 			<hiddenAug>FM_VENGEANCE_RUSTY_LASER_BURST_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4361,7 +4941,9 @@
 			<hiddenAug>FM_VENGEANCE_RUSTY_LASER_BURST_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4376,7 +4958,9 @@
 			<hiddenAug>FM_VENGEANCE_RUSTY_LASER_BURST_5</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4391,7 +4975,9 @@
 			<hiddenAug>FM_VENGEANCE_RUSTY_LASER_HEAVY_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4406,7 +4992,9 @@
 			<hiddenAug>FM_VENGEANCE_RUSTY_MISSILES_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4421,7 +5009,9 @@
 			<hiddenAug>FM_VENGEANCE_RUSTY_MISSILES_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4436,7 +5026,9 @@
 			<hiddenAug>FM_VENGEANCE_RUSTY_MISSILES_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4451,7 +5043,9 @@
 			<hiddenAug>FM_VENGEANCE_RUSTY_MISSILES_BURST</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4466,7 +5060,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULE_ACCURACY</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4481,7 +5077,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULE_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4496,7 +5094,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULE_COOLDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4511,7 +5111,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULE_LOCKDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4526,7 +5128,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULE_PIERCE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4541,7 +5145,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULE_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4556,7 +5162,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULE_FIRE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4571,7 +5179,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULE_HULL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4586,7 +5196,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULE_POWER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4601,7 +5213,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_BASE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4616,7 +5230,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_BASE_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4631,7 +5247,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_BASE_COOLDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4646,7 +5264,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_BASE_LOCKDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4661,7 +5281,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_BASE_PIERCE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4676,7 +5298,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_BASE_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4691,7 +5315,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_ACCURACY</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4706,7 +5332,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_ACCURACY_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4721,7 +5349,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_ACCURACY_COOLDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4736,7 +5366,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_ACCURACY_LOCKDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4751,7 +5383,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_ACCURACY_PIERCE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4766,7 +5400,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_ACCURACY_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4781,7 +5417,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_FIRE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4796,7 +5434,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_FIRE_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4811,7 +5451,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_FIRE_COOLDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4826,7 +5468,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_FIRE_LOCKDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4841,7 +5485,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_FIRE_PIERCE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4856,7 +5502,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_FIRE_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4871,7 +5519,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_HULL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4886,7 +5536,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_HULL_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4901,7 +5553,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_HULL_COOLDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4916,7 +5570,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_HULL_LOCKDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4931,7 +5587,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_HULL_PIERCE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4946,7 +5604,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_HULL_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4961,7 +5621,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_POWER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4976,7 +5638,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_POWER_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -4991,7 +5655,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_POWER_COOLDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5006,7 +5672,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_POWER_LOCKDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5021,7 +5689,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_POWER_PIERCE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5036,7 +5706,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_LASER_POWER_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5051,7 +5723,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_BEAM_BASE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5066,7 +5740,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_BEAM_BASE_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5081,7 +5757,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_BEAM_BASE_COOLDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5096,7 +5774,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_BEAM_BASE_PIERCE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5111,7 +5791,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_BEAM_BASE_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5126,7 +5808,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_BEAM_FIRE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5141,7 +5825,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_BEAM_FIRE_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5156,7 +5842,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_BEAM_FIRE_COOLDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5171,7 +5859,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_BEAM_FIRE_PIERCE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5186,7 +5876,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_BEAM_FIRE_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5201,7 +5893,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_BEAM_HULL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5216,7 +5910,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_BEAM_HULL_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5231,7 +5927,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_BEAM_HULL_COOLDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5246,7 +5944,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_BEAM_HULL_PIERCE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5261,7 +5961,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_BEAM_HULL_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5276,7 +5978,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_BEAM_POWER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5291,7 +5995,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_BEAM_POWER_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5306,7 +6012,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_BEAM_POWER_COOLDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5321,7 +6029,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_BEAM_POWER_PIERCE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5336,7 +6046,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_BEAM_POWER_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5351,7 +6063,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_BASE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5366,7 +6080,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_BASE_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5381,7 +6097,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_BASE_COOLDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5396,7 +6114,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_BASE_LOCKDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5411,7 +6131,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_BASE_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5426,7 +6148,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_ACCURACY</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5441,7 +6165,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_ACCURACY_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5456,7 +6182,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_ACCURACY_COOLDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5471,7 +6199,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_ACCURACY_LOCKDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5486,7 +6216,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_ACCURACY_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5501,7 +6233,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_FIRE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5516,7 +6250,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_FIRE_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5531,7 +6267,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_FIRE_COOLDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5546,7 +6284,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_FIRE_LOCKDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5561,7 +6301,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_FIRE_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5576,7 +6318,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_HULL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5591,7 +6335,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_HULL_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5606,7 +6352,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_HULL_COOLDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5621,7 +6369,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_HULL_LOCKDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5636,7 +6386,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_HULL_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5651,7 +6403,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_POWER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5666,7 +6420,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_POWER_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5681,7 +6437,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_POWER_COOLDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5696,7 +6454,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_POWER_LOCKDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5711,7 +6471,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_MISSILE_POWER_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5726,7 +6488,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_BASE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5741,7 +6505,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_BASE_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5756,7 +6522,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_BASE_COOLDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5771,7 +6539,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_BASE_LOCKDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5786,7 +6556,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_BASE_PIERCE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5801,7 +6573,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_BASE_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5816,7 +6590,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_ACCURACY</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5831,7 +6607,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_ACCURACY_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5846,7 +6624,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_ACCURACY_COOLDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5861,7 +6641,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_ACCURACY_LOCKDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5876,7 +6658,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_ACCURACY_PIERCE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5891,7 +6675,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_ACCURACY_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5906,7 +6692,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_FIRE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5921,7 +6709,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_FIRE_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5936,7 +6726,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_FIRE_COOLDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5951,7 +6743,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_FIRE_LOCKDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5966,7 +6760,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_FIRE_PIERCE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5981,7 +6777,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_FIRE_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -5996,7 +6794,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_HULL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6011,7 +6811,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_HULL_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6026,7 +6828,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_HULL_COOLDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6041,7 +6845,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_HULL_LOCKDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6056,7 +6862,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_HULL_PIERCE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6071,7 +6879,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_HULL_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6086,7 +6896,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_POWER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6101,7 +6913,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_POWER_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6116,7 +6930,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_POWER_COOLDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6131,7 +6947,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_POWER_LOCKDOWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6146,7 +6964,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_POWER_PIERCE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6161,7 +6981,9 @@
 			<hiddenAug>FM_VENGEANCE_MODULAR_ION_POWER_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6176,7 +6998,9 @@
 			<hiddenAug>FM_VENGEANCE_POWER_CORE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6191,7 +7015,9 @@
 			<hiddenAug>FM_VENGEANCE_SCANNER_RECON</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6206,7 +7032,9 @@
 			<hiddenAug>FM_VENGEANCE_SCANNER_BAIT</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6221,7 +7049,9 @@
 			<hiddenAug>FM_VENGEANCE_HARPOON_LAUNCHER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6236,7 +7066,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6251,7 +7083,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_BABYORCHID</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6266,7 +7100,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_ANCIENT</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6281,7 +7117,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_BIRD</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6296,7 +7134,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_AVATAR</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6311,7 +7151,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_AUGMENTED</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6326,7 +7168,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_BISHOP</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6341,7 +7185,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_CHIEF</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6356,7 +7202,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_CLAN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6371,7 +7219,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_COMMANDO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6386,7 +7236,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_CRUSADER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6401,7 +7253,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_CRYSTAL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6416,7 +7270,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_SSLG</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6431,7 +7287,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_CULTIST</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6446,7 +7304,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_DEFEND</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6461,7 +7321,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_DUSK</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6476,7 +7338,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_ENGINEER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6491,7 +7355,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_ENGI</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6506,7 +7372,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_PHANTOM</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6521,7 +7389,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_PHANTOM_ALPHA</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6536,7 +7406,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_GOUL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6551,7 +7423,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_GOUL_ALPHA</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6566,7 +7440,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_MARE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6581,7 +7457,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_MARE_ALPHA</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6596,7 +7474,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_WRAITH</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6611,7 +7491,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_WRAITH_ALPHA</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6626,7 +7508,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_HATCH</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6641,7 +7525,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_HUMAN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6656,7 +7542,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_LANIUS</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6671,7 +7559,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_MANTIS</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6686,7 +7576,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_FREEMANTIS</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6701,7 +7593,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_MEDIC</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6716,7 +7610,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_MONK</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6731,7 +7627,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_ORCHID</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6746,7 +7644,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_VAMPWEED</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6761,7 +7661,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_OUTCAST</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6776,7 +7678,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_PEACE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6791,7 +7695,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_PONY</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6806,7 +7712,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_PONYC</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6821,7 +7729,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_QUEEN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6836,7 +7746,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_RADIANT</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6851,7 +7763,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_RADICAL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6866,7 +7780,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_DEVORAK</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6881,7 +7797,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_RANGER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6896,7 +7814,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_ROCK</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6911,7 +7831,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_SABO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6926,7 +7848,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_SENTINEL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6941,7 +7865,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_SEPARATIST</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6956,7 +7882,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_SHELL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6971,7 +7899,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_SHELL_MECH</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -6986,7 +7916,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_SHELL_MEDIC</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7001,7 +7933,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_SHELL_GUARDIAN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7016,7 +7950,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_SLUG</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7031,7 +7967,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_HEKTAR</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7046,7 +7984,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_SOLDIER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7061,7 +8001,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_SPIDER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7076,7 +8018,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_SUZERAIN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7091,7 +8035,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_WARLORD</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7106,7 +8052,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_SYMBIOTE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7121,7 +8069,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_WEAVER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7136,7 +8086,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_WELDER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7151,7 +8103,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_ZOLTAN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7166,7 +8120,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_LEECH</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7181,7 +8137,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_AMPERE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7196,7 +8154,9 @@
 			<hiddenAug>FM_VENGEANCE_EE_LASER_CHARGEGUN_HEAVY</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7211,7 +8171,9 @@
 			<hiddenAug>FM_VENGEANCE_EE_LASER_LIGHT_BURST</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7226,7 +8188,9 @@
 			<hiddenAug>FM_VENGEANCE_EE_LASER_PARTICLE_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7241,7 +8205,9 @@
 			<hiddenAug>FM_VENGEANCE_EE_LASER_PARTICLE_BIO_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7256,7 +8222,9 @@
 			<hiddenAug>FM_VENGEANCE_EE_BEAM_HULL_CHAIN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7271,7 +8239,9 @@
 			<hiddenAug>FM_VENGEANCE_EE_BEAM_ADAPT_CONSERVATIVE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7286,7 +8256,9 @@
 			<hiddenAug>FM_VENGEANCE_EE_ION_BREACH</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7301,7 +8273,9 @@
 			<hiddenAug>FM_VENGEANCE_EE_ENERGY_PIERCE_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7316,7 +8290,9 @@
 			<hiddenAug>FM_VENGEANCE_EE_ENERGY_PIERCE_1_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7331,7 +8307,9 @@
 			<hiddenAug>FM_VENGEANCE_EE_FOCUS_FIRE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7346,7 +8324,9 @@
 			<hiddenAug>FM_VENGEANCE_EE_FOCUS_CONSERVATIVE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7361,7 +8341,9 @@
 			<hiddenAug>FM_VENGEANCE_EE_BOMB_PART</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7376,7 +8358,9 @@
 			<hiddenAug>FM_VENGEANCE_EE_BOMB_SPIDER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7391,7 +8375,9 @@
 			<hiddenAug>FM_VENGEANCE_EE_BOMB_SPIDER_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7406,7 +8392,9 @@
 			<hiddenAug>FM_VENGEANCE_EE_MISSILES_HEAL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7421,7 +8409,9 @@
 			<hiddenAug>FM_VENGEANCE_EE_MISSILES_FROST</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7436,7 +8426,9 @@
 			<hiddenAug>FM_VENGEANCE_EE_MISSILES_INSTANT</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7451,7 +8443,9 @@
 			<hiddenAug>FM_VENGEANCE_EE_MINELAUNCHER_ION</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7466,7 +8460,9 @@
 			<hiddenAug>FM_VENGEANCE_EE_ION_CHAINGUN_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7481,7 +8477,9 @@
 			<hiddenAug>FM_VENGEANCE_EE_SHOTGUN_TRIFECTA</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7496,7 +8494,9 @@
 			<hiddenAug>FM_VENGEANCE_EE_SHOTGUN_FROST</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7511,7 +8511,9 @@
 			<hiddenAug>FM_VENGEANCE_EE_FLARE_LAUNCHER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7526,7 +8528,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_ORGANIC_BULLSQUID</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7541,7 +8545,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_GATLING_ANCIENT</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7556,7 +8562,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_GATLING_ANCIENT_PHOTON</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7571,7 +8579,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_GATLING_ANCIENT_ION</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7586,7 +8596,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_GATLING_ANCIENT_YES</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7601,7 +8613,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_STATUS</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7616,7 +8630,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_LASER_ANOMALY_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7631,7 +8647,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_FLAMETHROWER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7646,7 +8664,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_PHASER_SUFFOCATION</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7661,7 +8681,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_LASER_PHOTON</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7676,7 +8698,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_LASER_PHOTON_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7691,7 +8715,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_LASER_HUMAN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7706,7 +8732,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_LASER_ION_MEGA</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7721,7 +8749,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_LASER_DEBT_COLLECT</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7736,7 +8766,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_AN_LASER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7751,7 +8783,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_TERMINUS</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7766,7 +8800,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_ION_TRI_FIRE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7781,7 +8817,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_ENERGY_DISC</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7796,7 +8834,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_CHAINGUN_ION</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7811,7 +8851,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_SHOTGUN_ENERGY</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7826,7 +8868,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_SHOTGUN_ENERGY_ION</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7841,7 +8885,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_PULSE_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7856,7 +8902,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_PULSE_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7871,7 +8919,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_PULSE_2_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7886,7 +8936,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_PULSE_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7901,7 +8953,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_PULSEDEEP</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7916,7 +8970,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_BEAM_PARTICLE_PIERCE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7931,7 +8987,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_BEAM_MINING_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7946,7 +9004,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_BEAM_MINING_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7961,7 +9021,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_BEAM_GUILLOTINE_CHAIN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7976,7 +9038,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_BEAM_GUILLOTINE_CHAIN_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -7991,7 +9055,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_BEAM_EXPLOSION</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8006,7 +9072,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_BEAM_EXPLOSION_EGG</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8021,7 +9089,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_BEAM_EXPLOSION_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8036,7 +9106,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_BEAM_ION_PIERCE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8051,7 +9123,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_AN_BEAM</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8066,7 +9140,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_FOCUS_FUELED_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8081,7 +9157,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_FOCUS_FUELED_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8096,7 +9174,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_FOCUS_FUELED_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8111,7 +9191,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_FOCUS_FUELED_4</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8126,7 +9208,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_FOCUS_FUELED_5</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8141,7 +9225,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_FOCUS_ENERGY_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8156,7 +9242,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_FOCUS_ENERGY_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8171,7 +9259,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_FOCUS_ENERGY_2_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8186,7 +9276,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_FOCUS_ENERGY_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8201,7 +9293,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_SHOTGUN_ANOMALY</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8216,7 +9310,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_SHOTGUN_ANOMALY_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8231,7 +9327,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_SHOTGUN_ANOMALY_MEGA</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8246,7 +9344,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_SHOTGUN_AETHER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8261,7 +9361,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_SHOTGUN_BRONZE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8276,7 +9378,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_SHOTGUN_INDIUM</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8291,7 +9395,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_SHOTGUN_RHENIUM</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8306,7 +9412,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_SHOTGUN_SILVER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8321,7 +9429,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_SHOTGUN_PALLADIUM</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8336,7 +9446,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_SHOTGUN_IRIDIUM</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8351,7 +9463,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_SHOTGUN_PLATINUM</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8366,7 +9480,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_SHOTGUN_OSMIUM</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8381,7 +9497,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_SHOTGUN_NOBELIUM</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8396,7 +9514,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_SHOTGUN_HASSIUM</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8411,7 +9531,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_SHOTGUN_CURSED</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8426,7 +9548,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_MISSILES_BURST_FIRE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8441,7 +9565,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_MISSILES_BURST_FIRE_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8456,7 +9582,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_MISSILES_BURST_FIRE_MEGA</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8471,7 +9599,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_MISSILES_BURST_FIRE_MEGA_PISSED</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8486,7 +9616,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_MISSILES_CLOAK_STUN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8501,7 +9633,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_MISSILES_CLOAK_STUN_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8516,7 +9650,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_ION_MISSILES</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8531,7 +9667,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_MINELAUNCHER_HULL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8546,7 +9684,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_ROYAL_MINELAUNCHER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8561,7 +9701,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_MINELAUNCHER_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8576,7 +9718,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_BOMB_CRYSTAL_FIRE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8591,7 +9735,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_BOMB_CRYSTAL_BIO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8606,7 +9752,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_BOMB_CRUNCH</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8621,7 +9769,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_AN_DYNAMO</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8636,7 +9786,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_BEAM_BASILISK</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8651,7 +9803,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_HOLYSHIT</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8666,7 +9820,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_LASER_ION_MEGA_INVIS</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8681,7 +9837,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_CHIEF_SPECIAL_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8696,7 +9854,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_ANCIENT_ION_1_KAI</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8711,7 +9871,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_ANCIENT_ION_1_KAI2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8726,7 +9888,9 @@
 			<hiddenAug>FM_VENGEANCE_BOMB_ION_ENEMY_ARTY</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8741,7 +9905,9 @@
 			<hiddenAug>FM_VENGEANCE_ZOLTAN_DELETER_ARTY_CHAIN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8756,7 +9922,9 @@
 			<hiddenAug>FM_VENGEANCE_BEAM_ADAPT_3_ARTY_CHAIN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8771,7 +9939,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_CHAINGUN_ION_SUICIDE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8786,7 +9956,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_HATCH_SPECIAL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8801,7 +9973,9 @@
 			<hiddenAug>FM_VENGEANCE_ANCIENT_FOCUS_2_SMOKER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8816,7 +9990,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_CRUSADER_SPECIAL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8831,7 +10007,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_CHIEF_SPECIAL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8846,7 +10024,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_SYMBIOTE_SPECIAL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8861,7 +10041,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_HATCH_SPECIAL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8876,7 +10058,9 @@
 			<hiddenAug>FM_VENGEANCE_CLONE_CANNON_BABYORCHID_TWEAK</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8891,7 +10075,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_SHADOW</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8906,7 +10092,9 @@
 			<hiddenAug>FM_VENGEANCE_FOCUS_SHADOW</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8921,7 +10109,9 @@
 			<hiddenAug>FM_VENGEANCE_FOCUS_SHADOW_ADAPT</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8936,7 +10126,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_SHADOW_PLAYER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8951,7 +10143,9 @@
 			<hiddenAug>FM_VENGEANCE_FM_LASER_BURST_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8966,7 +10160,9 @@
 			<hiddenAug>FM_VENGEANCE_COMMONWEALTH_LASER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8981,7 +10177,9 @@
 			<hiddenAug>FM_VENGEANCE_COMMONWEALTH_LASER_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -8996,7 +10194,9 @@
 			<hiddenAug>FM_VENGEANCE_COMMONWEALTH_HEAVY_LASER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9011,7 +10211,9 @@
 			<hiddenAug>FM_VENGEANCE_COMMONWEALTH_MISSILES</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9026,7 +10228,9 @@
 			<hiddenAug>FM_VENGEANCE_COMMONWEALTH_BEAM</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9041,7 +10245,9 @@
 			<hiddenAug>FM_VENGEANCE_COMMONWEALTH_FOCUS</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9056,7 +10262,9 @@
 			<hiddenAug>FM_VENGEANCE_COMMONWEALTH_ION</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9071,7 +10279,9 @@
 			<hiddenAug>FM_VENGEANCE_COMMONWEALTH_BOMB</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9086,7 +10296,9 @@
 			<hiddenAug>FM_VENGEANCE_GOLDEN_BEAM_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9101,7 +10313,9 @@
 			<hiddenAug>FM_VENGEANCE_GOLDEN_BEAM_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9116,7 +10330,9 @@
 			<hiddenAug>FM_VENGEANCE_GOLDEN_BEAM_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9131,7 +10347,9 @@
 			<hiddenAug>FM_VENGEANCE_GOLDEN_LASER_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9146,7 +10364,9 @@
 			<hiddenAug>FM_VENGEANCE_GOLDEN_LASER_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9161,7 +10381,9 @@
 			<hiddenAug>FM_VENGEANCE_GOLDEN_LASER_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9176,7 +10398,9 @@
 			<hiddenAug>FM_VENGEANCE_GOLDEN_ION_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9191,7 +10415,9 @@
 			<hiddenAug>FM_VENGEANCE_GOLDEN_ION_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9206,7 +10432,9 @@
 			<hiddenAug>FM_VENGEANCE_GOLDEN_ION_3</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9221,7 +10449,9 @@
 			<hiddenAug>FM_VENGEANCE_ADAMANTINE_MISSILES</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9236,7 +10466,9 @@
 			<hiddenAug>FM_VENGEANCE_ADAMANTINE_BOMB</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9251,7 +10483,9 @@
 			<hiddenAug>FM_VENGEANCE_ADAMANTINE_MINELAUNCHER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9266,7 +10500,9 @@
 			<hiddenAug>FM_VENGEANCE_LASER_MOLECULE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9281,7 +10517,9 @@
 			<hiddenAug>FM_VENGEANCE_ZENITH_2</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9296,7 +10534,9 @@
 			<hiddenAug>FM_VENGEANCE_SILLY_ARTILLERY_BEAM_MINING</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9311,7 +10551,9 @@
 			<hiddenAug>FM_VENGEANCE_TC_SHOTGUN_OMEGA</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9326,7 +10568,9 @@
 			<hiddenAug>FM_VENGEANCE_TC_SHOTGUN_GOLD</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9341,7 +10585,9 @@
 			<hiddenAug>FM_VENGEANCE_TC_SHOTGUN_LEAD</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9356,7 +10602,9 @@
 			<hiddenAug>FM_VENGEANCE_TC_SHOTGUN_BOMB</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9371,7 +10619,9 @@
 			<hiddenAug>FM_VENGEANCE_TC_SHOTGUN_UNSTABLE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9386,7 +10636,9 @@
 			<hiddenAug>FM_VENGEANCE_TC_SHOTGUN_BATTERY</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9401,7 +10653,9 @@
 			<hiddenAug>FM_VENGEANCE_TC_SHOTGUN_HELL</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9416,7 +10670,9 @@
 			<hiddenAug>FM_VENGEANCE_TC_RAPTORS_OWN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9431,7 +10687,9 @@
 			<hiddenAug>FM_VENGEANCE_TC_LASER_MARKSMAN</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9446,7 +10704,9 @@
 			<hiddenAug>FM_VENGEANCE_SINGULARITY_PROJECTOR_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9461,7 +10721,9 @@
 			<hiddenAug>FM_VENGEANCE_RUSTY_BIO_LETO_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -9476,12 +10738,16 @@
 			<hiddenAug>FM_VENGEANCE_DJMOD_RAIN_OF_FIRE</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="STORAGE_CHECK" />
+				<event>
+					<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
 	<choice hidden="true" req="pilot" lvl="1" blue="false" max_group="1">
 		<text>Nevermind...</text>
-		<event load="STORAGE_CHECK" />
+		<event>
+			<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+		</event>
 	</choice>
 </event>
