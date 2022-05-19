@@ -6256,7 +6256,7 @@
 
   <ship name="SHIP_ABC_LANIUS" auto_blueprint="LIST_SHIPS_LANIUS_FIGHT">
     <destroyed>
-      <text>The Lanius have been defeated. You scrap their ship.</text>
+      <text>The Lanius ship explodes into a burst of wreckage. You prepare to scrap the ship, slightly disappointed that you couldn't take it intact.</text>
       <autoReward level="HIGH">standard</autoReward>
     </destroyed>
     <deadCrew>
@@ -6311,7 +6311,7 @@
 
   <ship name="SHIP_ABC_ELITELANIUS" auto_blueprint="LIST_SHIPS_LANIUS_ELITE_FIGHT">
     <destroyed>
-      <text>The Elite Lanius have been defeated. You scrap their ship.</text>
+      <text>The Elite Lanius ship breaks up quickly as their hull gives out. You're sure to find plenty of scrap in the wreckage, but any technology they may have had is almost certainly destroyed.</text>
       <autoReward level="HIGH">standard</autoReward>
     </destroyed>
     <deadCrew>
@@ -6394,7 +6394,7 @@
 
   <ship name="SHIP_ABC_AUGMENTEDLANIUS" auto_blueprint="LIST_SHIPS_AUGMENTED_RUINS">
     <destroyed>
-      <text>The strange Lanius have been defeated. You scrap their ship.</text>
+      <text>You watch the strange Lanius vessel break apart. Seems like you won't be finding any answers or tech today...</text>
       <autoReward level="HIGH">standard</autoReward>
     </destroyed>
     <deadCrew>
@@ -6479,7 +6479,7 @@
 
   <ship name="SHIP_ABC_OBELISK" auto_blueprint="LIST_SHIPS_ANCIENT_ALL">
     <destroyed>
-      <text>The Obelisk have been defeated. You scrap their ship.</text>
+      <text>Your crew watches silently as your foe's vessel blows apart. You've won this battle, but it's almost impossible that any of their tech survived.</text>
       <autoReward level="HIGH">standard</autoReward>
     </destroyed>
     <deadCrew>
@@ -6544,7 +6544,7 @@
 
   <ship name="SHIP_ABC_ROYALOBELISK" auto_blueprint="LIST_SHIPS_ROYAL_ALL">
     <destroyed>
-      <text>The Royals have been defeated. You scrap their ship.</text>
+      <text>You watch as the Royal vessel explodes before your eyes. Guess you won't be getting any of their tech today...</text>
       <autoReward level="HIGH">standard</autoReward>
     </destroyed>
     <deadCrew>
