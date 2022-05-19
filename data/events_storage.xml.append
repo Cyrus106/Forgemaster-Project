@@ -8228,10 +8228,13 @@
 <FTL> <!-- Internal Augment Install Storage Check -->
   <!-- Internal Augment Install Storage Check -->
   <mod:findName type = "event" name = "STORAGE_CHECK_SYSTEM">
-    <mod-append:choice  req="oxygen" lvl="1" max_group="6" blue="false" hidden="true">
+    <mod-append:choice  req="oxygen" blue="false" hidden="true">
       <text>The Oxygen.</text>
       <event load="FM_STORAGE_CHECK_SYSTEM_OXYGEN"/>
     </mod-append:choice>
+    <mod:findWithChildLike type="choice" child-type="text">
+      <mod:selector>Install the Payload Fabricator internally.</mod:selector>
+      <mod:setAttributes max_group="629"/>
     <mod:findWithChildLike type="choice" child-type="text">
       <mod:selector>Nevermind.</mod:selector>
       <mod:setAttributes max_group="630"/>
