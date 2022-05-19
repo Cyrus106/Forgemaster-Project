@@ -13795,1052 +13795,1695 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 
 
-<!--I hope you're ready to cry about it-->
-<aug name="CRYABOUTIT_VENGEANCE">
-			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="FM_ORGANIC_BULLSQUID" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_GATLING_ANCIENT" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_GATLING_ANCIENT_PHOTON" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_GATLING_ANCIENT_ION" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_GATLING_ANCIENT_YES" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_STATUS" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_LASER_ANOMALY_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_FLAMETHROWER" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_PHASER_SUFFOCATION" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_LASER_PHOTON" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_LASER_PHOTON_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_LASER_HUMAN" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_LASER_ION_MEGA" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_LASER_DEBT_COLLECT" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_AN_LASER" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_TERMINUS" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_ION_TRI_FIRE" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_ENERGY_DISC" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_CHAINGUN_ION" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_SHOTGUN_ENERGY" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_SHOTGUN_ENERGY_ION" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_PULSE_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_PULSE_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_PULSE_2_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_PULSE_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_PULSEDEEP" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_BEAM_PARTICLE_PIERCE" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_BEAM_MINING_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_BEAM_MINING_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_BEAM_GUILLOTINE_CHAIN" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_BEAM_GUILLOTINE_CHAIN_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_BEAM_EXPLOSION" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_BEAM_EXPLOSION_EGG" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_BEAM_EXPLOSION_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_BEAM_ION_PIERCE" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_AN_BEAM" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_FOCUS_FUELED_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_FOCUS_FUELED_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_FOCUS_FUELED_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_FOCUS_FUELED_4" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_FOCUS_FUELED_5" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_FOCUS_ENERGY_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_FOCUS_ENERGY_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_FOCUS_ENERGY_2_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_FOCUS_ENERGY_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_SHOTGUN_ANOMALY" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_SHOTGUN_ANOMALY_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_SHOTGUN_ANOMALY_MEGA" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_SHOTGUN_AETHER" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_SHOTGUN_BRONZE" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_SHOTGUN_INDIUM" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_SHOTGUN_RHENIUM" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_SHOTGUN_SILVER" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_SHOTGUN_PALLADIUM" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_SHOTGUN_IRIDIUM" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_SHOTGUN_PLATINUM" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_SHOTGUN_OSMIUM" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_SHOTGUN_NOBELIUM" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_SHOTGUN_HASSIUM" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_SHOTGUN_CURSED" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_MISSILES_BURST_FIRE" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_MISSILES_BURST_FIRE_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_MISSILES_BURST_FIRE_MEGA" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_MISSILES_BURST_FIRE_MEGA_PISSED" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_MISSILES_CLOAK_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_MISSILES_CLOAK_STUN_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_ION_MISSILES" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_MINELAUNCHER_HULL" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_ROYAL_MINELAUNCHER" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_MINELAUNCHER_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_BOMB_CRYSTAL_FIRE" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_BOMB_CRYSTAL_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_BOMB_CRUNCH" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_AN_DYNAMO" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_BEAM_BASILISK" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_HOLYSHIT" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_LASER_ION_MEGA_INVIS" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_CHIEF_SPECIAL_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_ANCIENT_ION_1_KAI" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_ANCIENT_ION_1_KAI2" value="1.0" stackable="independent" />
-			<crystalShard weapon="BOMB_ION_ENEMY_ARTY" value="1.0" stackable="independent" />
-			<crystalShard weapon="ZOLTAN_DELETER_ARTY_CHAIN" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_ADAPT_3_ARTY_CHAIN" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_CHAINGUN_ION_SUICIDE" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_HATCH_SPECIAL" value="1.0" stackable="independent" />
-			<crystalShard weapon="ANCIENT_FOCUS_2_SMOKER" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_CRUSADER_SPECIAL" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_CHIEF_SPECIAL" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_SYMBIOTE_SPECIAL" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_HATCH_SPECIAL" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_BABYORCHID_TWEAK" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_SHADOW" value="1.0" stackable="independent" />
-			<crystalShard weapon="FOCUS_SHADOW" value="1.0" stackable="independent" />
-			<crystalShard weapon="FOCUS_SHADOW_ADAPT" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_SHADOW_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="FM_LASER_BURST_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_BURST_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_BURST_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_BURST_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_BURST_5" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_BURST_8" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_HEAVY_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_HEAVY_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_HEAVY_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_HEAVY_CHAINGUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_HEAVY_PIERCE" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_HULL_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_HULL_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_HULL_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_HULL_CHAINGUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_LIGHT" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_LIGHT_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_PIERCE" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_PIERCE_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_CHAINGUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_CHAINGUN_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_CHARGEGUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_CHARGEGUN_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_CHARGEGUN_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_CHARGE_CHAIN" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_CHAINGUN_DAMAGE" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_FIRE" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_FROST_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_FROST_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_FROST_2_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_PARTICLE" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_PARTICLE_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_PARTICLE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MISSILES_PARTICLE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MISSILES_PARTICLE_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="MISSILES_ENERGY" value="1.0" stackable="independent" />
-			<crystalShard weapon="ION_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="ION_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="ION_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="ION_4" value="1.0" stackable="independent" />
-			<crystalShard weapon="ION_TRI" value="1.0" stackable="independent" />
-			<crystalShard weapon="ION_INSTANT" value="1.0" stackable="independent" />
-			<crystalShard weapon="ION_CHAINGUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="ION_CHARGEGUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="ION_CHARGEGUN_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="ION_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="ION_STUN_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="ION_STUN_HEAVY" value="1.0" stackable="independent" />
-			<crystalShard weapon="ION_STUN_CHARGEGUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="ION_STUN_CHARGEGUN_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="ION_PIERCE_DISCO" value="1.0" stackable="independent" />
-			<crystalShard weapon="ION_PIERCE_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="ION_PIERCE_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="ION_FIRE" value="1.0" stackable="independent" />
-			<crystalShard weapon="ION_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="MISSILES_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="MISSILES_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="MISSILES_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="MISSILES_4" value="1.0" stackable="independent" />
-			<crystalShard weapon="MISSILES_4_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="MISSILES_BURST" value="1.0" stackable="independent" />
-			<crystalShard weapon="MISSILES_BURST_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="MISSILES_BURST_2_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="MISSILES_CLOAK" value="1.0" stackable="independent" />
-			<crystalShard weapon="MISSILES_FIRE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MISSILES_FIRE_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="MISSILES_FREE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MISSILES_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="MISSILES_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_2_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_4" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_LONG" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_LONG_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_SCYTHE" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_CHAIN" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_PIERCE" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_FIRE" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_FIRE_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_FIRE_PIERCE" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_FIRE_INSTANT" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_BREACH" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_HULL" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_HULL_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_MINING" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_ADAPT" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_ADAPT_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_BIO_CHAIN" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_GUILLOTINE" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_GUILLOTINE_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="FOCUS_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="FOCUS_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="FOCUS_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="FOCUS_CHAIN" value="1.0" stackable="independent" />
-			<crystalShard weapon="FOCUS_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="FOCUS_BIO_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="BOMB_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="BOMB_BREACH_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="BOMB_FIRE" value="1.0" stackable="independent" />
-			<crystalShard weapon="BOMB_FREE" value="1.0" stackable="independent" />
-			<crystalShard weapon="BOMB_ION" value="1.0" stackable="independent" />
-			<crystalShard weapon="BOMB_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="BOMB_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="BOMB_LOCK" value="1.0" stackable="independent" />
-			<crystalShard weapon="BOMB_HEAL" value="1.0" stackable="independent" />
-			<crystalShard weapon="BOMB_HEAL_SYSTEM" value="1.0" stackable="independent" />
-			<crystalShard weapon="BOMB_HEAL_SYSTEM_STRONG" value="1.0" stackable="independent" />
-			<crystalShard weapon="BOMB_BUFF" value="1.0" stackable="independent" />
-			<crystalShard weapon="ENERGY_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="ENERGY_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="ENERGY_2_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="ENERGY_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="ENERGY_HULL" value="1.0" stackable="independent" />
-			<crystalShard weapon="ENERGY_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="ENERGY_STUN_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="ENERGY_CHAINGUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="ENERGY_CHARGEGUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="ENERGY_CHARGEGUN_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="SHOTGUN_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="SHOTGUN_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="SHOTGUN_2_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="SHOTGUN_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="SHOTGUN_4" value="1.0" stackable="independent" />
-			<crystalShard weapon="SHOTGUN_CHARGE" value="1.0" stackable="independent" />
-			<crystalShard weapon="SHOTGUN_CHAIN" value="1.0" stackable="independent" />
-			<crystalShard weapon="SHOTGUN_INSTANT" value="1.0" stackable="independent" />
-			<crystalShard weapon="SHOTGUN_FIRE" value="1.0" stackable="independent" />
-			<crystalShard weapon="SHOTGUN_ION" value="1.0" stackable="independent" />
-			<crystalShard weapon="SHOTGUN_TOXIC" value="1.0" stackable="independent" />
-			<crystalShard weapon="SHOTGUN_TOXIC_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="KERNEL_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="KERNEL_1_ELITE" value="1.0" stackable="independent" />
-			<crystalShard weapon="KERNEL_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="KERNEL_2_ELITE" value="1.0" stackable="independent" />
-			<crystalShard weapon="KERNEL_HEAVY" value="1.0" stackable="independent" />
-			<crystalShard weapon="KERNEL_HEAVY_ELITE" value="1.0" stackable="independent" />
-			<crystalShard weapon="KERNEL_FIRE" value="1.0" stackable="independent" />
-			<crystalShard weapon="KERNEL_CHAIN" value="1.0" stackable="independent" />
-			<crystalShard weapon="KERNEL_CHAIN_ELITE" value="1.0" stackable="independent" />
-			<crystalShard weapon="KERNEL_CHARGE" value="1.0" stackable="independent" />
-			<crystalShard weapon="KERNEL_CHARGE_ELITE" value="1.0" stackable="independent" />
-			<crystalShard weapon="SPORE_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="SPORE_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="SPORE_HEAVY" value="1.0" stackable="independent" />
-			<crystalShard weapon="SPORE_CHAIN" value="1.0" stackable="independent" />
-			<crystalShard weapon="SPORE_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="CRYSTAL_BURST_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="CRYSTAL_BURST_1_RED" value="1.0" stackable="independent" />
-			<crystalShard weapon="CRYSTAL_BURST_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="CRYSTAL_BURST_2_RED" value="1.0" stackable="independent" />
-			<crystalShard weapon="CRYSTAL_HEAVY_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="CRYSTAL_HEAVY_1_RED" value="1.0" stackable="independent" />
-			<crystalShard weapon="CRYSTAL_HEAVY_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="CRYSTAL_HEAVY_2_RED" value="1.0" stackable="independent" />
-			<crystalShard weapon="CRYSTAL_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="CRYSTAL_STUN_RED" value="1.0" stackable="independent" />
-			<crystalShard weapon="CRYSTAL_SHOTGUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="CRYSTAL_SHOTGUN_RED" value="1.0" stackable="independent" />
-			<crystalShard weapon="CRYSTAL_CHARGEGUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="CRYSTAL_CHARGEGUN_RED" value="1.0" stackable="independent" />
-			<crystalShard weapon="MINELAUNCHER_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="MINELAUNCHER_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="MINELAUNCHER_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="MINELAUNCHER_FREE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MINELAUNCHER_FIRE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MINELAUNCHER_BREACH" value="1.0" stackable="independent" />
-			<crystalShard weapon="MINELAUNCHER_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MINELAUNCHER_CRYSTAL" value="1.0" stackable="independent" />
-			<crystalShard weapon="MINELAUNCHER_KERNEL" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_CONSERVATIVE" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_CONSERVATIVE" value="1.0" stackable="independent" />
-			<crystalShard weapon="ION_CONSERVATIVE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MISSILES_CONSERVATIVE" value="1.0" stackable="independent" />
-			<crystalShard weapon="BOMB_CONSERVATIVE" value="1.0" stackable="independent" />
-			<crystalShard weapon="ENERGY_CONSERVATIVE" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_BIO_CONSERVATIVE" value="1.0" stackable="independent" />
-			<crystalShard weapon="ZENITH_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LANCE_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="BOMB_CLUSTER" value="1.0" stackable="independent" />
-			<crystalShard weapon="ANCIENT_LASER" value="1.0" stackable="independent" />
-			<crystalShard weapon="ANCIENT_LASER_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="ANCIENT_LASER_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="ANCIENT_MISSILES" value="1.0" stackable="independent" />
-			<crystalShard weapon="ANCIENT_BOMB" value="1.0" stackable="independent" />
-			<crystalShard weapon="ANCIENT_MINELAUNCHER" value="1.0" stackable="independent" />
-			<crystalShard weapon="ANCIENT_BEAM" value="1.0" stackable="independent" />
-			<crystalShard weapon="ANCIENT_BEAM_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="ANCIENT_BEAM_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="ANCIENT_HAVOC" value="1.0" stackable="independent" />
-			<crystalShard weapon="ANCIENT_FOCUS" value="1.0" stackable="independent" />
-			<crystalShard weapon="ANCIENT_FOCUS_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="ANCIENT_ION_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="ANCIENT_ION_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="ANCIENT_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="ROYAL_LASER_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="ROYAL_BEAM_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="ROYAL_HAVOC" value="1.0" stackable="independent" />
-			<crystalShard weapon="ROYAL_FOCUS" value="1.0" stackable="independent" />
-			<crystalShard weapon="ROYAL_MISSILES" value="1.0" stackable="independent" />
-			<crystalShard weapon="ROYAL_BOMB" value="1.0" stackable="independent" />
-			<crystalShard weapon="ROYAL_ION_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_REPAIR" value="1.0" stackable="independent" />
-			<crystalShard weapon="CRASH_LASER" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_HARDSCIFI" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_BURST_SYLVAN" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_BURST_5_SYLVAN" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_4_SYLVAN" value="1.0" stackable="independent" />
-			<crystalShard weapon="SHOTGUN_GOLD_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="HORSE_GUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MISSILES_ROCK" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_BISHOP" value="1.0" stackable="independent" />
-			<crystalShard weapon="ION_PIERCE_CHAIN" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_FIRE_SPECIAL" value="1.0" stackable="independent" />
-			<crystalShard weapon="BOMB_CHERRI" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_CHAINGUN_GOLD" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_CHAINGUN_GOLD_PLAYER" value="1.0" stackable="independent" />
-			<crystalShard weapon="SALT_LAUNCHER" value="1.0" stackable="independent" />
-			<crystalShard weapon="SHOTGUN_GOLD" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_SHELL" value="1.0" stackable="independent" />
-			<crystalShard weapon="ZOLTAN_DELETER" value="1.0" stackable="independent" />
-			<crystalShard weapon="GATLING_VERSION1" value="1.0" stackable="independent" />
-			<crystalShard weapon="GATLING_VERSION2" value="1.0" stackable="independent" />
-			<crystalShard weapon="GATLING_VERSION3" value="1.0" stackable="independent" />
-			<crystalShard weapon="GATLING_VERSION4" value="1.0" stackable="independent" />
-			<crystalShard weapon="GATLING_VERSION5" value="1.0" stackable="independent" />
-			<crystalShard weapon="GATLING_VERSION6" value="1.0" stackable="independent" />
-			<crystalShard weapon="GATLING_VERSION7" value="1.0" stackable="independent" />
-			<crystalShard weapon="GATLING_VERSION8" value="1.0" stackable="independent" />
-			<crystalShard weapon="GATLING_SYLVAN" value="1.0" stackable="independent" />
-			<crystalShard weapon="GATLING_SYLVAN_HONOR" value="1.0" stackable="independent" />
-			<crystalShard weapon="GATLING_ANCIENT" value="1.0" stackable="independent" />
-			<crystalShard weapon="PART_GATLING_BARREL" value="1.0" stackable="independent" />
-			<crystalShard weapon="PART_GATLING_BASE" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_CIVILIAN_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_MILITIA_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_FEDERATION_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_COALITION_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_DUSKBRINGER_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_FREEMANTIS_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_LOSTSUN_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_LOSTSUN_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_MANTIS_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_MANTIS_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_REBEL_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_ROCK_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_ZOLTAN_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_ZOLTAN_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_SLUG_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_CLAN_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_KNIGHT_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_SHELL_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_LEECH_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_CULTIST_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_DYNASTY_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_AUG_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_MATH_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_MATH_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_MATH_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_MATH_4" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_MATH_5" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_MATH_6" value="1.0" stackable="independent" />
-			<crystalShard weapon="LOOT_MATH_7" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_BATTERY" value="1.0" stackable="independent" />
-			<crystalShard weapon="BEAM_ADAPT_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="BIG_ION" value="1.0" stackable="independent" />
-			<crystalShard weapon="BOMB_CONSERVRECYCLER" value="1.0" stackable="independent" />
-			<crystalShard weapon="BOMB_DRAIN" value="1.0" stackable="independent" />
-			<crystalShard weapon="FROST_CHARGEGUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="ION_CHAIN_CHARGEGUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MISSILES_OBSIDIAN" value="1.0" stackable="independent" />
-			<crystalShard weapon="SNIPER" value="1.0" stackable="independent" />
-			<crystalShard weapon="SHOTGUN_STEEL" value="1.0" stackable="independent" />
-			<crystalShard weapon="SLOTGUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="SHOTGUN_TOGGLE_FIRE" value="1.0" stackable="independent" />
-			<crystalShard weapon="SHOTGUN_TOGGLE_ION" value="1.0" stackable="independent" />
-			<crystalShard weapon="SHOTGUN_TOGGLE_TOXIC" value="1.0" stackable="independent" />
-			<crystalShard weapon="SHELL_LAUNCHER" value="1.0" stackable="independent" />
-			<crystalShard weapon="UNSPOOLER" value="1.0" stackable="independent" />
-			<crystalShard weapon="MINELAUNCHER_GIANT" value="1.0" stackable="independent" />
-			<crystalShard weapon="LASER_LIGHT_CHARGEGUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="CRYSTAL_BURST_FIRE" value="1.0" stackable="independent" />
-			<crystalShard weapon="STRAWBERRY" value="1.0" stackable="independent" />
-			<crystalShard weapon="BOMB_ELITE" value="1.0" stackable="independent" />
-			<crystalShard weapon="GASTER_BLASTER" value="1.0" stackable="independent" />
-			<crystalShard weapon="RUSTY_LASER_BURST_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="RUSTY_LASER_BURST_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="RUSTY_LASER_BURST_5" value="1.0" stackable="independent" />
-			<crystalShard weapon="RUSTY_LASER_HEAVY_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="RUSTY_MISSILES_1" value="1.0" stackable="independent" />
-			<crystalShard weapon="RUSTY_MISSILES_2" value="1.0" stackable="independent" />
-			<crystalShard weapon="RUSTY_MISSILES_3" value="1.0" stackable="independent" />
-			<crystalShard weapon="RUSTY_MISSILES_BURST" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULE_ACCURACY" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULE_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULE_COOLDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULE_LOCKDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULE_PIERCE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULE_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULE_FIRE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULE_HULL" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULE_POWER" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_BASE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_BASE_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_BASE_COOLDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_BASE_LOCKDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_BASE_PIERCE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_BASE_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_ACCURACY" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_ACCURACY_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_ACCURACY_COOLDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_ACCURACY_LOCKDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_ACCURACY_PIERCE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_ACCURACY_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_FIRE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_FIRE_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_FIRE_COOLDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_FIRE_LOCKDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_FIRE_PIERCE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_FIRE_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_HULL" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_HULL_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_HULL_COOLDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_HULL_LOCKDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_HULL_PIERCE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_HULL_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_POWER" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_POWER_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_POWER_COOLDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_POWER_LOCKDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_POWER_PIERCE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_LASER_POWER_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_BEAM_BASE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_BEAM_BASE_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_BEAM_BASE_COOLDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_BEAM_BASE_PIERCE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_BEAM_BASE_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_BEAM_FIRE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_BEAM_FIRE_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_BEAM_FIRE_COOLDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_BEAM_FIRE_PIERCE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_BEAM_FIRE_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_BEAM_HULL" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_BEAM_HULL_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_BEAM_HULL_COOLDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_BEAM_HULL_PIERCE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_BEAM_HULL_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_BEAM_POWER" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_BEAM_POWER_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_BEAM_POWER_COOLDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_BEAM_POWER_PIERCE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_BEAM_POWER_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_BASE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_BASE_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_BASE_COOLDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_BASE_LOCKDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_BASE_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_ACCURACY" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_ACCURACY_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_ACCURACY_COOLDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_ACCURACY_LOCKDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_ACCURACY_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_FIRE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_FIRE_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_FIRE_COOLDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_FIRE_LOCKDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_FIRE_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_HULL" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_HULL_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_HULL_COOLDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_HULL_LOCKDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_HULL_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_POWER" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_POWER_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_POWER_COOLDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_POWER_LOCKDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_MISSILE_POWER_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_BASE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_BASE_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_BASE_COOLDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_BASE_LOCKDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_BASE_PIERCE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_BASE_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_ACCURACY" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_ACCURACY_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_ACCURACY_COOLDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_ACCURACY_LOCKDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_ACCURACY_PIERCE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_ACCURACY_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_FIRE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_FIRE_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_FIRE_COOLDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_FIRE_LOCKDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_FIRE_PIERCE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_FIRE_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_HULL" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_HULL_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_HULL_COOLDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_HULL_LOCKDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_HULL_PIERCE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_HULL_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_POWER" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_POWER_BIO" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_POWER_COOLDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_POWER_LOCKDOWN" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_POWER_PIERCE" value="1.0" stackable="independent" />
-			<crystalShard weapon="MODULAR_ION_POWER_STUN" value="1.0" stackable="independent" />
-			<crystalShard weapon="POWER_CORE" value="1.0" stackable="independent" />
-			<crystalShard weapon="SCANNER_RECON" value="1.0" stackable="independent" />
-			<crystalShard weapon="SCANNER_BAIT" value="1.0" stackable="independent" />
-			<crystalShard weapon="HARPOON_LAUNCHER" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_BABYORCHID" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_ANCIENT" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_BIRD" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_AVATAR" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_AUGMENTED" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_BISHOP" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_CHIEF" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_CLAN" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_COMMANDO" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_CRUSADER" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_CRYSTAL" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_SSLG" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_CULTIST" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_DEFEND" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_DUSK" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_ENGINEER" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_ENGI" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_PHANTOM" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_PHANTOM_ALPHA" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_GOUL" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_GOUL_ALPHA" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_MARE" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_MARE_ALPHA" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_WRAITH" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_WRAITH_ALPHA" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_HATCH" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_HUMAN" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_LANIUS" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_MANTIS" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_FREEMANTIS" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_MEDIC" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_MONK" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_ORCHID" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_VAMPWEED" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_OUTCAST" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_PEACE" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_PONY" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_PONYC" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_QUEEN" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_RADIANT" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_RADICAL" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_DEVORAK" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_RANGER" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_ROCK" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_SABO" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_SENTINEL" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_SEPARATIST" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_SHELL" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_SHELL_MECH" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_SHELL_MEDIC" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_SHELL_GUARDIAN" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_SLUG" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_HEKTAR" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_SOLDIER" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_SPIDER" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_SUZERAIN" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_WARLORD" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_SYMBIOTE" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_WEAVER" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_WELDER" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_ZOLTAN" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_LEECH" value="1.0" stackable="independent" />
-			<crystalShard weapon="CLONE_CANNON_AMPERE" value="1.0" stackable="independent" />
-		</aug>
+		<!--I hope you're ready to cry about it-->
+							<aug name="CRYABOUTIT_VENGEANCE">
+								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
+								<crystalShard weapon="FM_ORGANIC_BULLSQUID" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_GATLING_ANCIENT" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_GATLING_ANCIENT_PHOTON" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_GATLING_ANCIENT_ION" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_GATLING_ANCIENT_YES" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_STATUS" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_LASER_ANOMALY_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_FLAMETHROWER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_PHASER_SUFFOCATION" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_LASER_PHOTON" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_LASER_PHOTON_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_LASER_HUMAN" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_LASER_ION_MEGA" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_LASER_DEBT_COLLECT" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_AN_LASER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_TERMINUS" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_ION_TRI_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_ENERGY_DISC" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_CHAINGUN_ION" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_ENERGY" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_ENERGY_ION" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_PULSE_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_PULSE_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_PULSE_2_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_PULSE_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_PULSEDEEP" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BEAM_PARTICLE_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BEAM_MINING_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BEAM_MINING_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BEAM_GUILLOTINE_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BEAM_GUILLOTINE_CHAIN_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BEAM_EXPLOSION" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BEAM_EXPLOSION_EGG" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BEAM_EXPLOSION_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BEAM_ION_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_AN_BEAM" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_FOCUS_FUELED_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_FOCUS_FUELED_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_FOCUS_FUELED_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_FOCUS_FUELED_4" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_FOCUS_FUELED_5" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_FOCUS_ENERGY_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_FOCUS_ENERGY_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_FOCUS_ENERGY_2_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_FOCUS_ENERGY_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_ANOMALY" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_ANOMALY_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_ANOMALY_MEGA" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_AETHER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_BRONZE" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_INDIUM" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_RHENIUM" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_SILVER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_PALLADIUM" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_IRIDIUM" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_PLATINUM" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_OSMIUM" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_NOBELIUM" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_HASSIUM" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_CURSED" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_MISSILES_BURST_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_MISSILES_BURST_FIRE_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_MISSILES_BURST_FIRE_MEGA" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_MISSILES_BURST_FIRE_MEGA_PISSED" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_MISSILES_CLOAK_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_MISSILES_CLOAK_STUN_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_ION_MISSILES" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_MINELAUNCHER_HULL" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_ROYAL_MINELAUNCHER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_MINELAUNCHER_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BOMB_CRYSTAL_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BOMB_CRYSTAL_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BOMB_CRUNCH" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_AN_DYNAMO" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BEAM_BASILISK" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_HOLYSHIT" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_LASER_ION_MEGA_INVIS" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_CHIEF_SPECIAL_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_ANCIENT_ION_1_KAI" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_ANCIENT_ION_1_KAI2" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_ION_ENEMY_ARTY" value="1.0" stackable="independent" />
+								<crystalShard weapon="ZOLTAN_DELETER_ARTY_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_ADAPT_3_ARTY_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_CHAINGUN_ION_SUICIDE" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_HATCH_SPECIAL" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_FOCUS_2_SMOKER" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_CRUSADER_SPECIAL" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_CHIEF_SPECIAL" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SYMBIOTE_SPECIAL" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_HATCH_SPECIAL" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_BABYORCHID_TWEAK" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_SHADOW" value="1.0" stackable="independent" />
+								<crystalShard weapon="FOCUS_SHADOW" value="1.0" stackable="independent" />
+								<crystalShard weapon="FOCUS_SHADOW_ADAPT" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_SHADOW_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_LASER_BURST_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_BURST_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_BURST_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_BURST_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_BURST_5" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_BURST_8" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_HEAVY_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_HEAVY_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_HEAVY_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_HEAVY_CHAINGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_HEAVY_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_HULL_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_HULL_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_HULL_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_HULL_CHAINGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_LIGHT" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_LIGHT_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_PIERCE_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_CHAINGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_CHAINGUN_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_CHARGEGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_CHARGEGUN_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_CHARGEGUN_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_CHARGE_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_CHAINGUN_DAMAGE" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_FROST_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_FROST_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_FROST_2_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_PARTICLE" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_PARTICLE_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_PARTICLE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_PARTICLE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_PARTICLE_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_ENERGY" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_4" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_TRI" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_INSTANT" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_CHAINGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_CHARGEGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_CHARGEGUN_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_STUN_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_STUN_HEAVY" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_STUN_CHARGEGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_STUN_CHARGEGUN_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_PIERCE_DISCO" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_PIERCE_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_PIERCE_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_4" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_4_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_BURST" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_BURST_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_BURST_2_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_CLOAK" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_FIRE_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_FREE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_2_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_4" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_LONG" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_LONG_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_SCYTHE" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_FIRE_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_FIRE_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_FIRE_INSTANT" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_BREACH" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_HULL" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_HULL_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_MINING" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_ADAPT" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_ADAPT_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_BIO_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_GUILLOTINE" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_GUILLOTINE_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FOCUS_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="FOCUS_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="FOCUS_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="FOCUS_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="FOCUS_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="FOCUS_BIO_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_BREACH_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_FREE" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_ION" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_LOCK" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_HEAL" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_HEAL_SYSTEM" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_HEAL_SYSTEM_STRONG" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_BUFF" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_2_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_HULL" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_STUN_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_CHAINGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_CHARGEGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_CHARGEGUN_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_2_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_4" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_CHARGE" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_INSTANT" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_ION" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_TOXIC" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_TOXIC_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_1_ELITE" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_2_ELITE" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_HEAVY" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_HEAVY_ELITE" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_CHAIN_ELITE" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_CHARGE" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_CHARGE_ELITE" value="1.0" stackable="independent" />
+								<crystalShard weapon="SPORE_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="SPORE_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="SPORE_HEAVY" value="1.0" stackable="independent" />
+								<crystalShard weapon="SPORE_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="SPORE_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_BURST_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_BURST_1_RED" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_BURST_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_BURST_2_RED" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_HEAVY_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_HEAVY_1_RED" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_HEAVY_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_HEAVY_2_RED" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_STUN_RED" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_SHOTGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_SHOTGUN_RED" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_CHARGEGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_CHARGEGUN_RED" value="1.0" stackable="independent" />
+								<crystalShard weapon="MINELAUNCHER_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="MINELAUNCHER_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="MINELAUNCHER_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="MINELAUNCHER_FREE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MINELAUNCHER_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MINELAUNCHER_BREACH" value="1.0" stackable="independent" />
+								<crystalShard weapon="MINELAUNCHER_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MINELAUNCHER_CRYSTAL" value="1.0" stackable="independent" />
+								<crystalShard weapon="MINELAUNCHER_KERNEL" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_CONSERVATIVE" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_CONSERVATIVE" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_CONSERVATIVE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_CONSERVATIVE" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_CONSERVATIVE" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_CONSERVATIVE" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_BIO_CONSERVATIVE" value="1.0" stackable="independent" />
+								<crystalShard weapon="ZENITH_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LANCE_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_CLUSTER" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_LASER" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_LASER_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_LASER_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_MISSILES" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_BOMB" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_MINELAUNCHER" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_BEAM" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_BEAM_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_BEAM_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_HAVOC" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_FOCUS" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_FOCUS_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_ION_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_ION_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ROYAL_LASER_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="ROYAL_BEAM_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="ROYAL_HAVOC" value="1.0" stackable="independent" />
+								<crystalShard weapon="ROYAL_FOCUS" value="1.0" stackable="independent" />
+								<crystalShard weapon="ROYAL_MISSILES" value="1.0" stackable="independent" />
+								<crystalShard weapon="ROYAL_BOMB" value="1.0" stackable="independent" />
+								<crystalShard weapon="ROYAL_ION_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_REPAIR" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRASH_LASER" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_HARDSCIFI" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_BURST_SYLVAN" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_BURST_5_SYLVAN" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_4_SYLVAN" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_GOLD_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="HORSE_GUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_ROCK" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_BISHOP" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_PIERCE_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_FIRE_SPECIAL" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_CHERRI" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_CHAINGUN_GOLD" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_CHAINGUN_GOLD_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="SALT_LAUNCHER" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_GOLD" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_SHELL" value="1.0" stackable="independent" />
+								<crystalShard weapon="ZOLTAN_DELETER" value="1.0" stackable="independent" />
+								<crystalShard weapon="GATLING_VERSION1" value="1.0" stackable="independent" />
+								<crystalShard weapon="GATLING_VERSION2" value="1.0" stackable="independent" />
+								<crystalShard weapon="GATLING_VERSION3" value="1.0" stackable="independent" />
+								<crystalShard weapon="GATLING_VERSION4" value="1.0" stackable="independent" />
+								<crystalShard weapon="GATLING_VERSION5" value="1.0" stackable="independent" />
+								<crystalShard weapon="GATLING_VERSION6" value="1.0" stackable="independent" />
+								<crystalShard weapon="GATLING_VERSION7" value="1.0" stackable="independent" />
+								<crystalShard weapon="GATLING_VERSION8" value="1.0" stackable="independent" />
+								<crystalShard weapon="GATLING_SYLVAN" value="1.0" stackable="independent" />
+								<crystalShard weapon="GATLING_SYLVAN_HONOR" value="1.0" stackable="independent" />
+								<crystalShard weapon="GATLING_ANCIENT" value="1.0" stackable="independent" />
+								<crystalShard weapon="PART_GATLING_BARREL" value="1.0" stackable="independent" />
+								<crystalShard weapon="PART_GATLING_BASE" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_CIVILIAN_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_MILITIA_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_FEDERATION_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_COALITION_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_DUSKBRINGER_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_FREEMANTIS_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_LOSTSUN_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_LOSTSUN_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_MANTIS_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_MANTIS_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_REBEL_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_ROCK_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_ZOLTAN_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_ZOLTAN_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_SLUG_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_CLAN_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_KNIGHT_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_SHELL_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_LEECH_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_CULTIST_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_DYNASTY_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_AUG_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_MATH_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_MATH_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_MATH_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_MATH_4" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_MATH_5" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_MATH_6" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_MATH_7" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_BATTERY" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_ADAPT_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="BIG_ION" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_CONSERVRECYCLER" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_DRAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="FROST_CHARGEGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_CHAIN_CHARGEGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_OBSIDIAN" value="1.0" stackable="independent" />
+								<crystalShard weapon="SNIPER" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_STEEL" value="1.0" stackable="independent" />
+								<crystalShard weapon="SLOTGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_TOGGLE_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_TOGGLE_ION" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_TOGGLE_TOXIC" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHELL_LAUNCHER" value="1.0" stackable="independent" />
+								<crystalShard weapon="UNSPOOLER" value="1.0" stackable="independent" />
+								<crystalShard weapon="MINELAUNCHER_GIANT" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_LIGHT_CHARGEGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_BURST_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="STRAWBERRY" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_ELITE" value="1.0" stackable="independent" />
+								<crystalShard weapon="GASTER_BLASTER" value="1.0" stackable="independent" />
+								<crystalShard weapon="RUSTY_LASER_BURST_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="RUSTY_LASER_BURST_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="RUSTY_LASER_BURST_5" value="1.0" stackable="independent" />
+								<crystalShard weapon="RUSTY_LASER_HEAVY_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="RUSTY_MISSILES_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="RUSTY_MISSILES_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="RUSTY_MISSILES_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="RUSTY_MISSILES_BURST" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULE_ACCURACY" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULE_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULE_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULE_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULE_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULE_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULE_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULE_HULL" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULE_POWER" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_BASE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_BASE_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_BASE_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_BASE_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_BASE_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_BASE_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_ACCURACY" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_ACCURACY_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_ACCURACY_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_ACCURACY_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_ACCURACY_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_ACCURACY_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_FIRE_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_FIRE_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_FIRE_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_FIRE_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_FIRE_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_HULL" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_HULL_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_HULL_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_HULL_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_HULL_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_HULL_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_POWER" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_POWER_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_POWER_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_POWER_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_POWER_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_POWER_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_BASE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_BASE_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_BASE_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_BASE_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_BASE_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_FIRE_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_FIRE_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_FIRE_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_FIRE_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_HULL" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_HULL_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_HULL_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_HULL_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_HULL_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_POWER" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_POWER_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_POWER_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_POWER_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_POWER_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_BASE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_BASE_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_BASE_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_BASE_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_BASE_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_ACCURACY" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_ACCURACY_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_ACCURACY_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_ACCURACY_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_ACCURACY_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_FIRE_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_FIRE_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_FIRE_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_FIRE_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_HULL" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_HULL_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_HULL_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_HULL_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_HULL_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_POWER" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_POWER_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_POWER_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_POWER_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_POWER_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_BASE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_BASE_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_BASE_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_BASE_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_BASE_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_BASE_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_ACCURACY" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_ACCURACY_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_ACCURACY_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_ACCURACY_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_ACCURACY_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_ACCURACY_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_FIRE_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_FIRE_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_FIRE_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_FIRE_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_FIRE_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_HULL" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_HULL_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_HULL_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_HULL_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_HULL_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_HULL_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_POWER" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_POWER_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_POWER_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_POWER_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_POWER_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_POWER_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="POWER_CORE" value="1.0" stackable="independent" />
+								<crystalShard weapon="SCANNER_RECON" value="1.0" stackable="independent" />
+								<crystalShard weapon="SCANNER_BAIT" value="1.0" stackable="independent" />
+								<crystalShard weapon="HARPOON_LAUNCHER" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_BABYORCHID" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_ANCIENT" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_BIRD" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_AVATAR" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_AUGMENTED" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_BISHOP" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_CHIEF" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_CLAN" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_COMMANDO" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_CRUSADER" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_CRYSTAL" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SSLG" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_CULTIST" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_DEFEND" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_DUSK" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_ENGINEER" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_ENGI" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_PHANTOM" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_PHANTOM_ALPHA" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_GOUL" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_GOUL_ALPHA" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_MARE" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_MARE_ALPHA" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_WRAITH" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_WRAITH_ALPHA" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_HATCH" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_HUMAN" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_LANIUS" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_MANTIS" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_FREEMANTIS" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_MEDIC" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_MONK" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_ORCHID" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_VAMPWEED" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_OUTCAST" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_PEACE" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_PONY" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_PONYC" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_QUEEN" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_RADIANT" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_RADICAL" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_DEVORAK" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_RANGER" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_ROCK" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SABO" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SENTINEL" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SEPARATIST" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SHELL" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SHELL_MECH" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SHELL_MEDIC" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SHELL_GUARDIAN" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SLUG" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_HEKTAR" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SOLDIER" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SPIDER" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SUZERAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_WARLORD" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SYMBIOTE" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_WEAVER" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_WELDER" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_ZOLTAN" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_LEECH" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_AMPERE" value="1.0" stackable="independent" />
+							</aug>
+		<!--Cry some more-->
+							<aug name="CRYABOUTIT_VENGEANCE_CLONE">
+								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
+								<crystalShard weapon="CLONE_CANNON" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_BABYORCHID" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_ANCIENT" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_BIRD" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_AVATAR" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_AUGMENTED" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_BISHOP" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_CHIEF" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_CLAN" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_COMMANDO" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_CRUSADER" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_CRYSTAL" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SSLG" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_CULTIST" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_DEFEND" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_DUSK" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_ENGINEER" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_ENGI" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_PHANTOM" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_PHANTOM_ALPHA" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_GOUL" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_GOUL_ALPHA" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_MARE" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_MARE_ALPHA" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_WRAITH" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_WRAITH_ALPHA" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_HATCH" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_HUMAN" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_LANIUS" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_MANTIS" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_FREEMANTIS" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_MEDIC" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_MONK" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_ORCHID" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_VAMPWEED" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_OUTCAST" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_PEACE" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_PONY" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_PONYC" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_QUEEN" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_RADIANT" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_RADICAL" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_DEVORAK" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_RANGER" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_ROCK" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SABO" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SENTINEL" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SEPARATIST" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SHELL" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SHELL_MECH" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SHELL_MEDIC" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SHELL_GUARDIAN" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SLUG" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_HEKTAR" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SOLDIER" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SPIDER" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SUZERAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_WARLORD" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SYMBIOTE" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_WEAVER" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_WELDER" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_ZOLTAN" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_LEECH" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_AMPERE" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_CHIEF_SPECIAL_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_HATCH_SPECIAL" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_CRUSADER_SPECIAL" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_CHIEF_SPECIAL" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_SYMBIOTE_SPECIAL" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_HATCH_SPECIAL" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_BABYORCHID_TWEAK" value="1.0" stackable="independent" />
+							</aug>
+		<!--And more-->
+							<aug name="CRYABOUTIT_VENGEANCE_KERNEL">
+								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
+								<crystalShard weapon="KERNEL_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_1_ELITE" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_2_ELITE" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_HEAVY" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_HEAVY_ELITE" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_CHAIN_ELITE" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_CHARGE" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_CHARGE_ELITE" value="1.0" stackable="independent" />
+							</aug>
+		<!--And more-->
+							<aug name="CRYABOUTIT_VENGEANCE_CRYSTAL">
+								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
+								<crystalShard weapon="BOMB_LOCK" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_BURST_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_BURST_1_RED" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_BURST_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_BURST_2_RED" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_HEAVY_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_HEAVY_1_RED" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_HEAVY_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_HEAVY_2_RED" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_STUN_RED" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_SHOTGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_SHOTGUN_RED" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_CHARGEGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_CHARGEGUN_RED" value="1.0" stackable="independent" />
+								<crystalShard weapon="CLONE_CANNON_PONYC" value="1.0" stackable="independent" />
+							</aug>
+		<!--And more-->
+							<aug name="CRYABOUTIT_VENGEANCE_ORANGE">
+								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
+								<crystalShard weapon="LASER_PARTICLE" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_PARTICLE_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_PARTICLE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_PARTICLE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_PARTICLE_PLAYER" value="1.0" stackable="independent" />
+							</aug>
+		<!--And more-->
+							<aug name="CRYABOUTIT_VENGEANCE_ION">
+								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
+								<crystalShard weapon="ION_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_4" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_TRI" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_INSTANT" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_CHAINGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_CHARGEGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_CHARGEGUN_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_ION" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_CONSERVATIVE" value="1.0" stackable="independent" />
+								<crystalShard weapon="BIG_ION" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_CHAIN_CHARGEGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_BASE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_BASE_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_BASE_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_BASE_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_BASE_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_BASE_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_ACCURACY" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_ACCURACY_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_ACCURACY_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_ACCURACY_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_ACCURACY_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_ACCURACY_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_FIRE_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_FIRE_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_FIRE_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_FIRE_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_FIRE_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_HULL" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_HULL_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_HULL_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_HULL_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_HULL_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_HULL_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_POWER" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_POWER_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_POWER_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_POWER_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_POWER_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_POWER_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_GATLING_ANCIENT_ION" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_ION_TRI_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_CHAINGUN_ION" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_ION_ENEMY_ARTY" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_CHAINGUN_ION_SUICIDE" value="1.0" stackable="independent" />
+							</aug>
+		<!--And more-->
+							<aug name="CRYABOUTIT_VENGEANCE_ENERGY">
+								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
+								<crystalShard weapon="MISSILES_ENERGY" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_2_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_HULL" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_STUN_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_CHAINGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_CHARGEGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_CHARGEGUN_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_CONSERVATIVE" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_DUSKBRINGER_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_ENERGY_ION" value="1.0" stackable="independent" />
+							</aug>
+		<!--And more-->
+							<aug name="CRYABOUTIT_VENGEANCE_FLAK">
+								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
+								<crystalShard weapon="SHOTGUN_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_2_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_4" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_CHARGE" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_INSTANT" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_ION" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_TOXIC" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_TOXIC_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_GOLD_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_GOLD" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_LEECH_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_AUG_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_TOGGLE_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_TOGGLE_ION" value="1.0" stackable="independent" />
+								<crystalShard weapon="SHOTGUN_TOGGLE_TOXIC" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_ENERGY_ION" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_AETHER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_BRONZE" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_INDIUM" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_RHENIUM" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_SILVER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_PALLADIUM" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_IRIDIUM" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_PLATINUM" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_OSMIUM" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_NOBELIUM" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_HASSIUM" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_SHOTGUN_CURSED" value="1.0" stackable="independent" />
+							</aug>
+		<!--And more-->
+							<aug name="CRYABOUTIT_VENGEANCE_BEYATCH">
+								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
+								<crystalShard weapon="BEAM_PARTICLE" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_INSTANT" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_2_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_4" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_LONG" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_LONG_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_SCYTHE" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_FIRE_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_FIRE_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_FIRE_INSTANT" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_BREACH" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_HULL" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_HULL_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_MINING" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_ADAPT" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_ADAPT_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_BIO_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_GUILLOTINE" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_GUILLOTINE_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FOCUS_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="FOCUS_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="FOCUS_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="FOCUS_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="FOCUS_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="FOCUS_BIO_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_CONSERVATIVE" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_BIO_CONSERVATIVE" value="1.0" stackable="independent" />
+								<crystalShard weapon="LANCE_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_BEAM" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_BEAM_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_BEAM_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_HAVOC" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_FOCUS" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_FOCUS_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="ROYAL_BEAM_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="ROYAL_HAVOC" value="1.0" stackable="independent" />
+								<crystalShard weapon="ROYAL_FOCUS" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_REPAIR" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_HARDSCIFI" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_4_SYLVAN" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_SHELL" value="1.0" stackable="independent" />
+								<crystalShard weapon="ZOLTAN_DELETER" value="1.0" stackable="independent" />
+								<crystalShard weapon="PART_GATLING_BARREL" value="1.0" stackable="independent" />
+								<crystalShard weapon="PART_GATLING_BASE" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_ZOLTAN_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_ZOLTAN_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_SLUG_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_KNIGHT_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_CULTIST_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_DYNASTY_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_MATH_4" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_MATH_5" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_BATTERY" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_ADAPT_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="BIG_ION" value="1.0" stackable="independent" />
+								<crystalShard weapon="GASTER_BLASTER" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULE_ACCURACY" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULE_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULE_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULE_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULE_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULE_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULE_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULE_HULL" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULE_POWER" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_BASE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_BASE_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_BASE_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_BASE_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_BASE_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_FIRE_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_FIRE_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_FIRE_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_FIRE_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_HULL" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_HULL_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_HULL_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_HULL_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_HULL_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_POWER" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_POWER_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_POWER_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_POWER_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_BEAM_POWER_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="POWER_CORE" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BEAM_PARTICLE_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BEAM_MINING_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BEAM_MINING_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BEAM_GUILLOTINE_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BEAM_GUILLOTINE_CHAIN_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BEAM_EXPLOSION" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BEAM_EXPLOSION_EGG" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BEAM_EXPLOSION_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BEAM_ION_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_AN_BEAM" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_FOCUS_FUELED_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_FOCUS_FUELED_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_FOCUS_FUELED_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_FOCUS_FUELED_4" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_FOCUS_FUELED_5" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_FOCUS_ENERGY_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_FOCUS_ENERGY_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_FOCUS_ENERGY_2_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_FOCUS_ENERGY_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BEAM_BASILISK" value="1.0" stackable="independent" />
+								<crystalShard weapon="ZOLTAN_DELETER_ARTY_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="BEAM_ADAPT_3_ARTY_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_FOCUS_2_SMOKER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FOCUS_SHADOW" value="1.0" stackable="independent" />
+								<crystalShard weapon="FOCUS_SHADOW_ADAPT" value="1.0" stackable="independent" />
+							</aug>
+		<!--And more-->
+							<aug name="CRYABOUTIT_VENGEANCE_MISSILES">
+								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
+								<crystalShard weapon="MISSILES_PARTICLE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_PARTICLE_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_ENERGY" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_4" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_4_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_BURST" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_BURST_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_BURST_2_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_CLOAK" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_FIRE_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_FREE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_1_ELITE" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_2_ELITE" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_HEAVY" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_HEAVY_ELITE" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_CHAIN_ELITE" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_CHARGE" value="1.0" stackable="independent" />
+								<crystalShard weapon="KERNEL_CHARGE_ELITE" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_BURST_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_BURST_1_RED" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_BURST_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_BURST_2_RED" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_HEAVY_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_HEAVY_1_RED" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_HEAVY_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_HEAVY_2_RED" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_STUN_RED" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_CHARGEGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_CHARGEGUN_RED" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_CONSERVATIVE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_ROCK" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_COALITION_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_LOSTSUN_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_ROCK_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_MATH_7" value="1.0" stackable="independent" />
+								<crystalShard weapon="MISSILES_OBSIDIAN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MINELAUNCHER_GIANT" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRYSTAL_BURST_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="STRAWBERRY" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_BASE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_BASE_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_BASE_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_BASE_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_BASE_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_ACCURACY" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_ACCURACY_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_ACCURACY_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_ACCURACY_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_ACCURACY_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_FIRE_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_FIRE_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_FIRE_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_FIRE_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_HULL" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_HULL_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_HULL_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_HULL_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_HULL_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_POWER" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_POWER_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_POWER_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_POWER_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_MISSILE_POWER_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="HARPOON_LAUNCHER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_MISSILES_CLOAK_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_MISSILES_CLOAK_STUN_PLAYER" value="1.0" stackable="independent" />
+							</aug>
+		<!--And more-->
 
-	</augments>
+							<aug name="CRYABOUTIT_VENGEANCE_MORSHU">
+								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
+								<crystalShard weapon="BOMB_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_BREACH_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_FREE" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_ION" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_LOCK" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_HEAL" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_HEAL_SYSTEM" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_HEAL_SYSTEM_STRONG" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_BUFF" value="1.0" stackable="independent" />
+								<crystalShard weapon="SPORE_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="SPORE_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="SPORE_HEAVY" value="1.0" stackable="independent" />
+								<crystalShard weapon="SPORE_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="SPORE_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_CONSERVATIVE" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_CLUSTER" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_BOMB" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ROYAL_BOMB" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_CHERRI" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_FREEMANTIS_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_MANTIS_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_MATH_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_CONSERVRECYCLER" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_DRAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_ELITE" value="1.0" stackable="independent" />
+								<crystalShard weapon="SCANNER_RECON" value="1.0" stackable="independent" />
+								<crystalShard weapon="SCANNER_BAIT" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BOMB_CRYSTAL_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BOMB_CRYSTAL_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_BOMB_CRUNCH" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_AN_DYNAMO" value="1.0" stackable="independent" />
+								<crystalShard weapon="BOMB_ION_ENEMY_ARTY" value="1.0" stackable="independent" />
+							</aug>
+		<!--And more-->				
+							<aug name="CRYABOUTIT_VENGEANCE_PEW">
+								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
+								<crystalShard weapon="LASER_BURST_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_BURST_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_BURST_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_BURST_5" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_BURST_8" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_HEAVY_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_HEAVY_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_HEAVY_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_HEAVY_CHAINGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_HEAVY_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_HULL_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_HULL_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_HULL_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_HULL_CHAINGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_LIGHT" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_LIGHT_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_PIERCE_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_CHAINGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_CHARGEGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_CHARGEGUN_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_CHARGEGUN_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_CHARGE_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_CHAINGUN_DAMAGE" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_FROST_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_FROST_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_FROST_2_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_4" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_CHAINGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_CHARGEGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_CHARGEGUN_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_STUN_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_STUN_HEAVY" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_STUN_CHARGEGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_STUN_CHARGEGUN_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_PIERCE_DISCO" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_PIERCE_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_PIERCE_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_2_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_HULL" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_STUN_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_CHAINGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_CHARGEGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_CHARGEGUN_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_CONSERVATIVE" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_CONSERVATIVE" value="1.0" stackable="independent" />
+								<crystalShard weapon="ENERGY_CONSERVATIVE" value="1.0" stackable="independent" />
+								<crystalShard weapon="ZENITH_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_LASER" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_LASER_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_LASER_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_ION_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="ANCIENT_ION_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="ROYAL_LASER_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="ROYAL_ION_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="CRASH_LASER" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_BURST_SYLVAN" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_BURST_5_SYLVAN" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_BISHOP" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_PIERCE_CHAIN" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_FIRE_SPECIAL" value="1.0" stackable="independent" />
+								<crystalShard weapon="GATLING_SYLVAN" value="1.0" stackable="independent" />
+								<crystalShard weapon="GATLING_SYLVAN_HONOR" value="1.0" stackable="independent" />
+								<crystalShard weapon="GATLING_ANCIENT" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_CIVILIAN_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_MILITIA_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_FEDERATION_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_DUSKBRINGER_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_MANTIS_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_REBEL_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_CLAN_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_SHELL_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="LOOT_MATH_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="ION_CHAIN_CHARGEGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="SNIPER" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_LIGHT_CHARGEGUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_BASE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_BASE_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_BASE_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_BASE_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_BASE_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_BASE_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_ACCURACY" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_ACCURACY_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_ACCURACY_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_ACCURACY_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_ACCURACY_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_ACCURACY_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_FIRE_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_FIRE_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_FIRE_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_FIRE_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_FIRE_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_HULL" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_HULL_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_HULL_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_HULL_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_HULL_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_HULL_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_POWER" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_POWER_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_POWER_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_POWER_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_POWER_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_LASER_POWER_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_BASE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_BASE_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_BASE_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_BASE_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_BASE_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_BASE_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_ACCURACY" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_ACCURACY_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_ACCURACY_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_ACCURACY_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_ACCURACY_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_ACCURACY_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_FIRE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_FIRE_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_FIRE_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_FIRE_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_FIRE_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_FIRE_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_HULL" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_HULL_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_HULL_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_HULL_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_HULL_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_HULL_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_POWER" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_POWER_BIO" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_POWER_COOLDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_POWER_LOCKDOWN" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_POWER_PIERCE" value="1.0" stackable="independent" />
+								<crystalShard weapon="MODULAR_ION_POWER_STUN" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_ORGANIC_BULLSQUID" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_LASER_ANOMALY_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_PHASER_SUFFOCATION" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_LASER_ION_MEGA" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_ENERGY_DISC" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_PULSE_1" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_PULSE_2" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_PULSE_2_PLAYER" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_PULSE_3" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_PULSEDEEP" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_LASER_ION_MEGA_INVIS" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_ANCIENT_ION_1_KAI" value="1.0" stackable="independent" />
+								<crystalShard weapon="FM_ANCIENT_ION_1_KAI2" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_SHADOW" value="1.0" stackable="independent" />
+								<crystalShard weapon="LASER_SHADOW_PLAYER" value="1.0" stackable="independent" />
+							</aug>
+
+			</augments>
 
 
 
 
-	<augments> <!--FORGEMASTER AUGMENTS for Energized Rooms -->
-		<aug name="ENERGIZED_ROOM_MEDBAY">
-			<statBoosts>
-				<statBoost name="allDamageTakenMultiplier">
-					<boostType>MULT</boostType>
-					<amount>0.6</amount>
-					<shipTarget>ORIGINAL_SHIP</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
-					<droneTarget>CREW</droneTarget>
-					<value>false</value>
-					<priority>999</priority>
-					<systemRoomTarget>ALL</systemRoomTarget>
-					<systemList>
-						<medbay/>
-					</systemList>
-				</statBoost>
-				<statBoost name="sabotageSpeedMultiplier">
-					<boostType>MULT</boostType>
-					<amount>0.5</amount>
-					<shipTarget>ORIGINAL_SHIP</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
-					<droneTarget>CREW</droneTarget>
-					<value>false</value>
-					<priority>999</priority>
-					<systemRoomTarget>ALL</systemRoomTarget>
-					<systemList>
-						<medbay/>
-					</systemList>
-				</statBoost>
-				<statBoost name="trueHealAmount">
-					<boostType>FLAT</boostType>
-					<shipTarget>ORIGINAL_SHIP</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
-					<droneTarget>ALL</droneTarget>
-					<amount>-3</amount>
-					<priority>0</priority>
-					<systemRoomTarget>ALL</systemRoomTarget>
-					<systemList>
-						<medbay/>
-					</systemList>
-				</statBoost>
+			<augments> <!--FORGEMASTER AUGMENTS for Energized Rooms -->
+				<aug name="ENERGIZED_ROOM_MEDBAY">
+					<statBoosts>
+						<statBoost name="allDamageTakenMultiplier">
+							<boostType>MULT</boostType>
+							<amount>0.6</amount>
+							<shipTarget>ORIGINAL_SHIP</shipTarget>
+							<crewTarget>ALLIES</crewTarget>
+							<droneTarget>CREW</droneTarget>
+							<value>false</value>
+							<priority>999</priority>
+							<systemRoomTarget>ALL</systemRoomTarget>
+							<systemList>
+								<medbay/>
+							</systemList>
+						</statBoost>
+						<statBoost name="sabotageSpeedMultiplier">
+							<boostType>MULT</boostType>
+							<amount>0.5</amount>
+							<shipTarget>ORIGINAL_SHIP</shipTarget>
+							<crewTarget>ENEMIES</crewTarget>
+							<droneTarget>CREW</droneTarget>
+							<value>false</value>
+							<priority>999</priority>
+							<systemRoomTarget>ALL</systemRoomTarget>
+							<systemList>
+								<medbay/>
+							</systemList>
+						</statBoost>
+						<statBoost name="trueHealAmount">
+							<boostType>FLAT</boostType>
+							<shipTarget>ORIGINAL_SHIP</shipTarget>
+							<crewTarget>ENEMIES</crewTarget>
+							<droneTarget>ALL</droneTarget>
+							<amount>-3</amount>
+							<priority>0</priority>
+							<systemRoomTarget>ALL</systemRoomTarget>
+							<systemList>
+								<medbay/>
+							</systemList>
+						</statBoost>
 
-			</statBoosts>
-		</aug>
+					</statBoosts>
+				</aug>
 
-		<aug name="ENERGIZED_ROOM_WEAPONS">
-			<statBoosts>
-				<statBoost name="allDamageTakenMultiplier">
-					<boostType>MULT</boostType>
-					<amount>0.6</amount>
-					<shipTarget>ORIGINAL_SHIP</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
-					<droneTarget>CREW</droneTarget>
-					<value>false</value>
-					<priority>999</priority>
-					<systemRoomTarget>ALL</systemRoomTarget>
-					<systemList>
-						<weapons/>
-					</systemList>
-				</statBoost>
-				<statBoost name="sabotageSpeedMultiplier">
-					<boostType>MULT</boostType>
-					<amount>0.5</amount>
-					<shipTarget>ORIGINAL_SHIP</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
-					<droneTarget>CREW</droneTarget>
-					<value>false</value>
-					<priority>999</priority>
-					<systemRoomTarget>ALL</systemRoomTarget>
-					<systemList>
-						<weapons/>
-					</systemList>
-				</statBoost>
-				<statBoost name="trueHealAmount">
-					<boostType>FLAT</boostType>
-					<shipTarget>ORIGINAL_SHIP</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
-					<droneTarget>ALL</droneTarget>
-					<amount>-3</amount>
-					<priority>0</priority>
-					<systemRoomTarget>ALL</systemRoomTarget>
-					<systemList>
-						<weapons/>
-					</systemList>
-				</statBoost>
-			</statBoosts>
-		</aug>
+				<aug name="ENERGIZED_ROOM_WEAPONS">
+					<statBoosts>
+						<statBoost name="allDamageTakenMultiplier">
+							<boostType>MULT</boostType>
+							<amount>0.6</amount>
+							<shipTarget>ORIGINAL_SHIP</shipTarget>
+							<crewTarget>ALLIES</crewTarget>
+							<droneTarget>CREW</droneTarget>
+							<value>false</value>
+							<priority>999</priority>
+							<systemRoomTarget>ALL</systemRoomTarget>
+							<systemList>
+								<weapons/>
+							</systemList>
+						</statBoost>
+						<statBoost name="sabotageSpeedMultiplier">
+							<boostType>MULT</boostType>
+							<amount>0.5</amount>
+							<shipTarget>ORIGINAL_SHIP</shipTarget>
+							<crewTarget>ENEMIES</crewTarget>
+							<droneTarget>CREW</droneTarget>
+							<value>false</value>
+							<priority>999</priority>
+							<systemRoomTarget>ALL</systemRoomTarget>
+							<systemList>
+								<weapons/>
+							</systemList>
+						</statBoost>
+						<statBoost name="trueHealAmount">
+							<boostType>FLAT</boostType>
+							<shipTarget>ORIGINAL_SHIP</shipTarget>
+							<crewTarget>ENEMIES</crewTarget>
+							<droneTarget>ALL</droneTarget>
+							<amount>-3</amount>
+							<priority>0</priority>
+							<systemRoomTarget>ALL</systemRoomTarget>
+							<systemList>
+								<weapons/>
+							</systemList>
+						</statBoost>
+					</statBoosts>
+				</aug>
 
-		<aug name="ENERGIZED_ROOM_CLOAKING">
-			<statBoosts>
-				<statBoost name="allDamageTakenMultiplier">
-					<boostType>MULT</boostType>
-					<amount>0.6</amount>
-					<shipTarget>ORIGINAL_SHIP</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
-					<droneTarget>CREW</droneTarget>
-					<value>false</value>
-					<priority>999</priority>
-					<systemRoomTarget>ALL</systemRoomTarget>
-					<systemList>
-						<cloaking/>
-					</systemList>
-				</statBoost>
-				<statBoost name="sabotageSpeedMultiplier">
-					<boostType>MULT</boostType>
-					<amount>0.5</amount>
-					<shipTarget>ORIGINAL_SHIP</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
-					<droneTarget>CREW</droneTarget>
-					<value>false</value>
-					<priority>999</priority>
-					<systemRoomTarget>ALL</systemRoomTarget>
-					<systemList>
-						<cloaking/>
-					</systemList>
-				</statBoost>
-				<statBoost name="trueHealAmount">
-					<boostType>FLAT</boostType>
-					<shipTarget>ORIGINAL_SHIP</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
-					<droneTarget>ALL</droneTarget>
-					<amount>-3</amount>
-					<priority>0</priority>
-					<systemRoomTarget>ALL</systemRoomTarget>
-					<systemList>
-						<cloaking/>
-					</systemList>
-				</statBoost>
-			</statBoosts>
-		</aug>
+				<aug name="ENERGIZED_ROOM_CLOAKING">
+					<statBoosts>
+						<statBoost name="allDamageTakenMultiplier">
+							<boostType>MULT</boostType>
+							<amount>0.6</amount>
+							<shipTarget>ORIGINAL_SHIP</shipTarget>
+							<crewTarget>ALLIES</crewTarget>
+							<droneTarget>CREW</droneTarget>
+							<value>false</value>
+							<priority>999</priority>
+							<systemRoomTarget>ALL</systemRoomTarget>
+							<systemList>
+								<cloaking/>
+							</systemList>
+						</statBoost>
+						<statBoost name="sabotageSpeedMultiplier">
+							<boostType>MULT</boostType>
+							<amount>0.5</amount>
+							<shipTarget>ORIGINAL_SHIP</shipTarget>
+							<crewTarget>ENEMIES</crewTarget>
+							<droneTarget>CREW</droneTarget>
+							<value>false</value>
+							<priority>999</priority>
+							<systemRoomTarget>ALL</systemRoomTarget>
+							<systemList>
+								<cloaking/>
+							</systemList>
+						</statBoost>
+						<statBoost name="trueHealAmount">
+							<boostType>FLAT</boostType>
+							<shipTarget>ORIGINAL_SHIP</shipTarget>
+							<crewTarget>ENEMIES</crewTarget>
+							<droneTarget>ALL</droneTarget>
+							<amount>-3</amount>
+							<priority>0</priority>
+							<systemRoomTarget>ALL</systemRoomTarget>
+							<systemList>
+								<cloaking/>
+							</systemList>
+						</statBoost>
+					</statBoosts>
+				</aug>
 
-		<aug name="ENERGIZED_ROOM_SHIELDS">
-			<statBoosts>
-				<statBoost name="allDamageTakenMultiplier">
-					<boostType>MULT</boostType>
-					<amount>0.6</amount>
-					<shipTarget>ORIGINAL_SHIP</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
-					<droneTarget>CREW</droneTarget>
-					<value>false</value>
-					<priority>999</priority>
-					<systemRoomTarget>ALL</systemRoomTarget>
-					<systemList>
-						<cloakingshields/>
-					</systemList>
-				</statBoost>
-				<statBoost name="sabotageSpeedMultiplier">
-					<boostType>MULT</boostType>
-					<amount>0.5</amount>
-					<shipTarget>ORIGINAL_SHIP</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
-					<droneTarget>CREW</droneTarget>
-					<value>false</value>
-					<priority>999</priority>
-					<systemRoomTarget>ALL</systemRoomTarget>
-					<systemList>
-						<shields/>
-					</systemList>
-				</statBoost>
-				<statBoost name="trueHealAmount">
-					<boostType>FLAT</boostType>
-					<shipTarget>ORIGINAL_SHIP</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
-					<droneTarget>ALL</droneTarget>
-					<amount>-3</amount>
-					<priority>0</priority>
-					<systemRoomTarget>ALL</systemRoomTarget>
-					<systemList>
-						<shields/>
-					</systemList>
-				</statBoost>
-			</statBoosts>
-		</aug>
+				<aug name="ENERGIZED_ROOM_SHIELDS">
+					<statBoosts>
+						<statBoost name="allDamageTakenMultiplier">
+							<boostType>MULT</boostType>
+							<amount>0.6</amount>
+							<shipTarget>ORIGINAL_SHIP</shipTarget>
+							<crewTarget>ALLIES</crewTarget>
+							<droneTarget>CREW</droneTarget>
+							<value>false</value>
+							<priority>999</priority>
+							<systemRoomTarget>ALL</systemRoomTarget>
+							<systemList>
+								<cloakingshields/>
+							</systemList>
+						</statBoost>
+						<statBoost name="sabotageSpeedMultiplier">
+							<boostType>MULT</boostType>
+							<amount>0.5</amount>
+							<shipTarget>ORIGINAL_SHIP</shipTarget>
+							<crewTarget>ENEMIES</crewTarget>
+							<droneTarget>CREW</droneTarget>
+							<value>false</value>
+							<priority>999</priority>
+							<systemRoomTarget>ALL</systemRoomTarget>
+							<systemList>
+								<shields/>
+							</systemList>
+						</statBoost>
+						<statBoost name="trueHealAmount">
+							<boostType>FLAT</boostType>
+							<shipTarget>ORIGINAL_SHIP</shipTarget>
+							<crewTarget>ENEMIES</crewTarget>
+							<droneTarget>ALL</droneTarget>
+							<amount>-3</amount>
+							<priority>0</priority>
+							<systemRoomTarget>ALL</systemRoomTarget>
+							<systemList>
+								<shields/>
+							</systemList>
+						</statBoost>
+					</statBoosts>
+				</aug>
 
-	</augments>
+			</augments>
 
-	<!--APPENDS PLATED AND FORGEMASTER TO THE VANILLA ROCK LAB UPGRADE WHITELISTS!  -->
+			<!--APPENDS PLATED AND FORGEMASTER TO THE VANILLA ROCK LAB UPGRADE WHITELISTS!  -->
 
 
-	<!--APPENDS ENGI TWINS TO THE VANILLA ENGI UPGRADE WHITELISTS!  -->
+			<!--APPENDS ENGI TWINS TO THE VANILLA ENGI UPGRADE WHITELISTS!  -->
 
-	<mod:findLike type ="augments"> <!-- LAB_DEFENDER_REPAIRS -->
-		<mod:findName type="aug" name="LAB_DEFENDER_REPAIRS">
-			<mod:findLike type="statBoosts">
-				<mod:findLike type="statBoost">
-					<mod:findLike type="whiteList">
-						<mod-append:mossberg/>
-						<mod-append:remington/>
+			<mod:findLike type ="augments"> <!-- LAB_DEFENDER_REPAIRS -->
+				<mod:findName type="aug" name="LAB_DEFENDER_REPAIRS">
+					<mod:findLike type="statBoosts">
+						<mod:findLike type="statBoost">
+							<mod:findLike type="whiteList">
+								<mod-append:mossberg/>
+								<mod-append:remington/>
+							</mod:findLike>
+						</mod:findLike>
 					</mod:findLike>
-				</mod:findLike>
+				</mod:findName>
 			</mod:findLike>
-		</mod:findName>
-	</mod:findLike>
 
-	<!--APPENDS PLATED AND FORGEMASTER TO OSMIAN BATTERIES  -->
+			<!--APPENDS PLATED AND FORGEMASTER TO OSMIAN BATTERIES  -->
 
-	<mod:findLike type ="augments"> <!-- OSMIAN_BATTERIES -->
-		<mod:findName type="aug" name="OSMIAN_BATTERIES">
-			<mod:findLike type="statBoosts">
-				<mod:findLike type="statBoost" name="powerCharges">
-					<mod:findLike type="whiteList">
-						<mod-append:fm_plated/>
-						<mod-append:fm_forgemasterperson_player/>
+			<mod:findLike type ="augments"> <!-- OSMIAN_BATTERIES -->
+				<mod:findName type="aug" name="OSMIAN_BATTERIES">
+					<mod:findLike type="statBoosts">
+						<mod:findLike type="statBoost" name="powerCharges">
+							<mod:findLike type="whiteList">
+								<mod-append:fm_plated/>
+								<mod-append:fm_forgemasterperson_player/>
+							</mod:findLike>
+						</mod:findLike>
 					</mod:findLike>
-				</mod:findLike>
+				</mod:findName>
 			</mod:findLike>
-		</mod:findName>
-	</mod:findLike>
 
-	<!--Append for fake drones to be affected augments from engineer arty -->
+			<!--Append for fake drones to be affected augments from engineer arty -->
 
-	<mod:findLike type ="augments"> <!--engineer lab-->
-		<mod:findName type="aug" name="LAB_ENGINEER_DRONES">
-			<mod:findLike type="statBoosts">
-				<mod-append:statBoost name="statBoost">
-					<statBoost name="damageMultiplier">
-						<boostType>MULT</boostType>
-						<amount>1.15</amount>
-						<shipTarget>CURRENT_ROOM</shipTarget>
-						<crewTarget>ALLIES</crewTarget>
-						<droneTarget>CREW</droneTarget>
-						<affectsSelf>false</affectsSelf>
-						<priority>0</priority>
-						<boostAnim>engineer_buff</boostAnim>
-						<whiteList load="LIST_FM_FAKEDRONES"/>
-					</statBoost>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
-					<whiteList>
-						<human_engineer />
-						<human_technician />
-						<easter_bubby />
-					</whiteList>
-				</mod-append:statBoost>
-				<mod-append:statBoost name="statBoost">
-					<statBoost name="repairSpeed">
-						<boostType>MULT</boostType>
-						<amount>1.15</amount>
-						<shipTarget>CURRENT_ROOM</shipTarget>
-						<crewTarget>ALLIES</crewTarget>
-						<droneTarget>CREW</droneTarget>
-						<affectsSelf>false</affectsSelf>
-						<priority>0</priority>
-						<whiteList load="LIST_FM_FAKEDRONES"/>
-					</statBoost>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
-					<whiteList>
-						<human_engineer />
-						<human_technician />
-						<easter_bubby />
-					</whiteList>
-				</mod-append:statBoost>
-				<mod-append:statBoost name="statBoost">
-					<statBoost name="trueHealAmount">
-						<boostType>FLAT</boostType>
-						<amount>6</amount>
-						<shipTarget>CURRENT_ROOM</shipTarget>
-						<crewTarget>ALLIES</crewTarget>
-						<droneTarget>CREW</droneTarget>
-						<affectsSelf>false</affectsSelf>
-						<priority>0</priority>
-						<whiteList load="LIST_FM_FAKEDRONES"/>
-					</statBoost>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
-					<whiteList>
-						<human_engineer />
-						<human_technician />
-						<easter_bubby />
-					</whiteList>
-				</mod-append:statBoost>
+			<mod:findLike type ="augments"> <!--engineer lab-->
+				<mod:findName type="aug" name="LAB_ENGINEER_DRONES">
+					<mod:findLike type="statBoosts">
+						<mod-append:statBoost name="statBoost">
+							<statBoost name="damageMultiplier">
+								<boostType>MULT</boostType>
+								<amount>1.15</amount>
+								<shipTarget>CURRENT_ROOM</shipTarget>
+								<crewTarget>ALLIES</crewTarget>
+								<droneTarget>CREW</droneTarget>
+								<affectsSelf>false</affectsSelf>
+								<priority>0</priority>
+								<boostAnim>engineer_buff</boostAnim>
+								<whiteList load="LIST_FM_FAKEDRONES"/>
+							</statBoost>
+							<shipTarget>ALL</shipTarget>
+							<crewTarget>ALLIES</crewTarget>
+							<whiteList>
+								<human_engineer />
+								<human_technician />
+								<easter_bubby />
+							</whiteList>
+						</mod-append:statBoost>
+						<mod-append:statBoost name="statBoost">
+							<statBoost name="repairSpeed">
+								<boostType>MULT</boostType>
+								<amount>1.15</amount>
+								<shipTarget>CURRENT_ROOM</shipTarget>
+								<crewTarget>ALLIES</crewTarget>
+								<droneTarget>CREW</droneTarget>
+								<affectsSelf>false</affectsSelf>
+								<priority>0</priority>
+								<whiteList load="LIST_FM_FAKEDRONES"/>
+							</statBoost>
+							<shipTarget>ALL</shipTarget>
+							<crewTarget>ALLIES</crewTarget>
+							<whiteList>
+								<human_engineer />
+								<human_technician />
+								<easter_bubby />
+							</whiteList>
+						</mod-append:statBoost>
+						<mod-append:statBoost name="statBoost">
+							<statBoost name="trueHealAmount">
+								<boostType>FLAT</boostType>
+								<amount>6</amount>
+								<shipTarget>CURRENT_ROOM</shipTarget>
+								<crewTarget>ALLIES</crewTarget>
+								<droneTarget>CREW</droneTarget>
+								<affectsSelf>false</affectsSelf>
+								<priority>0</priority>
+								<whiteList load="LIST_FM_FAKEDRONES"/>
+							</statBoost>
+							<shipTarget>ALL</shipTarget>
+							<crewTarget>ALLIES</crewTarget>
+							<whiteList>
+								<human_engineer />
+								<human_technician />
+								<easter_bubby />
+							</whiteList>
+						</mod-append:statBoost>
+					</mod:findLike>
+				</mod:findName>
 			</mod:findLike>
-		</mod:findName>
-	</mod:findLike>
-	<mod:findLike type ="augments"> <!--Ex drone booster-->
-		<mod:findName type="aug" name="EX_DRONE_SPEED">
-			<mod:findLike type="statBoosts">
-				<!--fake drone boosting-->
-				<mod-append:statBoost name="moveSpeedMultiplier">
-					<boostType>MULT</boostType>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
-					<droneTarget>CREW</droneTarget>
-					<amount>2</amount>
-					<priority>0</priority>
-					<systemPowerDependency>
-						<drones/>
-					</systemPowerDependency>
-					<systemPowerScaling>
-						<noSys>0</noSys>
-						<noPwr>0</noPwr>
-						<onePwr>1</onePwr>
-					</systemPowerScaling>
-					<whiteList list="LIST_FM_FAKEDRONES"/>
-				</mod-append:statBoost>
-				<mod-append:statBoost name="damageMultiplier">
-					<boostType>MULT</boostType>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
-					<droneTarget>CREW</droneTarget>
-					<amount>1.5</amount>
-					<priority>0</priority>
-					<systemPowerDependency>
-						<drones/>
-					</systemPowerDependency>
-					<systemPowerScaling>
-						<noSys>0</noSys>
-						<noPwr>0</noPwr>
-						<onePwr>1</onePwr>
-					</systemPowerScaling>
-					<whiteList load="LIST_FM_FAKEDRONES"/>
-				</mod-append:statBoost>
-				<mod-append:statBoost name="sabotageSpeedMultiplier">
-					<boostType>MULT</boostType>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
-					<droneTarget>CREW</droneTarget>
-					<amount>1.5</amount>
-					<priority>0</priority>
-					<systemPowerDependency>
-						<drones/>
-					</systemPowerDependency>
-					<systemPowerScaling>
-						<noSys>0</noSys>
-						<noPwr>0</noPwr>
-						<onePwr>1</onePwr>
-					</systemPowerScaling>
-					<whiteList load="LIST_FM_FAKEDRONES"/>
-				</mod-append:statBoost>
-				<mod-append:statBoost name="repairSpeed">
-					<boostType>MULT</boostType>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
-					<droneTarget>CREW</droneTarget>
-					<amount>1.5</amount>
-					<priority>0</priority>
-					<systemPowerDependency>
-						<drones/>
-					</systemPowerDependency>
-					<systemPowerScaling>
-						<noSys>0</noSys>
-						<noPwr>0</noPwr>
-						<onePwr>1</onePwr>
-					</systemPowerScaling>
-					<whiteList load="LIST_FM_FAKEDRONES"/>
-				</mod-append:statBoost>
-				<mod-append:statBoost name="fireRepairMultiplier">
-					<boostType>MULT</boostType>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
-					<droneTarget>CREW</droneTarget>
-					<amount>1.5</amount>
-					<priority>0</priority>
-					<systemPowerDependency>
-						<drones/>
-					</systemPowerDependency>
-					<systemPowerScaling>
-						<noSys>0</noSys>
-						<noPwr>0</noPwr>
-						<onePwr>1</onePwr>
-					</systemPowerScaling>
-					<whiteList load="LIST_FM_FAKEDRONES"/>
-				</mod-append:statBoost>
+			<mod:findLike type ="augments"> <!--Ex drone booster-->
+				<mod:findName type="aug" name="EX_DRONE_SPEED">
+					<mod:findLike type="statBoosts">
+						<!--fake drone boosting-->
+						<mod-append:statBoost name="moveSpeedMultiplier">
+							<boostType>MULT</boostType>
+							<shipTarget>ALL</shipTarget>
+							<crewTarget>ALLIES</crewTarget>
+							<droneTarget>CREW</droneTarget>
+							<amount>2</amount>
+							<priority>0</priority>
+							<systemPowerDependency>
+								<drones/>
+							</systemPowerDependency>
+							<systemPowerScaling>
+								<noSys>0</noSys>
+								<noPwr>0</noPwr>
+								<onePwr>1</onePwr>
+							</systemPowerScaling>
+							<whiteList list="LIST_FM_FAKEDRONES"/>
+						</mod-append:statBoost>
+						<mod-append:statBoost name="damageMultiplier">
+							<boostType>MULT</boostType>
+							<shipTarget>ALL</shipTarget>
+							<crewTarget>ALLIES</crewTarget>
+							<droneTarget>CREW</droneTarget>
+							<amount>1.5</amount>
+							<priority>0</priority>
+							<systemPowerDependency>
+								<drones/>
+							</systemPowerDependency>
+							<systemPowerScaling>
+								<noSys>0</noSys>
+								<noPwr>0</noPwr>
+								<onePwr>1</onePwr>
+							</systemPowerScaling>
+							<whiteList load="LIST_FM_FAKEDRONES"/>
+						</mod-append:statBoost>
+						<mod-append:statBoost name="sabotageSpeedMultiplier">
+							<boostType>MULT</boostType>
+							<shipTarget>ALL</shipTarget>
+							<crewTarget>ALLIES</crewTarget>
+							<droneTarget>CREW</droneTarget>
+							<amount>1.5</amount>
+							<priority>0</priority>
+							<systemPowerDependency>
+								<drones/>
+							</systemPowerDependency>
+							<systemPowerScaling>
+								<noSys>0</noSys>
+								<noPwr>0</noPwr>
+								<onePwr>1</onePwr>
+							</systemPowerScaling>
+							<whiteList load="LIST_FM_FAKEDRONES"/>
+						</mod-append:statBoost>
+						<mod-append:statBoost name="repairSpeed">
+							<boostType>MULT</boostType>
+							<shipTarget>ALL</shipTarget>
+							<crewTarget>ALLIES</crewTarget>
+							<droneTarget>CREW</droneTarget>
+							<amount>1.5</amount>
+							<priority>0</priority>
+							<systemPowerDependency>
+								<drones/>
+							</systemPowerDependency>
+							<systemPowerScaling>
+								<noSys>0</noSys>
+								<noPwr>0</noPwr>
+								<onePwr>1</onePwr>
+							</systemPowerScaling>
+							<whiteList load="LIST_FM_FAKEDRONES"/>
+						</mod-append:statBoost>
+						<mod-append:statBoost name="fireRepairMultiplier">
+							<boostType>MULT</boostType>
+							<shipTarget>ALL</shipTarget>
+							<crewTarget>ALLIES</crewTarget>
+							<droneTarget>CREW</droneTarget>
+							<amount>1.5</amount>
+							<priority>0</priority>
+							<systemPowerDependency>
+								<drones/>
+							</systemPowerDependency>
+							<systemPowerScaling>
+								<noSys>0</noSys>
+								<noPwr>0</noPwr>
+								<onePwr>1</onePwr>
+							</systemPowerScaling>
+							<whiteList load="LIST_FM_FAKEDRONES"/>
+						</mod-append:statBoost>
+					</mod:findLike>
+				</mod:findName>
 			</mod:findLike>
-		</mod:findName>
-	</mod:findLike>
-	<mod:findLike type ="augments"> <!--internal drone booster-->
-		<mod:findName type="aug" name="UPG_DRONE_SPEED">
-			<mod:findLike type="statBoosts">
-				<!--fake drone boosting-->
-				<mod-append:statBoost name="moveSpeedMultiplier">
-					<boostType>MULT</boostType>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
-					<droneTarget>CREW</droneTarget>
-					<amount>2</amount>
-					<priority>0</priority>
-					<systemPowerDependency>
-						<drones/>
-					</systemPowerDependency>
-					<systemPowerScaling>
-						<noSys>0</noSys>
-						<noPwr>0</noPwr>
-						<onePwr>1</onePwr>
-					</systemPowerScaling>
-					<whiteList load="LIST_FM_FAKEDRONES"/>
-				</mod-append:statBoost>
-				<mod-append:statBoost name="damageMultiplier">
-					<boostType>MULT</boostType>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
-					<droneTarget>CREW</droneTarget>
-					<amount>1.5</amount>
-					<priority>0</priority>
-					<systemPowerDependency>
-						<drones/>
-					</systemPowerDependency>
-					<systemPowerScaling>
-						<noSys>0</noSys>
-						<noPwr>0</noPwr>
-						<onePwr>1</onePwr>
-					</systemPowerScaling>
-					<whiteList load="LIST_FM_FAKEDRONES"/>
-				</mod-append:statBoost>
-				<mod-append:statBoost name="sabotageSpeedMultiplier">
-					<boostType>MULT</boostType>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
-					<droneTarget>CREW</droneTarget>
-					<amount>1.5</amount>
-					<priority>0</priority>
-					<systemPowerDependency>
-						<drones/>
-					</systemPowerDependency>
-					<systemPowerScaling>
-						<noSys>0</noSys>
-						<noPwr>0</noPwr>
-						<onePwr>1</onePwr>
-					</systemPowerScaling>
-					<whiteList load="LIST_FM_FAKEDRONES"/>
-				</mod-append:statBoost>
-				<mod-append:statBoost name="repairSpeed">
-					<boostType>MULT</boostType>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
-					<droneTarget>CREW</droneTarget>
-					<amount>1.5</amount>
-					<priority>0</priority>
-					<systemPowerDependency>
-						<drones/>
-					</systemPowerDependency>
-					<systemPowerScaling>
-						<noSys>0</noSys>
-						<noPwr>0</noPwr>
-						<onePwr>1</onePwr>
-					</systemPowerScaling>
-					<whiteList load="LIST_FM_FAKEDRONES"/>
-				</mod-append:statBoost>
-				<mod-append:statBoost name="fireRepairMultiplier">
-					<boostType>MULT</boostType>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
-					<droneTarget>CREW</droneTarget>
-					<amount>1.5</amount>
-					<priority>0</priority>
-					<systemPowerDependency>
-						<drones/>
-					</systemPowerDependency>
-					<systemPowerScaling>
-						<noSys>0</noSys>
-						<noPwr>0</noPwr>
-						<onePwr>1</onePwr>
-					</systemPowerScaling>
-					<whiteList load="LIST_FM_FAKEDRONES"/>
-				</mod-append:statBoost>
+			<mod:findLike type ="augments"> <!--internal drone booster-->
+				<mod:findName type="aug" name="UPG_DRONE_SPEED">
+					<mod:findLike type="statBoosts">
+						<!--fake drone boosting-->
+						<mod-append:statBoost name="moveSpeedMultiplier">
+							<boostType>MULT</boostType>
+							<shipTarget>ALL</shipTarget>
+							<crewTarget>ALLIES</crewTarget>
+							<droneTarget>CREW</droneTarget>
+							<amount>2</amount>
+							<priority>0</priority>
+							<systemPowerDependency>
+								<drones/>
+							</systemPowerDependency>
+							<systemPowerScaling>
+								<noSys>0</noSys>
+								<noPwr>0</noPwr>
+								<onePwr>1</onePwr>
+							</systemPowerScaling>
+							<whiteList load="LIST_FM_FAKEDRONES"/>
+						</mod-append:statBoost>
+						<mod-append:statBoost name="damageMultiplier">
+							<boostType>MULT</boostType>
+							<shipTarget>ALL</shipTarget>
+							<crewTarget>ALLIES</crewTarget>
+							<droneTarget>CREW</droneTarget>
+							<amount>1.5</amount>
+							<priority>0</priority>
+							<systemPowerDependency>
+								<drones/>
+							</systemPowerDependency>
+							<systemPowerScaling>
+								<noSys>0</noSys>
+								<noPwr>0</noPwr>
+								<onePwr>1</onePwr>
+							</systemPowerScaling>
+							<whiteList load="LIST_FM_FAKEDRONES"/>
+						</mod-append:statBoost>
+						<mod-append:statBoost name="sabotageSpeedMultiplier">
+							<boostType>MULT</boostType>
+							<shipTarget>ALL</shipTarget>
+							<crewTarget>ALLIES</crewTarget>
+							<droneTarget>CREW</droneTarget>
+							<amount>1.5</amount>
+							<priority>0</priority>
+							<systemPowerDependency>
+								<drones/>
+							</systemPowerDependency>
+							<systemPowerScaling>
+								<noSys>0</noSys>
+								<noPwr>0</noPwr>
+								<onePwr>1</onePwr>
+							</systemPowerScaling>
+							<whiteList load="LIST_FM_FAKEDRONES"/>
+						</mod-append:statBoost>
+						<mod-append:statBoost name="repairSpeed">
+							<boostType>MULT</boostType>
+							<shipTarget>ALL</shipTarget>
+							<crewTarget>ALLIES</crewTarget>
+							<droneTarget>CREW</droneTarget>
+							<amount>1.5</amount>
+							<priority>0</priority>
+							<systemPowerDependency>
+								<drones/>
+							</systemPowerDependency>
+							<systemPowerScaling>
+								<noSys>0</noSys>
+								<noPwr>0</noPwr>
+								<onePwr>1</onePwr>
+							</systemPowerScaling>
+							<whiteList load="LIST_FM_FAKEDRONES"/>
+						</mod-append:statBoost>
+						<mod-append:statBoost name="fireRepairMultiplier">
+							<boostType>MULT</boostType>
+							<shipTarget>ALL</shipTarget>
+							<crewTarget>ALLIES</crewTarget>
+							<droneTarget>CREW</droneTarget>
+							<amount>1.5</amount>
+							<priority>0</priority>
+							<systemPowerDependency>
+								<drones/>
+							</systemPowerDependency>
+							<systemPowerScaling>
+								<noSys>0</noSys>
+								<noPwr>0</noPwr>
+								<onePwr>1</onePwr>
+							</systemPowerScaling>
+							<whiteList load="LIST_FM_FAKEDRONES"/>
+						</mod-append:statBoost>
+					</mod:findLike>
+				</mod:findName>
 			</mod:findLike>
-		</mod:findName>
-	</mod:findLike>
 
-</FTL>
+		</FTL>
+
+
+
 
 <FTL>
 	<mod:findLike type="events">
