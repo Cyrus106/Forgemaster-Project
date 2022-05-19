@@ -8232,9 +8232,12 @@
       <text>The Oxygen.</text>
       <event load="FM_STORAGE_CHECK_SYSTEM_OXYGEN"/>
     </mod-append:choice>
+
     <mod:findWithChildLike type="choice" child-type="text">
       <mod:selector>Install the Payload Fabricator internally.</mod:selector>
       <mod:setAttributes max_group="629"/>
+    </mod:findWithChildLike>
+
     <mod:findWithChildLike type="choice" child-type="text">
       <mod:selector>Nevermind.</mod:selector>
       <mod:setAttributes max_group="630"/>
