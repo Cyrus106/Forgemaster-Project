@@ -143,7 +143,7 @@
 		<mod-append:ship name="PLAYER_SHIP_TWISTED4" a="true" b="true" c="true" > <!--slug,stealth,Zoltan-->
 			<splitVictoryAchievement>true</splitVictoryAchievement>
 		</mod-append:ship>
-		<mod-append:ship name="PLAYER_SHIP_TWISTED5" a="true" b="false" c="true" > <!--lanius,shell,Engineer-->
+		<mod-append:ship name="PLAYER_SHIP_TWISTED5" a="true" b="true" c="true" > <!--lanius,shell,Engineer-->
 			<splitVictoryAchievement>true</splitVictoryAchievement>
 		</mod-append:ship>
 		<mod-append:ship name="PLAYER_SHIP_TWISTED6" a="false" b="true" c="true" > <!--kestrel,fed,orchid-->
@@ -471,6 +471,101 @@
 				<increment>5</increment>
 			</customReactor>
 		</mod-append:customShip>
+
+
+				<mod-append:customShip name="PLAYER_SHIP_TWISTED5_2"><!--Shell-->
+					<hiddenAug>SHIP_SHELL</hiddenAug>
+					<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+					<crewLimit>10</crewLimit>
+					<customReactor maxLevel="35">
+						<baseCost>15</baseCost>
+						<increment>5</increment>
+					</customReactor>
+
+					<rooms>
+							<room id="0">
+								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+							</room>
+							<room id="1">
+								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+							</room>
+							<room id="2">
+								<roomAnim renderLayer="0">gas_twisted_1x2</roomAnim>
+							</room>
+							<room id="3">
+								<roomAnim renderLayer="0">gas_twisted_1x2</roomAnim>
+							</room>
+							<room id="4">
+								<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
+							</room>
+							<room id="5">
+								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+							</room>
+							<room id="6">
+								<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
+							</room>
+							<room id="7">
+								<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
+							</room>
+							<room id="8">
+								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+							</room>
+							<room id="9">
+								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+							</room>
+							<room id="10">
+								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+							</room>
+							<room id="11">
+								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+							</room>
+							<room id="12">
+								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+							</room>
+							<room id="13">
+								<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
+							</room>
+							<room id="14">
+								<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
+							</room>
+							<room id="15">
+								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+							</room>
+							<room id="16">
+								<roomAnim renderLayer="0">gas_twisted_1x2</roomAnim>
+							</room>
+							<room id="17">
+								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+							</room>
+							<room id="18">
+								<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
+							</room>
+							<room id="19">
+								<roomAnim renderLayer="0">gas_twisted_1x2</roomAnim>
+							</room>
+							<room id="20">
+								<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
+							</room>
+							<room id="21">
+								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+							</room>
+							<room id="22">
+								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+							</room>
+							<room id="23">
+								<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
+							</room>
+							<room id="24">
+								<roomAnim renderLayer="0">gas_twisted_1x2</roomAnim>
+							</room>
+							<room id="25">
+								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+							</room>
+		</rooms>
+
+				</mod-append:customShip>
+
+
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED5_3"><!--engineer-->
 			<crewLimit>8</crewLimit>
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
@@ -11252,12 +11347,78 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 	</augments>
 
-	<augments>
+	<augments><!--Twisted Rock Augments-->
 		<aug name="TWISTED_HULL_ARM">
 			<function name="MAGNET_ARM" value="0"/>
 			<function name="SCRAP_COLLECTOR" value="-0.9"/>
 			<function name="DRONE_RECOVERY" value="1" useForReqs="true" warning="false"/>
 			<locked/>
+		</aug>
+	</augments>
+
+	<augments><!--Twisted Shell Augments-->
+		<aug name="LOCKED_DECONSTRUCTIVE_GAS">
+
+
+				<statBoosts>
+					<statBoost name="healAmount">
+						<boostType>FLAT</boostType>
+						<amount>-6</amount>
+						<shipTarget>ORIGINAL_SHIP</shipTarget>
+						<crewTarget>ENEMIES</crewTarget>
+						<droneTarget>CREW</droneTarget>
+						<priority>999</priority>
+						<blackList load="LIST_FM_PLSNOEFFECT">
+							<human_technician_drone/>
+						</blackList>
+					</statBoost>
+					<statBoost name="noClone">
+						<boostType>SET</boostType>
+						<value>true</value>
+						<shipTarget>ORIGINAL_SHIP</shipTarget>
+						<crewTarget>ENEMIES</crewTarget>
+						<droneTarget>CREW</droneTarget>
+						<priority>999</priority>
+						<blackList load="LIST_FM_PLSNOEFFECT">
+							<human_technician_drone/>
+						</blackList>
+					</statBoost>
+					<statBoost name="deathEffect">
+						<boostType>SET</boostType>
+						<shipTarget>ORIGINAL_SHIP</shipTarget>
+						<crewTarget>ENEMIES</crewTarget>
+						<droneTarget>CREW</droneTarget>
+						<priority>999</priority>
+
+						<blackList load="LIST_FM_PLSNOEFFECT">
+							<human_technician_drone/>
+						</blackList>
+						<deathEffect>
+							<event>
+								<hiddenAug>DECONSTUCT_HEALTH_BOOST</hiddenAug>
+							</event>
+						</deathEffect>
+					</statBoost>
+
+
+
+
+				</statBoosts>
+
+
+			<locked/>
+		</aug>
+		<aug name="DECONSTUCT_HEALTH_BOOST">
+			<statBoosts>
+				<statBoost name="maxHealth">
+					<boostType>FLAT</boostType>
+					<amount>1</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<priority>999</priority>
+					<whiteList load="LIST_CREW_SHELL"/>
+				</statBoost>
+			</statBoosts>
 		</aug>
 	</augments>
 

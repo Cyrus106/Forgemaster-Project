@@ -4194,6 +4194,27 @@ try this later
 		<time>1</time>
 	</anim>
 
+	<!--Gas images for twisted shell-->
+	<animSheet name="gas_twisted_1x2" w="35" h="70" fw="35" fh="70">effects/gas_twisted_stripes_1x2.png</animSheet>
+	<anim name="gas_twisted_1x2">
+		<sheet>gas_twisted_1x2</sheet>
+		<desc length="1" x="0" y="0"/>
+		<time>1</time>
+	</anim>
+	<animSheet name="gas_twisted_2x1" w="70" h="35" fw="70" fh="35">effects/gas_twisted_stripes_2x1.png</animSheet>
+	<anim name="gas_twisted_2x1">
+		<sheet>gas_twisted_2x1</sheet>
+		<desc length="1" x="0" y="0"/>
+		<time>1</time>
+	</anim>
+	<animSheet name="gas_twisted_2x2" w="70" h="70" fw="70" fh="70">effects/gas_twisted_stripes_2x2.png</animSheet>
+	<anim name="gas_twisted_2x2">
+		<sheet>gas_twisted_2x2</sheet>
+		<desc length="1" x="0" y="0"/>
+		<time>1</time>
+	</anim>
+
+
 </FTL>
 
 <FTL><!--Hyperspace beta additions-->

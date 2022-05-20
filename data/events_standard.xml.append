@@ -71,8 +71,9 @@
       <mod-append:choice req="fm_forgemasterperson_player" hidden="true" blue="true">
         <text>(Alastair) Share stories about minelaunchers with the Rockman.</text>
   		    <event>
-  			     <text>Alastair grins, and begins regaling the Rockman with some of his most interesting tales on the minelauncher craft. A couple hours later, the two Rockman are laughing alongside one another. "Nobody has have shown such interest in my minelaunchers before! Please, accept this gift!"</text>
-              <weapon name ="FM_ROYAL_MINELAUNCHER"/>
+  			     <text>Alastair grins, and begins regaling the Rockman with some of his most interesting tales on the minelauncher craft. A couple hours later, the two Rockman are laughing alongside one another. "Nobody has have shown such interest in my minelaunchers before! Let me come with you, and I'll bring one of my best minelaunchers as well!"</text>
+              <crewMember amount="1" class="rock"/>
+              <weapon name ="LOOT_LOSTSUN_1"/>
               <store>STORE_ROCK_MINELAUNCHER</store>
   		    </event>
       </mod-append:choice>
