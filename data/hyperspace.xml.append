@@ -14846,7 +14846,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 								<crystalShard weapon="FM_AN_DYNAMO" value="1.0" stackable="independent" />
 								<crystalShard weapon="BOMB_ION_ENEMY_ARTY" value="1.0" stackable="independent" />
 							</aug>
-		<!--And more-->				
+		<!--And more-->
 							<aug name="CRYABOUTIT_VENGEANCE_PEW">
 								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
 								<crystalShard weapon="LASER_BURST_1" value="1.0" stackable="independent" />
@@ -15013,6 +15013,24 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 								<crystalShard weapon="FM_ANCIENT_ION_1_KAI2" value="1.0" stackable="independent" />
 								<crystalShard weapon="LASER_SHADOW" value="1.0" stackable="independent" />
 								<crystalShard weapon="LASER_SHADOW_PLAYER" value="1.0" stackable="independent" />
+							</aug>
+<!--Cry even more!-->
+							<aug name="CRYABOUTIT_VENGEANCE_MINELAUNCHER">
+									<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
+									<crystalShard weapon="FM_MINELAUNCHER_HULL" value="1.0" stackable="independent" />
+									<crystalShard weapon="FM_ROYAL_MINELAUNCHER" value="1.0" stackable="independent" />
+									<crystalShard weapon="FM_MINELAUNCHER_BIO" value="1.0" stackable="independent" />
+									<crystalShard weapon="MINELAUNCHER_1" value="1.0" stackable="independent" />
+									<crystalShard weapon="MINELAUNCHER_2" value="1.0" stackable="independent" />
+									<crystalShard weapon="MINELAUNCHER_3" value="1.0" stackable="independent" />
+									<crystalShard weapon="MINELAUNCHER_FREE" value="1.0" stackable="independent" />
+									<crystalShard weapon="MINELAUNCHER_FIRE" value="1.0" stackable="independent" />
+									<crystalShard weapon="MINELAUNCHER_BREACH" value="1.0" stackable="independent" />
+									<crystalShard weapon="MINELAUNCHER_STUN" value="1.0" stackable="independent" />
+									<crystalShard weapon="MINELAUNCHER_CRYSTAL" value="1.0" stackable="independent" />
+									<crystalShard weapon="MINELAUNCHER_KERNEL" value="1.0" stackable="independent" />
+									<crystalShard weapon="ANCIENT_MINELAUNCHER" value="1.0" stackable="independent" />
+									<crystalShard weapon="MINELAUNCHER_GIANT" value="1.0" stackable="independent" />
 							</aug>
 
 			</augments>
