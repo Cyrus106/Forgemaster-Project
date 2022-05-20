@@ -60,21 +60,28 @@
 </mod:findName>
 
 
-<!-- ADD THIS LATER
 
-<mod:findName type="event" name="SHIP_ROCK_STOREEVENT_MINELAUNCHER">
-  <mod:findWithChildLike type="choice" child-type="text">
-  <mod:selector text="Check out the emporium.">
+
+
+
+<mod:findName type="event" name="STOREEVENT_ROCK_MINELAUNCHERS">
+  <mod:findWithChildLike type="choice" child-type="text" >
+ 	<mod:selector>Check out the emporium.</mod:selector>
     <mod:findLike type="event">
-      <mod-append:choice req="fm_forgemasterperson" lvl="1" lvl="1" max_group="601" hidden="true" blue="true">
-        <text>(Alastair) Share stories about mine launchers with the rockman.</text>
+      <mod-append:choice req="fm_forgemasterperson_player" hidden="true" blue="true">
+        <text>(Alastair) Share stories about minelaunchers with the Rockman.</text>
   		    <event>
-  			     <text>Add text here</text>
-  			      <store>STORE_ROCK_MINELAUNCHER</store>
-
-
+  			     <text>Alastair grins, and begins regaling the Rockman with some of his most interesting tales on the minelauncher craft. A couple hours later, the two Rockman are laughing alongside one another. "Nobody has have shown such interest in my minelaunchers before! Please, accept this gift!"</text>
+              <weapon name ="FM_ROYAL_MINELAUNCHER"/>
+              <store>STORE_ROCK_MINELAUNCHER</store>
   		    </event>
       </mod-append:choice>
+
+
+	    <mod:findWithChildLike type="choice" child-type="text">
+	      <mod:selector>Shop around.</mod:selector>
+        <mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>
+      </mod:findWithChildLike>
     </mod:findLike>
   </mod:findWithChildLike>
-</mod:findName>-->
+</mod:findName>
