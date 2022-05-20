@@ -149,7 +149,7 @@
 		<mod-append:ship name="PLAYER_SHIP_TWISTED6" a="false" b="true" c="true" > <!--kestrel,fed,orchid-->
 			<splitVictoryAchievement>true</splitVictoryAchievement>
 		</mod-append:ship>
-		<mod-append:ship name="PLAYER_SHIP_TWISTED7" a="true" b="false" c="true" > <!--crystal,tuco,leech-->
+		<mod-append:ship name="PLAYER_SHIP_TWISTED7" a="true" b="true" c="true" > <!--crystal,tuco,leech-->
 			<splitVictoryAchievement>true</splitVictoryAchievement>
 		</mod-append:ship>
 
