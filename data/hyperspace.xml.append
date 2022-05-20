@@ -622,6 +622,18 @@
 				<increment>5</increment>
 			</customReactor>
 		</mod-append:customShip>
+
+		<mod-append:customShip name="PLAYER_SHIP_TWISTED7_2"><!--Tuco-->
+			<hiddenAug>SHIP_GAMBLING</hiddenAug>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<crewLimit>10</crewLimit>
+			<customReactor maxLevel="35">
+				<baseCost>15</baseCost>
+				<increment>5</increment>
+			</customReactor>
+		</mod-append:customShip>
+
+
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED7_3"><!--leech-->
 			<hiddenAug>SHIP_LEECH</hiddenAug>
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>

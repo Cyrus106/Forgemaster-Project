@@ -1824,6 +1824,79 @@
 		<aug name="LOCKED_TWISTED_CRYSTAL_ARMOR_50" />
 		<aug name="COMBAT_REPAIR" />
 	</shipBlueprint>
+	<shipBlueprint name="PLAYER_SHIP_TWISTED7_2" layout="zmt_player_tuco_suicide" img="zmt_player_tuco_suicide">
+		<class>Twisted Tuco Renegade</class>
+		<name>The Tarocchi</name>
+		<desc>This ship is equipped with an odd deck of tarot cards. Every time a card is drawn, something will happen. You can't seem to remove the cards from the ship, no matter how hard you try...</desc>
+		<systemList>
+			<artillery power="1" room="1" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
+			<battery power="1" max="2" room="8" start="false" img="room_battery_6" />
+			<cloaking power="1" room="12" start="false" img="room_cloaking_3" />
+			<clonebay power="1" room="6" start="false">
+				<slot>
+					<number>0</number>
+				</slot>
+			</clonebay>
+			<doors power="2" room="15" start="true" img="room_doors_8">
+				<slot>
+					<direction>left</direction>
+					<number>0</number>
+				</slot>
+			</doors>
+			<drones power="2" max="8" room="2" start="false" img="room_drones_7" />
+			<engines power="2" room="3" start="true" img="room_engines_9">
+				<slot>
+					<direction>up</direction>
+					<number>1</number>
+				</slot>
+			</engines>
+			<hacking power="1" room="11" start="false" img="room_hacking_6" />
+			<medbay power="1" room="6" start="true" img="room_medbay_9">
+				<slot>
+					<number>-2</number>
+				</slot>
+			</medbay>
+			<mind power="1" room="10" start="false" img="room_mind_9" />
+			<oxygen power="1" room="13" start="true" img="room_oxygen_6" />
+			<pilot power="1" room="0" start="true" img="room_pilot_2">
+				<slot>
+					<direction>right</direction>
+					<number>1</number>
+				</slot>
+			</pilot>
+			<sensors power="1" room="14" start="true" img="room_sensors_4">
+				<slot>
+					<direction>left</direction>
+					<number>1</number>
+				</slot>
+			</sensors>
+			<shields power="2" max="8"room="7" start="true" img="room_shields_8">
+				<slot>
+					<direction>left</direction>
+					<number>0</number>
+				</slot>
+			</shields>
+			<teleporter power="1" room="5" start="true" />
+			<weapons power="3" max="8" room="4" start="true" img="room_weapons_4">
+				<slot>
+					<direction>up</direction>
+					<number>0</number>
+				</slot>
+			</weapons>
+		</systemList>
+		<weaponSlots>4</weaponSlots>
+		<droneSlots>2</droneSlots>
+		<weaponList missiles="0" count="4">
+			<weapon name="LASER_BURST_3" />
+			<weapon name="LASER_BURST_1" />
+		</weaponList>
+		<droneList drones="8" count="2" />
+		<health amount="30" />
+		<maxPower amount="9" />
+		<crewCount amount="1" class="unique_tuco" />
+		<crewCount amount="1" class="blobswarm" />
+		<crewCount amount="1" class="blobswarm" />
+	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED7_3" layout="zmt_player_leech_suicide" img="player_ship_cracked_zmt_boss_leech_suicide">
 		<class>Twisted Renegade Leech</class>
 		<name>Despondancy</name>
