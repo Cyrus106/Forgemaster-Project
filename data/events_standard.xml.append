@@ -70,12 +70,9 @@
         <text>(Alastair) Share stories about mine launchers with the rockman.</text>
   		    <event>
   			     <text>Add text here</text>
-  			      <autoReward level="HIGH">standard</autoReward>
+  			      <store>STORE_ROCK_MINELAUNCHER</store>
 
-  			      <choice hidden="true">
-  				      <text>See what they're selling.</text>
-  				      <event load="STORE_LOAD_GENERIC"/>
-  			      </choice>
+
   		    </event>
       </mod-append:choice>
     </mod:findLike>
