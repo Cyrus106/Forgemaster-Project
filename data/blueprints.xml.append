@@ -1715,7 +1715,7 @@
 				</slot>
 			</medbay>-->
 			<mind power="1" room="7" start="false" img="room_mind_7" />
-			<oxygen power="1" room="16" start="false" img="room_oxygen_3" />
+			<!--<oxygen power="1" room="16" start="false" img="room_oxygen_3" />-->
 			<pilot power="1" room="0" start="true" img="room_pilot">
 				<slot>
 					<direction>right</direction>
