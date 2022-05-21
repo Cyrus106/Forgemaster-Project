@@ -90,4 +90,36 @@
 			</event>
 		</choice>
 	</event>
+
+<mod:findName type = "event" name = "NEBULA_SALT_QUEST_2">
+
+		<mod:findLike type="choice">
+			<mod:findLike type="event">
+				<mod:findLike type="choice">
+					<mod:findLike type="event">
+
+						<mod-append:choice req="SHIP_TWISTED_ROCK" hidden="true" blue="true">
+							<text>("Cloaking") Hide!</text>
+									<event>
+										<text>You activate your "cloaking" system, but as you should have expected, it does absolutely nothing. The Clansmen laugh at you, and fire a volley straight into your ship's hull! They quickly stop laughing, however, once they see your ship tank the blow like it's nothing.</text>
+												<choice hidden="true">
+													<text>Continue...</text>
+													<event load="SALT_QUEST_2_STUPID"/>
+												</choice>
+									</event>
+						</mod-append:choice>
+
+						<mod:findWithChildLike type="choice" child-type="text">
+				      <mod:selector>Nah.</mod:selector>
+			        <mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>
+			      </mod:findWithChildLike>
+
+					</mod:findLike>
+				</mod:findLike>
+			</mod:findLike>
+		</mod:findLike>
+</mod:findName>
+
+
+
 </FTL>

@@ -5689,6 +5689,10 @@
       <text>Make use of the Flak Forge (Placeholder, you should never see this for now).</text>
       <event load="STORAGE_CHECK_TWISTED_FLAK_FORGE_MENU"/>
     </mod-append:choice>
+    <mod-append:choice req="TWISTED_KESTREL_GHOST_SUMMON" blue ="true">
+      <text>Summon a horde of ghosts (will be changed later).</text>
+      <event load="STORAGE_CHECK_TWISTED_KESTREL_GHOST_MENU"/> <!--For now will just summon five random ghosts, we should improve this later-->
+    </mod-append:choice>
     <mod-append:choice req="TWISTED_FLAK_FORGE" blue ="true">
       <text>Make use of the Flak Forge to install an artillery system.</text>
       <event>
@@ -6256,7 +6260,7 @@
 
   <ship name="SHIP_ABC_LANIUS" auto_blueprint="LIST_SHIPS_LANIUS_FIGHT">
     <destroyed>
-      <text>The Lanius have been defeated. You scrap their ship.</text>
+      <text>The Lanius ship explodes into a burst of wreckage. You prepare to scrap the ship, slightly disappointed that you couldn't take it intact.</text>
       <autoReward level="HIGH">standard</autoReward>
     </destroyed>
     <deadCrew>
@@ -6311,7 +6315,7 @@
 
   <ship name="SHIP_ABC_ELITELANIUS" auto_blueprint="LIST_SHIPS_LANIUS_ELITE_FIGHT">
     <destroyed>
-      <text>The Elite Lanius have been defeated. You scrap their ship.</text>
+      <text>The Elite Lanius ship breaks up quickly as their hull gives out. You're sure to find plenty of scrap in the wreckage, but any technology they may have had is almost certainly destroyed.</text>
       <autoReward level="HIGH">standard</autoReward>
     </destroyed>
     <deadCrew>
@@ -6394,7 +6398,7 @@
 
   <ship name="SHIP_ABC_AUGMENTEDLANIUS" auto_blueprint="LIST_SHIPS_AUGMENTED_RUINS">
     <destroyed>
-      <text>The strange Lanius have been defeated. You scrap their ship.</text>
+      <text>You watch the strange Lanius vessel break apart. Seems like you won't be finding any answers or tech today...</text>
       <autoReward level="HIGH">standard</autoReward>
     </destroyed>
     <deadCrew>
@@ -6479,7 +6483,7 @@
 
   <ship name="SHIP_ABC_OBELISK" auto_blueprint="LIST_SHIPS_ANCIENT_ALL">
     <destroyed>
-      <text>The Obelisk have been defeated. You scrap their ship.</text>
+      <text>Your crew watches silently as your foe's vessel blows apart. You've won this battle, but it's almost impossible that any of their tech survived.</text>
       <autoReward level="HIGH">standard</autoReward>
     </destroyed>
     <deadCrew>
@@ -6544,7 +6548,7 @@
 
   <ship name="SHIP_ABC_ROYALOBELISK" auto_blueprint="LIST_SHIPS_ROYAL_ALL">
     <destroyed>
-      <text>The Royals have been defeated. You scrap their ship.</text>
+      <text>You watch as the Royal vessel explodes before your eyes. Guess you won't be getting any of their tech today...</text>
       <autoReward level="HIGH">standard</autoReward>
     </destroyed>
     <deadCrew>
@@ -6756,34 +6760,34 @@
 
   <!--Flavor text list for upgrading suzerain to bishop-->
   <textList name="TEXT_TWISTED_MANTIS_UPGRADE_SUZERAIN_TO_BISHOP">
-    <text>You upgrade your suzerain to a bishop</text>
-    <text>You upgrade your suzerain to a bishop</text>
-    <text>You upgrade your suzerain to a bishop</text>
-    <text>You upgrade your suzerain to a bishop</text>
+    <text>You approach your Suzerain from behind with a carefully prepared beverage. In a blur, they whirl around and knock you to the ground by reflex, hooking the teacup in a claw deftly before it spills. "Should not be surpisings me like this, Captain! Thankings for tea, howevers!" You smile hesitantly, making a note to not approach them unseen again. </text>
+    <text>Your Suzerain is cleaning their armor, scrubbing out some bloodstains with their acidic spit. You ask them if they've ever wanted to try white armor instead as you present the tea to them "Hmm, have always been wanting to be Bishop! White will be harder cleanings, though..."</text>
+    <text>You watch as your Suzerain races the other crew around the ship. You stop them for a moment, and ask if they would like a refreshment. They gulp down the tea rapidly, and then continue sprinting. You barely blink before they're coming around the ship again, the scent of trailing close behind.</text>
+    <text>Your Suzerain is slicing away at a practice dummy in the training center. They pause to accept the tea, and then resume their attack. As you turn to leave, you whirl back around when you hear a tearing sound, and see the dummy in pieces on the floor! "Might be needing replacings, Captain..."</text>
   </textList>
 
   <!--Flavor text list for upgrading free mantis to hive mantis-->
   <textList name="TEXT_TWISTED_MANTIS_UPGRADE_FREE_MANTIS_TO_MANTIS">
-    <text>You upgrade your free mantis to a mantis</text>
-    <text>You upgrade your free mantis to a mantis</text>
-    <text>You upgrade your free mantis to a mantis</text>
-    <text>You upgrade your free mantis to a mantis</text>
+    <text>Your Free Mantis is greedily inhaling some pheromones in their quarters. They gaze at you in awe as you approach with the Queen's Tea, and ask if they can have some. As they drink, their expression changes, and they knock their phermones to the ground in disgust. "What was I thinkings, Captain? Natural pheromones much betters!"</text>
+    <text>Your Free Mantis is bragging to the others about "How Captain is think favorite of them," and they grin triumphantly as you approach with your gift. Their idolization of you is tiresome at times, but you're still going to miss it a little...</text>
+    <text>You find your Free Mantis "playing chess" in the dining hall. They're concentrating hard, and they turn to you to ask "Captain, which one is pawn again?" You sigh, and ask if they want a break to have some tea. They drink up, and thank you "Brain is much more cleared, Captain!" They confidently move their knight forward by a space, and you don't bother to correct them.</text>
+    <text>To your surpise, you find your Free Mantis trying to make tea on their own! As you take in the scene, it's clear they don't have any idea what they're doing. They've tried using pheromones instead of water, and the contents of the tea bag are all over the floor. You offer to make the tea yourself, and they gratefully accept. "You are biggest smartest, Captain!"</text>
   </textList>
 
   <!--Flavor text list for upgrading free mantis to warlord-->
   <textList name="TEXT_TWISTED_MANTIS_UPGRADE_FREE_MANTIS_TO_WARLORD">
-    <text>You upgrade your free mantis to a warlord</text>
-    <text>You upgrade your free mantis to a warlord</text>
-    <text>You upgrade your free mantis to a warlord</text>
-    <text>You upgrade your free mantis to a warlord</text>
+    <text>Your Free Mantis is brewing up some pheromones in their quarters. You ask them if they'd like something to drink, and present the Queen's Tea. They take it, and they pour the whole thing in with their pheromone mixture! Later, you notice the growths of their head plate have become much more prominent. Guess you can't argue with results...</text>
+    <text>You walk around the ship, and find your Free Mantis debating over what kind of music is the best. They stop for a moment to drink the tea that you've brought them, and continue their debate with new vigor. You're almost certain that none of these genres actually exist, but you're not going to argue with a freshly-made Warlord.</text>
+    <text>Your Free Mantis has just finished taking some of their pheromones, and is gazing up at the ceiling sleepily. When they go to drink the Queen's Tea, nearly half of it dribbles down their face. Their focus sharpens quickly, and they rise up, quickly moving to make more pheromones. "Am suddenly wanting more, Captain! Want sharings?" You respectfully decline, and leave before the fumes get to you.</text>
+    <text>As you take stock of the ship's resources, you notice an unusally large surplus of pheromones in the cargo. You question your Free Mantis about this over a cup of tea, but you're unable to get a coherent response out of them. The issue resolves itself in a few hours, as they rapidly burn through their supply.</text>
   </textList>
 
   <!--Flavor text list for upgrading warlord to crackerjack-->
   <textList name="TEXT_TWISTED_MANTIS_UPGRADE_WARLORD_TO_CRACKERJACK">
-    <text>you upgrade your warlord to a crackerjack</text>
-    <text>you upgrade your warlord to a crackerjack</text>
-    <text>you upgrade your warlord to a crackerjack</text>
-    <text>you upgrade your warlord to a crackerjack</text>
+    <text>You turn to your Free Mantis Warlord and offer them the Queen's Tea. They accept the now-familiar challenge with gusto, draining the whole pot in seconds! "Queen herself would be proud, Captain!" You assure them that Leikonpliiinakra would be very impressed, and they look at you in confusion. "Why would Leikonpliiinakra be caring of tea? Am talking about REAL Queen!"</text>
+    <text>Your Free Mantis Warlord drinks the tea in front of you with vigor. You avert your eyes for a moment as they guzzle the tea with a complete lack of poise or etiquette. You look back at them once they're finished, and are surpised by their new outfit! You're not sure where they got a bearskin hat so quickly, but you know better than to ask questions... </text>
+    <text>Your Free Mantis Warlord is exchanging jokes with the rest of the crew, bursting into laughter before anybody can even get to the punchline. You wait for them to catch their breath, and present the Queen's Tea to them. Later, you watch as the crew tries for hours to make them laugh as they stand stoically in front of their quarters.</text>
+    <text>You hold your breath as you enter your Warlord's quarters, and your eyes burn as their mixture of pheromones bubbles furiously. You wave to get their attention, and quickly hand the tea to them before you pass out from the fumes. A few hours later, you walk by their doorway and are surprised by a rather pleasant smell. Are they making... Tea?</text>
   </textList>
 
   <event name="INSTALL_ARTILLERY">
@@ -6796,6 +6800,28 @@
     </choice>
   </event>
 
+
+
+
+  <!--Twisted Kestrel Ghost Summoning!-->
+  <event name="STORAGE_CHECK_TWISTED_KESTREL_GHOST_MENU">
+    <text>What would you like to do?</text>
+
+    <choice hidden="true">
+        <text>Summon a horde of ghosts.</text>
+        <event>
+          <text>Suddenly, a large group of ghosts materializes on your ship! They seem confused, but soon enough they all agree to serve you.</text>
+          <crewMember amount="5" class="LIST_CREW_GHOST"/>
+        </event>
+    </choice>
+
+    <choice>
+		    <text>Nevermind, do something else.</text>
+		    <event load="STORAGE_CHECK"/>
+	 </choice>
+
+
+  </event>
 </FTL>
 
 
@@ -8228,10 +8254,16 @@
 <FTL> <!-- Internal Augment Install Storage Check -->
   <!-- Internal Augment Install Storage Check -->
   <mod:findName type = "event" name = "STORAGE_CHECK_SYSTEM">
-    <mod-append:choice  req="oxygen" lvl="1" max_group="6" blue="false" hidden="true">
+    <mod-append:choice  req="oxygen" blue="false" hidden="true">
       <text>The Oxygen.</text>
       <event load="FM_STORAGE_CHECK_SYSTEM_OXYGEN"/>
     </mod-append:choice>
+
+    <mod:findWithChildLike type="choice" child-type="text">
+      <mod:selector>Install the Payload Fabricator internally.</mod:selector>
+      <mod:setAttributes max_group="629"/>
+    </mod:findWithChildLike>
+
     <mod:findWithChildLike type="choice" child-type="text">
       <mod:selector>Nevermind.</mod:selector>
       <mod:setAttributes max_group="630"/>
@@ -8456,13 +8488,13 @@
     <text>Alastair greets you politely in the hall, but has a lot on his mind.</text>
     <text>Alastair greets you politely in the cafeteria, and pats the seat next to you. The man eats even more than his Plated do!</text>
     <text>Alastair inquires if you would be interested in taking up smithing, you politely decline.</text>
-    <text>You are surprised to see the Alastair does not ask your crew to join the ranks of the Plated.</text>
-    <text>"Lad, you ever stop and count all the stars? Its a great way to pass the time." Alastair says to you in passing.</text>
+    <text>You are surprised to see that Alastair does not ask your crew to join the ranks of the Plated.</text>
+    <text>"Lad, you ever stop and count all the stars? It's a great way to pass the time." Alastair says to you in passing.</text>
     <text>As you pass the cafeteria, you overhear Alastair laughing and sharing jolly stories with your crew.</text>
-    <text>Alastair sends you a list of ways to improve your vessel's perform via your terminal. The workload this would require is immense, and you unfortunately have to decline utilizing the list.</text>
+    <text>Alastair sends you a list of ways to improve your vessel's performance via your terminal. The workload this would require is immense, and you unfortunately have to decline utilizing the list.</text>
     <text>Alastair tells you about his collection of tiny colored rocks he has collected from different planets: "They simply evoke joy, Lad." He explains, grinning ear to ear.</text>
-    <text>Alastair asks you what you think of the Theocracy. After you give your answer, he responds "Interesting, well I won't think less of you regardless of your opinion, but good to know you aren't a devout follower or Ally of them."</text>
-    <text>You ask about Alastairs supported side, is he aligned with the Outcasts or the Theocracy? "Lad, I care little for support of either side's perspective. I simply take under my wing any who wish to improve their craft, instead of their governing body. That goes for you and your crew as well!"</text>
+    <text>Alastair asks you what you think of the Theocracy. After you give your answer, he responds. "Interesting, well I won't think less of you regardless of your opinion, but good to know you aren't a devout follower or ally of them."</text>
+    <text>You ask about Alastair's supported side, is he aligned with the Outcasts or the Theocracy? "Lad, I care little for support of either side's perspective. I simply take under my wing any who wish to improve their craft, instead of their governing body. That goes for you and your crew as well!"</text>
   </textList>
 
   <event name="STORAGE_CHECK_CREW_REMINGTON"> <!-- Loves Boardgames and Comics. -->
@@ -8639,10 +8671,10 @@
     <text>The twins are arguing again. Remington is shouting. "SO F1--->HELP ME IF YOU THROW OUT MY GRAPHICS DRIVE AGAIN I WILL-"
       his voice cuts off suddenly. A small automated voice plays: "system error, please contact customer support." Mossberg sighs, calms themselves, and starts helping repair their brother.
     </text>
-    <text>You run into the twins at the cafeteria. Remington looks extremely nervous as he slowly approaches....the microwave?! His brother quickly grabs him and pulls him away from it. "It's league > your league. Don't embarass yourself in front of her brother. You would achieve >= results calculating the square root of pie." Mossberg explains sternly to his brother. You start hiding the microwave from the twins.</text>
+    <text>You run into the twins at the cafeteria. Remington looks extremely nervous as he slowly approaches....the microwave?! His brother quickly grabs him and pulls him away from it. "Its league > your league. Don't embarass yourself in front of her brother. You would achieve >= results calculating the square root of pie." Mossberg explains sternly to his brother. You start hiding the microwave from the twins.</text>
     <text>While checking in on the twins you find a video one of them was recording on their terminal.
 
-      You hear one of the twins imitating a human voice you have never heard before,"Hi, I'm Mossberg and welcome to jackass!!" The twin then proceeded to throw itself out the airlock with what appears to be a life support tube tied around it's waste, but forgot to tie the other end to anything! The video cuts abruptly after hearing Winchester yelling "Mossberg get idiot brother back here right damn now!!"
+      You hear one of the twins imitating a human voice you have never heard before,"Hi, I'm Mossberg and welcome to jackass!!" The twin then proceeded to throw itself out the airlock with what appears to be a life support tube tied around its waist, but forgot to tie the other end to anything! The video cuts abruptly after hearing Winchester yelling "Mossberg get idiot brother back here right damn now!!"
     </text>
     <text>You overhear the twin brothers laughing together about a joke you don't quite understand. But it is nice to see them enjoying themselves.</text>
     <text>You find the two Engi brothers at the cafeteria. They are playing a word game together where they have a conversation and start each sentence with the next letter in the human alphabet, and go back and forth with this game to get the other crew members to laugh. "Attention Remington, you are a potato-battery!" Mossberg says with a chuckle. "Be reasonable Mossberg, you haven't even seen a potato before." Remington responds back. "Clearly, you haven't seen my image folder on my terminal." Mossberg shoots back. "Disgusting, that is all I have to say." Remington says, concluding the game and agreeing that Mossberg wins this round. Their score is 453,752 - 462, 319.

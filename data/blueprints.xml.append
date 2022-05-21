@@ -1439,6 +1439,85 @@
 		<aug name="EX_AUTO_COOLDOWN" />
 		<aug name="TWISTED_FLAK_FORGE"/>
 	</shipBlueprint>
+
+	<shipBlueprint name="PLAYER_SHIP_TWISTED5_2" layout="zmt_player_shell_suicide" img="zmt_player_shell_suicide">
+		<class>Twisted Renegade Shell</class>
+		<name>The Malpractice</name>
+		<desc>This vessel has one mission: to observe and study life at all costs. They're also quite eager to study death as well, and become stronger with each crew that dies aboard their ship.</desc>
+		<systemList>
+			<artillery power="1" room="15" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
+			<battery power="1" max="2" room="21" start="false" img="room_battery_2" />
+			<cloaking power="1" room="14" start="false" img="room_cloaking_2" />
+			<clonebay power="1" room="23" start="true">
+				<slot>
+					<number>3</number>
+				</slot>
+			</clonebay>
+			<doors power="2" room="17" start="true" img="room_doors">
+				<slot>
+					<direction>up</direction>
+					<number>1</number>
+				</slot>
+			</doors>
+			<drones power="2" max="8" room="22" start="false" img="room_drones_3_mirrored_FM" />
+			<engines power="1" room="18" start="true" img="room_engines_5">
+				<slot>
+					<direction>up</direction>
+					<number>0</number>
+				</slot>
+			</engines>
+			<hacking power="1" room="6" start="false" img="room_hacking_8" />
+			<medbay power="1" room="23" start="false" img="room_medbay_3">
+				<slot>
+					<number>3</number>
+				</slot>
+			</medbay>
+			<mind power="1" room="13" start="false" img="room_mind_5" />
+			<oxygen power="2" room="19" start="true" img="room_oxygen_4" />
+			<pilot power="1" room="10" start="true" img="room_pilot_2">
+				<slot>
+					<direction>right</direction>
+					<number>1</number>
+				</slot>
+			</pilot>
+			<sensors power="1" room="11" start="true" img="room_sensors">
+				<slot>
+					<direction>down</direction>
+					<number>1</number>
+				</slot>
+			</sensors>
+			<shields power="3" max="8" room="4" start="true" img="room_shields">
+				<slot>
+					<direction>left</direction>
+					<number>0</number>
+				</slot>
+			</shields>
+			<teleporter power="1" room="8" start="false" />
+			<weapons power="3" max="8" room="7" start="true" img="room_weapons_5">
+				<slot>
+					<direction>right</direction>
+					<number>1</number>
+				</slot>
+			</weapons>
+		</systemList>
+		<weaponSlots>3</weaponSlots>
+		<droneSlots>2</droneSlots>
+		<weaponList missiles="3" count="3">
+			<weapon name="FM_ABDUCT_LASER" />
+			<weapon name="LASER_HULL_1" />
+		</weaponList>
+		<droneList drones="0" count="2" />
+		<health amount="30" />
+		<maxPower amount="7" />
+		<crewCount amount="1" class="shell" />
+		<crewCount amount="1" class="shell_scientist" />
+		<crewCount amount="1" class="shell_mechanic" />
+		<crewCount amount="1" class="shell_guardian" />
+		<aug name="LOCKED_DECONSTRUCTIVE_GAS" />
+	</shipBlueprint>
+
+
+
 	<shipBlueprint name="PLAYER_SHIP_TWISTED5_3" layout="zmt_player_engineer_suicide" img="zmt_player_engineer_suicide">
 		<class>Twisted Renegade Engineer</class>
 		<name>The Conagher</name>
@@ -1519,6 +1598,83 @@
 		<systemLimit>10</systemLimit>
 		<customReactor maxLevel="35" />
 		<aug name="EX_DRONE_SPEED" />
+	</shipBlueprint>
+
+
+	<shipBlueprint name="PLAYER_SHIP_TWISTED6" layout="zmt_player_kestrel_suicide" img="zmt_player_kestrel_suicide">
+		<class>Twisted Kestrel Renegade</class>
+		<name>The Keymaster</name>
+		<desc>This odd Kestrel is looking for the Gatekeeper, and will stop at nothing to find them.</desc>
+		<systemList>
+			<artillery power="1" room="4" start="true" weapon="FM_CHAINGUN_ION" img="nothing" />
+			<artillery power="1" room="3" start="true" weapon="FM_CHAINGUN_ION" img="nothing" />
+			<battery power="1" max="2" room="8" start="false" img="room_battery_11" />
+			<cloaking power="1" room="11" start="false" img="room_cloaking_2" />
+			<!--<clonebay power="1" room="13" start="false">
+				<slot>
+					<number>0</number>
+				</slot>
+			</clonebay>-->
+			<doors power="1" room="15" start="false" img="room_doors">
+				<slot>
+					<direction>up</direction>
+					<number>1</number>
+				</slot>
+			</doors>
+			<drones power="2" max="8" room="12" start="false" img="room_drones_8" />
+			<engines power="2" room="5" start="true" img="room_engines_2">
+				<slot>
+					<direction>down</direction>
+					<number>2</number>
+				</slot>
+			</engines>
+			<hacking power="1" room="6" start="false" img="room_hacking_4" />
+			<!--<medbay power="1" room="13" start="false" img="room_medbay_9">
+				<slot>
+					<number>-2</number>
+				</slot>
+			</medbay>-->
+			<mind power="1" room="7" start="false" img="room_mind_7" />
+			<oxygen power="1" room="16" start="false" img="room_oxygen_3" />
+			<pilot power="1" room="0" start="true" img="room_pilot">
+				<slot>
+					<direction>right</direction>
+					<number>0</number>
+				</slot>
+			</pilot>
+			<sensors power="1" room="18" start="true" img="room_sensors">
+				<slot>
+					<direction>down</direction>
+					<number>1</number>
+				</slot>
+			</sensors>
+			<shields power="2" max="8" room="1" start="true" img="room_shields_8">
+				<slot>
+					<direction>left</direction>
+					<number>0</number>
+				</slot>
+			</shields>
+		<!--	<teleporter power="1" max="1" room="9" start="false" />-->
+			<weapons power="2" max="8" room="10" start="true" img="room_weapons">
+				<slot>
+					<direction>up</direction>
+					<number>1</number>
+				</slot>
+			</weapons>
+		</systemList>
+		<weaponSlots>2</weaponSlots>
+		<droneSlots>2</droneSlots>
+		<weaponList missiles="0" count="2">
+			<weapon name="ION_PIERCE_1" />
+			<weapon name="BEAM_1" />
+		</weaponList>
+		<droneList drones="2" count="2" />
+		<health amount="30" />
+		<maxPower amount="6" />
+		<crewCount amount="1" class="gbgozer_player" />
+		<crewCount amount="1" class="gbzuul" />
+		<crewCount amount="1" class="gbvinz" />
+		<aug name="TWISTED_KESTREL_GHOST_SUMMON"/>
 	</shipBlueprint>
 
 	<shipBlueprint name="PLAYER_SHIP_TWISTED6_2" layout="zmt_player_fed_suicide" img="zmt_player_fed_suicide">
@@ -1744,6 +1900,79 @@
 		<crewCount amount="1" class="crystal" />
 		<aug name="LOCKED_TWISTED_CRYSTAL_ARMOR_50" />
 		<aug name="COMBAT_REPAIR" />
+	</shipBlueprint>
+	<shipBlueprint name="PLAYER_SHIP_TWISTED7_2" layout="zmt_player_tuco_suicide" img="zmt_player_tuco_suicide">
+		<class>Twisted Tuco Renegade</class>
+		<name>The Tarocchi</name>
+		<desc>This ship is equipped with an odd deck of tarot cards. Every time a card is drawn, something will happen. You can't seem to remove the cards from the ship, no matter how hard you try...</desc>
+		<systemList>
+			<artillery power="1" room="1" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
+			<battery power="1" max="2" room="8" start="false" img="room_battery_6" />
+			<cloaking power="1" room="12" start="false" img="room_cloaking_3" />
+			<clonebay power="1" room="6" start="false">
+				<slot>
+					<number>0</number>
+				</slot>
+			</clonebay>
+			<doors power="2" room="15" start="true" img="room_doors_8">
+				<slot>
+					<direction>left</direction>
+					<number>0</number>
+				</slot>
+			</doors>
+			<drones power="2" max="8" room="2" start="false" img="room_drones_7" />
+			<engines power="2" room="3" start="true" img="room_engines_9">
+				<slot>
+					<direction>up</direction>
+					<number>1</number>
+				</slot>
+			</engines>
+			<hacking power="1" room="11" start="false" img="room_hacking_6" />
+			<medbay power="1" room="6" start="true" img="room_medbay_9">
+				<slot>
+					<number>-2</number>
+				</slot>
+			</medbay>
+			<mind power="1" room="10" start="false" img="room_mind_9" />
+			<oxygen power="1" room="13" start="true" img="room_oxygen_6" />
+			<pilot power="1" room="0" start="true" img="room_pilot_2">
+				<slot>
+					<direction>right</direction>
+					<number>1</number>
+				</slot>
+			</pilot>
+			<sensors power="1" room="14" start="true" img="room_sensors_4">
+				<slot>
+					<direction>left</direction>
+					<number>1</number>
+				</slot>
+			</sensors>
+			<shields power="2" max="8"room="7" start="true" img="room_shields_8">
+				<slot>
+					<direction>left</direction>
+					<number>0</number>
+				</slot>
+			</shields>
+			<teleporter power="1" room="5" start="true" />
+			<weapons power="3" max="8" room="4" start="true" img="room_weapons_4">
+				<slot>
+					<direction>up</direction>
+					<number>0</number>
+				</slot>
+			</weapons>
+		</systemList>
+		<weaponSlots>4</weaponSlots>
+		<droneSlots>2</droneSlots>
+		<weaponList missiles="0" count="4">
+			<weapon name="LASER_BURST_3" />
+			<weapon name="LASER_BURST_1" />
+		</weaponList>
+		<droneList drones="8" count="2" />
+		<health amount="30" />
+		<maxPower amount="9" />
+		<crewCount amount="1" class="unique_tuco" />
+		<crewCount amount="1" class="blobswarm" />
+		<crewCount amount="1" class="blobswarm" />
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED7_3" layout="zmt_player_leech_suicide" img="player_ship_cracked_zmt_boss_leech_suicide">
 		<class>Twisted Renegade Leech</class>
@@ -2277,6 +2506,19 @@
 		<powerList>
 			<power>Periodically tears a breach open in the current room, also harming the system if present</power>
 			<power>200 Health, 1.5x sabotage speed</power>
+		</powerList>
+	</crewBlueprint>
+
+	<crewBlueprint name="gbgozer_player">
+		<desc>The Haunts are members of a long running Vagabond crime family, and among of some of the most wanted criminals in the galaxy.</desc>
+		<title>Gozer Haunt</title>
+		<short>Haunt</short>
+		<cost>200</cost>
+		<bp>2</bp>
+		<rarity>0</rarity>
+		<powerList>
+			<power>Can sacrifice allied ghosts to board the enemy's vessel</power>
+			<power>300 Health, 1.5x sabotage speed</power>
 		</powerList>
 	</crewBlueprint>
 
@@ -4008,7 +4250,7 @@
 				<priority>999999</priority>
 
 			</statBoost>-->
-			<statBoost name="deathEffect">
+				<statBoost name="deathEffect">
 					<boostType>SET</boostType>
 					<deathEffect>
 						<event>
@@ -8952,8 +9194,8 @@
 					<effectAnim>explosion_ion</effectAnim>
 					<selfHealth>-15</selfHealth>
 					<affectsSelf>true</affectsSelf>
-					<temporaryEffect>                                                                      Creates a temporary effect with the ability, modifying the crewmember's stats. Modified stats replace the original stats.
-						<duration>2</duration>                                                            Duration of the temporary effect.
+					<temporaryEffect>                                                                     <!-- Creates a temporary effect with the ability, modifying the crewmember's stats. Modified stats replace the original stats.-->
+						<duration>2</duration>                                                            <!--Duration of the temporary effect.-->
 						<cooldownColor r="167" g="250" b="255"/>
 						<controllable>false</controllable>
 						<noAI>true</noAI>
@@ -8961,7 +9203,7 @@
 						<canFight>false</canFight>
 						<canRepair>false</canRepair>
 						<canSabotage>false</canSabotage>
-						<effectAnim>mindcontrol</effectAnim>                       Adds an additional animSheet on top of the normal crew sheet, and optionally hides the normal crew sheet.
+						<effectAnim>mindcontrol</effectAnim>                       <!--Adds an additional animSheet on top of the normal crew sheet, and optionally hides the normal crew sheet.-->
 						<animFrame>0</animFrame>
 						<stunMultiplier>5.0</stunMultiplier>
 					</temporaryEffect>
@@ -16159,6 +16401,617 @@
 	</weaponBlueprint>
 
 </FTL>
+<!--Kestrel Jank Surges-->
+<FTL>
+	<weaponBlueprint name="TWISTED_KESTREL_PHANTOM_SPAWN_SURGE_WEAPON">
+		<type>LASER</type>
+		<flavorType>Power Surge</flavorType>
+		<title>phantom spawner barrage</title>
+		<short>phantom spawner barrage</short>
+		<tip>tip_flak</tip>
+		<desc>YOU SHOULD NEVER SEE THIS.</desc>
+		<damage>0</damage>
+		<shots>1</shots>
+		<sp>20</sp>
+		<fireChance>0</fireChance>
+		<breachChance>0</breachChance>
+		<speed>999</speed>
+		<accuracyMod>100</accuracyMod>
+		<spawnCrew>
+			<race>phantom</race>
+			<number>1</number>
+			<noSlot>true</noSlot>
+		</spawnCrew>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<image>nothing</image>
+		<explosion>nothing</explosion>
+		<launchSounds>
+			<sound>silence</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>silence</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>laser_heavy_1</weaponArt>
+		<iconImage>heavyL</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="TWISTED_KESTREL_PHANTOM_ALPHA_SPAWN_SURGE_WEAPON">
+		<type>LASER</type>
+		<flavorType>Power Surge</flavorType>
+		<title>phantom_alpha spawner barrage</title>
+		<short>phantom_alpha spawner barrage</short>
+		<tip>tip_flak</tip>
+		<desc>YOU SHOULD NEVER SEE THIS.</desc>
+		<damage>0</damage>
+		<shots>1</shots>
+		<sp>20</sp>
+		<fireChance>0</fireChance>
+		<breachChance>0</breachChance>
+		<speed>999</speed>
+		<accuracyMod>100</accuracyMod>
+		<spawnCrew>
+			<race>phantom_alpha</race>
+			<number>1</number>
+			<noSlot>true</noSlot>
+		</spawnCrew>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<image>nothing</image>
+		<explosion>nothing</explosion>
+		<launchSounds>
+			<sound>silence</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>silence</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>laser_heavy_1</weaponArt>
+		<iconImage>heavyL</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="TWISTED_KESTREL_PHANTOM_GOUL_SPAWN_SURGE_WEAPON">
+		<type>LASER</type>
+		<flavorType>Power Surge</flavorType>
+		<title>phantom_goul spawner barrage</title>
+		<short>phantom_goul spawner barrage</short>
+		<tip>tip_flak</tip>
+		<desc>YOU SHOULD NEVER SEE THIS.</desc>
+		<damage>0</damage>
+		<shots>1</shots>
+		<sp>20</sp>
+		<fireChance>0</fireChance>
+		<breachChance>0</breachChance>
+		<speed>999</speed>
+		<accuracyMod>100</accuracyMod>
+		<spawnCrew>
+			<race>phantom_goul</race>
+			<number>1</number>
+			<noSlot>true</noSlot>
+		</spawnCrew>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<image>nothing</image>
+		<explosion>nothing</explosion>
+		<launchSounds>
+			<sound>silence</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>silence</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>laser_heavy_1</weaponArt>
+		<iconImage>heavyL</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="TWISTED_KESTREL_PHANTOM_GOUL_ALPHA_SPAWN_SURGE_WEAPON">
+		<type>LASER</type>
+		<flavorType>Power Surge</flavorType>
+		<title>phantom_goul_alpha spawner barrage</title>
+		<short>phantom_goul_alpha spawner barrage</short>
+		<tip>tip_flak</tip>
+		<desc>YOU SHOULD NEVER SEE THIS.</desc>
+		<damage>0</damage>
+		<shots>1</shots>
+		<sp>20</sp>
+		<fireChance>0</fireChance>
+		<breachChance>0</breachChance>
+		<speed>999</speed>
+		<accuracyMod>100</accuracyMod>
+		<spawnCrew>
+			<race>phantom_goul_alpha</race>
+			<number>1</number>
+			<noSlot>true</noSlot>
+		</spawnCrew>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<image>nothing</image>
+		<explosion>nothing</explosion>
+		<launchSounds>
+			<sound>silence</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>silence</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>laser_heavy_1</weaponArt>
+		<iconImage>heavyL</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="TWISTED_KESTREL_PHANTOM_MARE_SPAWN_SURGE_WEAPON">
+		<type>LASER</type>
+		<flavorType>Power Surge</flavorType>
+		<title>phantom_mare spawner barrage</title>
+		<short>phantom_mare spawner barrage</short>
+		<tip>tip_flak</tip>
+		<desc>YOU SHOULD NEVER SEE THIS.</desc>
+		<damage>0</damage>
+		<shots>1</shots>
+		<sp>20</sp>
+		<fireChance>0</fireChance>
+		<breachChance>0</breachChance>
+		<speed>999</speed>
+		<accuracyMod>100</accuracyMod>
+		<spawnCrew>
+			<race>phantom_mare</race>
+			<number>1</number>
+			<noSlot>true</noSlot>
+		</spawnCrew>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<image>nothing</image>
+		<explosion>nothing</explosion>
+		<launchSounds>
+			<sound>silence</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>silence</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>laser_heavy_1</weaponArt>
+		<iconImage>heavyL</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="TWISTED_KESTREL_PHANTOM_MARE_ALPHA_SPAWN_SURGE_WEAPON">
+		<type>LASER</type>
+		<flavorType>Power Surge</flavorType>
+		<title>phantom_mare_alpha spawner barrage</title>
+		<short>phantom_mare_alpha spawner barrage</short>
+		<tip>tip_flak</tip>
+		<desc>YOU SHOULD NEVER SEE THIS.</desc>
+		<damage>0</damage>
+		<shots>1</shots>
+		<sp>20</sp>
+		<fireChance>0</fireChance>
+		<breachChance>0</breachChance>
+		<speed>999</speed>
+		<accuracyMod>100</accuracyMod>
+		<spawnCrew>
+			<race>phantom_mare_alpha</race>
+			<number>1</number>
+			<noSlot>true</noSlot>
+		</spawnCrew>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<image>nothing</image>
+		<explosion>nothing</explosion>
+		<launchSounds>
+			<sound>silence</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>silence</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>laser_heavy_1</weaponArt>
+		<iconImage>heavyL</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="TWISTED_KESTREL_PHANTOM_WRAITH_SPAWN_SURGE_WEAPON">
+		<type>LASER</type>
+		<flavorType>Power Surge</flavorType>
+		<title>phantom_wraith spawner barrage</title>
+		<short>phantom_wraith spawner barrage</short>
+		<tip>tip_flak</tip>
+		<desc>YOU SHOULD NEVER SEE THIS.</desc>
+		<damage>0</damage>
+		<shots>1</shots>
+		<sp>20</sp>
+		<fireChance>0</fireChance>
+		<breachChance>0</breachChance>
+		<speed>999</speed>
+		<accuracyMod>100</accuracyMod>
+		<spawnCrew>
+			<race>phantom_wraith</race>
+			<number>1</number>
+			<noSlot>true</noSlot>
+		</spawnCrew>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<image>nothing</image>
+		<explosion>nothing</explosion>
+		<launchSounds>
+			<sound>silence</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>silence</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>laser_heavy_1</weaponArt>
+		<iconImage>heavyL</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="TWISTED_KESTREL_PHANTOM_WRAITH_ALPHA_SPAWN_SURGE_WEAPON">
+		<type>LASER</type>
+		<flavorType>Power Surge</flavorType>
+		<title>phantom_wraith_alpha spawner barrage</title>
+		<short>phantom_wraith_alpha spawner barrage</short>
+		<tip>tip_flak</tip>
+		<desc>YOU SHOULD NEVER SEE THIS.</desc>
+		<damage>0</damage>
+		<shots>1</shots>
+		<sp>20</sp>
+		<fireChance>0</fireChance>
+		<breachChance>0</breachChance>
+		<speed>999</speed>
+		<accuracyMod>100</accuracyMod>
+		<spawnCrew>
+			<race>phantom_wraith_alpha</race>
+			<number>1</number>
+			<noSlot>true</noSlot>
+		</spawnCrew>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<image>nothing</image>
+		<explosion>nothing</explosion>
+		<launchSounds>
+			<sound>silence</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>silence</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>laser_heavy_1</weaponArt>
+		<iconImage>heavyL</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="TWISTED_KESTREL_UNIQUE_DESSIUS_SPAWN_SURGE_WEAPON">
+		<type>LASER</type>
+		<flavorType>Power Surge</flavorType>
+		<title>unique_dessius spawner barrage</title>
+		<short>unique_dessius spawner barrage</short>
+		<tip>tip_flak</tip>
+		<desc>YOU SHOULD NEVER SEE THIS.</desc>
+		<damage>0</damage>
+		<shots>1</shots>
+		<sp>20</sp>
+		<fireChance>0</fireChance>
+		<breachChance>0</breachChance>
+		<speed>999</speed>
+		<accuracyMod>100</accuracyMod>
+		<spawnCrew>
+			<race>unique_dessius</race>
+			<number>1</number>
+			<noSlot>true</noSlot>
+		</spawnCrew>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<image>nothing</image>
+		<explosion>nothing</explosion>
+		<launchSounds>
+			<sound>silence</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>silence</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>laser_heavy_1</weaponArt>
+		<iconImage>heavyL</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="TWISTED_KESTREL_GBELEANOR_SPAWN_SURGE_WEAPON">
+		<type>LASER</type>
+		<flavorType>Power Surge</flavorType>
+		<title>gbeleanor spawner barrage</title>
+		<short>gbeleanor spawner barrage</short>
+		<tip>tip_flak</tip>
+		<desc>YOU SHOULD NEVER SEE THIS.</desc>
+		<damage>0</damage>
+		<shots>1</shots>
+		<sp>20</sp>
+		<fireChance>0</fireChance>
+		<breachChance>0</breachChance>
+		<speed>999</speed>
+		<accuracyMod>100</accuracyMod>
+		<spawnCrew>
+			<race>gbeleanor</race>
+			<number>1</number>
+			<noSlot>true</noSlot>
+		</spawnCrew>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<image>nothing</image>
+		<explosion>nothing</explosion>
+		<launchSounds>
+			<sound>silence</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>silence</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>laser_heavy_1</weaponArt>
+		<iconImage>heavyL</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="TWISTED_KESTREL_GBGOZER_SPAWN_SURGE_WEAPON">
+		<type>LASER</type>
+		<flavorType>Power Surge</flavorType>
+		<title>gbgozer spawner barrage</title>
+		<short>gbgozer spawner barrage</short>
+		<tip>tip_flak</tip>
+		<desc>YOU SHOULD NEVER SEE THIS.</desc>
+		<damage>0</damage>
+		<shots>1</shots>
+		<sp>20</sp>
+		<fireChance>0</fireChance>
+		<breachChance>0</breachChance>
+		<speed>999</speed>
+		<accuracyMod>100</accuracyMod>
+		<spawnCrew>
+			<race>gbgozer</race>
+			<number>1</number>
+			<noSlot>true</noSlot>
+		</spawnCrew>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<image>nothing</image>
+		<explosion>nothing</explosion>
+		<launchSounds>
+			<sound>silence</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>silence</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>laser_heavy_1</weaponArt>
+		<iconImage>heavyL</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="TWISTED_KESTREL_GBPSYCH_SPAWN_SURGE_WEAPON">
+		<type>LASER</type>
+		<flavorType>Power Surge</flavorType>
+		<title>gbpsych spawner barrage</title>
+		<short>gbpsych spawner barrage</short>
+		<tip>tip_flak</tip>
+		<desc>YOU SHOULD NEVER SEE THIS.</desc>
+		<damage>0</damage>
+		<shots>1</shots>
+		<sp>20</sp>
+		<fireChance>0</fireChance>
+		<breachChance>0</breachChance>
+		<speed>999</speed>
+		<accuracyMod>100</accuracyMod>
+		<spawnCrew>
+			<race>gbpsych</race>
+			<number>1</number>
+			<noSlot>true</noSlot>
+		</spawnCrew>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<image>nothing</image>
+		<explosion>nothing</explosion>
+		<launchSounds>
+			<sound>silence</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>silence</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>laser_heavy_1</weaponArt>
+		<iconImage>heavyL</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="TWISTED_KESTREL_GBSCOLERI_SPAWN_SURGE_WEAPON">
+		<type>LASER</type>
+		<flavorType>Power Surge</flavorType>
+		<title>gbscoleri spawner barrage</title>
+		<short>gbscoleri spawner barrage</short>
+		<tip>tip_flak</tip>
+		<desc>YOU SHOULD NEVER SEE THIS.</desc>
+		<damage>0</damage>
+		<shots>1</shots>
+		<sp>20</sp>
+		<fireChance>0</fireChance>
+		<breachChance>0</breachChance>
+		<speed>999</speed>
+		<accuracyMod>100</accuracyMod>
+		<spawnCrew>
+			<race>gbscoleri</race>
+			<number>1</number>
+			<noSlot>true</noSlot>
+		</spawnCrew>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<image>nothing</image>
+		<explosion>nothing</explosion>
+		<launchSounds>
+			<sound>silence</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>silence</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>laser_heavy_1</weaponArt>
+		<iconImage>heavyL</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="TWISTED_KESTREL_GBSLIMER_SPAWN_SURGE_WEAPON">
+		<type>LASER</type>
+		<flavorType>Power Surge</flavorType>
+		<title>gbslimer spawner barrage</title>
+		<short>gbslimer spawner barrage</short>
+		<tip>tip_flak</tip>
+		<desc>YOU SHOULD NEVER SEE THIS.</desc>
+		<damage>0</damage>
+		<shots>1</shots>
+		<sp>20</sp>
+		<fireChance>0</fireChance>
+		<breachChance>0</breachChance>
+		<speed>999</speed>
+		<accuracyMod>100</accuracyMod>
+		<spawnCrew>
+			<race>gbslimer</race>
+			<number>1</number>
+			<noSlot>true</noSlot>
+		</spawnCrew>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<image>nothing</image>
+		<explosion>nothing</explosion>
+		<launchSounds>
+			<sound>silence</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>silence</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>laser_heavy_1</weaponArt>
+		<iconImage>heavyL</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="TWISTED_KESTREL_GBVINZ_SPAWN_SURGE_WEAPON">
+		<type>LASER</type>
+		<flavorType>Power Surge</flavorType>
+		<title>gbvinz spawner barrage</title>
+		<short>gbvinz spawner barrage</short>
+		<tip>tip_flak</tip>
+		<desc>YOU SHOULD NEVER SEE THIS.</desc>
+		<damage>0</damage>
+		<shots>1</shots>
+		<sp>20</sp>
+		<fireChance>0</fireChance>
+		<breachChance>0</breachChance>
+		<speed>999</speed>
+		<accuracyMod>100</accuracyMod>
+		<spawnCrew>
+			<race>gbvinz</race>
+			<number>1</number>
+			<noSlot>true</noSlot>
+		</spawnCrew>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<image>nothing</image>
+		<explosion>nothing</explosion>
+		<launchSounds>
+			<sound>silence</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>silence</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>laser_heavy_1</weaponArt>
+		<iconImage>heavyL</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="TWISTED_KESTREL_GBZUUL_SPAWN_SURGE_WEAPON">
+		<type>LASER</type>
+		<flavorType>Power Surge</flavorType>
+		<title>gbzuul spawner barrage</title>
+		<short>gbzuul spawner barrage</short>
+		<tip>tip_flak</tip>
+		<desc>YOU SHOULD NEVER SEE THIS.</desc>
+		<damage>0</damage>
+		<shots>1</shots>
+		<sp>20</sp>
+		<fireChance>0</fireChance>
+		<breachChance>0</breachChance>
+		<speed>999</speed>
+		<accuracyMod>100</accuracyMod>
+		<spawnCrew>
+			<race>gbzuul</race>
+			<number>1</number>
+			<noSlot>true</noSlot>
+		</spawnCrew>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<image>nothing</image>
+		<explosion>nothing</explosion>
+		<launchSounds>
+			<sound>silence</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>silence</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>laser_heavy_1</weaponArt>
+		<iconImage>heavyL</iconImage>
+	</weaponBlueprint>
+</FTL>
 
 
 
@@ -16697,6 +17550,42 @@
 		<title>Twisted Rock Cruiser</title>
 		<desc>YOU SHOULD NEVER SEE THIS</desc>
 		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+		<bp>0</bp>
+	</augBlueprint>
+	<augBlueprint name="LOCKED_DECONSTRUCTIVE_GAS">
+		<title>Deconstructive Gas</title>
+		<desc>This horrifying mixture of neurotoxins and viral agents will damage all enemy boarders over time. Deconstructing boarders in this manner yields valuable scientific data, which your Shell crew can use to strengthen themselves. Furthermore, all enemy crew who die aboard you ship cannot be cloned due to severe genetic damage.</desc>
+		<cost>150</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+		<bp>0</bp>
+	</augBlueprint>
+	<augBlueprint name="DECONSTUCT_HEALTH_BOOST">
+		<title>Deconstructive Health Boost</title>
+		<desc>YOU SHOULD NEVER SEE THIS</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+		<bp>0</bp>
+	</augBlueprint>
+
+	<!--Twisted Kestrel augments-->
+
+	<augBlueprint name="TWISTED_KESTREL_BOARDING_SPLITTER">
+		<title>Sacrificial Boarding Portal</title>
+		<desc>YOU SHOULD NEVER SEE THIS</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+		<bp>0</bp>
+	</augBlueprint>
+
+	<augBlueprint name="TWISTED_KESTREL_GHOST_SUMMON">
+		<title>Haunt Portal</title>
+		<desc>A strange device that can summon powerful ghosts at empty beacons. They all seem willing to help for now...</desc>
+		<cost>150</cost>
 		<rarity>0</rarity>
 		<stackable>false</stackable>
 		<bp>0</bp>
@@ -21596,6 +22485,120 @@
 		<rarity>0</rarity>
 		<stackable>true</stackable>
 	</augBlueprint>
+
+
+
+	<augBlueprint name="CRYABOUTIT_VENGEANCE">
+		<title>Weeping Vengeance</title>
+		<desc>Some things are better left unseen, some powers best left unharnessed. And some, like yourself, care not. Use it well, or not at all.</desc>
+		<cost>9999</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+
+
+	<augBlueprint name="CRYABOUTIT_VENGEANCE_CLONE">
+		<title>Liferaiser Vengeance</title>
+		<desc>Death would be a kinder fate for these, bound to your service.</desc>
+		<cost>6666</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="CRYABOUTIT_VENGEANCE_KERNEL">
+		<title>Gaian Vengeance</title>
+		<desc>The power of the earth is yours, though it hails from beyond familar stars.</desc>
+		<cost>7777</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="CRYABOUTIT_VENGEANCE_CRYSTAL">
+		<title>Highfacet Vengeance</title>
+		<desc>Come full circle at long last.</desc>
+		<cost>5555</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="CRYABOUTIT_VENGEANCE_ORANGE">
+		<title>Flamebrewer Vengeance</title>
+		<desc>The fires are yours, should you choose to wield them.</desc>
+		<cost>3333</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="CRYABOUTIT_VENGEANCE_ION">
+		<title>Thunderedge Vengeance</title>
+		<desc>To cripple is to kill, when in the field of battle.</desc>
+		<cost>3333</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="CRYABOUTIT_VENGEANCE_ENERGY">
+		<title>Lightninghammer Vengeance</title>
+		<desc>The bolt before the thunder.</desc>
+		<cost>3333</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+
+
+	<augBlueprint name="CRYABOUTIT_VENGEANCE_FLAK">
+		<title>Mattersurge Vengeance</title>
+		<desc>There is little elegence here, yet a beautiful simplicity lies within nonetheless.</desc>
+		<cost>3333</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+
+
+	<augBlueprint name="CRYABOUTIT_VENGEANCE_BEYATCH">
+		<title>Beyatch Vengeance</title>
+		<desc>I got nothing to say to you here, Beyatch! Get beamed!</desc>
+		<cost>3333</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="CRYABOUTIT_VENGEANCE_MISSILES">
+		<title>Hullslammer Vengeance</title>
+		<desc>To cut through the enemy's defenses is to sever their hopes.</desc>
+		<cost>2222</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="CRYABOUTIT_VENGEANCE_MORSHU">
+		<title>Bombstrike Vengeance</title>
+		<desc>Vengeance? You want it? It's yours, my friend, as long as you have enough bombs.</desc>
+		<cost>8888</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="CRYABOUTIT_VENGEANCE_PEW">
+		<title>Pewpewpew Vengeance</title>
+		<desc>Pew pew pew pew pew pew pew... (x400) sssstranger!</desc>
+		<cost>5555</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="CRYABOUTIT_VENGEANCE_MINELAUNCHER">
+		<title>Trapper Vengeance</title>
+		<desc>A trap lying in wait is as good as triggered whilst fighting with fools.</desc>
+		<cost>4444</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+
+
+
+
+
 </FTL>
 
 
