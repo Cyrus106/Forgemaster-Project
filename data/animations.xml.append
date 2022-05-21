@@ -2027,6 +2027,132 @@
 			<desc length="1" x="0" y="0" />
 			<time>1</time>
 		</anim>
+
+
+
+
+
+		<animSheet name="gbgozer_player" w="560" h="455" fw="35" fh="35">people/gbgozer_player_base.png</animSheet>
+		<anim name="gbgozer_player_clone">
+			<sheet>gbgozer_player</sheet>
+			<desc length="6" x="0" y="2" />
+			<time>0.75</time>
+		</anim>
+		<anim name="gbgozer_player_death_right">
+			<sheet>gbgozer_player</sheet>
+			<desc length="14" x="2" y="0" />
+			<time>2</time>
+		</anim>
+		<anim name="gbgozer_player_death_left">
+			<sheet>gbgozer_player</sheet>
+			<desc length="14" x="0" y="2" />
+			<time>0.75</time>
+		</anim>
+		<anim name="gbgozer_player_walk_down">
+			<sheet>gbgozer_player</sheet>
+			<desc length="8" x="0" y="12" />
+			<time>1.0</time>
+		</anim>
+		<anim name="gbgozer_player_walk_right">
+			<sheet>gbgozer_player</sheet>
+			<desc length="8" x="8" y="12" />
+			<time>1.0</time>
+		</anim>
+		<anim name="gbgozer_player_walk_up">
+			<sheet>gbgozer_player</sheet>
+			<desc length="8" x="0" y="11" />
+			<time>1.0</time>
+		</anim>
+		<anim name="gbgozer_player_walk_left">
+			<sheet>gbgozer_player</sheet>
+			<desc length="8" x="8" y="11" />
+			<time>1.0</time>
+		</anim>
+		<anim name="gbgozer_player_shoot_down">
+			<sheet>gbgozer_player</sheet>
+			<desc length="3" x="0" y="10" />
+			<time>1.0</time>
+		</anim>
+		<anim name="gbgozer_player_shoot_right">
+			<sheet>gbgozer_player</sheet>
+			<desc length="3" x="3" y="10" />
+			<time>1.0</time>
+		</anim>
+		<anim name="gbgozer_player_shoot_up">
+			<sheet>gbgozer_player</sheet>
+			<desc length="3" x="6" y="10" />
+			<time>1.0</time>
+		</anim>
+		<anim name="gbgozer_player_shoot_left">
+			<sheet>gbgozer_player</sheet>
+			<desc length="3" x="0" y="1" />
+			<time>1.0</time>
+		</anim>
+		<anim name="gbgozer_player_fire_down">
+			<sheet>gbgozer_player</sheet>
+			<desc length="8" x="0" y="9" />
+			<time>1.0</time>
+		</anim>
+		<anim name="gbgozer_player_fire_right">
+			<sheet>gbgozer_player</sheet>
+			<desc length="8" x="8" y="9" />
+			<time>1.0</time>
+		</anim>
+		<anim name="gbgozer_player_fire_up">
+			<sheet>gbgozer_player</sheet>
+			<desc length="8" x="0" y="8" />
+			<time>1.0</time>
+		</anim>
+		<anim name="gbgozer_player_fire_left">
+			<sheet>gbgozer_player</sheet>
+			<desc length="8" x="8" y="8" />
+			<time>1.0</time>
+		</anim>
+		<anim name="gbgozer_player_repair">
+			<sheet>gbgozer_player</sheet>
+			<desc length="16" x="0" y="7" />
+			<time>1.75</time>
+		</anim>
+		<anim name="gbgozer_player_punch_up">
+			<sheet>gbgozer_player</sheet>
+			<desc length="12" x="3" y="1" />
+			<time>1.5</time>
+		</anim>
+		<anim name="gbgozer_player_punch_down">
+			<sheet>gbgozer_player</sheet>
+			<desc length="12" x="3" y="6" />
+			<time>1.5</time>
+		</anim>
+		<anim name="gbgozer_player_teleport">
+			<sheet>gbgozer_player</sheet>
+			<desc length="16" x="0" y="3" />
+			<time>0.5</time>
+		</anim>
+		<anim name="gbgozer_player_type_right">
+			<sheet>gbgozer_player</sheet>
+			<desc length="8" x="0" y="5" />
+			<time>2.0</time>
+		</anim>
+		<anim name="gbgozer_player_type_left">
+			<sheet>gbgozer_player</sheet>
+			<desc length="8" x="8" y="5" />
+			<time>2.0</time>
+		</anim>
+		<anim name="gbgozer_player_type_up">
+			<sheet>gbgozer_player</sheet>
+			<desc length="8" x="0" y="4" />
+			<time>2.0</time>
+		</anim>
+		<anim name="gbgozer_player_type_down">
+			<sheet>gbgozer_player</sheet>
+			<desc length="8" x="8" y="4" />
+			<time>2.0</time>
+		</anim>
+		<anim name="gbgozer_player_portrait">
+			<sheet>gbgozer_player</sheet>
+			<desc length="1" x="0" y="0" />
+			<time>1</time>
+		</anim>
 	</FTL>
 </FTL>
 

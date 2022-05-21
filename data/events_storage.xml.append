@@ -5689,6 +5689,10 @@
       <text>Make use of the Flak Forge (Placeholder, you should never see this for now).</text>
       <event load="STORAGE_CHECK_TWISTED_FLAK_FORGE_MENU"/>
     </mod-append:choice>
+    <mod-append:choice req="TWISTED_KESTREL_GHOST_SUMMON" blue ="true">
+      <text>Summon a horde of ghosts (will be changed later).</text>
+      <event load="STORAGE_CHECK_TWISTED_KESTREL_GHOST_MENU"/> <!--For now will just summon five random ghosts, we should improve this later-->
+    </mod-append:choice>
     <mod-append:choice req="TWISTED_FLAK_FORGE" blue ="true">
       <text>Make use of the Flak Forge to install an artillery system.</text>
       <event>
@@ -6796,6 +6800,28 @@
     </choice>
   </event>
 
+
+
+
+  <!--Twisted Kestrel Ghost Summoning!-->
+  <event name="STORAGE_CHECK_TWISTED_KESTREL_GHOST_MENU">
+    <text>What would you like to do?</text>
+
+    <choice hidden="true">
+        <text>Summon a horde of ghosts.</text>
+        <event>
+          <text>Suddenly, a large group of ghosts materializes on your ship! They seem confused, but soon enough they all agree to serve you.</text>
+          <crewMember amount="5" class="LIST_CREW_GHOST"/>
+        </event>
+    </choice>
+
+    <choice>
+		    <text>Nevermind, do something else.</text>
+		    <event load="STORAGE_CHECK"/>
+	 </choice>
+
+
+  </event>
 </FTL>
 
 
