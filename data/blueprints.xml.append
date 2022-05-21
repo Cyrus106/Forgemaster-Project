@@ -826,6 +826,86 @@
 		</crew>
 		<aug name="TWISTED_MANTIS_UPGRADER"/>
 	</shipBlueprint>
+
+	<shipBlueprint name="PLAYER_SHIP_TWISTED2_2" layout="zmt_player_separatist_suicide" img="zmt_player_separatist_suicide">
+		<class>Twisted Renegade Separatist</class>
+		<name>Duality</name>
+		<desc>This ship is a remarkable fusion of opposing principles. It is nowhere near complete, yet it looks like it will be REALLY COOL when it's done! (If you leave this description in, you will be renamed to Gnun Slung by force)</desc>
+		<systemList>
+			<artillery power="1" room="6" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
+			<battery power="1" max="2" room="7" start="false" img="room_battery_13" />
+			<cloaking power="1" room="12" start="false" img="room_cloaking_3" />
+			<clonebay power="1" room="1" start="false">
+				<slot>
+					<number>0</number>
+				</slot>
+			</clonebay>
+			<doors power="2" room="16" start="true" img="room_doors_7">
+				<slot>
+					<direction>up</direction>
+					<number>1</number>
+				</slot>
+			</doors>
+			<drones power="3" max="8" room="9" start="true" img="room_drones_4" />
+			<engines power="1" room="4" start="true" img="room_engines_4">
+				<slot>
+					<direction>down</direction>
+					<number>2</number>
+				</slot>
+			</engines>
+			<hacking power="1" room="10" start="false" img="room_hacking_8" />
+			<medbay power="1" room="1" start="true" img="room_medbay_9">
+				<slot>
+					<number>-2</number>
+				</slot>
+			</medbay>
+			<mind power="1" room="8" start="false" img="room_mind_5" />
+			<oxygen power="1" room="15" start="true" img="room_oxygen_9" />
+			<pilot power="1" room="0" start="true" img="room_pilot_2">
+				<slot>
+					<direction>right</direction>
+					<number>1</number>
+				</slot>
+			</pilot>
+			<sensors power="1" room="2" start="true" img="room_sensors_3">
+				<slot>
+					<direction>right</direction>
+					<number>1</number>
+				</slot>
+			</sensors>
+			<shields power="2" max="8" room="5" start="true" img="room_shields_4">
+				<slot>
+					<direction>left</direction>
+					<number>0</number>
+				</slot>
+			</shields>
+			<teleporter power="1" room="14" start="false" />
+			<weapons power="3" max="8" room="3" start="true" img="room_weapons_8">
+				<slot>
+					<direction>up</direction>
+					<number>1</number>
+				</slot>
+			</weapons>
+		</systemList>
+		<weaponSlots>4</weaponSlots>
+		<droneSlots>3</droneSlots>
+		<weaponList missiles="10" count="4">
+			<weapon name="BEAM_1" />
+			<weapon name="LASER_LIGHT_2" />
+			<weapon name="BOMB_HEAL_SYSTEM" />
+		</weaponList>
+		<droneList drones="7" count="3">
+			<drone name="BATTLETOG_DEFEND" />
+			<drone name="REPAIR" />
+			<drone name="REPAIR" />
+		</droneList>
+		<health amount="30" />
+		<maxPower amount="8" />
+		<crewCount amount="1" class="engi_separatist" />
+		<aug name="LOCKED_NANOBOT_DEFENSE_SYSTEM" />
+		<aug name="EX_DRONE_SPEED" />
+	</shipBlueprint>
+
 	<shipBlueprint name="PLAYER_SHIP_TWISTED2_3" layout="zmt_player_mantis_suicide" img="zmt_player_mantis_suicide">
 		<class>Twisted Renegade Mantis</class>
 		<name>Zerg Rush</name>
