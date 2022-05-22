@@ -374,33 +374,37 @@
 		<unlock id="ship_PLAYER_SHIP_GUNSHIP_ELITE_2_unlock"/>
 		<desc>With the wealthy Free Mantis faced with bankruptcy over his failed ship design ventures, the bank has begun to repossess parts of his ships to pay off his unfathomable amounts of debt. His best friends were forcefully enslaved as well. This won't stop the now penniless Free Mantis from going out in a blaze of glory!</desc>
 		<systemList>
+			<artillery power="1" room="3" start="false" weapon="KERNEL_CHAIN_ELITE_PLAYER_ARTY" img="room_artillery" />
+			<artillery power="1" room="15" start="false" weapon="BOMB_ION_ARTY" img="room_artillery" />
+			<artillery power="1" room="8" start="false" weapon="ARTILLERY_REBEL_MISSILE" img="room_artillery" />
+			<artillery power="1" room="13" start="false" weapon="BOMB_BREACH_1_PLAYER_ARTY_CHAIN" img="room_artillery" />
 			<battery power="1" room="14" start="true" img="room_battery_8" />
 			<cloaking power="1" room="6" start="false" img="ancient_oxygen" />
-			<clonebay power="1" max="3" room="4" start="true">
+			<clonebay power="1" room="4" start="false">
 				<slot>
-					<number>0</number>
+					<number>1</number>
 				</slot>
 			</clonebay>
-			<doors power="1" room="12" start="true" img="room_doors">
+			<doors power="1" room="12" start="true" img="room_doors_7">
 				<slot>
 					<direction>up</direction>
 					<number>1</number>
 				</slot>
 			</doors>
-			<drones power="2" max="8" room="7" start="true" img="room_artillery_5" />
-			<engines power="2" room="9" start="true" img="room_hacking_orchid">
+			<drones power="2" room="7" start="true" img="room_drones_14" />
+			<engines power="2" room="9" start="true" img="room_engines_2">
 				<slot>
 					<direction>down</direction>
-					<number>1</number>
+					<number>2</number>
 				</slot>
 			</engines>
 			<hacking power="1" room="17" start="false" img="room_hacking_4" />
-			<medbay power="1" max="3" room="4" start="true" img="room_medbay_4">
+			<medbay power="1" room="4" start="true" img="room_medbay">
 				<slot>
-					<number>0</number>
+					<number>1</number>
 				</slot>
 			</medbay>
-
+			<mind power="1" room="10" start="false" img="room_mind_12" />
 			<oxygen power="2" room="5" start="true" img="room_battery_orchid" />
 			<pilot power="1" room="0" start="true" img="room_pilot">
 				<slot>
@@ -414,17 +418,17 @@
 					<number>1</number>
 				</slot>
 			</sensors>
-			<shields power="2" max="8" room="1" start="true" img="room_shields">
+			<shields power="2" room="1" start="true" img="room_shields_4">
 				<slot>
 					<direction>left</direction>
 					<number>0</number>
 				</slot>
 			</shields>
 			<teleporter power="2" room="16" start="true" />
-			<weapons power="4" max="8" room="2" start="true" img="room_weapons_10">
+			<weapons power="4" room="2" start="true" img="room_weapons_6">
 				<slot>
 					<direction>up</direction>
-					<number>0</number>
+					<number>1</number>
 				</slot>
 			</weapons>
 		</systemList>
