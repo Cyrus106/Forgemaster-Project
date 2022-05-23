@@ -1978,6 +1978,16 @@
 		  <event load="OPTION_INVALID"/>
 		</choice>
 
+		<choice req="FM_AC_CHARGE_LIST_ANY" lvl="1" blue="false" hidden="true" max_group="9">
+		  <text>Combine two to four Autocannon 1s to forge the Charge Autocannon.[Cost: 20-60~,0-4}]</text>
+		  <event load="NPC_STORAGE_CHECK_CREATE_FM_AC_CHARGE"/>
+		</choice>
+
+		<choice req="FM_AC_CHARGE_LIST_ANY" lvl="0" blue="false" hidden="true" max_group="9">
+		  <text>You must have two to four Autocannon 1s to forge this weapon.</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+
 		<!--Back to main craft menu-->
 		<choice req="pilot" lvl="1" max_group="20" hidden="true" blue="false">
 			<text>Nevermind, back to main menu.</text>
@@ -4949,6 +4959,225 @@
     </choice>
   </event>
 
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_AC_CHARGE">
+	  <checkCargo/>
+	  <text>Currently viewing the Charge Autocannon.</text>
+	  <choice hidden="false" req="GB_AC_1_AMMO" lvl="4" blue="false">
+	    <text>Craft the Charge Autocannon using 4 AC 1s</text>
+	    <event>
+	      <text>Proceed with crafting?</text>
+	      <weapon name="FM_AC_CHARGE"/>
+				<item_modify>
+					<item type="scrap" min="-20" max="-20"/>
+				</item_modify>
+	      <choice hidden="true">
+	        <text>Continue...</text>
+					<event>
+						<loadEvent>REMOVE_AC4</loadEvent>
+					</event>
+	      </choice>
+	    </event>
+	  </choice>
+		<choice hidden="false" req="GB_AC_1_AMMO" lvl="3" blue="false">
+	    <text>Craft the Charge Autocannon using 3 AC 1s</text>
+	    <event>
+	      <text>Proceed with crafting?</text>
+	      <weapon name="FM_AC_CHARGE"/>
+	      <item_modify>
+					<item type="scrap" min="-40" max="-40"/>
+					<item type="missiles" min="-2" max="-2"/>
+				</item_modify>
+	      <choice hidden="true">
+	        <text>Continue...</text>
+					<event>
+						<loadEvent>REMOVE_AC3</loadEvent>
+					</event>
+	      </choice>
+	    </event>
+	  </choice>
+		<choice hidden="false" req="GB_AC_1_AMMO" lvl="2" blue="false">
+	    <text>Craft the Charge Autocannon using 2 AC 1s</text>
+	    <event>
+	      <text>Proceed with crafting?</text>
+	      <weapon name="FM_AC_CHARGE"/>
+	      <item_modify>
+					<item type="scrap" min="-60" max="-60"/>
+					<item type="missiles" min="-4" max="-4"/>
+				</item_modify>
+	      <choice hidden="true">
+	        <text>Continue...</text>
+					<event>
+						<loadEvent>REMOVE_AC2</loadEvent>
+					</event>
+	      </choice>
+	    </event>
+	  </choice>
+	  <choice hidden="false">
+	    <text>Nevermind.</text>
+	    <event load="FM_FORGE_WEAPON_EXPLOSIVES_LOAD"/>
+	  </choice>
+	</event>
+
+	<event name="REMOVE_AC4">
+		<loadEventList>
+			<event req="GB_AC_1">
+				<removeItem>GB_AC_1</removeItem>
+				<loadEvent>REMOVE_AC3</loadEvent>
+			</event>
+			<event req="GB_AC_1_CASELESS">
+				<removeItem>GB_AC_1_CASELESS</removeItem>
+				<loadEvent>REMOVE_AC3</loadEvent>
+			</event>
+			<event req="GB_AC_1_HV">
+				<removeItem>GB_AC_1_HV</removeItem>
+				<loadEvent>REMOVE_AC3</loadEvent>
+			</event>
+			<event req="GB_AC_1_FREE">
+				<removeItem>GB_AC_1_FREE</removeItem>
+				<loadEvent>REMOVE_AC3</loadEvent>
+			</event>
+			<event req="GB_AC_1_EMP">
+				<removeItem>GB_AC_1_EMP</removeItem>
+				<loadEvent>REMOVE_AC3</loadEvent>
+			</event>
+			<event req="GB_AC_1_HEAT">
+				<removeItem>GB_AC_1_HEAT</removeItem>
+				<loadEvent>REMOVE_AC3</loadEvent>
+			</event>
+			<event req="GB_AC_1_INCENDIARY">
+				<removeItem>GB_AC_1_INCENDIARY</removeItem>
+				<loadEvent>REMOVE_AC3</loadEvent>
+			</event>
+			<event req="GB_AC_1_FLECHETTE">
+				<removeItem>GB_AC_1_FLECHETTE</removeItem>
+				<loadEvent>REMOVE_AC3</loadEvent>
+			</event>
+			<event req="GB_AC_1_RAD">
+				<removeItem>GB_AC_1_RAD</removeItem>
+				<loadEvent>REMOVE_AC3</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="REMOVE_AC3">
+		<loadEventList>
+			<event req="GB_AC_1">
+				<removeItem>GB_AC_1</removeItem>
+				<loadEvent>REMOVE_AC2</loadEvent>
+			</event>
+			<event req="GB_AC_1_CASELESS">
+				<removeItem>GB_AC_1_CASELESS</removeItem>
+				<loadEvent>REMOVE_AC2</loadEvent>
+			</event>
+			<event req="GB_AC_1_HV">
+				<removeItem>GB_AC_1_HV</removeItem>
+				<loadEvent>REMOVE_AC2</loadEvent>
+			</event>
+			<event req="GB_AC_1_FREE">
+				<removeItem>GB_AC_1_FREE</removeItem>
+				<loadEvent>REMOVE_AC2</loadEvent>
+			</event>
+			<event req="GB_AC_1_EMP">
+				<removeItem>GB_AC_1_EMP</removeItem>
+				<loadEvent>REMOVE_AC2</loadEvent>
+			</event>
+			<event req="GB_AC_1_HEAT">
+				<removeItem>GB_AC_1_HEAT</removeItem>
+				<loadEvent>REMOVE_AC2</loadEvent>
+			</event>
+			<event req="GB_AC_1_INCENDIARY">
+				<removeItem>GB_AC_1_INCENDIARY</removeItem>
+				<loadEvent>REMOVE_AC2</loadEvent>
+			</event>
+			<event req="GB_AC_1_FLECHETTE">
+				<removeItem>GB_AC_1_FLECHETTE</removeItem>
+				<loadEvent>REMOVE_AC2</loadEvent>
+			</event>
+			<event req="GB_AC_1_RAD">
+				<removeItem>GB_AC_1_RAD</removeItem>
+				<loadEvent>REMOVE_AC2</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="REMOVE_AC2">
+		<loadEventList>
+			<event req="GB_AC_1">
+				<removeItem>GB_AC_1</removeItem>
+				<loadEvent>REMOVE_AC1</loadEvent>
+			</event>
+			<event req="GB_AC_1_CASELESS">
+				<removeItem>GB_AC_1_CASELESS</removeItem>
+				<loadEvent>REMOVE_AC1</loadEvent>
+			</event>
+			<event req="GB_AC_1_HV">
+				<removeItem>GB_AC_1_HV</removeItem>
+				<loadEvent>REMOVE_AC1</loadEvent>
+			</event>
+			<event req="GB_AC_1_FREE">
+				<removeItem>GB_AC_1_FREE</removeItem>
+				<loadEvent>REMOVE_AC1</loadEvent>
+			</event>
+			<event req="GB_AC_1_EMP">
+				<removeItem>GB_AC_1_EMP</removeItem>
+				<loadEvent>REMOVE_AC1</loadEvent>
+			</event>
+			<event req="GB_AC_1_HEAT">
+				<removeItem>GB_AC_1_HEAT</removeItem>
+				<loadEvent>REMOVE_AC1</loadEvent>
+			</event>
+			<event req="GB_AC_1_INCENDIARY">
+				<removeItem>GB_AC_1_INCENDIARY</removeItem>
+				<loadEvent>REMOVE_AC1</loadEvent>
+			</event>
+			<event req="GB_AC_1_FLECHETTE">
+				<removeItem>GB_AC_1_FLECHETTE</removeItem>
+				<loadEvent>REMOVE_AC1</loadEvent>
+			</event>
+			<event req="GB_AC_1_RAD">
+				<removeItem>GB_AC_1_RAD</removeItem>
+				<loadEvent>REMOVE_AC1</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="REMOVE_AC1">
+		<loadEventList>
+			<event req="GB_AC_1">
+				<removeItem>GB_AC_1</removeItem>
+				<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+			</event>
+			<event req="GB_AC_1_CASELESS">
+				<removeItem>GB_AC_1_CASELESS</removeItem>
+				<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+			</event>
+			<event req="GB_AC_1_HV">
+				<removeItem>GB_AC_1_HV</removeItem>
+				<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+			</event>
+			<event req="GB_AC_1_FREE">
+				<removeItem>GB_AC_1_FREE</removeItem>
+				<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+			</event>
+			<event req="GB_AC_1_EMP">
+				<removeItem>GB_AC_1_EMP</removeItem>
+				<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+			</event>
+			<event req="GB_AC_1_HEAT">
+				<removeItem>GB_AC_1_HEAT</removeItem>
+				<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+			</event>
+			<event req="GB_AC_1_INCENDIARY">
+				<removeItem>GB_AC_1_INCENDIARY</removeItem>
+				<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+			</event>
+			<event req="GB_AC_1_FLECHETTE">
+				<removeItem>GB_AC_1_FLECHETTE</removeItem>
+				<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+			</event>
+			<event req="GB_AC_1_RAD">
+				<removeItem>GB_AC_1_RAD</removeItem>
+				<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
 	<!--ORGANIC CRAFT CATEGORY-->
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_BEAM_BASILISK">

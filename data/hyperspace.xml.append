@@ -2418,6 +2418,27 @@
 			<name>ION_3</name>
 		</req>
 
+		<req name="FM_AC_CHARGE_LIST2" type="all">
+			<req type="sum" lvl="2">
+				<name>SUM GB_AC_1_AMMO</name>
+			</req>
+		</req>
+		<req name="FM_AC_CHARGE_LIST3" type="all">
+			<req type="sum" lvl="3">
+				<name>SUM GB_AC_1_AMMO</name>
+			</req>
+		</req>
+		<req name="FM_AC_CHARGE_LIST4" type="all">
+			<req type="sum" lvl="4">
+				<name>SUM GB_AC_1_AMMO</name>
+			</req>
+		</req>
+		<req name="FM_AC_CHARGE_LIST_ANY">
+		  <name>FM_AC_CHARGE_LIST2</name>
+		  <name>FM_AC_CHARGE_LIST3</name>
+			<name>FM_AC_CHARGE_LIST4</name>
+		</req>
+
 	</events>
 
 
@@ -2916,6 +2937,7 @@
 			<name>FM_BOMBLAUNCHER_HULL_LIST</name>
 			<name>FM_MINELAUNCHER_BIO_LIST</name>
 			<name>FM_ION_MISSILES_LIST</name>
+			<name>FM_AC_CHARGE_LIST_ANY</name>
 		</req>
 
 		<req name="FM_EXPLOSIVE_FORGE_LIST_STORAGE" type="all"> <!-- Do you have the ingredients for a Explosive weapon? If so, light up the category option BLUE in the crafting category menu! -->
