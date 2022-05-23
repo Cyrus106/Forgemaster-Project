@@ -13191,8 +13191,7 @@
 		<power>1</power>
 		<cost>130</cost>
 		<bp>2</bp>
-		<rarity>0</rarity>
-			
+		<rarity>0</rarity>	
 		<statBoosts>
 			<statBoost name="trueHealAmount">
 				<boostType>SET</boostType>
@@ -13208,7 +13207,6 @@
 				</blackList>
 				<priority>-100</priority>
 			</statBoost>
-	
 		<image>fm_abduct_laser_proj</image>
 		<launchSounds>
 			<sound>lightLaser1</sound>
@@ -13247,8 +13245,7 @@
 		<power>2</power>
 		<cost>130</cost>
 		<bp>2</bp>
-		<rarity>0</rarity>
-			
+		<rarity>0</rarity>	
 		<statBoosts>
 			<statBoost name="trueHealAmount">
 				<boostType>SET</boostType>
@@ -13263,7 +13260,6 @@
 				</blackList>
 				<priority>-100</priority>
 			</statBoost>
-	
 		<image>fm_abduct_laser_proj</image>
 		<launchSounds>
 			<sound>lightLaser1</sound>
@@ -13302,8 +13298,7 @@
 		<power>3</power>
 		<cost>160</cost>
 		<bp>2</bp>
-		<rarity>0</rarity>
-			
+		<rarity>0</rarity>	
 		<statBoosts>
 			<statBoost name="trueHealAmount">
 				<boostType>SET</boostType>
@@ -13318,7 +13313,6 @@
 				</blackList>
 				<priority>-100</priority>
 			</statBoost>
-	
 		<image>fm_abduct_laser_proj</image>
 		<launchSounds>
 			<sound>lightLaser1</sound>
