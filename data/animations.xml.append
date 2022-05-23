@@ -3849,6 +3849,46 @@ try this later
 		<mountPoint x="3" y="40"/>
 		<chargeImage>weapon_flak/fm_shotgun_cursed_glow.png</chargeImage>
 	</weaponAnim>
+	
+	
+        <!--CORROSIVE WEAPONS-->
+	
+	<animSheet name="fm_corrosive_hull_1" w="250" h="54" fw="25" fh="54">weapon_laser/fm_corrosive_hull_1.png</animSheet>
+	<weaponAnim name="fm_corrosive_hull_1">
+		<sheet>fm_corrosive_hull_1</sheet>
+		<desc length="10" x="0" y="0"/>
+		<chargedFrame>1</chargedFrame>
+		<fireFrame>2</fireFrame>
+		<firePoint  x="16" y="1"/>
+		<mountPoint x="2" y="36"/>
+		<chargeImage>weapon_laser/fm_corrosive_hull_1_glow.png</chargeImage>
+	</weaponAnim>
+	
+	<animSheet name="fm_corrosive_hull_2" w="290" h="67" fw="29" fh="67">weapon_laser/fm_corrosive_hull_2.png</animSheet>
+	<weaponAnim name="fm_corrosive_hull_2">
+		<sheet>fm_corrosive_hull_2</sheet>
+		<desc length="10" x="0" y="0"/>
+		<chargedFrame>1</chargedFrame>
+		<fireFrame>2</fireFrame>
+		<firePoint  x="20" y="1"/>
+		<mountPoint x="1" y="45"/>
+		<chargeImage>weapon_laser/fm_corrosive_hull_2_glow.png</chargeImage>
+	</weaponAnim>
+	
+	<animSheet name="fm_corrosive_hull_3" w="468" h="95" fw="39" fh="81">weapon_laser/fm_corrosive_hull_3.png</animSheet>
+	<weaponAnim name="fm_corrosive_hull_3">
+		<sheet>fm_corrosive_hull_3</sheet>
+		<desc length="12" x="0" y="0"/>
+		<chargedFrame>1</chargedFrame>
+		<fireFrame>2</fireFrame>
+		<firePoint  x="25" y="1"/>
+		<mountPoint x="5" y="50"/>
+		<chargeImage>weapon_laser/fm_corrosive_hull_3_glow.png</chargeImage>
+	</weaponAnim>
+	
+	
+	
+	
 </FTL>
 
 
