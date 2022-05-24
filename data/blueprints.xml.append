@@ -9896,7 +9896,7 @@
 		<length>140</length>
 		<statBoosts>
 			<statBoost name="trueHealAmount">
-				<boostType>SET</boostType>
+				<boostType>FLAT</boostType>
 				<amount>-1</amount>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
@@ -9910,6 +9910,7 @@
 					<fm_crystal_green/>
 					<fm_crystal_white/>
 					<fm_crystal_black/>
+					<FM_PLSNOEFFECT/>
 				</blackList>
 				<priority>-100</priority>
 			</statBoost>
@@ -13194,7 +13195,7 @@
 		<rarity>0</rarity>	
 		<statBoosts>
 			<statBoost name="trueHealAmount">
-				<boostType>SET</boostType>
+				<boostType>FLAT</boostType>
 				<amount>-3</amount>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
@@ -13203,10 +13204,11 @@
 				<boostAnim>bio_poison</boostAnim>
 				<maxStacks>1</maxStacks>
 				<blackList>
-					<LIST_FM_NOABDUCT/>
+					<FM_PLSNOEFFECT/>
 				</blackList>
 				<priority>-100</priority>
 			</statBoost>
+		</statBoosts>
 		<image>fm_abduct_laser_proj</image>
 		<launchSounds>
 			<sound>lightLaser1</sound>
@@ -13248,7 +13250,7 @@
 		<rarity>0</rarity>	
 		<statBoosts>
 			<statBoost name="trueHealAmount">
-				<boostType>SET</boostType>
+				<boostType>FLAT</boostType>
 				<amount>-3.5</amount>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
@@ -13256,10 +13258,11 @@
 				<duration>15</duration>
 				<boostAnim>bio_poison</boostAnim>
 				<blackList>
-					<LIST_FM_NOABDUCT/>
+					<FM_PLSNOEFFECT/>
 				</blackList>
 				<priority>-100</priority>
 			</statBoost>
+		</statBoosts>
 		<image>fm_abduct_laser_proj</image>
 		<launchSounds>
 			<sound>lightLaser1</sound>
@@ -13301,7 +13304,7 @@
 		<rarity>0</rarity>	
 		<statBoosts>
 			<statBoost name="trueHealAmount">
-				<boostType>SET</boostType>
+				<boostType>FLAT</boostType>
 				<amount>-4</amount>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
@@ -13309,10 +13312,11 @@
 				<duration>15</duration>
 				<boostAnim>bio_poison</boostAnim>
 				<blackList>
-					<LIST_FM_NOABDUCT/>
+					<FM_PLSNOEFFECT/>
 				</blackList>
 				<priority>-100</priority>
 			</statBoost>
+		</statBoosts>
 		<image>fm_abduct_laser_proj</image>
 		<launchSounds>
 			<sound>lightLaser1</sound>
