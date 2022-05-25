@@ -1690,8 +1690,8 @@
 		<name>The Keymaster</name>
 		<desc>This odd Kestrel is looking for the Gatekeeper, and will stop at nothing to find them.</desc>
 		<systemList>
-			<artillery power="1" room="4" start="true" weapon="FM_CHAINGUN_ION" img="nothing" />
-			<artillery power="1" room="3" start="true" weapon="FM_CHAINGUN_ION" img="nothing" />
+			<artillery power="1" room="4" start="false" weapon="FM_CHAINGUN_ION" img="nothing" />
+			<artillery power="1" room="3" start="false" weapon="FM_CHAINGUN_ION" img="nothing" />
 			<battery power="1" max="2" room="8" start="false" img="room_battery_11" />
 			<cloaking power="1" room="11" start="false" img="room_cloaking_2" />
 			<!--<clonebay power="1" room="13" start="false">
@@ -1746,9 +1746,9 @@
 				</slot>
 			</weapons>
 		</systemList>
-		<weaponSlots>2</weaponSlots>
+		<weaponSlots>4</weaponSlots>
 		<droneSlots>2</droneSlots>
-		<weaponList missiles="0" count="2">
+		<weaponList missiles="0" count="4">
 			<weapon name="ION_PIERCE_1" />
 			<weapon name="BEAM_1" />
 		</weaponList>
