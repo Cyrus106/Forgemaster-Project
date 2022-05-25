@@ -391,7 +391,7 @@
 					<number>1</number>
 				</slot>
 			</doors>
-			<drones power="2" room="7" start="true" img="room_drones_14" />
+			<drones power="2" max="8" room="7" start="true" img="room_drones_14" />
 			<engines power="2" room="9" start="true" img="room_engines_2">
 				<slot>
 					<direction>down</direction>
@@ -418,14 +418,14 @@
 					<number>1</number>
 				</slot>
 			</sensors>
-			<shields power="2" room="1" start="true" img="room_shields_4">
+			<shields power="2" max="8" room="1" start="true" img="room_shields_4">
 				<slot>
 					<direction>left</direction>
 					<number>0</number>
 				</slot>
 			</shields>
 			<teleporter power="2" room="16" start="true" />
-			<weapons power="4" room="2" start="true" img="room_weapons_6">
+			<weapons power="4" max="8" room="2" start="true" img="room_weapons_6">
 				<slot>
 					<direction>up</direction>
 					<number>1</number>

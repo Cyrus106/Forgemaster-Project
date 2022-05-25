@@ -6875,8 +6875,17 @@
 			<text>You cannot Install vengeance modules now, install a Capstone first!</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-
-
+		<!--More vengeance modules-->
+		<choice req="CAN_INSTALL_MODULE_TRUE" lvl="1" max_group="5" blue="false" hidden="true">
+			<text>Install more vengenace modules</text>
+			<event>
+				<loadEvent>VENGEFUL_INSTALL</loadEvent>
+			</event>
+		</choice>
+		<choice req="CAN_INSTALL_MODULE_FALSE" lvl="1" max_group="5" blue="false" hidden="true">
+			<text>You cannot Install vengeance modules now, install a Capstone first!</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
 		<!--system modules-->
 		<choice req="CAN_INSTALL_MODULE_TRUE" lvl="1" max_group="6" blue="false" hidden="true">
 			<text>Install system modules</text>
@@ -7107,18 +7116,6 @@
 				<loadEvent>FM_MODULAR_HULL_MODULE_VENGEANCE3</loadEvent>
 			</event>
 		</choice>
-		<!--More vengeance modules-->
-		<choice req="CAN_INSTALL_MODULE_TRUE" lvl="1" max_group="5" blue="false" hidden="true">
-			<text>Install more vengenace modules</text>
-			<event>
-				<loadEvent>VENGEFUL_INSTALL</loadEvent>
-			</event>
-		</choice>
-		<choice req="CAN_INSTALL_MODULE_FALSE" lvl="1" max_group="5" blue="false" hidden="true">
-			<text>You cannot Install vengeance modules now, install a Capstone first!</text>
-			<event load="OPTION_INVALID"/>
-		</choice>
-
 		<choice req="pilot" max_group="11" blue="false">
 			<text>Nevermind.</text>
 			<event>
