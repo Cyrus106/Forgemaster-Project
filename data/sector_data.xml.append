@@ -20,6 +20,30 @@
    </mod:findLike>
 </mod:findName>	
 
+<mod:findName type="sectorDescription" name="SECTOR_SHELL">
+ <mod:findLike type="rarityList">
+  <mod-append:blueprint name="FM_CORROSIVE_1" rarity="4"/>
+  <mod-append:blueprint name="FM_CORROSIVE_2" rarity="4"/>
+  <mod-append:blueprint name="FM_CORROSIVE_3" rarity="5"/>
+   </mod:findLike>
+</mod:findName>	
+
+<mod:findName type="sectorDescription" name="SECTOR_SHELL_UNIQUE">
+ <mod:findLike type="rarityList">
+  <mod-append:blueprint name="FM_CORROSIVE_1" rarity="3"/>
+  <mod-append:blueprint name="FM_CORROSIVE_2" rarity="3"/>
+  <mod-append:blueprint name="FM_CORROSIVE_3" rarity="4"/>
+   </mod:findLike>
+</mod:findName>	
+
+<mod:findName type="sectorDescription" name="SECTOR_MORPH">
+ <mod:findLike type="rarityList">
+  <mod-append:blueprint name="FM_CORROSIVE_1" rarity="3"/>
+  <mod-append:blueprint name="FM_CORROSIVE_2" rarity="3"/>
+  <mod-append:blueprint name="FM_CORROSIVE_3" rarity="4"/>
+   </mod:findLike>
+</mod:findName>	
+
 <mod:findName type="sectorDescription" name="SECTOR_ZOLTAN_UNIQUE">
  <mod:findLike type="rarityList">
   <mod-append:blueprint name="FM_LASER_BURST_3" rarity="5"/>
