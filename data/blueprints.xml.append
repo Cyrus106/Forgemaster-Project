@@ -4243,7 +4243,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<cooldown>3</cooldown>
-		<speed>90</speed>
+		<speed>140</speed>
 		<accuracyMod>100</accuracyMod>
 
 		<statBoosts>
@@ -13174,7 +13174,7 @@
 		<weaponArt>ancient_ion_1</weaponArt>
 		<iconImage>heavyL</iconImage>
 	</weaponBlueprint>
-	
+
 <!-- CORROSIVE WEAPONS -->
 
 	<weaponBlueprint name="FM_CORROSIVE_1">
@@ -13192,7 +13192,7 @@
 		<power>1</power>
 		<cost>60</cost>
 		<bp>2</bp>
-		<rarity>0</rarity>	
+		<rarity>0</rarity>
 		<statBoosts>
 			<statBoost name="trueHealAmount">
 				<boostType>FLAT</boostType>
@@ -13230,8 +13230,8 @@
 		<weaponArt>fm_corrosive_hull_1</weaponArt>
 		<iconImage>laser</iconImage>
 	</weaponBlueprint>
-		
-	
+
+
 	<weaponBlueprint name="FM_CORROSIVE_2">
 		<type>LASER</type>
 		<title>Corrosive Laser II</title>
@@ -13247,7 +13247,7 @@
 		<power>2</power>
 		<cost>70</cost>
 		<bp>2</bp>
-		<rarity>0</rarity>	
+		<rarity>0</rarity>
 		<statBoosts>
 			<statBoost name="trueHealAmount">
 				<boostType>FLAT</boostType>
@@ -13284,8 +13284,8 @@
 		<weaponArt>fm_corrosive_hull_2</weaponArt>
 		<iconImage>laser</iconImage>
 	</weaponBlueprint>
-		
-	
+
+
 	<weaponBlueprint name="FM_CORROSIVE_3">
 		<type>LASER</type>
 		<title>Corrosive Laser III</title>
@@ -13301,7 +13301,7 @@
 		<power>3</power>
 		<cost>80</cost>
 		<bp>2</bp>
-		<rarity>0</rarity>	
+		<rarity>0</rarity>
 		<statBoosts>
 			<statBoost name="trueHealAmount">
 				<boostType>FLAT</boostType>
@@ -13338,7 +13338,7 @@
 		<weaponArt>fm_corrosive_hull_3</weaponArt>
 		<iconImage>laser</iconImage>
 	</weaponBlueprint>
-	
+
 
 </FTL>
 
