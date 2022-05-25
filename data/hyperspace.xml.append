@@ -2418,27 +2418,39 @@
 			<name>ION_3</name>
 		</req>
 
-		<req name="FM_AC_CHARGE_LIST2" type="all">
+		<req name="FM_RVS_AC_CHARGE_LIST2" type="all">
 			<req type="sum" lvl="2">
-				<name>SUM GB_AC_1_AMMO</name>
+				<name>AC_1_COUNT</name>
 			</req>
 		</req>
-		<req name="FM_AC_CHARGE_LIST3" type="all">
+		<req name="FM_RVS_AC_CHARGE_LIST3" type="all">
 			<req type="sum" lvl="3">
-				<name>SUM GB_AC_1_AMMO</name>
+				<name>AC_1_COUNT</name>
 			</req>
 		</req>
-		<req name="FM_AC_CHARGE_LIST4" type="all">
+		<req name="FM_RVS_AC_CHARGE_LIST4" type="all">
 			<req type="sum" lvl="4">
-				<name>SUM GB_AC_1_AMMO</name>
+				<name>AC_1_COUNT</name>
 			</req>
 		</req>
-		<req name="FM_AC_CHARGE_LIST_ANY">
-		  <name>FM_AC_CHARGE_LIST2</name>
-		  <name>FM_AC_CHARGE_LIST3</name>
-			<name>FM_AC_CHARGE_LIST4</name>
+		<req name="FM_RVS_AC_CHARGE_LIST_ANY">
+		  <name>FM_RVS_AC_CHARGE_LIST2</name>
+		  <name>FM_RVS_AC_CHARGE_LIST3</name>
+			<name>FM_RVS_AC_CHARGE_LIST4</name>
 		</req>
 
+		<req name="AC_1_COUNT" type="sum">
+			<name>GB_AC_1</name>
+			<name>GB_AC_1_CASELESS</name>
+			<name>GB_AC_1_HV</name>
+			<name>GB_AC_1_FREE</name>
+			<name>GB_AC_1_HE</name>
+			<name>GB_AC_1_EMP</name>
+			<name>GB_AC_1_HEAT</name>
+			<name>GB_AC_1_INCENDIARY</name>
+			<name>GB_AC_1_FLECHETTE</name>
+			<name>GB_AC_1_RAD</name>
+		</req>
 	</events>
 
 
@@ -2937,7 +2949,7 @@
 			<name>FM_BOMBLAUNCHER_HULL_LIST</name>
 			<name>FM_MINELAUNCHER_BIO_LIST</name>
 			<name>FM_ION_MISSILES_LIST</name>
-			<name>FM_AC_CHARGE_LIST_ANY</name>
+			<name>FM_RVS_AC_CHARGE_LIST_ANY</name>
 		</req>
 
 		<req name="FM_EXPLOSIVE_FORGE_LIST_STORAGE" type="all"> <!-- Do you have the ingredients for a Explosive weapon? If so, light up the category option BLUE in the crafting category menu! -->

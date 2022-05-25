@@ -13174,6 +13174,46 @@
 		<iconImage>heavyL</iconImage>
 	</weaponBlueprint>
 
+	<weaponBlueprint name="FM_RVS_AC_CHARGE"> <!-- standard-->
+    <type>LASER</type>
+    <title>Volley Gun</title>
+    <short>Volley</short>
+    <desc>An attempt to bring outdated equipment into new life. This weapon is made up of several light autocannons together to allow it to fire in a volley of 4 shots for a very low power cost.</desc>
+    <tooltip>1 damage 4 shot charge weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
+    <missiles>1</missiles>
+    <freeMissileChance>85</freeMissileChance>
+    <damage>1</damage>
+    <shots>1</shots>
+    <sp>0</sp>
+    <breachChance>1</breachChance>
+    <cooldown>6</cooldown>
+    <power>1</power>
+    <bp>4</bp>
+    <rarity>0</rarity>
+    <cost>60</cost>
+    <image>GB_shot_light</image>
+    <chargeLevels>4</chargeLevels>
+    <launchSounds>
+        <sound>GB_cannonLight1</sound>
+        <sound>GB_cannonLight2</sound>
+        <sound>GB_cannonLight3</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>hitHull2</sound>
+        <sound>hitHull3</sound>
+    </hitShipSounds>
+    <hitShieldSounds>
+        <sound>hitShield1</sound>
+        <sound>hitShield2</sound>
+        <sound>hitShield3</sound>
+    </hitShieldSounds>
+    <missSounds>
+        <sound>miss</sound>
+    </missSounds>
+    <weaponArt>rvs_ac_charger</weaponArt>
+    <iconImage>laser</iconImage>
+</weaponBlueprint>
+
 </FTL>
 
 <!-- ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼ ‼   -->

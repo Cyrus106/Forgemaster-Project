@@ -1273,6 +1273,7 @@
     <event/>
   </event>
   <event name="STORAGE_CHECK_CREATE_EXPLOSIVES">
+    <eventAlias name="FM_FORGE_WEAPON_LOAD"></eventAlias>
     <text>Which weapon would you like to craft?</text>
     <checkCargo/>
 
@@ -1365,6 +1366,16 @@
       <text>You must have a Hermes Heavy Missile and Ion II to forge this weapon.</text>
       <event load="OPTION_INVALID"/>
     </choice>
+
+		<choice req="FM_RVS_AC_CHARGE_LIST_ANY" lvl="1" blue="false" hidden="true" max_group="10">
+		  <text>Combine two to four Autocannon 1s to forge the Volley Gun.[Cost: 0-40~]</text>
+		  <event load="STORAGE_CHECK_CREATE_FM_RVS_AC_CHARGE"/>
+		</choice>
+
+		<choice req="FM_RVS_AC_CHARGE_LIST_ANY" lvl="0" blue="false" hidden="true" max_group="10">
+		  <text>You must have two to four Autocannon 1s to forge this weapon.</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
 
     <!--Back to main craft menu-->
     <choice req="pilot" lvl="1" max_group="20" hidden="true" blue="false">
@@ -3447,6 +3458,64 @@
     </choice>
   </event>
 
+  <event name="STORAGE_CHECK_CREATE_FM_RVS_AC_CHARGE">
+	  <checkCargo/>
+    <eventAlias name="FM_FORGE_WEAPON_LOAD" once="true">STORAGE_CHECK_CREATE_LOAD</eventAlias>
+	  <text>Currently viewing the Volley Gun.</text>
+	  <choice hidden="false" req="AC_1_COUNT" lvl="4" blue="false">
+	    <text>Craft the Volley Gun using 4 AC 1s</text>
+	    <event>
+	      <text>Proceed with crafting?</text>
+	      <weapon name="FM_RVS_AC_CHARGE"/>
+				<item_modify>
+					<item type="scrap" min="-0" max="-0"/>
+				</item_modify>
+	      <choice hidden="true">
+	        <text>Continue...</text>
+					<event>
+						<loadEvent>REMOVE_AC4</loadEvent>
+					</event>
+	      </choice>
+	    </event>
+	  </choice>
+		<choice hidden="false" req="AC_1_COUNT" lvl="3" blue="false">
+	    <text>Craft the Volley Gun using 3 AC 1s</text>
+	    <event>
+	      <text>Proceed with crafting?</text>
+	      <weapon name="FM_RVS_AC_CHARGE"/>
+	      <item_modify>
+					<item type="scrap" min="-20" max="-20"/>
+				</item_modify>
+	      <choice hidden="true">
+	        <text>Continue...</text>
+					<event>
+						<loadEvent>REMOVE_AC3</loadEvent>
+					</event>
+	      </choice>
+	    </event>
+	  </choice>
+		<choice hidden="false" req="AC_1_COUNT" lvl="2" blue="false">
+	    <text>Craft the Volley Gun using 2 AC 1s</text>
+	    <event>
+	      <text>Proceed with crafting?</text>
+	      <weapon name="FM_RVS_AC_CHARGE"/>
+	      <item_modify>
+					<item type="scrap" min="-40" max="-40"/>
+				</item_modify>
+	      <choice hidden="true">
+	        <text>Continue...</text>
+					<event>
+						<loadEvent>REMOVE_AC2</loadEvent>
+					</event>
+	      </choice>
+	    </event>
+	  </choice>
+	  <choice hidden="false">
+	    <text>Nevermind.</text>
+	    <event load="STORAGE_CHECK_CREATE_EXPLOSIVES_LOAD"/>
+	  </choice>
+	</event>
+
 </FTL>
 
 
@@ -3660,87 +3729,87 @@
 
   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
   <mod:findName type = "event" name = "COMBAT_CHECK_TOGGLE">
-    <mod-append:choice req="FM_FOCUS_FUELED_1" lvl="1" max_group="600" hidden="true" blue="false">
+    <mod-append:choice req="FM_FOCUS_FUELED_1" lvl="1" hidden="true" blue="false">
       <text>(Amp Pinpoint) Set the state of the weapon. [Current power: 2]</text>
       <event load="FM_COMBAT_CHECK_AMP_FOCUS_1"/>
     </mod-append:choice>
-    <mod-append:choice req="FM_FOCUS_FUELED_2" lvl="1" max_group="601" hidden="true" blue="false">
+    <mod-append:choice req="FM_FOCUS_FUELED_2" lvl="1" hidden="true" blue="false">
       <text>(Amp Pinpoint) Set the state of the weapon. [Current power: 2]</text>
       <event load="FM_COMBAT_CHECK_AMP_FOCUS_2"/>
     </mod-append:choice>
-    <mod-append:choice req="FM_FOCUS_FUELED_3" lvl="1" max_group="602" hidden="true" blue="false">
+    <mod-append:choice req="FM_FOCUS_FUELED_3" lvl="1" hidden="true" blue="false">
       <text>(Amp Pinpoint) Set the state of the weapon. [Current power: 3]</text>
       <event load="FM_COMBAT_CHECK_AMP_FOCUS_3"/>
     </mod-append:choice>
-    <mod-append:choice req="FM_FOCUS_FUELED_4" lvl="1" max_group="603" hidden="true" blue="false">
+    <mod-append:choice req="FM_FOCUS_FUELED_4" lvl="1" hidden="true" blue="false">
       <text>(Amp Pinpoint) Set the state of the weapon. [Current power: 3]</text>
       <event load="FM_COMBAT_CHECK_AMP_FOCUS_4"/>
     </mod-append:choice>
-    <mod-append:choice req="FM_FOCUS_FUELED_5" lvl="1" max_group="604" hidden="true" blue="false">
+    <mod-append:choice req="FM_FOCUS_FUELED_5" lvl="1" hidden="true" blue="false">
       <text>(Amp Pinpoint) Set the state of the weapon. [Current power: 4]</text>
       <event load="FM_COMBAT_CHECK_AMP_FOCUS_5"/>
     </mod-append:choice>
-    <mod-append:choice req="FM_ANCALAGON_DEFEND" lvl="1" max_group="605" hidden="true" blue="false">
+    <mod-append:choice req="FM_ANCALAGON_DEFEND" lvl="1" hidden="true" blue="false">
       <text>(Ancalagon Battle Drone) Set the state of the drone. [Current mode: Anti-Person]</text>
       <event load="FM_COMBAT_CHECK_FM_ANCALAGON_DEFEND"/>
     </mod-append:choice>
-    <mod-append:choice req="FM_ANCALAGON_BATTLE" lvl="1" max_group="606" hidden="true" blue="false">
+    <mod-append:choice req="FM_ANCALAGON_BATTLE" lvl="1" hidden="true" blue="false">
       <text>(Ancalagon Battle Drone) Set the state of the drone. [Current mode: Boarder]</text>
       <event load="FM_COMBAT_CHECK_FM_ANCALAGON_BATTLE"/>
     </mod-append:choice>
-    <mod-append:choice req="FM_COMBAT_2_LASER_PLAYER" lvl="1" max_group="605" hidden="true" blue="false">
+    <mod-append:choice req="FM_COMBAT_2_LASER_PLAYER" lvl="1" hidden="true" blue="false">
       <text>(Combat Drone 2†) Set the state of the drone. [Current mode: Laser]</text>
       <event load="FM_COMBAT_CHECK_COMBAT2_LASER_PLAYER"/>
     </mod-append:choice>
-    <mod-append:choice req="FM_COMBAT_2_BEAM_PLAYER" lvl="1" max_group="606" hidden="true" blue="false">
+    <mod-append:choice req="FM_COMBAT_2_BEAM_PLAYER" lvl="1" hidden="true" blue="false">
       <text>(Combat Drone 2†) Set the state of the drone. [Current mode: Beam]</text>
       <event load="FM_COMBAT_CHECK_COMBAT2_BEAM_PLAYER"/>
     </mod-append:choice>
-    <mod-append:choice req="TWISTED_YINYANG_BATTLE" lvl="1" max_group="607" hidden="true" blue="false">
+    <mod-append:choice req="TWISTED_YINYANG_BATTLE" lvl="1" hidden="true" blue="false">
       <text>(Twisted YinYang Drone) Set the state of the drone. [Current mode: Anti-Person]</text>
       <event load="FM_COMBAT_CHECK_YINYANG_BATTLE"/>
     </mod-append:choice>
-    <mod-append:choice req="TWISTED_YINYANG_BOARDER" lvl="1" max_group="608" hidden="true" blue="false">
+    <mod-append:choice req="TWISTED_YINYANG_BOARDER" lvl="1" hidden="true" blue="false">
       <text>(Twisted YinYang Drone) Set the state of the drone. [Current mode: Boarder]</text>
       <event load="FM_COMBAT_CHECK_YINYANG_BOARDER"/>
     </mod-append:choice>
-    <mod-append:choice req="TWISTED_BATTLETOG2_DEFEND" lvl="1" max_group="609" hidden="true" blue="false">
+    <mod-append:choice req="TWISTED_BATTLETOG2_DEFEND" lvl="1" hidden="true" blue="false">
       <text>(Twisted Battle Drone II) Set the state of the drone. [Current mode: Anti-Person]</text>
       <event load="FM_COMBAT_CHECK_BATTLETOG2_BATTLE"/>
     </mod-append:choice>
-    <mod-append:choice req="TWISTED_BATTLETOG2_BOARDER" lvl="1" max_group="610" hidden="true" blue="false">
+    <mod-append:choice req="TWISTED_BATTLETOG2_BOARDER" lvl="1" hidden="true" blue="false">
       <text>(Twisted Battle Drone II) Set the state of the drone. [Current mode: Boarder]</text>
       <event load="FM_COMBAT_CHECK_BATTLETOG2_BOARDER"/>
     </mod-append:choice>
-    <mod-append:choice req="TWISTED_SURGEON_BATTLE" lvl="1" max_group="611" hidden="true" blue="false">
+    <mod-append:choice req="TWISTED_SURGEON_BATTLE" lvl="1" hidden="true" blue="false">
       <text>(Twisted Surgeon) Set the state of the drone. [Current mode: Defensive]</text>
       <event load="FM_COMBAT_CHECK_SURGEON_DEFENSE"/>
     </mod-append:choice>
-    <mod-append:choice req="TWISTED_SURGEON_BOARDER" lvl="1" max_group="612" hidden="true" blue="false">
+    <mod-append:choice req="TWISTED_SURGEON_BOARDER" lvl="1" hidden="true" blue="false">
       <text>(Twisted Surgeon) Set the state of the drone. [Current mode: Boarding]</text>
       <event load="FM_COMBAT_CHECK_SURGEON_BOARDER"/>
     </mod-append:choice>
-    <mod-append:choice req="FM_GATLING_ANCIENT" lvl="1" max_group="613" hidden="true" blue="false">
+    <mod-append:choice req="FM_GATLING_ANCIENT" lvl="1" hidden="true" blue="false">
       <text>(God Killer) Set the state of the God Killer. [Current mode: Hull]</text>
       <event load="FM_COMBAT_CHECK_FM_GATLING_ANCIENT_HULL"/>
     </mod-append:choice>
-    <mod-append:choice req="FM_GATLING_ANCIENT_PHOTON" lvl="1" max_group="614" hidden="true" blue="false">
+    <mod-append:choice req="FM_GATLING_ANCIENT_PHOTON" lvl="1" hidden="true" blue="false">
       <text>(God Killer) Set the state of the God Killer. [Current mode: Photon]</text>
       <event load="FM_COMBAT_CHECK_FM_GATLING_ANCIENT_PHOTON"/>
     </mod-append:choice>
-    <mod-append:choice req="FM_GATLING_ANCIENT_ION" lvl="1" max_group="615" hidden="true" blue="false">
+    <mod-append:choice req="FM_GATLING_ANCIENT_ION" lvl="1" hidden="true" blue="false">
       <text>(God Killer) Set the state of the God Killer. [Current mode: Ion]</text>
       <event load="FM_COMBAT_CHECK_FM_GATLING_ANCIENT_ION"/>
     </mod-append:choice>
-    <mod-append:choice req="FM_GATLING_ANCIENT_YES" lvl="1" max_group="616" hidden="true" blue="false">
+    <mod-append:choice req="FM_GATLING_ANCIENT_YES" lvl="1" hidden="true" blue="false">
       <text>(God Killer) Set the state of the God Killer. [Current mode: Yes]</text>
       <event load="FM_COMBAT_CHECK_FM_GATLING_ANCIENT_YES"/>
     </mod-append:choice>
     <!-- Move other menus example options to the bottom -->
-    <mod:findWithChildLike type="choice" child-type="text">
+    <!--<mod:findWithChildLike type="choice" child-type="text">
       <mod:selector>Return to main combat menu.</mod:selector>
       <mod:setAttributes req="pilot" lvl="1" max_group="998" blue="false"/>
-    </mod:findWithChildLike>
+    </mod:findWithChildLike>-->
   </mod:findName>
 
   <!--COMBAT CHECKS EVENTS, FOR THE FOCUS AMP BEAM

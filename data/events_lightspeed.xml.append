@@ -605,60 +605,62 @@
 		Dominant Faction: N/A
 		Rebel Threat Level: Low
 
-		An abandoned sector owned by C.U.R.A.</text>
-		<playSound>lightspeed</playSound>
-		<choice hidden="true">
-			<text>Exit Hyperspeed.</text>
-			<event load="FM_START_TWISTED"/>
-		</choice>
-		<choice hidden="true" req="COORDS" blue="false">
-			<text>Reroute.</text>
-			<event load="REROUTE_MENU"/>
-		</choice>
-	</event>
+		An abandoned sector owned by C.U.R.A.
+	</text>
+	<playSound>lightspeed</playSound>
+	<choice hidden="true">
+		<text>Exit Hyperspeed.</text>
+		<event load="FM_START_TWISTED"/>
+	</choice>
+	<choice hidden="true" req="COORDS" blue="false">
+		<text>Reroute.</text>
+		<event load="REROUTE_MENU"/>
+	</choice>
+</event>
 
-	<mod:findName type = "event" name = "REROUTE_MENU">
-		<mod-append:choice hidden="true" req="coords_twisted" blue="false" max_group="620">
-			<text>Jump to the Twisted Sector.</text>
-			<event load="LIGHTSPEED_SECTOR_WARP_TWISTED"/>
-		</mod-append:choice>
-	</mod:findName>
+<mod:findName type = "event" name = "REROUTE_MENU">
+	<mod-append:choice hidden="true" req="coords_twisted" blue="false" max_group="620">
+		<text>Jump to the Twisted Sector.</text>
+		<event load="LIGHTSPEED_SECTOR_WARP_TWISTED"/>
+	</mod-append:choice>
+</mod:findName>
 
-	<mod:findName type = "event" name = "REROUTE_MENU_LASTSTAND">
-		<mod-append:choice hidden="true" req="coords_twisted" blue="false" max_group="620">
-			<text>Jump to the Twisted Sector.</text>
-			<event load="LIGHTSPEED_SECTOR_WARP_TWISTED"/>
-		</mod-append:choice>
-	</mod:findName>
+<mod:findName type = "event" name = "REROUTE_MENU_LASTSTAND">
+	<mod-append:choice hidden="true" req="coords_twisted" blue="false" max_group="620">
+		<text>Jump to the Twisted Sector.</text>
+		<event load="LIGHTSPEED_SECTOR_WARP_TWISTED"/>
+	</mod-append:choice>
+</mod:findName>
 
-	<event name="LIGHTSPEED_SECTOR_WARP_TWISTED">
-		<text>You are about to reroute. Below is the Atlas entry for this sector.
-			Name: Twisted Sector
-			Type: Neutral
-			Unique: True
-			Dominant Faction: N/A
-			Rebel Threat Level: Low
+<event name="LIGHTSPEED_SECTOR_WARP_TWISTED">
+	<text>You are about to reroute. Below is the Atlas entry for this sector.
+		Name: Twisted Sector
+		Type: Neutral
+		Unique: True
+		Dominant Faction: N/A
+		Rebel Threat Level: Low
 
-			INSERT LORE HERE
-			[Warning: Rerouting means you will miss any quests that would have spawned in the next sector.]</text>
+		INSERT LORE HERE
+		[Warning: Rerouting means you will miss any quests that would have spawned in the next sector.]
+	</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="coords_twisted" op="set" val="0"/>
 			<choice hidden="true">
-				<text>Continue with the jump.</text>
-				<event>
-					<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
-					<variable name="coords_twisted" op="set" val="0"/>
-					<choice hidden="true">
-						<text>Continue...</text>
-						<event load="JUMP_TO_TWISTED"/>
-					</choice>
-				</event>
-			</choice>
-			<choice hidden="true">
-				<text>Nevermind.</text>
-				<event>
-					<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
-				</event>
+				<text>Continue...</text>
+				<event load="JUMP_TO_TWISTED"/>
 			</choice>
 		</event>
-		<event name="JUMP_TO_TWISTED">
-			<secretSector/>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
 		</event>
+	</choice>
+</event>
+<event name="JUMP_TO_TWISTED">
+	<secretSector/>
+</event>

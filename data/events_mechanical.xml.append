@@ -261,7 +261,7 @@
 		<queueEvent>FORGEMASTER_PHONE_EVENT_LOAD</queueEvent>
 	</event>
 	<event name="OVERCHARMED_MESSAGE">
-		<text>As you finish installing your modules you notice that you have exeeded the structual limit of the modular hull, causing instability. It appears that due to those structural instabilities it has become quite unstable. Lets hope it won't impeede you too much.</text>
+		<text>As you finish installing your modules you notice that you have exeeded the structural limit of the modular hull, causing instability. It appears that due to that it has become very prone to exploding. Lets hope it won't impeede you too much.</text>
 	</event>
 
 	<event name="OVERCHARMED_BOOM">

@@ -3706,6 +3706,25 @@ try this later
 
 </FTL>
 
+<FTL><!--AUTOCANNONS-->
+	<animSheet name="rvs_ac_charger_charges" w="156" h="79" fw="39" fh="79">weapons_autocannon/fm_rvs_volley_gun_1_charges.png</animSheet>
+	<anim name="rvs_ac_charger_charges">
+		<sheet>rvs_ac_charger_charges</sheet>
+		<desc length="4" x="0" y="0"/>
+		<time>1.0</time>
+	</anim>
+	<animSheet name="rvs_ac_charger" w="663" h="79" fw="39" fh="79">weapons_autocannon/fm_rvs_volley_gun_1_strip17.png</animSheet>
+	<weaponAnim name="rvs_ac_charger">
+		<sheet>rvs_ac_charger</sheet>
+		<desc length="17" x="0" y="0"/>
+		<chargedFrame>4</chargedFrame>
+		<fireFrame>5</fireFrame>
+		<firePoint  x="30" y="11" charge="6"/>
+		<mountPoint x="5" y="64"/>
+		<boost>rvs_ac_charger_charges</boost>
+	</weaponAnim>
+</FTL>
+
 <FTL><!-- FLAK-->
 	<animSheet name="fm_shotgun_anomaly" w="296" h="53" fw="37" fh="53">weapon_flak/fm_shotgun_anomaly.png</animSheet>
 	<weaponAnim name="fm_shotgun_anomaly">
