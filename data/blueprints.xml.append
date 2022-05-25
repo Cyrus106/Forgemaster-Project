@@ -1690,8 +1690,8 @@
 		<name>The Keymaster</name>
 		<desc>This odd Kestrel is looking for the Gatekeeper, and will stop at nothing to find them.</desc>
 		<systemList>
-			<artillery power="1" room="4" start="true" weapon="FM_CHAINGUN_ION" img="nothing" />
-			<artillery power="1" room="3" start="true" weapon="FM_CHAINGUN_ION" img="nothing" />
+			<artillery power="1" room="4" start="false" weapon="FM_CHAINGUN_ION" img="nothing" />
+			<artillery power="1" room="3" start="false" weapon="FM_CHAINGUN_ION" img="nothing" />
 			<battery power="1" max="2" room="8" start="false" img="room_battery_11" />
 			<cloaking power="1" room="11" start="false" img="room_cloaking_2" />
 			<!--<clonebay power="1" room="13" start="false">
@@ -1746,9 +1746,9 @@
 				</slot>
 			</weapons>
 		</systemList>
-		<weaponSlots>2</weaponSlots>
+		<weaponSlots>4</weaponSlots>
 		<droneSlots>2</droneSlots>
-		<weaponList missiles="0" count="2">
+		<weaponList missiles="0" count="4">
 			<weapon name="ION_PIERCE_1" />
 			<weapon name="BEAM_1" />
 		</weaponList>
@@ -4243,7 +4243,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<cooldown>3</cooldown>
-		<speed>90</speed>
+		<speed>140</speed>
 		<accuracyMod>100</accuracyMod>
 
 		<statBoosts>
@@ -9896,14 +9896,14 @@
 		<length>140</length>
 		<statBoosts>
 			<statBoost name="trueHealAmount">
-				<boostType>SET</boostType>
+				<boostType>FLAT</boostType>
 				<amount>-1</amount>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
 				<droneTarget>CREW</droneTarget>
 				<duration>60</duration>
 				<boostAnim>pheromones_f</boostAnim>
-				<blackList>
+				<blackList load="FM_PLSNOEFFECT">
 					<fm_ancalagon_battle/>
 					<fm_crystal_red/>
 					<fm_crystal_blue/>
@@ -13212,7 +13212,172 @@
     </missSounds>
     <weaponArt>rvs_ac_charger</weaponArt>
     <iconImage>laser</iconImage>
-</weaponBlueprint>
+	</weaponBlueprint>
+
+	<!-- CORROSIVE WEAPONS -->
+
+	<weaponBlueprint name="FM_CORROSIVE_1">
+		<type>LASER</type>
+		<title>Corrosive Laser I</title>
+		<short>Corrosive I</short>
+		<desc>This beauty of science and the dedicated research of the Shell race imbues it's lasers with a special property, corroding crew hit.</desc>
+		<tooltip>This beauty of science and the dedicated research of the Shell race imbues it's lasers with a special property, corroding crew hit.</tooltip>
+		<damage>1</damage>
+		<persDamage>-1</persDamage>
+		<hullBust>1</hullBust>
+		<shots>1</shots>
+		<breachChance>3</fireChance>
+		<cooldown>10</cooldown>
+		<power>1</power>
+		<cost>60</cost>
+		<bp>2</bp>
+		<rarity>0</rarity>
+		<statBoosts>
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<amount>-3</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<duration>15</duration>
+				<boostAnim>bio_poison</boostAnim>
+				<maxStacks>1</maxStacks>
+				<blackList>
+					<FM_PLSNOEFFECT/>
+				</blackList>
+				<priority>-100</priority>
+			</statBoost>
+		</statBoosts>
+		<image>fm_abduct_laser_proj</image>
+		<launchSounds>
+			<sound>lightLaser1</sound>
+			<sound>lightLaser2</sound>
+			<sound>lightLaser3</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_corrosive_hull_1</weaponArt>
+		<iconImage>laser</iconImage>
+	</weaponBlueprint>
+
+
+	<weaponBlueprint name="FM_CORROSIVE_2">
+		<type>LASER</type>
+		<title>Corrosive Laser II</title>
+		<short>Corrosive II</short>
+		<desc>This beauty of science and the dedicated research of the Shell race imbues it's lasers with a special property, corroding crew hit.</desc>
+		<tooltip>This beauty of science and the dedicated research of the Shell race imbues it's lasers with a special property, corroding crew hit.</tooltip>
+		<damage>1</damage>
+		<persDamage>-1</persDamage>
+		<hullBust>1</hullBust>
+		<shots>2</shots>
+		<breachChance>3</fireChance>
+		<cooldown>16</cooldown>
+		<power>2</power>
+		<cost>70</cost>
+		<bp>2</bp>
+		<rarity>0</rarity>
+		<statBoosts>
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<amount>-3.5</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<duration>15</duration>
+				<boostAnim>bio_poison</boostAnim>
+				<blackList>
+					<FM_PLSNOEFFECT/>
+				</blackList>
+				<priority>-100</priority>
+			</statBoost>
+		</statBoosts>
+		<image>fm_abduct_laser_proj</image>
+		<launchSounds>
+			<sound>lightLaser1</sound>
+			<sound>lightLaser2</sound>
+			<sound>lightLaser3</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_corrosive_hull_2</weaponArt>
+		<iconImage>laser</iconImage>
+	</weaponBlueprint>
+
+
+	<weaponBlueprint name="FM_CORROSIVE_3">
+		<type>LASER</type>
+		<title>Corrosive Laser III</title>
+		<short>Corrosive III</short>
+		<desc>This beauty of science and the dedicated research of the Shell race imbues it's lasers with a special property, corroding crew hit.</desc>
+		<tooltip>This beauty of science and the dedicated research of the Shell race imbues it's lasers with a special property, corroding crew hit.</tooltip>
+		<damage>1</damage>
+		<persDamage>-1</persDamage>
+		<hullBust>1</hullBust>
+		<shots>3</shots>
+		<breachChance>4</fireChance>
+		<cooldown>20</cooldown>
+		<power>3</power>
+		<cost>80</cost>
+		<bp>2</bp>
+		<rarity>0</rarity>
+		<statBoosts>
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<amount>-4</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<duration>15</duration>
+				<boostAnim>bio_poison</boostAnim>
+				<blackList>
+					<FM_PLSNOEFFECT/>
+				</blackList>
+				<priority>-100</priority>
+			</statBoost>
+		</statBoosts>
+		<image>fm_abduct_laser_proj</image>
+		<launchSounds>
+			<sound>lightLaser1</sound>
+			<sound>lightLaser2</sound>
+			<sound>lightLaser3</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_corrosive_hull_3</weaponArt>
+		<iconImage>laser</iconImage>
+	</weaponBlueprint>
+
 
 </FTL>
 
