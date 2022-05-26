@@ -10494,7 +10494,7 @@
     <sp>0</sp>
     <fireChance>1</fireChance>
     <breachChance>2</breachChance>
-    <cooldown>11</cooldown>
+    <cooldown>12</cooldown>
     <power>3</power>
     <cost>80</cost>
     <bp>7</bp>
@@ -10503,7 +10503,7 @@
     <image>beam_contact</image>
     <boost>
         <type>damage</type>
-        <amount>1.5</amount>
+        <amount>1.25</amount>
         <count>999</count>
     </boost>
     <launchSounds>
