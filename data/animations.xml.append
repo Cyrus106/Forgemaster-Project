@@ -3733,7 +3733,7 @@ try this later
 		<boost>rvs_ac_charger_charges</boost>
 	</weaponAnim>
 	<weaponAnim name="rvs_ac_charger_caseless">
-		<sheet>rvs_ac_charge_caselessr</sheet>
+		<sheet>rvs_ac_charger_caseless</sheet>
 		<desc length="17" x="0" y="0"/>
 		<chargedFrame>4</chargedFrame>
 		<fireFrame>5</fireFrame>
