@@ -359,7 +359,6 @@
 		<desc length="9" x="0" y="0"/>
 		<time>0.5</time>
 	</anim>
-
 	<anim name="fm_ion_instant_1_death_left">
 		<sheet>explosion_fm_ion_instant_1_death</sheet>
 		<desc length="9" x="0" y="0"/>
@@ -367,6 +366,49 @@
 	</anim>
 </FTL>
 
+<FTL>
+	<animSheet name="fm_instant" w="1" h="1" fw="1" fh="1">people/fm_ion_instant_base.png</animSheet>
+	<anim name="fm_ion_instant_2_death_right">
+		<sheet>fm_instant</sheet>
+		<desc length="1" x="0" y="0"/>
+		<time>0</time>
+	</anim>
+	<anim name="fm_ion_instant_2_death_left">
+		<sheet>fm_instant</sheet>
+		<desc length="1" x="0" y="0"/>
+		<time>0</time>
+	</anim>
+	<anim name="fm_ion_instant_3_death_right">
+		<sheet>fm_instant</sheet>
+		<desc length="1" x="0" y="0"/>
+		<time>0</time>
+	</anim>
+	<anim name="fm_ion_instant_3_death_left">
+		<sheet>fm_instant</sheet>
+		<desc length="1" x="0" y="0"/>
+		<time>0</time>
+	</anim>
+	<anim name="fm_ion_instant_4_death_right">
+		<sheet>fm_instant</sheet>
+		<desc length="1" x="0" y="0"/>
+		<time>0</time>
+	</anim>
+	<anim name="fm_ion_instant_4_death_left">
+		<sheet>fm_instant</sheet>
+		<desc length="1" x="0" y="0"/>
+		<time>0</time>
+	</anim>
+	<anim name="fm_repair_hull_death_right">
+		<sheet>fm_instant</sheet>
+		<desc length="1" x="0" y="0"/>
+		<time>0</time>
+	</anim>
+	<anim name="fm_repair_hull_death_left">
+		<sheet>fm_instant</sheet>
+		<desc length="1" x="0" y="0"/>
+		<time>0</time>
+	</anim>
+</FTL>
 <FTL><!--ION ANOMALY ANIMATIONS -->
 
 	<animSheet name="fm_ion_anomaly_crew" w="280" h="105" fw="35" fh="35">people/fm_ion_anomaly_crew_base.png</animSheet>

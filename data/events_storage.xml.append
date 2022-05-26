@@ -1185,8 +1185,27 @@
       <event load="OPTION_INVALID"/>
     </choice>
 
+    <choice req="FM_FOCUS_ENERGY_CONS_LIST" lvl="1" blue="false" hidden="true" max_group="6">
+      <text>Replace the Dirk's power source with a Conservative Energy core to forge the 'Maple' Pinpoint.</text>
+      <event load="STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_CONS"/>
+    </choice>
 
-    <choice req="pilot" lvl="1" max_group="8" hidden="true" blue="false">
+    <choice req="FM_FOCUS_ENERGY_CONS_LIST" lvl="0" blue="false" hidden="true" max_group="6">
+      <text>You must have a Dirk pinpoint and Conservative Energy to forge this weapon.</text>
+      <event load="OPTION_INVALID"/>
+    </choice>
+
+    <choice req="FM_FOCUS_ADAPT_LIST" lvl="1" blue="false" hidden="true" max_group="7">
+      <text>Combine the Suyari beam and Cinquedea pinpoint to forge the Omiyari focus.</text>
+      <event load="STORAGE_CHECK_CREATE_FM_FOCUS_ADAPT"/>
+    </choice>
+
+    <choice req="FM_FOCUS_ADAPT_LIST " lvl="0" blue="false" hidden="true" max_group="7">
+      <text>You must have a Suyari beam and Cinquedea pinpoint to forge this weapon.</text>
+      <event load="OPTION_INVALID"/>
+    </choice>
+
+    <choice req="pilot" lvl="1" max_group="20" hidden="true" blue="false">
       <text>Nevermind.</text>
       <event load="STORAGE_CHECK_CREATE_LOAD"/>
     </choice>
@@ -2619,7 +2638,7 @@
     <checkCargo/>
     <text>Currently viewing the 'Ebony' Pinpoint.</text>
     <choice hidden="false"  blue="false">
-      <text>Craft the ''Ebony' Pinpoint.</text>
+      <text>Craft the 'Ebony' Pinpoint.</text>
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_FOCUS_ENERGY_1"/>
@@ -2719,6 +2738,54 @@
                 </choice>
               </event>
             </choice>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice hidden="false">
+      <text>Nevermind.</text>
+      <event load="STORAGE_CHECK_CREATE_PINPOINT_LOAD"/>
+    </choice>
+  </event>
+
+  <event name="STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_CONS">
+    <checkCargo/>
+    <text>Currently viewing the 'Maple' Pinpoint.</text>
+    <choice hidden="false" req="FM_FOCUS_ENERGY_CONS_LIST" blue="false">
+      <text>Craft the 'Maple' Pinpoint.</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <weapon name="FM_FOCUS_ENERGY_CONS"/>
+        <removeItem>FOCUS_1</removeItem>
+        <removeItem>ENERGY_CONSERVATIVE</removeItem>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice hidden="false">
+      <text>Nevermind.</text>
+      <event load="STORAGE_CHECK_CREATE_PINPOINT_LOAD"/>
+    </choice>
+  </event>
+
+  <event name="STORAGE_CHECK_CREATE_FM_FOCUS_ADAPT">
+    <checkCargo/>
+    <text>Currently viewing the Omiyari Pinpoint.</text>
+    <choice hidden="false" req="FM_FOCUS_ADAPT_LIST" blue="false">
+      <text>Craft the Omiyari Pinpoint.</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <weapon name="FM_FOCUS_ADAPT"/>
+        <removeItem>BEAM_ADAPT</removeItem>
+        <removeItem>FOCUS_CHAIN</removeItem>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
           </event>
         </choice>
       </event>

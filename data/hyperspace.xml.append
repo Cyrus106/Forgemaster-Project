@@ -591,7 +591,6 @@
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED6">
 			<hiddenAug>SHIP_GHOST</hiddenAug>
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
-			<hiddenAug>LAB_VAGABOND_STABLE</hiddenAug>
 			<hiddenAug>TWISTED_KESTREL_BOARDING_SPLITTER</hiddenAug>
 			<crewLimit>11</crewLimit>
 			<customReactor maxLevel="35">
@@ -2099,6 +2098,16 @@
 			<name>FOCUS_3</name>
 		</req>
 
+		<req name="FM_FOCUS_ENERGY_CONS_LIST"> <!--Dirk + conservative Energy-->
+		  <name>ENERGY_CONSERVATIVE</name>
+		  <name>FOCUS_1</name>
+		</req>
+
+		<req name="FM_FOCUS_ADAPT_LIST"> <!-- Suyari + Cinquedea Fucus-->
+		  <name>FOCUS_CHAIN</name>
+		  <name>BEAM_ADAPT</name>
+		</req>
+
 		<req name="FM_BEAM_ION_PIERCE_LIST1" type="all"> <!-- Ranseur + Basic Ion -->
 			<name>ION_1</name>
 			<name>BEAM_BREACH</name>
@@ -2910,7 +2919,8 @@
 			<name>FM_FOCUS_ENERGY_2_LIST</name>
 			<name>FM_FOCUS_ENERGY_2_LIST_PLUS</name>
 			<name>FM_FOCUS_ENERGY_3_LIST</name>
-
+			<name>FM_FOCUS_ENERGY_CONS_LIST</name>
+			<name>FM_FOCUS_ADAPT_LIST</name>
 		</req>
 
 		<req name="FM_PINPOINT_FORGE_LIST_STORAGE" type="all"> <!-- Do you have the ingredients for a Beam/Pinpoint weapon? If so, light up the category option BLUE in the crafting category menu! -->
@@ -4005,6 +4015,7 @@
 			<noClone>true</noClone>
 			<canTeleport>false</canTeleport>
 			<noSlot>true</noSlot>
+			<noAI>true</noAI>
 			<controllable>false</controllable>
 			<selectable>false</selectable>
 			<canPhaseThroughDoors>true</canPhaseThroughDoors>
@@ -4014,7 +4025,6 @@
 			<damageTakenMultiplier>0.0</damageTakenMultiplier>
 			<animBase>mantis</animBase>
 			<deathSounds>
-				<deathSound>energyDeath</deathSound>
 			</deathSounds>
 			<shootingSounds>
 				<shootingSound>mantisSpit1</shootingSound>
@@ -4291,6 +4301,7 @@
 			<canMan>false</canMan>
 			<noClone>true</noClone>
 			<noSlot>true</noSlot>
+			<noAI>true</noAI>
 			<controllable>false</controllable>
 			<selectable>false</selectable>
 			<resistsMindControl>true</resistsMindControl>
@@ -4302,7 +4313,7 @@
 			<damageTakenMultiplier>0.0</damageTakenMultiplier>
 			<animBase>mantis</animBase>
 			<deathSounds>
-				<deathSound>energyDeath</deathSound>
+				<deathSound>silence</deathSound>
 			</deathSounds>
 			<shootingSounds>
 				<shootingSound>mantisSpit1</shootingSound>
@@ -4337,6 +4348,7 @@
 			<canMan>false</canMan>
 			<noClone>true</noClone>
 			<noSlot>true</noSlot>
+			<noAI>true</noAI>
 			<controllable>false</controllable>
 			<selectable>false</selectable>
 			<canPhaseThroughDoors>true</canPhaseThroughDoors>
@@ -4346,7 +4358,7 @@
 			<damageTakenMultiplier>0.0</damageTakenMultiplier>
 			<animBase>mantis</animBase>
 			<deathSounds>
-				<deathSound>energyDeath</deathSound>
+				<deathSound>silence</deathSound>
 			</deathSounds>
 			<shootingSounds>
 				<shootingSound>mantisSpit1</shootingSound>
@@ -4377,6 +4389,7 @@
 			<canMan>false</canMan>
 			<noClone>true</noClone>
 			<noSlot>true</noSlot>
+			<noAI>true</noAI>
 			<controllable>false</controllable>
 			<selectable>false</selectable>
 			<canPhaseThroughDoors>true</canPhaseThroughDoors>
@@ -4388,7 +4401,7 @@
 			<damageTakenMultiplier>0.0</damageTakenMultiplier>
 			<animBase>mantis</animBase>
 			<deathSounds>
-				<deathSound>energyDeath</deathSound>
+				<deathSound>silence</deathSound>
 			</deathSounds>
 			<shootingSounds>
 				<shootingSound>mantisSpit1</shootingSound>
@@ -4419,6 +4432,7 @@
 			<canMan>false</canMan>
 			<noClone>true</noClone>
 			<noSlot>true</noSlot>
+			<noAI>true</noAI>
 			<controllable>false</controllable>
 			<canTeleport>false</canTeleport>
 			<resistsMindControl>true</resistsMindControl>
@@ -4430,7 +4444,7 @@
 			<damageTakenMultiplier>0.0</damageTakenMultiplier>
 			<animBase>mantis</animBase>
 			<deathSounds>
-				<deathSound>energyDeath</deathSound>
+				<deathSound>silence</deathSound>
 			</deathSounds>
 			<shootingSounds>
 				<shootingSound>mantisSpit1</shootingSound>
@@ -4461,6 +4475,7 @@
 			<canMan>false</canMan>
 			<noClone>true</noClone>
 			<noSlot>true</noSlot>
+			<noAI>true</noAI>
 			<controllable>false</controllable>
 			<canTeleport>false</canTeleport>
 			<resistsMindControl>true</resistsMindControl>
@@ -4472,7 +4487,7 @@
 			<damageTakenMultiplier>0.0</damageTakenMultiplier>
 			<animBase>mantis</animBase>
 			<deathSounds>
-				<deathSound>energyDeath</deathSound>
+				<deathSound>silence</deathSound>
 			</deathSounds>
 			<shootingSounds>
 				<shootingSound>mantisSpit1</shootingSound>
@@ -4536,6 +4551,7 @@
 			<canMan>false</canMan>
 			<noClone>true</noClone>
 			<noSlot>true</noSlot>
+			<noAI>true</noAI>
 			<controllable>false</controllable>
 			<selectable>false</selectable>
 			<canPhaseThroughDoors>true</canPhaseThroughDoors>
@@ -4575,6 +4591,7 @@
 			<canMan>false</canMan>
 			<noClone>true</noClone>
 			<noSlot>true</noSlot>
+			<noAI>true</noAI>
 			<controllable>false</controllable>
 			<selectable>false</selectable>
 			<canPhaseThroughDoors>true</canPhaseThroughDoors>
@@ -4629,7 +4646,7 @@
 				</temporaryEffect>
 			</powerEffect>
 			<deathSounds>
-				<deathSound>energyDeath</deathSound>
+				<deathSound>silence</deathSound>
 			</deathSounds>
 			<shootingSounds>
 				<shootingSound>mantisSpit1</shootingSound>
@@ -4659,6 +4676,7 @@
 			<canMan>false</canMan>
 			<noClone>true</noClone>
 			<noSlot>true</noSlot>
+			<noAI>true</noAI>
 			<controllable>false</controllable>
 			<selectable>false</selectable>
 			<canPhaseThroughDoors>true</canPhaseThroughDoors>
@@ -4675,7 +4693,7 @@
 				<shipFriendlyFire>true</shipFriendlyFire>
 			</powerEffect>
 			<deathSounds>
-				<deathSound>energyDeath</deathSound>
+				<deathSound>silence</deathSound>
 			</deathSounds>
 			<shootingSounds>
 				<shootingSound>mantisSpit1</shootingSound>
@@ -5285,6 +5303,7 @@
 			<canMan>false</canMan>
 			<noClone>true</noClone>
 			<noSlot>true</noSlot>
+			<noAI>true</noAI>
 			<controllable>false</controllable>
 			<selectable>false</selectable>
 			<canPhaseThroughDoors>true</canPhaseThroughDoors>
@@ -16182,15 +16201,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<statBoost name="powerRechargeMultiplier">
 					<boostType>FLAT</boostType>
 					<amount>1</amount>
-					<shipTarget>ORIGINAL_SHIP</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
-					<priority>0</priority>
-				</statBoost>
-
-				<statBoost name="powerRechargeMultiplier">
-					<boostType>FLAT</boostType>
-					<amount>0.5</amount>
-					<shipTarget>ORIGINAL_SHIP_OTHER</shipTarget>
+					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<priority>0</priority>
 				</statBoost>

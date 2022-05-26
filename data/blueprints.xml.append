@@ -9278,12 +9278,15 @@
 					<effectAnim>explosion_ion</effectAnim>
 					<selfHealth>-15</selfHealth>
 					<affectsSelf>true</affectsSelf>
-					<temporaryEffect>                                                                     <!-- Creates a temporary effect with the ability, modifying the crewmember's stats. Modified stats replace the original stats.-->
+					<temporaryEffect>                                                                         <!-- Creates a temporary effect with the ability, modifying the crewmember's stats. Modified stats replace the original stats.-->
 						<duration>2</duration>                                                            <!--Duration of the temporary effect.-->
 						<cooldownColor r="167" g="250" b="255"/>
+						<finishSounds enemy="true">       
+							<finishSound>mindControlEnd</finishSound>
+						</finishSounds>
 						<controllable>false</controllable>
-						<noAI>true</noAI>
 						<moveSpeedMultiplier>0</moveSpeedMultiplier>
+						<repairSpeed>-5</repairSpeed>
 						<canFight>false</canFight>
 						<canRepair>false</canRepair>
 						<canSabotage>false</canSabotage>
@@ -9291,6 +9294,7 @@
 						<effectAnim>mindcontrol</effectAnim>                       <!--Adds an additional animSheet on top of the normal crew sheet, and optionally hides the normal crew sheet.-->
 						<animFrame>0</animFrame>
 						<stunMultiplier>5.0</stunMultiplier>
+						<noAI>true</noAI>
 					</temporaryEffect>
 				</powerEffect>
 			</statBoost>
