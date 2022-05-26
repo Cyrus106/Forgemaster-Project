@@ -3619,6 +3619,27 @@ try this later
 		<mountPoint x="5" y="59"/>
 		<chargeImage>weapon_focus/fm_focus_energy_3_glow.png</chargeImage>
 	</weaponAnim>
+	
+	<animSheet name="fm_focus_energy_cons" w="510" h="54" fw="30" fh="54">weapon_focus/fm_focus_energy_cons.png</animSheet>
+	<weaponAnim name="fm_focus_energy_cons">
+		<sheet>fm_focus_energy_cons</sheet>
+		<desc length="17" x="0" y="0"/>
+		<chargedFrame>1</chargedFrame>
+		<fireFrame>2</fireFrame>
+		<firePoint  x="19" y="24"/>
+		<mountPoint x="5" y="40"/>
+	<chargeImage>weapon_focus/fm_focus_energy_cons_glow.png</chargeImage>
+	</weaponAnim>
+	
+	<animSheet name="fm_mini_yari" w="660" h="80" fw="30" fh="80">weapon_focus/fm_mini_yari.png</animSheet>
+	<weaponAnim name="fm_mini_yari">
+		<sheet>fm_mini_yari</sheet>
+		<desc length="22" x="0" y="0"/>
+		<chargedFrame>5</chargedFrame>
+		<fireFrame>6</fireFrame>
+		<firePoint  x="19" y="39"/>
+		<mountPoint x="2" y="59"/>
+	</weaponAnim>
 </FTL>
 
 <FTL><!-- MISSILES-->
