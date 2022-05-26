@@ -7259,7 +7259,7 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_MODULE_AERO">
-		<text>Install Inspirational Aerosols? [+100% power recharge speed for your crew and -30% for enemies on your ship. 5 can be installed and uses 3 upgrade notches]</text>
+		<text>Install Inspirational Aerosols? [+100% power recharge speed for your crew and -30% for enemies on your ship. +50% boost to allied crew on the enemy ship. and 5 can be installed and uses 3 upgrade notches]</text>
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Install the Inspirational Aerosols.</text>
 			<event>
@@ -9488,28 +9488,28 @@
 		</choice>
 		<!--Aerosols-->
 		<choice req="FM_MODULAR_HULL_AERO" lvl="1" max_lvl="1" blue="false" hidden="true">
-			<text>Inspirational Aerosols Module [on ship: +100% ally ability reload, -30% enemy ability reload]</text>
+			<text>Inspirational Aerosols Module [on ship: +100% ally ability reload, -30% enemy ability reload. +50% ability reload to allies on the enemy ship.]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_AERO" lvl="2" max_lvl="2" blue="false" hidden="true">
-			<text>Inspirational Aerosols Module(x2) [on ship: +200% ally ability reload, -51% enemy ability reload]</text>
+			<text>Inspirational Aerosols Module(x2) [on ship: +200% ally ability reload, -51% enemy ability reload. +100% ability reload to allies on the enemy ship.]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_AERO" lvl="3" max_lvl="3" blue="false" hidden="true">
-			<text>Inspirational Aerosols Module(x3) [on ship: +300% ally ability reload, -65.7% enemy ability reload]</text>
+			<text>Inspirational Aerosols Module(x3) [on ship: +300% ally ability reload, -65.7% enemy ability reload. +150% ability reload to allies on the enemy ship.]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_AERO" lvl="4" max_lvl="4" blue="false" hidden="true">
-			<text>Inspirational Aerosols Module(x4) [on ship: +400% ally ability reload, -76.99% enemy ability reload]</text>
+			<text>Inspirational Aerosols Module(x4) [on ship: +400% ally ability reload, -76.99% enemy ability reload. +200% ability reload to allies on the enemy ship.]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_AERO" lvl="5" max_lvl="5" blue="false" hidden="true">
-			<text>Inspirational Aerosols Module(x5) [on ship: +500% ally ability reload, -83.193% enemy ability reload]</text>
+			<text>Inspirational Aerosols Module(x5) [on ship: +500% ally ability reload, -83.193% enemy ability reload. +250% ability reload to allies on the enemy ship.]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<!--Respiration-->
 		<choice req="FM_MODULAR_HULL_RESPIRATION" lvl="1"  blue="false" hidden="true">
-			<text>Enhanced Respiration Grid Module [on ship: x0.8 suffocation, scales multiplicatively with o2 power]</text>
+			<text>Enhanced Respiration Grid Module [on ship: x0.8 suffocation, scales multiplicatively with o2 power.]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<!--scrap-->

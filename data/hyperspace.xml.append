@@ -591,6 +591,7 @@
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED6">
 			<hiddenAug>SHIP_GHOST</hiddenAug>
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>LAB_VAGABOND_STABLE</hiddenAug>
 			<hiddenAug>TWISTED_KESTREL_BOARDING_SPLITTER</hiddenAug>
 			<crewLimit>11</crewLimit>
 			<customReactor maxLevel="35">
@@ -16181,7 +16182,15 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<statBoost name="powerRechargeMultiplier">
 					<boostType>FLAT</boostType>
 					<amount>1</amount>
-					<shipTarget>ALL</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<priority>0</priority>
+				</statBoost>
+
+				<statBoost name="powerRechargeMultiplier">
+					<boostType>FLAT</boostType>
+					<amount>0.5</amount>
+					<shipTarget>ORIGINAL_SHIP_OTHER</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<priority>0</priority>
 				</statBoost>
