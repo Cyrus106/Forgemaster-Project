@@ -16179,9 +16179,17 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<aug name="FM_MODULAR_HULL_AERO">
 			<statBoosts>
 				<statBoost name="powerRechargeMultiplier">
-					<boostType>FLAT</boostType>
-					<amount>1</amount>
-					<shipTarget>ALL</shipTarget>
+					<boostType>MULT</boostType>
+					<amount>0.5</amount>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<priority>0</priority>
+				</statBoost>
+				
+				<statBoost name="powerRechargeMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.7</amount>
+					<shipTarget>ORIGINAL_SHIP_OTHER</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<priority>0</priority>
 				</statBoost>
