@@ -10405,6 +10405,113 @@
 		</spawnCrew>
 
 	</weaponBlueprint>
+	
+	<weaponBlueprint name="FM_FOCUS_ENERGY_CONS">
+		<type>BEAM</type>
+		<tip>tip_focusenergy</tip>
+		<title>'Maple' Pinpoint</title>
+		<short>'Maple'</short>
+		<desc>A combination of Energy and Pinpoint technology. Deals no system damage, but deals 2 ion damage on a room hit and uses no power. May start fires.</desc>
+		<descriptionOverride>A combination of Energy and Pinpoint technology. Deals no system damage, but deals 2 ion damage on a room hit and uses no power. May start fires.
+
+			Stats:
+			Required Power: 1
+			Charge Time: 14 seconds
+
+			Beam Length: 1
+			Beam Speed: 1
+
+			Base Hull Damage: 2
+			Total Crew Damage: 30
+			Ion Damage: 2 (Rooms Only)
+
+			Fire Chance: 20%
+			Stun Chance: 100% (3 seconds long)
+
+			Buy/Sell Price: 120~/60~
+		</descriptionOverride>
+		<tooltip>One damage per room beam weapon</tooltip>
+		<tooltipOverride>Required Power: 1
+			Charge Time: 14 seconds
+
+			Beam Length: 1
+			Beam Speed: 1
+
+			Base Hull Damage: 2
+			Total Crew Damage: 30
+			Ion Damage: 2 (Rooms Only)
+
+			Fire Chance: 20%
+			Stun Chance: 100% (3 seconds long)
+		</tooltipOverride>
+		<damage>2</damage>
+		<sysDamage>-2</sysDamage>
+		<sp>0</sp>
+		<fireChance>2</fireChance>
+		<breachChance>0</breachChance>
+		<cooldown>14</cooldown>
+		<color>
+			<r>53</r>
+			<g>255</g>
+			<b>0</b>
+		</color>
+		<speed>1</speed>
+		<power>0</power>
+		<cost>120</cost>
+		<bp>2</bp>
+		<rarity>0</rarity>
+		<image>beam_contact</image>
+		<length>1</length>
+		<launchSounds>
+			<sound>focus_weak</sound>
+		</launchSounds>
+		<weaponArt>fm_focus_energy_cons</weaponArt>
+		<iconImage>beam</iconImage>
+		<spawnCrew>
+			<race>fm_ion_instant_2</race>
+			<number>1</number>
+			<noSlot>true</noSlot>
+			<statBoosts>
+				<statBoost name="noClone">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+			</statBoosts>
+		</spawnCrew>
+	</weaponBlueprint>
+	
+<weaponBlueprint name="FM_FOCUS_ADAPT">
+    <type>BEAM</type>
+    <tip>tip_adapter</tip>
+    <title>Omiyari Pinpoint</title>
+    <short>Omiyari</short>
+    <desc>A potentially ship-vaporizing focus, adapting to its environment. Damage ramps up incredibly fast, chaining for 1.5 damage every time it fires.</desc>
+    <tooltip>Beam weapon, 2 damage per room.</tooltip>
+    <damage>2</damage>
+    <sp>0</sp>
+    <fireChance>1</fireChance>
+    <breachChance>2</breachChance>
+    <cooldown>11</cooldown>
+    <power>3</power>
+    <cost>80</cost>
+    <bp>7</bp>
+    <rarity>0</rarity>
+    <length>2</length>
+    <image>beam_contact</image>
+    <boost>
+        <type>damage</type>
+        <amount>1.5</amount>
+        <count>999</count>
+    </boost>
+    <launchSounds>
+        <sound>beam2</sound>
+    </launchSounds>
+    <weaponArt>fm_mini_yari</weaponArt>
+    <iconImage>beam</iconImage>
+</weaponBlueprint>
 
 </FTL>
 
