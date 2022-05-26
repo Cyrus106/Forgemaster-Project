@@ -3713,9 +3713,99 @@ try this later
 		<desc length="4" x="0" y="0"/>
 		<time>1.0</time>
 	</anim>
-	<animSheet name="rvs_ac_charger" w="663" h="79" fw="39" fh="79">weapons_autocannon/fm_rvs_volley_gun_1_strip17.png</animSheet>
+	<animSheet name="rvs_ac_charger" w="663" h="79" fw="39" fh="79">weapons_autocannon/fm_rvs_ac_charge.png</animSheet>
+	<animSheet name="rvs_ac_charger_caseless" w="663" h="79" fw="39" fh="79">weapons_autocannon/fm_rvs_ac_charge_caseless.png</animSheet>
+	<animSheet name="rvs_ac_charger_hv" w="663" h="79" fw="39" fh="79">weapons_autocannon/fm_rvs_ac_charge_hvap.png</animSheet>
+	<animSheet name="rvs_ac_charger_free" w="663" h="79" fw="39" fh="79">weapons_autocannon/fm_rvs_ac_charge_free.png</animSheet>
+	<animSheet name="rvs_ac_charger_he" w="663" h="79" fw="39" fh="79">weapons_autocannon/fm_rvs_ac_charge_he.png</animSheet>
+	<animSheet name="rvs_ac_charger_emp" w="663" h="79" fw="39" fh="79">weapons_autocannon/fm_rvs_ac_charge_emp.png</animSheet>
+	<animSheet name="rvs_ac_charger_heat" w="663" h="79" fw="39" fh="79">weapons_autocannon/fm_rvs_ac_charge_heat.png</animSheet>
+	<animSheet name="rvs_ac_charger_incendiary" w="663" h="79" fw="39" fh="79">weapons_autocannon/fm_rvs_ac_charge_i.png</animSheet>
+	<animSheet name="rvs_ac_charger_flechette" w="663" h="79" fw="39" fh="79">weapons_autocannon/fm_rvs_ac_charge_flechette.png</animSheet>
+	<animSheet name="rvs_ac_charger_rad" w="663" h="79" fw="39" fh="79">weapons_autocannon/fm_rvs_ac_charge_rad.png</animSheet>
 	<weaponAnim name="rvs_ac_charger">
 		<sheet>rvs_ac_charger</sheet>
+		<desc length="17" x="0" y="0"/>
+		<chargedFrame>4</chargedFrame>
+		<fireFrame>5</fireFrame>
+		<firePoint  x="30" y="11" charge="6"/>
+		<mountPoint x="5" y="64"/>
+		<boost>rvs_ac_charger_charges</boost>
+	</weaponAnim>
+	<weaponAnim name="rvs_ac_charger_caseless">
+		<sheet>rvs_ac_charge_caselessr</sheet>
+		<desc length="17" x="0" y="0"/>
+		<chargedFrame>4</chargedFrame>
+		<fireFrame>5</fireFrame>
+		<firePoint  x="30" y="11" charge="6"/>
+		<mountPoint x="5" y="64"/>
+		<boost>rvs_ac_charger_charges</boost>
+	</weaponAnim>
+	<weaponAnim name="rvs_ac_charger_hv">
+		<sheet>rvs_ac_charger_hv</sheet>
+		<desc length="17" x="0" y="0"/>
+		<chargedFrame>4</chargedFrame>
+		<fireFrame>5</fireFrame>
+		<firePoint  x="30" y="11" charge="6"/>
+		<mountPoint x="5" y="64"/>
+		<boost>rvs_ac_charger_charges</boost>
+	</weaponAnim>
+	<weaponAnim name="rvs_ac_charger_free">
+		<sheet>rvs_ac_charger_free</sheet>
+		<desc length="17" x="0" y="0"/>
+		<chargedFrame>4</chargedFrame>
+		<fireFrame>5</fireFrame>
+		<firePoint  x="30" y="11" charge="6"/>
+		<mountPoint x="5" y="64"/>
+		<boost>rvs_ac_charger_charges</boost>
+	</weaponAnim>
+	<weaponAnim name="rvs_ac_charger_he">
+		<sheet>rvs_ac_charger_he</sheet>
+		<desc length="17" x="0" y="0"/>
+		<chargedFrame>4</chargedFrame>
+		<fireFrame>5</fireFrame>
+		<firePoint  x="30" y="11" charge="6"/>
+		<mountPoint x="5" y="64"/>
+		<boost>rvs_ac_charger_charges</boost>
+	</weaponAnim>
+	<weaponAnim name="rvs_ac_charger_emp">
+		<sheet>rvs_ac_charger_emp</sheet>
+		<desc length="17" x="0" y="0"/>
+		<chargedFrame>4</chargedFrame>
+		<fireFrame>5</fireFrame>
+		<firePoint  x="30" y="11" charge="6"/>
+		<mountPoint x="5" y="64"/>
+		<boost>rvs_ac_charger_charges</boost>
+	</weaponAnim>
+	<weaponAnim name="rvs_ac_charger_heat">
+		<sheet>rvs_ac_charger_heat</sheet>
+		<desc length="17" x="0" y="0"/>
+		<chargedFrame>4</chargedFrame>
+		<fireFrame>5</fireFrame>
+		<firePoint  x="30" y="11" charge="6"/>
+		<mountPoint x="5" y="64"/>
+		<boost>rvs_ac_charger_charges</boost>
+	</weaponAnim>
+	<weaponAnim name="rvs_ac_charger_incendiary">
+		<sheet>rvs_ac_charger_incendiary</sheet>
+		<desc length="17" x="0" y="0"/>
+		<chargedFrame>4</chargedFrame>
+		<fireFrame>5</fireFrame>
+		<firePoint  x="30" y="11" charge="6"/>
+		<mountPoint x="5" y="64"/>
+		<boost>rvs_ac_charger_charges</boost>
+	</weaponAnim>
+	<weaponAnim name="rvs_ac_charger_flechette">
+		<sheet>rvs_ac_charger</sheet>
+		<desc length="17" x="0" y="0"/>
+		<chargedFrame>4</chargedFrame>
+		<fireFrame>5</fireFrame>
+		<firePoint  x="30" y="11" charge="6"/>
+		<mountPoint x="5" y="64"/>
+		<boost>rvs_ac_charger_charges</boost>
+	</weaponAnim>
+	<weaponAnim name="rvs_ac_charger_rad">
+		<sheet>rvs_ac_charger_rad</sheet>
 		<desc length="17" x="0" y="0"/>
 		<chargedFrame>4</chargedFrame>
 		<fireFrame>5</fireFrame>

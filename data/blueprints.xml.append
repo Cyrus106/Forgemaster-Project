@@ -9287,6 +9287,7 @@
 						<canFight>false</canFight>
 						<canRepair>false</canRepair>
 						<canSabotage>false</canSabotage>
+						<canMan>false</canMan>
 						<effectAnim>mindcontrol</effectAnim>                       <!--Adds an additional animSheet on top of the normal crew sheet, and optionally hides the normal crew sheet.-->
 						<animFrame>0</animFrame>
 						<stunMultiplier>5.0</stunMultiplier>
@@ -12965,6 +12966,507 @@
 
 </FTL>
 
+<FTL> <!--AUTOCANNONS-->
+	<weaponBlueprint name="FM_RVS_AC_CHARGE"> <!-- standard-->
+    <type>LASER</type>
+    <title>Volley Gun</title>
+    <short>Volley</short>
+    <desc>An attempt to bring outdated equipment into new life. This weapon is made up of several light autocannons together to allow it to fire in a volley of up to 4 shots for a very low power cost.</desc>
+    <tooltip>1 damage 4 shot charge weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
+    <missiles>1</missiles>
+    <freeMissileChance>85</freeMissileChance>
+    <damage>1</damage>
+    <shots>1</shots>
+    <sp>0</sp>
+    <breachChance>1</breachChance>
+    <cooldown>6</cooldown>
+    <power>1</power>
+    <bp>4</bp>
+    <rarity>0</rarity>
+    <cost>60</cost>
+    <image>GB_shot_light</image>
+    <chargeLevels>4</chargeLevels>
+    <launchSounds>
+        <sound>GB_cannonLight1</sound>
+        <sound>GB_cannonLight2</sound>
+        <sound>GB_cannonLight3</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>hitHull2</sound>
+        <sound>hitHull3</sound>
+    </hitShipSounds>
+    <hitShieldSounds>
+        <sound>hitShield1</sound>
+        <sound>hitShield2</sound>
+        <sound>hitShield3</sound>
+    </hitShieldSounds>
+    <missSounds>
+        <sound>miss</sound>
+    </missSounds>
+    <weaponArt>rvs_ac_charger</weaponArt>
+    <iconImage>laser</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="FM_RVS_AC_CHARGE_CASELESS"> <!-- lower cooldown, higher DPS -->
+		<type>LASER</type>
+		<title>Volley Gun [Caseless]</title>
+		<short>Volley [CL]</short>
+		<desc>An attempt to bring outdated equipment into new life. This weapon is made up of several light autocannons together to allow it to fire in a volley of up to 4 shots for a very low power cost.</desc>
+		<tooltip>1 shot 1 damage weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
+		<missiles>1</missiles>
+		<freeMissileChance>80</freeMissileChance>
+		<damage>1</damage>
+		<shots>1</shots>
+		<sp>0</sp>
+		<breachChance>1</breachChance>
+		<cooldown>4</cooldown>
+		<power>1</power>
+		<bp>4</bp>
+		<rarity>0</rarity>
+		<cost>60</cost>
+		<image>GB_shot_light_CASELESS</image>
+		<chargeLevels>4</chargeLevels>
+		<launchSounds>
+			<sound>GB_cannonLight1</sound>
+			<sound>GB_cannonLight2</sound>
+			<sound>GB_cannonLight3</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>rvs_ac_charger_caseless</weaponArt>
+		<iconImage>laser</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="FM_RVS_AC_CHARGE_HV"> <!-- Higher shot speed, higher accuracy, minor breach increase -->
+		<type>LASER</type>
+		<title>Volley Gun [High Velocity]</title>
+		<short>Volley [HV]</short>
+		<desc>An attempt to bring outdated equipment into new life. This weapon is made up of several light autocannons together to allow it to fire in a volley of up to 4 shots for a very low power cost.</desc>
+		<tooltip>1 shot 1 damage weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
+		<missiles>1</missiles>
+		<freeMissileChance>83</freeMissileChance>
+		<damage>1</damage>
+		<shots>1</shots>
+		<sp>0</sp>
+		<breachChance>2</breachChance>
+		<cooldown>6</cooldown>
+		<power>1</power>
+		<bp>4</bp>
+		<rarity>0</rarity>
+		<accuracyMod>10</accuracyMod>
+		<cost>60</cost>
+		<speed>80</speed>
+		<image>GB_shot_light_HV</image>
+		<chargeLevels>4</chargeLevels>
+		<launchSounds>
+			<sound>GB_cannonLight1</sound>
+			<sound>GB_cannonLight2</sound>
+			<sound>GB_cannonLight3</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>rvs_ac_charger_hv</weaponArt>
+		<iconImage>laser</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="FM_RVS_AC_CHARGE_FREE"> <!-- better ammo duplication chance, no 'effects' -->
+		<type>LASER</type>
+		<title>Volley Gun [Recycler]</title>
+		<short>Volley [Re]</short>
+		<desc>An attempt to bring outdated equipment into new life. This weapon is made up of several light autocannons together to allow it to fire in a volley of up to 4 shots for a very low power cost.</desc>
+		<tooltip>1 shot 1 damage weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
+		<missiles>1</missiles>
+		<freeMissileChance>93</freeMissileChance> <!-- might change this to 100%-->
+		<damage>1</damage>
+		<shots>1</shots>
+		<sp>0</sp>
+		<breachChance>0</breachChance>
+		<cooldown>6</cooldown>
+		<power>1</power>
+		<bp>4</bp>
+		<rarity>0</rarity>
+		<cost>60</cost>
+		<image>GB_shot_light_recycled</image>
+		<chargeLevels>4</chargeLevels>
+		<launchSounds>
+			<sound>GB_cannonLight1</sound>
+			<sound>GB_cannonLight2</sound>
+			<sound>GB_cannonLight3</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>rvs_ac_charger_free</weaponArt>
+		<iconImage>laser</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="FM_RVS_AC_CHARGE_HE"> <!-- Hull damage focus, stuns crew and makes them more vulnerable -->
+		<type>LASER</type>
+		<title>Volley Gun [Concussive]</title>
+		<short>Volley [HE]</short>
+		<desc>An attempt to bring outdated equipment into new life. This weapon is made up of several light autocannons together to allow it to fire in a volley of up to 4 shots for a very low power cost.</desc>
+		<tooltip>1 shot 1 damage weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
+		<missiles>1</missiles>
+		<freeMissileChance>83</freeMissileChance>
+		<damage>1</damage>
+		<statBoosts>
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>MULT</boostType>
+				<amount>-1</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<affectsSelf>true</affectsSelf>
+				<duration>5</duration>
+			</statBoost>
+			<statBoost name="allDamageTakenMultiplier">
+				<boostType>MULT</boostType>
+				<amount>1.9</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<affectsSelf>true</affectsSelf>
+				<duration>5</duration>
+			</statBoost>
+		</statBoosts>
+		<shots>1</shots>
+		<stun>4</stun>
+		<sp>0</sp>
+		<breachChance>1</breachChance>
+		<cooldown>6</cooldown>
+		<power>1</power>
+		<bp>4</bp>
+		<rarity>0</rarity>
+		<cost>60</cost>
+		<image>GB_shot_light_HE</image>
+		<chargeLevels>4</chargeLevels>
+		<launchSounds>
+			<sound>GB_cannonLight1</sound>
+			<sound>GB_cannonLight2</sound>
+			<sound>GB_cannonLight3</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>rvs_ac_charger_he</weaponArt>
+		<iconImage>laser</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="FM_RVS_AC_CHARGE_EMP"> <!-- Ions enemy rooms but not shields, thus can't supress shield -->
+		<type>LASER</type>
+		<title>Volley Gun [EMP]</title>
+		<short>Volley [EMP]</short>
+		<desc>An attempt to bring outdated equipment into new life. This weapon is made up of several light autocannons together to allow it to fire in a volley of up to 4 shots for a very low power cost.</desc>
+		<descriptionOverride>An attempt to bring outdated equipment into new life. This weapon is made up of several light autocannons together to allow it to fire in a volley of up to 4 shots for a very low power cost.
+
+			Stats:
+			Required Power: 1
+			Charge Time: 6 seconds
+			Missile Consumption: 1
+			Chance for Ammo Replication: 77%
+
+			Shots Per Charge: 1
+			Max Charge Shots: 4
+
+			Base Hull Damage: 1
+			Total Crew Damage: 15
+			Ion Damage: 1 (Rooms Only)
+
+			Breach Chance: 10% (Adjusted: 10%)
+
+			Buy/Sell Price: 60~/30~
+		</descriptionOverride>
+		<tooltip>1 shot 1 damage weapon, 77% chance to not use ammo, 10% chance to cause a breach</tooltip>
+		<tooltipOverride>Required Power: 1
+			Charge Time: 6 seconds
+			Missile Consumption: 1
+			Chance for Ammo Replication: 77%
+
+			Base Hull Damage: 1
+			Total Crew Damage: 15
+			Ion Damage: 1 (Rooms Only)
+
+			Breach Chance: 10% (Adjusted: 10%)
+		</tooltipOverride>
+		<missiles>1</missiles>
+		<freeMissileChance>77</freeMissileChance>
+		<damage>1</damage>
+		<sysDamage>-1</sysDamage>
+		<spawnCrew>
+			<race>fm_ion_instant_1</race>
+			<number>1</number>
+			<noSlot>true</noSlot>
+		</spawnCrew>
+		<shots>1</shots>
+		<sp>0</sp>
+		<breachChance>1</breachChance>
+		<cooldown>6</cooldown>
+		<power>1</power>
+		<bp>4</bp>
+		<rarity>0</rarity>
+		<cost>60</cost>
+		<speed>80</speed>
+		<image>GB_shot_light_EMP</image>
+		<chargeLevels>4</chargeLevels>
+		<launchSounds>
+			<sound>GB_cannonLight1</sound>
+			<sound>GB_cannonLight2</sound>
+			<sound>GB_cannonLight3</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>rvs_ac_charger_emp</weaponArt>
+		<iconImage>laser</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="FM_RVS_AC_CHARGE_HEAT"> <!-- System damage amplified and focused -->
+		<type>LASER</type>
+		<title>Volley Gun [Particle]</title>
+		<short>Volley [Part]</short>
+		<desc>An attempt to bring outdated equipment into new life. This weapon is made up of several light autocannons together to allow it to fire in a volley of up to 4 shots for a very low power cost.</desc>
+		<tooltip>1 shot 1 damage weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
+		<missiles>1</missiles>
+		<freeMissileChance>82</freeMissileChance>
+		<sysDamage>2</sysDamage>
+		<persDamage>1</persDamage>
+		<shots>1</shots>
+		<sp>0</sp>
+		<fireChance>1</fireChance>
+		<cooldown>6</cooldown>
+		<power>1</power>
+		<bp>4</bp>
+		<rarity>0</rarity>
+		<cost>60</cost>
+		<image>GB_shot_light_HEAT</image>
+		<chargeLevels>4</chargeLevels>
+		<launchSounds>
+			<sound>GB_cannonLight1</sound>
+			<sound>GB_cannonLight2</sound>
+			<sound>GB_cannonLight3</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>rvs_ac_charger_heat</weaponArt>
+		<iconImage>laser</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="FM_RVS_AC_CHARGE_INCENDIARY"> <!-- Fire chance -->
+		<type>LASER</type>
+		<title>Volley Gun [Incendiary]</title>
+		<short>Volley [I]</short>
+		<desc>An attempt to bring outdated equipment into new life. This weapon is made up of several light autocannons together to allow it to fire in a volley of up to 4 shots for a very low power cost.</desc>
+		<tooltip>1 shot 1 damage weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
+		<missiles>1</missiles>
+		<freeMissileChance>83</freeMissileChance>
+		<damage>1</damage>
+		<shots>1</shots>
+		<sp>0</sp>
+		<fireChance>4</fireChance>
+		<cooldown>6</cooldown>
+		<power>1</power>
+		<bp>4</bp>
+		<rarity>0</rarity>
+		<cost>60</cost>
+		<image>GB_shot_light_Incendiary</image>
+		<chargeLevels>4</chargeLevels>
+		<launchSounds>
+			<sound>GB_cannonLight1</sound>
+			<sound>GB_cannonLight2</sound>
+			<sound>GB_cannonLight3</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>rvs_ac_charger_incendiary</weaponArt>
+		<iconImage>laser</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="FM_RVS_AC_CHARGE_FLECHETTE"> <!-- flechettes that cause bleed damage -->
+		<type>BURST</type>
+		<title>Volley Gun [Flechette]</title>
+		<short>Volley [F]</short>
+		<desc>An attempt to bring outdated equipment into new life. This weapon is made up of several light autocannons together to allow it to fire in a volley of up to 4 shots for a very low power cost.</desc>
+		<tooltip>1 shot 1 damage weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
+		<missiles>1</missiles>
+		<freeMissileChance>82</freeMissileChance>
+		<damage>1</damage>
+		<persDamage>-1</persDamage> <!-- no Pers damage from projectile, only via bleed-->
+		<sysDamage>-1</sysDamage> <!--minus 1, flat, for all flechette AC marks-->
+		<shots>1</shots>
+		<sp>0</sp>
+		<breachChance>2</breachChance>
+		<cooldown>6</cooldown>
+		<power>1</power>
+		<bp>4</bp>
+		<rarity>0</rarity>
+		<radius>30</radius>
+		<cost>60</cost>
+		<chargeLevels>4</chargeLevels>
+		<statBoosts>
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<amount>-1</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<affectsSelf>true</affectsSelf>
+				<duration>25</duration>
+				<boostAnim>blood_effect</boostAnim>
+			</statBoost>
+		</statBoosts>
+		<projectiles>
+			<projectile count="1" fake="false">GB_shot_light_flechette</projectile>
+			<projectile count="1" fake="true">GB_shot_tiny_flechette</projectile>
+		</projectiles>
+		<launchSounds>
+			<sound>GB_cannonLight1</sound>
+			<sound>GB_cannonLight2</sound>
+			<sound>GB_cannonLight3</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>rvs_ac_charger_flechette</weaponArt>
+		<iconImage>laser</iconImage>
+	</weaponBlueprint>
+	<weaponBlueprint name="FM_RVS_AC_CHARGE_RAD"> <!-- anti crew, rad, illegal -->
+		<type>LASER</type>
+		<title>Volley Gun [Rad]</title>
+		<short>Volley [R]</short>
+		<desc>An attempt to bring outdated equipment into new life. This weapon is made up of several light autocannons together to allow it to fire in a volley of up to 4 shots for a very low power cost. (FT: Warcrimes!)</desc>
+		<tooltip>1 shot 1 damage weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
+		<missiles>1</missiles>
+		<freeMissileChance>78</freeMissileChance>
+		<damage>1</damage>
+		<persDamage>1</persDamage>
+		<shots>1</shots>
+		<sp>0</sp>
+		<breachChance>3</breachChance>
+		<cooldown>6</cooldown>
+		<statBoosts> <!--5/10/15/20/25-->
+			<statBoost name="moveSpeedMultiplier">
+				<boostType>MULT</boostType>
+				<amount>0.33</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<affectsSelf>true</affectsSelf>
+				<maxStacks>1</maxStacks>
+				<duration>5</duration>
+				<boostAnim>bio_poison</boostAnim>
+			</statBoost>
+			<statBoost name="stunMultiplier">
+				<boostType>MULT</boostType>
+				<amount>1.75</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<affectsSelf>true</affectsSelf>
+				<maxStacks>1</maxStacks>
+				<duration>5</duration>
+			</statBoost>
+			<statBoost name="repairSpeed">
+				<boostType>MULT</boostType>
+				<amount>0.33</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<affectsSelf>true</affectsSelf>
+				<maxStacks>1</maxStacks>
+				<duration>5</duration>
+			</statBoost>
+		</statBoosts>
+		<power>1</power>
+		<bp>4</bp>
+		<rarity>0</rarity>
+		<cost>60</cost>
+		<image>GB_shot_light_RAD</image>
+		<chargeLevels>4</chargeLevels>
+		<launchSounds>
+			<sound>GB_cannonLight1</sound>
+			<sound>GB_cannonLight2</sound>
+			<sound>GB_cannonLight3</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>rvs_ac_charger_rad</weaponArt>
+		<iconImage>laser</iconImage>
+	</weaponBlueprint>
+
+</FTL>
+
 <FTL> <!--UNIQUE WEAPONS-->
 
 	<weaponBlueprint name="CLONE_CANNON_CHIEF_SPECIAL_PLAYER">
@@ -13174,45 +13676,6 @@
 		<iconImage>heavyL</iconImage>
 	</weaponBlueprint>
 
-	<weaponBlueprint name="FM_RVS_AC_CHARGE"> <!-- standard-->
-    <type>LASER</type>
-    <title>Volley Gun</title>
-    <short>Volley</short>
-    <desc>An attempt to bring outdated equipment into new life. This weapon is made up of several light autocannons together to allow it to fire in a volley of 4 shots for a very low power cost.</desc>
-    <tooltip>1 damage 4 shot charge weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
-    <missiles>1</missiles>
-    <freeMissileChance>85</freeMissileChance>
-    <damage>1</damage>
-    <shots>1</shots>
-    <sp>0</sp>
-    <breachChance>1</breachChance>
-    <cooldown>6</cooldown>
-    <power>1</power>
-    <bp>4</bp>
-    <rarity>0</rarity>
-    <cost>60</cost>
-    <image>GB_shot_light</image>
-    <chargeLevels>4</chargeLevels>
-    <launchSounds>
-        <sound>GB_cannonLight1</sound>
-        <sound>GB_cannonLight2</sound>
-        <sound>GB_cannonLight3</sound>
-    </launchSounds>
-    <hitShipSounds>
-        <sound>hitHull2</sound>
-        <sound>hitHull3</sound>
-    </hitShipSounds>
-    <hitShieldSounds>
-        <sound>hitShield1</sound>
-        <sound>hitShield2</sound>
-        <sound>hitShield3</sound>
-    </hitShieldSounds>
-    <missSounds>
-        <sound>miss</sound>
-    </missSounds>
-    <weaponArt>rvs_ac_charger</weaponArt>
-    <iconImage>laser</iconImage>
-	</weaponBlueprint>
 
 	<!-- CORROSIVE WEAPONS -->
 
