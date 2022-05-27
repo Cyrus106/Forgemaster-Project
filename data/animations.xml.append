@@ -3467,6 +3467,17 @@ try this later
 		<firePoint  x="17" y="20"/>
 		<mountPoint x="4" y="79"/>
 	</weaponAnim>
+	
+        <animSheet name="fm_energy_railblender" w="4140" h="68" fw="35" fh="68">weapon_ion/fm_energy_railblender.png</animSheet>
+	<weaponAnim name="fm_energy_railblender">
+		<sheet>fm_energy_railblender</sheet>
+		<desc length="92" x="0" y="0"/>
+		<chargedFrame>88</chargedFrame>
+		<fireFrame>89</fireFrame>
+		<firePoint  x="26" y="0" charge="3"/>
+		<mountPoint x="1" y="49"/>
+		<boost>fm_energy_railblender_chargeglow</boost>
+	</weaponAnim>
 
 </FTL>
 
