@@ -3359,7 +3359,22 @@ try this later
 		<chargeImage>weapon_laser/fm_terminus_glow.png</chargeImage>
 	</weaponAnim>
 
-
+	<animSheet name="laser_burst_1_charge_gold_charges" w="2704" h="60" fw="16" fh="60">weapon_laser/laser1_charge_gold_charges169.png</animSheet>
+	<anim name="laser_burst_1_charge_gold_charges_169">
+		<sheet>laser_burst_1_charge_gold_charges</sheet>
+		<desc length="169" x="0" y="0"/>
+		<time>1.0</time>
+	</anim>
+	<animSheet name="laser_burst_1_charge_gold" w="16320" h="60" fw="16" fh="60">weapon_laser/laser1_charge_gold_strip1020.png</animSheet>
+	<weaponAnim name="laser_burst_1_charge_gold_169">
+		<sheet>laser_burst_1_charge_gold</sheet>
+		<desc length="1020" x="0" y="0"/>
+		<chargedFrame>5</chargedFrame>
+		<fireFrame>8</fireFrame>
+		<firePoint  x="10" y="16" charge="0"/>
+		<mountPoint x="2" y="44"/>
+		<boost>laser_burst_1_charge_gold_charges_169</boost>
+	</weaponAnim>
 </FTL>
 
 <FTL><!-- ION-->

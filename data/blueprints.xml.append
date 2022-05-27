@@ -8642,6 +8642,46 @@
 		<iconScale>1.0</iconScale>
 	</weaponBlueprint>
 
+	<weaponBlueprint name="LASER_BURST_1_CHARGE_GOLD"> <!--.11 DPS-->
+		<type>LASER</type>
+		<title>Finitum Laser Charger</title>
+		<short>Finitum Charger</short>
+		<tip>tip_laser</tip>
+		<desc>Special issue charge Defense Laser. Can uses dynamic entropy to store up to 169 shots.</desc>
+		<tooltip>Defense laser; 1 damage, 1 shot. 9 second cooldown.</tooltip>
+		<damage>1</damage>
+		<shots>1</shots>
+		<sp>0</sp>
+		<fireChance>1</fireChance>
+		<breachChance>0</breachChance>
+		<cooldown>5</cooldown>
+		<power>2</power>
+		<cost>40</cost>
+		<bp>2</bp>
+		<rarity>0</rarity>
+		<image>laser_burst</image>
+		<fireTime>42.25</fireTime>
+		<chargeLevels>169</chargeLevels>
+		<launchSounds>
+			<sound>lightLaser1</sound>
+			<sound>lightLaser2</sound>
+			<sound>lightLaser3</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>laser_burst_1_charge_gold_169</weaponArt>
+		<iconImage>laser</iconImage>
+	</weaponBlueprint>
 
 </FTL>
 
@@ -9303,138 +9343,138 @@
 
 
 	<weaponBlueprint name="FM_ENERGY_RAILBLENDER">
-	<type>BURST</type>
-	<title>The Railblender</title>
-	<short>Railblender</short>
-	<desc>This strange contraption can charge up to 3 shots, firing 3 different electrically charged poles for each charge.</desc>
-	<tooltip>This strange contraption can charge up to 3 shots, firing 3 different electrically charged poles for each charge.</tooltip>
-	<radius>40</radius>
-	<damage>1</damage>
-	<sysDamage>-1</sysDamage>
-	<ion>1</ion>
-	<speed>40</speed>
-	<shots>1</shots>
-	<stun>3</stun>
-	<sp>0</sp>
-	<stunChance>1</stunChance>
-	<fireChance>2</fireChance>
-	<breachChance>0</breachChance>
-	<cooldown>7</cooldown>
-	<power>4</power>
-	<cost>0</cost>
-	<rarity>0</rarity>
-	<chargeLevels>3</chargeLevels>
-	<projectiles>
-		<projectile count="1" fake="false">fm_railblender_laserproj</projectile>
-		<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ROD">fm_railblender_railproj</projectile> <!-- This lets this specific projectile use the stats of a different weapon, in this case being FM_RAILBLENDER_ROD. -->
-		<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ENERGIZED">fm_railblender_energyrailproj</projectile>
-	</projectiles>
-	<launchSounds>
-		<sound>energy</sound>
-	</launchSounds>
-	<hitShipSounds>
-		<sound>hitHull1</sound>
-	</hitShipSounds>
-	<hitShieldSounds>
-		<sound>hitShield1</sound>
-		<sound>hitShield2</sound>
-		<sound>hitShield3</sound>
-	</hitShieldSounds>
-	<missSounds>
-		<sound>miss</sound>
-	</missSounds>
-	<weaponArt>fm_energy_railblender</weaponArt>
-</weaponBlueprint>
+		<type>BURST</type>
+		<title>The Railblender</title>
+		<short>Railblender</short>
+		<desc>This strange contraption can charge up to 3 shots, firing 3 different electrically charged poles for each charge.</desc>
+		<tooltip>This strange contraption can charge up to 3 shots, firing 3 different electrically charged poles for each charge.</tooltip>
+		<radius>40</radius>
+		<damage>1</damage>
+		<noSysDamage>true</noSysDamage>
+		<ion>1</ion>
+		<speed>40</speed>
+		<shots>1</shots>
+		<stun>3</stun>
+		<sp>0</sp>
+		<stunChance>1</stunChance>
+		<fireChance>2</fireChance>
+		<breachChance>0</breachChance>
+		<cooldown>7</cooldown>
+		<power>4</power>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<chargeLevels>3</chargeLevels>
+		<projectiles>
+			<projectile count="1" fake="false">fm_railblender_laserproj</projectile>
+			<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ROD">fm_railblender_railproj</projectile> <!-- This lets this specific projectile use the stats of a different weapon, in this case being FM_RAILBLENDER_ROD. -->
+			<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ENERGIZED">fm_railblender_energyrailproj</projectile>
+		</projectiles>
+		<launchSounds>
+			<sound>energy</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull1</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_energy_railblender</weaponArt>
+	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_RAILBLENDER_ROD">
-	<type>BURST</type>
-	<title>FM_RAILBLENDER_ROD</title>
-	<short>FM_RAILBLENDER_ROD</short>
-	<desc>YOU SHOULD NEVER SEE THIS</desc>
-	<tooltip>YOU SHOULD NEVER SEE THIS</tooltip>
-	<radius>40</radius>
-	<damage>1</damage>
-	<sysDamage>1</sysDamage>
-	<ion>0</ion>
-	<speed>40</speed>
-	<shots>1</shots>
-	<stun>4</stun>
-	<sp>2</sp>
-	<stunChance>1</stunChance>
-	<fireChance>0</fireChance>
-	<breachChance>2</breachChance>
-	<cooldown>7</cooldown>
-	<power>0</power>
-	<cost>0</cost>
-	<rarity>0</rarity>
-	<!--<chargeLevels>3</chargeLevels>-->
-	<projectiles>
-		<projectile count="1" fake="false">fm_railblender_railproj</projectile>
-		<!--<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ROD">fm_railblender_railproj</projectile>
-		<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ENERGIZED">fm_railblender_energyrailproj</projectile>-->
-	</projectiles>
-	<launchSounds>
-		<sound>ancient_laser</sound>
-		<sound>energy</sound>
-	</launchSounds>
-	<hitShipSounds>
-		<sound>hitHull1</sound>
-	</hitShipSounds>
-	<hitShieldSounds>
-		<sound>hitShield1</sound>
-		<sound>hitShield2</sound>
-		<sound>hitShield3</sound>
-	</hitShieldSounds>
-	<missSounds>
-		<sound>miss</sound>
-	</missSounds>
-	<weaponArt>fm_energy_railblender</weaponArt>
-</weaponBlueprint>
+		<type>BURST</type>
+		<title>FM_RAILBLENDER_ROD</title>
+		<short>FM_RAILBLENDER_ROD</short>
+		<desc>YOU SHOULD NEVER SEE THIS</desc>
+		<tooltip>YOU SHOULD NEVER SEE THIS</tooltip>
+		<radius>40</radius>
+		<damage>1</damage>
+		<sysDamage>1</sysDamage>
+		<ion>0</ion>
+		<speed>40</speed>
+		<shots>1</shots>
+		<stun>4</stun>
+		<sp>2</sp>
+		<stunChance>1</stunChance>
+		<fireChance>0</fireChance>
+		<breachChance>2</breachChance>
+		<cooldown>7</cooldown>
+		<power>0</power>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<!--<chargeLevels>3</chargeLevels>-->
+		<projectiles>
+			<projectile count="1" fake="false">fm_railblender_railproj</projectile>
+			<!--<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ROD">fm_railblender_railproj</projectile>
+			<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ENERGIZED">fm_railblender_energyrailproj</projectile>-->
+		</projectiles>
+		<launchSounds>
+			<sound>ancient_laser</sound>
+			<sound>energy</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull1</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_energy_railblender</weaponArt>
+	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_RAILBLENDER_ENERGIZED">
-	<type>BURST</type>
-	<title>FM_RAILBLENDER_ENERGIZED</title>
-	<short>FM_RAILBLENDER_ENERGIZED</short>
-	<desc>YOU SHOULD NEVER SEE THIS</desc>
-	<tooltip>YOU SHOULD NEVER SEE THIS</tooltip>
-	<radius>40</radius>
-	<damage>2</damage>
-	<sysDamage>1</sysDamage>
-	<ion>1</ion>
-	<speed>40</speed>
-	<shots>1</shots>
-	<stun>6</stun>
-	<sp>2</sp>
-	<stunChance>1</stunChance>
-	<fireChance>2</fireChance>
-	<breachChance>2</breachChance>
-	<cooldown>7</cooldown>
-	<power>0</power>
-	<cost>0</cost>
-	<rarity>0</rarity>
-<!--	<chargeLevels>3</chargeLevels>-->
-	<projectiles>
-		<projectile count="1" fake="false">fm_railblender_energyrailproj</projectile>
-		<!--<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ROD">fm_railblender_railproj</projectile>
-		<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ENERGIZED">fm_railblender_energyrailproj</projectile>-->
-	</projectiles>
-	<launchSounds>
-		<sound>ancient_laser</sound>
-		<sound>energy</sound>
-	</launchSounds>
-	<hitShipSounds>
-		<sound>hitHull1</sound>
-	</hitShipSounds>
-	<hitShieldSounds>
-		<sound>hitShield1</sound>
-		<sound>hitShield2</sound>
-		<sound>hitShield3</sound>
-	</hitShieldSounds>
-	<missSounds>
-		<sound>miss</sound>
-	</missSounds>
-	<weaponArt>fm_energy_railblender</weaponArt>
-</weaponBlueprint>
+		<type>BURST</type>
+		<title>FM_RAILBLENDER_ENERGIZED</title>
+		<short>FM_RAILBLENDER_ENERGIZED</short>
+		<desc>YOU SHOULD NEVER SEE THIS</desc>
+		<tooltip>YOU SHOULD NEVER SEE THIS</tooltip>
+		<radius>40</radius>
+		<damage>2</damage>
+		<sysDamage>1</sysDamage>
+		<ion>1</ion>
+		<speed>40</speed>
+		<shots>1</shots>
+		<stun>6</stun>
+		<sp>2</sp>
+		<stunChance>1</stunChance>
+		<fireChance>2</fireChance>
+		<breachChance>2</breachChance>
+		<cooldown>7</cooldown>
+		<power>0</power>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<!--	<chargeLevels>3</chargeLevels>-->
+		<projectiles>
+			<projectile count="1" fake="false">fm_railblender_energyrailproj</projectile>
+			<!--<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ROD">fm_railblender_railproj</projectile>
+			<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ENERGIZED">fm_railblender_energyrailproj</projectile>-->
+		</projectiles>
+		<launchSounds>
+			<sound>ancient_laser</sound>
+			<sound>energy</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull1</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_energy_railblender</weaponArt>
+	</weaponBlueprint>
 
 </FTL>
 
@@ -10622,7 +10662,7 @@
 		</spawnCrew>
 	</weaponBlueprint>
 
-<weaponBlueprint name="FM_FOCUS_ADAPT">
+	<weaponBlueprint name="FM_FOCUS_ADAPT">
     <type>BEAM</type>
     <tip>tip_adapter</tip>
     <title>Omiyari Pinpoint</title>
@@ -10650,7 +10690,7 @@
     </launchSounds>
     <weaponArt>fm_mini_yari</weaponArt>
     <iconImage>beam</iconImage>
-</weaponBlueprint>
+	</weaponBlueprint>
 
 </FTL>
 
