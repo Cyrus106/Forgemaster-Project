@@ -9320,7 +9320,7 @@
 	<fireChance>2</fireChance>
 	<breachChance>0</breachChance>
 	<cooldown>7</cooldown>
-	<power>0</power>
+	<power>4</power>
 	<cost>0</cost>
 	<rarity>0</rarity>
 	<chargeLevels>3</chargeLevels>
@@ -9330,7 +9330,6 @@
 		<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ENERGIZED">fm_railblender_energyrailproj</projectile>
 	</projectiles>
 	<launchSounds>
-		<sound>ancient_laser</sound>
 		<sound>energy</sound>
 	</launchSounds>
 	<hitShipSounds>
