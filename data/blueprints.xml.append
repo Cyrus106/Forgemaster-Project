@@ -9281,7 +9281,7 @@
 					<temporaryEffect>                                                                         <!-- Creates a temporary effect with the ability, modifying the crewmember's stats. Modified stats replace the original stats.-->
 						<duration>2</duration>                                                            <!--Duration of the temporary effect.-->
 						<cooldownColor r="167" g="250" b="255"/>
-						<finishSounds enemy="true">       
+						<finishSounds enemy="true">
 							<finishSound>mindControlEnd</finishSound>
 						</finishSounds>
 						<controllable>false</controllable>
@@ -9300,8 +9300,8 @@
 			</statBoost>
 		</statBoosts>
 	</weaponBlueprint>
-	
-	
+
+
 	<weaponBlueprint name="FM_ENERGY_RAILBLENDER">
 	<type>BURST</type>
 	<title>The Railblender</title>
@@ -9345,13 +9345,13 @@
 	</missSounds>
 	<weaponArt>fm_energy_railblender</weaponArt>
 </weaponBlueprint>
-	
+
 	<weaponBlueprint name="FM_RAILBLENDER_ROD">
 	<type>BURST</type>
-	<title>Railblender</title>
-	<short>Railblender</short>
-	<desc>This strange contraption can charge up to 3 shots, firing 3 different electrically charged poles for each charge.</desc>
-	<tooltip>This strange contraption can charge up to 3 shots, firing 3 different electrically charged poles for each charge.</tooltip>
+	<title>FM_RAILBLENDER_ROD</title>
+	<short>FM_RAILBLENDER_ROD</short>
+	<desc>YOU SHOULD NEVER SEE THIS</desc>
+	<tooltip>YOU SHOULD NEVER SEE THIS</tooltip>
 	<radius>40</radius>
 	<damage>1</damage>
 	<sysDamage>1</sysDamage>
@@ -9367,11 +9367,11 @@
 	<power>0</power>
 	<cost>0</cost>
 	<rarity>0</rarity>
-	<chargeLevels>3</chargeLevels>
+	<!--<chargeLevels>3</chargeLevels>-->
 	<projectiles>
-		<projectile count="1" fake="false">fm_railblender_laserproj</projectile>
-		<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ROD">fm_railblender_railproj</projectile>
-		<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ENERGIZED">fm_railblender_energyrailproj</projectile>
+		<projectile count="1" fake="false">fm_railblender_railproj</projectile>
+		<!--<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ROD">fm_railblender_railproj</projectile>
+		<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ENERGIZED">fm_railblender_energyrailproj</projectile>-->
 	</projectiles>
 	<launchSounds>
 		<sound>ancient_laser</sound>
@@ -9390,16 +9390,16 @@
 	</missSounds>
 	<weaponArt>fm_energy_railblender</weaponArt>
 </weaponBlueprint>
-	
+
 	<weaponBlueprint name="FM_RAILBLENDER_ENERGIZED">
 	<type>BURST</type>
-	<title>Railblender</title>
-	<short>Railblender</short>
-	<desc>This strange contraption can charge up to 3 shots, firing 3 different electrically charged poles for each charge.</desc>
-	<tooltip>This strange contraption can charge up to 3 shots, firing 3 different electrically charged poles for each charge.</tooltip>
+	<title>FM_RAILBLENDER_ENERGIZED</title>
+	<short>FM_RAILBLENDER_ENERGIZED</short>
+	<desc>YOU SHOULD NEVER SEE THIS</desc>
+	<tooltip>YOU SHOULD NEVER SEE THIS</tooltip>
 	<radius>40</radius>
 	<damage>2</damage>
-	<sysDamage>-1</sysDamage>
+	<sysDamage>1</sysDamage>
 	<ion>1</ion>
 	<speed>40</speed>
 	<shots>1</shots>
@@ -9412,11 +9412,11 @@
 	<power>0</power>
 	<cost>0</cost>
 	<rarity>0</rarity>
-	<chargeLevels>3</chargeLevels>
+<!--	<chargeLevels>3</chargeLevels>-->
 	<projectiles>
-		<projectile count="1" fake="false">fm_railblender_laserproj</projectile>
-		<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ROD">fm_railblender_railproj</projectile>
-		<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ENERGIZED">fm_railblender_energyrailproj</projectile>
+		<projectile count="1" fake="false">fm_railblender_energyrailproj</projectile>
+		<!--<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ROD">fm_railblender_railproj</projectile>
+		<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ENERGIZED">fm_railblender_energyrailproj</projectile>-->
 	</projectiles>
 	<launchSounds>
 		<sound>ancient_laser</sound>
@@ -10544,7 +10544,7 @@
 		</spawnCrew>
 
 	</weaponBlueprint>
-	
+
 	<weaponBlueprint name="FM_FOCUS_ENERGY_CONS">
 		<type>BEAM</type>
 		<tip>tip_focusenergy</tip>
@@ -10621,7 +10621,7 @@
 			</statBoosts>
 		</spawnCrew>
 	</weaponBlueprint>
-	
+
 <weaponBlueprint name="FM_FOCUS_ADAPT">
     <type>BEAM</type>
     <tip>tip_adapter</tip>
