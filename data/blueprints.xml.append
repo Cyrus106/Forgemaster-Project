@@ -17978,7 +17978,7 @@
 
 	<augBlueprint name="FM_NANO_FORGE_ACCELERANT">
 		<title>Forgemaster Accelerant</title>
-		<desc>Gives you 25% resist to all damage types, extinguishers, breach sealant</desc>
+		<desc>Gives you a 25% chance to resist all damage types, while also extinguishing flames and repairing breaches.</desc>
 		<cost>50</cost>
 		<bp>5</bp>
 		<rarity>0</rarity>
@@ -17995,8 +17995,8 @@
 	</augBlueprint>
 
 	<augBlueprint name="UPG_MEDBAY_NANO_FORGEMASTER_ENEMY">
-		<title>Super nanobots</title>
-		<desc>Heals your crew ship-wipe, and enemy-ship wide, while med bay is powered. 2.1 hp/s on your ship and 0.8 hp/s on enemy ship. Scales with system power.</desc>
+		<title>Forged Medbots</title>
+		<desc>Heals your crew ship-wipe while med bay is powered. Heals at 1hp/s. Scales with system power.</desc>
 		<cost>50</cost>
 		<bp>5</bp>
 		<rarity>0</rarity>
