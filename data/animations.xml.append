@@ -3468,7 +3468,7 @@ try this later
 		<mountPoint x="4" y="79"/>
 	</weaponAnim>
 	
-        <animSheet name="fm_energy_railblender" w="4140" h="68" fw="35" fh="68">weapon_ion/fm_energy_railblender.png</animSheet>
+        <animSheet name="fm_energy_railblender" w="4140" h="68" fw="35" fh="68">weapon_energy/fm_energy_railblender.png</animSheet>
 	<weaponAnim name="fm_energy_railblender">
 		<sheet>fm_energy_railblender</sheet>
 		<desc length="92" x="0" y="0"/>
