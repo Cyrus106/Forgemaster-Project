@@ -9300,6 +9300,142 @@
 			</statBoost>
 		</statBoosts>
 	</weaponBlueprint>
+	
+	
+	<weaponBlueprint name="FM_ENERGY_RAILBLENDER">
+	<type>BURST</type>
+	<title>The Railblender</title>
+	<short>Railblender</short>
+	<desc>This strange contraption can charge up to 3 shots, firing 3 different electrically charged poles for each charge.</desc>
+	<tooltip>This strange contraption can charge up to 3 shots, firing 3 different electrically charged poles for each charge.</tooltip>
+	<radius>40</radius>
+	<damage>1</damage>
+	<sysDamage>-1</sysDamage>
+	<ion>1</ion>
+	<speed>40</speed>
+	<shots>1</shots>
+	<stun>3</stun>
+	<sp>0</sp>
+	<stunChance>1</stunChance>
+	<fireChance>2</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>7</cooldown>
+	<power>0</power>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<chargeLevels>3</chargeLevels>
+	<projectiles>
+		<projectile count="1" fake="false">fm_railblender_laserproj</projectile>
+		<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ROD">fm_railblender_railproj</projectile> <!-- This lets this specific projectile use the stats of a different weapon, in this case being FM_RAILBLENDER_ROD. -->
+		<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ENERGIZED">fm_railblender_energyrailproj</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>ancient_laser</sound>
+		<sound>energy</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>fm_energy_railblender</weaponArt>
+</weaponBlueprint>
+	
+	<weaponBlueprint name="FM_RAILBLENDER_ROD">
+	<type>BURST</type>
+	<title>Railblender</title>
+	<short>Railblender</short>
+	<desc>This strange contraption can charge up to 3 shots, firing 3 different electrically charged poles for each charge.</desc>
+	<tooltip>This strange contraption can charge up to 3 shots, firing 3 different electrically charged poles for each charge.</tooltip>
+	<radius>40</radius>
+	<damage>1</damage>
+	<sysDamage>1</sysDamage>
+	<ion>0</ion>
+	<speed>40</speed>
+	<shots>1</shots>
+	<stun>4</stun>
+	<sp>2</sp>
+	<stunChance>1</stunChance>
+	<fireChance>0</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>7</cooldown>
+	<power>0</power>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<chargeLevels>3</chargeLevels>
+	<projectiles>
+		<projectile count="1" fake="false">fm_railblender_laserproj</projectile>
+		<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ROD">fm_railblender_railproj</projectile>
+		<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ENERGIZED">fm_railblender_energyrailproj</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>ancient_laser</sound>
+		<sound>energy</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>fm_energy_railblender</weaponArt>
+</weaponBlueprint>
+	
+	<weaponBlueprint name="FM_RAILBLENDER_ENERGIZED">
+	<type>BURST</type>
+	<title>Railblender</title>
+	<short>Railblender</short>
+	<desc>This strange contraption can charge up to 3 shots, firing 3 different electrically charged poles for each charge.</desc>
+	<tooltip>This strange contraption can charge up to 3 shots, firing 3 different electrically charged poles for each charge.</tooltip>
+	<radius>40</radius>
+	<damage>2</damage>
+	<sysDamage>-1</sysDamage>
+	<ion>1</ion>
+	<speed>40</speed>
+	<shots>1</shots>
+	<stun>6</stun>
+	<sp>2</sp>
+	<stunChance>1</stunChance>
+	<fireChance>2</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>7</cooldown>
+	<power>0</power>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<chargeLevels>3</chargeLevels>
+	<projectiles>
+		<projectile count="1" fake="false">fm_railblender_laserproj</projectile>
+		<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ROD">fm_railblender_railproj</projectile>
+		<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ENERGIZED">fm_railblender_energyrailproj</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>ancient_laser</sound>
+		<sound>energy</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>fm_energy_railblender</weaponArt>
+</weaponBlueprint>
 
 </FTL>
 
