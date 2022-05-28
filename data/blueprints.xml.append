@@ -2030,7 +2030,7 @@
 					<number>1</number>
 				</slot>
 			</sensors>
-			<shields power="2" max="8"room="7" start="true" img="room_shields_8">
+			<shields power="2" max="8" room="7" start="true" img="room_shields_8">
 				<slot>
 					<direction>left</direction>
 					<number>0</number>
@@ -13977,7 +13977,7 @@
 		<persDamage>-1</persDamage>
 		<hullBust>1</hullBust>
 		<shots>1</shots>
-		<breachChance>3</fireChance>
+		<breachChance>3</breachChance>
 		<cooldown>10</cooldown>
 		<power>1</power>
 		<cost>60</cost>
@@ -14032,7 +14032,7 @@
 		<persDamage>-1</persDamage>
 		<hullBust>1</hullBust>
 		<shots>2</shots>
-		<breachChance>3</fireChance>
+		<breachChance>3</breachChance>
 		<cooldown>16</cooldown>
 		<power>2</power>
 		<cost>70</cost>
@@ -14086,7 +14086,7 @@
 		<persDamage>-1</persDamage>
 		<hullBust>1</hullBust>
 		<shots>3</shots>
-		<breachChance>4</fireChance>
+		<breachChance>4</breachChance>
 		<cooldown>20</cooldown>
 		<power>3</power>
 		<cost>80</cost>
