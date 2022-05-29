@@ -2468,8 +2468,7 @@
 		<rarity>0</rarity>
 		<powerList>
 			<power>Spawns fires every 7 seconds, and generates O2 to feed the fire.</power>
-			<power>120 hp, immobile. Slowly heals itself every 7 seconds</power>
-			<power></power>
+			<power>165 HP, immobile. Heals itself for 10 HP every 7 seconds.</power>
 
 		</powerList>
 	</crewBlueprint>
@@ -2483,8 +2482,7 @@
 		<rarity>0</rarity>
 		<powerList>
 			<power>Stuns enemies and deals 1 Ion every 10 seconds.</power>
-			<power>120 hp, immobile. Slowly heals itself every 10 seconds</power>
-			<power></power>
+			<power>165 hp, immobile. Heals itself for 10 HP every 7 seconds.</power>
 
 		</powerList>
 	</crewBlueprint>
@@ -2498,8 +2496,7 @@
 		<rarity>0</rarity>
 		<powerList>
 			<power>Opens breaches and deals 30 Crew damage every 8 seconds.</power>
-			<power>120 hp, immobile. Slowly heals itself every 8 seconds</power>
-			<power></power>
+			<power>165 HP, immobile. Heals itself for 10 HP every 7 seconds.</power>
 
 		</powerList>
 	</crewBlueprint>
@@ -2512,9 +2509,8 @@
 		<bp>4</bp>
 		<rarity>0</rarity>
 		<powerList>
-			<power>Omni crystal, Red, Green, Blue effects every 13 seconds.</power>
-			<power>135 hp, immobile. Slowly heals itself every 13 seconds</power>
-			<power></power>
+			<power>Omni crystal. Causes Fires, Breaches, 30 crew damage, 1 Ion damage and stuns every 13 seconds.</power>
+			<power>200 HP, immobile. Heals itself for 20 HP every 13 seconds.</power>
 
 		</powerList>
 	</crewBlueprint>
@@ -2528,8 +2524,7 @@
 		<rarity>0</rarity>
 		<powerList>
 			<power>Replicates Crystals out of black matter every 12 seconds.</power>
-			<power>270 hp, immobile. Slowly heals itself every 12 seconds</power>
-			<power></power>
+			<power>270 HP, immobile. Heals itself for 20 HP every 12 seconds.</power>
 
 		</powerList>
 	</crewBlueprint>
