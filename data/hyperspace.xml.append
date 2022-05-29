@@ -4466,7 +4466,7 @@
 
 	<crew> <!--Energy Flak Drain-->
 		<race name="fm_power_drain">
-			<maxHealth>100</maxHealth>
+			<maxHealth>0</maxHealth>
 			<repairSpeed>0</repairSpeed>
 			<canFight>false</canFight>
 			<canRepair>false</canRepair>

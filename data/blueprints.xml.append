@@ -8886,22 +8886,89 @@
 			<race>fm_power_drain</race>
 			<number>1</number>
 			<noSlot>true</noSlot>
-			<statBoosts>
-				<statBoost name="noClone">
-					<boostType>SET</boostType>
-					<value>true</value>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
-				<statBoost name="maxHealth">
-					<boostType>FLAT</boostType>
-					<amount>-1000000</amount>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
-			</statBoosts>
+		</spawnCrew>
+		<projectiles>
+
+			<projectile count="4" fake="false">energy_shot</projectile>
+			<projectile count="3" fake="false" blueprint="FM_SHOTGUN_ENERGY_ION">energy_shot2</projectile>
+			<projectile count="3" fake="true">energy_shot</projectile>
+		</projectiles>
+		<launchSounds>
+			<sound>flak</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>flakImpact1</sound>
+			<sound>flakImpact2</sound>
+			<sound>flakImpact3</sound>
+			<sound>flakImpact4</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_shotgun_energy</weaponArt>
+		<iconImage>flak</iconImage>
+	</weaponBlueprint>
+
+	<weaponBlueprint name="FM_SHOTGUN_ENERGY_PLAYER">
+		<type>BURST</type>
+		<drone_targetable>1</drone_targetable>
+		<title>Exidia Diffuser</title>
+		<short>Exidia D.</short>
+		<desc>An Energy Diffuser that launches 3 ion and hull damage projectiles, and 4 hull damaging projectiles., while also draining 1 power to system rooms hit for 12 seconds. This drain effect stacks in intensity but its duration can only cap at 12 seconds and does not stack. </desc>
+		<descriptionOverride>An Energy Diffuser that launches 3 ion and hull damage projectiles, and 4 hull damaging projectiles., while also draining 1 power to system rooms hit for 12 seconds. This drain effect stacks in intensity but its duration can only cap at 12 seconds and does not stack.
+
+			Stats:
+			Required Power: 2
+			Charge Time: 18 seconds
+
+			Shot Radius: 50
+			Shots Per Charge: 7
+
+			Base Hull Damage: 1
+			Ion Damage: 1 (3 Projectiles)
+			Total Crew Damage: 15
+
+			Power Drain: 1 (12 seconds long)
+			Breach Chance: 40% (Adjusted: 40%)
+
+			Buy/Sell Price: 200~/100~
+		</descriptionOverride>
+		<tooltip>test</tooltip>
+		<tooltipOverride>Required Power: 2
+			Charge Time: 18 seconds
+
+			Shot Radius: 50
+			Shots Per Charge: 7
+
+			Base Hull Damage: 1
+			Ion Damage: 1 (3 Projectiles)
+			Total Crew Damage: 15
+
+			Power Drain: 1 (12 seconds long)
+			Breach Chance: 40% (Adjusted: 40%)
+		</tooltipOverride>
+		<radius>50</radius>
+		<damage>1</damage>
+		<spin>720</spin>
+		<shots>1</shots>
+		<sp>0</sp>
+		<fireChance>0</fireChance>
+		<breachChance>3</breachChance>
+		<cooldown>18</cooldown>
+		<power>2</power>
+		<cost>200</cost>
+		<bp>10</bp>
+		<speed>40</speed>
+		<rarity>0</rarity>
+		<spawnCrew>
+			<race>fm_power_drain</race>
+			<number>1</number>
+			<noSlot>true</noSlot>
 		</spawnCrew>
 		<projectiles>
 
