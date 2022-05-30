@@ -5061,7 +5061,7 @@
 				<friendlyFire>false</friendlyFire>
 				<fireChance>10</fireChance>
 
-				<buttonText>Anomalous Burn</buttonText>
+				<buttonText>FIRE</buttonText>
 				<tooltip>Ready:  Spawn a fire.</tooltip>
 				<cooldownColor r="0" g="235" b="255"/>
 				<effectAnim>explosion_ancalagon_fire</effectAnim>
@@ -5127,7 +5127,7 @@
 				<friendlyFire>false</friendlyFire>
 				<ion>1</ion>
 				<stun>6</stun>
-				<buttonText>Anomalous System Shock</buttonText>
+				<buttonText>ION</buttonText>
 				<tooltip>Ready:  Spawn Ion and Stun.</tooltip>
 				<cooldownColor r="0" g="235" b="255"/>
 				<effectAnim>explosion_ancalagon_ion</effectAnim>
@@ -5192,7 +5192,7 @@
 				<friendlyFire>false</friendlyFire>
 				<persDamage>2</persDamage>
 				<breachChance>100</breachChance>
-				<buttonText>Anomalous Nervous  Shock</buttonText>
+				<buttonText>BREACH</buttonText>
 				<tooltip>Ready:  Spawn Breach and deal crew damage.</tooltip>
 				<cooldownColor r="0" g="235" b="255"/>
 				<effectAnim>explosion_ancalagon_breach</effectAnim>
@@ -5263,7 +5263,7 @@
 				<stun>6</stun>
 				<persDamage>2</persDamage>
 				<breachChance>10</breachChance>
-				<buttonText>Anomalous Omni Strike</buttonText>
+				<buttonText>OMNI</buttonText>
 				<tooltip>Ready:  Inflict ALL crystal effects.</tooltip>
 				<cooldownColor r="0" g="235" b="255"/>
 				<effectAnim>explosion_ancalagon_white</effectAnim>
@@ -5329,7 +5329,7 @@
 				<friendlyFire>false</friendlyFire>
 
 
-				<buttonText>Anomalous Proliferation</buttonText>
+				<buttonText>VOID</buttonText>
 				<tooltip>Ready:  Spawn a random crystal</tooltip>
 				<cooldownColor r="0" g="235" b="255"/>
 				<effectAnim>explosion_ancalagon_black</effectAnim>
@@ -14981,6 +14981,10 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 								<crystalShard weapon="CLONE_CANNON_ZOLTAN" value="1.0" stackable="independent" />
 								<crystalShard weapon="CLONE_CANNON_LEECH" value="1.0" stackable="independent" />
 								<crystalShard weapon="CLONE_CANNON_AMPERE" value="1.0" stackable="independent" />
+
+
+								<function name="AUTO_COOLDOWN" value="999" useForReqs="true"/>
+
 							</aug>
 		<!--Cry some more-->
 		<aug name="CRYABOUTIT_VENGEANCE_CLONE">

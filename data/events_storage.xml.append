@@ -6870,7 +6870,7 @@
       <text>The Lanius have been cleared out. You scrap their ship.</text>
       <autoReward level="HIGH">standard</autoReward>
       <choice hidden="true">
-        <text>Check the ship</text>
+        <text>Scavenge the ship.</text>
         <event load="ABC_LANIUS_EXTRA_REWARDS"/>
       </choice>
     </deadCrew>
@@ -6896,8 +6896,8 @@
 
 
   <textList name="TEXT_ABC_ELITELANIUS">
-    <text>As your ship exits its jump, you're stared down by the shimmering hull of a Lanius vessel. For such metal hungry creatures you're surprised they don't have more holes on their ships. Though it leaves you more to salvage if you blow the whole thing to bits. Before you can ponder the matter further, your ship detects the flicker of their weapons and you get ready for combat.</text>
-    <text>As your codex said, in-front of you lies an obviously elite Lanius. You can tell by the... paint job, well it's nice that they're color coordinated at least. It lets you tell whose ship you raid for parts and whose ship you leave as a few spinning pieces of scrap in the vacuum. Try to avoid tha latter, or there might not be anything left for you to loot.</text>
+    <text>As your ship exits its jump, you're stared down by the shimmering hull of a Lanius vessel. For such metal hungry creatures you're surprised they don't have more holes on their ships. Though, it does leaves you more to salvage if you blow the whole thing to bits. Before you can ponder the matter further, your ship detects the flicker of their weapons and you get ready for combat.</text>
+    <text>As your codex said, in-front of you lies an obviously elite Lanius. You can tell by the... paint job? Well, you suppose it's nice that they're color coordinated at least. It lets you tell whose ship you raid for parts and whose ship you leave as a few spinning pieces of scrap in the vacuum. Try to avoid tha latter, or there might not be anything left for you to loot.</text>
     <text>As it always does, your codex gave you a rather accurate lead on your hunt. Now granted, this one is a bit above your average fare. That cargo hold is likely to hold something far more valuable than simply scrap, assuming you don't burn it, melt it, shred it, laser it, ion it, or any of the other myriad ways you could turn it into nothing but slag.</text>
     <text>As you exit your jump you’re greeted with the familiar sound of engines firing, a rather sharp looking ship turning to greet you. Sharp in the way it has many blades, honestly it’s pretty ugly, you care more about what’s in the cargo hold though. As the ship approaches you prepare for battle.</text>
   </textList>
@@ -6957,19 +6957,19 @@
       <weapon name="ION_PIERCE_2"/>
     </event>
     <event>
-      <text>The Elite Lanius appear to have been gathering scrap material, and never got a chance to make use of it. Maybe it would have saved them, and maybe not.</text>
+      <text>The Elite Lanius appear to have been gathering scrap material, and never got a chance to make use of it. Maybe it would have saved them, maybe not.</text>
       <autoReward level="MED">scrap_only</autoReward>
     </event>
     <event>
-      <text>The Elite Lanius appear to have been gathering scrap material, and never got a chance to make use of it. Maybe it would have saved them, and maybe not.</text>
+      <text>The Elite Lanius appear to have been gathering scrap material, and never got a chance to make use of it. Maybe it would have saved them, maybe not.</text>
       <autoReward level="MED">scrap_only</autoReward>
     </event>
     <event>
-      <text>The Elite Lanius appear to have been gathering scrap material, and never got a chance to make use of it. Maybe it would have saved them, and maybe not.</text>
+      <text>The Elite Lanius appear to have been gathering scrap material, and never got a chance to make use of it. Maybe it would have saved them, maybe not.</text>
       <autoReward level="MED">scrap_only</autoReward>
     </event>
     <event>
-      <text>The Elite Lanius appear to have been gathering scrap material, and never got a chance to make use of it. Maybe it would have saved them, and maybe not.</text>
+      <text>The Elite Lanius appear to have been gathering scrap material, and never got a chance to make use of it. Maybe it would have saved them, maybe not.</text>
       <autoReward level="MED">scrap_only</autoReward>
     </event>
   </eventList>
@@ -6979,8 +6979,8 @@
 
 
   <textList name="TEXT_ABC_AUGMENTEDLANIUS">
-    <text>Oh great, they come in green now. Not a real surprise considering what your codex told you. It doesn’t matter if it’s just a Lanius, it's still bathed in ancient tech, and you have great disdain for those who use said tech!... Except yourself, you deserve it. You prepare to take said technology, by force of course.</text>
-    <text>It’s the trash eater squad again! This time highly unstable and consumers of aether tech, aether tech that belongs to you! You should show them what’s what and take it for yourself... Though you hope they don’t blow up their own ship with that nasty habit of eating their hull.</text>
+    <text>Oh great, they come in green now. Not a real surprise, considering what your codex told you. It doesn’t matter if it’s just a Lanius, it's still bathed in ancient tech, and you have great disdain for those who use said tech!... Except yourself, you deserve it. You prepare to take said technology, by force.</text>
+    <text>It’s the trash eater squad again! This time highly unstable consumers of aether tech - aether tech that should belong to you! You should show them what’s what and take it for yourself... Though you hope they don’t blow up their own ship with that nasty habit of eating their hull.</text>
     <text>As you exit your jump you find the familiar neon green tech of an augmented vessel. For a society that has so much power contained in every single nook and cranny, it’s quite the shame they’ve decided to eat most of it. You better go ahead and kill them before they can munch on whatever is left.</text>
     <text>Your ship whirs its engines down, before immediately kicking them back to life as you find the promised Augmented vessel. You’re not sure what’s more dangerous, their weapons or their crew, but nothing will get in the way of your hunt.</text>
   </textList>
@@ -7063,11 +7063,11 @@
 
 
   <textList name="TEXT_ABC_OBELISK">
-    <text>As your ship exits its jump, your sensors pick up on a few of the Obelisk communication waves. A series of panicked murmurs are audible in the background, before they seem to direct a few words at you. "Oh, by the Queen's own chassis, it's these skin sacks again!" Communications cut off, and the ship engages yours. It would be best to keep the ship intact if you want whatever's onboard.</text>
-    <text>Your ship’s engines cool, and you’re faced with the boxy design of an Obelisk ship. What is with them and rectangles? Their guns are like boxes, their ships are boxes, they ARE boxes. Well, you probably should try not to crack open this box unless you want to ruin their loot. You detect their weapons heating up, and prepare to engage.</text>
+    <text>As your ship exits its jump, your sensors pick up on a few of the Obelisk communication waves. A series of panicked murmurs are audible in the background, before they seem to direct a few words at you. "Oh, by the Queen's own chassis, it's these skin sacks again!" Communications cut off, and the ship engages yours. It would be in your best interest to keep the ship intact if you want whatever's onboard.</text>
+    <text>Your ship’s engines cool, and you’re faced with the boxy design of an Obelisk ship. What is with them and rectangles? Their guns are like boxes, their ships are a bunch of mashed together boxes, and they ARE boxes. Well, you probably should try not to crack open this box unless you want to ruin their loot. You detect their weapons heating up, and prepare to engage.</text>
     <text>As you jump into the system, you receive a stream of garbled symbols and beeps from the Obelisk ship. While your translator may be on the fritz, the meaning isn’t lost on you when their weapons lock onto your hull! Maybe if you leave their ship intact, you'll be able to make this worth your time.</text>
     <text>Your codex is infallible as ever, even for such rare creatures as this they are exactly where it says they are. Of course, it seems they aren’t surprised to see you judging by the readied weapons. You consider communicating for half a second, just to taunt them, but the rapidly rising power signatures in their ship makes you scramble for combat.</text>
-    <text>While they aren’t as dangerous or as rare as a royal, a regular Obelisk ship is rather big game. Though what you care about more are the big guns contained inside. You should try not to reduce them into some scrap only fit for an augmented to eat. Though they are rather intent on destroying it seems, considering you can spot the green glow forming in their weapons.</text>
+    <text>While they aren’t as dangerous or as rare as a royal, a regular Obelisk ship is rather big game. Though what you care about more are the big guns contained inside, which you should try not to reduce into some scrap only fit for an augmented to eat. Though they are rather intent on destroying you it seems, considering you can spot the green glow forming in their weapons.</text>
   </textList>
   <event name="ABC_OBELISK">
     <beaconType text="OBELISK" global="true">
@@ -7131,7 +7131,7 @@
   <textList name="TEXT_ABC_ROYALOBELISK">
     <text>You don’t even give your engines a chance to properly tune as you drop out of lightspeed, tearing through space in the direction your computer tells you the Royal is located in. The moment your ship detects another vessel, you lock on and charge weapons, and as you rip into weapons range you can see the white hull amidst a sea of darkness. It’s about time you taught these glorified boxes with a god complex who’s really supreme around here, and their decadent civilization is long past its prime. Mulch their ‘superior forms’ and their technology will fall right into your lap. </text>
     <text>Your codex’s coordinates led to this place, and it proves ever accurate; you spot the glowing pink of an Obelisk Royal and notice that they seem to have opened communications. "Ugh, more mortals. You have a serious death wish don't you?" You throw your weapons online, as they do the same.</text>
-    <text>As you drop out of lightspeed, your computer begins its work. However, it appears you won’t need its help as you almost plough straight into a geometric vessel with a bright white hull. Looks like these floating rocks decided to drop anchor on top of the beacon, an arrogant display that you are going to remedy quickly. You stare into the pink glow of the vessel as you plot their demise, weapons already charging up. Send these boxes back to the hell they crawled out of, and the ’superior technology’ is yours.</text>
+    <text>As you drop out of lightspeed, your computer begins its work. However, it appears you won’t need its help as you almost plough straight into a geometric vessel with a bright white hull. Looks like these floating rocks decided to drop anchor on top of the beacon, an arrogant display that you are going to remedy quickly. You stare into the pink glow of the vessel as you plot their demise, weapons already charging up. Send these boxes back to the hell they crawled out of, and their ’superior technology’ is yours.</text>
     <text>You barely are able to recalibrate your sensors to realspace when you’re blindsided by the Royal nearby! While the Royal ego is larger than a supergiant star, it takes a special kind of arrogance to leave the safety of their homeworlds. Now would be the best time to put them in your proper place, and claim their prized tech for yourself. Wipe the decks clean of their foul geometry, and the loot will be easy pickings.</text>
   </textList>
   <event name="ABC_ROYALOBELISK">
@@ -7238,12 +7238,12 @@
     </choice>
 
     <choice hidden="true" req="mantis" blue="false" max_group="1">
-      <text>Convert your Hive Mantis into a Suzerain. [Tax: 20~]</text>
+      <text>Convert your Hive Mantis into a Suzerain. [Tax: 40~]</text>
       <event>
         <text load="TEXT_TWISTED_MANTIS_UPGRADE_MANTIS_TO_SUZERAIN"/>
         <transformRace class="mantis">mantis_suzerain</transformRace>
         <item_modify>
-          <item type="scrap" min="-20" max="-20"/>
+          <item type="scrap" min="-40" max="-40"/>
         </item_modify>
         <choice hidden="true">
           <text>Continue...</text>
@@ -7253,17 +7253,17 @@
     </choice>
 
     <choice hidden="true" req="mantis" lvl = "0" blue = "false" max_group="1">
-      <text>You do not have a Hive Mantis to convert into a Suzerain. [Tax: 20~]</text>
+      <text>You do not have a Hive Mantis to convert into a Suzerain. [Tax: 40~]</text>
       <event load="OPTION_INVALID"/>
     </choice>
 
     <choice hidden="true" req="mantis_suzerain" blue="false" max_group ="2">
-      <text>Convert your Suzerain into a Bishop. [Tax: 30~]</text>
+      <text>Convert your Suzerain into a Bishop. [Tax: 80~]</text>
       <event>
         <text load="TEXT_TWISTED_MANTIS_UPGRADE_SUZERAIN_TO_BISHOP"/>
         <transformRace class="mantis_suzerain">mantis_bishop</transformRace>
         <item_modify>
-          <item type="scrap" min="-30" max="-30"/>
+          <item type="scrap" min="-80" max="-80"/>
         </item_modify>
         <choice hidden="true">
           <text>Continue...</text>
@@ -7273,35 +7273,15 @@
     </choice>
 
     <choice hidden="true" req="mantis_suzerain" lvl = "0" blue = "false" max_group="2">
-      <text>You do not have a Suzerain to convert into a Bishop. [Tax: 30~]</text>
+      <text>You do not have a Suzerain to convert into a Bishop. [Tax: 80~]</text>
       <event load="OPTION_INVALID"/>
     </choice>
 
     <choice hidden="true" req="mantis_free" blue="false" max_group="3">
-      <text>Convert your Free Mantis into a Hive Mantis. [Tax: 10~]</text>
+      <text>Convert your Free Mantis into a Hive Mantis. [Tax: 20~]</text>
       <event>
         <text load="TEXT_TWISTED_MANTIS_UPGRADE_FREE_MANTIS_TO_MANTIS"/>
         <transformRace class="mantis_free">mantis</transformRace>
-        <item_modify>
-          <item type="scrap" min="-10" max="-10"/>
-        </item_modify>
-        <choice hidden="true">
-          <text>Continue...</text>
-          <event load="STORAGE_CHECK"/>
-        </choice>
-      </event>
-    </choice>
-
-    <choice hidden="true" req="mantis_free" lvl = "0" blue = "false" max_group="3">
-      <text>You do not have a Free Mantis to convert into a Hive Mantis. [Tax: 10~]</text>
-      <event load="OPTION_INVALID"/>
-    </choice>
-
-    <choice hidden="true" req="mantis_free" blue="false" max_group="4">
-      <text>Convert your Free Mantis into a Warlord. [Tax: 20~]</text>
-      <event>
-        <text load="TEXT_TWISTED_MANTIS_UPGRADE_FREE_MANTIS_TO_WARLORD"/>
-        <transformRace class="mantis_free">mantis_warlord</transformRace>
         <item_modify>
           <item type="scrap" min="-20" max="-20"/>
         </item_modify>
@@ -7312,18 +7292,38 @@
       </event>
     </choice>
 
+    <choice hidden="true" req="mantis_free" lvl = "0" blue = "false" max_group="3">
+      <text>You do not have a Free Mantis to convert into a Hive Mantis. [Tax: 20~]</text>
+      <event load="OPTION_INVALID"/>
+    </choice>
+
+    <choice hidden="true" req="mantis_free" blue="false" max_group="4">
+      <text>Convert your Free Mantis into a Warlord. [Tax: 40~]</text>
+      <event>
+        <text load="TEXT_TWISTED_MANTIS_UPGRADE_FREE_MANTIS_TO_WARLORD"/>
+        <transformRace class="mantis_free">mantis_warlord</transformRace>
+        <item_modify>
+          <item type="scrap" min="-40" max="-40"/>
+        </item_modify>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event load="STORAGE_CHECK"/>
+        </choice>
+      </event>
+    </choice>
+
     <choice hidden="true" req="mantis_free" lvl = "0" blue = "false" max_group="4">
-      <text>You do not have a Free Mantis to convert into a Warlord. [Tax: 20~]</text>
+      <text>You do not have a Free Mantis to convert into a Warlord. [Tax: 40~]</text>
       <event load="OPTION_INVALID"/>
     </choice>
 
     <choice hidden="true" req="mantis_warlord" blue="false" max_group ="5">
-      <text>Convert your Warlord into a Crackerjack. [Tax: 30~]</text>
+      <text>Convert your Warlord into a Crackerjack. [Tax: 80~]</text>
       <event>
         <text load="TEXT_TWISTED_MANTIS_UPGRADE_WARLORD_TO_CRACKERJACK"/>
         <transformRace class="mantis_warlord">mantis_crackerjack</transformRace>
         <item_modify>
-          <item type="scrap" min="-30" max="-30"/>
+          <item type="scrap" min="-80" max="-80"/>
         </item_modify>
         <choice hidden="true">
           <text>Continue...</text>
@@ -7333,7 +7333,7 @@
     </choice>
 
     <choice hidden="true" req="mantis_warlord" lvl = "0" blue = "false" max_group="5">
-      <text>You do not have a Warlord to convert into a Crackerjack. [Tax: 30~]</text>
+      <text>You do not have a Warlord to convert into a Crackerjack. [Tax: 80~]</text>
       <event load="OPTION_INVALID"/>
     </choice>
 
@@ -7396,7 +7396,7 @@
   <event name="INSTALL_ARTILLERY">
     <system name="artillery"/>
     <variable name="flak_resource_counter" op="add" val="-50" min="0" max="0"/>
-    <text>you install an artillery system onto your ship</text>
+    <text>You install a miniature flak artillery system onto your ship</text>
     <choice>
       <text>Continue...</text>
       <event load="STORAGE_CHECK"/>
@@ -7442,57 +7442,57 @@
 
     <!-- Do you want to upgrade a weapon in the Bronze Flak Line? -->
     <choice req="FM_SHOTGUN_BRONZE"  max_group="600" hidden="true">
-      <text>Upgrade the Bronze Flak Weapon</text>
+      <text>Upgrade the Bronze Flak.</text>
       <event load="STORAGE_CHECK_UPGRADE_BRONZE"/>
     </choice>
 
     <choice req="FM_SHOTGUN_INDIUM"  max_group="601" hidden="true">
-      <text>Upgrade the Indium Flak Weapon</text>
+      <text>Upgrade the Indium Flak.</text>
       <event load="STORAGE_CHECK_UPGRADE_INDIUM"/>
     </choice>
 
     <choice req="FM_SHOTGUN_RHENIUM"  max_group="602" hidden="true">
-      <text>Upgrade the Rhenium Flak Weapon</text>
+      <text>Upgrade the Rhenium Flak.</text>
       <event load="STORAGE_CHECK_UPGRADE_RHENIUM"/>
     </choice>
 
     <choice req="FM_SHOTGUN_SILVER"  max_group="603" hidden="true">
-      <text>Upgrade the Silver Flak Weapon</text>
+      <text>Upgrade the Silver Flak.</text>
       <event load="STORAGE_CHECK_UPGRADE_SILVER"/>
     </choice>
 
     <choice req="FM_SHOTGUN_PALLADIUM_LIST_1"  max_group="604" hidden="true">
-      <text>Upgrade the Palladium Flak Weapon</text>
+      <text>Upgrade the Palladium Flak.</text>
       <event load="STORAGE_CHECK_UPGRADE_PALLADIUM"/>
     </choice>
 
     <choice req="FM_SHOTGUN_PALLADIUM_LIST_2"  max_group="604" hidden="true">
-      <text>Upgrade the Palladium Flak Weapon</text>
+      <text>Upgrade the Palladium Flak.</text>
       <event load="STORAGE_CHECK_UPGRADE_PALLADIUM"/>
     </choice>
 
     <choice req="FM_SHOTGUN_PALLADIUM_LIST_3"  max_group="604" hidden="true">
-      <text>Upgrade the Palladium Flak Weapon</text>
+      <text>Upgrade the Palladium Flak.</text>
       <event load="STORAGE_CHECK_UPGRADE_PALLADIUM"/>
     </choice>
 
     <choice req="FM_SHOTGUN_PALLADIUM_LIST_4"  max_group="604" hidden="true">
-      <text>Upgrade the Palladium Flak Weapon</text>
+      <text>Upgrade the Palladium Flak.</text>
       <event load="STORAGE_CHECK_UPGRADE_PALLADIUM"/>
     </choice>
 
     <choice req="FM_SHOTGUN_PALLADIUM_LIST_5"  max_group="604" hidden="true">
-      <text>Upgrade the Palladium Flak Weapon</text>
+      <text>Upgrade the Palladium Flak.</text>
       <event load="STORAGE_CHECK_UPGRADE_PALLADIUM"/>
     </choice>
 
     <choice req="FM_SHOTGUN_PALLADIUM_LIST_6"  max_group="604" hidden="true">
-      <text>Upgrade the Palladium Flak Weapon</text>
+      <text>Upgrade the Palladium Flak.</text>
       <event load="STORAGE_CHECK_UPGRADE_PALLADIUM"/>
     </choice>
 
     <choice req="FM_SHOTGUN_PALLADIUM_LIST_7"  max_group="604" hidden="true">
-      <text>Upgrade the Palladium Flak Weapon</text>
+      <text>Upgrade the Palladium Flak.</text>
       <event load="STORAGE_CHECK_UPGRADE_PALLADIUM"/>
     </choice>
 
@@ -7502,52 +7502,52 @@
     </choice>
 
     <choice req="FM_SHOTGUN_IRIDIUM"  max_group="605" hidden="true">
-      <text>Upgrade the Iridium Flak Weapon</text>
+      <text>Upgrade the Iridium Flak.</text>
       <event load="STORAGE_CHECK_UPGRADE_IRIDIUM"/>
     </choice>
 
     <choice req="FM_SHOTGUN_PLATINUM"  max_group="606" hidden="true">
-      <text>Upgrade the Platinum Flak Weapon</text>
+      <text>Upgrade the Platinum Flak.</text>
       <event load="STORAGE_CHECK_UPGRADE_PLATINUM"/>
     </choice>
 
     <choice req="FM_SHOTGUN_OSMIUM"  max_group="607" hidden="true">
-      <text>Upgrade the Osmium Flak Weapon</text>
+      <text>Upgrade the Osmium Flak.</text>
       <event load="STORAGE_CHECK_UPGRADE_OSMIUM"/>
     </choice>
 
     <choice req="FM_SHOTGUN_NOBELIUM_LIST_1"  max_group="608" hidden="true">
-      <text>Upgrade the Nobelium Flak Weapon</text>
+      <text>Upgrade the Nobelium Flak.</text>
       <event load="STORAGE_CHECK_UPGRADE_NOBELIUM"/>
     </choice>
 
     <choice req="FM_SHOTGUN_NOBELIUM_LIST_2"  max_group="608" hidden="true">
-      <text>Upgrade the Nobelium Flak Weapon</text>
+      <text>Upgrade the Nobelium Flak.</text>
       <event load="STORAGE_CHECK_UPGRADE_NOBELIUM"/>
     </choice>
 
     <choice req="FM_SHOTGUN_NOBELIUM_LIST_3"  max_group="608" hidden="true">
-      <text>Upgrade the Nobelium Flak Weapon</text>
+      <text>Upgrade the Nobelium Flak.</text>
       <event load="STORAGE_CHECK_UPGRADE_NOBELIUM"/>
     </choice>
 
     <choice req="FM_SHOTGUN_NOBELIUM_LIST_4"  max_group="608" hidden="true">
-      <text>Upgrade the Nobelium Flak Weapon</text>
+      <text>Upgrade the Nobelium Flak.</text>
       <event load="STORAGE_CHECK_UPGRADE_NOBELIUM"/>
     </choice>
 
     <choice req="FM_SHOTGUN_NOBELIUM_LIST_5"  max_group="608" hidden="true">
-      <text>Upgrade the Nobelium Flak Weapon</text>
+      <text>Upgrade the Nobelium Flak.</text>
       <event load="STORAGE_CHECK_UPGRADE_NOBELIUM"/>
     </choice>
 
     <choice req="FM_SHOTGUN_NOBELIUM_LIST_6"  max_group="608" hidden="true">
-      <text>Upgrade the Nobelium Flak Weapon</text>
+      <text>Upgrade the Nobelium Flak.</text>
       <event load="STORAGE_CHECK_UPGRADE_NOBELIUM"/>
     </choice>
 
     <choice req="FM_SHOTGUN_NOBELIUM_LIST_7"  max_group="608" hidden="true">
-      <text>Upgrade the Nobelium Flak Weapon</text>
+      <text>Upgrade the Nobelium Flak.</text>
       <event load="STORAGE_CHECK_UPGRADE_NOBELIUM"/>
     </choice>
 
