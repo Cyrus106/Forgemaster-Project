@@ -2085,7 +2085,7 @@
 		</req>
 
 		<req name="FM_NO_IZD_MURDERBOTS" type="all">
-			<req lvl="0">
+			<req lvl="0" max_lvl="0">
 				<name>IZD_NANOBOT_DEFENSE_SYSTEM</name>
 			</req>
 			<name>NANOBOT_DEFENSE_SYSTEM</name>

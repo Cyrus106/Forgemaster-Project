@@ -2855,9 +2855,9 @@
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_BEAM_MINING_3">
 		<checkCargo/>
-		<text>Currently viewing the Terra Nova Beam.</text>
+		<text>Currently viewing the Terra Nova Pinpoint.</text>
 		<choice hidden="false" req="FM_BEAM_MINING_3_LIST" blue="false">
-			<text>Craft the Terra Nova Beam using the Misericorde.</text>
+			<text>Craft the Terra Nova Pinpoint using the Misericorde.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_BEAM_MINING_3"/>
@@ -2876,7 +2876,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="FM_BEAM_MINING_3_LIST_2" blue="false">
-			<text>Craft the Terra Nova Beam using the Stiletto.</text>
+			<text>Craft the Terra Nova Pinpoint using the Stiletto.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_BEAM_MINING_3"/>
@@ -2947,8 +2947,8 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_BEAM_GUILLOTINE_CHAIN">
 		<checkCargo/>
 		<text>Currently viewing the Menaulion Beam.</text>
-		<choice hidden="true" req="FM_BEAM_GUILLOTINE_CHAIN_LIST" lvl="1" blue="false">
-			<text>Craft the Menaulion Beam using the Murder-Bot Dispersal and Fauchard beam.</text>
+		<choice req="FM_BEAM_GUILLOTINE_CHAIN_LIST" lvl="1" blue="false">
+			<text>Craft the Menaulion Beam using the Murder-Bot Dispersal.</text>
 			<event>
 				<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_1"/>
 				<item_modify>
@@ -2986,8 +2986,8 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="true" req="FM_BEAM_GUILLOTINE_CHAIN_LIST_2" blue="false">
-			<text>Craft the Menaulion Beam using the locked Murder-Bot Dispersal and Fauchard beam.</text>
+		<choice req="FM_BEAM_GUILLOTINE_CHAIN_LIST_2" blue="false">
+			<text>Craft the Menaulion Beam using the locked Murder-Bot Dispersal.</text>
 			<event>
 				<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_1"/>
 				<item_modify>
@@ -3025,8 +3025,8 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="true" req="FM_BEAM_GUILLOTINE_CHAIN_LIST_3" lvl="1" blue="false">
-			<text>Craft the Menaulion Beam using the internalized Murder-Bot Dispersal and Fauchard beam.</text>
+		<choice req="FM_BEAM_GUILLOTINE_CHAIN_LIST_3" lvl="1" blue="false">
+			<text>Craft the Menaulion Beam using the internalized Murder-Bot Dispersal.</text>
 			<event>
 				<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_1"/>
 				<item_modify>
@@ -3064,8 +3064,8 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="true" req="FM_BEAM_GUILLOTINE_CHAIN_LIST_PLUS" lvl="1" blue="false">
-			<text>Craft the Menaulion Beam+ using the Murder-Bot Dispersal and Fauchard beam+.</text>
+		<choice req="FM_BEAM_GUILLOTINE_CHAIN_LIST_PLUS" lvl="1" blue="false">
+			<text>Craft the Menaulion Beam+ using the Murder-Bot Dispersal.</text>
 			<event>
 				<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_1"/>
 				<item_modify>
@@ -3103,8 +3103,8 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="true" req="FM_BEAM_GUILLOTINE_CHAIN_LIST_PLUS_2" blue="false">
-			<text>Craft the Menaulion Beam+ using the locked MurderBot Dispersal and Fauchard beam+.</text>
+		<choice req="FM_BEAM_GUILLOTINE_CHAIN_LIST_PLUS_2" blue="false">
+			<text>Craft the Menaulion Beam+ using the locked MurderBot Dispersal.</text>
 			<event>
 				<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_1"/>
 				<item_modify>
@@ -3142,8 +3142,8 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="true" req="FM_BEAM_GUILLOTINE_CHAIN_LIST_PLUS_3" lvl="1" blue="false">
-			<text>Craft the Menaulion Beam+ using the internalized Murder-Bot Dispersal and Fauchard beam+.</text>
+		<choice req="FM_BEAM_GUILLOTINE_CHAIN_LIST_PLUS_3" lvl="1" blue="false">
+			<text>Craft the Menaulion Beam+ using the internalized Murder-Bot Dispersal.</text>
 			<event>
 				<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_1"/>
 				<item_modify>
@@ -3185,12 +3185,6 @@
 			<text>Nevermind.</text>
 			<event load="FM_FORGE_WEAPON_BEAM_LOAD"/>
 		</choice>
-	</event>
-
-	<event name="FM_BEAM_EXPLOSION_INTERNAL_ADDON_CHECK">
-		<hiddenAug>VALEFOR_EASTER_EGG</hiddenAug>
-
-		<loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
 	</event>
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_BEAM_EXPLOSION">
@@ -4173,7 +4167,7 @@
 				</choice>
 			</event>
 		</choice>
-
+		<!--
 		<choice req="BOMB_LOCK"  blue="false" hidden="false" max_group="16">
 			<text>Install the Crystal Lockdown Bomb in the Flak II.[Cost: 10~]</text>
 			<event>
@@ -4209,7 +4203,7 @@
 				</choice>
 			</event>
 		</choice>
-
+		-->
 		<choice req="pilot" lvl="1" max_group="17" hidden="true" blue="false">
 			<text>Nevermind.</text>
 			<event load="FM_FORGE_WEAPON_FLAK_LOAD"/>
@@ -4225,7 +4219,7 @@
 		<checkCargo/>
 		<text>Currently viewing the 'Hellfire' Missiles.</text>
 		<choice hidden="false" req="FM_MISSILES_BURST_FIRE_LIST_MEGA_PLUS" blue="false">
-			<text>Craft the 'Hellfire' Missiles+ using the Ares missiles+ and Hades missiles+.</text>
+			<text>Craft the 'Hellfire' Missiles++ using the Ares missiles+ and Hades missiles+.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_MISSILES_BURST_FIRE_MEGA"/>
@@ -4351,7 +4345,7 @@
 		<checkCargo/>
 		<text>Currently viewing the Project #7:Burning End.</text>
 		<choice hidden="false"  blue="false">
-			<text>Project #7:Burning End.</text>
+			<text>Craft the Project #7:Burning End.</text>
 			<event>
 				<text>"Ah, a discerning eye you have there! That weapon's one of the more unique findings in my collection." Alastair signals a Plated to bring him a large, shaped, ingot of crystal, which he places on the center of his holo-forge and begins to heat.</text>
 				<weapon name="FM_BOMB_CRYSTAL_FIRE"/>
@@ -4389,7 +4383,7 @@
 		<checkCargo/>
 		<text>Currently viewing Project #22: Unnamed.</text>
 		<choice hidden="false"  blue="false">
-			<text>Project #22.</text>
+			<text>Craft the Project #22.</text>
 			<event>
 				<text>"A dangerous choice there, lad. Though it's a Stryven piece, so that should be no surprise. Her efforts were only ever directed towards the goal of death for all. She was a brilliant mind, though. This one in particular has a bit of a sordid history, and its tale doesn't end well for her. Her final piece, actually."?</text>
 				<weapon name="FM_BOMB_CRYSTAL_BIO"/>
@@ -4430,7 +4424,7 @@
 		<checkCargo/>
 		<text>Currently viewing the 'Ba-Pef' Mine Launcher.</text>
 		<choice hidden="false"  blue="false">
-			<text>'Ba-Pef' Mine Launcher.</text>
+			<text>Craft the 'Ba-Pef' Mine Launcher.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_MINELAUNCHER_HULL"/>
