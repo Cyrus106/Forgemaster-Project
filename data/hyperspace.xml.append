@@ -2969,7 +2969,6 @@
 		<!-- BEAM WEAPON FULL FORGE LIST! -->
 		<req name="FM_BEAM_FORGE_LIST" type="any"> <!-- Do you have the ingredients for a Beam/Pinpoint weapon? If so, light up the category option BLUE in the crafting category menu! -->
 			<name>FM_BEAM_MINING_2_LIST</name>
-			<name>FM_BEAM_MINING_3_FORGE_LIST</name>
 			<name>FM_BEAM_PARTICLE_PIERCE_LIST</name>
 			<name>FM_BEAM_GUILLOTINE_CHAIN_FORGE_LIST</name>
 			<name>FM_BEAM_EXPLOSION_FORGE_LIST</name>
@@ -2992,6 +2991,7 @@
 			<name>FM_FOCUS_ENERGY_3_LIST</name>
 			<name>FM_FOCUS_ENERGY_CONS_LIST</name>
 			<name>FM_FOCUS_ADAPT_LIST</name>
+			<name>FM_BEAM_MINING_3_FORGE_LIST</name>
 		</req>
 
 		<req name="FM_PINPOINT_FORGE_LIST_STORAGE" type="all"> <!-- Do you have the ingredients for a Beam/Pinpoint weapon? If so, light up the category option BLUE in the crafting category menu! -->
