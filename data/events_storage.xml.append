@@ -1116,7 +1116,7 @@
       <event load="STORAGE_CHECK_CREATE_FM_BEAM_MINING_3_2"/>
     </choice>
 
-    <choice req="FM_BEAM_MINING_3_LIST_ANY" lvl="0" blue="false" hidden="true" max_group="9">
+    <choice req="FM_BEAM_MINING_3_FORGE_LIST" lvl="0" blue="false" hidden="true" max_group="9">
       <text>You must have a Misericorde (or Stiletto) and Ishimura Beam to forge this weapon.</text>
       <event load="OPTION_INVALID"/>
     </choice>
@@ -1386,12 +1386,12 @@
       <event load="OPTION_INVALID"/>
     </choice>
 
-		<choice req="FM_RVS_AC_CHARGE_LIST_ANY" lvl="1" blue="false" hidden="true" max_group="10">
+		<choice req="FM_RVS_AC_CHARGE_FORGE_LIST" lvl="1" blue="false" hidden="true" max_group="10">
 		  <text>Combine two to four Autocannon 1s to forge the Volley Gun.[Cost: 0-40~]</text>
 		  <event load="STORAGE_CHECK_CREATE_FM_RVS_AC_CHARGE"/>
 		</choice>
 
-		<choice req="FM_RVS_AC_CHARGE_LIST_ANY" lvl="0" blue="false" hidden="true" max_group="10">
+		<choice req="FM_RVS_AC_CHARGE_FORGE_LIST" lvl="0" blue="false" hidden="true" max_group="10">
 		  <text>You must have two to four Autocannon 1s to forge this weapon.</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
@@ -2498,6 +2498,7 @@
         <weapon name="FM_BEAM_EXPLOSION"/>
         <removeItem>BOMB_1</removeItem>
         <removeItem>BEAM_2</removeItem>
+        <hiddenAug>VALEFOR_EASTER_EGG</hiddenAug>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
@@ -2546,6 +2547,7 @@
         <weapon name="FM_BEAM_EXPLOSION_PLAYER"/>
         <removeItem>BOMB_1</removeItem>
         <removeItem>BEAM_2_PLAYER</removeItem>
+        <hiddenAug>VALEFOR_EASTER_EGG</hiddenAug>
         <choice hidden="true">
           <text>Continue...</text>
           <event>

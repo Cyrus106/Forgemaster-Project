@@ -2194,6 +2194,13 @@
 	<name>BEAM_GUILLOTINE_PLAYER</name>
 </blueprintList>
 
+<blueprintList name="FM_SHOP_FORGEMASTER_STARTING_WEAPON_LIST">
+	<name>MISSILES_1</name>
+	<name>ION_1</name>
+	<name>LASER_BURST_1</name>
+	<name>BEAM_1</name>
+	<name>GB_AC_1</name>
+</blueprintList>
 
 <blueprintList name="FM_CRYSTAL_LIST">
 	<name>fm_crystal_red</name>

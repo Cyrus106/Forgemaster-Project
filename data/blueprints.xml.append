@@ -2542,7 +2542,7 @@
 		<short>M. Defender</short>
 		<rarity>0</rarity>
 		<powerList>
-			<power>Active Ability: Temporarily takes only 20% damage and reduces  suffocation damage for by 50% for allies.</power>
+			<power>Active Ability: Temporarily takes only 20% damage and reduces suffocation damage for nearby allies by 50%.</power>
 			<power>Active Ability: Buffs their twin's hp and movespeed by 10% while in the same room.</power>
 			<power>x2.5 repair speed, x0.6 combat damage</power>
 			<power>Greatly reduced burn and suffocation damage</power>
@@ -2564,7 +2564,7 @@
 		<short>P. Defender</short>
 		<rarity>0</rarity>
 		<powerList>
-			<power>Active Ability: Temporarily takes only 20% damage and reduces fire damage for allies by 50%.</power>
+			<power>Active Ability: Temporarily takes only 20% damage and reduces fire damage for nearby allies by 50%.</power>
 			<power>Active Ability: Buffs their twin's hp and movespeed by 10% while in the same room.</power>
 			<power>x2.5 repair speed, x0.6 combat damage</power>
 			<power>Greatly reduced burn and suffocation damage</power>
@@ -9351,15 +9351,6 @@
 			<race>fm_ion_instant_2</race>
 			<number>1</number>
 			<noSlot>true</noSlot>
-			<statBoosts>
-				<statBoost name="noClone">
-					<boostType>SET</boostType>
-					<value>true</value>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
-			</statBoosts>
 		</spawnCrew>
 		<statBoosts>
 			<statBoost name="powerEffect">
@@ -9398,7 +9389,6 @@
 						<canSabotage>false</canSabotage>
 						<canMan>false</canMan>
 						<effectAnim>mindcontrol</effectAnim>                       <!--Adds an additional animSheet on top of the normal crew sheet, and optionally hides the normal crew sheet.-->
-						<animFrame>0</animFrame>
 						<stunMultiplier>5.0</stunMultiplier>
 						<noAI>true</noAI>
 					</temporaryEffect>

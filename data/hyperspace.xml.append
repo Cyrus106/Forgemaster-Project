@@ -1971,6 +1971,17 @@
 			<name>ENERGY_CHARGEGUN</name>
 		</req>
 
+		<req name="FM_SHOTGUN_ENERGY_LIST_PLUS" type="all"> <!-- Flak III + Energy Chargegun+ -->
+			<name>SHOTGUN_3</name>
+			<name>ENERGY_CHARGEGUN_PLAYER</name>
+		</req>
+
+		<req name="FM_SHOTGUN_ENERGY_FORGE_LIST" type="any"> <!-- Do you have the ingredients for a Ion/Energy weapon? If so, light up the category option BLUE in the crafting category menu! -->
+			<name>FM_SHOTGUN_ENERGY_LIST</name>
+			<name>FM_SHOTGUN_ENERGY_LIST_PLUS</name>
+
+		</req>
+
 		<req name="FM_PULSE_1_LIST" type="all"> <!-- Burst Laser I + Energy I -->
 			<name>LASER_BURST_2</name>
 			<name>ENERGY_1</name>
@@ -1984,6 +1995,11 @@
 		<req name="FM_PULSE_2_LIST_PLUS" type="all"> <!-- Burst Laser II + Energy II+ -->
 			<name>LASER_BURST_3</name>
 			<name>ENERGY_2_PLAYER</name>
+		</req>
+
+		<req name="FM_PULSE_2_FORGE_LIST" type="any">
+			<name>FM_PULSE_2_LIST</name>
+			<name>FM_PULSE_2_LIST_PLUS</name>
 		</req>
 
 		<req name="FM_PULSE_3_LIST" type="all"> <!-- Burst Laser III + Energy III -->
@@ -2020,7 +2036,7 @@
 			<name>FM_BEAM_MINING_2</name>
 			<name>FOCUS_3</name>
 		</req>
-		<req name="FM_BEAM_MINING_3_LIST_ANY" type="any">
+		<req name="FM_BEAM_MINING_3_FORGE_LIST" type="any">
 			<name>FM_BEAM_MINING_3_LIST</name>
 			<name>FM_BEAM_MINING_3_LIST_2</name>
 		</req>
@@ -2032,8 +2048,18 @@
 
 		<req name="FM_BEAM_GUILLOTINE_CHAIN_LIST" type="all"> <!-- Murder Bot Dispersal + Fauchard Beam -->
 			<req>
-				<name>NANOBOT_DEFENSE_SYSTEM</name>
+				<name>FM_NO_IZD_MURDERBOTS</name>
+			</req>
+			<name>BEAM_GUILLOTINE</name>
+		</req>
+		<req name="FM_BEAM_GUILLOTINE_CHAIN_LIST_2" type="all"> <!-- Locked Murder Bot Dispersal + Fauchard Beam -->
+			<req>
 				<name>LOCKED_NANOBOT_DEFENSE_SYSTEM</name>
+			</req>
+			<name>BEAM_GUILLOTINE</name>
+		</req>
+		<req name="FM_BEAM_GUILLOTINE_CHAIN_LIST_3" type="all"> <!-- Izd Murder Bot Dispersal + Fauchard Beam -->
+			<req>
 				<name>IZD_NANOBOT_DEFENSE_SYSTEM</name>
 			</req>
 			<name>BEAM_GUILLOTINE</name>
@@ -2041,8 +2067,18 @@
 
 		<req name="FM_BEAM_GUILLOTINE_CHAIN_LIST_PLUS" type="all"> <!-- Murder Bot Dispersal + Fauchard Beam(+) -->
 			<req>
-				<name>NANOBOT_DEFENSE_SYSTEM</name>
+				<name>FM_NO_IZD_MURDERBOTS</name>
+			</req>
+			<name>BEAM_GUILLOTINE_PLAYER</name>
+		</req>
+		<req name="FM_BEAM_GUILLOTINE_CHAIN_LIST_PLUS_2" type="all"> <!-- Locked Murder Bot Dispersal + Fauchard Beam(+) -->
+			<req>
 				<name>LOCKED_NANOBOT_DEFENSE_SYSTEM</name>
+			</req>
+			<name>BEAM_GUILLOTINE_PLAYER</name>
+		</req>
+		<req name="FM_BEAM_GUILLOTINE_CHAIN_LIST_PLUS_3" type="all"> <!-- Izd Murder Bot Dispersal + Fauchard Beam(+) -->
+			<req>
 				<name>IZD_NANOBOT_DEFENSE_SYSTEM</name>
 			</req>
 			<name>BEAM_GUILLOTINE_PLAYER</name>
@@ -2055,12 +2091,22 @@
 			<name>NANOBOT_DEFENSE_SYSTEM</name>
 		</req>
 
-
+		<req name="FM_BEAM_GUILLOTINE_CHAIN_FORGE_LIST" type="any">
+			<name>FM_BEAM_GUILLOTINE_CHAIN_LIST</name>
+			<name>FM_BEAM_GUILLOTINE_CHAIN_LIST_2</name>
+			<name>FM_BEAM_GUILLOTINE_CHAIN_LIST_3</name>
+			<name>FM_BEAM_GUILLOTINE_CHAIN_LIST_PLUS</name>
+			<name>FM_BEAM_GUILLOTINE_CHAIN_LIST_PLUS_2</name>
+			<name>FM_BEAM_GUILLOTINE_CHAIN_LIST_PLUS_3</name>
+		</req>
 
 
 		<req name="FM_BEAM_EXPLOSION_LIST" type="all"> <!-- Small Bomb + Halberd -->
 			<name>BOMB_1</name>
 			<name>BEAM_2</name>
+			<req lvl="0" max_lvl="0">
+				<name>VALEFOR_EASTER_EGG</name>
+			</req>
 		</req>
 
 		<req name="FM_BEAM_EXPLOSION_LIST_EGG" type="all"> <!-- Small Bomb + Halberd, Florida Easter Egg -->
@@ -2072,6 +2118,12 @@
 		<req name="FM_BEAM_EXPLOSION_LIST_PLUS" type="all"> <!-- Small Bomb + Halberd -->
 			<name>BOMB_1</name>
 			<name>BEAM_2_PLAYER</name>
+		</req>
+
+		<req name="FM_BEAM_EXPLOSION_FORGE_LIST" type="any">
+			<name>FM_BEAM_EXPLOSION_LIST</name>
+			<name>FM_BEAM_EXPLOSION_LIST_EGG
+			<name>FM_BEAM_EXPLOSION_LIST_PLUS</name>
 		</req>
 
 		<req name="FM_FOCUS_FUELED_1_LIST" type="all"> <!-- Cinquedea Focus + Hermes -->
@@ -2094,17 +2146,22 @@
 			<name>FOCUS_2</name>
 		</req>
 
+		<req name="FM_FOCUS_ENERGY_2_FORGE_LIST" type="any">
+			<name>FM_FOCUS_ENERGY_2_LIST</name>
+			<name>FM_FOCUS_ENERGY_2_LIST_PLUS</name>
+		</req>
+
 		<req name="FM_FOCUS_ENERGY_3_LIST" type="all"> <!-- Stiletto Focus + Energy 3 -->
 			<name>ENERGY_3</name>
 			<name>FOCUS_3</name>
 		</req>
 
-		<req name="FM_FOCUS_ENERGY_CONS_LIST"> <!--Dirk + conservative Energy-->
+		<req name="FM_FOCUS_ENERGY_CONS_LIST" type="all"> <!--Dirk + conservative Energy-->
 		  <name>ENERGY_CONSERVATIVE</name>
 		  <name>FOCUS_1</name>
 		</req>
 
-		<req name="FM_FOCUS_ADAPT_LIST"> <!-- Suyari + Cinquedea Fucus-->
+		<req name="FM_FOCUS_ADAPT_LIST" type="all"> <!-- Suyari + Cinquedea Fucus-->
 		  <name>FOCUS_CHAIN</name>
 		  <name>BEAM_ADAPT</name>
 		</req>
@@ -2151,6 +2208,13 @@
 		<req name="FM_SHOTGUN_ANOMALY_LIST_MEGA" type="all">  <!--Frost Laser II(+) + Toxic Flak(+) -->
 			<name>SHOTGUN_TOXIC_PLAYER</name>
 			<name>LASER_FROST_2_PLAYER</name>
+		</req>
+
+		<req name="FM_SHOTGUN_ANOMALY_FORGE_LIST" type="any">
+			<name>FM_SHOTGUN_ANOMALY_LIST</name>
+			<name>FM_SHOTGUN_ANOMALY_LIST_PLUS</name>
+			<name>FM_SHOTGUN_ANOMALY_LIST_PLUS_2</name>
+			<name>FM_SHOTGUN_ANOMALY_LIST_MEGA</name>
 		</req>
 
 		<req name="FM_SHOTGUN_AETHER_LIST" type="all">  <!--Flak III + Aether Tech -->
@@ -2388,6 +2452,13 @@
 			<name>MISSILES_FIRE_PLAYER</name>
 		</req>
 
+		<req name="FM_MISSILES_BURST_FIRE_FORGE_LIST" type="any">
+			<name>FM_MISSILES_BURST_FIRE_LIST</name>
+			<name>FM_MISSILES_BURST_FIRE_LIST_PLUS</name>
+			<name>FM_MISSILES_BURST_FIRE_LIST_PLUS_TYPE2</name>
+			<name>FM_MISSILES_BURST_FIRE_LIST_MEGA_PLUS</name>
+		</req>
+
 		<req name="FM_MISSILES_CLOAK_STUN_LIST" type="all"> <!-- NYX + Stun Energy-->
 			<name>MISSILES_CLOAK</name>
 			<name>ENERGY_STUN</name>
@@ -2398,6 +2469,10 @@
 			<name>ENERGY_STUN_PLAYER</name>
 		</req>
 
+		<req name="FM_MISSILES_CLOAK_STUN_FORGE_LIST" type="any">
+			<name>FM_MISSILES_CLOAK_STUN_LIST</name>
+			<name>FM_MISSILES_CLOAK_STUN_LIST_PLUS</name>
+		</req>
 
 		<req name="FM_BOMB_CRYSTAL_FIRE_LIST" type="all"> <!-- Fire Bomb + Crystal Bomb -->
 			<name>BOMB_FIRE</name>
@@ -2444,7 +2519,7 @@
 				<name>AC_1_COUNT</name>
 			</req>
 		</req>
-		<req name="FM_RVS_AC_CHARGE_LIST_ANY">
+		<req name="FM_RVS_AC_CHARGE_FORGE_LIST">
 		  <name>FM_RVS_AC_CHARGE_LIST2</name>
 		  <name>FM_RVS_AC_CHARGE_LIST3</name>
 			<name>FM_RVS_AC_CHARGE_LIST4</name>
@@ -2877,10 +2952,9 @@
 			<name>FM_ION_TRI_FIRE_LIST</name>
 			<name>FM_DISC_LAUNCHER_FORGE_LIST</name>
 			<name>FM_CHAINGUN_ION_FORGE_LIST</name>
-			<name>FM_SHOTGUN_ENERGY_LIST</name>
+			<name>FM_SHOTGUN_ENERGY_FORGE_LIST</name>
 			<name>FM_PULSE_1_LIST</name>
-			<name>FM_PULSE_2_LIST</name>
-			<name>FM_PULSE_2_LIST_PLUS</name>
+			<name>FM_PULSE_2_FORGE_LIST</name>
 			<name>FM_PULSE_3_LIST</name>
 			<name>FM_PULSEDEEP_LIST</name>
 		</req>
@@ -2895,13 +2969,10 @@
 		<!-- BEAM WEAPON FULL FORGE LIST! -->
 		<req name="FM_BEAM_FORGE_LIST" type="any"> <!-- Do you have the ingredients for a Beam/Pinpoint weapon? If so, light up the category option BLUE in the crafting category menu! -->
 			<name>FM_BEAM_MINING_2_LIST</name>
-			<name>FM_BEAM_MINING_3_LIST</name>
-			<name>FM_BEAM_MINING_3_LIST_2</name>
+			<name>FM_BEAM_MINING_3_FORGE_LIST</name>
 			<name>FM_BEAM_PARTICLE_PIERCE_LIST</name>
-			<name>FM_BEAM_GUILLOTINE_CHAIN_LIST</name>
-			<name>FM_BEAM_GUILLOTINE_CHAIN_LIST_PLUS</name>
-			<name>FM_BEAM_EXPLOSION_LIST</name>
-			<name>FM_BEAM_EXPLOSION_LIST_PLUS</name>
+			<name>FM_BEAM_GUILLOTINE_CHAIN_FORGE_LIST</name>
+			<name>FM_BEAM_EXPLOSION_FORGE_LIST</name>
 			<name>FM_BEAM_ION_PIERCE_FORGE_LIST</name>
 
 
@@ -2917,8 +2988,7 @@
 		<req name="FM_PINPOINT_FORGE_LIST" type="any"> <!-- Do you have the ingredients for a Beam/Pinpoint weapon? If so, light up the category option BLUE in the crafting category menu! -->
 			<name>FM_FOCUS_FUELED_1_LIST</name>
 			<name>FM_FOCUS_ENERGY_1_LIST</name>
-			<name>FM_FOCUS_ENERGY_2_LIST</name>
-			<name>FM_FOCUS_ENERGY_2_LIST_PLUS</name>
+			<name>FM_FOCUS_ENERGY_2_FORGE_LIST</name>
 			<name>FM_FOCUS_ENERGY_3_LIST</name>
 			<name>FM_FOCUS_ENERGY_CONS_LIST</name>
 			<name>FM_FOCUS_ADAPT_LIST</name>
@@ -2932,10 +3002,7 @@
 
 		<!-- FLAK WEAPON FULL FORGE LIST! -->
 		<req name="FM_FLAK_FORGE_LIST" type="any"> <!-- Do you have the ingredients for a Flak weapon? If so, light up the category option BLUE in the crafting category menu! -->
-			<name>FM_SHOTGUN_ANOMALY_LIST</name>
-			<name>FM_SHOTGUN_ANOMALY_LIST_PLUS</name>
-			<name>FM_SHOTGUN_ANOMALY_LIST_PLUS_2</name>
-			<name>FM_SHOTGUN_ANOMALY_LIST_MEGA</name>
+			<name>FM_SHOTGUN_ANOMALY_FORGE_LIST</name>
 			<name>FM_SHOTGUN_AETHER_LIST</name>
 			<name>FM_SHOTGUN_BRONZE_LIST_FORGE</name>
 			<name>FM_SHOTGUN_CURSED_LIST</name>
@@ -2950,18 +3017,14 @@
 
 		<!-- EXPLOSIVE WEAPON FULL FORGE LIST! -->
 		<req name="FM_EXPLOSIVE_FORGE_LIST" type="any"> <!-- Do you have the ingredients for a Explosive weapon? If so, light up the category option BLUE in the crafting category menu! -->
-			<name>FM_MISSILES_BURST_FIRE_LIST</name>
-			<name>FM_MISSILES_BURST_FIRE_LIST_PLUS</name>
-			<name>FM_MISSILES_BURST_FIRE_LIST_PLUS_TYPE2</name>
-			<name>FM_MISSILES_BURST_FIRE_LIST_MEGA_PLUS</name>
-			<name>FM_MISSILES_CLOAK_STUN_LIST</name>
-			<name>FM_MISSILES_CLOAK_STUN_LIST_PLUS</name>
+			<name>FM_MISSILES_BURST_FIRE_FORGE_LIST</name>
+			<name>FM_MISSILES_CLOAK_STUN_FORGE_LIST</name>
 			<name>FM_BOMB_CRYSTAL_FIRE_LIST</name>
 			<name>FM_BOMB_CRYSTAL_BIO_LIST</name>
 			<name>FM_BOMBLAUNCHER_HULL_LIST</name>
 			<name>FM_MINELAUNCHER_BIO_LIST</name>
 			<name>FM_ION_MISSILES_LIST</name>
-			<name>FM_RVS_AC_CHARGE_LIST_ANY</name>
+			<name>FM_RVS_AC_CHARGE_FORGE_LIST</name>
 		</req>
 
 		<req name="FM_EXPLOSIVE_FORGE_LIST_STORAGE" type="all"> <!-- Do you have the ingredients for a Explosive weapon? If so, light up the category option BLUE in the crafting category menu! -->
@@ -5465,7 +5528,7 @@
 					<powerSound>shieldsUp</powerSound>
 				</powerSounds>
 				<buttonText>SHIELD</buttonText>
-				<tooltip>Ready: Take greatly reduced damage (80% less), resist Mind Control attempts, and reduce suffocation damage taken by 50% for allies, for 15 seconds.</tooltip>
+				<tooltip>Ready: Take greatly reduced damage (80% less), resist Mind Control attempts, and reduce suffocation damage taken for nearby allies by 50%, for 15 seconds.</tooltip>
 				<cooldownColor r="0" g="186" b="255"/>
 				<temporaryEffect>
 					<duration>15</duration>
@@ -5562,7 +5625,7 @@
 					<powerSound>shieldsUp</powerSound>
 				</powerSounds>
 				<buttonText>SHIELD</buttonText>
-				<tooltip>Ready: Take greatly reduced damage (80% less), resist Mind Control attempts, and reduce fire damage taken by 50% for allies, for 15 seconds.</tooltip>
+				<tooltip>Ready: Take greatly reduced damage (80% less), resist Mind Control attempts, and reduce fire damage taken for nearby allies by 50%, for 15 seconds.</tooltip>
 				<cooldownColor r="0" g="186" b="255"/>
 				<temporaryEffect>
 					<duration>15</duration>
@@ -14341,7 +14404,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 
 
 		<!--I hope you're ready to cry about it-->
-							<aug name="CRYABOUTIT_VENGEANCE">
+		<aug name="CRYABOUTIT_VENGEANCE">
 								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
 								<crystalShard weapon="FM_ORGANIC_BULLSQUID" value="1.0" stackable="independent" />
 								<crystalShard weapon="FM_GATLING_ANCIENT" value="1.0" stackable="independent" />
@@ -14920,7 +14983,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 								<crystalShard weapon="CLONE_CANNON_AMPERE" value="1.0" stackable="independent" />
 							</aug>
 		<!--Cry some more-->
-							<aug name="CRYABOUTIT_VENGEANCE_CLONE">
+		<aug name="CRYABOUTIT_VENGEANCE_CLONE">
 								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
 								<crystalShard weapon="CLONE_CANNON" value="1.0" stackable="independent" />
 								<crystalShard weapon="CLONE_CANNON_BABYORCHID" value="1.0" stackable="independent" />
@@ -14995,7 +15058,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 								<crystalShard weapon="CLONE_CANNON_BABYORCHID_TWEAK" value="1.0" stackable="independent" />
 							</aug>
 		<!--And more-->
-							<aug name="CRYABOUTIT_VENGEANCE_KERNEL">
+		<aug name="CRYABOUTIT_VENGEANCE_KERNEL">
 								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
 								<crystalShard weapon="KERNEL_1" value="1.0" stackable="independent" />
 								<crystalShard weapon="KERNEL_1_ELITE" value="1.0" stackable="independent" />
@@ -15010,7 +15073,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 								<crystalShard weapon="KERNEL_CHARGE_ELITE" value="1.0" stackable="independent" />
 							</aug>
 		<!--And more-->
-							<aug name="CRYABOUTIT_VENGEANCE_CRYSTAL">
+		<aug name="CRYABOUTIT_VENGEANCE_CRYSTAL">
 								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
 								<crystalShard weapon="BOMB_LOCK" value="1.0" stackable="independent" />
 								<crystalShard weapon="CRYSTAL_BURST_1" value="1.0" stackable="independent" />
@@ -15030,7 +15093,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 								<crystalShard weapon="CLONE_CANNON_PONYC" value="1.0" stackable="independent" />
 							</aug>
 		<!--And more-->
-							<aug name="CRYABOUTIT_VENGEANCE_ORANGE">
+		<aug name="CRYABOUTIT_VENGEANCE_ORANGE">
 								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
 								<crystalShard weapon="LASER_PARTICLE" value="1.0" stackable="independent" />
 								<crystalShard weapon="LASER_PARTICLE_2" value="1.0" stackable="independent" />
@@ -15039,7 +15102,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 								<crystalShard weapon="MISSILES_PARTICLE_PLAYER" value="1.0" stackable="independent" />
 							</aug>
 		<!--And more-->
-							<aug name="CRYABOUTIT_VENGEANCE_ION">
+		<aug name="CRYABOUTIT_VENGEANCE_ION">
 								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
 								<crystalShard weapon="ION_1" value="1.0" stackable="independent" />
 								<crystalShard weapon="ION_2" value="1.0" stackable="independent" />
@@ -15092,7 +15155,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 								<crystalShard weapon="FM_CHAINGUN_ION_SUICIDE" value="1.0" stackable="independent" />
 							</aug>
 		<!--And more-->
-							<aug name="CRYABOUTIT_VENGEANCE_ENERGY">
+		<aug name="CRYABOUTIT_VENGEANCE_ENERGY">
 								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
 								<crystalShard weapon="MISSILES_ENERGY" value="1.0" stackable="independent" />
 								<crystalShard weapon="ENERGY_1" value="1.0" stackable="independent" />
@@ -15110,7 +15173,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 								<crystalShard weapon="FM_SHOTGUN_ENERGY_ION" value="1.0" stackable="independent" />
 							</aug>
 		<!--And more-->
-							<aug name="CRYABOUTIT_VENGEANCE_FLAK">
+		<aug name="CRYABOUTIT_VENGEANCE_FLAK">
 								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
 								<crystalShard weapon="SHOTGUN_1" value="1.0" stackable="independent" />
 								<crystalShard weapon="SHOTGUN_2" value="1.0" stackable="independent" />
@@ -15146,7 +15209,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 								<crystalShard weapon="FM_SHOTGUN_CURSED" value="1.0" stackable="independent" />
 							</aug>
 		<!--And more-->
-							<aug name="CRYABOUTIT_VENGEANCE_BEYATCH">
+		<aug name="CRYABOUTIT_VENGEANCE_BEYATCH">
 								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
 								<crystalShard weapon="BEAM_PARTICLE" value="1.0" stackable="independent" />
 								<crystalShard weapon="ION_INSTANT" value="1.0" stackable="independent" />
@@ -15269,7 +15332,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 								<crystalShard weapon="FOCUS_SHADOW_ADAPT" value="1.0" stackable="independent" />
 							</aug>
 		<!--And more-->
-							<aug name="CRYABOUTIT_VENGEANCE_MISSILES">
+		<aug name="CRYABOUTIT_VENGEANCE_MISSILES">
 								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
 								<crystalShard weapon="MISSILES_PARTICLE" value="1.0" stackable="independent" />
 								<crystalShard weapon="MISSILES_PARTICLE_PLAYER" value="1.0" stackable="independent" />
@@ -15351,8 +15414,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 								<crystalShard weapon="FM_MISSILES_CLOAK_STUN_PLAYER" value="1.0" stackable="independent" />
 							</aug>
 		<!--And more-->
-
-							<aug name="CRYABOUTIT_VENGEANCE_MORSHU">
+		<aug name="CRYABOUTIT_VENGEANCE_MORSHU">
 								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
 								<crystalShard weapon="BOMB_1" value="1.0" stackable="independent" />
 								<crystalShard weapon="BOMB_BREACH_1" value="1.0" stackable="independent" />
@@ -15392,7 +15454,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 								<crystalShard weapon="BOMB_ION_ENEMY_ARTY" value="1.0" stackable="independent" />
 							</aug>
 		<!--And more-->
-							<aug name="CRYABOUTIT_VENGEANCE_PEW">
+		<aug name="CRYABOUTIT_VENGEANCE_PEW">
 								<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
 								<crystalShard weapon="LASER_BURST_1" value="1.0" stackable="independent" />
 								<crystalShard weapon="LASER_BURST_2" value="1.0" stackable="independent" />
@@ -15559,491 +15621,491 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 								<crystalShard weapon="LASER_SHADOW" value="1.0" stackable="independent" />
 								<crystalShard weapon="LASER_SHADOW_PLAYER" value="1.0" stackable="independent" />
 							</aug>
-<!--Cry even more!-->
-							<aug name="CRYABOUTIT_VENGEANCE_MINELAUNCHER">
-									<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-									<crystalShard weapon="FM_MINELAUNCHER_HULL" value="1.0" stackable="independent" />
-									<crystalShard weapon="FM_ROYAL_MINELAUNCHER" value="1.0" stackable="independent" />
-									<crystalShard weapon="FM_MINELAUNCHER_BIO" value="1.0" stackable="independent" />
-									<crystalShard weapon="MINELAUNCHER_1" value="1.0" stackable="independent" />
-									<crystalShard weapon="MINELAUNCHER_2" value="1.0" stackable="independent" />
-									<crystalShard weapon="MINELAUNCHER_3" value="1.0" stackable="independent" />
-									<crystalShard weapon="MINELAUNCHER_FREE" value="1.0" stackable="independent" />
-									<crystalShard weapon="MINELAUNCHER_FIRE" value="1.0" stackable="independent" />
-									<crystalShard weapon="MINELAUNCHER_BREACH" value="1.0" stackable="independent" />
-									<crystalShard weapon="MINELAUNCHER_STUN" value="1.0" stackable="independent" />
-									<crystalShard weapon="MINELAUNCHER_CRYSTAL" value="1.0" stackable="independent" />
-									<crystalShard weapon="MINELAUNCHER_KERNEL" value="1.0" stackable="independent" />
-									<crystalShard weapon="ANCIENT_MINELAUNCHER" value="1.0" stackable="independent" />
-									<crystalShard weapon="MINELAUNCHER_GIANT" value="1.0" stackable="independent" />
-							</aug>
+		<!--Cry even more!-->
+		<aug name="CRYABOUTIT_VENGEANCE_MINELAUNCHER">
+				<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
+				<crystalShard weapon="FM_MINELAUNCHER_HULL" value="1.0" stackable="independent" />
+				<crystalShard weapon="FM_ROYAL_MINELAUNCHER" value="1.0" stackable="independent" />
+				<crystalShard weapon="FM_MINELAUNCHER_BIO" value="1.0" stackable="independent" />
+				<crystalShard weapon="MINELAUNCHER_1" value="1.0" stackable="independent" />
+				<crystalShard weapon="MINELAUNCHER_2" value="1.0" stackable="independent" />
+				<crystalShard weapon="MINELAUNCHER_3" value="1.0" stackable="independent" />
+				<crystalShard weapon="MINELAUNCHER_FREE" value="1.0" stackable="independent" />
+				<crystalShard weapon="MINELAUNCHER_FIRE" value="1.0" stackable="independent" />
+				<crystalShard weapon="MINELAUNCHER_BREACH" value="1.0" stackable="independent" />
+				<crystalShard weapon="MINELAUNCHER_STUN" value="1.0" stackable="independent" />
+				<crystalShard weapon="MINELAUNCHER_CRYSTAL" value="1.0" stackable="independent" />
+				<crystalShard weapon="MINELAUNCHER_KERNEL" value="1.0" stackable="independent" />
+				<crystalShard weapon="ANCIENT_MINELAUNCHER" value="1.0" stackable="independent" />
+				<crystalShard weapon="MINELAUNCHER_GIANT" value="1.0" stackable="independent" />
+		</aug>
 
-			</augments>
-
-
+	</augments>
 
 
-			<augments> <!--FORGEMASTER AUGMENTS for Energized Rooms -->
-				<aug name="ENERGIZED_ROOM_MEDBAY">
-					<statBoosts>
-						<statBoost name="allDamageTakenMultiplier">
-							<boostType>MULT</boostType>
-							<amount>0.6</amount>
-							<shipTarget>ORIGINAL_SHIP</shipTarget>
-							<crewTarget>ALLIES</crewTarget>
-							<droneTarget>CREW</droneTarget>
-							<value>false</value>
-							<priority>999</priority>
-							<systemRoomTarget>ALL</systemRoomTarget>
-							<systemList>
-								<medbay/>
-							</systemList>
-						</statBoost>
-						<statBoost name="sabotageSpeedMultiplier">
-							<boostType>MULT</boostType>
-							<amount>0.5</amount>
-							<shipTarget>ORIGINAL_SHIP</shipTarget>
-							<crewTarget>ENEMIES</crewTarget>
-							<droneTarget>CREW</droneTarget>
-							<value>false</value>
-							<priority>999</priority>
-							<systemRoomTarget>ALL</systemRoomTarget>
-							<systemList>
-								<medbay/>
-							</systemList>
-						</statBoost>
-						<statBoost name="trueHealAmount">
-							<boostType>FLAT</boostType>
-							<shipTarget>ORIGINAL_SHIP</shipTarget>
-							<crewTarget>ENEMIES</crewTarget>
-							<droneTarget>ALL</droneTarget>
-							<amount>-3</amount>
-							<priority>0</priority>
-							<systemRoomTarget>ALL</systemRoomTarget>
-							<systemList>
-								<medbay/>
-							</systemList>
-						</statBoost>
-
-					</statBoosts>
-				</aug>
-
-				<aug name="ENERGIZED_ROOM_WEAPONS">
-					<statBoosts>
-						<statBoost name="allDamageTakenMultiplier">
-							<boostType>MULT</boostType>
-							<amount>0.6</amount>
-							<shipTarget>ORIGINAL_SHIP</shipTarget>
-							<crewTarget>ALLIES</crewTarget>
-							<droneTarget>CREW</droneTarget>
-							<value>false</value>
-							<priority>999</priority>
-							<systemRoomTarget>ALL</systemRoomTarget>
-							<systemList>
-								<weapons/>
-							</systemList>
-						</statBoost>
-						<statBoost name="sabotageSpeedMultiplier">
-							<boostType>MULT</boostType>
-							<amount>0.5</amount>
-							<shipTarget>ORIGINAL_SHIP</shipTarget>
-							<crewTarget>ENEMIES</crewTarget>
-							<droneTarget>CREW</droneTarget>
-							<value>false</value>
-							<priority>999</priority>
-							<systemRoomTarget>ALL</systemRoomTarget>
-							<systemList>
-								<weapons/>
-							</systemList>
-						</statBoost>
-						<statBoost name="trueHealAmount">
-							<boostType>FLAT</boostType>
-							<shipTarget>ORIGINAL_SHIP</shipTarget>
-							<crewTarget>ENEMIES</crewTarget>
-							<droneTarget>ALL</droneTarget>
-							<amount>-3</amount>
-							<priority>0</priority>
-							<systemRoomTarget>ALL</systemRoomTarget>
-							<systemList>
-								<weapons/>
-							</systemList>
-						</statBoost>
-					</statBoosts>
-				</aug>
-
-				<aug name="ENERGIZED_ROOM_CLOAKING">
-					<statBoosts>
-						<statBoost name="allDamageTakenMultiplier">
-							<boostType>MULT</boostType>
-							<amount>0.6</amount>
-							<shipTarget>ORIGINAL_SHIP</shipTarget>
-							<crewTarget>ALLIES</crewTarget>
-							<droneTarget>CREW</droneTarget>
-							<value>false</value>
-							<priority>999</priority>
-							<systemRoomTarget>ALL</systemRoomTarget>
-							<systemList>
-								<cloaking/>
-							</systemList>
-						</statBoost>
-						<statBoost name="sabotageSpeedMultiplier">
-							<boostType>MULT</boostType>
-							<amount>0.5</amount>
-							<shipTarget>ORIGINAL_SHIP</shipTarget>
-							<crewTarget>ENEMIES</crewTarget>
-							<droneTarget>CREW</droneTarget>
-							<value>false</value>
-							<priority>999</priority>
-							<systemRoomTarget>ALL</systemRoomTarget>
-							<systemList>
-								<cloaking/>
-							</systemList>
-						</statBoost>
-						<statBoost name="trueHealAmount">
-							<boostType>FLAT</boostType>
-							<shipTarget>ORIGINAL_SHIP</shipTarget>
-							<crewTarget>ENEMIES</crewTarget>
-							<droneTarget>ALL</droneTarget>
-							<amount>-3</amount>
-							<priority>0</priority>
-							<systemRoomTarget>ALL</systemRoomTarget>
-							<systemList>
-								<cloaking/>
-							</systemList>
-						</statBoost>
-					</statBoosts>
-				</aug>
-
-				<aug name="ENERGIZED_ROOM_SHIELDS">
-					<statBoosts>
-						<statBoost name="allDamageTakenMultiplier">
-							<boostType>MULT</boostType>
-							<amount>0.6</amount>
-							<shipTarget>ORIGINAL_SHIP</shipTarget>
-							<crewTarget>ALLIES</crewTarget>
-							<droneTarget>CREW</droneTarget>
-							<value>false</value>
-							<priority>999</priority>
-							<systemRoomTarget>ALL</systemRoomTarget>
-							<systemList>
-								<cloakingshields/>
-							</systemList>
-						</statBoost>
-						<statBoost name="sabotageSpeedMultiplier">
-							<boostType>MULT</boostType>
-							<amount>0.5</amount>
-							<shipTarget>ORIGINAL_SHIP</shipTarget>
-							<crewTarget>ENEMIES</crewTarget>
-							<droneTarget>CREW</droneTarget>
-							<value>false</value>
-							<priority>999</priority>
-							<systemRoomTarget>ALL</systemRoomTarget>
-							<systemList>
-								<shields/>
-							</systemList>
-						</statBoost>
-						<statBoost name="trueHealAmount">
-							<boostType>FLAT</boostType>
-							<shipTarget>ORIGINAL_SHIP</shipTarget>
-							<crewTarget>ENEMIES</crewTarget>
-							<droneTarget>ALL</droneTarget>
-							<amount>-3</amount>
-							<priority>0</priority>
-							<systemRoomTarget>ALL</systemRoomTarget>
-							<systemList>
-								<shields/>
-							</systemList>
-						</statBoost>
-					</statBoosts>
-				</aug>
-
-			</augments>
-
-			<!--APPENDS PLATED AND FORGEMASTER TO THE VANILLA ROCK LAB UPGRADE WHITELISTS!  -->
 
 
-			<!--APPENDS ENGI TWINS TO THE VANILLA ENGI UPGRADE WHITELISTS!  -->
+	<augments> <!--FORGEMASTER AUGMENTS for Energized Rooms -->
+		<aug name="ENERGIZED_ROOM_MEDBAY">
+			<statBoosts>
+				<statBoost name="allDamageTakenMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.6</amount>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<value>false</value>
+					<priority>999</priority>
+					<systemRoomTarget>ALL</systemRoomTarget>
+					<systemList>
+						<medbay/>
+					</systemList>
+				</statBoost>
+				<statBoost name="sabotageSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.5</amount>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<value>false</value>
+					<priority>999</priority>
+					<systemRoomTarget>ALL</systemRoomTarget>
+					<systemList>
+						<medbay/>
+					</systemList>
+				</statBoost>
+				<statBoost name="trueHealAmount">
+					<boostType>FLAT</boostType>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<amount>-3</amount>
+					<priority>0</priority>
+					<systemRoomTarget>ALL</systemRoomTarget>
+					<systemList>
+						<medbay/>
+					</systemList>
+				</statBoost>
 
-			<mod:findLike type ="augments"> <!-- LAB_DEFENDER_REPAIRS -->
-				<mod:findName type="aug" name="LAB_DEFENDER_REPAIRS">
-					<mod:findLike type="statBoosts">
-						<mod:findLike type="statBoost">
-							<mod:findLike type="whiteList">
-								<mod-append:mossberg/>
-								<mod-append:remington/>
-							</mod:findLike>
-						</mod:findLike>
+			</statBoosts>
+		</aug>
+
+		<aug name="ENERGIZED_ROOM_WEAPONS">
+			<statBoosts>
+				<statBoost name="allDamageTakenMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.6</amount>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<value>false</value>
+					<priority>999</priority>
+					<systemRoomTarget>ALL</systemRoomTarget>
+					<systemList>
+						<weapons/>
+					</systemList>
+				</statBoost>
+				<statBoost name="sabotageSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.5</amount>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<value>false</value>
+					<priority>999</priority>
+					<systemRoomTarget>ALL</systemRoomTarget>
+					<systemList>
+						<weapons/>
+					</systemList>
+				</statBoost>
+				<statBoost name="trueHealAmount">
+					<boostType>FLAT</boostType>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<amount>-3</amount>
+					<priority>0</priority>
+					<systemRoomTarget>ALL</systemRoomTarget>
+					<systemList>
+						<weapons/>
+					</systemList>
+				</statBoost>
+			</statBoosts>
+		</aug>
+
+		<aug name="ENERGIZED_ROOM_CLOAKING">
+			<statBoosts>
+				<statBoost name="allDamageTakenMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.6</amount>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<value>false</value>
+					<priority>999</priority>
+					<systemRoomTarget>ALL</systemRoomTarget>
+					<systemList>
+						<cloaking/>
+					</systemList>
+				</statBoost>
+				<statBoost name="sabotageSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.5</amount>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<value>false</value>
+					<priority>999</priority>
+					<systemRoomTarget>ALL</systemRoomTarget>
+					<systemList>
+						<cloaking/>
+					</systemList>
+				</statBoost>
+				<statBoost name="trueHealAmount">
+					<boostType>FLAT</boostType>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<amount>-3</amount>
+					<priority>0</priority>
+					<systemRoomTarget>ALL</systemRoomTarget>
+					<systemList>
+						<cloaking/>
+					</systemList>
+				</statBoost>
+			</statBoosts>
+		</aug>
+
+		<aug name="ENERGIZED_ROOM_SHIELDS">
+			<statBoosts>
+				<statBoost name="allDamageTakenMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.6</amount>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<value>false</value>
+					<priority>999</priority>
+					<systemRoomTarget>ALL</systemRoomTarget>
+					<systemList>
+						<cloakingshields/>
+					</systemList>
+				</statBoost>
+				<statBoost name="sabotageSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.5</amount>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<value>false</value>
+					<priority>999</priority>
+					<systemRoomTarget>ALL</systemRoomTarget>
+					<systemList>
+						<shields/>
+					</systemList>
+				</statBoost>
+				<statBoost name="trueHealAmount">
+					<boostType>FLAT</boostType>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<amount>-3</amount>
+					<priority>0</priority>
+					<systemRoomTarget>ALL</systemRoomTarget>
+					<systemList>
+						<shields/>
+					</systemList>
+				</statBoost>
+			</statBoosts>
+		</aug>
+
+	</augments>
+
+	<!--APPENDS PLATED AND FORGEMASTER TO THE VANILLA ROCK LAB UPGRADE WHITELISTS!  -->
+
+
+	<!--APPENDS ENGI TWINS TO THE VANILLA ENGI UPGRADE WHITELISTS!  -->
+
+	<mod:findLike type ="augments"> <!-- LAB_DEFENDER_REPAIRS -->
+		<mod:findName type="aug" name="LAB_DEFENDER_REPAIRS">
+			<mod:findLike type="statBoosts">
+				<mod:findLike type="statBoost">
+					<mod:findLike type="whiteList">
+						<mod-append:mossberg/>
+						<mod-append:remington/>
 					</mod:findLike>
-				</mod:findName>
+				</mod:findLike>
 			</mod:findLike>
+		</mod:findName>
+	</mod:findLike>
 
-			<!--APPENDS PLATED AND FORGEMASTER TO OSMIAN BATTERIES  -->
+	<!--APPENDS PLATED AND FORGEMASTER TO OSMIAN BATTERIES  -->
 
-			<mod:findLike type ="augments"> <!-- OSMIAN_BATTERIES -->
-				<mod:findName type="aug" name="OSMIAN_BATTERIES">
-					<mod:findLike type="statBoosts">
-						<mod:findLike type="statBoost" name="powerCharges">
-							<mod:findLike type="whiteList">
-								<mod-append:fm_plated/>
-								<mod-append:fm_forgemasterperson_player/>
-							</mod:findLike>
-						</mod:findLike>
+	<mod:findLike type ="augments"> <!-- OSMIAN_BATTERIES -->
+		<mod:findName type="aug" name="OSMIAN_BATTERIES">
+			<mod:findLike type="statBoosts">
+				<mod:findLike type="statBoost" name="powerCharges">
+					<mod:findLike type="whiteList">
+						<mod-append:fm_plated/>
+						<mod-append:fm_forgemasterperson_player/>
 					</mod:findLike>
-				</mod:findName>
+				</mod:findLike>
 			</mod:findLike>
+		</mod:findName>
+	</mod:findLike>
 
-			<!--Append for fake drones to be affected augments from engineer arty -->
+	<!--Append for fake drones to be affected augments from engineer arty -->
 
-			<mod:findLike type ="augments"> <!--engineer lab-->
-				<mod:findName type="aug" name="LAB_ENGINEER_DRONES">
-					<mod:findLike type="statBoosts">
-						<mod-append:statBoost name="statBoost">
-							<statBoost name="damageMultiplier">
-								<boostType>MULT</boostType>
-								<amount>1.15</amount>
-								<shipTarget>CURRENT_ROOM</shipTarget>
-								<crewTarget>ALLIES</crewTarget>
-								<droneTarget>CREW</droneTarget>
-								<affectsSelf>false</affectsSelf>
-								<priority>0</priority>
-								<boostAnim>engineer_buff</boostAnim>
-								<whiteList load="LIST_FM_FAKEDRONES"/>
-							</statBoost>
-							<shipTarget>ALL</shipTarget>
-							<crewTarget>ALLIES</crewTarget>
-							<whiteList>
-								<human_engineer />
-								<human_technician />
-								<easter_bubby />
-							</whiteList>
-						</mod-append:statBoost>
-						<mod-append:statBoost name="statBoost">
-							<statBoost name="repairSpeed">
-								<boostType>MULT</boostType>
-								<amount>1.15</amount>
-								<shipTarget>CURRENT_ROOM</shipTarget>
-								<crewTarget>ALLIES</crewTarget>
-								<droneTarget>CREW</droneTarget>
-								<affectsSelf>false</affectsSelf>
-								<priority>0</priority>
-								<whiteList load="LIST_FM_FAKEDRONES"/>
-							</statBoost>
-							<shipTarget>ALL</shipTarget>
-							<crewTarget>ALLIES</crewTarget>
-							<whiteList>
-								<human_engineer />
-								<human_technician />
-								<easter_bubby />
-							</whiteList>
-						</mod-append:statBoost>
-						<mod-append:statBoost name="statBoost">
-							<statBoost name="trueHealAmount">
-								<boostType>FLAT</boostType>
-								<amount>6</amount>
-								<shipTarget>CURRENT_ROOM</shipTarget>
-								<crewTarget>ALLIES</crewTarget>
-								<droneTarget>CREW</droneTarget>
-								<affectsSelf>false</affectsSelf>
-								<priority>0</priority>
-								<whiteList load="LIST_FM_FAKEDRONES"/>
-							</statBoost>
-							<shipTarget>ALL</shipTarget>
-							<crewTarget>ALLIES</crewTarget>
-							<whiteList>
-								<human_engineer />
-								<human_technician />
-								<easter_bubby />
-							</whiteList>
-						</mod-append:statBoost>
-					</mod:findLike>
-				</mod:findName>
+	<mod:findLike type ="augments"> <!--engineer lab-->
+		<mod:findName type="aug" name="LAB_ENGINEER_DRONES">
+			<mod:findLike type="statBoosts">
+				<mod-append:statBoost name="statBoost">
+					<statBoost name="damageMultiplier">
+						<boostType>MULT</boostType>
+						<amount>1.15</amount>
+						<shipTarget>CURRENT_ROOM</shipTarget>
+						<crewTarget>ALLIES</crewTarget>
+						<droneTarget>CREW</droneTarget>
+						<affectsSelf>false</affectsSelf>
+						<priority>0</priority>
+						<boostAnim>engineer_buff</boostAnim>
+						<whiteList load="LIST_FM_FAKEDRONES"/>
+					</statBoost>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<whiteList>
+						<human_engineer />
+						<human_technician />
+						<easter_bubby />
+					</whiteList>
+				</mod-append:statBoost>
+				<mod-append:statBoost name="statBoost">
+					<statBoost name="repairSpeed">
+						<boostType>MULT</boostType>
+						<amount>1.15</amount>
+						<shipTarget>CURRENT_ROOM</shipTarget>
+						<crewTarget>ALLIES</crewTarget>
+						<droneTarget>CREW</droneTarget>
+						<affectsSelf>false</affectsSelf>
+						<priority>0</priority>
+						<whiteList load="LIST_FM_FAKEDRONES"/>
+					</statBoost>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<whiteList>
+						<human_engineer />
+						<human_technician />
+						<easter_bubby />
+					</whiteList>
+				</mod-append:statBoost>
+				<mod-append:statBoost name="statBoost">
+					<statBoost name="trueHealAmount">
+						<boostType>FLAT</boostType>
+						<amount>6</amount>
+						<shipTarget>CURRENT_ROOM</shipTarget>
+						<crewTarget>ALLIES</crewTarget>
+						<droneTarget>CREW</droneTarget>
+						<affectsSelf>false</affectsSelf>
+						<priority>0</priority>
+						<whiteList load="LIST_FM_FAKEDRONES"/>
+					</statBoost>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<whiteList>
+						<human_engineer />
+						<human_technician />
+						<easter_bubby />
+					</whiteList>
+				</mod-append:statBoost>
 			</mod:findLike>
-			<mod:findLike type ="augments"> <!--Ex drone booster-->
-				<mod:findName type="aug" name="EX_DRONE_SPEED">
-					<mod:findLike type="statBoosts">
-						<!--fake drone boosting-->
-						<mod-append:statBoost name="moveSpeedMultiplier">
-							<boostType>MULT</boostType>
-							<shipTarget>ALL</shipTarget>
-							<crewTarget>ALLIES</crewTarget>
-							<droneTarget>CREW</droneTarget>
-							<amount>2</amount>
-							<priority>0</priority>
-							<systemPowerDependency>
-								<drones/>
-							</systemPowerDependency>
-							<systemPowerScaling>
-								<noSys>0</noSys>
-								<noPwr>0</noPwr>
-								<onePwr>1</onePwr>
-							</systemPowerScaling>
-							<whiteList list="LIST_FM_FAKEDRONES"/>
-						</mod-append:statBoost>
-						<mod-append:statBoost name="damageMultiplier">
-							<boostType>MULT</boostType>
-							<shipTarget>ALL</shipTarget>
-							<crewTarget>ALLIES</crewTarget>
-							<droneTarget>CREW</droneTarget>
-							<amount>1.5</amount>
-							<priority>0</priority>
-							<systemPowerDependency>
-								<drones/>
-							</systemPowerDependency>
-							<systemPowerScaling>
-								<noSys>0</noSys>
-								<noPwr>0</noPwr>
-								<onePwr>1</onePwr>
-							</systemPowerScaling>
-							<whiteList load="LIST_FM_FAKEDRONES"/>
-						</mod-append:statBoost>
-						<mod-append:statBoost name="sabotageSpeedMultiplier">
-							<boostType>MULT</boostType>
-							<shipTarget>ALL</shipTarget>
-							<crewTarget>ALLIES</crewTarget>
-							<droneTarget>CREW</droneTarget>
-							<amount>1.5</amount>
-							<priority>0</priority>
-							<systemPowerDependency>
-								<drones/>
-							</systemPowerDependency>
-							<systemPowerScaling>
-								<noSys>0</noSys>
-								<noPwr>0</noPwr>
-								<onePwr>1</onePwr>
-							</systemPowerScaling>
-							<whiteList load="LIST_FM_FAKEDRONES"/>
-						</mod-append:statBoost>
-						<mod-append:statBoost name="repairSpeed">
-							<boostType>MULT</boostType>
-							<shipTarget>ALL</shipTarget>
-							<crewTarget>ALLIES</crewTarget>
-							<droneTarget>CREW</droneTarget>
-							<amount>1.5</amount>
-							<priority>0</priority>
-							<systemPowerDependency>
-								<drones/>
-							</systemPowerDependency>
-							<systemPowerScaling>
-								<noSys>0</noSys>
-								<noPwr>0</noPwr>
-								<onePwr>1</onePwr>
-							</systemPowerScaling>
-							<whiteList load="LIST_FM_FAKEDRONES"/>
-						</mod-append:statBoost>
-						<mod-append:statBoost name="fireRepairMultiplier">
-							<boostType>MULT</boostType>
-							<shipTarget>ALL</shipTarget>
-							<crewTarget>ALLIES</crewTarget>
-							<droneTarget>CREW</droneTarget>
-							<amount>1.5</amount>
-							<priority>0</priority>
-							<systemPowerDependency>
-								<drones/>
-							</systemPowerDependency>
-							<systemPowerScaling>
-								<noSys>0</noSys>
-								<noPwr>0</noPwr>
-								<onePwr>1</onePwr>
-							</systemPowerScaling>
-							<whiteList load="LIST_FM_FAKEDRONES"/>
-						</mod-append:statBoost>
-					</mod:findLike>
-				</mod:findName>
+		</mod:findName>
+	</mod:findLike>
+	<mod:findLike type ="augments"> <!--Ex drone booster-->
+		<mod:findName type="aug" name="EX_DRONE_SPEED">
+			<mod:findLike type="statBoosts">
+				<!--fake drone boosting-->
+				<mod-append:statBoost name="moveSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<amount>2</amount>
+					<priority>0</priority>
+					<systemPowerDependency>
+						<drones/>
+					</systemPowerDependency>
+					<systemPowerScaling>
+						<noSys>0</noSys>
+						<noPwr>0</noPwr>
+						<onePwr>1</onePwr>
+					</systemPowerScaling>
+					<whiteList list="LIST_FM_FAKEDRONES"/>
+				</mod-append:statBoost>
+				<mod-append:statBoost name="damageMultiplier">
+					<boostType>MULT</boostType>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<amount>1.5</amount>
+					<priority>0</priority>
+					<systemPowerDependency>
+						<drones/>
+					</systemPowerDependency>
+					<systemPowerScaling>
+						<noSys>0</noSys>
+						<noPwr>0</noPwr>
+						<onePwr>1</onePwr>
+					</systemPowerScaling>
+					<whiteList load="LIST_FM_FAKEDRONES"/>
+				</mod-append:statBoost>
+				<mod-append:statBoost name="sabotageSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<amount>1.5</amount>
+					<priority>0</priority>
+					<systemPowerDependency>
+						<drones/>
+					</systemPowerDependency>
+					<systemPowerScaling>
+						<noSys>0</noSys>
+						<noPwr>0</noPwr>
+						<onePwr>1</onePwr>
+					</systemPowerScaling>
+					<whiteList load="LIST_FM_FAKEDRONES"/>
+				</mod-append:statBoost>
+				<mod-append:statBoost name="repairSpeed">
+					<boostType>MULT</boostType>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<amount>1.5</amount>
+					<priority>0</priority>
+					<systemPowerDependency>
+						<drones/>
+					</systemPowerDependency>
+					<systemPowerScaling>
+						<noSys>0</noSys>
+						<noPwr>0</noPwr>
+						<onePwr>1</onePwr>
+					</systemPowerScaling>
+					<whiteList load="LIST_FM_FAKEDRONES"/>
+				</mod-append:statBoost>
+				<mod-append:statBoost name="fireRepairMultiplier">
+					<boostType>MULT</boostType>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<amount>1.5</amount>
+					<priority>0</priority>
+					<systemPowerDependency>
+						<drones/>
+					</systemPowerDependency>
+					<systemPowerScaling>
+						<noSys>0</noSys>
+						<noPwr>0</noPwr>
+						<onePwr>1</onePwr>
+					</systemPowerScaling>
+					<whiteList load="LIST_FM_FAKEDRONES"/>
+				</mod-append:statBoost>
 			</mod:findLike>
-			<mod:findLike type ="augments"> <!--internal drone booster-->
-				<mod:findName type="aug" name="UPG_DRONE_SPEED">
-					<mod:findLike type="statBoosts">
-						<!--fake drone boosting-->
-						<mod-append:statBoost name="moveSpeedMultiplier">
-							<boostType>MULT</boostType>
-							<shipTarget>ALL</shipTarget>
-							<crewTarget>ALLIES</crewTarget>
-							<droneTarget>CREW</droneTarget>
-							<amount>2</amount>
-							<priority>0</priority>
-							<systemPowerDependency>
-								<drones/>
-							</systemPowerDependency>
-							<systemPowerScaling>
-								<noSys>0</noSys>
-								<noPwr>0</noPwr>
-								<onePwr>1</onePwr>
-							</systemPowerScaling>
-							<whiteList load="LIST_FM_FAKEDRONES"/>
-						</mod-append:statBoost>
-						<mod-append:statBoost name="damageMultiplier">
-							<boostType>MULT</boostType>
-							<shipTarget>ALL</shipTarget>
-							<crewTarget>ALLIES</crewTarget>
-							<droneTarget>CREW</droneTarget>
-							<amount>1.5</amount>
-							<priority>0</priority>
-							<systemPowerDependency>
-								<drones/>
-							</systemPowerDependency>
-							<systemPowerScaling>
-								<noSys>0</noSys>
-								<noPwr>0</noPwr>
-								<onePwr>1</onePwr>
-							</systemPowerScaling>
-							<whiteList load="LIST_FM_FAKEDRONES"/>
-						</mod-append:statBoost>
-						<mod-append:statBoost name="sabotageSpeedMultiplier">
-							<boostType>MULT</boostType>
-							<shipTarget>ALL</shipTarget>
-							<crewTarget>ALLIES</crewTarget>
-							<droneTarget>CREW</droneTarget>
-							<amount>1.5</amount>
-							<priority>0</priority>
-							<systemPowerDependency>
-								<drones/>
-							</systemPowerDependency>
-							<systemPowerScaling>
-								<noSys>0</noSys>
-								<noPwr>0</noPwr>
-								<onePwr>1</onePwr>
-							</systemPowerScaling>
-							<whiteList load="LIST_FM_FAKEDRONES"/>
-						</mod-append:statBoost>
-						<mod-append:statBoost name="repairSpeed">
-							<boostType>MULT</boostType>
-							<shipTarget>ALL</shipTarget>
-							<crewTarget>ALLIES</crewTarget>
-							<droneTarget>CREW</droneTarget>
-							<amount>1.5</amount>
-							<priority>0</priority>
-							<systemPowerDependency>
-								<drones/>
-							</systemPowerDependency>
-							<systemPowerScaling>
-								<noSys>0</noSys>
-								<noPwr>0</noPwr>
-								<onePwr>1</onePwr>
-							</systemPowerScaling>
-							<whiteList load="LIST_FM_FAKEDRONES"/>
-						</mod-append:statBoost>
-						<mod-append:statBoost name="fireRepairMultiplier">
-							<boostType>MULT</boostType>
-							<shipTarget>ALL</shipTarget>
-							<crewTarget>ALLIES</crewTarget>
-							<droneTarget>CREW</droneTarget>
-							<amount>1.5</amount>
-							<priority>0</priority>
-							<systemPowerDependency>
-								<drones/>
-							</systemPowerDependency>
-							<systemPowerScaling>
-								<noSys>0</noSys>
-								<noPwr>0</noPwr>
-								<onePwr>1</onePwr>
-							</systemPowerScaling>
-							<whiteList load="LIST_FM_FAKEDRONES"/>
-						</mod-append:statBoost>
-					</mod:findLike>
-				</mod:findName>
+		</mod:findName>
+	</mod:findLike>
+	<mod:findLike type ="augments"> <!--internal drone booster-->
+		<mod:findName type="aug" name="UPG_DRONE_SPEED">
+			<mod:findLike type="statBoosts">
+				<!--fake drone boosting-->
+				<mod-append:statBoost name="moveSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<amount>2</amount>
+					<priority>0</priority>
+					<systemPowerDependency>
+						<drones/>
+					</systemPowerDependency>
+					<systemPowerScaling>
+						<noSys>0</noSys>
+						<noPwr>0</noPwr>
+						<onePwr>1</onePwr>
+					</systemPowerScaling>
+					<whiteList load="LIST_FM_FAKEDRONES"/>
+				</mod-append:statBoost>
+				<mod-append:statBoost name="damageMultiplier">
+					<boostType>MULT</boostType>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<amount>1.5</amount>
+					<priority>0</priority>
+					<systemPowerDependency>
+						<drones/>
+					</systemPowerDependency>
+					<systemPowerScaling>
+						<noSys>0</noSys>
+						<noPwr>0</noPwr>
+						<onePwr>1</onePwr>
+					</systemPowerScaling>
+					<whiteList load="LIST_FM_FAKEDRONES"/>
+				</mod-append:statBoost>
+				<mod-append:statBoost name="sabotageSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<amount>1.5</amount>
+					<priority>0</priority>
+					<systemPowerDependency>
+						<drones/>
+					</systemPowerDependency>
+					<systemPowerScaling>
+						<noSys>0</noSys>
+						<noPwr>0</noPwr>
+						<onePwr>1</onePwr>
+					</systemPowerScaling>
+					<whiteList load="LIST_FM_FAKEDRONES"/>
+				</mod-append:statBoost>
+				<mod-append:statBoost name="repairSpeed">
+					<boostType>MULT</boostType>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<amount>1.5</amount>
+					<priority>0</priority>
+					<systemPowerDependency>
+						<drones/>
+					</systemPowerDependency>
+					<systemPowerScaling>
+						<noSys>0</noSys>
+						<noPwr>0</noPwr>
+						<onePwr>1</onePwr>
+					</systemPowerScaling>
+					<whiteList load="LIST_FM_FAKEDRONES"/>
+				</mod-append:statBoost>
+				<mod-append:statBoost name="fireRepairMultiplier">
+					<boostType>MULT</boostType>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<amount>1.5</amount>
+					<priority>0</priority>
+					<systemPowerDependency>
+						<drones/>
+					</systemPowerDependency>
+					<systemPowerScaling>
+						<noSys>0</noSys>
+						<noPwr>0</noPwr>
+						<onePwr>1</onePwr>
+					</systemPowerScaling>
+					<whiteList load="LIST_FM_FAKEDRONES"/>
+				</mod-append:statBoost>
 			</mod:findLike>
+		</mod:findName>
+	</mod:findLike>
 
-		</FTL>
+</FTL>
 
 
 
