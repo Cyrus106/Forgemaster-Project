@@ -14918,6 +14918,10 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 								<crystalShard weapon="CLONE_CANNON_ZOLTAN" value="1.0" stackable="independent" />
 								<crystalShard weapon="CLONE_CANNON_LEECH" value="1.0" stackable="independent" />
 								<crystalShard weapon="CLONE_CANNON_AMPERE" value="1.0" stackable="independent" />
+
+
+								<function name="AUTO_COOLDOWN" value="999" useForReqs="true"/>
+
 							</aug>
 		<!--Cry some more-->
 							<aug name="CRYABOUTIT_VENGEANCE_CLONE">
