@@ -2608,7 +2608,7 @@
 		<text>Currently viewing the 'Exidia' Energy Diffuser.</text>
 		<choice hidden="false" req="FM_SHOTGUN_ENERGY_LIST_PLUS" blue="false">
 
-			<text>Craft the 'Exidia' Energy Diffuser† using the Energy Charger†.</text>
+			<text>Craft the 'Exidia' Energy Diffuser+ using the Energy Charger+.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_SHOTGUN_ENERGY_PLAYER"/>
@@ -2687,7 +2687,7 @@
 		<text>Currently viewing the Pulse Laser II.</text>
 		<choice hidden="false" req="FM_PULSE_2_LIST_PLUS" blue="false">
 
-			<text>Craft the Pulse Laser II† using the Energy II†.</text>
+			<text>Craft the Pulse Laser II+ using the Energy II+.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_PULSE_2_PLAYER"/>
@@ -3065,7 +3065,7 @@
 			</event>
 		</choice>
 		<choice hidden="true" req="FM_BEAM_GUILLOTINE_CHAIN_LIST_PLUS" lvl="1" blue="false">
-			<text>Craft the Menaulion Beam† using the Murder-Bot Dispersal and Fauchard beam†.</text>
+			<text>Craft the Menaulion Beam+ using the Murder-Bot Dispersal and Fauchard beam+.</text>
 			<event>
 				<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_1"/>
 				<item_modify>
@@ -3104,7 +3104,7 @@
 			</event>
 		</choice>
 		<choice hidden="true" req="FM_BEAM_GUILLOTINE_CHAIN_LIST_PLUS_2" blue="false">
-			<text>Craft the Menaulion Beam† using the locked MurderBot Dispersal and Fauchard beam†.</text>
+			<text>Craft the Menaulion Beam+ using the locked MurderBot Dispersal and Fauchard beam+.</text>
 			<event>
 				<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_1"/>
 				<item_modify>
@@ -3143,7 +3143,7 @@
 			</event>
 		</choice>
 		<choice hidden="true" req="FM_BEAM_GUILLOTINE_CHAIN_LIST_PLUS_3" lvl="1" blue="false">
-			<text>Craft the Menaulion Beam† using the internalized Murder-Bot Dispersal and Fauchard beam†.</text>
+			<text>Craft the Menaulion Beam+ using the internalized Murder-Bot Dispersal and Fauchard beam+.</text>
 			<event>
 				<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_1"/>
 				<item_modify>
@@ -3197,7 +3197,7 @@
 		<checkCargo/>
 		<text>Currently viewing the 'Valefor' Beam.</text>
 		<choice hidden="false" req="FM_BEAM_EXPLOSION_LIST_PLUS" blue="false">
-			<text>Craft the 'Valefor' Beam† using the Halberd beam†.</text>
+			<text>Craft the 'Valefor' Beam+ using the Halberd beam+.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_BEAM_EXPLOSION_PLAYER"/>
@@ -3212,24 +3212,6 @@
 				  <event>
 				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
 				  </event>
-				</choice>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<text>...</text>
-						<remove name="BOMB_1"/>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<remove name="BEAM_2_PLAYER"/>
-								<choice hidden="true">
-									<text>Continue...</text>
-									<event load="FM_BEAM_EXPLOSION_INTERNAL_NPC_ADDON_CHECK"/>
-								</choice>
-							</event>
-						</choice>
-					</event>
 				</choice>
 			</event>
 		</choice>
@@ -3336,7 +3318,7 @@
 		<checkCargo/>
 		<text>Currently viewing the 'Hemlock' Pinpoint.</text>
 		<choice hidden="false" req="FM_FOCUS_ENERGY_2_LIST_PLUS" blue="false">
-			<text>Craft the 'Hemlock' Pinpoint† using the Energy II†.</text>
+			<text>Craft the 'Hemlock' Pinpoint+ using the Energy II+.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_FOCUS_ENERGY_2_PLAYER"/>
@@ -3513,7 +3495,7 @@
 		<checkCargo/>
 		<text>Currently viewing the 'KHEIMON' Anomaly Dispenser.</text>
 		<choice hidden="false" req="FM_SHOTGUN_ANOMALY_LIST_MEGA" blue="false">
-			<text>Craft the 'KHEIMON' Anomaly Dispenser†† using the Frost II† and Irradiated Flak†.</text>
+			<text>Craft the 'KHEIMON' Anomaly Dispenser++ using the Frost II+ and Irradiated Flak+.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_SHOTGUN_ANOMALY_MEGA"/>
@@ -3531,7 +3513,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="FM_SHOTGUN_ANOMALY_LIST_PLUS" blue="false">
-			<text>Craft the 'KHEIMON' Anomaly Dispenser† using the Frost II† and Irradiated Flak.</text>
+			<text>Craft the 'KHEIMON' Anomaly Dispenser+ using the Frost II+ and Irradiated Flak.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_SHOTGUN_ANOMALY_PLAYER"/>
@@ -3549,7 +3531,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="FM_SHOTGUN_ANOMALY_LIST_PLUS_2" blue="false">
-			<text>Craft the 'KHEIMON' Anomaly Dispenser† using the Frost II and Irradiated Flak†.</text>
+			<text>Craft the 'KHEIMON' Anomaly Dispenser+ using the Frost II and Irradiated Flak+.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_SHOTGUN_ANOMALY_PLAYER"/>
@@ -4243,7 +4225,7 @@
 		<checkCargo/>
 		<text>Currently viewing the 'Hellfire' Missiles.</text>
 		<choice hidden="false" req="FM_MISSILES_BURST_FIRE_LIST_MEGA_PLUS" blue="false">
-			<text>Craft the 'Hellfire' Missiles† using the Ares missiles† and Hades missiles†.</text>
+			<text>Craft the 'Hellfire' Missiles+ using the Ares missiles+ and Hades missiles+.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_MISSILES_BURST_FIRE_MEGA"/>
@@ -4261,7 +4243,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="FM_MISSILES_BURST_FIRE_LIST_PLUS" blue="false">
-			<text>Craft the 'Hellfire' Missiles† using the Ares missiles and Hades missiles†.</text>
+			<text>Craft the 'Hellfire' Missiles+ using the Ares missiles and Hades missiles+.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_MISSILES_BURST_FIRE_PLAYER"/>
@@ -4279,7 +4261,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="FM_MISSILES_BURST_FIRE_LIST_PLUS_TYPE2" blue="false">
-			<text>Craft the 'Hellfire' Missiles† using the Ares missiles† and Hades missiles.</text>
+			<text>Craft the 'Hellfire' Missiles+ using the Ares missiles+ and Hades missiles.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_MISSILES_BURST_FIRE_PLAYER"/>
@@ -4324,7 +4306,7 @@
 		<checkCargo/>
 		<text>Currently viewing the 'Chernobog' Missiles.</text>
 		<choice hidden="false" req="FM_MISSILES_CLOAK_STUN_LIST_PLUS" blue="false">
-			<text>Craft the 'Chernobog' Missiles† using the Energy Stunner†.</text>
+			<text>Craft the 'Chernobog' Missiles+ using the Energy Stunner+.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_MISSILES_CLOAK_STUN_PLAYER"/>
