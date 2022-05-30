@@ -16191,7 +16191,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<mod-append:name>CURA_MVBOSS_SPAWNER</mod-append:name>
 			<mod-append:name>TWISTED_MANTIS_UPGRADER</mod-append:name>
 			<mod-append:name>TWISTED_FLAK_FORGE</mod-append:name>
-			<mod-append:name>TWISTED_KESTREL_GHOST_SUMMON</mod-append:name>
+			<!--<mod-append:name>TWISTED_KESTREL_GHOST_SUMMON</mod-append:name>-->
 		</mod:findName>
 	</mod:findLike>
 </FTL>

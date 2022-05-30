@@ -62,7 +62,8 @@
 	<!--twisted Monk	-->
 	<event name="TWISTED_BLESSING_KILLCOUNT"> <!--this checks if enemy has crew in first place so auto ships can't be ck-d-->
 		<triggeredEvent event="TWISTED_BLESSING_CREWKILL_CHECK" thisFight="true">
-			<enemyDeaths amount="1" includeClonebay="false" countNewCrew="false"/>
+			<!--<enemyDeaths amount="1" includeClonebay="false" countNewCrew="false"/>-->
+			<enemyCrew min="1" max="999" includeClonebay="false" countNewCrew="false"/>
 		</triggeredEvent>
 	</event>
 	<event name="TWISTED_BLESSING_CREWKILL_CHECK"> <!-- this checks if enemy has no more crew-->
@@ -76,6 +77,55 @@
 		<variable name = "twisted_blessing_counter" op = "add" val = "1"/>
 	</event>
 </FTL>
+
+<FTL><!--Generic Kill Events-->
+	<event name="FM_CREWKILL_TRACKER"> <!--Autoship check so crew kill doesn't trigger on autos-->
+		<triggeredEvent event="FM_CREWKILL_TRACKER_2" thisFight="true">
+			<enemyCrew min="1" max="999" includeClonebay="false" countNewCrew="false"/>
+		</triggeredEvent>
+	</event>
+	<event name="FM_CREWKILL_TRACKER_2"> <!-- this checks if enemy has no more crew-->
+		<triggeredEvent event="FM_CREWKILL_TRACKER_EVENT" thisFight="true">
+			<enemyCrew amount="0" includeClonebay="true"/>
+		</triggeredEvent>
+	</event>
+
+	<event name="FM_CREWKILL_TRACKER_EVENT">
+		<loadEventList seeded="false" default="TRUENOTHING">
+			<event name="TWISTED_KESTREL_CREWKILL" req="TWISTED_KESTREL_GHOST_SUMMON"/>
+		</loadEventList>
+	</event>
+
+	<event name="TWISTED_KESTREL_CREWKILL">
+		<text>As the last of the enemy's crew perishes, you notice something coalescing on your ship. It's a ghost, confused but obedient.</text>
+		<crewMember amount="1" class="LIST_CREW_GHOST"/>
+	</event>
+
+
+	<event name="FM_HULLKILL_TRACKER"> <!-- this checks if enemy has no more hull-->
+		<triggeredEvent event="FM_HULLKILL_TRACKER_EVENT" enemyHull="0"/>
+	</event>
+
+	<event name="FM_HULLKILL_TRACKER_EVENT"><!--Potential events to trigger on crewkill-->
+		<loadEventList seeded="false" default="TRUENOTHING">
+			<event name="TWISTED_KESTREL_HULLKILL" req="TWISTED_KESTREL_GHOST_SUMMON"/>
+		</loadEventList>
+	</event>
+
+
+	<event name="TWISTED_KESTREL_HULLKILL">
+		<text>As you watch the hull integrity of your foe drop to zero, you see a spectral form taking shape in a corner of your ship. It's a ghost, and they appear to be willing to serve you.</text>
+		<crewMember amount="1" class="LIST_CREW_GHOST"/>
+	</event>
+
+
+
+</FTL>
+
+
+
+
+
 
 <FTL><!--FM spawning-->
 	<event name="FORGEMASTER_SPAWNER">
@@ -123,14 +173,40 @@
 			</event>
 		</loadEventList>
 	</event>
+
 	<event name="FM_JUMP_MONK">
-		<loadEventList default="FM_HULL_LIMITER_WEAPON">
+		<loadEventList default="FM_JUMP_CREWKILL">
 			<event req="TWISTED_BLESSING" lvl="1">
-				<loadEvent>FM_HULL_LIMITER_WEAPON</loadEvent>
+				<loadEvent>FM_JUMP_CREWKILL</loadEvent>
 				<queueEvent>TWISTED_BLESSING_KILLCOUNT</queueEvent>
 			</event>
 		</loadEventList>
 	</event>
+
+	<event name="FM_JUMP_CREWKILL">
+		<loadEventList default="FM_JUMP_HULLKILL">
+			<event>
+				<loadEvent>FM_JUMP_HULLKILL</loadEvent>
+				<queueEvent>FM_CREWKILL_TRACKER</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="FM_JUMP_HULLKILL">
+		<loadEventList default="FM_HULL_LIMITER_WEAPON">
+			<event>
+				<loadEvent>FM_HULL_LIMITER_WEAPON</loadEvent>
+				<queueEvent>FM_HULLKILL_TRACKER</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+
+
+
+
+
+
 
 	<event name="FM_HULL_LIMITER_WEAPON">
 		<loadEventList default="FM_HULL_LIMITER_SHIELD">
