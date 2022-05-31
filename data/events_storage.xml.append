@@ -524,16 +524,15 @@
     <choice hidden="false"  blue="false">
       <text>Read the lore entry.</text>
       <event>
-        <text>"Ah, a discerning eye you have there! That weapon's one of the more unique findings in my collection." Alastair signals a Plated to bring him a large, shaped, ingot of crystal, which he places on the center of his holo-forge and begins to heat.</text>
+        <text id="text_CREATE_FM_BOMB_CRYSTAL_FIRE_1"/>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>"It was actually a creation of the Crystal scientist Stryven. She was banished by their Empire for flagrantly violating their codes regarding wartime ethics, but that didn't slow her down. From what I've gathered reading what little she kept in writing, her belief was that all things should be able to die - no creature deserved to be free from the fear of death. So she designed this." Alastair gestures to the crystal ingot, which has begun to lose its form and start melting in the intense heat of the forge.
-            </text>
+            <text id="text_CREATE_FM_BOMB_CRYSTAL_FIRE_2"/>
             <choice hidden="true">
               <text>Continue...</text>
               <event>
-                <text> "Created a reactive form of crystal capable of latching onto things and burning through them in a heartbeat. Tricky to work with, too - I can't shape it with my hands like I usually do, or it'll melt right through my skin, stone though it is. How do I do it, you ask?" Alastair winks. "Trade secret, lad. It'll be ready in a moment." A few minutes later, a dangerous-looking crystal-infused explosive is transferred to your ship. This will prove useful indeed.</text>
+                <text id="text_CREATE_FM_BOMB_CRYSTAL_FIRE_3"/>
                 <choice hidden="true">
                   <text>Continue...</text>
                   <event load="FM_STORAGE_CHECK_JOURNAL_LOAD"/>
@@ -556,18 +555,15 @@
     <choice hidden="false"  blue="false">
       <text>Read the lore entry.</text>
       <event>
-        <text>"A dangerous choice there, lad. Though it's a Stryven piece, so that should be no surprise. Her efforts were only ever directed towards the goal of death for all. She was a brilliant mind, though. This one in particular has a bit of a sordid history, and its tale doesn't end well for her. Her final piece, actually."?</text>
-        <choice hidden="true">
+        <text id="text_CREATE_FM_BOMB_CRYSTAL_BIO_1"/>
+        <choice>
           <text>Continue...</text>
           <event>
-            <text>Alastair nods to a Plated assistant, who brings him a heavy ingot of intricate blue crystal. "This weapon calls for the crystalline structure to be infused with a most devious species of nanomechanical virus. It's quite an interesting effect, actually. The weapon scrambles the genetic code of its targets in a way that makes standard systems read them as invalid, meaning it won't lock onto their life signatures for healing or cloning. Stryven hated cloning, or so I'm told. Called it cheating a rightful death."
-            </text>
+            <text id="text_CREATE_FM_BOMB_CRYSTAL_BIO_2"/>
             <choice hidden="true">
               <text>Continue...</text>
               <event>
-                <text>Alastair accepts a vial filled with a thick inky fluid from a Plated running up. "We're using samples from her work. I don't have the knowledge to make my own virus, so I culture hers and keep it in stock." Alastair begins adding various selections of powders and objects to a crucible, then places it into the forge. "Be warned, lad. Stryven's testing of this device killed her. A simple short in the firing mechanism, and it ripped her life away while she stood at a table. Dead for nearly a month before I found her lab. So be careful, eh?"
-                  Several minutes later, a pristine weapon surmounted by an off-putting purplish crystal is mounted on your ship.
-                </text>
+                <text id="text_CREATE_FM_BOMB_CRYSTAL_BIO_3"/>
                 <choice hidden="true">
                   <text>Continue...</text>
                   <event load="FM_STORAGE_CHECK_JOURNAL_LOAD"/>
