@@ -664,21 +664,19 @@
     <choice hidden="true">
       <text>Read the lore entry.</text>
       <event>
-        <text>Alastair raises a curious eyebrow. "The Menaulion is certainly a choice. I wonder what enemies you face that you would choose this over anything else."</text>
+        <text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_1"/>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>Though Alastair prefers to let his customers watch him work, he motions for a Plated to escort you away. As the Plated walks, he explains. "Alastair loves to teach, but safety is more of a concern. He can't sell to you if you're dead from radiation sickness, now can he?" The Plated pauses, hoping for your laughter with gleaming eyes, and then sighs. "Nobody ever laughs at that one. Is it too gruesome?" His shoulders slump a little as he opens a door to the lower part of the ship and guides you to a lead lined room. "If anything goes wrong, an alarm will go off. There's radiation equipment in here with an instruction manual in every language available if need, though I'm sure you're fine."
-            </text>
+            <text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_2"/>
             <choice hidden="true">
               <text>Continue...</text>
               <event>
-                <text>The door dings, making you think that perhaps you'll need to start learning how to switch an old Geiger counter on. Thankfully, it was just the Plated coming to get you. He leads you across the lower deck to a part of the ship that has a small enclosed workspace with glass walls. You see Alastair working with the tiny invaders very carefully. He waves, points down, and makes a throat slitting motion. You can see the nanomachines are inactive, but you know he'd be dead in a microsecond if they got loose.
-                </text>
+                <text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_3"/>
                 <choice hidden="true">
                   <text>Continue...</text>
                   <event>
-                    <text>With radiation and nanomachines safely contained, Alastair emerges from the workspace with your new weapon in tow, escorting you back to the upper deck. "Nobody believed the rumors about this weapon when it was first made. You've got to have guts to make one of these on your own ship, or be totally insane. You decide which one applies to me!" Alastair gives you a hearty laugh and sends you on your way.</text>
+                    <text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_4"/>
                     <choice hidden="true">
                       <text>Continue...</text>
                       <event load="FM_STORAGE_CHECK_JOURNAL_LOAD"/>
