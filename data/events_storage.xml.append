@@ -487,20 +487,19 @@
     <choice hidden="false"  blue="false">
       <text>Read the lore entry.</text>
       <event>
-        <text>Alastair's eyes light up with glee. "Ah! A fine choice, lad. And this one has a story behind it!" </text> <!--First locked in screen, shows Cerberus, TOP text part-->
+        <text id="text_CREATE_FM_ION_TRI_FIRE_1"/><!--First locked in screen, shows Cerberus, TOP text part-->
         <choice hidden="true">
           <text>Continue...</text> <!--First locked in screen, Continue option, the ONLY text the player can select and see-->
           <event>
-            <text>"This isn't the most unique thing I've ever worked on, but boy it sure is effective! I get a lot of replica requests per year for this one, but too bad- time to break it down and make it into something much better."</text> <!--Second locked in screen, shows Fire Ion being removed(right below the text), TOP text part here-->
+            <text id="text_CREATE_FM_ION_TRI_FIRE_2"/><!--Second locked in screen, shows Fire Ion being removed(right below the text), TOP text part here-->
             <choice hidden="true">
               <text>Continue...</text>
               <event>
-                <text>"These ion weapons are highly scientific aren't they... sometimes science is just a couple guys throwing their hands up until something cool happens, and I'd say this one's pretty cool." </text> <!--Third locked in screen, shows Tri Ion being removed(right below the text), TOP text part here-->
+                <text id="text_CREATE_FM_ION_TRI_FIRE_3"/><!--Third locked in screen, shows Tri Ion being removed(right below the text), TOP text part here-->
                 <choice hidden="true">
                   <text>Continue...</text> <!--Third locked in screen, Continue option, the ONLY text the player can select and see-->
                   <event>
-                    <text>"Lad, have you ever heard of the Greek religion," Alastair asks. "I learned about it in a book about humans. There's a myth about a three-headed dog named Cerberus who protects the gates to hell. The only thing more fearsome than this dog would be my daughter Lucille asking me for a dog." Alastair hammers on the weapon a few times and looks up. "I told her that this is no ship for a dog, but she insisted that she wanted three. I finally managed to talk her out of it, but I'm not quite sure if she forgives me for that one. If you ever come across her, ask her for me would ya?"
-                    </text>  <!--Fourth locked in screen, shows nothing but the text TOP text part here-->
+                    <text id="text_CREATE_FM_ION_TRI_FIRE_4"/>  <!--Fourth locked in screen, shows nothing but the text TOP text part here-->
                     <choice hidden="true">
                       <text>Return to crafting menu.</text>  <!--Fourth locked in screen, shows nothing but the text TOP text part here-->
                       <event load="FM_STORAGE_CHECK_JOURNAL_LOAD"/>
