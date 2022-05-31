@@ -590,19 +590,19 @@
     <choice hidden="false"  blue="false">
       <text>Read the lore entry.</text>
       <event>
-        <text>"Now this, lad, is an excellent choice!" Alastair beams at you and opens his drawers for a special tool. "This one is a bit special, and involves the use of a trade secret. It's called a klystron stabilizer. I'll spare you the physics lesson on this one. The job is doable without it, but having this little tool makes the job incredibly less stressful with large hands like mine."</text>
+        <text id="text_CREATE_FM_LASER_PHOTON_1_1"/>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>"I enjoy these types of weapons," Alastair opens, "because they require more strategy to use. It's no longer about murder and destruction when you lead with this, and when I come across salvage missions that were caused by photon technology, they are the most fruitful!" He nods in satisfaction, clearly excited by your choice. </text>
+            <text id="text_CREATE_FM_LASER_PHOTON_1_2"/>
             <choice hidden="true">
               <text>Continue...</text>
               <event>
-                <text>You notice Alastair has gone quiet, deep in his work, when he suddenly speaks up. "I may have issues with Zulfiquar, but they are capable of creating beautiful weapons at times. This is one of them." He trails off, finding his voice towards the end of his deconstruction of the weapon. "I find much beauty in weapons that do not simply shoot to kill. Yes, it may kill, but this weapon is proof of so much more." </text>
+                <text id="text_CREATE_FM_LASER_PHOTON_1_3"/>
                 <choice hidden="true">
                   <text>Continue...</text>
                   <event>
-                    <text>"I never received proper blueprints for this weapon. Those Shells kept it close to their chest, but there is no force greater than curiosity. I've got my own blueprints that I've written after a long time of studying this technology." Alastair returns the finished weapon to you. "This weapon will be incredibly useful to you, do not underestimate an enemy stripped of their comforts. Be well, lad!"</text>
+                    <text id="text_CREATE_FM_LASER_PHOTON_1_4"/>
                     <choice hidden="true">
                       <text>Continue...</text>
                       <event load="FM_STORAGE_CHECK_JOURNAL_LOAD"/>
@@ -627,19 +627,19 @@
     <choice hidden="false"  blue="false">
       <text>Read the lore entry.</text>
       <event>
-        <text>"Ah! I see you've come upon favorable conditions. Normally I could make you a nice weapon from these components, but you've brought the perfect parts to create something even better."</text>
+        <text id="text_CREATE_FM_LASER_PHOTON_2_1"/>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>"The Mantis, to my knowledge, are not the brightest bunch. I've yet to permanently take one in as a student due to this, though I admire the many attempts made to do so." Alastair chuckles at the thought. "If you happen to meet a Mantis of remarkable intelligence who shows a propensity for weapons crafting, send them my way. I'd love to have them!"</text>
+            <text id="text_CREATE_FM_LASER_PHOTON_2_2"/>
             <choice hidden="true">
               <text>Continue...</text>
               <event>
-                <text>Alastair works in quiet, studying the inner workings of the weapon before him. He stares intensely at a part on the table with his hands on the work surface, gripping the edge until you see the metal begin to bow a bit. He looks up to meet your gaze, loosens his grip, and his expression softens. "It's easy to get lost in thought when examining weapons, is it not, lad?" He taps the part gently and laughs. "Some people feel deep emotion when they look upon photos, but for some of us, machine parts can do the trick."</text>
+                <text id="text_CREATE_FM_LASER_PHOTON_2_3"/>
                 <choice hidden="true">
                   <text>Continue...</text>
                   <event>
-                    <text>"I truly believe any weapon can be improved upon. You give me your photon laser, and I raise you this." Alastair gives you the Photon II proudly. "Most would find this weapon quite useless due to the flaws found in the original, and I might agree. My tweaks to the first version are enough to make it worthwhile, but when you use the upgraded parts of their superior parent weapons, you can achieve a lot more. I hope you find this weapon to your liking, lad, as it's taken me quite a bit of time to refine to this level."</text>
+                    <text id="text_CREATE_FM_LASER_PHOTON_2_4"/>
                     <choice hidden="true">
                       <text>Continue...</text>
                       <event load="FM_STORAGE_CHECK_JOURNAL_LOAD"/>
