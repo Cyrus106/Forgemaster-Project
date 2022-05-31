@@ -18675,9 +18675,21 @@
 	</augBlueprint>
 
 	<augBlueprint name="TWISTED_KESTREL_GHOST_SUMMON">
-		<title>Haunt Portal</title>
-		<desc>A strange device that can summon powerful ghosts at empty beacons. They all seem willing to help for now...</desc>
+		<title>Haunted Fridge</title>
+		<desc>A mysterious fridge, brimming with gas and unknowable power. Whatever lies within seems to take great satisfaction in the death of your enemies...</desc>
 		<cost>150</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+		<bp>0</bp>
+	</augBlueprint>
+
+
+
+
+	<augBlueprint name="TWISTED_KESTREL_GHOST_PURGE">
+		<title>Ghost Purger</title>
+		<desc>YOU SHOULD NEVER SEE THIS</desc>
+		<cost>0</cost>
 		<rarity>0</rarity>
 		<stackable>false</stackable>
 		<bp>0</bp>
