@@ -2799,7 +2799,7 @@
 		<choice hidden="false"  blue="false">
 			<text>Craft the Ishimura Beam.</text>
 			<event>
-				<text>As you make your request, you notice a change in Alastair's usually calm demeanor. You almost feel as if a smug aura has come about him. "You may be wondering," Alastair begins, "how I came upon blueprints for the Ishimura? It was a bit of a joint effort, between myself and a Plated who defected from Zulfiquar."</text>
+				<text id="text_CREATE_FM_BEAM_MINING_2_1"/>
 				<weapon name="FM_BEAM_MINING_2"/>
 				<item_modify>
 					<item type="scrap" min="-250" max="-250"/>
@@ -2807,32 +2807,22 @@
 				<choice hidden="true">
 					<text>Continue...</text>
 					<event>
-						<text>"Normally, lad, I wouldn't support outright plagiarism. When you see a borrowed weapon, I've normally paid a pretty penny for the rights to manufacture copies of someone's weapons. But Zulfiquar, however, is a different story.
-
-							And so it is that I met a lad named Isaac who worked on the lab that created the Mining Beam and the Ishimura. I'll come back to that in a moment- this next part requires a bit of concentration."
-						</text>
+						<text id="text_CREATE_FM_BEAM_MINING_2_2"/>
 						<remove name="BEAM_MINING"/>
 						<choice hidden="true">
 							<text>Continue...</text>
 							<event>
-								<text>Alastair opens the Pike Beam carefully, organizing pieces of the casing and innards into separate sections. You observe quietly as he takes each piece and places it into its own invisible slot. He notices you watching his careful work and speaks up.
-
-									"When the Plated are receiving their training, they start off with labeled grids for each weapon. It helps maintain consistency. As the years pass, we cover the grids and test their memory. Each part is important. Two screws may look the same, but they may have one thread more than the other."
-								</text>
+								<text id="text_CREATE_FM_BEAM_MINING_2_3"/>
 								<remove name="BEAM_LONG_2"/>
 								<choice hidden="true">
 									<text>Continue...</text> <!--Third locked in screen, Continue option, the ONLY text the player can select and see-->
 									<event>
-										<text>Alastair had started his work in the forge, but after much time, you are watching the weapon take shape in a large open area in the lower portion of his ship. As he works, he continues his story for you while his Plated help him assemble the massive weapon. "Isaac was a brilliant fellow and, when he saw how Zulfiquar was moving towards the less savory side, he left. When we encountered his old lab, there was an almost entirely new crew.
-
-											He had taken his credentials with him when he left, and so he tricked them. Before they had the chance to paint their walls with his head, he snatched the blueprints, returned to the ship, and we left."
-										</text>
+										<text id="text_CREATE_FM_BEAM_MINING_2_4"/>
 										<choice hidden="true">
 											<text>Continue...</text> <!--Third locked in screen, Continue option, the ONLY text the player can select and see-->
 											<event>
 												<metaVariable name="FM_LORE_ISHIMURA" op="set" val="1"/>
-												<text>Alastair comes to your side and monitors the Plated as they weld the large pieces together. "I appreciate you bringing your business to me instead of Zulfiquar. As long as you keep your distance from them, I'm sure we will have no issue with one another." Alastair turns to you and his expression becomes grim. "And, of course, that you are responsible with this weapon. It has incredible power, and I trust you will not abuse it." He stares at you intensely for a moment and then breaks, smiling and slamming his strong hand into your back. "Go get your ship ready to mount this thing- if you need any help, send a message over the comms and we'll be there in no time."
-												</text>
+												<text id="text_CREATE_FM_BEAM_MINING_2_5"/>
 												<choice hidden="true">
 													<text>Continue...</text>
 													<event load="FM_FORGE_WEAPON_LOAD"/>
