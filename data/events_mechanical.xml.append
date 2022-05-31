@@ -63,6 +63,7 @@
 	<event name="TWISTED_BLESSING_KILLCOUNT"> <!--this checks if enemy has crew in first place so auto ships can't be ck-d-->
 		<triggeredEvent event="TWISTED_BLESSING_CREWKILL_CHECK" thisFight="true">
 			<enemyDeaths amount="1" includeClonebay="false" countNewCrew="false"/>
+			<!--<enemyCrew min="1" max="999" includeClonebay="false" countNewCrew="false"/>-->
 		</triggeredEvent>
 	</event>
 	<event name="TWISTED_BLESSING_CREWKILL_CHECK"> <!-- this checks if enemy has no more crew-->
@@ -76,6 +77,130 @@
 		<variable name = "twisted_blessing_counter" op = "add" val = "1"/>
 	</event>
 </FTL>
+
+<FTL><!--Generic Kill Events-->
+	<event name="FM_CREWKILL_TRACKER"> <!--Autoship check so crew kill doesn't trigger on autos-->
+		<triggeredEvent event="FM_CREWKILL_TRACKER_2" thisFight="true">
+			<enemyDeaths amount="1" includeClonebay="false" countNewCrew="false"/>
+			<!--<enemyCrew min="1" max="999" includeClonebay="false" countNewCrew="false"/>-->
+		</triggeredEvent>
+	</event>
+	<event name="FM_CREWKILL_TRACKER_2"> <!-- this checks if enemy has no more crew-->
+		<triggeredEvent event="FM_CREWKILL_TRACKER_EVENT" thisFight="true">
+			<enemyCrew amount="0" includeClonebay="true"/>
+		</triggeredEvent>
+	</event>
+
+	<event name="FM_CREWKILL_TRACKER_EVENT">
+		<loadEventList seeded="false" default="TRUENOTHING">
+			<event name="TWISTED_KESTREL_KILL" req="TWISTED_KESTREL_GHOST_SUMMON"/>
+		</loadEventList>
+	</event>
+
+
+
+
+	<event name="FM_HULLKILL_TRACKER"> <!-- this checks if enemy has no more hull-->
+		<triggeredEvent event="FM_HULLKILL_TRACKER_EVENT" enemyHull="0"/>
+	</event>
+
+	<event name="FM_HULLKILL_TRACKER_EVENT"><!--Potential events to trigger on crewkill-->
+		<loadEventList seeded="false" default="TRUENOTHING">
+			<event name="TWISTED_KESTREL_KILL" req="TWISTED_KESTREL_GHOST_SUMMON"/>
+		</loadEventList>
+	</event>
+
+
+	<eventList name="TWISTED_KESTREL_KILL">
+
+			<event>
+				<text>With the final spark of power in the opposing ship going dark, the Fridge shakes - a rumble echoes from within, and you feel the myriad of ghosts in its unknowable interior hum with approval. With a rush of whispering gases, a Phantom coalesces before you - ready to serve.</text>
+				<crewMember amount="1" class="phantom"/>
+				<hiddenAug>TWISTED_KESTREL_GHOST_PURGE</hiddenAug>
+				<jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>
+			</event>
+
+			<event>
+				<text>With the final spark of power in the opposing ship going dark, the Fridge shakes - a rumble echoes from within, and you feel the myriad of ghosts in its unknowable interior hum with approval. With a rush of whispering gases and a violent crackle of energy, a Wraith coalesces before you - ready to serve.</text>
+				<crewMember amount="1" class="phantom_wraith"/>
+				<hiddenAug>TWISTED_KESTREL_GHOST_PURGE</hiddenAug>
+				<jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>
+			</event>
+
+			<event>
+				<text>With the final spark of power in the opposing ship going dark, the Fridge shakes - a rumble echoes from within, and you feel the myriad of ghosts in its unknowable interior hum with approval. With a rush of whispering gases and the shimmer of heat washing over your surroundings, a Goul coalesces before you - ready to serve.</text>
+				<crewMember amount="1" class="phantom_goul"/>
+				<hiddenAug>TWISTED_KESTREL_GHOST_PURGE</hiddenAug>
+				<jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>
+			</event>
+
+			<event>
+				<text>With the final spark of power in the opposing ship going dark, the Fridge shakes - a rumble echoes from within, and you feel the myriad of ghosts in its unknowable interior hum with approval. With a thumping howl of gases moving that cause your hull to tremble slightly, a Mare coalesces before you - ready to serve.</text>
+				<crewMember amount="1" class="phantom_mare"/>
+				<hiddenAug>TWISTED_KESTREL_GHOST_PURGE</hiddenAug>
+				<jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>
+			</event>
+
+			<event>
+				<text>With the final spark of power in the opposing ship going dark, the Fridge shakes violently - a rumble echoes from within, louder than usual, and you feel the presence of a mightier entity from its unknowable interior hum with approval. With a torrential outpour of agitated white gases, an Alpha Phantom coalesces before you - ready to serve.</text>
+				<crewMember amount="1" class="phantom_alpha"/>
+				<hiddenAug>TWISTED_KESTREL_GHOST_PURGE</hiddenAug>
+				<jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>
+			</event>
+
+			<event>
+				<text>With the final spark of power in the opposing ship going dark, the Fridge shakes violently - a rumble echoes from within, louder than usual, and you feel the presence of a mightier entity from its unknowable interior hum with approval. With a violent, acidic hiss, an Alpha Mare coalesces before you - ready to serve.</text>
+				<crewMember amount="1" class="phantom_mare_alpha"/>
+				<hiddenAug>TWISTED_KESTREL_GHOST_PURGE</hiddenAug>
+				<jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>
+			</event>
+
+
+			<event>
+				<text>With the final spark of power in the opposing ship going dark, the Fridge shakes violently - a rumble echoes from within, louder than usual, and you feel the presence of a mightier entity from its unknowable interior hum with approval. The room smolders ominously as an Alpha Goul coalesces before you - ready to serve.</text>
+				<crewMember amount="1" class="phantom_goul_alpha"/>
+				<hiddenAug>TWISTED_KESTREL_GHOST_PURGE</hiddenAug>
+				<jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>
+			</event>
+
+			<event>
+				<text>With the final spark of power in the opposing ship going dark, the Fridge shakes violently - a rumble echoes from within, louder than usual, and you feel the presence of a mightier entity from its unknowable interior hum with approval. A bolt of electricity snaps against the hull of your ship as an Alpha Wraith coalesces before you - ready to serve.</text>
+				<crewMember amount="1" class="phantom_wraith_alpha"/>
+				<hiddenAug>TWISTED_KESTREL_GHOST_PURGE</hiddenAug>
+				<jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>
+			</event>
+
+			<event>
+				<text>With the final spark of power in the opposing ship going dark, the Fridge shakes uncontrollably - a howl screams forth, shaking the ship menacingly.  An overwhelming sense of horrible amusement emanates from within its walls. The howls die slowly as one of the Haunts coalesces before you - ready to serve.</text>
+				<crewMember amount="1" class="FM_LIST_CREW_HAUNTS"/>
+				<hiddenAug>TWISTED_KESTREL_GHOST_PURGE</hiddenAug>
+				<jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>
+			</event>
+
+
+			<event>
+					<text>With the final spark of power in the opposing ship going dark, the Fridge nearly cracks as it slams back against the hull of the ship - an ear-piercing scream blasts from within, sending you reeling. The bright void outside, or perhaps only your vision, dims slightly. A magnificent ghost clad in armor forms elegantly before you, some version of the Phantom King himself. He kneels before you... Ready to serve. </text>
+					<crewMember amount="1" class="unique_dessius"/>
+					<hiddenAug>TWISTED_KESTREL_GHOST_PURGE</hiddenAug>
+					<jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>
+			</event>
+
+	</eventList>
+
+	<event name="REMOVE_GHOST_PURGE">
+		<removeItem>HIDDEN TWISTED_KESTREL_GHOST_PURGE</removeItem>
+	</event>
+
+
+
+
+
+</FTL>
+
+
+
+
+
 
 <FTL><!--FM spawning-->
 	<event name="FORGEMASTER_SPAWNER">
@@ -123,14 +248,40 @@
 			</event>
 		</loadEventList>
 	</event>
+
 	<event name="FM_JUMP_MONK">
-		<loadEventList default="FM_HULL_LIMITER_WEAPON">
+		<loadEventList default="FM_JUMP_CREWKILL">
 			<event req="TWISTED_BLESSING" lvl="1">
-				<loadEvent>FM_HULL_LIMITER_WEAPON</loadEvent>
+				<loadEvent>FM_JUMP_CREWKILL</loadEvent>
 				<queueEvent>TWISTED_BLESSING_KILLCOUNT</queueEvent>
 			</event>
 		</loadEventList>
 	</event>
+
+	<event name="FM_JUMP_CREWKILL">
+		<loadEventList default="FM_JUMP_HULLKILL">
+			<event>
+				<loadEvent>FM_JUMP_HULLKILL</loadEvent>
+				<queueEvent>FM_CREWKILL_TRACKER</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="FM_JUMP_HULLKILL">
+		<loadEventList default="FM_HULL_LIMITER_WEAPON">
+			<event>
+				<loadEvent>FM_HULL_LIMITER_WEAPON</loadEvent>
+				<queueEvent>FM_HULLKILL_TRACKER</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+
+
+
+
+
+
 
 	<event name="FM_HULL_LIMITER_WEAPON">
 		<loadEventList default="FM_HULL_LIMITER_SHIELD">

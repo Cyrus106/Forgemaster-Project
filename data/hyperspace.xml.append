@@ -593,7 +593,7 @@
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<hiddenAug>TWISTED_KESTREL_BOARDING_SPLITTER</hiddenAug>
 			<hiddenAug>LAB_VAGABOND_STABLE</hiddenAug>
-			<crewLimit>11</crewLimit>
+			<crewLimit>57</crewLimit>
 			<customReactor maxLevel="35">
 				<baseCost>15</baseCost>
 				<increment>5</increment>
@@ -11867,6 +11867,18 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<locked/>
 		</aug>
 
+		<aug name="TWISTED_KESTREL_GHOST_PURGE">
+			<statBoosts>
+				<statBoost name="trueHealAmount">
+					<boostType>SET</boostType>
+					<amount>-999999</amount>
+					<shipTarget>ORIGINAL_OTHER_SHIP</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<whiteList load="LIST_CREW_GHOST"/>
+				</statBoost>
+			</statBoosts>
+		</aug>
+
 	</augments>
 
 
@@ -16191,7 +16203,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<mod-append:name>CURA_MVBOSS_SPAWNER</mod-append:name>
 			<mod-append:name>TWISTED_MANTIS_UPGRADER</mod-append:name>
 			<mod-append:name>TWISTED_FLAK_FORGE</mod-append:name>
-			<mod-append:name>TWISTED_KESTREL_GHOST_SUMMON</mod-append:name>
+			<!--<mod-append:name>TWISTED_KESTREL_GHOST_SUMMON</mod-append:name>-->
 		</mod:findName>
 	</mod:findLike>
 </FTL>

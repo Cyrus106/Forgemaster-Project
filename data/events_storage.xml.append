@@ -6089,14 +6089,14 @@
       <text>Make use of the Flak Forge (Placeholder, you should never see this for now).</text>
       <event load="STORAGE_CHECK_TWISTED_FLAK_FORGE_MENU"/>
     </mod-append:choice>
-    <mod-append:choice req="TWISTED_KESTREL_GHOST_SUMMON" blue ="true">
+    <!--<mod-append:choice req="TWISTED_KESTREL_GHOST_SUMMON" blue ="true">
       <text>Summon a horde of ghosts (will be changed later).</text>
-      <event load="STORAGE_CHECK_TWISTED_KESTREL_GHOST_MENU"/> <!--For now will just summon five random ghosts, we should improve this later-->
-    </mod-append:choice>
+      <event load="STORAGE_CHECK_TWISTED_KESTREL_GHOST_MENU"/>
+      </mod-append:choice>For now will just summon five random ghosts, we should improve this later-->
     <mod-append:choice req="TWISTED_FLAK_FORGE" blue ="true">
       <text>Make use of the Flak Forge to install an artillery system.</text>
       <event>
-        <text>Do you want to install an artillery system? (bypasses system limit if u got full systems)</text>
+        <text>Do you want to install an artillery system? (bypasses system limit if you got full systems)</text>
         <choice req="CAN_INSTALL_FLAK_ARTILLERY" max_group="1" blue ="true">
           <text>install an artillery system [-50 flak juice]</text>
           <event>
