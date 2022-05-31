@@ -113,6 +113,7 @@
 	<mod:findLike type="loadEventList">
 		<mod-append:event name="GIVE_RAGE_TWISTEDMONK" req = "TWISTED_BLESSING"/>
 		<mod-append:event name="GIVE_FLAK_TWISTEDLANIUS" req = "TWISTED_FLAK_FORGE"/>
+	<!--	<mod-append:event name="GIVE_ARM_TWISTEDROCK" req = "TWISTED_HULL_ARM"/>-->
 	</mod:findLike>
 </mod:findName>
 
@@ -156,6 +157,19 @@
 
 		<loadEvent>START_BEACON_EXPLAIN</loadEvent>
 </event>
+
+
+<!--<event name="GIVE_ARM_TWISTEDROCK">
+		<triggeredEvent event="TRUENOTHING">
+		        <req name="twisted_rock_scrap_counter" lvl="9999"/>
+		        <triggeredEventBox>
+		          <image name="statusUI/rage_counter.png" x="10" y="7" w="59" h="26" left="4" right="4" top="4" bottom="4"/>
+		            <text type="req" x="42" y="8"/>
+		            <tooltip>The scrap from your hull. Defeat your enemy to collect all of it!</tooltip>
+		        </triggeredEventBox>
+		</triggeredEvent>
+	<loadEvent>START_BEACON_EXPLAIN</loadEvent>
+</event>-->
 
 <event name="CANNOTUSETRUENOTHINGTWICE">
 	<event/>
