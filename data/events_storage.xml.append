@@ -415,21 +415,19 @@
     <choice hidden="false">
       <text>Read the lore entry.</text>
       <event>
-        <text>"The Earspoon, huh? Not one that I get requests for often. Weird name, but that's not my fault."</text> <!--First locked in screen, shows Cerberus, TOP text part-->
+        <text id="text_CREATE_FM_BEAM_PARTICLE_PIERCE_1"/> <!--First locked in screen, shows Cerberus, TOP text part-->
         <choice hidden="true">
           <text>Continue...</text>
           <event>
-            <text>"Ah, there's nothing quite like dismantling Zulfiqar weapons. I don't exactly get along with them so there's a bit of catharsis to it. Bit of a story to that one, but maybe for another time."</text> <!--Second locked in screen, shows Cerberus, TOP text part-->
+            <text id="text_CREATE_FM_BEAM_PARTICLE_PIERCE_2"/> <!--Second locked in screen, shows Cerberus, TOP text part-->
             <choice hidden="true">
               <text>Continue...</text>
               <event>
-                <text>Alastair pauses his work and shrugs. "Actually, now is as good a time as any. Did you know Zulfiqar has a top-secret research group? They're mighty interested in some of the things going on in my ship, but they're bad sports and don't want to share." Alastair resumes his work, seeming a little frustrated. "They're the reason my wife and daughter can't safely fly with me anymore. The way I see it, Zulfiqar and everything they stand for can burn. Here's to hoping you use this weapon to do so."
-                </text> <!--Third locked in screen, Continue option, the ONLY text the player can select and see-->
+                <text id="text_CREATE_FM_BEAM_PARTICLE_PIERCE_3"/> <!--Third locked in screen, Continue option, the ONLY text the player can select and see-->
                 <choice hidden="true">
                   <text>Continue...</text>
                   <event>
-                    <text>Alastair slides the peculiar weapon across the table to you. Before letting go, he decides to comment on it. "The Mantis who requested this weapon were an odd bunch, but I enjoyed listening to them. They told me they revere the humans and learned about something called an earspoon while studying them." He lets go of the weapon and stands up straight. "I did some research myself and the weapon they had me make is nothing like the real deal. It's just a weird spear! I really don't get those Mantis folks, but they pay me whatever I ask for. Enjoy the weapon!"
-                    </text>  <!--Fourth locked in screen, shows nothing but the text TOP text part here-->
+                    <text id="text_CREATE_FM_BEAM_PARTICLE_PIERCE_4"/>  <!--Fourth locked in screen, shows nothing but the text TOP text part here-->
                     <choice hidden="true">
                       <text>Continue...</text>  <!--Fourth locked in screen, shows nothing but the text TOP text part here-->
                       <event load="FM_STORAGE_CHECK_JOURNAL_LOAD"/>
