@@ -92,14 +92,11 @@
 
 	<event name="FM_CREWKILL_TRACKER_EVENT">
 		<loadEventList seeded="false" default="TRUENOTHING">
-			<event name="TWISTED_KESTREL_CREWKILL" req="TWISTED_KESTREL_GHOST_SUMMON"/>
+			<event name="TWISTED_KESTREL_KILL" req="TWISTED_KESTREL_GHOST_SUMMON"/>
 		</loadEventList>
 	</event>
 
-	<event name="TWISTED_KESTREL_CREWKILL">
-		<text>As the last of the enemy's crew perishes, you notice something coalescing on your ship. It's a ghost, confused but obedient.</text>
-		<crewMember amount="1" class="LIST_CREW_GHOST"/>
-	</event>
+
 
 
 	<event name="FM_HULLKILL_TRACKER"> <!-- this checks if enemy has no more hull-->
@@ -108,15 +105,68 @@
 
 	<event name="FM_HULLKILL_TRACKER_EVENT"><!--Potential events to trigger on crewkill-->
 		<loadEventList seeded="false" default="TRUENOTHING">
-			<event name="TWISTED_KESTREL_HULLKILL" req="TWISTED_KESTREL_GHOST_SUMMON"/>
+			<event name="TWISTED_KESTREL_KILL" req="TWISTED_KESTREL_GHOST_SUMMON"/>
 		</loadEventList>
 	</event>
 
 
-	<event name="TWISTED_KESTREL_HULLKILL">
-		<text>As you watch the hull integrity of your foe drop to zero, you see a spectral form taking shape in a corner of your ship. It's a ghost, and they appear to be willing to serve you.</text>
-		<crewMember amount="1" class="LIST_CREW_GHOST"/>
-	</event>
+	<eventList name="TWISTED_KESTREL_KILL">
+
+			<event>
+				<text>With the final spark of power in the opposing ship going dark, the Fridge shakes - a rumble echoes from within, and you feel the myriad of ghosts in its unknowable interior hum with approval. With a rush of whispering gases, a Phantom coalesces before you - ready to serve.</text>
+				<crewMember amount="1" class="phantom"/>
+			</event>
+
+			<event>
+				<text>With the final spark of power in the opposing ship going dark, the Fridge shakes - a rumble echoes from within, and you feel the myriad of ghosts in its unknowable interior hum with approval. With a rush of whispering gases and a violent crackle of energy, a Wraith coalesces before you - ready to serve.</text>
+				<crewMember amount="1" class="phantom_wraith"/>
+			</event>
+
+			<event>
+				<text>With the final spark of power in the opposing ship going dark, the Fridge shakes - a rumble echoes from within, and you feel the myriad of ghosts in its unknowable interior hum with approval. With a rush of whispering gases and the shimmer of heat washing over your surroundings, a Goul coalesces before you - ready to serve.</text>
+				<crewMember amount="1" class="phantom_goul"/>
+			</event>
+
+			<event>
+				<text>With the final spark of power in the opposing ship going dark, the Fridge shakes - a rumble echoes from within, and you feel the myriad of ghosts in its unknowable interior hum with approval. With a thumping howl of gases moving that cause your hull to tremble slightly, a Mare coalesces before you - ready to serve.</text>
+				<crewMember amount="1" class="phantom_mare"/>
+			</event>
+
+			<event>
+				<text>With the final spark of power in the opposing ship going dark, the Fridge shakes violently - a rumble echoes from within, louder than usual, and you feel the presence of a mightier entity from its unknowable interior hum with approval. With a torrential outpour of agitated white gases, an Alpha Phantom coalesces before you - ready to serve.</text>
+				<crewMember amount="1" class="phantom_alpha"/>
+			</event>
+
+			<event>
+				<text>With the final spark of power in the opposing ship going dark, the Fridge shakes violently - a rumble echoes from within, louder than usual, and you feel the presence of a mightier entity from its unknowable interior hum with approval. With a violent, acidic hiss, an Alpha Mare coalesces before you - ready to serve.</text>
+				<crewMember amount="1" class="phantom_mare_alpha"/>
+			</event>
+
+
+			<event>
+				<text>With the final spark of power in the opposing ship going dark, the Fridge shakes violently - a rumble echoes from within, louder than usual, and you feel the presence of a mightier entity from its unknowable interior hum with approval. The room smolders ominously as an Alpha Goul coalesces before you - ready to serve.</text>
+				<crewMember amount="1" class="phantom_goul_alpha"/>
+			</event>
+
+			<event>
+				<text>With the final spark of power in the opposing ship going dark, the Fridge shakes violently - a rumble echoes from within, louder than usual, and you feel the presence of a mightier entity from its unknowable interior hum with approval. A bolt of electricity snaps against the hull of your ship as an Alpha Wraith coalesces before you - ready to serve.</text>
+				<crewMember amount="1" class="phantom_wraith_alpha"/>
+			</event>
+
+			<event>
+				<text>With the final spark of power in the opposing ship going dark, the Fridge shakes uncontrollably - a howl screams forth, shaking the ship menacingly.  An overwhelming sense of horrible amusement emanates from within its walls. The howls die slowly as one of the Haunts coalesces before you - ready to serve.</text>
+				<crewMember amount="1" class="FM_LIST_CREW_HAUNTS"/>
+			</event>
+
+
+			<event>
+					<text>With the final spark of power in the opposing ship going dark, the Fridge nearly cracks as it slams back against the hull of the ship - an ear-piercing scream blasts from within, sending you reeling. The bright void outside, or perhaps only your vision, dims slightly. A magnificent ghost clad in armor forms elegantly before you, some version of the Phantom King himself. He kneels before you... Ready to serve. </text>
+					<crewMember amount="1" class="unique_dessius"/>
+			</event>
+
+	</eventList>
+
+
 
 
 
