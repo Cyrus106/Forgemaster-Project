@@ -2326,13 +2326,13 @@
 		</choice>
 	</event>
 
-	<event name="NPC_STORAGE_CHECK_CREATE_FM_LASER_ION_MEGA"><!--need to optmize lore-->
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_LASER_ION_MEGA">
 		<checkCargo/>
 		<text>Currently viewing the 'Absolution' Rift Inducer.</text>
 		<choice hidden="false"  blue="false">
 			<text>Craft the 'Absolution' Rift Inducer.</text>
 			<event>
-				<text>Alastair's hands slowly pull out his hammer, whose head ignites in a holographic flurry. His face stills. "I'll warn you once, lad. This weapon is tied to technology even I don't fully understand. I'll tell you what I know about it, though. Forewarned is forearmed, and all." He rummages through a drawer before pulling out a battered and scorched data chip, which he places into his forge's port. </text>
+				<text id="text_CREATE_FM_LASER_ION_MEGA_1"/>
 				<weapon name="FM_LASER_ION_MEGA"/>
 
 				<item_modify>
@@ -2342,29 +2342,23 @@
 				<choice hidden="true">
 					<text>Continue...</text>
 					<event>
-						<text>"I found the blueprints on a station. A research laboratory, to be precise, in Ministry space. As near as I could figure out, they were trying to use military-grade high-energy weaponry to create microscopic singularities and accelerate their decay, speeding it up until it triggered on a millisecond-- Well, lad, the long and short of it is, they were fiddling with the fabric of space. Had their whole apparatus connected to a MV drive, seemed like, and were making it put out some awfully odd readings. The scanners on my ship are better than most, so I caught wind of the place while delivering to a client and decided to check out the source."
-						</text>
+						<text id="text_CREATE_FM_LASER_ION_MEGA_2"/>
 						<remove name="BOMB_ION"/>
 						<choice hidden="true">
 							<text>Continue...</text>
 							<event>
-								<text>"When I got there, though, they weren't there. Instead, I found-- well, better if I just show you." Alastair touches a nearby console, and it lights up. A few quick taps, and it reveals a video feed. He returns to work as it begins to play.The scene is dim, and it appears the feed was taken from the helmet camera of someone entering the station. The corridors are dim, appearing to be both of Zoltan design and on emergency lighting. The feed continues for a few minutes. Attempts are made to access some of the onboard consoles, but they are unresponsive.
-								</text>
+								<text id="text_CREATE_FM_LASER_ION_MEGA_3"/>
 								<remove name="LASER_PIERCE_2"/>
 								<choice hidden="true">
 									<text>Continue...</text>
 									<event>
-										<text>Eerily, the station is empty - everything in a reasonable state of tidiness, not factory new but not unkept either.
-
-											Gradually, the camera makes its way to the central portion of the station, and into a laboratory. A group of figures are seen, standing around a cylindrical apparatus. They appear to be Zoltan in form, but their characteristic glow is... faded somehow. Not extinguished, but dim. The rumbling of Alastair's voice rings out, and the ring of Zoltans turns. As they stare at the camera, unspeaking, their glow begins to flicker, first slowly, then erratically. They remain perfectly still. The brilliant blue of Alastair's hammer fills the frame. And then the station starts to collapse, the camera turns to run, there's a flash of energy, and the feed ends.
-										</text>
+										<text id="text_CREATE_FM_LASER_ION_MEGA_4"/>
 
 										<choice hidden="true">
 											<text>Continue...</text>
 											<event>
 												<metaVariable name="FM_LORE_ABSOLUTION" op="set" val="1"/>
-												<text>Alastair nods to you. He's slotted the ion bomb into a wide, round casing, and is currently in the process of disassembling the pierce laser into a sort of spiral. "The station disappeared, lad. I managed to get back to my ship, but moments after I did, the station did some kind of multiverse jump. Not a normal one, either. No characteristic blue flash, just... vanished, there one instant and suddently not the next. Whatever it was, it left pieces of it scattered around the area, and I was able to salvage a researcher's blueprint folder and build... this." Alastair steps back from his work, revealing a massive, sleek metal weapon surmounted by lines of sizzling blue energy. "Use it carefully. This is not a weapon to be wielded on a whim."
-												</text>
+												<text id="text_CREATE_FM_LASER_ION_MEGA_5"/>
 												<choice hidden="true">
 													<text>Continue...</text>
 													<event load="FM_FORGE_WEAPON_LOAD"/>
@@ -2512,7 +2506,7 @@
 		</choice>
 	</event>
 
-	<event name="NPC_STORAGE_CHECK_CREATE_FM_ION_TRI_FIRE"><!--need to optimize lore-->
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_ION_TRI_FIRE">
 		<checkCargo/>
 		<text>Currently viewing the 'Cerberus' Ion.</text>
 		<choice hidden="false"  blue="false">
