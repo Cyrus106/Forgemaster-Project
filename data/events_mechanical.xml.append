@@ -193,7 +193,7 @@
 		<removeItem>HIDDEN TWISTED_KESTREL_GHOST_PURGE</removeItem>
 	</event>
 
-	<event name="TWISTED_ROCK_KILL">
+<event name="TWISTED_ROCK_KILL">
 	<!--	<disableScrapScore/>                                                                  Any scrap gained from this event is not added to the player's score.
 		<disableScrapAugments/>
 		<item_modify>
@@ -202,6 +202,7 @@
 		<!--<variable name="twisted_rock_scrap_counter" op="set" value="0"/>-->
 		<loadEventList seeded="false" first="true" default="TRUENOTHING">
 			<event req="twisted_rock_scrap_counter" lvl="1000">
+				<text>Now that your enemy is no longer a threat, you take the time to collect the dislodged scrap from your hull.</text>
 				<disableScrapScore />
 				<disableScrapAugments />
 				<item_modify>
