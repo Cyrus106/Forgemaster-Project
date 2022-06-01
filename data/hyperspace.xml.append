@@ -317,6 +317,15 @@
 			<crewLimit>12</crewLimit>
 			<customReactor maxLevel="35"/>
 		</mod-append:customShip>
+		<mod-append:customShip name="PLAYER_SHIP_TWISTED2_2"><!--separatist-->
+			<hiddenAug>SHIP_ENGI</hiddenAug>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<crewLimit>7</crewLimit>
+			<customReactor maxLevel="35">
+				<baseCost>15</baseCost>
+				<increment>5</increment>
+			</customReactor>
+		</mod-append:customShip>
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED2_3"><!--mantis-->
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<hiddenAug>SHIP_MULTIVERSE</hiddenAug>
@@ -332,17 +341,6 @@
 				<increment>5</increment>
 			</customReactor>
 
-		</mod-append:customShip>
-
-
-		<mod-append:customShip name="PLAYER_SHIP_TWISTED2_2"><!--separatist-->
-			<hiddenAug>SHIP_ENGI</hiddenAug>
-			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
-			<crewLimit>7</crewLimit>
-			<customReactor maxLevel="35">
-				<baseCost>15</baseCost>
-				<increment>5</increment>
-			</customReactor>
 		</mod-append:customShip>
 
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED3"><!--monk-->
@@ -482,101 +480,97 @@
 				<increment>5</increment>
 			</customReactor>
 		</mod-append:customShip>
+		<mod-append:customShip name="PLAYER_SHIP_TWISTED5_2"><!--Shell-->
+			<hiddenAug>SHIP_SHELL</hiddenAug>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<crewLimit>10</crewLimit>
+			<customReactor maxLevel="35">
+				<baseCost>15</baseCost>
+				<increment>5</increment>
+			</customReactor>
 
+			<rooms>
+				<room id="0">
+					<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+				</room>
+				<room id="1">
+					<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+				</room>
+				<room id="2">
+					<roomAnim renderLayer="0">gas_twisted_1x2</roomAnim>
+				</room>
+				<room id="3">
+					<roomAnim renderLayer="0">gas_twisted_1x2</roomAnim>
+				</room>
+				<room id="4">
+					<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
+				</room>
+				<room id="5">
+					<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+				</room>
+				<room id="6">
+					<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
+				</room>
+				<room id="7">
+					<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
+				</room>
+				<room id="8">
+					<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+				</room>
+				<room id="9">
+					<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+				</room>
+				<room id="10">
+					<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+				</room>
+				<room id="11">
+					<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+				</room>
+				<room id="12">
+					<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+				</room>
+				<room id="13">
+					<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
+				</room>
+				<room id="14">
+					<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
+				</room>
+				<room id="15">
+					<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+				</room>
+				<room id="16">
+					<roomAnim renderLayer="0">gas_twisted_1x2</roomAnim>
+				</room>
+				<room id="17">
+					<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+				</room>
+				<room id="18">
+					<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
+				</room>
+				<room id="19">
+					<roomAnim renderLayer="0">gas_twisted_1x2</roomAnim>
+				</room>
+				<room id="20">
+					<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
+				</room>
+				<room id="21">
+					<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+				</room>
+				<room id="22">
+					<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+				</room>
+				<room id="23">
+					<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
+				</room>
+				<room id="24">
+					<roomAnim renderLayer="0">gas_twisted_1x2</roomAnim>
+				</room>
+				<room id="25">
+						<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
+					</room>
+				</rooms>
 
-				<mod-append:customShip name="PLAYER_SHIP_TWISTED5_2"><!--Shell-->
-					<hiddenAug>SHIP_SHELL</hiddenAug>
-					<hiddenAug>FOR_MULTIVERSE</hiddenAug>
-					<crewLimit>10</crewLimit>
-					<customReactor maxLevel="35">
-						<baseCost>15</baseCost>
-						<increment>5</increment>
-					</customReactor>
-
-					<rooms>
-							<room id="0">
-								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
-							</room>
-							<room id="1">
-								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
-							</room>
-							<room id="2">
-								<roomAnim renderLayer="0">gas_twisted_1x2</roomAnim>
-							</room>
-							<room id="3">
-								<roomAnim renderLayer="0">gas_twisted_1x2</roomAnim>
-							</room>
-							<room id="4">
-								<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
-							</room>
-							<room id="5">
-								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
-							</room>
-							<room id="6">
-								<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
-							</room>
-							<room id="7">
-								<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
-							</room>
-							<room id="8">
-								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
-							</room>
-							<room id="9">
-								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
-							</room>
-							<room id="10">
-								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
-							</room>
-							<room id="11">
-								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
-							</room>
-							<room id="12">
-								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
-							</room>
-							<room id="13">
-								<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
-							</room>
-							<room id="14">
-								<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
-							</room>
-							<room id="15">
-								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
-							</room>
-							<room id="16">
-								<roomAnim renderLayer="0">gas_twisted_1x2</roomAnim>
-							</room>
-							<room id="17">
-								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
-							</room>
-							<room id="18">
-								<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
-							</room>
-							<room id="19">
-								<roomAnim renderLayer="0">gas_twisted_1x2</roomAnim>
-							</room>
-							<room id="20">
-								<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
-							</room>
-							<room id="21">
-								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
-							</room>
-							<room id="22">
-								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
-							</room>
-							<room id="23">
-								<roomAnim renderLayer="0">gas_twisted_2x2</roomAnim>
-							</room>
-							<room id="24">
-								<roomAnim renderLayer="0">gas_twisted_1x2</roomAnim>
-							</room>
-							<room id="25">
-								<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
-							</room>
-		</rooms>
-
-				</mod-append:customShip>
-
-
+		</mod-append:customShip>
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED5_3"><!--engineer-->
 			<crewLimit>8</crewLimit>
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
@@ -588,7 +582,7 @@
 			</rooms>
 		</mod-append:customShip>
 
-		<mod-append:customShip name="PLAYER_SHIP_TWISTED6">
+		<mod-append:customShip name="PLAYER_SHIP_TWISTED6"><!--kestrel-->
 			<hiddenAug>SHIP_GHOST</hiddenAug>
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<hiddenAug>TWISTED_KESTREL_BOARDING_SPLITTER</hiddenAug>
@@ -599,7 +593,7 @@
 				<increment>5</increment>
 			</customReactor>
 
-		<!--
+			<!--
 					Add Later
 			<rooms>
 				<room id="4"> Upper Artillery
@@ -611,7 +605,6 @@
 				</room>
 			</rooms>-->
 		</mod-append:customShip>
-
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED6_2"><!--fed-->
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<hiddenAug>SHIP_MULTIVERSE</hiddenAug>
@@ -657,7 +650,6 @@
 				<increment>5</increment>
 			</customReactor>
 		</mod-append:customShip>
-
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED7_2"><!--Tuco-->
 			<hiddenAug>SHIP_GAMBLING</hiddenAug>
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
@@ -667,8 +659,6 @@
 				<increment>5</increment>
 			</customReactor>
 		</mod-append:customShip>
-
-
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED7_3"><!--leech-->
 			<hiddenAug>SHIP_LEECH</hiddenAug>
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
