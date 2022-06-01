@@ -11334,6 +11334,11 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</statBoosts>
 		</aug>
 
+
+		<aug name="LOCKED_TAROT_CARDS">
+			<locked/>
+		</aug>
+
 		<aug name="PACIFISTIC_REGENERATION">
 			<statBoosts>
 				<statBoost name="statBoost">

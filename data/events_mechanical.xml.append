@@ -59,6 +59,49 @@
 		</eventButton>
 	</event>
 
+
+
+
+<!--Twisted Tuco-->
+
+<event name="TWISTED_TUCO_BUTTON_SPAWN_INITIAL">
+	<triggeredEvent event="TWISTED_TUCO_BUTTON_SPAWN" time="10" thisFight="true">
+		<triggeredEventBox load="DEFAULT_SMALL">
+			<tooltip>Shuffling Cards</tooltip>
+		</triggeredEventBox>
+	</triggeredEvent>
+</event>
+
+
+	<event name="TWISTED_TUCO_BUTTON_SPAWN">
+		<eventButton name="UI_TAROT_ACTIVATE">
+			<event load="TAROT_ACTIVATE"/>
+			<image border="12">statusUI/top_storage_on</image>
+			<text border="3">CARDS (WIP)</text>
+			<location>0</location>
+			<tooltip>Draw a card (WIP)</tooltip>
+			<inactiveTooltip>Inactive</inactiveTooltip>
+			<color r="235" g="245" b="229"/>
+			<activeColor r="235" g="245" b="229"/>
+			<inactiveColor r="164" g="171" b="160"/>
+			<selectedColor r="255" g="230" b="94"/>
+			<textColor r="25" g="49" b="51"/>
+			<jumpClear>true</jumpClear>
+			<once>true</once>
+			<noDanger>false</noDanger>
+			<hideInactive>false</hideInactive>
+		</eventButton>
+	</event>
+
+	<eventList name="TAROT_ACTIVATE">
+		<event>
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+	</eventList>
+
+
+
 	<!--twisted Monk	-->
 	<event name="TWISTED_BLESSING_KILLCOUNT"> <!--this checks if enemy has crew in first place so auto ships can't be ck-d-->
 		<triggeredEvent event="TWISTED_BLESSING_CREWKILL_CHECK" thisFight="true">
@@ -9243,8 +9286,19 @@
 <FTL><!--all the modular armor stuff-->
 	<!--special module effect events-->
 	<event name="FM_ONJUMP_STUFF_LOAD">
-	  <loadEvent>FM_JUMP_LOSTSUN</loadEvent>
+	  <loadEvent>FM_JUMP_TUCO</loadEvent>
 	</event>
+
+
+<event name="FM_JUMP_TUCO">
+	<loadEventList default="FM_JUMP_LOSTSUN">
+		<event req="LOCKED_TAROT_CARDS" lvl="1">
+			<loadEvent>FM_JUMP_LOSTSUN</loadEvent>
+			<queueEvent>TWISTED_TUCO_BUTTON_SPAWN_INITIAL</queueEvent>
+		</event>
+	</loadEventList>
+</event>
+
 	<event name="FM_JUMP_LOSTSUN">
 		<loadEventList default="FM_JUMP_LEECH">
 			<event req="TWISTED_LOSTSUN" lvl="1">
