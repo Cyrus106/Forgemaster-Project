@@ -3836,6 +3836,7 @@
 		<variable name="twisted_blessing_counter" op = "set" value = "0"/> <!--"blessing" counter for twisted monk-->
 		<variable name="flak_resource_counter" op = "set" value = "0"/><!--Base flak resource counter for the Flak Forge-->
 		<variable name="flak_special_resource_counter" op = "set" value = "0"/><!--Special flak resource counter for the Flak Forge-->
+		<variable name="twisted_rock_scrap_counter" op = "set" value = "0"/>
 		<req name="CAN_INSTALL_FLAK_ARTILLERY" type="sum" lvl="50">
 			<name>flak_resource_counter</name>
 		</req>
@@ -11321,6 +11322,11 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<boostAnim>bio_poison</boostAnim>
 				</statBoost>
 			</statBoosts>
+		</aug>
+
+
+		<aug name="LOCKED_TAROT_CARDS">
+			<locked/>
 		</aug>
 
 		<aug name="PACIFISTIC_REGENERATION">

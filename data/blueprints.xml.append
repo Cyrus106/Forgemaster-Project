@@ -2056,6 +2056,7 @@
 		<crewCount amount="1" class="unique_tuco" />
 		<crewCount amount="1" class="blobswarm" />
 		<crewCount amount="1" class="blobswarm" />
+		<aug name="LOCKED_TAROT_CARDS"/>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED7_3" layout="zmt_player_leech_suicide" img="player_ship_cracked_zmt_boss_leech_suicide">
 		<class>Twisted Renegade Leech</class>
@@ -18560,6 +18561,15 @@
 		<title>You shouldn't see this, bucko</title>
 		<desc>This is supposed to be a hidden augment that makes the ability work when it should.</desc>
 		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+
+
+	<augBlueprint name="LOCKED_TAROT_CARDS">
+		<title>Tarot Cards</title>
+		<desc>An unusual deck of cards, with powerful and unpredictable effects.</desc>
+		<cost>777</cost>
 		<rarity>0</rarity>
 		<stackable>false</stackable>
 	</augBlueprint>

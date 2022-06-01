@@ -4896,7 +4896,7 @@ try this later
 </FTL>
 
 <FTL> <!--Eldritch horrors content-->
-	<animSheet name="laser_shadow_shot" w="200" h="20" fw="50" fh="20">projectiles/lasers_shadow.png</animSheet>
+	<animSheet name="laser_shadow_shot" w="200" h="20" fw="50" fh="20">weapon_projectiles/lasers_shadow.png</animSheet>
 	<anim name="laser_shadow_shot">
 		<sheet>laser_shadow_shot</sheet>
 		<desc length="4" x="0" y="0"/>

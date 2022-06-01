@@ -113,7 +113,7 @@
 	<mod:findLike type="loadEventList">
 		<mod-append:event name="GIVE_RAGE_TWISTEDMONK" req = "TWISTED_BLESSING"/>
 		<mod-append:event name="GIVE_FLAK_TWISTEDLANIUS" req = "TWISTED_FLAK_FORGE"/>
-	<!--	<mod-append:event name="GIVE_ARM_TWISTEDROCK" req = "TWISTED_HULL_ARM"/>-->
+		<mod-append:event name="GIVE_ARM_TWISTEDROCK" req = "TWISTED_HULL_ARM"/>>
 	</mod:findLike>
 </mod:findName>
 
@@ -159,7 +159,7 @@
 </event>
 
 
-<!--<event name="GIVE_ARM_TWISTEDROCK">
+<event name="GIVE_ARM_TWISTEDROCK">
 		<triggeredEvent event="TRUENOTHING">
 		        <req name="twisted_rock_scrap_counter" lvl="9999"/>
 		        <triggeredEventBox>
@@ -169,7 +169,7 @@
 		        </triggeredEventBox>
 		</triggeredEvent>
 	<loadEvent>START_BEACON_EXPLAIN</loadEvent>
-</event>-->
+</event>
 
 <event name="CANNOTUSETRUENOTHINGTWICE">
 	<event/>
