@@ -94,7 +94,179 @@
 	</event>
 
 	<eventList name="TAROT_ACTIVATE">
-		<event>
+		<event><!--The Fool Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Fool Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Magician Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Magician Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The High Priestess Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The High Priestess Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Empress Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Empress Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Emperor Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Emperor Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Hierophant Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Hierophant Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Lovers Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Lovers Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Chariot Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Chariot Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--Justice Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--Justice Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Hermit Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Hermit Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--Wheel of Fortune Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--Wheel of Fortune Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--Strength Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--Strength Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Hanged Man Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Hanged Man Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--Death Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--Death Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--Temperance Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--Temperance Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Devil Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Devil Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Tower Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Tower Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Star Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Star Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Moon Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Moon Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Sun Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Sun Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--Judgement Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--Judgement Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The World Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The World Bad-->
 			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
 		</event>
 
