@@ -12652,14 +12652,45 @@
 		<power>2</power>
 		<cooldown>1000</cooldown>
 		<dodge>0</dodge>
-		<speed>50</speed>
+		<speed>100</speed>
 		<cost>600</cost>
 		<bp>3</bp>
 		<droneImage>fm_drone_ancient_beam1</droneImage>
-		<weaponBlueprint>ANCIENT_BEAM_2</weaponBlueprint>
+		<weaponBlueprint>FM_ANCIENT_BEAM_2_DRONE</weaponBlueprint>
 		<rarity>0</rarity>
 		<iconImage>combat</iconImage>
 	</droneBlueprint>
+
+	<weaponBlueprint name="FM_ANCIENT_BEAM_2_DRONE">
+		<type>BEAM</type>
+		<tip>tip_ancient</tip>
+		<flavorType>Aether Beam</flavorType>
+		<title>Eradicator MK II</title>
+		<short>Eradic. II</short>
+		<desc>A powerful weapon of destruction predating any modern Beam, which does massive amounts of damage.</desc>
+		<tooltip>One damage per room beam weapon</tooltip>
+		<damage>3</damage>
+		<sp>0</sp>
+		<fireChance>0</fireChance>
+		<breachChance>10</breachChance>
+		<cooldown>24</cooldown>
+		<color>
+			<r>0</r>
+			<g>255</g>
+			<b>6</b>
+		</color>
+		<speed>25</speed>
+		<power>3</power>
+		<cost>130</cost>
+		<rarity>0</rarity>
+		<length>110</length>
+		<image>beam_contact</image>
+		<launchSounds>
+			<sound>ancient_beam</sound>
+		</launchSounds>
+		<weaponArt>ancient_beam2</weaponArt>
+		<iconImage>beam</iconImage>
+	</weaponBlueprint>
 
 	<droneBlueprint name="FM_ANCIENT_BEAM_COMBAT2">
 		<type>COMBAT</type>
@@ -12670,14 +12701,45 @@
 		<power>3</power>
 		<cooldown>1000</cooldown>
 		<dodge>0</dodge>
-		<speed>50</speed>
+		<speed>100</speed>
 		<cost>600</cost>
 		<bp>3</bp>
 		<droneImage>fm_drone_ancient_beam2</droneImage>
-		<weaponBlueprint>ANCIENT_BEAM_3</weaponBlueprint>
+		<weaponBlueprint>FM_ANCIENT_BEAM_3_DRONE</weaponBlueprint>
 		<rarity>0</rarity>
 		<iconImage>combat</iconImage>
 	</droneBlueprint>
+
+	<weaponBlueprint name="FM_ANCIENT_BEAM_3_DRONE">
+		<type>BEAM</type>
+		<tip>tip_ancient</tip>
+		<flavorType>Aether Beam</flavorType>
+		<title>Eradicator MK III</title>
+		<short>Eradic. III</short>
+		<desc>A powerful weapon of destruction predating any modern Beam, which does massive amounts of damage.</desc>
+		<tooltip>One damage per room beam weapon</tooltip>
+		<damage>4</damage>
+		<sp>0</sp>
+		<fireChance>0</fireChance>
+		<breachChance>10</breachChance>
+		<cooldown>34</cooldown>
+		<color>
+			<r>0</r>
+			<g>255</g>
+			<b>6</b>
+		</color>
+		<speed>25</speed>
+		<power>4</power>
+		<cost>145</cost>
+		<rarity>0</rarity>
+		<length>120</length>
+		<image>beam_contact</image>
+		<launchSounds>
+			<sound>ancient_beam</sound>
+		</launchSounds>
+		<weaponArt>ancient_beam3</weaponArt>
+		<iconImage>beam</iconImage>
+	</weaponBlueprint>
 
 	<droneBlueprint name="FM_ANCIENT_BEAM_COMBATR">
 		<type>COMBAT</type>
@@ -12688,15 +12750,47 @@
 		<power>2</power>
 		<cooldown>1000</cooldown>
 		<dodge>0</dodge>
-		<speed>50</speed>
+		<speed>100</speed>
 		<cost>600</cost>
 		<bp>3</bp>
 		<droneImage>fm_drone_royal_beam2</droneImage>
-		<weaponBlueprint>ROYAL_BEAM_3</weaponBlueprint>
+		<weaponBlueprint>FM_ROYAL_BEAM_3_DRONE</weaponBlueprint>
 		<rarity>0</rarity>
 		<iconImage>combat</iconImage>
 	</droneBlueprint>
 
+	<weaponBlueprint name="FM_ROYAL_BEAM_3_DRONE">
+		<type>BEAM</type>
+		<tip>tip_ancient</tip>
+		<flavorType>Aether Beam</flavorType>
+		<title>Eradicator MK III</title>
+		<short>Eradic. III</short>
+		<desc>A powerful weapon of destruction predating any modern Beam, which does massive amounts of damage.</desc>
+		<tooltip>One damage per room beam weapon</tooltip>
+		<damage>5</damage>
+		<sp>0</sp>
+		<stun>9</stun>
+		<fireChance>10</fireChance>
+		<breachChance>0</breachChance>
+		<stunChance>10</stunChance>
+		<cooldown>32</cooldown>
+		<color>
+			<r>100</r>
+			<g>0</g>
+			<b>90</b>
+		</color>
+		<speed>25</speed>
+		<power>4</power>
+		<cost>145</cost>
+		<rarity>0</rarity>
+		<length>100</length>
+		<image>beam_contact</image>
+		<launchSounds>
+			<sound>ancient_beam</sound>
+		</launchSounds>
+		<weaponArt>royal_beam3</weaponArt>
+		<iconImage>beam</iconImage>
+	</weaponBlueprint>
 
 
 
