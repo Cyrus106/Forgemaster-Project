@@ -8633,6 +8633,7 @@
 			<sound>miss</sound>
 		</missSounds>
 		<weaponArt>fm_terminus</weaponArt>
+		<explosion>fm_terminus_explosion</explosion>
 		<iconImage>laser</iconImage>
 		<iconScale>1.0</iconScale>
 	</weaponBlueprint>
@@ -12544,6 +12545,161 @@
 		<iconImage>defense</iconImage>
 		<rarity>0</rarity>
 	</droneBlueprint>
+
+	<droneBlueprint name="FM_ENERGY_COMBAT_BEAM1">
+		<type>COMBAT</type>
+		<tip>tip_toggle_combat</tip>
+		<title>Energy Combat Drone Mk I [Beam]</title>
+		<short>E. Combat I [B]</short>
+		<desc>A drone capable of doing both ion and hull damage at the same time. Currently configured to move slowly and fire an energy beam.</desc>
+		<power>2</power>
+		<cooldown>1000</cooldown>
+		<dodge>0</dodge>
+		<speed>15</speed>
+		<cost>130</cost>
+		<bp>3</bp>
+		<droneImage>fm_drone_energy_beam1</droneImage>
+		<weaponBlueprint>FM_ENERGY_BEAM1_DRONE</weaponBlueprint>
+		<rarity>0</rarity>
+		<iconImage>combat</iconImage>
+	</droneBlueprint>
+
+<weaponBlueprint name="FM_ENERGY_BEAM1_DRONE">
+	<type>BEAM</type>
+	<tip>tip_beams</tip>
+	<title>Drone Energy Beam</title>
+	<damage>1</damage>
+	<noSysDamage>true</noSysDamage>
+	<noPersDamage>true</noPersDamage>
+	<ion>1</ion>
+	<ionBeamFix>true</ionBeamFix>
+	<sp>0</sp>
+	<fireChance>3</fireChance>
+	<breachChance>0</breachChance>
+	<speed>10</speed>
+	<rarity>0</rarity>
+	<image>beam_contact</image>
+	<color>
+		<r>53</r>
+		<g>255</g>
+		<b>0</b>
+	</color>
+	<length>50</length>
+	<launchSounds>
+		<sound>beam1</sound>
+		<sound>beam1_2</sound>
+	</launchSounds>
+	<weaponArt>fm_focus_energy_3</weaponArt>
+</weaponBlueprint>
+
+
+<droneBlueprint name="FM_ENERGY_COMBAT_PINPOINT1">
+	<type>COMBAT</type>
+	<tip>tip_toggle_combat</tip>
+	<title>Energy Combat Drone Mk I [Pinpoint]</title>
+	<short>E. Combat I [P]</short>
+	<desc>A drone capable of doing both ion and hull damage at the same time. Currently configured to move quickly and fire an energy pinpoint.</desc>
+	<power>2</power>
+	<cooldown>1000</cooldown>
+	<dodge>0</dodge>
+	<speed>30</speed>
+	<cost>130</cost>
+	<bp>3</bp>
+	<droneImage>fm_drone_energy_pinpoint1</droneImage>
+	<weaponBlueprint>FM_ENERGY_PINPOINT1_DRONE</weaponBlueprint>
+	<rarity>0</rarity>
+	<iconImage>combat</iconImage>
+</droneBlueprint>
+
+
+
+
+	<weaponBlueprint name="FM_ENERGY_PINPOINT1_DRONE">
+		<type>BEAM</type>
+		<tip>tip_beams</tip>
+		<title>Drone Energy Pinpoint</title>
+		<damage>1</damage>
+		<noSysDamage>true</noSysDamage>
+		<noPersDamage>true</noPersDamage>
+		<ion>1</ion>
+		<ionBeamFix>true</ionBeamFix>
+		<sp>0</sp>
+		<fireChance>4</fireChance>
+		<breachChance>0</breachChance>
+		<speed>1</speed>
+		<rarity>0</rarity>
+		<image>beam_contact</image>
+		<color>
+			<r>53</r>
+			<g>255</g>
+			<b>0</b>
+		</color>
+		<length>1</length>
+		<launchSounds>
+			<sound>beam1</sound>
+			<sound>beam1_2</sound>
+		</launchSounds>
+		<weaponArt>fm_focus_energy_3</weaponArt>
+	</weaponBlueprint>
+
+
+	<droneBlueprint name="FM_ANCIENT_BEAM_COMBAT1">
+		<type>COMBAT</type>
+		<tip>tip_ancient</tip>
+		<title>Eradicator MK II</title>
+		<short>Erad. II</short>
+		<desc>A powerful drone wielding an ancient beam, able to move far quicker than it probably should :)</desc>
+		<power>2</power>
+		<cooldown>1000</cooldown>
+		<dodge>0</dodge>
+		<speed>50</speed>
+		<cost>600</cost>
+		<bp>3</bp>
+		<droneImage>fm_drone_ancient_beam1</droneImage>
+		<weaponBlueprint>ANCIENT_BEAM_2</weaponBlueprint>
+		<rarity>0</rarity>
+		<iconImage>combat</iconImage>
+	</droneBlueprint>
+
+	<droneBlueprint name="FM_ANCIENT_BEAM_COMBAT2">
+		<type>COMBAT</type>
+		<tip>tip_ancient</tip>
+		<title>Eradicator MK III</title>
+		<short>Erad. III</short>
+		<desc>A powerful drone wielding an ancient beam, able to move far quicker than it probably should :)</desc>
+		<power>3</power>
+		<cooldown>1000</cooldown>
+		<dodge>0</dodge>
+		<speed>50</speed>
+		<cost>600</cost>
+		<bp>3</bp>
+		<droneImage>fm_drone_ancient_beam2</droneImage>
+		<weaponBlueprint>ANCIENT_BEAM_3</weaponBlueprint>
+		<rarity>0</rarity>
+		<iconImage>combat</iconImage>
+	</droneBlueprint>
+
+	<droneBlueprint name="FM_ANCIENT_BEAM_COMBATR">
+		<type>COMBAT</type>
+		<tip>tip_ancient</tip>
+		<title>Royal Eradicator MK III</title>
+		<short>R. Erad. III</short>
+		<desc>A powerful drone wielding an ancient beam, able to move far quicker than it probably should, now in pink! :)</desc>
+		<power>2</power>
+		<cooldown>1000</cooldown>
+		<dodge>0</dodge>
+		<speed>50</speed>
+		<cost>600</cost>
+		<bp>3</bp>
+		<droneImage>fm_drone_royal_beam2</droneImage>
+		<weaponBlueprint>ROYAL_BEAM_3</weaponBlueprint>
+		<rarity>0</rarity>
+		<iconImage>combat</iconImage>
+	</droneBlueprint>
+
+
+
+
 
 </FTL>
 

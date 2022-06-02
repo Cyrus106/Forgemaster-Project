@@ -3671,6 +3671,21 @@
       <text>(God Killer) Set the state of the God Killer. [Current mode: Yes]</text>
       <event load="FM_COMBAT_CHECK_FM_GATLING_ANCIENT_YES"/>
     </mod-append:choice>
+
+
+
+    <mod-append:choice req="FM_ENERGY_COMBAT_PINPOINT1" lvl="1" hidden="true" blue="false">
+      <text>(Energy Beam Drone) Set the state of the Energy Beam Drone. [Current mode: Pinpoint]</text>
+      <event load="FM_COMBAT_CHECK_FM_ENERGY_COMBAT_PINPOINT1"/>
+    </mod-append:choice>
+
+    <mod-append:choice req="FM_ENERGY_COMBAT_BEAM1" lvl="1" hidden="true" blue="false">
+      <text>(Energy Beam Drone) Set the state of the Energy Beam Drone. [Current mode: Beam]</text>
+      <event load="FM_COMBAT_CHECK_FM_ENERGY_COMBAT_BEAM1"/>
+    </mod-append:choice>
+
+
+
     <!--AUTOCANNON AMMO TOGGLE-->
   	<mod-append:choice req = "FM_RVS_AC_CHARGE" blue = "false"> <!--Volley Gun Ammo Types -->
   		<text>(Volley Gun) Change the ammo loaded for your Volley Gun [Current mode: Standard, 1 power]</text>
@@ -4705,6 +4720,60 @@
       <event load="COMBAT_CHECK_FLAGSHIP"/>
     </choice>
   </event>
+
+
+
+  <event name="FM_COMBAT_CHECK_FM_ENERGY_COMBAT_PINPOINT1">
+  	<text>Are you sure you want to change the drone's settings?</text>
+  	<choice hidden="true">
+  		<text>Set the drone to Beam Mode.</text>
+  		<event>
+  			<text>You start calibrating the drone...</text>
+  			<remove name="FM_ENERGY_COMBAT_PINPOINT1"/>
+  			<choice hidden="true">
+  				<text>Continue...</text>
+  				<event>
+  					<text>You finish calibrating the drone successfully.</text>
+  					<drone name="FM_ENERGY_COMBAT_BEAM1"/>
+  					<choice hidden="true">
+  						<text>Continue...</text>
+  						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+  					</choice>
+  				</event>
+  			</choice>
+  		</event>
+  	</choice>
+  	<choice hidden="true">
+  		<text>Return to the toggle menu.</text>
+  		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+  	</choice>
+  </event>
+  <event name="FM_COMBAT_CHECK_FM_ENERGY_COMBAT_BEAM1">
+  	<text>Are you sure you want to change the drone's settings?</text>
+  	<choice hidden="true">
+  		<text>Set the drone to Pinpoint Mode.</text>
+  		<event>
+  			<text>You start calibrating the drone...</text>
+  			<remove name="FM_ENERGY_COMBAT_BEAM1"/>
+  			<choice hidden="true">
+  				<text>Continue...</text>
+  				<event>
+  					<text>You finish calibrating the drone successfully.</text>
+  					<drone name="FM_ENERGY_COMBAT_PINPOINT1"/>
+  					<choice hidden="true">
+  						<text>Continue...</text>
+  						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+  					</choice>
+  				</event>
+  			</choice>
+  		</event>
+  	</choice>
+  	<choice hidden="true">
+  		<text>Return to the toggle menu.</text>
+  		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+  	</choice>
+  </event>
+
 
   <event name="COMBAT_CHECK_FM_RVS_AC_CHARGE">
     <text>Select an ammo type to load into your Volley Gun</text>
