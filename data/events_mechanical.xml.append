@@ -296,7 +296,7 @@
 <FTL><!--Generic Kill Events-->
 	<event name="FM_CREWKILL_TRACKER"> <!--Autoship check so crew kill doesn't trigger on autos-->
 		<triggeredEvent event="FM_CREWKILL_TRACKER_2" thisFight="true">
-			<enemyCrew min="1" includeClonebay="false" countNewCrew="false"/>
+			<enemyDeaths amount="1" includeClonebay="false" countNewCrew="false"/>
 			<!--<enemyCrew min="1" max="999" includeClonebay="false" countNewCrew="false"/>-->
 		</triggeredEvent>
 	</event>
