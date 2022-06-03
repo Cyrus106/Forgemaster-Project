@@ -11870,8 +11870,8 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<boostType>SET</boostType>
 					<amount>-999999</amount>
 					<shipTarget>ORIGINAL_OTHER_SHIP</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<whiteList load="LIST_CREW_GHOST"/>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<!--<whiteList load="LIST_CREW_GHOST"/>-->
 				</statBoost>
 			</statBoosts>
 		</aug>
