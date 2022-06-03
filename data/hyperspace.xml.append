@@ -4080,6 +4080,7 @@
 			<damageTakenMultiplier>0.0</damageTakenMultiplier>
 			<animBase>mantis</animBase>
 			<deathSounds>
+				<deathSound>silence</deathSound>
 			</deathSounds>
 			<shootingSounds>
 				<shootingSound>mantisSpit1</shootingSound>
