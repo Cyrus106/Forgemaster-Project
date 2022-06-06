@@ -11888,19 +11888,19 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_BURST_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_BURST_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_BURST_2" value="0.8" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_BURST_3">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_BURST_3" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_BURST_3" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_BURST_5">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_BURST_5" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_BURST_5" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_BURST_8">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_BURST_8" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_BURST_8" value="0.1" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_HEAVY_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
@@ -11908,11 +11908,11 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_HEAVY_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_HEAVY_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_HEAVY_2" value="0.8" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_HEAVY_3">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_HEAVY_3" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_HEAVY_3" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_HEAVY_CHAINGUN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
@@ -11920,27 +11920,27 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_HEAVY_PIERCE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_HEAVY_PIERCE" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_HEAVY_PIERCE" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_HULL_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_HULL_1" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_HULL_1" value="0.7" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_HULL_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_HULL_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_HULL_2" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_HULL_3">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_HULL_3" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_HULL_3" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_HULL_CHAINGUN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_HULL_CHAINGUN" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_HULL_CHAINGUN" value="0.7" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_LIGHT">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_LIGHT" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_LIGHT" value="0.7" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_LIGHT_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
@@ -11948,15 +11948,15 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_PIERCE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_PIERCE" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_PIERCE" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_PIERCE_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_PIERCE_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_PIERCE_2" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_CHAINGUN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_CHAINGUN" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_CHAINGUN" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_CHAINGUN_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
@@ -11964,11 +11964,11 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_CHARGEGUN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_CHARGEGUN" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_CHARGEGUN" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_CHARGEGUN_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_CHARGEGUN_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_CHARGEGUN_2" value="0.8" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_CHARGEGUN_3">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
@@ -11980,67 +11980,67 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_CHAINGUN_DAMAGE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_CHAINGUN_DAMAGE" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_CHAINGUN_DAMAGE" value="0.7" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_FIRE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_FIRE" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_FIRE" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_STUN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_STUN" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_STUN" value="0.8" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_FROST_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_FROST_1" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_FROST_1" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_FROST_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_FROST_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_FROST_2" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_FROST_2_PLAYER">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_FROST_2_PLAYER" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_FROST_2_PLAYER" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_BIO">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_BIO" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_BIO" value="0.9" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_PARTICLE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_PARTICLE" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_PARTICLE" value="0.9" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_PARTICLE_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_PARTICLE_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_PARTICLE_2" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_PARTICLE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_PARTICLE" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_PARTICLE" value="0.8" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MISSILES_PARTICLE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MISSILES_PARTICLE" value="1.0" stackable="independent" />
+			<crystalShard weapon="MISSILES_PARTICLE" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MISSILES_PARTICLE_PLAYER">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MISSILES_PARTICLE_PLAYER" value="1.0" stackable="independent" />
+			<crystalShard weapon="MISSILES_PARTICLE_PLAYER" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MISSILES_ENERGY">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MISSILES_ENERGY" value="1.0" stackable="independent" />
+			<crystalShard weapon="MISSILES_ENERGY" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ION_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ION_1" value="1.0" stackable="independent" />
+			<crystalShard weapon="ION_1" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ION_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ION_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="ION_2" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ION_3">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ION_3" value="1.0" stackable="independent" />
+			<crystalShard weapon="ION_3" value="0.8" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ION_4">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
@@ -12048,43 +12048,43 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 		<aug name="FM_VENGEANCE_ION_TRI">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ION_TRI" value="1.0" stackable="independent" />
+			<crystalShard weapon="ION_TRI" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ION_INSTANT">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ION_INSTANT" value="1.0" stackable="independent" />
+			<crystalShard weapon="ION_INSTANT" value="0.1" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ION_CHAINGUN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ION_CHAINGUN" value="1.0" stackable="independent" />
+			<crystalShard weapon="ION_CHAINGUN" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ION_CHARGEGUN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ION_CHARGEGUN" value="1.0" stackable="independent" />
+			<crystalShard weapon="ION_CHARGEGUN" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ION_CHARGEGUN_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ION_CHARGEGUN_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="ION_CHARGEGUN_2" value="0.9" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ION_STUN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ION_STUN" value="1.0" stackable="independent" />
+			<crystalShard weapon="ION_STUN" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ION_STUN_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ION_STUN_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="ION_STUN_2" value="0.7" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ION_STUN_HEAVY">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ION_STUN_HEAVY" value="1.0" stackable="independent" />
+			<crystalShard weapon="ION_STUN_HEAVY" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ION_STUN_CHARGEGUN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ION_STUN_CHARGEGUN" value="1.0" stackable="independent" />
+			<crystalShard weapon="ION_STUN_CHARGEGUN" value="0.7" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ION_STUN_CHARGEGUN_PLAYER">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ION_STUN_CHARGEGUN_PLAYER" value="1.0" stackable="independent" />
+			<crystalShard weapon="ION_STUN_CHARGEGUN_PLAYER" value="0.7" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ION_PIERCE_DISCO">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
@@ -12092,75 +12092,75 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 		<aug name="FM_VENGEANCE_ION_PIERCE_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ION_PIERCE_1" value="1.0" stackable="independent" />
+			<crystalShard weapon="ION_PIERCE_1" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ION_PIERCE_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ION_PIERCE_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="ION_PIERCE_2" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ION_FIRE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ION_FIRE" value="1.0" stackable="independent" />
+			<crystalShard weapon="ION_FIRE" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ION_BIO">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ION_BIO" value="1.0" stackable="independent" />
+			<crystalShard weapon="ION_BIO" value="0.7" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MISSILES_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MISSILES_1" value="1.0" stackable="independent" />
+			<crystalShard weapon="MISSILES_1" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MISSILES_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MISSILES_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="MISSILES_2" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MISSILES_3">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MISSILES_3" value="1.0" stackable="independent" />
+			<crystalShard weapon="MISSILES_3" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MISSILES_4">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MISSILES_4" value="1.0" stackable="independent" />
+			<crystalShard weapon="MISSILES_4" value="0.1" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MISSILES_4_PLAYER">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MISSILES_4_PLAYER" value="1.0" stackable="independent" />
+			<crystalShard weapon="MISSILES_4_PLAYER" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MISSILES_BURST">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MISSILES_BURST" value="1.0" stackable="independent" />
+			<crystalShard weapon="MISSILES_BURST" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MISSILES_BURST_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MISSILES_BURST_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="MISSILES_BURST_2" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MISSILES_BURST_2_PLAYER">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MISSILES_BURST_2_PLAYER" value="1.0" stackable="independent" />
+			<crystalShard weapon="MISSILES_BURST_2_PLAYER" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MISSILES_CLOAK">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MISSILES_CLOAK" value="1.0" stackable="independent" />
+			<crystalShard weapon="MISSILES_CLOAK" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MISSILES_FIRE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MISSILES_FIRE" value="1.0" stackable="independent" />
+			<crystalShard weapon="MISSILES_FIRE" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MISSILES_FIRE_PLAYER">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MISSILES_FIRE_PLAYER" value="1.0" stackable="independent" />
+			<crystalShard weapon="MISSILES_FIRE_PLAYER" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MISSILES_FREE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MISSILES_FREE" value="1.0" stackable="independent" />
+			<crystalShard weapon="MISSILES_FREE" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MISSILES_BIO">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MISSILES_BIO" value="1.0" stackable="independent" />
+			<crystalShard weapon="MISSILES_BIO" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MISSILES_STUN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MISSILES_STUN" value="1.0" stackable="independent" />
+			<crystalShard weapon="MISSILES_STUN" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
@@ -12168,27 +12168,27 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_2" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_2_PLAYER">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_2_PLAYER" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_2_PLAYER" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_3">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_3" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_3" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_4">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_4" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_4" value="0.1" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_LONG">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_LONG" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_LONG" value="0.7" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_LONG_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_LONG_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_LONG_2" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_SCYTHE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
@@ -12196,43 +12196,43 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_CHAIN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_CHAIN" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_CHAIN" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_PIERCE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_PIERCE" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_PIERCE" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_FIRE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_FIRE" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_FIRE" value="0.9" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_FIRE_PLAYER">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_FIRE_PLAYER" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_FIRE_PLAYER" value="0.9" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_FIRE_PIERCE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_FIRE_PIERCE" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_FIRE_PIERCE" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_FIRE_INSTANT">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_FIRE_INSTANT" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_FIRE_INSTANT" value="0.1" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_BREACH">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_BREACH" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_BREACH" value="0.7" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_HULL">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_HULL" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_HULL" value="0.8" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_HULL_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_HULL_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_HULL_2" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_MINING">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_MINING" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_MINING" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_ADAPT">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
@@ -12240,47 +12240,47 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_ADAPT_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_ADAPT_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_ADAPT_2" value="0.8" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_BIO">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_BIO" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_BIO" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_BIO_CHAIN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_BIO_CHAIN" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_BIO_CHAIN" value="0.8" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_STUN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_STUN" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_STUN" value="0.8" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_GUILLOTINE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_GUILLOTINE" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_GUILLOTINE" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_GUILLOTINE_PLAYER">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_GUILLOTINE_PLAYER" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_GUILLOTINE_PLAYER" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_FOCUS_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="FOCUS_1" value="1.0" stackable="independent" />
+			<crystalShard weapon="FOCUS_1" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_FOCUS_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="FOCUS_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="FOCUS_2" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_FOCUS_3">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="FOCUS_3" value="1.0" stackable="independent" />
+			<crystalShard weapon="FOCUS_3" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_FOCUS_CHAIN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="FOCUS_CHAIN" value="1.0" stackable="independent" />
+			<crystalShard weapon="FOCUS_CHAIN" value="0.8" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_FOCUS_BIO">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="FOCUS_BIO" value="1.0" stackable="independent" />
+			<crystalShard weapon="FOCUS_BIO" value="0.9" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_FOCUS_BIO_PLAYER">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
@@ -12288,35 +12288,35 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 		<aug name="FM_VENGEANCE_BOMB_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BOMB_1" value="1.0" stackable="independent" />
+			<crystalShard weapon="BOMB_1" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BOMB_BREACH_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BOMB_BREACH_1" value="1.0" stackable="independent" />
+			<crystalShard weapon="BOMB_BREACH_1" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BOMB_FIRE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BOMB_FIRE" value="1.0" stackable="independent" />
+			<crystalShard weapon="BOMB_FIRE" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BOMB_FREE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BOMB_FREE" value="1.0" stackable="independent" />
+			<crystalShard weapon="BOMB_FREE" value="0.7" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BOMB_ION">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BOMB_ION" value="1.0" stackable="independent" />
+			<crystalShard weapon="BOMB_ION" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BOMB_STUN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BOMB_STUN" value="1.0" stackable="independent" />
+			<crystalShard weapon="BOMB_STUN" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BOMB_BIO">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BOMB_BIO" value="1.0" stackable="independent" />
+			<crystalShard weapon="BOMB_BIO" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BOMB_LOCK">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BOMB_LOCK" value="1.0" stackable="independent" />
+			<crystalShard weapon="BOMB_LOCK" value="0.8" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BOMB_HEAL">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
@@ -12336,251 +12336,251 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 		<aug name="FM_VENGEANCE_ENERGY_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ENERGY_1" value="1.0" stackable="independent" />
+			<crystalShard weapon="ENERGY_1" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ENERGY_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ENERGY_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="ENERGY_2" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ENERGY_2_PLAYER">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ENERGY_2_PLAYER" value="1.0" stackable="independent" />
+			<crystalShard weapon="ENERGY_2_PLAYER" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ENERGY_3">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ENERGY_3" value="1.0" stackable="independent" />
+			<crystalShard weapon="ENERGY_3" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ENERGY_HULL">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ENERGY_HULL" value="1.0" stackable="independent" />
+			<crystalShard weapon="ENERGY_HULL" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ENERGY_STUN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ENERGY_STUN" value="1.0" stackable="independent" />
+			<crystalShard weapon="ENERGY_STUN" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ENERGY_STUN_PLAYER">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ENERGY_STUN_PLAYER" value="1.0" stackable="independent" />
+			<crystalShard weapon="ENERGY_STUN_PLAYER" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ENERGY_CHAINGUN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ENERGY_CHAINGUN" value="1.0" stackable="independent" />
+			<crystalShard weapon="ENERGY_CHAINGUN" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ENERGY_CHARGEGUN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ENERGY_CHARGEGUN" value="1.0" stackable="independent" />
+			<crystalShard weapon="ENERGY_CHARGEGUN" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ENERGY_CHARGEGUN_PLAYER">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ENERGY_CHARGEGUN_PLAYER" value="1.0" stackable="independent" />
+			<crystalShard weapon="ENERGY_CHARGEGUN_PLAYER" value="0.7" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_SHOTGUN_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="SHOTGUN_1" value="1.0" stackable="independent" />
+			<crystalShard weapon="SHOTGUN_1" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_SHOTGUN_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="SHOTGUN_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="SHOTGUN_2" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_SHOTGUN_2_PLAYER">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="SHOTGUN_2_PLAYER" value="1.0" stackable="independent" />
+			<crystalShard weapon="SHOTGUN_2_PLAYER" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_SHOTGUN_3">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="SHOTGUN_3" value="1.0" stackable="independent" />
+			<crystalShard weapon="SHOTGUN_3" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_SHOTGUN_4">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="SHOTGUN_4" value="1.0" stackable="independent" />
+			<crystalShard weapon="SHOTGUN_4" value="0.1" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_SHOTGUN_CHARGE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="SHOTGUN_CHARGE" value="1.0" stackable="independent" />
+			<crystalShard weapon="SHOTGUN_CHARGE" value="0.8" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_SHOTGUN_CHAIN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="SHOTGUN_CHAIN" value="1.0" stackable="independent" />
+			<crystalShard weapon="SHOTGUN_CHAIN" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_SHOTGUN_INSTANT">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="SHOTGUN_INSTANT" value="1.0" stackable="independent" />
+			<crystalShard weapon="SHOTGUN_INSTANT" value="0.1" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_SHOTGUN_FIRE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="SHOTGUN_FIRE" value="1.0" stackable="independent" />
+			<crystalShard weapon="SHOTGUN_FIRE" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_SHOTGUN_ION">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="SHOTGUN_ION" value="1.0" stackable="independent" />
+			<crystalShard weapon="SHOTGUN_ION" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_SHOTGUN_TOXIC">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="SHOTGUN_TOXIC" value="1.0" stackable="independent" />
+			<crystalShard weapon="SHOTGUN_TOXIC" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_SHOTGUN_TOXIC_PLAYER">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="SHOTGUN_TOXIC_PLAYER" value="1.0" stackable="independent" />
+			<crystalShard weapon="SHOTGUN_TOXIC_PLAYER" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_KERNEL_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="KERNEL_1" value="1.0" stackable="independent" />
+			<crystalShard weapon="KERNEL_1" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_KERNEL_1_ELITE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="KERNEL_1_ELITE" value="1.0" stackable="independent" />
+			<crystalShard weapon="KERNEL_1_ELITE" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_KERNEL_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="KERNEL_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="KERNEL_2" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_KERNEL_2_ELITE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="KERNEL_2_ELITE" value="1.0" stackable="independent" />
+			<crystalShard weapon="KERNEL_2_ELITE" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_KERNEL_HEAVY">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="KERNEL_HEAVY" value="1.0" stackable="independent" />
+			<crystalShard weapon="KERNEL_HEAVY" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_KERNEL_HEAVY_ELITE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="KERNEL_HEAVY_ELITE" value="1.0" stackable="independent" />
+			<crystalShard weapon="KERNEL_HEAVY_ELITE" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_KERNEL_FIRE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="KERNEL_FIRE" value="1.0" stackable="independent" />
+			<crystalShard weapon="KERNEL_FIRE" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_KERNEL_CHAIN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="KERNEL_CHAIN" value="1.0" stackable="independent" />
+			<crystalShard weapon="KERNEL_CHAIN" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_KERNEL_CHAIN_ELITE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="KERNEL_CHAIN_ELITE" value="1.0" stackable="independent" />
+			<crystalShard weapon="KERNEL_CHAIN_ELITE" value="0.7" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_KERNEL_CHARGE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="KERNEL_CHARGE" value="1.0" stackable="independent" />
+			<crystalShard weapon="KERNEL_CHARGE" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_KERNEL_CHARGE_ELITE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="KERNEL_CHARGE_ELITE" value="1.0" stackable="independent" />
+			<crystalShard weapon="KERNEL_CHARGE_ELITE" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_SPORE_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="SPORE_1" value="1.0" stackable="independent" />
+			<crystalShard weapon="SPORE_1" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_SPORE_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="SPORE_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="SPORE_2" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_SPORE_HEAVY">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="SPORE_HEAVY" value="1.0" stackable="independent" />
+			<crystalShard weapon="SPORE_HEAVY" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_SPORE_CHAIN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="SPORE_CHAIN" value="1.0" stackable="independent" />
+			<crystalShard weapon="SPORE_CHAIN" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_SPORE_STUN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="SPORE_STUN" value="1.0" stackable="independent" />
+			<crystalShard weapon="SPORE_STUN" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_CRYSTAL_BURST_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="CRYSTAL_BURST_1" value="1.0" stackable="independent" />
+			<crystalShard weapon="CRYSTAL_BURST_1" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_CRYSTAL_BURST_1_RED">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="CRYSTAL_BURST_1_RED" value="1.0" stackable="independent" />
+			<crystalShard weapon="CRYSTAL_BURST_1_RED" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_CRYSTAL_BURST_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="CRYSTAL_BURST_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="CRYSTAL_BURST_2" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_CRYSTAL_BURST_2_RED">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="CRYSTAL_BURST_2_RED" value="1.0" stackable="independent" />
+			<crystalShard weapon="CRYSTAL_BURST_2_RED" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_CRYSTAL_HEAVY_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="CRYSTAL_HEAVY_1" value="1.0" stackable="independent" />
+			<crystalShard weapon="CRYSTAL_HEAVY_1" value="0.7" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_CRYSTAL_HEAVY_1_RED">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="CRYSTAL_HEAVY_1_RED" value="1.0" stackable="independent" />
+			<crystalShard weapon="CRYSTAL_HEAVY_1_RED" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_CRYSTAL_HEAVY_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="CRYSTAL_HEAVY_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="CRYSTAL_HEAVY_2" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_CRYSTAL_HEAVY_2_RED">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="CRYSTAL_HEAVY_2_RED" value="1.0" stackable="independent" />
+			<crystalShard weapon="CRYSTAL_HEAVY_2_RED" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_CRYSTAL_STUN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="CRYSTAL_STUN" value="1.0" stackable="independent" />
+			<crystalShard weapon="CRYSTAL_STUN" value="0.8" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_CRYSTAL_STUN_RED">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="CRYSTAL_STUN_RED" value="1.0" stackable="independent" />
+			<crystalShard weapon="CRYSTAL_STUN_RED" value="0.7" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_CRYSTAL_SHOTGUN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="CRYSTAL_SHOTGUN" value="1.0" stackable="independent" />
+			<crystalShard weapon="CRYSTAL_SHOTGUN" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_CRYSTAL_SHOTGUN_RED">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="CRYSTAL_SHOTGUN_RED" value="1.0" stackable="independent" />
+			<crystalShard weapon="CRYSTAL_SHOTGUN_RED" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_CRYSTAL_CHARGEGUN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="CRYSTAL_CHARGEGUN" value="1.0" stackable="independent" />
+			<crystalShard weapon="CRYSTAL_CHARGEGUN" value="0.9" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_CRYSTAL_CHARGEGUN_RED">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="CRYSTAL_CHARGEGUN_RED" value="1.0" stackable="independent" />
+			<crystalShard weapon="CRYSTAL_CHARGEGUN_RED" value="0.8" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MINELAUNCHER_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MINELAUNCHER_1" value="1.0" stackable="independent" />
+			<crystalShard weapon="MINELAUNCHER_1" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MINELAUNCHER_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MINELAUNCHER_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="MINELAUNCHER_2" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MINELAUNCHER_3">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MINELAUNCHER_3" value="1.0" stackable="independent" />
+			<crystalShard weapon="MINELAUNCHER_3" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MINELAUNCHER_FREE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MINELAUNCHER_FREE" value="1.0" stackable="independent" />
+			<crystalShard weapon="MINELAUNCHER_FREE" value="0.8" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MINELAUNCHER_FIRE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MINELAUNCHER_FIRE" value="1.0" stackable="independent" />
+			<crystalShard weapon="MINELAUNCHER_FIRE" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MINELAUNCHER_BREACH">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MINELAUNCHER_BREACH" value="1.0" stackable="independent" />
+			<crystalShard weapon="MINELAUNCHER_BREACH" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MINELAUNCHER_STUN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MINELAUNCHER_STUN" value="1.0" stackable="independent" />
+			<crystalShard weapon="MINELAUNCHER_STUN" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MINELAUNCHER_CRYSTAL">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MINELAUNCHER_CRYSTAL" value="1.0" stackable="independent" />
+			<crystalShard weapon="MINELAUNCHER_CRYSTAL" value="0.7" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MINELAUNCHER_KERNEL">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MINELAUNCHER_KERNEL" value="1.0" stackable="independent" />
+			<crystalShard weapon="MINELAUNCHER_KERNEL" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_CONSERVATIVE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_CONSERVATIVE" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_CONSERVATIVE" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_CONSERVATIVE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
@@ -12588,123 +12588,123 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 		<aug name="FM_VENGEANCE_ION_CONSERVATIVE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ION_CONSERVATIVE" value="1.0" stackable="independent" />
+			<crystalShard weapon="ION_CONSERVATIVE" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MISSILES_CONSERVATIVE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MISSILES_CONSERVATIVE" value="1.0" stackable="independent" />
+			<crystalShard weapon="MISSILES_CONSERVATIVE" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BOMB_CONSERVATIVE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BOMB_CONSERVATIVE" value="1.0" stackable="independent" />
+			<crystalShard weapon="BOMB_CONSERVATIVE" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ENERGY_CONSERVATIVE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ENERGY_CONSERVATIVE" value="1.0" stackable="independent" />
+			<crystalShard weapon="ENERGY_CONSERVATIVE" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_BIO_CONSERVATIVE">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_BIO_CONSERVATIVE" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_BIO_CONSERVATIVE" value="0.8" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ZENITH_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ZENITH_1" value="1.0" stackable="independent" />
+			<crystalShard weapon="ZENITH_1" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LANCE_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LANCE_1" value="1.0" stackable="independent" />
+			<crystalShard weapon="LANCE_1" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BOMB_CLUSTER">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BOMB_CLUSTER" value="1.0" stackable="independent" />
+			<crystalShard weapon="BOMB_CLUSTER" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ANCIENT_LASER">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ANCIENT_LASER" value="1.0" stackable="independent" />
+			<crystalShard weapon="ANCIENT_LASER" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ANCIENT_LASER_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ANCIENT_LASER_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="ANCIENT_LASER_2" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ANCIENT_LASER_3">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ANCIENT_LASER_3" value="1.0" stackable="independent" />
+			<crystalShard weapon="ANCIENT_LASER_3" value="0.1" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ANCIENT_MISSILES">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ANCIENT_MISSILES" value="1.0" stackable="independent" />
+			<crystalShard weapon="ANCIENT_MISSILES" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ANCIENT_BOMB">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ANCIENT_BOMB" value="1.0" stackable="independent" />
+			<crystalShard weapon="ANCIENT_BOMB" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ANCIENT_MINELAUNCHER">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ANCIENT_MINELAUNCHER" value="1.0" stackable="independent" />
+			<crystalShard weapon="ANCIENT_MINELAUNCHER" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ANCIENT_BEAM">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ANCIENT_BEAM" value="1.0" stackable="independent" />
+			<crystalShard weapon="ANCIENT_BEAM" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ANCIENT_BEAM_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ANCIENT_BEAM_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="ANCIENT_BEAM_2" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ANCIENT_BEAM_3">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ANCIENT_BEAM_3" value="1.0" stackable="independent" />
+			<crystalShard weapon="ANCIENT_BEAM_3" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ANCIENT_HAVOC">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ANCIENT_HAVOC" value="1.0" stackable="independent" />
+			<crystalShard weapon="ANCIENT_HAVOC" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ANCIENT_FOCUS">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ANCIENT_FOCUS" value="1.0" stackable="independent" />
+			<crystalShard weapon="ANCIENT_FOCUS" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ANCIENT_FOCUS_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ANCIENT_FOCUS_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="ANCIENT_FOCUS_2" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ANCIENT_ION_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ANCIENT_ION_1" value="1.0" stackable="independent" />
+			<crystalShard weapon="ANCIENT_ION_1" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ANCIENT_ION_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ANCIENT_ION_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="ANCIENT_ION_2" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ANCIENT_STUN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ANCIENT_STUN" value="1.0" stackable="independent" />
+			<crystalShard weapon="ANCIENT_STUN" value="0.9" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ROYAL_LASER_3">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ROYAL_LASER_3" value="1.0" stackable="independent" />
+			<crystalShard weapon="ROYAL_LASER_3" value="0.1" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ROYAL_BEAM_3">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ROYAL_BEAM_3" value="1.0" stackable="independent" />
+			<crystalShard weapon="ROYAL_BEAM_3" value="0.1" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ROYAL_HAVOC">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ROYAL_HAVOC" value="1.0" stackable="independent" />
+			<crystalShard weapon="ROYAL_HAVOC" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ROYAL_FOCUS">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ROYAL_FOCUS" value="1.0" stackable="independent" />
+			<crystalShard weapon="ROYAL_FOCUS" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ROYAL_MISSILES">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ROYAL_MISSILES" value="1.0" stackable="independent" />
+			<crystalShard weapon="ROYAL_MISSILES" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ROYAL_BOMB">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ROYAL_BOMB" value="1.0" stackable="independent" />
+			<crystalShard weapon="ROYAL_BOMB" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ROYAL_ION_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ROYAL_ION_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="ROYAL_ION_2" value="0.1" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_REPAIR">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
@@ -12716,23 +12716,23 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_HARDSCIFI">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_HARDSCIFI" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_HARDSCIFI" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_BURST_SYLVAN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_BURST_SYLVAN" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_BURST_SYLVAN" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_BURST_5_SYLVAN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_BURST_5_SYLVAN" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_BURST_5_SYLVAN" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_4_SYLVAN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_4_SYLVAN" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_4_SYLVAN" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_SHOTGUN_GOLD_3">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="SHOTGUN_GOLD_3" value="1.0" stackable="independent" />
+			<crystalShard weapon="SHOTGUN_GOLD_3" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_HORSE_GUN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
@@ -12740,7 +12740,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 		<aug name="FM_VENGEANCE_MISSILES_ROCK">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="MISSILES_ROCK" value="1.0" stackable="independent" />
+			<crystalShard weapon="MISSILES_ROCK" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_BISHOP">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
@@ -12748,15 +12748,15 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 		<aug name="FM_VENGEANCE_ION_PIERCE_CHAIN">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="ION_PIERCE_CHAIN" value="1.0" stackable="independent" />
+			<crystalShard weapon="ION_PIERCE_CHAIN" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_FIRE_SPECIAL">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LASER_FIRE_SPECIAL" value="1.0" stackable="independent" />
+			<crystalShard weapon="LASER_FIRE_SPECIAL" value="0.7" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BOMB_CHERRI">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BOMB_CHERRI" value="1.0" stackable="independent" />
+			<crystalShard weapon="BOMB_CHERRI" value="0.5" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LASER_CHAINGUN_GOLD">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
@@ -12768,15 +12768,15 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 		<aug name="FM_VENGEANCE_SALT_LAUNCHER">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="SALT_LAUNCHER" value="1.0" stackable="independent" />
+			<crystalShard weapon="SALT_LAUNCHER" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_SHOTGUN_GOLD">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="SHOTGUN_GOLD" value="1.0" stackable="independent" />
+			<crystalShard weapon="SHOTGUN_GOLD" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_BEAM_SHELL">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="BEAM_SHELL" value="1.0" stackable="independent" />
+			<crystalShard weapon="BEAM_SHELL" value="0.8" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_ZOLTAN_DELETER">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
@@ -13040,15 +13040,15 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 		<aug name="FM_VENGEANCE_RUSTY_LASER_BURST_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="RUSTY_LASER_BURST_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="RUSTY_LASER_BURST_2" value="0.8" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_RUSTY_LASER_BURST_3">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="RUSTY_LASER_BURST_3" value="1.0" stackable="independent" />
+			<crystalShard weapon="RUSTY_LASER_BURST_3" value="0.6" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_RUSTY_LASER_BURST_5">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="RUSTY_LASER_BURST_5" value="1.0" stackable="independent" />
+			<crystalShard weapon="RUSTY_LASER_BURST_5" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_RUSTY_LASER_HEAVY_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
@@ -13056,19 +13056,19 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 		<aug name="FM_VENGEANCE_RUSTY_MISSILES_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="RUSTY_MISSILES_1" value="1.0" stackable="independent" />
+			<crystalShard weapon="RUSTY_MISSILES_1" value="0.4" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_RUSTY_MISSILES_2">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="RUSTY_MISSILES_2" value="1.0" stackable="independent" />
+			<crystalShard weapon="RUSTY_MISSILES_2" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_RUSTY_MISSILES_3">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="RUSTY_MISSILES_3" value="1.0" stackable="independent" />
+			<crystalShard weapon="RUSTY_MISSILES_3" value="0.3" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_RUSTY_MISSILES_BURST">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="RUSTY_MISSILES_BURST" value="1.0" stackable="independent" />
+			<crystalShard weapon="RUSTY_MISSILES_BURST" value="0.2" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_MODULE_ACCURACY">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
