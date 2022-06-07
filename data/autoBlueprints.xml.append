@@ -1447,6 +1447,123 @@
 </blueprintList>
 
 
+
+<!--TWISTED LANIUS REWORK STUFF HERE-->
+<blueprintList name="LIST_FLAK_FORGE_SPECIALGUNS"><!--Marks which guns are special-->
+	<name>FM_MINELAUNCHER_HULL</name>
+	<name>FM_ROYAL_MINELAUNCHER</name>
+	<name>LASER_BURST_3</name>
+</blueprintList>
+
+<!--HELLO GORDON IS CRUCIAL TO THE CODE DO NOT REMOVE (not really but it's funny leave it for now so we know it's not done)-->
+<blueprintList name="LIST_FLAK_POWER_0_NORMAL">
+		<name>Hello Gordon!</name>
+		<name>LASER_BURST_2_A</name>
+
+
+
+		<name>SHOTGUN_INSTANT</name>
+	</blueprintList>
+	<blueprintList name="LIST_FLAK_POWER_0_SPECIAL">
+		<name>Hello Gordon!</name>
+
+
+		<name>SHOTGUN_INSTANT</name>
+	</blueprintList>
+	<blueprintList name="LIST_FLAK_POWER_1_NORMAL">
+		<name>Hello Gordon!</name>
+
+
+		<name>SHOTGUN_1</name>
+		<name>SHOTGUN_1</name>
+		<name>SHOTGUN_1</name>
+		<name>SHOTGUN_1</name>
+		<name>SHOTGUN_1</name>
+		<name>SHOTGUN_1</name>
+		<name>SHOTGUN_2_PLAYER</name>
+	</blueprintList>
+	<blueprintList name="LIST_FLAK_POWER_1_SPECIAL">
+		<name>Hello Gordon!</name>
+
+
+		<name>SHOTGUN_2_PLAYER</name>
+	</blueprintList>
+	<blueprintList name="LIST_FLAK_POWER_2_NORMAL">
+		<name>Hello Gordon!</name>
+
+
+	</blueprintList>
+	<blueprintList name="LIST_FLAK_POWER_2_SPECIAL">
+		<name>Hello Gordon!</name>
+
+
+	</blueprintList>
+	<blueprintList name="LIST_FLAK_POWER_3_NORMAL">
+		<name>Hello Gordon!</name>
+
+
+	</blueprintList>
+	<blueprintList name="LIST_FLAK_POWER_3_SPECIAL">
+		<name>Hello Gordon!</name>
+
+
+	</blueprintList>
+	<blueprintList name="LIST_FLAK_POWER_4_NORMAL">
+		<name>Hello Gordon!</name>
+
+
+	</blueprintList>
+	<blueprintList name="LIST_FLAK_POWER_4_SPECIAL">
+		<name>Hello Gordon!</name>
+
+
+	</blueprintList>
+	<blueprintList name="LIST_FLAK_POWER_5_NORMAL">
+		<name>Hello Gordon!</name>
+
+
+	</blueprintList>
+	<blueprintList name="LIST_FLAK_POWER_5_SPECIAL">
+		<name>Hello Gordon!</name>
+
+
+	</blueprintList>
+	<blueprintList name="LIST_FLAK_POWER_6_NORMAL">
+		<name>Hello Gordon!</name>
+
+
+	</blueprintList>
+	<blueprintList name="LIST_FLAK_POWER_6_SPECIAL">
+		<name>Hello Gordon!</name>
+
+
+	</blueprintList>
+	<blueprintList name="LIST_FLAK_POWER_7_NORMAL">
+		<name>Hello Gordon!</name>
+
+
+	</blueprintList>
+	<blueprintList name="LIST_FLAK_POWER_7_SPECIAL">
+		<name>Hello Gordon!</name>
+
+
+	</blueprintList>
+	<blueprintList name="LIST_FLAK_POWER_8_NORMAL">
+		<name>Hello Gordon!</name>
+
+
+	</blueprintList>
+	<blueprintList name="LIST_FLAK_POWER_8_SPECIAL">
+		<name>Hello Gordon!</name>
+
+
+	</blueprintList>
+
+
+
+
+
+
 <!--Twisted Lanius Stuff (Flak Forge)-->
 <blueprintList name = "LIST_FLAK_FORGE_NORMAL_1">
 	<name>SHOTGUN_1</name>
@@ -1510,6 +1627,11 @@
 	<name>CRYSTAL_SHOTGUN_RED</name> maybe?
 -->
 </blueprintList>
+
+
+
+
+
 
 <blueprintList name = "LIST_FLAK_FORGE_NORMAL_2">
 	<name>SHOTGUN_2</name>
