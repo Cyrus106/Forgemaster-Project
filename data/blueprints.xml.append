@@ -9532,13 +9532,13 @@
 		<desc>The Hive came up with this weapon after finding a human history book and searching for strange names. This one amused them the most.
 			The beam however, isn't too funny when your crew is burning alive.
 		</desc>
-		<tooltip>Starts fires and does 3 system damage per room. 2 Shield piercing</tooltip>
+		<tooltip>Starts fires and does 3 system damage per room. 3 Shield piercing</tooltip>
 		<damage>0</damage>
 		<sysDamage>2</sysDamage>
 		<sp>3</sp>
 		<fireChance>4</fireChance>
 		<breachChance>2</breachChance>
-		<cooldown>22</cooldown>
+		<cooldown>17</cooldown>
 		<color>
 			<r>255</r>
 			<g>110</g>
