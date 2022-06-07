@@ -8418,7 +8418,7 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_CAPSTONE_DUSK">
-		<text>Install the Depricated Duskbringer Reactor? [+20% reload speed and shield recharge speed, your crew stats are reducd by 20% (damage taken +20%)]</text>
+		<text>Install the Depricated Duskbringer Reactor? [+20% reload speed and shield recharge speed, your crew stats are reduced by 20% (damage taken +20%)]</text>
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Install the Duskbringer Reactor.</text>
 			<event>
