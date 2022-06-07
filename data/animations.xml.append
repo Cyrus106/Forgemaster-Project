@@ -3605,6 +3605,17 @@ try this later
 		<chargeImage>weapon_beams/fm_ancalagon_beam_glow.png</chargeImage>
 	</weaponAnim>
 
+	<animSheet name="fm_beam_ion_special" w="1188" h="1427" fw="27" fh="1427">weapon_beams/fm_beam_ion_special_sheet44.png</animSheet>
+	<weaponAnim name="fm_beam_ion_special">
+		<sheet>fm_beam_ion_special</sheet>
+		<desc length="44" x="0" y="0"/>
+		<chargedFrame>10</chargedFrame>
+		<fireFrame>28</fireFrame>
+		<firePoint  x="14" y="0"/>
+		<mountPoint x="1" y="715"/>
+		<chargeImage>weapon_beams/fm_beam_ion_special_glow.png</chargeImage>
+	</weaponAnim>
+
 </FTL>
 
 <FTL><!-- FOCUS-->

@@ -2472,6 +2472,31 @@
       <event load="STORAGE_CHECK_CREATE_BEAM_LOAD"/>
     </choice>
   </event>
+
+  <event name="STORAGE_CHECK_CREATE_FM_BEAM_ION_SPECIAL">
+    <checkCargo/>
+    <text>Currently viewing the 'HD_Hotfix_26v7' Beam.</text>
+
+    <choice hidden="false"  blue="false">
+      <text>Craft the 'HD_Hotfix_26v7' Beam using [nothing].</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <weapon name="FM_BEAM_ION_SPECIAL"/>
+        <removeItem></removeItem>
+        <removeItem></removeItem>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice hidden="false">
+      <text>Nevermind.</text>
+      <event load="STORAGE_CHECK_CREATE_BEAM_LOAD"/>
+    </choice>
+  </event>
 </FTL>
 
 
