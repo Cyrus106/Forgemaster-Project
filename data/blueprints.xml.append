@@ -91,7 +91,7 @@
 		<maxPower amount="9" />
 		<aug name="FM_CRUCIBLE_PLATING_PLAYER" />
 	</shipBlueprint>
-	<shipBlueprint name="PLAYER_SHIP_GUNSHIP_FM" layout="zfm_gunhydra_a" img="fm_gunhydra_a">
+	<shipBlueprint name="PLAYER_SHIP_GUNSHIP_FM" layout="zfm_gunhydra_a" img="zfm_gunhydra_a">
 		<class>GunBomination</class>
 		<name>Gun Hydra</name>
 		<unlock id="ship_PLAYER_SHIP_GUNSHIP_FM_unlock"/>
@@ -159,7 +159,7 @@
 		<aug name="DRONE_RECOVERY" />
 	</shipBlueprint>
 
-	<shipBlueprint name="PLAYER_SHIP_GUNSHIP_FM_2" layout="zfm_gunhydra_b" img="fm_gunhydra_b">
+	<shipBlueprint name="PLAYER_SHIP_GUNSHIP_FM_2" layout="zfm_gunhydra_b" img="zfm_gunhydra_b">
 		<class>GunBomination</class>
 		<name>Gun Cobra</name>
 		<unlock id="ship_PLAYER_SHIP_GUNSHIP_FM_2_unlock"/>
@@ -225,7 +225,7 @@
 		<aug name="DRONE_RECOVERY" />
 	</shipBlueprint>
 
-	<shipBlueprint name="PLAYER_SHIP_GUNSHIP_FM_3" layout="zfm_gunhydra_c" img="fm_gunhydra_c">
+	<shipBlueprint name="PLAYER_SHIP_GUNSHIP_FM_3" layout="zfm_gunhydra_c" img="zfm_gunhydra_c">
 		<class>GunBomination</class>
 		<name>Gun TitanoBoa</name>
 		<unlock id="ship_PLAYER_SHIP_GUNSHIP_FM_3_unlock"/>
@@ -293,7 +293,7 @@
 
 	</shipBlueprint>
 
-	<shipBlueprint name="PLAYER_SHIP_GUNSHIP_ELITE" layout="zfm_gunhydra_elite" img="fm_gunhydra_elite">
+	<shipBlueprint name="PLAYER_SHIP_GUNSHIP_ELITE" layout="zfm_gunhydra_elite" img="zfm_gunhydra_elite">
 		<class>GunBomination II</class>
 		<name>Gun Hydra Awakened</name>
 		<unlock id="ship_PLAYER_SHIP_GUNSHIP_ELITE_unlock"/>
@@ -368,7 +368,7 @@
 		<aug name="DRONE_RECOVERY" />
 	</shipBlueprint>
 
-	<shipBlueprint name="PLAYER_SHIP_GUNSHIP_ELITE_2" layout="zfm_gunhydra_elite_b" img="fm_gunhydra_elite_b">
+	<shipBlueprint name="PLAYER_SHIP_GUNSHIP_ELITE_2" layout="zfm_gunhydra_elite_b" img="zfm_gunhydra_elite_b">
 		<class>GunBomination II</class>
 		<name>Gun Destitute</name>
 		<unlock id="ship_PLAYER_SHIP_GUNSHIP_ELITE_2_unlock"/>
@@ -449,7 +449,7 @@
 		<aug name="EX_AUTO_COOLDOWN" />
 	</shipBlueprint>
 
-	<shipBlueprint name="PLAYER_SHIP_GUNSHIP_FUTURE" layout="zfm_gunhydra_future" img="fm_gunhydra_future">
+	<shipBlueprint name="PLAYER_SHIP_GUNSHIP_FUTURE" layout="zfm_gunhydra_future" img="zfm_gunhydra_future">
 		<class>GunBomination III</class>
 		<name>GunBom Anti-Harmony</name>
 		<unlock id="ship_PLAYER_SHIP_GUNSHIP_FUTURE_unlock"/>
@@ -830,7 +830,6 @@
 		</crew>
 		<aug name="TWISTED_MANTIS_UPGRADER"/>
 	</shipBlueprint>
-
 	<shipBlueprint name="PLAYER_SHIP_TWISTED2_2" layout="zmt_player_separatist_suicide" img="zmt_player_separatist_suicide">
 		<class>Twisted Renegade Separatist</class>
 		<name>Duality</name>
@@ -909,7 +908,6 @@
 		<aug name="LOCKED_NANOBOT_DEFENSE_SYSTEM" />
 		<aug name="EX_DRONE_SPEED" />
 	</shipBlueprint>
-
 	<shipBlueprint name="PLAYER_SHIP_TWISTED2_3" layout="zmt_player_mantis_suicide" img="zmt_player_mantis_suicide">
 		<class>Twisted Renegade Mantis</class>
 		<name>Zerg Rush</name>
@@ -1523,7 +1521,6 @@
 		<aug name="EX_AUTO_COOLDOWN" />
 		<aug name="TWISTED_FLAK_FORGE"/>
 	</shipBlueprint>
-
 	<shipBlueprint name="PLAYER_SHIP_TWISTED5_2" layout="zmt_player_shell_suicide" img="zmt_player_shell_suicide">
 		<class>Twisted Renegade Shell</class>
 		<name>The Malpractice</name>
@@ -1599,9 +1596,6 @@
 		<crewCount amount="1" class="shell_guardian" />
 		<aug name="LOCKED_DECONSTRUCTIVE_GAS" />
 	</shipBlueprint>
-
-
-
 	<shipBlueprint name="PLAYER_SHIP_TWISTED5_3" layout="zmt_player_engineer_suicide" img="zmt_player_engineer_suicide">
 		<class>Twisted Renegade Engineer</class>
 		<name>The Conagher</name>
@@ -1760,7 +1754,6 @@
 		<crewCount amount="1" class="gbvinz" />
 		<aug name="TWISTED_KESTREL_GHOST_SUMMON"/>
 	</shipBlueprint>
-
 	<shipBlueprint name="PLAYER_SHIP_TWISTED6_2" layout="zmt_player_fed_suicide" img="zmt_player_fed_suicide">
 		<class>Twisted Renegade Federation</class>
 		<name>Divine Intervention</name>

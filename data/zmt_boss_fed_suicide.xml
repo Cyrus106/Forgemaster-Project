@@ -14,5 +14,14 @@
 	<mount x="36" y="522" rotate="false" mirror="true" gib="3" slide="left" />
 	<mount x="220" y="34" rotate="false" mirror="true" gib="1" slide="no" />
 </weaponMounts>
-<explosion><gib1><velocity min="0.1" max="0.1" /><direction min="340" max="380" /><angular min="-0.7" max="0.7" /><x>104</x><y>26</y></gib1><gib2><velocity min="0.2557522335180336" max="0.8525074450601121" /><direction min="341" max="381" /><angular min="-0.7" max="0.7" /><x>138</x><y>47</y></gib2><gib3><velocity min="0.1" max="0.1" /><direction min="86" max="126" /><angular min="-0.7" max="0.7" /><x>28</x><y>60</y></gib3><gib4><velocity min="0.1" max="0.300614076072996" /><direction min="160" max="200" /><angular min="-0.7" max="0.7" /><x>31</x><y>417</y></gib4><gib5><velocity min="0.3" max="1.0" /><direction min="123" max="163" /><angular min="-0.7" max="0.7" /><x>37</x><y>419</y></gib5></explosion>
-
+<explosion>
+	<gib1><velocity min="0.1" max="0.1" /><direction min="340" max="380" /><angular min="-0.7" max="0.7" /><x>104</x><y>26</y></gib1>
+	<gib2><velocity min="0.2557522335180336" max="0.8525074450601121" /><direction min="341" max="381" /><angular min="-0.7" max="0.7" /><x>138</x><y>47</y></gib2>
+	<gib3><velocity min="0.1" max="0.1" /><direction min="86" max="126" /><angular min="-0.7" max="0.7" /><x>28</x><y>60</y></gib3>
+	<gib4><velocity min="0.1" max="0.300614076072996" /><direction min="160" max="200" /><angular min="-0.7" max="0.7" /><x>31</x><y>417</y></gib4>
+	<gib5><velocity min="0.3" max="1.0" /><direction min="123" max="163" /><angular min="-0.7" max="0.7" /><x>37</x><y>419</y></gib5>
+</explosion>
+<thrusters sync="true">
+    <thruster x="47" y="671">mu_kestrel</thruster>
+    <thruster x="288" y="671">mu_kestrel</thruster>
+</thrusters>

@@ -53,4 +53,7 @@
 		<y>217</y>
 	</gib5>
 </explosion>
-
+<thrusters sync="true">
+    <thruster x="29" y="18">mup_fed_thruster</thruster>
+    <thruster x="32" y="331">mup_fed_thruster</thruster>
+</thrusters>
