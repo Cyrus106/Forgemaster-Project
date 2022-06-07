@@ -1,3 +1,47 @@
+<FTL><!--inferno-Core (move later to separate file)-->
+	<event name="FMCORE_ONJUMP">
+		<triggeredEvent name="FMCORE_ONJUMP" event="FMCORE_ONJUMP">
+			<jumps amount="1" type="0"/>
+		</triggeredEvent>
+		<!--<queueEvent>EVENTNAME</queueEvent> append more of those lines for each independent effect-->
+	</event>
+	<event name="FMCORE_ONDAMAGE">
+		<triggeredEvent name="FMCORE_ONDAMAGE" event="FMCORE_ONDAMAGE">
+			<playerDamage amount="1" countRepairs="false"/>
+		</triggeredEvent>
+		<!--<queueEvent>EVENTNAME</queueEvent> append more of those lines for each independent effect-->
+	</event>
+	<event name="FMCORE_RESET">
+		<text>FMCORE functions have been reset</text>
+		<clearTriggeredEvent name="FMCORE_ONJUMP"/>
+		<clearTriggeredEvent name="FMCORE_ONDAMAGE"/>
+		<triggeredEvent name="FMCORE_ONDAMAGE" event="FMCORE_ONDAMAGE">
+			<playerDamage amount="1" countRepairs="false"/>
+		</triggeredEvent>
+		<triggeredEvent name="FMCORE_ONJUMP" event="FMCORE_ONJUMP">
+			<jumps amount="1" type="0"/>
+		</triggeredEvent>
+	</event>
+</FTL>
+<FTL><!--appending to inferno-Core-->
+	<mod:findName type="event" name="FMCORE_ONJUMP">
+		<mod-append:queueEvent>FM_JUMP_REMOVE_GHOST_PURGE</mod-append:queueEvent>
+		<mod-append:queueEvent>FM_JUMP_TUCO</mod-append:queueEvent>
+		<mod-append:queueEvent>FM_JUMP_LEECH</mod-append:queueEvent>
+		<mod-append:queueEvent>FM_JUMP_MONK</mod-append:queueEvent>
+		<mod-append:queueEvent>FM_JUMP_CREWKILL</mod-append:queueEvent>
+		<mod-append:queueEvent>FM_JUMP_HULLKILL</mod-append:queueEvent>
+		<mod-append:queueEvent>FM_HULL_LIMITER_WEAPON</mod-append:queueEvent>
+		<mod-append:queueEvent>FM_HULL_LIMITER_SHIELD</mod-append:queueEvent>
+		<mod-append:queueEvent>FM_HULL_LIMITER_REACTOR</mod-append:queueEvent>
+	</mod:findName>
+	<mod:findName type="event" name="FMCORE_ONDAMAGE">
+		<mod-append:queueEvent>FM_ONDAMAGE_MURALS</mod-append:queueEvent>
+		<mod-append:queueEvent>FM_ONDAMAGE_OVERCHARMED</mod-append:queueEvent>
+		<mod-append:queueEvent>FM_ONDAMAGE_HULL_ARM</mod-append:queueEvent>
+	</mod:findName>
+
+</FTL>
 <FTL><!--twisted ships-->
 	<!--twisted Lostsun-->
 	<event name="LOAD_DEATH_TIMER">
@@ -520,10 +564,34 @@ Only respects stronger computers
 
 <FTL><!--all the modular armor stuff-->
 	<!--special module effect events-->
+	<event name="FM_CHECK_NOSHIP_BGOBJECT">
+		<backgroundObject name="NOSHIP_CHECKER">
+			<layer z="0">background</layer>           <!--Either space layer, planet/fleet layer, asteroids background layer, or with the player ship.-->
+			                                                                                          <!--The "player" and "playerfront" are positioned relative to the player ship's origin.
+			                                                                                          The "playerfront" and "front" render in front of the player ship; others render behind.
+			                                                                                          The "z" attribute is used to order objects within a layer (high z in front).-->
+			<spawnArea x="207" y="163" w="0" h="0" center="true"/>                                                                                         <!-- The x/y attributes are optional and are used to offset from the default centered position.-->
+			<anim play="true" loop="true" random="false">fm_forgemasterperson_charge</anim>                           <!-- Animation. The "play" attribute determines whether ALL animations play while this one is visible.-->
+			                                                                                         <!-- The "loop" and "random" attributes determine whether this animation loops and starts on a random frame.-->
+			<hoverAnim play="true" loop="true" random="false">fm_plated_walk_down</hoverAnim>                                           <!--          Animation to show when the player's cursor is hovering over the object. Same attributes as anim.-->
+			<inactiveAnim hide="false" play="true" loop="true" random="false">fm_plated_charge</inactiveAnim>                            <!--      Animation to show when interaction is disabled. Same attributes as anim. Set hide="true" to simply hide the normal anim instead.-->
+			<tooltip>tooltip</tooltip>                                                     <!--Tooltip to show when hovering over the object.-->
+			<inactiveTooltip>its off</inactiveTooltip>                                    <!-- Tooltip to show when hovering over the object, when interaction is disabled.-->
+			<active>false</active>
+			<jumpClear>true</jumpClear>                                                        <!--    If true, the object is destroyed when the player leaves the current location.-->
+			<disableCombat>true</disableCombat>                                                <!--   If true, interaction is disabled when the player is in danger.-->
+
+			<timerAction time="0.0" requireActive="false" requireHover="false" triggerActiveOnly="true">   <!--    requireActive and requireHover are optional attributes which freeze the timer if the condition is not met.-->
+				<event load="NOTHING"/> <!--events_mechanics-->
+				<destroy/>
+			</timerAction>
+		</backgroundObject>
+	</event><!--failed test for the test of no combat-->
+
 	<event name="FM_ONJUMP_STUFF_LOAD">
 	  <loadEvent>FM_JUMP_REMOVE_GHOST_PURGE</loadEvent>
 	</event>
-
+	<!-- old version of the on jump stuff
 	<event name="FM_JUMP_REMOVE_GHOST_PURGE">
 		<loadEventList default="FM_JUMP_TUCO">
 			<event req="TWISTED_KESTREL_GHOST_PURGE" lvl="1">
@@ -550,6 +618,7 @@ Only respects stronger computers
 			</event>
 		</loadEventList>
 	</event>
+
 	<event name="FM_JUMP_LEECH">
 		<loadEventList default="FM_JUMP_MONK">
 			<event req="LOCKED_SUPER_DEPRESSION" lvl="1">
@@ -586,7 +655,6 @@ Only respects stronger computers
 		</loadEventList>
 	</event>
 
-
 	<event name="FM_HULL_LIMITER_WEAPON">
 		<loadEventList default="FM_HULL_LIMITER_SHIELD">
 			<event req="LIMIT_CHECK_WEAPON" lvl="3">
@@ -615,7 +683,86 @@ Only respects stronger computers
 		<triggeredEvent name="FM_ONJUMP_STUFF" event="FM_ONJUMP_STUFF_LOAD">
 			<jumps amount="1" type="0"/>
 		</triggeredEvent>
+	</event>-->
+	<!-- the modified versions of the events for jumping-->
+	<event name="FM_JUMP_REMOVE_GHOST_PURGE">
+		<loadEventList>
+			<event req="TWISTED_KESTREL_GHOST_PURGE" lvl="1">
+				<loadEvent>REMOVE_GHOST_PURGE</loadEvent>
+			</event>
+		</loadEventList>
 	</event>
+
+	<event name="FM_JUMP_TUCO">
+		<loadEventList>
+			<event req="LOCKED_TAROT_CARDS" lvl="1">
+				<queueEvent>TWISTED_TUCO_BUTTON_SPAWN_INITIAL</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="FM_JUMP_LOSTSUN">
+		<loadEventList>
+			<event req="TWISTED_LOSTSUN" lvl="1">
+				<queueEvent>LOAD_DEATH_TIMER</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="FM_JUMP_LEECH">
+		<loadEventList>
+			<event req="LOCKED_SUPER_DEPRESSION" lvl="1">
+				<queueEvent>DEPRESS_CHARGE_INITIAL</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="FM_JUMP_MONK">
+		<loadEventList>
+			<event req="TWISTED_BLESSING" lvl="1">
+				<queueEvent>TWISTED_BLESSING_KILLCOUNT</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="FM_JUMP_CREWKILL">
+		<loadEventList>
+			<event>
+				<queueEvent>FM_CREWKILL_TRACKER</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="FM_JUMP_HULLKILL">
+		<loadEventList>
+			<event>
+				<queueEvent>FM_HULLKILL_TRACKER</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="FM_HULL_LIMITER_WEAPON">
+		<loadEventList>
+			<event req="LIMIT_CHECK_WEAPON" lvl="3">
+				<queueEvent>LOAD_FASTWEAPON</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="FM_HULL_LIMITER_SHIELD">
+		<loadEventList>
+			<event req="LIMIT_CHECK_SHIELD" lvl="4">
+				<queueEvent>LOAD_FASTSHIELD</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="FM_HULL_LIMITER_REACTOR">
+		<loadEventList>
+			<event req="LIMIT_CHECK_REACTOR" lvl="3">
+				<queueEvent>LOAD_MAGNETIC</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
 	<event name="LOAD_FASTWEAPON">
 		<status type="limit" target="player" system="weapons" amount="3" />
 	</event>
@@ -648,11 +795,12 @@ Only respects stronger computers
 	<event name="RELIMIT_SHIELDS_3">
 		<status type="limit" target="player" system="shields" amount="3"/>
 	</event>
+	<!-- start of ONDAMAGE stuff-->
 
 	<event name="FM_ONDAMAGE_STUFF_LOAD">
 	  <loadEvent>FM_ONDAMAGE_MURALS</loadEvent>
 	</event>
-	<event name="FM_ONDAMAGE_MURALS">
+	<!--<event name="FM_ONDAMAGE_MURALS">
 		<loadEventList default="FM_ONDAMAGE_OVERCHARMED">
 			<event req="FM_MODULAR_HULL_MURAL" lvl="1">
 				<loadEvent>MURALS_DAMAGE</loadEvent>
@@ -680,6 +828,28 @@ Only respects stronger computers
 		<triggeredEvent name="FM_ONDAMAGE_STUFF" event="FM_ONDAMAGE_STUFF_LOAD">
 			<playerDamage amount="1" countRepairs="false"/>
 		</triggeredEvent>
+	</event>-->
+
+	<event name="FM_ONDAMAGE_MURALS">
+		<loadEventList>
+			<event req="FM_MODULAR_HULL_MURAL" lvl="1">
+				<loadEvent>MURALS_DAMAGE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="FM_ONDAMAGE_OVERCHARMED">
+		<loadEventList>
+			<event req="FM_HULL_UPGRADE_POINTS" lvl="16">
+				<queueEvent>OVERCHARMED_RELOAD</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="FM_ONDAMAGE_HULL_ARM">
+		<loadEventList>
+			<event req="TWISTED_HULL_ARM" lvl="1">
+				<queueEvent>HULL_ARM_SCRAP</queueEvent>
+			</event>
+		</loadEventList>
 	</event>
 
 	<event name="HULL_ARM_SCRAP">
@@ -701,7 +871,6 @@ Only respects stronger computers
 			<event name="MURALS_DAMAGE_REAL_NOTHING"/>
 		</loadEventList>
 	</event>
-
 	<event name="MURALS_DAMAGE_REAL">
 		<damage amount="1" />
 	</event>
@@ -928,9 +1097,6 @@ Only respects stronger computers
 		<triggeredEvent name="FM_ONJUMP_STUFF" event="FM_ONJUMP_STUFF_LOAD">
 			<jumps amount="1" type="1"/>
 		</triggeredEvent>
-	</event>
-	<event name="MURALS_START">
-		<text>activated murals effect</text>
 	</event>
 
 </FTL>
