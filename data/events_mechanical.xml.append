@@ -459,7 +459,7 @@
 		<item_modify>
 			<item type="scrap" min="twisted_rock_scrap_counter" max="twisted_rock_scrap_counter"/>
 		</item_modify>-->
-		<!--<variable name="twisted_rock_scrap_counter" op="set" value="0"/>-->
+		<!--<variable name="twisted_rock_scrap_counter" op="set" val="0"/>-->
 		<loadEventList seeded="false" first="true" default="TRUENOTHING">
 			<event req="twisted_rock_scrap_counter" lvl="16">
 				<disableScrapScore />
@@ -468,7 +468,7 @@
 					<item type="scrap" min="16" max="16" />
 				</item_modify>
 				<loadEvent>TWISTED_ROCK_LOOP</loadEvent>
-				<variable name="twisted_rock_scrap_counter" op="add" value="-16" />
+				<variable name="twisted_rock_scrap_counter" op="add" val="-16" />
 			</event>
 			<event req="twisted_rock_scrap_counter" lvl="8">
 				<disableScrapScore />
@@ -477,7 +477,7 @@
 					<item type="scrap" min="8" max="8" />
 				</item_modify>
 				<loadEvent>TWISTED_ROCK_LOOP</loadEvent>
-				<variable name="twisted_rock_scrap_counter" op="add" value="-8" />
+				<variable name="twisted_rock_scrap_counter" op="add" val="-8" />
 			</event>
 			<event req="twisted_rock_scrap_counter" lvl="4">
 				<disableScrapScore />
@@ -486,7 +486,7 @@
 					<item type="scrap" min="4" max="4" />
 				</item_modify>
 				<loadEvent>TWISTED_ROCK_LOOP</loadEvent>
-				<variable name="twisted_rock_scrap_counter" op="add" value="-4" />
+				<variable name="twisted_rock_scrap_counter" op="add" val="-4" />
 			</event>
 			<event req="twisted_rock_scrap_counter" lvl="2">
 				<disableScrapScore />
@@ -495,7 +495,7 @@
 					<item type="scrap" min="2" max="2" />
 				</item_modify>
 				<loadEvent>TWISTED_ROCK_LOOP</loadEvent>
-				<variable name="twisted_rock_scrap_counter" op="add" value="-2" />
+				<variable name="twisted_rock_scrap_counter" op="add" val="-2" />
 			</event>
 			<event req="twisted_rock_scrap_counter" lvl="1">
 				<disableScrapScore />
@@ -504,7 +504,7 @@
 					<item type="scrap" min="1" max="1" />
 				</item_modify>
 				<loadEvent>TWISTED_ROCK_LOOP</loadEvent>
-				<variable name="twisted_rock_scrap_counter" op="add" value="-1" />
+				<variable name="twisted_rock_scrap_counter" op="add" val="-1" />
 			</event>
 		</loadEventList>
 	</event>
@@ -874,15 +874,17 @@ Only respects stronger computers
 	</event>
 	<event name="MURALS_DAMAGE_REAL">
 		<damage amount="1" />
+		<triggeredEventModifier name="FMCORE_ONDAMAGE" playerDamage="1"/>
 	</event>
 	<event name="MURALS_DAMAGE_REAL_SYSTEM">
 		<damage amount="1" system="random" />
+		<triggeredEventModifier name="FMCORE_ONDAMAGE" playerDamage="1"/>
 	</event>
 	<event name="MURALS_DAMAGE_REAL_NOTHING">
 	</event>
 	<!--overcharmd stuff, if more than 15 notches used-->
 	<event name="OVERCHARMED">
-		<variable name="overcharmed_active" op="set" value="1"/>
+		<variable name="overcharmed_active" op="set" val="1"/>
 		<loadEvent>OVERCHARMED_MESSAGE</loadEvent>
 		<queueEvent>FORGEMASTER_PHONE_EVENT_LOAD</queueEvent>
 	</event>
@@ -891,14 +893,14 @@ Only respects stronger computers
 	</event>
 
 	<event name="OVERCHARMED_BOOM">
-		<variable name="overcharmed_charges" op="add" value="-1"/>
+		<variable name="overcharmed_charges" op="add" val="-1"/>
 		<damage amount="0" effect="random" system="random"/>
 		<loadEventList generate="false" seeded="false" default="OVERCHARMED_FINISH">
 			<event name="OVERCHARMED_BOOM_LOAD" req="overcharmed_charges"/> <!--When counter  is positive-->
 		</loadEventList>
 	</event>
 	<event name="OVERCHARMED_BOOM2">
-		<variable name="overcharmed_charges" op="add" value="-2"/>
+		<variable name="overcharmed_charges" op="add" val="-2"/>
 		<damage amount="0" effect="random" system="random"/>
 		<damage amount="0" effect="random" system="random"/>
 		<loadEventList generate="false" seeded="false" default="OVERCHARMED_FINISH">
@@ -906,7 +908,7 @@ Only respects stronger computers
 		</loadEventList>
 	</event>
 	<event name="OVERCHARMED_BOOM4">
-		<variable name="overcharmed_charges" op="add" value="-4"/>
+		<variable name="overcharmed_charges" op="add" val="-4"/>
 		<damage amount="0" effect="random" system="random"/>
 		<damage amount="0" effect="random" system="random"/>
 		<damage amount="0" effect="random" system="random"/>
@@ -916,7 +918,7 @@ Only respects stronger computers
 		</loadEventList>
 	</event>
 	<event name="OVERCHARMED_BOOM8">
-		<variable name="overcharmed_charges" op="add" value="-8"/>
+		<variable name="overcharmed_charges" op="add" val="-8"/>
 		<damage amount="0" effect="random" system="random"/>
 		<damage amount="0" effect="random" system="random"/>
 		<damage amount="0" effect="random" system="random"/>
@@ -930,7 +932,7 @@ Only respects stronger computers
 		</loadEventList>
 	</event>
 	<event name="OVERCHARMED_BOOM16">
-		<variable name="overcharmed_charges" op="add" value="-16"/>
+		<variable name="overcharmed_charges" op="add" val="-16"/>
 		<damage amount="0" effect="random" system="random"/>
 		<damage amount="0" effect="random" system="random"/>
 		<damage amount="0" effect="random" system="random"/>
@@ -952,7 +954,7 @@ Only respects stronger computers
 		</loadEventList>
 	</event>
 	<event name="OVERCHARMED_BOOM32">
-		<variable name="overcharmed_charges" op="add" value="-32"/>
+		<variable name="overcharmed_charges" op="add" val="-32"/>
 		<damage amount="0" effect="random" system="random"/>
 		<damage amount="0" effect="random" system="random"/>
 		<damage amount="0" effect="random" system="random"/>
@@ -990,7 +992,7 @@ Only respects stronger computers
 		</loadEventList>
 	</event>
 	<event name="OVERCHARMED_BOOM64">
-		<variable name="overcharmed_charges" op="add" value="-64"/>
+		<variable name="overcharmed_charges" op="add" val="-64"/>
 		<damage amount="0" effect="random" system="random"/>
 		<damage amount="0" effect="random" system="random"/>
 		<damage amount="0" effect="random" system="random"/>
@@ -1073,7 +1075,7 @@ Only respects stronger computers
 	<event name="OVERCHARMED_RELOAD">
 		<loadEventList generate="false" seeded="false" default="OVERCHARMED_BOOM">
 			<event req="OVERCHARMED_RELOADING"> <!--When counter isn't full yet-->
-				<variable name="overcharmed_charges" op="add" value="1"/>
+				<variable name="overcharmed_charges" op="add" val="1"/>
 				<loadEvent>OVERCHARMED_RELOAD_LOAD</loadEvent>
 			</event>
 		</loadEventList>
