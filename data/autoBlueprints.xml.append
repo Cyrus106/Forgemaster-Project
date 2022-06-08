@@ -163,7 +163,7 @@
 	<aug name="SLUG_GEL" />
 </shipBlueprint>
 
-<shipBlueprint name="FM_GUNHYDRA_ENEMY" layout="ZFM_GUNHYDRA_ENEMY" img="FM_GUNHYDRA_ENEMY">
+<shipBlueprint name="FM_GUNHYDRA_ENEMY" layout="ZFM_GUNHYDRA_ENEMY" img="ZFM_GUNHYDRA_ENEMY">
 	<class>GunBomination</class>
 	<minSector>1</minSector>
 	<maxSector>8</maxSector>
