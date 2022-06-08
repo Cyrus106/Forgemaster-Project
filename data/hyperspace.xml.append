@@ -17313,6 +17313,18 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					</systemList>
 				</statBoost>
 			</statBoosts>
+			
+		<aug name="FM_MODULAR_HULL_DOT">
+			<statBoosts>
+				<statBoost name="healSpeed">
+					<boostType>MULT</boostType>
+					<shipTarget>PLAYER_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<amount>1.1</amount>  <!--This should make enemies heal 10% faster on your ship, which should result in them taking 10% more damage from DoT effects such as Murderbots or E-Grid.-->
+					<priority>0</priority>
+				</statBoost>
+			</statBoosts>
 		</aug>
 
 		<!-- Modular Hull Capstone Upgrades -->
