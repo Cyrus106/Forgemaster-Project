@@ -1149,7 +1149,8 @@ Only respects stronger computers
 		<hiddenAug>CREW_STIMS_ULTRA</hiddenAug>
 		<hiddenAug>SYSTEM_UNBREAKING</hiddenAug>
 		<hiddenAug>HULL_UNBREAKING</hiddenAug>
-		<crewMember amount="8" class="prime">Skill Issue</crewMember>
+		<hiddenAug>FTL_JUMPER_GOOD</hiddenAug>
+		<crewMember amount="8" class="unique_jerry_pony_crystal">Skill Issue</crewMember>
 		<weapon name="FM_GATLING_ANCIENT"/>
 	</event>
 </FTL>
