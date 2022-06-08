@@ -31,9 +31,17 @@
 	</event>
 
 	<mod:findName type="event" name="ATLAS_MENU_NOEQUIPMENT">
-		<mod-append:choice req="FMCORE_LIST_JUMPSPACE_EQUIPMENT" max_group="0">
-			<text>Do something aboard the ship.</text>
-			<event load="FMCORE_ATLAS_EQUIPMENT"/>
+		<mod:findWithChildLike type="choice" child-type="event">
+			<mod:selector load="LASTSTAND_WARP"/>
+			<mod:setAttributes req="FMCORE_LIST_JUMPSPACE_EQUIPMENT" blue="true"/>
+			<mod:findLike type="event">
+				<mod:setAttributes load="FMCORE_ATLAS_EQUIPMENT"/>
+			</mod:findLike>
+			<mod-overwrite:text>Do something aboard the ship.</text>
+		</mod:findWithChildLike>
+		<mod-append:choice req="SEC FINAL" blue="false">
+			<text>Proceed to the Federation Capital.</text>
+			<event load="LASTSTAND_WARP"/>
 		</mod-append:choice>
 	</mod:findName>
 	<mod:findName type="event" name="ATLAS_MENU">
