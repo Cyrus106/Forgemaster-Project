@@ -1,5 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<FTL><!-- Inferno-Core-->
+	<event name="FMCORE_ATLAS_EQUIPMENT">
+		<text>Choose what you wish to do aboard the ship while in hyperspeed, you have several options.</text>
+		<choice hidden="true" req="FMCORE_CAN_USE_HS_AUG" blue="false">
+			<text>Use an augment.</text>
+			<event>
+				<loadEvent>ATLAS_EQUIPMENT</loadEvent>
+				<variable name="fmcore_used_hs_aug" op="set" val="1"/>
+			</event>
+		</choice>
+		<choice hidden="true" req="fmcore_used_hs_aug" blue="false">
+			<text>You already used an augment.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice hidden="true" req="FMCORE_CAN_CALL_CURA" blue="false">
+			<text>View available tasks from C.U.R.A.</text>
+			<event>
+				<loadEvent>CURA_TASK_MENU</loadEvent>
+				<variable name="fmcore_called_cura" op="set" val="1"/>
+			</event>
+		</choice>
+		<choice hidden="true" req="fmcore_called_cura" blue="false">
+			<text>You already accepted a C.U.R.A. task.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="pilot" max_group="1" hidden="true" blue="false">
+			<text>Nevermind.</text>
+			<event load="LOAD_ATLAS"/>
+		</choice>
+	</event>
 
+	<mod:findName type="event" name="ATLAS_MENU_NOEQUIPMENT">
+		<mod-append:choice req="FMCORE_LIST_JUMPSPACE_EQUIPMENT" max_group="0">
+			<text>Do something aboard the ship.</text>
+			<event load="FMCORE_ATLAS_EQUIPMENT"/>
+		</mod-append:choice>
+	</mod:findName>
+	<mod:findName type="event" name="ATLAS_MENU">
+		<mod:findWithChildLike type="choice" child-type="event">
+			<mod:selector load="ATLAS_EQUIPMENT"/>
+			<mod:setAttributes req="FMCORE_LIST_JUMPSPACE_EQUIPMENT"/>
+			<mod:findLike type="event">
+				<mod:setAttributes load="FMCORE_ATLAS_EQUIPMENT"/>
+			</mod:findLike>
+		</mod:findWithChildLike>
+		<mod:findWithChildLike type="choice" child-type="event">
+			<mod:selector load="CURA_TASK_MENU"/>
+			<mod:removeTag/>
+		</mod:findWithChildLike>
+	</mod:findName>
+
+	<mod:findName type="event" name="ATLAS_EQUIPMENT">
+		<mod:findWithChildLike type="choice" child-type="event">
+			<mod:selector load="LOAD_ATLAS"/>
+			<mod-overwrite:event>
+				<loadEvent>LOAD_ATLAS</loadEvent>
+				<variable name="fmcore_used_hs_aug" op="set" val="0"/>
+			</mod-overwrite:event>
+		</mod:findLike>
+	</mod:findName>
+	<mod:findName type="event" name="LOAD_ATLAS_MARKER">
+		<mod-append:variable name="fmcore_used_hs_aug" op="set" val="0"/>
+		<mod-append:variable name="fmcore_called_cura" op="set" val="0"/>
+	</mod:findName>
+
+</FTL>
+<FTL><!--appending to Inferno-Core-->
+	<mod:findName type="event" name="FMCORE_ATLAS_EQUIPMENT">
+		<mod-append:choice req="FM_CAN_CALL_FORGEMASTER" blue="false">
+			<text>[Forgemaster] Contact Alastair.</text>
+			<event>
+				<loadEvent>FM_ATLAS_EQUIPMENT</loadEvent>
+				<variable name="fm_called_forgemaster" op="set" val="1"/>
+			</event>
+		</mod-append:choice>
+		<mod-append:choice req="fm_called_forgemaster" blue="false">
+			<text>You have already contacted Alastair.</text>
+			<event load="OPTION_INVALID"/>
+		</mod-append:choice>
+	</mod:findName>
+
+</FTL>
 <event name="FM_ATLAS_EQUIPMENT_LOAD"> <!--  Recursion call -->
 	<event/>
 </event>
@@ -11,9 +92,6 @@
 		<text>Out of habit you attempt to reach out to the Forgemaster, but then you remember that you killed him. You monster.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-
-
-
 
 	<choice hidden="true" req="FORGEMASTER_PHONE_CALL_CONFIRM"  max_group="1" blue="false">
 		<text>You've already called the Forgemaster via one of the three methods.</text>
@@ -43,7 +121,10 @@
 					<hiddenAug>FORGEMASTER_PHONE_CALL_CONFIRM</hiddenAug>
 					<choice hidden="true">
 						<text>Continue...</text> <!-- PHONE CALL TEXT LIST HERE? -->
-						<event load="FM_CALL_QUESTION_FORGEMASTER_LOAD"/>
+						<!--<event load="FM_CALL_QUESTION_FORGEMASTER_LOAD"/>-->
+						<event>
+							<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+						</event>
 					</choice>
 
 				</event>
@@ -64,7 +145,10 @@
 					<hiddenAug>FORGEMASTER_PHONE_CALL_CONFIRM</hiddenAug>
 					<choice hidden="true">
 						<text>Continue...</text> <!-- PHONE CALL TEXT LIST HERE? -->
-						<event load="FM_CALL_QUESTION_FORGEMASTER_LOAD"/>
+						<!--<event load="FM_CALL_QUESTION_FORGEMASTER_LOAD"/>-->
+						<event>
+							<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+						</event>
 					</choice>
 
 				</event>
@@ -85,7 +169,10 @@
 					<hiddenAug>FORGEMASTER_PHONE_CALL_CONFIRM</hiddenAug>
 					<choice hidden="true">
 						<text>Continue...</text> <!-- PHONE CALL TEXT LIST HERE? -->
-						<event load="FM_CALL_QUESTION_FORGEMASTER_LOAD"/>
+						<!--<event load="FM_CALL_QUESTION_FORGEMASTER_LOAD"/>-->
+						<event>
+							<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+						</event>
 					</choice>
 
 				</event>
@@ -95,11 +182,15 @@
 
 	<choice hidden="true" req="pilot" lvl="1"  max_group="4" blue="false">>
 		<text>Nevermind.</text>
-		<event load="FM_CALL_QUESTION_FORGEMASTER"/>
+		<!--<event load="FM_CALL_QUESTION_FORGEMASTER_LOAD"/>-->
+		<event>
+			<variable name="fm_called_forgemaster" op="set" val="0"/>
+			<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+		</event>
 	</choice>
 
 </event>
-
+<!--
 <mod:findName type = "event" name = "ATLAS_MENU">
 
 
@@ -427,10 +518,11 @@
 
 
 </mod:findName>
-
+-->
 <event name="FM_ATLAS_MENU_CALL_ONLY_LOAD"> <!--  Recursion call -->
 	<event/>
 </event>
+<!--All of this is like unused now (probably)-->
 <event name="FM_ATLAS_MENU_CALL_ONLY">
 	<text>Who else shall you call?</text>
 
@@ -578,11 +670,12 @@
 		<event load="ATLAS_MENU_NOEQUIPMENT"/>
 	</choice>
 </event>
-
+<!--up until here-->
 <!-- new FM spawning trigger appending-->
 <mod:findName type="event" name="LOAD_ATLAS_MARKER">
 	<mod-append:queueEvent>FORGEMASTER_SPAWNER</mod-append:queueEvent>
 	<mod-append:variable name="forgemaster_spawntriggered" op="set" val="0"/>
+	<mod-append:variable name="fm_called_forgemaster" op="set" val="0"/>
 </mod:findName>
 <mod:findWithChildLike type="event" child-type="secretSector">
 	<mod-append:queueEvent>FORGEMASTER_SPAWNER</mod-append:queueEvent>

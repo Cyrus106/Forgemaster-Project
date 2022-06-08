@@ -1,23 +1,23 @@
 <mod:findName type = "event" name = "CURA_TASK_MENU">
 
-	 <mod-append:choice hidden="true" req="TASK_BOSS_RUSH" lvl="1" max_group="5" blue="true">
+	<mod-append:choice hidden="true" req="TASK_BOSS_RUSH" lvl="1" max_group="5" blue="true">
 		<text>You've already accepted your special assignment from C.U.R.A.</text>
 		<event load="OPTION_INVALID"/>
 	</mod-append:choice>
-	 <mod-append:choice hidden="true" req="MARKER_IMPOSSIBLE_CURA_TALK" lvl="1" max_group="5" blue="true">
+	<mod-append:choice hidden="true" req="MARKER_IMPOSSIBLE_CURA_TALK" lvl="1" max_group="5" blue="true">
 		<text>Discuss this "battle I cannot win".</text>
 		<event load="CURA_BOSS_RUSH_PREVIEW"/>
 	</mod-append:choice>
-	  <mod-append:choice hidden="true" req="CURA_IMPOSSIBLE_TASKS_UNLOCKED" lvl="1" max_group="5" blue="true">
+	<mod-append:choice hidden="true" req="CURA_IMPOSSIBLE_TASKS_UNLOCKED" lvl="1" max_group="5" blue="true">
 		<text>Ask for something more difficult this time.</text>
 		<event load="CURA_TASKS_IMPOSSIBLE_TALK"/>
 	</mod-append:choice>
 
-<mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Go back.</mod:selector>
-        <mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>
-    </mod:findWithChildLike>
-
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Go back.</mod:selector>
+		<mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>
+		<mod-append:variable name="fmcore_called_cura" op="set" val="0"/>
+	</mod:findWithChildLike>
 
 </mod:findName>
 
@@ -34,51 +34,51 @@
 		<text>Past meetings?</text>
 		<event>
 			<text>"... One moment." C.U.R.A. responds, then there is a short pause. "Database blacklist complete. You did not hear that correctly, Renegade, that was merely a misunderstanding. Now will you assist me or not, Renegade?"</text>
-				<choice hidden="true">
-					<text>Now you're just lying to me, tell me what you meant.</text>
+			<choice hidden="true">
+				<text>Now you're just lying to me, tell me what you meant.</text>
+				<event>
+					<text>"Do not strain our relationship, Renegade. I merely need you to assist me in the collection of artifacts relating to Mr. Wentworth. Do we have an understanding?"</text>
+					<choice hidden="true">
+						<text>How about I find you, wipe your memory, and then replace your core programming with the game "Solitare"? How's that sound, jackass? You're hiding something.</text>
 						<event>
-						<text>"Do not strain our relationship, Renegade. I merely need you to assist me in the collection of artifacts relating to Mr. Wentworth. Do we have an understanding?"</text>
+							<text>"... Data collection complete. There is an 87% probability that the Renegade is somehow aware of our past betrayal where they eventually destroyed C.U.R.A. Supreme. I have decided to drop the facade, if only for a moment, Renegade. What do you want?" </text>
 							<choice hidden="true">
-								<text>How about I find you, wipe your memory, and then replace your core programming with the game "Solitare"? How's that sound, jackass? You're hiding something.</text>
+								<text>You mentioned not making the same mistake again. What have you learned? I am eager to crush you and the flagship forever. </text>
 								<event>
-								<text>"... Data collection complete. There is an 87% probability that the Renegade is somehow aware of our past betrayal where they eventually destroyed C.U.R.A. Supreme. I have decided to drop the facade, if only for a moment, Renegade. What do you want?" </text>
-									<choice hidden="true">
-									<text>You mentioned not making the same mistake again. What have you learned? I am eager to crush you and the flagship forever. </text>
-									<event>
 									<text>A feeling of déjà vu washes over you. Perhaps these memories you have are your own? Or perhaps not, you are uncertain. "How bold, Renegade. You did not find C.U.R.A. Supreme challenging enough in our past meeting? Very well, I am willing to humor your absurd request, but only on my terms. Do you accept?</text>
-										<choice hidden="true">
+									<choice hidden="true">
 										<text>Sure, why not.</text>
 										<event>
-										<text>"Understood, I can give battles you cannot win. If you succeed at all of them, I calculate it will be well worth your while. Your unexpected success would allow me to improve myself for our... final conflict. It appears we are in agreement." </text>
-										<hiddenAug>MARKER_IMPOSSIBLE_CURA_TALK</hiddenAug>
+											<text>"Understood, I can give battles you cannot win. If you succeed at all of them, I calculate it will be well worth your while. Your unexpected success would allow me to improve myself for our... final conflict. It appears we are in agreement." </text>
+											<hiddenAug>MARKER_IMPOSSIBLE_CURA_TALK</hiddenAug>
 											<choice>
-											<text>Continue...</text>
-											<event>
-											<loadEvent>CURA_BOSS_RUSH_PREVIEW</loadEvent>
-											</event>
+												<text>Continue...</text>
+												<event>
+													<loadEvent>CURA_BOSS_RUSH_PREVIEW</loadEvent>
+												</event>
 											</choice>
-											</event>
-											</choice>
-								<choice hidden="true">
-								<text>Nevermind, forget I even mentioned it.</text>
-								<event>
-								<loadEvent>CURA_TASK_MENU</loadEvent>
+										</event>
+									</choice>
+									<choice hidden="true">
+										<text>Nevermind, forget I even mentioned it.</text>
+										<event>
+											<loadEvent>CURA_TASK_MENU</loadEvent>
+										</event>
+									</choice>
 								</event>
-								</choice>
-							</event>
-						</choice>
-					</event>
-				</choice>
-				<choice hidden="true">
-				<text>Tell C.U.R.A. you were mistaken and return to the previous menu.</text>
-				<event>
-				<loadEvent>CURA_TASK_MENU</loadEvent>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Tell C.U.R.A. you were mistaken and return to the previous menu.</text>
+						<event>
+							<loadEvent>CURA_TASK_MENU</loadEvent>
+						</event>
+					</choice>
 				</event>
 			</choice>
 		</event>
 	</choice>
-</event>
-</choice>
 </event>
 
 <event name="CURA_BOSS_RUSH_PREVIEW">
@@ -123,12 +123,14 @@
 <event name="CURA_BOSS_RUSH_PREVIEW2">
 	<text>"Augmentation has finished uploading to your ship, check your internal systems when you have a free moment to review it."</text>
 	<choice hidden="false">
-			<text>Continue...</text>
-			<event>
+		<text>Continue...</text>
+		<event>
 			<text>You wonder what in the world "The fabric of reality" could be referring to. You suppose you will find out when you investigate what has been installed into your ship's systems.</text>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="FM_CALL_QUESTION_CURA_LOAD"/>
+				<event>
+					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+				</event>
 			</choice>
 		</event>
 	</choice>
@@ -136,189 +138,224 @@
 
 
 <mod:findName type = "event" name = "CURA_SCHOOLID_PREVIEW">
- <mod:findLike type="choice" start="0" limit="1">
-  <mod:findLike type="event">
-   <mod:findLike type="choice">
-   <mod-overwrite:event load="FM_CALL_QUESTION_CURA_LOAD"></mod-overwrite:event>
-   </mod:findLike>
-   </mod:findLike>
-      </mod:findLike>
-	     </mod:findName>
+	<mod:findLike type="choice" start="0" limit="1">
+		<mod:findLike type="event">
+			<mod:findLike type="choice">
+				<mod-overwrite:event>
+					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+				</mod-overwrite:event>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
 
 <mod:findName type = "event" name = "CURA_DRAWING_PREVIEW">
- <mod:findLike type="choice" start="0" limit="1">
-  <mod:findLike type="event">
-   <mod:findLike type="choice">
-   <mod-overwrite:event load="FM_CALL_QUESTION_CURA_LOAD"></mod-overwrite:event>
-   </mod:findLike>
-   </mod:findLike>
-      </mod:findLike>
-	     </mod:findName>
+	<mod:findLike type="choice" start="0" limit="1">
+		<mod:findLike type="event">
+			<mod:findLike type="choice">
+				<mod-overwrite:event>
+					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+				</mod-overwrite:event>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
 
 <mod:findName type = "event" name = "CURA_CRUSH_PREVIEW">
- <mod:findLike type="choice" start="0" limit="1">
-  <mod:findLike type="event">
-   <mod:findLike type="choice">
-   <mod-overwrite:event load="FM_CALL_QUESTION_CURA_LOAD"></mod-overwrite:event>
-   </mod:findLike>
-   </mod:findLike>
-      </mod:findLike>
-	     </mod:findName>
+	<mod:findLike type="choice" start="0" limit="1">
+		<mod:findLike type="event">
+			<mod:findLike type="choice">
+				<mod-overwrite:event>
+					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+				</mod-overwrite:event>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
 
 <mod:findName type = "event" name = "CURA_TOILET_PREVIEW">
- <mod:findLike type="choice" start="0" limit="1">
-  <mod:findLike type="event">
-   <mod:findLike type="choice">
-   <mod-overwrite:event load="FM_CALL_QUESTION_CURA_LOAD"></mod-overwrite:event>
-   </mod:findLike>
-   </mod:findLike>
-      </mod:findLike>
-	     </mod:findName>
+	<mod:findLike type="choice" start="0" limit="1">
+		<mod:findLike type="event">
+			<mod:findLike type="choice">
+				<mod-overwrite:event>
+					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+				</mod-overwrite:event>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
 
 <mod:findName type = "event" name = "CURA_PLUSHIE_PREVIEW">
- <mod:findLike type="choice" start="0" limit="1">
-  <mod:findLike type="event">
-   <mod:findLike type="choice">
-   <mod-overwrite:event load="FM_CALL_QUESTION_CURA_LOAD"></mod-overwrite:event>
-   </mod:findLike>
-   </mod:findLike>
-      </mod:findLike>
-	     </mod:findName>
+	<mod:findLike type="choice" start="0" limit="1">
+		<mod:findLike type="event">
+			<mod:findLike type="choice">
+				<mod-overwrite:event>
+					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+				</mod-overwrite:event>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
 
 <mod:findName type = "event" name = "CURA_PETE_PREVIEW">
- <mod:findLike type="choice" start="0" limit="1">
-  <mod:findLike type="event">
-   <mod:findLike type="choice">
-   <mod-overwrite:event load="FM_CALL_QUESTION_CURA_LOAD"></mod-overwrite:event>
-   </mod:findLike>
-   </mod:findLike>
-      </mod:findLike>
-	     </mod:findName>
+	<mod:findLike type="choice" start="0" limit="1">
+		<mod:findLike type="event">
+			<mod:findLike type="choice">
+				<mod-overwrite:event>
+					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+				</mod-overwrite:event>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
 
 <mod:findName type = "event" name = "CURA_USB_PREVIEW">
- <mod:findLike type="choice" start="0" limit="1">
-  <mod:findLike type="event">
-   <mod:findLike type="choice">
-   <mod-overwrite:event load="FM_CALL_QUESTION_CURA_LOAD"></mod-overwrite:event>
-   </mod:findLike>
-   </mod:findLike>
-      </mod:findLike>
-	     </mod:findName>
+	<mod:findLike type="choice" start="0" limit="1">
+		<mod:findLike type="event">
+			<mod:findLike type="choice">
+				<mod-overwrite:event>
+					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+				</mod-overwrite:event>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
 
 <mod:findName type = "event" name = "CURA_SURVIVOR_PREVIEW">
- <mod:findLike type="choice" start="0" limit="1">
-  <mod:findLike type="event">
-   <mod:findLike type="choice">
-   <mod-overwrite:event load="FM_CALL_QUESTION_CURA_LOAD"></mod-overwrite:event>
-   </mod:findLike>
-   </mod:findLike>
-      </mod:findLike>
-	     </mod:findName>
+	<mod:findLike type="choice" start="0" limit="1">
+		<mod:findLike type="event">
+			<mod:findLike type="choice">
+				<mod-overwrite:event>
+					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+				</mod-overwrite:event>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
 
 <mod:findName type = "event" name = "CURA_WEDDING_PREVIEW">
- <mod:findLike type="choice" start="0" limit="1">
-  <mod:findLike type="event">
-   <mod:findLike type="choice">
-   <mod-overwrite:event load="FM_CALL_QUESTION_CURA_LOAD"></mod-overwrite:event>
-   </mod:findLike>
-   </mod:findLike>
-      </mod:findLike>
-	     </mod:findName>
+	<mod:findLike type="choice" start="0" limit="1">
+		<mod:findLike type="event">
+			<mod:findLike type="choice">
+				<mod-overwrite:event>
+					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+				</mod-overwrite:event>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
 
 <mod:findName type = "event" name = "CURA_WILL_PREVIEW">
- <mod:findLike type="choice" start="0" limit="1">
-  <mod:findLike type="event">
-   <mod:findLike type="choice">
-   <mod-overwrite:event load="FM_CALL_QUESTION_CURA_LOAD"></mod-overwrite:event>
-   </mod:findLike>
-   </mod:findLike>
-      </mod:findLike>
-	     </mod:findName>
+	<mod:findLike type="choice" start="0" limit="1">
+		<mod:findLike type="event">
+			<mod:findLike type="choice">
+				<mod-overwrite:event>
+					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+				</mod-overwrite:event>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
 
 <mod:findName type = "event" name = "CURA_SCANDAL_PREVIEW">
- <mod:findLike type="choice" start="0" limit="1">
-  <mod:findLike type="event">
-   <mod:findLike type="choice">
-   <mod-overwrite:event load="FM_CALL_QUESTION_CURA_LOAD"></mod-overwrite:event>
-   </mod:findLike>
-   </mod:findLike>
-      </mod:findLike>
-	     </mod:findName>
+	<mod:findLike type="choice" start="0" limit="1">
+		<mod:findLike type="event">
+			<mod:findLike type="choice">
+				<mod-overwrite:event>
+					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+				</mod-overwrite:event>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
 
 <mod:findName type = "event" name = "CURA_TORTURE_PREVIEW">
- <mod:findLike type="choice" start="0" limit="1">
-  <mod:findLike type="event">
-   <mod:findLike type="choice">
-   <mod-overwrite:event load="FM_CALL_QUESTION_CURA_LOAD"></mod-overwrite:event>
-   </mod:findLike>
-   </mod:findLike>
-      </mod:findLike>
-	     </mod:findName>
+	<mod:findLike type="choice" start="0" limit="1">
+		<mod:findLike type="event">
+			<mod:findLike type="choice">
+				<mod-overwrite:event>
+					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+				</mod-overwrite:event>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
 
 <mod:findName type = "event" name = "CURA_OUTPOST_PREVIEW">
- <mod:findLike type="choice" start="0" limit="1">
-  <mod:findLike type="event">
-   <mod:findLike type="choice">
-   <mod-overwrite:event load="FM_CALL_QUESTION_CURA_LOAD"></mod-overwrite:event>
-   </mod:findLike>
-   </mod:findLike>
-      </mod:findLike>
-	     </mod:findName>
+	<mod:findLike type="choice" start="0" limit="1">
+		<mod:findLike type="event">
+			<mod:findLike type="choice">
+				<mod-overwrite:event>
+					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+				</mod-overwrite:event>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
 
 <mod:findName type = "event" name = "CURA_SHIP_PREVIEW">
- <mod:findLike type="choice" start="0" limit="1">
-  <mod:findLike type="event">
-   <mod:findLike type="choice">
-   <mod-overwrite:event load="FM_CALL_QUESTION_CURA_LOAD"></mod-overwrite:event>
-   </mod:findLike>
-   </mod:findLike>
-      </mod:findLike>
-	     </mod:findName>
+	<mod:findLike type="choice" start="0" limit="1">
+		<mod:findLike type="event">
+			<mod:findLike type="choice">
+				<mod-overwrite:event>
+					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+				</mod-overwrite:event>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
 
 <mod:findName type = "event" name = "CURA_DUSK_PREVIEW">
- <mod:findLike type="choice" start="0" limit="1">
-  <mod:findLike type="event">
-   <mod:findLike type="choice">
-   <mod-overwrite:event load="FM_CALL_QUESTION_CURA_LOAD"></mod-overwrite:event>
-   </mod:findLike>
-   </mod:findLike>
-      </mod:findLike>
-	     </mod:findName>
+	<mod:findLike type="choice" start="0" limit="1">
+		<mod:findLike type="event">
+			<mod:findLike type="choice">
+				<mod-overwrite:event>
+					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+				</mod-overwrite:event>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
 
 <mod:findName type = "event" name = "CURA_CONTRACT_PREVIEW">
- <mod:findLike type="choice" start="0" limit="1">
-  <mod:findLike type="event">
-   <mod:findLike type="choice">
-   <mod-overwrite:event load="FM_CALL_QUESTION_CURA_LOAD"></mod-overwrite:event>
-   </mod:findLike>
-   </mod:findLike>
-      </mod:findLike>
-	     </mod:findName>
+	<mod:findLike type="choice" start="0" limit="1">
+		<mod:findLike type="event">
+			<mod:findLike type="choice">
+				<mod-overwrite:event>
+					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+				</mod-overwrite:event>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
 
 <mod:findName type = "event" name = "CURA_HQ_PREVIEW">
- <mod:findLike type="choice" start="0" limit="1">
-  <mod:findLike type="event">
-   <mod:findLike type="choice">
-   <mod-overwrite:event load="FM_CALL_QUESTION_CURA_LOAD"></mod-overwrite:event>
-   </mod:findLike>
-   </mod:findLike>
-      </mod:findLike>
-	     </mod:findName>
+	<mod:findLike type="choice" start="0" limit="1">
+		<mod:findLike type="event">
+			<mod:findLike type="choice">
+				<mod-overwrite:event>
+					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+				</mod-overwrite:event>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
+</mod:findName>
 
 
 
 <event name="FM_CALL_QUESTION_CURA_LOAD"> <!--  Recursion call -->
 	<event/>
-</event>
+</event><!--
 <event name="FM_CALL_QUESTION_CURA">
-<text>Would you like to call anybody else?</text>
-<choice hidden="false">
-<text>Sure, let's see who we can call.</text>
-<event load="FM_ATLAS_MENU_CALL_ONLY_LOAD"/>
-</choice>
+	<text>Would you like to call anybody else?</text>
+	<choice hidden="false">
+		<text>Sure, let's see who we can call.</text>
+		<event load="FM_ATLAS_MENU_CALL_ONLY_LOAD"/>
+	</choice>
 
-<choice hidden="false">
-<text>No thanks.</text>
-<event load="ATLAS_MENU_NOEQUIPMENT"/>
-</choice>
+	<choice hidden="false">
+		<text>No thanks.</text>
+		<event load="ATLAS_MENU_NOEQUIPMENT"/>
+	</choice>
 </event>
+-->
