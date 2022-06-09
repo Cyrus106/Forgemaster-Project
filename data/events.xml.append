@@ -1,5 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<FTL><!--Inferno-Core-->
+	<mod:findName type="event" name="START_BEACON_EXPLAIN_LOAD">
+		<mod-append:triggeredEvent name="FMCORE_ONJUMP" event="FMCORE_ONJUMP">
+			<jumps amount="1" type="0"/>
+		</mod-append:triggeredEvent>
+		<mod-append:triggeredEvent name="FMCORE_ONDAMAGE" event="FMCORE_ONDAMAGE">
+			<playerDamage amount="1" countRepairs="false"/>
+		</mod-append:triggeredEvent>
+	</mod:findName>
 
+	<event name="ADDON_FMCORE_INFO">
+		<text id="info_addon_fmcore"/>
+	</event>
+	<event name="ADDON_FORGEMASTER_INFO">
+		<text id="info_addon_forgmaster"/>
+	</event>
+	<event name="ADDON_GB_INFO">
+		<text id="info_addon_gb"/>
+	</event>
+	<mod:findName type="event" name="START_BEACON_EXPLAIN_LOAD">
+		<mod-append:eventButton name="ADDON_FMCORE">
+      <event load="ADDON_FMCORE_INFO"/>
+      <image border="0">addons/trc</image>
+      <customLocation x="139" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
+      <tooltip id="addon_hover_fmcore"/>
+      <jumpClear>false</jumpClear>
+      <noDanger>false</noDanger>
+    </mod-append:eventButton>
+		<mod-append:eventButton name="ADDON_FORGEMASTER">
+      <event load="ADDON_FORGEMASTER_INFO"/>
+      <image border="0">addons/trc</image>
+      <customLocation x="163" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
+      <tooltip id="addon_hover_forgemaster"/>
+      <jumpClear>false</jumpClear>
+      <noDanger>false</noDanger>
+    </mod-append:eventButton>
+		<mod-append:eventButton name="ADDON_GB">
+      <event load="ADDON_GB_INFO"/>
+      <image border="0">addons/trc</image>
+      <customLocation x="187" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
+      <tooltip id="addon_hover_gb"/>
+      <jumpClear>false</jumpClear>
+      <noDanger>false</noDanger>
+    </mod-append:eventButton>
+	</mod:findName>
+
+</FTL>
 <mod:findName type = "event" name = "ASTEROID_EXPLORE">
 	<mod-append:choice hidden="true" req="FM_BEAM_MINING_2" >
 		<text>(Ishimura Beam) Attempt to mine the much larger asteroids.</text>
@@ -104,12 +150,6 @@
 </mod:findName>
 
 <mod:findName type="event" name="START_BEACON_EXPLAIN_LOAD">
-	<mod-append:triggeredEvent name="FMCORE_ONJUMP" event="FMCORE_ONJUMP">
-		<jumps amount="1" type="0"/>
-	</mod-append:triggeredEvent>
-	<mod-append:triggeredEvent name="FMCORE_ONDAMAGE" event="FMCORE_ONDAMAGE">
-		<playerDamage amount="1" countRepairs="false"/>
-	</mod-append:triggeredEvent>
 	<mod:findLike type="loadEventList">
 		<mod-append:event name="GIVE_RAGE_TWISTEDMONK" req = "TWISTED_BLESSING"/>
 		<mod-append:event name="GIVE_FLAK_TWISTEDLANIUS" req = "TWISTED_FLAK_FORGE"/>

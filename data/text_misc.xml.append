@@ -1,8 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<FTL><!-- Inferno-Core-->
+	<text name="addon_hover_fmcore">INFERNO-CORE
+	Currently Enabled.
+	Click to see more info.</text>
+	<text name="info_addon_fmcore">INFERNO-CORE
+	Developed by: Kommandant_Julk
+	Currently Enabled.
+
+	A base mod for more complex mechanics in Multiverse. It includes multiple systems that allow events to be run each jump and hit of hull damage taken, it also expands the sector jump menu by adding a sub menu which allows to perform more than one action and lastly adds info buttons for various other addons.
+	This addon was made to provide the more complex systems used in Forgemaster to other mods without needing to install Forgemaster.
+	</text>
+
+	<text name="addon_hover_forgemaster">FORGEMASTER
+	Currently Disabled.
+	Click to see more info.</text>
+	<text name="info_addon_forgmaster">FORGEMASTER
+	Developed by: Cyrus106, Abstrusity, Maxine, Radish, SeaDragonet, Kommandant_Julk, Vertafout and DemonFusionGamer
+	Currently Disabled.
+
+	A major expansion for Multiverse! It includes new NPCs, quests, weapons, sectors, bosses, and more. Drones and augments are coming soon! The primary new feature is: the weapon crafting system, which allows you to combine
+	numerous weapon combinations into stronger variants (or at the very least, side-grades).These weapons are intended to shine brightest when used on ships with less weapon slots and make use of the newest most complex features hyperspace has to offer for a completely unique feel! New tooltips will appear on weapon components that can be used for crafting!
+	(the addon Inferno-Core was designed for)
+
+	To enable Forgemaster, go to the subset forums and visit the MV addon page!
+	</text>
+
+	<text name="addon_hover_gb">GO-BALLISTIC-2
+	Currently Disabled.
+	Click to see more info.</text>
+	<text name="info_addon_gb">GO-BALLISTIC-2
+	Developed by: R4V3-0N, porcu93, cgjunior, laszlogasd, Madoktor, RobintheDragon2, Kommandant_Julk and formerly by ChronoVortex
+	Currently Disabled.
+
+	This mod adds 16 new ballistic weapons and 1 new toggle drone themed around out dated ballistic weaponry of the Federation during its foundation during the Federation-Mantis War.
+	This version is built for use with Multiverse 5.1. The mod is a redevelopment and update of the original GO BALLISTIC!, a mod made by R4V3-0N with significant help from ChronoVortex. It features new art, sound effects, and a complete rebalance of the weapons and drones of the original.
+	Reimagining the niche of these weapons using new Hyperspace functionality that did not exist at the time of the original mod and with a small team of friends.
+
+	To enable Go Ballistic 2, go to the subset forums and visit the MV addon page!
+	</text>
+</FTL>
 
 <FTL>
 
+	<text name="addon_hover_forgemaster">FORGEMASTER
+	Currently Enabled.
+	Click to see more info.</text>
+	<text name="info_addon_forgmaster">FORGEMASTER
+	Developed by: Cyrus106, Abstrusity, Maxine, Radish, SeaDragonet, Kommandant_Julk, Vertafout and DemonFusionGamer
+	Currently Enabled.
+
+	A major expansion for Multiverse! It includes new NPCs, quests, weapons, sectors, bosses, and more. Drones and augments are coming soon! The primary new feature is: the weapon crafting system, which allows you to combine
+	numerous weapon combinations into stronger variants (or at the very least, side-grades).These weapons are intended to shine brightest when used on ships with less weapon slots and make use of the newest most complex features hyperspace has to offer for a completely unique feel! New tooltips will appear on weapon components that can be used for crafting!
+	(the addon Inferno-Core was designed for)
+	</text>
 
 
 
