@@ -82,7 +82,7 @@
 				<variable name="fm_called_forgemaster" op="set" val="1"/>
 			</event>
 		</mod-append:choice>
-		<mod-append:choice req="fm_called_forgemaster" blue="false">
+		<mod-append:choice hidden="true" req="fm_called_forgemaster" blue="false">
 			<text>You have already contacted Alastair.</text>
 			<event load="OPTION_INVALID"/>
 		</mod-append:choice>
