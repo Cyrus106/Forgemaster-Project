@@ -74,7 +74,7 @@
 
 </FTL>
 <FTL><!--appending to Inferno-Core-->
-	<mod:findName type="event" name="FMCORE_ATLAS_EQUIPMENT">
+	<mod:findName type="event" name="FMCORE_ATLAS_EQUIPMENT" panic="true">
 		<mod-append:choice req="FM_CAN_CALL_FORGEMASTER" blue="false">
 			<text>[Forgemaster] Contact Alastair.</text>
 			<event>
