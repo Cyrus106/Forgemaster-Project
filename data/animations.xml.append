@@ -3805,8 +3805,8 @@ try this later
 	<weaponAnim name="fm_minelauncher_bio">
 		<sheet>fm_minelauncher_bio</sheet>
 		<desc length="20" x="0" y="0"/>
-		<chargedFrame>19</chargedFrame>
-		<fireFrame>20</fireFrame>
+		<chargedFrame>18</chargedFrame>
+		<fireFrame>19</fireFrame>
 		<firePoint  x="20" y="2"/>
 		<mountPoint x="3" y="43"/>
 	</weaponAnim>
@@ -4285,6 +4285,92 @@ try this later
 		<desc length="1" x="0" y="0"/>
 		<time>1</time>
 	</anim>
+
+<!--Bio-Minlauncher Hazard Cloud-->
+<animSheet name="fm_bio_cloud" w="280" h="105" fw="35" fh="35">people/fm_bio_cloud_base.png</animSheet>
+
+<anim name="fm_bio_cloud_death_right">
+	<sheet>fm_bio_cloud</sheet>
+	<desc length="4" x="0" y="2"/>
+	<time>0.3</time>
+	<!--<time>40</time>-->
+</anim>
+
+<anim name="fm_bio_cloud_death_left">
+	<sheet>fm_bio_cloud</sheet>
+	<desc length="4" x="0" y="2"/>
+	<time>0.3</time>
+	<!--<time>40</time>-->
+</anim>
+
+<anim name="fm_bio_cloud_walk_down">
+	<sheet>fm_bio_cloud</sheet>
+	<desc length="4" x="0" y="2"/>
+	<time>0.3</time>
+</anim>
+
+<anim name="fm_bio_cloud_walk_left">
+	<sheet>fm_bio_cloud</sheet>
+	<desc length="4" x="0" y="2"/>
+	<time>0.3</time>
+</anim>
+
+<anim name="fm_bio_cloud_walk_up">
+	<sheet>fm_bio_cloud</sheet>
+	<desc length="4" x="0" y="2"/>
+	<time>0.3</time>
+</anim>
+
+<anim name="fm_bio_cloud_walk_right">
+	<sheet>fm_bio_cloud</sheet>
+	<desc length="4" x="0" y="2"/>
+	<time>0.3</time>
+</anim>
+
+
+<anim name="fm_bio_cloud_shoot_down">
+	<sheet>fm_bio_cloud</sheet>
+	<desc length="4" x="0" y="2"/>
+	<time>0.3</time>
+</anim>
+
+<anim name="fm_bio_cloud_shoot_right">
+	<sheet>fm_bio_cloud</sheet>
+	<desc length="4" x="0" y="2"/>
+	<time>0.3</time>
+</anim>
+
+<anim name="fm_bio_cloud_shoot_up">
+	<sheet>fm_bio_cloud</sheet>
+	<desc length="4" x="0" y="2"/>
+	<time>0.3</time>
+</anim>
+
+<anim name="fm_bio_cloud_shoot_left">
+	<sheet>fm_bio_cloud</sheet>
+	<desc length="4" x="0" y="2"/>
+	<time>0.3</time>
+</anim>
+
+<anim name="fm_bio_cloud_punch_up">
+	<sheet>fm_bio_cloud</sheet>
+	<desc length="8" x="0" y="2"/>
+	<time>0.3</time>
+</anim>
+
+<anim name="fm_bio_cloud_punch_down">
+	<sheet>fm_bio_cloud</sheet>
+	<desc length="8" x="0" y="2"/>
+	<time>0.3</time>
+</anim>
+
+<anim name="fm_bio_cloud_portrait">
+	<sheet>fm_bio_cloud</sheet>
+	<desc length="4" x="0" y="2"/>
+	<time>1</time>
+</anim>
+
+
 
 	<!-- XMAS STUFF
 	<animSheet name="fm_minelauncher_xmas_proj" w="24" h="24" fw="24" fh="24">weapon_projectiles/fm_present.png</animSheet>
