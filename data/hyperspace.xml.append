@@ -4596,7 +4596,7 @@
 					<boostType>FLAT</boostType>
 					<amount>1</amount>
 					<shipTarget>ORIGINAL_OTHER_SHIP</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
+					<crewTarget>ENEMIES</crewTarget>
 					<priority>0</priority>
 					<affectsSelf>true</affectsSelf>
 					<whiteList>
@@ -4607,7 +4607,7 @@
 					<boostType>FLAT</boostType>
 					<amount>-2</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
+					<crewTarget>ALLIES</crewTarget>
 					<affectsSelf>false</affectsSelf>
 					<maxStacks>1</maxStacks>
 					<whiteList>
@@ -4622,7 +4622,7 @@
 					<boostType>FLAT</boostType>
 					<amount>-2</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
+					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>DRONES</droneTarget>
 					<affectsSelf>false</affectsSelf>
 					<maxStacks>1</maxStacks>
@@ -8409,7 +8409,7 @@
 					<boostType>FLAT</boostType>
 					<amount>-4</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
+					<crewTarget>ALLIES</crewTarget>
 					<affectsSelf>false</affectsSelf>
 					<maxStacks>1</maxStacks>
 				</statBoost>
@@ -8417,7 +8417,7 @@
 					<boostType>FLAT</boostType>
 					<amount>-4</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
+					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>DRONES</droneTarget>
 					<affectsSelf>false</affectsSelf>
 					<maxStacks>1</maxStacks>
