@@ -9261,9 +9261,24 @@
     </event>
   </FTL>
 
-<FTL><!--twisted monk stuff-->
+<FTL>
+  <!--Moving the (nevermind) in the combat check to be at the bottom of all options no matter what. maybe integrate into Inferno-Core?-->
+    <mod:findName type="event" name ="COMBAT_CHECK_REAL">
+      <mod:findWithChildLike type="choice" child-type="text">
+  	      <mod:selector>Do nothing.</mod:selector>
+          <mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>
+      </mod:findWithChildLike>
+    </mod:findName type="event" name="COMBAT_CHECK_REAL">
+
+  <!--twisted monk stuff-->
+
+
   <mod:findName type="event" name ="COMBAT_CHECK_REAL">
-  	<mod-append:choice req = "TWISTED_BLESSING" hidden="true">
+
+
+
+
+    <mod-append:choice req = "TWISTED_BLESSING" hidden="true">
   		<text>Draw upon your stored rage.</text>
   		<event load="COMBAT_CHECK_TWISTED_BLESSING_MENU"/>
   	</mod-append:choice>

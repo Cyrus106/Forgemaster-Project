@@ -9651,7 +9651,6 @@
 			<race>fm_holy6</race>
 			<number>4</number>
 			<noSlot>true</noSlot>
-			<!--<lifetime>0.2</lifetime> commented out so all breaches stay in the same room-->
 			<enemy>true</enemy>
 			<lifetime>0</lifetime>
 			<statBoosts>
