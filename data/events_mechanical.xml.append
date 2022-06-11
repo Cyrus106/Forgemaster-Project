@@ -1,28 +1,3 @@
-<FTL><!--inferno-Core (move later to separate file)-->
-	<event name="FMCORE_ONJUMP">
-		<triggeredEvent name="FMCORE_ONJUMP" event="FMCORE_ONJUMP">
-			<jumps amount="1" type="0"/>
-		</triggeredEvent>
-		<!--<queueEvent>EVENTNAME</queueEvent> append more of those lines for each independent effect-->
-	</event>
-	<event name="FMCORE_ONDAMAGE">
-		<triggeredEvent name="FMCORE_ONDAMAGE" event="FMCORE_ONDAMAGE">
-			<playerDamage amount="1" countRepairs="false"/>
-		</triggeredEvent>
-		<!--<queueEvent>EVENTNAME</queueEvent> append more of those lines for each independent effect-->
-	</event>
-	<event name="FMCORE_RESET">
-		<text>FMCORE functions have been reset</text>
-		<clearTriggeredEvent name="FMCORE_ONJUMP"/>
-		<clearTriggeredEvent name="FMCORE_ONDAMAGE"/>
-		<triggeredEvent name="FMCORE_ONDAMAGE" event="FMCORE_ONDAMAGE">
-			<playerDamage amount="1" countRepairs="false"/>
-		</triggeredEvent>
-		<triggeredEvent name="FMCORE_ONJUMP" event="FMCORE_ONJUMP">
-			<jumps amount="1" type="0"/>
-		</triggeredEvent>
-	</event>
-</FTL>
 <FTL><!--appending to inferno-Core-->
 	<mod:findName type="event" name="FMCORE_ONJUMP">
 		<mod-append:queueEvent>FM_JUMP_REMOVE_GHOST_PURGE</mod-append:queueEvent>

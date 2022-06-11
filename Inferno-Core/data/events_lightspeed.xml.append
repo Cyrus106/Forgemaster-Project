@@ -1,0 +1,74 @@
+<FTL><!-- Inferno-Core-->
+	<event name="FMCORE_ATLAS_EQUIPMENT">
+		<text>Choose what you wish to do aboard the ship while in hyperspeed, you have several options.</text>
+		<choice hidden="true" req="FMCORE_CAN_USE_HS_AUG" blue="false">
+			<text>Use an augment.</text>
+			<event>
+				<loadEvent>ATLAS_EQUIPMENT</loadEvent>
+				<variable name="fmcore_used_hs_aug" op="set" val="1"/>
+			</event>
+		</choice>
+		<choice hidden="true" req="fmcore_used_hs_aug" blue="false">
+			<text>You already used an augment.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice hidden="true" req="FMCORE_CAN_CALL_CURA" blue="false">
+			<text>View available tasks from C.U.R.A.</text>
+			<event>
+				<loadEvent>CURA_TASK_MENU</loadEvent>
+				<variable name="fmcore_called_cura" op="set" val="1"/>
+			</event>
+		</choice>
+		<choice hidden="true" req="fmcore_called_cura" blue="false">
+			<text>You already accepted a C.U.R.A. task.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="pilot" max_group="1" hidden="true" blue="false">
+			<text>Nevermind.</text>
+			<event load="LOAD_ATLAS"/>
+		</choice>
+	</event>
+
+	<mod:findName type="event" name="ATLAS_MENU_NOEQUIPMENT">
+		<mod:findWithChildLike type="choice" child-type="event">
+			<mod:selector load="LASTSTAND_WARP"/>
+			<mod:setAttributes req="FMCORE_LIST_JUMPSPACE_EQUIPMENT" blue="true"/>
+			<mod:findLike type="event">
+				<mod:setAttributes load="FMCORE_ATLAS_EQUIPMENT"/>
+			</mod:findLike>
+			<mod-overwrite:text>Do something aboard the ship.</text>
+		</mod:findWithChildLike>
+		<mod-append:choice req="SEC FINAL" blue="false">
+			<text>Proceed to the Federation Capital.</text>
+			<event load="LASTSTAND_WARP"/>
+		</mod-append:choice>
+	</mod:findName>
+	<mod:findName type="event" name="ATLAS_MENU">
+		<mod:findWithChildLike type="choice" child-type="event">
+			<mod:selector load="ATLAS_EQUIPMENT"/>
+			<mod:setAttributes req="FMCORE_LIST_JUMPSPACE_EQUIPMENT"/>
+			<mod:findLike type="event">
+				<mod:setAttributes load="FMCORE_ATLAS_EQUIPMENT"/>
+			</mod:findLike>
+		</mod:findWithChildLike>
+		<mod:findWithChildLike type="choice" child-type="event">
+			<mod:selector load="CURA_TASK_MENU"/>
+			<mod:removeTag/>
+		</mod:findWithChildLike>
+	</mod:findName>
+
+	<mod:findName type="event" name="ATLAS_EQUIPMENT">
+		<mod:findWithChildLike type="choice" child-type="event">
+			<mod:selector load="LOAD_ATLAS"/>
+			<mod-overwrite:event>
+				<loadEvent>LOAD_ATLAS</loadEvent>
+				<variable name="fmcore_used_hs_aug" op="set" val="0"/>
+			</mod-overwrite:event>
+		</mod:findLike>
+	</mod:findName>
+	<mod:findName type="event" name="LOAD_ATLAS_MARKER"><!--appending the part of the code that resets the makres for which menus were used-->
+		<mod-append:variable name="fmcore_used_hs_aug" op="set" val="0"/>
+		<mod-append:variable name="fmcore_called_cura" op="set" val="0"/>
+	</mod:findName>
+
+</FTL>

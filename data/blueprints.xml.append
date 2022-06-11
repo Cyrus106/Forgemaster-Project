@@ -3988,6 +3988,8 @@
 		<rarity>0</rarity>
 		<spawnCrew>
 			<race>fm_repair_hull</race>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
 			<number>1</number>
 			<noSlot>true</noSlot>
 			<statBoosts>
@@ -7827,7 +7829,8 @@
 		<spawnCrew>
 			<race>fm_repair_hull</race>
 			<number>1</number>
-			<lifetime>1</lifetime>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
 			<noSlot>true</noSlot>
 			<statBoosts>
 				<statBoost name="noClone">
@@ -7914,7 +7917,8 @@
 		<spawnCrew>
 			<race>fm_repair_hull</race>
 			<number>1</number>
-			<lifetime>1</lifetime>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
 			<noSlot>true</noSlot>
 			<statBoosts>
 				<statBoost name="noClone">
@@ -8205,7 +8209,8 @@
 		<spawnCrew>
 			<race>fm_repair_hull</race>
 			<number>1</number>
-			<lifetime>1</lifetime>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
 			<noSlot>true</noSlot>
 			<statBoosts>
 				<statBoost name="noClone">
@@ -8873,6 +8878,8 @@
 		<rarity>0</rarity>
 		<spawnCrew>
 			<race>fm_power_drain</race>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
 			<number>1</number>
 			<noSlot>true</noSlot>
 		</spawnCrew>
@@ -8956,6 +8963,8 @@
 		<rarity>0</rarity>
 		<spawnCrew>
 			<race>fm_power_drain</race>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
 			<number>1</number>
 			<noSlot>true</noSlot>
 		</spawnCrew>
@@ -8986,7 +8995,7 @@
 		<iconImage>flak</iconImage>
 	</weaponBlueprint>
 
-	<weaponBlueprint name="FM_SHOTGUN_ENERGY_ION">
+	<weaponBlueprint name="FM_SHOTGUN_ENERGY_ION"><!--Old version of Exidia, I think? Can probably remove maybe ask Cyrus-->
 		<type>BURST</type>
 		<drone_targetable>1</drone_targetable>
 		<title>Energy Flak </title>
@@ -9031,7 +9040,7 @@
 		<iconImage>flak</iconImage>
 	</weaponBlueprint>
 
-	<weaponBlueprint name="FM_SHOTGUN_ENERGY_TEST">
+	<weaponBlueprint name="FM_SHOTGUN_ENERGY_TEST"><!--Old version of Exidia, I think? Can probably remove maybe ask Cyrus-->
 		<type>BURST</type>
 		<drone_targetable>1</drone_targetable>
 		<title>Energy Flak </title>
@@ -9052,6 +9061,8 @@
 		<rarity>0</rarity>
 		<spawnCrew>
 			<race>fm_power_drain</race>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
 			<number>1</number>
 			<noSlot>true</noSlot>
 			<statBoosts>
@@ -9339,6 +9350,8 @@
 		<spawnCrew>
 			<race>fm_ion_instant_2</race>
 			<number>1</number>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
 			<noSlot>true</noSlot>
 		</spawnCrew>
 		<statBoosts>
@@ -9638,7 +9651,8 @@
 			<race>fm_holy6</race>
 			<number>4</number>
 			<noSlot>true</noSlot>
-			<lifetime>0.2</lifetime>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
 			<statBoosts>
 				<statBoost name="noClone">
 					<boostType>SET</boostType>
@@ -9857,6 +9871,8 @@
 			<race>fm_explode_instant</race>
 			<number>1</number>
 			<noSlot>true</noSlot>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
 			<statBoosts>
 				<statBoost name="noClone">
 					<boostType>SET</boostType>
@@ -9935,6 +9951,8 @@
 			<race>fm_explode_instant</race>
 			<number>1</number>
 			<noSlot>true</noSlot>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
 			<statBoosts>
 				<statBoost name="noClone">
 					<boostType>SET</boostType>
@@ -10013,6 +10031,8 @@
 			<race>fm_explode_instant</race>
 			<number>1</number>
 			<noSlot>true</noSlot>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
 			<statBoosts>
 				<statBoost name="noClone">
 					<boostType>SET</boostType>
@@ -10085,6 +10105,8 @@
 			<race>fm_ion_instant_1</race>
 			<number>1</number>
 			<noSlot>true</noSlot>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
 			<statBoosts>
 				<statBoost name="noClone">
 					<boostType>SET</boostType>
@@ -10464,6 +10486,8 @@
 		<spawnCrew>
 			<race>fm_ion_instant_2</race>
 			<number>1</number>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
 			<noSlot>true</noSlot>
 			<statBoosts>
 				<statBoost name="noClone">
@@ -10541,6 +10565,8 @@
 		<spawnCrew>
 			<race>fm_ion_instant_3</race>
 			<number>1</number>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
 			<noSlot>true</noSlot>
 			<statBoosts>
 				<statBoost name="noClone">
@@ -10617,6 +10643,8 @@
 		<iconImage>beam</iconImage>
 		<spawnCrew>
 			<race>fm_ion_instant_3</race>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
 			<number>1</number>
 			<noSlot>true</noSlot>
 			<statBoosts>
@@ -10695,6 +10723,8 @@
 		<spawnCrew>
 			<race>fm_ion_instant_4</race>
 			<number>1</number>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
 			<noSlot>true</noSlot>
 			<statBoosts>
 				<statBoost name="noClone">
@@ -10773,6 +10803,8 @@
 		<spawnCrew>
 			<race>fm_ion_instant_2</race>
 			<number>1</number>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
 			<noSlot>true</noSlot>
 			<statBoosts>
 				<statBoost name="noClone">
@@ -11804,6 +11836,8 @@
 		<spawnCrew>
 			<race>fm_ion_instant_3</race>
 			<number>1</number>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
 			<noSlot>true</noSlot>
 			<statBoosts>
 				<statBoost name="noClone">
@@ -11901,6 +11935,8 @@
 		<iconImage>missile</iconImage>
 		<spawnCrew>
 			<race>fm_ion_instant_3</race>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
 			<number>1</number>
 			<noSlot>true</noSlot>
 			<statBoosts>
@@ -12075,7 +12111,7 @@
 
 			At empty beacons provides 4 fleet delay for 15 missiles, but increases general notoriety by 2. You Psycho.
 		</desc>
-		<tooltip>>A horrific weapon, designed to be one of the most potent killing machines ever made. Fires 5 'Dirty' Mines, that do a scary 60 damage each, and fills the room with a toxic gas for 20s afterwards.
+		<tooltip>A horrific weapon, designed to be one of the most potent killing machines ever made. Fires 5 'Dirty' Mines, that do a scary 60 damage each, and fills the room with a toxic gas for 20s afterwards.
 
 			At empty beacons provides 4 fleet delay for 15 missiles, but increases general notoriety by 2. You Psycho.
 		</tooltip>
@@ -12100,6 +12136,8 @@
 	        <race>fm_bio_cloud</race>
 	        <number>1</number>
 	        <noSlot>true</noSlot>
+					<enemy>true</enemy>
+					<lifetime>10</lifetime>
 	       <statBoosts>
 	            <statBoost name="noClone">
 	                <boostType>SET</boostType>
@@ -12108,13 +12146,13 @@
 	                <crewTarget>ALL</crewTarget>
 	                <priority>999999</priority>
 	            </statBoost>
-					  <statBoost name="maxHealth">
+					  	<!--<statBoost name="maxHealth">
 	                <boostType>FLAT</boostType>
 	                <amount>-1000000</amount>
 	                <shipTarget>ALL</shipTarget>
 	                <crewTarget>ALL</crewTarget>
 	                <priority>999999</priority>
-	            </statBoost>
+	            </statBoost>-->
 	        </statBoosts>
 	    </spawnCrew>
 		<projectiles>
@@ -13189,6 +13227,8 @@
 		<iconScale>0.9</iconScale>
 		<spawnCrew>
 			<race>fm_explode_instant</race>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
 			<number>1</number>
 			<noSlot>true</noSlot>
 			<statBoosts>
@@ -13518,7 +13558,7 @@
 		<crewSpawnChance>5</crewSpawnChance>
 		<cooldown>5</cooldown>
 		<spawnCrew>
-			<race>LIST_FM_HOLYSHIT</race>
+			<race>LIST_FM_HOLYSHIT</race><!--Left as allied crewspawn for now because this is a funny haha gun-->
 			<number>1</number>
 			<lifetime>8</lifetime>
 			<noSlot>true</noSlot>
@@ -13605,7 +13645,7 @@
 		<crewSpawnChance>5</crewSpawnChance>
 		<cooldown>45</cooldown>
 		<spawnCrew>
-			<race>LIST_FM_HOLYSHIT</race>
+			<race>LIST_FM_HOLYSHIT</race><!--Left as allied crewspawn for now because this is a funny haha gun-->
 			<number>1</number>
 			<lifetime>5</lifetime>
 			<noSlot>true</noSlot>
@@ -14522,6 +14562,8 @@
 		<spawnCrew>
 			<race>fm_ion_instant_1</race>
 			<number>1</number>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
 			<noSlot>true</noSlot>
 		</spawnCrew>
 		<shots>1</shots>
@@ -15368,7 +15410,7 @@
 		<spawnCrew>
 			<race>fm_repair_hull</race>
 			<number>1</number>
-			<lifetime>1</lifetime>
+			<lifetime>0</lifetime>
 			<noSlot>true</noSlot>
 			<statBoosts>
 				<statBoost name="noClone">
@@ -15426,7 +15468,7 @@
 		<spawnCrew>
 			<race>fm_repair_hull</race>
 			<number>1</number>
-			<lifetime>1</lifetime>
+			<lifetime>0</lifetime>
 			<noSlot>true</noSlot>
 			<statBoosts>
 				<statBoost name="noClone">
@@ -15896,6 +15938,7 @@
 		<iconScale>0.9</iconScale>
 		<spawnCrew>
 			<race>fm_explode_instant</race>
+			<lifetime>0</lifetime>
 			<number>1</number>
 			<noSlot>true</noSlot>
 			<statBoosts>
@@ -15957,6 +16000,7 @@
 		<spawnCrew>
 			<race>fm_ion_instant_1</race>
 			<number>1</number>
+			<lifetime>0</lifetime>
 			<noSlot>true</noSlot>
 			<statBoosts>
 				<statBoost name="noClone">
@@ -16144,6 +16188,7 @@
 		<spawnCrew>
 			<race>fm_ion_instant_2</race>
 			<number>1</number>
+			<lifetime>0</lifetime>
 			<noSlot>true</noSlot>
 			<statBoosts>
 				<statBoost name="noClone">
@@ -16190,6 +16235,7 @@
 		<spawnCrew>
 			<race>fm_ion_instant_3</race>
 			<number>1</number>
+			<lifetime>0</lifetime>
 			<noSlot>true</noSlot>
 			<statBoosts>
 				<statBoost name="noClone">
@@ -16236,6 +16282,7 @@
 		<spawnCrew>
 			<race>fm_ion_instant_4</race>
 			<number>1</number>
+			<lifetime>0</lifetime>
 			<noSlot>true</noSlot>
 			<statBoosts>
 				<statBoost name="noClone">
@@ -16911,6 +16958,7 @@
 		<iconImage>missile</iconImage>
 		<spawnCrew>
 			<race>fm_ion_instant_3</race>
+			<lifetime>0</lifetime>
 			<number>1</number>
 			<noSlot>true</noSlot>
 			<statBoosts>

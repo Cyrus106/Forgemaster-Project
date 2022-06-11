@@ -1,0 +1,25 @@
+<FTL><!--inferno-Core-->
+ <event name="FMCORE_ONJUMP">
+   <triggeredEvent name="FMCORE_ONJUMP" event="FMCORE_ONJUMP">
+     <jumps amount="1" type="0"/>
+   </triggeredEvent>
+   <!--<queueEvent>EVENTNAME</queueEvent> append more of those lines for each independent effect-->
+ </event>
+ <event name="FMCORE_ONDAMAGE">
+   <triggeredEvent name="FMCORE_ONDAMAGE" event="FMCORE_ONDAMAGE">
+     <playerDamage amount="1" countRepairs="false"/>
+   </triggeredEvent>
+   <!--<queueEvent>EVENTNAME</queueEvent> append more of those lines for each independent effect-->
+ </event>
+ <event name="FMCORE_RESET"><!-- use this if you installed mid-run to activate the effects-->
+   <text>FMCORE functions have been reset</text>
+   <clearTriggeredEvent name="FMCORE_ONJUMP"/>
+   <clearTriggeredEvent name="FMCORE_ONDAMAGE"/>
+   <triggeredEvent name="FMCORE_ONDAMAGE" event="FMCORE_ONDAMAGE">
+     <playerDamage amount="1" countRepairs="false"/>
+   </triggeredEvent>
+   <triggeredEvent name="FMCORE_ONJUMP" event="FMCORE_ONJUMP">
+     <jumps amount="1" type="0"/>
+   </triggeredEvent>
+ </event>
+</FTL>

@@ -4596,7 +4596,7 @@
 					<boostType>FLAT</boostType>
 					<amount>1</amount>
 					<shipTarget>ORIGINAL_OTHER_SHIP</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
+					<crewTarget>ENEMIES</crewTarget>
 					<priority>0</priority>
 					<affectsSelf>true</affectsSelf>
 					<whiteList>
@@ -4607,7 +4607,7 @@
 					<boostType>FLAT</boostType>
 					<amount>-2</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
+					<crewTarget>ALLIES</crewTarget>
 					<affectsSelf>false</affectsSelf>
 					<maxStacks>1</maxStacks>
 					<whiteList>
@@ -4622,7 +4622,7 @@
 					<boostType>FLAT</boostType>
 					<amount>-2</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
+					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>DRONES</droneTarget>
 					<affectsSelf>false</affectsSelf>
 					<maxStacks>1</maxStacks>
@@ -7742,6 +7742,7 @@
 			<hasDeathExplosion>true</hasDeathExplosion>
 			<deathEffect>
 				<breachChance>10</breachChance>
+				<shipFriendlyFire>true</shipFriendlyFire>
 
 			</deathEffect>
 
@@ -8376,6 +8377,7 @@
 
 	<crew> <!--Bio Minelauncher Drain-->
 		<race name="fm_bio_cloud">
+			<animSheet>fm_bio_cloud</animSheet>
 			<maxHealth>100</maxHealth>
 			<repairSpeed>0</repairSpeed>
 			<canFight>false</canFight>
@@ -8409,15 +8411,18 @@
 					<boostType>FLAT</boostType>
 					<amount>-4</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
+					<crewTarget>ALLIES</crewTarget>
 					<affectsSelf>false</affectsSelf>
 					<maxStacks>1</maxStacks>
+					<blackList>
+						<fm_bio_cloud/>
+					</blackList>
 				</statBoost>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
 					<amount>-4</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
+					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>DRONES</droneTarget>
 					<affectsSelf>false</affectsSelf>
 					<maxStacks>1</maxStacks>

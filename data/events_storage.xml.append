@@ -9261,9 +9261,16 @@
     </event>
   </FTL>
 
-<FTL><!--twisted monk stuff-->
+<FTL>
+  <!--twisted monk stuff-->
+
+
   <mod:findName type="event" name ="COMBAT_CHECK_REAL">
-  	<mod-append:choice req = "TWISTED_BLESSING" hidden="true">
+
+
+
+
+    <mod-append:choice req = "TWISTED_BLESSING" hidden="true">
   		<text>Draw upon your stored rage.</text>
   		<event load="COMBAT_CHECK_TWISTED_BLESSING_MENU"/>
   	</mod-append:choice>
