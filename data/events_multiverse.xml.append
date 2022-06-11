@@ -8605,7 +8605,7 @@
 	</event>
 	<event name="FM_MODULAR_HULL_CAPSTONE_FASTWEAPON">
 		<text>Install Infinitum Cyclo-Arsenal? [+166% weapon reload, weapon system is limited to 3 bars, no manning in weapons](can't be installed to ships with artillery)</text>
-		<choice req="weapons" lvl="1" max_group="1" blue="false" hidden="true">
+		<choice req="artillery" lvl="1" max_group="1" blue="false" hidden="true">
 			<text>you can't install the Infinitum Cyclo-Arsenal, you have an artillery system.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
