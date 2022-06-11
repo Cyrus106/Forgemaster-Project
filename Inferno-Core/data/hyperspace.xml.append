@@ -1,0 +1,22 @@
+<FTL><!--Inferno-Core-->
+	<events>
+		<variable name="fmcore_called_cura" op="set" val="0"/>
+		<variable name="fmcore_used_hs_aug" op="set" val="0"/>
+		<req name="FMCORE_LIST_JUMPSPACE_EQUIPMENT">
+			<name>LIST_JUMPSPACE_EQUIPMENT</name>
+			<name>CURA_TASK_CHECK</name>
+		</req>
+		<req name="FMCORE_CAN_USE_HS_AUG" type="all">
+			<name>LIST_JUMPSPACE_EQUIPMENT</name>
+			<req lvl="0" max_lvl="0">
+				<name>fmcore_used_hs_aug</name>
+			</req>
+		</req>
+		<req name="FMCORE_CAN_CALL_CURA" type="all">
+			<name>CURA_TASK_CHECK</name>
+			<req lvl="0" max_lvl="0">
+				<name>fmcore_called_cura</name>
+			</req>
+		</req>
+	</events>
+</FTL>
