@@ -11692,6 +11692,49 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</statBoosts>
 			<locked/>
 		</aug>
+		
+		<aug name="ANCIENT_MURDERBOTS">
+		<statBoosts>
+			<statBoost name="damageTakenMultiplier">
+				<boostType>MULT</boostType>
+				<amount>1.25</amount>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<priority>0</priority>
+				<systemPowerDependency>
+					<doors/>
+				</systemPowerDependency>
+				<systemPowerScaling>
+					<noSys>0</noSys>
+					<noPwr>0</noPwr>
+					<onePwr>1</onePwr>
+					<twoPwr>1.25</twoPwr>
+					<threePwr>1.5</threePwr>
+					<fourPwr>1.75</fourPwr>
+				</systemPowerScaling>
+			</statBoost>
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<droneTarget>ALL</droneTarget>
+				<amount>-4</amount>
+				<priority>0</priority>
+				<systemPowerDependency>
+					<doors/>
+				</systemPowerDependency>
+				<systemPowerScaling>
+					<noSys>0</noSys>
+					<noPwr>0</noPwr>
+					<onePwr>1</onePwr>
+					<twoPwr>1.5</twoPwr>
+					<threePwr>1.75</threePwr>
+					<fourPwr>2</fourPwr>
+				</systemPowerScaling>
+			</statBoost>
+		</statBoosts>
+		<locked/>
+    </aug>
 
 		<aug name ="TWISTED_ANCIENT_BOUNTY">
 			<locked/>
