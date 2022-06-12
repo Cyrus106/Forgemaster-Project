@@ -6422,7 +6422,7 @@
 				<jumpCooldown>full</jumpCooldown>
 				<buttonText>SACRIFICE</buttonText>
 				<tooltip>Ready: Kill all friendly ghosts in the same room, sending copies of them to the enemy ship</tooltip>
-				<cooldownColor r="115" g="125" b="255"/>
+				<cooldownColor r="255" g="149" b="0"/>
 				<req type="player">
 					<inCombat/>
 					<aiDisabled/>
