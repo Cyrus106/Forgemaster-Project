@@ -456,7 +456,6 @@
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<hiddenAug>LOCKED_SLUG_GEL</hiddenAug>
 			<hiddenAug>SHIP_TWISTED_KLEPTOCRACY</hiddenAug>
-			<hiddenAug>TWISTED_SUFFOCATION_ACCELERATOR</hiddenAug>
 			<crewLimit>10</crewLimit>
 			<customReactor maxLevel="35"/>
 			<rooms>
@@ -3464,24 +3463,7 @@
 
 
 		<req name="FM_CURA_QUEST_LIST" type="all">
-			<name>ACH_FM_BOSS_CLAN1</name>
-			<name>ACH_FM_BOSS_DUSK1</name>
-			<name>ACH_FM_BOSS_ENGI1</name>
-			<name>ACH_FM_BOSS_FREE1</name>
-			<name>ACH_FM_BOSS_LOSTSUN1</name>
-			<name>ACH_FM_BOSS_MANTIS1</name>
-			<name>ACH_FM_BOSS_MONK1</name>
-			<name>ACH_FM_BOSS_R1</name>
-			<name>ACH_FM_BOSS_SLUG1</name>
-			<name>ACH_FM_BOSS_STEALTH1</name>
-			<name>ACH_FM_BOSS_ZOLTAN1</name>
-			<name>ACH_FM_BOSS_SHELL1</name>
-			<name>ACH_FM_BOSS_SEPA1</name>
-			<name>ACH_FM_BOSS_ENGINEER1</name>
-			<name>ACH_FM_BOSS_LANIUS1</name>
-			<name>ACH_FM_BOSS_KES1</name>
-			<name>ACH_FM_BOSS_FED1</name>
-			<name>ACH_FM_BOSS_ORCHID1</name>
+			<name>FM_BOSS_LIST_18</name>
 			<name>ACH_FM_BOSS_CRYSTAL1</name>
 			<name>ACH_FM_BOSS_TUCO1</name>
 			<name>ACH_FM_BOSS_LEECH1</name>
@@ -3494,75 +3476,35 @@
 		</req>
 
 		<req name="FM_BOSS_LIST_6" type="all">
-			<name>ACH_FM_BOSS_CLAN1</name>
-			<name>ACH_FM_BOSS_DUSK1</name>
-			<name>ACH_FM_BOSS_ENGI1</name>
+			<name>FM_BOSS_LIST_3</name>
 			<name>ACH_FM_BOSS_FREE1</name>
 			<name>ACH_FM_BOSS_SEPA1</name>
 			<name>ACH_FM_BOSS_MANTIS1</name>
 		</req>
 
 		<req name="FM_BOSS_LIST_9" type="all">
-			<name>ACH_FM_BOSS_CLAN1</name>
-			<name>ACH_FM_BOSS_DUSK1</name>
-			<name>ACH_FM_BOSS_ENGI1</name>
-			<name>ACH_FM_BOSS_FREE1</name>
-			<name>ACH_FM_BOSS_SEPA1</name>
-			<name>ACH_FM_BOSS_MANTIS1</name>
+			<name>FM_BOSS_LIST_6</name>
 			<name>ACH_FM_BOSS_MONK1</name>
 			<name>ACH_FM_BOSS_R1</name>
 			<name>ACH_FM_BOSS_LOSTSUN1</name>
 		</req>
 
 		<req name="FM_BOSS_LIST_12" type="all">
-			<name>ACH_FM_BOSS_CLAN1</name>
-			<name>ACH_FM_BOSS_DUSK1</name>
-			<name>ACH_FM_BOSS_ENGI1</name>
-			<name>ACH_FM_BOSS_FREE1</name>
-			<name>ACH_FM_BOSS_SEPA1</name>
-			<name>ACH_FM_BOSS_MANTIS1</name>
-			<name>ACH_FM_BOSS_MONK1</name>
-			<name>ACH_FM_BOSS_R1</name>
-			<name>ACH_FM_BOSS_LOSTSUN1</name>
+			<name>FM_BOSS_LIST_9</name>
 			<name>ACH_FM_BOSS_SLUG1</name>
 			<name>ACH_FM_BOSS_STEALTH1</name>
 			<name>ACH_FM_BOSS_ZOLTAN1</name>
 		</req>
 
 		<req name="FM_BOSS_LIST_15" type="all">
-			<name>ACH_FM_BOSS_CLAN1</name>
-			<name>ACH_FM_BOSS_DUSK1</name>
-			<name>ACH_FM_BOSS_ENGI1</name>
-			<name>ACH_FM_BOSS_FREE1</name>
-			<name>ACH_FM_BOSS_SEPA1</name>
-			<name>ACH_FM_BOSS_MANTIS1</name>
-			<name>ACH_FM_BOSS_MONK1</name>
-			<name>ACH_FM_BOSS_R1</name>
-			<name>ACH_FM_BOSS_LOSTSUN1</name>
-			<name>ACH_FM_BOSS_SLUG1</name>
-			<name>ACH_FM_BOSS_STEALTH1</name>
-			<name>ACH_FM_BOSS_ZOLTAN1</name>
+			<name>FM_BOSS_LIST_12</name>
 			<name>ACH_FM_BOSS_SHELL1</name>
 			<name>ACH_FM_BOSS_ENGINEER1</name>
 			<name>ACH_FM_BOSS_LANIUS1</name>
 		</req>
 
 		<req name="FM_BOSS_LIST_18" type="all">
-			<name>ACH_FM_BOSS_CLAN1</name>
-			<name>ACH_FM_BOSS_DUSK1</name>
-			<name>ACH_FM_BOSS_ENGI1</name>
-			<name>ACH_FM_BOSS_FREE1</name>
-			<name>ACH_FM_BOSS_SEPA1</name>
-			<name>ACH_FM_BOSS_MANTIS1</name>
-			<name>ACH_FM_BOSS_MONK1</name>
-			<name>ACH_FM_BOSS_R1</name>
-			<name>ACH_FM_BOSS_LOSTSUN1</name>
-			<name>ACH_FM_BOSS_SLUG1</name>
-			<name>ACH_FM_BOSS_STEALTH1</name>
-			<name>ACH_FM_BOSS_ZOLTAN1</name>
-			<name>ACH_FM_BOSS_SHELL1</name>
-			<name>ACH_FM_BOSS_ENGINEER1</name>
-			<name>ACH_FM_BOSS_LANIUS1</name>
+			<name>FM_BOSS_LIST_15</name>
 			<name>ACH_FM_BOSS_KES1</name>
 			<name>ACH_FM_BOSS_FED1</name>
 			<name>ACH_FM_BOSS_ORCHID1</name>
@@ -11617,8 +11559,56 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</statBoosts>
 			<locked/>
 		</aug>
-
+		<!--
 		<aug name = "TWISTED_SUFFOCATION_ACCELERATOR">
+
+			<locked/>
+		</aug>-->
+
+		<aug name="ANCIENT_MURDERBOTS">
+			<statBoosts>
+				<statBoost name="allDamageTakenMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.25</amount>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<priority>0</priority>
+					<systemPowerDependency>
+						<doors/>
+					</systemPowerDependency>
+					<systemPowerScaling>
+						<noSys>0</noSys>
+						<noPwr>0</noPwr>
+						<onePwr>1</onePwr>
+						<twoPwr>2</twoPwr>
+						<threePwr>3</threePwr>
+						<fourPwr>4</fourPwr>
+					</systemPowerScaling>
+				</statBoost>
+				<statBoost name="trueHealAmount">
+					<boostType>FLAT</boostType>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<amount>-4</amount>
+					<priority>0</priority>
+					<systemPowerDependency>
+						<doors/>
+					</systemPowerDependency>
+					<systemPowerScaling>
+						<noSys>0</noSys>
+						<noPwr>0</noPwr>
+						<onePwr>1</onePwr>
+						<twoPwr>1.25</twoPwr>
+						<threePwr>1.5</threePwr>
+						<fourPwr>1.75</fourPwr>
+					</systemPowerScaling>
+				</statBoost>
+			</statBoosts>
+    </aug>
+
+		<aug name ="TWISTED_ANCIENT_BOUNTY">
 			<statBoosts>
 				<statBoost name="suffocationModifier">
 					<boostType>MULT</boostType>
@@ -11711,53 +11701,6 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					</systemPowerScaling>
 				</statBoost>
 			</statBoosts>
-			<locked/>
-		</aug>
-		
-		<aug name="ANCIENT_MURDERBOTS">
-		<statBoosts>
-			<statBoost name="allDamageTakenMultiplier">
-				<boostType>MULT</boostType>
-				<amount>1.25</amount>
-				<shipTarget>ORIGINAL_SHIP</shipTarget>
-				<crewTarget>ENEMIES</crewTarget>
-				<droneTarget>ALL</droneTarget>
-				<priority>0</priority>
-				<systemPowerDependency>
-					<doors/>
-				</systemPowerDependency>
-				<systemPowerScaling>
-					<noSys>0</noSys>
-					<noPwr>0</noPwr>
-					<onePwr>1</onePwr>
-					<twoPwr>2</twoPwr>
-					<threePwr>3</threePwr>
-					<fourPwr>4</fourPwr>
-				</systemPowerScaling>
-			</statBoost>
-			<statBoost name="trueHealAmount">
-				<boostType>FLAT</boostType>
-				<shipTarget>ORIGINAL_SHIP</shipTarget>
-				<crewTarget>ENEMIES</crewTarget>
-				<droneTarget>ALL</droneTarget>
-				<amount>-4</amount>
-				<priority>0</priority>
-				<systemPowerDependency>
-					<doors/>
-				</systemPowerDependency>
-				<systemPowerScaling>
-					<noSys>0</noSys>
-					<noPwr>0</noPwr>
-					<onePwr>1</onePwr>
-					<twoPwr>1.25</twoPwr>
-					<threePwr>1.5</threePwr>
-					<fourPwr>1.75</fourPwr>
-				</systemPowerScaling>
-			</statBoost>
-		</statBoosts>
-    </aug>
-
-		<aug name ="TWISTED_ANCIENT_BOUNTY">
 			<locked/>
 		</aug>
 
@@ -11948,7 +11891,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 	</augments>
 	<augments><!--Twisted Kestrel Augments-->
-	<!--	<aug name="TWISTED_KESTREL_BOARDING_SPLITTER">
+		<!--	<aug name="TWISTED_KESTREL_BOARDING_SPLITTER">
 			<statBoosts>
 				<statBoost name="deathEffect">
 					<boostType>SET</boostType>
