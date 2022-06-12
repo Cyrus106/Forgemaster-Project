@@ -328,7 +328,7 @@
 
 	<event name="FM_CREWKILL_TRACKER_EVENT">
 		<loadEventList seeded="false" default="TRUENOTHING">
-			<event name="TWISTED_KESTREL_KILL" req="TWISTED_KESTREL_GHOST_SUMMON"/>
+			<event name="TWISTED_KESTREL_KILL" req="gbgozer_player"/>
 			<event name="TWISTED_ROCK_KILL" req="TWISTED_HULL_ARM"/>
 		</loadEventList>
 	</event>
@@ -342,7 +342,7 @@
 
 	<event name="FM_HULLKILL_TRACKER_EVENT"><!--Potential events to trigger on crewkill-->
 		<loadEventList seeded="false" default="TRUENOTHING">
-			<event name="TWISTED_KESTREL_KILL" req="TWISTED_KESTREL_GHOST_SUMMON"/>
+			<event name="TWISTED_KESTREL_KILL" req="gbgozer_player"/>
 			<event name="TWISTED_ROCK_KILL" req="TWISTED_HULL_ARM"/>
 		</loadEventList>
 	</event>
