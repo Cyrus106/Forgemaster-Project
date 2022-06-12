@@ -9615,7 +9615,10 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<priority>999999</priority>
-					<blackList load="LIST_FM_PLSNOEFFECT_DEATH"/>
+					<blackList load="LIST_FM_PLSNOEFFECT_DEATH">
+						<blueprintList load="LIST_FM_PLSNOEFFECT"/>
+						<blueprintList load="LIST_FM_HOLYSHIT"/>
+					</blackList>
 				</statBoost>
 			</statBoosts>
 		</aug>
@@ -9632,7 +9635,10 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
-					<blackList load="LIST_FM_PLSNOEFFECT_DEATH"/>
+					<blackList load="LIST_FM_PLSNOEFFECT_DEATH">
+						<blueprintList load="LIST_FM_PLSNOEFFECT"/>
+						<blueprintList load="LIST_FM_HOLYSHIT"/>
+					</blackList>
 				</statBoost>
 			</statBoosts>
 		</aug>
@@ -10334,7 +10340,14 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<priority>999999</priority>
-					<blackList load="LIST_FM_PLSNOEFFECT_VIRUS"/>
+					<blackList load="LIST_FM_PLSNOEFFECT_VIRUS">
+						<blueprintList load="LIST_FM_PLSNOEFFECT"/>
+						<blueprintList load="LIST_FM_HOLYSHIT"/>
+						<blueprintList load="LIST_CREW_SHELL"/>
+						<blueprintList load="LIST_CREW_ENGI"/>
+						<blueprintList load="LIST_CREW_COGNITIVE_ALL"/>
+						<blueprintList load="LIST_FM_HOLYSHIT"/>
+					</blackList>
 					<powerEffect>
 						<cooldown>1</cooldown>
 						<jumpCooldown>full</jumpCooldown>
@@ -10641,7 +10654,14 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<crewTarget>ALLIES</crewTarget>
 					<priority>999999</priority>
 
-					<blackList load="LIST_FM_PLSNOEFFECT_VIRUS"/>
+					<blackList load="LIST_FM_PLSNOEFFECT_VIRUS">
+						<blueprintList load="LIST_FM_PLSNOEFFECT"/>
+						<blueprintList load="LIST_FM_HOLYSHIT"/>
+						<blueprintList load="LIST_CREW_SHELL"/>
+						<blueprintList load="LIST_CREW_ENGI"/>
+						<blueprintList load="LIST_CREW_COGNITIVE_ALL"/>
+						<blueprintList load="LIST_FM_HOLYSHIT"/>
+					</blackList>
 					<powerEffect>
 						<cooldown>1</cooldown>
 						<jumpCooldown>full</jumpCooldown>
@@ -11603,6 +11623,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 						<droneTarget>CREW</droneTarget>
 						<priority>999</priority>
 						<blackList load="LIST_FM_PLSNOEFFECT">
+							<blueprintList load="LIST_FM_HOLYSHIT"/>
 							<human_technician_drone/>
 						</blackList>
 					</statBoost>
@@ -11614,6 +11635,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 						<droneTarget>CREW</droneTarget>
 						<priority>999</priority>
 						<blackList load="LIST_FM_PLSNOEFFECT">
+							<blueprintList load="LIST_FM_HOLYSHIT"/>
 							<human_technician_drone/>
 						</blackList>
 					</statBoost>
@@ -11625,6 +11647,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 						<priority>999</priority>
 
 						<blackList load="LIST_FM_PLSNOEFFECT">
+							<blueprintList load="LIST_FM_HOLYSHIT"/>
 							<human_technician_drone/>
 						</blackList>
 						<deathEffect>
@@ -17366,6 +17389,12 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<crewTarget>ALL</crewTarget>
 					<priority>0</priority>
 					<blackList load="LIST_CREW_NOSALT">
+						<blueprintList load="LIST_CREW_ROCK"/>
+						<blueprintList load="LIST_CREW_GHOST"/>
+						<blueprintList load="LIST_CREW_CRYSTAL"/>
+						<blueprintList load="LIST_CREW_ENGI"/>
+						<blueprintList load="LIST_CREW_LANIUS"/>
+						<blueprintList load="LIST_CREW_ANCIENT_ALL"/>
 					</blackList>
 				</statBoost>
 			</statBoosts>
@@ -17677,6 +17706,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<metaVariable name="fm_infinite_upgradepoints" op="set" val="0"/>
 		<variable name="overcharmed_active" op="set" val="0"/>
 		<variable name="overcharmed_charges" op="set" val="0"/>
+		<variable name="fm_hull_upgrade_points" op="set" var="FM_HULL_UPGRADE_POINTS"/>
 		<req name="FM_HULL_UPGRADE_POINTS" type="sum">
 
 			<req mult="-2" type="sum">
@@ -18394,7 +18424,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</req>
 		<req name="OVERCHARMED_RELOADING" type="sum">
 			<req type="sum" const="-15">
-				<name>FM_HULL_UPGRADE_POINTS</name>
+				<name>fm_hull_upgrade_points</name>
 			</req>
 			<req type="sum" mult="-1">
 				<name>overcharmed_charges</name>
@@ -18478,7 +18508,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<req name="CAN_INSTALL_MODULE">
 			<req type="all"><!--pre-first capstone-->
 				<req max_lvl="4">
-					<name>FM_HULL_UPGRADE_POINTS</name>
+					<name>fm_hull_upgrade_points</name>
 				</req>
 				<req lvl="0" max_lvl="0">
 					<name>FM_HULL_CAPSTONES</name>
@@ -18486,7 +18516,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</req>
 			<req type="all"><!--pre-second capstone-->
 				<req max_lvl="9">
-					<name>FM_HULL_UPGRADE_POINTS</name>
+					<name>fm_hull_upgrade_points</name>
 				</req>
 				<req lvl="1" max_lvl="1">
 					<name>FM_HULL_CAPSTONES</name>
@@ -18494,7 +18524,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</req>
 			<req type="all"><!--pre-third capstone-->
 				<req max_lvl="14">
-					<name>FM_HULL_UPGRADE_POINTS</name>
+					<name>fm_hull_upgrade_points</name>
 				</req>
 				<req lvl="2" max_lvl="2">
 					<name>FM_HULL_CAPSTONES</name>
@@ -18502,7 +18532,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</req>
 			<req type="all"><!--IV-->
 			  <req max_lvl="19">
-			   <name>FM_HULL_UPGRADE_POINTS</name>
+			   <name>fm_hull_upgrade_points</name>
 			  </req>
 			  <req lvl="3" max_lvl="3">
 			    <name>FM_HULL_CAPSTONES</name>
@@ -18511,7 +18541,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</req>
 			<req type="all"><!--V-->
 			  <req max_lvl="24">
-			   <name>FM_HULL_UPGRADE_POINTS</name>
+			   <name>fm_hull_upgrade_points</name>
 			  </req>
 			  <req lvl="4" max_lvl="4">
 			    <name>FM_HULL_CAPSTONES</name>
@@ -18520,7 +18550,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</req>
 			<req type="all"><!--VI-->
 			  <req max_lvl="29">
-			   <name>FM_HULL_UPGRADE_POINTS</name>
+			   <name>fm_hull_upgrade_points</name>
 			  </req>
 			  <req lvl="5" max_lvl="5">
 			    <name>FM_HULL_CAPSTONES</name>
@@ -18529,7 +18559,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</req>
 			<req type="all"><!--VII-->
 			  <req max_lvl="34">
-			   <name>FM_HULL_UPGRADE_POINTS</name>
+			   <name>fm_hull_upgrade_points</name>
 			  </req>
 			  <req lvl="6" max_lvl="6">
 			    <name>FM_HULL_CAPSTONES</name>
@@ -18538,7 +18568,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</req>
 			<req type="all"><!--VIII-->
 			  <req max_lvl="39">
-			   <name>FM_HULL_UPGRADE_POINTS</name>
+			   <name>fm_hull_upgrade_points</name>
 			  </req>
 			  <req lvl="7" max_lvl="7">
 			    <name>FM_HULL_CAPSTONES</name>
@@ -18547,7 +18577,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</req>
 			<req type="all"><!--IX-->
 			  <req max_lvl="44">
-			   <name>FM_HULL_UPGRADE_POINTS</name>
+			   <name>fm_hull_upgrade_points</name>
 			  </req>
 			  <req lvl="8" max_lvl="8">
 			    <name>FM_HULL_CAPSTONES</name>
@@ -18556,7 +18586,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</req>
 			<req type="all"><!--X-->
 			  <req max_lvl="49">
-			   <name>FM_HULL_UPGRADE_POINTS</name>
+			   <name>fm_hull_upgrade_points</name>
 			  </req>
 			  <req lvl="9" max_lvl="9">
 			    <name>FM_HULL_CAPSTONES</name>
@@ -18565,7 +18595,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</req>
 			<req type="all"><!--XI-->
 			  <req max_lvl="54">
-			   <name>FM_HULL_UPGRADE_POINTS</name>
+			   <name>fm_hull_upgrade_points</name>
 			  </req>
 			  <req lvl="10" max_lvl="10">
 			    <name>FM_HULL_CAPSTONES</name>
@@ -18574,7 +18604,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</req>
 			<req type="all"><!--XII-->
 			  <req max_lvl="59">
-			   <name>FM_HULL_UPGRADE_POINTS</name>
+			   <name>fm_hull_upgrade_points</name>
 			  </req>
 			  <req lvl="11" max_lvl="11">
 			    <name>FM_HULL_CAPSTONES</name>
@@ -18583,7 +18613,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</req>
 			<req type="all"><!--XIII-->
 			  <req max_lvl="64">
-			   <name>FM_HULL_UPGRADE_POINTS</name>
+			   <name>fm_hull_upgrade_points</name>
 			  </req>
 			  <req lvl="12" max_lvl="12">
 			    <name>FM_HULL_CAPSTONES</name>
@@ -18594,7 +18624,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<req name="CAN_INSTALL_CAPSTONE">
 			<req type="all"><!--pre-first capstone-->
 				<req lvl="5">
-					<name>FM_HULL_UPGRADE_POINTS</name>
+					<name>fm_hull_upgrade_points</name>
 				</req>
 				<req lvl="0" max_lvl="0">
 					<name>FM_HULL_CAPSTONES</name>
@@ -18602,7 +18632,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</req>
 			<req type="all"><!--pre-second capstone-->
 				<req lvl="10">
-					<name>FM_HULL_UPGRADE_POINTS</name>
+					<name>fm_hull_upgrade_points</name>
 				</req>
 				<req lvl="1" max_lvl="1">
 					<name>FM_HULL_CAPSTONES</name>
@@ -18610,7 +18640,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</req>
 			<req type="all"><!--pre-third capstone-->
 				<req lvl="15">
-					<name>FM_HULL_UPGRADE_POINTS</name>
+					<name>fm_hull_upgrade_points</name>
 				</req>
 				<req lvl="2" max_lvl="2">
 					<name>FM_HULL_CAPSTONES</name>
@@ -18620,7 +18650,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<req name="CAN_INSTALL_CAPSTONEEXTRA">
 			<req type="all"><!--IV-->
 				<req lvl="20">
-					<name>FM_HULL_UPGRADE_POINTS</name>
+					<name>fm_hull_upgrade_points</name>
 				</req>
 				<req lvl="3" max_lvl="3">
 					<name>FM_HULL_CAPSTONES</name>
@@ -18628,7 +18658,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</req>
 			<req type="all"><!--V-->
 				<req lvl="25">
-					<name>FM_HULL_UPGRADE_POINTS</name>
+					<name>fm_hull_upgrade_points</name>
 				</req>
 				<req lvl="4" max_lvl="4">
 					<name>FM_HULL_CAPSTONES</name>
@@ -18636,7 +18666,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</req>
 			<req type="all"><!--VI-->
 				<req lvl="30">
-					<name>FM_HULL_UPGRADE_POINTS</name>
+					<name>fm_hull_upgrade_points</name>
 				</req>
 				<req lvl="5" max_lvl="5">
 					<name>FM_HULL_CAPSTONES</name>
@@ -18644,7 +18674,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</req>
 			<req type="all"><!--VII-->
 				<req lvl="35">
-					<name>FM_HULL_UPGRADE_POINTS</name>
+					<name>fm_hull_upgrade_points</name>
 				</req>
 				<req lvl="6" max_lvl="6">
 					<name>FM_HULL_CAPSTONES</name>
@@ -18652,7 +18682,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</req>
 			<req type="all"><!--VIII-->
 				<req lvl="40">
-					<name>FM_HULL_UPGRADE_POINTS</name>
+					<name>fm_hull_upgrade_points</name>
 				</req>
 				<req lvl="7" max_lvl="7">
 					<name>FM_HULL_CAPSTONES</name>
@@ -18660,7 +18690,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</req>
 			<req type="all"><!--IX-->
 			  <req lvl="45">
-			    <name>FM_HULL_UPGRADE_POINTS</name>
+			    <name>fm_hull_upgrade_points</name>
 			  </req>
 			  <req lvl="8" max_lvl="8">
 			    <name>FM_HULL_CAPSTONES</name>
@@ -18668,7 +18698,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</req>
 			<req type="all"><!--X-->
 			  <req lvl="50">
-			    <name>FM_HULL_UPGRADE_POINTS</name>
+			    <name>fm_hull_upgrade_points</name>
 			  </req>
 			  <req lvl="9" max_lvl="9">
 			    <name>FM_HULL_CAPSTONES</name>
@@ -18676,7 +18706,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</req>
 			<req type="all"><!--XI-->
 			  <req lvl="55">
-			    <name>FM_HULL_UPGRADE_POINTS</name>
+			    <name>fm_hull_upgrade_points</name>
 			  </req>
 			  <req lvl="10" max_lvl="10">
 			    <name>FM_HULL_CAPSTONES</name>
@@ -18687,12 +18717,12 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<req name="FM_HULL_NOPOINTS" type="all">
 			<name>FM_MODULAR_HULL</name>
 			<req type="any" lvl="0" max_lvl="0">
-				<name>FM_HULL_UPGRADE_POINTS</name>
+				<name>fm_hull_upgrade_points</name>
 			</req>
 		</req>
 		<req name="IS_OVERCHARMED" type="all">
 			<req type="any" lvl="16">
-				<name>FM_HULL_UPGRADE_POINTS</name>
+				<name>fm_hull_upgrade_points</name>
 			</req>
 			<req type="any" lvl="0" max_lvl="0">
 				<name>overcharmed_active</name>

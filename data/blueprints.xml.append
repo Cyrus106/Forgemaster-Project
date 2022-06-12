@@ -8015,6 +8015,29 @@
 				<duration>1</duration>
 				<priority>999999</priority>
 				<whiteList load="LIST_CREW_HUMAN">
+					<human/>
+					<human_medic/>
+					<human_soldier/>
+					<human_angel/>
+					<human_engineer/>
+					<human_technician/>
+					<unique_tully/>
+					<unique_haynes/>
+					<human_mfk/>
+					<human_legion/>
+					<human_legion_pyro/>
+					<unique_jerry/>
+					<unique_jerry_gun/>
+					<unique_jerry_pony/>
+					<unique_jerry_pony_crystal/>
+					<easter_coomer/>
+					<easter_tommy/>
+					<easter_bubby/>
+					<unique_leah/>
+					<unique_leah_mfk/>
+					<unique_vance/>
+					<human_rebel/>
+					<human_rebel_medic/>
 					<unique_leah/>
 					<unique_leah_mfk/>
 					<unique_vance/>
@@ -15534,6 +15557,24 @@
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
 				<whiteList load="LIST_CREW_HUMAN">
+					<human/>
+					<human_medic/>
+					<human_soldier/>
+					<human_angel/>
+					<human_engineer/>
+					<human_technician/>
+					<unique_tully/>
+					<unique_haynes/>
+					<human_mfk/>
+					<human_legion/>
+					<human_legion_pyro/>
+					<unique_jerry/>
+					<unique_jerry_gun/>
+					<unique_jerry_pony/>
+					<unique_jerry_pony_crystal/>
+					<easter_coomer/>
+					<easter_tommy/>
+					<easter_bubby/>
 					<unique_leah/>
 					<unique_leah_mfk/>
 					<unique_vance/>
