@@ -1274,7 +1274,7 @@
 		<droneSlots>2</droneSlots>
 		<weaponList missiles="3" count="4">
 			<weapon name="FM_PHASER_SUFFOCATION" />
-			<weapon name="LASER_BURST_2" />
+			<weapon name="ANCIENT_LASER" />
 		</weaponList>
 		<droneList drones="3" count="2" />
 		<health amount="30" />
@@ -19703,7 +19703,7 @@
 		<rarity>0</rarity>
 		<stackable>false</stackable>
 		<bp>0</bp>
-
+	</augBlueprint>
 
 	<augBlueprint name="TWISTED_KESTREL_GHOST_PURGE">
 		<title>Ghost Purger</title>
