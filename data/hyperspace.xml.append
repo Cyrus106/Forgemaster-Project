@@ -11696,7 +11696,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		
 		<aug name="ANCIENT_MURDERBOTS">
 		<statBoosts>
-			<statBoost name="trueDamageMultiplier">
+			<statBoost name="damageTakenMultiplier">
 				<boostType>MULT</boostType>
 				<amount>1.25</amount>
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
