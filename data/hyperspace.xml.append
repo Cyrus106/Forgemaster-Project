@@ -456,6 +456,7 @@
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<hiddenAug>LOCKED_SLUG_GEL</hiddenAug>
 			<hiddenAug>SHIP_TWISTED_KLEPTOCRACY</hiddenAug>
+			<hiddenAug>TWISTED_SUFFOCATION_ACCELERATOR</hiddenAug>
 			<crewLimit>10</crewLimit>
 			<customReactor maxLevel="35"/>
 			<rooms>
@@ -605,7 +606,7 @@
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED6"><!--kestrel-->
 			<hiddenAug>SHIP_GHOST</hiddenAug>
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
-			<hiddenAug>TWISTED_KESTREL_BOARDING_SPLITTER</hiddenAug>
+			<!--<hiddenAug>TWISTED_KESTREL_BOARDING_SPLITTER</hiddenAug>-->
 			<hiddenAug>LAB_VAGABOND_STABLE</hiddenAug>
 			<crewLimit>57</crewLimit>
 			<customReactor maxLevel="35">
@@ -6422,9 +6423,11 @@
 				<jumpCooldown>full</jumpCooldown>
 				<buttonText>SACRIFICE</buttonText>
 				<tooltip>Ready: Kill all friendly ghosts in the same room, sending copies of them to the enemy ship</tooltip>
-				<cooldownColor r="115" g="125" b="255"/>
+				<cooldownColor r="255" g="149" b="0"/>
 				<req type="player">
 					<inCombat/>
+					<aiDisabled/>
+					<friendlyInRoom/>
 				</req>
 
 				<temporaryEffect>
@@ -6435,15 +6438,238 @@
 				</finishSounds>
 
 				<statBoosts>
+						<statBoost name="deathEffect">
+							<boostType>SET</boostType>
+							<whiteList>
+								<phantom />
+							</whiteList>
+							<shipTarget>CURRENT_ROOM</shipTarget>
+							<crewTarget>ORIGINAL_ALLIES</crewTarget>
+							<priority>999999</priority>
+							<deathEffect>
+								<event>
+									<superBarrage player="true" name="TWISTED_KESTREL_PHANTOM_SPAWN_SURGE" />
+								</event>
+							</deathEffect>
+						</statBoost>
+						<statBoost name="deathEffect">
+							<boostType>SET</boostType>
+							<whiteList>
+								<phantom_alpha />
+							</whiteList>
+							<shipTarget>CURRENT_ROOM</shipTarget>
+							<crewTarget>ORIGINAL_ALLIES</crewTarget>
+							<priority>999999</priority>
+							<deathEffect>
+								<event>
+									<superBarrage player="true" name="TWISTED_KESTREL_PHANTOM_ALPHA_SPAWN_SURGE" />
+								</event>
+							</deathEffect>
+						</statBoost>
+						<statBoost name="deathEffect">
+							<boostType>SET</boostType>
+							<whiteList>
+								<phantom_goul />
+							</whiteList>
+							<shipTarget>CURRENT_ROOM</shipTarget>
+							<crewTarget>ORIGINAL_ALLIES</crewTarget>
+							<priority>999999</priority>
+							<deathEffect>
+								<event>
+									<superBarrage player="true" name="TWISTED_KESTREL_PHANTOM_GOUL_SPAWN_SURGE" />
+								</event>
+							</deathEffect>
+						</statBoost>
+						<statBoost name="deathEffect">
+							<boostType>SET</boostType>
+							<whiteList>
+								<phantom_goul_alpha />
+							</whiteList>
+							<shipTarget>CURRENT_ROOM</shipTarget>
+							<crewTarget>ORIGINAL_ALLIES</crewTarget>
+							<priority>999999</priority>
+							<deathEffect>
+								<event>
+									<superBarrage player="true" name="TWISTED_KESTREL_PHANTOM_GOUL_ALPHA_SPAWN_SURGE" />
+								</event>
+							</deathEffect>
+						</statBoost>
+						<statBoost name="deathEffect">
+							<boostType>SET</boostType>
+							<whiteList>
+								<phantom_mare />
+							</whiteList>
+							<shipTarget>CURRENT_ROOM</shipTarget>
+							<crewTarget>ORIGINAL_ALLIES</crewTarget>
+							<priority>999999</priority>
+							<deathEffect>
+								<event>
+									<superBarrage player="true" name="TWISTED_KESTREL_PHANTOM_MARE_SPAWN_SURGE" />
+								</event>
+							</deathEffect>
+						</statBoost>
+						<statBoost name="deathEffect">
+							<boostType>SET</boostType>
+							<whiteList>
+								<phantom_mare_alpha />
+							</whiteList>
+							<shipTarget>CURRENT_ROOM</shipTarget>
+							<crewTarget>ORIGINAL_ALLIES</crewTarget>
+							<priority>999999</priority>
+							<deathEffect>
+								<event>
+									<superBarrage player="true" name="TWISTED_KESTREL_PHANTOM_MARE_ALPHA_SPAWN_SURGE" />
+								</event>
+							</deathEffect>
+						</statBoost>
+						<statBoost name="deathEffect">
+							<boostType>SET</boostType>
+							<whiteList>
+								<phantom_wraith />
+							</whiteList>
+							<shipTarget>CURRENT_ROOM</shipTarget>
+							<crewTarget>ORIGINAL_ALLIES</crewTarget>
+							<priority>999999</priority>
+							<deathEffect>
+								<event>
+									<superBarrage player="true" name="TWISTED_KESTREL_PHANTOM_WRAITH_SPAWN_SURGE" />
+								</event>
+							</deathEffect>
+						</statBoost>
+						<statBoost name="deathEffect">
+							<boostType>SET</boostType>
+							<whiteList>
+								<phantom_wraith_alpha />
+							</whiteList>
+							<shipTarget>CURRENT_ROOM</shipTarget>
+							<crewTarget>ORIGINAL_ALLIES</crewTarget>
+							<priority>999999</priority>
+							<deathEffect>
+								<event>
+									<superBarrage player="true" name="TWISTED_KESTREL_PHANTOM_WRAITH_ALPHA_SPAWN_SURGE" />
+								</event>
+							</deathEffect>
+						</statBoost>
+						<statBoost name="deathEffect">
+							<boostType>SET</boostType>
+							<whiteList>
+								<unique_dessius />
+							</whiteList>
+							<shipTarget>CURRENT_ROOM</shipTarget>
+							<crewTarget>ORIGINAL_ALLIES</crewTarget>
+							<priority>999999</priority>
+							<deathEffect>
+								<event>
+									<superBarrage player="true" name="TWISTED_KESTREL_UNIQUE_DESSIUS_SPAWN_SURGE" />
+								</event>
+							</deathEffect>
+						</statBoost>
+						<statBoost name="deathEffect">
+							<boostType>SET</boostType>
+							<whiteList>
+								<gbeleanor />
+							</whiteList>
+							<shipTarget>CURRENT_ROOM</shipTarget>
+							<crewTarget>ORIGINAL_ALLIES</crewTarget>
+							<priority>999999</priority>
+							<deathEffect>
+								<event>
+									<superBarrage player="true" name="TWISTED_KESTREL_GBELEANOR_SPAWN_SURGE" />
+								</event>
+							</deathEffect>
+						</statBoost>
+						<statBoost name="deathEffect">
+							<boostType>SET</boostType>
+							<whiteList>
+								<gbgozer />
+							</whiteList>
+							<shipTarget>CURRENT_ROOM</shipTarget>
+							<crewTarget>ORIGINAL_ALLIES</crewTarget>
+							<priority>999999</priority>
+							<deathEffect>
+								<event>
+									<superBarrage player="true" name="TWISTED_KESTREL_GBGOZER_SPAWN_SURGE" />
+								</event>
+							</deathEffect>
+						</statBoost>
+						<statBoost name="deathEffect">
+							<boostType>SET</boostType>
+							<whiteList>
+								<gbpsych />
+							</whiteList>
+							<shipTarget>CURRENT_ROOM</shipTarget>
+							<crewTarget>ORIGINAL_ALLIES</crewTarget>
+							<priority>999999</priority>
+							<deathEffect>
+								<event>
+									<superBarrage player="true" name="TWISTED_KESTREL_GBPSYCH_SPAWN_SURGE" />
+								</event>
+							</deathEffect>
+						</statBoost>
+						<statBoost name="deathEffect">
+							<boostType>SET</boostType>
+							<whiteList>
+								<gbscoleri />
+							</whiteList>
+							<shipTarget>CURRENT_ROOM</shipTarget>
+							<crewTarget>ORIGINAL_ALLIES</crewTarget>
+							<priority>999999</priority>
+							<deathEffect>
+								<event>
+									<superBarrage player="true" name="TWISTED_KESTREL_GBSCOLERI_SPAWN_SURGE" />
+								</event>
+							</deathEffect>
+						</statBoost>
+						<statBoost name="deathEffect">
+							<boostType>SET</boostType>
+							<whiteList>
+								<gbslimer />
+							</whiteList>
+							<shipTarget>CURRENT_ROOM</shipTarget>
+							<crewTarget>ORIGINAL_ALLIES</crewTarget>
+							<priority>999999</priority>
+							<deathEffect>
+								<event>
+									<superBarrage player="true" name="TWISTED_KESTREL_GBSLIMER_SPAWN_SURGE" />
+								</event>
+							</deathEffect>
+						</statBoost>
+						<statBoost name="deathEffect">
+							<boostType>SET</boostType>
+							<whiteList>
+								<gbvinz />
+							</whiteList>
+							<shipTarget>CURRENT_ROOM</shipTarget>
+							<crewTarget>ORIGINAL_ALLIES</crewTarget>
+							<priority>999999</priority>
+							<deathEffect>
+								<event>
+									<superBarrage player="true" name="TWISTED_KESTREL_GBVINZ_SPAWN_SURGE" />
+								</event>
+							</deathEffect>
+						</statBoost>
+						<statBoost name="deathEffect">
+							<boostType>SET</boostType>
+							<whiteList>
+								<gbzuul />
+							</whiteList>
+							<shipTarget>CURRENT_ROOM</shipTarget>
+							<crewTarget>ORIGINAL_ALLIES</crewTarget>
+							<priority>999999</priority>
+							<deathEffect>
+								<event>
+									<superBarrage player="true" name="TWISTED_KESTREL_GBZUUL_SPAWN_SURGE" />
+								</event>
+							</deathEffect>
+						</statBoost>
 					<statBoost name="trueHealAmount">
 						<boostType>SET</boostType>
 						<amount>-99999</amount>
 						<shipTarget>CURRENT_ROOM</shipTarget>
-						<crewTarget>ALLIES</crewTarget>
+						<crewTarget>ORIGINAL_ALLIES</crewTarget>
 						<whiteList load="LIST_CREW_GHOST"/>
 					</statBoost>
 				</statBoosts>
-
 			</temporaryEffect>
 
 
@@ -11487,6 +11713,49 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</statBoosts>
 			<locked/>
 		</aug>
+		
+		<aug name="ANCIENT_MURDERBOTS">
+		<statBoosts>
+			<statBoost name="allDamageTakenMultiplier">
+				<boostType>MULT</boostType>
+				<amount>1.25</amount>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<droneTarget>ALL</droneTarget>
+				<priority>0</priority>
+				<systemPowerDependency>
+					<doors/>
+				</systemPowerDependency>
+				<systemPowerScaling>
+					<noSys>0</noSys>
+					<noPwr>0</noPwr>
+					<onePwr>1</onePwr>
+					<twoPwr>2</twoPwr>
+					<threePwr>3</threePwr>
+					<fourPwr>4</fourPwr>
+				</systemPowerScaling>
+			</statBoost>
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<droneTarget>ALL</droneTarget>
+				<amount>-4</amount>
+				<priority>0</priority>
+				<systemPowerDependency>
+					<doors/>
+				</systemPowerDependency>
+				<systemPowerScaling>
+					<noSys>0</noSys>
+					<noPwr>0</noPwr>
+					<onePwr>1</onePwr>
+					<twoPwr>1.25</twoPwr>
+					<threePwr>1.5</threePwr>
+					<fourPwr>1.75</fourPwr>
+				</systemPowerScaling>
+			</statBoost>
+		</statBoosts>
+    </aug>
 
 		<aug name ="TWISTED_ANCIENT_BOUNTY">
 			<locked/>
@@ -11679,7 +11948,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 	</augments>
 	<augments><!--Twisted Kestrel Augments-->
-		<aug name="TWISTED_KESTREL_BOARDING_SPLITTER">
+	<!--	<aug name="TWISTED_KESTREL_BOARDING_SPLITTER">
 			<statBoosts>
 				<statBoost name="deathEffect">
 					<boostType>SET</boostType>
@@ -11906,7 +12175,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					</deathEffect>
 				</statBoost>
 			</statBoosts>
-		</aug>
+		</aug> -->
 
 		<aug name="TWISTED_KESTREL_GHOST_SUMMON">
 			<locked/>
@@ -11919,7 +12188,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<amount>-999999</amount>
 					<shipTarget>ORIGINAL_OTHER_SHIP</shipTarget>
 					<crewTarget>ORIGINAL_ALLIES</crewTarget>
-					<!--<whiteList load="LIST_CREW_GHOST"/>-->
+					<whiteList load="LIST_CREW_GHOST"/>
 				</statBoost>
 			</statBoosts>
 		</aug>
