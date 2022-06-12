@@ -1065,7 +1065,7 @@
 		<name>The Vulture</name>
 		<desc>In an effort to become truly invulnerable, these Rockmen attempted to make their ship’s cloaking system last indefinitely by redirecting all the energy out of the shield system. They succeeded, although only the cloaking system itself managed to actually disappear, leaving its armor as the only defense.</desc>
 		<systemList>
-			<artillery power="2" room="0" start="true" weapon="BEAM_ADAPT_3_PLAYER_ARTY_CHAIN" img="room_artillery_invis_long" />
+			<artillery power="2" room="0" start="true" weapon="BEAM_ADAPT_3_PLAYER_ARTY_f" img="room_artillery_invis_long" />
 			<artillery power="2" room="3" start="true" weapon="ZOLTAN_DELETER_PLAYER_ARTY_CHAIN" img="room_artillery_invis_long" />
 			<artillery power="2" room="1" start="true" weapon="BOMB_BREACH_1_PLAYER_ARTY_CHAIN" img="room_artillery_invis_long" />
 			<artillery power="2" room="2" start="true" weapon="KERNEL_CHAIN_ELITE_PLAYER_ARTY" img="room_artillery_invis_long" />
@@ -1283,7 +1283,6 @@
 		<crewCount amount="1" class="slug_ranger" />
 		<crewCount amount="1" class="slug_saboteur" />
 		<crewCount amount="1" class="husk_slug_player" />
-		<aug name="TWISTED_SUFFOCATION_ACCELERATOR"/>
 		<aug name="TWISTED_ANCIENT_BOUNTY"/>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED4_2" layout="zmt_player_stealth_suicide" img="zmt_player_stealth_suicide">
@@ -19612,7 +19611,7 @@
 
 	<augBlueprint name="TWISTED_ANCIENT_BOUNTY">
 		<title>Aether Bounty Codex</title>
-		<desc>After finding some Aether tech of their own, these Obelisk-hating slugs decided that there was no better way to use it than to wipe the Multiverse clean of every last Ancient, as well as anybody else stupid enough to get in their way.</desc>
+		<desc>After finding some Aether tech of their own, these Obelisk-hating slugs decided that there was no better way to use it than to wipe the Multiverse clean of every last Ancient, as well as anybody else stupid enough to get in their way. In order to achieve this, they turned their extremely unhealthy smoking habits into a weapon, one that increases asphyxiation damage by 100% per level of Life Support powered. Unfortunately, the Malboro Dispersal Unit also slightly affects your ship too, due to its unhealthy nature, making all crew on your ship take an extra 25% asphyxiation damage.</desc>
 		<cost>560</cost>
 		<rarity>0</rarity>
 		<stackable>false</stackable>
@@ -19697,6 +19696,13 @@
 	</augBlueprint>
 
 
+	<augBlueprint name="ANCIENT_MURDERBOTS">
+		<title>Decrepit Nanomachines</title>
+		<desc>Ruined beyond repair due to eons of neglect, these ancient muderbots now hold only a fraction of the power they used to. Not to say they aren't powerful- they still shred enemy boarders like paper. As long as doors are functional, these 'Murderbots' deal -4hp/s to enemy boarders, and an extra -1hp/s for each powered level of doors. While the nanobots tear apart enemy crew, they also release a strong neuro-toxin that causes them to take an extra 25% damage from all other sources for each level of functional doors.</desc>
+		<cost>160</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+		<bp>0</bp>
 
 
 	<augBlueprint name="TWISTED_KESTREL_GHOST_PURGE">
