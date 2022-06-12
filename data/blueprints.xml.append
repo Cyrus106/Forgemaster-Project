@@ -20125,7 +20125,7 @@
 	<!--capstones-->
   <augBlueprint name="FM_MODULAR_HULL_SALT">
     <title>Saline Hull Body</title>
-    <desc>+100% ion res, non-geological/non-metal crew take 0.5dps</desc>
+    <desc>+100% ion res, organic crew take 0.5dps</desc>
     <cost>150</cost>
     <rarity>0</rarity>
     <stackable>true</stackable>

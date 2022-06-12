@@ -8428,7 +8428,7 @@
 	</event>
 
 	<event name="FM_MODULAR_HULL_CAPSTONE_SALT">
-		<text>Install the Saline Hull Body? [+100% ion resist chance, non-geological/non-metal crew take 0.5dps]</text>
+		<text>Install the Saline Hull Body? [+100% ion resist chance, organic crew take 0.5dps]</text>
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Install the Saline Hull Body.</text>
 			<event>
@@ -8737,7 +8737,7 @@
 		</choice>
 		<!--capstones-->
 		<choice req="FM_MODULAR_HULL_SALT"  blue="false" hidden="true">
-			<text>Saline Hull Body[+100% ion resist chance, most crew take 0.5dps]</text>
+			<text>Saline Hull Body[+100% ion resist chance, organic crew take 0.5dps]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_DUSK"  blue="false" hidden="true">
