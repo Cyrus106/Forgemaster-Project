@@ -11701,6 +11701,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<amount>1.25</amount>
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
+				<droneTarget>ALL</droneTarget>
 				<priority>0</priority>
 				<systemPowerDependency>
 					<doors/>
@@ -11709,9 +11710,9 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<noSys>0</noSys>
 					<noPwr>0</noPwr>
 					<onePwr>1</onePwr>
-					<twoPwr>1.25</twoPwr>
-					<threePwr>1.5</threePwr>
-					<fourPwr>1.75</fourPwr>
+					<twoPwr>2</twoPwr>
+					<threePwr>3</threePwr>
+					<fourPwr>4</fourPwr>
 				</systemPowerScaling>
 			</statBoost>
 			<statBoost name="trueHealAmount">
@@ -11728,13 +11729,12 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<noSys>0</noSys>
 					<noPwr>0</noPwr>
 					<onePwr>1</onePwr>
-					<twoPwr>1.5</twoPwr>
-					<threePwr>1.75</threePwr>
-					<fourPwr>2</fourPwr>
+					<twoPwr>1.25</twoPwr>
+					<threePwr>1.5</threePwr>
+					<fourPwr>1.75</fourPwr>
 				</systemPowerScaling>
 			</statBoost>
 		</statBoosts>
-		<locked/>
     </aug>
 
 		<aug name ="TWISTED_ANCIENT_BOUNTY">
