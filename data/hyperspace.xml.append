@@ -9068,6 +9068,11 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 <!--AUGMENTS -->
 <FTL>  <!--AUGMENTS -->
 	<augments> <!--FORGEMASTER AUGMENTS -->
+
+
+
+
+
 		<aug name="LOCKED_RAMMING_SPEED">
 			<function name="RAMMING_SPEED" value="1" useForReqs="true" warning="false"/>
 			<locked/>
@@ -16091,6 +16096,23 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<systemList>
 						<shields/>
 					</systemList>
+				</statBoost>
+			</statBoosts>
+		</aug>
+
+
+		<!--Purger Augment-->
+
+		<aug name="FM_PURGE_AUG">
+			<statBoosts>
+				<statBoost name="trueHealAmount">
+					<boostType>FLAT</boostType>
+					<amount>-999999</amount>
+					<shipTarget>ENEMY_SHIP</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<whiteList load="LIST_FM_PLSNOEFFECT">
+						<blueprintList load="FM_CRYSTAL_LIST"/>
+					</whiteList>
 				</statBoost>
 			</statBoosts>
 		</aug>

@@ -19156,6 +19156,16 @@
 
 <FTL><!--AUGMENTS -->
 
+
+
+	<augBlueprint name="FM_PURGE_AUG">
+		<title>PURGER</title>
+		<desc>You should never see this.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+
 	<augBlueprint name="RAMMING_SPEED">
 		<title>Ramming Speed</title>
 		<desc>This ship is capable of ramming enemy ships, at great risk to its' hull integrity and engines.</desc>
