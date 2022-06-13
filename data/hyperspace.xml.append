@@ -11648,7 +11648,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 
 				<statBoost name="powerEffect">
 					<boostType>SET</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
-					<shipTarget>ALL</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 					<priority>999999</priority>
 					<blackList load="LIST_FM_PLSNOEFFECT"/>
