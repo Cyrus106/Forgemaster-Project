@@ -6368,10 +6368,11 @@
 				<cooldownColor r="255" g="149" b="0"/>
 				<req type="player">
 					<inCombat/>
-					<aiDisabled/>
 					<friendlyInRoom/>
 				</req>
-
+				<req type="enemy">
+					<aiDisabled/>
+				</req>
 				<temporaryEffect>
 				<duration>0.3</duration>
 				<cooldownColor r="230" g="100" b="175"/>
