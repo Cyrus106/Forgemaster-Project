@@ -1377,10 +1377,8 @@
 <blueprintList name = "LIST_ABC_AUGMENTEDLANIUS_AUGMENTREWARD">
 	<name>ANCIENT_PROTECTANT</name>
 	<name>ANCIENT_DNA</name>
+	<name>DECREPIT_MURDERBOTS</name>
 </blueprintList>
-
-
-
 
 <blueprintList name = "LIST_ABC_OBELISK_DRONEREWARD">
 	<name>ANCIENT_DEFENSE_1</name>
@@ -1414,12 +1412,6 @@
 	<name>ANCIENT_MURDERBOTS</name>
 </blueprintList>
 
-
-
-
-
-
-
 <blueprintList name = "LIST_ABC_ROYALOBELISK_DRONEREWARD">
 	<name>ATOMR_BOARDER</name>
 	<name>ATOMR_BOARDER</name>
@@ -1448,6 +1440,7 @@
 <blueprintList name = "LIST_ABC_ROYALOBELISK_AUGMENTREWARD">
 	<name>WEAPON_PREIGNITE</name>
 	<name>ROYAL_SHIELD</name>
+	<name>ROYAL_MURDERBOTS</name>
 </blueprintList>
 
 
