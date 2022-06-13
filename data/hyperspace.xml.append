@@ -6368,10 +6368,11 @@
 				<cooldownColor r="255" g="149" b="0"/>
 				<req type="player">
 					<inCombat/>
-					<aiDisabled/>
 					<friendlyInRoom/>
 				</req>
-
+				<req type="enemy">
+					<aiDisabled/>
+				</req>
 				<temporaryEffect>
 				<duration>0.3</duration>
 				<cooldownColor r="230" g="100" b="175"/>
@@ -9067,6 +9068,11 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 <!--AUGMENTS -->
 <FTL>  <!--AUGMENTS -->
 	<augments> <!--FORGEMASTER AUGMENTS -->
+
+
+
+
+
 		<aug name="LOCKED_RAMMING_SPEED">
 			<function name="RAMMING_SPEED" value="1" useForReqs="true" warning="false"/>
 			<locked/>
@@ -11559,13 +11565,15 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</statBoosts>
 			<locked/>
 		</aug>
+		
 		<!--
 		<aug name = "TWISTED_SUFFOCATION_ACCELERATOR">
 
 			<locked/>
-		</aug>-->
+		</aug>
+                -->
 
-		<aug name="ANCIENT_MURDERBOTS">
+		<aug name="DECREPIT_MURDERBOTS">
 			<statBoosts>
 				<statBoost name="allDamageTakenMultiplier">
 					<boostType>MULT</boostType>
@@ -11591,7 +11599,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 					<droneTarget>ALL</droneTarget>
-					<amount>-4</amount>
+					<amount>-2</amount>
 					<priority>0</priority>
 					<systemPowerDependency>
 						<doors/>
@@ -11600,13 +11608,129 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 						<noSys>0</noSys>
 						<noPwr>0</noPwr>
 						<onePwr>1</onePwr>
-						<twoPwr>1.25</twoPwr>
-						<threePwr>1.5</threePwr>
-						<fourPwr>1.75</fourPwr>
+						<twoPwr>1.5</twoPwr>
+						<threePwr>2</threePwr>
+						<fourPwr>2.5</fourPwr>
 					</systemPowerScaling>
 				</statBoost>
 			</statBoosts>
     </aug>
+		
+		<aug name="ANCIENT_MURDERBOTS">
+			<statBoosts>
+				<statBoost name="canSuffocate">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+				<statBoost name="allDamageTakenMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.3</amount>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<priority>0</priority>
+					<systemPowerDependency>
+						<doors/>
+					</systemPowerDependency>
+					<systemPowerScaling>
+						<noSys>0</noSys>
+						<noPwr>0</noPwr>
+						<onePwr>1</onePwr>
+						<twoPwr>2</twoPwr>
+						<threePwr>3</threePwr>
+						<fourPwr>4</fourPwr>
+					</systemPowerScaling>
+				</statBoost>
+				<statBoost name="trueHealAmount">
+					<boostType>FLAT</boostType>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<amount>-2</amount>
+					<priority>0</priority>
+					<systemPowerDependency>
+						<doors/>
+					</systemPowerDependency>
+					<systemPowerScaling>
+						<noSys>0</noSys>
+						<noPwr>0</noPwr>
+						<onePwr>1</onePwr>
+						<twoPwr>2</twoPwr>
+						<threePwr>3</threePwr>
+						<fourPwr>4</fourPwr>
+					</systemPowerScaling>
+				</statBoost>
+			</statBoosts>
+    </aug>
+
+		<aug name="ROYAL_MURDERBOTS">
+			<function name="FIRE_EXTINGUISHERS" value="50" useForReqs="true" warning="false"/>
+
+			<statBoosts>
+				<statBoost name="canBurn">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+
+				<statBoost name="fireDamageMultiplier">
+					<boostType>MULT</boostType>
+					<amount>2</amount>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<priority>0</priority>
+					<systemPowerDependency>
+						<doors/>
+					</systemPowerDependency>
+					<systemPowerScaling>
+						<noSys>0</noSys>
+						<noPwr>0</noPwr>
+						<onePwr>1</onePwr>
+						<twoPwr>2</twoPwr>
+						<threePwr>3</threePwr>
+						<fourPwr>4</fourPwr>
+					</systemPowerScaling>
+				</statBoost>
+
+				<statBoost name="powerEffect">
+					<boostType>SET</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<priority>999999</priority>
+					<blackList load="LIST_FM_PLSNOEFFECT"/>
+					<powerEffect>
+						<cooldown>0.1</cooldown>
+						<activateWhenReady enemiesOnly="false">true</activateWhenReady>
+						<jumpCooldown>full</jumpCooldown>
+						<powerSounds>
+							<powerSound>silence</powerSound>
+						</powerSounds>
+						<fireChance>10</fireChance>
+						<friendlyFire>true</friendlyFire>
+						<shipFriendlyFire>true</shipFriendlyFire>
+						<buttonText>BURN</buttonText>
+						<tooltip>Ready: Set a fire in the current room.</tooltip>
+						<cooldownColor r="170" g="206" b="39"/>
+					</powerEffect>
+				</statBoost>
+
+				<statBoost name="moveSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.5</amount>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<priority>0</priority>
+				</statBoost>
+
+			</statBoosts>
+		</aug>
 
 		<aug name ="TWISTED_ANCIENT_BOUNTY">
 			<statBoosts>
@@ -16090,6 +16214,23 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<systemList>
 						<shields/>
 					</systemList>
+				</statBoost>
+			</statBoosts>
+		</aug>
+
+
+		<!--Purger Augment-->
+
+		<aug name="FM_PURGE_AUG">
+			<statBoosts>
+				<statBoost name="trueHealAmount">
+					<boostType>FLAT</boostType>
+					<amount>-999999</amount>
+					<shipTarget>ENEMY_SHIP</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<whiteList load="LIST_FM_PLSNOEFFECT">
+						<blueprintList load="FM_CRYSTAL_LIST"/>
+					</whiteList>
 				</statBoost>
 			</statBoosts>
 		</aug>

@@ -327,7 +327,7 @@
 	</event>
 
 	<event name="FM_CREWKILL_TRACKER_EVENT">
-		<loadEventList seeded="false" default="TRUENOTHING">
+		<loadEventList seeded="false" default="FM_PURGE_1"><!--Purge event will only trigger if the others do not, change later-->
 			<event name="TWISTED_KESTREL_KILL" req="gbgozer_player"/>
 			<event name="TWISTED_ROCK_KILL" req="TWISTED_HULL_ARM"/>
 		</loadEventList>
@@ -1125,7 +1125,23 @@ Only respects stronger computers
 		<hiddenAug>SYSTEM_UNBREAKING</hiddenAug>
 		<hiddenAug>HULL_UNBREAKING</hiddenAug>
 		<hiddenAug>FTL_JUMPER_GOOD</hiddenAug>
-		<crewMember amount="8" class="unique_jerry_pony_crystal">Skill Issue</crewMember>
+		<crewMember amount="5" class="unique_jerry_pony_crystal">Skill Issue</crewMember>
 		<weapon name="FM_GATLING_ANCIENT"/>
 	</event>
+
+
+
+	<event name="FM_PURGE_1">
+		<hiddenAug>FM_PURGE_AUG</hiddenAug>
+		<triggeredEvent event="FM_PURGE_2" loops="1" time="0.1"/>
+	</event>
+
+
+	<event name="FM_PURGE_2">
+		<removeItem>HIDDEN FM_PURGE_AUG</removeItem>
+	</event>
+
+
+
+
 </FTL>
