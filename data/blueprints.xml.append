@@ -19677,7 +19677,7 @@
 		<stackable>false</stackable>
 		<bp>0</bp>
 	</augBlueprint>
-	
+
 	<augBlueprint name="ANCIENT_MURDERBOTS">
 		<title>Ruinous Nanomachines</title>
 		<desc>Normally, after such a long time these nanomachines would have long since broken-down, but thanks to it's previous owners cruelty it has been kept maintained and in use for a very long time. For each powered level of doors, enemy boarders will take -2hp/s, and take 30% extra damage from all sources. Alongside this, all anaerobic boarders will have their suffocation immunity removed.</desc>
@@ -19689,13 +19689,22 @@
 
 	<augBlueprint name="ROYAL_MURDERBOTS">
 		<title>Royal Nanomachines</title>
-		<desc>Despite countless millennia of dormancy, these nanomachines have maintained themselves perfectly. They will incinerate crew aboard your ship rapidly, and will extinguish fires nearly-instantly.</desc>
+		<desc>Despite countless millennia of dormancy, these nanomachines have maintained themselves perfectly. They will incinerate crew aboard your ship rapidly, and will extinguish fires nearly-instantly. Additionally, all friendly crew aboard your ship are granted full fire immunity.</desc>
 		<cost>360</cost>
 		<rarity>0</rarity>
 		<stackable>false</stackable>
 		<bp>0</bp>
 	</augBlueprint>
 
+
+<augBlueprint name="HYPER_ADVANCED_VENTILATION">
+	<title>Hyper-Advanced-Ventilation</title>
+	<desc>Does exactly what it says on the tin.</desc>
+	<cost>120</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<bp>0</bp>
+</augBlueprint>
 
 	<augBlueprint name="TWISTED_MANTIS_UPGRADER">
 		<title>Queen's Tea</title>

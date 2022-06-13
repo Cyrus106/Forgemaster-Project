@@ -11565,7 +11565,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</statBoosts>
 			<locked/>
 		</aug>
-		
+
 		<!--
 		<aug name = "TWISTED_SUFFOCATION_ACCELERATOR">
 
@@ -11615,7 +11615,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 			</statBoosts>
     </aug>
-		
+
 		<aug name="ANCIENT_MURDERBOTS">
 			<statBoosts>
 				<statBoost name="canSuffocate">
@@ -11678,9 +11678,27 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<priority>999999</priority>
 				</statBoost>
 
+				<!--Sorry Link, I can't GIVE fire damage. Come back when you're a little, mmmm, more flammable!-->
+				<statBoost name="canBurn">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+
+				<statBoost name="fireDamageMultiplier">
+					<boostType>SET</boostType>
+					<amount>0</amount>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+
+
 				<statBoost name="fireDamageMultiplier">
 					<boostType>MULT</boostType>
-					<amount>2</amount>
+					<amount>3</amount>
 					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 					<droneTarget>ALL</droneTarget>
@@ -11731,6 +11749,41 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 
 			</statBoosts>
 		</aug>
+
+		<aug name="HYPER_ADVANCED_VENTILATION">
+			<statBoosts>
+
+				<statBoost name="canSuffocate">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+
+				<statBoost name="oxygenChangeSpeed">
+					<boostType>SET</boostType>
+					<amount>-99</amount>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+
+				<statBoost name="oxygenChangeSpeed">
+					<boostType>SET</boostType>
+					<amount>999</amount>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+
+
+
+			</statBoosts>
+    </aug>
+
+
+
 
 		<aug name ="TWISTED_ANCIENT_BOUNTY">
 			<statBoosts>
