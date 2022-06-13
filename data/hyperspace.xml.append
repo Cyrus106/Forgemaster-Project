@@ -11614,6 +11614,72 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</statBoosts>
     </aug>
 
+		<aug name="ROYAL_MURDERBOTS">
+			<function name="FIRE_EXTINGUISHERS" value="50" useForReqs="true" warning="false"/>
+
+			<statBoosts>
+				<statBoost name="canBurn">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+
+				<statBoost name="fireDamageMultiplier">
+					<boostType>MULT</boostType>
+					<amount>2</amount>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<priority>0</priority>
+					<systemPowerDependency>
+						<doors/>
+					</systemPowerDependency>
+					<systemPowerScaling>
+						<noSys>0</noSys>
+						<noPwr>0</noPwr>
+						<onePwr>1</onePwr>
+						<twoPwr>2</twoPwr>
+						<threePwr>3</threePwr>
+						<fourPwr>4</fourPwr>
+					</systemPowerScaling>
+				</statBoost>
+
+				<statBoost name="powerEffect">
+					<boostType>SET</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<priority>999999</priority>
+					<blackList load="LIST_FM_PLSNOEFFECT"/>
+					<powerEffect>
+						<cooldown>0.1</cooldown>
+						<activateWhenReady enemiesOnly="false">true</activateWhenReady>
+						<jumpCooldown>full</jumpCooldown>
+						<powerSounds>
+							<powerSound>silence</powerSound>
+						</powerSounds>
+						<fireChance>10</fireChance>
+						<friendlyFire>true</friendlyFire>
+						<shipFriendlyFire>true</shipFriendlyFire>
+						<buttonText>BURN</buttonText>
+						<tooltip>Ready: Set a fire in the current room.</tooltip>
+						<cooldownColor r="170" g="206" b="39"/>
+					</powerEffect>
+				</statBoost>
+
+				<statBoost name="moveSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.5</amount>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<priority>0</priority>
+				</statBoost>
+
+			</statBoosts>
+		</aug>
+
 		<aug name ="TWISTED_ANCIENT_BOUNTY">
 			<statBoosts>
 				<statBoost name="suffocationModifier">

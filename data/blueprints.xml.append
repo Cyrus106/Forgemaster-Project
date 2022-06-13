@@ -19669,6 +19669,25 @@
 		<bp>0</bp>
 	</augBlueprint>
 
+	<augBlueprint name="ANCIENT_MURDERBOTS">
+		<title>Decrepit Nanomachines</title>
+		<desc>Ruined beyond repair due to eons of neglect, these ancient muderbots now hold only a fraction of the power they used to. Not to say they aren't powerful- they still shred enemy boarders like paper. As long as doors are functional, these 'Murderbots' deal -4hp/s to enemy boarders, and an extra -1hp/s for each powered level of doors. While the nanobots tear apart enemy crew, they also release a strong neuro-toxin that causes them to take an extra 25% damage from all other sources for each level of functional doors.</desc>
+		<cost>160</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+		<bp>0</bp>
+	</augBlueprint>
+
+	<augBlueprint name="ROYAL_MURDERBOTS">
+		<title>Royal Nanomachines</title>
+		<desc>Despite countless millennia of dormancy, these nanomachines have maintained themselves perfectly. They will incinerate crew aboard your ship rapidly, and will extinguish fires nearly-instantly.</desc>
+		<cost>360</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+		<bp>0</bp>
+	</augBlueprint>
+
+
 	<augBlueprint name="TWISTED_MANTIS_UPGRADER">
 		<title>Queen's Tea</title>
 		<desc>The preferred beverage of an immortal monarch who rules over the distant cluster of Britannia. Each level of the Life Support system that is powered provides a 15% combat damage boost to all allied crew, but also reduces repair speed by 25%. Can be used to upgrade/convert your mantis crew during storage checks, although her Majesty demands a tax for her power...</desc>
@@ -19747,14 +19766,7 @@
 	</augBlueprint>
 
 
-	<augBlueprint name="ANCIENT_MURDERBOTS">
-		<title>Decrepit Nanomachines</title>
-		<desc>Ruined beyond repair due to eons of neglect, these ancient muderbots now hold only a fraction of the power they used to. Not to say they aren't powerful- they still shred enemy boarders like paper. As long as doors are functional, these 'Murderbots' deal -4hp/s to enemy boarders, and an extra -1hp/s for each powered level of doors. While the nanobots tear apart enemy crew, they also release a strong neuro-toxin that causes them to take an extra 25% damage from all other sources for each level of functional doors.</desc>
-		<cost>160</cost>
-		<rarity>0</rarity>
-		<stackable>false</stackable>
-		<bp>0</bp>
-	</augBlueprint>
+
 
 	<augBlueprint name="TWISTED_KESTREL_GHOST_PURGE">
 		<title>Ghost Purger</title>
