@@ -11565,13 +11565,15 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</statBoosts>
 			<locked/>
 		</aug>
+		
 		<!--
 		<aug name = "TWISTED_SUFFOCATION_ACCELERATOR">
 
 			<locked/>
-		</aug>-->
+		</aug>
+                -->
 
-		<aug name="ANCIENT_MURDERBOTS">
+		<aug name="DECREPIT_MURDERBOTS">
 			<statBoosts>
 				<statBoost name="allDamageTakenMultiplier">
 					<boostType>MULT</boostType>
@@ -11597,7 +11599,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 					<droneTarget>ALL</droneTarget>
-					<amount>-4</amount>
+					<amount>-2</amount>
 					<priority>0</priority>
 					<systemPowerDependency>
 						<doors/>
@@ -11606,9 +11608,59 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 						<noSys>0</noSys>
 						<noPwr>0</noPwr>
 						<onePwr>1</onePwr>
-						<twoPwr>1.25</twoPwr>
-						<threePwr>1.5</threePwr>
-						<fourPwr>1.75</fourPwr>
+						<twoPwr>1.5</twoPwr>
+						<threePwr>2</threePwr>
+						<fourPwr>2.5</fourPwr>
+					</systemPowerScaling>
+				</statBoost>
+			</statBoosts>
+    </aug>
+		
+		<aug name="ANCIENT_MURDERBOTS">
+			<statBoosts>
+				<statBoost name="canSuffocate">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+				<statBoost name="allDamageTakenMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.3</amount>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<priority>0</priority>
+					<systemPowerDependency>
+						<doors/>
+					</systemPowerDependency>
+					<systemPowerScaling>
+						<noSys>0</noSys>
+						<noPwr>0</noPwr>
+						<onePwr>1</onePwr>
+						<twoPwr>2</twoPwr>
+						<threePwr>3</threePwr>
+						<fourPwr>4</fourPwr>
+					</systemPowerScaling>
+				</statBoost>
+				<statBoost name="trueHealAmount">
+					<boostType>FLAT</boostType>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<amount>-2</amount>
+					<priority>0</priority>
+					<systemPowerDependency>
+						<doors/>
+					</systemPowerDependency>
+					<systemPowerScaling>
+						<noSys>0</noSys>
+						<noPwr>0</noPwr>
+						<onePwr>1</onePwr>
+						<twoPwr>2</twoPwr>
+						<threePwr>3</threePwr>
+						<fourPwr>4</fourPwr>
 					</systemPowerScaling>
 				</statBoost>
 			</statBoosts>
