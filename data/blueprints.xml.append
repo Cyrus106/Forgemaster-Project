@@ -19669,9 +19669,18 @@
 		<bp>0</bp>
 	</augBlueprint>
 
-	<augBlueprint name="ANCIENT_MURDERBOTS">
+	<augBlueprint name="DECREPIT_MURDERBOTS">
 		<title>Decrepit Nanomachines</title>
-		<desc>Ruined beyond repair due to eons of neglect, these ancient muderbots now hold only a fraction of the power they used to. Not to say they aren't powerful- they still shred enemy boarders like paper. As long as doors are functional, these 'Murderbots' deal -4hp/s to enemy boarders, and an extra -1hp/s for each powered level of doors. While the nanobots tear apart enemy crew, they also release a strong neuro-toxin that causes them to take an extra 25% damage from all other sources for each level of functional doors.</desc>
+		<desc>Ruined beyond repair due to eons of neglect, these ancient murderbots now hold only a fraction of the power they used to. Not to say they aren't powerful- they still shred enemy boarders like paper. As long as doors are functional, these 'Murderbots' deal -2hp/s to enemy boarders, and an extra -1hp/s for each powered level of doors. While the nanobots tear apart enemy crew, they also release a neuro-toxin that causes them to take an extra 25% damage from all other sources for each level of functional doors.</desc>
+		<cost>70</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+		<bp>0</bp>
+	</augBlueprint>
+	
+	<augBlueprint name="ANCIENT_MURDERBOTS">
+		<title>Ruinous Nanomachines</title>
+		<desc>Normally, after such a long time these nanomachines would have long since broken-down, but thanks to it's previous owners cruelty it has been kept maintained and in use for a very long time. For each powered level of doors, enemy boarders will take -2hp/s, and take 30% extra damage from all sources. Alongside this, all anaerobic boarders will have their suffocation immunity removed.</desc>
 		<cost>160</cost>
 		<rarity>0</rarity>
 		<stackable>false</stackable>
