@@ -1679,7 +1679,7 @@
 
 
 	<shipBlueprint name="PLAYER_SHIP_TWISTED6" layout="zmt_player_kestrel_suicide" img="zmt_player_kestrel_suicide">
-		<class>Twisted Kestrel Renegade</class>
+		<class>Twisted Renegade Kestrel</class>
 		<name>The Keymaster</name>
 		<desc>This odd Kestrel is looking for the Gatekeeper, and will stop at nothing to find them.</desc>
 		<systemList>
@@ -1977,7 +1977,7 @@
 		<aug name="COMBAT_REPAIR" />
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED7_2" layout="zmt_player_tuco_suicide" img="zmt_player_tuco_suicide">
-		<class>Twisted Tuco Renegade</class>
+		<class>Twisted Renegade Tuco</class>
 		<name>The Tarocchi</name>
 		<desc>This ship is equipped with an odd deck of tarot cards. Every time a card is drawn, something will happen. You can't seem to remove the cards from the ship, no matter how hard you try...</desc>
 		<systemList>
