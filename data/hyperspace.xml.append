@@ -3793,6 +3793,7 @@
 		<event name="SPAWNFM_PHONECALL">
 			<removeItem>HIDDEN FORGEMASTER_PHONE_CALL_CONFIRM</removeItem>
 		</event>
+		<variable name="flak_calc" op="set" val="0"/><!--Persistant Flak Surge Calculation Variable-->
 		<variable name="forgemaster_spawntriggered" op="set" val="0"/> <!--counter for how often the FMspawner was activated, if not 0 the spawner will not work-->
 		<variable name="rep_forgemaster" op="set" val="0"/> <!--forgemaster Notoriety-->
 		<variabme name="fm_obtainedtwin" op="set" val="0"/> <!--did you get a twin from gunbom?-->
