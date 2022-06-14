@@ -109,1440 +109,1192 @@
 			</eventButton>
 		</event>
 		<!--Do not touch the following comment, it is a marker string for a script-->
-		<!--MSTLS-1-->
+		<!--START_OF_FLAK_INSERTION-->
 
 
 	<event name="TWISTED_LANIUS_SURGE">
-		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_1_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_1_ENEMY_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_2_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_2_PLAYER_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_3_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_4_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_CHARGE_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_CHAIN_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_INSTANT_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_FIRE_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_ION_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_PLAYER_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_3_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_LOOT_LEECH_1_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_LOOT_AUG_1_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_ION_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_TOXIC_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_ARTILLERY_FLAK_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_ION_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_TEST_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_CURSED_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_INVIS_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_ENEMY_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_ENEMY_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_ENEMY_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_ENEMY_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_ENEMY_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_ENEMY_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_ENEMY_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_ENEMY_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_ENEMY_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_ENEMY_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_ENEMY_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_SHADOW_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_OMEGA_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_GOLD_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_LEAD_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_BOMB_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_UNSTABLE_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_BATTERY_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_HELL_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_TC_RAPTORS_OWN_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_ENEMY_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_2_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_3_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_4_LOADEVENTLIST</queueEvent>
-		<queueEvent>TWISTED_LANIUS_SURGE_EE_SHOTGUN_FROST_LOADEVENTLIST</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_1_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_1_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_2_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_2_PLAYER_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_3_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_4_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_CHARGE_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_CHAIN_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_INSTANT_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_FIRE_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_ION_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_PLAYER_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_3_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_LOOT_LEECH_1_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_LOOT_AUG_1_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_ION_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_TOXIC_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_ARTILLERY_FLAK_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_ION_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_TEST_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_CURSED_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_INVIS_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_SHADOW_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_OMEGA_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_GOLD_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_LEAD_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_BOMB_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_UNSTABLE_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_BATTERY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_HELL_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_RAPTORS_OWN_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_2_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_3_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_4_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_EE_SHOTGUN_FROST_INITIATE</queueEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_1_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_1" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_1_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_1_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="SHOTGUN_1" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_1_SURGE" />
-			</event>
-			<event req="SHOTGUN_1" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_1_SURGE" />
-			</event>
-			<event req="SHOTGUN_1" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_1_SURGE" />
-			</event>
-			<event req="SHOTGUN_1" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_1_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_1_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_1_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_1_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_1_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_1_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_1_ENEMY_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_1_ENEMY_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="SHOTGUN_1_ENEMY" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_1_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_1_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_1_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_1_ENEMY_SURGE" />
-			</event>
-			<event req="SHOTGUN_1_ENEMY" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_1_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_1_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_1_ENEMY_SURGE" />
-			</event>
-			<event req="SHOTGUN_1_ENEMY" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_1_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_1_ENEMY_SURGE" />
-			</event>
-			<event req="SHOTGUN_1_ENEMY" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_1_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_1_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_1_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_1_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_2_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_2" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_2_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_2_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="SHOTGUN_2" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_2_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_2_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_2_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_2_SURGE" />
-			</event>
-			<event req="SHOTGUN_2" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_2_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_2_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_2_SURGE" />
-			</event>
-			<event req="SHOTGUN_2" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_2_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_2_SURGE" />
-			</event>
-			<event req="SHOTGUN_2" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_2_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_2_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_2_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_2_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_2_PLAYER_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_2_PLAYER" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_2_PLAYER_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_2_PLAYER_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="SHOTGUN_2_PLAYER" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_2_PLAYER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_2_PLAYER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_2_PLAYER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_2_PLAYER_SURGE" />
-			</event>
-			<event req="SHOTGUN_2_PLAYER" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_2_PLAYER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_2_PLAYER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_2_PLAYER_SURGE" />
-			</event>
-			<event req="SHOTGUN_2_PLAYER" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_2_PLAYER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_2_PLAYER_SURGE" />
-			</event>
-			<event req="SHOTGUN_2_PLAYER" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_2_PLAYER_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_2_PLAYER_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_2_PLAYER_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_2_PLAYER_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_3_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_3" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_3_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_3_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="SHOTGUN_3" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_3_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_3_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_3_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_3_SURGE" />
-			</event>
-			<event req="SHOTGUN_3" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_3_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_3_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_3_SURGE" />
-			</event>
-			<event req="SHOTGUN_3" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_3_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_3_SURGE" />
-			</event>
-			<event req="SHOTGUN_3" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_3_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_3_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_3_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_3_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_4_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_4" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_4_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_4_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="SHOTGUN_4" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_4_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_4_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_4_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_4_SURGE" />
-			</event>
-			<event req="SHOTGUN_4" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_4_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_4_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_4_SURGE" />
-			</event>
-			<event req="SHOTGUN_4" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_4_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_4_SURGE" />
-			</event>
-			<event req="SHOTGUN_4" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_4_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_4_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_4_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_4_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_CHARGE_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_CHARGE" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_CHARGE_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_CHARGE_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="SHOTGUN_CHARGE" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_CHARGE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_CHARGE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_CHARGE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_CHARGE_SURGE" />
-			</event>
-			<event req="SHOTGUN_CHARGE" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_CHARGE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_CHARGE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_CHARGE_SURGE" />
-			</event>
-			<event req="SHOTGUN_CHARGE" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_CHARGE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_CHARGE_SURGE" />
-			</event>
-			<event req="SHOTGUN_CHARGE" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_CHARGE_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_CHARGE_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_CHARGE_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_CHARGE_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_CHAIN_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_CHAIN" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_CHAIN_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_CHAIN_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="SHOTGUN_CHAIN" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_CHAIN_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_CHAIN_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_CHAIN_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_CHAIN_SURGE" />
-			</event>
-			<event req="SHOTGUN_CHAIN" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_CHAIN_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_CHAIN_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_CHAIN_SURGE" />
-			</event>
-			<event req="SHOTGUN_CHAIN" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_CHAIN_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_CHAIN_SURGE" />
-			</event>
-			<event req="SHOTGUN_CHAIN" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_CHAIN_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_CHAIN_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_CHAIN_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_CHAIN_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_INSTANT_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_INSTANT" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_INSTANT_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_INSTANT_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="SHOTGUN_INSTANT" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_INSTANT_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_INSTANT_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_INSTANT_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_INSTANT_SURGE" />
-			</event>
-			<event req="SHOTGUN_INSTANT" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_INSTANT_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_INSTANT_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_INSTANT_SURGE" />
-			</event>
-			<event req="SHOTGUN_INSTANT" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_INSTANT_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_INSTANT_SURGE" />
-			</event>
-			<event req="SHOTGUN_INSTANT" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_INSTANT_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_INSTANT_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_INSTANT_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_INSTANT_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_FIRE_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_FIRE" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_FIRE_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_FIRE_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="SHOTGUN_FIRE" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_FIRE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_FIRE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_FIRE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_FIRE_SURGE" />
-			</event>
-			<event req="SHOTGUN_FIRE" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_FIRE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_FIRE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_FIRE_SURGE" />
-			</event>
-			<event req="SHOTGUN_FIRE" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_FIRE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_FIRE_SURGE" />
-			</event>
-			<event req="SHOTGUN_FIRE" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_FIRE_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_FIRE_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_FIRE_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_FIRE_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_ION_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_ION" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_ION_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_ION_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="SHOTGUN_ION" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_ION_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_ION_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_ION_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_ION_SURGE" />
-			</event>
-			<event req="SHOTGUN_ION" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_ION_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_ION_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_ION_SURGE" />
-			</event>
-			<event req="SHOTGUN_ION" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_ION_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_ION_SURGE" />
-			</event>
-			<event req="SHOTGUN_ION" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_ION_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_ION_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_ION_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_ION_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_TOXIC" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="SHOTGUN_TOXIC" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOXIC_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOXIC_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOXIC_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOXIC_SURGE" />
-			</event>
-			<event req="SHOTGUN_TOXIC" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOXIC_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOXIC_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOXIC_SURGE" />
-			</event>
-			<event req="SHOTGUN_TOXIC" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOXIC_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOXIC_SURGE" />
-			</event>
-			<event req="SHOTGUN_TOXIC" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOXIC_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_PLAYER_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_TOXIC_PLAYER" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_PLAYER_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_PLAYER_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="SHOTGUN_TOXIC_PLAYER" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOXIC_PLAYER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOXIC_PLAYER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOXIC_PLAYER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOXIC_PLAYER_SURGE" />
-			</event>
-			<event req="SHOTGUN_TOXIC_PLAYER" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOXIC_PLAYER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOXIC_PLAYER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOXIC_PLAYER_SURGE" />
-			</event>
-			<event req="SHOTGUN_TOXIC_PLAYER" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOXIC_PLAYER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOXIC_PLAYER_SURGE" />
-			</event>
-			<event req="SHOTGUN_TOXIC_PLAYER" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOXIC_PLAYER_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_PLAYER_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_PLAYER_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_PLAYER_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_3_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_GOLD_3" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_3_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_3_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="SHOTGUN_GOLD_3" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_GOLD_3_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_GOLD_3_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_GOLD_3_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_GOLD_3_SURGE" />
-			</event>
-			<event req="SHOTGUN_GOLD_3" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_GOLD_3_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_GOLD_3_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_GOLD_3_SURGE" />
-			</event>
-			<event req="SHOTGUN_GOLD_3" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_GOLD_3_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_GOLD_3_SURGE" />
-			</event>
-			<event req="SHOTGUN_GOLD_3" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_GOLD_3_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_3_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_3_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_3_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_GOLD" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="SHOTGUN_GOLD" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_GOLD_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_GOLD_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_GOLD_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_GOLD_SURGE" />
-			</event>
-			<event req="SHOTGUN_GOLD" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_GOLD_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_GOLD_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_GOLD_SURGE" />
-			</event>
-			<event req="SHOTGUN_GOLD" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_GOLD_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_GOLD_SURGE" />
-			</event>
-			<event req="SHOTGUN_GOLD" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_GOLD_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_LOOT_LEECH_1_INITIATE">
+		<variable name="flak_calc" op="set" var="LOOT_LEECH_1" />
+		<loadEvent>TWISTED_LANIUS_SURGE_LOOT_LEECH_1_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_LOOT_LEECH_1_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="LOOT_LEECH_1" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_LOOT_LEECH_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_LOOT_LEECH_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_LOOT_LEECH_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_LOOT_LEECH_1_SURGE" />
-			</event>
-			<event req="LOOT_LEECH_1" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_LOOT_LEECH_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_LOOT_LEECH_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_LOOT_LEECH_1_SURGE" />
-			</event>
-			<event req="LOOT_LEECH_1" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_LOOT_LEECH_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_LOOT_LEECH_1_SURGE" />
-			</event>
-			<event req="LOOT_LEECH_1" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_LOOT_LEECH_1_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_LOOT_LEECH_1_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_LOOT_LEECH_1_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_LOOT_LEECH_1_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_LOOT_AUG_1_INITIATE">
+		<variable name="flak_calc" op="set" var="LOOT_AUG_1" />
+		<loadEvent>TWISTED_LANIUS_SURGE_LOOT_AUG_1_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_LOOT_AUG_1_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="LOOT_AUG_1" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_LOOT_AUG_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_LOOT_AUG_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_LOOT_AUG_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_LOOT_AUG_1_SURGE" />
-			</event>
-			<event req="LOOT_AUG_1" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_LOOT_AUG_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_LOOT_AUG_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_LOOT_AUG_1_SURGE" />
-			</event>
-			<event req="LOOT_AUG_1" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_LOOT_AUG_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_LOOT_AUG_1_SURGE" />
-			</event>
-			<event req="LOOT_AUG_1" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_LOOT_AUG_1_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_LOOT_AUG_1_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_LOOT_AUG_1_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_LOOT_AUG_1_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_TOGGLE_FIRE" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="SHOTGUN_TOGGLE_FIRE" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_SURGE" />
-			</event>
-			<event req="SHOTGUN_TOGGLE_FIRE" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_SURGE" />
-			</event>
-			<event req="SHOTGUN_TOGGLE_FIRE" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_SURGE" />
-			</event>
-			<event req="SHOTGUN_TOGGLE_FIRE" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_ION_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_TOGGLE_ION" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_ION_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_ION_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="SHOTGUN_TOGGLE_ION" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_ION_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_ION_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_ION_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_ION_SURGE" />
-			</event>
-			<event req="SHOTGUN_TOGGLE_ION" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_ION_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_ION_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_ION_SURGE" />
-			</event>
-			<event req="SHOTGUN_TOGGLE_ION" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_ION_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_ION_SURGE" />
-			</event>
-			<event req="SHOTGUN_TOGGLE_ION" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_ION_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_ION_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_ION_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_ION_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_TOXIC_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_TOGGLE_TOXIC" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_TOXIC_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_TOXIC_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="SHOTGUN_TOGGLE_TOXIC" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_TOXIC_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_TOXIC_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_TOXIC_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_TOXIC_SURGE" />
-			</event>
-			<event req="SHOTGUN_TOGGLE_TOXIC" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_TOXIC_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_TOXIC_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_TOXIC_SURGE" />
-			</event>
-			<event req="SHOTGUN_TOGGLE_TOXIC" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_TOXIC_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_TOXIC_SURGE" />
-			</event>
-			<event req="SHOTGUN_TOGGLE_TOXIC" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_TOXIC_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_TOXIC_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_TOXIC_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_TOXIC_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_ARTILLERY_FLAK_INITIATE">
+		<variable name="flak_calc" op="set" var="ARTILLERY_FLAK" />
+		<loadEvent>TWISTED_LANIUS_SURGE_ARTILLERY_FLAK_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_ARTILLERY_FLAK_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="ARTILLERY_FLAK" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_ARTILLERY_FLAK_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_ARTILLERY_FLAK_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_ARTILLERY_FLAK_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_ARTILLERY_FLAK_SURGE" />
-			</event>
-			<event req="ARTILLERY_FLAK" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_ARTILLERY_FLAK_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_ARTILLERY_FLAK_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_ARTILLERY_FLAK_SURGE" />
-			</event>
-			<event req="ARTILLERY_FLAK" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_ARTILLERY_FLAK_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_ARTILLERY_FLAK_SURGE" />
-			</event>
-			<event req="ARTILLERY_FLAK" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_ARTILLERY_FLAK_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_ARTILLERY_FLAK_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_ARTILLERY_FLAK_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_ARTILLERY_FLAK_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_ION_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_ENERGY_ION" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_ION_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_ION_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_ENERGY_ION" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_ENERGY_ION_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_ENERGY_ION_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_ENERGY_ION_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_ENERGY_ION_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_ENERGY_ION" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_ENERGY_ION_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_ENERGY_ION_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_ENERGY_ION_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_ENERGY_ION" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_ENERGY_ION_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_ENERGY_ION_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_ENERGY_ION" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_ENERGY_ION_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_ION_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_ION_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_ION_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_TEST_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_ENERGY_TEST" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_TEST_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_TEST_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_ENERGY_TEST" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_ENERGY_TEST_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_ENERGY_TEST_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_ENERGY_TEST_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_ENERGY_TEST_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_ENERGY_TEST" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_ENERGY_TEST_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_ENERGY_TEST_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_ENERGY_TEST_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_ENERGY_TEST" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_ENERGY_TEST_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_ENERGY_TEST_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_ENERGY_TEST" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_ENERGY_TEST_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_TEST_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_TEST_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_TEST_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_AETHER" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_AETHER" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_AETHER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_AETHER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_AETHER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_AETHER_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_AETHER" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_AETHER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_AETHER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_AETHER_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_AETHER" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_AETHER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_AETHER_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_AETHER" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_AETHER_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_BRONZE" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_BRONZE" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_BRONZE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_BRONZE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_BRONZE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_BRONZE_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_BRONZE" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_BRONZE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_BRONZE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_BRONZE_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_BRONZE" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_BRONZE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_BRONZE_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_BRONZE" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_BRONZE_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_INDIUM" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_INDIUM" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_INDIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_INDIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_INDIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_INDIUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_INDIUM" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_INDIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_INDIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_INDIUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_INDIUM" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_INDIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_INDIUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_INDIUM" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_INDIUM_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_RHENIUM" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_RHENIUM" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_RHENIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_RHENIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_RHENIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_RHENIUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_RHENIUM" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_RHENIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_RHENIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_RHENIUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_RHENIUM" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_RHENIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_RHENIUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_RHENIUM" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_RHENIUM_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_SILVER" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_SILVER" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_SILVER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_SILVER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_SILVER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_SILVER_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_SILVER" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_SILVER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_SILVER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_SILVER_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_SILVER" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_SILVER_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_SILVER_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_SILVER" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_SILVER_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_PALLADIUM" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_PALLADIUM" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PALLADIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PALLADIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PALLADIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PALLADIUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_PALLADIUM" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PALLADIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PALLADIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PALLADIUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_PALLADIUM" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PALLADIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PALLADIUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_PALLADIUM" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PALLADIUM_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_IRIDIUM" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_IRIDIUM" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_IRIDIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_IRIDIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_IRIDIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_IRIDIUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_IRIDIUM" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_IRIDIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_IRIDIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_IRIDIUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_IRIDIUM" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_IRIDIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_IRIDIUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_IRIDIUM" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_IRIDIUM_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_PLATINUM" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_PLATINUM" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PLATINUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PLATINUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PLATINUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PLATINUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_PLATINUM" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PLATINUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PLATINUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PLATINUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_PLATINUM" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PLATINUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PLATINUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_PLATINUM" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PLATINUM_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_OSMIUM" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_OSMIUM" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_OSMIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_OSMIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_OSMIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_OSMIUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_OSMIUM" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_OSMIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_OSMIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_OSMIUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_OSMIUM" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_OSMIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_OSMIUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_OSMIUM" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_OSMIUM_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_NOBELIUM" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_NOBELIUM" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_NOBELIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_NOBELIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_NOBELIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_NOBELIUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_NOBELIUM" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_NOBELIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_NOBELIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_NOBELIUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_NOBELIUM" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_NOBELIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_NOBELIUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_NOBELIUM" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_NOBELIUM_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_HASSIUM" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_HASSIUM" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_HASSIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_HASSIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_HASSIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_HASSIUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_HASSIUM" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_HASSIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_HASSIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_HASSIUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_HASSIUM" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_HASSIUM_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_HASSIUM_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_HASSIUM" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_HASSIUM_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_CURSED_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_CURSED" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_CURSED_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_CURSED_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_CURSED" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_CURSED_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_CURSED_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_CURSED_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_CURSED_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_CURSED" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_CURSED_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_CURSED_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_CURSED_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_CURSED" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_CURSED_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_CURSED_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_CURSED" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_CURSED_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_CURSED_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_CURSED_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_CURSED_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_INVIS_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_TOGGLE_FIRE_INVIS" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_INVIS_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_INVIS_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="SHOTGUN_TOGGLE_FIRE_INVIS" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_INVIS_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_INVIS_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_INVIS_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_INVIS_SURGE" />
-			</event>
-			<event req="SHOTGUN_TOGGLE_FIRE_INVIS" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_INVIS_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_INVIS_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_INVIS_SURGE" />
-			</event>
-			<event req="SHOTGUN_TOGGLE_FIRE_INVIS" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_INVIS_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_INVIS_SURGE" />
-			</event>
-			<event req="SHOTGUN_TOGGLE_FIRE_INVIS" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_INVIS_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_INVIS_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_INVIS_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_INVIS_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_AETHER_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_ENEMY_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_ENEMY_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_AETHER_ENEMY" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_AETHER_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_AETHER_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_AETHER_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_AETHER_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_AETHER_ENEMY" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_AETHER_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_AETHER_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_AETHER_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_AETHER_ENEMY" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_AETHER_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_AETHER_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_AETHER_ENEMY" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_AETHER_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_BRONZE_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_ENEMY_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_ENEMY_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_BRONZE_ENEMY" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_BRONZE_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_BRONZE_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_BRONZE_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_BRONZE_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_BRONZE_ENEMY" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_BRONZE_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_BRONZE_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_BRONZE_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_BRONZE_ENEMY" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_BRONZE_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_BRONZE_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_BRONZE_ENEMY" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_BRONZE_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_INDIUM_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_ENEMY_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_ENEMY_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_INDIUM_ENEMY" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_INDIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_INDIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_INDIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_INDIUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_INDIUM_ENEMY" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_INDIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_INDIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_INDIUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_INDIUM_ENEMY" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_INDIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_INDIUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_INDIUM_ENEMY" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_INDIUM_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_RHENIUM_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_ENEMY_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_ENEMY_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_RHENIUM_ENEMY" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_RHENIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_RHENIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_RHENIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_RHENIUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_RHENIUM_ENEMY" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_RHENIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_RHENIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_RHENIUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_RHENIUM_ENEMY" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_RHENIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_RHENIUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_RHENIUM_ENEMY" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_RHENIUM_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_SILVER_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_ENEMY_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_ENEMY_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_SILVER_ENEMY" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_SILVER_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_SILVER_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_SILVER_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_SILVER_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_SILVER_ENEMY" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_SILVER_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_SILVER_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_SILVER_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_SILVER_ENEMY" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_SILVER_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_SILVER_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_SILVER_ENEMY" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_SILVER_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_PALLADIUM_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_ENEMY_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_ENEMY_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_PALLADIUM_ENEMY" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PALLADIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PALLADIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PALLADIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PALLADIUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_PALLADIUM_ENEMY" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PALLADIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PALLADIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PALLADIUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_PALLADIUM_ENEMY" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PALLADIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PALLADIUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_PALLADIUM_ENEMY" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PALLADIUM_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_IRIDIUM_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_ENEMY_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_ENEMY_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_IRIDIUM_ENEMY" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_IRIDIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_IRIDIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_IRIDIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_IRIDIUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_IRIDIUM_ENEMY" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_IRIDIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_IRIDIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_IRIDIUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_IRIDIUM_ENEMY" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_IRIDIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_IRIDIUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_IRIDIUM_ENEMY" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_IRIDIUM_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_PLATINUM_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_ENEMY_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_ENEMY_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_PLATINUM_ENEMY" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PLATINUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PLATINUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PLATINUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PLATINUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_PLATINUM_ENEMY" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PLATINUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PLATINUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PLATINUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_PLATINUM_ENEMY" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PLATINUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PLATINUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_PLATINUM_ENEMY" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PLATINUM_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_OSMIUM_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_ENEMY_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_ENEMY_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_OSMIUM_ENEMY" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_OSMIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_OSMIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_OSMIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_OSMIUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_OSMIUM_ENEMY" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_OSMIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_OSMIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_OSMIUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_OSMIUM_ENEMY" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_OSMIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_OSMIUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_OSMIUM_ENEMY" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_OSMIUM_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_NOBELIUM_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_ENEMY_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_ENEMY_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_NOBELIUM_ENEMY" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_NOBELIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_NOBELIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_NOBELIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_NOBELIUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_NOBELIUM_ENEMY" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_NOBELIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_NOBELIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_NOBELIUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_NOBELIUM_ENEMY" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_NOBELIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_NOBELIUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_NOBELIUM_ENEMY" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_NOBELIUM_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_HASSIUM_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_ENEMY_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_ENEMY_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="FM_SHOTGUN_HASSIUM_ENEMY" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_HASSIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_HASSIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_HASSIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_HASSIUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_HASSIUM_ENEMY" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_HASSIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_HASSIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_HASSIUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_HASSIUM_ENEMY" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_HASSIUM_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_HASSIUM_ENEMY_SURGE" />
-			</event>
-			<event req="FM_SHOTGUN_HASSIUM_ENEMY" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_HASSIUM_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_SHADOW_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_SHADOW" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_SHADOW_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_SHADOW_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="SHOTGUN_SHADOW" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_SHADOW_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_SHADOW_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_SHADOW_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_SHADOW_SURGE" />
-			</event>
-			<event req="SHOTGUN_SHADOW" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_SHADOW_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_SHADOW_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_SHADOW_SURGE" />
-			</event>
-			<event req="SHOTGUN_SHADOW" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_SHADOW_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_SHADOW_SURGE" />
-			</event>
-			<event req="SHOTGUN_SHADOW" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_SHADOW_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_SHADOW_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_SHADOW_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_SHADOW_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_OMEGA_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_SHOTGUN_OMEGA" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_OMEGA_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_OMEGA_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="TC_SHOTGUN_OMEGA" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_OMEGA_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_OMEGA_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_OMEGA_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_OMEGA_SURGE" />
-			</event>
-			<event req="TC_SHOTGUN_OMEGA" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_OMEGA_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_OMEGA_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_OMEGA_SURGE" />
-			</event>
-			<event req="TC_SHOTGUN_OMEGA" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_OMEGA_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_OMEGA_SURGE" />
-			</event>
-			<event req="TC_SHOTGUN_OMEGA" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_OMEGA_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_OMEGA_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_OMEGA_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_SHOTGUN_OMEGA_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_GOLD_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_SHOTGUN_GOLD" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_GOLD_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_GOLD_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="TC_SHOTGUN_GOLD" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_GOLD_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_GOLD_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_GOLD_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_GOLD_SURGE" />
-			</event>
-			<event req="TC_SHOTGUN_GOLD" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_GOLD_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_GOLD_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_GOLD_SURGE" />
-			</event>
-			<event req="TC_SHOTGUN_GOLD" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_GOLD_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_GOLD_SURGE" />
-			</event>
-			<event req="TC_SHOTGUN_GOLD" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_GOLD_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_GOLD_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_GOLD_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_SHOTGUN_GOLD_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_LEAD_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_SHOTGUN_LEAD" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_LEAD_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_LEAD_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="TC_SHOTGUN_LEAD" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_LEAD_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_LEAD_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_LEAD_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_LEAD_SURGE" />
-			</event>
-			<event req="TC_SHOTGUN_LEAD" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_LEAD_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_LEAD_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_LEAD_SURGE" />
-			</event>
-			<event req="TC_SHOTGUN_LEAD" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_LEAD_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_LEAD_SURGE" />
-			</event>
-			<event req="TC_SHOTGUN_LEAD" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_LEAD_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_LEAD_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_LEAD_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_SHOTGUN_LEAD_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_BOMB_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_SHOTGUN_BOMB" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_BOMB_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_BOMB_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="TC_SHOTGUN_BOMB" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_BOMB_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_BOMB_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_BOMB_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_BOMB_SURGE" />
-			</event>
-			<event req="TC_SHOTGUN_BOMB" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_BOMB_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_BOMB_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_BOMB_SURGE" />
-			</event>
-			<event req="TC_SHOTGUN_BOMB" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_BOMB_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_BOMB_SURGE" />
-			</event>
-			<event req="TC_SHOTGUN_BOMB" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_BOMB_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_BOMB_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_BOMB_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_SHOTGUN_BOMB_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_UNSTABLE_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_SHOTGUN_UNSTABLE" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_UNSTABLE_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_UNSTABLE_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="TC_SHOTGUN_UNSTABLE" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_UNSTABLE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_UNSTABLE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_UNSTABLE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_UNSTABLE_SURGE" />
-			</event>
-			<event req="TC_SHOTGUN_UNSTABLE" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_UNSTABLE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_UNSTABLE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_UNSTABLE_SURGE" />
-			</event>
-			<event req="TC_SHOTGUN_UNSTABLE" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_UNSTABLE_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_UNSTABLE_SURGE" />
-			</event>
-			<event req="TC_SHOTGUN_UNSTABLE" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_UNSTABLE_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_UNSTABLE_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_UNSTABLE_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_SHOTGUN_UNSTABLE_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_BATTERY_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_SHOTGUN_BATTERY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_BATTERY_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_BATTERY_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="TC_SHOTGUN_BATTERY" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_BATTERY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_BATTERY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_BATTERY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_BATTERY_SURGE" />
-			</event>
-			<event req="TC_SHOTGUN_BATTERY" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_BATTERY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_BATTERY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_BATTERY_SURGE" />
-			</event>
-			<event req="TC_SHOTGUN_BATTERY" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_BATTERY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_BATTERY_SURGE" />
-			</event>
-			<event req="TC_SHOTGUN_BATTERY" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_BATTERY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_BATTERY_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_BATTERY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_SHOTGUN_BATTERY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_HELL_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_SHOTGUN_HELL" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_HELL_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_HELL_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="TC_SHOTGUN_HELL" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_HELL_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_HELL_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_HELL_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_HELL_SURGE" />
-			</event>
-			<event req="TC_SHOTGUN_HELL" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_HELL_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_HELL_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_HELL_SURGE" />
-			</event>
-			<event req="TC_SHOTGUN_HELL" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_HELL_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_HELL_SURGE" />
-			</event>
-			<event req="TC_SHOTGUN_HELL" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_HELL_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_HELL_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_HELL_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_SHOTGUN_HELL_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_RAPTORS_OWN_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_RAPTORS_OWN" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_RAPTORS_OWN_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_TC_RAPTORS_OWN_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="TC_RAPTORS_OWN" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_TC_RAPTORS_OWN_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_RAPTORS_OWN_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_RAPTORS_OWN_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_RAPTORS_OWN_SURGE" />
-			</event>
-			<event req="TC_RAPTORS_OWN" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_RAPTORS_OWN_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_RAPTORS_OWN_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_RAPTORS_OWN_SURGE" />
-			</event>
-			<event req="TC_RAPTORS_OWN" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_RAPTORS_OWN_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_RAPTORS_OWN_SURGE" />
-			</event>
-			<event req="TC_RAPTORS_OWN" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_RAPTORS_OWN_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_RAPTORS_OWN_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_RAPTORS_OWN_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_RAPTORS_OWN_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_BOMB_SHOTGUN_1" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="TC_BOMB_SHOTGUN_1" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_SURGE" />
-			</event>
-			<event req="TC_BOMB_SHOTGUN_1" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_SURGE" />
-			</event>
-			<event req="TC_BOMB_SHOTGUN_1" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_SURGE" />
-			</event>
-			<event req="TC_BOMB_SHOTGUN_1" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_BOMB_SHOTGUN_1_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_ENEMY_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_ENEMY_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="TC_BOMB_SHOTGUN_1_ENEMY" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_ENEMY_SURGE" />
-			</event>
-			<event req="TC_BOMB_SHOTGUN_1_ENEMY" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_ENEMY_SURGE" />
-			</event>
-			<event req="TC_BOMB_SHOTGUN_1_ENEMY" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_ENEMY_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_ENEMY_SURGE" />
-			</event>
-			<event req="TC_BOMB_SHOTGUN_1_ENEMY" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_2_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_BOMB_SHOTGUN_2" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_2_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_2_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="TC_BOMB_SHOTGUN_2" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_2_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_2_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_2_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_2_SURGE" />
-			</event>
-			<event req="TC_BOMB_SHOTGUN_2" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_2_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_2_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_2_SURGE" />
-			</event>
-			<event req="TC_BOMB_SHOTGUN_2" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_2_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_2_SURGE" />
-			</event>
-			<event req="TC_BOMB_SHOTGUN_2" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_2_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_2_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_2_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_2_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_3_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_BOMB_SHOTGUN_3" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_3_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_3_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="TC_BOMB_SHOTGUN_3" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_3_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_3_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_3_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_3_SURGE" />
-			</event>
-			<event req="TC_BOMB_SHOTGUN_3" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_3_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_3_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_3_SURGE" />
-			</event>
-			<event req="TC_BOMB_SHOTGUN_3" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_3_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_3_SURGE" />
-			</event>
-			<event req="TC_BOMB_SHOTGUN_3" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_3_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_3_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_3_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_3_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_4_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_BOMB_SHOTGUN_4" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_4_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_4_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="TC_BOMB_SHOTGUN_4" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_4_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_4_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_4_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_4_SURGE" />
-			</event>
-			<event req="TC_BOMB_SHOTGUN_4" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_4_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_4_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_4_SURGE" />
-			</event>
-			<event req="TC_BOMB_SHOTGUN_4" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_4_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_4_SURGE" />
-			</event>
-			<event req="TC_BOMB_SHOTGUN_4" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_4_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_4_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
 		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_4_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_4_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_EE_SHOTGUN_FROST_INITIATE">
+		<variable name="flak_calc" op="set" var="EE_SHOTGUN_FROST" />
+		<loadEvent>TWISTED_LANIUS_SURGE_EE_SHOTGUN_FROST_LOADEVENTLIST</loadEvent>
 	</event>
 	<event name="TWISTED_LANIUS_SURGE_EE_SHOTGUN_FROST_LOADEVENTLIST">
 		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
-			<event req="EE_SHOTGUN_FROST" lvl="4">
+			<event req="flak_calc" lvl="1">
 				<superBarrage player="true" name="TWISTED_LANIUS_EE_SHOTGUN_FROST_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_EE_SHOTGUN_FROST_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_EE_SHOTGUN_FROST_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_EE_SHOTGUN_FROST_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_EE_SHOTGUN_FROST_LOADEVENTLIST_CYCLE</loadEvent>
 			</event>
-			<event req="EE_SHOTGUN_FROST" lvl="3">
-				<superBarrage player="true" name="TWISTED_LANIUS_EE_SHOTGUN_FROST_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_EE_SHOTGUN_FROST_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_EE_SHOTGUN_FROST_SURGE" />
-			</event>
-			<event req="EE_SHOTGUN_FROST" lvl="2">
-				<superBarrage player="true" name="TWISTED_LANIUS_EE_SHOTGUN_FROST_SURGE" />
-				<superBarrage player="true" name="TWISTED_LANIUS_EE_SHOTGUN_FROST_SURGE" />
-			</event>
-			<event req="EE_SHOTGUN_FROST" lvl="1">
-				<superBarrage player="true" name="TWISTED_LANIUS_EE_SHOTGUN_FROST_SURGE" />
-			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_EE_SHOTGUN_FROST_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_EE_SHOTGUN_FROST_LOADEVENTLIST" req="flak_calc" />
 		</loadEventList>
 	</event>
 
 
-<!--MSTLS-2-->
+<!--END_OF_FLAK_INSERTION-->
 		<!--Do not touch the previous comment, it is a marker string for a script-->
 
 
