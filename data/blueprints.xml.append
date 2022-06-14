@@ -1057,7 +1057,6 @@
 		<crewCount amount="1" class="zoltan_monk" />
 		<crewCount amount="1" class="zoltan_monk" />
 		<crewCount amount="1" class="zoltan_monk" />
-		<aug name="LOCKED_ENERGY_SHIELD" />
 		<aug name="PACIFISTIC_REGENERATION" />
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED3_2" layout="zmt_player_rock_suicide" img="zmt_player_rock_suicide">
@@ -1141,7 +1140,7 @@
 	<shipBlueprint name="PLAYER_SHIP_TWISTED3_3" layout="zmt_player_lostsun_suicide" img="zmt_player_lostsun_suicide">
 		<class>Twisted Renegade Lostsun</class>
 		<name>Deja Mort</name>
-		<desc>This Lostsun vessel is equipped with some of the most powerful ancient equipment money could buy, but due to a mistake made during their FTL drive experiments, the ship is rendered unstable. It cannot sustain itself for more than 75 seconds without needing to perform another FTL jump, otherwise the drive will fail catastrophically and destroy the vessel. Hope you're quick!</desc>
+		<desc>This Lost Sun vessel is equipped with some of the most powerful ancient equipment money could buy, but due to a mistake made during their FTL drive experiments, the ship is rendered unstable. It cannot sustain itself for more than 75 seconds without needing to perform another FTL jump, otherwise the drive will fail catastrophically and destroy the vessel. Hope you're quick!</desc>
 		<systemList>
 			<battery power="1" room="12" start="false" img="room_battery_10" />
 			<cloaking power="1" room="11" start="false" img="room_cloaking_orchid_2" />
@@ -1213,7 +1212,7 @@
 	<shipBlueprint name="PLAYER_SHIP_TWISTED4" layout="zmt_player_kleptocracy_suicide" img="zmt_player_kleptocracy_suicide">
 		<class>Twisted Renegade Kleptocracy</class>
 		<name>Vader One</name>
-		<desc>Be careful not to choke on your aspirations.</desc>
+		<desc>After having a close encounter with some egotistic Ancients, these smoking addicts decided the best course of action would be to weaponize said habits in an attempt to asphyxiate their anaerobic enemies, and hunt down every last ancient until none were left.</desc>
 		<systemList>
 			<artillery power="1" room="10" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
 			<battery power="1" max="2" room="8" start="false" img="room_battery_14" />
@@ -1274,7 +1273,7 @@
 		<droneSlots>2</droneSlots>
 		<weaponList missiles="3" count="4">
 			<weapon name="FM_PHASER_SUFFOCATION" />
-			<weapon name="ANCIENT_LASER" />
+			<weapon name="LASER_CHAINGUN" />
 		</weaponList>
 		<droneList drones="3" count="2" />
 		<health amount="30" />
@@ -1365,7 +1364,7 @@
 	<shipBlueprint name="PLAYER_SHIP_TWISTED4_3" layout="zmt_player_zoltan_suicide" img="zmt_player_zoltan_suicide">
 		<class>Twisted Renegade Zoltan</class>
 		<name>Ministry's Fist</name>
-		<desc>Zoltans are tired of being pushed around and being treated like living batteries. They may not be as experienced as peacekeepers, but these zoltans have a few tricks up their sleeves!</desc>
+		<desc>These Zoltans are tired of being pushed around and being treated like living batteries. They may not be as experienced as peacekeepers, but these zoltans have a few tricks up their sleeves!</desc>
 		<systemList>
 			<battery power="1" room="7" start="false" img="room_battery_11" />
 			<cloaking power="1" room="18" start="false" img="room_cloaking_orchid_3" />
@@ -1439,7 +1438,7 @@
 	<shipBlueprint name="PLAYER_SHIP_TWISTED5" layout="zmt_player_lanius_suicide" img="zmt_player_lanius_suicide">
 		<class>Twisted Renegade Lanius</class>
 		<name>The Bloodsteel</name>
-		<desc>The Lanius race is well known for their metal-manipulation abilities, and this ship heavily capitalizes upon that. Using a special forge, this ship can repurpose other weapons into flak! (Also can install 10 toggle flak artillery for the time being, for the funny)</desc>
+		<desc>The Lanius race is well known for their metal-manipulation abilities, and this ship heavily capitalizes upon that. Using a special forge, this ship can repurpose other weapons into flak! (Can also install 10 toggle flak artillery for the time being, for the funny)</desc>
 		<systemList>
 			<artillery power="1" room="1" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
 			<artillery power="1" room="2" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
@@ -1598,7 +1597,7 @@
 	<shipBlueprint name="PLAYER_SHIP_TWISTED5_3" layout="zmt_player_engineer_suicide" img="zmt_player_engineer_suicide">
 		<class>Twisted Renegade Engineer</class>
 		<name>The Conagher</name>
-		<desc>Now I may only use two weapon slots, but I ain't opposed to more gun, pardner.</desc>
+		<desc>This strange Engineer vessel makes use a prototype drone factory that functions as an Artillery, firing drones to board the enemy ship for no drone part cost!</desc>
 		<systemList>
 			<artillery power="1" max = "3" room="20" start="true" weapon="ARTILLERY_ENGINEER_FACTORY" img="room_artillery" />
 			<battery power="1" max = "2" room="17" start="false" img="room_battery_14" />
@@ -1668,8 +1667,8 @@
 		<maxPower amount="8" />
 		<crew>
 			<human_engineer room="0" name="The Engineer"/>
-			<human_engineer room="3" name="The Engineer"/>
-			<human_engineer room="9" name="The Engineer"/>
+			<human_engineer room="3" name="The Engihere"/>
+			<engi room="9" name="The Engi"/>
 			<human_medic room="7" name="The Medic"/>
 		</crew>
 		<systemLimit>10</systemLimit>
@@ -1681,7 +1680,7 @@
 	<shipBlueprint name="PLAYER_SHIP_TWISTED6" layout="zmt_player_kestrel_suicide" img="zmt_player_kestrel_suicide">
 		<class>Twisted Renegade Kestrel</class>
 		<name>The Keymaster</name>
-		<desc>This odd Kestrel is looking for the Gatekeeper, and will stop at nothing to find them.</desc>
+		<desc>This odd Kestrel can spawn </desc>
 		<systemList>
 			<artillery power="1" room="4" start="false" weapon="FM_CHAINGUN_ION" img="nothing" />
 			<artillery power="1" room="3" start="false" weapon="FM_CHAINGUN_ION" img="nothing" />
