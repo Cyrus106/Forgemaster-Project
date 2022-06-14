@@ -105,7 +105,7 @@
 <mod:findName type="event" name="START_BEACON_EXPLAIN_LOAD">
 	<mod:findLike type="loadEventList">
 		<mod-append:event name="GIVE_RAGE_TWISTEDMONK" req = "TWISTED_BLESSING"/>
-		<mod-append:event name="GIVE_FLAK_TWISTEDLANIUS" req = "TWISTED_FLAK_FORGE"/>
+		<!--<mod-append:event name="GIVE_FLAK_TWISTEDLANIUS" req = "TWISTED_FLAK_FORGE"/>-->
 		<mod-append:event name="GIVE_ARM_TWISTEDROCK" req = "TWISTED_HULL_ARM"/>
 	</mod:findLike>
 </mod:findName>

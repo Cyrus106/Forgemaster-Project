@@ -16706,7 +16706,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<mod-append:name>TWISTED_ANCIENT_BOUNTY</mod-append:name>
 			<mod-append:name>CURA_MVBOSS_SPAWNER</mod-append:name>
 			<mod-append:name>TWISTED_MANTIS_UPGRADER</mod-append:name>
-			<mod-append:name>TWISTED_FLAK_FORGE</mod-append:name>
+			<!--<mod-append:name>TWISTED_FLAK_FORGE</mod-append:name>-->
 			<!--<mod-append:name>TWISTED_KESTREL_GHOST_SUMMON</mod-append:name>-->
 		</mod:findName>
 	</mod:findLike>
@@ -19266,9 +19266,669 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<!--MSTLS-3-->
 
 
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_1_SURGE">
+		<weapon name="SHOTGUN_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_1_SURGE">
+		<weapon name="SHOTGUN_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_1_SURGE">
+		<weapon name="SHOTGUN_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_1_SURGE">
+		<weapon name="SHOTGUN_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_1_ENEMY_SURGE">
+		<weapon name="SHOTGUN_1_ENEMY" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_1_ENEMY_SURGE">
+		<weapon name="SHOTGUN_1_ENEMY" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_1_ENEMY_SURGE">
+		<weapon name="SHOTGUN_1_ENEMY" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_1_ENEMY_SURGE">
+		<weapon name="SHOTGUN_1_ENEMY" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_2_SURGE">
+		<weapon name="SHOTGUN_2" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_2_SURGE">
+		<weapon name="SHOTGUN_2" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_2_SURGE">
+		<weapon name="SHOTGUN_2" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_2_SURGE">
+		<weapon name="SHOTGUN_2" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_2_PLAYER_SURGE">
+		<weapon name="SHOTGUN_2_PLAYER" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_2_PLAYER_SURGE">
+		<weapon name="SHOTGUN_2_PLAYER" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_2_PLAYER_SURGE">
+		<weapon name="SHOTGUN_2_PLAYER" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_2_PLAYER_SURGE">
+		<weapon name="SHOTGUN_2_PLAYER" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_3_SURGE">
+		<weapon name="SHOTGUN_3" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_3_SURGE">
+		<weapon name="SHOTGUN_3" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_3_SURGE">
+		<weapon name="SHOTGUN_3" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_3_SURGE">
+		<weapon name="SHOTGUN_3" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_4_SURGE">
+		<weapon name="SHOTGUN_4" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_4_SURGE">
+		<weapon name="SHOTGUN_4" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_4_SURGE">
+		<weapon name="SHOTGUN_4" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_4_SURGE">
+		<weapon name="SHOTGUN_4" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_CHARGE_SURGE">
+		<weapon name="SHOTGUN_CHARGE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_CHARGE_SURGE">
+		<weapon name="SHOTGUN_CHARGE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_CHARGE_SURGE">
+		<weapon name="SHOTGUN_CHARGE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_CHARGE_SURGE">
+		<weapon name="SHOTGUN_CHARGE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_CHAIN_SURGE">
+		<weapon name="SHOTGUN_CHAIN" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_CHAIN_SURGE">
+		<weapon name="SHOTGUN_CHAIN" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_CHAIN_SURGE">
+		<weapon name="SHOTGUN_CHAIN" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_CHAIN_SURGE">
+		<weapon name="SHOTGUN_CHAIN" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_INSTANT_SURGE">
+		<weapon name="SHOTGUN_INSTANT" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_INSTANT_SURGE">
+		<weapon name="SHOTGUN_INSTANT" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_INSTANT_SURGE">
+		<weapon name="SHOTGUN_INSTANT" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_INSTANT_SURGE">
+		<weapon name="SHOTGUN_INSTANT" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_FIRE_SURGE">
+		<weapon name="SHOTGUN_FIRE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_FIRE_SURGE">
+		<weapon name="SHOTGUN_FIRE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_FIRE_SURGE">
+		<weapon name="SHOTGUN_FIRE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_FIRE_SURGE">
+		<weapon name="SHOTGUN_FIRE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_ION_SURGE">
+		<weapon name="SHOTGUN_ION" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_ION_SURGE">
+		<weapon name="SHOTGUN_ION" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_ION_SURGE">
+		<weapon name="SHOTGUN_ION" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_ION_SURGE">
+		<weapon name="SHOTGUN_ION" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOXIC_SURGE">
+		<weapon name="SHOTGUN_TOXIC" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOXIC_SURGE">
+		<weapon name="SHOTGUN_TOXIC" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOXIC_SURGE">
+		<weapon name="SHOTGUN_TOXIC" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOXIC_SURGE">
+		<weapon name="SHOTGUN_TOXIC" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOXIC_PLAYER_SURGE">
+		<weapon name="SHOTGUN_TOXIC_PLAYER" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOXIC_PLAYER_SURGE">
+		<weapon name="SHOTGUN_TOXIC_PLAYER" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOXIC_PLAYER_SURGE">
+		<weapon name="SHOTGUN_TOXIC_PLAYER" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOXIC_PLAYER_SURGE">
+		<weapon name="SHOTGUN_TOXIC_PLAYER" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_GOLD_3_SURGE">
+		<weapon name="SHOTGUN_GOLD_3" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_GOLD_3_SURGE">
+		<weapon name="SHOTGUN_GOLD_3" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_GOLD_3_SURGE">
+		<weapon name="SHOTGUN_GOLD_3" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_GOLD_3_SURGE">
+		<weapon name="SHOTGUN_GOLD_3" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_GOLD_SURGE">
+		<weapon name="SHOTGUN_GOLD" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_GOLD_SURGE">
+		<weapon name="SHOTGUN_GOLD" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_GOLD_SURGE">
+		<weapon name="SHOTGUN_GOLD" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_GOLD_SURGE">
+		<weapon name="SHOTGUN_GOLD" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_LOOT_LEECH_1_SURGE">
+		<weapon name="LOOT_LEECH_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_LOOT_LEECH_1_SURGE">
+		<weapon name="LOOT_LEECH_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_LOOT_LEECH_1_SURGE">
+		<weapon name="LOOT_LEECH_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_LOOT_LEECH_1_SURGE">
+		<weapon name="LOOT_LEECH_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_LOOT_AUG_1_SURGE">
+		<weapon name="LOOT_AUG_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_LOOT_AUG_1_SURGE">
+		<weapon name="LOOT_AUG_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_LOOT_AUG_1_SURGE">
+		<weapon name="LOOT_AUG_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_LOOT_AUG_1_SURGE">
+		<weapon name="LOOT_AUG_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_FIRE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_FIRE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_FIRE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_FIRE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_ION_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_ION" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_ION_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_ION" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_ION_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_ION" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_ION_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_ION" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_TOXIC_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_TOXIC" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_TOXIC_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_TOXIC" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_TOXIC_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_TOXIC" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_TOXIC_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_TOXIC" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_ARTILLERY_FLAK_SURGE">
+		<weapon name="ARTILLERY_FLAK" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_ARTILLERY_FLAK_SURGE">
+		<weapon name="ARTILLERY_FLAK" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_ARTILLERY_FLAK_SURGE">
+		<weapon name="ARTILLERY_FLAK" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_ARTILLERY_FLAK_SURGE">
+		<weapon name="ARTILLERY_FLAK" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_1_SURGE">
+		<weapon name="SHOTGUN_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_1_SURGE">
+		<weapon name="SHOTGUN_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_1_SURGE">
+		<weapon name="SHOTGUN_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_1_SURGE">
+		<weapon name="SHOTGUN_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_1_ENEMY_SURGE">
+		<weapon name="SHOTGUN_1_ENEMY" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_1_ENEMY_SURGE">
+		<weapon name="SHOTGUN_1_ENEMY" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_1_ENEMY_SURGE">
+		<weapon name="SHOTGUN_1_ENEMY" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_1_ENEMY_SURGE">
+		<weapon name="SHOTGUN_1_ENEMY" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_2_SURGE">
+		<weapon name="SHOTGUN_2" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_2_SURGE">
+		<weapon name="SHOTGUN_2" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_2_SURGE">
+		<weapon name="SHOTGUN_2" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_2_SURGE">
+		<weapon name="SHOTGUN_2" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_2_PLAYER_SURGE">
+		<weapon name="SHOTGUN_2_PLAYER" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_2_PLAYER_SURGE">
+		<weapon name="SHOTGUN_2_PLAYER" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_2_PLAYER_SURGE">
+		<weapon name="SHOTGUN_2_PLAYER" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_2_PLAYER_SURGE">
+		<weapon name="SHOTGUN_2_PLAYER" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_3_SURGE">
+		<weapon name="SHOTGUN_3" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_3_SURGE">
+		<weapon name="SHOTGUN_3" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_3_SURGE">
+		<weapon name="SHOTGUN_3" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_3_SURGE">
+		<weapon name="SHOTGUN_3" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_4_SURGE">
+		<weapon name="SHOTGUN_4" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_4_SURGE">
+		<weapon name="SHOTGUN_4" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_4_SURGE">
+		<weapon name="SHOTGUN_4" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_4_SURGE">
+		<weapon name="SHOTGUN_4" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_CHARGE_SURGE">
+		<weapon name="SHOTGUN_CHARGE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_CHARGE_SURGE">
+		<weapon name="SHOTGUN_CHARGE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_CHARGE_SURGE">
+		<weapon name="SHOTGUN_CHARGE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_CHARGE_SURGE">
+		<weapon name="SHOTGUN_CHARGE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_CHAIN_SURGE">
+		<weapon name="SHOTGUN_CHAIN" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_CHAIN_SURGE">
+		<weapon name="SHOTGUN_CHAIN" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_CHAIN_SURGE">
+		<weapon name="SHOTGUN_CHAIN" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_CHAIN_SURGE">
+		<weapon name="SHOTGUN_CHAIN" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_INSTANT_SURGE">
+		<weapon name="SHOTGUN_INSTANT" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_INSTANT_SURGE">
+		<weapon name="SHOTGUN_INSTANT" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_INSTANT_SURGE">
+		<weapon name="SHOTGUN_INSTANT" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_INSTANT_SURGE">
+		<weapon name="SHOTGUN_INSTANT" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_FIRE_SURGE">
+		<weapon name="SHOTGUN_FIRE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_FIRE_SURGE">
+		<weapon name="SHOTGUN_FIRE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_FIRE_SURGE">
+		<weapon name="SHOTGUN_FIRE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_FIRE_SURGE">
+		<weapon name="SHOTGUN_FIRE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_ION_SURGE">
+		<weapon name="SHOTGUN_ION" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_ION_SURGE">
+		<weapon name="SHOTGUN_ION" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_ION_SURGE">
+		<weapon name="SHOTGUN_ION" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_ION_SURGE">
+		<weapon name="SHOTGUN_ION" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOXIC_SURGE">
+		<weapon name="SHOTGUN_TOXIC" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOXIC_SURGE">
+		<weapon name="SHOTGUN_TOXIC" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOXIC_SURGE">
+		<weapon name="SHOTGUN_TOXIC" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOXIC_SURGE">
+		<weapon name="SHOTGUN_TOXIC" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOXIC_PLAYER_SURGE">
+		<weapon name="SHOTGUN_TOXIC_PLAYER" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOXIC_PLAYER_SURGE">
+		<weapon name="SHOTGUN_TOXIC_PLAYER" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOXIC_PLAYER_SURGE">
+		<weapon name="SHOTGUN_TOXIC_PLAYER" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOXIC_PLAYER_SURGE">
+		<weapon name="SHOTGUN_TOXIC_PLAYER" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_GOLD_3_SURGE">
+		<weapon name="SHOTGUN_GOLD_3" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_GOLD_3_SURGE">
+		<weapon name="SHOTGUN_GOLD_3" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_GOLD_3_SURGE">
+		<weapon name="SHOTGUN_GOLD_3" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_GOLD_3_SURGE">
+		<weapon name="SHOTGUN_GOLD_3" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_GOLD_SURGE">
+		<weapon name="SHOTGUN_GOLD" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_GOLD_SURGE">
+		<weapon name="SHOTGUN_GOLD" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_GOLD_SURGE">
+		<weapon name="SHOTGUN_GOLD" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_GOLD_SURGE">
+		<weapon name="SHOTGUN_GOLD" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_LOOT_LEECH_1_SURGE">
+		<weapon name="LOOT_LEECH_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_LOOT_LEECH_1_SURGE">
+		<weapon name="LOOT_LEECH_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_LOOT_LEECH_1_SURGE">
+		<weapon name="LOOT_LEECH_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_LOOT_LEECH_1_SURGE">
+		<weapon name="LOOT_LEECH_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_LOOT_AUG_1_SURGE">
+		<weapon name="LOOT_AUG_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_LOOT_AUG_1_SURGE">
+		<weapon name="LOOT_AUG_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_LOOT_AUG_1_SURGE">
+		<weapon name="LOOT_AUG_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_LOOT_AUG_1_SURGE">
+		<weapon name="LOOT_AUG_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_FIRE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_FIRE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_FIRE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_FIRE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_ION_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_ION" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_ION_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_ION" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_ION_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_ION" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_ION_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_ION" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_TOXIC_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_TOXIC" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_TOXIC_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_TOXIC" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_TOXIC_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_TOXIC" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_TOXIC_SURGE">
+		<weapon name="SHOTGUN_TOGGLE_TOXIC" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_ARTILLERY_FLAK_SURGE">
+		<weapon name="ARTILLERY_FLAK" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_ARTILLERY_FLAK_SURGE">
+		<weapon name="ARTILLERY_FLAK" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_ARTILLERY_FLAK_SURGE">
+		<weapon name="ARTILLERY_FLAK" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_ARTILLERY_FLAK_SURGE">
+		<weapon name="ARTILLERY_FLAK" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_OMEGA_SURGE">
+		<weapon name="TC_SHOTGUN_OMEGA" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_OMEGA_SURGE">
+		<weapon name="TC_SHOTGUN_OMEGA" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_OMEGA_SURGE">
+		<weapon name="TC_SHOTGUN_OMEGA" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_OMEGA_SURGE">
+		<weapon name="TC_SHOTGUN_OMEGA" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_GOLD_SURGE">
+		<weapon name="TC_SHOTGUN_GOLD" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_GOLD_SURGE">
+		<weapon name="TC_SHOTGUN_GOLD" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_GOLD_SURGE">
+		<weapon name="TC_SHOTGUN_GOLD" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_GOLD_SURGE">
+		<weapon name="TC_SHOTGUN_GOLD" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_LEAD_SURGE">
+		<weapon name="TC_SHOTGUN_LEAD" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_LEAD_SURGE">
+		<weapon name="TC_SHOTGUN_LEAD" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_LEAD_SURGE">
+		<weapon name="TC_SHOTGUN_LEAD" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_LEAD_SURGE">
+		<weapon name="TC_SHOTGUN_LEAD" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_BOMB_SURGE">
+		<weapon name="TC_SHOTGUN_BOMB" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_BOMB_SURGE">
+		<weapon name="TC_SHOTGUN_BOMB" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_BOMB_SURGE">
+		<weapon name="TC_SHOTGUN_BOMB" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_BOMB_SURGE">
+		<weapon name="TC_SHOTGUN_BOMB" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_UNSTABLE_SURGE">
+		<weapon name="TC_SHOTGUN_UNSTABLE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_UNSTABLE_SURGE">
+		<weapon name="TC_SHOTGUN_UNSTABLE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_UNSTABLE_SURGE">
+		<weapon name="TC_SHOTGUN_UNSTABLE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_UNSTABLE_SURGE">
+		<weapon name="TC_SHOTGUN_UNSTABLE" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_BATTERY_SURGE">
+		<weapon name="TC_SHOTGUN_BATTERY" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_BATTERY_SURGE">
+		<weapon name="TC_SHOTGUN_BATTERY" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_BATTERY_SURGE">
+		<weapon name="TC_SHOTGUN_BATTERY" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_BATTERY_SURGE">
+		<weapon name="TC_SHOTGUN_BATTERY" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_HELL_SURGE">
+		<weapon name="TC_SHOTGUN_HELL" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_HELL_SURGE">
+		<weapon name="TC_SHOTGUN_HELL" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_HELL_SURGE">
+		<weapon name="TC_SHOTGUN_HELL" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_SHOTGUN_HELL_SURGE">
+		<weapon name="TC_SHOTGUN_HELL" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_RAPTORS_OWN_SURGE">
+		<weapon name="TC_RAPTORS_OWN" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_RAPTORS_OWN_SURGE">
+		<weapon name="TC_RAPTORS_OWN" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_RAPTORS_OWN_SURGE">
+		<weapon name="TC_RAPTORS_OWN" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_RAPTORS_OWN_SURGE">
+		<weapon name="TC_RAPTORS_OWN" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_SURGE">
+		<weapon name="TC_BOMB_SHOTGUN_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_SURGE">
+		<weapon name="TC_BOMB_SHOTGUN_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_SURGE">
+		<weapon name="TC_BOMB_SHOTGUN_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_SURGE">
+		<weapon name="TC_BOMB_SHOTGUN_1" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_ENEMY_SURGE">
+		<weapon name="TC_BOMB_SHOTGUN_1_ENEMY" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_ENEMY_SURGE">
+		<weapon name="TC_BOMB_SHOTGUN_1_ENEMY" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_ENEMY_SURGE">
+		<weapon name="TC_BOMB_SHOTGUN_1_ENEMY" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_ENEMY_SURGE">
+		<weapon name="TC_BOMB_SHOTGUN_1_ENEMY" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_2_SURGE">
+		<weapon name="TC_BOMB_SHOTGUN_2" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_2_SURGE">
+		<weapon name="TC_BOMB_SHOTGUN_2" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_2_SURGE">
+		<weapon name="TC_BOMB_SHOTGUN_2" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_2_SURGE">
+		<weapon name="TC_BOMB_SHOTGUN_2" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_3_SURGE">
+		<weapon name="TC_BOMB_SHOTGUN_3" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_3_SURGE">
+		<weapon name="TC_BOMB_SHOTGUN_3" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_3_SURGE">
+		<weapon name="TC_BOMB_SHOTGUN_3" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_3_SURGE">
+		<weapon name="TC_BOMB_SHOTGUN_3" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_4_SURGE">
+		<weapon name="TC_BOMB_SHOTGUN_4" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_4_SURGE">
+		<weapon name="TC_BOMB_SHOTGUN_4" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_4_SURGE">
+		<weapon name="TC_BOMB_SHOTGUN_4" count="1" />
+	</surgeBarrage>
+	<surgeBarrage name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_4_SURGE">
+		<weapon name="TC_BOMB_SHOTGUN_4" count="1" />
+	</surgeBarrage>
 
 
-		<!--MSTLS-4-->
+<!--MSTLS-4-->
 		<!--Do not touch the previous comment, it is a marker string for a script-->
 
 
