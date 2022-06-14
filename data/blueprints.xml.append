@@ -833,7 +833,10 @@
 	<shipBlueprint name="PLAYER_SHIP_TWISTED2_2" layout="zmt_player_separatist_suicide" img="zmt_player_separatist_suicide">
 		<class>Twisted Renegade Separatist</class>
 		<name>Duality</name>
-		<desc>This ship is a remarkable fusion of opposing principles. It is nowhere near complete, yet it looks like it will be REALLY COOL when it's done! (If you leave this description in, you will be renamed to Gnun Slung by force)</desc>
+		<desc>Vertaal is a bozo )real)
+
+
+boo womp</desc>
 		<systemList>
 			<artillery power="1" room="6" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
 			<battery power="1" max="2" room="7" start="false" img="room_battery_13" />
@@ -1680,7 +1683,7 @@
 	<shipBlueprint name="PLAYER_SHIP_TWISTED6" layout="zmt_player_kestrel_suicide" img="zmt_player_kestrel_suicide">
 		<class>Twisted Renegade Kestrel</class>
 		<name>The Keymaster</name>
-		<desc>This odd Kestrel can spawn </desc>
+		<desc>This odd Kestrel can spawn various kinds of ghosts at empty beacons, but due to impossibly outdated technology you cannot install any kind of life support or teleporter. Because of the lack of teleporter, one of its crew has the ability to "split" crew and teleport 2 of them to the enemy ship.</desc>
 		<systemList>
 			<artillery power="1" room="4" start="false" weapon="FM_CHAINGUN_ION" img="nothing" />
 			<artillery power="1" room="3" start="false" weapon="FM_CHAINGUN_ION" img="nothing" />
@@ -1900,9 +1903,7 @@
 	<shipBlueprint name="PLAYER_SHIP_TWISTED7" layout="zmt_player_crystal_suicide" img="zmt_player_crystal_suicide">
 		<class>Twisted Renegade Crystal</class>
 		<name>The Albus</name>
-		<desc>KABOOOOOMM!&#xD;
-			"you fool! each hit you land brings you closer to death!"
-		</desc>
+		<desc>This highly volatile vessel encourages you to get hit as much as possible, as it comes with some hull-repair bots to help you recover health lost by your vengeance.</desc>
 		<systemList>
 			<artillery max="4" power="1" room="2" start="false" weapon="FM_MINELAUNCHER_CRYSTAL" img="room_artillery" />
 			<battery max="2" power="1" room="17" start="true" img="room_battery_FM_1" />
@@ -1970,7 +1971,7 @@
 		<maxPower amount="8" />
 		<crewCount amount="1" class="crystal_sentinel" />
 		<crewCount amount="1" class="rock" />
-		<crewCount amount="1" class="crystal" />
+		<crewCount amount="1" class="unique_ruwen" />
 		<crewCount amount="1" class="crystal" />
 		<aug name="LOCKED_TWISTED_CRYSTAL_ARMOR_50" />
 		<aug name="COMBAT_REPAIR" />
@@ -2037,9 +2038,9 @@
 		</systemList>
 		<weaponSlots>4</weaponSlots>
 		<droneSlots>2</droneSlots>
-		<weaponList missiles="0" count="4">
-			<weapon name="LASER_BURST_3" />
-			<weapon name="LASER_BURST_1" />
+		<weaponList missiles="0" count="14">
+			<weapon name="SLOTGUN" />
+			<weapon name="LASER_BURST_2" />
 		</weaponList>
 		<droneList drones="8" count="2" />
 		<health amount="30" />
@@ -2052,9 +2053,7 @@
 	<shipBlueprint name="PLAYER_SHIP_TWISTED7_3" layout="zmt_player_leech_suicide" img="player_ship_cracked_zmt_boss_leech_suicide">
 		<class>Twisted Renegade Leech</class>
 		<name>Despondancy</name>
-		<desc>The diodes on my left side are still bothering me
-			[this ship has a special device that weakens enemies and makes them drain power from their systems]
-		</desc>
+		<desc>The depressed leech owner of this ship installed a special custom-made device into it that allowed everyone to feel the pain he felt. He named it the Depression Emitter, and it makes all crew on the enemy ship drain power from their own ship.</desc>
 		<systemList>
 			<artillery power="1" room="10" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
 			<battery power="1" room="11" start="false" img="room_battery_8" />
@@ -2097,13 +2096,13 @@
 					<number>1</number>
 				</slot>
 			</sensors>
-			<shields power="2" max="8" room="7" start="true" img="room_shields_7">
+			<shields power="2" max="8" room="7" start="false" img="room_shields_7">
 				<slot>
 					<direction>up</direction>
 					<number>1</number>
 				</slot>
 			</shields>
-			<teleporter power="1" room="5" start="false" />
+			<teleporter power="1" room="5" start="true" />
 			<weapons power="2" max="8" room="6" start="true" img="room_weapons_7">
 				<slot>
 					<direction>up</direction>
@@ -19635,7 +19634,7 @@
 	</augBlueprint>
 	<augBlueprint name="PACIFISTIC_REGENERATION">
 		<title>Pacifistic Regeneration</title>
-		<desc>For every living enemy crew aboard your ship, all allied crew constantly regenerate at 2.0 hp/s (only affects crew aboard your own ship.)</desc>
+		<desc>For every living enemy crew aboard your ship, all allied crew on board your ship constantly regenerate at 2.0 hp/s. Provides a 5 HP Energy Shield as well.</desc>
 		<cost>50</cost>
 		<rarity>0</rarity>
 		<stackable>false</stackable>
