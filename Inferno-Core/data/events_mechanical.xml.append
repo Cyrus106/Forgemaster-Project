@@ -12,7 +12,7 @@
    <!--<queueEvent>EVENTNAME</queueEvent> append more of those lines for each independent effect-->
  </event>
  <event name="FMCORE_RESET"><!-- use this if you installed mid-run to activate the effects-->
-   <text>FMCORE functions have been reset</text>
+   <text>Inferno-Core ONJUMP and ONDAMAGE functions have been reset</text>
    <clearTriggeredEvent name="FMCORE_ONJUMP"/>
    <clearTriggeredEvent name="FMCORE_ONDAMAGE"/>
    <triggeredEvent name="FMCORE_ONDAMAGE" event="FMCORE_ONDAMAGE">
@@ -21,5 +21,10 @@
    <triggeredEvent name="FMCORE_ONJUMP" event="FMCORE_ONJUMP">
      <jumps amount="1" type="0"/>
    </triggeredEvent>
+ </event>
+ <event name="FMCORE_DEACTIVATE"><!-- use this if you are updating mid-run, use FMCORE_RESET after updating-->
+   <text>Inferno-Core ONJUMP and ONDAMAGE disabled, updating should be safe now.</text>
+   <clearTriggeredEvent name="FMCORE_ONJUMP"/>
+   <clearTriggeredEvent name="FMCORE_ONDAMAGE"/>
  </event>
 </FTL>

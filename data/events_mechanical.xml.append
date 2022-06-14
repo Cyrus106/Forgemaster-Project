@@ -80,36 +80,36 @@
 		</eventButton>
 	</event>
 
-		<!--Twisted Lanius-->
-		<event name="TWISTED_LANIUS_SURGE_BUTTON_SPAWN_INITIAL">
-			<triggeredEvent event="TWISTED_LANIUS_SURGE_BUTTON_SPAWN" time="10" thisFight="true">
-				<triggeredEventBox load="DEFAULT_SMALL">
-					<tooltip>Charging Surge!</tooltip>
-				</triggeredEventBox>
-			</triggeredEvent>
-		</event>
+	<!--Twisted Lanius-->
+	<event name="TWISTED_LANIUS_SURGE_BUTTON_SPAWN_INITIAL">
+		<triggeredEvent event="TWISTED_LANIUS_SURGE_BUTTON_SPAWN" time="10" thisFight="true">
+			<triggeredEventBox load="DEFAULT_SMALL">
+				<tooltip>Charging Surge!</tooltip>
+			</triggeredEventBox>
+		</triggeredEvent>
+	</event>
 
-		<event name="TWISTED_LANIUS_SURGE_BUTTON_SPAWN">
-			<eventButton name="UI_TWISTED_LANIUS_SURGE_BUTTON">
-				<event load="TWISTED_LANIUS_SURGE"/>
-				<image>statusUI/button_surge_defend</image>
-				<location>0</location>
-				<customLocation x="150" y="94"/>
-				<tooltip>Fire a surge of all your equipped flaks.</tooltip>
-				<inactiveTooltip>Unavailable: Already fired.</inactiveTooltip>
-				<color r="255" g="255" b="255"/>
-				<activeColor r="255" g="255" b="255"/>
-				<inactiveColor r="160" g="162" b="171"/>
-				<selectedColor r="58" g="127" b="255"/>
-				<textColor r="23" g="44" b="62"/>
-				<jumpClear>false</jumpClear>
-				<noDanger>false</noDanger>
-				<once>true</once>
-				<hideInactive>false</hideInactive>
-			</eventButton>
-		</event>
-		<!--Do not touch the following comment, it is a marker string for a script-->
-		<!--START_OF_FLAK_INSERTION-->
+	<event name="TWISTED_LANIUS_SURGE_BUTTON_SPAWN">
+		<eventButton name="UI_TWISTED_LANIUS_SURGE_BUTTON">
+			<event load="TWISTED_LANIUS_SURGE"/>
+			<image>statusUI/button_surge_defend</image>
+			<location>0</location>
+			<customLocation x="150" y="94"/>
+			<tooltip>Fire a surge of all your equipped flaks.</tooltip>
+			<inactiveTooltip>Unavailable: Already fired.</inactiveTooltip>
+			<color r="255" g="255" b="255"/>
+			<activeColor r="255" g="255" b="255"/>
+			<inactiveColor r="160" g="162" b="171"/>
+			<selectedColor r="58" g="127" b="255"/>
+			<textColor r="23" g="44" b="62"/>
+			<jumpClear>false</jumpClear>
+			<noDanger>false</noDanger>
+			<once>true</once>
+			<hideInactive>false</hideInactive>
+		</eventButton>
+	</event>
+	<!--Do not touch the following comment, it is a marker string for a script-->
+	<!--START_OF_FLAK_INSERTION-->
 
 
 	<event name="TWISTED_LANIUS_SURGE">
@@ -1294,7 +1294,7 @@
 	</event>
 
 
-<!--END_OF_FLAK_INSERTION-->
+		<!--END_OF_FLAK_INSERTION-->
 		<!--Do not touch the previous comment, it is a marker string for a script-->
 
 
@@ -1974,7 +1974,17 @@ Only respects stronger computers
 		<status type="limit" target="player" system="shields" amount="4" />
 	</event>
 	<event name="LOAD_MAGNETIC">
-		<status type="loss" target="player" system="reactor" amount="3" />
+		<loadEventList first="true">
+			<event req="reactor" lvl="3">
+				<status type="loss" target="player" system="reactor" amount="3" />
+			</event>
+			<event req="reactor" lvl="2">
+				<status type="loss" target="player" system="reactor" amount="2" />
+			</event>
+			<event req="reactor" lvl="1">
+				<status type="loss" target="player" system="reactor" amount="1" />
+			</event>
+		</loadEventList>
 	</event>
 
 	<event name="RELIMIT_WEAPONS_0">
