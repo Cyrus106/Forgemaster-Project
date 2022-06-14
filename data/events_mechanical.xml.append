@@ -2,6 +2,7 @@
 	<mod:findName type="event" name="FMCORE_ONJUMP">
 		<mod-append:queueEvent>FM_JUMP_REMOVE_GHOST_PURGE</mod-append:queueEvent>
 		<mod-append:queueEvent>FM_JUMP_TUCO</mod-append:queueEvent>
+		<mod-append:queueEvent>FM_JUMP_LANIUS</mod-append:queueEvent>
 		<mod-append:queueEvent>FM_JUMP_LEECH</mod-append:queueEvent>
 		<mod-append:queueEvent>FM_JUMP_MONK</mod-append:queueEvent>
 		<mod-append:queueEvent>FM_JUMP_LOSTSUN</mod-append:queueEvent>
@@ -78,6 +79,46 @@
 			<hideInactive>false</hideInactive>
 		</eventButton>
 	</event>
+
+		<!--Twisted Lanius-->
+		<event name="TWISTED_LANIUS_SURGE_BUTTON_SPAWN_INITIAL">
+			<triggeredEvent event="TWISTED_LANIUS_SURGE_BUTTON_SPAWN" time="10" thisFight="true">
+				<triggeredEventBox load="DEFAULT_SMALL">
+					<tooltip>Charging Surge!</tooltip>
+				</triggeredEventBox>
+			</triggeredEvent>
+		</event>
+
+		<event name="TWISTED_LANIUS_SURGE_BUTTON_SPAWN">
+			<eventButton name="UI_TWISTED_LANIUS_SURGE_BUTTON">
+				<event load="TWISTED_LANIUS_SURGE"/>
+				<image>statusUI/button_surge_defend</image>
+				<location>0</location>
+				<customLocation x="150" y="94"/>
+				<tooltip>Fire a surge of all your equipped flaks.</tooltip>
+				<inactiveTooltip>Unavailable: Already fired.</inactiveTooltip>
+				<color r="255" g="255" b="255"/>
+				<activeColor r="255" g="255" b="255"/>
+				<inactiveColor r="160" g="162" b="171"/>
+				<selectedColor r="58" g="127" b="255"/>
+				<textColor r="23" g="44" b="62"/>
+				<jumpClear>false</jumpClear>
+				<noDanger>false</noDanger>
+				<once>true</once>
+				<hideInactive>false</hideInactive>
+			</eventButton>
+		</event>
+		<!--Do not touch the following comment, it is a marker string for a script-->
+		<!--MSTLS-1-->
+		<event name="TWISTED_LANIUS_SURGE">
+			<text>You fire a surge of flak!</text>
+
+
+
+		</event>
+		<!--MSTLS-1-->
+		<!--Do not touch the previous comment, it is a marker string for a script-->
+
 
 
 
@@ -673,6 +714,15 @@ Only respects stronger computers
 		<loadEventList>
 			<event req="LOCKED_TAROT_CARDS" lvl="1">
 				<queueEvent>TWISTED_TUCO_BUTTON_SPAWN_INITIAL</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+
+	<event name="FM_JUMP_LANIUS">
+		<loadEventList>
+			<event req="TWISTED_FLAK_FORGE" lvl="1">
+				<queueEvent>TWISTED_LANIUS_SURGE_BUTTON_SPAWN_INITIAL</queueEvent>
 			</event>
 		</loadEventList>
 	</event>
