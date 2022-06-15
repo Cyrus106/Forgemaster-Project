@@ -1283,7 +1283,7 @@ boo womp</desc>
 		<maxPower amount="8" />
 		<crewCount amount="1" class="slug_knight" />
 		<crewCount amount="1" class="slug_ranger" />
-		<crewCount amount="1" class="slug_slocknog" />
+		<crewCount amount="1" class="slug_saboteur" />
 		<crewCount amount="1" class="husk_slug_player" />
 		<aug name="TWISTED_ANCIENT_BOUNTY"/>
 	</shipBlueprint>
@@ -1592,7 +1592,7 @@ boo womp</desc>
 		<health amount="30" />
 		<maxPower amount="7" />
 		<crewCount amount="1" class="shell" />
-		<crewCount amount="1" class="shell_alkali" />
+		<crewCount amount="1" class="shell_scientist" />
 		<crewCount amount="1" class="shell_mechanic" />
 		<crewCount amount="1" class="shell_guardian" />
 		<aug name="LOCKED_DECONSTRUCTIVE_GAS" />
@@ -1971,7 +1971,7 @@ boo womp</desc>
 		<maxPower amount="8" />
 		<crewCount amount="1" class="crystal_sentinel" />
 		<crewCount amount="1" class="rock" />
-		<crewCount amount="1" class="unique_dianesh" />
+		<crewCount amount="1" class="unique_ruwen" />
 		<crewCount amount="1" class="crystal" />
 		<aug name="LOCKED_TWISTED_CRYSTAL_ARMOR_50" />
 		<aug name="COMBAT_REPAIR" />
@@ -2053,7 +2053,7 @@ boo womp</desc>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED7_3" layout="zmt_player_leech_suicide" img="player_ship_cracked_zmt_boss_leech_suicide">
 		<class>Twisted Renegade Leech</class>
 		<name>Despondancy</name>
-		<desc>The depressed leech owner of this ship installed a special custom-made device into it that allowed everyone to feel the pain he felt. He named it the Depression Emitter, and it makes all crew on the enemy ship drain power from their own ship.</desc>
+		<desc>The depressed leech owner of this ship installed a special custom-made device into it that allowed everyone to feel the pain he felt. He named it the Motivation Succer, and it makes all crew on the enemy ship drain power from their own ship.</desc>
 		<systemList>
 			<artillery power="1" room="10" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
 			<battery power="1" room="11" start="false" img="room_battery_8" />
@@ -2122,7 +2122,7 @@ boo womp</desc>
 		</droneList>
 		<health amount="30" />
 		<maxPower amount="7" />
-		<crewCount amount="1" class="unique_tonysr" />
+		<crewCount amount="1" class="leech_ampere" />
 		<crewCount amount="1" class="leech_ampere" />
 		<crewCount amount="1" class="leech" />
 		<crewCount amount="1" class="leech" />
