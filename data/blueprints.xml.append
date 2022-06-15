@@ -1283,7 +1283,7 @@ boo womp</desc>
 		<maxPower amount="8" />
 		<crewCount amount="1" class="slug_knight" />
 		<crewCount amount="1" class="slug_ranger" />
-		<crewCount amount="1" class="slug_saboteur" />
+		<crewCount amount="1" class="unique_slocknog" />
 		<crewCount amount="1" class="husk_slug_player" />
 		<aug name="TWISTED_ANCIENT_BOUNTY"/>
 	</shipBlueprint>
@@ -1435,7 +1435,6 @@ boo womp</desc>
 		<health amount="30" />
 		<maxPower amount="7" />
 		<aug name="LAB_ZOLTAN_LIMIT_RELEASE" />
-		<aug name="FM_ZOLTAN_PERSONAL_SHIELD" />
 	</shipBlueprint>
 
 	<shipBlueprint name="PLAYER_SHIP_TWISTED5" layout="zmt_player_lanius_suicide" img="zmt_player_lanius_suicide">
@@ -1592,7 +1591,7 @@ boo womp</desc>
 		<health amount="30" />
 		<maxPower amount="7" />
 		<crewCount amount="1" class="shell" />
-		<crewCount amount="1" class="shell_scientist" />
+		<crewCount amount="1" class="unique_alkali" />
 		<crewCount amount="1" class="shell_mechanic" />
 		<crewCount amount="1" class="shell_guardian" />
 		<aug name="LOCKED_DECONSTRUCTIVE_GAS" />
@@ -1971,7 +1970,7 @@ boo womp</desc>
 		<maxPower amount="8" />
 		<crewCount amount="1" class="crystal_sentinel" />
 		<crewCount amount="1" class="rock" />
-		<crewCount amount="1" class="unique_ruwen" />
+		<crewCount amount="1" class="unique_dianesh" />
 		<crewCount amount="1" class="crystal" />
 		<aug name="LOCKED_TWISTED_CRYSTAL_ARMOR_50" />
 		<aug name="COMBAT_REPAIR" />
@@ -2038,7 +2037,7 @@ boo womp</desc>
 		</systemList>
 		<weaponSlots>4</weaponSlots>
 		<droneSlots>2</droneSlots>
-		<weaponList missiles="0" count="14">
+		<weaponList missiles="14" count="1">
 			<weapon name="SLOTGUN" />
 			<weapon name="LASER_BURST_2" />
 		</weaponList>
@@ -2053,7 +2052,7 @@ boo womp</desc>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED7_3" layout="zmt_player_leech_suicide" img="player_ship_cracked_zmt_boss_leech_suicide">
 		<class>Twisted Renegade Leech</class>
 		<name>Despondancy</name>
-		<desc>The depressed leech owner of this ship installed a special custom-made device into it that allowed everyone to feel the pain he felt. He named it the Depression Emitter, and it makes all crew on the enemy ship drain power from their own ship.</desc>
+		<desc>The depressed leech owner of this ship installed a special custom-made device into it that allowed everyone to feel the pain he felt. He named it the Motivation Succer, and it makes all crew on the enemy ship drain power from their own ship.</desc>
 		<systemList>
 			<artillery power="1" room="10" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
 			<battery power="1" room="11" start="false" img="room_battery_8" />
@@ -2122,7 +2121,7 @@ boo womp</desc>
 		</droneList>
 		<health amount="30" />
 		<maxPower amount="7" />
-		<crewCount amount="1" class="leech_ampere" />
+		<crewCount amount="1" class="unique_tonysr" />
 		<crewCount amount="1" class="leech_ampere" />
 		<crewCount amount="1" class="leech" />
 		<crewCount amount="1" class="leech" />
@@ -19431,8 +19430,8 @@ boo womp</desc>
 
 	<augBlueprint name="LAB_ZOLTAN_LIMIT_RELEASE">
 		<title>Zoltan Limit Release</title>
-		<desc>Your Zoltans gain an active ability that reduces damage taken by 40% and increases damage dealt by 30%. They do not supply bonus power while this ability is active.</desc>
-		<cost>50</cost>
+		<desc>Your Zoltans gain an active ability that reduces damage taken by 40% and increases damage dealt by 30%. They do not supply bonus power while this ability is active. Alongside this, Zoltan gain an extra 15 health and your ship gains a 5 HP Zoltan Shield.</desc>
+		<cost>120</cost>
 		<rarity>0</rarity>
 		<stackable>false</stackable>
 	</augBlueprint>
