@@ -1049,12 +1049,12 @@
       <event load="OPTION_INVALID"/>
     </choice>
 
-    <choice req="FM_BEAM_ION_PIERCE_FORGE_LIST_STORAGE" lvl="1" blue="false" hidden="true">
+    <choice req="FM_BEAM_ION_PIERCE_FORGE_LIST" lvl="1" blue="false" hidden="true">
       <text>Combine the 'Ranseur' with a Basic Ion or Ion Barrage Mark I to forge this weapon.</text>
       <event load="STORAGE_CHECK_CREATE_FM_BEAM_ION_PIERCE"/>
     </choice>
 
-    <choice req="FM_BEAM_ION_PIERCE_FORGE_LIST_STORAGE" lvl="0" max_lvl="0" blue="false" hidden="true">
+    <choice req="FM_BEAM_ION_PIERCE_FORGE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
       <text>Need a Ranseur plus either a Basic Ion or Ion Barrage Mark I to create.</text>
       <event load="OPTION_INVALID"/>
     </choice>

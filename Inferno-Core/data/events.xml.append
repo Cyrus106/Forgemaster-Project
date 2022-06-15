@@ -43,5 +43,65 @@
       <noDanger>false</noDanger>
     </mod-append:eventButton>
 	</mod:findName>
-
+	<event name="FMCORE_RESET_BUTTONS">
+		<clearEventButton name="ADDON_TRC"/>
+		<clearEventButton name="UI_STORAGE_CHECK_BUTTON"/>
+		<clearEventButton name="UI_TOGGLE_BUTTON"/>
+		<clearEventButton name="ADDON_FMCORE"/>
+		<clearEventButton name="ADDON_FORGEMASTER"/>
+		<clearEventButton name="ADDON_GB"/>
+		<loadEvent>FM_CORE_RESET_BUTTONS_2</loadEvent>
+	</event>
+	<event name="FM_CORE_RESET_BUTTONS_2">
+		<eventButton name="ADDON_TRC">
+      <event load="ADDON_TRC_INFO"/>
+      <image border="0">addons/trc</image>
+      <customLocation x="115" y="7"/>
+      <tooltip id="addon_hover_trc"/>
+      <jumpClear>false</jumpClear>
+      <noDanger>false</noDanger>
+    </eventButton>
+		<eventButton name="UI_STORAGE_CHECK_BUTTON">
+      <event load="STORAGE_CHECK_BUTTON"/>
+      <image>statusUI/top_storage</image>
+      <location>2</location>
+      <tooltip>Open the storage menu.</tooltip>
+      <inactiveTooltip>Unavailable: You cannot do this while in danger!</inactiveTooltip>
+      <jumpClear>false</jumpClear>
+      <noDanger>true</noDanger>
+    </eventButton>
+		<eventButton name="UI_TOGGLE_BUTTON">
+      <event load="COMBAT_CHECK_TOGGLE_BUTTON"/>
+      <image>statusUI/top_toggle</image>
+      <customLocation x="105" y="94"/>
+      <tooltip>Toggle a drone or weapon.</tooltip>
+      <inactiveTooltip>Unavailable!</inactiveTooltip>
+      <jumpClear>false</jumpClear>
+      <noDanger>false</noDanger>
+    </eventButton>
+		<eventButton name="ADDON_FMCORE">
+      <event load="ADDON_FMCORE_INFO"/>
+      <image border="0">addons/fmcore</image>
+      <customLocation x="139" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
+      <tooltip id="addon_hover_fmcore"/>
+      <jumpClear>false</jumpClear>
+      <noDanger>false</noDanger>
+    </eventButton>
+		<eventButton name="ADDON_FORGEMASTER">
+      <event load="ADDON_FORGEMASTER_INFO"/>
+      <image border="0">addons/fm</image>
+      <customLocation x="163" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
+      <tooltip id="addon_hover_forgemaster"/>
+      <jumpClear>false</jumpClear>
+      <noDanger>false</noDanger>
+    </eventButton>
+		<eventButton name="ADDON_GB">
+      <event load="ADDON_GB_INFO"/>
+      <image border="0">addons/gb</image>
+      <customLocation x="187" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
+      <tooltip id="addon_hover_gb"/>
+      <jumpClear>false</jumpClear>
+      <noDanger>false</noDanger>
+    </eventButton>
+	</event>
 </FTL>
