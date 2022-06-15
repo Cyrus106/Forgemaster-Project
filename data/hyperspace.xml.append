@@ -9942,6 +9942,11 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 
 		<aug name="LAB_ZOLTAN_LIMIT_RELEASE">
+			<superShield>
+				<add>5</add>
+				<color r="0" g="255" b="0" a="0.8"/>
+				<shieldImage>ship/enemy_shields_white.png</shieldImage>
+			</superShield>
 			<statBoosts>
 				<statBoost name="powerEffect">
 					<boostType>SET</boostType>
@@ -9949,6 +9954,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<crewTarget>ALLIES</crewTarget>
 					<whiteList>
 						<zoltan/>
+						<zoltan_peacekeeper/>
 					</whiteList>
 					<powerEffect>
 						<cooldown>20</cooldown>
@@ -9970,6 +9976,23 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 							<bonusPowerMultiplier>0</bonusPowerMultiplier>
 						</temporaryEffect>
 					</powerEffect>
+				</statBoost>
+				
+				<statBoost name="maxHealth">
+					<boostType>FLAT</boostType>
+					<amount>15</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<priority>999</priority>
+					<whiteList>
+						<zoltan/>
+						<zoltan_peacekeeper/>
+						<zoltan_monk/>
+						<zoltan_devotee/>
+						<zoltan_osmian/>
+						<zoltan_osmian_hologram/>
+					</whiteList>
+
 				</statBoost>
 			</statBoosts>
 		</aug>
