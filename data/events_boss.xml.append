@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FTL>
+	<mod:findName type="event" name="LAST_STAND_START"><!--appending the part of the code that resets the makres for which menus were used-->
+	  <mod-append:variable name="fm_called_forgemaster" op="set" val="0"/>
+	</mod:findName>
+
 
 	<mod:findName type="event" name="TRUE_LAST_STAND_START">
 		<mod-append:queueEvent>FORGEMASTER_SPAWNER</mod-append:queueEvent>

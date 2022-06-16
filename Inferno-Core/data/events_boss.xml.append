@@ -1,0 +1,4 @@
+<mod:findName type="event" name="LAST_STAND_START"><!--appending the part of the code that resets the makres for which menus were used-->
+  <mod-append:variable name="fmcore_used_hs_aug" op="set" val="0"/>
+  <mod-append:variable name="fmcore_called_cura" op="set" val="0"/>
+</mod:findName>
