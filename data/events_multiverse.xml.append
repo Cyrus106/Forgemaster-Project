@@ -1440,8 +1440,18 @@
 			<text>Review Upgrade List</text>
 			<event load="FM_FORGE_WEAPON_UPGRADE_LOAD"/>
 		</choice>
+		<!--COMBAT DRONE CATEGORY-->
+		<choice req="FM_COMBAT_DRONE_FORGE_LIST" lvl="1"  max_group="9" hidden="true">
+			<text>Review Combat Drone List</text>
+			<event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
+		</choice>
 
-		<choice req="pilot" lvl="1" max_group="9" hidden="true" blue="false">
+		<choice req="FM_COMBAT_DRONE_FORGE_LIST" lvl="0" max_group="9" hidden="true" blue="false">
+			<text>Review Combat Drone List</text>
+			<event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
+		</choice>
+
+		<choice req="pilot" lvl="1" max_group="10" hidden="true" blue="false">
 			<text>Nevermind.</text>
 			<event load="FORGEMASTER_PHONE_EVENT_LOAD"/>
 		</choice>
@@ -6001,6 +6011,53 @@
 		</choice>
 	</event>
 
+	<!--COMBAT DRONE CRAFT CATEGORY-->
+	<event name="FM_FORGE_COMBAT_DRONE_LOAD">
+		<event/>
+	</event>
+
+	<event name="FM_FORGE_COMBAT_DRONE">
+		<text>Which combat drone would you like to craft?</text>
+		<checkCargo/>
+
+		<choice req="FM_ENERGY_COMBAT_BEAM1_LIST" lvl="1" blue="false" hidden="true">
+			<text>Align the central energy core of the Amp Energy Drone with the lenses of the Combat Drone MK. II's beam weapon to forge the 'Somebody Else Name This (Boo Womp)' Energy Beam Drone.[Cost: 0~]</text>
+			<event load="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_COMBAT_BEAM1"/>
+		</choice>
+
+		<choice req="FM_ENERGY_COMBAT_BEAM1_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+			<text>You must have an Amp Energy Drone and Combat Drone MK II to forge this drone.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+
+
+
+		<!--Back to main craft menu-->
+		<choice req="pilot" lvl="1" max_group="20" hidden="true" blue="false">
+			<text>Nevermind, back to main menu.</text>
+			<event load="FM_FORGE_WEAPON_LOAD"/>
+		</choice>
+	</event>
+
+
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_COMBAT_BEAM1">
+		<checkCargo/>
+    <text>Currently viewing the 'Somebody Else Name This (Boo Womp)' Energy Beam Drone.[Cost: 0~].</text>
+    <choice hidden="false" req="FM_ENERGY_COMBAT_BEAM1_LIST" blue="false">
+      <text>Craft the 'Somebody Else Name This (Boo Womp)' Energy Beam Drone.[Cost: 0~]</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <drone name="FM_ENERGY_COMBAT_BEAM1"/>
+				<queueEvent>FM_REMOVE_AMP_ENERGY</queueEvent><!--Removes one amp energy drone of ANY kind (toggle mode)-->
+        <queueEvent>FM_REMOVE_COMBAT_2</queueEvent><!--Removes one combat MK 2 drone of ANY kind (toggle mode)-->
+        <queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+      </event>
+    </choice>
+    <choice hidden="false">
+      <text>Nevermind.</text>
+      <event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
+    </choice>
+	</event>
 </FTL>
 
 

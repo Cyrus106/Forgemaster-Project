@@ -1452,6 +1452,16 @@
       <event load="STORAGE_CHECK"/>
     </choice>
 
+    <choice req="FM_ENERGY_COMBAT_BEAM1_LIST" lvl="1" blue="false" hidden="true">
+			<text>Align the central energy core of the Amp Energy Drone with the lenses of the Combat Drone MK. II's beam weapon to forge the 'Somebody Else Name This (Boo Womp)' Energy Beam Drone.[Cost: 0~]</text>
+			<event load="STORAGE_CHECK_CREATE_FM_ENERGY_COMBAT_BEAM1"/>
+		</choice>
+
+		<choice req="FM_ENERGY_COMBAT_BEAM1_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+			<text>You must have an Amp Energy Drone and Combat Drone MK II to forge this drone.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+
 
 
 
@@ -3407,6 +3417,28 @@
 	  </choice>
 	</event>
 
+
+
+  <event name="STORAGE_CHECK_CREATE_FM_ENERGY_COMBAT_BEAM1">
+		<checkCargo/>
+    <text>Currently viewing the 'Somebody Else Name This (Boo Womp)' Energy Beam Drone.[Cost: 0~].</text>
+    <choice hidden="false" req="FM_ENERGY_COMBAT_BEAM1_LIST" blue="false">
+      <text>Craft the 'Somebody Else Name This (Boo Womp)' Energy Beam Drone.[Cost: 0~]</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <drone name="FM_ENERGY_COMBAT_BEAM1"/>
+        <queueEvent>FM_REMOVE_AMP_ENERGY</queueEvent><!--Removes one amp energy drone of ANY kind (toggle mode)-->
+        <queueEvent>FM_REMOVE_COMBAT_2</queueEvent><!--Removes one combat MK 2 drone of ANY kind (toggle mode)-->
+        <queueEvent>STORAGE_CHECK_CREATE_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+      </event>
+    </choice>
+    <choice hidden="false">
+      <text>Nevermind.</text>
+      <event load="STORAGE_CHECK_CREATE_LOAD"/>
+    </choice>
+	</event>
+
+  
 </FTL>
 
 
