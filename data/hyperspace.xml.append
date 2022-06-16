@@ -2926,6 +2926,14 @@
 			<checkCargo/>
 		</event>
 
+		<event name="FM_FORGE_COMBAT_DRONE_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_UPGRADE_LISTFULL_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->
+			<loadEvent>FM_FORGE_COMBAT_DRONE</loadEvent>
+		</event>
+		<event name="FM_FORGE_COMBAT_DRONE" recursive="true">
+			<checkCargo/>
+		</event>
+
+	
 
 	</events>
 
@@ -3100,6 +3108,23 @@
 			<name>FM_SHOTGUN_NOBELIUM</name>
 		</req>
 
+		<req name="FM_COMBAT_DRONE_FORGE_LIST" type="any">
+			<name>FM_ENERGY_COMBAT_BEAM1_LIST</name>
+		</req>
+
+		<req name="FM_ENERGY_COMBAT_BEAM1_LIST" type="all">
+			<req type="any">
+				<name>ENERGY_1_AMP2</name>
+				<name>ENERGY_1_AMP3</name>
+				<name>ENERGY_1_AMP4</name>
+			</req>
+			<req type="any">
+				<name>COMBAT_2_LASER</name>
+				<name>COMBAT_2_BEAM</name>
+			</req>
+
+		</req>
+
 		<!-- FULL CHECK, CHECKS ALL LISTS FOR VERY SPECIFIC EVENTS -->
 		<req name="FM_FORGE_LIST_CHECK" type="any"> <!-- If none are met, show the recipe list at the storage check! These are all ingredient checks -->
 			<name>FM_LASER_FORGE_LIST</name>
@@ -3109,6 +3134,7 @@
 			<name>FM_EXPLOSIVE_FORGE_LIST</name>
 			<name>FM_FLAK_FORGE_LIST</name>
 			<name>FM_ORGANIC_FORGE_LIST</name>
+			<name>FM_COMBAT_DRONE_FORGE_LIST</name>
 		</req>
 		<!-- FULL CHECK, CHECKS ALL LISTS FOR VERY SPECIFIC EVENTS. STORAGE CHECK VERSION -->
 		<req name="FM_FORGE_LIST_CHECK_STORAGE" type="all"> <!-- If none are met, show the recipe list at the storage check! These are all ingredient checks -->

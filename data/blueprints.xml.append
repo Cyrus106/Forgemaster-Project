@@ -12307,11 +12307,11 @@ boo womp</desc>
 		<tip>bomb_biohazard</tip>
 		<title>Project #22: Unnamed</title>
 		<short>Project #22</short>
-		<desc>The blueprints of this weapon and its counterpart, Project #7, were created by a Crystal scientist devoted to learning how to kill every lifeform in the galaxy. She's gone now, but you're proud to uphold her heritage. This one uses nano-corrosive crystals to erase the target's DNA.</desc>
+		<desc>The blueprints of this weapon and its counterpart, Project #7, were created by a Crystal scientist devoted to learning how to kill every lifeform in the galaxy. She's gone now, but you're proud to uphold her heritage. This one uses nano-corrosive crystals to erase the target's DNA, making them take damage over time and be uncloneable.</desc>
 		<tooltip>This bomb prevents the crew hit from healing from med bays, or being revived by cloned bays. 30 second duration. Great for Crew Killing ships with Clone Bays</tooltip>
 		<damage>0</damage>
 		<sysDamage>3</sysDamage>
-		<persDamage>4</persDamage>   <!--60 crew damage-->
+		<persDamage>6</persDamage>   <!--90 crew damage-->
 		<missiles>1</missiles>
 		<accuracyMod>30</accuracyMod>
 		<shots>1</shots>
