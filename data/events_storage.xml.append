@@ -3374,7 +3374,12 @@
 	      <choice hidden="true">
 	        <text>Continue...</text>
 					<event>
-						<loadEvent>REMOVE_AC4</loadEvent>
+            <!--<loadEvent>REMOVE_AC4</loadEvent>-->
+						<queueEvent>FM_REMOVE_AC_1</queueEvent><!--Runs the "remove one AC_1 variant event" 4 times-->
+						<queueEvent>FM_REMOVE_AC_1</queueEvent>
+						<queueEvent>FM_REMOVE_AC_1</queueEvent>
+						<queueEvent>FM_REMOVE_AC_1</queueEvent>
+						<queueEvent>STORAGE_CHECK_CREATE_LOAD</queueEvent><!--Loads the correct menu after crafting is done-->
 					</event>
 	      </choice>
 	    </event>
@@ -3390,7 +3395,11 @@
 	      <choice hidden="true">
 	        <text>Continue...</text>
 					<event>
-						<loadEvent>REMOVE_AC3</loadEvent>
+						<!--<loadEvent>REMOVE_AC3</loadEvent>-->
+            <queueEvent>FM_REMOVE_AC_1</queueEvent><!--Runs the "remove one AC_1 variant event" 3 times-->
+						<queueEvent>FM_REMOVE_AC_1</queueEvent>
+						<queueEvent>FM_REMOVE_AC_1</queueEvent>
+						<queueEvent>STORAGE_CHECK_CREATE_LOAD</queueEvent><!--Loads the correct menu after crafting is done-->
 					</event>
 	      </choice>
 	    </event>
@@ -3406,7 +3415,10 @@
 	      <choice hidden="true">
 	        <text>Continue...</text>
 					<event>
-						<loadEvent>REMOVE_AC2</loadEvent>
+						<!--<loadEvent>REMOVE_AC2</loadEvent>-->
+            <queueEvent>FM_REMOVE_AC_1</queueEvent><!--Runs the "remove one AC_1 variant event" 2 times-->
+						<queueEvent>FM_REMOVE_AC_1</queueEvent>
+						<queueEvent>STORAGE_CHECK_CREATE_LOAD</queueEvent><!--Loads the correct menu after crafting is done-->
 					</event>
 	      </choice>
 	    </event>
@@ -3438,7 +3450,7 @@
     </choice>
 	</event>
 
-  
+
 </FTL>
 
 
