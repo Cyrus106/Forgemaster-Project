@@ -3616,6 +3616,16 @@ try this later
 		<chargeImage>weapon_beams/fm_beam_ion_special_glow.png</chargeImage>
 	</weaponAnim>
 
+	<animSheet name="fm_beam_eternity" w="470" h="119" fw="47" fh="119">weapon_beams/beam_eternity_strip10.png</animSheet>
+	<weaponAnim name="fm_beam_eternity">
+		<sheet>fm_beam_eternity</sheet>
+		<desc length="10" x="0" y="0"/>
+		<chargedFrame>1</chargedFrame>
+		<fireFrame>2</fireFrame>
+		<firePoint  x="17" y="82"/>
+		<mountPoint x="1" y="97"/>
+		<chargeImage>weapon_beams/beam_eternity_glow.png</chargeImage>
+	</weaponAnim>
 </FTL>
 
 <FTL><!-- FOCUS-->

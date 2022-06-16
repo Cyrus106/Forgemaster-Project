@@ -10300,6 +10300,38 @@ boo womp</desc>
 		<iconImage>beam</iconImage>
 	</weaponBlueprint>
 
+	<weaponBlueprint name="FM_BEAM_ETERNITY">
+		<type>BEAM</type>
+		<title>'Eternity' Beam</title>
+		<short>'Eternity' B.</short>
+		<desc>The weapon which the weapon this weapon was based on is based on used to "cut grass", likewise any fleet before this weapon will probably be likewise cut down...</desc>
+		<tooltip>Beam weapon, 2 damage to hull, 3 damage to system per room.</tooltip>
+		<damage>1</damage>
+		<sp>1</sp>
+		<sysDamage>0</sysDamage>
+		<persDamage>0</persDamage>
+		<fireChance>2</firechance>
+		<breachChance>1</breachChance>
+		<cooldown>21</cooldown>
+		<power>3</power>
+		<cost>200</cost>
+		<bp>7</bp>
+		<color>
+			<r>163</r>
+			<g>106</g>
+			<b>226</b>
+		</color>
+		<rarity>0</rarity>
+		<length>200</length>
+		<speed>30</speed>
+		<image>beam_contact</image>
+		<launchSounds>
+			<sound>beam2</sound>
+		</launchSounds>
+		<weaponArt>fm_beam_eternity</weaponArt>
+		<iconImage>beam</iconImage>
+	</weaponBlueprint>
+
 </FTL>
 
 <FTL> <!--FOCUS-->
@@ -12307,11 +12339,11 @@ boo womp</desc>
 		<tip>bomb_biohazard</tip>
 		<title>Project #22: Unnamed</title>
 		<short>Project #22</short>
-		<desc>The blueprints of this weapon and its counterpart, Project #7, were created by a Crystal scientist devoted to learning how to kill every lifeform in the galaxy. She's gone now, but you're proud to uphold her heritage. This one uses nano-corrosive crystals to erase the target's DNA, making them take damage over time and be uncloneable.</desc>
+		<desc>The blueprints of this weapon and its counterpart, Project #7, were created by a Crystal scientist devoted to learning how to kill every lifeform in the galaxy. She's gone now, but you're proud to uphold her heritage. This one uses nano-corrosive crystals to erase the target's DNA.</desc>
 		<tooltip>This bomb prevents the crew hit from healing from med bays, or being revived by cloned bays. 30 second duration. Great for Crew Killing ships with Clone Bays</tooltip>
 		<damage>0</damage>
 		<sysDamage>3</sysDamage>
-		<persDamage>6</persDamage>   <!--90 crew damage-->
+		<persDamage>4</persDamage>   <!--60 crew damage-->
 		<missiles>1</missiles>
 		<accuracyMod>30</accuracyMod>
 		<shots>1</shots>
