@@ -10300,38 +10300,6 @@ boo womp</desc>
 		<iconImage>beam</iconImage>
 	</weaponBlueprint>
 
-	<weaponBlueprint name="FM_BEAM_ETERNITY">
-		<type>BEAM</type>
-		<title>'Eternity' Beam</title>
-		<short>'Eternity' B.</short>
-		<desc>The weapon which the weapon this weapon was based on is based on used to "cut grass", likewise any fleet before this weapon will probably be likewise cut down...</desc>
-		<tooltip>Beam weapon, 2 damage to hull, 3 damage to system per room.</tooltip>
-		<damage>1</damage>
-		<sp>1</sp>
-		<sysDamage>0</sysDamage>
-		<persDamage>0</persDamage>
-		<fireChance>2</firechance>
-		<breachChance>1</breachChance>
-		<cooldown>21</cooldown>
-		<power>3</power>
-		<cost>200</cost>
-		<bp>7</bp>
-		<color>
-			<r>163</r>
-			<g>106</g>
-			<b>226</b>
-		</color>
-		<rarity>0</rarity>
-		<length>200</length>
-		<speed>30</speed>
-		<image>beam_contact</image>
-		<launchSounds>
-			<sound>beam2</sound>
-		</launchSounds>
-		<weaponArt>fm_beam_eternity</weaponArt>
-		<iconImage>beam</iconImage>
-	</weaponBlueprint>
-
 </FTL>
 
 <FTL> <!--FOCUS-->
@@ -12829,7 +12797,7 @@ boo womp</desc>
 		<short>Eradic. II</short>
 		<desc>A powerful weapon of destruction predating any modern Beam, which does massive amounts of damage.</desc>
 		<tooltip>One damage per room beam weapon</tooltip>
-		<damage>2</damage>
+		<damage>3</damage>
 		<sp>0</sp>
 		<fireChance>0</fireChance>
 		<breachChance>10</breachChance>
@@ -12878,7 +12846,7 @@ boo womp</desc>
 		<short>Eradic. III</short>
 		<desc>A powerful weapon of destruction predating any modern Beam, which does massive amounts of damage.</desc>
 		<tooltip>One damage per room beam weapon</tooltip>
-		<damage>3</damage>
+		<damage>4</damage>
 		<sp>0</sp>
 		<fireChance>0</fireChance>
 		<breachChance>10</breachChance>
@@ -12927,7 +12895,7 @@ boo womp</desc>
 		<short>Eradic. III</short>
 		<desc>A powerful weapon of destruction predating any modern Beam, which does massive amounts of damage.</desc>
 		<tooltip>One damage per room beam weapon</tooltip>
-		<damage>4</damage>
+		<damage>5</damage>
 		<sp>0</sp>
 		<stun>9</stun>
 		<fireChance>10</fireChance>
@@ -12969,7 +12937,7 @@ boo womp</desc>
 	    <power>2</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
-	    <speed>15</speed>
+	    <speed>25</speed>
 	    <cost>150</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_amber_drone</droneImage>
@@ -13027,7 +12995,7 @@ boo womp</desc>
 	    <power>2</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
-	    <speed>7</speed>
+	    <speed>25</speed>
 	    <cost>100</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_crystal_drone</droneImage>
@@ -13090,7 +13058,7 @@ boo womp</desc>
 	    <power>-2</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
-	    <speed>10</speed>
+	    <speed>25</speed>
 	    <cost>100</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_cura_drone</droneImage>
@@ -13105,7 +13073,7 @@ boo womp</desc>
 	    <desc>Launches a boarding drone into the enemy ship.</desc>
 	    <damage>0</damage>
 	    <shots>1</shots>
-	    <accuracyMod>2</accuracyMod>
+	    <accuracyMod>10</accuracyMod>
 	    <rarity>0</rarity>
 	    <sp>10</sp>
 	    <spawnCrew>
@@ -13160,7 +13128,7 @@ boo womp</desc>
 	    <power>2</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
-	    <speed>16</speed>
+	    <speed>25</speed>
 	    <cost>100</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_flamethrower_drone</droneImage>
@@ -13240,8 +13208,8 @@ boo womp</desc>
 	    <power>2</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>10</dodge>
-	    <speed>7</speed>
-	    <cost>250</cost>
+	    <speed>25</speed>
+	    <cost>100</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_forgeman_drone</droneImage>
 	    <weaponBlueprint>FM_FORGEMAN_DRONE_WEAPON</weaponBlueprint>
@@ -13253,8 +13221,8 @@ boo womp</desc>
 		<title>'Valefor' Beam</title>
 		<short>'Valefor' B.</short>
 		<desc>Superheats the air creating multiple explosions as it sweeps across the enemy ship! Explosions deal damage to all crew in the room as well. Explosions deal Hull, System, and Crew Damage.</desc>
-		<damage>1</damage>
-		<sp>1</sp>
+		<damage>2</damage>
+		<sp>0</sp>
 		<fireChance>0</fireChance>
 		<breachChance>2</breachChance>
 		<cooldown>22</cooldown>
@@ -13309,8 +13277,8 @@ boo womp</desc>
 	    <power>2</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
-	    <speed>5</speed>
-	    <cost>250</cost>
+	    <speed>25</speed>
+	    <cost>100</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_ishimura_drone</droneImage>
 	    <weaponBlueprint>FM_ISHIMURA_DRONE_WEAPON</weaponBlueprint>
@@ -13323,8 +13291,8 @@ boo womp</desc>
 		<short>Ishimura B.</short>
 		<desc>Rumors have been circulating about a new prototype Mining Laser, the 'Zulfiqar Planet Cracker' created by Zulfiqar Industries that is used for Planet Cracking. Looks like they weren't rumors.</desc>
 		<damage>2</damage>
-		<sysDamage>1</sysDamage>
-		<sp>2</sp>
+		<sysDamage>2</sysDamage>
+		<sp>3</sp>
 		<breachChance>8</breachChance>
 		<cost>400</cost>
 		<bp>7</bp>
@@ -13353,7 +13321,7 @@ boo womp</desc>
 			<power>2</power>
 			<cooldown>1000</cooldown>
 			<dodge>0</dodge>
-			<speed>12</speed>
+			<speed>25</speed>
 			<cost>100</cost>
 			<bp>3</bp>
 			<droneImage>fm_kestrel_drone</droneImage>
@@ -13422,8 +13390,7 @@ boo womp</desc>
 		<title>MFK Kestrel Drone Laser Scatter</title>
 		<short>MFK. Scatter</short>
 		<desc>Fires a barrage of light lasers.</desc>
-		<damage>1</damage>
-		<sysDamage>-1</sysDamage>
+		<damage>0</damage>
 		<shots>1</shots>
 		<accuracyMod>10</accuracyMod>
 		<rarity>0</rarity>
@@ -13460,9 +13427,9 @@ boo womp</desc>
 
 	<droneBlueprint name="FM_MFK_PICKET_DRONE">
 	    <type>COMBAT</type>
-	    <title>MFK Picket Combat Drone</title>
-	    <short>P. Comb. Drone</short>
-	    <desc>This drone will board you with several MFKs. How? No idea!</desc>
+	    <title>MFK Picket Teleporter Relay</title>
+	    <short>MFK Tele. Rel.</short>
+	    <desc>This drone will constantly board the enemy ship with highly trained soldiers, but cannot lock on through any amount of shields.</desc>
 	    <power>2</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
@@ -13474,20 +13441,22 @@ boo womp</desc>
 	    <rarity>0</rarity>
 	    <iconImage>combat</iconImage>
 	</droneBlueprint>
+
 	<weaponBlueprint name="FM_MFK_PICKET_DRONE_WEAPON">
 		<type>LASER</type>
 		<title>Picket Boarder Launcher</title>
 		<short>P. Board. Launch.</short>
-		<desc>Boards with 4 MFK at once, because why not.</desc>
+		<desc>Boarding weapon.</desc>
 		<damage>0</damage>
 		<shots>1</shots>
-		<accuracyMod>10</accuracyMod>
+		<speed>300</speed>
+		<accuracyMod>100</accuracyMod>
 		<rarity>0</rarity>
-		<sp>10</sp>
+		<sp>0</sp>
 		<spawnCrew>
 				<race>human_mfk</race>
-				<number>4</number>
-
+				<lifetime>10</lifetime>
+				<number>1</number>
 				<noSlot>true</noSlot>
 				<statBoosts>
 						<statBoost name="noClone">
@@ -13497,26 +13466,22 @@ boo womp</desc>
 								<crewTarget>ALL</crewTarget>
 								<priority>999999</priority>
 						</statBoost>
-
 				</statBoosts>
 		</spawnCrew>
-		<image>fm_drone_artillery_shot</image>
+		<image>nothing</image>
 		<launchSounds>
-				<sound>smallMissile1</sound>
-				<sound>smallMissile2</sound>
+				<sound>silence</sound>
 		</launchSounds>
 		<hitShipSounds>
-				<sound>hitHull2</sound>
-				<sound>hitHull3</sound>
+				<sound>teleport</sound>
 		</hitShipSounds>
 		<hitShieldSounds>
-				<sound>hitShield1</sound>
-				<sound>hitShield2</sound>
-				<sound>hitShield3</sound>
+				<sound>batteryStop</sound>
 		</hitShieldSounds>
 		<missSounds>
 				<sound>miss</sound>
 		</missSounds>
+		<explosion>nothing</explosion>
 		<weaponArt>laser_burst_1</weaponArt>
 	</weaponBlueprint>
 
@@ -13531,11 +13496,11 @@ boo womp</desc>
 	    <type>COMBAT</type>
 	    <title>Siren Combat Drone</title>
 	    <short>Siren Drone</short>
-	    <desc>When Larry and Bob do battle, the KLAXONS of WAR shall sound across the heavens!</desc>
+	    <desc>This drone will rapidly ionize the enemy shields, and can potentially keep crew stunned forever.</desc>
 	    <power>2</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
-	    <speed>5</speed>
+	    <speed>25</speed>
 	    <cost>100</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_siren_drone</droneImage>
@@ -13544,49 +13509,42 @@ boo womp</desc>
 	    <iconImage>combat</iconImage>
 	</droneBlueprint><!--Do this later.-->
 	<weaponBlueprint name="FM_SIREN_DRONE_WEAPON">
-	    <type>LASER</type>
-	    <title>Hacker Drone Launcher</title>
-	    <short>Hacker Drone</short>
-	    <desc>Fires a micro hacker drone. Automatically hacks the room hit and stuns enemy targets within it for 5 seconds.</desc>
+	    <type>BURST</type>
+	    <title>Stun Projector</title>
+	    <short>Stun Proj.</short>
+	    <desc>Stuns affected crew for a long time and does ion damage.</desc>
 	    <damage>0</damage>
+			<ion>1</ion>
 	    <shots>1</shots>
-	    <accuracyMod>10</accuracyMod>
+	    <accuracyMod>0</accuracyMod>
 	    <rarity>0</rarity>
-	    <sp>10</sp>
-	    <spawnCrew>
-	        <race>fm_drone_hack</race>
-	        <number>1</number>
-
-	        <noSlot>true</noSlot>
-	        <statBoosts>
-	            <statBoost name="noClone">
-	                <boostType>SET</boostType>
-	                <value>true</value>
-	                <shipTarget>ALL</shipTarget>
-	                <crewTarget>ALL</crewTarget>
-	                <priority>999999</priority>
-	            </statBoost>
-
-	        </statBoosts>
-	    </spawnCrew>
-	    <image>fm_drone_hack_proj</image>
-	    <launchSounds>
-	        <sound>smallMissile1</sound>
-	        <sound>smallMissile2</sound>
-	    </launchSounds>
-	    <hitShipSounds>
-	        <sound>hitHull2</sound>
-	        <sound>hitHull3</sound>
-	    </hitShipSounds>
-	    <hitShieldSounds>
-	        <sound>hitShield1</sound>
-	        <sound>hitShield2</sound>
-	        <sound>hitShield3</sound>
-	    </hitShieldSounds>
-	    <missSounds>
-	        <sound>miss</sound>
-	    </missSounds>
-	    <weaponArt>laser_burst_1</weaponArt>
+	    <sp>0</sp>
+	    <stun>30</stun>
+			<radius>20</radius>
+			<projectiles>
+				<projectile count="3" fake="false">ion_stun_shot</projectile>
+			</projectiles>
+			<explosion>explosion_stun_ion</explosion>
+			<launchSounds>
+				<sound>ionShoot1</sound>
+				<sound>ionShoot2</sound>
+				<sound>ionShoot3</sound>
+			</launchSounds>
+			<hitShipSounds>
+				<sound>ionHit1</sound>
+				<sound>ionHit2</sound>
+				<sound>ionHit3</sound>
+			</hitShipSounds>
+			<hitShieldSounds>
+				<sound>ionShields1</sound>
+				<sound>ionShields2</sound>
+				<sound>ionShields3</sound>
+			</hitShieldSounds>
+			<missSounds>
+				<sound>miss</sound>
+			</missSounds>
+			<weaponArt>laser_burst_1</weaponArt>
+			<iconImage>ion</iconImage>
 	</weaponBlueprint>
 
 

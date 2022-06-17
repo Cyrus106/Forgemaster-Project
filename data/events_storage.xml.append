@@ -1531,6 +1531,45 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 
+    <choice req="FM_KESTREL_DRONE_LIST" lvl="1" blue="false" hidden="true">
+			<text>Install the internal loading mechanism of the Burst Laser MK II into the Combat Drone MK I to craft the Kestrel Combat Drone.</text>
+			<event load="STORAGE_CHECK_CREATE_FM_KESTREL_DRONE"/>
+		</choice>
+
+		<choice req="FM_KESTREL_DRONE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+			<text>You must have a Burst Laser MK II and Combat Drone MK I to forge this drone.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+
+    <choice req="FM_MFK_KESTREL_DRONE_LIST" lvl="1" blue="false" hidden="true">
+			<text>Install the Light Laser MK I into the Combat Drone MK I's chassis to craft the MFK Kestrel Combat Drone.</text>
+			<event load="STORAGE_CHECK_CREATE_FM_KESTREL_DRONE"/>
+		</choice>
+
+		<choice req="FM_MFK_KESTREL_DRONE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+			<text>You must have a Light Laser MK I and Combat Drone MK I to forge this drone.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+
+    <choice req="FM_MFK_PICKET_DRONE_LIST" lvl="1" blue="false" hidden="true">
+			<text>Utilize the Recon Drone's data suite to reconfigure your external Teleporter tech into the MFK Picket Teleporter Relay.</text>
+			<event load="STORAGE_CHECK_CREATE_FM_MFK_PICKET_DRONE"/>
+		</choice>
+
+		<choice req="FM_MFK_PICKET_DRONE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+			<text>You must have a Recon Drone and the External Reconstructive Teleporter augment to forge this drone.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+
+    <choice req="FM_SIREN_DRONE_LIST" lvl="1" blue="false" hidden="true">
+			<text>Extract the nerve-disrupting components of the Stun Bomb and integrate them into the Pest Drone to forge the Siren Combat Drone.</text>
+			<event load="STORAGE_CHECK_CREATE_FM_SIREN_DRONE"/>
+		</choice>
+
+		<choice req="FM_SIREN_DRONE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+			<text>You must have a Stun Bomb and Pest Drone to forge this drone.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
 
 
 
@@ -3675,6 +3714,84 @@
 			<event load="STORAGE_CHECK_CREATE_DRONES_COMBAT_LOAD"/>
 		</choice>
 	</event>
+
+  <event name="STORAGE_CHECK_CREATE_FM_KESTREL_DRONE">
+		<checkCargo/>
+		<text>Currently viewing the Kestrel Combat Drone.[Cost: 0~].</text>
+		<choice hidden="false" req="FM_KESTREL_DRONE_LIST" blue="false">
+			<text>Craft the Kestrel Drone.[Cost: 0~]</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<drone name="FM_KESTREL_DRONE"/>
+				<removeItem>LASER_BURST_3</removeItem>
+				<queueEvent>FM_REMOVE_COMBAT_1</queueEvent><!--Removes one Combat I drone of ANY kind (toggle mode)-->
+				<queueEvent>STORAGE_CHECK_CREATE_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+			</event>
+		</choice>
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="STORAGE_CHECK_CREATE_DRONES_COMBAT_LOAD"/>
+		</choice>
+	</event>
+
+  <event name="STORAGE_CHECK_CREATE_FM_MFK_KESTREL_DRONE">
+		<checkCargo/>
+		<text>Currently viewing the MFK Kestrel Combat Drone.[Cost: 0~].</text>
+		<choice hidden="false" req="FM_KESTREL_DRONE_LIST" blue="false">
+			<text>Craft the MFK Kestrel Drone.[Cost: 0~]</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<drone name="FM_MFK_KESTREL_DRONE"/>
+				<removeItem>LASER_LIGHT</removeItem>
+				<queueEvent>FM_REMOVE_COMBAT_1</queueEvent><!--Removes one Combat I drone of ANY kind (toggle mode)-->
+				<queueEvent>STORAGE_CHECK_CREATE_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+			</event>
+		</choice>
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="STORAGE_CHECK_CREATE_DRONES_COMBAT_LOAD"/>
+		</choice>
+	</event>
+
+  <event name="STORAGE_CHECK_CREATE_FM_MFK_PICKET_DRONE">
+		<checkCargo/>
+		<text>Currently viewing the MFK Picket Teleporter Relay.[Cost: 0~].</text>
+		<choice hidden="false" req="FM_MFK_PICKET_DRONE_LIST" blue="false">
+			<text>Craft the MFK Picket Drone.[Cost: 0~]</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<drone name="FM_MFK_PICKET_DRONE"/>
+				<removeItem>EX_TELEPORT_HEAL</removeItem>
+				<queueEvent>FM_REMOVE_RECON</queueEvent><!--Removes one Recon drone of ANY kind (toggle mode)-->
+				<queueEvent>STORAGE_CHECK_CREATE_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+			</event>
+		</choice>
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="STORAGE_CHECK_CREATE_DRONES_COMBAT_LOAD"/>
+		</choice>
+	</event>
+
+  <event name="STORAGE_CHECK_CREATE_FM_SIREN_DRONE">
+		<checkCargo/>
+		<text>Currently viewing the Siren Combat Drone.[Cost: 0~].</text>
+		<choice hidden="false" req="FM_SIREN_DRONE_LIST" blue="false">
+			<text>Craft the Siren Drone.[Cost: 0~]</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<drone name="FM_SIREN_DRONE"/>
+				<removeItem>BOMB_STUN</removeItem>
+				<queueEvent>FM_REMOVE_PEST</queueEvent><!--Removes one Pest drone of ANY kind (toggle mode)-->
+				<queueEvent>STORAGE_CHECK_CREATE_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+			</event>
+		</choice>
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="STORAGE_CHECK_CREATE_DRONES_COMBAT_LOAD"/>
+		</choice>
+	</event>
+
+
 
 
 </FTL>

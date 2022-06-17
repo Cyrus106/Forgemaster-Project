@@ -15,7 +15,16 @@
   		</event>
   	</loadEventList>
   </event>
-
+  <event name="FM_REMOVE_COMBAT_1">
+  	<loadEventList>
+  		<event req="COMBAT_1_LASER">
+  			<removeItem>COMBAT_1_LASER</removeItem>
+  		</event>
+  		<event req="COMBAT_1_BEAM">
+  			<removeItem>COMBAT_1_BEAM</removeItem>
+  		</event>
+  	</loadEventList>
+  </event>
 
   <event name="FM_REMOVE_COMBAT_2">
   	<loadEventList>
@@ -62,7 +71,6 @@
       <event req="FOCUS_1_AMP4">
   			<removeItem>FOCUS_1_AMP4</removeItem>
   		</event>
-
   	</loadEventList>
   </event>
 
@@ -73,6 +81,28 @@
   		</event>
   		<event req="BATTLETOG_BOARDER">
   			<removeItem>BATTLETOG_BOARDER</removeItem>
+  		</event>
+  	</loadEventList>
+  </event>
+
+  <event name="FM_REMOVE_RECON">
+  	<loadEventList>
+  		<event req="RECON_DEFENSE">
+  			<removeItem>RECON_DEFENSE</removeItem>
+  		</event>
+  		<event req="RECON_BOARDER">
+  			<removeItem>RECON_BOARDER</removeItem>
+  		</event>
+  	</loadEventList>
+  </event>
+
+  <event name="FM_REMOVE_PEST">
+  	<loadEventList>
+  		<event req="PEST_RAD">
+  			<removeItem>PEST_RAD</removeItem>
+  		</event>
+  		<event req="PEST_DEBUFF">
+  			<removeItem>PEST_DEBUFF</removeItem>
   		</event>
   	</loadEventList>
   </event>
