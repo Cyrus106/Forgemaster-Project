@@ -13040,7 +13040,7 @@ boo womp</desc>
 		<drone_targetable>1</drone_targetable>
 		<title>Crystal Scatter</title>
 		<short>Cry. Scatter</short>
-		<desc>Fires a cluster of 4 crystalline projectiles that pierce 1 shield layer each.</desc>
+		<desc>Fires a cluster of 4 crystalline projectiles that pierce 1 shield layer each.</desc><!--Potential change, give it several projectiles with no pierce + hull damage and some piercing projectiles that only do breach (these projectiles will be slighly slower so as to make this a super-breach drone)-->
 		<radius>50</radius>
 		<damage>1</damage>
 		<shots>1</shots>

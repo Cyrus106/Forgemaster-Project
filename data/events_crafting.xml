@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FTL><!--Events for removing one of a certain kind of weapon (to be used for toggles and zero-cost exchange items, so as to prevent the need for multiple recipes)-->
+
+  <event name="FM_REMOVE_AMP_ENERGY">
+  	<loadEventList>
+  		<event req="ENERGY_1_AMP2">
+  			<removeItem>ENERGY_1_AMP2</removeItem>
+  		</event>
+  		<event req="ENERGY_1_AMP3">
+  			<removeItem>ENERGY_1_AMP3</removeItem>
+  		</event>
+  		<event req="ENERGY_1_AMP4">
+  			<removeItem>ENERGY_1_AMP4</removeItem>
+  		</event>
+  	</loadEventList>
+  </event>
+
+
+  <event name="FM_REMOVE_COMBAT_2">
+  	<loadEventList>
+  		<event req="COMBAT_2_LASER">
+  			<removeItem>COMBAT_2_LASER</removeItem>
+  		</event>
+  		<event req="COMBAT_2_BEAM">
+  			<removeItem>COMBAT_2_BEAM</removeItem>
+  		</event>
+  	</loadEventList>
+  </event>
+
+  <event name="FM_REMOVE_ASSAULT">
+  	<loadEventList>
+  		<event req="ASSAULT_PARTICLE">
+  			<removeItem>ASSAULT_PARTICLE</removeItem>
+  		</event>
+  		<event req="ASSAULT_PIERCE">
+  			<removeItem>ASSAULT_PIERCE</removeItem>
+  		</event>
+  	</loadEventList>
+  </event>
+
+  <event name="FM_REMOVE_COMBAT_CONSERVATIVE">
+  	<loadEventList>
+  		<event req="COMBAT_CONSERVATIVE_BEAM">
+  			<removeItem>COMBAT_CONSERVATIVE_BEAM</removeItem>
+  		</event>
+  		<event req="COMBAT_CONSERVATIVE_LASER">
+  			<removeItem>COMBAT_CONSERVATIVE_LASER</removeItem>
+  		</event>
+  	</loadEventList>
+  </event>
+
+
+  <event name="FM_REMOVE_AMP_FOCUS">
+  	<loadEventList>
+  		<event req="FOCUS_1_AMP2">
+  			<removeItem>FOCUS_1_AMP2</removeItem>
+  		</event>
+  		<event req="FOCUS_1_AMP3">
+  			<removeItem>FOCUS_1_AMP3</removeItem>
+  		</event>
+      <event req="FOCUS_1_AMP4">
+  			<removeItem>FOCUS_1_AMP4</removeItem>
+  		</event>
+
+  	</loadEventList>
+  </event>
+
+  <event name="FM_REMOVE_BATTLETOG">
+  	<loadEventList>
+  		<event req="BATTLETOG_DEFEND">
+  			<removeItem>BATTLETOG_DEFEND</removeItem>
+  		</event>
+  		<event req="BATTLETOG_BOARDER">
+  			<removeItem>BATTLETOG_BOARDER</removeItem>
+  		</event>
+  	</loadEventList>
+  </event>
+
+  <event name="FM_REMOVE_AC_1">
+  	<loadEventList>
+  		<event req="GB_AC_1">
+  			<removeItem>GB_AC_1</removeItem>
+  		</event>
+  		<event req="GB_AC_1_CASELESS">
+  			<removeItem>GB_AC_1_CASELESS</removeItem>
+  		</event>
+  		<event req="GB_AC_1_HV">
+  			<removeItem>GB_AC_1_HV</removeItem>
+  		</event>
+  		<event req="GB_AC_1_HE">
+  			<removeItem>GB_AC_1_HE</removeItem>
+  		</event>
+  		<event req="GB_AC_1_FREE">
+  			<removeItem>GB_AC_1_FREE</removeItem>
+  		</event>
+  		<event req="GB_AC_1_EMP">
+  			<removeItem>GB_AC_1_EMP</removeItem>
+  		</event>
+  		<event req="GB_AC_1_HEAT">
+  			<removeItem>GB_AC_1_HEAT</removeItem>
+  		</event>
+  		<event req="GB_AC_1_INCENDIARY">
+  			<removeItem>GB_AC_1_INCENDIARY</removeItem>
+  		</event>
+  		<event req="GB_AC_1_FLECHETTE">
+  			<removeItem>GB_AC_1_FLECHETTE</removeItem>
+  		</event>
+  		<event req="GB_AC_1_RAD">
+  			<removeItem>GB_AC_1_RAD</removeItem>
+  		</event>
+  	</loadEventList>
+  </event>
+
+</FTL>

@@ -32,6 +32,7 @@
 		<eventFile>twisted</eventFile>
 		<eventFile>flakjuice</eventFile>
 		<eventFile>vengeanceredeem</eventFile>
+		<eventFile>crafting</eventFile>
 	</events>
 </FTL>
 
@@ -2933,7 +2934,7 @@
 			<checkCargo/>
 		</event>
 
-	
+
 
 	</events>
 
@@ -3108,8 +3109,19 @@
 			<name>FM_SHOTGUN_NOBELIUM</name>
 		</req>
 
+		<req name="FM_COMBAT_DRONE_FORGE_LIST_STORAGE" type="all">
+			<name>FM_COMBAT_DRONE_FORGE_LIST</name>
+			<name>MARKER_OBTAINED_FORGE</name>
+		</req>
+
 		<req name="FM_COMBAT_DRONE_FORGE_LIST" type="any">
 			<name>FM_ENERGY_COMBAT_BEAM1_LIST</name>
+			<name>FM_AMBER_DRONE_LIST</name>
+			<name>FM_CRYSTAL_DRONE_LIST</name>
+			<name>FM_CURA_DRONE_LIST</name>
+			<name>FM_FLAMETHROWER_DRONE_LIST</name>
+			<name>FM_FORGEMAN_DRONE_LIST</name>
+			<name>FM_ISHIMURA_DRONE_LIST</name>
 		</req>
 
 		<req name="FM_ENERGY_COMBAT_BEAM1_LIST" type="all">
@@ -3122,7 +3134,92 @@
 				<name>COMBAT_2_LASER</name>
 				<name>COMBAT_2_BEAM</name>
 			</req>
+		</req>
 
+		<req name="FM_AMBER_DRONE_LIST" type="all">
+			<req type="any">
+				<name>ASSAULT_PIERCE</name>
+				<name>ASSAULT_PARTICLE</name>
+			</req>
+			<name>CRYSTAL_HEAVY_1</name>
+		</req>
+
+		<req name="FM_CRYSTAL_DRONE_LIST" type="all">
+			<req type="any">
+				<name>ASSAULT_PIERCE</name>
+				<name>ASSAULT_PARTICLE</name>
+			</req>
+			<name>CRYSTAL_SHOTGUN</name>
+		</req>
+
+		<req name="FM_CURA_DRONE_LIST" type="all">
+			<req type="any">
+				<name>COMBAT_CONSERVATIVE_BEAM</name>
+				<name>COMBAT_CONSERVATIVE_LASER</name>
+			</req>
+			<req type="any">
+				<name>BATTLETOG_DEFEND</name>
+				<name>BATTLETOG_BOARDER</name>
+			</req>
+			<name>MANNING</name>
+		</req>
+
+
+
+		<req name="FM_FLAMETHROWER_DRONE_LIST" type="any">
+			<name>FM_FLAMETHROWER_DRONE_LIST1</name>
+			<name>FM_FLAMETHROWER_DRONE_LIST2</name>
+			<name>FM_FLAMETHROWER_DRONE_LIST3</name>
+			<name>FM_FLAMETHROWER_DRONE_LIST4</name>
+		</req>
+
+		<req name="FM_FLAMETHROWER_DRONE_LIST1" type="all">
+			<req type="any">
+				<name>ASSAULT_PIERCE</name>
+				<name>ASSAULT_PARTICLE</name>
+			</req>
+			<name>phantom</name>
+		</req>
+
+		<req name="FM_FLAMETHROWER_DRONE_LIST2" type="all">
+			<req type="any">
+				<name>ASSAULT_PIERCE</name>
+				<name>ASSAULT_PARTICLE</name>
+			</req>
+			<name>phantom_goul</name>
+		</req>
+
+		<req name="FM_FLAMETHROWER_DRONE_LIST3" type="all">
+			<req type="any">
+				<name>ASSAULT_PIERCE</name>
+				<name>ASSAULT_PARTICLE</name>
+			</req>
+			<name>phantom_mare</name>
+		</req>
+
+		<req name="FM_FLAMETHROWER_DRONE_LIST4" type="all">
+			<req type="any">
+				<name>ASSAULT_PIERCE</name>
+				<name>ASSAULT_PARTICLE</name>
+			</req>
+			<name>phantom_wraith</name>
+		</req>
+
+		<req name="FM_FORGEMAN_DRONE_LIST" type="all"><!--Maybe lock this one behind a "craft each of the weapons the drone has at least once" metavariable-->
+			<req type="any">
+				<name>COMBAT_2_LASER</name>
+				<name>COMBAT_2_BEAM</name>
+			</req>
+			<name>fm_plated</name>
+		</req>
+
+		<req name="FM_ISHIMURA_DRONE_LIST" type="all">
+			<req type="any">
+				<name>FOCUS_1_AMP2</name>
+				<name>FOCUS_1_AMP3</name>
+				<name>FOCUS_1_AMP4</name>
+			</req>
+			<name>FOCUS_3</name>
 		</req>
 
 		<!-- FULL CHECK, CHECKS ALL LISTS FOR VERY SPECIFIC EVENTS -->
