@@ -12829,7 +12829,7 @@ boo womp</desc>
 		<short>Eradic. II</short>
 		<desc>A powerful weapon of destruction predating any modern Beam, which does massive amounts of damage.</desc>
 		<tooltip>One damage per room beam weapon</tooltip>
-		<damage>3</damage>
+		<damage>2</damage>
 		<sp>0</sp>
 		<fireChance>0</fireChance>
 		<breachChance>10</breachChance>
@@ -12878,7 +12878,7 @@ boo womp</desc>
 		<short>Eradic. III</short>
 		<desc>A powerful weapon of destruction predating any modern Beam, which does massive amounts of damage.</desc>
 		<tooltip>One damage per room beam weapon</tooltip>
-		<damage>4</damage>
+		<damage>3</damage>
 		<sp>0</sp>
 		<fireChance>0</fireChance>
 		<breachChance>10</breachChance>
@@ -12927,7 +12927,7 @@ boo womp</desc>
 		<short>Eradic. III</short>
 		<desc>A powerful weapon of destruction predating any modern Beam, which does massive amounts of damage.</desc>
 		<tooltip>One damage per room beam weapon</tooltip>
-		<damage>5</damage>
+		<damage>4</damage>
 		<sp>0</sp>
 		<stun>9</stun>
 		<fireChance>10</fireChance>
@@ -12969,7 +12969,7 @@ boo womp</desc>
 	    <power>2</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
-	    <speed>25</speed>
+	    <speed>15</speed>
 	    <cost>150</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_amber_drone</droneImage>
@@ -13027,7 +13027,7 @@ boo womp</desc>
 	    <power>2</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
-	    <speed>25</speed>
+	    <speed>7</speed>
 	    <cost>100</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_crystal_drone</droneImage>
@@ -13090,7 +13090,7 @@ boo womp</desc>
 	    <power>-2</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
-	    <speed>25</speed>
+	    <speed>10</speed>
 	    <cost>100</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_cura_drone</droneImage>
@@ -13105,7 +13105,7 @@ boo womp</desc>
 	    <desc>Launches a boarding drone into the enemy ship.</desc>
 	    <damage>0</damage>
 	    <shots>1</shots>
-	    <accuracyMod>10</accuracyMod>
+	    <accuracyMod>2</accuracyMod>
 	    <rarity>0</rarity>
 	    <sp>10</sp>
 	    <spawnCrew>
@@ -13160,7 +13160,7 @@ boo womp</desc>
 	    <power>2</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
-	    <speed>25</speed>
+	    <speed>16</speed>
 	    <cost>100</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_flamethrower_drone</droneImage>
@@ -13240,8 +13240,8 @@ boo womp</desc>
 	    <power>2</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>10</dodge>
-	    <speed>25</speed>
-	    <cost>100</cost>
+	    <speed>7</speed>
+	    <cost>250</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_forgeman_drone</droneImage>
 	    <weaponBlueprint>FM_FORGEMAN_DRONE_WEAPON</weaponBlueprint>
@@ -13253,8 +13253,8 @@ boo womp</desc>
 		<title>'Valefor' Beam</title>
 		<short>'Valefor' B.</short>
 		<desc>Superheats the air creating multiple explosions as it sweeps across the enemy ship! Explosions deal damage to all crew in the room as well. Explosions deal Hull, System, and Crew Damage.</desc>
-		<damage>2</damage>
-		<sp>0</sp>
+		<damage>1</damage>
+		<sp>1</sp>
 		<fireChance>0</fireChance>
 		<breachChance>2</breachChance>
 		<cooldown>22</cooldown>
@@ -13309,8 +13309,8 @@ boo womp</desc>
 	    <power>2</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
-	    <speed>25</speed>
-	    <cost>100</cost>
+	    <speed>5</speed>
+	    <cost>250</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_ishimura_drone</droneImage>
 	    <weaponBlueprint>FM_ISHIMURA_DRONE_WEAPON</weaponBlueprint>
@@ -13323,8 +13323,8 @@ boo womp</desc>
 		<short>Ishimura B.</short>
 		<desc>Rumors have been circulating about a new prototype Mining Laser, the 'Zulfiqar Planet Cracker' created by Zulfiqar Industries that is used for Planet Cracking. Looks like they weren't rumors.</desc>
 		<damage>2</damage>
-		<sysDamage>2</sysDamage>
-		<sp>3</sp>
+		<sysDamage>1</sysDamage>
+		<sp>2</sp>
 		<breachChance>8</breachChance>
 		<cost>400</cost>
 		<bp>7</bp>
@@ -13353,7 +13353,7 @@ boo womp</desc>
 			<power>2</power>
 			<cooldown>1000</cooldown>
 			<dodge>0</dodge>
-			<speed>25</speed>
+			<speed>12</speed>
 			<cost>100</cost>
 			<bp>3</bp>
 			<droneImage>fm_kestrel_drone</droneImage>
@@ -13422,7 +13422,8 @@ boo womp</desc>
 		<title>MFK Kestrel Drone Laser Scatter</title>
 		<short>MFK. Scatter</short>
 		<desc>Fires a barrage of light lasers.</desc>
-		<damage>0</damage>
+		<damage>1</damage>
+		<sysDamage>-1</sysDamage>
 		<shots>1</shots>
 		<accuracyMod>10</accuracyMod>
 		<rarity>0</rarity>
