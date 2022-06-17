@@ -6074,7 +6074,7 @@
 		</choice>
 
 		<choice req="FM_FLAMETHROWER_DRONE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Infuse your Assault Drone with the essence of a ghost form to craft the Dazhbog Flamethrower Drone.</text>
+			<text>Infuse your Assault Drone with the essence of a ghost to craft the Dazhbog Flamethrower Drone.</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_FLAMETHROWER_DRONE"/>
 		</choice>
 

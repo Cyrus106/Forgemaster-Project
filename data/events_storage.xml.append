@@ -796,12 +796,37 @@
       <event load="STORAGE_CHECK_CREATE_ORGANIC_LOAD"/>
     </choice>
 
-    <choice req="pilot" lvl="1" max_group="8" hidden="true" blue="false">
-      <text>Page 2, Drones, Upgrades, and Augments.</text>
-      <event load="STORAGE_CHECK_CREATE_2"/>
+    <choice req="FM_SHOTGUN_BRONZE_LIST_UPGRADE" lvl="1"  max_group="8" hidden="true">
+      <text>Review Weapon Upgrade List</text>
+      <event load="STORAGE_CHECK_CREATE_UPGRADE"/>
     </choice>
 
-    <choice req="pilot" lvl="1" max_group="9" hidden="true" blue="false">
+    <choice req="FM_SHOTGUN_BRONZE_LIST_UPGRADE" lvl="0" max_group="8" hidden="true" blue="false">
+      <text>Review Upgrade List</text>
+      <event load="STORAGE_CHECK_CREATE_UPGRADE"/>
+    </choice>
+
+    <choice req="pilot" lvl="1" blue="false" hidden="true" max_group="9">
+      <text>Boarding / Battle Drones.</text>
+      <event load="STORAGE_CHECK_CREATE_DRONES_BATTLE_LOAD"/>
+    </choice>
+
+    <choice req="FM_COMBAT_DRONE_FORGE_LIST" lvl="0" blue="false" hidden="true" max_group="10">
+      <text>Combat Drones.</text>
+      <event load="STORAGE_CHECK_CREATE_DRONES_COMBAT_LOAD"/>
+    </choice>
+
+    <choice req="FM_COMBAT_DRONE_FORGE_LIST" lvl="1" blue="true" hidden="true" max_group="10">
+      <text>Combat Drones.</text>
+      <event load="STORAGE_CHECK_CREATE_DRONES_COMBAT_LOAD"/>
+    </choice>
+
+    <!--<choice req="pilot" lvl="1" max_group="8" hidden="true" blue="false">
+      <text>Page 2, Drones, Upgrades, and Augments.</text>
+      <event load="STORAGE_CHECK_CREATE_2"/>
+    </choice>-->
+
+    <choice req="pilot" lvl="1" max_group="11" hidden="true" blue="false">
       <text>Nevermind.</text>
       <event load="STORAGE_CHECK"/>
     </choice>
@@ -1382,7 +1407,7 @@
 
 <FTL> <!--Page 2 DRONE CATEGORY  CRAFT MAIN MENU-->
   <!--Page 2 DRONE CATEGORY  CRAFT MAIN MENU-->
-  <event name="STORAGE_CHECK_CREATE_2_LOAD">	<!--UPGRADE CRAFT CATEGORY-->
+  <!--<event name="STORAGE_CHECK_CREATE_2_LOAD">	UPGRADE CRAFT CATEGORY
     <event/>
   </event>
   <event name="STORAGE_CHECK_CREATE_2">
@@ -1418,7 +1443,7 @@
       <text>Nevermind, go back to storage check menu.</text>
       <event load="STORAGE_CHECK"/>
     </choice>
-  </event>
+  </event>-->
 </FTL>
 
 
@@ -1441,7 +1466,7 @@
 
     <choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
       <text>Nevermind.</text>
-      <event load="STORAGE_CHECK_CREATE_2_LOAD"/>
+      <event load="STORAGE_CHECK_CREATE_LOAD"/>
     </choice>
   </event>
 </FTL>
@@ -1502,7 +1527,7 @@
 		</choice>
 
     <choice req="FM_FLAMETHROWER_DRONE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Infuse your Assault Drone with the essence of a ghost form to craft the Dazhbog Flamethrower Drone.</text>
+			<text>Infuse your Assault Drone with the essence of a ghost to craft the Dazhbog Flamethrower Drone.</text>
 			<event load="STORAGE_CHECK_CREATE_FM_FLAMETHROWER_DRONE"/>
 		</choice>
 
@@ -1575,7 +1600,7 @@
 
     <choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
       <text>Nevermind.</text>
-      <event load="STORAGE_CHECK_CREATE_2_LOAD"/>
+      <event load="STORAGE_CHECK_CREATE_LOAD"/>
     </choice>
   </event>
 </FTL>

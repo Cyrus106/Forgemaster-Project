@@ -25357,7 +25357,7 @@ boo womp</desc>
 	</mod:findName>
 
 	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_HEAVY_1">
-		<mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
+		<mod-overwrite:tip>fm_tip_crystal_heavy_1</mod-overwrite:tip>
 	</mod:findName>
 
 	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_HEAVY_1_RED">
@@ -25381,7 +25381,7 @@ boo womp</desc>
 	</mod:findName>
 
 	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_SHOTGUN">
-		<mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
+		<mod-overwrite:tip>fm_tip_crystal_shotgun</mod-overwrite:tip>
 	</mod:findName>
 
 	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_SHOTGUN_RED">
@@ -25538,5 +25538,101 @@ boo womp</desc>
 		<mod-overwrite:tip>fm_tip_ion_charger_1</mod-overwrite:tip>
 	</mod:findName>
 
+	<!--Drone Tips-->
+	<mod:findName type = "droneBlueprint" name = "COMBAT_2_BEAM">
+		<mod-overwrite:tip>fm_tip_combat_2</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "COMBAT_2_LASER">
+		<mod-overwrite:tip>fm_tip_combat_2</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "COMBAT_1_BEAM">
+		<mod-overwrite:tip>fm_tip_combat_1</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "COMBAT_1_LASER">
+		<mod-overwrite:tip>fm_tip_combat_1</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "ENERGY_1_AMP2">
+		<mod-overwrite:tip>fm_tip_amp_energy</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "ENERGY_1_AMP3">
+		<mod-overwrite:tip>fm_tip_amp_energy</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "ENERGY_1_AMP4">
+		<mod-overwrite:tip>fm_tip_amp_energy</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "ASSAULT_PIERCE">
+		<mod-overwrite:tip>fm_tip_assault_drone</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "ASSAULT_PARTICLE">
+		<mod-overwrite:tip>fm_tip_assault_drone</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "COMBAT_CONSERVATIVE_BEAM">
+		<mod-overwrite:tip>fm_tip_combat_conservative</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "COMBAT_CONSERVATIVE_LASER">
+		<mod-overwrite:tip>fm_tip_combat_conservative</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "BATTLETOG_DEFEND">
+		<mod-overwrite:tip>fm_tip_battletog</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "BATTLETOG_BOARDER">
+		<mod-overwrite:tip>fm_tip_battletog</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "MANNING">
+		<mod-overwrite:tip>fm_tip_manning</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "FOCUS_1_AMP2">
+		<mod-overwrite:tip>fm_tip_amp_pinpoint</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "FOCUS_1_AMP3">
+		<mod-overwrite:tip>fm_tip_amp_pinpoint</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "FOCUS_1_AMP4">
+		<mod-overwrite:tip>fm_tip_amp_pinpoint</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "RECON_BOARDER">
+		<mod-overwrite:tip>fm_tip_recon</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "RECON_DEFENSE">
+		<mod-overwrite:tip>fm_tip_recon</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "PEST_RAD">
+		<mod-overwrite:tip>fm_tip_pest</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "PEST_DEBUFF">
+		<mod-overwrite:tip>fm_tip_pest</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "weaponBlueprint" name = "BOMB_STUN">
+		<mod-overwrite:tip>fm_tip_bomb_stun</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "augBlueprint" name = "EX_TELEPORT_HEAL">
+		<mod-overwrite:desc>Crew gets fully healed by teleportation.
+
+		[X] - As an external system upgrade, this augment will provide its normal effect but take up an augment slot. Can be converted for free to the internal version under the internal upgrade menu if you have the Crew Teleporter system.
+
+		FM: A COMPONENT for forging the MFK Picket Teleporter Relay, alongside the other COMPONENT Recon Drone.</mod-overwrite:desc>
+	</mod:findName>
 
 </FTL>
