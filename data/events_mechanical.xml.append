@@ -2375,10 +2375,26 @@ Only respects stronger computers
 	</event>
 
 
+
 	<event name="FM_PURGE_2">
 		<removeItem>HIDDEN FM_PURGE_AUG</removeItem>
 	</event>
 
 
+
+	<event name="OXYGEN_FORCE_UPGRADE">
+		<text>You upgrade your oxygen by force.</text>
+	</event>
+
+	<event name="WEAPONS_FORCE_UPGRADE">
+		<text>You upgrade your weapons by force.</text>
+	</event>
+
+	<event name="SHIELDS_FORCE_UPGRADE">
+		<text>You upgrade your shields by force.</text>
+	</event>
+
+	<event name="X">
+	</event>
 
 </FTL>

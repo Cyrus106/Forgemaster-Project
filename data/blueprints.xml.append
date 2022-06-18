@@ -4258,6 +4258,19 @@ boo womp</desc>
 				<blackList load="LIST_FM_NOABDUCT"/>
 			</statBoost>
 
+			<!--<statBoost name="deathEffect">
+				<boostType>SET</boostType>
+				<deathEffect>
+					<event name="LUA_TEST_YOINKY">
+						<text>Yoinky Sploinky, pardner!</text>
+					</event>
+				</deathEffect>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+			</statBoost>-->
+
 			<!--Just some stuff I was testing out-->
 			<!--<statBoost name="temporaryEffect">
 				<boostType>SET</boostType>
