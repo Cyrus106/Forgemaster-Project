@@ -1715,6 +1715,16 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 
+		<choice req="FM_BEAM_ETERNITY_LIST" lvl="1" blue="false" hidden="true">
+		  <text>Combine the 'Pike' beam and 'Scythe' beam to forge the 'Eternity' Beam. [Cost: 100~]</text>
+		  <event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_ETERNITY"/>
+		</choice>
+
+		<choice req="FM_BEAM_ETERNITY_LIST" lvl="0" blue="false" hidden="true">
+      <text>You must have a 'Pike' beam and 'Scythe' beam to forge this weapon.</text>
+      <event load="OPTION_INVALID"/>
+    </choice>
+
 		<choice req="pilot" lvl="1" max_group="20" hidden="true" blue="false">
 			<text>Nevermind.</text>
 			<event load="FM_FORGE_WEAPON_LOAD"/>
@@ -3470,6 +3480,33 @@
 			</event>
 		</choice>
 
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_WEAPON_BEAM_LOAD"/>
+		</choice>
+	</event>
+
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_BEAM_ETERNITY">
+		<checkCargo/>
+		<text>Currently viewing the 'Eternity' Beam.</text>
+		<choice hidden="false" blue="false">
+			<text>Craft the 'Eternity' Beam.</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<weapon name="FM_BEAM_ETERNITY"/>
+				<item_modify>
+					<item type="scrap" min="-100" max="-100"/>
+				</item_modify>
+				<removeItem>BEAM_LONG</removeItem>
+				<removeItem>BEAM_SCYTHE</removeItem>
+				<choice hidden="true">
+				  <text>Continue...</text>
+				  <event>
+				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+				  </event>
+				</choice>
+			</event>
+		</choice>
 		<choice hidden="false">
 			<text>Nevermind.</text>
 			<event load="FM_FORGE_WEAPON_BEAM_LOAD"/>

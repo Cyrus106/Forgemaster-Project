@@ -1059,6 +1059,15 @@
       <event load="OPTION_INVALID"/>
     </choice>
 
+    <choice req="FM_BEAM_ETERNITY_LIST" lvl="1" blue="false" hidden="true">
+      <text>Combine the 'Pike' beam and 'Scythe' beam to forge the 'Eternity' Beam.</text>
+      <event load="STORAGE_CHECK_CREATE_FM_BEAM_ETERNITY"/>
+    </choice>
+
+    <choice req="FM_BEAM_ETERNITY_LIST" lvl="0" blue="false" hidden="true">
+      <text>You must have a 'Pike' beam and 'Scythe' beam to forge this weapon.</text>
+      <event load="OPTION_INVALID"/>
+    </choice>
 
     <!--Back to main craft menu-->
     <choice req="pilot" lvl="1" max_group="20" hidden="true" blue="false">
@@ -2494,6 +2503,31 @@
         <weapon name="FM_BEAM_ION_SPECIAL"/>
         <removeItem></removeItem>
         <removeItem></removeItem>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice hidden="false">
+      <text>Nevermind.</text>
+      <event load="STORAGE_CHECK_CREATE_BEAM_LOAD"/>
+    </choice>
+  </event>
+
+  <event name="STORAGE_CHECK_CREATE_FM_BEAM_ETERNITY">
+    <checkCargo/>
+    <text>Currently viewing the 'Eternity' Beam.</text>
+
+    <choice hidden="false"  blue="false">
+      <text>Craft the 'Eternity' Beam.</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <weapon name="FM_BEAM_ETERNITY"/>
+        <removeItem>BEAM_LONG</removeItem>
+        <removeItem>BEAM_SCYTHE</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>

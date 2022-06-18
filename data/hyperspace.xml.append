@@ -2190,6 +2190,11 @@
 			<name>FM_BEAM_ION_PIERCE_LIST1</name>
 			<name>FM_BEAM_ION_PIERCE_LIST2</name>
 		</req>
+
+		<req name="FM_BEAM_ETERNITY_LIST" type="all"> <!-- Pike Beam + Scythe Beam -->
+			<name>BEAM_LONG</name>
+			<name>BEAM_SCYTHE</name>
+		</req>
 	</events>
 
 
@@ -2933,7 +2938,7 @@
 			<checkCargo/>
 		</event>
 
-	
+
 
 	</events>
 
@@ -2991,7 +2996,7 @@
 			<name>FM_BEAM_GUILLOTINE_CHAIN_FORGE_LIST</name>
 			<name>FM_BEAM_EXPLOSION_FORGE_LIST</name>
 			<name>FM_BEAM_ION_PIERCE_FORGE_LIST</name>
-
+			<name>FM_BEAM_ETERNITY_LIST</name>
 
 		</req>
 

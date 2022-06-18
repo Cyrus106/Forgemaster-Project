@@ -3501,6 +3501,17 @@ try this later
 		<boost>fm_energy_railblender_chargeglow</boost>
 	</weaponAnim>
 
+	<animSheet name="fm_ion_0" w="48" h="16" fw="8" fh="16">weapon_ion/fm_ion_0.png</animSheet>
+	<weaponAnim name="fm_ion_0">
+		<sheet>fm_ion_0</sheet>
+		<desc length="6" x="0" y="0"/>
+		<chargedFrame>1</chargedFrame>
+		<fireFrame>3</fireFrame>
+		<firePoint  x="4" y="1"/>
+		<mountPoint x="0" y="11"/>
+		<chargeImage>weapon_ion/fm_ion_0_glow.png</chargeImage>
+	</weaponAnim>
+
 </FTL>
 
 <FTL><!-- BEAMS-->
@@ -4233,6 +4244,13 @@ try this later
 		<sheet>explosion_pulsedeep_cannon</sheet>
 		<desc length="28" x="0" y="0"/>
 		<time>0.5</time>
+	</anim>
+
+	<animSheet name="fm_ion_0_shot" w="12" h="5" fw="12" fh="5">weapon_ion/fm_ion_0_shot.png</animSheet>
+	<anim name="fm_ion_0_shot">
+		<sheet>fm_ion_0_shot</sheet>
+		<desc length="1" x="0" y="0" />
+		<time>1</time>
 	</anim>
 </FTL>
 

@@ -2045,14 +2045,14 @@ Only respects stronger computers
 	</event>-->
 
 	<event name="FM_ONDAMAGE_MURALS">
-		<loadEventList>
+		<loadEventList first="false" generate="false" seeded="false">
 			<event req="FM_MODULAR_HULL_MURAL" lvl="1">
 				<loadEvent>MURALS_DAMAGE</loadEvent>
 			</event>
 		</loadEventList>
 	</event>
 	<event name="FM_ONDAMAGE_OVERCHARMED">
-		<loadEventList>
+		<loadEventList first="false" generate="false" seeded="false">
 			<event req="FM_HULL_UPGRADE_POINTS" lvl="16">
 				<queueEvent>OVERCHARMED_RELOAD</queueEvent>
 			</event>
