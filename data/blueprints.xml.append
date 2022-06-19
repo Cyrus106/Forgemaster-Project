@@ -10898,10 +10898,7 @@ boo womp</desc>
 		<cost>140</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
-	        <statBoosts>
-			
-	<!-- Make sure to add a way to spread the virus before properly adding!-->
-			
+	        <passiveStatBoosts>		
 			<statBoost name="trueHealAmount">
 				<boostType>FLAT</boostType>
 				<amount>-7</amount>
@@ -10915,13 +10912,28 @@ boo womp</desc>
 				</blackList>
 				<priority>-100</priority>
 			</statBoost>
-		</statBoosts>
+		</passiveStatBoosts>
+	        <statBoosts>
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<amount>-7</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<duration>60</duration>
+				<boostAnim>pheromones</boostAnim>
+				<maxStacks>1</maxStacks>
+				<blackList>
+					<FM_PLSNOEFFECT/>
+				</blackList>
+				<priority>-100</priority>
+			</statBoost>
+	        </statBoosts>
 		<image>beam_contact</image>
 		<length>1</length>
 		<launchSounds>
 			<sound>focus_strong</sound>
 		</launchSounds>
-		<weaponArt>fm_focus_virus</weaponArt>
+		<weaponArt>fm_focus_fueled</weaponArt>
 		<iconImage>beam</iconImage>
 	</weaponBlueprint>
 
