@@ -10898,22 +10898,10 @@ boo womp</desc>
 		<cost>140</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
-	        <passiveStatBoosts>		
-			<statBoost name="trueHealAmount">
-				<boostType>FLAT</boostType>
-				<amount>-7</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<duration>60</duration>
-				<boostAnim>pheromones</boostAnim>
-				<maxStacks>1</maxStacks>
-				<blackList>
-					<FM_PLSNOEFFECT/>
-				</blackList>
-				<priority>-100</priority>
-			</statBoost>
-		</passiveStatBoosts>
 	        <statBoosts>
+			
+			<!-- Implement a way to spread the virus!-->
+			
 			<statBoost name="trueHealAmount">
 				<boostType>FLAT</boostType>
 				<amount>-7</amount>
