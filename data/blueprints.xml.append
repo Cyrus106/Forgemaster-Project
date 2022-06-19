@@ -1067,7 +1067,7 @@ boo womp</desc>
 		<name>The Vulture</name>
 		<desc>In an effort to become truly invulnerable, these Rockmen attempted to make their ship’s cloaking system last indefinitely by redirecting all the energy out of the shield system. They succeeded, although only the cloaking system itself managed to actually disappear, leaving its armor as the only defense.</desc>
 		<systemList>
-			<artillery power="2" room="0" start="true" weapon="BEAM_ADAPT_3_PLAYER_ARTY_f" img="room_artillery_invis_long" />
+			<artillery power="2" room="0" start="true" weapon="BEAM_ADAPT_3_PLAYER_ARTY_CHAIN" img="room_artillery_invis_long" />
 			<artillery power="2" room="3" start="true" weapon="ZOLTAN_DELETER_PLAYER_ARTY_CHAIN" img="room_artillery_invis_long" />
 			<artillery power="2" room="1" start="true" weapon="BOMB_BREACH_1_PLAYER_ARTY_CHAIN" img="room_artillery_invis_long" />
 			<artillery power="2" room="2" start="true" weapon="KERNEL_CHAIN_ELITE_PLAYER_ARTY" img="room_artillery_invis_long" />
@@ -12149,7 +12149,7 @@ boo womp</desc>
 		</tooltip>
 		<damage>0</damage>
 		<sysDamage>0</sysDamage>
-		<persDamage>4</persDamage>
+		<!--<persDamage>4</persDamage>-->
 		<missiles>1</missiles>
 		<accuracyMod>20</accuracyMod>
 		<radius>70</radius>
@@ -12164,7 +12164,7 @@ boo womp</desc>
 		<speed>20</speed>
 		<bp>5</bp>
 		<rarity>0</rarity>
-		<spawnCrew>
+	<!--	<spawnCrew>
 	        <race>fm_bio_cloud</race>
 	        <number>1</number>
 	        <noSlot>true</noSlot>
@@ -12178,15 +12178,43 @@ boo womp</desc>
 	                <crewTarget>ALL</crewTarget>
 	                <priority>999999</priority>
 	            </statBoost>
-					  	<!--<statBoost name="maxHealth">
+					  	<statBoost name="maxHealth">
 	                <boostType>FLAT</boostType>
 	                <amount>-1000000</amount>
 	                <shipTarget>ALL</shipTarget>
 	                <crewTarget>ALL</crewTarget>
 	                <priority>999999</priority>
-	            </statBoost>-->
+	            </statBoost>
 	        </statBoosts>
-	    </spawnCrew>
+	    </spawnCrew>-->
+		<roomStatBoostChance>10</roomStatBoostChance>
+		<roomStatBoosts>
+
+			<statBoost name="trueHealAmount">
+			<!--<statBoost name="maxHealth">-->
+				<duration>10</duration>
+				<boostType>FLAT</boostType>
+				<amount>-4</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<priority>999999</priority>
+				<droneTarget>CREW</droneTarget>
+				<maxStacks id="bio_mine_drain">2</maxStacks>
+
+				<dangerRating>0.1</dangerRating><!--Crew below 10% health will run away-->
+				<roomAnim renderLayer="1">
+					<anim animType="default" animBorder="2">nothing</roomAnim>                <!-- (animType can be default, stretch, random, or center, animBorder controls spawning margins)-->
+					<tileAnim>gas_twisted_1x1</tileAnim>                                               <!--(spawn this animation on each tile)-->
+				</roomAnim>
+			</statBoost>
+
+
+
+
+
+
+		</roomStatBoosts>
+
 		<projectiles>
 			<projectile count="5" fake="false">fm_mine_bio</projectile>
 		</projectiles>
