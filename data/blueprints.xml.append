@@ -10879,6 +10879,51 @@ boo womp</desc>
     <weaponArt>fm_mini_yari</weaponArt>
     <iconImage>beam</iconImage>
 	</weaponBlueprint>
+	
+    <weaponBlueprint name="FM_FOCUS_VIRUS">
+		<type>BEAM</type>
+		<tip>tip_focus</tip>
+		<title>'Aegrotatio' Pinpoint</title>
+		<short>'Aegrotatio'</short>
+		<desc>An incredibly unstable bio-weapon developed by only the most criminally insane shell scientists, this weapon inflicts crew with a deadly spreading virus, slowly wiping out the crew of enemy ships.</desc>
+		<tooltip>Beware! A misfire from this weapon once wiped out an entire shell colony, so maybe don't fire it too close to your boarders.</tooltip>
+		<damage>1</damage>
+		<sp>10</sp>
+		<fireChance>0</fireChance>
+		<breachChance>1</breachChance>
+		<stunChance>0</stunChance>
+		<cooldown>19</cooldown>
+		<speed>1</speed>
+		<power>2</power>
+		<cost>140</cost>
+		<bp>2</bp>
+		<rarity>0</rarity>
+	        <statBoosts>
+			
+	<!-- Make sure to add a way to spread the virus before properly adding!-->
+			
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<amount>-7</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<duration>60</duration>
+				<boostAnim>pheromones</boostAnim>
+				<maxStacks>1</maxStacks>
+				<blackList>
+					<FM_PLSNOEFFECT/>
+				</blackList>
+				<priority>-100</priority>
+			</statBoost>
+		</statBoosts>
+		<image>beam_contact</image>
+		<length>1</length>
+		<launchSounds>
+			<sound>focus_strong</sound>
+		</launchSounds>
+		<weaponArt>fm_focus_virus</weaponArt>
+		<iconImage>beam</iconImage>
+	</weaponBlueprint>
 
 </FTL>
 
