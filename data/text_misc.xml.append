@@ -17,7 +17,7 @@
 
 
 
-
+<text name="room_statboost_chance">Room Effect Chance: \1%</text><!--ONLY USING BECUASE I'M UTILZIING BETA FEATURES THAT ARE NOT SUPPORTED BY MULTIVERSE 5.2.3 INTERNAL HYPERSPACE STUFF, REMOVE LATER-->
 
 <!--
 <descriptionOverride>Description.
@@ -98,7 +98,8 @@ FM: A COMPONENT for forging the Decayser[70~], alongside the other COMPONENT cal
 
 <text name="fm_tip_laser_light">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
 
-FM: A COMPONENT for forging the Photon I[100~], alongside the other COMPONENT Particle Accelerator MK I.</text>
+FM: A COMPONENT for forging the Photon I[100~], alongside the other COMPONENT Particle Accelerator MK I.
+FM: A COMPONENT for forging the MFK Kestrel Drone, alongside the other COMPONENT Combat Drone MK I.</text>
 
 <text name="fm_tip_laser_particle">Tip: Particle accelerators fire in a radius much like Flak. Each projectile does small system damage and has a reasonable fire chance, which can be devastating against its target.
 
@@ -200,7 +201,8 @@ FM: A COMPONENT for forging the Pulse Laser I [105~], alongside the other COMPON
 
 <text name="fm_tip_laser_2">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
 
-FM: A COMPONENT for forging the Pulse Laser II [130~], alongside the other COMPONENT Energy II.</text>
+FM: A COMPONENT for forging the Pulse Laser II [130~], alongside the other COMPONENT Energy II.
+FM: A COMPONENT for forging the Kestrel Drone alongside the other COMPONENT Combat Drone MK I.</text>
 
 <text name="fm_tip_laser_3">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
 
@@ -317,7 +319,9 @@ FM: A COMPONENT for forging the Pulse Laser III [155~], alongside the other COMP
 
 FM: A COMPONENT for forging the Green Heart Energy Pinpoint[100~], alongside the other COMPONENT Energy Cannon III.
 
-FM: A COMPONENT for forging the Terra Nova Pinpoint[100~], alongside the other COMPONENT Ishimura Beam.</text>
+FM: A COMPONENT for forging the Terra Nova Pinpoint[100~], alongside the other COMPONENT Ishimura Beam.
+
+FM: A COMPONENT for forging the Ishimura Drone alongside the other COMPONENT Amp Pinpoint Drone.</text>
 
 
 <!--    FLAK CRAFT TIPS -->
@@ -353,6 +357,16 @@ FM: A COMPONENT for forging the Carnifex Flak[130~], alongside the other COMPONE
 FM: A COMPONENT for forging the Bronze Metal Flak[10~], alongside the other COMPONENT Flak II.</text>
 
 <text name="fm_tip_crystal_minelauncher">FM: A COMPONENT for forging the Bronze Metal Flak[10~], alongside the other COMPONENT Flak II.</text>
+
+<text name="fm_tip_crystal_shotgun">Tip: Crystal weapons pierce a single layer of shields. Only level 2 shields and higher can stop them.
+
+FM: A COMPONENT for forging the Bronze Metal Flak[10~], alongside the other COMPONENT Flak II.
+FM: A COMPONENT for forging the Crystal Drone, alongside the other COMPONENT Assault Drone.</text>
+
+<text name="fm_tip_crystal_heavy_1">Tip: Crystal weapons pierce a single layer of shields. Only level 2 shields and higher can stop them.
+
+FM: A COMPONENT for forging the Bronze Metal Flak[10~], alongside the other COMPONENT Flak II.
+FM: A COMPONENT for forging the Amber Drone, alongside the other COMPONENT Assault Drone.</text>
 
 
 <!--    EXPLOSIVE CRAFT TIPS -->
@@ -422,8 +436,57 @@ FM: A COMPONENT for forging the 'Debilitatum' Heavy Missiles[80~], alongside the
 <text name="fm_tip_elite_kernel">Tip: Elite Kernels are stronger variants of Kernel weapons. They have a 65% chance to ignore their ammo cost and have a guaranteed stun chance.
 FM: A COMPONENT for forging the Basilisk Beam, alongside the other COMPONENT called [REDACTED].</text>
 
+<!--DRONES-->
+<text name="fm_tip_combat_2">Tip: Toggle Drones can have multiple functionalities. You can switch the mode of as many toggle drones as you want using the toggle button!
 
+Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.
+FM: A COMPONENT for forging the Boo Womp, alongside the other COMPONENT Amp Energy.
+FM: A COMPONENT for forging the Forgemaster Drone, alongside the other COMPONENT called [REDACTED].</text>
+<text name="fm_tip_amp_energy">Tip: Amp Drones can change their power levels before combat. More power increases their efficiency, but will also require reactor power to function.
 
+Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.
+FM: A COMPONENT for forging the Boo Womp, alongside the other COMPONENT Combat Drone MK II.</text>
+<text name="fm_tip_assault_drone">Tip: Toggle Drones can have multiple functionalities. You can switch the mode of as many toggle drones as you want using the toggle button!
+
+Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.
+FM: A COMPONENT for forging the Amber Drone, alongside the other COMPONENT Crystal Heavy MK I.
+FM: A COMPONENT for forging the Crystal Drone, alongside the other COMPONENT Crystal Scatter.
+FM: A COMPONENT for forging the Dazhbog Drone, alongside the other COMPONENT called [REDACTED].</text>
+
+<text name="fm_tip_combat_conservative">Tip: Conservative drones use no power on their own, but cannot be depowered once activated.
+FM: A COMPONENT for forging the CURA Drone, alongside the other COMPONENTS Battle Drone MK I and Manager Drone.</text>
+<text name="fm_tip_battletog">Tip: Toggle Drones can have multiple functionalities. You can switch the mode of as many toggle drones as you want using the toggle button!
+
+Tip: Ship Drones require 1 drone to deploy, but will not need to be deployed again until destroyed. They stay on ship and help your crew as long as they are powered.
+
+Tip: Boarding Drones require 1 drone part to deploy for each new enemy. They will board the enemy ship and attack as long as they are powered. If they have not been destroyed, the drone parts will be returned after combat.
+FM: A COMPONENT for forging the CURA Drone, alongside the other COMPONENTS Conservative Combat Drone and Manager Drone.</text>
+<text name="fm_tip_manning">Tip: Crew Drones require 1 drone to deploy, but will not need to be deployed again until destroyed. They stay on ship and help your crew as long as they are powered.
+FM: A COMPONENT for forging the CURA Drone, alongside the other COMPONENTS Battle Drone MK I and Conservative Combat Drone.</text>
+<text name="fm_tip_amp_pinpoint">Tip: Amp Drones can change their power levels before combat. More power increases their efficiency, but will also require reactor power to function.
+
+Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.
+FM: A COMPONENT for forging the Ishimura Drone, alongside the other COMPONENT 'Stiletto' Pinpoint.
+</text>
+<text name="fm_tip_combat_1">Tip: Toggle Drones can have multiple functionalities. You can switch the mode of as many toggle drones as you want using the toggle button!
+
+Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.
+FM: A COMPONENT for forging the Kestrel Drone, alongside the other COMPONENT Burst Laser MK II.
+FM: A COMPONENT for forging the MFK Kestrel Drone, alongside the other COMPONENT Light Laser MK I.</text>
+<text name="fm_tip_recon">Tip: Toggle Drones can have multiple functionalities. You can switch the mode of as many toggle drones as you want using the toggle button!
+
+Tip: Ship Drones require 1 drone to deploy, but will not need to be deployed again until destroyed. They stay on ship and help your crew as long as they are powered.
+
+Tip: Boarding Drones require 1 drone part to deploy for each new enemy. They will board the enemy ship and attack as long as they are powered. If they have not been destroyed, the drone parts will be returned after combat.
+FM: A COMPONENT for forging the MFK Picket Teleporter Relay Drone, alongside the other COMPONENT External Reconstructive Teleporter.</text>
+<text name="fm_tip_pest">Tip: Toggle Drones can have multiple functionalities. You can switch the mode of as many toggle drones as you want using the toggle button!
+
+Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.
+FM: A COMPONENT for forging the Siren Drone, alongside the other COMPONENT Stun Bomb.</text>
+
+<text name="fm_tip_bomb_stun">Tip: Bombs teleport past shields and defense drones to land directly on the ship. Like missiles, they cost one missile to launch. They never damage hull, but can be effective at disrupting crew and systems. You can even launch them at boarders on your own ship.
+
+FM: A COMPONENT for forging the Siren Drone, alongside the other COMPONENT Pest Drone.</text>
 
 
 

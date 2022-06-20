@@ -6080,6 +6080,105 @@
 		</choice>
 
 
+		<choice req="FM_AMBER_DRONE_LIST" lvl="1" blue="false" hidden="true">
+			<text>Overcharge the lattice of the Crystal Heavy MK I with the Assault Drone's particles to forge the Amber Combat Drone.</text>
+			<event load="NPC_STORAGE_CHECK_CREATE_FM_AMBER_DRONE"/>
+		</choice>
+
+		<choice req="FM_AMBER_DRONE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+			<text>You must have a Crystal Heavy MK I and an Assault Drone to forge this drone.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+
+		<choice req="FM_CRYSTAL_DRONE_LIST" lvl="1" blue="false" hidden="true">
+			<text>Calibrate the resonant frequencies of the Crystal Scatter's projectiles using the core of the Assault Drone to forge the Crystal Combat Drone.</text>
+			<event load="NPC_STORAGE_CHECK_CREATE_FM_CRYSTAL_DRONE"/>
+		</choice>
+
+		<choice req="FM_CRYSTAL_DRONE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+			<text>You must have a Crystal Scatter and an Assault Drone to forge this drone.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+
+		<choice req="FM_CURA_DRONE_LIST" lvl="1" blue="false" hidden="true">
+			<text>Further optimize the Conservative Combat Drone's reactor and algorithms with the Manager Drone's computer, while constructing a makeshift drone factory with the Battle Drone MK I's blueprint.</text>
+			<event load="NPC_STORAGE_CHECK_CREATE_FM_CURA_DRONE"/>
+		</choice>
+
+		<choice req="FM_CURA_DRONE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+			<text>You must have a Manager Drone, Conservative Combat Drone, and Battle Drone MK I to forge this drone.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+
+		<choice req="FM_FLAMETHROWER_DRONE_LIST" lvl="1" blue="false" hidden="true">
+			<text>Infuse your Assault Drone with the essence of a ghost to craft the Dazhbog Flamethrower Drone.</text>
+			<event load="NPC_STORAGE_CHECK_CREATE_FM_FLAMETHROWER_DRONE"/>
+		</choice>
+
+		<choice req="FM_FLAMETHROWER_DRONE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+			<text>You must have an Assault Drone and gaseous form to forge this drone.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+
+		<choice req="FM_FORGEMAN_DRONE_LIST" lvl="1" blue="false" hidden="true">
+			<text>Have your Plated use their expertise in the art of the forge to convert your Combat Drone MK II into the Forgemaster Drone.</text>
+			<event load="NPC_STORAGE_CHECK_CREATE_FM_FORGEMAN_DRONE"/>
+		</choice>
+
+		<choice req="FM_FORGEMAN_DRONE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+			<text>You must have a Combat Drone MK II and an expert craftsperson to forge this drone.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+
+		<choice req="FM_ISHIMURA_DRONE_LIST" lvl="1" blue="false" hidden="true">
+			<text>Create a feedback loop between the beams of the Stiletto and Amp Pinpoint Drone to craft the Ishimura Beam Drone.</text>
+			<event load="NPC_STORAGE_CHECK_CREATE_FM_ISHIMURA_DRONE"/>
+		</choice>
+
+		<choice req="FM_ISHIMURA_DRONE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+			<text>You must have a Stiletto Pinpoint and Amp Pinpoint Drone to forge this drone.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+
+		<choice req="FM_KESTREL_DRONE_LIST" lvl="1" blue="false" hidden="true">
+			<text>Install the internal loading mechanism of the Burst Laser MK II into the Combat Drone MK I to craft the Kestrel Combat Drone.</text>
+			<event load="NPC_STORAGE_CHECK_CREATE_FM_KESTREL_DRONE"/>
+		</choice>
+
+		<choice req="FM_KESTREL_DRONE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+			<text>You must have a Burst Laser MK II and Combat Drone MK I to forge this drone.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+
+		<choice req="FM_MFK_KESTREL_DRONE_LIST" lvl="1" blue="false" hidden="true">
+			<text>Install the Light Laser MK I into the Combat Drone MK I's chassis to craft the MFK Kestrel Combat Drone.</text>
+			<event load="NPC_STORAGE_CHECK_CREATE_FM_KESTREL_DRONE"/>
+		</choice>
+
+		<choice req="FM_MFK_KESTREL_DRONE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+			<text>You must have a Light Laser MK I and Combat Drone MK I to forge this drone.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+
+		<choice req="FM_MFK_PICKET_DRONE_LIST" lvl="1" blue="false" hidden="true">
+			<text>Utilize the Recon Drone's data suite to reconfigure your external Teleporter tech into the MFK Picket Teleporter Relay.</text>
+			<event load="NPC_STORAGE_CHECK_CREATE_FM_MFK_PICKET_DRONE"/>
+		</choice>
+
+		<choice req="FM_MFK_PICKET_DRONE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+			<text>You must have a Recon Drone and the External Reconstructive Teleporter augment to forge this drone.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+
+		<choice req="FM_SIREN_DRONE_LIST" lvl="1" blue="false" hidden="true">
+			<text>Extract the nerve-disrupting components of the Stun Bomb and integrate them into the Pest Drone to forge the Siren Combat Drone.</text>
+			<event load="NPC_STORAGE_CHECK_CREATE_FM_SIREN_DRONE"/>
+		</choice>
+
+		<choice req="FM_SIREN_DRONE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+			<text>You must have a Stun Bomb and Pest Drone to forge this drone.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
 
 		<!--Back to main craft menu-->
 		<choice req="pilot" lvl="1" max_group="20" hidden="true" blue="false">
@@ -6106,6 +6205,239 @@
       <text>Nevermind.</text>
       <event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
     </choice>
+	</event>
+
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_AMBER_DRONE">
+		<checkCargo/>
+    <text>Currently viewing the Amber Combat Drone.[Cost: 0~].</text>
+    <choice hidden="false" req="FM_AMBER_DRONE_LIST" blue="false">
+      <text>Craft the Amber Drone.[Cost: 0~]</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <drone name="FM_AMBER_DRONE"/>
+				<removeItem>CRYSTAL_HEAVY_1</removeItem>
+				<queueEvent>FM_REMOVE_ASSAULT</queueEvent><!--Removes one Assault drone of ANY kind (toggle mode)-->
+        <queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+      </event>
+    </choice>
+    <choice hidden="false">
+      <text>Nevermind.</text>
+      <event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
+    </choice>
+	</event>
+
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_CRYSTAL_DRONE">
+		<checkCargo/>
+    <text>Currently viewing the Crystal Combat Drone.[Cost: 0~].</text>
+    <choice hidden="false" req="FM_CRYSTAL_DRONE_LIST" blue="false">
+      <text>Craft the Crystal Drone.[Cost: 0~]</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <drone name="FM_CRYSTAL_DRONE"/>
+				<removeItem>CRYSTAL_SHOTGUN</removeItem>
+				<queueEvent>FM_REMOVE_ASSAULT</queueEvent><!--Removes one Assault drone of ANY kind (toggle mode)-->
+        <queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+      </event>
+    </choice>
+    <choice hidden="false">
+      <text>Nevermind.</text>
+      <event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
+    </choice>
+	</event>
+
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_CURA_DRONE">
+		<checkCargo/>
+    <text>Currently viewing the CURA Combat Drone.[Cost: 0~].</text>
+    <choice hidden="false" req="FM_CURA_DRONE_LIST" blue="false">
+      <text>Craft the CURA Drone.[Cost: 0~]</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <drone name="FM_CURA_DRONE"/>
+				<removeItem>MANNING</removeItem>
+				<queueEvent>FM_REMOVE_COMBAT_CONSERVATIVE</queueEvent><!--Removes one Conservative Combat drone of ANY kind (toggle mode)-->
+				<queueEvent>FM_REMOVE_BATTLETOG</queueEvent><!--Removes one Battle Drone MK I of ANY kind (toggle mode)-->
+        <queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+      </event>
+    </choice>
+    <choice hidden="false">
+      <text>Nevermind.</text>
+      <event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
+    </choice>
+	</event>
+
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_FLAMETHROWER_DRONE">
+		<checkCargo/>
+    <text>Currently viewing the Dazhbog Flamethrower Drone.[Cost: 0~].</text>
+    <choice hidden="false" req="FM_FLAMETHROWER_DRONE_LIST1" blue="false">
+      <text>Craft the Dazhbog Drone using a Phantom.[Cost: 0~]</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <drone name="FM_FLAMETHROWER_DRONE"/>
+        <removeCrew class="phantom">
+          <clone>false</clone>
+          <text>You carefully infuse your Phantom's gasses into the Assault Drone.</text>
+        </removeCrew>
+        <queueEvent>FM_REMOVE_ASSAULT</queueEvent><!--Removes one Assault drone of ANY kind (toggle mode)-->
+        <queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+      </event>
+    </choice>
+    <choice hidden="false" req="FM_FLAMETHROWER_DRONE_LIST2" blue="false">
+      <text>Craft the Dazhbog Drone using a Goul.[Cost: 0~]</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <drone name="FM_FLAMETHROWER_DRONE"/>
+        <removeCrew class="phantom_goul">
+          <clone>false</clone>
+          <text>You carefully infuse your Goul's gasses into the Assault Drone.</text>
+        </removeCrew>
+        <queueEvent>FM_REMOVE_ASSAULT</queueEvent><!--Removes one Assault drone of ANY kind (toggle mode)-->
+        <queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+      </event>
+    </choice>
+    <choice hidden="false" req="FM_FLAMETHROWER_DRONE_LIST3" blue="false">
+      <text>Craft the Dazhbog Drone using a Mare.[Cost: 0~]</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <drone name="FM_FLAMETHROWER_DRONE"/>
+        <removeCrew class="phantom_mare">
+          <clone>false</clone>
+          <text>You carefully infuse your Mare's gasses into the Assault Drone.</text>
+        </removeCrew>
+        <queueEvent>FM_REMOVE_ASSAULT</queueEvent><!--Removes one Assault drone of ANY kind (toggle mode)-->
+        <queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+      </event>
+    </choice>
+    <choice hidden="false" req="FM_FLAMETHROWER_DRONE_LIST4" blue="false">
+      <text>Craft the Dazhbog Drone using a Wraith.[Cost: 0~]</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <drone name="FM_FLAMETHROWER_DRONE"/>
+        <removeCrew class="phantom_wraith">
+          <clone>false</clone>
+          <text>You carefully infuse your Wraith's gasses into the Assault Drone.</text>
+        </removeCrew>
+        <queueEvent>FM_REMOVE_ASSAULT</queueEvent><!--Removes one Assault drone of ANY kind (toggle mode)-->
+        <queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+      </event>
+    </choice>
+    <choice hidden="false">
+      <text>Nevermind.</text>
+      <event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
+    </choice>
+	</event>
+
+
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_FORGEMAN_DRONE">
+		<checkCargo/>
+    <text>Currently viewing the Forgemaster Combat Drone.[Cost: 0~].</text>
+    <choice hidden="false" req="FM_FORGEMAN_DRONE_LIST" blue="false">
+      <text>Craft the Forgemaster Drone.[Cost: 0~]</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <drone name="FM_FORGEMAN_DRONE"/>
+				<queueEvent>FM_REMOVE_COMBAT_2</queueEvent><!--Removes one combat MK 2 drone of ANY kind (toggle mode)-->
+        <queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+      </event>
+    </choice>
+    <choice hidden="false">
+      <text>Nevermind.</text>
+      <event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
+    </choice>
+	</event>
+
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_ISHIMURA_DRONE">
+		<checkCargo/>
+		<text>Currently viewing the Ishimura Combat Drone.[Cost: 0~].</text>
+		<choice hidden="false" req="FM_ISHIMURA_DRONE_LIST" blue="false">
+			<text>Craft the Ishimura Drone.[Cost: 0~]</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<drone name="FM_ISHIMURA_DRONE"/>
+				<removeItem>FOCUS_3</removeItem>
+				<queueEvent>FM_REMOVE_AMP_FOCUS</queueEvent><!--Removes one Amp Focus drone of ANY kind (toggle mode)-->
+				<queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+			</event>
+		</choice>
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
+		</choice>
+	</event>
+
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_KESTREL_DRONE">
+		<checkCargo/>
+		<text>Currently viewing the Kestrel Combat Drone.[Cost: 0~].</text>
+		<choice hidden="false" req="FM_KESTREL_DRONE_LIST" blue="false">
+			<text>Craft the Kestrel Drone.[Cost: 0~]</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<drone name="FM_KESTREL_DRONE"/>
+				<removeItem>LASER_BURST_3</removeItem>
+				<queueEvent>FM_REMOVE_COMBAT_1</queueEvent><!--Removes one Combat I drone of ANY kind (toggle mode)-->
+				<queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+			</event>
+		</choice>
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
+		</choice>
+	</event>
+
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_MFK_KESTREL_DRONE">
+		<checkCargo/>
+		<text>Currently viewing the MFK Kestrel Combat Drone.[Cost: 0~].</text>
+		<choice hidden="false" req="FM_KESTREL_DRONE_LIST" blue="false">
+			<text>Craft the MFK Kestrel Drone.[Cost: 0~]</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<drone name="FM_MFK_KESTREL_DRONE"/>
+				<removeItem>LASER_LIGHT_1</removeItem>
+				<queueEvent>FM_REMOVE_COMBAT_1</queueEvent><!--Removes one Combat I drone of ANY kind (toggle mode)-->
+				<queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+			</event>
+		</choice>
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
+		</choice>
+	</event>
+
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_MFK_PICKET_DRONE">
+		<checkCargo/>
+		<text>Currently viewing the MFK Picket Teleporter Relay.[Cost: 0~].</text>
+		<choice hidden="false" req="FM_MFK_PICKET_DRONE_LIST" blue="false">
+			<text>Craft the MFK Picket Drone.[Cost: 0~]</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<drone name="FM_MFK_PICKET_DRONE"/>
+				<removeItem>EX_TELEPORT_HEAL</removeItem>
+				<queueEvent>FM_REMOVE_RECON</queueEvent><!--Removes one Recon drone of ANY kind (toggle mode)-->
+				<queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+			</event>
+		</choice>
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
+		</choice>
+	</event>
+
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_SIREN_DRONE">
+		<checkCargo/>
+		<text>Currently viewing the Siren Combat Drone.[Cost: 0~].</text>
+		<choice hidden="false" req="FM_SIREN_DRONE_LIST" blue="false">
+			<text>Craft the Siren Drone.[Cost: 0~]</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<drone name="FM_SIREN_DRONE"/>
+				<removeItem>BOMB_STUN</removeItem>
+				<queueEvent>FM_REMOVE_PEST</queueEvent><!--Removes one Pest drone of ANY kind (toggle mode)-->
+				<queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+			</event>
+		</choice>
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
+		</choice>
 	</event>
 </FTL>
 

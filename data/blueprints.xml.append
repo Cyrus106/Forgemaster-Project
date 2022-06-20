@@ -1067,7 +1067,7 @@ boo womp</desc>
 		<name>The Vulture</name>
 		<desc>In an effort to become truly invulnerable, these Rockmen attempted to make their ship’s cloaking system last indefinitely by redirecting all the energy out of the shield system. They succeeded, although only the cloaking system itself managed to actually disappear, leaving its armor as the only defense.</desc>
 		<systemList>
-			<artillery power="2" room="0" start="true" weapon="BEAM_ADAPT_3_PLAYER_ARTY_f" img="room_artillery_invis_long" />
+			<artillery power="2" room="0" start="true" weapon="BEAM_ADAPT_3_PLAYER_ARTY_CHAIN" img="room_artillery_invis_long" />
 			<artillery power="2" room="3" start="true" weapon="ZOLTAN_DELETER_PLAYER_ARTY_CHAIN" img="room_artillery_invis_long" />
 			<artillery power="2" room="1" start="true" weapon="BOMB_BREACH_1_PLAYER_ARTY_CHAIN" img="room_artillery_invis_long" />
 			<artillery power="2" room="2" start="true" weapon="KERNEL_CHAIN_ELITE_PLAYER_ARTY" img="room_artillery_invis_long" />
@@ -4257,6 +4257,19 @@ boo womp</desc>
 				<droneTarget>CREW</droneTarget>
 				<blackList load="LIST_FM_NOABDUCT"/>
 			</statBoost>
+
+			<!--<statBoost name="deathEffect">
+				<boostType>SET</boostType>
+				<deathEffect>
+					<event name="LUA_TEST_YOINKY">
+						<text>Yoinky Sploinky, pardner!</text>
+					</event>
+				</deathEffect>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+			</statBoost>-->
 
 			<!--Just some stuff I was testing out-->
 			<!--<statBoost name="temporaryEffect">
@@ -10369,36 +10382,74 @@ boo womp</desc>
 		<weaponArt>fm_beam_ion_special</weaponArt>
 		<iconImage>beam</iconImage>
 	</weaponBlueprint>
+	
+	<weaponBlueprint name="FM_CRYSTAL_BEAM">
 
-	<weaponBlueprint name="FM_BEAM_ETERNITY">
 		<type>BEAM</type>
-		<title>'Eternity' Beam</title>
-		<short>'Eternity' B.</short>
-		<desc>The weapon which the weapon this weapon was based on is based on used to "cut grass", likewise any fleet before this weapon will probably be likewise cut down...</desc>
-		<tooltip>Beam weapon, 2 damage to hull, 3 damage to system per room.</tooltip>
-		<damage>1</damage>
+		<tip>tip_bio</tip>
+		<title>Crystallised Nanobeam</title>
+		<short>C. Nanobeam</short>
+		<desc>This child of Crystal Science uses strange crystalised nanobots to trap your opponents, causing all enemy crew on the opposing ship to lockdown the room they are currently in whenever this beam hits someone.</desc>
+		<tooltip> Beam weapon that greatly damages enemy crew. Stuns, pierces shields, and starts fires Extremely expensive but excellent for crew killing.</tooltip>
+		<damage>3</damage>
 		<sp>1</sp>
-		<sysDamage>0</sysDamage>
-		<persDamage>0</persDamage>
-		<fireChance>2</firechance>
-		<breachChance>1</breachChance>
+		<fireChance>3</fireChance>
 		<cooldown>21</cooldown>
-		<power>3</power>
-		<cost>200</cost>
-		<bp>7</bp>
+		<statBoosts>
+                        <statBoost name="statBoost">
+				<boostType>FLAT</boostType>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<duration>0.2</duration>
+				
+			<statBoost name="powerEffect">
+					<boostType>SET</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<priority>999999</priority>
+					<blackList load="LIST_FM_PLSNOEFFECT"/>
+					<powerEffect>
+						<cooldown>0.1</cooldown>
+						<activateWhenReady enemiesOnly="false">true</activateWhenReady>
+						<jumpCooldown>full</jumpCooldown>
+						<powerSounds>
+							<powerSound>lockdown1</powerSound>
+							<powerSound>lockdown2</powerSound>
+						</powerSounds>
+						<lockdown>true</lockdown>
+						<friendlyFire>true</friendlyFire>
+						<shipFriendlyFire>true</shipFriendlyFire>
+						<buttonText>CRYSTALISE</buttonText>
+						<tooltip>Ready: Lockdown your current room.</tooltip>
+						<cooldownColor r="170" g="206" b="39"/>
+					</powerEffect>
+				</statBoost>
+				
+                        <blackList>
+				<FM_PLSNOEFFECT/>
+			</blackList>
+				<priority>-100</priority>
+			
+			</statBoost>
+	        </statBoosts>
 		<color>
-			<r>163</r>
-			<g>106</g>
-			<b>226</b>
+			<r>255</r>
+			<g>0</g>
+			<b>0</b>
 		</color>
+		<speed>15</speed>
+		<power>3</power>
+		<stunChance>0</stunChance>
+		<stun>7</stun>
+		<cost>240</cost>
+		<bp>5</bp>
 		<rarity>0</rarity>
-		<length>200</length>
-		<speed>30</speed>
+		<length>90</length>
 		<image>beam_contact</image>
 		<launchSounds>
 			<sound>beam2</sound>
 		</launchSounds>
-		<weaponArt>fm_beam_eternity</weaponArt>
+		<weaponArt>fm_crystal_beam_1</weaponArt>
 		<iconImage>beam</iconImage>
 	</weaponBlueprint>
 
@@ -10967,6 +11018,76 @@ boo womp</desc>
     </launchSounds>
     <weaponArt>fm_mini_yari</weaponArt>
     <iconImage>beam</iconImage>
+	</weaponBlueprint>
+	
+    <weaponBlueprint name="FM_FOCUS_VIRUS"> <!-- Crafted with Corrosive Hull 2 and Anelace Pinpoint -->
+		<type>BEAM</type>
+		<tip>tip_focus</tip>
+		<title>'Aegrotatio' Pinpoint</title>
+		<short>'Aegrotatio'</short>
+		<desc>An incredibly unstable bio-weapon developed by only the most criminally insane shell scientists, this weapon inflicts crew with a deadly spreading virus, slowly wiping out the crew of enemy ships.</desc>
+		<tooltip>Beware! A misfire from this weapon once wiped out an entire shell colony, so maybe don't fire it too close to your boarders.</tooltip>
+		<damage>2</damage>
+	        <sysDamage>-1</sysDamage>
+	        <persDamage>-2</persDamage>
+		<sp>10</sp>
+		<fireChance>0</fireChance>
+		<breachChance>2</breachChance>
+		<stunChance>0</stunChance>
+		<cooldown>19</cooldown>
+		<speed>1</speed>
+		<power>2</power>
+		<cost>140</cost>
+		<bp>2</bp>
+		<rarity>0</rarity>
+	        <statBoosts>
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<amount>-7</amount>
+				<shipTarget>ENEMY_SHIP</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<duration>60</duration>
+				<boostAnim>pheromones</boostAnim>
+				<maxStacks>1</maxStacks>
+				<blackList>
+					<FM_PLSNOEFFECT/>
+				</blackList>
+				<priority>-100</priority>
+			</statBoost>
+			
+			<statBoost name="statBoost">
+				<boostType>FLAT</boostType>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<duration>60</duration>
+				
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<amount>-4</amount>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<duration>60</duration>
+				<boostAnim>bio_poison</boostAnim>
+				<maxStacks>1</maxStacks>
+				<blackList>
+					<FM_PLSNOEFFECT/>
+				</blackList>
+				<priority>-100</priority>
+			</statBoost>
+                        <blackList>
+				<FM_PLSNOEFFECT/>
+			</blackList>
+				<priority>-100</priority>
+			
+			</statBoost>
+	        </statBoosts>
+		<image>beam_contact</image>
+		<length>1</length>
+		<launchSounds>
+			<sound>focus_strong</sound>
+		</launchSounds>
+		<weaponArt>fm_focus_virus</weaponArt>
+		<iconImage>beam</iconImage>
 	</weaponBlueprint>
 
 </FTL>
@@ -12238,7 +12359,7 @@ boo womp</desc>
 		</tooltip>
 		<damage>0</damage>
 		<sysDamage>0</sysDamage>
-		<persDamage>4</persDamage>
+		<!--<persDamage>4</persDamage>-->
 		<missiles>1</missiles>
 		<accuracyMod>20</accuracyMod>
 		<radius>70</radius>
@@ -12253,7 +12374,7 @@ boo womp</desc>
 		<speed>20</speed>
 		<bp>5</bp>
 		<rarity>0</rarity>
-		<spawnCrew>
+	<!--	<spawnCrew>
 	        <race>fm_bio_cloud</race>
 	        <number>1</number>
 	        <noSlot>true</noSlot>
@@ -12267,15 +12388,43 @@ boo womp</desc>
 	                <crewTarget>ALL</crewTarget>
 	                <priority>999999</priority>
 	            </statBoost>
-					  	<!--<statBoost name="maxHealth">
+					  	<statBoost name="maxHealth">
 	                <boostType>FLAT</boostType>
 	                <amount>-1000000</amount>
 	                <shipTarget>ALL</shipTarget>
 	                <crewTarget>ALL</crewTarget>
 	                <priority>999999</priority>
-	            </statBoost>-->
+	            </statBoost>
 	        </statBoosts>
-	    </spawnCrew>
+	    </spawnCrew>-->
+		<roomStatBoostChance>10</roomStatBoostChance>
+		<roomStatBoosts>
+
+			<statBoost name="trueHealAmount">
+			<!--<statBoost name="maxHealth">-->
+				<duration>10</duration>
+				<boostType>FLAT</boostType>
+				<amount>-4</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<priority>999999</priority>
+				<droneTarget>CREW</droneTarget>
+				<maxStacks id="bio_mine_drain">2</maxStacks>
+
+				<dangerRating>0.1</dangerRating><!--Crew below 10% health will run away-->
+				<roomAnim renderLayer="1">
+					<anim animType="default" animBorder="2">nothing</roomAnim>                <!-- (animType can be default, stretch, random, or center, animBorder controls spawning margins)-->
+					<tileAnim>gas_twisted_1x1</tileAnim>                                               <!--(spawn this animation on each tile)-->
+				</roomAnim>
+			</statBoost>
+
+
+
+
+
+
+		</roomStatBoosts>
+
 		<projectiles>
 			<projectile count="5" fake="false">fm_mine_bio</projectile>
 		</projectiles>
@@ -13110,7 +13259,7 @@ boo womp</desc>
 		<drone_targetable>1</drone_targetable>
 		<title>Crystal Scatter</title>
 		<short>Cry. Scatter</short>
-		<desc>Fires a cluster of 4 crystalline projectiles that pierce 1 shield layer each.</desc>
+		<desc>Fires a cluster of 4 crystalline projectiles that pierce 1 shield layer each.</desc><!--Potential change, give it several projectiles with no pierce + hull damage and some piercing projectiles that only do breach (these projectiles will be slighly slower so as to make this a super-breach drone)-->
 		<radius>50</radius>
 		<damage>1</damage>
 		<shots>1</shots>
@@ -13529,9 +13678,9 @@ boo womp</desc>
 
 	<droneBlueprint name="FM_MFK_PICKET_DRONE">
 	    <type>COMBAT</type>
-	    <title>MFK Picket Combat Drone</title>
-	    <short>P. Comb. Drone</short>
-	    <desc>This drone will board you with several MFKs. How? No idea!</desc>
+	    <title>MFK Picket Teleporter Relay</title>
+	    <short>MFK Tele. Rel.</short>
+	    <desc>This drone will constantly board the enemy ship with highly trained soldiers, but cannot lock on through any amount of shields.</desc>
 	    <power>2</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
@@ -13543,20 +13692,22 @@ boo womp</desc>
 	    <rarity>0</rarity>
 	    <iconImage>combat</iconImage>
 	</droneBlueprint>
+
 	<weaponBlueprint name="FM_MFK_PICKET_DRONE_WEAPON">
 		<type>LASER</type>
 		<title>Picket Boarder Launcher</title>
 		<short>P. Board. Launch.</short>
-		<desc>Boards with 4 MFK at once, because why not.</desc>
+		<desc>Boarding weapon.</desc>
 		<damage>0</damage>
 		<shots>1</shots>
-		<accuracyMod>10</accuracyMod>
+		<speed>300</speed>
+		<accuracyMod>100</accuracyMod>
 		<rarity>0</rarity>
-		<sp>10</sp>
+		<sp>0</sp>
 		<spawnCrew>
 				<race>human_mfk</race>
-				<number>4</number>
-
+				<lifetime>10</lifetime>
+				<number>1</number>
 				<noSlot>true</noSlot>
 				<statBoosts>
 						<statBoost name="noClone">
@@ -13566,26 +13717,22 @@ boo womp</desc>
 								<crewTarget>ALL</crewTarget>
 								<priority>999999</priority>
 						</statBoost>
-
 				</statBoosts>
 		</spawnCrew>
-		<image>fm_drone_artillery_shot</image>
+		<image>nothing</image>
 		<launchSounds>
-				<sound>smallMissile1</sound>
-				<sound>smallMissile2</sound>
+				<sound>silence</sound>
 		</launchSounds>
 		<hitShipSounds>
-				<sound>hitHull2</sound>
-				<sound>hitHull3</sound>
+				<sound>teleport</sound>
 		</hitShipSounds>
 		<hitShieldSounds>
-				<sound>hitShield1</sound>
-				<sound>hitShield2</sound>
-				<sound>hitShield3</sound>
+				<sound>batteryStop</sound>
 		</hitShieldSounds>
 		<missSounds>
 				<sound>miss</sound>
 		</missSounds>
+		<explosion>nothing</explosion>
 		<weaponArt>laser_burst_1</weaponArt>
 	</weaponBlueprint>
 
@@ -13600,11 +13747,11 @@ boo womp</desc>
 	    <type>COMBAT</type>
 	    <title>Siren Combat Drone</title>
 	    <short>Siren Drone</short>
-	    <desc>When Larry and Bob do battle, the KLAXONS of WAR shall sound across the heavens!</desc>
+	    <desc>This drone will rapidly ionize the enemy shields, and can potentially keep crew stunned forever.</desc>
 	    <power>2</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
-	    <speed>5</speed>
+	    <speed>25</speed>
 	    <cost>100</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_siren_drone</droneImage>
@@ -13613,49 +13760,42 @@ boo womp</desc>
 	    <iconImage>combat</iconImage>
 	</droneBlueprint><!--Do this later.-->
 	<weaponBlueprint name="FM_SIREN_DRONE_WEAPON">
-	    <type>LASER</type>
-	    <title>Hacker Drone Launcher</title>
-	    <short>Hacker Drone</short>
-	    <desc>Fires a micro hacker drone. Automatically hacks the room hit and stuns enemy targets within it for 5 seconds.</desc>
+	    <type>BURST</type>
+	    <title>Stun Projector</title>
+	    <short>Stun Proj.</short>
+	    <desc>Stuns affected crew for a long time and does ion damage.</desc>
 	    <damage>0</damage>
+			<ion>1</ion>
 	    <shots>1</shots>
-	    <accuracyMod>10</accuracyMod>
+	    <accuracyMod>0</accuracyMod>
 	    <rarity>0</rarity>
-	    <sp>10</sp>
-	    <spawnCrew>
-	        <race>fm_drone_hack</race>
-	        <number>1</number>
-
-	        <noSlot>true</noSlot>
-	        <statBoosts>
-	            <statBoost name="noClone">
-	                <boostType>SET</boostType>
-	                <value>true</value>
-	                <shipTarget>ALL</shipTarget>
-	                <crewTarget>ALL</crewTarget>
-	                <priority>999999</priority>
-	            </statBoost>
-
-	        </statBoosts>
-	    </spawnCrew>
-	    <image>fm_drone_hack_proj</image>
-	    <launchSounds>
-	        <sound>smallMissile1</sound>
-	        <sound>smallMissile2</sound>
-	    </launchSounds>
-	    <hitShipSounds>
-	        <sound>hitHull2</sound>
-	        <sound>hitHull3</sound>
-	    </hitShipSounds>
-	    <hitShieldSounds>
-	        <sound>hitShield1</sound>
-	        <sound>hitShield2</sound>
-	        <sound>hitShield3</sound>
-	    </hitShieldSounds>
-	    <missSounds>
-	        <sound>miss</sound>
-	    </missSounds>
-	    <weaponArt>laser_burst_1</weaponArt>
+	    <sp>0</sp>
+	    <stun>30</stun>
+			<radius>20</radius>
+			<projectiles>
+				<projectile count="3" fake="false">ion_stun_shot</projectile>
+			</projectiles>
+			<explosion>explosion_stun_ion</explosion>
+			<launchSounds>
+				<sound>ionShoot1</sound>
+				<sound>ionShoot2</sound>
+				<sound>ionShoot3</sound>
+			</launchSounds>
+			<hitShipSounds>
+				<sound>ionHit1</sound>
+				<sound>ionHit2</sound>
+				<sound>ionHit3</sound>
+			</hitShipSounds>
+			<hitShieldSounds>
+				<sound>ionShields1</sound>
+				<sound>ionShields2</sound>
+				<sound>ionShields3</sound>
+			</hitShieldSounds>
+			<missSounds>
+				<sound>miss</sound>
+			</missSounds>
+			<weaponArt>laser_burst_1</weaponArt>
+			<iconImage>ion</iconImage>
 	</weaponBlueprint>
 
 
@@ -19660,7 +19800,7 @@ boo womp</desc>
 
 	<augBlueprint name="LOCKED_ZERG_CREW_STIMS">
 		<title>Zerg Pheromones</title>
-		<desc>Strength inducing pheromones that are dispersed through the Life Support system. Each powered level reduces active ability cooldowns by 10%, increase ranged damage by a flat 5% and increases movement speed by 33%. Works on both ships.</desc>
+		<desc>Strength inducing pheromones that are dispersed through the Life Support system. Each powered level reduces active ability cooldowns by 10%, increases damage by 10% and increases movement speed by 33%. Works on both ships.</desc>
 		<cost>100</cost>
 		<bp>9</bp>
 		<rarity>0</rarity>
@@ -25468,7 +25608,7 @@ boo womp</desc>
 	</mod:findName>
 
 	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_HEAVY_1">
-		<mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
+		<mod-overwrite:tip>fm_tip_crystal_heavy_1</mod-overwrite:tip>
 	</mod:findName>
 
 	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_HEAVY_1_RED">
@@ -25492,7 +25632,7 @@ boo womp</desc>
 	</mod:findName>
 
 	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_SHOTGUN">
-		<mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
+		<mod-overwrite:tip>fm_tip_crystal_shotgun</mod-overwrite:tip>
 	</mod:findName>
 
 	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_SHOTGUN_RED">
@@ -25649,5 +25789,101 @@ boo womp</desc>
 		<mod-overwrite:tip>fm_tip_ion_charger_1</mod-overwrite:tip>
 	</mod:findName>
 
+	<!--Drone Tips-->
+	<mod:findName type = "droneBlueprint" name = "COMBAT_2_BEAM">
+		<mod-overwrite:tip>fm_tip_combat_2</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "COMBAT_2_LASER">
+		<mod-overwrite:tip>fm_tip_combat_2</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "COMBAT_1_BEAM">
+		<mod-overwrite:tip>fm_tip_combat_1</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "COMBAT_1_LASER">
+		<mod-overwrite:tip>fm_tip_combat_1</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "ENERGY_1_AMP2">
+		<mod-overwrite:tip>fm_tip_amp_energy</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "ENERGY_1_AMP3">
+		<mod-overwrite:tip>fm_tip_amp_energy</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "ENERGY_1_AMP4">
+		<mod-overwrite:tip>fm_tip_amp_energy</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "ASSAULT_PIERCE">
+		<mod-overwrite:tip>fm_tip_assault_drone</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "ASSAULT_PARTICLE">
+		<mod-overwrite:tip>fm_tip_assault_drone</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "COMBAT_CONSERVATIVE_BEAM">
+		<mod-overwrite:tip>fm_tip_combat_conservative</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "COMBAT_CONSERVATIVE_LASER">
+		<mod-overwrite:tip>fm_tip_combat_conservative</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "BATTLETOG_DEFEND">
+		<mod-overwrite:tip>fm_tip_battletog</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "BATTLETOG_BOARDER">
+		<mod-overwrite:tip>fm_tip_battletog</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "MANNING">
+		<mod-overwrite:tip>fm_tip_manning</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "FOCUS_1_AMP2">
+		<mod-overwrite:tip>fm_tip_amp_pinpoint</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "FOCUS_1_AMP3">
+		<mod-overwrite:tip>fm_tip_amp_pinpoint</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "FOCUS_1_AMP4">
+		<mod-overwrite:tip>fm_tip_amp_pinpoint</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "RECON_BOARDER">
+		<mod-overwrite:tip>fm_tip_recon</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "RECON_DEFENSE">
+		<mod-overwrite:tip>fm_tip_recon</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "PEST_RAD">
+		<mod-overwrite:tip>fm_tip_pest</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "droneBlueprint" name = "PEST_DEBUFF">
+		<mod-overwrite:tip>fm_tip_pest</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "weaponBlueprint" name = "BOMB_STUN">
+		<mod-overwrite:tip>fm_tip_bomb_stun</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "augBlueprint" name = "EX_TELEPORT_HEAL">
+		<mod-overwrite:desc>Crew gets fully healed by teleportation.
+
+		[X] - As an external system upgrade, this augment will provide its normal effect but take up an augment slot. Can be converted for free to the internal version under the internal upgrade menu if you have the Crew Teleporter system.
+
+		FM: A COMPONENT for forging the MFK Picket Teleporter Relay, alongside the other COMPONENT Recon Drone.</mod-overwrite:desc>
+	</mod:findName>
 
 </FTL>
