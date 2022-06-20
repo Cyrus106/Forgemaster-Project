@@ -10324,17 +10324,11 @@ boo womp</desc>
 		<damage>3</damage>
 		<sp>1</sp>
 		<fireChance>3</fireChance>
-		<cooldown>18</cooldown>
+		<cooldown>21</cooldown>
 		<statBoosts>
                         <statBoost name="statBoost">
 				<boostType>FLAT</boostType>
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<duration>0.2</duration>
-				
-			<statBoost name="powerEffect">
-				<boostType>SET</boostType>
-				<shipTarget>ENEMY_SHIP</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
 				<duration>0.2</duration>
 				
@@ -10361,9 +10355,6 @@ boo womp</desc>
 					</powerEffect>
 				</statBoost>
 				
-				<priority>-100</priority>
-			</statBoost>
-				
                         <blackList>
 				<FM_PLSNOEFFECT/>
 			</blackList>
@@ -10378,7 +10369,7 @@ boo womp</desc>
 		</color>
 		<speed>15</speed>
 		<power>3</power>
-		<stunChance>10</stunChance>
+		<stunChance>0</stunChance>
 		<stun>7</stun>
 		<cost>240</cost>
 		<bp>5</bp>
@@ -10983,7 +10974,7 @@ boo womp</desc>
 			<statBoost name="trueHealAmount">
 				<boostType>FLAT</boostType>
 				<amount>-7</amount>
-				<shipTarget>ALL</shipTarget>
+				<shipTarget>ENEMY_SHIP</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<duration>60</duration>
 				<boostAnim>pheromones</boostAnim>
