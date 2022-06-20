@@ -10880,7 +10880,7 @@ boo womp</desc>
     <iconImage>beam</iconImage>
 	</weaponBlueprint>
 	
-    <weaponBlueprint name="FM_FOCUS_VIRUS">
+    <weaponBlueprint name="FM_FOCUS_VIRUS"> <!-- Crafted with Corrosive Hull 2 and Anelace Pinpoint -->
 		<type>BEAM</type>
 		<tip>tip_focus</tip>
 		<title>'Aegrotatio' Pinpoint</title>
@@ -10917,7 +10917,7 @@ boo womp</desc>
 			
 			<statBoost name="statBoost">
 				<boostType>FLAT</boostType>
-				<shipTarget>ALL</shipTarget>
+				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<duration>60</duration>
 				
