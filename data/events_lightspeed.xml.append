@@ -130,11 +130,11 @@
 	<mod-append:queueEvent>FORGEMASTER_SPAWNER</mod-append:queueEvent>
 	<mod-append:variable name="forgemaster_spawntriggered" op="set" val="0"/>
 	<mod-append:variable name="fm_called_forgemaster" op="set" val="0"/>
-</mod:findName>
+</mod:findName><!--
 <mod:findWithChildLike type="event" child-type="secretSector">
 	<mod-append:queueEvent>FORGEMASTER_SPAWNER</mod-append:queueEvent>
 	<mod-append:variable name="forgemaster_spawntriggered" op="set" val="0"/>
-</mod:findWithChildLike>
+</mod:findWithChildLike> -->
 
 <!--  Twisted Sector-->
 <event name="ENTER_TWISTED">

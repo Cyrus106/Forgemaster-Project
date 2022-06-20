@@ -3918,6 +3918,12 @@
 			<secretSectorWarp>SECRET_TWISTED</secretSectorWarp>
 		</event>
 	</events>
+	<mod:findLike type="events">
+		<mod:findWithChildLike type="event" child-type="secretSectorWarp">
+			<mod-append:queueEvent>FORGEMASTER_SPAWNER</mod-append:queueEvent>
+			<mod-append:variable name="forgemaster_spawntriggered" op="set" val="0"/>
+		</mod:findWithChildLike> 
+	</mod:findLike>
 
 	<events> <!-- special twisted lost sun death timer sounds-->
 		<timerSounds name="LOSTSUN_DEATH_TIMERSOUNDS">
