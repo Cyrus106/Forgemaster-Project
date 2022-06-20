@@ -3626,6 +3626,17 @@ try this later
 		<mountPoint x="1" y="97"/>
 		<chargeImage>weapon_beams/beam_eternity_glow.png</chargeImage>
 	</weaponAnim>
+	
+	<animSheet name="fm_crystal_beam_1" w="600" h="91" fw="50" fh="91">weapon_beams/fm_crystal_beam_1.png</animSheet>
+	<weaponAnim name="fm_crystal_beam_1">
+		<sheet>fm_crystal_beam_1</sheet>
+		<desc length="12" x="0" y="0"/>
+		<chargedFrame>1</chargedFrame>
+		<fireFrame>2</fireFrame>
+		<firePoint  x="24" y="35"/>
+		<mountPoint x="6" y="56"/>
+		<chargeImage>weapon_beams/fm_crystal_beam_1_glow.png</chargeImage>
+	</weaponAnim>
 </FTL>
 
 <FTL><!-- FOCUS-->
