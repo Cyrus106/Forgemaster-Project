@@ -10312,6 +10312,85 @@ boo womp</desc>
 		<weaponArt>fm_beam_ion_special</weaponArt>
 		<iconImage>beam</iconImage>
 	</weaponBlueprint>
+	
+	<weaponBlueprint name="FM_CRYSTAL_BEAM">
+
+		<type>BEAM</type>
+		<tip>tip_bio</tip>
+		<title>Crystallised Nanobeam</title>
+		<short>C. Nanobeam</short>
+		<desc>This child of Crystal Science uses strange crystalised nanobots to trap your opponents, causing all enemy crew on the opposing ship to lockdown the room they are currently in whenever this beam hits someone.</desc>
+		<tooltip> Beam weapon that greatly damages enemy crew. Stuns, pierces shields, and starts fires Extremely expensive but excellent for crew killing.</tooltip>
+		<damage>3</damage>
+		<sp>1</sp>
+		<fireChance>3</fireChance>
+		<cooldown>18</cooldown>
+		<statBoosts>
+                        <statBoost name="statBoost">
+				<boostType>FLAT</boostType>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<duration>0.2</duration>
+				
+			<statBoost name="powerEffect">
+				<boostType>SET</boostType>
+				<shipTarget>ENEMY_SHIP</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<duration>0.2</duration>
+				
+			<statBoost name="powerEffect">
+					<boostType>SET</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<priority>999999</priority>
+					<blackList load="LIST_FM_PLSNOEFFECT"/>
+					<powerEffect>
+						<cooldown>0.1</cooldown>
+						<activateWhenReady enemiesOnly="false">true</activateWhenReady>
+						<jumpCooldown>full</jumpCooldown>
+						<powerSounds>
+							<powerSound>lockdown1</powerSound>
+							<powerSound>lockdown2</powerSound>
+						</powerSounds>
+						<lockdown>true</lockdown>
+						<friendlyFire>true</friendlyFire>
+						<shipFriendlyFire>true</shipFriendlyFire>
+						<buttonText>CRYSTALISE</buttonText>
+						<tooltip>Ready: Lockdown your current room.</tooltip>
+						<cooldownColor r="170" g="206" b="39"/>
+					</powerEffect>
+				</statBoost>
+				
+				<priority>-100</priority>
+			</statBoost>
+				
+                        <blackList>
+				<FM_PLSNOEFFECT/>
+			</blackList>
+				<priority>-100</priority>
+			
+			</statBoost>
+	        </statBoosts>
+		<color>
+			<r>255</r>
+			<g>0</g>
+			<b>0</b>
+		</color>
+		<speed>15</speed>
+		<power>3</power>
+		<stunChance>10</stunChance>
+		<stun>7</stun>
+		<cost>240</cost>
+		<bp>5</bp>
+		<rarity>0</rarity>
+		<length>90</length>
+		<image>beam_contact</image>
+		<launchSounds>
+			<sound>beam2</sound>
+		</launchSounds>
+		<weaponArt>fm_crystal_beam_1</weaponArt>
+		<iconImage>beam</iconImage>
+	</weaponBlueprint>
 
 </FTL>
 
