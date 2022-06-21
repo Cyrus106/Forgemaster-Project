@@ -66,6 +66,9 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_CLAN1</hiddenAug>
+		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_3" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<choice hidden="true" req="HID_BRAIN_DONATION" max_group="1" blue="false">
 			<text>You already have Mind Clouder.</text>
 			<event load="OPTION_INVALID"/>
@@ -141,7 +144,9 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_CLAN1</hiddenAug>
-
+		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_3" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<choice hidden="true" req="HID_BRAIN_DONATION" max_group="1" blue="false">
 			<text>You already have Mind Clouder.</text>
 			<event load="OPTION_INVALID"/>
@@ -251,7 +256,9 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_DUSK1</hiddenAug>
-
+		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_3" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<choice hidden="true" req="HID_DEATH_VESTS2" max_group="1" blue="false">
 			<text>You already have Twilight Vests.</text>
 			<event load="OPTION_INVALID"/>
@@ -325,7 +332,9 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_DUSK1</hiddenAug>
-
+		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_3" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<choice hidden="true" req="HID_DEATH_VESTS2" max_group="1" blue="false">
 			<text>You already have Twilight Vests.</text>
 			<event load="OPTION_INVALID"/>
@@ -422,7 +431,12 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_ENGI1</hiddenAug>
-
+		<unlockCustomShip shipReq="PLAYER_SHIP_ENGI" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_ENGI_2" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_ENGI_3" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
+		<unlockCustomShip shipReq="VANILLA_SHIP_ENGI" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
+		<unlockCustomShip shipReq="VANILLA_SHIP_ENGI_2" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
+		<unlockCustomShip shipReq="VANILLA_SHIP_ENGI_3" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
 		<choice hidden="true" req="HID_UPG_DRONE_COOLDOWN" max_group="1" blue="false">
 			<text>You already have Drone Booster "Kai".</text>
 			<event load="OPTION_INVALID"/>
@@ -605,7 +619,9 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_FREE1</hiddenAug>
-
+		<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS_2" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS_3" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<choice hidden="true" req="HID_TEA_EARL" max_group="1" blue="false">
 			<text>You already have Earl Grey tea.</text>
 			<event load="OPTION_INVALID"/>
@@ -679,7 +695,9 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_FREE1</hiddenAug>
-
+		<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS_2" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS_3" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<choice hidden="true" req="HID_TEA_EARL" max_group="1" blue="false">
 			<text>You already have Earl Grey tea.</text>
 			<event load="OPTION_INVALID"/>
@@ -786,7 +804,9 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_LOSTSUN1</hiddenAug>
-
+		<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN_2" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN_3" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<choice hidden="true" req="HID_REALITY_RELOADER" max_group="1" blue="false">
 			<text>You already have Reality Reloader.</text>
 			<event load="OPTION_INVALID"/>
@@ -1087,7 +1107,12 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_MANTIS1</hiddenAug>
-
+		<unlockCustomShip shipReq="PLAYER_SHIP_HIVE" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_HIVE_2" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_HIVE_3" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
+		<unlockCustomShip shipReq="VANILLA_SHIP_MANTIS" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
+		<unlockCustomShip shipReq="VANILLA_SHIP_MANTIS_2" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
+		<unlockCustomShip shipReq="VANILLA_SHIP_MANTIS_3" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
 		<choice hidden="true" req="HID_MANTIS_RELOADER" max_group="1" blue="false">
 			<text>You already have Pheromone Accelerator.</text>
 			<event load="OPTION_INVALID"/>
@@ -1163,7 +1188,12 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-
+		<unlockCustomShip shipReq="PLAYER_SHIP_HIVE" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_HIVE_2" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_HIVE_3" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
+		<unlockCustomShip shipReq="VANILLA_SHIP_MANTIS" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
+		<unlockCustomShip shipReq="VANILLA_SHIP_MANTIS_2" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
+		<unlockCustomShip shipReq="VANILLA_SHIP_MANTIS_3" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
 		<choice hidden="true" req="HID_MANTIS_RELOADER" max_group="1" blue="false">
 			<text>You already have Pheromone Accelerator.</text>
 			<event load="OPTION_INVALID"/>

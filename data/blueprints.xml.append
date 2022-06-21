@@ -531,6 +531,7 @@
 	<shipBlueprint name="PLAYER_SHIP_TWISTED1" layout="zmt_player_clan_suicide" img="player_ship_cracked_mt_boss_clansmen_suicide">
 		<class>Twisted Renegade Clansman</class>
 		<name>Flenser's Bargain</name>
+		<unlock id="ship_PLAYER_SHIP_TWISTED_CLAN_unlock"/>
 		<desc>These slugs ooze charisma when they 'politely' ask you to donate your organs. Its for a good cause!</desc>
 		<systemList>
 			<artillery power="2" room="4" start="true" weapon="BOMB_ION_ARTY" img="room_artillery" />
@@ -604,6 +605,7 @@
 	<shipBlueprint name="PLAYER_SHIP_TWISTED1_2" layout="zmt_player_duskbringer_suicide" img="player_ship_cracked_zmt_boss_duskbringer_suicide">
 		<class>Twisted Renegade Dusk</class>
 		<name>Ripley's Apostasy</name>
+		<unlock id="ship_PLAYER_SHIP_TWISTED_DUSK_unlock"/>
 		<desc>Created by a Duskbringer with a very clear goal in mind: to set the Guinness Multiverse record for the most war crimes in one fight.</desc>
 		<systemList>
 			<artillery power="1" room="3" start="true" weapon="CLONE_CANNON_SYMBIOTE_SPECIAL_PLAYER" img="room_artillery" />
@@ -681,6 +683,7 @@
 	<shipBlueprint name="PLAYER_SHIP_TWISTED1_3" layout="zmt_player_engi_suicide" img="zmt_player_engi_suicide">
 		<class>Twisted Renegade Engi</class>
 		<name>Nanowar Within</name>
+		<unlock id="ship_PLAYER_SHIP_TWISTED_ENGI_unlock"/>
 		<desc>Countless nanomachines inhabit this vessel. Their relentless swarming allow them to boost all Engi crew significantly, scaling their health, damage, speed, and hazard resist with the amount of its special drones it has deployed.</desc>
 		<systemList>
 			<battery max="2" power="1" room="14" start="false" img="room_battery" />
@@ -757,6 +760,7 @@
 	<shipBlueprint name="PLAYER_SHIP_TWISTED2" layout="zmt_player_freemantis_suicide" img="zmt_player_freemantis_suicide">
 		<class>Twisted Renegade Free Mantis</class>
 		<name>Queen and Country</name>
+		<unlock id="ship_PLAYER_SHIP_TWISTED_FMANTIS_unlock"/>
 		<desc>These strange Mantis bear the banner of a land old and forgotten, and carry a powerful piece of technology from Ancient Britannia.</desc>
 		<systemList>
 			<artillery power="1" max ="4" room="13" start="false" weapon="ARTILLERY_BEAM" img="room_artillery_3" />
@@ -833,6 +837,7 @@
 	<shipBlueprint name="PLAYER_SHIP_TWISTED2_2" layout="zmt_player_separatist_suicide" img="zmt_player_separatist_suicide">
 		<class>Twisted Renegade Separatist</class>
 		<name>Duality</name>
+		<unlock id="ship_PLAYER_SHIP_TWISTED_SEPPY_unlock"/>
 		<desc>Vertaal is a bozo )real)
 
 
@@ -914,6 +919,7 @@ boo womp</desc>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED2_3" layout="zmt_player_mantis_suicide" img="zmt_player_mantis_suicide">
 		<class>Twisted Renegade Mantis</class>
 		<name>Zerg Rush</name>
+		<unlock id="ship_PLAYER_SHIP_TWISTED_MANTIS_unlock"/>
 		<desc>The Mantis went all in on their teleporter. It's about to get real cramped on the enemy ship! As a downside, the shields are capped at three bubbles.</desc>
 		<systemList>
 			<battery power="1" room="13" start="true" img="room_battery_7" />
@@ -987,6 +993,7 @@ boo womp</desc>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED3" layout="zmt_player_monk_suicide" img="zmt_player_monk_suicide">
 		<class>Twisted Renegade Monk</class>
 		<name>Descending Dark</name>
+		<unlock id="ship_PLAYER_SHIP_TWISTED_MONK_unlock"/>
 		<desc>These monks being religious and equally easy to enrage makes for a rather interesting lifestyle, even if it isn't what your garden variety monk would consider "faithful".</desc>
 		<systemList>
 			<artillery power="1" room="17" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
@@ -1065,6 +1072,7 @@ boo womp</desc>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED3_2" layout="zmt_player_rock_suicide" img="zmt_player_rock_suicide">
 		<class>Twisted Renegade Rock</class>
 		<name>The Vulture</name>
+		<unlock id="ship_PLAYER_SHIP_TWISTED_ROCK_unlock"/>
 		<desc>In an effort to become truly invulnerable, these Rockmen attempted to make their ship’s cloaking system last indefinitely by redirecting all the energy out of the shield system. They succeeded, although only the cloaking system itself managed to actually disappear, leaving its armor as the only defense.</desc>
 		<systemList>
 			<artillery power="2" room="0" start="true" weapon="BEAM_ADAPT_3_PLAYER_ARTY_CHAIN" img="room_artillery_invis_long" />
@@ -1143,6 +1151,7 @@ boo womp</desc>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED3_3" layout="zmt_player_lostsun_suicide" img="zmt_player_lostsun_suicide">
 		<class>Twisted Renegade Lostsun</class>
 		<name>Deja Mort</name>
+		<unlock id="ship_PLAYER_SHIP_TWISTED_LOSTSUN_unlock"/>
 		<desc>This Lost Sun vessel is equipped with some of the most powerful ancient equipment money could buy, but due to a mistake made during their FTL drive experiments, the ship is rendered unstable. It cannot sustain itself for more than 75 seconds without needing to perform another FTL jump, otherwise the drive will fail catastrophically and destroy the vessel. Hope you're quick!</desc>
 		<systemList>
 			<battery power="1" room="12" start="false" img="room_battery_10" />
@@ -1215,6 +1224,7 @@ boo womp</desc>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED4" layout="zmt_player_kleptocracy_suicide" img="zmt_player_kleptocracy_suicide">
 		<class>Twisted Renegade Kleptocracy</class>
 		<name>Vader One</name>
+		<unlock id="ship_PLAYER_SHIP_TWISTED_SLUG_unlock"/>
 		<desc>After having a close encounter with some egotistic Ancients, these smoking addicts decided the best course of action would be to weaponize said habits in an attempt to asphyxiate their anaerobic enemies, and hunt down every last ancient until none were left.</desc>
 		<systemList>
 			<artillery power="1" room="10" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
@@ -1290,6 +1300,7 @@ boo womp</desc>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED4_2" layout="zmt_player_stealth_suicide" img="zmt_player_stealth_suicide">
 		<class>Twisted Renegade [stealth]</class>
 		<name>Anzeigefehler</name>
+		<unlock id="ship_PLAYER_SHIP_TWISTED_STEALTH_unlock"/>
 		<desc>A [stealth] &lt;ship&gt; wielding a &lt;laser&gt; weapon and single &lt;beam&gt; weapon that gets stronger with every time you fire it, but it [ERROR 403] so be careful.</desc>
 		<systemList>
 			<artillery power="1" room="10" start="false" weapon="SHOTGUN_SHADOW" img="room_artillery" />
@@ -1367,6 +1378,7 @@ boo womp</desc>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED4_3" layout="zmt_player_zoltan_suicide" img="zmt_player_zoltan_suicide">
 		<class>Twisted Renegade Zoltan</class>
 		<name>Ministry's Fist</name>
+		<unlock id="ship_PLAYER_SHIP_TWISTED_ZOLTAN_unlock"/>
 		<desc>These Zoltans are tired of being pushed around and being treated like living batteries. They may not be as experienced as peacekeepers, but these zoltans have a few tricks up their sleeves!</desc>
 		<systemList>
 			<battery power="1" room="7" start="false" img="room_battery_11" />
@@ -1440,6 +1452,7 @@ boo womp</desc>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED5" layout="zmt_player_lanius_suicide" img="zmt_player_lanius_suicide">
 		<class>Twisted Renegade Lanius</class>
 		<name>The Bloodsteel</name>
+		<unlock id="ship_PLAYER_SHIP_TWISTED_LANIUS_unlock"/>
 		<desc>The Lanius race is well known for their metal-manipulation abilities, and this ship heavily capitalizes upon that. Using a special forge, this ship can repurpose other weapons into flak! (Can also install 10 toggle flak artillery for the time being, for the funny)</desc>
 		<systemList>
 			<artillery power="1" room="1" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
@@ -1524,6 +1537,7 @@ boo womp</desc>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED5_2" layout="zmt_player_shell_suicide" img="zmt_player_shell_suicide">
 		<class>Twisted Renegade Shell</class>
 		<name>The Malpractice</name>
+		<unlock id="ship_PLAYER_SHIP_TWISTED_SHELL_unlock"/>
 		<desc>This vessel has one mission: to observe and study life at all costs. They're also quite eager to study death as well, and become stronger with each crew that dies aboard their ship.</desc>
 		<systemList>
 			<artillery power="1" room="15" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
@@ -1599,6 +1613,7 @@ boo womp</desc>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED5_3" layout="zmt_player_engineer_suicide" img="zmt_player_engineer_suicide">
 		<class>Twisted Renegade Engineer</class>
 		<name>The Conagher</name>
+		<unlock id="ship_PLAYER_SHIP_TWISTED_ENGINEER_unlock"/>
 		<desc>This strange Engineer vessel makes use a prototype drone factory that functions as an Artillery, firing drones to board the enemy ship for no drone part cost!</desc>
 		<systemList>
 			<artillery power="1" max = "3" room="20" start="true" weapon="ARTILLERY_ENGINEER_FACTORY" img="room_artillery" />
@@ -1682,6 +1697,7 @@ boo womp</desc>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED6" layout="zmt_player_kestrel_suicide" img="zmt_player_kestrel_suicide">
 		<class>Twisted Renegade Kestrel</class>
 		<name>The Keymaster</name>
+		<unlock id="ship_PLAYER_SHIP_TWISTED_KESTREL_unlock"/>
 		<desc>This odd Kestrel can spawn various kinds of ghosts at empty beacons, but due to impossibly outdated technology you cannot install any kind of life support or teleporter. Because of the lack of teleporter, one of its crew has the ability to "split" crew and teleport 2 of them to the enemy ship.</desc>
 		<systemList>
 			<artillery power="1" room="4" start="false" weapon="FM_CHAINGUN_ION" img="nothing" />
@@ -1757,6 +1773,7 @@ boo womp</desc>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED6_2" layout="zmt_player_fed_suicide" img="zmt_player_fed_suicide">
 		<class>Twisted Renegade Federation</class>
 		<name>Divine Intervention</name>
+		<unlock id="ship_PLAYER_SHIP_TWISTED_FED_unlock"/>
 		<desc>This ship is equipped with an extremely powerful Artillery Beam that tears through enemy ships. They forgot to buy a weapons system however, whoops!</desc>
 		<systemList>
 			<artillery power="1" max="5" room="22" start="true" weapon="TAINTED_BEAM_3_ARTY" img="room_artillery" />
@@ -1827,6 +1844,7 @@ boo womp</desc>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED6_3" layout="zmt_player_orchid_suicide" img="zmt_player_orchid_suicide">
 		<class>Twisted Renegade Orchid</class>
 		<name>Wortspiel</name>
+		<unlock id="ship_PLAYER_SHIP_TWISTED_ORCHID_unlock"/>
 		<desc>Why did no one laugh at the gardener's jokes? Because they were too corney! What is the gardener's favourite book? War and Peas!</desc>
 		<systemList>
 			<battery power="1" room="1" start="false" img="room_battery_17" />
@@ -1902,6 +1920,7 @@ boo womp</desc>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED7" layout="zmt_player_crystal_suicide" img="zmt_player_crystal_suicide">
 		<class>Twisted Renegade Crystal</class>
 		<name>The Albus</name>
+		<unlock id="ship_PLAYER_SHIP_TWISTED_CRYSTAL_unlock"/>
 		<desc>This highly volatile vessel encourages you to get hit as much as possible, as it comes with some hull-repair bots to help you recover health lost by your vengeance.</desc>
 		<systemList>
 			<artillery max="4" power="1" room="2" start="false" weapon="FM_MINELAUNCHER_CRYSTAL" img="room_artillery" />
@@ -1978,6 +1997,7 @@ boo womp</desc>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED7_2" layout="zmt_player_tuco_suicide" img="zmt_player_tuco_suicide">
 		<class>Twisted Renegade Tuco</class>
 		<name>The Tarocchi</name>
+		<unlock id="ship_PLAYER_SHIP_TWISTED_TUCO_unlock"/>
 		<desc>This ship is equipped with an odd deck of tarot cards. Every time a card is drawn, something will happen. You can't seem to remove the cards from the ship, no matter how hard you try...</desc>
 		<systemList>
 			<artillery power="1" room="1" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
@@ -2052,6 +2072,7 @@ boo womp</desc>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED7_3" layout="zmt_player_leech_suicide" img="player_ship_cracked_zmt_boss_leech_suicide">
 		<class>Twisted Renegade Leech</class>
 		<name>Despondancy</name>
+		<unlock id="ship_PLAYER_SHIP_TWISTED_LEECH_unlock"/>
 		<desc>The depressed leech owner of this ship installed a special custom-made device into it that allowed everyone to feel the pain he felt. He named it the Motivation Succer, and it makes all crew on the enemy ship drain power from their own ship.</desc>
 		<systemList>
 			<artillery power="1" room="10" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
@@ -2131,59 +2152,79 @@ boo womp</desc>
 
 
 
-	<!-- TESTER SHIP COMMENTED OUT
+	<!--ay TESTER SHIP COMMENTED OUT-->
 	<shipBlueprint name="PLAYER_SHIP_FMTESTING" layout="testerfm" img="testerfm">
-	<class id="text_PLAYER_SHIP_FMTESTING_class">Ultimate Testing cruiser</class>
-	<name id="text_PLAYER_SHIP_FMTESTING_name">The True Tester</name>
-	<desc id="text_PLAYER_SHIP_FMTESTING_desc">A cruiser made specifically for playtesting forgemaster, but can probably be used outside of it too. Has all the stuff you need to test things properly, but the UI is glitchy, be aware. FOR ANY GLITCHES WITH THIS THING PLEASE COMPLAIN TO DIGGER NOT CYRUS.</desc>
-	<systemList>
-	<artillery max="5" power="5" room="3" start="true" weapon="MISSILES_4" img="room_artillery" />
-	<cloaking max="5" power="5" room="1" start="true" img="room_cloaking" />
-	<clonebay max="4" power="4" room="4" start="true">
-	<slot>
-	<number>1</number>	</slot></clonebay>
-	<doors power="3" room="9" start="true" img="room_doors_8">
-	<slot>
-	<direction>left</direction>
-	<number>0</number>	</slot></doors>
-	<engines power="8" room="6" start="true" img="room_engines">
-	<slot>
-	<direction>down</direction>
-	<number>2</number>	</slot></engines>
-	<hacking power="3" room="11" start="true" img="nothing" />
-	<medbay max="4" power="4" room="4" start="false" img="room_medbay">
-	<slot>
-	<number>-2</number>	</slot></medbay>
-	<mind power="3" room="12" start="true" img="nothing" />
-	<oxygen max="4" power="4" room="2" start="true" img="room_oxygen_2" />
-	<pilot power="3" room="0" start="true" img="room_pilot_3">
-	<slot>
-	<direction>right</direction>
-	<number>1</number>	</slot></pilot>
-	<sensors power="3" room="10" start="true" img="room_sensors_orchid_2">
-	<slot>
-	<direction>up</direction>
-	<number>0</number>	</slot></sensors>
-	<shields max="16" power="16" room="7" start="true" img="room_shields">
-	<slot>
-	<direction>left</direction>
-	<number>0</number>	</slot></shields>
-	<teleporter max="4" power="4" room="5" start="true" />
-	<weapons max="16" power="16" room="8" start="true" img="room_weapons_5">
-	<slot>
-	<direction>right</direction>
-	<number>1</number>	</slot></weapons></systemList>
-	<weaponSlots>8</weaponSlots>
-	<droneSlots>0</droneSlots>
-	<weaponList missiles="349" count="8">
-	<weapon name="SNIPER" />
-	<weapon name="ZENITH_1" />
-	<weapon name="MISSILES_ROCK" />
-	<weapon name="ROYAL_LASER_3" /></weaponList>
-	<droneList drones="444" count="0" />
-	<health amount="80085" />
-	<maxPower amount="100" />
-	<aug name="SYSTEM_UNBREAKING" /></shipBlueprint>-->
+		<class id="text_PLAYER_SHIP_FMTESTING_class">Ultimate Testing cruiser</class>
+		<name id="text_PLAYER_SHIP_FMTESTING_name">The True Tester</name>
+		<desc id="text_PLAYER_SHIP_FMTESTING_desc">A cruiser made specifically for playtesting forgemaster, but can probably be used outside of it too. Has all the stuff you need to test things properly, but the UI is glitchy, be aware. FOR ANY GLITCHES WITH THIS THING PLEASE COMPLAIN TO DIGGER NOT CYRUS.</desc>
+		<systemList>
+			<artillery max="5" power="5" room="3" start="true" weapon="MISSILES_4" img="room_artillery" />
+			<cloaking max="5" power="5" room="1" start="true" img="room_cloaking" />
+			<clonebay max="4" power="4" room="4" start="true">
+				<slot>
+					<number>1</number>
+				</slot>
+			</clonebay>
+			<doors power="3" room="9" start="true" img="room_doors_8">
+				<slot>
+					<direction>left</direction>
+					<number>0</number>
+				</slot>
+			</doors>
+			<engines power="8" room="6" start="true" img="room_engines">
+				<slot>
+					<direction>down</direction>
+					<number>2</number>
+				</slot>
+			</engines>
+			<hacking power="3" room="11" start="true" img="nothing" />
+			<medbay max="4" power="4" room="4" start="false" img="room_medbay">
+				<slot>
+					<number>-2</number>
+				</slot>
+			</medbay>
+			<mind power="3" room="12" start="true" img="nothing" />
+			<oxygen max="4" power="4" room="2" start="true" img="room_oxygen_2" />
+			<pilot power="3" room="0" start="true" img="room_pilot_3">
+				<slot>
+					<direction>right</direction>
+					<number>1</number>
+				</slot>
+			</pilot>
+			<sensors power="3" room="10" start="true" img="room_sensors_orchid_2">
+				<slot>
+					<direction>up</direction>
+					<number>0</number>
+				</slot>
+			</sensors>
+			<shields max="16" power="16" room="7" start="true" img="room_shields">
+				<slot>
+					<direction>left</direction>
+					<number>0</number>
+				</slot>
+			</shields>
+			<teleporter max="4" power="4" room="5" start="true" />
+			<weapons max="16" power="16" room="8" start="true" img="room_weapons_5">
+				<slot>
+					<direction>right</direction>
+					<number>1</number>
+				</slot>
+			</weapons>
+		</systemList>
+		<weaponSlots>8</weaponSlots>
+		<droneSlots>0</droneSlots>
+		<weaponList missiles="349" count="8">
+			<weapon name="SNIPER" />
+			<weapon name="ZENITH_1" />
+			<weapon name="MISSILES_ROCK" />
+			<weapon name="ROYAL_LASER_3" />
+		</weaponList>
+		<droneList drones="444" count="0" />
+		<health amount="80085" />
+		<maxPower amount="100" />
+		<aug name="SYSTEM_UNBREAKING" />
+	</shipBlueprint>
+	<!-- don't worry, it doesn't show up in game, but can be anabld with 1 line in hs file-->
 
 
 </FTL>
@@ -10382,7 +10423,7 @@ boo womp</desc>
 		<weaponArt>fm_beam_ion_special</weaponArt>
 		<iconImage>beam</iconImage>
 	</weaponBlueprint>
-	
+
 	<weaponBlueprint name="FM_CRYSTAL_BEAM">
 
 		<type>BEAM</type>
@@ -10401,7 +10442,7 @@ boo womp</desc>
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
 				<duration>0.2</duration>
-				
+
 			<statBoost name="powerEffect">
 					<boostType>SET</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
 					<shipTarget>ORIGINAL_SHIP</shipTarget>
@@ -10424,12 +10465,12 @@ boo womp</desc>
 						<cooldownColor r="170" g="206" b="39"/>
 					</powerEffect>
 				</statBoost>
-				
+
                         <blackList>
 				<FM_PLSNOEFFECT/>
 			</blackList>
 				<priority>-100</priority>
-			
+
 			</statBoost>
 	        </statBoosts>
 		<color>
@@ -11019,7 +11060,7 @@ boo womp</desc>
     <weaponArt>fm_mini_yari</weaponArt>
     <iconImage>beam</iconImage>
 	</weaponBlueprint>
-	
+
     <weaponBlueprint name="FM_FOCUS_VIRUS"> <!-- Crafted with Corrosive Hull 2 and Anelace Pinpoint -->
 		<type>BEAM</type>
 		<tip>tip_focus</tip>
@@ -11054,13 +11095,13 @@ boo womp</desc>
 				</blackList>
 				<priority>-100</priority>
 			</statBoost>
-			
+
 			<statBoost name="statBoost">
 				<boostType>FLAT</boostType>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ALL</crewTarget>
 				<duration>60</duration>
-				
+
 			<statBoost name="trueHealAmount">
 				<boostType>FLAT</boostType>
 				<amount>-4</amount>
@@ -11078,7 +11119,7 @@ boo womp</desc>
 				<FM_PLSNOEFFECT/>
 			</blackList>
 				<priority>-100</priority>
-			
+
 			</statBoost>
 	        </statBoosts>
 		<image>beam_contact</image>

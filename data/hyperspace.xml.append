@@ -151,7 +151,12 @@
 
 			</unlock>
 		</mod-append:ship>
-		<!--<mod-append:ship name="PLAYER_SHIP_FMTESTING" b="false" c="false"> <unlock variant="a" silent="false"> <type>3</type> <otherUnlocks><ship>PLAYER_SHIP_KESTREL</ship> </otherUnlocks> </unlock></mod-append:ship> -->
+		<mod-append:ship name="PLAYER_SHIP_FMTESTING" b="false" c="false" noAppend="true" secret="true">
+			<unlock variant="a" silent="false">
+				<type>1</type>
+				<value>50</type>
+			</unlock>
+		</mod-append:ship>
 		<mod-append:ship name="PLAYER_SHIP_GUNSHIP_FUTURE" b="false" c="false" secret="true" >
 			<unlock variant="a" silent="false">
 
@@ -159,25 +164,43 @@
 			</unlock>
 		</mod-append:ship>
 
-		<mod-append:ship name="PLAYER_SHIP_TWISTED1" a="true" b="true" c="true" > <!--guild,dusk,engi-->
+		<mod-append:ship name="PLAYER_SHIP_TWISTED1" a="true" b="true" c="true" secret="true"> <!--guild,dusk,engi-->
+			<splitVictoryAchievement>true</splitVictoryAchievement>
+			<unlock variant="a" silent="false">
+				<type>4</type>
+			</unlock>
+			<unlock variant="b" silent="false">
+				<type>4</type>
+			</unlock>
+			<unlock variant="c" silent="false">
+				<type>4</type>
+			</unlock>
+		</mod-append:ship>
+		<mod-append:ship name="PLAYER_SHIP_TWISTED2" a="true" b="true" c="true" secret="true"> <!--Fmantis,seppy,mantis-->
+			<splitVictoryAchievement>true</splitVictoryAchievement>
+			<unlock variant="a" silent="false">
+				<type>4</type>
+			</unlock>
+			<!--<unlock variant="b" silent="false">
+				<type>4</type>
+			</unlock>-->
+			<unlock variant="c" silent="false">
+				<type>4</type>
+			</unlock>
+		</mod-append:ship>
+		<mod-append:ship name="PLAYER_SHIP_TWISTED3" a="true" b="true" c="true" secret="true"> <!--monk,rock,lostsun-->
 			<splitVictoryAchievement>true</splitVictoryAchievement>
 		</mod-append:ship>
-		<mod-append:ship name="PLAYER_SHIP_TWISTED2" a="true" b="true" c="true" > <!--Fmantis,seppy,mantis-->
+		<mod-append:ship name="PLAYER_SHIP_TWISTED4" a="true" b="true" c="true" secret="true"> <!--slug,stealth,Zoltan-->
 			<splitVictoryAchievement>true</splitVictoryAchievement>
 		</mod-append:ship>
-		<mod-append:ship name="PLAYER_SHIP_TWISTED3" a="true" b="true" c="true" > <!--monk,rock,lostsun-->
+		<mod-append:ship name="PLAYER_SHIP_TWISTED5" a="true" b="true" c="true" secret="true"> <!--lanius,shell,Engineer-->
 			<splitVictoryAchievement>true</splitVictoryAchievement>
 		</mod-append:ship>
-		<mod-append:ship name="PLAYER_SHIP_TWISTED4" a="true" b="true" c="true" > <!--slug,stealth,Zoltan-->
+		<mod-append:ship name="PLAYER_SHIP_TWISTED6" a="true" b="true" c="true" secret="true"> <!--kestrel,fed,orchid-->
 			<splitVictoryAchievement>true</splitVictoryAchievement>
 		</mod-append:ship>
-		<mod-append:ship name="PLAYER_SHIP_TWISTED5" a="true" b="true" c="true" > <!--lanius,shell,Engineer-->
-			<splitVictoryAchievement>true</splitVictoryAchievement>
-		</mod-append:ship>
-		<mod-append:ship name="PLAYER_SHIP_TWISTED6" a="true" b="true" c="true" > <!--kestrel,fed,orchid-->
-			<splitVictoryAchievement>true</splitVictoryAchievement>
-		</mod-append:ship>
-		<mod-append:ship name="PLAYER_SHIP_TWISTED7" a="true" b="true" c="true" > <!--crystal,tuco,leech-->
+		<mod-append:ship name="PLAYER_SHIP_TWISTED7" a="true" b="true" c="true" secret="true"> <!--crystal,tuco,leech-->
 			<splitVictoryAchievement>true</splitVictoryAchievement>
 		</mod-append:ship>
 
@@ -1720,7 +1743,41 @@
 			</crew>
 
 		</mod-append:customShip>
-		<!-- TESTER SHIP COMMENTED OUT <mod-append:customShip name="PLAYER_SHIP_FMTESTING"> <hiddenAug>SHIP_MULTIVERSE</hiddenAug><hiddenAug>FOR_MULTIVERSE</hiddenAug> <hiddenAug>STORE_BEACON</hiddenAug><hiddenAug>MARKER_OBTAINED_FORGE</hiddenAug><hiddenAug>MULTIVERSE_DRIVE</hiddenAug> <crewLimit>80</crewLimit> <crew> <tully room="0" name="Tully"/> <vance room="1" name="Vance"/> <unique_ooj room="2" name="Oojie"/> <tully room="5" name="Tully"/> <vance room="9" name="Vance"/> <unique_anointed room="10" name="Anointed"/> <sylvanmaid room="8" name="Digger"/> <nemesismfk room="8" name="Leah"/> </crew> <customReactor maxLevel="70"> <baseCost>15</baseCost> <increment>5</increment><overrideCost coloumn="6">55</overrideCost> <overrideCost	coloumn="7">70</overrideCost> <overrideCost coloumn="8">75</overrideCost> <overrideCost coloumn="9">80</overrideCost> <overrideCost	coloumn="10">90</overrideCost> </customReactor>	<rooms> <room id="8"> <roomAnim renderLayer="0">resist_2x2</roomAnim><roomAnim renderLayer="3">resist_icon</roomAnim>	<sysDamageResistChance>100</sysDamageResistChance> </room> </rooms></mod-append:customShip>-->
+		<!-- TESTER SHIP COMMENTED OUT -->
+		<mod-append:customShip name="PLAYER_SHIP_FMTESTING">
+			<hiddenAug>SHIP_MULTIVERSE</hiddenAug>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>STORE_BEACON</hiddenAug>
+			<hiddenAug>MARKER_OBTAINED_FORGE</hiddenAug>
+			<hiddenAug>MULTIVERSE_DRIVE</hiddenAug>
+			<crewLimit>80</crewLimit>
+			<crew>
+				<tully room="0" name="Tully"/>
+				<vance room="1" name="Vance"/>
+				<unique_ooj room="2" name="Oojie"/>
+				<tully room="5" name="Tully"/>
+				<vance room="9" name="Vance"/>
+				<unique_anointed room="10" name="Anointed"/>
+				<sylvanmaid room="8" name="Digger"/>
+				<nemesismfk room="8" name="Leah"/>
+			</crew>
+			<customReactor maxLevel="70">
+				<baseCost>15</baseCost>
+				<increment>5</increment>
+				<overrideCost coloumn="6">55</overrideCost>
+				<overrideCost	coloumn="7">70</overrideCost>
+				<overrideCost coloumn="8">75</overrideCost>
+				<overrideCost coloumn="9">80</overrideCost>
+				<overrideCost	coloumn="10">90</overrideCost>
+			</customReactor>
+			<rooms>
+				<room id="8">
+					<roomAnim renderLayer="0">resist_2x2</roomAnim>
+					<roomAnim renderLayer="3">resist_icon</roomAnim>
+					<sysDamageResistChance>100</sysDamageResistChance>
+				</room>
+			</rooms>
+		</mod-append:customShip>
 
 		<mod-append:shipIcons>
 			<shipIcon>	<!-- Forged Accelerant -->
@@ -4062,7 +4119,7 @@
 		<mod:findWithChildLike type="event" child-type="secretSectorWarp">
 			<mod-append:queueEvent>FORGEMASTER_SPAWNER</mod-append:queueEvent>
 			<mod-append:variable name="forgemaster_spawntriggered" op="set" val="0"/>
-		</mod:findWithChildLike> 
+		</mod:findWithChildLike>
 	</mod:findLike>
 
 	<events> <!-- special twisted lost sun death timer sounds-->
