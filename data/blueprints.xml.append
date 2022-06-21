@@ -1191,7 +1191,7 @@ boo womp</desc>
 					<number>0</number>
 				</slot>
 			</shields>
-			<teleporter power="1" room="5" start="false" />
+			<teleporter power="1" room="5" start="true" />
 			<weapons power="3" max="8" room="4" start="true" img="room_weapons_9">
 				<slot>
 					<direction>up</direction>
@@ -1199,8 +1199,8 @@ boo womp</desc>
 				</slot>
 			</weapons>
 		</systemList>
-		<weaponSlots>4</weaponSlots>
-		<droneSlots>2</droneSlots>
+		<weaponSlots>3</weaponSlots>
+		<droneSlots>3</droneSlots>
 		<weaponList missiles="50" count="4">
 			<weapon name="FM_ROYAL_MINELAUNCHER" />
 			<weapon name="FM_BOMB_CRYSTAL_FIRE" />
