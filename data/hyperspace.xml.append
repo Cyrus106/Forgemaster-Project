@@ -8747,6 +8747,41 @@
 	</crew>
 
 
+	<crew> <!--generic crewjank crew. Does nothing but die instantly, and is modified by statboosts in the weapon for the blueprint. This way the information for what the weapon does is all contained in the weaponblueprint-->
+    <race name="fm_generic_crewjank">
+        <maxHealth>0</maxHealth>
+        <repairSpeed>0</repairSpeed>
+        <canFight>false</canFight>
+        <canRepair>false</canRepair>
+        <canSabotage>false</canSabotage>
+        <canSuffocate>false</canSuffocate>
+        <fireDamageMultiplier>0</fireDamageMultiplier>
+        <resistsMindControl>true</resistsMindControl>
+        <canMan>false</canMan>
+        <noClone>true</noClone>
+        <canTeleport>false</canTeleport>
+        <noSlot>true</noSlot>
+        <noAI>true</noAI>
+        <controllable>false</controllable>
+        <selectable>false</selectable>
+        <canPhaseThroughDoors>true</canPhaseThroughDoors>
+        <moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+        <sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+        <damageMultiplier>0</damageMultiplier>
+        <damageTakenMultiplier>0.0</damageTakenMultiplier>
+        <animBase>mantis</animBase>
+        <deathSounds>
+            <deathSound>silence</deathSound>
+        </deathSounds>
+        <shootingSounds>
+            <shootingSound>mantisSpit1</shootingSound>
+            <shootingSound>mantisSpit2</shootingSound>
+            <shootingSound>mantisSpit3</shootingSound>
+        </shootingSounds>
+    </race>
+	</crew>
+
+
 	<!--fixes to crew/drones burning/suffocation/id-->
 
 	<mod:findLike type="crew"> <!--goldsuzerain id fix-->
