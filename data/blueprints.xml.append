@@ -9661,7 +9661,7 @@ boo womp</desc>
 
 			Stats:
 			Requires no Power
-			Charge Time: 3 seconds
+			Charge Time: 2 seconds
 
 			Shots Per Charge: 1
 
@@ -9669,11 +9669,11 @@ boo womp</desc>
 
 			Stun Chance: 10% (3 seconds long)
 
-			Buy/Sell Price: 20~/10~
+			Buy/Sell Price: 10~/5~
 		</descriptionOverride>
 		<tooltipOverride>
 			Requires no Power
-			Charge Time: 3 seconds
+			Charge Time: 2 seconds
 
 			Shots Per Charge: 1
 
@@ -9691,9 +9691,9 @@ boo womp</desc>
 		<speed>30</speed>
 		<stunChance>1</stunChance>
 		<breachChance>0</breachChance>
-		<cooldown>3</cooldown>
+		<cooldown>2</cooldown>
 		<power>0</power>
-		<cost>20</cost>
+		<cost>10</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
 		<explosion>explosion_ion</explosion>
