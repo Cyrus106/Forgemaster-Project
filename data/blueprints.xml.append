@@ -9721,6 +9721,48 @@ boo womp</desc>
 		<weaponArt>fm_ion_0</weaponArt>
 		<iconImage>laser_chain</iconImage>
 	</weaponBlueprint>
+
+	<weaponBlueprint name="FM_ION_DUAL">
+		<type>LASER</type>
+		<title>Bi-Ion</title>
+		<short>Bion</short>
+		<desc>Fires 2 energized ion blasts that deal 1 ion damage.</desc>
+		<tooltip>Fires 2 energized laser blasts that pierce 1 shield and deal 1 ion damage.</tooltip>
+		<damage>0</damage>
+		<ion>1</ion>
+		<persDamage>1</persDamage>
+		<shots>2</shots>
+		<sp>0</sp>
+		<fireChance>0</fireChance>
+		<speed>30</speed>
+		<cooldown>11</cooldown>
+		<power>2</power>
+		<cost>130</cost>
+		<bp>2</bp>
+		<rarity>0</rarity>
+		<image>ion_barrage</image>
+		<explosion>explosion_ion</explosion>
+		<launchSounds>
+			<sound>ionShoot1</sound>
+			<sound>ionShoot2</sound>
+			<sound>ionShoot3</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>ionHit1</sound>
+			<sound>ionHit2</sound>
+			<sound>ionHit3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>ionShields1</sound>
+			<sound>ionShields2</sound>
+			<sound>ionShields3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_ion_dual</weaponArt>
+		<iconImage>laser</iconImage>
+	</weaponBlueprint>
 </FTL>
 
 <FTL> <!--BEAMS-->
@@ -20021,14 +20063,14 @@ boo womp</desc>
 	</augBlueprint>
 
 
-<augBlueprint name="HYPER_ADVANCED_VENTILATION">
-	<title>Hyper-Advanced-Ventilation</title>
-	<desc>Does exactly what it says on the tin.</desc>
-	<cost>120</cost>
-	<rarity>0</rarity>
-	<stackable>false</stackable>
-	<bp>0</bp>
-</augBlueprint>
+	<augBlueprint name="HYPER_ADVANCED_VENTILATION">
+		<title>Hyper-Advanced-Ventilation</title>
+		<desc>Does exactly what it says on the tin.</desc>
+		<cost>120</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+		<bp>0</bp>
+	</augBlueprint>
 
 	<augBlueprint name="TWISTED_MANTIS_UPGRADER">
 		<title>Queen's Tea</title>

@@ -1752,11 +1752,11 @@
 			<hiddenAug>MULTIVERSE_DRIVE</hiddenAug>
 			<crewLimit>80</crewLimit>
 			<crew>
-				<tully room="0" name="Tully"/>
-				<vance room="1" name="Vance"/>
+				<unique_tully room="0" name="Tully"/>
+				<unique_vance room="1" name="Vance"/>
 				<unique_ooj room="2" name="Oojie"/>
-				<tully room="5" name="Tully"/>
-				<vance room="9" name="Vance"/>
+				<unique_tully room="5" name="Tully"/>
+				<unique_vance room="9" name="Vance"/>
 				<unique_anointed room="10" name="Anointed"/>
 				<sylvanmaid room="8" name="Digger"/>
 				<nemesismfk room="8" name="Leah"/>
@@ -1764,11 +1764,11 @@
 			<customReactor maxLevel="70">
 				<baseCost>15</baseCost>
 				<increment>5</increment>
-				<overrideCost coloumn="6">55</overrideCost>
-				<overrideCost	coloumn="7">70</overrideCost>
-				<overrideCost coloumn="8">75</overrideCost>
-				<overrideCost coloumn="9">80</overrideCost>
-				<overrideCost	coloumn="10">90</overrideCost>
+				<!--<overrideCost column="6">55</overrideCost>
+				<overrideCost	column="7">70</overrideCost>
+				<overrideCost column="8">75</overrideCost>
+				<overrideCost column="9">80</overrideCost>
+				<overrideCost	column="10">90</overrideCost>-->
 			</customReactor>
 			<rooms>
 				<room id="8">
@@ -8108,7 +8108,7 @@
 			</deathEffect>
 
 		</race>
-	</crew>>
+	</crew>
 
 	<crew> <!-- Holy Shit Permutation 6, Breach -->
 		<race name="fm_holy6">

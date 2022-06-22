@@ -3512,6 +3512,16 @@ try this later
 		<chargeImage>weapon_ion/fm_ion_0_glow.png</chargeImage>
 	</weaponAnim>
 
+	<animSheet name="fm_ion_dual" w="1720" h="50" fw="43" fh="50">weapon_ion/fm_ion_dual.png</animSheet>
+	<weaponAnim name="fm_ion_dual">
+		<sheet>fm_ion_dual</sheet>
+		<desc length="34" x="0" y="0"/>
+		<chargedFrame>1</chargedFrame>
+		<fireFrame>3</fireFrame>
+		<firePoint  x="25" y="7"/>
+		<mountPoint x="3" y="30"/>
+		<chargeImage>weapon_ion/fm_ion_dual_glow.png</chargeImage>
+	</weaponAnim>
 </FTL>
 
 <FTL><!-- BEAMS-->
@@ -3637,7 +3647,7 @@ try this later
 		<mountPoint x="1" y="97"/>
 		<chargeImage>weapon_beams/beam_eternity_glow.png</chargeImage>
 	</weaponAnim>
-	
+
 	<animSheet name="fm_crystal_beam_1" w="600" h="91" fw="50" fh="91">weapon_beams/fm_crystal_beam_1.png</animSheet>
 	<weaponAnim name="fm_crystal_beam_1">
 		<sheet>fm_crystal_beam_1</sheet>
@@ -3716,7 +3726,7 @@ try this later
 		<firePoint  x="19" y="39"/>
 		<mountPoint x="2" y="59"/>
 	</weaponAnim>
-	
+
 	<animSheet name="fm_focus_virus" w="660" h="90" fw="60" fh="90">weapon_focus/fm_focus_virus.png</animSheet>
 	<weaponAnim name="fm_focus_virus">
 		<sheet>fm_focus_virus</sheet>
