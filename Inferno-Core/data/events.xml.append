@@ -17,6 +17,9 @@
 	<event name="ADDON_GB_INFO">
 		<text id="info_addon_gb"/>
 	</event>
+	<event name="ADDON_TCC_INFO">
+		<text id="info_addon_tcc"/>
+	</event>
 	<mod:findName type="event" name="START_BEACON_EXPLAIN_LOAD">
 		<mod-append:eventButton name="ADDON_FMCORE">
       <event load="ADDON_FMCORE_INFO"/>
@@ -42,6 +45,14 @@
       <jumpClear>false</jumpClear>
       <noDanger>false</noDanger>
     </mod-append:eventButton>
+		<mod-append:eventButton name="ADDON_TCC">
+      <event load="ADDON_TCC_INFO"/>
+      <image border="0">addons/tcc</image>
+      <customLocation x="211" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
+      <tooltip id="addon_hover_tcc"/>
+      <jumpClear>false</jumpClear>
+      <noDanger>false</noDanger>
+    </mod-append:eventButton>
 	</mod:findName>
 	<event name="FMCORE_RESET_BUTTONS">
 		<clearEventButton name="ADDON_TRC"/>
@@ -50,6 +61,7 @@
 		<clearEventButton name="ADDON_FMCORE"/>
 		<clearEventButton name="ADDON_FORGEMASTER"/>
 		<clearEventButton name="ADDON_GB"/>
+		<clearEventButton name="ADDON_TCC"/>
 		<loadEvent>FM_CORE_RESET_BUTTONS_2</loadEvent>
 	</event>
 	<event name="FM_CORE_RESET_BUTTONS_2">
@@ -100,6 +112,14 @@
       <image border="0">addons/gb</image>
       <customLocation x="187" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
       <tooltip id="addon_hover_gb"/>
+      <jumpClear>false</jumpClear>
+      <noDanger>false</noDanger>
+    </eventButton>
+		<eventButton name="ADDON_TCC">
+      <event load="ADDON_TCC_INFO"/>
+      <image border="0">addons/tcc</image>
+      <customLocation x="211" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
+      <tooltip id="addon_hover_tcc"/>
       <jumpClear>false</jumpClear>
       <noDanger>false</noDanger>
     </eventButton>
