@@ -1864,6 +1864,17 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 
+		<choice req="FM_ENERGY_RAILBLENDER_FORGE_LIST" lvl="1" blue="false" hidden="true">
+      <text>Combine the Charge Flak and Charge Energy to forge the Railblender.[140~]</text>
+      <event load="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_RAILBLENDER"/>
+    </choice>
+
+    <choice req="FM_ENERGY_RAILBLENDER_FORGE_LIST" lvl="0" blue="false" hidden="true">
+      <text>You must have a Charge Flak and Charge Energy to forge this weapon.</text>
+      <event load="OPTION_INVALID"/>
+    </choice>
+
+
 		<choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
 			<text>Nevermind.</text>
 			<event load="FM_FORGE_WEAPON_LOAD"/>
@@ -3648,6 +3659,51 @@
 			<event load="FM_FORGE_WEAPON_FLAK_LOAD"/>
 		</choice>
 	</event>
+
+	<event name="STORAGE_CHECK_CREATE_FM_ENERGY_RAILBLENDER">
+    <checkCargo/>
+    <text>Currently viewing the Railblender.</text>
+    <choice hidden="false" req="FM_ENERGY_RAILBLENDER_LIST_PLUS" blue="false">
+      <text>Craft the Railblender+ using the Energy Charger+.</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <weapon name="FM_ENERGY_RAILBLENDER_PLAYER"/>
+				<item_modify>
+					<item type="scrap" min="-140" max="-140"/>
+				</item_modify>
+        <removeItem>SHOTGUN_CHARGE</removeItem>
+        <removeItem>ENERGY_CHARGEGUN_PLAYER</removeItem>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice hidden="false" req="FM_ENERGY_RAILBLENDER_LIST" blue="false">
+      <text>Craft the Railblender using the Energy Charger.</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <weapon name="FM_ENERGY_RAILBLENDER"/>
+				<item_modify>
+					<item type="scrap" min="-140" max="-140"/>
+				</item_modify>
+        <removeItem>SHOTGUN_CHARGE</removeItem>
+        <removeItem>ENERGY_CHARGEGUN</removeItem>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice hidden="false">
+      <text>Nevermind.</text>
+      <event load="FM_FORGE_WEAPON_FLAK_LOAD"/>
+    </choice>
+  </event>
 
 	<!--BRONZE FLAK SUB MENU. MAKE 15 choices, one for each crystal flak choice. then make a craft submenu for each with that choice.
 	Hide any options that the player doesn't have, grey out option only if they have none!-->

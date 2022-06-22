@@ -2309,6 +2309,20 @@
 			</req>
 		</req>
 
+		<req name="FM_ENERGY_RAILBLENDER_LIST"> <!-- Charge Flak + Charge Energy-->
+			<name>SHOTGUN_CHARGE</name>
+			<name>ENERGY_CHARGEGUN</name>
+		</req>
+
+		<req name="FM_ENERGY_RAILBLENDER_LIST_PLUS">
+			<name>SHOTGUN_CHARGE</name>
+			<name>ENERGY_CHARGEGUN_PLAYER</name>
+		</req>
+
+		<req name="FM_ENERGY_RAILBLENDER_FORGE_LIST">
+			<name>FM_ENERGY_RAILBLENDER_LIST</name>
+			<name>FM_ENERGY_RAILBLENDER_LIST_PLUS</name>
+		</req>
 
 		<!-- BRONZE FLAK SUB-LIST -->
 		<req name="FM_SHOTGUN_BRONZE_LIST_1" type="all"> <!-- Crystal Burst Mark I + Flak I -->
@@ -3094,6 +3108,7 @@
 			<name>FM_SHOTGUN_AETHER_LIST</name>
 			<name>FM_SHOTGUN_BRONZE_LIST_FORGE</name>
 			<name>FM_SHOTGUN_CURSED_LIST</name>
+			<name>FM_ENERGY_RAILBLENDER_FORGE_LIST</name>
 		</req>
 
 		<req name="FM_FLAK_FORGE_LIST_STORAGE" type="all"> <!-- Do you have the ingredients for a Flak weapon? If so, light up the category option BLUE in the crafting category menu! -->
