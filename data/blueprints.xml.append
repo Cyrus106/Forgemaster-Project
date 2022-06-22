@@ -841,7 +841,7 @@
 		<desc>Vertaal is a bozo )real)
 
 
-boo womp</desc>
+			boo womp</desc>
 		<systemList>
 			<artillery power="1" room="6" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
 			<battery power="1" max="2" room="7" start="false" img="room_battery_13" />
@@ -2767,6 +2767,26 @@ boo womp</desc>
 		<colorList>
 			<layer>
 			<color r="17" g="255" b="0" a="0.7"/>
+			</layer>
+		</colorList>
+	</crewBlueprint>
+
+
+	<!--Generic Crewjank Crew-->
+	<crewBlueprint name="fm_generic_crewjank">
+		<desc>Jank</desc>
+		<title>Jank</title>
+		<short>Jank</short>
+		<cost>50</cost>
+		<bp>2</bp>
+		<rarity>0</rarity>
+		<powerList>
+			<power>Hi, you probably shouldn't be seeing this</power>
+			<power>You should look behind you before it's too late</power>
+		</powerList>
+		<colorList>
+			<layer>
+				<color r="17" g="255" b="0" a="0.7"/>
 			</layer>
 		</colorList>
 	</crewBlueprint>
@@ -9517,6 +9537,50 @@ boo womp</desc>
 		<weaponArt>fm_energy_railblender</weaponArt>
 	</weaponBlueprint>
 
+	<weaponBlueprint name="FM_ENERGY_RAILBLENDER_PLAYER">
+		<type>BURST</type>
+		<title>The Railblender</title>
+		<short>Railblender</short>
+		<desc>This strange contraption can charge up to 3 shots, firing 3 different electrically charged poles for each charge.</desc>
+		<tooltip>This strange contraption can charge up to 3 shots, firing 3 different electrically charged poles for each charge.</tooltip>
+		<radius>40</radius>
+		<damage>1</damage>
+		<noSysDamage>true</noSysDamage>
+		<ion>1</ion>
+		<speed>40</speed>
+		<shots>1</shots>
+		<stun>3</stun>
+		<sp>0</sp>
+		<stunChance>1</stunChance>
+		<fireChance>2</fireChance>
+		<breachChance>0</breachChance>
+		<cooldown>7</cooldown>
+		<power>3</power>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<chargeLevels>3</chargeLevels>
+		<projectiles>
+			<projectile count="1" fake="false">fm_railblender_laserproj</projectile>
+			<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ROD">fm_railblender_railproj</projectile> <!-- This lets this specific projectile use the stats of a different weapon, in this case being FM_RAILBLENDER_ROD. -->
+			<projectile count="1" fake="false" blueprint="FM_RAILBLENDER_ENERGIZED">fm_railblender_energyrailproj</projectile>
+		</projectiles>
+		<launchSounds>
+			<sound>energy</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull1</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_energy_railblender</weaponArt>
+	</weaponBlueprint>
+
 	<weaponBlueprint name="FM_RAILBLENDER_ROD">
 		<type>BURST</type>
 		<title>FM_RAILBLENDER_ROD</title>
@@ -10518,60 +10582,74 @@ boo womp</desc>
 		<short>C. Nanobeam</short>
 		<desc>This child of Crystal Science uses strange crystalised nanobots to trap your opponents, causing all enemy crew on the opposing ship to lockdown the room they are currently in whenever this beam hits someone.</desc>
 		<tooltip> Beam weapon that greatly damages enemy crew. Stuns, pierces shields, and starts fires Extremely expensive but excellent for crew killing.</tooltip>
-		<damage>3</damage>
-		<sp>1</sp>
-		<fireChance>3</fireChance>
-		<cooldown>21</cooldown>
+		<!--<damage>6</damage>-->
+		<damage>0</damage>
+		<sp>10</sp>
+		<fireChance>7</fireChance>
+		<cooldown>3</cooldown>
+		<spawnCrew>
+		<race>fm_generic_crewjank</race>
+		<number>1</number>
+		<enemy>true</enemy><!--So you don't ever see the crew-->
+		<lifetime>0</lifetime>
+		<noSlot>true</noSlot>
 		<statBoosts>
-                        <statBoost name="statBoost">
-				<boostType>FLAT</boostType>
-				<shipTarget>ORIGINAL_SHIP</shipTarget>
-				<crewTarget>ENEMIES</crewTarget>
-				<duration>0.2</duration>
 
-			<statBoost name="powerEffect">
-					<boostType>SET</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
-					<shipTarget>ORIGINAL_SHIP</shipTarget>
-					<crewTarget>ENEMIES</crewTarget>
-					<priority>999999</priority>
-					<blackList load="LIST_FM_PLSNOEFFECT"/>
-					<powerEffect>
-						<cooldown>0.1</cooldown>
-						<activateWhenReady enemiesOnly="false">true</activateWhenReady>
-						<jumpCooldown>full</jumpCooldown>
-						<powerSounds>
-							<powerSound>lockdown1</powerSound>
-							<powerSound>lockdown2</powerSound>
-						</powerSounds>
-						<lockdown>true</lockdown>
-						<friendlyFire>true</friendlyFire>
-						<shipFriendlyFire>true</shipFriendlyFire>
-						<buttonText>CRYSTALISE</buttonText>
-						<tooltip>Ready: Lockdown your current room.</tooltip>
-						<cooldownColor r="170" g="206" b="39"/>
-					</powerEffect>
-				</statBoost>
+			<statBoost name="deathEffect"><!--This modifies the stat of the crew, so that the same crew can be used for multiple weapons-->
+				<boostType>SET</boostType>
 
-                        <blackList>
-				<FM_PLSNOEFFECT/>
-			</blackList>
-				<priority>-100</priority>
 
+				<deathEffect><!--When template crew dies (on weapon impact) these statBoosts are applied -->
+					<statBoosts>
+
+						<statBoost name="powerEffect">
+							<boostType>SET</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
+							<shipTarget>ORIGINAL_SHIP</shipTarget>
+							<crewTarget>ALLIES</crewTarget><!--Affects the allies of the spawned crew, so YOUR enemies-->
+							<priority>999999</priority>
+							<duration>0.2</duration>
+							<blackList load="LIST_FM_PLSNOEFFECT"/>
+							<powerEffect>
+								<powerCharges>1</powerCharges>
+								<initialCharges>1</initialCharges>
+								<cooldown>0.1</cooldown>
+								<activateWhenReady enemiesOnly="false">true</activateWhenReady>
+								<jumpCooldown>full</jumpCooldown>
+								<lockdown>true</lockdown>
+								<powerSounds enemy="true">
+									<powerSound>lockdown1</powerSound>
+									<powerSound>lockdown2</powerSound>
+								</powerSounds>
+								<shipFriendlyFire>true</shipFriendlyFire>
+								<buttonText>Crystallize</buttonText>
+								<tooltip>Ready: Lock down in the current room.</tooltip>
+								<cooldownColor r="170" g="206" b="39"/>
+							</powerEffect>
+						</statBoost>
+					</statBoosts>
+				</deathEffect>
+
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<priority>9999999</priority>
 			</statBoost>
-	        </statBoosts>
+
+
+		</statBoosts>
+	</spawnCrew>
 		<color>
 			<r>255</r>
 			<g>0</g>
 			<b>0</b>
 		</color>
-		<speed>15</speed>
+		<speed>1</speed>
 		<power>3</power>
 		<stunChance>0</stunChance>
 		<stun>7</stun>
 		<cost>240</cost>
 		<bp>5</bp>
 		<rarity>0</rarity>
-		<length>90</length>
+		<length>1</length>
 		<image>beam_contact</image>
 		<launchSounds>
 			<sound>beam2</sound>
