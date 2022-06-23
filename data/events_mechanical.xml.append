@@ -2395,9 +2395,8 @@ Only respects stronger computers
 	</event>
 
 	<event name="MBA"><!--MANTIS BOMBER ABUSE, EASIER TO TYPE, downgrades relevant systems in LUA, doesn't actually load mantis bomber because I got the BOON OF NO FRICKS GIVEN-->
-		<weapon name="FM_GATLING_ANCIENT"/>
 		<hiddenAug>ENERGY_SHIELD</hiddenAug>
-		<ship load="SHIP_JUDGES" hostile="true"/>
+		<ship load="SHIP_PLEASURE_BARGE" hostile="true"/>
 		<queueEvent>MBA_2</queueEvent>
 	</event>
 
