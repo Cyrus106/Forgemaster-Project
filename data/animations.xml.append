@@ -3897,6 +3897,16 @@ try this later
 		<mountPoint x="1" y="58"/>
 		<chargeImage>weapon_missiles/fm_ion_missiles_glow.png</chargeImage>
 	</weaponAnim>
+
+	<animSheet name="fm_anomaly_missile" w="558" h="57" fw="31" fh="57">weapon_missiles/fm_anomaly_missiles2.png</animSheet>
+	<weaponAnim name="fm_anomaly_missile">
+		<sheet>fm_anomaly_missile</sheet>
+		<desc length="18" x="0" y="0"/>
+		<chargedFrame>16</chargedFrame>
+		<fireFrame>17</fireFrame>
+		<firePoint  x="20" y="12"/>
+		<mountPoint x="4" y="37"/>
+	</weaponAnim>
 </FTL>
 
 <FTL><!-- BOMBS-->

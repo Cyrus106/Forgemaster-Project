@@ -12471,6 +12471,54 @@
 		</spawnCrew>
 	</weaponBlueprint>
 
+
+	<weaponBlueprint name="FM_ANOMALY_MISSILE">
+		<type>BURST</type>
+		<drone_targetable>1</drone_targetable>
+		<title>'Arngrim' Anomaly Missile</title>
+		<short>'Arngrim'</short>
+		<desc>This weapon launches two missiles, each of which will lock down the room and do heavy bio/system damage. High fire chance.</desc>
+		<tooltip>Fires 5 missile; does 2 damage each; pierces all shields.</tooltip>
+		<radius>30</radius>
+		<missiles>1</missiles>
+		<persDamage>2</persDamage>
+		<damage>1</damage>
+		<sysDamage>2</sysDamage>
+		<shots>1</shots>
+		<sp>10</sp>
+		<accuracyMod>20</accuracyMod>
+		<fireChance>7</fireChance>
+		<lockdown>1</lockdown>
+		<stun>10</stun>
+		<cooldown>9</cooldown>
+		<power>3</power>
+		<cost>130</cost>
+		<bp>10</bp>
+		<speed>70</speed>
+		<rarity>0</rarity>
+		<explosion>explosion_random</explosion>
+		<projectiles>
+			<projectile count="2" fake="false">fm_ion_missiles_proj</projectile><!--Change later-->
+		</projectiles>
+		<launchSounds>
+			<sound>smallMissile1</sound>
+			<sound>smallMissile2</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>explosion_heavy</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_anomaly_missile</weaponArt>
+		<iconImage>missile</iconImage>
+	</weaponBlueprint>
+
 </FTL>
 
 <FTL> <!--MINELAUNCHERS-->
