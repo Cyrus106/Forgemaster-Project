@@ -2656,6 +2656,24 @@
 			<name>ION_3</name>
 		</req>
 
+		<req name="FM_IMPRISMENT_INDUCER_LIST" type="any"> <!-- Alternative Recipes-->
+			<name>FM_IMPRISMENT_INDUCER_LIST_1</name>
+			<name>FM_IMPRISMENT_INDUCER_LIST_2</name>
+		</req>
+
+
+		<req name="FM_IMPRISMENT_INDUCER_LIST_1" type="all"> <!-- Blunt Crystal + Stun Bomb-->
+			<name>BOMB_STUN</name>
+			<name>CRYSTAL_STUN</name>
+		</req>
+
+		<req name="FM_IMPRISMENT_INDUCER_LIST_2" type="all"> <!-- Elite Blunt Crystal + Stun Bomb-->
+			<name>BOMB_STUN</name>
+			<name>CRYSTAL_STUN_RED</name>
+		</req>
+
+
+
 		<req name="FM_RVS_AC_CHARGE_LIST2" type="all">
 			<req type="sum" lvl="2">
 				<name>AC_1_COUNT</name>
@@ -3185,6 +3203,9 @@
 			<name>FM_BOMBLAUNCHER_HULL_LIST</name>
 			<name>FM_MINELAUNCHER_BIO_LIST</name>
 			<name>FM_ION_MISSILES_LIST</name>
+			<name>FM_IMPRISMENT_INDUCER_LIST</name>
+
+			<!--Addon Crafts!-->
 			<name>FM_RVS_AC_CHARGE_FORGE_LIST</name>
 		</req>
 
@@ -5615,6 +5636,60 @@
 
 		</race>
 	</crew>
+
+	<crew> <!-- Immprisiment Crystal Prison-->
+		<race name="fm_crystal_prison">
+			<maxHealth>125</maxHealth>
+			<healSpeed>0.00</healSpeed>
+
+			<allDamageTakenMultiplier>1.3</allDamageTakenMultiplier>
+			<damageTakenMultiplier>1.5385</damageTakenMultiplier><!--Calculated so that 2x damage is taken from combat, and 1.3x damage is taken from all other sources.-->
+			<suffocationModifier>1.0</suffocationModifier><!--canSuffocate is false-->
+			<fireDamageMultiplier>1.0</fireDamageMultiplier>
+
+			<stunMultiplier>0</stunMultiplier><!--Stun is redundant and might look odd-->
+
+
+			<canFight>false</canFight>
+			<canRepair>false</canRepair>
+			<canSabotage>false</canSabotage>
+			<canTeleport>false</canTeleport>
+			<selectable>false</selectable>
+			<canMan>false</canMan>
+			<noClone>true</noClone>
+			<noSlot>false</noSlot>
+			<controllable>false</controllable>
+			<canPhaseThroughDoors>false</canPhaseThroughDoors>
+			<resistsMindControl>true</resistsMindControl>
+			<canSuffocate>false</canSuffocate>
+			<canBurn>true</canBurn>
+
+			<damageMultiplier>0</damageMultiplier>
+			<rangedDamageMultiplier>0</rangedDamageMultiplier>
+
+
+
+
+			<fireRepairMultiplier>0</fireRepairMultiplier>
+			<moveSpeedMultiplier>0</moveSpeedMultiplier>
+
+			<animBase>rock</animBase>
+			<deathSounds>
+				<deathSound>crystalDeath</deathSound>
+			</deathSounds>
+			<shootingSounds>
+				<shootingSound>rockThrow1</shootingSound>
+				<shootingSound>rockThrow2</shootingSound>
+				<shootingSound>rockThrow3</shootingSound>
+			</shootingSounds>
+			<repairSounds animSoundFrame="5">
+				<repairSound>rockThud1</repairSound>
+				<repairSound>rockThud2</repairSound>
+				<repairSound>rockThud3</repairSound>
+			</repairSounds>
+		</race>
+	</crew>
+
 
 	<crew> <!-- TERMINUS -->
 		<race name="fm_terminus">

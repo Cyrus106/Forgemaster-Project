@@ -23,3 +23,13 @@ function yoinky_sploinky()
 end
 --This event is commented out, would occur as a deatheffect of crew affected by FM_ABDUCT_LASER
 script.on_game_event("LUA_TEST_YOINKY",false,yoinky_sploinky)
+
+
+
+function downgrade_enemy()
+  Hyperspace.ships.enemy.weaponSystem:UpgradeSystem(-20)
+  Hyperspace.ships.enemy.droneSystem:UpgradeSystem(-20)
+  Hyperspace.ships.enemy.cloakSystem:UpgradeSystem(-20)
+end
+
+script.on_game_event("MBA_2",false,downgrade_enemy)--This didn't work when set to true, might be a bug? Also did not work when tied to MBA, because of order of opperations, most likely

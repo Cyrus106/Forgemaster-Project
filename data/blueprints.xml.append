@@ -2560,6 +2560,20 @@
 		</powerList>
 	</crewBlueprint>
 
+	<crewBlueprint name="fm_crystal_prison">
+		<desc>A crystallized crew member, imprisonned and helpless.</desc>
+		<title>Crystal Prison</title>
+		<short>Crystal Prison.</short>
+		<cost>150</cost>
+		<bp>4</bp>
+		<rarity>0</rarity>
+		<powerList>
+			<power>125 hp, immobile. Takes 2x damage from combat and 1.3x damage from all other sources.</power>
+			<power>Cannot heal, or be cloned if destroyed.</power>
+			<power>Reverts to normal after 10 seconds.</power>
+		</powerList>
+	</crewBlueprint>
+
 	<crewBlueprint name="remington">
 		<desc>One of Winchester's best friends, and the twin brother of Mossberg. Fiercely loyal to friends and allies. Loves board games and comics.</desc>
 		<cost>90</cost>
@@ -12950,6 +12964,52 @@
 			<sound>fireBomb</sound>
 		</hitShipSounds>
 		<weaponArt>fm_ancalagon_dynamo</weaponArt>
+		<iconImage>bomb</iconImage>
+	</weaponBlueprint>
+
+
+	<weaponBlueprint name="FM_IMPRISMENT_INDUCER">
+		<type>BOMB</type>
+		<tip>tip_bombs</tip><!--Add tip for weapon-->
+		<title>Imprisment Inducer</title>
+		<short>Inducer</short>
+		<desc>A weapon composed of hard-light projectors and ornate crystalline lensing, capable of rendering even the hardiest of crew vulnerable to attack. Will contain any and all struck crew within a crystalline prison, vulnerable to damage and fires.</desc>
+		<tooltip>A weapon composed of hard-light projectors and ornate crystalline lensing, capable of rendering even the hardiest of crew vulnerable to attack. Will contain any and all struck crew within a crystalline prison, vulnerable to damage and fires.</tooltip>
+		<damage>0</damage>
+		<persDamage>0</persDamage>
+		<shots>1</shots>
+		<sp>0</sp>
+		<power>2</power>
+		<accuracyMod>30</accuracyMod>
+		<cooldown>17</cooldown>
+		<cost>120</cost>
+		<bp>5</bp>
+		<rarity>0</rarity>
+		<fireTime>1.5</fireTime><!--May or may not be necessary-->
+
+		<statBoosts>
+				<statBoost name="transformRace">
+					<boostType>SET</boostType>
+					<race>fm_crystal_prison</race>
+					<permanent>false</permanent>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>10</duration>
+					<blackList load="FM_PLSNOEFFECT"/>
+				</statBoost>
+		</statBoosts>
+
+		<image>bomb_imprisment_proj</image>
+		<explosion>bomb_imprisment_explosion</explosion>
+		<launchSounds>
+			<sound>bombTeleport</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>fireBomb</sound>
+		</hitShipSounds>
+		<weaponArt>fm_imprisment_inducer</weaponArt>
 		<iconImage>bomb</iconImage>
 	</weaponBlueprint>
 </FTL>
@@ -25829,11 +25889,11 @@
 	</mod:findName>
 
 	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_STUN">
-		<mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
+		<mod-overwrite:tip>fm_tip_crystal_stun</mod-overwrite:tip>
 	</mod:findName>
 
 	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_STUN_RED">
-		<mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
+		<mod-overwrite:tip>fm_tip_crystal_stun_red</mod-overwrite:tip>
 	</mod:findName>
 
 	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_SHOTGUN">
