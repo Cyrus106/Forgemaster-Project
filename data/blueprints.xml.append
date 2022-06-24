@@ -12585,14 +12585,14 @@
 		<sp>10</sp>
 		<fireChance>9</fireChance>
 		<breachChance>0</breachChance>
-		<cooldown>8</cooldown>
+		<cooldown>11</cooldown>
 		<power>1</power>
 		<speed>45</speed>
 		<cost>95</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
 		<projectiles>
-			<projectile count="3" fake="false">fm_mine_royal</projectile>
+			<projectile count="4" fake="false">fm_mine_royal</projectile>
 		</projectiles>
 		<launchSounds>
 			<sound>ancient_missile</sound>
@@ -13021,9 +13021,10 @@
 		<tip>tip_bombs</tip><!--Add tip for weapon-->
 		<title>Imprisment Inducer</title>
 		<short>Inducer</short>
-		<desc>A weapon composed of hard-light projectors and ornate crystalline lensing, capable of rendering even the hardiest of crew vulnerable to attack. Will contain any and all struck crew within a crystalline prison, vulnerable to damage and fires.</desc>
-		<tooltip>A weapon composed of hard-light projectors and ornate crystalline lensing, capable of rendering even the hardiest of crew vulnerable to attack. Will contain any and all struck crew within a crystalline prison, vulnerable to damage and fires.</tooltip>
+		<desc>A weapon composed of hard-light projectors and ornate crystalline lensing, capable of rendering even the hardiest of crew vulnerable to attack. Will contain any and all struck crew within a crystalline prison, taking 2x damage from crew and fires. However, weapons only do 1.3x and while in the prisons crew don't suffocate.</desc>
+		<tooltip>A weapon composed of hard-light projectors and ornate crystalline lensing, capable of rendering even the hardiest of crew vulnerable to attack. Will contain any and all struck crew within a crystalline prison, taking 2x damage from crew and fires. However, weapons only do 1.3x and while in the prisons crew don't suffocate.</tooltip>
 		<damage>0</damage>
+		<ion>2</ion>
 		<persDamage>0</persDamage>
 		<shots>1</shots>
 		<sp>0</sp>
