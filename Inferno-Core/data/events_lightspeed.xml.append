@@ -67,8 +67,13 @@
 		</mod:findLike>
 	</mod:findName>
 	<mod:findName type="event" name="LOAD_ATLAS_MARKER"><!--appending the part of the code that resets the makres for which menus were used-->
+		<mod-append:triggeredEvent event="FMCORE_SPAWNER" thisFight="false" clearOnJump="false"><!--if it works correctly then when entering a sector FMCORE_SPAWNER will run, this is where stuff like Forgemaster spawning event are appended to-->
+			<time amount="0.0"/>
+		</mod-append:triggeredEvent>
 		<mod-append:variable name="fmcore_used_hs_aug" op="set" val="0"/>
 		<mod-append:variable name="fmcore_called_cura" op="set" val="0"/>
 	</mod:findName>
-
+	<event name="FMCORE_SPAWNER">
+		<!--<queueEvent></queueEvent>-->
+	</event>
 </FTL>

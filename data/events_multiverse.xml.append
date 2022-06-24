@@ -3660,7 +3660,7 @@
 		</choice>
 	</event>
 
-	<event name="STORAGE_CHECK_CREATE_FM_ENERGY_RAILBLENDER">
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_RAILBLENDER">
     <checkCargo/>
     <text>Currently viewing the Railblender.</text>
     <choice hidden="false" req="FM_ENERGY_RAILBLENDER_LIST_PLUS" blue="false">

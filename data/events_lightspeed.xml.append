@@ -13,7 +13,9 @@
 			<event load="OPTION_INVALID"/>
 		</mod-append:choice>
 	</mod:findName>
-
+	<mod:findName type="event" name="FMCORE_SPAWNER">
+		<mod-append:queueEvent>FORGEMASTER_SPAWNER</mod-append:queueEvent>
+	</mod:findName>
 </FTL>
 <event name="FM_ATLAS_EQUIPMENT_LOAD"> <!--  Recursion call -->
 	<event/>
@@ -127,7 +129,10 @@
 
 <!-- new FM spawning trigger appending-->
 <mod:findName type="event" name="LOAD_ATLAS_MARKER">
-	<mod-append:queueEvent>FORGEMASTER_SPAWNER</mod-append:queueEvent>
+	<!--<mod-append:queueEvent>FORGEMASTER_SPAWNER</mod-append:queueEvent>-->
+	<!--<mod-append:triggeredEvent event="FORGEMASTER_SPAWNER" thisFight="false" clearOnJump="false">
+		<time amount="0.0"/>
+	</mod-append:triggeredEvent>-->
 	<mod-append:variable name="forgemaster_spawntriggered" op="set" val="0"/>
 	<mod-append:variable name="fm_called_forgemaster" op="set" val="0"/>
 </mod:findName><!--
