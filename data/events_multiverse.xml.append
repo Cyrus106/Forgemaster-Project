@@ -1961,6 +1961,19 @@
 		  <event load="OPTION_INVALID"/>
 		</choice>
 
+
+
+		<choice req="FM_IMPRISMENT_INDUCER_LIST" lvl="1" blue="false" hidden="true">
+		  <text>Reconfigure the Stun Bomb to disperse the debilitating crystalline particles of the Neural Crystal to forge the IMPRISMENT Inducer.[Cost: 130~]</text>
+		  <event load="NPC_STORAGE_CHECK_CREATE_FM_IMPRISMENT_INDUCER"/>
+		</choice>
+
+		<choice req="FM_IMPRISMENT_INDUCER_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+		  <text>You must have a Stun Bomb and Neural Crystal to forge this weapon.</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
+
+
 		<choice req="FM_RVS_AC_CHARGE_FORGE_LIST" lvl="1" blue="false" hidden="true">
 		  <text>Combine two to four Autocannon 1s to forge the Volley Gun.[Cost: 20-60~]</text>
 		  <event load="NPC_STORAGE_CHECK_CREATE_FM_RVS_AC_CHARGE"/>
@@ -4580,6 +4593,52 @@
       </event>
     </choice>
     <choice hidden="false">
+      <text>Nevermind.</text>
+      <event load="FM_FORGE_WEAPON_LOAD"/>
+    </choice>
+  </event>
+
+
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_IMPRISMENT_INDUCER">
+    <checkCargo/>
+    <text>Currently viewing the Imprisment Inducer.</text>
+    <choice hidden="false" req="FM_IMPRISMENT_INDUCER_LIST_1" blue="false">
+      <text>Craft the Imprisment Inducer using a Stun Bomb and a Neural Crystal</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <weapon name="FM_IMPRISMENT_INDUCER"/>
+				<item_modify>
+					<item type="scrap" min="-130" max="-130"/>
+				</item_modify>
+        <removeItem>BOMB_STUN</removeItem>
+        <removeItem>CRYSTAL_STUN</removeItem>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+          </event>
+        </choice>
+      </event>
+    </choice>
+		<choice hidden="false" req="FM_IMPRISMENT_INDUCER_LIST_2" blue="false">
+      <text>Craft the Imprisment Inducer using a Stun Bomb and an Elite Neural Crystal</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <weapon name="FM_IMPRISMENT_INDUCER"/>
+				<item_modify>
+					<item type="scrap" min="-130" max="-130"/>
+				</item_modify>
+        <removeItem>BOMB_STUN</removeItem>
+        <removeItem>CRYSTAL_STUN_RED</removeItem>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+          </event>
+        </choice>
+      </event>
+    </choice>
+		<choice hidden="false">
       <text>Nevermind.</text>
       <event load="FM_FORGE_WEAPON_LOAD"/>
     </choice>

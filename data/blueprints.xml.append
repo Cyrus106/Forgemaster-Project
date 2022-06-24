@@ -2560,6 +2560,20 @@
 		</powerList>
 	</crewBlueprint>
 
+	<crewBlueprint name="fm_crystal_prison">
+		<desc>A crystallized crew member, imprisonned and helpless.</desc>
+		<title>Crystal Prison</title>
+		<short>Crystal Prison.</short>
+		<cost>150</cost>
+		<bp>4</bp>
+		<rarity>0</rarity>
+		<powerList>
+			<power>125 hp, immobile. Takes 2x damage from combat and 1.3x damage from all other sources.</power>
+			<power>Cannot heal, or be cloned if destroyed.</power>
+			<power>Reverts to normal after 10 seconds.</power>
+		</powerList>
+	</crewBlueprint>
+
 	<crewBlueprint name="remington">
 		<desc>One of Winchester's best friends, and the twin brother of Mossberg. Fiercely loyal to friends and allies. Loves board games and comics.</desc>
 		<cost>90</cost>
@@ -12457,6 +12471,54 @@
 		</spawnCrew>
 	</weaponBlueprint>
 
+
+	<weaponBlueprint name="FM_ANOMALY_MISSILE">
+		<type>BURST</type>
+		<drone_targetable>1</drone_targetable>
+		<title>'Arngrim' Anomaly Missile</title>
+		<short>'Arngrim'</short>
+		<desc>This weapon launches two missiles, each of which will lock down the room and do heavy bio/system damage. High fire chance.</desc>
+		<tooltip>Fires 5 missile; does 2 damage each; pierces all shields.</tooltip>
+		<radius>30</radius>
+		<missiles>1</missiles>
+		<persDamage>2</persDamage>
+		<damage>1</damage>
+		<sysDamage>2</sysDamage>
+		<shots>1</shots>
+		<sp>10</sp>
+		<accuracyMod>20</accuracyMod>
+		<fireChance>7</fireChance>
+		<lockdown>1</lockdown>
+		<stun>10</stun>
+		<cooldown>9</cooldown>
+		<power>3</power>
+		<cost>130</cost>
+		<bp>10</bp>
+		<speed>70</speed>
+		<rarity>0</rarity>
+		<explosion>explosion_random</explosion>
+		<projectiles>
+			<projectile count="2" fake="false">fm_ion_missiles_proj</projectile><!--Change later-->
+		</projectiles>
+		<launchSounds>
+			<sound>smallMissile1</sound>
+			<sound>smallMissile2</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>explosion_heavy</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_anomaly_missile</weaponArt>
+		<iconImage>missile</iconImage>
+	</weaponBlueprint>
+
 </FTL>
 
 <FTL> <!--MINELAUNCHERS-->
@@ -12523,14 +12585,14 @@
 		<sp>10</sp>
 		<fireChance>9</fireChance>
 		<breachChance>0</breachChance>
-		<cooldown>8</cooldown>
+		<cooldown>11</cooldown>
 		<power>1</power>
 		<speed>45</speed>
 		<cost>95</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
 		<projectiles>
-			<projectile count="3" fake="false">fm_mine_royal</projectile>
+			<projectile count="4" fake="false">fm_mine_royal</projectile>
 		</projectiles>
 		<launchSounds>
 			<sound>ancient_missile</sound>
@@ -12950,6 +13012,53 @@
 			<sound>fireBomb</sound>
 		</hitShipSounds>
 		<weaponArt>fm_ancalagon_dynamo</weaponArt>
+		<iconImage>bomb</iconImage>
+	</weaponBlueprint>
+
+
+	<weaponBlueprint name="FM_IMPRISMENT_INDUCER">
+		<type>BOMB</type>
+		<tip>tip_bombs</tip><!--Add tip for weapon-->
+		<title>Imprisment Inducer</title>
+		<short>Inducer</short>
+		<desc>A weapon composed of hard-light projectors and ornate crystalline lensing, capable of rendering even the hardiest of crew vulnerable to attack. Will contain any and all struck crew within a crystalline prison, taking 2x damage from crew and fires. However, weapons only do 1.3x and while in the prisons crew don't suffocate.</desc>
+		<tooltip>A weapon composed of hard-light projectors and ornate crystalline lensing, capable of rendering even the hardiest of crew vulnerable to attack. Will contain any and all struck crew within a crystalline prison, taking 2x damage from crew and fires. However, weapons only do 1.3x and while in the prisons crew don't suffocate.</tooltip>
+		<damage>0</damage>
+		<ion>2</ion>
+		<persDamage>0</persDamage>
+		<shots>1</shots>
+		<sp>0</sp>
+		<power>2</power>
+		<accuracyMod>30</accuracyMod>
+		<cooldown>17</cooldown>
+		<cost>120</cost>
+		<bp>5</bp>
+		<rarity>0</rarity>
+		<fireTime>1.5</fireTime><!--May or may not be necessary-->
+
+		<statBoosts>
+				<statBoost name="transformRace">
+					<boostType>SET</boostType>
+					<race>fm_crystal_prison</race>
+					<permanent>false</permanent>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>true</affectsSelf>
+					<duration>10</duration>
+					<blackList load="FM_PLSNOEFFECT"/>
+				</statBoost>
+		</statBoosts>
+
+		<image>bomb_imprisment_proj</image>
+		<explosion>bomb_imprisment_explosion</explosion>
+		<launchSounds>
+			<sound>bombTeleport</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>fireBomb</sound>
+		</hitShipSounds>
+		<weaponArt>fm_imprisment_inducer</weaponArt>
 		<iconImage>bomb</iconImage>
 	</weaponBlueprint>
 </FTL>
@@ -25829,11 +25938,11 @@
 	</mod:findName>
 
 	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_STUN">
-		<mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
+		<mod-overwrite:tip>fm_tip_crystal_stun</mod-overwrite:tip>
 	</mod:findName>
 
 	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_STUN_RED">
-		<mod-overwrite:tip>fm_tip_crystal</mod-overwrite:tip>
+		<mod-overwrite:tip>fm_tip_crystal_stun_red</mod-overwrite:tip>
 	</mod:findName>
 
 	<mod:findName type = "weaponBlueprint" name = "CRYSTAL_SHOTGUN">

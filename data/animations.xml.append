@@ -1260,6 +1260,132 @@
 	</anim>
 </FTL>
 
+<FTL><!--IMPRISMENT CRYSTAL PRISON CREW ANIMATIONS -->
+	<animSheet name="fm_crystal_prison" w="840" h="70" fw="35" fh="35">people/fm_crystal_prison_base.png</animSheet>
+	<anim name="fm_crystal_prison_clone">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="1"/>
+		<time>0.75</time>
+	</anim>
+	<anim name="fm_crystal_prison_death_right">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="0"/>
+		<time>0.75</time>
+	</anim>
+	<anim name="fm_crystal_prison_death_left">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="0"/>
+		<time>0.75</time>
+	</anim>
+	<anim name="fm_crystal_prison_walk_down">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="1"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="fm_crystal_prison_walk_right">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="1"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="fm_crystal_prison_walk_up">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="1"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="fm_crystal_prison_walk_left">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="1"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="fm_crystal_prison_shoot_down">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="1"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="fm_crystal_prison_shoot_right">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="1"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="fm_crystal_prison_shoot_up">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="1"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="fm_crystal_prison_shoot_left">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="1"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="fm_crystal_prison_fire_down">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="1"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="fm_crystal_prison_fire_right">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="1"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="fm_crystal_prison_fire_up">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="1"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="fm_crystal_prison_fire_left">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="1"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="fm_crystal_prison_repair">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="1"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="fm_crystal_prison_punch_up">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="1"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="fm_crystal_prison_punch_down">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="1"/>
+		<time>1.0</time>
+	</anim>
+	<anim name="fm_crystal_prison_teleport">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="1"/>
+		<time>0.5</time>
+	</anim>
+	<anim name="fm_crystal_prison_type_right">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="1"/>
+		<time>0.75</time>
+	</anim>
+	<anim name="fm_crystal_prison_type_left">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="1"/>
+		<time>0.75</time>
+	</anim>
+	<anim name="fm_crystal_prison_type_up">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="1"/>
+		<time>0.75</time>
+	</anim>
+	<anim name="fm_crystal_prison_type_down">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="24" x="0" y="1"/>
+		<time>0.75</time>
+	</anim>
+	<anim name="fm_crystal_prison_portrait">
+		<sheet>fm_crystal_prison</sheet>
+		<desc length="1" x="0" y="1"/>
+		<time>1</time>
+	</anim>
+</FTL>
+
+
+
 <FTL><!--REMINGTON AND MOSSBERG ANIMATIONS -->
 	<animSheet name="remington_shield" w="90" h="32" fw="30" fh="32">people/engi_defender_shield.png</animSheet>
 	<anim name="remington_shield">
@@ -3771,6 +3897,16 @@ try this later
 		<mountPoint x="1" y="58"/>
 		<chargeImage>weapon_missiles/fm_ion_missiles_glow.png</chargeImage>
 	</weaponAnim>
+
+	<animSheet name="fm_anomaly_missile" w="558" h="57" fw="31" fh="57">weapon_missiles/fm_anomaly_missiles2.png</animSheet>
+	<weaponAnim name="fm_anomaly_missile">
+		<sheet>fm_anomaly_missile</sheet>
+		<desc length="18" x="0" y="0"/>
+		<chargedFrame>16</chargedFrame>
+		<fireFrame>17</fireFrame>
+		<firePoint  x="20" y="12"/>
+		<mountPoint x="4" y="37"/>
+	</weaponAnim>
 </FTL>
 
 <FTL><!-- BOMBS-->
@@ -3816,6 +3952,18 @@ try this later
 		<firePoint  x="32" y="23"/>
 		<mountPoint x="10" y="29"/>
 		<chargeImage>weapon_bombs/fm_ancalagon_dynamo_glow.png</chargeImage>
+	</weaponAnim>
+
+
+	<animSheet name="fm_imprisment_inducer" w="6816" h="76" fw="48" fh="76">weapon_bombs/imprisment.png</animSheet>
+	<weaponAnim name="fm_imprisment_inducer">
+		<sheet>fm_imprisment_inducer</sheet>
+		<desc length="142" x="0" y="0"/>
+		<chargedFrame>64</chargedFrame>
+		<fireFrame>132</fireFrame>
+		<firePoint  x="37" y="9"/>
+		<mountPoint x="4" y="64"/>
+		<chargeImage>weapon_bombs/imprisment_glow.png</chargeImage>
 	</weaponAnim>
 
 </FTL>
@@ -4512,6 +4660,24 @@ try this later
 		<sheet>explosion_ancalagon_white</sheet>
 		<desc length="14" x="0" y="0"/>
 		<time>0.5</time>
+	</anim>
+
+
+
+
+	<animSheet name="bomb_imprisment_proj" w="300" h="25" fw="25" fh="25">weapon_projectiles/imprisment_bomb.png</animSheet>
+	<anim name="bomb_imprisment_proj">
+		<sheet>bomb_imprisment_proj</sheet>
+		<desc length="12" x="0" y="0"/>
+		<time>0.75</time>
+	</anim>
+
+
+	<animSheet name="bomb_imprisment_explosion" w="1725" h="75" fw="75" fh="75">effects/imprisment_explosion.png</animSheet>
+	<anim name="bomb_imprisment_explosion">
+		<sheet>bomb_imprisment_explosion</sheet>
+		<desc length="23" x="0" y="0"/>
+		<time>0.75</time>
 	</anim>
 
 
