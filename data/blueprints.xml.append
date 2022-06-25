@@ -2489,6 +2489,21 @@
 			<power>Active ability: Repairs 1 hull damage, and 4 system damage to the current room. Heals itself for 20 HP. Refills a charge on jump.</power>
 		</powerList>
 	</crewBlueprint>
+	
+	<crewBlueprint name="fm_plated_shell">
+		<desc>Elite Shell Crew. The Forgemaster's disciples. Experts at repairing, though these plated decided to take a more combative approach to their craft.</desc>
+		<title>Plated Shell</title>
+		<short>Plated</short>
+		<cost>200</cost>
+		<bp>4</bp>
+		<rarity>0</rarity>
+		<powerList>
+			<power>120 Health, takes 30% less damage in combat. Moves at 0.7x speed, and repairs at 1.3x speed.</power>
+			<power>1.4x damage, 1.2x sabotage.</power>
+			<power>Extinguishes fires very quickly. 30% reduced stun duration. Only takes 20% damage from fire.</power>
+			<power>Active ability: Repairs 1 hull damage, and 2 system damage to the current room. Damages enemies for 15 HP, while healing itself for 20 HP. Refills a charge on jump. For 15s after use gains stun immunity, 20% extra ranged damage, gains an extra 70% resistance to all damage, and move at 1x speed.</power>
+		</powerList>
+	</crewBlueprint>
 
 	<crewBlueprint name="fm_crystal_red">
 		<desc>A dangerous anomalous crystal spawned by Ancalagon technology.</desc>
