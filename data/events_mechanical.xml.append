@@ -2406,5 +2406,9 @@ Only respects stronger computers
 
 	<event name="MBA_2"/>
 
+	<event name="DRAW">
+		<text>You try to draw a thing on your screen, at least later!</text>
+	</event>
+
 
 </FTL>

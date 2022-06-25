@@ -3520,13 +3520,13 @@
 				<customTitle>DECKHANDS</customTitle>
 				<allowDuplicates/>
 				<item>
-					<blueprint>fm_plated</blueprint>
+					<blueprint>LIST_CREW_PLATED</blueprint>
 				</item>
 				<item>
-					<blueprint>fm_plated</blueprint>
+					<blueprint>LIST_CREW_PLATED</blueprint>
 				</item>
 				<item>
-					<blueprint>fm_plated</blueprint>
+					<blueprint>LIST_CREW_PLATED</blueprint>
 				</item>
 				<chance>100</chance>
 			</category>
@@ -3596,13 +3596,13 @@
 				<customTitle>DECKHANDS</customTitle>
 				<allowDuplicates/>
 				<item>
-					<blueprint>fm_plated</blueprint>
+					<blueprint>LIST_CREW_PLATED</blueprint>
 				</item>
 				<item>
-					<blueprint>fm_plated</blueprint>
+					<blueprint>LIST_CREW_PLATED</blueprint>
 				</item>
 				<item>
-					<blueprint>fm_plated</blueprint>
+					<blueprint>LIST_CREW_PLATED</blueprint>
 				</item>
 				<chance>100</chance>
 			</category>
@@ -3664,13 +3664,13 @@
 				<customTitle>DECKHANDS</customTitle>
 				<allowDuplicates/>
 				<item>
-					<blueprint>fm_plated</blueprint>
+					<blueprint>LIST_CREW_PLATED</blueprint>
 				</item>
 				<item>
-					<blueprint>fm_plated</blueprint>
+					<blueprint>LIST_CREW_PLATED</blueprint>
 				</item>
 				<item>
-					<blueprint>fm_plated</blueprint>
+					<blueprint>LIST_CREW_PLATED</blueprint>
 				</item>
 				<chance>100</chance>
 			</category>
@@ -5286,6 +5286,85 @@
 					<moveSpeedMultiplier>0</moveSpeedMultiplier>
 					<damageTakenMultiplier>0</damageTakenMultiplier>
 					<animSheet baseVisible="false">fm_plated_charge</animSheet>
+				</temporaryEffect>
+				<selfHealth>20</selfHealth>
+			</powerEffect>
+
+
+
+		</race>
+	</crew>
+	
+	<crew> <!-- Plated Shell Crew -->
+		<race name="fm_plated_shell">
+			<maxHealth>120</maxHealth>
+			<repairSpeed>1.3</repairSpeed>
+			<canFight>true</canFight>
+			<canRepair>true</canRepair>
+			<canSabotage>true</canSabotage>
+			<canSuffocate>true</canSuffocate>
+			<damageMultiplier>1.4</damageMultiplier>
+			<rangedDamageMultiplier>1</rangedDamageMultiplier>
+			<damageTakenMultiplier>0.7</damageTakenMultiplier>
+			<suffocationModifier>1.7</suffocationModifier>
+			<fireDamageMultiplier>0.2</fireDamageMultiplier>
+			<stunMultiplier>0.7</stunMultiplier>
+			<fireRepairMultiplier>3.0</fireRepairMultiplier>
+			<canMan>true</canMan>
+			<noClone>false</noClone>
+			<noSlot>false</noSlot>
+			<controllable>true</controllable>
+			<canPhaseThroughDoors>false</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0.7</moveSpeedMultiplier>
+			<sabotageSpeedMultiplier>1</sabotageSpeedMultiplier>
+			<animBase>rock</animBase>
+			<deathSounds>
+				<deathSound>shellDeath</deathSound>
+			</deathSounds>
+			<shootingSounds>
+				<shootingSound>rockThrow1</shootingSound>
+				<shootingSound>rockThrow2</shootingSound>
+				<shootingSound>rockThrow3</shootingSound>
+			</shootingSounds>
+			<repairSounds animSoundFrame="5">
+				<repairSound>rockThud1</repairSound>
+				<repairSound>rockThud2</repairSound>
+				<repairSound>rockThud3</repairSound>
+			</repairSounds>
+			<powerEffect> <!--POWER FOR NOW-->
+				<cooldown>15</cooldown>
+				<jumpCooldown>full</jumpCooldown>
+				<powerCharges>3</powerCharges>
+				<chargesPerJump>1</chargesPerJump>
+				<powerSounds>
+					<powerSound>explosionShell</powerSound>
+				</powerSounds>
+				<req type="player">
+					<minHealth>1</minHealth>
+				</req>
+				<damage>-1</damage>
+				<sysDamage>-2</sysDamage>
+				<persDamage>1</persDamage>
+				<friendlyFire>false</friendlyFire>
+				<shipFriendlyFire>true</shipFriendlyFire>
+				<buttonText>POLISH</buttonText>
+				<tooltip>Ready:  Damage enemies for 15hp, while healing for 20hp. Become immune to stuns, deal 20% extra ranged damage, gaining 70% resistance to all damage, while moving at 1x speed for the duration.</tooltip>
+				<cooldownColor r="202" g="79" b="226"/>
+				<activateWhenReady enemiesOnly="true">false</activateWhenReady>
+				<temporaryEffect>
+					<duration>15</duration>
+					<cooldownColor r="10" g="255" b="255"/>
+					<controllable>true</controllable>
+					<canTeleport>true</canTeleport>
+					<allDamageTakenMultiplier>0.5</damageTakenMultiplier>
+					<canFight>true</canFight>
+					<canRepair>true</canRepair>
+					<canSabotage>true</canSabotage>
+					<canMan>true</canMan>
+					<moveSpeedMultiplier>1</moveSpeedMultiplier>
+					<stunMultiplier>0</stunMultiplier>
+					<rangedDamageMultiplier>1.2</rangedDamageMultiplier>
+					<animSheet baseVisible="true">pheromones</animSheet>
 				</temporaryEffect>
 				<selfHealth>20</selfHealth>
 			</powerEffect>
