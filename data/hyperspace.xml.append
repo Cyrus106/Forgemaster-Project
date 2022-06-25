@@ -5316,7 +5316,7 @@
 			<controllable>true</controllable>
 			<canPhaseThroughDoors>false</canPhaseThroughDoors>
 			<moveSpeedMultiplier>0.7</moveSpeedMultiplier>
-			<sabotageSpeedMultiplier>1.2</sabotageSpeedMultiplier>
+			<sabotageSpeedMultiplier>1</sabotageSpeedMultiplier>
 			<animBase>rock</animBase>
 			<deathSounds>
 				<deathSound>shellDeath</deathSound>
@@ -5332,9 +5332,9 @@
 				<repairSound>rockThud3</repairSound>
 			</repairSounds>
 			<powerEffect> <!--POWER FOR NOW-->
-				<cooldown>20</cooldown>
+				<cooldown>15</cooldown>
 				<jumpCooldown>full</jumpCooldown>
-				<powerCharges>2</powerCharges>
+				<powerCharges>3</powerCharges>
 				<chargesPerJump>1</chargesPerJump>
 				<powerSounds>
 					<powerSound>explosionShell</powerSound>
@@ -5356,7 +5356,7 @@
 					<cooldownColor r="10" g="255" b="255"/>
 					<controllable>true</controllable>
 					<canTeleport>true</canTeleport>
-					<allDamageTakenMultiplier>0.3</damageTakenMultiplier>
+					<allDamageTakenMultiplier>0.5</damageTakenMultiplier>
 					<canFight>true</canFight>
 					<canRepair>true</canRepair>
 					<canSabotage>true</canSabotage>
