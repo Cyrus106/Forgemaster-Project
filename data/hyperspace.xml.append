@@ -5339,12 +5339,8 @@
 				<powerSounds>
 					<powerSound>explosionShell</powerSound>
 				</powerSounds>
-				<req type="enemy">
-					<systemInRoom damaged="true"/>
-					<playerShip/> <!--enemy ship-->
-				</req>
 				<req type="player">
-					<minHealth></minHealth>
+					<minHealth>1</minHealth>
 				</req>
 				<damage>-1</damage>
 				<sysDamage>-2</sysDamage>
