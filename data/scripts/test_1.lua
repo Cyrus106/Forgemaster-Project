@@ -52,25 +52,50 @@ function boxBool_Toggle()
 end
 
 script.on_game_event("DRAW", false, boxBool_Toggle)
+function nothing()
+end
 
-
-function test_before_rend()
+--[[function test_before_rend()
     if mods.vals.testBoxBool then
       log('thingy before')
       Graphics.CSurface.GL_DrawLine(6.0, 6.0, 100.0, 100.0, 3.0, Graphics.GL_Color(0.5, 0.5, 0.5, 1.0))
+      Graphics.freetype.easy_print(40, 400, 400, 'SEX');
     else
       log('no thingy before')
     end
-end
-function test_after_rend()
+end]]
+--[[function test_after_rend()
     if mods.vals.testBoxBool then
       log('thingy after')
       Graphics.CSurface.GL_DrawLine(6.0, 6.0, 100.0, 100.0, 5.0, Graphics.GL_Color(1.0, 0.2, 0.2, 1.0))
+      Graphics.freetype.easy_print(40, 400, 400, 'SEX 2');
     else
       log('no thingy after')
     end
 end
-script.on_render_event(Defines.RenderEvents.LAYER_FRONT, test_before_rend, test_after_rend)
+script.on_render_event(Defines.RenderEvents.LAYER_FRONT, nothing, test_after_rend)]]
+
+
+
+
+function rendertest2()
+    --if mods.vals.testBoxBool then
+      log('thingy after hello')
+      Graphics.CSurface.GL_DrawLine(6.0, 6.0, 100.0, 100.0, 5.0, Graphics.GL_Color(1.0, 0.2, 0.2, 1.0))
+      --Graphics.CSurface.GL_DrawLine(6.0, 6.0, 100.0, 100.0, 5.0, Graphics.GL_Color(1.0, 0.2, 0.2, 1.0))
+      --Graphics.freetype.easy_print(40, 400, 400, 'SEX 2')
+
+      Graphics.CSurface.GL_DrawRectOutline(300, 300, 400, 400, Graphics.GL_Color(0.4, 1.0, 0.2, 1.0), 2)
+      Graphics.freetype.easy_print(20, 350, 350, 'So long, and thanks for all the fish!')
+      Graphics.CSurface.GL_DrawLine(500, 100, 600, 100.0, 5.0, Graphics.GL_Color(0.4, 1.0, 0.2, 1.0))
+      Graphics.CSurface.GL_DrawLine(750, 750, 755, 755, 5.0, Graphics.GL_Color(0.4, 0.1, 1.0, 1.0))
+      Graphics.CSurface.GL_DrawTriangle(Hyperspace.Point(1,1), Hyperspace.Point(100,100), Hyperspace.Point(-200,-200), Graphics.GL_Color(1.0, 0.2, 0.2, 1.0))
+      log('thingy after goodbye')
+    --else
+      --log('no thingy after')
+    --end
+end
+--script.on_render_event(Defines.RenderEvents.LAYER_PLAYER, nothing, rendertest2)
 
 
 
