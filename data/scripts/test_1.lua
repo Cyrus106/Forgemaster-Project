@@ -33,4 +33,46 @@ function downgrade_enemy()
   --Hyperspace.ships.enemy.cloakSystem:UpgradeSystem(-20)
 end
 
+
+--Test for drawing and stuff. No mouseover yet.
+
+mods.vals = {}--I think this stores initiallized values
+
+
+mods.vals.testBoxBool = false -- TODO: This would be initialized differently to save for the entire run, I'm just goin off of the way Detergent Mode works
+function boxBool_Toggle()
+    if mods.vals.testBoxBool then
+      mods.vals.testBoxBool = false
+      log('set to false')
+
+    else
+      mods.vals.testBoxBool = true
+      log('set to true')
+    end
+end
+
+script.on_game_event("DRAW", false, boxBool_Toggle)
+
+
+function test_before_rend()
+    if mods.vals.testBoxBool then
+      log('thingy before')
+      Graphics.CSurface.GL_DrawLine(6.0, 6.0, 100.0, 100.0, 3.0, Graphics.GL_Color(0.5, 0.5, 0.5, 1.0))
+    else
+      log('no thingy before')
+    end
+end
+function test_after_rend()
+    if mods.vals.testBoxBool then
+      log('thingy after')
+      Graphics.CSurface.GL_DrawLine(6.0, 6.0, 100.0, 100.0, 5.0, Graphics.GL_Color(1.0, 0.2, 0.2, 1.0))
+    else
+      log('no thingy after')
+    end
+end
+script.on_render_event(Defines.RenderEvents.LAYER_FRONT, test_before_rend, test_after_rend)
+
+
+
+
 script.on_game_event("MBA_2",false,downgrade_enemy)--This didn't work when set to true, might be a bug? Also did not work when tied to MBA, because of order of opperations, most likely
