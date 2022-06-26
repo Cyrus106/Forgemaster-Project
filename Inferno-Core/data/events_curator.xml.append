@@ -3,7 +3,10 @@
   <mod:findWithChildLike type="choice" child-type="text">
     <mod:selector>Go back.</mod:selector>
     <mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/> <!-- this line moves the last chice down for Forgemaster-->
-    <mod-append:variable name="fmcore_called_cura" op="set" val="0"/> <!--makes go back choice reset the variable for having called to 0-->
+    <mod-overwrite:event>
+      <loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+      <variable name="fmcore_called_cura" op="set" val="0"/> <!--makes go back choice reset the variable for having called to 0-->
+    </mod-overwrite:event>
   </mod:findWithChildLike>
 
 </mod:findName>
