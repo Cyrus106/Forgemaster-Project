@@ -13052,17 +13052,16 @@
 		<fireTime>1.5</fireTime><!--May or may not be necessary-->
 
 		<statBoosts>
-				<statBoost name="transformRace">
-					<boostType>SET</boostType>
-					<race>fm_crystal_prison</race>
-					<permanent>false</permanent>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<droneTarget>ALL</droneTarget>
-					<affectsSelf>true</affectsSelf>
-					<duration>10</duration>
+			        <statBoost name="transformRace">
+			                <boostType>SET</boostType>
+			                <race>fm_crystal_prison</race>
+			                <shipTarget>ALL</shipTarget>
+			                <crewTarget>ALLIES</crewTarget>
+			                <droneTarget>CREW</droneTarget>
+			                <affectsSelf>true</affectsSelf>
+			                <duration>15</duration>
 					<blackList load="FM_PLSNOEFFECT"/>
-				</statBoost>
+		                </statBoost>
 		</statBoosts>
 
 		<image>bomb_imprisment_proj</image>
