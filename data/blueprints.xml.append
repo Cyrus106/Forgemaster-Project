@@ -13056,11 +13056,10 @@
 			                <boostType>SET</boostType>
 			                <race>fm_crystal_prison</race>
 			                <shipTarget>ALL</shipTarget>
-			                <crewTarget>ALLIES</crewTarget>
+			                <crewTarget>ALL</crewTarget>
 			                <droneTarget>CREW</droneTarget>
 			                <affectsSelf>true</affectsSelf>
 			                <duration>15</duration>
-					<blackList load="FM_PLSNOEFFECT"/>
 		                </statBoost>
 		</statBoosts>
 
