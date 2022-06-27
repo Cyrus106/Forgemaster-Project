@@ -8917,7 +8917,7 @@
 		<cost>190</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
-		<explosion>explosion_ion</explosion>
+		<explosion>explosion_small_ion</explosion>
 		<boost>
 			<type>cooldown</type>
 			<amount>2.0</amount>
@@ -9790,7 +9790,7 @@
 		<cost>10</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
-		<explosion>explosion_ion</explosion>
+		<explosion>explosion_small_ion</explosion>
 		<projectiles>
 			<projectile count="1" fake="false" blueprint="LIST_FM_ION_0_SHOTS">fm_ion_0_shot</projectile>
 		</projectiles>
@@ -9835,7 +9835,7 @@
 		<bp>2</bp>
 		<rarity>0</rarity>
 		<image>ion_barrage</image>
-		<explosion>explosion_ion</explosion>
+		<explosion>explosion_small_ion</explosion>
 		<launchSounds>
 			<sound>ionShoot1</sound>
 			<sound>ionShoot2</sound>
@@ -16360,7 +16360,7 @@
 		<cost>190</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
-		<explosion>explosion_ion</explosion>
+		<explosion>explosion_small_ion</explosion>
 		<boost>
 			<type>cooldown</type>
 			<amount>2.0</amount>
@@ -18109,7 +18109,7 @@
 		<cost>190</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
-		<explosion>explosion_ion</explosion>
+		<explosion>explosion_small_ion</explosion>
 		<boost>
 			<type>cooldown</type>
 			<amount>0.1</amount>
