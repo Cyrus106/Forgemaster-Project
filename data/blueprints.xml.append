@@ -2489,7 +2489,7 @@
 			<power>Active ability: Repairs 1 hull damage, and 4 system damage to the current room. Heals itself for 20 HP. Refills a charge on jump.</power>
 		</powerList>
 	</crewBlueprint>
-	
+
 	<crewBlueprint name="fm_plated_shell">
 		<desc>Elite Shell Crew. The Forgemaster's disciples. Experts at repairing, though these plated decided to take a more combative approach to their craft.</desc>
 		<title>Plated Shell</title>
@@ -8917,6 +8917,7 @@
 		<cost>190</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
+		<explosion>explosion_ion</explosion>
 		<boost>
 			<type>cooldown</type>
 			<amount>2.0</amount>
@@ -16359,6 +16360,7 @@
 		<cost>190</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
+		<explosion>explosion_ion</explosion>
 		<boost>
 			<type>cooldown</type>
 			<amount>2.0</amount>
@@ -18107,6 +18109,7 @@
 		<cost>190</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
+		<explosion>explosion_ion</explosion>
 		<boost>
 			<type>cooldown</type>
 			<amount>0.1</amount>
