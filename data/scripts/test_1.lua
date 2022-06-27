@@ -215,6 +215,6 @@ end]]
     end
 
 
-script.on_internal_event(Defines.InternalEvents.ON_TICK, repair_auto)
+--script.on_internal_event(Defines.InternalEvents.ON_TICK, repair_auto)
 
 script.on_game_event("MBA_2",false,downgrade_enemy)--This didn't work when set to true, might be a bug? Also did not work when tied to MBA, because of order of opperations, most likely
