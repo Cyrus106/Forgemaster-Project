@@ -7,7 +7,7 @@
 
 	<mod:findName type="event" name="TRUE_LAST_STAND_START">
 		<mod-append:queueEvent>FORGEMASTER_SPAWNER</mod-append:queueEvent>
-		<mod:findLike type="choice"><mod:selector lvl="0" />
+		<mod:findLike type="choice"><mod:selector lvl="-2147483648" />
 		<mod:findLike type="event">
 			<mod-append:choice hidden="true" max_group="1" req="SHIP_GUNBOM" blue="false">
 				<text>Contact Federation command.</text>
