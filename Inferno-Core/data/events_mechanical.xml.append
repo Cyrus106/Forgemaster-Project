@@ -27,4 +27,7 @@
    <clearTriggeredEvent name="FMCORE_ONJUMP"/>
    <clearTriggeredEvent name="FMCORE_ONDAMAGE"/>
  </event>
+ <event name="TRUENOTHING">
+   <text></text>
+ </event>
 </FTL>
