@@ -19724,7 +19724,149 @@
 <!-- ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝	-->
 
 <FTL><!--AUGMENTS -->
+	<augBlueprint name="FM_AUTOREPAIR_SHIELDS">
+		<title>Shield Autorepair</title>
+		<desc>This augment will autorepair your shield system.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+		<value>100</value><!--I'll fine tune this in lua later so it's equal to human repair speed-->
+	</augBlueprint>
 
+	<augBlueprint name="FM_AUTOREPAIR_ENGINES">
+		<title>Engine Autorepair</title>
+		<desc>This augment will autorepair your engine system.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+		<value>100</value><!--I'll fine tune this in lua later so it's equal to human repair speed-->
+	</augBlueprint>
+
+	<augBlueprint name="FM_AUTOREPAIR_OXYGEN">
+		<title>Oxygen Autorepair</title>
+		<desc>This augment will autorepair your oxygen system.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+		<value>100</value><!--I'll fine tune this in lua later so it's equal to human repair speed-->
+	</augBlueprint>
+
+	<augBlueprint name="FM_AUTOREPAIR_WEAPONS">
+		<title>Weapons Autorepair</title>
+		<desc>This augment will autorepair your weapons system.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+		<value>100</value><!--I'll fine tune this in lua later so it's equal to human repair speed-->
+	</augBlueprint>
+
+	<augBlueprint name="FM_AUTOREPAIR_DRONES">
+		<title>Drone Autorepair</title>
+		<desc>This augment will autorepair your Drone system.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+		<value>100</value><!--I'll fine tune this in lua later so it's equal to human repair speed-->
+	</augBlueprint>
+
+	<augBlueprint name="FM_AUTOREPAIR_MEDICAL">
+		<title>Medical Autorepair</title>
+		<desc>This augment will autorepair your medical system.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+		<value>100</value><!--I'll fine tune this in lua later so it's equal to human repair speed-->
+	</augBlueprint>
+
+	<augBlueprint name="FM_AUTOREPAIR_PILOT">
+		<title>Pilot Autorepair</title>
+		<desc>This augment will autorepair your piloting system.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+		<value>100</value><!--I'll fine tune this in lua later so it's equal to human repair speed-->
+	</augBlueprint>
+
+	<augBlueprint name="FM_AUTOREPAIR_SENSORS">
+		<title>Sensor Autorepair</title>
+		<desc>This augment will autorepair your sensor system.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+		<value>100</value><!--I'll fine tune this in lua later so it's equal to human repair speed-->
+	</augBlueprint>
+
+	<augBlueprint name="FM_AUTOREPAIR_DOORS">
+		<title>Door Autorepair</title>
+		<desc>This augment will autorepair your door system.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+		<value>100</value><!--I'll fine tune this in lua later so it's equal to human repair speed-->
+	</augBlueprint>
+
+	<augBlueprint name="FM_AUTOREPAIR_TELEPORTER">
+		<title>Teleporter Autorepair</title>
+		<desc>This augment will autorepair your Teleporter system.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+		<value>100</value><!--I'll fine tune this in lua later so it's equal to human repair speed-->
+	</augBlueprint>
+
+	<augBlueprint name="FM_AUTOREPAIR_CLOAKING">
+		<title>Cloaking Autorepair</title>
+		<desc>This augment will autorepair your Cloaking system.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+		<value>100</value><!--I'll fine tune this in lua later so it's equal to human repair speed-->
+	</augBlueprint>
+
+	<augBlueprint name="FM_AUTOREPAIR_ARTILLERY">
+		<title>Artillery Autorepair</title>
+		<desc>This augment will autorepair all of your Artillery systems.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+		<value>100</value><!--I'll fine tune this in lua later so it's equal to human repair speed-->
+	</augBlueprint>
+
+	<augBlueprint name="FM_AUTOREPAIR_BATTERY">
+		<title>Battery Autorepair</title>
+		<desc>This augment will autorepair your Battery system.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+		<value>100</value><!--I'll fine tune this in lua later so it's equal to human repair speed-->
+	</augBlueprint>
+
+	<augBlueprint name="FM_AUTOREPAIR_MIND">
+		<title>Mind Control Autorepair</title>
+		<desc>This augment will autorepair your Mind Control system.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+		<value>100</value><!--I'll fine tune this in lua later so it's equal to human repair speed-->
+	</augBlueprint>
+
+	<augBlueprint name="FM_AUTOREPAIR_HACKING">
+		<title>Hacking Autorepair</title>
+		<desc>This augment will autorepair your Hacking system.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+		<value>100</value><!--I'll fine tune this in lua later so it's equal to human repair speed-->
+	</augBlueprint>
+
+	<augBlueprint name="FM_AUTOREPAIR_TEMPORAL">
+		<title>Temporal Autorepair</title>
+		<desc>This augment will autorepair your Temporal system.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+		<value>100</value><!--I'll fine tune this in lua later so it's equal to human repair speed-->
+	</augBlueprint>
 
 
 	<augBlueprint name="FM_PURGE_AUG">

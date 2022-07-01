@@ -37,20 +37,6 @@ end
 --Test for drawing and stuff. No mouseover yet.
 
 mods.vals = {}--I think this stores initiallized values
-mods.vals.repair_oxygenSystem = 100
-mods.vals.repair_teleportSystem = 0
-mods.vals.repair_cloakSystem = 0
-mods.vals.repair_batterySystem = 0
-mods.vals.repair_mindSystem = 0
-mods.vals.repair_cloneSystem = 0
-mods.vals.repair_hackingSystem = 0
-mods.vals.repair_shieldSystem = 0
-mods.vals.repair_weaponSystem = 200
-mods.vals.repair_droneSystem = 0
-mods.vals.repair_engineSystem = 0
-mods.vals.repair_medbaySystem = 0
-
-mods.vals.testBoxBool = false -- TODO: This would be initialized differently to save for the entire run, I'm just goin off of the way Detergent Mode works
 
 
 
@@ -141,69 +127,75 @@ end]]
     SYS_MIND,       //14
     SYS_HACKING,    //15
     SYS_TEMPORAL    = 20,]]
+
+    --FM_AUTOREPAIR_MEDICAL is listed twice so it maps to both medical systems
+    mods.vals.Auto_Repair_Augments={[0]="FM_AUTOREPAIR_SHIELDS", --0
+                                    [1]= "FM_AUTOREPAIR_ENGINES", --1
+                                    [2]="FM_AUTOREPAIR_OXYGEN", --2
+                                    [3]="FM_AUTOREPAIR_WEAPONS", --3
+                                    [4]="FM_AUTOREPAIR_DRONES", --4
+                                    [5]="FM_AUTOREPAIR_MEDICAL", --5
+                                    [6]="FM_AUTOREPAIR_PILOT", --6
+                                    [7]="FM_AUTOREPAIR_SENSORS", --7
+                                    [8]="FM_AUTOREPAIR_DOORS", --8
+                                    [9]="FM_AUTOREPAIR_TELEPORTER", --9
+                                    [10]="FM_AUTOREPAIR_CLOAKING", --10
+                                    --[11]="FM_AUTOREPAIR_ARTILLERY", --11 Handled differently, duplicate systems
+                                    [12]="FM_AUTOREPAIR_BATTERY", --12
+                                    [13]="FM_AUTOREPAIR_MEDICAL", --13
+                                    [14]="FM_AUTOREPAIR_MIND", --14
+                                    [15]="FM_AUTOREPAIR_HACKING", --15
+                                    [20]="FM_AUTOREPAIR_TEMPORAL" } --20
     function repair_auto()
       if not Hyperspace.SpaceManager.gamePaused then
+          for i,v in pairs(mods.vals.Auto_Repair_Augments) do
+              if Hyperspace.ships.player:HasSystem(i) == '' then
+                --local repair_value = Hyperspace.ships.player:GetAugmentationValue(v)
+                  Hyperspace.ships.player:GetSystem(i):PartialRepair(100,true)
+                --Hyperspace.ships.player:GetSystem(i):PartialRepair(repair_value,true)
+              end
+          end
 
-          --shields
-          if Hyperspace.ships.player:HasSystem(0) == '' then
-            Hyperspace.ships.player.shieldSystem:PartialRepair(mods.vals.repair_shieldSystem,true)
-          else
+          local artillery = Hyperspace.ships.player.artillerySystems
+          if artillery then
+              for x=0,artillery:size() do
+                --local repair_value = Hyperspace.ships.player:GetAugmentationValue("FM_AUTOREPAIR_ARTILLERY")
+                artillery[x]:PartialRepair(100,true)
+              end
           end
-          --oxygen
-          if Hyperspace.ships.player:HasSystem(2) == '' then
-            Hyperspace.ships.player.oxygenSystem:PartialRepair(mods.vals.repair_oxygenSystem,true)
-          else
-          end
-          --weapons
-          if Hyperspace.ships.player:HasSystem(3) == '' then
-            Hyperspace.ships.player.weaponSystem:PartialRepair(mods.vals.repair_weaponSystem,true)
-          else
-          end
-          --drones
-          if Hyperspace.ships.player:HasSystem(4) == '' then
-            Hyperspace.ships.player.droneSystem:PartialRepair(mods.vals.repair_droneSystem,true)
-          else
-          end
-          --teleporter
-          if Hyperspace.ships.player:HasSystem(9) == '' then
-            Hyperspace.ships.player.teleportSystem:PartialRepair(mods.vals.repair_teleportSystem,true)
-          else
-          end
-          --cloaking
-          if Hyperspace.ships.player:HasSystem(10) == '' then
-            Hyperspace.ships.player.cloakSystem:PartialRepair(mods.vals.repair_cloakSystem,true)
-          else
-          end
-          --battery
-          if Hyperspace.ships.player:HasSystem(12) == '' then
-            Hyperspace.ships.player.batterySystem:PartialRepair(mods.vals.repair_batterySystem,true)
-          else
-          end
-          --clonebay
-          if Hyperspace.ships.player:HasSystem(13) == '' then
-            Hyperspace.ships.player.cloneSystem:PartialRepair(mods.vals.repair_cloneSystem,true)
-          else
-          end
-          --mind
-          if Hyperspace.ships.player:HasSystem(14) == '' then
-            Hyperspace.ships.player.mindSystem:PartialRepair(mods.vals.repair_mindSystem,true)
-          else
-          end
-          --hacking
-          if Hyperspace.ships.player:HasSystem(15) == '' then
-            Hyperspace.ships.player.hackingSystem:PartialRepair(mods.vals.repair_hackingSystem,true)
-          else
-          end
-        end
+
+
+      end
     end
+--script.on_internal_event(Defines.InternalEvents.ON_TICK, repair_auto)
+
 function tyy()
         log('hello')
         --log(type(Hyperspace.Resources:CreateImagePrimitiveString("img/ship/forgemasterbase.png", 0, 0, 0, Graphics.GL_Color(0.5, 0.5, 0.5, 1.0), 1.0, false)))
         Graphics.CSurface:GL_CreatePixelImagePrimitive("img/ship/forgemasterbase.png", 0, 0, 0, Graphics.GL_Color(0.5, 0.5, 0.5, 1.0), 1.0, false)
         log('goodbye')
 end
+
+
+function beam()
+  local projectile=Hyperspace.Damage()
+  projectile.iShieldPiercing = 0
+  projectile.fireChance = 0
+  projectile.breachChance = 0
+  Hyperspace.ships.player:DamageBeam(Hyperspace.Pointf(1,1), Hyperspace.Pointf(200,200), projectile)
+  log('Function complete')
+end
+function beam2()
+  local projectile=Hyperspace.DamageParameter()
+  projectile.iShieldPiercing = 0
+  projectile.fireChance = 0
+  projectile.breachChance = 0
+  Hyperspace.ships.player:DamageBeam(Hyperspace.Pointf(1,1), Hyperspace.Pointf(200,200), projectile)
+  log('Function complete')
+end
+
 --script.on_render_event(Defines.RenderEvents.LAYER_FRONT,tyy,tyy)
 
---script.on_internal_event(Defines.InternalEvents.ON_TICK, repair_auto)
+
 
 script.on_game_event("MBA_2",false,downgrade_enemy)--This didn't work when set to true, might be a bug? Also did not work when tied to MBA, because of order of opperations, most likely

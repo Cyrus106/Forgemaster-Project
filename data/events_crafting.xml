@@ -2,6 +2,10 @@
 
 <FTL><!--Events for removing one of a certain kind of weapon (to be used for toggles and zero-cost exchange items, so as to prevent the need for multiple recipes)-->
 
+
+  <event name="AT">
+  </event>
+
   <event name="FM_REMOVE_AMP_ENERGY">
   	<loadEventList>
   		<event req="ENERGY_1_AMP2">
