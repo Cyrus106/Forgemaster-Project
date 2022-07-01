@@ -142,78 +142,67 @@ end]]
     SYS_HACKING,    //15
     SYS_TEMPORAL    = 20,]]
     function repair_auto()
-      --shields
-      if Hyperspace.ships.player:HasSystem(0) == '' then
-        Hyperspace.ships.player.shieldSystem:PartialRepair(mods.vals.repair_shieldSystem,true)
-      else
-      end
-      --oxygen
-      if Hyperspace.ships.player:HasSystem(2) == '' then
-        Hyperspace.ships.player.oxygenSystem:PartialRepair(mods.vals.repair_oxygenSystem,true)
-      else
-      end
-      --weapons
-      if Hyperspace.ships.player:HasSystem(3) == '' then
-        Hyperspace.ships.player.weaponSystem:PartialRepair(mods.vals.repair_weaponSystem,true)
-      else
-      end
-      --drones
-      if Hyperspace.ships.player:HasSystem(4) == '' then
-        Hyperspace.ships.player.droneSystem:PartialRepair(mods.vals.repair_droneSystem,true)
-      else
-      end
-      --teleporter
-      if Hyperspace.ships.player:HasSystem(9) == '' then
-        Hyperspace.ships.player.teleportSystem:PartialRepair(mods.vals.repair_teleportSystem,true)
-      else
-      end
-      --cloaking
-      if Hyperspace.ships.player:HasSystem(10) == '' then
-        Hyperspace.ships.player.cloakSystem:PartialRepair(mods.vals.repair_cloakSystem,true)
-      else
-      end
-      --battery
-      if Hyperspace.ships.player:HasSystem(12) == '' then
-        Hyperspace.ships.player.batterySystem:PartialRepair(mods.vals.repair_batterySystem,true)
-      else
-      end
-      --clonebay
-      if Hyperspace.ships.player:HasSystem(13) == '' then
-        Hyperspace.ships.player.cloneSystem:PartialRepair(mods.vals.repair_cloneSystem,true)
-      else
-      end
-      --mind
-      if Hyperspace.ships.player:HasSystem(14) == '' then
-        Hyperspace.ships.player.mindSystem:PartialRepair(mods.vals.repair_mindSystem,true)
-      else
-      end
-      --hacking
-      if Hyperspace.ships.player:HasSystem(15) == '' then
-        Hyperspace.ships.player.hackingSystem:PartialRepair(mods.vals.repair_hackingSystem,true)
-      else
-      end
+      if not Hyperspace.SpaceManager.gamePaused then
 
-
-
-
-
-
-
-
-      --[[Hyperspace.ships.player.oxygenSystem:PartialRepair(mods.vals.repair_oxygenSystem,true)
-      Hyperspace.ships.player.teleportSystem:PartialRepair(mods.vals.repair_teleportSystem,true)
-      Hyperspace.ships.player.cloakSystem:PartialRepair(mods.vals.repair_cloakSystem,true)
-      Hyperspace.ships.player.batterySystem:PartialRepair(mods.vals.repair_batterySystem ,true)
-      Hyperspace.ships.player.mindSystem:PartialRepair(mods.vals.repair_mindSystem ,true)
-      Hyperspace.ships.player.cloneSystem:PartialRepair(mods.vals.repair_cloneSystem ,true)
-      Hyperspace.ships.player.hackingSystem:PartialRepair(mods.vals.repair_hackingSystem ,true)
-      Hyperspace.ships.player.shieldSystem:PartialRepair(mods.vals.repair_shieldSystem ,true)
-      Hyperspace.ships.player.weaponSystem:PartialRepair(mods.vals.repair_weaponSystem ,true)
-      Hyperspace.ships.player.droneSystem:PartialRepair(mods.vals.repair_droneSystem ,true)]]
-      --Hyperspace.ships.player.engineSystem:PartialRepair(mods.vals.repair_engineSystem ,true)"nil method"
-      --Hyperspace.ships.player.medbaySystem:PartialRepair(mods.vals.repair_medbaySystem ,true) "nil method"
+          --shields
+          if Hyperspace.ships.player:HasSystem(0) == '' then
+            Hyperspace.ships.player.shieldSystem:PartialRepair(mods.vals.repair_shieldSystem,true)
+          else
+          end
+          --oxygen
+          if Hyperspace.ships.player:HasSystem(2) == '' then
+            Hyperspace.ships.player.oxygenSystem:PartialRepair(mods.vals.repair_oxygenSystem,true)
+          else
+          end
+          --weapons
+          if Hyperspace.ships.player:HasSystem(3) == '' then
+            Hyperspace.ships.player.weaponSystem:PartialRepair(mods.vals.repair_weaponSystem,true)
+          else
+          end
+          --drones
+          if Hyperspace.ships.player:HasSystem(4) == '' then
+            Hyperspace.ships.player.droneSystem:PartialRepair(mods.vals.repair_droneSystem,true)
+          else
+          end
+          --teleporter
+          if Hyperspace.ships.player:HasSystem(9) == '' then
+            Hyperspace.ships.player.teleportSystem:PartialRepair(mods.vals.repair_teleportSystem,true)
+          else
+          end
+          --cloaking
+          if Hyperspace.ships.player:HasSystem(10) == '' then
+            Hyperspace.ships.player.cloakSystem:PartialRepair(mods.vals.repair_cloakSystem,true)
+          else
+          end
+          --battery
+          if Hyperspace.ships.player:HasSystem(12) == '' then
+            Hyperspace.ships.player.batterySystem:PartialRepair(mods.vals.repair_batterySystem,true)
+          else
+          end
+          --clonebay
+          if Hyperspace.ships.player:HasSystem(13) == '' then
+            Hyperspace.ships.player.cloneSystem:PartialRepair(mods.vals.repair_cloneSystem,true)
+          else
+          end
+          --mind
+          if Hyperspace.ships.player:HasSystem(14) == '' then
+            Hyperspace.ships.player.mindSystem:PartialRepair(mods.vals.repair_mindSystem,true)
+          else
+          end
+          --hacking
+          if Hyperspace.ships.player:HasSystem(15) == '' then
+            Hyperspace.ships.player.hackingSystem:PartialRepair(mods.vals.repair_hackingSystem,true)
+          else
+          end
+        end
     end
-
+function tyy()
+        log('hello')
+        --log(type(Hyperspace.Resources:CreateImagePrimitiveString("img/ship/forgemasterbase.png", 0, 0, 0, Graphics.GL_Color(0.5, 0.5, 0.5, 1.0), 1.0, false)))
+        Graphics.CSurface:GL_CreatePixelImagePrimitive("img/ship/forgemasterbase.png", 0, 0, 0, Graphics.GL_Color(0.5, 0.5, 0.5, 1.0), 1.0, false)
+        log('goodbye')
+end
+--script.on_render_event(Defines.RenderEvents.LAYER_FRONT,tyy,tyy)
 
 --script.on_internal_event(Defines.InternalEvents.ON_TICK, repair_auto)
 
