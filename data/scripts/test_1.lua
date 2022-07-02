@@ -112,7 +112,11 @@ function D()
    Graphics.CSurface.GL_DrawTriangle(Hyperspace.Point(1,1), Hyperspace.Point(100,100), Hyperspace.Point(-200,-200), Graphics.GL_Color(1.0, 0.2, 0.2, 1.0))
 end
 --script.on_render_event(Defines.RenderEvents.LAYER_PLAYER, nothing, D)
-
+function axle()
+  local y=Hyperspace.Resources:CreateImagePrimitiveString("ship/zfm_gunhydra_b_base.png", 100, 100, 0, Graphics.GL_Color(0.5, 0.5, 0.5, 1.0), 1.0, false)
+  Graphics.CSurface.GL_RenderPrimitive(y)
+end
+--script.on_render_event(Defines.RenderEvents.LAYER_FRONT,nothing, axle)
 
 --test functions, may or may not work
 function beam()
@@ -134,6 +138,10 @@ end
 
 --script.on_render_event(Defines.RenderEvents.LAYER_FRONT,tyy,tyy)
 
-
-
+function fixie()
+  local artillery=Hyperspace.ships.player.artillerySystems
+  artillery[0].interiorImage = Hyperspace.Resources:CreateImagePrimitiveString("ship/interior/room_artillery_7.png", 315, 105, 0, Graphics.GL_Color(1.0, 1.0, 1.0, 1.0), 1.0, false)
+  artillery[1].interiorImage = Hyperspace.Resources:CreateImagePrimitiveString("ship/interior/room_artillery_4.png", 315, 280, 0, Graphics.GL_Color(1.0, 1.0, 1.0, 1.0), 1.0, false)
+  artillery[3].interiorImage = Hyperspace.Resources:CreateImagePrimitiveString("ship/interior/room_artillery_5.png", 350, 0, 0, Graphics.GL_Color(1.0, 1.0, 1.0, 1.0), 1.0, false)
+end
 script.on_game_event("MBA_2",false,downgrade_enemy)--This didn't work when set to true, might be a bug? Also did not work when tied to MBA, because of order of opperations, most likely
