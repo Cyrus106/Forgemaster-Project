@@ -35,7 +35,7 @@ function downgrade_enemy()
 end
 
 mods.vals = {}--I think this stores initiallized values
-
+mods.vals.weirdhack = false
 --[[SYS_SHIELDS,    //0
     SYS_ENGINES,    //1
     SYS_OXYGEN,     //2
@@ -144,4 +144,26 @@ function fixie()
   artillery[1].interiorImage = Hyperspace.Resources:CreateImagePrimitiveString("ship/interior/room_artillery_4.png", 315, 280, 0, Graphics.GL_Color(1.0, 1.0, 1.0, 1.0), 1.0, false)
   artillery[3].interiorImage = Hyperspace.Resources:CreateImagePrimitiveString("ship/interior/room_artillery_5.png", 350, 0, 0, Graphics.GL_Color(1.0, 1.0, 1.0, 1.0), 1.0, false)
 end
+
+
+function weirdhack()
+  if mods.vals.weirdhack then
+      for i,v in pairs(mods.vals.Auto_Repair_Augments) do
+          if Hyperspace.ships.enemy:HasSystem(i) == '' and Hyperspace.ships.enemy:IsSystemHacked(i) == 2 then
+              Hyperspace.ships.enemy:GetSystem(i):PartialDamage(5)
+          end
+      end
+  end
+end
+function togglehack()
+  if mods.vals.weirdhack then
+    mods.vals.weirdhack = false
+  else
+    mods.vals.weirdhack = true
+  end
+end
+script.on_game_event("TOGGLE_HACK",false,togglehack)
+script.on_internal_event(Defines.InternalEvents.ON_TICK, weirdhack)
+
+
 script.on_game_event("MBA_2",false,downgrade_enemy)--This didn't work when set to true, might be a bug? Also did not work when tied to MBA, because of order of opperations, most likely

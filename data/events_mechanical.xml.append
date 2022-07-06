@@ -2407,5 +2407,10 @@ Only respects stronger computers
 		<text>You try to draw a thing on your screen, at least later!</text>
 	</event>
 
+	<event name="TOGGLE_HACK">
+		<text>You toggle the weird hacking command</text>
+
+	</event>
+
 
 </FTL>
