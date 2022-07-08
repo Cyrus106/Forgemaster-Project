@@ -169,7 +169,8 @@ end
 function weirdhack()
   if mods.vals.weirdhack then
       for i,v in pairs(mods.vals.Auto_Repair_Augments) do
-          if Hyperspace.ships.enemy:HasSystem(i) == '' and Hyperspace.ships.enemy:IsSystemHacked(i) == 2 then
+          --if Hyperspace.ships.enemy:HasSystem(i) == '' and Hyperspace.ships.enemy:IsSystemHacked(i) == 2 then
+          if Hyperspace.ships.enemy:HasSystem(i) and Hyperspace.ships.enemy:IsSystemHacked(i) == 2 then
               Hyperspace.ships.enemy:GetSystem(i):PartialDamage(5)
           end
       end
