@@ -2211,9 +2211,6 @@
 	<name>SHOTGUN_2</name>
 	<name>SHOTGUN_2</name>
 	<name>SHOTGUN_2</name>
-	<name>CRYSTAL_BURST_1</name>
-	<name>CRYSTAL_BURST_1</name>
-	<name>CRYSTAL_BURST_1</name>
 	<name>BOMB_LOCK</name>
 	<name>BOMB_LOCK</name>
 	<name>KERNEL_1_ELITE</name>
@@ -2249,6 +2246,12 @@
 	<name>ION_3</name>
 	<name>CRYSTAL_STUN</name>
 	<name>CRYSTAL_STUN</name>
+	<name>CRYSTAL_STUN</name>
+	<name>FOCUS_BIO</name>
+	<name>FOCUS_BIO</name>
+	<name>FM_CORROSIVE_2</name>
+	<name>FM_CORROSIVE_2</name>
+	<name>FM_CORROSIVE_2</name>
 </blueprintList>
 
 <blueprintList name="FM_SHOP_FORGEMASTER_WEAPON_2_PLAYER">
@@ -2279,6 +2282,7 @@
 	<name>ION_HEAVY</name>
 	<name>BOMB_ION</name>
 	<name>CRYSTAL_STUN</name>
+	<name>FM_CORROSIVE_2</name>
 
 </blueprintList>
 
@@ -2324,6 +2328,7 @@
 	<name>LASER_BURST_5</name>
 	<name>BOMB_STUN</name>
 	<name>BOMB_STUN</name>
+	<name>FM_CORROSIVE_2</name>
 
 </blueprintList>
 
@@ -2349,6 +2354,7 @@
 	<name>ENERGY_2_PLAYER</name>
 	<name>BEAM_2_PLAYER</name>
 	<name>BEAM_GUILLOTINE_PLAYER</name>
+	<name>FOCUS_BIO_PLAYER</name>
 </blueprintList>
 
 <blueprintList name="FM_SHOP_FORGEMASTER_STARTING_WEAPON_LIST">
@@ -2394,6 +2400,8 @@
 	<name>FM_BOMB_CRUNCH</name>
 	<name>FM_IMPRISMENT_INDUCER</name>
 	<name>FM_BEAM_BASILISK</name>
+	<name>FM_FOCUS_VIRUS</name>
+	<name>FM_FOCUS_VIRUS_PLAYER</name>
 </blueprintList>
 
 <blueprintList name="FM_CRYSTAL_LIST">
