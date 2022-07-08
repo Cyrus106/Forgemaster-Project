@@ -36,6 +36,7 @@ end
 
 mods.vals = {}--I think this stores initiallized values
 mods.vals.weirdhack = false
+mods.vals.hacklevel = 0
 --[[SYS_SHIELDS,    //0
     SYS_ENGINES,    //1
     SYS_OXYGEN,     //2
@@ -75,7 +76,8 @@ mods.vals.weirdhack = false
     function repair_auto()
       if not Hyperspace.SpaceManager.gamePaused then
           for i,v in pairs(mods.vals.Auto_Repair_Augments) do
-              if Hyperspace.ships.player:HasSystem(i) == '' then
+              --if Hyperspace.ships.player:HasSystem(i) == '' then
+              if Hyperspace.ships.player:HasSystem(i) then
                 --local repair_value = Hyperspace.ships.player:GetAugmentationValue(v)
                   Hyperspace.ships.player:GetSystem(i):PartialRepair(100,true)
                 --Hyperspace.ships.player:GetSystem(i):PartialRepair(repair_value,true)
@@ -119,20 +121,38 @@ end
 --script.on_render_event(Defines.RenderEvents.LAYER_FRONT,nothing, axle)
 
 --test functions, may or may not work
+
+--[[iDamage = 0;
+		iShieldPiercing = 0;
+		fireChance = 0;
+		breachChance = 0;
+		stunChance = 0;
+		iIonDamage = 0;
+		iSystemDamage = 0;
+		iPersDamage = 0;
+		bHullBuster = 0;
+		ownerId = -1;
+		selfId = -1;
+		bLockdown = false;
+		crystalShard = false;
+		bFriendlyFire = true;
+		iStun = 0;]]
 function beam()
   local projectile=Hyperspace.Damage()
-  projectile.iShieldPiercing = 0
-  projectile.fireChance = 0
-  projectile.breachChance = 0
+  projectile.iDamage = 2
+  projectile.iShieldPiercing = 10
+  projectile.fireChance = 10
+  projectile.breachChance = 10
   Hyperspace.ships.player:DamageBeam(Hyperspace.Pointf(1,1), Hyperspace.Pointf(200,200), projectile)
   log('Function complete')
 end
-function beam2()
-  local projectile=Hyperspace.DamageParameter()
-  projectile.iShieldPiercing = 0
-  projectile.fireChance = 0
-  projectile.breachChance = 0
-  Hyperspace.ships.player:DamageBeam(Hyperspace.Pointf(1,1), Hyperspace.Pointf(200,200), projectile)
+function dam()
+  local projectile=Hyperspace.Damage()
+  projectile.iDamage = 2
+  projectile.iShieldPiercing = 10
+  projectile.fireChance = 10
+  projectile.breachChance = 10
+  Hyperspace.ships.player:DamageArea(Hyperspace.ships.player:GetRoomCenter(0), projectile, true)
   log('Function complete')
 end
 
@@ -162,6 +182,13 @@ function togglehack()
     mods.vals.weirdhack = true
   end
 end
+function sethack()
+  Hyperspace.ships.enemy.weaponSystem:SetHackingLevel(mods.vals.hacklevel)
+end
+function shl(x)
+  mods.vals.hacklevel=x
+end
+script.on_internal_event(Defines.InternalEvents.ON_TICK,sethack)
 script.on_game_event("TOGGLE_HACK",false,togglehack)
 script.on_internal_event(Defines.InternalEvents.ON_TICK, weirdhack)
 
