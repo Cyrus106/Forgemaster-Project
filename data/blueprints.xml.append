@@ -11327,6 +11327,78 @@
 
 </FTL>
 
+<weaponBlueprint name="FM_FOCUS_VIRUS_PLAYER"> <!-- Crafted with Corrosive Hull 2 and Anelace Pinpoint -->
+		<type>BEAM</type>
+		<tip>tip_focus</tip>
+		<title>'Aegrotatio' Pinpoint†</title>
+		<short>'Aegrotatio'†</short>
+		<desc>An incredibly unstable bio-weapon developed by only the most criminally insane shell scientists, this weapon inflicts crew with a deadly spreading virus, slowly wiping out the crew of enemy ships.</desc>
+		<tooltip>Beware! A misfire from this weapon once wiped out an entire shell colony, so maybe don't fire it too close to your boarders.</tooltip>
+		<damage>2</damage>
+	        <sysDamage>-1</sysDamage>
+	        <persDamage>-2</persDamage>
+		<sp>10</sp>
+		<fireChance>0</fireChance>
+		<breachChance>2</breachChance>
+		<stunChance>0</stunChance>
+		<cooldown>19</cooldown>
+		<speed>1</speed>
+		<power>1</power>
+		<cost>140</cost>
+		<bp>2</bp>
+		<rarity>0</rarity>
+	        <statBoosts>
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<amount>-7</amount>
+				<shipTarget>ENEMY_SHIP</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<duration>60</duration>
+				<boostAnim>pheromones</boostAnim>
+				<maxStacks>1</maxStacks>
+				<blackList>
+					<FM_PLSNOEFFECT/>
+				</blackList>
+				<priority>-100</priority>
+			</statBoost>
+
+			<statBoost name="statBoost">
+				<boostType>FLAT</boostType>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<duration>60</duration>
+
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<amount>-4</amount>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<duration>60</duration>
+				<boostAnim>bio_poison</boostAnim>
+				<maxStacks>1</maxStacks>
+				<blackList>
+					<FM_PLSNOEFFECT/>
+				</blackList>
+				<priority>-100</priority>
+			</statBoost>
+                        <blackList>
+				<FM_PLSNOEFFECT/>
+			</blackList>
+				<priority>-100</priority>
+
+			</statBoost>
+	        </statBoosts>
+		<image>beam_contact</image>
+		<length>1</length>
+		<launchSounds>
+			<sound>focus_strong</sound>
+		</launchSounds>
+		<weaponArt>fm_focus_virus</weaponArt>
+		<iconImage>beam</iconImage>
+	</weaponBlueprint>
+
+</FTL>
+
 <FTL> <!--FLAK-->
 	<weaponBlueprint name="FM_SHOTGUN_ANOMALY">
 		<type>BURST</type>
