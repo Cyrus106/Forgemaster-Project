@@ -195,3 +195,35 @@ script.on_internal_event(Defines.InternalEvents.ON_TICK, weirdhack)
 
 
 script.on_game_event("MBA_2",false,downgrade_enemy)--This didn't work when set to true, might be a bug? Also did not work when tied to MBA, because of order of opperations, most likely
+
+  function repairall()
+        for i=0,10 do
+            if Hyperspace.ships.player:HasSystem(i) then
+              for x=1,20 do
+                Hyperspace.ships.player:GetSystem(i):PartialRepair(1000000,true)
+              end
+            end
+        end
+
+        for i=12,15 do
+            if Hyperspace.ships.player:HasSystem(i) then
+              for x=1,20 do
+                Hyperspace.ships.player:GetSystem(i):PartialRepair(1000000,true)
+              end
+            end
+        end
+
+        if Hyperspace.ships.player:HasSystem(20) then
+          for x=1,20 do
+            Hyperspace.ships.player:GetSystem(i):PartialRepair(1000000,true)
+          end
+        end
+
+        --[[local artillery = Hyperspace.ships.player.artillerySystems
+        if artillery then
+            for x=0,artillery:size() do
+              artillery[x]:PartialRepair(10000000,true)
+            end
+        end]]
+
+  end
