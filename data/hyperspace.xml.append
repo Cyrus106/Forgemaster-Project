@@ -2367,12 +2367,12 @@
 			</req>
 		</req>
 
-		<req name="FM_ENERGY_RAILBLENDER_LIST"> <!-- Charge Flak + Charge Energy-->
+		<req name="FM_ENERGY_RAILBLENDER_LIST" type="all"> <!-- Charge Flak + Charge Energy-->
 			<name>SHOTGUN_CHARGE</name>
 			<name>ENERGY_CHARGEGUN</name>
 		</req>
 
-		<req name="FM_ENERGY_RAILBLENDER_LIST_PLUS">
+		<req name="FM_ENERGY_RAILBLENDER_LIST_PLUS" type="all">
 			<name>SHOTGUN_CHARGE</name>
 			<name>ENERGY_CHARGEGUN_PLAYER</name>
 		</req>
@@ -5294,7 +5294,7 @@
 
 		</race>
 	</crew>
-	
+
 	<crew> <!-- Plated Shell Crew -->
 		<race name="fm_plated_shell">
 			<maxHealth>120</maxHealth>
