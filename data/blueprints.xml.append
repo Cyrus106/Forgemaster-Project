@@ -14197,7 +14197,7 @@
 	</weaponBlueprint>
 
 	<!--pro hull drone-->
-	<droneBlueprint name="FM_COMBAT_BEAM_HULLN'T">
+	<droneBlueprint name="FM_COMBAT_BEAM_HULLNT">
 		<type>COMBAT</type>
 		<title>Pro-Hull Beam Drone</title>
 		<short>Pro-Hull</short>
@@ -14208,7 +14208,7 @@
 		<speed>21</speed>
 		<cost>100</cost>
 		<bp>3</bp>
-		<droneImage>fm_drone_combat_hullnt</droneImage>
+		<droneImage>fm_drone_hullnt</droneImage>
 		<weaponBlueprint>FM_PRO_HULL_DRONE_WEAPON</weaponBlueprint>
 		<rarity>0</rarity>
 		<iconImage>combat</iconImage>
