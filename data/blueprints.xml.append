@@ -11226,36 +11226,36 @@
 	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_FOCUS_ADAPT">
-    <type>BEAM</type>
-    <tip>tip_adapter</tip>
-    <title>Omiyari Pinpoint</title>
-    <short>Omiyari</short>
-    <desc>A potentially ship-vaporizing focus, adapting to its environment. Damage ramps up incredibly fast, chaining for 1.25 damage every time it fires.</desc>
-    <tooltip>Beam weapon, 2 damage per room.</tooltip>
-    <damage>2</damage>
-    <sp>0</sp>
-    <fireChance>1</fireChance>
-    <breachChance>2</breachChance>
-    <cooldown>12</cooldown>
-    <power>3</power>
-    <cost>80</cost>
-    <bp>7</bp>
-    <rarity>0</rarity>
-    <length>2</length>
-    <image>beam_contact</image>
-    <boost>
-        <type>damage</type>
-        <amount>1.25</amount>
-        <count>999</count>
-    </boost>
-    <launchSounds>
-        <sound>beam2</sound>
-    </launchSounds>
-    <weaponArt>fm_mini_yari</weaponArt>
-    <iconImage>beam</iconImage>
+		<type>BEAM</type>
+		<tip>tip_adapter</tip>
+		<title>Omiyari Pinpoint</title>
+		<short>Omiyari</short>
+		<desc>A potentially ship-vaporizing focus, adapting to its environment. Damage ramps up incredibly fast, chaining for 1.25 damage every time it fires.</desc>
+		<tooltip>Beam weapon, 2 damage per room.</tooltip>
+		<damage>2</damage>
+		<sp>0</sp>
+		<fireChance>1</fireChance>
+		<breachChance>2</breachChance>
+		<cooldown>12</cooldown>
+		<power>3</power>
+		<cost>80</cost>
+		<bp>7</bp>
+		<rarity>0</rarity>
+		<length>2</length>
+		<image>beam_contact</image>
+		<boost>
+			<type>damage</type>
+			<amount>1.25</amount>
+			<count>999</count>
+		</boost>
+		<launchSounds>
+			<sound>beam2</sound>
+		</launchSounds>
+		<weaponArt>fm_mini_yari</weaponArt>
+		<iconImage>beam</iconImage>
 	</weaponBlueprint>
 
-    <weaponBlueprint name="FM_FOCUS_VIRUS"> <!-- Crafted with Corrosive Hull 2 and Anelace Pinpoint -->
+	<weaponBlueprint name="FM_FOCUS_VIRUS"> <!-- Crafted with Corrosive Hull 2 and Anelace Pinpoint -->
 		<type>BEAM</type>
 		<tip>tip_focus</tip>
 		<title>'Aegrotatio' Pinpoint</title>
@@ -11263,8 +11263,8 @@
 		<desc>An incredibly unstable bio-weapon developed by only the most criminally insane shell scientists, this weapon inflicts crew with a deadly spreading virus, slowly wiping out the crew of enemy ships.</desc>
 		<tooltip>Beware! A misfire from this weapon once wiped out an entire shell colony, so maybe don't fire it too close to your boarders.</tooltip>
 		<damage>2</damage>
-	        <sysDamage>-1</sysDamage>
-	        <persDamage>-2</persDamage>
+		<sysDamage>-1</sysDamage>
+		<persDamage>-2</persDamage>
 		<sp>10</sp>
 		<fireChance>0</fireChance>
 		<breachChance>2</breachChance>
@@ -11275,7 +11275,7 @@
 		<cost>140</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
-	        <statBoosts>
+		<statBoosts>
 			<statBoost name="trueHealAmount">
 				<boostType>FLAT</boostType>
 				<amount>-7</amount>
@@ -11296,26 +11296,26 @@
 				<crewTarget>ALL</crewTarget>
 				<duration>60</duration>
 
-			<statBoost name="trueHealAmount">
-				<boostType>FLAT</boostType>
-				<amount>-4</amount>
-				<shipTarget>CURRENT_ROOM</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<duration>60</duration>
-				<boostAnim>bio_poison</boostAnim>
-				<maxStacks>1</maxStacks>
+				<statBoost name="trueHealAmount">
+					<boostType>FLAT</boostType>
+					<amount>-4</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<duration>60</duration>
+					<boostAnim>bio_poison</boostAnim>
+					<maxStacks>1</maxStacks>
+					<blackList>
+						<FM_PLSNOEFFECT/>
+					</blackList>
+					<priority>-100</priority>
+				</statBoost>
 				<blackList>
 					<FM_PLSNOEFFECT/>
 				</blackList>
 				<priority>-100</priority>
-			</statBoost>
-                        <blackList>
-				<FM_PLSNOEFFECT/>
-			</blackList>
-				<priority>-100</priority>
 
 			</statBoost>
-	        </statBoosts>
+		</statBoosts>
 		<image>beam_contact</image>
 		<length>1</length>
 		<launchSounds>
@@ -11325,9 +11325,7 @@
 		<iconImage>beam</iconImage>
 	</weaponBlueprint>
 
-</FTL>
-
-<weaponBlueprint name="FM_FOCUS_VIRUS_PLAYER"> <!-- Crafted with Corrosive Hull 2 and Anelace Pinpoint -->
+	<weaponBlueprint name="FM_FOCUS_VIRUS_PLAYER"> <!-- Crafted with Corrosive Hull 2 and Anelace Pinpoint -->
 		<type>BEAM</type>
 		<tip>tip_focus</tip>
 		<title>'Aegrotatio' Pinpoint†</title>
@@ -14198,8 +14196,48 @@
 			<iconImage>ion</iconImage>
 	</weaponBlueprint>
 
-
-
+	<!--pro hull drone-->
+	<droneBlueprint name="FM_COMBAT_BEAM_HULLN'T">
+		<type>COMBAT</type>
+		<title>Pro-Hull Beam Drone</title>
+		<short>Pro-Hull</short>
+		<desc>Restores structural integrity of the enemy ship and damages crew for easier crew kills.</desc>
+		<power>0</power>
+		<cooldown>1000</cooldown>
+		<dodge>5</dodge>
+		<speed>21</speed>
+		<cost>100</cost>
+		<bp>3</bp>
+		<droneImage>fm_drone_combat_hullnt</droneImage>
+		<weaponBlueprint>FM_PRO_HULL_DRONE_WEAPON</weaponBlueprint>
+		<rarity>0</rarity>
+		<iconImage>combat</iconImage>
+	</droneBlueprint>
+	<weaponBlueprint name="FM_PRO_HULL_DRONE_WEAPON">
+		<type>BEAM</type>
+		<title>Ishimura Beam</title>
+		<short>Ishimura B.</short>
+		<desc>weapon for pro-hull drone.</desc>
+		<damage>-1</damage>
+		<persDamage>1</persDamage>
+		<sp>3</sp>
+		<cost>400</cost>
+		<bp>7</bp>
+		<rarity>0</rarity>
+		<speed>20</speed>
+		<length>50</length>
+		<image>beam_contact</image>
+		<color>
+			<r>219</r>
+			<g>224</g>
+			<b>216</b>
+		</color>
+		<launchSounds>
+			<sound>beam2</sound>
+		</launchSounds>
+		<weaponArt>fm_beam_mining_2</weaponArt>
+		<iconImage>beam</iconImage>
+	</weaponBlueprint>
 
 </FTL>
 
