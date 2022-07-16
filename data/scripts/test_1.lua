@@ -39,6 +39,7 @@ mods.vals.weirdhack = false
 mods.vals.hacklevel = 0
 mods.vals.animbool = false
 mods.vals.overchargebool = false
+mods.vals.instantmind= false
 --[[SYS_SHIELDS,    //0
     SYS_ENGINES,    //1
     SYS_OXYGEN,     //2
@@ -435,7 +436,16 @@ function overcharge()
   end
 end
 
+--mindSystem.iArmed tells you if the button has been clicked and the symbol is ready to mind control a crew
+function instantmind()
+  if mods.vals.instantmind then --this way the variable is checked first so no trouble wiht nils, which is why 'and' is not used here
+    if Hyperspace.ships.player.mindSystem:GetLocked() == true then
+      Hyperspace.ships.player.mindSystem:LockSystem(0)
+    end
+  end
+end
 
+script.on_internal_event(Defines.InternalEvents.ON_TICK, instantmind)
 script.on_internal_event(Defines.InternalEvents.ON_TICK, overcharge)
 script.on_game_event("ANIMATION_FUN",false,animation_fun)
 script.on_render_event(Defines.RenderEvents.LAYER_PLAYER, nothing, newthing)
