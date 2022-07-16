@@ -38,6 +38,7 @@ mods.vals = {}--I think this stores initiallized values
 mods.vals.weirdhack = false
 mods.vals.hacklevel = 0
 mods.vals.animbool = false
+mods.vals.overchargebool = false
 --[[SYS_SHIELDS,    //0
     SYS_ENGINES,    //1
     SYS_OXYGEN,     //2
@@ -407,7 +408,34 @@ function animation_fun()
 end
 
 
+function stonks()
+  Hyperspace.playerVariables[twisted_rock_scrap_counter]=100
+  log(Hyperspace.playerVariables[twisted_rock_scrap_counter])
+end
+
+function var_to_scrap()
+  log(Hyperspace.playerVariables[twisted_rock_scrap_counter])
+  Hyperspace.ships.player:ModifyScrapCount(Hyperspace.playerVariables[twisted_rock_scrap_counter])
+  Hyperspace.playerVariables[twisted_rock_scrap_counter]=0
+end
+
+local overcharge_seconds = 0
+
+function overcharge()
+  if mods.vals.overchargebool then
+    local overchargetime = 10/Hyperspace.ships.player:GetSystemPower(0)
 
 
+    overcharge_seconds = overcharge_seconds + (Hyperspace.FPS.SpeedFactor / 16)
+    if overcharge_seconds > overchargetime then
+        overcharge_seconds = 0
+        Hyperspace.ships.player.shieldSystem:AddSuperShield(Hyperspace.Point(0,0))
+        log(overchargetime)
+    end
+  end
+end
+
+
+script.on_internal_event(Defines.InternalEvents.ON_TICK, overcharge)
 script.on_game_event("ANIMATION_FUN",false,animation_fun)
 script.on_render_event(Defines.RenderEvents.LAYER_PLAYER, nothing, newthing)
