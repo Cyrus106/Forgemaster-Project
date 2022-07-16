@@ -393,14 +393,21 @@ end
 
 
 function newthing()
+    if mods.vals.animbool then
+      for i=0,25 do
+        local room=Hyperspace.ships.enemy:GetRoomCenter(i)
+        renderanim("effects/explosion_ancalagon_breach.png",14,room.x,room.y,10)
+      end
+    end
+end
 
-    renderanim("effects/explosion_ancalagon_breach.png",14,100,100,10)
 
+function animation_fun()
+  mods.vals.animbool=true
 end
 
 
 
 
-
-
+script.on_game_event("ANIMATION_FUN",false,animation_fun)
 script.on_render_event(Defines.RenderEvents.LAYER_PLAYER, nothing, newthing)
