@@ -37,6 +37,7 @@ end
 mods.vals = {}--I think this stores initiallized values
 mods.vals.weirdhack = false
 mods.vals.hacklevel = 0
+mods.vals.animbool = false
 --[[SYS_SHIELDS,    //0
     SYS_ENGINES,    //1
     SYS_OXYGEN,     //2
@@ -148,13 +149,36 @@ function beam()
 end
 function dam()
   local projectile=Hyperspace.Damage()
-  projectile.iDamage = 2
-  projectile.iShieldPiercing = 10
-  projectile.fireChance = 10
+  projectile.iSystemDamage = 69
   projectile.breachChance = 10
-  Hyperspace.ships.player:DamageArea(Hyperspace.ships.player:GetRoomCenter(0), projectile, true)
-  log('Function complete')
+  for i =0,40 do
+    Hyperspace.ships.player:DamageArea(Hyperspace.ships.player:GetRoomCenter(i), projectile, true)
+  end
 end
+function ras()
+  local projectile=Hyperspace.Damage()
+  projectile.iSystemDamage = -99
+  for i =0,40 do
+    Hyperspace.ships.player:DamageArea(Hyperspace.ships.player:GetRoomCenter(i), projectile, true)
+  end
+end
+
+function ion()
+  local projectile=Hyperspace.Damage()
+  projectile.iIonDamage = 8
+  for i =0,40 do
+    Hyperspace.ships.player:DamageArea(Hyperspace.ships.player:GetRoomCenter(i), projectile, true)
+  end
+end
+
+function dam2()
+  local projectile=Hyperspace.Damage()
+  projectile.iDamage = 1
+  for i =0,40 do
+    Hyperspace.ships.player:DamageArea(Hyperspace.ships.player:GetRoomCenter(i), projectile, true)
+  end
+end
+
 
 --script.on_render_event(Defines.RenderEvents.LAYER_FRONT,tyy,tyy)
 
@@ -189,7 +213,7 @@ end
 function shl(x)
   mods.vals.hacklevel=x
 end
-script.on_internal_event(Defines.InternalEvents.ON_TICK,sethack)
+--script.on_internal_event(Defines.InternalEvents.ON_TICK,sethack)
 script.on_game_event("TOGGLE_HACK",false,togglehack)
 script.on_internal_event(Defines.InternalEvents.ON_TICK, weirdhack)
 
@@ -227,3 +251,156 @@ script.on_game_event("MBA_2",false,downgrade_enemy)--This didn't work when set t
         end]]
 
   end
+
+
+--[[  struct GL_Texture
+  {
+      /*** Default Constructor
+      @function GL_Texture
+      */
+
+      /***
+      @tfield int id
+      */
+  	int id_;
+      /***
+      @tfield int width
+      */
+  	int width_;
+      /***
+      @tfield int height
+      */
+  	int height_;
+      /***
+      @tfield bool isLogical
+      */
+  	bool isLogical_;
+      /***
+      @tfield float u_base
+      */
+  	float u_base_;
+      /***
+      @tfield float v_base
+      */
+  	float v_base_;
+      /***
+      @tfield float u_size
+      */
+  	float u_size_;
+      /***
+      @tfield float v_size
+      */
+  	float v_size_;
+  };]]
+
+
+
+
+
+--Animation testing STUFF
+function anim()
+  --local y=Hyperspace.Resources:CreateImagePrimitiveString("ships_glow/zmt_boss_crystal_suicide_gib2.png", 0, 0, 0, Graphics.GL_Color(0.5, 0.5, 0.5, 1.0), 1.0, false)
+   --Graphics.CSurface.GL_RenderPrimitive(y)
+    --[[local tex=Graphics.GL_Texture()
+    tex.id=Hyperspace.Resources:GetImageId("ships_glow/zmt_boss_crystal_suicide_gib2.png")
+    tex.width=100
+    tex.height=100
+    tex.u_base=100
+    tex.v_base=100
+    tex.u_size=200
+    tex.v_size=300
+    tex.isLogical=true]]
+
+   local tex = Hyperspace.Resources:GetImageId("effects/explosion_ancalagon_breach.png")
+   local x = 100
+   local y = 100
+   local size_x = tex.width
+   local size_y = tex.height
+   local start_x = 0
+   local end_x = tex.width
+   local start_y = 10
+   local end_y = tex.height
+   local alpha = 1
+   local color = Graphics.GL_Color(0.5, 0.5, 0.5, 0.5)
+   local mirror = false
+   --GL_BlitImagePartial(GL_Texture *tex, float x, float y, float size_x, float size_y, float start_x, float end_x, float start_y, float end_y, float alpha, GL_Color color, bool mirror)
+   Graphics.CSurface.GL_BlitImagePartial(tex, x, y, size_x, size_y, start_x, end_x, start_y, end_y, alpha, color, mirror)
+--start_y and end_y are floats within the range of 0 to 1, start_y is larger
+--start_y and end_y are in the range of 0 to one. Start_y>end_y, and y increases as you go up.
+--start_x and end_x work similarly, in a range of 0 to 1. start_x < end_x, where x increases from left to right
+
+   --[[LUA log(start_y)[Lua]: 4
+   LUA log(end_y)[Lua]: 0
+   LUA log(start_x)[Lua]: -3
+   LUA log(end_x)[Lua]: 10]]
+
+end
+ tex = Hyperspace.Resources:GetImageId("ship/testerfm_floor.png")
+ x = 150
+ y = 150
+ --COUNTING FRAMES FROM ZERO
+ size_x = 20 --width of a frame
+ size_y = 20 --height of a frame
+ start_x = 0 -- framenumber/numberofframes
+ end_x = 10 --framenumber+1/numberofframes
+ start_y = 1 --keep it this way for now because this is just for weapon explosions
+ end_y = 0 --keep this way for now
+ alpha = 1 --keep this way for now
+ color = Graphics.GL_Color(1, 1, 1, 1)--keep this way for now
+ mirror = false --keep this way for now
+
+ rotation =0
+function anim2()
+   Graphics.CSurface.GL_BlitImagePartial(tex, x, y, size_x, size_y, start_x, end_x, start_y, end_y, alpha, color, mirror)
+   --Graphics.CSurface.GL_BlitPixelImage(tex, 300, 300, 40, 40, rotation, color, mirror)
+end
+
+function renderframe(imagepath, framenumber, numberofframes, position_x, position_y)
+  local tex=Hyperspace.Resources:GetImageId(imagepath)
+  Graphics.CSurface.GL_BlitImagePartial(tex, position_x, position_y, (tex.width)/(numberofframes), tex.height, framenumber/numberofframes, (framenumber+1)/(numberofframes), 1, 0, 1, Graphics.GL_Color(1, 1, 1, 1), false)
+end
+
+
+
+local animtimer_seconds = 0
+
+function renderanim(imagepath, numberofframes, position_x, position_y,seconds)
+  if mods.vals.animbool then
+
+    animtimer_seconds = animtimer_seconds + (Hyperspace.FPS.SpeedFactor / 16)
+    local tex=Hyperspace.Resources:GetImageId(imagepath)
+    local framenumber=math.floor((animtimer_seconds*numberofframes)/seconds)
+    Graphics.CSurface.GL_BlitImagePartial(tex, position_x, position_y, (tex.width)/(numberofframes), tex.height, framenumber/numberofframes, (framenumber+1)/(numberofframes), 1, 0, 1, Graphics.GL_Color(1, 1, 1, 1), false)
+    if animtimer_seconds > seconds then
+        animtimer_seconds = 0
+        mods.vals.animbool = false
+    end
+  end
+end
+
+
+
+
+
+
+
+
+function renderoverrooms()
+
+    renderframe("effects/explosion_ancalagon_breach.png",fn,14,100,100)
+
+end
+
+
+function newthing()
+
+    renderanim("effects/explosion_ancalagon_breach.png",14,100,100,10)
+
+end
+
+
+
+
+
+
+script.on_render_event(Defines.RenderEvents.LAYER_PLAYER, nothing, newthing)
