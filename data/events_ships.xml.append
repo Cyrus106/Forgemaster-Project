@@ -3062,30 +3062,37 @@
 
 	<event name="FM_KES1_BOARD1">
 		<boarders min="2" max="2" class="gbzuul"/>
+		<loadEvent>TRUENOTHING</loadEvent>
 	</event>
 
 	<event name="FM_KES1_BOARD2">
 		<boarders min="2" max="2" class="gbvinz"/>
+		<loadEvent>TRUENOTHING</loadEvent>
 	</event>
 
 	<event name="FM_KES1_BOARD3">
 		<boarders min="2" max="2" class="gbpsych"/>
+		<loadEvent>TRUENOTHING</loadEvent>
 	</event>
 
 	<event name="FM_KES1_BOARD4">
 		<boarders min="2" max="2" class="gbslimer"/>
+		<loadEvent>TRUENOTHING</loadEvent>
 	</event>
 
 	<event name="FM_KES1_BOARD5">
 		<boarders min="2" max="2" class="gbscoleri"/>
+		<loadEvent>TRUENOTHING</loadEvent>
 	</event>
 
 	<event name="FM_KES1_BOARD6">
 		<boarders min="2" max="2" class="gbgozer"/>
+		<loadEvent>TRUENOTHING</loadEvent>
 	</event>
 
 	<event name="FM_KES1_BOARD7">
 		<boarders min="2" max="2" class="gbeleanor"/>
+		<loadEvent>TRUENOTHING</loadEvent>
 	</event>
 
 
