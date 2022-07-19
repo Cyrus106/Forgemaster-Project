@@ -39,7 +39,7 @@ mods.vals.weirdhack = false
 mods.vals.hacklevel = 0
 mods.vals.animbool = false
 mods.vals.overchargebool = false
-mods.vals.instantmind= false
+
 --[[SYS_SHIELDS,    //0
     SYS_ENGINES,    //1
     SYS_OXYGEN,     //2
@@ -337,7 +337,12 @@ function anim()
    LUA log(end_x)[Lua]: 10]]
 
 end
- tex = Hyperspace.Resources:GetImageId("ship/testerfm_floor.png")
+
+
+
+
+
+--[[tex = Hyperspace.Resources:GetImageId("ship/testerfm_floor.png")
  x = 150
  y = 150
  --COUNTING FRAMES FROM ZERO
@@ -355,9 +360,12 @@ end
 function anim2()
    Graphics.CSurface.GL_BlitImagePartial(tex, x, y, size_x, size_y, start_x, end_x, start_y, end_y, alpha, color, mirror)
    --Graphics.CSurface.GL_BlitPixelImage(tex, 300, 300, 40, 40, rotation, color, mirror)
-end
+end]]
 
-function renderframe(imagepath, framenumber, numberofframes, position_x, position_y)
+
+
+
+--[[function renderframe(imagepath, framenumber, numberofframes, position_x, position_y)
   local tex=Hyperspace.Resources:GetImageId(imagepath)
   Graphics.CSurface.GL_BlitImagePartial(tex, position_x, position_y, (tex.width)/(numberofframes), tex.height, framenumber/numberofframes, (framenumber+1)/(numberofframes), 1, 0, 1, Graphics.GL_Color(1, 1, 1, 1), false)
 end
@@ -378,7 +386,7 @@ function renderanim(imagepath, numberofframes, position_x, position_y,seconds)
         mods.vals.animbool = false
     end
   end
-end
+end]]
 
 
 
@@ -425,8 +433,6 @@ local overcharge_seconds = 0
 function overcharge()
   if mods.vals.overchargebool then
     local overchargetime = 10/Hyperspace.ships.player:GetSystemPower(0)
-
-
     overcharge_seconds = overcharge_seconds + (Hyperspace.FPS.SpeedFactor / 16)
     if overcharge_seconds > overchargetime then
         overcharge_seconds = 0
@@ -436,16 +442,32 @@ function overcharge()
   end
 end
 
---mindSystem.iArmed tells you if the button has been clicked and the symbol is ready to mind control a crew
-function instantmind()
-  if mods.vals.instantmind then --this way the variable is checked first so no trouble wiht nils, which is why 'and' is not used here
-    if Hyperspace.ships.player.mindSystem:GetLocked() == true then
-      Hyperspace.ships.player.mindSystem:LockSystem(0)
-    end
-  end
-end
 
-script.on_internal_event(Defines.InternalEvents.ON_TICK, instantmind)
+
+function firetest()
+  --local x = Hyperspace.ships.player:GetWeaponList()
+  --log(tostring(x[1]))
+  --x[1]:SetCooldownModifer(200)
+Hyperspace.ships.player.artillerySystems[1].projectileFactory:SetCooldownModifier(100)
+end
+--script.on_internal_event(Defines.InternalEvents.ON_TICK, firetest)
 script.on_internal_event(Defines.InternalEvents.ON_TICK, overcharge)
 script.on_game_event("ANIMATION_FUN",false,animation_fun)
-script.on_render_event(Defines.RenderEvents.LAYER_PLAYER, nothing, newthing)
+--script.on_render_event(Defines.RenderEvents.LAYER_PLAYER, nothing, newthing)
+
+
+
+
+
+
+
+
+--[[
+function yy()
+  Graphics.CSurface.GL_RenderPrimitive(Hyperspace.Resources:CreateImagePrimitiveString("ship/Forgemaster_cruiser_1_gib1.png", 0, 0, 0, Graphics.GL_Color(0.5, 0.5, 0.5, 1.0), 1.0, false))
+end]]
+
+--script.on_render_event(Defines.RenderEvents.LAYER_FRONT, nothing, yy)
+
+
+--Hyperspace.Global.GetInstance():GetCApp().world.starMap:ModifyPursuit(-5) important
