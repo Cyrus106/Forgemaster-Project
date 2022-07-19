@@ -5220,7 +5220,7 @@
 					<event>
 						<text>...</text>
 						<remove name="FM_SHOTGUN_BRONZE"/>
-						<choice hidden="true">
+						<choice>
 							<text>Continue...</text>
 							<event>
 								<text>...</text>
@@ -5268,7 +5268,7 @@
 					<event>
 						<text>...</text>
 						<remove name="FM_SHOTGUN_INDIUM"/>
-						<choice hidden="true">
+						<choice>
 							<text>Continue...</text>
 							<event>
 								<text>...</text>
@@ -5316,7 +5316,7 @@
 					<event>
 						<text>...</text>
 						<remove name="FM_SHOTGUN_RHENIUM"/>
-						<choice hidden="true">
+						<choice>
 							<text>Continue...</text>
 							<event>
 								<text>...</text>
@@ -5364,7 +5364,7 @@
 					<event>
 						<text>...</text>
 						<remove name="FM_SHOTGUN_SILVER"/>
-						<choice hidden="true">
+						<choice>
 							<text>Continue...</text>
 							<event>
 								<text>...</text>
@@ -5407,21 +5407,7 @@
 						<remove name="CRYSTAL_BURST_1_RED"/>
 						<choice hidden="true">
 							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<remove name="FM_SHOTGUN_PALLADIUM"/>
-								<choice hidden="true">
-									<text>Continue...</text>
-									<event>
-										<text>...</text>
-										<weapon name="FM_SHOTGUN_IRIDIUM"/>
-										<choice hidden="true">
-											<text>Upgrade to Iridium Flak Complete!</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
-								</choice>
-							</event>
+							<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 						</choice>
 					</event>
 				</choice>
@@ -5447,21 +5433,7 @@
 						<remove name="CRYSTAL_BURST_2_RED"/>
 						<choice hidden="true">
 							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<remove name="FM_SHOTGUN_PALLADIUM"/>
-								<choice hidden="true">
-									<text>Continue...</text>
-									<event>
-										<text>...</text>
-										<weapon name="FM_SHOTGUN_IRIDIUM"/>
-										<choice hidden="true">
-											<text>Upgrade to Iridium Flak Complete!</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
-								</choice>
-							</event>
+							<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 						</choice>
 					</event>
 				</choice>
@@ -5487,21 +5459,7 @@
 						<remove name="CRYSTAL_HEAVY_1_RED"/>
 						<choice hidden="true">
 							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<remove name="FM_SHOTGUN_PALLADIUM"/>
-								<choice hidden="true">
-									<text>Continue...</text>
-									<event>
-										<text>...</text>
-										<weapon name="FM_SHOTGUN_IRIDIUM"/>
-										<choice hidden="true">
-											<text>Upgrade to Iridium Flak Complete!</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
-								</choice>
-							</event>
+							<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 						</choice>
 					</event>
 				</choice>
@@ -5527,21 +5485,7 @@
 						<remove name="CRYSTAL_HEAVY_2_RED"/>-->
 						<choice hidden="true">
 							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<remove name="FM_SHOTGUN_PALLADIUM"/>
-								<choice hidden="true">
-									<text>Continue...</text>
-									<event>
-										<text>...</text>
-										<weapon name="FM_SHOTGUN_IRIDIUM"/>
-										<choice hidden="true">
-											<text>Upgrade to Iridium Flak Complete!</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
-								</choice>
-							</event>
+							<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 						</choice>
 					</event>
 				</choice>
@@ -5564,21 +5508,7 @@
 						<remove name="CRYSTAL_STUN_RED"/>
 						<choice hidden="true">
 							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<remove name="FM_SHOTGUN_PALLADIUM"/>
-								<choice hidden="true">
-									<text>Continue...</text>
-									<event>
-										<text>...</text>
-										<weapon name="FM_SHOTGUN_IRIDIUM"/>
-										<choice hidden="true">
-											<text>Upgrade to Iridium Flak Complete!</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
-								</choice>
-							</event>
+							<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 						</choice>
 					</event>
 				</choice>
@@ -5604,21 +5534,7 @@
 						<remove name="CRYSTAL_SHOTGUN_RED"/>
 						<choice hidden="true">
 							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<remove name="FM_SHOTGUN_PALLADIUM"/>
-								<choice hidden="true">
-									<text>Continue...</text>
-									<event>
-										<text>...</text>
-										<weapon name="FM_SHOTGUN_IRIDIUM"/>
-										<choice hidden="true">
-											<text>Upgrade to Iridium Flak Complete!</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
-								</choice>
-							</event>
+							<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 						</choice>
 					</event>
 				</choice>
@@ -5644,21 +5560,7 @@
 						<remove name="CRYSTAL_CHARGEGUN_RED"/>-->
 						<choice hidden="true">
 							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<remove name="FM_SHOTGUN_PALLADIUM"/>
-								<choice hidden="true">
-									<text>Continue...</text>
-									<event>
-										<text>...</text>
-										<weapon name="FM_SHOTGUN_IRIDIUM"/>
-										<choice hidden="true">
-											<text>Upgrade to Iridium Flak Complete!</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
-								</choice>
-							</event>
+							<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 						</choice>
 					</event>
 				</choice>
@@ -5681,24 +5583,10 @@
 					<text>Continue...</text>
 					<event>
 						<text>...</text>
-						<remove name="MINELAUNCHER_CRYSTAL"/>-->
+						<remove name="MINELAUNCHER_CRYSTAL"/>
 						<choice hidden="true">
 							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<remove name="FM_SHOTGUN_PALLADIUM"/>
-								<choice hidden="true">
-									<text>Continue...</text>
-									<event>
-										<text>...</text>
-										<weapon name="FM_SHOTGUN_IRIDIUM"/>
-										<choice hidden="true">
-											<text>Upgrade to Iridium Flak Complete!</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
-								</choice>
-							</event>
+							<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 						</choice>
 					</event>
 				</choice>
@@ -5708,6 +5596,21 @@
 		<choice hidden="false" req="pilot" lvl="1" max_group="9" blue="false">
 			<text>Nevermind.</text>
 			<event load="FM_FORGE_WEAPON_LOAD"/>
+		</choice>
+	</event>
+	<event name="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2">
+		<text>...</text>
+		<remove name="FM_SHOTGUN_PALLADIUM"/>
+		<choice>
+			<text>Continue...</text>
+			<event>
+				<text>...</text>
+				<weapon name="FM_SHOTGUN_IRIDIUM"/>
+				<choice hidden="true">
+					<text>Upgrade to Iridium Flak Complete!</text>
+					<event load="FM_FORGE_WEAPON_LOAD"/>
+				</choice>
+			</event>
 		</choice>
 	</event>
 
@@ -5736,7 +5639,7 @@
 					<event>
 						<text>...</text>
 						<remove name="FM_SHOTGUN_IRIDIUM"/>
-						<choice hidden="true">
+						<choice>
 							<text>Continue...</text>
 							<event>
 								<text>...</text>
@@ -5784,7 +5687,7 @@
 					<event>
 						<text>...</text>
 						<remove name="FM_SHOTGUN_PLATINUM"/>
-						<choice hidden="true">
+						<choice>
 							<text>Continue...</text>
 							<event>
 								<text>...</text>
@@ -5832,7 +5735,7 @@
 					<event>
 						<text>...</text>
 						<remove name="FM_SHOTGUN_OSMIUM"/>
-						<choice hidden="true">
+						<choice>
 							<text>Continue...</text>
 							<event>
 								<text>...</text>
@@ -5874,21 +5777,7 @@
 						<remove name="CRYSTAL_BURST_1_RED"/>
 						<choice hidden="true">
 							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<remove name="FM_SHOTGUN_NOBELIUM"/>
-								<choice hidden="true">
-									<text>Continue...</text>
-									<event>
-										<text>...</text>
-										<weapon name="FM_SHOTGUN_HASSIUM"/>
-										<choice hidden="true">
-											<text>Upgrade to Hassium Flak Complete!</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
-								</choice>
-							</event>
+							<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
 						</choice>
 					</event>
 				</choice>
@@ -5914,21 +5803,7 @@
 						<remove name="CRYSTAL_BURST_2_RED"/>
 						<choice hidden="true">
 							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<remove name="FM_SHOTGUN_NOBELIUM"/>
-								<choice hidden="true">
-									<text>Continue...</text>
-									<event>
-										<text>...</text>
-										<weapon name="FM_SHOTGUN_HASSIUM"/>
-										<choice hidden="true">
-											<text>Upgrade to Hassium Flak Complete!</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
-								</choice>
-							</event>
+							<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
 						</choice>
 					</event>
 				</choice>
@@ -5954,21 +5829,7 @@
 						<remove name="CRYSTAL_HEAVY_1_RED"/>
 						<choice hidden="true">
 							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<remove name="FM_SHOTGUN_NOBELIUM"/>
-								<choice hidden="true">
-									<text>Continue...</text>
-									<event>
-										<text>...</text>
-										<weapon name="FM_SHOTGUN_HASSIUM"/>
-										<choice hidden="true">
-											<text>Upgrade to Hassium Flak Complete!</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
-								</choice>
-							</event>
+							<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
 						</choice>
 					</event>
 				</choice>
@@ -5994,21 +5855,7 @@
 						<remove name="CRYSTAL_HEAVY_2_RED"/>-->
 						<choice hidden="true">
 							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<remove name="FM_SHOTGUN_NOBELIUM"/>
-								<choice hidden="true">
-									<text>Continue...</text>
-									<event>
-										<text>...</text>
-										<weapon name="FM_SHOTGUN_HASSIUM"/>
-										<choice hidden="true">
-											<text>Upgrade to Hassium Flak Complete!</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
-								</choice>
-							</event>
+							<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
 						</choice>
 					</event>
 				</choice>
@@ -6031,21 +5878,7 @@
 						<remove name="CRYSTAL_STUN_RED"/>
 						<choice hidden="true">
 							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<remove name="FM_SHOTGUN_NOBELIUM"/>
-								<choice hidden="true">
-									<text>Continue...</text>
-									<event>
-										<text>...</text>
-										<weapon name="FM_SHOTGUN_HASSIUM"/>
-										<choice hidden="true">
-											<text>Upgrade to Hassium Flak Complete!</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
-								</choice>
-							</event>
+							<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
 						</choice>
 					</event>
 				</choice>
@@ -6071,21 +5904,7 @@
 						<remove name="CRYSTAL_SHOTGUN_RED"/>
 						<choice hidden="true">
 							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<remove name="FM_SHOTGUN_NOBELIUM"/>
-								<choice hidden="true">
-									<text>Continue...</text>
-									<event>
-										<text>...</text>
-										<weapon name="FM_SHOTGUN_HASSIUM"/>
-										<choice hidden="true">
-											<text>Upgrade to Hassium Flak Complete!</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
-								</choice>
-							</event>
+							<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
 						</choice>
 					</event>
 				</choice>
@@ -6111,21 +5930,7 @@
 						<remove name="CRYSTAL_CHARGEGUN_RED"/>-->
 						<choice hidden="true">
 							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<remove name="FM_SHOTGUN_NOBELIUM"/>
-								<choice hidden="true">
-									<text>Continue...</text>
-									<event>
-										<text>...</text>
-										<weapon name="FM_SHOTGUN_HASSIUM"/>
-										<choice hidden="true">
-											<text>Upgrade to Hassium Flak Complete!</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
-								</choice>
-							</event>
+							<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
 						</choice>
 					</event>
 				</choice>
@@ -6148,21 +5953,7 @@
 						<remove name="MINELAUNCHER_CRYSTAL"/>-->
 						<choice hidden="true">
 							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<remove name="FM_SHOTGUN_NOBELIUM"/>
-								<choice hidden="true">
-									<text>Continue...</text>
-									<event>
-										<text>...</text>
-										<weapon name="FM_SHOTGUN_HASSIUM"/>
-										<choice hidden="true">
-											<text>Upgrade to Hassium Flak Complete!</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
-								</choice>
-							</event>
+							<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
 						</choice>
 					</event>
 				</choice>
@@ -6174,7 +5965,21 @@
 			<event load="FM_FORGE_WEAPON_LOAD"/>
 		</choice>
 	</event>
-
+	<event name="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2">
+		<text>...</text>
+		<remove name="FM_SHOTGUN_NOBELIUM"/>
+		<choice>
+			<text>Continue...</text>
+			<event>
+				<text>...</text>
+				<weapon name="FM_SHOTGUN_HASSIUM"/>
+				<choice hidden="true">
+					<text>Upgrade to Hassium Flak Complete!</text>
+					<event load="FM_FORGE_WEAPON_LOAD"/>
+				</choice>
+			</event>
+		</choice>
+	</event>
 	<!--COMBAT DRONE CRAFT CATEGORY-->
 	<event name="FM_FORGE_COMBAT_DRONE_LOAD">
 		<event/>
