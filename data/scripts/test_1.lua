@@ -98,7 +98,7 @@ mods.vals.overchargebool = false
 
       end
     end
-script.on_internal_event(Defines.InternalEvents.ON_TICK, repair_auto)
+--script.on_internal_event(Defines.InternalEvents.ON_TICK, repair_auto)
 
 
 --examples for graphics functions
