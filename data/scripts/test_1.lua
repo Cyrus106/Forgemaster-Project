@@ -77,7 +77,7 @@ mods.vals.overchargebool = false
                                     [15]="FM_AUTOREPAIR_HACKING", --15
                                     [20]="FM_AUTOREPAIR_TEMPORAL" } --20
     function repair_auto()
-      if not Hyperspace.SpaceManager.gamePaused then
+      if not Hyperspace.Global.GetInstance():GetCApp().world.space.gamePaused then
           for i,v in pairs(mods.vals.Auto_Repair_Augments) do
               --if Hyperspace.ships.player:HasSystem(i) == '' then
               if Hyperspace.ships.player:HasSystem(i) then
