@@ -910,7 +910,7 @@
 				<rock_commando room="6"/> <!--shields-->
 				<unique_dianesh room="6"/> <!--shields-->
 				<unique_ruwen room="6"/> <!--shields-->
-				<salt room="6"/> <!--shields-->
+				<unique_obyn room="6"/> <!--shields-->
 				<unique_dianesh room="3"/> <!--teleporter-->
 				<crystal_sentinel room="6"/> <!--shields-->
 				<rock_commando room="3"/> <!--teleporter-->
@@ -4868,7 +4868,7 @@
 						<zoltan/>
 						<zoltan_peacekeeper/>
 						<zoltan_monk/>
-						<symbiote/>
+						<unique_symbiote/>
 						<lanius_augmented/>
 					</whiteList>
 				</statBoost>

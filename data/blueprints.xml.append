@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+unique_metyunt<?xml version="1.0" encoding="UTF-8"?>
 <!-- Code Key for Future Reference -->
 <!-- 	 ███ = Ship Blueprints -->
 <!--	 © © = Crew Blueprints -->
@@ -5239,11 +5239,11 @@
 					<boostType>SET</boostType>
 					<deathEffect>
 						<event>
-							<boarders min="1" max="1" class="symbiote" />
+							<boarders min="1" max="1" class="unique_symbiote" />
 						</event>
 					</deathEffect>
 					<whiteList>
-						<symbiote />
+						<unique_symbiote />
 					</whiteList>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
@@ -5393,11 +5393,11 @@
 					<boostType>SET</boostType>
 					<deathEffect>
 						<event>
-							<boarders min="1" max="1" class="salt" />
+							<boarders min="1" max="1" class="unique_obyn" />
 						</event>
 					</deathEffect>
 					<whiteList>
-						<salt />
+						<unique_obyn />
 					</whiteList>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
@@ -7045,7 +7045,7 @@
 					<boostType>SET</boostType>
 					<deathEffect>
 						<event>
-							<boarders min="1" max="1" class="traitor" />
+							<boarders min="1" max="1" class="unique_metyunt" />
 						</event>
 					</deathEffect>
 					<whiteList>
@@ -14944,7 +14944,7 @@
 					<zoltan_martyr/>
 					<zoltan_peacekeeper/>
 					<unique_devorak/>
-					<symbiote/>
+					<unique_symbiote/>
 					<zoltan_osmian_enemy/>
 					<zoltan_osmian/>
 				</whiteList>
@@ -15658,7 +15658,7 @@
 		<rarity>0</rarity>
 		<spawnCrew>
 			<number>1</number>
-			<race>symbiote</race>
+			<race>unique_symbiote</race>
 			<lifetime>10</lifetime>
 			<statBoosts>
 				<statBoost name="noClone">
@@ -18080,7 +18080,7 @@
 					<zoltan_martyr/>
 					<zoltan_peacekeeper/>
 					<unique_devorak/>
-					<symbiote/>
+					<unique_symbiote/>
 					<zoltan_osmian_enemy/>
 					<zoltan_osmian/>
 				</whiteList>
@@ -18604,7 +18604,7 @@
 		<rarity>0</rarity>
 		<spawnCrew>
 			<number>1</number>
-			<race>symbiote</race>
+			<race>unique_symbiote</race>
 			<lifetime>10</lifetime>
 			<statBoosts>
 				<statBoost name="noClone">
