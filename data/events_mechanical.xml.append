@@ -1742,19 +1742,20 @@ Only respects stronger computers
 
 
 	<event name="SPAWNFM_FIRSTMEETING">
-		<text>[Forgemaster deployed!]</text>
-		<noQuestText/>
+		<!--<text>[Forgemaster deployed!]</text>-->
+		<!--<noQuestText/>-->
 		<!--<quest event="FORGEMASTER"/>-->
 		<variable name="forgemaster_spawntriggered" op="add" val="1"/>
-		<loadEvent>TRUENOTHING</loadEvent>
+		<!--<loadEvent>TRUENOTHING</loadEvent>-->
 	</event>
 
 	<event name="SPAWNFM_PHONECALL">
-		<text>[Alastair the Forgemaster has arrived!]</text>
-		<noQuestText/>
+		<!--<text>[Alastair the Forgemaster has arrived!]</text>-->
+		<!--<noQuestText/>-->
 		<!--<quest event="FORGEMASTER_PHONE_CALL"/>-->
+		<removeItem>HIDDEN FORGEMASTER_PHONE_CALL_CONFIRM</removeItem>
 		<variable name="forgemaster_spawntriggered" op="add" val="1"/>
-		<loadEvent>TRUENOTHING</loadEvent>
+		<!--<loadEvent>TRUENOTHING</loadEvent>-->
 	</event>
 </FTL>
 
