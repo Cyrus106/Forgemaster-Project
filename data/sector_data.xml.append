@@ -69,3 +69,8 @@
   <mod-append:blueprint name="FM_LASER_BURST_3" rarity="5"/>
    </mod:findLike>
    </mod:findName>
+
+<mod:findLike type="sectorDescription">
+	<mod-append:priorityEvent name="FORGEMASTER" min="1" max="1" priority="1" req="FMSPAWN_FIRSTMEET"/>
+	<mod-append:priorityEvent name="FORGEMASTER_PHONE_CALL" min="1" max="1" priority="1" req="FMSPAWN_CALL"/>
+</mod:findLike>
