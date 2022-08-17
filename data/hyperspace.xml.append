@@ -4107,6 +4107,7 @@
 			<name>SEC SHOWDOWN_NORMAL</name>
 			<name>SEC SHOWDOWN_CHALLENGE</name>
 			<name>SEC SHOWDOWN_EXTREME</name>
+			<name>SEC ZONE_SAFE</name>
 		</req>
 		<variable name="flak_calc" op="set" val="0"/><!--Persistant Flak Surge Calculation Variable-->
 		<variable name="forgemaster_spawntriggered" op="set" val="0"/> <!--counter for how often the FMspawner was activated, if not 0 the spawner will not work-->
