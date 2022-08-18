@@ -74,3 +74,8 @@
 	<mod-append:priorityEvent name="FORGEMASTER" min="1" max="1" priority="1" req="FMSPAWN_FIRSTMEET"/>
 	<!--<mod-append:priorityEvent name="FORGEMASTER_PHONE_CALL" min="1" max="1" priority="1" req="FMSPAWN_CALL"/>-->
 </mod:findLike>
+<mod:findName type="sectorDescription" name="STANDARD_SPACE">
+	<mod:findName type="priorityEvent" name="FORGEMASTER">
+		<mod:removeTag/>
+	</mod:findName>
+</mod:findName>
