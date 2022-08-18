@@ -9101,7 +9101,7 @@
   <!-- Internal Augment Install Storage Check -->
   <mod:findName type = "event" name = "STORAGE_CHECK_SYSTEM">
     <mod-append:choice  req="oxygen" blue="false" hidden="true">
-      <text>The Oxygen.</text>
+      <text>The Life Support.</text>
       <event load="FM_STORAGE_CHECK_SYSTEM_OXYGEN"/>
     </mod-append:choice>
 
@@ -9139,7 +9139,7 @@
 
   <event name="FM_STORAGE_CHECK_SYSTEM_OXYGEN_STIMS">
     <text>You are about to install the Gaseous Stimulants upgrade.
-      [Effects: For each active power bar in Oxygen, your crew gain 10% stun resist, and  5% suffocation resistance.]
+      [Effects: For each active power bar in Life Support, your crew gain 10% stun resist, and  5% suffocation resistance.]
     </text>
 
 
@@ -9160,7 +9160,7 @@
     </choice>
 
     <choice req="oxygen" lvl="1" max_lvl="1" max_group="1" blue="false" hidden="true">
-      <text>This upgrade is unavailable. You need a level 2 Oxygen system.</text>
+      <text>This upgrade is unavailable. You need a level 2 Life Support system.</text>
       <event load="OPTION_INVALID"/>
     </choice>
 
