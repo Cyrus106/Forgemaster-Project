@@ -1267,8 +1267,10 @@
 				<choice>
 					<text>Do something onboard the ship.</text>
 
-					<event load="STORAGE_CHECK"/>
-
+					<event>
+						<eventAlias name="FORGEMASTER_PHONE_EVENT"></eventAlias>
+						<loadEvent>STORAGE_CHECK</loadEvent>
+					</event>
 				</choice>
 
 			</event>
