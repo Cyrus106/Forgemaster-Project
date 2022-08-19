@@ -1163,6 +1163,7 @@
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
+				<shipIcon>icon_nano_defense</shipIcon>
 				<shipIcon>icon_shell_gas_heal</shipIcon>
 			</shipIcons>
 			<hiddenAug>COMBUSTION_VIRUS_ENEMY</hiddenAug>
@@ -1388,6 +1389,7 @@
 				<shipIcon>icon_fm_uniquetech</shipIcon>
 				<shipIcon>icon_no2</shipIcon>
 				<shipIcon>icon_resist</shipIcon>
+				<shipIcon>icon_nano_defense</shipIcon>
 			</shipIcons>
 			<rooms>
 				<room id="8">
