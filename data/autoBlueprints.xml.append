@@ -271,7 +271,7 @@
 	<boardingAI>invasion</boardingAI>
 	<aug name="CRYSTAL_ARMOR_ENEMY" />
 	<aug name="TWISTED_CRYSTAL_ARMOR_50" />
-	<aug name="EX_FIRE_EXTINGUISHERS" />
+	<aug name="UPG_TECH_EXTINGUISHERS" />
 </shipBlueprint>
 
 <shipBlueprint name="FM_BOSS_ENGI1" layout="zmt_boss_engi_suicide" img="zmt_boss_engi_suicide">
@@ -677,7 +677,7 @@
 	<maxPower amount="999" />
 	<crewCount amount="1" max="1" class="butler" />
 	<boardingAI>invasion</boardingAI>
-	<aug name="EX_ION_ARMOR" />
+	<aug name="UPG_ION_ARMOR" />
 	<aug name="LOCKED_COAL_AUG" />
 </shipBlueprint>
 
@@ -784,8 +784,7 @@
 	<maxPower amount="999" />
 	<crewCount amount="1" max="1" class="fm_human_texture" />
 	<boardingAI>sabotage</boardingAI>
-	<aug name="CLOAK_FIRE" />
-	<aug name="EX_CLOAK_FIRE" />
+	<aug name="UPG_CLOAK_FIRE" />
 </shipBlueprint>
 
 <shipBlueprint name="FM_BOSS_KES1" layout="zmt_boss_kestrel_suicide" img="zmt_boss_kestrel_suicide">
@@ -890,7 +889,7 @@
 	<boardingAI>sabotage</boardingAI>
 	<aug name="SLUG_GEL" />
 	<aug name="UPG_WEAPONS_PERFORMANCE" />
-	<aug name="EX_SHIELD_RECHARGE" />
+	<aug name="UPG_SHIELD_RECHARGE" />
 </shipBlueprint>
 
 <shipBlueprint name="FM_BOSS_ZOLTAN1" layout="zmt_boss_zoltan_suicide" img="zmt_boss_zoltan_suicide">
@@ -923,7 +922,7 @@
 	<crewCount amount="1" max="1" class="engi_defender" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="ANCIENT_SHIELD" />
-	<aug name="EX_BREACH_SEALANT" />
+	<aug name="SLUG_GEL" />
 
 </shipBlueprint>
 

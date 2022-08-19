@@ -853,9 +853,7 @@
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
-				<shipIcon>icon_sluggel</shipIcon>
 				<shipIcon>icon_resist</shipIcon>
-				<shipIcon>icon_casing</shipIcon>
 			</shipIcons>
 			<crew>
 				<slug_knight room="13"/> <!--teleporter-->
@@ -896,8 +894,6 @@
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
 				<shipIcon>icon_invasion</shipIcon>
-				<shipIcon>icon_hull_twisted_crystal</shipIcon>
-				<shipIcon>icon_extinguishers</shipIcon>
 			</shipIcons>
 			<rooms>
 				<room id="20"> <!--empty-->
@@ -926,7 +922,6 @@
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
-				<shipIcon>icon_zoltan_shield</shipIcon>
 				<shipIcon>icon_resist</shipIcon>
 			</shipIcons>
 			<rooms>
@@ -955,7 +950,6 @@
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
-				<shipIcon>icon_nanomedbay</shipIcon>
 				<shipIcon>icon_fm_drone_buff</shipIcon>
 			</shipIcons>
 			<crew>
@@ -971,7 +965,6 @@
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
-				<shipIcon>icon_nanomedbay</shipIcon>
 				<shipIcon>icon_resist</shipIcon>
 			</shipIcons>
 			<rooms>
@@ -998,13 +991,11 @@
 		</mod-append:customShip>
 
 		<mod-append:customShip name="FM_BOSS_R1"> <!-- SUICIDE MISSION ROCK -->
-			<hiddenAug>EX_FIRE_EXTINGUISHERS</hiddenAug>
+			<hiddenAug>UPG_TECH_EXTINGUISHERS</hiddenAug>
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
 				<shipIcon>icon_resist_variant</shipIcon>
-				<shipIcon>icon_paladin_armor</shipIcon>
-				<shipIcon>icon_extinguishers</shipIcon>
 			</shipIcons>
 			<crew>
 				<rock_commando room="5"/> <!--weapons-->
@@ -1083,7 +1074,6 @@
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
-				<shipIcon>icon_freepheromones</shipIcon>
 			</shipIcons>
 			<crew>
 				<unique_freddy room="2" name="Freddy"/> <!--weapons-->
@@ -1107,14 +1097,10 @@
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
-				<shipIcon>icon_pheromones</shipIcon>
-				<shipIcon>icon_mantis_reloader</shipIcon>
 				<shipIcon>icon_resist</shipIcon>
-				<shipIcon>icon_bypass</shipIcon>
-				<shipIcon>icon_extinguishers</shipIcon>
 			</shipIcons>
-			<hiddenAug>ZOLTAN_BYPASS</hiddenAug>
-			<hiddenAug>EX_FIRE_EXTINGUISHERS</hiddenAug>
+			<hiddenAug>UPG_TECH_BYPASS</hiddenAug>
+			<hiddenAug>UPG_TECH_EXTINGUISHERS</hiddenAug>
 			<hiddenAug>MANTIS_RELOADER_ENEMY</hiddenAug>
 			<rooms>
 				<room id="7">
@@ -1143,7 +1129,6 @@
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
-				<shipIcon>icon_ionarmor</shipIcon>
 				<shipIcon>icon_pheromones</shipIcon>
 				<shipIcon>icon_rock_armor</shipIcon>
 				<shipIcon>icon_sluggel</shipIcon>
@@ -1174,13 +1159,11 @@
 			<noFuelStalemate/>
 		</mod-append:customShip>
 
-		<mod-append:customShip name="FM_BOSS_SHELL1">
+		<mod-append:customShip name="FM_BOSS_SHELL1"><!--icon BUG-->
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
-				<shipIcon>icon_shell_gas</shipIcon>
 				<shipIcon>icon_shell_gas_heal</shipIcon>
-				<shipIcon>icon_nano_defense</shipIcon>
 			</shipIcons>
 			<hiddenAug>COMBUSTION_VIRUS_ENEMY</hiddenAug>
 			<crew>
@@ -1277,12 +1260,10 @@
 		</mod-append:customShip>
 
 		<mod-append:customShip name="FM_BOSS_STEALTH1">
-			<hiddenAug>EX_FIRE_EXTINGUISHERS</hiddenAug>
+			<hiddenAug>UPG_TECH_EXTINGUISHERS</hiddenAug>
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
-				<shipIcon>icon_cloakfire</shipIcon>
-				<shipIcon>icon_extinguishers</shipIcon>
 			</shipIcons>
 			<crew>
 				<fm_human_texture room="8" name="B.O.S.D."/> <!--engines-->
@@ -1305,9 +1286,6 @@
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
-				<shipIcon>icon_nanomedbay</shipIcon>
-				<shipIcon>icon_resist</shipIcon>
-				<shipIcon>icon_grid</shipIcon>
 			</shipIcons>
 			<rooms>
 				<room id="15">
@@ -1349,11 +1327,10 @@
 		</mod-append:customShip>
 
 		<mod-append:customShip name="FM_BOSS_ORCHID1">
-			<hiddenAug>EX_FIRE_EXTINGUISHERS</hiddenAug>
+			<hiddenAug>UPG_TECH_EXTINGUISHERS</hiddenAug>
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_resist_variant</shipIcon>
-				<shipIcon>icon_extinguishers</shipIcon>
 			</shipIcons>
 			<rooms>
 				<room id="6">
@@ -1378,12 +1355,9 @@
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
-				<shipIcon>icon_zoltan_shield</shipIcon>
-				<shipIcon>icon_ionarmor</shipIcon>
 				<shipIcon>icon_resist</shipIcon>
-				<shipIcon>icon_extinguishers</shipIcon>
 			</shipIcons>
-			<hiddenAug>EX_FIRE_EXTINGUISHERS</hiddenAug>
+			<hiddenAug>UPG_TECH_EXTINGUISHERS</hiddenAug>
 			<rooms>
 				<room id="22">
 					<roomAnim renderLayer="0">resist_2x2</roomAnim>
@@ -1414,7 +1388,6 @@
 				<shipIcon>icon_fm_uniquetech</shipIcon>
 				<shipIcon>icon_no2</shipIcon>
 				<shipIcon>icon_resist</shipIcon>
-				<shipIcon>icon_nano_defense</shipIcon>
 			</shipIcons>
 			<rooms>
 				<room id="8">
@@ -1449,8 +1422,6 @@
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
-				<shipIcon>icon_zoltan_shield</shipIcon>
-				<shipIcon>icon_salt_armor</shipIcon>
 				<shipIcon>icon_resist</shipIcon>
 			</shipIcons>
 			<hiddenAug>FM_OXYGEN_STIMS</hiddenAug>
@@ -1480,16 +1451,13 @@
 
 		<mod-append:customShip name="FM_BOSS_LOSTSUN1">
 			<noJump/>
-			<hiddenAug>EX_FIRE_EXTINGUISHERS</hiddenAug>
+			<hiddenAug>UPG_TECH_EXTINGUISHERS</hiddenAug>
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
 				<shipIcon>icon_fm_lostsun_deathtimer</shipIcon>
-				<shipIcon>icon_regen_armor</shipIcon>
-				<shipIcon>icon_zoltan_shield</shipIcon>
-				<shipIcon>icon_extinguishers</shipIcon>
 				<shipIcon>icon_resist</shipIcon>
-				<shipIcon>icon_casing</shipIcon>
+				<shipIcon>icon_zoltan_shield</shipIcon>
 			</shipIcons>
 			<hiddenAug>SYSTEM_CASING_NEW</hiddenAug>
 			<rooms>
@@ -1513,13 +1481,9 @@
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
-				<shipIcon>icon_sluggel</shipIcon>
-				<shipIcon>icon_shieldboost</shipIcon>
-				<shipIcon>icon_weaponboost</shipIcon>
 				<shipIcon>icon_resist</shipIcon>
-				<shipIcon>icon_extinguishers</shipIcon>
 			</shipIcons>
-			<hiddenAug>EX_FIRE_EXTINGUISHERS</hiddenAug>
+			<hiddenAug>UPG_TECH_EXTINGUISHERS</hiddenAug>
 			<rooms>
 				<room id="17">
 					<roomAnim renderLayer="0">resist_2x2</roomAnim>
@@ -1566,8 +1530,6 @@
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
-				<shipIcon>icon_zoltan_shield</shipIcon>
-				<shipIcon>icon_sluggel</shipIcon>
 				<shipIcon>icon_resist</shipIcon>
 			</shipIcons>
 			<rooms>
@@ -1593,7 +1555,6 @@
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
-				<shipIcon>icon_ionarmor</shipIcon>
 				<rooms>
 					<room id="6">
 						<roomAnim renderLayer="0">resist_2x2</roomAnim>
@@ -10428,6 +10389,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<whiteList load="LIST_CREW_MANTIS"/>
 				</statBoost>
 			</statBoosts>
+			<icon>icon_mantis_reloader</icon>
 		</aug>
 
 		<aug name="LAB_ZOLTAN_LIMIT_RELEASE">
@@ -10521,6 +10483,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<aug name="TWISTED_CRYSTAL_ARMOR_50">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false"/>
 			<crystalShard weapon="FM_MINELAUNCHER_CRYSTAL" value="0.5" stackable="independent"/>
+			<icon>icon_hull_twisted_crystal</icon>
 		</aug>
 
 		<aug name="LOCKED_TWISTED_CRYSTAL_ARMOR_50">
