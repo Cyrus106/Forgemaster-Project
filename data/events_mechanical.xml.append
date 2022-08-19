@@ -1753,9 +1753,11 @@ Only respects stronger computers
 		<!--<text>[Alastair the Forgemaster has arrived!]</text>-->
 		<!--<noQuestText/>-->
 		<quest event="FORGEMASTER_PHONE_CALL"/>
-		<removeItem>HIDDEN FORGEMASTER_PHONE_CALL_CONFIRM</removeItem>
 		<variable name="forgemaster_spawntriggered" op="add" val="1"/>
-		<loadEvent>TRUENOTHING</loadEvent>
+		<loadEvent>FM_CALL_END</loadEvent>
+	</event>
+	<event name="FM_CALL_END">
+		<removeItem>HIDDEN FORGEMASTER_PHONE_CALL_CONFIRM</removeItem>
 	</event>
 </FTL>
 
