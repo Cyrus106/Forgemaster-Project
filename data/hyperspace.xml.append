@@ -19952,3 +19952,148 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</reward>
 	</rewards>
 </FTL>
+
+<FTL>
+	<mod:findLike type="achievements" limit="1">
+		<mod-apend:page>
+			<section text="Impossible Task" hidden="true">
+				<achievement name="ACH_TWISTED_REN_CLAN">
+					<name>Organs Please!</name>
+					<description>Defeat the Twisted Guild B Renegade and get the Mind Clouder.</description>
+					<icon>renegade_clan_b</icon>
+					<header>Twisted Renegade Defeated</header>
+				</achievement>
+				<achievement name="ACH_TWISTED_REN_CRYSTAL">
+					<name>Bullet Hell</name>
+					<description>Defeat the Twisted Crystal C Renegade and get the Twisted Shatter Armor.</description>
+					<icon>renegade_crystal_c</icon>
+					<header>Twisted Renegade Defeated</header>
+				</achievement>
+				<achievement name="ACH_TWISTED_REN_DUSK">
+					<name>Multiverse Record</name>
+					<description>Defeat the Twisted Duskbringer B Renegade and get the Twilight Vests.</description>
+					<icon>renegade_dusk_b</icon>
+					<header>Twisted Renegade Defeated</header>
+				</achievement>
+				<achievement name="ACH_TWISTED_REN_ENGI">
+					<name>Hardening Nanites</name>
+					<description>Defeat the Twisted Engi C Renegade and get the Drone Booster KAI.</description>
+					<icon>renegade_engi_c</icon>
+					<header>Twisted Renegade Defeated</header>
+				</achievement>
+				<achievement name="ACH_TWISTED_REN_ENGINEER">
+					<name>htaO laitircopyH</name>
+					<description>Defeat the Twisted Engineer B Renegade and get the Drone Booster MK II.</description>
+					<icon>renegade_engineer_b</icon>
+					<header>Twisted Renegade Defeated</header>
+				</achievement>
+				<achievement name="ACH_TWISTED_REN_FED">
+					<name>Beam of Justice</name>
+					<description>Defeat the Twisted Fed B Renegade and get the Twisted Ammo Fabricator.</description>
+					<icon>renegade_federation_b</icon>
+					<header>Twisted Renegade Defeated</header>
+				</achievement>
+				<achievement name="ACH_TWISTED_REN_FREEMANTIS">
+					<name>Britannia</name>
+					<description>Defeat the Twisted Free Mantis B Renegade and get the Tea.</description>
+					<icon>renegade_freemantis_b</icon>
+					<header>Twisted Renegade Defeated</header>
+				</achievement>
+				<achievement name="ACH_TWISTED_REN_KESTREL">
+					<name>Gatekeeper</name>
+					<description>Defeat the Twisted Kestrel B Renegade and get Gozer's Fridge.</description>
+					<icon>renegade_kestrel_b</icon>
+					<header>Twisted Renegade Defeated</header>
+				</achievement>
+				<achievement name="ACH_TWISTED_REN_LANIUS">
+					<name>Bacon</name>
+					<description>Defeat the Twisted Lanius B Renegade and get the Scrapmetal Fireheart.</description>
+					<icon>renegade_lanius_b</icon>
+					<header>Twisted Renegade Defeated</header>
+				</achievement>
+				<achievement name="ACH_TWISTED_REN_LEECH">
+					<name>Engines unjammed</name>
+					<description>Defeat the Twisted Leech C Renegade and get the Depression Emitter.</description>
+					<icon>renegade_leech_c</icon>
+					<header>Twisted Renegade Defeated</header>
+				</achievement>
+				<achievement name="ACH_TWISTED_REN_LOSTSUN">
+					<name>Final Hour</name>
+					<description>Defeat the Twisted Lost Sun B Renegade and get the Reality-Bent Reloader.</description>
+					<icon>renegade_lostsun_b</icon>
+					<header>Twisted Renegade Defeated</header>
+				</achievement>
+				<achievement name="ACH_TWISTED_REN_MANTIS">
+					<name>Zerg Rush</name>
+					<description>Defeat the Twisted Hive B Renegade and get the Pheromone Accelerator.</description>
+					<icon>renegade_mantis_b</icon>
+					<header>Twisted Renegade Defeated</header>
+				</achievement>
+				<achievement name="ACH_TWISTED_REN_MONK">
+					<name>Forced Peace</name>
+					<description>Defeat the Twisted Monk B Renegade and get the Aether Ascension Shields.</description>
+					<icon>renegade_monk_b</icon>
+					<header>Twisted Renegade Defeated</header>
+				</achievement>
+				<achievement name="ACH_TWISTED_REN_ORCHID">
+					<name>Fun-Guy</name>
+					<description>Defeat the Twisted Orchid B Renegade and get some friends.</description>
+					<icon>renegade_orchid_b</icon>
+					<header>Twisted Renegade Defeated</header>
+				</achievement>
+				<achievement name="ACH_TWISTED_REN_SHELL">
+					<name>Quarantine</name>
+					<description>Defeat the Twisted Shell C Renegade and get the Combustion Virus Bioweapon.</description>
+					<icon>renegade_shell_c</icon>
+					<header>Twisted Renegade Defeated</header>
+				</achievement>
+				<achievement name="ACH_TWISTED_REN_ROCK">
+					<name>RESIST</name>
+					<description>Defeat the Twisted Rock C Renegade and get the Rockmen Relic of Freedom.</description>
+					<icon>renegade_rock_c</icon>
+					<header>Twisted Renegade Defeated</header>
+				</achievement>
+				<achievement name="ACH_TWISTED_REN_SEPARATIST">
+					<name>Symbolism</name>
+					<description>Defeat the Twisted Separatist B Renegade and get the Magatama.</description>
+					<icon>renegade_separatist_b</icon>
+					<header>Twisted Renegade Defeated</header>
+				</achievement>
+				<achievement name="ACH_TWISTED_REN_SLUG">
+					<name>Purger Purged</name>
+					<description>Defeat the Twisted Slug C Renegade and get the Malboro Quasar.</description>
+					<icon>renegade_slug_c</icon>
+					<header>Twisted Renegade Defeated</header>
+				</achievement>
+				<achievement name="ACH_TWISTED_REN_STEALTH">
+					<name>CEn't</name>
+					<description>Defeat the Twisted Stealth B Renegade and get the and get the and get the and get the and get the and get the and get the and get the and get the and get the and get the and get the and get the and get the and get the and get the and get the and get the and get the and get the and get the and get the and get the and get the and get the and get the and get the and get the-...shutting down.</description>
+					<icon>renegade_stealth_b</icon>
+					<header>Twisted Renegade Defeated</header>
+				</achievement>
+				<achievement name="ACH_TWISTED_REN_TUCO">
+					<name>No more deaths</name>
+					<description>Defeat the Twisted Tuco B Renegade and get the Golden Tuco.</description>
+					<icon>renegade_tuco_b</icon>
+					<header>Twisted Renegade Defeated</header>
+				</achievement>
+				<achievement name="ACH_TWISTED_REN_ZOLTAN">
+					<name>Freebies averted</name>
+					<description>Defeat the Twisted Zoltan C Renegade and get the Limit Release.</description>
+					<icon>renegade_zoltan_c</icon>
+					<header>Twisted Renegade Defeated</header>
+				</achievement>
+				<achievement name="ACH_NOTIME">
+					<name>Ain't got time for that</name>
+					<description>Don't waste time on the Twisted Kestrel B.</description>
+					<icon>renegade_lostsun_b</icon>
+					<header>no time</header>
+				</achievement>
+				<achievement name="ACH_FREESTUFF">
+					<name>Free stuff!</name>
+					<description>Accept the proposal of the Twisted  Zoltan C Renegade and get Free Stuff.</description>
+					<icon>renegade_zoltan_c</icon>
+					<header>woah, free stuff?!</header>
+				</achievement>
+			</section>
+		</mod-append:page>
