@@ -19955,8 +19955,8 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 
 <FTL>
 	<mod:findLike type="achievements" limit="1">
-		<mod-apend:page>
-			<section text="Impossible Task" hidden="true">
+		<mod-append:page>
+			<section text="Impossible Task" hidden="false">
 				<achievement name="ACH_TWISTED_REN_CLAN">
 					<name>Organs Please!</name>
 					<description>Defeat the Twisted Guild B Renegade and get the Mind Clouder.</description>
@@ -20097,3 +20097,4 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</achievement>
 			</section>
 		</mod-append:page>
+	</mod:findLike>
