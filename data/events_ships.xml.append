@@ -66,6 +66,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_CLAN1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_CLAN</achievement>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_CLAN" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_3" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>-->
@@ -144,6 +145,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_CLAN1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_CLAN</achievement>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_CLAN" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_3" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>-->
@@ -256,6 +258,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_DUSK1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_DUSK</achievement>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_3" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>-->
@@ -332,6 +335,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_DUSK1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_DUSK</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_3" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
@@ -431,6 +435,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_ENGI1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_ENGI</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ENGI" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ENGI_2" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ENGI_3" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
@@ -510,6 +515,7 @@
 		</item_modify>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<hiddenAug>ACH_FM_BOSS_ENGI1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_ENGI</achievement>
 		<choice hidden="true" req="HID_UPG_DRONE_COOLDOWN" max_group="1" blue="false">
 			<text>You already have Drone Booster "Kai".</text>
 			<event load="OPTION_INVALID"/>
@@ -619,6 +625,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_FREE1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_FREEMANTIS</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS_2" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS_3" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
@@ -695,6 +702,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_FREE1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_FREEMANTIS</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS_2" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS_3" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
@@ -804,6 +812,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_LOSTSUN1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_LOSTSUN</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN_2" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN_3" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
@@ -881,6 +890,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_LOSTSUN1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_LOSTSUN</achievement>
 
 		<choice hidden="true" req="HID_REALITY_RELOADER" max_group="1" blue="false">
 			<text>You already have Reality Reloader.</text>
@@ -1107,6 +1117,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_MANTIS1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_MANTIS</achievement>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_HIVE" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_HIVE_2" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_HIVE_3" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
@@ -1185,6 +1196,7 @@
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking.  You also locate a strange pheromone sack with an otherworldly glow.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<hiddenAug>ACH_FM_BOSS_MANTIS1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_MANTIS</achievement>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
@@ -1291,6 +1303,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_MONK1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_MONK</achievement>
 
 		<choice hidden="true" req="HID_FM_UPG_AETHER_SHIELDS" max_group="1" blue="false">
 			<text>You already have Aether Ascension Shields.</text>
@@ -1366,6 +1379,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_MONK1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_MONK</achievement>
 
 		<choice hidden="true" req="HID_FM_UPG_AETHER_SHIELDS" max_group="1" blue="false">
 			<text>You already have Aether Ascension Shields.</text>
@@ -1480,6 +1494,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_R1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_ROCK</achievement>
 
 		<choice hidden="true" req="HID_FREEDOM_ROCK" max_group="1" blue="false">
 			<text>You already have Rockmen Relic of Freedom.</text>
@@ -1555,6 +1570,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_R1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_ROCK</achievement>
 
 		<choice hidden="true" req="HID_FREEDOM_ROCK" max_group="1" blue="false">
 			<text>You already have Rockmen Relic of Freedom.</text>
@@ -1667,6 +1683,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_SEPA1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_SEPARATIST</achievement>
 
 		<choice hidden="true" req="AUG_MAGATAMA" max_group="1" blue="false">
 			<text>You already have Magatama.</text>
@@ -1742,6 +1759,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_SEPA1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_SEPARATIST</achievement>
 
 		<choice hidden="true" req="AUG_MAGATAMA" max_group="1" blue="false">
 			<text>You already have Magatama.</text>
@@ -1889,6 +1907,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_SLUG1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_SLUG</achievement>
 
 		<choice hidden="true" req="HID_MALBORO_RED" max_group="1" blue="false">
 			<text>You already have Malboro Quasar.</text>
@@ -1964,6 +1983,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_SLUG1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_SLUG</achievement>
 
 		<choice hidden="true" req="HID_MALBORO_RED" max_group="1" blue="false">
 			<text>You already have Malboro Quasar.</text>
@@ -2080,6 +2100,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_STEALTH1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_STEALTH</achievement>
 		<weapon name="CRASH_LASER"/>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -2100,6 +2121,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_STEALTH1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_STEALTH</achievement>
 		<weapon name="CRASH_LASER"/>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -2128,6 +2150,7 @@
 						</item_modify>
 						<text>"Thank you Federation Vessel. We will also be confiscating this...for galactic safety of course." They appear to have hacked into your systems and removed the C.U.R.A. Drive Hacker!</text>
 						<remove name="CURA_MVBOSS_SPAWNER"/>
+						<achievement silent="false">ACH_FREESTUFF</achievement>
 
 						<choice hidden="true">
 							<text>Wait that wasn't part of the deal!</text>
@@ -2164,6 +2187,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_ZOLTAN1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_ZOLTAN</achievement>
 
 		<choice hidden="true" req="HID_LAB_ZOLTAN_LIMIT_RELEASE" max_group="1" blue="false">
 			<text>You already have Limit Release.</text>
@@ -2239,6 +2263,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_ZOLTAN1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_ZOLTAN</achievement>
 
 		<choice hidden="true" req="HID_LAB_ZOLTAN_LIMIT_RELEASE" max_group="1" blue="false">
 			<text>You already have Limit Release.</text>
@@ -2342,6 +2367,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_SHELL1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_SHELL</achievement>
 
 		<choice hidden="true" req="HID_COMBUSTION_VIRUS" max_group="1" blue="false">
 			<text>You already have Combustion Bioweapon.</text>
@@ -2491,6 +2517,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_ENGINEER1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_ENGINEER</achievement>
 
 
 		<choice hidden="true" req="HID_UPG_DRONE_SPEED_2" max_group="1" blue="false">
@@ -2569,6 +2596,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_ENGINEER1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_ENGINEER</achievement>
 
 		<choice hidden="true" req="HID_UPG_DRONE_SPEED_2" max_group="1" blue="false">
 			<text>You already have Drone Boost MK II.</text>
@@ -2669,6 +2697,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_LANIUS1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_LANIUS</achievement>
 
 		<choice hidden="true" req="HID_FIRE_HEART" max_group="1" blue="false">
 			<text>You already have Scrapmetal Fireheart.</text>
@@ -2744,6 +2773,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_LANIUS1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_LANIUS</achievement>
 
 		<choice hidden="true" req="HID_FIRE_HEART" max_group="1" blue="false">
 			<text>You already have Scrapmetal Fireheart.</text>
@@ -2838,6 +2868,7 @@
 								<text>The enemy seems more depressed, their weapons go entirely offline and their ability to jam your systems is gone. Poor guy.</text>
 								<ship hostile="true"/>
 								<playMusic>Twisted</playMusic>
+								<achievement silent="false">ACH_NOTIME</achievement>
 								<choice hidden="true">
 									<text>Continue...</text>
 									<event load="COMBAT_CHECK"/>
@@ -2914,6 +2945,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_KES1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_KESTREL</achievement>
 
 		<choice hidden="true" req="HID_GOZER_FRIDGE" max_group="1" blue="false">
 			<text>You already have Gozer's Fridge.</text>
@@ -2993,6 +3025,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_KES1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_KESTREL</achievement>
 
 		<choice hidden="true" req="HID_GOZER_FRIDGE" max_group="1" blue="false">
 			<text>You already have Gozer's Fridge.</text>
@@ -3127,6 +3160,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_FED1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_FED</achievement>
 
 		<choice hidden="true" req="HID_UPG_WEAPONS_REPLICATOR_2" max_group="1" blue="false">
 			<text>You already have Twisted Ammo Fabricator.</text>
@@ -3202,6 +3236,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_FED1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_FED</achievement>
 
 		<choice hidden="true" req="HID_UPG_WEAPONS_REPLICATOR_2" max_group="1" blue="false">
 			<text>You already have Twisted Ammo Fabricator.</text>
@@ -3331,6 +3366,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_ORCHID1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_ORCHID</achievement>
 		<crewMember amount="4" class="orchid_fire"/>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -3346,6 +3382,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_ORCHID1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_ORCHID</achievement>
 		<crewMember amount="4" class="orchid_fire"/>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -3395,6 +3432,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_CRYSTAL1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_CRYSTAL</achievement>
 		<augment name="TWISTED_CRYSTAL_ARMOR_50"/>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -3412,6 +3450,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_CRYSTAL1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_CRYSTAL</achievement>
 		<augment name="TWISTED_CRYSTAL_ARMOR_50"/>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -3466,6 +3505,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_TUCO1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_TUCO</achievement>
 
 
 		<choice hidden="true" req="HID_GOLDEN_TUCO" max_group="1" blue="false">
@@ -3542,6 +3582,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_TUCO1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_TUCO</achievement>
 
 		<choice hidden="true" req="HID_GOLDEN_TUCO" max_group="1" blue="false">
 			<text>You already have Golden Tuco.</text>
@@ -3691,6 +3732,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_LEECH1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_LEECH</achievement>
 
 
 		<choice hidden="true" req="HID_DEPRESSION_EMITTER" max_group="1" blue="false">
@@ -3767,6 +3809,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_LEECH1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_LEECH</achievement>
 
 		<choice hidden="true" req="HID_DEPRESSION_EMITTER" max_group="1" blue="false">
 			<text>You already have Depression Emitter.</text>
@@ -3898,6 +3941,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_CLAN1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_CLAN</achievement>
 		<choice hidden="true" req="HID_BRAIN_DONATION" max_group="1" blue="false">
 			<text>You already have Mind Clouder.</text>
 			<event load="OPTION_INVALID"/>
@@ -3973,6 +4017,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_CLAN1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_CLAN</achievement>
 
 		<choice hidden="true" req="HID_BRAIN_DONATION" max_group="1" blue="false">
 			<text>You already have Mind Clouder.</text>
@@ -4085,6 +4130,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_DUSK1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_DUSK</achievement>
 
 		<choice hidden="true" req="HID_DEATH_VESTS2" max_group="1" blue="false">
 			<text>You already have Twilight Vests.</text>
@@ -4159,6 +4205,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_DUSK1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_DUSK</achievement>
 
 		<choice hidden="true" req="HID_DEATH_VESTS2" max_group="1" blue="false">
 			<text>You already have Twilight Vests.</text>
@@ -4256,6 +4303,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_ENGI1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_ENGI</achievement>
 
 		<choice hidden="true" req="HID_UPG_DRONE_COOLDOWN" max_group="1" blue="false">
 			<text>You already have Drone Booster "Kai".</text>
@@ -4330,6 +4378,7 @@
 		</item_modify>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<hiddenAug>ACH_FM_BOSS_ENGI1</hiddenAug>
+		<achievement silent="false">ACH_TWISTED_REN_ENGI
 		<choice hidden="true" req="HID_UPG_DRONE_COOLDOWN" max_group="1" blue="false">
 			<text>You already have Drone Booster "Kai".</text>
 			<event load="OPTION_INVALID"/>
