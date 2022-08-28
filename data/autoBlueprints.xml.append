@@ -189,8 +189,8 @@
 		<drone name="COMBAT_2_LASER_GUNBOM" />
 		<drone name="LOOT_ENGI_2" />
 		<drone name="ION_1_AMP3_ENEMY" />
-		<drone name="LOOT_LANIUS_2" />
-		<drone name="LOOT_AUTO_2" />
+		<drone name="LOOT_AUG_1_AMP2" />
+		<drone name="LOOT_AUTO_1_BEAM" />
 		<drone name="DEFENSE_3_ENEMY" />
 	</droneList>
 	<health amount="18" />
@@ -1042,7 +1042,7 @@
 	<name>LOOT_KNIGHT_1</name>
 	<name>LOOT_SHELL_1</name>
 	<name>LOOT_CULTIST_1</name>
-	<name>LOOT_AUG_1</name>
+	<name>LOOT_LANIUS_1</name>
 	<name>LOOT_MATH_1</name>
 	<name>LOOT_MATH_7</name>
 	<name>BEAM_BATTERY</name>

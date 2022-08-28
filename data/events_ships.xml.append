@@ -4378,7 +4378,7 @@
 		</item_modify>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<hiddenAug>ACH_FM_BOSS_ENGI1</hiddenAug>
-		<achievement silent="false">ACH_TWISTED_REN_ENGI
+		<achievement silent="false">ACH_TWISTED_REN_ENGI</achievement>
 		<choice hidden="true" req="HID_UPG_DRONE_COOLDOWN" max_group="1" blue="false">
 			<text>You already have Drone Booster "Kai".</text>
 			<event load="OPTION_INVALID"/>

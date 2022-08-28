@@ -283,7 +283,7 @@
 		<droneSlots>4</droneSlots>
 		<weaponList missiles="9" count="0" />
 		<droneList drones="20" count="4">
-			<drone name="LOOT_AUTO_1" />
+			<drone name="LOOT_AUTO_1_LASER" />
 			<drone name="HELLRAISER_HULL_PLAYER" />
 		</droneList>
 		<health amount="40" />
@@ -439,7 +439,7 @@
 			<weapon name="LIST_GUNBOM" />
 		</weaponList>
 		<droneList drones="20" count="4">
-			<drone name="LOOT_AUTO_1" />
+			<drone name="LOOT_AUTO_1_LASER" />
 			<drone name="DEFENSE_1" />
 		</droneList>
 		<health amount="10" />

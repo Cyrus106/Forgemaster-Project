@@ -20122,6 +20122,8 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<description>Defeat the Twisted Leech C Renegade and get the Depression Emitter.</description>
 					<icon>renegade_leech_c</icon>
 					<header>Twisted Renegade Defeated</header>
+					<secretDescription>???</secretDescription>
+					<lockImage>ach_locked</lockImage>
 				</achievement>
 				<achievement name="ACH_NOTIME">
 					<name>Ain't got time for that</name>

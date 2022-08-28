@@ -39388,14 +39388,11 @@
 
 	<event name="FM_FS_APARTMENT_129A_LISTEN_CREW"> <!--  APARTMENT 129A LISTEN CREW TEXT LIST -->
 		<text load="TEXT_129A_LISTEN_CREW"/>
-
 		<choice hidden="false" req="pilot" lvl="1" max_group="3" blue="false">
 			<text>Continue...</text>
 			<event load="FM_FS_APARTMENT_129A_LISTEN_LOAD"/>
 		</choice>
 	</event>
-
-
 
 	<textList name="TEXT_129A_LISTEN_CREW" ignoreUnique="true"> <!-- RANDOM DIALOGUE HERE! HE picks one of these everytime you meet him via the phone. DOES NOT load during FORGEMASTER_FIRST_MEETING  You can make AS MANY as you want!!! This goes for any of the text prompts. You can replace them with a <textList> -->
 		<text>One of your crew puts their ear to the door. They swear they can hear a lullaby. Strange...</text>

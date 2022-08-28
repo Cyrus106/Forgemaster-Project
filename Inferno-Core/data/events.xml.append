@@ -20,6 +20,9 @@
 	<event name="ADDON_TCC_INFO">
 		<text id="info_addon_tcc"/>
 	</event>
+	<event name="ADDON_FR_INFO">
+		<text id="info_addon_fr"/>
+	</event>
 	<mod:findName type="event" name="START_BEACON_EXPLAIN_LOAD">
 		<mod-append:eventButton name="ADDON_FMCORE">
       <event load="ADDON_FMCORE_INFO"/>
@@ -53,6 +56,14 @@
       <jumpClear>false</jumpClear>
       <noDanger>false</noDanger>
     </mod-append:eventButton>
+		<mod-append:eventButton name="ADDON_FR">
+      <event load="ADDON_FR_INFO"/>
+      <image border="0">addons/fr</image>
+      <customLocation x="235" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
+      <tooltip id="addon_hover_fr"/>
+      <jumpClear>false</jumpClear>
+      <noDanger>false</noDanger>
+    </mod-append:eventButton>
 	</mod:findName>
 	<event name="FMCORE_RESET_BUTTONS">
 		<clearEventButton name="ADDON_TRC"/>
@@ -62,6 +73,7 @@
 		<clearEventButton name="ADDON_FORGEMASTER"/>
 		<clearEventButton name="ADDON_GB"/>
 		<clearEventButton name="ADDON_TCC"/>
+		<clearEventButton name="ADDON_FR"/>
 		<loadEvent>FM_CORE_RESET_BUTTONS_2</loadEvent>
 	</event>
 	<event name="FM_CORE_RESET_BUTTONS_2">
