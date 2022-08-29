@@ -6313,7 +6313,7 @@
 			<event>
 				<text>Proceed with crafting?</text>
 				<drone name="FM_MFK_KESTREL_DRONE"/>
-				<removeItem>LASER_LIGHT_1</removeItem>
+				<removeItem>LASER_LIGHT</removeItem>
 				<queueEvent>FM_REMOVE_COMBAT_1</queueEvent><!--Removes one Combat I drone of ANY kind (toggle mode)-->
 				<queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
 			</event>
