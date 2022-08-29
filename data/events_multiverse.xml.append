@@ -6308,7 +6308,7 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_MFK_KESTREL_DRONE">
 		<checkCargo/>
 		<text>Currently viewing the MFK Kestrel Combat Drone.[Cost: 0~].</text>
-		<choice hidden="false" req="FM_KESTREL_DRONE_LIST" blue="false">
+		<choice hidden="false" req="FM_MFK_KESTREL_DRONE_LIST" blue="false">
 			<text>Craft the MFK Kestrel Drone.[Cost: 0~]</text>
 			<event>
 				<text>Proceed with crafting?</text>

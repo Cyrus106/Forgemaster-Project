@@ -3897,7 +3897,7 @@
   <event name="STORAGE_CHECK_CREATE_FM_MFK_KESTREL_DRONE">
 		<checkCargo/>
 		<text>Currently viewing the MFK Kestrel Combat Drone.[Cost: 0~].</text>
-		<choice hidden="false" req="FM_KESTREL_DRONE_LIST" blue="false">
+		<choice hidden="false" req="FM_MFK_KESTREL_DRONE_LIST" blue="false">
 			<text>Craft the MFK Kestrel Drone.[Cost: 0~]</text>
 			<event>
 				<text>Proceed with crafting?</text>
@@ -3914,7 +3914,7 @@
 	</event>
 
   <event name="STORAGE_CHECK_CREATE_FM_MFK_PICKET_DRONE">
-		<checkCargo/>
+    <checkCargo/>
 		<text>Currently viewing the MFK Picket Teleporter Relay.[Cost: 0~].</text>
 		<choice hidden="false" req="FM_MFK_PICKET_DRONE_LIST" blue="false">
 			<text>Craft the MFK Picket Drone.[Cost: 0~]</text>
@@ -3930,7 +3930,7 @@
 			<text>Nevermind.</text>
 			<event load="STORAGE_CHECK_CREATE_DRONES_COMBAT_LOAD"/>
 		</choice>
-	</event>
+  </event>
 
   <event name="STORAGE_CHECK_CREATE_FM_SIREN_DRONE">
 		<checkCargo/>
