@@ -1596,7 +1596,7 @@
 
     <choice req="FM_MFK_KESTREL_DRONE_LIST" lvl="1" blue="false" hidden="true">
 			<text>Install the Light Laser MK I into the Combat Drone MK I's chassis to craft the MFK Kestrel Combat Drone.</text>
-			<event load="STORAGE_CHECK_CREATE_FM_KESTREL_DRONE"/>
+			<event load="STORAGE_CHECK_CREATE_FM_MFK_KESTREL_DRONE"/>
 		</choice>
 
 		<choice req="FM_MFK_KESTREL_DRONE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
