@@ -12828,7 +12828,7 @@
 
 				<dangerRating>0.1</dangerRating><!--Crew below 10% health will run away-->
 				<roomAnim renderLayer="1">
-					<anim animType="default" animBorder="2">nothing</roomAnim>                <!-- (animType can be default, stretch, random, or center, animBorder controls spawning margins)-->
+					<anim animType="default" animBorder="2">nothing</anim>                <!-- (animType can be default, stretch, random, or center, animBorder controls spawning margins)-->
 					<tileAnim>gas_twisted_1x1</tileAnim>                                               <!--(spawn this animation on each tile)-->
 				</roomAnim>
 			</statBoost>

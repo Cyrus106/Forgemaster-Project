@@ -1,61 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 
-<!--Copyright (c) 2012 by Subset Games. All rights reserved.-->
+
+
 <img x="-118" y="-128" w="600" h="606" />
 <offsets>
 	<floor x="112" y="122" />
 	<cloak x="18" y="17" />
 </offsets>
 <weaponMounts>
-	<mount x="460" y="178" rotate="true" mirror="true" gib="1" slide="up" />
-	<mount x="460" y="428" rotate="true" mirror="false" gib="1" slide="down" />
-	<mount x="425" y="135" rotate="true" mirror="true" gib="2" slide="right" />
-	<mount x="425" y="472" rotate="true" mirror="false" gib="3" slide="right" />
-	<mount x="468" y="309" rotate="true" mirror="true" gib="1" slide="no" />
-	<mount x="468" y="309" rotate="true" mirror="true" gib="1" slide="no" />
-	<mount x="468" y="309" rotate="true" mirror="true" gib="1" slide="no" />
-	<mount x="468" y="309" rotate="true" mirror="true" gib="1" slide="no" />
-	<mount x="468" y="309" rotate="true" mirror="true" gib="1" slide="no" />
-	<mount x="468" y="309" rotate="true" mirror="true" gib="1" slide="no" />
-	<mount x="468" y="309" rotate="true" mirror="true" gib="1" slide="no" />
-	<mount x="468" y="309" rotate="true" mirror="true" gib="1" slide="no" />
-	<mount x="468" y="309" rotate="true" mirror="true" gib="1" slide="no" />
-	<mount x="468" y="309" rotate="true" mirror="true" gib="1" slide="no" />
+	<mount x="460" y="178" rotate="true" mirror="true" gib="3" slide="up" />
+	<mount x="460" y="428" rotate="true" mirror="false" gib="2" slide="down" />
+	<mount x="425" y="135" rotate="true" mirror="true" gib="3" slide="right" />
+	<mount x="425" y="472" rotate="true" mirror="false" gib="2" slide="right" />
+	<mount x="468" y="309" rotate="true" mirror="true" gib="2" slide="no" />
+	<mount x="468" y="309" rotate="true" mirror="true" gib="2" slide="no" />
+	<mount x="468" y="309" rotate="true" mirror="true" gib="2" slide="no" />
+	<mount x="468" y="309" rotate="true" mirror="true" gib="2" slide="no" />
+	<mount x="468" y="309" rotate="true" mirror="true" gib="2" slide="no" />
+	<mount x="468" y="309" rotate="true" mirror="true" gib="2" slide="no" />
+	<mount x="468" y="309" rotate="true" mirror="true" gib="2" slide="no" />
+	<mount x="468" y="309" rotate="true" mirror="true" gib="2" slide="no" />
+	<mount x="468" y="309" rotate="true" mirror="true" gib="2" slide="no" />
+	<mount x="468" y="309" rotate="true" mirror="true" gib="2" slide="no" />
 </weaponMounts>
 <explosion>
-	<gib1>
-		<velocity min="0.54" max="0.88" />
-		<direction min="257" max="298" />
-		<angular min="-1.09" max="1.09" />
-		<x>370</x>
-		<y>176</y>
-	</gib1>
-	<gib2>
-		<velocity min="0.60" max="0.92" />
-		<direction min="-82" max="0" />
-		<angular min="-1.26" max="1.26" />
-		<x>247</x>
-		<y>24</y>
-	</gib2>
-	<gib3>
-		<velocity min="0.62" max="0.91" />
-		<direction min="162" max="258" />
-		<angular min="-0.88" max="0.88" />
-		<x>247</x>
-		<y>296</y>
-	</gib3>
-	<gib4>
-		<velocity min="0.49" max="0.76" />
-		<direction min="26" max="96" />
-		<angular min="-1.45" max="1.45" />
-		<x>27</x>
-		<y>74</y>
-	</gib4>
-	<gib5>
-		<velocity min="0.56" max="0.79" />
-		<direction min="97" max="192" />
-		<angular min="-1.39" max="1.39" />
-		<x>27</x>
-		<y>320</y>
-	</gib5>
-</explosion>
+	<gib1><velocity min="0.17563763967472348" max="0.5854587989157449" /><direction min="178" max="194" /><angular min="-0.919309398251824" max="0.919309398251824" /><x>221</x><y>280</y></gib1><gib2><velocity min="0.2863663066834383" max="0.9545543556114611" /><direction min="234" max="250" /><angular min="-1.0446131746357479" max="1.0446131746357479" /><x>350</x><y>277</y></gib2><gib3><velocity min="0.15587486751821325" max="0.5195828917273775" /><direction min="301" max="317" /><angular min="-0.6518966267960966" max="0.6518966267960966" /><x>275</x><y>65</y></gib3><gib4><velocity min="0.19327818169973454" max="0.6442606056657818" /><direction min="35" max="51" /><angular min="-0.6612283071807128" max="0.6612283071807128" /><x>26</x><y>24</y></gib4><gib5><velocity min="0.3380395818177883" max="1.1267986060592945" /><direction min="120" max="136" /><angular min="-1.1093096234309623" max="1.1093096234309623" /><x>26</x><y>325</y></gib5></explosion>

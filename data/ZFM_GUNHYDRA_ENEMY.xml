@@ -2,21 +2,17 @@
 
 
 
+
 <img x="-105" y="-69" w="423" h="638" />
 <offsets>
 	<floor x="211" y="319" />
 	<cloak x="26" y="15" />
 </offsets>
 <weaponMounts>
-	<mount x="67" y="430" rotate="false" mirror="false" gib="3" slide="up" />
+	<mount x="67" y="430" rotate="false" mirror="false" gib="1" slide="up" />
 </weaponMounts>
 <explosion>
-	<gib1><velocity min="0.10883479062995803" max="0.36278263543319345" /><direction min="341" max="381" /><angular min="-0.7" max="0.7" /><x>66</x><y>2</y></gib1>
-	<gib2><velocity min="0.1" max="0.1" /><direction min="308" max="348" /><angular min="-0.7" max="0.7" /><x>100</x><y>12</y></gib2>
-	<gib3><velocity min="0.1" max="0.1" /><direction min="132" max="172" /><angular min="-0.7" max="0.7" /><x>1</x><y>157</y></gib3>
-	<gib4><velocity min="0.1" max="0.1" /><direction min="159" max="199" /><angular min="-0.7" max="0.7" /><x>1</x><y>220</y></gib4>
-	<gib5><velocity min="0.11348508395895064" max="0.37828361319650217" /><direction min="159" max="199" /><angular min="-0.7" max="0.7" /><x>1</x><y>428</y></gib5>
-</explosion>
+	<gib1><velocity min="0.1" max="0.1624317630393605" /><direction min="165" max="181" /><angular min="-0.25689703002610964" max="0.25689703002610964" /><x>6</x><y>239</y></gib1><gib2><velocity min="0.1" max="0.22084879151658607" /><direction min="107" max="123" /><angular min="-0.6506795715220611" max="0.6506795715220611" /><x>28</x><y>232</y></gib2><gib3><velocity min="0.13994475462911776" max="0.4664825154303926" /><direction min="245" max="261" /><angular min="-1.0686265414639666" max="1.0686265414639666" /><x>210</x><y>224</y></gib3><gib4><velocity min="0.1961116272235485" max="0.653705424078495" /><direction min="-1" max="15" /><angular min="-0.6432134831460673" max="0.6432134831460673" /><x>71</x><y>12</y></gib4><gib5><velocity min="0.25078663826513564" max="0.8359554608837856" /><direction min="191" max="207" /><angular min="-0.7608207813129279" max="0.7608207813129279" /><x>165</x><y>385</y></gib5></explosion>
 <thrusters sync="true">
     <thruster x="42" y="570">mu_kestrel</thruster>
     <thruster x="309" y="570">mu_kestrel</thruster>

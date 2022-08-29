@@ -1,54 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 
-<!--Copyright (c) 2012 by Subset Games. All rights reserved.-->
+
+
 <img x="-83" y="-90" w="587" h="529" />
 <offsets>
 	<floor x="77" y="84" />
 	<cloak x="-25" y="-25" />
 </offsets>
 <weaponMounts>
-	<mount x="452" y="455" rotate="true" mirror="false" gib="3" slide="right" />
-	<mount x="449" y="75" rotate="true" mirror="true" gib="2" slide="right" />
-	<mount x="498" y="218" rotate="true" mirror="true" gib="1" slide="up" />
-	<mount x="497" y="309" rotate="true" mirror="false" gib="1" slide="down" />
-	<mount x="587" y="261" rotate="true" mirror="false" gib="1" slide="no" />
-	<mount x="581" y="270" rotate="true" mirror="true" gib="1" slide="no" />
+	<mount x="452" y="455" rotate="true" mirror="false" gib="1" slide="right" />
+	<mount x="449" y="75" rotate="true" mirror="true" gib="4" slide="right" />
+	<mount x="498" y="218" rotate="true" mirror="true" gib="2" slide="up" />
+	<mount x="497" y="309" rotate="true" mirror="false" gib="2" slide="down" />
+	<mount x="587" y="261" rotate="true" mirror="false" gib="2" slide="no" />
+	<mount x="581" y="270" rotate="true" mirror="true" gib="2" slide="no" />
 </weaponMounts>
 <explosion>
-	<gib1>
-		<velocity min="0.62" max="0.93" />
-		<direction min="242" max="299" />
-		<angular min="-0.75" max="0.75" />
-		<x>226</x>
-		<y>194</y>
-	</gib1>
-	<gib2>
-		<velocity min="0.48" max="0.72" />
-		<direction min="-44" max="13" />
-		<angular min="-0.72" max="0.72" />
-		<x>163</x>
-		<y>0</y>
-	</gib2>
-	<gib3>
-		<velocity min="0.47" max="0.78" />
-		<direction min="168" max="244" />
-		<angular min="-1.36" max="1.36" />
-		<x>165</x>
-		<y>317</y>
-	</gib3>
-	<gib4>
-		<velocity min="0.45" max="0.64" />
-		<direction min="92" max="169" />
-		<angular min="-1.16" max="1.16" />
-		<x>0</x>
-		<y>180</y>
-	</gib4>
-	<gib5>
-		<velocity min="0.60" max="0.78" />
-		<direction min="-4" max="102" />
-		<angular min="-0.77" max="0.77" />
-		<x>0</x>
-		<y>0</y>
-	</gib5>
-</explosion>
+	<gib1><velocity min="0.1" max="0.24327739064790155" /><direction min="173" max="189" /><angular min="-0.4397364002346705" max="0.4397364002346705" /><x>141</x><y>206</y></gib1><gib2><velocity min="0.1" max="0.17144077762144536" /><direction min="318" max="334" /><angular min="-0.2856434550639315" max="0.2856434550639315" /><x>125</x><y>6</y></gib2><gib3><velocity min="0.17769854192436607" max="0.5923284730812203" /><direction min="55" max="71" /><angular min="-0.5451050757347777" max="0.5451050757347777" /><x>0</x><y>1</y></gib3><gib4><velocity min="0.1" max="0.2051072312289123" /><direction min="-12" max="4" /><angular min="-0.4214318120128737" max="0.4214318120128737" /><x>152</x><y>0</y></gib4><gib5><velocity min="0.3209165258927772" max="1.069721752975924" /><direction min="125" max="141" /><angular min="-0.8483903828890363" max="0.8483903828890363" /><x>0</x><y>316</y></gib5></explosion>
 
