@@ -135,5 +135,13 @@
       <jumpClear>false</jumpClear>
       <noDanger>false</noDanger>
     </eventButton>
+		<eventButton name="ADDON_FR">
+      <event load="ADDON_FR_INFO"/>
+      <image border="0">addons/fr</image>
+      <customLocation x="235" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
+      <tooltip id="addon_hover_fr"/>
+      <jumpClear>false</jumpClear>
+      <noDanger>false</noDanger>
+    </eventButton>
 	</event>
 </FTL>
