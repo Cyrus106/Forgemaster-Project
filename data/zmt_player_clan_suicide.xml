@@ -1,17 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 
-<!--Copyright (c) 2012 by Subset Games. All rights reserved.-->
+
+
 <img x="-122" y="-54" w="442" h="563" />
 <offsets>
 	<floor x="116" y="48" />
 	<cloak x="-25" y="-25" />
 </offsets>
 <weaponMounts>
-	<mount x="426" y="210" rotate="true" mirror="true" gib="-1" slide="right" />
-	<mount x="426" y="354" rotate="true" mirror="false" gib="-1" slide="right" />
-	<mount x="384" y="165" rotate="true" mirror="true" gib="-1" slide="right" />
-	<mount x="384" y="398" rotate="true" mirror="false" gib="-1" slide="right" />
-	<mount x="135" y="35" rotate="true" mirror="false" gib="-1" slide="right" />
-	<mount x="135" y="529" rotate="true" mirror="true" gib="-1" slide="right" />
+	<mount x="426" y="210" rotate="true" mirror="true" gib="3" slide="right" />
+	<mount x="426" y="354" rotate="true" mirror="false" gib="1" slide="right" />
+	<mount x="384" y="165" rotate="true" mirror="true" gib="3" slide="right" />
+	<mount x="384" y="398" rotate="true" mirror="false" gib="1" slide="right" />
+	<mount x="135" y="35" rotate="true" mirror="false" gib="4" slide="right" />
+	<mount x="135" y="529" rotate="true" mirror="true" gib="5" slide="right" />
 </weaponMounts>
-<explosion />
+<explosion><gib1><velocity min="0.16189243196007222" max="0.5396414398669074" /><direction min="238" max="254" /><angular min="-0.7541604069704513" max="0.7541604069704513" /><x>220</x><y>226</y></gib1><gib2><velocity min="0.1" max="0.2977827890360355" /><direction min="92" max="108" /><angular min="-0.6752159082099388" max="0.6752159082099388" /><x>0</x><y>207</y></gib2><gib3><velocity min="0.1" max="0.3101522689999259" /><direction min="317" max="333" /><angular min="-0.385782118574624" max="0.385782118574624" /><x>155</x><y>10</y></gib3><gib4><velocity min="0.3225928854688182" max="1.075309618229394" /><direction min="-10" max="6" /><angular min="-0.8486003799873337" max="0.8486003799873337" /><x>80</x><y>0</y></gib4><gib5><velocity min="0.27229550377089556" max="0.9076516792363185" /><direction min="174" max="190" /><angular min="-0.7555342542994079" max="0.7555342542994079" /><x>80</x><y>403</y></gib5></explosion>

@@ -1,17 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 
-<!--Copyright (c) 2012 by Subset Games. All rights reserved.-->
+
+
 <img x="-106" y="-4" w="543" h="308" />
 <offsets>
 	<floor x="100" y="-2" />
 	<cloak x="-25" y="-25" />
 </offsets>
 <weaponMounts>
-	<mount x="469" y="278" rotate="true" mirror="false" gib="-1" slide="down" />
-	<mount x="459" y="54" rotate="true" mirror="true" gib="-1" slide="up" />
-	<mount x="343" y="6" rotate="true" mirror="true" gib="-1" slide="up" />
-	<mount x="510" y="215" rotate="true" mirror="false" gib="-1" slide="down" />
-	<mount x="262" y="301" rotate="true" mirror="false" gib="-1" slide="down" />
+	<mount x="469" y="278" rotate="true" mirror="false" gib="1" slide="down" />
+	<mount x="459" y="54" rotate="true" mirror="true" gib="3" slide="up" />
+	<mount x="343" y="6" rotate="true" mirror="true" gib="3" slide="up" />
+	<mount x="510" y="215" rotate="true" mirror="false" gib="1" slide="down" />
+	<mount x="262" y="301" rotate="true" mirror="false" gib="5" slide="down" />
 </weaponMounts>
-<explosion />
+<explosion><gib1><velocity min="0.3077051946400693" max="1.0256839821335644" /><direction min="244" max="260" /><angular min="-0.825954564695922" max="0.825954564695922" /><x>347</x><y>137</y></gib1><gib2><velocity min="0.17217113997030464" max="0.5739037999010155" /><direction min="87" max="103" /><angular min="-0.4959996610600347" max="0.4959996610600347" /><x>0</x><y>54</y></gib2><gib3><velocity min="0.16094579015603983" max="0.5364859671867994" /><direction min="285" max="301" /><angular min="-0.5716905947846469" max="0.5716905947846469" /><x>293</x><y>2</y></gib3><gib4><velocity min="0.11797743211346426" max="0.3932581070448809" /><direction min="19" max="35" /><angular min="-0.7037619477006312" max="0.7037619477006312" /><x>130</x><y>0</y></gib4><gib5><velocity min="0.1" max="0.2487889652695186" /><direction min="160" max="176" /><angular min="-0.596053154116389" max="0.596053154116389" /><x>139</x><y>121</y></gib5></explosion>
 
