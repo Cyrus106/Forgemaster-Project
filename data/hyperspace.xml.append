@@ -7172,7 +7172,7 @@
 	<crew> <!-- FIRE ORCHID -->
 		<race name="orchid_fire"> <!--ORCHID CREW TYPES-->
 			<fireRepairMultiplier>0.5</fireRepairMultiplier>
-			<fireDamageMultiplier>0</fireDamageMultiplier>
+			<canBurn>false</canBurn>
 			<oxygenChangeSpeed>0.525</oxygenChangeSpeed>
 			<suffocationModifier>0.8</suffocationModifier>
 			<animBase>mantis</animBase>
@@ -9079,57 +9079,10 @@
 			</mod:findLike>
 		</mod:findName>
 		<mod:findName type="race" name="technoroomba"><!--suffocationfix, burnfix-->
-			<mod:findLike type="suffocationModifier">
-				<mod:setValue>1</mod:setValue>
-			</mod:findLike>
 			<mod:findLike type="fireDamageMultiplier">
 				<mod:setValue>1</mod:setValue>
 			</mod:findLike>
 			<mod-append:canBurn>false</mod-append:canBurn>
-		</mod:findName>
-		<mod:findName type="race" name="lanius_augmented"><!--suffocationfix-->
-			<mod:findLike type="suffocationModifier">
-				<mod:setValue>1</mod:setValue>
-			</mod:findLike>
-		</mod:findName>
-		<mod:findName type="race" name="unique_anointed"><!--suffocationfix-->
-			<mod:findLike type="suffocationModifier">
-				<mod:setValue>1</mod:setValue>
-			</mod:findLike>
-		</mod:findName>
-		<mod:findName type="race" name="cognitive"><!--suffocationfix-->
-			<mod:findLike type="suffocationModifier">
-				<mod:setValue>1</mod:setValue>
-			</mod:findLike>
-		</mod:findName>
-		<mod:findName type="race" name="cognitive_automated"><!--suffocationfix-->
-			<mod:findLike type="suffocationModifier">
-				<mod:setValue>1</mod:setValue>
-			</mod:findLike>
-		</mod:findName>
-		<mod:findName type="race" name="cognitive_advanced"><!--suffocationfix, burnfix-->
-			<mod:findLike type="suffocationModifier">
-				<mod:setValue>1</mod:setValue>
-			</mod:findLike>
-			<mod:findLike type="fireDamageMultiplier">
-				<mod:setValue>1</mod:setValue>
-			</mod:findLike>
-		</mod:findName>
-		<mod:findName type="race" name="cognitive_advanced_automated"><!--suffocationfix, burnfix-->
-			<mod:findLike type="suffocationModifier">
-				<mod:setValue>1</mod:setValue>
-			</mod:findLike>
-			<mod:findLike type="fireDamageMultiplier">
-				<mod:setValue>1</mod:setValue>
-			</mod:findLike>
-		</mod:findName>
-		<mod:findName type="race" name="obelisk_royal"><!--suffocationfix, burnfix-->
-			<mod:findLike type="suffocationModifier">
-				<mod:setValue>1</mod:setValue>
-			</mod:findLike>
-			<mod:findLike type="fireDamageMultiplier">
-				<mod:setValue>1</mod:setValue>
-			</mod:findLike>
 		</mod:findName>
 		<!--drones-->
 		<mod:findName type="race" name="divrepair"><!--burnfix-->
@@ -9152,13 +9105,6 @@
 		</mod:findName>
 
 		<mod:findName type="race" name="extinguisher"><!--burnfix-->
-			<mod:findLike type="fireDamageMultiplier">
-				<mod:setValue>1</mod:setValue>
-			</mod:findLike>
-			<mod-append:canBurn>false</mod-append:canBurn>
-		</mod:findName>
-
-		<mod:findName type="race" name="orchid_fire"><!--burnfix-->
 			<mod:findLike type="fireDamageMultiplier">
 				<mod:setValue>1</mod:setValue>
 			</mod:findLike>
