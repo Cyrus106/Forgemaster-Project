@@ -14102,6 +14102,8 @@
 		<short>MFK. Scatter</short>
 		<desc>Fires a barrage of light lasers.</desc>
 		<damage>1</damage>
+		<noSysDamage>true</noSysDamage>
+		<noPersDamage>true</noPersDamage>
 		<shots>1</shots>
 		<accuracyMod>10</accuracyMod>
 		<rarity>0</rarity>
