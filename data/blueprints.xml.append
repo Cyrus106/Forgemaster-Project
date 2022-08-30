@@ -14101,10 +14101,11 @@
 		<title>MFK Kestrel Drone Laser Scatter</title>
 		<short>MFK. Scatter</short>
 		<desc>Fires a barrage of light lasers.</desc>
-		<damage>0</damage>
+		<damage>1</damage>
 		<shots>1</shots>
 		<accuracyMod>10</accuracyMod>
 		<rarity>0</rarity>
+		<breachChance>1</breachChance>
 		<projectiles>
 			<projectile count="4" fake="false">laser_burst</projectile>
 		</projectiles>
