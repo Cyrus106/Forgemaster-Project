@@ -7,7 +7,7 @@
 		<track>crystal</track>
 	</trackList>
 	<startEvent>FM_START_TWISTED</startEvent>
-	<exitBeacon event="FINISH_BEACON" nebulaEvent="FINISH_BEACON_NEBULA"/>
+	<exitBeacon event="FINISH_BEACON" nebulaEvent="FINISH_BEACON_NEBULA" rebelEvent="FINISH_BEACON_FLEET_ELITE"/>>
 	<rebelBeacon event="FLEET_THREAT_LOW" nebulaEvent="FLEET_THREAT_LOW_NEBULA"/>
 	<removeFirstBeaconNebula/>
 	<event name="FM_START_RITUAL" min="22" max="23"/>
