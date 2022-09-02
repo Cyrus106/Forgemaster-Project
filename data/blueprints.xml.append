@@ -2812,6 +2812,7 @@
 		<powerList>
 			<power>Hi, you probably shouldn't be seeing this</power>
 			<power>You should look behind you before it's too late</power>
+			<power>You should look at some bitches, bitch</power>
 		</powerList>
 		<colorList>
 			<layer>
@@ -2821,7 +2822,53 @@
 	</crewBlueprint>
 
 
-
+        <crewBlueprint name="fm_twisted_separatist">
+		<desc>The combination of a Brass Separatist and a Cobalt Separatist, this amalgamation is a combination of both. </desc> 
+		<title>Twisted Separatist</title>  
+		<short>T. Separatist</short> 
+		<cost>50</cost>		  
+		<bp>2</bp>			
+		<rarity>0</rarity>	  
+		<powerList>
+			<power>Combines the powers of both the Cobalt and the Brass Separatists.</power>
+			<power>Active Ability: Split back into a Cobalt and a Brass Separatist.</power>
+		</powerList>
+	</crewBlueprint>
+	
+	<crewBlueprint name="fm_twisted_cobalt">
+		<desc>This warped separatist is highly unstable, but holds unnatural strength strong enough to tear though the hull, causing breaches in the current room.
+		
+		Inherited Separatist Stats: 1.75x Repair speed.</desc> 
+		<title>Cobalt Separatist</title>  
+		<short>C. Separatist</short> 
+		<cost>50</cost>		  
+		<bp>2</bp>			
+		<rarity>0</rarity>	  
+		<powerList>
+			<power>- Cannot suffocate, takes reduced fire damage.</power>
+			<power>- Can teleport anywhere on the current ship.</power>
+			<power>- Active Ability: Rip a breach in the hull of the current room.</power>
+			<power>- Passive Ability: Merge with a Brass Separatist.</power>
+		</powerList>
+	</crewBlueprint>
+	
+	<crewBlueprint name="fm_twisted_brass">
+		<desc>This strange separatist is highly unstable, but holds a heart of passion that at times burns bright enough to spark fires in the current room.
+		
+		Inherited Separatist Stats: 1.75x Repair speed.</desc> 
+		<title>Brass Separatist</title>  
+		<short>B. Separatist</short> 
+		<cost>50</cost>		  
+		<bp>2</bp>			
+		<rarity>0</rarity>	  
+		<powerList>
+			<power>- Cannot burn, takes reduced suffocation damage.</power>
+			<power>- Can teleport anywhere on the current ship.</power>
+			<power>- Active Ability: Spark a fire.</power>
+			<power>- Passive Ability: Merge with a Cobalt Separatist.</power>
+		</powerList>
+	</crewBlueprint>
+	
 
 	<!-- UNUSED CREW
 	<crewBlueprint name="blobpanther">
