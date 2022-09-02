@@ -462,7 +462,384 @@
 	<time>0.25</time>
 </anim>	
 	
+</FTL>
+
+<FTL>
 	
+	<animSheet name="fm_twisted_separatist" w="315" h="455" fw="35" fh="35">people/fm_twisted_separatist_base.png</animSheet>
+<anim name="fm_twisted_separatist_clone">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="6" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_separatist_death_right">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="8" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_separatist_death_left">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="8" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_separatist_walk_down">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_separatist_walk_right">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_separatist_walk_up">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_separatist_walk_left">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_separatist_shoot_down">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_separatist_shoot_right">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_separatist_shoot_up">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="3" x="6" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_separatist_shoot_left">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="3" x="6" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_separatist_fire_down">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_separatist_fire_right">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_separatist_fire_up">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_separatist_fire_left">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_separatist_repair">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_separatist_punch_up">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="6" x="2" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_separatist_punch_down">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_separatist_teleport">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="fm_twisted_separatist_type_right">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>1</time>
+</anim>
+<anim name="fm_twisted_separatist_type_left">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>1</time>
+</anim>
+<anim name="fm_twisted_separatist_type_up">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>1</time>
+</anim>
+<anim name="fm_twisted_separatist_type_down">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>1</time>
+</anim>
+<anim name="fm_twisted_separatist_portrait">
+	<sheet>fm_twisted_separatist</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+</FTL>
+
+<FTL>
+
+     <animSheet name="fm_twisted_brass" w="315" h="455" fw="35" fh="35">people/fm_twisted_brass_base.png</animSheet>
+<anim name="fm_twisted_brass_clone">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="6" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_brass_death_right">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="8" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_brass_death_left">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="8" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_brass_walk_down">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_brass_walk_right">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_brass_walk_up">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_brass_walk_left">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_brass_shoot_down">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_brass_shoot_right">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_brass_shoot_up">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="3" x="6" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_brass_shoot_left">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="3" x="6" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_brass_fire_down">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_brass_fire_right">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_brass_fire_up">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_brass_fire_left">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_brass_repair">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_brass_punch_up">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="6" x="2" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_brass_punch_down">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_brass_teleport">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="fm_twisted_brass_type_right">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>1</time>
+</anim>
+<anim name="fm_twisted_brass_type_left">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>1</time>
+</anim>
+<anim name="fm_twisted_brass_type_up">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>1</time>
+</anim>
+<anim name="fm_twisted_brass_type_down">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>1</time>
+</anim>
+<anim name="fm_twisted_brass_portrait">
+	<sheet>fm_twisted_brass</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+	
+</FTL>
+
+<FTL>
+	
+<animSheet name="fm_twisted_cobalt" w="315" h="455" fw="35" fh="35">people/fm_twisted_cobalt_base.png</animSheet>
+<anim name="fm_twisted_cobalt_clone">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="6" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_cobalt_death_right">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="8" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_cobalt_death_left">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="8" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_cobalt_walk_down">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_cobalt_walk_right">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_cobalt_walk_up">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_cobalt_walk_left">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_cobalt_shoot_down">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_cobalt_shoot_right">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_cobalt_shoot_up">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="3" x="6" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_cobalt_shoot_left">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="3" x="6" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_cobalt_fire_down">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_cobalt_fire_right">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_cobalt_fire_up">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_cobalt_fire_left">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_cobalt_repair">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_cobalt_punch_up">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="6" x="2" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_cobalt_punch_down">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_twisted_cobalt_teleport">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="fm_twisted_cobalt_type_right">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>1</time>
+</anim>
+<anim name="fm_twisted_cobalt_type_left">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>1</time>
+</anim>
+<anim name="fm_twisted_cobalt_type_up">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>1</time>
+</anim>
+<anim name="fm_twisted_cobalt_type_down">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>1</time>
+</anim>
+<anim name="fm_twisted_cobalt_portrait">
+	<sheet>fm_twisted_cobalt</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
 </FTL>
 
 <FTL> <!--Explosion Beam Crew-->
