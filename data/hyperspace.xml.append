@@ -5329,7 +5329,195 @@
 
 		</race>
 	</crew>
+	
+	<crew> 
+	<race name="fm_separatist_bronze">
+			<maxHealth>100</maxHealth>
+			<oxygenChangeSpeed>0</oxygenChangeSpeed>
+		        <repairSpeed>1.75</repairSpeed>
+			<canFight>true</canFight>
+		        <teleportMove>true</teleportMove>
+			<damageTakenMultiplier>1</damageTakenMultiplier>
+			<canRepair>true</canRepair>
+			<canTeleport>true</canTeleport>
+			<resistsMindControl>false</resistsMindControl>
+			<canSabotage>true</canSabotage>
+			<canSuffocate>false</canSuffocate>
+			<damageMultiplier>1</damageMultiplier>
+			<rangedDamageMultiplier>1</rangedDamageMultiplier>
+			<damageTakenMultiplier>1</damageTakenMultiplier>
+			<selectable>true</selectable>
+			<suffocationModifier>1</suffocationModifier>
+			<fireDamageMultiplier>0.5</fireDamageMultiplier>
+			<stunMultiplier>1</stunMultiplier>
+			<fireRepairMultiplier>1</fireRepairMultiplier>
+			<canMan>true</canMan>
+			<noClone>false</noClone>
+			<noSlot>false</noSlot>
+			<controllable>true</controllable>
+			<canPhaseThroughDoors>false</canPhaseThroughDoors>
+			<moveSpeedMultiplier>1</moveSpeedMultiplier>
+			<resistsMindControl>false</resistsMindControl>
 
+			<animBase>engi</animBase>
+			<deathSounds>
+				<deathSound>engiDeath</deathSound>
+			</deathSounds>
+			<shootingSounds>
+				<shootingSound>rockThrow1</shootingSound>
+				<shootingSound>rockThrow2</shootingSound>
+				<shootingSound>rockThrow3</shootingSound>
+			</shootingSounds>
+			<repairSounds animSoundFrame="5">
+				<repairSound>rockThud1</repairSound>
+				<repairSound>rockThud2</repairSound>
+				<repairSound>rockThud3</repairSound>
+			</repairSounds>
+			<powerEffect>
+				<cooldown>20s</cooldown>
+				<jumpCooldown>full</jumpCooldown>
+				<powerSounds>
+					<powerSound>fireBomb</powerSound>
+				</powerSounds>
+				<friendlyFire>true</friendlyFire>
+				<fireChance>10</fireChance>
+
+				<buttonText>FIRE</buttonText>
+				<tooltip>[COOLDOWN:20s]
+				- Spark a fire in the current room.</tooltip>
+				<cooldownColor r="255" g="171" b="0"/>
+				<activateWhenReady enemiesOnly="false">false</activateWhenReady>
+			</powerEffect>
+
+	</race>
+	</crew>	
+	
+	<crew> 
+	<race name="fm_separatist_cobalt">
+			<maxHealth>100</maxHealth>
+			<oxygenChangeSpeed>0</oxygenChangeSpeed>
+		        <repairSpeed>1.75</repairSpeed>
+			<canFight>true</canFight>
+		        <teleportMove>true</teleportMove>
+			<damageTakenMultiplier>1</damageTakenMultiplier>
+			<canRepair>true</canRepair>
+			<canTeleport>true</canTeleport>
+			<resistsMindControl>false</resistsMindControl>
+			<canSabotage>true</canSabotage>
+			<canSuffocate>true</canSuffocate>
+		        <canBurn>false</canBurn>
+			<damageMultiplier>1</damageMultiplier>
+			<rangedDamageMultiplier>1</rangedDamageMultiplier>
+			<damageTakenMultiplier>1</damageTakenMultiplier>
+			<selectable>true</selectable>
+			<suffocationModifier>0.5</suffocationModifier>
+			<fireDamageMultiplier>1</fireDamageMultiplier>
+			<stunMultiplier>1</stunMultiplier>
+			<fireRepairMultiplier>1</fireRepairMultiplier>
+			<canMan>true</canMan>
+			<noClone>false</noClone>
+			<noSlot>false</noSlot>
+			<controllable>true</controllable>
+			<canPhaseThroughDoors>false</canPhaseThroughDoors>
+			<moveSpeedMultiplier>1</moveSpeedMultiplier>
+			<resistsMindControl>false</resistsMindControl>
+
+			<animBase>engi</animBase>
+			<deathSounds>
+				<deathSound>engiDeath</deathSound>
+			</deathSounds>
+			<shootingSounds>
+				<shootingSound>rockThrow1</shootingSound>
+				<shootingSound>rockThrow2</shootingSound>
+				<shootingSound>rockThrow3</shootingSound>
+			</shootingSounds>
+			<repairSounds animSoundFrame="5">
+				<repairSound>rockThud1</repairSound>
+				<repairSound>rockThud2</repairSound>
+				<repairSound>rockThud3</repairSound>
+			</repairSounds>
+			<powerEffect>
+				<cooldown>20s</cooldown>
+				<jumpCooldown>full</jumpCooldown>
+				<powerSounds>
+					<powerSound>breachBomb</powerSound>
+				</powerSounds>
+				<friendlyFire>true</friendlyFire>
+				<breachChance>10</fireChance>
+
+				<buttonText>FIRE</buttonText>
+				<tooltip>[COOLDOWN:20s]
+				- Tear a breach in the current room</tooltip>
+				<cooldownColor r="255" g="171" b="0"/>
+				<activateWhenReady enemiesOnly="false">false</activateWhenReady>
+			</powerEffect>
+
+	</race>
+	</crew>	
+	
+	<race name="fm_separatist_twisted">
+			<maxHealth>175</maxHealth>
+			<oxygenChangeSpeed>0</oxygenChangeSpeed>
+		        <repairSpeed>1.75</repairSpeed>
+			<canFight>true</canFight>
+		        <teleportMove>true</teleportMove>
+			<damageTakenMultiplier>1</damageTakenMultiplier>
+			<canRepair>true</canRepair>
+			<canTeleport>true</canTeleport>
+			<resistsMindControl>false</resistsMindControl>
+			<canSabotage>true</canSabotage>
+			<canSuffocate>false</canSuffocate>
+		        <canBurn>false</canBurn>
+			<damageMultiplier>1.4</damageMultiplier>
+			<rangedDamageMultiplier>1</rangedDamageMultiplier>
+			<damageTakenMultiplier>0.7</damageTakenMultiplier>
+			<selectable>true</selectable>
+			<suffocationModifier>1</suffocationModifier>
+			<fireDamageMultiplier>1</fireDamageMultiplier>
+			<stunMultiplier>1</stunMultiplier>
+			<fireRepairMultiplier>1</fireRepairMultiplier>
+			<canMan>true</canMan>
+			<noClone>false</noClone>
+			<noSlot>false</noSlot>
+			<controllable>true</controllable>
+			<canPhaseThroughDoors>false</canPhaseThroughDoors>
+			<moveSpeedMultiplier>1</moveSpeedMultiplier>
+			<resistsMindControl>false</resistsMindControl>
+
+			<animBase>engi</animBase>
+			<deathSounds>
+				<deathSound>engiDeath</deathSound>
+			</deathSounds>
+			<shootingSounds>
+				<shootingSound>rockThrow1</shootingSound>
+				<shootingSound>rockThrow2</shootingSound>
+				<shootingSound>rockThrow3</shootingSound>
+			</shootingSounds>
+			<repairSounds animSoundFrame="5">
+				<repairSound>rockThud1</repairSound>
+				<repairSound>rockThud2</repairSound>
+				<repairSound>rockThud3</repairSound>
+			</repairSounds>
+			<powerEffect>
+				<cooldown>20s</cooldown>
+				<jumpCooldown>full</jumpCooldown>
+				<powerSounds>
+					<powerSound>fireBomb</powerSound>
+				</powerSounds>
+				<friendlyFire>true</friendlyFire>
+				<fireChance>10</fireChance>
+				<breachChance>10</breachChance>
+				<buttonText>TEAR</buttonText>
+				<tooltip>[COOLDOWN:20s]
+				-Tear a hole in your heart.</tooltip>
+				<cooldownColor r="255" g="171" b="0"/>
+				<selfHealth>-10</selfHealth>
+				<activateWhenReady enemiesOnly="false">false</activateWhenReady>
+			</powerEffect>
+
+	</race>
+	</crew>	
+		
 	<crew> <!-- Ancalagon Red Crystal-->
 		<race name="fm_crystal_red">
 			<maxHealth>165</maxHealth>
