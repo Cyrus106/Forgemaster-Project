@@ -49,7 +49,7 @@ end
 script.on_game_event("FMCORE_ONDAMAGE",false,
 function()--[[You can declare a function inside of script hooks like this,
   which is usually better if you don't need to deal with any variables external to the function]]
-  local damageQuantity=Hyperspace.ships.player:HasEquipment("FM_HULL_UPGRADE_POINTS")--This checks a req, in this case a variable.
+  local damageQuantity=Hyperspace.ships.player:HasEquipment("FM_HULL_UPGRADE_POINTS")-15--This checks a req, in this case a variable.
   --"local" means that the variable stays within the scope of the function, and goes away after the function is over. Remember to use locals whenever possible!
   local damage=Hyperspace.Damage() --The constructor for a Damage argument,
   damage.fireChance = 5 --Set the parameters of the damage like this, just like with a weapon.
