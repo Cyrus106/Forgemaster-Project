@@ -2306,6 +2306,39 @@
 
 </blueprintList>
 
+<blueprintList name="FM_SHOP_FORGEMASTER_DRONE_1_PLAYER">
+	<name>FM_SHOP_DRONES_1</name>
+	<name>FM_SHOP_DRONES_1</name>
+	<name>FM_SHOP_DRONES_1</name>
+	<name>FM_SHOP_DRONES_1</name>
+	<name>FM_SHOP_DRONES_1</name>
+	<name>FM_SHOP_DRONES_2</name>
+	<name>FM_SHOP_DRONES_2</name>
+	<name>FM_SHOP_DRONES_2</name>
+	<name>FM_SHOP_DRONES_2</name>
+	<name>FM_SHOP_DRONES_3</name>
+	<name>FM_SHOP_DRONES_3</name>
+</blueprintList>
+
+<blueprintList name="FM_SHOP_DRONES_1">
+	<name>MANNING</name>
+	<name>COMBAT_CONSERVATIVE_LASER</name>
+	<name>RECON_BOARDER</name>
+	<name>PEST_RAD</name>
+
+</blueprintList>
+
+<blueprintList name="FM_SHOP_DRONES_2">
+	<name>COMBAT_1_LASER</name>
+	<name>BATTLETOG_DEFEND</name>
+	<name>ENERGY_1_AMP2</name>
+	<name>FOCUS_1_AMP2</name>
+	<name>ASSAULT_PIERCE</name>
+</blueprintList>
+
+<blueprintList name="FM_SHOP_DRONES_3">
+	<name>COMBAT_2_LASER</name>
+</blueprintList>
 <blueprintList name="FM_SHOP_FORGEMASTER_RARE_WEAPON_LIST">
 	<name>BEAM_GUILLOTINE</name>
 	<name>FOCUS_CHAIN</name>

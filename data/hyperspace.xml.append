@@ -3498,6 +3498,24 @@
 				</item>
 				<chance>100</chance>
 			</category>
+			<category type="DRONES">
+				<customTitle>DRONES</customTitle>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_DRONE_1_PLAYER</blueprint>
+					<modifier min="1.2" max="1.2" flat="false"/>
+					<price>-1</price>
+				</item>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_DRONE_1_PLAYER</blueprint>
+					<modifier min="1.2" max="1.2" flat="false"/>
+					<price>-1</price>
+				</item>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_DRONE_1_PLAYER</blueprint>
+					<modifier min="1.2" max="1.2" flat="false"/>
+					<price>-1</price>
+				</item>
+			</category>
 		</customStore>
 
 		<customStore id="FM_RARE_STORE">
@@ -3588,6 +3606,24 @@
 				</item>
 				<chance>100</chance>
 			</category>
+			<category type="DRONES">
+				<customTitle>DRONES</customTitle>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_DRONE_1_PLAYER</blueprint>
+					<modifier min="1.2" max="1.2" flat="false"/>
+					<price>-1</price>
+				</item>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_DRONE_1_PLAYER</blueprint>
+					<modifier min="1.2" max="1.2" flat="false"/>
+					<price>-1</price>
+				</item>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_DRONE_1_PLAYER</blueprint>
+					<modifier min="1.2" max="1.2" flat="false"/>
+					<price>-1</price>
+				</item>
+			</category>
 
 		</customStore>
 
@@ -3624,6 +3660,24 @@
 				</item>
 				<item>
 					<blueprint>FM_SHOP_FORGEMASTER_PLUS_WEAPON_LIST</blueprint>
+					<modifier min="1.2" max="1.2" flat="false"/>
+					<price>-1</price>
+				</item>
+			</category>
+			<category type="DRONES">
+				<customTitle>DRONES</customTitle>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_DRONE_1_PLAYER</blueprint>
+					<modifier min="1.2" max="1.2" flat="false"/>
+					<price>-1</price>
+				</item>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_DRONE_1_PLAYER</blueprint>
+					<modifier min="1.2" max="1.2" flat="false"/>
+					<price>-1</price>
+				</item>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_DRONE_1_PLAYER</blueprint>
 					<modifier min="1.2" max="1.2" flat="false"/>
 					<price>-1</price>
 				</item>

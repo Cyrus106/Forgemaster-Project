@@ -13816,7 +13816,7 @@
 	    <power>-2</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
-	    <speed>25</speed>
+	    <speed>10</speed>
 	    <cost>100</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_cura_drone</droneImage>
@@ -14032,10 +14032,10 @@
 	    <title>Ishimura Beam Drone</title>
 	    <short>Ishi. Drone</short>
 	    <desc>A heavy drone that wields an even heavier piece of mining equipment, repurposed to carve away at any foes foolish enough to get in its way.</desc>
-	    <power>2</power>
+	    <power>4</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
-	    <speed>25</speed>
+	    <speed>10</speed>
 	    <cost>100</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_ishimura_drone</droneImage>
@@ -14056,6 +14056,7 @@
 		<bp>7</bp>
 		<rarity>0</rarity>
 		<length>400</length>
+		<speed>40</speed>
 		<image>beam_contact</image>
 		<launchSounds>
 			<sound>beam2</sound>
