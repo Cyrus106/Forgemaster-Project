@@ -115,6 +115,9 @@ mods.Forgemaster.selfArm={--Here, we will be using a lot of the same values toge
         self.queuedScrap=0
       end
     end,
+    reset=function(self)
+      self.queuedScrap=0
+    end,
 }
 
 script.on_render_event(Defines.RenderEvents.LAYER_PLAYER,
@@ -122,7 +125,7 @@ function() end,--Nothing happens before the render event (below the layer)
 function()
   mods.Forgemaster.selfArm:render() --This is how you call a method with a "self" argument.
 end)
-
+script.on_game_event("START_BEACON_REAL",false, function() mods.Forgemaster.selfArm:reset() end)
 script.on_game_event("FMCORE_ONDAMAGE",false,function() mods.Forgemaster.selfArm:onDamage() end)
 script.on_game_event("FM_HULLKILL_TRACKER_EVENT",false,function() mods.Forgemaster.selfArm:redeem() end) --We can find a better check for kills later.
 script.on_game_event("FM_CREWKILL_TRACKER_EVENT",false,function() mods.Forgemaster.selfArm:redeem() end)
