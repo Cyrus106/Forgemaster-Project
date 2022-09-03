@@ -157,7 +157,7 @@
 		<mod-append:ship name="PLAYER_SHIP_FMTESTING" b="false" c="false" noAppend="true" secret="true">
 			<unlock variant="a" silent="false">
 				<type>1</type>
-				<value>50</type>
+				<value>50</value>
 			</unlock>
 		</mod-append:ship>
 		<mod-append:ship name="PLAYER_SHIP_GUNSHIP_FUTURE" b="false" c="false" secret="true" >
@@ -5312,7 +5312,7 @@
 					<cooldownColor r="10" g="255" b="255"/>
 					<controllable>true</controllable>
 					<canTeleport>true</canTeleport>
-					<allDamageTakenMultiplier>0.5</damageTakenMultiplier>
+					<allDamageTakenMultiplier>0.5</allDamageTakenMultiplier>
 					<canFight>true</canFight>
 					<canRepair>true</canRepair>
 					<canSabotage>true</canSabotage>
@@ -5329,8 +5329,8 @@
 
 		</race>
 	</crew>
-	
-	<crew> 
+
+	<crew>
 	<race name="fm_separatist_bronze">
 			<maxHealth>100</maxHealth>
 			<oxygenChangeSpeed>0</oxygenChangeSpeed>
@@ -5374,7 +5374,7 @@
 				<repairSound>rockThud3</repairSound>
 			</repairSounds>
 			<powerEffect>
-				<cooldown>20s</cooldown>
+				<cooldown>20</cooldown>
 				<jumpCooldown>full</jumpCooldown>
 				<powerSounds>
 					<powerSound>fireBomb</powerSound>
@@ -5390,9 +5390,9 @@
 			</powerEffect>
 
 	</race>
-	</crew>	
-	
-	<crew> 
+	</crew>
+
+	<crew>
 	<race name="fm_separatist_cobalt">
 			<maxHealth>100</maxHealth>
 			<oxygenChangeSpeed>0</oxygenChangeSpeed>
@@ -5437,14 +5437,13 @@
 				<repairSound>rockThud3</repairSound>
 			</repairSounds>
 			<powerEffect>
-				<cooldown>20s</cooldown>
+				<cooldown>20</cooldown>
 				<jumpCooldown>full</jumpCooldown>
 				<powerSounds>
 					<powerSound>breachBomb</powerSound>
 				</powerSounds>
 				<friendlyFire>true</friendlyFire>
-				<breachChance>10</fireChance>
-
+				<breachChance>10</breachChance>
 				<buttonText>FIRE</buttonText>
 				<tooltip>[COOLDOWN:20s]
 				- Tear a breach in the current room</tooltip>
@@ -5453,8 +5452,8 @@
 			</powerEffect>
 
 	</race>
-	</crew>	
-	
+	</crew>
+	<crew>
 	<race name="fm_separatist_twisted">
 			<maxHealth>175</maxHealth>
 			<oxygenChangeSpeed>0</oxygenChangeSpeed>
@@ -5499,7 +5498,7 @@
 				<repairSound>rockThud3</repairSound>
 			</repairSounds>
 			<powerEffect>
-				<cooldown>20s</cooldown>
+				<cooldown>20</cooldown>
 				<jumpCooldown>full</jumpCooldown>
 				<powerSounds>
 					<powerSound>fireBomb</powerSound>
@@ -5516,8 +5515,8 @@
 			</powerEffect>
 
 	</race>
-	</crew>	
-		
+	</crew>
+
 	<crew> <!-- Ancalagon Red Crystal-->
 		<race name="fm_crystal_red">
 			<maxHealth>165</maxHealth>
