@@ -125,3 +125,4 @@ end)
 
 script.on_game_event("FMCORE_ONDAMAGE",false,function() mods.Forgemaster.selfArm:onDamage() end)
 script.on_game_event("FM_HULLKILL_TRACKER_EVENT",false,function() mods.Forgemaster.selfArm:redeem() end) --We can find a better check for kills later.
+script.on_game_event("FM_CREWKILL_TRACKER_EVENT",false,function() mods.Forgemaster.selfArm:redeem() end)
