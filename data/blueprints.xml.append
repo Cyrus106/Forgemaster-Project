@@ -2823,27 +2823,27 @@
 
 
         <crewBlueprint name="fm_twisted_separatist">
-		<desc>The combination of a Brass Separatist and a Cobalt Separatist, this amalgamation is a combination of both. </desc> 
-		<title>Twisted Separatist</title>  
-		<short>T. Separatist</short> 
-		<cost>50</cost>		  
-		<bp>2</bp>			
-		<rarity>0</rarity>	  
+		<desc>The combination of a Brass Separatist and a Cobalt Separatist, this amalgamation is a combination of both. </desc>
+		<title>Twisted Separatist</title>
+		<short>T. Separatist</short>
+		<cost>50</cost>
+		<bp>2</bp>
+		<rarity>0</rarity>
 		<powerList>
 			<power>Combines the powers of both the Cobalt and the Brass Separatists.</power>
 			<power>Active Ability: Split back into a Cobalt and a Brass Separatist.</power>
 		</powerList>
 	</crewBlueprint>
-	
+
 	<crewBlueprint name="fm_twisted_cobalt">
 		<desc>This warped separatist is highly unstable, but holds unnatural strength strong enough to tear though the hull, causing breaches in the current room.
-		
-		Inherited Separatist Stats: 1.75x Repair speed.</desc> 
-		<title>Cobalt Separatist</title>  
-		<short>C. Separatist</short> 
-		<cost>50</cost>		  
-		<bp>2</bp>			
-		<rarity>0</rarity>	  
+
+		Inherited Separatist Stats: 1.75x Repair speed.</desc>
+		<title>Cobalt Separatist</title>
+		<short>C. Separatist</short>
+		<cost>50</cost>
+		<bp>2</bp>
+		<rarity>0</rarity>
 		<powerList>
 			<power>- Cannot suffocate, takes reduced fire damage.</power>
 			<power>- Can teleport anywhere on the current ship.</power>
@@ -2851,16 +2851,16 @@
 			<power>- Passive Ability: Merge with a Brass Separatist.</power>
 		</powerList>
 	</crewBlueprint>
-	
+
 	<crewBlueprint name="fm_twisted_brass">
 		<desc>This strange separatist is highly unstable, but holds a heart of passion that at times burns bright enough to spark fires in the current room.
-		
-		Inherited Separatist Stats: 1.75x Repair speed.</desc> 
-		<title>Brass Separatist</title>  
-		<short>B. Separatist</short> 
-		<cost>50</cost>		  
-		<bp>2</bp>			
-		<rarity>0</rarity>	  
+
+		Inherited Separatist Stats: 1.75x Repair speed.</desc>
+		<title>Brass Separatist</title>
+		<short>B. Separatist</short>
+		<cost>50</cost>
+		<bp>2</bp>
+		<rarity>0</rarity>
 		<powerList>
 			<power>- Cannot burn, takes reduced suffocation damage.</power>
 			<power>- Can teleport anywhere on the current ship.</power>
@@ -2868,7 +2868,7 @@
 			<power>- Passive Ability: Merge with a Cobalt Separatist.</power>
 		</powerList>
 	</crewBlueprint>
-	
+
 
 	<!-- UNUSED CREW
 	<crewBlueprint name="blobpanther">
@@ -21147,9 +21147,15 @@
 
   <augBlueprint name="FM_MODULAR_HULL_MURAL">
     <title>Aftermarket Murals</title>
-    <desc>+30% crew stats, 50% chance to tkae extra dmg</desc>
+    <desc>+30% crew stats, 50% chance to take extra dmg</desc>
     <cost>85</cost>
     <rarity>0</rarity>
+		<value>0.5</value><!--Chance of taking damage, can be used with <function> tags in custom augments,
+													values greater than one mean guaranteed damage that number of times,
+													plus a chance for additional damage proportional to the remainder.
+
+													EXAMPLE: If you had five FM_MODULAR_HULL_MURAL augments, your total value would be 0.5*5=2.5
+																		You would take:	2 damage, guaranteed, and a 0.5 chance for additional damage-->
     <stackable>true</stackable>
   </augBlueprint>
 

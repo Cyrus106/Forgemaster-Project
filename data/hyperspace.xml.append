@@ -1,10 +1,12 @@
 <unique_sylvan/><?xml version="1.0" encoding="UTF-8"?>
 <FTL>
-	<mod:findLike type="scripts"><!--If multiverse EVER implements scripts, this MUST be an append to that tag. If not, we should integrate this into inferno-core-->
-    <!--<mod-append:script>data/scripts/test_1.lua</mod-append:script>
-		<mod-append:script>data/scripts/augments.lua</mod-append:script>
-		<mod-append:script>data/scripts/animations.lua</mod-append:script>
-		<mod-append:script>data/scripts/artillery.lua</mod-append:script>-->
+	<mod:findLike type="scripts">
+		<mod-append:script>data/forgemaster_scripts/dependancy.lua</mod-append:script>
+    <!--<mod-append:script>data/forgemaster_scripts/test_1.lua</mod-append:script>
+		<mod-append:script>data/forgemaster_scripts/augments.lua</mod-append:script>
+		<mod-append:script>data/forgemaster_scripts/animations.lua</mod-append:script>
+		<mod-append:script>data/forgemaster_scripts/artillery.lua</mod-append:script>-->
+		<mod-append:script>data/forgemaster_scripts/modhull.lua</mod-append:script> <!--The script folders are named differently because of issues when two script files share the same path.-->
 	</mod:findLike>
 </FTL>
 

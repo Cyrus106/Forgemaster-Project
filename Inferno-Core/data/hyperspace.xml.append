@@ -19,4 +19,9 @@
 			</req>
 		</req>
 	</events>
+
+	<mod:findLike type="scripts">
+		<mod-append:script>data/inferno_core_scripts/dependancy.lua</mod-append:script><!--The script folders are named differently because of issues when two script files share the same path.-->
+	</mod:findLike>
+
 </FTL>

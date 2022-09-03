@@ -13,7 +13,7 @@ script.on_game_event("OXYGEN_FORCE_UPGRADE", false, forceUpgrade_oxygen)
 script.on_game_event("WEAPONS_FORCE_UPGRADE", false, forceUpgrade_weapons)
 --Every time the event "SHIELDS_FORCE_UPGRADE" runs, the function forceUpgrade_shields runs
 script.on_game_event("SHIELDS_FORCE_UPGRADE",false,forceUpgrade_shields)
---the arguement false here means it does not happen again upon reload, IE saving and reloading
+--the argument false here means it does not happen again upon reload, IE saving and reloading
 function nothing()
 end
 

@@ -1,6 +1,6 @@
 
 
----[[
+--[[
 
 function renderframe(imagepath, framenumber, numberofframes, position_x, position_y)
   local tex=Hyperspace.Resources:GetImageId(imagepath)
