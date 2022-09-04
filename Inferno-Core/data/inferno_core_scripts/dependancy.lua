@@ -8,5 +8,9 @@ function()
   if _G["FORGEMASTER_INFO"] then
     Hyperspace.ErrorMessage("Forgemaster was patched before Inferno-Core! Please re-patch your mods, and make sure to put Inferno-Core first!")
   end
+
+  if _G["TCC_INFO"] then
+    Hyperspace.ErrorMessage("Trash Compactor Collection was patched before Inferno-Core! Please re-patch your mods, and make sure to put Inferno-Core first!")
+  end
 end
 )
