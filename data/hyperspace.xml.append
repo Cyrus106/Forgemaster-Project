@@ -5444,15 +5444,12 @@
 		        <essential>1</essential>
 			<maxHealth>100</maxHealth>
 		        <repairSpeed>2</repairSpeed>
-		        <teleportMove>true</teleportMove>
 			<damageTakenMultiplier>0.75</damageTakenMultiplier>
 		        <canBurn>false</canBurn>
 			<damageMultiplier>1</damageMultiplier>
 			<suffocationModifier>0.5</suffocationModifier>
-			<canMan>true</canMan>
-			<controllable>true</controllable>
-			<canPhaseThroughDoors>false</canPhaseThroughDoors>
 			<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		        <noClone>true<noClone>
 			<animBase>engi</animBase>
 			<deathSounds>
 				<deathSound>engiDeath</deathSound>
@@ -5463,7 +5460,7 @@
 				<name>Cobalt</name>
 				<number>1</number>
 			</spawnCrew>
-		        </deathEffec
+		</deathEffect>
 	</race>
 	</crew>	
 	<crew>
@@ -5472,7 +5469,6 @@
 			<maxHealth>100</maxHealth>
 		        <canRepair>false</canRepair>
 		        <repairSpeed>2</repairSpeed>
-		        <teleportMove>true</teleportMove>
 			<damageTakenMultiplier>0</damageTakenMultiplier>
 		        <canBurn>false</canBurn>
 		        <canFight>false</canFight>
@@ -5506,34 +5502,14 @@
 	</crew>		
 	<crew>
 	<race name="fm_separatist_twisted">
-			<maxHealth>175</maxHealth>
-			<oxygenChangeSpeed>0</oxygenChangeSpeed>
+			<maxHealth>125</maxHealth>
 		        <repairSpeed>1.75</repairSpeed>
-			<canFight>true</canFight>
-		        <teleportMove>true</teleportMove>
-			<damageTakenMultiplier>1</damageTakenMultiplier>
-			<canRepair>true</canRepair>
-			<canTeleport>true</canTeleport>
-			<resistsMindControl>false</resistsMindControl>
-			<canSabotage>true</canSabotage>
 			<canSuffocate>false</canSuffocate>
 		        <canBurn>false</canBurn>
-			<damageMultiplier>1.4</damageMultiplier>
-			<rangedDamageMultiplier>1</rangedDamageMultiplier>
+			<damageMultiplier>1.25</damageMultiplier>
 			<damageTakenMultiplier>0.7</damageTakenMultiplier>
-			<selectable>true</selectable>
-			<suffocationModifier>1</suffocationModifier>
-			<fireDamageMultiplier>1</fireDamageMultiplier>
-			<stunMultiplier>1</stunMultiplier>
-			<fireRepairMultiplier>1</fireRepairMultiplier>
-			<canMan>true</canMan>
-			<noClone>false</noClone>
-			<noSlot>false</noSlot>
-			<controllable>true</controllable>
-			<canPhaseThroughDoors>false</canPhaseThroughDoors>
-			<moveSpeedMultiplier>1</moveSpeedMultiplier>
-			<resistsMindControl>false</resistsMindControl>
-
+			<moveSpeedMultiplier>1.5</moveSpeedMultiplier>
+		        <noClone>true</noClone>
 			<animBase>engi</animBase>
 			<deathSounds>
 				<deathSound>engiDeath</deathSound>
