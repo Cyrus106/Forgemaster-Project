@@ -2903,7 +2903,7 @@
 			<power>- Active Ability: Merge with a Bronze Separatist into a Twisted Separatist.</power>
 		</powerList>
 	</crewBlueprint>
-	
+
 	<crewBlueprint name="fm_nano_cobalt">
 		<desc>This Cobalt Separatist has sustained heavy damage and activated its emergency survival program, becoming an invincible cloud of nanites immune to all forms of damage.</desc>
 		<title>Cobalt Separatist</title>
@@ -2933,7 +2933,7 @@
                         <power>- Passive Ability: Upon killing an enemy, destabilises and enters Nano mode, gaining a 2x speed boost, ignores doors and spreads fires for 5s.</power>
 		</powerList>
 	</crewBlueprint>
-	
+
 	<crewBlueprint name="fm_nano_bronze">
 		<desc>The death of an enemy has temporarily driven this Bronze Separatist into a murderous rampage, moving at 2x speed, ignoring doors and spreading fires for 5s.</desc>
 		<title>Bronze Separatist</title>
@@ -8185,6 +8185,7 @@
 	<weaponBlueprint name="FM_LASER_HUMAN">
 		<type>BURST</type>
 		<title>Rebel Ripper</title>
+		<tip>tip_bio</tip>
 		<short>Rebel R</short>
 		<desc>Chosen weapon of the Coalition. Kills human scum real good.</desc>
 		<descriptionOverride>Chosen weapon of the Coalition. Kills human scum real good.
@@ -8192,6 +8193,7 @@
 			Stats:
 			Required Power: 2
 			Charge Time: 8 seconds
+			Accuracy Bonus: +5%
 
 			Shots Per Charge: 1
 
@@ -8201,13 +8203,14 @@
 			Shield Piercing: 10
 
 			Fire Chance: 10%
-			Breach Chance: 10% (Adjusted: 8%)
+			Breach Chance: 10% (Adjusted: 9%)
 
 			Buy/Sell Price: 160~/80~
 		</descriptionOverride>
 		<tooltip>test</tooltip>
 		<tooltipOverride>Required Power: 2
 			Charge Time: 8 seconds
+			Accuracy Bonus: +5%
 
 			Shots Per Charge: 1
 
@@ -8217,12 +8220,13 @@
 			Shield Piercing: 10
 
 			Fire Chance: 10%
-			Breach Chance: 10% (Adjusted: 8%)
+			Breach Chance: 10% (Adjusted: 9%)
 		</tooltipOverride>
 		<damage>0</damage>
 		<sysDamage>1</sysDamage>
 		<persDamage>1</persDamage>
 		<shots>1</shots>
+		<accuracyMod>5</accuracyMod>
 		<sp>10</sp>
 		<fireChance>1</fireChance>
 		<breachChance>1</breachChance>
@@ -8271,6 +8275,34 @@
 					<human_rebel_medic/>
 				</whiteList>
 
+			</statBoost>
+			<statBoost name="moveSpeedMultiplier">
+				<boostType>MULT</boostType>
+				<amount>0.33</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<affectsSelf>true</affectsSelf>
+				<maxStacks>1</maxStacks>
+				<duration>10</duration>
+				<boostAnim>bio_poison</boostAnim>
+			</statBoost>
+			<statBoost name="stunMultiplier">
+				<boostType>MULT</boostType>
+				<amount>1.75</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<affectsSelf>true</affectsSelf>
+				<maxStacks>1</maxStacks>
+				<duration>10</duration>
+			</statBoost>
+			<statBoost name="repairSpeed">
+				<boostType>MULT</boostType>
+				<amount>0.33</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<affectsSelf>true</affectsSelf>
+				<maxStacks>1</maxStacks>
+				<duration>10</duration>
 			</statBoost>
 		</statBoosts>
 		<rarity>0</rarity>
