@@ -5449,7 +5449,7 @@
 			<damageMultiplier>1</damageMultiplier>
 			<suffocationModifier>0.5</suffocationModifier>
 			<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
-		        <noClone>true<noClone>
+		        <noClone>true</noClone>
 			<animBase>engi</animBase>
 			<deathSounds>
 				<deathSound>engiDeath</deathSound>
