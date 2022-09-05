@@ -5388,8 +5388,9 @@
 
 	<crew>
 	<race name="fm_separatist_bronze">
+		        <essential>1</essential>
 			<maxHealth>100</maxHealth>
-			<oxygenChangeSpeed>0</oxygenChangeSpeed>
+			<oxygenChangeSpeed>0</oxygenChangeSpeed>		
 		        <repairSpeed>1.75</repairSpeed>
 			<canFight>true</canFight>
 		        <teleportMove>true</teleportMove>
@@ -5419,18 +5420,8 @@
 			<deathSounds>
 				<deathSound>engiDeath</deathSound>
 			</deathSounds>
-			<shootingSounds>
-				<shootingSound>rockThrow1</shootingSound>
-				<shootingSound>rockThrow2</shootingSound>
-				<shootingSound>rockThrow3</shootingSound>
-			</shootingSounds>
-			<repairSounds animSoundFrame="5">
-				<repairSound>rockThud1</repairSound>
-				<repairSound>rockThud2</repairSound>
-				<repairSound>rockThud3</repairSound>
-			</repairSounds>
 			<powerEffect>
-				<cooldown>20</cooldown>
+				<cooldown>5</cooldown>
 				<jumpCooldown>full</jumpCooldown>
 				<powerSounds>
 					<powerSound>fireBomb</powerSound>
@@ -5450,65 +5441,69 @@
 
 	<crew>
 	<race name="fm_separatist_cobalt">
+		        <essential>1</essential>
 			<maxHealth>100</maxHealth>
-			<oxygenChangeSpeed>0</oxygenChangeSpeed>
-		        <repairSpeed>1.75</repairSpeed>
-			<canFight>true</canFight>
+		        <repairSpeed>2</repairSpeed>
 		        <teleportMove>true</teleportMove>
-			<damageTakenMultiplier>1</damageTakenMultiplier>
-			<canRepair>true</canRepair>
-			<canTeleport>true</canTeleport>
-			<resistsMindControl>false</resistsMindControl>
-			<canSabotage>true</canSabotage>
-			<canSuffocate>true</canSuffocate>
+			<damageTakenMultiplier>0.75</damageTakenMultiplier>
 		        <canBurn>false</canBurn>
 			<damageMultiplier>1</damageMultiplier>
-			<rangedDamageMultiplier>1</rangedDamageMultiplier>
-			<damageTakenMultiplier>1</damageTakenMultiplier>
-			<selectable>true</selectable>
 			<suffocationModifier>0.5</suffocationModifier>
-			<fireDamageMultiplier>1</fireDamageMultiplier>
-			<stunMultiplier>1</stunMultiplier>
-			<fireRepairMultiplier>1</fireRepairMultiplier>
 			<canMan>true</canMan>
-			<noClone>false</noClone>
-			<noSlot>false</noSlot>
 			<controllable>true</controllable>
 			<canPhaseThroughDoors>false</canPhaseThroughDoors>
-			<moveSpeedMultiplier>1</moveSpeedMultiplier>
-			<resistsMindControl>false</resistsMindControl>
-
+			<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
 			<animBase>engi</animBase>
 			<deathSounds>
 				<deathSound>engiDeath</deathSound>
 			</deathSounds>
-			<shootingSounds>
-				<shootingSound>rockThrow1</shootingSound>
-				<shootingSound>rockThrow2</shootingSound>
-				<shootingSound>rockThrow3</shootingSound>
-			</shootingSounds>
-			<repairSounds animSoundFrame="5">
-				<repairSound>rockThud1</repairSound>
-				<repairSound>rockThud2</repairSound>
-				<repairSound>rockThud3</repairSound>
-			</repairSounds>
-			<powerEffect>
-				<cooldown>20</cooldown>
-				<jumpCooldown>full</jumpCooldown>
-				<powerSounds>
-					<powerSound>breachBomb</powerSound>
-				</powerSounds>
-				<friendlyFire>true</friendlyFire>
+                        <deathEffect>
+			<spawnCrew>
+				<race>fm_nano_cobalt</race>
+				<name>Cobalt</name>
+				<number>1</number>
+			</spawnCrew>
+		        </deathEffec
+	</race>
+	</crew>	
+	<crew>
+	<race name="fm_nano_cobalt">
+		        <essential>1</essential>
+			<maxHealth>100</maxHealth>
+		        <canRepair>false</canRepair>
+		        <repairSpeed>2</repairSpeed>
+		        <teleportMove>true</teleportMove>
+			<damageTakenMultiplier>0</damageTakenMultiplier>
+		        <canBurn>false</canBurn>
+		        <canFight>false</canFight>
+		        <passiveHealAmount>5</passiveHealAmount>
+			<damageMultiplier>1</damageMultiplier>
+		        <canSuffocate>false</canSuffocate>
+			<suffocationModifier>0.5</suffocationModifier>
+			<canMan>false</canMan>
+			<controllable>true</controllable>
+			<canPhaseThroughDoors>true</canPhaseThroughDoors>
+			<moveSpeedMultiplier>1</moveSpeedMultiplier>
+			<animBase>engi</animBase>
+			<deathSounds>
+				<deathSound>engiDeath</deathSound>
+			</deathSounds>
+                        <powerEffect>
+				<damage>1</damage>
+				<sysDamage>-1</sysDamage>
+				<persDamage>-1</persDamage>
 				<breachChance>10</breachChance>
-				<buttonText>FIRE</buttonText>
-				<tooltip>[COOLDOWN:20s]
-				- Tear a breach in the current room</tooltip>
-				<cooldownColor r="255" g="171" b="0"/>
-				<activateWhenReady enemiesOnly="false">false</activateWhenReady>
-			</powerEffect>
+			<cooldown>15</cooldown>
+			<jumpCooldown>full</jumpCooldown>
+			<buttonText>REFORM</buttonText>
+			<tooltip>[COOLDOWN:15s]
+				Absorb part of the hull to reform into a Cobalt Separatist.</tooltip>
+			<cooldownColor r="0" g="0" b="255"/>
+			<transformRace>fm_separatist_cobalt</transformRace>
+		</powerEffect>
 
 	</race>
-	</crew>
+	</crew>		
 	<crew>
 	<race name="fm_separatist_twisted">
 			<maxHealth>175</maxHealth>
