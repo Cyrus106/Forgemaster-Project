@@ -1773,12 +1773,12 @@
 	<mod-append:name>FM_ROYAL_MINELAUNCHER</mod-append:name>
 </mod:findName>
 
-<mod:findLike type="blueprintList" name="BLUELIST_WEAPONS_BEAM_POWERFUL">
+<mod:findName type="blueprintList" name="BLUELIST_WEAPONS_BEAM_POWERFUL">
 	<mod-append:name>FM_BEAM_MINING_2</mod-append:name>
 	<mod-append:name>FM_BEAM_MINING_3</mod-append:name>
 	<mod-append:name>BEAM_ADAPT_3_PLAYER_ARTY_CHAIN</mod-append:name>
 	<mod-append:name>TAINTED_BEAM_3_ARTY</mod-append:name>
-</mod:findLike>
+</mod:findName>
 
 <blueprintList name="LIST_CREW_GENERIC_LEECH">
 	<name>leech</name>
