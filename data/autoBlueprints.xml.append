@@ -200,6 +200,7 @@
 	<aug name="EX_DRONE_SPEED" />
 	<aug name="DRONE_SPEED" />
 	<aug name="TRINKET_SHIELD" />
+	<cloakImage>mt_boss_kestrel</cloakImage>
 </shipBlueprint>
 
 <!-- SUICIDE MISSION BOSSES -->
@@ -380,6 +381,7 @@
 	<aug name="TOXIC_GAS" />
 	<aug name="RADIANT_GAS" />
 	<aug name="NANOBOT_DEFENSE_SYSTEM" />
+	<cloakImage>mt_boss_shell</cloakImage>
 </shipBlueprint>
 
 <shipBlueprint name="FM_BOSS_FED1" layout="zmt_boss_fed_suicide" img="zmt_boss_fed_suicide">
@@ -416,6 +418,7 @@
 	<boardingAI>sabotage</boardingAI>
 	<aug name="ANCIENT_SHIELD" />
 	<aug name="UPG_AETHER_SHIELDS" />
+	<cloakImage>mt_boss_fed</cloakImage>
 </shipBlueprint>
 
 <shipBlueprint name="FM_BOSS_ENGINEER1" layout="zmt_boss_engineer_suicide" img="zmt_boss_engineer_suicide">
@@ -496,6 +499,7 @@
 	<aug name="PALADIN_ARMOR" />
 	<aug name="LAB_ROCK_SPEED" />
 	<aug name="LAB_ROCK_SKIN" />
+	<cloakImage>mt_boss_rock</cloakImage>
 </shipBlueprint>
 
 <shipBlueprint name="FM_BOSS_LANIUS1" layout="zmt_boss_lanius_suicide" img="zmt_boss_lanius_suicide">
@@ -572,6 +576,7 @@
 	<crewCount amount="1" max="1" class="roomba" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="SUPER_CREW_STIMS" />
+	<cloakImage>mt_boss_freemantis</cloakImage>
 </shipBlueprint>
 
 <shipBlueprint name="FM_BOSS_MANTIS1" layout="zmt_boss_mantis_suicide" img="zmt_boss_mantis_suicide">
@@ -785,6 +790,7 @@
 	<crewCount amount="1" max="1" class="fm_human_texture" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="UPG_CLOAK_FIRE" />
+	<cloakImage>mt_boss_stealth</cloakImage>
 </shipBlueprint>
 
 <shipBlueprint name="FM_BOSS_KES1" layout="zmt_boss_kestrel_suicide" img="zmt_boss_kestrel_suicide">
@@ -890,6 +896,7 @@
 	<aug name="SLUG_GEL" />
 	<aug name="UPG_WEAPONS_PERFORMANCE" />
 	<aug name="UPG_SHIELDS_PERFORMANCE" />
+	<cloakImage>mt_boss_slug</cloakImage>
 </shipBlueprint>
 
 <shipBlueprint name="FM_BOSS_ZOLTAN1" layout="zmt_boss_zoltan_suicide" img="zmt_boss_zoltan_suicide">
@@ -961,6 +968,7 @@
 	<boardingAI>invasion</boardingAI>
 	<aug name="DEPRESSION_EMITTER" />
 	<aug name="UPG_SHIELD_ION" />
+	<cloakImage>mt_boss_leech</cloakImage>
 </shipBlueprint>
 
 
