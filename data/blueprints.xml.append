@@ -2847,7 +2847,7 @@
 			<power>- 2x Repair speed, 0.8x movement speed.</power>
 			<power>- Cannot suffocate, takes reduced fire damage.</power>
 			<power>- Can teleport anywhere on the current ship.</power>
-			<power>- Active Ability: Merge with a Brass Separatist into a Twisted Separatist.</power>
+			<power>- Active Ability: Merge with a Bronze Separatist into a Twisted Separatist.</power>
 		</powerList>
 	</crewBlueprint>
 	
@@ -2868,7 +2868,7 @@
 
 	<crewBlueprint name="fm_separatist_bronze">
 		<desc>This distorted separatist has a strong lust for battle, and when it defeats an opponent it goes into a battle frenzy setting fire to everything around it.</desc>
-		<title>Brass Separatist</title>
+		<title>Bronze Separatist</title>
 		<short>B. Separatist</short>
 		<cost>50</cost>
 		<bp>2</bp>
@@ -2882,8 +2882,8 @@
 	</crewBlueprint>
 	
 	<crewBlueprint name="fm_nano_bronze">
-		<desc>The death of an enemy has temporarily driven this Brass Separatist into a murderous rampage, moving at 2x speed, ignoring doors and spreading fires for 5s.</desc>
-		<title>Brass Separatist</title>
+		<desc>The death of an enemy has temporarily driven this Bronze Separatist into a murderous rampage, moving at 2x speed, ignoring doors and spreading fires for 5s.</desc>
+		<title>Bronze Separatist</title>
 		<short>B. Separatist</short>
 		<cost>50</cost>
 		<bp>2</bp>
