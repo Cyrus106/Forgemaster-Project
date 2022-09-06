@@ -85,6 +85,7 @@
 		<clearEventButton name="ADDON_GB"/>
 		<clearEventButton name="ADDON_TCC"/>
 		<clearEventButton name="ADDON_FR"/>
+		<clearEventButton name="ADDON_BAG"/>
 		<loadEvent>FM_CORE_RESET_BUTTONS_2</loadEvent>
 	</event>
 	<event name="FM_CORE_RESET_BUTTONS_2">
@@ -108,7 +109,7 @@
 		<eventButton name="UI_TOGGLE_BUTTON">
       <event load="COMBAT_CHECK_TOGGLE_BUTTON"/>
       <image>statusUI/top_toggle</image>
-      <customLocation x="105" y="94"/>
+      <customLocation x="105" y="110"/>
       <tooltip>Toggle a drone or weapon.</tooltip>
       <inactiveTooltip>Unavailable!</inactiveTooltip>
       <jumpClear>false</jumpClear>
