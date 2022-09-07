@@ -14192,7 +14192,7 @@
 			<power>2</power>
 			<cooldown>1000</cooldown>
 			<dodge>0</dodge>
-			<speed>25</speed>
+			<speed>15</speed>
 			<cost>100</cost>
 			<bp>3</bp>
 			<droneImage>fm_kestrel_drone</droneImage>
@@ -14248,7 +14248,7 @@
 	    <power>2</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
-	    <speed>25</speed>
+	    <speed>10</speed>
 	    <cost>100</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_mfk_kestrel_drone</droneImage>
@@ -14977,7 +14977,7 @@
 			<b>90</b>
 		</color>
 		<speed>4</speed>
-		<power>4</power>
+		<power>1</power>
 		<cost>145</cost>
 		<rarity>0</rarity>
 		<length>100</length>
@@ -15049,7 +15049,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>2</breachChance>
 		<cooldown>44</cooldown>
-		<power>5</power>
+		<power>1</power>
 		<cost>170</cost>
 		<bp>7</bp>
 		<rarity>0</rarity>
@@ -15119,7 +15119,7 @@
 			<b>200</b>
 		</color>
 		<speed>20</speed>
-		<power>2</power>
+		<power>1</power>
 		<cost>100</cost>
 		<bp>6</bp>
 		<rarity>0</rarity>
@@ -15150,7 +15150,7 @@
 		<breachChance>1</breachChance>
 		<stunChance>10</stunChance>
 		<cooldown>30</cooldown>
-		<power>3</power>
+		<power>1</power>
 		<cost>85</cost>
 		<bp>6</bp>
 		<rarity>0</rarity>
