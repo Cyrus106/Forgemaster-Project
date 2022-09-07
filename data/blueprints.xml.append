@@ -10763,6 +10763,38 @@
 		<iconImage>beam</iconImage>
 	</weaponBlueprint>
 
+	<weaponBlueprint name="FM_BEAM_ETERNITY"><!--if this vanishes *AGAIN*...i swear...-->
+		<type>BEAM</type>
+		<title>'Eternity' Beam</title>
+		<short>'Eternity' B.</short>
+		<desc>Cuts fleets like it's terrestial couterpart cuts grass.</desc>
+		<tooltip>Beam weapon, 2 damage to hull, 3 damage to system per room.</tooltip>
+		<damage>1</damage>
+		<sp>1</sp>
+		<sysDamage>0</sysDamage>
+		<persDamage>0</persDamage>
+		<fireChance>2</firechance>
+		<breachChance>1</breachChance>
+		<cooldown>21</cooldown>
+		<power>3</power>
+		<cost>200</cost>
+		<bp>7</bp>
+		<color>
+			<r>163</r>
+			<g>106</g>
+			<b>226</b>
+		</color>
+		<rarity>0</rarity>
+		<length>200</length>
+		<speed>30</speed>
+		<image>beam_contact</image>
+		<launchSounds>
+			<sound>beam2</sound>
+		</launchSounds>
+		<weaponArt>fm_beam_eternity</weaponArt>
+		<iconImage>beam</iconImage>
+	</weaponBlueprint>
+
 	<weaponBlueprint name="FM_CRYSTAL_BEAM">
 
 		<type>BEAM</type>
@@ -10777,55 +10809,55 @@
 		<fireChance>7</fireChance>
 		<cooldown>3</cooldown>
 		<spawnCrew>
-		<race>fm_generic_crewjank</race>
-		<number>1</number>
-		<enemy>true</enemy><!--So you don't ever see the crew-->
-		<lifetime>0</lifetime>
-		<noSlot>true</noSlot>
-		<statBoosts>
+			<race>fm_generic_crewjank</race>
+			<number>1</number>
+			<enemy>true</enemy><!--So you don't ever see the crew-->
+			<lifetime>0</lifetime>
+			<noSlot>true</noSlot>
+			<statBoosts>
 
-			<statBoost name="deathEffect"><!--This modifies the stat of the crew, so that the same crew can be used for multiple weapons-->
-				<boostType>SET</boostType>
-
-
-				<deathEffect><!--When template crew dies (on weapon impact) these statBoosts are applied -->
-					<statBoosts>
-
-						<statBoost name="powerEffect">
-							<boostType>SET</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
-							<shipTarget>ORIGINAL_SHIP</shipTarget>
-							<crewTarget>ALLIES</crewTarget><!--Affects the allies of the spawned crew, so YOUR enemies-->
-							<priority>999999</priority>
-							<duration>0.2</duration>
-							<blackList load="LIST_FM_PLSNOEFFECT"/>
-							<powerEffect>
-								<powerCharges>1</powerCharges>
-								<initialCharges>1</initialCharges>
-								<cooldown>0.1</cooldown>
-								<activateWhenReady enemiesOnly="false">true</activateWhenReady>
-								<jumpCooldown>full</jumpCooldown>
-								<lockdown>true</lockdown>
-								<powerSounds enemy="true">
-									<powerSound>lockdown1</powerSound>
-									<powerSound>lockdown2</powerSound>
-								</powerSounds>
-								<shipFriendlyFire>true</shipFriendlyFire>
-								<buttonText>Crystallize</buttonText>
-								<tooltip>Ready: Lock down in the current room.</tooltip>
-								<cooldownColor r="170" g="206" b="39"/>
-							</powerEffect>
-						</statBoost>
-					</statBoosts>
-				</deathEffect>
-
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<priority>9999999</priority>
-			</statBoost>
+				<statBoost name="deathEffect"><!--This modifies the stat of the crew, so that the same crew can be used for multiple weapons-->
+					<boostType>SET</boostType>
 
 
-		</statBoosts>
-	</spawnCrew>
+					<deathEffect><!--When template crew dies (on weapon impact) these statBoosts are applied -->
+						<statBoosts>
+
+							<statBoost name="powerEffect">
+								<boostType>SET</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
+								<shipTarget>ORIGINAL_SHIP</shipTarget>
+								<crewTarget>ALLIES</crewTarget><!--Affects the allies of the spawned crew, so YOUR enemies-->
+								<priority>999999</priority>
+								<duration>0.2</duration>
+								<blackList load="LIST_FM_PLSNOEFFECT"/>
+								<powerEffect>
+									<powerCharges>1</powerCharges>
+									<initialCharges>1</initialCharges>
+									<cooldown>0.1</cooldown>
+									<activateWhenReady enemiesOnly="false">true</activateWhenReady>
+									<jumpCooldown>full</jumpCooldown>
+									<lockdown>true</lockdown>
+									<powerSounds enemy="true">
+										<powerSound>lockdown1</powerSound>
+										<powerSound>lockdown2</powerSound>
+									</powerSounds>
+									<shipFriendlyFire>true</shipFriendlyFire>
+									<buttonText>Crystallize</buttonText>
+									<tooltip>Ready: Lock down in the current room.</tooltip>
+									<cooldownColor r="170" g="206" b="39"/>
+								</powerEffect>
+							</statBoost>
+						</statBoosts>
+					</deathEffect>
+
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>9999999</priority>
+				</statBoost>
+
+
+			</statBoosts>
+		</spawnCrew>
 		<color>
 			<r>255</r>
 			<g>0</g>
@@ -10865,29 +10897,29 @@
 		<fireChance>7</fireChance>
 		<cooldown>3</cooldown>
 		<spawnCrew>
-		<race>fm_generic_crewjank</race>
-		<number>1</number>
-		<enemy>true</enemy><!--So you don't ever see the crew-->
-		<lifetime>0</lifetime>
-		<noSlot>true</noSlot>
-		<statBoosts>
+			<race>fm_generic_crewjank</race>
+			<number>1</number>
+			<enemy>true</enemy><!--So you don't ever see the crew-->
+			<lifetime>0</lifetime>
+			<noSlot>true</noSlot>
+			<statBoosts>
 
-			<statBoost name="deathEffect"><!--This modifies the stat of the crew, so that the same crew can be used for multiple weapons-->
-				<boostType>SET</boostType>
-
-
-				<deathEffect><!--When template crew dies (on weapon impact) these statBoosts are applied -->
-					<event name="ANIMATION_FUN"/>
-				</deathEffect>
-
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<priority>9999999</priority>
-			</statBoost>
+				<statBoost name="deathEffect"><!--This modifies the stat of the crew, so that the same crew can be used for multiple weapons-->
+					<boostType>SET</boostType>
 
 
-		</statBoosts>
-	</spawnCrew>
+					<deathEffect><!--When template crew dies (on weapon impact) these statBoosts are applied -->
+						<event name="ANIMATION_FUN"/>
+					</deathEffect>
+
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>9999999</priority>
+				</statBoost>
+
+
+			</statBoosts>
+		</spawnCrew>
 		<color>
 			<r>255</r>
 			<g>0</g>
@@ -26331,6 +26363,15 @@
 		<mod-overwrite:tip>fm_tip_beam_breach</mod-overwrite:tip>
 	</mod:findName>
 
+	<!-- ETERNITY-->
+
+	<mod:findName type = "weaponBlueprint" name = "BEAM_LONG">
+		<mod-overwrite:tip>fm_tip_beam_long</mod-overwrite:tip>
+	</mod:findName>
+
+	<mod:findName type = "weaponBlueprint" name = "BEAM_SCYTHE">
+		<mod-overwrite:tip>fm_tip_beam_scythe</mod-overwrite:tip>
+	</mod:findName>
 
 	<!--    PINPOINT CRAFT TIPS -->
 
