@@ -11121,7 +11121,7 @@
 			Stun Chance: 100% (3 seconds long)
 		</tooltipOverride>
 		<damage>2</damage>
-		<sysDamage>-2</sysDamage>
+		<noSysDamage>true</noSysDamage>
 		<sp>0</sp>
 		<fireChance>4</fireChance>
 		<breachChance>0</breachChance>
@@ -11200,7 +11200,7 @@
 			Stun Chance: 100% (3 seconds long)
 		</tooltipOverride>
 		<damage>3</damage>
-		<sysDamage>-3</sysDamage>
+		<noSysDamage>true</noSysDamage>
 		<sp>0</sp>
 		<fireChance>6</fireChance>
 		<breachChance>0</breachChance>
@@ -11279,7 +11279,7 @@
 			Stun Chance: 100% (3 seconds long)
 		</tooltipOverride>
 		<damage>3</damage>
-		<sysDamage>-3</sysDamage>
+		<noSysDamage>true</noSysDamage>
 		<sp>0</sp>
 		<fireChance>6</fireChance>
 		<breachChance>0</breachChance>
@@ -11358,7 +11358,7 @@
 			Stun Chance: 100% (5 seconds long)
 		</tooltipOverride>
 		<damage>4</damage>
-		<sysDamage>-4</sysDamage>
+		<noSysDamage>true</noSysDamage>
 		<sp>0</sp>
 		<fireChance>8</fireChance>
 		<breachChance>0</breachChance>
@@ -11438,7 +11438,7 @@
 			Stun Chance: 100% (3 seconds long)
 		</tooltipOverride>
 		<damage>2</damage>
-		<sysDamage>-2</sysDamage>
+		<noSysDamage>true</noSysDamage>
 		<sp>0</sp>
 		<fireChance>2</fireChance>
 		<breachChance>0</breachChance>
@@ -11586,8 +11586,8 @@
 		<desc>An incredibly unstable bio-weapon developed by only the most criminally insane shell scientists, this weapon inflicts crew with a deadly spreading virus, slowly wiping out the crew of enemy ships.</desc>
 		<tooltip>Beware! A misfire from this weapon once wiped out an entire shell colony, so maybe don't fire it too close to your boarders.</tooltip>
 		<damage>2</damage>
-	        <sysDamage>-1</sysDamage>
-	        <persDamage>-2</persDamage>
+    <sysDamage>-1</sysDamage>
+    <persDamage>-2</persDamage>
 		<sp>10</sp>
 		<fireChance>0</fireChance>
 		<breachChance>2</breachChance>
@@ -17138,7 +17138,7 @@
 		<desc>A combination of Energy and Pinpoint technology. Deals no system damage, but deals 2 ion damage on a room hit and charges faster than the Dirk. May start fires.</desc>
 		<tooltip>One damage per room beam weapon</tooltip>
 		<damage>2</damage>
-		<sysDamage>-2</sysDamage>
+		<noSysDamage>true</noSysDamage>
 		<sp>0</sp>
 		<fireChance>4</fireChance>
 		<breachChance>0</breachChance>
@@ -17185,7 +17185,7 @@
 		<desc>A combination of Energy and Pinpoint technology. Deals no system damage, but deals 3 ion damage on a room hit, stuns all crew in the room, and charges faster than the Misericorde. Likely to start fires.</desc>
 		<tooltip>One damage per room beam weapon</tooltip>
 		<damage>3</damage>
-		<sysDamage>-3</sysDamage>
+		<noSysDamage>true</noSysDamage>
 		<sp>0</sp>
 		<fireChance>6</fireChance>
 		<breachChance>0</breachChance>
@@ -17232,7 +17232,7 @@
 		<desc>A combination of Energy and Pinpoint technology. Deals no system damage, but deals 4 ion damage on a room hit, stuns all crew in the room, and charges faster than the Stiletto. Very likely to start fires.</desc>
 		<tooltip>One damage per room beam weapon</tooltip>
 		<damage>4</damage>
-		<sysDamage>-4</sysDamage>
+		<noSysDamage>true</noSysDamage>
 		<sp>0</sp>
 		<fireChance>6</fireChance>
 		<breachChance>0</breachChance>
