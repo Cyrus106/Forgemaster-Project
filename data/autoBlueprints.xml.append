@@ -2334,6 +2334,199 @@
 	<name>FM_SHOP_DRONES_3</name>
 </blueprintList>
 
+<blueprintList name="FM_SHOP_WEAPONS_ALL">
+	<!--3 of each-->
+	<name>LASER_BIO</name>
+	<name>ION_TRI</name>
+	<name>MINELAUNCHER_STUN</name>
+	<name>BEAM_PARTICLE</name>
+	<name>BEAM_GUILLOTINE</name>
+	<name>BOMB_1</name>
+	<name>BEAM_2</name>
+	<name>FOCUS_CHAIN</name>
+	<name>ENERGY_1</name>
+	<name>FOCUS_1</name>
+	<name>ENERGY_2</name>
+	<name>FOCUS_2</name>
+	<name>ENERGY_3</name>
+	<name>FOCUS_3</name>
+	<name>SHOTGUN_TOXIC</name>
+	<name>LASER_FROST_2</name>
+	<name>SHOTGUN_2</name>
+	<name>CRYSTAL_STUN</name>
+	<name>FM_CORROSIVE_2</name>
+	<!--2 of each-->
+	<name>MISSILES_3</name>
+	<name>BOMB_LOCK</name>
+	<name>KERNEL_1_ELITE</name>
+	<name>ION_2</name>
+	<name>LASER_HULL_2</name>
+	<name>MINELAUNCHER_BREACH</name>
+	<name>SHOTGUN_4</name>
+	<name>LASER_LIGHT</name>
+	<name>LASER_LIGHT_2</name>
+	<name>SHOTGUN_3</name>
+	<name>ENERGY_CHARGEGUN</name>
+	<name>ION_3</name>
+	<name>FOCUS_BIO</name>
+	<!--1 of each-->
+	<name>MISSILES_CLOAK</name>
+	<name>ENERGY_STUN</name>
+	<name>MISSILES_4</name>
+	<name>MISSILES_FIRE</name>
+	<name>BEAM_MINING</name>
+	<name>BOMB_ION</name>
+	<name>LASER_PIERCE_2</name>
+	<name>BEAM_LONG_2</name>
+	<name>BEAM_BREACH</name>
+	<name>LASER_BURST_3</name>
+	<name>LASER_BURST_3</name>
+
+	<name>LASER_FROST_1</name>
+	<name>LASER_FROST_1</name>
+	<name>LASER_FROST_1</name>
+	<name>ION_PIERCE_2</name>
+	<name>ION_PIERCE_2</name>
+	<name>ION_PIERCE_2</name>
+	<name>ION_FIRE</name>
+	<name>ION_FIRE</name>
+	<name>ION_FIRE</name>
+	<name>MINELAUNCHER_1</name>
+	<name>BEAM_PIERCE</name>
+	<name>BEAM_PIERCE</name>
+	<name>BEAM_PIERCE</name>
+	<name>LASER_PARTICLE</name>
+	<name>LASER_PARTICLE</name>
+	<name>LASER_PARTICLE</name>
+	<name>LASER_PARTICLE_2</name>
+	<name>LASER_PARTICLE_2</name>
+	<name>LASER_PARTICLE_2</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_BURST_2</name>
+	<name>LASER_BURST_2</name>
+	<name>ION_HEAVY</name>
+	<name>ION_HEAVY</name>
+	<name>BOMB_ION</name>
+	<name>CRYSTAL_STUN</name>
+	<name>FM_CORROSIVE_2</name>
+
+	<name>ION_CHARGEGUN_2</name>
+	<name>ION_CHARGEGUN_2</name>
+	<name>ION_CHARGEGUN</name>
+	<name>ION_CHARGEGUN</name>
+	<name>LASER_CHAINGUN_2</name>
+	<name>ENERGY_HULL</name>
+	<name>ENERGY_HULL</name>
+	<name>MINELAUNCHER_2</name>
+	<name>MINELAUNCHER_2</name>
+	<name>BOMB_FIRE</name>
+	<name>BOMB_FIRE</name>
+	<name>BOMB_FIRE</name>
+	<name>BOMB_BIO</name>
+	<name>BOMB_BIO</name>
+	<name>MISSILES_BIO</name>
+	<name>MISSILES_BIO</name>
+</blueprintList>
+<blueprintList name="FM_SHOP_WEAPONS_1"><!--3 items-->
+	<name>BOMB_1</name>
+	<name>SHOTGUN_2</name>
+
+	<name>MINELAUNCHER_1</name>
+
+</blueprintList>
+<blueprintList name="FM_SHOP_WEAPONS_2"><!--8 items-->
+	<name>LASER_HEAVY_1</name>
+	<name>BEAM_LONG</name>
+	<name>FOCUS_1</name>
+	<name>ENERGY_1</name>
+	<name>BOMB_LOCK</name><!--based on crystal unique sector rarity-->
+	<name>CRYSTAL_STUN</name><!--based on crystal unique sector rarity-->
+
+	<name>MINELAUNCHER_2</name>
+	<name>MINELAUNCHER_STUN</name>
+</blueprintList>
+<blueprintList name="FM_SHOP_WEAPONS_3"><!--22 items-->
+	<name>LASER_BURST_2</name>
+	<name>LASER_HULL_2</name>
+	<name>LASER_LIGHT</name>
+	<name>LASER_FROST_1</name>
+	<name>LASER_PARTICLE</name>
+	<name>BEAM_PARTICLE</name>
+	<name>ION_2</name>
+	<name>ION_HEAVY</name>
+	<name>ION_CHARGEGUN</name>
+	<name>ION_CHARGEGUN_2</name>
+	<name>MISSILES_3</name>
+	<name>MISSILES_4</name>
+	<name>MISSILES_CLOAK</name>
+	<name>BEAM_2</name>
+	<name>BEAM_BREACH</name>
+	<name>BOMB_FIRE</name>
+	<name>BOMB_ION</name>
+	<name>BOMB_BIO</name>
+	<name>ENERGY_2</name>
+	<name>ENERGY_CHARGEGUN</name>
+	<name>KERNEL_1_ELITE</name><!--+2 rairty based on orchid sector rarity-->
+
+	<name>MINELAUNCHER_BREACH</name>
+</blueprintList>
+<blueprintList name="FM_SHOP_WEAPONS_4"><!--17 items-->
+	<name>LASER_BURST_3</name>
+	<name>LASER_LIGHT_2</name>
+	<name>LASER_FROST_2</name>
+	<name>LASER_PARTICLE_2</name>
+	<name>ION_3</name>
+	<name>ION_TRI</name>
+	<name>ION_PIERCE_2</name>
+	<name>MISSILES_FIRE</name>
+	<name>MISSILES_BIO</name>
+	<name>BEAM_SCYTHE</name>
+	<name>BEAM_ADAPT</name>
+	<name>FOCUS_2</name>
+	<name>BOMB_STUN</name>
+	<name>ENERGY_HULL</name>
+	<name>ENERGY_STUN</name>
+	<name>SHOTGUN_3</name>
+	<name>FM_CORROSIVE_2</name><!--higer rarity than hull laser2?-->
+</blueprintList>
+<blueprintList name="FM_SHOP_WEAPONS_5"><!--15 items-->
+	<name>LASER_PIERCE_2</name>
+	<name>LASER_CHAINGUN_2</name>
+	<name>LASER_BIO</name>
+	<name>ION_FIRE</name>
+	<name>BEAM_LONG_2</name>
+	<name>BEAM_PIERCE</name>
+	<name>BEAM_MINING</name>
+	<name>BEAM_GUILLOTINE</name>
+	<name>FOCUS_3</name>
+	<name>FOCUS_CHAIN</name>
+	<name>FOCUS_BIO</name>
+	<name>ENERGY_3</name>
+	<name>SHOTGUN_4</name>
+	<name>SHOTGUN_TOXIC</name>
+	<name>ENERGY_CONSERVATIVE</name>
+</blueprintList>
+<blueprintList name="FM_SHOP_FORGEMASTER_WEAPON_NEW">
+	<name>FM_SHOP_WEAPONS_1</name>
+	<name>FM_SHOP_WEAPONS_2</name>
+	<name>FM_SHOP_WEAPONS_2</name>
+	<name>FM_SHOP_WEAPONS_3</name>
+	<name>FM_SHOP_WEAPONS_3</name>
+	<name>FM_SHOP_WEAPONS_3</name>
+	<name>FM_SHOP_WEAPONS_3</name>
+	<name>FM_SHOP_WEAPONS_3</name>
+	<name>FM_SHOP_WEAPONS_3</name>
+	<name>FM_SHOP_WEAPONS_4</name>
+	<name>FM_SHOP_WEAPONS_4</name>
+	<name>FM_SHOP_WEAPONS_4</name>
+	<name>FM_SHOP_WEAPONS_4</name>
+	<name>FM_SHOP_WEAPONS_4</name>
+	<name>FM_SHOP_WEAPONS_5</name>
+	<name>FM_SHOP_WEAPONS_5</name>
+	<name>FM_SHOP_WEAPONS_5</name>
+</blueprintList>
+
 <blueprintList name="FM_SHOP_DRONES_1">
 	<name>MANNING</name>
 	<name>COMBAT_CONSERVATIVE_LASER</name>

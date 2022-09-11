@@ -3478,35 +3478,20 @@
 			<category type="WEAPONS">
 				<customTitle>WEAPONS</customTitle>
 				<item>
-					<blueprint>FM_SHOP_FORGEMASTER_WEAPON_1_PLAYER</blueprint>
+					<blueprint>FM_SHOP_FORGEMASTER_WEAPON_NEW</blueprint>
+					<!--<blueprint>FM_SHOP_FORGEMASTER_WEAPON_1_PLAYER</blueprint>-->
 					<modifier min="1.2" max="1.2" flat="false"/>
 					<price>-1</price>
 				</item>
 				<item>
-					<blueprint>FM_SHOP_FORGEMASTER_WEAPON_2_PLAYER</blueprint>
+					<blueprint>FM_SHOP_FORGEMASTER_WEAPON_NEW</blueprint>
+					<!--<blueprint>FM_SHOP_FORGEMASTER_WEAPON_2_PLAYER</blueprint>-->
 					<modifier min="1.2" max="1.2" flat="false"/>
 					<price>-1</price>
 				</item>
 				<item>
-					<blueprint>FM_SHOP_FORGEMASTER_WEAPON_3_PLAYER</blueprint>
-					<modifier min="1.2" max="1.2" flat="false"/>
-					<price>-1</price>
-				</item>
-			</category>
-			<category type="WEAPONS">
-				<customTitle>WEAPONS</customTitle>
-				<item>
-					<blueprint>FM_SHOP_FORGEMASTER_WEAPON_1_PLAYER</blueprint>
-					<modifier min="1.2" max="1.2" flat="false"/>
-					<price>-1</price>
-				</item>
-				<item>
-					<blueprint>FM_SHOP_FORGEMASTER_WEAPON_1_PLAYER</blueprint>
-					<modifier min="1.2" max="1.2" flat="false"/>
-					<price>-1</price>
-				</item>
-				<item>
-					<blueprint>FM_SHOP_FORGEMASTER_WEAPON_1_PLAYER</blueprint>
+					<blueprint>FM_SHOP_FORGEMASTER_WEAPON_NEW</blueprint>
+					<!--<blueprint>FM_SHOP_FORGEMASTER_WEAPON_3_PLAYER</blueprint>-->
 					<modifier min="1.2" max="1.2" flat="false"/>
 					<price>-1</price>
 				</item>
@@ -3514,17 +3499,41 @@
 			<category type="WEAPONS">
 				<customTitle>WEAPONS</customTitle>
 				<item>
-					<blueprint>FM_SHOP_FORGEMASTER_WEAPON_1_PLAYER</blueprint>
+					<blueprint>FM_SHOP_FORGEMASTER_WEAPON_NEW</blueprint>
+					<!--<blueprint>FM_SHOP_FORGEMASTER_WEAPON_1_PLAYER</blueprint>-->
 					<modifier min="1.2" max="1.2" flat="false"/>
 					<price>-1</price>
 				</item>
 				<item>
-					<blueprint>FM_SHOP_FORGEMASTER_WEAPON_1_PLAYER</blueprint>
+					<blueprint>FM_SHOP_FORGEMASTER_WEAPON_NEW</blueprint>
+					<!--<blueprint>FM_SHOP_FORGEMASTER_WEAPON_1_PLAYER</blueprint>-->
 					<modifier min="1.2" max="1.2" flat="false"/>
 					<price>-1</price>
 				</item>
 				<item>
-					<blueprint>FM_SHOP_FORGEMASTER_WEAPON_1_PLAYER</blueprint>
+					<blueprint>FM_SHOP_FORGEMASTER_WEAPON_NEW</blueprint>
+					<!--<blueprint>FM_SHOP_FORGEMASTER_WEAPON_1_PLAYER</blueprint>-->
+					<modifier min="1.2" max="1.2" flat="false"/>
+					<price>-1</price>
+				</item>
+			</category>
+			<category type="WEAPONS">
+				<customTitle>WEAPONS</customTitle>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_WEAPON_NEW</blueprint>
+					<!--<blueprint>FM_SHOP_FORGEMASTER_WEAPON_1_PLAYER</blueprint>-->
+					<modifier min="1.2" max="1.2" flat="false"/>
+					<price>-1</price>
+				</item>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_WEAPON_NEW</blueprint>
+					<!--<blueprint>FM_SHOP_FORGEMASTER_WEAPON_1_PLAYER</blueprint>-->
+					<modifier min="1.2" max="1.2" flat="false"/>
+					<price>-1</price>
+				</item>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_WEAPON_NEW</blueprint>
+					<!--<blueprint>FM_SHOP_FORGEMASTER_WEAPON_1_PLAYER</blueprint>-->
 					<modifier min="1.2" max="1.2" flat="false"/>
 					<price>-1</price>
 				</item>
