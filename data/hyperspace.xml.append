@@ -4441,6 +4441,9 @@
 			<canTeleport>false</canTeleport>
 			<noSlot>true</noSlot>
 			<noAI>true</noAI>
+			<validTarget>false</validTarget>
+			<canMove>false</canMove>
+			<snapToSlot>true</snapToSlot>
 			<controllable>false</controllable>
 			<selectable>false</selectable>
 			<canPhaseThroughDoors>true</canPhaseThroughDoors>
@@ -4902,6 +4905,9 @@
 			<noClone>true</noClone>
 			<noSlot>true</noSlot>
 			<noAI>true</noAI>
+			<validTarget>false</validTarget>
+			<canMove>false</canMove>
+			<snapToSlot>true</snapToSlot>
 			<controllable>false</controllable>
 			<canTeleport>false</canTeleport>
 			<resistsMindControl>true</resistsMindControl>
@@ -5453,10 +5459,10 @@
 	</crew>
 
 	<crew>
-	<race name="fm_separatist_bronze">
-		        <essential>1</essential>
+		<race name="fm_separatist_bronze">
+      <essential>1</essential>
 			<maxHealth>100</maxHealth>
-		        <repairSpeed>1</repairSpeed>
+      <repairSpeed>1</repairSpeed>
 			<damageMultiplier>1.5</damageMultiplier>
 			<fireDamageMultiplier>0.5</fireDamageMultiplier>
 			<moveSpeedMultiplier>1.3</moveSpeedMultiplier>
@@ -5464,59 +5470,59 @@
 			<deathSounds>
 				<deathSound>engiDeath</deathSound>
 			</deathSounds>
-		        <passiveStatBoosts>
-			<statBoost name="deathEffect">
-				<boostType>SET</boostType>
-				<whiteList>
-					<fm_separatist_bronze />
-				</whiteList>
-				<shipTarget>CREW_TARGET</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<priority>999999</priority>
-				<deathEffect>
-					<transformRace class="fm_separatist_bronze">fm_nano_bronze</transformRace>
-				</deathEffect>
-			</statBoost>
-		        </passiveStatBoosts>
+      <passiveStatBoosts>
+				<statBoost name="deathEffect">
+					<boostType>SET</boostType>
+					<whiteList>
+						<fm_separatist_bronze />
+					</whiteList>
+					<shipTarget>CREW_TARGET</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+					<deathEffect>
+						<transformRace class="fm_separatist_bronze">fm_nano_bronze</transformRace>
+					</deathEffect>
+				</statBoost>
+      </passiveStatBoosts>
 
-	</race>
+		</race>
 	</crew>
 
 	<crew>
-	<race name="fm_separatist_cobalt">
-		        <essential>1</essential>
+		<race name="fm_separatist_cobalt">
+		  <essential>1</essential>
 			<maxHealth>100</maxHealth>
-		        <repairSpeed>2</repairSpeed>
+		  <repairSpeed>2</repairSpeed>
 			<damageTakenMultiplier>0.75</damageTakenMultiplier>
 			<damageMultiplier>1</damageMultiplier>
 			<suffocationModifier>0.5</suffocationModifier>
 			<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
-		        <noClone>true</noClone>
+      <noClone>true</noClone>
 			<animBase>engi</animBase>
 			<deathSounds>
 				<deathSound>engiDeath</deathSound>
 			</deathSounds>
-                        <deathEffect>
-			<spawnCrew>
-				<race>fm_nano_cobalt</race>
-				<name>Cobalt</name>
-				<number>1</number>
-			</spawnCrew>
-		</deathEffect>
-	</race>
+      <deathEffect>
+				<spawnCrew>
+					<race>fm_nano_cobalt</race>
+					<name>Cobalt</name>
+					<number>1</number>
+				</spawnCrew>
+			</deathEffect>
+		</race>
 	</crew>
 	<crew>
-	<race name="fm_nano_cobalt">
-		        <essential>1</essential>
+		<race name="fm_nano_cobalt">
+		  <essential>1</essential>
 			<maxHealth>100</maxHealth>
-		        <canRepair>false</canRepair>
-		        <repairSpeed>2</repairSpeed>
+      <canRepair>false</canRepair>
+      <repairSpeed>2</repairSpeed>
 			<damageTakenMultiplier>0</damageTakenMultiplier>
-		        <canBurn>false</canBurn>
-		        <canFight>false</canFight>
-		        <passiveHealAmount>5</passiveHealAmount>
+      <canBurn>false</canBurn>
+      <canFight>false</canFight>
+      <passiveHealAmount>5</passiveHealAmount>
 			<damageMultiplier>1</damageMultiplier>
-		        <canSuffocate>false</canSuffocate>
+      <canSuffocate>false</canSuffocate>
 			<suffocationModifier>0.5</suffocationModifier>
 			<canMan>false</canMan>
 			<controllable>true</controllable>
@@ -5526,64 +5532,64 @@
 			<deathSounds>
 				<deathSound>engiDeath</deathSound>
 			</deathSounds>
-                        <powerEffect>
-			<cooldown>15</cooldown>
-			<jumpCooldown>full</jumpCooldown>
-			<buttonText>REFORM</buttonText>
-			<tooltip>[COOLDOWN:15s]
-				Absorb part of the hull to reform into a Cobalt Separatist.</tooltip>
-			<cooldownColor r="0" g="0" b="255"/>
-			<transformRace>fm_separatist_cobalt</transformRace>
+      <powerEffect>
+				<cooldown>15</cooldown>
+				<jumpCooldown>full</jumpCooldown>
+				<buttonText>REFORM</buttonText>
+				<tooltip>[COOLDOWN:15s]
+					Absorb part of the hull to reform into a Cobalt Separatist.</tooltip>
+				<cooldownColor r="0" g="0" b="255"/>
+				<transformRace>fm_separatist_cobalt</transformRace>
 				<damage>1</damage>
 				<sysDamage>-1</sysDamage>
 				<persDamage>-1</persDamage>
 				<breachChance>10</breachChance>
-		</powerEffect>
+			</powerEffect>
 
-	</race>
+		</race>
 	</crew>
 	<crew>
-	<race name="fm_separatist_twisted">
+		<race name="fm_separatist_twisted">
 			<maxHealth>125</maxHealth>
-		        <repairSpeed>1.75</repairSpeed>
-		        <suffocationModifier>0.5</suffocationModifier>
-		        <fireDamageMultiplier>0.5</fireDamageMultiplier>
+      <repairSpeed>1.75</repairSpeed>
+      <suffocationModifier>0.5</suffocationModifier>
+      <fireDamageMultiplier>0.5</fireDamageMultiplier>
 			<damageMultiplier>1.25</damageMultiplier>
 			<damageTakenMultiplier>0.75</damageTakenMultiplier>
 			<moveSpeedMultiplier>1</moveSpeedMultiplier>
-		        <noClone>true</noClone>
+      <noClone>true</noClone>
 			<animBase>engi</animBase>
 			<deathSounds>
 				<deathSound>engiDeath</deathSound>
 			</deathSounds>
-		        <deathEffect>
-			<spawnCrew>
-				<race>fm_nano_cobalt</race>
-				<name>Cobalt</name>
-				<number>1</number>
-			</spawnCrew>
-		        <spawnCrew>
-				<race>fm_separatist_bronze</race>
-				<name>Bronze</name>
-				<number>1</number>
-			</spawnCrew>
-		        </deathEffect>
-	<!--	        <passiveStatBoosts>
-			<statBoost name="deathEffect">
-				<boostType>SET</boostType>
-				<whiteList>
-					<fm_separatist_twisted />
-				</whiteList>
-				<shipTarget>CREW_TARGET</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<priority>999999</priority>
-				<deathEffect>
-					<transformRace class="fm_separatist_twisted">fm_nano_bronze</transformRace>
-				</deathEffect>
-			</statBoost>
-		        </passiveStatBoosts> -->
+			<deathEffect>
+				<spawnCrew>
+					<race>fm_nano_cobalt</race>
+					<name>Cobalt</name>
+					<number>1</number>
+				</spawnCrew>
+        <spawnCrew>
+					<race>fm_separatist_bronze</race>
+					<name>Bronze</name>
+					<number>1</number>
+				</spawnCrew>
+      </deathEffect>
+		<!--	        <passiveStatBoosts>
+				<statBoost name="deathEffect">
+					<boostType>SET</boostType>
+					<whiteList>
+						<fm_separatist_twisted />
+					</whiteList>
+					<shipTarget>CREW_TARGET</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+					<deathEffect>
+						<transformRace class="fm_separatist_twisted">fm_nano_bronze</transformRace>
+					</deathEffect>
+				</statBoost>
+			        </passiveStatBoosts> -->
 
-	</race>
+		</race>
 	</crew>
 
 	<crew> <!-- Ancalagon Red Crystal-->
@@ -5946,6 +5952,7 @@
 			<canSabotage>false</canSabotage>
 			<canTeleport>false</canTeleport>
 			<selectable>false</selectable>
+			<canMove>false</canMove>			<snapToSlot>true</snapToSlot>
 			<canMan>false</canMan>
 			<noClone>true</noClone>
 			<noSlot>false</noSlot>
@@ -5997,6 +6004,9 @@
 			<noClone>true</noClone>
 			<noSlot>true</noSlot>
 			<noAI>true</noAI>
+			<validTarget>false</validTarget>
+			<canMove>false</canMove>
+			<snapToSlot>true</snapToSlot>
 			<controllable>false</controllable>
 			<selectable>false</selectable>
 			<canPhaseThroughDoors>true</canPhaseThroughDoors>
@@ -7594,6 +7604,9 @@
 			<canMan>false</canMan>
 			<noClone>true</noClone>
 			<noSlot>true</noSlot>
+			<validTarget>false</validTarget>
+			<canMove>false</canMove>
+			<snapToSlot>true</snapToSlot>
 			<controllable>false</controllable>
 			<selectable>false</selectable>
 			<canPhaseThroughDoors>true</canPhaseThroughDoors>
