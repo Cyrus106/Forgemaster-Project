@@ -2466,6 +2466,31 @@
 	<name>MINELAUNCHER_2</name>
 	<name>MINELAUNCHER_STUN</name>
 </blueprintList>
+<blueprintList name="FM_SHOP_WEAPONS_LOW"><!--12(20) items--><!--first and second list in one list for lower dupe chance-->
+	<name>BOMB_1</name>
+	<name>SHOTGUN_2</name>
+	<name>CRYSTAL_HEAVY_1</name><!--based on crystal unique sector rarity-->
+
+	<name>MINELAUNCHER_1</name>
+
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_HEAVY_1</name>
+	<name>BEAM_LONG</name>
+	<name>BEAM_LONG</name>
+	<name>FOCUS_1</name>
+	<name>FOCUS_1</name>
+	<name>ENERGY_1</name>
+	<name>ENERGY_1</name>
+	<name>BOMB_LOCK</name><!--based on crystal unique sector rarity-->
+	<name>BOMB_LOCK</name><!--based on crystal unique sector rarity-->
+	<name>CRYSTAL_STUN</name><!--based on crystal unique sector rarity-->
+	<name>CRYSTAL_STUN</name><!--based on crystal unique sector rarity-->
+
+	<name>MINELAUNCHER_2</name>
+	<name>MINELAUNCHER_2</name>
+	<name>MINELAUNCHER_STUN</name>
+	<name>MINELAUNCHER_STUN</name>
+</blueprintList>
 <blueprintList name="FM_SHOP_WEAPONS_3"><!--23 items-->
 	<name>LASER_BURST_2</name>
 	<name>LASER_HULL_2</name>
@@ -2530,16 +2555,16 @@
 	<name>ENERGY_CONSERVATIVE</name>
 	<name>LASER_BURST_5</name><!--+1 rairty due to balance-->
 </blueprintList>
-<blueprintList name="FM_SHOP_WEAPONS_1_2">
+<blueprintList name="FM_SHOP_WEAPONS_1_2"><!--stupidly enough this doesn't work, calling weapon from a list in a list works, calling one from a  list in  a list in a list doesn't -->
 	<name>FM_SHOP_WEAPONS_1</name>
 	<name>FM_SHOP_WEAPONS_2</name>
 	<name>FM_SHOP_WEAPONS_2</name>
 </blueprintList>
 <blueprintList name="FM_SHOP_FORGEMASTER_WEAPON_NEW">
-	<name>FM_SHOP_WEAPONS_1_2</name>
-	<name>FM_SHOP_WEAPONS_1_2</name>
-	<name>FM_SHOP_WEAPONS_1_2</name>
-	<name>FM_SHOP_WEAPONS_1_2</name>
+	<name>FM_SHOP_WEAPONS_LOW</name>
+	<name>FM_SHOP_WEAPONS_LOW</name>
+	<name>FM_SHOP_WEAPONS_LOW</name>
+	<name>FM_SHOP_WEAPONS_LOW</name>
 	<name>FM_SHOP_WEAPONS_3</name>
 	<name>FM_SHOP_WEAPONS_3</name>
 	<name>FM_SHOP_WEAPONS_3</name>
