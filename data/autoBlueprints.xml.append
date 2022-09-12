@@ -186,7 +186,7 @@
 	<droneList drones="99" count="8">
 		<drone name="BATTLETOG2_DEFEND_GUNBOM" />
 		<drone name="BATTLETOG2_BOARDER_GUNBOM" />
-		<drone name="COMBAT_2_LASER_GUNBOM" />
+		<drone name="COMBAT_2_LASER" />
 		<drone name="LOOT_ENGI_2" />
 		<drone name="ION_1_AMP3_ENEMY" />
 		<drone name="LOOT_AUG_1_AMP2" />
@@ -682,7 +682,7 @@
 	<maxPower amount="999" />
 	<crewCount amount="1" max="1" class="butler" />
 	<boardingAI>invasion</boardingAI>
-	<aug name="UPG_ION_ARMOR" />
+	<aug name="UPG_SHIELD_ION" />
 	<aug name="LOCKED_COAL_AUG" />
 </shipBlueprint>
 
@@ -1466,11 +1466,14 @@
 	<name>LASER_BURST_3</name>
 </blueprintList>
 
+<weaponBlueprint name="Hello Gordon!">
+	<desc>this is a placeholder</desc>
+</weaponBlueprint>
 <!--HELLO GORDON IS CRUCIAL TO THE CODE DO NOT REMOVE (not really but it's funny leave it for now so we know it's not done)-->
 <blueprintList name="LIST_FLAK_POWER_0_NORMAL">
 		<name>Hello Gordon!</name>
 		<name>LASER_BURST_2_A</name>
-
+		
 
 
 		<name>SHOTGUN_INSTANT</name>
@@ -1478,7 +1481,7 @@
 	<blueprintList name="LIST_FLAK_POWER_0_SPECIAL">
 		<name>Hello Gordon!</name>
 
-
+		
 		<name>SHOTGUN_INSTANT</name>
 	</blueprintList>
 	<blueprintList name="LIST_FLAK_POWER_1_NORMAL">
@@ -1678,7 +1681,7 @@
 </blueprintList>
 
 <blueprintList name = "LIST_FLAK_FORGE_SPECIAL_2">
-	<name>LOOT_AUG_1</name>
+	<name>LOOT_LANIUS_1</name>
 </blueprintList>
 
 <blueprintList name = "LIST_FLAK_FORGE_SPECIAL_3">
@@ -2147,7 +2150,7 @@
 	<name>FM_MINELAUNCHER_HULL_ENEMY</name>
 	<name>FM_BOMB_CRYSTAL_FIRE_ENEMY</name>
 	<name>FM_BOMB_CRYSTAL_FIRE_ENEMY</name>
-	<name>FM_IRIDIUM_ENEMY</name>
+	<name>FM_SHOTGUN_IRIDIUM_ENEMY</name>
 	<name>FM_SHOTGUN_AETHER_ENEMY</name>
 	<name>FM_ION_TRI_FIRE_ENEMY</name>
 	<name>FM_ION_TRI_FIRE_ENEMY</name>
@@ -2169,13 +2172,13 @@
 	<name>FM_MINELAUNCHER_HULL_ENEMY</name>
 	<name>FM_BOMB_CRYSTAL_FIRE_ENEMY</name>
 	<name>FM_BOMB_CRYSTAL_FIRE_ENEMY</name>
-	<name>FM_IRIDIUM_ENEMY</name>
+	<name>FM_SHOTGUN_IRIDIUM_ENEMY</name>
 	<name>FM_SHOTGUN_AETHER_ENEMY</name>
 	<name>FM_ION_TRI_FIRE_ENEMY</name>
 	<name>FM_ION_TRI_FIRE_ENEMY</name>
 	<name>FM_ENERGY_DISC_ENEMY</name>
 	<name>FM_CHAINGUN_ION_ENEMY</name>
-
+	
 	<name>FM_BEAM_EXPLOSION_ENEMY</name>
 	<name>FM_SHOTGUN_ANOMALY_ENEMY</name>
 	<name>FM_SHOTGUN_ANOMALY_ENEMY</name>
@@ -2185,7 +2188,7 @@
 	<name>FM_MINELAUNCHER_HULL_ENEMY</name>
 	<name>FM_BOMB_CRYSTAL_FIRE_ENEMY</name>
 	<name>FM_BOMB_CRYSTAL_FIRE_ENEMY</name>
-	<name>FM_IRIDIUM_ENEMY</name>
+	<name>FM_SHOTGUN_IRIDIUM_ENEMY</name>
 	<name>FM_SHOTGUN_AETHER_ENEMY</name>
 
 

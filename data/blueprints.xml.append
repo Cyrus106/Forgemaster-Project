@@ -13441,7 +13441,7 @@
 		<bp>5</bp>
 		<rarity>0</rarity>
 		<fireTime>1.5</fireTime><!--May or may not be necessary-->
-
+		
 		<statBoosts>
 			        <statBoost name="transformRace">
 			                <boostType>SET</boostType>
@@ -14397,7 +14397,7 @@
 
 
 
-
+	
 	<droneBlueprint name="FM_MFK_PICKET_DRONE">
 	    <type>COMBAT</type>
 	    <title>MFK Picket Teleporter Relay</title>
@@ -14414,7 +14414,7 @@
 	    <rarity>0</rarity>
 	    <iconImage>combat</iconImage>
 	</droneBlueprint>
-
+	
 	<weaponBlueprint name="FM_MFK_PICKET_DRONE_WEAPON">
 		<type>LASER</type>
 		<title>Picket Boarder Launcher</title>
@@ -14441,7 +14441,7 @@
 						</statBoost>
 				</statBoosts>
 		</spawnCrew>
-		<image>nothing</image>
+		<image>laser_burst</image>
 		<launchSounds>
 				<sound>silence</sound>
 		</launchSounds>
@@ -14454,7 +14454,7 @@
 		<missSounds>
 				<sound>miss</sound>
 		</missSounds>
-		<explosion>nothing</explosion>
+		<explosion>fm_repair_hull_death_right</explosion>
 		<weaponArt>laser_burst_1</weaponArt>
 	</weaponBlueprint>
 
@@ -14815,7 +14815,7 @@
 
 	<weaponBlueprint name="FM_BEAM_GUILLOTINE_CHAIN_PLAYER_INVIS"> <!-- Invisible Menaulion, artillery for gunbom future-->
 		<type>BEAM</type>
-		<tip>tip_crew_damage_beam</tip>
+		<tip>tip_bio</tip>
 		<title>'Menaulion' Beam+</title>
 		<short>Menaulion+</short>
 		<desc>A Radiant beam that chains faster and faster, pierces 3 shields, and stuns. Deals 4 system and 60 crew damage.
@@ -16888,7 +16888,7 @@
 	<weaponBlueprint name="FM_BEAM_GUILLOTINE_CHAIN_ENEMY">
 
 		<type>BEAM</type>
-		<tip>tip_crew_damage_beam</tip>
+		<tip>tip_bio</tip>
 		<title>'Menaulion' Beam</title>
 		<short>Menaulion</short>
 		<desc>When the Guild said they were designing a beam that kills so fast it would be legal, because nobody would ever live to report it....They weren't in a joking mood.</desc>
@@ -19563,8 +19563,8 @@
 		</spawnCrew>
 		<cost>0</cost>
 		<rarity>0</rarity>
-		<image>nothing</image>
-		<explosion>nothing</explosion>
+		<image>laser_burst</image>
+		<explosion>fm_repair_hull_death_right</explosion>
 		<launchSounds>
 			<sound>silence</sound>
 		</launchSounds>
@@ -19601,8 +19601,8 @@
 		</spawnCrew>
 		<cost>0</cost>
 		<rarity>0</rarity>
-		<image>nothing</image>
-		<explosion>nothing</explosion>
+		<image>laser_burst</image>
+		<explosion>fm_repair_hull_death_right</explosion>
 		<launchSounds>
 			<sound>silence</sound>
 		</launchSounds>
@@ -19639,8 +19639,8 @@
 		</spawnCrew>
 		<cost>0</cost>
 		<rarity>0</rarity>
-		<image>nothing</image>
-		<explosion>nothing</explosion>
+		<image>laser_burst</image>
+		<explosion>fm_repair_hull_death_right</explosion>
 		<launchSounds>
 			<sound>silence</sound>
 		</launchSounds>
@@ -19677,8 +19677,8 @@
 		</spawnCrew>
 		<cost>0</cost>
 		<rarity>0</rarity>
-		<image>nothing</image>
-		<explosion>nothing</explosion>
+		<image>laser_burst</image>
+		<explosion>fm_repair_hull_death_right</explosion>
 		<launchSounds>
 			<sound>silence</sound>
 		</launchSounds>
@@ -19715,8 +19715,8 @@
 		</spawnCrew>
 		<cost>0</cost>
 		<rarity>0</rarity>
-		<image>nothing</image>
-		<explosion>nothing</explosion>
+		<image>laser_burst</image>
+		<explosion>fm_repair_hull_death_right</explosion>
 		<launchSounds>
 			<sound>silence</sound>
 		</launchSounds>
@@ -19753,8 +19753,8 @@
 		</spawnCrew>
 		<cost>0</cost>
 		<rarity>0</rarity>
-		<image>nothing</image>
-		<explosion>nothing</explosion>
+		<image>laser_burst</image>
+		<explosion>fm_repair_hull_death_right</explosion>
 		<launchSounds>
 			<sound>silence</sound>
 		</launchSounds>
@@ -19791,8 +19791,8 @@
 		</spawnCrew>
 		<cost>0</cost>
 		<rarity>0</rarity>
-		<image>nothing</image>
-		<explosion>nothing</explosion>
+		<image>laser_burst</image>
+		<explosion>fm_repair_hull_death_right</explosion>
 		<launchSounds>
 			<sound>silence</sound>
 		</launchSounds>
@@ -19829,8 +19829,8 @@
 		</spawnCrew>
 		<cost>0</cost>
 		<rarity>0</rarity>
-		<image>nothing</image>
-		<explosion>nothing</explosion>
+		<image>laser_burst</image>
+		<explosion>fm_repair_hull_death_right</explosion>
 		<launchSounds>
 			<sound>silence</sound>
 		</launchSounds>
@@ -19867,8 +19867,8 @@
 		</spawnCrew>
 		<cost>0</cost>
 		<rarity>0</rarity>
-		<image>nothing</image>
-		<explosion>nothing</explosion>
+		<image>laser_burst</image>
+		<explosion>fm_repair_hull_death_right</explosion>
 		<launchSounds>
 			<sound>silence</sound>
 		</launchSounds>
@@ -19905,8 +19905,8 @@
 		</spawnCrew>
 		<cost>0</cost>
 		<rarity>0</rarity>
-		<image>nothing</image>
-		<explosion>nothing</explosion>
+		<image>laser_burst</image>
+		<explosion>fm_repair_hull_death_right</explosion>
 		<launchSounds>
 			<sound>silence</sound>
 		</launchSounds>
@@ -19943,8 +19943,8 @@
 		</spawnCrew>
 		<cost>0</cost>
 		<rarity>0</rarity>
-		<image>nothing</image>
-		<explosion>nothing</explosion>
+		<image>laser_burst</image>
+		<explosion>fm_repair_hull_death_right</explosion>
 		<launchSounds>
 			<sound>silence</sound>
 		</launchSounds>
@@ -19981,8 +19981,8 @@
 		</spawnCrew>
 		<cost>0</cost>
 		<rarity>0</rarity>
-		<image>nothing</image>
-		<explosion>nothing</explosion>
+		<image>laser_burst</image>
+		<explosion>fm_repair_hull_death_right</explosion>
 		<launchSounds>
 			<sound>silence</sound>
 		</launchSounds>
@@ -20019,8 +20019,8 @@
 		</spawnCrew>
 		<cost>0</cost>
 		<rarity>0</rarity>
-		<image>nothing</image>
-		<explosion>nothing</explosion>
+		<image>laser_burst</image>
+		<explosion>fm_repair_hull_death_right</explosion>
 		<launchSounds>
 			<sound>silence</sound>
 		</launchSounds>
@@ -20057,8 +20057,8 @@
 		</spawnCrew>
 		<cost>0</cost>
 		<rarity>0</rarity>
-		<image>nothing</image>
-		<explosion>nothing</explosion>
+		<image>laser_burst</image>
+		<explosion>fm_repair_hull_death_right</explosion>
 		<launchSounds>
 			<sound>silence</sound>
 		</launchSounds>
@@ -20095,8 +20095,8 @@
 		</spawnCrew>
 		<cost>0</cost>
 		<rarity>0</rarity>
-		<image>nothing</image>
-		<explosion>nothing</explosion>
+		<image>laser_burst</image>
+		<explosion>fm_repair_hull_death_right</explosion>
 		<launchSounds>
 			<sound>silence</sound>
 		</launchSounds>
@@ -20133,8 +20133,8 @@
 		</spawnCrew>
 		<cost>0</cost>
 		<rarity>0</rarity>
-		<image>nothing</image>
-		<explosion>nothing</explosion>
+		<image>laser_burst</image>
+		<explosion>fm_repair_hull_death_right</explosion>
 		<launchSounds>
 			<sound>silence</sound>
 		</launchSounds>
