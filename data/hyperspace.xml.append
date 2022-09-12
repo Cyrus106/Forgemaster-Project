@@ -2153,7 +2153,7 @@
 			<name>ENERGY_3</name>
 		</req>
 
-		<req name="FM_PULSEDEEP_LIST" type="all"> <!-- Burst Laser I + Energy I -->
+		<req name="FM_PULSEDEEP_LIST" type="all"> <!-- Heavy Ion + Heavy Energy -->
 			<name>ENERGY_HULL</name>
 			<name>ION_HEAVY</name>
 		</req>

@@ -1915,6 +1915,24 @@
 	<mod-append:name>FM_PULSEDEEP</mod-append:name>
 </mod:findName>
 
+<mod:findName type = "blueprintList" name = "BLUELIST_FOCUS_ALL">
+	<mod-append:name>FM_PULSE_1</mod-append:name>
+	<mod-append:name>FM_PULSE_2</mod-append:name>
+	<mod-append:name>FM_PULSE_2_PLAYER</mod-append:name>
+	<mod-append:name>FM_PULSE_3</mod-append:name>
+	<mod-append:name>FOCUS_4LIST</mod-append:name>
+	<mod-append:name>FM_FOCUS_ADAPT</mod-append:name>
+</mod:findName>
+
+<mod:findName type = "blueprintList" name = "BLUELIST_FOCUS_DAMAGE">
+	<mod-append:name>FM_PULSE_1</mod-append:name>
+	<mod-append:name>FM_PULSE_2</mod-append:name>
+	<mod-append:name>FM_PULSE_2_PLAYER</mod-append:name>
+	<mod-append:name>FM_PULSE_3</mod-append:name>
+	<mod-append:name>FOCUS_4LIST</mod-append:name>
+	<mod-append:name>FM_FOCUS_ADAPT</mod-append:name>
+</mod:findName>
+
 <mod:findName type = "blueprintList" name = "LIST_CREW_PARAGON_UNIQUE">
     <mod-append:name>fm_plated</mod-append:name>
 	<mod-append:name>fm_forgemasterperson</mod-append:name>
@@ -1955,6 +1973,7 @@
 <mod:findName type = "blueprintList" name = "BLUELIST_DRONES_BEAM">
 	<mod-append:name>FM_COMBAT_2_BEAM_PLAYER</mod-append:name>
 	<mod-append:name>FM_COMBAT_2_LASER_PLAYER</mod-append:name>
+	<mod-append:name>FM_ISHIMURA_DRONE</mod-append:name>
 </mod:findName>
 
 
@@ -2428,9 +2447,10 @@
 	<name>MISSILES_BIO</name>
 	<name>MISSILES_BIO</name>
 </blueprintList>
-<blueprintList name="FM_SHOP_WEAPONS_1"><!--3 items-->
+<blueprintList name="FM_SHOP_WEAPONS_1"><!--4 items-->
 	<name>BOMB_1</name>
 	<name>SHOTGUN_2</name>
+	<name>CRYSTAL_HEAVY_1</name><!--based on crystal unique sector rarity-->
 
 	<name>MINELAUNCHER_1</name>
 
@@ -2446,7 +2466,7 @@
 	<name>MINELAUNCHER_2</name>
 	<name>MINELAUNCHER_STUN</name>
 </blueprintList>
-<blueprintList name="FM_SHOP_WEAPONS_3"><!--22 items-->
+<blueprintList name="FM_SHOP_WEAPONS_3"><!--23 items-->
 	<name>LASER_BURST_2</name>
 	<name>LASER_HULL_2</name>
 	<name>LASER_LIGHT</name>
@@ -2467,11 +2487,12 @@
 	<name>BOMB_BIO</name>
 	<name>ENERGY_2</name>
 	<name>ENERGY_CHARGEGUN</name>
+	<name>CRYSTAL_SHOTGUN</name><!--based on crystal unique sector rarity-->
 	<name>KERNEL_1_ELITE</name><!--+2 rairty based on orchid sector rarity-->
 
 	<name>MINELAUNCHER_BREACH</name>
 </blueprintList>
-<blueprintList name="FM_SHOP_WEAPONS_4"><!--17 items-->
+<blueprintList name="FM_SHOP_WEAPONS_4"><!--18 items-->
 	<name>LASER_BURST_3</name>
 	<name>LASER_LIGHT_2</name>
 	<name>LASER_FROST_2</name>
@@ -2488,9 +2509,10 @@
 	<name>ENERGY_HULL</name>
 	<name>ENERGY_STUN</name>
 	<name>SHOTGUN_3</name>
+	<name>SHOTGUN_CHARGE</name>
 	<name>FM_CORROSIVE_2</name><!--higer rarity than hull laser2?-->
 </blueprintList>
-<blueprintList name="FM_SHOP_WEAPONS_5"><!--15 items-->
+<blueprintList name="FM_SHOP_WEAPONS_5"><!--16 items-->
 	<name>LASER_PIERCE_2</name>
 	<name>LASER_CHAINGUN_2</name>
 	<name>LASER_BIO</name>
@@ -2506,11 +2528,18 @@
 	<name>SHOTGUN_4</name>
 	<name>SHOTGUN_TOXIC</name>
 	<name>ENERGY_CONSERVATIVE</name>
+	<name>LASER_BURST_5</name><!--+1 rairty due to balance-->
 </blueprintList>
-<blueprintList name="FM_SHOP_FORGEMASTER_WEAPON_NEW">
+<bluerpintList name="FM_SHOP_WEAPONS_1+2">
 	<name>FM_SHOP_WEAPONS_1</name>
 	<name>FM_SHOP_WEAPONS_2</name>
 	<name>FM_SHOP_WEAPONS_2</name>
+</bluerpintList>
+<blueprintList name="FM_SHOP_FORGEMASTER_WEAPON_NEW">
+	<name>FM_SHOP_WEAPONS_1+2</name>
+	<name>FM_SHOP_WEAPONS_1+2</name>
+	<name>FM_SHOP_WEAPONS_1+2</name>
+	<name>FM_SHOP_WEAPONS_1+2</name>
 	<name>FM_SHOP_WEAPONS_3</name>
 	<name>FM_SHOP_WEAPONS_3</name>
 	<name>FM_SHOP_WEAPONS_3</name>
