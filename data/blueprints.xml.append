@@ -9107,6 +9107,72 @@
 		<iconImage>laser_chain</iconImage>
 	</weaponBlueprint>
 
+	<weaponBlueprint name="FM_CHAINGUN_FIRE">
+		<type>BURST</type>
+		<drone_targetable>0</drone_targetable>
+		<title>'Hellflash' Gatling Gun</title>
+		<short>'Hellflash'</short>
+		<tip>tip_chain_laser</tip>
+		<desc>Some Renegades just want to watch the Multiverse burn.</desc>
+		<tooltip>Cooldown drops the more it fires.</tooltip>
+		<radius>75</radius>
+		<damage>1</damage>
+		<noPersDamage>true</noPersDamage>
+		<shots>1</shots>
+		<sp>0</sp>
+		<stunChance>2</stunChance>
+		<fireChance>7</fireChance>
+		<breachChance>0</breachChance>
+		<cooldown>11</cooldown>
+		<power>3</power>
+		<cost>190</cost>
+		<bp>2</bp>
+		<spawnCrew>
+			<race>fm_repair_hull</race>
+			<number>1</number>
+			<lifetime>0</lifetime>
+			<noSlot>true</noSlot>
+			<statBoosts>
+				<statBoost name="noClone">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+
+			</statBoosts>
+		</spawnCrew>
+		<rarity>0</rarity>
+		<explosion>explosion_small_ion</explosion>
+		<boost>
+			<type>cooldown</type>
+			<amount>2.0</amount>
+			<count>5</count>
+		</boost>
+		<projectiles>
+			<projectile count="1" fake="false">fm_hellflash_shot</projectile>
+		</projectiles>
+		<launchSounds>
+			<sound>hellflashShoot</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull1</sound>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_chaingun_fire</weaponArt>
+		<iconImage>laser_chain</iconImage>
+	</weaponBlueprint>
+
 	<weaponBlueprint name="FM_SHOTGUN_ENERGY">
 		<type>BURST</type>
 		<drone_targetable>1</drone_targetable>
@@ -11494,8 +11560,7 @@
 		<cost>80</cost>
 		<bp>7</bp>
 		<rarity>0</rarity>
-		<length>1</length>
-		<speed>1</speed>
+		<length>2</length>
 		<image>beam_contact</image>
 		<boost>
 			<type>damage</type>
