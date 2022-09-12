@@ -82,11 +82,25 @@ FM: A COMPONENT for forging the TLALOC Laser[100~], alongside the other COMPONEN
 FM: A COMPONENT for forging the Rebel Ripper Laser[100~], alongside the other COMPONENT Heavy Laser I.</text>
 
 
+<!--    HELLFLASH -->
+
+<text name="fm_tip_laser_fire">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
+
+FM: A COMPONENT for forging the Hellflash Gatling Gun[150~], alongside the other COMPONENT Vulcan.
+
+FM: A COMPONENT for forging the Dazhbog Flamethrower[70~], alongside the other COMPONENT called [REDACTED].</text>
+
+<text name="fm_tip_laser_vulcan">Tip: Chain lasers decrease their cooldown every time they fire. Check the green lights on the weapon to see how many times it has fired.
+
+FM: A COMPONENT for forging the Hellflash Gatling Gun[150~], alongside the other COMPONENT Fire Starter.</text>
+
 <!--    DAZHBOG -->
 
 <text name="fm_tip_laser_fire">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
 
-FM: A COMPONENT for forging the Dazhbog Flamethrower[70~], alongside the other COMPONENT called [REDACTED].</text>
+FM: A COMPONENT for forging the Dazhbog Flamethrower[70~], alongside the other COMPONENT called [REDACTED].
+
+FM: A COMPONENT for forging the Hellflash Gatling Gun[150~], alongside the other COMPONENT Vulcan.</text>
 
 <!--    DECAYSER -->
 
@@ -175,7 +189,9 @@ FM: A COMPONENT for forging the TARANIS Disc Launcher[130~], alongside the other
 
 <text name="fm_tip_laser_vulcan">Tip: Chain lasers decrease their cooldown every time they fire. Check the green lights on the weapon to see how many times it has fired.
 
-FM: A COMPONENT for forging the Vesta[170-200~], alongside the other COMPONENT Ion Charger I OR Ion Charger II.</text>
+FM: A COMPONENT for forging the Vesta[170-200~], alongside the other COMPONENT Ion Charger I OR Ion Charger II.
+
+FM: A COMPONENT for forging the Hellflash Gatling Gun[150~], alongside the other COMPONENT Fire Starter.</text>
 
 <text name="fm_tip_ion_charger_1">Tip: Charge weapons can be charged multiple times to generate more firepower. You can save time and fire the weapon prematurely but it will have fewer shots ready as a result.
 

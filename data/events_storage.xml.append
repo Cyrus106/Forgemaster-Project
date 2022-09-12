@@ -860,6 +860,16 @@
       <text>You must have a Frost I and Irradiation Laser to forge this weapon.</text>
       <event load="OPTION_INVALID"/>
     </choice>
+ 
+    <choice req="FM_CHAINGUN_FIRE_LIST" lvl="1" blue="false" hidden="true">
+      <text>Replace the barrels of the Vulcan with the Fire Starter's heat sinks to forge the 'Hellflash' Gatling Gun. </text>
+      <event load="STORAGE_CHECK_CREATE_FM_CHAINGUN_FIRE"/>
+    </choice>
+
+    <choice req="FM_CHAINGUN_FIRE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+      <text>You must have a Vulcan and Fire Starter to forge this weapon.</text>
+      <event load="OPTION_INVALID"/>
+    </choice>
 
     <choice req="FM_FLAMETHROWER_FORGE_LIST" lvl="1" blue="false" hidden="true">
       <text>Use a gaseous form for fuel and ignite it with the Fire-Starter to forge the Dazhbog Flamethrower.</text>
@@ -1648,6 +1658,30 @@
         <weapon name="FM_LASER_ANOMALY_1"/>
         <removeItem>LASER_BIO</removeItem>
         <removeItem>LASER_FROST_1</removeItem>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice hidden="false">
+      <text>Nevermind.</text>
+      <event load="STORAGE_CHECK_CREATE_LASER_LOAD"/>
+    </choice>
+  </event>
+
+  <event name="STORAGE_CHECK_CREATE_FM_CHAINGUN_FIRE">
+    <checkCargo/>
+    <text>Currently viewing the 'Hellflash' Gatling Gun.</text>
+    <choice hidden="false" req="FM_CHAINGUN_FIRE_LIST" blue="false">
+      <text>Craft the 'Hellflash' Gatling Gun.</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <weapon name="FM_CHAINGUN_FIRE"/>
+        <removeItem>LASER_FIRE</removeItem>
+        <removeItem>LASER_CHAINGUN_2</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>

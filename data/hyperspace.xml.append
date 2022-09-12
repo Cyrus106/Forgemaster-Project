@@ -2051,6 +2051,11 @@
 			<name>BOMB_ION</name>
 		</req>
 
+		<req name="FM_CHAINGUN_FIRE_LIST" type="all"> <!-- Fire Starter + Vulcan -->
+			<name>LASER_FIRE</name>
+			<name>LASER_CHAINGUN_2</name>
+		</req>
+
 	</events>
 
 
@@ -3127,6 +3132,7 @@
 			<name>FM_LASER_PHOTON_2_LIST</name>
 			<name>FM_LASER_HUMAN_LIST</name>
 			<name>FM_LASER_ION_MEGA_LIST</name>
+			<name>FM_CHAINGUN_FIRE_LIST</name>
 			<name>GATLING_ANCIENT</name>
 
 		</req>

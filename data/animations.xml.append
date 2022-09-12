@@ -4309,6 +4309,24 @@ try this later
 		<boost>fm_chaingun_ion_charge</boost>
 	</weaponAnim>
 
+	<animSheet name="fm_chaingun_fire_charge" w="160" h="67" fw="32" fh="67">weapon_laser/fm_chaingun_fire_chargeglow.png</animSheet>
+	<anim name="fm_chaingun_fire_charge">
+		<sheet>fm_chaingun_fire_charge</sheet>
+		<desc length="5" x="0" y="0"/>
+		<time>1.0</time>
+	</anim>
+	<animSheet name="fm_chaingun_fire" w="224" h="67" fw="32" fh="67">weapon_laser/fm_chaingun_fire.png</animSheet>
+	<weaponAnim name="fm_chaingun_fire">
+		<sheet>fm_chaingun_fire</sheet>
+		<desc length="7" x="0" y="0"/>
+		<chargedFrame>1</chargedFrame>
+		<fireFrame>2</fireFrame>
+		<firePoint  x="18" y="23"/>
+		<mountPoint x="4" y="49"/>
+		<chargeImage>weapon_laser/fm_chaingun_fire_glow.png</chargeImage>
+		<boost>fm_chaingun_fire_charge</boost>
+	</weaponAnim>
+
 	<animSheet name="fm_shotgun_energy" w="750" h="85" fw="50" fh="85">weapon_energy/R4-FM_energy_flak.png</animSheet>
 	<weaponAnim name="fm_shotgun_energy">
 		<sheet>fm_shotgun_energy</sheet>
@@ -5085,6 +5103,14 @@ try this later
 	<animSheet name="fm_flamethrower_shot" w="80" h="27" fw="80" fh="27">weapon_projectiles/fm_fireparticle1.png</animSheet>
 	<anim name="fm_flamethrower_shot">
 		<sheet>fm_flamethrower_shot</sheet>
+		<desc length="1" x="0" y="0"/>
+		<time>1</time>
+	</anim>
+
+
+	<animSheet name="fm_hellflash_shot" w="50" h="17" fw="50" fh="17">weapon_projectiles/fm_smallfireparticle1.png</animSheet>
+	<anim name="fm_hellflash_shot">
+		<sheet>fm_hellflash_shot</sheet>
 		<desc length="1" x="0" y="0"/>
 		<time>1</time>
 	</anim>
