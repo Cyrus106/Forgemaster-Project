@@ -36,7 +36,7 @@
 			<mod:findLike type="event">
 				<mod:setAttributes load="FMCORE_ATLAS_EQUIPMENT"/>
 			</mod:findLike>
-			<mod-overwrite:text>Do something aboard the ship.</text>
+			<mod-overwrite:text>Do something aboard the ship.</mod-overwrite:text>
 		</mod:findWithChildLike>
 		<mod-append:choice req="SEC FINAL" blue="false">
 			<text>Proceed to the Federation Capital.</text>
@@ -64,7 +64,7 @@
 				<loadEvent>LOAD_ATLAS</loadEvent>
 				<variable name="fmcore_used_hs_aug" op="set" val="0"/>
 			</mod-overwrite:event>
-		</mod:findLike>
+		</mod:findWithChildLike>
 	</mod:findName>
 	<mod:findName type="event" name="LOAD_ATLAS_MARKER"><!--appending the part of the code that resets the makres for which menus were used-->
 		<mod-append:triggeredEvent event="FMCORE_SPAWNER" thisFight="false" clearOnJump="false"><!--if it works correctly then when entering a sector FMCORE_SPAWNER will run, this is where stuff like Forgemaster spawning event are appended to-->
