@@ -4209,6 +4209,9 @@
 		<variable name="flak_resource_counter" op = "set" val = "0"/><!--Base flak resource counter for the Flak Forge-->
 		<variable name="flak_special_resource_counter" op = "set" val = "0"/><!--Special flak resource counter for the Flak Forge-->
 		<variable name="twisted_rock_scrap_counter" op = "set" val = "0"/>
+
+		<variable name="fm_invisible_ship" op="set" val="0"/><!--Variable that makes the ship literally disappear.-->
+
 		<req name="CAN_INSTALL_FLAK_ARTILLERY" type="sum" lvl="50">
 			<name>flak_resource_counter</name>
 		</req>

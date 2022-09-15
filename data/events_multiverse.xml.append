@@ -37896,6 +37896,7 @@
 			<text>Attempt to hail it.</text>
 			<event>
 				<text>You hail the station and are met with an unsettling silence. You dock your ship with the space station without incident, and your crew swiftly board the station. </text>
+				<variable name="fm_invisible_ship" op="set" val="1"/>
 				<choice hidden="true">
 					<text>Continue...</text>
 					<event load="FM_QUEST_GUNBOM_FUTURE_3_PROLOGUE"/>
