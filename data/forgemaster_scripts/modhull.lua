@@ -16,15 +16,7 @@ This forms a block commment
 ---[[This forms two line comments, so anything in between will not be commented out
 
 --]]
-mods.Forgemaster={} --[[
-                        It's important to keep our values, functions,
-                        and other data saved in a table specific to our mod,
-                        to prevent conflicts with other mods that might use similar names.
 
-                        This means we can use names like "Damage" and "Scrap"
-                        without worrying that they are common terms.
-                        It's still necessary to keep our OWN values seperate though!
-                        ]]
 mods.Forgemaster.Utility={} --For functions that make life easier, will be moved to another file later
 mods.Forgemaster.Utility.randomInt=function(min,max)
   if math.floor(min)~=min or math.floor(max)~=max then --Checking for some easy-to-predict mistakes...
@@ -94,10 +86,15 @@ mods.Forgemaster.selfArm={--Here, we will be using a lot of the same values toge
                 false),
     render=function(self)--and even functions! by having (self) as an argument, the function will be able to access the other values in its table
       if Hyperspace.ships.player:HasAugmentation("TWISTED_HULL_ARM")~=0 then--HasAugmentation returns a number that tells you how many of the augment you have. ~= means "not equals".
-                                                                              --We could also use > (greater than) because this function does not return negative values
-          Graphics.CSurface.GL_RenderPrimitive(self.counterFrame)--Here we are passing the "counterFrame" parameter to our function. This is useful because we don't have to worry about this variable affecting other functions
-          Graphics.freetype.easy_printCenter(0,424,58,string.format("%i",self.queuedScrap))    --string.format formats it as an integer ("%i" argument)
+                                                                            --We could also use > (greater than) because this function does not return negative values
+        Graphics.CSurface.GL_PushMatrix()--This is how we clear all transformation/translation matrices so that this can be rendered regardless of other shenanigans going on.
+        Graphics.CSurface.GL_LoadIdentity()--Identity matrix, the "normal" configuration.
+
+
+        Graphics.CSurface.GL_RenderPrimitive(self.counterFrame)--Here we are passing the "counterFrame" parameter to our function. This is useful because we don't have to worry about this variable affecting other functions
+        Graphics.freetype.easy_printCenter(0,424,58,string.format("%i",self.queuedScrap))    --string.format formats it as an integer ("%i" argument)
           --The first argument is the font type, the next arguments are the x and y positions. The final argument is the text to render
+        Graphics.CSurface.GL_PopMatrix()--Pop the identity matrix off of the stack.
       end
     end,
 
@@ -107,7 +104,6 @@ mods.Forgemaster.selfArm={--Here, we will be using a lot of the same values toge
         self.queuedScrap=self.queuedScrap+scrapGain
       end
     end,
-
 
     redeem=function(self)
       if Hyperspace.ships.player:HasAugmentation("TWISTED_HULL_ARM")~=0 then

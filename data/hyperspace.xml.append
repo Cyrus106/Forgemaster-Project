@@ -2,6 +2,7 @@
 <FTL>
 	<mod:findLike type="scripts">
 		<mod-append:script>data/forgemaster_scripts/dependancy.lua</mod-append:script>
+		<mod-append:script>data/forgemaster_scripts/visual_fun.lua</mod-append:script>
     <!--<mod-append:script>data/forgemaster_scripts/test_1.lua</mod-append:script>
 		<mod-append:script>data/forgemaster_scripts/augments.lua</mod-append:script>
 		<mod-append:script>data/forgemaster_scripts/animations.lua</mod-append:script>
