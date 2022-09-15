@@ -12783,7 +12783,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 						</blackList>
 					</statBoost>
 					<statBoost name="deathEffect">
-						<boostType>SET</boostType>
+						<boostType>FLAT</boostType>
 						<shipTarget>ORIGINAL_SHIP</shipTarget>
 						<crewTarget>ENEMIES</crewTarget>
 						<droneTarget>CREW</droneTarget>
