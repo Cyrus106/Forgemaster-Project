@@ -19914,6 +19914,10 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<mod-append:surgeBarrage name="SURGE_FLAK_DEFEND">
 			<weapon name="BARRAGE_FLAK_SHIELD2" count="20"/>
 		</mod-append:surgeBarrage>
+		<!--Terminus Surge-->
+		<mod-append:surgeBarrage name="TERMINUS_SURGE">
+			<weapon name="FM_TERMINUS_SURGE" count="30" />
+		</mod-append:surgeBarrage>
 
 		<!--Kestrel Jank Surges-->
 		<mod-append:surgeBarrage name="TWISTED_KESTREL_PHANTOM_SPAWN_SURGE">

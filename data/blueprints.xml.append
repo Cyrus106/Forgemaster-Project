@@ -2863,9 +2863,7 @@
 		<bp>2</bp>
 		<rarity>0</rarity>
 		<powerList>
-			<power>Hi, you probably shouldn't be seeing this</power>
-			<power>You should look behind you before it's too late</power>
-			<power>You should look at some bitches, bitch</power>
+			<power> </power>
 		</powerList>
 		<colorList>
 			<layer>
@@ -8826,9 +8824,9 @@
 		<bp>2</bp>
 		<rarity>0</rarity>
 		<speed>35</speed>
-		<statBoosts>
+		<!--<statBoosts>
 
-			<statBoost name="suffocationModifier"> <!--Everybody suffocates more-->
+			<statBoost name="suffocationModifier"> Everybody suffocates more
 				<boostType>MULT</boostType>
 				<amount>2</amount>
 				<shipTarget>ALL</shipTarget>
@@ -8838,7 +8836,7 @@
 				<duration>25</duration>
 			</statBoost>
 
-			<statBoost name="canSuffocate"> <!--EVERYBODY-->
+			<statBoost name="canSuffocate"> EVERYBODY
 				<boostType>SET</boostType>
 				<value>true</value>
 				<shipTarget>ALL</shipTarget>
@@ -8891,7 +8889,31 @@
 				</statBoost>
 
 			</statBoosts>
+		</spawnCrew>-->
+
+
+		<spawnCrew>
+			<race>fm_generic_crewjank</race>
+			<number>1</number>
+			<enemy>true</enemy><!--So you don't ever see the crew-->
+			<lifetime>0</lifetime>
+			<noSlot>true</noSlot>
+			<statBoosts>
+				<statBoost name="deathEffect"><!--This modifies the stat of the crew, so that the same crew can be used for multiple weapons-->
+					<boostType>SET</boostType>
+					<deathEffect><!--When template crew dies (on weapon impact) this deathEffect will occur -->
+						<event>
+							<superBarrage player="true" name="TERMINUS_SURGE" />
+						</event>
+					</deathEffect>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>9999999</priority>
+				</statBoost>
+			</statBoosts>
 		</spawnCrew>
+
+
 		<projectiles>
 			<projectile count="1" fake="false">fm_terminus_shot</projectile>
 		</projectiles>
@@ -8915,6 +8937,108 @@
 		<iconImage>laser</iconImage>
 		<iconScale>1.0</iconScale>
 	</weaponBlueprint>
+
+
+	<weaponBlueprint name="FM_TERMINUS_SURGE">
+		<type>LASER</type>
+		<flavorType>Power Surge</flavorType>
+		<title>Terminus Surge</title>
+		<short>Terminus Surge</short>
+		<tip>tip_flak</tip>
+		<desc>YOU SHOULD NEVER SEE THIS.</desc>
+		<damage>0</damage>
+		<shots>1</shots>
+		<sp>20</sp>
+		<fireChance>0</fireChance>
+		<breachChance>0</breachChance>
+		<speed>99999</speed>
+		<accuracyMod>100</accuracyMod>
+		<roomStatBoosts>
+			<statBoost name="suffocationModifier"> <!--Everybody suffocates more-->
+				<boostType>MULT</boostType>
+				<amount>2</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<priority>999999</priority>
+				<duration>25</duration>
+				<maxStacks id="terminus_suffocation">1</maxStacks>
+				<roomAnim renderLayer="1">
+					<anim animType="default" animBorder="2">nothing</anim>                <!-- (animType can be default, stretch, random, or center, animBorder controls spawning margins)-->
+					<tileAnim>gas_twisted_1x1</tileAnim>                                               <!--(spawn this animation on each tile)-->
+				</roomAnim>
+			</statBoost>
+
+			<statBoost name="canSuffocate"> <!--EVERYBODY-->
+				<boostType>SET</boostType>
+				<value>true</value>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<priority>999999</priority>
+				<duration>25</duration>
+				<maxStacks id="terminus_suffocation_2">1</maxStacks>
+			</statBoost>
+
+			<statBoost name="canBurn">
+				<boostType>SET</boostType>
+				<value>true</value>
+				<shipTarget>ENEMY_SHIP</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<priority>999999</priority>
+				<duration>25</duration>
+				<maxStacks id="terminus_burn">1</maxStacks>
+			</statBoost>
+
+			<statBoost name="stunMultiplier">
+				<boostType>SET</boostType>
+				<amount>1.0</amount>
+				<shipTarget>ENEMY_SHIP</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<priority>999999</priority>
+				<duration>25</duration>
+				<maxStacks id="terminus_stun">1</maxStacks>
+			</statBoost>
+
+			<statBoost name="powerRechargeMultiplier">
+				<boostType>MULT</boostType>
+				<amount>0.5</amount>
+				<shipTarget>ENEMY_SHIP</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<priority>999999</priority>
+				<duration>25</duration>
+				<maxStacks id="terminus_recharge">1</maxStacks>
+			</statBoost>
+	<!--
+			<statBoost name="maxHealth">FOR TESTING ONLY
+				<boostType>MULT</boostType>
+				<amount>0.5</amount>
+				<shipTarget>ENEMY_SHIP</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<priority>999999</priority>
+				<duration>25</duration>
+				<maxStacks id="terminus_health">1</maxStacks>
+			</statBoost>-->
+		</roomStatBoosts>
+
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<image>laser_burst</image>
+		<explosion>fm_repair_hull_death_right</explosion>
+		<launchSounds>
+			<sound>silence</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>silence</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>laser_heavy_1</weaponArt>
+		<iconImage>heavyL</iconImage>
+	</weaponBlueprint>
+
 
 	<weaponBlueprint name="LASER_BURST_1_CHARGE_GOLD"> <!--.11 DPS-->
 		<type>LASER</type>
@@ -13441,7 +13565,7 @@
 		<bp>5</bp>
 		<rarity>0</rarity>
 		<fireTime>1.5</fireTime><!--May or may not be necessary-->
-		
+
 		<statBoosts>
 			        <statBoost name="transformRace">
 			                <boostType>SET</boostType>
@@ -14397,7 +14521,7 @@
 
 
 
-	
+
 	<droneBlueprint name="FM_MFK_PICKET_DRONE">
 	    <type>COMBAT</type>
 	    <title>MFK Picket Teleporter Relay</title>
@@ -14414,7 +14538,7 @@
 	    <rarity>0</rarity>
 	    <iconImage>combat</iconImage>
 	</droneBlueprint>
-	
+
 	<weaponBlueprint name="FM_MFK_PICKET_DRONE_WEAPON">
 		<type>LASER</type>
 		<title>Picket Boarder Launcher</title>
