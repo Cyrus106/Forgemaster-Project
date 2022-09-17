@@ -8,6 +8,7 @@
 		<mod-append:script>data/forgemaster_scripts/animations.lua</mod-append:script>
 		<mod-append:script>data/forgemaster_scripts/artillery.lua</mod-append:script>-->
 		<mod-append:script>data/forgemaster_scripts/modhull.lua</mod-append:script> <!--The script folders are named differently because of issues when two script files share the same path.-->
+		<mod-append:script>data/forgemaster_scripts/surges.lua</mod-append:script>
 	</mod:findLike>
 </FTL>
 
@@ -19916,7 +19917,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</mod-append:surgeBarrage>
 		<!--Terminus Surge-->
 		<mod-append:surgeBarrage name="TERMINUS_SURGE">
-			<weapon name="FM_TERMINUS_SURGE" count="30" />
+			<weapon name="FM_TERMINUS_SURGE" count="30" /><!--Tweak number-->
 		</mod-append:surgeBarrage>
 
 		<!--Kestrel Jank Surges-->

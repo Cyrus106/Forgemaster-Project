@@ -8,7 +8,14 @@ mods.Forgemaster={} --[[
                         without worrying that they are common terms.
                         It's still necessary to keep our OWN values seperate though!
                         ]]
-
+mods.Forgemaster.vter=function(cvec)
+                          local i=-1 --so the first returned value is indexed at zero
+                          local n=cvec:size()
+                          return function ()
+                              i=i+1
+                              if i<n then return cvec[i] end
+                          end
+                        end
 
 --A more intuitive way of making sure the player patches dependancies first.
 

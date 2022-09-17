@@ -8904,6 +8904,7 @@
 					<deathEffect><!--When template crew dies (on weapon impact) this deathEffect will occur -->
 						<event>
 							<superBarrage player="true" name="TERMINUS_SURGE" />
+							<loadEvent>TERMINUS_SURGE_AFTER</loadEvent>
 						</event>
 					</deathEffect>
 					<shipTarget>ALL</shipTarget>
@@ -8951,7 +8952,7 @@
 		<sp>20</sp>
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
-		<speed>99999</speed>
+		<speed>20</speed>
 		<accuracyMod>100</accuracyMod>
 		<roomStatBoosts>
 			<statBoost name="suffocationModifier"> <!--Everybody suffocates more-->
