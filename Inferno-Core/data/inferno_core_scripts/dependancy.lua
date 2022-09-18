@@ -1,5 +1,22 @@
 mods.inferno={}
 
+
+
+mods.inferno.vter=function(cvec)
+  local i=-1 --so the first returned value is indexed at zero
+  local n=cvec:size()
+  return function ()
+      i=i+1
+      if i<n then return cvec[i] end
+  end
+end
+
+mods.inferno.repair=function()
+  for system in mods.inferno.vter(Hyperspace.ships.player.vSystemList) do
+    system.healthState.first=system.healthState.second
+  end
+end
+
 script.on_load(
 function()
   --Creating a global variable with our addon's information,
@@ -16,11 +33,3 @@ function()
   end
 end
 )
-mods.inferno.vter=function(cvec)
-  local i=-1 --so the first returned value is indexed at zero
-  local n=cvec:size()
-  return function ()
-      i=i+1
-      if i<n then return cvec[i] end
-  end
-end
