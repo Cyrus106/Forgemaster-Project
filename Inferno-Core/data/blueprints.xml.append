@@ -74,3 +74,13 @@
 	<rarity>0</rarity>
 	<stackable>true</stackable>
 </augBlueprint>
+
+<augBlueprint name="WEAPON_LOCKDOWN">
+	<title>Weapon Lockdown Core</title>
+	<desc>Causes all non-beam weapons to apply lockdown</desc>
+	<cost>45</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+  <value>1</value>
+	<stackable>false</stackable>
+</augBlueprint>
