@@ -26942,4 +26942,17 @@
 		FM: A COMPONENT for forging the MFK Picket Teleporter Relay, alongside the other COMPONENT Recon Drone.</mod-overwrite:desc>
 	</mod:findName>
 
+
+
+	<!--Systems-->
+
+<mod:findName type="systemBlueprint" name="mind">
+	<mod:findLike type="maxPower">
+		<mod:setValue>4</mod:setValue>
+	</mod:findLike>
+	<mod:findLike type="upgradeCost">
+		<mod-append:level>999</mod-append:level>
+	</mod:findLike>
+</mod:findName>
+
 </FTL>
