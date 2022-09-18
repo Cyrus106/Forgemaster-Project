@@ -20182,7 +20182,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</reward>
 	</rewards>
 </FTL>
-
+<!--Achievemnts and Store appends-->
 <FTL>
 	<mod:findLike type="achievements" limit="1">
 		<mod-append:page>
@@ -20375,5 +20375,250 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</achievement>
 			</section>
 		</mod-append:page>
+	</mod:findLike>
+	<mod:findLike type="store">
+		<mod:selector id="STORE_ULTIMATE_SYLVAN"/>
+		<mod-append:category type="WEAPONS"><!--lasers-->
+			<item>
+                <blueprint>FM_LASER_ANOMALY_1</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_FLAMETHROWER</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_LASER_PHOTON</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="WEAPONS">
+			<item>
+                <blueprint>FM_LASER_PHOTON_2</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_LASER_HUMAN</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_CHAINGUN_FIRE</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="WEAPONS"><!--ions-->
+			<item>
+                <blueprint>FM_PHASER_SUFFOCATION</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_LASER_ION_MEGA</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_ION_TRI_FIRE</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="WEAPONS">
+			<item>
+                <blueprint>FM_DISC_LAUNCHER</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_CHAINGUN_ION</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_SHOTGUN_ENERGY</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="WEAPONS">
+			<item>
+                <blueprint>FM_PULSE_1</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_PULSE_2</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_PULSE_3</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="WEAPONS">
+			<item>
+                <blueprint>FM_PULSEDEEP</blueprint>
+            </item>
+			<item>
+				<blueprint>FM_ION_MISSILES</blueprint>
+            </item>
+			<item>
+				<blueprint>FM_MISSILES_BURST_FIRE</blueprint>
+			</item>
+		</mod-append:category>
+		<mod-append:category type="WEAPONS">
+			<item>
+                <blueprint>FM_MISSILES_CLOAK_STUN</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_PULSE_2</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_PULSE_3</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="WEAPONS">
+			<item>
+				<blueprint>FM_BOMB_CRYSTAL_FIRE</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_BOMB_CRYSTAL_BIO</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_BOMBLAUNCHER_HULL</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="WEAPONS">
+			<item>
+                <blueprint>FM_MINELAUNCHER_BIO</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_IMPRISMENT_INDUCER</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_RVS_AC_CHARGE</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="WEAPONS">
+			<item>
+                <blueprint>FM_BEAM_MINING_2</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_BEAM_PARTICLE_PIERCE</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_BEAM_GUILLOTINE_CHAIN</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="WEAPONS">
+			<item>
+                <blueprint>FM_BEAM_EXPLOSION</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_BEAM_ION_PIERCE</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_BEAM_ETERNITY</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="WEAPONS">
+			<item>
+                <blueprint>FM_FOCUS_FUELED_1</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_FOCUS_ENERGY_1</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_FOCUS_ENERGY_2</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="WEAPONS">
+			<item>
+                <blueprint>FM_FOCUS_ENERGY_3</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_FOCUS_ENERGY_CONS</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_FOCUS_ADAPT</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="WEAPONS">
+			<item>
+                <blueprint>FM_BEAM_MINING_3</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_SHOTGUN_ANOMALY</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_SHOTGUN_AETHER</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="WEAPONS">
+			<item>
+                <blueprint>FM_SHOTGUN_CURSED</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_ENERGY_RAILBLENDER</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_BEAM_BASELISK</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="WEAPONS">
+			<item>
+                <blueprint>FM_SHOTGUN_BRONZE</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_SHOTGUN_INDIUM</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_SHOTGUN_RHENIUM</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="WEAPONS">
+			<item>
+                <blueprint>FM_SHOTGUN_SILVER</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_SHOTGUN_PALLADIUM</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_SHOTGUN_IRIDIUM</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="WEAPONS">
+			<item>
+                <blueprint>FM_SHOTGUN_PLATINUM</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_SHOTGUN_OSMIUM</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_SHOTGUN_NOBELIUM</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="WEAPONS">
+			<item>
+                <blueprint>FM_SHOTGUN_HASSIUM</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_LASER_DEBT_COLLECT</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_TERMINUS</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="WEAPONS">
+			<item>
+                <blueprint>FM_ABDUCT_LASER</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_AN_LASER</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_AN_BEAM</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="WEAPONS">
+			<item>
+                <blueprint>FM_AN_DYNAMO</blueprint>
+            </item>
+			<item>
+                <blueprint>LASER_BURST_1_CHARGE_GOLD</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_ROYAL_MINELAUNCHER</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="WEAPONS">
+			<item>
+                <blueprint>FM_CORROSIVE_1</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_CORROSIVE_2</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_CORROSIVE_3</blueprint>
+            </item>
+		</mod-append:category>
 	</mod:findLike>
 </FTL>
