@@ -1,0 +1,39 @@
+<augBlueprint name="FAST_MIND">
+	<title>Mind Control Accelerator</title>
+	<desc>Reduces the cooldown of the Mind Control System by 5 seconds.</desc>
+	<cost>45</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<value>1</value><!--One cycle of ion-->
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="FAST_CLOAK">
+	<title>Cloaking Accelerator</title>
+	<desc>Reduces the cooldown of the Cloaking System by 5 seconds.</desc>
+	<cost>45</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<value>1</value><!--One cycle of ion-->
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="FAST_HACK">
+	<title>Hacking Accelerator</title>
+	<desc>Reduces the cooldown of the Hacking System by 5 seconds.</desc>
+	<cost>45</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<value>1</value><!--One cycle of ion-->
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="FAST_TEMPORAL">
+	<title>Temporal Accelerator</title>
+	<desc>Reduces the cooldown of the Temporal System by 5 seconds.</desc>
+	<cost>45</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<value>1</value><!--One cycle of ion-->
+	<stackable>true</stackable>
+</augBlueprint>

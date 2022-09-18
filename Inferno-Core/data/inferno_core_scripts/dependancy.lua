@@ -1,3 +1,5 @@
+mods.inferno={}
+
 script.on_load(
 function()
   --Creating a global variable with our addon's information,

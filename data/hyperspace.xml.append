@@ -9747,8 +9747,12 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 <!--AUGMENTS -->
 <FTL>  <!--AUGMENTS -->
 	<augments> <!--FORGEMASTER AUGMENTS -->
-
-
+		<aug name="INSTANT_SYSTEMS">
+			<function name="FAST_MIND" value="999" useForReqs="true" warning="false"/>
+			<function name="FAST_CLOAK" value="999" useForReqs="true" warning="false"/>
+			<function name="FAST_HACK" value="999" useForReqs="true" warning="false"/>
+			<function name="FAST_TEMPORAL" value="999" useForReqs="true" warning="false"/>
+		</aug>
 
 
 
