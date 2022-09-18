@@ -84,3 +84,13 @@
   <value>1</value>
 	<stackable>false</stackable>
 </augBlueprint>
+
+
+<augBlueprint name="BEAM_PIERCE">
+	<title>Beam Phase Frequencies</title>
+	<desc>Gives all beam weapons 1 shield piercing</desc>
+	<cost>80</cost>
+	<rarity>2</rarity>
+	<value>1</value><!--Shield Piercing-->
+	<stackable>true</stackable>
+</augBlueprint>

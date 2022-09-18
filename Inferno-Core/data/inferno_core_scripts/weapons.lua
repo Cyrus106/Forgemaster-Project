@@ -63,5 +63,12 @@ function(weapon,projectile)
       end
     end
   end
-end
+end,
+
+function(weapon,projectile)
+  local beam_pierce_modifier=Hyperspace.ships.player:GetAugmentationValue("BEAM_PIERCE")
+  if projectile._targetable.type==5 then
+    projectile.damage.iShieldPiercing=projectile.damage.iShieldPiercing+beam_pierce_modifier
+  end
+end,
 })
