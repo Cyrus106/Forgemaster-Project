@@ -8962,7 +8962,7 @@
 				<crewTarget>ENEMIES</crewTarget>
 				<priority>999999</priority>
 				<duration>25</duration>
-				<maxStacks id="terminus_suffocation">1</maxStacks>
+				<!--<maxStacks id="terminus_suffocation">1</maxStacks>-->
 				<roomAnim renderLayer="1">
 					<anim animType="default" animBorder="2">nothing</anim>                <!-- (animType can be default, stretch, random, or center, animBorder controls spawning margins)-->
 					<tileAnim>gas_twisted_1x1</tileAnim>                                               <!--(spawn this animation on each tile)-->
@@ -8976,7 +8976,7 @@
 				<crewTarget>ENEMIES</crewTarget>
 				<priority>999999</priority>
 				<duration>25</duration>
-				<maxStacks id="terminus_suffocation_2">1</maxStacks>
+				<!--<maxStacks id="terminus_suffocation_2">1</maxStacks>-->
 			</statBoost>
 
 			<statBoost name="canBurn">
@@ -8986,7 +8986,7 @@
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
 				<duration>25</duration>
-				<maxStacks id="terminus_burn">1</maxStacks>
+				<!--<maxStacks id="terminus_burn">1</maxStacks>-->
 			</statBoost>
 
 			<statBoost name="stunMultiplier">
@@ -8996,7 +8996,7 @@
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
 				<duration>25</duration>
-				<maxStacks id="terminus_stun">1</maxStacks>
+			<!--	<maxStacks id="terminus_stun">1</maxStacks>-->
 			</statBoost>
 
 			<statBoost name="powerRechargeMultiplier">
@@ -9006,7 +9006,7 @@
 				<crewTarget>ALL</crewTarget>
 				<priority>999999</priority>
 				<duration>25</duration>
-				<maxStacks id="terminus_recharge">1</maxStacks>
+				<!--<maxStacks id="terminus_recharge">1</maxStacks>-->
 			</statBoost>
 	<!--
 			<statBoost name="maxHealth">FOR TESTING ONLY
