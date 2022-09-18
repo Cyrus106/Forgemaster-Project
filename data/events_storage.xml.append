@@ -862,7 +862,7 @@
     </choice>
  
     <choice req="FM_CHAINGUN_FIRE_LIST" lvl="1" blue="false" hidden="true">
-      <text>Replace the barrels of the Vulcan with the Fire Starter's heat sinks to forge the 'Hellflash' Gatling Gun. </text>
+      <text>Modify the barrels of the Vulcan with the Fire Starter's heat sinks to forge the 'Hellflash' Gatling Gun. </text>
       <event load="STORAGE_CHECK_CREATE_FM_CHAINGUN_FIRE"/>
     </choice>
 
