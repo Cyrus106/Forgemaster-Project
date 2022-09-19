@@ -3,6 +3,7 @@ mods.inferno.system_callbacks={
     just_on=false,
     shutdown_events={},
     activate_events={},
+    whileactive_events={},
     procedure=function(self)
         local sys=nil
         if pcall(function()
@@ -17,6 +18,7 @@ mods.inferno.system_callbacks={
               self:activate()
             end
             self.just_on=true
+            self:whileactive()
           elseif self.just_on then --if the system was locked (meaning activated) last frame and is no longer locked
             self.just_on=false
             self:shutdown()
@@ -36,6 +38,12 @@ mods.inferno.system_callbacks={
       end
     end,
 
+    whileactive = function(self)
+      for key,func in ipairs(self.whileactive_events) do
+        func()
+      end
+    end,
+
     --Inheritence Stuff
     new = function(self,o)
       o = o or {}
@@ -50,6 +58,14 @@ mods.inferno.system_callbacks={
         end,
       }
       o.activate_events={
+        append=function(self,functions)
+              local len=#self
+              for key,func in ipairs(functions) do
+                self[len+key]=func
+              end
+        end,
+      }
+      o.whileactive_events={
         append=function(self,functions)
               local len=#self
               for key,func in ipairs(functions) do
@@ -140,3 +156,17 @@ script.on_internal_event(Defines.InternalEvents.ON_TICK,
 function()
   mods.inferno.temporalcallbacks:procedure()
 end)
+
+
+
+--mind control duration proof of concept
+---[[
+mods.inferno.mindcallbacks.whileactive_events:append({
+function()
+  --every tick, the timer increments by Hyperspace.FPS.SpeedFactor/16
+  local increment=Hyperspace.FPS.SpeedFactor/16
+  local modifier=math.max(Hyperspace.ships.player:GetAugmentationValue("LONG_MIND"),1) --could just calculate this value upon activation to minimize memory usuage, if it's an issue
+  Hyperspace.ships.player.mindSystem.controlTimer.first=Hyperspace.ships.player.mindSystem.controlTimer.first+((1/modifier)-1)*increment
+end,
+})
+--]]
