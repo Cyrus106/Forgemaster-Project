@@ -1489,7 +1489,7 @@
 		</choice>
 
 		<choice req="FM_CHAINGUN_FIRE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Modify the barrels of the Vulcan with the Fire Starter's heat sinks to forge the 'Hellflash' Gatling Gun. [Cost: 150~]</text>
+			<text>Replace the barrels of the Vulcan with the Fire Starter's heat sinks to forge the 'Hellflash' Gatling Gun. [Cost: 150~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_CHAINGUN_FIRE"/>
 		</choice>
 
@@ -8005,8 +8005,39 @@
 			<text>Micro-Turret Integration Module[maxed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-
-		<choice req="pilot" max_group="3" blue="false">
+		<choice req="FM_MODULAR_HULL_CLOAK_COOLDOWN" lvl="0" max_group="3" blue="false">
+			<text>System Cooldown Module[60~]</text>
+			<event>
+				<text>Install System Cooldown Module (Cloaking)? [5 seconds off of system cooldown, uses 1 upgrade notch]</text>
+				<choice req="pilot" max_group="1" blue="false">
+					<text>Install the System Cooldown Module.</text>
+					<event>
+						<text>System Cooldown Module has been installed to your Cloaking system!</text>
+						<hiddenAug>FM_MODULAR_HULL_CLOAK_COOLDOWN</hiddenAug>
+						<item_modify>
+							<item type="scrap" min="-60" max="-60"/>
+						</item_modify>
+						<choice blue="false">
+							<text>Continue...</text>
+							<event>
+								<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+							</event>
+						</choice>
+					</event>
+				</choice>
+				<choice req="pilot" max_group="2" blue="false">
+					<text>Nevermind.</text>
+					<event>
+						<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS</loadEvent>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice req="FM_MODULAR_HULL_CLOAK_COOLDOWN" max_group="3" hidden="true">
+			<text>System Cooldown Module[maxed]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="pilot" max_group="4" blue="false">
 			<text>Nevermind.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS</loadEvent>
@@ -8157,8 +8188,39 @@
 			<text>Micro-Turret Integration Module[maxed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-
-		<choice req="pilot" max_group="3" blue="false">
+		<choice req="FM_MODULAR_HULL_HACK_COOLDOWN" lvl="0" max_group="3" blue="false">
+			<text>System Cooldown Module[60~]</text>
+			<event>
+				<text>Install System Cooldown Module (Hacking)? [5 seconds off of system cooldown, uses 1 upgrade notch]</text>
+				<choice req="pilot" max_group="1" blue="false">
+					<text>Install the System Cooldown Module.</text>
+					<event>
+						<text>System Cooldown Module has been installed to your Hacking system!</text>
+						<hiddenAug>FM_MODULAR_HULL_HACK_COOLDOWN</hiddenAug>
+						<item_modify>
+							<item type="scrap" min="-60" max="-60"/>
+						</item_modify>
+						<choice blue="false">
+							<text>Continue...</text>
+							<event>
+								<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+							</event>
+						</choice>
+					</event>
+				</choice>
+				<choice req="pilot" max_group="2" blue="false">
+					<text>Nevermind.</text>
+					<event>
+						<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS</loadEvent>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice req="FM_MODULAR_HULL_HACK_COOLDOWN" max_group="3" hidden="true">
+			<text>System Cooldown Module[maxed]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="pilot" max_group="4" blue="false">
 			<text>Nevermind.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS</loadEvent>
@@ -8233,8 +8295,39 @@
 			<text>Micro-Turret Integration Module[maxed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-
-		<choice req="pilot" max_group="3" blue="false">
+		<choice req="FM_MODULAR_HULL_MIND_COOLDOWN" lvl="0" max_group="3" blue="false">
+			<text>System Cooldown Module[60~]</text>
+			<event>
+				<text>Install System Cooldown Module (Mind Control)? [5 seconds off of system cooldown, uses 1 upgrade notch]</text>
+				<choice req="pilot" max_group="1" blue="false">
+					<text>Install the System Cooldown Module.</text>
+					<event>
+						<text>System Cooldown Module has been installed to your Mind Control system!</text>
+						<hiddenAug>FM_MODULAR_HULL_MIND_COOLDOWN</hiddenAug>
+						<item_modify>
+							<item type="scrap" min="-60" max="-60"/>
+						</item_modify>
+						<choice blue="false">
+							<text>Continue...</text>
+							<event>
+								<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+							</event>
+						</choice>
+					</event>
+				</choice>
+				<choice req="pilot" max_group="2" blue="false">
+					<text>Nevermind.</text>
+					<event>
+						<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS</loadEvent>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice req="FM_MODULAR_HULL_MIND_COOLDOWN" max_group="3" hidden="true">
+			<text>System Cooldown Module[maxed]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="pilot" max_group="4" blue="false">
 			<text>Nevermind.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS</loadEvent>
@@ -8309,8 +8402,39 @@
 			<text>Micro-Turret Integration Module[maxed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-
-		<choice req="pilot" max_group="3" blue="false">
+		<choice req="FM_MODULAR_HULL_TEMPORAL_COOLDOWN" lvl="0" max_group="3" blue="false">
+			<text>System Cooldown Module[60~]</text>
+			<event>
+				<text>Install System Cooldown Module (Temporal)? [5 seconds off of system cooldown, uses 1 upgrade notch]</text>
+				<choice req="pilot" max_group="1" blue="false">
+					<text>Install the System Cooldown Module.</text>
+					<event>
+						<text>System Cooldown Module has been installed to your Temporal system!</text>
+						<hiddenAug>FM_MODULAR_HULL_TEMPORAL_COOLDOWN</hiddenAug>
+						<item_modify>
+							<item type="scrap" min="-60" max="-60"/>
+						</item_modify>
+						<choice blue="false">
+							<text>Continue...</text>
+							<event>
+								<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+							</event>
+						</choice>
+					</event>
+				</choice>
+				<choice req="pilot" max_group="2" blue="false">
+					<text>Nevermind.</text>
+					<event>
+						<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS</loadEvent>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice req="FM_MODULAR_HULL_TEMPORAL_COOLDOWN" max_group="3" hidden="true">
+			<text>System Cooldown Module[maxed]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="pilot" max_group="4" blue="false">
 			<text>Nevermind.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS</loadEvent>

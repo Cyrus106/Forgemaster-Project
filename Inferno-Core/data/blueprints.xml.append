@@ -38,6 +38,36 @@
 	<stackable>true</stackable>
 </augBlueprint>
 
+<augBlueprint name="LONG_MIND">
+	<title>Mind Control Lengthener</title>
+	<desc>Doubles the length of the Mind Control System's uptime.</desc>
+	<cost>45</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<value>2</value><!--Doubles the effect duration-->
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="LONG_HACK">
+	<title>Hacking Lengthener</title>
+	<desc>Doubles the length of the Hacking System's uptime.</desc>
+	<cost>45</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<value>2</value><!--Doubles the effect duration-->
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="HACKING_DAMAGE">
+	<title>Corrosive Hacking</title>
+	<desc>The Hacking System now does system damage.</desc>
+	<cost>45</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<value>5</value><!--'Sabotage' rate-->
+	<stackable>true</stackable>
+</augBlueprint>
+
 <augBlueprint name="IMMUNE">
 	<title>Total Immunity</title>
 	<desc>Immunity to all forms of damage, fires, breaches, and sabotage. You can't hurt me, Jack.</desc>

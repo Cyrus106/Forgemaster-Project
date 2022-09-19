@@ -21602,6 +21602,38 @@
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
+	<!--Cooldown Upgrades-->
+	<augBlueprint name="FM_MODULAR_HULL_MIND_COOLDOWN">
+    <title>Modular Hull Mind Cooldown</title>
+    <desc>Reduces the cooldown of the Mind Control System by 5 seconds. Counts for one upgrade notch.</desc>
+    <cost>40</cost>
+    <rarity>0</rarity>
+    <stackable>true</stackable>
+  </augBlueprint>
+
+	<augBlueprint name="FM_MODULAR_HULL_CLOAK_COOLDOWN">
+    <title>Modular Hull Cloaking Cooldown</title>
+    <desc>Reduces the cooldown of the Cloaking System by 5 seconds. Counts for one upgrade notch.</desc>
+    <cost>40</cost>
+    <rarity>0</rarity>
+    <stackable>true</stackable>
+  </augBlueprint>
+
+	<augBlueprint name="FM_MODULAR_HULL_HACK_COOLDOWN">
+		<title>Modular Hull Hacking Cooldown</title>
+		<desc>Reduces the cooldown of the Hacking System by 5 seconds. Counts for one upgrade notch.</desc>
+		<cost>40</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="FM_MODULAR_HULL_TEMPORAL_COOLDOWN">
+		<title>Modular Hull Temporal Cooldown</title>
+		<desc>Reduces the cooldown of the Temporal System by 5 seconds. Counts for one upgrade notch.</desc>
+		<cost>40</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
 	<!--capstones-->
   <augBlueprint name="FM_MODULAR_HULL_SALT">

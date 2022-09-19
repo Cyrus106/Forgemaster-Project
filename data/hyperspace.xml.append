@@ -9736,6 +9736,24 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<function name="FAST_TEMPORAL" value="999" useForReqs="true" warning="false"/>
 		</aug>
 
+		<aug name="FM_MODULAR_HULL_MIND_COOLDOWN">
+			<function name="FAST_MIND" value="1" useForReqs="true" warning="false"/>
+		</aug>
+
+		<aug name="FM_MODULAR_HULL_CLOAK_COOLDOWN">
+			<function name="FAST_CLOAK" value="1" useForReqs="true" warning="false"/>
+		</aug>
+
+		<aug name="FM_MODULAR_HULL_HACK_COOLDOWN">
+			<function name="FAST_HACK" value="1" useForReqs="true" warning="false"/>
+		</aug>
+
+		<aug name="FM_MODULAR_HULL_TEMPORAL_COOLDOWN">
+			<function name="FAST_TEMPORAL" value="1" useForReqs="true" warning="false"/>
+		</aug>
+
+
+
 
 
 		<aug name="LOCKED_RAMMING_SPEED">
@@ -18916,6 +18934,13 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<name>FM_MODULAR_HULL_TURRET_SENSORS</name>
 				<name>FM_MODULAR_HULL_TURRET_DOORS</name>
 				<name>FM_MODULAR_HULL_TURRET_BATTERY</name>
+
+
+				<!--Cooldown Augments-->
+				<name>FM_MODULAR_HULL_MIND_COOLDOWN</name>
+				<name>FM_MODULAR_HULL_CLOAK_COOLDOWN</name>
+				<name>FM_MODULAR_HULL_HACK_COOLDOWN</name>
+				<name>FM_MODULAR_HULL_TEMPORAL_COOLDOWN</name>
 
 				<!--Vengeance Augs!-->
 				<name>FM_VENGEANCE_LASER_BURST_1</name>
