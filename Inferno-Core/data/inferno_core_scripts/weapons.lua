@@ -14,13 +14,13 @@ function()
       local projectile=weapon:GetProjectile()
       if projectile then
         Hyperspace.Global.GetInstance():GetCApp().world.space.projectiles:push_back(projectile)
-        weapon_functions:fire(weapon,projectile)
+        mods.inferno.weapon_functions:fire(weapon,projectile)
       end
     end
   end
 end)
 
-weapon_functions={
+mods.inferno.weapon_functions={
   append=function(self,functions)
         local len=#self
         for key,func in ipairs(functions) do
@@ -53,7 +53,7 @@ bFriendlyFire = true;
 iStun = 0;
 ]]
 
-weapon_functions:append({
+mods.inferno.weapon_functions:append({
 function(weapon,projectile)
   if Hyperspace.ships.player:GetAugmentationValue("WEAPON_LOCKDOWN")>0 then
     projectile.damage.bLockdown=true
