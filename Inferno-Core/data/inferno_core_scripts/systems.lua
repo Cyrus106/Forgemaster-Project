@@ -185,3 +185,14 @@ function()
 end,
 })
 --]]
+--[[
+mods.inferno.hackingcallbacks.activate_events:append({
+function()
+  system_location=Hyperspace.ships.player.hackingSystem.currentSystem.location
+  local damage=Hyperspace.Damage()
+  damage.bLockdown=true
+  damage.fireChance=10
+  Hyperspace.ships.enemy:DamageArea(system_location,damage,true)
+end
+})
+--]]
