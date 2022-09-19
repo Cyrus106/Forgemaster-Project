@@ -90,7 +90,7 @@ mods.inferno.up={
 }
 script.on_render_event(Defines.RenderEvents.MOUSE_CONTROL, nothing,
 function()
- up:render()
+ mods.inferno.up:render()
 end
 )
 
