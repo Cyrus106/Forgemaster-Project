@@ -83,12 +83,12 @@ mods.inferno.up={
       self.marker.y=y
       self:qs("X = "..x.." Y = "..y)
     end,
-    mktoggle=function()
+    mktoggle=function(self)
       self.marker.on=not self.marker.on
       self:qs("Marker on = "..self.marker.on)
     end,
 }
-script.on_render_event(Defines.RenderEvents.MOUSE_CONTROL, nothing,
+script.on_render_event(Defines.RenderEvents.MOUSE_CONTROL, function() end,
 function()
  mods.inferno.up:render()
 end
