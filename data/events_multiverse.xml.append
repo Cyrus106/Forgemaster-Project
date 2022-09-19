@@ -37834,7 +37834,7 @@
 	</event>
 	<eventList name="FM_QUEST_GUNBOM_TWINS">
 		<event>
-			<crewMember amount="1" class="remington">Remington</crewMember>
+			<crewMember amount="1" class="unique_remington">Remington</crewMember>
 			<text>You power up your weapons and attack the Clairvoyant Debt Collector ship head on. One of the Engis flies towards your vessel in a small shuttle, and is let in by your crew. "You = Intriguing. Talk later, focus on saving Winchester"  </text>
 			<ship load="SHIP_CLAIRVOYANT_DEBTCOLLECT" hostile="true"/>
 			<variable name="fm_obtainedtwin" op="set" val="1"/>
@@ -37844,7 +37844,7 @@
 			</choice>
 		</event>
 		<event>
-			<crewMember amount="1" class="mossberg">Mossberg</crewMember>
+			<crewMember amount="1" class="unique_mossberg">Mossberg</crewMember>
 			<text>You power up your weapons and attack the Clairvoyant Debt Collector ship head on. One of the Engis flies towards your vessel in a small shuttle, and is let in by your crew. "You = Intriguing. Talk later, focus on saving Winchester"  </text>
 			<ship load="SHIP_CLAIRVOYANT_DEBTCOLLECT" hostile="true"/>
 			<variable name="fm_obtainedtwin" op="set" val="1"/>

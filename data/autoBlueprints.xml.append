@@ -1087,8 +1087,8 @@
 </blueprintList>
 
 <blueprintList name="LIST_GUNBOM_TWINS">
-	<name>remington</name>
-	<name>mossberg</name>
+	<name>unique_remington</name>
+	<name>unique_mossberg</name>
 
 </blueprintList>
 
@@ -1820,8 +1820,8 @@
 		<mod-append:name>fm_plated</mod-append:name>
 		<mod-append:name>fm_forgemasterperson</mod-append:name>
 		<mod-append:name>fm_forgemasterperson_player</mod-append:name>
-		<mod-append:name>remington</mod-append:name>
-		<mod-append:name>mossberg</mod-append:name>
+		<mod-append:name>unique_remington</mod-append:name>
+		<mod-append:name>unique_mossberg</mod-append:name>
 		<mod-append:name>mantis_crackerjack</mod-append:name>
 	        <mod-append:name>fm_plated_shell</mod-append:name>
 </mod:findName>
@@ -1836,14 +1836,14 @@
 
 <mod:findName type = "blueprintList" name = "LIST_CREW_UNIQUE_CRAPBUCKET">
     <mod-append:name>fm_forgemasterperson_player</mod-append:name>
-		<mod-append:name>remington</mod-append:name>
-		<mod-append:name>mossberg</mod-append:name>
+		<mod-append:name>unique_remington</mod-append:name>
+		<mod-append:name>unique_mossberg</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "LIST_CREW_UNIQUE">
     <mod-append:name>fm_forgemasterperson_player</mod-append:name>
-		<mod-append:name>remington</mod-append:name>
-		<mod-append:name>mossberg</mod-append:name>
+		<mod-append:name>unique_remington</mod-append:name>
+		<mod-append:name>unique_mossberg</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "LIST_CREW_MORPH_ROCK">
@@ -1952,23 +1952,23 @@
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "LIST_CREW_DEFENDER">
-    <mod-append:name>remington</mod-append:name>
-	<mod-append:name>mossberg</mod-append:name>
+    <mod-append:name>unique_remington</mod-append:name>
+	<mod-append:name>unique_mossberg</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "LIST_CREW_ENGI">
-    <mod-append:name>remington</mod-append:name>
-	<mod-append:name>mossberg</mod-append:name>
+    <mod-append:name>unique_remington</mod-append:name>
+	<mod-append:name>unique_mossberg</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "LIST_CHECKCREW_ENGI">
-    <mod-append:name>remington</mod-append:name>
-	<mod-append:name>mossberg</mod-append:name>
+    <mod-append:name>unique_remington</mod-append:name>
+	<mod-append:name>unique_mossberg</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "LIST_CREW_ELITE">
-	<mod-append:name>remington</mod-append:name>
-	<mod-append:name>mossberg</mod-append:name>
+	<mod-append:name>unique_remington</mod-append:name>
+	<mod-append:name>unique_mossberg</mod-append:name>
 	<mod-append:name>fm_plated</mod-append:name>
 	<mod-append:name>fm_plated_shell</mod-append:name>
 	<mod-append:name>mantis_crackerjack</mod-append:name>

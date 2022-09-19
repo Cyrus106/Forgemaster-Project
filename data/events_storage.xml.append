@@ -9214,12 +9214,12 @@
 <FTL> <!-- Crew Talk -->
   <mod:findName type = "event" name = "STORAGE_CHECK_CREW_LIST_ENGI">
 
-    <mod-append:choice req="remington" lvl="1" max_group="605" blue="false" hidden="true">
+    <mod-append:choice req="unique_remington" lvl="1" max_group="605" blue="false" hidden="true">
       <text>Look for Remington.</text>
       <event load="STORAGE_CHECK_CREW_REMINGTON"/>
     </mod-append:choice>
 
-    <mod-append:choice req="mossberg" lvl="1" max_group="606" blue="false" hidden="true">
+    <mod-append:choice req="unique_mossberg" lvl="1" max_group="606" blue="false" hidden="true">
       <text>Look for Mossberg.</text>
       <event load="STORAGE_CHECK_CREW_MOSSBERG"/>
     </mod-append:choice>

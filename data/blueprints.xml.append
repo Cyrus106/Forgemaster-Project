@@ -2642,7 +2642,7 @@
 		</powerList>
 	</crewBlueprint>
 
-	<crewBlueprint name="remington">
+	<crewBlueprint name="unique_remington">
 		<desc>One of Winchester's best friends, and the twin brother of Mossberg. Fiercely loyal to friends and allies. Loves board games and comics.</desc>
 		<cost>90</cost>
 		<bp>2</bp>
@@ -2664,7 +2664,7 @@
 		</colorList>
 	</crewBlueprint>
 
-	<crewBlueprint name="mossberg">
+	<crewBlueprint name="unique_mossberg">
 		<desc>One of Winchester's best friends, and the twin brother of Remington. Fiercely loyal to friends and allies. Loves puzzles, especially crosswords.</desc>
 		<cost>90</cost>
 		<bp>2</bp>
@@ -7422,11 +7422,11 @@
 					<boostType>SET</boostType>
 					<deathEffect>
 						<event>
-							<boarders min="1" max="1" class="remington" />
+							<boarders min="1" max="1" class="unique_remington" />
 						</event>
 					</deathEffect>
 					<whiteList>
-						<remington />
+						<unique_remington />
 					</whiteList>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
@@ -7436,11 +7436,11 @@
 					<boostType>SET</boostType>
 					<deathEffect>
 						<event>
-							<boarders min="1" max="1" class="mossberg" />
+							<boarders min="1" max="1" class="unique_mossberg" />
 						</event>
 					</deathEffect>
 					<whiteList>
-						<mossberg />
+						<unique_mossberg />
 					</whiteList>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>

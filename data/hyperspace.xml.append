@@ -277,8 +277,8 @@
 			<crewLimit>10</crewLimit>
 			<crew>
 				<mantis_warlord room="0" name="Winchester" />
-				<remington room="8" name="Remington"  />
-				<mossberg room="9" name="Mossberg"  />
+				<unique_remington room="8" name="Remington"  />
+				<unique_mossberg room="9" name="Mossberg"  />
 			</crew>
 		</mod-append:customShip>
 		<mod-append:customShip name="PLAYER_SHIP_GUNSHIP_FM_2">
@@ -288,8 +288,8 @@
 			<crewLimit>20</crewLimit>
 			<crew>
 				<mantis_warlord room="0" name="Winchester" />
-				<remington room="9" name="Remington"  />
-				<mossberg room="10" name="Mossberg"  />
+				<unique_remington room="9" name="Remington"  />
+				<unique_mossberg room="10" name="Mossberg"  />
 			</crew><!--mantis_suzerain--> <!--This ID was just sitting here for some reason, so I commented it out for now-->
 		</mod-append:customShip>
 		<mod-append:customShip name="PLAYER_SHIP_GUNSHIP_FM_3">
@@ -302,8 +302,8 @@
 			<crew>
 				<mantis_warlord room="0" name="Winchester" />
 				<engi room="9"  />
-				<remington room="10" name="Remington" />
-				<mossberg room="10" name="Mossberg" />
+				<unique_remington room="10" name="Remington" />
+				<unique_mossberg room="10" name="Mossberg" />
 
 			</crew>
 		</mod-append:customShip>
@@ -315,8 +315,8 @@
 			<crewLimit>12</crewLimit>
 			<crew>
 				<mantis_warlord room="0" name="Winchester" />
-				<remington room="12" name="Remington"  />
-				<mossberg room="10" name="Mossberg"  />
+				<unique_remington room="12" name="Remington"  />
+				<unique_mossberg room="10" name="Mossberg"  />
 				<mantis_suzerain room="11"  />
 			</crew>
 		</mod-append:customShip>
@@ -340,8 +340,8 @@
 			<crewLimit>12</crewLimit>
 			<crew>
 				<mantis_warlord room="0" name="Winchester III" />
-				<remington room="10" name="Remington MK III"  />
-				<mossberg room="12" name="Mossberg MK III"  />
+				<unique_remington room="10" name="Remington MK III"  />
+				<unique_mossberg room="12" name="Mossberg MK III"  />
 			</crew>
 			<systemLimit>12</systemLimit>
 			<customReactor maxLevel="70">
@@ -1646,8 +1646,8 @@
 			<crew>
 				<mantis_warlord room="6" name="Winchester" />
 				<mantis_free room="10"  />
-				<remington room="14" name="Remington"/>
-				<mossberg room="13" name="Mossberg"/>
+				<unique_remington room="14" name="Remington"/>
+				<unique_mossberg room="13" name="Mossberg"/>
 			</crew>
 			<rooms>
 				<room id="14"> <!--drones-->
@@ -6161,7 +6161,7 @@
 	</crew>
 
 	<crew> <!-- Remington-->
-		<race name="remington">
+		<race name="unique_remington">
 			<repairSpeed>2.5</repairSpeed>
 			<moveSpeedMultiplier>1</moveSpeedMultiplier>
 			<damageMultiplier>0.6</damageMultiplier>
@@ -6212,7 +6212,7 @@
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<whiteList>
-						<mossberg/>
+						<unique_mossberg/>
 					</whiteList>
 					<priority>-100</priority>
 				</statBoost>
@@ -6223,7 +6223,7 @@
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<whiteList>
-						<mossberg/>
+						<unique_mossberg/>
 					</whiteList>
 					<priority>-100</priority>
 				</statBoost>
@@ -6234,7 +6234,7 @@
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<whiteList>
-						<mossberg/>
+						<unique_mossberg/>
 					</whiteList>
 					<priority>-100</priority>
 				</statBoost>
@@ -6245,7 +6245,7 @@
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<whiteList>
-						<mossberg/>
+						<unique_mossberg/>
 					</whiteList>
 					<priority>-100</priority>
 				</statBoost>
@@ -6258,7 +6258,7 @@
 	</crew>
 
 	<crew> <!-- Mossberg-->
-		<race name="mossberg">
+		<race name="unique_mossberg">
 			<repairSpeed>2.5</repairSpeed>
 			<moveSpeedMultiplier>1</moveSpeedMultiplier>
 			<damageMultiplier>0.6</damageMultiplier>
@@ -6308,7 +6308,7 @@
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<whiteList>
-						<remington/>
+						<unique_remington/>
 					</whiteList>
 					<priority>-100</priority>
 				</statBoost>
@@ -6319,7 +6319,7 @@
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<whiteList>
-						<remington/>
+						<unique_remington/>
 					</whiteList>
 					<priority>-100</priority>
 				</statBoost>
@@ -6330,7 +6330,7 @@
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<whiteList>
-						<remington/>
+						<unique_remington/>
 					</whiteList>
 					<priority>-100</priority>
 				</statBoost>
@@ -6341,7 +6341,7 @@
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<whiteList>
-						<remington/>
+						<unique_remington/>
 					</whiteList>
 					<priority>-100</priority>
 				</statBoost>
@@ -6354,14 +6354,14 @@
 	</crew>
 	<events> <!-- TWINS REQ-->
 		<req name="LIST_ENGI_TWINS" type="all"> <!--Do you have both twins? -->
-			<name>remington</name>
-			<name>mossberg</name>
+			<name>unique_remington</name>
+			<name>unique_mossberg</name>
 		</req>
 		<req name="REQ_GUNBOMTWINS" type="all"> <!--Did you obtain a twin from gunbom and still have one? -->
 			<name>fm_obtainedtwin</name>
 			<req type="any">
-				<name>mossberg</name>
-				<name>remington</name>
+				<name>unique_mossberg</name>
+				<name>unique_remington</name>
 			</req>
 		</req>
 		<req name="TWISTED_CLOAK_UPGRADE_CHECK" type="all">
@@ -12327,7 +12327,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					</systemPowerScaling>
 				</statBoost>
 			</statBoosts>
-    </aug>
+   		</aug>
 
 		<aug name="ANCIENT_MURDERBOTS">
 			<statBoosts>
@@ -12377,7 +12377,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					</systemPowerScaling>
 				</statBoost>
 			</statBoosts>
-    </aug>
+    	</aug>
 
 		<aug name="ROYAL_MURDERBOTS">
 			<function name="FIRE_EXTINGUISHERS" value="50" useForReqs="true" warning="false"/>
@@ -12539,12 +12539,12 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 
 
 			</statBoosts>
-    </aug>
+    	</aug>
 
 
 
 
-		<aug name ="TWISTED_ANCIENT_BOUNTY">
+		<aug name="TWISTED_ANCIENT_BOUNTY">
 			<statBoosts>
 				<statBoost name="suffocationModifier">
 					<boostType>MULT</boostType>
@@ -17059,8 +17059,8 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<mod:findLike type="statBoosts">
 				<mod:findLike type="statBoost">
 					<mod:findLike type="whiteList">
-						<mod-append:mossberg/>
-						<mod-append:remington/>
+						<mod-append:unique_mossberg/>
+						<mod-append:unique_remington/>
 					</mod:findLike>
 				</mod:findLike>
 			</mod:findLike>
@@ -20622,6 +20622,190 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
             </item>
 			<item>
                 <blueprint>FM_CORROSIVE_3</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="DRONES">
+			<item>
+                <blueprint>TWISTED_MENDER</blueprint>
+            </item>
+			<item>
+                <blueprint>TWISTED_YINYANG_BATTLE</blueprint>
+            </item>
+			<item>
+                <blueprint>TWISTED_BATTLETOG2_BOARDER</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="DRONES">
+			<item>
+                <blueprint>TWISTED_SURGEON_BATTLE</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_FIRE_INTRUDER</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_ANCALAGON_BATTLE</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="DRONES">
+			<item>
+                <blueprint>FM_COMBAT_2_LASER_PLAYER</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_DEFENSE_3_MEGA</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_HACKER_DRONE</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="DRONES">
+			<item>
+                <blueprint>FM_FLAMETHROWER_DRONE</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_AN_COMBAT_1_LASER</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_AN_DEFENSE_3_LASER</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="DRONES">
+			<item>
+                <blueprint>FM_ENERGY_COMBAT_PINPOINT1</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_ANCIENT_BEAM_COMBAT1</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_ANCIENT_BEAM_COMBAT2</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="DRONES">
+			<item>
+                <blueprint>FM_ANCIENT_BEAM_COMBATR</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_AMBER_DRONE</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_CRYSTAL_DRONE</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="DRONES">
+			<item>
+                <blueprint>FM_CURA_DRONE</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_FORGEMAN_DRONE</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_ISHIMURA_DRONE</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="DRONES">
+			<item>
+                <blueprint>FM_KESTREL_DRONE</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_MFK_KESTREL_DRONE</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_MFK_PICKET_DRONE</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="DRONES">
+			<item>
+                <blueprint>FM_SIREN_DRONE</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_COMBAT_BEAM_HULLNT</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="AUGMENTS">
+			<item>
+                <blueprint>INSTANT_SYSTEMS</blueprint>
+            </item>
+			<item>
+                <blueprint>LOCKED_RAMMING_SPEED</blueprint>
+            </item>
+			<item>
+                <blueprint>FM_CRUCIBLE_PLATING_PLAYER</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="AUGMENTS">
+			<item>
+                <blueprint>CURA_MVBOSS_SPAWNER</blueprint>
+            </item>
+			<item>
+                <blueprint>TWISTED_CRYSTAL_ARMOR_50</blueprint>
+            </item>
+			<item>
+                <blueprint>TWISTED_LOSTSUN</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="AUGMENTS">
+			<item>
+                <blueprint>FM_DRONE_REPAIR_SYSTEM</blueprint>
+            </item>
+			<item>
+                <blueprint>LOCKED_SUPER_DEPRESSION</blueprint>
+            </item>
+			<item>
+                <blueprint>LOCKED_TAROT_CARDS</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="AUGMENTS">
+			<item>
+                <blueprint>PACIFISTIC_REGENERATION</blueprint>
+            </item>
+			<item>
+                <blueprint>TWISTED_ANCIENT_BOUNTY</blueprint>
+            </item>
+			<item>
+                <blueprint>TWISTED_MANTIS_UPGRADER</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="AUGMENTS">
+			<item>
+                <blueprint>TWISTED_HULL_ARM</blueprint>
+            </item>
+			<item>
+                <blueprint>LOCKED_DECONSTRUCTIVE_GAS</blueprint>
+            </item>
+			<item>
+                <blueprint>TWISTED_KESTREL_GHOST_SUMMON</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="CREW">
+			<item>
+                <blueprint>fm_plated</blueprint>
+            </item>
+			<item>
+                <blueprint>fm_forgemasterperson_player</blueprint>
+            </item>
+			<item>
+                <blueprint>fm_plated_shell</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="CREW">
+			<item>
+                <blueprint>unique_remington</blueprint>
+            </item>
+			<item>
+                <blueprint>unique_mossberg</blueprint>
+            </item>
+			<item>
+                <blueprint>fm_human_texture</blueprint>
+            </item>
+		</mod-append:category>
+		<mod-append:category type="CREW">
+			<item>
+                <blueprint>orchid_fire</blueprint>
+            </item>
+			<item>
+                <blueprint>husk_slug_player</blueprint>
+            </item>
+			<item>
+                <blueprint>mantis_crackerjack</blueprint>
             </item>
 		</mod-append:category>
 	</mod:findLike>
