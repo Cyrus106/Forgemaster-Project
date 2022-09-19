@@ -19,7 +19,7 @@
 		 <event>
 		<text>Alastair repairs the ship with relative ease. While repairing the ship, an old torn sweater catches his eye. Alastair refuses to return to the ship until he has finished repairing it with a needle and string from his toolbox. He hands it to the captain of the Rebel ship; The captain is left nearly in tears "This was my late wife's last gift to me..." the Rebel explains, holding back a few tears. "I was wrong about you aliens, and it seems I was lied to since birth, so perhaps now is my chance to make things right. I'm coming with you." He says sternly, following Alastair aboard your ship.</text>
 				<modifyPursuit amount="1"/>
-				<crewMember amount="1" class="mfk"/>
+				<crewMember amount="1" class="human_mfk"/>
 				
 			</event>
 </mod-append:choice>

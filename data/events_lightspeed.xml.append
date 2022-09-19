@@ -142,7 +142,7 @@
 </mod:findWithChildLike> -->
 
 <!--  Twisted Sector-->
-<event name="ENTER_TWISTED">
+<event name="ENTER_TWISTED" unused="true">
 	<text load="TEXT_LIGHTSPEED"/>
 	<img back="BACKGROUND_LIGHTSPEED" planet="NONE"/>
 	<choice hidden="true">
@@ -150,7 +150,7 @@
 		<event load="LOAD_ATLAS"/>
 	</choice>
 </event>
-<event name="TWISTED_WARP">
+<event name="TWISTED_WARP" unused="true">
 	<text>Name: Twisted Sector
 		Type: Neutral
 		Unique: True

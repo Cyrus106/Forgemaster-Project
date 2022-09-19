@@ -3871,7 +3871,7 @@
 		<type>LASER</type>
 		<title>BullSquid</title>
 		<short>BullSquid</short>
-		<tip>tip_bullsquid</tip>
+		<!--<tip>tip_bullsquid</tip>-->
 		<desc>Fires a living, angry, corrosive ball of toxic waste that causes chaos on the enemy ship</desc>
 		<tooltip>N/A</tooltip>
 		<damage>1</damage>
@@ -3939,8 +3939,8 @@
 		<iconImage>laser</iconImage>
 		<iconScale>0.85</iconScale>
 	</weaponBlueprint>
-
-	<weaponBlueprint name="FM_TEST"> <!--Tests ancalagon crystals-->
+	
+	<weaponBlueprint name="FM_TEST" unused="true"> <!--Tests ancalagon crystals-->
 		<type>LASER</type>
 		<tip>flamethrower</tip>
 		<title>Dazhbog</title>
@@ -3990,7 +3990,7 @@
 		<missSounds>
 			<sound>miss</sound>
 		</missSounds>
-		<image>fm_nebula_shot</image>
+		<image>fm_flamethrower_shot</image>
 		<weaponArt>fm_flamethrower</weaponArt>
 		<iconImage>laser</iconImage>
 	</weaponBlueprint>
@@ -9279,7 +9279,7 @@
 			<projectile count="1" fake="false">fm_hellflash_shot</projectile>
 		</projectiles>
 		<launchSounds>
-			<sound>hellflashShoot</sound>
+			<sound>fm_hellflashShoot</sound>
 		</launchSounds>
 		<hitShipSounds>
 			<sound>hitHull1</sound>
@@ -13785,7 +13785,7 @@
 		<rarity>0</rarity>
 		<iconImage>combat</iconImage>
 	</droneBlueprint>
-
+	
 	<weaponBlueprint name="FM_ENERGY_BEAM1_DRONE">
 		<type>BEAM</type>
 		<tip>tip_beams</tip>
@@ -19551,7 +19551,7 @@
 			<sound>fm_drone_artillery_launch</sound>
 		</launchSounds>
 		<hitShipSounds>
-			<sound>mute</sound>
+			<sound>silence</sound>
 		</hitShipSounds>
 		<hitShieldSounds>
 			<sound>hitShield1</sound>
@@ -20283,7 +20283,7 @@
 <!-- ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝	-->
 
 <FTL><!--AUGMENTS -->
-
+	
 	<augBlueprint name="INSTANT_SYSTEMS">
 		<title>Ultimate System Accelerator</title>
 		<desc>The Cloaking, Hacking, Mind Control, and Temporal Systems have no cooldown.</desc>
@@ -20301,7 +20301,7 @@
 		<stackable>true</stackable>
 		<value>100</value><!--I'll fine tune this in lua later so it's equal to human repair speed-->
 	</augBlueprint>
-
+	
 	<augBlueprint name="FM_AUTOREPAIR_ENGINES">
 		<title>Engine Autorepair</title>
 		<desc>This augment will autorepair your engine system.</desc>
@@ -20382,7 +20382,7 @@
 		<stackable>true</stackable>
 		<value>100</value><!--I'll fine tune this in lua later so it's equal to human repair speed-->
 	</augBlueprint>
-
+	
 	<augBlueprint name="FM_AUTOREPAIR_CLOAKING">
 		<title>Cloaking Autorepair</title>
 		<desc>This augment will autorepair your Cloaking system.</desc>
@@ -20544,7 +20544,7 @@
 		<rarity>0</rarity>
 		<stackable>true</stackable>
 	</augBlueprint>
-
+	
 	<augBlueprint name="FM_CRUCIBLE_PLATING_PLAYER">
 		<title>Crucible Plating</title>
 		<desc>Extremely durable hull plating. Gives a 25% chance to resist hull damage, system damage, and ion damage.</desc>
@@ -20710,7 +20710,7 @@
 		<rarity>0</rarity>
 		<stackable>false</stackable>
 	</augBlueprint>
-
+	
 	<augBlueprint name="LAB_ZOLTAN_LIMIT_RELEASE">
 		<title>Zoltan Limit Release</title>
 		<desc>Your Zoltans gain an active ability that reduces damage taken by 40% and increases damage dealt by 30%. They do not supply bonus power while this ability is active. Alongside this, Zoltan gain an extra 15 health and your ship gains a 5 HP Zoltan Shield.</desc>
@@ -20838,7 +20838,7 @@
 		<rarity>0</rarity>
 		<stackable>false</stackable>
 	</augBlueprint>
-
+	
 	<augBlueprint name="LOCKED_ZERG_CREW_STIMS">
 		<title>Zerg Pheromones</title>
 		<desc>Strength inducing pheromones that are dispersed through the Life Support system. Each powered level reduces active ability cooldowns by 10%, increases damage by 10% and increases movement speed by 33%. Works on both ships.</desc>
@@ -20906,7 +20906,7 @@
 		<rarity>0</rarity>
 		<stackable>false</stackable>
 	</augBlueprint>
-
+	
 	<augBlueprint name="TWISTED_BLESSING">
 		<title>Twisted Blessing</title>
 		<desc>A darker shade of the typical Zoltan blessing, given by something best unnamed. Allows for anger to be forestalled, yet never unused. Devastate the enemy vessel at the start of combat.</desc>
@@ -20939,7 +20939,7 @@
 		<stackable>false</stackable>
 		<bp>0</bp>
 	</augBlueprint>
-
+	
 	<augBlueprint name="TWISTED_ANCIENT_BOUNTY">
 		<title>Aether Bounty Codex</title>
 		<desc>After finding some Aether tech of their own, these Obelisk-hating slugs decided that there was no better way to use it than to wipe the Multiverse clean of every last Ancient, as well as anybody else stupid enough to get in their way. In order to achieve this, they turned their extremely unhealthy smoking habits into a weapon, one that increases asphyxiation damage by 100% per level of Life Support powered. Unfortunately, the Malboro Dispersal Unit also slightly affects your ship too, due to its unhealthy nature, making all crew on your ship take an extra 25% asphyxiation damage.</desc>
@@ -21014,7 +21014,7 @@
 
 	<augBlueprint name="TWISTED_HULL_ARM">
 		<title>Self Arm</title>
-		<desc>A versatile capable of grabbing drones and magnetizing debris. Additionally, it can grab ripped-off pieces of your hull to deconstruct them for scrap.</desc>
+		<desc>A versatile capable of grabbing drones and magnetizing debris. Additionally, it can grab ripped-off pieces of your hull to deconstruct them for scrap.(-90% scrap but dmg taken -> scrap)</desc>
 		<cost>100</cost>
 		<rarity>0</rarity>
 		<stackable>true</stackable>
@@ -21084,6 +21084,158 @@
 	solution: make the augment 'self arm'
 	"a versatile arm capable of grabbing drones and magnetizing debris - additionally, it can grab ripped-off pieces of your hull to deconstruct for shiny golden scrap."-->
 
+</FTL>
+<FTL>
+	<augBlueprint name="HID_GOZER_FRIDGE">
+		<title>Gozer's Fridge</title>
+		<desc>This mini fridge is an excellent tool for storing your drinks and perishables. Also, your ghost crew can no longer phase through walls, but they feel incredibly durable! All Ghosts in your crew gain 70% max health and 30% movement speed.</desc>
+		<cost>10</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="HID_FREEDOM_ROCK">
+		<title>Rockmen Relic of Freedom</title>
+		<desc>This tiny statue invigorates your rockmen crew, they gain 1.8x movement speed!</desc>
+		<cost>10</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="HID_DEPRESSION_EMITTER">
+		<title>Depression Emitter</title>
+		<desc>"Life is Pain, I hate-" A well-known quote of famous serial killer Jeremy the 986th. This relic contains the eternal essence of Jeremy, a prominent Leech figure. Emits a depression aura that slows all enemy movement and repair speed by 20%.</desc>
+		<cost>10</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="HID_BRAIN_DONATION">
+		<title>Mind Clouder</title>
+		<desc>Ambrosia. This heavy cocktail of illict drugs makes your crew immune to mind control. </desc>
+		<cost>70</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="HID_DEATH_VESTS2">
+		<title>Twilight Vests</title>
+		<desc>Adds a death effect to all non-Zoltan allied crew, making them explode for 45 crew damage against enemies, and sometimes start fires. Does not override crew that already have death effects.</desc>
+		<cost>50</cost>
+		<bp>15</bp>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="HID_TEA_EARL">
+		<title>Tea, Earl Grey</title>
+		<desc>Delicious tea even her royal highness would enjoy. Gives all allied Mantis +20% repair speed and +15 max health.</desc>
+		<cost>50</cost>
+		<bp>15</bp>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="HID_MANTIS_RELOADER">
+		<title>Pheromone Accelerator</title>
+		<desc>This small device allows an increased tolerance to Pheromone usage, and lowers all Mantis' ability cooldowns by 20%</desc>
+		<cost>50</cost>
+		<bp>15</bp>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+	<augBlueprint name="MANTIS_RELOADER_ENEMY">
+		<title>Pheromone Accelerator</title>
+		<desc>This small device allows an increased tolerance to Pheromone usage, and lowers all Mantis' ability cooldowns by 20%</desc>
+		<cost>50</cost>
+		<bp>15</bp>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="HID_COMBUSTION_VIRUS">
+		<title>Combustion Bioweapon</title>
+		<desc>This bioweapon infects all of your crew, giving all of them the active ability Combust, even crew that already have actives. Once infected the host subject cannot get rid of this. As for the Shell race, its existing Combust abilities are upgraded, typically costing less health or being more potent.</desc>
+		<cost>50</cost>
+		<bp>15</bp>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+	
+	<augBlueprint name="HID_LAB_ZOLTAN_LIMIT_RELEASE">
+		<title>Zoltan Limit Release</title>
+		<desc>Your Zoltans gain an active ability that reduces damage taken by 40% and increases damage dealt by 30%. They do not supply bonus power while this ability is active. Alongside this, Zoltan gain an extra 15 health and your ship gains a 5 HP Zoltan Shield.</desc>
+		<cost>120</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="HID_UPG_DRONE_SPEED_2">
+		<title> Drone Boost MK II</title>
+		<desc>Your drones gain tripled movement and a 50% boost to combat/sabotage damage and repair/extinguishing speed. Stacks with other boosters.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="HID_UPG_WEAPONS_REPLICATOR_2">
+		<title>Twisted Ammo Fabricator</title>
+		<desc>Upgrade - Has a 60% chance to not use a missile when you shoot.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="HID_UPG_DRONE_COOLDOWN">
+		<title> Drone Boost MK KAI</title>
+		<desc>Your crew drones recharge their abilities twice as fast.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="HID_FIRE_HEART">
+		<title>Scrapmetal Fireheart</title>
+		<desc>"Fuel the fires, Feel the heat!" All normal Lanius crew heal from fire, have a slower oxygen drain, and deal 20% less combat damage.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="HID_GOLDEN_TUCO">
+		<title>Golden Tuco</title>
+		<desc>This limited edition Tuco's Child Casino and Gardening Emporium golden figurine makes your crew feel warm and fuzzy inside. Provides 30% active ability cooldown reduction to all of your crew(except Mantis, Mantis HATE figurines).</desc>
+		<cost>50</cost>
+		<bp>15</bp>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="HID_MALBORO_RED">
+		<title>Malboro Quasar</title>
+		<desc>These hyper-addictive cigarettes somehow boost your vitality, but give you horrible lung problems. Seems healthy! ...if you're a fool that is. 2x max health for all slugs, but 3x suffocation damage taken.</desc>
+		<cost>50</cost>
+		<bp>15</bp>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+	
+	<augBlueprint name="HID_REALITY_RELOADER">
+		<title>Reality-Bent Reloader</title>
+		<desc>This mysteriously reloader also appears to boost your shield recharge rate. 15% boost to weapons and shield recharge.</desc>
+		<cost>50</cost>
+		<bp>15</bp>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="HID_FM_UPG_AETHER_SHIELDS">
+		<title>Aether Ascension Shields</title>
+		<desc>Effects: Provides a bonus 6 energy shield points which will stack with other energy shields.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
 </FTL>
 <!--all the Modular armor augments-->
 <FTL>
@@ -21394,7 +21546,7 @@
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
-
+  
   <augBlueprint name="FM_MODULAR_HULL_UPDATE_WEAPONS">
     <title>System update (weapons)</title>
     <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
@@ -21403,6 +21555,14 @@
     <stackable>true</stackable>
   </augBlueprint>
 
+  <augBlueprint name="FM_MODULAR_HULL_UPDATE_DRONES">
+    <title>System update (drones)</title>
+    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+    <cost>40</cost>
+    <rarity>0</rarity>
+    <stackable>true</stackable>
+  </augBlueprint>
+  
   <augBlueprint name="FM_MODULAR_HULL_UPDATE_PILOT">
     <title>System update (pilot)</title>
     <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
@@ -21410,7 +21570,7 @@
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
-
+  
   <augBlueprint name="FM_MODULAR_HULL_UPDATE_SENSORS">
     <title>System update (sensors)</title>
     <desc>+40% repair speed, -40% sabotage speed in this System.</desc>

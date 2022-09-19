@@ -1331,9 +1331,9 @@
 <!-- ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ ¶ -->
 
 
-<FTL><!--CRAFT WEAPONS. CATEGORY MENU! Please make sure to add ANY AND ALL CHANGES /ADDITIONS TO THIS MENU to the Forgemaster NPC's craft menu as well.
+<FTL><!--CRAFT WEAPONS. CATEGORY MENU! Please make sure to add ANY AND ALL CHANGES /ADDITIONS TO THIS MENU to the Forgemaster NPC's craft menu as well.-->
 
-	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 	CRAFT WEAPONS
 	NOTE: LATER, CHANGE THESE TO 'craft (weapon type)' and then have the
 	choice required be a weapon list (such as a list of beams used as components) instead!
@@ -1806,8 +1806,8 @@
       <text>Combine the Suyari beam and Cinquedea pinpoint to forge the Omiyari focus.[Cost: 120~]</text>
       <event load="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ADAPT"/>
     </choice>
-
-    <choice req="FM_FOCUS_ADAPT_LIST " lvl="0" max_lvl="0" blue="false" hidden="true">
+    
+    <choice req="FM_FOCUS_ADAPT_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
       <text>You must have a Suyari beam and Cinquedea pinpoint to forge this weapon.</text>
       <event load="OPTION_INVALID"/>
     </choice>
@@ -3804,7 +3804,7 @@
 								<remove name="CRYSTAL_BURST_1"/>
 								<choice hidden="true">
 									<text>Continue...</text>
-									<event>
+									<event name="CREATE_FM_SHOTGUN_BRONZE_FINISH">
 										<metaVariable name="FM_LORE_BRONZE" op="set" val="1"/>
 										<text id="text_CREATE_FM_SHOTGUN_BRONZE_4"/>
 										<choice hidden="true">
@@ -3840,14 +3840,7 @@
 								<remove name="CRYSTAL_BURST_1_RED"/>
 								<choice hidden="true">
 									<text>Continue...</text>
-									<event>
-										<metaVariable name="FM_LORE_BRONZE" op="set" val="1"/>
-										<text id="text_CREATE_FM_SHOTGUN_BRONZE_4"/>
-										<choice hidden="true">
-											<text>Continue...</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
+									<event load="CREATE_FM_SHOTGUN_BRONZE_FINISH"/>
 								</choice>
 							</event>
 						</choice>
@@ -3876,14 +3869,7 @@
 								<remove name="CRYSTAL_BURST_2"/>
 								<choice hidden="true">
 									<text>Continue...</text>
-									<event>
-										<metaVariable name="FM_LORE_BRONZE" op="set" val="1"/>
-										<text id="text_CREATE_FM_SHOTGUN_BRONZE_4"/>
-										<choice hidden="true">
-											<text>Continue...</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
+									<event load="CREATE_FM_SHOTGUN_BRONZE_FINISH"/>
 								</choice>
 							</event>
 						</choice>
@@ -3912,14 +3898,7 @@
 								<remove name="CRYSTAL_BURST_2_RED"/>
 								<choice hidden="true">
 									<text>Continue...</text>
-									<event>
-										<metaVariable name="FM_LORE_BRONZE" op="set" val="1"/>
-										<text id="text_CREATE_FM_SHOTGUN_BRONZE_4"/>
-										<choice hidden="true">
-											<text>Continue...</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
+									<event load="CREATE_FM_SHOTGUN_BRONZE_FINISH"/>
 								</choice>
 							</event>
 						</choice>
@@ -3948,14 +3927,7 @@
 								<remove name="CRYSTAL_HEAVY_1"/>
 								<choice hidden="true">
 									<text>Continue...</text>
-									<event>
-										<metaVariable name="FM_LORE_BRONZE" op="set" val="1"/>
-										<text id="text_CREATE_FM_SHOTGUN_BRONZE_4"/>
-										<choice hidden="true">
-											<text>Continue...</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
+									<event load="CREATE_FM_SHOTGUN_BRONZE_FINISH"/>
 								</choice>
 							</event>
 						</choice>
@@ -3984,14 +3956,7 @@
 								<remove name="CRYSTAL_HEAVY_1_RED"/>
 								<choice hidden="true">
 									<text>Continue...</text>
-									<event>
-										<metaVariable name="FM_LORE_BRONZE" op="set" val="1"/>
-										<text id="text_CREATE_FM_SHOTGUN_BRONZE_4"/>
-										<choice hidden="true">
-											<text>Continue...</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
+									<event load="CREATE_FM_SHOTGUN_BRONZE_FINISH"/>
 								</choice>
 							</event>
 						</choice>
@@ -4020,14 +3985,7 @@
 								<remove name="CRYSTAL_HEAVY_2"/>
 								<choice hidden="true">
 									<text>Continue...</text>
-									<event>
-										<metaVariable name="FM_LORE_BRONZE" op="set" val="1"/>
-										<text id="text_CREATE_FM_SHOTGUN_BRONZE_4"/>
-										<choice hidden="true">
-											<text>Continue...</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
+									<event load="CREATE_FM_SHOTGUN_BRONZE_FINISH"/>
 								</choice>
 							</event>
 						</choice>
@@ -4056,14 +4014,7 @@
 								<remove name="CRYSTAL_HEAVY_2_RED"/>
 								<choice hidden="true">
 									<text>Continue...</text>
-									<event>
-										<metaVariable name="FM_LORE_BRONZE" op="set" val="1"/>
-										<text id="text_CREATE_FM_SHOTGUN_BRONZE_4"/>
-										<choice hidden="true">
-											<text>Continue...</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
+									<event load="CREATE_FM_SHOTGUN_BRONZE_FINISH"/>
 								</choice>
 							</event>
 						</choice>
@@ -4092,14 +4043,7 @@
 								<remove name="CRYSTAL_STUN"/>
 								<choice hidden="true">
 									<text>Continue...</text>
-									<event>
-										<metaVariable name="FM_LORE_BRONZE" op="set" val="1"/>
-										<text id="text_CREATE_FM_SHOTGUN_BRONZE_4"/>
-										<choice hidden="true">
-											<text>Continue...</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
+									<event load="CREATE_FM_SHOTGUN_BRONZE_FINISH"/>
 								</choice>
 							</event>
 						</choice>
@@ -4128,14 +4072,7 @@
 								<remove name="CRYSTAL_STUN_RED"/>
 								<choice hidden="true">
 									<text>Continue...</text>
-									<event>
-										<metaVariable name="FM_LORE_BRONZE" op="set" val="1"/>
-										<text id="text_CREATE_FM_SHOTGUN_BRONZE_4"/>
-										<choice hidden="true">
-											<text>Continue...</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
+									<event load="CREATE_FM_SHOTGUN_BRONZE_FINISH"/>
 								</choice>
 							</event>
 						</choice>
@@ -4164,14 +4101,7 @@
 								<remove name="CRYSTAL_SHOTGUN"/>
 								<choice hidden="true">
 									<text>Continue...</text>
-									<event>
-										<metaVariable name="FM_LORE_BRONZE" op="set" val="1"/>
-										<text id="text_CREATE_FM_SHOTGUN_BRONZE_4"/>
-										<choice hidden="true">
-											<text>Continue...</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
+									<event load="CREATE_FM_SHOTGUN_BRONZE_FINISH"/>
 								</choice>
 							</event>
 						</choice>
@@ -4200,14 +4130,7 @@
 								<remove name="CRYSTAL_SHOTGUN_RED"/>
 								<choice hidden="true">
 									<text>Continue...</text>
-									<event>
-										<metaVariable name="FM_LORE_BRONZE" op="set" val="1"/>
-										<text id="text_CREATE_FM_SHOTGUN_BRONZE_4"/>
-										<choice hidden="true">
-											<text>Continue...</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
+									<event load="CREATE_FM_SHOTGUN_BRONZE_FINISH"/>
 								</choice>
 							</event>
 						</choice>
@@ -4236,14 +4159,7 @@
 								<remove name="CRYSTAL_CHARGEGUN"/>
 								<choice hidden="true">
 									<text>Continue...</text>
-									<event>
-										<metaVariable name="FM_LORE_BRONZE" op="set" val="1"/>
-										<text id="text_CREATE_FM_SHOTGUN_BRONZE_4"/>
-										<choice hidden="true">
-											<text>Continue...</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
+									<event load="CREATE_FM_SHOTGUN_BRONZE_FINISH"/>
 								</choice>
 							</event>
 						</choice>
@@ -4272,14 +4188,7 @@
 								<remove name="CRYSTAL_CHARGEGUN_RED"/>
 								<choice hidden="true">
 									<text>Continue...</text>
-									<event>
-										<metaVariable name="FM_LORE_BRONZE" op="set" val="1"/>
-										<text id="text_CREATE_FM_SHOTGUN_BRONZE_4"/>
-										<choice hidden="true">
-											<text>Continue...</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
+									<event load="CREATE_FM_SHOTGUN_BRONZE_FINISH"/>
 								</choice>
 							</event>
 						</choice>
@@ -4308,14 +4217,7 @@
 								<remove name="MINELAUNCHER_CRYSTAL"/>
 								<choice hidden="true">
 									<text>Continue...</text>
-									<event>
-										<metaVariable name="FM_LORE_BRONZE" op="set" val="1"/>
-										<text id="text_CREATE_FM_SHOTGUN_BRONZE_4"/>
-										<choice hidden="true">
-											<text>Continue...</text>
-											<event load="FM_FORGE_WEAPON_LOAD"/>
-										</choice>
-									</event>
+									<event load="CREATE_FM_SHOTGUN_BRONZE_FINISH"/>
 								</choice>
 							</event>
 						</choice>
@@ -39429,7 +39331,7 @@
 			<event load="FM_FS_APARTMENT_129A_KNOCK_LOAD"/>
 		</choice>
 
-		<choice hidden="false" req="MARKER_129A_NOBODY_THERE_WHY" lvl="1" max_group="3" blue="blue">
+		<choice hidden="false" req="MARKER_129A_NOBODY_THERE_WHY" lvl="1" max_group="3" blue="true">
 			<text>(Investigate further). Ask a crew member to put their ear to the door and tell you what they hear.</text>
 			<event load="FM_FS_APARTMENT_129A_LISTEN_CREW"/>
 		</choice>

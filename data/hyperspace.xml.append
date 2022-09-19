@@ -1877,9 +1877,9 @@
 
 	</mod:findLike>
 
-
-	<events> <!--BOSS BOX
-		\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	
+	<events> <!--BOSS BOX-->
+		<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 		BOSS BOX
 		\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
 		<bossShip>FM_FORGEMASTER_CRUISER_ENEMY</bossShip>
@@ -3935,21 +3935,7 @@
 		<event name="FM_STORAGE_CHECK_JOURNAL" recursive="true">
 
 		</event>
-
-		<event name="FM_STORAGE_CHECK_JOURNAL_2_LOAD">
-			<loadEvent>FM_STORAGE_CHECK_JOURNAL_2</loadEvent>
-		</event>
-		<event name="FM_STORAGE_CHECK_JOURNAL_2" recursive="true">
-
-		</event>
-
-		<event name="FM_STORAGE_CHECK_JOURNAL_3_LOAD">
-			<loadEvent>FM_STORAGE_CHECK_JOURNAL_3</loadEvent>
-		</event>
-		<event name="FM_STORAGE_CHECK_JOURNAL_3" recursive="true">
-
-		</event>
-
+		
 		<event name="FM_LORE_ABSOLUTION_READ_LOAD">
 			<loadEvent>FM_LORE_ABSOLUTION_READ</loadEvent>
 		</event>
@@ -4202,6 +4188,7 @@
 				</req>
 			</req>
 		</req>
+		<variable name="loc_impossible_task" op="set" val="0"/> <!-- tracks impossible task accepting progress, 1=talked, 2=accepted-->
 		<variable name="flak_calc" op="set" val="0"/><!--Persistant Flak Surge Calculation Variable-->
 		<variable name="forgemaster_spawntriggered" op="set" val="0"/> <!--counter for how often the FMspawner was activated, if not 0 the spawner will not work-->
 		<variable name="rep_forgemaster" op="set" val="0"/> <!--forgemaster Notoriety-->
@@ -5414,7 +5401,7 @@
 			<sabotageSpeedMultiplier>1</sabotageSpeedMultiplier>
 			<animBase>rock</animBase>
 			<deathSounds>
-				<deathSound>shellDeath</deathSound>
+				<deathSound>shell_death</deathSound>
 			</deathSounds>
 			<shootingSounds>
 				<shootingSound>rockThrow1</shootingSound>
@@ -6371,8 +6358,8 @@
 			</req>
 		</req>
 	</events>
-
-	<crew> <!-- The Saturn Crew -->
+	<!--
+	<crew> <!- The Saturn Crew ->
 		<race name="saturn">
 			<animBase>mantis</animBase>
 			<canRepair>false</canRepair>
@@ -6497,7 +6484,7 @@
 		</race>
 	</crew>
 
-	<crew> <!-- The Panther Crew -->
+	<crew> <!- The Panther Crew ->
 		<race name="panther">
 			<animBase>mantis</animBase>
 			<canRepair>false</canRepair>
@@ -6619,7 +6606,7 @@
 		</race>
 	</crew>
 
-	<crew> <!-- The Saturn Crew -->
+	<crew> <!- The Saturn Crew ->
 		<race name="saturn">
 			<animBase>mantis</animBase>
 			<canRepair>false</canRepair>
@@ -6744,7 +6731,7 @@
 		</race>
 	</crew>
 
-	<crew> <!-- The Bast Crew -->
+	<crew> <!- The Bast Crew ->
 		<race name="bast">
 			<maxHealth>110</maxHealth>
 			<animBase>mantis</animBase>
@@ -6869,7 +6856,7 @@
 
 	</crew>
 
-	<crew> <!-- The Blob Panther -->
+	<crew> <!- The Blob Panther ->
 		<race name="blobpanther">
 			<maxHealth>75</maxHealth>
 			<canBurn>false</canBurn>
@@ -6913,7 +6900,7 @@
 		</race>
 	</crew>
 
-	<crew> <!-- Goul Omega -->
+	<crew> <!- Goul Omega ->
 		<race name="goulomega">
 			<maxHealth>110</maxHealth>
 			<canBurn>false</canBurn>
@@ -6941,7 +6928,7 @@
 		</race>
 	</crew>
 
-	<crew> <!-- Wraith Omega -->
+	<crew> <!- Wraith Omega ->
 		<race name="wraithomega">
 			<maxHealth>110</maxHealth>
 			<canBurn>false</canBurn>
@@ -6972,7 +6959,7 @@
 		</race>
 	</crew>
 
-	<crew> <!-- Mare Omega -->
+	<crew> <!- Mare Omega ->
 		<race name="mareomega">
 			<maxHealth>110</maxHealth>
 			<canBurn>false</canBurn>
@@ -7001,7 +6988,7 @@
 		</race>
 	</crew>
 
-	<crew> <!-- Phantom Omega -->
+	<crew> <!- Phantom Omega ->
 		<race name="phantomomega">
 			<maxHealth>110</maxHealth>
 			<canSuffocate>false</canSuffocate>
@@ -7015,7 +7002,7 @@
 
 		</race>
 	</crew>
-
+	-->
 	<crew> <!-- GB GOZER -->
 		<race name="gbgozer"> <!--ANCIENT CREW TYPES-->
 			<maxHealth>200</maxHealth>
@@ -8729,13 +8716,8 @@
 			<damageMultiplier>1.3</damageMultiplier>
 			<noClone>true</noClone>
 			<deathSounds>
-				<deathSound>pantherDeath</deathSound>
+				<deathSound>leech_death</deathSound>
 			</deathSounds>
-			<shootingSounds>
-				<shootingSound>pantherSwipe</shootingSound>
-				<shootingSound>pantherSwipe2</shootingSound>
-				<shootingSound>pantherSwipe3</shootingSound>
-			</shootingSounds>
 			<powerEffect>
 				<cooldown>15</cooldown>
 				<powerSounds>
@@ -11101,7 +11083,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<aug name="HID_UPG_WEAPONS_REPLICATOR_2">
 			<function name="EXPLOSIVE_REPLICATOR" value="0.70" useForReqs="true" warning="false"/>
 		</aug>
-
+		
 		<aug name="ORCHID_KINDLING_ENEMY">
 			<statBoosts>
 				<statBoost name="powerEffect">
@@ -11953,7 +11935,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 			</statBoosts>
 		</aug>
-
+		
 		<aug name="HID_MALBORO_RED"> <!--2x health for slugs, 3x suffocation speed. -->
 			<statBoosts>
 
@@ -20026,8 +20008,8 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 	<mod-append:surgeBarrage name="TWISTED_LANIUS_LOOT_LEECH_1_SURGE">
 		<weapon name="LOOT_LEECH_1" count="1" />
 	</mod-append:surgeBarrage>
-	<mod-append:surgeBarrage name="TWISTED_LANIUS_LOOT_AUG_1_SURGE">
-		<weapon name="LOOT_AUG_1" count="1" />
+	<mod-append:surgeBarrage name="TWISTED_LANIUS_LOOT_LANIUS_1_SURGE">
+		<weapon name="LOOT_LANIUS_1" count="1" />
 	</mod-append:surgeBarrage>
 	<mod-append:surgeBarrage name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_SURGE">
 		<weapon name="SHOTGUN_TOGGLE_FIRE" count="1" />
@@ -20381,432 +20363,434 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</mod-append:page>
 	</mod:findLike>
 	<mod:findLike type="store">
-		<mod:selector id="STORE_ULTIMATE_SYLVAN"/>
-		<mod-append:category type="WEAPONS"><!--lasers-->
-			<item>
-                <blueprint>FM_LASER_ANOMALY_1</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_FLAMETHROWER</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_LASER_PHOTON</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="WEAPONS">
-			<item>
-                <blueprint>FM_LASER_PHOTON_2</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_LASER_HUMAN</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_CHAINGUN_FIRE</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="WEAPONS"><!--ions-->
-			<item>
-                <blueprint>FM_PHASER_SUFFOCATION</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_LASER_ION_MEGA</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_ION_TRI_FIRE</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="WEAPONS">
-			<item>
-                <blueprint>FM_DISC_LAUNCHER</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_CHAINGUN_ION</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_SHOTGUN_ENERGY</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="WEAPONS">
-			<item>
-                <blueprint>FM_PULSE_1</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_PULSE_2</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_PULSE_3</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="WEAPONS">
-			<item>
-                <blueprint>FM_PULSEDEEP</blueprint>
-            </item>
-			<item>
-				<blueprint>FM_ION_MISSILES</blueprint>
-            </item>
-			<item>
-				<blueprint>FM_MISSILES_BURST_FIRE</blueprint>
-			</item>
-		</mod-append:category>
-		<mod-append:category type="WEAPONS">
-			<item>
-                <blueprint>FM_MISSILES_CLOAK_STUN</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_PULSE_2</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_PULSE_3</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="WEAPONS">
-			<item>
-				<blueprint>FM_BOMB_CRYSTAL_FIRE</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_BOMB_CRYSTAL_BIO</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_BOMBLAUNCHER_HULL</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="WEAPONS">
-			<item>
-                <blueprint>FM_MINELAUNCHER_BIO</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_IMPRISMENT_INDUCER</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_RVS_AC_CHARGE</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="WEAPONS">
-			<item>
-                <blueprint>FM_BEAM_MINING_2</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_BEAM_PARTICLE_PIERCE</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_BEAM_GUILLOTINE_CHAIN</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="WEAPONS">
-			<item>
-                <blueprint>FM_BEAM_EXPLOSION</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_BEAM_ION_PIERCE</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_BEAM_ETERNITY</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="WEAPONS">
-			<item>
-                <blueprint>FM_FOCUS_FUELED_1</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_FOCUS_ENERGY_1</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_FOCUS_ENERGY_2</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="WEAPONS">
-			<item>
-                <blueprint>FM_FOCUS_ENERGY_3</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_FOCUS_ENERGY_CONS</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_FOCUS_ADAPT</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="WEAPONS">
-			<item>
-                <blueprint>FM_BEAM_MINING_3</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_SHOTGUN_ANOMALY</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_SHOTGUN_AETHER</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="WEAPONS">
-			<item>
-                <blueprint>FM_SHOTGUN_CURSED</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_ENERGY_RAILBLENDER</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_BEAM_BASELISK</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="WEAPONS">
-			<item>
-                <blueprint>FM_SHOTGUN_BRONZE</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_SHOTGUN_INDIUM</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_SHOTGUN_RHENIUM</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="WEAPONS">
-			<item>
-                <blueprint>FM_SHOTGUN_SILVER</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_SHOTGUN_PALLADIUM</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_SHOTGUN_IRIDIUM</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="WEAPONS">
-			<item>
-                <blueprint>FM_SHOTGUN_PLATINUM</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_SHOTGUN_OSMIUM</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_SHOTGUN_NOBELIUM</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="WEAPONS">
-			<item>
-                <blueprint>FM_SHOTGUN_HASSIUM</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_LASER_DEBT_COLLECT</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_TERMINUS</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="WEAPONS">
-			<item>
-                <blueprint>FM_ABDUCT_LASER</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_AN_LASER</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_AN_BEAM</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="WEAPONS">
-			<item>
-                <blueprint>FM_AN_DYNAMO</blueprint>
-            </item>
-			<item>
-                <blueprint>LASER_BURST_1_CHARGE_GOLD</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_ROYAL_MINELAUNCHER</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="WEAPONS">
-			<item>
-                <blueprint>FM_CORROSIVE_1</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_CORROSIVE_2</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_CORROSIVE_3</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="DRONES">
-			<item>
-                <blueprint>TWISTED_MENDER</blueprint>
-            </item>
-			<item>
-                <blueprint>TWISTED_YINYANG_BATTLE</blueprint>
-            </item>
-			<item>
-                <blueprint>TWISTED_BATTLETOG2_BOARDER</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="DRONES">
-			<item>
-                <blueprint>TWISTED_SURGEON_BATTLE</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_FIRE_INTRUDER</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_ANCALAGON_BATTLE</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="DRONES">
-			<item>
-                <blueprint>FM_COMBAT_2_LASER_PLAYER</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_DEFENSE_3_MEGA</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_HACKER_DRONE</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="DRONES">
-			<item>
-                <blueprint>FM_FLAMETHROWER_DRONE</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_AN_COMBAT_1_LASER</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_AN_DEFENSE_3_LASER</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="DRONES">
-			<item>
-                <blueprint>FM_ENERGY_COMBAT_PINPOINT1</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_ANCIENT_BEAM_COMBAT1</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_ANCIENT_BEAM_COMBAT2</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="DRONES">
-			<item>
-                <blueprint>FM_ANCIENT_BEAM_COMBATR</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_AMBER_DRONE</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_CRYSTAL_DRONE</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="DRONES">
-			<item>
-                <blueprint>FM_CURA_DRONE</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_FORGEMAN_DRONE</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_ISHIMURA_DRONE</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="DRONES">
-			<item>
-                <blueprint>FM_KESTREL_DRONE</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_MFK_KESTREL_DRONE</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_MFK_PICKET_DRONE</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="DRONES">
-			<item>
-                <blueprint>FM_SIREN_DRONE</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_COMBAT_BEAM_HULLNT</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="AUGMENTS">
-			<item>
-                <blueprint>INSTANT_SYSTEMS</blueprint>
-            </item>
-			<item>
-                <blueprint>LOCKED_RAMMING_SPEED</blueprint>
-            </item>
-			<item>
-                <blueprint>FM_CRUCIBLE_PLATING_PLAYER</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="AUGMENTS">
-			<item>
-                <blueprint>CURA_MVBOSS_SPAWNER</blueprint>
-            </item>
-			<item>
-                <blueprint>TWISTED_CRYSTAL_ARMOR_50</blueprint>
-            </item>
-			<item>
-                <blueprint>TWISTED_LOSTSUN</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="AUGMENTS">
-			<item>
-                <blueprint>FM_DRONE_REPAIR_SYSTEM</blueprint>
-            </item>
-			<item>
-                <blueprint>LOCKED_SUPER_DEPRESSION</blueprint>
-            </item>
-			<item>
-                <blueprint>LOCKED_TAROT_CARDS</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="AUGMENTS">
-			<item>
-                <blueprint>PACIFISTIC_REGENERATION</blueprint>
-            </item>
-			<item>
-                <blueprint>TWISTED_ANCIENT_BOUNTY</blueprint>
-            </item>
-			<item>
-                <blueprint>TWISTED_MANTIS_UPGRADER</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="AUGMENTS">
-			<item>
-                <blueprint>TWISTED_HULL_ARM</blueprint>
-            </item>
-			<item>
-                <blueprint>LOCKED_DECONSTRUCTIVE_GAS</blueprint>
-            </item>
-			<item>
-                <blueprint>TWISTED_KESTREL_GHOST_SUMMON</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="CREW">
-			<item>
-                <blueprint>fm_plated</blueprint>
-            </item>
-			<item>
-                <blueprint>fm_forgemasterperson_player</blueprint>
-            </item>
-			<item>
-                <blueprint>fm_plated_shell</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="CREW">
-			<item>
-                <blueprint>unique_remington</blueprint>
-            </item>
-			<item>
-                <blueprint>unique_mossberg</blueprint>
-            </item>
-			<item>
-                <blueprint>fm_human_texture</blueprint>
-            </item>
-		</mod-append:category>
-		<mod-append:category type="CREW">
-			<item>
-                <blueprint>orchid_fire</blueprint>
-            </item>
-			<item>
-                <blueprint>husk_slug_player</blueprint>
-            </item>
-			<item>
-                <blueprint>mantis_crackerjack</blueprint>
-            </item>
-		</mod-append:category>
+		<mod:findLike type="customStore">
+			<mod:selector id="STORE_ULTIMATE_SYLVAN"/>
+			<mod-append:category type="WEAPONS"><!--lasers-->
+				<item>
+					<blueprint>FM_LASER_ANOMALY_1</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_FLAMETHROWER</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_LASER_PHOTON</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="WEAPONS">
+				<item>
+					<blueprint>FM_LASER_PHOTON_2</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_LASER_HUMAN</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_CHAINGUN_FIRE</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="WEAPONS"><!--ions-->
+				<item>
+					<blueprint>FM_PHASER_SUFFOCATION</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_LASER_ION_MEGA</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_ION_TRI_FIRE</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="WEAPONS">
+				<item>
+					<blueprint>FM_DISC_LAUNCHER</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_CHAINGUN_ION</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_SHOTGUN_ENERGY</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="WEAPONS">
+				<item>
+					<blueprint>FM_PULSE_1</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_PULSE_2</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_PULSE_3</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="WEAPONS">
+				<item>
+					<blueprint>FM_PULSEDEEP</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_ION_MISSILES</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_MISSILES_BURST_FIRE</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="WEAPONS">
+				<item>
+					<blueprint>FM_MISSILES_CLOAK_STUN</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_PULSE_2</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_PULSE_3</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="WEAPONS">
+				<item>
+					<blueprint>FM_BOMB_CRYSTAL_FIRE</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_BOMB_CRYSTAL_BIO</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_BOMBLAUNCHER_HULL</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="WEAPONS">
+				<item>
+					<blueprint>FM_MINELAUNCHER_BIO</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_IMPRISMENT_INDUCER</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_RVS_AC_CHARGE</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="WEAPONS">
+				<item>
+					<blueprint>FM_BEAM_MINING_2</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_BEAM_PARTICLE_PIERCE</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_BEAM_GUILLOTINE_CHAIN</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="WEAPONS">
+				<item>
+					<blueprint>FM_BEAM_EXPLOSION</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_BEAM_ION_PIERCE</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_BEAM_ETERNITY</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="WEAPONS">
+				<item>
+					<blueprint>FM_FOCUS_FUELED_1</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_FOCUS_ENERGY_1</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_FOCUS_ENERGY_2</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="WEAPONS">
+				<item>
+					<blueprint>FM_FOCUS_ENERGY_3</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_FOCUS_ENERGY_CONS</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_FOCUS_ADAPT</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="WEAPONS">
+				<item>
+					<blueprint>FM_BEAM_MINING_3</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_SHOTGUN_ANOMALY</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_SHOTGUN_AETHER</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="WEAPONS">
+				<item>
+					<blueprint>FM_SHOTGUN_CURSED</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_ENERGY_RAILBLENDER</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_BEAM_BASELISK</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="WEAPONS">
+				<item>
+					<blueprint>FM_SHOTGUN_BRONZE</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_SHOTGUN_INDIUM</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_SHOTGUN_RHENIUM</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="WEAPONS">
+				<item>
+					<blueprint>FM_SHOTGUN_SILVER</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_SHOTGUN_PALLADIUM</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_SHOTGUN_IRIDIUM</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="WEAPONS">
+				<item>
+					<blueprint>FM_SHOTGUN_PLATINUM</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_SHOTGUN_OSMIUM</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_SHOTGUN_NOBELIUM</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="WEAPONS">
+				<item>
+					<blueprint>FM_SHOTGUN_HASSIUM</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_LASER_DEBT_COLLECT</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_TERMINUS</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="WEAPONS">
+				<item>
+					<blueprint>FM_ABDUCT_LASER</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_AN_LASER</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_AN_BEAM</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="WEAPONS">
+				<item>
+					<blueprint>FM_AN_DYNAMO</blueprint>
+				</item>
+				<item>
+					<blueprint>LASER_BURST_1_CHARGE_GOLD</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_ROYAL_MINELAUNCHER</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="WEAPONS">
+				<item>
+					<blueprint>FM_CORROSIVE_1</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_CORROSIVE_2</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_CORROSIVE_3</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="DRONES">
+				<item>
+					<blueprint>TWISTED_MENDER</blueprint>
+				</item>
+				<item>
+					<blueprint>TWISTED_YINYANG_BATTLE</blueprint>
+				</item>
+				<item>
+					<blueprint>TWISTED_BATTLETOG2_BOARDER</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="DRONES">
+				<item>
+					<blueprint>TWISTED_SURGEON_BATTLE</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_FIRE_INTRUDER</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_ANCALAGON_BATTLE</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="DRONES">
+				<item>
+					<blueprint>FM_COMBAT_2_LASER_PLAYER</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_DEFENSE_3_MEGA</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_HACKER_DRONE</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="DRONES">
+				<item>
+					<blueprint>FM_FLAMETHROWER_DRONE</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_AN_COMBAT_1_LASER</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_AN_DEFENSE_3_LASER</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="DRONES">
+				<item>
+					<blueprint>FM_ENERGY_COMBAT_PINPOINT1</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_ANCIENT_BEAM_COMBAT1</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_ANCIENT_BEAM_COMBAT2</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="DRONES">
+				<item>
+					<blueprint>FM_ANCIENT_BEAM_COMBATR</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_AMBER_DRONE</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_CRYSTAL_DRONE</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="DRONES">
+				<item>
+					<blueprint>FM_CURA_DRONE</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_FORGEMAN_DRONE</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_ISHIMURA_DRONE</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="DRONES">
+				<item>
+					<blueprint>FM_KESTREL_DRONE</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_MFK_KESTREL_DRONE</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_MFK_PICKET_DRONE</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="DRONES">
+				<item>
+					<blueprint>FM_SIREN_DRONE</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_COMBAT_BEAM_HULLNT</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="AUGMENTS">
+				<item>
+					<blueprint>INSTANT_SYSTEMS</blueprint>
+				</item>
+				<item>
+					<blueprint>LOCKED_RAMMING_SPEED</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_CRUCIBLE_PLATING_PLAYER</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="AUGMENTS">
+				<item>
+					<blueprint>CURA_MVBOSS_SPAWNER</blueprint>
+				</item>
+				<item>
+					<blueprint>TWISTED_CRYSTAL_ARMOR_50</blueprint>
+				</item>
+				<item>
+					<blueprint>TWISTED_LOSTSUN</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="AUGMENTS">
+				<item>
+					<blueprint>FM_DRONE_REPAIR_SYSTEM</blueprint>
+				</item>
+				<item>
+					<blueprint>LOCKED_SUPER_DEPRESSION</blueprint>
+				</item>
+				<item>
+					<blueprint>LOCKED_TAROT_CARDS</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="AUGMENTS">
+				<item>
+					<blueprint>PACIFISTIC_REGENERATION</blueprint>
+				</item>
+				<item>
+					<blueprint>TWISTED_ANCIENT_BOUNTY</blueprint>
+				</item>
+				<item>
+					<blueprint>TWISTED_MANTIS_UPGRADER</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="AUGMENTS">
+				<item>
+					<blueprint>TWISTED_HULL_ARM</blueprint>
+				</item>
+				<item>
+					<blueprint>LOCKED_DECONSTRUCTIVE_GAS</blueprint>
+				</item>
+				<item>
+					<blueprint>TWISTED_KESTREL_GHOST_SUMMON</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="CREW">
+				<item>
+					<blueprint>fm_plated</blueprint>
+				</item>
+				<item>
+					<blueprint>fm_forgemasterperson_player</blueprint>
+				</item>
+				<item>
+					<blueprint>fm_plated_shell</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="CREW">
+				<item>
+					<blueprint>unique_remington</blueprint>
+				</item>
+				<item>
+					<blueprint>unique_mossberg</blueprint>
+				</item>
+				<item>
+					<blueprint>fm_human_texture</blueprint>
+				</item>
+			</mod-append:category>
+			<mod-append:category type="CREW">
+				<item>
+					<blueprint>orchid_fire</blueprint>
+				</item>
+				<item>
+					<blueprint>husk_slug_player</blueprint>
+				</item>
+				<item>
+					<blueprint>mantis_crackerjack</blueprint>
+				</item>
+			</mod-append:category>
+		</mod:findLike>
 	</mod:findLike>
-</FTL>
+</FTL>	

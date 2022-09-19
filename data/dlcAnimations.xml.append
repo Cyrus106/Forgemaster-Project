@@ -8,11 +8,4 @@
 	<desc length="4" x="0" y="0"/>
 	<time>1.0</time>
 </anim>
-
-<animSheet name="ion_charger_2_charge" w="156" h="49" fw="39" fh="49">weapon_ion/w_ion_charger_2_charges.png</animSheet>
-<anim name="ion_charger_2_charge">
-	<sheet>ion_charger_2_charge</sheet>
-	<desc length="4" x="0" y="0"/>
-	<time>1.0</time>
-</anim>
 </FTL>
