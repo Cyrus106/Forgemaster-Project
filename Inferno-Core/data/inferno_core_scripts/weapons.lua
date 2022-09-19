@@ -6,7 +6,7 @@ function()
   end
   if weapons then
     for weapon in mods.inferno.vter(weapons) do
-      if weapon.boostLevel<0 then
+      if weapon.boostLevel<0 then --for resetting weapons from a chain properly by setting the boostLevel to be negative, triggering this.
         weapon.boostLevel=0
         weapon.cooldown.first=0
         weapon.chargeLevel=0
@@ -67,7 +67,7 @@ end,
 
 function(weapon,projectile)
   local beam_pierce_modifier=Hyperspace.ships.player:GetAugmentationValue("BEAM_PIERCE")
-  if projectile._targetable.type==5 then
+  if projectile:GetType()==5 then
     projectile.damage.iShieldPiercing=projectile.damage.iShieldPiercing+beam_pierce_modifier
   end
 end,

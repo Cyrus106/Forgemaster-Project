@@ -18,7 +18,9 @@ mods.inferno.system_callbacks={
               self:activate()
             end
             self.just_on=true
-            self:whileactive()
+            if not Hyperspace.Global.GetInstance():GetCApp().world.space.gamePaused then --may be source of memory leak if there is one, added this after establishing framework
+              self:whileactive()
+            end
           elseif self.just_on then --if the system was locked (meaning activated) last frame and is no longer locked
             self.just_on=false
             self:shutdown()
@@ -167,6 +169,19 @@ function()
   local increment=Hyperspace.FPS.SpeedFactor/16
   local modifier=math.max(Hyperspace.ships.player:GetAugmentationValue("LONG_MIND"),1) --could just calculate this value upon activation to minimize memory usuage, if it's an issue
   Hyperspace.ships.player.mindSystem.controlTimer.first=Hyperspace.ships.player.mindSystem.controlTimer.first+((1/modifier)-1)*increment
+end,
+})
+
+mods.inferno.hackingcallbacks.whileactive_events:append({
+function()
+    local increment=Hyperspace.FPS.SpeedFactor/16
+    local modifier=math.max(Hyperspace.ships.player:GetAugmentationValue("LONG_HACK"),1) --could just calculate this value upon activation to minimize memory usuage, if it's an issue
+    Hyperspace.ships.player.hackingSystem.effectTimer.first=Hyperspace.ships.player.hackingSystem.effectTimer.first+((1/modifier)-1)*increment
+end,
+
+function()
+    local damage=Hyperspace.ships.player:GetAugmentationValue("HACKING_DAMAGE")--could be calculate on system activation
+    Hyperspace.ships.player.hackingSystem.currentSystem:PartialDamage(damage)
 end,
 })
 --]]
