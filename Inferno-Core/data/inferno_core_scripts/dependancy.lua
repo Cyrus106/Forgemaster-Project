@@ -1,6 +1,19 @@
 mods.inferno={}
 
-
+mods.inferno.wait=function(seconds,func,loop)
+  local current_time=Hyperspace.FPS.RunningTime
+  local trigger_time=current_time+seconds
+  local loop=loop or 1
+  script.on_internal_event(Defines.InternalEvents.ON_TICK, function()
+      if Hyperspace.FPS.RunningTime>trigger_time and func then
+        func()
+        if loop>1 then
+          mods.inferno.wait(seconds,func,loop-1)
+        end
+        func=nil
+      end
+   end)
+end
 
 mods.inferno.vter=function(cvec)
   local i=-1 --so the first returned value is indexed at zero
