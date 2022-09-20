@@ -1136,14 +1136,14 @@
 	<name>fm_holy29</name>
 	<name>fm_holy30</name>-->
 </blueprintList>
-
+<!--
 <blueprintList name="LIST_FM_XMAS">
 	<name>saturn_cub</name>
 	<name>bast_cub</name>
 	<name>panther_cub</name>
 	<name>beans</name>
 
-</blueprintList>
+</blueprintList>-->
 
 <blueprintList name="FOCUS_4LIST">
 	<name>FM_FOCUS_FUELED_1</name>
@@ -1160,12 +1160,6 @@
 	<name>KERNEL_HULL_ELITE</name>
 	<name>KERNEL_CHAIN_ELITE</name>
 	<name>KERNEL_CHARGE_ELITE</name>
-</blueprintList>
-
-<blueprintList name="FM_LIST_HUMANS">
-	<name>LIST_CREW_HUMAN</name>
-	<name>LIST_CREW_ENGINEER</name>
-	<name>LIST_CREW_JERRY</name>
 </blueprintList>
 
 <blueprintList name="FM_LIST_LANIUS">
@@ -1239,8 +1233,8 @@
 		<name>manning</name>
 		<name>manningenemy</name>
 		<name>loot_separatist_1</name>
-		<name>yinyang_ship</name>
-		<name>yinyang_board</name>
+		<name>drone_yinyang</name>
+		<name>drone_yinyang_board</name>
 		<name>drone_battle</name>
 		<name>drone_battle2</name>
 		<name>butler</name>
@@ -1332,8 +1326,8 @@
 	<name>manning</name>
 	<name>manningenemy</name>
 	<name>loot_separatist_1</name>
-	<name>yinyang_ship</name>
-	<name>yinyang_board</name>
+	<name>drone_yinyang</name>
+	<name>drone_yinyang_board</name>
 	<name>drone_battle</name>
 	<name>drone_battle2</name>
 	<name>butler</name>

@@ -1,14 +1,14 @@
-<mod:findName type = "event" name = "CURA_TASK_MENU">
+<mod:findName type="event" name ="CURA_TASK_MENU">
 
-	<mod-append:choice hidden="true" req="TASK_BOSS_RUSH" lvl="1" max_group="5" blue="true">
+	<mod-append:choice hidden="true" req="loc_impossible_task" lvl="2" max_group="5" blue="true">
 		<text>You've already accepted your special assignment from C.U.R.A.</text>
 		<event load="OPTION_INVALID"/>
 	</mod-append:choice>
-	<mod-append:choice hidden="true" req="MARKER_IMPOSSIBLE_CURA_TALK" lvl="1" max_group="5" blue="true">
+	<mod-append:choice hidden="true" req="loc_impossible_task" lvl="1" max="1" max_group="5" blue="true">
 		<text>Discuss this "battle I cannot win".</text>
 		<event load="CURA_BOSS_RUSH_PREVIEW"/>
 	</mod-append:choice>
-	<mod-append:choice hidden="true" req="CURA_IMPOSSIBLE_TASKS_UNLOCKED" lvl="1" max_group="5" blue="true">
+	<mod-append:choice hidden="true" req="prof_cura_defeated" lvl="1" max_group="5" blue="true">
 		<text>Ask for something more difficult this time.</text>
 		<event load="CURA_TASKS_IMPOSSIBLE_TALK"/>
 	</mod-append:choice>
@@ -16,7 +16,7 @@
 
 </mod:findName>
 
-<event name="CURA_TASKS_IMPOSSIBLE">
+<event name="CURA_TASKS_IMPOSSIBLE" unused="true">
 	<loadEventList seeded="false" first="false">
 			<event name="CURA_BOSS_RUSH_PREVIEW" req="TASK_BOSS_RUSH" max_lvl="0"/>
 			<event name="CURA_BOSS_RUSH_NO" req="TASK_BOSS_RUSH" lvl="1" max_lvl="1"/>
@@ -45,7 +45,8 @@
 										<text>Sure, why not.</text>
 										<event>
 											<text>"Understood, I can give battles you cannot win. If you succeed at all of them, I calculate it will be well worth your while. Your unexpected success would allow me to improve myself for our... final conflict. It appears we are in agreement." </text>
-											<hiddenAug>MARKER_IMPOSSIBLE_CURA_TALK</hiddenAug>
+											<!--<hiddenAug>MARKER_IMPOSSIBLE_CURA_TALK</hiddenAug>-->
+											<variable name="loc_impossible_task" op="set" val="1"/>
 											<choice>
 												<text>Continue...</text>
 												<event>
@@ -88,7 +89,8 @@
 		<text>Accept the job.</text>
 		<event>
 			<text>"Task accepted. Transferring augmentation to your ship's internal systems. Do not disappoint me."</text>
-			<hiddenAug>TASK_BOSS_RUSH</hiddenAug>
+			<!--<hiddenAug>TASK_BOSS_RUSH</hiddenAug>-->
+			<variable name="loc_impossible_task" op="set" val="2"/>
 			<augment name="CURA_MVBOSS_SPAWNER"/>
 			<choice hidden="true">
 				<text>Continue...</text>

@@ -4,7 +4,7 @@
 	**********************************************************************************************************************
 
 	**********************************************************************************************************************-->
-
+	
 	<ship name="FM_SHIP_ROCK_FIGHT" auto_blueprint="LIST_SHIPS_ROCK_FIGHT">
 		<destroyed load="FM_ISHI_ROCK_DEST"/>
 		<deadCrew load="FM_ISHI_ROCK_DEAD"/>
@@ -57,7 +57,7 @@
 			</event>
 		</choice>
 	</event>
-
+	
 	<event name="FM_BOSS_CLAN1_SHIP_DESTROYED">
 		<playMusic></playMusic>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking.  You also locate what appears to be a chemical replication lab that goes beyond modern science, labelled "Ambrosia". It gives off an otherworldly aura. The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
@@ -65,7 +65,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_CLAN1</hiddenAug>
+		<variable name="ach_fm_boss_clan" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_CLAN</achievement>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_CLAN" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
@@ -111,7 +111,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="CLAN1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_clan" max_group="2" blue="false">
 			<text>You already scrapped Mind Clouder.</text>
 			<event>
 				<text>...</text>
@@ -134,7 +134,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>CLAN1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_clan" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -146,7 +146,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_CLAN1</hiddenAug>
+		<variable name="ach_fm_boss_clan" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_CLAN</achievement>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_CLAN" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
@@ -170,13 +170,13 @@
 						<choice hidden="true">
 							<text>Continue...</text>
 							<event load="STORAGE_CHECK"/>
-
+						
 						</choice>
 					</event>
 				</choice>
 			</event>
 		</choice>
-
+		
 		<choice hidden="false" req="HID_BRAIN_DONATION" max_group="2" blue="false">
 			<text>You already have Mind Clouder.</text>
 			<event>
@@ -190,7 +190,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="CLAN1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_clan" max_group="2" blue="false">
 			<text>You already scrapped Mind Clouder.</text>
 			<event>
 				<text>...</text>
@@ -213,7 +213,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>CLAN1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_clan" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -261,7 +261,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_DUSK1</hiddenAug>
+		<variable name="ach_fm_boss_dusk" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_DUSK</achievement>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
@@ -305,7 +305,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="DUSK1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_dusk" max_group="2" blue="false">
 			<text>You already scrapped Twlight Vests.</text>
 			<event>
 				<text>...</text>
@@ -328,7 +328,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>DUSK1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_dusk" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -340,7 +340,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_DUSK1</hiddenAug>
+		<variable name="ach_fm_boss_dusk" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_DUSK</achievement>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>-->
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
@@ -383,7 +383,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="DUSK1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_dusk" max_group="2" blue="false">
 			<text>You already scrapped Twlight Vests.</text>
 			<event>
 				<text>...</text>
@@ -406,7 +406,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>DUSK1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_dusk" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -441,7 +441,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_ENGI1</hiddenAug>
+		<variable name="ach_fm_boss_engi" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_ENGI</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ENGI_3" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_ENGI" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
@@ -487,7 +487,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="ENGI1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_engi" max_group="2" blue="false">
 			<text>You already scrapped Drone Booster "Kai".</text>
 			<event>
 				<text>...</text>
@@ -510,7 +510,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>ENGI1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_engi" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -522,7 +522,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<autoReward level="HIGH">scrap_only</autoReward>
-		<hiddenAug>ACH_FM_BOSS_ENGI1</hiddenAug>
+		<variable name="ach_fm_boss_engi" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_ENGI</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ENGI_3" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
 		<choice hidden="true" req="HID_UPG_DRONE_COOLDOWN" max_group="1" blue="false">
@@ -563,7 +563,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="ENGI1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_engi" max_group="2" blue="false">
 			<text>You already scrapped Drone Booster "Kai".</text>
 			<event>
 				<text>...</text>
@@ -586,7 +586,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>ENGI1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_engi" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -634,7 +634,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_FREE1</hiddenAug>
+		<variable name="ach_fm_boss_freemantis" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_FREEMANTIS</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS_2" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
@@ -677,7 +677,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="FREE1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_freemantis" max_group="2" blue="false">
 			<text>You already scrapped Earl Grey tea.</text>
 			<event>
 				<text>...</text>
@@ -700,7 +700,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>FREE1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_freemantis" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -712,7 +712,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_FREE1</hiddenAug>
+		<variable name="ach_fm_boss_freemantis" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_FREEMANTIS</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS_2" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
@@ -755,7 +755,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="FREE1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_freemantis" max_group="2" blue="false">
 			<text>You already scrapped Earl Grey tea.</text>
 			<event>
 				<text>...</text>
@@ -778,7 +778,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>FREE1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_freemantis" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -823,7 +823,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_LOSTSUN1</hiddenAug>
+		<variable name="ach_fm_boss_lostsun" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_LOSTSUN</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN_2" silent="false">PLAYER_SHIP_TWISTED3_2</unlockCustomShip>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
@@ -867,7 +867,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="LOSTSUN1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_lostsun" max_group="2" blue="false">
 			<text>You already scrapped Reality Reloader.</text>
 			<event>
 				<text>...</text>
@@ -890,7 +890,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>LOSTSUN1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_lostsun" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -902,7 +902,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_LOSTSUN1</hiddenAug>
+		<variable name="ach_fm_boss_lostsun" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_LOSTSUN</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN_2" silent="false">PLAYER_SHIP_TWISTED3_2</unlockCustomShip>
 
@@ -944,7 +944,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="LOSTSUN1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_lostsun" max_group="2" blue="false">
 			<text>You already scrapped Reality Reloader.</text>
 			<event>
 				<text>...</text>
@@ -967,7 +967,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>LOSTSUN1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_lostsun" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -1028,7 +1028,7 @@
 
 	<event name="FM_BOSS_LOSTSUN1_CRUMBLE4">
 		<text>Another massive explosion erupt from within the enemy ship. The enemy weapons takes a massive hit, but is barely hanging on.</text><!--return to weapon damage!-->
-		<status type="limit" target="enemy" system="weaons" amount="4"/>
+		<status type="limit" target="enemy" system="weapons" amount="4"/>
 		<enemyDamage amount="3" system="weapons" effect="fire"  force="true"/>
 		<choice hidden="true">
 			<text>Continue with the fight...</text>
@@ -1131,7 +1131,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_MANTIS1</hiddenAug>
+		<variable name="ach_fm_boss_mantis" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_MANTIS</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_HIVE_2" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_HIVE" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
@@ -1179,7 +1179,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="MANTIS1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_mantis" max_group="2" blue="false">
 			<text>You already scrapped Pheromone Accelerator.</text>
 			<event>
 				<text>...</text>
@@ -1202,7 +1202,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>MANTIS1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_mantis" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -1211,7 +1211,7 @@
 		<playMusic></playMusic>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking.  You also locate a strange pheromone sack with an otherworldly glow.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
-		<hiddenAug>ACH_FM_BOSS_MANTIS1</hiddenAug>
+		<variable name="ach_fm_boss_mantis" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_MANTIS</achievement>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -1261,7 +1261,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="MANTIS1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_mantis" max_group="2" blue="false">
 			<text>You already scrapped Pheromone Accelerator.</text>
 			<event>
 				<text>...</text>
@@ -1284,7 +1284,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>MANTIS1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_mantis" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -1319,7 +1319,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_MONK1</hiddenAug>
+		<variable name="ach_fm_boss_monk" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_MONK</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_MONK_2" silent="false">PLAYER_SHIP_TWISTED3</unlockCustomShip>
 
@@ -1362,7 +1362,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="MONK1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_monk" max_group="2" blue="false">
 			<text>You already scrapped Aether Ascension Shields.</text>
 			<event>
 				<text>...</text>
@@ -1385,7 +1385,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>MONK1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_monk" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -1397,7 +1397,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_MONK1</hiddenAug>
+		<variable name="ach_fm_boss_monk" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_MONK</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_MONK_2" silent="false">PLAYER_SHIP_TWISTED3</unlockCustomShip>
 
@@ -1440,7 +1440,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="MONK1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_monk" max_group="2" blue="false">
 			<text>You already scrapped Aether Ascension Shields.</text>
 			<event>
 				<text>...</text>
@@ -1463,7 +1463,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>MONK1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_monk" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -1514,7 +1514,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_R1</hiddenAug>
+		<variable name="ach_fm_boss_rock" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_ROCK</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ROCKMAN_3" silent="false">PLAYER_SHIP_TWISTED3_3</unlockCustomShip>
 
@@ -1557,7 +1557,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="R1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_rock" max_group="2" blue="false">
 			<text>You already scrapped Rockmen Relic of Freedom.</text>
 			<event>
 				<text>...</text>
@@ -1580,7 +1580,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>R1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_rock" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -1592,7 +1592,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_R1</hiddenAug>
+		<variable name="ach_fm_boss_rock" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_ROCK</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ROCKMAN_3" silent="false">PLAYER_SHIP_TWISTED3_3</unlockCustomShip>
 
@@ -1635,7 +1635,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="R1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_rock" max_group="2" blue="false">
 			<text>You already scrapped Rockmen Relic of Freedom.</text>
 			<event>
 				<text>...</text>
@@ -1658,7 +1658,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>R1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_monk" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -1707,7 +1707,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_SEPA1</hiddenAug>
+		<variable name="ach_fm_boss_separatist" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_SEPARATIST</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_SEPARATIST_2" silent="false">PLAYER_SHIP_TWISTED2_2</unlockCustomShip>
 
@@ -1750,7 +1750,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="SEPA1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_separatist" max_group="2" blue="false">
 			<text>You already scrapped Magatama.</text>
 			<event>
 				<text>...</text>
@@ -1773,7 +1773,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>SEPA1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_separatist" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -1785,7 +1785,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_SEPA1</hiddenAug>
+		<variable name="ach_fm_boss_separatist" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_SEPARATIST</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_SEPARATIST_2" silent="false">PLAYER_SHIP_TWISTED2_2</unlockCustomShip>
 
@@ -1828,7 +1828,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="SEPA1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_separatist" max_group="2" blue="false">
 			<text>You already scrapped Magatama.</text>
 			<event>
 				<text>...</text>
@@ -1851,7 +1851,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>SEPA1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_separatist" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -1935,7 +1935,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_SLUG1</hiddenAug>
+		<variable name="ach_fm_boss_slug" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_SLUG</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_SLUG_2" silent="false">PLAYER_SHIP_TWISTED4</unlockCustomShip>
 
@@ -1978,7 +1978,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="SLUG1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_slug" max_group="2" blue="false">
 			<text>You already scrapped Malboro Quasar.</text>
 			<event>
 				<text>...</text>
@@ -2001,7 +2001,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>SLUG1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_slug" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -2013,7 +2013,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_SLUG1</hiddenAug>
+		<variable name="ach_fm_boss_slug" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_SLUG</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_SLUG_2" silent="false">PLAYER_SHIP_TWISTED4</unlockCustomShip>
 
@@ -2056,7 +2056,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="SLUG1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_slug" max_group="2" blue="false">
 			<text>You already scrapped Malboro Quasar.</text>
 			<event>
 				<text>...</text>
@@ -2079,7 +2079,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>SLUG1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_slug" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -2132,7 +2132,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_STEALTH1</hiddenAug>
+		<variable name="ach_fm_boss_stealth" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_STEALTH</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLOAK_2" silent="false">PLAYER_SHIP_TWISTED4_2</unlockCustomShip>
 		<weapon name="CRASH_LASER"/>
@@ -2154,7 +2154,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_STEALTH1</hiddenAug>
+		<variable name="ach_fm_boss_stealth" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_STEALTH</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLOAK_2" silent="false">PLAYER_SHIP_TWISTED4_2</unlockCustomShip>
 		<weapon name="CRASH_LASER"/>
@@ -2221,7 +2221,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_ZOLTAN1</hiddenAug>
+		<variable name="ach_fm_boss_zoltan" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_ZOLTAN</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ZOLTAN_3" silent="false">PLAYER_SHIP_TWISTED4_3</unlockCustomShip>
 
@@ -2264,7 +2264,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="ZOLTAN1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_zoltan" max_group="2" blue="false">
 			<text>You already scrapped Limit Release.</text>
 			<event>
 				<text>...</text>
@@ -2287,7 +2287,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>ZOLTAN1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_zoltan" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -2299,7 +2299,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_ZOLTAN1</hiddenAug>
+		<variable name="ach_fm_boss_zoltan" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_ZOLTAN</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ZOLTAN_3" silent="false">PLAYER_SHIP_TWISTED4_3</unlockCustomShip>
 
@@ -2342,7 +2342,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="ZOLTAN1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_zoltan" max_group="2" blue="false">
 			<text>You already scrapped Limit Release.</text>
 			<event>
 				<text>...</text>
@@ -2365,7 +2365,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>ZOLTAN1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_zoltan" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -2405,7 +2405,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_SHELL1</hiddenAug>
+		<variable name="ach_fm_boss_shell" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_SHELL</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_SHELL_3" silent="false">PLAYER_SHIP_TWISTED5_2</unlockCustomShip>
 
@@ -2447,7 +2447,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="SHELL1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_shell" max_group="2" blue="false">
 			<text>You already scrapped Combustion Bioweapon.</text>
 			<event>
 				<text>...</text>
@@ -2470,7 +2470,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>SHELL1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_shell" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -2557,7 +2557,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_ENGINEER1</hiddenAug>
+		<variable name="ach_fm_boss_engineer" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_ENGINEER</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ENGINEER_2" silent="false">PLAYER_SHIP_TWISTED5_3</unlockCustomShip>
 
@@ -2601,7 +2601,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="ENGINEER1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_engineer" max_group="2" blue="false">
 			<text>You already scrapped Drone Boost MK II.</text>
 			<event>
 				<text>...</text>
@@ -2624,7 +2624,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>ENGINEER1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_engineer" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -2638,7 +2638,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_ENGINEER1</hiddenAug>
+		<variable name="ach_fm_boss_engineer" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_ENGINEER</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ENGINEER_2" silent="false">PLAYER_SHIP_TWISTED5_3</unlockCustomShip>
 
@@ -2681,7 +2681,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="ENGINEER1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_engineer" max_group="2" blue="false">
 			<text>You already scrapped Drone Boost MK II.</text>
 			<event>
 				<text>...</text>
@@ -2704,7 +2704,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>ENGINEER1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_engineer" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -2741,7 +2741,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_LANIUS1</hiddenAug>
+		<variable name="ach_fm_boss_lanius" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_LANIUS</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_LANIUS_2" silent="false">PLAYER_SHIP_TWISTED5</unlockCustomShip>
 
@@ -2784,7 +2784,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="LANIUS1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_lanius" max_group="2" blue="false">
 			<text>You already scrapped Scrapmetal Fireheart.</text>
 			<event>
 				<text>...</text>
@@ -2807,7 +2807,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>LANIUS1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_lanius" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -2819,7 +2819,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_LANIUS1</hiddenAug>
+		<variable name="ach_fm_boss_lanius" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_LANIUS</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_LANIUS_2" silent="false">PLAYER_SHIP_TWISTED5</unlockCustomShip>
 
@@ -2862,7 +2862,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="LANIUS1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_lanius" max_group="2" blue="false">
 			<text>You already scrapped Scrapmetal Fireheart.</text>
 			<event>
 				<text>...</text>
@@ -2885,7 +2885,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>LANIUS1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_lanius" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -2993,7 +2993,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_KES1</hiddenAug>
+		<variable name="ach_fm_boss_kestrel" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_KESTREL</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_KESTREL_2" silent="false">PLAYER_SHIP_TWISTED6</unlockCustomShip>
 
@@ -3036,7 +3036,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="KES1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_kestrel" max_group="2" blue="false">
 			<text>You already scrapped Gozer's Fridge.</text>
 			<event>
 				<text>...</text>
@@ -3059,7 +3059,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>KES1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_kestrel" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -3075,7 +3075,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_KES1</hiddenAug>
+		<variable name="ach_fm_boss_kestrel" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_KESTREL</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_KESTREL_2" silent="false">PLAYER_SHIP_TWISTED6</unlockCustomShip>
 
@@ -3118,7 +3118,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="KES1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_kestrel" max_group="2" blue="false">
 			<text>You already scrapped Gozer's Fridge.</text>
 			<event>
 				<text>...</text>
@@ -3141,7 +3141,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>KES1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_kestrel" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -3212,7 +3212,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_FED1</hiddenAug>
+		<variable name="ach_fm_boss_federation" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_FED</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_FEDERATION_2" silent="false">PLAYER_SHIP_TWISTED6_2</unlockCustomShip>
 
@@ -3255,7 +3255,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="FED1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_federation" max_group="2" blue="false">
 			<text>You already scrapped Twisted Ammo Fabricator.</text>
 			<event>
 				<text>...</text>
@@ -3278,7 +3278,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>FED1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_federation" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -3290,7 +3290,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_FED1</hiddenAug>
+		<variable name="ach_fm_boss_federation" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_FED</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_FEDERATION_2" silent="false">PLAYER_SHIP_TWISTED6_2</unlockCustomShip>
 
@@ -3333,7 +3333,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="FED1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_federation" max_group="2" blue="false">
 			<text>You already scrapped Twisted Ammo Fabricator.</text>
 			<event>
 				<text>...</text>
@@ -3356,7 +3356,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>FED1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_federation" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -3422,7 +3422,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_ORCHID1</hiddenAug>
+		<variable name="ach_fm_boss_orchid" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_ORCHID</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ORCHID_2" silent="false">PLAYER_SHIP_TWISTED6_3</unlockCustomShip>
 		<crewMember amount="4" class="orchid_fire"/>
@@ -3439,7 +3439,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_ORCHID1</hiddenAug>
+		<variable name="ach_fm_boss_orchid" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_ORCHID</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ORCHID_2" silent="false">PLAYER_SHIP_TWISTED6_3</unlockCustomShip>
 		<crewMember amount="4" class="orchid_fire"/>
@@ -3490,7 +3490,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_CRYSTAL1</hiddenAug>
+		<variable name="ach_fm_boss_crystal" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_CRYSTAL</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CRYSTALLINE_3" silent="false">PLAYER_SHIP_TWISTED7</unlockCustomShip>
 		<augment name="TWISTED_CRYSTAL_ARMOR_50"/>
@@ -3509,7 +3509,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_CRYSTAL1</hiddenAug>
+		<variable name="ach_fm_boss_crystal" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_CRYSTAL</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CRYSTALLINE_3" silent="false">PLAYER_SHIP_TWISTED7</unlockCustomShip>
 		<augment name="TWISTED_CRYSTAL_ARMOR_50"/>
@@ -3565,7 +3565,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_TUCO1</hiddenAug>
+		<variable name="ach_fm_boss_tuco" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_TUCO</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_TUCO_2" silent="false">PLAYER_SHIP_TWISTED7_2</unlockCustomShip>
 
@@ -3609,7 +3609,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="TUCO1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_tuco" max_group="2" blue="false">
 			<text>You already scrapped Golden Tuco.</text>
 			<event>
 				<text>...</text>
@@ -3632,7 +3632,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>TUCO1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_tuco" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -3644,7 +3644,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_TUCO1</hiddenAug>
+		<variable name="ach_fm_boss_tuco" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_TUCO</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_TUCO_2" silent="false">PLAYER_SHIP_TWISTED7_2</unlockCustomShip>
 
@@ -3687,7 +3687,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="TUCO1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_tuco" max_group="2" blue="false">
 			<text>You already scrapped Golden Tuco.</text>
 			<event>
 				<text>...</text>
@@ -3710,7 +3710,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>TUCO1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_tuco" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -3796,7 +3796,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_LEECH1</hiddenAug>
+		<variable name="ach_fm_boss_tuco" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_LEECH</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_LEECH_3" silent="false">PLAYER_SHIP_TWISTED7_3</unlockCustomShip>
 
@@ -3840,7 +3840,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="LEECH1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_leech" max_group="2" blue="false">
 			<text>You already scrapped Depression Emitter.</text>
 			<event>
 				<text>...</text>
@@ -3863,7 +3863,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>LEECH1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_leech" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -3875,7 +3875,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_LEECH1</hiddenAug>
+		<variable name="ach_fm_boss_tuco" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_LEECH</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_LEECH_3" silent="false">PLAYER_SHIP_TWISTED7_3</unlockCustomShip>
 
@@ -3918,7 +3918,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="LEECH1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_leech" max_group="2" blue="false">
 			<text>You already scrapped Depression Emitter.</text>
 			<event>
 				<text>...</text>
@@ -3941,7 +3941,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>LEECH1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_leech" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -4009,8 +4009,9 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_CLAN1</hiddenAug>
+		<variable name="ach_fm_boss_clan" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_CLAN</achievement>
+		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<choice hidden="true" req="HID_BRAIN_DONATION" max_group="1" blue="false">
 			<text>You already have Mind Clouder.</text>
 			<event load="OPTION_INVALID"/>
@@ -4051,7 +4052,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="CLAN1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_clan" max_group="2" blue="false">
 			<text>You already scrapped Mind Clouder.</text>
 			<event>
 				<text>...</text>
@@ -4074,7 +4075,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>CLAN1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_clan" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -4086,9 +4087,9 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_CLAN1</hiddenAug>
+		<variable name="ach_fm_boss_clan" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_CLAN</achievement>
-
+		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<choice hidden="true" req="HID_BRAIN_DONATION" max_group="1" blue="false">
 			<text>You already have Mind Clouder.</text>
 			<event load="OPTION_INVALID"/>
@@ -4127,7 +4128,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="CLAN1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_clan" max_group="2" blue="false">
 			<text>You already scrapped Mind Clouder.</text>
 			<event>
 				<text>...</text>
@@ -4150,7 +4151,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>CLAN1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_clan" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -4200,9 +4201,9 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_DUSK1</hiddenAug>
+		<variable name="ach_fm_boss_dusk" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_DUSK</achievement>
-
+		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<choice hidden="true" req="HID_DEATH_VESTS2" max_group="1" blue="false">
 			<text>You already have Twilight Vests.</text>
 			<event load="OPTION_INVALID"/>
@@ -4241,7 +4242,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="DUSK1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_dusk" max_group="2" blue="false">
 			<text>You already scrapped Twlight Vests.</text>
 			<event>
 				<text>...</text>
@@ -4264,7 +4265,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>DUSK1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_dusk" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -4276,9 +4277,9 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_DUSK1</hiddenAug>
+		<variable name="ach_fm_boss_dusk" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_DUSK</achievement>
-
+		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<choice hidden="true" req="HID_DEATH_VESTS2" max_group="1" blue="false">
 			<text>You already have Twilight Vests.</text>
 			<event load="OPTION_INVALID"/>
@@ -4317,7 +4318,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="DUSK1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_dusk" max_group="2" blue="false">
 			<text>You already scrapped Twlight Vests.</text>
 			<event>
 				<text>...</text>
@@ -4340,7 +4341,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>DUSK1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_dusk" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -4375,9 +4376,9 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<hiddenAug>ACH_FM_BOSS_ENGI1</hiddenAug>
+		<variable name="ach_fm_boss_engi" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_ENGI</achievement>
-
+		<unlockCustomShip shipReq="PLAYER_SHIP_ENGI_3" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
 		<choice hidden="true" req="HID_UPG_DRONE_COOLDOWN" max_group="1" blue="false">
 			<text>You already have Drone Booster "Kai".</text>
 			<event load="OPTION_INVALID"/>
@@ -4416,7 +4417,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="ENGI1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_engi" max_group="2" blue="false">
 			<text>You already scrapped Drone Booster "Kai".</text>
 			<event>
 				<text>...</text>
@@ -4439,7 +4440,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>ENGI1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_engi" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>
@@ -4451,8 +4452,9 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<autoReward level="HIGH">scrap_only</autoReward>
-		<hiddenAug>ACH_FM_BOSS_ENGI1</hiddenAug>
+		<variable name="ach_fm_boss_engi" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_ENGI</achievement>
+		<unlockCustomShip shipReq="PLAYER_SHIP_ENGI_3" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
 		<choice hidden="true" req="HID_UPG_DRONE_COOLDOWN" max_group="1" blue="false">
 			<text>You already have Drone Booster "Kai".</text>
 			<event load="OPTION_INVALID"/>
@@ -4491,7 +4493,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false" req="ENGI1_SCRAPPED" max_group="2" blue="false">
+		<choice hidden="false" req="scrapped_engi" max_group="2" blue="false">
 			<text>You already scrapped Drone Booster "Kai".</text>
 			<event>
 				<text>...</text>
@@ -4514,7 +4516,7 @@
 					<item type="drones" min="10" max="10"/>
 					<item type="fuel" min="4" max="4"/>
 				</item_modify>
-				<hiddenAug>ENGI1_SCRAPPED</hiddenAug>
+				<variable name="scrapped_engi" op="set" val="1"/>
 			</event>
 		</choice>
 	</event>

@@ -16,7 +16,7 @@
 
 
 <FTL> <!-- Ships, Destruction Events, Ship Fight Events -->
-
+	
 	<ship name="SHIP_FM_FORGEMASTER" auto_blueprint="FM_FORGEMASTER_CRUISER_ENEMY">
 		<triggeredEvent name="FORGEMASTER_SPARES_YOU" event="FORGEMASTER_SPARE" playerHull="3" playerCrew="1" thisFight="true"/>
 		<triggeredEvent name="FORGEMASTER_IS_HURT_FIRST" event="FORGEMASTER_COUNTER" enemyHull="20" enemyCrew="9" thisFight="true"/>
@@ -616,7 +616,7 @@
 
 
 <FTL> <!--  Forgemaster First Meeting -->
-
+	
 	<event name="FORGEMASTER">
 		<preventQuest/>
 		<nonNebulaBeacon>true</nonNebulaBeacon>
@@ -5296,7 +5296,7 @@
 			<event load="FM_FORGE_WEAPON_LOAD"/>
 		</choice>
 	</event>
-
+	
 	<event name="NPC_STORAGE_CHECK_UPGRADE_SILVER">
 		<checkCargo/>
 		<text>Currently viewing the Silver Flak</text>
@@ -5956,8 +5956,8 @@
 			<text>You must have an Amp Energy Drone and Combat Drone MK II to forge this drone.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-
-
+		
+		
 		<choice req="FM_AMBER_DRONE_LIST" lvl="1" blue="false" hidden="true">
 			<text>Overcharge the lattice of the Crystal Heavy MK I with the Assault Drone's particles to forge the Amber Combat Drone.</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_AMBER_DRONE"/>
@@ -6002,7 +6002,7 @@
 			<text>Have your Plated use their expertise in the art of the forge to convert your Combat Drone MK II into the Forgemaster Drone.</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_FORGEMAN_DRONE"/>
 		</choice>
-
+		
 		<choice req="FM_FORGEMAN_DRONE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
 			<text>You must have a Combat Drone MK II and an expert craftsperson to forge this drone.</text>
 			<event load="OPTION_INVALID"/>
@@ -6032,7 +6032,7 @@
 			<text>Install the Light Laser MK I into the Combat Drone MK I's chassis to craft the MFK Kestrel Combat Drone.</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_MFK_KESTREL_DRONE"/>
 		</choice>
-
+		
 		<choice req="FM_MFK_KESTREL_DRONE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
 			<text>You must have a Light Laser MK I and Combat Drone MK I to forge this drone.</text>
 			<event load="OPTION_INVALID"/>
@@ -6125,22 +6125,25 @@
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_CURA_DRONE">
 		<checkCargo/>
-    <text>Currently viewing the CURA Combat Drone.[Cost: 0~].</text>
-    <choice hidden="false" req="FM_CURA_DRONE_LIST" blue="false">
-      <text>Craft the CURA Drone.[Cost: 0~]</text>
-      <event>
-        <text>Proceed with crafting?</text>
-        <drone name="FM_CURA_DRONE"/>
-				<removeItem>MANNING</removeItem>
-				<queueEvent>FM_REMOVE_COMBAT_CONSERVATIVE</queueEvent><!--Removes one Conservative Combat drone of ANY kind (toggle mode)-->
-				<queueEvent>FM_REMOVE_BATTLETOG</queueEvent><!--Removes one Battle Drone MK I of ANY kind (toggle mode)-->
-        <queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
-      </event>
-    </choice>
-    <choice hidden="false">
-      <text>Nevermind.</text>
-      <event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
-    </choice>
+		<text>Currently viewing the CURA Combat Drone.[Cost: 150~].</text>
+		<choice hidden="false" req="FM_CURA_DRONE_LIST" blue="false">
+		<text>Craft the CURA Drone.[Cost: 150~]</text>
+		<event>
+			<text>Proceed with crafting?</text>
+			<drone name="FM_CURA_DRONE"/>
+			<item_modify>
+				<item type="scrap" min="150" max="100"/>
+			</item_modify>
+			<removeItem>MANNING</removeItem>
+			<queueEvent>FM_REMOVE_COMBAT_CONSERVATIVE</queueEvent><!--Removes one Conservative Combat drone of ANY kind (toggle mode)-->
+			<queueEvent>FM_REMOVE_BATTLETOG</queueEvent><!--Removes one Battle Drone MK I of ANY kind (toggle mode)-->
+			<queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+		</event>
+		</choice>
+		<choice hidden="false">
+		<text>Nevermind.</text>
+		<event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
+		</choice>
 	</event>
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_FLAMETHROWER_DRONE">
@@ -6244,10 +6247,13 @@
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_KESTREL_DRONE">
 		<checkCargo/>
-		<text>Currently viewing the Kestrel Combat Drone.[Cost: 0~].</text>
+		<text>Currently viewing the Kestrel Combat Drone.[Cost: 100~].</text>
 		<choice hidden="false" req="FM_KESTREL_DRONE_LIST" blue="false">
-			<text>Craft the Kestrel Drone.[Cost: 0~]</text>
+			<text>Craft the Kestrel Drone.[Cost: 100~]</text>
 			<event>
+				<item_modify>
+					<item type="scrap" min="100" max="100"/>
+				</item_modify>
 				<text>Proceed with crafting?</text>
 				<drone name="FM_KESTREL_DRONE"/>
 				<removeItem>LASER_BURST_3</removeItem>
@@ -6263,11 +6269,14 @@
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_MFK_KESTREL_DRONE">
 		<checkCargo/>
-		<text>Currently viewing the MFK Kestrel Combat Drone.[Cost: 0~].</text>
+		<text>Currently viewing the MFK Kestrel Combat Drone.[Cost: 100~].</text>
 		<choice hidden="false" req="FM_MFK_KESTREL_DRONE_LIST" blue="false">
-			<text>Craft the MFK Kestrel Drone.[Cost: 0~]</text>
+			<text>Craft the MFK Kestrel Drone.[Cost: 100~]</text>
 			<event>
 				<text>Proceed with crafting?</text>
+				<item_modify>
+					<item type="scrap" min="100" max="100"/>
+				</item_modify>
 				<drone name="FM_MFK_KESTREL_DRONE"/>
 				<removeItem>LASER_LIGHT</removeItem>
 				<queueEvent>FM_REMOVE_COMBAT_1</queueEvent><!--Removes one Combat I drone of ANY kind (toggle mode)-->
@@ -27895,47 +27904,47 @@
 			<text>'Ranseur' Beam Vengeance(x11+)</text>
 			<event load="OPTION_INVALID" />
 		</choice>
-		<choice req="FM_VENGEANCE_LOOT_AUG_1" lvl="1" max_lvl="1" blue="false" hidden="true">
+		<choice req="FM_VENGEANCE_LOOT_LANIUS_1" lvl="1" max_lvl="1" blue="false" hidden="true">
 			<text>Flak Gun MK II Vengeance(x1)</text>
 			<event load="OPTION_INVALID" />
 		</choice>
-		<choice req="FM_VENGEANCE_LOOT_AUG_1" lvl="2" max_lvl="2" blue="false" hidden="true">
+		<choice req="FM_VENGEANCE_LOOT_LANIUS_1" lvl="2" max_lvl="2" blue="false" hidden="true">
 			<text>Flak Gun MK II Vengeance(x2)</text>
 			<event load="OPTION_INVALID" />
 		</choice>
-		<choice req="FM_VENGEANCE_LOOT_AUG_1" lvl="3" max_lvl="3" blue="false" hidden="true">
+		<choice req="FM_VENGEANCE_LOOT_LANIUS_1" lvl="3" max_lvl="3" blue="false" hidden="true">
 			<text>Flak Gun MK II Vengeance(x3)</text>
 			<event load="OPTION_INVALID" />
 		</choice>
-		<choice req="FM_VENGEANCE_LOOT_AUG_1" lvl="4" max_lvl="4" blue="false" hidden="true">
+		<choice req="FM_VENGEANCE_LOOT_LANIUS_1" lvl="4" max_lvl="4" blue="false" hidden="true">
 			<text>Flak Gun MK II Vengeance(x4)</text>
 			<event load="OPTION_INVALID" />
 		</choice>
-		<choice req="FM_VENGEANCE_LOOT_AUG_1" lvl="5" max_lvl="5" blue="false" hidden="true">
+		<choice req="FM_VENGEANCE_LOOT_LANIUS_1" lvl="5" max_lvl="5" blue="false" hidden="true">
 			<text>Flak Gun MK II Vengeance(x5)</text>
 			<event load="OPTION_INVALID" />
 		</choice>
-		<choice req="FM_VENGEANCE_LOOT_AUG_1" lvl="6" max_lvl="6" blue="false" hidden="true">
+		<choice req="FM_VENGEANCE_LOOT_LANIUS_1" lvl="6" max_lvl="6" blue="false" hidden="true">
 			<text>Flak Gun MK II Vengeance(x6)</text>
 			<event load="OPTION_INVALID" />
 		</choice>
-		<choice req="FM_VENGEANCE_LOOT_AUG_1" lvl="7" max_lvl="7" blue="false" hidden="true">
+		<choice req="FM_VENGEANCE_LOOT_LANIUS_1" lvl="7" max_lvl="7" blue="false" hidden="true">
 			<text>Flak Gun MK II Vengeance(x7)</text>
 			<event load="OPTION_INVALID" />
 		</choice>
-		<choice req="FM_VENGEANCE_LOOT_AUG_1" lvl="8" max_lvl="8" blue="false" hidden="true">
+		<choice req="FM_VENGEANCE_LOOT_LANIUS_1" lvl="8" max_lvl="8" blue="false" hidden="true">
 			<text>Flak Gun MK II Vengeance(x8)</text>
 			<event load="OPTION_INVALID" />
 		</choice>
-		<choice req="FM_VENGEANCE_LOOT_AUG_1" lvl="9" max_lvl="9" blue="false" hidden="true">
+		<choice req="FM_VENGEANCE_LOOT_LANIUS_1" lvl="9" max_lvl="9" blue="false" hidden="true">
 			<text>Flak Gun MK II Vengeance(x9)</text>
 			<event load="OPTION_INVALID" />
 		</choice>
-		<choice req="FM_VENGEANCE_LOOT_AUG_1" lvl="10" max_lvl="10" blue="false" hidden="true">
+		<choice req="FM_VENGEANCE_LOOT_LANIUS_1" lvl="10" max_lvl="10" blue="false" hidden="true">
 			<text>Flak Gun MK II Vengeance(x10)</text>
 			<event load="OPTION_INVALID" />
 		</choice>
-		<choice req="FM_VENGEANCE_LOOT_AUG_1" lvl="11" blue="false" hidden="true">
+		<choice req="FM_VENGEANCE_LOOT_LANIUS_1" lvl="11" blue="false" hidden="true">
 			<text>Flak Gun MK II Vengeance(x11+)</text>
 			<event load="OPTION_INVALID" />
 		</choice>

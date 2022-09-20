@@ -4403,15 +4403,15 @@
 			</choice>
 		</event>
 	</choice>
-	<choice req="LOOT_AUG_1">
+	<choice req="LOOT_LANIUS_1">
 		<text>Install a Flak Gun MK II into your hull</text>
 		<event>
 			<text>You have successfully installed the Flak Gun MK II Vengeance!</text>
 			<item_modify>
 				<item type="scrap" min="-32" max="-32" />
 			</item_modify>
-			<remove name="LOOT_AUG_1" />
-			<hiddenAug>FM_VENGEANCE_LOOT_AUG_1</hiddenAug>
+			<remove name="LOOT_LANIUS_1" />
+			<hiddenAug>FM_VENGEANCE_LOOT_LANIUS_1</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>

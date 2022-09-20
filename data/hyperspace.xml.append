@@ -72,7 +72,7 @@
 	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 	SHIPS
 	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
-
+	
 	<mod:findLike type="ships">
 
 		<mod:findLike type="shipOrder">
@@ -3821,7 +3821,7 @@
 
 
 	</events>
-
+	
 	<events> <!-- Forgemaster QUEST Hub -->
 		<req name="FM_QUEST_LIST" type="any">
 			<name>SEC SECTOR_MANTIS</name>
@@ -3834,100 +3834,132 @@
 
 
 	</events>
-
+	
 	<events> <!-- Forgemaster CURA BOSS RUSH -->
-
 		<event name="FM_BOSS_CLAN1_SHIP_DESTROYED"> <!-- Gives you twisted sector coords -->
 			<variable name="coords_twisted" op="add" val="1"/>
 			<variable name="loc_coords_twisted" op="add" val="1"/>
 		</event>
-
+		
 		<event name="FM_BOSS_CLAN1_SHIP_DESTROYED2"> <!-- Gives you twisted sector coords -->
 			<variable name="coords_twisted" op="add" val="1"/>
 			<variable name="loc_coords_twisted" op="add" val="1"/>
 		</event>
-
+		
 		<event name="FM_BOSS_DUSK1_SHIP_DESTROYED"> <!-- Gives you twisted sector coords -->
 			<variable name="coords_twisted" op="add" val="1"/>
 			<variable name="loc_coords_twisted" op="add" val="1"/>
 		</event>
-
+		
 		<event name="FM_BOSS_DUSK1_SHIP_DESTROYED2"> <!-- Gives you twisted sector coords -->
 			<variable name="coords_twisted" op="add" val="1"/>
 			<variable name="loc_coords_twisted" op="add" val="1"/>
 		</event>
-
+		
 		<event name="FM_BOSS_ENGI1_DESTROYED"> <!-- Gives you twisted sector coords -->
 			<variable name="coords_twisted" op="add" val="1"/>
 			<variable name="loc_coords_twisted" op="add" val="1"/>
 		</event>
-
+		
 		<event name="FM_BOSS_ENGI1_DESTROYED2"> <!-- Gives you twisted sector coords -->
 			<variable name="coords_twisted" op="add" val="1"/>
 			<variable name="loc_coords_twisted" op="add" val="1"/>
 		</event>
+		<variable name="loc_impossible_task" op="set" val="0"/> <!-- tracks impossible task accepting progress, 1=talked, 2=accepted-->
+		<variable name="loc_impossible_task_done" op="set" val="0"/> <!-- tracks impossible task accepting progress, 1=talked, 2=accepted-->
+		<variable name="scrapped_clan" op="set" val="0"/>
+		<variable name="scrapped_dusk" op="set" val="0"/>
+		<variable name="scrapped_engi" op="set" val="0"/>
+		<variable name="scrapped_freemantis" op="set" val="0"/>
+		<variable name="scrapped_separatist" op="set" val="0"/>
+		<variable name="scrapped_mantis" op="set" val="0"/>
+		<variable name="scrapped_monk" op="set" val="0"/>
+		<variable name="scrapped_rock" op="set" val="0"/>
+		<variable name="scrapped_lostsun" op="set" val="0"/>
+		<variable name="scrapped_slug" op="set" val="0"/>
+		<variable name="scrapped_zoltan" op="set" val="0"/>
+		<variable name="scrapped_shell" op="set" val="0"/>
+		<variable name="scrapped_engineer" op="set" val="0"/>
+		<variable name="scrapped_lanius" op="set" val="0"/>
+		<variable name="scrapped_kestrel" op="set" val="0"/>
+		<variable name="scrapped_federation" op="set" val="0"/>
+		<variable name="scrapped_orchid" op="set" val="0"/>
+		<variable name="scrapped_tuco" op="set" val="0"/>
+		<variable name="scrapped_leech" op="set" val="0"/>
 
-
+		<variable name="ach_fm_boss_clan" op="set" val="0"/>
+		<variable name="ach_fm_boss_dusk" op="set" val="0"/>
+		<variable name="ach_fm_boss_engi" op="set" val="0"/>
+		<variable name="ach_fm_boss_freemantis" op="set" val="0"/>
+		<variable name="ach_fm_boss_separatist" op="set" val="0"/>
+		<variable name="ach_fm_boss_mantis" op="set" val="0"/>
+		<variable name="ach_fm_boss_monk" op="set" val="0"/>
+		<variable name="ach_fm_boss_rock" op="set" val="0"/>
+		<variable name="ach_fm_boss_lostsun" op="set" val="0"/>
+		<variable name="ach_fm_boss_slug" op="set" val="0"/>
+		<variable name="ach_fm_boss_stealth" op="set" val="0"/>
+		<variable name="ach_fm_boss_zoltan" op="set" val="0"/>
+		<variable name="ach_fm_boss_shell" op="set" val="0"/>
+		<variable name="ach_fm_boss_engineer" op="set" val="0"/>
+		<variable name="ach_fm_boss_lanius" op="set" val="0"/>
+		<variable name="ach_fm_boss_kestrel" op="set" val="0"/>
+		<variable name="ach_fm_boss_federation" op="set" val="0"/>
+		<variable name="ach_fm_boss_orchid" op="set" val="0"/>
+		<variable name="ach_fm_boss_crystal" op="set" val="0"/>
+		<variable name="ach_fm_boss_tuco" op="set" val="0"/>
+		<variable name="ach_fm_boss_leech" op="set" val="0"/>
+		
 		<req name="FM_CURA_QUEST_LIST" type="all">
 			<name>FM_BOSS_LIST_18</name>
-			<name>ACH_FM_BOSS_CRYSTAL1</name>
-			<name>ACH_FM_BOSS_TUCO1</name>
-			<name>ACH_FM_BOSS_LEECH1</name>
+			<name>ach_fm_boss_crystal</name>
+			<name>ach_fm_boss_tuco</name>
+			<name>ach_fm_boss_leech</name>
 		</req>
-
+		
 		<req name="FM_BOSS_LIST_3" type="all">
-			<name>ACH_FM_BOSS_CLAN1</name>
-			<name>ACH_FM_BOSS_DUSK1</name>
-			<name>ACH_FM_BOSS_ENGI1</name>
+			<name>ach_fm_boss_clan</name>
+			<name>ach_fm_boss_dusk</name>
+			<name>ach_fm_boss_engi</name>
 		</req>
-
+		
 		<req name="FM_BOSS_LIST_6" type="all">
 			<name>FM_BOSS_LIST_3</name>
-			<name>ACH_FM_BOSS_FREE1</name>
-			<name>ACH_FM_BOSS_SEPA1</name>
-			<name>ACH_FM_BOSS_MANTIS1</name>
+			<name>ach_fm_boss_freemantis</name>
+			<name>ach_fm_boss_separatist</name>
+			<name>ach_fm_boss_mantis</name>
 		</req>
-
+		
 		<req name="FM_BOSS_LIST_9" type="all">
 			<name>FM_BOSS_LIST_6</name>
-			<name>ACH_FM_BOSS_MONK1</name>
-			<name>ACH_FM_BOSS_R1</name>
-			<name>ACH_FM_BOSS_LOSTSUN1</name>
+			<name>ach_fm_boss_monk</name>
+			<name>ach_fm_boss_rock</name>
+			<name>ach_fm_boss_lostsun</name>
 		</req>
-
+		
 		<req name="FM_BOSS_LIST_12" type="all">
 			<name>FM_BOSS_LIST_9</name>
-			<name>ACH_FM_BOSS_SLUG1</name>
-			<name>ACH_FM_BOSS_STEALTH1</name>
-			<name>ACH_FM_BOSS_ZOLTAN1</name>
+			<name>ach_fm_boss_slug</name>
+			<name>ach_fm_boss_stealth</name>
+			<name>ach_fm_boss_zoltan</name>
 		</req>
-
+		
 		<req name="FM_BOSS_LIST_15" type="all">
 			<name>FM_BOSS_LIST_12</name>
-			<name>ACH_FM_BOSS_SHELL1</name>
-			<name>ACH_FM_BOSS_ENGINEER1</name>
-			<name>ACH_FM_BOSS_LANIUS1</name>
+			<name>ach_fm_boss_shell</name>
+			<name>ach_fm_boss_engineer</name>
+			<name>ach_fm_boss_lanius</name>
 		</req>
-
+		
 		<req name="FM_BOSS_LIST_18" type="all">
 			<name>FM_BOSS_LIST_15</name>
-			<name>ACH_FM_BOSS_KES1</name>
-			<name>ACH_FM_BOSS_FED1</name>
-			<name>ACH_FM_BOSS_ORCHID1</name>
+			<name>ach_fm_boss_kestrel</name>
+			<name>ach_fm_boss_federation</name>
+			<name>ach_fm_boss_orchid</name>
 		</req>
-
-		<event name="FM_START_TWISTED"> <!-- Removes Coords at start of sector -->
-			<removeItem>HIDDEN COORDS_TWISTED</removeItem>
-			<removeItem>COORDS_TWISTED</removeItem>
-		</event>
-
-	</events>
-	<mod:findLike type ="events">
-		<mod:findName type = "req" name = "COORDS"> <!--Checks for twisted sector coords -->
-			<mod-append:name>COORDS_TWISTED</mod-append:name>
-		</mod:findName>
-	</mod:findLike>
-
+		
+	
+	</events>	
+	
 	<events> <!-- Forgemaster event Story events -->
 		<event name="FM_STORAGE_CHECK_JOURNAL_LOAD">
 			<loadEvent>FM_STORAGE_CHECK_JOURNAL</loadEvent>
@@ -4110,44 +4142,22 @@
 			<checkCargo/>
 		</event>
 	</events>
-
+	
 	<events> <!-- Forgemaster GET phone -->
 		<event name="FORGEMASTER_FIRST_MEETING_PHONE">
 			<hiddenAug>FORGEMASTER_PHONE</hiddenAug>
 			<loadEvent>FORGEMASTER_FIRST_MEETING</loadEvent>
 		</event>
-
-		<event name="FM_ATLAS_MENU_CALL_ONLY_LOAD">
-			<loadEvent>FM_ATLAS_MENU_CALL_ONLY</loadEvent>
-		</event>
-		<event name="FM_ATLAS_MENU_CALL_ONLY" recursive="true">
-
-		</event>
-
-
-		<event name="FM_CALL_QUESTION_CURA_LOAD">
-			<loadEvent>FM_CALL_QUESTION_CURA</loadEvent>
-		</event>
-		<event name="FM_CALL_QUESTION_CURA" recursive="true">
-
-		</event>
-
+		
 		<event name="FM_ATLAS_EQUIPMENT_LOAD">
 			<loadEvent>FM_ATLAS_EQUIPMENT</loadEvent>
 		</event>
 		<event name="FM_ATLAS_EQUIPMENT" recursive="true">
 
 		</event>
-
-		<event name="FM_CALL_QUESTION_FORGEMASTER_LOAD">
-			<loadEvent>FM_CALL_QUESTION_FORGEMASTER</loadEvent>
-		</event>
-		<event name="FM_CALL_QUESTION_FORGEMASTER" recursive="true">
-
-		</event>
-
+	
 	</events>
-
+	
 	<events> <!-- new FM spawning reqs and variables-->
 		<req name="FMSPAWN_CALL" type="all">
 			<name>FORGEMASTER_PHONE_CALL_CONFIRM</name>
@@ -4168,7 +4178,7 @@
 				</req>
 			</req>
 		</req>
-
+		
 		<req name="FMSPAWN_FIRSTMEET" type="max" max_lvl="0">
 			<name>FORGEMASTER_HAS_MET</name>
 			<name>forgemaster_spawntriggered</name>
@@ -4188,7 +4198,6 @@
 				</req>
 			</req>
 		</req>
-		<variable name="loc_impossible_task" op="set" val="0"/> <!-- tracks impossible task accepting progress, 1=talked, 2=accepted-->
 		<variable name="flak_calc" op="set" val="0"/><!--Persistant Flak Surge Calculation Variable-->
 		<variable name="forgemaster_spawntriggered" op="set" val="0"/> <!--counter for how often the FMspawner was activated, if not 0 the spawner will not work-->
 		<variable name="rep_forgemaster" op="set" val="0"/> <!--forgemaster Notoriety-->
@@ -4268,7 +4277,7 @@
 		</req>
 
 	</events>
-
+	
 	<mod:findLike type="victories"> <!-- adds the victory marker for harmony ending -->
 		<mod-append:bleakfuture>
 			<name>\1 Bleak Future Ending</name>
@@ -14114,9 +14123,9 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
 			<crystalShard weapon="LOOT_DYNASTY_1" value="1.0" stackable="independent" />
 		</aug>
-		<aug name="FM_VENGEANCE_LOOT_AUG_1">
+		<aug name="FM_VENGEANCE_LOOT_LANIUS_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
-			<crystalShard weapon="LOOT_AUG_1" value="1.0" stackable="independent" />
+			<crystalShard weapon="LOOT_LANIUS_1" value="1.0" stackable="independent" />
 		</aug>
 		<aug name="FM_VENGEANCE_LOOT_MATH_1">
 			<function name="CRYSTAL_SHARDS" value="0" useForReqs="true" warning="false" />
@@ -17370,18 +17379,15 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 
 		<event name="INSTALL_LAB_PLATED_REGEN">
 			<hiddenAug>LAB_PLATED_REGEN</hiddenAug>
-			<hiddenAug>LAB_PLATED_INSTALLED_REGEN</hiddenAug>
 			<loadEvent>STORAGE_CHECK_LAB_ROCK</loadEvent>
 		</event>
 		<event name="INSTALL_LAB_PLATED_BIG">
 
 			<hiddenAug>LAB_PLATED_BIG</hiddenAug>
-			<hiddenAug>LAB_PLATED_INSTALLED_BIG</hiddenAug>
 			<loadEvent>STORAGE_CHECK_LAB_ROCK</loadEvent>
 		</event>
 		<event name="INSTALL_LAB_PLATED_AIR">
 			<hiddenAug>LAB_PLATED_AIR</hiddenAug>
-			<hiddenAug>LAB_PLATED_INSTALLED_AIR</hiddenAug>
 			<loadEvent>STORAGE_CHECK_LAB_ROCK</loadEvent>
 		</event>
 
@@ -18528,7 +18534,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</statBoosts>
 		</aug>
 
-		<aug name="FM_MODULAR_HULL_DOT">
+		<aug name="FM_MODULAR_HULL_DOT" unused="true">
 			<statBoosts>
 				<statBoost name="healSpeed">
 					<boostType>MULT</boostType>
@@ -19154,7 +19160,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<name>FM_VENGEANCE_LOOT_KNIGHT_1</name>
 				<name>FM_VENGEANCE_LOOT_LEECH_1</name>
 				<name>FM_VENGEANCE_LOOT_CULTIST_1</name>
-				<name>FM_VENGEANCE_LOOT_AUG_1</name>
+				<name>FM_VENGEANCE_LOOT_LANIUS_1</name>
 				<name>FM_VENGEANCE_LOOT_MATH_1</name>
 				<name>FM_VENGEANCE_LOOT_MATH_2</name>
 				<name>FM_VENGEANCE_LOOT_MATH_3</name>

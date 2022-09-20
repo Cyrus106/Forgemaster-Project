@@ -14153,7 +14153,7 @@
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
 	    <speed>10</speed>
-	    <cost>100</cost>
+	    <cost>250</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_cura_drone</droneImage>
 	    <weaponBlueprint>FM_CURA_DRONE_WEAPON</weaponBlueprint>
@@ -14417,7 +14417,7 @@
 			<cooldown>1000</cooldown>
 			<dodge>0</dodge>
 			<speed>15</speed>
-			<cost>100</cost>
+			<cost>200</cost>
 			<bp>3</bp>
 			<droneImage>fm_kestrel_drone</droneImage>
 			<weaponBlueprint>FM_KESTREL_DRONE_WEAPON</weaponBlueprint>
@@ -14473,7 +14473,7 @@
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
 	    <speed>10</speed>
-	    <cost>100</cost>
+	    <cost>190</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_mfk_kestrel_drone</droneImage>
 	    <weaponBlueprint>FM_MFK_KESTREL_DRONE_WEAPON</weaponBlueprint>
@@ -21136,6 +21136,14 @@
 		<stackable>false</stackable>
 	</augBlueprint>
 
+	<augBlueprint name="AUG_MAGATAMA">
+		<title>Magatama</title>
+		<desc>Effects: +49% crew heal speed, -5% damage taken for crew.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+
 	<augBlueprint name="HID_MANTIS_RELOADER">
 		<title>Pheromone Accelerator</title>
 		<desc>This small device allows an increased tolerance to Pheromone usage, and lowers all Mantis' ability cooldowns by 20%</desc>
@@ -21232,6 +21240,14 @@
 	<augBlueprint name="HID_FM_UPG_AETHER_SHIELDS">
 		<title>Aether Ascension Shields</title>
 		<desc>Effects: Provides a bonus 6 energy shield points which will stack with other energy shields.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+
+	<augBlueprint name="AUG_TERMINUS">
+		<title>boss rush reward thingy</title>
+		<desc>Effects: all crew stats +40%.</desc>
 		<cost>0</cost>
 		<rarity>0</rarity>
 		<stackable>false</stackable>
@@ -23557,7 +23573,7 @@
 		<rarity>0</rarity>
 		<stackable>true</stackable>
 	</augBlueprint>
-	<augBlueprint name="FM_VENGEANCE_LOOT_AUG_1">
+	<augBlueprint name="FM_VENGEANCE_LOOT_LANIUS_1">
 		<title>Flak Gun MK II Vengeance</title>
 		<desc>YOU SHOULD NEVER SEE THIS</desc>
 		<cost>0</cost>

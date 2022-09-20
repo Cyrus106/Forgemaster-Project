@@ -3751,12 +3751,12 @@
 			</choice>
 		</event>
 	</choice>
-	<choice req="LOOT_AUG_1">
+	<choice req="LOOT_LANIUS_1">
 		<text>Redeem a Flak Gun MK II for 13 Special Flak Points</text>
 		<event>
 			<text>You have successfully redeemed your weapon</text>
 			<variable name="flak_special_resource_counter" op="add" val="13" />
-			<remove name="LOOT_AUG_1" />
+			<remove name="LOOT_LANIUS_1" />
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event load="STORAGE_CHECK" />

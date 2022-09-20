@@ -3,7 +3,7 @@
 
 </textList>
 <event name="FM_START_TWISTED">
-<modifyPursuit amount="-10"/>
+	<modifyPursuit amount="-10"/>
 	<preventQuest/>
 	<beaconType id="map_icon_start" global="false">
 		<color r="46" g="252" b="51" a="1"/>
@@ -17,8 +17,8 @@
 </event>
 
 <event name="FM_START_RITUAL">
-<img back="FM_TWISTED_SECTOR_IMAGE" planet="NONE"/>
-<text>You've arrived at one of this sector's unusual beacons. You perform a quick scan using the software provided by C.U.R.A., it informs you that the anomalous properties of this beacon force causes anything called by the C.U.R.A. Drive Hacker to be pulled directly to this beacon, but there is only enough energy to do this once per beacon. </text>
+	<img back="FM_TWISTED_SECTOR_IMAGE" planet="NONE"/>
+	<text>You've arrived at one of this sector's unusual beacons. You perform a quick scan using the software provided by C.U.R.A., it informs you that the anomalous properties of this beacon force causes anything called by the C.U.R.A. Drive Hacker to be pulled directly to this beacon, but there is only enough energy to do this once per beacon. </text>
 	<choice hidden="true">
 		<text>Attempt to utilize your C.U.R.A. Drive Hacker.</text>
 		<event load="FM_CURA_DRIVE_HACKER_MENU"/>
@@ -35,24 +35,24 @@
 
 
 <event name="FM_CURA_DRIVE_HACKER_MENU">
-<text>You've arrived at one of this sector's unusual beacons. The anomalous properties of this beacon force anything called by the C.U.R.A. Drive Hacker to be pulled directly to this beacon. You wonder if this could be used to pull your ship to these beacons in the future.</text>
-	<choice req="ACH_FM_BOSS_DONE" lvl="1" max_group="3" hidden="true" blue="false">
+	<text>You've arrived at one of this sector's unusual beacons. The anomalous properties of this beacon force anything called by the C.U.R.A. Drive Hacker to be pulled directly to this beacon. You wonder if this could be used to pull your ship to these beacons in the future.</text>
+	<choice req="loc_impossible_task_done" lvl="1" max_group="3" hidden="true" blue="false">
         <text>(C.U.R.A. Drive Hacker) You already obtained your reward. You wonder how exactly this benefit C.U.R.A.?</text>
         <event load="OPTION_INVALID"/>
-</choice>
+	</choice>
 
-<choice req="FM_CURA_QUEST_LIST" lvl="1" max_group="3" hidden="false" blue="true">
+	<choice req="FM_CURA_QUEST_LIST" lvl="1" max_group="3" hidden="false" blue="true">
         <text>(C.U.R.A. Drive Hacker) Obtain your Reward..</text>
         <event load="FM_STORAGE_CHECK_AUG_MVBOSS_SPAWNER_REWARD"/>
-</choice>
-<choice req="CURA_MVBOSS_SPAWNER" lvl="1" max_group="3" hidden="false" blue="true">
+	</choice>
+	<choice req="CURA_MVBOSS_SPAWNER" lvl="1" max_group="3" hidden="false" blue="true">
         <text>(C.U.R.A. Drive Hacker) Summon an Twisted MV Traveler.</text>
         <event load="FM_STORAGE_CHECK_AUG_MVBOSS_SPAWNER_LIST_SECTOR"/>
- </choice>
-<choice hidden="true">
+ 	</choice>
+	<choice hidden="true">
 		<text>Nevermind, let's leave.</text>
 		<event>
-		<text>You decide against sticking around to try calling any vessels to the beacon. The anomalous properties of the beacon make you and your crew feel very ill, so you don't like the idea of sticking around.</text>
+			<text>You decide against sticking around to try calling any vessels to the beacon. The anomalous properties of the beacon make you and your crew feel very ill, so you don't like the idea of sticking around.</text>
 		<event/>
 		</event>
 	</choice>
@@ -62,16 +62,16 @@
 	<text>You check what ships are available to be summoned currently. For each set of 3 ships you defeat, 3 more will become available to challenge. Summoning an Twisted MV boss will take 2{.
 	[NOTE: All rewards from these bosses DO NOT stack.]</text>
 
-
-	<choice req="ACH_FM_BOSS_CRYSTAL1" lvl="1" max_group="1" hidden="true" blue="false">
+	
+	<choice req="ach_fm_boss_crystal" lvl="1" max_group="1" hidden="true" blue="false">
 		<text>You already defeated the Twisted Crystal.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ACH_FM_BOSS_TUCO1" lvl="1" max_group="2" hidden="true" blue="false">
+	<choice req="ach_fm_boss_tuco" lvl="1" max_group="2" hidden="true" blue="false">
 		<text>You already defeated the Twisted Tuco.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ACH_FM_BOSS_LEECH1" lvl="1" max_group="3" hidden="true" blue="false">
+	<choice req="ach_fm_boss_leech" lvl="1" max_group="3" hidden="true" blue="false">
 		<text>You already defeated the Twisted Leech.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
@@ -116,15 +116,15 @@
 		</event>
 	</choice>
 
-	<choice req="ACH_FM_BOSS_KES1" lvl="1" max_group="1" hidden="true" blue="false">
+	<choice req="ach_fm_boss_kestrel" lvl="1" max_group="1" hidden="true" blue="false">
 		<text>You already defeated the Twisted Kestrel.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ACH_FM_BOSS_FED1" lvl="1" max_group="2" hidden="true" blue="false">
+	<choice req="ach_fm_boss_federation" lvl="1" max_group="2" hidden="true" blue="false">
 		<text>You already defeated the Twisted Federation.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ACH_FM_BOSS_ORCHID1" lvl="1" max_group="3" hidden="true" blue="false">
+	<choice req="ach_fm_boss_orchid" lvl="1" max_group="3" hidden="true" blue="false">
 		<text>You already defeated the Twisted Orchid.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
@@ -169,15 +169,15 @@
 		</event>
 	</choice>
 
-	<choice req="ACH_FM_BOSS_LANIUS1" lvl="1" max_group="1" hidden="true" blue="false">
+	<choice req="ach_fm_boss_lanius" lvl="1" max_group="1" hidden="true" blue="false">
 		<text>You already defeated the Twisted Lanius.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ACH_FM_BOSS_SHELL1" lvl="1" max_group="2" hidden="true" blue="false">
+	<choice req="ach_fm_boss_shell" lvl="1" max_group="2" hidden="true" blue="false">
 		<text>You already defeated the Twisted Shell.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ACH_FM_BOSS_ENGINEER1" lvl="1" max_group="3" hidden="true" blue="false">
+	<choice req="ach_fm_boss_engineer" lvl="1" max_group="3" hidden="true" blue="false">
 		<text>You already defeated the Twisted Engineer.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
@@ -269,15 +269,15 @@
 		</event>
 	</choice>
 
-	<choice req="ACH_FM_BOSS_SLUG1" lvl="1" max_group="1" hidden="true" blue="false">
+	<choice req="ach_fm_boss_slug" lvl="1" max_group="1" hidden="true" blue="false">
 		<text>You already defeated the Twisted Slug.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ACH_FM_BOSS_STEALTH1" lvl="1" max_group="2" hidden="true" blue="false">
+	<choice req="ach_fm_boss_stealth" lvl="1" max_group="2" hidden="true" blue="false">
 		<text>You already defeated the Twisted Stealth.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ACH_FM_BOSS_ZOLTAN1" lvl="1" max_group="3" hidden="true" blue="false">
+	<choice req="ach_fm_boss_zoltan" lvl="1" max_group="3" hidden="true" blue="false">
 		<text>You already defeated the Twisted Zoltan.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
@@ -322,15 +322,15 @@
 		</event>
 	</choice>
 
-	<choice req="ACH_FM_BOSS_MONK1" lvl="1" max_group="1" hidden="true" blue="false">
+	<choice req="ach_fm_boss_monk" lvl="1" max_group="1" hidden="true" blue="false">
 		<text>You already defeated the Twisted Monk.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ACH_FM_BOSS_R1" lvl="1" max_group="2" hidden="true" blue="false">
+	<choice req="ach_fm_boss_rock" lvl="1" max_group="2" hidden="true" blue="false">
 		<text>You already defeated the Twisted Rockman.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ACH_FM_BOSS_LOSTSUN1" lvl="1" max_group="3" hidden="true" blue="false">
+	<choice req="ach_fm_boss_lostsun" lvl="1" max_group="3" hidden="true" blue="false">
 		<text>You already defeated the Twisted Lost Sun.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
@@ -375,15 +375,15 @@
 		</event>
 	</choice>
 
-	<choice req="ACH_FM_BOSS_FREE1" lvl="1" max_group="1" hidden="true" blue="false">
+	<choice req="ach_fm_boss_freemantis" lvl="1" max_group="1" hidden="true" blue="false">
 		<text>You already defeated the Twisted Free Mantis.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ACH_FM_BOSS_SEPA1" lvl="1" max_group="2" hidden="true" blue="false">
+	<choice req="ach_fm_boss_separatist" lvl="1" max_group="2" hidden="true" blue="false">
 		<text>You already defeated the Twisted Separatist.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ACH_FM_BOSS_MANTIS1" lvl="1" max_group="3" hidden="true" blue="false">
+	<choice req="ach_fm_boss_mantis" lvl="1" max_group="3" hidden="true" blue="false">
 		<text>You already defeated the Twisted Mantis.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
@@ -428,15 +428,15 @@
 		</event>
 	</choice>
 
-	<choice req="ACH_FM_BOSS_CLAN1" lvl="1" max_group="1" hidden="true" blue="false">
+	<choice req="ach_fm_boss_clan" lvl="1" max_group="1" hidden="true" blue="false">
 		<text>You already defeated the Twisted Clansman.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ACH_FM_BOSS_DUSK1" lvl="1" max_group="2" hidden="true" blue="false">
+	<choice req="ach_fm_boss_dusk" lvl="1" max_group="2" hidden="true" blue="false">
 		<text>You already defeated the Twisted Duskbringer.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ACH_FM_BOSS_ENGI1" lvl="1" max_group="3" hidden="true" blue="false">
+	<choice req="ach_fm_boss_engi" lvl="1" max_group="3" hidden="true" blue="false">
 		<text>You already defeated the Twisted Engi.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>

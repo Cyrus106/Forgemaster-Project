@@ -76,7 +76,7 @@
       <noDanger>false</noDanger>
     </mod-append:eventButton>
 	</mod:findName>
-	<event name="FMCORE_RESET_BUTTONS">
+	<event name="FMCORE_RESET_BUTTONS" unused="true"><!--for debug-->
 		<clearEventButton name="ADDON_TRC"/>
 		<clearEventButton name="UI_STORAGE_CHECK_BUTTON"/>
 		<clearEventButton name="UI_TOGGLE_BUTTON"/>

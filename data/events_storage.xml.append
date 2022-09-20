@@ -6799,7 +6799,7 @@
       <text>(Aether Bounty Codex) Check the Codex for potential targets.</text>
       <event load="STORAGE_CHECK_TWISTED_ANCIENT_BOUNTY"/>
     </mod-append:choice>
-    <mod-append:choice req="ACH_FM_BOSS_DONE" lvl="1" max_group="3" hidden="true" blue="false">
+    <mod-append:choice req="loc_impossible_task_done" lvl="1" max_group="3" hidden="true" blue="false">
       <text>(C.U.R.A. Drive Hacker) You already obtained your reward. You wonder how exactly this benefit C.U.R.A.?</text>
       <event load="OPTION_INVALID"/>
     </mod-append:choice>
@@ -6825,8 +6825,8 @@
 
   <event name="FM_STORAGE_CHECK_AUG_MVBOSS_SPAWNER_REWARD">
     <text>Reality itself rends open from all the mayhem you have caused with the Drive Hacker.</text>
-    <hiddenAug>ACH_FM_BOSS_DONE</hiddenAug>
-
+    <variable name="loc_impossible_task_done" op="set" val="1"/>
+    
     <choice hidden="false">
       <text>Continue...</text>
       <event>
@@ -6860,15 +6860,15 @@
     </text>
 
 
-    <choice req="ACH_FM_BOSS_CRYSTAL1" lvl="1" max_group="1" hidden="true" blue="false">
+    <choice req="ach_fm_boss_crystal" lvl="1" max_group="1" hidden="true" blue="false">
       <text>You already defeated the Twisted Crystal.</text>
       <event load="OPTION_INVALID"/>
     </choice>
-    <choice req="ACH_FM_BOSS_TUCO1" lvl="1" max_group="2" hidden="true" blue="false">
+    <choice req="ach_fm_boss_tuco" lvl="1" max_group="2" hidden="true" blue="false">
       <text>You already defeated the Twisted Tuco.</text>
       <event load="OPTION_INVALID"/>
     </choice>
-    <choice req="ACH_FM_BOSS_LEECH1" lvl="1" max_group="3" hidden="true" blue="false">
+    <choice req="ach_fm_boss_leech" lvl="1" max_group="3" hidden="true" blue="false">
       <text>You already defeated the Twisted Leech.</text>
       <event load="OPTION_INVALID"/>
     </choice>
@@ -6904,15 +6904,15 @@
       </event>
     </choice>
 
-    <choice req="ACH_FM_BOSS_KES1" lvl="1" max_group="1" hidden="true" blue="false">
+    <choice req="ach_fm_boss_kestrel" lvl="1" max_group="1" hidden="true" blue="false">
       <text>You already defeated the Twisted Kestrel.</text>
       <event load="OPTION_INVALID"/>
     </choice>
-    <choice req="ACH_FM_BOSS_FED1" lvl="1" max_group="2" hidden="true" blue="false">
+    <choice req="ach_fm_boss_federation" lvl="1" max_group="2" hidden="true" blue="false">
       <text>You already defeated the Twisted Federation.</text>
       <event load="OPTION_INVALID"/>
     </choice>
-    <choice req="ACH_FM_BOSS_ORCHID1" lvl="1" max_group="3" hidden="true" blue="false">
+    <choice req="ach_fm_boss_orchid" lvl="1" max_group="3" hidden="true" blue="false">
       <text>You already defeated the Twisted Orchid.</text>
       <event load="OPTION_INVALID"/>
     </choice>
@@ -6948,15 +6948,15 @@
       </event>
     </choice>
 
-    <choice req="ACH_FM_BOSS_LANIUS1" lvl="1" max_group="1" hidden="true" blue="false">
+    <choice req="ach_fm_boss_lanius" lvl="1" max_group="1" hidden="true" blue="false">
       <text>You already defeated the Twisted Lanius.</text>
       <event load="OPTION_INVALID"/>
     </choice>
-    <choice req="ACH_FM_BOSS_SHELL1" lvl="1" max_group="2" hidden="true" blue="false">
+    <choice req="ach_fm_boss_shell" lvl="1" max_group="2" hidden="true" blue="false">
       <text>You already defeated the Twisted Shell.</text>
       <event load="OPTION_INVALID"/>
     </choice>
-    <choice req="ACH_FM_BOSS_ENGINEER1" lvl="1" max_group="3" hidden="true" blue="false">
+    <choice req="ach_fm_boss_engineer" lvl="1" max_group="3" hidden="true" blue="false">
       <text>You already defeated the Twisted Engineer.</text>
       <event load="OPTION_INVALID"/>
     </choice>
@@ -7026,15 +7026,15 @@
       </event>
     </choice>
 
-    <choice req="ACH_FM_BOSS_SLUG1" lvl="1" max_group="1" hidden="true" blue="false">
+    <choice req="ach_fm_boss_slug" lvl="1" max_group="1" hidden="true" blue="false">
       <text>You already defeated the Twisted Slug.</text>
       <event load="OPTION_INVALID"/>
     </choice>
-    <choice req="ACH_FM_BOSS_STEALTH1" lvl="1" max_group="2" hidden="true" blue="false">
+    <choice req="ach_fm_boss_stealth" lvl="1" max_group="2" hidden="true" blue="false">
       <text>You already defeated the Twisted Stealth.</text>
       <event load="OPTION_INVALID"/>
     </choice>
-    <choice req="ACH_FM_BOSS_ZOLTAN1" lvl="1" max_group="3" hidden="true" blue="false">
+    <choice req="ach_fm_boss_zoltan" lvl="1" max_group="3" hidden="true" blue="false">
       <text>You already defeated the Twisted Zoltan.</text>
       <event load="OPTION_INVALID"/>
     </choice>
@@ -7070,15 +7070,15 @@
       </event>
     </choice>
 
-    <choice req="ACH_FM_BOSS_MONK1" lvl="1" max_group="1" hidden="true" blue="false">
+    <choice req="ach_fm_boss_monk" lvl="1" max_group="1" hidden="true" blue="false">
       <text>You already defeated the Twisted Monk.</text>
       <event load="OPTION_INVALID"/>
     </choice>
-    <choice req="ACH_FM_BOSS_R1" lvl="1" max_group="2" hidden="true" blue="false">
+    <choice req="ach_fm_boss_rock" lvl="1" max_group="2" hidden="true" blue="false">
       <text>You already defeated the Twisted Rockman.</text>
       <event load="OPTION_INVALID"/>
     </choice>
-    <choice req="ACH_FM_BOSS_LOSTSUN1" lvl="1" max_group="3" hidden="true" blue="false">
+    <choice req="ach_fm_boss_lostsun" lvl="1" max_group="3" hidden="true" blue="false">
       <text>You already defeated the Twisted Lost Sun.</text>
       <event load="OPTION_INVALID"/>
     </choice>
@@ -7114,15 +7114,15 @@
       </event>
     </choice>
 
-    <choice req="ACH_FM_BOSS_FREE1" lvl="1" max_group="1" hidden="true" blue="false">
+    <choice req="ach_fm_boss_freemantis" lvl="1" max_group="1" hidden="true" blue="false">
       <text>You already defeated the Twisted Free Mantis.</text>
       <event load="OPTION_INVALID"/>
     </choice>
-    <choice req="ACH_FM_BOSS_SEPA1" lvl="1" max_group="2" hidden="true" blue="false">
+    <choice req="ach_fm_boss_separatist" lvl="1" max_group="2" hidden="true" blue="false">
       <text>You already defeated the Twisted Separatist.</text>
       <event load="OPTION_INVALID"/>
     </choice>
-    <choice req="ACH_FM_BOSS_MANTIS1" lvl="1" max_group="3" hidden="true" blue="false">
+    <choice req="ach_fm_boss_mantis" lvl="1" max_group="3" hidden="true" blue="false">
       <text>You already defeated the Twisted Mantis.</text>
       <event load="OPTION_INVALID"/>
     </choice>
@@ -7159,15 +7159,15 @@
     </choice>
 
 
-    <choice req="ACH_FM_BOSS_CLAN1" lvl="1" max_group="1" hidden="true" blue="false">
+    <choice req="ach_fm_boss_clan" lvl="1" max_group="1" hidden="true" blue="false">
       <text>You already defeated the Twisted Clansman.</text>
       <event load="OPTION_INVALID"/>
     </choice>
-    <choice req="ACH_FM_BOSS_DUSK1" lvl="1" max_group="2" hidden="true" blue="false">
+    <choice req="ach_fm_boss_dusk" lvl="1" max_group="2" hidden="true" blue="false">
       <text>You already defeated the Twisted Duskbringer.</text>
       <event load="OPTION_INVALID"/>
     </choice>
-    <choice req="ACH_FM_BOSS_ENGI1" lvl="1" max_group="3" hidden="true" blue="false">
+    <choice req="ach_fm_boss_engi" lvl="1" max_group="3" hidden="true" blue="false">
       <text>You already defeated the Twisted Engi.</text>
       <event load="OPTION_INVALID"/>
     </choice>
@@ -8967,43 +8967,43 @@
 
 <FTL> <!-- CREW LABS PLATED -->
   <!-- CREW LABS PLATED -->
-
-
+  
+  
   <mod:findName type = "event" name = "STORAGE_CHECK_LAB_ROCK">
-    <mod-append:choice req="LAB_PLATED_INSTALLED_REGEN" lvl="1" max_group="601" blue="false" hidden="true">
+    <mod-append:choice req="LAB_PLATED_REGEN" lvl="1" max_group="601" blue="false" hidden="true">
       <text>Sec [Plate]: Electroplating Medigel. [An upgrade is already installed]
         [Plated heal twice as fast and heal slowly on their own at (1.2)hp/s, but lose 30% max health and 10% movespeed.]
       </text>
       <event load="OPTION_INVALID"/>
     </mod-append:choice>
-    <mod-append:choice req="LAB_PLATED_INSTALLED_BIG" lvl="1" max_group="602" blue="false" hidden="true">
+    <mod-append:choice req="LAB_PLATED_BIG" lvl="1" max_group="602" blue="false" hidden="true">
       <text>Sec [Plate]: Heavy Armor. [An upgrade is already installed]
         [Plated gain double damage reduction and take reduced damage from weapons, but lose 50% max health and 10% movespeed.]
       </text>
       <event load="OPTION_INVALID"/>
     </mod-append:choice>
-    <mod-append:choice req="LAB_PLATED_INSTALLED_AIR" lvl="1" max_group="603" blue="false" hidden="true">
+    <mod-append:choice req="LAB_PLATED_AIR" lvl="1" max_group="603" blue="false" hidden="true">
       <text>Sec [Plate]: Oxygen Tanks. [An upgrade is already installed]
         [Plated gain suffocation immunity, but only have 30% fire resistance and lose 10% movespeed.]
       </text>
       <event load="OPTION_INVALID"/>
 
     </mod-append:choice>
-    <mod-append:choice req="LAB_PLATED_INSTALLED_REGEN" lvl="0" max_group="601" blue="false" hidden="true">
+    <mod-append:choice req="LAB_PLATED_REGEN" lvl="0" max_group="601" blue="false" hidden="true">
       <text>Sec [Plate]: Electroplating Medigel.  [Cost: 75~, 2|]</text>
       <event load="STORAGE_CHECK_LAB_PLATED_REGEN"/>
 
     </mod-append:choice>
 
 
-    <mod-append:choice req="LAB_PLATED_INSTALLED_BIG" lvl="0" max_group="602" blue="false" hidden="true">
+    <mod-append:choice req="LAB_PLATED_BIG" lvl="0" max_group="602" blue="false" hidden="true">
       <text>Sec [Plate]: Heavy Armor.  [Cost: 75~, 2|]</text>
       <event load="STORAGE_CHECK_LAB_PLATED_BIG"/>
 
     </mod-append:choice>
 
 
-    <mod-append:choice req="LAB_PLATED_INSTALLED_AIR" lvl="0" max_group="603" blue="false" hidden="true">
+    <mod-append:choice req="LAB_PLATED_AIR" lvl="0" max_group="603" blue="false" hidden="true">
       <text>Sec [Plate]: Oxygen Tanks. [Cost: 75~, 2|]</text>
       <event load="STORAGE_CHECK_LAB_PLATED_AIR"/>
 
@@ -9593,21 +9593,26 @@
 </FTL>
 
 <FTL> <!-- Technopath Ancalagon-->
-  <mod:findName type = "event" name = "STORAGE_CHECK_CREW_TECHNO_TRANSFORM">
-    <mod-append:choice req="LIST_ANCALAGON_DRONES" max_group="603" blue="false" hidden="true">
-      <text>It appears your Technopaths cannot replicate a key component of Ancalagon tech.</text>
-      <event load="OPTION_INVALID"/>
-    </mod-append:choice>
-    <mod-append:choice req="LIST_ANCALAGON_DRONES" max_group="604" blue="false" hidden="true">
-      <text>It appears your Technopaths cannot replicate a key component of Ancalagon tech.</text>
-      <event load="OPTION_INVALID"/>
-    </mod-append:choice>
+  <mod:findName type="event" name="STORAGE_CHECK_MORPH_TRANSFORM">
+    <mod:findLike type="choice">
+      <mod:selctor req="techno"/>
+      <mod:findLike type="event">
+        <mod-append:choice req="LIST_ANCALAGON_DRONES" blue="false" hidden="true">
+          <text>It appears your Technopaths cannot replicate a key component of Ancalagon tech.</text>
+          <event load="OPTION_INVALID"/>
+        </mod-append:choice>
+        <mod-append:choice req="LIST_ANCALAGON_DRONES" blue="false" hidden="true">
+          <text>It appears your Technopaths cannot replicate a key component of Ancalagon tech.</text>
+          <event load="OPTION_INVALID"/>
+        </mod-append:choice>
 
 
-    <mod:findWithChildLike type="choice" child-type="text">
-      <mod:selector>Nevermind.</mod:selector>
-      <mod:setAttributes max_group="620" req="pilot" lvl="1" blue="false"/>
-    </mod:findWithChildLike>
+        <mod:findWithChildLike type="choice" child-type="text">
+          <mod:selector>Nevermind.</mod:selector>
+          <mod:setAttributes max_group="5" req="pilot" lvl="1" blue="false"/>
+        </mod:findWithChildLike>
+      </mod:findLike>
+    </mod:findLike>
   </mod:findName>
 
 

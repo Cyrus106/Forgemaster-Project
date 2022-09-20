@@ -5727,32 +5727,6 @@ try this later
 
 <FTL><!--Hyperspace beta additions-->
 
-	<animSheet name="temporal_speed" w="175" h="35" fw="35" fh="35">effects/room_temporal_speed.png</animSheet>
-
-	<anim name="room_temporal_speed">
-		<sheet>temporal_speed</sheet>
-		<desc length="5" x="0" y="0"/>
-		<time>0.2</time>
-	</anim>
-
-	<animSheet name="temporal_slow" w="175" h="35" fw="35" fh="35">effects/room_temporal_slow.png</animSheet>
-
-	<anim name="room_temporal_slow">
-		<sheet>temporal_slow</sheet>
-		<desc length="5" x="0" y="0"/>
-		<time>0.75</time>
-	</anim>
-
-	<animSheet name="ghost" w="315" h="455" fw="35" fh="35">people/ghost_base.png</animSheet>
-
-
-	<anim name="ghost_clone">
-		<sheet>ghost</sheet>
-		<desc length="6" x="0" y="2"/>
-		<time>0.75</time>
-	</anim>
-
-
 	<animSheet name="fm_laser_burst_3" w="5208" h="64" fw="84" fh="64">weapon_laser/fm_laser_burst_3.png</animSheet>
 	<weaponAnim name="fm_laser_burst_3">
 		<sheet>fm_laser_burst_3</sheet>
@@ -5762,7 +5736,7 @@ try this later
 		<firePoint  x="60" y="1"/>
 		<mountPoint x="35" y="45"/>
 	</weaponAnim>
-
+	
 	<animSheet name="fm_meatman" w="315" h="455" fw="35" fh="35">people/fm_meatman_base.png</animSheet>
 	<anim name="fm_meatman_clone">
 		<sheet>fm_meatman</sheet>
@@ -5883,136 +5857,7 @@ try this later
 		<sheet>fm_meatman</sheet>
 		<desc length="1" x="0" y="0"/>
 		<time>1</time>
-	</anim>
-
-	<anim name="ghost_death_right">
-		<sheet>ghost</sheet>
-		<desc length="5" x="3" y="0"/>
-		<time>0.75</time>
-	</anim>
-
-	<anim name="ghost_death_left">
-		<sheet>ghost</sheet>
-		<desc length="5" x="0" y="2"/>
-		<time>0.75</time>
-	</anim>
-
-	<anim name="ghost_walk_down">
-		<sheet>ghost</sheet>
-		<desc length="4" x="0" y="12"/>
-		<time>1.0</time>
-	</anim>
-
-	<anim name="ghost_walk_right">
-		<sheet>ghost</sheet>
-		<desc length="4" x="4" y="12"/>
-		<time>1.0</time>
-	</anim>
-
-	<anim name="ghost_walk_up">
-		<sheet>ghost</sheet>
-		<desc length="4" x="0" y="11"/>
-		<time>1.0</time>
-	</anim>
-
-	<anim name="ghost_walk_left">
-		<sheet>ghost</sheet>
-		<desc length="4" x="4" y="11"/>
-		<time>1.0</time>
-	</anim>
-
-	<anim name="ghost_shoot_down">
-		<sheet>ghost</sheet>
-		<desc length="3" x="0" y="10"/>
-		<time>1.0</time>
-	</anim>
-
-	<anim name="ghost_shoot_right">
-		<sheet>ghost</sheet>
-		<desc length="3" x="3" y="10"/>
-		<time>1.0</time>
-	</anim>
-
-	<anim name="ghost_shoot_up">
-		<sheet>ghost</sheet>
-		<desc length="3" x="6" y="10"/>
-		<time>1.0</time>
-	</anim>
-
-	<anim name="ghost_shoot_left">
-		<sheet>ghost</sheet>
-		<desc length="3" x="0" y="1"/>
-		<time>1.0</time>
-	</anim>
-
-	<anim name="ghost_fire_down">
-		<sheet>ghost</sheet>
-		<desc length="4" x="0" y="9"/>
-		<time>1.0</time>
-	</anim>
-
-	<anim name="ghost_fire_right">
-		<sheet>ghost</sheet>
-		<desc length="4" x="4" y="9"/>
-		<time>1.0</time>
-	</anim>
-
-	<anim name="ghost_fire_up">
-		<sheet>ghost</sheet>
-		<desc length="4" x="0" y="8"/>
-		<time>1.0</time>
-	</anim>
-
-	<anim name="ghost_fire_left">
-		<sheet>ghost</sheet>
-		<desc length="4" x="4" y="8"/>
-		<time>1.0</time>
-	</anim>
-
-	<anim name="ghost_repair">
-		<sheet>ghost</sheet>
-		<desc length="9" x="0" y="7"/>
-		<time>1.0</time>
-	</anim>
-
-	<anim name="ghost_punch_up">
-		<sheet>ghost</sheet>
-		<desc length="6" x="3" y="1"/>
-		<time>1.0</time>
-	</anim>
-
-	<anim name="ghost_punch_down">
-		<sheet>ghost</sheet>
-		<desc length="6" x="0" y="6"/>
-		<time>1.0</time>
-	</anim>
-
-	<anim name="ghost_teleport">
-		<sheet>ghost</sheet>
-		<desc length="9" x="0" y="3"/>
-		<time>0.5</time>
-	</anim>
-
-	<anim name="ghost_type_right">
-		<sheet>ghost</sheet>
-		<desc length="4" x="0" y="5"/>
-		<time>0.75</time>
-	</anim>
-	<anim name="ghost_type_left">
-		<sheet>ghost</sheet>
-		<desc length="4" x="4" y="5"/>
-		<time>0.75</time>
-	</anim>
-	<anim name="ghost_type_up">
-		<sheet>ghost</sheet>
-		<desc length="4" x="0" y="4"/>
-		<time>0.75</time>
-	</anim>
-	<anim name="ghost_type_down">
-		<sheet>ghost</sheet>
-		<desc length="4" x="4" y="4"/>
-		<time>0.75</time>
-	</anim>
+	</anim>	
 </FTL>
 
 <FTL> <!--Eldritch horrors content-->
