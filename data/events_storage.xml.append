@@ -2427,7 +2427,7 @@
           <item type="missiles" min="-10" max="-10"/>
           <item type="drones" min="-10" max="-10"/>
         </item_modify>
-        <removeItem>NANOBOT_DEFENSE_SYSTEM"</removeItem>
+        <removeItem>NANOBOT_DEFENSE_SYSTEM</removeItem>
         <removeItem>BEAM_GUILLOTINE_PLAYER</removeItem>
         <choice>
           <text>Continue...</text>
@@ -2453,7 +2453,7 @@
           <item type="missiles" min="-10" max="-10"/>
           <item type="drones" min="-10" max="-10"/>
         </item_modify>
-        <removeItem>LOCKED_NANOBOT_DEFENSE_SYSTEM"</removeItem>
+        <removeItem>LOCKED_NANOBOT_DEFENSE_SYSTEM</removeItem>
         <removeItem>BEAM_GUILLOTINE_PLAYER</removeItem>
         <choice>
           <text>Continue...</text>
@@ -2505,7 +2505,7 @@
           <item type="missiles" min="-10" max="-10"/>
           <item type="drones" min="-10" max="-10"/>
         </item_modify>
-        <removeItem>NANOBOT_DEFENSE_SYSTEM"</removeItem>
+        <removeItem>NANOBOT_DEFENSE_SYSTEM</removeItem>
         <removeItem>BEAM_GUILLOTINE</removeItem>
         <choice>
           <text>Continue...</text>
@@ -2531,7 +2531,7 @@
           <item type="missiles" min="-10" max="-10"/>
           <item type="drones" min="-10" max="-10"/>
         </item_modify>
-        <removeItem>LOCKED_NANOBOT_DEFENSE_SYSTEM"</removeItem>
+        <removeItem>LOCKED_NANOBOT_DEFENSE_SYSTEM</removeItem>
         <removeItem>BEAM_GUILLOTINE</removeItem>
         <choice>
           <text>Continue...</text>
