@@ -20,30 +20,22 @@
 <event name="FM_ATLAS_EQUIPMENT_LOAD"> <!--  Recursion call -->
 	<event/>
 </event>
-<event name = "FM_ATLAS_EQUIPMENT">
+<event name="FM_ATLAS_EQUIPMENT">
 	<text>Would you like to contact the Forgemaster?</text>
 
 
-	<choice hidden="true" req="MARKER_KILLED_FORGEMASTER_BEACON" lvl="1" max_group="600">
+	<choice hidden="true" req="fm_forgemaster_dead" lvl="1" max_group="600">
 		<text>Out of habit you attempt to reach out to the Forgemaster, but then you remember that you killed him. You monster.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 
-	<choice hidden="true" req="FORGEMASTER_PHONE_CALL_CONFIRM"  max_group="1" blue="false">
-		<text>You've already called the Forgemaster via one of the three methods.</text>
-		<event load="OPTION_INVALID"/>
-	</choice>
-	<choice hidden="true" req="FORGEMASTER_PHONE_CALL_CONFIRM"  max_group="2" blue="false">
-		<text>You've already called the Forgemaster via one of the three methods.</text>
-		<event load="OPTION_INVALID"/>
-	</choice>
-	<choice hidden="true" req="FORGEMASTER_PHONE_CALL_CONFIRM"  max_group="3" blue="false">
+	<choice hidden="true" req="fm_forgemaster_called"  max_group="1" blue="false">
 		<text>You've already called the Forgemaster via one of the three methods.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 
 
-	<choice hidden="true" req="FORGEMASTER_PHONE"  max_group="1" blue="false">
+	<choice hidden="true" req="FM_FORGEMASTER_UNCALLABLE" lvl="0" max_lvl="0" max_group="1" blue="false">
 		<text>Use fuel to boost the power of your Transmitter to contact the Forgemaster.[Cost: 5{]</text>
 		<event>
 			<text>You burn your excess fuel reserves, funneling the energy into your transmitter and broadcasting the Forgemaster's subspace identifier. If Alastair is anywhere in the region, he'll have heard your call.</text>
@@ -54,7 +46,7 @@
 				<text>Continue...</text>
 				<event>
 					<text>Transmitter Signal Sent...</text>
-					<hiddenAug>FORGEMASTER_PHONE_CALL_CONFIRM</hiddenAug>
+					<variable name="fm_forgemaster_called" op="set" val="1"/>
 					<choice hidden="true">
 						<text>Continue...</text> <!-- PHONE CALL TEXT LIST HERE? -->
 						<!--<event load="FM_CALL_QUESTION_FORGEMASTER_LOAD"/>-->
@@ -67,7 +59,7 @@
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" req="FORGEMASTER_PHONE"  max_group="2" blue="false">
+	<choice hidden="true" req="FM_FORGEMASTER_UNCALLABLE" lvl="0" max_lvl="0" max_group="2" blue="false">
 		<text>Whip up a long-range ballistic message cylinder to contact the Forgemaster.[Cost: 4}]</text>
 		<event>
 			<text>You pull together some excess explosives, constructing a hyperspeed-capable ballistic vessel containing a request to meet up with Alastair. You wire its targeting systems to his subspace identifier and give the order to launch it. If Alastair's anywhere it can find, he'll be ready to meet up.</text>
@@ -78,7 +70,7 @@
 				<text>Continue...</text>
 				<event>
 					<text>Transmitter Signal Sent...</text>
-					<hiddenAug>FORGEMASTER_PHONE_CALL_CONFIRM</hiddenAug>
+					<variable name="fm_forgemaster_called" op="set" val="1"/>
 					<choice hidden="true">
 						<text>Continue...</text> <!-- PHONE CALL TEXT LIST HERE? -->
 						<!--<event load="FM_CALL_QUESTION_FORGEMASTER_LOAD"/>-->
@@ -91,7 +83,7 @@
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" req="FORGEMASTER_PHONE"  max_group="3" blue="false">
+	<choice hidden="true" req="FM_FORGEMASTER_UNCALLABLE" lvl="0" max_lvl="0" max_group="3" blue="false">
 		<text>Send a hyperspeed messenger drone to contact the Forgemaster.[Cost: 3|]</text>
 		<event>
 			<text>You use some drone components and prepare a robust long-range drone equipped for hyperspeed travel. You load in a request for Alastair to meet you in the next sector and set the drone's comms to find his subspace identifier. Hopefully it makes it to him - if he gets the message, he'll be ready.</text>
@@ -102,7 +94,7 @@
 				<text>Continue...</text>
 				<event>
 					<text>Transmitter Signal Sent...</text>
-					<hiddenAug>FORGEMASTER_PHONE_CALL_CONFIRM</hiddenAug>
+					<variable name="fm_forgemaster_called" op="set" val="1"/>
 					<choice hidden="true">
 						<text>Continue...</text> <!-- PHONE CALL TEXT LIST HERE? -->
 						<!--<event load="FM_CALL_QUESTION_FORGEMASTER_LOAD"/>-->

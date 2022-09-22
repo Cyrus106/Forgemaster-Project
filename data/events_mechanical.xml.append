@@ -1757,7 +1757,7 @@ Only respects stronger computers
 		<loadEvent>FM_CALL_END</loadEvent>
 	</event>
 	<event name="FM_CALL_END">
-		<removeItem>HIDDEN FORGEMASTER_PHONE_CALL_CONFIRM</removeItem>
+		<variable name="fm_forgemaster_called" op="set" val="0"/>
 	</event>
 </FTL>
 

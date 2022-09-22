@@ -20,18 +20,22 @@
 		<variable name="fm_called_forgemaster" op="set" val="0"/>
 		<req name="FM_CAN_CALL_FORGEMASTER" type="all">
 			<req>
-				<name>FORGEMASTER_PHONE</name>
-				<name>MARKER_KILLED_FORGEMASTER_BEACON</name>
+				<name>fm_forgemaster_phone</name>
+				<name>fm_forgemaster_dead</name>
 			</req>
 			<req lvl="0" max_lvl="0">
 				<name>fm_called_forgemaster</name>
 			</req>
 		</req>
+		<req name="FM_FORGEMASTER_UNCALLABLE">
+			<name>fm_forgemaster_dead</name>
+			<name>fm_forgemaster_called</name>
+		</req>
 	</events>
 	<mod:findLike type="events">
 		<mod:findName type="req" name="FMCORE_LIST_JUMPSPACE_EQUIPMENT">
-			<mod-append:name>FORGEMASTER_PHONE</mod-append:name>
-			<mod-append:name>MARKER_KILLED_FORGEMASTER_BEACON</mod-append:name>
+			<mod-append:name>fm_forgemaster_phone</mod-append:name>
+			<mod-append:name>fm_forgemaster_dead</mod-append:name>
 		</mod:findName>
 	</mod:findLike>
 </FTL>
@@ -2842,14 +2846,6 @@
 			<checkCargo/>
 		</event>
 
-		<event name="STORAGE_CHECK_CREATE_FM_CHAINGUN_ION1" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_FM_CHAINGUN_ION2" recursive="true">
-			<checkCargo/>
-		</event>
-
 
 
 
@@ -2911,20 +2907,7 @@
 			<checkCargo/>
 		</event>
 
-
-
-		<event name="STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY_MEGA" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY_PLUS" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY_PLUS_2" recursive="true">
-			<checkCargo/>
-		</event>
-
+		
 		<event name="STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY" recursive="true">
 			<checkCargo/>
 		</event>
@@ -2933,10 +2916,6 @@
 			<loadEvent>STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE</loadEvent>
 		</event>
 		<event name="STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE1" recursive="true">
 			<checkCargo/>
 		</event>
 
@@ -2971,14 +2950,6 @@
 		</event>
 
 		<event name="STORAGE_CHECK_CREATE_FM_BEAM_BASILISK" recursive="true">
-			<checkCargo/>
-		</event>
-
-
-		<event name="STORAGE_CHECK_CREATE_2_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_DRONES_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->
-			<loadEvent>STORAGE_CHECK_CREATE_2</loadEvent>
-		</event>
-		<event name="STORAGE_CHECK_CREATE_2" recursive="true">
 			<checkCargo/>
 		</event>
 
@@ -3973,13 +3944,7 @@
 		</event>
 		<event name="FM_LORE_ABSOLUTION_READ" recursive="true">
 
-		</event>
-
-		<req name="FORGEMASTER_BEACON_CHECK_MEET" type="all">
-			<req max_lvl="0">
-				<name>FORGEMASTER_HAS_MET</name>
-			</req>
-		</req>
+		</event>		
 
 		<event name="FORGEMASTER_PHONE_EVENT_LOAD">
 			<loadEvent ignoreUnique="true">FORGEMASTER_PHONE_EVENT</loadEvent>
@@ -3991,60 +3956,6 @@
 		<event name="FORGEMASTER_SECOND_PROMPT" recursive="true">
 
 		</event>
-
-		<event name="FM_QUEST_GUNBOM_INTRO">
-			<hiddenAug>MARKER_QUEST_GUNBOM_INTRO_TAKEN</hiddenAug>
-		</event>
-
-		<event name="DEBTCOLLECT_DESTROY">
-			<hiddenAug>MARKER_FM_QUEST_GUNBOM_COMPLETED_RESCUE</hiddenAug>
-		</event>
-
-		<event name="DEBTCOLLECT_KILLED">
-			<hiddenAug>MARKER_FM_QUEST_GUNBOM_COMPLETED_RESCUE</hiddenAug>
-		</event>
-
-		<event name="FORGEMASTER_DESTRUCTION">
-			<removeItem>HIDDEN FORGEMASTER_PHONE</removeItem>
-
-		</event>
-
-		<event name="FORGEMASTER_DESTRUCTION_CREW">
-			<removeItem>HIDDEN FORGEMASTER_PHONE</removeItem>
-
-		</event>
-
-		<event name="FORGEMASTER_DESTRUCTION_AUG">
-			<hiddenAug>MARKER_OBTAINED_FORGE</hiddenAug>
-			<hiddenAug>MARKER_KILLED_FORGEMASTER_BEACON</hiddenAug>
-			<removeItem>HIDDEN FORGEMASTER_PHONE_CALL_CONFIRM</removeItem>
-			<loadEvent>STORAGE_CHECK</loadEvent>
-		</event>
-
-
-		<!--
-		<event name="FM2_BEAM_GUILLOTINE_CHAIN_INTERNAL_NPC_ADDON_CHECK"> <!- If you are using the internalize addon, this removes the internalize Murder bots upgrade->
-		<removeItem>HIDDEN IZD_NANOBOT_DEFENSE_SYSTEM</removeItem>
-		<removeItem>HIDDEN INTERNALIZED_AUG_COUNTER</removeItem>
-
-		<loadEvent>FM2_FORGE_WEAPON_LOAD</loadEvent></event>-->
-
-
-		<!--
-		<event name="FM2_BEAM_EXPLOSION_INTERNAL_NPC_ADDON_CHECK"> <!- If you are using the internalize addon, this removes the internalize Murder bots upgrade->
-		<hiddenAug>VALEFOR_EASTER_EGG</hiddenAug>
-
-		<loadEvent>FM2_FORGE_WEAPON_LOAD</loadEvent></event>-->
-
-
-		<req name="FM_PHONE_STATE" type="sum"> <!--0 is no phone and Forgemaster is alive, 1 is Phone in inventory, 2 is Phone in inventory, forgemaster is dead-->
-			<req const="1">
-				<name>FORGEMASTER_PHONE</name>
-			</req>
-			<req max_lvl="0" const="1">
-				<name>MARKER_KILLED_FORGEMASTER_BEACON</name>
-			</req>
-		</req>
 
 
 		<req name="FM_LAST_STRAW" type="sum"> <!--0 is Forgemaster is fine and neutral. 1 is Forgemaster will turn on you.-->
@@ -4144,10 +4055,6 @@
 	</events>
 	
 	<events> <!-- Forgemaster GET phone -->
-		<event name="FORGEMASTER_FIRST_MEETING_PHONE">
-			<hiddenAug>FORGEMASTER_PHONE</hiddenAug>
-			<loadEvent>FORGEMASTER_FIRST_MEETING</loadEvent>
-		</event>
 		
 		<event name="FM_ATLAS_EQUIPMENT_LOAD">
 			<loadEvent>FM_ATLAS_EQUIPMENT</loadEvent>
@@ -4160,9 +4067,9 @@
 	
 	<events> <!-- new FM spawning reqs and variables-->
 		<req name="FMSPAWN_CALL" type="all">
-			<name>FORGEMASTER_PHONE_CALL_CONFIRM</name>
+			<name>fm_forgemaster_called</name>
 			<req type="any" lvl="0" max_lvl="0">
-				<name>MARKER_KILLED_FORGEMASTER_BEACON</name>
+				<name>fm_forgemaster_dead</name>
 				<name>forgemaster_spawntriggered</name>
 				<name>SEC SECRET_SYLVAN</name>
 				<name>SEC SECRET_TWISTED</name>
@@ -4180,7 +4087,8 @@
 		</req>
 		
 		<req name="FMSPAWN_FIRSTMEET" type="max" max_lvl="0">
-			<name>FORGEMASTER_HAS_MET</name>
+			<name>fm_forgemaster_phone</name>
+			<name>fm_forgemaster_dead</name>
 			<name>forgemaster_spawntriggered</name>
 			<name>SEC SECRET_SYLVAN</name>
 			<name>SEC SECRET_TWISTED</name>
@@ -4201,79 +4109,147 @@
 		<variable name="flak_calc" op="set" val="0"/><!--Persistant Flak Surge Calculation Variable-->
 		<variable name="forgemaster_spawntriggered" op="set" val="0"/> <!--counter for how often the FMspawner was activated, if not 0 the spawner will not work-->
 		<variable name="rep_forgemaster" op="set" val="0"/> <!--forgemaster Notoriety-->
-		<variabme name="fm_obtainedtwin" op="set" val="0"/> <!--did you get a twin from gunbom?-->
-		<variable name="twisted_blessing_counter" op = "set" val = "0"/> <!--"blessing" counter for twisted monk-->
-		<variable name="flak_resource_counter" op = "set" val = "0"/><!--Base flak resource counter for the Flak Forge-->
-		<variable name="flak_special_resource_counter" op = "set" val = "0"/><!--Special flak resource counter for the Flak Forge-->
-		<variable name="twisted_rock_scrap_counter" op = "set" val = "0"/>
-
+		<variable name="fm_obtainedtwin" op="set" val="0"/> <!--did you get a twin from gunbom?-->
+		<variable name="fm_gunbomquest_taken" op="set" val="0"/> <!--accpetd gunbom quest-->
+		<variable name="fm_gunbomquest_rescued" op="set" val="0"/> <!--finished gunbom quest, helped winchester-->
+		<variable name="twisted_blessing_counter" op="set" val="0"/> <!--"blessing" counter for twisted monk-->
+		<variable name="flak_resource_counter" op="set" val="0"/><!--Base flak resource counter for the Flak Forge-->
+		<variable name="flak_special_resource_counter" op= "set" val="0"/><!--Special flak resource counter for the Flak Forge-->
+		<variable name="twisted_rock_scrap_counter" op="set" val="0"/>
+		<variable name="fm_forgemaster_phone" op="set" val="0"/>
+		<variable name="fm_forgemaster_dead" op="set" val="0"/>
+		<variable name="fm_forgemaster_called" op="set" val="0"/>
+		
 		<variable name="fm_invisible_ship" op="set" val="0"/><!--Variable that makes the ship literally disappear.-->
-
+		
+		<variable name="valefor_easter_egg" op="set" val="0"/><!--the funny valefor easter egg marker-->
+		<metaVariable name="FM_LORE_PHOTON" op="set" val="0"/>
+		<metaVariable name="FM_LORE_PHOTON2" op="set" val="0"/>
+		<metaVariable name="FM_LORE_ABSOLUTION" op="set" val="0"/>
+		<metaVariable name="FM_LORE_CERBERUS" op="set" val="0"/>
+		<metaVariable name="FM_LORE_ISHIMURA" op="set" val="0"/>
+		<metaVariable name="FM_LORE_TERRANOVA" op="set" val="0"/>
+		<metaVariable name="FM_LORE_EARSPOON" op="set" val="0"/>
+		<metaVariable name="FM_LORE_MENAULION" op="set" val="0"/>
+		<metaVariable name="FM_LORE_BRONZE" op="set" val="0"/>
+		<metaVariable name="FM_LORE_PROJECT7" op="set" val="0"/>
+		<metaVariable name="FM_LORE_PROJECT22" op="set" val="0"/>
+		<metaVariable name="FM_LORE_CHAINGUN_FIRE" op="set" val="0"/>
+		
 		<req name="CAN_INSTALL_FLAK_ARTILLERY" type="sum" lvl="50">
 			<name>flak_resource_counter</name>
 		</req>
 	</events>
 
-	<events> <!-- Forgemaster HARMONY ENDING SPACESTATION EVENT REQS -->
-
+	<events> <!-- Forgemaster HARMONY ENDING SPACESTATION EVENT REQS and vars-->
+		
+		<variable name="fm_fs_power_cutter" op="set" val="0"/>
+		<variable name="fm_fs_crowbar" op="set" val="0"/>
+		<variable name="marker_checked_plaza_door" op="set" val="0"/>
+		<variable name="marker_need_crowbar" op="set" val="0"/>
+		<variable name="fm_fs_grappling_hook" op="set" val="0"/>
+		<variable name="fm_fs_rope" op="set" val="0"/>
+		<variable name="fm_fs_keycard_1" op="set" val="0"/>
+		<variable name="fm_fs_blank_id" op="set" val="0"/>
+		<variable name="fm_fs_elevator_id" op="set" val="0"/>
+		<variable name="fm_fs_fuse" op="set" val="0"/>
+		<variable name="marker_rope_obtained" op="set" val="0"/>
+		<variable name="marker_opened_metal_door_plaza" op="set" val="0"/>
+		<variable name="marker_orchid_child_alive" op="set" val="0"/>
+		<variable name="marker_fm_fs_security_hub_clear" op="set" val="0"/>
+		<variable name="marker_terminal_powered" op="set" val="0"/>
+		<variable name="fm_fs_keycard_1_found" op="set" val="0"/>
+		<variable name="fm_fs_fire_grenade" op="set" val="0"/>
+		<variable name="marker_engi_in_infirmary" op="set" val="0"/>
+		<variable name="fm_fs_extinguisher" op="set" val="0"/>
+		<variable name="marker_fuse_inserted" op="set" val="0"/>
+		<variable name="marker_fm_fs_apartment_107a_all_clear" op="set" val="0"/>
+		<variable name="marker_115a_no_listen" op="set" val="0"/>
+		<variable name="marker_fm_fs_apartment_120a_all_clear" op="set" val="0"/>
+		<variable name="marker_129a_nobody_there_why" op="set" val="0"/>
+		<variable name="marker_orchid_child_assimilated" op="set" val="0"/>
+		<variable name="marker_need_pole" op="set" val="0"/>
+		<variable name="marker_case_fell" op="set" val="0"/>
+		<variable name="marker_case_obtained" op="set" val="0"/>
+		<variable name="marker_blank_id_taken" op="set" val="0"/>
+		<variable name="marker_rope_obtained" op="set" val="0"/>
+		<variable name="marker_extinguisher_obtained" op="set" val="0"/>
+		<variable name="marker_need_rope" op="set" val="0"/>
+		<variable name="marker_brig_no" op="set" val="0"/>
+		<variable name="marker_duct_tape" op="set" val="0"/>
+		<variable name="marker_fire_grenade_obtained" op="set" val="0"/>
+		<variable name="fm_fs_magnet_tool" op="set" val="0"/>
+		<variable name="fm_fs_duct_pole" op="set" val="0"/>
+		<variable name="fm_fs_keycard_2" op="set" val="0"/>
+		<variable name="fm_fs_keycard_5" op="set" val="0"/>
+		<variable name="fm_fs_special_coordinates" op="set" val="0"/>
+		<variable name="fm_fs_duct_tape" op="set" val="0"/>
+		<variable name="marker_infirmary_clear" op="set" val="0"/>
+		<variable name="marker_moved_barracks_crate" op="set" val="0"/>
+		<variable name="marker_dissonance_found" op="set" val="0"/>
+		<variable name="marker_weapon_room_bodies_cleared" op="set" val="0"/>
+		<variable name="fm_fs_harmony_dissonance_emitter" op="set" val="0"/>
+		<variable name="fm_fs_bromwell_memo" op="set" val="0"/>
+		<variable name="fm_fs_command_code" op="set" val="0"/>
+		<variable name="" op="set" val="0"/>
 		<req name="FM_FS_LIST_KILL_ENGI_INFIRMARY_MISSING" type="all">
-			<name>FM_FS_FIRE_GRENADE</name>
-			<name>MARKER_ENGI_IN_INFIRMARY</name>
+			<name>fm_fs_fire_grenade</name>
+			<name>marker_engi_in_infirmary</name>
 		</req>
 
 		<req name="FM_FS_LIST_KILL_ENGI_INFIRMARY" type="all">
-			<name>FM_FS_FIRE_GRENADE</name>
-			<name>FM_FS_EXTINGUISHER</name>
-			<name>MARKER_ENGI_IN_INFIRMARY</name>
+			<name>fm_fs_fire_grenade</name>
+			<name>fm_fs_extinguisher</name>
+			<name>marker_engi_in_infirmary</name>
 		</req>
 
 		<req name="FM_FS_LIST_POLE" type="all">
-			<name>FM_FS_DUCT_TAPE</name>
-			<name>MARKER_NEED_POLE</name>
+			<name>fm_fs_duct_tape</name>
+			<name>marker_need_pole</name>
 		</req>
 
 		<req name="FM_FS_LIST_POLE_FAIL" type="all">
-			<name>FM_FS_DUCT_POLE</name>
-			<name>MARKER_NEED_POLE</name>
-			<name>MARKER_CASE_FELL</name>
+			<name>fm_fs_duct_pole</name>
+			<name>marker_need_pole</name>
+			<name>marker_case_fell</name>
 		</req>
 
 		<req name="FM_FS_LIST_POLE_SUCCESS" type="all">
-			<name>FM_FS_DUCT_POLE</name>
-			<name>MARKER_NEED_POLE</name>
-			<name>MARKER_CASE_OBTAINED</name>
+			<name>fm_fs_duct_pole</name>
+			<name>marker_need_pole</name>
+			<name>marker_case_obtained</name>
 		</req>
 
 		<req name="FM_FS_LIST_ROPE_FAIL" type="all">
-			<name>FM_FS_GRAPPLING_HOOK</name>
-			<name>MARKER_ROPE_OBTAINED</name>
-			<name>MARKER_CASE_FELL</name>
+			<name>fm_fs_grappling_hook</name>
+			<name>marker_rope_obtained</name>
+			<name>marker_case_fell</name>
 		</req>
 
 		<req name="FM_FS_LIST_ROPE_SUCCESS" type="all">
-			<name>FM_FS_GRAPPLING_HOOK</name>
-			<name>MARKER_ROPE_OBTAINED</name>
-			<name>MARKER_CASE_OBTAINED</name>
+			<name>fm_fs_grappling_hook</name>
+			<name>marker_rope_obtained</name>
+			<name>marker_case_obtained</name>
 		</req>
 
 		<req name="FM_FS_LIST_MAGNET_FAIL" type="all">
-			<name>FM_FS_MAGNET_TOOL</name>
-			<name>MARKER_CASE_FELL</name>
+			<name>fm_fs_magnet_tool</name>
+			<name>marker_case_fell</name>
 		</req>
 
 		<req name="FM_FS_LIST_MAGNET_SUCCESS" type="all">
-			<name>FM_FS_MAGNET_TOOL</name>
-			<name>MARKER_CASE_OBTAINED</name>
+			<name>fm_fs_magnet_tool</name>
+			<name>marker_case_obtained</name>
 		</req>
 
 		<req name="FM_FS_LIST_COMMAND_DOOR" type="all">
-			<name>FM_FS_KEYCARD_5</name>
-			<name>FM_FS_COMMAND_CODE</name>
+			<name>fm_fs_keycard_5</name>
+			<name>fm_fs_command_code</name>
 		</req>
 
 		<req name="FM_FS_LIST_COORDINATE_AND_DISSONANCE" type="all">
-			<name>FM_FS_SPECIAL_COORDINATES</name>
-			<name>FM_FS_HARMONY_DISSONANCE_EMITTER</name>
+			<name>fm_fs_special_coordinates</name>
+			<name>fm_fs_harmony_dissonance_emitter</name>
 		</req>
 
 	</events>

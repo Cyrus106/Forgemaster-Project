@@ -20453,50 +20453,10 @@
 		<rarity>0</rarity>
 		<stackable>true</stackable>
 	</augBlueprint>
-
+	
 	<augBlueprint name="LOCKED_RAMMING_SPEED">
 		<title>Ramming Speed</title>
 		<desc>This ship is capable of ramming enemy ships, at great risk to its' hull integrity and engines.</desc>
-		<cost>10</cost>
-		<rarity>0</rarity>
-		<stackable>true</stackable>
-	</augBlueprint>
-
-	<augBlueprint name="FORGEMASTER_FIRST_MEET">
-		<title>Forgemaster first meeting Sector 2</title>
-		<desc>If This equals ONE, he will spawn (Sector 2 Spawn!). Otherwise, do not spawn him at a node!</desc>
-		<cost>10</cost>
-		<rarity>0</rarity>
-		<stackable>true</stackable>
-	</augBlueprint>
-
-	<augBlueprint name="FORGEMASTER_HAS_MET">
-		<title>Forgemaster WAS MET</title>
-		<desc>If you have this, he only spawns via phone</desc>
-		<cost>10</cost>
-		<rarity>0</rarity>
-		<stackable>true</stackable>
-	</augBlueprint>
-
-	<augBlueprint name="FORGEMASTER_PHONE">
-		<title>Forgemaster Phone</title>
-		<desc>Lets you summon forgemaster at the next sector</desc>
-		<cost>10</cost>
-		<rarity>0</rarity>
-		<stackable>true</stackable>
-	</augBlueprint>
-
-	<augBlueprint name="FORGEMASTER_PHONE_CALL_CONFIRM">
-		<title>Forgemaster Phone CALLED</title>
-		<desc>YOU HAVE CALLED THE FORGEMASTER</desc>
-		<cost>10</cost>
-		<rarity>0</rarity>
-		<stackable>true</stackable>
-	</augBlueprint>
-
-	<augBlueprint name="MARKER_KILLED_FORGEMASTER_BEACON">
-		<title>Forgemaster Is Dead</title>
-		<desc>You Monster</desc>
 		<cost>10</cost>
 		<rarity>0</rarity>
 		<stackable>true</stackable>
@@ -20509,7 +20469,7 @@
 		<rarity>0</rarity>
 		<stackable>true</stackable>
 	</augBlueprint>
-
+	
 	<augBlueprint name="FORGEMASTER_ION_ARMOR">
 		<title>ION ARMOR</title>
 		<desc>You Monster</desc>
@@ -20517,7 +20477,7 @@
 		<rarity>0</rarity>
 		<stackable>true</stackable>
 	</augBlueprint>
-
+	
 	<augBlueprint name="FM_SUPER_AUTO_COOLDOWN">
 		<title>ERROR</title>
 		<desc>Shouldn't see this.</desc>
@@ -20536,6 +20496,38 @@
 		<stackable>true</stackable>
 	</augBlueprint>
 
+	<augBlueprint name="ENERGIZED_ROOM_SHIELDS">
+		<title>Energized shields</title>
+		<desc>Shouldn't see this.</desc>
+		<cost>50</cost>
+		<bp>5</bp>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+	<augBlueprint name="ENERGIZED_ROOM_CLOAKING">
+		<title>Energized cloaking</title>
+		<desc>Shouldn't see this.</desc>
+		<cost>50</cost>
+		<bp>5</bp>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+	<augBlueprint name="ENERGIZED_ROOM_WEAPONS">
+		<title>Energized weapons</title>
+		<desc>Shouldn't see this.</desc>
+		<cost>50</cost>
+		<bp>5</bp>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+	<augBlueprint name="ENERGIZED_ROOM_MEDBAY">
+		<title>Energized medbay</title>
+		<desc>Shouldn't see this.</desc>
+		<cost>50</cost>
+		<bp>5</bp>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 	<augBlueprint name="FM_NANO_FORGE_ACCELERANT">
 		<title>Forgemaster Accelerant</title>
 		<desc>Gives you a 25% chance to resist all damage types, while also extinguishing flames and repairing breaches.</desc>
@@ -20881,7 +20873,7 @@
 		<rarity>0</rarity>
 		<stackable>false</stackable>
 	</augBlueprint>
-
+	
 	<augBlueprint name="LOCKED_SUPER_DEPRESSION">
 		<title>Motivation Succer</title>
 		<desc>Casts a depressive effect on the enemy crew, causing them to drain one more power than usual from their own systems.</desc>
@@ -21135,10 +21127,10 @@
 		<rarity>0</rarity>
 		<stackable>false</stackable>
 	</augBlueprint>
-
+	
 	<augBlueprint name="AUG_MAGATAMA">
 		<title>Magatama</title>
-		<desc>Effects: +49% crew heal speed, -5% damage taken for crew.</desc>
+		<desc>Effects: +40% crew heal speed, -5% damage taken for crew.</desc>
 		<cost>0</cost>
 		<rarity>0</rarity>
 		<stackable>false</stackable>

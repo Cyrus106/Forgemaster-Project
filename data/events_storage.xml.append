@@ -974,12 +974,12 @@
       <event load="OPTION_INVALID"/>
     </choice>
 
-    <choice req="FM_CHAINGUN_ION_FORGE_LIST_STORAGE" lvl="1" blue="false" hidden="true">
+    <choice req="FM_CHAINGUN_ION_FORGE_LIST" lvl="1" blue="false" hidden="true">
       <text>Replace the barrels of the Vulcan with the Charge Ion's energized coils to forge the 'Vesta' Gatling Ion.</text>
       <event load="STORAGE_CHECK_CREATE_FM_CHAINGUN_ION"/>
     </choice>
 
-    <choice req="FM_CHAINGUN_ION_FORGE_LIST_STORAGE" lvl="0" max_lvl="0" blue="false" hidden="true">
+    <choice req="FM_CHAINGUN_ION_FORGE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
       <text>You must have a Vulcan and Charge Ion weapon to forge this weapon.</text>
       <event load="OPTION_INVALID"/>
     </choice>
@@ -2155,7 +2155,7 @@
   <event name="STORAGE_CHECK_CREATE_FM_SHOTGUN_ENERGY">
     <checkCargo/>
     <text>Currently viewing the 'Exidia' Energy Diffuser.</text>
-    <choice hidden="false" req="FM_SHOTGUN_ENERGY_LIST_PLUS_LIST" blue="false">
+    <choice hidden="false" req="FM_SHOTGUN_ENERGY_LIST_PLUS" blue="false">
       <text>Craft the 'Exidia' Energy Diffuser+ using the Energy Charger+.</text>
       <event>
         <text>Proceed with crafting?</text>
@@ -2590,7 +2590,7 @@
         <weapon name="FM_BEAM_EXPLOSION_PLAYER"/>
         <removeItem>BOMB_1</removeItem>
         <removeItem>BEAM_2_PLAYER</removeItem>
-        <hiddenAug>VALEFOR_EASTER_EGG</hiddenAug>
+        <variable name="valefor_easter_egg" op="set" val="1"/>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
@@ -2621,7 +2621,7 @@
         <weapon name="FM_BEAM_EXPLOSION"/>
         <removeItem>BOMB_1</removeItem>
         <removeItem>BEAM_2</removeItem>
-        <hiddenAug>VALEFOR_EASTER_EGG</hiddenAug>
+        <variable name="valefor_easter_egg" op="set" val="1"/>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
