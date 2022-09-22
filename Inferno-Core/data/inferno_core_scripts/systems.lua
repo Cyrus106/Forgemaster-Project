@@ -167,7 +167,8 @@ mods.inferno.mindcallbacks.whileactive_events:append({
 function()
   --every tick, the timer increments by Hyperspace.FPS.SpeedFactor/16
   local increment=Hyperspace.FPS.SpeedFactor/16
-  local modifier=math.max(Hyperspace.ships.player:GetAugmentationValue("LONG_MIND"),1) --could just calculate this value upon activation to minimize memory usuage, if it's an issue
+  --local modifier=math.max(Hyperspace.ships.player:GetAugmentationValue("LONG_MIND"),1) --could just calculate this value upon activation to minimize memory usuage, if it's an issue
+  local modifier=2^Hyperspace.ships.player:GetAugmentationValue("LONG_MIND") --Negative values make the duration shorter, longer values make it longer.
   Hyperspace.ships.player.mindSystem.controlTimer.first=Hyperspace.ships.player.mindSystem.controlTimer.first+((1/modifier)-1)*increment
 end,
 })
@@ -175,7 +176,8 @@ end,
 mods.inferno.hackingcallbacks.whileactive_events:append({
 function()
     local increment=Hyperspace.FPS.SpeedFactor/16
-    local modifier=math.max(Hyperspace.ships.player:GetAugmentationValue("LONG_HACK"),1) --could just calculate this value upon activation to minimize memory usuage, if it's an issue
+    --local modifier=math.max(Hyperspace.ships.player:GetAugmentationValue("LONG_HACK"),1) --could just calculate this value upon activation to minimize memory usuage, if it's an issue
+    local modifier=2^Hyperspace.ships.player:GetAugmentationValue("LONG_HACK") --Negative values make the duration shorter, longer values make it longer.
     Hyperspace.ships.player.hackingSystem.effectTimer.first=Hyperspace.ships.player.hackingSystem.effectTimer.first+((1/modifier)-1)*increment
 end,
 

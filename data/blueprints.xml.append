@@ -3939,7 +3939,7 @@
 		<iconImage>laser</iconImage>
 		<iconScale>0.85</iconScale>
 	</weaponBlueprint>
-	
+
 	<weaponBlueprint name="FM_TEST" unused="true"> <!--Tests ancalagon crystals-->
 		<type>LASER</type>
 		<tip>flamethrower</tip>
@@ -13785,7 +13785,7 @@
 		<rarity>0</rarity>
 		<iconImage>combat</iconImage>
 	</droneBlueprint>
-	
+
 	<weaponBlueprint name="FM_ENERGY_BEAM1_DRONE">
 		<type>BEAM</type>
 		<tip>tip_beams</tip>
@@ -20283,7 +20283,7 @@
 <!-- ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝ ╝	-->
 
 <FTL><!--AUGMENTS -->
-	
+
 	<augBlueprint name="INSTANT_SYSTEMS">
 		<title>Ultimate System Accelerator</title>
 		<desc>The Cloaking, Hacking, Mind Control, and Temporal Systems have no cooldown.</desc>
@@ -20301,7 +20301,7 @@
 		<stackable>true</stackable>
 		<value>100</value><!--I'll fine tune this in lua later so it's equal to human repair speed-->
 	</augBlueprint>
-	
+
 	<augBlueprint name="FM_AUTOREPAIR_ENGINES">
 		<title>Engine Autorepair</title>
 		<desc>This augment will autorepair your engine system.</desc>
@@ -20382,7 +20382,7 @@
 		<stackable>true</stackable>
 		<value>100</value><!--I'll fine tune this in lua later so it's equal to human repair speed-->
 	</augBlueprint>
-	
+
 	<augBlueprint name="FM_AUTOREPAIR_CLOAKING">
 		<title>Cloaking Autorepair</title>
 		<desc>This augment will autorepair your Cloaking system.</desc>
@@ -20536,7 +20536,7 @@
 		<rarity>0</rarity>
 		<stackable>true</stackable>
 	</augBlueprint>
-	
+
 	<augBlueprint name="FM_CRUCIBLE_PLATING_PLAYER">
 		<title>Crucible Plating</title>
 		<desc>Extremely durable hull plating. Gives a 25% chance to resist hull damage, system damage, and ion damage.</desc>
@@ -20702,7 +20702,7 @@
 		<rarity>0</rarity>
 		<stackable>false</stackable>
 	</augBlueprint>
-	
+
 	<augBlueprint name="LAB_ZOLTAN_LIMIT_RELEASE">
 		<title>Zoltan Limit Release</title>
 		<desc>Your Zoltans gain an active ability that reduces damage taken by 40% and increases damage dealt by 30%. They do not supply bonus power while this ability is active. Alongside this, Zoltan gain an extra 15 health and your ship gains a 5 HP Zoltan Shield.</desc>
@@ -20830,7 +20830,7 @@
 		<rarity>0</rarity>
 		<stackable>false</stackable>
 	</augBlueprint>
-	
+
 	<augBlueprint name="LOCKED_ZERG_CREW_STIMS">
 		<title>Zerg Pheromones</title>
 		<desc>Strength inducing pheromones that are dispersed through the Life Support system. Each powered level reduces active ability cooldowns by 10%, increases damage by 10% and increases movement speed by 33%. Works on both ships.</desc>
@@ -20898,7 +20898,7 @@
 		<rarity>0</rarity>
 		<stackable>false</stackable>
 	</augBlueprint>
-	
+
 	<augBlueprint name="TWISTED_BLESSING">
 		<title>Twisted Blessing</title>
 		<desc>A darker shade of the typical Zoltan blessing, given by something best unnamed. Allows for anger to be forestalled, yet never unused. Devastate the enemy vessel at the start of combat.</desc>
@@ -20931,7 +20931,7 @@
 		<stackable>false</stackable>
 		<bp>0</bp>
 	</augBlueprint>
-	
+
 	<augBlueprint name="TWISTED_ANCIENT_BOUNTY">
 		<title>Aether Bounty Codex</title>
 		<desc>After finding some Aether tech of their own, these Obelisk-hating slugs decided that there was no better way to use it than to wipe the Multiverse clean of every last Ancient, as well as anybody else stupid enough to get in their way. In order to achieve this, they turned their extremely unhealthy smoking habits into a weapon, one that increases asphyxiation damage by 100% per level of Life Support powered. Unfortunately, the Malboro Dispersal Unit also slightly affects your ship too, due to its unhealthy nature, making all crew on your ship take an extra 25% asphyxiation damage.</desc>
@@ -21161,7 +21161,7 @@
 		<rarity>0</rarity>
 		<stackable>false</stackable>
 	</augBlueprint>
-	
+
 	<augBlueprint name="HID_LAB_ZOLTAN_LIMIT_RELEASE">
 		<title>Zoltan Limit Release</title>
 		<desc>Your Zoltans gain an active ability that reduces damage taken by 40% and increases damage dealt by 30%. They do not supply bonus power while this ability is active. Alongside this, Zoltan gain an extra 15 health and your ship gains a 5 HP Zoltan Shield.</desc>
@@ -21219,7 +21219,7 @@
 		<rarity>0</rarity>
 		<stackable>false</stackable>
 	</augBlueprint>
-	
+
 	<augBlueprint name="HID_REALITY_RELOADER">
 		<title>Reality-Bent Reloader</title>
 		<desc>This mysteriously reloader also appears to boost your shield recharge rate. 15% boost to weapons and shield recharge.</desc>
@@ -21554,7 +21554,7 @@
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
-  
+
   <augBlueprint name="FM_MODULAR_HULL_UPDATE_WEAPONS">
     <title>System update (weapons)</title>
     <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
@@ -21570,7 +21570,7 @@
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
-  
+
   <augBlueprint name="FM_MODULAR_HULL_UPDATE_PILOT">
     <title>System update (pilot)</title>
     <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
@@ -21578,7 +21578,7 @@
     <rarity>0</rarity>
     <stackable>true</stackable>
   </augBlueprint>
-  
+
   <augBlueprint name="FM_MODULAR_HULL_UPDATE_SENSORS">
     <title>System update (sensors)</title>
     <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
@@ -21643,6 +21643,15 @@
 		<stackable>true</stackable>
 	</augBlueprint>
 
+	<!--Maybe use for Twisted Shell or something?-->
+
+	<augBlueprint name="FM_RAPID_MIND">
+		<title>Accelerated Cerebral Manipulator</title>
+		<desc>The Mind Control system refreshes 10 seconds quicker, but lasts only an eighth as long.</desc>
+		<cost>40</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 	<!--capstones-->
   <augBlueprint name="FM_MODULAR_HULL_SALT">
     <title>Saline Hull Body</title>

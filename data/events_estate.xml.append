@@ -1,7 +1,7 @@
 <!--<mod:findName type = "event" name = "CURA_DEFEATED">
 		 <mod:findLike type="choice">
 		 <mod:findLike type="event">
-<mod-append:metaVariable name="CURA_IMPOSSIBLE_TASKS_UNLOCKED" op="set" val="1">	
+<mod-append:metaVariable name="CURA_IMPOSSIBLE_TASKS_UNLOCKED" op="set" val="1">
 </mod-append:metaVariable>
  </mod:findLike>
 	 </mod:findLike>

@@ -76,7 +76,7 @@
 	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 	SHIPS
 	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
-	
+
 	<mod:findLike type="ships">
 
 		<mod:findLike type="shipOrder">
@@ -1881,7 +1881,7 @@
 
 	</mod:findLike>
 
-	
+
 	<events> <!--BOSS BOX-->
 		<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 		BOSS BOX
@@ -3792,7 +3792,7 @@
 
 
 	</events>
-	
+
 	<events> <!-- Forgemaster QUEST Hub -->
 		<req name="FM_QUEST_LIST" type="any">
 			<name>SEC SECTOR_MANTIS</name>
@@ -3805,33 +3805,33 @@
 
 
 	</events>
-	
+
 	<events> <!-- Forgemaster CURA BOSS RUSH -->
 		<event name="FM_BOSS_CLAN1_SHIP_DESTROYED"> <!-- Gives you twisted sector coords -->
 			<variable name="coords_twisted" op="add" val="1"/>
 			<variable name="loc_coords_twisted" op="add" val="1"/>
 		</event>
-		
+
 		<event name="FM_BOSS_CLAN1_SHIP_DESTROYED2"> <!-- Gives you twisted sector coords -->
 			<variable name="coords_twisted" op="add" val="1"/>
 			<variable name="loc_coords_twisted" op="add" val="1"/>
 		</event>
-		
+
 		<event name="FM_BOSS_DUSK1_SHIP_DESTROYED"> <!-- Gives you twisted sector coords -->
 			<variable name="coords_twisted" op="add" val="1"/>
 			<variable name="loc_coords_twisted" op="add" val="1"/>
 		</event>
-		
+
 		<event name="FM_BOSS_DUSK1_SHIP_DESTROYED2"> <!-- Gives you twisted sector coords -->
 			<variable name="coords_twisted" op="add" val="1"/>
 			<variable name="loc_coords_twisted" op="add" val="1"/>
 		</event>
-		
+
 		<event name="FM_BOSS_ENGI1_DESTROYED"> <!-- Gives you twisted sector coords -->
 			<variable name="coords_twisted" op="add" val="1"/>
 			<variable name="loc_coords_twisted" op="add" val="1"/>
 		</event>
-		
+
 		<event name="FM_BOSS_ENGI1_DESTROYED2"> <!-- Gives you twisted sector coords -->
 			<variable name="coords_twisted" op="add" val="1"/>
 			<variable name="loc_coords_twisted" op="add" val="1"/>
@@ -3879,58 +3879,58 @@
 		<variable name="ach_fm_boss_crystal" op="set" val="0"/>
 		<variable name="ach_fm_boss_tuco" op="set" val="0"/>
 		<variable name="ach_fm_boss_leech" op="set" val="0"/>
-		
+
 		<req name="FM_CURA_QUEST_LIST" type="all">
 			<name>FM_BOSS_LIST_18</name>
 			<name>ach_fm_boss_crystal</name>
 			<name>ach_fm_boss_tuco</name>
 			<name>ach_fm_boss_leech</name>
 		</req>
-		
+
 		<req name="FM_BOSS_LIST_3" type="all">
 			<name>ach_fm_boss_clan</name>
 			<name>ach_fm_boss_dusk</name>
 			<name>ach_fm_boss_engi</name>
 		</req>
-		
+
 		<req name="FM_BOSS_LIST_6" type="all">
 			<name>FM_BOSS_LIST_3</name>
 			<name>ach_fm_boss_freemantis</name>
 			<name>ach_fm_boss_separatist</name>
 			<name>ach_fm_boss_mantis</name>
 		</req>
-		
+
 		<req name="FM_BOSS_LIST_9" type="all">
 			<name>FM_BOSS_LIST_6</name>
 			<name>ach_fm_boss_monk</name>
 			<name>ach_fm_boss_rock</name>
 			<name>ach_fm_boss_lostsun</name>
 		</req>
-		
+
 		<req name="FM_BOSS_LIST_12" type="all">
 			<name>FM_BOSS_LIST_9</name>
 			<name>ach_fm_boss_slug</name>
 			<name>ach_fm_boss_stealth</name>
 			<name>ach_fm_boss_zoltan</name>
 		</req>
-		
+
 		<req name="FM_BOSS_LIST_15" type="all">
 			<name>FM_BOSS_LIST_12</name>
 			<name>ach_fm_boss_shell</name>
 			<name>ach_fm_boss_engineer</name>
 			<name>ach_fm_boss_lanius</name>
 		</req>
-		
+
 		<req name="FM_BOSS_LIST_18" type="all">
 			<name>FM_BOSS_LIST_15</name>
 			<name>ach_fm_boss_kestrel</name>
 			<name>ach_fm_boss_federation</name>
 			<name>ach_fm_boss_orchid</name>
 		</req>
-		
-	
-	</events>	
-	
+
+
+	</events>
+
 	<events> <!-- Forgemaster event Story events -->
 		<event name="FM_STORAGE_CHECK_JOURNAL_LOAD">
 			<loadEvent>FM_STORAGE_CHECK_JOURNAL</loadEvent>
@@ -3938,7 +3938,7 @@
 		<event name="FM_STORAGE_CHECK_JOURNAL" recursive="true">
 
 		</event>
-		
+
 		<event name="FM_LORE_ABSOLUTION_READ_LOAD">
 			<loadEvent>FM_LORE_ABSOLUTION_READ</loadEvent>
 		</event>
@@ -4053,7 +4053,7 @@
 			<checkCargo/>
 		</event>
 	</events>
-	
+
 	<events> <!-- Forgemaster GET phone -->
 		
 		<event name="FM_ATLAS_EQUIPMENT_LOAD">
@@ -4062,9 +4062,9 @@
 		<event name="FM_ATLAS_EQUIPMENT" recursive="true">
 
 		</event>
-	
+
 	</events>
-	
+
 	<events> <!-- new FM spawning reqs and variables-->
 		<req name="FMSPAWN_CALL" type="all">
 			<name>fm_forgemaster_called</name>
@@ -4085,7 +4085,7 @@
 				</req>
 			</req>
 		</req>
-		
+
 		<req name="FMSPAWN_FIRSTMEET" type="max" max_lvl="0">
 			<name>fm_forgemaster_phone</name>
 			<name>fm_forgemaster_dead</name>
@@ -4253,7 +4253,7 @@
 		</req>
 
 	</events>
-	
+
 	<mod:findLike type="victories"> <!-- adds the victory marker for harmony ending -->
 		<mod-append:bleakfuture>
 			<name>\1 Bleak Future Ending</name>
@@ -9737,6 +9737,11 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<function name="FAST_TEMPORAL" value="1" useForReqs="true" warning="false"/>
 		</aug>
 
+		<aug name="FM_RAPID_MIND">
+			<function name="FAST_MIND" value="2" useForReqs="true" warning="false"/>
+			<function name="LONG_MIND" value="-3" useForReqs="false" warning="false"/>
+		</aug>
+
 
 
 
@@ -11086,7 +11091,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<aug name="HID_UPG_WEAPONS_REPLICATOR_2">
 			<function name="EXPLOSIVE_REPLICATOR" value="0.70" useForReqs="true" warning="false"/>
 		</aug>
-		
+
 		<aug name="ORCHID_KINDLING_ENEMY">
 			<statBoosts>
 				<statBoost name="powerEffect">
@@ -11938,7 +11943,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 			</statBoosts>
 		</aug>
-		
+
 		<aug name="HID_MALBORO_RED"> <!--2x health for slugs, 3x suffocation speed. -->
 			<statBoosts>
 
@@ -20800,4 +20805,4 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</mod-append:category>
 		</mod:findLike>
 	</mod:findLike>
-</FTL>	
+</FTL>

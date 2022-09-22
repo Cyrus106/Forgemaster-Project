@@ -860,7 +860,7 @@
       <text>You must have a Frost I and Irradiation Laser to forge this weapon.</text>
       <event load="OPTION_INVALID"/>
     </choice>
- 
+
     <choice req="FM_CHAINGUN_FIRE_LIST" lvl="1" blue="false" hidden="true">
       <text>Modify the barrels of the Vulcan with the Fire Starter's heat sinks to forge the 'Hellflash' Gatling Gun. </text>
       <event load="STORAGE_CHECK_CREATE_FM_CHAINGUN_FIRE"/>
@@ -6826,7 +6826,7 @@
   <event name="FM_STORAGE_CHECK_AUG_MVBOSS_SPAWNER_REWARD">
     <text>Reality itself rends open from all the mayhem you have caused with the Drive Hacker.</text>
     <variable name="loc_impossible_task_done" op="set" val="1"/>
-    
+
     <choice hidden="false">
       <text>Continue...</text>
       <event>
@@ -8967,8 +8967,8 @@
 
 <FTL> <!-- CREW LABS PLATED -->
   <!-- CREW LABS PLATED -->
-  
-  
+
+
   <mod:findName type = "event" name = "STORAGE_CHECK_LAB_ROCK">
     <mod-append:choice req="LAB_PLATED_REGEN" lvl="1" max_group="601" blue="false" hidden="true">
       <text>Sec [Plate]: Electroplating Medigel. [An upgrade is already installed]
