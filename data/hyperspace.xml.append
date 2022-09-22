@@ -9,6 +9,7 @@
 		<mod-append:script>data/forgemaster_scripts/artillery.lua</mod-append:script>-->
 		<mod-append:script>data/forgemaster_scripts/modhull.lua</mod-append:script> <!--The script folders are named differently because of issues when two script files share the same path.-->
 		<mod-append:script>data/forgemaster_scripts/surges.lua</mod-append:script>
+		<mod-append:script>data/forgemaster_scripts/triggered_events.lua</mod-append:script>
 	</mod:findLike>
 </FTL>
 
@@ -2907,7 +2908,7 @@
 			<checkCargo/>
 		</event>
 
-		
+
 		<event name="STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY" recursive="true">
 			<checkCargo/>
 		</event>
@@ -3944,7 +3945,7 @@
 		</event>
 		<event name="FM_LORE_ABSOLUTION_READ" recursive="true">
 
-		</event>		
+		</event>
 
 		<event name="FORGEMASTER_PHONE_EVENT_LOAD">
 			<loadEvent ignoreUnique="true">FORGEMASTER_PHONE_EVENT</loadEvent>
@@ -4055,7 +4056,7 @@
 	</events>
 
 	<events> <!-- Forgemaster GET phone -->
-		
+
 		<event name="FM_ATLAS_EQUIPMENT_LOAD">
 			<loadEvent>FM_ATLAS_EQUIPMENT</loadEvent>
 		</event>
@@ -4119,9 +4120,9 @@
 		<variable name="fm_forgemaster_phone" op="set" val="0"/>
 		<variable name="fm_forgemaster_dead" op="set" val="0"/>
 		<variable name="fm_forgemaster_called" op="set" val="0"/>
-		
+
 		<variable name="fm_invisible_ship" op="set" val="0"/><!--Variable that makes the ship literally disappear.-->
-		
+
 		<variable name="valefor_easter_egg" op="set" val="0"/><!--the funny valefor easter egg marker-->
 		<metaVariable name="FM_LORE_PHOTON" op="set" val="0"/>
 		<metaVariable name="FM_LORE_PHOTON2" op="set" val="0"/>
@@ -4135,14 +4136,14 @@
 		<metaVariable name="FM_LORE_PROJECT7" op="set" val="0"/>
 		<metaVariable name="FM_LORE_PROJECT22" op="set" val="0"/>
 		<metaVariable name="FM_LORE_CHAINGUN_FIRE" op="set" val="0"/>
-		
+
 		<req name="CAN_INSTALL_FLAK_ARTILLERY" type="sum" lvl="50">
 			<name>flak_resource_counter</name>
 		</req>
 	</events>
 
 	<events> <!-- Forgemaster HARMONY ENDING SPACESTATION EVENT REQS and vars-->
-		
+
 		<variable name="fm_fs_power_cutter" op="set" val="0"/>
 		<variable name="fm_fs_crowbar" op="set" val="0"/>
 		<variable name="marker_checked_plaza_door" op="set" val="0"/>
@@ -13055,8 +13056,8 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<statBoost name="trueHealAmount">
 					<boostType>SET</boostType>
 					<amount>-999999</amount>
-					<shipTarget>ORIGINAL_OTHER_SHIP</shipTarget>
-					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<shipTarget>ENEMY_SHIP</shipTarget>
+					<crewTarget>ALL</crewTarget><!--Only triggers on true CK so shouldn't matter-->
 					<whiteList load="LIST_CREW_GHOST"/>
 				</statBoost>
 			</statBoosts>

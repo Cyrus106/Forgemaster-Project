@@ -26,6 +26,7 @@
 		<mod-append:script>data/inferno_core_scripts/weapons.lua</mod-append:script>
 		<mod-append:script>data/inferno_core_scripts/artillery.lua</mod-append:script>
 		<mod-append:script>data/inferno_core_scripts/projectiles.lua</mod-append:script>
+		<mod-append:script>data/inferno_core_scripts/triggered_events.lua</mod-append:script>
 	</mod:findLike>
 
 	<augments>
