@@ -9595,7 +9595,7 @@
 <FTL> <!-- Technopath Ancalagon-->
   <mod:findName type="event" name="STORAGE_CHECK_MORPH_TRANSFORM">
     <mod:findLike type="choice">
-      <mod:selctor req="techno"/>
+      <mod:selector req="techno"/>
       <mod:findLike type="event">
         <mod-append:choice req="LIST_ANCALAGON_DRONES" blue="false" hidden="true">
           <text>It appears your Technopaths cannot replicate a key component of Ancalagon tech.</text>
