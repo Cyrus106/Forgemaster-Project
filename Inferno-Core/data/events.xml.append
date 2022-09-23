@@ -6,6 +6,9 @@
 		<mod-append:triggeredEvent name="FMCORE_ONDAMAGE" event="FMCORE_ONDAMAGE">
 			<playerDamage amount="1" countRepairs="false"/>
 		</mod-append:triggeredEvent>
+		<mod-append:triggeredEvent name="FMCORE_ONCREWZERO" event="FMCORE_ONCREWZERO">
+			<enemyCrew amount="0" includeClonebay="true"/><!--Triggers when enemy has no crew, can be used for CK/autoship-specific things that can be checked in lua, may have to implement queueEvent for when the ship CHANGES to an auto so it checks after that, depending on order of events-->
+		</mod-append:triggeredEvent>
 	</mod:findName>
 
 	<event name="ADDON_FMCORE_INFO">

@@ -1572,42 +1572,42 @@
 		<event>
 			<text>With the final spark of power in the opposing ship going dark, the Fridge shakes - a rumble echoes from within, and you feel the myriad of ghosts in its unknowable interior hum with approval. With a rush of whispering gases, a Phantom coalesces before you - ready to serve.</text>
 			<crewMember amount="1" class="phantom"/>
-			<hiddenAug>TWISTED_KESTREL_GHOST_PURGE</hiddenAug>
+
 			<!--jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>-->
 		</event>
 
 		<event>
 			<text>With the final spark of power in the opposing ship going dark, the Fridge shakes - a rumble echoes from within, and you feel the myriad of ghosts in its unknowable interior hum with approval. With a rush of whispering gases and a violent crackle of energy, a Wraith coalesces before you - ready to serve.</text>
 			<crewMember amount="1" class="phantom_wraith"/>
-			<hiddenAug>TWISTED_KESTREL_GHOST_PURGE</hiddenAug>
+
 			<!--jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>-->
 		</event>
 
 		<event>
 			<text>With the final spark of power in the opposing ship going dark, the Fridge shakes - a rumble echoes from within, and you feel the myriad of ghosts in its unknowable interior hum with approval. With a rush of whispering gases and the shimmer of heat washing over your surroundings, a Goul coalesces before you - ready to serve.</text>
 			<crewMember amount="1" class="phantom_goul"/>
-			<hiddenAug>TWISTED_KESTREL_GHOST_PURGE</hiddenAug>
+			
 			<!--jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>-->
 		</event>
 
 		<event>
 			<text>With the final spark of power in the opposing ship going dark, the Fridge shakes - a rumble echoes from within, and you feel the myriad of ghosts in its unknowable interior hum with approval. With a thumping howl of gases moving that cause your hull to tremble slightly, a Mare coalesces before you - ready to serve.</text>
 			<crewMember amount="1" class="phantom_mare"/>
-			<hiddenAug>TWISTED_KESTREL_GHOST_PURGE</hiddenAug>
+
 			<!--jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>-->
 		</event>
 
 		<event>
 			<text>With the final spark of power in the opposing ship going dark, the Fridge shakes violently - a rumble echoes from within, louder than usual, and you feel the presence of a mightier entity from its unknowable interior hum with approval. With a torrential outpour of agitated white gases, an Alpha Phantom coalesces before you - ready to serve.</text>
 			<crewMember amount="1" class="phantom_alpha"/>
-			<hiddenAug>TWISTED_KESTREL_GHOST_PURGE</hiddenAug>
+
 			<!--jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>-->
 		</event>
 
 		<event>
 			<text>With the final spark of power in the opposing ship going dark, the Fridge shakes violently - a rumble echoes from within, louder than usual, and you feel the presence of a mightier entity from its unknowable interior hum with approval. With a violent, acidic hiss, an Alpha Mare coalesces before you - ready to serve.</text>
 			<crewMember amount="1" class="phantom_mare_alpha"/>
-			<hiddenAug>TWISTED_KESTREL_GHOST_PURGE</hiddenAug>
+
 			<!--jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>-->
 		</event>
 
@@ -1615,21 +1615,21 @@
 		<event>
 			<text>With the final spark of power in the opposing ship going dark, the Fridge shakes violently - a rumble echoes from within, louder than usual, and you feel the presence of a mightier entity from its unknowable interior hum with approval. The room smolders ominously as an Alpha Goul coalesces before you - ready to serve.</text>
 			<crewMember amount="1" class="phantom_goul_alpha"/>
-			<hiddenAug>TWISTED_KESTREL_GHOST_PURGE</hiddenAug>
+
 			<!--jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>-->
 		</event>
 
 		<event>
 			<text>With the final spark of power in the opposing ship going dark, the Fridge shakes violently - a rumble echoes from within, louder than usual, and you feel the presence of a mightier entity from its unknowable interior hum with approval. A bolt of electricity snaps against the hull of your ship as an Alpha Wraith coalesces before you - ready to serve.</text>
 			<crewMember amount="1" class="phantom_wraith_alpha"/>
-			<hiddenAug>TWISTED_KESTREL_GHOST_PURGE</hiddenAug>
+
 			<!--jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>-->
 		</event>
 
 		<event>
 			<text>With the final spark of power in the opposing ship going dark, the Fridge shakes uncontrollably - a howl screams forth, shaking the ship menacingly.  An overwhelming sense of horrible amusement emanates from within its walls. The howls die slowly as one of the Haunts coalesces before you - ready to serve.</text>
 			<crewMember amount="1" class="FM_LIST_CREW_HAUNTS"/>
-			<hiddenAug>TWISTED_KESTREL_GHOST_PURGE</hiddenAug>
+
 			<!--jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>-->
 		</event>
 
@@ -1637,7 +1637,7 @@
 		<event>
 				<text>With the final spark of power in the opposing ship going dark, the Fridge nearly cracks as it slams back against the hull of the ship - an ear-piercing scream blasts from within, sending you reeling. The bright void outside, or perhaps only your vision, dims slightly. A magnificent ghost clad in armor forms elegantly before you, some version of the Phantom King himself. He kneels before you... Ready to serve. </text>
 				<crewMember amount="1" class="unique_dessius"/>
-				<hiddenAug>TWISTED_KESTREL_GHOST_PURGE</hiddenAug>
+
 				<!--jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>-->
 		</event>
 
@@ -1763,7 +1763,7 @@ Only respects stronger computers
 
 <FTL><!--all the modular armor stuff-->
 	<!--special module effect events-->
-	
+
 	<event name="FM_ONJUMP_STUFF_LOAD">
 	  <loadEvent>FM_JUMP_REMOVE_GHOST_PURGE</loadEvent>
 	</event>
@@ -1990,8 +1990,8 @@ Only respects stronger computers
 	<event name="RELIMIT_SHIELDS_3">
 		<status type="limit" target="player" system="shields" amount="3"/>
 	</event>
-	
-	
+
+
 	<!--overcharmd stuff, if more than 15 notches used-->
 	<event name="OVERCHARMED">
 		<variable name="overcharmed_active" op="set" val="1"/>

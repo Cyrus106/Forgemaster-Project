@@ -30,6 +30,23 @@ mods.inferno.repair=function()
   end
 end
 
+mods.inferno.getLimitAmount=function(sys_id)
+  if not Hyperspace.ships.player:HasSystem(sys_id) then return 0 end
+  --priority is loss,limit,divide, as in divide overrides both loss and limit, and limit overrides loss
+  local system=Hyperspace.ships.player:GetSystem(sys_id)
+  local absolute_max_bars=Hyperspace.ships.player:GetSystemPowerMax(sys_id)--returns the maximum amount of power the system can have, so basically the level
+  local current_max_bars=system:GetPowerCap() --only considers limit and divide events, not loss, this only matters if loss is the ONLY type of <status>
+  if absolute_max_bars~=current_max_bars then
+    return absolute_max_bars-current_max_bars
+  elseif system.iTempPowerLoss>0 then
+    return system.iTempPowerLoss
+  else
+    return 0
+  end
+  --this returns the amount of bars that have been limited
+  --because divide overrides everything, it would be best to call Hyperspace.ships.player:ClearStatusSystem(sys_id) before applying a new limit based upon the old
+end
+
 mods.inferno.up={
     timer=999,--So it doesn't render on game startup
     config={
