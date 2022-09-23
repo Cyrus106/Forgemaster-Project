@@ -29,7 +29,7 @@
 
 
 <mod:findName type = "event" name = "STOREEVENT_DAMAGED">
-  <mod-append:choice req="fm_plated" lvl="1" max_group="600" hidden="true" blue="true">
+  <mod-append:choice req="LIST_CREW_PLATED" lvl="1" max_group="600" hidden="true" blue="true">
      	<text>(Plated) Fix up their hull.</text>
 		    <event>
 			     <text>Your Plated fixes up their ship. The ship thanks you for your help, and offers to trade.</text>

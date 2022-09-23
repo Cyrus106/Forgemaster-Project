@@ -5,7 +5,7 @@
 
 		 <mod:findLike type="choice" start="0" limit="1">
         <mod:findLike type="event">
-            <mod-append:choice hidden="true" max_group="601" req="fm_plated" blue="true">
+            <mod-append:choice hidden="true" max_group="601" req="LIST_CREW_PLATED" blue="true">
               	<text>(Plated) Offer to have your Plated repair their hull.</text>
 				<event>
 					<text>The Militiamen are surprised by your offer, but they graciously accept.</text>

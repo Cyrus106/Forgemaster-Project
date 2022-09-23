@@ -1784,12 +1784,17 @@
 
 <blueprintList name="LIST_CREW_PLATED">
 	<name>fm_plated</name>
+	<name>fm_forgemasterperson_player</name>
+	<name>fm_plated_shell</name>
+</blueprintList>
+
+<blueprintList name="LIST_CREW_PLATED_STORE">
+	<name>fm_plated</name>
 	<name>fm_plated</name>
 	<name>fm_plated</name>
 	<name>fm_plated</name>
 	<name>fm_plated_shell</name>
 </blueprintList>
-
 <mod:findName type = "blueprintList" name = "LIST_CREW_ROCK">
 	<mod-append:name>fm_plated</mod-append:name>
 	<mod-append:name>fm_forgemasterperson</mod-append:name>
@@ -1807,7 +1812,7 @@
 		<mod-append:name>fm_plated</mod-append:name>
 		<mod-append:name>fm_human_texture</mod-append:name>
 		<mod-append:name>mantis_crackerjack</mod-append:name>
-	        <mod-append:name>fm_plated_shell</mod-append:name>
+	    <mod-append:name>fm_plated_shell</mod-append:name>
 </mod:findName>
 <mod:findName type = "blueprintList" name = "LIST_CREW_ALIENS">
     <mod-append:name>husk_slug_player</mod-append:name>
@@ -1817,7 +1822,7 @@
 		<mod-append:name>unique_remington</mod-append:name>
 		<mod-append:name>unique_mossberg</mod-append:name>
 		<mod-append:name>mantis_crackerjack</mod-append:name>
-	        <mod-append:name>fm_plated_shell</mod-append:name>
+	    <mod-append:name>fm_plated_shell</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "LIST_CREW_MORPH_HUMAN">

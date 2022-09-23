@@ -35,7 +35,7 @@
 	<mod:findLike type="event" start="0" limit="1" >
 
 
-		<mod-append:choice hidden="true" req="fm_plated" >
+		<mod-append:choice hidden="true" req="LIST_CREW_PLATED" >
 			<text>(Plated) Have your Plated repair their ship.</text>
 			<event>
 				<text>The Plated repairs their ship surprisingly fast. The Federation ship is very impressed with their work, and sends you a gift as thanks.</text>
@@ -71,7 +71,7 @@
 	<mod:findLike type="event" start="0" limit="1" >
 
 
-		<mod-append:choice hidden="true" req="fm_plated" >
+		<mod-append:choice hidden="true" req="LIST_CREW_PLATED" >
 			<text>(Plated) Have your Plated repair their ship.</text>
 			<event>
 				<text>The Plated repairs their ship surprisingly fast. The Federation ship is very impressed with their work, and sends you a gift as thanks.</text>

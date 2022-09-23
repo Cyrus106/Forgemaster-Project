@@ -5,7 +5,7 @@
         <mod:findLike type="event">
 		 <mod:findLike type="choice">
 			<mod:findLike type="event">
-			<mod-append:choice hidden="true" req="fm_plated" >
+			<mod-append:choice hidden="true" req="LIST_CREW_PLATED" >
          <text>(Plated) Have your Plated perform the repairs.</text> 
 							<event>
 							<text>It takes a while, but you're able to patch up the damage. The Rebel captain is surprised at your willingness to help. "Maybe I misjudged you... don't think this changes anything, but it's only right that you are paid for your efforts."</text>

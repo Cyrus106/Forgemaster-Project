@@ -69,7 +69,7 @@
         <mod:findLike type="event">
 		 <mod:findLike type="choice">
 		  <mod:findLike type="event">
-		  <mod-append:choice hidden="true" max_group="600" req="fm_plated" blue="true">
+		  <mod-append:choice hidden="true" max_group="600" req="LIST_CREW_PLATED" blue="true">
               <text>(Plated) Send a Plated down for repairs and support.</text>
 						<event>
 							<text>"Perfect, this'll help us greatly. Thank you Captain."</text>
