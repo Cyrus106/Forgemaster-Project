@@ -21249,44 +21249,44 @@
 <FTL>
 
   <!-- Modular Hull -->
-  <augBlueprint name="FM_MODULAR_HULL">
-    <title>Alastair's Modular Hull (tm)</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself. Provides 5% resistance to hull damage even with no modules Installed.</desc>
-    <cost>40</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL">
+		<title>Alastair's Modular Hull (tm)</title>
+		<desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself. Provides 5% resistance to hull damage even with no modules Installed.</desc>
+		<cost>40</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 	<augBlueprint name="FM_MODULAR_HULL_LITE">
-    <title>Alastair's Modular Hull (tm)</title>
-    <desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself. No exta resistance because there was no space to fit the plating on your ship.</desc>
-    <cost>20</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+		<title>Alastair's Modular Hull (tm)</title>
+		<desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself. No exta resistance because there was no space to fit the plating on your ship.</desc>
+		<cost>20</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_FORTIFIED">
-    <title>Fortified Plating</title>
-    <desc>+5% hull resist</desc>
-    <cost>50</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_FORTIFIED">
+		<title>Fortified Plating</title>
+		<desc>+5% hull resist</desc>
+		<cost>50</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_ENCASED">
-    <title>Encased Systems</title>
-    <desc>+10% sys resist</desc>
-    <cost>65</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_ENCASED">
+		<title>Encased Systems</title>
+		<desc>+10% sys resist</desc>
+		<cost>65</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_RESILIENT">
-    <title>Resilient Construction</title>
-    <desc>-20% mult sabotage on ship</desc>
-    <cost>25</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_RESILIENT">
+		<title>Resilient Construction</title>
+		<desc>-20% mult sabotage on ship</desc>
+		<cost>25</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
 	<augBlueprint name="FM_MODULAR_HULL_GUARDIAN">
 		<title>Guardian Protocols</title>
@@ -21330,302 +21330,302 @@
 
 	<!--page 2-->
 	<augBlueprint name="FM_MODULAR_HULL_VENGEANCE1">
-    <title>Prismatic Hullguard Cultivator</title>
-    <desc>60% to fire two lasers that deal 1 damage(10% fire)</desc>
-    <cost>50</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+		<title>Prismatic Hullguard Cultivator</title>
+		<desc>60% to fire two lasers that deal 1 damage(10% fire)</desc>
+		<cost>50</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
 	<augBlueprint name="FM_MODULAR_HULL_VENGEANCE2">
-    <title>Crystalline Hullguard Cultivator</title>
-    <desc>60% to fire two crystals that deal 1 damage(1sp, 40% fire and breach)</desc>
-    <cost>65</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+		<title>Crystalline Hullguard Cultivator</title>
+		<desc>60% to fire two crystals that deal 1 damage(1sp, 40% fire and breach)</desc>
+		<cost>65</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
 	<augBlueprint name="FM_MODULAR_HULL_VENGEANCE3">
-    <title>Forgefire Hullguard Cultivator</title>
-    <desc>60% to fire two magnetic fragments that deal 1 damage(10sp, 100% accuracy 10% fire and 50% breach, hullbust)</desc>
-    <cost>80</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+		<title>Forgefire Hullguard Cultivator</title>
+		<desc>60% to fire two magnetic fragments that deal 1 damage(10sp, 100% accuracy 10% fire and 50% breach, hullbust)</desc>
+		<cost>80</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
 	<!--turrets-->
-  <augBlueprint name="FM_MODULAR_HULL_TURRET_MED">
-    <title>Modular Turret (med)</title>
-    <desc>7 dps to enemy crew/drones in this system.</desc>
-    <cost>45</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_TURRET_MED">
+		<title>Modular Turret (med)</title>
+		<desc>7 dps to enemy crew/drones in this system.</desc>
+		<cost>45</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_TURRET_OXYGEN">
-    <title>Modular Turret (oxygen)</title>
-    <desc>7 dps to enemy crew/drones in this system.</desc>
-    <cost>45</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_TURRET_OXYGEN">
+		<title>Modular Turret (oxygen)</title>
+		<desc>7 dps to enemy crew/drones in this system.</desc>
+		<cost>45</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_TURRET_TELEPORTER">
-    <title>Modular Turret (teleporter)</title>
-    <desc>7 dps to enemy crew/drones in this system.</desc>
-    <cost>45</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_TURRET_TELEPORTER">
+		<title>Modular Turret (teleporter)</title>
+		<desc>7 dps to enemy crew/drones in this system.</desc>
+		<cost>45</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_TURRET_ARTILLERY">
-    <title>Modular Turret (artillery)</title>
-    <desc>7 dps to enemy crew/drones in this system.</desc>
-    <cost>45</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_TURRET_ARTILLERY">
+		<title>Modular Turret (artillery)</title>
+		<desc>7 dps to enemy crew/drones in this system.</desc>
+		<cost>45</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_TURRET_CLOAKING">
-    <title>Modular Turret (cloak)</title>
-    <desc>7 dps to enemy crew/drones in this system.</desc>
-    <cost>45</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_TURRET_CLOAKING">
+		<title>Modular Turret (cloak)</title>
+		<desc>7 dps to enemy crew/drones in this system.</desc>
+		<cost>45</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_TURRET_MIND">
-    <title>Modular Turret (mind)</title>
-    <desc>7 dps to enemy crew/drones in this system.</desc>
-    <cost>45</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_TURRET_MIND">
+		<title>Modular Turret (mind)</title>
+		<desc>7 dps to enemy crew/drones in this system.</desc>
+		<cost>45</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_TURRET_HACKING">
-    <title>Modular Turret (hacking)</title>
-    <desc>7 dps to enemy crew/drones in this system.</desc>
-    <cost>45</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_TURRET_HACKING">
+		<title>Modular Turret (hacking)</title>
+		<desc>7 dps to enemy crew/drones in this system.</desc>
+		<cost>45</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_TURRET_DRONES">
-    <title>Modular Turret (drones)</title>
-    <desc>7 dps to enemy crew/drones in this system.</desc>
-    <cost>45</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_TURRET_DRONES">
+		<title>Modular Turret (drones)</title>
+		<desc>7 dps to enemy crew/drones in this system.</desc>
+		<cost>45</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_TURRET_ENGINES">
-    <title>Modular Turret (engines)</title>
-    <desc>7 dps to enemy crew/drones in this system.</desc>
-    <cost>45</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_TURRET_ENGINES">
+		<title>Modular Turret (engines)</title>
+		<desc>7 dps to enemy crew/drones in this system.</desc>
+		<cost>45</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_TURRET_WEAPONS">
-    <title>Modular Turret (weapons)</title>
-    <desc>7 dps to enemy crew/drones in this system.</desc>
-    <cost>45</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_TURRET_WEAPONS">
+		<title>Modular Turret (weapons)</title>
+		<desc>7 dps to enemy crew/drones in this system.</desc>
+		<cost>45</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_TURRET_SHIELDS">
-    <title>Modular Turret (shields)</title>
-    <desc>7 dps to enemy crew/drones in this system.</desc>
-    <cost>45</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_TURRET_SHIELDS">
+		<title>Modular Turret (shields)</title>
+		<desc>7 dps to enemy crew/drones in this system.</desc>
+		<cost>45</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_TURRET_SENSORS">
-    <title>Modular Turret (sensors)</title>
-    <desc>7 dps to enemy crew/drones in this system.</desc>
-    <cost>45</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_TURRET_SENSORS">
+		<title>Modular Turret (sensors)</title>
+		<desc>7 dps to enemy crew/drones in this system.</desc>
+		<cost>45</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_TURRET_DOORS">
-    <title>Modular Turret (doors)</title>
-    <desc>7 dps to enemy crew/drones in this system.</desc>
-    <cost>45</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_TURRET_DOORS">
+		<title>Modular Turret (doors)</title>
+		<desc>7 dps to enemy crew/drones in this system.</desc>
+		<cost>45</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_TURRET_PILOT">
-    <title>Modular Turret (pilot)</title>
-    <desc>7 dps to enemy crew/drones in this system.</desc>
-    <cost>45</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_TURRET_PILOT">
+		<title>Modular Turret (pilot)</title>
+		<desc>7 dps to enemy crew/drones in this system.</desc>
+		<cost>45</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_TURRET_BATTERY">
-    <title>Modular Turret (battery)</title>
-    <desc>7 dps to enemy crew/drones in this system.</desc>
-    <cost>45</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_TURRET_BATTERY">
+		<title>Modular Turret (battery)</title>
+		<desc>7 dps to enemy crew/drones in this system.</desc>
+		<cost>45</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_TURRET_TEMPORAL">
-    <title>Modular Turret (temporal)</title>
-    <desc>7 dps to enemy crew/drones in this system.</desc>
-    <cost>45</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_TURRET_TEMPORAL">
+		<title>Modular Turret (temporal)</title>
+		<desc>7 dps to enemy crew/drones in this system.</desc>
+		<cost>45</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-	<!--system update-->
-  <augBlueprint name="FM_MODULAR_HULL_UPDATE_SHIELDS">
-    <title>System update (shields)</title>
-    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
-    <cost>40</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+		<!--system update-->
+	<augBlueprint name="FM_MODULAR_HULL_UPDATE_SHIELDS">
+		<title>System update (shields)</title>
+		<desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+		<cost>40</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_UPDATE_ENGINES">
-    <title>System update (engines)</title>
-    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
-    <cost>40</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_UPDATE_ENGINES">
+		<title>System update (engines)</title>
+		<desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+		<cost>40</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_UPDATE_MED">
-    <title>System update (medical)</title>
-    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
-    <cost>40</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_UPDATE_MED">
+		<title>System update (medical)</title>
+		<desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+		<cost>40</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_UPDATE_OXYGEN">
-    <title>System update (oxygen)</title>
-    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
-    <cost>40</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_UPDATE_OXYGEN">
+		<title>System update (oxygen)</title>
+		<desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+		<cost>40</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_UPDATE_TELEPORTER">
-    <title>System update (teleporter)</title>
-    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
-    <cost>40</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_UPDATE_TELEPORTER">
+		<title>System update (teleporter)</title>
+		<desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+		<cost>40</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_UPDATE_CLOAKING">
-    <title>System update (cloak)</title>
-    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
-    <cost>40</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_UPDATE_CLOAKING">
+		<title>System update (cloak)</title>
+		<desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+		<cost>40</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_UPDATE_ARTILLERY">
-    <title>System update (artillery)</title>
-    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
-    <cost>40</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_UPDATE_ARTILLERY">
+		<title>System update (artillery)</title>
+		<desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+		<cost>40</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_UPDATE_MIND">
-    <title>System update (mind)</title>
-    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
-    <cost>40</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_UPDATE_MIND">
+		<title>System update (mind)</title>
+		<desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+		<cost>40</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_UPDATE_HACKING">
-    <title>System update (hacking)</title>
-    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
-    <cost>40</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_UPDATE_HACKING">
+		<title>System update (hacking)</title>
+		<desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+		<cost>40</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_UPDATE_WEAPONS">
-    <title>System update (weapons)</title>
-    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
-    <cost>40</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_UPDATE_WEAPONS">
+		<title>System update (weapons)</title>
+		<desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+		<cost>40</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_UPDATE_DRONES">
-    <title>System update (drones)</title>
-    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
-    <cost>40</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_UPDATE_DRONES">
+		<title>System update (drones)</title>
+		<desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+		<cost>40</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_UPDATE_PILOT">
-    <title>System update (pilot)</title>
-    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
-    <cost>40</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_UPDATE_PILOT">
+		<title>System update (pilot)</title>
+		<desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+		<cost>40</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_UPDATE_SENSORS">
-    <title>System update (sensors)</title>
-    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
-    <cost>40</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_UPDATE_SENSORS">
+		<title>System update (sensors)</title>
+		<desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+		<cost>40</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_UPDATE_DOORS">
-    <title>System update (doors)</title>
-    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
-    <cost>40</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_UPDATE_DOORS">
+		<title>System update (doors)</title>
+		<desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+		<cost>40</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_UPDATE_BATTERY">
-    <title>System update (battery)</title>
-    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
-    <cost>40</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_UPDATE_BATTERY">
+		<title>System update (battery)</title>
+		<desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+		<cost>40</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_UPDATE_TEMPORAL">
-    <title>System update (temporal)</title>
-    <desc>+40% repair speed, -40% sabotage speed in this System.</desc>
-    <cost>40</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_UPDATE_TEMPORAL">
+		<title>System update (temporal)</title>
+		<desc>+40% repair speed, -40% sabotage speed in this System.</desc>
+		<cost>40</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 	<!--Cooldown Upgrades-->
 	<augBlueprint name="FM_MODULAR_HULL_MIND_COOLDOWN">
-    <title>Modular Hull Mind Cooldown</title>
-    <desc>Reduces the cooldown of the Mind Control System by 5 seconds. Counts for one upgrade notch.</desc>
-    <cost>40</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+		<title>Modular Hull Mind Cooldown</title>
+		<desc>Reduces the cooldown of the Mind Control System by 5 seconds. Counts for one upgrade notch.</desc>
+		<cost>40</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
 	<augBlueprint name="FM_MODULAR_HULL_CLOAK_COOLDOWN">
-    <title>Modular Hull Cloaking Cooldown</title>
-    <desc>Reduces the cooldown of the Cloaking System by 5 seconds. Counts for one upgrade notch.</desc>
-    <cost>40</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+		<title>Modular Hull Cloaking Cooldown</title>
+		<desc>Reduces the cooldown of the Cloaking System by 5 seconds. Counts for one upgrade notch.</desc>
+		<cost>40</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
 	<augBlueprint name="FM_MODULAR_HULL_HACK_COOLDOWN">
 		<title>Modular Hull Hacking Cooldown</title>
@@ -21653,99 +21653,99 @@
 		<stackable>true</stackable>
 	</augBlueprint>
 	<!--capstones-->
-  <augBlueprint name="FM_MODULAR_HULL_SALT">
-    <title>Saline Hull Body</title>
-    <desc>+100% ion res, organic crew take 0.5dps</desc>
-    <cost>150</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_SALT">
+		<title>Saline Hull Body</title>
+		<desc>+100% ion res, organic crew take 0.5dps</desc>
+		<cost>150</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_DUSK">
-    <title>Depricated Duskbringer Reactor</title>
-    <desc>+20% reload speed and shield recharge speed, your crew stats are reducd by 20% (damage taken +20%)</desc>
-    <cost>110</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_DUSK">
+		<title>Depricated Duskbringer Reactor</title>
+		<desc>+20% reload speed and shield recharge speed, your crew stats are reducd by 20% (damage taken +20%)</desc>
+		<cost>110</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_COMPRESS">
-    <title>Compressor Bypass Manifolds</title>
-    <desc>+30% weapon reload speed, -60% shield recharge speed</desc>
-    <cost>80</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_COMPRESS">
+		<title>Compressor Bypass Manifolds</title>
+		<desc>+30% weapon reload speed, -60% shield recharge speed</desc>
+		<cost>80</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_PARTICLE">
-    <title>Particlized Shields</title>
-    <desc>8 Layer Energy Shield (Stacks with others), but Shields recharge speed is reduced by 50%</desc>
-    <cost>100</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_PARTICLE">
+		<title>Particlized Shields</title>
+		<desc>8 Layer Energy Shield (Stacks with others), but Shields recharge speed is reduced by 50%</desc>
+		<cost>100</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_UPLINK">
-    <title>Weapon Uplink Matrices</title>
-    <desc>Crew take -5% less damage and deal 25% more for each powered weapon bar, however weapons recharge 40% slower.</desc>
-    <cost>95</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_UPLINK">
+		<title>Weapon Uplink Matrices</title>
+		<desc>Crew take -5% less damage and deal 25% more for each powered weapon bar, however weapons recharge 40% slower.</desc>
+		<cost>95</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_PERFECT">
-    <title>Perfect Onboard Efficency</title>
-    <desc>+5% everything (crew stats, reload, shield)</desc>
-    <cost>140</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_PERFECT">
+		<title>Perfect Onboard Efficency</title>
+		<desc>+5% everything (crew stats, reload, shield)</desc>
+		<cost>140</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_MURAL">
-    <title>Aftermarket Murals</title>
-    <desc>+30% crew stats, 50% chance to take extra dmg</desc>
-    <cost>85</cost>
-    <rarity>0</rarity>
-		<value>0.5</value><!--Chance of taking damage, can be used with <function> tags in custom augments,
-													values greater than one mean guaranteed damage that number of times,
-													plus a chance for additional damage proportional to the remainder.
+	<augBlueprint name="FM_MODULAR_HULL_MURAL">
+		<title>Aftermarket Murals</title>
+		<desc>+30% crew stats, 50% chance to take extra dmg</desc>
+		<cost>85</cost>
+		<rarity>0</rarity>
+			<value>0.5</value><!--Chance of taking damage, can be used with <function> tags in custom augments,
+														values greater than one mean guaranteed damage that number of times,
+														plus a chance for additional damage proportional to the remainder.
 
-													EXAMPLE: If you had five FM_MODULAR_HULL_MURAL augments, your total value would be 0.5*5=2.5
-																		You would take:	2 damage, guaranteed, and a 0.5 chance for additional damage-->
-    <stackable>true</stackable>
-  </augBlueprint>
+														EXAMPLE: If you had five FM_MODULAR_HULL_MURAL augments, your total value would be 0.5*5=2.5
+																			You would take:	2 damage, guaranteed, and a 0.5 chance for additional damage-->
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_FASTSHIELD">
-    <title>Infinitum Cyclo-Barrier</title>
-    <desc>+800% Shield recharge speed, shield limited to lvl 4 (2 bubble), but no shields manning</desc>
-    <cost>80</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_FASTSHIELD">
+		<title>Infinitum Cyclo-Barrier</title>
+		<desc>+800% Shield recharge speed, shield limited to lvl 4 (2 bubble), but no shields manning</desc>
+		<cost>80</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_FASTWEAPON">
-    <title>Infinitum Cyclo-Arsenal</title>
-    <desc>+166% Weapon reload speed, weapons limited to lvl 3, no weapons manning</desc>
-    <cost>120</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_FASTWEAPON">
+		<title>Infinitum Cyclo-Arsenal</title>
+		<desc>+166% Weapon reload speed, weapons limited to lvl 3, no weapons manning</desc>
+		<cost>120</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
-  <augBlueprint name="FM_MODULAR_HULL_CREWKILL">
-    <title>Metaplasmatic Corrosion Aura</title>
-    <desc>enemy crew takes tripple damage, but only 50% combat damage</desc>
-    <cost>105</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+	<augBlueprint name="FM_MODULAR_HULL_CREWKILL">
+		<title>Metaplasmatic Corrosion Aura</title>
+		<desc>enemy crew takes tripple damage, but only 50% combat damage</desc>
+		<cost>105</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
 	<augBlueprint name="FM_MODULAR_HULL_MAGNETIC">
-    <title>Electromagnetic Hull Body</title>
-    <desc>+80% ion resist, +10% system resist, +10% scarp, magnet arm blue options, -3 reactor power</desc>
-    <cost>100</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+		<title>Electromagnetic Hull Body</title>
+		<desc>+80% ion resist, +10% system resist, +10% scarp, magnet arm blue options, -3 reactor power</desc>
+		<cost>100</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
 	<!--dirty fix to encased systems not stacking at all-->
 	<mod:findName type="augBlueprint" name="SYSTEM_CASING">

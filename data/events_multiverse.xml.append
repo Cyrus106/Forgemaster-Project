@@ -9902,6 +9902,22 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 
+		<choice req="FM_MODULAR_HULL_CLOAK_COOLDOWN" lvl="1"  blue="false" hidden="true">
+			<text>System Cooldown Module(Cloaking) [-5s cd]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="FM_MODULAR_HULL_HACK_COOLDOWN" lvl="1"  blue="false" hidden="true">
+			<text>System Cooldown Module(Hacking) [-5s cd]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="FM_MODULAR_HULL_MIND_COOLDOWN" lvl="1"  blue="false" hidden="true">
+			<text>System Cooldown Module(Mind Control) [-5s cd]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="FM_MODULAR_HULL_TEMPORAL_COOLDOWN" lvl="1"  blue="false" hidden="true">
+			<text>System Cooldown Module(Temporal Manipulator) [-5s cd]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
 	</event>
 
 	<!-- Very important thing to not nerf leah-->
