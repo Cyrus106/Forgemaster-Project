@@ -621,7 +621,7 @@
 		<unlock id="ship_PLAYER_SHIP_TWISTED_DUSK_unlock"/>
 		<desc>Created by a Duskbringer with a very clear goal in mind: to set the Guinness Multiverse record for the most war crimes in one fight.</desc>
 		<systemList>
-			<artillery power="1" room="3" start="true" weapon="CLONE_CANNON_SYMBIOTE_SPECIAL_PLAYER" img="room_artillery" />
+			<!--<artillery power="1" room="3" start="true" weapon="CLONE_CANNON_SYMBIOTE_SPECIAL_PLAYER" img="room_artillery" />-->
 			<battery power="1" room="16" start="true" img="room_battery_3" />
 			<cloaking power="1" room="12" start="false" img="room_cloaking" />
 			<clonebay power="2" max="4" room="6" start="true">
@@ -676,13 +676,14 @@
 				</slot>
 			</weapons>
 		</systemList>
-		<weaponSlots>4</weaponSlots>
+		<weaponSlots>5</weaponSlots>
 		<droneSlots>2</droneSlots>
-		<weaponList missiles="0" count="4">
+		<weaponList missiles="0" count="5">
 			<weapon name="CLONE_CANNON_CHIEF_SPECIAL_PLAYER" />
+			<weapon name="CLONE_CANNON_SYMBIOTE_SPECIAL_PLAYER" />
 			<weapon name="CLONE_CANNON" />
 			<weapon name="CLONE_CANNON" />
-			<weapon name="CLONE_CANNON" />
+			<weapon name="CLONE_CANNON_BABYORCHID" />
 		</weaponList>
 		<droneList drones="8" count="2">
 			<drone name="LOOT_SEPARATIST_1_DEFEND" />
