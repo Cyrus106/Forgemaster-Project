@@ -7,3 +7,10 @@ function()
       end
   end
 end)
+
+script.on_game_event("FM_BOSS_KES1_SUICIDE",false,
+function()
+  for artillery in mods.inferno.vter(Hyperspace.ships.player.artillerySystems) do
+    artillery:SetPowerCap(0)
+  end
+end)
