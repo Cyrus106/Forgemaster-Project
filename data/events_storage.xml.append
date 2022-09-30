@@ -5657,10 +5657,10 @@
 	<event name="GET_AC_CHARGE_STANDARD">
 		<weapon name="FM_RVS_AC_CHARGE"/>
 		<loadEventList>
-			<event req="MARKER_FLAGSHIP" lvl="0">
+			<event req="loc_flagship" lvl="0">
 				<loadEvent>COMBAT_CHECK</loadEvent>
 			</event>
-			<event req="MARKER_FLAGSHIP" lvl="1">
+			<event req="loc_flagship" lvl="1">
 				<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
 			</event>
 		</loadEventList>
@@ -5668,10 +5668,10 @@
 	<event name="GET_AC_CHARGE_CASELESS">
 		<weapon name="FM_RVS_AC_CHARGE_CASELESS"/>
 		<loadEventList>
-			<event req="MARKER_FLAGSHIP" lvl="0">
+			<event req="loc_flagship" lvl="0">
 				<loadEvent>COMBAT_CHECK</loadEvent>
 			</event>
-			<event req="MARKER_FLAGSHIP" lvl="1">
+			<event req="loc_flagship" lvl="1">
 				<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
 			</event>
 		</loadEventList>
@@ -5679,10 +5679,10 @@
 	<event name="GET_AC_CHARGE_HV">
 		<weapon name="FM_RVS_AC_CHARGE_HV"/>
 		<loadEventList>
-			<event req="MARKER_FLAGSHIP" lvl="0">
+			<event req="loc_flagship" lvl="0">
 				<loadEvent>COMBAT_CHECK</loadEvent>
 			</event>
-			<event req="MARKER_FLAGSHIP" lvl="1">
+			<event req="loc_flagship" lvl="1">
 				<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
 			</event>
 		</loadEventList>
@@ -5690,10 +5690,10 @@
 	<event name="GET_AC_CHARGE_FREE">
 		<weapon name="FM_RVS_AC_CHARGE_FREE"/>
 		<loadEventList>
-			<event req="MARKER_FLAGSHIP" lvl="0">
+			<event req="loc_flagship" lvl="0">
 				<loadEvent>COMBAT_CHECK</loadEvent>
 			</event>
-			<event req="MARKER_FLAGSHIP" lvl="1">
+			<event req="loc_flagship" lvl="1">
 				<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
 			</event>
 		</loadEventList>
@@ -5701,10 +5701,10 @@
 	<event name="GET_AC_CHARGE_HE">
 		<weapon name="FM_RVS_AC_CHARGE_HE"/>
 		<loadEventList>
-			<event req="MARKER_FLAGSHIP" lvl="0">
+			<event req="loc_flagship" lvl="0">
 				<loadEvent>COMBAT_CHECK</loadEvent>
 			</event>
-			<event req="MARKER_FLAGSHIP" lvl="1">
+			<event req="loc_flagship" lvl="1">
 				<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
 			</event>
 		</loadEventList>
@@ -5712,10 +5712,10 @@
 	<event name="GET_AC_CHARGE_EMP">
 		<weapon name="FM_RVS_AC_CHARGE_EMP"/>
 		<loadEventList>
-			<event req="MARKER_FLAGSHIP" lvl="0">
+			<event req="loc_flagship" lvl="0">
 				<loadEvent>COMBAT_CHECK</loadEvent>
 			</event>
-			<event req="MARKER_FLAGSHIP" lvl="1">
+			<event req="loc_flagship" lvl="1">
 				<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
 			</event>
 		</loadEventList>
@@ -5723,10 +5723,10 @@
 	<event name="GET_AC_CHARGE_HEAT">
 		<weapon name="FM_RVS_AC_CHARGE_HEAT"/>
 		<loadEventList>
-			<event req="MARKER_FLAGSHIP" lvl="0">
+			<event req="loc_flagship" lvl="0">
 				<loadEvent>COMBAT_CHECK</loadEvent>
 			</event>
-			<event req="MARKER_FLAGSHIP" lvl="1">
+			<event req="loc_flagship" lvl="1">
 				<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
 			</event>
 		</loadEventList>
@@ -5734,10 +5734,10 @@
 	<event name="GET_AC_CHARGE_INCENDIARY">
 		<weapon name="FM_RVS_AC_CHARGE_INCENDIARY"/>
 		<loadEventList>
-			<event req="MARKER_FLAGSHIP" lvl="0">
+			<event req="loc_flagship" lvl="0">
 				<loadEvent>COMBAT_CHECK</loadEvent>
 			</event>
-			<event req="MARKER_FLAGSHIP" lvl="1">
+			<event req="loc_flagship" lvl="1">
 				<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
 			</event>
 		</loadEventList>
@@ -5745,10 +5745,10 @@
 	<event name="GET_AC_CHARGE_FLECHETTE">
 		<weapon name="FM_RVS_AC_CHARGE_FLECHETTE"/>
 		<loadEventList>
-			<event req="MARKER_FLAGSHIP" lvl="0">
+			<event req="loc_flagship" lvl="0">
 				<loadEvent>COMBAT_CHECK</loadEvent>
 			</event>
-			<event req="MARKER_FLAGSHIP" lvl="1">
+			<event req="loc_flagship" lvl="1">
 				<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
 			</event>
 		</loadEventList>
@@ -5756,10 +5756,10 @@
 	<event name="GET_AC_CHARGE_RAD">
 		<weapon name="FM_RVS_AC_CHARGE_RAD"/>
 		<loadEventList>
-			<event req="MARKER_FLAGSHIP" lvl="0">
+			<event req="loc_flagship" lvl="0">
 				<loadEvent>COMBAT_CHECK</loadEvent>
 			</event>
-			<event req="MARKER_FLAGSHIP" lvl="1">
+			<event req="loc_flagship" lvl="1">
 				<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
 			</event>
 		</loadEventList>
@@ -9736,12 +9736,12 @@
   			<event load="OPTION_INVALID"/>
   	</choice>
 
-  	<choice blue="false" req="MARKER_FLAGSHIP" lvl="0" max_group="1"  >
+  	<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
   		<text>Do something else instead.</text>
   		<event load="COMBAT_CHECK"/>
   	</choice>
 
-  	<choice blue="false" req="MARKER_FLAGSHIP" lvl="1" max_group="1">
+  	<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
   		<text>Do something else instead.</text>
   		<event load="COMBAT_CHECK_FLAGSHIP"/>
   	</choice>
@@ -9905,12 +9905,12 @@
   	</choice>
 
 
-  	<choice blue="false" req="MARKER_FLAGSHIP" lvl="0" max_group="1"  >
+  	<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
   		<text>Do something else instead.</text>
   		<event load="COMBAT_CHECK"/>
   	</choice>
 
-  	<choice blue="false" req="MARKER_FLAGSHIP" lvl="1" max_group="1">
+  	<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
   		<text>Do something else instead.</text>
   		<event load="COMBAT_CHECK_FLAGSHIP"/>
   	</choice>

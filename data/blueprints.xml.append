@@ -90,6 +90,7 @@
 		<health amount="30" />
 		<maxPower amount="9" />
 		<aug name="FM_CRUCIBLE_PLATING_PLAYER" />
+		<shieldImage>mupc_ariadne</shieldImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_GUNSHIP_FM" layout="zfm_gunhydra_a" img="zfm_gunhydra_a">
 		<class>GunBomination</class>
@@ -1173,7 +1174,7 @@
 		<crewCount amount="1" class="rock" />
 		<aug name="OBSIDIAN_ARMOR_1" />
 		<aug name="TWISTED_HULL_ARM"/>
-		<shieldImage>mup_rock_a</shieldImage>
+		<shieldImage>mupc_ariadne</shieldImage>
 		<cloakImage>mup_rock_a</cloakImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED3_3" layout="zmt_player_lostsun_suicide" img="zmt_player_lostsun_suicide">
@@ -1247,7 +1248,7 @@
 		<maxPower amount="12" />
 		<aug name="TWISTED_LOSTSUN" />
 		<aug name="REGEN_ARMOR" />
-		<shieldImage>mup_lostsun_a</shieldImage>
+		<shieldImage>mupc_ariadne</shieldImage>
 		<cloakImage>mup_lostsun_a</cloakImage>
 	</shipBlueprint>
 
@@ -1406,7 +1407,7 @@
 		</crew>
 		<aug name="EX_CLOAK_FIRE" />
 		<aug name="EX_AUTO_COOLDOWN" />
-		<shieldImage>mup_stealth_a</shieldImage>
+		<shieldImage>mupc_alkali</shieldImage>
 		<cloakImage>mup_stealth_b</cloakImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED4_3" layout="zmt_player_zoltan_suicide" img="zmt_player_zoltan_suicide">
@@ -8903,6 +8904,10 @@
 				<statBoost name="deathEffect"><!--This modifies the stat of the crew, so that the same crew can be used for multiple weapons-->
 					<boostType>SET</boostType>
 					<deathEffect><!--When template crew dies (on weapon impact) this deathEffect will occur -->
+						<damage>10</damage>
+						<persDamage>7</persDamage>
+						<sysDamage>10</sysDamage>
+						<fireChance>10</fireChance>
 						<event>
 							<superBarrage player="true" name="TERMINUS_SURGE" />
 							<loadEvent>TERMINUS_SURGE_AFTER</loadEvent>
@@ -8956,6 +8961,49 @@
 		<speed>20</speed>
 		<accuracyMod>100</accuracyMod>
 		<roomStatBoosts>
+			<statBoost name="canRepair">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<shipTarget>ENEMY_SHIP</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<affectsSelf>false</affectsSelf>
+				<priority>999999</priority>
+				<duration>20</duration>
+			</statBoost>
+			<statBoost name="canMan">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<shipTarget>ENEMY_SHIP</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<affectsSelf>false</affectsSelf>
+				<priority>999999</priority>
+				<duration>20</duration>
+			</statBoost>
+			<statBoost name="canFight">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<shipTarget>ENEMY_SHIP</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<affectsSelf>false</affectsSelf>
+				<priority>999999</priority>
+			</statBoost>
+			<statBoost name="canMove">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<shipTarget>ENEMY_SHIP</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<affectsSelf>false</affectsSelf>
+				<priority>999999</priority>
+				<boostAnim>pheromones_f</boostAnim>
+			</statBoost>
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<amount>-5</amount>
+				<shipTarget>ENEMY_SHIP</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<affectsSelf>false</affectsSelf>
+				<priority>999999</priority>
+			</statBoost>
 			<statBoost name="suffocationModifier"> <!--Everybody suffocates more-->
 				<boostType>MULT</boostType>
 				<amount>2</amount>
@@ -11695,7 +11743,7 @@
 			<count>999</count>
 		</boost>
 		<launchSounds>
-			<sound>beam2</sound>
+			<sound>focus_weak</sound>
 		</launchSounds>
 		<weaponArt>fm_mini_yari</weaponArt>
 		<iconImage>beam</iconImage>

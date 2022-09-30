@@ -1191,7 +1191,7 @@
 				<room id="9">
 					<roomAnim renderLayer="0">resist_2x2</roomAnim>
 					<roomAnim renderLayer="3">resist_icon75</roomAnim>
-					<sysDamageResistChance>80</sysDamageResistChance>
+					<sysDamageResistChance>75</sysDamageResistChance>
 				</room>
 			</rooms>
 			<crew>
@@ -16042,7 +16042,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</mod-append:category>
 			<mod-append:category type="WEAPONS">
 				<item>
-					<blueprint>FM_DISC_LAUNCHER</blueprint>
+					<blueprint>FM_ENERGY_DISC</blueprint>
 				</item>
 				<item>
 					<blueprint>FM_CHAINGUN_ION</blueprint>
@@ -16092,7 +16092,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<blueprint>FM_BOMB_CRYSTAL_BIO</blueprint>
 				</item>
 				<item>
-					<blueprint>FM_BOMBLAUNCHER_HULL</blueprint>
+					<blueprint>FM_MINELAUNCHER_HULL</blueprint>
 				</item>
 			</mod-append:category>
 			<mod-append:category type="WEAPONS">
@@ -16169,7 +16169,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<blueprint>FM_ENERGY_RAILBLENDER</blueprint>
 				</item>
 				<item>
-					<blueprint>FM_BEAM_BASELISK</blueprint>
+					<blueprint>FM_BEAM_BASILISK</blueprint>
 				</item>
 			</mod-append:category>
 			<mod-append:category type="WEAPONS">
