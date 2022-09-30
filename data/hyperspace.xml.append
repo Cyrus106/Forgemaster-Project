@@ -10,6 +10,7 @@
 		<mod-append:script>data/forgemaster_scripts/modhull.lua</mod-append:script> <!--The script folders are named differently because of issues when two script files share the same path.-->
 		<mod-append:script>data/forgemaster_scripts/surges.lua</mod-append:script>
 		<mod-append:script>data/forgemaster_scripts/triggered_events.lua</mod-append:script>
+		<mod-append:script>data/forgemaster_scripts/weapons.lua</mod-append:script>
 	</mod:findLike>
 </FTL>
 

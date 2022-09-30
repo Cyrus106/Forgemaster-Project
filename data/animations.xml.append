@@ -339,7 +339,7 @@
 
 <FTL>
 
-	
+
 <animSheet name="fm_plated_shell" w="385" h="455" fw="35" fh="35">people/fm_plated_shell_base.png</animSheet>
 <anim name="fm_plated_shell_portrait">
 	<sheet>fm_plated_shell</sheet>
@@ -460,12 +460,12 @@
 	<sheet>fm_plated_shell</sheet>
 	<desc length="11" x="0" y="12"/>
 	<time>0.25</time>
-</anim>	
-	
+</anim>
+
 </FTL>
 
 <FTL>
-	
+
 	<animSheet name="fm_separatist_twisted" w="315" h="455" fw="35" fh="35">people/fm_separatist_twisted_base.png</animSheet>
 <anim name="fm_separatist_twisted_clone">
 	<sheet>fm_separatist_twisted</sheet>
@@ -713,11 +713,11 @@
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 </anim>
-	
+
 </FTL>
 
 <FTL>
-	
+
 <animSheet name="fm_separatist_cobalt" w="315" h="455" fw="35" fh="35">people/fm_separatist_cobalt_base.png</animSheet>
 <anim name="fm_separatist_cobalt_clone">
 	<sheet>fm_separatist_cobalt</sheet>
@@ -965,11 +965,11 @@
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 </anim>
-	
+
 </FTL>
 
 <FTL>
-	
+
 <animSheet name="fm_nano_cobalt" w="315" h="455" fw="35" fh="35">people/fm_nano_cobalt_base.png</animSheet>
 <anim name="fm_nano_cobalt_clone">
 	<sheet>fm_nano_cobalt</sheet>
@@ -1091,7 +1091,7 @@
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 </anim>
-	
+
 </FTL>
 
 <FTL> <!--Explosion Beam Crew-->
@@ -4088,6 +4088,17 @@ try this later
 
 <FTL><!-- LASERS-->
 
+	<animSheet name="fm_surge_laser" w="2450" h="110" fw="70" fh="110">weapon_laser/fm_surge_laser.png</animSheet>
+	<weaponAnim name="fm_surge_laser">
+		<sheet>fm_surge_laser</sheet>
+		<desc length="35" x="0" y="0"/>
+		<chargedFrame>1</chargedFrame>
+		<fireFrame>32</fireFrame>
+		<firePoint  x="45" y="20"/>
+		<mountPoint x="6" y="78"/>
+		<chargeImage>weapon_laser/fm_surge_laser_glow.png</chargeImage>
+	</weaponAnim>
+
 	<animSheet name="fm_abduct_laser" w="1440" h="95" fw="45" fh="95">weapon_laser/fm_abduct_laser.png</animSheet>
 	<weaponAnim name="fm_abduct_laser">
 		<sheet>fm_abduct_laser</sheet>
@@ -5091,6 +5102,12 @@ try this later
 
 
 <FTL><!-- LASER PROJECTILES -->
+	<animSheet name="fm_surge_laser_proj" w="27" h="10" fw="27" fh="10">weapon_projectiles/fm_surge_laser_proj.png</animSheet>
+	<anim name="fm_surge_laser_proj">
+		<sheet>fm_surge_laser_proj</sheet>
+		<desc length="1" x="0" y="0"/>
+		<time>1</time>
+	</anim>
 
 	<animSheet name="fm_abduct_laser_proj" w="80" h="15" fw="80" fh="15">weapon_projectiles/fm_abduct_laser_proj.png</animSheet>
 	<anim name="fm_abduct_laser_proj">
@@ -5736,7 +5753,7 @@ try this later
 		<firePoint  x="60" y="1"/>
 		<mountPoint x="35" y="45"/>
 	</weaponAnim>
-	
+
 	<animSheet name="fm_meatman" w="315" h="455" fw="35" fh="35">people/fm_meatman_base.png</animSheet>
 	<anim name="fm_meatman_clone">
 		<sheet>fm_meatman</sheet>
@@ -5857,7 +5874,7 @@ try this later
 		<sheet>fm_meatman</sheet>
 		<desc length="1" x="0" y="0"/>
 		<time>1</time>
-	</anim>	
+	</anim>
 </FTL>
 
 <FTL> <!--Eldritch horrors content-->

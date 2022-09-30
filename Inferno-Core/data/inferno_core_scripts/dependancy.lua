@@ -47,6 +47,15 @@ mods.inferno.getLimitAmount=function(sys_id)
   --because divide overrides everything, it would be best to call Hyperspace.ships.player:ClearStatusSystem(sys_id) before applying a new limit based upon the old
 end
 
+script.on_game_event("ADD_LIMIT",false,function()
+  local first_limit=mods.inferno.getLimitAmount(1)
+  Hyperspace.ships.player:ClearStatusSystem(1)
+  local new_limit=first_limit+1
+  local cap=Hyperspace.ships.player:GetSystemPowerMax(1)
+  Hyperspace.ships.player:GetSystem(1):SetPowerCap(cap-new_limit)
+end)
+
+
 mods.inferno.up={
     timer=999,--So it doesn't render on game startup
     config={

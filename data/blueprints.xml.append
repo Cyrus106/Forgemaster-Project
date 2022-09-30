@@ -4431,6 +4431,66 @@
 </FTL>
 
 <FTL> <!--LASERS-->
+	<weaponBlueprint name="FM_SURGE_LASER">
+		<type>LASER</type>
+		<title>'Multiplicity' Barrage Laser</title>
+		<short>'Multiplicity'</short>
+		<tip>tip_laser</tip>
+		<desc>Placeholder</desc>
+		<!--<descriptionOverride>A powerful laser weapon.
+
+			Stats:
+			Required Power: 4
+			Charge Time: 20 seconds
+
+			Shots Fired: 15
+
+			Base Hull Damage: 1
+			Total Crew Damage: 30
+			Ion Damage: 2 (Rooms Only)
+
+			Fire Chance: 40%
+			Stun Chance: 100% (3 seconds long)
+
+			Buy/Sell Price: 230~/115~
+		</descriptionOverride>-->
+		<tooltip>.</tooltip>
+		<damage>1</damage>
+		<shots>15</shots>
+		<simultaneousFire>true</simultaneousFire>
+		<sp>0</sp>
+		<fireChance>2</fireChance>
+		<breachChance>2</breachChance>
+		<cooldown>20</cooldown>
+		<speed>65</speed>
+		<power>4</power>
+		<cost>230</cost>
+		<fireTime>0.6</fireTime>
+		<bp>2</bp>
+		<rarity>0</rarity>
+		<image>fm_surge_laser_proj</image>
+		<iconScale>0.7</iconScale>
+		<launchSounds>
+			<sound>heavyLaser1</sound>
+			<sound>heavyLaser2</sound>
+			<sound>heavyLaser3</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull1</sound>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_surge_laser</weaponArt>
+		<iconImage>laser</iconImage>
+	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_ABDUCT_LASER">
 		<type>LASER</type>
@@ -20454,7 +20514,7 @@
 		<rarity>0</rarity>
 		<stackable>true</stackable>
 	</augBlueprint>
-	
+
 	<augBlueprint name="LOCKED_RAMMING_SPEED">
 		<title>Ramming Speed</title>
 		<desc>This ship is capable of ramming enemy ships, at great risk to its' hull integrity and engines.</desc>
@@ -20470,7 +20530,7 @@
 		<rarity>0</rarity>
 		<stackable>true</stackable>
 	</augBlueprint>
-	
+
 	<augBlueprint name="FORGEMASTER_ION_ARMOR">
 		<title>ION ARMOR</title>
 		<desc>You Monster</desc>
@@ -20478,7 +20538,7 @@
 		<rarity>0</rarity>
 		<stackable>true</stackable>
 	</augBlueprint>
-	
+
 	<augBlueprint name="FM_SUPER_AUTO_COOLDOWN">
 		<title>ERROR</title>
 		<desc>Shouldn't see this.</desc>
@@ -20874,7 +20934,7 @@
 		<rarity>0</rarity>
 		<stackable>false</stackable>
 	</augBlueprint>
-	
+
 	<augBlueprint name="LOCKED_SUPER_DEPRESSION">
 		<title>Motivation Succer</title>
 		<desc>Casts a depressive effect on the enemy crew, causing them to drain one more power than usual from their own systems.</desc>
@@ -21128,7 +21188,7 @@
 		<rarity>0</rarity>
 		<stackable>false</stackable>
 	</augBlueprint>
-	
+
 	<augBlueprint name="AUG_MAGATAMA">
 		<title>Magatama</title>
 		<desc>Effects: +40% crew heal speed, -5% damage taken for crew.</desc>
