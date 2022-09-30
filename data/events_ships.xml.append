@@ -3796,7 +3796,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<variable name="ach_fm_boss_tuco" op="set" val="1"/>
+		<variable name="ach_fm_boss_leech" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_LEECH</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_LEECH_3" silent="false">PLAYER_SHIP_TWISTED7_3</unlockCustomShip>
 
@@ -3875,7 +3875,7 @@
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
-		<variable name="ach_fm_boss_tuco" op="set" val="1"/>
+		<variable name="ach_fm_boss_leech" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_LEECH</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_LEECH_3" silent="false">PLAYER_SHIP_TWISTED7_3</unlockCustomShip>
 
