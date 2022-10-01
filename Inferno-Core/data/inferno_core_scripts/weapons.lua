@@ -13,11 +13,17 @@ function()
         weapon.chargeLevel=0
       end
       if Hyperspace.ships.player.weaponSystem:Powered() or (Hyperspace.ships.player:HasEquipment("fmcore_conservative_fix")==1) then
-        local projectile=weapon:GetProjectile()
-        if projectile then
-          Hyperspace.Global.GetInstance():GetCApp().world.space.projectiles:push_back(projectile)
-          mods.inferno.weapon_functions:fire(weapon,projectile)
+
+        while true do
+          local projectile=weapon:GetProjectile()
+          if projectile then
+            Hyperspace.Global.GetInstance():GetCApp().world.space.projectiles:push_back(projectile)
+            mods.inferno.weapon_functions:fire(weapon,projectile)
+          else
+            break
+          end
         end
+
       end
     end
   end
@@ -56,22 +62,43 @@ crystalShard = false;
 bFriendlyFire = true;
 iStun = 0;
 ]]
+mods.inferno.real_projectile = function(projectile) --replace when we have access to the death animation and can check directly
+  if projectile.damage.iDamage == 0 and
+    projectile.damage.iShieldPiercing == 0 and
+    projectile.damage.fireChance == 0 and
+    projectile.damage.breachChance == 0 and
+    projectile.damage.stunChance == 0 and
+    projectile.damage.iIonDamage == 0 and
+    projectile.damage.iSystemDamage == 0 and
+    projectile.damage.iPersDamage == 0 and
+    projectile.damage.bHullBuster == false and
+    projectile.damage.ownerId == -1 and
+    projectile.damage.selfId == -1 and
+    projectile.damage.bLockdown == false and
+    projectile.damage.crystalShard == false and
+    projectile.damage.bFriendlyFire == true and
+    projectile.damage.iStun == 0
+  then
+    return false
+  else
+    return true
+  end
+end
 
 mods.inferno.weapon_functions:append({
 function(weapon,projectile)
-  if Hyperspace.ships.player:GetAugmentationValue("WEAPON_LOCKDOWN")>0 then
+  if Hyperspace.ships.player:GetAugmentationValue("WEAPON_LOCKDOWN")>0 and mods.inferno.real_projectile(projectile) then
     projectile.damage.bLockdown=true
-    if projectile._targetable.type==2 then --so it applies to flak projectiles, this may not be the proper solution
-      for proj in mods.inferno.vter(weapon.queuedProjectiles) do
-        proj.damage.bLockdown=true
-      end
-    end
   end
 end,
 
 function(weapon,projectile)
   local beam_pierce_modifier=Hyperspace.ships.player:GetAugmentationValue("AUG_BEAM_PIERCE")
   if projectile:GetType()==5 then
+    --conditional fix for weapons with negative damage
+    projectile.damage.iShieldPiercing=math.max(projectile.damage.iShieldPiercing,1-projectile.damage.iDamage)
+
+
     projectile.damage.iShieldPiercing=projectile.damage.iShieldPiercing+beam_pierce_modifier
   end
 end,
