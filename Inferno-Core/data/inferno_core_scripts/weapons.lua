@@ -1,3 +1,4 @@
+wa=false
 script.on_internal_event(Defines.InternalEvents.ON_TICK,
 function()
   local weapons=nil
@@ -11,10 +12,12 @@ function()
         weapon.cooldown.first=0
         weapon.chargeLevel=0
       end
-      local projectile=weapon:GetProjectile()
-      if projectile then
-        Hyperspace.Global.GetInstance():GetCApp().world.space.projectiles:push_back(projectile)
-        mods.inferno.weapon_functions:fire(weapon,projectile)
+      if Hyperspace.ships.player.weaponSystem:Powered() or (Hyperspace.ships.player:HasEquipment("fmcore_conservative_fix")==1) then
+        local projectile=weapon:GetProjectile()
+        if projectile then
+          Hyperspace.Global.GetInstance():GetCApp().world.space.projectiles:push_back(projectile)
+          mods.inferno.weapon_functions:fire(weapon,projectile)
+        end
       end
     end
   end
@@ -28,6 +31,7 @@ mods.inferno.weapon_functions={
         end
   end,
   fire = function(self,weapon,projectile)
+    mods.inferno.up:qs(weapon.name.." Just Fired!")
     for key,func in ipairs(self) do
       func(weapon,projectile)
     end

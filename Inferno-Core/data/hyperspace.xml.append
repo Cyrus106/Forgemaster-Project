@@ -1,5 +1,7 @@
 <FTL><!--Inferno-Core-->
 	<events>
+		<variable name="fmcore_conservative_fix" op="set" val="0"/>
+		
 		<variable name="fmcore_called_cura" op="set" val="0"/>
 		<variable name="fmcore_used_hs_aug" op="set" val="0"/>
 		<req name="FMCORE_LIST_JUMPSPACE_EQUIPMENT">

@@ -19,3 +19,21 @@
         <mod:setAttributes req="pilot" lvl="1" max_group="2" blue="false"/>
     </mod:findWithChildLike>
   </mod:findName>
+
+<mod:findName type="event" name="COMBAT_CHECK_TOGGLE">
+  <mod-append:choice req="fmcore_conservative_fix" lvl="1" max_lvl="1" blue="false">
+    <text>Conservative weapons fire when depowered. [Currently Enabled]</text>
+    <event>
+      <variable name="fmcore_conservative_fix" op="set" val="0"/>
+      <loadEvent>COMBAT_CHECK_TOGGLE</loadEvent>
+    </event>
+  </mod-append:choice>
+
+  <mod-append:choice req="fmcore_conservative_fix" lvl="0" max_lvl="0" blue="false">
+    <text>Conservative weapons fire when depowered. [Currently Disabled]</text>
+    <event>
+      <variable name="fmcore_conservative_fix" op="set" val="1"/>
+      <loadEvent>COMBAT_CHECK_TOGGLE</loadEvent>
+    </event>
+  </mod-append:choice>
+</mod:findName>
