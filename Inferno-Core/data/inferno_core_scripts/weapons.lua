@@ -31,7 +31,7 @@ mods.inferno.weapon_functions={
         end
   end,
   fire = function(self,weapon,projectile)
-    mods.inferno.up:qs(weapon.name.." Just Fired!")
+    --mods.inferno.up:qs(weapon.name.." Just Fired!")
     for key,func in ipairs(self) do
       func(weapon,projectile)
     end
