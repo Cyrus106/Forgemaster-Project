@@ -5456,15 +5456,21 @@
 			</deathSounds>
       <passiveStatBoosts>
 				<statBoost name="deathEffect">
-					<boostType>SET</boostType>
-					<whiteList>
-						<fm_separatist_bronze />
-					</whiteList>
+					<boostType>FLAT</boostType>
+					<animSheet baseVisible="true">pheromones</animSheet>
 					<shipTarget>CREW_TARGET</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
 					<deathEffect>
-						<transformRace class="fm_separatist_bronze">fm_nano_bronze</transformRace>
+				<statBoosts>
+				<statBoost name="transformRace">
+					<boostType>FLAT</boostType>
+					<shipTarget>TARGETS_ME</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+					<transformRace class="fm_separatist_bronze">fm_nano_bronze</transformRace>
+			        </statBoost>
+				</statBoosts>
 					</deathEffect>
 				</statBoost>
       </passiveStatBoosts>
@@ -5560,7 +5566,7 @@
       </deathEffect>
 		<!--	        <passiveStatBoosts>
 				<statBoost name="deathEffect">
-					<boostType>SET</boostType>
+					<boostType>FLAT</boostType>
 					<whiteList>
 						<fm_separatist_twisted />
 					</whiteList>
