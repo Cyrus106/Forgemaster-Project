@@ -124,3 +124,21 @@
 	<value>1</value><!--Shield Piercing-->
 	<stackable>true</stackable>
 </augBlueprint>
+
+<augBlueprint name="SKILLED_MANNING">
+	<title>Skilled Manning</title>
+	<desc>Provides one level of automated system manning shipwide</desc>
+	<cost>80</cost>
+	<rarity>0</rarity>
+	<value>1</value>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="CLONE_SPEED">
+	<title>Clonebay Speed Modifier</title>
+	<desc>Makes clonebay work twice as fast.</desc>
+	<cost>45</cost>
+	<rarity>0</rarity>
+	<value>1</value><!--Doubles cloning speed-->
+	<stackable>true</stackable>
+</augBlueprint>

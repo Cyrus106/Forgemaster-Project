@@ -4432,6 +4432,47 @@
 </FTL>
 
 <FTL> <!--LASERS-->
+	<weaponBlueprint name="FM_CHARGE_SNIPER">
+	    <type>LASER</type>
+	    <title>Charge Sniper</title>
+	    <short>C. Sniper</short>
+	    <tip>tip_sniper</tip>
+	    <desc>Fires a single shot that becomes more powerful the longer you wait to fire.</desc>
+	    <tooltip>Gains 2 damage and 1 shield pierce per charge.</tooltip>
+	    <damage>2</damage>
+	    <shots>1</shots>
+	    <sp>0</sp>
+	    <fireChance>0</fireChance>
+	    <breachChance>0</breachChance>
+			<accuracyMod>100</accuracyMod>
+	    <cooldown>10</cooldown>
+			<chargeLevels>4</chargeLevels>
+	    <power>4</power>
+	    <cost>75</cost>
+	    <speed>65</speed>
+	    <bp>2</bp>
+	    <rarity>0</rarity>
+	    <image>laser_heavy</image>
+	    <launchSounds>
+	        <sound>heavyLaser1</sound>
+	    </launchSounds>
+	    <hitShipSounds>
+	        <sound>hitHull2</sound>
+	        <sound>hitHull3</sound>
+	    </hitShipSounds>
+	    <hitShieldSounds>
+	        <sound>hitShield1</sound>
+	        <sound>hitShield2</sound>
+	        <sound>hitShield3</sound>
+	    </hitShieldSounds>
+	    <missSounds>
+	        <sound>miss</sound>
+	    </missSounds>
+	    <weaponArt>charge_sniper</weaponArt>
+	    <iconImage>laser</iconImage>
+	</weaponBlueprint>
+
+
 	<weaponBlueprint name="FM_SURGE_LASER">
 		<type>LASER</type>
 		<title>'Multiplicity' Barrage Laser</title>

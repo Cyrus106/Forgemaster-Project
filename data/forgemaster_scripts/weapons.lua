@@ -14,4 +14,17 @@ mods.inferno.weapon_functions:append({
         projectile.entryAngle=-1 --Sets it to randomize on entry
     end
   end,
+
+  function(weapon,projectile)
+    if weapon.name=="Charge Sniper" then
+      local boost=weapon.queuedProjectiles:size()
+      projectile.damage.iDamage=projectile.damage.iDamage+(2*boost)
+      projectile.damage.iShieldPiercing=projectile.damage.iShieldPiercing+boost
+      projectile.speed_magnitude=projectile.speed_magnitude*(1+(boost/2))
+      projectile.breachChance=math.floor(2.5*(boost+1))
+      for i=1,boost do
+        weapon.queuedProjectiles[i-1]:Kill()
+      end
+    end
+  end,
 })

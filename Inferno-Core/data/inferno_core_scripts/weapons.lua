@@ -12,7 +12,9 @@ function()
         weapon.cooldown.first=0
         weapon.chargeLevel=0
       end
-      if Hyperspace.ships.player.weaponSystem:Powered() or (Hyperspace.ships.player:HasEquipment("fmcore_conservative_fix")==1) then
+
+
+      --if (Hyperspace.ships.player.weaponSystem:Powered() or (Hyperspace.ships.player:HasEquipment("fmcore_conservative_fix")==1)) then
 
         while true do
           local projectile=weapon:GetProjectile()
@@ -24,7 +26,7 @@ function()
           end
         end
 
-      end
+      --end
     end
   end
 end)

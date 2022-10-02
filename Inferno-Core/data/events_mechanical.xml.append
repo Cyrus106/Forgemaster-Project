@@ -4,6 +4,7 @@
      <jumps amount="1" type="0"/>
    </triggeredEvent>
    <!--<queueEvent>EVENTNAME</queueEvent> append more of those lines for each independent effect-->
+   <queueEvent>FMCORE_ONCREWZERO_SETUP</queueEvent>
  </event>
  <event name="FMCORE_ONDAMAGE">
    <triggeredEvent name="FMCORE_ONDAMAGE" event="FMCORE_ONDAMAGE">
@@ -11,32 +12,27 @@
    </triggeredEvent>
    <!--<queueEvent>EVENTNAME</queueEvent> append more of those lines for each independent effect-->
  </event>
- <event name="FMCORE_ONCREWZERO">
+ <event name="FMCORE_ONCREWZERO_SETUP">
     <triggeredEvent name="FMCORE_ONCREWZERO" event="FMCORE_ONCREWZERO">
-      <enemyCrew amount="0" includeClonebay="true"/><!--Triggers when enemy has no crew, can be used for CK/autoship-specific things that can be checked in lua, may have to implement queueEvent for when the ship CHANGES to an auto so it checks after that, depending on order of events-->
+      <enemyCrew amount="0" includeClonebay="true" thisFight="true"/><!--Triggers when enemy has no crew, can be used for CK/autoship-specific things that can be checked in lua, may have to implement queueEvent for when the ship CHANGES to an auto so it checks after that, depending on order of events-->
     </triggeredEvent>
-   <!--<queueEvent>EVENTNAME</queueEvent> append more of those lines for each independent effect-->
  </event>
+ <event name="FMCORE_ONCREWZERO"/>
  <event name="FMCORE_RESET" unused="true"><!-- use this if you installed mid-run to activate the effects-->
-   <text>Inferno-Core ONJUMP, ONDAMAGE, and ONCREWZERO functions have been reset</text>
+   <text>Inferno-Core ONJUMP, ONDAMAGE functions have been reset</text>
    <clearTriggeredEvent name="FMCORE_ONJUMP"/>
    <clearTriggeredEvent name="FMCORE_ONDAMAGE"/>
-   <clearTriggeredEvent name="FMCORE_ONCREWZERO"/>
    <triggeredEvent name="FMCORE_ONDAMAGE" event="FMCORE_ONDAMAGE">
      <playerDamage amount="1" countRepairs="false"/>
    </triggeredEvent>
    <triggeredEvent name="FMCORE_ONJUMP" event="FMCORE_ONJUMP">
      <jumps amount="1" type="0"/>
    </triggeredEvent>
-   <triggeredEvent name="FMCORE_ONCREWZERO" event="FMCORE_ONCREWZERO">
-     <enemyCrew amount="0" includeClonebay="true"/><!--Triggers when enemy has no crew, can be used for CK/autoship-specific things that can be checked in lua, may have to implement queueEvent for when the ship CHANGES to an auto so it checks after that, depending on order of events-->
-   </triggeredEvent>
  </event>
  <event name="FMCORE_DEACTIVATE" unused="true"><!-- use this if you are updating mid-run, use FMCORE_RESET after updating-->
-   <text>Inferno-Core ONJUMP, ONDAMAGE, and ONCREWZERO disabled, updating should be safe now.</text>
+   <text>Inferno-Core ONJUMP, ONDAMAGE disabled, updating should be safe now.</text>
    <clearTriggeredEvent name="FMCORE_ONJUMP"/>
    <clearTriggeredEvent name="FMCORE_ONDAMAGE"/>
-   <clearTriggeredEvent name="FMCORE_ONCREWZERO"/>
  </event>
  <event name="TRUENOTHING">
    <text></text>

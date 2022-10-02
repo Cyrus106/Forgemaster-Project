@@ -4087,6 +4087,15 @@ try this later
 <boost>beam_menaulion_chargeglow</boost>	-->
 
 <FTL><!-- LASERS-->
+	<animSheet name="charge_sniper" w="1036" h="86" fw="28" fh="86">weapon_laser/charge_laser_sniper.png</animSheet>
+	<weaponAnim name="charge_sniper">
+		<sheet>charge_sniper</sheet>
+		<desc length="37" x="0" y="0"/>
+		<chargedFrame>1</chargedFrame>
+		<fireFrame>5</fireFrame>
+		<firePoint  x="16" y="36" charge="0"/>
+		<mountPoint x="4" y="60"/>
+	</weaponAnim>
 
 	<animSheet name="fm_surge_laser" w="2450" h="110" fw="70" fh="110">weapon_laser/fm_surge_laser.png</animSheet>
 	<weaponAnim name="fm_surge_laser">
