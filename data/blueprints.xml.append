@@ -922,18 +922,18 @@
 		<weaponSlots>4</weaponSlots>
 		<droneSlots>3</droneSlots>
 		<weaponList missiles="10" count="4">
-			<weapon name="BEAM_1" />
-			<weapon name="LASER_LIGHT_2" />
-			<weapon name="BOMB_HEAL_SYSTEM" />
+			<weapon name="BOMB_LOCKDOWN" />
+			<weapon name="BOMB_FIRE" />
 		</weaponList>
 		<droneList drones="7" count="3">
-			<drone name="BATTLETOG_DEFEND" />
-			<drone name="REPAIR" />
+			<drone name="FM_FIRE_INTRUDER" />
 			<drone name="REPAIR" />
 		</droneList>
 		<health amount="30" />
 		<maxPower amount="8" />
 		<crewCount amount="1" class="engi_separatist" />
+		<crewCount amount="1" class="fm_separatist_bronze" />
+		<crewCount amount="1" class="fm_separatist_cobalt" />
 		<aug name="LOCKED_NANOBOT_DEFENSE_SYSTEM" />
 		<aug name="EX_DRONE_SPEED" />
 		<shieldImage>mup_separatist_a</shieldImage>
@@ -2884,7 +2884,7 @@
 		<rarity>0</rarity>
 		<powerList>
 			<power>- Upon death, splits into a Nano Cobalt Separatist and a Regular Bronze Separatist.</power>
-			<power>- When killing an enemy, splits into a Nano Bronze Separatist and a Regular Cobalt Separatist.</power>
+			<power>- Upon killing an enemy, spreads fires in the current room.</power>
 		</powerList>
 	</crewBlueprint>
 
@@ -2930,7 +2930,7 @@
 			<power>- Cannot burn, takes reduced suffocation damage.</power>
 			<power>- Can teleport anywhere on the current ship.</power>
 			<power>- Active Ability: Merge with a Cobalt Separatist.</power>
-                        <power>- Passive Ability: Upon killing an enemy, destabilises and enters Nano mode, gaining a 2x speed boost, ignores doors and spreads fires for 5s.</power>
+                        <power>- Passive Ability: Upon killing an enemy, spreads fires through the current room.</power>
 		</powerList>
 	</crewBlueprint>
 
