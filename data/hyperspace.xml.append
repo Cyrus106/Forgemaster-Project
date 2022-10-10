@@ -8322,6 +8322,13 @@
 			<tooltipName>Fire Intruder</tooltipName>
 		</drone>
 	</drones>
+	
+	<drones>  <!--Fire Intruder Drone! -->
+		<drone name="FM_FIRE_INTRUDER_PLAYER">	<!--Fire Intruder Drone! Drone hyperspace declare -->
+			<crewBlueprint>fm_fire_intruder</crewBlueprint>
+			<tooltipName>Fire Intruder</tooltipName>
+		</drone>
+	</drones>
 
 	<drones>  <!--Ancalagon Battle Drone! -->
 		<drone name="FM_ANCALAGON_BATTLE">	<!--Ancalagon Battle Drone! Drone hyperspace declare -->
