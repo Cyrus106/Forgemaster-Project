@@ -911,7 +911,7 @@
 					<number>0</number>
 				</slot>
 			</shields>
-			<teleporter power="1" room="14" start="false" />
+			<teleporter power="1" room="14" start="true" />
 			<weapons power="3" max="8" room="3" start="true" img="room_weapons_8">
 				<slot>
 					<direction>up</direction>
@@ -20702,6 +20702,15 @@
 		<bp>5</bp>
 		<rarity>0</rarity>
 		<stackable>true</stackable>
+	</augBlueprint>
+	
+		<augBlueprint name="TWISTED_SEPARATIST_TELEPORT">
+		<title>Murder-Bot Teleportation Network</title>
+		<desc>Alongside dealing 2.7hp/s to all enemy crew on board, allows crew to teleport to other sections of the ship while in certain system rooms.</desc>
+		<cost>50</cost>
+		<bp>5</bp>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
 	</augBlueprint>
 
 	<augBlueprint name="SHIP_GUNBOM">
