@@ -13107,6 +13107,60 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 			</statBoosts>
 		</aug>
+		
+		<aug name="TWISTED_SEPARATIST_TELEPORT">
+		<locked/>
+		<function name="NANOBOT_DEFENSE_SYSTEM" useForReqs="true" warning="true"/>
+		<statBoosts>
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<amount>-2.7</amount>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<priority>999</priority>
+			</statBoost>
+			<statBoost name="teleportMove">
+				<boostType>SET</boostType>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<value>true</value>
+				<systemList>
+					<engines/>
+				</systemList>
+				<systemRoomTarget>ALL</systemRoomTarget>
+				<systemPowerDependency>
+					<engines/>
+				</systemPowerDependency>
+				<systemPowerScaling>
+					<noSys>0.0</noSys>
+					<hackedSys>0.0</hackedSys>
+					<noPwr>0.0</noPwr>
+					<onePwr>1.0</onePwr>
+				</systemPowerScaling>
+			</statBoost>
+			<statBoost name="teleportMove">
+				<boostType>SET</boostType>
+				<shipTarget>ORIGINAL_SHIP</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<value>true</value>
+				<systemList>
+					<drones/>
+				</systemList>
+				<systemRoomTarget>ALL</systemRoomTarget>
+				<systemPowerDependency>
+					<shields/>
+				</systemPowerDependency>
+				<systemPowerScaling>
+					<noSys>0.0</noSys>
+					<hackedSys>0.0</hackedSys>
+					<noPwr>0.0</noPwr>
+					<onePwr>1.0</onePwr>
+				</systemPowerScaling>
+			</statBoost>
+		</statBoosts>
+    </aug>
 
 	</augments>
 
