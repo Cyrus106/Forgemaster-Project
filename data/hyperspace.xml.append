@@ -433,6 +433,16 @@
 				<baseCost>15</baseCost>
 				<increment>5</increment>
 			</customReactor>
+			<rooms>
+				<room id="9"> <!--Drones-->
+					<roomAnim renderLayer="2">telepad_ico</roomAnim>
+				        <roomAnim renderLayer="1">telepad_on</roomAnim>
+				</room>
+				
+				<room id="4"> <!--Engines-->
+					<roomAnim renderLayer="2">telepad_ico</roomAnim>
+				        <roomAnim renderLayer="1">telepad_on</roomAnim>
+				</room>
 		</mod-append:customShip>
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED2_3"><!--mantis-->
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
