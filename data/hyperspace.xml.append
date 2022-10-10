@@ -5463,7 +5463,6 @@
       <passiveStatBoosts>
 				<statBoost name="deathEffect">
 					<boostType>FLAT</boostType>
-					<animSheet baseVisible="true">pheromones</animSheet>
 					<shipTarget>CREW_TARGET</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
@@ -5478,7 +5477,7 @@
 				<buttonText>ABSORB</buttonText>
 				<tooltip>[COOLDOWN:15s]
 					Alongside a Cobalt Separatist, forms together into a Twisted Separatist, a combination of the two.</tooltip>
-				<cooldownColor r="0" g="0" b="255"/>
+				<cooldownColor r="235" g="128" b="52"/>
 	      <transformRace>fm_separatist_twisted</transformRace>
 	      <temporaryEffect>
 		      <duration>20</duration>
@@ -5588,7 +5587,6 @@
 		<passiveStatBoosts>
 				<statBoost name="deathEffect">
 					<boostType>FLAT</boostType>
-					<animSheet baseVisible="true">pheromones</animSheet>
 					<shipTarget>CREW_TARGET</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
