@@ -5450,7 +5450,7 @@
 		<race name="fm_separatist_bronze">
       <essential>1</essential>
 			<maxHealth>100</maxHealth>
-      <repairSpeed>1</repairSpeed>
+      <repairSpeed>0.75</repairSpeed>
 			<damageMultiplier>1.5</damageMultiplier>
 			<fireDamageMultiplier>1</fireDamageMultiplier>
 			<canBurn>false</canBurn>
@@ -5597,7 +5597,18 @@
 					</deathEffect>
 				</statBoost>
       </passiveStatBoosts>
-
+                         <powerEffect>
+				<cooldown>15</cooldown>
+				<jumpCooldown>full</jumpCooldown>
+				<buttonText>ABSORB</buttonText>
+				<tooltip>[COOLDOWN:15s]
+					Alongside a Cobalt Separatist, forms together into a Twisted Separatist, a combination of the two.</tooltip>
+				<cooldownColor r="0" g="0" b="255"/>
+	      <transformRace>fm_separatist_bronze</transformRace>
+	                <spawnCrew>
+				<number>1</number>
+				<race>fm_separatist_cobalt</race>
+			</spawnCrew>
 		</race>
 	</crew>
 
