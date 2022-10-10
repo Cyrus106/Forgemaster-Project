@@ -9,7 +9,6 @@
 
 
 
-
 <!-- ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ -->
 <!-- ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ -->
 
@@ -3150,6 +3149,7 @@
 			<power>: Breaches through the enemy hull and randomly ionizes systems. Starts a fire as well.</power>
 		</powerList>
 	</crewBlueprint>
+	
 
 	<crewBlueprint name="fm_ancalagon_battle">
 		<desc>Energized Battle</desc>
@@ -3444,6 +3444,20 @@
 		<short>Fire Intruder</short>
 		<desc>[CURRENT MODE: Boarding] Gallivants around the enemy ship, burning wherever it goes. And ionizing, just for fun.</desc>
 		<power>1</power>
+		<speed>25</speed>
+		<cost>50</cost>
+		<rarity>0</rarity>
+		<iconImage>boarder</iconImage>
+	</droneBlueprint>
+	
+	<droneBlueprint name="FM_FIRE_INTRUDER_PLAYER">
+		<type>BOARDER</type>
+		<tip>tip_toggle_crew</tip>
+		<locked>1</locked>
+		<title>Fire Intruder</title>
+		<short>Fire Intruder</short>
+		<desc>[CURRENT MODE: Boarding] Gallivants around the enemy ship, burning wherever it goes. And ionizing, just for fun.</desc>
+		<power>3</power>
 		<speed>25</speed>
 		<cost>50</cost>
 		<rarity>0</rarity>
