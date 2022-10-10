@@ -922,11 +922,11 @@
 		<weaponSlots>4</weaponSlots>
 		<droneSlots>3</droneSlots>
 		<weaponList missiles="10" count="4">
-			<weapon name="BOMB_LOCKDOWN" />
+			<weapon name="BOMB_LOCK" />
 			<weapon name="BOMB_FIRE" />
 		</weaponList>
 		<droneList drones="7" count="3">
-			<drone name="FM_FIRE_INTRUDER" />
+			<drone name="FM_FIRE_INTRUDER_PLAYER" />
 			<drone name="REPAIR" />
 		</droneList>
 		<health amount="30" />
@@ -935,7 +935,6 @@
 		<crewCount amount="1" class="fm_separatist_bronze" />
 		<crewCount amount="1" class="fm_separatist_cobalt" />
 		<aug name="LOCKED_NANOBOT_DEFENSE_SYSTEM" />
-		<aug name="EX_DRONE_SPEED" />
 		<shieldImage>mup_separatist_a</shieldImage>
 		<cloakImage>mup_separatist_a</cloakImage>
 	</shipBlueprint>
