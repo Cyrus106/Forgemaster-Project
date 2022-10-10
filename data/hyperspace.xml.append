@@ -443,6 +443,7 @@
 					<roomAnim renderLayer="2">telepad_ico</roomAnim>
 				        <roomAnim renderLayer="1">telepad_on</roomAnim>
 				</room>
+			</rooms>
 		</mod-append:customShip>
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED2_3"><!--mantis-->
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
