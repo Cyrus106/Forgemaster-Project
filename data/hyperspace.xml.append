@@ -5481,6 +5481,15 @@
 				<fireChance>10</fireChance>
 					</deathEffect>
 				</statBoost>
+	      
+	                        <statBoost name="trueHealAmount">
+					<boostType>FLAT</boostType>
+					<shipTarget>CREW_TARGET</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<value>-12</value>
+					<boostAnim>nanocloud_bronze</boostAnim>
+					<priority>999999</priority>
+				</statBoost>
       </passiveStatBoosts>
       <powerEffect>
 				<cooldown>15</cooldown>
@@ -13158,7 +13167,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</systemList>
 				<systemRoomTarget>ALL</systemRoomTarget>
 				<systemPowerDependency>
-					<shields/>
+					<drones/>
 				</systemPowerDependency>
 				<systemPowerScaling>
 					<noSys>0.0</noSys>
