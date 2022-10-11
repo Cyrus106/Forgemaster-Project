@@ -717,6 +717,15 @@
 </FTL>
 
 <FTL>
+<animSheet name="nanofield" w="630" h="35" fw="35" fh="35">people/nanofield.png</animSheet>
+	<anim name="nanofield">
+		<sheet>nanofield</sheet>
+		<desc length="17" x="0" y="0"/>
+		<time>1.0</time>
+	</anim>	
+</FTL>
+
+<FTL>
 
 <animSheet name="fm_separatist_cobalt" w="315" h="455" fw="35" fh="35">people/fm_separatist_cobalt_base.png</animSheet>
 <anim name="fm_separatist_cobalt_clone">
