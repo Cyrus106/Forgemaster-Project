@@ -2047,7 +2047,8 @@
 		<class>Twisted Renegade Tuco</class>
 		<name>The Tarocchi</name>
 		<unlock id="ship_PLAYER_SHIP_TWISTED_TUCO_unlock"/>
-		<desc>This ship is equipped with an odd deck of tarot cards. Every time a card is drawn, something will happen. You can't seem to remove the cards from the ship, no matter how hard you try...</desc>
+	<!--	<desc>This ship is equipped with an odd deck of tarot cards. Every time a card is drawn, something will happen. You can't seem to remove the cards from the ship, no matter how hard you try...</desc> -->
+		<desc>It seems this ship used to be outfitted with a set of strange tarot cards, though they seem to have been removed. A note found inside the empty box of cards reads 'Temporarily removed due to lack of imagination'.</desc>
 		<systemList>
 			<artillery power="1" room="1" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
 			<battery power="1" max="2" room="8" start="false" img="room_battery_6" />
@@ -2116,7 +2117,7 @@
 		<crewCount amount="1" class="unique_tuco" />
 		<crewCount amount="1" class="blobswarm" />
 		<crewCount amount="1" class="blobswarm" />
-		<aug name="LOCKED_TAROT_CARDS"/>
+		<!-- <aug name="LOCKED_TAROT_CARDS"/> -->
 		<shieldImage>mup_tuco_a</shieldImage>
 		<cloakImage>mup_tuco_a</cloakImage>
 	</shipBlueprint>
