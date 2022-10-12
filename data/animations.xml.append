@@ -720,7 +720,25 @@
 <animSheet name="nanofield" w="630" h="35" fw="35" fh="35">people/nanofield.png</animSheet>
 	<anim name="nanofield">
 		<sheet>nanofield</sheet>
-		<desc length="17" x="0" y="0"/>
+		<desc length="18" x="0" y="0"/>
+		<time>1.0</time>
+	</anim>	
+</FTL>
+
+<FTL>
+<animSheet name="nanofield_bronze" w="630" h="35" fw="35" fh="35">people/nanofield_bronze.png</animSheet>
+	<anim name="nanofield_bronze">
+		<sheet>nanofield_bronze</sheet>
+		<desc length="18" x="0" y="0"/>
+		<time>1.0</time>
+	</anim>	
+</FTL>
+
+<FTL>
+<animSheet name="nanofield_cobalt" w="630" h="35" fw="35" fh="35">people/nanofield_cobalt.png</animSheet>
+	<anim name="nanofield_cobalt">
+		<sheet>nanofield_cobalt</sheet>
+		<desc length="18" x="0" y="0"/>
 		<time>1.0</time>
 	</anim>	
 </FTL>
