@@ -5462,7 +5462,7 @@
       <essential>1</essential>
 			<maxHealth>100</maxHealth>
       <repairSpeed>0.75</repairSpeed>
-			<damageMultiplier>1.5</damageMultiplier>
+			<damageMultiplier>0.7</damageMultiplier>
 			<fireDamageMultiplier>1</fireDamageMultiplier>
 			<canBurn>false</canBurn>
 			<fireRepairMultiplier>3</fireRepairMultiplier>
@@ -5487,7 +5487,7 @@
 					<shipTarget>CREW_TARGET</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<value>-12</value>
-					<boostAnim>nanocloud_bronze</boostAnim>
+					<boostAnim>nanofield_bronze</boostAnim>
 					<priority>999999</priority>
 				</statBoost>
       </passiveStatBoosts>
@@ -5614,6 +5614,14 @@
 					<deathEffect>
 				<fireChance>10</fireChance>
 					</deathEffect>
+				</statBoost>
+			         <statBoost name="trueHealAmount">
+					<boostType>FLAT</boostType>
+					<shipTarget>CREW_TARGET</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<value>-6</value>
+					<boostAnim>nanofield_cobalt</boostAnim>
+					<priority>999999</priority>
 				</statBoost>
       </passiveStatBoosts>
                          <powerEffect>
