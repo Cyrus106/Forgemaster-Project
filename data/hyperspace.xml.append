@@ -5505,7 +5505,7 @@
 			<statBoost name="healAmount">
 				<boostType>FLAT</boostType>
 				<amount>-999</amount>
-				<affectsSelf>true</affectsSelf>
+				<affectsSelf>false</affectsSelf>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<whiteList>
