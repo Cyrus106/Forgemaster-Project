@@ -5582,13 +5582,13 @@
 	<crew>
 		<race name="fm_separatist_twisted">
 			<maxHealth>125</maxHealth>
-      <repairSpeed>1.75</repairSpeed>
-      <suffocationModifier>0.5</suffocationModifier>
-      <fireDamageMultiplier>0.5</fireDamageMultiplier>
+			<repairSpeed>1.75</repairSpeed>
+			<suffocationModifier>0.5</suffocationModifier>
+			<fireDamageMultiplier>0.5</fireDamageMultiplier>
 			<damageMultiplier>1.25</damageMultiplier>
 			<damageTakenMultiplier>0.75</damageTakenMultiplier>
 			<moveSpeedMultiplier>1</moveSpeedMultiplier>
-      <noClone>true</noClone>
+      		<noClone>true</noClone>
 			<animBase>engi</animBase>
 			<deathSounds>
 				<deathSound>engiDeath</deathSound>
@@ -5599,13 +5599,13 @@
 					<name>Cobalt</name>
 					<number>1</number>
 				</spawnCrew>
-                                <spawnCrew>
+                <spawnCrew>
 					<race>fm_separatist_bronze</race>
 					<name>Bronze</name>
 					<number>1</number>
 				</spawnCrew>
-      </deathEffect>
-		<passiveStatBoosts>
+      		</deathEffect>
+			<passiveStatBoosts>
 				<statBoost name="deathEffect">
 					<boostType>FLAT</boostType>
 					<shipTarget>CREW_TARGET</shipTarget>
@@ -5623,19 +5623,20 @@
 					<boostAnim>nanofield_cobalt</boostAnim>
 					<priority>999999</priority>
 				</statBoost>
-      </passiveStatBoosts>
-                         <powerEffect>
+      		</passiveStatBoosts>
+        	<powerEffect>
 				<cooldown>15</cooldown>
 				<jumpCooldown>full</jumpCooldown>
 				<buttonText>ABSORB</buttonText>
 				<tooltip>[COOLDOWN:15s]
 					Alongside a Cobalt Separatist, forms together into a Twisted Separatist, a combination of the two.</tooltip>
 				<cooldownColor r="0" g="0" b="255"/>
-	      <transformRace>fm_separatist_bronze</transformRace>
-	                <spawnCrew>
-				<number>1</number>
-				<race>fm_separatist_cobalt</race>
-			</spawnCrew>
+	    		<transformRace>fm_separatist_bronze</transformRace>
+        		<spawnCrew>
+					<number>1</number>
+					<race>fm_separatist_cobalt</race>
+				</spawnCrew>
+			</powerEffect>
 		</race>
 	</crew>
 
@@ -6198,6 +6199,7 @@
 
 	<crew> <!-- Remington-->
 		<race name="unique_remington">
+			<animSheet>remington</animSheet>
 			<repairSpeed>2.5</repairSpeed>
 			<moveSpeedMultiplier>1</moveSpeedMultiplier>
 			<damageMultiplier>0.6</damageMultiplier>
@@ -6295,6 +6297,7 @@
 
 	<crew> <!-- Mossberg-->
 		<race name="unique_mossberg">
+			<animSheet>mossberg</animSheet>
 			<repairSpeed>2.5</repairSpeed>
 			<moveSpeedMultiplier>1</moveSpeedMultiplier>
 			<damageMultiplier>0.6</damageMultiplier>
