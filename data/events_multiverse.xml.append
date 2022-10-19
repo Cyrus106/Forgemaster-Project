@@ -6123,7 +6123,7 @@
 			<text>Proceed with crafting?</text>
 			<drone name="FM_CURA_DRONE"/>
 			<item_modify>
-				<item type="scrap" min="150" max="100"/>
+				<item type="scrap" min="-150" max="-150"/>
 			</item_modify>
 			<removeItem>MANNING</removeItem>
 			<queueEvent>FM_REMOVE_COMBAT_CONSERVATIVE</queueEvent><!--Removes one Conservative Combat drone of ANY kind (toggle mode)-->
@@ -6243,7 +6243,7 @@
 			<text>Craft the Kestrel Drone.[Cost: 100~]</text>
 			<event>
 				<item_modify>
-					<item type="scrap" min="100" max="100"/>
+					<item type="scrap" min="-100" max="-100"/>
 				</item_modify>
 				<text>Proceed with crafting?</text>
 				<drone name="FM_KESTREL_DRONE"/>
@@ -6266,7 +6266,7 @@
 			<event>
 				<text>Proceed with crafting?</text>
 				<item_modify>
-					<item type="scrap" min="100" max="100"/>
+					<item type="scrap" min="-100" max="-100"/>
 				</item_modify>
 				<drone name="FM_MFK_KESTREL_DRONE"/>
 				<removeItem>LASER_LIGHT</removeItem>
