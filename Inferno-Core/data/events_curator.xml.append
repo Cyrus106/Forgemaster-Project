@@ -1,4 +1,4 @@
-<mod:findName type = "event" name = "CURA_TASK_MENU">
+<mod:findName type="event" name="CURA_TASK_MENU">
 
   <mod:findWithChildLike type="choice" child-type="text">
     <mod:selector>Go back.</mod:selector>
@@ -12,9 +12,13 @@
 </mod:findName>
 
 <!-- makes accepting cura task eject you into the new menu instead of ending the HS jump-->
-<mod:findName type = "event" name = "CURA_SCHOOLID_PREVIEW">
+<mod:findName type="event" name="CURA_SCHOOLID_PREVIEW">
 	<mod:findLike type="choice" start="0" limit="1">
 		<mod:findLike type="event">
+			<mod-append:variable name="cura_schoolid_called" op="set" val="1"/>
+			<mod:findLike type="quest">
+				<mod:removeTag/>
+			</mod:findLike>
 			<mod:findLike type="choice">
 				<mod-overwrite:event>
 					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
@@ -24,9 +28,13 @@
 	</mod:findLike>
 </mod:findName>
 
-<mod:findName type = "event" name = "CURA_DRAWING_PREVIEW">
+<mod:findName type="event" name="CURA_DRAWING_PREVIEW">
 	<mod:findLike type="choice" start="0" limit="1">
 		<mod:findLike type="event">
+			<mod-append:variable name="cura_drawing_called" op="set" val="1"/>
+			<mod:findLike type="quest">
+				<mod:removeTag/>
+			</mod:findLike>
 			<mod:findLike type="choice">
 				<mod-overwrite:event>
 					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
@@ -36,9 +44,13 @@
 	</mod:findLike>
 </mod:findName>
 
-<mod:findName type = "event" name = "CURA_CRUSH_PREVIEW">
+<mod:findName type="event" name="CURA_CRUSH_PREVIEW">
 	<mod:findLike type="choice" start="0" limit="1">
 		<mod:findLike type="event">
+			<mod-append:variable name="cura_crush_called" op="set" val="1"/>
+			<mod:findLike type="quest">
+				<mod:removeTag/>
+			</mod:findLike>
 			<mod:findLike type="choice">
 				<mod-overwrite:event>
 					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
@@ -48,9 +60,13 @@
 	</mod:findLike>
 </mod:findName>
 
-<mod:findName type = "event" name = "CURA_TOILET_PREVIEW">
+<mod:findName type="event" name="CURA_TOILET_PREVIEW">
 	<mod:findLike type="choice" start="0" limit="1">
 		<mod:findLike type="event">
+			<mod-append:variable name="cura_toilet_called" op="set" val="1"/>
+			<mod:findLike type="quest">
+				<mod:removeTag/>
+			</mod:findLike>
 			<mod:findLike type="choice">
 				<mod-overwrite:event>
 					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
@@ -60,9 +76,13 @@
 	</mod:findLike>
 </mod:findName>
 
-<mod:findName type = "event" name = "CURA_PLUSHIE_PREVIEW">
+<mod:findName type="event" name="CURA_PLUSHIE_PREVIEW">
 	<mod:findLike type="choice" start="0" limit="1">
 		<mod:findLike type="event">
+			<mod-append:variable name="cura_plushie_called" op="set" val="1"/>
+			<mod:findLike type="quest">
+				<mod:removeTag/>
+			</mod:findLike>
 			<mod:findLike type="choice">
 				<mod-overwrite:event>
 					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
@@ -72,9 +92,13 @@
 	</mod:findLike>
 </mod:findName>
 
-<mod:findName type = "event" name = "CURA_PETE_PREVIEW">
+<mod:findName type="event" name="CURA_PETE_PREVIEW">
 	<mod:findLike type="choice" start="0" limit="1">
 		<mod:findLike type="event">
+			<mod-append:variable name="cura_pete_called" op="set" val="1"/>
+			<mod:findLike type="quest">
+				<mod:removeTag/>
+			</mod:findLike>
 			<mod:findLike type="choice">
 				<mod-overwrite:event>
 					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
@@ -84,9 +108,13 @@
 	</mod:findLike>
 </mod:findName>
 
-<mod:findName type = "event" name = "CURA_USB_PREVIEW">
+<mod:findName type="event" name="CURA_USB_PREVIEW">
 	<mod:findLike type="choice" start="0" limit="1">
 		<mod:findLike type="event">
+			<mod-append:variable name="cura_usb_called" op="set" val="1"/>
+			<mod:findLike type="quest">
+				<mod:removeTag/>
+			</mod:findLike>
 			<mod:findLike type="choice">
 				<mod-overwrite:event>
 					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
@@ -96,9 +124,13 @@
 	</mod:findLike>
 </mod:findName>
 
-<mod:findName type = "event" name = "CURA_SURVIVOR_PREVIEW">
+<mod:findName type="event" name="CURA_SURVIVOR_PREVIEW">
 	<mod:findLike type="choice" start="0" limit="1">
 		<mod:findLike type="event">
+			<mod-append:variable name="cura_survivor_called" op="set" val="1"/>
+			<mod:findLike type="quest">
+				<mod:removeTag/>
+			</mod:findLike>
 			<mod:findLike type="choice">
 				<mod-overwrite:event>
 					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
@@ -108,9 +140,13 @@
 	</mod:findLike>
 </mod:findName>
 
-<mod:findName type = "event" name = "CURA_WEDDING_PREVIEW">
+<mod:findName type="event" name="CURA_WEDDING_PREVIEW">
 	<mod:findLike type="choice" start="0" limit="1">
 		<mod:findLike type="event">
+			<mod-append:variable name="cura_wedding_called" op="set" val="1"/>
+			<mod:findLike type="quest">
+				<mod:removeTag/>
+			</mod:findLike>
 			<mod:findLike type="choice">
 				<mod-overwrite:event>
 					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
@@ -120,9 +156,13 @@
 	</mod:findLike>
 </mod:findName>
 
-<mod:findName type = "event" name = "CURA_WILL_PREVIEW">
+<mod:findName type="event" name="CURA_WILL_PREVIEW">
 	<mod:findLike type="choice" start="0" limit="1">
 		<mod:findLike type="event">
+			<mod-append:variable name="cura_will_called" op="set" val="1"/>
+			<mod:findLike type="quest">
+				<mod:removeTag/>
+			</mod:findLike>
 			<mod:findLike type="choice">
 				<mod-overwrite:event>
 					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
@@ -132,9 +172,13 @@
 	</mod:findLike>
 </mod:findName>
 
-<mod:findName type = "event" name = "CURA_SCANDAL_PREVIEW">
+<mod:findName type="event" name="CURA_SCANDAL_PREVIEW">
 	<mod:findLike type="choice" start="0" limit="1">
 		<mod:findLike type="event">
+			<mod-append:variable name="cura_scandal_called" op="set" val="1"/>
+			<mod:findLike type="quest">
+				<mod:removeTag/>
+			</mod:findLike>
 			<mod:findLike type="choice">
 				<mod-overwrite:event>
 					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
@@ -144,9 +188,13 @@
 	</mod:findLike>
 </mod:findName>
 
-<mod:findName type = "event" name = "CURA_TORTURE_PREVIEW">
+<mod:findName type="event" name="CURA_TORTURE_PREVIEW">
 	<mod:findLike type="choice" start="0" limit="1">
 		<mod:findLike type="event">
+			<mod-append:variable name="cura_torture_called" op="set" val="1"/>
+			<mod:findLike type="quest">
+				<mod:removeTag/>
+			</mod:findLike>
 			<mod:findLike type="choice">
 				<mod-overwrite:event>
 					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
@@ -156,9 +204,13 @@
 	</mod:findLike>
 </mod:findName>
 
-<mod:findName type = "event" name = "CURA_OUTPOST_PREVIEW">
+<mod:findName type="event" name="CURA_OUTPOST_PREVIEW">
 	<mod:findLike type="choice" start="0" limit="1">
 		<mod:findLike type="event">
+			<mod-append:variable name="cura_outpost_called" op="set" val="1"/>
+			<mod:findLike type="quest">
+				<mod:removeTag/>
+			</mod:findLike>
 			<mod:findLike type="choice">
 				<mod-overwrite:event>
 					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
@@ -168,9 +220,13 @@
 	</mod:findLike>
 </mod:findName>
 
-<mod:findName type = "event" name = "CURA_SHIP_PREVIEW">
+<mod:findName type="event" name="CURA_SHIP_PREVIEW">
 	<mod:findLike type="choice" start="0" limit="1">
 		<mod:findLike type="event">
+			<mod-append:variable name="cura_ship_called" op="set" val="1"/>
+			<mod:findLike type="quest">
+				<mod:removeTag/>
+			</mod:findLike>
 			<mod:findLike type="choice">
 				<mod-overwrite:event>
 					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
@@ -180,9 +236,13 @@
 	</mod:findLike>
 </mod:findName>
 
-<mod:findName type = "event" name = "CURA_DUSK_PREVIEW">
+<mod:findName type="event" name="CURA_DUSK_PREVIEW">
 	<mod:findLike type="choice" start="0" limit="1">
 		<mod:findLike type="event">
+			<mod-append:variable name="cura_dusk_called" op="set" val="1"/>
+			<mod:findLike type="quest">
+				<mod:removeTag/>
+			</mod:findLike>
 			<mod:findLike type="choice">
 				<mod-overwrite:event>
 					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
@@ -192,9 +252,13 @@
 	</mod:findLike>
 </mod:findName>
 
-<mod:findName type = "event" name = "CURA_CONTRACT_PREVIEW">
+<mod:findName type="event" name="CURA_CONTRACT_PREVIEW">
 	<mod:findLike type="choice" start="0" limit="1">
 		<mod:findLike type="event">
+			<mod-append:variable name="cura_contract_called" op="set" val="1"/>
+			<mod:findLike type="quest">
+				<mod:removeTag/>
+			</mod:findLike>
 			<mod:findLike type="choice">
 				<mod-overwrite:event>
 					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
@@ -204,7 +268,7 @@
 	</mod:findLike>
 </mod:findName>
 
-<mod:findName type = "event" name = "CURA_HQ_PREVIEW">
+<mod:findName type="event" name="CURA_HQ_PREVIEW">
 	<mod:findLike type="choice" start="0" limit="1">
 		<mod:findLike type="event">
 			<mod:findLike type="choice">

@@ -73,7 +73,260 @@
 		<mod-append:variable name="fmcore_used_hs_aug" op="set" val="0"/>
 		<mod-append:variable name="fmcore_called_cura" op="set" val="0"/>
 	</mod:findName>
+	
+	<event name="CURA_QUEST_SPAWNER">
+		<loadEventList>
+			<event req="FMCORE_CURA_QUEST_SPAWN">
+				<!--<loadEventList first="true" default="TRUENOTHING">	
+					<event req="cura_schoolid_called" lvl="1">
+						<variable name="cura_schoolid_called" op="set" val="0"/>
+						<quest event="CURA_SCHOOLID"/>
+						<loadEvent>TRUENOTHING</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_drawing_called" lvl="1">
+						<variable name="cura_drawing_called" op="set" val="0"/>
+						<quest event="CURA_DRAWING"/>
+						<loadEvent>TRUENOTHING</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_crush_called" lvl="1">
+						<variable name="cura_crush_called" op="set" val="0"/>
+						<quest event="CURA_CRUSH"/>
+						<loadEvent>TRUENOTHING</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_toilet_called" lvl="1">
+						<variable name="cura_toilet_called" op="set" val="0"/>
+						<quest event="CURA_TOILET"/>
+						<loadEvent>TRUENOTHING</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_plushie_called" lvl="1">
+						<variable name="cura_plushie_called" op="set" val="0"/>
+						<quest event="CURA_PLUSHIE"/>
+						<loadEvent>TRUENOTHING</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_pete_called" lvl="1">
+						<variable name="cura_pete_called" op="set" val="0"/>
+						<quest event="CURA_PETE"/>
+						<loadEvent>TRUENOTHING</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_usb_called" lvl="1">
+						<variable name="cura_usb_called" op="set" val="0"/>
+						<quest event="CURA_USB"/>
+						<loadEvent>TRUENOTHING</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_survivor_called" lvl="1">
+						<variable name="cura_survivor_called" op="set" val="0"/>
+						<quest event="CURA_SURVIVOR"/>
+						<loadEvent>TRUENOTHING</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_wedding_called" lvl="1">
+						<variable name="cura_wedding_called" op="set" val="0"/>
+						<quest event="CURA_WEDDING"/>
+						<loadEvent>TRUENOTHING</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_will_called" lvl="1">
+						<variable name="cura_will_called" op="set" val="0"/>
+						<quest event="CURA_WILL"/>
+						<loadEvent>TRUENOTHING</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_scandal_called" lvl="1">
+						<variable name="cura_scandal_called" op="set" val="0"/>
+						<quest event="CURA_SCANDAL"/>
+						<loadEvent>TRUENOTHING</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_torutre_called" lvl="1">
+						<variable name="cura_torture_called" op="set" val="0"/>
+						<quest event="CURA_TORTURE"/>
+						<loadEvent>TRUENOTHING</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_outpost_called" lvl="1">
+						<variable name="cura_outpost_called" op="set" val="0"/>
+						<quest event="CURA_OUTPOST"/>
+						<loadEvent>TRUENOTHING</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_ship_called" lvl="1">
+						<variable name="cura_ship_called" op="set" val="0"/>
+						<quest event="CURA_SHIP"/>
+						<loadEvent>TRUENOTHING</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_dusk_called" lvl="1">
+						<variable name="cura_dusk_called" op="set" val="0"/>
+						<quest event="CURA_DUSK"/>
+						<loadEvent>TRUENOTHING</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_contract_called" lvl="1">
+						<variable name="cura_contract_called" op="set" val="0"/>							
+						<quest event="CURA_CONTRACT"/>
+						<loadEvent>TRUENOTHING</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>					
+				</loadEventList>-->
+				<loadEventList first="true" default="TRUENOTHING">	
+					<event req="cura_schoolid_called" lvl="1">
+						<quest event="CURA_SCHOOLID"/>
+						<loadEvent>CURA_SCHOOLID_SPAWN_END</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_drawing_called" lvl="1">
+						<quest event="CURA_DRAWING"/>
+						<loadEvent>CURA_DRAWING_SPAWN_END</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_crush_called" lvl="1">
+						<quest event="CURA_CRUSH"/>
+						<loadEvent>CURA_CRUSH_SPAWN_END</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_toilet_called" lvl="1">
+						<quest event="CURA_TOILET"/>
+						<loadEvent>CURA_TOILET_SPAWN_END</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_plushie_called" lvl="1">
+						<quest event="CURA_PLUSHIE"/>
+						<loadEvent>CURA_PLUSHIE_SPAWN_END</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_pete_called" lvl="1">
+						<quest event="CURA_PETE"/>
+						<loadEvent>CURA_PETE_SPAWN_END</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_usb_called" lvl="1">
+						<quest event="CURA_USB"/>
+						<loadEvent>CURA_USB_SPAWN_END</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_survivor_called" lvl="1">
+						<quest event="CURA_SURVIVOR"/>
+						<loadEvent>CURA_SURVIVOR_SPAWN_END</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_wedding_called" lvl="1">
+						<quest event="CURA_WEDDING"/>
+						<loadEvent>CURA_WEDDING_SPAWN_END</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_will_called" lvl="1">
+						<quest event="CURA_WILL"/>
+						<loadEvent>CURA_WILL_SPAWN_END</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_scandal_called" lvl="1">
+						<quest event="CURA_SCANDAL"/>
+						<loadEvent>CURA_SCANDAL_SPAWN_END</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_torture_called" lvl="1">
+						<quest event="CURA_TORTURE"/>
+						<loadEvent>CURA_TOTURE_SPAWN_END</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_outpost_called" lvl="1">
+						<quest event="CURA_OUTPOST"/>
+						<loadEvent>CURA_OUTPOST_SPAWN_END</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_ship_called" lvl="1">
+						<quest event="CURA_SHIP"/>
+						<loadEvent>CURA_SHIP_SPAWN_END</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_dusk_called" lvl="1">
+						<quest event="CURA_DUSK"/>
+						<loadEvent>CURA_DUSK_SPAWN_END</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>
+					<event req="cura_contract_called" lvl="1">
+						<quest event="CURA_CONTRACT"/>
+						<loadEvent>CURA_CONTRACT_SPAWN_END</loadEvent>
+						<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+					</event>					
+				</loadEventList>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="CURA_SCHOOLID_SPAWN_END">
+		<variable name="cura_schoolid_called" op="set" val="0"/>
+	</event>
+	<event name="CURA_DRAWING_SPAWN_END">
+		<variable name="cura_drawing_called" op="set" val="0"/>
+	</event>
+	<event name="CURA_CRUSH_SPAWN_END">
+		<variable name="cura_crush_called" op="set" val="0"/>
+	</event>
+	<event name="CURA_TOILET_SPAWN_END">
+		<variable name="cura_toilet_called" op="set" val="0"/>
+	</event>
+	<event name="CURA_PLUSHIE_SPAWN_END">
+		<variable name="cura_plushie_called" op="set" val="0"/>
+	</event>
+	<event name="CURA_PETE_SPAWN_END">
+		<variable name="cura_pete_called" op="set" val="0"/>
+	</event>
+	<event name="CURA_USB_SPAWN_END">
+		<variable name="cura_usb_called" op="set" val="0"/>
+	</event>
+	<event name="CURA_SURVIVOR_SPAWN_END">
+		<variable name="cura_survivor_called" op="set" val="0"/>
+	</event>
+	<event name="CURA_WEDDING_SPAWN_END">
+		<variable name="cura_wedding_called" op="set" val="0"/>
+	</event>
+	<event name="CURA_WILL_SPAWN_END">
+		<variable name="cura_will_called" op="set" val="0"/>
+	</event>
+	<event name="CURA_SCANDAL_SPAWN_END">
+		<variable name="cura_scandal_called" op="set" val="0"/>
+	</event>
+	<event name="CURA_TOTURE_SPAWN_END">
+		<variable name="cura_torture_called" op="set" val="0"/>
+	</event>
+	<event name="CURA_OUTPOST_SPAWN_END">
+		<variable name="cura_outpost_called" op="set" val="0"/>
+	</event>
+	<event name="CURA_SHIP_SPAWN_END">
+		<variable name="cura_ship_called" op="set" val="0"/>
+	</event>
+	<event name="CURA_DUSK_SPAWN_END">
+		<variable name="cura_dusk_called" op="set" val="0"/>
+	</event>
+	<event name="CURA_CONTRACT_SPAWN_END">
+		<variable name="cura_contract_called" op="set" val="0"/>
+	</event>
 	<event name="FMCORE_SPAWNER">
-		<!--<queueEvent></queueEvent>-->
+		<queueEvent>CURA_QUEST_SPAWNER</queueEvent>
+	</event>
+	<event name="ALL_CURA_TEST">
+		<variable name="cura_schoolid_called" op="set" val="1"/>
+		<variable name="cura_drawing_called" op="set" val="1"/>
+		<variable name="cura_crush_called" op="set" val="1"/>
+		<variable name="cura_toilet_called" op="set" val="1"/>
+		<variable name="cura_plushie_called" op="set" val="1"/>
+		<variable name="cura_pete_called" op="set" val="1"/>
+		<variable name="cura_usb_called" op="set" val="1"/>
+		<variable name="cura_survivor_called" op="set" val="1"/>
+		<variable name="cura_wedding_called" op="set" val="1"/>
+		<variable name="cura_will_called" op="set" val="1"/>
+		<variable name="cura_scandal_called" op="set" val="1"/>
+		<variable name="cura_torture_called" op="set" val="1"/>
+		<variable name="cura_outpost_called" op="set" val="1"/>
+		<variable name="cura_ship_called" op="set" val="1"/>
+		<variable name="cura_dusk_called" op="set" val="1"/>
+		<variable name="cura_contract_called" op="set" val="1"/>
 	</event>
 </FTL>

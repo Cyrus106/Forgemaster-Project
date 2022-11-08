@@ -4,6 +4,22 @@
 
 		<variable name="fmcore_called_cura" op="set" val="0"/>
 		<variable name="fmcore_used_hs_aug" op="set" val="0"/>
+		<variable name="cura_schoolid_called" op="set" val="0"/>
+		<variable name="cura_drawing_called" op="set" val="0"/>
+		<variable name="cura_crush_called" op="set" val="0"/>
+		<variable name="cura_toilet_called" op="set" val="0"/>
+		<variable name="cura_plushie_called" op="set" val="0"/>
+		<variable name="cura_pete_called" op="set" val="0"/>
+		<variable name="cura_usb_called" op="set" val="0"/>
+		<variable name="cura_survivor_called" op="set" val="0"/>
+		<variable name="cura_wedding_called" op="set" val="0"/>
+		<variable name="cura_will_called" op="set" val="0"/>
+		<variable name="cura_scandal_called" op="set" val="0"/>
+		<variable name="cura_torture_called" op="set" val="0"/>
+		<variable name="cura_outpost_called" op="set" val="0"/>
+		<variable name="cura_ship_called" op="set" val="0"/>
+		<variable name="cura_dusk_called" op="set" val="0"/>
+		<variable name="cura_contract_called" op="set" val="0"/>
 		<req name="FMCORE_LIST_JUMPSPACE_EQUIPMENT">
 			<name>LIST_JUMPSPACE_EQUIPMENT</name>
 			<name>CURA_TASK_CHECK</name>
@@ -18,6 +34,38 @@
 			<name>CURA_TASK_CHECK</name>
 			<req lvl="0" max_lvl="0">
 				<name>fmcore_called_cura</name>
+			</req>
+		</req>
+		<req name="FMCORE_CURA_QUEST_SPAWN" type="all">
+			<req lvl="1">
+				<name>cura_schoolid_called</name>
+				<name>cura_drawing_called</name>
+				<name>cura_crush_called</name>
+				<name>cura_toilet_called</name>
+				<name>cura_plushie_called</name>
+				<name>cura_pete_called</name>
+				<name>cura_usb_called</name>
+				<name>cura_survivor_called</name>
+				<name>cura_wedding_called</name>
+				<name>cura_will_called</name>
+				<name>cura_scandal_called</name>
+				<name>cura_torture_called</name>
+				<name>cura_outpost_called</name>
+				<name>cura_ship_called</name>
+				<name>cura_dusk_called</name>
+				<name>cura_contract_called</name>
+			</req>
+			<req lvl="0" max_lvl="0">
+				<name>SEC SECRET_SYLVAN</name>
+				<name>SEC SECRET_TWISTED</name>
+				<name>SEC SECRET_HER</name>
+				<name>SEC SECRET_DYLAN</name>
+				<name>SEC SECRET_RHYME</name>
+				<name>SEC SECRET_RHYME_CHAOS</name>
+				<name>SEC SHOWDOWN_CASUAL</name>
+				<name>SEC SHOWDOWN_NORMAL</name>
+				<name>SEC SHOWDOWN_CHALLENGE</name>
+				<name>SEC SHOWDOWN_EXTREME</name>
 			</req>
 		</req>
 	</events>
