@@ -8455,8 +8455,8 @@
 		<persDamage>-1</persDamage>
 		<stun>10</stun>
 		<radius>35</radius>
-		<shots>5</shots>
-		<sp>10</sp>
+		<shots>3</shots>
+		<sp>2</sp>
 		<fireTime>0.2</fireTime>
 		<fireChance>2</fireChance>
 		<breachChance>4</breachChance>
@@ -10654,7 +10654,8 @@
 			Beam Length: 90
 			Beam Speed: 5
 
-			Base Damage: 2 (Per Room)
+			Base Damage: 1 (Per Room)
+                        Shield Pierce: 1
 			Damage Per Tile Hit: 1
 			Crew Damage Per Tile Hit: 15
 			Total System Damage: 2
@@ -10681,8 +10682,8 @@
 
 			Breach Chance: 20%
 		</tooltipOverride>
-		<damage>2</damage>
-		<sp>0</sp>
+		<damage>1</damage>
+		<sp>1</sp>
 		<fireChance>0</fireChance>
 		<breachChance>2</breachChance>
 		<cooldown>22</cooldown>
@@ -11128,9 +11129,14 @@
 		<sp>1</sp>
 		<sysDamage>0</sysDamage>
 		<persDamage>0</persDamage>
-		<fireChance>2</firechance>
-		<breachChance>1</breachChance>
-		<cooldown>21</cooldown>
+		<fireChance>3</firechance>
+		<breachChance>0</breachChance>
+		<cooldown>16</cooldown>
+		<boost>
+			<type>cooldown</type>
+			<amount>3</amount>
+			<count>3</count>
+		</boost>
 		<power>3</power>
 		<cost>200</cost>
 		<bp>7</bp>
@@ -11140,8 +11146,8 @@
 			<b>226</b>
 		</color>
 		<rarity>0</rarity>
-		<length>200</length>
-		<speed>30</speed>
+		<length>50</length>
+		<speed>5</speed>
 		<image>beam_contact</image>
 		<launchSounds>
 			<sound>beam2</sound>
