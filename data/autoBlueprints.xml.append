@@ -1082,6 +1082,8 @@
 	<name>FM_SHOTGUN_HASSIUM</name>
 	<name>FM_MISSILES_BURST_FIRE_MEGA</name>
 	<name>FM_MISSILES_CLOAK_STUN</name>
+	<name>FM_MISSILES_CLOAK_STUN_PLAYER</name>
+	<name>FM_MISSILES_CLOAK_STUN_MEGA</name>
 	<name>FM_BEAM_BASILISK</name>
 	<name>FM_CHAINGUN_FIRE</name>
 </blueprintList>
@@ -1914,6 +1916,7 @@
 	<mod-append:name>FM_FOCUS_ENERGY_3</mod-append:name>
 	<mod-append:name>FM_MISSILES_CLOAK_STUN</mod-append:name>
 	<mod-append:name>FM_MISSILES_CLOAK_STUN_PLAYER</mod-append:name>
+	<mod-append:name>FM_MISSILES_CLOAK_STUN_MEGA</mod-append:name>
 	<mod-append:name>FM_ENERGY_DISC</mod-append:name>
 	<mod-append:name>FM_PULSEDEEP</mod-append:name>
 </mod:findName>
@@ -2646,6 +2649,7 @@
 <blueprintList name="FM_SHOP_FORGEMASTER_PLUS_WEAPON_LIST">
 	<name>MISSILES_4_PLAYER</name>
 	<name>MISSILES_FIRE_PLAYER</name>
+	<name>MISSILES_CLOAK_PLAYER</name>
 	<name>SHOTGUN_TOXIC_PLAYER</name>
 	<name>LASER_FROST_2_PLAYER</name>
 	<name>ENERGY_2_PLAYER</name>
@@ -2690,6 +2694,7 @@
 	<name>FM_MISSILES_BURST_FIRE_MEGA_PISSED</name>
 	<name>FM_MISSILES_CLOAK_STUN</name>
 	<name>FM_MISSILES_CLOAK_STUN_PLAYER</name>
+	<name>FM_MISSILES_CLOAK_STUN_MEGA</name>
 	<name>FM_MINELAUNCHER_HULL</name>
 	<name>FM_MINELAUNCHER_BIO</name>
 	<name>FM_BOMB_CRYSTAL_FIRE</name>

@@ -169,7 +169,7 @@
 		<systemList>
 			<battery power="1" room="14" start="true" img="room_battery_8" />
 			<cloaking power="1" room="2" start="false" img="room_cloaking_11" />
-			<clonebay power="1" max="4" room="4" start="true">
+			<clonebay power="1" max="4" room="4" start="false">
 				<slot>
 					<number>0</number>
 				</slot>
@@ -237,7 +237,7 @@
 		<systemList>
 			<battery power="1" room="14" start="true" img="room_battery_8" />
 			<cloaking power="1" room="2" start="false" img="room_cloaking_11" />
-			<clonebay power="1" max="3" room="4" start="true">
+			<clonebay power="1" max="3" room="4" start="false">
 				<slot>
 					<number>0</number>
 				</slot>
@@ -510,7 +510,7 @@
 					<number>1</number>
 				</slot>
 			</sensors>
-			<shields power="2" max="8"	room="11" start="false" img="room_shields">
+			<shields power="2" max="8" room="11" start="false" img="room_shields">
 				<slot>
 					<direction>left</direction>
 					<number>0</number>
@@ -1894,7 +1894,7 @@
 		<systemList>
 			<battery power="1" room="1" start="false" img="room_battery_17" />
 			<cloaking power="1" room="13" start="false" img="room_cloaking_4" />
-			<clonebay power="1" room="11" start="true">
+			<clonebay power="1" room="11" start="false">
 				<slot>
 					<number>1</number>
 				</slot>
@@ -13007,7 +13007,7 @@
 		</spawnCrew>
 	</weaponBlueprint>
 
-	<weaponBlueprint name="FM_MISSILES_CLOAK_STUN_PLAYER">
+	<weaponBlueprint name="FM_MISSILES_CLOAK_STUN_MEGA">
 		<type>MISSILES</type>
 		<title>'Chernobog' Missile†</title>
 		<short>'Chernobog'†</short>
@@ -13068,6 +13068,106 @@
 		<stun>17</stun>
 		<cooldown>21</cooldown>
 		<power>2</power>
+		<cost>180</cost>
+		<bp>6</bp>
+		<rarity>0</rarity>
+		<image>fm_missile_cloak_stun</image>
+		<launchSounds>
+			<sound>smallMissile1</sound>
+			<sound>smallMissile2</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>explosion_heavy</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_missiles_cloak_stun</weaponArt>
+		<iconImage>missile</iconImage>
+		<spawnCrew>
+			<race>fm_ion_instant_3</race>
+			<enemy>true</enemy>
+			<lifetime>0</lifetime>
+			<number>1</number>
+			<noSlot>true</noSlot>
+			<statBoosts>
+				<statBoost name="noClone">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+			</statBoosts>
+		</spawnCrew>
+	</weaponBlueprint>
+	
+	<weaponBlueprint name="FM_MISSILES_CLOAK_STUN_PLAYER">
+		<type>MISSILES</type>
+		<title>'Chernobog' Missile†</title>
+		<short>'Chernobog'†</short>
+		<desc>A cloaked missile energized by ionic technology. Moves quickly, always hits, and inflicts long stuns and 3 ion damage in the room.</desc>
+		<descriptionOverride>A cloaked missile energized by ionic technology. Moves quickly, always hits, and inflicts long stuns and 3 ion damage in the room.
+
+			Stats:
+			Required Power: 1
+			Charge Time: 21 seconds
+			Missile Consumption: 1
+			Accuracy Modifier: 100
+
+			Shots Per Charge: 1
+
+			2x hull damage on systemless rooms
+			Base Hull Damage: 3
+			Total System Damage: 3
+			Total Crew Damage: 45
+			Ion Damage: 3 (Rooms Only)
+			Shield Piercing: 10
+
+			Fire Chance: 40%
+			Breach Chance: 50% (Adjusted: 30%)
+			Stun Chance: 100% (17 seconds long)
+
+			Buy/Sell Price: 180~/90~
+		</descriptionOverride>
+		<tooltip>Fires 1 missile; does 3 damage; pierces all shields.</tooltip>
+		<tooltipOverride>Required Power: 1
+			Charge Time: 21 seconds
+			Missile Consumption: 1
+			Accuracy Modifier: 100
+
+			Shots Per Charge: 1
+
+			2x hull damage on systemless rooms
+			Base Hull Damage: 3
+			Total System Damage: 3
+			Total Crew Damage: 45
+			Ion Damage: 3 (Rooms Only)
+			Shield Piercing: 10
+
+			Fire Chance: 40%
+			Breach Chance: 50% (Adjusted: 30%)
+			Stun Chance: 100% (17 seconds long)
+		</tooltipOverride>
+		<drone_targetable>0</drone_targetable>
+		<speed>70</speed>
+		<damage>3</damage>
+		<systemDamage>-1</systemDamage>
+		<missiles>1</missiles>
+		<accuracyMod>100</accuracyMod>
+		<shots>1</shots>
+		<sp>10</sp>
+		<hullBust>1</hullBust>
+		<fireChance>4</fireChance>
+		<breachChance>5</breachChance>
+		<stun>17</stun>
+		<cooldown>21</cooldown>
+		<power>1</power>
 		<cost>180</cost>
 		<bp>6</bp>
 		<rarity>0</rarity>
@@ -16022,7 +16122,7 @@
 		</statBoosts>
 		<projectiles>
 			<projectile count="1" fake="false">GB_shot_light_flechette</projectile>
-			<projectile count="1" fake="true">GB_shot_tiny_flechette</projectile>
+			<projectile count="1" fake="false" blueprint="GB_AC_FLECHETTE_FRAG">GB_shot_tiny_flechette</projectile>
 		</projectiles>
 		<launchSounds>
 			<sound>GB_cannonLight1</sound>

@@ -3460,6 +3460,21 @@
   <event name="STORAGE_CHECK_CREATE_FM_MISSILES_CLOAK_STUN">
     <checkCargo/>
     <text>Currently viewing the 'Chernobog' Missiles.</text>
+    <choice hidden="false" req="FM_MISSILES_CLOAK_STUN_LIST_MEGA" blue="false">
+      <text>Craft the 'Chernobog' Missiles+ using the Energy Stunner+ and 'Nyx' Missiles+.</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <weapon name="FM_MISSILES_CLOAK_STUN_MEGA"/>
+        <removeItem>ENERGY_STUN_PLAYER</removeItem>
+        <removeItem>MISSILES_CLOAK_PLAYER</removeItem>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
+          </event>
+        </choice>
+      </event>
+    </choice>
     <choice hidden="false" req="FM_MISSILES_CLOAK_STUN_LIST_PLUS" blue="false">
       <text>Craft the 'Chernobog' Missiles+ using the Energy Stunner+.</text>
       <event>
@@ -3467,6 +3482,21 @@
         <weapon name="FM_MISSILES_CLOAK_STUN_PLAYER"/>
         <removeItem>ENERGY_STUN_PLAYER</removeItem>
         <removeItem>MISSILES_CLOAK</removeItem>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event>
+            <loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
+          </event>
+        </choice>
+      </event>
+    </choice>
+    <choice hidden="false" req="FM_MISSILES_CLOAK_STUN_LIST_PLUS_2" blue="false">
+      <text>Craft the 'Chernobog' Missiles+ using the 'Nyx' Missiles+.</text>
+      <event>
+        <text>Proceed with crafting?</text>
+        <weapon name="FM_MISSILES_CLOAK_STUN_PLAYER"/>
+        <removeItem>ENERGY_STUN</removeItem>
+        <removeItem>MISSILES_CLOAK_PLAYER</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>

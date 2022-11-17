@@ -348,7 +348,7 @@
 				<unique_remington room="10" name="Remington MK III"  />
 				<unique_mossberg room="12" name="Mossberg MK III"  />
 			</crew>
-			<systemLimit>12</systemLimit>
+			<systemLimit>14</systemLimit>
 			<customReactor maxLevel="70">
 				<baseCost>15</baseCost>
 				<increment>5</increment>
@@ -2656,10 +2656,22 @@
 			<name>MISSILES_CLOAK</name>
 			<name>ENERGY_STUN_PLAYER</name>
 		</req>
+		
+		<req name="FM_MISSILES_CLOAK_STUN_LIST_PLUS_2" type="all"> <!-- NYX + Stun Energy-->
+			<name>MISSILES_CLOAK_PLAYER</name>
+			<name>ENERGY_STUN</name>
+		</req>
+		
+		<req name="FM_MISSILES_CLOAK_STUN_LIST_MEGA" type="all"> <!-- NYX + Stun Energy-->
+			<name>MISSILES_CLOAK_PLAYER</name>
+			<name>ENERGY_STUN_PLAYER</name>
+		</req>
 
 		<req name="FM_MISSILES_CLOAK_STUN_FORGE_LIST" type="any">
 			<name>FM_MISSILES_CLOAK_STUN_LIST</name>
 			<name>FM_MISSILES_CLOAK_STUN_LIST_PLUS</name>
+			<name>FM_MISSILES_CLOAK_STUN_LIST_PLUS_2</name>
+			<name>FM_MISSILES_CLOAK_STUN_LIST_MEGA</name>
 		</req>
 
 		<req name="FM_BOMB_CRYSTAL_FIRE_LIST" type="all"> <!-- Fire Bomb + Crystal Bomb -->
