@@ -3455,7 +3455,7 @@
       <text>Nevermind.</text>
       <event load="STORAGE_CHECK_CREATE_EXPLOSIVES_LOAD"/>
     </choice>
-  </event>
+  </event> 
 
   <event name="STORAGE_CHECK_CREATE_FM_MISSILES_CLOAK_STUN">
     <checkCargo/>
@@ -5471,7 +5471,11 @@
 			  <loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_HV</loadEvent>
 			</event>
 		</choice>
-		<choice req="GB_CURRENT_AMMO4" lvl="0" max_lvl="0" blue="false" hidden="true"> <!-- Recycler Ammo Type -->
+		<choice req="GB_AMMO_4_NO" blue="false" hidden="true"> <!-- Recycler Ammo Type -->
+			<text>To load recycler ammo a recycler or ammo replicator is needed.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="GB_AMMO_4_YES"  blue="false" hidden="true"> <!-- Recycler Ammo Type -->
 			<text>Recycler ammo.[no status, 7% ammo consumption]</text>
 			<event>
 			  <loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_FREE</loadEvent>
@@ -5495,7 +5499,11 @@
 			  <loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_HEAT</loadEvent>
 			</event>
 		</choice>
-		<choice req="GB_CURRENT_AMMO8" lvl="0" max_lvl="0" blue="false" hidden="true"> <!-- Incendiary Ammo Type -->
+		<choice req="GB_AMMO_8_NO" blue="false" hidden="true"> <!-- Incendiary Ammo Type -->
+			<text>To load incendiary ammo a lost sun crew is needed.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="GB_AMMO_8_YES"  blue="false" hidden="true"> <!-- Incendiary Ammo Type -->
 			<text>Incendiary ammo.[40% fire, 17% ammo consumption]</text>
 			<event>
 			  <loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_INCENDIARY</loadEvent>
@@ -5507,7 +5515,11 @@
 			  <loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_FLECHETTE</loadEvent>
 			</event>
 		</choice>
-		<choice req="GB_CURRENT_AMMO10" lvl="0" max_lvl="0" blue="false" hidden="true"> <!-- Radiation Ammo Type -->
+		<choice req="GB_AMMO_10_NO" blue="false" hidden="true"> <!-- Radiation Ammo Type -->
+			<text>To load radiation ammo a slug clansman is needed.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="GB_AMMO_10_YES"  blue="false" hidden="true"> <!-- Radiation Ammo Type -->
 			<text>Radiation ammo.[+20% breach, rad effects, +15 crew dmg, 22% ammo consumption]</text>
 			<event>
 			  <loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_RAD</loadEvent>
