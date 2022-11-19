@@ -13007,7 +13007,7 @@
 		</spawnCrew>
 	</weaponBlueprint>
 
-	<weaponBlueprint name="FM_MISSILES_CLOAK_STUN_MEGA">
+	<weaponBlueprint name="FM_MISSILES_CLOAK_STUN_PLAYER">
 		<type>MISSILES</type>
 		<title>'Chernobog' Missile†</title>
 		<short>'Chernobog'†</short>
@@ -13107,10 +13107,10 @@
 		</spawnCrew>
 	</weaponBlueprint>
 	
-	<weaponBlueprint name="FM_MISSILES_CLOAK_STUN_PLAYER">
+	<weaponBlueprint name="FM_MISSILES_CLOAK_STUN_MEGA">
 		<type>MISSILES</type>
-		<title>'Chernobog' Missile†</title>
-		<short>'Chernobog'†</short>
+		<title>'Chernobog' Missile††</title>
+		<short>'Chernobog'††</short>
 		<desc>A cloaked missile energized by ionic technology. Moves quickly, always hits, and inflicts long stuns and 3 ion damage in the room.</desc>
 		<descriptionOverride>A cloaked missile energized by ionic technology. Moves quickly, always hits, and inflicts long stuns and 3 ion damage in the room.
 
@@ -13167,8 +13167,8 @@
 		<breachChance>5</breachChance>
 		<stun>17</stun>
 		<cooldown>21</cooldown>
-		<power>1</power>
 		<cost>180</cost>
+		<power>1</power>
 		<bp>6</bp>
 		<rarity>0</rarity>
 		<image>fm_missile_cloak_stun</image>
