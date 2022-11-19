@@ -8455,8 +8455,8 @@
 		<persDamage>-1</persDamage>
 		<stun>10</stun>
 		<radius>35</radius>
-		<shots>5</shots>
-		<sp>10</sp>
+		<shots>3</shots>
+		<sp>2</sp>
 		<fireTime>0.2</fireTime>
 		<fireChance>2</fireChance>
 		<breachChance>4</breachChance>
@@ -10654,7 +10654,8 @@
 			Beam Length: 90
 			Beam Speed: 5
 
-			Base Damage: 2 (Per Room)
+			Base Damage: 1 (Per Room)
+                        Shield Pierce: 1
 			Damage Per Tile Hit: 1
 			Crew Damage Per Tile Hit: 15
 			Total System Damage: 2
@@ -10681,8 +10682,8 @@
 
 			Breach Chance: 20%
 		</tooltipOverride>
-		<damage>2</damage>
-		<sp>0</sp>
+		<damage>1</damage>
+		<sp>1</sp>
 		<fireChance>0</fireChance>
 		<breachChance>2</breachChance>
 		<cooldown>22</cooldown>
@@ -11128,9 +11129,14 @@
 		<sp>1</sp>
 		<sysDamage>0</sysDamage>
 		<persDamage>0</persDamage>
-		<fireChance>2</firechance>
-		<breachChance>1</breachChance>
-		<cooldown>21</cooldown>
+		<fireChance>3</firechance>
+		<breachChance>0</breachChance>
+		<cooldown>16</cooldown>
+		<boost>
+			<type>cooldown</type>
+			<amount>3</amount>
+			<count>3</count>
+		</boost>
 		<power>3</power>
 		<cost>200</cost>
 		<bp>7</bp>
@@ -11140,8 +11146,8 @@
 			<b>226</b>
 		</color>
 		<rarity>0</rarity>
-		<length>200</length>
-		<speed>30</speed>
+		<length>50</length>
+		<speed>5</speed>
 		<image>beam_contact</image>
 		<launchSounds>
 			<sound>beam2</sound>
@@ -11150,93 +11156,7 @@
 		<iconImage>beam</iconImage>
 	</weaponBlueprint>
 
-	<weaponBlueprint name="FM_CRYSTAL_BEAM">
-
-		<type>BEAM</type>
-		<tip>tip_bio</tip>
-		<title>Crystallised Nanobeam</title>
-		<short>C. Nanobeam</short>
-		<desc>This child of Crystal Science uses strange crystalised nanobots to trap your opponents, causing all enemy crew on the opposing ship to lockdown the room they are currently in whenever this beam hits someone.</desc>
-		<tooltip> Beam weapon that greatly damages enemy crew. Stuns, pierces shields, and starts fires Extremely expensive but excellent for crew killing.</tooltip>
-		<!--<damage>6</damage>-->
-		<damage>0</damage>
-		<sp>10</sp>
-		<fireChance>7</fireChance>
-		<cooldown>3</cooldown>
-		<spawnCrew>
-			<race>fm_generic_crewjank</race>
-			<number>1</number>
-			<enemy>true</enemy><!--So you don't ever see the crew-->
-			<lifetime>0</lifetime>
-			<noSlot>true</noSlot>
-			<statBoosts>
-
-				<statBoost name="deathEffect"><!--This modifies the stat of the crew, so that the same crew can be used for multiple weapons-->
-					<boostType>SET</boostType>
-
-
-					<deathEffect><!--When template crew dies (on weapon impact) these statBoosts are applied -->
-						<statBoosts>
-
-							<statBoost name="powerEffect">
-								<boostType>SET</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
-								<shipTarget>ORIGINAL_SHIP</shipTarget>
-								<crewTarget>ALLIES</crewTarget><!--Affects the allies of the spawned crew, so YOUR enemies-->
-								<priority>999999</priority>
-								<duration>0.2</duration>
-								<blackList load="LIST_FM_PLSNOEFFECT"/>
-								<powerEffect>
-									<powerCharges>1</powerCharges>
-									<initialCharges>1</initialCharges>
-									<cooldown>0.1</cooldown>
-									<activateWhenReady enemiesOnly="false">true</activateWhenReady>
-									<jumpCooldown>full</jumpCooldown>
-									<lockdown>true</lockdown>
-									<powerSounds enemy="true">
-										<powerSound>lockdown1</powerSound>
-										<powerSound>lockdown2</powerSound>
-									</powerSounds>
-									<shipFriendlyFire>true</shipFriendlyFire>
-									<buttonText>Crystallize</buttonText>
-									<tooltip>Ready: Lock down in the current room.</tooltip>
-									<cooldownColor r="170" g="206" b="39"/>
-								</powerEffect>
-							</statBoost>
-						</statBoosts>
-					</deathEffect>
-
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>9999999</priority>
-				</statBoost>
-
-
-			</statBoosts>
-		</spawnCrew>
-		<color>
-			<r>255</r>
-			<g>0</g>
-			<b>0</b>
-		</color>
-		<speed>1</speed>
-		<power>3</power>
-		<stunChance>0</stunChance>
-		<stun>7</stun>
-		<cost>240</cost>
-		<bp>5</bp>
-		<rarity>0</rarity>
-		<length>1</length>
-		<image>beam_contact</image>
-		<launchSounds>
-			<sound>beam2</sound>
-		</launchSounds>
-		<weaponArt>fm_crystal_beam_1</weaponArt>
-		<iconImage>beam</iconImage>
-	</weaponBlueprint>
-
-
-
-
+	
 
 	<weaponBlueprint name="FM_ANIMGUN">
 
@@ -11839,10 +11759,10 @@
 		<title>Omiyari Pinpoint</title>
 		<short>Omiyari</short>
 		<desc>A potentially ship-vaporizing focus, adapting to its environment. Damage ramps up incredibly fast, chaining for 1.25 damage every time it fires.</desc>
-		<tooltip>Beam weapon, 2 damage per room.</tooltip>
-		<damage>2</damage>
+		<tooltip>Beam weapon, 1 damage per room.</tooltip>
+		<damage>1</damage>
 		<sp>0</sp>
-		<fireChance>1</fireChance>
+		<fireChance>0</fireChance>
 		<breachChance>2</breachChance>
 		<cooldown>12</cooldown>
 		<power>3</power>
@@ -11854,7 +11774,7 @@
 		<image>beam_contact</image>
 		<boost>
 			<type>damage</type>
-			<amount>1.25</amount>
+			<amount>1</amount>
 			<count>999</count>
 		</boost>
 		<launchSounds>
@@ -11874,7 +11794,7 @@
 		<damage>2</damage>
 		<sysDamage>-1</sysDamage>
 		<persDamage>-2</persDamage>
-		<sp>10</sp>
+		<sp>2</sp>
 		<fireChance>0</fireChance>
 		<breachChance>2</breachChance>
 		<stunChance>0</stunChance>
@@ -11944,7 +11864,7 @@
 		<damage>2</damage>
     <sysDamage>-1</sysDamage>
     <persDamage>-2</persDamage>
-		<sp>10</sp>
+		<sp>2</sp>
 		<fireChance>0</fireChance>
 		<breachChance>2</breachChance>
 		<stunChance>0</stunChance>
@@ -12004,6 +11924,91 @@
 		<iconImage>beam</iconImage>
 	</weaponBlueprint>
 
+	<weaponBlueprint name="FM_CRYSTAL_BEAM">
+
+		<type>BEAM</type>
+		<tip>tip_bio</tip>
+		<title>Crystallised Nanobeam</title>
+		<short>C. Nanobeam</short>
+		<desc>This child of Crystal Science uses strange crystalised nanobots to trap your opponents, causing all enemy crew on the opposing ship to lockdown the room they are currently in.</desc>
+		<tooltip> Beam weapon that greatly damages enemy crew. Stuns, pierces shields, and starts fires. Extremely expensive but excellent for crew killing.</tooltip>
+		<!--<damage>6</damage>-->
+		<damage>0</damage>
+		<sp>3</sp>
+		<fireChance>7</fireChance>
+		<cooldown>16</cooldown>
+		<spawnCrew>
+			<race>fm_generic_crewjank</race>
+			<number>1</number>
+			<enemy>true</enemy><!--So you don't ever see the crew-->
+			<lifetime>0</lifetime>
+			<noSlot>true</noSlot>
+			<statBoosts>
+
+				<statBoost name="deathEffect"><!--This modifies the stat of the crew, so that the same crew can be used for multiple weapons-->
+					<boostType>SET</boostType>
+
+
+					<deathEffect><!--When template crew dies (on weapon impact) these statBoosts are applied -->
+						<statBoosts>
+
+							<statBoost name="powerEffect">
+								<boostType>SET</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
+								<shipTarget>ORIGINAL_SHIP</shipTarget>
+								<crewTarget>ALLIES</crewTarget><!--Affects the allies of the spawned crew, so YOUR enemies-->
+								<priority>999999</priority>
+								<duration>0.2</duration>
+								<blackList load="LIST_FM_PLSNOEFFECT"/>
+								<powerEffect>
+									<powerCharges>1</powerCharges>
+									<initialCharges>1</initialCharges>
+									<cooldown>0.1</cooldown>
+									<activateWhenReady enemiesOnly="false">true</activateWhenReady>
+									<jumpCooldown>full</jumpCooldown>
+									<lockdown>true</lockdown>
+									<powerSounds enemy="true">
+										<powerSound>lockdown1</powerSound>
+										<powerSound>lockdown2</powerSound>
+									</powerSounds>
+									<shipFriendlyFire>true</shipFriendlyFire>
+									<buttonText>Crystallize</buttonText>
+									<tooltip>Ready: Lock down in the current room.</tooltip>
+									<cooldownColor r="170" g="206" b="39"/>
+								</powerEffect>
+							</statBoost>
+						</statBoosts>
+					</deathEffect>
+
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>9999999</priority>
+				</statBoost>
+
+
+			</statBoosts>
+		</spawnCrew>
+		<color>
+			<r>255</r>
+			<g>0</g>
+			<b>0</b>
+		</color>
+		<speed>1</speed>
+		<power>2</power>
+		<stunChance>0</stunChance>
+		<stun>7</stun>
+		<cost>240</cost>
+		<bp>5</bp>
+		<rarity>0</rarity>
+		<length>1</length>
+		<image>beam_contact</image>
+		<launchSounds>
+			<sound>beam2</sound>
+		</launchSounds>
+		<weaponArt>fm_crystal_beam_1</weaponArt>
+		<iconImage>beam</iconImage>
+	</weaponBlueprint>
+	
+	
 </FTL>
 
 <FTL> <!--FLAK-->
@@ -13716,7 +13721,7 @@
 		<damage>0</damage>
 		<missiles>20</missiles>
 		<sysDamage>0</sysDamage>
-		<persDamage>0</persDamage>   <!--60 crew damage-->
+		<persDamage>0</persDamage>
 		<shots>1</shots>
 		<sp>0</sp>
 		<statBoosts> <!--Disables the ability for crew to take up a slot-->
