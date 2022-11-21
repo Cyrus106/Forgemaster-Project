@@ -5446,7 +5446,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="gb_ammo_toggle" lvl="9" max_lvl="9" blue="false" hidden="true"> <!-- Flechette Ammo Type -->
-			<text>Current: Flechette ammo.[+10% breach, only DoT crew dmg, 0 sys dmg, 18% ammo consumption]</text>
+			<text>Current: Flechette ammo.[+10% breach, only DoT crew dmg(+1 frag projectile), 0 sys dmg, 18% ammo consumption]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="gb_ammo_toggle" lvl="10" max_lvl="10" blue="false" hidden="true"> <!-- Radiation Ammo Type -->
@@ -5510,7 +5510,7 @@
 			</event>
 		</choice>
 		<choice req="GB_CURRENT_AMMO9" lvl="0" max_lvl="0" blue="false" hidden="true"> <!-- Flechette Ammo Type -->
-			<text>Flechette ammo.[+10% breach, only DoT crew dmg, 0 sys dmg, 18% ammo consumption]</text>
+			<text>Flechette ammo.[+10% breach, only DoT crew dmg(+1 frag projectile), 0 sys dmg, 18% ammo consumption]</text>
 			<event>
 			  <loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_FLECHETTE</loadEvent>
 			</event>
@@ -5666,7 +5666,7 @@
 		</choice>
 	</event>
 	<event name="COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_FLECHETTE">
-		<text>Flechette rounds: [6s cd, 1 hull dmg, 0 sys dmg, 1 dps DoT(25s) crew dmg, 20% breach chance, 30 px radius, 18% ammo consumption]
+		<text>Flechette rounds: [6s cd, 1 hull dmg, 0 sys dmg, 1 dps DoT(25s) crew dmg, 20% breach chance, 30 px radius, 1 frag projectile, 18% ammo consumption]
 			Load into the Volley Gun?
 		</text>
 		<choice>
