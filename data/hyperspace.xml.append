@@ -5480,10 +5480,10 @@
 
 	<crew>
 		<race name="fm_separatist_bronze">
-      <essential>1</essential>
+                        <essential>1</essential>
 			<maxHealth>100</maxHealth>
-      <repairSpeed>0.75</repairSpeed>
-			<damageMultiplier>0.7</damageMultiplier>
+                        <repairSpeed>0.75</repairSpeed>
+			<damageMultiplier>0.4</damageMultiplier>
 			<fireDamageMultiplier>1</fireDamageMultiplier>
 			<canBurn>false</canBurn>
 			<fireRepairMultiplier>3</fireRepairMultiplier>
@@ -5492,7 +5492,7 @@
 			<deathSounds>
 				<deathSound>engiDeath</deathSound>
 			</deathSounds>
-      <passiveStatBoosts>
+                        <passiveStatBoosts>
 				<statBoost name="deathEffect">
 					<boostType>FLAT</boostType>
 					<shipTarget>CREW_TARGET</shipTarget>
@@ -5549,18 +5549,37 @@
 			<damageMultiplier>0.75</damageMultiplier>
 			<suffocationModifier>0.5</suffocationModifier>
 			<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
-      <noClone>true</noClone>
+                        <noClone>true</noClone>
 			<animBase>engi</animBase>
 			<deathSounds>
 				<deathSound>engiDeath</deathSound>
 			</deathSounds>
-      <deathEffect>
+                       <!-- <deathEffect>
 				<spawnCrew>
 					<race>fm_nano_cobalt</race>
 					<name>Cobalt</name>
 					<number>1</number>
 				</spawnCrew>
-			</deathEffect>
+			</deathEffect>-->
+			<powerEffect>
+			<cooldown>10</cooldown>
+			<jumpCooldown>continue</jumpCooldown>
+			<powerSounds>
+				<powerSound>engiDeath</powerSound>
+				<powerSound>lockdown2</powerSound>
+			</powerSounds>
+			<req type="player">
+				<minHealth>0</minHealth>
+				<maxHealth>25</maxHealth>
+			</req>
+			<buttonText>REBIRTH</buttonText>
+			<tooltip>[COOLDOWN:10s]
+				Hey, you shouldn't be reading this! Scram!</tooltip>
+			<cooldownColor r="3" g="145" b="0"/>
+			<effectAnim>explosion_random</effectAnim>
+			<transformRace>fm_nano_cobalt</transformRace>
+			<activateWhenReady enemiesOnly="false">true</activateWhenReady>
+		</powerEffect>
 		</race>
 	</crew>
 	<crew>
@@ -5572,7 +5591,7 @@
 			<damageTakenMultiplier>0</damageTakenMultiplier>
       <canBurn>true</canBurn>
       <canFight>false</canFight>
-      <passiveHealAmount>5</passiveHealAmount>
+      <passiveHealAmount>3</passiveHealAmount>
 			<damageMultiplier>1</damageMultiplier>
       <canSuffocate>false</canSuffocate>
 			<suffocationModifier>1</suffocationModifier>
@@ -5584,32 +5603,37 @@
 			<deathSounds>
 				<deathSound>engiDeath</deathSound>
 			</deathSounds>
-      <powerEffect>
-				<cooldown>15</cooldown>
-				<jumpCooldown>full</jumpCooldown>
-				<buttonText>REFORM</buttonText>
-				<tooltip>[COOLDOWN:15s]
-					Absorb part of the hull to reform into a Cobalt Separatist.</tooltip>
-				<cooldownColor r="0" g="0" b="255"/>
-				<transformRace>fm_separatist_cobalt</transformRace>
-				<damage>1</damage>
-				<sysDamage>-1</sysDamage>
-				<persDamage>-1</persDamage>
-				<breachChance>10</breachChance>
-			</powerEffect>
-
+			<powerEffect>
+			<cooldown>20</cooldown>
+			<jumpCooldown>continue</jumpCooldown>
+			<powerSounds>
+				<powerSound>lockdown1</powerSound>
+				<powerSound>lockdown2</powerSound>
+			</powerSounds>
+			<damage>1</damage>
+			<persDamage>-1</persDamage>
+			<breachChance>10</breachChance>
+			<friendlyFire>true</friendlyFire>
+			<shipFriendlyFire>true</shipFriendlyFire>
+			<buttonText>REFORM</buttonText>
+			<tooltip>[COOLDOWN:20s]
+				Reform into a Cobalt Seperatist, deal 1 hull and system damage, and breach the current room.</tooltip>
+			<cooldownColor r="50" g="121" b="168"/>
+			<transformRace>fm_separatist_cobalt</transformRace>
+			<effectAnim>explosion_random</effectAnim>
+		</powerEffect>
 		</race>
 	</crew>
 	<crew>
 		<race name="fm_separatist_twisted">
-			<maxHealth>125</maxHealth>
+			<maxHealth>75</maxHealth>
 			<repairSpeed>1.75</repairSpeed>
 			<suffocationModifier>0.5</suffocationModifier>
 			<fireDamageMultiplier>0.5</fireDamageMultiplier>
 			<damageMultiplier>1.25</damageMultiplier>
 			<damageTakenMultiplier>0.75</damageTakenMultiplier>
 			<moveSpeedMultiplier>1</moveSpeedMultiplier>
-      		<noClone>true</noClone>
+      		        <noClone>true</noClone>
 			<animBase>engi</animBase>
 			<deathSounds>
 				<deathSound>engiDeath</deathSound>
@@ -5620,12 +5644,12 @@
 					<name>Cobalt</name>
 					<number>1</number>
 				</spawnCrew>
-                <spawnCrew>
+                                <spawnCrew>
 					<race>fm_separatist_bronze</race>
 					<name>Bronze</name>
 					<number>1</number>
 				</spawnCrew>
-      		</deathEffect>
+      		        </deathEffect>
 			<passiveStatBoosts>
 				<statBoost name="deathEffect">
 					<boostType>FLAT</boostType>
@@ -5640,7 +5664,7 @@
 					<boostType>FLAT</boostType>
 					<shipTarget>CREW_TARGET</shipTarget>
 					<crewTarget>ALL</crewTarget>
-					<value>-6</value>
+					<value>-2</value>
 					<boostAnim>nanofield_cobalt</boostAnim>
 					<priority>999999</priority>
 				</statBoost>
@@ -5648,13 +5672,14 @@
         	<powerEffect>
 				<cooldown>15</cooldown>
 				<jumpCooldown>full</jumpCooldown>
-				<buttonText>ABSORB</buttonText>
+				<buttonText>SPLIT</buttonText>
 				<tooltip>[COOLDOWN:15s]
-					Alongside a Cobalt Separatist, forms together into a Twisted Separatist, a combination of the two.</tooltip>
+					Split back into the two Seperatists.</tooltip>
 				<cooldownColor r="0" g="0" b="255"/>
 	    		<transformRace>fm_separatist_bronze</transformRace>
         		<spawnCrew>
 					<number>1</number>
+				        <name>Cobalt</name>
 					<race>fm_separatist_cobalt</race>
 				</spawnCrew>
 			</powerEffect>
@@ -13176,10 +13201,12 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<value>true</value>
 				<systemList>
 					<engines/>
+					<drones/>
 				</systemList>
 				<systemRoomTarget>ALL</systemRoomTarget>
 				<systemPowerDependency>
 					<engines/>
+					<drones/>
 				</systemPowerDependency>
 				<systemPowerScaling>
 					<noSys>0.0</noSys>
@@ -13188,7 +13215,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<onePwr>1.0</onePwr>
 				</systemPowerScaling>
 			</statBoost>
-			<statBoost name="teleportMove">
+			<!--<statBoost name="teleportMove">
 				<boostType>SET</boostType>
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
@@ -13207,7 +13234,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<noPwr>0.0</noPwr>
 					<onePwr>1.0</onePwr>
 				</systemPowerScaling>
-			</statBoost>
+			</statBoost> -->
 		</statBoosts>
     </aug>
 
