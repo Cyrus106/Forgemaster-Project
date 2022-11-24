@@ -1,0 +1,37 @@
+<mod:findName type="event" name="STORAGE_CHECK_JUKEBOX">
+    <mod-append:choice hidden="true" req="juke_twisted">
+		<text>FM: Threats of the Ocean Floor</text>
+		<event>
+			<playMusic>Twisted</playMusic>
+			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
+		</event>
+	</mod-append:choice>
+    <mod-append:choice hidden="true" req="juke_bellona">
+		<text>FM: Bellona Floor 1</text>
+		<event>
+			<playMusic>Bellona</playMusic>
+			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
+		</event>
+	</mod-append:choice>
+    <mod-append:choice hidden="true" req="juke_bellona">
+		<text>FM: Bellona Floor 2</text>
+		<event>
+			<playMusic>Bellona2</playMusic>
+			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
+		</event>
+	</mod-append:choice>
+    <mod-append:choice hidden="true" req="juke_bellona">
+		<text>FM: Bellona Floor 3</text>
+		<event>
+			<playMusic>Bellona3</playMusic>
+			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
+		</event>
+	</mod-append:choice>
+    <mod-append:choice hidden="true" req="juke_bleakfuture">
+		<text>FM: Bleak Future End</text>
+		<event>
+			<playMusic>BleakFuture</playMusic>
+			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
+		</event>
+	</mod-append:choice>
+</mod:findName>

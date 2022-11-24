@@ -60,6 +60,7 @@
 	
 	<event name="FM_BOSS_CLAN1_SHIP_DESTROYED">
 		<playMusic></playMusic>
+		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking.  You also locate what appears to be a chemical replication lab that goes beyond modern science, labelled "Ambrosia". It gives off an otherworldly aura. The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -141,6 +142,7 @@
 
 	<event name="FM_BOSS_CLAN1_SHIP_DESTROYED2">
 		<playMusic></playMusic>
+		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears to be a chemical replication lab that goes beyond modern science, labelled "Ambrosia". It gives off an otherworldly aura.  The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -256,6 +258,7 @@
 
 	<event name="FM_BOSS_DUSK1_SHIP_DESTROYED">
 		<playMusic></playMusic>
+		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking.  You also locate what appears to be a set of strange looking vests, labelled "World Record". They give off an otherworldly aura.  The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -335,6 +338,7 @@
 
 	<event name="FM_BOSS_DUSK1_SHIP_DESTROYED2">
 		<playMusic></playMusic>
+		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears to be a set of strange looking vests, labelled "World Record". They give off an otherworldly aura.  The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -436,6 +440,7 @@
 
 	<event name="FM_BOSS_ENGI1_DESTROYED">
 		<playMusic></playMusic>
+		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears a strange looked Drone Booster labelled "Kai".  The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -517,6 +522,7 @@
 
 	<event name="FM_BOSS_ENGI1_DESTROYED2">
 		<playMusic></playMusic>
+		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The  bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears a strange looked Drone Booster labelled "Kai".  The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -4004,6 +4010,7 @@
 
 	<event name="FM_BOSS_CLAN1_SHIP_DESTROYED_NO_CORDS">
 		<playMusic></playMusic>
+		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking.  You also locate what appears to be a chemical replication lab that goes beyond modern science, labelled "Ambrosia". It gives off an otherworldly aura.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -4082,6 +4089,7 @@
 
 	<event name="FM_BOSS_CLAN1_SHIP_DESTROYED2_NO_CORDS">
 		<playMusic></playMusic>
+		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears to be a chemical replication lab that goes beyond modern science, labelled "Ambrosia". It gives off an otherworldly aura.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -4196,6 +4204,7 @@
 
 	<event name="FM_BOSS_DUSK1_SHIP_DESTROYED_NO_CORDS">
 		<playMusic></playMusic>
+		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking.  You also locate what appears to be a set of strange looking vests, labelled "World Record". They give off an otherworldly aura.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -4272,6 +4281,7 @@
 
 	<event name="FM_BOSS_DUSK1_SHIP_DESTROYED2_NO_CORDS">
 		<playMusic></playMusic>
+		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears to be a set of strange looking vests, labelled "World Record". They give off an otherworldly aura.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -4371,6 +4381,7 @@
 
 	<event name="FM_BOSS_ENGI1_DESTROYED_NO_CORDS">
 		<playMusic></playMusic>
+		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears a strange looked Drone Booster labelled "Kai".</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -4447,6 +4458,7 @@
 
 	<event name="FM_BOSS_ENGI1_DESTROYED2_NO_CORDS">
 		<playMusic></playMusic>
+		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The  bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears a strange looked Drone Booster labelled "Kai".</text>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>

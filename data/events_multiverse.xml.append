@@ -10202,7 +10202,7 @@
 	</event>
 	<event name="FM_FS_AIRLOCK_HUB">
 		<changeBackground>FM_SPACESTATION_HALL</changeBackground>
-
+		<metaVariable name="juke_bellona" op="set" val="1"/>
 		<playMusic>Bellona</playMusic>
 
 		<text>You and your crew have agreed this will be your initial rendezvous point and begin combing the vessel. What would you like to do?</text>
@@ -13688,6 +13688,7 @@
 		<changeBackground>FM_SPACESTATION_HALL</changeBackground>
 		<unlockCustomShip silent="false">PLAYER_SHIP_GUNSHIP_FUTURE</unlockCustomShip>
 		<text>THANK YOU FOR PLAYING!</text>
+		<metaVariable name="juke_bleakfuture" op="set" val="1"/>
 		<win ach="bleakfuture" music="BleakFuture" creditsText="fm_credit_victory_future" text="This timeline is doomed to be crushed by the Harmony. Just survive." creditsBackground="VICTORY_TRUE"/>
 	</event>
 
@@ -13695,6 +13696,7 @@
 		<changeBackground>FM_SPACESTATION_HALL</changeBackground>
 		<unlockCustomShip silent="false">PLAYER_SHIP_GUNSHIP_FUTURE</unlockCustomShip>
 		<text>THANK YOU FOR PLAYING!</text>
+		<metaVariable name="juke_bleakfuture" op="set" val="1"/>
 		<win ach="bleakfuture" music="BleakFuture" creditsText="fm_credit_victory_future" text="This timeline is doomed to be crushed by the Harmony. Just survive." creditsBackground="VICTORY_TRUE"/>
 	</event>
 
@@ -13702,6 +13704,7 @@
 		<changeBackground>FM_SPACESTATION_HALL</changeBackground>
 		<unlockCustomShip silent="false">PLAYER_SHIP_GUNSHIP_FUTURE</unlockCustomShip>
 		<text>THANK YOU FOR PLAYING!</text>
+		<metaVariable name="juke_bleakfuture" op="set" val="1"/>
 		<win ach="bleakfuture" music="BleakFuture" creditsText="fm_credit_victory_future" text="This timeline is doomed to be crushed by the Harmony. Just survive." creditsBackground="VICTORY_TRUE"/>
 	</event>
 
@@ -13710,6 +13713,7 @@
 		<unlockCustomShip silent="false">PLAYER_SHIP_GUNSHIP_FUTURE</unlockCustomShip>
 		<win ach="bleakfuture" music="BleakFuture" creditsText="fm_credit_victory_future" text="This timeline is doomed to be crushed by the Harmony. Just survive." creditsBackground="VICTORY_TRUE"/>
 		<text>THANK YOU FOR PLAYING!</text>
+		<metaVariable name="juke_bleakfuture" op="set" val="1"/>
 	</event>
 
 	<event name="FM_FS_ENDING_5_PLAY">
@@ -13717,6 +13721,7 @@
 		<unlockCustomShip silent="false">PLAYER_SHIP_GUNSHIP_FUTURE</unlockCustomShip>
 		<win ach="bleakfuture" music="BleakFuture" creditsText="fm_credit_victory_future" text="This timeline is doomed to be crushed by the Harmony. Just survive." creditsBackground="VICTORY_TRUE"/>
 		<text>THANK YOU FOR PLAYING!</text>
+		<metaVariable name="juke_bleakfuture" op="set" val="1"/>
 	</event>
 
 	<event name="FM_FS_ENDING_6_PLAY">
@@ -13724,6 +13729,7 @@
 		<unlockCustomShip silent="false">PLAYER_SHIP_GUNSHIP_FUTURE</unlockCustomShip>
 		<win ach="bleakfuture" music="BleakFuture" creditsText="fm_credit_victory_future" text="This timeline is doomed to be crushed by the Harmony. Just survive." creditsBackground="VICTORY_TRUE"/>
 		<text>THANK YOU FOR PLAYING!</text>
+		<metaVariable name="juke_bleakfuture" op="set" val="1"/>
 	</event>
 
 

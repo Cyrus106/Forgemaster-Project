@@ -4158,7 +4158,10 @@
 		<variable name="fm_forgemaster_called" op="set" val="0"/>
 
 		<variable name="fm_invisible_ship" op="set" val="0"/><!--Variable that makes the ship literally disappear.-->
-
+		<metaVariable name="juke_twisted" op="set" val="0"/>
+		<metaVariable name="juke_bellona" op="set" val="0"/>
+		<metaVariable name="juke_bleakfuture" op="set" val="0"/>
+		
 		<variable name="valefor_easter_egg" op="set" val="0"/><!--the funny valefor easter egg marker-->
 		<metaVariable name="FM_LORE_PHOTON" op="set" val="0"/>
 		<metaVariable name="FM_LORE_PHOTON2" op="set" val="0"/>
