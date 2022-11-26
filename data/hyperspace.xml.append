@@ -593,7 +593,7 @@
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED5"><!--lanius-->
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<crewLimit>10</crewLimit>
-			<systemLimit>9</systemLimit>
+			<systemLimit>8</systemLimit>
 			<customReactor maxLevel="35">
 				<baseCost>15</baseCost>
 				<increment>5</increment>

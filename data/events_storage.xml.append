@@ -5695,6 +5695,121 @@
 			</event>
 		</choice>
 	</event>
+  
+  <event name="COMBAT_CHECK_FM_RVS_AC_CHARGE">
+		<text>Select an ammo type to load into your Autocannon MK I</text>
+		<choice req="gb_ammo_toggle" lvl="1" max_lvl="1" blue="false" hidden="true"> <!-- Standard Ammo Type -->
+			<text id="text_GB_AMMO_CURRENT_1"/>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="gb_ammo_toggle" lvl="2" max_lvl="2" blue="false" hidden="true"> <!-- Caseless Ammo Type -->
+			<text id="text_GB_AMMO_CURRENT_2"/>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="gb_ammo_toggle" lvl="3" max_lvl="3" blue="false" hidden="true"> <!-- High Velocity Ammo Type -->
+			<text id="text_GB_AMMO_CURRENT_3"/>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="gb_ammo_toggle" lvl="4" max_lvl="4" blue="false" hidden="true"> <!-- Recycler Ammo Type -->
+			<text id="text_GB_AMMO_CURRENT_4"/>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="gb_ammo_toggle" lvl="5" max_lvl="5" blue="false" hidden="true"> <!-- Concussive Ammo Type -->
+			<text id="text_GB_AMMO_CURRENT_5"/>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="gb_ammo_toggle" lvl="6" max_lvl="6" blue="false" hidden="true"> <!-- EMP Ammo Type -->
+			<text id="text_GB_AMMO_CURRENT_6"/>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="gb_ammo_toggle" lvl="7" max_lvl="7" blue="false" hidden="true"> <!-- Particle Ammo Type -->
+			<text id="text_GB_AMMO_CURRENT_7"/>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="gb_ammo_toggle" lvl="8" max_lvl="8" blue="false" hidden="true"> <!-- Incendiary Ammo Type -->
+			<text id="text_GB_AMMO_CURRENT_8"/>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="gb_ammo_toggle" lvl="9" max_lvl="9" blue="false" hidden="true"> <!-- Flechette Ammo Type -->
+			<text id="text_GB_AMMO_CURRENT_9"/>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="gb_ammo_toggle" lvl="10" max_lvl="10" blue="false" hidden="true"> <!-- Radiation Ammo Type -->
+			<text id="text_GB_AMMO_CURRENT_10"/>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="GB_CURRENT_AMMO1" lvl="0" max_lvl="0" blue="false" hidden="false"> <!-- Standard Ammo Type -->
+			<text id="text_GB_AMMO_LOAD_1"/>
+			<event load="GET_AC_CHARGE_STANDARD"/>
+		</choice>
+		<choice req="GB_CURRENT_AMMO2" lvl="0" max_lvl="0" blue="false" hidden="false"> <!-- Caseless Ammo Type -->
+			<text id="text_GB_AMMO_LOAD_2"/>
+			<event load="GET_AC_CHARGE_CASELESS"/>
+		</choice>
+		<choice req="GB_CURRENT_AMMO3" lvl="0" max_lvl="0" blue="false" hidden="false"> <!-- High Velocity Ammo Type -->
+			<text id="text_GB_AMMO_LOAD_3"/>
+			<event load="GET_AC_CHARGE_HV"/>
+		</choice>
+		<choice req="GB_AMMO_4_NO" blue="false" hidden="true"> <!-- Recycler Ammo Type -->
+			<text id="text_GB_AMMO_LOAD_4_NO"/>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="GB_AMMO_4_YES"  blue="false" hidden="false"> <!-- Recycler Ammo Type -->
+			<text id="text_GB_AMMO_LOAD_4"/>
+			<event load="GET_AC_CHARGE_FREE"/>
+		</choice>
+		<choice req="GB_CURRENT_AMMO5" lvl="0" max_lvl="0" blue="false" hidden="false"> <!-- Concussive Ammo Type -->
+			<text id="text_GB_AMMO_LOAD_5"/>
+			<event load="GET_AC_CHARGE_HE"/>
+		</choice>
+		<choice req="GB_CURRENT_AMMO6" lvl="0" max_lvl="0" blue="false" hidden="false"> <!-- EMP Ammo Type -->
+			<text id="text_GB_AMMO_LOAD_6"/>
+			<event load="GET_AC_CHARGE_EMP"/>
+		</choice>
+		<choice req="GB_CURRENT_AMMO7" lvl="0" max_lvl="0" blue="false" hidden="false"> <!-- Particle Ammo Type -->
+			<text id="text_GB_AMMO_LOAD_7"/>
+			<event load="GET_AC_CHARGE_HEAT"/>
+		</choice>
+		<choice req="GB_AMMO_8_NO" blue="false" hidden="true"> <!-- Incendiary Ammo Type -->
+			<text id="text_GB_AMMO_LOAD_8_NO"/>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="GB_AMMO_8_YES"  blue="false" hidden="false"> <!-- Incendiary Ammo Type -->
+			<text id="text_GB_AMMO_LOAD_8"/>
+			<event load="GET_AC_CHARGE_INCENDIARY"/>
+		</choice>
+		<choice req="GB_CURRENT_AMMO9" lvl="0" max_lvl="0" blue="false" hidden="false"> <!-- Flechette Ammo Type -->
+			<text id="text_GB_AMMO_LOAD_9"/>
+			<event load="GET_AC_CHARGE_FLECHETTE"/>
+		</choice>
+		<choice req="GB_AMMO_10_NO" blue="false" hidden="true"> <!-- Radiation Ammo Type -->
+			<text id="text_GB_AMMO_LOAD_10_NO"/>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="GB_AMMO_10_YES"  blue="false" hidden="false"> <!-- Radiation Ammo Type -->
+			<text id="text_GB_AMMO_LOAD_10"/>
+			<event load="GET_AC_CHARGE_RAD"/>
+		</choice>
+
+		<choice>
+			<text>Do something else instead.</text>
+			<event>
+				<loadEventList seeded="false" generate="false">
+					<event load="GET_AC_CHARGE_STANDARD" req="GB_CURRENT_AMMO1"/>
+					<event load="GET_AC_CHARGE_CASELESS" req="GB_CURRENT_AMMO2"/>
+					<event load="GET_AC_CHARGE_HV" req="GB_CURRENT_AMMO3"/>
+					<event load="GET_AC_CHARGE_FREE" req="GB_CURRENT_AMMO4"/>
+					<event load="GET_AC_CHARGE_HE" req="GB_CURRENT_AMMO5"/>
+					<event load="GET_AC_CHARGE_EMP" req="GB_CURRENT_AMMO6"/>
+					<event load="GET_AC_CHARGE_HEAT" req="GB_CURRENT_AMMO7"/>
+					<event load="GET_AC_CHARGE_INCENDIARY" req="GB_CURRENT_AMMO8"/>
+					<event load="GET_AC_CHARGE_FLECHETTE" req="GB_CURRENT_AMMO9"/>
+					<event load="GET_AC_CHARGE_RAD" req="GB_CURRENT_AMMO10"/>
+				</loadEventList>
+			</event>
+		</choice>
+	</event>
+  
 
 	<event name="GET_AC_CHARGE_STANDARD">
 		<weapon name="FM_RVS_AC_CHARGE"/>
