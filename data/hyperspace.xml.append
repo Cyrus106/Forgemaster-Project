@@ -5498,6 +5498,8 @@
                         
 			
 			<passiveStatBoosts>
+				<!--Doesn't work-->
+				<!--
 				<statBoost name="deathEffect">
 					<boostType>FLAT</boostType>
 					<shipTarget>CREW_TARGET</shipTarget>
@@ -5506,15 +5508,17 @@
 					
 					<deathEffect>
 						<fireChance>10</fireChance>
+						<shipFriendlyFire>true</shipFriendlyFire>
 					</deathEffect>
 
 				</statBoost>
-	      
+				-->
+
 	            <statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
 					<shipTarget>CREW_TARGET</shipTarget>
 					<crewTarget>ALL</crewTarget>
-					<value>-12</value>
+					<amount>-12</amount>
 					<boostAnim>nanofield_bronze</boostAnim>
 					<priority>999999</priority>
 				</statBoost>
@@ -5669,23 +5673,31 @@
 				</spawnCrew>
       		        </deathEffect>
 			<passiveStatBoosts>
+				<!--Doesn't work, -->
+				
+				<!--
 				<statBoost name="deathEffect">
 					<boostType>FLAT</boostType>
 					<shipTarget>CREW_TARGET</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
+					
 					<deathEffect>
-				<fireChance>10</fireChance>
+						<fireChance>10</fireChance>
+						<shipFriendlyFire>true</shipFriendlyFire>
 					</deathEffect>
+
 				</statBoost>
+				-->
 			         <statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
 					<shipTarget>CREW_TARGET</shipTarget>
 					<crewTarget>ALL</crewTarget>
-					<value>-2</value>
+					<amount>-2</amount>
 					<boostAnim>nanofield_cobalt</boostAnim>
 					<priority>999999</priority>
 				</statBoost>
+
       		</passiveStatBoosts>
         	<powerEffect>
 				<cooldown>15</cooldown>
