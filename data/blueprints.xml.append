@@ -858,60 +858,58 @@
 		<class>Twisted Renegade Separatist</class>
 		<name>Duality</name>
 		<unlock id="ship_PLAYER_SHIP_TWISTED_SEPPY_unlock"/>
-		<desc>Vertaal is a bozo )real)
-
-
-			boo womp</desc>
+		<desc>Now with new layout, someone should put it on the enemy version or something</desc>
 		<systemList>
 			<artillery power="1" room="6" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
-			<battery power="1" max="2" room="7" start="false" img="room_battery_13" />
-			<cloaking power="1" room="12" start="false" img="room_cloaking_3" />
+			<battery power="1" max="2" room="7" start="false" img="room_battery_8" />
+			<cloaking power="1" room="12" start="false" img="room_cloaking_9" />
 			<clonebay power="1" room="1" start="false">
 				<slot>
 					<number>0</number>
 				</slot>
 			</clonebay>
-			<doors power="2" room="16" start="true" img="room_doors_7">
+			<doors power="2" room="15" start="true" img="room_doors_4">
 				<slot>
-					<direction>up</direction>
-					<number>1</number>
+					<direction>right</direction>
+					<number>0</number>
 				</slot>
 			</doors>
-			<drones power="3" max="8" room="9" start="true" img="room_drones_4" />
-			<engines power="1" room="4" start="true" img="room_engines_4">
+			<drones power="3" max="8" room="9" start="true" img="room_drones_3_mirrored_FM" />
+			<engines power="1" room="4" start="true" img="room_engines_8">
 				<slot>
-					<direction>down</direction>
-					<number>2</number>
+					<direction>left</direction>
+					<number>1</number>
 				</slot>
 			</engines>
-			<hacking power="1" room="10" start="false" img="room_hacking_8" />
-			<medbay power="1" room="1" start="true" img="room_medbay_9">
+			<hacking power="1" room="10" start="false" img="room_hacking_3" />
+			<medbay power="1" room="1" start="true" img="room_medbay_4">
 				<slot>
 					<number>-2</number>
 				</slot>
-			</medbay>
-			<mind power="1" room="8" start="false" img="room_mind_5" />
-			<oxygen power="1" room="15" start="true" img="room_oxygen_9" />
+			</medbay> 
+			<mind power="1" room="8" start="false" img="room_mind_7" />
+			<oxygen power="1" room="14" start="true" img="room_oxygen_6" />
 			<pilot power="1" room="0" start="true" img="room_pilot_2">
 				<slot>
 					<direction>right</direction>
 					<number>1</number>
 				</slot>
 			</pilot>
-			<sensors power="1" room="2" start="true" img="room_sensors_3">
+			<sensors power="1" room="2" start="true" img="room_sensors_6">
 				<slot>
 					<direction>right</direction>
 					<number>1</number>
 				</slot>
 			</sensors>
-			<shields power="2" max="8" room="5" start="true" img="room_shields_4">
+			<shields power="2" max="8" room="5" start="true" img="room_shields">
 				<slot>
 					<direction>left</direction>
 					<number>0</number>
 				</slot>
 			</shields>
-			<teleporter power="1" room="14" start="true" />
-			<weapons power="3" max="8" room="3" start="true" img="room_weapons_8">
+			<teleporter power="1" room="13" start="true" />
+			<temporal power="1" room="11" start="false" img="room_temporal_3" />
+			<weapons power="3" max="8" room="3" start="true" img="room_weapons">
 				<slot>
 					<direction>up</direction>
 					<number>1</number>
