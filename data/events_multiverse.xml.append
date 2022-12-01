@@ -2476,7 +2476,7 @@
 		<checkCargo/>
 		<text>Currently viewing the God Killer.</text>
 		<choice hidden="false" blue="false">
-			<text>Change the weapon setting from "Semi-Auto" to "Full Auto"[Cost: 10~].</text>
+			<text>Change the weapon setting from "Semi-Auto" to "Full Auto".</text>
 			<event>
 				<text>Alastair gently picks up the Godkiller and puts it on his workbench. He goes to a toolbox and pulls out a screwdriver.</text>
 				<item_modify>
@@ -3728,9 +3728,9 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_ENERGY_RAILBLENDER_PLAYER"/>
-				<item_modify>
-					<item type="scrap" min="-140" max="-140"/>
-				</item_modify>
+		<item_modify>
+			<item type="scrap" min="-140" max="-140"/>
+		</item_modify>
         <removeItem>SHOTGUN_CHARGE</removeItem>
         <removeItem>ENERGY_CHARGEGUN_PLAYER</removeItem>
         <choice hidden="true">
@@ -3746,9 +3746,9 @@
       <event>
         <text>Proceed with crafting?</text>
         <weapon name="FM_ENERGY_RAILBLENDER"/>
-				<item_modify>
-					<item type="scrap" min="-140" max="-140"/>
-				</item_modify>
+		<item_modify>
+			<item type="scrap" min="-140" max="-140"/>
+		</item_modify>
         <removeItem>SHOTGUN_CHARGE</removeItem>
         <removeItem>ENERGY_CHARGEGUN</removeItem>
         <choice hidden="true">
@@ -3776,7 +3776,7 @@
 		<checkCargo/>
 		<text>Currently viewing the Bronze Flak.</text>
 		<choice req="CRYSTAL_BURST_1"  blue="false" hidden="false" max_group="1">
-			<text>Install the Crystal Burst I in the Flak II.[Cost: 10~]</text>
+			<text>Install the Crystal Burst I in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
 				<weapon name="FM_SHOTGUN_BRONZE"/>
@@ -3812,7 +3812,7 @@
 		</choice>
 
 		<choice req="CRYSTAL_BURST_1_RED"  blue="false" hidden="false" max_group="2">
-			<text>Install the Elite Crystal Burst I in the Flak II.[Cost: 10~]</text>
+			<text>Install the Elite Crystal Burst I in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
 				<weapon name="FM_SHOTGUN_BRONZE"/>
@@ -3841,7 +3841,7 @@
 		</choice>
 
 		<choice req="CRYSTAL_BURST_2"  blue="false" hidden="false" max_group="3">
-			<text>Install the Crystal Burst Mark II in the Flak II.[Cost: 10~]</text>
+			<text>Install the Crystal Burst Mark II in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
 				<weapon name="FM_SHOTGUN_BRONZE"/>
@@ -3870,7 +3870,7 @@
 		</choice>
 
 		<choice req="CRYSTAL_BURST_2_RED"  blue="false" hidden="false" max_group="4">
-			<text>Install the Elite Crystal Burst Mark II in the Flak II.[Cost: 10~]</text>
+			<text>Install the Elite Crystal Burst Mark II in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
 				<weapon name="FM_SHOTGUN_BRONZE"/>
@@ -3899,7 +3899,7 @@
 		</choice>
 
 		<choice req="CRYSTAL_HEAVY_1"  blue="false" hidden="false" max_group="5">
-			<text>Install the Heavy Crystal Mark I in the Flak II.[Cost: 10~]</text>
+			<text>Install the Heavy Crystal Mark I in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
 				<weapon name="FM_SHOTGUN_BRONZE"/>
@@ -3928,7 +3928,7 @@
 		</choice>
 
 		<choice req="CRYSTAL_HEAVY_1_RED"  blue="false" hidden="false" max_group="6">
-			<text>Install the Elite Heavy Crystal Mark I in the Flak II.[Cost: 10~]</text>
+			<text>Install the Elite Heavy Crystal Mark I in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
 				<weapon name="FM_SHOTGUN_BRONZE"/>
@@ -3957,7 +3957,7 @@
 		</choice>
 
 		<choice req="CRYSTAL_HEAVY_2"  blue="false" hidden="false" max_group="7">
-			<text>Install the Heavy Crystal Mark II in the Flak II.[Cost: 10~]</text>
+			<text>Install the Heavy Crystal Mark II in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
 				<weapon name="FM_SHOTGUN_BRONZE"/>
@@ -3986,7 +3986,7 @@
 		</choice>
 
 		<choice req="CRYSTAL_HEAVY_2_RED"  blue="false" hidden="false" max_group="8">
-			<text>Install the Elite Heavy Crystal Mark II in the Flak II.[Cost: 10~]</text>
+			<text>Install the Elite Heavy Crystal Mark II in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
 				<weapon name="FM_SHOTGUN_BRONZE"/>
@@ -4015,7 +4015,7 @@
 		</choice>
 
 		<choice req="CRYSTAL_STUN"  blue="false" hidden="false" max_group="9">
-			<text>Install the Neural Crystal in the Flak II.[Cost: 10~]</text>
+			<text>Install the Neural Crystal in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
 				<weapon name="FM_SHOTGUN_BRONZE"/>
@@ -4044,7 +4044,7 @@
 		</choice>
 
 		<choice req="CRYSTAL_STUN_RED"  blue="false" hidden="false" max_group="10">
-			<text>Install the Elite Neural Crystal in the Flak II.[Cost: 10~]</text>
+			<text>Install the Elite Neural Crystal in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
 				<weapon name="FM_SHOTGUN_BRONZE"/>
@@ -4073,7 +4073,7 @@
 		</choice>
 
 		<choice req="CRYSTAL_SHOTGUN"  blue="false" hidden="false" max_group="11">
-			<text>Install the Crystal Scatter in the Flak II.[Cost: 10~]</text>
+			<text>Install the Crystal Scatter in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
 				<weapon name="FM_SHOTGUN_BRONZE"/>
@@ -4102,7 +4102,7 @@
 		</choice>
 
 		<choice req="CRYSTAL_SHOTGUN_RED"  blue="false" hidden="false" max_group="12">
-			<text>Install the Elite Crystal Scatter in the Flak II.[Cost: 10~]</text>
+			<text>Install the Elite Crystal Scatter in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
 				<weapon name="FM_SHOTGUN_BRONZE"/>
@@ -4131,7 +4131,7 @@
 		</choice>
 
 		<choice req="CRYSTAL_CHARGEGUN"  blue="false" hidden="false" max_group="13">
-			<text>Install the Crystal Charger in the Flak II.[Cost: 10~]</text>
+			<text>Install the Crystal Charger in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
 				<weapon name="FM_SHOTGUN_BRONZE"/>
@@ -4160,7 +4160,7 @@
 		</choice>
 
 		<choice req="CRYSTAL_CHARGEGUN_RED"  blue="false" hidden="false" max_group="14">
-			<text>Install the Elite Crystal Charger in the Flak II.[Cost: 10~]</text>
+			<text>Install the Elite Crystal Charger in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
 				<weapon name="FM_SHOTGUN_BRONZE"/>
@@ -4189,7 +4189,7 @@
 		</choice>
 
 		<choice req="MINELAUNCHER_CRYSTAL"  blue="false" hidden="false" max_group="15">
-			<text>Install the Shard Launcher in the Flak II.[Cost: 10~]</text>
+			<text>Install the Shard Launcher in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
 				<weapon name="FM_SHOTGUN_BRONZE"/>
@@ -4218,7 +4218,7 @@
 		</choice>
 		<!--
 		<choice req="BOMB_LOCK"  blue="false" hidden="false" max_group="16">
-			<text>Install the Crystal Lockdown Bomb in the Flak II.[Cost: 10~]</text>
+			<text>Install the Crystal Lockdown Bomb in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
 				<weapon name="FM_SHOTGUN_BRONZE"/>
@@ -4557,91 +4557,91 @@
 	</event>
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_ION_MISSILES">
-    <checkCargo/>
-    <text>Currently viewing the 'Debilitatum' Heavy Missiles.</text>
-    <choice hidden="false" req="FM_ION_MISSILES_LIST" blue="false">
-      <text>Craft the 'Debilitatum' Heavy Missiles</text>
-      <event>
-        <text>Proceed with crafting?</text>
-        <weapon name="FM_ION_MISSILES"/>
+		<checkCargo/>
+		<text>Currently viewing the 'Debilitatum' Heavy Missiles.</text>
+		<choice hidden="false" req="FM_ION_MISSILES_LIST" blue="false">
+			<text>Craft the 'Debilitatum' Heavy Missiles</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<weapon name="FM_ION_MISSILES"/>
 				<item_modify>
 					<item type="scrap" min="-80" max="-80"/>
 				</item_modify>
-        <removeItem>MISSILES_3</removeItem>
-        <removeItem>ION_3</removeItem>
-        <choice hidden="true">
-          <text>Continue...</text>
-          <event>
-            <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-          </event>
-        </choice>
-      </event>
-    </choice>
-    <choice hidden="false">
-      <text>Nevermind.</text>
-      <event load="FM_FORGE_WEAPON_LOAD"/>
-    </choice>
-  </event>
+				<removeItem>MISSILES_3</removeItem>
+				<removeItem>ION_3</removeItem>
+				<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+				</event>
+				</choice>
+			</event>
+		</choice>
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_WEAPON_LOAD"/>
+		</choice>
+	</event>
 
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_IMPRISMENT_INDUCER">
-    <checkCargo/>
-    <text>Currently viewing the Imprisment Inducer.</text>
-    <choice hidden="false" req="FM_IMPRISMENT_INDUCER_LIST_1" blue="false">
-      <text>Craft the Imprisment Inducer using a Stun Bomb and a Neural Crystal</text>
-      <event>
-        <text>Proceed with crafting?</text>
-        <weapon name="FM_IMPRISMENT_INDUCER"/>
+		<checkCargo/>
+		<text>Currently viewing the Imprisment Inducer.</text>
+		<choice hidden="false" req="FM_IMPRISMENT_INDUCER_LIST_1" blue="false">
+			<text>Craft the Imprisment Inducer using a Stun Bomb and a Neural Crystal</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<weapon name="FM_IMPRISMENT_INDUCER"/>
 				<item_modify>
 					<item type="scrap" min="-130" max="-130"/>
 				</item_modify>
-        <removeItem>BOMB_STUN</removeItem>
-        <removeItem>CRYSTAL_STUN</removeItem>
-        <choice hidden="true">
-          <text>Continue...</text>
-          <event>
-            <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-          </event>
-        </choice>
-      </event>
-    </choice>
+				<removeItem>BOMB_STUN</removeItem>
+				<removeItem>CRYSTAL_STUN</removeItem>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
+				</choice>
+			</event>
+		</choice>
 		<choice hidden="false" req="FM_IMPRISMENT_INDUCER_LIST_2" blue="false">
-      <text>Craft the Imprisment Inducer using a Stun Bomb and an Elite Neural Crystal</text>
-      <event>
-        <text>Proceed with crafting?</text>
-        <weapon name="FM_IMPRISMENT_INDUCER"/>
+			<text>Craft the Imprisment Inducer using a Stun Bomb and an Elite Neural Crystal</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<weapon name="FM_IMPRISMENT_INDUCER"/>
 				<item_modify>
 					<item type="scrap" min="-130" max="-130"/>
 				</item_modify>
-        <removeItem>BOMB_STUN</removeItem>
-        <removeItem>CRYSTAL_STUN_RED</removeItem>
-        <choice hidden="true">
-          <text>Continue...</text>
-          <event>
-            <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-          </event>
-        </choice>
-      </event>
-    </choice>
+				<removeItem>BOMB_STUN</removeItem>
+				<removeItem>CRYSTAL_STUN_RED</removeItem>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
+				</choice>
+			</event>
+		</choice>
 		<choice hidden="false">
-      <text>Nevermind.</text>
-      <event load="FM_FORGE_WEAPON_LOAD"/>
-    </choice>
-  </event>
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_WEAPON_LOAD"/>
+		</choice>
+	</event>
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_RVS_AC_CHARGE">
-	  <checkCargo/>
-	  <text>Currently viewing the Volley Gun.</text>
-	  <choice hidden="false" req="AC_1_COUNT" lvl="4" blue="false">
-	    <text>Craft the Volley Gun using 4 AC 1s</text>
-	    <event>
-	      <text>Proceed with crafting?</text>
-	      <weapon name="FM_RVS_AC_CHARGE"/>
+		<checkCargo/>
+		<text>Currently viewing the Volley Gun.</text>
+		<choice hidden="false" req="AC_1_COUNT" lvl="4" blue="false">
+			<text>Craft the Volley Gun using 4 AC 1s</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<weapon name="FM_RVS_AC_CHARGE"/>
 				<item_modify>
 					<item type="scrap" min="-20" max="-20"/>
 				</item_modify>
-	      <choice hidden="true">
-	        <text>Continue...</text>
+				<choice hidden="true">
+					<text>Continue...</text>
 					<event>
 						<!--<loadEvent>REMOVE_AC4</loadEvent>-->
 						<queueEvent>FM_REMOVE_AC_1</queueEvent><!--Runs the "remove one AC_1 variant event" 4 times-->
@@ -4650,19 +4650,19 @@
 						<queueEvent>FM_REMOVE_AC_1</queueEvent>
 						<queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Loads the correct menu after crafting is done-->
 					</event>
-	      </choice>
-	    </event>
-	  </choice>
+				</choice>
+			</event>
+	  	</choice>
 		<choice hidden="false" req="AC_1_COUNT" lvl="3" blue="false">
-	    <text>Craft the Volley Gun using 3 AC 1s</text>
-	    <event>
-	      <text>Proceed with crafting?</text>
-	      <weapon name="FM_RVS_AC_CHARGE"/>
-	      <item_modify>
+			<text>Craft the Volley Gun using 3 AC 1s</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<weapon name="FM_RVS_AC_CHARGE"/>
+				<item_modify>
 					<item type="scrap" min="-40" max="-40"/>
 				</item_modify>
-	      <choice hidden="true">
-	        <text>Continue...</text>
+				<choice hidden="true">
+					<text>Continue...</text>
 					<event>
 						<!--<loadEvent>REMOVE_AC3</loadEvent>-->
 						<queueEvent>FM_REMOVE_AC_1</queueEvent><!--Runs the "remove one AC_1 variant event" 3 times-->
@@ -4670,32 +4670,32 @@
 						<queueEvent>FM_REMOVE_AC_1</queueEvent>
 						<queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Loads the correct menu after crafting is done-->
 					</event>
-	      </choice>
-	    </event>
-	  </choice>
+				</choice>
+			</event>
+		</choice>
 		<choice hidden="false" req="AC_1_COUNT" lvl="2" blue="false">
-	    <text>Craft the Volley Gun using 2 AC 1s</text>
-	    <event>
-	      <text>Proceed with crafting?</text>
-	      <weapon name="FM_RVS_AC_CHARGE"/>
-	      <item_modify>
+			<text>Craft the Volley Gun using 2 AC 1s</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<weapon name="FM_RVS_AC_CHARGE"/>
+				<item_modify>
 					<item type="scrap" min="-60" max="-60"/>
 				</item_modify>
-	      <choice hidden="true">
-	        <text>Continue...</text>
+				<choice hidden="true">
+					<text>Continue...</text>
 					<event>
 						<!--<loadEvent>REMOVE_AC2</loadEvent>-->
 						<queueEvent>FM_REMOVE_AC_1</queueEvent><!--Runs the "remove one AC_1 variant event" 2 times-->
 						<queueEvent>FM_REMOVE_AC_1</queueEvent>
 						<queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Loads the correct menu after crafting is done-->
 					</event>
-	      </choice>
-	    </event>
-	  </choice>
-	  <choice hidden="false">
-	    <text>Nevermind.</text>
-	    <event load="FM_FORGE_WEAPON_EXPLOSIVES_LOAD"/>
-	  </choice>
+				</choice>
+			</event>
+		</choice>
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_WEAPON_EXPLOSIVES_LOAD"/>
+		</choice>
 	</event>
 
 	<!--<event name="REMOVE_AC4">
@@ -5184,7 +5184,7 @@
 		<checkCargo/>
 		<text>Currently viewing the Bronze Flak</text>
 		<choice hidden="false"  blue="false">
-			<text>Upgrade Bronze Flak using scrap? [Cost: 100~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+			<text>Upgrade Bronze Flak using scrap?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5192,6 +5192,7 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
+				<remove name="FM_SHOTGUN_BRONZE"/>
 
 				<!-- KEEP THIS LINE IN IF A WEAPON IS NEEDED FOR CRAFTING THE NEXT STAGE
 
@@ -5203,18 +5204,11 @@
 				<choice hidden="true">
 					<text>Continue...</text>
 					<event>
-						<text>...</text>
-						<remove name="FM_SHOTGUN_BRONZE"/>
+						<text>Upgrade to Indium Flak Complete!</text>
+						<weapon name="FM_SHOTGUN_INDIUM"/>
 						<choice>
 							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<weapon name="FM_SHOTGUN_INDIUM"/>
-								<choice hidden="true">
-									<text>Upgrade to Indium Flak Complete!</text>
-									<event load="FM_FORGE_WEAPON_LOAD"/>
-								</choice>
-							</event>
+							<event load="FM_FORGE_WEAPON_LOAD"/>
 						</choice>
 					</event>
 				</choice>
@@ -5232,7 +5226,7 @@
 		<checkCargo/>
 		<text>Currently viewing the Indium Flak</text>
 		<choice hidden="false"  blue="false">
-			<text>Upgrade Indium Flak using scrap? [Cost: 150~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+			<text>Upgrade Indium Flak using scrap?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5240,6 +5234,7 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
+				<remove name="FM_SHOTGUN_INDIUM"/>
 
 				<!-- KEEP THIS LINE IN IF A WEAPON IS NEEDED FOR CRAFTING THE NEXT STAGE
 
@@ -5252,17 +5247,10 @@
 					<text>Continue...</text>
 					<event>
 						<text>...</text>
-						<remove name="FM_SHOTGUN_INDIUM"/>
+						<weapon name="FM_SHOTGUN_RHENIUM"/>
 						<choice>
-							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<weapon name="FM_SHOTGUN_RHENIUM"/>
-								<choice hidden="true">
-									<text>Upgrade to Rhenium Flak Complete!</text>
-									<event load="FM_FORGE_WEAPON_LOAD"/>
-								</choice>
-							</event>
+							<text>Upgrade to Rhenium Flak Complete!</text>
+							<event load="FM_FORGE_WEAPON_LOAD"/>
 						</choice>
 					</event>
 				</choice>
@@ -5280,7 +5268,7 @@
 		<checkCargo/>
 		<text>Currently viewing the Rhenium Flak</text>
 		<choice hidden="false"  blue="false">
-			<text>Upgrade Rhenium Flak using scrap? [Cost: 200~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+			<text>Upgrade Rhenium Flak using scrap?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5288,6 +5276,7 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
+				<remove name="FM_SHOTGUN_RHENIUM"/>
 
 				<!-- KEEP THIS LINE IN IF A WEAPON IS NEEDED FOR CRAFTING THE NEXT STAGE
 
@@ -5300,17 +5289,10 @@
 					<text>Continue...</text>
 					<event>
 						<text>...</text>
-						<remove name="FM_SHOTGUN_RHENIUM"/>
+						<weapon name="FM_SHOTGUN_SILVER"/>
 						<choice>
-							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<weapon name="FM_SHOTGUN_SILVER"/>
-								<choice hidden="true">
-									<text>Upgrade to Silver Flak Complete!</text>
-									<event load="FM_FORGE_WEAPON_LOAD"/>
-								</choice>
-							</event>
+							<text>Upgrade to Silver Flak Complete!</text>
+							<event load="FM_FORGE_WEAPON_LOAD"/>
 						</choice>
 					</event>
 				</choice>
@@ -5328,7 +5310,7 @@
 		<checkCargo/>
 		<text>Currently viewing the Silver Flak</text>
 		<choice hidden="false"  blue="false">
-			<text>Upgrade Silver Flak using scrap? [Cost: 250~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+			<text>Upgrade Silver Flak using scrap?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5336,6 +5318,7 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
+				<remove name="FM_SHOTGUN_SILVER"/>
 
 				<!-- KEEP THIS LINE IN IF A WEAPON IS NEEDED FOR CRAFTING THE NEXT STAGE
 
@@ -5348,17 +5331,10 @@
 					<text>Continue...</text>
 					<event>
 						<text>...</text>
-						<remove name="FM_SHOTGUN_SILVER"/>
+						<weapon name="FM_SHOTGUN_PALLADIUM"/>
 						<choice>
-							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<weapon name="FM_SHOTGUN_PALLADIUM"/>
-								<choice hidden="true">
-									<text>Upgrade to Palladium Flak Complete!</text>
-									<event load="FM_FORGE_WEAPON_LOAD"/>
-								</choice>
-							</event>
+							<text>Upgrade to Palladium Flak Complete!</text>
+							<event load="FM_FORGE_WEAPON_LOAD"/>
 						</choice>
 					</event>
 				</choice>
@@ -5375,8 +5351,8 @@
 	<event name="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM">
 		<checkCargo/>
 		<text>Currently viewing the Palladium Flak.</text>
-		<choice hidden="true" req="CRYSTAL_BURST_1_RED" max_group="1"  blue="false">
-			<text>Upgrade Palladium Flak using scrap and Elite Crystal Burst I? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+		<choice hidden="false" req="CRYSTAL_BURST_1_RED" max_group="1"  blue="false">
+			<text>Upgrade Palladium Flak using scrap and Elite Crystal Burst I?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5384,23 +5360,16 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
-
+				<remove name="CRYSTAL_BURST_1_RED"/>
 				<choice hidden="true">
 					<text>Continue...</text>
-					<event>
-						<text>...</text>
-						<remove name="CRYSTAL_BURST_1_RED"/>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
-						</choice>
-					</event>
+					<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 				</choice>
 			</event>
 		</choice>
 
-		<choice hidden="true" req="CRYSTAL_BURST_2_RED" max_group="2"  blue="false">
-			<text>Upgrade Palladium Flak using scrap and Elite Crystal Burst II? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+		<choice hidden="false" req="CRYSTAL_BURST_2_RED" max_group="2"  blue="false">
+			<text>Upgrade Palladium Flak using scrap and Elite Crystal Burst II?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5408,25 +5377,16 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
-
-
-
+				<remove name="CRYSTAL_BURST_2_RED"/>
 				<choice hidden="true">
 					<text>Continue...</text>
-					<event>
-						<text>...</text>
-						<remove name="CRYSTAL_BURST_2_RED"/>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
-						</choice>
-					</event>
+					<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 				</choice>
 			</event>
 		</choice>
 
-		<choice hidden="true" req="CRYSTAL_HEAVY_1_RED" max_group="3"  blue="false">
-			<text>Upgrade Palladium Flak using scrap and Elite Heavy Crystal Mark I? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+		<choice hidden="false" req="CRYSTAL_HEAVY_1_RED" max_group="3"  blue="false">
+			<text>Upgrade Palladium Flak using scrap and Elite Heavy Crystal Mark I?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5434,25 +5394,16 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
-
-
-
+				<remove name="CRYSTAL_HEAVY_1_RED"/>
 				<choice hidden="true">
 					<text>Continue...</text>
-					<event>
-						<text>...</text>
-						<remove name="CRYSTAL_HEAVY_1_RED"/>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
-						</choice>
-					</event>
+					<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 				</choice>
 			</event>
 		</choice>
 
-		<choice hidden="true" req="CRYSTAL_HEAVY_2_RED" max_group="4"  blue="false">
-			<text>Upgrade Palladium Flak using scrap and Elite Heavy Crystal Mark II? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+		<choice hidden="false" req="CRYSTAL_HEAVY_2_RED" max_group="4"  blue="false">
+			<text>Upgrade Palladium Flak using scrap and Elite Heavy Crystal Mark II?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5460,25 +5411,16 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
-
-
-
+				<remove name="CRYSTAL_HEAVY_2_RED"/>
 				<choice hidden="true">
 					<text>Continue...</text>
-					<event>
-						<text>...</text>
-						<remove name="CRYSTAL_HEAVY_2_RED"/>-->
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
-						</choice>
-					</event>
+					<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 				</choice>
 			</event>
 		</choice>
 
-		<choice hidden="true" req="CRYSTAL_STUN_RED" max_group="5"  blue="false">
-			<text>Upgrade Palladium Flak using scrap and Elite Neural Crystal [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+		<choice hidden="false" req="CRYSTAL_STUN_RED" max_group="5"  blue="false">
+			<text>Upgrade Palladium Flak using scrap and Elite Neural Crystal</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5486,22 +5428,16 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
+				<remove name="CRYSTAL_STUN_RED"/>
 				<choice hidden="true">
 					<text>Continue...</text>
-					<event>
-						<text>...</text>
-						<remove name="CRYSTAL_STUN_RED"/>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
-						</choice>
-					</event>
+					<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 				</choice>
 			</event>
 		</choice>
 
-		<choice hidden="true" req="CRYSTAL_SHOTGUN_RED" max_group="6"  blue="false">
-			<text>Upgrade Palladium Flak using scrap and Elite Crystal Scatter? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+		<choice hidden="false" req="CRYSTAL_SHOTGUN_RED" max_group="6"  blue="false">
+			<text>Upgrade Palladium Flak using scrap and Elite Crystal Scatter?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5509,25 +5445,16 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
-
-
-
+				<remove name="CRYSTAL_SHOTGUN_RED"/>
 				<choice hidden="true">
 					<text>Continue...</text>
-					<event>
-						<text>...</text>
-						<remove name="CRYSTAL_SHOTGUN_RED"/>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
-						</choice>
-					</event>
+					<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 				</choice>
 			</event>
 		</choice>
 
-		<choice hidden="true" req="CRYSTAL_CHARGEGUN_RED" max_group="7"  blue="false">
-			<text>Upgrade Palladium Flak using scrap and Elite Crystal Charger? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+		<choice hidden="false" req="CRYSTAL_CHARGEGUN_RED" max_group="7"  blue="false">
+			<text>Upgrade Palladium Flak using scrap and Elite Crystal Charger?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5535,25 +5462,16 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
-
-
-
+				<remove name="CRYSTAL_CHARGEGUN_RED"/>
 				<choice hidden="true">
 					<text>Continue...</text>
-					<event>
-						<text>...</text>
-						<remove name="CRYSTAL_CHARGEGUN_RED"/>-->
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
-						</choice>
-					</event>
+					<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 				</choice>
 			</event>
 		</choice>
 
-		<choice hidden="true" req="MINELAUNCHER_CRYSTAL" max_group="8"  blue="false">
-			<text>Upgrade Palladium Flak using scrap and Shard Launcher? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+		<choice hidden="false" req="MINELAUNCHER_CRYSTAL" max_group="8"  blue="false">
+			<text>Upgrade Palladium Flak using scrap and Shard Launcher?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5561,19 +5479,10 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
-
-
-
+				<remove name="MINELAUNCHER_CRYSTAL"/>
 				<choice hidden="true">
 					<text>Continue...</text>
-					<event>
-						<text>...</text>
-						<remove name="MINELAUNCHER_CRYSTAL"/>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
-						</choice>
-					</event>
+					<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 				</choice>
 			</event>
 		</choice>
@@ -5603,7 +5512,7 @@
 		<checkCargo/>
 		<text>Currently viewing the Iridium Flak</text>
 		<choice hidden="false"  blue="false">
-			<text>Upgrade Iridium Flak using scrap? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+			<text>Upgrade Iridium Flak using scrap?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5611,6 +5520,7 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
+				<remove name="FM_SHOTGUN_IRIDIUM"/>
 
 				<!-- KEEP THIS LINE IN IF A WEAPON IS NEEDED FOR CRAFTING THE NEXT STAGE
 
@@ -5623,17 +5533,10 @@
 					<text>Continue...</text>
 					<event>
 						<text>...</text>
-						<remove name="FM_SHOTGUN_IRIDIUM"/>
+						<weapon name="FM_SHOTGUN_PLATINUM"/>
 						<choice>
-							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<weapon name="FM_SHOTGUN_PLATINUM"/>
-								<choice hidden="true">
-									<text>Upgrade to Platinum Flak Complete!</text>
-									<event load="FM_FORGE_WEAPON_LOAD"/>
-								</choice>
-							</event>
+							<text>Upgrade to Platinum Flak Complete!</text>
+							<event load="FM_FORGE_WEAPON_LOAD"/>
 						</choice>
 					</event>
 				</choice>
@@ -5651,7 +5554,7 @@
 		<checkCargo/>
 		<text>Currently viewing the Platinum Flak</text>
 		<choice hidden="false"  blue="false">
-			<text>Upgrade Platinum Flak using scrap? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+			<text>Upgrade Platinum Flak using scrap?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5659,6 +5562,7 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
+				<remove name="FM_SHOTGUN_PLATINUM"/>
 
 				<!-- KEEP THIS LINE IN IF A WEAPON IS NEEDED FOR CRAFTING THE NEXT STAGE
 
@@ -5671,17 +5575,10 @@
 					<text>Continue...</text>
 					<event>
 						<text>...</text>
-						<remove name="FM_SHOTGUN_PLATINUM"/>
+						<weapon name="FM_SHOTGUN_OSMIUM"/>
 						<choice>
-							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<weapon name="FM_SHOTGUN_OSMIUM"/>
-								<choice hidden="true">
-									<text>Upgrade to Osmium Flak Complete!</text>
-									<event load="FM_FORGE_WEAPON_LOAD"/>
-								</choice>
-							</event>
+							<text>Upgrade to Osmium Flak Complete!</text>
+							<event load="FM_FORGE_WEAPON_LOAD"/>
 						</choice>
 					</event>
 				</choice>
@@ -5699,7 +5596,7 @@
 		<checkCargo/>
 		<text>Currently viewing the Osmium Flak</text>
 		<choice hidden="false"  blue="false">
-			<text>Upgrade Osmium Flak using scrap? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+			<text>Upgrade Osmium Flak using scrap?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5707,6 +5604,7 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
+				<remove name="FM_SHOTGUN_OSMIUM"/>
 
 				<!-- KEEP THIS LINE IN IF A WEAPON IS NEEDED FOR CRAFTING THE NEXT STAGE
 
@@ -5719,17 +5617,10 @@
 					<text>Continue...</text>
 					<event>
 						<text>...</text>
-						<remove name="FM_SHOTGUN_OSMIUM"/>
+						<weapon name="FM_SHOTGUN_NOBELIUM"/>
 						<choice>
-							<text>Continue...</text>
-							<event>
-								<text>...</text>
-								<weapon name="FM_SHOTGUN_NOBELIUM"/>
-								<choice hidden="true">
-									<text>Upgrade to Nobelium Flak Complete!</text>
-									<event load="FM_FORGE_WEAPON_LOAD"/>
-								</choice>
-							</event>
+							<text>Upgrade to Nobelium Flak Complete!</text>
+							<event load="FM_FORGE_WEAPON_LOAD"/>
 						</choice>
 					</event>
 				</choice>
@@ -5746,8 +5637,8 @@
 	<event name="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM">
 		<checkCargo/>
 		<text>Currently viewing the Nobelium Flak.</text>
-		<choice hidden="true" req="CRYSTAL_BURST_1_RED" max_group="1"  blue="false">
-			<text>Upgrade Nobelium Flak using scrap and Elite Crystal Burst I? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+		<choice hidden="false" req="CRYSTAL_BURST_1_RED" max_group="1"  blue="false">
+			<text>Upgrade Nobelium Flak using scrap and Elite Crystal Burst I?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5755,22 +5646,16 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
+				<remove name="CRYSTAL_BURST_1_RED"/>
 				<choice hidden="true">
 					<text>Continue...</text>
-					<event>
-						<text>...</text>
-						<remove name="CRYSTAL_BURST_1_RED"/>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
-						</choice>
-					</event>
+					<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
 				</choice>
 			</event>
 		</choice>
 
-		<choice hidden="true" req="CRYSTAL_BURST_2_RED" max_group="2"  blue="false">
-			<text>Upgrade Nobelium Flak using scrap and Elite Crystal Burst II? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+		<choice hidden="false" req="CRYSTAL_BURST_2_RED" max_group="2"  blue="false">
+			<text>Upgrade Nobelium Flak using scrap and Elite Crystal Burst II?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5778,25 +5663,16 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
-
-
-
+				<remove name="CRYSTAL_BURST_2_RED"/>
 				<choice hidden="true">
 					<text>Continue...</text>
-					<event>
-						<text>...</text>
-						<remove name="CRYSTAL_BURST_2_RED"/>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
-						</choice>
-					</event>
+					<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
 				</choice>
 			</event>
 		</choice>
 
-		<choice hidden="true" req="CRYSTAL_HEAVY_1_RED" max_group="3"  blue="false">
-			<text>Upgrade Nobelium Flak using scrap and Elite Heavy Crystal Mark I? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+		<choice hidden="false" req="CRYSTAL_HEAVY_1_RED" max_group="3"  blue="false">
+			<text>Upgrade Nobelium Flak using scrap and Elite Heavy Crystal Mark I?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5804,25 +5680,16 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
-
-
-
+				<remove name="CRYSTAL_HEAVY_1_RED"/>
 				<choice hidden="true">
 					<text>Continue...</text>
-					<event>
-						<text>...</text>
-						<remove name="CRYSTAL_HEAVY_1_RED"/>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
-						</choice>
-					</event>
+					<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
 				</choice>
 			</event>
 		</choice>
 
-		<choice hidden="true" req="CRYSTAL_HEAVY_2_RED" max_group="4"  blue="false">
-			<text>Upgrade Nobelium Flak using scrap and Elite Heavy Crystal Mark II? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+		<choice hidden="false" req="CRYSTAL_HEAVY_2_RED" max_group="4"  blue="false">
+			<text>Upgrade Nobelium Flak using scrap and Elite Heavy Crystal Mark II?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5830,25 +5697,16 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
-
-
-
+				<remove name="CRYSTAL_HEAVY_2_RED"/>
 				<choice hidden="true">
 					<text>Continue...</text>
-					<event>
-						<text>...</text>
-						<remove name="CRYSTAL_HEAVY_2_RED"/>-->
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
-						</choice>
-					</event>
+					<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
 				</choice>
 			</event>
 		</choice>
 
-		<choice hidden="true" req="CRYSTAL_STUN_RED" max_group="5"  blue="false">
-			<text>Upgrade Nobelium Flak using scrap and Elite Neural Crystal? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+		<choice hidden="false" req="CRYSTAL_STUN_RED" max_group="5"  blue="false">
+			<text>Upgrade Nobelium Flak using scrap and Elite Neural Crystal?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5856,22 +5714,16 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
+				<remove name="CRYSTAL_STUN_RED"/>
 				<choice hidden="true">
 					<text>Continue...</text>
-					<event>
-						<text>...</text>
-						<remove name="CRYSTAL_STUN_RED"/>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
-						</choice>
-					</event>
+					<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
 				</choice>
 			</event>
 		</choice>
 
-		<choice hidden="true" req="CRYSTAL_SHOTGUN_RED" max_group="6"  blue="false">
-			<text>Upgrade Nobelium Flak using scrap and Elite Crystal Scatter? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+		<choice hidden="false" req="CRYSTAL_SHOTGUN_RED" max_group="6"  blue="false">
+			<text>Upgrade Nobelium Flak using scrap and Elite Crystal Scatter?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5879,25 +5731,16 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
-
-
-
+				<remove name="CRYSTAL_SHOTGUN_RED"/>
 				<choice hidden="true">
 					<text>Continue...</text>
-					<event>
-						<text>...</text>
-						<remove name="CRYSTAL_SHOTGUN_RED"/>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
-						</choice>
-					</event>
+					<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
 				</choice>
 			</event>
 		</choice>
 
-		<choice hidden="true" req="CRYSTAL_CHARGEGUN_RED" max_group="7"  blue="false">
-			<text>Upgrade Nobelium Flak using scrap and Elite Crystal Charger? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+		<choice hidden="false" req="CRYSTAL_CHARGEGUN_RED" max_group="7"  blue="false">
+			<text>Upgrade Nobelium Flak using scrap and Elite Crystal Charger?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5905,25 +5748,16 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
-
-
-
+				<remove name="CRYSTAL_CHARGEGUN_RED"/>
 				<choice hidden="true">
 					<text>Continue...</text>
-					<event>
-						<text>...</text>
-						<remove name="CRYSTAL_CHARGEGUN_RED"/>-->
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
-						</choice>
-					</event>
+					<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
 				</choice>
 			</event>
 		</choice>
 
-		<choice hidden="true" req="MINELAUNCHER_CRYSTAL" max_group="8"  blue="false">
-			<text>Upgrade Nobelium Flak using scrap and Shard Launcher? [Cost: 260~] </text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
+		<choice hidden="false" req="MINELAUNCHER_CRYSTAL" max_group="8"  blue="false">
+			<text>Upgrade Nobelium Flak using scrap and Shard Launcher?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -5931,16 +5765,10 @@
 					<!--<item type="missiles" min="-10" max="-10"/>-->
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
+				<remove name="MINELAUNCHER_CRYSTAL"/>
 				<choice hidden="true">
 					<text>Continue...</text>
-					<event>
-						<text>...</text>
-						<remove name="MINELAUNCHER_CRYSTAL"/>-->
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
-						</choice>
-					</event>
+					<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM_2"/>
 				</choice>
 			</event>
 		</choice>
@@ -5975,7 +5803,7 @@
 		<checkCargo/>
 
 		<choice req="FM_ENERGY_COMBAT_BEAM1_LIST" lvl="1" blue="false" hidden="true">
-			<text>Align the central energy core of the Amp Energy Drone with the lenses of the Combat Drone MK. II's beam weapon to forge the 'Somebody Else Name This (Boo Womp)' Energy Beam Drone.[Cost: 0~]</text>
+			<text>Align the central energy core of the Amp Energy Drone with the lenses of the Combat Drone MK. II's beam weapon to forge the 'Somebody Else Name This (Boo Womp)' Energy Beam Drone.[Cost: 37~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_COMBAT_BEAM1"/>
 		</choice>
 
@@ -6095,66 +5923,75 @@
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_COMBAT_BEAM1">
 		<checkCargo/>
-    <text>Currently viewing the 'Somebody Else Name This (Boo Womp)' Energy Beam Drone.[Cost: 0~].</text>
-    <choice hidden="false" req="FM_ENERGY_COMBAT_BEAM1_LIST" blue="false">
-      <text>Craft the 'Somebody Else Name This (Boo Womp)' Energy Beam Drone.[Cost: 0~]</text>
-      <event>
-        <text>Proceed with crafting?</text>
-        <drone name="FM_ENERGY_COMBAT_BEAM1"/>
+		<text>Currently viewing the 'Somebody Else Name This (Boo Womp)' Energy Beam Drone.[Cost: 37~].</text>
+		<choice hidden="false" req="FM_ENERGY_COMBAT_BEAM1_LIST" blue="false">
+			<text>Craft the 'Somebody Else Name This (Boo Womp)' Energy Beam Drone.</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<drone name="FM_ENERGY_COMBAT_BEAM1"/>
+				<item_modify>
+					<item type="scrap" min="-37" max="-37"/>>
+				</item_modify>
 				<queueEvent>FM_REMOVE_AMP_ENERGY</queueEvent><!--Removes one amp energy drone of ANY kind (toggle mode)-->
-        <queueEvent>FM_REMOVE_COMBAT_2</queueEvent><!--Removes one combat MK 2 drone of ANY kind (toggle mode)-->
-        <queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
-      </event>
-    </choice>
-    <choice hidden="false">
-      <text>Nevermind.</text>
-      <event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
-    </choice>
+				<queueEvent>FM_REMOVE_COMBAT_2</queueEvent><!--Removes one combat MK 2 drone of ANY kind (toggle mode)-->
+				<queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+			</event>
+		</choice>
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
+		</choice>
 	</event>
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_AMBER_DRONE">
 		<checkCargo/>
-    <text>Currently viewing the Amber Combat Drone.[Cost: 0~].</text>
-    <choice hidden="false" req="FM_AMBER_DRONE_LIST" blue="false">
-      <text>Craft the Amber Drone.[Cost: 0~]</text>
-      <event>
-        <text>Proceed with crafting?</text>
-        <drone name="FM_AMBER_DRONE"/>
+		<text>Currently viewing the Amber Combat Drone.[Cost: 37~].</text>
+		<choice hidden="false" req="FM_AMBER_DRONE_LIST" blue="false">
+			<text>Craft the Amber Drone.</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<drone name="FM_AMBER_DRONE"/>
+				<item_modify>
+					<item type="scrap" min="-37" max="-37"/>
+				</item_modify>
 				<removeItem>CRYSTAL_HEAVY_1</removeItem>
 				<queueEvent>FM_REMOVE_ASSAULT</queueEvent><!--Removes one Assault drone of ANY kind (toggle mode)-->
-        <queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
-      </event>
-    </choice>
-    <choice hidden="false">
-      <text>Nevermind.</text>
-      <event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
-    </choice>
+				<queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+			</event>
+		</choice>
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
+		</choice>
 	</event>
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_CRYSTAL_DRONE">
 		<checkCargo/>
-    <text>Currently viewing the Crystal Combat Drone.[Cost: 0~].</text>
-    <choice hidden="false" req="FM_CRYSTAL_DRONE_LIST" blue="false">
-      <text>Craft the Crystal Drone.[Cost: 0~]</text>
-      <event>
-        <text>Proceed with crafting?</text>
-        <drone name="FM_CRYSTAL_DRONE"/>
+		<text>Currently viewing the Crystal Combat Drone.[Cost: 37~].</text>
+		<choice hidden="false" req="FM_CRYSTAL_DRONE_LIST" blue="false">
+			<text>Craft the Crystal Drone.</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<drone name="FM_CRYSTAL_DRONE"/>
+				<item_modify>
+					<item type="scrap" min="-37" max="-37"/>
+				</item_modify>
 				<removeItem>CRYSTAL_SHOTGUN</removeItem>
 				<queueEvent>FM_REMOVE_ASSAULT</queueEvent><!--Removes one Assault drone of ANY kind (toggle mode)-->
-        <queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
-      </event>
-    </choice>
-    <choice hidden="false">
-      <text>Nevermind.</text>
-      <event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
-    </choice>
+				<queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+			</event>
+		</choice>
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
+		</choice>
 	</event>
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_CURA_DRONE">
 		<checkCargo/>
 		<text>Currently viewing the CURA Combat Drone.[Cost: 150~].</text>
 		<choice hidden="false" req="FM_CURA_DRONE_LIST" blue="false">
-		<text>Craft the CURA Drone.[Cost: 150~]</text>
+		<text>Craft the CURA Drone.</text>
 		<event>
 			<text>Proceed with crafting?</text>
 			<drone name="FM_CURA_DRONE"/>
@@ -6175,92 +6012,110 @@
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_FLAMETHROWER_DRONE">
 		<checkCargo/>
-    <text>Currently viewing the Dazhbog Flamethrower Drone.[Cost: 0~].</text>
-    <choice hidden="false" req="FM_FLAMETHROWER_DRONE_LIST1" blue="false">
-      <text>Craft the Dazhbog Drone using a Phantom.[Cost: 0~]</text>
-      <event>
-        <text>Proceed with crafting?</text>
-        <drone name="FM_FLAMETHROWER_DRONE"/>
-        <removeCrew class="phantom">
-          <clone>false</clone>
-          <text>You carefully infuse your Phantom's gasses into the Assault Drone.</text>
-        </removeCrew>
-        <queueEvent>FM_REMOVE_ASSAULT</queueEvent><!--Removes one Assault drone of ANY kind (toggle mode)-->
-        <queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
-      </event>
-    </choice>
-    <choice hidden="false" req="FM_FLAMETHROWER_DRONE_LIST2" blue="false">
-      <text>Craft the Dazhbog Drone using a Goul.[Cost: 0~]</text>
-      <event>
-        <text>Proceed with crafting?</text>
-        <drone name="FM_FLAMETHROWER_DRONE"/>
-        <removeCrew class="phantom_goul">
-          <clone>false</clone>
-          <text>You carefully infuse your Goul's gasses into the Assault Drone.</text>
-        </removeCrew>
-        <queueEvent>FM_REMOVE_ASSAULT</queueEvent><!--Removes one Assault drone of ANY kind (toggle mode)-->
-        <queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
-      </event>
-    </choice>
-    <choice hidden="false" req="FM_FLAMETHROWER_DRONE_LIST3" blue="false">
-      <text>Craft the Dazhbog Drone using a Mare.[Cost: 0~]</text>
-      <event>
-        <text>Proceed with crafting?</text>
-        <drone name="FM_FLAMETHROWER_DRONE"/>
-        <removeCrew class="phantom_mare">
-          <clone>false</clone>
-          <text>You carefully infuse your Mare's gasses into the Assault Drone.</text>
-        </removeCrew>
-        <queueEvent>FM_REMOVE_ASSAULT</queueEvent><!--Removes one Assault drone of ANY kind (toggle mode)-->
-        <queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
-      </event>
-    </choice>
-    <choice hidden="false" req="FM_FLAMETHROWER_DRONE_LIST4" blue="false">
-      <text>Craft the Dazhbog Drone using a Wraith.[Cost: 0~]</text>
-      <event>
-        <text>Proceed with crafting?</text>
-        <drone name="FM_FLAMETHROWER_DRONE"/>
-        <removeCrew class="phantom_wraith">
-          <clone>false</clone>
-          <text>You carefully infuse your Wraith's gasses into the Assault Drone.</text>
-        </removeCrew>
-        <queueEvent>FM_REMOVE_ASSAULT</queueEvent><!--Removes one Assault drone of ANY kind (toggle mode)-->
-        <queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
-      </event>
-    </choice>
-    <choice hidden="false">
-      <text>Nevermind.</text>
-      <event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
-    </choice>
+		<text>Currently viewing the Dazhbog Flamethrower Drone.[Cost: 37~].</text>
+		<choice hidden="false" req="FM_FLAMETHROWER_DRONE_LIST1" blue="false">
+			<text>Craft the Dazhbog Drone using a Phantom.</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<drone name="FM_FLAMETHROWER_DRONE"/>
+				<item_modify>
+						<item type="scrap" min="-37" max="-37"/>
+					</item_modify>
+				<removeCrew class="phantom">
+					<clone>false</clone>
+					<text>You carefully infuse your Phantom's gasses into the Assault Drone.</text>
+				</removeCrew>
+				<queueEvent>FM_REMOVE_ASSAULT</queueEvent><!--Removes one Assault drone of ANY kind (toggle mode)-->
+				<queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+			</event>
+		</choice>
+		<choice hidden="false" req="FM_FLAMETHROWER_DRONE_LIST2" blue="false">
+			<text>Craft the Dazhbog Drone using a Goul.</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<drone name="FM_FLAMETHROWER_DRONE"/>
+				<item_modify>
+					<item type="scrap" min="-37" max="-37"/>
+				</item_modify>
+				<removeCrew class="phantom_goul">
+					<clone>false</clone>
+					<text>You carefully infuse your Goul's gasses into the Assault Drone.</text>
+				</removeCrew>
+				<queueEvent>FM_REMOVE_ASSAULT</queueEvent><!--Removes one Assault drone of ANY kind (toggle mode)-->
+				<queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+			</event>
+		</choice>
+		<choice hidden="false" req="FM_FLAMETHROWER_DRONE_LIST3" blue="false">
+			<text>Craft the Dazhbog Drone using a Mare.</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<drone name="FM_FLAMETHROWER_DRONE"/>
+				<item_modify>
+					<item type="scrap" min="-37" max="-37"/>
+				</item_modify>
+				<removeCrew class="phantom_mare">
+					<clone>false</clone>
+					<text>You carefully infuse your Mare's gasses into the Assault Drone.</text>
+				</removeCrew>
+				<queueEvent>FM_REMOVE_ASSAULT</queueEvent><!--Removes one Assault drone of ANY kind (toggle mode)-->
+				<queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+			</event>
+		</choice>
+		<choice hidden="false" req="FM_FLAMETHROWER_DRONE_LIST4" blue="false">
+			<text>Craft the Dazhbog Drone using a Wraith.</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<drone name="FM_FLAMETHROWER_DRONE"/>
+				<item_modify>
+					<item type="scrap" min="-37" max="-37"/>
+				</item_modify>
+				<removeCrew class="phantom_wraith">
+					<clone>false</clone>
+					<text>You carefully infuse your Wraith's gasses into the Assault Drone.</text>
+				</removeCrew>
+				<queueEvent>FM_REMOVE_ASSAULT</queueEvent><!--Removes one Assault drone of ANY kind (toggle mode)-->
+				<queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+			</event>
+		</choice>
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
+		</choice>
 	</event>
 
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_FORGEMAN_DRONE">
 		<checkCargo/>
-    <text>Currently viewing the Forgemaster Combat Drone.[Cost: 0~].</text>
-    <choice hidden="false" req="FM_FORGEMAN_DRONE_LIST" blue="false">
-      <text>Craft the Forgemaster Drone.[Cost: 0~]</text>
-      <event>
-        <text>Proceed with crafting?</text>
-        <drone name="FM_FORGEMAN_DRONE"/>
+		<text>Currently viewing the Forgemaster Combat Drone.[Cost: 37~].</text>
+		<choice hidden="false" req="FM_FORGEMAN_DRONE_LIST" blue="false">
+			<text>Craft the Forgemaster Drone.</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<drone name="FM_FORGEMAN_DRONE"/>
+				<item_modify>
+					<item type="scrap" min="-37" max="-37"/>
+				</item_modify>
 				<queueEvent>FM_REMOVE_COMBAT_2</queueEvent><!--Removes one combat MK 2 drone of ANY kind (toggle mode)-->
-        <queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
-      </event>
-    </choice>
-    <choice hidden="false">
-      <text>Nevermind.</text>
-      <event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
-    </choice>
+				<queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
+			</event>
+		</choice>
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
+		</choice>
 	</event>
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_ISHIMURA_DRONE">
 		<checkCargo/>
-		<text>Currently viewing the Ishimura Combat Drone.[Cost: 0~].</text>
+		<text>Currently viewing the Ishimura Combat Drone.[Cost: 37~].</text>
 		<choice hidden="false" req="FM_ISHIMURA_DRONE_LIST" blue="false">
-			<text>Craft the Ishimura Drone.[Cost: 0~]</text>
+			<text>Craft the Ishimura Drone.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<drone name="FM_ISHIMURA_DRONE"/>
+				<item_modify>
+					<item type="scrap" min="-37" max="-37"/>
+				</item_modify>
 				<removeItem>FOCUS_3</removeItem>
 				<queueEvent>FM_REMOVE_AMP_FOCUS</queueEvent><!--Removes one Amp Focus drone of ANY kind (toggle mode)-->
 				<queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
@@ -6276,7 +6131,7 @@
 		<checkCargo/>
 		<text>Currently viewing the Kestrel Combat Drone.[Cost: 100~].</text>
 		<choice hidden="false" req="FM_KESTREL_DRONE_LIST" blue="false">
-			<text>Craft the Kestrel Drone.[Cost: 100~]</text>
+			<text>Craft the Kestrel Drone.</text>
 			<event>
 				<item_modify>
 					<item type="scrap" min="-100" max="-100"/>
@@ -6298,7 +6153,7 @@
 		<checkCargo/>
 		<text>Currently viewing the MFK Kestrel Combat Drone.[Cost: 100~].</text>
 		<choice hidden="false" req="FM_MFK_KESTREL_DRONE_LIST" blue="false">
-			<text>Craft the MFK Kestrel Drone.[Cost: 100~]</text>
+			<text>Craft the MFK Kestrel Drone.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<item_modify>
@@ -6318,12 +6173,15 @@
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_MFK_PICKET_DRONE">
 		<checkCargo/>
-		<text>Currently viewing the MFK Picket Teleporter Relay.[Cost: 0~].</text>
+		<text>Currently viewing the MFK Picket Teleporter Relay.[Cost: 37~].</text>
 		<choice hidden="false" req="FM_MFK_PICKET_DRONE_LIST" blue="false">
-			<text>Craft the MFK Picket Drone.[Cost: 0~]</text>
+			<text>Craft the MFK Picket Drone.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<drone name="FM_MFK_PICKET_DRONE"/>
+				<item_modify>
+					<item type="scrap" min="-37" max="-37"/>
+				</item_modify>
 				<removeItem>EX_TELEPORT_HEAL</removeItem>
 				<queueEvent>FM_REMOVE_RECON</queueEvent><!--Removes one Recon drone of ANY kind (toggle mode)-->
 				<queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Queues the event at the end of crafting-->
@@ -6337,11 +6195,14 @@
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_SIREN_DRONE">
 		<checkCargo/>
-		<text>Currently viewing the Siren Combat Drone.[Cost: 0~].</text>
+		<text>Currently viewing the Siren Combat Drone.[Cost: 37~].</text>
 		<choice hidden="false" req="FM_SIREN_DRONE_LIST" blue="false">
-			<text>Craft the Siren Drone.[Cost: 0~]</text>
+			<text>Craft the Siren Drone.</text>
 			<event>
 				<text>Proceed with crafting?</text>
+				<item_modify>
+					<item type="scrap" min="-37" max="-37"/>
+				</item_modify>
 				<drone name="FM_SIREN_DRONE"/>
 				<removeItem>BOMB_STUN</removeItem>
 				<queueEvent>FM_REMOVE_PEST</queueEvent><!--Removes one Pest drone of ANY kind (toggle mode)-->
@@ -10059,8 +9920,8 @@
 						</choice>
 					</event>
 				</choice>
-				<choice hidden="true"> <!-- PAY OFF DEBT HARMONY ENDING-->
-					<text>Pay off the debt. [Cost: 1,100~] </text>
+				<choice> <!-- PAY OFF DEBT HARMONY ENDING-->
+					<text>Pay off the debt.</text>
 
 					<event>
 						<item_modify>
