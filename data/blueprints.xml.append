@@ -2884,12 +2884,12 @@
 			<power>1.25x damage, and the targeted enemy takes an additional -2hp/s.</power>
 			<power>Takes 0.75x damage in combat and repairs at 1.75x speed.</power>
 			<power>Upon death, splits into a Nano Cobalt Separatist and a regular Bronze Separatist.</power>
-			<power>When the enemy it is targeting dies, they explode and spread fires in the current room.</power>
+			<!--<power>When the enemy it is targeting dies, they explode and spread fires in the current room.</power>-->
 		</powerList>
 	</crewBlueprint>
 
 	<crewBlueprint name="fm_separatist_cobalt">
-		<desc>This warped separatist is effectively immortal, turning into it's nano form upon death instead of cloning or dying.</desc>
+		<desc>This warped separatist is effectively immortal, turning into its nano form upon death instead of cloning or dying.</desc>
 		<title>Cobalt Separatist</title>
 		<short>C. Separatist</short>
 		<cost>50</cost>
@@ -2913,7 +2913,7 @@
 			<power>Completely invincible to most forms of damage.</power>
 			<power>Takes regular damage from fire and irregular hazards.</power>
 			<power>Cannot man systems, repair, fight crew or sabotage.</power>
-                        <power>Active Ability (20s Cooldown): Deal 1 damage, breach the current room and reform into a Cobalt Separatist.</power>
+            <power>Active Ability (20s Cooldown): Deal 1 damage, breach the current room and reform into a Cobalt Separatist.</power>
 		</powerList>
 	</crewBlueprint>
 
@@ -2928,7 +2928,7 @@
 			<power>Targeted enemies take -12hp/s, but only attacks for 0.4x damage.</power>
 			<power>Repairs at 0.75x speed, but puts out fires at 2.25x speed.</power>
 			<power>Active Ability: Merge with a Cobalt Separatist to form a Twisted Seperatist.</power>
-                        <power>Passive Ability: When an enemy it is targeting dies, spreads fires through the current room. Cannot burn.</power>
+            <!--<power>Passive Ability: When an enemy it is targeting dies, spreads fires through the current room. Cannot burn.</power>-->
 		</powerList>
 	</crewBlueprint>
 

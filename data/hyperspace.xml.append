@@ -5483,9 +5483,9 @@
 
 	<crew>
 		<race name="fm_separatist_bronze">
-                        <essential>1</essential>
+            <essential>1</essential>
 			<maxHealth>100</maxHealth>
-                        <repairSpeed>0.75</repairSpeed>
+            <repairSpeed>0.75</repairSpeed>
 			<damageMultiplier>0.4</damageMultiplier>
 			<fireDamageMultiplier>1</fireDamageMultiplier>
 			<canBurn>false</canBurn>
@@ -5495,50 +5495,69 @@
 			<deathSounds>
 				<deathSound>engiDeath</deathSound>
 			</deathSounds>
-                        <passiveStatBoosts>
+                        
+			
+			<passiveStatBoosts>
+				<!--Doesn't work-->
+				<!--
 				<statBoost name="deathEffect">
 					<boostType>FLAT</boostType>
 					<shipTarget>CREW_TARGET</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
+					
 					<deathEffect>
-				<fireChance>10</fireChance>
+						<fireChance>10</fireChance>
+						<shipFriendlyFire>true</shipFriendlyFire>
 					</deathEffect>
+
 				</statBoost>
-	      
-	                        <statBoost name="trueHealAmount">
+				-->
+
+	            <statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
 					<shipTarget>CREW_TARGET</shipTarget>
 					<crewTarget>ALL</crewTarget>
-					<value>-12</value>
+					<amount>-12</amount>
 					<boostAnim>nanofield_bronze</boostAnim>
 					<priority>999999</priority>
 				</statBoost>
-      </passiveStatBoosts>
-      <powerEffect>
+
+      		</passiveStatBoosts>
+
+     	 	<powerEffect>
 				<cooldown>15</cooldown>
 				<jumpCooldown>full</jumpCooldown>
 				<buttonText>ABSORB</buttonText>
 				<tooltip>[COOLDOWN:15s]
-					Alongside a Cobalt Separatist, forms together into a Twisted Separatist, a combination of the two.</tooltip>
+					Merge with a Cobalt Separatist in the same room to form a Twisted Separatist.</tooltip>
 				<cooldownColor r="235" g="128" b="52"/>
-	      <transformRace>fm_separatist_twisted</transformRace>
-	      <temporaryEffect>
-		      <duration>20</duration>
-	      <statBoosts>
-			<statBoost name="healAmount">
-				<boostType>FLAT</boostType>
-				<amount>-999</amount>
-				<affectsSelf>false</affectsSelf>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALLIES</crewTarget>
-				<whiteList>
-				      <fm_separatist_cobalt/>
-				      <fm_nano_cobalt/>
-				</whiteList>
-			</statBoost>
+	      		<transformRace>fm_separatist_twisted</transformRace>
+
+				  <req type="player">
+					<notMindControlled/>
+					<whiteList enemy="false">
+						<fm_separatist_cobalt/>
+				      	<fm_nano_cobalt/>
+					</whiteList>
+				  </req>
+	      		
+	
+	      		<statBoosts>
+					<statBoost name="maxHealth">
+						<boostType>SET</boostType>
+						<amount>0</amount>
+						<affectsSelf>false</affectsSelf>
+						<shipTarget>CURRENT_ROOM</shipTarget>
+						<crewTarget>ORIGINAL_ALLIES</crewTarget>	
+						<whiteList>
+							<fm_separatist_cobalt/>
+							<fm_nano_cobalt/>
+						</whiteList>
+						<priority>2147483647</priority>
+					</statBoost>
 		      </statBoosts>
-		</temporaryEffect>	
+
 			</powerEffect>
 		</race>
 	</crew>
@@ -5552,7 +5571,7 @@
 			<damageMultiplier>0.75</damageMultiplier>
 			<suffocationModifier>0.5</suffocationModifier>
 			<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
-                        <noClone>true</noClone>
+            <noClone>true</noClone>
 			<animBase>engi</animBase>
 			<deathSounds>
 				<deathSound>engiDeath</deathSound>
@@ -5654,23 +5673,31 @@
 				</spawnCrew>
       		        </deathEffect>
 			<passiveStatBoosts>
+				<!--Doesn't work, -->
+				
+				<!--
 				<statBoost name="deathEffect">
 					<boostType>FLAT</boostType>
 					<shipTarget>CREW_TARGET</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
+					
 					<deathEffect>
-				<fireChance>10</fireChance>
+						<fireChance>10</fireChance>
+						<shipFriendlyFire>true</shipFriendlyFire>
 					</deathEffect>
+
 				</statBoost>
+				-->
 			         <statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
 					<shipTarget>CREW_TARGET</shipTarget>
 					<crewTarget>ALL</crewTarget>
-					<value>-2</value>
+					<amount>-2</amount>
 					<boostAnim>nanofield_cobalt</boostAnim>
 					<priority>999999</priority>
 				</statBoost>
+
       		</passiveStatBoosts>
         	<powerEffect>
 				<cooldown>15</cooldown>
@@ -13759,6 +13786,18 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<mod-append:name>FM_MODULAR_HULL_SCRAP</mod-append:name>
 			</mod:findLike>
 		</mod:findName>
+
+		<mod:findName type="req" name="BLUELIST_CREW_NO2">
+			<mod-append:name>fm_nano_cobalt</mod-append:name>
+
+			<mod-append:req type="all">
+				<name>LAB_PLATED_AIR</name>
+				<name>fm_plated</name>
+			</mod-append:req>
+
+		</mod:findName>
+
+
 	</mod:findLike>
 </FTL>
 

@@ -1961,6 +1961,12 @@
 <mod:findName type = "blueprintList" name = "LIST_CREW_ENGI">
     <mod-append:name>unique_remington</mod-append:name>
 	<mod-append:name>unique_mossberg</mod-append:name>
+
+	<mod-append:name>fm_separatist_bronze</mod-append:name>
+	<mod-append:name>fm_separatist_cobalt</mod-append:name>
+	<mod-append:name>fm_nano_cobalt</mod-append:name>
+	<mod-append:name>fm_separatist_twisted</mod-append:name>
+
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "LIST_CHECKCREW_ENGI">
