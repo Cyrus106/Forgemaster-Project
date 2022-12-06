@@ -4492,7 +4492,7 @@
 		<short>'Multiplicity'</short>
 		<tip>tip_laser</tip>
 		<desc>Placeholder</desc>
-		<!--<descriptionOverride>A powerful laser weapon.
+		<!--<descriptionOverride>This strange laser weapon fires a massive amount of 15 lasers at random rooms on the enemy ship as if you were commanding a whole fleet!
 
 			Stats:
 			Required Power: 4
@@ -10055,7 +10055,7 @@
 		<breachChance>0</breachChance>
 		<cooldown>7</cooldown>
 		<power>4</power>
-		<cost>0</cost>
+		<cost>200</cost>
 		<rarity>0</rarity>
 		<chargeLevels>3</chargeLevels>
 		<projectiles>
@@ -11169,7 +11169,7 @@
 		<damage>0</damage>
 		<sp>10</sp>
 		<fireChance>7</fireChance>
-		<cooldown>3</cooldown>
+		<cooldown>12</cooldown>
 		<spawnCrew>
 			<race>fm_generic_crewjank</race>
 			<number>1</number>
