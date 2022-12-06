@@ -9405,7 +9405,7 @@
 		<tooltip>Cooldown drops the more it fires.</tooltip>
 		<radius>75</radius>
 		<damage>1</damage>
-		<noPersDamage>true</noPersDamage>
+		<persDamage>1</persDamage>
 		<shots>1</shots>
 		<sp>0</sp>
 		<stunChance>2</stunChance>
