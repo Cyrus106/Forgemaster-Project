@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 	<mod:findName type="event" name="COALITION_REBEL_STRANDED">
-		<mod:findLike type="choice">
+		<mod:findLike type="choice" limit="1">
 			<mod:findLike type="event">
 				<mod:findLike type="choice">
-					<mod:findLike type="event" limit="1">
+					<mod:findLike type="event">
 						<mod-append:choice hidden="true" req="LIST_CREW_PLATED" >
 							<text>(Plated) Have your Plated perform the repairs.</text> 
 							<event>

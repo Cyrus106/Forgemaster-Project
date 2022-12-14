@@ -65,7 +65,7 @@
 
 
 <mod:findName type="event" name="BOSS_GROUND_FIGHT">
-    <mod:findLike type="choice">
+    <mod:findLike type="choice" limit="1">
         <mod:findLike type="event">
 			<mod:findLike type="choice">
 				<mod:findLike type="event">

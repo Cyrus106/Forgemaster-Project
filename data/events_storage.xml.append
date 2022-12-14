@@ -5411,293 +5411,9 @@
   </event>
 
 
-  <event name="COMBAT_CHECK_FM_RVS_AC_CHARGE">
-    <text>Select an ammo type to load into your Volley Gun</text>
-		<choice req="gb_ammo_toggle" lvl="1" max_lvl="1" blue="false" hidden="true"> <!-- Standard Ammo Type -->
-			<text>Current: Standard ammo.[default]</text>
-			<event load="OPTION_INVALID"/>
-		</choice>
-		<choice req="gb_ammo_toggle" lvl="2" max_lvl="2" blue="false" hidden="true"> <!-- Caseless Ammo Type -->
-			<text>Current: Caseless ammo.[-2s cd, 20% ammo consumption]</text>
-			<event load="OPTION_INVALID"/>
-		</choice>
-		<choice req="gb_ammo_toggle" lvl="3" max_lvl="3" blue="false" hidden="true"> <!-- High Velocity Ammo Type -->
-			<text>Current: High Velocity ammo.[+10% breach, faster, 17% ammo consumption]</text>
-			<event load="OPTION_INVALID"/>
-		</choice>
-		<choice req="gb_ammo_toggle" lvl="4" max_lvl="4" blue="false" hidden="true"> <!-- Recycler Ammo Type -->
-			<text>Current: Recycler ammo.[no status, 7% ammo consumption]</text>
-			<event load="OPTION_INVALID"/>
-		</choice>
-		<choice req="gb_ammo_toggle" lvl="5" max_lvl="5" blue="false" hidden="true"> <!-- Concussive Ammo Type -->
-			<text>Current: Concussive ammo.[stuns,debuffs,hullbust, 17% ammo consumption]</text>
-			<event load="OPTION_INVALID"/>
-		</choice>
-		<choice req="gb_ammo_toggle" lvl="6" max_lvl="6" blue="false" hidden="true"> <!-- EMP Ammo Type -->
-			<text>Current: EMP ammo.[no sys dmg, 1 ion dmg on room hit, 23% ammo consumption]</text>
-			<event load="OPTION_INVALID"/>
-		</choice>
-		<choice req="gb_ammo_toggle" lvl="7" max_lvl="7" blue="false" hidden="true"> <!-- Particle Ammo Type -->
-			<text>Current: Particle ammo.[no hull dmg, 2 sys dmg, 15 crew dmg, 10% fire chance, 18% ammo consumption]</text>
-			<event load="OPTION_INVALID"/>
-		</choice>
-		<choice req="gb_ammo_toggle" lvl="8" max_lvl="8" blue="false" hidden="true"> <!-- Incendiary Ammo Type -->
-			<text>Current: Incendiary ammo.[40% fire, 17% ammo consumption]</text>
-			<event load="OPTION_INVALID"/>
-		</choice>
-		<choice req="gb_ammo_toggle" lvl="9" max_lvl="9" blue="false" hidden="true"> <!-- Flechette Ammo Type -->
-			<text>Current: Flechette ammo.[+10% breach, only DoT crew dmg(+1 frag projectile), 0 sys dmg, 18% ammo consumption]</text>
-			<event load="OPTION_INVALID"/>
-		</choice>
-		<choice req="gb_ammo_toggle" lvl="10" max_lvl="10" blue="false" hidden="true"> <!-- Radiation Ammo Type -->
-			<text>Current: Radiation ammo.[+20% breach, rad effects, +15 crew dmg, 22% ammo consumption]</text>
-			<event load="OPTION_INVALID"/>
-		</choice>
-		<choice req="GB_CURRENT_AMMO1" lvl="0" max_lvl="0" blue="false" hidden="true"> <!-- Standard Ammo Type -->
-			<text>Standard ammo.[default]</text>
-			<event>
-			  <loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_STANDARD</loadEvent>
-			</event>
-		</choice>
-		<choice req="GB_CURRENT_AMMO2" lvl="0" max_lvl="0" blue="false" hidden="true"> <!-- Caseless Ammo Type -->
-			<text>Caseless ammo.[-2s cd, 20% ammo consumption]</text>
-			<event>
-			  <loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_CASELESS</loadEvent>
-			</event>
-		</choice>
-		<choice req="GB_CURRENT_AMMO3" lvl="0" max_lvl="0" blue="false" hidden="true"> <!-- High Velocity Ammo Type -->
-			<text>High Velocity ammo.[+10% breach, faster, 17% ammo consumption]</text>
-			<event>
-			  <loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_HV</loadEvent>
-			</event>
-		</choice>
-		<choice req="GB_AMMO_4_NO" blue="false" hidden="true"> <!-- Recycler Ammo Type -->
-			<text>To load recycler ammo a recycler or ammo replicator is needed.</text>
-			<event load="OPTION_INVALID"/>
-		</choice>
-		<choice req="GB_AMMO_4_YES"  blue="false" hidden="true"> <!-- Recycler Ammo Type -->
-			<text>Recycler ammo.[no status, 7% ammo consumption]</text>
-			<event>
-			  <loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_FREE</loadEvent>
-			</event>
-		</choice>
-		<choice req="GB_CURRENT_AMMO5" lvl="0" max_lvl="0" blue="false" hidden="true"> <!-- Concussive Ammo Type -->
-			<text>Concussive ammo.[stuns,debuffs crew, 17% ammo consumption]</text>
-			<event>
-			  <loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_HE</loadEvent>
-			</event>
-		</choice>
-		<choice req="GB_CURRENT_AMMO6" lvl="0" max_lvl="0" blue="false" hidden="true"> <!-- EMP Ammo Type -->
-			<text>EMP ammo.[no sys dmg, 1 ion dmg on room hit, 23% ammo consumption]</text>
-			<event>
-			  <loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_EMP</loadEvent>
-			</event>
-		</choice>
-		<choice req="GB_CURRENT_AMMO7" lvl="0" max_lvl="0" blue="false" hidden="true"> <!-- Particle Ammo Type -->
-			<text>Particle ammo.[no hull dmg, 2 sys dmg, 15 crew dmg, 10% fire chance, 18% ammo consumption]</text>
-			<event>
-			  <loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_HEAT</loadEvent>
-			</event>
-		</choice>
-		<choice req="GB_AMMO_8_NO" blue="false" hidden="true"> <!-- Incendiary Ammo Type -->
-			<text>To load incendiary ammo a lost sun crew is needed.</text>
-			<event load="OPTION_INVALID"/>
-		</choice>
-		<choice req="GB_AMMO_8_YES"  blue="false" hidden="true"> <!-- Incendiary Ammo Type -->
-			<text>Incendiary ammo.[40% fire, 17% ammo consumption]</text>
-			<event>
-			  <loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_INCENDIARY</loadEvent>
-			</event>
-		</choice>
-		<choice req="GB_CURRENT_AMMO9" lvl="0" max_lvl="0" blue="false" hidden="true"> <!-- Flechette Ammo Type -->
-			<text>Flechette ammo.[+10% breach, only DoT crew dmg(+1 frag projectile), 0 sys dmg, 18% ammo consumption]</text>
-			<event>
-			  <loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_FLECHETTE</loadEvent>
-			</event>
-		</choice>
-		<choice req="GB_AMMO_10_NO" blue="false" hidden="true"> <!-- Radiation Ammo Type -->
-			<text>To load radiation ammo a slug clansman is needed.</text>
-			<event load="OPTION_INVALID"/>
-		</choice>
-		<choice req="GB_AMMO_10_YES"  blue="false" hidden="true"> <!-- Radiation Ammo Type -->
-			<text>Radiation ammo.[+20% breach, rad effects, +15 crew dmg, 22% ammo consumption]</text>
-			<event>
-			  <loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_RAD</loadEvent>
-			</event>
-		</choice>
-
-		<choice>
-			<text>Do something else instead.</text>
-			<event>
-				<loadEventList seeded="false" generate="false">
-					<event load="GET_AC_CHARGE_STANDARD" req="GB_CURRENT_AMMO1"/>
-					<event load="GET_AC_CHARGE_CASELESS" req="GB_CURRENT_AMMO2"/>
-					<event load="GET_AC_CHARGE_HV" req="GB_CURRENT_AMMO3"/>
-					<event load="GET_AC_CHARGE_FREE" req="GB_CURRENT_AMMO4"/>
-					<event load="GET_AC_CHARGE_HE" req="GB_CURRENT_AMMO5"/>
-					<event load="GET_AC_CHARGE_EMP" req="GB_CURRENT_AMMO6"/>
-					<event load="GET_AC_CHARGE_HEAT" req="GB_CURRENT_AMMO7"/>
-					<event load="GET_AC_CHARGE_INCENDIARY" req="GB_CURRENT_AMMO8"/>
-					<event load="GET_AC_CHARGE_FLECHETTE" req="GB_CURRENT_AMMO9"/>
-					<event load="GET_AC_CHARGE_RAD" req="GB_CURRENT_AMMO10"/>
-				</loadEventList>
-			</event>
-		</choice>
-	</event>
-
-	<event name="COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_STANDARD">
-		<text>Standard rounds: [6s cd, 1 hull dmg, 1 sys dmg, 15 crew dmg, 10% breach chance, 15% ammo consumption]
-			Load into the Volley Gun?
-		</text>
-		<choice>
-			<text>Proceed.</text>
-			<event load="GET_AC_CHARGE_STANDARD"/>
-		</choice>
-		<choice>
-			<text>Nevermind.</text>
-			<event>
-				<loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE</loadEvent>
-			</event>
-		</choice>
-	</event>
-	<event name="COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_CASELESS">
-		<text>Caseless rounds: [4s cd, 1 hull dmg, 1 sys dmg, 15 crew dmg, 10% breach chance, 20% ammo consumption]
-			Load into the Volley Gun?
-		</text>
-		<choice>
-			<text>Proceed.</text>
-			<event load="GET_AC_CHARGE_CASELESS"/>
-		</choice>
-		<choice>
-			<text>Nevermind.</text>
-			<event>
-				<loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE</loadEvent>
-			</event>
-		</choice>
-	</event>
-	<event name="COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_HV">
-		<text>High Velocity rounds: [6s cd, 1 hull dmg, 1 sys dmg, 15 crew dmg, 20% breach chance, +10% accuracy, +33% velocity, 17% ammo consumption]
-			Load into the Volley Gun?
-		</text>
-		<choice>
-			<text>Proceed.</text>
-			<event load="GET_AC_CHARGE_HV"/>
-		</choice>
-		<choice>
-			<text>Nevermind.</text>
-			<event>
-				<loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE</loadEvent>
-			</event>
-		</choice>
-	</event>
-	<event name="COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_FREE">
-		<text>Recycler rounds: [6s cd, 1 hull dmg, 1 sys dmg, 15 crew dmg, 7% ammo consumption]
-			Load into the Volley Gun?
-		</text>
-		<choice>
-			<text>Proceed.</text>
-			<event load="GET_AC_CHARGE_FREE"/>
-		</choice>
-		<choice>
-			<text>Nevermind.</text>
-			<event>
-				<loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE</loadEvent>
-			</event>
-		</choice>
-	</event>
-	<event name="COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_HE">
-		<text>Concussion rounds: [6s cd, 1 hull dmg, 1 sys dmg, 15 crew dmg, 4s stun, enemies lose power charge and take 90% more damage for 5s, 10% breach chance, 17% ammo consumption]
-			Load into the Volley Gun?
-		</text>
-		<choice>
-			<text>Proceed.</text>
-			<event load="GET_AC_CHARGE_HE"/>
-		</choice>
-		<choice>
-			<text>Nevermind.</text>
-			<event>
-				<loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE</loadEvent>
-			</event>
-		</choice>
-	</event>
-	<event name="COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_EMP">
-		<text>EMP rounds: [6s cd, 1 hull dmg, 0 sys dmg, 15 crew dmg, 1 ion dmg on rooms, 10% breach chance, 23% ammo consumption]
-			Load into the Volley Gun?
-		</text>
-		<choice>
-			<text>Proceed.</text>
-			<event load="GET_AC_CHARGE_EMP"/>
-		</choice>
-		<choice>
-			<text>Nevermind.</text>
-			<event>
-				<loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE</loadEvent>
-			</event>
-		</choice>
-	</event>
-	<event name="COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_HEAT">
-		<text>Particle rounds: [6s cd, 0 hull dmg, 2 sys dmg, 15 crew dmg, 10% fire chance, 18% ammo consumption]
-			Load into the Volley Gun?
-		</text>
-		<choice>
-			<text>Proceed.</text>
-			<event load="GET_AC_CHARGE_HEAT"/>
-		</choice>
-		<choice>
-			<text>Nevermind.</text>
-			<event>
-				<loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE</loadEvent>
-			</event>
-		</choice>
-	</event>
-	<event name="COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_INCENDIARY">
-		<text>Incendiary rounds: [6s cd, 1 hull dmg, 1 sys dmg, 15 crew dmg, 40% fire chance, 17% ammo consumption]
-			Load into the Volley Gun?
-		</text>
-		<choice>
-			<text>Proceed.</text>
-			<event load="GET_AC_CHARGE_INCENDIARY"/>
-		</choice>
-		<choice>
-			<text>Nevermind.</text>
-			<event>
-				<loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE</loadEvent>
-			</event>
-		</choice>
-	</event>
-	<event name="COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_FLECHETTE">
-		<text>Flechette rounds: [6s cd, 1 hull dmg, 0 sys dmg, 1 dps DoT(25s) crew dmg, 20% breach chance, 30 px radius, 1 frag projectile, 18% ammo consumption]
-			Load into the Volley Gun?
-		</text>
-		<choice>
-			<text>Proceed.</text>
-			<event load="GET_AC_CHARGE_FLECHETTE"/>
-		</choice>
-		<choice>
-			<text>Nevermind.</text>
-			<event>
-				<loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE</loadEvent>
-			</event>
-		</choice>
-	</event>
-	<event name="COMBAT_CHECK_FM_RVS_AC_CHARGE_LOAD_RAD">
-		<text>Rad rounds: [6s cd, 1 hull dmg, 1 sys dmg, 30 crew dmg, rad debuffs, 30% breach chance, 22% ammo consumption, illegal :)]
-			Load into the Volley Gun?
-		</text>
-		<choice>
-			<text>Proceed.</text>
-			<event load="GET_AC_CHARGE_RAD"/>
-		</choice>
-		<choice>
-			<text>Nevermind.</text>
-			<event>
-				<loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE</loadEvent>
-			</event>
-		</choice>
-	</event>
   
   <event name="COMBAT_CHECK_FM_RVS_AC_CHARGE">
-		<text>Select an ammo type to load into your Autocannon MK I</text>
+		<text>Select an ammo type to load into your Volley Gun</text>
 		<choice req="gb_ammo_toggle" lvl="1" max_lvl="1" blue="false" hidden="true"> <!-- Standard Ammo Type -->
 			<text id="text_GB_AMMO_CURRENT_1"/>
 			<event load="OPTION_INVALID"/>
@@ -5740,15 +5456,45 @@
 		</choice>
 		<choice req="GB_CURRENT_AMMO1" lvl="0" max_lvl="0" blue="false" hidden="false"> <!-- Standard Ammo Type -->
 			<text id="text_GB_AMMO_LOAD_1"/>
-			<event load="GET_AC_CHARGE_STANDARD"/>
+			<event name="GET_AC_CHARGE_STANDARD">
+        <weapon name="FM_RVS_AC_CHARGE"/>
+        <loadEventList>
+          <event req="loc_flagship" lvl="0">
+            <loadEvent>COMBAT_CHECK</loadEvent>
+          </event>
+          <event req="loc_flagship" lvl="1">
+            <loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
+          </event>
+        </loadEventList>
+      </event>
 		</choice>
 		<choice req="GB_CURRENT_AMMO2" lvl="0" max_lvl="0" blue="false" hidden="false"> <!-- Caseless Ammo Type -->
 			<text id="text_GB_AMMO_LOAD_2"/>
-			<event load="GET_AC_CHARGE_CASELESS"/>
+			<event name="GET_AC_CHARGE_CASELESS">
+        <weapon name="FM_RVS_AC_CHARGE_CASELESS"/>
+        <loadEventList>
+          <event req="loc_flagship" lvl="0">
+            <loadEvent>COMBAT_CHECK</loadEvent>
+          </event>
+          <event req="loc_flagship" lvl="1">
+            <loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
+          </event>
+        </loadEventList>
+      </event>
 		</choice>
 		<choice req="GB_CURRENT_AMMO3" lvl="0" max_lvl="0" blue="false" hidden="false"> <!-- High Velocity Ammo Type -->
 			<text id="text_GB_AMMO_LOAD_3"/>
-			<event load="GET_AC_CHARGE_HV"/>
+			<event name="GET_AC_CHARGE_HV">
+        <weapon name="FM_RVS_AC_CHARGE_HV"/>
+        <loadEventList>
+          <event req="loc_flagship" lvl="0">
+            <loadEvent>COMBAT_CHECK</loadEvent>
+          </event>
+          <event req="loc_flagship" lvl="1">
+            <loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
+          </event>
+        </loadEventList>
+      </event>
 		</choice>
 		<choice req="GB_AMMO_4_NO" blue="false" hidden="true"> <!-- Recycler Ammo Type -->
 			<text id="text_GB_AMMO_LOAD_4_NO"/>
@@ -5756,19 +5502,59 @@
 		</choice>
 		<choice req="GB_AMMO_4_YES"  blue="false" hidden="false"> <!-- Recycler Ammo Type -->
 			<text id="text_GB_AMMO_LOAD_4"/>
-			<event load="GET_AC_CHARGE_FREE"/>
+			<event name="GET_AC_CHARGE_FREE">
+        <weapon name="FM_RVS_AC_CHARGE_FREE"/>
+        <loadEventList>
+          <event req="loc_flagship" lvl="0">
+            <loadEvent>COMBAT_CHECK</loadEvent>
+          </event>
+          <event req="loc_flagship" lvl="1">
+            <loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
+          </event>
+        </loadEventList>
+      </event>
 		</choice>
 		<choice req="GB_CURRENT_AMMO5" lvl="0" max_lvl="0" blue="false" hidden="false"> <!-- Concussive Ammo Type -->
 			<text id="text_GB_AMMO_LOAD_5"/>
-			<event load="GET_AC_CHARGE_HE"/>
+			<event name="GET_AC_CHARGE_HE">
+        <weapon name="FM_RVS_AC_CHARGE_HE"/>
+        <loadEventList>
+          <event req="loc_flagship" lvl="0">
+            <loadEvent>COMBAT_CHECK</loadEvent>
+          </event>
+          <event req="loc_flagship" lvl="1">
+            <loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
+          </event>
+        </loadEventList>
+      </event>
 		</choice>
 		<choice req="GB_CURRENT_AMMO6" lvl="0" max_lvl="0" blue="false" hidden="false"> <!-- EMP Ammo Type -->
 			<text id="text_GB_AMMO_LOAD_6"/>
-			<event load="GET_AC_CHARGE_EMP"/>
+			<event name="GET_AC_CHARGE_EMP">
+        <weapon name="FM_RVS_AC_CHARGE_EMP"/>
+        <loadEventList>
+          <event req="loc_flagship" lvl="0">
+            <loadEvent>COMBAT_CHECK</loadEvent>
+          </event>
+          <event req="loc_flagship" lvl="1">
+            <loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
+          </event>
+        </loadEventList>
+      </event>
 		</choice>
 		<choice req="GB_CURRENT_AMMO7" lvl="0" max_lvl="0" blue="false" hidden="false"> <!-- Particle Ammo Type -->
 			<text id="text_GB_AMMO_LOAD_7"/>
-			<event load="GET_AC_CHARGE_HEAT"/>
+			<event name="GET_AC_CHARGE_HEAT">
+        <weapon name="FM_RVS_AC_CHARGE_HEAT"/>
+        <loadEventList>
+          <event req="loc_flagship" lvl="0">
+            <loadEvent>COMBAT_CHECK</loadEvent>
+          </event>
+          <event req="loc_flagship" lvl="1">
+            <loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
+          </event>
+        </loadEventList>
+      </event>
 		</choice>
 		<choice req="GB_AMMO_8_NO" blue="false" hidden="true"> <!-- Incendiary Ammo Type -->
 			<text id="text_GB_AMMO_LOAD_8_NO"/>
@@ -5776,11 +5562,31 @@
 		</choice>
 		<choice req="GB_AMMO_8_YES"  blue="false" hidden="false"> <!-- Incendiary Ammo Type -->
 			<text id="text_GB_AMMO_LOAD_8"/>
-			<event load="GET_AC_CHARGE_INCENDIARY"/>
+			<event name="GET_AC_CHARGE_INCENDIARY">
+        <weapon name="FM_RVS_AC_CHARGE_INCENDIARY"/>
+        <loadEventList>
+          <event req="loc_flagship" lvl="0">
+            <loadEvent>COMBAT_CHECK</loadEvent>
+          </event>
+          <event req="loc_flagship" lvl="1">
+            <loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
+          </event>
+        </loadEventList>
+      </event>
 		</choice>
 		<choice req="GB_CURRENT_AMMO9" lvl="0" max_lvl="0" blue="false" hidden="false"> <!-- Flechette Ammo Type -->
 			<text id="text_GB_AMMO_LOAD_9"/>
-			<event load="GET_AC_CHARGE_FLECHETTE"/>
+			<event name="GET_AC_CHARGE_FLECHETTE">
+        <weapon name="FM_RVS_AC_CHARGE_FLECHETTE"/>
+        <loadEventList>
+          <event req="loc_flagship" lvl="0">
+            <loadEvent>COMBAT_CHECK</loadEvent>
+          </event>
+          <event req="loc_flagship" lvl="1">
+            <loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
+          </event>
+        </loadEventList>
+      </event>
 		</choice>
 		<choice req="GB_AMMO_10_NO" blue="false" hidden="true"> <!-- Radiation Ammo Type -->
 			<text id="text_GB_AMMO_LOAD_10_NO"/>
@@ -5788,7 +5594,17 @@
 		</choice>
 		<choice req="GB_AMMO_10_YES"  blue="false" hidden="false"> <!-- Radiation Ammo Type -->
 			<text id="text_GB_AMMO_LOAD_10"/>
-			<event load="GET_AC_CHARGE_RAD"/>
+			<event name="GET_AC_CHARGE_RAD">
+        <weapon name="FM_RVS_AC_CHARGE_RAD"/>
+        <loadEventList>
+          <event req="loc_flagship" lvl="0">
+            <loadEvent>COMBAT_CHECK</loadEvent>
+          </event>
+          <event req="loc_flagship" lvl="1">
+            <loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
+          </event>
+        </loadEventList>
+      </event>
 		</choice>
 
 		<choice>
@@ -5808,119 +5624,7 @@
 				</loadEventList>
 			</event>
 		</choice>
-	</event>
-  
-
-	<event name="GET_AC_CHARGE_STANDARD">
-		<weapon name="FM_RVS_AC_CHARGE"/>
-		<loadEventList>
-			<event req="loc_flagship" lvl="0">
-				<loadEvent>COMBAT_CHECK</loadEvent>
-			</event>
-			<event req="loc_flagship" lvl="1">
-				<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
-			</event>
-		</loadEventList>
-	</event>
-	<event name="GET_AC_CHARGE_CASELESS">
-		<weapon name="FM_RVS_AC_CHARGE_CASELESS"/>
-		<loadEventList>
-			<event req="loc_flagship" lvl="0">
-				<loadEvent>COMBAT_CHECK</loadEvent>
-			</event>
-			<event req="loc_flagship" lvl="1">
-				<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
-			</event>
-		</loadEventList>
-	</event>
-	<event name="GET_AC_CHARGE_HV">
-		<weapon name="FM_RVS_AC_CHARGE_HV"/>
-		<loadEventList>
-			<event req="loc_flagship" lvl="0">
-				<loadEvent>COMBAT_CHECK</loadEvent>
-			</event>
-			<event req="loc_flagship" lvl="1">
-				<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
-			</event>
-		</loadEventList>
-	</event>
-	<event name="GET_AC_CHARGE_FREE">
-		<weapon name="FM_RVS_AC_CHARGE_FREE"/>
-		<loadEventList>
-			<event req="loc_flagship" lvl="0">
-				<loadEvent>COMBAT_CHECK</loadEvent>
-			</event>
-			<event req="loc_flagship" lvl="1">
-				<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
-			</event>
-		</loadEventList>
-	</event>
-	<event name="GET_AC_CHARGE_HE">
-		<weapon name="FM_RVS_AC_CHARGE_HE"/>
-		<loadEventList>
-			<event req="loc_flagship" lvl="0">
-				<loadEvent>COMBAT_CHECK</loadEvent>
-			</event>
-			<event req="loc_flagship" lvl="1">
-				<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
-			</event>
-		</loadEventList>
-	</event>
-	<event name="GET_AC_CHARGE_EMP">
-		<weapon name="FM_RVS_AC_CHARGE_EMP"/>
-		<loadEventList>
-			<event req="loc_flagship" lvl="0">
-				<loadEvent>COMBAT_CHECK</loadEvent>
-			</event>
-			<event req="loc_flagship" lvl="1">
-				<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
-			</event>
-		</loadEventList>
-	</event>
-	<event name="GET_AC_CHARGE_HEAT">
-		<weapon name="FM_RVS_AC_CHARGE_HEAT"/>
-		<loadEventList>
-			<event req="loc_flagship" lvl="0">
-				<loadEvent>COMBAT_CHECK</loadEvent>
-			</event>
-			<event req="loc_flagship" lvl="1">
-				<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
-			</event>
-		</loadEventList>
-	</event>
-	<event name="GET_AC_CHARGE_INCENDIARY">
-		<weapon name="FM_RVS_AC_CHARGE_INCENDIARY"/>
-		<loadEventList>
-			<event req="loc_flagship" lvl="0">
-				<loadEvent>COMBAT_CHECK</loadEvent>
-			</event>
-			<event req="loc_flagship" lvl="1">
-				<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
-			</event>
-		</loadEventList>
-	</event>
-	<event name="GET_AC_CHARGE_FLECHETTE">
-		<weapon name="FM_RVS_AC_CHARGE_FLECHETTE"/>
-		<loadEventList>
-			<event req="loc_flagship" lvl="0">
-				<loadEvent>COMBAT_CHECK</loadEvent>
-			</event>
-			<event req="loc_flagship" lvl="1">
-				<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
-			</event>
-		</loadEventList>
-	</event>
-	<event name="GET_AC_CHARGE_RAD">
-		<weapon name="FM_RVS_AC_CHARGE_RAD"/>
-		<loadEventList>
-			<event req="loc_flagship" lvl="0">
-				<loadEvent>COMBAT_CHECK</loadEvent>
-			</event>
-			<event req="loc_flagship" lvl="1">
-				<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
-			</event>
-		</loadEventList>
-	</event>
+	</event>	
 
   <!--COMBAT CHECKS EVENTS, FOR RAMMING SPEED
   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
