@@ -1335,10 +1335,40 @@
 	<eventList name="TAROT_ACTIVATE">
 		<event><!--The Fool Good-->
 			<text>You flip the card to reveal a flash of white that fades to reveal a cube, etched in green with facets that seem to rearrange themselves to some twisted tune as if dancing. Species of all kinds in various garments of study are observing it, as it begins to unfold it reveals a twisting mass of white hot energy suspended in a bubble; the birth of a new dimension. The truth behind the multiverse drives that even the ancients failed to recognize.</text>
+
+			<choice>
+				<text>Gaze into its depths</text>
+				<event> <!--Quest-->
+					<text>You gaze deeply into the folds of the cube, your mind straining to understand the contortions of the energy within. Suddenly your visions rush with galaxies, expanding to reveal their stars, which in turn reveal their planets. You watch in awe as the vision slowly settles to reveal your own ship, orbiting a nearby world.</text>
+				</event>
+			</choice>
+
+			<choice>
+				<text>Examine its exterior</text>
+				<event> <!--External Engine Booster-->
+					<text>You fix your sights upon the outside of the box, searching for something recognizable among its faces. The symbols don't fully make sense, but they inspire you with a creative way to optimize your engines.</text>
+				</event>
+			</choice>
+
+
 		</event>
 
 		<event><!--The Fool Bad-->
-			<text>You flip the card to see nothing; an inky black void devoid of stars, planets or light. The only thing recognizable is the outline of a cube, that slowly shifts shape to open up. Inside is a small swirling Galaxy; it begins to bubble and tear apart as stars and eventually clusters begin to violently decay. The cube suddenly slams shut and begins shifting once more, but with a motion and intent that feels like a mouth chewing it's food.</text>
+			<text>You flip the card to see nothing; an inky black void devoid of stars, planets or light. The only thing recognizable is the outline of a cube, its shape slowly changing as it opens. Inside is a small swirling galaxy; it begins to bubble and tear apart as stars, systems and eventually clusters begin to violently decay. The cube suddenly slams shut and begins shifting once more, not unlike a mouth chewing its food.</text>
+
+			<choice>
+				<text>Try to force it back open</text>
+				<event>
+					<text></text>
+				</event>
+			</choice>
+
+			<choice>
+				<text>Wait until it stops moving</text>
+				<event>
+					<text></text>
+				</event>
+			</choice>
 		</event>
 
 		<event><!--The Magician Good-->
@@ -1357,16 +1387,16 @@
 			<text>You flip the card to reveal a dark and dingy laboratory, with strange blob-like masses shifting within shadowed vats. A Shell Scientist is watching them intently, scribbling notes and talking to themselves in a whisper as their colleagues watch with concern. The lights flicker on, revealing the emaciated figure of the Scientist, trembling slightly. Their eyes are sunken and twitching, fixed firmly upon the vats in front of them.</text>
 		</event>
 
-		<event><!--The Empress Good-->
-			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		<event><!--The Empress Good--> <!--All crew become immune to suffocation for 3 jumps-->
+			<text>You flip the card to reveal a Lanius ship, glowing vibrant and pink as it sets down upon a green world. A crowd of Orchids watch as the captain debarks. A Chieftain rushes forward to wordlessly present a gift, and the Lanius takes it from them to the cheering of the crowd.</text>
 		</event>
 
-		<event><!--The Empress Bad-->
-			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		<event><!--The Empress Bad--> <!--Set fires and create a star while giving an extremely low-tier piece of ancient equipment, so like a mender or harbinger 1-->
+			<text>You flip the card to reveal a raging sun. A desolated ship orbits low, dwarfed by the immense flares thrown off by the star's surface. A strange Lanius vessel flickers pink as it approaches, only to be engulfed by flames shortly after.</text>
 		</event>
 
 		<event><!--The Emperor Good-->
-			<text>You flip the card to reveal The Federation of Dimension 0, celebrating a grand victory over the rebellion. Peace has been brokered between the two factions, and Admiral Vance of the rebellion fleet is standing alongside Admiral, now President Tully. The Rebel Flagship is stationed in planetary orbit, fully retrofitted in a new color scheme of silvers, blues and black with an insignia combining the rebels and the federations identities.</text>
+			<text>You flip the card to reveal The Federation of Universe 0, celebrating a grand victory over the rebellion. Peace has been brokered between the two factions, and Admiral Vance of the rebellion fleet is standing alongside Admiral, now President Tully. The Rebel Flagship is stationed in planetary orbit, fully retrofitted in a new color scheme of silvers, blues and black with an insignia combining the rebels and the federations identities.</text>
 		</event>
 
 		<event><!--The Emperor Bad-->
@@ -1382,11 +1412,11 @@
 		</event>
 
 		<event><!--The Lovers Good-->
-			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+			<text>You flip the card to reveal a hooded slug alongside a towering salt figure. They enter a tavern together, the room loud with banter and noise. The slug takes their companion to a quiet back room, the pair sitting at a table before the slug removes a deck of cards from their robe. The image fades out as the pair smiles, the slug dealing them both a hand.</text>
 		</event>
 
-		<event><!--The Lovers Bad-->
-			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		<event><!--The Lovers Bad--> <!---->
+			<text>You flip the card to reveal a crystalline white ship. A slug glides up the ship's ramp to greet its captain, who smiles in return. They navigate the halls of the vessel before the slug stumbles and collapses to the floor, quivering. Their companion reaches out to help, only to be met with a grotesque sizzling upon contact.</text>
 		</event>
 
 		<event><!--The Chariot Good-->

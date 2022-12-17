@@ -9021,6 +9021,8 @@
 						<damage>10</damage>
 						<persDamage>7</persDamage>
 						<sysDamage>10</sysDamage>
+						<shipFriendlyFire>true</shipFriendlyFire>
+						<friendlyFire>true</friendlyFire>
 						<fireChance>10</fireChance>
 						<event>
 							<superBarrage player="true" name="TERMINUS_SURGE" />
