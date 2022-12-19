@@ -1711,11 +1711,11 @@
 <!--FORGEMASTER BP LIST APPENDS-->
 
 <mod:findName type = "blueprintList" name = "LIST_CHECK_TOGGLES_AND_AMPS">
-  <mod-append:name>FM_FOCUS_FUELED_1</mod-append:name>
-  <mod-append:name>FM_FOCUS_FUELED_2</mod-append:name>
-  <mod-append:name>FM_FOCUS_FUELED_3</mod-append:name>
-  <mod-append:name>FM_FOCUS_FUELED_4</mod-append:name>
-  <mod-append:name>FM_FOCUS_FUELED_5</mod-append:name>
+	<mod-append:name>FM_FOCUS_FUELED_1</mod-append:name>
+	<mod-append:name>FM_FOCUS_FUELED_2</mod-append:name>
+	<mod-append:name>FM_FOCUS_FUELED_3</mod-append:name>
+	<mod-append:name>FM_FOCUS_FUELED_4</mod-append:name>
+	<mod-append:name>FM_FOCUS_FUELED_5</mod-append:name>
 	<mod-append:name>FM_ANCALAGON_DEFEND</mod-append:name>
 	<mod-append:name>FM_ANCALAGON_BATTLE</mod-append:name>
 	<mod-append:name>FM_LIST_TOGGLE_COMBAT_2_PLAYER</mod-append:name>
@@ -1747,16 +1747,16 @@
     <mod-append:name>FM_BEAM_PARTICLE_PIERCE</mod-append:name>
     <mod-append:name>FM_MISSILES_BURST_FIRE</mod-append:name>
     <mod-append:name>FM_MISSILES_BURST_FIRE_PLAYER</mod-append:name>
-		<mod-append:name>FM_MISSILES_BURST_FIRE_MEGA</mod-append:name>
+	<mod-append:name>FM_MISSILES_BURST_FIRE_MEGA</mod-append:name>
     <mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
-		<mod-append:name>FM_ROYAL_MINELAUNCHER</mod-append:name>
+	<mod-append:name>FM_ROYAL_MINELAUNCHER</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "BLUELIST_WEAPONS_FIRE_NODAMAGE">
     <mod-append:name>FM_FLAMETHROWER</mod-append:name>
     <mod-append:name>FM_ION_TRI_FIRE</mod-append:name>
     <mod-append:name>FM_BEAM_PARTICLE_PIERCE</mod-append:name>
-		<mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
+	<mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "BLUELIST_FIRE_NONBALLISTIC">
@@ -1986,6 +1986,8 @@
 	<mod-append:name>FM_COMBAT_2_BEAM_PLAYER</mod-append:name>
 	<mod-append:name>FM_COMBAT_2_LASER_PLAYER</mod-append:name>
 	<mod-append:name>FM_ISHIMURA_DRONE</mod-append:name>
+	<mod-append:name>FM_ENERGY_COMBAT_PINPOINT1</mod-append:name>
+	<mod-append:name>FM_ENERGY_COMBAT_BEAM1</mod-append:name>
 </mod:findName>
 
 
