@@ -8213,7 +8213,7 @@
 			</passiveStatBoosts>
 		</race>
 		<race name="twisted_yinyang_board">
-			<animSheet>yinyang_ship</animSheet>
+			<animSheet>drone_yinyang</animSheet>
 			<controllable>true</controllable>
 			<maxHealth>125</maxHealth>
 			<canFight>true</canFight>
