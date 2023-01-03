@@ -906,7 +906,7 @@
 		<!-- 	<choice hidden="true" req="fm_forgemasterperson" lvl="1" max_group="6" blue="true">  Alastair Hails Alastair
 		<text>(Alastair) Use Alastair to hail Alastair.</text>
 		<event>
-		<text>"SSSSSSSSSSSSSSStranger, IF I actually say any lore here, the diety known assssssssssssssssssssssssssssssssssssssssssss Maxine will atomize me" Sylvan says. Alastair nods in agreement.</text>
+		<text>"SSSSSSSSSSSSSSStranger, IF I actually say any lore here, the deity known assssssssssssssssssssssssssssssssssssssssssss Maxine will atomize me" Sylvan says. Alastair nods in agreement.</text>
 		<choice hidden="true">
 		<text>Continue...</text>
 		<event>
@@ -979,7 +979,7 @@
 		<!-- <choice hidden="true" req="fm_forgemasterperson" lvl="1" max_group="6" blue="true">  Alastair Hails Alastair
 		<text>(Alastair) Use Alastair to hail Alastair.</text>
 		<event>
-		<text>"SSSSSSSSSSSSSSStranger, IF I actually say any lore here, the diety known assssssssssssssssssssssssssssssssssssssssssss Maxine will atomize me" Sylvan says. Alastair nods in agreement.</text>
+		<text>"SSSSSSSSSSSSSSStranger, IF I actually say any lore here, the deity known assssssssssssssssssssssssssssssssssssssssssss Maxine will atomize me" Sylvan says. Alastair nods in agreement.</text>
 		<choice hidden="true">
 		<text>Continue...</text>
 		<event>
@@ -1470,7 +1470,7 @@
 
 
 		<choice req="FM_LASER_ANOMALY_1_LIST" lvl="1" blue="false" hidden="true">
-			<text>Install the Irradiation Laser core in the Frost I chassis to forge the 'TLALOC' Anomaly Laser. [Cost: 100~]</text>
+			<text>Install the Irradiation Laser core in the Frost I chassis to forge the 'TLALOC' Anomaly Laser. [Cost: 40~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_LASER_ANOMALY_1"/>
 		</choice>
 
@@ -1480,7 +1480,7 @@
 		</choice>
 
 		<choice req="FM_CHAINGUN_FIRE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Replace the barrels of the Vulcan with the Fire Starter's heat sinks to forge the 'Hellflash' Gatling Gun. [Cost: 150~]</text>
+			<text>Replace the barrels of the Vulcan with the Fire Starter's heat sinks to forge the 'Hellflash' Gatling Gun. [Cost: 30~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_CHAINGUN_FIRE"/>
 		</choice>
 
@@ -1490,7 +1490,7 @@
 		</choice>
 
 		<choice req="FM_FLAMETHROWER_FORGE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Use a gaseous form for fuel and ignite it with the Fire-Starter to forge the Dazhbog Flamethrower[Cost: 70~].</text>
+			<text>Use a gaseous form for fuel and ignite it with the Fire-Starter to forge the Dazhbog Flamethrower[Cost: 50~].</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_FLAMETHROWER"/>
 		</choice>
 
@@ -1500,7 +1500,7 @@
 		</choice>
 
 		<choice req="FM_PHASER_SUFFOCATION_LIST" lvl="1" blue="false" hidden="true">
-			<text>Dissolve a Lanius in a Phaser II's energy field to forge the 'Decayser'. [Cost: 70~]</text>
+			<text>Dissolve a Lanius in a Phaser II's energy field to forge the 'Decayser'. [Cost: 55~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_PHASER_SUFFOCATION"/>
 		</choice>
 
@@ -1510,7 +1510,7 @@
 		</choice>
 
 		<choice req="FM_LASER_PHOTON_LIST" lvl="1" blue="false" hidden="true">
-			<text>Use the Particle Accelerator I and a Light Laser I to forge the Photon Laser I.[Cost: 100~]</text>
+			<text>Use the Particle Accelerator I and a Light Laser I to forge the Photon Laser I.[Cost: 25~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_LASER_PHOTON"/>
 		</choice>
 
@@ -1520,7 +1520,7 @@
 		</choice>
 
 		<choice req="FM_LASER_PHOTON_2_LIST" lvl="1" blue="false" hidden="true">
-			<text>Use the Particle Accelerator II and a Light Laser II to forge the Photon Laser II.[Cost: 120~]</text>
+			<text>Use the Particle Accelerator II and a Light Laser II to forge the Photon Laser II.[Cost: 50~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_LASER_PHOTON_2"/>
 		</choice>
 
@@ -1530,7 +1530,7 @@
 		</choice>
 
 		<choice req="FM_LASER_HUMAN_LIST" lvl="1" blue="false" hidden="true">
-			<text>Install the Irradiation Laser core in the Heavy I chassis to forge the 'Rebel Ripper' Laser. [Cost: 100~]</text>
+			<text>Install the Irradiation Laser core in the Heavy I chassis to forge the 'Rebel Ripper' Laser. [Cost: 50~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_LASER_HUMAN"/>
 		</choice>
 
@@ -1540,17 +1540,17 @@
 		</choice>
 
 		<choice req="FM_LASER_ION_MEGA_LIST" lvl="1" blue="false" hidden="true">
-			<text>Forge the Absolution.[Cost: 280~, 15}]</text>
+			<text>Forge the Absolution.[Cost: 100~, 15}]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_LASER_ION_MEGA"/>
 		</choice>
 
 		<choice req="FM_LASER_ION_MEGA_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
-			<text>You must have a hefty amount of scrap, an Ion Bomb teleport tech, and the core of a Piercing Laser II to craft this weapon.</text>
+			<text>You must have a hefty amount of scrap, Ion Bomb teleportation tech, and the core of a Piercing Laser II to craft this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
 		<choice req="GATLING_ANCIENT" lvl="1" blue="true" hidden="true" max_group="19">
-			<text>Have Alastair tweak the Godkiller.[Cost: 10]</text>
+			<text>Have Alastair tweak the Godkiller.[Cost: 10~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_GODKILLER"/>
 		</choice>
 
@@ -1573,7 +1573,7 @@
 		<checkCargo/>
 
 		<choice req="FM_DISC_LAUNCHER_FORGE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Load scrap into a minelauncher and energize it with the Hullbuster Energy weapon to forge the TARANIS Energized Disc.[Cost: 130~]</text>
+			<text>Load scrap into a minelauncher and energize it with the Hullbuster Energy weapon to forge the TARANIS Energized Disc.[Cost: 50~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_DISC"/>
 		</choice>
 
@@ -1583,7 +1583,7 @@
 		</choice>
 
 		<choice req="FM_ION_TRI_FIRE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Use a Tri-ion and Fire Ion weapon to forge the 'Cerberus' Ion.[Cost: 100~]</text>
+			<text>Use a Tri-ion and Fire Ion weapon to forge the 'Cerberus' Ion.[Cost: 35~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_ION_TRI_FIRE"/>
 		</choice>
 
@@ -1593,7 +1593,7 @@
 		</choice>
 
 		<choice req="FM_CHAINGUN_ION_FORGE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Replace the barrels of the Vulcan with the Charge Ion's energized coils to forge the 'Vesta' Gatling Ion.[Cost: 170-200~]</text>
+			<text>Replace the barrels of the Vulcan with the Charge Ion's energized coils to forge the 'Vesta' Gatling Ion.[Cost: 30-60~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_CHAINGUN_ION"/>
 		</choice>
 
@@ -1603,7 +1603,7 @@
 		</choice>
 
 		<choice req="FM_SHOTGUN_ENERGY_FORGE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Combine Flak III and Energy Charger to forge the 'Exidia' Energy Diffuser. [Cost: 140~]</text>
+			<text>Combine Flak III and Energy Charger to forge the 'Exidia' Energy Diffuser. [Cost: 80~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_ENERGY"/>
 		</choice>
 
@@ -1613,7 +1613,7 @@
 		</choice>
 
 		<choice req="FM_PULSE_1_LIST" lvl="1" blue="false" hidden="true">
-			<text>Combine the Burst Laser I and Energy I to forge the Pulse Laser I. [Cost: 105~]</text>
+			<text>Combine the Burst Laser I and Energy I to forge the Pulse Laser I. [Cost: 40~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_PULSE"/>
 		</choice>
 
@@ -1623,7 +1623,7 @@
 		</choice>
 
 		<choice req="FM_PULSE_2_FORGE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Combine the Burst Laser II and Energy II to forge the Pulse Laser II. [Cost: 130~]</text>
+			<text>Combine the Burst Laser II and Energy II to forge the Pulse Laser II. [Cost: 50~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_PULSE_2"/>
 		</choice>
 
@@ -1633,7 +1633,7 @@
 		</choice>
 
 		<choice req="FM_PULSE_3_LIST" lvl="1" blue="false" hidden="true">
-			<text>Combine the Burst Laser III and Energy III to forge the Pulse Laser III. [Cost: 155~]</text>
+			<text>Combine the Burst Laser III and Energy III to forge the Pulse Laser III. [Cost: 60~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_PULSE_3"/>
 		</choice>
 
@@ -1643,7 +1643,7 @@
 		</choice>
 
 		<choice req="FM_PULSEDEEP_LIST" lvl="1" blue="false" hidden="true">
-			<text>Combine the Heavy Energy and Heavy Ion to forge the Pulsedeep Cannon. [Cost: 80~]</text>
+			<text>Combine the Heavy Energy and Heavy Ion to forge the Pulsedeep Cannon. [Cost: 50~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_PULSEDEEP"/>
 		</choice>
 
@@ -1669,7 +1669,7 @@
 		<checkCargo/>
 
 		<choice req="FM_BEAM_MINING_2_LIST" lvl="1" blue="false" hidden="true">
-			<text>Dissassemble and combine the Pike II and Mining beams to forge the Ishimura Beam.[Cost: 250~]</text>
+			<text>Dissassemble and combine the Pike II and Mining beams to forge the Ishimura Beam.[Cost: 120~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_MINING_2"/>
 		</choice>
 
@@ -1679,7 +1679,7 @@
 		</choice>
 
 		<choice req="FM_BEAM_PARTICLE_PIERCE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Install the Particle Beam technology in the Guisarme's frame to forge the 'Earspoon' Beam.[Cost: 120~]</text>
+			<text>Install the Particle Beam technology in the Guisarme's frame to forge the 'Earspoon' Beam.[Cost: 35~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_PARTICLE_PIERCE"/>
 		</choice>
 
@@ -1689,7 +1689,7 @@
 		</choice>
 
 		<choice req="FM_BEAM_GUILLOTINE_CHAIN_FORGE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Provide the Murder-Bots with scrap to reconfigure the Fauchard to their hearts' content.[Cost: 200~, 20}, 15|]</text>
+			<text>Provide the Murder-Bots with scrap to reconfigure the Fauchard to their hearts' content.[Cost: 110~, 2}, 5|]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_GUILLOTINE_CHAIN"/>
 		</choice>
 
@@ -1699,7 +1699,7 @@
 		</choice>
 
 		<choice req="FM_BEAM_EXPLOSION_FORGE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Rewire the Halberd beam to use its length as a teleportation lock-on for the Small Bomb to forge the 'Valefor' beam.[Cost: 125~]</text>
+			<text>Rewire the Halberd beam to use its length as a teleportation lock-on for the Small Bomb to forge the 'Valefor' beam.[Cost: 75~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_EXPLOSION"/>
 		</choice>
 
@@ -1719,7 +1719,7 @@
 		</choice>
 
 		<choice req="FM_BEAM_ETERNITY_LIST" lvl="1" blue="false" hidden="true">
-		  <text>Combine the 'Pike' beam and 'Scythe' beam to forge the 'Eternity' Beam. [Cost: 100~]</text>
+		  <text>Combine the 'Pike' beam and 'Scythe' beam to forge the 'Eternity' Beam. [Cost: 40~]</text>
 		  <event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_ETERNITY"/>
 		</choice>
 
@@ -1744,7 +1744,7 @@
 
 
 		<choice req="FM_FOCUS_FUELED_1_LIST" lvl="1" blue="false" hidden="true">
-			<text>Finagle the Cinquedea Pinpoint into the Hermes missile shell to forge the 'Parazonium' Pinpoint.[Cost: 100~]</text>
+			<text>Finagle the Cinquedea Pinpoint into the Hermes missile shell to forge the 'Parazonium' Pinpoint.[Cost: 70~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_FUELED_1"/>
 		</choice>
 
@@ -1754,7 +1754,7 @@
 		</choice>
 
 		<choice req="FM_FOCUS_ENERGY_1_LIST" lvl="1" blue="false" hidden="true">
-			<text>Replace the Dirk's power source with an Energy I core to forge the 'Ebony' Pinpoint.[Cost: 70~]</text>
+			<text>Replace the Dirk's power source with an Energy I core to forge the 'Ebony' Pinpoint.[Cost: 40~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_1"/>
 		</choice>
 
@@ -1764,7 +1764,7 @@
 		</choice>
 
 		<choice req="FM_FOCUS_ENERGY_2_FORGE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Replace the Misericorde's power source with an Energy II core to forge the 'Hemlock' Pinpoint.[Cost: 100~]</text>
+			<text>Replace the Misericorde's power source with an Energy II core to forge the 'Hemlock' Pinpoint.[Cost: 50~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_2"/>
 		</choice>
 
@@ -1774,7 +1774,7 @@
 		</choice>
 
 		<choice req="FM_FOCUS_ENERGY_3_LIST" lvl="1" blue="false" hidden="true">
-			<text>Replace the Stiletto's power source with an Energy III core to forge the 'Greenheart' Pinpoint.[Cost: 100~]</text>
+			<text>Replace the Stiletto's power source with an Energy III core to forge the 'Greenheart' Pinpoint.[Cost: 60~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_3"/>
 		</choice>
 
@@ -1784,7 +1784,7 @@
 		</choice>
 
 		<choice req="FM_FOCUS_ENERGY_CONS_LIST" lvl="1" blue="false" hidden="true">
-      <text>Replace the Dirk's power source with a Conservative Energy core to forge the 'Maple' Pinpoint.[Cost: 70~]</text>
+      <text>Replace the Dirk's power source with a Conservative Energy core to forge the 'Maple' Pinpoint.[Cost: 50~]</text>
       <event load="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_CONS"/>
     </choice>
 
@@ -1794,7 +1794,7 @@
     </choice>
 
     <choice req="FM_FOCUS_ADAPT_LIST" lvl="1" blue="false" hidden="true">
-      <text>Combine the Suyari beam and Cinquedea pinpoint to forge the Omiyari focus.[Cost: 120~]</text>
+      <text>Combine the Suyari beam and Cinquedea pinpoint to forge the Omiyari focus.[Cost: 50~]</text>
       <event load="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ADAPT"/>
     </choice>
     
@@ -1804,7 +1804,7 @@
     </choice>
 
 		<choice req="FM_BEAM_MINING_3_FORGE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Combine the Misericorde/Stiletto and Ishimura Beam to forge the Terra Nova 'ShipCracker'.[Cost: 100~]</text>
+			<text>Combine the Misericorde/Stiletto and Ishimura Beam to forge the Terra Nova 'ShipCracker'.[Cost: 50-70~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_MINING_3"/>
 		</choice>
 
@@ -1828,7 +1828,7 @@
 		<text>Which weapon would you like to craft?</text>
 		<checkCargo/>
 		<choice req="FM_SHOTGUN_ANOMALY_FORGE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Install the Frost II cooling module in the Irradiated Flak chassis to forge the 'KHEIMON' Anomaly Dispenser.[Cost: 70~]</text>
+			<text>Install the Frost II cooling module in the Irradiated Flak chassis to forge the 'KHEIMON' Anomaly Dispenser.[Cost: 45~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY"/>
 		</choice>
 
@@ -1848,7 +1848,7 @@
 		</choice>
 
 		<choice req="FM_SHOTGUN_AETHER_LIST" lvl="1" blue="false" hidden="true">
-			<text>Install Aether Tech into your Flak IV.[Cost: 200~]</text>
+			<text>Install Aether Tech into your Flak IV.[Cost: 60~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_AETHER"/>
 		</choice>
 
@@ -1858,7 +1858,7 @@
 		</choice>
 
 		<choice req="FM_SHOTGUN_CURSED_LIST" lvl="1" blue="false" hidden="true">
-			<text>Install Lanius tech into your Flak weapon.</text>
+			<text>Install Lanius tech into your Flak weapon.[Cost: 30~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_CURSED"/>
 		</choice>
 
@@ -1895,7 +1895,7 @@
 		<checkCargo/>
 
 		<choice req="FM_MISSILES_BURST_FIRE_FORGE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Dissassemble and combine the Ares and Hades missiles to forge the 'Hellfire' Burst Missile.[Cost: 150~]</text>
+			<text>Dissassemble and combine the Ares and Hades missiles to forge the 'Hellfire' Burst Missile.[Cost: 90~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_MISSILES_BURST_FIRE"/>
 		</choice>
 
@@ -1905,7 +1905,7 @@
 		</choice>
 
 		<choice req="FM_MISSILES_CLOAK_STUN_FORGE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Upgrade the Nyx missile's cloaking field with an Energy Stunner core to forge the 'Chernobog' Missile.[Cost: 100~]</text>
+			<text>Upgrade the Nyx missile's cloaking field with an Energy Stunner core to forge the 'Chernobog' Missile.[Cost: 70~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_MISSILES_CLOAK_STUN"/>
 		</choice>
 
@@ -1915,7 +1915,7 @@
 		</choice>
 
 		<choice req="FM_BOMB_CRYSTAL_FIRE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Infuse the Lockdown Bomb's crystals with the Fire Bomb to forge Project #7:Burning End.[Cost: 80~]</text>
+			<text>Infuse the Lockdown Bomb's crystals with the Fire Bomb to forge Project #7:Burning End.[Cost: 60~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_BOMB_CRYSTAL_FIRE"/>
 		</choice>
 
@@ -1935,7 +1935,7 @@
 		</choice>
 
 		<choice req="FM_BOMBLAUNCHER_HULL_LIST" lvl="1" blue="false" hidden="true">
-			<text>Jury-Rig the power core of the Hull Laser II into the Sobek Mine launcher to forge this weapon.[Cost: 80~]</text>
+			<text>Jury-Rig the power core of the Hull Laser II into the Sobek Mine launcher to forge this weapon.[Cost: 90~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_BOMBLAUNCHER_HULL"/>
 		</choice>
 
@@ -1955,7 +1955,7 @@
 		</choice>
 
 		<choice req="FM_ION_MISSILES_LIST" lvl="1" blue="false" hidden="true">
-		  <text>Combine the Hermes Missile and Ion II to forge the 'Debilitatum' Heavy Missiles.[Cost: 80~]</text>
+		  <text>Combine the Hermes Missile and Ion II to forge the 'Debilitatum' Heavy Missiles.[Cost: 65~]</text>
 		  <event load="NPC_STORAGE_CHECK_CREATE_FM_ION_MISSILES"/>
 		</choice>
 
@@ -1967,7 +1967,7 @@
 
 
 		<choice req="FM_IMPRISMENT_INDUCER_LIST" lvl="1" blue="false" hidden="true">
-		  <text>Reconfigure the Stun Bomb to disperse the debilitating crystalline particles of the Neural Crystal to forge the IMPRISMENT Inducer.[Cost: 130~]</text>
+		  <text>Reconfigure the Stun Bomb to disperse the debilitating crystalline particles of the Neural Crystal to forge the IMPRISMENT Inducer.[Cost: 25-55~]</text>
 		  <event load="NPC_STORAGE_CHECK_CREATE_FM_IMPRISMENT_INDUCER"/>
 		</choice>
 
@@ -2055,7 +2055,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_LASER_ANOMALY_1"/>
 				<item_modify>
-					<item type="scrap" min="-100" max="-100"/>
+					<item type="scrap" min="-40" max="-40"/>
 				</item_modify>
 				<removeItem>LASER_BIO</removeItem>
 				<removeItem>LASER_FROST_1</removeItem>
@@ -2082,7 +2082,7 @@
         		<text id="text_CREATE_FM_CHAINGUN_FIRE_1_1"/>
 				<weapon name="FM_CHAINGUN_FIRE"/>
 				<item_modify>
-					<item type="scrap" min="-150" max="-150"/>
+					<item type="scrap" min="-30" max="-30"/>
 				</item_modify>
 				<choice hidden="true">
 					<text>Continue...</text>
@@ -2126,7 +2126,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_FLAMETHROWER"/>
 				<item_modify>
-					<item type="scrap" min="-70" max="-70"/>
+					<item type="scrap" min="-50" max="-50"/>
 				</item_modify>
 				<choice hidden="true">
 					<text>Continue...</text>
@@ -2159,7 +2159,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_FLAMETHROWER"/>
 				<item_modify>
-					<item type="scrap" min="-70" max="-70"/>
+					<item type="scrap" min="-50" max="-50"/>
 				</item_modify>
 				<choice hidden="true">
 					<text>Continue...</text>
@@ -2192,7 +2192,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_FLAMETHROWER"/>
 				<item_modify>
-					<item type="scrap" min="-70" max="-70"/>
+					<item type="scrap" min="-50" max="-50"/>
 				</item_modify>
 				<choice hidden="true">
 					<text>Continue...</text>
@@ -2225,7 +2225,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_FLAMETHROWER"/>
 				<item_modify>
-					<item type="scrap" min="-70" max="-70"/>
+					<item type="scrap" min="-50" max="-50"/>
 				</item_modify>
 				<choice hidden="true">
 					<text>Continue...</text>
@@ -2267,7 +2267,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_PHASER_SUFFOCATION"/>
 				<item_modify>
-					<item type="scrap" min="-70" max="-70"/>
+					<item type="scrap" min="-55" max="-55"/>
 				</item_modify>
 				<choice hidden="true">
 					<text>Continue...</text>
@@ -2311,7 +2311,7 @@
         		<text id="text_CREATE_FM_LASER_PHOTON_1_1"/>
 				<weapon name="FM_LASER_PHOTON"/>
 				<item_modify>
-					<item type="scrap" min="-100" max="-100"/>
+					<item type="scrap" min="-25" max="-25"/>
 				</item_modify>
 				<choice hidden="true">
 					<text>Continue...</text>
@@ -2355,7 +2355,7 @@
 				<text id="text_CREATE_FM_LASER_PHOTON_2_1"/>
 				<weapon name="FM_LASER_PHOTON_2"/>
 				<item_modify>
-					<item type="scrap" min="-120" max="-120"/>
+					<item type="scrap" min="-50" max="-50"/>
 				</item_modify>
 				<choice hidden="true">
 					<text>Continue...</text>
@@ -2399,7 +2399,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_LASER_HUMAN"/>
 				<item_modify>
-					<item type="scrap" min="-100" max="-100"/>
+					<item type="scrap" min="-40" max="-40"/>
 				</item_modify>
 				<removeItem>LASER_BIO</removeItem>
 				<removeItem>LASER_HEAVY_1</removeItem>
@@ -2427,7 +2427,7 @@
 				<weapon name="FM_LASER_ION_MEGA"/>
 
 				<item_modify>
-					<item type="scrap" min="-280" max="-280"/>
+					<item type="scrap" min="-100" max="-100"/>
 					<item type="missiles" min="-15" max="-15"/>
 				</item_modify>
 				<choice hidden="true">
@@ -2520,7 +2520,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_ENERGY_DISC"/>
 				<item_modify>
-					<item type="scrap" min="-130" max="-130"/>
+					<item type="scrap" min="-70" max="-130"/>
 				</item_modify>
 				<removeItem>ENERGY_HULL</removeItem>
 				<removeItem>MINELAUNCHER_1</removeItem>
@@ -2534,12 +2534,12 @@
 		</choice>
 
 		<choice hidden="false" req="MINELAUNCHER_2"  blue="false">
-			<text>Craft the 'TARANIS' Energized Disc using the Osirus Minelauncher.</text>
+			<text>Craft the 'TARANIS' Energized Disc using the Osiris Minelauncher.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_ENERGY_DISC"/>
 				<item_modify>
-					<item type="scrap" min="-130" max="-130"/>
+					<item type="scrap" min="-50" max="-50"/>
 				</item_modify>
 				<removeItem>ENERGY_HULL</removeItem>
 				<removeItem>MINELAUNCHER_2</removeItem>
@@ -2559,7 +2559,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_ENERGY_DISC"/>
 				<item_modify>
-					<item type="scrap" min="-130" max="-130"/>
+					<item type="scrap" min="-50" max="-50"/>
 				</item_modify>
 				<removeItem>ENERGY_HULL</removeItem>
 				<removeItem>MINELAUNCHER_FIRE</removeItem>
@@ -2578,7 +2578,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_ENERGY_DISC"/>
 				<item_modify>
-					<item type="scrap" min="-130" max="-130"/>
+					<item type="scrap" min="-50" max="-50"/>
 				</item_modify>
 				<removeItem>ENERGY_HULL</removeItem>
 				<removeItem>MINELAUNCHER_STUN</removeItem>
@@ -2606,7 +2606,7 @@
 				<text id="text_CREATE_FM_ION_TRI_FIRE_1"/><!--First locked in screen, shows Cerberus, TOP text part-->
 				<weapon name="FM_ION_TRI_FIRE"/>
 				<item_modify>
-					<item type="scrap" min="-100" max="-100"/>
+					<item type="scrap" min="-35" max="-35"/>
 				</item_modify>
 				<choice hidden="true">
 					<text>Continue...</text> <!--First locked in screen, Continue option, the ONLY text the player can select and see-->
@@ -2651,7 +2651,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_CHAINGUN_ION"/>
 				<item_modify>
-					<item type="scrap" min="-200" max="-200"/>
+					<item type="scrap" min="-60" max="-60"/>
 				</item_modify>
 				<removeItem>ION_CHARGEGUN</removeItem>
 				<removeItem>LASER_CHAINGUN_2</removeItem>
@@ -2670,7 +2670,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_CHAINGUN_ION"/>
 				<item_modify>
-					<item type="scrap" min="-170" max="-170"/>
+					<item type="scrap" min="-30" max="-30"/>
 				</item_modify>
 				<removeItem>ION_CHARGEGUN_2</removeItem>
 				<removeItem>LASER_CHAINGUN_2</removeItem>
@@ -2698,7 +2698,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_SHOTGUN_ENERGY_PLAYER"/>
 				<item_modify>
-					<item type="scrap" min="-140" max="-140"/>
+					<item type="scrap" min="-80" max="-80"/>
 				</item_modify>
 				<removeItem>ENERGY_CHARGEGUN_PLAYER</removeItem>
 				<removeItem>SHOTGUN_3</removeItem>
@@ -2718,7 +2718,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_SHOTGUN_ENERGY"/>
 				<item_modify>
-					<item type="scrap" min="-140" max="-140"/>
+					<item type="scrap" min="-80" max="-80"/>
 				</item_modify>
 				<removeItem>ENERGY_CHAINGUN</removeItem>
 				<removeItem>SHOTGUN_3</removeItem>
@@ -2747,7 +2747,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_PULSE_1"/>
 				<item_modify>
-					<item type="scrap" min="-105" max="-105"/>
+					<item type="scrap" min="-40" max="-40"/>
 				</item_modify>
 				<removeItem>ENERGY_1</removeItem>
 				<removeItem>LASER_BURST_2</removeItem>
@@ -2777,7 +2777,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_PULSE_2_PLAYER"/>
 				<item_modify>
-					<item type="scrap" min="-130" max="-130"/>
+					<item type="scrap" min="-50" max="-50"/>
 				</item_modify>
 				<removeItem>ENERGY_2_PLAYER</removeItem>
 				<removeItem>LASER_BURST_3</removeItem>
@@ -2796,7 +2796,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_PULSE_2"/>
 				<item_modify>
-					<item type="scrap" min="-130" max="-130"/>
+					<item type="scrap" min="-50" max="-50"/>
 				</item_modify>
 				<removeItem>ENERGY_2</removeItem>
 				<removeItem>LASER_BURST_3</removeItem>
@@ -2825,7 +2825,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_PULSE_3"/>
 				<item_modify>
-					<item type="scrap" min="-155" max="-155"/>
+					<item type="scrap" min="-60" max="-60"/>
 				</item_modify>
 				<removeItem>ENERGY_3</removeItem>
 				<removeItem>LASER_BURST_5</removeItem>
@@ -2855,7 +2855,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_PULSEDEEP"/>
 				<item_modify>
-					<item type="scrap" min="-80" max="-80"/>
+					<item type="scrap" min="-50" max="-50"/>
 				</item_modify>
 				<removeItem>ENERGY_HULL</removeItem>
 				<removeItem>ION_HEAVY</removeItem>
@@ -2887,7 +2887,7 @@
 				<text id="text_CREATE_FM_BEAM_MINING_2_1"/>
 				<weapon name="FM_BEAM_MINING_2"/>
 				<item_modify>
-					<item type="scrap" min="-250" max="-250"/>
+					<item type="scrap" min="-120" max="-120"/>
 				</item_modify>
 				<choice hidden="true">
 					<text>Continue...</text>
@@ -2937,7 +2937,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_BEAM_MINING_3"/>
 				<item_modify>
-					<item type="scrap" min="-100" max="-100"/>
+					<item type="scrap" min="-70" max="-70"/>
 				</item_modify>
 				<removeItem>FM_BEAM_MINING_2</removeItem>
 				<removeItem>FOCUS_2</removeItem>
@@ -2956,7 +2956,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_BEAM_MINING_3"/>
 				<item_modify>
-					<item type="scrap" min="-100" max="-100"/>
+					<item type="scrap" min="-50" max="-50"/>
 				</item_modify>
 				<removeItem>FM_BEAM_MINING_2</removeItem>
 				<removeItem>FOCUS_3</removeItem>
@@ -2984,7 +2984,7 @@
 				<text id="text_CREATE_FM_BEAM_PARTICLE_PIERCE_1"/> <!--First locked in screen, shows Cerberus, TOP text part-->
 				<weapon name="FM_BEAM_PARTICLE_PIERCE"/>
 				<item_modify>
-					<item type="scrap" min="-120" max="-120"/>
+					<item type="scrap" min="-35" max="-35"/>
 				</item_modify>
 				<choice hidden="true">
 					<text>Continue...</text>
@@ -3027,9 +3027,9 @@
 			<event>
 				<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_1"/>
 				<item_modify>
-					<item type="scrap" min="-200" max="-200"/>
-					<item type="missiles" min="-20" max="-20"/>
-					<item type="drones" min="-15" max="-15"/>
+					<item type="scrap" min="-110" max="-110"/>
+					<item type="missiles" min="-2" max="-2"/>
+					<item type="drones" min="-5" max="-5"/>
 				</item_modify>
 				<choice hidden="true">
 					<text>Continue...</text>
@@ -3066,9 +3066,9 @@
 			<event>
 				<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_1"/>
 				<item_modify>
-					<item type="scrap" min="-200" max="-200"/>
-					<item type="missiles" min="-20" max="-20"/>
-					<item type="drones" min="-15" max="-15"/>
+					<item type="scrap" min="-110" max="-110"/>
+					<item type="missiles" min="-2" max="-2"/>
+					<item type="drones" min="-5" max="-5"/>
 				</item_modify>
 				<choice hidden="true">
 					<text>Continue...</text>
@@ -3105,9 +3105,9 @@
 			<event>
 				<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_1"/>
 				<item_modify>
-					<item type="scrap" min="-200" max="-200"/>
-					<item type="missiles" min="-20" max="-20"/>
-					<item type="drones" min="-15" max="-15"/>
+					<item type="scrap" min="-110" max="-110"/>
+					<item type="missiles" min="-2" max="-2"/>
+					<item type="drones" min="-5" max="-5"/>
 				</item_modify>
 				<choice hidden="true">
 					<text>Continue...</text>
@@ -3144,9 +3144,9 @@
 			<event>
 				<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_1"/>
 				<item_modify>
-					<item type="scrap" min="-200" max="-200"/>
-					<item type="missiles" min="-20" max="-20"/>
-					<item type="drones" min="-15" max="-15"/>
+					<item type="scrap" min="-110" max="-110"/>
+					<item type="missiles" min="-2" max="-2"/>
+					<item type="drones" min="-5" max="-5"/>
 				</item_modify>
 				<choice hidden="true">
 					<text>Continue...</text>
@@ -3183,9 +3183,9 @@
 			<event>
 				<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_1"/>
 				<item_modify>
-					<item type="scrap" min="-200" max="-200"/>
-					<item type="missiles" min="-20" max="-20"/>
-					<item type="drones" min="-15" max="-15"/>
+					<item type="scrap" min="-110" max="-110"/>
+					<item type="missiles" min="-2" max="-2"/>
+					<item type="drones" min="-5" max="-5"/>
 				</item_modify>
 				<choice hidden="true">
 					<text>Continue...</text>
@@ -3222,9 +3222,9 @@
 			<event>
 				<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_1"/>
 				<item_modify>
-					<item type="scrap" min="-200" max="-200"/>
-					<item type="missiles" min="-20" max="-20"/>
-					<item type="drones" min="-15" max="-15"/>
+					<item type="scrap" min="-110" max="-110"/>
+					<item type="missiles" min="-2" max="-2"/>
+					<item type="drones" min="-5" max="-5"/>
 				</item_modify>
 				<choice hidden="true">
 					<text>Continue...</text>
@@ -3271,7 +3271,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_BEAM_EXPLOSION_PLAYER"/>
 				<item_modify>
-					<item type="scrap" min="-125" max="-125"/>
+					<item type="scrap" min="-75" max="-75"/>
 				</item_modify>
 				<removeItem>BOMB_1</removeItem>
 				<removeItem>BEAM_2_PLAYER</removeItem>
@@ -3290,7 +3290,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_BEAM_EXPLOSION"/>
 				<item_modify>
-					<item type="scrap" min="-125" max="-125"/>
+					<item type="scrap" min="-75" max="-75"/>
 				</item_modify>
 				<removeItem>BOMB_1</removeItem>
 				<removeItem>BEAM_2</removeItem>
@@ -3304,12 +3304,12 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="FM_BEAM_EXPLOSION_LIST_EGG" blue="false">
-			<text>Craft the 'Valefor' Beam using the Halberd beam.</text><!--egg-->
+			<text>Craft the 'Valefor' Beam using the Halberd beam.</text><!--egg--> <!--egg!-->
 			<event>
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_BEAM_EXPLOSION_EGG"/>
 				<item_modify>
-					<item type="scrap" min="-125" max="-125"/>
+					<item type="scrap" min="-75" max="-75"/>
 				</item_modify>
 				<removeItem>BOMB_1</removeItem>
 				<removeItem>BEAM_2</removeItem>
@@ -3338,7 +3338,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_FOCUS_FUELED_1"/>
 				<item_modify>
-					<item type="scrap" min="-100" max="-100"/>
+					<item type="scrap" min="-70" max="-70"/>
 				</item_modify>
 				<removeItem>MISSILES_3</removeItem>
 				<removeItem>FOCUS_CHAIN</removeItem>
@@ -3365,7 +3365,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_FOCUS_ENERGY_1"/>
 				<item_modify>
-					<item type="scrap" min="-70" max="-70"/>
+					<item type="scrap" min="-40" max="-40"/>
 				</item_modify>
 				<removeItem>ENERGY_1</removeItem>
 				<removeItem>FOCUS_1</removeItem>
@@ -3392,7 +3392,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_FOCUS_ENERGY_2_PLAYER"/>
 				<item_modify>
-					<item type="scrap" min="-100" max="-100"/>
+					<item type="scrap" min="-50" max="-50"/>
 				</item_modify>
 				<removeItem>ENERGY_2_PLAYER</removeItem>
 				<removeItem>FOCUS_2</removeItem>
@@ -3410,7 +3410,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_FOCUS_ENERGY_2"/>
 				<item_modify>
-					<item type="scrap" min="-100" max="-100"/>
+					<item type="scrap" min="-50" max="-50"/>
 				</item_modify>
 				<removeItem>ENERGY_2</removeItem>
 				<removeItem>FOCUS_2</removeItem>
@@ -3437,7 +3437,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_FOCUS_ENERGY_3"/>
 				<item_modify>
-					<item type="scrap" min="-100" max="-100"/>
+					<item type="scrap" min="-60" max="-60"/>
 				</item_modify>
 				<removeItem>ENERGY_3</removeItem>
 				<removeItem>FOCUS_3</removeItem>
@@ -3464,7 +3464,7 @@
 	      <text>Proceed with crafting?</text>
 	      <weapon name="FM_FOCUS_ENERGY_CONS"/>
 	      <item_modify>
-		      <item type="scrap" min="-70" max="-70"/>
+		      <item type="scrap" min="-50" max="-50"/>
 	      </item_modify>
 	      <removeItem>FOCUS_1</removeItem>
 	      <removeItem>ENERGY_CONSERVATIVE</removeItem>
@@ -3491,7 +3491,7 @@
 	      <text>Proceed with crafting?</text>
 	      <weapon name="FM_FOCUS_ADAPT"/>
 	      <item_modify>
-		      <item type="scrap" min="-130" max="-130"/>
+		      <item type="scrap" min="-50" max="-50"/>
 	      </item_modify>
 	      <removeItem>FOCUS_CHAIN</removeItem>
 	      <removeItem>BEAM_ADAPT</removeItem>
@@ -3538,7 +3538,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_BEAM_ION_PIERCE"/>
 				<item_modify>
-					<item type="scrap" min="-100" max="-100"/>
+					<item type="scrap" min="-60" max="-60"/>
 				</item_modify>
 				<removeItem>ION_2</removeItem>
 				<removeItem>BEAM_BREACH</removeItem>
@@ -3566,7 +3566,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_BEAM_ETERNITY"/>
 				<item_modify>
-					<item type="scrap" min="-100" max="-100"/>
+					<item type="scrap" min="-40" max="-40"/>
 				</item_modify>
 				<removeItem>BEAM_LONG</removeItem>
 				<removeItem>BEAM_SCYTHE</removeItem>
@@ -3596,7 +3596,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_SHOTGUN_ANOMALY_MEGA"/>
 				<item_modify>
-					<item type="scrap" min="-70" max="-70"/>
+					<item type="scrap" min="-45" max="-45"/>
 				</item_modify>
 				<removeItem>LASER_FROST_2_PLAYER</removeItem>
 				<removeItem>SHOTGUN_TOXIC_PLAYER</removeItem>
@@ -3614,7 +3614,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_SHOTGUN_ANOMALY_PLAYER"/>
 				<item_modify>
-					<item type="scrap" min="-70" max="-70"/>
+					<item type="scrap" min="-45" max="-45"/>
 				</item_modify>
 				<removeItem>LASER_FROST_2_PLAYER</removeItem>
 				<removeItem>SHOTGUN_TOXIC</removeItem>
@@ -3632,7 +3632,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_SHOTGUN_ANOMALY_PLAYER"/>
 				<item_modify>
-					<item type="scrap" min="-70" max="-70"/>
+					<item type="scrap" min="-45" max="-45"/>
 				</item_modify>
 				<removeItem>LASER_FROST_2</removeItem>
 				<removeItem>SHOTGUN_TOXIC_PLAYER</removeItem>
@@ -3650,7 +3650,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_SHOTGUN_ANOMALY"/>
 				<item_modify>
-					<item type="scrap" min="-70" max="-70"/>
+					<item type="scrap" min="-45" max="-45"/>
 				</item_modify>
 				<removeItem>LASER_FROST_2</removeItem>
 				<removeItem>SHOTGUN_TOXIC</removeItem>
@@ -3677,7 +3677,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_SHOTGUN_AETHER"/>
 				<item_modify>
-					<item type="scrap" min="-200" max="-200"/>
+					<item type="scrap" min="-60" max="-60"/>
 				</item_modify>
 				<removeItem>SHOTGUN_4</removeItem>
 				<choice hidden="true">
@@ -3703,7 +3703,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_SHOTGUN_CURSED"/>
 				<item_modify>
-					<item type="scrap" min="-130" max="-130"/>
+					<item type="scrap" min="-30" max="-30"/>
 				</item_modify>
 				<removeItem>SHOTGUN_2</removeItem>
 				<choice hidden="true">
@@ -4273,7 +4273,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_MISSILES_BURST_FIRE_MEGA"/>
 				<item_modify>
-					<item type="scrap" min="-150" max="-150"/>
+					<item type="scrap" min="-90" max="-90"/>
 				</item_modify>
 				<removeItem>MISSILES_4_PLAYER</removeItem>
 				<removeItem>MISSILES_FIRE_PLAYER</removeItem>
@@ -4291,7 +4291,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_MISSILES_BURST_FIRE_PLAYER"/>
 				<item_modify>
-					<item type="scrap" min="-150" max="-150"/>
+					<item type="scrap" min="-90" max="-90"/>
 				</item_modify>
 				<removeItem>MISSILES_4</removeItem>
 				<removeItem>MISSILES_FIRE_PLAYER</removeItem>
@@ -4309,7 +4309,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_MISSILES_BURST_FIRE_PLAYER"/>
 				<item_modify>
-					<item type="scrap" min="-150" max="-150"/>
+					<item type="scrap" min="-90" max="-90"/>
 				</item_modify>
 				<removeItem>MISSILES_4_PLAYER</removeItem>
 				<removeItem>MISSILES_FIRE</removeItem>
@@ -4327,7 +4327,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_MISSILES_BURST_FIRE"/>
 				<item_modify>
-					<item type="scrap" min="-150" max="-150"/>
+					<item type="scrap" min="-90" max="-90"/>
 				</item_modify>
 				<removeItem>MISSILES_4</removeItem>
 				<removeItem>MISSILES_FIRE</removeItem>
@@ -4354,7 +4354,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_MISSILES_CLOAK_STUN_MEGA"/>
 				<item_modify>
-					<item type="scrap" min="-100" max="-100"/>
+					<item type="scrap" min="-70" max="-70"/>
 				</item_modify>
 				<removeItem>ENERGY_STUN_PLAYER</removeItem>
 				<removeItem>MISSILES_CLOAK_PLAYER</removeItem>
@@ -4372,7 +4372,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_MISSILES_CLOAK_STUN_PLAYER"/>
 				<item_modify>
-					<item type="scrap" min="-100" max="-100"/>
+					<item type="scrap" min="-70" max="-70"/>
 				</item_modify>
 				<removeItem>ENERGY_STUN_PLAYER</removeItem>
 				<removeItem>MISSILES_CLOAK</removeItem>
@@ -4390,7 +4390,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_MISSILES_CLOAK_STUN_PLAYER"/>
 				<item_modify>
-					<item type="scrap" min="-100" max="-100"/>
+					<item type="scrap" min="-70" max="-70"/>
 				</item_modify>
 				<removeItem>ENERGY_STUN</removeItem>
 				<removeItem>MISSILES_CLOAK_PLAYER</removeItem>
@@ -4408,7 +4408,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_MISSILES_CLOAK_STUN"/>
 				<item_modify>
-					<item type="scrap" min="-100" max="-100"/>
+					<item type="scrap" min="-70" max="-70"/>
 				</item_modify>
 				<removeItem>ENERGY_STUN</removeItem>
 				<removeItem>MISSILES_CLOAK</removeItem>
@@ -4435,7 +4435,7 @@
 				<text id="text_CREATE_FM_BOMB_CRYSTAL_FIRE_1"/>
 				<weapon name="FM_BOMB_CRYSTAL_FIRE"/>
 				<item_modify>
-					<item type="scrap" min="-80" max="-80"/>
+					<item type="scrap" min="-60" max="-60"/>
 				</item_modify>
 				<choice hidden="true">
 					<text>Continue...</text>
@@ -4511,7 +4511,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_MINELAUNCHER_HULL"/>
 				<item_modify>
-					<item type="scrap" min="-80" max="-80"/>
+					<item type="scrap" min="-90" max="-90"/>
 				</item_modify>
 				<removeItem>LASER_HULL_2</removeItem>
 				<removeItem>MINELAUNCHER_BREACH</removeItem>
@@ -4565,7 +4565,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_ION_MISSILES"/>
 				<item_modify>
-					<item type="scrap" min="-80" max="-80"/>
+					<item type="scrap" min="-65" max="-65"/>
 				</item_modify>
 				<removeItem>MISSILES_3</removeItem>
 				<removeItem>ION_3</removeItem>
@@ -4593,7 +4593,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_IMPRISMENT_INDUCER"/>
 				<item_modify>
-					<item type="scrap" min="-130" max="-130"/>
+					<item type="scrap" min="-55" max="-55"/>
 				</item_modify>
 				<removeItem>BOMB_STUN</removeItem>
 				<removeItem>CRYSTAL_STUN</removeItem>
@@ -4611,7 +4611,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_IMPRISMENT_INDUCER"/>
 				<item_modify>
-					<item type="scrap" min="-130" max="-130"/>
+					<item type="scrap" min="-25" max="-25"/>
 				</item_modify>
 				<removeItem>BOMB_STUN</removeItem>
 				<removeItem>CRYSTAL_STUN_RED</removeItem>
@@ -4866,7 +4866,7 @@
 		<choice hidden="true" req="KERNEL_1_ELITE" blue="false">
 			<text>Allow your Leech to gorge on the Elite Kernel Launcher.</text>
 			<event>
-				<text> The leech looks almost...TOO eager.</text>
+				<text> The leech looks almost... TOO eager.</text>
 				<weapon name="FM_BEAM_BASILISK"/>
 				<choice hidden="true" req="KERNEL_1_ELITE" blue="false">
 					<text>The leech greedily devours the Elite Kernel Launcher.</text>
@@ -4897,7 +4897,7 @@
 		<choice hidden="true" req="KERNEL_2_ELITE" blue="false">
 			<text>Allow your Leech to gorge on the Burst Elite Kernel Launcher.</text>
 			<event>
-				<text>The leech looks almost...TOO eager.</text>
+				<text>The leech looks almost... TOO eager.</text>
 				<weapon name="FM_BEAM_BASILISK"/>
 				<choice hidden="true" req="KERNEL_2_ELITE" blue="false">
 					<text>The leech greedily devours the Burst Elite Kernel.</text>
@@ -4926,7 +4926,7 @@
 		<choice hidden="true" req="KERNEL_HEAVY_ELITE" blue="false">
 			<text>Allow your Leech to gorge on the Heavy Elite Kernel Launcher.</text>
 			<event>
-				<text>The leech looks almost...TOO eager.</text>
+				<text>The leech looks almost... TOO eager.</text>
 				<weapon name="FM_BEAM_BASILISK"/>
 				<choice hidden="true" req="KERNEL_HEAVY_ELITE" blue="false">
 					<text>The leech greedily devours the Heavy Elite Kernel Launcher.</text>
@@ -4955,7 +4955,7 @@
 		<choice hidden="true" req="KERNEL_HULL_ELITE" blue="false">
 			<text>Allow your Leech to gorge on the Anti-Hull Elite Kernel Launcher.</text>
 			<event>
-				<text>The leech looks almost...TOO eager.</text>
+				<text>The leech looks almost... TOO eager.</text>
 				<weapon name="FM_BEAM_BASILISK"/>
 				<choice hidden="true" req="KERNEL_HULL_ELITE" blue="false">
 					<text>The leech greedily devours the Anti-Hull Elite Kernel Launcher.</text>
@@ -4985,7 +4985,7 @@
 		<choice hidden="true" req="KERNEL_CHAIN_ELITE" blue="false">
 			<text>Allow your Leech to gorge on the Chain Elite Kernel Launcher.</text>
 			<event>
-				<text>The leech looks almost...TOO eager.</text>
+				<text>The leech looks almost... TOO eager.</text>
 				<weapon name="FM_BEAM_BASILISK"/>
 				<choice hidden="true" req="KERNEL_CHAIN_ELITE" blue="false">
 					<text>The leech greedily devours the Chain Elite Kernel Launcher.</text>
@@ -5014,7 +5014,7 @@
 		<choice hidden="true" req="KERNEL_CHARGE_ELITE" blue="false">
 			<text>Allow your Leech to gorge on the Charge Elite Kernel Launcher.</text>
 			<event>
-				<text>The leech looks almost...TOO eager.</text>
+				<text>The leech looks almost... TOO eager.</text>
 				<weapon name="FM_BEAM_BASILISK"/>
 				<choice hidden="true" req="KERNEL_CHARGE_ELITE" blue="false">
 					<text>The leech greedily devours the Charge Elite Kernel Launcher.</text>
@@ -5989,14 +5989,14 @@
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_CURA_DRONE">
 		<checkCargo/>
-		<text>Currently viewing the CURA Combat Drone.[Cost: 150~].</text>
+		<text>Currently viewing the CURA Combat Drone.[Cost: 110~].</text>
 		<choice hidden="false" req="FM_CURA_DRONE_LIST" blue="false">
 		<text>Craft the CURA Drone.</text>
 		<event>
 			<text>Proceed with crafting?</text>
 			<drone name="FM_CURA_DRONE"/>
 			<item_modify>
-				<item type="scrap" min="-150" max="-150"/>
+				<item type="scrap" min="-110" max="-110"/>
 			</item_modify>
 			<removeItem>MANNING</removeItem>
 			<queueEvent>FM_REMOVE_COMBAT_CONSERVATIVE</queueEvent><!--Removes one Conservative Combat drone of ANY kind (toggle mode)-->
