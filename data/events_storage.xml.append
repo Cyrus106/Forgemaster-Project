@@ -807,17 +807,20 @@
     </choice>
 
     <choice req="pilot" lvl="1" blue="false" hidden="true" max_group="9">
-      <text>Boarding / Battle Drones.</text>
+      <text>Boarding / Battle Drones. (coming soon)</text>
+      <event load="OPTION_INVALID"/><!--this will load instead of the above, remove next version-->
       <event load="STORAGE_CHECK_CREATE_DRONES_BATTLE_LOAD"/>
     </choice>
 
     <choice req="FM_COMBAT_DRONE_FORGE_LIST" lvl="0" blue="false" hidden="true" max_group="10">
-      <text>Combat Drones.</text>
+      <text>Combat Drones. (coming soon)</text>
+      <event load="OPTION_INVALID"/><!--this will load instead of the above, remove next version-->
       <event load="STORAGE_CHECK_CREATE_DRONES_COMBAT_LOAD"/>
     </choice>
 
     <choice req="FM_COMBAT_DRONE_FORGE_LIST" lvl="1" blue="true" hidden="true" max_group="10">
-      <text>Combat Drones.</text>
+      <text>Combat Drones. (coming soon)</text>
+      <event load="OPTION_INVALID"/><!--this will load instead of the above, remove next version-->
       <event load="STORAGE_CHECK_CREATE_DRONES_COMBAT_LOAD"/>
     </choice>
 

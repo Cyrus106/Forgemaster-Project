@@ -1435,12 +1435,14 @@
 		</choice>
 		<!--COMBAT DRONE CATEGORY-->
 		<choice req="FM_COMBAT_DRONE_FORGE_LIST" lvl="1"  max_group="9" hidden="true">
-			<text>Review Combat Drone List</text>
+			<text>Review Combat Drone List (coming soon)</text>
+			<event load="OPTION_INVALID"/><!--this will load instead of the above, remove next version-->
 			<event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
 		</choice>
 
 		<choice req="FM_COMBAT_DRONE_FORGE_LIST" lvl="0" max_group="9" hidden="true" blue="false">
-			<text>Review Combat Drone List</text>
+			<text>Review Combat Drone List (coming soon)</text>
+			<event load="OPTION_INVALID"/><!--this will load instead of the above, remove next version-->
 			<event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
 		</choice>
 
