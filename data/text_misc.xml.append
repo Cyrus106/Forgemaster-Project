@@ -73,68 +73,68 @@ FM: A COMPONENT for forging the Terra Nova Pinpoint[100~], alongside the other C
 
 <text name="fm_tip_frost_1">Tip: Frost lasers lock down rooms that they hit, making them valuable in impeding enemy crew movements.
 
-FM: A COMPONENT for forging the TLALOC Laser[100~], alongside the other COMPONENT Irradiation Laser. </text>
+FM: A COMPONENT for forging the TLALOC Laser[40~], alongside the other COMPONENT Irradiation Laser. </text>
 
 <text name="fm_tip_laser_bio">Tip: Radiation weapons do bursts of heavy crew damage, have minor breach chances, and weaken enemy crew. Enemies hit will move and repair 66% slower, and will be stunned 75% longer.
 
-FM: A COMPONENT for forging the TLALOC Laser[100~], alongside the other COMPONENT Frost Laser I.
+FM: A COMPONENT for forging the TLALOC Laser[40~], alongside the other COMPONENT Frost Laser I.
 
-FM: A COMPONENT for forging the Rebel Ripper Laser[100~], alongside the other COMPONENT Heavy Laser I.</text>
+FM: A COMPONENT for forging the Rebel Ripper Laser[50~], alongside the other COMPONENT Heavy Laser I.</text>
 
 
 <!--    HELLFLASH -->
 
 <text name="fm_tip_laser_fire">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
 
-FM: A COMPONENT for forging the Hellflash Gatling Gun[150~], alongside the other COMPONENT Vulcan.
+FM: A COMPONENT for forging the Hellflash Gatling Gun[30~], alongside the other COMPONENT Vulcan.
 
-FM: A COMPONENT for forging the Dazhbog Flamethrower[70~], alongside the other COMPONENT called [REDACTED].</text>
+FM: A COMPONENT for forging the Dazhbog Flamethrower[50~], alongside the other COMPONENT called [REDACTED].</text>
 
 <text name="fm_tip_laser_vulcan">Tip: Chain lasers decrease their cooldown every time they fire. Check the green lights on the weapon to see how many times it has fired.
 
-FM: A COMPONENT for forging the Hellflash Gatling Gun[150~], alongside the other COMPONENT Fire Starter.</text>
+FM: A COMPONENT for forging the Hellflash Gatling Gun[30~], alongside the other COMPONENT Fire Starter.</text>
 
 <!--    DAZHBOG -->
 
 <text name="fm_tip_laser_fire">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
 
-FM: A COMPONENT for forging the Dazhbog Flamethrower[70~], alongside the other COMPONENT called [REDACTED].
+FM: A COMPONENT for forging the Dazhbog Flamethrower[50~], alongside the other COMPONENT called [REDACTED].
 
-FM: A COMPONENT for forging the Hellflash Gatling Gun[150~], alongside the other COMPONENT Vulcan.</text>
+FM: A COMPONENT for forging the Hellflash Gatling Gun[30~], alongside the other COMPONENT Vulcan.</text>
 
 <!--    DECAYSER -->
 
 <text name="fm_tip_decayser">Tip: Phasers pierce additional shield layers. They will do ion damage for the first shield layer pierced, plus additional damage to whatever system they hit.
 
-FM: A COMPONENT for forging the Decayser[70~], alongside the other COMPONENT called [REDACTED].</text>
+FM: A COMPONENT for forging the Decayser[55~], alongside the other COMPONENT called [REDACTED].</text>
 
 <!--    PHOTON I -->
 
 <text name="fm_tip_laser_light">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
 
-FM: A COMPONENT for forging the Photon I[100~], alongside the other COMPONENT Particle Accelerator MK I.
-FM: A COMPONENT for forging the MFK Kestrel Drone, alongside the other COMPONENT Combat Drone MK I.</text>
+FM: A COMPONENT for forging the Photon I[25~], alongside the other COMPONENT Particle Accelerator MK I.
+<!--FM: A COMPONENT for forging the MFK Kestrel Drone, alongside the other COMPONENT Combat Drone MK I.</text>-->
 
 <text name="fm_tip_laser_particle">Tip: Particle accelerators fire in a radius much like Flak. Each projectile does small system damage and has a reasonable fire chance, which can be devastating against its target.
 
-FM: A COMPONENT for forging the Photon I[100~], alongside the other COMPONENT Light Laser I.</text>
+FM: A COMPONENT for forging the Photon I[25~], alongside the other COMPONENT Light Laser I.</text>
 
 
 <!--    PHOTON II -->
 
 <text name="fm_tip_laser_light_2">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
 
-FM: A COMPONENT for forging the Photon II[120~], alongside the other COMPONENT Particle Accelerator MK II.</text>
+FM: A COMPONENT for forging the Photon II[50~], alongside the other COMPONENT Particle Accelerator MK II.</text>
 
 <text name="fm_tip_laser_particle_2">Tip: Particle accelerators fire in a radius much like Flak. Each projectile does small system damage and has a reasonable fire chance, which can be devastating against its target.
 
-FM: A COMPONENT for forging the Photon II[120~], alongside the other COMPONENT Light Laser II.</text>
+FM: A COMPONENT for forging the Photon II[50~], alongside the other COMPONENT Light Laser II.</text>
 
 <!--    REBEL RIPPER -->
 
 <text name="fm_tip_laser_heavy_1">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
 
-A COMPONENT for forging the Rebel Ripper Laser[100~], alongside the other COMPONENT Irradiation Laser.</text>
+A COMPONENT for forging the Rebel Ripper Laser[50~], alongside the other COMPONENT Irradiation Laser.</text>
 
 
 
@@ -142,11 +142,11 @@ A COMPONENT for forging the Rebel Ripper Laser[100~], alongside the other COMPON
 
 <text name="fm_tip_bomb_ion">Tip: Bombs teleport past shields and defense drones to land directly on the ship. Like missiles, they cost one missile to launch. They never damage hull, but can be effective at disrupting crew and systems. You can even launch them at boarders on your own ship.
 
-FM: A COMPONENT for forging the Absolution[280~, 15}], alongside the other COMPONENT Pierce Laser MK II.</text>
+FM: A COMPONENT for forging the Absolution[100~, 15}], alongside the other COMPONENT Pierce Laser MK II.</text>
 
 <text name="fm_tip_laser_pierce_2">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
 
-FM: A COMPONENT for forging the Absolution[280~, 15}], alongside the other COMPONENT Ion Bomb.</text>
+FM: A COMPONENT for forging the Absolution[100~, 15}], alongside the other COMPONENT Ion Bomb.</text>
 
 
 <!--    ION CRAFT TIPS -->
@@ -155,78 +155,79 @@ FM: A COMPONENT for forging the Absolution[280~, 15}], alongside the other COMPO
 
 <text name="fm_tip_ion_fire">Tip: Fire ions act much like any ordinary ion, but start fires in the room they hit. If they hit while the shields are still up, they will not start a fire.
 
-FM: A COMPONENT for forging the Cerberus Ion[100~], alongside the other COMPONENT Tri-Ion.</text>
+FM: A COMPONENT for forging the Cerberus Ion[35~], alongside the other COMPONENT Tri-Ion.</text>
 
 <text name="fm_tip_ion_tri">Tip: For every one point of ion damage, one power bar is removed from the target system and it is then locked for 5 seconds, preventing re-powering. If an ion weapon hits shields, the damage is automatically applied to the Shield System.
 
-FM: A COMPONENT for forging the Cerberus Ion[100~], alongside the other COMPONENT Fire Ion.</text>
+FM: A COMPONENT for forging the Cerberus Ion[35~], alongside the other COMPONENT Fire Ion.</text>
 
 <!--    TARANIS -->
 
 <text name="fm_tip_hull_energy">Tip: Energy weapons are very versatile as they can do both ion and hull damage, but do not damage crew or systems.
 
-FM: A COMPONENT for forging the TARANIS Disc Launcher[130~], alongside the other COMPONENTS Geb, Osiris, Sekhmet, and Anubis. You only need 1 other component.
+FM: A COMPONENT for forging the TARANIS Disc Launcher[50~], alongside the other COMPONENTS Geb, Osiris, Sekhmet, and Anubis. You only need 1 other component.
 
-FM: A COMPONENT for forging the Pulsedeep Cannon[80~], alongside the other COMPONENT Heavy Ion.</text>
+FM: A COMPONENT for forging the Pulsedeep Cannon[50~], alongside the other COMPONENT Heavy Ion.</text>
 
 <text name="fm_tip_minelauncher_1">Tip: Mine Launchers have reasonable status effect chances and fire massive bursts of slow moving mines which pierce all shields.
 
-FM: A COMPONENT for forging the TARANIS Disc Launcher[130~], alongside the other COMPONENT Heavy Energy.</text>
+FM: A COMPONENT for forging the TARANIS Disc Launcher[50~], alongside the other COMPONENT Heavy Energy.</text>
 
 <text name="fm_tip_minelauncher_2">Tip: Mine Launchers have reasonable status effect chances and fire massive bursts of slow moving mines which pierce all shields.
 
-FM: A COMPONENT for forging the TARANIS Disc Launcher[130~], alongside the other COMPONENT Heavy Energy.
+FM: A COMPONENT for forging the TARANIS Disc Launcher[50~], alongside the other COMPONENT Heavy Energy.
 
 FM: A COMPONENT for forging the 'Dirty Bomb' Mine Launcher[140~], alongside the other COMPONENT Asclepius Missile.</text>
 
 <text name="fm_tip_minelauncher_fire">Tip: Mine Launchers have reasonable status effect chances and fire massive bursts of slow moving mines which pierce all shields.
 
-FM: A COMPONENT for forging the TARANIS Disc Launcher[130~], alongside the other COMPONENT Heavy Energy.</text>
+FM: A COMPONENT for forging the TARANIS Disc Launcher[50~], alongside the other COMPONENT Heavy Energy.</text>
 
-<text name="fm_tip_minelauncher_stun">Tip: FM: A COMPONENT for forging the TARANIS Disc Launcher[130~], alongside the other COMPONENT Heavy Energy.</text>
+<text name="fm_tip_minelauncher_stun">Tip: FM: A COMPONENT for forging the TARANIS Disc Launcher[50~], alongside the other COMPONENT Heavy Energy.</text>
 
 <!--    VESTA -->
 
 <text name="fm_tip_laser_vulcan">Tip: Chain lasers decrease their cooldown every time they fire. Check the green lights on the weapon to see how many times it has fired.
 
-FM: A COMPONENT for forging the Vesta[170-200~], alongside the other COMPONENT Ion Charger I OR Ion Charger II.
+FM: A COMPONENT for forging the Vesta[30-60~], alongside the other COMPONENT Ion Charger I OR Ion Charger II.
 
-FM: A COMPONENT for forging the Hellflash Gatling Gun[150~], alongside the other COMPONENT Fire Starter.</text>
+FM: A COMPONENT for forging the Hellflash Gatling Gun[30~], alongside the other COMPONENT Fire Starter.</text>
 
 <text name="fm_tip_ion_charger_1">Tip: Charge weapons can be charged multiple times to generate more firepower. You can save time and fire the weapon prematurely but it will have fewer shots ready as a result.
 
-FM: A COMPONENT for forging the Vesta[170-200~], alongside the other COMPONENT Vulcan.</text>
+FM: A COMPONENT for forging the Vesta[30-60~], alongside the other COMPONENT Vulcan.</text>
 
 <text name="fm_tip_ion_charger_2">Tip: Charge weapons can be charged multiple times to generate more firepower. You can save time and fire the weapon prematurely but it will have fewer shots ready as a result.
 
-FM: A COMPONENT for forging the Vesta[170-200~], alongside the other COMPONENT Vulcan.</text>
+FM: A COMPONENT for forging the Vesta[30-60~], alongside the other COMPONENT Vulcan.</text>
 
 <!--   EXIDIA -->
 <text name="fm_tip_shotgun_3">Tip: Flak weapons target an area instead of a single room. This loss of accuracy means more firepower and speed than their laser counterparts.
 
-FM: A COMPONENT for forging the Exidia Energy Diffuser[140~], alongside the other COMPONENT, ANY Energy Charger.</text>
+FM: A COMPONENT for forging the Exidia Energy Diffuser[80~], alongside the other COMPONENT, Energy Charger.</text>
 
 <text name="fm_tip_energy_charger">Tip: Charge weapons can be charged multiple times to generate more firepower.
 
-FM: A COMPONENT for forging the Exidia Energy Diffuser[140~], alongside the other COMPONENT, Flak III.</text>
+FM: A COMPONENT for forging the Exidia Energy Diffuser[80~], alongside the other COMPONENT, Flak III.
+FM: A COMPONENT for forging the Railblender[140~], alongside the other COMPONENT, Flak Charger.</text>
 
 <!--   PULSE -->
 <text name="fm_tip_laser_1">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
 
-FM: A COMPONENT for forging the Pulse Laser I [105~], alongside the other COMPONENT Energy I.</text>
+FM: A COMPONENT for forging the Pulse Laser I [40~], alongside the other COMPONENT Energy I.</text>
 
 <text name="fm_tip_laser_2">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
 
-FM: A COMPONENT for forging the Pulse Laser II [130~], alongside the other COMPONENT Energy II.
-FM: A COMPONENT for forging the Kestrel Drone alongside the other COMPONENT Combat Drone MK I.</text>
+FM: A COMPONENT for forging the Pulse Laser II [50~], alongside the other COMPONENT Energy II.
+<!--FM: A COMPONENT for forging the Kestrel Drone alongside the other COMPONENT Combat Drone MK I.</text>-->
 
 <text name="fm_tip_laser_3">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
 
-FM: A COMPONENT for forging the Pulse Laser III [155~], alongside the other COMPONENT Energy III.</text>
+FM: A COMPONENT for forging the Pulse Laser III [60~], alongside the other COMPONENT Energy III.</text>
 
 <text name="fm_tip_ion_heavy">Tip: For every one point of ion damage, one power bar is removed from the target system and it is then locked for 5 seconds, preventing re-powering. If an ion weapon hits shields, the damage is automatically applied to the Shield System.
 
-FM: A COMPONENT for forging the Pulsedeep Cannon[80~], alongside the other COMPONENT Heavy Energy.</text>
+FM: A COMPONENT for forging the Pulsedeep Cannon[50~], alongside the other COMPONENT Heavy Energy.</text>
 
 
 <!--    BEAM CRAFT TIPS -->
@@ -235,38 +236,38 @@ FM: A COMPONENT for forging the Pulsedeep Cannon[80~], alongside the other COMPO
 
 <text name="fm_tip_beam_mining">Tip: The Mining Beam pierces one shield layer, which means it will not lose any damage for the first shield bubble it pierces. Each layer after that will reduce damage by one.
 
-FM: A COMPONENT for forging the Ishimura Beam[250~], alongside the other COMPONENT Pike II.</text>
+FM: A COMPONENT for forging the Ishimura Beam[120~], alongside the other COMPONENT Pike II.</text>
 
 <text name="fm_tip_beam_long_2">Tip: For every shield bar on the enemy, a beam's damage is reduced by one. For example, a three damage beam against two shield bars will cause one damage in every room it hits.
 
-FM: A COMPONENT for forging the Ishimura Beam[250~], alongside the other COMPONENT Mining Beam.</text>
+FM: A COMPONENT for forging the Ishimura Beam[120~], alongside the other COMPONENT Mining Beam.</text>
 
 <!--    EARSPOON -->
 
 <text name="fm_tip_beam_pierce">Tip: This Phase Beam pierces two shield layers, which means it will not lose any damage for the first two shield bubbles it pierces. Each layer after that will reduce damage by one.
 
-FM: A COMPONENT for forging the Earspoon Beam[120~], alongside the other COMPONENT Particle Beam.</text>
+FM: A COMPONENT for forging the Earspoon Beam[35~], alongside the other COMPONENT Particle Beam.</text>
 
 <text name="fm_tip_beam_particle">Tip: The Particle Beam does no hull or crew damage, nor can it pierce shields. However, once shields are down it can do heavy damage to systems and light fires.
 
-FM: A COMPONENT for forging the Earspoon Beam[120~], alongside the other COMPONENT 'Guisarme' Beam.</text>
+FM: A COMPONENT for forging the Earspoon Beam[35~], alongside the other COMPONENT 'Guisarme' Beam.</text>
 
 <!--    MURDEROUS -->
 
 <text name="fm_tip_beam_guillotine">Tip: This Beam does both crew and system damage, making it a very versatile weapon.
 
-FM: A COMPONENT for forging something Murderous[200~, 20}, 15|], alongside the other COMPONENT called [REDACTED].</text>
+FM: A COMPONENT for forging something Murderous[120~, 2}, 5|], alongside the other COMPONENT, [REDACTED].</text>
 
 
 <!--    VALEFOR -->
 
 <text name="fm_tip_bomb_1">Tip: Bombs teleport past shields and defense drones to land directly on the ship. Like missiles, they cost one missile to launch. They never damage hull, but can be effective at disrupting crew and systems. You can even launch them at boarders on your own ship.
 
-FM: A COMPONENT for forging the Valefor Explosion Beam[125~], alongside the other COMPONENT Halberd Beam.</text>
+FM: A COMPONENT for forging the Valefor Explosion Beam[75~], alongside the other COMPONENT Halberd Beam.</text>
 
 <text name="fm_tip_beam_2">Tip: For every shield bar on the enemy, a beam's damage is reduced by one. For example, a three damage beam against two shield bars will cause one damage in every room it hits.
 
-FM: A COMPONENT for forging the Valefor Explosion Beam[125~], alongside the other COMPONENT Bomb Launcher.</text>
+FM: A COMPONENT for forging the Valefor Explosion Beam[75~], alongside the other COMPONENT Bomb Launcher.</text>
 
 <!--    KONTOS -->
 
@@ -286,11 +287,11 @@ FM: A COMPONENT for forging the Kontos Ion Beam[100~], alongside the other COMPO
 
 <text name="fm_tip_beam_long">Tip: For every shield bar on the enemy, a beam's damage is reduced by one. For example, a three damage beam against two shield bars will cause one damage in every room it hits.
 
-FM: A COMPONENT for forging the 'Eternity' Beam[100~], alongside the other COMPONENT Scythe Beam.</text>
+FM: A COMPONENT for forging the 'Eternity' Beam[40~], alongside the other COMPONENT Scythe Beam.</text>
 
 <text name="fm_tip_beam_scythe">Tip: For every shield bar on the enemy, a beam's damage is reduced by one. For example, a three damage beam against two shield bars will cause one damage in every room it hits.
 
-FM: A COMPONENT for forging the 'Eternity' Beam[100~], alongside the other COMPONENT Pike Beam.</text>
+FM: A COMPONENT for forging the 'Eternity' Beam[40~], alongside the other COMPONENT Pike Beam.</text>
 
 <!--    PINPOINT CRAFT TIPS -->
 
@@ -298,7 +299,7 @@ FM: A COMPONENT for forging the 'Eternity' Beam[100~], alongside the other COMPO
 
 <text name="fm_tip_missiles_3">Tip: Heavy missiles always carry hull-bust attributes, and can be used to take down critical systems when necessary.
 
-FM: A COMPONENT for forging the Parazonium Focus[100~], alongside the other COMPONENT 'Cinquedea' Pinpoint.
+FM: A COMPONENT for forging the Parazonium Focus[70~], alongside the other COMPONENT 'Cinquedea' Pinpoint.
 
 FM: A COMPONENT for forging the 'Debilitatum' Heavy Missiles[80~], alongside the other COMPONENT Ion Barrage MK II.</text>
 
@@ -306,47 +307,58 @@ FM: A COMPONENT for forging the 'Debilitatum' Heavy Missiles[80~], alongside the
 
 FM: A COMPONENT for forging the Parazonium Focus[100~], alongside the other COMPONENT 'Hermes' Heavy Missiles.</text>
 
-<!--    EBONY -->
+<!-- EBONY + MAPLE -->
 
 <text name="fm_tip_energy_1">Tip: Energy weapons are very versatile as they can do both ion and hull damage, but do not damage crew or systems.
 
-FM: A COMPONENT for forging the Ebony Energy Pinpoint[70~], alongside the other COMPONENT 'Dirk' Pinpoint.
+FM: A COMPONENT for forging the Ebony Energy Pinpoint[40~], alongside the other COMPONENT 'Dirk' Pinpoint.
 
-FM: A COMPONENT for forging the Pulse Laser I [105~], alongside the other COMPONENT Burst Laser I.</text>
+FM: A COMPONENT for forging the Pulse Laser I [40~], alongside the other COMPONENT Burst Laser I.</text>
 
 <text name="fm_tip_focus_1">Tip: Pinpoints do higher damage than Beams but have shorter trails. Just like Beams, their damage is reduced by 1 for each shield layer it pierces.
 
-FM: A COMPONENT for forging the Ebony Energy Pinpoint[70~], alongside the other COMPONENT Energy Cannon I.</text>
+FM: A COMPONENT for forging the Ebony Energy Pinpoint[40~], alongside the other COMPONENT Energy Cannon I.
+FM: A COMPONENT for forging the Maple Conservative Energy Pinpoint[50~], alongside the other COMPONENT Conservative Energy.</text>
+	
+<!--  OMIYARI -->
+	
+<text name="fm_tip_beam_adapt">Tip: Adaptive weapons increase in damage each time they are fired. The damage increase amount and limit depends on the weapon.
+	
+FM: A COMPONENT for forging the Omiyari Adaptive Pinpoint[50~], alongside the other COMPONENT Cinquedea Pinpoint.</text>
+	
+<text name="fm_tip_focus_chain">Tip: Chain beams decrease their cooldown every time they fire. Check the green lights on the weapon to see how many times it has fired.
+	
+FM: A COMPONENT for forging the Omiyari Adaptive Pinpoint[50~], alongside the other COMPONENT Suyari Adaptive Beam.</text>
 
 <!--    HEMLOCK + TERRA NOVA  -->
 
 <text name="fm_tip_energy_2">Tip: Energy weapons are very versatile as they can do both ion and hull damage, but do not damage crew or systems.
 
-FM: A COMPONENT for forging the Hemlock Energy Pinpoint[100~], alongside the other COMPONENT 'Misericorde' Pinpoint.
+FM: A COMPONENT for forging the Hemlock Energy Pinpoint[50~], alongside the other COMPONENT 'Misericorde' Pinpoint.
 
-FM: A COMPONENT for forging the Pulse Laser II [130~], alongside the other COMPONENT Burst Laser II.</text>
+FM: A COMPONENT for forging the Pulse Laser II [50~], alongside the other COMPONENT Burst Laser II.</text>
 
 <text name="fm_tip_focus_2">Tip: Pinpoints do higher damage than Beams but have shorter trails. Just like Beams, their damage is reduced by 1 for each shield layer it pierces.
 
-FM: A COMPONENT for forging the Hemlock Energy Pinpoint[100~], alongside the other COMPONENT Energy Cannon II.
+FM: A COMPONENT for forging the Hemlock Energy Pinpoint[60~], alongside the other COMPONENT Energy Cannon II.
 
-FM: A COMPONENT for forging the Terra Nova Pinpoint[100~], alongside the other COMPONENT Ishimura Beam.</text>
+FM: A COMPONENT for forging the Terra Nova Pinpoint[70~], alongside the other COMPONENT Ishimura Beam.</text>
 
 <!--    GREEN HEART + TERRA NOVA -->
 
 <text name="fm_tip_energy_3">Tip: Energy weapons are very versatile as they can do both ion and hull damage, but do not damage crew or systems.
 
-FM: A COMPONENT for forging the Green Heart Energy Pinpoint[100~], alongside the other COMPONENT 'Stiletto' Pinpoint.
+FM: A COMPONENT for forging the Green Heart Energy Pinpoint[60~], alongside the other COMPONENT 'Stiletto' Pinpoint.
 
-FM: A COMPONENT for forging the Pulse Laser III [155~], alongside the other COMPONENT Burst Laser III.</text>
+FM: A COMPONENT for forging the Pulse Laser III [60~], alongside the other COMPONENT Burst Laser III.</text>
 
 <text name="fm_tip_focus_3">Tip: Pinpoints do higher damage than Beams but have shorter trails. Just like Beams, their damage is reduced by 1 for each shield layer it pierces.
 
-FM: A COMPONENT for forging the Green Heart Energy Pinpoint[100~], alongside the other COMPONENT Energy Cannon III.
+FM: A COMPONENT for forging the Green Heart Energy Pinpoint[60~], alongside the other COMPONENT Energy Cannon III.
 
-FM: A COMPONENT for forging the Terra Nova Pinpoint[100~], alongside the other COMPONENT Ishimura Beam.
+FM: A COMPONENT for forging the Terra Nova Pinpoint[50~], alongside the other COMPONENT Ishimura Beam.
 
-FM: A COMPONENT for forging the Ishimura Drone alongside the other COMPONENT Amp Pinpoint Drone.</text>
+<!--FM: A COMPONENT for forging the Ishimura Drone alongside the other COMPONENT Amp Pinpoint Drone.</text>-->
 
 
 <!--    FLAK CRAFT TIPS -->
@@ -355,17 +367,17 @@ FM: A COMPONENT for forging the Ishimura Drone alongside the other COMPONENT Amp
 
 <text name="fm_tip_shotgun_4">Tip: Flak weapons target an area instead of a single room. This loss of accuracy means more firepower and speed than their laser counterparts.
 
-FM: A COMPONENT for forging the [REDACTED] Flak[200~], alongside some forgotten technology.</text>
+FM: A COMPONENT for forging the Aether Flak[60~], alongside some forgotten technology.</text>
 
 <!--    KHEIMON -->
 
 <text name="fm_tip_shotgun_toxic">Tip: Flak weapons target an area instead of a single room. This loss of accuracy means more firepower and speed than their laser counterparts.
 
-FM: A COMPONENT for forging the KHEIMON Anomaly Launcher[70~], alongside the other COMPONENT Frost Laser II.</text>
+FM: A COMPONENT for forging the KHEIMON Anomaly Launcher[45~], alongside the other COMPONENT Frost Laser II.</text>
 
 <text name="fm_tip_laser_frost_2">Tip: Frost lasers lock down rooms that they hit, making them valuable in impeding enemy crew movements.
 
-FM: A COMPONENT for forging the KHEIMON Anomaly Launcher[70~], alongside the other COMPONENT Irradiation Flak.</text>
+FM: A COMPONENT for forging the KHEIMON Anomaly Launcher[45~], alongside the other COMPONENT Irradiation Flak.</text>
 
 <!--    BRONZE FLAK -->
 
@@ -373,8 +385,13 @@ FM: A COMPONENT for forging the KHEIMON Anomaly Launcher[70~], alongside the oth
 
 FM: A COMPONENT for forging the Bronze Metal Flak[10~], alongside the other COMPONENT, ANY Crystal weapon.
 
-FM: A COMPONENT for forging the Carnifex Flak[130~], alongside the other COMPONENT, Lanius and Clonebay 3.</text>
+FM: A COMPONENT for forging the Carnifex Flak[30~], alongside the other COMPONENT, Lanius and Clonebay 3.</text>
+	
+<!--    RAILBLENDER -->
 
+<text name="fm_tip_shotgun_charge">Charge weapons can be charged multiple times to generate more firepower. You can save time and fire the weapon pre-maturely, but it will have fewer shots ready as a result.
+
+FM: A COMPONENT for forging the Railblender[140~], alongside the other COMPONENT, Energy Charger.</text>
 
 <!--    APPEND TO ALLLLL CRYSTAL WEAPONS -->
 <text name="fm_tip_crystal">Tip: Crystal weapons pierce a single layer of shields. Only level 2 shields and higher can stop them.
@@ -386,21 +403,21 @@ FM: A COMPONENT for forging the Bronze Metal Flak[10~], alongside the other COMP
 <text name="fm_tip_crystal_shotgun">Tip: Crystal weapons pierce a single layer of shields. Only level 2 shields and higher can stop them.
 
 FM: A COMPONENT for forging the Bronze Metal Flak[10~], alongside the other COMPONENT Flak II.
-FM: A COMPONENT for forging the Crystal Drone, alongside the other COMPONENT Assault Drone.</text>
+<!--FM: A COMPONENT for forging the Crystal Drone, alongside the other COMPONENT Assault Drone.</text>-->
 
 <text name="fm_tip_crystal_heavy_1">Tip: Crystal weapons pierce a single layer of shields. Only level 2 shields and higher can stop them.
 
 FM: A COMPONENT for forging the Bronze Metal Flak[10~], alongside the other COMPONENT Flak II.
-FM: A COMPONENT for forging the Amber Drone, alongside the other COMPONENT Assault Drone.</text>
+<!--FM: A COMPONENT for forging the Amber Drone, alongside the other COMPONENT Assault Drone.</text>-->
 <text name="fm_tip_crystal_stun">Tip: Crystal weapons pierce a single layer of shields. Only level 2 shields and higher can stop them.
 
 FM: A COMPONENT for forging the Bronze Metal Flak[10~], alongside the other COMPONENT Flak II.
-FM: A COMPONENT for forging the Imprisment Inducer[130~], alongside the other COMPONENT Stun Bomb.</text>
+FM: A COMPONENT for forging the Imprisment Inducer[55~], alongside the other COMPONENT Stun Bomb.</text>
 
 <text name="fm_tip_crystal_stun_red">Tip: Elite Crystal weaponry are stronger variants of Crystal weapons. They can pierce through two layers of shields, and apply a lockdown to targeted rooms.
 
 FM: A COMPONENT for forging the Bronze Metal Flak[10~], alongside the other COMPONENT Flak II.
-FM: A COMPONENT for forging the Imprisment Inducer[130~], alongside the other COMPONENT Stun Bomb.</text>
+FM: A COMPONENT for forging the Imprisment Inducer[25~], alongside the other COMPONENT Stun Bomb.</text>
 
 <!--    EXPLOSIVE CRAFT TIPS -->
 
@@ -408,27 +425,27 @@ FM: A COMPONENT for forging the Imprisment Inducer[130~], alongside the other CO
 
 <text name="fm_tip_missiles_4">Tip: Heavy missiles always carry hull-bust attributes, and can be used to take down critical systems when necessary.
 
-FM: A COMPONENT for forging the 'Hellfire' Burst Missiles[150~], alongside the other COMPONENT 'Hades' Heavy Missiles.</text>
+FM: A COMPONENT for forging the 'Hellfire' Burst Missiles[90~], alongside the other COMPONENT 'Hades' Heavy Missiles.</text>
 
 <text name="fm_tip_missiles_fire">Tip: Missiles will ignore all enemy shields, but cost one missile to launch. Enemy defense drones will shoot down incoming missiles.
 
-FM: A COMPONENT for forging the 'Hellfire' Burst Missiles[150~], alongside the other COMPONENT 'Ares' Heavy Missiles.</text>
+FM: A COMPONENT for forging the 'Hellfire' Burst Missiles[90~], alongside the other COMPONENT 'Ares' Heavy Missiles.</text>
 
 
 <!--    CHERNOBOG -->
 
-<text name="fm_tip_missile_cloak">FM: A COMPONENT for forging the 'Chernobog' Missiles[100~], alongside the other COMPONENT Energy Stunner.</text>
+<text name="fm_tip_missile_cloak">FM: A COMPONENT for forging the 'Chernobog' Missiles[7-~], alongside the other COMPONENT Energy Stunner.</text>
 
 <text name="fm_tip_energy_stun">Tip: Energy weapons are very versatile as they can do both ion and hull damage, but do not damage crew or systems.
 
-FM: A COMPONENT for forging the 'Chernobog' Missiles[100~], alongside the other COMPONENT 'Nyx' Missile.</text>
+FM: A COMPONENT for forging the 'Chernobog' Missiles[70~], alongside the other COMPONENT 'Nyx' Missile.</text>
 
 
 <!--    OVENATOR -->
 
 <text name="fm_tip_bomb_fire">Tip: Bombs teleport past shields and defense drones to land directly on the ship. Cost 1 missile, and can be launched at your ship as well.
 
-FM: A COMPONENT for forging the Project #7[80~], alongside the other COMPONENT Crystal Lockdown Bomb.</text>
+FM: A COMPONENT for forging the Project #7[60~], alongside the other COMPONENT Crystal Lockdown Bomb.</text>
 
 <!--    LIFE R.O -->
 
@@ -439,17 +456,17 @@ FM: A COMPONENT for forging Project #22[80~], alongside the other COMPONENT Crys
 <text name="fm_tip_bomb_lock">Tip: Bombs teleport past shields and defense drones to land directly on the ship. Cost 1 missile, and can be launched at your ship as well.
 
 FM: A COMPONENT for forging the Project #22[80~], alongside the other COMPONENT Irradtion Bomb.
-FM: A COMPONENT for forging the Project #7[80~], alongside the other COMPONENT Fire Bomb.</text>
+FM: A COMPONENT for forging the Project #7[60~], alongside the other COMPONENT Fire Bomb.</text>
 
 <!--    Ba-Pef -->
 
 <text name="fm_tip_laser_hull_2">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
 
-FM: A COMPONENT for forging the 'Ba-Pef'[80~] Minelauncher, alongside the other COMPONENT Sobek.</text>
+FM: A COMPONENT for forging the 'Ba-Pef'[90~] Minelauncher, alongside the other COMPONENT Sobek.</text>
 
 <text name="fm_tip_minelauncher_breach">Tip: Mine Launchers have reasonable status effect chances and fire massive bursts of slow moving mines which pierce all shields.
 
-FM: A COMPONENT for forging the 'Ba-Pef' Minelauncher[80~], alongside the other COMPONENT Hull Laser II.</text>
+FM: A COMPONENT for forging the 'Ba-Pef' Minelauncher[90~], alongside the other COMPONENT Hull Laser II.</text>
 
 <text name="fm_tip_missiles_bio">Tip: Missiles will ignore all enemy shields, but cost one missile to launch. Enemy defense drones will shoot down incoming missiles.
 
@@ -459,8 +476,12 @@ FM: A COMPONENT for forging the 'Dirty Bomb' Mine Launcher[140~], alongside the 
 
 <text name="fm_tip_ion_3">Tip: For every one point of ion damage, one power bar is removed from the target system and it is then locked for 5 seconds, preventing re-powering. If an ion weapon hits shields, the damage is automatically applied to the Shield System.
 
-FM: A COMPONENT for forging the 'Debilitatum' Heavy Missiles[80~], alongside the other COMPONENT 'Hermes' Heavy Missiles .</text>
+FM: A COMPONENT for forging the 'Debilitatum' Heavy Missiles[65~], alongside the other COMPONENT 'Hermes' Heavy Missiles.</text>
+	
+<!-- Volley Gun (Go Ballistic)-->
+<text name="fm_tip_ac_1">Tip: GO BALLISTIC!!
 
+FM: A COMPONENT for forging the Volley Gun[60-20~], alongside 1-3 other Autocannon 1s.</text>
 
 <!--    ORGANIC CRAFT TIPS -->
 
@@ -473,8 +494,8 @@ FM: A COMPONENT for forging the Basilisk Beam, alongside the other COMPONENT cal
 <text name="fm_tip_combat_2">Tip: Toggle Drones can have multiple functionalities. You can switch the mode of as many toggle drones as you want using the toggle button!
 
 Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.
-FM: A COMPONENT for forging the Boo Womp, alongside the other COMPONENT Amp Energy.
-FM: A COMPONENT for forging the Forgemaster Drone, alongside the other COMPONENT called [REDACTED].</text>
+<!--FM: A COMPONENT for forging the Boo Womp, alongside the other COMPONENT Amp Energy.
+FM: A COMPONENT for forging the Forgemaster Drone, alongside the other COMPONENT called [REDACTED].--></text>
 <text name="fm_tip_amp_energy">Tip: Amp Drones can change their power levels before combat. More power increases their efficiency, but will also require reactor power to function.
 
 Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.
@@ -482,45 +503,45 @@ FM: A COMPONENT for forging the Boo Womp, alongside the other COMPONENT Combat D
 <text name="fm_tip_assault_drone">Tip: Toggle Drones can have multiple functionalities. You can switch the mode of as many toggle drones as you want using the toggle button!
 
 Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.
-FM: A COMPONENT for forging the Amber Drone, alongside the other COMPONENT Crystal Heavy MK I.
+<!--FM: A COMPONENT for forging the Amber Drone, alongside the other COMPONENT Crystal Heavy MK I.
 FM: A COMPONENT for forging the Crystal Drone, alongside the other COMPONENT Crystal Scatter.
-FM: A COMPONENT for forging the Dazhbog Drone, alongside the other COMPONENT called [REDACTED].</text>
+FM: A COMPONENT for forging the Dazhbog Drone, alongside the other COMPONENT called [REDACTED].--></text>
 
 <text name="fm_tip_combat_conservative">Tip: Conservative drones use no power on their own, but cannot be depowered once activated.
-FM: A COMPONENT for forging the CURA Drone, alongside the other COMPONENTS Battle Drone MK I and Manager Drone.</text>
+<!--FM: A COMPONENT for forging the CURA Drone, alongside the other COMPONENTS Battle Drone MK I and Manager Drone.--></text>
 <text name="fm_tip_battletog">Tip: Toggle Drones can have multiple functionalities. You can switch the mode of as many toggle drones as you want using the toggle button!
 
 Tip: Ship Drones require 1 drone to deploy, but will not need to be deployed again until destroyed. They stay on ship and help your crew as long as they are powered.
 
 Tip: Boarding Drones require 1 drone part to deploy for each new enemy. They will board the enemy ship and attack as long as they are powered. If they have not been destroyed, the drone parts will be returned after combat.
-FM: A COMPONENT for forging the CURA Drone, alongside the other COMPONENTS Conservative Combat Drone and Manager Drone.</text>
+<!--FM: A COMPONENT for forging the CURA Drone, alongside the other COMPONENTS Conservative Combat Drone and Manager Drone.--></text>
 <text name="fm_tip_manning">Tip: Crew Drones require 1 drone to deploy, but will not need to be deployed again until destroyed. They stay on ship and help your crew as long as they are powered.
-FM: A COMPONENT for forging the CURA Drone, alongside the other COMPONENTS Battle Drone MK I and Conservative Combat Drone.</text>
+<!--FM: A COMPONENT for forging the CURA Drone, alongside the other COMPONENTS Battle Drone MK I and Conservative Combat Drone.--></text>
 <text name="fm_tip_amp_pinpoint">Tip: Amp Drones can change their power levels before combat. More power increases their efficiency, but will also require reactor power to function.
 
 Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.
-FM: A COMPONENT for forging the Ishimura Drone, alongside the other COMPONENT 'Stiletto' Pinpoint.
+<!--FM: A COMPONENT for forging the Ishimura Drone, alongside the other COMPONENT 'Stiletto' Pinpoint.-->
 </text>
 <text name="fm_tip_combat_1">Tip: Toggle Drones can have multiple functionalities. You can switch the mode of as many toggle drones as you want using the toggle button!
 
 Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.
-FM: A COMPONENT for forging the Kestrel Drone, alongside the other COMPONENT Burst Laser MK II.
-FM: A COMPONENT for forging the MFK Kestrel Drone, alongside the other COMPONENT Light Laser MK I.</text>
+<!--FM: A COMPONENT for forging the Kestrel Drone, alongside the other COMPONENT Burst Laser MK II.
+FM: A COMPONENT for forging the MFK Kestrel Drone, alongside the other COMPONENT Light Laser MK I.--></text>
 <text name="fm_tip_recon">Tip: Toggle Drones can have multiple functionalities. You can switch the mode of as many toggle drones as you want using the toggle button!
 
 Tip: Ship Drones require 1 drone to deploy, but will not need to be deployed again until destroyed. They stay on ship and help your crew as long as they are powered.
 
 Tip: Boarding Drones require 1 drone part to deploy for each new enemy. They will board the enemy ship and attack as long as they are powered. If they have not been destroyed, the drone parts will be returned after combat.
-FM: A COMPONENT for forging the MFK Picket Teleporter Relay Drone, alongside the other COMPONENT External Reconstructive Teleporter.</text>
+<!--FM: A COMPONENT for forging the MFK Picket Teleporter Relay Drone, alongside the other COMPONENT External Reconstructive Teleporter.--></text>
 <text name="fm_tip_pest">Tip: Toggle Drones can have multiple functionalities. You can switch the mode of as many toggle drones as you want using the toggle button!
 
 Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.
-FM: A COMPONENT for forging the Siren Drone, alongside the other COMPONENT Stun Bomb.</text>
+<!--FM: A COMPONENT for forging the Siren Drone, alongside the other COMPONENT Stun Bomb.</text>-->
 
 <text name="fm_tip_bomb_stun">Tip: Bombs teleport past shields and defense drones to land directly on the ship. Like missiles, they cost one missile to launch. They never damage hull, but can be effective at disrupting crew and systems. You can even launch them at boarders on your own ship.
 
-FM: A COMPONENT for forging the Imprisment Inducer, alongside the other COMPONENT Neural Crystal.
-FM: A COMPONENT for forging the Siren Drone, alongside the other COMPONENT Pest Drone.</text>
+FM: A COMPONENT for forging the Imprisment Inducer[25-55~], alongside the other COMPONENT Neural Crystal.
+<!--FM: A COMPONENT for forging the Siren Drone, alongside the other COMPONENT Pest Drone.</text>-->
 
 
 
