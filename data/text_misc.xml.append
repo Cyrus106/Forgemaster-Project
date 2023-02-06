@@ -49,7 +49,7 @@ Stun Chance: 20%</descriptionOverride>
 <text name="tip_gnunslung">This weapon pops 1 shield, deals photon damage and inflicts a 30s crew stacking damage DoT effect. Radiation weapons do bursts of heavy crew damage, have minor breach chances, and weaken enemy crew. Enemies hit will move and repair 66% slower, and will be stunned 75% longer.</text>
 <text name="tip_ancalagon_drone_laser">10% Chance to spawn an Ancalagon Crystal hazard. There are 5 types: red, blue, green, a rarer white, and the rarest, black.</text>
 <text name="tip_missiles_heavy">Tip: Heavy missiles always carry hull-bust attributes, and can be used to take down critical systems when necessary.</text>
-<text name="fm_tip_corrosive">Tip: These Geniocracy-produced anti-bio weapons fire advanced radiation lasers, which slowly corrode any crew hit. The stronger the weapon, the better the damage.</text>
+<text name="fm_tip_corrosive">Tip: These Geniocracy-produced anti-bio weapons fire advanced radiation lasers, which slowly corrode any crew hit. The stronger the weapon, the better the damage over time.</text>
 <text name="tip_terminus">A massive wyrm from another dimension rams into the enemy ship violently. Ignores Zoltan Shields but can be targeted by drones. Paralyzes the enemy crew on the enemy ship while slowly draining their health upon impact for 20 seconds.</text>
 <text name="tip_beam_mining_2">This beam is powerful enough to cut across large ships with ease, rendering it highly potent against larger vessels.
 
@@ -330,11 +330,11 @@ FM: A COMPONENT for forging the Omiyari Adaptive Pinpoint[50~], alongside the ot
 	
 <!--  AEGROTATIO -->
 	
-<text name="fm_tip_corrosive_2">Tip: Adaptive weapons increase in damage each time they are fired. The damage increase amount and limit depends on the weapon.
+<text name="fm_tip_corrosive_2">Tip: These Geniocracy-produced anti-bio weapons fire advanced radiation lasers, which slowly corrode any crew hit. The stronger the weapon, the better the damage over time.
 	
 FM: A COMPONENT for forging the 'Aegrotatio' Corrosive Pinpoint[50~], alongside the other COMPONENT 'Anelace' Bio Pinpoint.</text>
 	
-<text name="fm_tip_focus_bio">Tip: Chain beams decrease their cooldown every time they fire. Check the green lights on the weapon to see how many times it has fired.
+<text name="fm_tip_focus_bio">Tip: Radiation weapons do bursts of heavy crew damage, have minor breach chances, and weaken enemy crew. Enemies hit will move and repair 66% slower, and will be stunned 75% longer.
 	
 FM: A COMPONENT for forging the 'Aegrotatio' Corrosive Pinpoint[50~], alongside the other COMPONENT Corrosive Laser 2.</text>
 
