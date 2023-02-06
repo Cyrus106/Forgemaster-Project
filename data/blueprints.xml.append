@@ -11787,7 +11787,7 @@
 
 	<weaponBlueprint name="FM_FOCUS_VIRUS"> <!-- Crafted with Corrosive Hull 2 and Anelace Pinpoint -->
 		<type>BEAM</type>
-		<tip>tip_focus</tip>
+		<tip>fm_tip_corrosive</tip>
 		<title>'Aegrotatio' Pinpoint</title>
 		<short>'Aegrotatio'</short>
 		<desc>An incredibly unstable bio-weapon developed by only the most criminally insane shell scientists, this weapon inflicts crew with a deadly spreading virus, slowly wiping out the crew of enemy ships.</desc>
@@ -11857,7 +11857,7 @@
 
 	<weaponBlueprint name="FM_FOCUS_VIRUS_PLAYER"> <!-- Crafted with Corrosive Hull 2 and Anelace Pinpoint -->
 		<type>BEAM</type>
-		<tip>tip_focus</tip>
+		<tip>fm_tip_corrosive</tip>
 		<title>'Aegrotatio' Pinpoint†</title>
 		<short>'Aegrotatio'†</short>
 		<desc>An incredibly unstable bio-weapon developed by only the most criminally insane shell scientists, this weapon inflicts crew with a deadly spreading virus, slowly wiping out the crew of enemy ships.</desc>
@@ -16439,6 +16439,7 @@
 		<type>LASER</type>
 		<title>Corrosive Laser I</title>
 		<short>Corrosive I</short>
+		<tip>fm_tip_corrosive</tip>
 		<desc>This beauty of science and the dedicated research of the Shell race imbues it's lasers with a special property, corroding crew hit.</desc>
 		<tooltip>This beauty of science and the dedicated research of the Shell race imbues it's lasers with a special property, corroding crew hit.</tooltip>
 		<damage>1</damage>
@@ -16494,6 +16495,7 @@
 		<type>LASER</type>
 		<title>Corrosive Laser II</title>
 		<short>Corrosive II</short>
+		<tip>fm_tip_corrosive_2</tip>
 		<desc>This beauty of science and the dedicated research of the Shell race imbues it's lasers with a special property, corroding crew hit.</desc>
 		<tooltip>This beauty of science and the dedicated research of the Shell race imbues it's lasers with a special property, corroding crew hit.</tooltip>
 		<damage>1</damage>
@@ -16548,6 +16550,7 @@
 		<type>LASER</type>
 		<title>Corrosive Laser III</title>
 		<short>Corrosive III</short>
+		<tip>fm_tip_corrosive</tip>
 		<desc>This beauty of science and the dedicated research of the Shell race imbues it's lasers with a special property, corroding crew hit.</desc>
 		<tooltip>This beauty of science and the dedicated research of the Shell race imbues it's lasers with a special property, corroding crew hit.</tooltip>
 		<damage>1</damage>
