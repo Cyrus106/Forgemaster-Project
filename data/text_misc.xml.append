@@ -36,24 +36,25 @@ Stun Chance: 20%</descriptionOverride>
                                          WEAPON TIPS
 **********************************************************************************************************************
 -->
-<text name="bomb_biohazard">This bomb prevents the crew hit from healing from med bays, or being revived by clone bays. 30 second duration. Radiation weapons do bursts of heavy crew damage, have minor breach chances, and weaken enemy crew. Enemies hit will move and repair 66% slower, and will be stunned 75% longer.</text>
+<text name="bomb_biohazard">This bomb prevents the crew hit from healing from medbays, or being revived by clone bays. 30 second duration. Radiation weapons do bursts of heavy crew damage, have minor breach chances, and weaken enemy crew. Enemies hit will move and repair 66% slower, and will be stunned 75% longer.</text>
 <text name="bomb_crime">Makes all crew types burn, even rocks. All crew hit take 1.75x damage from fire, and put out fires 70% slower. 15 second duration.</text>
 <text name="bomb_compactinator">This extremely expensive bomb takes the hit allied crew off of the ship's crew slot database. As a result you can have more crew in your ship!
 	DEV NOTE: Please remember, if a crew is added to your ship and every room is full, the game WILL crash. Same with enemy boarders, if there is no
 	space for them, your game will crash until this is patched in Hyperspace. Use CONSERVATIVELY and count your crew and rooms before usage!</text>
-<text name="flamethrower">DOES NOT pierce shields or pop them, fire this when the enemy shields are down and unleash hell on their ship.</text>
-<text name="ion_lanius">Fires a piercing ion shot that causes crew struck by it to become able to suffocate, take 2.5x more damage from suffocation, and very slowly drain the room's oxygen for 15 seconds.</text>
+<text name="flamethrower">DOES NOT pierce shields or pop them, fire this when the enemy shields are down and unleash hell on their ship!</text>
+<text name="ion_lanius">Fires a piercing ion shot that causes crew struck by it to lose suffocation immunity, take 2.5x more damage from suffocation, and very slowly drain the room's oxygen for 15 seconds.</text>
 <text name="parazonium">DOES NOT use missiles to fire, but cannot fire if you don't have enough missiles! Can be amplified at combat checks.</text>
-<text name="tip_focusenergy">Only deals Ion Damage when hitting a room in the enemy ship, does not deal ion damage when hitting shields!</text>
+<text name="tip_focusenergy">Only deals Ion Damage when hitting a room in the enemy ship, but does not deal ion damage when hitting shields!</text>
 <text name="tip_ancalagon">Ancalagon weapons have a chance to spawn an Ancalagon Crystal hazard. There are 5 types: red, blue, green, a rarer white, and the rarest, black.</text>
-<text name="tip_gnunslung">This weapon pops 1 shield, deals no hull damage (only destroys ships if they have very low hull) and inflicts a 30 crew stacking damage DoT effect. Radiation weapons do bursts of heavy crew damage, have minor breach chances, and weaken enemy crew. Enemies hit will move and repair 66% slower, and will be stunned 75% longer.</text>
+<text name="tip_gnunslung">This weapon pops 1 shield, deals photon damage and inflicts a 30s crew stacking damage DoT effect. Radiation weapons do bursts of heavy crew damage, have minor breach chances, and weaken enemy crew. Enemies hit will move and repair 66% slower, and will be stunned 75% longer.</text>
 <text name="tip_ancalagon_drone_laser">10% Chance to spawn an Ancalagon Crystal hazard. There are 5 types: red, blue, green, a rarer white, and the rarest, black.</text>
 <text name="tip_missiles_heavy">Tip: Heavy missiles always carry hull-bust attributes, and can be used to take down critical systems when necessary.</text>
-<text name="tip_terminus">A massive wyrm from another dimension rams into the enemy ship violently. Ignores Zoltan Shields but can be targetted by drones. Paralyzes the enemy crew on the enemy ship while slowly draining their health upon impact for 20 seconds.</text>
+<text name="fm_tip_corrosive">Tip: These Geniocracy-produced anti-bio weapons fire advanced radiation lasers, which slowly corrode any crew hit. The stronger the weapon, the better the damage.</text>
+<text name="tip_terminus">A massive wyrm from another dimension rams into the enemy ship violently. Ignores Zoltan Shields but can be targeted by drones. Paralyzes the enemy crew on the enemy ship while slowly draining their health upon impact for 20 seconds.</text>
 <text name="tip_beam_mining_2">This beam is powerful enough to cut across large ships with ease, rendering it highly potent against larger vessels.
 
-FM: A COMPONENT for forging the Terra Nova Pinpoint[100~], alongside the other COMPONENT 'Misericorde' Pinpoint or 'Stiletto' Pinpoint. </text>
-<text name="tip_beam_mining_3">This pinpoint is powerful enough to tear multiple breaches on tiles around the impact area. </text>
+FM: A COMPONENT for forging the Terra Nova Pinpoint[70~], alongside the other COMPONENT 'Misericorde' Pinpoint or 'Stiletto' Pinpoint. </text>
+<text name="tip_beam_mining_3">This pinpoint is powerful enough to tear multiple breaches on tiles around the impact area, as opposed to only where the beam touches.</text>
 <text name="tip_laser_photon">This power efficient burst laser can pop shields and inflict status effects but deals no hull* or crew damage.
 
 	* if enemy ship is at minimum structural integrity it will potentially destroy the ship.</text>
@@ -87,7 +88,6 @@ FM: A COMPONENT for forging the Rebel Ripper Laser[50~], alongside the other COM
 <text name="fm_tip_laser_fire">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
 
 FM: A COMPONENT for forging the Hellflash Gatling Gun[30~], alongside the other COMPONENT Vulcan.
-
 FM: A COMPONENT for forging the Dazhbog Flamethrower[50~], alongside the other COMPONENT called [REDACTED].</text>
 
 <text name="fm_tip_laser_vulcan">Tip: Chain lasers decrease their cooldown every time they fire. Check the green lights on the weapon to see how many times it has fired.
@@ -112,8 +112,8 @@ FM: A COMPONENT for forging the Decayser[55~], alongside the other COMPONENT cal
 
 <text name="fm_tip_laser_light">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
 
-FM: A COMPONENT for forging the Photon I[25~], alongside the other COMPONENT Particle Accelerator MK I.
-<!--FM: A COMPONENT for forging the MFK Kestrel Drone, alongside the other COMPONENT Combat Drone MK I.--></text>
+FM: A COMPONENT for forging the Photon I[25~], alongside the other COMPONENT Particle Accelerator MK I.</text>
+<!--FM: A COMPONENT for forging the MFK Kestrel Drone, alongside the other COMPONENT Combat Drone MK I.-->
 
 <text name="fm_tip_laser_particle">Tip: Particle accelerators fire in a radius much like Flak. Each projectile does small system damage and has a reasonable fire chance, which can be devastating against its target.
 
@@ -190,7 +190,6 @@ FM: A COMPONENT for forging the TARANIS Disc Launcher[50~], alongside the other 
 <text name="fm_tip_laser_vulcan">Tip: Chain lasers decrease their cooldown every time they fire. Check the green lights on the weapon to see how many times it has fired.
 
 FM: A COMPONENT for forging the Vesta[30-60~], alongside the other COMPONENT Ion Charger I OR Ion Charger II.
-
 FM: A COMPONENT for forging the Hellflash Gatling Gun[30~], alongside the other COMPONENT Fire Starter.</text>
 
 <text name="fm_tip_ion_charger_1">Tip: Charge weapons can be charged multiple times to generate more firepower. You can save time and fire the weapon prematurely but it will have fewer shots ready as a result.
@@ -218,8 +217,8 @@ FM: A COMPONENT for forging the Pulse Laser I [40~], alongside the other COMPONE
 
 <text name="fm_tip_laser_2">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
 
-FM: A COMPONENT for forging the Pulse Laser II [50~], alongside the other COMPONENT Energy II.
-<!--FM: A COMPONENT for forging the Kestrel Drone alongside the other COMPONENT Combat Drone MK I.--></text>
+FM: A COMPONENT for forging the Pulse Laser II [50~], alongside the other COMPONENT Energy II.</text>
+<!--FM: A COMPONENT for forging the Kestrel Drone alongside the other COMPONENT Combat Drone MK I.-->
 
 <text name="fm_tip_laser_3">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
 
@@ -252,7 +251,7 @@ FM: A COMPONENT for forging the Earspoon Beam[35~], alongside the other COMPONEN
 
 FM: A COMPONENT for forging the Earspoon Beam[35~], alongside the other COMPONENT 'Guisarme' Beam.</text>
 
-<!--    MURDEROUS -->
+<!-- MURDEROUS -->
 
 <text name="fm_tip_beam_guillotine">Tip: This Beam does both crew and system damage, making it a very versatile weapon.
 
@@ -312,7 +311,6 @@ FM: A COMPONENT for forging the Parazonium Focus[100~], alongside the other COMP
 <text name="fm_tip_energy_1">Tip: Energy weapons are very versatile as they can do both ion and hull damage, but do not damage crew or systems.
 
 FM: A COMPONENT for forging the Ebony Energy Pinpoint[40~], alongside the other COMPONENT 'Dirk' Pinpoint.
-
 FM: A COMPONENT for forging the Pulse Laser I [40~], alongside the other COMPONENT Burst Laser I.</text>
 
 <text name="fm_tip_focus_1">Tip: Pinpoints do higher damage than Beams but have shorter trails. Just like Beams, their damage is reduced by 1 for each shield layer it pierces.
@@ -329,19 +327,27 @@ FM: A COMPONENT for forging the Omiyari Adaptive Pinpoint[50~], alongside the ot
 <text name="fm_tip_focus_chain">Tip: Chain beams decrease their cooldown every time they fire. Check the green lights on the weapon to see how many times it has fired.
 	
 FM: A COMPONENT for forging the Omiyari Adaptive Pinpoint[50~], alongside the other COMPONENT Suyari Adaptive Beam.</text>
+	
+<!--  AEGROTATIO -->
+	
+<text name="fm_tip_corrosive_2">Tip: Adaptive weapons increase in damage each time they are fired. The damage increase amount and limit depends on the weapon.
+	
+FM: A COMPONENT for forging the 'Aegrotatio' Corrosive Pinpoint[50~], alongside the other COMPONENT 'Anelace' Bio Pinpoint.</text>
+	
+<text name="fm_tip_focus_bio">Tip: Chain beams decrease their cooldown every time they fire. Check the green lights on the weapon to see how many times it has fired.
+	
+FM: A COMPONENT for forging the 'Aegrotatio' Corrosive Pinpoint[50~], alongside the other COMPONENT Corrosive Laser 2.</text>
 
 <!--    HEMLOCK + TERRA NOVA  -->
 
 <text name="fm_tip_energy_2">Tip: Energy weapons are very versatile as they can do both ion and hull damage, but do not damage crew or systems.
 
 FM: A COMPONENT for forging the Hemlock Energy Pinpoint[50~], alongside the other COMPONENT 'Misericorde' Pinpoint.
-
 FM: A COMPONENT for forging the Pulse Laser II [50~], alongside the other COMPONENT Burst Laser II.</text>
 
 <text name="fm_tip_focus_2">Tip: Pinpoints do higher damage than Beams but have shorter trails. Just like Beams, their damage is reduced by 1 for each shield layer it pierces.
 
 FM: A COMPONENT for forging the Hemlock Energy Pinpoint[60~], alongside the other COMPONENT Energy Cannon II.
-
 FM: A COMPONENT for forging the Terra Nova Pinpoint[70~], alongside the other COMPONENT Ishimura Beam.</text>
 
 <!--    GREEN HEART + TERRA NOVA -->
@@ -349,16 +355,13 @@ FM: A COMPONENT for forging the Terra Nova Pinpoint[70~], alongside the other CO
 <text name="fm_tip_energy_3">Tip: Energy weapons are very versatile as they can do both ion and hull damage, but do not damage crew or systems.
 
 FM: A COMPONENT for forging the Green Heart Energy Pinpoint[60~], alongside the other COMPONENT 'Stiletto' Pinpoint.
-
 FM: A COMPONENT for forging the Pulse Laser III [60~], alongside the other COMPONENT Burst Laser III.</text>
 
 <text name="fm_tip_focus_3">Tip: Pinpoints do higher damage than Beams but have shorter trails. Just like Beams, their damage is reduced by 1 for each shield layer it pierces.
 
 FM: A COMPONENT for forging the Green Heart Energy Pinpoint[60~], alongside the other COMPONENT Energy Cannon III.
-
-FM: A COMPONENT for forging the Terra Nova Pinpoint[50~], alongside the other COMPONENT Ishimura Beam.
-
-<!--FM: A COMPONENT for forging the Ishimura Drone alongside the other COMPONENT Amp Pinpoint Drone.--></text>
+FM: A COMPONENT for forging the Terra Nova Pinpoint[50~], alongside the other COMPONENT Ishimura Beam.</text>
+<!--FM: A COMPONENT for forging the Ishimura Drone alongside the other COMPONENT Amp Pinpoint Drone.-->
 
 
 <!--    FLAK CRAFT TIPS -->
@@ -402,13 +405,13 @@ FM: A COMPONENT for forging the Bronze Metal Flak[10~], alongside the other COMP
 
 <text name="fm_tip_crystal_shotgun">Tip: Crystal weapons pierce a single layer of shields. Only level 2 shields and higher can stop them.
 
-FM: A COMPONENT for forging the Bronze Metal Flak[10~], alongside the other COMPONENT Flak II.
-<!--FM: A COMPONENT for forging the Crystal Drone, alongside the other COMPONENT Assault Drone.--></text>
+FM: A COMPONENT for forging the Bronze Metal Flak[10~], alongside the other COMPONENT Flak II.</text>
+<!--FM: A COMPONENT for forging the Crystal Drone, alongside the other COMPONENT Assault Drone.-->
 
 <text name="fm_tip_crystal_heavy_1">Tip: Crystal weapons pierce a single layer of shields. Only level 2 shields and higher can stop them.
 
-FM: A COMPONENT for forging the Bronze Metal Flak[10~], alongside the other COMPONENT Flak II.
-<!--FM: A COMPONENT for forging the Amber Drone, alongside the other COMPONENT Assault Drone.--></text>
+FM: A COMPONENT for forging the Bronze Metal Flak[10~], alongside the other COMPONENT Flak II.</text>
+<!--FM: A COMPONENT for forging the Amber Drone, alongside the other COMPONENT Assault Drone.-->
 <text name="fm_tip_crystal_stun">Tip: Crystal weapons pierce a single layer of shields. Only level 2 shields and higher can stop them.
 
 FM: A COMPONENT for forging the Bronze Metal Flak[10~], alongside the other COMPONENT Flak II.
@@ -493,55 +496,57 @@ FM: A COMPONENT for forging the Basilisk Beam, alongside the other COMPONENT cal
 <!--DRONES-->
 <text name="fm_tip_combat_2">Tip: Toggle Drones can have multiple functionalities. You can switch the mode of as many toggle drones as you want using the toggle button!
 
-Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.
+Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.</text>
 <!--FM: A COMPONENT for forging the Boo Womp, alongside the other COMPONENT Amp Energy.
-FM: A COMPONENT for forging the Forgemaster Drone, alongside the other COMPONENT called [REDACTED].--></text>
+FM: A COMPONENT for forging the Forgemaster Drone, alongside the other COMPONENT called [REDACTED].-->
 <text name="fm_tip_amp_energy">Tip: Amp Drones can change their power levels before combat. More power increases their efficiency, but will also require reactor power to function.
 
-Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.
-FM: A COMPONENT for forging the Boo Womp, alongside the other COMPONENT Combat Drone MK II.</text>
+Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.</text>
+<!--FM: A COMPONENT for forging the Boo Womp, alongside the other COMPONENT Combat Drone MK II.-->
 <text name="fm_tip_assault_drone">Tip: Toggle Drones can have multiple functionalities. You can switch the mode of as many toggle drones as you want using the toggle button!
 
-Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.
-<!--FM: A COMPONENT for forging the Amber Drone, alongside the other COMPONENT Crystal Heavy MK I.
+Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.</text>
+<!--FM: A COMPONENT for forging the Amber Drone, alongside the other COMPONENT Crystal Heavy MK I. 
 FM: A COMPONENT for forging the Crystal Drone, alongside the other COMPONENT Crystal Scatter.
-FM: A COMPONENT for forging the Dazhbog Drone, alongside the other COMPONENT called [REDACTED].--></text>
+FM: A COMPONENT for forging the Dazhbog Drone, alongside the other COMPONENT called [REDACTED].-->
 
-<text name="fm_tip_combat_conservative">Tip: Conservative drones use no power on their own, but cannot be depowered once activated.
-<!--FM: A COMPONENT for forging the CURA Drone, alongside the other COMPONENTS Battle Drone MK I and Manager Drone.--></text>
+<text name="fm_tip_combat_conservative">Tip: Conservative drones use no power on their own, but cannot be depowered once activated.</text>
+<!--FM: A COMPONENT for forging the CURA Drone, alongside the other COMPONENTS Battle Drone MK I and Manager Drone.-->
 <text name="fm_tip_battletog">Tip: Toggle Drones can have multiple functionalities. You can switch the mode of as many toggle drones as you want using the toggle button!
 
 Tip: Ship Drones require 1 drone to deploy, but will not need to be deployed again until destroyed. They stay on ship and help your crew as long as they are powered.
 
-Tip: Boarding Drones require 1 drone part to deploy for each new enemy. They will board the enemy ship and attack as long as they are powered. If they have not been destroyed, the drone parts will be returned after combat.
-<!--FM: A COMPONENT for forging the CURA Drone, alongside the other COMPONENTS Conservative Combat Drone and Manager Drone.--></text>
-<text name="fm_tip_manning">Tip: Crew Drones require 1 drone to deploy, but will not need to be deployed again until destroyed. They stay on ship and help your crew as long as they are powered.
-<!--FM: A COMPONENT for forging the CURA Drone, alongside the other COMPONENTS Battle Drone MK I and Conservative Combat Drone.--></text>
+Tip: Boarding Drones require 1 drone part to deploy for each new enemy. They will board the enemy ship and attack as long as they are powered. If they have not been destroyed, the drone parts will be returned after combat.</text>
+<!--FM: A COMPONENT for forging the CURA Drone, alongside the other COMPONENTS Conservative Combat Drone and Manager Drone.-->
+	
+<text name="fm_tip_manning">Tip: Crew Drones require 1 drone to deploy, but will not need to be deployed again until destroyed. They stay on ship and help your crew as long as they are powered.</text>
+<!--FM: A COMPONENT for forging the CURA Drone, alongside the other COMPONENTS Battle Drone MK I and Conservative Combat Drone.-->
 <text name="fm_tip_amp_pinpoint">Tip: Amp Drones can change their power levels before combat. More power increases their efficiency, but will also require reactor power to function.
 
-Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.
+Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.</text>
 <!--FM: A COMPONENT for forging the Ishimura Drone, alongside the other COMPONENT 'Stiletto' Pinpoint.-->
-</text>
+
 <text name="fm_tip_combat_1">Tip: Toggle Drones can have multiple functionalities. You can switch the mode of as many toggle drones as you want using the toggle button!
 
-Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.
+Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.</text>
 <!--FM: A COMPONENT for forging the Kestrel Drone, alongside the other COMPONENT Burst Laser MK II.
-FM: A COMPONENT for forging the MFK Kestrel Drone, alongside the other COMPONENT Light Laser MK I.--></text>
+FM: A COMPONENT for forging the MFK Kestrel Drone, alongside the other COMPONENT Light Laser MK I.-->
 <text name="fm_tip_recon">Tip: Toggle Drones can have multiple functionalities. You can switch the mode of as many toggle drones as you want using the toggle button!
 
 Tip: Ship Drones require 1 drone to deploy, but will not need to be deployed again until destroyed. They stay on ship and help your crew as long as they are powered.
 
-Tip: Boarding Drones require 1 drone part to deploy for each new enemy. They will board the enemy ship and attack as long as they are powered. If they have not been destroyed, the drone parts will be returned after combat.
-<!--FM: A COMPONENT for forging the MFK Picket Teleporter Relay Drone, alongside the other COMPONENT External Reconstructive Teleporter.--></text>
+Tip: Boarding Drones require 1 drone part to deploy for each new enemy. They will board the enemy ship and attack as long as they are powered. If they have not been destroyed, the drone parts will be returned after combat.</text>
+<!--FM: A COMPONENT for forging the MFK Picket Teleporter Relay Drone, alongside the other COMPONENT External Reconstructive Teleporter.-->
+	
 <text name="fm_tip_pest">Tip: Toggle Drones can have multiple functionalities. You can switch the mode of as many toggle drones as you want using the toggle button!
 
-Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.
-<!--FM: A COMPONENT for forging the Siren Drone, alongside the other COMPONENT Stun Bomb.--></text>
+Tip: Combat Drones require 1 drone part to deploy for each new enemy. They will attack the enemy as long as they are powered.</text>
+<!--FM: A COMPONENT for forging the Siren Drone, alongside the other COMPONENT Stun Bomb.-->
 
 <text name="fm_tip_bomb_stun">Tip: Bombs teleport past shields and defense drones to land directly on the ship. Like missiles, they cost one missile to launch. They never damage hull, but can be effective at disrupting crew and systems. You can even launch them at boarders on your own ship.
 
-FM: A COMPONENT for forging the Imprisment Inducer[25-55~], alongside the other COMPONENT Neural Crystal.
-<!--FM: A COMPONENT for forging the Siren Drone, alongside the other COMPONENT Pest Drone.--></text>
+FM: A COMPONENT for forging the Imprisment Inducer[25-55~], alongside the other COMPONENT Neural Crystal.</text>
+<!--FM: A COMPONENT for forging the Siren Drone, alongside the other COMPONENT Pest Drone.-->
 
 
 
