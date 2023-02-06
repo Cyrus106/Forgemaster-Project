@@ -1955,7 +1955,7 @@
 
 <mod:findName type = "blueprintList" name = "LIST_CREW_DEFENDER">
     <mod-append:name>unique_remington</mod-append:name>
-	<mod-append:name>unique_mossberg</mod-append:name>
+    <mod-append:name>unique_mossberg</mod-append:name>
 </mod:findName>
 
 <mod:findName type = "blueprintList" name = "LIST_CREW_ENGI">
@@ -2712,6 +2712,7 @@
 	<name>FM_BEAM_BASILISK</name>
 	<name>FM_FOCUS_VIRUS</name>
 	<name>FM_FOCUS_VIRUS_PLAYER</name>
+	<name>FM_RAILBLENDER</name>
 </blueprintList>
 
 <blueprintList name="FM_CRYSTAL_LIST">
