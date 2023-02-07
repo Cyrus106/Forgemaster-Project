@@ -1805,12 +1805,12 @@
       <event load="OPTION_INVALID"/>
     </choice>
 		
-    <choice req="FM_FOCUS_VIRUS_LIST" lvl="1" blue="false" hidden="true">
+    <choice req="FM_FOCUS_VIRUS_FORGE_LIST" lvl="1" blue="false" hidden="true">
 			<text>Enhance the Anelace's focusing lens with the Corrosive Laser's deadly chemicals.[Cost: 50~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_VIRUS"/>
 		</choice>
 
-    <choice req="FM_FOCUS_VIRUS_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+    <choice req="FM_FOCUS_VIRUS_FORGE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
 			<text>You must have a Corrosive Laser 2 and an 'Anelace' Rad Pinpoint to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -3534,7 +3534,7 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_VIRUS">
 	  <checkCargo/>
 	  <text>Currently viewing the 'Aegrotatio' Viral Pinpoint.</text>
-	  <choice hidden="false" req="FM_FOCUS_VIRUS_LIST" blue="false">
+	  <choice hidden="false" req="FM_FOCUS_VIRUS_LIST_1" blue="false">
 	    <text>Craft the 'Aegrotatio' Pinpoint.</text>
 	    <event>
 	      <text>Proceed with crafting?</text>
@@ -3543,6 +3543,25 @@
 		      <item type="scrap" min="-50" max="-50"/>
 	      </item_modify>
 	      <removeItem>FOCUS_BIO</removeItem>
+	      <removeItem>FM_CORROSIVE_2</removeItem>
+	      <choice hidden="true">
+	        <text>Continue...</text>
+	        <event>
+	          <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+	        </event>
+	      </choice>
+	    </event>
+	  </choice>
+		
+	<choice hidden="false" req="FM_FOCUS_VIRUS_LIST_2" blue="false">
+	    <text>Craft the 'Aegrotatio' Pinpoint.</text>
+	    <event>
+	      <text>Proceed with crafting?</text>
+	      <weapon name="FM_FOCUS_VIRUS_PLAYER"/>
+	      <item_modify>
+		      <item type="scrap" min="-50" max="-50"/>
+	      </item_modify>
+	      <removeItem>FOCUS_BIO_PLAYER</removeItem>
 	      <removeItem>FM_CORROSIVE_2</removeItem>
 	      <choice hidden="true">
 	        <text>Continue...</text>
