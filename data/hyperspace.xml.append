@@ -2068,6 +2068,17 @@
 			<name>LASER_PIERCE_2</name>
 			<name>BOMB_ION</name>
 		</req>
+		
+		<!-- LASER WEAPON LIST! -->
+		<req name="FM_LASER_ANOMALY_1_LIST" type="all"> <!-- Corrosive Laser II + 'Anelace' Pinpoint -->
+			<name>FM_CORROSIVE_2</name>
+			<name>FOCUS_BIO</name>
+		</req>
+		
+		<req name="FM_SURGE_LASER_LIST" type="all"> <!-- Burst Laser III +  Flak IV -->
+			<name>LASER_BURST_5</name>
+			<name>SHOTGUN_4</name>
+		</req>
 
 		<req name="FM_CHAINGUN_FIRE_LIST" type="all"> <!-- Fire Starter + Vulcan -->
 			<name>LASER_FIRE</name>
@@ -2328,6 +2339,21 @@
 		<req name="FM_FOCUS_ENERGY_CONS_LIST" type="all"> <!--Dirk + conservative Energy-->
 		  <name>ENERGY_CONSERVATIVE</name>
 		  <name>FOCUS_1</name>
+		</req>
+		
+		<req name="FM_FOCUS_VIRUS_LIST" type="all"> <!--Corrosive Laser 2 + 'Anelace' Bio Pinpoint-->
+		  <name>FM_FOCUS_VIRUS_LIST_1</name>
+		  <name>FM_FOCUS_VIRUS_LIST_2</name>
+		</req>
+		
+		<req name="FM_FOCUS_VIRUS_LIST_1" type="all"> <!--Corrosive Laser 2 + 'Anelace' Bio Pinpoint-->
+		  <name>FM_CORROSIVE_2</name>
+		  <name>FOCUS_BIO</name>
+		</req>
+		
+		<req name="FM_FOCUS_VIRUS_LIST_2" type="all"> <!--Corrosive Laser 2 + 'Anelace' Bio Pinpoint+-->
+		  <name>FM_CORROSIVE_2</name>
+		  <name>FOCUS_BIO_PLAYER</name>
 		</req>
 
 		<req name="FM_FOCUS_ADAPT_LIST" type="all"> <!-- Suyari + Cinquedea Fucus-->
@@ -3130,6 +3156,7 @@
 			<name>FM_LASER_HUMAN_LIST</name>
 			<name>FM_LASER_ION_MEGA_LIST</name>
 			<name>FM_CHAINGUN_FIRE_LIST</name>
+			<name>FM_SURGE_LASER</name>
 			<name>GATLING_ANCIENT</name>
 
 		</req>
@@ -3185,6 +3212,7 @@
 			<name>FM_FOCUS_ENERGY_3_LIST</name>
 			<name>FM_FOCUS_ENERGY_CONS_LIST</name>
 			<name>FM_FOCUS_ADAPT_LIST</name>
+			<name>FM_FOCUS_VIRUS_LIST</name>
 			<name>FM_BEAM_MINING_3_FORGE_LIST</name>
 		</req>
 
