@@ -1550,6 +1550,16 @@
 			<text>You must have a hefty amount of scrap, Ion Bomb teleportation tech, and the core of a Piercing Laser II to craft this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
+		
+		<choice req="FM_SURGE_LASER_LIST" lvl="1" blue="false" hidden="true">
+			<text>Install the Burst Laser with the Flak 4's power core. [Cost: 80~]</text>
+			<event load="NPC_STORAGE_CHECK_CREATE_SURGE_LASER"/>
+		</choice>
+
+		<choice req="FM_SURGE_LASER_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+			<text>You must have a Burst 3 and Flak 4 to forge this weapon.</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
 
 		<choice req="GATLING_ANCIENT" lvl="1" blue="true" hidden="true" max_group="19">
 			<text>Have Alastair tweak the Godkiller.[Cost: 10~]</text>
@@ -1794,6 +1804,16 @@
       <text>You must have a Dirk pinpoint and Conservative Energy to forge this weapon.</text>
       <event load="OPTION_INVALID"/>
     </choice>
+		
+    <choice req="FM_FOCUS_VIRUS_LIST" lvl="1" blue="false" hidden="true">
+			<text>Replace the Stiletto's power source with an Energy III core to forge the 'Aegrotatio' Viral Pinpoint.[Cost: 50~]</text>
+			<event load="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_VIRUS"/>
+		</choice>
+
+    <choice req="FM_FOCUS_VIRUS_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+			<text>You must have a Corrosive Laser 2 and an 'Anelace' Rad Pinpoint to forge this weapon.</text>
+			<eventload="OPTION_INVALID"/>
+		</choice>
 
     <choice req="FM_FOCUS_ADAPT_LIST" lvl="1" blue="false" hidden="true">
       <text>Combine the Suyari beam and Cinquedea pinpoint to forge the Omiyari focus.[Cost: 50~]</text>
@@ -2472,6 +2492,33 @@
 			<text>Nevermind.</text>
 			<event load="FM_FORGE_WEAPON_LASER_LOAD"/>
 		</choice>
+		
+		<event name="NPC_STORAGE_CHECK_CREATE_FM_SURGE_LASER">
+		<checkCargo/>
+		<text>Currently viewing the 'Multiplicity' Barrage Laser.</text>
+		<choice hidden="false"  blue="false">
+			<text>Craft the 'Multiplicity'.</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<weapon name="FM_SURGE_LASER"/>
+				<item_modify>
+					<item type="scrap" min="-80" max="-80"/>
+				</item_modify>
+				<removeItem>LASER_BURST_5</removeItem>
+				<removeItem>SHOTGUN_4</removeItem>
+				<choice hidden="true">
+				  <text>Continue...</text>
+				  <event>
+				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+				  </event>
+				</choice>
+			</event>
+		</choice>
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_WEAPON_LOAD"/>
+		</choice>
+	</event>
 
 	</event>
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_GODKILLER">
@@ -3470,6 +3517,33 @@
 	      </item_modify>
 	      <removeItem>FOCUS_1</removeItem>
 	      <removeItem>ENERGY_CONSERVATIVE</removeItem>
+	      <choice hidden="true">
+	        <text>Continue...</text>
+	        <event>
+	          <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+	        </event>
+	      </choice>
+	    </event>
+	  </choice>
+	  <choice hidden="false">
+	    <text>Nevermind.</text>
+	    <event load="FM_FORGE_WEAPON_PINPOINT_LOAD"/>
+	  </choice>
+	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_VIRUS">
+	  <checkCargo/>
+	  <text>Currently viewing the 'Aegrotatio' Viral Pinpoint.</text>
+	  <choice hidden="false" req="FM_FOCUS_VIRUS_LIST" blue="false">
+	    <text>Craft the 'Aegrotatio' Pinpoint.</text>
+	    <event>
+	      <text>Proceed with crafting?</text>
+	      <weapon name="FM_FOCUS_VIRUS"/>
+	      <item_modify>
+		      <item type="scrap" min="-50" max="-50"/>
+	      </item_modify>
+	      <removeItem>FOCUS_BIO</removeItem>
+	      <removeItem>FM_CORROSIVE_2</removeItem>
 	      <choice hidden="true">
 	        <text>Continue...</text>
 	        <event>
