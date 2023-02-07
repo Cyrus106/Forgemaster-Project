@@ -2335,10 +2335,12 @@
 		  <name>FOCUS_1</name>
 		</req>
 		
-		<req name="FM_FOCUS_VIRUS_LIST" type="all"> <!--Corrosive Laser 2 + 'Anelace' Bio Pinpoint-->
+		<req name="FM_FOCUS_VIRUS_LIST" type="all">
 		  <name>FM_FOCUS_VIRUS_LIST_1</name>
 		  <name>FM_FOCUS_VIRUS_LIST_2</name>
 		</req>
+		
+		<!-- AEGROTATIO SUBLIST -->
 		
 		<req name="FM_FOCUS_VIRUS_LIST_1" type="all"> <!--Corrosive Laser 2 + 'Anelace' Bio Pinpoint-->
 		  <name>FM_CORROSIVE_2</name>
