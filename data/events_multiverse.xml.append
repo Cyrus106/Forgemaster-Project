@@ -1553,7 +1553,7 @@
 		
 		<choice req="FM_SURGE_LASER_LIST" lvl="1" blue="false" hidden="true">
 			<text>Install the Burst Laser with the Flak 4's power core. [Cost: 80~]</text>
-			<event load="NPC_STORAGE_CHECK_CREATE_SURGE_LASER"/>
+			<event load="NPC_STORAGE_CHECK_CREATE_FM_SURGE_LASER"/>
 		</choice>
 
 		<choice req="FM_SURGE_LASER_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
