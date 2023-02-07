@@ -1806,13 +1806,13 @@
     </choice>
 		
     <choice req="FM_FOCUS_VIRUS_LIST" lvl="1" blue="false" hidden="true">
-			<text>Replace the Stiletto's power source with an Energy III core to forge the 'Aegrotatio' Viral Pinpoint.[Cost: 50~]</text>
+			<text>Enhance the Anelace's focusing lens with the Corrosive Laser's deadly chemicals.[Cost: 50~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_VIRUS"/>
 		</choice>
 
     <choice req="FM_FOCUS_VIRUS_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
 			<text>You must have a Corrosive Laser 2 and an 'Anelace' Rad Pinpoint to forge this weapon.</text>
-			<eventload="OPTION_INVALID"/>
+			<event load="OPTION_INVALID"/>
 		</choice>
 
     <choice req="FM_FOCUS_ADAPT_LIST" lvl="1" blue="false" hidden="true">
