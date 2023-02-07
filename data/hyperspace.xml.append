@@ -2069,12 +2069,6 @@
 			<name>BOMB_ION</name>
 		</req>
 		
-		<!-- LASER WEAPON LIST! -->
-		<req name="FM_LASER_ANOMALY_1_LIST" type="all"> <!-- Corrosive Laser II + 'Anelace' Pinpoint -->
-			<name>FM_CORROSIVE_2</name>
-			<name>FOCUS_BIO</name>
-		</req>
-		
 		<req name="FM_SURGE_LASER_LIST" type="all"> <!-- Burst Laser III +  Flak IV -->
 			<name>LASER_BURST_5</name>
 			<name>SHOTGUN_4</name>
