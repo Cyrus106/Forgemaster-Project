@@ -2492,8 +2492,8 @@
 			<text>Nevermind.</text>
 			<event load="FM_FORGE_WEAPON_LASER_LOAD"/>
 		</choice>
-		
-		<event name="NPC_STORAGE_CHECK_CREATE_FM_SURGE_LASER">
+	</event>
+	<event name="NPC_STORAGE_CHECK_CREATE_FM_SURGE_LASER">
 		<checkCargo/>
 		<text>Currently viewing the 'Multiplicity' Barrage Laser.</text>
 		<choice hidden="false"  blue="false">
