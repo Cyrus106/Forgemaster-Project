@@ -22449,6 +22449,9 @@
 	<mod:findName type = "weaponBlueprint" name = "ION_HEAVY">
 		<mod-overwrite:tip>fm_tip_ion_heavy</mod-overwrite:tip>
 	</mod:findName>
+	
+	<!-- RAILBLENDER -->
+	
 
 
 	<!--    BEAM CRAFT TIPS -->
@@ -22562,7 +22565,6 @@
 	<mod:findName type = "weaponBlueprint" name = "FOCUS_2">
 		<mod-overwrite:tip>fm_tip_focus_2</mod-overwrite:tip>
 	</mod:findName>
-
 
 
 	<!-- GREEN HEART + TERRA NOVA -->
