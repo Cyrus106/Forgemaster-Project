@@ -2942,7 +2942,7 @@
 <event name="STORAGE_CHECK_CREATE_FM_FOCUS_VIRUS">
 	  <checkCargo/>
 	  <text>Currently viewing the 'Aegrotatio' Viral Pinpoint.</text>
-	  <choice hidden="false" req="FM_FOCUS_VIRUS_LIST_1" blue="false">
+	  <choice hidden="false" req="FM_FOCUS_VIRUS_LIST" blue="false">
 	    <text>Craft the 'Aegrotatio' Pinpoint.</text>
 	    <event>
 	      <text>Proceed with crafting?</text>
@@ -2961,7 +2961,7 @@
 	    </event>
 	  </choice>
 		
-	<choice hidden="false" req="FM_FOCUS_VIRUS_LIST_2" blue="false">
+	<choice hidden="false" req="FM_FOCUS_VIRUS_LIST_PLUS" blue="false">
 	    <text>Craft the 'Aegrotatio' Pinpoint.</text>
 	    <event>
 	      <text>Proceed with crafting?</text>
