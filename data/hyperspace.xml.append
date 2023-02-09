@@ -2336,18 +2336,18 @@
 		</req>
 		
 		<req name="FM_FOCUS_VIRUS_FORGE_LIST" type="all">
-		  <name>FM_FOCUS_VIRUS_LIST_1</name>
-		  <name>FM_FOCUS_VIRUS_LIST_2</name>
+		  <name>FM_FOCUS_VIRUS_LIST</name>
+		  <name>FM_FOCUS_VIRUS_LIST_PLUS</name>
 		</req>
 		
 		<!-- AEGROTATIO SUBLIST -->
 		
-		<req name="FM_FOCUS_VIRUS_LIST_1" type="all"> <!--Corrosive Laser 2 + 'Anelace' Bio Pinpoint-->
+		<req name="FM_FOCUS_VIRUS_LIST" type="all"> <!--Corrosive Laser 2 + 'Anelace' Bio Pinpoint-->
 		  <name>FM_CORROSIVE_2</name>
 		  <name>FOCUS_BIO</name>
 		</req>
 		
-		<req name="FM_FOCUS_VIRUS_LIST_2" type="all"> <!--Corrosive Laser 2 + 'Anelace' Bio Pinpoint+-->
+		<req name="FM_FOCUS_VIRUS_LIST_PLUS" type="all"> <!--Corrosive Laser 2 + 'Anelace' Bio Pinpoint+-->
 		  <name>FM_CORROSIVE_2</name>
 		  <name>FOCUS_BIO_PLAYER</name>
 		</req>
@@ -2944,6 +2944,10 @@
 		<event name="STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_3" recursive="true">
 			<checkCargo/>
 		</event>
+		
+		<event name="STORAGE_CHECK_CREATE_FM_FOCUS_VIRUS" recursive="true">
+			<checkCargo/>
+		</event>
 
 
 		<event name="STORAGE_CHECK_CREATE_FLAK_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_FLAK_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->
@@ -3208,7 +3212,7 @@
 			<name>FM_FOCUS_ENERGY_3_LIST</name>
 			<name>FM_FOCUS_ENERGY_CONS_LIST</name>
 			<name>FM_FOCUS_ADAPT_LIST</name>
-			<name>FM_FOCUS_VIRUS_LIST</name>
+			<name>FM_FOCUS_VIRUS_FORGE_LIST</name>
 			<name>FM_BEAM_MINING_3_FORGE_LIST</name>
 		</req>
 
