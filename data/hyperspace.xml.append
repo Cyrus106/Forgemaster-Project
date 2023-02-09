@@ -2336,18 +2336,18 @@
 		</req>
 		
 		<req name="FM_FOCUS_VIRUS_FORGE_LIST" type="all">
-		  <name>FM_FOCUS_VIRUS_LIST_1</name>
-		  <name>FM_FOCUS_VIRUS_LIST_2</name>
+		  <name>FM_FOCUS_VIRUS_LIST</name>
+		  <name>FM_FOCUS_VIRUS_LIST_PLUS</name>
 		</req>
 		
 		<!-- AEGROTATIO SUBLIST -->
 		
-		<req name="FM_FOCUS_VIRUS_LIST_1" type="all"> <!--Corrosive Laser 2 + 'Anelace' Bio Pinpoint-->
+		<req name="FM_FOCUS_VIRUS_LIST" type="all"> <!--Corrosive Laser 2 + 'Anelace' Bio Pinpoint-->
 		  <name>FM_CORROSIVE_2</name>
 		  <name>FOCUS_BIO</name>
 		</req>
 		
-		<req name="FM_FOCUS_VIRUS_LIST_2" type="all"> <!--Corrosive Laser 2 + 'Anelace' Bio Pinpoint+-->
+		<req name="FM_FOCUS_VIRUS_LIST_PLUS" type="all"> <!--Corrosive Laser 2 + 'Anelace' Bio Pinpoint+-->
 		  <name>FM_CORROSIVE_2</name>
 		  <name>FOCUS_BIO_PLAYER</name>
 		</req>
@@ -2942,6 +2942,10 @@
 		</event>
 
 		<event name="STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_3" recursive="true">
+			<checkCargo/>
+		</event>
+		
+		<event name="STORAGE_CHECK_CREATE_FM_FOCUS_VIRUS" recursive="true">
 			<checkCargo/>
 		</event>
 

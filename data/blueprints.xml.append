@@ -22449,7 +22449,12 @@
 	<mod:findName type = "weaponBlueprint" name = "ION_HEAVY">
 		<mod-overwrite:tip>fm_tip_ion_heavy</mod-overwrite:tip>
 	</mod:findName>
-
+	
+	<!-- RAILBLENDER -->
+	
+        <mod:findName type = "weaponBlueprint" name = "SHOTGUN_CHARGE">
+		<mod-overwrite:tip>fm_tip_shotgun_charge</mod-overwrite:tip>
+	</mod:findName>
 
 	<!--    BEAM CRAFT TIPS -->
 
@@ -22564,7 +22569,6 @@
 	</mod:findName>
 
 
-
 	<!-- GREEN HEART + TERRA NOVA -->
 
 	<mod:findName type = "weaponBlueprint" name = "ENERGY_3">
@@ -22573,6 +22577,16 @@
 
 	<mod:findName type = "weaponBlueprint" name = "FOCUS_3">
 		<mod-overwrite:tip>fm_tip_focus_3</mod-overwrite:tip>
+	</mod:findName>
+	
+	<!-- AEGROTATIO -->
+	
+        <mod:findName type = "weaponBlueprint" name = "FOCUS_BIO">
+		<mod-overwrite:tip>fm_tip_focus_bio</mod-overwrite:tip>
+	</mod:findName>
+	
+	<mod:findName type = "weaponBlueprint" name = "FOCUS_BIO_PLAYER">
+		<mod-overwrite:tip>fm_tip_focus_bio</mod-overwrite:tip>
 	</mod:findName>
 
 

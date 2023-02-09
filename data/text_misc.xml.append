@@ -90,16 +90,11 @@ FM: A COMPONENT for forging the Rebel Ripper Laser[50~], alongside the other COM
 FM: A COMPONENT for forging the Hellflash Gatling Gun[30~], alongside the other COMPONENT Vulcan.
 FM: A COMPONENT for forging the Dazhbog Flamethrower[50~], alongside the other COMPONENT called [REDACTED].</text>
 
-<text name="fm_tip_laser_vulcan">Tip: Chain lasers decrease their cooldown every time they fire. Check the green lights on the weapon to see how many times it has fired.
-
-FM: A COMPONENT for forging the Hellflash Gatling Gun[30~], alongside the other COMPONENT Fire Starter.</text>
-
 <!--    DAZHBOG -->
 
 <text name="fm_tip_laser_fire">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
 
 FM: A COMPONENT for forging the Dazhbog Flamethrower[50~], alongside the other COMPONENT called [REDACTED].
-
 FM: A COMPONENT for forging the Hellflash Gatling Gun[30~], alongside the other COMPONENT Vulcan.</text>
 
 <!--    DECAYSER -->
@@ -189,16 +184,16 @@ FM: A COMPONENT for forging the TARANIS Disc Launcher[50~], alongside the other 
 
 <text name="fm_tip_laser_vulcan">Tip: Chain lasers decrease their cooldown every time they fire. Check the green lights on the weapon to see how many times it has fired.
 
-FM: A COMPONENT for forging the Vesta[30-60~], alongside the other COMPONENT Ion Charger I OR Ion Charger II.
+FM: A COMPONENT for forging the Vesta Ion Gatling[30-60~], alongside the other COMPONENT Ion Charger I OR Ion Charger II.
 FM: A COMPONENT for forging the Hellflash Gatling Gun[30~], alongside the other COMPONENT Fire Starter.</text>
 
 <text name="fm_tip_ion_charger_1">Tip: Charge weapons can be charged multiple times to generate more firepower. You can save time and fire the weapon prematurely but it will have fewer shots ready as a result.
 
-FM: A COMPONENT for forging the Vesta[30-60~], alongside the other COMPONENT Vulcan.</text>
+FM: A COMPONENT for forging the Vesta[60~], alongside the other COMPONENT Vulcan.</text>
 
 <text name="fm_tip_ion_charger_2">Tip: Charge weapons can be charged multiple times to generate more firepower. You can save time and fire the weapon prematurely but it will have fewer shots ready as a result.
 
-FM: A COMPONENT for forging the Vesta[30-60~], alongside the other COMPONENT Vulcan.</text>
+FM: A COMPONENT for forging the Vesta[30~], alongside the other COMPONENT Vulcan.</text>
 
 <!--   EXIDIA -->
 <text name="fm_tip_shotgun_3">Tip: Flak weapons target an area instead of a single room. This loss of accuracy means more firepower and speed than their laser counterparts.
@@ -222,7 +217,8 @@ FM: A COMPONENT for forging the Pulse Laser II [50~], alongside the other COMPON
 
 <text name="fm_tip_laser_3">Tip: Each laser shot will be blocked by a single shield bubble, regardless of the laser's damage.
 
-FM: A COMPONENT for forging the Pulse Laser III [60~], alongside the other COMPONENT Energy III.</text>
+FM: A COMPONENT for forging the Pulse Laser III [60~], alongside the other COMPONENT Energy III.
+FM: A COMPONENT for forging the Multiplicity Barrage Laser [60~], alongside the other COMPONENT Flak IV.</text>
 
 <text name="fm_tip_ion_heavy">Tip: For every one point of ion damage, one power bar is removed from the target system and it is then locked for 5 seconds, preventing re-powering. If an ion weapon hits shields, the damage is automatically applied to the Shield System.
 
@@ -370,9 +366,10 @@ FM: A COMPONENT for forging the Terra Nova Pinpoint[50~], alongside the other CO
 
 <text name="fm_tip_shotgun_4">Tip: Flak weapons target an area instead of a single room. This loss of accuracy means more firepower and speed than their laser counterparts.
 
-FM: A COMPONENT for forging the Aether Flak[60~], alongside some forgotten technology.</text>
+FM: A COMPONENT for forging the Aether Flak[60~], alongside some forgotten technology.
+FM: A COMPONENT for forging the Multiplicity Barrage Laser [80~], alongside the other COMPONENT Burst Laser III.</text>
 
-<!--    KHEIMON -->
+<!--  KHEIMON -->
 
 <text name="fm_tip_shotgun_toxic">Tip: Flak weapons target an area instead of a single room. This loss of accuracy means more firepower and speed than their laser counterparts.
 
@@ -387,7 +384,6 @@ FM: A COMPONENT for forging the KHEIMON Anomaly Launcher[45~], alongside the oth
 <text name="fm_tip_shotgun_2">Tip: Flak weapons target an area instead of a single room. This loss of accuracy means more firepower and speed than their laser counterparts.
 
 FM: A COMPONENT for forging the Bronze Metal Flak[10~], alongside the other COMPONENT, ANY Crystal weapon.
-
 FM: A COMPONENT for forging the Carnifex Flak[30~], alongside the other COMPONENT, Lanius and Clonebay 3.</text>
 	
 <!--    RAILBLENDER -->

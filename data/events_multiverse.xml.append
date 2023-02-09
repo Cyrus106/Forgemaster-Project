@@ -2519,8 +2519,6 @@
 			<event load="FM_FORGE_WEAPON_LOAD"/>
 		</choice>
 	</event>
-
-	</event>
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_GODKILLER">
 		<checkCargo/>
 		<text>Currently viewing the God Killer.</text>
