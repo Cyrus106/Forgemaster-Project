@@ -22452,7 +22452,9 @@
 	
 	<!-- RAILBLENDER -->
 	
-
+        <mod:findName type = "weaponBlueprint" name = "SHOTGUN_CHARGE">
+		<mod-overwrite:tip>fm_tip_shotgun_charge</mod-overwrite:tip>
+	</mod:findName>
 
 	<!--    BEAM CRAFT TIPS -->
 
