@@ -2961,7 +2961,7 @@
 	    </event>
 	  </choice>
 		
-	<choice hidden="false" req="FM_FOCUS_VIRUS_LIST_PLUS" blue="false">
+	  <choice hidden="false" req="FM_FOCUS_VIRUS_LIST_PLUS" blue="false">
 	    <text>Craft the 'Aegrotatio' Pinpoint.</text>
 	    <event>
 	      <text>Proceed with crafting?</text>

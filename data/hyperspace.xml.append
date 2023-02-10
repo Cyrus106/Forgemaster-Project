@@ -2335,7 +2335,7 @@
 		  <name>FOCUS_1</name>
 		</req>
 		
-		<req name="FM_FOCUS_VIRUS_FORGE_LIST" type="all">
+		<req name="FM_FOCUS_VIRUS_FORGE_LIST" type="any"> <!--congrats to whoever thougth all was the correct type-->
 		  <name>FM_FOCUS_VIRUS_LIST</name>
 		  <name>FM_FOCUS_VIRUS_LIST_PLUS</name>
 		</req>
