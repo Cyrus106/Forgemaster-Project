@@ -1522,7 +1522,7 @@
 		</item_modify>
 		<variable name="ach_fm_boss_rock" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_ROCK</achievement>
-		<unlockCustomShip shipReq="PLAYER_SHIP_ROCKMAN_3" silent="false">PLAYER_SHIP_TWISTED3_3</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_ROCKMAN_3" silent="false">PLAYER_SHIP_TWISTED3_2</unlockCustomShip>
 
 		<choice hidden="true" req="HID_FREEDOM_ROCK" max_group="1" blue="false">
 			<text>You already have Rockmen Relic of Freedom.</text>
@@ -1600,7 +1600,7 @@
 		</item_modify>
 		<variable name="ach_fm_boss_rock" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_ROCK</achievement>
-		<unlockCustomShip shipReq="PLAYER_SHIP_ROCKMAN_3" silent="false">PLAYER_SHIP_TWISTED3_3</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_ROCKMAN_3" silent="false">PLAYER_SHIP_TWISTED3_2</unlockCustomShip>
 
 		<choice hidden="true" req="HID_FREEDOM_ROCK" max_group="1" blue="false">
 			<text>You already have Rockmen Relic of Freedom.</text>

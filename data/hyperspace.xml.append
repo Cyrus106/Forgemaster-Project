@@ -224,7 +224,7 @@
 				<type>4</type>
 			</unlock>
 		</mod-append:ship>
-		<mod-append:ship name="PLAYER_SHIP_TWISTED5" a="true" b="true" c="true" secret="true"> <!--lanius,shell,Engineer-->
+		<mod-append:ship name="PLAYER_SHIP_TWISTED5" a="false" b="true" c="true" secret="true"> <!--lanius,shell,Engineer-->
 			<splitVictoryAchievement>true</splitVictoryAchievement>
 			<unlock variant="a" silent="false">
 				<type>4</type>
