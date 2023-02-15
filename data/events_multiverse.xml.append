@@ -762,25 +762,52 @@
 
 	<event name="FM_FORGEMASTER_TRADES_NORMAL"> <!--  NORMAL STORE -->
 		<text>"You look like a lad with a discerning eye. What say I show you some weapons who've caught my fancy?"
-			(Note: This will allow you to get a second prompt that lets you craft after shopping!)
+			(Note: This will allow you to get a second prompt that lets you craft after shopping!(take note of that Forge button))
 		</text>  <!-- STORE DIALOGUE CAN GO HERE. CAN ALSO PUT A LIST OF DIALOGUE TO USE RANDOMLY TO SPICE IT UP. see the  <textList> example above!-->
-		<jumpEvent>FORGEMASTER_SECOND_PROMPT</jumpEvent>
+		<!--<jumpEvent>FORGEMASTER_SECOND_PROMPT</jumpEvent>-->
+		<eventButton name="UI_FORGEMASTER_SECOND_PROMPT">
+			<event load="FORGEMASTER_SECOND_PROMPT"/>
+			<image>statusUI/top_forge</image>
+			<location>2</location>
+			<tooltip>Open the Forgemaster menu.</tooltip>
+			<inactiveTooltip>Unavailable: You cannot do this while in danger!</inactiveTooltip>
+			<jumpClear>true</jumpClear>
+			<noDanger>true</noDanger>
+		</eventButton>
 		<store>FM_NORMAL_STORE</store>
 	</event>
 
 	<event name="FM_FORGEMASTER_TRADES_RARE"> <!--  RARE STORE -->
 		<text>"My good lad! I'm in an great mood today and would love to show you some of my special stock. Please lad take your pick and enjoy!"
-			(Note: This will allow you to get a second prompt that lets you craft after shopping!)
+			(Note: This will allow you to get a second prompt that lets you craft after shopping!(take note of that Forge button))
 		</text>  <!-- STORE DIALOGUE CAN GO HERE. CAN ALSO PUT A LIST OF DIALOGUE TO USE RANDOMLY TO SPICE IT UP. see the  <textList> example above!-->
-		<jumpEvent>FORGEMASTER_SECOND_PROMPT</jumpEvent>
+		<!--<jumpEvent>FORGEMASTER_SECOND_PROMPT</jumpEvent>-->
+		<eventButton name="UI_FORGEMASTER_SECOND_PROMPT">
+			<event load="FORGEMASTER_SECOND_PROMPT"/>
+			<image>statusUI/top_forge</image>
+			<location>2</location>
+			<tooltip>Open the Forgemaster menu.</tooltip>
+			<inactiveTooltip>Unavailable: You cannot do this while in danger!</inactiveTooltip>
+			<jumpClear>true</jumpClear>
+			<noDanger>true</noDanger>
+		</eventButton>
 		<store>FM_RARE_STORE</store>
 	</event>
 
 	<event name="FM_FORGEMASTER_TRADES_RARE_PLUS"> <!--  RARE † STORE -->
 		<text>"Ohohohoh lad! One of my old friends passed by with some exotic stock for me to tinker with. Why don't I set aside a few of them for you to purchase if you like? Nothing like spreading joy, eh lad?"
-			(Note: This will allow you to get a second prompt that lets you craft after shopping!)
+			(Note: This will allow you to get a second prompt that lets you craft after shopping!(take note of that Forge button))
 		</text>  <!-- STORE DIALOGUE CAN GO HERE. CAN ALSO PUT A LIST OF DIALOGUE TO USE RANDOMLY TO SPICE IT UP. see the  <textList> example above!-->
-		<jumpEvent>FORGEMASTER_SECOND_PROMPT</jumpEvent>
+		<!--<jumpEvent>FORGEMASTER_SECOND_PROMPT</jumpEvent>-->
+		<eventButton name="UI_FORGEMASTER_SECOND_PROMPT">
+			<event load="FORGEMASTER_SECOND_PROMPT"/>
+			<image>statusUI/top_forge</image>
+			<location>2</location>
+			<tooltip>Open the Forgemaster menu.</tooltip>
+			<inactiveTooltip>Unavailable: You cannot do this while in danger!</inactiveTooltip>
+			<jumpClear>true</jumpClear>
+			<noDanger>true</noDanger>
+		</eventButton>
 		<store>FM_PLUS_STORE</store>
 	</event>
 
@@ -1011,7 +1038,7 @@
 			<text>Yes!</text>
 			<event>
 				<text>You raise your weapons against Alastair, ready to battle. He looks at you gravely and lets out a chuckle. "Lad, I knew from the fire in your eyes that you'd never be satisfied by what I could give you. Let's see if you've the steel to match your attitude!"</text> <!--  PLACEHOLDER TEXT, REPLACE!! -->
-				<clearJumpEvent/>
+				<clearEventButton name="UI_STORAGE_CHECK_BUTTON"/>
 
 				<ship hostile="true"/>
 				<choice hidden="true">
@@ -1077,7 +1104,7 @@
 			<text>Yes!</text>
 			<event>
 				<text>You raise your weapons against Alastair, ready to battle. He looks at you gravely and lets out a chuckle. "Lad, I knew from the fire in your eyes that you'd never be satisfied by what I could give you. Let's see if you've the steel to match your attitude!"</text> <!--  PLACEHOLDER TEXT, REPLACE!! -->
-
+				<clearEventButton name="UI_STORAGE_CHECK_BUTTON"/>
 
 				<ship hostile="true"/>
 				<triggeredEvent name="FORGEMASTER_SPARES_YOU" event="FORGEMASTER_SPARE" playerHull="3" playerCrew="1" thisFight="true"/>
@@ -1200,12 +1227,20 @@
 			<text>Attack while his guard is down!!</text>
 			<event load="FM_ATTACK_SECOND"/>
 		</choice>
+		
+		<choice hidden="true" req="pilot" lvl="1" max_group="6" blue="false"> <!--  Do nothing for now -->
+			<text>Just a moment please. (check your inventory)</text>
+			<event>
+				<text>"Take your time, lad!"</text>
+			</event>
+		</choice>
 
-		<choice hidden="true" req="pilot" lvl="1" max_group="6" blue="false"> <!--  Do nothing -->
+		<choice hidden="true" req="pilot" lvl="1" max_group="7" blue="false"> <!--  Do nothing -->
 			<text>Decline his offer.</text>
 			<event>
 				<text>"Perhaps later, lad! I'm sure if you come back with some interesting things, I'll be able to find you something extraordinary."</text>
 				<eventAlias name="FORGEMASTER_PHONE_EVENT"></eventAlias>
+				<clearEventButton name="UI_STORAGE_CHECK_BUTTON"/>
 				<choice>
 					<text>Do something onboard the ship.</text>
 					<event load="STORAGE_CHECK"/>

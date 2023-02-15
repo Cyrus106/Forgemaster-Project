@@ -797,10 +797,7 @@
 			<hiddenAug>ENERGIZED_ROOM_WEAPONS</hiddenAug>
 			<hiddenAug>ENERGIZED_ROOM_MEDBAY</hiddenAug>
 			<shipIcons>
-				<shipIcon>icon_forgemaster_hull</shipIcon>
-				<shipIcon>icon_fm_med</shipIcon>
 				<shipIcon>icon_threat</shipIcon>
-				<shipIcon>icon_energized_fm</shipIcon>
 			</shipIcons>
 			<rooms>
 				<room id="5"> <!--medbay-->
@@ -846,10 +843,7 @@
 			<hiddenAug>ENERGIZED_ROOM_WEAPONS</hiddenAug>
 			<hiddenAug>ENERGIZED_ROOM_MEDBAY</hiddenAug>
 			<shipIcons>
-				<shipIcon>icon_forgemaster_hull</shipIcon>
-				<shipIcon>icon_fm_med</shipIcon>
 				<shipIcon>icon_threat</shipIcon>
-				<shipIcon>icon_energized_fm</shipIcon>
 			</shipIcons>
 			<rooms>
 				<room id="5"> <!--medbay-->
@@ -1119,6 +1113,7 @@
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
+				<shipIcon>icon_no2</shipIcon>
 				<shipIcon>icon_fm_gozer_splitter</shipIcon>
 			</shipIcons>
 			<crew>
@@ -1194,10 +1189,10 @@
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
+				<shipIcon>icon_resist_variant</shipIcon>
 				<shipIcon>icon_pheromones</shipIcon>
 				<shipIcon>icon_rock_armor</shipIcon>
 				<shipIcon>icon_sluggel</shipIcon>
-				<shipIcon>icon_resist_variant</shipIcon>
 			</shipIcons>
 			<rooms>
 				<room id="9">
@@ -1352,6 +1347,7 @@
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
+				<shipIcon>icon_resist_variant</shipIcon>
 			</shipIcons>
 			<rooms>
 				<room id="15">
@@ -1421,7 +1417,7 @@
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
-				<shipIcon>icon_resist</shipIcon>
+				<shipIcon>icon_resist_variant</shipIcon>
 			</shipIcons>
 			<hiddenAug>UPG_TECH_EXTINGUISHERS</hiddenAug>
 			<rooms>
@@ -1452,8 +1448,8 @@
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
+				<shipIcon>icon_resist_variant</shipIcon>
 				<shipIcon>icon_no2</shipIcon>
-				<shipIcon>icon_resist</shipIcon>
 				<shipIcon>icon_nano_defense</shipIcon>
 			</shipIcons>
 			<rooms>
@@ -1522,8 +1518,8 @@
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
-				<shipIcon>icon_fm_lostsun_deathtimer</shipIcon>
 				<shipIcon>icon_resist</shipIcon>
+				<shipIcon>icon_fm_lostsun_deathtimer</shipIcon>
 				<shipIcon>icon_zoltan_shield</shipIcon>
 			</shipIcons>
 			<hiddenAug>SYSTEM_CASING_NEW</hiddenAug>
@@ -1622,14 +1618,15 @@
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
-				<rooms>
-					<room id="6">
-						<roomAnim renderLayer="0">resist_2x2</roomAnim>
-						<roomAnim renderLayer="3">resist_icon</roomAnim>
-						<sysDamageResistChance>30</sysDamageResistChance>
-					</room>
-				</rooms>
+				<shipIcon>icon_resist_variant</shipIcon>
 			</shipIcons>
+			<rooms>
+				<room id="6">
+					<roomAnim renderLayer="0">resist_2x2</roomAnim>
+					<roomAnim renderLayer="3">resist_icon</roomAnim>
+					<sysDamageResistChance>30</sysDamageResistChance>
+				</room>
+			</rooms>
 			<noJump/>
 			<crew>
 				<leech_ampere room="6"/> <!--weapon-->
@@ -1650,13 +1647,8 @@
 
 		<mod-append:customShip name="FM_GUNHYDRA_ENEMY">
 			<shipIcons>
-
-
+				<shipIcon>icon_resist_variant</shipIcon>
 				<shipIcon>icon_shieldboost</shipIcon>
-
-				<shipIcon>icon_droneboost</shipIcon>
-				<shipIcon>icon_resist</shipIcon>
-
 			</shipIcons>
 			<hpCap>50</hpCap>
 			<crew>
@@ -10000,6 +9992,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 
 			</statBoosts>
+			<icon>icon_fm_med</icon>
 		</aug>
 
 		<aug name="FM_SUPER_AUTO_COOLDOWN">
@@ -10039,6 +10032,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<priority>0</priority>
 				</statBoost>
 			</statBoosts>
+			<icon>icon_forgemaster_hull</icon>
 		</aug>
 
 		<aug name="FM_CRUCIBLE_PLATING_PLAYER">
@@ -13481,6 +13475,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					</systemList>
 				</statBoost>
 			</statBoosts>
+			<icon>icon_energized_fm</icon>
 		</aug>
 
 

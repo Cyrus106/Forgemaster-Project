@@ -197,8 +197,8 @@
 	<maxPower amount="36" />
 	<crewCount amount="1" max="4" class="mantis_free" />
 	<boardingAI>sabotage</boardingAI>
-	<aug name="EX_DRONE_SPEED" />
-	<aug name="DRONE_SPEED" />
+	<aug name="UPG_DRONE_SPEED" />
+	<aug name="UPG_DRONE_SPEED" />
 	<aug name="TRINKET_SHIELD" />
 	<cloakImage>mt_boss_kestrel</cloakImage>
 </shipBlueprint>
