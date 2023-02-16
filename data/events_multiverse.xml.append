@@ -1203,7 +1203,7 @@
 	<event name="FORGEMASTER_SECOND_PROMPT" > <!--  Triggers if you visit the store, then try to jump -->
 		<text>Alastair speaks up over your comms "Before you go lad, are you sure you don't need to craft anything?</text>
 		<eventAlias name="STORAGE_CHECK_REAL" jumpClear="true"></eventAlias>
-		<eventAlias name="FORGEMASTER_PHONE_EVENT">FORGEMASTER_SECOND_PROMPT_LOAD</eventAlias>
+		<eventAlias name="FORGEMASTER_PHONE_EVENT" jumpClear="true">FORGEMASTER_SECOND_PROMPT_LOAD</eventAlias>
 
 
 		<choice hidden="true" req="FM_FORGE_LIST_CHECK" lvl="1" max_group="3" blue="true"> <!--  CRAFT MENU -->
