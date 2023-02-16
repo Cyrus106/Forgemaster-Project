@@ -1038,7 +1038,7 @@
 			<text>Yes!</text>
 			<event>
 				<text>You raise your weapons against Alastair, ready to battle. He looks at you gravely and lets out a chuckle. "Lad, I knew from the fire in your eyes that you'd never be satisfied by what I could give you. Let's see if you've the steel to match your attitude!"</text> <!--  PLACEHOLDER TEXT, REPLACE!! -->
-				<clearEventButton name="UI_STORAGE_CHECK_BUTTON"/>
+				<clearEventButton name="UI_FORGEMASTER_SECOND_PROMPT"/>
 
 				<ship hostile="true"/>
 				<choice hidden="true">
@@ -1104,7 +1104,7 @@
 			<text>Yes!</text>
 			<event>
 				<text>You raise your weapons against Alastair, ready to battle. He looks at you gravely and lets out a chuckle. "Lad, I knew from the fire in your eyes that you'd never be satisfied by what I could give you. Let's see if you've the steel to match your attitude!"</text> <!--  PLACEHOLDER TEXT, REPLACE!! -->
-				<clearEventButton name="UI_STORAGE_CHECK_BUTTON"/>
+				<clearEventButton name="UI_FORGEMASTER_SECOND_PROMPT"/>
 
 				<ship hostile="true"/>
 				<triggeredEvent name="FORGEMASTER_SPARES_YOU" event="FORGEMASTER_SPARE" playerHull="3" playerCrew="1" thisFight="true"/>
@@ -1240,7 +1240,7 @@
 			<event>
 				<text>"Perhaps later, lad! I'm sure if you come back with some interesting things, I'll be able to find you something extraordinary."</text>
 				<eventAlias name="FORGEMASTER_PHONE_EVENT"></eventAlias>
-				<clearEventButton name="UI_STORAGE_CHECK_BUTTON"/>
+				<clearEventButton name="UI_FORGEMASTER_SECOND_PROMPT"/>
 				<choice>
 					<text>Do something onboard the ship.</text>
 					<event load="STORAGE_CHECK"/>
