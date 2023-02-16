@@ -10655,12 +10655,12 @@
 			Beam Length: 90
 			Beam Speed: 5
 
-			Base Damage: 1 (Per Room)
-                        Shield Pierce: 1
+			Base Hull Damage: 1 (Per Room)
 			Damage Per Tile Hit: 1
 			Crew Damage Per Tile Hit: 15
-			Total System Damage: 2
-			Total Crew Damage: 30
+			Total System Damage: 1
+			Total Crew Damage: 15
+            Shield Piercing: 1
 
 			Breach Chance: 20%
 
@@ -10673,13 +10673,12 @@
 			Beam Length: 90
 			Beam Speed: 5
 
-			Base Damage: 2 (Per Room)
+			Base Hull Damage: 1 (Per Room)
 			Damage Per Tile Hit: 1
 			Crew Damage Per Tile Hit: 15
-			Total System Damage: 2
-			Total Crew Damage: 30
-
-			Breach Chance: 20%
+			Total System Damage: 1
+			Total Crew Damage: 15
+			Shield Piercing: 1
 
 			Breach Chance: 20%
 		</tooltipOverride>
@@ -10738,11 +10737,12 @@
 			Beam Length: 90
 			Beam Speed: 5
 
-			Base Damage: 2 (Per Room)
+			Base Hull Damage: 1 (Per Room)
 			Damage Per Tile Hit: 1
 			Crew Damage Per Tile Hit: 15
-			Total System Damage: 2
-			Total Crew Damage: 30
+			Total System Damage: 1
+			Total Crew Damage: 15
+            Shield Piercing: 1
 
 			Breach Chance: 20%
 
@@ -10755,16 +10755,17 @@
 			Beam Length: 90
 			Beam Speed: 5
 
-			Base Damage: 2 (Per Room)
+			Base Hull Damage: 1 (Per Room)
 			Damage Per Tile Hit: 1
 			Crew Damage Per Tile Hit: 15
-			Total System Damage: 2
-			Total Crew Damage: 30
+			Total System Damage: 1
+			Total Crew Damage: 15
+            Shield Piercing: 1
 
 			Breach Chance: 20%
 		</tooltipOverride>
-		<damage>2</damage>
-		<sp>0</sp>
+		<damage>1</damage>
+		<sp>1</sp>
 		<fireChance>0</fireChance>
 		<breachChance>2</breachChance>
 		<cooldown>22</cooldown>
@@ -10818,11 +10819,12 @@
 			Beam Length: 90
 			Beam Speed: 5
 
-			Base Damage: 2 (Per Room)
+			Base Hull Damage: 1 (Per Room)
 			Damage Per Tile Hit: 1
 			Crew Damage Per Tile Hit: 15
-			Total System Damage: 2
-			Total Crew Damage: 30
+			Total System Damage: 1
+			Total Crew Damage: 15
+            Shield Piercing: 1
 
 			Breach Chance: 20%
 
@@ -10835,16 +10837,17 @@
 			Beam Length: 90
 			Beam Speed: 5
 
-			Base Damage: 2 (Per Room)
+			Base Hull Damage: 1 (Per Room)
 			Damage Per Tile Hit: 1
 			Crew Damage Per Tile Hit: 15
-			Total System Damage: 2
-			Total Crew Damage: 30
+			Total System Damage: 1
+			Total Crew Damage: 15
+            Shield Piercing: 1
 
 			Breach Chance: 20%
 		</tooltipOverride>
-		<damage>2</damage>
-		<sp>0</sp>
+		<damage>1</damage>
+		<sp>1</sp>
 		<fireChance>0</fireChance>
 		<breachChance>2</breachChance>
 		<cooldown>22</cooldown>
@@ -10899,10 +10902,10 @@
 			Beam Speed: 11
 
 			Ion Damage Per Tile Hit: 1
-			Stun Chance: 100% (3 seconds long)
 			Shield Piercing: 10
 
 			Breach Chance: 70%
+			Stun Chance: 100% (3 seconds long)
 
 			Buy/Sell Price: 120~/60~
 		</descriptionOverride>
@@ -10913,10 +10916,10 @@
 			Beam Speed: 11
 
 			Ion Damage Per Tile Hit: 1
-			Stun Chance: 100% (3 seconds long)
 			Shield Piercing: 10
-
+			
 			Breach Chance: 70%
+			Stun Chance: 100% (3 seconds long)
 		</tooltipOverride>
 		<damage>0</damage>
 		<sp>11</sp>
@@ -21532,7 +21535,7 @@
 
   <!-- Modular Hull -->
 	<augBlueprint name="FM_MODULAR_HULL">
-		<title>Alastair's Modular Hull</title>
+		<title>Alastair's Modular Hull (tm)</title>
 		<desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself. Provides 5% resistance to hull damage even with no modules Installed.</desc>
 		<cost>40</cost>
 		<rarity>0</rarity>
@@ -22452,7 +22455,7 @@
 	
 	<!-- RAILBLENDER -->
 	
-        <mod:findName type = "weaponBlueprint" name = "SHOTGUN_CHARGE">
+    <mod:findName type = "weaponBlueprint" name = "SHOTGUN_CHARGE">
 		<mod-overwrite:tip>fm_tip_shotgun_charge</mod-overwrite:tip>
 	</mod:findName>
 
@@ -22581,7 +22584,7 @@
 	
 	<!-- AEGROTATIO -->
 	
-        <mod:findName type = "weaponBlueprint" name = "FOCUS_BIO">
+    <mod:findName type = "weaponBlueprint" name = "FOCUS_BIO">
 		<mod-overwrite:tip>fm_tip_focus_bio</mod-overwrite:tip>
 	</mod:findName>
 	
