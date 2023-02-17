@@ -5367,7 +5367,7 @@
 
 	<crew> <!-- Plated Shell Crew -->
 		<race name="fm_plated_shell">
-			<maxHealth>120</maxHealth>
+			<maxHealth>100</maxHealth>
 			<repairSpeed>1.3</repairSpeed>
 			<canFight>true</canFight>
 			<canRepair>true</canRepair>
@@ -5418,7 +5418,7 @@
 				<friendlyFire>false</friendlyFire>
 				<shipFriendlyFire>true</shipFriendlyFire>
 				<buttonText>POLISH</buttonText>
-				<tooltip>Ready:  Damage enemies for 15hp, while healing for 20hp. Become immune to stuns, deal 20% extra ranged damage, gaining 70% resistance to all damage, while moving at 1x speed for the duration.</tooltip>
+				<tooltip>Ready:  Damage enemies for 15hp, while healing for 20hp. Become immune to stuns, deal 20% extra ranged damage, gaining 70% resistance to all damage, while moving at 2x speed for the duration.</tooltip>
 				<cooldownColor r="202" g="79" b="226"/>
 				<activateWhenReady enemiesOnly="true">false</activateWhenReady>
 				<temporaryEffect>
@@ -5431,7 +5431,7 @@
 					<canRepair>true</canRepair>
 					<canSabotage>true</canSabotage>
 					<canMan>true</canMan>
-					<moveSpeedMultiplier>1</moveSpeedMultiplier>
+					<moveSpeedMultiplier>2</moveSpeedMultiplier>
 					<stunMultiplier>0</stunMultiplier>
 					<rangedDamageMultiplier>1.2</rangedDamageMultiplier>
 					<animSheet baseVisible="true">pheromones</animSheet>
