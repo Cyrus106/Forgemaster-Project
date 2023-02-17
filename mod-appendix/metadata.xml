@@ -1,12 +1,12 @@
 <metadata>
   <title><![CDATA[ FTL: FORGEMASTER]]></title>
   <threadUrl><![CDATA[https://subsetgames.com/forum/viewtopic.php?f=11&t=35332]]></threadUrl>
-  <author><![CDATA[ Cyrus106, Abstrusity, Maxine, Radish, and SeaDragonet. "and most importantly Kommandant_Julk"]]></author>
-   <version><![CDATA[ 0.4.0 ]]></version>
+  <author><![CDATA[ Cyrus106, Abstrusity, Maxine, Radish, SeaDragonet, Kommandant_Julk, and DemonFusion. ]]></author>
+   <version><![CDATA[ 0.5 ]]></version>
   <description>
 <![CDATA[
 A major expansion for Multiverse! It includes new NPCs, quests, weapons, sectors, bosses, and more. Drones and augments are coming soon! The primary new feature is: the weapon crafting system, which allows you to combine
-numerous weapon combinations into stronger variants (or at the very least, side-grades).These weapons are intended to shine brightest when used on ships with less weapon slots and make use of the newest most complex features hyperspace has to offer for a completely unique feel! New tooltips will appear on weapon components that can be used for crafting!
+numerous weapon combinations into stronger variants (or at the very least, side-grades).These weapons are intended to shine brightest when used on ships with less weapon slots and make use of the newest, most complex features hyperspace has to offer for a completely unique feel! New tooltips will appear on weapon components that can be used for crafting!
 
 (experimental build with optimized forgemaster spawning by Julk)
 changes:
@@ -117,7 +117,7 @@ hotfix 26
 - gave augments without desc/prices exactly that and removd a few duplicate price lines
 0.4.0 Features:
 
---44 weapons (including the 0.3.4 weapons of course)
+-44 weapons (including the 0.3.4 weapons of course)
 -5 new drones (2 exclusive to one line of ships)
 -A few new augments
 -A new NPC, Alastair the Forgemaster who will now be the facility used for crafting Forgemaster weapons. He will charge you for his services of course, so crafting is no longer free and crafting prices will be used to attempt to balance the risk / reward of each craft.
@@ -129,31 +129,15 @@ hotfix 26
 -3 new unique crew
 and MUCH MORE!
 
+0.5 Features:
 
--Added The Flak Heavy Matter Line: Initial Recipe: Flak I or II, any Crystal Weapon. Can be upgraded
- Level 1---->Level 10 Upgradable Flak weapons. Requires one of any crystal, and two of any elite crystal weapon, plus 2000 scrap to fully upgrade.
--Added Photon Laser I and Photon Laser II
--Added ‘Rebel Ripper’ Laser
--Added Valefor Explosion beam
--Added ‘Ba-pef’ Minelauncher!
--And several more new weapons to craft!
--Added 6 new ships to unlock!
--Added 2 new quest
--Added 2 unique augments
--Added 2 unique drones (will be craftable in 0.4.1)
--Added 3 crew lab upgrades for a rock-type elite
--Added Special "Blue Options" while having certain Forgemaster weapons.
-
-
-
-
-
-Intended features to be added in future updates:
--FAR more weapons
--Balance changes
--Craftable weapon surges (Will need to bugtest why weapon surges cancel the Flagship's surges)
--Craftable Drone surges
--And more! (Craftable Missile Vengeance, anyone?)
+Excluding all the features from previous versions, 0.5 introduces;
+-14 new craftable weapons!
+-A new line of weapons, found in a certain kind of sector.
+-A new upgrade system called the 'Modular Hull', which you can buy from the Forgemaster at his event!
+-A whopping 19 new ship layouts, each obtained by beating the Twisted Renegades with their un-twisted ship variants!
+-Drastically changed weapon prices, now ranging from 30-140 scrap.
+-A new button at the Forgemaster, allowing you to re-enter the Forgemasters menu multiple times at the same beacon!
 
 
 
@@ -175,7 +159,7 @@ Intended features to be added in future updates:
 
  -Thanks to Radish for the Bullsquid sprite.
 
- -Thanks to R4 for the Crystal Beam Sprite.
+ -Thanks to R4 for the Crystal Pinpoint sprite, the new Twisted Seperatist (ship and crew) sprite, all the Corrosive lasers and pinpoint,
 
  -Thanks to BetelgeuseBear for the Hacker Drone, and Cursed Flak sprites. And I'm sure many other awesome art contributions as well.
 
@@ -193,7 +177,9 @@ Intended features to be added in future updates:
 
  -Thanks to The Return of Florida Man for countless weapon concepts, crew character development concepts, and crazy weird bug fixes
 
- -A Special thanks for Julk for some code contributions regarding the ending marker, Twisted Lostsun timer and Forgemaster spawning behaviour.
+ -Thanks to Vertaalfout for help with many Twisted Ships, weapon tips, and for being a bozo
+
+ -Thanks to Prince Nexus for the Hellflash
 
  -An EXTRA SPECIAL THANKS to the ENTIRE Playtester team!
 
@@ -206,11 +192,27 @@ Intended features to be added in future updates:
  --𝑍𝕖ɴ𝕚𝑡ʜ
  --cgjunior
  --emir57
- --Kommandant_Julk
  --The Return of Florida Man
  --Uielicious
  --Wildcatsson
  --Xears
+ --Admiral Billy
+ --Dalvest
+ --R4V3-0N
+ --Crimsonaut
+ --Zuggo
+ --Shifting Walls
+ --Vertaalfout
+ --Eskephor
+ --Sally Spartan
+ --Nikonastra (Florida Man Unmasked)
+ --Melooo17
+ --Prince Nexus
+ --Purify
+ --Some1
+ --Wildcatsson
+ --Xears
+ --Facided
 
  -Numerous weapon sounds from Zapsplat.com
 If I forget you in the credits, PLEASE LET ME KNOW. I prefer to credit people
