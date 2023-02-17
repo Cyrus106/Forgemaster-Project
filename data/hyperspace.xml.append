@@ -1923,63 +1923,6 @@
 
 		<bossShip>FM_BOSS_LOSTSUN1</bossShip>
 
-
-		<event name="FM_BOSS_CLAN1_SHIP_DESTROYED">
-			<unlockCustomShip shipReq="PLAYER_SHIP_CLAN" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
-			<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
-			<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_3" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
-		</event>
-		<event name="FM_BOSS_CLAN1_SHIP_DESTROYED2">
-			<unlockCustomShip shipReq="PLAYER_SHIP_CLAN" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
-			<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
-			<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_3" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
-		</event>
-		<event name="FM_BOSS_CLAN1_SHIP_DESTROYED_NO_CORDS">
-			<unlockCustomShip shipReq="PLAYER_SHIP_CLAN" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
-			<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
-			<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_3" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
-		</event>
-		<event name="FM_BOSS_CLAN1_SHIP_DESTROYED2_NO_CORDS">
-			<unlockCustomShip shipReq="PLAYER_SHIP_CLAN" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
-			<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
-			<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_3" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
-		</event>
-		<event name="FM_BOSS_DUSK1_SHIP_DESTROYED">
-			<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
-			<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
-			<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_3" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
-		</event>
-		<event name="FM_BOSS_DUSK1_SHIP_DESTROYED2">
-			<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
-			<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
-			<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_3" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
-		</event>
-		<event name="FM_BOSS_DUSK1_SHIP_DESTROYED_NO_CORDS">
-			<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
-			<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
-			<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_3" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
-		</event>
-		<event name="FM_BOSS_DUSK1_SHIP_DESTROYED2_NO_CORDS">
-			<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
-			<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
-			<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_3" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
-		</event>
-		<event name="FM_BOSS_MANTIS1_DESTROYED">
-			<unlockCustomShip shipReq="PLAYER_SHIP_HIVE" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
-			<unlockCustomShip shipReq="PLAYER_SHIP_HIVE_2" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
-			<unlockCustomShip shipReq="PLAYER_SHIP_HIVE_3" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
-			<unlockCustomShip shipReq="VANILLA_SHIP_MANTIS" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
-			<unlockCustomShip shipReq="VANILLA_SHIP_MANTIS_2" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
-			<unlockCustomShip shipReq="VANILLA_SHIP_MANTIS_3" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
-		</event>
-		<event name="FM_BOSS_MANTIS1_DESTROYED2">
-			<unlockCustomShip shipReq="PLAYER_SHIP_HIVE" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
-			<unlockCustomShip shipReq="PLAYER_SHIP_HIVE_2" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
-			<unlockCustomShip shipReq="PLAYER_SHIP_HIVE_3" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
-			<unlockCustomShip shipReq="VANILLA_SHIP_MANTIS" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
-			<unlockCustomShip shipReq="VANILLA_SHIP_MANTIS_2" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
-			<unlockCustomShip shipReq="VANILLA_SHIP_MANTIS_3" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
-		</event>
 	</events>
 
 
