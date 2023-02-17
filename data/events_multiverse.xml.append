@@ -654,7 +654,7 @@
 		</choice>
 
 		<choice blue="false">
-			<text>Check out the "Modular Hull section"</text>
+			<text>Check out the "Modular Hull" section.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
 			</event>
@@ -895,7 +895,7 @@
 		</choice>
 
 		<choice blue="false">
-			<text>Check out the "Modular Hull section"</text>
+			<text>Check out the "Modular Hull" section.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
 			</event>
@@ -970,7 +970,7 @@
 		</choice>
 
 		<choice blue="false">
-			<text>Check out the "Modular Hull section"</text>
+			<text>Check out the "Modular Hull" section.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
 			</event>
@@ -1135,7 +1135,7 @@
 				</choice>
 
 				<choice req="pilot" lvl="1" blue="false" max_group="4">
-					<text>Check the "Modular Hull section" on your way out.</text>
+					<text>Check the "Modular Hull" section on your way out.</text>
 					<event>
 						<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
 					</event>
@@ -1216,7 +1216,7 @@
 			<event load="FM_NPC_CREATE_NONE"/>
 		</choice>
 		<choice req="pilot" lvl="1" blue="false" max_group="4">
-			<text>Check the "Modular Hull section" on your way out.</text>
+			<text>Check the "Modular Hull" section on your way out.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
 			</event>
@@ -1229,7 +1229,7 @@
 		</choice>
 		
 		<choice hidden="true" req="pilot" lvl="1" max_group="6" blue="false"> <!--  Do nothing for now -->
-			<text>Just a moment please. (check your inventory)</text>
+			<text>Just a moment please.</text>
 			<event>
 				<text>"Take your time, lad!"</text>
 			</event>
