@@ -72,12 +72,10 @@
 
 	<mod:findLike type="scripts">
 		<mod-append:script>data/inferno_core_scripts/dependancy.lua</mod-append:script><!--The script folders are named differently because of issues when two script files share the same path.-->
+		<mod-append:script>data/inferno_core_scripts/utility.lua</mod-append:script>
+		<mod-append:script>data/inferno_core_scripts/callbacks.lua</mod-append:script>
 		<mod-append:script>data/inferno_core_scripts/systems.lua</mod-append:script>
 		<mod-append:script>data/inferno_core_scripts/weapons.lua</mod-append:script>
-		<mod-append:script>data/inferno_core_scripts/artillery.lua</mod-append:script>
-		<mod-append:script>data/inferno_core_scripts/projectiles.lua</mod-append:script>
-		<mod-append:script>data/inferno_core_scripts/triggered_events.lua</mod-append:script>
-		<mod-append:script>data/inferno_core_scripts/augments.lua</mod-append:script>
 	</mod:findLike>
 
 	<augments>
