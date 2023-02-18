@@ -15,7 +15,7 @@ function(ship, weapon, projectile)
         local system_target = sys_list[Hyperspace.random32() % sys_list:size()]
         projectile.target = system_target.location
       else  --make the rest hit a random room
-        projectile.target = other:GetRandomRoomCenter()
+        projectile.target = otherShip:GetRandomRoomCenter()
       end
       projectile.entryAngle = -1 --Sets it to randomize on entry
   end
