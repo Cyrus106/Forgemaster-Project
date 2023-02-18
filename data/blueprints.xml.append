@@ -2531,7 +2531,7 @@
 		<desc>Elite Rock Crew. The Forgemaster's disciples. Experts in their craft.</desc>
 		<title>Plated Rockmen</title>
 		<short>Plated</short>
-		<cost>175</cost>
+		<cost>75</cost>
 		<bp>4</bp>
 		<rarity>0</rarity>
 		<powerList>
@@ -2546,11 +2546,11 @@
 		<desc>Elite Shell Crew. The Forgemaster's disciples. Experts at repairing, though these plated decided to take a more combative approach to their craft.</desc>
 		<title>Plated Shell</title>
 		<short>Plated</short>
-		<cost>175</cost>
+		<cost>75</cost>
 		<bp>4</bp>
 		<rarity>0</rarity>
 		<powerList>
-			<power>120 Health, takes 30% less damage in combat. Moves at 0.7x speed, and repairs at 1.3x speed.</power>
+			<power>100 Health, takes 30% less damage in combat. Moves at 0.7x speed, and repairs at 1.3x speed.</power>
 			<power>1.4x damage, 1.2x sabotage.</power>
 			<power>Extinguishes fires very quickly. 30% reduced stun duration. Only takes 20% damage from fire.</power>
 			<power>Active ability: Repairs 1 hull damage, and 2 system damage to the current room. Damages enemies for 15 HP, whilst giving itself an array of buffs for 15s.</power>
@@ -12212,7 +12212,7 @@
 		<sp>0</sp>
 		<fireChance>0</fireChance>
 		<breachChance>2</breachChance>
-		<cooldown>10</cooldown>
+		<cooldown>8</cooldown>
 		<power>2</power>
 		<cost>110</cost>
 		<bp>10</bp>
@@ -12258,7 +12258,7 @@
 		<sp>0</sp>
 		<fireChance>0</fireChance>
 		<breachChance>2</breachChance>
-		<cooldown>10</cooldown>
+		<cooldown>8</cooldown>
 		<power>2</power>
 		<cost>210</cost>
 		<bp>10</bp>
@@ -12305,7 +12305,7 @@
 		<sp>0</sp>
 		<fireChance>0</fireChance>
 		<breachChance>3</breachChance>
-		<cooldown>11</cooldown>
+		<cooldown>9</cooldown>
 		<power>2</power>
 		<cost>360</cost>
 		<bp>10</bp>
@@ -12352,7 +12352,7 @@
 		<sp>0</sp>
 		<fireChance>0</fireChance>
 		<breachChance>3</breachChance>
-		<cooldown>11</cooldown>
+		<cooldown>9</cooldown>
 		<power>2</power>
 		<cost>560</cost>
 		<bp>10</bp>
@@ -12399,7 +12399,7 @@
 		<sp>0</sp>
 		<fireChance>0</fireChance>
 		<breachChance>3</breachChance>
-		<cooldown>12</cooldown>
+		<cooldown>10</cooldown>
 		<power>2</power>
 		<cost>810</cost>
 		<bp>10</bp>
@@ -12446,7 +12446,7 @@
 		<sp>0</sp>
 		<fireChance>0</fireChance>
 		<breachChance>3</breachChance>
-		<cooldown>12</cooldown>
+		<cooldown>10</cooldown>
 		<power>2</power>
 		<cost>1140</cost>
 		<bp>10</bp>
@@ -12493,7 +12493,7 @@
 		<sp>0</sp>
 		<fireChance>0</fireChance>
 		<breachChance>3</breachChance>
-		<cooldown>13</cooldown>
+		<cooldown>11</cooldown>
 		<power>2</power>
 		<cost>1400</cost>
 		<bp>10</bp>
@@ -12540,7 +12540,7 @@
 		<sp>0</sp>
 		<fireChance>0</fireChance>
 		<breachChance>4</breachChance>
-		<cooldown>13</cooldown>
+		<cooldown>11</cooldown>
 		<power>2</power>
 		<cost>1660</cost>
 		<bp>10</bp>
@@ -12587,7 +12587,7 @@
 		<sp>0</sp>
 		<fireChance>0</fireChance>
 		<breachChance>4</breachChance>
-		<cooldown>13</cooldown>
+		<cooldown>11</cooldown>
 		<power>2</power>
 		<cost>1920</cost>
 		<bp>10</bp>
@@ -12635,7 +12635,7 @@
 		<hullBust>1</hullBust>
 		<fireChance>0</fireChance>
 		<breachChance>4</breachChance>
-		<cooldown>13</cooldown>
+		<cooldown>11</cooldown>
 		<power>2</power>
 		<cost>2250</cost>
 		<bp>10</bp>
