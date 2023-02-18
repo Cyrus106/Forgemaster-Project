@@ -80,6 +80,7 @@ function()
   selfArm:render() 
 end)
 script.on_game_event("START_BEACON_REAL", false, function() selfArm:reset() end)
+script.on_game_event("FMCORE_ONJUMP", false, function() selfArm:reset() end)
 script.on_game_event("FMCORE_ONDAMAGE", false, function() selfArm:onDamage() end)
 script.on_game_event("FM_HULLKILL_TRACKER_EVENT", false, function() selfArm:redeem() end) --We can find a better check for kills later.
 script.on_game_event("FM_CREWKILL_TRACKER_EVENT", false, function() selfArm:redeem() end)
