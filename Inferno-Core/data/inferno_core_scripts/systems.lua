@@ -6,7 +6,7 @@ local randomInt = mods.inferno.randomInt
 script.on_system_event(
     Defines.SystemEvents.ON_SHUTDOWN,
     function(ship, sys) 
-      if sys:GetId()==14 then
+      if sys:GetId() == 14 then
         sys:LockSystem(4)
       end
     end,
