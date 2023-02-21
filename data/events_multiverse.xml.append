@@ -1518,12 +1518,12 @@
 		</choice>
 
 		<choice req="FM_CHAINGUN_FIRE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Replace the barrels of the Vulcan with the Fire Starter's heat sinks to forge the 'Hellflash' Gatling Gun. [Cost: 30~]</text>
+			<text>Replace the barrels of the Vulcan with the Fire-Starter's heat sinks to forge the 'Hellflash' Gatling Gun. [Cost: 30~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_CHAINGUN_FIRE"/>
 		</choice>
 
 		<choice req="FM_CHAINGUN_FIRE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
-			<text>You must have a Vulcan and a Fire Starter to forge this weapon.</text>
+			<text>You must have a Vulcan and a Fire-Starter to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
@@ -2036,12 +2036,12 @@
 
 
 		<choice req="FM_RVS_AC_CHARGE_FORGE_LIST" lvl="1" blue="false" hidden="true">
-		  <text>Combine two to four Autocannon 1s to forge the Volley Gun.[Cost: 20-60~]</text>
+		  <text>[GO BALLISTIC] Combine two to four Autocannon 1s to forge the Volley Gun.[Cost: 20-60~]</text>
 		  <event load="NPC_STORAGE_CHECK_CREATE_FM_RVS_AC_CHARGE"/>
 		</choice>
 
 		<choice req="FM_RVS_AC_CHARGE_FORGE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
-		  <text>You must have two to four Autocannon 1s to forge this weapon.</text>
+		  <text>[GO BALLISTIC] You must have two to four Autocannon 1s to forge this weapon.</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
 
