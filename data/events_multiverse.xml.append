@@ -6362,7 +6362,7 @@
 	</event>
 
 	<event name="FM_MODULAR_HULL_MAIN">
-		<text>This is where you can install and modify your very own Modular Hull (tm)!</text>
+		<text>This is where you can install and modify your very own Modular Hull!</text>
 		<choice req="FM_MODULAR_HULL" lvl="0" max_lvl="0" max_group="2" blue="false" hidden="true"><!--first install of hull-->
 			<text>Install modular armor</text>
 			<event>
@@ -6822,11 +6822,11 @@
 
 	<!--initial armor base installation-->
 	<event name="FM_MODULAR_HULL_INSTALL">
-		<text>Do you wish to install your very own Modular Hull (tm)? [5% hull dmg resist, allows installation of further upgrades.]</text>
+		<text>Do you wish to install your very own Modular Hull? [5% hull dmg resist, allows installation of further upgrades.]</text>
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Install the Modular Hull.</text>
 			<event>
-				<text>Alastair's Modular Hull (tm) has been installed!</text>
+				<text>Alastair's Modular Hull has been installed!</text>
 				<augment name="FM_MODULAR_HULL"/>
 				<item_modify>
 					<item type="scrap" min="-40" max="-40"/>
@@ -6847,11 +6847,11 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_INSTALL_LITE">
-		<text>Do you wish to install your very own Modular Hull (tm)? [allows installation of further upgrades.]</text>
+		<text>Do you wish to install your very own Modular Hull? [allows installation of further upgrades.]</text>
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Install the Modular Hull (lite).</text>
 			<event>
-				<text>Alastair's Modular Hull (tm) has been installed!</text>
+				<text>Alastair's Modular Hull has been installed!</text>
 				<augment name="FM_MODULAR_HULL_LITE"/>
 				<item_modify>
 					<item type="scrap" min="-20" max="-20"/>
