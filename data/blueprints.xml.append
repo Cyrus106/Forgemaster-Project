@@ -22546,6 +22546,12 @@
 	<mod:findName type = "weaponBlueprint" name = "FOCUS_CHAIN">
 		<mod-overwrite:tip>fm_tip_focus_chain</mod-overwrite:tip>
 	</mod:findName>
+	
+	<!-- OMIYARI -->
+	
+	<mod:findName type = "weaponBlueprint" name = "BEAM_ADAPT">
+		<mod-overwrite:tip>fm_tip_beam_adapt</mod-overwrite:tip>
+	</mod:findName>
 
 	<!-- EBONY -->
 

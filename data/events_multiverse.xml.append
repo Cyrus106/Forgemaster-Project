@@ -733,7 +733,7 @@
 		<text>Alastair appears to have not noticed you yet. "Do you think she would like a golden retriever? Or perhaps a Corgi? Och, Lucille is a difficult lass." he says to one of his Plated. Alastair finally notices you. "OH MY! Lad, I am so sorry! What can I do for you?"</text>
 		<text>"Lad, so nice to see you! I was just doing some cleaning up around my ship! Please, buy something! It will clear out more space for me to put in a new sofa."</text>
 		<text>When Alastair responds to your hail, he appears to be building a cheap Mantis-brand table. "Aye, I enjoy building furniture from time to time, good for the joints. What can I get for ya lad?"</text>
-		<text>As you make your way through Alastair's ship, you notice a few plated hauling off some incomplete strange-looking drones you haven't seen before. Alastair pipes in after seeing you take notice of the hauls. "Ah-ha Lad, I see you've noticed the new drone designs I've been working on! They aren't quite ready for me to give to you just yet, but I assure you, when they're done you'll be the first to know!".</text>
+		<text>As you make your way through Alastair's ship, you notice a few plated hauling off some incomplete strange-looking drones you haven't seen before. Alastair pipes in after seeing you take notice of the hauls. "Ah-ha Lad, I see you've noticed the new drone designs I've been working on! They aren't quite ready for me to give to you just yet, but I assure you, when they're done you'll be the first to know!"</text>
 	</textList>
 
 
@@ -1524,12 +1524,12 @@
 		</choice>
 
 		<choice req="FM_CHAINGUN_FIRE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Replace the barrels of the Vulcan with the Fire Starter's heat sinks to forge the 'Hellflash' Gatling Gun. [Cost: 30~]</text>
+			<text>Replace the barrels of the Vulcan with the Fire-Starter's heat sinks to forge the 'Hellflash' Gatling Gun. [Cost: 30~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_CHAINGUN_FIRE"/>
 		</choice>
 
 		<choice req="FM_CHAINGUN_FIRE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
-			<text>You must have a Vulcan and a Fire Starter to forge this weapon.</text>
+			<text>You must have a Vulcan and a Fire-Starter to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
@@ -2042,12 +2042,12 @@
 
 
 		<choice req="FM_RVS_AC_CHARGE_FORGE_LIST" lvl="1" blue="false" hidden="true">
-		  <text>Combine two to four Autocannon 1s to forge the Volley Gun.[Cost: 20-60~]</text>
+		  <text>[GO BALLISTIC] Combine two to four Autocannon 1s to forge the Volley Gun.[Cost: 20-60~]</text>
 		  <event load="NPC_STORAGE_CHECK_CREATE_FM_RVS_AC_CHARGE"/>
 		</choice>
 
 		<choice req="FM_RVS_AC_CHARGE_FORGE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
-		  <text>You must have two to four Autocannon 1s to forge this weapon.</text>
+		  <text>[GO BALLISTIC] You must have two to four Autocannon 1s to forge this weapon.</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
 
@@ -6368,7 +6368,7 @@
 	</event>
 
 	<event name="FM_MODULAR_HULL_MAIN">
-		<text>This is where you can install and modify your very own Modular Hull (tm)!</text>
+		<text>This is where you can install and modify your very own Modular Hull!</text>
 		<choice req="FM_MODULAR_HULL" lvl="0" max_lvl="0" max_group="2" blue="false" hidden="true"><!--first install of hull-->
 			<text>Install modular armor</text>
 			<event>
@@ -6828,11 +6828,11 @@
 
 	<!--initial armor base installation-->
 	<event name="FM_MODULAR_HULL_INSTALL">
-		<text>Do you wish to install your very own Modular Hull (tm)? [5% hull dmg resist, allows installation of further upgrades.]</text>
+		<text>Do you wish to install your very own Modular Hull? [5% hull dmg resist, allows installation of further upgrades.]</text>
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Install the Modular Hull.</text>
 			<event>
-				<text>Alastair's Modular Hull (tm) has been installed!</text>
+				<text>Alastair's Modular Hull has been installed!</text>
 				<augment name="FM_MODULAR_HULL"/>
 				<item_modify>
 					<item type="scrap" min="-40" max="-40"/>
@@ -6853,11 +6853,11 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_INSTALL_LITE">
-		<text>Do you wish to install your very own Modular Hull (tm)? [allows installation of further upgrades.]</text>
+		<text>Do you wish to install your very own Modular Hull? [allows installation of further upgrades.]</text>
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Install the Modular Hull (lite).</text>
 			<event>
-				<text>Alastair's Modular Hull (tm) has been installed!</text>
+				<text>Alastair's Modular Hull has been installed!</text>
 				<augment name="FM_MODULAR_HULL_LITE"/>
 				<item_modify>
 					<item type="scrap" min="-20" max="-20"/>
