@@ -1302,6 +1302,12 @@
 
 			</event>
 		</choice>
+		<choice hidden="true" req="pilot" lvl="1" max_group="6" blue="false"> <!--  Do nothing -->
+			<text>Decline his offer, but it takes you straight back.</text>
+			<event>
+				<loadEvent>FORGEMASTER_PHONE_EVENT</loadEvent>				
+			</event>
+		</choice>
 
 
 	</event>

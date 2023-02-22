@@ -11,7 +11,7 @@
 	</ship>
 
 	<ship name="SHIP_REBEL_GENERIC_NOESCAPE" auto_blueprint="LIST_SHIPS_REBEL_GENERIC_ACE">
-		<surrender  chance="0.6" min="2" max="3" load="SURRENDER_REBEL"/>
+		<surrender chance="0.6" min="2" max="3" load="SURRENDER_REBEL"/>
 		<destroyed load="DESTROYED_REBEL"/>
 		<deadCrew load="DEAD_CREW_REBEL"/>
 	</ship>
@@ -30,7 +30,7 @@
 		<deadCrew load="FM_BOSS_CLAN1_SHIP_DESTROYED2"/>
 	</ship>
 	<event name="FM_BOSS_CLAN1_SUICIDE">
-		<text>From out of the tunnel comes a massive cruiser vessel, it appears to be a Smuggler clan ship!</text>
+		<text>From out of the tunnel comes a massive cruiser vessel, of Smuggler design!</text>
 		<ship load="FM_BOSS_CLAN1" hostile="false"/>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -61,7 +61,7 @@
 	<event name="FM_BOSS_CLAN1_SHIP_DESTROYED">
 		<playMusic></playMusic>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
-		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking.  You also locate what appears to be a chemical replication lab that goes beyond modern science, labelled "Ambrosia". It gives off an otherworldly aura. The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
+		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears to be a chemical replication lab that goes beyond modern science, labelled "Ambrosia". It gives off an otherworldly aura. The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -73,7 +73,7 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_3" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>-->
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<choice hidden="true" req="HID_BRAIN_DONATION" max_group="1" blue="false">
-			<text>You already have Mind Clouder.</text>
+			<text>You already have the Mind Clouder.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -100,7 +100,7 @@
 
 
 		<choice hidden="false" req="HID_BRAIN_DONATION" max_group="2" blue="false">
-			<text>You already have Mind Clouder.</text>
+			<text>You already have the Mind Clouder.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -113,7 +113,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_clan" max_group="2" blue="false">
-			<text>You already scrapped Mind Clouder.</text>
+			<text>You already scrapped the Mind Clouder.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -143,7 +143,7 @@
 	<event name="FM_BOSS_CLAN1_SHIP_DESTROYED2">
 		<playMusic></playMusic>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
-		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears to be a chemical replication lab that goes beyond modern science, labelled "Ambrosia". It gives off an otherworldly aura.  The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
+		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears to be a chemical replication lab that goes beyond modern science, labelled "Ambrosia". It gives off an otherworldly aura. The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -155,7 +155,7 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_3" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>-->
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<choice hidden="true" req="HID_BRAIN_DONATION" max_group="1" blue="false">
-			<text>You already have Mind Clouder.</text>
+			<text>You already have the Mind Clouder.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -180,7 +180,7 @@
 		</choice>
 		
 		<choice hidden="false" req="HID_BRAIN_DONATION" max_group="2" blue="false">
-			<text>You already have Mind Clouder.</text>
+			<text>You already have the Mind Clouder.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -193,7 +193,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_clan" max_group="2" blue="false">
-			<text>You already scrapped Mind Clouder.</text>
+			<text>You already scrapped the Mind Clouder.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -228,14 +228,14 @@
 		<deadCrew load="FM_BOSS_DUSK1_SHIP_DESTROYED2"/>
 	</ship>
 	<event name="FM_BOSS_DUSK1_SUICIDE">
-		<text>From out of the tunnel comes a massive cruiser vessel, it appears to be a Duskbringer ship!</text>
+		<text>From out of the tunnel comes a massive cruiser vessel, of Duskbringer design!</text>
 		<ship load="FM_BOSS_DUSK1_SHIP" hostile="false"/>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text>You are hailed by the ship, and you accept. They are surprisingly polite and prompt: "Terribly sorry, we are going for the Guinness Multiverse record for the most war crimes in one fight. You'll forgive us right?" </text>
+				<text>You are hailed by the ship, and you accept. They are surprisingly polite and prompt. "Terribly sorry, we are going for the Guinness Multiverse record for the most war crimes in one fight. You'll forgive us right?"</text>
 				<choice hidden="true">
-					<text>......No?</text>
+					<text>...No?</text>
 					<event>
 						<text>"I'm afraid you don't have a choice in the matter. Good day, and glory to all Duskbringers!" </text>
 						<choice hidden="true">
@@ -259,7 +259,7 @@
 	<event name="FM_BOSS_DUSK1_SHIP_DESTROYED">
 		<playMusic></playMusic>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
-		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking.  You also locate what appears to be a set of strange looking vests, labelled "World Record". They give off an otherworldly aura.  The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
+		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears to be a set of strange looking vests, labelled "World Record". They give off an otherworldly aura. The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -271,7 +271,7 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_3" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>-->
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<choice hidden="true" req="HID_DEATH_VESTS2" max_group="1" blue="false">
-			<text>You already have Twilight Vests.</text>
+			<text>You already have the Twilight Vests.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -296,7 +296,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_DEATH_VESTS2" max_group="2" blue="false">
-			<text>You already have Twlight Vests.</text>
+			<text>You already have the Twlight Vests.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -309,7 +309,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_dusk" max_group="2" blue="false">
-			<text>You already scrapped Twlight Vests.</text>
+			<text>You already scrapped the Twlight Vests.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -339,7 +339,7 @@
 	<event name="FM_BOSS_DUSK1_SHIP_DESTROYED2">
 		<playMusic></playMusic>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
-		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears to be a set of strange looking vests, labelled "World Record". They give off an otherworldly aura.  The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
+		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears to be a set of strange looking vests, labelled "World Record". They give off an otherworldly aura. The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -350,7 +350,7 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_3" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>-->
 		<choice hidden="true" req="HID_DEATH_VESTS2" max_group="1" blue="false">
-			<text>You already have Twilight Vests.</text>
+			<text>You already have the Twilight Vests.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -375,7 +375,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_DEATH_VESTS2" max_group="2" blue="false">
-			<text>You already have Twlight Vests.</text>
+			<text>You already have the Twlight Vests.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -388,7 +388,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_dusk" max_group="2" blue="false">
-			<text>You already scrapped Twlight Vests.</text>
+			<text>You already scrapped the Twlight Vests.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -427,7 +427,7 @@
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text>"Don't bother, my ship constantly replicates itself with nanomachines, Captain. It hardens in response to physical trauma."</text>
+				<text>"Don't bother. My ship constantly replicates itself with nanomachines, Captain. It hardens in response to physical trauma."</text>
 				<ship hostile="true"/>
 				<playMusic>Twisted</playMusic>
 				<choice hidden="true">
@@ -441,7 +441,7 @@
 	<event name="FM_BOSS_ENGI1_DESTROYED">
 		<playMusic></playMusic>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
-		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears a strange looked Drone Booster labelled "Kai".  The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
+		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears a strange-looking drone booster labelled "Kai". The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -455,7 +455,7 @@
 		<unlockCustomShip shipReq="VANILLA_SHIP_ENGI_2" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
 		<unlockCustomShip shipReq="VANILLA_SHIP_ENGI_3" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>-->
 		<choice hidden="true" req="HID_UPG_DRONE_COOLDOWN" max_group="1" blue="false">
-			<text>You already have Drone Booster "Kai".</text>
+			<text>You already have the Drone Booster "Kai".</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -480,7 +480,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_UPG_DRONE_COOLDOWN" max_group="2" blue="false">
-			<text>You already have Drone Booster "Kai".</text>
+			<text>You already have the Drone Booster "Kai".</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -493,7 +493,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_engi" max_group="2" blue="false">
-			<text>You already scrapped Drone Booster "Kai".</text>
+			<text>You already scrapped the Drone Booster "Kai".</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -523,7 +523,7 @@
 	<event name="FM_BOSS_ENGI1_DESTROYED2">
 		<playMusic></playMusic>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
-		<text>The  bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears a strange looked Drone Booster labelled "Kai".  The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
+		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears a strange-looking drone booster labelled "Kai". The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
@@ -532,7 +532,7 @@
 		<achievement silent="false">ACH_TWISTED_REN_ENGI</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ENGI_3" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
 		<choice hidden="true" req="HID_UPG_DRONE_COOLDOWN" max_group="1" blue="false">
-			<text>You already have Drone Booster "Kai".</text>
+			<text>You already have the Drone Booster "Kai".</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -557,7 +557,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_UPG_DRONE_COOLDOWN" max_group="2" blue="false">
-			<text>You already have Drone Booster "Kai".</text>
+			<text>You already have the Drone Booster "Kai".</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -570,7 +570,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_engi" max_group="2" blue="false">
-			<text>You already scrapped Drone Booster "Kai".</text>
+			<text>You already scrapped the Drone Booster "Kai".</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -603,12 +603,12 @@
 		<deadCrew load="FM_BOSS_FREE1_DESTROYED2"/>
 	</ship>
 	<event name="FM_BOSS_FREE1_SUICIDE">
-		<text>From out of the tunnel comes a massive cruiser vessel, it appears to be painted vibrantly, with a strange flag on it. It may be a Free Mantis vessel!</text>
+		<text>From out of the tunnel comes a massive cruiser vessel, of Free Mantis design! It appears to be painted vibrantly, with a strange flag on it.</text>
 		<ship load="FM_BOSS_FREE1_SHIP" hostile="false"/>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text>You are hailed by the ship, and you accept. "I say good chap, we're here to claim this universe for her royal highness. FOR BRITANNIA! HI HO!" </text>
+				<text>You are hailed by the ship. "I say good chap, we're here to claim this universe for her royal highness. FOR BRITANNIA! HI HO!" </text>
 				<choice hidden="true">
 					<text>That's not a sector I've heard of.</text>
 					<event>
@@ -635,7 +635,7 @@
 
 	<event name="FM_BOSS_FREE1_DESTROYED">
 		<playMusic></playMusic>
-		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking.  You also locate a massive stash of tea, enough to feed an entire army. </text>
+		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate a massive stash of tea, enough to feed an entire army. </text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -646,7 +646,7 @@
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS_3" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>-->
 		<choice hidden="true" req="HID_TEA_EARL" max_group="1" blue="false">
-			<text>You already have Earl Grey tea.</text>
+			<text>You already have the Earl Grey tea.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -671,7 +671,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_TEA_EARL" max_group="2" blue="false">
-			<text>You already have Earl Grey tea.</text>
+			<text>You already have the Earl Grey tea.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -684,7 +684,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_freemantis" max_group="2" blue="false">
-			<text>You already scrapped Earl Grey tea.</text>
+			<text>You already scrapped the Earl Grey tea.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -713,7 +713,7 @@
 
 	<event name="FM_BOSS_FREE1_DESTROYED2">
 		<playMusic></playMusic>
-		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking.  You also locate a massive stash of tea, enough to feed an entire army.</text>
+		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate a massive stash of tea, enough to feed an entire army.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -724,7 +724,7 @@
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS_3" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>-->
 		<choice hidden="true" req="HID_TEA_EARL" max_group="1" blue="false">
-			<text>You already have Earl Grey tea.</text>
+			<text>You already have the Earl Grey tea.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -749,7 +749,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_TEA_EARL" max_group="2" blue="false">
-			<text>You already have Earl Grey tea.</text>
+			<text>You already have the Earl Grey tea.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -762,7 +762,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_freemantis" max_group="2" blue="false">
-			<text>You already scrapped Earl Grey tea.</text>
+			<text>You already scrapped the Earl Grey tea.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -795,14 +795,13 @@
 		<deadCrew load="FM_BOSS_LOSTSUN1_DESTROYED2"/>
 	</ship>
 	<event name="FM_BOSS_LOSTSUN1_SUICIDE">
-		<text>From out of the tunnel comes a massive cruiser vessel, of Lost Sun design! The ship seems to be armored and covered with a massive, ancient shield. It wields one of the nastiest arsenals you've ever seen. Something seems...off about it however.</text>
+		<text>From out of the tunnel comes a massive cruiser vessel, of Lost Sun design! The ship seems to be armored and covered with a massive, ancient shield. It wields one of the nastiest arsenals you've ever seen. Something seems... off about it however.</text>
 		<ship load="FM_BOSS_LOSTSUN1_SHIP" hostile="false"/>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text>The Lost Sun captain grunts. "Hmmph. We finally found you son. We travelled across countless realities for this very moment. It appears the fabric of space and time has taken its toll on our vessel from taking this colossal gamble however. I'd wager we have 90 seconds before we fall apart. But fear not, that is plenty of time to stop a galactic horror such as you! Not even reality bending can stop us now!"
-					[A powerful jamming signal strikes your vessel, all combat augments and combat checks are disabled! Some of your systems appear damaged as well.]
-				</text>
+				<text>The Lost Sun captain grunts. "Hmmph. We finally found you, son. We travelled across countless realities for this very moment. It appears the fabric of space and time has taken its toll on our vessel from taking this colossal gamble however. I'd wager we have 90 seconds before we fall apart. But fear not, that is plenty of time to stop a galactic horror such as you! Not even reality bending can stop us now!"
+					A powerful jamming signal strikes your vessel, all combat augments and combat checks are disabled! Some of your systems appear damaged as well.</text>
 				<ship hostile="true"/>
 				<playMusic>Twisted</playMusic>
 				<triggeredEvent event="FM_BOSS_LOSTSUN1_CRUMBLE1" time="15" thisFight="true">
@@ -835,7 +834,7 @@
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN_3" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>-->
 		<choice hidden="true" req="HID_REALITY_RELOADER" max_group="1" blue="false">
-			<text>You already have Reality Reloader.</text>
+			<text>You already have the Reality Reloader.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -861,7 +860,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_REALITY_RELOADER" max_group="2" blue="false">
-			<text>You already have Reality Reloader.</text>
+			<text>You already have the Reality Reloader.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -874,7 +873,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_lostsun" max_group="2" blue="false">
-			<text>You already scrapped Reality Reloader.</text>
+			<text>You already scrapped the Reality Reloader.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -913,7 +912,7 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN_2" silent="false">PLAYER_SHIP_TWISTED3_2</unlockCustomShip>
 
 		<choice hidden="true" req="HID_REALITY_RELOADER" max_group="1" blue="false">
-			<text>You already have Reality Reloader.</text>
+			<text>You already have the Reality Reloader.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -938,7 +937,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_REALITY_RELOADER" max_group="2" blue="false">
-			<text>You already have Reality Reloader.</text>
+			<text>You already have the Reality Reloader.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -951,7 +950,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_lostsun" max_group="2" blue="false">
-			<text>You already scrapped Reality Reloader.</text>
+			<text>You already scrapped the Reality Reloader.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -979,9 +978,9 @@
 	</event>
 
 	<event name="FM_BOSS_LOSTSUN1_CRUMBLE1">
-		<text>15 seconds into the fight and you observe a massive explosion erupt from within the enemy ship. What in the world just happened? A huge chunk of the ship's thrusters appear to have disintegrated as well.</text>
+		<text>15 seconds into the fight, you observe a massive explosion erupts from within the enemy ship. What in the world just happened? A huge chunk of the ship's thrusters appears to have disintegrated as well.</text>
 		<status type="limit" target="enemy" system="engines" amount="1"/>
-		<enemyDamage amount="2" system="engines" effect="fire"  force="true"/>
+		<enemyDamage amount="2" system="engines" effect="fire" force="true"/>
 		<choice hidden="true">
 			<text>Continue with the fight...</text>
 			<event>
@@ -997,9 +996,9 @@
 	</event>
 
 	<event name="FM_BOSS_LOSTSUN1_CRUMBLE2">
-		<text>Another massive explosion erupt from within the enemy ship. The enemy ship's drone systems fall apart, and you observe countless droneparts scatter from the ship's cargo hold.</text>
+		<text>Another massive explosion erupts from within the enemy ship. The enemy ship's drone systems fall apart, and you observe countless droneparts scatter from the ship's cargo hold.</text>
 		<status type="limit" target="enemy" system="drones" amount="0"/>
-		<enemyDamage amount="1" system="drones" effect="fire"  force="true"/>
+		<enemyDamage amount="1" system="drones" effect="fire" force="true"/>
 		<choice hidden="true">
 			<text>Continue with the fight...</text>
 			<event>
@@ -1015,9 +1014,9 @@
 	</event>
 
 	<event name="FM_BOSS_LOSTSUN1_CRUMBLE3">
-		<text>Another massive explosion erupt from within the enemy ship. The enemy ship's shield system is torn apart in the blast, and can barely stay online.</text>
+		<text>Another massive explosion erupts from within the enemy ship. The enemy ship's shield system is torn apart in the blast, and can barely stay online.</text>
 		<status type="limit" target="enemy" system="shields" amount="4"/>
-		<enemyDamage amount="1" system="shields" effect="fire"  force="true"/>
+		<enemyDamage amount="1" system="shields" effect="fire" force="true"/>
 		<choice hidden="true">
 			<text>Continue with the fight...</text>
 			<event>
@@ -1033,9 +1032,9 @@
 	</event>
 
 	<event name="FM_BOSS_LOSTSUN1_CRUMBLE4">
-		<text>Another massive explosion erupt from within the enemy ship. The enemy weapons takes a massive hit, but is barely hanging on.</text><!--return to weapon damage!-->
+		<text>Another massive explosion erupts from within the enemy ship. The enemy weapons take a massive hit, and barely stay online.</text><!--return to weapon damage!-->
 		<status type="limit" target="enemy" system="weapons" amount="4"/>
-		<enemyDamage amount="3" system="weapons" effect="fire"  force="true"/>
+		<enemyDamage amount="3" system="weapons" effect="fire" force="true"/>
 		<choice hidden="true">
 			<text>Continue with the fight...</text>
 			<event>
@@ -1051,9 +1050,9 @@
 	</event>
 
 	<event name="FM_BOSS_LOSTSUN1_CRUMBLE5">
-		<text>Another massive explosion erupt from within the enemy ship. The enemy weapons take a massive hit, and are now offline.</text>
+		<text>Another massive explosion erupts from within the enemy ship. The enemy's weapons system couldn't take another blast, and was knocked offline!</text>
 		<status type="limit" target="enemy" system="weapons" amount="0"/>
-		<enemyDamage amount="1" system="weapons" effect="fire"  force="true"/>
+		<enemyDamage amount="1" system="weapons" effect="fire" force="true"/>
 		<choice hidden="true">
 			<text>Continue with the fight...</text>
 			<event>
@@ -1069,9 +1068,9 @@
 	</event>
 
 	<event name="FM_BOSS_LOSTSUN1_CRUMBLE6">
-		<text>The entire ship appears to be ripped apart from within, luckily its cargo hold is jetissoned your way before it completely explodes.</text>
+		<text>The entire ship appears to be ripped apart from within! Luckily, its cargo hold is jettisoned your way before it completely explodes.</text>
 		<status type="limit" target="enemy" system="weapons" amount="0"/>
-		<enemyDamage amount="999" system="weapons" effect="fire"  force="true"/>
+		<enemyDamage amount="999" system="weapons" effect="fire" force="true"/>
 		<choice hidden="true">
 			<text>That was...odd.</text>
 			<event>
@@ -1088,13 +1087,13 @@
 		<deadCrew load="FM_BOSS_MANTIS1_DESTROYED2"/>
 	</ship>
 	<event name="FM_BOSS_MANTIS1_SUICIDE">
-		<text>From out of the tunnel comes a massive cruiser vessel, it appears to be a ship with a massive scar. It may be a Mantis vessel!</text>
+		<text>From out of the tunnel comes a massive cruiser vessel, of Mantis design! It appears to have a massive scar running down its hull.</text>
 		<ship load="FM_BOSS_MANTIS1_SHIP" hostile="false"/>
 		<status type="limit" target="enemy" system="teleporter" amount="0"/>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text>The ship takes an oddly long time, and finally hails you. "We kill you, stupid ugly non-Mantis foolish fool!" They seem like friendly fellows.</text>
+				<text>The ship takes an unusually long time to hail you. "We kill you, stupid ugly non-Mantis foolish fool!" They seem like friendly fellows.</text>
 				<choice hidden="true">
 					<text>Do we really have to fight? Why?</text>
 					<event>
@@ -1146,7 +1145,7 @@
 		<unlockCustomShip shipReq="VANILLA_SHIP_MANTIS_2" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
 		<unlockCustomShip shipReq="VANILLA_SHIP_MANTIS_3" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>-->
 		<choice hidden="true" req="HID_MANTIS_RELOADER" max_group="1" blue="false">
-			<text>You already have Pheromone Accelerator.</text>
+			<text>You already have the Pheromone Accelerator.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -1173,7 +1172,7 @@
 
 
 		<choice hidden="false" req="HID_MANTIS_RELOADER" max_group="2" blue="false">
-			<text>You already have Pheromone Accelerator.</text>
+			<text>You already have the Pheromone Accelerator.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -1186,7 +1185,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_mantis" max_group="2" blue="false">
-			<text>You already scrapped Pheromone Accelerator.</text>
+			<text>You already scrapped the Pheromone Accelerator.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -1215,7 +1214,7 @@
 
 	<event name="FM_BOSS_MANTIS1_DESTROYED2">
 		<playMusic></playMusic>
-		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking.  You also locate a strange pheromone sack with an otherworldly glow.</text>
+		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate a strange pheromone sack with an otherworldly glow.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<variable name="ach_fm_boss_mantis" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_MANTIS</achievement>
@@ -1229,7 +1228,7 @@
 		<unlockCustomShip shipReq="VANILLA_SHIP_MANTIS_2" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
 		<unlockCustomShip shipReq="VANILLA_SHIP_MANTIS_3" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>-->
 		<choice hidden="true" req="HID_MANTIS_RELOADER" max_group="1" blue="false">
-			<text>You already have Pheromone Accelerator.</text>
+			<text>You already have the Pheromone Accelerator.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -1255,7 +1254,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_MANTIS_RELOADER" max_group="2" blue="false">
-			<text>You already have Pheromone Accelerator.</text>
+			<text>You already have the Pheromone Accelerator.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -1268,7 +1267,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_mantis" max_group="2" blue="false">
-			<text>You already scrapped Pheromone Accelerator.</text>
+			<text>You already scrapped the Pheromone Accelerator.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -1330,7 +1329,7 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_MONK_2" silent="false">PLAYER_SHIP_TWISTED3</unlockCustomShip>
 
 		<choice hidden="true" req="HID_FM_UPG_AETHER_SHIELDS" max_group="1" blue="false">
-			<text>You already have Aether Ascension Shields.</text>
+			<text>You already have the Aether Ascension Shields.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -1356,7 +1355,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_FM_UPG_AETHER_SHIELDS" max_group="2" blue="false">
-			<text>You already have Aether Ascension Shields.</text>
+			<text>You already have the Aether Ascension Shields.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -1369,7 +1368,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_monk" max_group="2" blue="false">
-			<text>You already scrapped Aether Ascension Shields.</text>
+			<text>You already scrapped the Aether Ascension Shields.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -1408,7 +1407,7 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_MONK_2" silent="false">PLAYER_SHIP_TWISTED3</unlockCustomShip>
 
 		<choice hidden="true" req="HID_FM_UPG_AETHER_SHIELDS" max_group="1" blue="false">
-			<text>You already have Aether Ascension Shields.</text>
+			<text>You already have the Aether Ascension Shields.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -1434,7 +1433,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_FM_UPG_AETHER_SHIELDS" max_group="2" blue="false">
-			<text>You already have Aether Ascension Shields.</text>
+			<text>You already have the Aether Ascension Shields.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -1447,7 +1446,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_monk" max_group="2" blue="false">
-			<text>You already scrapped Aether Ascension Shields.</text>
+			<text>You already scrapped the Aether Ascension Shields.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -1481,7 +1480,7 @@
 		<deadCrew load="FM_BOSS_R1_SHIP_DESTROYED2"/>
 	</ship>
 	<event name="FM_BOSS_R1_SUICIDE">
-		<text>From out of the tunnel comes a massive cruiser vessel, it appears to be a Rock vessel made out of gold!</text>
+		<text>From out of the tunnel comes a massive cruiser vessel, of Rock design! Upon a second inspection, it becomes clear the entire vessel is made out of gold!</text>
 		<ship load="FM_BOSS_R1_SHIP" hostile="false"/>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -1492,7 +1491,7 @@
 				<choice hidden="true">
 					<text>Make it three minutes, chump.</text>
 					<event>
-						<text>"Good, that was the correct answer...now prepare to die." </text>
+						<text>"Good, that was the correct answer... now prepare to die." </text>
 						<choice hidden="true">
 							<text>Continue...</text>
 							<event>
@@ -1525,7 +1524,7 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_ROCKMAN_3" silent="false">PLAYER_SHIP_TWISTED3_2</unlockCustomShip>
 
 		<choice hidden="true" req="HID_FREEDOM_ROCK" max_group="1" blue="false">
-			<text>You already have Rockmen Relic of Freedom.</text>
+			<text>You already have the Rockmen Relic of Freedom.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -1551,7 +1550,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_FREEDOM_ROCK" max_group="2" blue="false">
-			<text>You already have Rockmen Relic of Freedom.</text>
+			<text>You already have the Rockmen Relic of Freedom.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -1564,7 +1563,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_rock" max_group="2" blue="false">
-			<text>You already scrapped Rockmen Relic of Freedom.</text>
+			<text>You already scrapped the Rockmen Relic of Freedom.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -1603,7 +1602,7 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_ROCKMAN_3" silent="false">PLAYER_SHIP_TWISTED3_2</unlockCustomShip>
 
 		<choice hidden="true" req="HID_FREEDOM_ROCK" max_group="1" blue="false">
-			<text>You already have Rockmen Relic of Freedom.</text>
+			<text>You already have the Rockmen Relic of Freedom.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -1629,7 +1628,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_FREEDOM_ROCK" max_group="2" blue="false">
-			<text>You already have Rockmen Relic of Freedom.</text>
+			<text>You already have the Rockmen Relic of Freedom.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -1642,7 +1641,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_rock" max_group="2" blue="false">
-			<text>You already scrapped Rockmen Relic of Freedom.</text>
+			<text>You already scrapped the Rockmen Relic of Freedom.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -1708,7 +1707,7 @@
 
 	<event name="FM_BOSS_SEPA1_DESTROYED">
 		<playMusic></playMusic>
-		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also retrieve a mysterious small amulet from the ship, it has an otherworldly aura.</text>
+		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also retrieve a small, mysterious amulet from the ship; it has an otherworldly aura.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -1718,7 +1717,7 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_SEPARATIST_2" silent="false">PLAYER_SHIP_TWISTED2_2</unlockCustomShip>
 
 		<choice hidden="true" req="AUG_MAGATAMA" max_group="1" blue="false">
-			<text>You already have Magatama.</text>
+			<text>You already have the Magatama.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -1744,7 +1743,7 @@
 		</choice>
 
 		<choice hidden="false" req="AUG_MAGATAMA" max_group="2" blue="false">
-			<text>You already have Magatama.</text>
+			<text>You already have the Magatama.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -1757,7 +1756,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_separatist" max_group="2" blue="false">
-			<text>You already scrapped Magatama.</text>
+			<text>You already scrapped the Magatama.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -1786,7 +1785,7 @@
 
 	<event name="FM_BOSS_SEPA1_DESTROYED2">
 		<playMusic></playMusic>
-		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also retrieve a mysterious small amulet from the ship, it has an otherworldly aura.</text>
+		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also retrieve a small, mysterious amulet from the ship; it has an otherworldly aura.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -1796,7 +1795,7 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_SEPARATIST_2" silent="false">PLAYER_SHIP_TWISTED2_2</unlockCustomShip>
 
 		<choice hidden="true" req="AUG_MAGATAMA" max_group="1" blue="false">
-			<text>You already have Magatama.</text>
+			<text>You already have the Magatama.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -1822,7 +1821,7 @@
 		</choice>
 
 		<choice hidden="false" req="AUG_MAGATAMA" max_group="2" blue="false">
-			<text>You already have Magatama.</text>
+			<text>You already have the Magatama.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -1835,7 +1834,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_separatist" max_group="2" blue="false">
-			<text>You already scrapped Magatama.</text>
+			<text>You already scrapped the Magatama.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -1912,13 +1911,13 @@
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text>On your vid screen shows nothing but swirling gray smoke, but slowly a slug in very formal looking knight armor comes into view; holding a cigar up thats almost as big as he is!
+				<text>On your vid screen shows nothing but swirling gray smoke, but slowly a slug in very formal looking knight armor comes into view; holding a cigar up that's almost as big as he is!
 					"Ah, more fuel to feed my ssssalted fires! Come young one, you shall see the burning questions answered when I purge this universe of any and all tracessss of the ancients!"
 				</text>
 				<choice hidden="true">
 					<text>But why are you using ancient weaponry?</text>
 					<event>
-						<text>"What? Ancient weaponry? These are just my lightersssss, you think I can get this thing sssssstarted with a match?" The slug takes a drag that lasts minutes before continuing,
+						<text>"What? Ancient weaponry? These are just my lightersssss, you think I can get this thing sssssstarted with a match?" The slug takes a drag that lasts minutes before continuing.
 
 							"Ah well, not like you're going to be able to ssssstop me with that thing."
 						</text>
@@ -1946,7 +1945,7 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_SLUG_2" silent="false">PLAYER_SHIP_TWISTED4</unlockCustomShip>
 
 		<choice hidden="true" req="HID_MALBORO_RED" max_group="1" blue="false">
-			<text>You already have Malboro Quasar.</text>
+			<text>You already have the Malboro Quasar.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -1972,7 +1971,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_MALBORO_RED" max_group="2" blue="false">
-			<text>You already have Malboro Quasar.</text>
+			<text>You already have the Malboro Quasar.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -1985,7 +1984,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_slug" max_group="2" blue="false">
-			<text>You already scrapped Malboro Quasar.</text>
+			<text>You already scrapped the Malboro Quasar.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -2024,7 +2023,7 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_SLUG_2" silent="false">PLAYER_SHIP_TWISTED4</unlockCustomShip>
 
 		<choice hidden="true" req="HID_MALBORO_RED" max_group="1" blue="false">
-			<text>You already have Malboro Quasar.</text>
+			<text>You already have the Malboro Quasar.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -2050,7 +2049,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_MALBORO_RED" max_group="2" blue="false">
-			<text>You already have Malboro Quasar.</text>
+			<text>You already have the Malboro Quasar.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -2063,7 +2062,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_slug" max_group="2" blue="false">
-			<text>You already scrapped Malboro Quasar.</text>
+			<text>You already scrapped the Malboro Quasar.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -2096,7 +2095,7 @@
 		<deadCrew load="FM_BOSS_STEALTH1_DESTROYED2"/>
 	</ship>
 	<event name="FM_BOSS_STEALTH1_SUICIDE">
-		<text>From out of the tunnel comes a massive cruiser vessel, of Stealth design! There appears to be something...very wrong with its camoflague. Purple?</text>
+		<text>From out of the tunnel comes a massive cruiser vessel, of Stealth design! There appears to be something... very wrong with its camoflague. Purple?</text>
 		<ship load="FM_BOSS_STEALTH1_SHIP" hostile="false"/>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -2105,7 +2104,7 @@
 				<choice hidden="true">
 					<text>What are you talking about?</text>
 					<event>
-						<text>"Oh great, you must be a bug too. I'll have to delete you pal." </text>
+						<text>"Oh great, you must be a bug too. I'll have to delete you, pal."</text>
 						<choice hidden="true">
 							<text>Continue...</text>
 							<event>
@@ -2128,7 +2127,7 @@
 
 	<event name="FM_BOSS_STEALTH1_DESTROYED">
 		<playMusic></playMusic>
-		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking.  You also loca-[Engine Error!]
+		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also loca-[Engine Error!]
 
 			One or more VMT files could not be loaded!
 
@@ -2181,7 +2180,7 @@
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text>"Federation vessel, this is CFB-65. Your head is currently wanted by several inter-dimensional governments. However, this is not why we have come here. We have found you in violation of protocol-UX534-W, which states clearly that military vessels exceeding the maximum reality bending threshold allocated for this universe are to....be rewarded and ignored! I'm sorry, but this is the law. Take our reward and leave this sector. Or ELSE"</text>
+				<text>"Federation vessel, this is CFB-65. Your head is currently wanted by several inter-dimensional governments. However, this is not why we have come here. We have found you in violation of protocol-UX534-W, which states clearly that military vessels exceeding the maximum reality bending threshold allocated for this universe are to... be rewarded and ignored! I'm sorry, but this is the law. Take our reward and leave this sector, or ELSE!"</text>
 
 				<choice hidden="true">
 					<text>Wait...what? Sure I'll take your reward.</text>
@@ -2189,7 +2188,7 @@
 						<item_modify>
 							<item type="scrap" min="120" max="150"/>
 						</item_modify>
-						<text>"Thank you Federation Vessel. We will also be confiscating this...for galactic safety of course." They appear to have hacked into your systems and removed the C.U.R.A. Drive Hacker!</text>
+						<text>"Thank you Federation Vessel. We will also be confiscating this... for galactic safety of course." They appear to have hacked into your systems and removed the C.U.R.A. Drive Hacker!</text>
 						<remove name="CURA_MVBOSS_SPAWNER"/>
 						<achievement silent="false">ACH_FREESTUFF</achievement>
 
@@ -2222,7 +2221,7 @@
 
 	<event name="FM_BOSS_ZOLTAN1_DESTROYED">
 		<playMusic></playMusic>
-		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking.  You also locate a strange device that appears to radiate otherworldly energy.</text>
+		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate a strange device that appears to radiate otherworldly energy.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -2232,12 +2231,12 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_ZOLTAN_3" silent="false">PLAYER_SHIP_TWISTED4_3</unlockCustomShip>
 
 		<choice hidden="true" req="HID_LAB_ZOLTAN_LIMIT_RELEASE" max_group="1" blue="false">
-			<text>You already have Limit Release.</text>
+			<text>You already have the Limit Release.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
 			<text>Internalize the Limit Release...
-				[Active Ability: Zoltans take 40% reduced damage and deal 1.3x increase damage. They do not supply power while this is active.]
+				[Active Ability: Zoltans take 40% reduced damage and deal 1.3x increased damage. They do not supply power while this is active.]
 			</text>
 			<event>
 				<text>You add the Limit Release into your ship's armory. </text>
@@ -2258,7 +2257,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_LAB_ZOLTAN_LIMIT_RELEASE" max_group="2" blue="false">
-			<text>You already have Limit Release.</text>
+			<text>You already have the Limit Release.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -2271,7 +2270,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_zoltan" max_group="2" blue="false">
-			<text>You already scrapped Limit Release.</text>
+			<text>You already scrapped the Limit Release.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -2300,7 +2299,7 @@
 
 	<event name="FM_BOSS_ZOLTAN1_DESTROYED2">
 		<playMusic></playMusic>
-		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking.  You also locate a strange pheromone sack with an otherworldly glow.</text>
+		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate a strange pheromone sack with an otherworldly glow.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -2310,7 +2309,7 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_ZOLTAN_3" silent="false">PLAYER_SHIP_TWISTED4_3</unlockCustomShip>
 
 		<choice hidden="true" req="HID_LAB_ZOLTAN_LIMIT_RELEASE" max_group="1" blue="false">
-			<text>You already have Limit Release.</text>
+			<text>You already have the Limit Release.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -2336,7 +2335,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_LAB_ZOLTAN_LIMIT_RELEASE" max_group="2" blue="false">
-			<text>You already have Limit Release.</text>
+			<text>You already have the Limit Release.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -2349,7 +2348,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_zoltan" max_group="2" blue="false">
-			<text>You already scrapped Limit Release.</text>
+			<text>You already scrapped the Limit Release.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -2382,7 +2381,7 @@
 		<deadCrew load="FM_BOSS_SHELL1_DESTROYED2"/>
 	</ship>
 	<event name="FM_BOSS_SHELL1_SUICIDE">
-		<text>From out of the tunnel comes a massive cruiser vessel, of Shell design! A bright light shines through the cracks on the ship, pulsing the colors of the rainbow, and some odd ones as well</text>
+		<text>From out of the tunnel comes a massive cruiser vessel, of Shell design! A bright light shines through the cracks on the ship, pulsing in some very strange colors.</text>
 		<ship load="FM_BOSS_SHELL1_SHIP" hostile="false"/>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -2391,7 +2390,7 @@
 				<choice hidden="true">
 					<text>Very well, I will honor your request.</text>
 					<event>
-						<text>The ship activates its weapons. They appear to be gas weapons, protect your crew as best you can! And you observe that the enemy crew appears to be extremely durable, crew combat may be very foolish.  </text>
+						<text>The ship activates its weapons. They appear to be gas weapons; protect your crew as best you can! Additionally, you observe that the enemy crew appears to be extremely durable; crew combat may be very foolish.</text>
 						<ship hostile="true"/>
 						<playMusic>Twisted</playMusic>
 						<choice hidden="true">
@@ -2406,7 +2405,7 @@
 
 	<event name="FM_BOSS_SHELL1_DESTROYED">
 		<playMusic></playMusic>
-		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate an attache case with countless syringes filled with a neon purple liquid, they don't appear to be properly sealed either. It appears to radiate otherworldly energy. You recall that the Shell told you to destroy it.</text>
+		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate an attache case with countless syringes filled with a neon purple liquid, and they don't appear to be properly sealed either. It appears to radiate otherworldly energy. You recall that the Shell told you to destroy it.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -2416,12 +2415,12 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_SHELL_3" silent="false">PLAYER_SHIP_TWISTED5_2</unlockCustomShip>
 
 		<choice hidden="true" req="HID_COMBUSTION_VIRUS" max_group="1" blue="false">
-			<text>You already have Combustion Bioweapon.</text>
+			<text>You already have the Combustion Bioweapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
 			<text>Internalize the Combustion Bioweapon...
-				[This Bioweapon infects all of your crew, giving all of them the active ability Combust. The Shell race, its existing Combust abilities are upgraded, typically costing less health or being more potent.]
+				[This Bioweapon infects all of your crew, giving all of them the active ability Combust. For the Shell race, its existing Combust abilities are upgraded, typically costing less health or being more potent.]
 			</text>
 			<event>
 				<hiddenAug>HID_COMBUSTION_VIRUS</hiddenAug>
@@ -2441,7 +2440,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_COMBUSTION_VIRUS" max_group="2" blue="false">
-			<text>You already have Combustion Bioweapon.</text>
+			<text>You already have the Combustion Bioweapon.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -2454,7 +2453,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_shell" max_group="2" blue="false">
-			<text>You already scrapped Combustion Bioweapon.</text>
+			<text>You already scrapped the Combustion Bioweapon.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -2522,7 +2521,7 @@
 	</event> -->
 
 	<event name="FM_BOSS_SHELL1_DESTROYED2">
-		<text>It seems as though this is the end of the poor Shell, but his ship dispenses horrific looking drones onto your ship, perhaps in retaliation? </text>
+		<text>It seems as though this is the end of the poor Shell, but his ship dispenses a wave of horrific-looking drones onto yours! Perhaps it is an act of retaliation?</text>
 		<boarders min="1" max="1" class="technoroomba"/>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Continue...</text>
@@ -2569,7 +2568,7 @@
 
 
 		<choice hidden="true" req="HID_UPG_DRONE_SPEED_2" max_group="1" blue="false">
-			<text>You already have Drone Boost MK II.</text>
+			<text>You already the have Drone Boost MK II.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -2595,7 +2594,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_UPG_DRONE_SPEED_2" max_group="2" blue="false">
-			<text>You already have Drone Boost MK II.</text>
+			<text>You already have the Drone Boost MK II.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -2608,7 +2607,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_engineer" max_group="2" blue="false">
-			<text>You already scrapped Drone Boost MK II.</text>
+			<text>You already scrapped the Drone Boost MK II.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -2637,7 +2636,7 @@
 
 	<event name="FM_BOSS_ENGINEER1_DESTROYED2">
 		<playMusic></playMusic>
-		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking.  You also locate a high-tech drone booster.</text>
+		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate a high-tech drone booster.</text>
 		<item_modify>
 			<item type="scrap" min="100" max="100"/>
 		</item_modify>
@@ -2649,7 +2648,7 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_ENGINEER_2" silent="false">PLAYER_SHIP_TWISTED5_3</unlockCustomShip>
 
 		<choice hidden="true" req="HID_UPG_DRONE_SPEED_2" max_group="1" blue="false">
-			<text>You already have Drone Boost MK II.</text>
+			<text>You already have the Drone Boost MK II.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -2675,7 +2674,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_UPG_DRONE_SPEED_2" max_group="2" blue="false">
-			<text>You already have Drone Boost MK II.</text>
+			<text>You already have the Drone Boost MK II.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -2688,7 +2687,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_engineer" max_group="2" blue="false">
-			<text>You already scrapped Drone Boost MK II.</text>
+			<text>You already scrapped the Drone Boost MK II.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -2722,7 +2721,7 @@
 		<deadCrew load="FM_BOSS_LANIUS1_DESTROYED2"/>
 	</ship>
 	<event name="FM_BOSS_LANIUS1_SUICIDE">
-		<text>From out of the tunnel comes a massive cruiser vessel, of Lanius design! The ship glitters in the light of the nearby star, as its scarlet hull and sharp spikes lurch towards you. But this one feels...different. Its lights are red and you feel almost...hungry looking at it. You can't quite put your finger on it.</text>
+		<text>From out of the tunnel comes a massive cruiser vessel, of Lanius design! The ship glitters in the light of the nearby star, as its scarlet hull and sharp spikes lurch towards you. But this one feels... different. Its lights are red and you feel almost... hungry looking at it. You can't quite put your finger on it.</text>
 		<ship load="FM_BOSS_LANIUS1_SHIP" hostile="false"/>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -2752,7 +2751,7 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_LANIUS_2" silent="false">PLAYER_SHIP_TWISTED5</unlockCustomShip>
 
 		<choice hidden="true" req="HID_FIRE_HEART" max_group="1" blue="false">
-			<text>You already have Scrapmetal Fireheart.</text>
+			<text>You already have the Scrapmetal Fireheart.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -2778,7 +2777,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_FIRE_HEART" max_group="2" blue="false">
-			<text>You already have Scrapmetal Fireheart.</text>
+			<text>You already have the Scrapmetal Fireheart.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -2791,7 +2790,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_lanius" max_group="2" blue="false">
-			<text>You already scrapped Scrapmetal Fireheart.</text>
+			<text>You already scrapped the Scrapmetal Fireheart.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -2830,7 +2829,7 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_LANIUS_2" silent="false">PLAYER_SHIP_TWISTED5</unlockCustomShip>
 
 		<choice hidden="true" req="HID_FIRE_HEART" max_group="1" blue="false">
-			<text>You already have Scrapmetal Fireheart.</text>
+			<text>You already have the Scrapmetal Fireheart.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -2856,7 +2855,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_FIRE_HEART" max_group="2" blue="false">
-			<text>You already have Scrapmetal Fireheart.</text>
+			<text>You already have the Scrapmetal Fireheart.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -2869,7 +2868,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_lanius" max_group="2" blue="false">
-			<text>You already scrapped Scrapmetal Fireheart.</text>
+			<text>You already scrapped the Scrapmetal Fireheart.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -2899,14 +2898,11 @@
 
 	<!--KESTREL B-->
 	<ship name="FM_BOSS_KES1_SHIP" auto_blueprint="FM_BOSS_KES1">
-
-
-
 		<destroyed load="FM_BOSS_KES1_SHIP_DESTROYED"/>
 		<deadCrew load="FM_BOSS_KES1_SHIP_DESTROYED2"/>
 	</ship>
 	<event name="FM_BOSS_KES1_SUICIDE">
-		<text>From out of the tunnel comes a massive cruiser vessel, it appears to be an ancient, ugly Kestrel model! Something about the ship makes you....very uneasy</text>
+		<text>From out of the tunnel comes a massive cruiser vessel, it appears to be an ancient, ugly Kestrel model! Something about the decrepit ship makes you... very uneasy.</text>
 		<ship load="FM_BOSS_KES1_SHIP" hostile="false"/>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -2920,7 +2916,7 @@
 							<text>Yeah, it kinda was.</text>
 							<event>
 								<status type="limit" target="enemy" system="weapons" amount="0"/>
-								<text>The enemy seems more depressed, their weapons go entirely offline and their ability to jam your systems is gone. Poor guy.</text>
+								<text>The enemy seems more depressed. Their weapons go entirely offline and their ability to jam your systems is gone. Poor guy.</text>
 								<ship hostile="true"/>
 								<playMusic>Twisted</playMusic>
 								<achievement silent="false">ACH_NOTIME</achievement>
@@ -2939,7 +2935,7 @@
 						<choice hidden="true">
 							<text>Why not just use a teleporter?</text>
 							<event>
-								<text>"....what is a teleporter?" the chorus of voices responds. "You aim to trick me Gatekeeper, but I'm wise to your tricks. It is time to die!"[Some kind of electro-magnetic slimes begins pouring out of your systems, disabling most of them. A majority appear to be sabotaged!] </text>
+								<text>"....what is a teleporter?" the chorus of voices responds. "You aim to trick me Gatekeeper, but I'm wise to your tricks. It is time to die!" Some kind of electro-magnetic slime begins pouring out of your systems, disabling most of them. A majority appear to be sabotaged!</text>
 								<status type="limit" target="player" system="teleporter" amount="0"/>
 								<status type="limit" target="player" system="weapons" amount="0"/>
 								<status type="limit" target="player" system="drones" amount="0"/>
@@ -2964,7 +2960,7 @@
 						<choice hidden="true">
 							<text>Why not just use a teleporter?</text>
 							<event>
-								<text>"....what is a teleporter?" the chorus of voices responds. "You aim to trick me, but I'm wise to your tricks. It is time to die!"[Some kind of electro-magnetic slimes begins pouring out of your systems, disabling most of them. A majority appear to be sabotaged!] </text>
+								<text>"....what is a teleporter?" the chorus of voices responds. "You aim to trick me, but I'm wise to your tricks. It is time to die!" Some kind of electro-magnetic slime begins pouring out of your systems, disabling most of them. A majority appear to be sabotaged!</text>
 								<status type="limit" target="player" system="teleporter" amount="0"/>
 								<status type="limit" target="player" system="weapons" amount="0"/>
 								<status type="limit" target="player" system="drones" amount="0"/>
@@ -2994,7 +2990,7 @@
 		<status type="clear" target="player" system="weapons" amount="100"/>
 		<status type="clear" target="player" system="drones" amount="100"/>
 		<status type="clear" target="player" system="artillery" amount="100"/>
-		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking.  You also locate what appears to be a small mini refrigerator, labelled "Property of Gozer". It gives off an otherworldly aura.</text>
+		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears to be a small mini refrigerator, labelled "Property of Gozer". It gives off an otherworldly aura.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -3008,7 +3004,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Gozer's Fridge...
+			<text>Internalize Gozer's Fridge...
 				[Your Ghost crew can no longer phase through walls, but they feel incredibly durable! All Ghosts in your crew gain 70% max health and 30% movement speed.]
 			</text>
 			<event>
@@ -3090,7 +3086,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Gozer's Fridge...
+			<text>Internalize Gozer's Fridge...
 				[Your Ghost crew can no longer phase through walls, but they feel incredibly durable! All Ghosts in your crew gain 70% max health and 30% movement speed.]
 			</text>
 			<event>
@@ -3223,12 +3219,12 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_FEDERATION_2" silent="false">PLAYER_SHIP_TWISTED6_2</unlockCustomShip>
 
 		<choice hidden="true" req="HID_UPG_WEAPONS_REPLICATOR_2" max_group="1" blue="false">
-			<text>You already have Twisted Ammo Fabricator.</text>
+			<text>You already have the Twisted Ammo Fabricator.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
 			<text>Internalize the Twisted Ammo Fabricator...
-				[Effects: Has  60% chance to not use a missile when shooting an ammo consuming weapon.]
+				[Effects: Has 60% chance to not use a missile when shooting an ammo consuming weapon.]
 			</text>
 			<event>
 				<hiddenAug>HID_UPG_WEAPONS_REPLICATOR_2</hiddenAug>
@@ -3236,7 +3232,7 @@
 				<choice hidden="true">
 					<text>Continue...</text>
 					<event>
-						<text>Effects: Has  60% chance to not use a missile when shooting an ammo consuming weapon. [The Augment has been internalized!]</text>
+						<text>Effects: Has 60% chance to not use a missile when shooting an ammo consuming weapon. [The Augment has been internalized!]</text>
 						<choice hidden="true">
 							<text>Continue...</text>
 							<event load="STORAGE_CHECK"/>
@@ -3249,7 +3245,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_UPG_WEAPONS_REPLICATOR_2" max_group="2" blue="false">
-			<text>You already have Twisted Ammo Fabricator.</text>
+			<text>You already have the Twisted Ammo Fabricator.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -3262,7 +3258,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_federation" max_group="2" blue="false">
-			<text>You already scrapped Twisted Ammo Fabricator.</text>
+			<text>You already scrapped the Twisted Ammo Fabricator.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -3301,12 +3297,12 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_FEDERATION_2" silent="false">PLAYER_SHIP_TWISTED6_2</unlockCustomShip>
 
 		<choice hidden="true" req="HID_UPG_WEAPONS_REPLICATOR_2" max_group="1" blue="false">
-			<text>You already have Twisted Ammo Fabricator.</text>
+			<text>You already have the Twisted Ammo Fabricator.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
 			<text>Internalize the Twisted Ammo Fabricator...
-				[Effects: Has  60% chance to not use a missile when shooting an ammo consuming weapon.]
+				[Effects: Has 60% chance to not use a missile when shooting an ammo consuming weapon.]
 			</text>
 			<event>
 				<hiddenAug>HID_UPG_WEAPONS_REPLICATOR_2</hiddenAug>
@@ -3314,7 +3310,7 @@
 				<choice hidden="true">
 					<text>Continue...</text>
 					<event>
-						<text>Effects: Has  60% chance to not use a missile when shooting an ammo consuming weapon. [The Augment has been internalized!]</text>
+						<text>Effects: Has 60% chance to not use a missile when shooting an ammo consuming weapon. [The Augment has been internalized!]</text>
 						<choice hidden="true">
 							<text>Continue...</text>
 							<event load="STORAGE_CHECK"/>
@@ -3327,7 +3323,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_UPG_WEAPONS_REPLICATOR_2" max_group="2" blue="false">
-			<text>You already have Twisted Ammo Fabricator.</text>
+			<text>You already have the Twisted Ammo Fabricator.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -3340,7 +3336,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_federation" max_group="2" blue="false">
-			<text>You already scrapped Twisted Ammo Fabricator.</text>
+			<text>You already scrapped the Twisted Ammo Fabricator.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -3382,25 +3378,25 @@
 				<choice hidden="true">
 					<text>Alright, I'll give you a chance.</text>
 					<event>
-						<text>The Orchid continues: "What did the grape say when it was crushed? Nothing, but it let out a little wine." he pauses for your laugh, but it never comes. "When does a farmer dance? When he drops the beet."
+						<text>The Orchid continues: "What did the grape say when it was crushed? Nothing, but it let out a little wine." He pauses for your laugh, but it never comes. "When does a farmer dance? When he drops the beet."
 
-							"Why did the apricot ask a prune to dinner? Because he couldn’t find a date."
+							"Why did the apricot ask a prune to dinner? Because he couldn't find a date."
 
-							"I’m a succa for puns!"
+							"I'm a succa for puns!"
 						</text>
 						<choice hidden="true">
 							<text>Remain quiet.</text>
 							<event>
-								<text>The Orchid stammers a bit: "A peony for your though...If you were a flower, you’d be a damndelion." You still don't laugh. "I started dating the girl across the street. Honestly, lawn-distance relationships aren't that hard."
+								<text>The Orchid stammers a bit: "A peony for your though...If you were a flower, you'd be a damndelion." You still don't laugh. "I started dating the girl across the street. Honestly, lawn-distance relationships aren't that hard."
 
-									"My leaf blower doesn’t work. It just sucks!"
+									"My leaf blower doesn't work. It just sucks!"
 
-									"Say aloe to my little friend"
+									"Say aloe to my little friend!"
 								</text>
 								<choice hidden="true">
 									<text>Please stop, no more.</text>
 									<event>
-										<text>The Orchid scoffs: "I yam what I yam, I like big buds and I cannot lie, you need to herb your enthusiasm." he responds.
+										<text>The Orchid scoffs: "I yam what I yam, I like big buds and I cannot lie, and you need to herb your enthusiasm." he responds.
 
 											"What I'm saying is, you're a terrible audience. I'll see you in hell friend. Perhaps you'll GROW a better sense of humor!"
 											You still didn't laugh.
@@ -3440,7 +3436,7 @@
 
 	<event name="FM_BOSS_ORCHID1_DESTROYED2">
 		<playMusic></playMusic>
-		<text>The  bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. A hidden escape pod is released from the defeated vessel, you retreive it and bring it aboard. Four Orchids step out, and tell you that they always hated the Captain's jokes, and want to join your crew.  They are quadruplets, and their parents gave them all the same name because they were sadistic parents, apparently.</text>
+		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. A hidden escape pod is released from the defeated vessel, you retreive it and bring it aboard. Four Orchids step out, and tell you that they always hated the Captain's jokes, and want to join your crew. They are quadruplets, and their parents gave them all the same name because they were sadistic parents, apparently.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -3531,7 +3527,7 @@
 		<deadCrew load="FM_BOSS_TUCO1_DESTROYED2"/>
 	</ship>
 	<event name="FM_BOSS_TUCO1_SUICIDE">
-		<text>From out of the tunnel comes a massive cruiser vessel, of Hephaestus design! It appears to have been entirely remodelled however, it is covered in advertising, toys, and other...."cute" decorations. What in the world is going on?</text>
+		<text>From out of the tunnel comes a massive cruiser vessel, of Hephaestus design! It appears to have been entirely remodelled, however; it is covered in advertising, toys, and other...."cute" decorations. What in the world is going on?</text>
 		<ship load="FM_BOSS_TUCO1_SHIP" hostile="false"/>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -3566,7 +3562,7 @@
 
 	<event name="FM_BOSS_TUCO1_DESTROYED">
 		<playMusic></playMusic>
-		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You find what remains of an old gift box. Inside is a golden figure, with an otherworldy aura.</text>
+		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You find what remains of an old gift box. Inside is a golden figure, with an otherworldly aura.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -3577,12 +3573,12 @@
 
 
 		<choice hidden="true" req="HID_GOLDEN_TUCO" max_group="1" blue="false">
-			<text>You already have Golden Tuco.</text>
+			<text>You already have the Golden Tuco.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
 			<text>Internalize the Golden Tuco...
-				[This limited edition Tuco's Child Casino and Gardening Emporium golden figurine makes your crew feel warm and fuzzy inside. Provides 30% active ability cooldown reduction to all of your crew(except Mantis, Mantis HATE figurines).]
+				[This limited edition Tuco's Child Casino and Gardening Emporium golden figurine makes your crew feel warm and fuzzy inside. Provides 30% active ability cooldown reduction to all of your crew (except Mantis, Mantis HATE figurines).]
 			</text>
 			<event>
 				<hiddenAug>HID_GOLDEN_TUCO</hiddenAug>
@@ -3603,7 +3599,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_GOLDEN_TUCO" max_group="2" blue="false">
-			<text>You already have Golden Tuco.</text>
+			<text>You already have the Golden Tuco.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -3616,7 +3612,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_tuco" max_group="2" blue="false">
-			<text>You already scrapped Golden Tuco.</text>
+			<text>You already scrapped the Golden Tuco.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -3645,7 +3641,7 @@
 
 	<event name="FM_BOSS_TUCO1_DESTROYED2">
 		<playMusic></playMusic>
-		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking.  You also locate a strange pheromone sack with an otherworldly glow.</text>
+		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate a strange pheromone sack with an otherworldly glow.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -3655,7 +3651,7 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_TUCO_2" silent="false">PLAYER_SHIP_TWISTED7_2</unlockCustomShip>
 
 		<choice hidden="true" req="HID_GOLDEN_TUCO" max_group="1" blue="false">
-			<text>You already have Golden Tuco.</text>
+			<text>You already have the Golden Tuco.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -3681,7 +3677,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_GOLDEN_TUCO" max_group="2" blue="false">
-			<text>You already have Golden Tuco.</text>
+			<text>You already have the Golden Tuco.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -3694,7 +3690,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_tuco" max_group="2" blue="false">
-			<text>You already scrapped Golden Tuco.</text>
+			<text>You already scrapped the Golden Tuco.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -3730,7 +3726,7 @@
 		<deadCrew load="FM_BOSS_LEECH1_DESTROYED2"/>
 	</ship>
 	<event name="FM_BOSS_LEECH1_SUICIDE">
-		<text>From out of the tunnel comes a massive cruiser vessel, it is a ship painted in very....emotive colors? It appears to be a Leech vessel!</text>
+		<text>From out of the tunnel comes a massive cruiser vessel, of Leech design! It is painted in very... emotive... colors?</text>
 		<ship load="FM_BOSS_LEECH1_SHIP" hostile="false"/>
 		<status type="limit" target="enemy" system="drones" amount="0"/>
 		<choice hidden="true">
@@ -3750,21 +3746,21 @@
 									<event>
 										<text>The Leech blows his nose and thinks for a moment. "...I'm sorry, who are you again?" </text>
 										<choice hidden="true">
-											<text>I'm a friend, I can help if you wish</text>
+											<text>I'm a friend, I can help if you wish.</text>
 											<event>
-												<text>"R-really? O-ok so here's what is wrong..." The Leech begins. He starts talking, and talking, and talking. About problems that barely seem to have a relation at times.
+												<text>"R-really? O-okay so here's what's wrong..." The Leech begins. He starts talking, and talking, and talking. About problems that barely seem to relate to each other at times.
 
-													About his Abusive fat Leech father that has locked himself in his "Pleasure room" with his drone lovers, about his favorite Leech serial killer Jeremy the 986th not writing poetry anymore, how his girlfriend of 2 weeks dumped him, and how he can't stop killing people just like his idol Jeremy. He can't get their screams out of his head. He is too sad to even move anymore unless he has to fight someone.
+													About his abusive fat Leech father that has locked himself in his "pleasure room" with his drone lovers, about his favorite Leech serial killer Jeremy the 986th not writing poetry anymore, how his girlfriend of 2 weeks dumped him, and how he can't stop killing people just like his idol Jeremy. He can't get their screams out of his head. He is too sad to even move anymore unless he has to fight someone.
 												</text>
 												<choice hidden="true">
-													<text>I've changed my mind, you're too far gone. </text>
+													<text>I've changed my mind, you're too far gone.</text>
 													<event>
 														<ship hostile="true"/>
 														<playMusic>Twisted</playMusic>
 														<status type="limit" target="enemy" system="drones" amount="0"/>
-														<text>Please don't....I don't want to see your face in my dreams as you haunt me. Please leave.</text>
+														<text>Please don't... I don't want to see your face in my dreams as you haunt me. Please leave.</text>
 														<choice hidden="true">
-															<text>I'd love to, but you're jamming my FTL </text>
+															<text>I'd love to, but you're jamming my FTL.</text>
 															<event load="COMBAT_CHECK"/>
 														</choice>
 													</event>
@@ -3775,12 +3771,12 @@
 										<choice hidden="true">
 											<text>I am in a huge hurry, please unjam my FTL.</text>
 											<event>
-												<text>"...I knew you wouldn't understand us...but I don't know how to unjam it. You'll have to destroy us. I'm sorry... </text>
+												<text>"...I knew you wouldn't understand us... but I don't know how to unjam it. You'll have to destroy us. I'm sorry... </text>
 												<ship hostile="true"/>
 												<playMusic>Twisted</playMusic>
 												<status type="limit" target="enemy" system="drones" amount="0"/>
 												<choice hidden="true">
-													<text>Wait what?</text>
+													<text>Wait, what?</text>
 													<event load="COMBAT_CHECK"/>
 												</choice>
 											</event>
@@ -3808,7 +3804,7 @@
 
 
 		<choice hidden="true" req="HID_DEPRESSION_EMITTER" max_group="1" blue="false">
-			<text>You already have Depression Emitter.</text>
+			<text>You already have the Depression Emitter.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -3834,7 +3830,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_DEPRESSION_EMITTER" max_group="2" blue="false">
-			<text>You already have Depression Emitter.</text>
+			<text>You already have the Depression Emitter.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -3847,7 +3843,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_leech" max_group="2" blue="false">
-			<text>You already scrapped Depression Emitter.</text>
+			<text>You already scrapped the Depression Emitter.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -3876,7 +3872,7 @@
 
 	<event name="FM_BOSS_LEECH1_DESTROYED2">
 		<playMusic></playMusic>
-		<text>The  bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears to be a small transmitter, with "J E X" written on it.</text>
+		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears to be a small transmitter, with "J E X" written on it.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -3886,7 +3882,7 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_LEECH_3" silent="false">PLAYER_SHIP_TWISTED7_3</unlockCustomShip>
 
 		<choice hidden="true" req="HID_DEPRESSION_EMITTER" max_group="1" blue="false">
-			<text>You already have Depression Emitter.</text>
+			<text>You already have the Depression Emitter.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -3912,7 +3908,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_DEPRESSION_EMITTER" max_group="2" blue="false">
-			<text>You already have Depression Emitter.</text>
+			<text>You already have the Depression Emitter.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -3925,7 +3921,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_leech" max_group="2" blue="false">
-			<text>You already scrapped Depression Emitter.</text>
+			<text>You already scrapped the Depression Emitter.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -3953,7 +3949,7 @@
 	</event>
 
 	<event name="FM_LEECH_SPARES">
-		<text>It seems you're on your last legs. You won't survive much longer, the Leech hails you one last time. "I-I can't do it....please go. I don't want to hear your screams in my dreams."</text>
+		<text>It seems you're on your last legs. You won't survive much longer, the Leech hails you one last time. "I-I can't do it... please go. I don't want to hear your screams in my dreams."</text>
 		<clearTriggeredEvent name="FM_LEECH_SPARES_YOU"/>
 		<choice hidden="true">
 			<text>Surrender.</text>
@@ -3965,7 +3961,7 @@
 		<choice hidden="true">
 			<text>We aren't giving up.</text>
 			<event>
-				<text>".....Fine." they respond with a sigh.</text>
+				<text>"...Fine." they respond with a sigh.</text>
 			</event>
 		</choice>
 	</event>
@@ -4011,7 +4007,7 @@
 	<event name="FM_BOSS_CLAN1_SHIP_DESTROYED_NO_CORDS">
 		<playMusic></playMusic>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
-		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking.  You also locate what appears to be a chemical replication lab that goes beyond modern science, labelled "Ambrosia". It gives off an otherworldly aura.</text>
+		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears to be a chemical replication lab that goes beyond modern science, labelled "Ambrosia". It gives off an otherworldly aura.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -4020,7 +4016,7 @@
 		<achievement silent="false">ACH_TWISTED_REN_CLAN</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<choice hidden="true" req="HID_BRAIN_DONATION" max_group="1" blue="false">
-			<text>You already have Mind Clouder.</text>
+			<text>You already have the Mind Clouder.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -4047,7 +4043,7 @@
 
 
 		<choice hidden="false" req="HID_BRAIN_DONATION" max_group="2" blue="false">
-			<text>You already have Mind Clouder.</text>
+			<text>You already have the Mind Clouder.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -4060,7 +4056,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_clan" max_group="2" blue="false">
-			<text>You already scrapped Mind Clouder.</text>
+			<text>You already scrapped the Mind Clouder.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -4099,7 +4095,7 @@
 		<achievement silent="false">ACH_TWISTED_REN_CLAN</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<choice hidden="true" req="HID_BRAIN_DONATION" max_group="1" blue="false">
-			<text>You already have Mind Clouder.</text>
+			<text>You already have the Mind Clouder.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -4124,7 +4120,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_BRAIN_DONATION" max_group="2" blue="false">
-			<text>You already have Mind Clouder.</text>
+			<text>You already have the Mind Clouder.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -4137,7 +4133,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_clan" max_group="2" blue="false">
-			<text>You already scrapped Mind Clouder.</text>
+			<text>You already scrapped the Mind Clouder.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -4205,7 +4201,7 @@
 	<event name="FM_BOSS_DUSK1_SHIP_DESTROYED_NO_CORDS">
 		<playMusic></playMusic>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
-		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking.  You also locate what appears to be a set of strange looking vests, labelled "World Record". They give off an otherworldly aura.</text>
+		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears to be a set of strange looking vests, labelled "World Record". They give off an otherworldly aura.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -4214,7 +4210,7 @@
 		<achievement silent="false">ACH_TWISTED_REN_DUSK</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<choice hidden="true" req="HID_DEATH_VESTS2" max_group="1" blue="false">
-			<text>You already have Twilight Vests.</text>
+			<text>You already have the Twilight Vests.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -4239,7 +4235,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_DEATH_VESTS2" max_group="2" blue="false">
-			<text>You already have Twlight Vests.</text>
+			<text>You already have the Twlight Vests.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -4252,7 +4248,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_dusk" max_group="2" blue="false">
-			<text>You already scrapped Twlight Vests.</text>
+			<text>You already scrapped the Twlight Vests.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -4291,7 +4287,7 @@
 		<achievement silent="false">ACH_TWISTED_REN_DUSK</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<choice hidden="true" req="HID_DEATH_VESTS2" max_group="1" blue="false">
-			<text>You already have Twilight Vests.</text>
+			<text>You already have the Twilight Vests.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -4316,7 +4312,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_DEATH_VESTS2" max_group="2" blue="false">
-			<text>You already have Twlight Vests.</text>
+			<text>You already have the Twlight Vests.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -4329,7 +4325,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_dusk" max_group="2" blue="false">
-			<text>You already scrapped Twlight Vests.</text>
+			<text>You already scrapped the Twlight Vests.</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -4382,7 +4378,7 @@
 	<event name="FM_BOSS_ENGI1_DESTROYED_NO_CORDS">
 		<playMusic></playMusic>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
-		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears a strange looked Drone Booster labelled "Kai".</text>
+		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears a strange-looking drone booster labelled "Kai".</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -4391,7 +4387,7 @@
 		<achievement silent="false">ACH_TWISTED_REN_ENGI</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ENGI_3" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
 		<choice hidden="true" req="HID_UPG_DRONE_COOLDOWN" max_group="1" blue="false">
-			<text>You already have Drone Booster "Kai".</text>
+			<text>You already have the Drone Booster "Kai".</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -4416,7 +4412,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_UPG_DRONE_COOLDOWN" max_group="2" blue="false">
-			<text>You already have Drone Booster "Kai".</text>
+			<text>You already have the Drone Booster "Kai".</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -4429,7 +4425,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_engi" max_group="2" blue="false">
-			<text>You already scrapped Drone Booster "Kai".</text>
+			<text>You already scrapped the Drone Booster "Kai".</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -4459,7 +4455,7 @@
 	<event name="FM_BOSS_ENGI1_DESTROYED2_NO_CORDS">
 		<playMusic></playMusic>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
-		<text>The  bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears a strange looked Drone Booster labelled "Kai".</text>
+		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears a strange-looking drone booster labelled "Kai".</text>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
@@ -4468,7 +4464,7 @@
 		<achievement silent="false">ACH_TWISTED_REN_ENGI</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ENGI_3" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
 		<choice hidden="true" req="HID_UPG_DRONE_COOLDOWN" max_group="1" blue="false">
-			<text>You already have Drone Booster "Kai".</text>
+			<text>You already have the Drone Booster "Kai".</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -4493,7 +4489,7 @@
 		</choice>
 
 		<choice hidden="false" req="HID_UPG_DRONE_COOLDOWN" max_group="2" blue="false">
-			<text>You already have Drone Booster "Kai".</text>
+			<text>You already have the Drone Booster "Kai".</text>
 			<event>
 				<text>...</text>
 				<item_modify>
@@ -4506,7 +4502,7 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_engi" max_group="2" blue="false">
-			<text>You already scrapped Drone Booster "Kai".</text>
+			<text>You already scrapped the Drone Booster "Kai".</text>
 			<event>
 				<text>...</text>
 				<item_modify>

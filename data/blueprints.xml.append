@@ -22903,13 +22903,13 @@
 		<mod-overwrite:tip>fm_tip_bomb_stun</mod-overwrite:tip>
 	</mod:findName>
 
-	<mod:findName type = "augBlueprint" name = "EX_TELEPORT_HEAL">
+	<!--<mod:findName type = "augBlueprint" name = "EX_TELEPORT_HEAL">
 		<mod-overwrite:desc>Crew gets fully healed by teleportation.
 
 		[X] - As an external system upgrade, this augment will provide its normal effect but take up an augment slot. Can be converted for free to the internal version under the internal upgrade menu if you have the Crew Teleporter system.
 
 		FM: A COMPONENT for forging the MFK Picket Teleporter Relay, alongside the other COMPONENT Recon Drone.</mod-overwrite:desc>
-	</mod:findName>
+	</mod:findName>-->
 
 
 

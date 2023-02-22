@@ -18,7 +18,7 @@
 
 <event name="FM_START_RITUAL">
 	<img back="FM_TWISTED_SECTOR_IMAGE" planet="NONE"/>
-	<text>You've arrived at one of this sector's unusual beacons. You perform a quick scan using the software provided by C.U.R.A., it informs you that the anomalous properties of this beacon force causes anything called by the C.U.R.A. Drive Hacker to be pulled directly to this beacon, but there is only enough energy to do this once per beacon. </text>
+	<text>You've arrived at one of this sector's unusual beacons. You perform a quick scan using the software provided by C.U.R.A., and it informs you that the anomalous properties of this beacon force anything summoned by C.U.R.A.'s specialized Drive Hacker to be pulled directly to it. The Drive Hacker only has enough energy to do this once per beacon.</text>
 	<choice hidden="true">
 		<text>Attempt to utilize your C.U.R.A. Drive Hacker.</text>
 		<event load="FM_CURA_DRIVE_HACKER_MENU"/>
@@ -26,7 +26,7 @@
 	<choice hidden="true">
 		<text>Nevermind, let's leave.</text>
 		<event>
-		<text>You decide against sticking around to try calling any vessels to the beacon. The anomalous properties of the beacon make you and your crew feel very ill, so you don't like the idea of sticking around.</text>
+			<text>You decide against sticking around to try calling any vessels to the beacon. The anomalous properties of the beacon make you and your crew feel very ill, so you don't like the idea of staying here for longer than necessary.</text>
 		<event/>
 		</event>
 	</choice>
@@ -35,7 +35,7 @@
 
 
 <event name="FM_CURA_DRIVE_HACKER_MENU">
-	<text>You've arrived at one of this sector's unusual beacons. The anomalous properties of this beacon force anything called by the C.U.R.A. Drive Hacker to be pulled directly to this beacon. You wonder if this could be used to pull your ship to these beacons in the future.</text>
+	<text>You've arrived at one of this sector's unusual beacons. The anomalous properties of this beacon force anything called by the C.U.R.A. Drive Hacker to be pulled directly to it. You wonder if it could be used to pull your ship directly to such beacons in the future.</text>
 	<choice req="loc_impossible_task_done" lvl="1" max_group="3" hidden="true" blue="false">
         <text>(C.U.R.A. Drive Hacker) You already obtained your reward. You wonder how exactly this benefit C.U.R.A.?</text>
         <event load="OPTION_INVALID"/>
@@ -46,21 +46,21 @@
         <event load="FM_STORAGE_CHECK_AUG_MVBOSS_SPAWNER_REWARD"/>
 	</choice>
 	<choice req="CURA_MVBOSS_SPAWNER" lvl="1" max_group="3" hidden="false" blue="true">
-        <text>(C.U.R.A. Drive Hacker) Summon an Twisted MV Traveler.</text>
+        <text>(C.U.R.A. Drive Hacker) Summon a Twisted MV Traveler.</text>
         <event load="FM_STORAGE_CHECK_AUG_MVBOSS_SPAWNER_LIST_SECTOR"/>
  	</choice>
 	<choice hidden="true">
 		<text>Nevermind, let's leave.</text>
 		<event>
-			<text>You decide against sticking around to try calling any vessels to the beacon. The anomalous properties of the beacon make you and your crew feel very ill, so you don't like the idea of sticking around.</text>
+			<text>You decide against sticking around to try calling any vessels to the beacon. The anomalous properties of the beacon make you and your crew feel very ill, so you don't like the idea of staying here for longer than necessary.</text>
 		<event/>
 		</event>
 	</choice>
 </event>
 
 <event name="FM_STORAGE_CHECK_AUG_MVBOSS_SPAWNER_LIST_SECTOR">
-	<text>You check what ships are available to be summoned currently. For each set of 3 ships you defeat, 3 more will become available to challenge. Summoning an Twisted MV boss will take 2{.
-	[NOTE: All rewards from these bosses DO NOT stack.]</text>
+	<text>You check what ships are available to be summoned currently. For each set of 3 ships you defeat, 3 more will become available to challenge. Summoning a Twisted MV boss will take 2{.
+	NOTE: Any special technology salvaged from these Renegades will not stack with each other.</text>
 
 	
 	<choice req="ach_fm_boss_crystal" lvl="1" max_group="1" hidden="true" blue="false">
@@ -77,9 +77,9 @@
 	</choice>
 
 	<choice req="FM_BOSS_LIST_18" lvl="1" max_group="1" hidden="false" blue="false">
-		<text>Twisted Crystal C - Drops Twisted Crystal Armor</text>
+		<text>Twisted Crystal C - Drops Twisted Crystal Armor.</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -92,7 +92,7 @@
 	<choice req="FM_BOSS_LIST_18" lvl="1" max_group="2" hidden="false" blue="false">
 		<text>Twisted Tuco B - Drops a rare collectable.</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -103,9 +103,9 @@
 		</event>
 	</choice>
 	<choice req="FM_BOSS_LIST_18" lvl="1" max_group="3" hidden="false" blue="false">
-		<text>Twisted Leech C - Drops a strange emitter</text>
+		<text>Twisted Leech C - Drops a strange emitter.</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -130,9 +130,9 @@
 	</choice>
 
 	<choice req="FM_BOSS_LIST_15" lvl="1" max_group="1" hidden="false" blue="false">
-		<text>Twisted Kestrel B - A....fridge?</text>
+		<text>Twisted Kestrel B - A... fridge?</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -145,7 +145,7 @@
 	<choice req="FM_BOSS_LIST_15" lvl="1" max_group="2" hidden="false" blue="false">
 		<text>Twisted Federation B - Drops an unique replicator.</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -158,7 +158,7 @@
 	<choice req="FM_BOSS_LIST_15" lvl="1" max_group="3" hidden="false" blue="false">
 		<text>Twisted Orchid B - Drops some friends.</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -198,7 +198,7 @@
 	<choice req="FM_BOSS_LIST_12" lvl="1" max_group="5" hidden="false" blue="false">
 		<text>Twisted Shell C - Drops an attache case.</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -208,7 +208,7 @@
 	<choice req="FM_BOSS_LIST_12" lvl="1" max_group="6" hidden="false" blue="false">
 		<text>Twisted Engineer B - Drops Drone Booster II</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -232,7 +232,7 @@
 	<choice req="FM_BOSS_LIST_12" lvl="1" max_group="1" hidden="false" blue="false">
 		<text>Twisted Lanius B - Drops a Heart.</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -245,7 +245,7 @@
 	<choice req="FM_BOSS_LIST_12" lvl="1" max_group="2" hidden="false" blue="false">
 		<text>Twisted Shell C - Drops an attache case.</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -256,9 +256,9 @@
 		</event>
 	</choice>
 	<choice req="FM_BOSS_LIST_12" lvl="1" max_group="3" hidden="false" blue="false">
-		<text>Twisted Engineer B - Drops Drone Booster II</text>
+		<text>Twisted Engineer B - Drops Drone Booster II.</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -285,7 +285,7 @@
 	<choice req="FM_BOSS_LIST_9" lvl="1" max_group="1" hidden="false" blue="false">
 		<text>Twisted Slug C - Drops Malboro.</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -298,7 +298,7 @@
 	<choice req="FM_BOSS_LIST_9" lvl="1" max_group="2" hidden="false" blue="false">
 		<text>Twisted Stealth B - Drops ?13Xzzzzzzz$</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -309,9 +309,9 @@
 		</event>
 	</choice>
 	<choice req="FM_BOSS_LIST_9" lvl="1" max_group="3" hidden="false" blue="false">
-		<text>Twisted Zoltan C - Drops Limiter Removal</text>
+		<text>Twisted Zoltan C - Drops Limit Release.</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -336,9 +336,9 @@
 	</choice>
 
 	<choice req="FM_BOSS_LIST_6" lvl="1" max_group="1" hidden="false" blue="false">
-		<text>Twisted Monk B - Drops Aether Ascension Shields</text>
+		<text>Twisted Monk B - Drops Aether Ascension Shields.</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -349,9 +349,9 @@
 		</event>
 	</choice>
 	<choice req="FM_BOSS_LIST_6" lvl="1" max_group="2" hidden="false" blue="false">
-		<text>Twisted Rock C - Drops the Rockmen Relic of Freedom</text>
+		<text>Twisted Rock C - Drops the Rockmen Relic of Freedom.</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -364,7 +364,7 @@
 	<choice req="FM_BOSS_LIST_6" lvl="1" max_group="3" hidden="false" blue="false">
 		<text>Twisted Lost Sun B - Drops Reality-Bent Reloader.</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -391,7 +391,7 @@
 	<choice req="FM_BOSS_LIST_3" lvl="1" max_group="1" hidden="false" blue="false">
 		<text>Twisted Free Mantis B - Drops a refreshment.</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -402,9 +402,9 @@
 		</event>
 	</choice>
 	<choice req="FM_BOSS_LIST_3" lvl="1" max_group="2" hidden="false" blue="false">
-		<text>Twisted Separatist B - Drops Magatama</text>
+		<text>Twisted Separatist B - Drops Magatama.</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -415,9 +415,9 @@
 		</event>
 	</choice>
 	<choice req="FM_BOSS_LIST_3" lvl="1" max_group="3" hidden="false" blue="false">
-		<text>Twisted Mantis B - Drops Pheromone Accelerator</text>
+		<text>Twisted Mantis B - Drops Pheromone Accelerator.</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -442,9 +442,9 @@
 	</choice>
 
 	<choice req="loc_coords_twisted" lvl="1" max_group="1" hidden="false" blue="false">
-		<text>Twisted Clansman B - Drops Mind Clouder</text>
+		<text>Twisted Clansman B - Drops Mind Clouder.</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -455,9 +455,9 @@
 		</event>
 	</choice>
 	<choice req="loc_coords_twisted" lvl="1" max_group="2" hidden="false" blue="false">
-		<text>Twisted Duskbringer B - Drops Twlight Vests</text>
+		<text>Twisted Duskbringer B - Drops Twlight Vests.</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -468,9 +468,9 @@
 		</event>
 	</choice>
 	<choice req="loc_coords_twisted" lvl="1" max_group="3" hidden="false" blue="false">
-		<text>Twisted Engi C - Drops Drone Booster "Kai"</text>
+		<text>Twisted Engi C - Drops Drone Booster "Kai".</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -482,9 +482,9 @@
 	</choice>
 
 	<choice req="pilot" lvl="1" max_group="1" hidden="false" blue="false">
-		<text>Twisted Clansman B - Drops Mind Clouder</text>
+		<text>Twisted Clansman B - Drops Mind Clouder.</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -495,9 +495,9 @@
 		</event>
 	</choice>
 	<choice req="pilot" lvl="1" max_group="2" hidden="false" blue="false">
-		<text>Twisted Duskbringer B - Drops Twlight Vests</text>
+		<text>Twisted Duskbringer B - Drops Twlight Vests.</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -508,9 +508,9 @@
 		</event>
 	</choice>
 	<choice req="pilot" lvl="1" max_group="3" hidden="false" blue="false">
-		<text>Twisted Engi C - Drops Drone Booster "Kai"</text>
+		<text>Twisted Engi C - Drops Drone Booster "Kai".</text>
 		<event>
-			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, then a rift opens up in close proximity to your ship. Here they come!</text>
+			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
 			<item_modify>
 				<item type="fuel" min="-2" max="-2"/>
 			</item_modify>
@@ -523,7 +523,7 @@
 	<choice hidden="true">
 		<text>Nevermind, let's leave.</text>
 		<event>
-		<text>You decide against sticking around to try calling any vessels to the beacon. The anomalous properties of the beacon make you and your crew feel very ill, so you don't like the idea of sticking around.</text>
+			<text>You decide against sticking around to try calling any vessels to the beacon. The anomalous properties of the beacon make you and your crew feel very ill, so you don't like the idea of staying here for longer than necessary.</text>
 		<event/>
 		</event>
 	</choice>
