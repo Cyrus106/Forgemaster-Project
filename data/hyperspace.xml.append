@@ -3405,7 +3405,7 @@
 			<name>FM_EXPLOSIVE_FORGE_LIST</name>
 			<name>FM_FLAK_FORGE_LIST</name>
 			<name>FM_ORGANIC_FORGE_LIST</name>
-			<name>FM_COMBAT_DRONE_FORGE_LIST</name>
+			<!--<name>FM_COMBAT_DRONE_FORGE_LIST</name>-->
 		</req>
 		<!-- FULL CHECK, CHECKS ALL LISTS FOR VERY SPECIFIC EVENTS. STORAGE CHECK VERSION -->
 		<req name="FM_FORGE_LIST_CHECK_STORAGE" type="all"> <!-- If none are met, show the recipe list at the storage check! These are all ingredient checks -->
