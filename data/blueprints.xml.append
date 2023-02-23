@@ -22562,6 +22562,12 @@
 	<mod:findName type = "weaponBlueprint" name = "FOCUS_1">
 		<mod-overwrite:tip>fm_tip_focus_1</mod-overwrite:tip>
 	</mod:findName>
+	
+	<!-- MAPLE -->
+	
+	<mod:findName type = "weaponBlueprint" name = "ENERGY_CONSERVATIVE">
+		<mod-overwrite:tip>fm_tip_energy_conservative</mod-overwrite:tip>
+	</mod:findName>
 
 	<!-- HEMLOCK + TERRA NOVA -->
 
