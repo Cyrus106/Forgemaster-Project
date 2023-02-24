@@ -3,11 +3,17 @@
 	Currently Enabled.
 	Click to see more info.</text>
 	<text name="info_addon_fmcore">INFERNO-CORE
-	Developed by: Kommandant_Julk
+	Developed by: Kommandant_Julk and Vertaalfout
 	Currently Enabled.
 
-	A base mod for more complex mechanics in Multiverse. It includes multiple systems that allow events to be run each jump and hit of hull damage taken, it also expands the sector jump menu by adding a sub menu which allows to perform more than one action, as well as giving the two bottom combat check options max_groups so they are always at the bottom and lastly adds info buttons for various other addons.
-	This addon was made to provide the more complex systems used in Forgemaster to other mods without needing to install Forgemaster.
+	Features:
+	- allows performing multiple actions during sector jump (one augment AND Cura)
+	- Cura quests aren't lost on reroutes
+	- Beam Pierce augment (beams gain +1 sp) 
+	- Fixes lvl 4 MC
+	- Info buttons for some addons
+	- some framework stuff for Forgemaster
+	- some system cooldown related augment implementations
 	</text>
 
 	<text name="addon_hover_forgemaster">FORGEMASTER
