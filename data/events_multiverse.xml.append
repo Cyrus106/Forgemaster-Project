@@ -6370,7 +6370,7 @@
 	<event name="FM_MODULAR_HULL_MAIN">
 		<text>This is where you can install and modify your very own Modular Hull!</text>
 		<choice req="FM_MODULAR_HULL" lvl="0" max_lvl="0" max_group="2" blue="false" hidden="true"><!--first install of hull-->
-			<text>Install modular armor</text>
+			<text>Install the modular hull.</text>
 			<event>
 				<loadEventList default="FM_MODULAR_HULL_INSTALL">
 					<event req="BLUELIST_OBSIDIAN">
@@ -6828,7 +6828,7 @@
 
 	<!--initial armor base installation-->
 	<event name="FM_MODULAR_HULL_INSTALL">
-		<text>Do you wish to install your very own Modular Hull? [5% hull dmg resist, allows installation of further upgrades.]</text>
+		<text>Do you wish to install your very own Modular Hull? [5% hull dmg resist, allows installation of further upgrades. Locked, so no refunds!]</text>
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Install the Modular Hull.</text>
 			<event>
