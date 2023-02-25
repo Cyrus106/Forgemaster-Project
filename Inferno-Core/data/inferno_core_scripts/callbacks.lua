@@ -97,7 +97,7 @@ local system_callbacks = {
     local table = setmetatable({}, self)
     table.just_on = {[0] = false, [1] = false}
     table.name = name
-    script.on_internal_event(Defines.InternalEvents.ON_TICK, function() table:procedure() end)
+    script.on_internal_event(Defines.InternalEvents.ON_TICK, function() table:procedure() end, 1000)
     return table
   end,
 }
@@ -134,10 +134,10 @@ function()
     local weapons = nil
     local ship = Hyperspace.Global.GetInstance():GetShipManager(i)
     pcall(function() weapons = ship.weaponSystem.weapons end)
-    if weapons then 
+    if weapons and ship.weaponSystem:Powered() then 
       for weapon in vter(weapons) do
         while true do
-          local projectile=weapon:GetProjectile()
+          local projectile = weapon:GetProjectile()
           if projectile then
             Hyperspace.Global.GetInstance():GetCApp().world.space.projectiles:push_back(projectile)
             Defines.FireEvents.WEAPON_FIRE(ship, weapon, projectile)
@@ -148,7 +148,7 @@ function()
       end
     end
   end
-end)
+end, 1000)
 
 script.on_internal_event(Defines.InternalEvents.ON_TICK,
 function()
@@ -171,7 +171,7 @@ function()
       end
     end
   end
-end)
+end, 1000)
 
 
 function script.on_fire_event(FireEvent, func, priority)

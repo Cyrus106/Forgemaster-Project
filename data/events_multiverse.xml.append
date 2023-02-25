@@ -6370,7 +6370,7 @@
 	<event name="FM_MODULAR_HULL_MAIN">
 		<text>This is where you can install and modify your very own Modular Hull!</text>
 		<choice req="FM_MODULAR_HULL" lvl="0" max_lvl="0" max_group="2" blue="false" hidden="true"><!--first install of hull-->
-			<text>Install modular armor</text>
+			<text>Install the modular hull.</text>
 			<event>
 				<loadEventList default="FM_MODULAR_HULL_INSTALL">
 					<event req="BLUELIST_OBSIDIAN">
@@ -6449,39 +6449,39 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="17" max_lvl="17" max_group="2" blue="false" hidden="true">
-			<text>Currently 17 upgrade notches in use..."overcharmed II"</text>
+			<text>Currently 17 upgrade notches in use..."Overcharmed II"</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="18" max_lvl="18" max_group="2" blue="false" hidden="true">
-			<text>Currently 18 upgrade notches in use..."overcharmed III"</text>
+			<text>Currently 18 upgrade notches in use..."Overcharmed III"</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="19" max_lvl="19" max_group="2" blue="false" hidden="true">
-			<text>Currently 19 upgrade notches in use..."overcharmed IV"</text>
+			<text>Currently 19 upgrade notches in use..."Overcharmed IV"</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="20" max_lvl="20" max_group="2" blue="false" hidden="true">
-			<text>Currently 20 upgrade notches in use..."overcharmed V"</text>
+			<text>Currently 20 upgrade notches in use..."Overcharmed V"</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
     <choice req="fm_hull_upgrade_points" lvl="21" max_lvl="21" max_group="2" blue="false" hidden="true">
-		   <text>Currently 21 upgrade notches in use..."overcharmed VI"</text>
+		   <text>Currently 21 upgrade notches in use..."Overcharmed VI"</text>
 		   <event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="22" max_lvl="22" max_group="2" blue="false" hidden="true">
-		  <text>Currently 22 upgrade notches in use..."overcharmed VII"</text>
+		  <text>Currently 22 upgrade notches in use..."Overcharmed VII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="23" max_lvl="23" max_group="2" blue="false" hidden="true">
-		  <text>Currently 23 upgrade notches in use..."overcharmed VIII"</text>
+		  <text>Currently 23 upgrade notches in use..."Overcharmed VIII"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="24" max_lvl="24" max_group="2" blue="false" hidden="true">
-		  <text>Currently 24 upgrade notches in use..."overcharmed IX"</text>
+		  <text>Currently 24 upgrade notches in use..."Overcharmed IX"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="25" max_lvl="25" max_group="2" blue="false" hidden="true">
-		  <text>Currently 25 upgrade notches in use..."overcharmed X"</text>
+		  <text>Currently 25 upgrade notches in use..."Overcharmed X"</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="26" max_lvl="26" max_group="2" blue="false" hidden="true">
@@ -6721,7 +6721,7 @@
 		  <event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="85" max_lvl="85" max_group="2" blue="false" hidden="true">
-		  <text>Currently 85 upgrade notches in use..."overcharmed LXX"</text>
+		  <text>Currently 85 upgrade notches in use... game over man, game over!</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
 
@@ -6738,7 +6738,7 @@
 		</choice>
 		<!--vengeance modules--><!--
 		<choice req="CAN_INSTALL_MODULE_TRUE" lvl="1" max_group="4" blue="false" hidden="true">
-			<text>Install vengenace modules</text>
+			<text>Install vengenace modules.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MODULES_VENGEANCE</loadEvent>
 			</event>
@@ -6828,7 +6828,7 @@
 
 	<!--initial armor base installation-->
 	<event name="FM_MODULAR_HULL_INSTALL">
-		<text>Do you wish to install your very own Modular Hull? [5% hull dmg resist, allows installation of further upgrades.]</text>
+		<text>Do you wish to install your very own Modular Hull? [5% hull dmg resist, allows installation of further upgrades. Locked, so no refunds!]</text>
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Install the Modular Hull.</text>
 			<event>
@@ -6853,7 +6853,7 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_INSTALL_LITE">
-		<text>Do you wish to install your very own Modular Hull? [allows installation of further upgrades.]</text>
+		<text>Do you wish to install your very own Modular Hull? [Allows installation of further upgrades. Locked, so no refunds!]</text>
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Install the Modular Hull (lite).</text>
 			<event>
@@ -6888,19 +6888,19 @@
 			</event>
 		</choice>
 		<choice>
-			<text>Install vengenace modules</text>
+			<text>Install vengenace modules.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MODULES_VENGEANCE</loadEvent>
 			</event>
 		</choice>
 		<!--<choice>
-			<text>Install more vengenace modules</text>
+			<text>Install more vengenace modules.</text>
 			<event>
 				<loadEvent>VENGEFUL_INSTALL</loadEvent>
 			</event>
 		</choice>-->
 		<choice>
-			<text>Install system modules</text>
+			<text>Install system modules.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MODULES_SYSTEMS</loadEvent>
 			</event>
@@ -6923,7 +6923,7 @@
 			</event>
 		</choice>
 		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="5" max_group="2" blue="false" hidden="true">
-			<text>Fortified Plating Module [maxed]</text>
+			<text>Fortified Plating Module [MAXED]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="pilot" max_group="3" blue="false">
@@ -6933,7 +6933,7 @@
 			</event>
 		</choice>
 		<choice req="FM_MODULAR_HULL_ENCASED" lvl="5" max_group="3" blue="false" hidden="true">
-			<text>Encased Systems Module [maxed]</text>
+			<text>Encased Systems Module [MAXED]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="pilot" max_group="4" blue="false">
@@ -6943,7 +6943,7 @@
 			</event>
 		</choice>
 		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="15" max_group="4" blue="false" hidden="true">
-			<text>Resilient Construction Module [maxed]</text>
+			<text>Resilient Construction Module [MAXED]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="pilot" max_group="5" blue="false">
@@ -6953,7 +6953,7 @@
 			</event>
 		</choice>
 		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="5" max_group="5" blue="false" hidden="true">
-			<text>Guardian Protocols Module [maxed]</text>
+			<text>Guardian Protocols Module [MAXED]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="pilot" max_group="6" blue="false">
@@ -6963,7 +6963,7 @@
 			</event>
 		</choice>
 		<choice req="FM_MODULAR_HULL_FLOORING" lvl="6" max_group="6" blue="false" hidden="true">
-			<text>Intelligent Flooring Module [maxed]</text>
+			<text>Intelligent Flooring Module [MAXED]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="pilot" max_group="7" blue="false">
@@ -6973,7 +6973,7 @@
 			</event>
 		</choice>
 		<choice req="FM_MODULAR_HULL_AERO" lvl="5" max_group="7" blue="false"  hidden="true">
-			<text>Inspirational Aerosols Module [maxed]</text>
+			<text>Inspirational Aerosols Module [MAXED]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_RESPIRATION" lvl="0" max_lvl="0" max_group="8" blue="false">
@@ -6983,7 +6983,7 @@
 			</event>
 		</choice>
 		<choice req="FM_MODULAR_HULL_RESPIRATION" max_group="8" blue="false"  hidden="true">
-			<text>Enhanced Respiration Grid Module [maxed]</text>
+			<text>Enhanced Respiration Grid Module [MAXED]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="pilot" max_group="9" blue="false">
@@ -6993,7 +6993,7 @@
 			</event>
 		</choice>
 		<choice req="FM_MODULAR_HULL_SCRAP" lvl="3" max_group="9" blue="false" hidden="true">
-			<text>Scrap Magnet Module [maxed]</text>
+			<text>Scrap Magnet Module [MAXED]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="pilot" max_group="10" blue="false">
@@ -7004,7 +7004,7 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_MODULES_VENGEANCE">
-		<text>Here you can see the vengeance modules you can install (You can select the option to see the effects before installing).</text>
+		<text>Here you can see the vengeance modules you can install (You can select the option to see the effects before installing). All modules stack independently, and multiple of the same module increase how many times it can proc per hit.</text>
 		<choice req="pilot" max_group="2" blue="false">
 			<text>Prismatic Hullguard Cultivator [50~]</text>
 			<event>
@@ -7032,7 +7032,7 @@
 	</event>
 
 	<event name="FM_MODULAR_HULL_MODULE_FORTIFIED">
-		<text>Install Fortified Plating? [+5% hull resist chance, 5 can be installed, uses 1 upgrade notches]</text>
+		<text>Install Fortified Plating? [+5% hull resist chance, 5 can be installed, uses 1 upgrade notch.]</text>
 		<choice req="FM_MODULAR_HULL_LITE" lvl="0" max_group="1" blue="false">
 			<text>Install the Fortified Plating.</text>
 			<event>
@@ -7166,7 +7166,7 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_MODULE_AERO">
-		<text>Install Inspirational Aerosols? [+100% power recharge speed for your crew and -30% for enemies on your ship. +50% boost to allied crew on the enemy ship. and 5 can be installed and uses 3 upgrade notches]</text>
+		<text>Install Inspirational Aerosols? [+100% power recharge speed for your crew and -30% for enemies on your ship. Effect is halfed for allied crew on the enemy ship. 5 can be installed and uses 3 upgrade notches]</text>
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Install the Inspirational Aerosols.</text>
 			<event>
@@ -7218,7 +7218,7 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_MODULE_SCRAP">
-		<text>Install Scrap Magnet? [+5% scrap, 3 can be installed, uses 1 upgrade notches]</text>
+		<text>Install Scrap Magnet? [+5% scrap, 3 can be installed, uses 1 upgrade notch]</text>
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Install the Scrap Magnet.</text>
 			<event>
@@ -7245,7 +7245,7 @@
 	</event>
 
 	<event name="FM_MODULAR_HULL_MODULE_VENGEANCE1">
-		<text>Install Prismatic Hullguard Cultivator? [2 laser(10% fire) 60% vengeance, stacks independently, more modules increase how many times it can proc per hit, uses 1 upgrade notch]</text>
+		<text>Install Prismatic Hullguard Cultivator? [2 lasers (10% fire) 60% vengeance, uses 1 upgrade notch]</text>
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Install the Prismatic Hullguard Cultivator.</text>
 			<event>
@@ -7271,7 +7271,7 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_MODULE_VENGEANCE2">
-		<text>Install Crystalline Hullguard Cultivator? [2 crystals(40% fire, 40% breach, 1 SP) 60% vengeance, stacks independently, more modules increase how many times it can proc per hit, uses 2 upgrade notches]</text>
+		<text>Install Crystalline Hullguard Cultivator? [2 crystals (40% fire, 40% breach, 1 SP) 60% vengeance, uses 2 upgrade notches]</text>
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Install the Crystalline Hullguard Cultivator.</text>
 			<event>
@@ -7297,7 +7297,7 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_MODULE_VENGEANCE3">
-		<text>Install Forgefire Hullguard Cultivator? [2 magnetic fragments(10% fire, 50% breach, 10 SP, hullbust, 5s stun) 60% vengeance, stacks independently, more modules increase how many times it can proc per hit, uses 3 upgrade notches]</text>
+		<text>Install Forgefire Hullguard Cultivator? [2 magnetic fragments(10% fire, 50% breach, 10 SP, hullbust, 5s stun) 60% vengeance, uses 3 upgrade notches]</text>
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Install the Forgefire Hullguard Cultivator.</text>
 			<event>
@@ -7502,7 +7502,7 @@
 			</event>
 		</choice>
 		<choice req="FM_MODULAR_HULL_TURRET_WEAPONS" max_group="2" blue="false" hidden="true">
-			<text>Micro-Turret Integration Module[maxed]</text>
+			<text>Micro-Turret Integration Module[MAXED]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
@@ -7545,7 +7545,7 @@
 			</event>
 		</choice>
 		<choice req="FM_MODULAR_HULL_UPDATE_SHIELDS" max_group="1" hidden="true">
-			<text>System Update Module[maxed]</text>
+			<text>System Update Module[MAXED]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_TURRET_SHIELDS" lvl="0" max_group="2" blue="false">
@@ -8900,7 +8900,7 @@
 	</event>
 
 	<event name="FM_MODULAR_HULL_CAPSTONE_SALT">
-		<text>Install the Saline Hull Body? [+100% ion resist chance, organic crew take 0.5dps]</text>
+		<text>Install the Saline Hull Body? [+100% ion resist chance, ALL organic crew take -0.5hp/s]</text>
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Install the Saline Hull Body.</text>
 			<event>
@@ -9209,7 +9209,7 @@
 		</choice>
 		<!--capstones-->
 		<choice req="FM_MODULAR_HULL_SALT"  blue="false" hidden="true">
-			<text>Saline Hull Body[+100% ion resist chance, organic crew take 0.5dps]</text>
+			<text>Saline Hull Body[+100% ion resist chance, ALL organic crew take -0.5hp/s]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_DUSK"  blue="false" hidden="true">
@@ -9805,149 +9805,149 @@
 
 		<!--system Update-->
 		<choice req="FM_MODULAR_HULL_UPDATE_WEAPONS" lvl="1"  blue="false" hidden="true">
-			<text>System Update Module(Weapons) [+40% repair, -40% sabotage]</text>
+			<text>System Update Module (Weapons) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_UPDATE_SHIELDS" lvl="1"  blue="false" hidden="true">
-			<text>System Update Module(Shields) [+40% repair, -40% sabotage]</text>
+			<text>System Update Module (Shields) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_UPDATE_ENGINES" lvl="1"  blue="false" hidden="true">
-			<text>System Update Module(Engines) [+40% repair, -40% sabotage]</text>
+			<text>System Update Module (Engines) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_UPDATE_MED" lvl="1"  blue="false" hidden="true">
-			<text>System Update Module(Medical) [+40% repair, -40% sabotage]</text>
+			<text>System Update Module (Medical) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_UPDATE_DRONES" lvl="1"  blue="false" hidden="true">
-			<text>System Update Module(Drones) [+40% repair, -40% sabotage]</text>
+			<text>System Update Module (Drones) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_UPDATE_OXYGEN" lvl="1"  blue="false" hidden="true">
-			<text>System Update Module(Oxygen) [+40% repair, -40% sabotage]</text>
+			<text>System Update Module (Oxygen) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_UPDATE_TELEPORTER" lvl="1"  blue="false" hidden="true">
-			<text>System Update Module(Teleporter) [+40% repair, -40% sabotage]</text>
+			<text>System Update Module (Teleporter) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_UPDATE_CLOAKING" lvl="1"  blue="false" hidden="true">
-			<text>System Update Module(Cloaking) [+40% repair, -40% sabotage]</text>
+			<text>System Update Module (Cloaking) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_UPDATE_ARTILLERY" lvl="1"  blue="false" hidden="true">
-			<text>System Update Module(Artillery) [+40% repair, -40% sabotage]</text>
+			<text>System Update Module (Artillery) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_UPDATE_HACKING" lvl="1"  blue="false" hidden="true">
-			<text>System Update Module(Hacking) [+40% repair, -40% sabotage]</text>
+			<text>System Update Module (Hacking) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_UPDATE_MIND" lvl="1"  blue="false" hidden="true">
-			<text>System Update Module(Mind Control) [+40% repair, -40% sabotage]</text>
+			<text>System Update Module (Mind Control) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_UPDATE_TEMPORAL" lvl="1"  blue="false" hidden="true">
-			<text>System Update Module(Temporal Manipulator) [+40% repair, -40% sabotage]</text>
+			<text>System Update Module (Temporal Manipulator) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_UPDATE_PILOT" lvl="1"  blue="false" hidden="true">
-			<text>System Update Module(Piloting) [+40% repair, -40% sabotage]</text>
+			<text>System Update Module (Piloting) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_UPDATE_SENSORS" lvl="1"  blue="false" hidden="true">
-			<text>System Update Module(Sensors) [+40% repair, -40% sabotage]</text>
+			<text>System Update Module (Sensors) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_UPDATE_DOORS" lvl="1"  blue="false" hidden="true">
-			<text>System Update Module(Doors) [+40% repair, -40% sabotage]</text>
+			<text>System Update Module (Doors) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_UPDATE_BATTERY" lvl="1"  blue="false" hidden="true">
-			<text>System Update Module(Battery) [+40% repair, -40% sabotage]</text>
+			<text>System Update Module (Battery) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<!--Micro-Turret-->
 		<choice req="FM_MODULAR_HULL_TURRET_WEAPONS" lvl="1"  blue="false" hidden="true">
-			<text>Micro-Turret Integration Module(Weapons) [7dps in system]</text>
+			<text>Micro-Turret Integration Module (Weapons) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_TURRET_SHIELDS" lvl="1"  blue="false" hidden="true">
-			<text>Micro-Turret Integration Module(Shields) [7dps in system]</text>
+			<text>Micro-Turret Integration Module (Shields) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_TURRET_ENGINES" lvl="1"  blue="false" hidden="true">
-			<text>Micro-Turret Integration Module(Engines) [7dps in system]</text>
+			<text>Micro-Turret Integration Module (Engines) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_TURRET_MED" lvl="1"  blue="false" hidden="true">
-			<text>Micro-Turret Integration Module(Medical) [7dps in system]</text>
+			<text>Micro-Turret Integration Module (Medical) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_TURRET_DRONES" lvl="1"  blue="false" hidden="true">
-			<text>Micro-Turret Integration Module(Drones) [7dps in system]</text>
+			<text>Micro-Turret Integration Module (Drones) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_TURRET_OXYGEN" lvl="1"  blue="false" hidden="true">
-			<text>Micro-Turret Integration Module(Oxygen) [7dps in system]</text>
+			<text>Micro-Turret Integration Module (Oxygen) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_TURRET_TELEPORTER" lvl="1"  blue="false" hidden="true">
-			<text>Micro-Turret Integration Module(Teleporter) [7dps in system]</text>
+			<text>Micro-Turret Integration Module (Teleporter) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_TURRET_CLOAKING" lvl="1"  blue="false" hidden="true">
-			<text>Micro-Turret Integration Module(Cloaking) [7dps in system]</text>
+			<text>Micro-Turret Integration Module (Cloaking) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_TURRET_ARTILLERY" lvl="1"  blue="false" hidden="true">
-			<text>Micro-Turret Integration Module(Artillery) [7dps in system]</text>
+			<text>Micro-Turret Integration Module (Artillery) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_TURRET_HACKING" lvl="1"  blue="false" hidden="true">
-			<text>Micro-Turret Integration Module(Hacking) [7dps in system]</text>
+			<text>Micro-Turret Integration Module (Hacking) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_TURRET_MIND" lvl="1"  blue="false" hidden="true">
-			<text>Micro-Turret Integration Module(Mind Control) [7dps in system]</text>
+			<text>Micro-Turret Integration Module (Mind Control) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_TURRET_TEMPORAL" lvl="1"  blue="false" hidden="true">
-			<text>Micro-Turret Integration Module(Temporal Manipulator) [7dps in system]</text>
+			<text>Micro-Turret Integration Module (Temporal Manipulator) [7dps in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_TURRET_PILOT" lvl="1"  blue="false" hidden="true">
-			<text>Micro-Turret Integration Module(Piloting) [7dps in system]</text>
+			<text>Micro-Turret Integration Module (Piloting) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_TURRET_SENSORS" lvl="1"  blue="false" hidden="true">
-			<text>Micro-Turret Integration Module(Sensors) [7dps in system]</text>
+			<text>Micro-Turret Integration Module (Sensors) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_TURRET_DOORS" lvl="1"  blue="false" hidden="true">
-			<text>Micro-Turret Integration Module(Doors) [7dps in system]</text>
+			<text>Micro-Turret Integration Module (Doors) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_TURRET_BATTERY" lvl="1"  blue="false" hidden="true">
-			<text>Micro-Turret Integration Module(Battery) [7dps in system]</text>
+			<text>Micro-Turret Integration Module (Battery) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
 		<choice req="FM_MODULAR_HULL_CLOAK_COOLDOWN" lvl="1"  blue="false" hidden="true">
-			<text>System Cooldown Module(Cloaking) [-5s cd]</text>
+			<text>System Cooldown Module (Cloaking) [-5s system cooldown]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_HACK_COOLDOWN" lvl="1"  blue="false" hidden="true">
-			<text>System Cooldown Module(Hacking) [-5s cd]</text>
+			<text>System Cooldown Module (Hacking) [-5s system cooldown]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_MIND_COOLDOWN" lvl="1"  blue="false" hidden="true">
-			<text>System Cooldown Module(Mind Control) [-5s cd]</text>
+			<text>System Cooldown Module (Mind Control) [-5s system cooldown]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_TEMPORAL_COOLDOWN" lvl="1"  blue="false" hidden="true">
-			<text>System Cooldown Module(Temporal Manipulator) [-5s cd]</text>
+			<text>System Cooldown Module (Temporal Manipulator) [-5s system cooldown]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 	</event>

@@ -21554,14 +21554,14 @@
 
   <!-- Modular Hull -->
 	<augBlueprint name="FM_MODULAR_HULL">
-		<title>Alastair's Modular Hull (tm)</title>
+		<title>Alastair's Modular Hull</title>
 		<desc>A highly customizable layer of plating for your ship, made by the great Forgemaster himself. Provides 5% resistance to hull damage even with no modules Installed.</desc>
 		<cost>40</cost>
 		<rarity>0</rarity>
 		<stackable>true</stackable>
 	</augBlueprint>
 	<augBlueprint name="FM_MODULAR_HULL_LITE">
-		<title>Alastair's Modular Hull (tm)</title>
+		<title>Alastair's Modular Hull</title>
 		<desc>A less customizable layer of plating for your ship, made by the great Forgemaster himself. No extra resistance because there was no space to fit the plating on your ship.</desc>
 		<cost>20</cost>
 		<rarity>0</rarity>
