@@ -12,3 +12,7 @@ end
 if TCC_INFO then
   error("Trash Compactor Collection was patched before Inferno-Core! Please re-patch your mods, and make sure to put Inferno-Core first!")
 end
+
+if CNC_WEAPONS_INFO then
+  error("C&C Weapons was patched before Inferno-Core! Please re-patch your mods, and make sure to put Inferno-Core first!")
+end

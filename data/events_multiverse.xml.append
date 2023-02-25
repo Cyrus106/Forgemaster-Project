@@ -9200,7 +9200,7 @@
 
 	<!--installed module list-->
 	<event name="FM_MODULAR_HULL_MODULES_INSTALLED">
-		<text>here you can see which modules/capstones you have installed</text>
+		<text>Here you can see which modules/capstones you have installed.</text>
 		<choice req="pilot" blue="false">
 			<text>Nevermind.</text>
 			<event>

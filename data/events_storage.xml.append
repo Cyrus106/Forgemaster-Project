@@ -8991,9 +8991,78 @@
   </event>
 
   <event name="FM_INSTALL_OXYGEN_STIMS">
-    <event/>
+    <variable name="loc_internal_upgrades" op="add" val="1"/>
+    <hiddenAug>FM_OXYGEN_STIMS</hiddenAug>
+    <loadEvent>STORAGE_CHECK_SYSTEM</loadEvent>
   </event>
-
+  <mod:findName type="event" name="STORAGE_CHECK_SYSTEM_WEAPONS">
+    <mod-append:choice req="UPG_WEAPONS_BEAM_PIERCE" lvl="3" max_group="3" blue="false" hidden="true">
+      <text>Beam Phase Upgrade. [UNAVAILABLE: You already have the max of this upgrade]</text>
+      <event load="OPTION_INVALID"/>
+    </mod-append:choice>
+    <mod-append:choice req="UPG_WEAPONS_BEAM_PIERCE" lvl="2" max_lvl="2" max_group="3" blue="false" hidden="true">
+      <text>Beam Phase Upgrade LvL 3. [Cost: 60~, 8}]</text>
+      <event load="STORAGE_CHECK_SYSTEM_WEAPONS_BEAM_PIERCE"/>
+    </mod-append:choice>
+    <mod-append:choice req="UPG_WEAPONS_BEAM_PIERCE" lvl="1" max_lvl="1" max_group="3" blue="false" hidden="true">
+      <text>Beam Phase Upgrade LvL 2. [Cost: 60~, 8}]</text>
+      <event load="STORAGE_CHECK_SYSTEM_WEAPONS_BEAM_PIERCE"/>
+    </mod-append:choice>
+    <mod-append:choice req="UPG_WEAPONS_BEAM_PIERCE" lvl="0" max_lvl="0" max_group="3" blue="false" hidden="true">
+      <text>Beam Phase Upgrade LvL 1. [Cost: 60~, 8}]</text>
+      <event load="STORAGE_CHECK_SYSTEM_WEAPONS_BEAM_PIERCE"/>
+    </mod-append:choice>
+  </mod:findName>
+  <event name="STORAGE_CHECK_SYSTEM_WEAPONS_BEAM_PIERCE">
+    <text>You are about to install a beam phase upgrade.
+    [Effects: beam weapon and Artillery shield pierce is increased by 1, can be installed up to 3 times]</text>
+    <choice req="can_get_beam_pierce" lvl="20" max_group="0" blue="false" hidden="true">
+      <text>Perform the upgrade. [Cost: 60~, 9}]</text>
+      <event>
+        <text>You install the upgrade.</text>
+        <item_modify>
+          <item type="missiles" min="-9" max="-9"/>
+          <item type="scrap" min="-60" max="-60"/>
+        </item_modify>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event load="INSTALL_WEAPONS_BEAM_PIERCE"/>
+        </choice>
+      </event>
+    </choice>
+    <choice req="weapons" lvl="5" max_lvl="6" max_group="0" blue="false" hidden="true">
+      <text>This upgrade is unavailable. You need weapons level 7.</text>
+      <event load="OPTION_INVALID"/>
+    </choice>
+    <choice req="weapons" lvl="3" max_lvl="4" max_group="0" blue="false" hidden="true">
+      <text>This upgrade is unavailable. You need weapons level 5.</text>
+      <event load="OPTION_INVALID"/>
+    </choice>
+    <choice req="weapons" lvl="0" max_lvl="2" max_group="0" blue="false" hidden="true">
+      <text>This upgrade is unavailable. You need weapons level 3.</text>
+      <event load="OPTION_INVALID"/>
+    </choice>
+    <choice req="EX_BEAM_PIERCE" max_group="1" blue="false" hidden="true">
+      <text>Install the External Augment internally.</text>
+      <event>
+        <text>You install the upgrade.</text>
+        <remove name="EX_BEAM_PIERCE"/>
+        <choice hidden="true">
+          <text>Continue...</text>
+          <event load="INSTALL_WEAPONS_BEAM_PIERCE"/>
+        </choice>
+      </event>
+    </choice>
+    <choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true">
+      <text>Nevermind.</text>
+      <event load="STORAGE_CHECK_SYSTEM_LOAD"/>
+    </choice>
+  </event>
+  <event name="INSTALL_WEAPONS_BEAM_PIERCE">
+    <variable name="loc_internal_upgrades" op="add" val="1"/>
+    <hiddenAug>UPG_WEAPONS_BEAM_PIERCE</hiddenAug>
+    <loadEvent>STORAGE_CHECK_SYSTEM</loadEvent>
+  </event>
 
 </FTL>
 

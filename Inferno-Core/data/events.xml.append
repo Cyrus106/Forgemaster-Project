@@ -20,8 +20,8 @@
 	<event name="ADDON_GB_INFO">
 		<text id="info_addon_gb"/>
 	</event>
-	<event name="ADDON_TCC_INFO">
-		<text id="info_addon_tcc"/>
+	<event name="ADDON_CNC_INFO">
+		<text id="info_addon_cnc"/>
 	</event>
 	<event name="ADDON_FR_INFO">
 		<text id="info_addon_fr"/>
@@ -31,6 +31,9 @@
 	</event>
   <event name="ADDON_AA_INFO">
 		<text id="info_addon_aa"/>
+	</event>
+  <event name="ADDON_TCC_INFO">
+		<text id="info_addon_tcc"/>
 	</event>
 	<mod:findName type="event" name="START_BEACON_EXPLAIN_LOAD">
 		<mod-append:eventButton name="ADDON_FMCORE">
@@ -57,11 +60,11 @@
       <jumpClear>false</jumpClear>
       <noDanger>false</noDanger>
     </mod-append:eventButton>
-		<mod-append:eventButton name="ADDON_TCC">
-      <event load="ADDON_TCC_INFO"/>
-      <image border="0">addons/tcc</image>
+		<mod-append:eventButton name="ADDON_CNC">
+      <event load="ADDON_CNC_INFO"/>
+      <image border="0">addons/cnc</image>
       <customLocation x="211" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
-      <tooltip id="addon_hover_tcc"/>
+      <tooltip id="addon_hover_cnc"/>
       <jumpClear>false</jumpClear>
       <noDanger>false</noDanger>
     </mod-append:eventButton>
@@ -89,6 +92,14 @@
       <jumpClear>false</jumpClear>
       <noDanger>false</noDanger>
     </mod-append:eventButton>
+    <mod-append:eventButton name="ADDON_TCC">
+      <event load="ADDON_TCC_INFO"/>
+      <image border="0">addons/tcc</image>
+      <customLocation x="307" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
+      <tooltip id="addon_hover_tcc"/>
+      <jumpClear>false</jumpClear>
+      <noDanger>false</noDanger>
+    </mod-append:eventButton>
 	</mod:findName>
 	<event name="FMCORE_RESET_BUTTONS" unused="true"><!--for debug-->
 		<clearEventButton name="ADDON_TRC"/>
@@ -97,10 +108,11 @@
 		<clearEventButton name="ADDON_FMCORE"/>
 		<clearEventButton name="ADDON_FORGEMASTER"/>
 		<clearEventButton name="ADDON_GB"/>
-		<clearEventButton name="ADDON_TCC"/>
+		<clearEventButton name="ADDON_CNC"/>
 		<clearEventButton name="ADDON_FR"/>
 		<clearEventButton name="ADDON_BAG"/>
     <clearEventButton name="ADDON_AA"/>
+    <clearEventButton name="ADDON_TCC"/>
 		<loadEvent>FM_CORE_RESET_BUTTONS_2</loadEvent>
 	</event>
 	<event name="FM_CORE_RESET_BUTTONS_2">
@@ -154,11 +166,11 @@
       <jumpClear>false</jumpClear>
       <noDanger>false</noDanger>
     </eventButton>
-		<eventButton name="ADDON_TCC">
-      <event load="ADDON_TCC_INFO"/>
-      <image border="0">addons/tcc</image>
+		<eventButton name="ADDON_CNC">
+      <event load="ADDON_CNC_INFO"/>
+      <image border="0">addons/cnc</image>
       <customLocation x="211" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
-      <tooltip id="addon_hover_tcc"/>
+      <tooltip id="addon_hover_cnc"/>
       <jumpClear>false</jumpClear>
       <noDanger>false</noDanger>
     </eventButton>
@@ -183,6 +195,14 @@
       <image border="0">addons/aa</image>
       <customLocation x="283" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
       <tooltip id="addon_hover_aa"/>
+      <jumpClear>false</jumpClear>
+      <noDanger>false</noDanger>
+    </eventButton>
+    <eventButton name="ADDON_TCC">
+      <event load="ADDON_TCC_INFO"/>
+      <image border="0">addons/tcc</image>
+      <customLocation x="307" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
+      <tooltip id="addon_hover_tcc"/>
       <jumpClear>false</jumpClear>
       <noDanger>false</noDanger>
     </eventButton>

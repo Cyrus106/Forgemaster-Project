@@ -14,6 +14,7 @@
 	- Info buttons for some addons
 	- some framework stuff for Forgemaster
 	- some system cooldown related augment implementations
+	(if an addon says disabled despite being patched in it was patched above Inferno-Core or isn't updated to support the buttons)
 	</text>
 
 	<text name="addon_hover_forgemaster">FORGEMASTER
@@ -43,10 +44,10 @@
 
 	To enable Go Ballistic 2, go to the subset forums and visit the MV addon page!
 	</text>
-	<text name="addon_hover_tcc">TRASH COMPATCTOR COLABORATION
+	<text name="addon_hover_tcc">TRASH COMPATCTOR COLLABORATION
 	Currently Disabled.
 	Click to see more info.</text>
-	<text name="info_addon_tcc">TRASH COMPATCTOR COLABORATION
+	<text name="info_addon_tcc">TRASH COMPATCTOR COLLABORATION
 	Developed by Zuggo, Dalvest, Enchanter, Cryntolov, Ashley, NitronEXE, LandGreen, Choosechee, ConMan, Kommandant_Julk
 	Currently Disabled.
 
@@ -54,7 +55,7 @@
 
 	Now includes quite a few other mods such as Bomb Flaks and Instant Flair.
 
-	To enable Trash Compatctor COLABORATION, go to the subset forums and visit the MV addon page!
+	To enable Trash Compatctor COLLABORATION, go to the subset forums and visit the MV addon page!
 	</text>
 	<text name="addon_hover_fr">FORGOTTEN RACES
 	Currently Disabled.
@@ -100,6 +101,18 @@ Playtesters: Skye, DemonFusionGamer, Digger4Money
     An expansion pack that contains many unusual weapons, and which serves as a groundwork for future segments of Alder's Additions to come. As this mod is in open beta, it may contain extreme balance variations; play at your own risk!
 	
 	To enable Alder's Additions, ask Alder for it.
+	</text>
+	<text name="addon_hover_cnc">C&C WEAPONS
+	Currently Disabled.
+	Click to see more info.</text>
+	<text name="info_addon_cnc">C&C WEAPONS: RENEGADE EDITION
+	Developed by: Chrono Vortex
+	Additional credit: Vertaalfout, R4V3-0N
+	Currently Disabled.
+
+	Adds over a dozen new weapons and a couple other surprises based on the Command and Conquer franchise. 
+
+	To enable C&C Weapons, go to the subset forums and visit the MV addon page!
 	</text>
 	<text name="mind_4">14s control, 4 targets</text>
 </FTL>

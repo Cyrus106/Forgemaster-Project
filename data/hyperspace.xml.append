@@ -364,7 +364,7 @@
 
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED1"><!--guild-->
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
-			<hiddenAug>SHIP_MULTIVERSE</hiddenAug>
+			<hiddenAug>SHIP_GUILD</hiddenAug>
 			<crewLimit>10</crewLimit>
 			<crew>
 				<slug_knight room="20" name="P.Escobar" />
@@ -387,7 +387,7 @@
 		</mod-append:customShip>
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED1_2"><!--dusk-->
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
-			<hiddenAug>SHIP_MULTIVERSE</hiddenAug>
+			<hiddenAug>SHIP_DUSK</hiddenAug>
 			<crewLimit>10</crewLimit>
 			<crew>
 				<zoltan_martyr room="20" name="Frehm" />
@@ -402,7 +402,7 @@
 		</mod-append:customShip>
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED1_3"><!--engi-->
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
-			<hiddenAug>SHIP_MULTIVERSE</hiddenAug>
+			<hiddenAug>SHIP_ENGI</hiddenAug>
 			<crewLimit>4</crewLimit>
 			<crew>
 				<engi room="0" name="Armstrong" />
@@ -417,6 +417,7 @@
 
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED2"> <!--free mantis-->
 			<hiddenAug>SHIP_TWISTED_FREEMANTIS</hiddenAug>
+			<hiddenAug>SHIP_FREEMANTIS</hiddenAug>
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<crewLimit>12</crewLimit>
 			<customReactor maxLevel="35"/>
@@ -443,7 +444,7 @@
 		</mod-append:customShip>
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED2_3"><!--mantis-->
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
-			<hiddenAug>SHIP_MULTIVERSE</hiddenAug>
+			<hiddenAug>SHIP_HIVE</hiddenAug>
 			<crewLimit>16</crewLimit>
 			<crew>
 				<mantis room="0" name="Naktul" />
@@ -529,7 +530,7 @@
 		</mod-append:customShip>
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED3_3"><!--lostsun-->
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
-			<hiddenAug>SHIP_MULTIVERSE</hiddenAug>
+			<hiddenAug>SHIP_LOSTSUN</hiddenAug>
 			<crewLimit>12</crewLimit>
 			<customReactor maxLevel="35">
 				<baseCost>15</baseCost>
@@ -572,7 +573,7 @@
 		</mod-append:customShip>
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED4_3"><!--zoltan-->
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
-			<hiddenAug>SHIP_MULTIVERSE</hiddenAug>
+			<hiddenAug>SHIP_ZOLTAN</hiddenAug>
 			<crewLimit>10</crewLimit>
 			<crew>
 				<zoltan room="3"/> <!--piloting-->
@@ -587,6 +588,7 @@
 		</mod-append:customShip>
 
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED5"><!--lanius-->
+			<hiddenAug>SHIP_LANIUS</hiddenAug>
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<crewLimit>10</crewLimit>
 			<systemLimit>8</systemLimit>
@@ -683,7 +685,7 @@
 				<room id="25">
 						<roomAnim renderLayer="0">gas_twisted_2x1</roomAnim>
 					</room>
-				</rooms>
+			</rooms>
 
 		</mod-append:customShip>
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED5_3"><!--engineer-->
@@ -722,7 +724,7 @@
 		</mod-append:customShip>
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED6_2"><!--fed-->
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
-			<hiddenAug>SHIP_MULTIVERSE</hiddenAug>
+			<hiddenAug>SHIP_FEDERATION</hiddenAug>
 			<crewLimit>8</crewLimit>
 			<crew>
 				<human_legion_pyro room="0" />
@@ -736,7 +738,7 @@
 		</mod-append:customShip>
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED6_3"><!--orchid-->
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
-			<hiddenAug>SHIP_MULTIVERSE</hiddenAug>
+			<hiddenAug>SHIP_ORCHID</hiddenAug>
 			<crewLimit>12</crewLimit>
 			<crew>
 				<orchid_fire room="0"/> <!--piloting-->
@@ -752,7 +754,7 @@
 
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED7"><!--crystal-->
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
-			<hiddenAug>SHIP_MULTIVERSE</hiddenAug>
+			<hiddenAug>SHIP_CRYSTAL</hiddenAug>
 			<crewLimit>11</crewLimit>
 			<rooms>
 				<room id="15"> <!--printer-->
@@ -10027,6 +10029,14 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 			</statBoosts>
 		</aug>
+		
+		<aug name="UPG_WEAPONS_BEAM_PIERCE">
+			<function name="AUG_BEAM_PIERCE" value="1" useForReqs="true"/>
+		</aug>
+		
+		<aug name="EX_BEAM_PIERCE">
+			<function name="AUG_BEAM_PIERCE" value="1" useForReqs="true"/>
+		</aug>
 
 		<aug name="LAB_PLATED_REGEN"> <!--Less Max Hp (-30%), Faster healing (doubled), passive regen after 10 seconds out of combat, movespeed -10% -->
 			<statBoosts>
@@ -13786,11 +13796,32 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 
 
 	<events> <!-- INTERNAL INSTALLS -->
-		<event name="FM_INSTALL_OXYGEN_STIMS">
-			<hiddenAug>FM_OXYGEN_STIMS</hiddenAug>
-			<loadEvent>STORAGE_CHECK_SYSTEM</loadEvent>
-		</event>
-
+		<req name="can_get_beam_pierce" type="any" mult="20">
+			<req type="all">
+				<req lvl="3">
+					<name>weapons</name>
+				</req>
+				<req lvl="0" max_lvl="0">
+					<name>UPG_WEAPONS_BEAM_PIERCE</name>
+				</req>
+			</req>
+			<req type="all">
+				<req lvl="5">
+					<name>weapons</name>
+				</req>
+				<req lvl="1" max_lvl="1">
+					<name>UPG_WEAPONS_BEAM_PIERCE</name>
+				</req>
+			</req>
+			<req type="all">
+				<req lvl="7">
+					<name>weapons</name>
+				</req>
+				<req lvl="2" max_lvl="2">
+					<name>UPG_WEAPONS_BEAM_PIERCE</name>
+				</req>
+			</req>
+		</req>
 	</events>
 
 	<!-- VARIABLES and METAVARIABLES-->

@@ -20902,6 +20902,25 @@
 		<stackable>false</stackable>
 		<bp>0</bp>
 	</augBlueprint>
+	
+	<augBlueprint name="UPG_WEAPONS_BEAM_PIERCE">
+		<title>Beam Phase Upgrade</title>
+		<desc>Upgrade - Grants all beam weapons +1 shield piercing.</desc>
+		<cost>80</cost>
+		<rarity>0</rarity>
+		<value>1</value><!--Shield Piercing-->
+		<stackable>true</stackable>
+	</augBlueprint>
+	<augBlueprint name="EX_BEAM_PIERCE">
+		<title>Beam Phase Frequencies [X]</title>
+		<desc>The shield piercing of your beam weapons and Artillery is improved by 1.
+    
+		[X] - As an external system upgrade, this augment will provide its normal effect but take up an augment slot. Can be converted for free to the internal version under the internal upgrade menu, in the Weapons category.</desc>
+		<cost>80</cost>
+		<rarity>0</rarity>
+		<value>1</value><!--Shield Piercing-->
+		<stackable>true</stackable>
+	</augBlueprint>
 
 	<augBlueprint name="CURA_MVBOSS_SPAWNER">
 		<title>C.U.R.A. Drive Hacker</title>
