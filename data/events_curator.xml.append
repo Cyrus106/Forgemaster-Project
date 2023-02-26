@@ -91,7 +91,7 @@
 			<text>"Task accepted. Transferring augmentation to your ship's internal systems. Do not disappoint me."</text>
 			<!--<hiddenAug>TASK_BOSS_RUSH</hiddenAug>-->
 			<variable name="loc_impossible_task" op="set" val="2"/>
-			<augment name="CURA_MVBOSS_SPAWNER"/>
+			<hiddenAug>CURA_MVBOSS_SPAWNER</hiddenAug>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event load="CURA_BOSS_RUSH_PREVIEW2"/>
@@ -118,7 +118,7 @@
 </event>
 
 <event name="CURA_BOSS_RUSH_PREVIEW2">
-	<text>"Augmentation has finished uploading to your ship, check your internal systems when you have a free moment to review it."</text>
+	<text>"Augmentation has finished uploading to your ship. Do not worry renegade, it won't take up one of your precious augment slots."</text>
 	<choice hidden="false">
 		<text>Continue...</text>
 		<event>
