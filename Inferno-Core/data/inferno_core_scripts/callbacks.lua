@@ -9,13 +9,13 @@ local callback_runner = {
   __call = function(self, ...)
     for key,functable in ipairs(self) do
       for _,func in ipairs(functable) do
-        local success, err = pcall(func, ...)
+        local success, res = pcall(func, ...)
         if not success then
           log(string.format(
           "Failed to call function in callback '%s' due to error:\n %s",
           self.identifier,
-          err))
-        end
+          res))
+        elseif res then return end
       end
     end
   end,
