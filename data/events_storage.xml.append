@@ -6781,14 +6781,14 @@
   <!--DRIVE HIJACKER-->
 
   <event name="FM_STORAGE_CHECK_AUG_MVBOSS_SPAWNER_REWARD">
-    <text>Reality itself rends open from all the mayhem you have caused with the Drive Hacker.</text>
+    <text>Reality itself bleeds from all the mayhem you have caused with the Drive Hacker.</text>
     <variable name="loc_impossible_task_done" op="set" val="1"/>
 
     <choice hidden="false">
       <text>Continue...</text>
       <event>
         <hiddenAug>AUG_TERMINUS</hiddenAug>
-        <text>A core of unstable, reality-rending nature emerges suddenly from a rift and impacts with you ship. It is embedded into your hull and you cannot seem to remove it, no matter what tool you use. Your ship appears to be significantly upgraded from its' presence however. </text>
+        <text>A core of unstable, reality-rending nature emerges suddenly from a rift and impacts with you ship. It is embedded into your hull and you cannot seem to remove it, no matter what tool you use. Your ship appears to be significantly upgraded from its presence however. </text>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
@@ -6796,7 +6796,7 @@
             <choice hidden="true">
               <text>Continue...</text>
               <event>
-                <text>A sinister looking rift opens up and an terrifying looking weapon appears to emerge. It is drawn to your ship and floats straight into your cargo hold.</text>
+                <text>A sinister looking rift opens up and an object of incomprehensible chaos emerges. It is drawn to your ship and floats straight into your cargo hold.</text>
                 <weapon name="FM_TERMINUS"/>
 
                 <choice hidden="true">
