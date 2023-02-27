@@ -7429,7 +7429,7 @@
 			</event>
 		</choice>
 		<choice req="pilot" max_group="10" blue="false">
-			<text>The Nevermind.</text>
+			<text>Nevermind.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
 			</event>
