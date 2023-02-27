@@ -13805,11 +13805,12 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<name>UPG_WEAPONS_BEAM_PIERCE</name>
 				</req>
 			</req>
-			<req type="all">
+			<req name="can_get_beam_pierce_2" type="all">
+				<name>unique_leah</name>
 				<req lvl="5">
 					<name>weapons</name>
 				</req>
-				<req lvl="1" max_lvl="1">
+				<req lvl="0" max_lvl="1">
 					<name>UPG_WEAPONS_BEAM_PIERCE</name>
 				</req>
 			</req>
@@ -13817,11 +13818,12 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<req lvl="7">
 					<name>weapons</name>
 				</req>
-				<req lvl="2" max_lvl="2">
+				<req lvl="1" max_lvl="2">
 					<name>UPG_WEAPONS_BEAM_PIERCE</name>
 				</req>
 			</req>
 		</req>
+		
 	</events>
 
 	<!-- VARIABLES and METAVARIABLES-->

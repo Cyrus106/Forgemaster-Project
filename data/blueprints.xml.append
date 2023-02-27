@@ -2913,7 +2913,7 @@
 			<power>Completely invincible to most forms of damage.</power>
 			<power>Takes regular damage from fire and irregular hazards.</power>
 			<power>Cannot man systems, repair, fight crew or sabotage.</power>
-            <power>Active Ability (20s Cooldown): Deal 1 damage, breach the current room and reform into a Cobalt Separatist.</power>
+			<power>Active Ability (20s Cooldown): Deal 1 damage, breach the current room and reform into a Cobalt Separatist.</power>
 		</powerList>
 	</crewBlueprint>
 
@@ -2928,7 +2928,7 @@
 			<power>Targeted enemies take -12hp/s, but only attacks for 0.4x damage.</power>
 			<power>Repairs at 0.75x speed, but puts out fires at 2.25x speed.</power>
 			<power>Active Ability: Merge with a Cobalt Separatist to form a Twisted Seperatist.</power>
-            <!--<power>Passive Ability: When an enemy it is targeting dies, spreads fires through the current room. Cannot burn.</power>-->
+			<!--<power>Passive Ability: When an enemy it is targeting dies, spreads fires through the current room. Cannot burn.</power>-->
 		</powerList>
 	</crewBlueprint>
 
@@ -4491,7 +4491,7 @@
 		<title>'Multiplicity' Barrage Laser</title>
 		<short>'Multiplicity'</short>
 		<tip>tip_laser</tip>
-		<desc>Placeholder</desc>
+		<desc>Reverse-engineered from defeated flagships, this weapon replicates the high volume surge volley and targeting pattern of rebel flagships to some extent.</desc>
 		<!--<descriptionOverride>This strange laser weapon fires a massive amount of 15 lasers at random rooms on the enemy ship as if you were commanding a whole fleet!
 
 			Stats:
@@ -9129,8 +9129,8 @@
 				<duration>25</duration>
 				<!--<maxStacks id="terminus_suffocation">1</maxStacks>-->
 				<roomAnim renderLayer="1">
-					<anim animType="default" animBorder="2">nothing</anim>                <!-- (animType can be default, stretch, random, or center, animBorder controls spawning margins)-->
-					<tileAnim>gas_twisted_1x1</tileAnim>                                               <!--(spawn this animation on each tile)-->
+					<anim animType="default" animBorder="2">nothing</anim>			    <!-- (animType can be default, stretch, random, or center, animBorder controls spawning margins)-->
+					<tileAnim>gas_twisted_1x1</tileAnim>									           <!--(spawn this animation on each tile)-->
 				</roomAnim>
 			</statBoost>
 
@@ -10015,8 +10015,8 @@
 					<effectAnim>explosion_ion</effectAnim>
 					<selfHealth>-15</selfHealth>
 					<affectsSelf>true</affectsSelf>
-					<temporaryEffect>                                                                         <!-- Creates a temporary effect with the ability, modifying the crewmember's stats. Modified stats replace the original stats.-->
-						<duration>2</duration>                                                            <!--Duration of the temporary effect.-->
+					<temporaryEffect>																		 <!-- Creates a temporary effect with the ability, modifying the crewmember's stats. Modified stats replace the original stats.-->
+						<duration>2</duration>															<!--Duration of the temporary effect.-->
 						<cooldownColor r="167" g="250" b="255"/>
 						<finishSounds enemy="true">
 							<finishSound>mindControlEnd</finishSound>
@@ -10028,7 +10028,7 @@
 						<canRepair>false</canRepair>
 						<canSabotage>false</canSabotage>
 						<canMan>false</canMan>
-						<effectAnim>mindcontrol</effectAnim>                       <!--Adds an additional animSheet on top of the normal crew sheet, and optionally hides the normal crew sheet.-->
+						<effectAnim>mindcontrol</effectAnim>			           <!--Adds an additional animSheet on top of the normal crew sheet, and optionally hides the normal crew sheet.-->
 						<stunMultiplier>5.0</stunMultiplier>
 						<noAI>true</noAI>
 					</temporaryEffect>
@@ -10660,7 +10660,7 @@
 			Crew Damage Per Tile Hit: 15
 			Total System Damage: 1
 			Total Crew Damage: 15
-            Shield Piercing: 1
+			Shield Piercing: 1
 
 			Breach Chance: 20%
 
@@ -10742,7 +10742,7 @@
 			Crew Damage Per Tile Hit: 15
 			Total System Damage: 1
 			Total Crew Damage: 15
-            Shield Piercing: 1
+			Shield Piercing: 1
 
 			Breach Chance: 20%
 
@@ -10760,7 +10760,7 @@
 			Crew Damage Per Tile Hit: 15
 			Total System Damage: 1
 			Total Crew Damage: 15
-            Shield Piercing: 1
+			Shield Piercing: 1
 
 			Breach Chance: 20%
 		</tooltipOverride>
@@ -10824,7 +10824,7 @@
 			Crew Damage Per Tile Hit: 15
 			Total System Damage: 1
 			Total Crew Damage: 15
-            Shield Piercing: 1
+			Shield Piercing: 1
 
 			Breach Chance: 20%
 
@@ -10842,7 +10842,7 @@
 			Crew Damage Per Tile Hit: 15
 			Total System Damage: 1
 			Total Crew Damage: 15
-            Shield Piercing: 1
+			Shield Piercing: 1
 
 			Breach Chance: 20%
 		</tooltipOverride>
@@ -11899,25 +11899,25 @@
 				<crewTarget>ALL</crewTarget>
 				<duration>60</duration>
 
-			<statBoost name="trueHealAmount">
-				<boostType>FLAT</boostType>
-				<amount>-4</amount>
-				<shipTarget>CURRENT_ROOM</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<duration>60</duration>
-				<boostAnim>bio_poison</boostAnim>
-				<maxStacks>1</maxStacks>
+				<statBoost name="trueHealAmount">
+					<boostType>FLAT</boostType>
+					<amount>-4</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<duration>60</duration>
+					<boostAnim>bio_poison</boostAnim>
+					<maxStacks>1</maxStacks>
+					<blackList>
+						<FM_PLSNOEFFECT/>
+					</blackList>
+					<priority>-100</priority>
+				</statBoost>
 				<blackList>
 					<FM_PLSNOEFFECT/>
 				</blackList>
 				<priority>-100</priority>
-			</statBoost>
-                        <blackList>
-				<FM_PLSNOEFFECT/>
-			</blackList>
-				<priority>-100</priority>
 
-			</statBoost>
+				</statBoost>
 	        </statBoosts>
 		<image>beam_contact</image>
 		<length>1</length>
@@ -13452,20 +13452,20 @@
 					<enemy>true</enemy>
 					<lifetime>10</lifetime>
 	       <statBoosts>
-	            <statBoost name="noClone">
-	                <boostType>SET</boostType>
-	                <value>true</value>
-	                <shipTarget>ALL</shipTarget>
-	                <crewTarget>ALL</crewTarget>
-	                <priority>999999</priority>
-	            </statBoost>
+				<statBoost name="noClone">
+				    <boostType>SET</boostType>
+				    <value>true</value>
+				    <shipTarget>ALL</shipTarget>
+				    <crewTarget>ALL</crewTarget>
+				    <priority>999999</priority>
+				</statBoost>
 					  	<statBoost name="maxHealth">
-	                <boostType>FLAT</boostType>
-	                <amount>-1000000</amount>
-	                <shipTarget>ALL</shipTarget>
-	                <crewTarget>ALL</crewTarget>
-	                <priority>999999</priority>
-	            </statBoost>
+				    <boostType>FLAT</boostType>
+				    <amount>-1000000</amount>
+				    <shipTarget>ALL</shipTarget>
+				    <crewTarget>ALL</crewTarget>
+				    <priority>999999</priority>
+				</statBoost>
 	        </statBoosts>
 	    </spawnCrew>-->
 		<roomStatBoostChance>10</roomStatBoostChance>
@@ -13484,8 +13484,8 @@
 
 				<dangerRating>0.1</dangerRating><!--Crew below 10% health will run away-->
 				<roomAnim renderLayer="1">
-					<anim animType="default" animBorder="2">nothing</anim>                <!-- (animType can be default, stretch, random, or center, animBorder controls spawning margins)-->
-					<tileAnim>gas_twisted_1x1</tileAnim>                                               <!--(spawn this animation on each tile)-->
+					<anim animType="default" animBorder="2">nothing</anim>			    <!-- (animType can be default, stretch, random, or center, animBorder controls spawning margins)-->
+					<tileAnim>gas_twisted_1x1</tileAnim>									           <!--(spawn this animation on each tile)-->
 				</roomAnim>
 			</statBoost>
 
@@ -13545,7 +13545,7 @@
 	<value>true</value>
 	<shipTarget>ALL</shipTarget>
 	<crewTarget>ALL</crewTarget>
-	<priority>999999</priority>            </statBoost>        </statBoosts>    </spawnCrew>
+	<priority>999999</priority>			</statBoost>        </statBoosts>    </spawnCrew>
 	<projectiles>
 	<projectile count="1" fake="false">fm_minelauncher_xmas_proj</projectile>	</projectiles>
 	<explosion>explosion_random</explosion>
@@ -13841,15 +13841,15 @@
 		<fireTime>1.5</fireTime><!--May or may not be necessary-->
 
 		<statBoosts>
-			        <statBoost name="transformRace">
-			                <boostType>SET</boostType>
-			                <race>fm_crystal_prison</race>
-			                <shipTarget>ALL</shipTarget>
-			                <crewTarget>ALL</crewTarget>
-			                <droneTarget>CREW</droneTarget>
-			                <affectsSelf>true</affectsSelf>
-			                <duration>15</duration>
-		                </statBoost>
+			<statBoost name="transformRace">
+				<boostType>SET</boostType>
+				<race>fm_crystal_prison</race>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<affectsSelf>true</affectsSelf>
+				<duration>15</duration>
+			</statBoost>
 		</statBoosts>
 
 		<image>bomb_imprisment_proj</image>
@@ -14445,18 +14445,18 @@
 	    <sp>10</sp>
 	    <spawnCrew>
 	        <race>human_technician_drone</race>
-					<name>CURA Drone</name>
+			<name>CURA Drone</name>
 	        <number>1</number>
 
 	        <noSlot>true</noSlot>
 	        <statBoosts>
-	            <statBoost name="noClone">
-	                <boostType>SET</boostType>
-	                <value>true</value>
-	                <shipTarget>ALL</shipTarget>
-	                <crewTarget>ALL</crewTarget>
-	                <priority>999999</priority>
-	            </statBoost>
+				<statBoost name="noClone">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
 
 	        </statBoosts>
 	    </spawnCrew>
@@ -18986,7 +18986,6 @@
 		<tooltip>Boss Loot.</tooltip>
 		<radius>50</radius>
 		<missiles>1</missiles>
-		<accuracyMod>10</accuracyMod>
 		<damage>1</damage>
 		<hullBust>1</hullBust>
 		<shots>1</shots>
@@ -22098,8 +22097,8 @@
 		<freeMissileChance>0.0</freeMissileChance>       Probability that the weapon does not consume missiles when fired. Rolled separately from explosive replicator.
 		<descriptionOverride>TEXT</descriptionOverride>  Replaces weapon description with custom text.
 		<hideEventTooltip>false</hideEventTooltip>       Prevents showing event tooltip on hover in events; useful for mystery weapons or weapons whose stats should otherwise not be seen on the event screen.
-		<accuracyMod>0</accuracyMod>                     Changes weapon accuracy. This is equivalent to subtracting accuracyMod from the enemy's evasion for this weapon when performing the evasion check.
-		<noSysDamage>false</noSysDamage>                 If true, then normal damage does not inflict corresponding system damage, only actual <sysDamage> will.
+		<accuracyMod>0</accuracyMod>			         Changes weapon accuracy. This is equivalent to subtracting accuracyMod from the enemy's evasion for this weapon when performing the evasion check.
+		<noSysDamage>false</noSysDamage>			     If true, then normal damage does not inflict corresponding system damage, only actual <sysDamage> will.
 		<noPersDamage>false</noPersDamage>               If true, then normal damage does not inflict corresponding crew damage, only actual <persDamage> will.
 		<ionBeamFix>false</ionBeamFix>                   If true, prevents ion beams from inflicting ion damage to shields on every frame (instead it will be similar to beams hitting zoltan shields).
 		<simultaneousFire>false</simultaneousFire>       If true, all shots/charges will fire at once, rather than sequentially.
@@ -22730,6 +22729,11 @@
 	<!-- CHERNOBOG -->
 
 	<mod:findName type = "weaponBlueprint" name = "MISSILES_CLOAK">
+		<mod-overwrite:desc>A Missile with cloaking technology that travels slower, it is undetectable by certain Defense Drones and cannot miss.</mod-overwrite:desc>
+		<mod-overwrite:tip>fm_tip_missile_cloak</mod-overwrite:tip>
+	</mod:findName>
+	
+	<mod:findName type = "weaponBlueprint" name = "MISSILES_CLOAK_PLAYER">
 		<mod-overwrite:desc>A Missile with cloaking technology that travels slower, it is undetectable by certain Defense Drones and cannot miss.</mod-overwrite:desc>
 		<mod-overwrite:tip>fm_tip_missile_cloak</mod-overwrite:tip>
 	</mod:findName>
