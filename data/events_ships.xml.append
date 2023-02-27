@@ -2188,12 +2188,12 @@
 						<item_modify>
 							<item type="scrap" min="120" max="150"/>
 						</item_modify>
-						<text>"Thank you Federation Vessel. We will also be confiscating this... for galactic safety of course." They appear to have hacked into your systems and removed the C.U.R.A. Drive Hacker!</text>
-						<remove name="CURA_MVBOSS_SPAWNER"/>
+						<text>"Thank you, Federation Vessel. We will also be confiscating this... for galactic safety of course." They appear to have hacked into your systems and removed the C.U.R.A. Drive Hacker!</text>
+						<remove name="HIDDEN CURA_MVBOSS_SPAWNER"/>
 						<achievement silent="false">ACH_FREESTUFF</achievement>
 
 						<choice hidden="true">
-							<text>Wait that wasn't part of the deal!</text>
+							<text>Wait, that wasn't part of the deal!</text>
 							<event>
 								<text>"Farewell, you greedy imbecile." The Zoltan captain responds, jumping away quickly.</text>
 								<instantEscape/>

@@ -11760,9 +11760,9 @@
 	<weaponBlueprint name="FM_FOCUS_ADAPT">
 		<type>BEAM</type>
 		<tip>tip_adapter</tip>
-		<title>Omiyari Pinpoint</title>
-		<short>Omiyari</short>
-		<desc>A potentially ship-vaporizing focus, adapting to its environment. Damage ramps up incredibly fast, chaining for 1.25 damage every time it fires.</desc>
+		<title>'Omiyari' Pinpoint</title>
+		<short>'Omiyari'</short>
+		<desc>A potentially ship-vaporizing focus beam, adapting to its environment. Damage ramps up incredibly fast, chaining for 1 damage every time it fires.</desc>
 		<tooltip>Beam weapon, 1 damage per room.</tooltip>
 		<damage>1</damage>
 		<sp>0</sp>

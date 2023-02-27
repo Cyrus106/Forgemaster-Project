@@ -7875,8 +7875,8 @@
 			<canFight>true</canFight>
 			<canSabotage>true</canSabotage>
 			<canRepair>false</canRepair>
-			<canSuffocate>false</canSuffocate>		                                             <!-- If true, resists mind control and can see into adjacent rooms (slug). -->
-			<resistsMindControl>true</resistsMindControl>
+			<canSuffocate>false</canSuffocate>		       
+			<resistsMindControl>true</resistsMindControl>      <!-- If true, resists mind control and can see into adjacent rooms (slug). -->
 			<canMan>false</canMan>
 			<noClone>true</noClone>
 
@@ -7886,7 +7886,7 @@
 			<fireDamageMultiplier>0.0</fireDamageMultiplier>
 			<moveSpeedMultiplier>1.5</moveSpeedMultiplier>
 			<stunMultiplier>0.00</stunMultiplier>
-
+			
 			<powerEffect>
 				<cooldown>14</cooldown>
 				<jumpCooldown>full</jumpCooldown>
@@ -7960,6 +7960,18 @@
 					</blackList>
 					<priority>-100</priority>
 				</statBoost>
+				<statBoost name="trueHealAmount">
+					<boostType>FLAT</boostType>
+						<amount>-1</amount>
+						<shipTarget>CURRENT_ROOM</shipTarget>
+						<crewTarget>ENEMIES</crewTarget>
+						<droneTarget>CREW</droneTarget>
+						<boostAnim>pheromones_f</boostAnim>
+						<blackList>
+						    <blueprintList load="LIST_FM_PLSNOEFFECT"/>
+						</blackList>
+						<priority>-100</priority>
+					</statBoost>
 
 			</passiveStatBoosts>
 

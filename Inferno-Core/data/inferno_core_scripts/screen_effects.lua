@@ -48,8 +48,8 @@ do
 
 		Start = function(self,table)
 			self.fadeIn = table.fadeIn or 1 
-      self.hold = table.hold or 1
-      self.fadeOut = table.fadeOut or 1
+      		self.hold = table.hold or 1
+      		self.fadeOut = table.fadeOut or 1
 			self.r = table.r or 1
 			self.g = table.g or 1
 			self.b = table.b or 1
