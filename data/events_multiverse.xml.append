@@ -2809,7 +2809,7 @@
 				<item_modify>
 					<item type="scrap" min="-80" max="-80"/>
 				</item_modify>
-				<removeItem>ENERGY_CHAINGUN</removeItem>
+				<removeItem>ENERGY_CHARGEGUN</removeItem>
 				<removeItem>SHOTGUN_3</removeItem>
 				<choice hidden="true">
 				  <text>Continue...</text>
