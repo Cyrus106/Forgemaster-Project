@@ -11762,7 +11762,7 @@
 		<tip>tip_adapter</tip>
 		<title>'Omiyari' Pinpoint</title>
 		<short>'Omiyari'</short>
-		<desc>A potentially ship-vaporizing focus beam, adapting to its environment. Damage ramps up incredibly fast, chaining for 1 damage every time it fires.</desc>
+		<desc>A potentially ship-vaporizing focus beam, adapting to its environment. Damage ramps up incredibly fast, chaining for 1.25 damage every time it fires.</desc>
 		<tooltip>Beam weapon, 1 damage per room.</tooltip>
 		<damage>1</damage>
 		<sp>0</sp>
@@ -11778,7 +11778,7 @@
 		<image>beam_contact</image>
 		<boost>
 			<type>damage</type>
-			<amount>1</amount>
+			<amount>1.25</amount>
 			<count>999</count>
 		</boost>
 		<launchSounds>
@@ -16741,8 +16741,8 @@
 		<desc>The original blueprints for this weapon were created by a disgruntled Shell scientist who wanted everyone to experience the agony he felt in suffocation. The energies of this phase weapon are laced with anaerobic microbes that will latch onto creatures and drain oxygen while corroding bodies, allowing anything to suffocate. </desc>
 		<tooltip>Fires a piercing ionic laser shot that causes crew struck by it to become able to suffocate, take 3x more damage from suffocation, and very slowly drain the room's oxygen</tooltip>
 		<ion>2</ion>
-		<sysDamage>1</sysDamage>
-		<damage>1</damage>
+		<sysDamage>0</sysDamage>
+		<damage>0</damage>
 		<speed>45</speed>
 		<shots>1</shots>
 		<sp>1</sp>
