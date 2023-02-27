@@ -3538,7 +3538,27 @@
 		<desc length="4" x="0" y="1"/>
 		<time>0.1</time>
 	</anim>
-	<anim name="fm_ancalagon_monitor_shoot_left">
+	<anim name="fm_ancalagon_monitor_punch_left">
+		<sheet>technorecon</sheet>
+		<desc length="4" x="4" y="1"/>
+		<time>0.1</time>
+	</anim>
+	<anim name="fm_ancalagon_monitor_punch_down">
+		<sheet>technorecon</sheet>
+		<desc length="4" x="0" y="2"/>
+		<time>0.1</time>
+	</anim>
+	<anim name="fm_ancalagon_monitor_punch_right">
+		<sheet>technorecon</sheet>
+		<desc length="4" x="4" y="2"/>
+		<time>0.1</time>
+	</anim>
+	<anim name="fm_ancalagon_monitor_punch_up">
+		<sheet>technorecon</sheet>
+		<desc length="4" x="0" y="1"/>
+		<time>0.1</time>
+	</anim>
+	<anim name="fm_ancalagon_monitor_punch_left">
 		<sheet>technorecon</sheet>
 		<desc length="4" x="4" y="1"/>
 		<time>0.1</time>
