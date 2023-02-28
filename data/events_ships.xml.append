@@ -1942,7 +1942,7 @@
 		</item_modify>
 		<variable name="ach_fm_boss_slug" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_SLUG</achievement>
-		<unlockCustomShip shipReq="PLAYER_SHIP_SLUG_2" silent="false">PLAYER_SHIP_TWISTED4</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_SLUG_3" silent="false">PLAYER_SHIP_TWISTED4</unlockCustomShip>
 
 		<choice hidden="true" req="HID_MALBORO_RED" max_group="1" blue="false">
 			<text>You already have the Malboro Quasar.</text>
@@ -2020,7 +2020,7 @@
 		</item_modify>
 		<variable name="ach_fm_boss_slug" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_SLUG</achievement>
-		<unlockCustomShip shipReq="PLAYER_SHIP_SLUG_2" silent="false">PLAYER_SHIP_TWISTED4</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_SLUG_3" silent="false">PLAYER_SHIP_TWISTED4</unlockCustomShip>
 
 		<choice hidden="true" req="HID_MALBORO_RED" max_group="1" blue="false">
 			<text>You already have the Malboro Quasar.</text>
