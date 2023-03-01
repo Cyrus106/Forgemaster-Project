@@ -13932,9 +13932,17 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<statBoost name="powerRechargeMultiplier">
 					<boostType>FLAT</boostType>
 					<amount>1</amount>
-					<shipTarget>ALL</shipTarget>
+					<shipTarget>PLAYER_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
-					<priority>0</priority>
+					<priority>999</priority>
+				</statBoost>
+				
+				<statBoost name="powerRechargeMultiplier">
+					<boostType>FLAT</boostType>
+					<amount>0.5</amount>
+					<shipTarget>ENEMY_SHIP</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<priority>999</priority>
 				</statBoost>
 
 				<statBoost name="powerRechargeMultiplier">
@@ -13942,7 +13950,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<amount>0.7</amount>
 					<shipTarget>PLAYER_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
-					<priority>0</priority>
+					<priority>999</priority>
 				</statBoost>
 			</statBoosts>
 		</aug>
