@@ -67,20 +67,22 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_clan" op="set" val="1"/>
+		<variable name="coords_twisted" op="add" val="1"/>
+		<variable name="loc_coords_twisted" op="add" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_CLAN</achievement>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_CLAN" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_3" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>-->
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<choice hidden="true" req="HID_BRAIN_DONATION" max_group="1" blue="false">
-			<text>You already have the Mind Clouder.</text>
+			<text name="text_HAVE_BRAIN_DONATION">You already have the Mind Clouder.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Mind Clouder...
+			<text name="text_GET_BRAIN_DONATION">Internalize the Mind Clouder...
 				[Your crew is now immune to mind control effects.]
 			</text>
-			<event>
+			<event name="GET_BRAIN_DONATION">
 				<hiddenAug>HID_BRAIN_DONATION</hiddenAug>
 				<text>You retrieve the Ambrosia lab and begin replicating the Ambrosia drug, then make certain to dole it out to all of your crew. </text>
 				<choice hidden="true">
@@ -92,7 +94,6 @@
 							<event load="STORAGE_CHECK"/>
 						</choice>
 					</event>
-
 				</choice>
 			</event>
 		</choice>
@@ -100,34 +101,21 @@
 
 
 		<choice hidden="false" req="HID_BRAIN_DONATION" max_group="2" blue="false">
-			<text>You already have the Mind Clouder.</text>
-			<event>
+			<text id="text_HAVE_BRAIN_DONATION"/>
+			<event name="FM_ONE_FUEL">
 				<text>...</text>
 				<item_modify>
 					<item type="fuel" min="1" max="1"/>
 				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_clan" max_group="2" blue="false">
-			<text>You already scrapped the Mind Clouder.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text name="text_SCRAPPED_BRAIN_DONATION">You already scrapped the Mind Clouder.</text>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text>Scrap the Mind Clouder.</text>
-			<event>
+			<text name="text_SCRAP_BRAIN_DONATION">Scrap the Mind Clouder.</text>
+			<event name="SCRAP_BRAIN_DONATION">
 				<text>You scrap the Mind Clouder for valuable resources.</text>
 				<item_modify>
 					<item type="scrap" min="100" max="100"/>
@@ -149,74 +137,33 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_clan" op="set" val="1"/>
+		<variable name="coords_twisted" op="add" val="1"/>
+		<variable name="loc_coords_twisted" op="add" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_CLAN</achievement>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_CLAN" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_3" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>-->
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<choice hidden="true" req="HID_BRAIN_DONATION" max_group="1" blue="false">
-			<text>You already have the Mind Clouder.</text>
+			<text id="text_HAVE_BRAIN_DONATION"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Mind Clouder...
-				[Your crew is now immune to mind control effects.]
-			</text>
-			<event>
-				<hiddenAug>HID_BRAIN_DONATION</hiddenAug>
-				<text>You retrieve the Ambrosia lab and begin replicating the Ambrosia drug, then make certain to dole it out to all of your crew. </text>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<text>Your crew is now immune to mind control effects. [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-						
-						</choice>
-					</event>
-				</choice>
-			</event>
+			<text id="text_GET_BRAIN_DONATION"/>
+			<event load="GET_BRAIN_DONATION"/>
 		</choice>
 		
 		<choice hidden="false" req="HID_BRAIN_DONATION" max_group="2" blue="false">
-			<text>You already have the Mind Clouder.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_HAVE_BRAIN_DONATION"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_clan" max_group="2" blue="false">
-			<text>You already scrapped the Mind Clouder.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_SCRAPPED_BRAIN_DONATION"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text>Scrap the Mind Clouder.</text>
-			<event>
-				<text>You scrap the Mind Clouder for valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_clan" op="set" val="1"/>
-			</event>
+			<text id="text_SCRAP_BRAIN_DONATION"/>
+			<event load="SCRAP_BRAIN_DONATION"/>
 		</choice>
 	</event>
 
@@ -265,20 +212,22 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_dusk" op="set" val="1"/>
+		<variable name="coords_twisted" op="add" val="1"/>
+		<variable name="loc_coords_twisted" op="add" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_DUSK</achievement>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_3" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>-->
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<choice hidden="true" req="HID_DEATH_VESTS2" max_group="1" blue="false">
-			<text>You already have the Twilight Vests.</text>
+			<text name="text_HAVE_DEATH_VESTS2">You already have the Twilight Vests.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Twilight Vests///
-				[Adds a death effect to all non-Zoltan allied crew, 45 crew damage + fire.]
+			<text name="text_GET_DEATH_VESTS2">Internalize the Twilight Vests...
+				[Adds a death effect to all non-Zoltan allied crew, making them explode for 45 crew damage against enemies, and sometimes start fires.]
 			</text>
-			<event>
+			<event name="GET_DEATH_VESTS2">
 				<text>You retrieve the Twlight Vests and force all crew to put them on. Strangely, none resist or argue, as if hypnotized by the vest's aura. </text>
 				<choice hidden="true">
 					<text>Continue...</text>
@@ -296,34 +245,16 @@
 		</choice>
 
 		<choice hidden="false" req="HID_DEATH_VESTS2" max_group="2" blue="false">
-			<text>You already have the Twlight Vests.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_HAVE_DEATH_VESTS2"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_dusk" max_group="2" blue="false">
-			<text>You already scrapped the Twlight Vests.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text name="text_SCRAPPED_DEATH_VESTS2">You already scrapped the Twlight Vests.</text>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text>Scrap the Twilight Vests.</text>
-			<event>
+			<text name="text_SCRAP_DEATH_VESTS2">Scrap the Twilight Vests.</text>
+			<event name="SCRAP_DEATH_VESTS2">
 				<text>You scrap the Twilight Vests for valuable resources.</text>
 				<item_modify>
 					<item type="scrap" min="100" max="100"/>
@@ -345,73 +276,32 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_dusk" op="set" val="1"/>
+		<variable name="coords_twisted" op="add" val="1"/>
+		<variable name="loc_coords_twisted" op="add" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_DUSK</achievement>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>-->
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_3" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>-->
 		<choice hidden="true" req="HID_DEATH_VESTS2" max_group="1" blue="false">
-			<text>You already have the Twilight Vests.</text>
+			<text id="text_HAVE_DEATH_VESTS2"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Twilight Vests
-				[Adds a death effect to all non-Zoltan allied crew, making them explode for 45 crew damage against enemies, and sometimes start fires.]...
-			</text>
-			<event>
-				<text>You retrieve the Twlight Vests and force all crew to put them on. Strangely, none resist or argue, as if hypnotized by the vest's aura. </text>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<hiddenAug>HID_DEATH_VESTS2</hiddenAug>
-						<text>Adds a death effect to all non-Zoltan allied crew, making them explode for 45 crew damage against enemies, and sometimes start fires. [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-
-						</choice>
-					</event>
-				</choice>
-			</event>
+			<text id="text_GET_DEATH_VESTS2"/>
+			<event load="GET_DEATH_VESTS2"/>
 		</choice>
 
 		<choice hidden="false" req="HID_DEATH_VESTS2" max_group="2" blue="false">
-			<text>You already have the Twlight Vests.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_HAVE_DEATH_VESTS2"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_dusk" max_group="2" blue="false">
-			<text>You already scrapped the Twlight Vests.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_SCRAPPED_DEATH_VESTS2"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text>Scrap the Twilight Vests.</text>
-			<event>
-				<text>You scrap the Twilight Vests for valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_dusk" op="set" val="1"/>
-			</event>
+			<text id="text_SCRAP_DEATH_VESTS2"/>
+			<event load="SCRAP_DEATH_VESTS2"/>
 		</choice>
 	</event>
 
@@ -447,6 +337,8 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_engi" op="set" val="1"/>
+		<variable name="coords_twisted" op="add" val="1"/>
+		<variable name="loc_coords_twisted" op="add" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_ENGI</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ENGI_3" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_ENGI" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
@@ -455,14 +347,14 @@
 		<unlockCustomShip shipReq="VANILLA_SHIP_ENGI_2" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
 		<unlockCustomShip shipReq="VANILLA_SHIP_ENGI_3" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>-->
 		<choice hidden="true" req="HID_UPG_DRONE_COOLDOWN" max_group="1" blue="false">
-			<text>You already have the Drone Booster "Kai".</text>
+			<text name="text_HAVE_UPG_DRONE_COOLDOWN">You already have the Drone Booster "Kai".</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Drone Booster "Kai"...
+			<text name="text_GET_UPG_DRONE_COOLDOWN">Internalize the Drone Booster "Kai"...
 				[All Drone active abilities recharge twice as fast!]
 			</text>
-			<event>
+			<event name="GET_UPG_DRONE_COOLDOWN">
 				<hiddenAug>HID_UPG_DRONE_COOLDOWN</hiddenAug>
 				<text>You install the Drone Booster "Kai" into your internal ship systems. </text>
 				<choice hidden="true">
@@ -480,34 +372,16 @@
 		</choice>
 
 		<choice hidden="false" req="HID_UPG_DRONE_COOLDOWN" max_group="2" blue="false">
-			<text>You already have the Drone Booster "Kai".</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_HAVE_UPG_DRONE_COOLDOWN"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_engi" max_group="2" blue="false">
-			<text>You already scrapped the Drone Booster "Kai".</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text name="text_SCRAPPED_UPG_DRONE_COOLDOWN">You already scrapped the Drone Booster "Kai".</text>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text>Scrap the Drone Booster "Kai".</text>
-			<event>
+			<text name="text_SCRAP_UPG_DRONE_COOLDOWN">Scrap the Drone Booster "Kai".</text>
+			<event name="SCRAP_UPG_DRONE_COOLDOWN">
 				<text>You scrap the Drone Booster "Kai" for valuable resources.</text>
 				<item_modify>
 					<item type="scrap" min="100" max="100"/>
@@ -529,71 +403,30 @@
 		</item_modify>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<variable name="ach_fm_boss_engi" op="set" val="1"/>
+		<variable name="coords_twisted" op="add" val="1"/>
+		<variable name="loc_coords_twisted" op="add" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_ENGI</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ENGI_3" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
 		<choice hidden="true" req="HID_UPG_DRONE_COOLDOWN" max_group="1" blue="false">
-			<text>You already have the Drone Booster "Kai".</text>
+			<text id="text_HAVE_UPG_DRONE_COOLDOWN"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Drone Booster "Kai"...
-				[All Drone active abilities recharge twice as fast!]
-			</text>
-			<event>
-				<hiddenAug>HID_UPG_DRONE_COOLDOWN</hiddenAug>
-				<text>You install the Drone Booster "Kai" into your internal ship systems. </text>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<text>This upgrade allows your drones to charge their cooldown abilities twice as fast! [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-						</choice>
-					</event>
-
-				</choice>
-			</event>
+			<text id="text_GET_UPG_DRONE_COOLDOWN"/>
+			<event load="GET_UPG_DRONE_COOLDOWN"/>
 		</choice>
 
 		<choice hidden="false" req="HID_UPG_DRONE_COOLDOWN" max_group="2" blue="false">
-			<text>You already have the Drone Booster "Kai".</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_HAVE_UPG_DRONE_COOLDOWN"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_engi" max_group="2" blue="false">
-			<text>You already scrapped the Drone Booster "Kai".</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_SCRAPPED_UPG_DRONE_COOLDOWN"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text>Scrap the Drone Booster "Kai".</text>
-			<event>
-				<text>You scrap the Drone Booster "Kai" for valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_engi" op="set" val="1"/>
-			</event>
+			<text id="text_SCRAP_UPG_DRONE_COOLDOWN"/>
+			<event load="SCRAP_UPG_DRONE_COOLDOWN"/>
 		</choice>
 	</event>
 
@@ -646,14 +479,14 @@
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS_3" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>-->
 		<choice hidden="true" req="HID_TEA_EARL" max_group="1" blue="false">
-			<text>You already have the Earl Grey tea.</text>
+			<text name="text_HAVE_TEA_EARL">You already have the Earl Grey tea.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Earl Grey tea...
+			<text name="text_GET_TEA_EARL">Internalize the Earl Grey tea...
 				[Delicious tea even her royal highness would enjoy. Gives all allied Mantis +20% repair speed and +15 max health.]
 			</text>
-			<event>
+			<event name="GET_TEA_EARL">
 				<hiddenAug>HID_TEA_EARL</hiddenAug>
 				<text>You add Earl Grey tea into your ship's cafeteria. </text>
 				<choice hidden="true">
@@ -671,34 +504,16 @@
 		</choice>
 
 		<choice hidden="false" req="HID_TEA_EARL" max_group="2" blue="false">
-			<text>You already have the Earl Grey tea.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_HAVE_TEA_EARL"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_freemantis" max_group="2" blue="false">
-			<text>You already scrapped the Earl Grey tea.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text name="text_SCRAPPED_TEA_EARL">You already scrapped the Earl Grey tea.</text>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text>Scrap the Earl Grey tea.</text>
-			<event>
+			<text name="text_SCRAP_TEA_EARL">Scrap the Earl Grey tea.</text>
+			<event name="SCRAP_TEA_EARL">
 				<text>You scrap the Earl Grey tea for valuable resources.</text>
 				<item_modify>
 					<item type="scrap" min="100" max="100"/>
@@ -724,68 +539,25 @@
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS_3" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>-->
 		<choice hidden="true" req="HID_TEA_EARL" max_group="1" blue="false">
-			<text>You already have the Earl Grey tea.</text>
+			<text id="text_HAVE_TEA_EARL"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Earl Grey tea...
-				[Delicious tea even her royal highness would enjoy. Gives all allied Mantis +20% repair speed and +15 max health.]
-			</text>
-			<event>
-				<hiddenAug>HID_TEA_EARL</hiddenAug>
-				<text>You add Earl Grey tea into your ship's cafeteria. </text>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<text>Delicious tea even her royal highness would enjoy. Gives all allied Mantis +20% repair speed and +15 max health. [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-						</choice>
-					</event>
-
-				</choice>
-			</event>
+			<text id="text_GET_TEA_EARL"/>
+			<event load="GET_TEA_EARL"/>
 		</choice>
 
 		<choice hidden="false" req="HID_TEA_EARL" max_group="2" blue="false">
-			<text>You already have the Earl Grey tea.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_HAVE_TEA_EARL"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_freemantis" max_group="2" blue="false">
-			<text>You already scrapped the Earl Grey tea.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_SCRAPPED_TEA_EARL"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text>Scrap the Earl Grey tea.</text>
-			<event>
-				<text>You scrap the Earl Grey tea for valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_freemantis" op="set" val="1"/>
-			</event>
+			<text id="text_SCRAP_TEA_EARL"/>
+			<event load="SCRAP_TEA_EARL"/>
 		</choice>
 	</event>
 
@@ -834,14 +606,14 @@
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN_3" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>-->
 		<choice hidden="true" req="HID_REALITY_RELOADER" max_group="1" blue="false">
-			<text>You already have the Reality Reloader.</text>
+			<text name="text_HAVE_REALITY_RELOADER">You already have the Reality Reloader.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Reality Reloader...
+			<text name="text_GET_REALITY_RELOADER">Internalize the Reality Reloader...
 				[Boosts weapon cooldown and shield recharge rates by 15%.]
 			</text>
-			<event>
+			<event name="GET_REALITY_RELOADER">
 				<hiddenAug>HID_REALITY_RELOADER</hiddenAug>
 				<text>You add the Reality Reloader into your ship's internal systems. </text>
 				<choice hidden="true">
@@ -860,34 +632,16 @@
 		</choice>
 
 		<choice hidden="false" req="HID_REALITY_RELOADER" max_group="2" blue="false">
-			<text>You already have the Reality Reloader.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_HAVE_REALITY_RELOADER"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_lostsun" max_group="2" blue="false">
-			<text>You already scrapped the Reality Reloader.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text name="text_SCRAPPED_REALITY_RELOADER">You already scrapped the Reality Reloader.</text>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text>Scrap the Reality Reloader.</text>
-			<event>
+			<text name="text_SCRAP_REALITY_RELOADER">Scrap the Reality Reloader.</text>
+			<event name="SCRAP_REALITY_RELOADER">
 				<text>You scrap the Reality Reloader for valuable resources.</text>
 				<item_modify>
 					<item type="scrap" min="100" max="100"/>
@@ -912,68 +666,25 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN_2" silent="false">PLAYER_SHIP_TWISTED3_2</unlockCustomShip>
 
 		<choice hidden="true" req="HID_REALITY_RELOADER" max_group="1" blue="false">
-			<text>You already have the Reality Reloader.</text>
+			<text id="text_HAVE_REALITY_RELOADER"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Reality Reloader...
-				[Boosts weapon cooldown and shield recharge rates by 15%.]
-			</text>
-			<event>
-				<hiddenAug>HID_REALITY_RELOADER</hiddenAug>
-				<text>You add the Reality Reloader into your ship's internal systems. </text>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<text>Boosts weapon cooldown and shield recharge rates by 15%. [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-						</choice>
-					</event>
-
-				</choice>
-			</event>
+			<text id="text_GET_REALITY_RELOADER"/>
+			<event load="GET_REALITY_RELOADER"/>
 		</choice>
 
 		<choice hidden="false" req="HID_REALITY_RELOADER" max_group="2" blue="false">
-			<text>You already have the Reality Reloader.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_HAVE_REALITY_RELOADER"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_lostsun" max_group="2" blue="false">
-			<text>You already scrapped the Reality Reloader.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_SCRAPPED_REALITY_RELOADER"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text>Scrap the Reality Reloader.</text>
-			<event>
-				<text>You scrap the Reality Reloader for valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_lostsun" op="set" val="1"/>
-			</event>
+			<text id="text_SCRAP_REALITY_RELOADER"/>
+			<event load="SCRAP_REALITY_RELOADER"/>
 		</choice>
 	</event>
 
@@ -1149,10 +860,10 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Pheromone Accelerator...
+			<text name="text_GET_MANTIS_RELOADER">Internalize the Pheromone Accelerator...
 				[Lowers Mantis ability cooldown rate by 20%. Reduces all damage taken by your Mantis crew by 8%.]
 			</text>
-			<event>
+			<event name="GET_MANTIS_RELOADER">
 				<hiddenAug>HID_MANTIS_RELOADER</hiddenAug>
 				<text>You add the Pheromone Accelerator into your ship's internal systems. </text>
 				<choice hidden="true">
@@ -1173,33 +884,15 @@
 
 		<choice hidden="false" req="HID_MANTIS_RELOADER" max_group="2" blue="false">
 			<text>You already have the Pheromone Accelerator.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_mantis" max_group="2" blue="false">
 			<text>You already scrapped the Pheromone Accelerator.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Pheromone Accelerator.</text>
-			<event>
+			<event name="SCRAP_MANTIS_RELOADER">
 				<text>You scrap the Pheromone Accelerator for valuable resources.</text>
 				<item_modify>
 					<item type="scrap" min="100" max="100"/>
@@ -1232,65 +925,21 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Pheromone Accelerator...
-				[Lowers Mantis ability cooldown rate by 20%. Reduces all damage taken by your Mantis crew by 8%.]
-			</text>
-			<event>
-				<hiddenAug>HID_MANTIS_RELOADER</hiddenAug>
-				<text>You add the Pheromone Accelerator into your ship's internal systems. </text>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event>
-						<text>Lowers Mantis ability cooldown rate by 20%. Reduces all damage taken by your Mantis crew by 8%. [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-						</choice>
-					</event>
-
-
-				</choice>
-			</event>
+			<text id="text_GET_MANTIS_RELOADER"/>
+			<event load="GET_MANTIS_RELOADER"/>
 		</choice>
 
 		<choice hidden="false" req="HID_MANTIS_RELOADER" max_group="2" blue="false">
 			<text>You already have the Pheromone Accelerator.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_mantis" max_group="2" blue="false">
 			<text>You already scrapped the Pheromone Accelerator.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Pheromone Accelerator.</text>
-			<event>
-				<text>You scrap the Pheromone Accelerator for valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_mantis" op="set" val="1"/>
-			</event>
+			<event load="SCRAP_MANTIS_RELOADER"/>
 		</choice>
 	</event>
 
@@ -1333,10 +982,10 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Aether Ascension Shields...
+			<text name="text_GET_FM_UPG_AETHER_SHIELDS">Internalize the Aether Ascension Shields...
 				[Effects: Provides a bonus 6 energy shield points which will stack with other energy shields.]
 			</text>
-			<event>
+			<event name="GET_FM_UPG_AETHER_SHIELDS">
 				<hiddenAug>HID_FM_UPG_AETHER_SHIELDS</hiddenAug>
 				<text>You add the Aether Ascension Shields into your ship's internal shields systems. </text>
 				<choice hidden="true">
@@ -1356,33 +1005,15 @@
 
 		<choice hidden="false" req="HID_FM_UPG_AETHER_SHIELDS" max_group="2" blue="false">
 			<text>You already have the Aether Ascension Shields.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_monk" max_group="2" blue="false">
 			<text>You already scrapped the Aether Ascension Shields.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Aether Ascension Shields.</text>
-			<event>
+			<event name="SCRAP_FM_UPG_AETHER_SHIELDS">
 				<text>You scrap the Aether Ascension Shields for valuable resources.</text>
 				<item_modify>
 					<item type="scrap" min="100" max="100"/>
@@ -1411,65 +1042,21 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Aether Ascension Shields...
-				[Effects: Provides a bonus 6 energy shield points which will stack with other energy shields.]
-			</text>
-			<event>
-				<hiddenAug>HID_FM_UPG_AETHER_SHIELDS</hiddenAug>
-				<text>You add the Aether Ascension Shields into your ship's internal shields systems. </text>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<text>Effects: Provides a bonus 6 energy shield points which will stack with other energy shields. [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-						</choice>
-					</event>
-
-
-				</choice>
-			</event>
+			<text id="text_GET_FM_UPG_AETHER_SHIELDS"/>
+			<event load="GET_FM_UPG_AETHER_SHIELDS"/>
 		</choice>
 
 		<choice hidden="false" req="HID_FM_UPG_AETHER_SHIELDS" max_group="2" blue="false">
 			<text>You already have the Aether Ascension Shields.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_monk" max_group="2" blue="false">
 			<text>You already scrapped the Aether Ascension Shields.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Aether Ascension Shields.</text>
-			<event>
-				<text>You scrap the Aether Ascension Shields for valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_monk" op="set" val="1"/>
-			</event>
+			<event load="SCRAP_FM_UPG_AETHER_SHIELDS"/>
 		</choice>
 	</event>
 
@@ -1528,10 +1115,10 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Rockmen Relic of Freedom...
+			<text name="text_GET_FREEDOM_ROCK">Internalize the Rockmen Relic of Freedom...
 				[This tiny statue invigorates your rockmen crew, they gain 1.8x movement speed!]
 			</text>
-			<event>
+			<event name="GET_FREEDOM_ROCK">
 				<hiddenAug>HID_FREEDOM_ROCK</hiddenAug>
 				<text>You add the Rockmen Relic of Freedom into your ship's internal systems. </text>
 				<choice hidden="true">
@@ -1551,33 +1138,15 @@
 
 		<choice hidden="false" req="HID_FREEDOM_ROCK" max_group="2" blue="false">
 			<text>You already have the Rockmen Relic of Freedom.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_rock" max_group="2" blue="false">
 			<text>You already scrapped the Rockmen Relic of Freedom.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Rockmen Relic of Freedom.</text>
-			<event>
+			<event name="SCRAP_FREEDOM_ROCK">
 				<text>You scrap the Rockmen Relic of Freedom for valuable resources.</text>
 				<item_modify>
 					<item type="scrap" min="100" max="100"/>
@@ -1606,65 +1175,21 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Rockmen Relic of Freedom...
-				[This tiny statue invigorates your rockmen crew, they gain 1.8x movement speed!]
-			</text>
-			<event>
-				<hiddenAug>HID_FREEDOM_ROCK</hiddenAug>
-				<text>You add the Rockmen Relic of Freedom into your ship's internal systems. </text>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<text>This tiny statue invigorates your rockmen crew, they gain 1.8x movement speed! [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-						</choice>
-					</event>
-
-
-				</choice>
-			</event>
+			<text id="text_GET_FREEDOM_ROCK"/>
+			<event load="GET_FREEDOM_ROCK"/>
 		</choice>
 
 		<choice hidden="false" req="HID_FREEDOM_ROCK" max_group="2" blue="false">
 			<text>You already have the Rockmen Relic of Freedom.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_rock" max_group="2" blue="false">
 			<text>You already scrapped the Rockmen Relic of Freedom.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Rockmen Relic of Freedom.</text>
-			<event>
-				<text>You scrap the Rockmen Relic of Freedom for valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_monk" op="set" val="1"/>
-			</event>
+			<event load="SCRAP_FREEDOM_ROCK"/>
 		</choice>
 	</event>
 
@@ -1721,10 +1246,10 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Magatama...
+			<text name="text_GET_AUG_MAGATAMA">Internalize the Magatama...
 				[This tiny charm provides 40% heal speed and 5% damage resist for all of your crew.]
 			</text>
-			<event>
+			<event name="GET_AUG_MAGATAMA">
 				<hiddenAug>AUG_MAGATAMA</hiddenAug>
 				<text>You add the Magatama into your ship's armory systems. </text>
 				<choice hidden="true">
@@ -1744,33 +1269,15 @@
 
 		<choice hidden="false" req="AUG_MAGATAMA" max_group="2" blue="false">
 			<text>You already have the Magatama.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_separatist" max_group="2" blue="false">
 			<text>You already scrapped the Magatama.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Magatama.</text>
-			<event>
+			<event name="SCRAP_AUG_MAGATAMA">
 				<text>You scrap the Magatama for valuable resources.</text>
 				<item_modify>
 					<item type="scrap" min="100" max="100"/>
@@ -1799,65 +1306,21 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Magatama...
-				[This tiny charm provides 40% heal speed and 5% damage resist for all of your crew.]
-			</text>
-			<event>
-				<hiddenAug>AUG_MAGATAMA</hiddenAug>
-				<text>You add the Magatama into your ship's armory systems. </text>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<text>This tiny charm provides 40% heal speed and 5% damage resist for all of your crew. [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-						</choice>
-					</event>
-
-
-				</choice>
-			</event>
+			<text id="text_GET_AUG_MAGATAMA"/>
+			<event load="GET_AUG_MAGATAMA"/>
 		</choice>
 
 		<choice hidden="false" req="AUG_MAGATAMA" max_group="2" blue="false">
 			<text>You already have the Magatama.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_separatist" max_group="2" blue="false">
 			<text>You already scrapped the Magatama.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Magatama.</text>
-			<event>
-				<text>You scrap the Magatama for valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_separatist" op="set" val="1"/>
-			</event>
+			<event load="SCRAP_AUG_MAGATAMA"/>
 		</choice>
 	</event>
 
@@ -1942,17 +1405,17 @@
 		</item_modify>
 		<variable name="ach_fm_boss_slug" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_SLUG</achievement>
-		<unlockCustomShip shipReq="PLAYER_SHIP_SLUG_2" silent="false">PLAYER_SHIP_TWISTED4</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_SLUG_3" silent="false">PLAYER_SHIP_TWISTED4</unlockCustomShip>
 
 		<choice hidden="true" req="HID_MALBORO_RED" max_group="1" blue="false">
 			<text>You already have the Malboro Quasar.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Malboro Quasar...
+			<text name="text_GET_MALBORO_RED">Internalize the Malboro Quasar...
 				[These hyper-addictive cigarettes somehow boost your vitality, but give you horrible lung problems. Seems healthy! ...if you're a fool that is. 2x max health for all slugs, but 3x suffocation damage taken.]
 			</text>
-			<event>
+			<event name="GET_MALBORO_RED">
 				<hiddenAug>HID_MALBORO_RED</hiddenAug>
 				<text>You add the Malboro Quasar into your ship's ventilation system (why??). </text>
 				<choice hidden="true">
@@ -1972,33 +1435,15 @@
 
 		<choice hidden="false" req="HID_MALBORO_RED" max_group="2" blue="false">
 			<text>You already have the Malboro Quasar.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_slug" max_group="2" blue="false">
 			<text>You already scrapped the Malboro Quasar.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Malboro Quasar.</text>
-			<event>
+			<event name="SCRAP_MALBORO_RED">
 				<text>You scrap the Malboro Quasar for valuable resources.</text>
 				<item_modify>
 					<item type="scrap" min="100" max="100"/>
@@ -2020,72 +1465,28 @@
 		</item_modify>
 		<variable name="ach_fm_boss_slug" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_SLUG</achievement>
-		<unlockCustomShip shipReq="PLAYER_SHIP_SLUG_2" silent="false">PLAYER_SHIP_TWISTED4</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_SLUG_3" silent="false">PLAYER_SHIP_TWISTED4</unlockCustomShip>
 
 		<choice hidden="true" req="HID_MALBORO_RED" max_group="1" blue="false">
 			<text>You already have the Malboro Quasar.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Malboro Quasar...
-				[These hyper-addictive cigarettes somehow boost your vitality, but give you horrible lung problems. Seems healthy! ...if you're a fool that is. 2x max health for all slugs, but 3x suffocation damage taken.]
-			</text>
-			<event>
-				<hiddenAug>HID_MALBORO_RED</hiddenAug>
-				<text>You add the Malboro Quasar into your ship's ventilation system (why??). </text>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<text>These hyper-addictive cigarettes somehow boost your vitality, but give you horrible lung problems. Seems healthy! ...if you're a fool that is. 2x max health for all slugs, but 3x suffocation damage taken. [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-						</choice>
-					</event>
-
-
-				</choice>
-			</event>
+			<text id="text_GET_MALBORO_RED"/>
+			<event load="GET_MALBORO_RED"/>
 		</choice>
 
 		<choice hidden="false" req="HID_MALBORO_RED" max_group="2" blue="false">
 			<text>You already have the Malboro Quasar.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_slug" max_group="2" blue="false">
 			<text>You already scrapped the Malboro Quasar.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Malboro Quasar.</text>
-			<event>
-				<text>You scrap the Malboro Quasar for valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_slug" op="set" val="1"/>
-			</event>
+			<event load="SCRAP_MALBORO_RED"/>
 		</choice>
 	</event>
 
@@ -2235,10 +1636,10 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Limit Release...
+			<text name="text_GET_LAB_ZOLTAN_LIMIT_RELEASE">Internalize the Limit Release...
 				[Active Ability: Zoltans take 40% reduced damage and deal 1.3x increased damage. They do not supply power while this is active.]
 			</text>
-			<event>
+			<event name="GET_LAB_ZOLTAN_LIMIT_RELEASE">
 				<text>You add the Limit Release into your ship's armory. </text>
 				<choice hidden="true">
 					<text>Continue...</text>
@@ -2258,33 +1659,15 @@
 
 		<choice hidden="false" req="HID_LAB_ZOLTAN_LIMIT_RELEASE" max_group="2" blue="false">
 			<text>You already have the Limit Release.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_zoltan" max_group="2" blue="false">
 			<text>You already scrapped the Limit Release.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Limit Release.</text>
-			<event>
+			<event name="SCRAP_LAB_ZOLTAN_LIMIT_RELEASE">
 				<text>You scrap the Limit Release for valuable resources.</text>
 				<item_modify>
 					<item type="scrap" min="100" max="100"/>
@@ -2313,65 +1696,21 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Limit Release...
-				[Active Ability: Zoltans take 40% reduced damage and deal 1.3x increase damage. They do not supply power while this is active.]
-			</text>
-			<event>
-				<hiddenAug>HID_LAB_ZOLTAN_LIMIT_RELEASE</hiddenAug>
-				<text>You add the Limit Release into your ship's armory. </text>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<text>Active Ability: Zoltans take 40% reduced damage and deal 1.3x increase damage. They do not supply power while this is active. [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-						</choice>
-					</event>
-
-
-				</choice>
-			</event>
+			<text id="text_GET_LAB_ZOLTAN_LIMIT_RELEASE"/>
+			<event load="GET_LAB_ZOLTAN_LIMIT_RELEASE"/>
 		</choice>
 
 		<choice hidden="false" req="HID_LAB_ZOLTAN_LIMIT_RELEASE" max_group="2" blue="false">
 			<text>You already have the Limit Release.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_zoltan" max_group="2" blue="false">
 			<text>You already scrapped the Limit Release.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Limit Release.</text>
-			<event>
-				<text>You scrap the Limit Release for valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_zoltan" op="set" val="1"/>
-			</event>
+			<event load="SCRAP_LAB_ZOLTAN_LIMIT_RELEASE"/>
 		</choice>
 	</event>
 
@@ -2441,29 +1780,11 @@
 
 		<choice hidden="false" req="HID_COMBUSTION_VIRUS" max_group="2" blue="false">
 			<text>You already have the Combustion Bioweapon.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_shell" max_group="2" blue="false">
 			<text>You already scrapped the Combustion Bioweapon.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Destroy the Combustion Bioweapon.</text>
@@ -2572,10 +1893,10 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Drone Boost MK II...
+			<text name="text_GET_UPG_DRONE_SPEED_2">Internalize the Drone Boost MK II...
 				[Your drones gain tripled movement and a 50% boost to combat/sabotage damage and repair/extinguishing speed. Stacks with other boosters.]
 			</text>
-			<event>
+			<event name="GET_UPG_DRONE_SPEED_2">
 				<hiddenAug>HID_UPG_DRONE_SPEED_2</hiddenAug>
 				<text>You add the Drone Boost MK II into your ship's internal systems. </text>
 				<choice hidden="true">
@@ -2595,33 +1916,15 @@
 
 		<choice hidden="false" req="HID_UPG_DRONE_SPEED_2" max_group="2" blue="false">
 			<text>You already have the Drone Boost MK II.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_engineer" max_group="2" blue="false">
 			<text>You already scrapped the Drone Boost MK II.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Drone Boost MK II.</text>
-			<event>
+			<event  name="SCRAP_UPG_DRONE_SPEED_2">
 				<text>You scrap the Drone Boost MK IIfor valuable resources.</text>
 				<item_modify>
 					<item type="scrap" min="100" max="100"/>
@@ -2652,65 +1955,21 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Drone Boost MK II...
-				[Your drones gain tripled movement and a 50% boost to combat/sabotage damage and repair/extinguishing speed. Stacks with other boosters.]
-			</text>
-			<event>
-				<hiddenAug>HID_UPG_DRONE_SPEED_2</hiddenAug>
-				<text>You add the Drone Boost MK II into your ship's internal systems. </text>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<text>Your drones gain tripled movement and a 50% boost to combat/sabotage damage and repair/extinguishing speed. Stacks with other boosters. [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-						</choice>
-					</event>
-
-
-				</choice>
-			</event>
+			<text id="text_GET_UPG_DRONE_SPEED_2"/>
+			<event load="GET_UPG_DRONE_SPEED_2"/>
 		</choice>
 
 		<choice hidden="false" req="HID_UPG_DRONE_SPEED_2" max_group="2" blue="false">
 			<text>You already have the Drone Boost MK II.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_engineer" max_group="2" blue="false">
 			<text>You already scrapped the Drone Boost MK II.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Drone Boost MK II.</text>
-			<event>
-				<text>You scrap the Drone Boost MK IIfor valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_engineer" op="set" val="1"/>
-			</event>
+			<event load="SCRAP_UPG_DRONE_SPEED_2"/>
 		</choice>
 	</event>
 
@@ -2755,10 +2014,10 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Scrapmetal Fireheart...
+			<text name="text_GET_FIRE_HEART">Internalize the Scrapmetal Fireheart...
 				["Fuel the fires, Feel the heat!" All normal Lanius crew heal from fire at a rate of 3 hp/s, have a slower oxygen drain(70% reduced), and deal 20% less combat damage.]
 			</text>
-			<event>
+			<event name="GET_FIRE_HEART">
 				<hiddenAug>HID_FIRE_HEART</hiddenAug>
 				<text>You add the Scrapmetal Fireheart into your ship's armory systems. </text>
 				<choice hidden="true">
@@ -2778,33 +2037,15 @@
 
 		<choice hidden="false" req="HID_FIRE_HEART" max_group="2" blue="false">
 			<text>You already have the Scrapmetal Fireheart.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_lanius" max_group="2" blue="false">
 			<text>You already scrapped the Scrapmetal Fireheart.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Scrapmetal Fireheart.</text>
-			<event>
+			<event name="SCRAP_FIRE_HEART">
 				<text>You scrap the Scrapmetal Fireheart for valuable resources.</text>
 				<item_modify>
 					<item type="scrap" min="100" max="100"/>
@@ -2833,65 +2074,21 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Scrapmetal Fireheart...
-				["Fuel the fires, Feel the heat!" All normal Lanius crew heal from fire at a rate of 3 hp/s, have a slower oxygen drain(70% reduced), and deal 20% less combat damage.]
-			</text>
-			<event>
-				<hiddenAug>HID_FIRE_HEART</hiddenAug>
-				<text>You add the Scrapmetal Fireheart into your ship's armory systems. </text>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<text>"Fuel the fires, Feel the heat!" All normal Lanius crew heal from fire at a rate of 3 hp/s, have a slower oxygen drain(70% reduced), and deal 20% less combat damage. [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-						</choice>
-					</event>
-
-
-				</choice>
-			</event>
+			<text id="text_GET_FIRE_HEART"/>
+			<event load="GET_FIRE_HEART"/>
 		</choice>
 
 		<choice hidden="false" req="HID_FIRE_HEART" max_group="2" blue="false">
 			<text>You already have the Scrapmetal Fireheart.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_lanius" max_group="2" blue="false">
 			<text>You already scrapped the Scrapmetal Fireheart.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Scrapmetal Fireheart.</text>
-			<event>
-				<text>You scrap the Scrapmetal Fireheart for valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_lanius" op="set" val="1"/>
-			</event>
+			<event load="GET_FIRE_HEART"/>
 		</choice>
 	</event>
 
@@ -3004,10 +2201,10 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize Gozer's Fridge...
+			<text name="text_GET_GOZER_FRIDGE">Internalize Gozer's Fridge...
 				[Your Ghost crew can no longer phase through walls, but they feel incredibly durable! All Ghosts in your crew gain 70% max health and 30% movement speed.]
 			</text>
-			<event>
+			<event name="GET_GOZER_FRIDGE">
 				<hiddenAug>HID_GOZER_FRIDGE</hiddenAug>
 				<text>You add Gozer's Fridge into your ship's cafeteria. </text>
 				<choice hidden="true">
@@ -3027,33 +2224,15 @@
 
 		<choice hidden="false" req="HID_GOZER_FRIDGE" max_group="2" blue="false">
 			<text>You already have Gozer's Fridge.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_kestrel" max_group="2" blue="false">
 			<text>You already scrapped Gozer's Fridge.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap Gozer's Fridge.</text>
-			<event>
+			<event name="SCRAP_GOZER_FRIDGE">
 				<text>You scrap Gozer's Fridge for valuable resources.</text>
 				<item_modify>
 					<item type="scrap" min="100" max="100"/>
@@ -3086,65 +2265,21 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize Gozer's Fridge...
-				[Your Ghost crew can no longer phase through walls, but they feel incredibly durable! All Ghosts in your crew gain 70% max health and 30% movement speed.]
-			</text>
-			<event>
-				<hiddenAug>HID_GOZER_FRIDGE</hiddenAug>
-				<text>You add Gozer's Fridge into your ship's cafeteria. </text>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<text>Your Ghost crew can no longer phase through walls, but they feel incredibly durable! All Ghosts in your crew gain 70% max health and 30% movement speed. [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-						</choice>
-					</event>
-
-
-				</choice>
-			</event>
+			<text id="text_GET_GOZER_FRIDGE"/>
+			<event load="GET_GOZER_FRIDGE"/>
 		</choice>
 
 		<choice hidden="false" req="HID_GOZER_FRIDGE" max_group="2" blue="false">
 			<text>You already have Gozer's Fridge.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_kestrel" max_group="2" blue="false">
 			<text>You already scrapped Gozer's Fridge.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap Gozer's Fridge.</text>
-			<event>
-				<text>You scrap Gozer's Fridge for valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_kestrel" op="set" val="1"/>
-			</event>
+			<event load="SCRAP_GOZER_FRIDGE"/>
 		</choice>
 	</event>
 
@@ -3223,10 +2358,10 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Twisted Ammo Fabricator...
+			<text name="text_GET_UPG_WEAPONS_REPLICATOR_2">Internalize the Twisted Ammo Fabricator...
 				[Effects: Has 60% chance to not use a missile when shooting an ammo consuming weapon.]
 			</text>
-			<event>
+			<event name="GET_UPG_WEAPONS_REPLICATOR_2">
 				<hiddenAug>HID_UPG_WEAPONS_REPLICATOR_2</hiddenAug>
 				<text>You add the Twisted Ammo Fabricator into your ship's internal systems. </text>
 				<choice hidden="true">
@@ -3246,33 +2381,15 @@
 
 		<choice hidden="false" req="HID_UPG_WEAPONS_REPLICATOR_2" max_group="2" blue="false">
 			<text>You already have the Twisted Ammo Fabricator.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_federation" max_group="2" blue="false">
 			<text>You already scrapped the Twisted Ammo Fabricator.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Twisted Ammo Fabricator.</text>
-			<event>
+			<event name="SCRAP_UPG_WEAPONS_REPLICATOR_2">
 				<text>You scrap the Twisted Ammo Fabricator for valuable resources.</text>
 				<item_modify>
 					<item type="scrap" min="100" max="100"/>
@@ -3301,65 +2418,21 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Twisted Ammo Fabricator...
-				[Effects: Has 60% chance to not use a missile when shooting an ammo consuming weapon.]
-			</text>
-			<event>
-				<hiddenAug>HID_UPG_WEAPONS_REPLICATOR_2</hiddenAug>
-				<text>You add the Twisted Ammo Fabricator into your ship's internal systems. </text>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<text>Effects: Has 60% chance to not use a missile when shooting an ammo consuming weapon. [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-						</choice>
-					</event>
-
-
-				</choice>
-			</event>
+			<text id="text_GET_UPG_WEAPONS_REPLICATOR_2"/>
+			<event load="GET_UPG_WEAPONS_REPLICATOR_2"/>
 		</choice>
 
 		<choice hidden="false" req="HID_UPG_WEAPONS_REPLICATOR_2" max_group="2" blue="false">
 			<text>You already have the Twisted Ammo Fabricator.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_federation" max_group="2" blue="false">
 			<text>You already scrapped the Twisted Ammo Fabricator.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Twisted Ammo Fabricator.</text>
-			<event>
-				<text>You scrap the Twisted Ammo Fabricator for valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_federation" op="set" val="1"/>
-			</event>
+			<event load="SCRAP_UPG_WEAPONS_REPLICATOR_2"/>
 		</choice>
 	</event>
 
@@ -3577,10 +2650,10 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Golden Tuco...
+			<text name="text_GET_GOLDEN_TUCO">Internalize the Golden Tuco...
 				[This limited edition Tuco's Child Casino and Gardening Emporium golden figurine makes your crew feel warm and fuzzy inside. Provides 30% active ability cooldown reduction to all of your crew (except Mantis, Mantis HATE figurines).]
 			</text>
-			<event>
+			<event name="GET_GOLDEN_TUCO">
 				<hiddenAug>HID_GOLDEN_TUCO</hiddenAug>
 				<text>You add the Golden Tuco into your ship's recreation room decor. </text>
 				<choice hidden="true">
@@ -3600,33 +2673,15 @@
 
 		<choice hidden="false" req="HID_GOLDEN_TUCO" max_group="2" blue="false">
 			<text>You already have the Golden Tuco.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_tuco" max_group="2" blue="false">
 			<text>You already scrapped the Golden Tuco.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Golden Tuco.</text>
-			<event>
+			<event name="SCRAP_GOLDEN_TUCO">
 				<text>You scrap the Golden Tuco for valuable resources.</text>
 				<item_modify>
 					<item type="scrap" min="100" max="100"/>
@@ -3655,65 +2710,21 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Golden Tuco...
-				[This limited edition Tuco's Child Casino and Gardening Emporium golden figurine makes your crew feel warm and fuzzy inside. Provides 30% active ability cooldown reduction to all of your crew(except Mantis, Mantis HATE figurines).]
-			</text>
-			<event>
-				<hiddenAug>HID_GOLDEN_TUCO</hiddenAug>
-				<text>You add the Golden Tuco into your ship's recreation room decor. </text>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<text>This limited edition Tuco's Child Casino and Gardening Emporium golden figurine makes your crew feel warm and fuzzy inside. Provides 30% active ability cooldown reduction to all of your crew(except Mantis, Mantis HATE figurines). [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-						</choice>
-					</event>
-
-
-				</choice>
-			</event>
+			<text id="text_GET_GOLDEN_TUCO"/>
+			<event load="GET_GOLDEN_TUCO"/>
 		</choice>
 
 		<choice hidden="false" req="HID_GOLDEN_TUCO" max_group="2" blue="false">
 			<text>You already have the Golden Tuco.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_tuco" max_group="2" blue="false">
 			<text>You already scrapped the Golden Tuco.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Golden Tuco.</text>
-			<event>
-				<text>You scrap the Golden Tuco for valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_tuco" op="set" val="1"/>
-			</event>
+			<event load="GET_GOLDEN_TUCO"/>
 		</choice>
 	</event>
 
@@ -3808,10 +2819,10 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Depression Emitter...
+			<text name="text_GET_DEPRESSION_EMITTER">Internalize the Depression Emitter...
 				[Emits a depression aura that slows all enemy movement and repair speed by 20%.]
 			</text>
-			<event>
+			<event name="GET_DEPRESSION_EMITTER">
 				<hiddenAug>HID_DEPRESSION_EMITTER</hiddenAug>
 				<text>You add the Depression Emitter into your ship's internal systems. </text>
 				<choice hidden="true">
@@ -3831,33 +2842,15 @@
 
 		<choice hidden="false" req="HID_DEPRESSION_EMITTER" max_group="2" blue="false">
 			<text>You already have the Depression Emitter.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_leech" max_group="2" blue="false">
 			<text>You already scrapped the Depression Emitter.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Depression Emitter.</text>
-			<event>
+			<event name="SCRAP_DEPRESSION_EMITTER">
 				<text>You scrap the Depression Emitter for valuable resources.</text>
 				<item_modify>
 					<item type="scrap" min="100" max="100"/>
@@ -3886,65 +2879,21 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Depression Emitter...
-				[Emits a depression aura that slows all enemy movement and repair speed by 20%.]
-			</text>
-			<event>
-				<hiddenAug>HID_DEPRESSION_EMITTER</hiddenAug>
-				<text>You add the Depression Emitter into your ship's internal systems. </text>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<text>Emits a depression aura that slows all enemy movement and repair speed by 20%. [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-						</choice>
-					</event>
-
-
-				</choice>
-			</event>
+			<text id="text_GET_DEPRESSION_EMITTER"/>
+			<event load="GET_DEPRESSION_EMITTER"/>
 		</choice>
 
 		<choice hidden="false" req="HID_DEPRESSION_EMITTER" max_group="2" blue="false">
 			<text>You already have the Depression Emitter.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_leech" max_group="2" blue="false">
 			<text>You already scrapped the Depression Emitter.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Depression Emitter.</text>
-			<event>
-				<text>You scrap the Depression Emitter for valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_leech" op="set" val="1"/>
-			</event>
+			<event load="SCRAP_DEPRESSION_EMITTER"/>
 		</choice>
 	</event>
 
@@ -4016,70 +2965,27 @@
 		<achievement silent="false">ACH_TWISTED_REN_CLAN</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<choice hidden="true" req="HID_BRAIN_DONATION" max_group="1" blue="false">
-			<text>You already have the Mind Clouder.</text>
+			<text id="text_HAVE_BRAIN_DONATION"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Mind Clouder...
-				[Your crew is now immune to mind control effects.]
-			</text>
-			<event>
-				<hiddenAug>HID_BRAIN_DONATION</hiddenAug>
-				<text>You retrieve the Ambrosia lab and begin replicating the Ambrosia drug, then make certain to dole it out to all of your crew. </text>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<text>Your crew is now immune to mind control effects. [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-						</choice>
-					</event>
-
-				</choice>
-			</event>
+			<text id="text_GET_BRAIN_DONATION"/>
+			<event load="GET_BRAIN_DONATION"/>
 		</choice>
 
 
 
 		<choice hidden="false" req="HID_BRAIN_DONATION" max_group="2" blue="false">
-			<text>You already have the Mind Clouder.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_HAVE_BRAIN_DONATION"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_clan" max_group="2" blue="false">
-			<text>You already scrapped the Mind Clouder.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_SCRAPPED_BRAIN_DONATION"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text>Scrap the Mind Clouder.</text>
-			<event>
-				<text>You scrap the Mind Clouder for valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_clan" op="set" val="1"/>
-			</event>
+			<text id="text_SCRAP_BRAIN_DONATION"/>
+			<event load="SCRAP_BRAIN_DONATION"/>
 		</choice>
 	</event>
 
@@ -4095,68 +3001,25 @@
 		<achievement silent="false">ACH_TWISTED_REN_CLAN</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<choice hidden="true" req="HID_BRAIN_DONATION" max_group="1" blue="false">
-			<text>You already have the Mind Clouder.</text>
+			<text id="text_HAVE_BRAIN_DONATION"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Mind Clouder...
-				[Your crew is now immune to mind control effects.]
-			</text>
-			<event>
-				<hiddenAug>HID_BRAIN_DONATION</hiddenAug>
-				<text>You retrieve the Ambrosia lab and begin replicating the Ambrosia drug, then make certain to dole it out to all of your crew. </text>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<text>Your crew is now immune to mind control effects. [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-
-						</choice>
-					</event>
-				</choice>
-			</event>
+			<text id="text_GET_BRAIN_DONATION"/>
+			<event load="GET_BRAIN_DONATION"/>
 		</choice>
 
 		<choice hidden="false" req="HID_BRAIN_DONATION" max_group="2" blue="false">
-			<text>You already have the Mind Clouder.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_HAVE_BRAIN_DONATION"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_clan" max_group="2" blue="false">
-			<text>You already scrapped the Mind Clouder.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_SCRAPPED_BRAIN_DONATION"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text>Scrap the Mind Clouder.</text>
-			<event>
-				<text>You scrap the Mind Clouder for valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_clan" op="set" val="1"/>
-			</event>
+			<text id="text_SCRAP_BRAIN_DONATION"/>
+			<event load="SCRAP_BRAIN_DONATION"/>
 		</choice>
 	</event>
 
@@ -4210,68 +3073,25 @@
 		<achievement silent="false">ACH_TWISTED_REN_DUSK</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<choice hidden="true" req="HID_DEATH_VESTS2" max_group="1" blue="false">
-			<text>You already have the Twilight Vests.</text>
+			<text id="text_HAVE_DEATH_VESTS2"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Twilight Vests
-				[Adds a death effect to all non-Zoltan allied crew, making them explode for 45 crew damage against enemies, and sometimes start fires.]...
-			</text>
-			<event>
-				<text>You retrieve the Twlight Vests and force all crew to put them on. Strangely, none resist or argue, as if hypnotized by the vest's aura. </text>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<hiddenAug>HID_DEATH_VESTS2</hiddenAug>
-						<text>Adds a death effect to all non-Zoltan allied crew, making them explode for 45 crew damage against enemies, and sometimes start fires. [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-						</choice>
-					</event>
-
-				</choice>
-			</event>
+			<text id="text_GET_DEATH_VESTS2"/>
+			<event load="GET_DEATH_VESTS2"/>
 		</choice>
 
 		<choice hidden="false" req="HID_DEATH_VESTS2" max_group="2" blue="false">
-			<text>You already have the Twlight Vests.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_HAVE_DEATH_VESTS2"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_dusk" max_group="2" blue="false">
-			<text>You already scrapped the Twlight Vests.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_SCRAPPED_DEATH_VESTS2"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text>Scrap the Twilight Vests.</text>
-			<event>
-				<text>You scrap the Twilight Vests for valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_dusk" op="set" val="1"/>
-			</event>
+			<text id="text_SCRAP_DEATH_VESTS2"/>
+			<event load="SCRAP_DEATH_VESTS2"/>
 		</choice>
 	</event>
 
@@ -4287,68 +3107,25 @@
 		<achievement silent="false">ACH_TWISTED_REN_DUSK</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<choice hidden="true" req="HID_DEATH_VESTS2" max_group="1" blue="false">
-			<text>You already have the Twilight Vests.</text>
+			<text id="text_HAVE_DEATH_VESTS2"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Twilight Vests
-				[Adds a death effect to all non-Zoltan allied crew, making them explode for 45 crew damage against enemies, and sometimes start fires.]...
-			</text>
-			<event>
-				<text>You retrieve the Twlight Vests and force all crew to put them on. Strangely, none resist or argue, as if hypnotized by the vest's aura. </text>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<hiddenAug>HID_DEATH_VESTS2</hiddenAug>
-						<text>Adds a death effect to all non-Zoltan allied crew, making them explode for 45 crew damage against enemies, and sometimes start fires. [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-
-						</choice>
-					</event>
-				</choice>
-			</event>
+			<text id="text_GET_DEATH_VESTS2"/>
+			<event load="GET_DEATH_VESTS2"/>
 		</choice>
 
 		<choice hidden="false" req="HID_DEATH_VESTS2" max_group="2" blue="false">
-			<text>You already have the Twlight Vests.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_HAVE_DEATH_VESTS2"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_dusk" max_group="2" blue="false">
-			<text>You already scrapped the Twlight Vests.</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_SCRAPPED_DEATH_VESTS2"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text>Scrap the Twilight Vests.</text>
-			<event>
-				<text>You scrap the Twilight Vests for valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_dusk" op="set" val="1"/>
-			</event>
+			<text id="text_SCRAP_DEATH_VESTS2"/>
+			<event load="SCRAP_DEATH_VESTS2"/>
 		</choice>
 	</event>
 
@@ -4387,68 +3164,25 @@
 		<achievement silent="false">ACH_TWISTED_REN_ENGI</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ENGI_3" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
 		<choice hidden="true" req="HID_UPG_DRONE_COOLDOWN" max_group="1" blue="false">
-			<text>You already have the Drone Booster "Kai".</text>
+			<text id="text_HAVE_UPG_DRONE_COOLDOWN"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Drone Booster "Kai"...
-				[All Drone active abilities recharge twice as fast!]
-			</text>
-			<event>
-				<hiddenAug>HID_UPG_DRONE_COOLDOWN</hiddenAug>
-				<text>You install the Drone Booster "Kai" into your internal ship systems. </text>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<text>This upgrade allows your drones to charge their cooldown abilities twice as fast! [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-						</choice>
-					</event>
-
-				</choice>
-			</event>
+			<text id="text_GET_UPG_DRONE_COOLDOWN"/>
+			<event load="GET_UPG_DRONE_COOLDOWN"/>
 		</choice>
 
 		<choice hidden="false" req="HID_UPG_DRONE_COOLDOWN" max_group="2" blue="false">
-			<text>You already have the Drone Booster "Kai".</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_HAVE_UPG_DRONE_COOLDOWN"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_engi" max_group="2" blue="false">
-			<text>You already scrapped the Drone Booster "Kai".</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_SCRAPPED_UPG_DRONE_COOLDOWN"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text>Scrap the Drone Booster "Kai".</text>
-			<event>
-				<text>You scrap the Drone Booster "Kai" for valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_engi" op="set" val="1"/>
-			</event>
+			<text id="text_SCRAP_UPG_DRONE_COOLDOWN"/>
+			<event load="SCRAP_UPG_DRONE_COOLDOWN"/>
 		</choice>
 	</event>
 
@@ -4464,68 +3198,25 @@
 		<achievement silent="false">ACH_TWISTED_REN_ENGI</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ENGI_3" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
 		<choice hidden="true" req="HID_UPG_DRONE_COOLDOWN" max_group="1" blue="false">
-			<text>You already have the Drone Booster "Kai".</text>
+			<text id="text_HAVE_UPG_DRONE_COOLDOWN"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text>Internalize the Drone Booster "Kai"...
-				[All Drone active abilities recharge twice as fast!]
-			</text>
-			<event>
-				<hiddenAug>HID_UPG_DRONE_COOLDOWN</hiddenAug>
-				<text>You install the Drone Booster "Kai" into your internal ship systems. </text>
-				<choice hidden="true">
-					<text>Continue...</text>
-					<event>
-						<text>This upgrade allows your drones to charge their cooldown abilities twice as fast! [The Augment has been internalized!]</text>
-						<choice hidden="true">
-							<text>Continue...</text>
-							<event load="STORAGE_CHECK"/>
-						</choice>
-					</event>
-
-				</choice>
-			</event>
+			<text id="text_GET_UPG_DRONE_COOLDOWN"/>
+			<event load="GET_UPG_DRONE_COOLDOWN"/>
 		</choice>
 
 		<choice hidden="false" req="HID_UPG_DRONE_COOLDOWN" max_group="2" blue="false">
-			<text>You already have the Drone Booster "Kai".</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_HAVE_UPG_DRONE_COOLDOWN"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_engi" max_group="2" blue="false">
-			<text>You already scrapped the Drone Booster "Kai".</text>
-			<event>
-				<text>...</text>
-				<item_modify>
-					<item type="fuel" min="1" max="1"/>
-				</item_modify>
-				<choice hidden="false">
-					<text>Continue...</text>
-					<event/>
-				</choice>
-			</event>
+			<text id="text_SCRAPPED_UPG_DRONE_COOLDOWN"/>
+			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text>Scrap the Drone Booster "Kai".</text>
-			<event>
-				<text>You scrap the Drone Booster "Kai" for valuable resources.</text>
-				<item_modify>
-					<item type="scrap" min="100" max="100"/>
-					<item type="missiles" min="10" max="10"/>
-					<item type="drones" min="10" max="10"/>
-					<item type="fuel" min="4" max="4"/>
-				</item_modify>
-				<variable name="scrapped_engi" op="set" val="1"/>
-			</event>
+			<text id="text_SCRAP_UPG_DRONE_COOLDOWN"/>
+			<event load="SCRAP_UPG_DRONE_COOLDOWN"/>
 		</choice>
 	</event>
 

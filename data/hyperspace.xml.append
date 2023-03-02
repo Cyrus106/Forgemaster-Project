@@ -2693,8 +2693,8 @@
 			</req>
 		</req>
 		<req name="FM_RVS_AC_CHARGE_FORGE_LIST">
-		  <name>FM_RVS_AC_CHARGE_LIST2</name>
-		  <name>FM_RVS_AC_CHARGE_LIST3</name>
+			<name>FM_RVS_AC_CHARGE_LIST2</name>
+			<name>FM_RVS_AC_CHARGE_LIST3</name>
 			<name>FM_RVS_AC_CHARGE_LIST4</name>
 		</req>
 
@@ -2709,6 +2709,36 @@
 			<name>GB_AC_1_INCENDIARY</name>
 			<name>GB_AC_1_FLECHETTE</name>
 			<name>GB_AC_1_RAD</name>
+		</req>
+		
+		<req name="MAMMOTH_CANNON_LIST1" type="all">
+			<name>MISSILES_V5_SINGLE</name>
+			<req type="sum" lvl="2">
+				<name>AC_2_COUNT</name>
+			</req>
+		</req>
+		<req name="MAMMOTH_CANNON_LIST2" type="all">
+			<name>MISSILES_V5_MULTI</name>
+			<req type="sum" lvl="2">
+				<name>AC_2_COUNT</name>
+			</req>
+		</req>
+		<req name="MAMMOTH_CANNON_FORGE_LIST">
+			<name>MAMMOTH_CANNON_LIST1</name>
+			<name>MAMMOTH_CANNON_LIST2</name>
+		</req>
+		
+		<req name="AC_2_COUNT" type="sum">
+			<name>GB_AC_2</name>
+			<name>GB_AC_2_CASELESS</name>
+			<name>GB_AC_2_HV</name>
+			<name>GB_AC_2_FREE</name>
+			<name>GB_AC_2_HE</name>
+			<name>GB_AC_2_EMP</name>
+			<name>GB_AC_2_HEAT</name>
+			<name>GB_AC_2_INCENDIARY</name>
+			<name>GB_AC_2_FLECHETTE</name>
+			<name>GB_AC_2_RAD</name>
 		</req>
 	</events>
 
@@ -3089,7 +3119,7 @@
 			<name>FM_LASER_HUMAN_LIST</name>
 			<name>FM_LASER_ION_MEGA_LIST</name>
 			<name>FM_CHAINGUN_FIRE_LIST</name>
-			<name>FM_SURGE_LASER</name>
+			<name>FM_SURGE_LASER_LIST</name>
 			<name>GATLING_ANCIENT</name>
 
 		</req>
@@ -3184,6 +3214,7 @@
 
 			<!--Addon Crafts!-->
 			<name>FM_RVS_AC_CHARGE_FORGE_LIST</name>
+			<name>MAMMOTH_CANNON_FORGE_LIST</name>
 		</req>
 
 		<req name="FM_EXPLOSIVE_FORGE_LIST_STORAGE" type="all"> <!-- Do you have the ingredients for a Explosive weapon? If so, light up the category option BLUE in the crafting category menu! -->
@@ -3792,35 +3823,6 @@
 	</events>
 
 	<events> <!-- Forgemaster CURA BOSS RUSH -->
-		<event name="FM_BOSS_CLAN1_SHIP_DESTROYED"> <!-- Gives you twisted sector coords -->
-			<variable name="coords_twisted" op="add" val="1"/>
-			<variable name="loc_coords_twisted" op="add" val="1"/>
-		</event>
-
-		<event name="FM_BOSS_CLAN1_SHIP_DESTROYED2"> <!-- Gives you twisted sector coords -->
-			<variable name="coords_twisted" op="add" val="1"/>
-			<variable name="loc_coords_twisted" op="add" val="1"/>
-		</event>
-
-		<event name="FM_BOSS_DUSK1_SHIP_DESTROYED"> <!-- Gives you twisted sector coords -->
-			<variable name="coords_twisted" op="add" val="1"/>
-			<variable name="loc_coords_twisted" op="add" val="1"/>
-		</event>
-
-		<event name="FM_BOSS_DUSK1_SHIP_DESTROYED2"> <!-- Gives you twisted sector coords -->
-			<variable name="coords_twisted" op="add" val="1"/>
-			<variable name="loc_coords_twisted" op="add" val="1"/>
-		</event>
-
-		<event name="FM_BOSS_ENGI1_DESTROYED"> <!-- Gives you twisted sector coords -->
-			<variable name="coords_twisted" op="add" val="1"/>
-			<variable name="loc_coords_twisted" op="add" val="1"/>
-		</event>
-
-		<event name="FM_BOSS_ENGI1_DESTROYED2"> <!-- Gives you twisted sector coords -->
-			<variable name="coords_twisted" op="add" val="1"/>
-			<variable name="loc_coords_twisted" op="add" val="1"/>
-		</event>
 		<variable name="loc_impossible_task" op="set" val="0"/> <!-- tracks impossible task accepting progress, 1=talked, 2=accepted-->
 		<variable name="loc_impossible_task_done" op="set" val="0"/> <!-- tracks impossible task accepting progress, 1=talked, 2=accepted-->
 		<variable name="scrapped_clan" op="set" val="0"/>
@@ -15179,6 +15181,14 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<priority>0</priority>
 				</statBoost>
 				<statBoost name="moveSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.05</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<priority>0</priority>
+				</statBoost>
+				<statBoost name="healSpeed">
 					<boostType>MULT</boostType>
 					<amount>1.05</amount>
 					<shipTarget>ALL</shipTarget>

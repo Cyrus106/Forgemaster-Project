@@ -2050,6 +2050,17 @@
 		  <text>[GO BALLISTIC] You must have two to four Autocannon 1s to forge this weapon.</text>
 		  <event load="OPTION_INVALID"/>
 		</choice>
+		
+		
+		<choice req="MAMMOTH_CANNON_FORGE_LIST" lvl="1" blue="false" hidden="true">
+		  <text>[GO BALLISTIC + CNC] Combine two Autocannon 2s and V5 Missiles to forge the 'Mammoth' Cannon.[Cost: 60~]</text>
+		  <event load="NPC_STORAGE_CHECK_CREATE_MAMMOTH_CANNON"/>
+		</choice>
+
+		<choice req="MAMMOTH_CANNON_FORGE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+		  <text>[GO BALLISTIC + CNC] You must have two Autocannon 2s and V5 Missiles to forge this weapon.</text>
+		  <event load="OPTION_INVALID"/>
+		</choice>
 
 		<!--Back to main craft menu-->
 		<choice req="pilot" lvl="1" max_group="20" hidden="true" blue="false">
@@ -4832,6 +4843,35 @@
 			<event load="FM_FORGE_WEAPON_EXPLOSIVES_LOAD"/>
 		</choice>
 	</event>
+	
+	<event name="NPC_STORAGE_CHECK_CREATE_MAMMOTH_CANNON">
+		<checkCargo/>
+		<text>Currently viewing the 'Mammoth' Cannon.</text>
+		<choice hidden="false" req="MAMMOTH_CANNON_FORGE_LIST" lvl="1" blue="false">
+			<text>Craft the 'Mammoth' Cannon</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<weapon name="MAMMOTH_CANNON"/>
+				<item_modify>
+					<item type="scrap" min="-60" max="-60"/>
+				</item_modify>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event>
+						<!--<loadEvent>REMOVE_AC2</loadEvent>-->
+						<queueEvent>FM_REMOVE_AC_2</queueEvent><!--Runs the "remove one AC_2 variant event" 2 times-->
+						<queueEvent>FM_REMOVE_AC_2</queueEvent>
+						<queueEvent>FM_REMOVE_MISSILES_V5</queueEvent>
+						<queueEvent>FM_FORGE_WEAPON_LOAD</queueEvent><!--Loads the correct menu after crafting is done-->
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_WEAPON_EXPLOSIVES_LOAD"/>
+		</choice>
+	</event>
 
 	<!--<event name="REMOVE_AC4">
 		<loadEventList>
@@ -5336,7 +5376,7 @@
 				<event>
 				<text>...</text>
 				<remove name="NANOBOT_DEFENSE_SYSTEM"/>-->
-				<choice hidden="true">
+				<choice hidden="false">
 					<text>Continue...</text>
 					<event>
 						<text>Upgrade to Indium Flak Complete!</text>
@@ -5378,7 +5418,7 @@
 				<event>
 				<text>...</text>
 				<remove name="NANOBOT_DEFENSE_SYSTEM"/>-->
-				<choice hidden="true">
+				<choice hidden="false">
 					<text>Continue...</text>
 					<event>
 						<text>...</text>
@@ -5420,7 +5460,7 @@
 				<event>
 				<text>...</text>
 				<remove name="NANOBOT_DEFENSE_SYSTEM"/>-->
-				<choice hidden="true">
+				<choice hidden="false">
 					<text>Continue...</text>
 					<event>
 						<text>...</text>
@@ -5462,7 +5502,7 @@
 				<event>
 				<text>...</text>
 				<remove name="NANOBOT_DEFENSE_SYSTEM"/>-->
-				<choice hidden="true">
+				<choice hidden="false">
 					<text>Continue...</text>
 					<event>
 						<text>...</text>
@@ -5496,7 +5536,7 @@
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
 				<remove name="CRYSTAL_BURST_1_RED"/>
-				<choice hidden="true">
+				<choice hidden="false">
 					<text>Continue...</text>
 					<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 				</choice>
@@ -5513,7 +5553,7 @@
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
 				<remove name="CRYSTAL_BURST_2_RED"/>
-				<choice hidden="true">
+				<choice hidden="false">
 					<text>Continue...</text>
 					<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 				</choice>
@@ -5530,7 +5570,7 @@
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
 				<remove name="CRYSTAL_HEAVY_1_RED"/>
-				<choice hidden="true">
+				<choice hidden="false">
 					<text>Continue...</text>
 					<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 				</choice>
@@ -5547,7 +5587,7 @@
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
 				<remove name="CRYSTAL_HEAVY_2_RED"/>
-				<choice hidden="true">
+				<choice hidden="false">
 					<text>Continue...</text>
 					<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 				</choice>
@@ -5564,7 +5604,7 @@
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
 				<remove name="CRYSTAL_STUN_RED"/>
-				<choice hidden="true">
+				<choice hidden="false">
 					<text>Continue...</text>
 					<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 				</choice>
@@ -5581,7 +5621,7 @@
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
 				<remove name="CRYSTAL_SHOTGUN_RED"/>
-				<choice hidden="true">
+				<choice hidden="false">
 					<text>Continue...</text>
 					<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 				</choice>
@@ -5598,7 +5638,7 @@
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
 				<remove name="CRYSTAL_CHARGEGUN_RED"/>
-				<choice hidden="true">
+				<choice hidden="false">
 					<text>Continue...</text>
 					<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 				</choice>
@@ -5615,7 +5655,7 @@
 					<!--<item type="drones" min="-10" max="-10"/>>-->
 				</item_modify>
 				<remove name="MINELAUNCHER_CRYSTAL"/>
-				<choice hidden="true">
+				<choice hidden="false">
 					<text>Continue...</text>
 					<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM_2"/>
 				</choice>
@@ -5664,7 +5704,7 @@
 				<event>
 				<text>...</text>
 				<remove name="NANOBOT_DEFENSE_SYSTEM"/>-->
-				<choice hidden="true">
+				<choice hidden="false">
 					<text>Continue...</text>
 					<event>
 						<text>...</text>
@@ -5706,7 +5746,7 @@
 				<event>
 				<text>...</text>
 				<remove name="NANOBOT_DEFENSE_SYSTEM"/>-->
-				<choice hidden="true">
+				<choice hidden="false">
 					<text>Continue...</text>
 					<event>
 						<text>...</text>
@@ -5748,7 +5788,7 @@
 				<event>
 				<text>...</text>
 				<remove name="NANOBOT_DEFENSE_SYSTEM"/>-->
-				<choice hidden="true">
+				<choice hidden="false">
 					<text>Continue...</text>
 					<event>
 						<text>...</text>

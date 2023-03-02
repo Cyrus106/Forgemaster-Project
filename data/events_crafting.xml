@@ -145,5 +145,49 @@
   		</event>
   	</loadEventList>
   </event>
+  <event name="FM_REMOVE_AC_2">
+  	<loadEventList>
+  		<event req="GB_AC_2">
+  			<removeItem>GB_AC_2</removeItem>
+  		</event>
+  		<event req="GB_AC_2_CASELESS">
+  			<removeItem>GB_AC_2_CASELESS</removeItem>
+  		</event>
+  		<event req="GB_AC_2_HV">
+  			<removeItem>GB_AC_2_HV</removeItem>
+  		</event>
+  		<event req="GB_AC_2_HE">
+  			<removeItem>GB_AC_2_HE</removeItem>
+  		</event>
+  		<event req="GB_AC_2_FREE">
+  			<removeItem>GB_AC_2_FREE</removeItem>
+  		</event>
+  		<event req="GB_AC_2_EMP">
+  			<removeItem>GB_AC_2_EMP</removeItem>
+  		</event>
+  		<event req="GB_AC_2_HEAT">
+  			<removeItem>GB_AC_2_HEAT</removeItem>
+  		</event>
+  		<event req="GB_AC_2_INCENDIARY">
+  			<removeItem>GB_AC_2_INCENDIARY</removeItem>
+  		</event>
+  		<event req="GB_AC_2_FLECHETTE">
+  			<removeItem>GB_AC_2_FLECHETTE</removeItem>
+  		</event>
+  		<event req="GB_AC_2_RAD">
+  			<removeItem>GB_AC_2_RAD</removeItem>
+  		</event>
+  	</loadEventList>
+  </event>
+  <event name="FM_REMOVE_MISSILES_V5">
+  	<loadEventList>
+  		<event req="MISSILES_V5_SINGLE">
+  			<removeItem>MISSILES_V5_SINGLE</removeItem>
+  		</event>
+  		<event req="MISSILES_V5_MULTI">
+  			<removeItem>MISSILES_V5_MULTI</removeItem>
+  		</event>
+  	</loadEventList>
+  </event>
 
 </FTL>
