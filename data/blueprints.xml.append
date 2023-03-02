@@ -11823,11 +11823,11 @@
 				<priority>-100</priority>
 			</statBoost>
 
-			<statBoost name="statBoost">
+			<!--<statBoost name="statBoost">
 				<boostType>FLAT</boostType>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ALL</crewTarget>
-				<duration>60</duration>
+				<duration>60</duration>-->
 
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
@@ -11842,10 +11842,10 @@
 					</blackList>
 					<priority>-100</priority>
 				</statBoost>
-				<blackList>
+				<!--<blackList>
 					<FM_PLSNOEFFECT/>
 				</blackList>
-				<priority>-100</priority>
+				<priority>-100</priority>-->
 
 			</statBoost>
 		</statBoosts>
@@ -11893,11 +11893,11 @@
 				<priority>-100</priority>
 			</statBoost>
 
-			<statBoost name="statBoost">
+			<!--<statBoost name="statBoost">
 				<boostType>FLAT</boostType>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ALL</crewTarget>
-				<duration>60</duration>
+				<duration>60</duration>-->
 
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
@@ -11912,12 +11912,10 @@
 					</blackList>
 					<priority>-100</priority>
 				</statBoost>
-				<blackList>
+				<!--<blackList>
 					<FM_PLSNOEFFECT/>
 				</blackList>
-				<priority>-100</priority>
-
-				</statBoost>
+				<priority>-100</priority>-->
 	        </statBoosts>
 		<image>beam_contact</image>
 		<length>1</length>
