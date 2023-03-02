@@ -6927,8 +6927,14 @@
 				<loadEvent>FM_MODULAR_HULL_MODULES_SHIP</loadEvent>
 			</event>
 		</choice>
-		<choice>
+		<choice req="FM_MODULAR_HULL_VENGEANCE_COUNT" lvl="0" max_lvl="4">
 			<text>Install vengenace modules.</text>
+			<event>
+				<loadEvent>FM_MODULAR_HULL_MODULES_VENGEANCE</loadEvent>
+			</event>
+		</choice>
+		<choice req="FM_MODULAR_HULL_VENGEANCE_COUNT" lvl="5">
+			<text>You already have 5 vengeance modules installed.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MODULES_VENGEANCE</loadEvent>
 			</event>
@@ -7044,7 +7050,7 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_MODULES_VENGEANCE">
-		<text>Here you can see the vengeance modules you can install (You can select the option to see the effects before installing). All modules stack independently, and multiple of the same module increase how many times it can proc per hit.</text>
+		<text>Here you can see the vengeance modules you can install (You can select the option to see the effects before installing). All modules stack independently, and multiple of the same module increase how many times it can proc per hit. [You can only install 5 vengeance modules!]</text>
 		<choice req="pilot" max_group="2" blue="false">
 			<text>Prismatic Hullguard Cultivator [50~]</text>
 			<event>

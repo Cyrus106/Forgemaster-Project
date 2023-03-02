@@ -1940,7 +1940,17 @@
 
 
 	<events>   <!-- LASER WEAPON LIST Reqs! -->
-
+		<req name="SLAVER_REP_2_OFFER" type="sum"> 
+			<req lvl="2">
+				<name>REEPTATION_SLAVER_COMB</name>
+			</req>
+			<req lvl="1" mult="-1">
+				<name>NEG_SLAVER_REP</name>
+			</req>
+		</req>
+		<req name="NEG_SLAVER_REP" type="sum" mult="-1">
+			<name>rep_slaver</name>
+		</req>
 		<!-- LASER WEAPON LIST! -->
 		<req name="FM_LASER_ANOMALY_1_LIST" type="all"> <!-- Frost Laser I + Anti-Bio Laser -->
 			<name>LASER_BIO</name>
@@ -6039,7 +6049,8 @@
 			<canSabotage>false</canSabotage>
 			<canTeleport>false</canTeleport>
 			<selectable>false</selectable>
-			<canMove>false</canMove>			<snapToSlot>true</snapToSlot>
+			<canMove>false</canMove>
+			<snapToSlot>true</snapToSlot>
 			<canMan>false</canMan>
 			<noClone>true</noClone>
 			<noSlot>false</noSlot>
@@ -7730,7 +7741,72 @@
 
 		</race>
 	</crew>
+	
+	<mod:findLike type="crew">
+		<mod:findName type="race" name="gnome">
+			<mod:findLike type="passiveStatBoosts">
+				<mod:findName type="statBoost" name="silenced">
+					<mod:findLike type="blackList">
+						<mod-append:fm_crystal_red/>
+						<mod-append:fm_crystal_blue/>
+						<mod-append:fm_crystal_green/>
+						<mod-append:fm_crystal_white/>
+						<mod-append:fm_crystal_black/>
+						<mod-append:fm_ion_anomaly_crew/>
+						<mod-append:fm_ion_anomaly_crew_enemy/>
+						<mod-append:fm_hack_drone/>
+						<mod-append:fm_missile_ion/>
+						<mod-append:fm_holy11/>
+						<mod-append:fm_meatman/>
+						<mod-append:fm_generic_crewjank/>
+					</mod:findLike>
+				</mod:findName>
+			</mod:findLike>
+		</mod:findName>
+	</mod:findLike>
 
+	<mod:findLike type="augments">
+		<mod:findName type="aug" name="CHAOS">
+			<mod:findLike type="statBoosts">
+				<mod:findLike type="statBoost">
+					<mod:findLike type="blackList">
+						<mod-append:fm_crystal_red/>
+						<mod-append:fm_crystal_blue/>
+						<mod-append:fm_crystal_green/>
+						<mod-append:fm_crystal_white/>
+						<mod-append:fm_crystal_black/>
+						<mod-append:fm_ion_anomaly_crew/>
+						<mod-append:fm_ion_anomaly_crew_enemy/>
+						<mod-append:fm_hack_drone/>
+						<mod-append:fm_missile_ion/>
+						<mod-append:fm_holy11/>
+						<mod-append:fm_meatman/>
+						<mod-append:fm_generic_crewjank/>
+					</mod:findLike>
+				</mod:findLike>
+			</mod:findLike>
+		</mod:findName>
+		<mod:findName type="aug" name="JUDGE_BOON_MADNESS">
+			<mod:findLike type="statBoosts">
+				<mod:findLike type="statBoost">
+					<mod:findLike type="blackList">
+						<mod-append:fm_crystal_red/>
+						<mod-append:fm_crystal_blue/>
+						<mod-append:fm_crystal_green/>
+						<mod-append:fm_crystal_white/>
+						<mod-append:fm_crystal_black/>
+						<mod-append:fm_ion_anomaly_crew/>
+						<mod-append:fm_ion_anomaly_crew_enemy/>
+						<mod-append:fm_hack_drone/>
+						<mod-append:fm_missile_ion/>
+						<mod-append:fm_holy11/>
+						<mod-append:fm_meatman/>
+						<mod-append:fm_generic_crewjank/>
+					</mod:findLike>
+				</mod:findLike>
+			</mod:findLike>
+		</mod:findName>
+	</mod:findLike>
 </FTL>
 
 
@@ -9603,7 +9679,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 <!--Crew used for weapon effects, all share the same immunities for the most part -->
 <FTL>
 
-	<mod:findLike type ="augments"> <!-- DEATH_VESTS -->
+	<mod:findLike type="augments"> <!-- DEATH_VESTS -->
 		<mod:findName type="aug" name="DEATH_VESTS">
 			<mod:findLike type="statBoosts">
 				<mod:findLike type="statBoost">
@@ -9648,7 +9724,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 	</mod:findLike>
 
 
-	<mod:findLike type ="augments"> <!-- IZD_DEATH_VESTS -->
+	<mod:findLike type="augments"> <!-- IZD_DEATH_VESTS -->
 		<mod:findName type="aug" name="IZD_DEATH_VESTS">
 			<mod:findLike type="statBoosts">
 				<mod:findLike type="statBoost">
@@ -9697,7 +9773,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 	</augments>
 
 	<!--E-GRID IMMUNITY -->
-	<mod:findLike type ="augments"> <!-- NO_GHOST -->
+	<mod:findLike type="augments"> <!-- NO_GHOST -->
 		<mod:findName type="aug" name="NO_GHOST">
 			<mod:findLike type="statBoosts">
 				<mod:findLike type="statBoost">
@@ -9710,7 +9786,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</mod:findName>
 	</mod:findLike>
 
-	<mod:findLike type ="augments"> <!-- NO_GHOST_PLAYER -->
+	<mod:findLike type="augments"> <!-- NO_GHOST_PLAYER -->
 		<mod:findName type="aug" name="NO_GHOST_PLAYER">
 			<mod:findLike type="statBoosts">
 				<mod:findLike type="statBoost">
@@ -9724,7 +9800,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 	</mod:findLike>
 
 	<!--SHELL GAS IMMUNITY -->
-	<mod:findLike type ="augments"> <!-- TOXIC_GAS -->
+	<mod:findLike type="augments"> <!-- TOXIC_GAS -->
 		<mod:findName type="aug" name="TOXIC_GAS">
 			<mod:findLike type="statBoosts">
 				<mod:findLike type="statBoost">
@@ -9737,7 +9813,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</mod:findName>
 	</mod:findLike>
 
-	<mod:findLike type ="augments"> <!-- LOCKED_TOXIC_GAS -->
+	<mod:findLike type="augments"> <!-- LOCKED_TOXIC_GAS -->
 		<mod:findName type="aug" name="LOCKED_TOXIC_GAS">
 			<mod:findLike type="statBoosts">
 				<mod:findLike type="statBoost">
@@ -9750,7 +9826,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</mod:findName>
 	</mod:findLike>
 
-	<mod:findLike type ="augments"> <!-- RADIANT_GAS -->
+	<mod:findLike type="augments"> <!-- RADIANT_GAS -->
 		<mod:findName type="aug" name="RADIANT_GAS">
 			<mod:findLike type="statBoosts">
 				<mod:findLike type="statBoost">
@@ -9763,7 +9839,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</mod:findName>
 	</mod:findLike>
 
-	<mod:findLike type ="augments"> <!--NANITE_GAS -->
+	<mod:findLike type="augments"> <!--NANITE_GAS -->
 		<mod:findName type="aug" name="NANITE_GAS">
 			<mod:findLike type="statBoosts">
 				<mod:findLike type="statBoost">
@@ -9776,7 +9852,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</mod:findName>
 	</mod:findLike>
 
-	<mod:findLike type ="augments"> <!-- LOCKED_NANITE_GAS -->
+	<mod:findLike type="augments"> <!-- LOCKED_NANITE_GAS -->
 		<mod:findName type="aug" name="LOCKED_NANITE_GAS">
 			<mod:findLike type="statBoosts">
 				<mod:findLike type="statBoost">
@@ -9789,7 +9865,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</mod:findName>
 	</mod:findLike>
 
-	<mod:findLike type ="augments"> <!-- LOCKED_REGEN_GAS -->
+	<mod:findLike type="augments"> <!-- LOCKED_REGEN_GAS -->
 		<mod:findName type="aug" name="LOCKED_REGEN_GAS">
 			<mod:findLike type="statBoosts">
 				<mod:findLike type="statBoost">
@@ -9804,7 +9880,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 
 
 	<!--MURDER BOT IMMUNITY -->
-	<mod:findLike type ="augments"> <!-- NANOBOT_DEFENSE_SYSTEM -->
+	<mod:findLike type="augments"> <!-- NANOBOT_DEFENSE_SYSTEM -->
 		<mod:findName type="aug" name="NANOBOT_DEFENSE_SYSTEM">
 			<mod:findLike type="statBoosts">
 				<mod:findLike type="statBoost">
@@ -9817,7 +9893,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</mod:findName>
 	</mod:findLike>
 
-	<mod:findLike type ="augments"> <!-- LOCKED_NANOBOT_DEFENSE_SYSTEM -->
+	<mod:findLike type="augments"> <!-- LOCKED_NANOBOT_DEFENSE_SYSTEM -->
 		<mod:findName type="aug" name="LOCKED_NANOBOT_DEFENSE_SYSTEM">
 			<mod:findLike type="statBoosts">
 				<mod:findLike type="statBoost">
@@ -12406,7 +12482,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 
 		<!--
-		<aug name = "TWISTED_SUFFOCATION_ACCELERATOR">
+		<aug name="TWISTED_SUFFOCATION_ACCELERATOR">
 
 			<locked/>
 		</aug>
@@ -13465,7 +13541,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 
 	<!--APPENDS ENGI TWINS TO THE VANILLA ENGI UPGRADE WHITELISTS!  -->
 
-	<mod:findLike type ="augments"> <!-- LAB_DEFENDER_REPAIRS -->
+	<mod:findLike type="augments"> <!-- LAB_DEFENDER_REPAIRS -->
 		<mod:findName type="aug" name="LAB_DEFENDER_REPAIRS">
 			<mod:findLike type="statBoosts">
 				<mod:findLike type="statBoost">
@@ -13480,7 +13556,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 
 	<!--APPENDS PLATED AND FORGEMASTER TO OSMIAN BATTERIES  -->
 
-	<mod:findLike type ="augments"> <!-- OSMIAN_BATTERIES -->
+	<mod:findLike type="augments"> <!-- OSMIAN_BATTERIES -->
 		<mod:findName type="aug" name="OSMIAN_BATTERIES">
 			<mod:findLike type="statBoosts">
 				<mod:findLike type="statBoost" name="powerCharges">
@@ -13495,7 +13571,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 
 	<!--Append for fake drones to be affected augments from engineer arty -->
 
-	<mod:findLike type ="augments"> <!--engineer lab-->
+	<mod:findLike type="augments"> <!--engineer lab-->
 		<mod:findName type="aug" name="LAB_ENGINEER_DRONES">
 			<mod:findLike type="statBoosts">
 				<mod-append:statBoost name="statBoost">
@@ -13559,7 +13635,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</mod:findLike>
 		</mod:findName>
 	</mod:findLike>
-	<mod:findLike type ="augments"> <!--Ex drone booster-->
+	<mod:findLike type="augments"> <!--Ex drone booster-->
 		<mod:findName type="aug" name="EX_DRONE_SPEED">
 			<mod:findLike type="statBoosts">
 				<!--fake drone boosting-->
@@ -13651,7 +13727,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</mod:findLike>
 		</mod:findName>
 	</mod:findLike>
-	<mod:findLike type ="augments"> <!--internal drone booster-->
+	<mod:findLike type="augments"> <!--internal drone booster-->
 		<mod:findName type="aug" name="UPG_DRONE_SPEED">
 			<mod:findLike type="statBoosts">
 				<!--fake drone boosting-->
@@ -15331,6 +15407,11 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<variable name="overcharmed_active" op="set" val="0"/>
 		<variable name="overcharmed_charges" op="set" val="0"/>
 		<variable name="fm_hull_upgrade_points" op="set" var="FM_HULL_UPGRADE_POINTS"/>
+		<req name="FM_MODULAR_HULL_VENGEANCE_COUNT" type="sum">
+			<name>FM_MODULAR_HULL_VENGEANCE1</name>
+			<name>FM_MODULAR_HULL_VENGEANCE2</name>
+			<name>FM_MODULAR_HULL_VENGEANCE3</name>
+		</req>
 		<req name="FM_HULL_UPGRADE_POINTS" type="sum">
 
 			<req mult="-2" type="sum">
