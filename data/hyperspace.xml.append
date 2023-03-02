@@ -1940,17 +1940,6 @@
 
 
 	<events>   <!-- LASER WEAPON LIST Reqs! -->
-		<req name="SLAVER_REP_2_OFFER" type="sum"> 
-			<req lvl="2">
-				<name>REEPTATION_SLAVER_COMB</name>
-			</req>
-			<req lvl="1" mult="-1">
-				<name>NEG_SLAVER_REP</name>
-			</req>
-		</req>
-		<req name="NEG_SLAVER_REP" type="sum" mult="-1">
-			<name>rep_slaver</name>
-		</req>
 		<!-- LASER WEAPON LIST! -->
 		<req name="FM_LASER_ANOMALY_1_LIST" type="all"> <!-- Frost Laser I + Anti-Bio Laser -->
 			<name>LASER_BIO</name>
