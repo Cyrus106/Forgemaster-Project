@@ -15155,8 +15155,8 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<function name="AUTO_COOLDOWN" value="-0.40" useForReqs="false" warning="false"/>
 			<statBoosts>
 				<statBoost name="damageMultiplier">
-					<boostType>FLAT</boostType>
-					<amount>0.25</amount>
+					<boostType>MULT</boostType>
+					<amount>1.25</amount>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<priority>0</priority>
@@ -15185,8 +15185,8 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					</systemPowerScaling>
 				</statBoost>
 				<statBoost name="damageTakenMultiplier">
-					<boostType>FLAT</boostType>
-					<amount>0.05</amount>
+					<boostType>MULT</boostType>
+					<amount>0.95</amount>
 					<shipTarget>PLAYER_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<priority>0</priority>

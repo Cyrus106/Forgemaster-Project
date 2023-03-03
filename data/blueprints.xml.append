@@ -11687,7 +11687,7 @@
 		<descriptionOverride>A combination of Energy and Pinpoint technology. Deals no system damage, but deals 2 ion damage on a room hit and uses no power. May start fires.
 
 			Stats:
-			Required Power: 1
+			Requires no power
 			Charge Time: 14 seconds
 
 			Beam Length: 1
@@ -11703,7 +11703,7 @@
 			Buy/Sell Price: 120~/60~
 		</descriptionOverride>
 		<tooltip>One damage per room beam weapon</tooltip>
-		<tooltipOverride>Required Power: 1
+		<tooltipOverride>Requires no power
 			Charge Time: 14 seconds
 
 			Beam Length: 1
