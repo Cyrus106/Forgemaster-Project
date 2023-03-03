@@ -8135,7 +8135,7 @@
 			Shot Radius: 35
 			Shots Per Charge: 3
 
-			Total System Damage: 1
+			Total System Damage: 1 (Pops shields)
 
 			Fire Chance: 20%
 			Breach Chance: 10% (Adjusted: 8%)
@@ -8223,7 +8223,7 @@
 			Shot Radius: 35
 			Shots Per Charge: 5
 
-			Total System Damage: 1
+			Total System Damage: 1 (Pops shields)
 
 			Fire Chance: 20%
 			Breach Chance: 10% (Adjusted: 8%)
@@ -9404,6 +9404,25 @@
 		<short>'Hellflash'</short>
 		<tip>tip_chain_laser</tip>
 		<desc>Some Renegades just want to watch the Multiverse burn.</desc>
+		<descriptionOverride>Some Renegades just want to watch the Multiverse burn.
+			
+			Stats:
+			Required Power: 3
+			Charge Time: 11 seconds
+			Chain Effect: Decrease cooldown by 2
+			Chain Cooldown Cap: 1 (5 chains)
+
+			Shot Radius: 75
+			Shots Per Charge: 1
+
+			Base System Damage: 1 (Pops Shields)
+			Total Crew Damage: 30
+
+			Fire Chance: 70%
+			Stun Chance: 20% (3 seconds long)
+
+			Buy/Sell Price: 190~/95~
+		</descriptionOverride>
 		<tooltip>Cooldown drops the more it fires.</tooltip>
 		<radius>75</radius>
 		<damage>1</damage>
