@@ -551,6 +551,7 @@
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED4"><!--slug-->
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<hiddenAug>LOCKED_SLUG_GEL</hiddenAug>
+			<hiddenAug>SHIP_SLUG</hiddenAug>
 			<hiddenAug>SHIP_TWISTED_KLEPTOCRACY</hiddenAug>
 			<crewLimit>10</crewLimit>
 			<customReactor maxLevel="35"/>
