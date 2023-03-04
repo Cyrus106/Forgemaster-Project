@@ -75,13 +75,11 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_3" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>-->
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<choice hidden="true" req="HID_BRAIN_DONATION" max_group="1" blue="false">
-			<text name="text_HAVE_BRAIN_DONATION">You already have the Mind Clouder.</text>
+			<text id="text_HAVE_BRAIN_DONATION"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_BRAIN_DONATION">Internalize the Mind Clouder...
-				[Your crew is now immune to mind control effects.]
-			</text>
+			<text id="text_GET_BRAIN_DONATION"/>
 			<event name="GET_BRAIN_DONATION">
 				<hiddenAug>HID_BRAIN_DONATION</hiddenAug>
 				<text>You retrieve the Ambrosia lab and begin replicating the Ambrosia drug, then make certain to dole it out to all of your crew. </text>
@@ -110,11 +108,11 @@
 			</event>
 		</choice>
 		<choice hidden="false" req="scrapped_clan" max_group="2" blue="false">
-			<text name="text_SCRAPPED_BRAIN_DONATION">You already scrapped the Mind Clouder.</text>
+			<text id="text_SCRAPPED_BRAIN_DONATION"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text name="text_SCRAP_BRAIN_DONATION">Scrap the Mind Clouder.</text>
+			<text id="text_SCRAP_BRAIN_DONATION"/>
 			<event name="SCRAP_BRAIN_DONATION">
 				<text>You scrap the Mind Clouder for valuable resources.</text>
 				<item_modify>
@@ -220,13 +218,11 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_3" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>-->
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<choice hidden="true" req="HID_DEATH_VESTS2" max_group="1" blue="false">
-			<text name="text_HAVE_DEATH_VESTS2">You already have the Twilight Vests.</text>
+			<text id="text_HAVE_DEATH_VESTS2"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_DEATH_VESTS2">Internalize the Twilight Vests...
-				[Adds a death effect to all non-Zoltan allied crew, making them explode for 45 crew damage against enemies, and sometimes start fires.]
-			</text>
+			<text id="text_GET_DEATH_VESTS2"/>
 			<event name="GET_DEATH_VESTS2">
 				<text>You retrieve the Twlight Vests and force all crew to put them on. Strangely, none resist or argue, as if hypnotized by the vest's aura. </text>
 				<choice hidden="true">
@@ -249,11 +245,11 @@
 			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_dusk" max_group="2" blue="false">
-			<text name="text_SCRAPPED_DEATH_VESTS2">You already scrapped the Twlight Vests.</text>
+			<text id="text_SCRAPPED_DEATH_VESTS2"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text name="text_SCRAP_DEATH_VESTS2">Scrap the Twilight Vests.</text>
+			<text id="text_SCRAP_DEATH_VESTS2"/>
 			<event name="SCRAP_DEATH_VESTS2">
 				<text>You scrap the Twilight Vests for valuable resources.</text>
 				<item_modify>
@@ -347,13 +343,11 @@
 		<unlockCustomShip shipReq="VANILLA_SHIP_ENGI_2" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
 		<unlockCustomShip shipReq="VANILLA_SHIP_ENGI_3" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>-->
 		<choice hidden="true" req="HID_UPG_DRONE_COOLDOWN" max_group="1" blue="false">
-			<text name="text_HAVE_UPG_DRONE_COOLDOWN">You already have the Drone Booster "Kai".</text>
+			<text id="text_HAVE_UPG_DRONE_COOLDOWN"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_UPG_DRONE_COOLDOWN">Internalize the Drone Booster "Kai"...
-				[All Drone active abilities recharge twice as fast!]
-			</text>
+			<text id="text_GET_UPG_DRONE_COOLDOWN"/>
 			<event name="GET_UPG_DRONE_COOLDOWN">
 				<hiddenAug>HID_UPG_DRONE_COOLDOWN</hiddenAug>
 				<text>You install the Drone Booster "Kai" into your internal ship systems. </text>
@@ -376,11 +370,11 @@
 			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_engi" max_group="2" blue="false">
-			<text name="text_SCRAPPED_UPG_DRONE_COOLDOWN">You already scrapped the Drone Booster "Kai".</text>
+			<text id="text_SCRAPPED_UPG_DRONE_COOLDOWN"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text name="text_SCRAP_UPG_DRONE_COOLDOWN">Scrap the Drone Booster "Kai".</text>
+			<text id="text_SCRAP_UPG_DRONE_COOLDOWN"/>
 			<event name="SCRAP_UPG_DRONE_COOLDOWN">
 				<text>You scrap the Drone Booster "Kai" for valuable resources.</text>
 				<item_modify>
@@ -479,13 +473,11 @@
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS_3" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>-->
 		<choice hidden="true" req="HID_TEA_EARL" max_group="1" blue="false">
-			<text name="text_HAVE_TEA_EARL">You already have the Earl Grey tea.</text>
+			<text>You already have the Earl Grey tea.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_TEA_EARL">Internalize the Earl Grey tea...
-				[Delicious tea even her royal highness would enjoy. Gives all allied Mantis +20% repair speed and +15 max health.]
-			</text>
+			<text id="text_GET_TEA_EARL"/>
 			<event name="GET_TEA_EARL">
 				<hiddenAug>HID_TEA_EARL</hiddenAug>
 				<text>You add Earl Grey tea into your ship's cafeteria. </text>
@@ -504,15 +496,15 @@
 		</choice>
 
 		<choice hidden="false" req="HID_TEA_EARL" max_group="2" blue="false">
-			<text id="text_HAVE_TEA_EARL"/>
+			<text>You already have the Earl Grey tea.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_freemantis" max_group="2" blue="false">
-			<text name="text_SCRAPPED_TEA_EARL">You already scrapped the Earl Grey tea.</text>
+			<text>You already scrapped the Earl Grey tea.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text name="text_SCRAP_TEA_EARL">Scrap the Earl Grey tea.</text>
+			<text>Scrap the Earl Grey tea.</text>
 			<event name="SCRAP_TEA_EARL">
 				<text>You scrap the Earl Grey tea for valuable resources.</text>
 				<item_modify>
@@ -539,7 +531,7 @@
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS_3" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>-->
 		<choice hidden="true" req="HID_TEA_EARL" max_group="1" blue="false">
-			<text id="text_HAVE_TEA_EARL"/>
+			<text>You already have the Earl Grey tea.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -548,15 +540,15 @@
 		</choice>
 
 		<choice hidden="false" req="HID_TEA_EARL" max_group="2" blue="false">
-			<text id="text_HAVE_TEA_EARL"/>
+			<text>You already have the Earl Grey tea.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_freemantis" max_group="2" blue="false">
-			<text id="text_SCRAPPED_TEA_EARL"/>
+			<text>You already scrapped the Earl Grey tea.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text id="text_SCRAP_TEA_EARL"/>
+			<text>Scrap the Earl Grey tea.</text>
 			<event load="SCRAP_TEA_EARL"/>
 		</choice>
 	</event>
@@ -606,13 +598,11 @@
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN_3" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>-->
 		<choice hidden="true" req="HID_REALITY_RELOADER" max_group="1" blue="false">
-			<text name="text_HAVE_REALITY_RELOADER">You already have the Reality Reloader.</text>
+			<text>You already have the Reality Reloader.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_REALITY_RELOADER">Internalize the Reality Reloader...
-				[Boosts weapon cooldown and shield recharge rates by 15%.]
-			</text>
+			<text id="text_GET_REALITY_RELOADER"/>
 			<event name="GET_REALITY_RELOADER">
 				<hiddenAug>HID_REALITY_RELOADER</hiddenAug>
 				<text>You add the Reality Reloader into your ship's internal systems. </text>
@@ -632,15 +622,15 @@
 		</choice>
 
 		<choice hidden="false" req="HID_REALITY_RELOADER" max_group="2" blue="false">
-			<text id="text_HAVE_REALITY_RELOADER"/>
+			<text>You already have the Reality Reloader.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_lostsun" max_group="2" blue="false">
-			<text name="text_SCRAPPED_REALITY_RELOADER">You already scrapped the Reality Reloader.</text>
+			<text>You already scrapped the Reality Reloader.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text name="text_SCRAP_REALITY_RELOADER">Scrap the Reality Reloader.</text>
+			<text>Scrap the Reality Reloader.</text>
 			<event name="SCRAP_REALITY_RELOADER">
 				<text>You scrap the Reality Reloader for valuable resources.</text>
 				<item_modify>
@@ -666,7 +656,7 @@
 		<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN_2" silent="false">PLAYER_SHIP_TWISTED3_2</unlockCustomShip>
 
 		<choice hidden="true" req="HID_REALITY_RELOADER" max_group="1" blue="false">
-			<text id="text_HAVE_REALITY_RELOADER"/>
+			<text>You already have the Reality Reloader.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -675,15 +665,15 @@
 		</choice>
 
 		<choice hidden="false" req="HID_REALITY_RELOADER" max_group="2" blue="false">
-			<text id="text_HAVE_REALITY_RELOADER"/>
+			<text>You already have the Reality Reloader.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="scrapped_lostsun" max_group="2" blue="false">
-			<text id="text_SCRAPPED_REALITY_RELOADER"/>
+			<text>You already scrapped the Reality Reloader.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
-			<text id="text_SCRAP_REALITY_RELOADER"/>
+			<text>Scrap the Reality Reloader.</text>
 			<event load="SCRAP_REALITY_RELOADER"/>
 		</choice>
 	</event>
@@ -860,9 +850,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_MANTIS_RELOADER">Internalize the Pheromone Accelerator...
-				[Lowers Mantis ability cooldown rate by 20%. Reduces all damage taken by your Mantis crew by 8%.]
-			</text>
+			<text id="text_GET_MANTIS_RELOADER"/>
 			<event name="GET_MANTIS_RELOADER">
 				<hiddenAug>HID_MANTIS_RELOADER</hiddenAug>
 				<text>You add the Pheromone Accelerator into your ship's internal systems. </text>
@@ -982,9 +970,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_FM_UPG_AETHER_SHIELDS">Internalize the Aether Ascension Shields...
-				[Effects: Provides a bonus 6 energy shield points which will stack with other energy shields.]
-			</text>
+			<text name="text_GET_FM_UPG_AETHER_SHIELDS"/>
 			<event name="GET_FM_UPG_AETHER_SHIELDS">
 				<hiddenAug>HID_FM_UPG_AETHER_SHIELDS</hiddenAug>
 				<text>You add the Aether Ascension Shields into your ship's internal shields systems. </text>
@@ -1115,9 +1101,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_FREEDOM_ROCK">Internalize the Rockmen Relic of Freedom...
-				[This tiny statue invigorates your rockmen crew, they gain 1.8x movement speed!]
-			</text>
+			<text name="text_GET_FREEDOM_ROCK"/>
 			<event name="GET_FREEDOM_ROCK">
 				<hiddenAug>HID_FREEDOM_ROCK</hiddenAug>
 				<text>You add the Rockmen Relic of Freedom into your ship's internal systems. </text>
@@ -1246,9 +1230,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_AUG_MAGATAMA">Internalize the Magatama...
-				[This tiny charm provides 40% heal speed and 5% damage resist for all of your crew.]
-			</text>
+			<text name="text_GET_AUG_MAGATAMA"/>
 			<event name="GET_AUG_MAGATAMA">
 				<hiddenAug>AUG_MAGATAMA</hiddenAug>
 				<text>You add the Magatama into your ship's armory systems. </text>
@@ -1412,9 +1394,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_MALBORO_RED">Internalize the Malboro Quasar...
-				[These hyper-addictive cigarettes somehow boost your vitality, but give you horrible lung problems. Seems healthy! ...if you're a fool that is. 2x max health for all slugs, but 3x suffocation damage taken.]
-			</text>
+			<text name="text_GET_MALBORO_RED"/>
 			<event name="GET_MALBORO_RED">
 				<hiddenAug>HID_MALBORO_RED</hiddenAug>
 				<text>You add the Malboro Quasar into your ship's ventilation system (why??). </text>
@@ -1636,9 +1616,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_LAB_ZOLTAN_LIMIT_RELEASE">Internalize the Limit Release...
-				[Active Ability: Zoltans take 40% reduced damage and deal 1.3x increased damage. They do not supply power while this is active.]
-			</text>
+			<text name="text_GET_LAB_ZOLTAN_LIMIT_RELEASE"/>
 			<event name="GET_LAB_ZOLTAN_LIMIT_RELEASE">
 				<text>You add the Limit Release into your ship's armory. </text>
 				<choice hidden="true">
@@ -1893,9 +1871,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_UPG_DRONE_SPEED_2">Internalize the Drone Boost MK II...
-				[Your drones gain tripled movement and a 50% boost to combat/sabotage damage and repair/extinguishing speed. Stacks with other boosters.]
-			</text>
+			<text name="text_GET_UPG_DRONE_SPEED_2"/>
 			<event name="GET_UPG_DRONE_SPEED_2">
 				<hiddenAug>HID_UPG_DRONE_SPEED_2</hiddenAug>
 				<text>You add the Drone Boost MK II into your ship's internal systems. </text>
@@ -2014,9 +1990,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_FIRE_HEART">Internalize the Scrapmetal Fireheart...
-				["Fuel the fires, Feel the heat!" All normal Lanius crew heal from fire at a rate of 3 hp/s, have a slower oxygen drain(70% reduced), and deal 20% less combat damage.]
-			</text>
+			<text name="text_GET_FIRE_HEART"/>
 			<event name="GET_FIRE_HEART">
 				<hiddenAug>HID_FIRE_HEART</hiddenAug>
 				<text>You add the Scrapmetal Fireheart into your ship's armory systems. </text>
@@ -2201,9 +2175,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_GOZER_FRIDGE">Internalize Gozer's Fridge...
-				[Your Ghost crew can no longer phase through walls, but they feel incredibly durable! All Ghosts in your crew gain 70% max health and 30% movement speed.]
-			</text>
+			<text name="text_GET_GOZER_FRIDGE"/>
 			<event name="GET_GOZER_FRIDGE">
 				<hiddenAug>HID_GOZER_FRIDGE</hiddenAug>
 				<text>You add Gozer's Fridge into your ship's cafeteria. </text>
@@ -2358,9 +2330,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_UPG_WEAPONS_REPLICATOR_2">Internalize the Twisted Ammo Fabricator...
-				[Effects: Has 60% chance to not use a missile when shooting an ammo consuming weapon.]
-			</text>
+			<text name="text_GET_UPG_WEAPONS_REPLICATOR_2"/>
 			<event name="GET_UPG_WEAPONS_REPLICATOR_2">
 				<hiddenAug>HID_UPG_WEAPONS_REPLICATOR_2</hiddenAug>
 				<text>You add the Twisted Ammo Fabricator into your ship's internal systems. </text>
@@ -2650,9 +2620,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_GOLDEN_TUCO">Internalize the Golden Tuco...
-				[This limited edition Tuco's Child Casino and Gardening Emporium golden figurine makes your crew feel warm and fuzzy inside. Provides 30% active ability cooldown reduction to all of your crew (except Mantis, Mantis HATE figurines).]
-			</text>
+			<text name="text_GET_GOLDEN_TUCO"/>
 			<event name="GET_GOLDEN_TUCO">
 				<hiddenAug>HID_GOLDEN_TUCO</hiddenAug>
 				<text>You add the Golden Tuco into your ship's recreation room decor. </text>
@@ -2819,9 +2787,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_DEPRESSION_EMITTER">Internalize the Depression Emitter...
-				[Emits a depression aura that slows all enemy movement and repair speed by 20%.]
-			</text>
+			<text name="text_GET_DEPRESSION_EMITTER"/>
 			<event name="GET_DEPRESSION_EMITTER">
 				<hiddenAug>HID_DEPRESSION_EMITTER</hiddenAug>
 				<text>You add the Depression Emitter into your ship's internal systems. </text>

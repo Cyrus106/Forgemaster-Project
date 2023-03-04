@@ -87,3 +87,66 @@
 <text name="text_CREATE_FM_BOMB_CRYSTAL_FIRE_1">"Ah, a discerning eye you have there! That weapon's one of the more unique findings in my collection." Alastair signals a Plated to bring him a large, shaped, ingot of crystal, which he places on the center of his holo-forge and begins to heat.</text>
 <text name="text_CREATE_FM_BOMB_CRYSTAL_FIRE_2">"It was actually a creation of the Crystal scientist Stryven. She was banished by their Empire for flagrantly violating their codes regarding wartime ethics, but that didn't slow her down. From what I've gathered reading what little she kept in writing, her belief was that all things should be able to die - no creature deserved to be free from the fear of death. So she designed this." Alastair gestures to the crystal ingot, which has begun to lose its form and start melting in the intense heat of the forge.</text>
 <text name="text_CREATE_FM_BOMB_CRYSTAL_FIRE_3"> "Created a reactive form of crystal capable of latching onto things and burning through them in a heartbeat. Tricky to work with, too - I can't shape it with my hands like I usually do, or it'll melt right through my skin, stone though it is. How do I do it, you ask?" Alastair winks. "Trade secret, lad. It'll be ready in a moment." A few minutes later, a dangerous-looking crystal-infused explosive is transferred to your ship. This will prove useful indeed.</text>
+
+<!--TWISTED FIGHTS-->
+<text name="text_HAVE_BRAIN_DONATION">You already have the Mind Clouder.</text>
+<text name="text_GET_BRAIN_DONATION">Internalize the Mind Clouder...
+  [Your crew is now immune to mind control effects.]
+</text>
+<text name="text_SCRAPPED_BRAIN_DONATION">You already scrapped the Mind Clouder.</text>
+<text name="text_SCRAP_BRAIN_DONATION">Scrap the Mind Clouder.</text>
+<text name="text_HAVE_DEATH_VESTS2">You already have the Twilight Vests.</text>
+<text name="text_GET_DEATH_VESTS2">Internalize the Twilight Vests...
+  [Adds a death effect to all non-Zoltan allied crew, making them explode for 45 crew damage against enemies, and sometimes start fires.]
+</text>
+<text name="text_SCRAPPED_DEATH_VESTS2">You already scrapped the Twlight Vests.</text>
+<text name="text_SCRAP_DEATH_VESTS2">Scrap the Twilight Vests.</text>
+<text name="text_HAVE_UPG_DRONE_COOLDOWN">You already have the Drone Booster "Kai".</text>
+<text name="text_GET_UPG_DRONE_COOLDOWN">Internalize the Drone Booster "Kai"...
+  [All Drone active abilities recharge twice as fast!]
+</text>
+<text name="text_SCRAPPED_UPG_DRONE_COOLDOWN">You already scrapped the Drone Booster "Kai".</text>
+<text name="text_SCRAP_UPG_DRONE_COOLDOWN">Scrap the Drone Booster "Kai".</text>
+
+<text name="text_GET_TEA_EARL">Internalize the Earl Grey tea...
+  [Delicious tea even her royal highness would enjoy. Gives all allied Mantis +20% repair speed and +15 max health.]
+</text>
+<text name="text_GET_REALITY_RELOADER">Internalize the Reality Reloader...
+  [Boosts weapon cooldown and shield recharge rates by 15%.]
+</text>
+<text name="text_GET_MANTIS_RELOADER">Internalize the Pheromone Accelerator...
+  [Lowers Mantis ability cooldown rate by 20%. Reduces all damage taken by your Mantis crew by 8%.]
+</text>
+<text name="text_GET_FM_UPG_AETHER_SHIELDS">Internalize the Aether Ascension Shields...
+  [Effects: Provides a bonus 6 energy shield points which will stack with other energy shields.]
+</text>
+<text name="text_GET_FREEDOM_ROCK">Internalize the Rockmen Relic of Freedom...
+  [This tiny statue invigorates your rockmen crew, they gain 1.8x movement speed!]
+</text>
+<text name="text_GET_AUG_MAGATAMA">Internalize the Magatama...
+  [This tiny charm provides 40% heal speed and 5% damage resist for all of your crew.]
+</text>
+<text name="text_GET_MALBORO_RED">Internalize the Malboro Quasar...
+  [These hyper-addictive cigarettes somehow boost your vitality, but give you horrible lung problems. Seems healthy! ...if you're a fool that is. 2x max health for all slugs, but 3x suffocation damage taken.]
+</text>
+<text name="text_GET_LAB_ZOLTAN_LIMIT_RELEASE">Internalize the Limit Release...
+  [Active Ability: Zoltans take 40% reduced damage and deal 1.3x increased damage. They do not supply power while this is active.]
+</text>
+<text name="text_GET_UPG_DRONE_SPEED_2">Internalize the Drone Boost MK II...
+  [Your drones gain tripled movement and a 50% boost to combat/sabotage damage and repair/extinguishing speed. Stacks with other boosters.]
+</text>
+<text name="text_GET_FIRE_HEART">Internalize the Scrapmetal Fireheart...
+  ["Fuel the fires, Feel the heat!" All normal Lanius crew heal from fire at a rate of 3 hp/s, have a slower oxygen drain(70% reduced), and deal 20% less combat damage.]
+</text>
+<text name="text_GET_GOZER_FRIDGE">Internalize Gozer's Fridge...
+  [Your Ghost crew can no longer phase through walls, but they feel incredibly durable! All Ghosts in your crew gain 70% max health and 30% movement speed.]
+</text>
+<text name="text_GET_UPG_WEAPONS_REPLICATOR_2">Internalize the Twisted Ammo Fabricator...
+  [Effects: Has 60% chance to not use a missile when shooting an ammo consuming weapon.]
+</text>
+<text name="text_GET_GOLDEN_TUCO">Internalize the Golden Tuco...
+  [This limited edition Tuco's Child Casino and Gardening Emporium golden figurine makes your crew feel warm and fuzzy inside. Provides 30% active ability cooldown reduction to all of your crew (except Mantis, Mantis HATE figurines).]
+</text>
+<text name="text_GET_DEPRESSION_EMITTER">Internalize the Depression Emitter...
+  [Emits a depression aura that slows all enemy movement and repair speed by 20%.]
+</text>
