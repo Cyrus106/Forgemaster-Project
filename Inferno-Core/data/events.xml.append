@@ -35,6 +35,19 @@
   <event name="ADDON_TCC_INFO">
 		<text id="info_addon_tcc"/>
 	</event>
+  <event name="ADDON_PIP_INFO">
+		<text id="info_addon_pip"/>
+    <choice>
+      <text>Continue...</text>
+      <event/>
+    </choice>
+    <choice>
+      <text>more info...</text>
+      <event>
+        <loadEvent>PIRACY_INTRO</loadEvent>
+      </event>
+    </choice>
+	</event>
 	<mod:findName type="event" name="START_BEACON_EXPLAIN_LOAD">
 		<mod-append:eventButton name="ADDON_FMCORE">
       <event load="ADDON_FMCORE_INFO"/>
@@ -92,10 +105,18 @@
       <jumpClear>false</jumpClear>
       <noDanger>false</noDanger>
     </mod-append:eventButton>
+    <mod-append:eventButton name="ADDON_PIP">
+      <event load="ADDON_PIP_INFO"/>
+      <image border="0">addons/pip</image>
+      <customLocation x="307" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
+      <tooltip id="addon_hover_pip"/>
+      <jumpClear>false</jumpClear>
+      <noDanger>false</noDanger>
+    </mod-append:eventButton>
     <mod-append:eventButton name="ADDON_TCC">
       <event load="ADDON_TCC_INFO"/>
       <image border="0">addons/tcc</image>
-      <customLocation x="307" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
+      <customLocation x="331" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
       <tooltip id="addon_hover_tcc"/>
       <jumpClear>false</jumpClear>
       <noDanger>false</noDanger>
@@ -112,6 +133,7 @@
 		<clearEventButton name="ADDON_FR"/>
 		<clearEventButton name="ADDON_BAG"/>
     <clearEventButton name="ADDON_AA"/>
+    <clearEventButton name="ADDON_PIP"/>
     <clearEventButton name="ADDON_TCC"/>
 		<loadEvent>FM_CORE_RESET_BUTTONS_2</loadEvent>
 	</event>
@@ -198,10 +220,18 @@
       <jumpClear>false</jumpClear>
       <noDanger>false</noDanger>
     </eventButton>
+    <eventButton name="ADDON_PIP">
+      <event load="ADDON_PIP_INFO"/>
+      <image border="0">addons/pip</image>
+      <customLocation x="307" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
+      <tooltip id="addon_hover_pip"/>
+      <jumpClear>false</jumpClear>
+      <noDanger>false</noDanger>
+    </eventButton>
     <eventButton name="ADDON_TCC">
       <event load="ADDON_TCC_INFO"/>
       <image border="0">addons/tcc</image>
-      <customLocation x="307" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
+      <customLocation x="331" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
       <tooltip id="addon_hover_tcc"/>
       <jumpClear>false</jumpClear>
       <noDanger>false</noDanger>
