@@ -6936,7 +6936,7 @@
 				<loadEvent>FM_MODULAR_HULL_MODULES_VENGEANCE</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE_COUNT" lvl="5" blue="false">
+		<choice req="FM_MODULAR_HULL_VENGEANCE_COUNT" lvl="5" blue="false" hidden="true">
 			<text>You already have 5 vengeance modules installed.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
