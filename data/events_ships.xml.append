@@ -594,7 +594,7 @@
 		</item_modify>
 		<variable name="ach_fm_boss_lostsun" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_LOSTSUN</achievement>
-		<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN_2" silent="false">PLAYER_SHIP_TWISTED3_2</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN_2" silent="false">PLAYER_SHIP_TWISTED3_3</unlockCustomShip>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN_3" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>-->
 		<choice hidden="true" req="HID_REALITY_RELOADER" max_group="1" blue="false">
@@ -653,7 +653,7 @@
 		</item_modify>
 		<variable name="ach_fm_boss_lostsun" op="set" val="1"/>
 		<achievement silent="false">ACH_TWISTED_REN_LOSTSUN</achievement>
-		<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN_2" silent="false">PLAYER_SHIP_TWISTED3_2</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN_2" silent="false">PLAYER_SHIP_TWISTED3_3</unlockCustomShip>
 
 		<choice hidden="true" req="HID_REALITY_RELOADER" max_group="1" blue="false">
 			<text>You already have the Reality Reloader.</text>
