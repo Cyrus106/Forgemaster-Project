@@ -11152,7 +11152,7 @@
 		<sp>1</sp>
 		<sysDamage>0</sysDamage>
 		<persDamage>0</persDamage>
-		<fireChance>3</firechance>
+		<fireChance>3</fireChance>
 		<breachChance>0</breachChance>
 		<cooldown>16</cooldown>
 		<boost>
@@ -11866,7 +11866,7 @@
 				</blackList>
 				<priority>-100</priority>-->
 
-			</statBoost>
+			<!--</statBoost>-->
 		</statBoosts>
 		<image>beam_contact</image>
 		<length>1</length>
