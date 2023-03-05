@@ -6930,17 +6930,15 @@
 				<loadEvent>FM_MODULAR_HULL_MODULES_SHIP</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE_COUNT" lvl="0" max_lvl="4">
+		<choice req="FM_MODULAR_HULL_VENGEANCE_COUNT" lvl="0" max_lvl="4" blue="false">
 			<text>Install vengenace modules.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MODULES_VENGEANCE</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE_COUNT" lvl="5">
+		<choice req="FM_MODULAR_HULL_VENGEANCE_COUNT" lvl="5" blue="false">
 			<text>You already have 5 vengeance modules installed.</text>
-			<event>
-				<loadEvent>FM_MODULAR_HULL_MODULES_VENGEANCE</loadEvent>
-			</event>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<!--<choice>
 			<text>Install more vengenace modules.</text>
