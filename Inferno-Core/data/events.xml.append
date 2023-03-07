@@ -1,5 +1,5 @@
 <FTL><!--Inferno-Core-->
-	<mod:findName type="event" name="START_BEACON_EXPLAIN_LOAD">
+	<mod:findName type="event" name="START_BEACON_REAL">
 		<mod-append:triggeredEvent name="FMCORE_ONJUMP" event="FMCORE_ONJUMP">
 			<jumps amount="1" type="0"/>
 		</mod-append:triggeredEvent>
@@ -48,7 +48,7 @@
       </event>
     </choice>
 	</event>
-	<mod:findName type="event" name="START_BEACON_EXPLAIN_LOAD">
+	<mod:findName type="event" name="START_BEACON_REAL">
 		<mod-append:eventButton name="ADDON_FMCORE">
       <event load="ADDON_FMCORE_INFO"/>
       <image border="0">addons/fmcore</image>

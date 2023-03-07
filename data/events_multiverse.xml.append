@@ -8124,7 +8124,7 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_SYSTEM_ARTILLERY">
-		<text>What do you want to install to the Cloaking system?</text>
+		<text>What do you want to install to the Artillery system?</text>
 		<choice req="FM_MODULAR_HULL_UPDATE_ARTILLERY" lvl="0" max_group="1" blue="false">
 			<text>System Update Module[40~]</text>
 			<event>

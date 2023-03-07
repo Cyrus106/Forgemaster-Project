@@ -1230,7 +1230,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_AUG_MAGATAMA"/>
+			<text id="text_GET_AUG_MAGATAMA"/>
 			<event name="GET_AUG_MAGATAMA">
 				<hiddenAug>AUG_MAGATAMA</hiddenAug>
 				<text>You add the Magatama into your ship's armory systems. </text>
