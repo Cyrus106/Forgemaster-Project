@@ -189,5 +189,9 @@
   		</event>
   	</loadEventList>
   </event>
+  
+  <event name="FM_CRAFT_INFO">
+	<text>Here you can see what recipes you can currently craft</text><!--this could be something to do later....-->
+  </event>
 
 </FTL>

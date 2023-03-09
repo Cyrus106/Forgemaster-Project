@@ -16,6 +16,16 @@
 	</event>
 	<event name="ADDON_FORGEMASTER_INFO">
 		<text id="info_addon_forgmaster"/>
+    <choice>
+      <text id="continue"/>
+      <event/>
+    </choice>
+    <choice req="unique_leah"><!--placeholder-->
+      <text>Check Crafting recipes</text>
+      <event>
+        <loadEvent>FM_CRAFT_INFO</loadEvent>
+      </event>
+    </choice>
 	</event>
 	<event name="ADDON_GB_INFO">
 		<text id="info_addon_gb"/>
@@ -38,7 +48,7 @@
   <event name="ADDON_PIP_INFO">
 		<text id="info_addon_pip"/>
     <choice>
-      <text>Continue...</text>
+      <text id="continue"/>
       <event/>
     </choice>
     <choice>

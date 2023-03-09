@@ -970,7 +970,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_FM_UPG_AETHER_SHIELDS"/>
+			<text id="text_GET_FM_UPG_AETHER_SHIELDS"/>
 			<event name="GET_FM_UPG_AETHER_SHIELDS">
 				<hiddenAug>HID_FM_UPG_AETHER_SHIELDS</hiddenAug>
 				<text>You add the Aether Ascension Shields into your ship's internal shields systems. </text>
@@ -1101,7 +1101,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_FREEDOM_ROCK"/>
+			<text id="text_GET_FREEDOM_ROCK"/>
 			<event name="GET_FREEDOM_ROCK">
 				<hiddenAug>HID_FREEDOM_ROCK</hiddenAug>
 				<text>You add the Rockmen Relic of Freedom into your ship's internal systems. </text>
@@ -1394,7 +1394,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_MALBORO_RED"/>
+			<text id="text_GET_MALBORO_RED"/>
 			<event name="GET_MALBORO_RED">
 				<hiddenAug>HID_MALBORO_RED</hiddenAug>
 				<text>You add the Malboro Quasar into your ship's ventilation system (why??). </text>
@@ -1616,7 +1616,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_LAB_ZOLTAN_LIMIT_RELEASE"/>
+			<text id="text_GET_LAB_ZOLTAN_LIMIT_RELEASE"/>
 			<event name="GET_LAB_ZOLTAN_LIMIT_RELEASE">
 				<text>You add the Limit Release into your ship's armory. </text>
 				<choice hidden="true">
@@ -1871,7 +1871,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_UPG_DRONE_SPEED_2"/>
+			<text id="text_GET_UPG_DRONE_SPEED_2"/>
 			<event name="GET_UPG_DRONE_SPEED_2">
 				<hiddenAug>HID_UPG_DRONE_SPEED_2</hiddenAug>
 				<text>You add the Drone Boost MK II into your ship's internal systems. </text>
@@ -1990,7 +1990,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_FIRE_HEART"/>
+			<text id="text_GET_FIRE_HEART"/>
 			<event name="GET_FIRE_HEART">
 				<hiddenAug>HID_FIRE_HEART</hiddenAug>
 				<text>You add the Scrapmetal Fireheart into your ship's armory systems. </text>
@@ -2175,7 +2175,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_GOZER_FRIDGE"/>
+			<text id="text_GET_GOZER_FRIDGE"/>
 			<event name="GET_GOZER_FRIDGE">
 				<hiddenAug>HID_GOZER_FRIDGE</hiddenAug>
 				<text>You add Gozer's Fridge into your ship's cafeteria. </text>
@@ -2330,7 +2330,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_UPG_WEAPONS_REPLICATOR_2"/>
+			<text id="text_GET_UPG_WEAPONS_REPLICATOR_2"/>
 			<event name="GET_UPG_WEAPONS_REPLICATOR_2">
 				<hiddenAug>HID_UPG_WEAPONS_REPLICATOR_2</hiddenAug>
 				<text>You add the Twisted Ammo Fabricator into your ship's internal systems. </text>
@@ -2620,7 +2620,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_GOLDEN_TUCO"/>
+			<text id="text_GET_GOLDEN_TUCO"/>
 			<event name="GET_GOLDEN_TUCO">
 				<hiddenAug>HID_GOLDEN_TUCO</hiddenAug>
 				<text>You add the Golden Tuco into your ship's recreation room decor. </text>
@@ -2787,7 +2787,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
-			<text name="text_GET_DEPRESSION_EMITTER"/>
+			<text id="text_GET_DEPRESSION_EMITTER"/>
 			<event name="GET_DEPRESSION_EMITTER">
 				<hiddenAug>HID_DEPRESSION_EMITTER</hiddenAug>
 				<text>You add the Depression Emitter into your ship's internal systems. </text>
