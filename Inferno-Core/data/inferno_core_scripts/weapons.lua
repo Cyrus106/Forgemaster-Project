@@ -11,9 +11,7 @@ function(ship, weapon, projectile)
   end
 end)
 
-
-script.on_fire_event(Defines.FireEvents.WEAPON_FIRE,
-function(ship, weapon, projectile)
+local function beam_pierce(_1, _2, projectile)
   local beam_pierce_modifier = ship:GetAugmentationValue("AUG_BEAM_PIERCE")
   if projectile:GetType() == 5 then
     --conditional fix for weapons with negative damage and nonnegative shield piercing
@@ -22,4 +20,7 @@ function(ship, weapon, projectile)
     end
     projectile.damage.iShieldPiercing = projectile.damage.iShieldPiercing + beam_pierce_modifier
   end
-end)
+end
+
+script.on_fire_event(Defines.FireEvents.WEAPON_FIRE, beam_pierce)
+script.on_fire_event(Defines.FireEvents.ARTILLERY_FIRE, beam_pierce)
