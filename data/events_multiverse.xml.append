@@ -630,6 +630,7 @@
 		<currentSector>true</currentSector>
 		<sectorEight>false</sectorEight>
 		<lastStand>false</lastStand>
+		<runFromFleet closest="true"/>
 
 		<beaconType id="map_icon_forgemaster" global="true"> <!--  SPAWNS HIS NODE ON MAP -->
 			<color r="211" g="66" b="38" a="1.0"/>

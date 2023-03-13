@@ -387,7 +387,7 @@
 		</mod-append:customShip>
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED1_2"><!--dusk-->
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
-			<hiddenAug>SHIP_DUSK</hiddenAug>
+			<hiddenAug>SHIP_DUSKBRINGER</hiddenAug>
 			<crewLimit>10</crewLimit>
 			<crew>
 				<zoltan_martyr room="20" name="Frehm" />
@@ -7459,66 +7459,6 @@
 				<repair req="16"/>
 				<combat req="7"/>
 			</skills>
-			<suffocationModifier>0.83</suffocationModifier>
-			<fireDamageMultiplier>0.83</fireDamageMultiplier>
-			<animBase>human</animBase>
-			<deathSounds>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>death1</deathSound>
-				<deathSound>death2</deathSound>
-				<deathSound>humanDeathSpecial</deathSound>
-			</deathSounds>
-			<skills>
-				<piloting req="13"/>
-				<engines req="13"/>
-				<shields req="50"/>
-				<weapons req="58"/>
-				<repair req="16"/>
-				<combat req="7"/>
-			</skills>
 			<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
 			<hasDeathExplosion>true</hasDeathExplosion>
 
@@ -8030,16 +7970,16 @@
 				</statBoost>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
-						<amount>-1</amount>
-						<shipTarget>CURRENT_ROOM</shipTarget>
-						<crewTarget>ENEMIES</crewTarget>
-						<droneTarget>CREW</droneTarget>
-						<boostAnim>pheromones_f</boostAnim>
-						<blackList>
-						    <blueprintList load="LIST_FM_PLSNOEFFECT"/>
-						</blackList>
-						<priority>-100</priority>
-					</statBoost>
+					<amount>-1</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<boostAnim>pheromones_f</boostAnim>
+					<blackList>
+						<blueprintList load="LIST_FM_PLSNOEFFECT"/>
+					</blackList>
+					<priority>-100</priority>
+				</statBoost>
 
 			</passiveStatBoosts>
 
@@ -15633,6 +15573,15 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<req lvl="2" max_lvl="2">
 					<name>FM_HULL_CAPSTONES</name>
 				</req>
+			</req>
+			<req type="all"><!--with BOON-->
+			  <req max_lvl="16">
+			   <name>fm_hull_upgrade_points</name>
+			  </req>
+			  <req lvl="3" max_lvl="3">
+			    <name>FM_HULL_CAPSTONES</name>
+			  </req>
+			  <name>JUDGE_BOON_FM_FORGEARMOR</name>
 			</req>
 			<req type="all"><!--IV-->
 			  <req max_lvl="19">

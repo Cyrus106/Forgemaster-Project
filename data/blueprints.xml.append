@@ -21398,6 +21398,55 @@
 	"a versatile arm capable of grabbing drones and magnetizing debris - additionally, it can grab ripped-off pieces of your hull to deconstruct for shiny golden scrap."-->
 
 </FTL>
+<FTL><!--BOONS-->
+	<!--Theist-->
+	<augBlueprint name="JUDGE_BOON_FM_PLATED">
+		<title>Boon of Plated</title>
+		<desc>Plated crew gain +1 ability charge.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+	
+	<!--Corby-->
+	<augBlueprint name="JUDGE_BOON_FM_FORGEARMOR">
+		<title>Grant of Armoring</title>
+		<desc>Modular Hull has +2 notches.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+	
+	<!--Wakeson-->
+	<augBlueprint name="JUDGE_BOON_FM_FORGEWEAPON">
+		<title>Blessing of Forges</title>
+		<desc>Forgemaster will always spawn.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+	<augBlueprint name="JUDGE_BOON_FM_FORGEMWEAPON_2">
+		<title>Greater Blessing of Forges</title>
+		<desc>Forgemaster has a bigger store.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+	<augBlueprint name="JUDGE_BOON_FM_ANCWEAPON">
+		<title>Blessing of Foolhardy</title>
+		<desc>Ancagalon Crystals take 50% less damage.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+	<augBlueprint name="JUDGE_BOON_FM_TERMINUS">
+		<title>Blessing of Super Weapons</title>
+		<desc>Your ship and crew stats are increased by 5%.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+	</augBlueprint>
+</FTL>
 <FTL>
 	<augBlueprint name="HID_GOZER_FRIDGE">
 		<title>Gozer's Fridge</title>
