@@ -30,7 +30,7 @@ function()
   end
   local damageChance = math.floor((augValue % 1) * 100)
   local randomNumber = Hyperspace.random32() % 100
-  if randomNumber <= damageChance then
+  if randomNumber < damageChance then
     Hyperspace.ships.player:DamageArea(Hyperspace.ships.player:GetRandomRoomCenter(), damage, true)
   end
 end)
