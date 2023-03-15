@@ -11,7 +11,7 @@ function(ship, weapon, projectile)
   end
 end)
 
-local function beam_pierce(_1, _2, projectile)
+local function beam_pierce(ship, _, projectile)
   local beam_pierce_modifier = ship:GetAugmentationValue("AUG_BEAM_PIERCE")
   if projectile:GetType() == 5 then
     --conditional fix for weapons with negative damage and nonnegative shield piercing
