@@ -102,5 +102,5 @@ mods.inferno.cycloShield = function()--as above, but for the shilds augment
   end
 end
 
-script.on_game_event("FMCORE_ONJUMP", false, function() mods.inferno.cycloWeapon() end)
-script.on_game_event("FMCORE_ONJUMP", false, function() mods.inferno.cycloShield() end)
+script.on_game_event("FMCORE_ONJUMP", false, function() mods.inferno:cycloWeapon() end)
+script.on_game_event("FMCORE_ONJUMP", false, function() mods.inferno:cycloShield() end)

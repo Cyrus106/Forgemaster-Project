@@ -14062,7 +14062,7 @@
 		<mod-append:choice req="FM_TERMINUS">
 			<text>Present the Terminus.</text>
 			<event>
-				<text>Wakeson stands silently for a moment. "Renegade. WHERE did you find this THING? It feels most TWISTED and POWERFUL... I shall BLESS you with the BLESSING OF THE TWISTEDNESS. But have PATIENCE. It is not for now, but for LATER!"</text>
+				<text>Wakeson stands silently for a moment. "Why are renegades LIKE THIS... I shall BLESS you with the BLESSING OF TWISTEDNESS regardless. But have PATIENCE. It is not for now, but for LATER!"</text>
 				<metaVariable name="prof_r_boon_fm_terminus" op="set" val="1"/>
 				<achievement silent="false">ACH_BOON_FM_TERMINUS</achievement>
 				<choice hidden="true">
