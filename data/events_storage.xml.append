@@ -9051,7 +9051,7 @@
   </mod:findName>
   <event name="STORAGE_CHECK_SYSTEM_WEAPONS_BEAM_PIERCE">
     <text>You are about to install a beam phase upgrade.
-    [Effects: beam weapon and Artillery shield pierce is increased by 1, can be installed up to 3 times]</text>
+    [Effects: beam weapon and Artillery shield pierce is increased by 1, can be installed up to 2 times]</text>
     <choice req="can_get_beam_pierce" lvl="20" max_group="0" blue="false" hidden="true">
       <text>Perform the upgrade. [Cost: 80~, 9}]</text>
       <event>
@@ -9816,7 +9816,7 @@
 
   </event>
 
-  <mod:findName type="event" name="COMBAT_CHECK_EQUALIZER">
+  <!--<mod:findName type="event" name="COMBAT_CHECK_EQUALIZER">
     <mod:findLike type="choice">
       <mod:selector req="weapons" />
       <mod:findLike type="event">
@@ -9833,5 +9833,5 @@
         </mod-append:triggeredEvent>
       </mod:findLike>
     </mod:findLike>
-  </mod:findName>
+  </mod:findName>-->
 </FTL>

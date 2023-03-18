@@ -8448,7 +8448,7 @@
 		<type>LASER</type>
 		<title>'Absolution' Rift Inducer</title>
 		<short>Absolution</short>
-		<desc>The laboratory that created this was destroyed in a mysterious accident, but the blueprints survived. Unleashes sentient storms of ionic destruction on hit, pierces all shields.</desc>
+		<desc>The laboratory that created this was destroyed in a mysterious accident, but the blueprints survived. Unleashes sentient storms of ionic destruction on hit, pierces two shields.</desc>
 		<damage>1</damage>
 		<sysDamage>-1</sysDamage>
 		<persDamage>-1</persDamage>
@@ -20848,7 +20848,7 @@
 		<stackable>true</stackable>
 	</augBlueprint>
 	
-        <augBlueprint name="TWISTED_SEPARATIST_TELEPORT">
+    <augBlueprint name="TWISTED_SEPARATIST_TELEPORT">
 		<title>Teleportation Network</title>
 		<desc>Alongside dealing 2.7hp/s to all enemy crew on board, allows crew to teleport to other sections of the ship while in certain system rooms.</desc>
 		<cost>50</cost>
@@ -21425,7 +21425,7 @@
 		<rarity>0</rarity>
 		<stackable>false</stackable>
 	</augBlueprint>
-	<augBlueprint name="JUDGE_BOON_FM_FORGEMWEAPON_2">
+	<augBlueprint name="JUDGE_BOON_FM_FORGEWEAPON_2">
 		<title>Greater Blessing of Forges</title>
 		<desc>Forgemaster has a bigger store.</desc>
 		<cost>0</cost>
@@ -21433,14 +21433,14 @@
 		<stackable>false</stackable>
 	</augBlueprint>
 	<augBlueprint name="JUDGE_BOON_FM_ANCWEAPON">
-		<title>Blessing of Foolhardy</title>
-		<desc>Ancagalon Crystals take 50% less damage.</desc>
+		<title>Blessing of the Foolhardy</title>
+		<desc>Ancalagon Crystals take 50% less damage.</desc>
 		<cost>0</cost>
 		<rarity>0</rarity>
 		<stackable>false</stackable>
 	</augBlueprint>
 	<augBlueprint name="JUDGE_BOON_FM_TERMINUS">
-		<title>Blessing of Super Weapons</title>
+		<title>Blessing of Twistedness</title>
 		<desc>Your ship and crew stats are increased by 5%.</desc>
 		<cost>0</cost>
 		<rarity>0</rarity>
@@ -21617,6 +21617,14 @@
 </FTL>
 <!--all the Modular armor augments-->
 <FTL>
+	<augBlueprint name="FM_MODULAR_UPGRADE_EXTRANOTCHES">
+		<title>Modular Hull stabilizer</title>
+		<desc>Increases Upgrade Notch Limit.</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+		<value>1</value>
+	</augBlueprint>
 
   <!-- Modular Hull -->
 	<augBlueprint name="FM_MODULAR_HULL">

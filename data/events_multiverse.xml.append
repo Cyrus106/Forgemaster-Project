@@ -468,7 +468,7 @@
 
 	<event name="FORGEMASTER_DESTRUCTION">
 
-		<clearJumpEvent/>
+		
 		<text>With a tremendous heaving of metal, Alastair's mighty vessel is destroyed. The Forgemaster, one of the most brilliant minds in the universe, dead at your feet. Metaphorically. Your feet are in your ship, and he's out there in space. You retrieve Alastair's seemingly indestructible holo-forge, which will allow you to forge on your own ship.</text>  <!-- His death event -->
 		<unlockCustomShip silent="false">PLAYER_SHIP_FORGEMASTER_1</unlockCustomShip>
 
@@ -483,7 +483,7 @@
 				<choice hidden="true">
 					<text>Save the weapon!</text>
 					<event>
-						<clearJumpEvent/>
+						
 						<removeStore/>
 						<text>You select the weapon container. With some effort, you manage to open it, revealing a glistening weapon of unfamiliar construction. This doesn't appear to be Alastair's work. Where did he get this?</text>
 						<weapon name="LIST_ANCALAGON"/>
@@ -498,13 +498,13 @@
 				<choice hidden="true">
 					<text>Save the drone schematic!</text>
 					<event>
-						<clearJumpEvent/>
+						
 						<removeStore/>
 						<text>You select the drone schematic container. With some effort, you manage to open it, revealing a glistening drone schematic of unfamiliar construction. This doesn't appear to be Alastair's work. Where did he get this?</text>
 						<drone name="LIST_ANCALAGON_DRONES"/>
 						<choice hidden="true">
 							<text>Continue...</text>
-							<clearJumpEvent/>
+							
 							<removeStore/>
 							<event load="FORGEMASTER_DESTRUCTION_AUG"/>
 						</choice>
@@ -515,7 +515,7 @@
 				<choice hidden="true">
 					<text> Blast them both - they should be good scrap if you can salvage them before they vaporize.</text>
 					<event>
-						<clearJumpEvent/>
+						
 						<removeStore/>
 						<text>You blast both containers and quickly scrap them, then return to your ship.</text>
 						<item_modify>
@@ -523,7 +523,7 @@
 						</item_modify>
 						<choice hidden="true">
 							<text>Continue...</text>
-							<clearJumpEvent/>
+							
 							<removeStore/>
 							<event load="FORGEMASTER_DESTRUCTION_AUG"/>
 						</choice>
@@ -537,7 +537,7 @@
 
 	<event name="FORGEMASTER_DESTRUCTION_CREW">
 
-		<clearJumpEvent/>
+		
 		<text>With a final heavy grunt, and a frown on his face, Alastair falls to the ground, dead in his ship. His crew lie dead and scattered around the vessel, their attempts to defend their mentor having failed. The Forgemaster, one of the most brilliant minds in the universe, dead at your feet. You retrieve Alastair's seemingly indestructible holo-forge, which will allow you to forge on your own ship.</text>
 		<unlockCustomShip silent="false">PLAYER_SHIP_FORGEMASTER_1</unlockCustomShip>
 
@@ -552,13 +552,13 @@
 				<choice hidden="true">
 					<text>Save the weapon!</text>
 					<event>
-						<clearJumpEvent/>
+						
 						<removeStore/>
 						<text>You select the weapon container. With some effort, you manage to open it, revealing a glistening weapon of unfamiliar construction. This doesn't appear to be Alastair's work. Where did he get this?</text>
 						<weapon name="LIST_ANCALAGON"/>
 						<choice hidden="true">
 							<text>Continue...</text>
-							<clearJumpEvent/>
+							
 							<removeStore/>
 							<event load="FORGEMASTER_DESTRUCTION_AUG"/>
 						</choice>
@@ -572,9 +572,9 @@
 						<drone name="LIST_ANCALAGON_DRONES"/>
 						<choice hidden="true">
 							<text>Continue...</text>
-							<clearJumpEvent/>
+							
 							<removeStore/>
-							<clearJumpEvent/>
+							
 							<removeStore/>
 							<event load="FORGEMASTER_DESTRUCTION_AUG"/>
 						</choice>
@@ -585,7 +585,7 @@
 				<choice hidden="true">
 					<text> Blast them both - they should be good scrap if you can salvage them before they vaporize.</text>
 					<event>
-						<clearJumpEvent/>
+						
 						<removeStore/>
 						<text>You blast both containers and quickly scrap them, then return to your ship.</text>
 						<item_modify>
@@ -593,7 +593,7 @@
 						</item_modify>
 						<choice hidden="true">
 							<text>Continue...</text>
-							<clearJumpEvent/>
+							
 							<removeStore/>
 							<event load="FORGEMASTER_DESTRUCTION_AUG"/>
 						</choice>
@@ -737,8 +737,12 @@
 		<text>As you make your way through Alastair's ship, you notice a few plated hauling off some incomplete strange-looking drones you haven't seen before. Alastair pipes in after seeing you take notice of the hauls. "Ah-ha Lad, I see you've noticed the new drone designs I've been working on! They aren't quite ready for me to give to you just yet, but I assure you, when they're done you'll be the first to know!"</text>
 	</textList>
 
-
-	<eventList name="FM_FORGEMASTER_TRADES">
+	<event name="FM_FORGEMASTER_TRADES">
+		<loadEventList default="FM_FORGEMASTER_TRADES_REGULAR">
+			<event name="FM_FORGEMASTER_TRADES_BOON" req="JUDGE_BOON_FM_FORGEWEAPON_2"/>
+		</loadEventList>
+	</event>
+	<eventList name="FM_FORGEMASTER_TRADES_REGULAR">
 		<event load="FM_FORGEMASTER_TRADES_NORMAL"/>
 		<event load="FM_FORGEMASTER_TRADES_NORMAL"/>
 		<event load="FM_FORGEMASTER_TRADES_NORMAL"/>
@@ -810,6 +814,30 @@
 			<noDanger>true</noDanger>
 		</eventButton>
 		<store>FM_PLUS_STORE</store>
+	</event>
+	<textList name="TEXT_FORGEMASTER_STORE_BOON" ignoreUnique="true"> <!-- RANDOM DIALOGUE HERE! HE picks one of these everytime you meet him via the phone. DOES NOT load during FORGEMASTER_FIRST_MEETING  You can make AS MANY as you want!!! This goes for any of the text prompts. You can replace them with a <textList> -->
+		<text>"You look like a lad with quite the discerning eye. We've got quite the stock from a rather generous rockman today, what say I show you some weapons that grabbed my attention?"
+			(Note: This will allow you to get a second prompt that lets you craft after shopping!(take note of that Forge button))
+		</text>
+		<text>"My lad! We've been unpacking a generous donation of cargo from a mighty rockman, some of this stock is quite rare indeed! Here, let me show you what we've got."
+			(Note: This will allow you to get a second prompt that lets you craft after shopping!(take note of that Forge button))
+		</text>
+		<text>"Good choice, my lad! We've been finding some rather exotic cargo in this package given to us by a most generous rockman! Some of this stuff looks outright otherworldly, lad - how about I set aside a few for you to purchase if you'd like to? I was told this cargo is for you Renegade folk, after all!"
+			(Note: This will allow you to get a second prompt that lets you craft after shopping!(take note of that Forge button))
+		</text>
+	</textList>
+	<event name="FM_FORGEMASTER_TRADES_BOON"> <!--  BOON STORE -->
+		<text load="TEXT_FORGEMASTER_STORE_BOON"/>
+		<eventButton name="UI_FORGEMASTER_SECOND_PROMPT">
+			<event load="FORGEMASTER_SECOND_PROMPT"/>
+			<image>statusUI/top_forge</image>
+			<location>2</location>
+			<tooltip>Open the Forgemaster menu.</tooltip>
+			<inactiveTooltip>Unavailable: You cannot do this while in danger!</inactiveTooltip>
+			<jumpClear>true</jumpClear>
+			<noDanger>true</noDanger>
+		</eventButton>
+		<store>FM_BOON_STORE</store>
 	</event>
 
 	<event name="FM_RELIC_COLLECTION">
@@ -2624,7 +2652,7 @@
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_ENERGY_DISC"/>
 				<item_modify>
-					<item type="scrap" min="-70" max="-130"/>
+					<item type="scrap" min="-70" max="-70"/>
 				</item_modify>
 				<removeItem>ENERGY_HULL</removeItem>
 				<removeItem>MINELAUNCHER_1</removeItem>
@@ -10000,12 +10028,12 @@
 		</choice>
 	</event>
 
-	<!-- Very important thing to not nerf leah-->
+	<!-- Very important thing to not nerf leah
 	<mod:findName type="event" name="NEMESIS_HACK">
 		<mod-append:triggeredEvent event="RELIMIT_SHIELDS_0" thisFight="true" clearOnJump="true">
 			<time amount="0.1"/>
 		</mod-append:triggeredEvent>
-	</mod:findName>
+	</mod:findName>-->
 
 
 
@@ -13953,6 +13981,106 @@
 		<mod:selector>Decline his offer.</mod:selector>
 		<mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>	</mod:findWithChildLike></mod:findName></FTL>	 -->
 
+<FTL>
+	<mod:findName type="event" name="THE_JUDGES_ZOLTAN">
+		<mod:findWithChildLike type="choice" child-type="text">
+			<mod:selector>We have nothing to show.</mod:selector>
+			<mod:setAttributes max_group="1" req="pilot" blue="false"/>
+		</mod:findWithChildLike>
+		<mod-append:choice req="LIST_CREW_PLATED_STORE">
+			<text>Present a Plated Crew.</text>
+			<event>
+				<text>"The disciples... of the Forgemaster. Forsaking their former lives... to pursue their craft under his tutelage. Who can say... what swayed the loyalty of these? You are clever or powerful to have won their respect... regardless. Well done, traveler. Expect... rewards before your next journey."</text>
+				<metaVariable name="prof_z_boon_fm_plated" op="set" val="1"/>
+				<achievement silent="false">ACH_BOON_FM_PLATED</achievement>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event load="THE_JUDGES_ZOLTAN_ADVICE"/>
+				</choice>
+			</event>
+		</mod-append:choice>
+	</mod:findName>
+	<mod:findName type="event" name="THE_JUDGES_ENGI_REAL">
+		<mod:findWithChildLike type="choice" child-type="text">
+			<mod:selector>We have nothing to show.</mod:selector>
+			<mod:setAttributes max_group="1" req="pilot" blue="false"/>
+		</mod:findWithChildLike>
+		<mod-append:choice req="FM_MODULAR_HULL">
+			<text>Present the Modular Hull.</text>
+			<event>
+				<text>"Armor - for defense! Defense! But -this- is [more] than that! Someone has given you clever t-t-t-tricks to hide in it! For [adaptation] and defense: I p-p-p-provide Grant of Armoring! Grant of Armoring! Save it - for the future!"</text>
+				<metaVariable name="prof_e_boon_fm_forgearmor" op="set" val="1"/>
+				<achievement silent="false">ACH_BOON_FM_FORGEARMOR</achievement>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event load="THE_JUDGES_ENGI_ADVICE"/>
+				</choice>
+			</event>
+		</mod-append:choice>
+	</mod:findName>
+	<mod:findName type="event" name="THE_JUDGES_ROCKMAN_REAL">
+		<mod:findWithChildLike type="choice" child-type="text">
+			<mod:selector>We have nothing to show.</mod:selector>
+			<mod:setAttributes max_group="1" req="pilot" blue="false"/>
+		</mod:findWithChildLike>
+		<mod-append:choice req="FM_WEAPON_LOW_TIER">
+			<text>Present a reguar Forged Weapon.</text>
+			<event>
+				<text>"Hmph. FORGED weaponry? Sure. This is tribute, I suppose. NOT Alastair's best work. He can do BETTER than this. I would think him SHAMEFUL to arm a Renegade with a TOOL so MEASLY. Hmph. I should like to SPEAK to him again. NEVERTHELESS! I shall BLESS you with the BLESSING OF FORGES. But have PATIENCE. It is not for now, but for LATER!"</text>
+				<metaVariable name="prof_r_boon_fm_forgeweapon" op="set" val="1"/>
+				<achievement silent="false">ACH_BOON_FM_FORGEWEAPON</achievement>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event load="THE_JUDGES_ROCK_ADVICE"/>
+				</choice>
+			</event>
+		</mod-append:choice>
+		<mod-append:choice req="FM_WEAPON_HIGH_TIER">
+			<text>Present a Powerful Forged Weapon.</text>
+			<event>
+				<text>"Oh my... now THIS is a WEAPON. Tribute of the HIGHEST order. Alastair's skill never FAILED to IMPRESS. He has OUTDONE himself with this. I should like to SPEAK to him again. NEVERTHELESS! I shall BLESS you with the GREATER BLESSING OF FORGES. But have PATIENCE. It is not for now, but for LATER!"</text>
+				<metaVariable name="prof_r_boon_fm_forgeweapon_2" op="set" val="1"/>
+				<achievement silent="false">ACH_BOON_FM_FORGEWEAPON_2</achievement>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event load="THE_JUDGES_ROCK_ADVICE"/>
+				</choice>
+			</event>
+		</mod-append:choice>
+		<mod-append:choice req="LIST_ANCALAGON_ALL">
+			<text>Present Ancagalon Tech.</text>
+			<event>
+				<text>Wakeson stands silently for a moment. "Renegade. WHERE did this ABOMINATION come from? It should NEVER have been CREATED. Would like that I had not SEEN it. But information it is. I had HOPED that none would have FOUND the secret. Still, our RULES dictate I REWARD you for this. Do not MEDDLE again, Renegade. I shall BLESS you with the BLESSING OF THE FOOLHARDY. But have PATIENCE. It is not for now, but for LATER!"</text>
+				<metaVariable name="prof_r_boon_fm_ancweapon" op="set" val="1"/>
+				<achievement silent="false">ACH_BOON_FM_ANCWEAPON</achievement>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event load="THE_JUDGES_ROCK_ADVICE"/>
+				</choice>
+			</event>
+		</mod-append:choice>
+		<mod-append:choice req="FM_TERMINUS">
+			<text>Present the Terminus.</text>
+			<event>
+				<text>Wakeson stands silently for a moment. "Renegade. WHERE did you find this THING? It feels most TWISTED and POWERFUL... I shall BLESS you with the BLESSING OF THE TWISTEDNESS. But have PATIENCE. It is not for now, but for LATER!"</text>
+				<metaVariable name="prof_r_boon_fm_terminus" op="set" val="1"/>
+				<achievement silent="false">ACH_BOON_FM_TERMINUS</achievement>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event load="THE_JUDGES_ROCK_ADVICE"/>
+				</choice>
+			</event>
+		</mod-append:choice>
+	</mod:findName>
+	<mod:findName type="event" name="THE_JUDGES_VARIABLE_CLEAR">
+		<mod-append:metaVariable name="prof_z_boon_fm_plated" op="set" val="0"/>
+		<mod-append:metaVariable name="prof_e_boon_fm_forgearmor" op="set" val="0"/>
+		<mod-append:metaVariable name="prof_r_boon_fm_forgeweapon" op="set" val="0"/>
+		<mod-append:metaVariable name="prof_r_boon_fm_forgeweapon_2" op="set" val="0"/>
+		<mod-append:metaVariable name="prof_r_boon_fm_ancweapon" op="set" val="0"/>
+		<mod-append:metaVariable name="prof_r_boon_fm_terminus" op="set" val="0"/>
+	</mod:findName>
+</FTL>
 
 <FTL><!-- TESTING THINGS -->
 

@@ -1,5 +1,6 @@
 local vter = mods.inferno.vter
 local getLimitAmount = mods.inferno.getLimitAmount
+local setLimitAmount = mods.inferno.setLimitAmount
 local real_projectile = mods.inferno.real_projectile
 local randomInt = mods.inferno.randomInt
 
@@ -7,7 +8,8 @@ local randomInt = mods.inferno.randomInt
 --Overcharmed
 script.on_game_event("FMCORE_ONDAMAGE",false,
 function()
-  local damageQuantity = Hyperspace.ships.player:HasEquipment("FM_HULL_UPGRADE_POINTS") - 15
+  local extraNotches = Hyperspace.ships.player:GetAugmentationValue("FM_MODULAR_UPGRADE_EXTRANOTCHES") 
+  local damageQuantity = Hyperspace.ships.player:HasEquipment("FM_HULL_UPGRADE_POINTS") - (15 + extraNotches)
   local damage = Hyperspace.Damage() 
   damage.fireChance = 5
   damage.breachChance = 10
@@ -84,3 +86,21 @@ script.on_game_event("FMCORE_ONJUMP", false, function() selfArm:reset() end)
 script.on_game_event("FMCORE_ONDAMAGE", false, function() selfArm:onDamage() end)
 script.on_game_event("FM_HULLKILL_TRACKER_EVENT", false, function() selfArm:redeem() end) --We can find a better check for kills later.
 script.on_game_event("FM_CREWKILL_TRACKER_EVENT", false, function() selfArm:redeem() end)
+
+--cyclo arsenal and stuff
+mods.inferno.cycloWeapon = function()--checks if you have cyclo arsenal, then limits your system if you do
+  local augValue = Hyperspace.ships.player:GetAugmentationValue("FM_MODULAR_HULL_FASTWEAPON") --maybe later replaed with a req counting the resulting bars
+  if augValue > 0 then
+    setLimitAmount(3,3,0)
+  end
+end
+
+mods.inferno.cycloShield = function()--as above, but for the shilds augment
+  local augValue = Hyperspace.ships.player:GetAugmentationValue("FM_MODULAR_HULL_FASTSHIELD") 
+  if augValue > 0 then
+    setLimitAmount(0,4,0)
+  end
+end
+
+script.on_game_event("FMCORE_ONJUMP", false, function() mods.inferno.cycloWeapon() end)
+script.on_game_event("FMCORE_ONJUMP", false, function() mods.inferno.cycloShield() end)

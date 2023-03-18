@@ -8,8 +8,8 @@
 		<mod-append:queueEvent>FM_JUMP_LOSTSUN</mod-append:queueEvent>
 		<mod-append:queueEvent>FM_JUMP_CREWKILL</mod-append:queueEvent>
 		<mod-append:queueEvent>FM_JUMP_HULLKILL</mod-append:queueEvent>
-		<mod-append:queueEvent>FM_HULL_LIMITER_WEAPON</mod-append:queueEvent>
-		<mod-append:queueEvent>FM_HULL_LIMITER_SHIELD</mod-append:queueEvent>
+		<!--<mod-append:queueEvent>FM_HULL_LIMITER_WEAPON</mod-append:queueEvent>
+		<mod-append:queueEvent>FM_HULL_LIMITER_SHIELD</mod-append:queueEvent>-->
 		<mod-append:queueEvent>FM_HULL_LIMITER_REACTOR</mod-append:queueEvent>
 	</mod:findName>
 	<mod:findName type="event" name="FMCORE_ONDAMAGE">

@@ -11,7 +11,7 @@
 		</event>
 	</mod-append:choice>
 </mod:findName>
-
+<!--
 <mod:findName type="event" name="LOSTSUN_CHALLENGERS">
 	<mod:findLike type="choice" start="3" limit="2">
 		<mod:findLike type="event">
@@ -21,3 +21,4 @@
 		</mod:findLike>
 	</mod:findLike>
 </mod:findName>
+-->

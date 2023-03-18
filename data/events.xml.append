@@ -116,6 +116,16 @@
 	<mod-append:hiddenAug>ADDON_INSTALLED_FORGEMASTER</mod-append:hiddenAug>
 </mod:findName>
 
+<mod:findName type="event" name="BOON_SELECT">
+	<mod:findLike type="loadEventList">
+		<mod-append:event name="BOON_SELECT_FM_PLATED" req="prof_z_boon_fm_plated"/>
+		<mod-append:event name="BOON_SELECT_FM_FORGEARMOR" req="prof_e_boon_fm_forgearmor"/>
+		<mod-append:event name="BOON_SELECT_FM_FORGEWEAPON" req="prof_r_boon_fm_forgeweapon"/>
+		<mod-append:event name="BOON_SELECT_FM_FORGEWEAPON_2" req="prof_r_boon_fm_forgeweapon_2"/>
+		<mod-append:event name="BOON_SELECT_FM_ANCWEAPON" req="prof_r_boon_fm_ancweapon"/>
+		<mod-append:event name="BOON_SELECT_FM_TERMINUS" req="prof_r_boon_fm_terminus"/>
+	</mod:findLike>
+</mod:findName>
 <event name="GIVE_RAGE_TWISTEDMONK">
 	<triggeredEvent event="TRUENOTHING">
         <req name="twisted_blessing_counter" lvl="9999"/>

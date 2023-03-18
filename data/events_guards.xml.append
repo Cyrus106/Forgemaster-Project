@@ -14,7 +14,7 @@
 		<mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>
 	</mod:findWithChildLike>
 </mod:findName>
-
+<!--
 <mod:findName type="event" name="GUARD_COALITIONHOLD">
 	<mod:findLike type="choice">
 		<mod:selector req="shields" />
@@ -25,3 +25,4 @@
 		</mod:findLike>
 	</mod:findLike>
 </mod:findName>
+-->

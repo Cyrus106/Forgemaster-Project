@@ -1106,6 +1106,15 @@
 	<name>FM_AN_COMBAT_1_LASER</name>
 </blueprintList>
 
+<blueprintList name="LIST_ANCALAGON_ALL">
+	<name>FM_AN_DYNAMO</name>
+	<name>FM_AN_LASER</name>
+	<name>FM_AN_BEAM</name>
+	<name>FM_ANCALAGON_BATTLE</name>
+	<name>FM_AN_DEFENSE_3_LASER</name>
+	<name>FM_AN_COMBAT_1_LASER</name>
+</blueprintList>
+
 <blueprintList name="LIST_FM_HOLYSHIT">
 	<name>fm_holy1</name>
 	<name>fm_holy2</name>
@@ -1207,77 +1216,75 @@
 	<name>fm_bio_cloud</name>
 </blueprintList>
 
-<blueprintList name="LIST_FM_NOABDUCT"><!--I am aware that this could be made more concise by making it so that things are refered to by other lists,
-        but I have it like this because the script reads all of the actual IDs from this list.
-        If you want to do anything involving the list please let me know, so I can update the script and other code if necessary -Vertaal-->
+<blueprintList name="LIST_FM_NOABDUCT"><!--I am aware that this could be made more concise by making it so that things are refered to by other lists, but I have it like this because the script reads all of the actual IDs from this list. If you want to do anything involving the list please let me know, so I can update the script and other code if necessary -Vertaal-->
     <name>hologram</name>
     <name>acid</name>
-		<name>fm_repair_hull</name>
-		<name>fm_ion_anomaly_crew</name>
-		<name>fm_ion_anomaly_crew_enemy</name>
-		<name>fm_ion_instant_1</name>
-		<name>fm_ion_instant_2</name>
-		<name>fm_ion_instant_3</name>
-		<name>fm_ion_instant_4</name>
-		<name>fm_explode_instant</name>
-		<name>fm_human_rip</name>
-		<name>fm_drone_hack</name>
-		<name>fm_terminus</name>
-		<name>fm_bio_cloud</name>
+	<name>fm_repair_hull</name>
+	<name>fm_ion_anomaly_crew</name>
+	<name>fm_ion_anomaly_crew_enemy</name>
+	<name>fm_ion_instant_1</name>
+	<name>fm_ion_instant_2</name>
+	<name>fm_ion_instant_3</name>
+	<name>fm_ion_instant_4</name>
+	<name>fm_explode_instant</name>
+	<name>fm_human_rip</name>
+	<name>fm_drone_hack</name>
+	<name>fm_terminus</name>
+	<name>fm_bio_cloud</name>
     <name>divrepair</name>
-		<name>repairboarder</name>
-		<name>drone_recon</name>
-		<name>drone_recon_boarder</name>
-		<name>drone_recon_defense</name>
-		<name>doctor</name>
-		<name>surgeon</name>
-		<name>drone_holodrone</name>
-		<name>manning</name>
-		<name>manningenemy</name>
-		<name>loot_separatist_1</name>
-		<name>drone_yinyang</name>
-		<name>drone_yinyang_board</name>
-		<name>drone_battle</name>
-		<name>drone_battle2</name>
-		<name>butler</name>
-		<name>a55</name>
+	<name>repairboarder</name>
+	<name>drone_recon</name>
+	<name>drone_recon_boarder</name>
+	<name>drone_recon_defense</name>
+	<name>doctor</name>
+	<name>surgeon</name>
+	<name>drone_holodrone</name>
+	<name>manning</name>
+	<name>manningenemy</name>
+	<name>loot_separatist_1</name>
+	<name>drone_yinyang</name>
+	<name>drone_yinyang_board</name>
+	<name>drone_battle</name>
+	<name>drone_battle2</name>
+	<name>butler</name>
+	<name>a55</name>
     <name>gana</name>
-		<name>mender</name>
-		<name>menderr</name>
-		<name>director</name>
-		<name>atom</name>
-		<name>atomr</name>
-		<name>roomba</name>
-		<name>fm_fire_intruder</name>
-		<name>fm_ancalagon_battle</name>
-		<name>manningenemy_2</name>
-		<name>twisted_mender</name>
-		<name>twisted_yinyang_ship</name>
-		<name>twisted_yinyang_board</name>
-		<name>twisted_surgeon</name>
-		<name>twisted_drone_battle2</name>
+	<name>mender</name>
+	<name>menderr</name>
+	<name>director</name>
+	<name>atom</name>
+	<name>atomr</name>
+	<name>roomba</name>
+	<name>fm_fire_intruder</name>
+	<name>fm_ancalagon_battle</name>
+	<name>manningenemy_2</name>
+	<name>twisted_mender</name>
+	<name>twisted_yinyang_ship</name>
+	<name>twisted_yinyang_board</name>
+	<name>twisted_surgeon</name>
+	<name>twisted_drone_battle2</name>
     <name>battle</name>
     <name>repair</name>
     <name>fm_holy1</name>
-		<name>fm_holy2</name>
-		<name>fm_holy3</name>
-		<name>fm_holy4</name>
-		<name>fm_holy5</name>
-		<name>fm_holy6</name>
-		<name>fm_holy7</name>
-		<name>fm_holy8</name>
-		<name>fm_holy9</name>
-		<name>fm_holy10</name>
-		<name>fm_holy11</name>
-		<name>fm_holy12</name>
-		<name>fm_holy13</name>
-		<name>fm_holy14</name>
-		<name>fm_holy15</name>
-		<name>fm_holy16</name>
-		<name>fm_holy17</name>
-		<name>fm_holy18</name>
-		<name>fm_holy19</name>
-		<name>fm_holy20</name>
+	<name>fm_holy2</name>
+	<name>fm_holy3</name>
+	<name>fm_holy4</name>
+	<name>fm_holy5</name>
+	<name>fm_holy6</name>
+	<name>fm_holy7</name>
+	<name>fm_holy8</name>
+	<name>fm_holy9</name>
+	<name>fm_holy10</name>
+	<name>fm_holy11</name>
+	<name>fm_holy12</name>
+	<name>fm_holy13</name>
+	<name>fm_holy14</name>
+	<name>fm_holy15</name>
+	<name>fm_holy16</name>
+	<name>fm_holy17</name>
+	<name>fm_holy18</name>
+	<name>fm_holy19</name>
+	<name>fm_holy20</name>
   	<name>fm_meatman</name>
   	<name>fm_ancalagon_monitor</name>
   	<name>fm_crystal_black</name>
@@ -1750,6 +1757,7 @@
 	<mod-append:name>FM_MISSILES_BURST_FIRE_MEGA</mod-append:name>
     <mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
 	<mod-append:name>FM_ROYAL_MINELAUNCHER</mod-append:name>
+	<mod-append:name>FM_CHAINGUN_FIRE</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_WEAPONS_FIRE_NODAMAGE">
@@ -1757,12 +1765,14 @@
     <mod-append:name>FM_ION_TRI_FIRE</mod-append:name>
     <mod-append:name>FM_BEAM_PARTICLE_PIERCE</mod-append:name>
 	<mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
+	<mod-append:name>FM_CHAINGUN_FIRE</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_FIRE_NONBALLISTIC">
     <mod-append:name>FM_FLAMETHROWER</mod-append:name>
     <mod-append:name>FM_ION_TRI_FIRE</mod-append:name>
     <mod-append:name>FM_BEAM_PARTICLE_PIERCE</mod-append:name>
+	<mod-append:name>FM_CHAINGUN_FIRE</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_FIRE_BALLISTIC">
@@ -1811,20 +1821,20 @@
 </mod:findName>
 <mod:findName type="blueprintList" name="LIST_CREW_ALL_CRAPBUCKET">
     <mod-append:name>husk_slug_player</mod-append:name>
-		<mod-append:name>fm_plated</mod-append:name>
-		<mod-append:name>fm_human_texture</mod-append:name>
-		<mod-append:name>mantis_crackerjack</mod-append:name>
-	    <mod-append:name>fm_plated_shell</mod-append:name>
+	<mod-append:name>fm_plated</mod-append:name>
+	<mod-append:name>fm_human_texture</mod-append:name>
+	<mod-append:name>mantis_crackerjack</mod-append:name>
+	<mod-append:name>fm_plated_shell</mod-append:name>
 </mod:findName>
 <mod:findName type="blueprintList" name="LIST_CREW_ALIENS">
     <mod-append:name>husk_slug_player</mod-append:name>
-		<mod-append:name>fm_plated</mod-append:name>
-		<mod-append:name>fm_forgemasterperson</mod-append:name>
-		<mod-append:name>fm_forgemasterperson_player</mod-append:name>
-		<mod-append:name>unique_remington</mod-append:name>
-		<mod-append:name>unique_mossberg</mod-append:name>
-		<mod-append:name>mantis_crackerjack</mod-append:name>
-	    <mod-append:name>fm_plated_shell</mod-append:name>
+	<mod-append:name>fm_plated</mod-append:name>
+	<mod-append:name>fm_forgemasterperson</mod-append:name>
+	<mod-append:name>fm_forgemasterperson_player</mod-append:name>
+	<mod-append:name>unique_remington</mod-append:name>
+	<mod-append:name>unique_mossberg</mod-append:name>
+	<mod-append:name>mantis_crackerjack</mod-append:name>
+	<mod-append:name>fm_plated_shell</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_MORPH_HUMAN">
@@ -1837,14 +1847,14 @@
 
 <mod:findName type="blueprintList" name="LIST_CREW_UNIQUE_CRAPBUCKET">
     <mod-append:name>fm_forgemasterperson_player</mod-append:name>
-		<mod-append:name>unique_remington</mod-append:name>
-		<mod-append:name>unique_mossberg</mod-append:name>
+	<mod-append:name>unique_remington</mod-append:name>
+	<mod-append:name>unique_mossberg</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_UNIQUE">
     <mod-append:name>fm_forgemasterperson_player</mod-append:name>
-		<mod-append:name>unique_remington</mod-append:name>
-		<mod-append:name>unique_mossberg</mod-append:name>
+	<mod-append:name>unique_remington</mod-append:name>
+	<mod-append:name>unique_mossberg</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CREW_MORPH_ROCK">
@@ -2103,19 +2113,19 @@
 
 <mod:findName type="blueprintList" name="BLUELIST_BOMBS">
     <mod-append:name>FM_AN_DYNAMO</mod-append:name>
-		<mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
-		<mod-append:name>FM_BOMB_CRYSTAL_BIO</mod-append:name>
-		<mod-append:name>BOMB_BREACH_1_PLAYER_ARTY_CHAIN</mod-append:name>
+	<mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
+	<mod-append:name>FM_BOMB_CRYSTAL_BIO</mod-append:name>
+	<mod-append:name>BOMB_BREACH_1_PLAYER_ARTY_CHAIN</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_BOMBS_CREWDAMAGE">
-		<mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
-		<mod-append:name>FM_BOMB_CRYSTAL_BIO</mod-append:name>
-		<mod-append:name>BOMB_BREACH_1_PLAYER_ARTY_CHAIN</mod-append:name>
+	<mod-append:name>FM_BOMB_CRYSTAL_FIRE</mod-append:name>
+	<mod-append:name>FM_BOMB_CRYSTAL_BIO</mod-append:name>
+	<mod-append:name>BOMB_BREACH_1_PLAYER_ARTY_CHAIN</mod-append:name>
 </mod:findName>
 <mod:findName type="blueprintList" name="BLUELIST_ARMOR">
-		<mod-append:name>FM_MODULAR_HULL</mod-append:name>
-		<mod-append:name>FM_MODULAR_HULL_LITE</mod-append:name>
+	<mod-append:name>FM_MODULAR_HULL</mod-append:name>
+	<mod-append:name>FM_MODULAR_HULL_LITE</mod-append:name>
 </mod:findName>
 
 
@@ -2674,28 +2684,62 @@
 	<name>GB_AC_1</name>
 </blueprintList>
 
-<blueprintList name="FM_HIGH_TIER">
+<blueprintList name="FM_WEAPON_LOW_TIER">
+	<name>FM_LASER_ANOMALY_1</name>
+	<name>FM_FLAMETHROWER</name>
+	<name>FM_PHASER_SUFFOCATION</name>
+	<name>FM_LASER_PHOTON</name>
+	<name>FM_LASER_PHOTON_2</name>
+	<name>FM_LASER_HUMAN</name>
+	<name>FM_CHAINGUN_FIRE</name>
+	<name>FM_ION_TRI_FIRE</name>
+	<name>FM_ENERGY_DISC</name>
+	<name>FM_CHAINGUN_ION</name>
+	<name>FM_PULSE_1</name>
+	<name>FM_PULSE_2</name>
+	<name>FM_PULSE_2_PLAYER</name>
+	<name>FM_PULSEDEEP</name>
+	<name>FM_BEAM_PARTICLE_PIERCE</name>
+	<name>FM_BEAM_ION_PIERCE</name>
+	<name>FM_BEAM_ETERNITY</name>
+	<name>FM_FOCUS_ENERGY_1</name>
+	<name>FM_FOCUS_ENERGY_2</name>
+	<name>FM_FOCUS_ENERGY_2_PLAYER</name>
+	<name>FM_FOCUS_ENERGY_CONS</name>
+	<name>FM_SHOTGUN_ANOMALY</name>
+	<name>FM_SHOTGUN_ANOMALY_PLAYER</name>
+	<name>FM_SHOTGUN_ANOMALY_MEGA</name>
+	<name>FM_SHOTGUN_BRONZE</name><!--remmbr other tiers too pls!-->
+	<name>FM_SHOTGUN_CURSED</name>
+	<name>FM_RVS_AC_CHARGE</name>
+</blueprintList>
+<blueprintList name="FM_WEAPON_HIGH_TIER">
 	<name>FM_LASER_ION_MEGA</name>
+	<name>FM_SURGE_LASER</name>
 	<name>FM_SHOTGUN_ENERGY</name>
 	<name>FM_SHOTGUN_ENERGY_PLAYER</name>
 	<name>FM_PULSE_3</name>
 	<name>FM_BEAM_MINING_2</name>
-	<name>FM_BEAM_MINING_3</name>
-	<name>FM_BEAM_EXPLOSION</name>
 	<name>FM_BEAM_GUILLOTINE_CHAIN</name>
 	<name>FM_BEAM_GUILLOTINE_CHAIN_PLAYER</name>
-	<name>FM_BEAM_EXPLOSION_EGG</name>
+	<name>FM_BEAM_EXPLOSION</name>
 	<name>FM_BEAM_EXPLOSION_PLAYER</name>
+	<name>FM_BEAM_EXPLOSION_EGG</name>
 	<name>FM_FOCUS_FUELED_1</name>
 	<name>FM_FOCUS_FUELED_2</name>
 	<name>FM_FOCUS_FUELED_3</name>
 	<name>FM_FOCUS_FUELED_4</name>
 	<name>FM_FOCUS_FUELED_5</name>
 	<name>FM_FOCUS_ENERGY_3</name>
+	<name>FM_FOCUS_ADAPT</name>
+	<name>FM_FOCUS_VIRUS</name>
+	<name>FM_FOCUS_VIRUS_PLAYER</name>
+	<name>FM_BEAM_MINING_3</name>
 	<name>FM_SHOTGUN_AETHER</name>
 	<name>FM_SHOTGUN_OSMIUM</name>
 	<name>FM_SHOTGUN_NOBELIUM</name>
 	<name>FM_SHOTGUN_HASSIUM</name>
+	<name>FM_ENERGY_RAILBLENDER</name>
 	<name>FM_MISSILES_BURST_FIRE</name>
 	<name>FM_MISSILES_BURST_FIRE_PLAYER</name>
 	<name>FM_MISSILES_BURST_FIRE_MEGA</name>
@@ -2703,16 +2747,15 @@
 	<name>FM_MISSILES_CLOAK_STUN</name>
 	<name>FM_MISSILES_CLOAK_STUN_PLAYER</name>
 	<name>FM_MISSILES_CLOAK_STUN_MEGA</name>
-	<name>FM_MINELAUNCHER_HULL</name>
-	<name>FM_MINELAUNCHER_BIO</name>
 	<name>FM_BOMB_CRYSTAL_FIRE</name>
 	<name>FM_BOMB_CRYSTAL_BIO</name>
-	<name>FM_BOMB_CRUNCH</name>
+	<name>FM_MINELAUNCHER_HULL</name>
+	<name>FM_MINELAUNCHER_BIO</name>
+	<name>FM_ION_MISSILES</name>
 	<name>FM_IMPRISMENT_INDUCER</name>
+	<name>FM_BOMB_CRUNCH</name>
+	<name>MAMMOTH_CANNON_FORGE</name>
 	<name>FM_BEAM_BASILISK</name>
-	<name>FM_FOCUS_VIRUS</name>
-	<name>FM_FOCUS_VIRUS_PLAYER</name>
-	<name>FM_RAILBLENDER</name>
 </blueprintList>
 
 <blueprintList name="FM_CRYSTAL_LIST">

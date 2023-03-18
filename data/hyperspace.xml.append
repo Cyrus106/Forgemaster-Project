@@ -23,6 +23,7 @@
 			</req>
 			<req lvl="0" max_lvl="0">
 				<name>fm_called_forgemaster</name>
+				<name>JUDGE_BOON_FM_FORGEWEAPON</name>
 			</req>
 		</req>
 		<req name="FM_FORGEMASTER_UNCALLABLE">
@@ -174,6 +175,7 @@
 
 		<mod-append:ship name="PLAYER_SHIP_TWISTED1" a="true" b="true" c="true" secret="true"> <!--guild,dusk,engi-->
 			<splitVictoryAchievement>true</splitVictoryAchievement>
+			<splitUnlockQuestAchievement>true</splitUnlockQuestAchievement>
 			<unlock variant="a" silent="false">
 				<type>4</type>
 			</unlock>
@@ -186,6 +188,7 @@
 		</mod-append:ship>
 		<mod-append:ship name="PLAYER_SHIP_TWISTED2" a="true" b="false" c="true" secret="true"> <!--Fmantis,seppy,mantis-->
 			<splitVictoryAchievement>true</splitVictoryAchievement>
+			<splitUnlockQuestAchievement>true</splitUnlockQuestAchievement>
 			<unlock variant="a" silent="false">
 				<type>4</type>
 			</unlock>
@@ -198,6 +201,7 @@
 		</mod-append:ship>
 		<mod-append:ship name="PLAYER_SHIP_TWISTED3" a="true" b="true" c="true" secret="true"> <!--monk,rock,lostsun-->
 			<splitVictoryAchievement>true</splitVictoryAchievement>
+			<splitUnlockQuestAchievement>true</splitUnlockQuestAchievement>
 			<unlock variant="a" silent="false">
 				<type>4</type>
 			</unlock>
@@ -210,6 +214,7 @@
 		</mod-append:ship>
 		<mod-append:ship name="PLAYER_SHIP_TWISTED4" a="true" b="true" c="true" secret="true"> <!--slug,stealth,Zoltan-->
 			<splitVictoryAchievement>true</splitVictoryAchievement>
+			<splitUnlockQuestAchievement>true</splitUnlockQuestAchievement>
 			<unlock variant="a" silent="false">
 				<type>4</type>
 			</unlock>
@@ -222,6 +227,7 @@
 		</mod-append:ship>
 		<mod-append:ship name="PLAYER_SHIP_TWISTED5" a="false" b="true" c="true" secret="true"> <!--lanius,shell,Engineer-->
 			<splitVictoryAchievement>true</splitVictoryAchievement>
+			<splitUnlockQuestAchievement>true</splitUnlockQuestAchievement>
 			<unlock variant="a" silent="false">
 				<type>4</type>
 			</unlock>
@@ -234,6 +240,7 @@
 		</mod-append:ship>
 		<mod-append:ship name="PLAYER_SHIP_TWISTED6" a="true" b="true" c="true" secret="true"> <!--kestrel,fed,orchid-->
 			<splitVictoryAchievement>true</splitVictoryAchievement>
+			<splitUnlockQuestAchievement>true</splitUnlockQuestAchievement>
 			<unlock variant="a" silent="false">
 				<type>4</type>
 			</unlock>
@@ -246,6 +253,7 @@
 		</mod-append:ship>
 		<mod-append:ship name="PLAYER_SHIP_TWISTED7" a="true" b="false" c="true" secret="true"> <!--crystal,tuco,leech-->
 			<splitVictoryAchievement>true</splitVictoryAchievement>
+			<splitUnlockQuestAchievement>true</splitUnlockQuestAchievement>
 			<unlock variant="a" silent="false">
 				<type>4</type>
 			</unlock>
@@ -3746,6 +3754,134 @@
 				<chance>100</chance>
 			</category>
 		</customStore>
+		<customStore id="FM_BOON_STORE">
+			<itemPurchaseLimit>6</itemPurchaseLimit>
+			<hullRepair>
+				<price min="2" max="3"/>
+				<sectorScaled/>
+			</hullRepair>
+			<category type="WEAPONS">
+				<customTitle>WEAPONS</customTitle>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_PLUS_WEAPON_LIST</blueprint>
+					<modifier min="1.1" max="1.1" flat="false"/>
+					<price>-1</price>
+				</item>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_PLUS_WEAPON_LIST</blueprint>
+					<modifier min="1.1" max="1.1" flat="false"/>
+					<price>-1</price>
+				</item>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_PLUS_WEAPON_LIST</blueprint>
+					<modifier min="1.1" max="1.1" flat="false"/>
+					<price>-1</price>
+				</item>
+			</category>
+			<category type="WEAPONS">
+				<customTitle>WEAPONS</customTitle>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_PLUS_WEAPON_LIST</blueprint>
+					<modifier min="1.1" max="1.2" flat="false"/>
+					<price>-1</price>
+				</item>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_PLUS_WEAPON_LIST</blueprint>
+					<modifier min="1.1" max="1.1" flat="false"/>
+					<price>-1</price>
+				</item>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_PLUS_WEAPON_LIST</blueprint>
+					<modifier min="1.1" max="1.1" flat="false"/>
+					<price>-1</price>
+				</item>
+			</category>
+			<category type="WEAPONS">
+				<customTitle>WEAPONS</customTitle>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_RARE_WEAPON_LIST</blueprint>
+					<modifier min="1.1" max="1.1" flat="false"/>
+					<price>-1</price>
+				</item>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_RARE_WEAPON_LIST</blueprint>
+					<modifier min="1.1" max="1.1" flat="false"/>
+					<price>-1</price>
+				</item>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_RARE_WEAPON_LIST</blueprint>
+					<modifier min="1.1" max="1.1" flat="false"/>
+					<price>-1</price>
+				</item>
+			</category>
+			<category type="WEAPONS">
+				<customTitle>WEAPONS</customTitle>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_WEAPON_NEW</blueprint>
+					<!--<blueprint>FM_SHOP_FORGEMASTER_WEAPON_1_PLAYER</blueprint>-->
+					<modifier min="1.1" max="1.1" flat="false"/>
+					<price>-1</price>
+				</item>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_WEAPON_NEW</blueprint>
+					<!--<blueprint>FM_SHOP_FORGEMASTER_WEAPON_2_PLAYER</blueprint>-->
+					<modifier min="1.1" max="1.1" flat="false"/>
+					<price>-1</price>
+				</item>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_WEAPON_NEW</blueprint>
+					<!--<blueprint>FM_SHOP_FORGEMASTER_WEAPON_3_PLAYER</blueprint>-->
+					<modifier min="1.1" max="1.1" flat="false"/>
+					<price>-1</price>
+				</item>
+			</category>
+			<category type="AUGMENTS">
+				<customTitle>RARE AUGMENTS</customTitle>
+				<allowDuplicates/>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_RARE_AUG_LIST</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_RARE_AUG_LIST</blueprint>
+				</item>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_RARE_AUG_LIST</blueprint>
+				</item>
+				<chance>100</chance>
+			</category>
+			<!--<category type="DRONES">
+				<customTitle>DRONES</customTitle>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_DRONE_1_PLAYER</blueprint>
+					<modifier min="1.2" max="1.2" flat="false"/>
+					<price>-1</price>
+				</item>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_DRONE_1_PLAYER</blueprint>
+					<modifier min="1.2" max="1.2" flat="false"/>
+					<price>-1</price>
+				</item>
+				<item>
+					<blueprint>FM_SHOP_FORGEMASTER_DRONE_1_PLAYER</blueprint>
+					<modifier min="1.2" max="1.2" flat="false"/>
+					<price>-1</price>
+				</item>
+			</category>-->
+			<category type="CREW">
+				<customTitle>DECKHANDS</customTitle>
+				<allowDuplicates/>
+				<item>
+					<blueprint>LIST_CREW_PLATED_STORE</blueprint>
+				</item>
+				<item>
+					<blueprint>LIST_CREW_PLATED_STORE</blueprint>
+				</item>
+				<item>
+					<blueprint>LIST_CREW_PLATED_STORE</blueprint>
+				</item>
+				<chance>100</chance>
+			</category>
+		</customStore>
 	</store>
 
 
@@ -4054,7 +4190,10 @@
 
 	<events> <!-- new FM spawning reqs and variables-->
 		<req name="FMSPAWN_CALL" type="all">
-			<name>fm_forgemaster_called</name>
+			<req type="any">
+				<name>JUDGE_BOON_FM_FORGEWEAPON</name>
+				<name>fm_forgemaster_called</name>
+			</req>
 			<req type="any" lvl="0" max_lvl="0">
 				<name>fm_forgemaster_dead</name>
 				<name>forgemaster_spawntriggered</name>
@@ -4138,6 +4277,13 @@
 		<metaVariable name="FM_LORE_PROJECT7" op="set" val="0"/>
 		<metaVariable name="FM_LORE_PROJECT22" op="set" val="0"/>
 		<metaVariable name="FM_LORE_CHAINGUN_FIRE" op="set" val="0"/>
+
+		<metaVariable name="prof_z_boon_fm_plated" op="set" val="0"/>
+		<metaVariable name="prof_e_boon_fm_forgearmor" op="set" val="0"/>
+		<metaVariable name="prof_r_boon_fm_forgeweapon" op="set" val="0"/>
+		<metaVariable name="prof_r_boon_fm_forgeweapon_2" op="set" val="0"/>
+		<metaVariable name="prof_r_boon_fm_ancweapon" op="set" val="0"/>
+		<metaVariable name="prof_r_boon_fm_terminus" op="set" val="0"/>
 
 		<req name="CAN_INSTALL_FLAK_ARTILLERY" type="sum" lvl="50">
 			<name>flak_resource_counter</name>
@@ -5367,40 +5513,17 @@
 
 	<crew> <!-- Plated Shell Crew -->
 		<race name="fm_plated_shell">
-			<maxHealth>100</maxHealth>
 			<repairSpeed>1.3</repairSpeed>
-			<canFight>true</canFight>
-			<canRepair>true</canRepair>
-			<canSabotage>true</canSabotage>
-			<canSuffocate>true</canSuffocate>
 			<damageMultiplier>1.4</damageMultiplier>
-			<rangedDamageMultiplier>1</rangedDamageMultiplier>
 			<damageTakenMultiplier>0.7</damageTakenMultiplier>
 			<suffocationModifier>1.7</suffocationModifier>
 			<fireDamageMultiplier>0.2</fireDamageMultiplier>
 			<stunMultiplier>0.7</stunMultiplier>
 			<fireRepairMultiplier>3.0</fireRepairMultiplier>
-			<canMan>true</canMan>
-			<noClone>false</noClone>
-			<noSlot>false</noSlot>
-			<controllable>true</controllable>
-			<canPhaseThroughDoors>false</canPhaseThroughDoors>
 			<moveSpeedMultiplier>0.7</moveSpeedMultiplier>
-			<sabotageSpeedMultiplier>1</sabotageSpeedMultiplier>
-			<animBase>rock</animBase>
 			<deathSounds>
 				<deathSound>shell_death</deathSound>
 			</deathSounds>
-			<shootingSounds>
-				<shootingSound>rockThrow1</shootingSound>
-				<shootingSound>rockThrow2</shootingSound>
-				<shootingSound>rockThrow3</shootingSound>
-			</shootingSounds>
-			<repairSounds animSoundFrame="5">
-				<repairSound>rockThud1</repairSound>
-				<repairSound>rockThud2</repairSound>
-				<repairSound>rockThud3</repairSound>
-			</repairSounds>
 			<powerEffect> <!--POWER FOR NOW-->
 				<cooldown>15</cooldown>
 				<jumpCooldown>full</jumpCooldown>
@@ -5438,9 +5561,6 @@
 				</temporaryEffect>
 				<selfHealth>20</selfHealth>
 			</powerEffect>
-
-
-
 		</race>
 	</crew>
 
@@ -7998,6 +8118,7 @@
 			<maxHealth>100</maxHealth>
 			<droneMoveFromManningSlot>true</droneMoveFromManningSlot>
 			<stunMultiplier>0.25</stunMultiplier>
+			<noSlot>true</noSlot>
 			<droneAI>
 				<manAI/>
 				<returnToDroneRoom/>
@@ -8037,6 +8158,21 @@
 					<blackList>
 						<manningenemy_2/>
 						<atomr/>
+					</blackList>
+				</statBoost>
+				<statBoost name="noSlot">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>0</priority>
+					<whiteList>
+						<atomr/>
+					</whiteList>
+					<blackList>
+						<engi/>
 					</blackList>
 				</statBoost>
 
@@ -13265,8 +13401,148 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 
 	<!--All weapons (including some addon compat) vengeance augments-->
 
-	<augments>
-
+	<augments> <!--Boon-->
+		<aug name="JUDGE_BOON_FM_PLATED">
+			<statBoosts>
+				<statBoost name="powerCharges">
+					<boostType>FLAT</boostType>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<amount>2</amount>
+					<priority>0</priority>
+					<whiteList>
+						<fm_plated/>
+						<fm_forgemasterperson_player/>
+						<fm_plated_shell/>
+					</whiteList>
+				</statBoost>
+			</statBoosts>
+		</aug>
+		<aug name="JUDGE_BOON_FM_PLATED">
+			<function name="FM_MODULAR_UPGRADE_EXTRANOTCHES" value="2" useforReqs="true"/>
+		</aug>
+		<aug name="JUDGE_BOON_FM_ANCWEAPON">
+			<statBoosts>
+				<statBoost name="allDamageTakenMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.5</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>0</priority>
+					<whitelist load="FM_CRYSTAL_LIST"/>
+				</statBoost>
+			</statBoosts>
+		</aug>
+		<aug name="JUDGE_BOON_FM_TERMINUS"> <!--5% boost of all crew and ship stats -->
+			<function name="SCRAP_COLLECTOR" value="0.05" useforReqs="false"/>
+			<function name="ROCK_ARMOR" value="0.05" useforReqs="false"/>
+			<function name="ION_ARMOR" value="0.05" useforReqs="false"/>
+			<function name="SYSTEM_CASING" value="0.05" useforReqs="false"/>
+			<function name="AUTO_COOLDOWN" value="0.05" useforReqs="false"/>
+			<function name="SHIELD_RECHARGE" value="0.05" useforReqs="false"/>
+			<function name="FTL_BOOSTER" value="0.05" useforReqs="false"/>
+			<statBoosts>
+				<statBoost name="maxHealth">
+					<boostType>MULT</boostType>
+					<amount>1.05</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>0</priority>
+				</statBoost>
+				<statBoost name="repairSpeed">
+					<boostType>MULT</boostType>
+					<amount>1.05</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>0</priority>
+				</statBoost>
+				<statBoost name="moveSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.05</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>0</priority>
+				</statBoost>
+				<statBoost name="allDamageTakenMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.95</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>0</priority>
+				</statBoost>
+				<statBoost name="fireDamageMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.95</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>0</priority>
+				</statBoost>
+				<statBoost name="suffocationModifier">
+					<boostType>MULT</boostType>
+					<amount>0.95</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>0</priority>
+				</statBoost>
+				<statBoost name="damageMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.05</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>0</priority>
+				</statBoost>
+				<statBoost name="rangedDamageMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.05</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>0</priority>
+				</statBoost>
+				<statBoost name="powerRechargeMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.05</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>0</priority>
+				</statBoost>
+				<statBoost name="stunMultiplier">
+					<boostType>MULT</boostType>
+					<amount>0.95</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>0</priority>
+				</statBoost>
+				<statBoost name="sabotageSpeedMultiplier">
+					<boostType>MULT</boostType>
+					<amount>1.05</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>0</priority>
+				</statBoost>
+				<statBoost name="healSpeed">
+					<boostType>MULT</boostType>
+					<amount>1.05</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<affectsSelf>false</affectsSelf>
+					<priority>0</priority>
+				</statBoost>
+			</statBoosts>
+		</aug>
+		
 	</augments>
 
 
@@ -13493,6 +13769,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<mod:findLike type="whiteList">
 						<mod-append:fm_plated/>
 						<mod-append:fm_forgemasterperson_player/>
+						<mod-append:fm_plated_shell/>
 					</mod:findLike>
 				</mod:findLike>
 			</mod:findLike>
@@ -13584,7 +13861,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 						<noPwr>0</noPwr>
 						<onePwr>1</onePwr>
 					</systemPowerScaling>
-					<whiteList list="LIST_FM_FAKEDRONES"/>
+					<whiteList load="LIST_FM_FAKEDRONES"/>
 				</mod-append:statBoost>
 				<mod-append:statBoost name="damageMultiplier">
 					<boostType>MULT</boostType>
@@ -13777,7 +14054,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<mod-append:name>FM_MODULAR_HULL_MAGNETIC</mod-append:name>
 				<mod-append:name>FM_MODULAR_HULL_SCRAP</mod-append:name>
 			</mod:findLike>
-		</mod:findName>
+		</mod:findName> 
 
 		<mod:findName type="req" name="BLUELIST_CREW_NO2">
 			<mod-append:name>fm_nano_cobalt</mod-append:name>
@@ -13787,6 +14064,23 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<name>fm_plated</name>
 			</mod-append:req>
 
+		</mod:findName>
+		
+		<mod:findName type="req" name="ALL_BOONS">
+			<mod-append:name>prof_z_boon_fm_plated</mod-append:name>
+			<mod-append:name>prof_e_boon_fm_forgearmor</mod-append:name>
+			<mod-append:name>prof_r_boon_fm_forgeweapon</mod-append:name>
+			<mod-append:name>prof_r_boon_fm_forgeweapon_2</mod-append:name>
+			<mod-append:name>prof_r_boon_fm_ancweapon</mod-append:name>
+			<mod-append:name>prof_r_boon_fm_terminus</mod-append:name>
+		</mod:findName>
+		<mod:findName type="req" name="ANY_BOON">
+			<mod-append:name>prof_z_boon_fm_plated</mod-append:name>
+			<mod-append:name>prof_e_boon_fm_forgearmor</mod-append:name>
+			<mod-append:name>prof_r_boon_fm_forgeweapon</mod-append:name>
+			<mod-append:name>prof_r_boon_fm_forgeweapon_2</mod-append:name>
+			<mod-append:name>prof_r_boon_fm_ancweapon</mod-append:name>
+			<mod-append:name>prof_r_boon_fm_terminus</mod-append:name>
 		</mod:findName>
 
 
@@ -15776,6 +16070,9 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<req name="IS_OVERCHARMED" type="all">
 			<req type="any" lvl="16">
 				<name>fm_hull_upgrade_points</name>
+				<req type="sum" mult="-1">
+					<name>FM_MODULAR_UPGRADE_EXTRANOTCHES</name>
+				</req>
 			</req>
 			<req type="any" lvl="0" max_lvl="0">
 				<name>overcharmed_active</name>
@@ -16267,6 +16564,73 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</achievement>
 			</section>
 		</mod-append:page>
+		<mod:findLike type="page">
+			<mod:findLike type="section">
+				<mod:selector text="Thest's Boons"/>
+				<mod-append:achievement name="ACH_BOON_FM_PLATED">
+					<name>Boon of Plated</name>
+					<secretDescription>Receive the Boon of Plated from Thest.</secretDescription>
+					<description>Show a Plated crew to Thest. 
+					While in effect; All Plated crew gain a +1 Ability charge.</description>
+					<header>Boon Received</header>
+					<icon>ach_placeholder</icon>
+					<multiDifficulty>false</multiDifficulty>
+				</mod-append:achievement>
+			</mod:findLike>
+			<mod:findLike type="section">
+				<mod:selector text="Corby's Grants"/>
+				<mod-append:achievement name="ACH_BOON_FM_FORGEARMOR">
+					<name>Grant of Armouring</name>
+					<secretDescription>Receive the Grant of Armouring from Corby.</secretDescription>
+					<description>Show Modular Hull to Corby. 
+					While in effect; Modular Hull gains +2 notch capacity.</description>
+					<header>Boon Received</header>
+					<icon>ach_placeholder</icon>
+					<multiDifficulty>false</multiDifficulty>
+				</mod-append:achievement>
+			</mod:findLike>
+			<mod:findLike type="section">
+				<mod:selector text="Wakeson's Blessings"/>
+				<mod-append:achievement name="ACH_BOON_FM_FORGEWEAPON">
+					<name>Blessing of Forges</name>
+					<secretDescription>Receive the Blessing of Forges from Wakeson.</secretDescription>
+					<description>Show a forged weapon to Wakeson. 
+					While in effect; The Forgemaster spawns automatically without Calling.</description>
+					<header>Boon Received</header>
+					<icon>ach_placeholder</icon>
+					<multiDifficulty>false</multiDifficulty>
+				</mod-append:achievement>
+				<mod-append:achievement name="ACH_BOON_FM_FORGEWEAPON_2">
+					<name>Greater Blessing of Forges</name>
+					<secretDescription>Receive the Blessing of Forges from Wakeson.</secretDescription>
+					<description>Show a high grade forged weapon to Wakeson. 
+					While in effect; The Forgemaster has a larger and better store.</description>
+					<header>Boon Received</header>
+					<icon>ach_placeholder</icon>
+					<multiDifficulty>false</multiDifficulty>
+				</mod-append:achievement>
+				<mod-append:achievement name="ACH_BOON_FM_ANCWEAPON">
+					<name>Blessing of the Foolhardy</name>
+					<secretDescription>Receive the Blessing of ??? from Wakeson.</secretDescription>
+					<description>Show ancalagon tech to Wakeson. 
+					While in effect; Ancalagon crystals gain 50% damage resistance.</description>
+					<header>Boon Received</header>
+					<icon>ach_placeholder</icon>
+					<lockImage>ach_locked</lockImage>
+					<multiDifficulty>false</multiDifficulty>
+				</mod-append:achievement>
+				<mod-append:achievement name="ACH_BOON_FM_TERMINUS">
+					<name>Blessing of Twistedness</name>
+					<secretDescription>Receive the Blessing of ??? from Wakeson.</secretDescription>
+					<description>Show the Terminus to Wakeson. 
+					While in effect; All crew stats are raised by 5%, most ship stats are increased by 5%.</description>
+					<header>Boon Received</header>
+					<icon>ach_placeholder</icon>
+					<lockImage>ach_locked</lockImage>
+					<multiDifficulty>false</multiDifficulty>
+				</mod-append:achievement>
+			</mod:findLike>
+		</mod:findLike>
 	</mod:findLike>
 	<mod:findLike type="store">
 		<mod:findLike type="customStore">
