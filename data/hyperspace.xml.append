@@ -372,7 +372,7 @@
 
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED1"><!--guild-->
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
-			<hiddenAug>SHIP_GUILD</hiddenAug>
+			<hiddenAug>SHIP_SLUG</hiddenAug>
 			<crewLimit>10</crewLimit>
 			<crew>
 				<slug_knight room="20" name="P.Escobar" />
@@ -7642,10 +7642,8 @@
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<priority>999999</priority>
-					<blackList>
-						<husk_slug/>
-						<husk_slug_player/>
-					</blackList>
+					<affectsSelf>false</affectsSelf>
+					<maxStacks>3</maxStacks>
 				</statBoost>
 
 			</passiveStatBoosts>
@@ -7670,10 +7668,8 @@
 					<crewTarget>ALL</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<priority>999999</priority>
-					<blackList>
-						<husk_slug/>
-						<husk_slug_player/>
-					</blackList>
+					<affectsSelf>false</affectsSelf>
+					<maxStacks>3</maxStacks>
 				</statBoost>
 
 			</passiveStatBoosts>
@@ -16573,7 +16569,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<description>Show a Plated crew to Thest. 
 					While in effect; All Plated crew gain a +1 Ability charge.</description>
 					<header>Boon Received</header>
-					<icon>ach_placeholder</icon>
+					<icon>ach_boon_fm_plated</icon>
 					<multiDifficulty>false</multiDifficulty>
 				</mod-append:achievement>
 			</mod:findLike>
@@ -16585,7 +16581,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<description>Show Modular Hull to Corby. 
 					While in effect; Modular Hull gains +2 notch capacity.</description>
 					<header>Boon Received</header>
-					<icon>ach_placeholder</icon>
+					<icon>ach_boon_fm_forgearmor</icon>
 					<multiDifficulty>false</multiDifficulty>
 				</mod-append:achievement>
 			</mod:findLike>
@@ -16597,7 +16593,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<description>Show a forged weapon to Wakeson. 
 					While in effect; The Forgemaster spawns automatically without Calling.</description>
 					<header>Boon Received</header>
-					<icon>ach_placeholder</icon>
+					<icon>ach_boon_fm_forgeweapon</icon>
 					<multiDifficulty>false</multiDifficulty>
 				</mod-append:achievement>
 				<mod-append:achievement name="ACH_BOON_FM_FORGEWEAPON_2">

@@ -21,7 +21,7 @@
 <!-- ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣ ♣   -->
 
 <FTL> <!--STORAGE CHECK APPENDS TO CHECK FOR PLAYER COMPONENTS, AND ADD RECIPE LIST-->
-  <mod:findName type = "event" name = "STORAGE_CHECK_REAL">
+  <mod:findName type="event" name="STORAGE_CHECK_REAL">
 
     <!-- Forge requirements check. if none in the list check out, shows recipe list
     \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -120,7 +120,7 @@
 </FTL>
 
 <FTL> <!--STORAGE CHECK APPENDS TO STORAGE CHECK BUTTON-->
-  <mod:findName type = "event" name = "STORAGE_CHECK_BUTTON">
+  <mod:findName type="event" name="STORAGE_CHECK_BUTTON">
 
 
     <!-- Forge requirements check. if none in the list check out, shows recipe list
@@ -216,7 +216,7 @@
 </FTL>
 
 <FTL> <!--LORE JOURNAL IMPLEMENTATION-->
-  <mod:findName type = "event" name = "STORAGE_CHECK_STATUS_REAL">
+  <mod:findName type="event" name="STORAGE_CHECK_STATUS_REAL">
 
 
     <!-- FORGEMASTER LORE JOURNAL! GLOBAL VARIABLE THAT STORES ALL LORE COLLECTED INSIDE YOUR RUNS!! -->
@@ -4362,7 +4362,7 @@
   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
-  <mod:findName type = "event" name = "COMBAT_CHECK_TOGGLE">
+  <mod:findName type="event" name="COMBAT_CHECK_TOGGLE">
     <mod-append:choice req="FM_FOCUS_FUELED_1" lvl="1" hidden="true" blue="false">
       <text>(Amp Pinpoint) Set the state of the weapon. [Current power: 2]</text>
       <event load="FM_COMBAT_CHECK_AMP_FOCUS_1"/>
@@ -4455,7 +4455,7 @@
 
 
     <!--AUTOCANNON AMMO TOGGLE-->
-  	<mod-append:choice req = "FM_RVS_AC_CHARGE" blue = "false"> <!--Volley Gun Ammo Types -->
+  	<mod-append:choice req="FM_RVS_AC_CHARGE" blue="false"> <!--Volley Gun Ammo Types -->
   		<text>(Volley Gun) Change the ammo loaded for your Volley Gun [Current mode: Standard, 1 power]</text>
   		<event>
   			<loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE</loadEvent>
@@ -4463,7 +4463,7 @@
   			<variable name="gb_ammo_toggle" op="set" val="1"/>
   		</event>
   	</mod-append:choice>
-  	<mod-append:choice req = "FM_RVS_AC_CHARGE_CASELESS" blue = "false">
+  	<mod-append:choice req="FM_RVS_AC_CHARGE_CASELESS" blue="false">
   		<text>(Volley Gun) Change the ammo loaded for your Volley Gun [Current mode: Caseless, 1 power]</text>
   		<event>
   			<loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE</loadEvent>
@@ -4471,7 +4471,7 @@
   			<variable name="gb_ammo_toggle" op="set" val="2"/>
   		</event>
   	</mod-append:choice>
-  	<mod-append:choice req = "FM_RVS_AC_CHARGE_HV" blue = "false">
+  	<mod-append:choice req="FM_RVS_AC_CHARGE_HV" blue="false">
   		<text>(Volley Gun) Change the ammo loaded for your Volley Gun [Current mode: High Velocity, 1 power]</text>
   		<event>
   			<loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE</loadEvent>
@@ -4479,7 +4479,7 @@
   			<variable name="gb_ammo_toggle" op="set" val="3"/>
   		</event>
   	</mod-append:choice>
-  	<mod-append:choice req = "FM_RVS_AC_CHARGE_FREE" blue = "false">
+  	<mod-append:choice req="FM_RVS_AC_CHARGE_FREE" blue="false">
   		<text>(Volley Gun) Change the ammo loaded for your Volley Gun [Current mode: Recycler, 1 power]</text>
   		<event>
   			<loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE</loadEvent>
@@ -4487,7 +4487,7 @@
   			<variable name="gb_ammo_toggle" op="set" val="4"/>
   		</event>
   	</mod-append:choice>
-  	<mod-append:choice req = "FM_RVS_AC_CHARGE_HE" blue = "false">
+  	<mod-append:choice req="FM_RVS_AC_CHARGE_HE" blue="false">
   		<text>(Volley Gun) Change the ammo loaded for your Volley Gun [Current mode: Concussive, 1 power]</text>
   		<event>
   			<loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE</loadEvent>
@@ -4495,7 +4495,7 @@
   			<variable name="gb_ammo_toggle" op="set" val="5"/>
   		</event>
   	</mod-append:choice>
-  	<mod-append:choice req = "FM_RVS_AC_CHARGE_EMP" blue = "false">
+  	<mod-append:choice req="FM_RVS_AC_CHARGE_EMP" blue="false">
   		<text>(Volley Gun) Change the ammo loaded for your Volley Gun [Current mode: EMP, 1 power]</text>
   		<event>
   			<loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE</loadEvent>
@@ -4503,7 +4503,7 @@
   			<variable name="gb_ammo_toggle" op="set" val="6"/>
   		</event>
   	</mod-append:choice>
-  	<mod-append:choice req = "FM_RVS_AC_CHARGE_HEAT" blue = "false">
+  	<mod-append:choice req="FM_RVS_AC_CHARGE_HEAT" blue="false">
   		<text>(Volley Gun) Change the ammo loaded for your Volley Gun [Current mode: Particle, 1 power]</text>
   		<event>
   			<loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE</loadEvent>
@@ -4511,7 +4511,7 @@
   			<variable name="gb_ammo_toggle" op="set" val="7"/>
   		</event>
   	</mod-append:choice>
-  	<mod-append:choice req = "FM_RVS_AC_CHARGE_INCENDIARY" blue = "false">
+  	<mod-append:choice req="FM_RVS_AC_CHARGE_INCENDIARY" blue="false">
   		<text>(Volley Gun) Change the ammo loaded for your Volley Gun [Current mode: Incendiary, 1 power]</text>
   		<event>
   			<loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE</loadEvent>
@@ -4519,7 +4519,7 @@
   			<variable name="gb_ammo_toggle" op="set" val="8"/>
   		</event>
   	</mod-append:choice>
-  	<mod-append:choice req = "FM_RVS_AC_CHARGE_FLECHETTE" blue = "false">
+  	<mod-append:choice req="FM_RVS_AC_CHARGE_FLECHETTE" blue="false">
   		<text>(Volley Gun) Change the ammo loaded for your Volley Gun [Current mode: Flechette, 1 power]</text>
   		<event>
   			<loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE</loadEvent>
@@ -4527,7 +4527,7 @@
   			<variable name="gb_ammo_toggle" op="set" val="9"/>
   		</event>
   	</mod-append:choice>
-  	<mod-append:choice req = "FM_RVS_AC_CHARGE_RAD" blue = "false">
+  	<mod-append:choice req="FM_RVS_AC_CHARGE_RAD" blue="false">
   		<text>(Volley Gun) Change the ammo loaded for your Volley Gun [Current mode:Rad, 1 power]</text>
   		<event>
   			<loadEvent>COMBAT_CHECK_FM_RVS_AC_CHARGE</loadEvent>
@@ -5763,7 +5763,7 @@
   COMBAT CHECKS EVENTS, FOR RAMMING SPEED
   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\      -->
 
-  <mod:findName type = "event" name = "COMBAT_CHECK_REAL">
+  <mod:findName type="event" name="COMBAT_CHECK_REAL">
     <mod-append:choice req="LOCKED_RAMMING_SPEED" lvl="1" max_group="602" hidden="true">
       <text>Show options to ram this hunk of inert weaponry into an enemy system, Dealing damage to your engines, your hull, as well as the target's.</text>
       <event load="COMBAT_CHECK_RAMMING_MENU"/>
@@ -5801,7 +5801,7 @@
   <!-- Move other menus example options to the bottom -->
 
 
-  <mod:findName type = "event" name = "COMBAT_CHECK_FLAGSHIP_REAL">
+  <mod:findName type="event" name="COMBAT_CHECK_FLAGSHIP_REAL">
     <mod-append:choice req="LOCKED_RAMMING_SPEED" lvl="1" max_group="602" hidden="true" blue="true">
       <text>Show options to ram this hunk of inert weaponry into an enemy system, Dealing damage to your engines, your hull, as well as the target's.</text>
       <event load="COMBAT_CHECK_RAMMING_MENU"/>
@@ -6748,35 +6748,35 @@
 
 
   <!-- AUGMENT USAGE MENU -->
-  <mod:findName type = "event" name = "STORAGE_CHECK_AUG">
-    <mod-append:choice req="TWISTED_MANTIS_UPGRADER" blue ="true">
+  <mod:findName type="event" name="STORAGE_CHECK_AUG">
+    <mod-append:choice req="TWISTED_MANTIS_UPGRADER" blue="true">
       <text>Have a tea party with some of Her Majesty's finest tea.</text>
       <event load="STORAGE_CHECK_AUG_TWISTED_MANTIS_UPGRADE_MENU"/>
     </mod-append:choice>
-    <!--<mod-append:choice req="TWISTED_FLAK_FORGE" blue ="true">
+    <!--<mod-append:choice req="TWISTED_FLAK_FORGE" blue="true">
       <text>Make use of the Flak Forge (Placeholder, you should never see this for now).</text>
       <event load="STORAGE_CHECK_TWISTED_FLAK_FORGE_MENU"/>
     </mod-append:choice>-->
-    <!--<mod-append:choice req="TWISTED_KESTREL_GHOST_SUMMON" blue ="true">
+    <!--<mod-append:choice req="TWISTED_KESTREL_GHOST_SUMMON" blue="true">
       <text>Summon a horde of ghosts (will be changed later).</text>
       <event load="STORAGE_CHECK_TWISTED_KESTREL_GHOST_MENU"/>
       </mod-append:choice>For now will just summon five random ghosts, we should improve this later-->
-    <!--<mod-append:choice req="TWISTED_FLAK_FORGE" blue ="true">
+    <!--<mod-append:choice req="TWISTED_FLAK_FORGE" blue="true">
       <text>Make use of the Flak Forge to install an artillery system.</text>
       <event>
         <text>Do you want to install an artillery system? (bypasses system limit if you got full systems)</text>
-        <choice req="CAN_INSTALL_FLAK_ARTILLERY" max_group="1" blue ="true">
+        <choice req="CAN_INSTALL_FLAK_ARTILLERY" max_group="1" blue="true">
           <text>install an artillery system [-50 flak juice]</text>
           <event>
             <loadEvent>INSTALL_ARTILLERY</loadEvent>
           </event>
         </choice>
-        <choice req="CAN_INSTALL_FLAK_ARTILLERY" lvl="0" hidden="true" blue ="true" max_group="1">
+        <choice req="CAN_INSTALL_FLAK_ARTILLERY" lvl="0" hidden="true" blue="true" max_group="1">
           <text>you cannot install an artillery system</text>
           <event load="OPTION_INVALID"/>
         </choice>
 
-        <choice req="SHOTGUN_TOGGLE_FIRE_INVIS" lvl="9" hidden="true" blue ="true" max_group="1">
+        <choice req="SHOTGUN_TOGGLE_FIRE_INVIS" lvl="9" hidden="true" blue="true" max_group="1">
           <text>you can't fit any more artillery systems on your ship</text>
           <event load="OPTION_INVALID"/>
         </choice>
@@ -7697,7 +7697,7 @@
       </event>
     </choice>
 
-    <choice hidden="true" req="mantis" lvl = "0" blue = "false" max_group="0">
+    <choice hidden="true" req="mantis" lvl="0" blue="false" max_group="0">
       <text>You do not have a Hive Mantis to convert into a Free Mantis. [Tax: 10~]</text>
       <event load="OPTION_INVALID"/>
     </choice>
@@ -7717,12 +7717,12 @@
       </event>
     </choice>
 
-    <choice hidden="true" req="mantis" lvl = "0" blue = "false" max_group="1">
+    <choice hidden="true" req="mantis" lvl="0" blue="false" max_group="1">
       <text>You do not have a Hive Mantis to convert into a Suzerain. [Tax: 40~]</text>
       <event load="OPTION_INVALID"/>
     </choice>
 
-    <choice hidden="true" req="mantis_suzerain" blue="false" max_group ="2">
+    <choice hidden="true" req="mantis_suzerain" blue="false" max_group="2">
       <text>Convert your Suzerain into a Bishop. [Tax: 80~]</text>
       <event>
         <text load="TEXT_TWISTED_MANTIS_UPGRADE_SUZERAIN_TO_BISHOP"/>
@@ -7737,7 +7737,7 @@
       </event>
     </choice>
 
-    <choice hidden="true" req="mantis_suzerain" lvl = "0" blue = "false" max_group="2">
+    <choice hidden="true" req="mantis_suzerain" lvl="0" blue="false" max_group="2">
       <text>You do not have a Suzerain to convert into a Bishop. [Tax: 80~]</text>
       <event load="OPTION_INVALID"/>
     </choice>
@@ -7757,7 +7757,7 @@
       </event>
     </choice>
 
-    <choice hidden="true" req="mantis_free" lvl = "0" blue = "false" max_group="3">
+    <choice hidden="true" req="mantis_free" lvl="0" blue="false" max_group="3">
       <text>You do not have a Free Mantis to convert into a Hive Mantis. [Tax: 20~]</text>
       <event load="OPTION_INVALID"/>
     </choice>
@@ -7777,12 +7777,12 @@
       </event>
     </choice>
 
-    <choice hidden="true" req="mantis_free" lvl = "0" blue = "false" max_group="4">
+    <choice hidden="true" req="mantis_free" lvl="0" blue="false" max_group="4">
       <text>You do not have a Free Mantis to convert into a Warlord. [Tax: 40~]</text>
       <event load="OPTION_INVALID"/>
     </choice>
 
-    <choice hidden="true" req="mantis_warlord" blue="false" max_group ="5">
+    <choice hidden="true" req="mantis_warlord" blue="false" max_group="5">
       <text>Convert your Warlord into a Crackerjack. [Tax: 80~]</text>
       <event>
         <text load="TEXT_TWISTED_MANTIS_UPGRADE_WARLORD_TO_CRACKERJACK"/>
@@ -7797,7 +7797,7 @@
       </event>
     </choice>
 
-    <choice hidden="true" req="mantis_warlord" lvl = "0" blue = "false" max_group="5">
+    <choice hidden="true" req="mantis_warlord" lvl="0" blue="false" max_group="5">
       <text>You do not have a Warlord to convert into a Crackerjack. [Tax: 80~]</text>
       <event load="OPTION_INVALID"/>
     </choice>
@@ -8653,7 +8653,7 @@
 
 <FTL> <!-- DELAY FLEET-->
   <!-- DELAY FLEET
-  <mod:findName type = "event" name = "STORAGE_CHECK_JOB">
+  <mod:findName type="event" name="STORAGE_CHECK_JOB">
   <mod-append:choice  req="FM_MINELAUNCHER_CHECK" lvl="2" max_group="4" blue="false" hidden="true">
   <text>[Forgemaster]Lay a trap for the fleet.</text>
   <event load="STORAGE_CHECK_JOB_FLEET"/>    </mod-append:choice>
@@ -8662,7 +8662,7 @@
   <mod:setAttributes max_group="605"/>    </mod:findWithChildLike>  </mod:findName>-->
 
 
-  <mod:findName type = "event" name = "STORAGE_CHECK_JOB_FLEET">
+  <mod:findName type="event" name="STORAGE_CHECK_JOB_FLEET">
     <mod-append:choice req="FM_MINELAUNCHER_HULL" hidden="true">
       <text>Use your 'Ba-Pef' Mine Launcher  [-21}, Gives 5 delay]</text>
       <event>
@@ -8791,7 +8791,7 @@
   <!-- CREW LABS PLATED -->
 
 
-  <mod:findName type = "event" name = "STORAGE_CHECK_LAB_ROCK">
+  <mod:findName type="event" name="STORAGE_CHECK_LAB_ROCK">
     <mod-append:choice req="LAB_PLATED_REGEN" lvl="1" max_group="601" blue="false" hidden="true">
       <text>Sec [Plate]: Electroplating Medigel. [An upgrade is already installed]
         [Plated heal twice as fast and heal slowly on their own at (1.2)hp/s, but lose 30% max health and 10% movespeed.]
@@ -8955,7 +8955,7 @@
 
 <FTL> <!-- Internal Augment Install Storage Check -->
   <!-- Internal Augment Install Storage Check -->
-  <mod:findName type = "event" name = "STORAGE_CHECK_SYSTEM">
+  <mod:findName type="event" name="STORAGE_CHECK_SYSTEM">
     <mod-append:choice  req="oxygen" blue="false" hidden="true">
       <text>The Life Support.</text>
       <event load="FM_STORAGE_CHECK_SYSTEM_OXYGEN"/>
@@ -9103,7 +9103,7 @@
 </FTL>
 
 <FTL> <!-- Crew Talk -->
-  <mod:findName type = "event" name = "STORAGE_CHECK_CREW_LIST_ENGI">
+  <mod:findName type="event" name="STORAGE_CHECK_CREW_LIST_ENGI">
 
     <mod-append:choice req="unique_remington" lvl="1" max_group="605" blue="false" hidden="true">
       <text>Look for Remington.</text>
@@ -9127,7 +9127,7 @@
     </mod:findWithChildLike>
   </mod:findName>
 
-  <mod:findName type = "event" name = "STORAGE_CHECK_CREW_LIST_ROCK">
+  <mod:findName type="event" name="STORAGE_CHECK_CREW_LIST_ROCK">
     <mod-append:choice req="fm_plated" lvl="1" max_group="600" blue="false" hidden="true">
       <text>Look for your Plated Rockman.</text>
       <event load="STORAGE_CHECK_CREW_PLATED"/>
@@ -9519,41 +9519,41 @@
   </mod:findName>
   <event name="STORAGE_CHECK_SYSTEM_CLOAK_LEVEL6">
     <text>You are about to upgrade the cloaking to level 6.
-      [Effects: 30 second cloak, is compatible with Shadow Weaponry]</text>
-      <choice req="UPG_CLOAK_FIRE" lvl="0" max_group="0" blue="false" hidden="true">
-        <text>Perform the upgrade. [Cost: 170~, 5{, 1|]</text>
-        <event>
-          <text>You install the upgrade.</text>
-          <upgrade amount="1" system="cloaking" />
-          <item_modify>
-            <item type="fuel" min="-5" max="-5" />
-            <item type="drones" min="-1" max="-1" />
-            <item type="scrap" min="-170" max="-170" />
-          </item_modify>
-          <choice>
-            <text>Continue...</text>
-            <event load="STORAGE_CHECK_SYSTEM_LOAD" />
-          </choice>
-        </event>
-      </choice>
-      <choice req="pilot" lvl="1" max_group="1" blue="false" hidden="true">
-        <text>Nevermind.</text>
-        <event load="STORAGE_CHECK_SYSTEM_LOAD" />
-      </choice>
-    </event>
-  </FTL>
+    [Effects: 30 second cloak, is compatible with Shadow Weaponry]</text>
+    <choice req="UPG_CLOAK_FIRE" lvl="0" max_group="0" blue="false" hidden="true">
+      <text>Perform the upgrade. [Cost: 170~, 5{, 1|]</text>
+      <event>
+        <text>You install the upgrade.</text>
+        <upgrade amount="1" system="cloaking" />
+        <item_modify>
+          <item type="fuel" min="-5" max="-5" />
+          <item type="drones" min="-1" max="-1" />
+          <item type="scrap" min="-170" max="-170" />
+        </item_modify>
+        <choice>
+          <text>Continue...</text>
+          <event load="STORAGE_CHECK_SYSTEM_LOAD" />
+        </choice>
+      </event>
+    </choice>
+    <choice req="pilot" lvl="1" max_group="1" blue="false" hidden="true">
+      <text>Nevermind.</text>
+      <event load="STORAGE_CHECK_SYSTEM_LOAD" />
+    </choice>
+  </event>
+</FTL>
 
 <FTL>
 
   <!--twisted monk stuff-->
 
 
-  <mod:findName type="event" name ="COMBAT_CHECK_REAL">
+  <mod:findName type="event" name="COMBAT_CHECK_REAL">
 
 
 
 
-    <mod-append:choice req = "TWISTED_BLESSING" hidden="true">
+    <mod-append:choice req="TWISTED_BLESSING" hidden="true">
   		<text>Draw upon your stored rage.</text>
   		<event load="COMBAT_CHECK_TWISTED_BLESSING_MENU"/>
   	</mod-append:choice>
@@ -9562,67 +9562,67 @@
   <event name="COMBAT_CHECK_TWISTED_BLESSING_MENU">
   	<text>You consider your options. As you do so, you feel as if you are being watched.</text>
 
-  	<choice req = "twisted_blessing_counter" lvl = "1" blue = "false" max_group="2">
+  	<choice req="twisted_blessing_counter" lvl="1" blue="false" max_group="2">
   			<text>Release a trivial amount of rage.(1 hull damage to enemy, 1 rage cost)</text>
   			<event>
   				<text>A negligable effect, to be sure. Yet no strike is wasted in the field of battle.</text>
-  				<variable name = "twisted_blessing_counter" op = "add" val = "-1"/>
+  				<variable name="twisted_blessing_counter" op="add" val="-1"/>
   				<enemyDamage amount="1"/>
   			</event>
   	</choice>
-  	<choice req = "twisted_blessing_counter" max_lvl = "0" blue = "false" hidden ="true" max_group="2">
+  	<choice req="twisted_blessing_counter" max_lvl="0" blue="false" hidden="true" max_group="2">
   			<text>Release a trivial amount of rage.(1 hull damage to enemy, 1 rage cost)</text>
   			<event load="OPTION_INVALID"/>
   	</choice>
 
-  	<choice req = "twisted_blessing_counter" lvl = "7" blue = "false" max_group = "3">
+  	<choice req="twisted_blessing_counter" lvl="7" blue="false" max_group="3">
   			<text>Draw upon a considerable amount of rage.(7 hull damage to enemy, minor status effect, 7 rage cost)</text>
   			<event>
   				<text>A decisive blow, tipping the scales in your favor. You feel lightheaded, but rest must wait. </text>
-  				<variable name = "twisted_blessing_counter" op = "add" val = "-7"/>
-  				<enemyDamage amount="2"	system ="random" effect ="random"/>
+  				<variable name="twisted_blessing_counter" op="add" val="-7"/>
+  				<enemyDamage amount="2"	system="random" effect="random"/>
   				<enemyDamage amount="5"/>
   			</event>
   	</choice>
 
-  	<choice req = "twisted_blessing_counter" max_lvl = "6" blue = "false" hidden ="true" max_group = "3">
+  	<choice req="twisted_blessing_counter" max_lvl="6" blue="false" hidden="true" max_group="3">
   			<text>Draw upon a considerable amount of rage.(7 hull damage to enemy, minor status effect, 7 rage cost)</text>
   			<event load="OPTION_INVALID"/>
   	</choice>
 
-  	<choice req = "twisted_blessing_counter" lvl = "14" blue = "false" max_group = "4">
+  	<choice req="twisted_blessing_counter" lvl="14" blue="false" max_group="4">
   			<text>Unleash a significant amount of rage.(14 hull damage to enemy, status effects, 14 rage cost)</text>
   			<event>
   				<text>A devastating strike, bringing victory ever nearer. The ship shakes as if caught in a wind. </text>
-  				<variable name = "twisted_blessing_counter" op = "add" val = "-14"/>
-  				<enemyDamage amount="7" effect ="random"/>
-  				<enemyDamage amount="3"	system ="random" effect ="random"/>
-  				<enemyDamage amount="2"	system ="random"/>
+  				<variable name="twisted_blessing_counter" op="add" val="-14"/>
+  				<enemyDamage amount="7" effect="random"/>
+  				<enemyDamage amount="3"	system="random" effect="random"/>
+  				<enemyDamage amount="2"	system="random"/>
   				<enemyDamage amount="2"/>
   			</event>
   	</choice>
 
-  	<choice req = "twisted_blessing_counter" max_lvl = "13" blue = "false" hidden ="true" max_group = "4">
+  	<choice req="twisted_blessing_counter" max_lvl="13" blue="false" hidden="true" max_group="4">
   			<text>Unleash a significant amount of rage.(14 hull damage to enemy, status effects, 14 rage cost)</text>
   			<event load="OPTION_INVALID"/>
   	</choice>
 
-  	<choice req = "twisted_blessing_counter" lvl = "21" blue = "false" max_group ="5">
+  	<choice req="twisted_blessing_counter" lvl="21" blue="false" max_group="5">
   			<text>Unleash a devastating amount of rage.(21 hull damage to enemy, status effects, ignores resist, 21 rage cost)</text>
   			<event>
   				<text>All thoughts of mercy are gone. You hear laughter in the distance. </text>
-  				<variable name = "twisted_blessing_counter" op = "add" val = "-21"/>
-  				<enemyDamage amount="7" effect ="random"/>
-  				<enemyDamage amount="3"	system ="random" effect ="all" force = "true"/>
-  				<enemyDamage amount="2"	system ="random" effect ="random" force = "true"/>
-  				<enemyDamage amount="2"	system ="random" effect ="random" force = "true" />
-  				<enemyDamage amount="2"	system ="oxygen" effect ="breach" force = "true" />
-  				<enemyDamage amount="1"	system ="pilot" effect ="fire" force = "true" />
+  				<variable name="twisted_blessing_counter" op="add" val="-21"/>
+  				<enemyDamage amount="7" effect="random"/>
+  				<enemyDamage amount="3"	system="random" effect="all" force="true"/>
+  				<enemyDamage amount="2"	system="random" effect="random" force="true"/>
+  				<enemyDamage amount="2"	system="random" effect="random" force="true" />
+  				<enemyDamage amount="2"	system="oxygen" effect="breach" force="true" />
+  				<enemyDamage amount="1"	system="pilot" effect="fire" force="true" />
   				<enemyDamage amount="4"/>
   			</event>
   	</choice>
 
-  	<choice req = "twisted_blessing_counter" max_lvl = "20" blue = "false" hidden ="true" max_group ="5">
+  	<choice req="twisted_blessing_counter" max_lvl="20" blue="false" hidden="true" max_group="5">
   			<text>Unleash a devastating amount of rage.(21 hull damage to enemy, status effects, ignores resist, 21 rage cost)</text>
   			<event load="OPTION_INVALID"/>
   	</choice>
@@ -9648,8 +9648,8 @@
   </event>
 
 
-  <mod:findName type="event" name ="STORAGE_CHECK_REAL">
-  	<mod-append:choice req = "TWISTED_BLESSING" hidden="true" blue = "false">
+  <mod:findName type="event" name="STORAGE_CHECK_REAL">
+  	<mod-append:choice req="TWISTED_BLESSING" hidden="true" blue="false">
   		<text>(Twisted Blessing) Enter a dark meditation.</text>
   		<event load="STORAGE_CHECK_TWISTED_BLESSING"/>
   	</mod-append:choice>
@@ -9661,14 +9661,14 @@
           <text>Meditate briefly. (1 rage gained)</text>
           <event>
               <text>Even the day to day frustrations of your crew are enough to sustain your blessing.</text>
-              <variable name = "twisted_blessing_counter" op = "add" val = "1"/>
+              <variable name="twisted_blessing_counter" op="add" val="1"/>
           </event>
       </choice>
       <choice hidden="true" req="loc_laststand" lvl="0" max_group="0" blue="false">
           <text>Meditate for 1 jump. (7 rage gained)</text>
           <event>
               <text>You recall the last time an enemy escaped. You clench your teeth in frustration.</text>
-              <variable name = "twisted_blessing_counter" op = "add" val = "7"/>
+              <variable name="twisted_blessing_counter" op="add" val="7"/>
               <modifyPursuit amount="1"/>
           </event>
       </choice>
@@ -9680,7 +9680,7 @@
           <text>Meditate for 2 jumps. (14 rage gained)</text>
           <event>
               <text>You recall the last time one of your crew was taken too soon. Unavoidable or not, it cannnot be tolerated.</text>
-  			<variable name = "twisted_blessing_counter" op = "add" val = "14"/>
+  			<variable name="twisted_blessing_counter" op="add" val="14"/>
               <modifyPursuit amount="2"/>
           </event>
       </choice>
@@ -9692,7 +9692,7 @@
           <text>Meditate for 3 jumps. (21 rage gained)</text>
           <event>
               <text>You have nightmares of countless Renegades like you being torn to shreds by numerous Flagships across the Multiverse. You decide that every last one of their lives must be paid for... In full.</text>
-              <variable name = "twisted_blessing_counter" op = "add" val = "21"/>
+              <variable name="twisted_blessing_counter" op="add" val="21"/>
               <modifyPursuit amount="3"/>
           </event>
       </choice>
@@ -9708,8 +9708,8 @@
       </choice>
   </event>
 
-  <mod:findName type="event" name ="COMBAT_CHECK_FLAGSHIP_REAL">
-  	<mod-append:choice req = "TWISTED_BLESSING" hidden="true">
+  <mod:findName type="event" name="COMBAT_CHECK_FLAGSHIP_REAL">
+  	<mod-append:choice req="TWISTED_BLESSING" hidden="true">
   		<text>Draw upon your stored rage.</text>
   		<event load="COMBAT_CHECK_TWISTED_BLESSING_MENU_FLAGSHIP"/>
   	</mod-append:choice>
@@ -9718,18 +9718,18 @@
   <event name="COMBAT_CHECK_TWISTED_BLESSING_MENU_FLAGSHIP">
   	<text>You consider your options. If ever, now is the time to strike.</text>
 
-  	<choice req = "twisted_blessing_counter" lvl = "1" blue = "false" max_group="2">
+  	<choice req="twisted_blessing_counter" lvl="1" blue="false" max_group="2">
 
   		<text>Release a trivial amount of rage.(1 hull damage to the Flagship, 1 rage cost)</text>
   			<event>
   				<text>A negligable first strike, a mere drop in the bucket against such a formidable foe. Yet as the first of many, it heralds the start of your ultimate battle.</text>
-  				<variable name = "twisted_blessing_counter" op = "add" val = "-1"/>
+  				<variable name="twisted_blessing_counter" op="add" val="-1"/>
   				<enemyDamage amount="1"/>
   			</event>
   	</choice>
 
 
-  	<choice req = "twisted_blessing_counter" max_lvl = "0" blue = "false" hidden ="true" max_group="2">
+  	<choice req="twisted_blessing_counter" max_lvl="0" blue="false" hidden="true" max_group="2">
 
   		<text>Release a trivial amount of rage.(1 hull damage to the Flagship, 1 rage cost)</text>
   		<event load="OPTION_INVALID"/>
@@ -9737,60 +9737,60 @@
 
 
 
-  	<choice req = "twisted_blessing_counter" lvl = "7" blue = "false" max_group = "3">
+  	<choice req="twisted_blessing_counter" lvl="7" blue="false" max_group="3">
   			<text>Draw upon a considerable amount of rage.(7 hull damage to the Flagship, minor status effect, 7 rage cost)</text>
   			<event>
   				<text>A decisive blow, setting the field of combat in motion. The eyes of the Federation are upon you, and they are not the only ones. </text>
-  				<variable name = "twisted_blessing_counter" op = "add" val = "-7"/>
-  				<enemyDamage amount="2"	system ="random" effect ="random"/>
+  				<variable name="twisted_blessing_counter" op="add" val="-7"/>
+  				<enemyDamage amount="2"	system="random" effect="random"/>
   				<enemyDamage amount="5"/>
   			</event>
   	</choice>
 
 
-  	<choice req = "twisted_blessing_counter" max_lvl = "6" blue = "false" hidden ="true" max_group = "3">
+  	<choice req="twisted_blessing_counter" max_lvl="6" blue="false" hidden="true" max_group="3">
   			<text>Draw upon a considerable amount of rage.(7 hull damage to the Flagship, minor status effect, 7 rage cost)</text>
   			<event load="OPTION_INVALID"/>
   	</choice>
 
 
 
-  	<choice req = "twisted_blessing_counter" lvl = "14" blue = "false" max_group = "4">
+  	<choice req="twisted_blessing_counter" lvl="14" blue="false" max_group="4">
   			<text>Unleash a significant amount of rage.(14 hull damage to the Flagship, status effects, 14 rage cost)</text>
   			<event>
   				<text>A devastating strike, sending the Flagship reeling as you press on to finish the job. The ship pulses with an otherworldly light.</text>
-  				<variable name = "twisted_blessing_counter" op = "add" val = "-14"/>
-  				<enemyDamage amount="7" effect ="random"/>
-  				<enemyDamage amount="3"	system ="random" effect ="random"/>
-  				<enemyDamage amount="2"	system ="random"/>
+  				<variable name="twisted_blessing_counter" op="add" val="-14"/>
+  				<enemyDamage amount="7" effect="random"/>
+  				<enemyDamage amount="3"	system="random" effect="random"/>
+  				<enemyDamage amount="2"	system="random"/>
   				<enemyDamage amount="2"/>
   			</event>
   	</choice>
 
 
 
-  	<choice req = "twisted_blessing_counter" max_lvl = "13" blue = "false" hidden ="true" max_group = "4">
+  	<choice req="twisted_blessing_counter" max_lvl="13" blue="false" hidden="true" max_group="4">
   			<text>Unleash a significant amount of rage.(14 hull damage to the Flagship, status effects, 14 rage cost)</text>
   			<event load="OPTION_INVALID"/>
   	</choice>
 
-  		<choice req = "twisted_blessing_counter" lvl = "21" blue = "false" max_group ="5">
+  		<choice req="twisted_blessing_counter" lvl="21" blue="false" max_group="5">
   			<text>Unleash a devastating amount of rage.(21 hull damage to the Flagship, status effects, ignores resist, 21 rage cost)</text>
   			<event>
   				<text>A merciless strike against your truest foe. You turn to command your crew, but the words that come out are not your own. </text>
-  				<variable name = "twisted_blessing_counter" op = "add" val = "-21"/>
-  				<enemyDamage amount="7" effect ="random"/>
-  				<enemyDamage amount="3"	system ="random" effect ="all" force = "true"/>
-  				<enemyDamage amount="2"	system ="random" effect ="random" force = "true"/>
-  				<enemyDamage amount="2"	system ="random" effect ="random" force = "true" />
-  				<enemyDamage amount="2"	system ="oxygen" effect ="breach" force = "true" />
-  				<enemyDamage amount="1"	system ="pilot" effect ="fire" force = "true" />
+  				<variable name="twisted_blessing_counter" op="add" val="-21"/>
+  				<enemyDamage amount="7" effect="random"/>
+  				<enemyDamage amount="3"	system="random" effect="all" force="true"/>
+  				<enemyDamage amount="2"	system="random" effect="random" force="true"/>
+  				<enemyDamage amount="2"	system="random" effect="random" force="true" />
+  				<enemyDamage amount="2"	system="oxygen" effect="breach" force="true" />
+  				<enemyDamage amount="1"	system="pilot" effect="fire" force="true" />
   				<enemyDamage amount="4"/>
   			</event>
   	</choice>
 
 
-  	<choice req = "twisted_blessing_counter" max_lvl = "20" blue = "false" hidden ="true" max_group ="5">
+  	<choice req="twisted_blessing_counter" max_lvl="20" blue="false" hidden="true" max_group="5">
   			<text>Unleash a devastating amount of rage.(21 hull damage to the Flagship, status effects, ignores resist, 21 rage cost)</text>
   			<event load="OPTION_INVALID"/>
   	</choice>
@@ -9834,4 +9834,39 @@
       </mod:findLike>
     </mod:findLike>
   </mod:findName>-->
+</FTL>
+
+<FTL> <!--boons-->
+  <mod:findName type="event" name="STORAGE_CHECK_INVENTORY">
+    <mod-append:choice hidden="true" req="JUDGE_BOON_FM_PLATED" blue="false">
+      <text>Currently active blessing: Boon of Plated
+    Plated crew can hold on more Ability charge.</text>
+      <event load="OPTION_INVALID"/>
+    </mod-append:choice>
+    <mod-append:choice hidden="true" req="JUDGE_BOON_FM_FORGEARMOR" blue="false">
+      <text>Currently active blessing: Grant of Armouring
+    Modular Hull can be equipped with two more notches.</text>
+      <event load="OPTION_INVALID"/>
+    </mod-append:choice>
+    <mod-append:choice hidden="true" req="JUDGE_BOON_FM_FORGEWEAPON" blue="false">
+      <text>Currently active blessing: Blessing of Forges
+    Alastair will come to all regular sectors free of charge.</text>
+      <event load="OPTION_INVALID"/>
+    </mod-append:choice>
+    <mod-append:choice hidden="true" req="JUDGE_BOON_FM_FORGEWEAPON_2" blue="false">
+      <text>Currently active blessing: Greater Blessing of Forges
+    Alastair will always have a larger store with better stock.</text>
+      <event load="OPTION_INVALID"/>
+    </mod-append:choice>
+    <mod-append:choice hidden="true" req="JUDGE_BOON_FM_ANCWEAPON" blue="false">
+      <text>Currently active blessing: Blessing of the Foolhardy
+    Ancalagon Crystals only tak 50% damage.</text>
+      <event load="OPTION_INVALID"/>
+    </mod-append:choice>
+    <mod-append:choice hidden="true" req="JUDGE_BOON_FM_TERMINUS" blue="false">
+      <text>Currently active blessing: Blessing of Twistedness
+    5% increase to recharge of shields, weapons and FTL drive, hull, system and ion resistance and all crew stats.</text>
+      <event load="OPTION_INVALID"/>
+    </mod-append:choice>
+  </mod:findName>
 </FTL>

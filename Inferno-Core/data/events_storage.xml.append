@@ -1,5 +1,5 @@
 <!--Moving the (nevermind) in the combat check to be at the bottom.-->
-  <mod:findName type="event" name ="COMBAT_CHECK_REAL">
+  <mod:findName type="event" name="COMBAT_CHECK_REAL">
     <mod:findWithChildLike type="choice" child-type="text">
         <mod:selector>Do some last minute check-ups while we charge the weapons.</mod:selector>
         <mod:setAttributes req="pilot" lvl="1" max_group="1" blue="false"/>
@@ -9,7 +9,7 @@
         <mod:setAttributes req="pilot" lvl="1" max_group="2" blue="false"/>
     </mod:findWithChildLike>
   </mod:findName>
-  <mod:findName type="event" name ="COMBAT_CHECK_FLAGSHIP_REAL">
+  <mod:findName type="event" name="COMBAT_CHECK_FLAGSHIP_REAL">
     <mod:findWithChildLike type="choice" child-type="text">
         <mod:selector>Do some last minute check-ups while we charge the weapons.</mod:selector>
         <mod:setAttributes req="pilot" lvl="1" max_group="1" blue="false"/>
@@ -37,3 +37,14 @@
     </event>
   </mod-append:choice>
 </mod:findName>-->
+
+<mod:findName type="event" name="STORAGE_CHECK_INVENTORY">
+  <mod:findLike type="choice">
+    <mod:selector req="LIST_UPG_ALL"/>
+    <mod:setAttributes max_group="1"/>
+  </mod:findLike>
+  <mod:findLike type="choice">
+    <mod:selector req="LIST_LAB_ALL"/>
+    <mod:setAttributes max_group="2"/>
+  </mod:findLike>
+</mod:findName>

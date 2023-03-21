@@ -13987,7 +13987,7 @@
 			<mod:selector>We have nothing to show.</mod:selector>
 			<mod:setAttributes max_group="1" req="pilot" blue="false"/>
 		</mod:findWithChildLike>
-		<mod-append:choice req="LIST_CREW_PLATED_STORE">
+		<mod-append:choice req="LIST_CREW_PLATED_STORE" blue="false">
 			<text>Present a Plated Crew.</text>
 			<event>
 				<text>"The disciples... of the Forgemaster. Forsaking their former lives... to pursue their craft under his tutelage. Who can say... what swayed the loyalty of these? You are clever or powerful to have won their respect... regardless. Well done, traveler. Expect... rewards before your next journey."</text>
@@ -14005,7 +14005,7 @@
 			<mod:selector>We have nothing to show.</mod:selector>
 			<mod:setAttributes max_group="1" req="pilot" blue="false"/>
 		</mod:findWithChildLike>
-		<mod-append:choice req="FM_MODULAR_HULL">
+		<mod-append:choice req="FM_MODULAR_HULL" blue="false">
 			<text>Present the Modular Hull.</text>
 			<event>
 				<text>"Armor - for defense! Defense! But -this- is [more] than that! Someone has given you clever t-t-t-tricks to hide in it! For [adaptation] and defense: I p-p-p-provide Grant of Armoring! Grant of Armoring! Save it - for the future!"</text>
@@ -14023,7 +14023,7 @@
 			<mod:selector>We have nothing to show.</mod:selector>
 			<mod:setAttributes max_group="1" req="pilot" blue="false"/>
 		</mod:findWithChildLike>
-		<mod-append:choice req="FM_WEAPON_LOW_TIER">
+		<mod-append:choice req="FM_WEAPON_LOW_TIER" blue="false">
 			<text>Present a reguar Forged Weapon.</text>
 			<event>
 				<text>"Hmph. FORGED weaponry? Sure. This is tribute, I suppose. NOT Alastair's best work. He can do BETTER than this. I would think him SHAMEFUL to arm a Renegade with a TOOL so MEASLY. Hmph. I should like to SPEAK to him again. NEVERTHELESS! I shall BLESS you with the BLESSING OF FORGES. But have PATIENCE. It is not for now, but for LATER!"</text>
@@ -14035,7 +14035,7 @@
 				</choice>
 			</event>
 		</mod-append:choice>
-		<mod-append:choice req="FM_WEAPON_HIGH_TIER">
+		<mod-append:choice req="FM_WEAPON_HIGH_TIER" blue="false">
 			<text>Present a Powerful Forged Weapon.</text>
 			<event>
 				<text>"Oh my... now THIS is a WEAPON. Tribute of the HIGHEST order. Alastair's skill never FAILED to IMPRESS. He has OUTDONE himself with this. I should like to SPEAK to him again. NEVERTHELESS! I shall BLESS you with the GREATER BLESSING OF FORGES. But have PATIENCE. It is not for now, but for LATER!"</text>
@@ -14047,7 +14047,7 @@
 				</choice>
 			</event>
 		</mod-append:choice>
-		<mod-append:choice req="LIST_ANCALAGON_ALL">
+		<mod-append:choice req="LIST_ANCALAGON_ALL" blue="false">
 			<text>Present Ancagalon Tech.</text>
 			<event>
 				<text>Wakeson stands silently for a moment. "Renegade. WHERE did this ABOMINATION come from? It should NEVER have been CREATED. Would like that I had not SEEN it. But information it is. I had HOPED that none would have FOUND the secret. Still, our RULES dictate I REWARD you for this. Do not MEDDLE again, Renegade. I shall BLESS you with the BLESSING OF THE FOOLHARDY. But have PATIENCE. It is not for now, but for LATER!"</text>
@@ -14059,7 +14059,7 @@
 				</choice>
 			</event>
 		</mod-append:choice>
-		<mod-append:choice req="FM_TERMINUS">
+		<mod-append:choice req="FM_TERMINUS" blue="false">
 			<text>Present the Terminus.</text>
 			<event>
 				<text>Wakeson stands silently for a moment. "Why are renegades LIKE THIS... I shall BLESS you with the BLESSING OF TWISTEDNESS regardless. But have PATIENCE. It is not for now, but for LATER!"</text>
