@@ -9674,39 +9674,8 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<mod:findLike type="statBoosts">
 				<mod:findLike type="statBoost">
 					<mod:findLike type="blackList">
-						<mod-append:acid/>
-						<mod-append:fm_repair_hull/>
-						<mod-append:fm_ion_anomaly_crew/>
-						<mod-append:fm_ion_anomaly_crew_enemy/>
-						<mod-append:fm_ion_instant_1/>
-						<mod-append:fm_ion_instant_2/>
-						<mod-append:fm_ion_instant_3/>
-						<mod-append:fm_ion_instant_4/>
-						<mod-append:fm_explode_instant/>
-						<mod-append:fm_human_rip/>
-						<mod-append:fm_drone_hack/>
-						<mod-append:fm_holy1/>
-						<mod-append:fm_holy2/>
-						<mod-append:fm_holy3/>
-						<mod-append:fm_holy4/>
-						<mod-append:fm_holy5/>
-						<mod-append:fm_holy6/>
-						<mod-append:fm_holy7/>
-						<mod-append:fm_holy8/>
-						<mod-append:fm_holy9/>
-						<mod-append:fm_holy10/>
-						<mod-append:fm_holy11/>
-						<mod-append:fm_holy12/>
-						<mod-append:fm_holy13/>
-						<mod-append:fm_holy14/>
-						<mod-append:fm_holy15/>
-						<mod-append:fm_holy16/>
-						<mod-append:fm_holy17/>
-						<mod-append:fm_holy18/>
-						<mod-append:fm_holy19/>
-						<mod-append:fm_holy20/>
-						<mod-append:fm_terminus/>
-						<mod-append:fm_bio_cloud/>
+						<mod-append:LIST_FM_PLSNOEFFECT_DEATH/>
+						<mod-append:LIST_FM_HOLYSHIT/>
 					</mod:findLike>
 				</mod:findLike>
 			</mod:findLike>
@@ -9719,39 +9688,8 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<mod:findLike type="statBoosts">
 				<mod:findLike type="statBoost">
 					<mod:findLike type="blackList">
-						<mod-append:acid/>
-						<mod-append:fm_repair_hull/>
-						<mod-append:fm_ion_anomaly_crew/>
-						<mod-append:fm_ion_anomaly_crew_enemy/>
-						<mod-append:fm_ion_instant_1/>
-						<mod-append:fm_ion_instant_2/>
-						<mod-append:fm_ion_instant_3/>
-						<mod-append:fm_ion_instant_4/>
-						<mod-append:fm_explode_instant/>
-						<mod-append:fm_human_rip/>
-						<mod-append:fm_drone_hack/>
-						<mod-append:fm_holy1/>
-						<mod-append:fm_holy2/>
-						<mod-append:fm_holy3/>
-						<mod-append:fm_holy4/>
-						<mod-append:fm_holy5/>
-						<mod-append:fm_holy6/>
-						<mod-append:fm_holy7/>
-						<mod-append:fm_holy8/>
-						<mod-append:fm_holy9/>
-						<mod-append:fm_holy10/>
-						<mod-append:fm_holy11/>
-						<mod-append:fm_holy12/>
-						<mod-append:fm_holy13/>
-						<mod-append:fm_holy14/>
-						<mod-append:fm_holy15/>
-						<mod-append:fm_holy16/>
-						<mod-append:fm_holy17/>
-						<mod-append:fm_holy18/>
-						<mod-append:fm_holy19/>
-						<mod-append:fm_holy20/>
-						<mod-append:fm_terminus/>
-						<mod-append:fm_bio_cloud/>
+						<mod-append:LIST_FM_PLSNOEFFECT_DEATH/>
+						<mod-append:LIST_FM_HOLYSHIT/>
 					</mod:findLike>
 				</mod:findLike>
 			</mod:findLike>
