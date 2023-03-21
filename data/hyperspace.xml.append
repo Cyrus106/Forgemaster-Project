@@ -10605,6 +10605,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<blackList load="LIST_FM_PLSNOEFFECT_DEATH">
 						<blueprintList load="LIST_FM_PLSNOEFFECT"/>
 						<blueprintList load="LIST_FM_HOLYSHIT"/>
+						<eldritch_cat/>
 					</blackList>
 				</statBoost>
 			</statBoosts>
@@ -10625,6 +10626,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<blackList load="LIST_FM_PLSNOEFFECT_DEATH">
 						<blueprintList load="LIST_FM_PLSNOEFFECT"/>
 						<blueprintList load="LIST_FM_HOLYSHIT"/>
+						<eldritch_cat/>
 					</blackList>
 				</statBoost>
 			</statBoosts>
