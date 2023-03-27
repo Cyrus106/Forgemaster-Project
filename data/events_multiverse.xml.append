@@ -85,134 +85,61 @@
 		<queueEvent>MORALITY_UPDATE_SLUG</queueEvent>
 		<choice hidden="true">
 			<text>Alastair asked me to help...</text>
-			<event>
-
+			<event name="DEBTCOLLECT_DIALOG">
 				<text>"Brick hammer man ask help? I knew he nice brick, but this surprise me! He have good heart, strong like hull." he says, his antennae twitching cheerfully for a moment. One of his crew in the background point at a nearby console and shout something you can't quite make out. The Mantis sighs, "It look like more Debt ships are coming, they want my head. I sorry, nothing to offer."
 					one of the Engi twins takes control of the comms for the moment. "Proposition: take blueprint of our ship, may be useful. Blueprint = one of the last things we have." You accept the data link and receive a blueprint for their...abomination of a ship. "I must go! I sorry!" Winchester stammers quickly.
 				</text>
 				<unlockCustomShip silent="false">PLAYER_SHIP_GUNSHIP_FM</unlockCustomShip>
-
-				<choice hidden="true" req="REQ_GUNBOMTWINS" lvl="1" max_group="1" blue="false">
-					<text>Wait! I have a question! </text>
-					<event>
-						<text>"You WHAT? Winchester has go now, before greedy slugs appear again!" the Mantis snaps. He grumbles for a moment, then continues. "On Winchester name, I suppose I owe a great deal. I have time for one question. Ask please, quickly."</text>
-						<choice hidden="true">
-							<text>Why does your ship look like that? </text>
-							<event>
-								<text>"Winchester family masterpiece, I call it. Many laugh, but when I get weapon work, I one laughing." He says, with a serious expression. "I spend good amount of family fortune on ship, it precious. Now, I must go, keep my friend safe." Winchester has no time left to talk, and with that his crew wishes you good luck on your mission while Winchester begins powering his FTL drive. </text>
-								<choice hidden="true">
-									<text>Let them go...</text>
-									<event>
-										<text> Winchester waves sadly as the ship's engines activate. "Goodbye, new friend. Keep my best friend safe, I beg." With those words, you catch the Engi twin on your ship waving sadly as well. The Gunbomination of a vessel activates its FTL drive and jumps, disappearing without a trace.  You decide to get going as well. </text>
-										<event/>
-									</event>
-								</choice>
-							</event>
-						</choice>
-						<choice hidden="true">
-							<text>Why are the Clairvoyants after you? </text>
-							<event>
-								<text>"I take SMALL loan, only small! But they greedy, want payment now. Scrap in other Mantis wallet, you understand yes? Please keep my friend safe." Winchester has no time left to talk, and with that his crew wishes you good luck on your mission while Winchester begins powering his FTL drive. </text>
-								<choice hidden="true">
-									<text>Let them go...</text>
-									<event>
-										<text> Winchester waves sadly as the ship's engines activate. "Goodbye, new friend. Keep my best friend safe, I beg." With those words, you catch the Engi twin on your ship waving sadly as well. The Gunbomination of a vessel activates its FTL drive and jumps, disappearing without a trace.  You decide to get going as well. </text>
-										<event/>
-									</event>
-								</choice>
-							</event>
-						</choice>
-						<choice hidden="true">
-							<text>Why don't you come with us? </text>
-							<event>
-								<text>"On Winchester family name honor, I promise I help Engi twins with task, it not Federation concern, not till Rebel are stopped. One of my bestest friends is with you now, they are loyal and keep their word. They will rejoin me when your mission is finished." he gulps "I hope. Keep friend safe, and keep self safe." Winchester has no time left to talk, and with that his crew wishes you good luck on your mission while Winchester begins powering his FTL drive. </text>
-								<choice hidden="true">
-									<text>Let them go...</text>
-									<event>
-										<text> Winchester waves sadly as the ship's engines activate. "Goodbye, new friend. Keep my best friend safe, I beg." With those words, you catch the Engi twin on your ship waving sadly as well. The Gunbomination of a vessel activates its FTL drive and jumps, disappearing without a trace.  You decide to get going as well. </text>
-										<event/>
-									</event>
-								</choice>
-							</event>
-						</choice>
-						<choice hidden="true">
-							<text>What in the world do you need that ship for? </text>
-							<event>
-								<text>"I save Engi twins from slaver ship, they tell me truth about Harmony. Harmony bad, more bad than Rebel ever ever. I plan to destroy all of it..." Winchester laughs for a moment, and continues. "I say to myself, many gun solve all problem. But I may have used too many gun, now I search for way to power ship. Now you friend, new best friend? Time can tell. Cherish Winchester's friend." Winchester has no time left to talk, and with that his crew wishes you good luck on your mission while Winchester begins powering his FTL drive. </text>
-								<choice hidden="true">
-									<text>Let them go...</text>
-									<event>
-										<text> Winchester waves sadly as the ship's engines activate. "Goodbye, new friend." The Gunbomination of a vessel activates its FTL drive and jumps, disappearing without a trace.  You decide to get going as well.</text>
-										<event/>
-									</event>
-								</choice>
-							</event>
-						</choice>
-
-						<choice hidden="true" req="unique_freddy">
-							<text>(Freddy) Ask Winchester to join the Federation's cause instead. </text>
-							<event>
-								<text>Winchester frowns, but nods quickly. "Freddy right, my mission not worth if all Mantis die to rebel. I, the good Winchester, join mission! I continue my promise after Rebel crushed." he explains, a bit more confidence in his voice. One of the Engi twins piloting the Gunbomination powers up the FTL drive and takes off, after dropping Winchester off aboard your vessel. </text>
-								<crewMember amount="1" class="mantis_warlord">Winchester</crewMember>
-							</event>
-						</choice>
-					</event>
-				</choice>
-
-
 				<choice hidden="true" req="pilot" lvl="1" max_group="1" blue="false">
-					<text>Wait! I have a question! </text>
+					<text>Wait! I have a question!</text>
 					<event>
 						<text>"You WHAT? Winchester has go now, before greedy slugs appear again!" the Mantis snaps. He grumbles for a moment, then continues. "On Winchester name, I suppose I owe a great deal. I have time for one question. Ask please, quickly."</text>
 						<choice hidden="true">
-							<text>Why does your ship look like that? </text>
+							<text>Why does your ship look like that?</text>
 							<event>
 								<text>"Winchester family masterpiece, I call it. Many laugh, but when I get weapon work, I one laughing." He says, with a serious expression. "I spend good amount of family fortune on ship, it precious. Now, I must go." Winchester has no time left to talk, and with that his crew wishes you good luck on your mission while Winchester begins powering his FTL drive.</text>
 								<choice hidden="true">
 									<text>Let them go...</text>
-									<event>
-										<text> Winchester waves sadly as the ship's engines activate. "Goodbye, new friend." The Gunbomination of a vessel activates its FTL drive and jumps, disappearing without a trace.  You decide to get going as well. </text>
-										<event/>
+									<event name="DEBTCOLLECT_WINCHESTER_LEAVE">
+										<loadEventList>
+											<event req="REQ_GUNBOMTWINS">
+												<text>Winchester waves sadly as the ship's engines activate. "Goodbye, new friend. Keep my best friend safe, I beg." With those words, you catch the Engi twin on your ship waving sadly as well. The Gunbomination of a vessel activates its FTL drive and jumps, disappearing without a trace. You decide to get going as well.</text>
+											</event>
+											<event req="REQ_GUNBOMTWINS" lvl="0" max_lvl="0">
+												<text>Winchester waves sadly as the ship's engines activate. "Goodbye, new friend." The Gunbomination of a vessel activates its FTL drive and jumps, disappearing without a trace. You decide to get going as well.</text>
+											</event>
+										</loadEventList>
 									</event>
 								</choice>
 							</event>
 						</choice>
 						<choice hidden="true">
-							<text>Why are the Clairvoyants after you? </text>
+							<text>Why are the Clairvoyants after you?</text>
 							<event>
 								<text>"I take SMALL loan, only small! But they greedy, want payment now. Scrap in other Mantis wallet, you understand yes? I did plan to pay them back, after I destroy true menace..." while trailing off, he realizes he is in a real hurry. Winchester has no time left to talk, and with that his crew wishes you good luck on your mission while Winchester begins powering his FTL drive.</text>
 								<choice hidden="true">
 									<text>Let them go...</text>
-									<event>
-										<text> Winchester waves sadly as the ship's engines activate. "Goodbye, new friend." The Gunbomination of a vessel activates its FTL drive and jumps, disappearing without a trace.  You decide to get going as well. </text>
-										<event/>
-									</event>
+									<event load="DEBTCOLLECT_WINCHESTER_LEAVE"/>
 								</choice>
 							</event>
 						</choice>
 						<choice hidden="true">
-							<text>Why don't you come with us? </text>
+							<text>Why don't you come with us?</text>
 							<event>
-								<text>"On Winchester family name honor, I promise I help Engi twins with task, it not Federation concern, not till Rebel are stopped." Winchester has no time left to talk, and with that his crew wishes you good luck on your mission while Winchester begins powering his FTL drive. </text>
+								<text>"On Winchester family name honor, I promise I help Engi twins with task, it not Federation concern, not till Rebel are stopped." Winchester has no time left to talk, and with that his crew wishes you good luck on your mission while Winchester begins powering his FTL drive.</text>
 								<choice hidden="true">
 									<text>Let them go...</text>
-									<event>
-										<text> Winchester waves sadly as the ship's engines activate. "Goodbye, new friend." The Gunbomination of a vessel activates its FTL drive and jumps, disappearing without a trace.  You decide to get going as well. </text>
-										<event/>
-									</event>
+									<event load="DEBTCOLLECT_WINCHESTER_LEAVE"/>
 								</choice>
 							</event>
 						</choice>
 						<choice hidden="true">
-							<text>What in the world do you need that ship for? </text>
+							<text>What in the world do you need that ship for?</text>
 							<event>
 								<text>"I save engi twins from slaver ship, they tell me truth about Harmony. Harmony bad, more bad than Rebel ever ever. I plan to destroy all of it..." Winchester laughs for a moment, and continues. "I say to myself, many gun solve all problem. But I may have used too many gun, now I search for way to power ship." Winchester has no time left to talk, and with that his crew wishes you good luck on your mission while Winchester begins powering his FTL drive.</text>
 								<choice hidden="true">
 									<text>Let them go...</text>
-									<event>
-										<text> Winchester waves sadly as the ship's engines activate. "Goodbye, new friend." The Gunbomination of a vessel activates its FTL drive and jumps, disappearing without a trace.  You decide to get going as well. </text>
-										<event/>
-									</event>
+									<event load="DEBTCOLLECT_WINCHESTER_LEAVE"/>
 								</choice>
 							</event>
 						</choice>
@@ -226,15 +153,9 @@
 						</choice>
 					</event>
 				</choice>
-
-
-
 				<choice hidden="true" req="pilot" lvl="1" max_group="2" blue="false">
 					<text>Let them go...</text>
-					<event>
-						<text> Winchester waves sadly as the ship's engines activate again. "goodbye, new friend. Keep my best friend safe, I beg." With those words, you catch the Engi twin on your ship waving sadly as well. The Gunbomination of a vessel activates its FTL drive and jumps, disappearing without a trace.  You decide to get going as well. </text>
-						<event/>
-					</event>
+					<event load="DEBTCOLLECT_WINCHESTER_LEAVE"/>
 				</choice>
 			</event>
 		</choice>
@@ -250,157 +171,7 @@
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Alastair asked me to help...</text>
-			<event>
-				<text>"Brick hammer man ask help? I knew he nice brick, but this surprise me! He have good heart, strong like hull." he says, his antennae twitching cheerfully for a moment. One of his crew in the background point at a nearby console and shout something you can't quite make out. The Mantis sighs, "It look like more Debt ships are coming, they want my head. I sorry, nothing to offer."
-					one of the Engi twins takes control of the comms for the moment. "Proposition: take blueprint of our ship, may be useful. Blueprint = one of the last things we have." You accept the data link and receive a blueprint for their...abomination of a ship. "I must go! I sorry!" Winchester stammers quickly.
-				</text>
-				<unlockCustomShip silent="false">PLAYER_SHIP_GUNSHIP_FM</unlockCustomShip>
-
-				<choice hidden="true" req="REQ_GUNBOMTWINS" lvl="1" max_group="1" blue="false">
-					<text>Wait! I have a question! </text>
-					<event>
-						<text>"You WHAT? Winchester has go now, before greedy slugs appear again!" the Mantis snaps. He grumbles for a moment, then continues. "On Winchester name, I suppose I owe a great deal. I have time for one question. Ask please, quickly."</text>
-						<choice hidden="true">
-							<text>Why does your ship look like that? </text>
-							<event>
-								<text>"Winchester family masterpiece, I call it. Many laugh, but when I get weapon work, I one laughing." He says, with a serious expression. "I spend good amount of family fortune on ship, it precious. Now, I must go, keep my friend safe." Winchester has no time left to talk, and with that his crew wishes you good luck on your mission while Winchester begins powering his FTL drive. </text>
-								<choice hidden="true">
-									<text>Let them go...</text>
-									<event>
-										<text> Winchester waves sadly as the ship's engines activate. "Goodbye, new friend. Keep my best friend safe, I beg." With those words, you catch the engi twin on your ship waving sadly as well. The Gunbomination of a vessel activates its FTL drive and jumps, disappearing without a trace.  You decide to get going as well. </text>
-										<event/>
-									</event>
-								</choice>
-							</event>
-						</choice>
-						<choice hidden="true">
-							<text>Why are the Clairvoyants after you? </text>
-							<event>
-								<text>"I take SMALL loan, only small! But they greedy, want payment now. Scrap in other Mantis wallet, you understand yes? Please keep my friend safe." Winchester has no time left to talk, and with that his crew wishes you good luck on your mission while Winchester begins powering his FTL drive. </text>
-								<choice hidden="true">
-									<text>Let them go...</text>
-									<event>
-										<text> Winchester waves sadly as the ship's engines activate. "Goodbye, new friend. Keep my best friend safe, I beg." With those words, you catch the Engi twin on your ship waving sadly as well. The Gunbomination of a vessel activates its FTL drive and jumps, disappearing without a trace.  You decide to get going as well. </text>
-										<event/>
-									</event>
-								</choice>
-							</event>
-						</choice>
-						<choice hidden="true">
-							<text>Why don't you come with us? </text>
-							<event>
-								<text>"On Winchester family name honor, I promise I help Engi twins with task, it not Federation concern, not till Rebel are stopped. One of my bestest friends is with you now, they are loyal and keep their word. They will rejoin me when your mission is finished." he gulps "I hope. Keep friend safe, and keep self safe." Winchester has no time left to talk, and with that his crew wishes you good luck on your mission while Winchester begins powering his FTL drive. </text>
-								<choice hidden="true">
-									<text>Let them go...</text>
-									<event>
-										<text> Winchester waves sadly as the ship's engines activate. "Goodbye, new friend. Keep my best friend safe, I beg." With those words, you catch the Engi twin on your ship waving sadly as well. The Gunbomination of a vessel activates its FTL drive and jumps, disappearing without a trace.  You decide to get going as well. </text>
-										<event/>
-									</event>
-								</choice>
-							</event>
-						</choice>
-						<choice hidden="true">
-							<text>What in the world do you need that ship for? </text>
-							<event>
-								<text>"I save Engi twins from slaver ship, they tell me truth about Harmony. Harmony bad, more bad than Rebel ever ever. I plan to destroy all of it..." Winchester laughs for a moment, and continues. "I say to myself, many gun solve all problem. But I may have used too many gun, now I search for way to power ship. Now you friend, new best friend? Time can tell. Cherish Winchester's friend." Winchester has no time left to talk, and with that his crew wishes you good luck on your mission while Winchester begins powering his FTL drive. </text>
-								<choice hidden="true">
-									<text>Let them go...</text>
-									<event>
-										<text> Winchester waves sadly as the ship's engines activate. "Goodbye, new friend." The Gunbomination of a vessel activates its FTL drive and jumps, disappearing without a trace.  You decide to get going as well.</text>
-										<event/>
-									</event>
-								</choice>
-							</event>
-						</choice>
-
-						<choice hidden="true" req="unique_freddy">
-							<text>(Freddy) Ask Winchester to join the Federation's cause instead. </text>
-							<event>
-								<text>Winchester frowns, but nods quickly. "Freddy right, my mission not worth if all Mantis die to rebel. I, the good Winchester, join mission! I continue my promise after Rebel crushed." he explains, a bit more confidence in his voice. One of the Engi twins piloting the Gunbomination powers up the FTL drive and takes off, after dropping Winchester off aboard your vessel. </text>
-								<crewMember amount="1" class="mantis_warlord">Winchester</crewMember>
-							</event>
-						</choice>
-					</event>
-				</choice>
-
-
-				<choice hidden="true" req="pilot" lvl="1" max_group="1" blue="false">
-					<text>Wait! I have a question! </text>
-					<event>
-						<text>"You WHAT? Winchester has go now, before greedy slugs appear again!" the Mantis snaps. He grumbles for a moment, then continues. "On Winchester name, I suppose I owe a great deal. I have time for one question. Ask please, quickly."</text>
-						<choice hidden="true">
-							<text>Why does your ship look like that? </text>
-							<event>
-								<text>"Winchester family masterpiece, I call it. Many laugh, but when I get weapon work, I one laughing." He says, with a serious expression. "I spend good amount of family fortune on ship, it precious. Now, I must go." Winchester has no time left to talk, and with that his crew wishes you good luck on your mission while Winchester begins powering his FTL drive.</text>
-								<choice hidden="true">
-									<text>Let them go...</text>
-									<event>
-										<text> Winchester waves sadly as the ship's engines activate. "Goodbye, new friend." The Gunbomination of a vessel activates its FTL drive and jumps, disappearing without a trace.  You decide to get going as well. </text>
-										<event/>
-									</event>
-								</choice>
-							</event>
-						</choice>
-						<choice hidden="true">
-							<text>Why are the Clairvoyants after you? </text>
-							<event>
-								<text>"I take SMALL loan, only small! But they greedy, want payment now. Scrap in other Mantis wallet, you understand yes? I did plan to pay them back, after I destroy true menace..." while trailing off, he realizes he is in a real hurry. Winchester has no time left to talk, and with that his crew wishes you good luck on your mission while Winchester begins powering his FTL drive.</text>
-								<choice hidden="true">
-									<text>Let them go...</text>
-									<event>
-										<text> Winchester waves sadly as the ship's engines activate. "Goodbye, new friend." The Gunbomination of a vessel activates its FTL drive and jumps, disappearing without a trace.  You decide to get going as well. </text>
-										<event/>
-									</event>
-								</choice>
-							</event>
-						</choice>
-						<choice hidden="true">
-							<text>Why don't you come with us? </text>
-							<event>
-								<text>"On Winchester family name honor, I promise I help Engi twins with task, it not Federation concern, not till Rebel are stopped." Winchester has no time left to talk, and with that his crew wishes you good luck on your mission while Winchester begins powering his FTL drive. </text>
-								<choice hidden="true">
-									<text>Let them go...</text>
-									<event>
-										<text> Winchester waves sadly as the ship's engines activate. "Goodbye, new friend." The Gunbomination of a vessel activates its FTL drive and jumps, disappearing without a trace.  You decide to get going as well. </text>
-										<event/>
-									</event>
-								</choice>
-							</event>
-						</choice>
-						<choice hidden="true">
-							<text>What in the world do you need that ship for? </text>
-							<event>
-								<text>"I save engi twins from slaver ship, they tell me truth about Harmony. Harmony bad, more bad than Rebel ever ever. I plan to destroy all of it..." Winchester laughs for a moment, and continues. "I say to myself, many gun solve all problem. But I may have used too many gun, now I search for way to power ship." Winchester has no time left to talk, and with that his crew wishes you good luck on your mission while Winchester begins powering his FTL drive.</text>
-								<choice hidden="true">
-									<text>Let them go...</text>
-									<event>
-										<text> Winchester waves sadly as the ship's engines activate. "Goodbye, new friend." The Gunbomination of a vessel activates its FTL drive and jumps, disappearing without a trace.  You decide to get going as well. </text>
-										<event/>
-									</event>
-								</choice>
-							</event>
-						</choice>
-
-						<choice hidden="true" req="unique_freddy">
-							<text>(Freddy) Ask Winchester to join the Federation's cause instead. </text>
-							<event>
-								<text>Winchester frowns, but nods quickly. "Freddy right, my mission not worth if all Mantis die to rebel. I, the good Winchester, join mission! I continue my promise after Rebel crushed." he explains, a bit more confidence in his voice. One of the Engi twins piloting the Gunbomination powers up the FTL drive and takes off, after dropping Winchester off aboard your vessel. </text>
-								<crewMember amount="1" class="mantis_warlord">Winchester</crewMember>
-							</event>
-						</choice>
-					</event>
-				</choice>
-
-
-
-				<choice hidden="true" req="pilot" lvl="1" max_group="2" blue="false">
-					<text>Let them go...</text>
-					<event>
-						<text> Winchester waves sadly as the ship's engines activate again. "goodbye, new friend. Keep my best friend safe, I beg." With those words, you catch the Engi twin on your ship waving sadly as well. The Gunbomination of a vessel activates its FTL drive and jumps, disappearing without a trace.  You decide to get going as well. </text>
-						<event/>
-					</event>
-				</choice>
-			</event>
+			<event load="DEBTCOLLECT_DIALOG"/>
 		</choice>
 	</event>
 
@@ -13981,7 +13752,7 @@
 		<mod:selector>Decline his offer.</mod:selector>
 		<mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>	</mod:findWithChildLike></mod:findName></FTL>	 -->
 
-<FTL>
+<FTL><!--boons-->
 	<mod:findName type="event" name="THE_JUDGES_ZOLTAN">
 		<mod:findWithChildLike type="choice" child-type="text">
 			<mod:selector>We have nothing to show.</mod:selector>
