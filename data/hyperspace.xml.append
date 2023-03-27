@@ -16542,7 +16542,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<description>Show a high grade forged weapon to Wakeson. 
 					While in effect; The Forgemaster has a larger and better store.</description>
 					<header>Boon Received</header>
-					<icon>ach_placeholder</icon>
+					<icon>ach_boon_fm_forgeweapon_2</icon>
 					<multiDifficulty>false</multiDifficulty>
 				</mod-append:achievement>
 				<mod-append:achievement name="ACH_BOON_FM_ANCWEAPON">
@@ -16551,7 +16551,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<description>Show ancalagon tech to Wakeson. 
 					While in effect; Ancalagon crystals gain 50% damage resistance.</description>
 					<header>Boon Received</header>
-					<icon>ach_placeholder</icon>
+					<icon>ach_boon_fm_ancweapon</icon>
 					<lockImage>ach_locked</lockImage>
 					<multiDifficulty>false</multiDifficulty>
 				</mod-append:achievement>
@@ -16561,7 +16561,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<description>Show the Terminus to Wakeson. 
 					While in effect; All crew stats are raised by 5%, most ship stats are increased by 5%.</description>
 					<header>Boon Received</header>
-					<icon>ach_placeholder</icon>
+					<icon>ach_boon_fm_terminus</icon>
 					<lockImage>ach_locked</lockImage>
 					<multiDifficulty>false</multiDifficulty>
 				</mod-append:achievement>
