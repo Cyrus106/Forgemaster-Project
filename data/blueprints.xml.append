@@ -25,7 +25,7 @@
 		<unlock id="ship_PLAYER_SHIP_FORGEMASTER_1_unlock"/>
 		<desc>The Forgemaster's beloved cruiser. Armed with his signature weapons and a forge to create more, it is a force to be reckoned with.</desc>
 		<systemList>
-			<battery power="1" room="4" start="false" img="room_battery_3" />
+			<battery max="2" power="1" room="4" start="false" img="room_battery_3" />
 			<cloaking power="1" room="5" start="false" img="room_cloaking_3" />
 			<clonebay power="1" max="4" room="11" start="true">
 				<slot>
@@ -97,7 +97,7 @@
 		<unlock id="ship_PLAYER_SHIP_GUNSHIP_FM_unlock"/>
 		<desc>A Free Mantis skipped the part of the manual that explained the limitations of weapon usage, went crazy on the weapon budget, and broke the weapon systems. Thankfully, he had enough funds for a prototype drone system with excellent capacity.</desc>
 		<systemList>
-			<battery power="1" room="13" start="false" img="room_battery_8" />
+			<battery max="2" power="1" room="13" start="false" img="room_battery_8" />
 			<cloaking power="1" room="1" start="false" img="room_cloaking_11" />
 			<clonebay power="1" max="4" room="3" start="false">
 				<slot>
@@ -167,7 +167,7 @@
 		<unlock id="ship_PLAYER_SHIP_GUNSHIP_FM_2_unlock"/>
 		<desc>The same wealthy Free Mantis tried this crazy project again. He still overloaded the weapon systems, due to his monumental idiocy. Thankfully, he had enough funds for a prototype teleporter, and setup plenty of beds on the now-inert weaponry inside the ship for crew to reside.</desc>
 		<systemList>
-			<battery power="1" room="14" start="true" img="room_battery_8" />
+			<battery max="2" power="1" room="14" start="true" img="room_battery_8" />
 			<cloaking power="1" room="2" start="false" img="room_cloaking_11" />
 			<clonebay power="1" max="4" room="4" start="false">
 				<slot>
@@ -235,7 +235,7 @@
 		<unlock id="ship_PLAYER_SHIP_GUNSHIP_FM_3_unlock"/>
 		<desc>After his second failed project, the wealthy Free Mantis went on a drunken bender and decided the best course of action is to bring the weapons to the enemy. This ship is equipped for ramming speeds and has a built-in drone recovery!</desc>
 		<systemList>
-			<battery power="1" room="14" start="true" img="room_battery_8" />
+			<battery max="2" power="1" room="14" start="true" img="room_battery_8" />
 			<cloaking power="1" room="2" start="false" img="room_cloaking_11" />
 			<clonebay power="1" max="3" room="4" start="false">
 				<slot>
@@ -305,7 +305,7 @@
 		<desc>The same dubiously intelligent Free Mantis installed some Aether reactors and got some of the weapons working again! This ship is an unholy mess to repair now, but is a force to be reckoned with.</desc>
 		<systemList>
 			<artillery power="2" max="5" room="17" start="true" weapon="FM_HOLYSHIT_INVIS" img="room_artillery" />
-			<battery power="1" room="16" start="false" img="room_battery_8" />
+			<battery max="2" power="1" room="16" start="false" img="room_battery_8" />
 			<cloaking power="1" room="4" start="false" img="room_cloaking_11" />
 			<clonebay power="1" max="3" room="6" start="false">
 				<slot>
@@ -385,7 +385,7 @@
 			<artillery power="1" room="15" start="false" weapon="BOMB_ION_ARTY" img="room_artillery" />
 			<artillery power="1" room="8" start="false" weapon="ARTILLERY_REBEL_MISSILE" img="room_artillery" />
 			<artillery power="1" room="13" start="false" weapon="BOMB_BREACH_1_PLAYER_ARTY_CHAIN" img="room_artillery" />
-			<battery power="1" room="14" start="true" img="room_battery_8" />
+			<battery max="2" power="1" room="14" start="true" img="room_battery_8" />
 			<cloaking power="1" room="6" start="false" img="ancient_oxygen" />
 			<clonebay power="1" room="4" start="false">
 				<slot>
@@ -470,7 +470,7 @@
 			<artillery power="2" room="21" start="true" weapon="FM_BEAM_GUILLOTINE_CHAIN_PLAYER_INVIS"  img="room_artillery_invis_long" />
 			<artillery power="2" room="22" start="true" weapon="FM_FLAMETHROWER_INVIS"  img="room_artillery_invis_long" />
 			<artillery power="2" room="23" start="true" weapon="ION_FIRE_INVIS"  img="room_artillery_invis_long" />
-			<battery power="1" room="16" start="false" img="room_battery_8" />
+			<battery max="2" power="1" room="16" start="false" img="room_battery_8" />
 			<cloaking power="1" room="4" start="false" img="room_cloaking_3" />
 			<clonebay power="1" max="4" room="6" start="false">
 				<slot>
@@ -547,7 +547,7 @@
 		<systemList>
 			<artillery power="2" room="4" start="true" weapon="BOMB_ION_ARTY" img="room_artillery" />
 			<artillery power="2" room="3" start="true" weapon="BOMB_ION_ARTY" img="room_artillery_invis_long" />
-			<battery power="1" room="8" start="true" img="room_battery" />
+			<battery max="2" power="1" room="8" start="true" img="room_battery" />
 			<cloaking power="1" room="10" start="false" img="room_cloaking_11" />
 			<clonebay power="1" room="11" start="true">
 				<slot>
@@ -622,11 +622,11 @@
 		<desc>Created by a Duskbringer with a very clear goal in mind: to set the Guinness Multiverse record for the most war crimes in one fight.</desc>
 		<systemList>
 			<!--<artillery power="1" room="3" start="true" weapon="CLONE_CANNON_SYMBIOTE_SPECIAL_PLAYER" img="room_artillery" />-->
-			<battery power="1" room="16" start="true" img="room_battery_3" />
-			<cloaking power="1" room="12" start="false" img="room_cloaking" />
+			<battery max="2" power="1" room="16" start="true" img="room_battery_3" />
+			<cloaking power="1" room="12" start="false" img="room_cloaking_3" />
 			<clonebay power="2" max="4" room="6" start="true">
 				<slot>
-					<number>1</number>
+					<number>3</number>
 				</slot>
 			</clonebay>
 			<doors power="1" room="2" start="false" img="room_doors_7">
@@ -643,9 +643,9 @@
 				</slot>
 			</engines>
 			<hacking power="1" room="21" start="false" img="room_hacking_4" />
-			<medbay power="1" room="6" start="false" img="room_medbay">
+			<medbay power="1" room="6" start="false" img="room_medbay_3">
 				<slot>
-					<number>1</number>
+					<number>3</number>
 				</slot>
 			</medbay>
 			<mind power="1" room="8" start="false" img="room_mind_2" />
@@ -656,20 +656,20 @@
 					<number>0</number>
 				</slot>
 			</pilot>
-			<sensors power="1" room="7" start="true" img="room_sensors_6">
+			<sensors power="1" room="18" start="true" img="room_sensors_6">
 				<slot>
 					<direction>right</direction>
 					<number>1</number>
 				</slot>
 			</sensors>
-			<shields power="2" max="8" room="19" start="false" img="room_shields_orchid_2">
+			<shields power="2" max="8" room="19" start="false" img="room_shields_3">
 				<slot>
-					<direction>down</direction>
-					<number>3</number>
+					<direction>left</direction>
+					<number>2</number>
 				</slot>
 			</shields>
 			<teleporter power="3" room="20" start="true" />
-			<weapons power="2" max="8" room="1" start="true" img="room_weapons_9">
+			<weapons power="2" max="8" room="1" start="true" img="room_weapons">
 				<slot>
 					<direction>up</direction>
 					<number>1</number>
@@ -781,7 +781,7 @@
 		<unlock id="ship_PLAYER_SHIP_TWISTED_FMANTIS_unlock"/>
 		<desc>These strange Mantis bear the banner of a land old and forgotten, and carry a powerful piece of technology from Ancient Britannia.</desc>
 		<systemList>
-			<artillery power="1" max ="4" room="13" start="false" weapon="ARTILLERY_BEAM" img="room_artillery_3" />
+			<artillery power="1" max="4" room="13" start="false" weapon="ARTILLERY_BEAM" img="room_artillery_3" />
 			<battery power="1" max="2" room="5" start="false" img="room_battery_14" />
 			<cloaking power="1" room="3" start="true" img="fm_room_cloaking_3" />
 			<clonebay power="1" room="8" start="false">
@@ -941,7 +941,7 @@
 		<unlock id="ship_PLAYER_SHIP_TWISTED_MANTIS_unlock"/>
 		<desc>The Mantis went all in on their teleporter. It's about to get real cramped on the enemy ship! As a downside, the shields are capped at three bubbles.</desc>
 		<systemList>
-			<battery power="1" room="13" start="true" img="room_battery_7" />
+			<battery max="2" power="1" room="13" start="true" img="room_battery_7" />
 			<cloaking power="1" room="3" start="false" img="room_cloaking_orchid_3" />
 			<clonebay power="1" room="12" start="true">
 				<slot>
@@ -1179,7 +1179,7 @@
 		<unlock id="ship_PLAYER_SHIP_TWISTED_LOSTSUN_unlock"/>
 		<desc>This Lost Sun vessel is equipped with some of the most powerful ancient equipment money could buy, but due to a mistake made during their FTL drive experiments, the ship is rendered unstable. It cannot sustain itself for more than 75 seconds without needing to perform another FTL jump, otherwise the drive will fail catastrophically and destroy the vessel. Hope you're quick!</desc>
 		<systemList>
-			<battery power="1" room="12" start="false" img="room_battery_10" />
+			<battery max="2" power="1" room="12" start="false" img="room_battery_10" />
 			<cloaking power="1" room="11" start="false" img="room_cloaking_orchid_2" />
 			<clonebay power="1" room="0" start="false">
 				<slot>
@@ -1225,7 +1225,7 @@
 					<number>0</number>
 				</slot>
 			</shields>
-			<teleporter power="1" room="5" start="true" />
+			<teleporter power="1" room="5" start="false" />
 			<weapons power="3" max="8" room="4" start="true" img="room_weapons_9">
 				<slot>
 					<direction>up</direction>
@@ -1255,7 +1255,7 @@
 		<desc>After having a close encounter with some egotistic Ancients, these smoking addicts decided the best course of action would be to weaponize said habits in an attempt to asphyxiate their anaerobic enemies, and hunt down every last ancient until none were left.</desc>
 		<systemList>
 			<artillery power="1" room="10" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
-			<battery power="1" max="2" room="8" start="false" img="room_battery_14" />
+			<battery max="2" power="1" max="2" room="8" start="false" img="room_battery_14" />
 			<cloaking power="1" room="0" start="false" img="room_cloaking" />
 			<clonebay power="1" room="15" start="true">
 				<slot>
@@ -1412,9 +1412,9 @@
 		<unlock id="ship_PLAYER_SHIP_TWISTED_ZOLTAN_unlock"/>
 		<desc>These Zoltans are tired of being pushed around and being treated like living batteries. They may not be as experienced as peacekeepers, but these zoltans have a few tricks up their sleeves!</desc>
 		<systemList>
-			<battery power="1" room="7" start="false" img="room_battery_11" />
+			<battery max="2" power="1" room="7" start="false" img="room_battery_11" />
 			<cloaking power="1" room="18" start="false" img="room_cloaking_orchid_3" />
-			<clonebay power="1" room="4" start="false">
+			<clonebay max="4" power="1" room="4" start="true">
 				<slot>
 					<number>1</number>
 				</slot>
@@ -1433,7 +1433,7 @@
 				</slot>
 			</engines>
 			<hacking power="1" room="2" start="false" img="room_hacking_orchid" />
-			<medbay power="1" room="4" start="true" img="room_medbay">
+			<medbay max="4" power="1" room="4" start="false" img="room_medbay">
 				<slot>
 					<number>1</number>
 				</slot>
@@ -1818,7 +1818,7 @@
 		<desc>This ship is equipped with an extremely powerful Artillery Beam that tears through enemy ships. They forgot to buy a weapons system however, whoops!</desc>
 		<systemList>
 			<artillery power="1" max="5" room="22" start="true" weapon="TAINTED_BEAM_3_ARTY" img="room_artillery" />
-			<battery power="1" room="15" start="true" img="room_battery_13" />
+			<battery max="2" power="1" room="15" start="true" img="room_battery_13" />
 			<cloaking power="1" room="7" start="false" img="room_cloaking_4" />
 			<clonebay power="1" room="12" start="false">
 				<slot>
@@ -1890,7 +1890,7 @@
 		<unlock id="ship_PLAYER_SHIP_TWISTED_ORCHID_unlock"/>
 		<desc>Why did no one laugh at the gardener's jokes? Because they were too corney! What is the gardener's favourite book? War and Peas!</desc>
 		<systemList>
-			<battery power="1" room="1" start="false" img="room_battery_17" />
+			<battery max="2" power="1" room="1" start="false" img="room_battery_17" />
 			<cloaking power="1" room="13" start="false" img="room_cloaking_4" />
 			<clonebay power="1" room="11" start="false">
 				<slot>
@@ -2126,7 +2126,7 @@
 		<desc>The depressed leech owner of this ship installed a special custom-made device into it that allowed everyone to feel the pain he felt. He named it the Motivation Succer, and it makes all crew on the enemy ship drain power from their own ship.</desc>
 		<systemList>
 			<artillery power="1" room="10" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
-			<battery power="1" room="11" start="false" img="room_battery_8" />
+			<battery max="2" power="1" room="11" start="false" img="room_battery_8" />
 			<cloaking power="1" room="1" start="false" img="room_cloaking" />
 			<clonebay power="2" room="9" start="true">
 				<slot>
@@ -18915,7 +18915,7 @@
 		</desc>
 		<tooltip>Five damage per room beam weapon. Stuns enemies for 9 seconds, guaranteed to start a fire.</tooltip>
 		<damage>5</damage>
-		<sp>0</sp>
+		<sp>-1</sp>
 		<stun>9</stun>
 		<fireChance>10</fireChance>
 		<breachChance>0</breachChance>
@@ -19005,7 +19005,7 @@
 		<radius>50</radius>
 		<missiles>1</missiles>
 		<damage>1</damage>
-		<hullBust>1</hullBust>
+		<hullBust>0</hullBust>
 		<shots>1</shots>
 		<sp>10</sp>
 		<fireChance>2</fireChance>
@@ -19114,14 +19114,14 @@
 		<fireChance>10</fireChance>
 		<breachChance>0</breachChance>
 		<stunChance>10</stunChance>
-		<cooldown>20</cooldown>
+		<cooldown>21</cooldown>
 		<color>
 			<r>0</r>
 			<g>255</g>
 			<b>6</b>
 		</color>
 		<speed>1</speed>
-		<power>4</power>
+		<power>5</power>
 		<cost>125</cost>
 		<rarity>0</rarity>
 		<length>2</length>

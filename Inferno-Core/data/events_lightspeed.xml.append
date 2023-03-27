@@ -15,7 +15,10 @@
 		<choice hidden="true" req="FMCORE_CAN_CALL_CURA" blue="false">
 			<text>View available tasks from C.U.R.A.</text>
 			<event>
-				<loadEvent>CURA_TASK_MENU</loadEvent>
+				<loadEventList seeded="false" generate="false">
+					<event name="CURA_TASK_MENU" req="pilot"/>
+				</loadEventList>
+				<!--<loadEvent>CURA_TASK_MENU</loadEvent>-->
 				<variable name="fmcore_called_cura" op="set" val="1"/>
 			</event>
 		</choice>

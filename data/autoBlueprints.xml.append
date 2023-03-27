@@ -294,7 +294,7 @@
 	<weaponList missiles="30" count="5">
 		<weapon name="ENERGY_2_PLAYER" />
 		<weapon name="MISSILES_3_ENEMY" />
-		<weapon name="SNIPER" />
+		<weapon name="SNIPER_ENEMY" />
 		<weapon name="SHOTGUN_TOGGLE_ION" />
 		<weapon name="LOOT_MATH_6" />
 	</weaponList>
@@ -706,7 +706,7 @@
 		<weapon name="FM_BEAM_ION_PIERCE" />
 		<weapon name="ANCIENT_STUN" />
 		<weapon name="ANCIENT_STUN" />
-		<weapon name="LASER_STUN" />
+		<weapon name="LASER_STUN_ENEMY" />
 	</weaponList>
 	<droneList drones="8" count="4">
 		<drone name="GUARDIAN_1_MISSILE" />
