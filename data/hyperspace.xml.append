@@ -5349,6 +5349,7 @@
 	<crew> <!-- The Forgemaster Crew Player -->
 		<race name="fm_forgemasterperson_player">
 			<animSheet>fm_forgemasterperson</animSheet>
+			<essential>1</essential>
 			<maxHealth>200</maxHealth>
 			<repairSpeed>3</repairSpeed>
 			<canFight>true</canFight>
@@ -6360,6 +6361,7 @@
 	<crew> <!-- Remington-->
 		<race name="unique_remington">
 			<animSheet>remington</animSheet>
+			<essential>1</essential>
 			<repairSpeed>2.5</repairSpeed>
 			<moveSpeedMultiplier>1</moveSpeedMultiplier>
 			<damageMultiplier>0.6</damageMultiplier>
@@ -6458,6 +6460,7 @@
 	<crew> <!-- Mossberg-->
 		<race name="unique_mossberg">
 			<animSheet>mossberg</animSheet>
+			<essential>1</essential>
 			<repairSpeed>2.5</repairSpeed>
 			<moveSpeedMultiplier>1</moveSpeedMultiplier>
 			<damageMultiplier>0.6</damageMultiplier>
