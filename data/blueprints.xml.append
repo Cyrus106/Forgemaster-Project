@@ -1180,7 +1180,7 @@
 		<desc>This Lost Sun vessel is equipped with some of the most powerful ancient equipment money could buy, but due to a mistake made during their FTL drive experiments, the ship is rendered unstable. It cannot sustain itself for more than 75 seconds without needing to perform another FTL jump, otherwise the drive will fail catastrophically and destroy the vessel. Hope you're quick!</desc>
 		<systemList>
 			<battery max="2" power="1" room="12" start="false" img="room_battery_10" />
-			<cloaking power="1" room="11" start="false" img="room_cloaking_orchid_2" />
+			<cloaking power="1" room="11" start="false" img="room_cloaking_2" />
 			<clonebay power="1" room="0" start="false">
 				<slot>
 					<number>1</number>

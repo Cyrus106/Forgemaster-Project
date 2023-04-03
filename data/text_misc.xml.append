@@ -300,7 +300,8 @@ FM: A COMPONENT for forging the 'Debilitatum' Heavy Missiles[80~], alongside the
 
 <text name="fm_tip_focus_chain">Tip: Adaptive weapons increase in damage each time they are fired. The damage increase amount and limit depends on the weapon.
 
-FM: A COMPONENT for forging the Parazonium Focus[100~], alongside the other COMPONENT 'Hermes' Heavy Missiles.</text>
+FM: A COMPONENT for forging the Parazonium Focus[100~], alongside the other COMPONENT 'Hermes' Heavy Missiles.
+FM: A COMPONENT for forging the Omiyari Adaptive Pinpoint[50~], alongside the other COMPONENT Suyari Adaptive Beam.</text>
 
 <!-- EBONY + MAPLE -->
 
@@ -324,10 +325,10 @@ FM: A COMPONENT for forging the Maple Conservative Energy Pinpoint[50~], alongsi
 	
 FM: A COMPONENT for forging the Omiyari Adaptive Pinpoint[50~], alongside the other COMPONENT Cinquedea Pinpoint.</text>
 	
-<text name="fm_tip_focus_chain">Tip: Chain beams decrease their cooldown every time they fire. Check the green lights on the weapon to see how many times it has fired.
+<!--<text name="fm_tip_focus_chain">Tip: Chain beams decrease their cooldown every time they fire. Check the green lights on the weapon to see how many times it has fired.
 	
 FM: A COMPONENT for forging the Omiyari Adaptive Pinpoint[50~], alongside the other COMPONENT Suyari Adaptive Beam.</text>
-	
+-->	
 <!--  AEGROTATIO -->
 	
 <text name="fm_tip_corrosive_2">Tip: These Geniocracy-produced anti-bio weapons fire advanced radiation lasers, which slowly corrode any crew hit. The stronger the weapon, the better the damage over time.

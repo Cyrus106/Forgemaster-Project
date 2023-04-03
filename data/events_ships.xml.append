@@ -2062,7 +2062,7 @@
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Scrapmetal Fireheart.</text>
-			<event load="GET_FIRE_HEART"/>
+			<event load="SCRAP_FIRE_HEART"/>
 		</choice>
 	</event>
 
