@@ -66,3 +66,69 @@ mods.inferno.randomInt = function(min,max)
   end
   return (Hyperspace.random32() % (max-min+1)) + min
 end
+
+--the info hud.
+
+local extraInfo = {
+  xOffset = 110,
+  yOffset = 204,
+  extraYOffset = 0,
+  augList ={
+    [1] = "AUTO_COOLDOWN",
+    [2] = "SHIELD_RECHARGE",
+    [3] = "EXPLOSIVE_REPLICATOR",
+    [4] = "ROCK_ARMOR",
+    [5] = "ION_ARMOR",
+    [6] = "SYSTEM_CASING",
+    [7] = "SCRAP_COLLECTOR",
+    
+  },
+  augValues ={
+    [1] = 1, --+ Hyperspace.ships.player:GetAugmentationValue("AUTO_COOLDOWN"),
+    [2] = 1, --+ Hyperspace.ships.player:GetAugmentationValue("SHIELD_RECHARGE"),
+    [3] = 0, --Hyperspace.ships.player:GetAugmentationValue("EXPLOSIVE_REPLICATOR"),
+    [4] = 0, --Hyperspace.ships.player:GetAugmentationValue("ROCK_ARMOR"),
+    [5] = 0, --Hyperspace.ships.player:GetAugmentationValue("ION_ARMOR"),
+    [6] = 0, --Hyperspace.ships.player:GetAugmentationValue("SYSTEM_CASING"),
+    [7] = 1, --+ Hyperspace.ships.player:GetAugmentationValue("SCRAP_COLLECTOR"),
+    
+  },
+  render = function(self)
+    Graphics.CSurface.GL_PushMatrix()
+    Graphics.CSurface.GL_LoadIdentity()
+    for augCounter=1, #(self.augList) , 1 do
+      if Hyperspace.ships.player:HasEquipment(self.augList[augCounter]) ~= 0 then
+        Graphics.CSurface.GL_RenderPrimitive(Hyperspace.Resources:CreateImagePrimitiveString(
+          "statusUI/"..string.lower(self.augList[augCounter]).."_counter.png",
+          self.xOffset,--x
+           self.yOffset + self.extraYOffset,--y (This box will not shift like normal variable boxes because the position is predefined. This is mostly for example purposes.)
+            0,
+            Graphics.GL_Color(1, 1, 1, 1.0),
+          1.0,
+          false))
+        Graphics.freetype.easy_print(0, self.xOffset +35, self.yOffset + self.extraYOffset +9, string.format("%g%%", 100 * (self.augValues[augCounter])))
+        self.extraYOffset = self.extraYOffset + 24
+      end
+    end
+    Graphics.CSurface.GL_PopMatrix()
+    self.extraYOffset = 0
+  end,
+  update = function(self)
+    self.augValues[1] = 1 + Hyperspace.ships.player:GetAugmentationValue("AUTO_COOLDOWN")
+    self.augValues[2] = 1 + Hyperspace.ships.player:GetAugmentationValue("SHIELD_RECHARGE")
+    self.augValues[3] = Hyperspace.ships.player:GetAugmentationValue("EXPLOSIVE_REPLICATOR")
+    self.augValues[4] = Hyperspace.ships.player:GetAugmentationValue("ROCK_ARMOR")
+    self.augValues[5] = Hyperspace.ships.player:GetAugmentationValue("ION_ARMOR")
+    self.augValues[6] = Hyperspace.ships.player:GetAugmentationValue("SYSTEM_CASING")
+    self.augValues[7] = 1 + Hyperspace.ships.player:GetAugmentationValue("SCRAP_COLLECTOR")
+    --self.reloadSpeed = 1 +  Hyperspace.ships.player:GetAugmentationValue(extraInfo.augList[extraInfo.augCounter])
+  end,
+}
+
+script.on_render_event(Defines.RenderEvents.LAYER_PLAYER,
+function() 
+extraInfo:update()
+end,
+function()
+extraInfo:render() 
+end)
