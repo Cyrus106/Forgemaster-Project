@@ -82,7 +82,7 @@ local yOffset = 204
 
 script.on_render_event(Defines.RenderEvents.LAYER_PLAYER, function() end,
 function(self)
-  if Hyperspace.ships.player.bJumping == false then
+  if not Hyperspace.ships.player.bJumping then
     Graphics.CSurface.GL_PushMatrix()
     Graphics.CSurface.GL_LoadIdentity()
     Graphics.CSurface.GL_Translate(xOffset, yOffset)
