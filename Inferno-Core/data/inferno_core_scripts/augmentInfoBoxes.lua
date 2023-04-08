@@ -1,3 +1,7 @@
+local function CreateDefaultPrimitive(path)
+  return Hyperspace.Resources:CreateImagePrimitiveString(path, 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
+end
+
 --Info Box Class
 local augBox = {
   --Member Variables
@@ -25,15 +29,7 @@ local augBox = {
   New = function(self, table)
     self.__index = self
     setmetatable(table, self)
-    table.boxPrimitive = Hyperspace.Resources:CreateImagePrimitiveString(
-      "statusUI/"..table.augName:lower().."_counter.png",
-      0,
-      0,
-      0,
-      Graphics.GL_Color(1, 1, 1, 1),
-      1.0,
-      false
-    )
+    table.boxPrimitive = CreateDefaultPrimitive("statusUI/"..table.augName:lower().."_counter.png")
     return table
   end,
 }
@@ -93,46 +89,14 @@ function(self)
       end
     end
     Graphics.CSurface.GL_PopMatrix()
-    end
+  end
 end)
 
 -- display of enemy ammo and drone parts
-local missileBox = Hyperspace.Resources:CreateImagePrimitiveString(
-        "statusUI/top_missiles_on.png",
-        0,
-        0,
-        0,
-        Graphics.GL_Color(1, 1, 1, 1),
-        1.0,
-        false
-)
-local missileBoxOff = Hyperspace.Resources:CreateImagePrimitiveString(
-        "statusUI/top_missiles_on_red.png",
-        0,
-        0,
-        0,
-        Graphics.GL_Color(1, 1, 1, 1),
-        1.0,
-        false
-)
-local droneBox = Hyperspace.Resources:CreateImagePrimitiveString(
-        "statusUI/top_drones_on.png",
-        0,
-        0,
-        0,
-        Graphics.GL_Color(1, 1, 1, 1),
-        1.0,
-        false
-)
-local droneBoxOff = Hyperspace.Resources:CreateImagePrimitiveString(
-        "statusUI/top_drones_on_red.png",
-        0,
-        0,
-        0,
-        Graphics.GL_Color(1, 1, 1, 1),
-        1.0,
-        false
-)
+local missileBox = CreateDefaultPrimitive("statusUI/top_missiles_on.png")
+local missileBoxOff = CreateDefaultPrimitive("statusUI/top_missiles_on_red.png")
+local droneBox = CreateDefaultPrimitive("statusUI/top_drones_on.png")
+local droneBoxOff = CreateDefaultPrimitive("statusUI/top_drones_on_red.png")
 
 script.on_render_event(Defines.RenderEvents.MOUSE_CONTROL,
 function()
