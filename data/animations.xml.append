@@ -3489,6 +3489,12 @@
 		<desc length="5" x="7" y="2"/>
 		<time>1.0</time>
 	</anim>
+	
+	<anim name="fm_ancalagon_battle_fly">
+		<sheet>fm_ancalagon_battle</sheet>
+		<desc length="1" x="0" y="0"/>
+		<time>1.0</time>
+	</anim>
 </FTL>
 
 <FTL>  <!--Ancalagon Monitor-->
@@ -3678,6 +3684,12 @@
 	<anim name="fm_fire_intruder_power_up">
 		<sheet>fm_fire_intruder</sheet>
 		<desc length="5" x="0" y="5"/>
+		<time>1.0</time>
+	</anim>
+	
+	<anim name="fm_fire_intruder_fly">
+		<sheet>fm_fire_intruder</sheet>
+		<desc length="1" x="0" y="0"/>
 		<time>1.0</time>
 	</anim>
 

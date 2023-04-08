@@ -82,15 +82,83 @@ local yOffset = 204
 
 script.on_render_event(Defines.RenderEvents.LAYER_PLAYER, function() end,
 function(self)
-  Graphics.CSurface.GL_PushMatrix()
-  Graphics.CSurface.GL_LoadIdentity()
-  local extraYOffset = 0
-  Graphics.CSurface.GL_Translate(xOffset, yOffset)
-  for _, augBox in ipairs(augBoxes) do
-    if augBox:ShoulRender() then
-      Graphics.CSurface.GL_Translate(0, 24)
-      augBox:Render()
+  if Hyperspace.ships.player.bJumping == false then
+    Graphics.CSurface.GL_PushMatrix()
+    Graphics.CSurface.GL_LoadIdentity()
+    Graphics.CSurface.GL_Translate(xOffset, yOffset)
+    for _, augBox in ipairs(augBoxes) do
+      if augBox:ShoulRender() then
+        Graphics.CSurface.GL_Translate(0, 24)
+        augBox:Render()
+      end
     end
-  end
-  Graphics.CSurface.GL_PopMatrix()
+    Graphics.CSurface.GL_PopMatrix()
+    end
 end)
+
+-- display of enemy ammo and drone parts
+local missileBox = Hyperspace.Resources:CreateImagePrimitiveString(
+        "statusUI/top_missiles_on.png",
+        0,
+        0,
+        0,
+        Graphics.GL_Color(1, 1, 1, 1),
+        1.0,
+        false
+)
+local missileBoxOff = Hyperspace.Resources:CreateImagePrimitiveString(
+        "statusUI/top_missiles_on_red.png",
+        0,
+        0,
+        0,
+        Graphics.GL_Color(1, 1, 1, 1),
+        1.0,
+        false
+)
+local droneBox = Hyperspace.Resources:CreateImagePrimitiveString(
+        "statusUI/top_drones_on.png",
+        0,
+        0,
+        0,
+        Graphics.GL_Color(1, 1, 1, 1),
+        1.0,
+        false
+)
+local droneBoxOff = Hyperspace.Resources:CreateImagePrimitiveString(
+        "statusUI/top_drones_on_red.png",
+        0,
+        0,
+        0,
+        Graphics.GL_Color(1, 1, 1, 1),
+        1.0,
+        false
+)
+
+script.on_render_event(Defines.RenderEvents.MOUSE_CONTROL,
+function(self)
+  if Hyperspace.ships.enemy and Hyperspace.ships.player.bJumping == false and Hyperspace.ships.player:DoSensorsProvide(4) then
+    local enemyMissiles = nil
+    pcall(function() enemyMissiles = Hyperspace.ships.enemy.weaponSystem.missile_count end)
+    Graphics.CSurface.GL_PushMatrix()
+    Graphics.CSurface.GL_LoadIdentity()
+    Graphics.CSurface.GL_Translate(921, 7)
+    if enemyMissiles and enemyMissiles ~=0 then
+      Graphics.CSurface.GL_RenderPrimitive(missileBox)
+      Graphics.freetype.easy_printCenter(0, 49, 15, string.format("%i", enemyMissiles))
+    else
+      Graphics.CSurface.GL_RenderPrimitive(missileBoxOff)
+      Graphics.freetype.easy_printCenter(0, 49, 15, "0")
+    end
+    Graphics.CSurface.GL_Translate(70, 0)
+    if Hyperspace.ships.enemy:GetDroneCount() ~=0 then
+      Graphics.CSurface.GL_RenderPrimitive(droneBox)
+    else
+      Graphics.CSurface.GL_RenderPrimitive(droneBoxOff)
+    end
+    Graphics.freetype.easy_printCenter(0, 49, 15, string.format("%i", Hyperspace.ships.enemy:GetDroneCount()))
+    Graphics.CSurface.GL_PopMatrix()
+  end
+end,
+function()
+end
+)
