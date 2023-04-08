@@ -135,30 +135,38 @@ local droneBoxOff = Hyperspace.Resources:CreateImagePrimitiveString(
 )
 
 script.on_render_event(Defines.RenderEvents.MOUSE_CONTROL,
-function(self)
-  if Hyperspace.ships.enemy and Hyperspace.ships.player.bJumping == false and Hyperspace.ships.player:DoSensorsProvide(4) then
-    local enemyMissiles = nil
-    pcall(function() enemyMissiles = Hyperspace.ships.enemy.weaponSystem.missile_count end)
+function()
+  local playerShip = Hyperspace.ships.player
+  local enemyShip = Hyperspace.ships.enemy
+  if enemyShip and not playerShip.bJumping and playerShip:DoSensorsProvide(4) then
+    local enemyMissiles
+    --Re-implementation of native ShipManager::GetMissileCount function, replace when exposed
+    if enemyShip:HasSystem(3) then
+      enemyMissiles = enemyShip.weaponSystem.missile_count
+    else
+      enemyMissiles = enemyShip.tempMissileCount
+    end
+
     Graphics.CSurface.GL_PushMatrix()
     Graphics.CSurface.GL_LoadIdentity()
     Graphics.CSurface.GL_Translate(921, 7)
-    if enemyMissiles and enemyMissiles ~=0 then
-      Graphics.CSurface.GL_RenderPrimitive(missileBox)
-      Graphics.freetype.easy_printCenter(0, 49, 15, string.format("%i", enemyMissiles))
+    
+    local missleBoxPrimitive
+    if enemyMissiles ~= 0 then
+      missileBoxPrimitive = missileBox
     else
-      Graphics.CSurface.GL_RenderPrimitive(missileBoxOff)
-      Graphics.freetype.easy_printCenter(0, 49, 15, "0")
+      missileBoxPrimitive = missileBoxOff
     end
+    Graphics.CSurface.GL_RenderPrimitive(missileBoxPrimitive)
+    Graphics.freetype.easy_printCenter(0, 49, 15, string.format("%i", enemyMissiles))
+    
     Graphics.CSurface.GL_Translate(70, 0)
-    if Hyperspace.ships.enemy:GetDroneCount() ~=0 then
+    if enemyShip:GetDroneCount() ~=0 then
       Graphics.CSurface.GL_RenderPrimitive(droneBox)
     else
       Graphics.CSurface.GL_RenderPrimitive(droneBoxOff)
     end
-    Graphics.freetype.easy_printCenter(0, 49, 15, string.format("%i", Hyperspace.ships.enemy:GetDroneCount()))
+    Graphics.freetype.easy_printCenter(0, 49, 15, string.format("%i", enemyShip:GetDroneCount()))
     Graphics.CSurface.GL_PopMatrix()
   end
-end,
-function()
-end
-)
+end, function() end)
