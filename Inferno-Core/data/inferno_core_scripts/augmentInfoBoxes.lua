@@ -151,13 +151,11 @@ function()
     Graphics.CSurface.GL_LoadIdentity()
     Graphics.CSurface.GL_Translate(921, 7)
     
-    local missleBoxPrimitive
     if enemyMissiles ~= 0 then
-      missileBoxPrimitive = missileBox
+      Graphics.CSurface.GL_RenderPrimitive(missileBox)
     else
-      missileBoxPrimitive = missileBoxOff
+      Graphics.CSurface.GL_RenderPrimitive(missileBoxOff)
     end
-    Graphics.CSurface.GL_RenderPrimitive(missileBoxPrimitive)
     Graphics.freetype.easy_printCenter(0, 49, 15, string.format("%i", enemyMissiles))
     
     Graphics.CSurface.GL_Translate(70, 0)
