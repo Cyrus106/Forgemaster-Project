@@ -1956,7 +1956,7 @@
         <text>Proceed with crafting?</text>
         <weapon name="FM_LASER_HUMAN"/>
         <removeItem>LASER_HEAVY_1</removeItem>
-        <removeItem>LASER_PARTICLE_2</removeItem>
+        <removeItem>LASER_BIO</removeItem>
         <choice hidden="true">
           <text>Continue...</text>
           <event>
