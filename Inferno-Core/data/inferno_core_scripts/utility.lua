@@ -66,3 +66,22 @@ mods.inferno.randomInt = function(min,max)
   end
   return (Hyperspace.random32() % (max-min+1)) + min
 end
+
+--for use later
+local function GetLimitAmount(ShipSystem)
+  --Limit priority is loss, limit, divide, as in divide overrides both loss and limit, and limit overrides loss
+  local absolute_max_bars = ShipSystem.powerState.second --Maximum power level
+  local current_max_bars = ShipSystem:GetPowerCap() --Only considers limit and divide events, not loss, this only matters if loss is the ONLY type of <status>
+  if absolute_max_bars ~= current_max_bars then
+    return absolute_max_bars - current_max_bars
+  elseif ShipSystem.iTempPowerLoss > 0 then
+    return ShipSystem.iTempPowerLoss
+  else
+    return 0
+  end
+end
+
+local function SetLimitAmount(ShipSystem, limit)
+  ShipSystem:ClearStatus()
+  ShipSystem:SetPowerLoss(limit)
+end
