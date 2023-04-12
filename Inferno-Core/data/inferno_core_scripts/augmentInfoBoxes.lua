@@ -1,3 +1,7 @@
+local function CreateDefaultPrimitive(path)
+  return Hyperspace.Resources:CreateImagePrimitiveString(path, 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
+end
+
 --Info Box Class
 local augBox = {
   --Member Variables
@@ -25,15 +29,7 @@ local augBox = {
   New = function(self, table)
     self.__index = self
     setmetatable(table, self)
-    table.boxPrimitive = Hyperspace.Resources:CreateImagePrimitiveString(
-      "statusUI/"..table.augName:lower().."_counter.png",
-      0,
-      0,
-      0,
-      Graphics.GL_Color(1, 1, 1, 1),
-      1.0,
-      false
-    )
+    table.boxPrimitive = CreateDefaultPrimitive("statusUI/"..table.augName:lower().."_counter.png")
     return table
   end,
 }
@@ -82,7 +78,7 @@ local yOffset = 204
 
 script.on_render_event(Defines.RenderEvents.LAYER_PLAYER, function() end,
 function(self)
-  if Hyperspace.ships.player.bJumping == false then
+  if not Hyperspace.ships.player.bJumping then
     Graphics.CSurface.GL_PushMatrix()
     Graphics.CSurface.GL_LoadIdentity()
     Graphics.CSurface.GL_Translate(xOffset, yOffset)
@@ -93,72 +89,46 @@ function(self)
       end
     end
     Graphics.CSurface.GL_PopMatrix()
-    end
+  end
 end)
 
 -- display of enemy ammo and drone parts
-local missileBox = Hyperspace.Resources:CreateImagePrimitiveString(
-        "statusUI/top_missiles_on.png",
-        0,
-        0,
-        0,
-        Graphics.GL_Color(1, 1, 1, 1),
-        1.0,
-        false
-)
-local missileBoxOff = Hyperspace.Resources:CreateImagePrimitiveString(
-        "statusUI/top_missiles_on_red.png",
-        0,
-        0,
-        0,
-        Graphics.GL_Color(1, 1, 1, 1),
-        1.0,
-        false
-)
-local droneBox = Hyperspace.Resources:CreateImagePrimitiveString(
-        "statusUI/top_drones_on.png",
-        0,
-        0,
-        0,
-        Graphics.GL_Color(1, 1, 1, 1),
-        1.0,
-        false
-)
-local droneBoxOff = Hyperspace.Resources:CreateImagePrimitiveString(
-        "statusUI/top_drones_on_red.png",
-        0,
-        0,
-        0,
-        Graphics.GL_Color(1, 1, 1, 1),
-        1.0,
-        false
-)
+local missileBox = CreateDefaultPrimitive("statusUI/top_missiles_on.png")
+local missileBoxOff = CreateDefaultPrimitive("statusUI/top_missiles_on_red.png")
+local droneBox = CreateDefaultPrimitive("statusUI/top_drones_on.png")
+local droneBoxOff = CreateDefaultPrimitive("statusUI/top_drones_on_red.png")
 
 script.on_render_event(Defines.RenderEvents.MOUSE_CONTROL,
-function(self)
-  if Hyperspace.ships.enemy and Hyperspace.ships.player.bJumping == false and Hyperspace.ships.player:DoSensorsProvide(3) then
-    local enemyMissiles = nil
-    pcall(function() enemyMissiles = Hyperspace.ships.enemy.weaponSystem.missile_count end)
+function()
+  local playerShip = Hyperspace.ships.player
+  local enemyShip = Hyperspace.ships.enemy
+  if enemyShip and not playerShip.bJumping and playerShip:DoSensorsProvide(3) then
+    local enemyMissiles
+    --Re-implementation of native ShipManager::GetMissileCount function, replace when exposed
+    if enemyShip:HasSystem(3) then
+      enemyMissiles = enemyShip.weaponSystem.missile_count
+    else
+      enemyMissiles = enemyShip.tempMissileCount
+    end
+
     Graphics.CSurface.GL_PushMatrix()
     Graphics.CSurface.GL_LoadIdentity()
     Graphics.CSurface.GL_Translate(921, 7)
-    if enemyMissiles and enemyMissiles ~=0 then
+    
+    if enemyMissiles ~= 0 then
       Graphics.CSurface.GL_RenderPrimitive(missileBox)
-      Graphics.freetype.easy_printCenter(0, 49, 15, string.format("%i", enemyMissiles))
     else
       Graphics.CSurface.GL_RenderPrimitive(missileBoxOff)
-      Graphics.freetype.easy_printCenter(0, 49, 15, "0")
     end
+    Graphics.freetype.easy_printCenter(0, 49, 15, string.format("%i", enemyMissiles))
+    
     Graphics.CSurface.GL_Translate(70, 0)
-    if Hyperspace.ships.enemy:GetDroneCount() ~=0 then
+    if enemyShip:GetDroneCount() ~=0 then
       Graphics.CSurface.GL_RenderPrimitive(droneBox)
     else
       Graphics.CSurface.GL_RenderPrimitive(droneBoxOff)
     end
-    Graphics.freetype.easy_printCenter(0, 49, 15, string.format("%i", Hyperspace.ships.enemy:GetDroneCount()))
+    Graphics.freetype.easy_printCenter(0, 49, 15, string.format("%i", enemyShip:GetDroneCount()))
     Graphics.CSurface.GL_PopMatrix()
   end
-end,
-function()
-end
-)
+end, function() end)
