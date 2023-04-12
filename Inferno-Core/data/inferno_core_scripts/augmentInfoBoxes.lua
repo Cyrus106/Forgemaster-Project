@@ -136,7 +136,7 @@ local droneBoxOff = Hyperspace.Resources:CreateImagePrimitiveString(
 
 script.on_render_event(Defines.RenderEvents.MOUSE_CONTROL,
 function(self)
-  if Hyperspace.ships.enemy and Hyperspace.ships.player.bJumping == false and Hyperspace.ships.player:DoSensorsProvide(4) then
+  if Hyperspace.ships.enemy and Hyperspace.ships.player.bJumping == false and Hyperspace.ships.player:DoSensorsProvide(3) then
     local enemyMissiles = nil
     pcall(function() enemyMissiles = Hyperspace.ships.enemy.weaponSystem.missile_count end)
     Graphics.CSurface.GL_PushMatrix()
