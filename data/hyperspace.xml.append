@@ -11425,18 +11425,18 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<aug name="COMBUSTION_VIRUS">
 			<statBoosts>
 				<statBoost name="powerEffect">
-					<boostType>SET</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
+					<boostType>ADD</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<priority>999999</priority>
-					<blackList load="LIST_FM_PLSNOEFFECT_VIRUS">
+					<!--<blackList load="LIST_FM_PLSNOEFFECT_VIRUS">
 						<blueprintList load="LIST_FM_PLSNOEFFECT"/>
 						<blueprintList load="LIST_FM_HOLYSHIT"/>
 						<blueprintList load="LIST_CREW_SHELL"/>
 						<blueprintList load="LIST_CREW_ENGI"/>
 						<blueprintList load="LIST_CREW_COGNITIVE_ALL"/>
 						<blueprintList load="LIST_FM_HOLYSHIT"/>
-					</blackList>
+					</blackList>-->
 					<powerEffect>
 						<cooldown>1</cooldown>
 						<jumpCooldown>full</jumpCooldown>
@@ -11738,19 +11738,19 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<aug name="HID_COMBUSTION_VIRUS">
 			<statBoosts>
 				<statBoost name="powerEffect">
-					<boostType>SET</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
+					<boostType>ADD</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<priority>999999</priority>
 
-					<blackList load="LIST_FM_PLSNOEFFECT_VIRUS">
+					<!--<blackList load="LIST_FM_PLSNOEFFECT_VIRUS">
 						<blueprintList load="LIST_FM_PLSNOEFFECT"/>
 						<blueprintList load="LIST_FM_HOLYSHIT"/>
 						<blueprintList load="LIST_CREW_SHELL"/>
 						<blueprintList load="LIST_CREW_ENGI"/>
 						<blueprintList load="LIST_CREW_COGNITIVE_ALL"/>
 						<blueprintList load="LIST_FM_HOLYSHIT"/>
-					</blackList>
+					</blackList>-->
 					<powerEffect>
 						<cooldown>1</cooldown>
 						<jumpCooldown>full</jumpCooldown>
