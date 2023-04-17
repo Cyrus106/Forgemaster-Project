@@ -1,6 +1,7 @@
 <FTL><!--Inferno-Core-->
 	<events>
 		<variable name="fmcore_conservative_fix" op="set" val="0"/>
+		<variable name="fmcore_augbox_active" op="set" val="1"/>
 
 		<variable name="fmcore_called_cura" op="set" val="0"/>
 		<variable name="fmcore_used_hs_aug" op="set" val="0"/>

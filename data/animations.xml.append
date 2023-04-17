@@ -5734,7 +5734,12 @@ try this later
 
 </FTL>
 
-
+<animSheet name="fm_forgemaster_thruster" w="304" h="37" fw="38" fh="37">thrusters/fm_forgemanshipthrusterflame_sheet8.png</animSheet>
+<anim name="fm_forgemaster_thruster">
+	<sheet>fm_forgemaster_thruster</sheet>
+	<desc length="8" x="0" y="0"/>
+	<time>0.5</time>
+</anim>
 
 
 <!--

@@ -13,6 +13,24 @@
 
 	<event name="ADDON_FMCORE_INFO">
 		<text id="info_addon_fmcore"/>
+    <choice>
+      <text id="continue"/>
+      <event/>
+    </choice>
+    <choice req="fmcore_augbox_active" lvl="0" max_lvl="0"><!--placeholder-->
+      <text>Enable Augment Stat Scren</text>
+      <event>
+        <variable name="fmcore_augbox_active" op="set" val="1"/>
+        <queueEvent>ADDON_FMCORE_INFO</queueEvent>
+      </event>
+    </choice>
+    <choice req="fmcore_augbox_active"><!--placeholder-->
+      <text>Disable Augment Stat Scren</text>
+      <event>
+        <variable name="fmcore_augbox_active" op="set" val="0"/>
+        <queueEvent>ADDON_FMCORE_INFO</queueEvent>
+      </event>
+    </choice>
 	</event>
 	<event name="ADDON_FORGEMASTER_INFO">
 		<text id="info_addon_forgmaster"/>

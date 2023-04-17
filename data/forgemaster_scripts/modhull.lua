@@ -88,12 +88,24 @@ script.on_game_event("FM_HULLKILL_TRACKER_EVENT", false, function() selfArm:rede
 script.on_game_event("FM_CREWKILL_TRACKER_EVENT", false, function() selfArm:redeem() end)
 
 --cyclo arsenal and stuff
-mods.inferno.cycloWeapon = function()--checks if you have cyclo arsenal, then limits your system if you do
+--[[mods.inferno.cycloWeapon = function()--checks if you have cyclo arsenal, then limits your system if you do
   local augValue = Hyperspace.ships.player:GetAugmentationValue("FM_MODULAR_HULL_FASTWEAPON") --maybe later replaed with a req counting the resulting bars
   if augValue > 0 then
     setLimitAmount(3,3,0)
   end
-end
+end--]]
+
+script.on_internal_event(Defines.InternalEvents.GET_AUGMENTATION_VALUE,
+function(ShipManager, AugName, AugValue)
+  
+  if AugName == "AUTO_COOLDOWN" and ShipManager:HasAugmentation("FM_MODULAR_HULL_FASTWEAPON") > 0 then
+    local emptyWeaponBars = ShipManager:GetSystemPowerMax(3) - ShipManager:GetSystemPower(3)
+    local cooldownModifier = (emptyWeaponBars * 0.1)-0.05
+    AugValue = AugValue + cooldownModifier
+  end
+
+  return Defines.Chain.CONTINUE, AugValue
+end)
 
 mods.inferno.cycloShield = function()--as above, but for the shilds augment
   local augValue = Hyperspace.ships.player:GetAugmentationValue("FM_MODULAR_HULL_FASTSHIELD") 
@@ -102,5 +114,17 @@ mods.inferno.cycloShield = function()--as above, but for the shilds augment
   end
 end
 
-script.on_game_event("FMCORE_ONJUMP", false, function() mods.inferno:cycloWeapon() end)
+--script.on_game_event("FMCORE_ONJUMP", false, function() mods.inferno:cycloWeapon() end)
 script.on_game_event("FMCORE_ONJUMP", false, function() mods.inferno:cycloShield() end)
+
+
+script.on_game_event("COMBAT_CHECK_REMOVEBYPASS",false,
+function()
+  Hyperspace.ships.enemy:RemoveItem("UPG_TECH_BYPASS")
+  Hyperspace.ships.enemy:RemoveItem("HIDDEN UPG_TECH_BYPASS")
+  if Hyperspace.ships.enemy:HasAugmentation("SYLVAN_GEL") == "true" then
+    Hyperspace.ships.enemy:RemoveItem("SYLVAN_GEL")
+    Hyperspace.ships.enemy:AddAugmentation("LOCKED_SLUG_GEL")
+  end
+end
+)
