@@ -33,6 +33,6 @@ function(ship, weapon, projectile)
     for i = 1, boost do
       weapon.queuedProjectiles[i - 1]:Kill()
     end
+    Hyperspace.Global.GetInstance():GetSoundControl():PlaySoundMix("heavyLaser1", 1, true)
   end
-  Hyperspace.Global.GetInstance():GetSoundControl():PlaySoundMix("heavyLaser1", 1, true)
 end)
