@@ -72,7 +72,7 @@ local function Damage(table)
     return ret
 end
 
---TODO: Supply proper implementation for beams and pinpoint using the DAMAGE_BEAM callback. (Either add a tileDamageWeapons table or restructure this)
+--Implementation: On hit, this damage is applied for projectile weapons. It is applied per-tile for beam weapons.
 local roomDamageWeapons = {
   FM_PULSEDEEP = Damage {ion = 2},
   FM_BEAM_EXPLOSION = Damage {hull = 1},
@@ -105,4 +105,17 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(ship, 
     ship:DamageArea(projectile.position, roomDamage, true)
     Hyperspace.Get_Projectile_Extend(projectile).name = weaponName
   end
+end)
+
+script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
+function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
+  local roomDamage
+  pcall(function() roomDamage = roomDamageWeapons[Hyperspace.Get_Projectile_Extend(projectile).name] end)
+  if roomDamage and beamHitType == Defines.BeamHit.NEW_TILE then
+    local weaponName = Hyperspace.Get_Projectile_Extend(projectile).name
+    Hyperspace.Get_Projectile_Extend(projectile).name = ""
+    ship:DamageArea(projectile.position, roomDamage, true)
+    Hyperspace.Get_Projectile_Extend(projectile).name = weaponName
+  end
+  return Defines.Chain.CONTINUE, beamHitType
 end)
