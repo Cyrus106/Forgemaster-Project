@@ -37,3 +37,158 @@ function(ship, weapon, projectile)
 end)
 
 
+-- Make photon-like guns pop shields
+local popWeapons = {}
+popWeapons["FM_LASER_PHOTON"] = {
+    count = 1,
+    countSuper = 1
+}
+popWeapons["FM_LASER_PHOTON_2"] = {
+  count = 1,
+  countSuper = 1
+}
+popWeapons["FM_LASER_PHOTON_ENEMY"] = {
+    count = 1,
+    countSuper = 1
+}
+popWeapons["FM_LASER_PHOTON_2_ENEMY"] = {
+  count = 1,
+  countSuper = 1
+}
+popWeapons["FM_CHAINGUN_FIRE"] = {
+  count = 1,
+  countSuper = 1
+}
+popWeapons["FM_GATLING_ANCIENT_PHOTON"] = {
+    count = 1,
+    countSuper = 1
+}
+script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION, function(shipManager, projectile, damage, response)
+    local shieldPower = shipManager.shieldSystem.shields.power
+    local popData = nil
+    if pcall(function() popData = popWeapons[Hyperspace.Get_Projectile_Extend(projectile).name] end) and popData then
+        if shieldPower.super.first > 0 then
+            if popData.countSuper > 0 then
+                shipManager.shieldSystem:CollisionReal(projectile.position.x, projectile.position.y, Hyperspace.Damage(), true)
+                shieldPower.super.first = math.max(0, shieldPower.super.first - popData.countSuper)
+            end
+        else
+            shipManager.shieldSystem:CollisionReal(projectile.position.x, projectile.position.y, Hyperspace.Damage(), true)
+            shieldPower.first = math.max(0, shieldPower.first - popData.count)
+        end
+    end
+end)
+
+-- Wapons that do extra damage of a certain type on room hit
+local roomDamageWeapons = {}
+roomDamageWeapons["FM_PULSEDEEP"] = {
+  ion = 2
+}
+roomDamageWeapons["FM_BEAM_EXPLOSION"] = {
+  hull = 1
+}
+roomDamageWeapons["FM_BEAM_EXPLOSION_PLAYER"] = {
+  hull = 1
+}
+roomDamageWeapons["FM_BEAM_EXPLOSION_EGG"] = {
+  hull = 1
+}
+roomDamageWeapons["FM_BEAM_ION_PIRCE"] = {
+  ion = 1
+}
+roomDamageWeapons["FM_FOCUS_ENERGY"] = {
+  ion = 2
+}
+roomDamageWeapons["FM_FOCUS_ENERGY_2"] = {
+  ion = 3
+}
+roomDamageWeapons["FM_FOCUS_ENERGY_2_PLAYER"] = {
+  ion = 3
+}
+roomDamageWeapons["FM_FOCUS_ENERGY_3"] = {
+  ion = 4
+}
+roomDamageWeapons["FM_FOCUS_ENERGY_CONS"] = {
+  ion = 2
+}
+roomDamageWeapons["FM_MISSILES_STUN_CLOAK"] = {
+  ion = 3
+}
+roomDamageWeapons["FM_MISSILES_STUN_CLOAK_PLAYER"] = {
+  ion = 3
+}
+roomDamageWeapons["FM_MISSILES_STUN_CLOAK_MEGA"] = {
+  ion = 3
+}
+roomDamageWeapons["FM_FORGEMAN_DRONE_WEAPON"] = {
+  hull = 1
+}
+roomDamageWeapons["FM_RVS_AC_CHARGE_EMP"] = {
+  ion = 1
+}
+roomDamageWeapons["FM_BEAM_EXPLOSION_ENEMY"] = {
+  hull = 1
+}
+roomDamageWeapons["FM_BEAM_ION_PIRCE_ENEMY"] = {
+  ion = 1
+}
+roomDamageWeapons["FM_FOCUS_ENERGY_ENEMY"] = {
+  ion = 2
+}
+roomDamageWeapons["FM_FOCUS_ENERGY_2_ENEMY"] = {
+  ion = 3
+}
+roomDamageWeapons["FM_FOCUS_ENERGY_3_ENEMY"] = {
+  ion = 4
+}
+
+
+script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(ship, projectile, damage, response)
+  local hullDmgAmount = nil --extra damage inflicted when hitting a room
+  local ionDmgAmount = nil  --extra ion inflicted when hitting a room
+  local roomDamageWeapon = roomDamageWeapons[Hyperspace.Get_Projectile_Extend(projectile).name]
+  ---[[
+  pcall(function() hullDmgAmount = roomDamageWeapon.hull end)
+  pcall(function() ionDmgAmount = roomDamageWeapon.ion end)
+  if hullDmgAmount or ionDmgAmount then
+    local extraRoomDamageHit = Hyperspace.Damage()
+    extraRoomDamageHit.iDamage = hullDmgAmount
+    extraRoomDamageHit.iIonDamage = ionDmgAmount
+    local weaponName = Hyperspace.Get_Projectile_Extend(projectile).name
+    Hyperspace.Get_Projectile_Extend(projectile).name = ""
+    ship:DamageArea(projectile.position, extraRoomDamageHit, true)
+    Hyperspace.Get_Projectile_Extend(projectile).name = weaponName
+  end--]]
+  --[[
+  if pcall(function() hullDmgAmount = roomDamageWeapon.hull end) and hullDmgAmount then
+    local extraRoomDamageHit = Hyperspace.Damage()
+    extraRoomDamageHit.iDamage = hullDmgAmount
+    local weaponName = Hyperspace.Get_Projectile_Extend(projectile).name
+    Hyperspace.Get_Projectile_Extend(projectile).name = ""
+    ship:DamageArea(projectile.position, extraRoomDamageHit, true)
+    Hyperspace.Get_Projectile_Extend(projectile).name = weaponName
+  end
+  if pcall(function() ionDmgAmount = roomDamageWeapon.ion end) and ionDmgAmount then
+    local extraRoomDamageHit = Hyperspace.Damage()
+    extraRoomDamageHit.iIonDamage = ionDmgAmount
+    local weaponName = Hyperspace.Get_Projectile_Extend(projectile).name
+    Hyperspace.Get_Projectile_Extend(projectile).name = ""
+    ship:DamageArea(projectile.position, extraRoomDamageHit, true)
+    Hyperspace.Get_Projectile_Extend(projectile).name = weaponName
+  end--]]
+  --[[
+    --if ionDmgAmount == nil and hullDmgAmount == nil then
+    local doExtrahit = 0 --checks if the extra dmg hit should be done
+    if hullDmgAmount then
+      extraRoomDamageHit.iDamage = hullDmgAmount
+      doExtrahit = 1
+    end
+    if ionDmgAmount then
+      doExtrahit = 1
+    end
+    if doExtrahit==1 then
+      
+      doExtrahit = 0
+    end]]
+  --end
+end)

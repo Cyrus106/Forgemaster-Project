@@ -5,7 +5,7 @@
 <!--ENEMY SHIPS-->
 
 
-<shipBlueprint name="FM_FORGEMASTER_CRUISER_ENEMY" layout="z_FM_FORGEMASTER_CRUISER_ENEMY" img="FM_FORGEMASTER_CRUISER_ENEMY">
+<shipBlueprint name="FM_FORGEMASTER_CRUISER_ENEMY" layout="FM_FORGEMASTER_CRUISER_ENEMY" img="FM_FORGEMASTER_CRUISER_ENEMY">
 	<class>Forgemaster Cruiser</class>
 	<minSector>1</minSector>
 	<maxSector>8</maxSector>

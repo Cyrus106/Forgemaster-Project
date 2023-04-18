@@ -96,10 +96,10 @@ script.on_game_event("FM_CREWKILL_TRACKER_EVENT", false, function() selfArm:rede
 end--]]
 
 script.on_internal_event(Defines.InternalEvents.GET_AUGMENTATION_VALUE,
-function(ShipManager, AugName, AugValue)
+function(shipManager, AugName, AugValue)
   
-  if AugName == "AUTO_COOLDOWN" and ShipManager:HasAugmentation("FM_MODULAR_HULL_FASTWEAPON") > 0 then
-    local emptyWeaponBars = ShipManager:GetSystemPowerMax(3) - ShipManager:GetSystemPower(3)
+  if AugName == "AUTO_COOLDOWN" and shipManager:HasAugmentation("FM_MODULAR_HULL_FASTWEAPON") > 0 then
+    local emptyWeaponBars = shipManager:GetSystemPowerMax(3) - shipManager:GetSystemPower(3) - math.max(getLimitAmount(3,0),shipManager:GetSystemPowerMax(3) - shipManager:GetSystem(3).healthState.first) 
     local cooldownModifier = (emptyWeaponBars * 0.1)-0.05
     AugValue = AugValue + cooldownModifier
   end
@@ -117,14 +117,3 @@ end
 --script.on_game_event("FMCORE_ONJUMP", false, function() mods.inferno:cycloWeapon() end)
 script.on_game_event("FMCORE_ONJUMP", false, function() mods.inferno:cycloShield() end)
 
-
-script.on_game_event("COMBAT_CHECK_REMOVEBYPASS",false,
-function()
-  Hyperspace.ships.enemy:RemoveItem("UPG_TECH_BYPASS")
-  Hyperspace.ships.enemy:RemoveItem("HIDDEN UPG_TECH_BYPASS")
-  if Hyperspace.ships.enemy:HasAugmentation("SYLVAN_GEL") == "true" then
-    Hyperspace.ships.enemy:RemoveItem("SYLVAN_GEL")
-    Hyperspace.ships.enemy:AddAugmentation("LOCKED_SLUG_GEL")
-  end
-end
-)

@@ -4199,7 +4199,8 @@
 		<tip>tip_chain_laser</tip>
 		<desc>A weapon capable of killing gods, wielded previously by the tyrant of the entire Multiverse.</desc>
 		<tooltip>Cooldown drops the more it fires. Can chain up to 7 times!</tooltip>
-		<damage>1</damage>
+		<damage>0</damage>
+		<sysDamage>1</sysDamage>
 		<radius>50</radius>
 		<shots>1</shots>
 		<sp>1</sp>
@@ -4212,7 +4213,7 @@
 		<cost>9999</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_repair_hull</race>
 			<enemy>true</enemy>
 			<lifetime>0</lifetime>
@@ -4228,7 +4229,7 @@
 				</statBoost>
 
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 		<projectiles>
 			<projectile count="3" fake="false">laser_stun</projectile>
 		</projectiles>
@@ -8155,7 +8156,8 @@
 			Fire Chance: 20%
 			Breach Chance: 10% (Adjusted: 8%)
 		</tooltipOverride>
-		<damage>1</damage>
+		<damage>0</damage>
+		<sysDamage>1</sysDamage>
 		<noPersDamage>true</noPersDamage>
 		<radius>35</radius>
 		<shots>3</shots>
@@ -8166,7 +8168,7 @@
 		<cost>120</cost>
 		<fireTime>0.2</fireTime>
 		<bp>2</bp>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_repair_hull</race>
 			<number>1</number>
 			<enemy>true</enemy>
@@ -8182,7 +8184,7 @@
 				</statBoost>
 
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 		<rarity>0</rarity>
 		<projectiles>
 			<projectile count="1" fake="false">laser_stun</projectile>
@@ -8243,7 +8245,8 @@
 			Fire Chance: 20%
 			Breach Chance: 10% (Adjusted: 8%)
 		</tooltipOverride>
-		<damage>1</damage>
+		<damage>0</damage>
+		<sysDamage>1</sysDamage>
 		<noPersDamage>true</noPersDamage>
 		<radius>35</radius>
 		<shots>5</shots>
@@ -8254,7 +8257,7 @@
 		<cost>160</cost>
 		<fireTime>0.2</fireTime>
 		<bp>2</bp>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_repair_hull</race>
 			<number>1</number>
 			<enemy>true</enemy>
@@ -8270,7 +8273,7 @@
 				</statBoost>
 
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 		<rarity>0</rarity>
 		<projectiles>
 			<projectile count="1" fake="false">laser_stun</projectile>
@@ -8601,7 +8604,7 @@
 		</statBoosts>
 
 
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_repair_hull</race>
 			<number>1</number>
 			<enemy>true</enemy>
@@ -8617,7 +8620,7 @@
 				</statBoost>
 
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 		<rarity>0</rarity>
 		<projectiles>
 			<projectile count="1" fake="false">fm_slung_gnun_shot</projectile>
@@ -9425,8 +9428,9 @@
 		</descriptionOverride>
 		<tooltip>Cooldown drops the more it fires.</tooltip>
 		<radius>75</radius>
-		<damage>1</damage>
-		<persDamage>1</persDamage>
+		<damage>0</damage>
+		<sysDamage>1</sysDamage>
+		<persDamage>2</persDamage>
 		<shots>1</shots>
 		<sp>0</sp>
 		<stunChance>2</stunChance>
@@ -9436,7 +9440,7 @@
 		<power>3</power>
 		<cost>190</cost>
 		<bp>2</bp>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_repair_hull</race>
 			<number>1</number>
 			<lifetime>0</lifetime>
@@ -9451,7 +9455,7 @@
 				</statBoost>
 
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 		<rarity>0</rarity>
 		<explosion>explosion_small_ion</explosion>
 		<boost>
@@ -10004,13 +10008,13 @@
 		</missSounds>
 		<weaponArt>pulsedeep_cannon</weaponArt>
 		<iconImage>ion</iconImage>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_ion_instant_2</race>
 			<number>1</number>
 			<enemy>true</enemy>
 			<lifetime>0</lifetime>
 			<noSlot>true</noSlot>
-		</spawnCrew>
+		</spawnCrew>-->
 		<statBoosts>
 			<statBoost name="powerEffect">
 				<boostType>SET</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
@@ -10716,7 +10720,7 @@
 		<bp>6</bp>
 		<rarity>0</rarity>
 		<length>90</length>
-		<image>beam_contact</image>
+		<image>explosion_random</image>
 		<launchSounds>
 			<sound>beam2</sound>
 		</launchSounds>
@@ -10724,7 +10728,7 @@
 		<iconImage>beam</iconImage>
 		<explosion>explosion_random</explosion>
 		<iconScale>0.9</iconScale>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_explode_instant</race>
 			<number>1</number>
 			<noSlot>true</noSlot>
@@ -10739,7 +10743,7 @@
 					<priority>999999</priority>
 				</statBoost>
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_BEAM_EXPLOSION_EGG">
@@ -10798,7 +10802,7 @@
 		<bp>6</bp>
 		<rarity>0</rarity>
 		<length>90</length>
-		<image>beam_contact</image>
+		<image>explosion_random</image>
 		<launchSounds>
 			<sound>beam2</sound>
 		</launchSounds>
@@ -10806,7 +10810,7 @@
 		<iconImage>beam</iconImage>
 		<explosion>explosion_random</explosion>
 		<iconScale>0.9</iconScale>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_explode_instant</race>
 			<number>1</number>
 			<noSlot>true</noSlot>
@@ -10821,7 +10825,7 @@
 					<priority>999999</priority>
 				</statBoost>
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_BEAM_EXPLOSION_PLAYER">
@@ -10880,7 +10884,7 @@
 		<bp>6</bp>
 		<rarity>0</rarity>
 		<length>90</length>
-		<image>beam_contact</image>
+		<image>explosion_random</image>
 		<launchSounds>
 			<sound>beam2</sound>
 		</launchSounds>
@@ -10888,7 +10892,7 @@
 		<iconImage>beam</iconImage>
 		<explosion>explosion_random</explosion>
 		<iconScale>0.9</iconScale>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_explode_instant</race>
 			<number>1</number>
 			<noSlot>true</noSlot>
@@ -10903,7 +10907,7 @@
 					<priority>999999</priority>
 				</statBoost>
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_BEAM_ION_PIERCE">
@@ -10955,14 +10959,14 @@
 		<cost>120</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
-		<image>beam_contact</image>
+		<image>explosion_small_ion</image>
 		<length>105</length>
 		<launchSounds>
 			<sound>beam2</sound>
 		</launchSounds>
 		<weaponArt>fm_beam_ion_pierce</weaponArt>
 		<iconImage>beam</iconImage>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_ion_instant_1</race>
 			<number>1</number>
 			<noSlot>true</noSlot>
@@ -10977,7 +10981,7 @@
 					<priority>999999</priority>
 				</statBoost>
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_AN_BEAM">
@@ -11441,7 +11445,7 @@
 		</launchSounds>
 		<weaponArt>fm_focus_energy_1</weaponArt>
 		<iconImage>beam</iconImage>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_ion_instant_2</race>
 			<number>1</number>
 			<enemy>true</enemy>
@@ -11456,7 +11460,7 @@
 					<priority>999999</priority>
 				</statBoost>
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_FOCUS_ENERGY_2">
@@ -11520,7 +11524,7 @@
 		</launchSounds>
 		<weaponArt>fm_focus_energy_2</weaponArt>
 		<iconImage>beam</iconImage>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_ion_instant_3</race>
 			<number>1</number>
 			<enemy>true</enemy>
@@ -11535,7 +11539,7 @@
 					<priority>999999</priority>
 				</statBoost>
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_FOCUS_ENERGY_2_PLAYER">
@@ -11599,7 +11603,7 @@
 		</launchSounds>
 		<weaponArt>fm_focus_energy_2</weaponArt>
 		<iconImage>beam</iconImage>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_ion_instant_3</race>
 			<enemy>true</enemy>
 			<lifetime>0</lifetime>
@@ -11614,7 +11618,7 @@
 					<priority>999999</priority>
 				</statBoost>
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_FOCUS_ENERGY_3">
@@ -11678,7 +11682,7 @@
 		</launchSounds>
 		<weaponArt>fm_focus_energy_3</weaponArt>
 		<iconImage>beam</iconImage>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_ion_instant_4</race>
 			<number>1</number>
 			<enemy>true</enemy>
@@ -11693,7 +11697,7 @@
 					<priority>999999</priority>
 				</statBoost>
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 
 	</weaponBlueprint>
 
@@ -11758,7 +11762,7 @@
 		</launchSounds>
 		<weaponArt>fm_focus_energy_cons</weaponArt>
 		<iconImage>beam</iconImage>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_ion_instant_2</race>
 			<number>1</number>
 			<enemy>true</enemy>
@@ -11773,7 +11777,7 @@
 					<priority>999999</priority>
 				</statBoost>
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_FOCUS_ADAPT">
@@ -13015,7 +13019,7 @@
 		</missSounds>
 		<weaponArt>fm_missiles_cloak_stun</weaponArt>
 		<iconImage>missile</iconImage>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_ion_instant_3</race>
 			<number>1</number>
 			<enemy>true</enemy>
@@ -13030,7 +13034,7 @@
 					<priority>999999</priority>
 				</statBoost>
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_MISSILES_CLOAK_STUN_PLAYER">
@@ -13115,7 +13119,7 @@
 		</missSounds>
 		<weaponArt>fm_missiles_cloak_stun</weaponArt>
 		<iconImage>missile</iconImage>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_ion_instant_3</race>
 			<enemy>true</enemy>
 			<lifetime>0</lifetime>
@@ -13130,7 +13134,7 @@
 					<priority>999999</priority>
 				</statBoost>
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 	</weaponBlueprint>
 	
 	<weaponBlueprint name="FM_MISSILES_CLOAK_STUN_MEGA">
@@ -13215,7 +13219,7 @@
 		</missSounds>
 		<weaponArt>fm_missiles_cloak_stun</weaponArt>
 		<iconImage>missile</iconImage>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_ion_instant_3</race>
 			<enemy>true</enemy>
 			<lifetime>0</lifetime>
@@ -13230,7 +13234,7 @@
 					<priority>999999</priority>
 				</statBoost>
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_ION_MISSILES">
@@ -13463,7 +13467,7 @@
 		<speed>20</speed>
 		<bp>5</bp>
 		<rarity>0</rarity>
-	<!--	<spawnCrew>
+	<!--<spawnCrew>
 	        <race>fm_bio_cloud</race>
 	        <number>1</number>
 	        <noSlot>true</noSlot>
@@ -14629,7 +14633,7 @@
 		<iconImage>beam</iconImage>
 		<explosion>explosion_random</explosion>
 		<iconScale>0.9</iconScale>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_explode_instant</race>
 			<enemy>true</enemy>
 			<lifetime>0</lifetime>
@@ -14644,7 +14648,7 @@
 					<priority>999999</priority>
 				</statBoost>
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 	</weaponBlueprint>
 
 
@@ -15998,13 +16002,13 @@
 		<freeMissileChance>77</freeMissileChance>
 		<damage>1</damage>
 		<sysDamage>-1</sysDamage>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_ion_instant_1</race>
 			<number>1</number>
 			<enemy>true</enemy>
 			<lifetime>0</lifetime>
 			<noSlot>true</noSlot>
-		</spawnCrew>
+		</spawnCrew>-->
 		<shots>1</shots>
 		<sp>0</sp>
 		<breachChance>1</breachChance>
@@ -16838,7 +16842,8 @@
 		<short>Photon I</short>
 		<desc>Fires a photonic blast that can disrupt shields like normal lasers, but only deals system damage with a low chance to start a fire. A ship would have to be close to destruction for this to possibly destroy it.</desc>
 		<tooltip>test</tooltip>
-		<damage>1</damage>
+		<damage>0</damage>
+		<sysDamage>1</sysDamage>
 		<noPersDamage>true</noPersDamage>
 		<radius>35</radius>
 		<shots>3</shots>
@@ -16849,7 +16854,7 @@
 		<cost>160</cost>
 		<fireTime>0.2</fireTime>
 		<bp>2</bp>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_repair_hull</race>
 			<number>1</number>
 			<lifetime>0</lifetime>
@@ -16864,7 +16869,7 @@
 				</statBoost>
 
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 		<rarity>0</rarity>
 		<projectiles>
 			<projectile count="1" fake="false">laser_stun</projectile>
@@ -16896,7 +16901,8 @@
 		<short>Photon II</short>
 		<desc>Fires a photonic blast that can disrupt shields like normal lasers, but only deals system damage with a low chance to start a fire. A ship would have to be close to destruction for this to possibly destroy it.</desc>
 		<tooltip>test</tooltip>
-		<damage>1</damage>
+		<damage>0</damage>
+		<sysDamage>1</sysDamage>
 		<noPersDamage>true</noPersDamage>
 		<radius>35</radius>
 		<shots>5</shots>
@@ -16907,7 +16913,7 @@
 		<cost>160</cost>
 		<fireTime>0.2</fireTime>
 		<bp>2</bp>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_repair_hull</race>
 			<number>1</number>
 			<lifetime>0</lifetime>
@@ -16922,7 +16928,7 @@
 				</statBoost>
 
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 		<rarity>0</rarity>
 		<projectiles>
 			<projectile count="1" fake="false">laser_stun</projectile>
@@ -17389,7 +17395,7 @@
 		<bp>6</bp>
 		<rarity>0</rarity>
 		<length>120</length>
-		<image>beam_contact</image>
+		<image>explosion_random</image>
 		<launchSounds>
 			<sound>beam2</sound>
 		</launchSounds>
@@ -17397,7 +17403,7 @@
 		<iconImage>beam</iconImage>
 		<explosion>explosion_random</explosion>
 		<iconScale>0.9</iconScale>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_explode_instant</race>
 			<lifetime>0</lifetime>
 			<number>1</number>
@@ -17411,7 +17417,7 @@
 					<priority>999999</priority>
 				</statBoost>
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_BEAM_ION_PIERCE_ENEMY">
@@ -17451,14 +17457,14 @@
 		<cost>120</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
-		<image>beam_contact</image>
+		<image>explosion_small_ion</image>
 		<length>105</length>
 		<launchSounds>
 			<sound>beam2</sound>
 		</launchSounds>
 		<weaponArt>fm_beam_ion_pierce</weaponArt>
 		<iconImage>beam</iconImage>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_ion_instant_1</race>
 			<number>1</number>
 			<lifetime>0</lifetime>
@@ -17472,7 +17478,7 @@
 					<priority>999999</priority>
 				</statBoost>
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 	</weaponBlueprint>
 
 </FTL>
@@ -19124,7 +19130,7 @@
 		<power>5</power>
 		<cost>125</cost>
 		<rarity>0</rarity>
-		<length>2</length>
+		<length>1</length>
 		<image>beam_contact</image>
 		<launchSounds>
 			<sound>ancient_focus</sound>
@@ -19680,7 +19686,7 @@
 		</color>
 		<rarity>0</rarity>
 		<image>beam_contact</image>
-		<length>2</length>
+		<length>1</length>
 		<launchSounds>
 			<sound>beam1</sound>
 			<sound>beam1_2</sound>
@@ -19768,7 +19774,7 @@
 		</color>
 		<rarity>0</rarity>
 		<image>beam_contact</image>
-		<length>2</length>
+		<length>1</length>
 		<launchSounds>
 			<sound>beam1</sound>
 			<sound>beam1_2</sound>

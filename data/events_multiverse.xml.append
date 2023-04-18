@@ -9088,7 +9088,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_FASTWEAPON"  blue="false" hidden="true">
-			<text>Infinitum Cyclo-Arsenal[+166% reload, 3 max weapon power, no manning]</text>
+			<text>Infinitum Cyclo-Arsenal[+10% reload per unused weapon power, -5% reload]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_CREWKILL"  blue="false" hidden="true">
