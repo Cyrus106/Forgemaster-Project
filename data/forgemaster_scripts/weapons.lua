@@ -40,16 +40,16 @@ end)
 -- Make photon-like guns pop shields
 local popWeapons = {}
 popWeapons["FM_LASER_PHOTON"] = {
-    count = 1,
-    countSuper = 1
+  count = 1,
+  countSuper = 1
 }
 popWeapons["FM_LASER_PHOTON_2"] = {
   count = 1,
   countSuper = 1
 }
 popWeapons["FM_LASER_PHOTON_ENEMY"] = {
-    count = 1,
-    countSuper = 1
+  count = 1,
+  countSuper = 1
 }
 popWeapons["FM_LASER_PHOTON_2_ENEMY"] = {
   count = 1,
@@ -60,8 +60,8 @@ popWeapons["FM_CHAINGUN_FIRE"] = {
   countSuper = 1
 }
 popWeapons["FM_GATLING_ANCIENT_PHOTON"] = {
-    count = 1,
-    countSuper = 1
+  count = 1,
+  countSuper = 1
 }
 script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION, function(shipManager, projectile, damage, response)
     local shieldPower = shipManager.shieldSystem.shields.power
@@ -82,72 +82,87 @@ end)
 -- Wapons that do extra damage of a certain type on room hit
 local roomDamageWeapons = {}
 roomDamageWeapons["FM_PULSEDEEP"] = {
-  ion = 2
+  ion = 2, hull=0
 }
 roomDamageWeapons["FM_BEAM_EXPLOSION"] = {
-  hull = 1
+  ion =0, hull = 1
 }
 roomDamageWeapons["FM_BEAM_EXPLOSION_PLAYER"] = {
-  hull = 1
+  ion =0, hull = 1
 }
 roomDamageWeapons["FM_BEAM_EXPLOSION_EGG"] = {
-  hull = 1
+  ion =0, hull = 1
 }
 roomDamageWeapons["FM_BEAM_ION_PIRCE"] = {
-  ion = 1
+  ion = 1, hull=0
 }
 roomDamageWeapons["FM_FOCUS_ENERGY"] = {
-  ion = 2
+  ion = 2, hull=0
 }
 roomDamageWeapons["FM_FOCUS_ENERGY_2"] = {
-  ion = 3
+  ion = 3, hull=0
 }
 roomDamageWeapons["FM_FOCUS_ENERGY_2_PLAYER"] = {
-  ion = 3
+  ion = 3, hull=0
 }
 roomDamageWeapons["FM_FOCUS_ENERGY_3"] = {
-  ion = 4
+  ion = 4, hull=0
 }
 roomDamageWeapons["FM_FOCUS_ENERGY_CONS"] = {
-  ion = 2
+  ion = 2, hull=0
 }
-roomDamageWeapons["FM_MISSILES_STUN_CLOAK"] = {
-  ion = 3
+roomDamageWeapons["FM_MISSILES_CLOAK_STUN"] = {
+  ion = 3, hull=0
 }
-roomDamageWeapons["FM_MISSILES_STUN_CLOAK_PLAYER"] = {
-  ion = 3
+roomDamageWeapons["FM_MISSILES_CLOAK_STUN_PLAYER"] = {
+  ion = 3, hull=0
 }
-roomDamageWeapons["FM_MISSILES_STUN_CLOAK_MEGA"] = {
-  ion = 3
+roomDamageWeapons["FM_MISSILES_CLOAK_STUN_MEGA"] = {
+  ion = 3, hull=0
 }
 roomDamageWeapons["FM_FORGEMAN_DRONE_WEAPON"] = {
-  hull = 1
+  hull = 1, ion=0
 }
 roomDamageWeapons["FM_RVS_AC_CHARGE_EMP"] = {
-  ion = 1
+  ion = 1, hull=0
 }
 roomDamageWeapons["FM_BEAM_EXPLOSION_ENEMY"] = {
-  hull = 1
+  ion =0, hull = 1
 }
 roomDamageWeapons["FM_BEAM_ION_PIRCE_ENEMY"] = {
-  ion = 1
+  ion = 1, hull=0
 }
 roomDamageWeapons["FM_FOCUS_ENERGY_ENEMY"] = {
-  ion = 2
+  ion = 2, hull=0
 }
 roomDamageWeapons["FM_FOCUS_ENERGY_2_ENEMY"] = {
-  ion = 3
+  ion = 3, hull=0
 }
 roomDamageWeapons["FM_FOCUS_ENERGY_3_ENEMY"] = {
-  ion = 4
+  ion = 4, hull=0
+}
+roomDamageWeapons["ROYAL_LASER"] = {
+  ion =0, hull = 1
+}
+roomDamageWeapons["ROYAL_LASER_WRECK"] = {
+  ion =1, hull = 1
 }
 
-
+script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, function(ship, projectile, location, damage, forceHit, shipFriendlyFire)
+  local roomDamage
+  pcall(function() roomDamage = roomDamageWeapons[Hyperspace.Get_Projectile_Extend(projectile).name] end)
+  if roomDamage then
+    damage.iIonDamage = damage.iIonDamage + roomDamage.ion
+    log("hulldmg"..damage.iDamage)
+    log("iondmg"..damage.iIonDamage)
+  end
+  return Defines.CHAIN_CONTINUE, forceHit, shipFriendlyFire
+--[[
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(ship, projectile, damage, response)
   local hullDmgAmount = nil --extra damage inflicted when hitting a room
   local ionDmgAmount = nil  --extra ion inflicted when hitting a room
   local roomDamageWeapon = roomDamageWeapons[Hyperspace.Get_Projectile_Extend(projectile).name]
-  ---[[
+  
   pcall(function() hullDmgAmount = roomDamageWeapon.hull end)
   pcall(function() ionDmgAmount = roomDamageWeapon.ion end)
   if hullDmgAmount or ionDmgAmount then
