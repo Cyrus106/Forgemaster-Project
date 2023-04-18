@@ -75,7 +75,8 @@ function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
   if roomDamage and beamHitType == Defines.BeamHit.NEW_TILE then
     local weaponName = Hyperspace.Get_Projectile_Extend(projectile).name
     Hyperspace.Get_Projectile_Extend(projectile).name = ""
-    ship:DamageArea(projectile.position, roomDamage, true)
+    local farPoint = Hyperspace.Pointf(-2147483648, -2147483648)
+    ShipManager:DamageBeam(Location, farPoint, roomDamage)
     Hyperspace.Get_Projectile_Extend(projectile).name = weaponName
   end
   return Defines.Chain.CONTINUE, beamHitType

@@ -34,4 +34,5 @@ function(ship, weapon, projectile)
       weapon.queuedProjectiles[i - 1]:Kill()
     end
   end
+  Hyperspace.Global.GetInstance():GetSoundControl():PlaySoundMix("heavyLaser1", 1, true)
 end)

@@ -4458,9 +4458,9 @@
 	    <sp>0</sp>
 	    <fireChance>0</fireChance>
 	    <breachChance>0</breachChance>
-			<accuracyMod>100</accuracyMod>
+		<accuracyMod>100</accuracyMod>
 	    <cooldown>10</cooldown>
-			<chargeLevels>4</chargeLevels>
+		<chargeLevels>4</chargeLevels>
 	    <power>4</power>
 	    <cost>75</cost>
 	    <speed>65</speed>
@@ -4468,7 +4468,7 @@
 	    <rarity>0</rarity>
 	    <image>laser_heavy</image>
 	    <launchSounds>
-	        <sound>heavyLaser1</sound>
+	        <sound>silence</sound>
 	    </launchSounds>
 	    <hitShipSounds>
 	        <sound>hitHull2</sound>
