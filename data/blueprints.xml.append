@@ -10017,11 +10017,11 @@
 		</spawnCrew>-->
 		<statBoosts>
 			<statBoost name="powerEffect">
-				<boostType>SET</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
+				<boostType>ADD</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
 				<priority>999999</priority>
-				<blackList load="LIST_FM_PLSNOEFFECT"/>
+				<!--<blackList load="LIST_FM_PLSNOEFFECT"/>-->
 				<powerEffect>
 					<cooldown>4</cooldown>
 					<activateWhenReady enemiesOnly="false">true</activateWhenReady>
@@ -10720,7 +10720,7 @@
 		<bp>6</bp>
 		<rarity>0</rarity>
 		<length>90</length>
-		<image>explosion_random</image>
+		<image>beam_contact</image>
 		<launchSounds>
 			<sound>beam2</sound>
 		</launchSounds>
@@ -10744,6 +10744,41 @@
 				</statBoost>
 			</statBoosts>
 		</spawnCrew>-->
+	</weaponBlueprint>
+	<weaponBlueprint name="FM_BEAM_EXPLOSION_BOMB">
+		<!-- 1power 2damage-->
+		<type>BOMB</type>
+		<tip>tip_bombs</tip>
+		<title>Small Bomb</title>
+		<short>S. Bomb</short>
+		<locked>1</locked>
+		<desc>Self-teleporting explosive that damages systems and crew but not the hull. Can target your own ship.</desc>
+		<tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
+		<!--<desc>Power Req: 2     Self-teleporting explosive that deals 2 damage to systems and subsystems without causing hull damage.</desc>-->
+		<damage>1</damage>
+		<sysDamage>0</sysDamage>
+		<persDamage>0</persDamage>
+		<missiles>0</missiles>
+		<shots>1</shots>
+		<sp>0</sp>
+		<fireChance>1</fireChance>
+		<breachChance>0</breachChance>
+		<cooldown>13</cooldown>
+		<power>1</power>
+		<cost>45</cost>
+		<!--was 55-->
+		<bp>4</bp>
+		<rarity>0</rarity>
+		<image>bomb1</image>
+		<explosion>explosion_random</explosion>
+		<launchSounds>
+			<sound>bombTeleport</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>smallExplosion</sound>
+		</hitShipSounds>
+		<weaponArt>bomb_1</weaponArt>
+		<iconImage>bomb</iconImage>
 	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_BEAM_EXPLOSION_EGG">
@@ -10802,7 +10837,7 @@
 		<bp>6</bp>
 		<rarity>0</rarity>
 		<length>90</length>
-		<image>explosion_random</image>
+		<image>beam_contact</image>
 		<launchSounds>
 			<sound>beam2</sound>
 		</launchSounds>
@@ -10884,7 +10919,7 @@
 		<bp>6</bp>
 		<rarity>0</rarity>
 		<length>90</length>
-		<image>explosion_random</image>
+		<image>beam_contact</image>
 		<launchSounds>
 			<sound>beam2</sound>
 		</launchSounds>
@@ -17395,7 +17430,7 @@
 		<bp>6</bp>
 		<rarity>0</rarity>
 		<length>120</length>
-		<image>explosion_random</image>
+		<image>beam_contact</image>
 		<launchSounds>
 			<sound>beam2</sound>
 		</launchSounds>

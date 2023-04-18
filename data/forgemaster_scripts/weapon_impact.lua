@@ -46,20 +46,25 @@ local function Damage(table)
 end
 
 local tileDamageWeapons = {
-  FM_BEAM_EXPLOSION = Damage {hull = 1},
   FM_BEAM_EXPLOSION_PLAYER = Damage {hull = 1},
   FM_BEAM_EXPLOSION_EGG = Damage {hull = 1},
-  FM_BEAM_ION_PIRCE = Damage {ion = 1},
+  FM_BEAM_ION_PIERCE = Damage {ion = 1},
   FM_FOCUS_ENERGY = Damage {ion = 2},
   FM_FOCUS_ENERGY_2 = Damage {ion = 3},
   FM_FOCUS_ENERGY_2_PLAYER = Damage {ion = 3},
   FM_FOCUS_ENERGY_3 = Damage {ion = 4},
   FM_FOCUS_ENERGY_CONS = Damage {ion = 2},
-  FM_BEAM_EXPLOSION_ENEMY = Damage {ion = 1},
   FM_BEAM_ION_PIERCE_ENEMY = Damage {ion = 1},
   FM_FOCUS_ENERGY_ENEMY = Damage {ion = 2},
   FM_FOCUS_ENERGY_2_ENEMY =  Damage {ion = 3},
   FM_FOCUS_ENERGY_3_ENEMY = Damage {ion = 4},
+}
+
+local bombBeams = {
+  FM_BEAM_EXPLOSION = "FM_BEAM_EXPLOSION_BOMB",
+  FM_BEAM_EXPLOSION_PLAYER = "FM_BEAM_EXPLOSION_BOMB",
+  FM_BEAM_EXPLOSION_EGG = "FM_BEAM_EXPLOSION_BOMB",
+  FM_BEAM_EXPLOSION_ENEMY = "FM_BEAM_EXPLOSION_BOMB"
 }
 
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, function(ship, projectile, location, damage, forceHit, shipFriendlyFire)
