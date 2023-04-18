@@ -90,3 +90,28 @@ function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
   end
   return Defines.Chain.CONTINUE, beamHitType
 end)
+
+
+local bombBeams = {
+  BEAM_NAME = "BOMB_NAME"
+}
+
+--Tile based bombs
+---[[
+script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
+function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
+  local bomb
+  pcall(function() bomb = bombBeams[Hyperspace.Get_Projectile_Extend(Projectile).name] end)
+  if beamHitType ~= Defines.BeamHit.SAME_TILE and bomb then
+    local SpaceManager = Hyperspace.Global.GetInstance():GetCApp().world.space
+    local blueprint = Hyperspace.Global.GetInstance():GetBlueprints():GetWeaponBlueprint(bomb)
+    local bombOwner = (ShipManager.iShipId + 1) % 2
+    local target = Hyperspace.Pointf(Location.x // 35 * 35 + 17.5, Location.y // 35 * 35 + 17.5)
+    local targetSpace = ShipManager.iShipId
+    print(Hyperspace.ShipGraph.GetShipInfo(targetSpace):GetSelectedRoom(target.x, target.y, true) ~= -1)
+    if Hyperspace.ShipGraph.GetShipInfo(targetSpace):GetSelectedRoom(target.x, target.y, true) ~= -1 then
+      SpaceManager:CreateBomb(blueprint, bombOwner, target, targetSpace)
+    end
+  end
+end)
+--]]
