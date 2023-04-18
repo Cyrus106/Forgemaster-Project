@@ -61,8 +61,8 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, function(ship, proj
   local roomDamage
   pcall(function() roomDamage = roomDamageWeapons[Hyperspace.Get_Projectile_Extend(projectile).name] end)
   if roomDamage then
-    damage.iDamage = damage.iDamage + roomDamage.hull
-    damage.iIonDamage = damage.iIonDamage + roomDamage.ion
+    damage.iDamage = damage.iDamage + roomDamage.iDamage
+    damage.iIonDamage = damage.iIonDamage + roomDamage.iIonDamage
     log("hulldmg "..damage.iDamage)
     log("iondmg "..damage.iIonDamage)
   end
