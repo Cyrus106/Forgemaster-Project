@@ -25,17 +25,27 @@ script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION, function(shipM
 end)
 
 -- Weapons that do extra damage of a certain type on room hit
+
+
+
+local roomDamageWeapons = {
+  FM_PULSEDEEP = {ion = 2},
+  FM_MISSILES_CLOAK_STUN = {ion = 3},
+  FM_MISSILES_CLOAK_STUN_PLAYER = {ion = 3},
+  FM_MISSILES_CLOAK_STUN_MEGA = {ion = 3},
+  FM_FORGEMAN_DRONE_WEAPON = {hull = 1},
+  FM_RVS_AC_CHARGE_EMP = {ion = 1},
+}
+
 local function Damage(table)
-    local ret = Hyperspace.Damage()
-    ret.iDamage = table.hull or 0 
-		ret.iIonDamage = table.ion or 0 
-		ret.iSystemDamage = table.system or 0 
-    return ret
+  local ret = Hyperspace.Damage()
+  ret.iDamage = table.hull or 0 
+  ret.iIonDamage = table.ion or 0 
+  ret.iSystemDamage = table.system or 0 
+  return ret
 end
 
---Implementation: On hit, this damage is applied for projectile weapons. It is applied per-tile for beam weapons.
-local roomDamageWeapons = {
-  FM_PULSEDEEP = Damage {ion = 2},
+local tileDamageWeapons = {
   FM_BEAM_EXPLOSION = Damage {hull = 1},
   FM_BEAM_EXPLOSION_PLAYER = Damage {hull = 1},
   FM_BEAM_EXPLOSION_EGG = Damage {hull = 1},
@@ -45,11 +55,6 @@ local roomDamageWeapons = {
   FM_FOCUS_ENERGY_2_PLAYER = Damage {ion = 3},
   FM_FOCUS_ENERGY_3 = Damage {ion = 4},
   FM_FOCUS_ENERGY_CONS = Damage {ion = 2},
-  FM_MISSILES_CLOAK_STUN = Damage {ion = 3},
-  FM_MISSILES_CLOAK_STUN_PLAYER = Damage {ion = 3},
-  FM_MISSILES_CLOAK_STUN_MEGA = Damage {ion = 3},
-  FM_FORGEMAN_DRONE_WEAPON = Damage {hull = 1},
-  FM_RVS_AC_CHARGE_EMP = Damage {ion = 1},
   FM_BEAM_EXPLOSION_ENEMY = Damage {ion = 1},
   FM_BEAM_ION_PIERCE_ENEMY = Damage {ion = 1},
   FM_FOCUS_ENERGY_ENEMY = Damage {ion = 2},
@@ -61,23 +66,21 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, function(ship, proj
   local roomDamage
   pcall(function() roomDamage = roomDamageWeapons[Hyperspace.Get_Projectile_Extend(projectile).name] end)
   if roomDamage then
-    damage.iDamage = damage.iDamage + roomDamage.hull
-    damage.iIonDamage = damage.iIonDamage + roomDamage.ion
-    log("hulldmg "..damage.iDamage)
-    log("iondmg "..damage.iIonDamage)
+    damage.iDamage = damage.iDamage + (roomDamage.hull or 0)
+    damage.iIonDamage = damage.iIonDamage + (roomDamage.ion or 0)
   end
   return Defines.CHAIN_CONTINUE, forceHit, shipFriendlyFire
 end)
 
 script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
 function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
-  local roomDamage
-  pcall(function() roomDamage = roomDamageWeapons[Hyperspace.Get_Projectile_Extend(projectile).name] end)
-  if roomDamage and beamHitType == Defines.BeamHit.NEW_TILE then
+  local tileDamage
+  pcall(function() tileDamage = tileDamageWeapons[Hyperspace.Get_Projectile_Extend(projectile).name] end)
+  if tileDamage and beamHitType == Defines.BeamHit.NEW_TILE then
     local weaponName = Hyperspace.Get_Projectile_Extend(projectile).name
     Hyperspace.Get_Projectile_Extend(projectile).name = ""
     local farPoint = Hyperspace.Pointf(-2147483648, -2147483648)
-    ShipManager:DamageBeam(Location, farPoint, roomDamage)
+    ShipManager:DamageBeam(Location, farPoint, tileDamage)
     Hyperspace.Get_Projectile_Extend(projectile).name = weaponName
   end
   return Defines.Chain.CONTINUE, beamHitType
