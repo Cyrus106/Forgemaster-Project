@@ -75,13 +75,13 @@ end)
 script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
 function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
   local tileDamage
-  pcall(function() tileDamage = tileDamageWeapons[Hyperspace.Get_Projectile_Extend(projectile).name] end)
+  pcall(function() tileDamage = tileDamageWeapons[Hyperspace.Get_Projectile_Extend(Projectile).name] end)
   if tileDamage and beamHitType == Defines.BeamHit.NEW_TILE then
-    local weaponName = Hyperspace.Get_Projectile_Extend(projectile).name
-    Hyperspace.Get_Projectile_Extend(projectile).name = ""
+    local weaponName = Hyperspace.Get_Projectile_Extend(Projectile).name
+    Hyperspace.Get_Projectile_Extend(Projectile).name = ""
     local farPoint = Hyperspace.Pointf(-2147483648, -2147483648)
     ShipManager:DamageBeam(Location, farPoint, tileDamage)
-    Hyperspace.Get_Projectile_Extend(projectile).name = weaponName
+    Hyperspace.Get_Projectile_Extend(Projectile).name = weaponName
   end
   return Defines.Chain.CONTINUE, beamHitType
 end)
