@@ -49,7 +49,7 @@ local tileDamageWeapons = {
   FM_BEAM_EXPLOSION = Damage {hull = 1},
   FM_BEAM_EXPLOSION_PLAYER = Damage {hull = 1},
   FM_BEAM_EXPLOSION_EGG = Damage {hull = 1},
-  FM_BEAM_ION_PIRCE = Damage {ion = 1},
+  FM_BEAM_ION_PIERCE = Damage {ion = 1},
   FM_FOCUS_ENERGY = Damage {ion = 2},
   FM_FOCUS_ENERGY_2 = Damage {ion = 3},
   FM_FOCUS_ENERGY_2_PLAYER = Damage {ion = 3},
