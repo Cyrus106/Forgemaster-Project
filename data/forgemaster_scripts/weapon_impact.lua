@@ -46,8 +46,6 @@ local function Damage(table)
 end
 
 local tileDamageWeapons = {
-  FM_BEAM_EXPLOSION_PLAYER = Damage {hull = 1},
-  FM_BEAM_EXPLOSION_EGG = Damage {hull = 1},
   FM_BEAM_ION_PIERCE = Damage {ion = 1},
   FM_FOCUS_ENERGY = Damage {ion = 2},
   FM_FOCUS_ENERGY_2 = Damage {ion = 3},
@@ -60,12 +58,6 @@ local tileDamageWeapons = {
   FM_FOCUS_ENERGY_3_ENEMY = Damage {ion = 4},
 }
 
-local bombBeams = {
-  FM_BEAM_EXPLOSION = "FM_BEAM_EXPLOSION_BOMB",
-  FM_BEAM_EXPLOSION_PLAYER = "FM_BEAM_EXPLOSION_BOMB",
-  FM_BEAM_EXPLOSION_EGG = "FM_BEAM_EXPLOSION_BOMB",
-  FM_BEAM_EXPLOSION_ENEMY = "FM_BEAM_EXPLOSION_BOMB"
-}
 
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, function(ship, projectile, location, damage, forceHit, shipFriendlyFire)
   local roomDamage
@@ -93,7 +85,10 @@ end)
 
 
 local bombBeams = {
-  BEAM_NAME = "BOMB_NAME"
+  FM_BEAM_EXPLOSION = "FM_BEAM_EXPLOSION_BOMB",
+  FM_BEAM_EXPLOSION_PLAYER = "FM_BEAM_EXPLOSION_BOMB",
+  FM_BEAM_EXPLOSION_EGG = "FM_BEAM_EXPLOSION_BOMB",
+  FM_BEAM_EXPLOSION_ENEMY = "FM_BEAM_EXPLOSION_BOMB"
 }
 
 --Tile based bombs
