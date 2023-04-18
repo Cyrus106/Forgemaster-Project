@@ -57,7 +57,7 @@ local roomDamageWeapons = {
   FM_FOCUS_ENERGY_3_ENEMY = Damage {ion = 4},
 }
 
-script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(ship, projectile, damage, response)
+script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(ship, projectile, location, damage, shipFriendlyFire)
   local roomDamage
   pcall(function() roomDamage = roomDamageWeapons[Hyperspace.Get_Projectile_Extend(projectile).name] end)
   if roomDamage then
