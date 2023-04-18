@@ -92,7 +92,6 @@ local bombBeams = {
 }
 
 --Tile based bombs
----[[
 script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
 function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
   local bomb
@@ -103,10 +102,8 @@ function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
     local bombOwner = (ShipManager.iShipId + 1) % 2
     local target = Hyperspace.Pointf(Location.x // 35 * 35 + 17.5, Location.y // 35 * 35 + 17.5)
     local targetSpace = ShipManager.iShipId
-    print(Hyperspace.ShipGraph.GetShipInfo(targetSpace):GetSelectedRoom(target.x, target.y, true) ~= -1)
     if Hyperspace.ShipGraph.GetShipInfo(targetSpace):GetSelectedRoom(target.x, target.y, true) ~= -1 then
       SpaceManager:CreateBomb(blueprint, bombOwner, target, targetSpace)
     end
   end
 end)
---]]
