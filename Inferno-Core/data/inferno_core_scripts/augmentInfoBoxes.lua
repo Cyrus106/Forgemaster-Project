@@ -77,7 +77,7 @@ local yOffset = 204
 
 
 script.on_render_event(Defines.RenderEvents.LAYER_PLAYER, function() end,
-function(self)
+function()
   if not Hyperspace.ships.player.bJumping and Hyperspace.ships.player:HasEquipment("fmcore_augbox_active") == 1 then
     Graphics.CSurface.GL_PushMatrix()
     Graphics.CSurface.GL_LoadIdentity()
