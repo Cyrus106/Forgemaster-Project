@@ -36,7 +36,7 @@ mods.inferno.setLimitAmount = function(sys_id,level,shipId)--system ids: 0-shiel
 end
 
 mods.inferno.real_projectile = function(projectile) --replace when we have access to the death animation and can check directly
-  if projectile.damage.iDamage == 0 and
+  return not(projectile.damage.iDamage == 0 and
     projectile.damage.iShieldPiercing == 0 and
     projectile.damage.fireChance == 0 and
     projectile.damage.breachChance == 0 and
@@ -50,12 +50,7 @@ mods.inferno.real_projectile = function(projectile) --replace when we have acces
     projectile.damage.bLockdown == false and
     projectile.damage.crystalShard == false and
     projectile.damage.bFriendlyFire == true and
-    projectile.damage.iStun == 0
-  then
-    return false
-  else
-    return true
-  end
+    projectile.damage.iStun == 0)
 end
 mods.inferno.randomInt = function(min,max)
   if math.floor(min) ~= min or math.floor(max) ~= max then
