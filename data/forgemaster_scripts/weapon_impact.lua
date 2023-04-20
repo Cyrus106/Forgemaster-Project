@@ -12,16 +12,21 @@ script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION, function(shipM
     local shieldPower = shipManager.shieldSystem.shields.power
     local popData = nil
     if pcall(function() popData = popWeapons[Hyperspace.Get_Projectile_Extend(projectile).name] end) and popData then
-        if shieldPower.super.first > 0 then
-            if popData.countSuper > 0 then
-                shipManager.shieldSystem:CollisionReal(projectile.position.x, projectile.position.y, Hyperspace.Damage(), true)
-                shieldPower.super.first = math.max(0, shieldPower.super.first - popData.countSuper)
-            end
-        else
+        if shieldPower.super.first <= 0 then
             shipManager.shieldSystem:CollisionReal(projectile.position.x, projectile.position.y, Hyperspace.Damage(), true)
             shieldPower.first = math.max(0, shieldPower.first - popData.count)
         end
     end
+    return Defines.Chain.CONTINUE
+end)
+
+script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION_PRE, function(shipManager, projectile, damage, response)
+  local shieldPower = shipManager.shieldSystem.shields.power
+  local popData = nil
+  if pcall(function() popData = popWeapons[Hyperspace.Get_Projectile_Extend(projectile).name] end) and popData and shieldPower.super.first > 0 then
+      damage.iDamage = damage.iDamage + popData.countSuper
+  end
+  return Defines.Chain.CONTINUE
 end)
 
 -- Weapons that do extra damage of a certain type on room hit
