@@ -85,10 +85,12 @@ end)
 
 
 local bombBeams = {
+  --[[
   FM_BEAM_EXPLOSION = "FM_BEAM_EXPLOSION_BOMB",
   FM_BEAM_EXPLOSION_PLAYER = "FM_BEAM_EXPLOSION_BOMB",
   FM_BEAM_EXPLOSION_EGG = "FM_BEAM_EXPLOSION_BOMB",
-  FM_BEAM_EXPLOSION_ENEMY = "FM_BEAM_EXPLOSION_BOMB"
+  FM_BEAM_EXPLOSION_ENEMY = "FM_BEAM_EXPLOSION_BOMB",
+  --]]
 }
 
 --Tile based bombs
@@ -104,6 +106,30 @@ function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
     local targetSpace = ShipManager.iShipId
     if Hyperspace.ShipGraph.GetShipInfo(targetSpace):GetSelectedRoom(target.x, target.y, true) ~= -1 then
       SpaceManager:CreateBomb(blueprint, bombOwner, target, targetSpace)
+    end
+  end
+end)
+
+local impactBeams = {
+  FM_BEAM_EXPLOSION = "FM_BEAM_EXPLOSION_BOMB",
+  FM_BEAM_EXPLOSION_PLAYER = "FM_BEAM_EXPLOSION_BOMB",
+  FM_BEAM_EXPLOSION_EGG = "FM_BEAM_EXPLOSION_BOMB",
+  FM_BEAM_EXPLOSION_ENEMY = "FM_BEAM_EXPLOSION_BOMB",
+}
+
+--Instant Impact (Until accuracy stats are exposed, please ensure all weapons used in impactBeams have accuracy 100)
+script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
+function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
+  local impact
+  pcall(function() impact = impactBeams[Hyperspace.Get_Projectile_Extend(Projectile).name] end)
+  if beamHitType ~= Defines.BeamHit.SAME_TILE and impact then
+    local SpaceManager = Hyperspace.Global.GetInstance():GetCApp().world.space
+    local blueprint = Hyperspace.Global.GetInstance():GetBlueprints():GetWeaponBlueprint(impact)
+    local impactOwner = (ShipManager.iShipId + 1) % 2
+    local target = Hyperspace.Pointf(Location.x // 35 * 35 + 17.5, Location.y // 35 * 35 + 17.5)
+    local targetSpace = ShipManager.iShipId
+    if Hyperspace.ShipGraph.GetShipInfo(targetSpace):GetSelectedRoom(target.x, target.y, true) ~= -1 then
+      SpaceManager:CreateLaserBlast(blueprint, target, targetSpace, impactOwner, target, targetSpace, 0)
     end
   end
 end)
