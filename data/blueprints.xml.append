@@ -10745,41 +10745,44 @@
 			</statBoosts>
 		</spawnCrew>-->
 	</weaponBlueprint>
-	<weaponBlueprint name="FM_BEAM_EXPLOSION_BOMB">
-		<!-- 1power 2damage-->
-		<type>BOMB</type>
-		<tip>tip_bombs</tip>
-		<title>Small Bomb</title>
-		<short>S. Bomb</short>
-		<locked>1</locked>
-		<desc>Self-teleporting explosive that damages systems and crew but not the hull. Can target your own ship.</desc>
-		<tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system, not hull. Can target your own ship.</tooltip>
-		<!--<desc>Power Req: 2     Self-teleporting explosive that deals 2 damage to systems and subsystems without causing hull damage.</desc>-->
+	<weaponBlueprint name="FM_BEAM_EXPLOSION_LASER">
+		<type>LASER</type>
+		<title>Laser for explosiom</title>
+		<short>Vindicator</short>
+		<tip>tip_laser</tip>
+		<desc>Let it hit you and you're already dead.</desc>
+		<tooltip></tooltip>
 		<damage>1</damage>
-		<sysDamage>0</sysDamage>
-		<persDamage>0</persDamage>
-		<missiles>0</missiles>
 		<shots>1</shots>
-		<sp>0</sp>
+		<sp>1</sp>
 		<fireChance>1</fireChance>
-		<breachChance>0</breachChance>
-		<cooldown>13</cooldown>
-		<power>1</power>
-		<cost>45</cost>
-		<accuracyMod>30</accuracyMod>
-		<!--was 55-->
-		<bp>4</bp>
+		<breachChance>1</breachChance>
+		<cooldown>20</cooldown>
+		<power>2</power>
+		<cost>100</cost>
+		<bp>7</bp>
 		<rarity>0</rarity>
-		<image>bomb1</image>
+		<accuracyMod>115</accuracyMod>
+		<image>laser_prime</image>
 		<explosion>explosion_random</explosion>
 		<launchSounds>
-			<sound>bombTeleport</sound>
+			<sound>ancient_laser</sound>
+			<sound>ancient_laser</sound>
+			<sound>ancient_laser</sound>
 		</launchSounds>
 		<hitShipSounds>
 			<sound>smallExplosion</sound>
 		</hitShipSounds>
-		<weaponArt>bomb_1</weaponArt>
-		<iconImage>bomb</iconImage>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>prime_laser</weaponArt>
+		<iconImage>laser</iconImage>
 	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_BEAM_EXPLOSION_EGG">

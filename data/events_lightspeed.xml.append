@@ -29,7 +29,7 @@
 		<event load="OPTION_INVALID"/>
 	</choice>
 
-	<choice hidden="true" req="fm_forgemaster_called"  max_group="1" blue="false">
+	<choice hidden="true" req="fm_forgemaster_called" max_group="1" blue="false">
 		<text>You've already called the Forgemaster via one of the three methods.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
@@ -108,7 +108,7 @@
 		</event>
 	</choice>
 
-	<choice hidden="true" req="pilot" lvl="1"  max_group="4" blue="false">>
+	<choice hidden="true" req="pilot" lvl="1" max_group="4" blue="false">>
 		<text>Nevermind.</text>
 		<!--<event load="FM_CALL_QUESTION_FORGEMASTER_LOAD"/>-->
 		<event>

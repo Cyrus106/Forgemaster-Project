@@ -1444,7 +1444,7 @@
 		</event>
 
 		<event><!--Wheel of Fortune Good-->
-			<text>You flip the card to the sound of slots, an interstellar luxury cruiser and Not-so-Fat Tony Sr at the helm, covered in gold and jewels. The ship bears the logo of Hektar half scrubbed off with Tony's face covering most of the side, grinning with teeth studded with jewels and metals. The spectacle is being  broadcast to every stretch of the galaxy in every dialect imaginable, paying special attention to a rotund yellow slug struggling from the bow of the ship where he is tied up.</text>
+			<text>You flip the card to the sound of slots, an interstellar luxury cruiser and Not-so-Fat Tony Sr at the helm, covered in gold and jewels. The ship bears the logo of Hektar half scrubbed off with Tony's face covering most of the side, grinning with teeth studded with jewels and metals. The spectacle is being broadcast to every stretch of the galaxy in every dialect imaginable, paying special attention to a rotund yellow slug struggling from the bow of the ship where he is tied up.</text>
 		</event>
 
 		<event><!--Wheel of Fortune Bad-->
@@ -1657,7 +1657,7 @@
 		</event>
 
 		<event>
-			<text>With the final spark of power in the opposing ship going dark, the Fridge shakes uncontrollably - a howl screams forth, shaking the ship menacingly.  An overwhelming sense of horrible amusement emanates from within its walls. The howls die slowly as one of the Haunts coalesces before you - ready to serve.</text>
+			<text>With the final spark of power in the opposing ship going dark, the Fridge shakes uncontrollably - a howl screams forth, shaking the ship menacingly. An overwhelming sense of horrible amusement emanates from within its walls. The howls die slowly as one of the Haunts coalesces before you - ready to serve.</text>
 			<crewMember amount="1" class="FM_LIST_CREW_HAUNTS"/>
 
 			<!--jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>-->
@@ -1678,7 +1678,7 @@
 	</event>
 
 	<event name="TWISTED_ROCK_KILL">
-		<!--	<disableScrapScore/>                                                                  Any scrap gained from this event is not added to the player's score.
+		<!--	<disableScrapScore/> Any scrap gained from this event is not added to the player's score.
 		<disableScrapAugments/>
 		<item_modify>
 			<item type="scrap" min="twisted_rock_scrap_counter" max="twisted_rock_scrap_counter"/>
@@ -1795,7 +1795,7 @@ Only respects stronger computers
 	<!--special module effect events-->
 
 	<event name="FM_ONJUMP_STUFF_LOAD">
-	  <loadEvent>FM_JUMP_REMOVE_GHOST_PURGE</loadEvent>
+		<loadEvent>FM_JUMP_REMOVE_GHOST_PURGE</loadEvent>
 	</event>
 	<!-- old version of the on jump stuff
 	<event name="FM_JUMP_REMOVE_GHOST_PURGE">

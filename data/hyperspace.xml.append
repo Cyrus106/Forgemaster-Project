@@ -15520,7 +15520,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 
 		<aug name="FM_MODULAR_HULL_FASTWEAPON">
-			<!--<function name="AUTO_COOLDOWN" value="1.66" useForReqs="false" warning="false"/>-->
+			<function name="AUTO_COOLDOWN" value="-0.05" useForReqs="false" warning="false"/>
 			<function name="FTL_BOOSTER" value="1" warning="false" />
 			<!--<statBoosts>
 				<statBoost name="canMan">

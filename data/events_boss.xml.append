@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FTL>
 	<mod:findName type="event" name="LAST_STAND_START"><!--appending the part of the code that resets the makres for which menus were used-->
-	  <mod-append:variable name="fm_called_forgemaster" op="set" val="0"/>
+		<mod-append:variable name="fm_called_forgemaster" op="set" val="0"/>
 	</mod:findName>
 
 
@@ -65,8 +65,8 @@
 
 
 <mod:findName type="event" name="BOSS_GROUND_FIGHT">
-    <mod:findLike type="choice" limit="1">
-        <mod:findLike type="event">
+	<mod:findLike type="choice" limit="1">
+		<mod:findLike type="event">
 			<mod:findLike type="choice">
 				<mod:findLike type="event">
 					<mod-append:choice hidden="true" max_group="600" req="LIST_CREW_PLATED" blue="true">
@@ -97,8 +97,8 @@
 					</mod:findWithChildLike>
 				</mod:findLike>
 			</mod:findLike>
-        </mod:findLike>
-    </mod:findLike>
+		</mod:findLike>
+	</mod:findLike>
 </mod:findName>
 
 <mod:findName type="event" name="LASTSTAND_WARP_REAL">
@@ -134,20 +134,20 @@
 <!-- TEMPLATE to add ships to Tully
 
 <mod:findName type="event" name="LAST_STAND_START"> or TRUE_LAST_STAND_START. I think it is TRUE_LAST_STAND_START
-    <mod:findLike type="choice"><mod:selector lvl="0" />
-        <mod:findLike type="event">
-            <mod-append:choice hidden="true" max_group="1" req="SHIP_insert your own" blue="false">
-                <text>Contact Federation command.</text>
-                <event>
-                    <text>tully quip here</text>
-                    <choice hidden="true">
-                        <text>Continue...</text>
-                        <event load="LAST_STAND_START_2"/>
-                    </choice>
-                </event>
-            </mod-append:choice>
-        </mod:findLike>
-    </mod:findLike>
+	<mod:findLike type="choice"><mod:selector lvl="0" />
+		<mod:findLike type="event">
+			<mod-append:choice hidden="true" max_group="1" req="SHIP_insert your own" blue="false">
+				<text>Contact Federation command.</text>
+				<event>
+					<text>tully quip here</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="LAST_STAND_START_2"/>
+					</choice>
+				</event>
+			</mod-append:choice>
+		</mod:findLike>
+	</mod:findLike>
 </mod:findName>
 
 </FTL> -->

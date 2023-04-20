@@ -145,9 +145,9 @@
 						</choice>
 
 						<choice hidden="true" req="unique_freddy">
-							<text>(Freddy) Ask Winchester to join the Federation's cause instead. </text>
+							<text>(Freddy) Ask Winchester to join the Federation's cause instead.</text>
 							<event>
-								<text>Winchester frowns, but nods quickly. "Freddy right, my mission not worth if all Mantis die to rebel. I, the good Winchester, join mission! I continue my promise after Rebel crushed." he explains, a bit more confidence in his voice. One of the Engi twins piloting the Gunbomination powers up the FTL drive and takes off, after dropping Winchester off aboard your vessel. </text>
+								<text>Winchester frowns, but nods quickly. "Freddy right, my mission not worth if all Mantis die to rebel. I, the good Winchester, join mission! I continue my promise after Rebel crushed." he explains, a bit more confidence in his voice. One of the Engi twins piloting the Gunbomination powers up the FTL drive and takes off, after dropping Winchester off aboard your vessel.</text>
 								<crewMember amount="1" class="mantis_warlord">Winchester</crewMember>
 							</event>
 						</choice>
@@ -218,7 +218,7 @@
 	</event>
 
 	<event name="FORGEMASTER_RETALIATE_STRONK">
-		<text>Alastair's ship glows brightly again, launching two familiarly colored Drone pods into your hull. The moment they appear on your scanners, you, and likely the rest of your crew, suddenly feel terrible. Finish this quickly, before it gets out of hand. </text>
+		<text>Alastair's ship glows brightly again, launching two familiarly colored Drone pods into your hull. The moment they appear on your scanners, you, and likely the rest of your crew, suddenly feel terrible. Finish this quickly, before it gets out of hand.</text>
 
 		<boarders min="2" max="2" class="fm_ancalagon_monitor"/>
 
@@ -1181,7 +1181,7 @@
 		<text>Select a weapon category to forge.</text>
 		<checkCargo/>
 		<!--LASERS CATEGORY-->
-		<choice req="FM_LASER_FORGE_LIST" lvl="1"  max_group="1" hidden="true">
+		<choice req="FM_LASER_FORGE_LIST" lvl="1" max_group="1" hidden="true">
 			<text>Review Laser Weapons.</text>
 			<event load="FM_FORGE_WEAPON_LASER_LOAD"/>
 		</choice>
@@ -1193,7 +1193,7 @@
 
 
 		<!--ION/ENERGY CATEGORY-->
-		<choice req="FM_ION_FORGE_LIST" lvl="1"  max_group="2" hidden="true">
+		<choice req="FM_ION_FORGE_LIST" lvl="1" max_group="2" hidden="true">
 			<text>Review Ion Weapons.</text>
 			<event load="FM_FORGE_WEAPON_ION_LOAD"/>
 		</choice>
@@ -1207,7 +1207,7 @@
 
 
 		<!--BEAM CATEGORY-->
-		<choice req="FM_BEAM_FORGE_LIST" lvl="1"  max_group="3" hidden="true">
+		<choice req="FM_BEAM_FORGE_LIST" lvl="1" max_group="3" hidden="true">
 			<text>Review Beam Weapons.</text>
 			<event load="FM_FORGE_WEAPON_BEAM_LOAD"/>
 		</choice>
@@ -1218,7 +1218,7 @@
 		</choice>
 
 		<!--Pinpoint CATEGORY-->
-		<choice req="FM_PINPOINT_FORGE_LIST" lvl="1"  max_group="4" hidden="true">
+		<choice req="FM_PINPOINT_FORGE_LIST" lvl="1" max_group="4" hidden="true">
 			<text>Review Pinpoint Weapons.</text>
 			<event load="FM_FORGE_WEAPON_PINPOINT_LOAD"/>
 		</choice>
@@ -1230,7 +1230,7 @@
 
 
 		<!--FLAK CATEGORY-->
-		<choice req="FM_FLAK_FORGE_LIST" lvl="1"  max_group="5" hidden="true">
+		<choice req="FM_FLAK_FORGE_LIST" lvl="1" max_group="5" hidden="true">
 			<text>Review Flak Weapons.</text>
 			<event load="FM_FORGE_WEAPON_FLAK_LOAD"/>
 		</choice>
@@ -1244,7 +1244,7 @@
 
 		<!--EXPLOSIVE CATEGORY-->
 
-		<choice req="FM_EXPLOSIVE_FORGE_LIST" lvl="1"  max_group="6" hidden="true">
+		<choice req="FM_EXPLOSIVE_FORGE_LIST" lvl="1" max_group="6" hidden="true">
 			<text>Review Explosive Weapons.</text>
 			<event load="FM_FORGE_WEAPON_EXPLOSIVES_LOAD"/>
 		</choice>
@@ -1259,7 +1259,7 @@
 		<!--ORGANIC CATEGORY-->
 
 
-		<choice req="FM_ORGANIC_FORGE_LIST" lvl="1"  max_group="7" hidden="true">
+		<choice req="FM_ORGANIC_FORGE_LIST" lvl="1" max_group="7" hidden="true">
 			<text>Review Organic Weapons.</text>
 			<event load="FM_FORGE_WEAPON_ORGANIC_LOAD"/>
 		</choice>
@@ -1269,7 +1269,7 @@
 			<event load="FM_FORGE_WEAPON_ORGANIC_LOAD"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_BRONZE_LIST_UPGRADE" lvl="1"  max_group="8" hidden="true">
+		<choice req="FM_SHOTGUN_BRONZE_LIST_UPGRADE" lvl="1" max_group="8" hidden="true">
 			<text>Review Upgrade List</text>
 			<event load="FM_FORGE_WEAPON_UPGRADE_LOAD"/>
 		</choice>
@@ -1279,7 +1279,7 @@
 			<event load="FM_FORGE_WEAPON_UPGRADE_LOAD"/>
 		</choice>
 		<!--COMBAT DRONE CATEGORY-->
-		<choice req="FM_COMBAT_DRONE_FORGE_LIST" lvl="1"  max_group="9" hidden="true">
+		<choice req="FM_COMBAT_DRONE_FORGE_LIST" lvl="1" max_group="9" hidden="true">
 			<text>Review Combat Drone List (coming soon)</text>
 			<event load="OPTION_INVALID"/><!--this will load instead of the above, remove next version-->
 			<event load="FM_FORGE_COMBAT_DRONE_LOAD"/>
@@ -1576,14 +1576,14 @@
 		</choice>
 
 		<choice req="FM_BEAM_ETERNITY_LIST" lvl="1" blue="false" hidden="true">
-		  <text>Combine the 'Pike' beam and 'Scythe' beam to forge the 'Eternity' Beam. [Cost: 40~]</text>
-		  <event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_ETERNITY"/>
+			<text>Combine the 'Pike' beam and 'Scythe' beam to forge the 'Eternity' Beam. [Cost: 40~]</text>
+			<event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_ETERNITY"/>
 		</choice>
 
 		<choice req="FM_BEAM_ETERNITY_LIST" lvl="0" blue="false" hidden="true">
-      <text>You must have a 'Pike' beam and 'Scythe' beam to forge this weapon.</text>
-      <event load="OPTION_INVALID"/>
-    </choice>
+	<text>You must have a 'Pike' beam and 'Scythe' beam to forge this weapon.</text>
+	<event load="OPTION_INVALID"/>
+	</choice>
 
 		<choice req="pilot" lvl="1" max_group="20" hidden="true" blue="false">
 			<text>Nevermind.</text>
@@ -1641,34 +1641,34 @@
 		</choice>
 
 		<choice req="FM_FOCUS_ENERGY_CONS_LIST" lvl="1" blue="false" hidden="true">
-      <text>Replace the Dirk's power source with a Conservative Energy core to forge the 'Maple' Pinpoint.[Cost: 50~]</text>
-      <event load="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_CONS"/>
-    </choice>
+	<text>Replace the Dirk's power source with a Conservative Energy core to forge the 'Maple' Pinpoint.[Cost: 50~]</text>
+	<event load="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_CONS"/>
+	</choice>
 
-    <choice req="FM_FOCUS_ENERGY_CONS_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
-      <text>You must have a Dirk pinpoint and Conservative Energy to forge this weapon.</text>
-      <event load="OPTION_INVALID"/>
-    </choice>
+	<choice req="FM_FOCUS_ENERGY_CONS_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+	<text>You must have a Dirk pinpoint and Conservative Energy to forge this weapon.</text>
+	<event load="OPTION_INVALID"/>
+	</choice>
 		
-    <choice req="FM_FOCUS_VIRUS_FORGE_LIST" lvl="1" blue="false" hidden="true">
+	<choice req="FM_FOCUS_VIRUS_FORGE_LIST" lvl="1" blue="false" hidden="true">
 			<text>Enhance the Anelace's focusing lens with the Corrosive Laser's deadly chemicals.[Cost: 50~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_VIRUS"/>
 		</choice>
 
-    <choice req="FM_FOCUS_VIRUS_FORGE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+	<choice req="FM_FOCUS_VIRUS_FORGE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
 			<text>You must have a Corrosive Laser 2 and an 'Anelace' Rad Pinpoint to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-    <choice req="FM_FOCUS_ADAPT_LIST" lvl="1" blue="false" hidden="true">
-      <text>Combine the Suyari beam and Cinquedea pinpoint to forge the Omiyari focus.[Cost: 50~]</text>
-      <event load="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ADAPT"/>
-    </choice>
-    
-    <choice req="FM_FOCUS_ADAPT_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
-      <text>You must have a Suyari beam and Cinquedea pinpoint to forge this weapon.</text>
-      <event load="OPTION_INVALID"/>
-    </choice>
+	<choice req="FM_FOCUS_ADAPT_LIST" lvl="1" blue="false" hidden="true">
+	<text>Combine the Suyari beam and Cinquedea pinpoint to forge the Omiyari focus.[Cost: 50~]</text>
+	<event load="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ADAPT"/>
+	</choice>
+	
+	<choice req="FM_FOCUS_ADAPT_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
+	<text>You must have a Suyari beam and Cinquedea pinpoint to forge this weapon.</text>
+	<event load="OPTION_INVALID"/>
+	</choice>
 
 		<choice req="FM_BEAM_MINING_3_FORGE_LIST" lvl="1" blue="false" hidden="true">
 			<text>Combine the Misericorde/Stiletto and Ishimura Beam to forge the Terra Nova 'ShipCracker'.[Cost: 50-70~]</text>
@@ -1735,14 +1735,14 @@
 		</choice>
 
 		<choice req="FM_ENERGY_RAILBLENDER_FORGE_LIST" lvl="1" blue="false" hidden="true">
-      <text>Combine the Charge Flak and Charge Energy to forge the Railblender.[140~]</text>
-      <event load="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_RAILBLENDER"/>
-    </choice>
+	<text>Combine the Charge Flak and Charge Energy to forge the Railblender.[140~]</text>
+	<event load="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_RAILBLENDER"/>
+	</choice>
 
-    <choice req="FM_ENERGY_RAILBLENDER_FORGE_LIST" lvl="0" blue="false" hidden="true">
-      <text>You must have a Charge Flak and Charge Energy to forge this weapon.</text>
-      <event load="OPTION_INVALID"/>
-    </choice>
+	<choice req="FM_ENERGY_RAILBLENDER_FORGE_LIST" lvl="0" blue="false" hidden="true">
+	<text>You must have a Charge Flak and Charge Energy to forge this weapon.</text>
+	<event load="OPTION_INVALID"/>
+	</choice>
 
 
 		<choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
@@ -1822,47 +1822,47 @@
 		</choice>
 
 		<choice req="FM_ION_MISSILES_LIST" lvl="1" blue="false" hidden="true">
-		  <text>Combine the Hermes Missile and Ion II to forge the 'Debilitatum' Heavy Missiles.[Cost: 65~]</text>
-		  <event load="NPC_STORAGE_CHECK_CREATE_FM_ION_MISSILES"/>
+			<text>Combine the Hermes Missile and Ion II to forge the 'Debilitatum' Heavy Missiles.[Cost: 65~]</text>
+			<event load="NPC_STORAGE_CHECK_CREATE_FM_ION_MISSILES"/>
 		</choice>
 
 		<choice req="FM_ION_MISSILES_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
-		  <text>You must have a Hermes Missile and Ion II to forge this weapon.</text>
-		  <event load="OPTION_INVALID"/>
+			<text>You must have a Hermes Missile and Ion II to forge this weapon.</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 
 
 
 		<choice req="FM_IMPRISMENT_INDUCER_LIST" lvl="1" blue="false" hidden="true">
-		  <text>Reconfigure the Stun Bomb to disperse the debilitating crystalline particles of the Neural Crystal to forge the IMPRISMENT Inducer.[Cost: 25-55~]</text>
-		  <event load="NPC_STORAGE_CHECK_CREATE_FM_IMPRISMENT_INDUCER"/>
+			<text>Reconfigure the Stun Bomb to disperse the debilitating crystalline particles of the Neural Crystal to forge the IMPRISMENT Inducer.[Cost: 25-55~]</text>
+			<event load="NPC_STORAGE_CHECK_CREATE_FM_IMPRISMENT_INDUCER"/>
 		</choice>
 
 		<choice req="FM_IMPRISMENT_INDUCER_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
-		  <text>You must have a Stun Bomb and Neural Crystal to forge this weapon.</text>
-		  <event load="OPTION_INVALID"/>
+			<text>You must have a Stun Bomb and Neural Crystal to forge this weapon.</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 
 
 		<choice req="FM_RVS_AC_CHARGE_FORGE_LIST" lvl="1" blue="false" hidden="true">
-		  <text>[GO BALLISTIC] Combine two to four Autocannon 1s to forge the Volley Gun.[Cost: 20-60~]</text>
-		  <event load="NPC_STORAGE_CHECK_CREATE_FM_RVS_AC_CHARGE"/>
+			<text>[GO BALLISTIC] Combine two to four Autocannon 1s to forge the Volley Gun.[Cost: 20-60~]</text>
+			<event load="NPC_STORAGE_CHECK_CREATE_FM_RVS_AC_CHARGE"/>
 		</choice>
 
 		<choice req="FM_RVS_AC_CHARGE_FORGE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
-		  <text>[GO BALLISTIC] You must have two to four Autocannon 1s to forge this weapon.</text>
-		  <event load="OPTION_INVALID"/>
+			<text>[GO BALLISTIC] You must have two to four Autocannon 1s to forge this weapon.</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		
 		
 		<choice req="MAMMOTH_CANNON_FORGE_LIST" lvl="1" blue="false" hidden="true">
-		  <text>[GO BALLISTIC + CNC] Combine two Autocannon 2s and V5 Missiles to forge the 'Mammoth' Cannon.[Cost: 60~]</text>
-		  <event load="NPC_STORAGE_CHECK_CREATE_MAMMOTH_CANNON"/>
+			<text>[GO BALLISTIC + CNC] Combine two Autocannon 2s and V5 Missiles to forge the 'Mammoth' Cannon.[Cost: 60~]</text>
+			<event load="NPC_STORAGE_CHECK_CREATE_MAMMOTH_CANNON"/>
 		</choice>
 
 		<choice req="MAMMOTH_CANNON_FORGE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
-		  <text>[GO BALLISTIC + CNC] You must have two Autocannon 2s and V5 Missiles to forge this weapon.</text>
-		  <event load="OPTION_INVALID"/>
+			<text>[GO BALLISTIC + CNC] You must have two Autocannon 2s and V5 Missiles to forge this weapon.</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 
 		<!--Back to main craft menu-->
@@ -1938,10 +1938,10 @@
 				<removeItem>LASER_BIO</removeItem>
 				<removeItem>LASER_FROST_1</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -1954,10 +1954,10 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_CHAINGUN_FIRE">
 		<checkCargo/>
 		<text>Currently viewing the 'Hellflash' Gatling Gun.</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Craft the 'Hellflash' Gatling Gun.</text>
 			<event>
-        		<text id="text_CREATE_FM_CHAINGUN_FIRE_1_1"/>
+				<text id="text_CREATE_FM_CHAINGUN_FIRE_1_1"/>
 				<weapon name="FM_CHAINGUN_FIRE"/>
 				<item_modify>
 					<item type="scrap" min="-30" max="-30"/>
@@ -1965,7 +1965,7 @@
 				<choice hidden="true">
 					<text>Continue...</text>
 					<event>
-        				<text id="text_CREATE_FM_CHAINGUN_FIRE_1_2"/>
+						<text id="text_CREATE_FM_CHAINGUN_FIRE_1_2"/>
 						<remove name="LASER_FIRE"/>
 						<choice hidden="true">
 							<text>Continue...</text>
@@ -2183,10 +2183,10 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_LASER_PHOTON">
 		<checkCargo/>
 		<text>Currently viewing the Photon Laser I.</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Craft the Photon Laser I.</text>
 			<event>
-        		<text id="text_CREATE_FM_LASER_PHOTON_1_1"/>
+				<text id="text_CREATE_FM_LASER_PHOTON_1_1"/>
 				<weapon name="FM_LASER_PHOTON"/>
 				<item_modify>
 					<item type="scrap" min="-25" max="-25"/>
@@ -2194,7 +2194,7 @@
 				<choice hidden="true">
 					<text>Continue...</text>
 					<event>
-        				<text id="text_CREATE_FM_LASER_PHOTON_1_2"/>
+						<text id="text_CREATE_FM_LASER_PHOTON_1_2"/>
 						<remove name="LASER_LIGHT"/>
 						<choice hidden="true">
 							<text>Continue...</text>
@@ -2227,7 +2227,7 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_LASER_PHOTON_2">
 		<checkCargo/>
 		<text>Currently viewing the Photon Laser II.</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Craft the Photon Laser II.</text>
 			<event>
 				<text id="text_CREATE_FM_LASER_PHOTON_2_1"/>
@@ -2271,7 +2271,7 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_LASER_HUMAN">
 		<checkCargo/>
 		<text>Currently viewing the 'Rebel Ripper'.</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Craft the 'Rebel Ripper'.</text>
 			<event>
 				<text>Proceed with crafting?</text>
@@ -2282,10 +2282,10 @@
 				<removeItem>LASER_BIO</removeItem>
 				<removeItem>LASER_HEAVY_1</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -2298,7 +2298,7 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_LASER_ION_MEGA">
 		<checkCargo/>
 		<text>Currently viewing the 'Absolution' Rift Inducer.</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Craft the 'Absolution' Rift Inducer.</text>
 			<event>
 				<text id="text_CREATE_FM_LASER_ION_MEGA_1"/>
@@ -2352,7 +2352,7 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_SURGE_LASER">
 		<checkCargo/>
 		<text>Currently viewing the 'Multiplicity' Barrage Laser.</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Craft the 'Multiplicity'.</text>
 			<event>
 				<text>Proceed with crafting?</text>
@@ -2363,10 +2363,10 @@
 				<removeItem>LASER_BURST_5</removeItem>
 				<removeItem>SHOTGUN_4</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -2393,7 +2393,7 @@
 						<choice hidden="true">
 							<text>Continue...</text>
 							<event>
-								<text>After flicking a single dial labelled "SEMI" to the right, to point to "AUTO", Alastair scratches his head. "Why would they leave that on Semi? So strange. Well, don't abuse this power, or I may have to take this from you lad!" he says, with a jolly laugh. He hands you back the weapon. </text>
+								<text>After flicking a single dial labelled "SEMI" to the right, to point to "AUTO", Alastair scratches his head. "Why would they leave that on Semi? So strange. Well, don't abuse this power, or I may have to take this from you lad!" he says, with a jolly laugh. He hands you back the weapon.</text>
 								<weapon name="FM_GATLING_ANCIENT"/>
 
 								<choice hidden="true">
@@ -2417,7 +2417,7 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_DISC">
 		<checkCargo/>
 		<text>Currently viewing the 'TARANIS' Energized Disc.</text>
-		<choice hidden="false" req="MINELAUNCHER_1"  blue="false">
+		<choice hidden="false" req="MINELAUNCHER_1" blue="false">
 			<text>Craft the 'TARANIS' Energized Disc using the Geb Minelauncher.</text>
 			<event>
 				<text>Proceed with crafting?</text>
@@ -2428,15 +2428,15 @@
 				<removeItem>ENERGY_HULL</removeItem>
 				<removeItem>MINELAUNCHER_1</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
 
-		<choice hidden="false" req="MINELAUNCHER_2"  blue="false">
+		<choice hidden="false" req="MINELAUNCHER_2" blue="false">
 			<text>Craft the 'TARANIS' Energized Disc using the Osiris Minelauncher.</text>
 			<event>
 				<text>Proceed with crafting?</text>
@@ -2447,15 +2447,15 @@
 				<removeItem>ENERGY_HULL</removeItem>
 				<removeItem>MINELAUNCHER_2</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
 
-		<choice hidden="false" req="MINELAUNCHER_FIRE"  blue="false">
+		<choice hidden="false" req="MINELAUNCHER_FIRE" blue="false">
 			<text>Craft the 'TARANIS' Energized Disc using the Sekhmet Minelauncher.</text>
 
 			<event>
@@ -2467,15 +2467,15 @@
 				<removeItem>ENERGY_HULL</removeItem>
 				<removeItem>MINELAUNCHER_FIRE</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
 
-		<choice hidden="false" req="MINELAUNCHER_STUN"  blue="false">
+		<choice hidden="false" req="MINELAUNCHER_STUN" blue="false">
 			<text>Craft the 'TARANIS' Energized Disc using the Anubis Minelauncher.</text>
 			<event>
 				<text>Proceed with crafting?</text>
@@ -2486,10 +2486,10 @@
 				<removeItem>ENERGY_HULL</removeItem>
 				<removeItem>MINELAUNCHER_STUN</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -2503,7 +2503,7 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_ION_TRI_FIRE">
 		<checkCargo/>
 		<text>Currently viewing the 'Cerberus' Ion.</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Craft the 'Cerberus' Ion.</text>
 			<event>
 				<text id="text_CREATE_FM_ION_TRI_FIRE_1"/><!--First locked in screen, shows Cerberus, TOP text part-->
@@ -2547,7 +2547,7 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_CHAINGUN_ION">
 		<checkCargo/>
 		<text>Currently viewing the 'Vesta' Gatling Ion.</text>
-		<choice hidden="false" req="ION_CHARGEGUN"  blue="false">
+		<choice hidden="false" req="ION_CHARGEGUN" blue="false">
 
 			<text>Craft the 'Vesta' Gatling Ion using the Charge Ion I.</text>
 			<event>
@@ -2559,15 +2559,15 @@
 				<removeItem>ION_CHARGEGUN</removeItem>
 				<removeItem>LASER_CHAINGUN_2</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
 
-		<choice hidden="false" req="ION_CHARGEGUN_2"  blue="false">
+		<choice hidden="false" req="ION_CHARGEGUN_2" blue="false">
 			<text>Craft the 'Vesta' Gatling Ion with the Charge Ion II.</text>
 			<event>
 				<text>Proceed with crafting?</text>
@@ -2578,10 +2578,10 @@
 				<removeItem>ION_CHARGEGUN_2</removeItem>
 				<removeItem>LASER_CHAINGUN_2</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -2606,10 +2606,10 @@
 				<removeItem>ENERGY_CHARGEGUN_PLAYER</removeItem>
 				<removeItem>SHOTGUN_3</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 
 			</event>
@@ -2626,10 +2626,10 @@
 				<removeItem>ENERGY_CHARGEGUN</removeItem>
 				<removeItem>SHOTGUN_3</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -2643,7 +2643,7 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_PULSE">
 		<checkCargo/>
 		<text>Currently viewing the Pulse Laser I.</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 
 			<text>Craft the Pulse Laser I.</text>
 			<event>
@@ -2655,10 +2655,10 @@
 				<removeItem>ENERGY_1</removeItem>
 				<removeItem>LASER_BURST_2</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -2685,10 +2685,10 @@
 				<removeItem>ENERGY_2_PLAYER</removeItem>
 				<removeItem>LASER_BURST_3</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -2704,10 +2704,10 @@
 				<removeItem>ENERGY_2</removeItem>
 				<removeItem>LASER_BURST_3</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -2721,7 +2721,7 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_PULSE_3">
 		<checkCargo/>
 		<text>Currently viewing the Pulse Laser III.</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 
 			<text>Craft the Pulse Laser III.</text>
 			<event>
@@ -2733,10 +2733,10 @@
 				<removeItem>ENERGY_3</removeItem>
 				<removeItem>LASER_BURST_5</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -2751,7 +2751,7 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_PULSEDEEP">
 		<checkCargo/>
 		<text>Currently viewing the Pulsedeep Cannon.</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 
 			<text>Craft the Pulsedeep Cannon.</text>
 			<event>
@@ -2763,10 +2763,10 @@
 				<removeItem>ENERGY_HULL</removeItem>
 				<removeItem>ION_HEAVY</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -2784,7 +2784,7 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_BEAM_MINING_2">
 		<checkCargo/>
 		<text>Currently viewing the Ishimura Beam.</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Craft the Ishimura Beam.</text>
 			<event>
 				<text id="text_CREATE_FM_BEAM_MINING_2_1"/>
@@ -2846,10 +2846,10 @@
 				<removeItem>FOCUS_2</removeItem>
 				<metaVariable name="FM_LORE_TERRANOVA" op="set" val="1"/>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -2865,10 +2865,10 @@
 				<removeItem>FOCUS_3</removeItem>
 				<metaVariable name="FM_LORE_TERRANOVA" op="set" val="1"/>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -3180,10 +3180,10 @@
 				<removeItem>BEAM_2_PLAYER</removeItem>
 				<variable name="valefor_easter_egg" op="set" val="1"/>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -3199,10 +3199,10 @@
 				<removeItem>BEAM_2</removeItem>
 				<variable name="valefor_easter_egg" op="set" val="1"/>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -3218,10 +3218,10 @@
 				<removeItem>BEAM_2</removeItem>
 				<variable name="valefor_easter_egg" op="set" val="1"/>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -3234,7 +3234,7 @@
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_FUELED_1">
 		<checkCargo/>
-		<text>Currently viewing the 'Parazonium' Pinpoint. </text>
+		<text>Currently viewing the 'Parazonium' Pinpoint.</text>
 		<choice hidden="false" blue="false">
 			<text>Craft the 'Parazonium' Pinpoint.</text>
 			<event>
@@ -3246,10 +3246,10 @@
 				<removeItem>MISSILES_3</removeItem>
 				<removeItem>FOCUS_CHAIN</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -3262,7 +3262,7 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_1">
 		<checkCargo/>
 		<text>Currently viewing the 'Ebony' Pinpoint.</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Craft the 'Ebony' Pinpoint.</text>
 			<event>
 				<text>Proceed with crafting?</text>
@@ -3273,10 +3273,10 @@
 				<removeItem>ENERGY_1</removeItem>
 				<removeItem>FOCUS_1</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -3300,10 +3300,10 @@
 				<removeItem>ENERGY_2_PLAYER</removeItem>
 				<removeItem>FOCUS_2</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -3318,10 +3318,10 @@
 				<removeItem>ENERGY_2</removeItem>
 				<removeItem>FOCUS_2</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -3334,7 +3334,7 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_3">
 		<checkCargo/>
 		<text>Currently viewing the 'Greenheart' Pinpoint.</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Craft the 'Greenheart' Pinpoint.</text>
 			<event>
 				<text>Proceed with crafting?</text>
@@ -3345,10 +3345,10 @@
 				<removeItem>ENERGY_3</removeItem>
 				<removeItem>FOCUS_3</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -3359,110 +3359,110 @@
 	</event>
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_CONS">
-	  <checkCargo/>
-	  <text>Currently viewing the 'Maple' Pinpoint.</text>
-	  <choice hidden="false" req="FM_FOCUS_ENERGY_CONS_LIST" blue="false">
-	    <text>Craft the 'Maple' Pinpoint.</text>
-	    <event>
-	      <text>Proceed with crafting?</text>
-	      <weapon name="FM_FOCUS_ENERGY_CONS"/>
-	      <item_modify>
-		      <item type="scrap" min="-50" max="-50"/>
-	      </item_modify>
-	      <removeItem>FOCUS_1</removeItem>
-	      <removeItem>ENERGY_CONSERVATIVE</removeItem>
-	      <choice hidden="true">
-	        <text>Continue...</text>
-	        <event>
-	          <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-	        </event>
-	      </choice>
-	    </event>
-	  </choice>
-	  <choice hidden="false">
-	    <text>Nevermind.</text>
-	    <event load="FM_FORGE_WEAPON_PINPOINT_LOAD"/>
-	  </choice>
+		<checkCargo/>
+		<text>Currently viewing the 'Maple' Pinpoint.</text>
+		<choice hidden="false" req="FM_FOCUS_ENERGY_CONS_LIST" blue="false">
+			<text>Craft the 'Maple' Pinpoint.</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<weapon name="FM_FOCUS_ENERGY_CONS"/>
+				<item_modify>
+					<item type="scrap" min="-50" max="-50"/>
+				</item_modify>
+				<removeItem>FOCUS_1</removeItem>
+				<removeItem>ENERGY_CONSERVATIVE</removeItem>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_WEAPON_PINPOINT_LOAD"/>
+		</choice>
 	</event>
 	
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_VIRUS">
-	  <checkCargo/>
-	  <text>Currently viewing the 'Aegrotatio' Viral Pinpoint.</text>
-	  <choice hidden="false" req="FM_FOCUS_VIRUS_LIST" blue="false">
-	    <text>Craft the 'Aegrotatio' Pinpoint.</text>
-	    <event>
-	      <text>Proceed with crafting?</text>
-	      <weapon name="FM_FOCUS_VIRUS"/>
-	      <item_modify>
-		      <item type="scrap" min="-50" max="-50"/>
-	      </item_modify>
-	      <removeItem>FOCUS_BIO</removeItem>
-	      <removeItem>FM_CORROSIVE_2</removeItem>
-	      <choice hidden="true">
-	        <text>Continue...</text>
-	        <event>
-	          <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-	        </event>
-	      </choice>
-	    </event>
-	  </choice>
-		
-	<choice hidden="false" req="FM_FOCUS_VIRUS_LIST_PLUS" blue="false">
-	    <text>Craft the 'Aegrotatio' Pinpoint.</text>
-	    <event>
-	      <text>Proceed with crafting?</text>
-	      <weapon name="FM_FOCUS_VIRUS_PLAYER"/>
-	      <item_modify>
-		      <item type="scrap" min="-50" max="-50"/>
-	      </item_modify>
-	      <removeItem>FOCUS_BIO_PLAYER</removeItem>
-	      <removeItem>FM_CORROSIVE_2</removeItem>
-	      <choice hidden="true">
-	        <text>Continue...</text>
-	        <event>
-	          <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-	        </event>
-	      </choice>
-	    </event>
-	  </choice>
-	  <choice hidden="false">
-	    <text>Nevermind.</text>
-	    <event load="FM_FORGE_WEAPON_PINPOINT_LOAD"/>
-	  </choice>
+		<checkCargo/>
+		<text>Currently viewing the 'Aegrotatio' Viral Pinpoint.</text>
+		<choice hidden="false" req="FM_FOCUS_VIRUS_LIST" blue="false">
+			<text>Craft the 'Aegrotatio' Pinpoint.</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<weapon name="FM_FOCUS_VIRUS"/>
+				<item_modify>
+					<item type="scrap" min="-50" max="-50"/>
+				</item_modify>
+				<removeItem>FOCUS_BIO</removeItem>
+				<removeItem>FM_CORROSIVE_2</removeItem>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
+				</choice>
+			</event>
+		</choice>
+			
+		<choice hidden="false" req="FM_FOCUS_VIRUS_LIST_PLUS" blue="false">
+			<text>Craft the 'Aegrotatio' Pinpoint.</text>
+			<event>
+			<text>Proceed with crafting?</text>
+			<weapon name="FM_FOCUS_VIRUS_PLAYER"/>
+			<item_modify>
+				<item type="scrap" min="-50" max="-50"/>
+			</item_modify>
+			<removeItem>FOCUS_BIO_PLAYER</removeItem>
+			<removeItem>FM_CORROSIVE_2</removeItem>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+				</event>
+			</choice>
+			</event>
+		</choice>
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_WEAPON_PINPOINT_LOAD"/>
+		</choice>
 	</event>
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_FOCUS_ADAPT">
-	  <checkCargo/>
-	  <text>Currently viewing the Omiyari Pinpoint.</text>
-	  <choice hidden="false" req="FM_FOCUS_ADAPT_LIST" blue="false">
-	    <text>Craft the Omiyari Pinpoint.</text>
-	    <event>
-	      <text>Proceed with crafting?</text>
-	      <weapon name="FM_FOCUS_ADAPT"/>
-	      <item_modify>
-		      <item type="scrap" min="-50" max="-50"/>
-	      </item_modify>
-	      <removeItem>FOCUS_CHAIN</removeItem>
-	      <removeItem>BEAM_ADAPT</removeItem>
-	      <choice hidden="true">
-	        <text>Continue...</text>
-	        <event>
-	          <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-	        </event>
-	      </choice>
-	    </event>
-	  </choice>
-	  <choice hidden="false">
-	    <text>Nevermind.</text>
-	    <event load="FM_FORGE_WEAPON_PINPOINT_LOAD"/>
-	  </choice>
+		<checkCargo/>
+		<text>Currently viewing the Omiyari Pinpoint.</text>
+		<choice hidden="false" req="FM_FOCUS_ADAPT_LIST" blue="false">
+			<text>Craft the Omiyari Pinpoint.</text>
+			<event>
+				<text>Proceed with crafting?</text>
+				<weapon name="FM_FOCUS_ADAPT"/>
+				<item_modify>
+					<item type="scrap" min="-50" max="-50"/>
+				</item_modify>
+				<removeItem>FOCUS_CHAIN</removeItem>
+				<removeItem>BEAM_ADAPT</removeItem>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="FM_FORGE_WEAPON_PINPOINT_LOAD"/>
+		</choice>
 	</event>
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_BEAM_ION_PIERCE">
 		<checkCargo/>
 		<text>Currently viewing the 'Kontos' Beam.</text>
 
-		<choice hidden="false" req="ION_1"  blue="false">
+		<choice hidden="false" req="ION_1" blue="false">
 			<text>Craft the 'Kontos' Beam using Basic Ion.</text>
 			<event>
 				<text>Proceed with crafting?</text>
@@ -3473,15 +3473,15 @@
 				<removeItem>ION_1</removeItem>
 				<removeItem>BEAM_BREACH</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
 
-		<choice hidden="false" req="ION_2"  blue="false">
+		<choice hidden="false" req="ION_2" blue="false">
 			<text>Craft the 'Kontos' Beam using Ion Barrage Mark I.</text>
 			<event>
 				<text>Proceed with crafting?</text>
@@ -3492,10 +3492,10 @@
 				<removeItem>ION_2</removeItem>
 				<removeItem>BEAM_BREACH</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -3520,10 +3520,10 @@
 				<removeItem>BEAM_LONG</removeItem>
 				<removeItem>BEAM_SCYTHE</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -3550,10 +3550,10 @@
 				<removeItem>LASER_FROST_2_PLAYER</removeItem>
 				<removeItem>SHOTGUN_TOXIC_PLAYER</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -3586,10 +3586,10 @@
 				<removeItem>LASER_FROST_2</removeItem>
 				<removeItem>SHOTGUN_TOXIC_PLAYER</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -3604,10 +3604,10 @@
 				<removeItem>LASER_FROST_2</removeItem>
 				<removeItem>SHOTGUN_TOXIC</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -3620,7 +3620,7 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_AETHER">
 		<checkCargo/>
 		<text>Currently viewing the Aetheric Flak.</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Craft the Aetheric Flak.</text>
 			<event>
 				<text>Proceed with crafting?</text>
@@ -3630,10 +3630,10 @@
 				</item_modify>
 				<removeItem>SHOTGUN_4</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -3646,7 +3646,7 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_CURSED">
 		<checkCargo/>
 		<text>Currently viewing the Carnifex Flak.</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Craft the Carnifex Flak.</text>
 			<event>
 				<text>Proceed with crafting?</text>
@@ -3656,10 +3656,10 @@
 				</item_modify>
 				<removeItem>SHOTGUN_2</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -3724,7 +3724,7 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE">
 		<checkCargo/>
 		<text>Currently viewing the Bronze Flak.</text>
-		<choice req="CRYSTAL_BURST_1"  blue="false" hidden="false" max_group="1">
+		<choice req="CRYSTAL_BURST_1" blue="false" hidden="false" max_group="1">
 			<text>Install the Crystal Burst I in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
@@ -3760,7 +3760,7 @@
 			</event>
 		</choice>
 
-		<choice req="CRYSTAL_BURST_1_RED"  blue="false" hidden="false" max_group="2">
+		<choice req="CRYSTAL_BURST_1_RED" blue="false" hidden="false" max_group="2">
 			<text>Install the Elite Crystal Burst I in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
@@ -3789,7 +3789,7 @@
 			</event>
 		</choice>
 
-		<choice req="CRYSTAL_BURST_2"  blue="false" hidden="false" max_group="3">
+		<choice req="CRYSTAL_BURST_2" blue="false" hidden="false" max_group="3">
 			<text>Install the Crystal Burst Mark II in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
@@ -3818,7 +3818,7 @@
 			</event>
 		</choice>
 
-		<choice req="CRYSTAL_BURST_2_RED"  blue="false" hidden="false" max_group="4">
+		<choice req="CRYSTAL_BURST_2_RED" blue="false" hidden="false" max_group="4">
 			<text>Install the Elite Crystal Burst Mark II in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
@@ -3847,7 +3847,7 @@
 			</event>
 		</choice>
 
-		<choice req="CRYSTAL_HEAVY_1"  blue="false" hidden="false" max_group="5">
+		<choice req="CRYSTAL_HEAVY_1" blue="false" hidden="false" max_group="5">
 			<text>Install the Heavy Crystal Mark I in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
@@ -3876,7 +3876,7 @@
 			</event>
 		</choice>
 
-		<choice req="CRYSTAL_HEAVY_1_RED"  blue="false" hidden="false" max_group="6">
+		<choice req="CRYSTAL_HEAVY_1_RED" blue="false" hidden="false" max_group="6">
 			<text>Install the Elite Heavy Crystal Mark I in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
@@ -3905,7 +3905,7 @@
 			</event>
 		</choice>
 
-		<choice req="CRYSTAL_HEAVY_2"  blue="false" hidden="false" max_group="7">
+		<choice req="CRYSTAL_HEAVY_2" blue="false" hidden="false" max_group="7">
 			<text>Install the Heavy Crystal Mark II in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
@@ -3934,7 +3934,7 @@
 			</event>
 		</choice>
 
-		<choice req="CRYSTAL_HEAVY_2_RED"  blue="false" hidden="false" max_group="8">
+		<choice req="CRYSTAL_HEAVY_2_RED" blue="false" hidden="false" max_group="8">
 			<text>Install the Elite Heavy Crystal Mark II in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
@@ -3963,7 +3963,7 @@
 			</event>
 		</choice>
 
-		<choice req="CRYSTAL_STUN"  blue="false" hidden="false" max_group="9">
+		<choice req="CRYSTAL_STUN" blue="false" hidden="false" max_group="9">
 			<text>Install the Neural Crystal in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
@@ -3992,7 +3992,7 @@
 			</event>
 		</choice>
 
-		<choice req="CRYSTAL_STUN_RED"  blue="false" hidden="false" max_group="10">
+		<choice req="CRYSTAL_STUN_RED" blue="false" hidden="false" max_group="10">
 			<text>Install the Elite Neural Crystal in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
@@ -4021,7 +4021,7 @@
 			</event>
 		</choice>
 
-		<choice req="CRYSTAL_SHOTGUN"  blue="false" hidden="false" max_group="11">
+		<choice req="CRYSTAL_SHOTGUN" blue="false" hidden="false" max_group="11">
 			<text>Install the Crystal Scatter in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
@@ -4050,7 +4050,7 @@
 			</event>
 		</choice>
 
-		<choice req="CRYSTAL_SHOTGUN_RED"  blue="false" hidden="false" max_group="12">
+		<choice req="CRYSTAL_SHOTGUN_RED" blue="false" hidden="false" max_group="12">
 			<text>Install the Elite Crystal Scatter in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
@@ -4079,7 +4079,7 @@
 			</event>
 		</choice>
 
-		<choice req="CRYSTAL_CHARGEGUN"  blue="false" hidden="false" max_group="13">
+		<choice req="CRYSTAL_CHARGEGUN" blue="false" hidden="false" max_group="13">
 			<text>Install the Crystal Charger in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
@@ -4108,7 +4108,7 @@
 			</event>
 		</choice>
 
-		<choice req="CRYSTAL_CHARGEGUN_RED"  blue="false" hidden="false" max_group="14">
+		<choice req="CRYSTAL_CHARGEGUN_RED" blue="false" hidden="false" max_group="14">
 			<text>Install the Elite Crystal Charger in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
@@ -4137,7 +4137,7 @@
 			</event>
 		</choice>
 
-		<choice req="MINELAUNCHER_CRYSTAL"  blue="false" hidden="false" max_group="15">
+		<choice req="MINELAUNCHER_CRYSTAL" blue="false" hidden="false" max_group="15">
 			<text>Install the Shard Launcher in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
@@ -4166,7 +4166,7 @@
 			</event>
 		</choice>
 		<!--
-		<choice req="BOMB_LOCK"  blue="false" hidden="false" max_group="16">
+		<choice req="BOMB_LOCK" blue="false" hidden="false" max_group="16">
 			<text>Install the Crystal Lockdown Bomb in the Flak II.</text>
 			<event>
 				<text id="text_CREATE_FM_SHOTGUN_BRONZE_1"/>
@@ -4227,10 +4227,10 @@
 				<removeItem>MISSILES_4_PLAYER</removeItem>
 				<removeItem>MISSILES_FIRE_PLAYER</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -4245,10 +4245,10 @@
 				<removeItem>MISSILES_4</removeItem>
 				<removeItem>MISSILES_FIRE_PLAYER</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -4263,10 +4263,10 @@
 				<removeItem>MISSILES_4_PLAYER</removeItem>
 				<removeItem>MISSILES_FIRE</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -4281,10 +4281,10 @@
 				<removeItem>MISSILES_4</removeItem>
 				<removeItem>MISSILES_FIRE</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -4308,10 +4308,10 @@
 				<removeItem>ENERGY_STUN_PLAYER</removeItem>
 				<removeItem>MISSILES_CLOAK_PLAYER</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -4326,10 +4326,10 @@
 				<removeItem>ENERGY_STUN_PLAYER</removeItem>
 				<removeItem>MISSILES_CLOAK</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -4344,10 +4344,10 @@
 				<removeItem>ENERGY_STUN</removeItem>
 				<removeItem>MISSILES_CLOAK_PLAYER</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -4362,10 +4362,10 @@
 				<removeItem>ENERGY_STUN</removeItem>
 				<removeItem>MISSILES_CLOAK</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -4378,7 +4378,7 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_BOMB_CRYSTAL_FIRE">
 		<checkCargo/>
 		<text>Currently viewing the Project #7:Burning End.</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Craft the Project #7:Burning End.</text>
 			<event>
 				<text id="text_CREATE_FM_BOMB_CRYSTAL_FIRE_1"/>
@@ -4416,7 +4416,7 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_BOMB_CRYSTAL_BIO">
 		<checkCargo/>
 		<text>Currently viewing Project #22: Unnamed.</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Craft the Project #22.</text>
 			<event>
 				<text id="text_CREATE_FM_BOMB_CRYSTAL_BIO_1"/>
@@ -4454,7 +4454,7 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_BOMBLAUNCHER_HULL">
 		<checkCargo/>
 		<text>Currently viewing the 'Ba-Pef' Mine Launcher.</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Craft the 'Ba-Pef' Mine Launcher.</text>
 			<event>
 				<text>Proceed with crafting?</text>
@@ -4465,10 +4465,10 @@
 				<removeItem>LASER_HULL_2</removeItem>
 				<removeItem>MINELAUNCHER_BREACH</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -4481,7 +4481,7 @@
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_MINELAUNCHER_BIO">
 		<checkCargo/>
 		<text>Currently viewing the 'Dirty Bomb' Mine Launcher.</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Craft the 'Dirty Bomb' Mine Launcher.</text>
 			<event>
 				<text>Proceed with crafting?</text>
@@ -4492,10 +4492,10 @@
 				<removeItem>MISSILES_BIO</removeItem>
 				<removeItem>MINELAUNCHER_2</removeItem>
 				<choice hidden="true">
-				  <text>Continue...</text>
-				  <event>
-				    <loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
-				  </event>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+					</event>
 				</choice>
 			</event>
 		</choice>
@@ -4601,7 +4601,7 @@
 					</event>
 				</choice>
 			</event>
-	  	</choice>
+			</choice>
 		<choice hidden="false" req="AC_1_COUNT" lvl="3" blue="false">
 			<text>Craft the Volley Gun using 3 AC 1s</text>
 			<event>
@@ -5034,112 +5034,112 @@
 		<text>Which Weapon shall you upgrade?</text>
 
 		<!-- Do you want to upgrade a weapon in the Bronze Flak Line? -->
-		<choice req="FM_SHOTGUN_BRONZE"  max_group="600" hidden="true">
+		<choice req="FM_SHOTGUN_BRONZE" max_group="600" hidden="true">
 			<text>Upgrade the Bronze Flak Weapon</text>
 			<event load="NPC_STORAGE_CHECK_UPGRADE_BRONZE"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_INDIUM"  max_group="601" hidden="true">
+		<choice req="FM_SHOTGUN_INDIUM" max_group="601" hidden="true">
 			<text>Upgrade the Indium Flak Weapon</text>
 			<event load="NPC_STORAGE_CHECK_UPGRADE_INDIUM"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_RHENIUM"  max_group="602" hidden="true">
+		<choice req="FM_SHOTGUN_RHENIUM" max_group="602" hidden="true">
 			<text>Upgrade the Rhenium Flak Weapon</text>
 			<event load="NPC_STORAGE_CHECK_UPGRADE_RHENIUM"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_SILVER"  max_group="603" hidden="true">
+		<choice req="FM_SHOTGUN_SILVER" max_group="603" hidden="true">
 			<text>Upgrade the Silver Flak Weapon</text>
 			<event load="NPC_STORAGE_CHECK_UPGRADE_SILVER"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_PALLADIUM_LIST_1"  max_group="604" hidden="true">
+		<choice req="FM_SHOTGUN_PALLADIUM_LIST_1" max_group="604" hidden="true">
 			<text>Upgrade the Palladium Flak Weapon</text>
 			<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_PALLADIUM_LIST_2"  max_group="604" hidden="true">
+		<choice req="FM_SHOTGUN_PALLADIUM_LIST_2" max_group="604" hidden="true">
 			<text>Upgrade the Palladium Flak Weapon</text>
 			<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_PALLADIUM_LIST_3"  max_group="604" hidden="true">
+		<choice req="FM_SHOTGUN_PALLADIUM_LIST_3" max_group="604" hidden="true">
 			<text>Upgrade the Palladium Flak Weapon</text>
 			<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_PALLADIUM_LIST_4"  max_group="604" hidden="true">
+		<choice req="FM_SHOTGUN_PALLADIUM_LIST_4" max_group="604" hidden="true">
 			<text>Upgrade the Palladium Flak Weapon</text>
 			<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_PALLADIUM_LIST_5"  max_group="604" hidden="true">
+		<choice req="FM_SHOTGUN_PALLADIUM_LIST_5" max_group="604" hidden="true">
 			<text>Upgrade the Palladium Flak Weapon</text>
 			<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_PALLADIUM_LIST_6"  max_group="604" hidden="true">
+		<choice req="FM_SHOTGUN_PALLADIUM_LIST_6" max_group="604" hidden="true">
 			<text>Upgrade the Palladium Flak Weapon</text>
 			<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_PALLADIUM_LIST_7"  max_group="604" hidden="true">
+		<choice req="FM_SHOTGUN_PALLADIUM_LIST_7" max_group="604" hidden="true">
 			<text>Upgrade the Palladium Flak Weapon</text>
 			<event load="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_PALLADIUM"  max_group="604" hidden="true">
+		<choice req="FM_SHOTGUN_PALLADIUM" max_group="604" hidden="true">
 			<text>You must have an Elite Crystal weapon to proceed with the upgrade to Iridium!</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_IRIDIUM"  max_group="605" hidden="true">
+		<choice req="FM_SHOTGUN_IRIDIUM" max_group="605" hidden="true">
 			<text>Upgrade the Iridium Flak Weapon</text>
 			<event load="NPC_STORAGE_CHECK_UPGRADE_IRIDIUM"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_PLATINUM"  max_group="606" hidden="true">
+		<choice req="FM_SHOTGUN_PLATINUM" max_group="606" hidden="true">
 			<text>Upgrade the Platinum Flak Weapon</text>
 			<event load="NPC_STORAGE_CHECK_UPGRADE_PLATINUM"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_OSMIUM"  max_group="607" hidden="true">
+		<choice req="FM_SHOTGUN_OSMIUM" max_group="607" hidden="true">
 			<text>Upgrade the Osmium Flak Weapon</text>
 			<event load="NPC_STORAGE_CHECK_UPGRADE_OSMIUM"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_NOBELIUM_LIST_1"  max_group="608" hidden="true">
+		<choice req="FM_SHOTGUN_NOBELIUM_LIST_1" max_group="608" hidden="true">
 			<text>Upgrade the Nobelium Flak Weapon</text>
 			<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_NOBELIUM_LIST_2"  max_group="608" hidden="true">
+		<choice req="FM_SHOTGUN_NOBELIUM_LIST_2" max_group="608" hidden="true">
 			<text>Upgrade the Nobelium Flak Weapon</text>
 			<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_NOBELIUM_LIST_3"  max_group="608" hidden="true">
+		<choice req="FM_SHOTGUN_NOBELIUM_LIST_3" max_group="608" hidden="true">
 			<text>Upgrade the Nobelium Flak Weapon</text>
 			<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_NOBELIUM_LIST_4"  max_group="608" hidden="true">
+		<choice req="FM_SHOTGUN_NOBELIUM_LIST_4" max_group="608" hidden="true">
 			<text>Upgrade the Nobelium Flak Weapon</text>
 			<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_NOBELIUM_LIST_5"  max_group="608" hidden="true">
+		<choice req="FM_SHOTGUN_NOBELIUM_LIST_5" max_group="608" hidden="true">
 			<text>Upgrade the Nobelium Flak Weapon</text>
 			<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_NOBELIUM_LIST_6"  max_group="608" hidden="true">
+		<choice req="FM_SHOTGUN_NOBELIUM_LIST_6" max_group="608" hidden="true">
 			<text>Upgrade the Nobelium Flak Weapon</text>
 			<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_NOBELIUM_LIST_7"  max_group="608" hidden="true">
+		<choice req="FM_SHOTGUN_NOBELIUM_LIST_7" max_group="608" hidden="true">
 			<text>Upgrade the Nobelium Flak Weapon</text>
 			<event load="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM"/>
 		</choice>
@@ -5161,7 +5161,7 @@
 	<event name="NPC_STORAGE_CHECK_UPGRADE_BRONZE">
 		<checkCargo/>
 		<text>Currently viewing the Bronze Flak</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Upgrade Bronze Flak using scrap?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -5203,7 +5203,7 @@
 	<event name="NPC_STORAGE_CHECK_UPGRADE_INDIUM">
 		<checkCargo/>
 		<text>Currently viewing the Indium Flak</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Upgrade Indium Flak using scrap?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -5245,7 +5245,7 @@
 	<event name="NPC_STORAGE_CHECK_UPGRADE_RHENIUM">
 		<checkCargo/>
 		<text>Currently viewing the Rhenium Flak</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Upgrade Rhenium Flak using scrap?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -5287,7 +5287,7 @@
 	<event name="NPC_STORAGE_CHECK_UPGRADE_SILVER">
 		<checkCargo/>
 		<text>Currently viewing the Silver Flak</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Upgrade Silver Flak using scrap?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -5329,7 +5329,7 @@
 	<event name="NPC_STORAGE_CHECK_UPGRADE_PALLADIUM">
 		<checkCargo/>
 		<text>Currently viewing the Palladium Flak.</text>
-		<choice hidden="false" req="CRYSTAL_BURST_1_RED" max_group="1"  blue="false">
+		<choice hidden="false" req="CRYSTAL_BURST_1_RED" max_group="1" blue="false">
 			<text>Upgrade Palladium Flak using scrap and Elite Crystal Burst I?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -5346,7 +5346,7 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="CRYSTAL_BURST_2_RED" max_group="2"  blue="false">
+		<choice hidden="false" req="CRYSTAL_BURST_2_RED" max_group="2" blue="false">
 			<text>Upgrade Palladium Flak using scrap and Elite Crystal Burst II?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -5363,7 +5363,7 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="CRYSTAL_HEAVY_1_RED" max_group="3"  blue="false">
+		<choice hidden="false" req="CRYSTAL_HEAVY_1_RED" max_group="3" blue="false">
 			<text>Upgrade Palladium Flak using scrap and Elite Heavy Crystal Mark I?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -5380,7 +5380,7 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="CRYSTAL_HEAVY_2_RED" max_group="4"  blue="false">
+		<choice hidden="false" req="CRYSTAL_HEAVY_2_RED" max_group="4" blue="false">
 			<text>Upgrade Palladium Flak using scrap and Elite Heavy Crystal Mark II?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -5397,7 +5397,7 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="CRYSTAL_STUN_RED" max_group="5"  blue="false">
+		<choice hidden="false" req="CRYSTAL_STUN_RED" max_group="5" blue="false">
 			<text>Upgrade Palladium Flak using scrap and Elite Neural Crystal</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -5414,7 +5414,7 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="CRYSTAL_SHOTGUN_RED" max_group="6"  blue="false">
+		<choice hidden="false" req="CRYSTAL_SHOTGUN_RED" max_group="6" blue="false">
 			<text>Upgrade Palladium Flak using scrap and Elite Crystal Scatter?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -5431,7 +5431,7 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="CRYSTAL_CHARGEGUN_RED" max_group="7"  blue="false">
+		<choice hidden="false" req="CRYSTAL_CHARGEGUN_RED" max_group="7" blue="false">
 			<text>Upgrade Palladium Flak using scrap and Elite Crystal Charger?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -5448,7 +5448,7 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="MINELAUNCHER_CRYSTAL" max_group="8"  blue="false">
+		<choice hidden="false" req="MINELAUNCHER_CRYSTAL" max_group="8" blue="false">
 			<text>Upgrade Palladium Flak using scrap and Shard Launcher?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -5489,7 +5489,7 @@
 	<event name="NPC_STORAGE_CHECK_UPGRADE_IRIDIUM">
 		<checkCargo/>
 		<text>Currently viewing the Iridium Flak</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Upgrade Iridium Flak using scrap?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -5531,7 +5531,7 @@
 	<event name="NPC_STORAGE_CHECK_UPGRADE_PLATINUM">
 		<checkCargo/>
 		<text>Currently viewing the Platinum Flak</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Upgrade Platinum Flak using scrap?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -5573,7 +5573,7 @@
 	<event name="NPC_STORAGE_CHECK_UPGRADE_OSMIUM">
 		<checkCargo/>
 		<text>Currently viewing the Osmium Flak</text>
-		<choice hidden="false"  blue="false">
+		<choice hidden="false" blue="false">
 			<text>Upgrade Osmium Flak using scrap?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -5615,7 +5615,7 @@
 	<event name="NPC_STORAGE_CHECK_UPGRADE_NOBELIUM">
 		<checkCargo/>
 		<text>Currently viewing the Nobelium Flak.</text>
-		<choice hidden="false" req="CRYSTAL_BURST_1_RED" max_group="1"  blue="false">
+		<choice hidden="false" req="CRYSTAL_BURST_1_RED" max_group="1" blue="false">
 			<text>Upgrade Nobelium Flak using scrap and Elite Crystal Burst I?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -5632,7 +5632,7 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="CRYSTAL_BURST_2_RED" max_group="2"  blue="false">
+		<choice hidden="false" req="CRYSTAL_BURST_2_RED" max_group="2" blue="false">
 			<text>Upgrade Nobelium Flak using scrap and Elite Crystal Burst II?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -5649,7 +5649,7 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="CRYSTAL_HEAVY_1_RED" max_group="3"  blue="false">
+		<choice hidden="false" req="CRYSTAL_HEAVY_1_RED" max_group="3" blue="false">
 			<text>Upgrade Nobelium Flak using scrap and Elite Heavy Crystal Mark I?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -5666,7 +5666,7 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="CRYSTAL_HEAVY_2_RED" max_group="4"  blue="false">
+		<choice hidden="false" req="CRYSTAL_HEAVY_2_RED" max_group="4" blue="false">
 			<text>Upgrade Nobelium Flak using scrap and Elite Heavy Crystal Mark II?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -5683,7 +5683,7 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="CRYSTAL_STUN_RED" max_group="5"  blue="false">
+		<choice hidden="false" req="CRYSTAL_STUN_RED" max_group="5" blue="false">
 			<text>Upgrade Nobelium Flak using scrap and Elite Neural Crystal?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -5700,7 +5700,7 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="CRYSTAL_SHOTGUN_RED" max_group="6"  blue="false">
+		<choice hidden="false" req="CRYSTAL_SHOTGUN_RED" max_group="6" blue="false">
 			<text>Upgrade Nobelium Flak using scrap and Elite Crystal Scatter?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -5717,7 +5717,7 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="CRYSTAL_CHARGEGUN_RED" max_group="7"  blue="false">
+		<choice hidden="false" req="CRYSTAL_CHARGEGUN_RED" max_group="7" blue="false">
 			<text>Upgrade Nobelium Flak using scrap and Elite Crystal Charger?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -5734,7 +5734,7 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="MINELAUNCHER_CRYSTAL" max_group="8"  blue="false">
+		<choice hidden="false" req="MINELAUNCHER_CRYSTAL" max_group="8" blue="false">
 			<text>Upgrade Nobelium Flak using scrap and Shard Launcher?</text> <!-- Cost symbol code. ~ == scrap, } == missiles, | == drones  Example: [Cost: 150~, 10}, 10|] is 150 scrap, 10 missiles, 10 drones-->
 			<event>
 				<text>...</text>
@@ -6307,265 +6307,265 @@
 			<text>Currently 20 upgrade notches in use..."Overcharmed V"</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-    <choice req="fm_hull_upgrade_points" lvl="21" max_lvl="21" max_group="2" blue="false" hidden="true">
-		   <text>Currently 21 upgrade notches in use..."Overcharmed VI"</text>
-		   <event load="OPTION_INVALID"/>
+		<choice req="fm_hull_upgrade_points" lvl="21" max_lvl="21" max_group="2" blue="false" hidden="true">
+			<text>Currently 21 upgrade notches in use..."Overcharmed VI"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="22" max_lvl="22" max_group="2" blue="false" hidden="true">
-		  <text>Currently 22 upgrade notches in use..."Overcharmed VII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 22 upgrade notches in use..."Overcharmed VII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="23" max_lvl="23" max_group="2" blue="false" hidden="true">
-		  <text>Currently 23 upgrade notches in use..."Overcharmed VIII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 23 upgrade notches in use..."Overcharmed VIII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="24" max_lvl="24" max_group="2" blue="false" hidden="true">
-		  <text>Currently 24 upgrade notches in use..."Overcharmed IX"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 24 upgrade notches in use..."Overcharmed IX"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="25" max_lvl="25" max_group="2" blue="false" hidden="true">
-		  <text>Currently 25 upgrade notches in use..."Overcharmed X"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 25 upgrade notches in use..."Overcharmed X"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="26" max_lvl="26" max_group="2" blue="false" hidden="true">
-		  <text>Currently 26 upgrade notches in use..."overcharmed XI"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 26 upgrade notches in use..."overcharmed XI"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="27" max_lvl="27" max_group="2" blue="false" hidden="true">
-		  <text>Currently 27 upgrade notches in use..."overcharmed XII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 27 upgrade notches in use..."overcharmed XII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="28" max_lvl="28" max_group="2" blue="false" hidden="true">
-		  <text>Currently 28 upgrade notches in use..."overcharmed XIII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 28 upgrade notches in use..."overcharmed XIII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="29" max_lvl="29" max_group="2" blue="false" hidden="true">
-		  <text>Currently 29 upgrade notches in use..."overcharmed XIV"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 29 upgrade notches in use..."overcharmed XIV"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="30" max_lvl="30" max_group="2" blue="false" hidden="true">
-		  <text>Currently 30 upgrade notches in use..."overcharmed XV"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 30 upgrade notches in use..."overcharmed XV"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="31" max_lvl="31" max_group="2" blue="false" hidden="true">
-		  <text>Currently 31 upgrade notches in use..."overcharmed XVI"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 31 upgrade notches in use..."overcharmed XVI"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="32" max_lvl="32" max_group="2" blue="false" hidden="true">
-		  <text>Currently 32 upgrade notches in use..."overcharmed XVII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 32 upgrade notches in use..."overcharmed XVII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="33" max_lvl="33" max_group="2" blue="false" hidden="true">
-		  <text>Currently 33 upgrade notches in use..."overcharmed XVIII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 33 upgrade notches in use..."overcharmed XVIII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="34" max_lvl="34" max_group="2" blue="false" hidden="true">
-		  <text>Currently 34 upgrade notches in use..."overcharmed XIX"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 34 upgrade notches in use..."overcharmed XIX"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="35" max_lvl="35" max_group="2" blue="false" hidden="true">
-		  <text>Currently 35 upgrade notches in use..."overcharmed XX"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 35 upgrade notches in use..."overcharmed XX"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="36" max_lvl="36" max_group="2" blue="false" hidden="true">
-		  <text>Currently 36 upgrade notches in use..."overcharmed XXI"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 36 upgrade notches in use..."overcharmed XXI"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="37" max_lvl="37" max_group="2" blue="false" hidden="true">
-		  <text>Currently 37 upgrade notches in use..."overcharmed XXII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 37 upgrade notches in use..."overcharmed XXII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="38" max_lvl="38" max_group="2" blue="false" hidden="true">
-		  <text>Currently 38 upgrade notches in use..."overcharmed XXIII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 38 upgrade notches in use..."overcharmed XXIII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="39" max_lvl="39" max_group="2" blue="false" hidden="true">
-		  <text>Currently 39 upgrade notches in use..."overcharmed XXIV"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 39 upgrade notches in use..."overcharmed XXIV"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="40" max_lvl="40" max_group="2" blue="false" hidden="true">
-		  <text>Currently 40 upgrade notches in use..."overcharmed XXV"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 40 upgrade notches in use..."overcharmed XXV"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="41" max_lvl="41" max_group="2" blue="false" hidden="true">
-		  <text>Currently 41 upgrade notches in use..."overcharmed XXVI"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 41 upgrade notches in use..."overcharmed XXVI"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="42" max_lvl="42" max_group="2" blue="false" hidden="true">
-		  <text>Currently 42 upgrade notches in use..."overcharmed XXVII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 42 upgrade notches in use..."overcharmed XXVII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="43" max_lvl="43" max_group="2" blue="false" hidden="true">
-		  <text>Currently 43 upgrade notches in use..."overcharmed XXVIII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 43 upgrade notches in use..."overcharmed XXVIII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="44" max_lvl="44" max_group="2" blue="false" hidden="true">
-		  <text>Currently 44 upgrade notches in use..."overcharmed XXIX"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 44 upgrade notches in use..."overcharmed XXIX"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="45" max_lvl="45" max_group="2" blue="false" hidden="true">
-		  <text>Currently 45 upgrade notches in use..."overcharmed XXX"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 45 upgrade notches in use..."overcharmed XXX"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="46" max_lvl="46" max_group="2" blue="false" hidden="true">
-		  <text>Currently 46 upgrade notches in use..."overcharmed XXXI"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 46 upgrade notches in use..."overcharmed XXXI"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="47" max_lvl="47" max_group="2" blue="false" hidden="true">
-		  <text>Currently 47 upgrade notches in use..."overcharmed XXXII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 47 upgrade notches in use..."overcharmed XXXII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="48" max_lvl="48" max_group="2" blue="false" hidden="true">
-		  <text>Currently 48 upgrade notches in use..."overcharmed XXXIII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 48 upgrade notches in use..."overcharmed XXXIII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="49" max_lvl="49" max_group="2" blue="false" hidden="true">
-		  <text>Currently 49 upgrade notches in use..."overcharmed XXXIV"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 49 upgrade notches in use..."overcharmed XXXIV"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="50" max_lvl="50" max_group="2" blue="false" hidden="true">
-		  <text>Currently 50 upgrade notches in use..."overcharmed XXXV"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 50 upgrade notches in use..."overcharmed XXXV"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="51" max_lvl="51" max_group="2" blue="false" hidden="true">
-		  <text>Currently 51 upgrade notches in use..."overcharmed XXXVI"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 51 upgrade notches in use..."overcharmed XXXVI"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="52" max_lvl="52" max_group="2" blue="false" hidden="true">
-		  <text>Currently 52 upgrade notches in use..."overcharmed XXXVII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 52 upgrade notches in use..."overcharmed XXXVII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="53" max_lvl="53" max_group="2" blue="false" hidden="true">
-		  <text>Currently 53 upgrade notches in use..."overcharmed XXXVIII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 53 upgrade notches in use..."overcharmed XXXVIII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="54" max_lvl="54" max_group="2" blue="false" hidden="true">
-		  <text>Currently 54 upgrade notches in use..."overcharmed XXXIX"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 54 upgrade notches in use..."overcharmed XXXIX"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="55" max_lvl="55" max_group="2" blue="false" hidden="true">
-		  <text>Currently 55 upgrade notches in use..."overcharmed XL"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 55 upgrade notches in use..."overcharmed XL"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="56" max_lvl="56" max_group="2" blue="false" hidden="true">
-		  <text>Currently 56 upgrade notches in use..."overcharmed XLI"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 56 upgrade notches in use..."overcharmed XLI"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="57" max_lvl="57" max_group="2" blue="false" hidden="true">
-		  <text>Currently 57 upgrade notches in use..."overcharmed XLII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 57 upgrade notches in use..."overcharmed XLII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="58" max_lvl="58" max_group="2" blue="false" hidden="true">
-		  <text>Currently 58 upgrade notches in use..."overcharmed XLIII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 58 upgrade notches in use..."overcharmed XLIII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="59" max_lvl="59" max_group="2" blue="false" hidden="true">
-		  <text>Currently 59 upgrade notches in use..."overcharmed XLIV"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 59 upgrade notches in use..."overcharmed XLIV"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="60" max_lvl="60" max_group="2" blue="false" hidden="true">
-		  <text>Currently 60 upgrade notches in use..."overcharmed XLV"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 60 upgrade notches in use..."overcharmed XLV"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="61" max_lvl="61" max_group="2" blue="false" hidden="true">
-		  <text>Currently 61 upgrade notches in use..."overcharmed XLVI"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 61 upgrade notches in use..."overcharmed XLVI"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="62" max_lvl="62" max_group="2" blue="false" hidden="true">
-		  <text>Currently 62 upgrade notches in use..."overcharmed XLVII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 62 upgrade notches in use..."overcharmed XLVII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="63" max_lvl="63" max_group="2" blue="false" hidden="true">
-		  <text>Currently 63 upgrade notches in use..."overcharmed XLVIII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 63 upgrade notches in use..."overcharmed XLVIII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="64" max_lvl="64" max_group="2" blue="false" hidden="true">
-		  <text>Currently 64 upgrade notches in use..."overcharmed XLIX"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 64 upgrade notches in use..."overcharmed XLIX"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="65" max_lvl="65" max_group="2" blue="false" hidden="true">
-		  <text>Currently 65 upgrade notches in use..."overcharmed L"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 65 upgrade notches in use..."overcharmed L"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="66" max_lvl="66" max_group="2" blue="false" hidden="true">
-		  <text>Currently 66 upgrade notches in use..."overcharmed LI"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 66 upgrade notches in use..."overcharmed LI"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="67" max_lvl="67" max_group="2" blue="false" hidden="true">
-		  <text>Currently 67 upgrade notches in use..."overcharmed LII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 67 upgrade notches in use..."overcharmed LII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="68" max_lvl="68" max_group="2" blue="false" hidden="true">
-		  <text>Currently 68 upgrade notches in use..."overcharmed LIII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 68 upgrade notches in use..."overcharmed LIII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="69" max_lvl="69" max_group="2" blue="false" hidden="true">
-		  <text>Currently 69 upgrade notches in use..."overcharmed LIV"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 69 upgrade notches in use..."overcharmed LIV"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="70" max_lvl="70" max_group="2" blue="false" hidden="true">
-		  <text>Currently 70 upgrade notches in use..."overcharmed LV"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 70 upgrade notches in use..."overcharmed LV"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="71" max_lvl="71" max_group="2" blue="false" hidden="true">
-		  <text>Currently 71 upgrade notches in use..."overcharmed LVI"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 71 upgrade notches in use..."overcharmed LVI"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="72" max_lvl="72" max_group="2" blue="false" hidden="true">
-		  <text>Currently 72 upgrade notches in use..."overcharmed LVII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 72 upgrade notches in use..."overcharmed LVII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="73" max_lvl="73" max_group="2" blue="false" hidden="true">
-		  <text>Currently 73 upgrade notches in use..."overcharmed LVIII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 73 upgrade notches in use..."overcharmed LVIII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="74" max_lvl="74" max_group="2" blue="false" hidden="true">
-		  <text>Currently 74 upgrade notches in use..."overcharmed LIX"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 74 upgrade notches in use..."overcharmed LIX"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="75" max_lvl="75" max_group="2" blue="false" hidden="true">
-		  <text>Currently 75 upgrade notches in use..."overcharmed LX"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 75 upgrade notches in use..."overcharmed LX"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="76" max_lvl="76" max_group="2" blue="false" hidden="true">
-		  <text>Currently 76 upgrade notches in use..."overcharmed LXI"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 76 upgrade notches in use..."overcharmed LXI"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="77" max_lvl="77" max_group="2" blue="false" hidden="true">
-		  <text>Currently 77 upgrade notches in use..."overcharmed LXII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 77 upgrade notches in use..."overcharmed LXII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="78" max_lvl="78" max_group="2" blue="false" hidden="true">
-		  <text>Currently 78 upgrade notches in use..."overcharmed LXIII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 78 upgrade notches in use..."overcharmed LXIII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="79" max_lvl="79" max_group="2" blue="false" hidden="true">
-		  <text>Currently 79 upgrade notches in use..."overcharmed LXIV"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 79 upgrade notches in use..."overcharmed LXIV"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="80" max_lvl="80" max_group="2" blue="false" hidden="true">
-		  <text>Currently 80 upgrade notches in use..."overcharmed LXV"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 80 upgrade notches in use..."overcharmed LXV"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="81" max_lvl="81" max_group="2" blue="false" hidden="true">
-		  <text>Currently 81 upgrade notches in use..."overcharmed LXVI"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 81 upgrade notches in use..."overcharmed LXVI"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="82" max_lvl="82" max_group="2" blue="false" hidden="true">
-		  <text>Currently 82 upgrade notches in use..."overcharmed LXVII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 82 upgrade notches in use..."overcharmed LXVII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="83" max_lvl="83" max_group="2" blue="false" hidden="true">
-		  <text>Currently 83 upgrade notches in use..."overcharmed LXVIII"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 83 upgrade notches in use..."overcharmed LXVIII"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="84" max_lvl="84" max_group="2" blue="false" hidden="true">
-		  <text>Currently 84 upgrade notches in use..."overcharmed LXIX"</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 84 upgrade notches in use..."overcharmed LXIX"</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="fm_hull_upgrade_points" lvl="85" max_lvl="85" max_group="2" blue="false" hidden="true">
-		  <text>Currently 85 upgrade notches in use... game over man, game over!</text>
-		  <event load="OPTION_INVALID"/>
+			<text>Currently 85 upgrade notches in use... game over man, game over!</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 
 		<!--Ship modules-->
@@ -6819,7 +6819,7 @@
 				<loadEvent>FM_MODULAR_HULL_MODULE_AERO</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_AERO" lvl="5" max_group="7" blue="false"  hidden="true">
+		<choice req="FM_MODULAR_HULL_AERO" lvl="5" max_group="7" blue="false" hidden="true">
 			<text>Inspirational Aerosols Module [MAXED]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -6829,7 +6829,7 @@
 				<loadEvent>FM_MODULAR_HULL_MODULE_RESPIRATION</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_RESPIRATION" max_group="8" blue="false"  hidden="true">
+		<choice req="FM_MODULAR_HULL_RESPIRATION" max_group="8" blue="false" hidden="true">
 			<text>Enhanced Respiration Grid Module [MAXED]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -7173,85 +7173,85 @@
 	<!--system module installation-->
 	<event name="FM_MODULAR_HULL_MODULES_SYSTEMS">
 		<text>Here you can select the system you want to install modules to.</text>
-		<choice req="weapons"  blue="false">
+		<choice req="weapons" blue="false">
 			<text>The Weapons.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_WEAPONS</loadEvent>
 			</event>
 		</choice>
-		<choice req="shields"  blue="false">
+		<choice req="shields" blue="false">
 			<text>The Shields.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_SHIELDS</loadEvent>
 			</event>
 		</choice>
-		<choice req="engines"  blue="false">
+		<choice req="engines" blue="false">
 			<text>The Engines.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_ENGINES</loadEvent>
 			</event>
 		</choice>
-		<choice req="medbay"  blue="false">
+		<choice req="medbay" blue="false">
 			<text>The Medbay.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_MED</loadEvent>
 			</event>
 		</choice>
-		<choice req="clonebay"  blue="false">
+		<choice req="clonebay" blue="false">
 			<text>The Clonebay.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_MED</loadEvent>
 			</event>
 		</choice>
-		<choice req="drones"  blue="false">
+		<choice req="drones" blue="false">
 			<text>The Drones.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_DRONES</loadEvent>
 			</event>
 		</choice>
-		<choice req="oxygen"  blue="false">
+		<choice req="oxygen" blue="false">
 			<text>The Oxygen.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_OXYGEN</loadEvent>
 			</event>
 		</choice>
-		<choice req="teleporter"  blue="false">
+		<choice req="teleporter" blue="false">
 			<text>The Teleporter.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_TELEPORTER</loadEvent>
 			</event>
 		</choice>
-		<choice req="cloaking"  blue="false">
+		<choice req="cloaking" blue="false">
 			<text>The Cloaking.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_CLOAKING</loadEvent>
 			</event>
 		</choice>
-		<choice req="artillery"  blue="false">
+		<choice req="artillery" blue="false">
 			<text>The Artillery.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_ARTILLERY</loadEvent>
 			</event>
 		</choice>
-		<choice req="hacking"  blue="false">
+		<choice req="hacking" blue="false">
 			<text>The Hacking.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_HACKING</loadEvent>
 			</event>
 		</choice>
-		<choice req="mind"  blue="false">
+		<choice req="mind" blue="false">
 			<text>The Mind Control.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_MIND</loadEvent>
 			</event>
 		</choice>
-		<choice req="temporal"  blue="false">
+		<choice req="temporal" blue="false">
 			<text>The Temporal Manipulator.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_TEMPORAL</loadEvent>
 			</event>
 		</choice>
-		<choice req="pilot"  blue="false">
+		<choice req="pilot" blue="false">
 			<text>The Piloting.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_PILOT</loadEvent>
@@ -7269,7 +7269,7 @@
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_DOORS</loadEvent>
 			</event>
 		</choice>
-		<choice req="battery"  blue="false">
+		<choice req="battery" blue="false">
 			<text>The Battery.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_SYSTEM_BATTERY</loadEvent>
@@ -8628,113 +8628,113 @@
 	<!--capstone stuff-->
 	<event name="FM_MODULAR_HULL_CAPSTONE">
 		<text>Here you can see the capstone modules you can install, 3 can be installed in total, upon reaching 5, 10 and 15 upgrade notches (you can select the option to see the effects before installing)</text>
-		<choice req="FM_MODULAR_HULL_SALT" lvl="0" max_lvl="0"  blue="false">
+		<choice req="FM_MODULAR_HULL_SALT" lvl="0" max_lvl="0" blue="false">
 			<text>Saline Hull Body Capstone [150~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_SALT</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_SALT" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_SALT" lvl="1" blue="false" hidden="true">
 			<text>Saline Hull Body Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_DUSK" lvl="0" max_lvl="0"  blue="false">
+		<choice req="FM_MODULAR_HULL_DUSK" lvl="0" max_lvl="0" blue="false">
 			<text>Depricated Duskbringer Reactor Capstone [110~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_DUSK</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_DUSK" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_DUSK" lvl="1" blue="false" hidden="true">
 			<text>Depricated Duskbringer Reactor Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_MURAL" lvl="0" max_lvl="0"  blue="false">
+		<choice req="FM_MODULAR_HULL_MURAL" lvl="0" max_lvl="0" blue="false">
 			<text>Aftermarket Hull Murals Capstone [85~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_MURAL</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_MURAL" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_MURAL" lvl="1" blue="false" hidden="true">
 			<text>Aftermarket Hull Murals Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_COMPRESS" lvl="0" max_lvl="0"  blue="false">
+		<choice req="FM_MODULAR_HULL_COMPRESS" lvl="0" max_lvl="0" blue="false">
 			<text>Compressor Bypass Manifold Capstone [80~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_COMPRESS</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_COMPRESS" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_COMPRESS" lvl="1" blue="false" hidden="true">
 			<text>Compressor Bypass Manifold Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_PARTICLE" lvl="0" max_lvl="0"  blue="false">
+		<choice req="FM_MODULAR_HULL_PARTICLE" lvl="0" max_lvl="0" blue="false">
 			<text>Particlized Shields Capstone [100~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_PARTICLE</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_PARTICLE" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_PARTICLE" lvl="1" blue="false" hidden="true">
 			<text>Particlized Shields Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPLINK" lvl="0" max_lvl="0"  blue="false">
+		<choice req="FM_MODULAR_HULL_UPLINK" lvl="0" max_lvl="0" blue="false">
 			<text>Weapon Uplink Matrices Capstone [95~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_UPLINK</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPLINK" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPLINK" lvl="1" blue="false" hidden="true">
 			<text>Weapon Uplink Matrices Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_PERFECT" lvl="0" max_lvl="0"  blue="false">
+		<choice req="FM_MODULAR_HULL_PERFECT" lvl="0" max_lvl="0" blue="false">
 			<text>Perfect Onboard Efficency Capstone [140~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_PERFECT</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_PERFECT" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_PERFECT" lvl="1" blue="false" hidden="true">
 			<text>Perfect Onboard Efficency Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FASTSHIELD" lvl="0" max_lvl="0"  blue="false">
+		<choice req="FM_MODULAR_HULL_FASTSHIELD" lvl="0" max_lvl="0" blue="false">
 			<text>Infinitum Cyclo-Barrier Capstone [80~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_FASTSHIELD</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FASTSHIELD" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FASTSHIELD" lvl="1" blue="false" hidden="true">
 			<text>Infinitum Cyclo-Barrier Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FASTWEAPON" lvl="0" max_lvl="0"  blue="false">
+		<choice req="FM_MODULAR_HULL_FASTWEAPON" lvl="0" max_lvl="0" blue="false">
 			<text>Infinitum Cyclo-Arsenal Capstone [120~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_FASTWEAPON</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FASTWEAPON" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FASTWEAPON" lvl="1" blue="false" hidden="true">
 			<text>Infinitum Cyclo-Arsenal Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_CREWKILL" lvl="0" max_lvl="0"  blue="false">
+		<choice req="FM_MODULAR_HULL_CREWKILL" lvl="0" max_lvl="0" blue="false">
 			<text>Metaplasmatic Corrosion Aura Capstone [105~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_CREWKILL</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_CREWKILL" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_CREWKILL" lvl="1" blue="false" hidden="true">
 			<text>Metaplasmatic Corrosion Aura Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_MAGNETIC" lvl="0" max_lvl="0"  blue="false">
+		<choice req="FM_MODULAR_HULL_MAGNETIC" lvl="0" max_lvl="0" blue="false">
 			<text>Electromagnetic Hull Body Capstone [100~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_MAGNETIC</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_MAGNETIC" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_MAGNETIC" lvl="1" blue="false" hidden="true">
 			<text>Electromagnetic Hull Body Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -8959,11 +8959,11 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_CAPSTONE_FASTWEAPON">
-		<text>Install Infinitum Cyclo-Arsenal? [for every unpowered bar of the weapon system +10% weapon reload, -5% weapon reload](can't be installed to ships with artillery)</text>
-		<choice req="artillery" lvl="1" max_group="1" blue="false" hidden="true">
+		<text>Install Infinitum Cyclo-Arsenal? [for every unpowered bar of the weapon system +15% weapon reload speed, -5% weapon reload speed]</text>
+		<!--<choice req="artillery" lvl="1" max_group="1" blue="false" hidden="true">
 			<text>you can't install the Infinitum Cyclo-Arsenal, you have an artillery system.</text>
 			<event load="OPTION_INVALID"/>
-		</choice>
+		</choice>-->
 		<choice req="weapons" lvl="0" max_group="1" blue="false" hidden="true">
 			<text>you can't install the Infinitum Cyclo-Arsenal, you need a weapon system to draw power from</text>
 			<event load="OPTION_INVALID"/>
@@ -9055,128 +9055,128 @@
 			</event>
 		</choice>
 		<!--capstones-->
-		<choice req="FM_MODULAR_HULL_SALT"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_SALT" blue="false" hidden="true">
 			<text>Saline Hull Body[+100% ion resist chance, ALL organic crew take -0.5hp/s]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_DUSK"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_DUSK" blue="false" hidden="true">
 			<text>Depricated Duskbringer Reactor[+20% reload/shield recharge, -20% all beneficial crew stats, +20% damage taken]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_MURAL"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_MURAL" blue="false" hidden="true">
 			<text>Aftermarket Hull Murals[all beneficial crew stats +30%, 50% chance to take 1 dmg when hit]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_COMPRESS"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_COMPRESS" blue="false" hidden="true">
 			<text>Compressor Bypass Manifold[+30% weapon reload, -60% shield recharge]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_PARTICLE"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_PARTICLE" blue="false" hidden="true">
 			<text>Particlized Shields[+8zs, -50% shield recharge]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPLINK"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPLINK" blue="false" hidden="true">
 			<text>Weapon Uplink Matrices[-40% weapon reload, +25% crew dmg and -5% crew dmg per weapon power]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_PERFECT"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_PERFECT" blue="false" hidden="true">
 			<text>Perfect Onboard Efficency[+5% reload speed/shield recharge, +5% to all crew stats]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FASTSHIELD"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FASTSHIELD" blue="false" hidden="true">
 			<text>Infinitum Cyclo-Barrier[+800% shield recharge, 4 max shield power, no manning]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FASTWEAPON"  blue="false" hidden="true">
-			<text>Infinitum Cyclo-Arsenal[+10% reload per unused weapon power, -5% reload]</text>
+		<choice req="FM_MODULAR_HULL_FASTWEAPON" blue="false" hidden="true">
+			<text>Infinitum Cyclo-Arsenal[+15% reload speed per unused weapon power, but -5% reload speed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_CREWKILL"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_CREWKILL" blue="false" hidden="true">
 			<text>Metaplasmatic Corrosion Aura[enemy crew takes x3 damage from everything, but only 50% from combat]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_MAGNETIC"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_MAGNETIC" blue="false" hidden="true">
 			<text>Electromagnetic Hull Body [+80% ion res, +10% sys res, +10% scrap, scrap magnet effect, -3 reactor]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<!--Fortified-->
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="1" max_lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="1" max_lvl="1" blue="false" hidden="true">
 			<text>Fortified Plating Module [+5% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="2" max_lvl="2"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="2" max_lvl="2" blue="false" hidden="true">
 			<text>Fortified Plating Module(x2) [+10% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="3" max_lvl="3"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="3" max_lvl="3" blue="false" hidden="true">
 			<text>Fortified Plating Module(x3) [+15% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="4" max_lvl="4"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="4" max_lvl="4" blue="false" hidden="true">
 			<text>Fortified Plating Module(x4) [+20% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="5" max_lvl="5"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="5" max_lvl="5" blue="false" hidden="true">
 			<text>Fortified Plating Module(x5) [+25% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="6" max_lvl="6"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="6" max_lvl="6" blue="false" hidden="true">
 			<text>Fortified Plating Module(x6) [+30% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="7" max_lvl="7"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="7" max_lvl="7" blue="false" hidden="true">
 			<text>Fortified Plating Module(x7) [+35% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="8" max_lvl="8"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="8" max_lvl="8" blue="false" hidden="true">
 			<text>Fortified Plating Module(x8) [+40% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="9" max_lvl="9"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="9" max_lvl="9" blue="false" hidden="true">
 			<text>Fortified Plating Module(x9) [+45% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="10" max_lvl="10"   blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="10" max_lvl="10" blue="false" hidden="true">
 			<text>Fortified Plating Module(x10) [+50% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="11" max_lvl="11"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="11" max_lvl="11" blue="false" hidden="true">
 			<text>Fortified Plating Module(x11) [+55% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="12" max_lvl="12"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="12" max_lvl="12" blue="false" hidden="true">
 			<text>Fortified Plating Module(x12) [+60% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="13" max_lvl="13"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="13" max_lvl="13" blue="false" hidden="true">
 			<text>Fortified Plating Module(x13) [+65% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="14" max_lvl="14"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="14" max_lvl="14" blue="false" hidden="true">
 			<text>Fortified Plating Module(x14) [+70% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="15" max_lvl="15"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="15" max_lvl="15" blue="false" hidden="true">
 			<text>Fortified Plating Module(x15) [+75% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="16" max_lvl="16"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="16" max_lvl="16" blue="false" hidden="true">
 			<text>Fortified Plating Module(x16) [+80% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="17" max_lvl="17"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="17" max_lvl="17" blue="false" hidden="true">
 			<text>Fortified Plating Module(x17) [+85% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="18" max_lvl="18"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="18" max_lvl="18" blue="false" hidden="true">
 			<text>Fortified Plating Module(x18) [+90% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="19" max_lvl="19"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="19" max_lvl="19" blue="false" hidden="true">
 			<text>Fortified Plating Module(x19) [+95% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="20" max_lvl="20"   blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FORTIFIED" lvl="20" max_lvl="20" blue="false" hidden="true">
 			<text>Fortified Plating Module(x20) [+100% hull resist]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -9390,7 +9390,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<!--Respiration-->
-		<choice req="FM_MODULAR_HULL_RESPIRATION" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_RESPIRATION" lvl="1" blue="false" hidden="true">
 			<text>Enhanced Respiration Grid Module [on ship: x0.8 suffocation, scales multiplicatively with o2 power.]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -9528,7 +9528,7 @@
 			<text>Prismatic Hullguard Cultivator(x30) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="31"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_VENGEANCE1" lvl="31" blue="false" hidden="true">
 			<text>Prismatic Hullguard Cultivator(x31+) [60% 2 laser vengeance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -9651,149 +9651,149 @@
 
 
 		<!--system Update-->
-		<choice req="FM_MODULAR_HULL_UPDATE_WEAPONS" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_WEAPONS" lvl="1" blue="false" hidden="true">
 			<text>System Update Module (Weapons) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_SHIELDS" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_SHIELDS" lvl="1" blue="false" hidden="true">
 			<text>System Update Module (Shields) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_ENGINES" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_ENGINES" lvl="1" blue="false" hidden="true">
 			<text>System Update Module (Engines) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_MED" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_MED" lvl="1" blue="false" hidden="true">
 			<text>System Update Module (Medical) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_DRONES" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_DRONES" lvl="1" blue="false" hidden="true">
 			<text>System Update Module (Drones) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_OXYGEN" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_OXYGEN" lvl="1" blue="false" hidden="true">
 			<text>System Update Module (Oxygen) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_TELEPORTER" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_TELEPORTER" lvl="1" blue="false" hidden="true">
 			<text>System Update Module (Teleporter) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_CLOAKING" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_CLOAKING" lvl="1" blue="false" hidden="true">
 			<text>System Update Module (Cloaking) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_ARTILLERY" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_ARTILLERY" lvl="1" blue="false" hidden="true">
 			<text>System Update Module (Artillery) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_HACKING" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_HACKING" lvl="1" blue="false" hidden="true">
 			<text>System Update Module (Hacking) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_MIND" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_MIND" lvl="1" blue="false" hidden="true">
 			<text>System Update Module (Mind Control) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_TEMPORAL" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_TEMPORAL" lvl="1" blue="false" hidden="true">
 			<text>System Update Module (Temporal Manipulator) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_PILOT" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_PILOT" lvl="1" blue="false" hidden="true">
 			<text>System Update Module (Piloting) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_SENSORS" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_SENSORS" lvl="1" blue="false" hidden="true">
 			<text>System Update Module (Sensors) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_DOORS" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_DOORS" lvl="1" blue="false" hidden="true">
 			<text>System Update Module (Doors) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_UPDATE_BATTERY" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_UPDATE_BATTERY" lvl="1" blue="false" hidden="true">
 			<text>System Update Module (Battery) [+40% repair, -40% sabotage]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<!--Micro-Turret-->
-		<choice req="FM_MODULAR_HULL_TURRET_WEAPONS" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_WEAPONS" lvl="1" blue="false" hidden="true">
 			<text>Micro-Turret Integration Module (Weapons) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_SHIELDS" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_SHIELDS" lvl="1" blue="false" hidden="true">
 			<text>Micro-Turret Integration Module (Shields) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_ENGINES" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_ENGINES" lvl="1" blue="false" hidden="true">
 			<text>Micro-Turret Integration Module (Engines) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_MED" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_MED" lvl="1" blue="false" hidden="true">
 			<text>Micro-Turret Integration Module (Medical) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_DRONES" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_DRONES" lvl="1" blue="false" hidden="true">
 			<text>Micro-Turret Integration Module (Drones) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_OXYGEN" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_OXYGEN" lvl="1" blue="false" hidden="true">
 			<text>Micro-Turret Integration Module (Oxygen) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_TELEPORTER" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_TELEPORTER" lvl="1" blue="false" hidden="true">
 			<text>Micro-Turret Integration Module (Teleporter) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_CLOAKING" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_CLOAKING" lvl="1" blue="false" hidden="true">
 			<text>Micro-Turret Integration Module (Cloaking) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_ARTILLERY" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_ARTILLERY" lvl="1" blue="false" hidden="true">
 			<text>Micro-Turret Integration Module (Artillery) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_HACKING" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_HACKING" lvl="1" blue="false" hidden="true">
 			<text>Micro-Turret Integration Module (Hacking) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_MIND" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_MIND" lvl="1" blue="false" hidden="true">
 			<text>Micro-Turret Integration Module (Mind Control) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_TEMPORAL" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_TEMPORAL" lvl="1" blue="false" hidden="true">
 			<text>Micro-Turret Integration Module (Temporal Manipulator) [7dps in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_PILOT" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_PILOT" lvl="1" blue="false" hidden="true">
 			<text>Micro-Turret Integration Module (Piloting) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_SENSORS" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_SENSORS" lvl="1" blue="false" hidden="true">
 			<text>Micro-Turret Integration Module (Sensors) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_DOORS" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_DOORS" lvl="1" blue="false" hidden="true">
 			<text>Micro-Turret Integration Module (Doors) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TURRET_BATTERY" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TURRET_BATTERY" lvl="1" blue="false" hidden="true">
 			<text>Micro-Turret Integration Module (Battery) [-7hp/s in system]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<choice req="FM_MODULAR_HULL_CLOAK_COOLDOWN" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_CLOAK_COOLDOWN" lvl="1" blue="false" hidden="true">
 			<text>System Cooldown Module (Cloaking) [-5s system cooldown]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_HACK_COOLDOWN" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_HACK_COOLDOWN" lvl="1" blue="false" hidden="true">
 			<text>System Cooldown Module (Hacking) [-5s system cooldown]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_MIND_COOLDOWN" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_MIND_COOLDOWN" lvl="1" blue="false" hidden="true">
 			<text>System Cooldown Module (Mind Control) [-5s system cooldown]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_TEMPORAL_COOLDOWN" lvl="1"  blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_TEMPORAL_COOLDOWN" lvl="1" blue="false" hidden="true">
 			<text>System Cooldown Module (Temporal Manipulator) [-5s system cooldown]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -9858,9 +9858,9 @@
 					You receive a second hail right after, from the black and red Clairvoyant vessel. "Ssstand aside, Federation. He owesss usss every lassst ssscrap!"
 				</text>
 				<choice hidden="true">
-					<text>Aid Winchester. </text>
+					<text>Aid Winchester.</text>
 					<event>
-						<text>You attack the Clairvoyant Debt Collector ship head on. "You basstard, you'll pay for this. God I hate the Federation ssso much."  </text>
+						<text>You attack the Clairvoyant Debt Collector ship head on. "You basstard, you'll pay for this. God I hate the Federation ssso much."</text>
 						<ship load="SHIP_CLAIRVOYANT_DEBTCOLLECT" hostile="true"/>
 						<choice hidden="true">
 							<text>Continue...</text>
@@ -9871,16 +9871,16 @@
 				<choice hidden="true">
 					<text>Aid the Clairvoyant Debt Collectors.</text>
 					<event>
-						<text>Why would you ever support a ship that looks THAT ridiculous?! You decide to aid the debt collectors, Winchester had it coming. You fire a warning shot at the bizarre ship. You are hailed by a pair of black and white Engis immediately. "Ceasefire suggested. Winchester is a good Mantis, just mislead by their passion for engineering. Winchester = Friend. Winchester =/= Foe. Proposition: If you change your mind, one of us will accompany you as thanks. </text>
+						<text>Why would you ever support a ship that looks THAT ridiculous?! You decide to aid the debt collectors, Winchester had it coming. You fire a warning shot at the bizarre ship. You are hailed by a pair of black and white Engis immediately. "Ceasefire suggested. Winchester is a good Mantis, just mislead by their passion for engineering. Winchester = Friend. Winchester =/= Foe. Proposition: If you change your mind, one of us will accompany you as thanks.</text>
 						<choice hidden="true">
-							<text>Accept their offer to turn on the Clairvoyant vessel. </text>
+							<text>Accept their offer to turn on the Clairvoyant vessel.</text>
 							<event load="FM_QUEST_GUNBOM_TWINS"/>
 						</choice>
 
 						<choice hidden="true">
 							<text>Stick to your word, shouldn't have gotten into debt in the first place.</text>
 							<event>
-								<text> The pair of Engis look very disappointed. "You = cruel. Disgust us. Initiating protocol: Defend best friend." </text>
+								<text> The pair of Engis look very disappointed. "You = cruel. Disgust us. Initiating protocol: Defend best friend."</text>
 								<ship load="SHIP_FM_GUNHYDRA_ENEMY" hostile="true"/>
 								<status type="limit" target="enemy" system="drones" amount="7"/>
 								<choice hidden="true">
@@ -9892,9 +9892,9 @@
 					</event>
 				</choice>
 				<choice hidden="true" req="SHIP_GUNBOM">
-					<text>(Gunbom) Hail them </text>
+					<text>(Gunbom) Hail them</text>
 					<event>
-						<text>Winchester responds first "How? Are you a fan of my work??" The Clairvoyants appear to be confused "T-two? To helll with it, kill them both, just more bounty for us!" </text>
+						<text>Winchester responds first "How? Are you a fan of my work??" The Clairvoyants appear to be confused "T-two? To helll with it, kill them both, just more bounty for us!"</text>
 						<ship load="SHIP_CLAIRVOYANT_DEBTCOLLECT" hostile="true"/>
 						<choice hidden="true">
 							<text>Continue...</text>
@@ -9948,7 +9948,7 @@
 	<eventList name="FM_QUEST_GUNBOM_TWINS">
 		<event>
 			<crewMember amount="1" class="unique_remington">Remington</crewMember>
-			<text>You power up your weapons and attack the Clairvoyant Debt Collector ship head on. One of the Engis flies towards your vessel in a small shuttle, and is let in by your crew. "You = Intriguing. Talk later, focus on saving Winchester"  </text>
+			<text>You power up your weapons and attack the Clairvoyant Debt Collector ship head on. One of the Engis flies towards your vessel in a small shuttle, and is let in by your crew. "You = Intriguing. Talk later, focus on saving Winchester"</text>
 			<ship load="SHIP_CLAIRVOYANT_DEBTCOLLECT" hostile="true"/>
 			<variable name="fm_obtainedtwin" op="set" val="1"/>
 			<choice hidden="true">
@@ -9958,7 +9958,7 @@
 		</event>
 		<event>
 			<crewMember amount="1" class="unique_mossberg">Mossberg</crewMember>
-			<text>You power up your weapons and attack the Clairvoyant Debt Collector ship head on. One of the Engis flies towards your vessel in a small shuttle, and is let in by your crew. "You = Intriguing. Talk later, focus on saving Winchester"  </text>
+			<text>You power up your weapons and attack the Clairvoyant Debt Collector ship head on. One of the Engis flies towards your vessel in a small shuttle, and is let in by your crew. "You = Intriguing. Talk later, focus on saving Winchester"</text>
 			<ship load="SHIP_CLAIRVOYANT_DEBTCOLLECT" hostile="true"/>
 			<variable name="fm_obtainedtwin" op="set" val="1"/>
 			<choice hidden="true">
@@ -10004,11 +10004,11 @@
 
 	<event name="FM_QUEST_GUNBOM_FUTURE_2">
 		<changeBackground>FM_SPACESTATION_FUTURE</changeBackground>
-		<text>Your ship tumbles out of the wormhole, mostly unharmed but in an unfamiliar space. You quickly check the star map and notice there are thousands of beacons, all labelled "Sing with the Harmony." You appear to be near a heavily-damaged space station. </text>
+		<text>Your ship tumbles out of the wormhole, mostly unharmed but in an unfamiliar space. You quickly check the star map and notice there are thousands of beacons, all labelled "Sing with the Harmony." You appear to be near a heavily-damaged space station.</text>
 		<choice hidden="true">
 			<text>Attempt to hail it.</text>
 			<event>
-				<text>You hail the station and are met with an unsettling silence. You dock your ship with the space station without incident, and your crew swiftly board the station. </text>
+				<text>You hail the station and are met with an unsettling silence. You dock your ship with the space station without incident, and your crew swiftly board the station.</text>
 				<variable name="fm_invisible_ship" op="set" val="1"/>
 				<choice hidden="true">
 					<text>Continue...</text>
@@ -10113,22 +10113,22 @@
 			It is lined floor to ceiling with tools, so you may be returning here often for tools as you discover that you need them.
 		</text>
 
-		<choice hidden="true" req="fm_fs_power_cutter" max_group="1"  blue="false">
+		<choice hidden="true" req="fm_fs_power_cutter" max_group="1" blue="false">
 			<text>You found and obtained a Power Cutter from the closet.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<choice hidden="true" req="marker_checked_plaza_door" max_group="1"  blue="false">
+		<choice hidden="true" req="marker_checked_plaza_door" max_group="1" blue="false">
 			<text>Take the Power Cutter, it could be useful for the plaza door.</text>
 			<event load="FM_FS_CLOSET_POWER_CUTTER"/>
 		</choice>
 
-		<choice hidden="true" req="fm_fs_crowbar" max_group="2"  blue="false">
+		<choice hidden="true" req="fm_fs_crowbar" max_group="2" blue="false">
 			<text>You found and obtained a Crowbar from the closet.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<choice hidden="true" req="marker_need_crowbar" max_group="2"  blue="false">
+		<choice hidden="true" req="marker_need_crowbar" max_group="2" blue="false">
 			<text>Take the Crowbar, it could be useful.</text>
 			<event load="FM_FS_CLOSET_CROWBAR"/>
 		</choice>
@@ -10465,7 +10465,7 @@
 	</event>
 
 	<event name="FM_FS_SECURITY_HUB_FUSE_LIGHTS">
-		<text>You divert power to the room's lights. The emergency lights fade and the main lights flash to life. The only thing different you notice is the hundreds, perhaps thousands of scratch marks along the walls. Along with signs of weapon fire all along the walls. </text>
+		<text>You divert power to the room's lights. The emergency lights fade and the main lights flash to life. The only thing different you notice is the hundreds, perhaps thousands of scratch marks along the walls. Along with signs of weapon fire all along the walls.</text>
 		<variable name="marker_terminal_powered" op="set" val="0"/>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
 			<text>Continue...</text>
@@ -10549,7 +10549,7 @@
 
 	</event>
 	<event name="FM_FS_APARTMENT_107A_APPROACH"> <!--  APARTMENT 107A -->
-		<text>This door has seen better days, and the card reader on the handle is damaged beyond repair. </text>
+		<text>This door has seen better days, and the card reader on the handle is damaged beyond repair.</text>
 
 		<choice hidden="false" req="marker_fm_fs_apartment_107a_all_clear" lvl="0" max_lvl="0" max_group="1" blue="false">
 			<text>Put your ear to the door.</text>
@@ -10576,7 +10576,7 @@
 					<loadEvent>FM_FS_APARTMENT_107A_LISTEN</loadEvent>
 	</event>
 	<event name="FM_FS_APARTMENT_107A_LISTEN"> <!--  APARTMENT 107A LISTEN -->
-		<text>You hear absolutely nothing inside, perhaps it is safe to explore? </text>
+		<text>You hear absolutely nothing inside, perhaps it is safe to explore?</text>
 
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
 			<text>Knock on the door.</text>
@@ -10600,7 +10600,7 @@
 
 	</event>
 	<event name="FM_FS_APARTMENT_107A_KNOCK"> <!--  APARTMENT 107A KNOCK -->
-		<text>You cautiously knock on the door, with your crew in breaching positions to cover you if needed. Nobody responds. </text>
+		<text>You cautiously knock on the door, with your crew in breaching positions to cover you if needed. Nobody responds.</text>
 
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
 			<text>Put your ear to the door.</text>
@@ -10619,7 +10619,7 @@
 	</event>
 
 	<event name="FM_FS_APARTMENT_107A_ENTER"> <!--  APARTMENT 107A KNOCK -->
-		<text>You attempt to open the door, but it is unsurprisingly locked. Thankfully it is not made of incredibly strong material. You give the door numerous good kicks until it comes loose off its' hinges. You can't believe the station even USES hinges, but it must be a luxury or preference of the inhabitants. You and your crew enter the room with your weapons drawn. </text>
+		<text>You attempt to open the door, but it is unsurprisingly locked. Thankfully it is not made of incredibly strong material. You give the door numerous good kicks until it comes loose off its' hinges. You can't believe the station even USES hinges, but it must be a luxury or preference of the inhabitants. You and your crew enter the room with your weapons drawn.</text>
 		<choice hidden="false" req="pilot" lvl="1" max_group="3" blue="false">
 			<text>Continue...</text>
 			<event load="FM_FS_APARTMENT_107A_ENTER_2"/>
@@ -11191,7 +11191,7 @@
 
 	</event>
 	<event name="FM_FS_APARTMENT_115A_LISTEN"> <!--  APARTMENT 115A LISTEN -->
-		<text>You hear a mechanical, synthesized humming echoing from the room. The tune is haunting but at the same time, strangely inviting.  </text>
+		<text>You hear a mechanical, synthesized humming echoing from the room. The tune is haunting but at the same time, strangely inviting.</text>
 
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
 			<text>Continue listening.</text>
@@ -11205,7 +11205,7 @@
 	</event>
 
 	<!-- <event name="FM_FS_APARTMENT_115A_LISTEN"> --><!--  APARTMENT 115A LISTEN
-	<text>You hear a mechanical, synthesized humming echoing from the room. The tune is haunting but at the same time, strangely inviting.  </text>
+	<text>You hear a mechanical, synthesized humming echoing from the room. The tune is haunting but at the same time, strangely inviting.</text>
 
 	<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
 	<text>Continue listening.</text>
@@ -11255,7 +11255,7 @@
 
 	</event>
 	<event name="FM_FS_APARTMENT_115A_KNOCK"> <!--  APARTMENT 115A KNOCK -->
-		<text>You knock on the door cautiously, with your crew in breaching positions to cover you if needed. The humming continues uninterrupted, but a new, VERY LOUD sound enters the fray: You hear objects in the room being shredded apart, accompanied by a new sound: a loud, constant, high-pitched buzz. You decide going inside is a terrible idea. </text>
+		<text>You knock on the door cautiously, with your crew in breaching positions to cover you if needed. The humming continues uninterrupted, but a new, VERY LOUD sound enters the fray: You hear objects in the room being shredded apart, accompanied by a new sound: a loud, constant, high-pitched buzz. You decide going inside is a terrible idea.</text>
 
 		<choice hidden="false" req="marker_orchid_child_assimilated" lvl="1" max_group="1" blue="false">
 			<text>Knock on the door.</text>
@@ -11660,7 +11660,7 @@
 	</event>
 
 	<event name="FM_FS_CENTRAL_PLAZA_METAL_DOOR_NO">
-		<text>You check for a panel, latch, knob, even a switch or button. Your search comes up empty-handed. This must be a security door, locking down this part of the station from the central part of the complex. If you want to proceed through this doorway, you'll need to find a way to force your way through it. </text>
+		<text>You check for a panel, latch, knob, even a switch or button. Your search comes up empty-handed. This must be a security door, locking down this part of the station from the central part of the complex. If you want to proceed through this doorway, you'll need to find a way to force your way through it.</text>
 		<variable name="marker_checked_plaza_door" op="set" val="1"/>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
 			<text>Continue...</text>
@@ -11691,7 +11691,7 @@
 	</event>
 
 	<event name="FM_FS_CENTRAL_PLAZA_ACCESS_GRANTED_HUB">
-		<text> You've arrived at the Central Plaza. It is adorned with a garden (now withering away due to lack of care), and several inert fountains with a lighting setup, most likely to give colored fountain shows to passerbys. In the center of it all is a large glass cylindrical elevator attached to a glass tube. It looks like it only goes up from your current location. There are 3 other large security doors in this plaza, which are roughly the same size and shape as the one you just entered from. </text>
+		<text> You've arrived at the Central Plaza. It is adorned with a garden (now withering away due to lack of care), and several inert fountains with a lighting setup, most likely to give colored fountain shows to passerbys. In the center of it all is a large glass cylindrical elevator attached to a glass tube. It looks like it only goes up from your current location. There are 3 other large security doors in this plaza, which are roughly the same size and shape as the one you just entered from.</text>
 
 
 		<choice hidden="false" req="fm_fs_elevator_id" lvl="1" max_group="1" blue="true">
@@ -11722,7 +11722,7 @@
 	</event>
 
 	<!--<event name="FM_FS_CENTRAL_PLAZA_METAL_DOOR_SECOND_DOOR">
-	<text>With assistance from your crew, you attempt to utilize the Power Cutter to cut a hole in the security door large enough for you to pass through. Unfortunately, it sputters and dies in your hands before you can cut more than an two inches of the door. Damnit, it must be out of power.  </text>
+	<text>With assistance from your crew, you attempt to utilize the Power Cutter to cut a hole in the security door large enough for you to pass through. Unfortunately, it sputters and dies in your hands before you can cut more than an two inches of the door. Damnit, it must be out of power.</text>
 
 
 	<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
@@ -12126,7 +12126,7 @@
 		<loadEvent>FM_FS_HYDROPONICS_HUB</loadEvent>
 	</event>
 	<event name="FM_FS_HYDROPONICS_HUB">
-		<text>You arrive in Hydroponics. As you may already know, Hydroponics is a type of horticulture and a subset of hydroculture which involves growing plants, usually crops, without soil, by using mineral nutrient solutions in an aqueous solvent. The Station appears to use the Hydroponics facility as a way to generate oxygen for the rest of its' locations. </text>
+		<text>You arrive in Hydroponics. As you may already know, Hydroponics is a type of horticulture and a subset of hydroculture which involves growing plants, usually crops, without soil, by using mineral nutrient solutions in an aqueous solvent. The Station appears to use the Hydroponics facility as a way to generate oxygen for the rest of its' locations.</text>
 
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
 			<text>Search the area extensively.</text>
@@ -12273,7 +12273,7 @@
 		</choice>
 
 		<choice hidden="true" req="fm_fs_grappling_hook" lvl="1" max_group="3" blue="true">
-			<text>(GRAPPLING HOOK) Attempt to use the grappling hook to grab the attache case. </text> <!-- NEEDS MORE FLAVOR -->
+			<text>(GRAPPLING HOOK) Attempt to use the grappling hook to grab the attache case.</text> <!-- NEEDS MORE FLAVOR -->
 			<event load="FM_FS_HYDROPONICS_GRAPPLING_HOOK_FAIL_LOAD"/>
 		</choice>
 
@@ -12380,7 +12380,7 @@
 		<loadEvent>FM_FS_COALITION_LABS</loadEvent>
 	</event>
 	<event name="FM_FS_COALITION_LABS"> <!-- NEEDS MORE FLAVOR -->
-		<text>The Research Labs' door is sealed shut with an extremely thick sheet of metal. You'll need the proper Security Card to access it. The panel next to the door reads: "4". </text>
+		<text>The Research Labs' door is sealed shut with an extremely thick sheet of metal. You'll need the proper Security Card to access it. The panel next to the door reads: "4".</text>
 
 		<choice hidden="false" req="fm_fs_keycard_5" lvl="1" max_group="1" blue="true">
 			<text>(Security Card) Swipe your Level 5 Security Card.</text>
@@ -12431,7 +12431,7 @@
 
 
 	<event name="FM_FS_COALITION_LABS_GRAVITY_EMITTER"> <!-- NEEDS MORE FLAVOR -->
-		<text>You examine the strange device. It almost looks like a weapon, but your initial impression is seemingly incorrect when you pick up the manual lying next to it. "The Graviton Repulsor is a new Prototype we at the Coalition wing are developing. We plan to eventually create a larger-scale, ship-sized version that can "de-couple" Engi nanomachines from their bodies. For now, all it can do is push or pull small and medium sized objects with metallic properties." </text>
+		<text>You examine the strange device. It almost looks like a weapon, but your initial impression is seemingly incorrect when you pick up the manual lying next to it. "The Graviton Repulsor is a new Prototype we at the Coalition wing are developing. We plan to eventually create a larger-scale, ship-sized version that can "de-couple" Engi nanomachines from their bodies. For now, all it can do is push or pull small and medium sized objects with metallic properties."</text>
 		<variable name="fm_fs_magnet_tool" op="set" val="1"/>
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
 			<text>Take it with you, it sounds extremely handy.</text>
@@ -12647,17 +12647,17 @@
 		</choice>
 
 		<choice hidden="true" req="marker_infirmary_clear" lvl="1" max_group="1" blue="false">
-			<text>Enter the safely cleared Infirmary. </text>
+			<text>Enter the safely cleared Infirmary.</text>
 			<event load="FM_FS_FEDERATION_INFIRMARY_HUB_LOAD"/>
 		</choice>
 
 		<choice hidden="true" req="FM_FS_LIST_KILL_ENGI_INFIRMARY" lvl="1" max_group="1" blue="true">
-			<text>(EXTINGUISHER AND GRENADE) Burn the nanomachine swarm to a crisp. </text>
+			<text>(EXTINGUISHER AND GRENADE) Burn the nanomachine swarm to a crisp.</text>
 			<event load="FM_FS_FEDERATION_INFIRMARY_ACCESS_GAINED"/>
 		</choice>
 
 		<choice hidden="true" req="FM_FS_LIST_KILL_ENGI_INFIRMARY_MISSING" lvl="1" max_group="1" blue="true">
-			<text>(GRENADE) While your grenade would make an EXCELLENT tool to eliminate the nanomachine swarm, you would simply burn anything useful in that room to the ground. You'll need a method to put out the fire. </text>
+			<text>(GRENADE) While your grenade would make an EXCELLENT tool to eliminate the nanomachine swarm, you would simply burn anything useful in that room to the ground. You'll need a method to put out the fire.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
@@ -12966,7 +12966,7 @@
 	</event>
 
 	<event name="FM_FS_FEDERATION_RESEARCH_ACCESS_DENIED">
-		<text>You try a random 4-digit number combination. Nothing you can think up works.  </text>
+		<text>You try a random 4-digit number combination. Nothing you can think up works.</text>
 
 		<choice hidden="false" req="pilot" lvl="1" max_group="3" blue="false">
 			<text>Go back.</text>
@@ -13178,7 +13178,7 @@
 
 
 		<choice hidden="true" req="fm_fs_keycard_2" lvl="1" max_group="1" blue="false">
-			<text>You have already searched the weapon systems room. There is nothing else to do there </text>
+			<text>You have already searched the weapon systems room. There is nothing else to do there</text>
 			<event load="OPTION_INVALID"/> <!--  FM_FS_3RD_WEAPONS_ROOM call -->
 		</choice>
 
@@ -13421,7 +13421,7 @@
 	</event>
 
 	<event name="FM_FS_3RD_COMMAND_HUB_FINAL_CHOICE">  <!-- NEEDS MORE FLAVOR -->
-		<text>What will be your next course of action? [Warning, this is where you select your ending!] (REMEMBER, YOU CAN USE "-" and "+" on your keyboard to change your text size to read the whole window!) </text>
+		<text>What will be your next course of action? [Warning, this is where you select your ending!] (REMEMBER, YOU CAN USE "-" and "+" on your keyboard to change your text size to read the whole window!)</text>
 
 		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
 			<text>Decide to gather all the supplies you can from the station and await rescue or reinforcements from the Federation...</text>
@@ -13444,7 +13444,7 @@
 		</choice>
 
 		<choice hidden="false" req="fm_fs_special_coordinates" lvl="1" max_group="5" blue="true">
-			<text>(COORDINATES) Jump directly to the camouflaged beacon that the remnants of society setup nearby, perhaps you can find somebody there that ISN'T dead! </text>
+			<text>(COORDINATES) Jump directly to the camouflaged beacon that the remnants of society setup nearby, perhaps you can find somebody there that ISN'T dead!</text>
 			<event load="FM_FS_ENDING_5"/>
 		</choice>
 
@@ -13607,7 +13607,7 @@
 		</choice>
 
 		<choice hidden="true" req="fm_fs_fuse" max_group="3" blue="true">
-			<text>(SPARE FUSE)You found a spare fuse in Apartment 107A. </text>
+			<text>(SPARE FUSE)You found a spare fuse in Apartment 107A.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
@@ -13658,7 +13658,7 @@
 		</choice>
 
 		<choice hidden="true" req="marker_case_obtained" max_group="12" blue="true">
-			<text>(ATTACHE CASE MEMO) A memo regarding accessing the Level 7 Prototype Access door in the Federation R & D labs. Involves you essentially slamming your hands on buttons, fun! </text>
+			<text>(ATTACHE CASE MEMO) A memo regarding accessing the Level 7 Prototype Access door in the Federation R & D labs. Involves you essentially slamming your hands on buttons, fun!</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 

@@ -1,55 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 
-		<mod:findName type="event" name="DUSK_MILITIA_ESCORT">
+	<mod:findName type="event" name="DUSK_MILITIA_ESCORT">
 
-		 <mod:findLike type="choice" start="0" limit="1">
-        <mod:findLike type="event">
-            <mod-append:choice hidden="true" max_group="601" req="LIST_CREW_PLATED" blue="true">
-              	<text>(Plated) Offer to have your Plated repair their hull.</text>
-				<event>
-					<text>The Militiamen are surprised by your offer, but they graciously accept.</text>
+		<mod:findLike type="choice" start="0" limit="1">
+			<mod:findLike type="event">
+				<mod-append:choice hidden="true" max_group="601" req="LIST_CREW_PLATED" blue="true">
+					<text>(Plated) Offer to have your Plated repair their hull.</text>
+					<event>
+						<text>The Militiamen are surprised by your offer, but they graciously accept.</text>
 
-					<choice hidden="true">
-						<text>Continue...</text>
-						<event>
-							<text>They offer you a gift as thanks for your generous donation.</text>
-							<autoReward level="LOW">missiles_only</autoReward>
-							<weapon name="RANDOM"/>
-						</event>
-					</choice>
-				</event>
+						<choice hidden="true">
+							<text>Continue...</text>
+							<event>
+								<text>They offer you a gift as thanks for your generous donation.</text>
+								<autoReward level="LOW">missiles_only</autoReward>
+								<weapon name="RANDOM"/>
+							</event>
+						</choice>
+					</event>
 
-            </mod-append:choice>
-    <mod:findLike type="choice">
-        <mod:findLike type="event">
-            <mod-append:choice hidden="true" max_group="602" req="fm_forgemasterperson" blue="true">
-              	<text>(Alastair) Offer to have Alastair fix up their hull.</text>
-				<event>
-					<text>The Militiamen are surprised by your offer, but they graciously accept.</text>
+				</mod-append:choice>
+				<mod:findLike type="choice">
+					<mod:findLike type="event">
+						<mod-append:choice hidden="true" max_group="602" req="fm_forgemasterperson" blue="true">
+							<text>(Alastair) Offer to have Alastair fix up their hull.</text>
+							<event>
+								<text>The Militiamen are surprised by your offer, but they graciously accept.</text>
 
-					<choice hidden="true">
-						<text>Continue...</text>
-						<event>
-							<text>They offer you a gift as thanks for your generous donation.</text>
-							<autoReward level="MED">missiles_only</autoReward>
-							<weapon name="RANDOM"/>
-						</event>
-					</choice>
-				</event>
-
-            </mod-append:choice>
-
-
-        </mod:findLike>
-    </mod:findLike>
-
-
-
-	</mod:findLike>
-        </mod:findLike>
-    <mod:findWithChildLike type="choice" child-type="text">
-	<mod:selector>Ignore them.</mod:selector>
-        <mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>
-		  </mod:findWithChildLike>
-</mod:findName>
+								<choice hidden="true">
+									<text>Continue...</text>
+									<event>
+										<text>They offer you a gift as thanks for your generous donation.</text>
+										<autoReward level="MED">missiles_only</autoReward>
+										<weapon name="RANDOM"/>
+									</event>
+								</choice>
+							</event>
+						</mod-append:choice>
+					</mod:findLike>
+				</mod:findLike>
+			</mod:findLike>
+		</mod:findLike>
+		<mod:findWithChildLike type="choice" child-type="text">
+			<mod:selector>Ignore them.</mod:selector>
+			<mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>
+		</mod:findWithChildLike>
+	</mod:findName>

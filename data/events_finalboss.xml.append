@@ -2,10 +2,10 @@
 
 
 	<mod:findName type="event" name="TRUE_VICTORY_CREW">
-     <mod-append:choice hidden="true" req="fm_forgemasterperson_player">
-       <text>Ask Alastair about this.</text>
-			 <event load="TRUE_VICTORY_CREW_FORGEMASTER"/>
-      </mod-append:choice>
+		<mod-append:choice hidden="true" req="fm_forgemasterperson_player">
+			<text>Ask Alastair about this.</text>
+			<event load="TRUE_VICTORY_CREW_FORGEMASTER"/>
+		</mod-append:choice>
 	</mod:findName>
 
 

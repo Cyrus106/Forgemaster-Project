@@ -37,17 +37,17 @@
 <event name="FM_CURA_DRIVE_HACKER_MENU">
 	<text>You've arrived at one of this sector's unusual beacons. The anomalous properties of this beacon force anything called by the C.U.R.A. Drive Hacker to be pulled directly to it. You wonder if it could be used to pull your ship directly to such beacons in the future.</text>
 	<choice req="loc_impossible_task_done" lvl="1" max_group="3" hidden="true" blue="false">
-        <text>(C.U.R.A. Drive Hacker) You already obtained your reward. You wonder how exactly this benefit C.U.R.A.?</text>
-        <event load="OPTION_INVALID"/>
+		<text>(C.U.R.A. Drive Hacker) You already obtained your reward. You wonder how exactly this benefit C.U.R.A.?</text>
+		<event load="OPTION_INVALID"/>
 	</choice>
 
 	<choice req="FM_CURA_QUEST_LIST" lvl="1" max_group="3" hidden="false" blue="true">
-        <text>(C.U.R.A. Drive Hacker) Obtain your Reward..</text>
-        <event load="FM_STORAGE_CHECK_AUG_MVBOSS_SPAWNER_REWARD"/>
+		<text>(C.U.R.A. Drive Hacker) Obtain your Reward..</text>
+		<event load="FM_STORAGE_CHECK_AUG_MVBOSS_SPAWNER_REWARD"/>
 	</choice>
 	<choice req="CURA_MVBOSS_SPAWNER" lvl="1" max_group="3" hidden="false" blue="true">
-        <text>(C.U.R.A. Drive Hacker) Summon a Twisted MV Traveler.</text>
-        <event load="FM_STORAGE_CHECK_AUG_MVBOSS_SPAWNER_LIST_SECTOR"/>
+		<text>(C.U.R.A. Drive Hacker) Summon a Twisted MV Traveler.</text>
+		<event load="FM_STORAGE_CHECK_AUG_MVBOSS_SPAWNER_LIST_SECTOR"/>
  	</choice>
 	<choice hidden="true">
 		<text>Nevermind, let's leave.</text>

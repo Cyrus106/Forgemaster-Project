@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <mod:findName type = "event" name = "FREEMANTIS_WIERD_TRADE">
-<mod-append:choice req="SHIP_GUNBOM" lvl="1" max_group="600" hidden="true" blue="true">
-     	<text>(GunBom) Am I truly not worthy?</text>
+	<mod-append:choice req="SHIP_GUNBOM" lvl="1" max_group="600" hidden="true" blue="true">
+		<text>(GunBom) Am I truly not worthy?</text>
 		<event>
 			<text>The strange Mantis is silent for a moment, then seems to grow excited. "You! I know ship. This Winchester ship, very popular! I have nothing to to offer you but these coordinates to an old friend of mine. He treat good tasting humans well!</text>
 			<quest event="QUEST_MANTIS_CULTURE"/>
