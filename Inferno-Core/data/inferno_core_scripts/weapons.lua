@@ -1,5 +1,4 @@
 local vter = mods.inferno.vter
-local getLimitAmount = mods.inferno.getLimitAmount
 local real_projectile = mods.inferno.real_projectile
 local randomInt = mods.inferno.randomInt
 
