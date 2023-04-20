@@ -111,10 +111,10 @@ function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
 end)
 
 local impactBeams = {
-  FM_BEAM_EXPLOSION = "FM_BEAM_EXPLOSION_BOMB",
-  FM_BEAM_EXPLOSION_PLAYER = "FM_BEAM_EXPLOSION_BOMB",
-  FM_BEAM_EXPLOSION_EGG = "FM_BEAM_EXPLOSION_BOMB",
-  FM_BEAM_EXPLOSION_ENEMY = "FM_BEAM_EXPLOSION_BOMB",
+  FM_BEAM_EXPLOSION = "FM_BEAM_EXPLOSION_LASER",
+  FM_BEAM_EXPLOSION_PLAYER = "FM_BEAM_EXPLOSION_LASER",
+  FM_BEAM_EXPLOSION_EGG = "FM_BEAM_EXPLOSION_LASER",
+  FM_BEAM_EXPLOSION_ENEMY = "FM_BEAM_EXPLOSION_LASER",
 }
 
 --Instant Impact (Until accuracy stats are exposed, please ensure all weapons used in impactBeams have accuracy 100)
