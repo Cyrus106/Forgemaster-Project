@@ -8713,43 +8713,6 @@
 		<projectiles>
 			<projectile count="1" fake="false">fm_arboreal_proj</projectile>		      
 		</projectiles>
-		<spawnCrew>
-			<race>fm_generic_crewjank</race>
-			<number>1</number>
-			<enemy>true</enemy><!--So you don't ever see the crew-->
-			<lifetime>0</lifetime>
-			<noSlot>true</noSlot>
-			<statBoosts>
-				<statBoost name="deathEffect"><!--This modifies the stat of the crew, so that the same crew can be used for multiple weapons-->
-					<boostType>SET</boostType>
-					<deathEffect><!--When template crew dies (on weapon impact) these statBoosts are applied -->
-						<statBoosts>
-							<statBoost name="canMove">
-								<boostType>SET</boostType>
-								<value>false</value>
-								<shipTarget>ALL</shipTarget>
-								<crewTarget>ALLIES</crewTarget>
-								<!--<effectAnim>fm_arboreal</effectAnim>-->
-								<effectAnim>pheromone_c</effectAnim>
-								<duration>8</duration>
-								<priority>999999</priority>
-							</statBoost>
-							<statBoost name="trueHealAmount">
-								<boostType>SET</boostType>
-								<amount>-3.5</amount>
-								<shipTarget>ALL</shipTarget>
-								<crewTarget>ALLIES</crewTarget>
-								<duration>8</duration>
-								<priority>999999</priority>
-							</statBoost>
-						</statBoosts>
-					</deathEffect>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>9999999</priority>
-				</statBoost>
-			</statBoosts>
-		</spawnCrew>
 		<launchSounds>
 			<sound>fm_ancalagon_shot</sound>
 		</launchSounds>
@@ -8768,6 +8731,63 @@
 		<weaponArt>fm_arboreal_gun</weaponArt>
 		<iconImage>laser</iconImage>
 		<iconScale>1.0</iconScale>
+	</weaponBlueprint>
+
+	<weaponBlueprint name="FM_ARBOREAL_EXE_STATBOOST">
+		<type>LASER</type>
+		<flavorType>APPLY_STATBOOST</flavorType>
+		<title>APPLY_STATBOOST</title>
+		<short>APPLY_STATBOOST</short>
+		<tip>tip_flak</tip>
+		<desc>YOU SHOULD NEVER SEE THIS.</desc>
+		<damage>0</damage>
+		<shots>1</shots>
+		<sp>20</sp>
+		<fireChance>0</fireChance>
+		<breachChance>0</breachChance>
+		<speed>20</speed>
+		<accuracyMod>100</accuracyMod>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<image/>
+		<explosion>fm_repair_hull_death_right</explosion>
+
+		<statBoosts>
+			<statBoost name="canMove">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<!--<effectAnim>fm_arboreal</effectAnim>-->
+				<effectAnim>pheromone_c</effectAnim>
+				<duration>8</duration>
+				<priority>999999</priority>
+			</statBoost>
+			<statBoost name="trueHealAmount">
+				<boostType>SET</boostType>
+				<amount>-3.5</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<duration>8</duration>
+				<priority>999999</priority>
+			</statBoost>
+		</statBoosts>
+		
+
+		<launchSounds>
+			<sound>silence</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>silence</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>laser_heavy_1</weaponArt>
+		<iconImage>heavyL</iconImage>
 	</weaponBlueprint>
 	
 	<weaponBlueprint name="FM_ARBOREAL_REV">
@@ -8792,49 +8812,6 @@
 		<projectiles>
 			<projectile count="1" fake="false">fm_arboreal_proj</projectile>      
 		</projectiles>
-		<spawnCrew>
-			<race>fm_generic_crewjank</race>
-			<number>1</number>
-			<enemy>true</enemy><!--So you don't ever see the crew-->
-			<lifetime>0</lifetime>
-			<noSlot>true</noSlot>
-			<statBoosts>
-				<statBoost name="deathEffect"><!--This modifies the stat of the crew, so that the same crew can be used for multiple weapons-->
-					<boostType>SET</boostType>
-					<deathEffect><!--When template crew dies (on weapon impact) these statBoosts are applied -->
-						<statBoosts>
-							<statBoost name="trueHealAmount">
-								<boostType>SET</boostType>
-								<amount>20</amount>
-								<shipTarget>ALL</shipTarget>
-								<crewTarget>ENEMIES</crewTarget>
-								<duration>1</duration>
-								<priority>999998</priority>
-							</statBoost>
-							<statBoost name="trueHealAmount">
-								<boostType>SET</boostType>
-								<amount>2</amount>
-								<shipTarget>ALL</shipTarget>
-								<crewTarget>ENEMIES</crewTarget>
-								<duration>20</duration>
-								<priority>999999</priority>
-							</statBoost>
-							<statBoost name="allDamageTakenMultiplier">
-								<boostType>MULT</boostType>
-								<amount>0.5</amount>
-								<shipTarget>ALL</shipTarget>
-								<crewTarget>ENEMIES</crewTarget>
-								<duration>20</duration>
-								<priority>999999</priority>
-							</statBoost>
-						</statBoosts>
-					</deathEffect>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>9999999</priority>
-				</statBoost>
-			</statBoosts>
-		</spawnCrew>
 		<launchSounds>
 			<sound>fm_ancalagon_shot</sound>
 		</launchSounds>
@@ -8853,6 +8830,69 @@
 		<weaponArt>fm_arboreal_gun</weaponArt>
 		<iconImage>laser</iconImage>
 		<iconScale>1.0</iconScale>
+	</weaponBlueprint>
+
+	<weaponBlueprint name="FM_ARBOREAL_REV_STATBOOST">
+		<type>LASER</type>
+		<flavorType>APPLY_STATBOOST</flavorType>
+		<title>APPLY_STATBOOST</title>
+		<short>APPLY_STATBOOST</short>
+		<tip>tip_flak</tip>
+		<desc>YOU SHOULD NEVER SEE THIS.</desc>
+		<damage>0</damage>
+		<shots>1</shots>
+		<sp>20</sp>
+		<fireChance>0</fireChance>
+		<breachChance>0</breachChance>
+		<speed>20</speed>
+		<accuracyMod>100</accuracyMod>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<image/>
+		<explosion>fm_repair_hull_death_right</explosion>
+
+		<statBoosts>
+			<statBoost name="trueHealAmount">
+				<boostType>SET</boostType>
+				<amount>20</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<duration>1</duration>
+				<priority>999998</priority>
+			</statBoost>
+			<statBoost name="trueHealAmount">
+				<boostType>SET</boostType>
+				<amount>2</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<duration>20</duration>
+				<priority>999999</priority>
+			</statBoost>
+			<statBoost name="allDamageTakenMultiplier">
+				<boostType>MULT</boostType>
+				<amount>0.5</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<duration>20</duration>
+				<priority>999999</priority>
+			</statBoost>
+		</statBoosts>
+		
+
+		<launchSounds>
+			<sound>silence</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>silence</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>laser_heavy_1</weaponArt>
+		<iconImage>heavyL</iconImage>
 	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_AN_LASER">
@@ -9171,37 +9211,6 @@
 
 			</statBoosts>
 		</spawnCrew>-->
-
-
-		<spawnCrew>
-			<race>fm_generic_crewjank</race>
-			<number>1</number>
-			<enemy>true</enemy><!--So you don't ever see the crew-->
-			<lifetime>0</lifetime>
-			<noSlot>true</noSlot>
-			<statBoosts>
-				<statBoost name="deathEffect"><!--This modifies the stat of the crew, so that the same crew can be used for multiple weapons-->
-					<boostType>SET</boostType>
-					<deathEffect><!--When template crew dies (on weapon impact) this deathEffect will occur -->
-						<damage>10</damage>
-						<persDamage>7</persDamage>
-						<sysDamage>10</sysDamage>
-						<shipFriendlyFire>true</shipFriendlyFire>
-						<friendlyFire>true</friendlyFire>
-						<fireChance>10</fireChance>
-						<event>
-							<superBarrage player="true" name="TERMINUS_SURGE" />
-							<loadEvent>TERMINUS_SURGE_AFTER</loadEvent>
-						</event>
-					</deathEffect>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>9999999</priority>
-				</statBoost>
-			</statBoosts>
-		</spawnCrew>
-
-
 		<projectiles>
 			<projectile count="1" fake="false">fm_terminus_shot</projectile>
 		</projectiles>
@@ -9227,11 +9236,11 @@
 	</weaponBlueprint>
 
 
-	<weaponBlueprint name="FM_TERMINUS_SURGE">
+	<weaponBlueprint name="FM_TERMINUS_STATBOOST">
 		<type>LASER</type>
-		<flavorType>Power Surge</flavorType>
-		<title>Terminus Surge</title>
-		<short>Terminus Surge</short>
+		<flavorType>APPLY_STATBOOST</flavorType>
+		<title>APPLY_STATBOOST</title>
+		<short>APPLY_STATBOOST</short>
 		<tip>tip_flak</tip>
 		<desc>YOU SHOULD NEVER SEE THIS.</desc>
 		<damage>0</damage>

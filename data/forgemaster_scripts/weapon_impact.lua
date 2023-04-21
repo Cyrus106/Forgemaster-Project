@@ -10,23 +10,23 @@ local popWeapons = {
   FM_GATLING_ANCIENT_PHOTON = {count = 1, countSuper = 1},
 }
 
-script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION, function(shipManager, projectile, damage, response)
-    local shieldPower = shipManager.shieldSystem.shields.power
+script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION, function(ShipManager, Projectile, Damage, CollisionResponse)
+    local shieldPower = ShipManager.shieldSystem.shields.power
     local popData = nil
-    if pcall(function() popData = popWeapons[Hyperspace.Get_Projectile_Extend(projectile).name] end) and popData then
-        if shieldPower.super.first <= 0 and response.damage > damage.iShieldPiercing then
-            shipManager.shieldSystem:CollisionReal(projectile.position.x, projectile.position.y, Hyperspace.Damage(), true)
+    if pcall(function() popData = popWeapons[Hyperspace.Get_Projectile_Extend(Projectile).name] end) and popData then
+        if shieldPower.super.first <= 0 and CollisionResponse.damage > Damage.iShieldPiercing then
+            ShipManager.shieldSystem:CollisionReal(Projectile.position.x, Projectile.position.y, Hyperspace.Damage(), true)
             shieldPower.first = math.max(0, shieldPower.first - popData.count)
         end
     end
     return Defines.Chain.CONTINUE
 end)
 
-script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION_PRE, function(shipManager, projectile, damage, response)
-  local shieldPower = shipManager.shieldSystem.shields.power
+script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION_PRE, function(ShipManager, Projectile, Damage, CollisionResponse)
+  local shieldPower = ShipManager.shieldSystem.shields.power
   local popData = nil
-  if pcall(function() popData = popWeapons[Hyperspace.Get_Projectile_Extend(projectile).name] end) and popData and shieldPower.super.first > 0 then
-      damage.iDamage = damage.iDamage + popData.countSuper
+  if pcall(function() popData = popWeapons[Hyperspace.Get_Projectile_Extend(Projectile).name] end) and popData and shieldPower.super.first > 0 then
+      Damage.iDamage = Damage.iDamage + popData.countSuper
   end
   return Defines.Chain.CONTINUE
 end)
@@ -66,12 +66,12 @@ local tileDamageWeapons = {
 }
 
 
-script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, function(ship, projectile, location, damage, forceHit, shipFriendlyFire)
+script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, function(ShipManager, Projectile, Location, Damage, forceHit, shipFriendlyFire)
   local roomDamage
   pcall(function() roomDamage = roomDamageWeapons[Hyperspace.Get_Projectile_Extend(projectile).name] end)
   if roomDamage then
-    damage.iDamage = damage.iDamage + (roomDamage.hull or 0)
-    damage.iIonDamage = damage.iIonDamage + (roomDamage.ion or 0)
+    Damage.iDamage = Damage.iDamage + (roomDamage.hull or 0)
+    Damage.iIonDamage = Damage.iIonDamage + (roomDamage.ion or 0)
   end
   return Defines.CHAIN_CONTINUE, forceHit, shipFriendlyFire
 end)
@@ -108,7 +108,7 @@ function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
   if beamHitType ~= Defines.BeamHit.SAME_TILE and bomb then
     local SpaceManager = Hyperspace.Global.GetInstance():GetCApp().world.space
     local blueprint = Hyperspace.Global.GetInstance():GetBlueprints():GetWeaponBlueprint(bomb)
-    local bombOwner = (ShipManager.iShipId + 1) % 2
+    local bombOwner = Projectile.ownerId
     local target = Hyperspace.Pointf(Location.x // 35 * 35 + 17.5, Location.y // 35 * 35 + 17.5)
     local targetSpace = ShipManager.iShipId
     if Hyperspace.ShipGraph.GetShipInfo(targetSpace):GetSelectedRoom(target.x, target.y, true) ~= -1 then
@@ -132,11 +132,40 @@ function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
   if beamHitType ~= Defines.BeamHit.SAME_TILE and impact then
     local SpaceManager = Hyperspace.Global.GetInstance():GetCApp().world.space
     local blueprint = Hyperspace.Global.GetInstance():GetBlueprints():GetWeaponBlueprint(impact)
-    local impactOwner = (ShipManager.iShipId + 1) % 2
+    local impactOwner = Projectile.ownerId
     local target = Hyperspace.Pointf(Location.x // 35 * 35 + 17.5, Location.y // 35 * 35 + 17.5)
     local targetSpace = ShipManager.iShipId
     if Hyperspace.ShipGraph.GetShipInfo(targetSpace):GetSelectedRoom(target.x, target.y, true) ~= -1 then
       SpaceManager:CreateLaserBlast(blueprint, target, targetSpace, impactOwner, target, targetSpace, 0)
     end
   end
+end)
+
+--To hit every room on the targeted ship with an effect (Until accuracy stats are exposed, please ensure all weapons used in hitEveryRoom have accuracy 100)
+local hitEveryRoom = {
+  FM_ARBOREAL_EXE = "FM_ARBOREAL_EXE_STATBOOST",
+  FM_ARBOREAL_REV = "FM_ARBOREAL_REV_STATBOOST",
+
+  FM_TERMINUS = "FM_TERMINUS_STATBOOST",
+}
+
+
+script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
+  local roomDamage
+  pcall(function() roomDamage = hitEveryRoom[Hyperspace.Get_Projectile_Extend(Projectile).name] end)
+  if roomDamage then
+    local SpaceManager = Hyperspace.Global.GetInstance():GetCApp().world.space
+    local blueprint = Hyperspace.Global.GetInstance():GetBlueprints():GetWeaponBlueprint(roomDamage)
+    local impactOwner = Projectile.ownerId
+    local targetSpace = ShipManager.iShipId
+    
+    local weaponName = Hyperspace.Get_Projectile_Extend(Projectile).name
+    Hyperspace.Get_Projectile_Extend(Projectile).name = ""
+    for roomNumber = 0, Hyperspace.ShipGraph.GetShipInfo(targetSpace):RoomCount() - 1 do
+      local target = ShipManager:GetRoomCenter(roomNumber)
+      SpaceManager:CreateLaserBlast(blueprint, target, targetSpace, impactOwner, target, targetSpace, 0)
+    end
+    Hyperspace.Get_Projectile_Extend(Projectile).name = weaponName
+  end
+  return Defines.CHAIN_CONTINUE
 end)
