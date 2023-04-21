@@ -3891,6 +3891,19 @@ try this later
 <boost>beam_menaulion_chargeglow</boost>	-->
 
 <FTL><!-- LASERS-->
+
+	<!--MAYBE MOVE THIS?-->
+	<animSheet name="fm_arboreal_gun" w="3600" h="120" fw="60" fh="120">weapon_organic/fm_arboreal_gun.png</animSheet>
+	<weaponAnim name="fm_arboreal_gun">
+		<sheet>fm_arboreal_gun</sheet>
+		<desc length="60" x="0" y="0"/>
+		<chargedFrame>26</chargedFrame>
+		<fireFrame>45</fireFrame>
+		<firePoint  x="42" y="30"/>
+		<mountPoint x="3" y="105"/>
+	</weaponAnim>
+
+
 	<animSheet name="charge_sniper" w="1036" h="86" fw="28" fh="86">weapon_laser/charge_laser_sniper.png</animSheet>
 	<weaponAnim name="charge_sniper">
 		<sheet>charge_sniper</sheet>
@@ -5360,6 +5373,13 @@ try this later
 	<animSheet name="fm_bullsquid_spit" w="100" h="100" fw="100" fh="100">weapon_projectiles/fm_bullsquid_spit.png</animSheet>
 	<anim name="fm_bullsquid_spit">
 		<sheet>fm_bullsquid_spit</sheet>
+		<desc length="1" x="0" y="0"/>
+		<time>1</time>
+	</anim>
+
+	<animSheet name="fm_arboreal_proj" w="35" h="35" fw="35" fh="35">weapon_projectiles/fm_arboreal_proj.png</animSheet>
+	<anim name="fm_arboreal_proj">
+		<sheet>fm_arboreal_proj</sheet>
 		<desc length="1" x="0" y="0"/>
 		<time>1</time>
 	</anim>

@@ -8702,7 +8702,7 @@
 		<radius>20</radius>
 		<shots>1</shots>
 		<breachChance>2</breachChance>
-	        <sp>1</sp>
+	    <sp>1</sp>
 		<spin>30</spin>
 		<cooldown>19</cooldown>
 		<power>3</power>
@@ -8710,10 +8710,8 @@
 		<bp>2</bp>
 		<rarity>0</rarity>
 		<speed>40</speed>
-
 		<projectiles>
-			<!--<projectile count="1" fake="false">fm_arboreal_proj</projectile>-->
-			<projectile count="1" fake="false">fm_laser_ancalagon_proj</projectile>			      
+			<projectile count="1" fake="false">fm_arboreal_proj</projectile>		      
 		</projectiles>
 		<spawnCrew>
 			<race>fm_generic_crewjank</race>
@@ -8722,39 +8720,34 @@
 			<lifetime>0</lifetime>
 			<noSlot>true</noSlot>
 			<statBoosts>
-
 				<statBoost name="deathEffect"><!--This modifies the stat of the crew, so that the same crew can be used for multiple weapons-->
 					<boostType>SET</boostType>
 					<deathEffect><!--When template crew dies (on weapon impact) these statBoosts are applied -->
 						<statBoosts>
-
-				<statBoost name="canMove">
-					<boostType>SET</boostType>
-					<value>false</value>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
-					<!--<effectAnim>fm_arboreal</effectAnim>-->
-                                        <effectAnim>pheromone_c</effectAnim>
-					<duration>8</duration>
-					<priority>999999</priority>
-				</statBoost>
-				<statBoost name="trueHealAmount">
-					<boostType>SET</boostType>
-					<amount>-3.5</amount>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
-					<duration>8</duration>
-					<priority>999999</priority>
-				</statBoost>
+							<statBoost name="canMove">
+								<boostType>SET</boostType>
+								<value>false</value>
+								<shipTarget>ALL</shipTarget>
+								<crewTarget>ALLIES</crewTarget>
+								<!--<effectAnim>fm_arboreal</effectAnim>-->
+								<effectAnim>pheromone_c</effectAnim>
+								<duration>8</duration>
+								<priority>999999</priority>
+							</statBoost>
+							<statBoost name="trueHealAmount">
+								<boostType>SET</boostType>
+								<amount>-3.5</amount>
+								<shipTarget>ALL</shipTarget>
+								<crewTarget>ALLIES</crewTarget>
+								<duration>8</duration>
+								<priority>999999</priority>
+							</statBoost>
 						</statBoosts>
 					</deathEffect>
-
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>9999999</priority>
 				</statBoost>
-
-
 			</statBoosts>
 		</spawnCrew>
 		<launchSounds>
@@ -8772,7 +8765,7 @@
 		<missSounds>
 			<sound>miss</sound>
 		</missSounds>
-		<weaponArt>fm_laser_ancalagon_1</weaponArt>
+		<weaponArt>fm_arboreal_gun</weaponArt>
 		<iconImage>laser</iconImage>
 		<iconScale>1.0</iconScale>
 	</weaponBlueprint>
@@ -8789,17 +8782,15 @@
 		<spin>30</spin>
 		<shots>1</shots>
 		<breachChance>2</breachChance>
-	        <sp>1</sp>
+	    <sp>1</sp>
 		<cooldown>19</cooldown>
 		<power>3</power>
 		<cost>130</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
 		<speed>40</speed>
-
 		<projectiles>
-			<!--<projectile count="1" fake="false">fm_arboreal_proj</projectile>-->
-			<projectile count="1" fake="false">fm_laser_ancalagon_proj</projectile>			      
+			<projectile count="1" fake="false">fm_arboreal_proj</projectile>      
 		</projectiles>
 		<spawnCrew>
 			<race>fm_generic_crewjank</race>
@@ -8859,7 +8850,7 @@
 		<missSounds>
 			<sound>miss</sound>
 		</missSounds>
-		<weaponArt>fm_laser_ancalagon_1</weaponArt>
+		<weaponArt>fm_arboreal_gun</weaponArt>
 		<iconImage>laser</iconImage>
 		<iconScale>1.0</iconScale>
 	</weaponBlueprint>
