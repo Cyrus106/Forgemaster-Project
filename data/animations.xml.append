@@ -3908,7 +3908,7 @@ try this later
 		<chargedFrame>1</chargedFrame>
 		<fireFrame>32</fireFrame>
 		<firePoint  x="45" y="20"/>
-		<mountPoint x="6" y="78"/>
+		<mountPoint x="2" y="78"/><!--was 6-->
 		<chargeImage>weapon_laser/fm_surge_laser_glow.png</chargeImage>
 	</weaponAnim>
 
@@ -4040,7 +4040,7 @@ try this later
 		<chargedFrame>1</chargedFrame>
 		<fireFrame>4</fireFrame>
 		<firePoint  x="22" y="19"/>
-		<mountPoint x="7" y="60"/>
+		<mountPoint x="4" y="60"/><!--was 7-->
 		<chargeImage>weapon_laser/fm_gnun_slung_glow.png</chargeImage>
 	</weaponAnim>
 
@@ -4051,7 +4051,7 @@ try this later
 		<chargedFrame>1</chargedFrame>
 		<fireFrame>3</fireFrame>
 		<firePoint  x="23" y="17"/>
-		<mountPoint x="7" y="69"/>
+		<mountPoint x="2" y="69"/><!--was 7-->
 		<chargeImage>weapon_laser/fm_laser_ancalagon_1_glow.png</chargeImage>
 	</weaponAnim>
 
@@ -4062,7 +4062,7 @@ try this later
 		<chargedFrame>57</chargedFrame>
 		<fireFrame>88</fireFrame>
 		<firePoint  x="39" y="27"/>
-		<mountPoint x="9" y="104"/>
+		<mountPoint x="4" y="104"/><!--was 9-->
 		<chargeImage>weapon_laser/fm_terminus_glow.png</chargeImage>
 	</weaponAnim>
 
@@ -4111,7 +4111,7 @@ try this later
 		<chargedFrame>1</chargedFrame>
 		<fireFrame>6</fireFrame>
 		<firePoint  x="21" y="13"/>
-		<mountPoint x="9" y="46"/>
+		<mountPoint x="4" y="46"/><!--was 9-->
 		<chargeImage>weapon_energy/fm_energlave_glow.png</chargeImage>
 	</weaponAnim>
 
@@ -4281,7 +4281,7 @@ try this later
 		<chargedFrame>1</chargedFrame>
 		<fireFrame>2</fireFrame>
 		<firePoint  x="25" y="130"/>
-		<mountPoint x="13" y="153"/>
+		<mountPoint x="4" y="153"/><!--was 13-->
 		<chargeImage>weapon_beams/fm_beam_mining_2_glow.png</chargeImage>
 	</weaponAnim>
 
@@ -4325,7 +4325,7 @@ try this later
 		<chargedFrame>1</chargedFrame>
 		<fireFrame>2</fireFrame>
 		<firePoint  x="27" y="37"/>
-		<mountPoint x="10" y="88"/>
+		<mountPoint x="4" y="88"/><!--was 10-->
 		<chargeImage>weapon_beams/fm_explosion_beam_glow.png</chargeImage>
 	</weaponAnim>
 
@@ -4347,7 +4347,7 @@ try this later
 		<chargedFrame>1</chargedFrame>
 		<fireFrame>2</fireFrame>
 		<firePoint  x="17" y="93"/>
-		<mountPoint x="6" y="95"/>
+		<mountPoint x="2" y="95"/><!--was 6---->
 		<chargeImage>weapon_beams/fm_ancalagon_beam_glow.png</chargeImage>
 	</weaponAnim>
 
@@ -4459,7 +4459,7 @@ try this later
 		<chargedFrame>1</chargedFrame>
 		<fireFrame>2</fireFrame>
 		<firePoint  x="30" y="39"/>
-		<mountPoint x="13" y="63"/>
+		<mountPoint x="8" y="63"/><!--was 13-->
 		<chargeImage>weapon_beams/fm_focus_virus_glow.png</chargeImage>
 	</weaponAnim>
 </FTL>
@@ -4549,7 +4549,7 @@ try this later
 		<chargedFrame>1</chargedFrame>
 		<fireFrame>2</fireFrame>
 		<firePoint  x="32" y="23"/>
-		<mountPoint x="10" y="29"/>
+		<mountPoint x="4" y="29"/><!--was 10-->
 		<chargeImage>weapon_bombs/fm_ancalagon_dynamo_glow.png</chargeImage>
 	</weaponAnim>
 
@@ -5717,7 +5717,7 @@ try this later
 		<chargedFrame>1</chargedFrame>
 		<fireFrame>5</fireFrame>
 		<firePoint x="20" y="17" />
-		<mountPoint x="9" y="52" />
+		<mountPoint x="4" y="52" /><!--was 9-->
 		<chargeImage>weapon_shadows/laser_shadow_glow.png</chargeImage>
 	</weaponAnim>
 
