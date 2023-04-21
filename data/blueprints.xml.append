@@ -8703,6 +8703,7 @@
 		<shots>1</shots>
 		<breachChance>2</breachChance>
 	        <sp>1</sp>
+		<spin>30</spin>
 		<cooldown>19</cooldown>
 		<power>3</power>
 		<cost>130</cost>
@@ -8731,23 +8732,117 @@
 					<boostType>SET</boostType>
 					<value>false</value>
 					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
+					<crewTarget>ALLIES</crewTarget>
 					<!--<effectAnim>fm_arboreal</effectAnim>-->
-                                        <effectAnim>pheromones_c</effectAnim>
+                                        <effectAnim>pheromone_c</effectAnim>
+					<duration>8</duration>
 					<priority>999999</priority>
 				</statBoost>
 				<statBoost name="trueHealAmount">
 					<boostType>SET</boostType>
-					<amount>-4.5</amount>
+					<amount>-3.5</amount>
 					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<duration>8</duration>
 					<priority>999999</priority>
 				</statBoost>
 						</statBoosts>
 					</deathEffect>
 
 					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALLIES</crewTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>9999999</priority>
+				</statBoost>
+
+
+			</statBoosts>
+		</spawnCrew>
+		<launchSounds>
+			<sound>fm_ancalagon_shot</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_laser_ancalagon_1</weaponArt>
+		<iconImage>laser</iconImage>
+		<iconScale>1.0</iconScale>
+	</weaponBlueprint>
+	
+	<weaponBlueprint name="FM_ARBOREAL_REV">
+		<type>BURST</type>
+		<tip>tip_laser</tip>
+		<title>Arboreal Revitalizer</title>
+		<short>Arboreal R.</short>
+		<desc>The brainchild of two renowned scientists, combining the marvels of Crystal tech and Orchid blossoms to create a weapon capable of serving a good cause without promoting violence.</desc>
+		<damage>0</damage>
+		<sysDamage>3</sysDamage>
+		<radius>20</radius>
+		<spin>30</spin>
+		<shots>1</shots>
+		<breachChance>2</breachChance>
+	        <sp>1</sp>
+		<cooldown>19</cooldown>
+		<power>3</power>
+		<cost>130</cost>
+		<bp>2</bp>
+		<rarity>0</rarity>
+		<speed>40</speed>
+
+		<projectiles>
+			<!--<projectile count="1" fake="false">fm_arboreal_proj</projectile>-->
+			<projectile count="1" fake="false">fm_laser_ancalagon_proj</projectile>			      
+		</projectiles>
+		<spawnCrew>
+			<race>fm_generic_crewjank</race>
+			<number>1</number>
+			<enemy>true</enemy><!--So you don't ever see the crew-->
+			<lifetime>0</lifetime>
+			<noSlot>true</noSlot>
+			<statBoosts>
+
+				<statBoost name="deathEffect"><!--This modifies the stat of the crew, so that the same crew can be used for multiple weapons-->
+					<boostType>SET</boostType>
+					<deathEffect><!--When template crew dies (on weapon impact) these statBoosts are applied -->
+						<statBoosts>
+
+				<statBoost name="trueHealAmount">
+					<boostType>SET</boostType>
+					<amount>20</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<duration>1</duration>
+					<priority>999998</priority>
+				</statBoost>
+				<statBoost name="trueHealAmount">
+					<boostType>SET</boostType>
+					<amount>2</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<duration>20</duration>
+					<priority>999999</priority>
+				</statBoost>
+				<statBoost name="allDamageTaken">
+					<boostType>MULT</boostType>
+					<amount>0.5</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ENEMIES</crewTarget>
+					<duration>20</duration>
+					<priority>999999</priority>
+				</statBoost>
+						</statBoosts>
+					</deathEffect>
+
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
 					<priority>9999999</priority>
 				</statBoost>
 
