@@ -14,7 +14,7 @@ script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION, function(shipM
     local shieldPower = shipManager.shieldSystem.shields.power
     local popData = nil
     if pcall(function() popData = popWeapons[Hyperspace.Get_Projectile_Extend(projectile).name] end) and popData then
-        if shieldPower.super.first <= and response.damage < damage.iShieldPiercing then
+        if shieldPower.super.first <= and response.damage > damage.iShieldPiercing then
             shipManager.shieldSystem:CollisionReal(projectile.position.x, projectile.position.y, Hyperspace.Damage(), true)
             shieldPower.first = math.max(0, shieldPower.first - popData.count)
         end
