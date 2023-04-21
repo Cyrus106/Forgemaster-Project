@@ -22129,7 +22129,7 @@
 		<desc>+30% crew stats, 50% chance to take extra dmg</desc>
 		<cost>85</cost>
 		<rarity>0</rarity>
-			<value>0.5</value><!--Chance of taking damage, can be used with <function> tags in custom augments,
+		<value>0.5</value><!--Chance of taking damage, can be used with <function> tags in custom augments,
 														values greater than one mean guaranteed damage that number of times,
 														plus a chance for additional damage proportional to the remainder.
 
@@ -22149,10 +22149,10 @@
 
 	<augBlueprint name="FM_MODULAR_HULL_FASTWEAPON">
 		<title>Infinitum Cyclo-Arsenal</title>
-		<desc>+166% Weapon reload speed, weapons limited to lvl 3, no weapons manning</desc>
+		<desc>+15% Weapon reload speed per unpowered weapon bar, but flat -5% reload speed</desc>
 		<cost>120</cost>
 		<rarity>0</rarity>
-		<value>1</value>
+		<value>0.15s</value>
 		<stackable>true</stackable>
 	</augBlueprint>
 
