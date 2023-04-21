@@ -4577,9 +4577,8 @@
 			<sound>fm_ancalagon_shot</sound>
 		</launchSounds>
 		<hitShipSounds>
-			<!--<sound>hitHull2</sound>
-			<sound>hitHull3</sound>-->
-			<sound>teleport</sound>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
 		</hitShipSounds>
 		<hitShieldSounds>
 			<sound>hitShield1</sound>
