@@ -4,7 +4,7 @@ local popWeapons = {
   FM_LASER_PHOTON_2 = {count = 1, countSuper = 1},
   FM_LASER_PHOTON_ENEMY = {count = 1, countSuper = 1},
   FM_LASER_PHOTON_2_ENEMY = {count = 1, countSuper = 1},
-  FM_ARBOREAL_EXE = {count = 2, countSuper = 0},
+  FM_ARBOREAL_EXE = {count = 2, countSuper = 0}, --Does 3 hull damage, so pops 3 shields and does 3 damage to superShields
   FM_ARBOREAL_REV = {count = 3, countSuper = 3},
   FM_CHAINGUN_FIRE = {count = 1, countSuper = 1},
   FM_GATLING_ANCIENT_PHOTON = {count = 1, countSuper = 1},
@@ -14,7 +14,7 @@ script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION, function(shipM
     local shieldPower = shipManager.shieldSystem.shields.power
     local popData = nil
     if pcall(function() popData = popWeapons[Hyperspace.Get_Projectile_Extend(projectile).name] end) and popData then
-        if shieldPower.super.first <= 0 then
+        if shieldPower.super.first <= and response.damage < damage.iShieldPiercing then
             shipManager.shieldSystem:CollisionReal(projectile.position.x, projectile.position.y, Hyperspace.Damage(), true)
             shieldPower.first = math.max(0, shieldPower.first - popData.count)
         end
