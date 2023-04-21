@@ -3897,7 +3897,7 @@ try this later
 	<weaponAnim name="fm_arboreal_gun">
 		<sheet>fm_arboreal_gun</sheet>
 		<desc length="60" x="0" y="0"/>
-		<chargedFrame>26</chargedFrame>
+		<chargedFrame>25</chargedFrame>
 		<fireFrame>45</fireFrame>
 		<firePoint  x="42" y="30"/>
 		<mountPoint x="3" y="105"/>
