@@ -4,6 +4,8 @@ local popWeapons = {
   FM_LASER_PHOTON_2 = {count = 1, countSuper = 1},
   FM_LASER_PHOTON_ENEMY = {count = 1, countSuper = 1},
   FM_LASER_PHOTON_2_ENEMY = {count = 1, countSuper = 1},
+  FM_ARBOREAL_EXE = {count = 2, countSuper = 0},
+  FM_ARBOREAL_REV = {count = 3, countSuper = 3},
   FM_CHAINGUN_FIRE = {count = 1, countSuper = 1},
   FM_GATLING_ANCIENT_PHOTON = {count = 1, countSuper = 1},
 }
