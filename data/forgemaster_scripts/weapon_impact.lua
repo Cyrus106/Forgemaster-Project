@@ -1,3 +1,5 @@
+local vter = mods.inferno.vter
+
 -- Make photon-like guns pop shields
 local popWeapons = {
   FM_LASER_PHOTON = {count = 1, countSuper = 1},
@@ -166,6 +168,31 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(ShipMa
       SpaceManager:CreateLaserBlast(blueprint, target, targetSpace, impactOwner, target, targetSpace, 0)
     end
     Hyperspace.Get_Projectile_Extend(Projectile).name = weaponName
+  end
+  return Defines.CHAIN_CONTINUE
+end)
+
+
+
+--SPECIAL CASES:
+script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT,
+function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
+  if Hyperspace.Get_Projectile_Extend(Projectile).name == "FM_ABDUCT_LASER" then
+    local targetRoomNumber = Hyperspace.ShipGraph.GetShipInfo(ShipManager.iShipId):GetSelectedRoom(Location.x, Location.y, true)
+  
+
+    local playTeleportSound = false
+    for crew in vter(ShipManager.vCrewList) do
+      if crew.iShipId == ShipManager.iShipId and crew.iRoomId == targetRoomNumber then --Only abducts enemy crew
+        local arrivalRoomNumber = Hyperspace.random32() % Hyperspace.ShipGraph.GetShipInfo(Projectile.ownerId):RoomCount()
+        Hyperspace.Get_CrewMember_Extend(crew):InitiateTeleport(Projectile.ownerId, arrivalRoomNumber)
+        playTeleportSound = true
+      end
+    end
+  
+    if playTeleportSound then
+      Hyperspace.Global.GetInstance():GetSoundControl():PlaySoundMix("teleport",-1,false)
+    end
   end
   return Defines.CHAIN_CONTINUE
 end)
