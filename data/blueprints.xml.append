@@ -8691,6 +8691,88 @@
 		</missSounds>
 		<weaponArt>laser_burst_1</weaponArt>
 	</weaponBlueprint>
+	
+	<weaponBlueprint name="FM_ARBOREAL_EXE>
+		<type>BURST</type>
+		<tip>tip_laser</tip>
+		<title>Arboreal Executioner</title>
+		<short>Arboreal E.</short>
+		<desc>The brainchild of two renowned scientists, combining the marvels of Crystal tech and Orchid blossoms to create a weapon worthy of the title 'Executioner'.</desc>
+		<damage>3</damage>
+		<radius>20</radius>
+		<shots>1</shots>
+		<breachChance>2</breachChance>
+	        <sp>1</sp>
+		<cooldown>19</cooldown>
+		<power>3</power>
+		<cost>130</cost>
+		<bp>2</bp>
+		<rarity>0</rarity>
+		<speed>40</speed>
+
+		<projectiles>
+			<!--<projectile count="1" fake="false">fm_arboreal_proj</projectile>-->
+			<projectile count="1" fake="false">fm_laser_ancalagon_proj</projectile>			      
+		</projectiles>
+		<spawnCrew>
+			<race>fm_generic_crewjank</race>
+			<number>1</number>
+			<enemy>true</enemy><!--So you don't ever see the crew-->
+			<lifetime>0</lifetime>
+			<noSlot>true</noSlot>
+			<statBoosts>
+
+				<statBoost name="deathEffect"><!--This modifies the stat of the crew, so that the same crew can be used for multiple weapons-->
+					<boostType>SET</boostType>
+					<deathEffect><!--When template crew dies (on weapon impact) these statBoosts are applied -->
+						<statBoosts>
+
+				<statBoost name="canMove">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<!--<effectAnim>fm_arboreal</effectAnim>-->
+                                        <effectAnim>pheromones_c</effectAnim>
+					<priority>999999</priority>
+				</statBoost>
+				<statBoost name="trueHealAmount">
+					<boostType>SET</boostType>
+					<amount>-4.5</amount>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+						</statBoosts>
+					</deathEffect>
+
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALLIES</crewTarget>
+					<priority>9999999</priority>
+				</statBoost>
+
+
+			</statBoosts>
+		</spawnCrew>
+		<launchSounds>
+			<sound>fm_ancalagon_shot</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_laser_ancalagon_1</weaponArt>
+		<iconImage>laser</iconImage>
+		<iconScale>1.0</iconScale>
+	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_AN_LASER">
 		<type>BURST</type>
