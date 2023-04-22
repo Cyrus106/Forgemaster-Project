@@ -4577,9 +4577,8 @@
 			<sound>fm_ancalagon_shot</sound>
 		</launchSounds>
 		<hitShipSounds>
-			<!--<sound>hitHull2</sound>
-			<sound>hitHull3</sound>-->
-			<sound>teleport</sound>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
 		</hitShipSounds>
 		<hitShieldSounds>
 			<sound>hitShield1</sound>
@@ -5376,8 +5375,9 @@
 		<shots>1</shots>
 		<breachChance>2</breachChance>
 	    <sp>1</sp>
-		<spin>30</spin>
+		<spin>720</spin>
 		<cooldown>19</cooldown>
+		<fireTime>0.9</fireTime>
 		<power>3</power>
 		<cost>130</cost>
 		<bp>2</bp>
@@ -5472,11 +5472,12 @@
 		<damage>0</damage>
 		<sysDamage>3</sysDamage>
 		<radius>20</radius>
-		<spin>30</spin>
+		<spin>720</spin>
 		<shots>1</shots>
 		<breachChance>2</breachChance>
 	    <sp>1</sp>
 		<cooldown>19</cooldown>
+		<fireTime>0.9</fireTime>
 		<power>3</power>
 		<cost>130</cost>
 		<bp>2</bp>
