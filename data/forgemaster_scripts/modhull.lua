@@ -92,7 +92,7 @@ script.on_internal_event(Defines.InternalEvents.GET_AUGMENTATION_VALUE,
 function(shipManager, AugName, AugValue)
   
   if AugName == "AUTO_COOLDOWN" and shipManager:HasAugmentation("FM_MODULAR_HULL_FASTWEAPON") > 0 then
-    local emptyWeaponBars = shipManager:GetSystemPowerMax(3) - shipManager:GetSystemPower(3) - math.max(getLimitAmount(3,0),shipManager:GetSystemPowerMax(3) - shipManager:GetSystem(3).healthState.first) 
+    local emptyWeaponBars = shipManager:GetSystemPowerMax(3) - shipManager:GetSystemPower(3) - math.max(GetLimitAmount(shipManager:GetSystem(3)),shipManager:GetSystemPowerMax(3) - shipManager:GetSystem(3).healthState.first) 
     local cooldownModifier = (emptyWeaponBars * shipManager:GetAugmentationValue("FM_MODULAR_HULL_FASTWEAPON")) --maybe i will later make it stackable
     AugValue = AugValue + cooldownModifier
   end

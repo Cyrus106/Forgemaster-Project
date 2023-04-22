@@ -1036,7 +1036,7 @@
       <text>You must have a Heavy Energy and Heavy Ion to forge this weapon.</text>
       <event load="OPTION_INVALID"/>
     </choice>
-	  
+
     <choice req="FM_SURGE_LASER_LIST" lvl="1" blue="false" hidden="true">
       <text>Install the Burst Laser with the Flak 4's power core. [Cost: 80~]</text>
       <event load="STORAGE_CHECK_CREATE_FM_SURGE_LASER"/>
@@ -1194,7 +1194,7 @@
       <text>You must have a Dirk pinpoint and Conservative Energy to forge this weapon.</text>
       <event load="OPTION_INVALID"/>
     </choice>
-	  
+
     <choice req="FM_FOCUS_VIRUS_FORGE_LIST" lvl="1" blue="false" hidden="true">
       <text>Enhance the Anelace's focusing lens with the Corrosive Laser's deadly chemicals.[Cost: 50~]</text>
       <event load="STORAGE_CHECK_CREATE_FM_FOCUS_VIRUS"/>
@@ -1381,13 +1381,13 @@
     </choice>
 
     <choice req="FM_IMPRISMENT_INDUCER_LIST" lvl="1" blue="false" hidden="true">
-		  <text>Reconfigure the Stun Bomb to disperse the debilitating crystalline particles of the Neural Crystal to forge the Imprisment Inducer.</text>
-		  <event load="STORAGE_CHECK_CREATE_FM_IMPRISMENT_INDUCER"/>
+      <text>Reconfigure the Stun Bomb to disperse the debilitating crystalline particles of the Neural Crystal to forge the Imprisment Inducer.</text>
+			<event load="STORAGE_CHECK_CREATE_FM_IMPRISMENT_INDUCER"/>
 		</choice>
 
 		<choice req="FM_IMPRISMENT_INDUCER_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
-		  <text>You must have a Stun Bomb and Neural Crystal to forge this weapon.</text>
-		  <event load="OPTION_INVALID"/>
+			<text>You must have a Stun Bomb and Neural Crystal to forge this weapon.</text>
+			<event load="OPTION_INVALID"/>
 		</choice>
 
 		<choice req="FM_RVS_AC_CHARGE_FORGE_LIST" lvl="1" blue="false" hidden="true">
