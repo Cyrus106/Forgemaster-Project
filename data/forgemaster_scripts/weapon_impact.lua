@@ -42,6 +42,7 @@ local roomDamageWeapons = {
   FM_MISSILES_CLOAK_STUN = {ion = 3},
   FM_MISSILES_CLOAK_STUN_PLAYER = {ion = 3},
   FM_MISSILES_CLOAK_STUN_MEGA = {ion = 3},
+  FM_MISSILES_CLOAK_STUN_ENEMY = {ion = 3},
   FM_FORGEMAN_DRONE_WEAPON = {hull = 1},
   FM_RVS_AC_CHARGE_EMP = {ion = 1},
 }
@@ -56,13 +57,13 @@ end
 
 local tileDamageWeapons = {
   FM_BEAM_ION_PIERCE = Damage {ion = 1},
-  FM_FOCUS_ENERGY = Damage {ion = 2},
+  FM_FOCUS_ENERGY_1 = Damage {ion = 2},
   FM_FOCUS_ENERGY_2 = Damage {ion = 3},
   FM_FOCUS_ENERGY_2_PLAYER = Damage {ion = 3},
   FM_FOCUS_ENERGY_3 = Damage {ion = 4},
   FM_FOCUS_ENERGY_CONS = Damage {ion = 2},
   FM_BEAM_ION_PIERCE_ENEMY = Damage {ion = 1},
-  FM_FOCUS_ENERGY_ENEMY = Damage {ion = 2},
+  FM_FOCUS_ENERGY_1_ENEMY = Damage {ion = 2},
   FM_FOCUS_ENERGY_2_ENEMY =  Damage {ion = 3},
   FM_FOCUS_ENERGY_3_ENEMY = Damage {ion = 4},
 }
