@@ -1720,10 +1720,10 @@
 		<health amount="30" />
 		<maxPower amount="8" />
 		<crew>
-			<human_engineer room="0" name="The Engineer"/>
-			<human_engineer room="3" name="The Engihere"/>
-			<engi room="9" name="The Engi"/>
-			<human_medic room="7" name="The Medic"/>
+			<human_engineer room="0" name="Zed"/>
+			<human_engineer room="3" name="Maynard"/>
+			<engi room="9" name="Dell"/>
+			<human_medic room="7" name="Ludwig"/>
 		</crew>
 		<systemLimit>10</systemLimit>
 		<customReactor maxLevel="35" />
