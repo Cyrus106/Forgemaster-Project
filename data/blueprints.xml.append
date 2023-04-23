@@ -4550,19 +4550,19 @@
 
 	<weaponBlueprint name="FM_ABDUCT_LASER">
 		<type>LASER</type>
-		<title>Abduction Laser</title>
-		<short>Abduction Laser</short>
+		<title>'Persephone' Abduction Laser</title>
+		<short>'Persephone' Abduction Laser</short>
 		<tip>tip_laser</tip>
-		<desc>Yoinky the crew, sploinky the crew.</desc>
-		<tooltip>Abduction laser; 0 damage, 1 shot. 3 second cooldown, cannot miss.</tooltip>
+		<desc>Due to the difficulties with installing bulky teleportation equipment aboard certain research vessels, shell scientists from another dimension developed this novel new way of non-consensual, one-way crew teleportation. It doesn't hurt... mostly.</desc>
+		<tooltip>Fires one shot that abducts all crew in the room.</tooltip>
 		<damage>0</damage>
 		<shots>1</shots>
-		<sp>10</sp>
+		<sp>3</sp>
 		<fireChance>0</fireChance>
 		<breachChance>2</breachChance>
-		<cooldown>13</cooldown>
+		<cooldown>14</cooldown>
 		<speed>140</speed>
-		<accuracyMod>100</accuracyMod>
+		<accuracyMod>30</accuracyMod>
 		<power>1</power>
 		<cost>40</cost>
 		<fireTime>0.6</fireTime>
@@ -4570,10 +4570,6 @@
 		<rarity>0</rarity>
 		<image>fm_abduct_laser_proj</image>
 		<launchSounds>
-			<!--<sound>lightLaser1</sound>
-			<sound>lightLaser2</sound>
-			<sound>lightLaser3</sound>-->
-
 			<sound>fm_ancalagon_shot</sound>
 		</launchSounds>
 		<hitShipSounds>
