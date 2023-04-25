@@ -1,9 +1,66 @@
--- popping extra shields (and damage to zoltan shields)
---[[ appended to like this 
-mods.inferno.popWeapons.FM_LASER_PHOTON = {count = 1, countSuper = 1}
-]]
-mods.inferno.popWeapons = {}
 
+--DOCUMENTATION
+mods.inferno.popWeapons = {}
+--[[ 
+Used for popping additional shield layers and doing additional damage to zoltan shields. 
+
+count: Additional layers popped on impact.
+countSuper: Additional damage to supershields on impact.
+
+(Note: Both arguments are required.)
+
+Usage:
+mods.inferno.popWeapons.FM_LASER_PHOTON = {count = 1, countSuper = 1}
+--]]
+mods.inferno.roomDamageWeapons = {}
+--[[
+Used to modify the damage of non-beam weapons upon room impact.
+
+hull: Additional hull damage on room impact. (Default of 0)
+ion: Additional ion damage on room impact. (Default of 0)
+sys: Additional system damage on room impact. (Default of 0)
+
+Usage:
+mods.inferno.roomDamageWeapons.FM_MISSILES_CLOAK_STUN_PLAYER = {hull = 0, ion = 3, sys = 0}
+--]]
+mods.inferno.tileDamageWeapons = {}
+--[[
+Used to apply additional damage on a per-tile basis for beam weapons.
+
+hull: Additional hull damage on room impact. (Default of 0)
+ion: Additional ion damage on room impact. (Default of 0)
+sys: Additional system damage on room impact. (Default of 0)
+
+Usage:
+mods.inferno.tileDamageWeapons.FM_BEAM_ION_PIERCE = {ion = 1}
+--]]
+mods.inferno.impactBeams = {}
+--[[
+Simulates an impact of the specified weapon on a per-tile bases for beam weapons. (Will work best with LASER <weaponBlueprints>, but can work with others.)
+
+This can be used to for more complex effects previously delegated to "crewjank" (Such as damage plus animations and sound effects.)
+
+(Note: These projectiles CAN miss. The blueprint should have <accuracyMod>100</accuracyMod> until projectile accuracy is exposed to lua.)
+
+Usage:
+mods.inferno.impactBeams.FM_BEAM_EXPLOSION = "FM_BEAM_EXPLOSION_LASER"
+--]]
+mods.inferno.bombBeams = {}
+--[[
+Spawns a bomb on every hit tile (for beam weapons). Similar to impactBeams, except the bomb has to teleport in, and it grants visibility of the targetted room.
+
+Usage:
+mods.inferno.impactBeams.FM_BEAM_EXPLOSION = "FM_BEAM_EXPLOSION_BOMB"
+--]]
+mods.inferno.hitEveryRoom = {}
+--[[
+Simulates a hit on every room in the ship. (Useful for applying shipwide statboosts.)
+
+Usage: 
+mods.inferno.hitEveryRoom.FM_TERMINUS = "FM_TERMINUS_STATBOOST"
+--]]
+
+--IMPLEMENTATION
 script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION, function(ShipManager, Projectile, Damage, CollisionResponse)
     local shieldPower = ShipManager.shieldSystem.shields.power
     local popData = nil
@@ -26,26 +83,6 @@ script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION_PRE, function(S
 end)
 
 
--- Modifies the damage of a (non-beam) weapon when hitting a room
---[[ appended to like this (values of 0 can be omitted)
-mods.inferno.roomDamageWeapons.FM_MISSILES_CLOAK_STUN_PLAYER = {hull = 0, ion = 3, sys = 0}
-]]
-mods.inferno.roomDamageWeapons = {}
-
-local function Damage(table)
-    local ret = Hyperspace.Damage()
-    ret.iDamage = table.hull or 0 
-    ret.iIonDamage = table.ion or 0 
-    ret.iSystemDamage = table.system or 0 
-    return ret
-end
-
--- deals an extra instance of damage on every tile hit by a beam/pinpoint
---[[ appended to like this (values of 0 can be omitted)
-mods.inferno.tileDamageWeapons.FM_BEAM_ION_PIERCE = Damage {ion = 1}
-]]
-mods.inferno.tileDamageWeapons ={}
-
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, function(ShipManager, Projectile, Location, Damage, forceHit, shipFriendlyFire)
     local roomDamage
     pcall(function() roomDamage = mods.inferno.roomDamageWeapons[Hyperspace.Get_Projectile_Extend(Projectile).name] end)
@@ -56,7 +93,14 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, function(ShipManage
     end
     return Defines.CHAIN_CONTINUE, forceHit, shipFriendlyFire
 end)
-  
+
+local function Damage(table)
+    local ret = Hyperspace.Damage()
+    ret.iDamage = table.hull or 0 
+    ret.iIonDamage = table.ion or 0 
+    ret.iSystemDamage = table.system or 0 
+    return ret
+end
 script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
     local tileDamage
     pcall(function() tileDamage = mods.inferno.tileDamageWeapons[Hyperspace.Get_Projectile_Extend(Projectile).name] end)
@@ -64,20 +108,12 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(ShipManage
         local weaponName = Hyperspace.Get_Projectile_Extend(Projectile).name
         Hyperspace.Get_Projectile_Extend(Projectile).name = ""
         local farPoint = Hyperspace.Pointf(-2147483648, -2147483648)
-        ShipManager:DamageBeam(Location, farPoint, tileDamage)
+        ShipManager:DamageBeam(Location, farPoint, Damage(tileDamage))
         Hyperspace.Get_Projectile_Extend(Projectile).name = weaponName
     end
     return Defines.Chain.CONTINUE, beamHitType
 end)
 
-
---creates a hit of a specified LASER weaopon on each tile hit (it spawns the projectile of the weapon)
---[[appended to like this
-    mods.inferno.impactBeams.FM_BEAM_EXPLOSION = "FM_BEAM_EXPLOSION_LASER"
-]]
-mods.inferno.impactBeams = {}
-
---Instant Impact (Until accuracy stats are exposed, please ensure all weapons used in impactBeams have accuracy 100)
 script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
     local impact
     pcall(function() impact = mods.inferno.impactBeams[Hyperspace.Get_Projectile_Extend(Projectile).name] end)
@@ -92,9 +128,6 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(ShipManage
         end
     end
 end)
-
---like impactBeams but spawns bombs instead (this means you can see teh projectile first)
-mods.inferno.bombBeams = {}
 
 script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
     function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
@@ -112,8 +145,6 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
     end
 end)
 
--- like impactBeams but for non-beams and hitting every room once
-mods.inferno.hitEveryRoom = {}
 
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
     local roomDamage
@@ -135,6 +166,8 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(ShipMa
     return Defines.CHAIN_CONTINUE
 end)
 
+
+--AUGMENT EFFECTS
 local function effectResist(ShipManager, Projectile, Location, Damage, forceHit, shipFriendlyFire)
     local augValue = ShipManager:GetAugmentationValue("FMCORE_NO_BREACH")
     if augValue ~= 0 and Damage.breachChance >= 0 then
@@ -146,7 +179,5 @@ local function effectResist(ShipManager, Projectile, Location, Damage, forceHit,
     end
     return Defines.CHAIN_CONTINUE, forceHit, shipFriendlyFire
 end
-
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, effectResist)
-  
 script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, effectResist)
