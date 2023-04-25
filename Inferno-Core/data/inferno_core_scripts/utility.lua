@@ -1,11 +1,11 @@
 mods.inferno = {}
 
 mods.inferno.vter = function(cvec)
-  local i=-1 --so the first returned value is indexed at zero
-  local n=cvec:size()
+  local i = -1 --so the first returned value is indexed at zero
+  local n = cvec:size()
   return function ()
-      i=i+1
-      if i<n then return cvec[i] end
+      i = i + 1
+      if i < n then return cvec[i] end
   end
 end
 mods.inferno.real_projectile = function(projectile) --replace when we have access to the death animation and can check directly
