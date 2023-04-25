@@ -32,7 +32,7 @@ mods.inferno.randomInt = function(min,max)
   if max<min then
     error("randomInt function error: max is less than min!", 2)
   end
-  return (Hyperspace.random32() % (max-min+1)) + min
+  return (Hyperspace.random32() % (max - min + 1)) + min
 end
 
 function mods.inferno.GetLimitAmount(ShipSystem)
