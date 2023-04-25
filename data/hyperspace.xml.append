@@ -15596,6 +15596,8 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 
 			<req mult="1" type="sum"><!--all of the modules that cost 1 notch-->
 				<name>FM_MODULAR_HULL_FORTIFIED</name>
+				<name>FM_MODULAR_HULL_NO_BREACH</name>
+				<name>FM_MODULAR_HULL_NO_FIRE</name>
 				<name>FM_MODULAR_HULL_RESILIENT</name>
 				<name>FM_MODULAR_HULL_GUARDIAN</name>
 				<name>FM_MODULAR_HULL_FLOORING</name>

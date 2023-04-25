@@ -6784,66 +6784,86 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="pilot" max_group="4" blue="false">
+			<text>Breach Repellent Module [30~]</text>
+			<event>
+				<loadEvent>FM_MODULAR_HULL_MODULE_NO_BREACH</loadEvent>
+			</event>
+		</choice>
+		<choice req="FM_MODULAR_HULL_NO_BREACH" lvl="5" max_group="4" blue="false" hidden="true">
+			<text>Breach Repellent Module [MAXED]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="pilot" max_group="5" blue="false">
+			<text>Fire Repellent Module [50~]</text>
+			<event>
+				<loadEvent>FM_MODULAR_HULL_MODULE_NO_FIRE</loadEvent>
+			</event>
+		</choice>
+		<choice req="FM_MODULAR_HULL_NO_FIRE" lvl="5" max_group="5" blue="false" hidden="true">
+			<text>Fire Repellent Module [MAXED]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="pilot" max_group="6" blue="false">
 			<text>Resilient Construction Module [25~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MODULE_RESILIENT</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="15" max_group="4" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_RESILIENT" lvl="15" max_group="6" blue="false" hidden="true">
 			<text>Resilient Construction Module [MAXED]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="pilot" max_group="5" blue="false">
+		<choice req="pilot" max_group="7" blue="false">
 			<text>Guardian Protocols Module [30~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MODULE_GUARDIAN</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="5" max_group="5" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_GUARDIAN" lvl="5" max_group="7" blue="false" hidden="true">
 			<text>Guardian Protocols Module [MAXED]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="pilot" max_group="6" blue="false">
+		<choice req="pilot" max_group="8" blue="false">
 			<text>Intelligent Flooring Module [20~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MODULE_FLOORING</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_FLOORING" lvl="6" max_group="6" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_FLOORING" lvl="6" max_group="8" blue="false" hidden="true">
 			<text>Intelligent Flooring Module [MAXED]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="pilot" max_group="7" blue="false">
+		<choice req="pilot" max_group="9" blue="false">
 			<text>Inspirational Aerosols Module [90~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MODULE_AERO</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_AERO" lvl="5" max_group="7" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_AERO" lvl="5" max_group="9" blue="false" hidden="true">
 			<text>Inspirational Aerosols Module [MAXED]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="FM_MODULAR_HULL_RESPIRATION" lvl="0" max_lvl="0" max_group="8" blue="false">
+		<choice req="FM_MODULAR_HULL_RESPIRATION" lvl="0" max_lvl="0" max_group="10" blue="false">
 			<text>Enhanced Respiration Grid Module [45~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MODULE_RESPIRATION</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_RESPIRATION" max_group="8" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_RESPIRATION" max_group="10" blue="false" hidden="true">
 			<text>Enhanced Respiration Grid Module [MAXED]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="pilot" max_group="9" blue="false">
+		<choice req="pilot" max_group="11" blue="false">
 			<text>Scrap Magnet Module [25~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MODULE_SCRAP</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_SCRAP" lvl="3" max_group="9" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_SCRAP" lvl="3" max_group="11" blue="false" hidden="true">
 			<text>Scrap Magnet Module [MAXED]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="pilot" max_group="10" blue="false">
+		<choice req="pilot" max_group="12" blue="false">
 			<text>Nevermind.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
@@ -6918,6 +6938,58 @@
 
 				<item_modify>
 					<item type="scrap" min="-65" max="-65"/>
+				</item_modify>
+				<choice blue="false">
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice req="pilot" max_group="2" blue="false">
+			<text>Nevermind.</text>
+			<event>
+				<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+			</event>
+		</choice>
+	</event>
+	<event name="FM_MODULAR_HULL_MODULE_NO_BREACH">
+		<text>Install Breach Repellent? [removes a flat 10% of enemy attacks' breach chance, 5 can be installed, uses 1 upgrade notches]</text>
+		<choice req="pilot" max_group="1" blue="false">
+			<text>Install the Breach Repellent.</text>
+			<event>
+				<text>Breach Repellent have been installed!</text>
+				<hiddenAug>FM_MODULAR_HULL_NO_BREACH</hiddenAug>
+
+				<item_modify>
+					<item type="scrap" min="-30" max="-30"/>
+				</item_modify>
+				<choice blue="false">
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice req="pilot" max_group="2" blue="false">
+			<text>Nevermind.</text>
+			<event>
+				<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+			</event>
+		</choice>
+	</event>
+	<event name="FM_MODULAR_HULL_MODULE_NO_FIRE">
+		<text>Install Fire Repellent? [removes a flat 10% of enemy attacks' fire chance, 5 can be installed, uses 2 upgrade notches]</text>
+		<choice req="pilot" max_group="1" blue="false">
+			<text>Install the Fire Repellents.</text>
+			<event>
+				<text>Fire Repellent have been installed!</text>
+				<hiddenAug>FM_MODULAR_HULL_NO_FIRE</hiddenAug>
+
+				<item_modify>
+					<item type="scrap" min="-50" max="-50"/>
 				</item_modify>
 				<choice blue="false">
 					<text>Continue...</text>
@@ -9219,6 +9291,48 @@
 		</choice>
 		<choice req="FM_MODULAR_HULL_ENCASED" lvl="10" max_lvl="10" blue="false" hidden="true">
 			<text>Encased Systems Module(x10) [+100% sys resist]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<!--breach repellent-->
+		<choice req="FM_MODULAR_HULL_NO_BREACH" lvl="1" max_lvl="1" blue="false" hidden="true">
+			<text>Breach Repellent Module [-10% enemy breach chance]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="FM_MODULAR_HULL_NO_BREACH" lvl="2" max_lvl="2" blue="false" hidden="true">
+			<text>Breach Repellent Module(x2) [-20% enemy breach chance]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="FM_MODULAR_HULL_NO_BREACH" lvl="3" max_lvl="3" blue="false" hidden="true">
+			<text>Breach Repellent Module(x3) [-30% enemy breach chance]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="FM_MODULAR_HULL_NO_BREACH" lvl="4" max_lvl="4" blue="false" hidden="true">
+			<text>Breach Repellent Module(x4) [-40% enemy breach chance]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="FM_MODULAR_HULL_NO_BREACH" lvl="5" max_lvl="5" blue="false" hidden="true">
+			<text>Breach Repellent Module(x5) [-50% enemy breach chance]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<!--fire repellent-->
+		<choice req="FM_MODULAR_HULL_NO_FIRE" lvl="1" max_lvl="1" blue="false" hidden="true">
+			<text>Fire Repellent Module [-10% enemy fire chance]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="FM_MODULAR_HULL_NO_FIRE" lvl="2" max_lvl="2" blue="false" hidden="true">
+			<text>Fire Repellent Module(x2) [-20% enemy fire chance]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="FM_MODULAR_HULL_NO_FIRE" lvl="3" max_lvl="3" blue="false" hidden="true">
+			<text>Fire Repellent Module(x3) [-30% enemy fire chance]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="FM_MODULAR_HULL_NO_FIRE" lvl="4" max_lvl="4" blue="false" hidden="true">
+			<text>Fire Repellent Module(x4) [-40% enemy fire chance]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="FM_MODULAR_HULL_NO_FIRE" lvl="5" max_lvl="5" blue="false" hidden="true">
+			<text>Fire Repellent Module(x5) [-50% enemy fire chance]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<!--Resilient-->
