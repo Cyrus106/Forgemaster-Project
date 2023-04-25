@@ -7303,7 +7303,7 @@
 		<title>Terra Nova 'ShipCracker'</title>
 		<short>Terra Nova</short>
 		<desc>Now that Zulfiqar has moved to weapon development, they have repurposed their earlier 'Planet Cracker' design to crack ships instead. Unleashes up to 4 breaches upon enemy ships after a very brief delay.</desc>
-		<descriptionOverride>Now that Zulfiqar has moved to weapon development, they have repurposed their earlier 'Planet Cracker' design to crack ships instead. Unleashes up to 4 breaches upon enemy ships.
+		<!--<descriptionOverride>Now that Zulfiqar has moved to weapon development, they have repurposed their earlier 'Planet Cracker' design to crack ships instead. Unleashes up to 4 breaches upon enemy ships.
 
 			Stats:
 			Required Power: 4
@@ -7319,9 +7319,9 @@
 			Breach Chance: 350%
 
 			Buy/Sell Price: 550~/275~
-		</descriptionOverride>
+		</descriptionOverride>-->
 		<tooltip>Beam weapon, 8 damage to hull, 8 damage to systems, 120 damage to crew</tooltip>
-		<tooltipOverride>Required Power: 4
+		<!--<tooltipOverride>Required Power: 4
 			Charge Time: 26 seconds
 
 			Beam Length: 1
@@ -7332,7 +7332,7 @@
 			Total Crew Damage: 120
 
 			Breach Chance: 350%
-		</tooltipOverride>
+		</tooltipOverride>-->
 		<damage>8</damage>
 		<breachChance>35</breachChance> <!--NOT A MISTAKE-->
 		<cooldown>26</cooldown>

@@ -14124,6 +14124,14 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<aug name="FM_MODULAR_HULL_ENCASED">
 			<function name="SYSTEM_CASING" value="0.10" useForReqs="false"/>
 		</aug>
+		
+		<aug name="FM_MODULAR_HULL_NO_BREACH">
+			<function name="FMCORE_NO_BREACH" value="1" useForReqs="false"/>
+		</aug>
+		
+		<aug name="FM_MODULAR_HULL_NO_FIRE">
+			<function name="FMCORE_NO_FIRE" value="1" useForReqs="false"/>
+		</aug>
 
 		<aug name="FM_MODULAR_HULL_RESILIENT">
 			<statBoosts>
