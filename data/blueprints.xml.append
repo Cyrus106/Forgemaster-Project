@@ -18546,6 +18546,22 @@
 		<rarity>0</rarity>
 		<stackable>true</stackable>
 	</augBlueprint>
+	
+	<augBlueprint name="FM_MODULAR_HULL_NO_BREACH">
+		<title>Breach Repellent</title>
+		<desc>-10% breach chance</desc>
+		<cost>30</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+	
+	<augBlueprint name="FM_MODULAR_HULL_NO_FIRE">
+		<title>Fire Repellent</title>
+		<desc>-10% fire chance</desc>
+		<cost>50</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
 	<augBlueprint name="FM_MODULAR_HULL_RESILIENT">
 		<title>Resilient Construction</title>
@@ -18588,12 +18604,12 @@
 	</augBlueprint>
 
 	<augBlueprint name="FM_MODULAR_HULL_SCRAP">
-    <title>Scrap Magnet Module</title>
-    <desc>A small scrap collection magnet that raises scrap income by 5%</desc>
-    <cost>25</cost>
-    <rarity>0</rarity>
-    <stackable>true</stackable>
-  </augBlueprint>
+		<title>Scrap Magnet Module</title>
+		<desc>A small scrap collection magnet that raises scrap income by 5%</desc>
+		<cost>25</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
 	<!--page 2-->
 	<augBlueprint name="FM_MODULAR_HULL_VENGEANCE1">
