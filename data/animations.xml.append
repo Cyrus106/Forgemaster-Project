@@ -4316,7 +4316,7 @@ try this later
 		<chargedFrame>1</chargedFrame>
 		<fireFrame>2</fireFrame>
 		<firePoint  x="21" y="49"/>
-		<mountPoint x="2" y="70"/>
+		<mountPoint x="4" y="70"/><!--was 2-->
 		<chargeImage>weapon_beams/fm_beam_particle_pierce_glow.png</chargeImage>
 	</weaponAnim>
 

@@ -55,9 +55,7 @@ Stun Chance: 20%</descriptionOverride>
 
 FM: A COMPONENT for forging the Terra Nova Pinpoint[70~], alongside the other COMPONENT 'Misericorde' Pinpoint or 'Stiletto' Pinpoint. </text>
 <text name="tip_beam_mining_3">This pinpoint is powerful enough to tear multiple breaches on tiles around the impact area, as opposed to only where the beam touches.</text>
-<text name="tip_laser_photon">This power efficient burst laser can pop shields and inflict status effects but deals no hull* or crew damage.
-
-	* if enemy ship is at minimum structural integrity it will potentially destroy the ship.</text>
+<text name="tip_laser_photon">Tip: This weapon can pop shields despite dealing no hull damage.</text>
 
 
 <!--    CRAFT TIPS

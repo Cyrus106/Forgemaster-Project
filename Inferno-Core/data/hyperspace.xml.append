@@ -77,6 +77,7 @@
 		<mod-append:script>data/inferno_core_scripts/callbacks.lua</mod-append:script>
 		<mod-append:script>data/inferno_core_scripts/systems.lua</mod-append:script>
 		<mod-append:script>data/inferno_core_scripts/weapons.lua</mod-append:script>
+		<mod-append:script>data/inferno_core_scripts/weapon_impact.lua</mod-append:script>
 		<mod-append:script>data/inferno_core_scripts/screen_effects.lua</mod-append:script>
 		<mod-append:script>data/inferno_core_scripts/augmentInfoBoxes.lua</mod-append:script>
 

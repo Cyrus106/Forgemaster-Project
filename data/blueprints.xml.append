@@ -4798,8 +4798,8 @@
 		<tip>tip_laser_photon</tip>
 		<title>Photon Laser MK I</title>
 		<short>Photon I</short>
-		<desc>Fires a photonic blast that can disrupt shields like normal lasers, but only deals system damage with a low chance to start a fire or breach. A ship would have to be close to destruction for this to possibly destroy it.</desc>
-		<descriptionOverride>Fires a photonic blast that can disrupt shields like normal lasers, but only deals system damage with a low chance to start a fire or breach. A ship would have to be close to destruction for this to possibly destroy it.
+		<desc>Fires a photonic blast that can disrupt shields like normal lasers, but only deals system damage with a low chance to start a fire or breach.</desc>
+		<!--<descriptionOverride>Fires a photonic blast that can disrupt shields like normal lasers, but only deals system damage with a low chance to start a fire or breach. A ship would have to be close to destruction for this to possibly destroy it.
 
 			Stats:
 			Required Power: 1
@@ -4827,7 +4827,7 @@
 
 			Fire Chance: 20%
 			Breach Chance: 10% (Adjusted: 8%)
-		</tooltipOverride>
+		</tooltipOverride>-->
 		<damage>0</damage>
 		<sysDamage>1</sysDamage>
 		<noPersDamage>true</noPersDamage>
@@ -4887,8 +4887,8 @@
 		<tip>tip_laser_photon</tip>
 		<title>Photon Laser MK II</title>
 		<short>Photon II</short>
-		<desc>Fires a photonic blast that can disrupt shields like normal lasers, but only deals system damage with a low chance to start a fire or breach. A ship would have to be close to destruction for this to possibly destroy it.</desc>
-		<descriptionOverride>Fires a photonic blast that can disrupt shields like normal lasers, but only deals system damage with a low chance to start a fire or breach. A ship would have to be close to destruction for this to possibly destroy it.
+		<desc>Fires a photonic blast that can disrupt shields like normal lasers, but only deals system damage with a low chance to start a fire or breach.</desc>
+		<!--<descriptionOverride>Fires a photonic blast that can disrupt shields like normal lasers, but only deals system damage with a low chance to start a fire or breach. A ship would have to be close to destruction for this to possibly destroy it.
 
 			Stats:
 			Required Power: 2
@@ -4916,7 +4916,7 @@
 
 			Fire Chance: 20%
 			Breach Chance: 10% (Adjusted: 8%)
-		</tooltipOverride>
+		</tooltipOverride>-->
 		<damage>0</damage>
 		<sysDamage>1</sysDamage>
 		<noPersDamage>true</noPersDamage>
@@ -6250,9 +6250,9 @@
 		<drone_targetable>0</drone_targetable>
 		<title>'Hellflash' Gatling Gun</title>
 		<short>'Hellflash'</short>
-		<tip>tip_chain_laser</tip>
+		<tip>tip_laser_photon</tip>
 		<desc>Some Renegades just want to watch the Multiverse burn.</desc>
-		<descriptionOverride>Some Renegades just want to watch the Multiverse burn.
+		<!--<descriptionOverride>Some Renegades just want to watch the Multiverse burn.
 			
 			Stats:
 			Required Power: 3
@@ -6270,7 +6270,7 @@
 			Stun Chance: 20% (3 seconds long)
 
 			Buy/Sell Price: 190~/95~
-		</descriptionOverride>
+		</descriptionOverride>-->
 		<tooltip>Cooldown drops the more it fires.</tooltip>
 		<radius>75</radius>
 		<damage>0</damage>
@@ -15181,7 +15181,6 @@
 		<spin>360</spin>
 		<shots>1</shots>
 		<sp>0</sp>
-		<hullBust>1</hullBust>
 		<fireChance>0</fireChance>
 		<breachChance>4</breachChance>
 		<hullBust>1</hullBust>

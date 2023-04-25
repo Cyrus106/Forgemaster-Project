@@ -1749,6 +1749,39 @@
 
 </mod:findName>
 
+<mod:findName type="blueprintList" name="BLUELIST_WEAPONS_HEAVY">
+	<mod-append:name>FM_BEAM_MINING_2</mod-append:name>
+	<mod-append:name>FM_BEAM_MINING_3</mod-append:name>
+	<mod-append:name>FM_ENERGY_DISC</mod-append:name>
+	<mod-append:name>FM_PULSEDEEP</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_HASSIUM</mod-append:name>
+    <mod-append:name>FM_MISSILES_BURST_FIRE</mod-append:name>
+    <mod-append:name>FM_MISSILES_BURST_FIRE_PLAYER</mod-append:name>
+	<mod-append:name>FM_MISSILES_BURST_FIRE_MEGA</mod-append:name>
+	<mod-append:name>FM_MISSILES_CLOAK_STUN</mod-append:name>
+	<mod-append:name>FM_MISSILES_CLOAK_STUN_PLAYER</mod-append:name>
+	<mod-append:name>FM_MISSILES_CLOAK_STUN_MEGA</mod-append:name>
+	<mod-append:name>FM_ION_MISSILES</mod-append:name>
+	<mod-append:name>FM_MINELAUNCHER_HULL</mod-append:name>
+	<mod-append:name>MISSILES_3_INVIS</mod-append:name>
+	<mod-append:name>FM_CORROSIVE_1</mod-append:name>
+	<mod-append:name>FM_CORROSIVE_2</mod-append:name>
+	<mod-append:name>FM_CORROSIVE_3</mod-append:name>
+	<mod-append:name>FM_CHARGE_SNIPER</mod-append:name>
+	<mod-append:name>FM_ENERGY_RAILBLENDER</mod-append:name>
+	<mod-append:name>FM_ENERGY_RAILBLENDER</mod-append:name>
+	<mod-append:name>FM_AN_BEAM</mod-append:name>
+	<mod-append:name>FM_FOCUS_ENERGY_2</mod-append:name>
+	<mod-append:name>FM_FOCUS_ENERGY_2_PLAYER</mod-append:name>
+	<mod-append:name>FM_FOCUS_ENERGY_3</mod-append:name>
+	<mod-append:name>BEAM_ADAPT_3_PLAYER_ARTY_CHAIN</mod-append:name>
+	<mod-append:name>FM_FOCUS_FUELED_1</mod-append:name>
+	<mod-append:name>FM_FOCUS_FUELED_2</mod-append:name>
+	<mod-append:name>FM_FOCUS_FUELED_3</mod-append:name>
+	<mod-append:name>FM_FOCUS_FUELED_4</mod-append:name>
+	<mod-append:name>FM_FOCUS_FUELED_5</mod-append:name>
+</mod:findName>
+
 <mod:findName type="blueprintList" name="BLUELIST_WEAPONS_FIRE_ALL">
     <mod-append:name>FM_FLAMETHROWER</mod-append:name>
     <mod-append:name>FM_ION_TRI_FIRE</mod-append:name>

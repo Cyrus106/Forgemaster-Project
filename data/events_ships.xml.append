@@ -2627,7 +2627,7 @@
 				<choice hidden="true">
 					<text>Continue...</text>
 					<event>
-						<text>This limited edition Tuco's Child Casino and Gardening Emporium golden figurine makes your crew feel warm and fuzzy inside. Provides 30% active ability cooldown reduction to all of your crew(except Mantis, Mantis HATE figurines). [The Augment has been internalized!]</text>
+						<text>This limited edition Tuco's Child Casino and Gardening Emporium golden figurine makes your crew feel warm and fuzzy inside. Provides 30% active ability recharge speed increase to all of your crew(except Mantis, Mantis HATE figurines). [The Augment has been internalized!]</text>
 						<choice hidden="true">
 							<text>Continue...</text>
 							<event load="STORAGE_CHECK"/>

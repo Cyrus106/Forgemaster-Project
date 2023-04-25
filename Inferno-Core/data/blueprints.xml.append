@@ -134,3 +134,23 @@
 	<value>1</value>
 	<stackable>true</stackable>
 </augBlueprint>
+
+<!--negative values would actually cause an increase to effects-->
+<augBlueprint name="FMCORE_NO_BREACH">
+	<title>Breach Repellent</title>
+	<desc>Reduces breach chance of attack by 10%</desc>
+	<cost>45</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<value>1</value><!--equal to 10% flat reduction-->
+	<stackable>true</stackable>
+</augBlueprint>
+<augBlueprint name="FMCORE_NO_FIRE">
+	<title>Fire Repellent</title>
+	<desc>Reduces fire chance of attack by 10%</desc>
+	<cost>45</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<value>1</value><!--equal to 10% flat reduction-->
+	<stackable>true</stackable>
+</augBlueprint>

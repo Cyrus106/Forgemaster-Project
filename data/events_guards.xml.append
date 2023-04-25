@@ -3,7 +3,7 @@
 	<mod-append:choice hidden="true" max_group="601" req="SHIP_GUNBOM" blue="true">
 		<text>(GunBom) Draw attention to your ship.</text>
 		<event>
-			<text>A young Free Mantis waves and claps excitedly "You must be Federation Hero of Legends! Mantis mother tell me many long stories of Federation heroes, they have many many guns and smash all Hive in name of Mantis freedom. Please, take all we have! Federation heroes, happy to help! I insist, must accompany you and hear many stories!</text>
+			<text>A young Free Mantis waves and claps excitedly. "You must be Federation Hero of Legends! Mantis mother tell me many long stories of Federation heroes, they have many many guns and smash all Hive in name of Mantis freedom. Please, take all we have! Federation heroes, happy to help! I insist, must accompany you and hear many stories!"</text>
 			<autoReward level="MED">stuff</autoReward>
 			<crewMember amount="1" class="mantis_free"/>
 		</event>
