@@ -1720,10 +1720,10 @@
 		<health amount="30" />
 		<maxPower amount="8" />
 		<crew>
-			<human_engineer room="0" name="The Engineer"/>
-			<human_engineer room="3" name="The Engihere"/>
-			<engi room="9" name="The Engi"/>
-			<human_medic room="7" name="The Medic"/>
+			<human_engineer room="0" name="Zed"/>
+			<human_engineer room="3" name="Maynard"/>
+			<engi room="9" name="Dell"/>
+			<human_medic room="7" name="Ludwig"/>
 		</crew>
 		<systemLimit>10</systemLimit>
 		<customReactor maxLevel="35" />
@@ -4550,19 +4550,19 @@
 
 	<weaponBlueprint name="FM_ABDUCT_LASER">
 		<type>LASER</type>
-		<title>Abduction Laser</title>
-		<short>Abduction Laser</short>
+		<title>'Persephone' Abduction Laser</title>
+		<short>'Persephone' Abduction Laser</short>
 		<tip>tip_laser</tip>
-		<desc>Yoinky the crew, sploinky the crew.</desc>
-		<tooltip>Abduction laser; 0 damage, 1 shot. 3 second cooldown, cannot miss.</tooltip>
+		<desc>Due to the difficulties with installing bulky teleportation equipment aboard certain research vessels, shell scientists from another dimension developed this novel new way of non-consensual, one-way crew teleportation. It doesn't hurt... mostly.</desc>
+		<tooltip>Fires one shot that abducts all crew in the room.</tooltip>
 		<damage>0</damage>
 		<shots>1</shots>
-		<sp>10</sp>
+		<sp>3</sp>
 		<fireChance>0</fireChance>
 		<breachChance>2</breachChance>
-		<cooldown>13</cooldown>
+		<cooldown>14</cooldown>
 		<speed>140</speed>
-		<accuracyMod>100</accuracyMod>
+		<accuracyMod>30</accuracyMod>
 		<power>1</power>
 		<cost>40</cost>
 		<fireTime>0.6</fireTime>
@@ -4570,10 +4570,6 @@
 		<rarity>0</rarity>
 		<image>fm_abduct_laser_proj</image>
 		<launchSounds>
-			<!--<sound>lightLaser1</sound>
-			<sound>lightLaser2</sound>
-			<sound>lightLaser3</sound>-->
-
 			<sound>fm_ancalagon_shot</sound>
 		</launchSounds>
 		<hitShipSounds>
@@ -8066,67 +8062,6 @@
 		<weaponArt>fm_beam_eternity</weaponArt>
 		<iconImage>beam</iconImage>
 	</weaponBlueprint>
-
-	
-
-	<weaponBlueprint name="FM_ANIMGUN">
-
-		<type>BEAM</type>
-		<tip>tip_bio</tip>
-		<title>Crystallised Nanobeam</title>
-		<short>C. Nanobeam</short>
-		<desc>This child of Crystal Science uses strange crystalised nanobots to trap your opponents, causing all enemy crew on the opposing ship to lockdown the room they are currently in whenever this beam hits someone.</desc>
-		<tooltip> Beam weapon that greatly damages enemy crew. Stuns, pierces shields, and starts fires Extremely expensive but excellent for crew killing.</tooltip>
-		<!--<damage>6</damage>-->
-		<damage>0</damage>
-		<sp>10</sp>
-		<fireChance>7</fireChance>
-		<cooldown>12</cooldown>
-		<spawnCrew>
-			<race>fm_generic_crewjank</race>
-			<number>1</number>
-			<enemy>true</enemy><!--So you don't ever see the crew-->
-			<lifetime>0</lifetime>
-			<noSlot>true</noSlot>
-			<statBoosts>
-
-				<statBoost name="deathEffect"><!--This modifies the stat of the crew, so that the same crew can be used for multiple weapons-->
-					<boostType>SET</boostType>
-
-
-					<deathEffect><!--When template crew dies (on weapon impact) these statBoosts are applied -->
-						<event name="ANIMATION_FUN"/>
-					</deathEffect>
-
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>9999999</priority>
-				</statBoost>
-
-
-			</statBoosts>
-		</spawnCrew>
-		<color>
-			<r>255</r>
-			<g>0</g>
-			<b>0</b>
-		</color>
-		<speed>1</speed>
-		<power>3</power>
-		<stunChance>0</stunChance>
-		<stun>7</stun>
-		<cost>240</cost>
-		<bp>5</bp>
-		<rarity>0</rarity>
-		<length>1</length>
-		<image>beam_contact</image>
-		<launchSounds>
-			<sound>beam2</sound>
-		</launchSounds>
-		<weaponArt>fm_crystal_beam_1</weaponArt>
-		<iconImage>beam</iconImage>
-	</weaponBlueprint>
-
 </FTL>
 
 <FTL> <!--FOCUS-->
@@ -14536,21 +14471,6 @@
 		</launchSounds>
 		<weaponArt>fm_focus_energy_1</weaponArt>
 		<iconImage>beam</iconImage>
-		<spawnCrew>
-			<race>fm_ion_instant_2</race>
-			<number>1</number>
-			<lifetime>0</lifetime>
-			<noSlot>true</noSlot>
-			<statBoosts>
-				<statBoost name="noClone">
-					<boostType>SET</boostType>
-					<value>true</value>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
-			</statBoosts>
-		</spawnCrew>
 	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_FOCUS_ENERGY_2_ENEMY">
@@ -14583,21 +14503,6 @@
 		</launchSounds>
 		<weaponArt>fm_focus_energy_2</weaponArt>
 		<iconImage>beam</iconImage>
-		<spawnCrew>
-			<race>fm_ion_instant_3</race>
-			<number>1</number>
-			<lifetime>0</lifetime>
-			<noSlot>true</noSlot>
-			<statBoosts>
-				<statBoost name="noClone">
-					<boostType>SET</boostType>
-					<value>true</value>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
-			</statBoosts>
-		</spawnCrew>
 	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_FOCUS_ENERGY_3_ENEMY">
@@ -14630,22 +14535,6 @@
 		</launchSounds>
 		<weaponArt>fm_focus_energy_3</weaponArt>
 		<iconImage>beam</iconImage>
-		<spawnCrew>
-			<race>fm_ion_instant_4</race>
-			<number>1</number>
-			<lifetime>0</lifetime>
-			<noSlot>true</noSlot>
-			<statBoosts>
-				<statBoost name="noClone">
-					<boostType>SET</boostType>
-					<value>true</value>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
-			</statBoosts>
-		</spawnCrew>
-
 	</weaponBlueprint>
 </FTL>
 
@@ -15306,21 +15195,6 @@
 		</missSounds>
 		<weaponArt>fm_missiles_cloak_stun</weaponArt>
 		<iconImage>missile</iconImage>
-		<spawnCrew>
-			<race>fm_ion_instant_3</race>
-			<lifetime>0</lifetime>
-			<number>1</number>
-			<noSlot>true</noSlot>
-			<statBoosts>
-				<statBoost name="noClone">
-					<boostType>SET</boostType>
-					<value>true</value>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
-			</statBoosts>
-		</spawnCrew>
 	</weaponBlueprint>
 
 </FTL>
