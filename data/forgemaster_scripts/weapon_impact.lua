@@ -79,3 +79,32 @@ function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
   end
   return Defines.CHAIN_CONTINUE
 end)
+
+--Make breach chances above 10 apply additional breaches
+local function AdditionalBreaches(ShipManager, Location, Damage)
+  local breachChance = Damage.breachChance
+  if breachChance > 10 then --To prevent recursion
+    local additionalBreaches = (breachChance // 10) - 1
+    for i = 1, additionalBreaches do
+      local dam = Hyperspace.Damage()
+      dam.breachChance = 10
+      ShipManager:DamageArea(Location, dam, true)
+    end
+    local dam = Hyperspace.Damage()
+    dam.breachChance = breachChance % 10
+    ShipManager:DamageArea(Location, dam, true)
+  end
+end
+
+script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT,
+function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
+  AdditionalBreaches(ShipManager, Location, Damage)
+  return Defines.CHAIN_CONTINUE
+end)
+
+script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
+function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
+  if beamHitType ~= Defines.BeamHit.SAME_TILE then
+    AdditionalBreaches(ShipManager, Location, Damage)
+  end
+end)

@@ -7334,7 +7334,7 @@
 			Breach Chance: 350%
 		</tooltipOverride>
 		<damage>8</damage>
-		<breachChance>10</breachChance>
+		<breachChance>35</breachChance> <!--NOT A MISTAKE-->
 		<cooldown>26</cooldown>
 		<power>4</power>
 		<cost>550</cost>
@@ -7349,22 +7349,6 @@
 		<weaponArt>fm_beam_mining_3</weaponArt>
 		<iconImage>beam</iconImage>
 		<iconScale>0.80</iconScale>
-		<spawnCrew>
-			<race>fm_holy6</race>
-			<number>4</number>
-			<noSlot>true</noSlot>
-			<enemy>true</enemy>
-			<lifetime>0</lifetime>
-			<statBoosts>
-				<statBoost name="noClone">
-					<boostType>SET</boostType>
-					<value>true</value>
-					<shipTarget>ALL</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-				</statBoost>
-			</statBoosts>
-		</spawnCrew>
 	</weaponBlueprint>
 
 	<weaponBlueprint name="FM_BEAM_GUILLOTINE_CHAIN">
