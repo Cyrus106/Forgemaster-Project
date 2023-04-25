@@ -21,25 +21,19 @@ roomDamageWeapons.FM_MISSILES_CLOAK_STUN_MEGA = {ion = 3}
 roomDamageWeapons.FM_MISSILES_CLOAK_STUN_ENEMY = {ion = 3}
 roomDamageWeapons.FM_RVS_AC_CHARGE_EMP = {ion = 1}
 
-local function Damage(table)
-  local ret = Hyperspace.Damage()
-  ret.iDamage = table.hull or 0 
-  ret.iIonDamage = table.ion or 0 
-  ret.iSystemDamage = table.system or 0 
-  return ret
-end
+
 
 local tileDamageWeapons = mods.inferno.tileDamageWeapons
-tileDamageWeapons.FM_BEAM_ION_PIERCE = Damage {ion = 1}
-tileDamageWeapons.FM_FOCUS_ENERGY = Damage {ion = 2}
-tileDamageWeapons.FM_FOCUS_ENERGY_2 = Damage {ion = 3}
-tileDamageWeapons.FM_FOCUS_ENERGY_2_PLAYER = Damage {ion = 3}
-tileDamageWeapons.FM_FOCUS_ENERGY_3 = Damage {ion = 4}
-tileDamageWeapons.FM_FOCUS_ENERGY_CONS = Damage {ion = 2}
-tileDamageWeapons.FM_BEAM_ION_PIERCE_ENEMY = Damage {ion = 1}
-tileDamageWeapons.FM_FOCUS_ENERGY_ENEMY = Damage {ion = 2}
-tileDamageWeapons.FM_FOCUS_ENERGY_2_ENEMY =  Damage {ion = 3}
-tileDamageWeapons.FM_FOCUS_ENERGY_3_ENEMY = Damage {ion = 4}
+tileDamageWeapons.FM_BEAM_ION_PIERCE = {ion = 1}
+tileDamageWeapons.FM_FOCUS_ENERGY = {ion = 2}
+tileDamageWeapons.FM_FOCUS_ENERGY_2 = {ion = 3}
+tileDamageWeapons.FM_FOCUS_ENERGY_2_PLAYER = {ion = 3}
+tileDamageWeapons.FM_FOCUS_ENERGY_3 = {ion = 4}
+tileDamageWeapons.FM_FOCUS_ENERGY_CONS = {ion = 2}
+tileDamageWeapons.FM_BEAM_ION_PIERCE_ENEMY = {ion = 1}
+tileDamageWeapons.FM_FOCUS_ENERGY_ENEMY = {ion = 2}
+tileDamageWeapons.FM_FOCUS_ENERGY_2_ENEMY =  {ion = 3}
+tileDamageWeapons.FM_FOCUS_ENERGY_3_ENEMY = {ion = 4}
 
 local impactBeams = mods.inferno.impactBeams
 impactBeams.FM_BEAM_EXPLOSION = "FM_BEAM_EXPLOSION_LASER"
@@ -78,4 +72,33 @@ function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
     end
   end
   return Defines.CHAIN_CONTINUE
+end)
+
+--Make breach chances above 10 apply additional breaches
+local function AdditionalBreaches(ShipManager, Location, Damage)
+  local breachChance = Damage.breachChance
+  if breachChance > 10 then --To prevent recursion
+    local additionalBreaches = (breachChance // 10) - 1
+    for i = 1, additionalBreaches do
+      local dam = Hyperspace.Damage()
+      dam.breachChance = 10
+      ShipManager:DamageArea(Location, dam, true)
+    end
+    local dam = Hyperspace.Damage()
+    dam.breachChance = breachChance % 10
+    ShipManager:DamageArea(Location, dam, true)
+  end
+end
+
+script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT,
+function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
+  AdditionalBreaches(ShipManager, Location, Damage)
+  return Defines.CHAIN_CONTINUE
+end)
+
+script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
+function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
+  if beamHitType ~= Defines.BeamHit.SAME_TILE then
+    AdditionalBreaches(ShipManager, Location, Damage)
+  end
 end)

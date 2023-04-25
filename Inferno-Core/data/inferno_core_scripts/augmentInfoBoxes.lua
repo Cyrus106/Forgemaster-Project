@@ -123,7 +123,7 @@ function()
     Graphics.freetype.easy_printCenter(0, 49, 15, string.format("%i", enemyMissiles))
     
     Graphics.CSurface.GL_Translate(70, 0)
-    if enemyShip:GetDroneCount() ~=0 then
+    if enemyShip:GetDroneCount() ~= 0 then
       Graphics.CSurface.GL_RenderPrimitive(droneBox)
     else
       Graphics.CSurface.GL_RenderPrimitive(droneBoxOff)
