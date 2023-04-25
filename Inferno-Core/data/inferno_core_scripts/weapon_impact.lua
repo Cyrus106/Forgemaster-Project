@@ -82,7 +82,6 @@ script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION_PRE, function(S
     return Defines.Chain.CONTINUE
 end)
 
-
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, function(ShipManager, Projectile, Location, Damage, forceHit, shipFriendlyFire)
     local roomDamage
     pcall(function() roomDamage = mods.inferno.roomDamageWeapons[Hyperspace.Get_Projectile_Extend(Projectile).name] end)
@@ -145,7 +144,6 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
     end
 end)
 
-
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
     local roomDamage
     pcall(function() roomDamage = mods.inferno.hitEveryRoom[Hyperspace.Get_Projectile_Extend(Projectile).name] end)
@@ -165,6 +163,7 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(ShipMa
     end
     return Defines.CHAIN_CONTINUE
 end)
+
 
 
 --AUGMENT EFFECTS
