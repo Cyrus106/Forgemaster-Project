@@ -169,13 +169,9 @@ end)
 --AUGMENT EFFECTS
 local function effectResist(ShipManager, Projectile, Location, Damage, forceHit, shipFriendlyFire)
     local augValue = ShipManager:GetAugmentationValue("FMCORE_NO_BREACH")
-    if augValue ~= 0 and Damage.breachChance >= 0 then
-        Damage.breachChance = Damage.breachChance - augValue
-    end
+    Damage.breachChance = math.max(0, Damage.breachChance - augValue)
     local augValue = ShipManager:GetAugmentationValue("FMCORE_NO_FIRE")
-    if augValue ~= 0 and Damage.fireChance >= 0 then
-        Damage.fireChance = Damage.fireChance - augValue
-    end
+    Damage.fireChance = math.max(0, Damage.fireChance - augValue)
     return Defines.CHAIN_CONTINUE, forceHit, shipFriendlyFire
 end
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, effectResist)
