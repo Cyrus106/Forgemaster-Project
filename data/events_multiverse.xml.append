@@ -1065,7 +1065,7 @@
 <FTL> <!--  FORGEMASTER INITIAL CRAFT MENU: INGREDIENTS MET OR NOT MET-->
 	<!--  FORGEMASTER INITIAL CRAFT MENU: INGREDIENTS MET-->
 	<event name="FM_NPC_CREATE">
-		<text>Ohoho, lad! My trusty forge Martha will be eating good tonight! These have potential, what do you say? Shall I create something interesting for you?"
+		<text>"Ohoho, lad! My trusty forge Martha will be eating good tonight! These have potential, what do you say? Shall I create something interesting for you?"
 
 			[NOTE: Crafting weapons will always cost quite a bit of scrap, make sure to save up even if you have both ingredients, or you may end up visiting and unable to afford it. Prices vary from 70 scrap to well over 200 scrap! Bring at least 100 with you. ALSO, DO NOT. I REPEAT. DO NOT CRAFT WHILE OVER-CAPACITY. YOU W I L L LOSE THE WEAPON! ]
 		</text>
@@ -1117,7 +1117,7 @@
 	<!--  FORGEMASTER INITIAL CRAFT MENU: INGREDIENTS NOT MET-->
 
 	<event name="FM_NPC_CREATE_NONE">
-		<text>Ohoho, lad! Everyday is a new opportunity to learn! Interested in what I can create are ya? It's a shame you can't make anything right now, but you're free to browse the potential!"
+		<text>"Ohoho, lad! Every day is a new opportunity to learn! Interested in what I can create, are ya? It's a shame you can't make anything right now, but you're free to browse the potential!"
 
 			[NOTE: Crafting weapons will always cost quite a bit of scrap, make sure to save up even if you have both ingredients, or you may end up visiting and unable to afford it. Prices vary from 70 scrap to well over 200 scrap! Bring at least 100 with you. ALSO, DO NOT. I REPEAT. DO NOT CRAFT WHILE OVER-CAPACITY. YOU W I L L LOSE THE WEAPON! ]
 		</text>
@@ -9930,7 +9930,7 @@
 
 <FTL> <!-- GUNBOM QUEST FOR FORGEMASTER-->
 	<!-- GUNBOM QUEST FOR FORGEMASTER-->
-	<event name="FM_QUEST_GUNBOM_INTRO">
+	<event name="FM_QUEST_GUNBOM_INTRO"><crewMember amount="1" class="gold"/>
 		<text>You find an EXTREMELY long receipt lying on the ground inside Forgemaster's ship as you are viewing his wares. You decide to ask about it. Alastair explains that it belongs to a client of his, a Free Mantis who placed a stupidly large order of weapons named Winchester. "To be honest, I'm kind of worried about him lad, he sounded like he was in trouble when we last spoke. If you'd like to go check it out, here are the coordinates."</text>
 		<variable name="fm_gunbomquest_taken" op="set" val="1"/>
 		<choice hidden="true">
@@ -9968,7 +9968,7 @@
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text> Winchester the Mantis, captain of the vessel, hails your ship: "Federation please help! Me pay back every scrap, all of it, but  Slug no patience!" he quickly explains. You observe a pair of black and white Engis twins running around in the background, power up systems and prepping drones to launch for a seemingly inevitable battle.
+				<text> Winchester the Mantis, captain of the vessel, hails your ship: "Federation please help! Me pay back every scrap, all of it, but  Slug no patience!" he quickly explains. You observe a pair of black and white engi, presumably twins, running around in the background, powering up systems and prepping drones to launch for a seemingly inevitable battle.
 					You receive a second hail right after, from the black and red Clairvoyant vessel. "Ssstand aside, Federation. He owesss usss every lassst ssscrap!"
 				</text>
 				<choice hidden="true">
@@ -9985,7 +9985,7 @@
 				<choice hidden="true">
 					<text>Aid the Clairvoyant Debt Collectors.</text>
 					<event>
-						<text>Why would you ever support a ship that looks THAT ridiculous?! You decide to aid the debt collectors, Winchester had it coming. You fire a warning shot at the bizarre ship. You are hailed by a pair of black and white Engis immediately. "Ceasefire suggested. Winchester is a good Mantis, just mislead by their passion for engineering. Winchester = Friend. Winchester =/= Foe. Proposition: If you change your mind, one of us will accompany you as thanks.</text>
+						<text>Why would you ever support a ship that looks THAT ridiculous?! You decide to aid the debt collectors, Winchester had it coming. You fire a warning shot at the bizarre ship. You are hailed by a pair of black and white engi immediately. "Ceasefire suggested. Winchester is a good Mantis, just mislead by their passion for engineering. Winchester = Friend. Winchester =/= Foe. Proposition: If you change your mind, one of us will accompany you as thanks.</text>
 						<choice hidden="true">
 							<text>Accept their offer to turn on the Clairvoyant vessel.</text>
 							<event load="FM_QUEST_GUNBOM_TWINS"/>
@@ -9994,7 +9994,7 @@
 						<choice hidden="true">
 							<text>Stick to your word, shouldn't have gotten into debt in the first place.</text>
 							<event>
-								<text> The pair of Engis look very disappointed. "You = cruel. Disgust us. Initiating protocol: Defend best friend."</text>
+								<text> The pair of engi look very disappointed. "You = cruel. Disgust us. Initiating protocol: Defend best friend."</text>
 								<ship load="SHIP_FM_GUNHYDRA_ENEMY" hostile="true"/>
 								<status type="limit" target="enemy" system="drones" amount="7"/>
 								<choice hidden="true">
@@ -10062,7 +10062,7 @@
 	<eventList name="FM_QUEST_GUNBOM_TWINS">
 		<event>
 			<crewMember amount="1" class="unique_remington">Remington</crewMember>
-			<text>You power up your weapons and attack the Clairvoyant Debt Collector ship head on. One of the Engis flies towards your vessel in a small shuttle, and is let in by your crew. "You = Intriguing. Talk later, focus on saving Winchester"</text>
+			<text>You power up your weapons and attack the Clairvoyant Debt Collector ship head on. One of the engi flies towards your vessel in a small shuttle, and is let in by your crew. "You = Intriguing. Talk later, focus on saving Winchester."</text>
 			<ship load="SHIP_CLAIRVOYANT_DEBTCOLLECT" hostile="true"/>
 			<variable name="fm_obtainedtwin" op="set" val="1"/>
 			<choice hidden="true">
@@ -10072,7 +10072,7 @@
 		</event>
 		<event>
 			<crewMember amount="1" class="unique_mossberg">Mossberg</crewMember>
-			<text>You power up your weapons and attack the Clairvoyant Debt Collector ship head on. One of the Engis flies towards your vessel in a small shuttle, and is let in by your crew. "You = Intriguing. Talk later, focus on saving Winchester"</text>
+			<text>You power up your weapons and attack the Clairvoyant Debt Collector ship head on. One of the engi flies towards your vessel in a small shuttle, and is let in by your crew. "You = Intriguing. Talk later, focus on saving Winchester."</text>
 			<ship load="SHIP_CLAIRVOYANT_DEBTCOLLECT" hostile="true"/>
 			<variable name="fm_obtainedtwin" op="set" val="1"/>
 			<choice hidden="true">
@@ -10084,7 +10084,7 @@
 	</eventList>
 
 	<event name="FM_QUEST_GUNBOM_TAKEN">
-		<text>Lad, are ya still here? I love your company but Winchester's life is in danger! Please go seek him out, for my sake?"</text>
+		<text>"Lad, are ya still here? I love your company but Winchester's life is in danger! Please go seek him out, for my sake?"</text>
 
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -10094,7 +10094,7 @@
 	</event>
 
 	<event name="FM_QUEST_GUNBOM_COMPLETED_RESCUE">
-		<text>Lad, what's that? You saved Winchester? Lad you're alright in my book. I'll remember this, now I owe you a favor!"</text>
+		<text>"Lad, what's that? You saved Winchester? Lad you're alright in my book. I'll remember this, now I owe you a favor!"</text>
 
 		<choice hidden="true">
 			<text>Continue...</text>

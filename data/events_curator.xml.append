@@ -118,7 +118,7 @@
 </event>
 
 <event name="CURA_BOSS_RUSH_PREVIEW2">
-	<text>"Augmentation has finished uploading to your ship. Do not worry renegade, it won't take up one of your precious augment slots."</text>
+	<text>"Augmentation has finished uploading to your ship. Do not worry Renegade, it won't take up one of your precious augment slots."</text>
 	<choice hidden="false">
 		<text>Continue...</text>
 		<event>
