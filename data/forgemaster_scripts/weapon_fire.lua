@@ -2,6 +2,8 @@ local vter = mods.inferno.vter
 local real_projectile = mods.inferno.real_projectile
 local randomInt = mods.inferno.randomInt
 
+
+
 script.on_fire_event(Defines.FireEvents.WEAPON_FIRE,
 function(ship, weapon, projectile)
   local otherShipId = (ship.iShipId + 1) % 2
@@ -20,6 +22,12 @@ function(ship, weapon, projectile)
   end
 end)
 
+local shotTextures = {
+  [0] = Hyperspace.Resources:GetImageId "weapon_projectiles/charge_sniper_1.png",
+  [1] = Hyperspace.Resources:GetImageId "weapon_projectiles/charge_sniper_2.png",
+  [2] = Hyperspace.Resources:GetImageId "weapon_projectiles/charge_sniper_3.png",
+  [3] = Hyperspace.Resources:GetImageId "weapon_projectiles/charge_sniper_4.png",
+}
 
 script.on_fire_event(Defines.FireEvents.WEAPON_FIRE,
 function(ship, weapon, projectile)
@@ -30,5 +38,8 @@ function(ship, weapon, projectile)
     projectile.speed_magnitude = projectile.speed_magnitude * (1 + (boost / 2))
     projectile.damage.breachChance = math.floor(2.5 * (boost + 1))
     weapon.queuedProjectiles:clear()
+    print(projectile.flight_animation.animationStrip)
+    projectile.flight_animation.animationStrip = shotTextures[boost]
+    print(projectile.flight_animation.animationStrip)
   end
 end)
