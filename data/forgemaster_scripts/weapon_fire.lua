@@ -29,11 +29,6 @@ function(ship, weapon, projectile)
     projectile.damage.iShieldPiercing = projectile.damage.iShieldPiercing + boost
     projectile.speed_magnitude = projectile.speed_magnitude * (1 + (boost / 2))
     projectile.damage.breachChance = math.floor(2.5 * (boost + 1))
-    for i = 1, boost do
-      weapon.queuedProjectiles[i - 1]:Kill()
-    end
     weapon.queuedProjectiles:clear()
-    --Hyperspace.Global.GetInstance():GetSoundControl():PlaySoundMix("heavyLaser1", 1, true)
-
   end
 end)
