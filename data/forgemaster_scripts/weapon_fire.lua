@@ -23,7 +23,7 @@ end)
 
 script.on_fire_event(Defines.FireEvents.WEAPON_FIRE,
 function(ship, weapon, projectile)
-  if weapon.name == "Charge Sniper" then
+  if weapon.blueprint.name == "FM_CHARGE_SNIPER" then
     local boost = weapon.queuedProjectiles:size()
     projectile.damage.iDamage = projectile.damage.iDamage + (2 * boost)
     projectile.damage.iShieldPiercing = projectile.damage.iShieldPiercing + boost
