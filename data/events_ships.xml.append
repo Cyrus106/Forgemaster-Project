@@ -2692,7 +2692,7 @@
 		</choice>
 		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Golden Tuco.</text>
-			<event load="GET_GOLDEN_TUCO"/>
+			<event load="SCRAP_GOLDEN_TUCO"/>
 		</choice>
 	</event>
 

@@ -7085,7 +7085,7 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_MODULE_AERO">
-		<text>Install Inspirational Aerosols? [+100% power recharge speed for your crew and -30% for enemies on your ship. Effect is halfed for allied crew on the enemy ship. 5 can be installed and uses 3 upgrade notches]</text>
+		<text>Install Inspirational Aerosols? [+100% power recharge speed for your crew and -30% for enemies on your ship. Effect is halved for allied crew on the enemy ship. 5 can be installed and uses 3 upgrade notches]</text>
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Install the Inspirational Aerosols.</text>
 			<event>
