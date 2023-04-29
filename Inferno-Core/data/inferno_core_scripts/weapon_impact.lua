@@ -126,6 +126,7 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(ShipManage
             SpaceManager:CreateLaserBlast(blueprint, target, targetSpace, impactOwner, target, targetSpace, 0)
         end
     end
+    return Defines.Chain.CONTINUE, beamHitType
 end)
 
 script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
