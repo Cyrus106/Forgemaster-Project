@@ -25,13 +25,13 @@ roomDamageWeapons.FM_RVS_AC_CHARGE_EMP = {ion = 1}
 
 local tileDamageWeapons = mods.inferno.tileDamageWeapons
 tileDamageWeapons.FM_BEAM_ION_PIERCE = {ion = 1}
-tileDamageWeapons.FM_FOCUS_ENERGY = {ion = 2}
+tileDamageWeapons.FM_FOCUS_ENERGY_1 = {ion = 2}
 tileDamageWeapons.FM_FOCUS_ENERGY_2 = {ion = 3}
 tileDamageWeapons.FM_FOCUS_ENERGY_2_PLAYER = {ion = 3}
 tileDamageWeapons.FM_FOCUS_ENERGY_3 = {ion = 4}
 tileDamageWeapons.FM_FOCUS_ENERGY_CONS = {ion = 2}
 tileDamageWeapons.FM_BEAM_ION_PIERCE_ENEMY = {ion = 1}
-tileDamageWeapons.FM_FOCUS_ENERGY_ENEMY = {ion = 2}
+tileDamageWeapons.FM_FOCUS_ENERGY_1_ENEMY = {ion = 2}
 tileDamageWeapons.FM_FOCUS_ENERGY_2_ENEMY =  {ion = 3}
 tileDamageWeapons.FM_FOCUS_ENERGY_3_ENEMY = {ion = 4}
 
