@@ -93,7 +93,7 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, function(ShipManage
     return Defines.CHAIN_CONTINUE, forceHit, shipFriendlyFire
 end)
 
-local function Damage(table)
+local function MakeDamage(table)
     local ret = Hyperspace.Damage()
     ret.iDamage = table.hull or 0 
     ret.iIonDamage = table.ion or 0 
@@ -107,7 +107,7 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(ShipManage
         local weaponName = Hyperspace.Get_Projectile_Extend(Projectile).name
         Hyperspace.Get_Projectile_Extend(Projectile).name = ""
         local farPoint = Hyperspace.Pointf(-2147483648, -2147483648)
-        ShipManager:DamageBeam(Location, farPoint, Damage(tileDamage))
+        ShipManager:DamageBeam(Location, farPoint, MakeDamage(tileDamage))
         Hyperspace.Get_Projectile_Extend(Projectile).name = weaponName
     end
     return Defines.Chain.CONTINUE, beamHitType
