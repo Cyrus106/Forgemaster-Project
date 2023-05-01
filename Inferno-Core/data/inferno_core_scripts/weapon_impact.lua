@@ -143,6 +143,7 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
             SpaceManager:CreateBomb(blueprint, bombOwner, target, targetSpace)
         end
     end
+    return Defines.CHAIN_CONTINUE, beamHitType
 end)
 
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
@@ -208,4 +209,5 @@ function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
   if beamHitType ~= Defines.BeamHit.SAME_TILE then
     AdditionalBreaches(ShipManager, Location, Damage)
   end
+  return Defines.CHAIN_CONTINUE, beamHitType
 end)
