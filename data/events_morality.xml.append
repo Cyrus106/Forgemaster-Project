@@ -28,14 +28,14 @@
 	<variable name="rep_orchid" op="add" val="1"/>
 	<variable name="rep_forgemaster" op="add" val="1"/>
 </event>
-<event name="MORALITY_UPDATE_FORGEMASTER_ORCHID_CRYSTAL_NO_FIGHT">
+<event name="MORALITY_UPDATE_FORGEMASTER_ORCHID_CRYSTAL">
 	<text>[NOTORIETY INCREASED - GATHERING + CRYSTAL + FORGEMASTER]
 	Your actions here, justifiable or not, will likely not go over well with the Forgemaster, as well as the Gathering, Crystalline Empire or their citizens. Continuously perform actions like this and you might start to see negative reactions from the Gathering, the Crystalline Empire and their allies, or the Forgemaster himself. But you don't care, do you? ;)</text>
 	<variable name="rep_orchid" op="add" val="1"/>
 	<variable name="rep_crystal" op="add" val="1"/>
 	<variable name="rep_forgemaster" op="add" val="1"/>
 </event>
-<event name="MORALITY_UPDATE_FORGEMASTER_ORCHID_CRYSTAL_NO_FIGHT">
+<event name="MORALITY_REMOVE_FORGEMASTER_ORCHID_CRYSTAL">
 	<text>[NOTORIETY DECREASED - GATHERING + CRYSTAL + FORGEMASTER]
 	You have done a good deed here in the eyes of Alastair, the Gathering or the Crystalline Empire. If you've gained notoriety from other actions in the past, you're more likely to be forgiven for them.</text>
 	<variable name="rep_orchid" op="add" val="-1"/>
