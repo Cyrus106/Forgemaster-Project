@@ -10199,6 +10199,30 @@
 		</choice>
 	</event>
 	
+	<event name="FM_QUEST_ARBOREAL_TAKEN">
+		<text>"What are you waiting for, lad? Get out there and help those poor fellows!"</text>
+                  <choice>
+			  <text>Continue...</text>
+			  <event load="FORGEMASTER_PHONE_EVENT_LOAD"/>
+		</choice>
+	</event>
+	
+	<event name="FM_QUEST_ARBOREAL_COMPLETED_EXE">
+		<text>"So they had a dispute about what frontier they'd take their discoveries to? Can't say I've never felt the same, lad! But you helped them come to an agreement by showing Kyriet that there are many ways to peace? Impressive, even for my standards! In my experience, that one always was a stubborn girl."</text>
+                  <choice>
+			  <text>Continue...</text>
+			  <event load="FORGEMASTER_PHONE_EVENT_LOAD"/>
+		</choice>
+	</event>
+	
+	<event name="FM_QUEST_ARBOREAL_COMPLETED_REV">
+		<text>"So they had a dispute about what frontier they'd take their discoveries to? Can't say I've never felt the same, lad! But you helped them come to an agreement by showing Mandelbriss that not every conflict can be solved with weapons? Impressive, even for my standards! In my experience, that boy's mind was hard to change."</text>
+                  <choice>
+			  <text>Continue...</text>
+			  <event load="FORGEMASTER_PHONE_EVENT_LOAD"/>
+		</choice>
+	</event>
+	
 	<event name="FM_QUEST_ARBOREAL">
 		<preventQuest/>
 		<preventFleet/>
