@@ -181,7 +181,7 @@
 	</ship>
 
 	<event name="FALLEN_DESTROYED">
-		<text>As whats left of Randall's ship crashes and burns, you recieve a hail from the Arbor thanking you for your good deed and transferring you to Mandelbriss and Kyriet. "I suppose we owe you and Alastair an explanation. You see, we used to be the best of friends, Kyriet and I, but issues popped up between us when we finally got around to thinking of what we'd actually do with our marvelous technology. You see, I -" "He wanted to use our research and technology to create weapons of war instead of using our knowledge to spread peace and prosperity." "Spread peace all you want Ky, but when it really comes down to it weapons are what seperates saviors like Ms Renegade here and cowards like us, huddling under a table to avoid danger."</text>
+		<text>"Goddamnit... knew I shouldn'ta gotten in cahoots... with the division..." As whats left of Randall's ship crashes and burns, you recieve a hail from the Arbor thanking you for your good deed and transferring you to Mandelbriss and Kyriet. "I suppose we owe you and Alastair an explanation. You see, we used to be the best of friends, Kyriet and I, but issues popped up between us when we finally got around to thinking of what we'd actually do with our marvelous technology. You see, I -" "He wanted to use our research and technology to create weapons of war instead of using our knowledge to spread peace and prosperity." "Spread peace all you want Ky, but when it really comes down to it weapons are what seperates saviors like Ms Renegade here and cowards like us, huddling under a table to avoid danger."</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
 			<text>Mediate their conflict.</text>
@@ -214,7 +214,7 @@
 	</event>
 			
 	<event name="FALLEN_KILLED">
-		<text>As you scrap the hollow shell of an Angel fighter, you recieve a hail from the Arbor thanking you for your good deed and transferring you to Mandelbriss and Kyriet. "I suppose we owe you and Alastair an explanation. You see, we used to be the best of friends, Kyriet and I, but issues popped up between us when we finally got around to thinking of what we'd actually do with our marvelous technology. You see, I -" "He wanted to use our research and technology to create weapons of war instead of using our knowledge to spread peace and prosperity." "Spread peace all you want Ky, but when it really comes down to it weapons are what seperates saviors like Ms Renegade here and cowards like us, huddling under a table to avoid danger.</text>
+		<text>"Goddamnit... knew I shouldn'ta gotten in cahoots... with the division..." As you scrap the hollow shell of an Angel fighter, you recieve a hail from the Arbor thanking you for your good deed and transferring you to Mandelbriss and Kyriet. "I suppose we owe you and Alastair an explanation. You see, we used to be the best of friends, Kyriet and I, but issues popped up between us when we finally got around to thinking of what we'd actually do with our marvelous technology. You see, I -" "He wanted to use our research and technology to create weapons of war instead of using our knowledge to spread peace and prosperity." "Spread peace all you want Ky, but when it really comes down to it weapons are what seperates saviors like Ms Renegade here and cowards like us, huddling under a table to avoid danger.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Mediate their conflict.</text>
