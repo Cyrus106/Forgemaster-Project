@@ -2556,6 +2556,22 @@
 			<power>Active ability: Repairs 1 hull damage, and 2 system damage to the current room. Damages enemies for 15 HP, whilst giving itself an array of buffs for 15s.</power>
 		</powerList>
 	</crewBlueprint>
+	
+	<crewBlueprint name="fm_fallen">
+    <desc>Randall Curtain, Unique Mercenary Crew. Ex-angel who faked his death to leave the Angels, now working in utmost secrecy for anyone who'll cough up the dough. 
+	    The Ancalagon Division has a lot of dough to go around.</desc>
+    <cost>125</cost>
+    <title>Fallen</title>
+    <short>Fallen</short>
+    <rarity>0</rarity>
+    <powerList>
+        <power>Inflicts 1.5x damage in combat</power>
+	<power>2x ranged damage multiplier</power>
+	<power>1.6x movement speed</power>
+        <power>Takes 0.7x damage from combat, half from hazards, is highly resistant to stuns</power>
+        <power>Trained in lvl2 skills</power>
+    </powerList>
+</crewBlueprint>
 
 	<crewBlueprint name="fm_crystal_red">
 		<desc>A dangerous anomalous crystal spawned by Ancalagon technology.</desc>
