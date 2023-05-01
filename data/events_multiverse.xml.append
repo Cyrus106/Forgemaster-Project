@@ -10241,14 +10241,26 @@
 				<text>You observe the structure of the High Arbor, noting it's peculiar structure with a lattice of metal making up the outer walls of the building, and plants and vines draping from the walls and glass dome roof. Reaching the entrance, a guard asks if you have a membership.</text>
 				<choice>
 					<text>Pay the fee. [-20~]</text>
+					<event>
+						<text>"Thank you. Enjoy your stay."</text>
 					<item_modify>
 							<item type="scrap" min="-20" max="-20"/>
 					</item_modify>
-					<event load="FM_QUEST_ARBOREAL_ENTRANCE"/>
+						<choice>
+							<text>Continue...</text>
+						<event load="FM_QUEST_ARBOREAL_ENTRANCE"/>
+						</choice>
+					</event>
 				</choice>
 				<choice hidden="true" req="LIST_CREW_ORCHID" blue="true"> 
 					<text>(Orchid) Your orchid already has a membership.</text>
+					<event>
+						<text>"Thank you. Enjoy your stay."</text>
+						<choice>
+							<text>Continue...</text>
+						</choice>
 					<event load="FM_QUEST_ARBOREAL_ENTRANCE"/>
+					</event>
 				</choice>
 			</event>
 		</choice>
