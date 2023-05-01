@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 
-
 <!--ENEMY SHIPS-->
 
 
@@ -203,7 +202,7 @@
 	<cloakImage>mt_boss_kestrel</cloakImage>
 </shipBlueprint>
 
-<shipBlueprint name="SHIP_FALLEN" layout="fm_fallen" img="fallen">
+<shipBlueprint name="SHIP_FALLEN_ANGEL" layout="fm_fallen" img="fallen_fighter">
 	<class>Fallen Fighter</class>
 	<minSector>1</minSector>
 	<maxSector>8</maxSector>
@@ -229,7 +228,6 @@
 	<droneList drones="99" count="0"/>
 	<health amount="14" />
 	<maxPower amount="99" />
-	<crewCount amount="2" max="4" class="human" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="CLOAK_FIRE" />
 </shipBlueprint>
