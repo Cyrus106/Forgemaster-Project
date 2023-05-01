@@ -195,6 +195,7 @@
 						      <variable name="fm_arborealquest_exe" op="set" val="1"/>
 							      <choice>
 								      <text>Thank them and leave.</text>
+								      <event load="MORALITY_REMOVE_FORGEMASTER_ORCHID_CRYSTAL"/>
 						              </choice>
 					      </event>
 			             </choice>
@@ -694,7 +695,7 @@
 			<event load="FM_QUEST_ARBOREAL_TAKEN"/>
 		</choice>
 
-		<choice hidden="true" req="SEC SECTOR_UNIQUE_ORCHID" lvl="1" max_group="1" blue="true"> <!--  ARBOREAL QUEST-->
+		<choice hidden="true" req="SEC SECTOR_ORCHID_UNIQUE" lvl="1" max_group="1" blue="true"> <!--  ARBOREAL QUEST-->
 			<text>Examine a glass case containing a shattered green crystal.</text>
 			<event load="FM_QUEST_ARBOREAL_INTRO"/>
 		</choice>
@@ -10289,7 +10290,7 @@
 						<text>As your crew restrain the two scientists and haul them off, you recieve a second hail from the mercenary. "Wise choice, renegade. We'll both come out of this as richer men." You catch a final glance at their faces, Kyriet wide-eyed in terror and Mandelbriss screaming words at you that fall on deaf ears. You may not care, but the rest of the galaxy certainly will.</text>
 						<choice>
 						<text>Continue...</text>
-						<event load="MORALITY_UPDATE_FORGEMASTER_ORCHID_CRYSTAL_NO_FIGHT"/>
+						<event load="MORALITY_UPDATE_FORGEMASTER_ORCHID_CRYSTAL"/>
 				                </choice>
 				         </event>
 				</choice>
