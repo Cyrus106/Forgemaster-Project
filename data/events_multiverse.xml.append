@@ -9950,7 +9950,7 @@
 
 <FTL> <!-- GUNBOM QUEST FOR FORGEMASTER-->
 	<!-- GUNBOM QUEST FOR FORGEMASTER-->
-	<event name="FM_QUEST_GUNBOM_INTRO"><crewMember amount="1" class="gold"/>
+	<event name="FM_QUEST_GUNBOM_INTRO">
 		<text>You find an EXTREMELY long receipt lying on the ground inside Forgemaster's ship as you are viewing his wares. You decide to ask about it. Alastair explains that it belongs to a client of his, a Free Mantis who placed a stupidly large order of weapons named Winchester. "To be honest, I'm kind of worried about him lad, he sounded like he was in trouble when we last spoke. If you'd like to go check it out, here are the coordinates."</text>
 		<variable name="fm_gunbomquest_taken" op="set" val="1"/>
 		<choice hidden="true">
@@ -10128,14 +10128,14 @@
         <!--KURIET AND MANDELBRISS QUEST FOR FORGEMASTER-->
 	
 	<!-- GUNBOM QUEST FOR FORGEMASTER-->
-	<event name="FM_QUEST_ARBOREAL_INTRO"><crewMember amount="1" class="gold"/>
+	<event name="FM_QUEST_ARBOREAL_INTRO">
 		<text>You question Alastair about the strange crystal inside the case. "Ah, that old thing. A miracle of technology that, forged by two great students I met a long time ago. An Orchid scientist and a Crystal noble - an odd pair for sure, but despite their differences became fast friends. Mandelbriss and Kyriet commisioned me to make casing for an experimental weapon once, one utilising a marvelous combination of both Orchid and Crystal technologies, a relic of which you see before you now." Alastair pauses for a moment, as if deep in thought. "I do wonder what happened to those two... last I heard, they had a falling out involving their work. Would you mind checking on them for me, lad? I heard Kyriet is returning to the region, but I'll transfer you Mandelbriss' co-ordinates."</text>
 		<variable name="fm_arborealquest_taken" op="set" val="1"/>
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
 				<text>Alastair uploads Mandelbriss' co-ordinates to your ship with little effort, and motions for you to leave the room.</text>
-				<quest event="FM_QUEST_ARBOREAL_1"/>
+				<quest event="FM_QUEST_ARBOREAL"/>
 
 				<choice hidden="true">
 					<text>Continue...</text>
@@ -10162,10 +10162,59 @@
 			<nebulaBeacon>false</nebulaBeacon>
 			<aggressive>2</aggressive>
 		</quest>
-		<text>You've arrived at the co-ordinates provided by Alastair. It seems to be a large garden, growing all sorts of plants, some of which you recognise as Kernel weapons efrferge would assume to be Kernel weapons</text>
+		<text>Arriving at the beacon, you immediately notice a large structure on the planet below, which your ships systems recognises as the 'High Arbor'. A research station for scientists of all kinds to perform experiments and research at their leisure, although it is paid entry. Landing at the ship port, you and your crew make your way to the entrance in the hopes of finding Mandelbriss inside.</text>
 		<img back="BACK_EVENT_ORCHID_GARDEN" planet="PLANET_INVISIBLE"/>
+		<choice>
+			<text>Continue...</text>
+			<event>
+				<text>You observe the structure of the High Arbor, noting it's peculiar structure with a lattice of metal making up the outer walls of the building, and plants and vines draping from the walls and glass dome roof. Reaching the entrance, a guard asks if you have a membership.</text>
+				<choice>
+					<text>Pay the fee. [-20~]</text>
+					<item_modify>
+							<item type="scrap" min="-20" max="-20"/>
+					</item_modify>
+					<event load="FM_QUEST_ARBOREAL_ENTRANCE"/>
+				</choice>
+				<choice hidden="true" req="LIST_CREW_ORCHID" blue="true"> 
+					<text>(Orchid) Your orchid already has a membership.</text>
+					<event load="FM_QUEST_ARBOREAL_ENTRANCE"/>
+				</choice>
+			</event>
+		</choice>
+	</event>
 	
+	<event name="FM_QUEST_ARBOREAL_ENTRANCE>
+		<text>"Thank you. Enjoy your stay." As you enter the Arbor, you ask around with the Orchids for Mandelbriss and it doesn't take long for you to find him outside one of the labs - and surprisingly enough, Kyriet too! As you walk over to introduce yourself, you briefly overhear part of their conversation. "We've discussed this before, Mandelbriss - I will not let our research be used to make weapons of war!" "But Kyriet, I - oh, hello there! Who would you happen to be?" You tell them that you're a Renegade sent by Alastair to check up on them, but before they have a chance to respond the entire building quakes and several alarms go off. Shortly after, you recieve a hail.</text>
+	         <choice>
+			 <text>Recieve the hail.</text>
+			 <event>
+				 <text>You are greeted by the face of a man wearing MFK armor, painted over in blue similar to that of the elusive Angels. "Hand over Mandelbriss, Kyriet and their research or die." Looking over at the pair, they are understandably shocked and terrified.</text>
+				 <choice>
+					 <text>Fight the mercenary.</text>
+					 <event>
+						<text>As you return to your ship, the strange Angel fighter roars overhead. Entering battle stations, you recieve a brief hail from the enemy aircraft. "I am Randall Curtain, ex-angel. And you, renegade? You're finished."</text>
+						<ship load="SHIP_FALLEN" hostile="true"/>
+						<choice hidden="true">
+							<text>Continue...</text>
+							<event load="COMBAT_CHECK"/>
+						</choice>
+					</event>
+			         </choice>
+			         <choice>
+			                 <text>Have your crew capture the pair and hand them over.</text>
+				         <event>
+						<text>As your crew restrain the two scientists and haul them off, you recieve a second hail from the mercenary. "Wise choice, renegade. We'll both come out of this as richer men." You catch a final glance at their faces, Kyriet wide-eyed in terror and Mandelbriss screaming words at you that fall on deaf ears. You may not care, but the rest of the galaxy certainly will.</text>
+						<choice>
+						<text>Continue...</text>
+						<event load="MORALITY_UPDATE_FORGEMASTER_ORCHID_CRYSTAL_NO_FIGHT"/>
+					</event>
+				                </choice>
+				</choice>
+			</event>
+		</choice>
+	</event>
 	
+
 </FTL>
 <FTL> <!-- HARMONY BLEAK FUTURE ENDING. MAKE SURE TO COME BACK AND COMMENT ALL THIS CODE AFTER IT IS STABLE!!!!!-->
 	<event name="FM_QUEST_GUNBOM_FUTURE">
