@@ -631,6 +631,26 @@
 			<text>Examine an unusual receipt on the ground.</text>
 			<event load="FM_QUEST_GUNBOM_INTRO"/>
 		</choice>
+		
+		<choice hidden="true" req="fm_arborealquest_exe" lvl="1" max_group="1" blue="true"> <!--  ARBOREAL QUEST-->
+			<text>Inform Alastair about the result of your quest.</text>
+			<event load="FM_QUEST_ARBOREAL_COMPLETED_EXE"/>
+		</choice>
+		
+		<choice hidden="true" req="fm_arborealquest_rev" lvl="1" max_group="1" blue="true"> <!--  ARBOREAL QUEST-->
+			<text>Inform Alastair about the result of your quest.</text>
+			<event load="FM_QUEST_ARBOREAL_COMPLETED_REV"/>
+		</choice>
+
+		<choice hidden="true" req="fm_arborealquest_taken" lvl="1" max_group="1" blue="true"> <!--  ARBOREAL QUEST-->
+			<text>Inquire again about Kyriet and Mandelbriss.</text>
+			<event load="FM_QUEST_ARBOREAL_TAKEN"/>
+		</choice>
+
+		<choice hidden="true" req="SEC SECTOR_UNIQUE_ORCHID" lvl="1" max_group="1" blue="true"> <!--  ARBOREAL QUEST-->
+			<text>Examine a glass case containing a shattered green crystal.</text>
+			<event load="FM_QUEST_ARBOREAL_INTRO"/>
+		</choice>
 
 
 		<choice hidden="true" req="pilot" lvl="1" max_group="8" blue="false">
@@ -10006,7 +10026,7 @@
 					</event>
 				</choice>
 				<choice hidden="true" req="SHIP_GUNBOM">
-					<text>(Gunbom) Hail them</text>
+					<text>(Gunbom) Hail them.</text>
 					<event>
 						<text>Winchester responds first "How? Are you a fan of my work??" The Clairvoyants appear to be confused "T-two? To helll with it, kill them both, just more bounty for us!"</text>
 						<ship load="SHIP_CLAIRVOYANT_DEBTCOLLECT" hostile="true"/>
@@ -10103,6 +10123,49 @@
 		</choice>
 	</event>
 
+</FTL>
+<FTL>
+        <!--KURIET AND MANDELBRISS QUEST FOR FORGEMASTER-->
+	
+	<!-- GUNBOM QUEST FOR FORGEMASTER-->
+	<event name="FM_QUEST_ARBOREAL_INTRO"><crewMember amount="1" class="gold"/>
+		<text>You question Alastair about the strange crystal inside the case. "Ah, that old thing. A miracle of technology that, forged by two great students I met a long time ago. An Orchid scientist and a Crystal noble - an odd pair for sure, but despite their differences became fast friends. Mandelbriss and Kyriet commisioned me to make casing for an experimental weapon once, one utilising a marvelous combination of both Orchid and Crystal technologies, a relic of which you see before you now." Alastair pauses for a moment, as if deep in thought. "I do wonder what happened to those two... last I heard, they had a falling out involving their work. Would you mind checking on them for me, lad? I heard Kyriet is returning to the region, but I'll transfer you Mandelbriss' co-ordinates."</text>
+		<variable name="fm_arborealquest_taken" op="set" val="1"/>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event>
+				<text>Alastair uploads Mandelbriss' co-ordinates to your ship with little effort, and motions for you to leave the room.</text>
+				<quest event="FM_QUEST_ARBOREAL_1"/>
+
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event>
+						<text>"Good luck out there, Lad!" Alastair calls out to you as you leave.</text>
+						<choice>
+							<text>Continue...</text>
+							<event load="FORGEMASTER_PHONE_EVENT_LOAD"/>
+						</choice>
+
+					</event>
+				</choice>
+			</event>
+		</choice>
+	</event>
+	
+	<event name="FM_QUEST_ARBOREAL">
+		<preventQuest/>
+		<preventFleet/>
+		<beaconType id="map_icon_mandelbriss" global="true">
+			<color r="0" g="155" b="0" a="1.0"/>
+		</beaconType>
+		<quest>
+			<nebulaBeacon>false</nebulaBeacon>
+			<aggressive>2</aggressive>
+		</quest>
+		<text>You've arrived at the co-ordinates provided by Alastair. It seems to be a large garden, growing all sorts of plants, some of which you recognise as Kernel weapons efrferge would assume to be Kernel weapons</text>
+		<img back="BACK_EVENT_ORCHID_GARDEN" planet="PLANET_INVISIBLE"/>
+	
+	
 </FTL>
 <FTL> <!-- HARMONY BLEAK FUTURE ENDING. MAKE SURE TO COME BACK AND COMMENT ALL THIS CODE AFTER IT IS STABLE!!!!!-->
 	<event name="FM_QUEST_GUNBOM_FUTURE">
