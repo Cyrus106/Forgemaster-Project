@@ -130,7 +130,7 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(ShipManage
 end)
 
 script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
-    function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
+function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
     local bomb
     pcall(function() bomb = mods.inferno.bombBeams[Hyperspace.Get_Projectile_Extend(Projectile).name] end)
     if beamHitType ~= Defines.BeamHit.SAME_TILE and bomb then
@@ -169,15 +169,22 @@ end)
 
 
 --AUGMENT EFFECTS
-local function effectResist(ShipManager, Projectile, Location, Damage, forceHit, shipFriendlyFire)
+local function EffectResist(ShipManager, Damage)
     local augValue = ShipManager:GetAugmentationValue("FMCORE_NO_BREACH")
     Damage.breachChance = math.max(0, Damage.breachChance - augValue)
     local augValue = ShipManager:GetAugmentationValue("FMCORE_NO_FIRE")
     Damage.fireChance = math.max(0, Damage.fireChance - augValue)
-    return Defines.CHAIN_CONTINUE, forceHit, shipFriendlyFire
 end
-script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, effectResist)
-script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, effectResist)
+script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, 
+function(ShipManager, Projectile, Location, Damage, forceHit, shipFriendlyFire)
+    EffectResist(ShipManager, Damage)
+    return Defines.CHAIN_CONTINUE, forceHit, shipFriendlyFire
+end)
+script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, 
+function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
+    EffectResist(ShipManager, Damage)
+    return Defines.CHAIN_CONTINUE, beamHitType
+end)
 
 
 
