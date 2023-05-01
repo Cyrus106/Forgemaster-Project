@@ -10258,13 +10258,13 @@
 						<text>"Thank you. Enjoy your stay."</text>
 						<choice>
 							<text>Continue...</text>
-						</choice>
 					<event load="FM_QUEST_ARBOREAL_ENTRANCE"/>
+						</choice>
 					</event>
 				</choice>
 			</event>
 		</choice>
-	</event>
+	 </event>
 	
 	<event name="FM_QUEST_ARBOREAL_ENTRANCE>
 		<text>"Thank you. Enjoy your stay." As you enter the Arbor, you ask around with the Orchids for Mandelbriss and it doesn't take long for you to find him outside one of the labs - and surprisingly enough, Kyriet too! As you walk over to introduce yourself, you briefly overhear part of their conversation. "We've discussed this before, Mandelbriss - I will not let our research be used to make weapons of war!" "But Kyriet, I - oh, hello there! Who would you happen to be?" You tell them that you're a Renegade sent by Alastair to check up on them, but before they have a chance to respond the entire building quakes and several alarms go off. Shortly after, you recieve a hail.</text>
@@ -10290,8 +10290,8 @@
 						<choice>
 						<text>Continue...</text>
 						<event load="MORALITY_UPDATE_FORGEMASTER_ORCHID_CRYSTAL_NO_FIGHT"/>
-					</event>
 				                </choice>
+				         </event>
 				</choice>
 			</event>
 		</choice>
