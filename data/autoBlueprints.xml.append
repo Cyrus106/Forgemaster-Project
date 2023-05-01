@@ -203,6 +203,37 @@
 	<cloakImage>mt_boss_kestrel</cloakImage>
 </shipBlueprint>
 
+<shipBlueprint name="SHIP_FALLEN" layout="fm_fallen" img="fallen">
+	<class>Fallen Fighter</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="3" max="3" room="1" start="true" />
+		<clonebay power="2" max="2" room="6" start="true" />
+		<drones power="2" max="6" room="8" start="true" />
+		<engines power="3" max="5" room="10" start="true" />
+		<oxygen power="1" max="1" room="7" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="6" room="9" start="true" />
+		<teleporter power="3" max="3" room="5" start="true" />
+		<weapons power="3" max="9" room="2" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="12" count="4">
+		<weapon name="BOMB_FIRE_ENEMY"/>
+		<weapon name="LANCE_1"/>
+		<weapon name="ION_2"/>
+		<weapon name="BEAM_MINING"/>
+	</weaponList>
+	<droneList drones="99" count="0"/>
+	<health amount="14" />
+	<maxPower amount="99" />
+	<crewCount amount="2" max="4" class="human" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="CLOAK_FIRE" />
+</shipBlueprint>
+
 <!-- SUICIDE MISSION BOSSES -->
 <shipBlueprint name="FM_MT_BOSS_CLAN_SUICIDE" layout="mt_boss_clansmen_suicide" img="mt_boss_clansmen_suicide">
 	<class>Twisted Renegade Cruiser</class>
