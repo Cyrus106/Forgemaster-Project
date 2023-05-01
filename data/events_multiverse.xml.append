@@ -175,12 +175,12 @@
 		</choice>
 	</event>
 
-	<ship name="SHIP_FALLEN" auto_blueprint="FM_FALLEN">
+	<ship name="SHIP_FALLEN" auto_blueprint="FM_FALLEN_ANGEL">
 		<destroyed load="FALLEN_DESTROY"/>
 		<deadCrew load="FALLEN_KILLED"/>
 	</ship>
 
-	<event name="FALLEN_DESTROYED">
+	<event name="FALLEN_DESTROY">
 		<text>"Goddamnit... knew I shouldn'ta gotten in cahoots... with the division..." As whats left of Randall's ship crashes and burns, you recieve a hail from the Arbor thanking you for your good deed and transferring you to Mandelbriss and Kyriet. "I suppose we owe you and Alastair an explanation. You see, we used to be the best of friends, Kyriet and I, but issues popped up between us when we finally got around to thinking of what we'd actually do with our marvelous technology. You see, I -" "He wanted to use our research and technology to create weapons of war instead of using our knowledge to spread peace and prosperity." "Spread peace all you want Ky, but when it really comes down to it weapons are what seperates saviors like Ms Renegade here and cowards like us, huddling under a table to avoid danger."</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -10267,7 +10267,7 @@
 	 </event>
 	
 	<event name="FM_QUEST_ARBOREAL_ENTRANCE">
-		<text>"Thank you. Enjoy your stay." As you enter the Arbor, you ask around with the Orchids for Mandelbriss and it doesn't take long for you to find him outside one of the labs - and surprisingly enough, Kyriet too! As you walk over to introduce yourself, you briefly overhear part of their conversation. "We've discussed this before, Mandelbriss - I will not let our research be used to make weapons of war!" "But Kyriet, I - oh, hello there! Who would you happen to be?" You tell them that you're a Renegade sent by Alastair to check up on them, but before they have a chance to respond the entire building quakes and several alarms go off. Shortly after, you recieve a hail.</text>
+		<text>As you enter the Arbor, you ask around with the Orchids for Mandelbriss and it doesn't take long for you to find him outside one of the labs - and surprisingly enough, Kyriet too! As you walk over to introduce yourself, you briefly overhear part of their conversation. "We've discussed this before, Mandelbriss - I will not let our research be used to make weapons of war!" "But Kyriet, I - oh, hello there! Who would you happen to be?" You tell them that you're a Renegade sent by Alastair to check up on them, but before they have a chance to respond the entire building quakes and several alarms go off. Shortly after, you recieve a hail.</text>
 	         <choice>
 			 <text>Recieve the hail.</text>
 			 <event>
