@@ -17959,8 +17959,8 @@
 	</augBlueprint>
 
 	<augBlueprint name="LOCKED_SUPER_DEPRESSION">
-		<title>Motivation Succer</title>
-		<desc>Casts a depressive effect on the enemy crew, causing them to drain one more power than usual from their own systems.</desc>
+		<title>Motivation Reducer</title>
+		<desc>Casts a depressive effect on the enemy crew, inflicting +1 power drain from their own systems.</desc>
 		<cost>5</cost>
 		<rarity>0</rarity>
 		<stackable>false</stackable>
