@@ -175,42 +175,17 @@
 		</choice>
 	</event>
 
-	<ship name="SHIP_FALLEN" auto_blueprint="FM_FALLEN_ANGEL">
+	<ship name="SHIP_FALLEN" auto_blueprint="SHIP_FALLEN_ANGEL">
 		<destroyed load="FALLEN_DESTROY"/>
 		<deadCrew load="FALLEN_KILLED"/>
 	</ship>
 
 	<event name="FALLEN_DESTROY">
-		<text>"Goddamnit... knew I shouldn'ta gotten in cahoots... with the division..." As whats left of Randall's ship crashes and burns, you recieve a hail from the Arbor thanking you for your good deed and transferring you to Mandelbriss and Kyriet. "I suppose we owe you and Alastair an explanation. You see, we used to be the best of friends, Kyriet and I, but issues popped up between us when we finally got around to thinking of what we'd actually do with our marvelous technology. You see, I -" "He wanted to use our research and technology to create weapons of war instead of using our knowledge to spread peace and prosperity." "Spread peace all you want Ky, but when it really comes down to it weapons are what seperates saviors like Ms Renegade here and cowards like us, huddling under a table to avoid danger."</text>
+		<text>"Goddamnit... knew I shouldn'ta gotten in cahoots... with the division..." As what's left of Randall's ship crashes and burns, you recieve a hail from the Arbor thanking you for your good deed and transferring you to Mandelbriss and Kyriet. "I suppose we owe you and Alastair an explanation. You see, we used to be the best of friends, Kyriet and I, but issues popped up between us when we finally got around to thinking of what we'd actually do with our marvelous technology. You see, I -" "He wanted to use our research and technology to create weapons of war instead of using our knowledge to spread peace and prosperity." "Spread peace all you want Ky, but when it really comes down to it weapons are what seperates saviors like Ms Renegade here and cowards like us, huddling under a table to avoid danger."</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
 			<text>Mediate their conflict.</text>
-			<event name="ARBOREAL_CHOICE">
-			      <text>"Fine, you decide then. Who do you agree with? Do you think it really is possible for peace to end conflicts?" "Or is it possible for weapons to help spread prosperity?"</text>
-				      <choice>
-					      <text>Weapons don't always have to be used maliciously. (Side with Mandelbriss)</text>
-					      <event>
-						      <text>"Hrrmm... I suppose I can see your point. After all, we wouldn't be standing here right now if you hadn't saved us through force. Ok, Mandelbriss and I will finish up on a prototype back in our lab and give it to you for a test run." As Kyriet leaves the line to go finish the prototype, Mandelbriss briefly thanks you before going to do the same. Soon after, they arrive outside your ship with a brand new weapon.</text>
-							      <weapon name="FM_ARBOREAL_EXE"/>
-						      <variable name="fm_arborealquest_exe" op="set" val="1"/>
-							      <choice>
-								      <text>Thank them and leave.</text>
-								      <event load="MORALITY_REMOVE_FORGEMASTER_ORCHID_CRYSTAL"/>
-						              </choice>
-					      </event>
-			             </choice>
-			             <choice>
-					      <text>There's more to being strong than having big guns. (Side with Kyriet)</text>
-					      <event>
-						      <text>"Hmm... I guess I can see your point. Strong weapons can't bring a man back from the brink of death, and god knows big guns didn't save the Federation during the Node 17 massacre. Alright, fine, I'll finish off Kyriet's prototype and we'll give it to you to use for whatever you want." As Mandelbriss leaves the line to go finish the prototype, Kuriet briefly thanks you before going to do the same. Soon after, they arrive outside your ship with a brand new weapon.</text>
-							      <weapon name="FM_ARBOREAL_REV"/>
-						      <variable name="fm_arborealquest_rev" op="set" val="1"/>
-							      <choice>
-								      <text>Thank them and leave.</text>
-						              </choice>
-					      </event>
-			             </choice>
-			</event>
+			<event load="ARBOREAL_CHOICE"/>
 		</choice>
 	</event>
 			
@@ -221,6 +196,34 @@
 			<text>Mediate their conflict.</text>
 			<event load="ARBOREAL_CHOICE"/>
 		</choice>
+	</event>
+
+	<event name="ARBOREAL_CHOICE">
+		<text>"Fine, you decide then. Who do you agree with? Do you think it really is possible for peace to end conflicts?" "Or is it possible for weapons to help spread prosperity?"</text>
+			<choice>
+				<text>Weapons don't always have to be used maliciously. (Side with Mandelbriss)</text>
+				<event>
+					<text>"Hrrmm... I suppose I can see your point. After all, we wouldn't be standing here right now if you hadn't saved us through force. Ok, Mandelbriss and I will finish up on a prototype back in our lab and give it to you for a test run." As Kyriet leaves the line to go finish the prototype, Mandelbriss briefly thanks you before going to do the same. Soon after, they arrive outside your ship with a brand new weapon.</text>
+					<weapon name="FM_ARBOREAL_EXE"/>
+					<variable name="fm_arborealquest_exe" op="set" val="1"/>
+					<choice>
+						<text>Thank them and leave.</text>
+						<event load="MORALITY_REMOVE_FORGEMASTER_ORCHID_CRYSTAL"/>
+					</choice>
+				</event>
+			</choice>
+			<choice>
+				<text>There's more to being strong than having big guns. (Side with Kyriet)</text>
+				<event>
+					<text>"Hmm... I guess I can see your point. Strong weapons can't bring a man back from the brink of death, and god knows big guns didn't save the Federation during the Node 17 massacre. Alright, fine, I'll finish off Kyriet's prototype and we'll give it to you to use for whatever you want." As Mandelbriss leaves the line to go finish the prototype, Kuriet briefly thanks you before going to do the same. Soon after, they arrive outside your ship with a brand new weapon.</text>
+					<weapon name="FM_ARBOREAL_REV"/>
+					<variable name="fm_arborealquest_rev" op="set" val="1"/>
+					<choice>
+						<text>Thank them and leave.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
 	</event>
 
 
