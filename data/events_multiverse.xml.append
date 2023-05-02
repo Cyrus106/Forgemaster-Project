@@ -589,7 +589,7 @@
 
 	<event name="FM_FORGEMASTER_TRADES_NORMAL"> <!--  NORMAL STORE -->
 		<text>"You look like a lad with a discerning eye. What say I show you some weapons who've caught my fancy?"
-			(Note: This will allow you to get a second prompt that lets you craft after shopping!(take note of that Forge button))
+			(Note: You may now press the Forge button at any time in order to access a second prompt.)
 		</text>  <!-- STORE DIALOGUE CAN GO HERE. CAN ALSO PUT A LIST OF DIALOGUE TO USE RANDOMLY TO SPICE IT UP. see the  <textList> example above!-->
 		<!--<jumpEvent>FORGEMASTER_SECOND_PROMPT</jumpEvent>-->
 		<eventButton name="UI_FORGEMASTER_SECOND_PROMPT">
@@ -603,10 +603,9 @@
 		</eventButton>
 		<store>FM_NORMAL_STORE</store>
 	</event>
-
 	<event name="FM_FORGEMASTER_TRADES_RARE"> <!--  RARE STORE -->
 		<text>"My good lad! I'm in an great mood today and would love to show you some of my special stock. Please lad take your pick and enjoy!"
-			(Note: This will allow you to get a second prompt that lets you craft after shopping!(take note of that Forge button))
+			(Note: You may now press the Forge button at any time in order to access a second prompt.)
 		</text>  <!-- STORE DIALOGUE CAN GO HERE. CAN ALSO PUT A LIST OF DIALOGUE TO USE RANDOMLY TO SPICE IT UP. see the  <textList> example above!-->
 		<!--<jumpEvent>FORGEMASTER_SECOND_PROMPT</jumpEvent>-->
 		<eventButton name="UI_FORGEMASTER_SECOND_PROMPT">
@@ -623,7 +622,7 @@
 
 	<event name="FM_FORGEMASTER_TRADES_RARE_PLUS"> <!--  RARE † STORE -->
 		<text>"Ohohohoh lad! One of my old friends passed by with some exotic stock for me to tinker with. Why don't I set aside a few of them for you to purchase if you like? Nothing like spreading joy, eh lad?"
-			(Note: This will allow you to get a second prompt that lets you craft after shopping!(take note of that Forge button))
+			(Note: You may now press the Forge button at any time in order to access a second prompt.)
 		</text>  <!-- STORE DIALOGUE CAN GO HERE. CAN ALSO PUT A LIST OF DIALOGUE TO USE RANDOMLY TO SPICE IT UP. see the  <textList> example above!-->
 		<!--<jumpEvent>FORGEMASTER_SECOND_PROMPT</jumpEvent>-->
 		<eventButton name="UI_FORGEMASTER_SECOND_PROMPT">
@@ -639,13 +638,13 @@
 	</event>
 	<textList name="TEXT_FORGEMASTER_STORE_BOON" ignoreUnique="true"> <!-- RANDOM DIALOGUE HERE! HE picks one of these everytime you meet him via the phone. DOES NOT load during FORGEMASTER_FIRST_MEETING  You can make AS MANY as you want!!! This goes for any of the text prompts. You can replace them with a <textList> -->
 		<text>"You look like a lad with quite the discerning eye. We've got quite the stock from a rather generous rockman today, what say I show you some weapons that grabbed my attention?"
-			(Note: This will allow you to get a second prompt that lets you craft after shopping!(take note of that Forge button))
+			(Note: You may now press the Forge button at any time in order to access a second prompt.)
 		</text>
 		<text>"My lad! We've been unpacking a generous donation of cargo from a mighty rockman, some of this stock is quite rare indeed! Here, let me show you what we've got."
-			(Note: This will allow you to get a second prompt that lets you craft after shopping!(take note of that Forge button))
+			(Note: You may now press the Forge button at any time in order to access a second prompt.)
 		</text>
 		<text>"Good choice, my lad! We've been finding some rather exotic cargo in this package given to us by a most generous rockman! Some of this stuff looks outright otherworldly, lad - how about I set aside a few for you to purchase if you'd like to? I was told this cargo is for you Renegade folk, after all!"
-			(Note: This will allow you to get a second prompt that lets you craft after shopping!(take note of that Forge button))
+			(Note: You may now press the Forge button at any time in order to access a second prompt.)
 		</text>
 	</textList>
 	<event name="FM_FORGEMASTER_TRADES_BOON"> <!--  BOON STORE -->
