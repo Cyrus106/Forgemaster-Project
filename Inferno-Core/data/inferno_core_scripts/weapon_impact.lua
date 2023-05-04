@@ -4,8 +4,8 @@ mods.inferno.popWeapons = {}
 --[[ 
 Used for popping additional shield layers and doing additional damage to zoltan shields. 
 
-count: Additional layers popped on impact.
-countSuper: Additional damage to supershields on impact.
+count: Additional layers popped on impact. (Default of 0)
+countSuper: Additional damage to supershields on impact. (Default of 0)
 
 Usage:
 mods.inferno.popWeapons.FM_LASER_PHOTON = {count = 1, countSuper = 1}
