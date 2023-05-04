@@ -6816,7 +6816,7 @@
 		<damage>2</damage>
 		<ion>2</ion>
 		<fireTime>1</fireTime>
-		<noSysDamage/>
+		<noSysDamage>true</noSysDamage>
 		<hullBust>1</hullBust>
 		<shots>1</shots>
 		<sp>0</sp>
@@ -9567,7 +9567,7 @@
 		<drone_targetable>1</drone_targetable>
 		<title>'Hellfire' Heavy Burst Missiles</title>
 		<short>'Hellfire'</short>
-		<desc>This weapon unleashes a barrage of Hellfire missiles, dealing heavy hull damage and potentially setting multiple rooms on fire</desc>
+		<desc>This weapon unleashes a barrage of Hellfire missiles, dealing heavy hull damage and potentially setting multiple rooms on fire.</desc>
 		<tooltip>Fires 5 missile; does 2 damage each; pierces all shields.</tooltip>
 		<radius>60</radius>
 		<missiles>2</missiles>
@@ -9611,7 +9611,7 @@
 		<drone_targetable>1</drone_targetable>
 		<title>'Hellfire' Missiles†</title>
 		<short>'Hellfire'†</short>
-		<desc>This weapon unleashes a barrage of Hellfire missiles, dealing heavy hull damage and potentially setting multiple rooms on fire</desc>
+		<desc>This weapon unleashes a barrage of Hellfire missiles, dealing heavy hull damage and potentially setting multiple rooms on fire.</desc>
 		<tooltip>Fires 5 missile; does 2 damage each; pierces all shields.</tooltip>
 		<radius>60</radius>
 		<missiles>2</missiles>
@@ -9656,7 +9656,7 @@
 		<drone_targetable>1</drone_targetable>
 		<title>'Hellfire' Missiles††</title>
 		<short>'Hellfire'††</short>
-		<desc>This weapon unleashes a barrage of Hellfire missiles, dealing heavy hull damage and potentially setting multiple rooms on fire</desc>
+		<desc>This weapon unleashes a barrage of Hellfire missiles, dealing heavy hull damage and potentially setting multiple rooms on fire.</desc>
 		<tooltip>Fires 5 missile; does 2 damage each; pierces all shields.</tooltip>
 		<radius>60</radius>
 		<missiles>2</missiles>
@@ -15099,7 +15099,7 @@
 		<drone_targetable>1</drone_targetable>
 		<title>'Hellfire' Missiles</title>
 		<short>'Hellfire'</short>
-		<desc>This weapon unleashes a barrage of Hellfire missiles, dealing heavy hull damage and potentially setting multiple rooms on fire</desc>
+		<desc>This weapon unleashes a barrage of Hellfire missiles, dealing heavy hull damage and potentially setting multiple rooms on fire.</desc>
 		<tooltip>Fires 5 missile; does 2 damage each; pierces all shields.</tooltip>
 		<radius>70</radius>
 		<missiles>1</missiles>
