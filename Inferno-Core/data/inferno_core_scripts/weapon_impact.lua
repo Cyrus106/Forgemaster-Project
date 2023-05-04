@@ -7,8 +7,6 @@ Used for popping additional shield layers and doing additional damage to zoltan 
 count: Additional layers popped on impact.
 countSuper: Additional damage to supershields on impact.
 
-(Note: Both arguments are required.)
-
 Usage:
 mods.inferno.popWeapons.FM_LASER_PHOTON = {count = 1, countSuper = 1}
 --]]
@@ -65,6 +63,7 @@ script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION, function(ShipM
     local shieldPower = ShipManager.shieldSystem.shields.power
     local popData = nil
     if pcall(function() popData = mods.inferno.popWeapons[Hyperspace.Get_Projectile_Extend(Projectile).name] end) and popData then
+        popData.count = popData.count or 0
         if shieldPower.super.first <= 0 and CollisionResponse.damage > Damage.iShieldPiercing then
             ShipManager.shieldSystem:CollisionReal(Projectile.position.x, Projectile.position.y, Hyperspace.Damage(), true)
             shieldPower.first = math.max(0, shieldPower.first - popData.count)
@@ -77,6 +76,7 @@ script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION_PRE, function(S
     local shieldPower = ShipManager.shieldSystem.shields.power
     local popData = nil
     if pcall(function() popData = mods.inferno.popWeapons[Hyperspace.Get_Projectile_Extend(Projectile).name] end) and popData and shieldPower.super.first > 0 then
+        popData.countSuper = popData.countSuper or 0
         Damage.iDamage = Damage.iDamage + popData.countSuper
     end
     return Defines.Chain.CONTINUE
