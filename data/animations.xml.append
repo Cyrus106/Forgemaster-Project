@@ -465,6 +465,130 @@
 </FTL>
 
 <FTL>
+<animSheet name="fm_fallen" w="315" h="455" fw="35" fh="35">people/fm_fallen_base.png</animSheet>
+<anim name="fm_fallen_clone">
+	<sheet>fm_fallen</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="fm_fallen_death_right">
+	<sheet>fm_fallen</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="fm_fallen_death_left">
+	<sheet>fm_fallen</sheet>
+	<desc length="5" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="fm_fallen_walk_down">
+	<sheet>fm_fallen</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_fallen_walk_right">
+	<sheet>fm_fallen</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_fallen_walk_up">
+	<sheet>fm_fallen</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_fallen_walk_left">
+	<sheet>fm_fallen</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_fallen_shoot_down">
+	<sheet>fm_fallen</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_fallen_shoot_right">
+	<sheet>fm_fallen</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_fallen_shoot_up">
+	<sheet>fm_fallen</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_fallen_shoot_left">
+	<sheet>fm_fallen</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_fallen_fire_down">
+	<sheet>fm_fallen</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_fallen_fire_right">
+	<sheet>fm_fallen</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_fallen_fire_up">
+	<sheet>fm_fallen</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_fallen_fire_left">
+	<sheet>fm_fallen</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_fallen_repair">
+	<sheet>fm_fallen</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_fallen_punch_up">
+	<sheet>fm_fallen</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_fallen_punch_down">
+	<sheet>fm_fallen</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="fm_fallen_teleport">
+	<sheet>fm_fallen</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="fm_fallen_type_right">
+	<sheet>fm_fallen</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="fm_fallen_type_left">
+	<sheet>fm_fallen</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="fm_fallen_type_up">
+	<sheet>fm_fallen</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="fm_fallen_type_down">
+	<sheet>fm_fallen</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="fm_fallen_portrait">
+	<sheet>fm_fallen</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+</FTL>
+
+<FTL>
 
 	<animSheet name="fm_separatist_twisted" w="315" h="455" fw="35" fh="35">people/fm_separatist_twisted_base.png</animSheet>
 <anim name="fm_separatist_twisted_clone">

@@ -4,10 +4,8 @@ mods.inferno.popWeapons = {}
 --[[ 
 Used for popping additional shield layers and doing additional damage to zoltan shields. 
 
-count: Additional layers popped on impact.
-countSuper: Additional damage to supershields on impact.
-
-(Note: Both arguments are required.)
+count: Additional layers popped on impact. (Default of 0)
+countSuper: Additional damage to supershields on impact. (Default of 0)
 
 Usage:
 mods.inferno.popWeapons.FM_LASER_PHOTON = {count = 1, countSuper = 1}
@@ -65,6 +63,7 @@ script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION, function(ShipM
     local shieldPower = ShipManager.shieldSystem.shields.power
     local popData = nil
     if pcall(function() popData = mods.inferno.popWeapons[Hyperspace.Get_Projectile_Extend(Projectile).name] end) and popData then
+        popData.count = popData.count or 0
         if shieldPower.super.first <= 0 and CollisionResponse.damage > Damage.iShieldPiercing then
             ShipManager.shieldSystem:CollisionReal(Projectile.position.x, Projectile.position.y, Hyperspace.Damage(), true)
             shieldPower.first = math.max(0, shieldPower.first - popData.count)
@@ -77,6 +76,7 @@ script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION_PRE, function(S
     local shieldPower = ShipManager.shieldSystem.shields.power
     local popData = nil
     if pcall(function() popData = mods.inferno.popWeapons[Hyperspace.Get_Projectile_Extend(Projectile).name] end) and popData and shieldPower.super.first > 0 then
+        popData.countSuper = popData.countSuper or 0
         Damage.iDamage = Damage.iDamage + popData.countSuper
     end
     return Defines.Chain.CONTINUE
@@ -130,7 +130,7 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(ShipManage
 end)
 
 script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
-    function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
+function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
     local bomb
     pcall(function() bomb = mods.inferno.bombBeams[Hyperspace.Get_Projectile_Extend(Projectile).name] end)
     if beamHitType ~= Defines.BeamHit.SAME_TILE and bomb then
@@ -143,6 +143,7 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
             SpaceManager:CreateBomb(blueprint, bombOwner, target, targetSpace)
         end
     end
+    return Defines.CHAIN_CONTINUE, beamHitType
 end)
 
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
@@ -168,15 +169,22 @@ end)
 
 
 --AUGMENT EFFECTS
-local function effectResist(ShipManager, Projectile, Location, Damage, forceHit, shipFriendlyFire)
+local function EffectResist(ShipManager, Damage)
     local augValue = ShipManager:GetAugmentationValue("FMCORE_NO_BREACH")
     Damage.breachChance = math.max(0, Damage.breachChance - augValue)
     local augValue = ShipManager:GetAugmentationValue("FMCORE_NO_FIRE")
     Damage.fireChance = math.max(0, Damage.fireChance - augValue)
-    return Defines.CHAIN_CONTINUE, forceHit, shipFriendlyFire
 end
-script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, effectResist)
-script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, effectResist)
+script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, 
+function(ShipManager, Projectile, Location, Damage, forceHit, shipFriendlyFire)
+    EffectResist(ShipManager, Damage)
+    return Defines.CHAIN_CONTINUE, forceHit, shipFriendlyFire
+end)
+script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, 
+function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
+    EffectResist(ShipManager, Damage)
+    return Defines.CHAIN_CONTINUE, beamHitType
+end)
 
 
 
@@ -208,4 +216,5 @@ function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
   if beamHitType ~= Defines.BeamHit.SAME_TILE then
     AdditionalBreaches(ShipManager, Location, Damage)
   end
+  return Defines.CHAIN_CONTINUE, beamHitType
 end)

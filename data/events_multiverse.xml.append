@@ -175,6 +175,57 @@
 		</choice>
 	</event>
 
+	<ship name="SHIP_FALLEN" auto_blueprint="SHIP_FALLEN_ANGEL">
+		<destroyed load="FALLEN_DESTROY"/>
+		<deadCrew load="FALLEN_KILLED"/>
+	</ship>
+
+	<event name="FALLEN_DESTROY">
+		<text>"Goddamnit... knew I shouldn'ta gotten in cahoots... with the division..." As what's left of Randall's ship crashes and burns, you recieve a hail from the Arbor thanking you for your good deed and transferring you to Mandelbriss and Kyriet. "I suppose we owe you and Alastair an explanation. You see, we used to be the best of friends, Kyriet and I, but issues popped up between us when we finally got around to thinking of what we'd actually do with our marvelous technology. You see, I -" "He wanted to use our research and technology to create weapons of war instead of using our knowledge to spread peace and prosperity." "Spread peace all you want Ky, but when it really comes down to it weapons are what seperates saviors like Ms Renegade here and cowards like us, huddling under a table to avoid danger."</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Mediate their conflict.</text>
+			<event load="ARBOREAL_CHOICE"/>
+		</choice>
+	</event>
+			
+	<event name="FALLEN_KILLED">
+		<text>"Goddamnit... knew I shouldn'ta gotten in cahoots... with the division..." As you scrap the hollow shell of an Angel fighter, you recieve a hail from the Arbor thanking you for your good deed and transferring you to Mandelbriss and Kyriet. "I suppose we owe you and Alastair an explanation. You see, we used to be the best of friends, Kyriet and I, but issues popped up between us when we finally got around to thinking of what we'd actually do with our marvelous technology. You see, I -" "He wanted to use our research and technology to create weapons of war instead of using our knowledge to spread peace and prosperity." "Spread peace all you want Ky, but when it really comes down to it weapons are what seperates saviors like Ms Renegade here and cowards like us, huddling under a table to avoid danger.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Mediate their conflict.</text>
+			<event load="ARBOREAL_CHOICE"/>
+		</choice>
+	</event>
+
+	<event name="ARBOREAL_CHOICE">
+		<text>"Fine, you decide then. Who do you agree with? Do you think it really is possible for peace to end conflicts?" "Or is it possible for weapons to help spread prosperity?"</text>
+			<choice>
+				<text>Weapons don't always have to be used maliciously. (Side with Mandelbriss)</text>
+				<event>
+					<text>"Hrrmm... I suppose I can see your point. After all, we wouldn't be standing here right now if you hadn't saved us through force. Ok, Mandelbriss and I will finish up on a prototype back in our lab and give it to you for a test run." As Kyriet leaves the line to go finish the prototype, Mandelbriss briefly thanks you before going to do the same. Soon after, they arrive outside your ship with a brand new weapon.</text>
+					<weapon name="FM_ARBOREAL_EXE"/>
+					<variable name="fm_arborealquest_exe" op="set" val="1"/>
+					<choice>
+						<text>Thank them and leave.</text>
+						<event load="MORALITY_REMOVE_FORGEMASTER_ORCHID_CRYSTAL"/>
+					</choice>
+				</event>
+			</choice>
+			<choice>
+				<text>There's more to being strong than having big guns. (Side with Kyriet)</text>
+				<event>
+					<text>"Hmm... I guess I can see your point. Strong weapons can't bring a man back from the brink of death, and god knows big guns didn't save the Federation during the Node 17 massacre. Alright, fine, I'll finish off Kyriet's prototype and we'll give it to you to use for whatever you want." As Mandelbriss leaves the line to go finish the prototype, Kuriet briefly thanks you before going to do the same. Soon after, they arrive outside your ship with a brand new weapon.</text>
+					<weapon name="FM_ARBOREAL_REV"/>
+					<variable name="fm_arborealquest_rev" op="set" val="1"/>
+					<choice>
+						<text>Thank them and leave.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+	</event>
+
 
 	<event name="FORGEMASTER_SPARE">
 		<text>It seems you're on your last legs. You won't survive much longer, Alastair offers to spare you. "There doesn't need to be any more bloodshed, lad."</text>
@@ -538,7 +589,7 @@
 
 	<event name="FM_FORGEMASTER_TRADES_NORMAL"> <!--  NORMAL STORE -->
 		<text>"You look like a lad with a discerning eye. What say I show you some weapons who've caught my fancy?"
-			(Note: This will allow you to get a second prompt that lets you craft after shopping!(take note of that Forge button))
+			(Note: You may now press the Forge button at any time in order to access a second prompt.)
 		</text>  <!-- STORE DIALOGUE CAN GO HERE. CAN ALSO PUT A LIST OF DIALOGUE TO USE RANDOMLY TO SPICE IT UP. see the  <textList> example above!-->
 		<!--<jumpEvent>FORGEMASTER_SECOND_PROMPT</jumpEvent>-->
 		<eventButton name="UI_FORGEMASTER_SECOND_PROMPT">
@@ -552,10 +603,9 @@
 		</eventButton>
 		<store>FM_NORMAL_STORE</store>
 	</event>
-
 	<event name="FM_FORGEMASTER_TRADES_RARE"> <!--  RARE STORE -->
 		<text>"My good lad! I'm in an great mood today and would love to show you some of my special stock. Please lad take your pick and enjoy!"
-			(Note: This will allow you to get a second prompt that lets you craft after shopping!(take note of that Forge button))
+			(Note: You may now press the Forge button at any time in order to access a second prompt.)
 		</text>  <!-- STORE DIALOGUE CAN GO HERE. CAN ALSO PUT A LIST OF DIALOGUE TO USE RANDOMLY TO SPICE IT UP. see the  <textList> example above!-->
 		<!--<jumpEvent>FORGEMASTER_SECOND_PROMPT</jumpEvent>-->
 		<eventButton name="UI_FORGEMASTER_SECOND_PROMPT">
@@ -572,7 +622,7 @@
 
 	<event name="FM_FORGEMASTER_TRADES_RARE_PLUS"> <!--  RARE † STORE -->
 		<text>"Ohohohoh lad! One of my old friends passed by with some exotic stock for me to tinker with. Why don't I set aside a few of them for you to purchase if you like? Nothing like spreading joy, eh lad?"
-			(Note: This will allow you to get a second prompt that lets you craft after shopping!(take note of that Forge button))
+			(Note: You may now press the Forge button at any time in order to access a second prompt.)
 		</text>  <!-- STORE DIALOGUE CAN GO HERE. CAN ALSO PUT A LIST OF DIALOGUE TO USE RANDOMLY TO SPICE IT UP. see the  <textList> example above!-->
 		<!--<jumpEvent>FORGEMASTER_SECOND_PROMPT</jumpEvent>-->
 		<eventButton name="UI_FORGEMASTER_SECOND_PROMPT">
@@ -588,13 +638,13 @@
 	</event>
 	<textList name="TEXT_FORGEMASTER_STORE_BOON" ignoreUnique="true"> <!-- RANDOM DIALOGUE HERE! HE picks one of these everytime you meet him via the phone. DOES NOT load during FORGEMASTER_FIRST_MEETING  You can make AS MANY as you want!!! This goes for any of the text prompts. You can replace them with a <textList> -->
 		<text>"You look like a lad with quite the discerning eye. We've got quite the stock from a rather generous rockman today, what say I show you some weapons that grabbed my attention?"
-			(Note: This will allow you to get a second prompt that lets you craft after shopping!(take note of that Forge button))
+			(Note: You may now press the Forge button at any time in order to access a second prompt.)
 		</text>
 		<text>"My lad! We've been unpacking a generous donation of cargo from a mighty rockman, some of this stock is quite rare indeed! Here, let me show you what we've got."
-			(Note: This will allow you to get a second prompt that lets you craft after shopping!(take note of that Forge button))
+			(Note: You may now press the Forge button at any time in order to access a second prompt.)
 		</text>
 		<text>"Good choice, my lad! We've been finding some rather exotic cargo in this package given to us by a most generous rockman! Some of this stuff looks outright otherworldly, lad - how about I set aside a few for you to purchase if you'd like to? I was told this cargo is for you Renegade folk, after all!"
-			(Note: This will allow you to get a second prompt that lets you craft after shopping!(take note of that Forge button))
+			(Note: You may now press the Forge button at any time in order to access a second prompt.)
 		</text>
 	</textList>
 	<event name="FM_FORGEMASTER_TRADES_BOON"> <!--  BOON STORE -->
@@ -630,6 +680,26 @@
 		<choice hidden="true" req="SEC SECTOR_FREEMANTIS" lvl="1" max_group="1" blue="true"> <!--  GUNBOM QUEST-->
 			<text>Examine an unusual receipt on the ground.</text>
 			<event load="FM_QUEST_GUNBOM_INTRO"/>
+		</choice>
+		
+		<choice hidden="true" req="fm_arborealquest_exe" lvl="1" max_group="1" blue="true"> <!--  ARBOREAL QUEST-->
+			<text>Inform Alastair about the result of your quest.</text>
+			<event load="FM_QUEST_ARBOREAL_COMPLETED_EXE"/>
+		</choice>
+		
+		<choice hidden="true" req="fm_arborealquest_rev" lvl="1" max_group="1" blue="true"> <!--  ARBOREAL QUEST-->
+			<text>Inform Alastair about the result of your quest.</text>
+			<event load="FM_QUEST_ARBOREAL_COMPLETED_REV"/>
+		</choice>
+
+		<choice hidden="true" req="fm_arborealquest_taken" lvl="1" max_group="1" blue="true"> <!--  ARBOREAL QUEST-->
+			<text>Inquire again about Kyriet and Mandelbriss.</text>
+			<event load="FM_QUEST_ARBOREAL_TAKEN"/>
+		</choice>
+
+		<choice hidden="true" req="SEC SECTOR_ORCHID_UNIQUE" lvl="1" max_group="1" blue="true"> <!--  ARBOREAL QUEST-->
+			<text>Examine a glass case containing a shattered green crystal.</text>
+			<event load="FM_QUEST_ARBOREAL_INTRO"/>
 		</choice>
 
 
@@ -9930,7 +10000,7 @@
 
 <FTL> <!-- GUNBOM QUEST FOR FORGEMASTER-->
 	<!-- GUNBOM QUEST FOR FORGEMASTER-->
-	<event name="FM_QUEST_GUNBOM_INTRO"><crewMember amount="1" class="gold"/>
+	<event name="FM_QUEST_GUNBOM_INTRO">
 		<text>You find an EXTREMELY long receipt lying on the ground inside Forgemaster's ship as you are viewing his wares. You decide to ask about it. Alastair explains that it belongs to a client of his, a Free Mantis who placed a stupidly large order of weapons named Winchester. "To be honest, I'm kind of worried about him lad, he sounded like he was in trouble when we last spoke. If you'd like to go check it out, here are the coordinates."</text>
 		<variable name="fm_gunbomquest_taken" op="set" val="1"/>
 		<choice hidden="true">
@@ -10006,7 +10076,7 @@
 					</event>
 				</choice>
 				<choice hidden="true" req="SHIP_GUNBOM">
-					<text>(Gunbom) Hail them</text>
+					<text>(Gunbom) Hail them.</text>
 					<event>
 						<text>Winchester responds first "How? Are you a fan of my work??" The Clairvoyants appear to be confused "T-two? To helll with it, kill them both, just more bounty for us!"</text>
 						<ship load="SHIP_CLAIRVOYANT_DEBTCOLLECT" hostile="true"/>
@@ -10102,6 +10172,134 @@
 
 		</choice>
 	</event>
+
+</FTL>
+<FTL>
+        <!--KURIET AND MANDELBRISS QUEST FOR FORGEMASTER-->
+	
+	<!-- GUNBOM QUEST FOR FORGEMASTER-->
+	<event name="FM_QUEST_ARBOREAL_INTRO">
+		<text>You question Alastair about the strange crystal inside the case. "Ah, that old thing. A miracle of technology that, forged by two great students I met a long time ago. An Orchid scientist and a Crystal noble - an odd pair for sure, but despite their differences became fast friends. Mandelbriss and Kyriet commisioned me to make casing for an experimental weapon once, one utilising a marvelous combination of both Orchid and Crystal technologies, a relic of which you see before you now." Alastair pauses for a moment, as if deep in thought. "I do wonder what happened to those two... last I heard, they had a falling out involving their work. Would you mind checking on them for me, lad? I heard Kyriet is returning to the region, but I'll transfer you Mandelbriss' co-ordinates."</text>
+		<variable name="fm_arborealquest_taken" op="set" val="1"/>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event>
+				<text>Alastair uploads Mandelbriss' co-ordinates to your ship with little effort, and motions for you to leave the room.</text>
+				<quest event="FM_QUEST_ARBOREAL"/>
+
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event>
+						<text>"Good luck out there, Lad!" Alastair calls out to you as you leave.</text>
+						<choice>
+							<text>Continue...</text>
+							<event load="FORGEMASTER_PHONE_EVENT_LOAD"/>
+						</choice>
+
+					</event>
+				</choice>
+			</event>
+		</choice>
+	</event>
+	
+	<event name="FM_QUEST_ARBOREAL_TAKEN">
+		<text>"What are you waiting for, lad? Get out there and help those poor fellows!"</text>
+                  <choice>
+			  <text>Continue...</text>
+			  <event load="FORGEMASTER_PHONE_EVENT_LOAD"/>
+		</choice>
+	</event>
+	
+	<event name="FM_QUEST_ARBOREAL_COMPLETED_EXE">
+		<text>"So they had a dispute about what frontier they'd take their discoveries to? Can't say I've never felt the same, lad! But you helped them come to an agreement by showing Kyriet that there are many ways to peace? Impressive, even for my standards! In my experience, that one always was a stubborn girl."</text>
+                  <choice>
+			  <text>Continue...</text>
+			  <event load="FORGEMASTER_PHONE_EVENT_LOAD"/>
+		</choice>
+	</event>
+	
+	<event name="FM_QUEST_ARBOREAL_COMPLETED_REV">
+		<text>"So they had a dispute about what frontier they'd take their discoveries to? Can't say I've never felt the same, lad! But you helped them come to an agreement by showing Mandelbriss that not every conflict can be solved with weapons? Impressive, even for my standards! In my experience, that boy's mind was hard to change."</text>
+                  <choice>
+			  <text>Continue...</text>
+			  <event load="FORGEMASTER_PHONE_EVENT_LOAD"/>
+		</choice>
+	</event>
+	
+	<event name="FM_QUEST_ARBOREAL">
+		<preventQuest/>
+		<preventFleet/>
+		<beaconType id="map_icon_mandelbriss" global="true">
+			<color r="0" g="155" b="0" a="1.0"/>
+		</beaconType>
+		<quest>
+			<nebulaBeacon>false</nebulaBeacon>
+			<aggressive>2</aggressive>
+		</quest>
+		<text>Arriving at the beacon, you immediately notice a large structure on the planet below, which your ships systems recognises as the 'High Arbor'. A research station for scientists of all kinds to perform experiments and research at their leisure, although it is paid entry. Landing at the ship port, you and your crew make your way to the entrance in the hopes of finding Mandelbriss inside.</text>
+		<img back="BACK_EVENT_ORCHID_GARDEN" planet="PLANET_INVISIBLE"/>
+		<choice>
+			<text>Continue...</text>
+			<event>
+				<text>You observe the structure of the High Arbor, noting it's peculiar structure with a lattice of metal making up the outer walls of the building, and plants and vines draping from the walls and glass dome roof. Reaching the entrance, a guard asks if you have a membership.</text>
+				<choice>
+					<text>Pay the fee. [-20~]</text>
+					<event>
+						<text>"Thank you. Enjoy your stay."</text>
+					<item_modify>
+							<item type="scrap" min="-20" max="-20"/>
+					</item_modify>
+						<choice>
+							<text>Continue...</text>
+						<event load="FM_QUEST_ARBOREAL_ENTRANCE"/>
+						</choice>
+					</event>
+				</choice>
+				<choice hidden="true" req="LIST_CREW_ORCHID" blue="true"> 
+					<text>(Orchid) Your orchid already has a membership.</text>
+					<event>
+						<text>"Thank you. Enjoy your stay."</text>
+						<choice>
+							<text>Continue...</text>
+					<event load="FM_QUEST_ARBOREAL_ENTRANCE"/>
+						</choice>
+					</event>
+				</choice>
+			</event>
+		</choice>
+	 </event>
+	
+	<event name="FM_QUEST_ARBOREAL_ENTRANCE">
+		<text>As you enter the Arbor, you ask around with the Orchids for Mandelbriss and it doesn't take long for you to find him outside one of the labs - and surprisingly enough, Kyriet too! As you walk over to introduce yourself, you briefly overhear part of their conversation. "We've discussed this before, Mandelbriss - I will not let our research be used to make weapons of war!" "But Kyriet, I - oh, hello there! Who would you happen to be?" You tell them that you're a Renegade sent by Alastair to check up on them, but before they have a chance to respond the entire building quakes and several alarms go off. Shortly after, you recieve a hail.</text>
+	         <choice>
+			 <text>Recieve the hail.</text>
+			 <event>
+				 <text>You are greeted by the face of a man wearing MFK armor, painted over in blue similar to that of the elusive Angels. "Hand over Mandelbriss, Kyriet and their research or die." Looking over at the pair, they are understandably shocked and terrified.</text>
+				 <choice>
+					 <text>Fight the mercenary.</text>
+					 <event>
+						<text>As you return to your ship, the strange Angel fighter roars overhead. Entering battle stations, you recieve a brief hail from the enemy aircraft. "I am Randall Curtain, ex-angel. And you, renegade? You're finished."</text>
+						<ship load="SHIP_FALLEN" hostile="true"/>
+						<choice hidden="true">
+							<text>Continue...</text>
+							<event load="COMBAT_CHECK"/>
+						</choice>
+					</event>
+			         </choice>
+			         <choice>
+			                 <text>Have your crew capture the pair and hand them over.</text>
+				         <event>
+						<text>As your crew restrain the two scientists and haul them off, you recieve a second hail from the mercenary. "Wise choice, renegade. We'll both come out of this as richer men." You catch a final glance at their faces, Kyriet wide-eyed in terror and Mandelbriss screaming words at you that fall on deaf ears. You may not care, but the rest of the galaxy certainly will.</text>
+						<choice>
+						<text>Continue...</text>
+						<event load="MORALITY_UPDATE_FORGEMASTER_ORCHID_CRYSTAL"/>
+				                </choice>
+				         </event>
+				</choice>
+			</event>
+		</choice>
+	</event>
+	
 
 </FTL>
 <FTL> <!-- HARMONY BLEAK FUTURE ENDING. MAKE SURE TO COME BACK AND COMMENT ALL THIS CODE AFTER IT IS STABLE!!!!!-->
