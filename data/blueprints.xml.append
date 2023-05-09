@@ -9581,6 +9581,7 @@
 	<weaponBlueprint name="FM_MISSILES_BURST_FIRE">
 		<type>BURST</type>
 		<drone_targetable>1</drone_targetable>
+		<tip>tip_missiles_heavy</tip>
 		<title>'Hellfire' Heavy Burst Missiles</title>
 		<short>'Hellfire'</short>
 		<desc>This weapon unleashes a barrage of Hellfire missiles, dealing heavy hull damage and potentially setting multiple rooms on fire.</desc>
@@ -9625,6 +9626,7 @@
 	<weaponBlueprint name="FM_MISSILES_BURST_FIRE_PLAYER">
 		<type>BURST</type>
 		<drone_targetable>1</drone_targetable>
+		<tip>tip_missiles_heavy</tip>
 		<title>'Hellfire' Missiles†</title>
 		<short>'Hellfire'†</short>
 		<desc>This weapon unleashes a barrage of Hellfire missiles, dealing heavy hull damage and potentially setting multiple rooms on fire.</desc>
@@ -9670,6 +9672,7 @@
 	<weaponBlueprint name="FM_MISSILES_BURST_FIRE_MEGA">
 		<type>BURST</type>
 		<drone_targetable>1</drone_targetable>
+		<tip>tip_missiles_heavy</tip>
 		<title>'Hellfire' Missiles††</title>
 		<short>'Hellfire'††</short>
 		<desc>This weapon unleashes a barrage of Hellfire missiles, dealing heavy hull damage and potentially setting multiple rooms on fire.</desc>
@@ -9715,6 +9718,7 @@
 	<weaponBlueprint name="FM_MISSILES_BURST_FIRE_MEGA_PISSED">
 		<type>BURST</type>
 		<drone_targetable>1</drone_targetable>
+		<tip>tip_missiles_heavy</tip>
 		<title>'Hellfire' Missiles++</title>
 		<short>'Hellfire'++</short>
 		<desc>If you are reading this, you made Forgemaster very mad.</desc>
@@ -15113,6 +15117,7 @@
 	<weaponBlueprint name="FM_MISSILES_BURST_FIRE_ENEMY">
 		<type>BURST</type>
 		<drone_targetable>1</drone_targetable>
+		<tip>tip_missiles_heavy</tip>
 		<title>'Hellfire' Missiles</title>
 		<short>'Hellfire'</short>
 		<desc>This weapon unleashes a barrage of Hellfire missiles, dealing heavy hull damage and potentially setting multiple rooms on fire.</desc>
@@ -16504,9 +16509,9 @@
 <FTL><!--twisted stealth weapons-->
 	<weaponBlueprint name="FOCUS_SHADOW_ADAPT">
 		<type>BEAM</type>
-		<flavorType>Shadow Focus</flavorType>
+		<flavorType>Shadow Pinpoint</flavorType>
 		<tip>tip_focus</tip>
-		<title>Shadow Focus</title>
+		<title>Shadow Pinpoint</title>
 		<short>Shadow</short>
 		<desc>A shadow focus beam that becomes more powerful after each discharge.</desc>
 		<tooltip>One damage per room beam weapon</tooltip>
