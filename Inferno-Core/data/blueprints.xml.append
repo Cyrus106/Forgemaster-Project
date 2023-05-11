@@ -125,6 +125,15 @@
 	<stackable>true</stackable>
 </augBlueprint>
 
+<augBlueprint name="RADIUS_REDUCTION">
+	<title>Radius Reduction</title>
+	<desc>Reduces weapon radius by 10.</desc>
+	<cost>80</cost>
+	<rarity>0</rarity>
+	<value>10</value>
+	<stackable>true</stackable>
+</augBlueprint>
+
 <augBlueprint name="FIRE_IMMUNITY">
 	<title>Fire Immunity</title>
 	<desc>Systems don't take fire damage.</desc>
