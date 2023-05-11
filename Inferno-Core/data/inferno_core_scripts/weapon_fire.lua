@@ -36,11 +36,10 @@ end
 --Weapon radius reduction
 
 if getmetatable(Hyperspace.WeaponBlueprint)['.instance']['.get']['radius'] then --if WeaponBlueprint::radius is accessible.
-  
+
   script.on_fire_event(Defines.FireEvents.WEAPON_FIRE,
   function(ship, weapon, projectile)
     if ship:HasAugmentation("RADIUS_REDUCTION") > 0 then
-      print(weapon.radius)
       projectile.target.x, projectile.target.y = GetRandomPoint(weapon.lastTargets[0], weapon.radius)
     end
   end)
