@@ -8941,7 +8941,7 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_CAPSTONE_MURAL">
-		<text>Install the Aftermarket Hull Murals? [all beneficial crew stats raised by +30%, 50% chance to take 1 extra damage]</text>
+		<text>Install the Aftermarket Hull Murals? [all beneficial crew stats raised by +30%, 50% chance to take 1 extra hull damage]</text>
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Paint the Aftermarket Hull Murals.</text>
 			<event>

@@ -20,71 +20,60 @@
 <event name="FM_ATLAS_EQUIPMENT_LOAD"> <!--  Recursion call -->
 	<event/>
 </event>
+<event name="FM_CALL_SENT">
+	<text>Transmitter Signal Sent...</text>
+	<variable name="fm_forgemaster_called" op="set" val="1"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+		</event>
+	</choice>
+
+</event>
 <event name="FM_ATLAS_EQUIPMENT">
 	<text>Would you like to contact the Forgemaster?</text>
 
 
-	<choice hidden="true" req="fm_forgemaster_dead" lvl="1" max_group="600">
+	<choice hidden="true" req="fm_forgemaster_dead" lvl="1">
 		<text>Out of habit you attempt to reach out to the Forgemaster, but then you remember that you killed him. You monster.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 
-	<choice hidden="true" req="fm_forgemaster_called" max_group="1" blue="false">
+	<choice hidden="true" req="fm_forgemaster_called" blue="false">
 		<text>You've already called the Forgemaster via one of the three methods.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 
 
-	<choice hidden="true" req="FM_FORGEMASTER_UNCALLABLE" lvl="0" max_lvl="0" max_group="1" blue="false">
-		<text>Use fuel to boost the power of your Transmitter to contact the Forgemaster.[Cost: 5{]</text>
+	<choice hidden="true" req="FM_FORGEMASTER_CALLABLE_NORMAL" blue="false">
+		<text>Use fuel to boost the power of your Transmitter to contact the Forgemaster.</text>
 		<event>
 			<text>You burn your excess fuel reserves, funneling the energy into your transmitter and broadcasting the Forgemaster's subspace identifier. If Alastair is anywhere in the region, he'll have heard your call.</text>
 			<item_modify>
-				<item type="fuel" min="-5" max="-5"/>
+				<item type="fuel" min="-3" max="-3"/>
 			</item_modify>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event>
-					<text>Transmitter Signal Sent...</text>
-					<variable name="fm_forgemaster_called" op="set" val="1"/>
-					<choice hidden="true">
-						<text>Continue...</text> <!-- PHONE CALL TEXT LIST HERE? -->
-						<!--<event load="FM_CALL_QUESTION_FORGEMASTER_LOAD"/>-->
-						<event>
-							<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
-						</event>
-					</choice>
-
-				</event>
+				<event load="FM_CALL_SENT"/>
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" req="FM_FORGEMASTER_UNCALLABLE" lvl="0" max_lvl="0" max_group="2" blue="false">
-		<text>Whip up a long-range ballistic message cylinder to contact the Forgemaster.[Cost: 4}]</text>
+	<choice hidden="true" req="FM_FORGEMASTER_CALLABLE_NORMAL" blue="false">
+		<text>Whip up a long-range ballistic message cylinder to contact the Forgemaster.</text>
 		<event>
 			<text>You pull together some excess explosives, constructing a hyperspeed-capable ballistic vessel containing a request to meet up with Alastair. You wire its targeting systems to his subspace identifier and give the order to launch it. If Alastair's anywhere it can find, he'll be ready to meet up.</text>
 			<item_modify>
-				<item type="missiles" min="-4" max="-4"/>
+				<item type="missiles" min="-3" max="-3"/>
 			</item_modify>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event>
-					<text>Transmitter Signal Sent...</text>
-					<variable name="fm_forgemaster_called" op="set" val="1"/>
-					<choice hidden="true">
-						<text>Continue...</text> <!-- PHONE CALL TEXT LIST HERE? -->
-						<!--<event load="FM_CALL_QUESTION_FORGEMASTER_LOAD"/>-->
-						<event>
-							<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
-						</event>
-					</choice>
-
-				</event>
+				<event load="FM_CALL_SENT"/>
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" req="FM_FORGEMASTER_UNCALLABLE" lvl="0" max_lvl="0" max_group="3" blue="false">
-		<text>Send a hyperspeed messenger drone to contact the Forgemaster.[Cost: 3|]</text>
+	<choice hidden="true" req="FM_FORGEMASTER_CALLABLE_NORMAL" blue="false">
+		<text>Send a hyperspeed messenger drone to contact the Forgemaster.</text>
 		<event>
 			<text>You use some drone components and prepare a robust long-range drone equipped for hyperspeed travel. You load in a request for Alastair to meet you in the next sector and set the drone's comms to find his subspace identifier. Hopefully it makes it to him - if he gets the message, he'll be ready.</text>
 			<item_modify>
@@ -92,25 +81,55 @@
 			</item_modify>
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event>
-					<text>Transmitter Signal Sent...</text>
-					<variable name="fm_forgemaster_called" op="set" val="1"/>
-					<choice hidden="true">
-						<text>Continue...</text> <!-- PHONE CALL TEXT LIST HERE? -->
-						<!--<event load="FM_CALL_QUESTION_FORGEMASTER_LOAD"/>-->
-						<event>
-							<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
-						</event>
-					</choice>
-
-				</event>
+				<event load="FM_CALL_SENT"/>
 			</choice>
 		</event>
 	</choice>
+	
+	<choice hidden="true" req="FM_FORGEMASTER_CALLABLE_CHALLENGE" blue="false">
+		<text>Use fuel to boost the power of your Transmitter to contact the Forgemaster.</text>
+		<event>
+			<text>You burn your excess fuel reserves, funneling the energy into your transmitter and broadcasting the Forgemaster's subspace identifier. If Alastair is anywhere in the region, he'll have heard your call.</text>
+			<item_modify>
+				<item type="fuel" min="-4" max="-4"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="FM_CALL_SENT"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="FM_FORGEMASTER_CALLABLE_CHALLENGE" blue="false">
+		<text>Whip up a long-range ballistic message cylinder to contact the Forgemaster.</text>
+		<event>
+			<text>You pull together some excess explosives, constructing a hyperspeed-capable ballistic vessel containing a request to meet up with Alastair. You wire its targeting systems to his subspace identifier and give the order to launch it. If Alastair's anywhere it can find, he'll be ready to meet up.</text>
+			<item_modify>
+				<item type="missiles" min="-4" max="-4"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="FM_CALL_SENT"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="FM_FORGEMASTER_CALLABLE_CHALLENGE" blue="false">
+		<text>Send a hyperspeed messenger drone to contact the Forgemaster.</text>
+		<event>
+			<text>You use some drone components and prepare a robust long-range drone equipped for hyperspeed travel. You load in a request for Alastair to meet you in the next sector and set the drone's comms to find his subspace identifier. Hopefully it makes it to him - if he gets the message, he'll be ready.</text>
+			<item_modify>
+				<item type="drones" min="-4" max="-4"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="FM_CALL_SENT"/>
+			</choice>
+		</event>
+	</choice>
+	
+	
 
 	<choice hidden="true" req="pilot" lvl="1" max_group="4" blue="false">>
 		<text>Nevermind.</text>
-		<!--<event load="FM_CALL_QUESTION_FORGEMASTER_LOAD"/>-->
 		<event>
 			<variable name="fm_called_forgemaster" op="set" val="0"/>
 			<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
@@ -162,14 +181,14 @@
 	</choice>
 </event>
 
-<mod:findName type = "event" name = "REROUTE_MENU">
+<mod:findName type="event" name="REROUTE_MENU">
 	<mod-append:choice hidden="true" req="coords_twisted" blue="false" max_group="620">
 		<text>Jump to the Twisted Sector.</text>
 		<event load="LIGHTSPEED_SECTOR_WARP_TWISTED"/>
 	</mod-append:choice>
 </mod:findName>
 
-<mod:findName type = "event" name = "REROUTE_MENU_LASTSTAND">
+<mod:findName type="event" name="REROUTE_MENU_LASTSTAND">
 	<mod-append:choice hidden="true" req="coords_twisted" blue="false" max_group="620">
 		<text>Jump to the Twisted Sector.</text>
 		<event load="LIGHTSPEED_SECTOR_WARP_TWISTED"/>
