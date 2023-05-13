@@ -23,3 +23,40 @@ end
 
 script.on_fire_event(Defines.FireEvents.WEAPON_FIRE, beam_pierce)
 script.on_fire_event(Defines.FireEvents.ARTILLERY_FIRE, beam_pierce)
+
+local function GetRandomPoint(center, radius)
+  local radius = radius * (Hyperspace.random32() / 2147483647)
+  local angle = 2 * math.pi * (Hyperspace.random32() / 2147483647)
+  local x = center.x + radius * math.cos(angle)
+  local y = center.y + radius * math.sin(angle)
+  return x, y
+end
+
+
+--Weapon radius reduction
+
+if getmetatable(Hyperspace.WeaponBlueprint)['.instance']['.get']['radius'] then --if WeaponBlueprint::radius is accessible.
+
+  script.on_fire_event(Defines.FireEvents.WEAPON_FIRE,
+  function(ship, weapon, projectile)
+    if ship:HasAugmentation("RADIUS_REDUCTION") > 0 then
+      projectile.target.x, projectile.target.y = GetRandomPoint(weapon.lastTargets[0], weapon.radius)
+    end
+  end)
+
+  script.on_internal_event(Defines.InternalEvents.ON_TICK,
+  function()
+    for i = 0, 1 do 
+      local ShipManager = Hyperspace.Global.GetInstance():GetShipManager(i)
+      if ShipManager then
+        weaponSystem = ShipManager.weaponSystem
+        if weaponSystem then
+          for weapon in vter(weaponSystem.weapons) do
+            weapon.radius = math.max(0, weapon.blueprint.radius - ShipManager:GetAugmentationValue("RADIUS_REDUCTION"))
+          end
+        end
+      end
+    end
+  end)
+
+end

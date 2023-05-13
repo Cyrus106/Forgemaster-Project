@@ -5311,7 +5311,7 @@
 			<rangedDamageMultiplier>1.5</rangedDamageMultiplier>
 			<damageTakenMultiplier>0.5</damageTakenMultiplier>
 			<suffocationModifier>0.5</suffocationModifier>
-			<fireDamageMultiplier>0.0</fireDamageMultiplier>
+			<canBurn>false</canBurn>
 			<stunMultiplier>0.01</stunMultiplier>
 			<fireRepairMultiplier>5.0</fireRepairMultiplier>
 			<canMan>true</canMan>
@@ -5393,7 +5393,7 @@
 			<rangedDamageMultiplier>0.5</rangedDamageMultiplier>
 			<damageTakenMultiplier>0.5</damageTakenMultiplier>
 			<suffocationModifier>0.5</suffocationModifier>
-			<fireDamageMultiplier>0.0</fireDamageMultiplier>
+			<canBurn>false</canBurn>
 			<stunMultiplier>0.01</stunMultiplier>
 			<fireRepairMultiplier>5.0</fireRepairMultiplier>
 			<canMan>true</canMan>
