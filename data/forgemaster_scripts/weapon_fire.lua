@@ -19,6 +19,9 @@ function(ship, weapon, projectile)
         projectile.target = otherShip:GetRandomRoomCenter()
       end
       projectile.entryAngle = -1 --Sets it to randomize on entry
+      --Randomize positions of projectiles into a visual cluster
+      projectile.position.x = projectile.position.x + randomInt(-12, 12)
+      projectile.position.y = projectile.position.y + randomInt(-7, 7)
   end
 end)
 
