@@ -1,4 +1,3 @@
-
 local dialogueBox = {
   --Set these members in constructor
   x = 0, 
@@ -15,6 +14,7 @@ local dialogueBox = {
   --Do not set these members
   textIndex = 1,
   timer = 0,
+  soundTimer = 0,
   active = true,
   
   --Frame
@@ -28,7 +28,11 @@ local dialogueBox = {
           if charsToRender > #currentText then
             charsToRender = #currentText
           else --If not done, play sound
-            Hyperspace.Global.GetInstance():GetSoundControl():PlaySoundMix(self.sound, 1, false)
+            if self.soundTimer > 0.07 then
+              self.soundTimer = 0
+              Hyperspace.Global.GetInstance():GetSoundControl():PlaySoundMix(self.sound, 1, false)
+            end
+            self.soundTimer = self.soundTimer + Hyperspace.FPS.SpeedFactor / 16
           end
           currentText = currentText:sub(0, charsToRender)
           Graphics.CSurface.GL_DrawRect(self.x, self.y, self.w, self.h, self.fillColor)
@@ -46,6 +50,7 @@ local dialogueBox = {
   Advance = function(self)
       self.textIndex = self.textIndex + 1
       self.timer = 0
+      self.soundTimer = 0
       if self.textIndex > #self.text then
           self.active = false
       end
@@ -54,6 +59,7 @@ local dialogueBox = {
   Reset = function(self)
       self.textIndex = 1
       self.timer = 0
+      self.soundTimer = 0
       self.active = true
   end,
 
