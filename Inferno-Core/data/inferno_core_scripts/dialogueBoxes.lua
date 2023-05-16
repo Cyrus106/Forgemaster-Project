@@ -65,12 +65,12 @@ local dialogueBox = {
 }
 
 tutorialBox = dialogueBox:New {
-  font = 1, 
-  x = 300, 
-  y = 200, 
-  w = 400,
-  h = 200, 
-  text = {"Hello, welcome to the tutorial test, to the left you can see the broken tutorial text box, just ignore it please, we will remove it soon, then there will be only me. :)"}
+  font = 1, --The font that the dialogue is rendered in
+  x = 300, --x coordinate of the top-left corner of the dialogue box
+  y = 200, --y coordinate of the top left corner of the dialogue box
+  w = 400, --width of the dialogue box (in pixels)
+  h = 200, --height of the dialogue box (in pixels)
+  text = {"Hello, welcome to the tutorial test, to the left you can see the broken tutorial text box, just ignore it please, we will remove it soon, then there will be only me. :)"} --An array of messages to display
 }
 
 
