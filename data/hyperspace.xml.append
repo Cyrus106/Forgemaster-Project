@@ -10962,7 +10962,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 							<effectAnim>pheromones_f</effectAnim>
 							<damageTakenMultiplier>0.6</damageTakenMultiplier>
 							<damageMultiplier>1.3</damageMultiplier>
-							<bonusPowerMultiplier>0</bonusPowerMultiplier>
+							<bonusPower>0</bonusPower>
 						</temporaryEffect>
 					</powerEffect>
 				</statBoost>
@@ -11011,7 +11011,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 							</finishSounds>
 							<damageTakenMultiplier>0.6</damageTakenMultiplier>
 							<damageMultiplier>1.3</damageMultiplier>
-							<bonusPowerMultiplier>0</bonusPowerMultiplier>
+							<bonusPower>0</bonusPower>
 						</temporaryEffect>
 					</powerEffect>
 				</statBoost>
