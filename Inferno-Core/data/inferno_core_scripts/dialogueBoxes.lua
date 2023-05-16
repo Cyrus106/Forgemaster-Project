@@ -35,13 +35,13 @@ local dialogueBox = {
             self.soundTimer = self.soundTimer + Hyperspace.FPS.SpeedFactor / 16
           end
           currentText = currentText:sub(0, charsToRender)
-          Graphics.CSurface.GL_DrawRect(self.x, self.y, self.w, self.h, self.fillColor)
-          Graphics.CSurface.GL_DrawRectOutline(self.x - 5, self.y - 5, self.w + 5, self.h + 5, self.borderColor, 5)
+          Graphics.CSurface.GL_DrawRect(self.x + 5, self.y + 5, self.w - 5, self.h - 5, self.fillColor)
+          Graphics.CSurface.GL_DrawRectOutline(self.x, self.y, self.w, self.h, self.borderColor, 5)
           Graphics.freetype.easy_printAutoNewlines(
               self.font, 
-              self.x + 5, 
-              self.y + 5, 
-              self.w - 10, 
+              self.x + 10, 
+              self.y + 10, 
+              self.w - 20, 
               currentText
           )
           self.timer = self.timer + Hyperspace.FPS.SpeedFactor / 16
@@ -73,9 +73,9 @@ local dialogueBox = {
 tutorialBox = dialogueBox:New {
   font = 1, --The font that the dialogue is rendered in
   x = 300, --x coordinate of the top-left corner of the dialogue box
-  y = 200, --y coordinate of the top left corner of the dialogue box
-  w = 400, --width of the dialogue box (in pixels)
-  h = 200, --height of the dialogue box (in pixels)
+  y = 100, --y coordinate of the top left corner of the dialogue box
+  w = 400, --width of the dialogue box, including border (in pixels)
+  h = 100, --height of the dialogue box, including border (in pixels)
   text = {"Hello, welcome to the tutorial test, to the left you can see the broken tutorial text box, just ignore it please, we will remove it soon, then there will be only me. :)"} --An array of messages to display
 }
 
