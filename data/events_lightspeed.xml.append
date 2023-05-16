@@ -46,7 +46,7 @@
 	</choice>
 
 
-	<choice hidden="true" req="FM_FORGEMASTER_CALLABLE_NORMAL" blue="false">
+	<choice req="FM_FORGEMASTER_CALLABLE_NORMAL" blue="false">
 		<text>Use fuel to boost the power of your Transmitter to contact the Forgemaster.</text>
 		<event>
 			<text>You burn your excess fuel reserves, funneling the energy into your transmitter and broadcasting the Forgemaster's subspace identifier. If Alastair is anywhere in the region, he'll have heard your call.</text>
@@ -59,7 +59,7 @@
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" req="FM_FORGEMASTER_CALLABLE_NORMAL" blue="false">
+	<choice req="FM_FORGEMASTER_CALLABLE_NORMAL" blue="false">
 		<text>Whip up a long-range ballistic message cylinder to contact the Forgemaster.</text>
 		<event>
 			<text>You pull together some excess explosives, constructing a hyperspeed-capable ballistic vessel containing a request to meet up with Alastair. You wire its targeting systems to his subspace identifier and give the order to launch it. If Alastair's anywhere it can find, he'll be ready to meet up.</text>
@@ -72,7 +72,7 @@
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" req="FM_FORGEMASTER_CALLABLE_NORMAL" blue="false">
+	<choice req="FM_FORGEMASTER_CALLABLE_NORMAL" blue="false">
 		<text>Send a hyperspeed messenger drone to contact the Forgemaster.</text>
 		<event>
 			<text>You use some drone components and prepare a robust long-range drone equipped for hyperspeed travel. You load in a request for Alastair to meet you in the next sector and set the drone's comms to find his subspace identifier. Hopefully it makes it to him - if he gets the message, he'll be ready.</text>
@@ -86,7 +86,7 @@
 		</event>
 	</choice>
 	
-	<choice hidden="true" req="FM_FORGEMASTER_CALLABLE_CHALLENGE" blue="false">
+	<choice req="FM_FORGEMASTER_CALLABLE_CHALLENGE" blue="false">
 		<text>Use fuel to boost the power of your Transmitter to contact the Forgemaster.</text>
 		<event>
 			<text>You burn your excess fuel reserves, funneling the energy into your transmitter and broadcasting the Forgemaster's subspace identifier. If Alastair is anywhere in the region, he'll have heard your call.</text>
@@ -99,7 +99,7 @@
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" req="FM_FORGEMASTER_CALLABLE_CHALLENGE" blue="false">
+	<choice req="FM_FORGEMASTER_CALLABLE_CHALLENGE" blue="false">
 		<text>Whip up a long-range ballistic message cylinder to contact the Forgemaster.</text>
 		<event>
 			<text>You pull together some excess explosives, constructing a hyperspeed-capable ballistic vessel containing a request to meet up with Alastair. You wire its targeting systems to his subspace identifier and give the order to launch it. If Alastair's anywhere it can find, he'll be ready to meet up.</text>
@@ -112,7 +112,7 @@
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" req="FM_FORGEMASTER_CALLABLE_CHALLENGE" blue="false">
+	<choice req="FM_FORGEMASTER_CALLABLE_CHALLENGE" blue="false">
 		<text>Send a hyperspeed messenger drone to contact the Forgemaster.</text>
 		<event>
 			<text>You use some drone components and prepare a robust long-range drone equipped for hyperspeed travel. You load in a request for Alastair to meet you in the next sector and set the drone's comms to find his subspace identifier. Hopefully it makes it to him - if he gets the message, he'll be ready.</text>

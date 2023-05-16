@@ -132,3 +132,54 @@ function()
     Graphics.CSurface.GL_PopMatrix()
   end
 end, function() end)
+
+
+
+--funny dialog box maybe?
+mods.inferno.dialogBox = {
+  dialogBox = CreateDefaultPrimitive("statusUI/dialog_box.png"),
+  fullText="Hello, welcome to the tutorial test, to the left you can see the broken tutorial text box, just ignore it please, we will remove it soon, then there will be only me. :)",
+  currentText = nil,
+  talkNoise="autofireOff",--never make this a looped sound, it geos on forever :(
+  talkVolume="1",
+  textProgress = 0,
+  textLength = nil,
+  renderTextBox = 1,
+  textBox = function(self)
+    self.textLength = string.len(self.fullText)
+    if self.textProgress<self.textLength then
+      self.textProgress=self.textProgress+1
+      Hyperspace.Global.GetInstance():GetSoundControl():PlaySoundMix(self.talkNoise,self.talkVolume,false)
+    end
+    self.currentText = string.sub(self.fullText,0,self.textProgress)
+    Graphics.CSurface.GL_PushMatrix()
+    Graphics.CSurface.GL_LoadIdentity()
+    Graphics.CSurface.GL_Translate(343, 77)
+    Graphics.CSurface.GL_RenderPrimitive(self.dialogBox)
+    Graphics.freetype.easy_printAutoNewlines(1, 7, 4, 270,self.currentText)
+    Graphics.CSurface.GL_PopMatrix()
+  end,
+  resetTextBox=function(self)
+    self.textProgress=0
+  end,
+  newTextBoxText=function(self,newText)
+    self.fullText=newText
+    self.textLength = string.len(newText)
+    self.textProgress=0
+  end,
+  hideTextBox=function(self)
+    if self.renderTextBox  == 1 then    
+      self.renderTextBox =0
+    else
+      self.renderTextBox =1
+    end
+  end
+}
+
+script.on_render_event(Defines.RenderEvents.LAYER_PLAYER, function() end, 
+  function()
+    if mods.inferno.dialogBox.renderTextBox == 1 then
+      mods.inferno.dialogBox:textBox()
+    end
+  end
+)

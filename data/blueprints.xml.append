@@ -12725,7 +12725,7 @@
 		<iconImage>laser</iconImage>
 	</weaponBlueprint>
 	<weaponBlueprint name="FM_RVS_AC_CHARGE_HE"> <!-- Hull damage focus, stuns crew and makes them more vulnerable -->
-		<type>LASER</type>
+		<type>BURST</type>
 		<title>Volley Gun [Concussive]</title>
 		<short>Volley [HE]</short>
 		<desc>An attempt to bring outdated equipment into new life. This weapon is made up of several light autocannons together to allow it to fire in a volley of up to 4 shots for a very low power cost.</desc>
@@ -12733,7 +12733,7 @@
 		<missiles>1</missiles>
 		<freeMissileChance>75</freeMissileChance>
 		<damage>1</damage>
-		<statBoosts>
+		<!--<statBoosts>
 			<statBoost name="powerRechargeMultiplier">
 				<boostType>MULT</boostType>
 				<amount>-1</amount>
@@ -12750,9 +12750,9 @@
 				<affectsSelf>true</affectsSelf>
 				<duration>5</duration>
 			</statBoost>
-		</statBoosts>
+		</statBoosts>-->
 		<shots>1</shots>
-		<stun>4</stun>
+		<!--<stun>4</stun>-->
 		<sp>0</sp>
 		<breachChance>1</breachChance>
 		<cooldown>6</cooldown>
@@ -12760,7 +12760,9 @@
 		<bp>4</bp>
 		<rarity>0</rarity>
 		<cost>100</cost>
-		<image>GB_shot_light_HE</image>
+		<projectiles>
+			<projectile count="1" fake="false" blueprint="GB_CRIT_LIST_AC_1_HE">GB_shot_light_HE</projectile>
+		</projectiles>
 		<chargeLevels>4</chargeLevels>
 		<launchSounds>
 			<sound>GB_cannonLight1</sound>
