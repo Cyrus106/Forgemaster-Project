@@ -9161,9 +9161,9 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_CAPSTONE_MAGNETIC">
-		<text>Electromagnetic Hull Body [+80% ion res, +10% sys res, +10% scrap, scrap magnet effect, -3 reactor]</text>
+		<text>Install the Electromagnetic Hull Body [+80% ion res, +10% sys res, +10% scrap, scrap magnet effect, -3 reactor]</text>
 		<choice req="pilot" max_group="1" blue="false">
-			<text>Install The Electromagnetic Hull Body!</text>
+			<text>Install the Electromagnetic Hull Body!</text>
 			<event>
 				<text>The Electromagnetic Hull Body has been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_MAGNETIC</hiddenAug>
