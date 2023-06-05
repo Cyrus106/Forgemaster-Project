@@ -10962,7 +10962,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 							<effectAnim>pheromones_f</effectAnim>
 							<damageTakenMultiplier>0.6</damageTakenMultiplier>
 							<damageMultiplier>1.3</damageMultiplier>
-							<bonusPowerMultiplier>0</bonusPowerMultiplier>
+							<bonusPower>0</bonusPower>
 						</temporaryEffect>
 					</powerEffect>
 				</statBoost>
@@ -11011,7 +11011,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 							</finishSounds>
 							<damageTakenMultiplier>0.6</damageTakenMultiplier>
 							<damageMultiplier>1.3</damageMultiplier>
-							<bonusPowerMultiplier>0</bonusPowerMultiplier>
+							<bonusPower>0</bonusPower>
 						</temporaryEffect>
 					</powerEffect>
 				</statBoost>
@@ -14205,7 +14205,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 
 	<augments>
 		<!-- Modular Hull Basic Upgrades -->
-		<aug name="FM_MODULAR_HULL">
+		<aug name=" ">
 			<function name="ROCK_ARMOR" value="0.05" useForReqs="false"/>
 			<locked/>
 		</aug>
@@ -16144,6 +16144,12 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</req>
 
 	</events>
+	
+	<!--Blud Morph-->
+	
+	<!--<aug name="FM_BLOOD_HUMAN">
+		auuughhhhh I hate ADHD
+        </aug>-->
 
 	<mod:findLike type="boss">
 		<mod-append:surgeBarrage name="SURGE_FLAK_DEFEND2">

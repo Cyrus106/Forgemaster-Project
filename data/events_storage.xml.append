@@ -5765,7 +5765,7 @@
 
   <mod:findName type="event" name="COMBAT_CHECK_REAL">
     <mod-append:choice req="LOCKED_RAMMING_SPEED" lvl="1" max_group="602" hidden="true">
-      <text>Show options to ram this hunk of inert weaponry into an enemy system, Dealing damage to your engines, your hull, as well as the target's.</text>
+      <text>Show Ramming Speed options.</text>
       <event load="COMBAT_CHECK_RAMMING_MENU"/>
     </mod-append:choice>
   </mod:findName>
@@ -5774,15 +5774,15 @@
 
   <!--
   <mod-append:choice req="RAMMING_SPEED_FM_AETHER_4" lvl="1" max_group="602" hidden="true" blue="true">
-  <text>(Aether Overdrive)Show Ramming Speed Aether Engines options. Deals 12 damage and 10 to yourself.</text>
+  <text>(Aether Overdrive) Show Ramming Speed Aether Engines targeting options. Deals 12 damage and 10 to yourself.</text>
   <event load="COMBAT_CHECK_RAMMING_AETHER_4"/></mod-append:choice>
 
-  <mod-append:choice req="LOCKED_RAMMING_SPEED" lvl="1" max_group="602" hidden="true" blue="true">
-  <text>Ram this hunk of inert weaponry into an enemy system as hard as you can, Dealing 10 damage to your engines, your hull, as well as the target's.</text>
+  <mod-append:choice req="LOCKED_RAMMING_SPEED" lvl="1" max_group="602" hidden="true" blue="false">
+  <text>Ram this hunk of junk into an enemy system as hard as you can, Dealing 10 damage to your engines, your hull, as well as the target's.</text>
   <event load="COMBAT_CHECK_RAMMING"/></mod-append:choice>
 
   <mod-append:choice req="RAMMING_SPEED_FM_AETHER_6" lvl="1" max_group="603" hidden="true" blue="true">
-  <text>(Improved Engines + Overdrive)Show Ramming Speed Aether Improved Engines options. Deals 15 damage and 12 to yourself.</text>
+  <text>(Improved Engines + Overdrive) Show Ramming Speed Improved Aether Engines targeting options. Deals 15 damage and 12 to yourself.</text>
   <event load="COMBAT_CHECK_RAMMING_AETHER_6"/></mod-append:choice>
 
   <mod-append:choice req="RAMMING_SPEED_FM_6" lvl="1" max_group="603" hidden="true" blue="true">
@@ -5803,7 +5803,7 @@
 
   <mod:findName type="event" name="COMBAT_CHECK_FLAGSHIP_REAL">
     <mod-append:choice req="LOCKED_RAMMING_SPEED" lvl="1" max_group="602" hidden="true" blue="true">
-      <text>Show options to ram this hunk of inert weaponry into an enemy system, Dealing damage to your engines, your hull, as well as the target's.</text>
+      <text>Show options to ram this hunk of inert weaponry into an enemy system, dealing damage to your engines, your hull, as well as the target's.</text>
       <event load="COMBAT_CHECK_RAMMING_MENU"/>
     </mod-append:choice>
   </mod:findName>
@@ -5831,35 +5831,35 @@
 
 
   <event name="COMBAT_CHECK_RAMMING_MENU">
-    <text>select how hard you wish to ram the enemy.</text>
+    <text>Select how hard you wish to ram the enemy.</text>
 
     <choice req="RAMMING_SPEED_FM_AETHER_4" lvl="1" max_group="2" hidden="true" blue="true">
-      <text>(Aether Overdrive)Show Ramming Speed options. Deals 12 damage and 10 to yourself.</text>
+      <text>(Aether Overdrive) Show Ramming Speed options. Deals 12 damage and 10 to yourself.</text>
       <event load="COMBAT_CHECK_RAMMING_AETHER_4"/>
     </choice>
 
     <choice req="LOCKED_RAMMING_SPEED" lvl="1" max_group="2" hidden="true" blue="true">
-      <text>Just ram this hunk of inert weaponry into an enemy system as hard as you can, Dealing 10 damage to your engines, your hull, as well as the target's.</text>
+      <text>Ram this hunk of junk into an enemy system as hard as you can, dealing 10 hull damage to both you and your enemy, as well as your engines.</text>
       <event load="COMBAT_CHECK_RAMMING"/>
     </choice>
 
     <choice req="RAMMING_SPEED_FM_AETHER_6" lvl="1" max_group="3" hidden="true" blue="true">
-      <text>(Improved Engines + Overdrive)Show Ramming Speed options. Deals 15 damage and 12 to yourself.</text>
+      <text>(Improved Engines + Overdrive) Show Ramming Speed options. Deals 15 damage and 12 to yourself.</text>
       <event load="COMBAT_CHECK_RAMMING_AETHER_6"/>
     </choice>
 
     <choice req="RAMMING_SPEED_FM_6" lvl="1" max_group="3" hidden="true" blue="true">
-      <text>(Improved Engines)Show Ramming Speed options. Deals 13 damage and 12 to yourself.</text>
+      <text>(Improved Engines) Show Ramming Speed options. Deals 13 damage and 12 to yourself.</text>
       <event load="COMBAT_CHECK_RAMMING_6"/>
     </choice>
 
     <choice req="RAMMING_SPEED_FM_8" lvl="1" max_group="4" hidden="true" blue="true">
-      <text>(Advanced Engines)Show Ramming Speed options. Deals 18 damage and 15 to yourself.</text>
+      <text>(Advanced Engines) Show Ramming Speed options. Deals 18 damage and 15 to yourself.</text>
       <event load="COMBAT_CHECK_RAMMING_8"/>
     </choice>
 
     <choice req="RAMMING_SPEED_FM_AETHER_8" lvl="1" max_group="5" hidden="true" blue="true">
-      <text>(Advanced Engines + Overdrive)Show Ramming Speed Aether FTL RAM options. Deals 30 damage and 20 to yourself.</text>
+      <text>(Advanced Engines + Overdrive) Show Ramming Speed Aether FTL RAM options. Deals 30 damage and 20 to yourself.</text>
       <event load="COMBAT_CHECK_RAMMING_AETHER_8"/>
     </choice>
 
@@ -5884,11 +5884,11 @@
 
   <event name="COMBAT_CHECK_RAMMING">
 
-    <text>What enemy system do you want to target? This will deal 10 damage to the hull and system of your choice, but also deals 10 hull damage to your ship and 10 damage to your engines.</text>
+    <text>What enemy system do you want to target? This will deal 10 damage to the selected system, but you will take 10 damage to your Engines.</text>
 
 
     <choice req="pilot" lvl="1" max_group="2" hidden="true" blue="false">
-      <text>Weapons.[10 hull to you, 10 to enemy]</text>
+      <text>Target their Weapons.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="10" system="engines"/>
@@ -5902,7 +5902,7 @@
       </event>
     </choice>
     <choice req="pilot" lvl="1" max_group="3" hidden="true" blue="false">
-      <text>Shields.[10 hull to you, 10 to enemy]</text>
+      <text>Target their Shields.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="10" system="engines"/>
@@ -5916,7 +5916,7 @@
       </event>
     </choice>
     <choice req="pilot" lvl="1" max_group="4" hidden="true" blue="false">
-      <text>Drones.[10 hull to you, 10 to enemy]</text>
+      <text>Target their Drones.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="10" system="engines"/>
@@ -5930,7 +5930,7 @@
       </event>
     </choice>
     <choice req="pilot" lvl="1" max_group="5" hidden="true" blue="false">
-      <text>Engines.[10 hull to you, 10 to enemy]</text>
+      <text>Target their Engines.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="10" system="engines"/>
@@ -5943,7 +5943,7 @@
       </event>
     </choice>
     <choice req="pilot" lvl="1" max_group="6" hidden="true" blue="false">
-      <text>Cloaking.[10 hull to you, 10 to enemy]</text>
+      <text>Target their Cloaking.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="10" system="engines"/>
@@ -5957,7 +5957,7 @@
       </event>
     </choice>
     <choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
-      <text>Teleporter.[10 hull to you, 10 to enemy]</text>
+      <text>Target their Teleporter.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="10" system="engines"/>
@@ -5995,11 +5995,11 @@
   </event>
 
   <event name="COMBAT_CHECK_RAMMING_AETHER_4">
-    <text>What enemy system do you want to target? This will deal 12 damage to the hull and system of your choice, but also deals 10 hull damage to your ship and 10 damage to your engines.</text>
+    <text>What enemy system do you want to target? This will deal 12 damage to the selected system, but you will take 10 damage to your Engines.</text>
 
 
     <choice req="pilot" lvl="1" max_group="2" hidden="true" blue="false">
-      <text>Weapons.[10 hull to you, 12 to enemy]</text>
+      <text>Target their Weapons.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="10" system="engines"/>
@@ -6013,7 +6013,7 @@
       </event>
     </choice>
     <choice req="pilot" lvl="1" max_group="3" hidden="true" blue="false">
-      <text>Shields.[10 hull to you, 12 to enemy]</text>
+      <text>Target their Shields.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="10" system="engines"/>
@@ -6027,7 +6027,7 @@
       </event>
     </choice>
     <choice req="pilot" lvl="1" max_group="4" hidden="true" blue="false">
-      <text>Drones.[10 hull to you, 12 to enemy]</text>
+      <text>Target their Drones.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="10" system="engines"/>
@@ -6041,7 +6041,7 @@
       </event>
     </choice>
     <choice req="pilot" lvl="1" max_group="5" hidden="true" blue="false">
-      <text>Engines.[10 hull to you, 12 to enemy]</text>
+      <text>Target their Engines.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="10" system="engines"/>
@@ -6054,7 +6054,7 @@
       </event>
     </choice>
     <choice req="pilot" lvl="1" max_group="6" hidden="true" blue="false">
-      <text>Cloaking.[10 hull to you, 12 to enemy]</text>
+      <text>Target their Cloaking.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="10" system="engines"/>
@@ -6068,7 +6068,7 @@
       </event>
     </choice>
     <choice req="pilot" lvl="1" max_group="7" hidden="true" blue="false">
-      <text>Teleporter.[10 hull to you, 12 to enemy]</text>
+      <text>Target their Teleporter.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="10" system="engines"/>
@@ -6106,13 +6106,13 @@
   </event>
 
   <event name="COMBAT_CHECK_RAMMING_6">
-    <text>What enemy system do you want to target? This will deal 13 damage to the hull and system of your choice, but also deals 12 hull damage to your ship and 12 damage to your engines.
+    <text>What enemy system do you want to target? This will deal 13 damage to the targeted system, but you will take 12 damage to your Engines.
     </text>
 
 
 
     <choice req="engines" lvl="6" max_group="2" hidden="true">
-      <text>(Improved Engines) Weapons.[12 hull to you, 13 to enemy]</text>
+      <text>Target their Weapons.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="12" system="engines"/>
@@ -6126,7 +6126,7 @@
       </event>
     </choice>
     <choice req="engines" lvl="6" max_group="3" hidden="true">
-      <text>(Improved Engines) Shields.[12 hull to you, 13 to enemy]</text>
+      <text>Target their Shields.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="12" system="engines"/>
@@ -6140,7 +6140,7 @@
       </event>
     </choice>
     <choice req="engines" lvl="6" max_group="4" hidden="true">
-      <text>(Improved Engines) Drones.[12 hull to you, 13 to enemy]</text>
+      <text>Target their Drones.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="12" system="engines"/>
@@ -6154,7 +6154,7 @@
       </event>
     </choice>
     <choice req="engines" lvl="6" max_group="5" hidden="true">
-      <text>(Improved Engines) Engines.[12 hull to you, 13 to enemy]</text>
+      <text>Target their Engines.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="12" system="engines"/>
@@ -6167,7 +6167,7 @@
       </event>
     </choice>
     <choice req="engines" lvl="6" max_group="6" hidden="true">
-      <text>(Improved Engines) Cloaking.[12 hull to you, 13 to enemy]</text>
+      <text>Target their Cloaking.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="12" system="engines"/>
@@ -6181,7 +6181,7 @@
       </event>
     </choice>
     <choice req="engines" lvl="6" max_group="7" hidden="true">
-      <text>(Improved Engines) Teleporter.[12 hull to you, 13 to enemy]</text>
+      <text>Target their Teleporter.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="12" system="engines"/>
@@ -6215,11 +6215,11 @@
   </event>
 
   <event name="COMBAT_CHECK_RAMMING_AETHER_6">
-    <text>What enemy system do you want to target? This will deal 15 damage to the hull and system of your choice, but also deals 12 hull damage to your ship and 12 damage to your engines.
+    <text>What enemy system do you want to target? This will deal 15 damage to the targeted system, but you will take 12 damage to your Engines.
     </text>
 
     <choice req="engines" lvl="6" max_group="2" hidden="true">
-      <text>(Improved Engines) Weapons.[12 hull to you, 15 to enemy]</text>
+      <text>Target their Weapons.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="12" system="engines"/>
@@ -6233,7 +6233,7 @@
       </event>
     </choice>
     <choice req="engines" lvl="6" max_group="3" hidden="true">
-      <text>(Improved Engines) Shields.[12 hull to you, 15 to enemy]</text>
+      <text>Target their Shields.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="12" system="engines"/>
@@ -6247,7 +6247,7 @@
       </event>
     </choice>
     <choice req="engines" lvl="6" max_group="4" hidden="true">
-      <text>(Improved Engines) Drones.[12 hull to you, 15 to enemy]</text>
+      <text>Target their Drones.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="12" system="engines"/>
@@ -6261,7 +6261,7 @@
       </event>
     </choice>
     <choice req="engines" lvl="6" max_group="5" hidden="true">
-      <text>(Improved Engines) Engines.[12 hull to you, 15 to enemy]</text>
+      <text>Target their Engines.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="12" system="engines"/>
@@ -6274,7 +6274,7 @@
       </event>
     </choice>
     <choice req="engines" lvl="6" max_group="6" hidden="true">
-      <text>(Improved Engines) Cloaking.[12 hull to you, 15 to enemy]</text>
+      <text>Target their Cloaking.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="12" system="engines"/>
@@ -6288,7 +6288,7 @@
       </event>
     </choice>
     <choice req="engines" lvl="6" max_group="7" hidden="true">
-      <text>(Improved Engines) Teleporter.[12 hull to you, 15 to enemy]</text>
+      <text>Target their Teleporter.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="12" system="engines"/>
@@ -6322,13 +6322,13 @@
   </event>
 
   <event name="COMBAT_CHECK_RAMMING_8">
-    <text>What enemy system do you want to target? This will deal 18 damage to the hull and system of your choice, but also deals 15 hull damage to your ship and 15 damage to your engines.
+    <text>What enemy system do you want to target? This will deal 18 damage to the selected system, but you will take 15 damage to your Engines.
     </text>
 
 
 
     <choice req="engines" lvl="8" max_group="2" hidden="true">
-      <text>(Advanced Engines) Weapons.[15 hull to you, 18 to enemy]</text>
+      <text>Target their Weapons.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="15" system="engines"/>
@@ -6342,7 +6342,7 @@
       </event>
     </choice>
     <choice req="engines" lvl="8" max_group="3" hidden="true">
-      <text>(Advanced Engines) Shields.[15 hull to you, 18 to enemy]</text>
+      <text>Target their Shields.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="15" system="engines"/>
@@ -6356,7 +6356,7 @@
       </event>
     </choice>
     <choice req="engines" lvl="8" max_group="4" hidden="true">
-      <text>(Advanced Engines) Drones.[15 hull to you, 18 to enemy]</text>
+      <text>Target their Drones.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="15" system="engines"/>
@@ -6370,7 +6370,7 @@
       </event>
     </choice>
     <choice req="engines" lvl="8" max_group="5" hidden="true">
-      <text>(Advanced Engines) Engines.[15 hull to you, 18 to enemy]</text>
+      <text>Target their Engines.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="15" system="engines"/>
@@ -6383,7 +6383,7 @@
       </event>
     </choice>
     <choice req="engines" lvl="8" max_group="6" hidden="true">
-      <text>(Advanced Engines) Cloaking.[15 hull to you, 18 to enemy]</text>
+      <text>Target their Cloaking.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="15" system="engines"/>
@@ -6397,7 +6397,7 @@
       </event>
     </choice>
     <choice req="engines" lvl="8" max_group="7" hidden="true">
-      <text>(Advanced Engines) Teleporter.[15 hull to you, 18 to enemy]</text>
+      <text>Target their Teleporter.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="15" system="engines"/>
@@ -6431,13 +6431,13 @@
   </event>
 
   <event name="COMBAT_CHECK_RAMMING_AETHER_8">
-    <text>What enemy system do you want to target? This will deal 30 damage to the hull and system of your choice, but also deals 20 hull damage to your ship and 20 damage to your engines.
+    <text>What enemy system do you want to target? This will deal 30 damage to the targeted system, but you will take 20 damage to your engines.
     </text>
 
 
 
     <choice req="UPG_AETHER_ENGINES" max_group="2" hidden="true">
-      <text>(Aether Overdrive) Weapons.[20 hull to you, 30 to enemy]</text>
+      <text>Target their Weapons.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="20" system="engines"/>
@@ -6451,7 +6451,7 @@
       </event>
     </choice>
     <choice req="UPG_AETHER_ENGINES" max_group="3" hidden="true">
-      <text>(Aether Overdrive) Shields.[20 hull to you, 30 to enemy]</text>
+      <text>Target their Shields.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="20" system="engines"/>
@@ -6465,7 +6465,7 @@
       </event>
     </choice>
     <choice req="UPG_AETHER_ENGINES" max_group="4" hidden="true">
-      <text>(Aether Overdrive) Drones.[20 hull to you, 30 to enemy]</text>
+      <text>Target their Drones.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="20" system="engines"/>
@@ -6479,7 +6479,7 @@
       </event>
     </choice>
     <choice req="UPG_AETHER_ENGINES"  max_group="5" hidden="true">
-      <text>(Aether Overdrive) Engines.[20 hull to you, 30 to enemy]</text>
+      <text>Target their Engines.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="20" system="engines"/>
@@ -6492,7 +6492,7 @@
       </event>
     </choice>
     <choice req="UPG_AETHER_ENGINES" max_group="6" hidden="true">
-      <text>(Aether Overdrive) Cloaking.[20 hull to you, 30 to enemy]</text>
+      <text>Target their Cloaking.</text>
       <event>
         <text>You divert full power to your engines, ramming into the enemy vessel as hard as you can.</text>
         <damage amount="20" system="engines"/>
@@ -6506,7 +6506,7 @@
       </event>
     </choice>
     <choice req="UPG_AETHER_ENGINES"  max_group="7" hidden="true">
-      <text>(Aether Overdrive) Teleporter.[20 hull to you, 30 to enemy]</text>
+      <text>Target their Teleporter.</text>
       <event>
         <text>You divert full power to your engines, and partially activate the FTL jump system ramming into the enemy vessel at almost light speed.</text>
         <damage amount="20" system="engines"/>

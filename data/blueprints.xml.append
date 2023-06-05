@@ -233,7 +233,7 @@
 		<class>GunBomination</class>
 		<name>Gun TitanoBoa</name>
 		<unlock id="ship_PLAYER_SHIP_GUNSHIP_FM_3_unlock"/>
-		<desc>After his second failed project, the wealthy Free Mantis went on a drunken bender and decided the best course of action is to bring the weapons to the enemy. This ship is equipped for ramming speeds and has a built-in drone recovery!</desc>
+		<desc>After his second failed project, the wealthy Free Mantis went on a drunken bender and decided the best course of action is to bring the weapons to the enemy. This ship is equipped for f speeds and has a built-in drone recovery!</desc>
 		<systemList>
 			<battery max="2" power="1" room="14" start="true" img="room_battery_8" />
 			<cloaking power="1" room="2" start="false" img="room_cloaking_11" />
@@ -17519,7 +17519,7 @@
 
 	<augBlueprint name="LOCKED_RAMMING_SPEED">
 		<title>Ramming Speed</title>
-		<desc>This ship is capable of ramming enemy ships, at great risk to its' hull integrity and engines. With great Engines coems great Ramming Speed.</desc>
+		<desc>This ship is capable of ramming enemy ships, at great risk to its' hull integrity and engines. With great Engines comes great Ramming Speed.</desc>
 		<cost>10</cost>
 		<rarity>0</rarity>
 		<stackable>true</stackable>

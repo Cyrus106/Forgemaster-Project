@@ -1,4 +1,3 @@
-
 local dialogueBox = {
   --Set these members in constructor
   x = 0, 
@@ -15,6 +14,7 @@ local dialogueBox = {
   --Do not set these members
   textIndex = 1,
   timer = 0,
+  soundTimer = 0,
   active = true,
   
   --Frame
@@ -28,16 +28,20 @@ local dialogueBox = {
           if charsToRender > #currentText then
             charsToRender = #currentText
           else --If not done, play sound
-            Hyperspace.Global.GetInstance():GetSoundControl():PlaySoundMix(self.sound, 1, false)
+            if self.soundTimer > 0.07 then
+              self.soundTimer = 0
+              Hyperspace.Global.GetInstance():GetSoundControl():PlaySoundMix(self.sound, 1, false)
+            end
+            self.soundTimer = self.soundTimer + Hyperspace.FPS.SpeedFactor / 16
           end
           currentText = currentText:sub(0, charsToRender)
-          Graphics.CSurface.GL_DrawRect(self.x, self.y, self.w, self.h, self.fillColor)
-          Graphics.CSurface.GL_DrawRectOutline(self.x - 5, self.y - 5, self.w + 5, self.h + 5, self.borderColor, 5)
+          Graphics.CSurface.GL_DrawRect(self.x + 5, self.y + 5, self.w - 5, self.h - 5, self.fillColor)
+          Graphics.CSurface.GL_DrawRectOutline(self.x, self.y, self.w, self.h, self.borderColor, 5)
           Graphics.freetype.easy_printAutoNewlines(
               self.font, 
-              self.x + 5, 
-              self.y + 5, 
-              self.w - 10, 
+              self.x + 10, 
+              self.y + 10, 
+              self.w - 20, 
               currentText
           )
           self.timer = self.timer + Hyperspace.FPS.SpeedFactor / 16
@@ -46,6 +50,7 @@ local dialogueBox = {
   Advance = function(self)
       self.textIndex = self.textIndex + 1
       self.timer = 0
+      self.soundTimer = 0
       if self.textIndex > #self.text then
           self.active = false
       end
@@ -54,6 +59,7 @@ local dialogueBox = {
   Reset = function(self)
       self.textIndex = 1
       self.timer = 0
+      self.soundTimer = 0
       self.active = true
   end,
 
@@ -67,9 +73,9 @@ local dialogueBox = {
 tutorialBox = dialogueBox:New {
   font = 1, --The font that the dialogue is rendered in
   x = 300, --x coordinate of the top-left corner of the dialogue box
-  y = 200, --y coordinate of the top left corner of the dialogue box
-  w = 400, --width of the dialogue box (in pixels)
-  h = 200, --height of the dialogue box (in pixels)
+  y = 100, --y coordinate of the top left corner of the dialogue box
+  w = 400, --width of the dialogue box, including border (in pixels)
+  h = 100, --height of the dialogue box, including border (in pixels)
   textSpeed = 30,
   text = {"Hello, welcome to the tutorial test, to the left you can see the broken tutorial text box, just ignore it please, we will remove it soon, then there will be only me. :)"} --An array of messages to display
 }
