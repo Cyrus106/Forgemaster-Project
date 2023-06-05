@@ -102,7 +102,7 @@ script.on_render_event(Defines.RenderEvents.MOUSE_CONTROL,
 function()
   local playerShip = Hyperspace.ships.player
   local enemyShip = Hyperspace.ships.enemy
-  if enemyShip and not playerShip.bJumping and playerShip:DoSensorsProvide(3) then
+  if enemyShip and not playerShip.bJumping and playerShip:DoSensorsProvide(3) and Hyperspace.Global.GetInstance():GetCApp().world.bStartedGame then
     local enemyMissiles
     --Re-implementation of native ShipManager::GetMissileCount function, replace when exposed
     if enemyShip:HasSystem(3) then

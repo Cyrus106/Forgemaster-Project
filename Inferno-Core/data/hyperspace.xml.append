@@ -109,6 +109,31 @@
 						</statBoost>
 			</statBoosts>
 		</aug>
+		<aug name="IMMUNE_2">
+			<function name="SYSTEM_CASING" value="1" useForReqs="true" warning="false"/>
+			<function name="ROCK_ARMOR" value="1" useForReqs="true" warning="false"/>
+			<function name="ION_ARMOR" value="1" useForReqs="true" warning="false"/>
+			<function name="FMCORE_NO_BREACH" value="10" useForReqs="true" warning="false"/>
+			<function name="FMCORE_NO_FIRE" value="10" useForReqs="true" warning="false"/>
+			<function name="SLUG_GEL" value="999" useForReqs="true" warning="false"/>
+			<function name="FIRE_EXTINGUISHERS" value="999" useForReqs="true" warning="false"/>
+			<statBoosts>
+				<statBoost name="allDamageTakenMultiplier">
+						<boostType>SET</boostType>
+						<amount>0</amount>
+						<shipTarget>CURRENT_SHIP</shipTarget>
+						<crewTarget>ORIGINAL_ALLIES</crewTarget>
+						<priority>999999</priority>
+					</statBoost>
+					<statBoost name="sabotageSpeedMultiplier">
+							<boostType>SET</boostType>
+							<amount>0</amount>
+							<shipTarget>CURRENT_SHIP</shipTarget>
+							<crewTarget>ALL</crewTarget>
+							<priority>999999</priority>
+						</statBoost>
+			</statBoosts>
+		</aug>
 		<aug name="FAST_WEAPONS">
 			<function name="AUTO_COOLDOWN" value="9" useForReqs="true"/>
 		</aug>

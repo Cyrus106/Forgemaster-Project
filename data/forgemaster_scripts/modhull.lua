@@ -91,7 +91,7 @@ script.on_game_event("FM_CREWKILL_TRACKER_EVENT", false, function() selfArm:rede
 script.on_internal_event(Defines.InternalEvents.GET_AUGMENTATION_VALUE,
 function(ShipManager, AugName, AugValue)
   
-  if AugName == "AUTO_COOLDOWN" and ShipManager:HasAugmentation("FM_MODULAR_HULL_FASTWEAPON") > 0 then
+  if AugName == "AUTO_COOLDOWN" and ShipManager:GetAugmentationValue("FM_MODULAR_HULL_FASTWEAPON") > 0 then
     local emptyWeaponBars = ShipManager:GetSystemPowerMax(3) - ShipManager:GetSystemPower(3) - math.max(GetLimitAmount(ShipManager:GetSystem(3)),ShipManager:GetSystemPowerMax(3) - ShipManager:GetSystem(3).healthState.first) 
     local cooldownModifier = (emptyWeaponBars * ShipManager:GetAugmentationValue("FM_MODULAR_HULL_FASTWEAPON")) --maybe i will later make it stackable
     AugValue = AugValue + cooldownModifier
