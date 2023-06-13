@@ -70,7 +70,7 @@ local dialogueBox = {
   end,
 }
 
-tutorialBox = dialogueBox:New {
+local tutorialBox = dialogueBox:New {
   font = 1, --The font that the dialogue is rendered in
   x = 300, --x coordinate of the top-left corner of the dialogue box
   y = 100, --y coordinate of the top left corner of the dialogue box
@@ -83,59 +83,46 @@ tutorialBox = dialogueBox:New {
 
 script.on_render_event(Defines.RenderEvents.LAYER_PLAYER, function() end, 
 function()
-  if Hyperspace.ships.player.myBlueprint.blueprintName=="PLAYER_SHIP_TUTORIAL" then
+  if Hyperspace.ships.player.myBlueprint.blueprintName == "PLAYER_SHIP_TUTORIAL" then
     tutorialBox:Render()
   end
 end)
 
-shipStatBox = dialogueBox:New {
-  font = 1, --The font that the dialogue is rendered in
+local shipStatBox = dialogueBox:New {
+  font = 51, --The font that the dialogue is rendered in
   x = 335, --x coordinate of the top-left corner of the dialogue box
-  y = 516, --y coordinate of the top left corner of the dialogue box
-  w = 105, --width of the dialogue box (in pixels)
-  h = 170, --height of the dialogue box (in pixels)
-  text = {"ship stats go here"}, --An array of messages to display  
-  Render = function(self) --simplified render function because no typing needed!
-      if self.active then
-          Graphics.CSurface.GL_DrawRect(self.x, self.y, self.w, self.h, self.fillColor)
-          Graphics.CSurface.GL_DrawRectOutline(self.x - 5, self.y - 5, self.w + 5, self.h + 5, self.borderColor, 5)
-          Graphics.freetype.easy_print(
-              self.font, 
-              self.x + 5, 
-              self.y + 5, 
-              --self.w - 10, 
-              self.text[self.textIndex]
-          )
-      end
-  end,11
+  y = 511, --y coordinate of the top left corner of the dialogue box
+  w = 100, --width of the dialogue box (in pixels)
+  h = 100, --height of the dialogue box (in pixels)
+  text = {"Ship Stats (YOU SHOULD NOT SEE THIS MESSAGE)"}, --An array of messages to display  
+
+  timer = 2147483647, --Such that text starts fully rendered
 }
 
-StatTexts = {
-  "Slots:\nWeapons: ",
-  "\nDrones: ",
-  "\n\n}: ",
-  " |: ",
-  "\nHull: ",
-  "\nCrewcap: ",
-  "\nSystemcap: ",
-}
-
-shipCrewLimits={}
-shipSystemLimits={}
-
-GetShipStats = function(theShip) 
-  shipStatBox.text[1]=StatTexts[1]..math.floor(theShip.weaponSlots)..StatTexts[2]..math.floor(theShip.droneSlots)..StatTexts[3]..math.floor(theShip.missiles)..StatTexts[4]..math.floor(theShip.drone_count)..StatTexts[5]..math.floor(theShip.health)
-  
-  shipStatBox.text[1]=shipStatBox.text[1]..StatTexts[6]..(math.floor(shipCrewLimits[theShip.blueprintName] or shipCrewLimits["DEFAULT"] or 8))
-  
-  shipStatBox.text[1]=shipStatBox.text[1]..StatTexts[7]..(math.floor(shipSystemLimits[theShip.blueprintName] or shipSystemLimits["DEFAULT"] or 8))
-end
+local shipCrewLimits = {}
+local shipSystemLimits = {}
 
 script.on_render_event(Defines.RenderEvents.MAIN_MENU, function() end, 
 function()
-  if (not Hyperspace.Global.GetInstance():GetCApp().world.bStartedGame) and Hyperspace.Global.GetInstance():GetShipManager(0) then
-    theShip=Hyperspace.Global.GetInstance():GetShipManager(0).myBlueprint
-    GetShipStats(theShip)
+  local playerShip = Hyperspace.ships.player
+  if not Hyperspace.Global.GetInstance():GetCApp().world.bStartedGame and playerShip then
+    local shipBlueprint = playerShip.myBlueprint
+    shipStatBox.text[1] = string.format(
+[[Slots:
+Weapons: %i
+Drones: %i
+}: %i
+|: %i
+Hull: %i
+Crewcap: %i
+Systemcap: %i]], 
+    shipBlueprint.weaponSlots,
+    shipBlueprint.droneSlots,
+    shipBlueprint.missiles,
+    shipBlueprint.drone_count,
+    shipBlueprint.health,
+    shipCrewLimits[shipBlueprint.blueprintName],
+    shipSystemLimits[shipBlueprint.blueprintName])
     shipStatBox:Render()
   end
 end)
@@ -143,18 +130,21 @@ do
   local shipNode = RapidXML.xml_document("data/hyperspace.xml"):first_node("FTL"):first_node("ships"):first_node("customShip")
   local crewNode = shipNode:last_node("crewLimit")
   local systemNode = shipNode:last_node("systemLimit")
+  local systemLimit
+  local crewLimit
   if crewNode then
-    local crewLimit = tonumber(crewNode:value())
-    if crewLimit and crewLimit ~= 8 then
-      shipCrewLimits["DEFAULT"] = crewLimit
-    end
+    crewLimit = tonumber(crewNode:value())
   end
   if systemNode then
-    local systemLimit = tonumber(systemNode:value())
-    if systemLimit and systemLimit ~= 8 then
-      shipSystemLimits["DEFAULT"] = systemLimit
-    end
+    systemLimit = tonumber(systemNode:value())
   end
+   --Default value of table will be defined value if there is one, or 8 if there is not
+  crewLimit = crewLimit or 8 
+  systemLimit = systemLimit or 8
+  --When a value is not defined in the table, return the default
+  setmetatable(shipCrewLimits, {__index = function() return crewLimit end}) 
+  setmetatable(shipSystemLimits, {__index = function() return systemLimit end})
+
   shipNode = shipNode:next_sibling("customShip")
   local crewNode = nil
   local systemNode = nil
@@ -163,16 +153,12 @@ do
     local systemNode = shipNode:last_node("systemLimit")
     if crewNode then
       local crewLimit = tonumber(crewNode:value())
-      if crewLimit and crewLimit ~= 8 then
-        shipCrewLimits[shipNode:first_attribute("name"):value()] = crewLimit
-      end
+      shipCrewLimits[shipNode:first_attribute("name"):value()] = crewLimit
     end
     if systemNode then
       local systemLimit = tonumber(systemNode:value())
-      if systemLimit and systemLimit ~= 8 then
-        shipSystemLimits[shipNode:first_attribute("name"):value()] = systemLimit
-      end
+      shipSystemLimits[shipNode:first_attribute("name"):value()] = systemLimit
     end
     shipNode = shipNode:next_sibling("customShip")
   end
-end--]]
+end
