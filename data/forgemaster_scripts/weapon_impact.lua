@@ -54,7 +54,9 @@ hitEveryRoom.FM_TERMINUS = "FM_TERMINUS_STATBOOST"
 --SPECIAL CASES:
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT,
 function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
-  if Hyperspace.Get_Projectile_Extend(Projectile).name == "FM_ABDUCT_LASER" then
+  local doThing = nil
+  pcall(function() doThing = Hyperspace.Get_Projectile_Extend(Projectile).name == "FM_ABDUCT_LASER" end)
+  if doThing then
     local targetRoomNumber = Hyperspace.ShipGraph.GetShipInfo(ShipManager.iShipId):GetSelectedRoom(Location.x, Location.y, true)
   
 

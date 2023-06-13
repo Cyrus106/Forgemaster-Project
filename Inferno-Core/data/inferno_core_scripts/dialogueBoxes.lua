@@ -126,9 +126,9 @@ shipSystemLimits={}
 GetShipStats = function(theShip) 
   shipStatBox.text[1]=StatTexts[1]..math.floor(theShip.weaponSlots)..StatTexts[2]..math.floor(theShip.droneSlots)..StatTexts[3]..math.floor(theShip.missiles)..StatTexts[4]..math.floor(theShip.drone_count)..StatTexts[5]..math.floor(theShip.health)
   
-  shipStatBox.text[1]=shipStatBox.text[1]..StatTexts[6]..(math.floor(shipCrewLimits[theShip.blueprintName] or shipCrewLimits[DEFAULT] or 8))
+  shipStatBox.text[1]=shipStatBox.text[1]..StatTexts[6]..(math.floor(shipCrewLimits[theShip.blueprintName] or shipCrewLimits["DEFAULT"] or 8))
   
-  shipStatBox.text[1]=shipStatBox.text[1]..StatTexts[7]..(math.floor(shipSystemLimits[theShip.blueprintName] or shipSystemLimits[DEFAULT] or 8))
+  shipStatBox.text[1]=shipStatBox.text[1]..StatTexts[7]..(math.floor(shipSystemLimits[theShip.blueprintName] or shipSystemLimits["DEFAULT"] or 8))
 end
 
 script.on_render_event(Defines.RenderEvents.MAIN_MENU, function() end, 
@@ -146,13 +146,13 @@ do
   if crewNode then
     local crewLimit = tonumber(crewNode:value())
     if crewLimit and crewLimit ~= 8 then
-      shipCrewLimits[DEFAULT] = crewLimit
+      shipCrewLimits["DEFAULT"] = crewLimit
     end
   end
   if systemNode then
     local systemLimit = tonumber(systemNode:value())
     if systemLimit and systemLimit ~= 8 then
-      shipSystemLimits[DEFAULT] = systemLimit
+      shipSystemLimits["DEFAULT"] = systemLimit
     end
   end
   shipNode = shipNode:next_sibling("customShip")
