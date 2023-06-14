@@ -17347,6 +17347,15 @@
 
 <FTL><!--AUGMENTS -->
 
+	<augBlueprint name="FM_UNBROKEN_ARMOR">
+		<title>Unbroken Armor</title>
+		<desc>Boosts hull resistance by 50% of current hull resist if no systems are damaged and no tiles are breached.</desc>
+		<cost>160</cost>
+		<bp>4</bp>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+
 	<augBlueprint name="INSTANT_SYSTEMS">
 		<title>Ultimate System Accelerator</title>
 		<desc>The Cloaking, Hacking, Mind Control, and Temporal Systems have no cooldown.</desc>

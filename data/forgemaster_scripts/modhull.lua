@@ -110,3 +110,44 @@ function()
   end
 end)
 
+--[[
+Must expose:
+
+Repariable::fDamage
+OuterHull;
+Ship::vOuterWalls
+--]]
+
+--[[
+local function SystemDamaged(ShipManager)
+  for system in vter(ShipManager.vSystemList) do
+    local health = system.healthState
+    if health.first < health.second then
+      return true
+    end
+  end
+  return false
+end
+
+--For when breaches are properly exposed
+local function IsBreached(ShipManager)
+  for breach in vter(ShipManager.ship.vOuterWalls) do
+    if breach.fDamage > 0 then 
+      return true 
+    end
+  end
+  return false
+end
+
+script.on_internal_event(Defines.InternalEvents.GET_AUGMENTATION_VALUE,
+function(ShipManager, AugName, AugValue)
+  if AugName == "ROCK_ARMOR" then
+    if not (SystemDamaged(ShipManager) or IsBreached(ShipManager)) then
+      local unbrokenCount = ShipManager:HasAugmentation("FM_UNBROKEN_ARMOR")
+      local resistMultiplier = 1 + 0.5 * unbrokenCount
+      AugValue = AugValue * resistMultiplier
+    end
+  end
+  return Defines.Chain.CONTINUE, AugValue
+end)
+--]]
