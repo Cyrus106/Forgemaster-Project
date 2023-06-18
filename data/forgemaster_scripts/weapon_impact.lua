@@ -20,7 +20,7 @@ roomDamageWeapons.FM_MISSILES_CLOAK_STUN_PLAYER = {ion = 3}
 roomDamageWeapons.FM_MISSILES_CLOAK_STUN_MEGA = {ion = 3}
 roomDamageWeapons.FM_MISSILES_CLOAK_STUN_ENEMY = {ion = 3}
 roomDamageWeapons.FM_RVS_AC_CHARGE_EMP = {ion = 1}
-
+roomDamageWeapons.FM_TERMINUS = {hull = 10}
 
 
 local tileDamageWeapons = mods.inferno.tileDamageWeapons
