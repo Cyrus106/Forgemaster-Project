@@ -2737,7 +2737,7 @@
 														<ship hostile="true"/>
 														<playMusic>Twisted</playMusic>
 														<status type="limit" target="enemy" system="drones" amount="0"/>
-														<text>Please don't... I don't want to see your face in my dreams as you haunt me. Please leave.</text>
+														<text>"Please don't... I don't want to see your face in my dreams as you haunt me. Please leave"."</text>
 														<choice hidden="true">
 															<text>I'd love to, but you're jamming my FTL.</text>
 															<event load="COMBAT_CHECK"/>

@@ -49,7 +49,7 @@ if getmetatable(Hyperspace.WeaponBlueprint)['.instance']['.get']['radius'] then 
     for i = 0, 1 do 
       local ShipManager = Hyperspace.Global.GetInstance():GetShipManager(i)
       if ShipManager then
-        weaponSystem = ShipManager.weaponSystem
+        local weaponSystem = ShipManager.weaponSystem
         if weaponSystem then
           for weapon in vter(weaponSystem.weapons) do
             weapon.radius = math.max(0, weapon.blueprint.radius - ShipManager:GetAugmentationValue("RADIUS_REDUCTION"))

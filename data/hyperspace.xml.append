@@ -14205,7 +14205,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 
 	<augments>
 		<!-- Modular Hull Basic Upgrades -->
-		<aug name=" ">
+		<aug name="FM_MODULAR_HULL">
 			<function name="ROCK_ARMOR" value="0.05" useForReqs="false"/>
 			<locked/>
 		</aug>

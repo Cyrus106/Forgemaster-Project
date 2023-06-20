@@ -1,76 +1,6 @@
-local dialogueBox = {
-  --Set these members in constructor
-  x = 0, 
-  y = 0,
-  w = 100,
-  h = 100,
-  font = 51,
-  text = {"Default"},
-  textSpeed = 10, --Characters per second
-  
-  sound = "autofireOff",
-  
-  
-  --Do not set these members
-  textIndex = 1,
-  timer = 0,
-  soundTimer = 0,
-  active = true,
-  
-  --Frame
-  fillColor = Graphics.GL_Color(53 / 255, 75 / 255, 89 / 255, 0.75),
-  borderColor = Graphics.GL_Color(1, 1, 1, 1),
-  
-  Render = function(self)
-      if self.active then
-          local currentText = self.text[self.textIndex]
-          local charsToRender = math.floor(self.timer * self.textSpeed)
-          if charsToRender > #currentText then
-            charsToRender = #currentText
-          else --If not done, play sound
-            if self.soundTimer > 0.07 then
-              self.soundTimer = 0
-              Hyperspace.Global.GetInstance():GetSoundControl():PlaySoundMix(self.sound, 1, false)
-            end
-            self.soundTimer = self.soundTimer + Hyperspace.FPS.SpeedFactor / 16
-          end
-          currentText = currentText:sub(0, charsToRender)
-          Graphics.CSurface.GL_DrawRect(self.x + 5, self.y + 5, self.w - 5, self.h - 5, self.fillColor)
-          Graphics.CSurface.GL_DrawRectOutline(self.x, self.y, self.w, self.h, self.borderColor, 5)
-          Graphics.freetype.easy_printAutoNewlines(
-              self.font, 
-              self.x + 10, 
-              self.y + 10, 
-              self.w - 20, 
-              currentText
-          )
-          self.timer = self.timer + Hyperspace.FPS.SpeedFactor / 16
-      end
-  end,
-  Advance = function(self)
-      self.textIndex = self.textIndex + 1
-      self.timer = 0
-      self.soundTimer = 0
-      if self.textIndex > #self.text then
-          self.active = false
-      end
-  end,
+local dialogueBox = mods.inferno.dialogueBox
 
-  Reset = function(self)
-      self.textIndex = 1
-      self.timer = 0
-      self.soundTimer = 0
-      self.active = true
-  end,
-
-  New = function(self, table)
-      self.__index = self
-      setmetatable(table, self)
-      return table
-  end,
-}
-
-local tutorialBox = dialogueBox:New {
+tutorialBox = dialogueBox:New {
   font = 1, --The font that the dialogue is rendered in
   x = 300, --x coordinate of the top-left corner of the dialogue box
   y = 100, --y coordinate of the top left corner of the dialogue box
@@ -89,11 +19,11 @@ function()
 end)
 
 local shipStatBox = dialogueBox:New {
-  font = 51, --The font that the dialogue is rendered in
+  font = 6, --The font that the dialogue is rendered in
   x = 335, --x coordinate of the top-left corner of the dialogue box
   y = 511, --y coordinate of the top left corner of the dialogue box
   w = 100, --width of the dialogue box (in pixels)
-  h = 100, --height of the dialogue box (in pixels)
+  h = 140, --height of the dialogue box (in pixels)
   text = {"Ship Stats (YOU SHOULD NOT SEE THIS MESSAGE)"}, --An array of messages to display  
 
   timer = 2147483647, --Such that text starts fully rendered

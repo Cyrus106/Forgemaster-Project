@@ -144,8 +144,7 @@ function(ShipManager, AugName, AugValue)
   if AugName == "ROCK_ARMOR" then
     if not (SystemDamaged(ShipManager) or IsBreached(ShipManager)) then
       local unbrokenCount = ShipManager:HasAugmentation("FM_UNBROKEN_ARMOR")
-      local resistMultiplier = 1 + 0.5 * unbrokenCount
-      AugValue = AugValue * resistMultiplier
+      AugValue=1-(1-AugValue) * 0.5^unbrokenCount
     end
   end
   return Defines.Chain.CONTINUE, AugValue
