@@ -2,7 +2,7 @@
 
 script.on_internal_event(Defines.InternalEvents.GET_AUGMENTATION_VALUE,
 function(ShipManager, AugName, AugValue)
-  if AugName:sub(0,8)~="ANTIAUG_" then
+  if AugName:sub(0,8)~="ANTIAUG_" and ShipManager then
     local OtherShipManager = Hyperspace.Global.GetInstance():GetShipManager(1 - ShipManager.iShipId) -- funny math so it can check other ship stuff
     if OtherShipManager then
       local augModifier = OtherShipManager:GetAugmentationValue("ANTIAUG_"..AugName)
