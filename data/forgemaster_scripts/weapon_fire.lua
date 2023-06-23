@@ -6,7 +6,7 @@ local randomInt = mods.inferno.randomInt
 
 script.on_fire_event(Defines.FireEvents.WEAPON_FIRE,
 function(ship, weapon, projectile)
-  local otherShipId = (ship.iShipId + 1) % 2
+  local otherShipId = 1 - ship.iShipId
   local otherShip = Hyperspace.Global.GetInstance():GetShipManager(otherShipId)
   if weapon.name == "'Multiplicity' Barrage Laser" then
     local projectile_number = (weapon.numShots - weapon.queuedProjectiles:size())%weapon.numShots --modulus for when weapon fires fast enough to queue more shots
