@@ -8831,13 +8831,13 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_PERFECT" lvl="0" max_lvl="0" blue="false">
-			<text>Perfect Onboard Efficency Capstone [140~]</text>
+			<text>Perfect Onboard Efficiency Capstone [140~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_PERFECT</loadEvent>
 			</event>
 		</choice>
 		<choice req="FM_MODULAR_HULL_PERFECT" lvl="1" blue="false" hidden="true">
-			<text>Perfect Onboard Efficency Capstone [installed]</text>
+			<text>Perfect Onboard Efficiency Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_FASTSHIELD" lvl="0" max_lvl="0" blue="false">
@@ -9045,11 +9045,11 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_CAPSTONE_PERFECT">
-		<text>Install the Perfect Onboard Efficency? [+5% reload and shield recharge speed, +5% to all crew stats]</text>
+		<text>Install the Perfect Onboard Efficiency? [+5% reload and shield recharge speed, +5% to all crew stats]</text>
 		<choice req="pilot" max_group="1" blue="false">
-			<text>Perfect your Onboard Efficency.</text>
+			<text>Perfect your Onboard Efficiency.</text>
 			<event>
-				<text>The Perfect Onboard Efficency has been installed!</text>
+				<text>The Perfect Onboard Efficiency has been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_PERFECT</hiddenAug>
 
 				<item_modify>
@@ -9101,7 +9101,7 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_CAPSTONE_FASTWEAPON">
-		<text>Install Infinitum Cyclo-Arsenal? [for every unpowered bar of the weapon system +15% weapon reload speed, -5% weapon reload speed]</text>
+		<text>Install Infinitum Cyclo-Arsenal? [-5% weapon reload speed, then an added +15% for each unpowered bar of the weapons system]</text>
 		<!--<choice req="artillery" lvl="1" max_group="1" blue="false" hidden="true">
 			<text>you can't install the Infinitum Cyclo-Arsenal, you have an artillery system.</text>
 			<event load="OPTION_INVALID"/>
@@ -9222,7 +9222,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_PERFECT" blue="false" hidden="true">
-			<text>Perfect Onboard Efficency[+5% reload speed/shield recharge, +5% to all crew stats]</text>
+			<text>Perfect Onboard Efficiency[+5% reload speed/shield recharge, +5% to all crew stats]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_FASTSHIELD" blue="false" hidden="true">

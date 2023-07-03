@@ -14127,24 +14127,6 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 
 <!-- LAB INSTALLS AND INTERNAL INSTALLS -->
 <FTL>
-	<events> <!-- LAB INSTALLS -->
-
-		<event name="INSTALL_LAB_PLATED_REGEN">
-			<hiddenAug>LAB_PLATED_REGEN</hiddenAug>
-			<loadEvent>STORAGE_CHECK_LAB_ROCK</loadEvent>
-		</event>
-		<event name="INSTALL_LAB_PLATED_BIG">
-
-			<hiddenAug>LAB_PLATED_BIG</hiddenAug>
-			<loadEvent>STORAGE_CHECK_LAB_ROCK</loadEvent>
-		</event>
-		<event name="INSTALL_LAB_PLATED_AIR">
-			<hiddenAug>LAB_PLATED_AIR</hiddenAug>
-			<loadEvent>STORAGE_CHECK_LAB_ROCK</loadEvent>
-		</event>
-
-	</events>
-
 
 
 	<events> <!-- INTERNAL INSTALLS -->
@@ -15793,20 +15775,18 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</req>
 
 		</req>
-		<req name="FM_HULL_CAPSTONES" type="sum">
-			<req type="sum"><!--all of the capstonees-->
-				<name>FM_MODULAR_HULL_SALT</name>
-				<name>FM_MODULAR_HULL_DUSK</name>
-				<name>FM_MODULAR_HULL_MURAL</name>
-				<name>FM_MODULAR_HULL_COMPRESS</name>
-				<name>FM_MODULAR_HULL_UPLINK</name>
-				<name>FM_MODULAR_HULL_FASTSHIELD</name>
-				<name>FM_MODULAR_HULL_FASTWEAPON</name>
-				<name>FM_MODULAR_HULL_PERFECT</name>
-				<name>FM_MODULAR_HULL_MAGNETIC</name>
-				<name>FM_MODULAR_HULL_CREWKILL</name>
-				<name>FM_MODULAR_HULL_PARTICLE</name>
-			</req>
+		<req name="FM_HULL_CAPSTONES" type="sum"><!--all of the capstones-->
+			<name>FM_MODULAR_HULL_SALT</name>
+			<name>FM_MODULAR_HULL_DUSK</name>
+			<name>FM_MODULAR_HULL_MURAL</name>
+			<name>FM_MODULAR_HULL_COMPRESS</name>
+			<name>FM_MODULAR_HULL_UPLINK</name>
+			<name>FM_MODULAR_HULL_FASTSHIELD</name>
+			<name>FM_MODULAR_HULL_FASTWEAPON</name>
+			<name>FM_MODULAR_HULL_PERFECT</name>
+			<name>FM_MODULAR_HULL_MAGNETIC</name>
+			<name>FM_MODULAR_HULL_CREWKILL</name>
+			<name>FM_MODULAR_HULL_PARTICLE</name>
 		</req>
 		<req name="OVERCHARMED_RELOADING" type="sum">
 			<req type="sum" const="-15">

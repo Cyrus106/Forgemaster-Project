@@ -35,14 +35,12 @@ local shotTextures = {
 script.on_fire_event(Defines.FireEvents.WEAPON_FIRE,
 function(ship, weapon, projectile)
   if weapon.blueprint.name == "FM_CHARGE_SNIPER" then
-    local boost = weapon.queuedProjectiles:size()
-    projectile.damage.iDamage = projectile.damage.iDamage + (2 * boost)
+    local boost = weapon.queuedProjectiles:size() --gets how many projectiles are charged up (i think this doesn't include the one that got already shot)
+    projectile.damage.iDamage = projectile.damage.iDamage + (2 * boost) --increasing damage based on boost (following line same but for other stats)
     projectile.damage.iShieldPiercing = projectile.damage.iShieldPiercing + boost
     projectile.speed_magnitude = projectile.speed_magnitude * (1 + (boost / 2))
     projectile.damage.breachChance = math.floor(2.5 * (boost + 1))
-    weapon.queuedProjectiles:clear()
-    print(projectile.flight_animation.animationStrip)
-    projectile.flight_animation.animationStrip = shotTextures[boost]
-    print(projectile.flight_animation.animationStrip)
+    weapon.queuedProjectiles:clear() -- delete all the other projectiles
+    projectile.flight_animation.animationStrip = shotTextures[boost] -- sets the projectile to look diffrently based on boost
   end
 end)
