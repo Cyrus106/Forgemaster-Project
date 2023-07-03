@@ -58,13 +58,13 @@ end)
 
 script.on_internal_event(Defines.InternalEvents.SHIP_LOOP,
 function(shipManager)
-        for sys in vter(shipManager.vSystemList) do
-          local roomNumber = sys:GetRoomId()
-          local fires = shipManager:GetFireCount(roomNumber)
-          if fires ~= 0 then --this line makes it so half-sabotaged systems can reset, because running this every tick apparently prevents that
-              local augValue = shipManager:GetAugmentationValue("FIRE_IMMUNITY")
-              local fireImmunity = math.min(augValue, 1) / 2
-              sys:PartialDamage(-fireImmunity * fires)
-          end
-        end
+  for sys in vter(shipManager.vSystemList) do
+    local roomNumber = sys:GetRoomId()
+    local fires = shipManager:GetFireCount(roomNumber)
+    if fires ~= 0 then --this line makes it so half-sabotaged systems can reset, because running this every tick apparently prevents that
+        local augValue = shipManager:GetAugmentationValue("FIRE_IMMUNITY")
+        local fireImmunity = math.min(augValue, 1) / 2
+        sys:PartialDamage(-fireImmunity * fires)
+    end
+  end
 end)
