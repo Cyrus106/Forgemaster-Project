@@ -55,14 +55,9 @@ function(ship, sys)
   end
 end)
 
---ok, so if you are in the esc menu while not paused your system gets unsabod real hard
---[
-script.on_internal_event(Defines.InternalEvents.ON_TICK,
-function()
-  if not Hyperspace.Global.GetInstance():GetCApp().world.space.gamePaused then
-    for i = 0, 1 do 
-      local shipManager = Hyperspace.Global.GetInstance():GetShipManager(i)
-      if shipManager then
+
+script.on_internal_event(Defines.InternalEvents.SHIP_LOOP,
+function(shipManager)
         for sys in vter(shipManager.vSystemList) do
           local roomNumber = sys:GetRoomId()
           local fires = shipManager:GetFireCount(roomNumber)
@@ -72,7 +67,4 @@ function()
               sys:PartialDamage(-fireImmunity * fires)
           end
         end
-      end
-    end
-  end
-end)--]]
+end)
