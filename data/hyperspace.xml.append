@@ -8,6 +8,7 @@
 		<mod-append:script>data/forgemaster_scripts/triggered_events.lua</mod-append:script>
 		<mod-append:script>data/forgemaster_scripts/weapon_fire.lua</mod-append:script>
 		<mod-append:script>data/forgemaster_scripts/weapon_impact.lua</mod-append:script>
+		<mod-append:script>data/forgemaster_scripts/abilities.lua</mod-append:script>
 	</mod:findLike>
 </FTL>
 
@@ -5557,7 +5558,7 @@
 			<deathSounds>
 				<deathSound>shell_death</deathSound>
 			</deathSounds>
-			<powerEffect> <!--POWER FOR NOW-->
+			<powerEffect name="plated_shell_fortify"> <!--POWER FOR NOW-->
 				<cooldown>15</cooldown>
 				<jumpCooldown>full</jumpCooldown>
 				<powerCharges>3</powerCharges>
@@ -5568,13 +5569,11 @@
 				<req type="player">
 					<minHealth>1</minHealth>
 				</req>
-				<damage>-1</damage>
-				<sysDamage>-2</sysDamage>
 				<persDamage>1</persDamage>
 				<friendlyFire>false</friendlyFire>
 				<shipFriendlyFire>true</shipFriendlyFire>
 				<buttonText>POLISH</buttonText>
-				<tooltip>Ready:  Damage enemies for 15hp, while healing for 20hp. Become immune to stuns, deal 20% extra ranged damage, gaining 70% resistance to all damage, while moving at 2x speed for the duration.</tooltip>
+				<tooltip>Ready:  Damage enemies for 15hp, while healing for 20hp. Become immune to stuns, deal 20% extra ranged damage, gaining 70% resistance to all damage, while moving at 2x speed for the duration. Room becomes fully resistant to system damage for 15 seconds.</tooltip>
 				<cooldownColor r="202" g="79" b="226"/>
 				<activateWhenReady enemiesOnly="true">false</activateWhenReady>
 				<temporaryEffect>

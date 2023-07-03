@@ -83,6 +83,7 @@
 		<mod-append:script>data/inferno_core_scripts/screen_effects.lua</mod-append:script>
 		<mod-append:script>data/inferno_core_scripts/augmentInfoBoxes.lua</mod-append:script>
 		<mod-append:script>data/inferno_core_scripts/dialogueBoxes.lua</mod-append:script>
+		<mod-append:script>data/inferno_core_scripts/resist_indicators.lua</mod-append:script>
 		<mod-append:script>data/inferno_core_scripts/patch_error.lua</mod-append:script>
 	</mod:findLike>
 
