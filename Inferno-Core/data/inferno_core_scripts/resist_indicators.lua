@@ -144,7 +144,7 @@ function(ShipManager, showInterior, doorControlMode)
   local canSeeRooms = false
  
   if ShipManager.iShipId == 1 then
-      canSeeRooms = (ShipManager._targetable.hostile and (ShipManager:HasSystem(10) or not ShipManager.cloakSystem.bTurnedOn)) or ShipManager.bContainsPlayerCrew
+      canSeeRooms = (ShipManager._targetable.hostile and (not ShipManager:HasSystem(10) or not ShipManager.cloakSystem.bTurnedOn)) or ShipManager.bContainsPlayerCrew
   else
       canSeeRooms = ShipManager.bShowRoom
   end
