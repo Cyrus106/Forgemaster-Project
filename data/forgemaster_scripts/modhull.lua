@@ -110,6 +110,13 @@ function()
   end
 end)
 
+script.on_fire_event(Defines.FireEvents.WEAPON_FIRE,
+function(ship, weapon, projectile)
+  if ship:HasAugmentation("FM_MODULAR_HULL_WEAPON_IGNITE") > 0 then
+    ship:StartFire(ship:GetSystem(3).roomId)
+  end
+end)
+
 --[[
 Must expose:
 

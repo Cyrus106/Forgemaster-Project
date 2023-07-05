@@ -15652,6 +15652,17 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<function name="SCRAP_COLLECTOR" value="0.1"/>
 			<function name="MAGNET_ARM" value="0" useForReqs="true"/>
 		</aug>
+		
+		<aug name="FM_MODULAR_HULL_RESISTSMASH">
+			<function name="AUTO_COOLDOWN" value="-0.1"/>
+			<function name="ANTIAUG_SYSTEM_CASING" value="0.15"/>
+			<function name="ANTIAUG_ION_ARMOR" value="0.15"/>
+			<function name="ANTIAUG_ROCK_ARMOR" value="0.15"/>
+			<function name="ANTIAUG_FMCORE_NO_BREACH" value="4"/>
+		  </aug>
+		  <aug name="FM_MODULAR_HULL_WEAPON_IGNITE">
+			<function name="AUTO_COOLDOWN" value="0.5"/>
+		  </aug>
 	</augments>
 	<events>
 		<metaVariable name="fm_infinite_upgradepoints" op="set" val="0"/>
@@ -15786,6 +15797,8 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<name>FM_MODULAR_HULL_MAGNETIC</name>
 			<name>FM_MODULAR_HULL_CREWKILL</name>
 			<name>FM_MODULAR_HULL_PARTICLE</name>
+			<name>FM_MODULAR_HULL_RESISTSMASH</name>
+    		<name>FM_MODULAR_HULL_WEAPON_IGNITE</name>
 		</req>
 		<req name="OVERCHARMED_RELOADING" type="sum">
 			<req type="sum" const="-15">

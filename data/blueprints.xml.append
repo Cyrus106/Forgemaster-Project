@@ -18922,6 +18922,22 @@
 		<rarity>0</rarity>
 		<stackable>true</stackable>
 	</augBlueprint>
+	
+	<augBlueprint name="FM_MODULAR_HULL_RESISTSMASH">
+		<title>Ineffable Ordinance Calibrator</title>
+		<desc>+40% breach chance, -15% enemy hull,system and ion resist, -10% reload speed</desc>
+		<cost>100</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+	
+	<augBlueprint name="FM_MODULAR_HULL_WEAPON_IGNITE">
+		<title>Weapon Ignite</title>
+		<desc>+50% reload speed, shooting ignites weapons</desc>
+		<cost>100</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 
 	<!--dirty fix to encased systems not stacking at all-->
 	<mod:findName type="augBlueprint" name="SYSTEM_CASING">
@@ -18935,8 +18951,37 @@
 </FTL>
 
 
-<!--blueprints for "all weapons can be vengeanced" hidden augments-->
+<!--blueprints for AntiAug stuff, needed to make em stack-->
 <FTL>
+	<augBlueprint name="ANTIAUG_ROCK_ARMOR">
+		<title>Anti-Rock Armor</title>
+		<desc>-</desc>
+		<cost>100</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+	
+	<augBlueprint name="ANTIAUG_ION_ARMOR">
+		<title>Anti-Ion Field</title>
+		<desc>-</desc>
+		<cost>100</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+	<augBlueprint name="ANTIAUG_SYSTEM_CASING">
+		<title>Anti-Titatnium System casing</title>
+		<desc>-</desc>
+		<cost>100</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+	<augBlueprint name="ANTIAUG_FMCORE_NO_BREACH">
+		<title>Anti-Breach Repellent</title>
+		<desc>-</desc>
+		<cost>100</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 </FTL>
 
 

@@ -8880,6 +8880,26 @@
 			<text>Electromagnetic Hull Body Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
+		<choice req="FM_MODULAR_HULL_RESISTSMASH" lvl="0" max_lvl="0" blue="false">
+			<text>Ineffable Ordinance Calibrator Capstone [100~](new!)</text>
+			<event>
+				<loadEvent>FM_MODULAR_HULL_CAPSTONE_RESISTSMASH</loadEvent>
+			</event>
+		</choice>
+		<choice req="FM_MODULAR_HULL_RESISTSMASH" lvl="1" blue="false" hidden="true">
+			<text>Ineffable Ordinance Calibrator Capstone [installed]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="FM_MODULAR_HULL_WEAPON_IGNITE" lvl="0" max_lvl="0" blue="false">
+			<text>Weapon Igniter Capstone [100~](new!)</text>
+			<event>
+				<loadEvent>FM_MODULAR_HULL_CAPSTONE_WEAPON_IGNITE</loadEvent>
+			</event>
+		</choice>
+		<choice req="FM_MODULAR_HULL_WEAPON_IGNITE" lvl="1" blue="false" hidden="true">
+			<text>Weapon Igniter Capstone [installed]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Nevermind.</text>
 			<event>
@@ -9186,6 +9206,56 @@
 			</event>
 		</choice>
 	</event>
+	<event name="FM_MODULAR_HULL_CAPSTONE_RESISTSMASH">
+		<text>Install the Ineffable Ordinance Calibrator? [+40% breach chance, -15% enemy hull,system and ion resist, -10% reload speed]</text>
+		<choice req="pilot" max_group="1" blue="false">
+			<text>Install the Ineffable Ordinance Calibrator.</text>
+			<event>
+				<text>The Ineffable Ordinance Calibrator has been installed!</text>
+				<hiddenAug>FM_MODULAR_HULL_RESISTSMASH</hiddenAug>
+				<item_modify>
+					<item type="scrap" min="-100" max="-100"/>
+				</item_modify>
+				<choice blue="false">
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice req="pilot" max_group="2" blue="false">
+			<text>Nevermind.</text>
+			<event>
+				<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+			</event>
+		</choice>
+	</event>
+	<event name="FM_MODULAR_HULL_CAPSTONE_WEAPON_IGNITE">
+		<text>Install the Weapon Igniter? [+50% reload speed, shooting a weapon ignites your weapon system]</text>
+		<choice req="pilot" max_group="1" blue="false">
+			<text>Install the Weapon Igniter.</text>
+			<event>
+				<text>The Weapon Igniter has been installed!</text>
+				<hiddenAug>FM_MODULAR_HULL_WEAPON_IGNITE</hiddenAug>
+				<item_modify>
+					<item type="scrap" min="-100" max="-100"/>
+				</item_modify>
+				<choice blue="false">
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice req="pilot" max_group="2" blue="false">
+			<text>Nevermind.</text>
+			<event>
+				<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+			</event>
+		</choice>
+	</event>
 
 	<!--installed module list-->
 	<event name="FM_MODULAR_HULL_MODULES_INSTALLED">
@@ -9239,6 +9309,14 @@
 		</choice>
 		<choice req="FM_MODULAR_HULL_MAGNETIC" blue="false" hidden="true">
 			<text>Electromagnetic Hull Body [+80% ion res, +10% sys res, +10% scrap, scrap magnet effect, -3 reactor]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="FM_MODULAR_HULL_RESISTSMASH" blue="false" hidden="true">
+			<text>Ineffable Ordinance Calibrator[+40% breach chance, -15% enemy hull,system,ion resist, -10% reload speed]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="FM_MODULAR_HULL_WEAPON_IGNITE" blue="false" hidden="true">
+			<text>Weapon Igniter[+50% reload speed, weapon system set on fire when you shoot]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<!--Fortified-->
