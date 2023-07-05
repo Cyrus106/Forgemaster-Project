@@ -110,9 +110,10 @@ function()
   end
 end)
 
-script.on_fire_event(Defines.FireEvents.WEAPON_FIRE,
-function(ship, weapon, projectile)
-  if ship:HasAugmentation("FM_MODULAR_HULL_WEAPON_IGNITE") > 0 then
+script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE,
+function(projectile, weapon)
+  if weapon:HasAugmentation("FM_MODULAR_HULL_WEAPON_IGNITE") > 0 and not weapon.isArtillery then
+    local ship = Hyperspace.Global.GetInstance():GetShipManager(projectile:GetOwnerId())
     ship:StartFire(ship:GetSystem(3).roomId)
   end
 end)
@@ -151,7 +152,7 @@ function(ShipManager, AugName, AugValue)
   if AugName == "ROCK_ARMOR" then
     if not (SystemDamaged(ShipManager) or IsBreached(ShipManager)) then
       local unbrokenCount = ShipManager:HasAugmentation("FM_UNBROKEN_ARMOR")
-      AugValue=1-(1-AugValue) * 0.5^unbrokenCount
+      AugValue = 1 - (1 - AugValue) * 0.5 ^ unbrokenCount
     end
   end
   return Defines.Chain.CONTINUE, AugValue
