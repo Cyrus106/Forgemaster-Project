@@ -171,11 +171,11 @@ end)
 --AUGMENT EFFECTS
 local function EffectResist(ShipManager, Damage)
     local augValue = ShipManager:GetAugmentationValue("FMCORE_NO_BREACH")
-    if Damage.breachChance > 0 then
+    if Damage.breachChance > 0 then --In cases of negative augValue, do not add breach chance to weapons without breach (Intentional)
         Damage.breachChance = math.max(0, Damage.breachChance - augValue)
     end
     local augValue = ShipManager:GetAugmentationValue("FMCORE_NO_FIRE")
-    if Damage.fireChance > 0 then
+    if Damage.fireChance > 0 then --In cases of negative augValue, do not add fire chance to weapons without fire (Intentional)
         Damage.fireChance = math.max(0, Damage.fireChance - augValue)
     end
 end
