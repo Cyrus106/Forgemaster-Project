@@ -171,3 +171,22 @@
 	<value>1</value><!--equal to 10% flat reduction-->
 	<stackable>true</stackable>
 </augBlueprint>
+<augBlueprint name="FMCORE_ASTEROID_RESIST_HULL">
+	<title>Anti-Asteroid Plating</title>
+	<desc>Asteroids do no damage to your ship.</desc>
+	<cost>45</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<value>1</value>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="FMCORE_ASTEROID_RESIST_SHIELD">
+	<title>Anti-Asteroid Shielding</title>
+	<desc>Asteroids do not pop shields.</desc>
+	<cost>45</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<value>1</value>
+	<stackable>true</stackable>
+</augBlueprint>

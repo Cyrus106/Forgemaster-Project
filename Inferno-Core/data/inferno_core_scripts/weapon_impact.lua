@@ -90,7 +90,7 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, function(ShipManage
         Damage.iIonDamage = Damage.iIonDamage + (roomDamage.ion or 0)
         Damage.iSystemDamage = Damage.iSystemDamage + (roomDamage.sys or 0)
     end
-    return Defines.CHAIN_CONTINUE, forceHit, shipFriendlyFire
+    return Defines.Chain.CONTINUE, forceHit, shipFriendlyFire
 end)
 
 local function MakeDamage(table)
@@ -143,7 +143,7 @@ function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
             SpaceManager:CreateBomb(blueprint, bombOwner, target, targetSpace)
         end
     end
-    return Defines.CHAIN_CONTINUE, beamHitType
+    return Defines.Chain.CONTINUE, beamHitType
 end)
 
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
@@ -163,7 +163,7 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(ShipMa
         end
         Hyperspace.Get_Projectile_Extend(Projectile).name = weaponName
     end
-    return Defines.CHAIN_CONTINUE
+    return Defines.Chain.CONTINUE
 end)
 
 
@@ -182,12 +182,12 @@ end
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, 
 function(ShipManager, Projectile, Location, Damage, forceHit, shipFriendlyFire)
     EffectResist(ShipManager, Damage)
-    return Defines.CHAIN_CONTINUE, forceHit, shipFriendlyFire
+    return Defines.Chain.CONTINUE, forceHit, shipFriendlyFire
 end)
 script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, 
 function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
     EffectResist(ShipManager, Damage)
-    return Defines.CHAIN_CONTINUE, beamHitType
+    return Defines.Chain.CONTINUE, beamHitType
 end)
 
 
@@ -212,7 +212,7 @@ end
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT,
 function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
   AdditionalBreaches(ShipManager, Location, Damage)
-  return Defines.CHAIN_CONTINUE
+  return Defines.Chain.CONTINUE
 end)
 
 script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
@@ -220,5 +220,61 @@ function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
   if beamHitType ~= Defines.BeamHit.SAME_TILE then
     AdditionalBreaches(ShipManager, Location, Damage)
   end
-  return Defines.CHAIN_CONTINUE, beamHitType
+  return Defines.Chain.CONTINUE, beamHitType
 end)
+
+do 
+    local AsteroidResist = false
+    local ResistAugs = {ROCK_ARMOR = true, SYSTEM_CASING = true}
+    script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA,
+    function(ShipManager, Projectile, Location, Damage, forceHit, shipFriendlyFire)
+    --If projectile is an asteroid, set AsteroidResist to true so resistances are triggered during the following resist augment checks in DamageArea
+      if Projectile:GetType() == 2 then 
+        AsteroidResist = true 
+        --Prevent subsequent callbacks from running as we do not want this to register as a regular impact 
+        --Additionally we do not want any subsequent callbacks to call GetAugmentationValue("SYSTEM_CASING") which will prevent the resistances from being modified
+        return Defines.Chain.HALT, forceHit, shipFriendlyFire
+      end
+      return Defines.Chain.CONTINUE, forceHit, shipFriendlyFire
+    end, 1000)
+
+    --Make sure HasAugmentation return a positive value
+    script.on_internal_event(Defines.InternalEvents.HAS_AUGMENTATION,
+    function(ShipManager, AugName, AugValue)
+      if ResistAugs[AugName] and AsteroidResist then
+        AugValue = 1
+        return Defines.Chain.HALT, AugValue
+      end
+      return Defines.Chain.CONTINUE, AugValue
+    end)
+
+    --Make sure both resist values are temporarily replaced with asteroid resist value
+    script.on_internal_event(Defines.InternalEvents.GET_AUGMENTATION_VALUE,
+    function(ShipManager, AugName, AugValue)
+      if ResistAugs[AugName] and AsteroidResist then
+        local chanceForDamage = 1 - AugValue
+        local chanceForAsteroidDamge = 1 - ShipManager:GetAugmentationValue("FMCORE_ASTEROID_RESIST_HULL")
+        AugValue = 1 - (chanceForDamage * chanceForAsteroidDamge)
+        if AugName == "SYSTEM_CASING" then
+            --SYSTEM_CASING check happens last within DamageArea, so this is where AsteroidResist is set to false so that resist augs are only modified on asteroid impact
+            AsteroidResist = false --This could be done within DAMAGE_AREA_HIT, but this would only work when the asteroid doesn't miss
+        end
+        return Defines.Chain.HALT, AugValue
+      end
+      return Defines.Chain.CONTINUE, AugValue
+    end)
+
+   
+
+  end
+  
+  script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION_PRE, 
+  function(ShipManager, Projectile, Damage, CollisionResponse)
+      --Chance is integer between 0 and 1.
+      local resChance = ShipManager:GetAugmentationValue("FMCORE_ASTEROID_RESIST_SHIELD") 
+      local rng = Hyperspace.random32() / 2147483647
+      if rng < resChance and Projectile:GetType() == 2 then
+         return Defines.Chain.PREEMPT
+      end    
+      return Defines.Chain.CONTINUE
+  end)

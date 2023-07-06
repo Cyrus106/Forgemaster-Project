@@ -73,5 +73,5 @@ function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
       Hyperspace.Global.GetInstance():GetSoundControl():PlaySoundMix("teleport",-1,false)
     end
   end
-  return Defines.CHAIN_CONTINUE
+  return Defines.Chain.CONTINUE
 end)
