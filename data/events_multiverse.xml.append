@@ -8781,13 +8781,13 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_DUSK" lvl="0" max_lvl="0" blue="false">
-			<text>Depricated Duskbringer Reactor Capstone [110~]</text>
+			<text>Deprecated Duskbringer Reactor Capstone [110~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_DUSK</loadEvent>
 			</event>
 		</choice>
 		<choice req="FM_MODULAR_HULL_DUSK" lvl="1" blue="false" hidden="true">
-			<text>Depricated Duskbringer Reactor Capstone [installed]</text>
+			<text>Deprecated Duskbringer Reactor Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_MURAL" lvl="0" max_lvl="0" blue="false">
@@ -8935,11 +8935,11 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_CAPSTONE_DUSK">
-		<text>Install the Depricated Duskbringer Reactor? [+20% reload speed and shield recharge speed, your crew stats are reduced by 20% (damage taken +20%)]</text>
+		<text>Install the Deprecated Duskbringer Reactor? [+20% reload speed and shield recharge speed, your crew stats are reduced by 20% (damage taken +20%)]</text>
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Install the Duskbringer Reactor.</text>
 			<event>
-				<text>The Depricated Duskbringer Reactor has been installed!</text>
+				<text>The Deprecated Duskbringer Reactor has been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_DUSK</hiddenAug>
 
 				<item_modify>
@@ -9272,7 +9272,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_DUSK" blue="false" hidden="true">
-			<text>Depricated Duskbringer Reactor[+20% reload/shield recharge, -20% all beneficial crew stats, +20% damage taken]</text>
+			<text>Deprecated Duskbringer Reactor[+20% reload/shield recharge, -20% all beneficial crew stats, +20% damage taken]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_MURAL" blue="false" hidden="true">
