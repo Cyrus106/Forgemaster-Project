@@ -9,6 +9,7 @@
 		<mod-append:script>data/forgemaster_scripts/weapon_fire.lua</mod-append:script>
 		<mod-append:script>data/forgemaster_scripts/weapon_impact.lua</mod-append:script>
 		<mod-append:script>data/forgemaster_scripts/abilities.lua</mod-append:script>
+		<mod-append:script>data/forgemaster_scripts/crew.lua</mod-append:script>
 	</mod:findLike>
 </FTL>
 
@@ -5830,6 +5831,50 @@
 			</powerEffect>
 		</race>
 	</crew>
+
+<crew>
+	<race name="fm_blood_morph">
+		<maxHealth>50</maxHealth>
+		<animBase>rock</animBase>
+		<deathSounds>
+			<deathSound>blobDeath</deathSound>
+		</deathSounds>
+		<powerEffect name="fm_blood_morph_absorb">
+			<cooldown>20</cooldown>
+			<jumpCooldown>full</jumpCooldown>
+			<req>
+				<friendlyInRoom/>
+			</req>
+			<powerSounds> <!--TODO: Change-->
+				<powerSound>lockdown1</powerSound>
+				<powerSound>lockdown2</powerSound>
+			</powerSounds>
+			<buttonText>Absorb</buttonText>
+			<tooltip>[COOLDOWN:20s]
+				Absorbs all friendly crew in the room, granting permanant boosts.</tooltip>
+			<cooldownColor r="132" g="45" b="39"/>
+			<statBoosts>
+				<statBoost name="noClone">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<priority>2147483647</priority>
+				</statBoost>
+				<statBoost name="maxHealth">
+					<boostType>SET</boostType>
+					<amount>0</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<priority>2147483647</priority>
+				</statBoost>
+			</statBoosts>
+			<!--TODO: Add effect anim-->
+		</powerEffect>
+	</race>
+</crew>
+
+
 <crew>	
 	<race name="fm_fallen">
 		<damageMultiplier>1.5</damageMultiplier>

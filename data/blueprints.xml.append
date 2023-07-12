@@ -2556,6 +2556,17 @@
 			<power>Active ability: Damages enemies for 15 HP, whilst giving itself an array of buffs for 15s. Makes room immune to system damage for 15s.</power>
 		</powerList>
 	</crewBlueprint>
+
+	<crewBlueprint name="fm_blood_morph">
+		<desc>A strange creation of a maddened shell scientist after encountering an eldritch horror.</desc>
+		<cost>125</cost>
+		<title>Seraphim</title>
+		<short>Seraphim</short>
+		<rarity>0</rarity>
+		<powerList>
+			<power>Can consume friendly crew to grow stronger.</power>
+		</powerList>
+	</crewBlueprint>
 	
 	<crewBlueprint name="fm_fallen">
     <desc>Randall Curtain, Unique Mercenary Crew. Ex-angel who faked his death to leave the Angels, now working in utmost secrecy for anyone who'll cough up the dough. 
