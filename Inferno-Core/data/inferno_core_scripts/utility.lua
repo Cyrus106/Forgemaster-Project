@@ -53,6 +53,14 @@ function mods.inferno.SetLimitAmount(ShipSystem, limit)
   ShipSystem:SetPowerLoss(limit)
 end
 
+function mods.inferno.GetRoom(ShipManager, Location)
+  local ShipGraph = Hyperspace.ShipGraph.GetShipInfo(ShipManager.iShipId)
+  local roomNumber = ShipGraph:GetSelectedRoom(Location.x, Location.y, true)
+  if roomNumber ~= -1 then
+      return ShipManager.ship.vRoomList[roomNumber]
+  end
+end
+
 mods.inferno.dialogueBox = {
   --Set these members in constructor
   x = 0, 
@@ -178,3 +186,48 @@ mods.inferno.EffectVector = {
     return o
   end,
 }
+
+mods.inferno.RoomEffect = {
+  borderColor = Graphics.GL_Color(),
+  roomColor = Graphics.GL_Color(),
+
+  gradient = {},
+
+  Render = function(self, room)
+    Graphics.CSurface.GL_DrawRect(
+      room.rect.x, 
+      room.rect.y, 
+      room.rect.w, 
+      room.rect.h, 
+      self.roomColor
+    )
+    Graphics.CSurface.GL_DrawRectOutline(
+      room.rect.x, 
+      room.rect.y, 
+      room.rect.w, 
+      room.rect.h, 
+      self.borderColor,
+      5
+    )
+    for i, color in ipairs(self.gradient) do
+      Graphics.CSurface.GL_DrawRect(
+        room.rect.x + 4 + i, 
+        room.rect.y + 4 + i, 
+        room.rect.w - 2 * (4 + i), 
+        room.rect.h - 2 * (4 + i), 
+        color
+      )
+    end
+  end,
+
+  New = function(self, table)
+    table = table or {}
+    self.__index = self
+    setmetatable(table, self)
+    return table
+  end,
+}
+
+function mods.inferno.DefaultTable(table)
+  return setmetatable(table, {__index = function(table, key) return table.DEFAULT end})
+end
