@@ -283,10 +283,7 @@ do
   end)
 
   
-local AcidWeapons = {
-    LASER_BURST_1 = 20,
-    BEAM_LONG = 5,
-}
+local AcidWeapons = {}
 setmetatable(AcidWeapons, {__index = function(table, key) return 0 end})
 --Acid room effect
 do
