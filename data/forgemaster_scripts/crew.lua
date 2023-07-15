@@ -58,7 +58,6 @@ while parent do
 		child = child:next_sibling("race")
 	end
 	parent = parent:next_sibling("crew")
-	count = count + 1
 end
 log("\n\n{\n\t"..table.concat(crewTab," = ,\n\t").." = ,\n}")
 --Check FTL_HS.log for all races in all mods patched. Just a tool to be used for filling out the table, unless we make a function to calculate boosts another way.
