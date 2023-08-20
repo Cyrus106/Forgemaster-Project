@@ -4637,6 +4637,8 @@
 
 	<crew> <!-- Ion Anomaly crew -->
 		<race name="fm_ion_anomaly_crew">
+			<lowHealthThreshold>-1</lowHealthThreshold>
+			<noWarning>true</noWarning>
 			<maxHealth>70</maxHealth>
 			<repairSpeed>0</repairSpeed>
 			<canFight>true</canFight>
@@ -5175,6 +5177,8 @@
 
 	<crew> <!-- Hacker Drone Crew -->
 		<race name="fm_drone_hack">
+			<lowHealthThreshold>-1</lowHealthThreshold>
+			<noWarning>true</noWarning>
 			<maxHealth>60</maxHealth>
 			<repairSpeed>0</repairSpeed>
 			<canFight>false</canFight>
@@ -5260,6 +5264,8 @@
 	<crew> <!-- Ion Missile Hack Drone Crew -->
 		<race name="fm_missile_ion">
 			<animSheet>fm_drone_hack</animSheet>
+			<lowHealthThreshold>-1</lowHealthThreshold>
+			<noWarning>true</noWarning>
 			<maxHealth>100</maxHealth>
 			<repairSpeed>0</repairSpeed>
 			<canFight>false</canFight>
@@ -5721,16 +5727,16 @@
 	</crew>
 	<crew>
 		<race name="fm_nano_cobalt">
-		  <essential>1</essential>
+			<essential>1</essential>
 			<maxHealth>100</maxHealth>
-      <canRepair>false</canRepair>
-      <repairSpeed>2</repairSpeed>
+			<canRepair>false</canRepair>
+			<repairSpeed>2</repairSpeed>
 			<damageTakenMultiplier>0</damageTakenMultiplier>
-      <canBurn>true</canBurn>
-      <canFight>false</canFight>
-      <passiveHealAmount>3</passiveHealAmount>
+			<canBurn>true</canBurn>
+			<canFight>false</canFight>
+			<passiveHealAmount>3</passiveHealAmount>
 			<damageMultiplier>1</damageMultiplier>
-      <canSuffocate>false</canSuffocate>
+			<canSuffocate>false</canSuffocate>
 			<suffocationModifier>1</suffocationModifier>
 			<canMan>false</canMan>
 			<controllable>true</controllable>
@@ -5830,76 +5836,78 @@
 			</powerEffect>
 		</race>
 	</crew>
-<crew>	
-	<race name="fm_fallen">
-		<damageMultiplier>1.5</damageMultiplier>
-		<rangedDamageMultiplier>2</rangedDamageMultiplier>
-		<damageTakenMultiplier>0.7</damageTakenMultiplier>
-		<suffocationModifier>0.5</suffocationModifier>
-		<fireDamageMultiplier>0.5</fireDamageMultiplier>
-		<stunMultiplier>0.1</stunMultiplier>
-		<moveSpeedMultiplier>1.6</moveSpeedMultiplier>
-		<animBase>human</animBase>
-		<defaultSkillLevel>2</defaultSkillLevel>
-		<cloneLoseSkills>false</cloneLoseSkills>
-		<deathSounds>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-		</deathSounds>
-		<deathSounds>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>death1</deathSound>
-			<deathSound>death2</deathSound>
-			<deathSound>humanDeathSpecial</deathSound>
-		</deathSounds>
-	</race>
-</crew>
+	<crew>	
+		<race name="fm_fallen">
+			<damageMultiplier>1.5</damageMultiplier>
+			<rangedDamageMultiplier>2</rangedDamageMultiplier>
+			<damageTakenMultiplier>0.7</damageTakenMultiplier>
+			<suffocationModifier>0.5</suffocationModifier>
+			<fireDamageMultiplier>0.5</fireDamageMultiplier>
+			<stunMultiplier>0.1</stunMultiplier>
+			<moveSpeedMultiplier>1.6</moveSpeedMultiplier>
+			<animBase>human</animBase>
+			<defaultSkillLevel>2</defaultSkillLevel>
+			<cloneLoseSkills>false</cloneLoseSkills>
+			<deathSounds>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+			</deathSounds>
+			<deathSounds>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>death1</deathSound>
+				<deathSound>death2</deathSound>
+				<deathSound>humanDeathSpecial</deathSound>
+			</deathSounds>
+		</race>
+	</crew>
 
 	<crew> <!-- Ancalagon Red Crystal-->
 		<race name="fm_crystal_red">
+			<lowHealthThreshold>-1</lowHealthThreshold>
+			<noWarning>true</noWarning>
 			<maxHealth>165</maxHealth>
 			<oxygenChangeSpeed>5</oxygenChangeSpeed>
 			<canFight>false</canFight>
@@ -5967,6 +5975,8 @@
 
 	<crew> <!-- Ancalagon Blue Crystal-->
 		<race name="fm_crystal_blue">
+			<lowHealthThreshold>-1</lowHealthThreshold>
+			<noWarning>true</noWarning>
 			<maxHealth>165</maxHealth>
 			<damageTakenMultiplier>0.73</damageTakenMultiplier>
 			<canFight>false</canFight>
@@ -6033,6 +6043,8 @@
 
 	<crew> <!-- Ancalagon Green Crystal-->
 		<race name="fm_crystal_green">
+			<lowHealthThreshold>-1</lowHealthThreshold>
+			<noWarning>true</noWarning>
 			<maxHealth>165</maxHealth>
 			<damageTakenMultiplier>0.73</damageTakenMultiplier>
 			<canFight>false</canFight>
@@ -6098,6 +6110,8 @@
 
 	<crew> <!-- Ancalagon White Crystal-->
 		<race name="fm_crystal_white">
+			<lowHealthThreshold>-1</lowHealthThreshold>
+			<noWarning>true</noWarning>
 			<maxHealth>200</maxHealth>
 			<oxygenChangeSpeed>15</oxygenChangeSpeed>
 			<damageTakenMultiplier>0.73</damageTakenMultiplier>
@@ -6169,6 +6183,8 @@
 
 	<crew> <!-- Ancalagon Black Crystal-->
 		<race name="fm_crystal_black">
+			<lowHealthThreshold>-1</lowHealthThreshold>
+			<noWarning>true</noWarning>
 			<maxHealth>270</maxHealth>
 			<damageTakenMultiplier>1.0</damageTakenMultiplier>
 			<canFight>false</canFight>
@@ -6295,166 +6311,6 @@
 		</race>
 	</crew>
 
-
-	<crew> <!-- TERMINUS -->
-		<race name="fm_terminus">
-			<maxHealth>1000</maxHealth>
-			<repairSpeed>0</repairSpeed>
-			<canFight>false</canFight>
-			<canRepair>false</canRepair>
-			<canSabotage>false</canSabotage>
-			<resistsMindControl>true</resistsMindControl>
-			<canTeleport>false</canTeleport>
-			<canSuffocate>false</canSuffocate>
-			<fireDamageMultiplier>0</fireDamageMultiplier>
-			<canMan>false</canMan>
-			<noClone>true</noClone>
-			<noSlot>true</noSlot>
-			<noAI>true</noAI>
-			<validTarget>false</validTarget>
-			<canMove>false</canMove>
-			<snapToSlot>true</snapToSlot>
-			<controllable>false</controllable>
-			<selectable>false</selectable>
-			<canPhaseThroughDoors>true</canPhaseThroughDoors>
-			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
-			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
-			<damageMultiplier>0</damageMultiplier>
-			<damageTakenMultiplier>0.0</damageTakenMultiplier>
-			<animBase>mantis</animBase>
-			<deathSounds>
-				<deathSound>explosion_heavy</deathSound>
-			</deathSounds>
-			<powerEffect> <!--POWER FOR NOW-->
-				<cooldown>0</cooldown>
-				<jumpCooldown>full</jumpCooldown>
-				<powerCharges>1</powerCharges>
-				<chargesPerJump>1</chargesPerJump>
-				<damage>10</damage>
-				<persDamage>7</persDamage>
-				<sysDamage>10</sysDamage>
-				<fireChance>10</fireChance>
-				<powerSounds>
-					<powerSound>explosionShell</powerSound>
-				</powerSounds>
-				<friendlyFire>true</friendlyFire>
-				<shipFriendlyFire>true</shipFriendlyFire>
-				<buttonText>WHAM</buttonText>
-				<tooltip>Ready:  The Kinetic force of the ship being hit</tooltip>
-				<cooldownColor r="202" g="79" b="226"/>
-				<activateWhenReady enemiesOnly="false">true</activateWhenReady>
-				<temporaryEffect>
-					<duration>10</duration>
-					<cooldownColor r="165" g="100" b="0"/>
-					<statBoosts>
-						<statBoost name="canRepair">
-							<boostType>SET</boostType>
-							<value>false</value>
-							<shipTarget>ENEMY_SHIP</shipTarget>
-							<crewTarget>ENEMIES</crewTarget>
-							<affectsSelf>false</affectsSelf>
-							<priority>999999</priority>
-							<duration>20</duration>
-						</statBoost>
-						<statBoost name="canMan">
-							<boostType>SET</boostType>
-							<value>false</value>
-							<shipTarget>ENEMY_SHIP</shipTarget>
-							<crewTarget>ENEMIES</crewTarget>
-							<affectsSelf>false</affectsSelf>
-							<priority>999999</priority>
-							<duration>20</duration>
-						</statBoost>
-						<statBoost name="canFight">
-							<boostType>SET</boostType>
-							<value>false</value>
-							<shipTarget>ENEMY_SHIP</shipTarget>
-							<crewTarget>ENEMIES</crewTarget>
-							<affectsSelf>false</affectsSelf>
-							<priority>999999</priority>
-						</statBoost>
-						<statBoost name="moveSpeedMultiplier">
-							<boostType>SET</boostType>
-							<amount>0</amount>
-							<shipTarget>ENEMY_SHIP</shipTarget>
-							<crewTarget>ENEMIES</crewTarget>
-							<affectsSelf>false</affectsSelf>
-							<priority>999999</priority>
-							<boostAnim>pheromones_f</boostAnim>
-						</statBoost>
-						<statBoost name="trueHealAmount">
-							<boostType>FLAT</boostType>
-							<amount>-5</amount>
-							<shipTarget>ENEMY_SHIP</shipTarget>
-							<crewTarget>ENEMIES</crewTarget>
-							<affectsSelf>false</affectsSelf>
-							<priority>999999</priority>
-							<blackList>
-								<fm_terminus/>
-							</blackList>
-						</statBoost>
-
-						<statBoost name="suffocationModifier"> <!--Everybody suffocates more-->
-							<boostType>MULT</boostType>
-							<amount>2</amount>
-							<shipTarget>ALL</shipTarget>
-							<crewTarget>ENEMIES</crewTarget>
-							<priority>999999</priority>
-							<blackList>
-								<fm_terminus/>
-							</blackList>
-						</statBoost>
-
-						<statBoost name="canSuffocate"> <!--EVERYBODY-->
-							<boostType>SET</boostType>
-							<value>true</value>
-							<shipTarget>ALL</shipTarget>
-							<crewTarget>ENEMIES</crewTarget>
-							<priority>999999</priority>
-							<blackList>
-								<fm_terminus/>
-							</blackList>
-						</statBoost>
-
-						<statBoost name="canBurn">
-							<boostType>SET</boostType>
-							<value>true</value>
-							<shipTarget>ENEMY_SHIP</shipTarget>
-							<crewTarget>ENEMIES</crewTarget>
-							<priority>999999</priority>
-							<blackList>
-								<fm_terminus/>
-							</blackList>
-						</statBoost>
-
-						<statBoost name="stunMultiplier">
-							<boostType>SET</boostType>
-							<amount>1.0</amount>
-							<shipTarget>ENEMY_SHIP</shipTarget>
-							<crewTarget>ENEMIES</crewTarget>
-							<priority>999999</priority>
-							<blackList>
-								<fm_terminus/>
-							</blackList>
-						</statBoost>
-
-						<statBoost name="powerRechargeMultiplier">
-							<boostType>MULT</boostType>
-							<amount>0.5</amount>
-							<shipTarget>ENEMY_SHIP</shipTarget>
-							<crewTarget>ENEMIES</crewTarget>
-							<priority>999999</priority>
-							<blackList>
-								<fm_terminus/>
-							</blackList>
-						</statBoost>
-					</statBoosts>
-				</temporaryEffect>
-
-			</powerEffect>
-
-		</race>
-	</crew>
 
 	<crew> <!-- Remington-->
 		<race name="unique_remington">
@@ -7839,6 +7695,8 @@
 
 	<crew> <!-- Ebony Ion crew, 2 ion damage -->
 		<race name="fm_power">
+			<lowHealthThreshold>-1</lowHealthThreshold>
+			<noWarning>true</noWarning>
 			<maxHealth>100</maxHealth>
 			<repairSpeed>0</repairSpeed>
 			<canFight>false</canFight>
@@ -9060,6 +8918,8 @@
 			<noSlot>true</noSlot>
 		</race>
 		<race name="fm_meatman">
+			<lowHealthThreshold>-1</lowHealthThreshold>
+			<noWarning>true</noWarning>
 			<maxHealth>110</maxHealth>
 			<animBase>human</animBase>
 			<canRepair>false</canRepair>
@@ -9612,6 +9472,8 @@
 
 	<crew> <!--generic crewjank crew. Does nothing but die instantly, and is modified by statboosts in the weapon for the blueprint. This way the information for what the weapon does is all contained in the weaponblueprint-->
     <race name="fm_generic_crewjank">
+		<lowHealthThreshold>-1</lowHealthThreshold>
+		<noWarning>true</noWarning>
         <maxHealth>0</maxHealth>
         <repairSpeed>0</repairSpeed>
         <canFight>false</canFight>
