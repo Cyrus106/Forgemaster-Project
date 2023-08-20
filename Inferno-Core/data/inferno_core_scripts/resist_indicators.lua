@@ -1,45 +1,5 @@
 local vter = mods.inferno.vter
-
-local RoomEffect = {
-  borderColor = Graphics.GL_Color(),
-  roomColor = Graphics.GL_Color(),
-
-  gradient = {},
-
-  Render = function(self, room)
-    Graphics.CSurface.GL_DrawRect(
-      room.rect.x, 
-      room.rect.y, 
-      room.rect.w, 
-      room.rect.h, 
-      self.roomColor
-    )
-    Graphics.CSurface.GL_DrawRectOutline(
-      room.rect.x, 
-      room.rect.y, 
-      room.rect.w, 
-      room.rect.h, 
-      self.borderColor,
-      5
-    )
-    for i, color in ipairs(self.gradient) do
-      Graphics.CSurface.GL_DrawRect(
-        room.rect.x + 4 + i, 
-        room.rect.y + 4 + i, 
-        room.rect.w - 2 * (4 + i), 
-        room.rect.h - 2 * (4 + i), 
-        color
-      )
-    end
-  end,
-
-  New = function(self, table)
-    table = table or {}
-    self.__index = self
-    setmetatable(table, self)
-    return table
-  end,
-}
+local RoomEffect = mods.inferno.RoomEffect
 
 local ionResistEffect = RoomEffect:New {
   borderColor = Graphics.GL_Color(21 / 255, 62 / 255, 61 / 255, 1),

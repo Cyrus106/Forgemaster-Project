@@ -59,6 +59,9 @@ mods.inferno.hitEveryRoom.FM_TERMINUS = "FM_TERMINUS_STATBOOST"
 --]]
 
 --IMPLEMENTATION
+local vter = mods.inferno.vter
+local RoomEffect = mods.inferno.RoomEffect
+local GetRoom = mods.inferno.GetRoom
 script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION, function(ShipManager, Projectile, Damage, CollisionResponse)
     local shieldPower = ShipManager.shieldSystem.shields.power
     local popData = nil
@@ -278,3 +281,120 @@ do
       end    
       return Defines.Chain.CONTINUE
   end)
+
+  
+local AcidWeapons = {}
+setmetatable(AcidWeapons, {__index = function(table, key) return 0 end})
+--Acid room effect
+do
+    local UNIQUE_KEY = {}
+    --INIT ACID TABLES
+    script.on_internal_event(Defines.InternalEvents.SHIP_LOOP,
+    function(ShipManager)
+        if not ShipManager.table[UNIQUE_KEY] then 
+            ShipManager.table[UNIQUE_KEY] = true
+            for room in vter(ShipManager.ship.vRoomList) do
+                room.table[UNIQUE_KEY] = {timer = 0}
+            end
+        end
+    end, 2147483647)
+    --INCREMENT TIMER
+    script.on_internal_event(Defines.InternalEvents.SHIP_LOOP,
+    function(ShipManager)   
+        for room in vter(ShipManager.ship.vRoomList) do
+            local acidTable = room.table[UNIQUE_KEY]
+            acidTable.timer = math.max(acidTable.timer - Hyperspace.FPS.SpeedFactor / 16, 0)
+        end
+    end)
+
+    --APPLY EFFECT
+    local function ApplyAcid(ShipManager, Location, Projectile)
+        local room = GetRoom(ShipManager, Location)
+        if room then
+            local acidTable = room.table[UNIQUE_KEY]
+            acidTable.timer = acidTable.timer + AcidWeapons[Projectile.extend.name]
+        end
+    end
+
+    script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, 
+    function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
+        if beamHitType == Defines.BeamHit.NEW_ROOM then
+            ApplyAcid(ShipManager, Location, Projectile)
+        end
+        return Defines.Chain.CONTINUE, beamHitType
+    end)
+
+    script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, 
+    function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
+        if Projectile then
+            ApplyAcid(ShipManager, Location, Projectile)
+        end
+        return Defines.Chain.CONTINUE
+    end)
+
+    
+
+    --APPROPIATELY MODIFY DAMAGE
+    local function AcidDamage(ShipManager, Location, Damage)
+        local room = GetRoom(ShipManager, Location)
+        if room and room.table[UNIQUE_KEY].timer > 0 then
+            Damage.iDamage = Damage.iDamage * 2
+        end
+    end
+
+    script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA,
+    function(ShipManager, Projectile, Location, Damage, forceHit, shipFriendlyFire)
+        AcidDamage(ShipManager, Location, Damage)
+        return Defines.Chain.CONTINUE, forceHit, shipFriendlyFire
+    end, -1000)
+
+    script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, 
+    function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
+        AcidDamage(ShipManager, Location, Damage)
+        return Defines.Chain.CONTINUE, beamHitType
+    end, -1000)
+
+    --VISUAL EFFECT FOR AFFECTED ROOMS
+    local AcidEffect = RoomEffect:New {
+        borderColor = Graphics.GL_Color(0 / 255, 162 / 255, 61 / 255, 1),
+        roomColor = Graphics.GL_Color(8 / 255, 237 / 255, 36 / 255, 1),
+        --[[
+        gradient = {
+            Graphics.GL_Color(1 / 255, 169 / 255, 58 / 255, 1),
+            Graphics.GL_Color(2 / 255, 184 / 255, 53 / 255, 1),
+            Graphics.GL_Color(4 / 255, 200 / 255, 48 / 255, 1),
+            Graphics.GL_Color(6 / 255, 215 / 255, 43 / 255, 1),
+            Graphics.GL_Color(7 / 255, 229 / 255, 38 / 255, 1),
+        },
+        --]]
+    }
+    script.on_render_event(Defines.RenderEvents.SHIP_FLOOR, function(Ship, experimental) end,
+    function(Ship, experimental)
+        for room in vter(Ship.vRoomList) do
+            if not room.bBlackedOut and room.table[UNIQUE_KEY].timer > 0 then
+                AcidEffect:Render(room)
+            end
+        end
+    end)
+    script.on_render_event(Defines.RenderEvents.SHIP_MANAGER, function(ShipManager, showInterior, doorControlMode) end,
+    function(ShipManager, showInterior, doorControlMode)
+        local canSeeRooms = false
+        if ShipManager.iShipId == 1 then
+            canSeeRooms = (ShipManager._targetable.hostile and (not ShipManager:HasSystem(10) or not ShipManager.cloakSystem.bTurnedOn)) or ShipManager.bContainsPlayerCrew
+        else
+            canSeeRooms = ShipManager.bShowRoom
+        end
+        canSeeRooms = canSeeRooms and not ShipManager.bDestroyed and not ShipManager.bJumping
+        if canSeeRooms then
+            for room in vter(ShipManager.ship.vRoomList) do
+                local x = room.rect.x + room.rect.w - 6 --- 5
+                local y = room.rect.y + 5 --+ 5
+                local timer = room.table[UNIQUE_KEY].timer
+                if timer > 0 then
+                    Graphics.CSurface.GL_SetColor(AcidEffect.borderColor) 
+                    Graphics.freetype.easy_printRightAlign(51, x, y, string.format("%.0f", timer))
+                end
+            end
+        end
+    end)
+end
