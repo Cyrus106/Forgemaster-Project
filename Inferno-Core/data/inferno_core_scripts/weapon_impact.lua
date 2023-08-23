@@ -38,7 +38,6 @@ Simulates an impact of the specified weapon on a per-tile bases for beam weapons
 
 This can be used to for more complex effects previously delegated to "crewjank" (Such as damage plus animations and sound effects.)
 
-(Note: These projectiles CAN miss. The blueprint should have <accuracyMod>100</accuracyMod> until projectile accuracy is exposed to lua.)
 
 Usage:
 mods.inferno.impactBeams.FM_BEAM_EXPLOSION = "FM_BEAM_EXPLOSION_LASER"
@@ -62,10 +61,11 @@ mods.inferno.hitEveryRoom.FM_TERMINUS = "FM_TERMINUS_STATBOOST"
 local vter = mods.inferno.vter
 local RoomEffect = mods.inferno.RoomEffect
 local GetRoom = mods.inferno.GetRoom
-script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION, function(ShipManager, Projectile, Damage, CollisionResponse)
+script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION, 
+function(ShipManager, Projectile, Damage, CollisionResponse)
     local shieldPower = ShipManager.shieldSystem.shields.power
-    local popData = nil
-    if pcall(function() popData = mods.inferno.popWeapons[Hyperspace.Get_Projectile_Extend(Projectile).name] end) and popData then
+    local popData = mods.inferno.popWeapons[Projectile.extend.name]
+    if popData then
         popData.count = popData.count or 0
         if shieldPower.super.first <= 0 and CollisionResponse.damage > Damage.iShieldPiercing then
             ShipManager.shieldSystem:CollisionReal(Projectile.position.x, Projectile.position.y, Hyperspace.Damage(), true)
@@ -75,23 +75,26 @@ script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION, function(ShipM
     return Defines.Chain.CONTINUE
 end)
 
-script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION_PRE, function(ShipManager, Projectile, Damage, CollisionResponse)
+script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION_PRE, 
+function(ShipManager, Projectile, Damage, CollisionResponse)
     local shieldPower = ShipManager.shieldSystem.shields.power
-    local popData = nil
-    if pcall(function() popData = mods.inferno.popWeapons[Hyperspace.Get_Projectile_Extend(Projectile).name] end) and popData and shieldPower.super.first > 0 then
+    local popData = mods.inferno.popWeapons[Projectile.extend.name]
+    if popData and shieldPower.super.first > 0 then
         popData.countSuper = popData.countSuper or 0
         Damage.iDamage = Damage.iDamage + popData.countSuper
     end
     return Defines.Chain.CONTINUE
 end)
 
-script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, function(ShipManager, Projectile, Location, Damage, forceHit, shipFriendlyFire)
-    local roomDamage
-    pcall(function() roomDamage = mods.inferno.roomDamageWeapons[Hyperspace.Get_Projectile_Extend(Projectile).name] end)
-    if roomDamage then
-        Damage.iDamage = Damage.iDamage + (roomDamage.hull or 0)
-        Damage.iIonDamage = Damage.iIonDamage + (roomDamage.ion or 0)
-        Damage.iSystemDamage = Damage.iSystemDamage + (roomDamage.sys or 0)
+script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, 
+function(ShipManager, Projectile, Location, Damage, forceHit, shipFriendlyFire)
+    if Projectile then
+        local roomDamage = mods.inferno.roomDamageWeapons[Projectile.extend.name]
+        if roomDamage then
+            Damage.iDamage = Damage.iDamage + (roomDamage.hull or 0)
+            Damage.iIonDamage = Damage.iIonDamage + (roomDamage.ion or 0)
+            Damage.iSystemDamage = Damage.iSystemDamage + (roomDamage.sys or 0)
+        end
     end
     return Defines.Chain.CONTINUE, forceHit, shipFriendlyFire
 end)
@@ -103,22 +106,22 @@ local function MakeDamage(table)
     ret.iSystemDamage = table.system or 0 
     return ret
 end
-script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
-    local tileDamage
-    pcall(function() tileDamage = mods.inferno.tileDamageWeapons[Hyperspace.Get_Projectile_Extend(Projectile).name] end)
+script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, 
+function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
+    local tileDamage = mods.inferno.tileDamageWeapons[Projectile.extend.name]
     if tileDamage and beamHitType ~= Defines.BeamHit.SAME_TILE then
-        local weaponName = Hyperspace.Get_Projectile_Extend(Projectile).name
-        Hyperspace.Get_Projectile_Extend(Projectile).name = ""
+        local weaponName = Projectile.extend.name
+        Projectile.extend.name = ""
         local farPoint = Hyperspace.Pointf(-2147483648, -2147483648)
         ShipManager:DamageBeam(Location, farPoint, MakeDamage(tileDamage))
-        Hyperspace.Get_Projectile_Extend(Projectile).name = weaponName
+        Projectile.extend.name = weaponName
     end
     return Defines.Chain.CONTINUE, beamHitType
 end)
 
-script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
-    local impact
-    pcall(function() impact = mods.inferno.impactBeams[Hyperspace.Get_Projectile_Extend(Projectile).name] end)
+script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, 
+function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
+    local impact = mods.inferno.impactBeams[Projectile.extend.name]
     if beamHitType ~= Defines.BeamHit.SAME_TILE and impact then
         local SpaceManager = Hyperspace.Global.GetInstance():GetCApp().world.space
         local blueprint = Hyperspace.Global.GetInstance():GetBlueprints():GetWeaponBlueprint(impact)
@@ -126,7 +129,8 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(ShipManage
         local target = Hyperspace.Pointf(Location.x // 35 * 35 + 17.5, Location.y // 35 * 35 + 17.5)
         local targetSpace = ShipManager.iShipId
         if Hyperspace.ShipGraph.GetShipInfo(targetSpace):GetSelectedRoom(target.x, target.y, true) ~= -1 then
-            SpaceManager:CreateLaserBlast(blueprint, target, targetSpace, impactOwner, target, targetSpace, 0)
+            local blast = SpaceManager:CreateLaserBlast(blueprint, target, targetSpace, impactOwner, target, targetSpace, 0)
+            blast.extend.customDamage.accuracyMod = 2147483647
         end
     end
     return Defines.Chain.CONTINUE, beamHitType
@@ -134,8 +138,7 @@ end)
 
 script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
 function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
-    local bomb
-    pcall(function() bomb = mods.inferno.bombBeams[Hyperspace.Get_Projectile_Extend(Projectile).name] end)
+    local bomb = mods.inferno.bombBeams[Projectile.extend.name]
     if beamHitType ~= Defines.BeamHit.SAME_TILE and bomb then
         local SpaceManager = Hyperspace.Global.GetInstance():GetCApp().world.space
         local blueprint = Hyperspace.Global.GetInstance():GetBlueprints():GetWeaponBlueprint(bomb)
@@ -149,22 +152,25 @@ function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
     return Defines.Chain.CONTINUE, beamHitType
 end)
 
-script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
-    local roomDamage
-    pcall(function() roomDamage = mods.inferno.hitEveryRoom[Hyperspace.Get_Projectile_Extend(Projectile).name] end)
-    if roomDamage then
-        local SpaceManager = Hyperspace.Global.GetInstance():GetCApp().world.space
-        local blueprint = Hyperspace.Global.GetInstance():GetBlueprints():GetWeaponBlueprint(roomDamage)
-        local impactOwner = Projectile.ownerId
-        local targetSpace = ShipManager.iShipId
-        
-        local weaponName = Hyperspace.Get_Projectile_Extend(Projectile).name
-        Hyperspace.Get_Projectile_Extend(Projectile).name = ""
-        for roomNumber = 0, Hyperspace.ShipGraph.GetShipInfo(targetSpace):RoomCount() - 1 do
-            local target = ShipManager:GetRoomCenter(roomNumber)
-            SpaceManager:CreateLaserBlast(blueprint, target, targetSpace, impactOwner, target, targetSpace, 0)
+script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, 
+function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
+    if Projectile then
+        local roomDamage = mods.inferno.hitEveryRoom[Projectile.extend.name]
+        if roomDamage then
+            local SpaceManager = Hyperspace.Global.GetInstance():GetCApp().world.space
+            local blueprint = Hyperspace.Global.GetInstance():GetBlueprints():GetWeaponBlueprint(roomDamage)
+            local impactOwner = Projectile.ownerId
+            local targetSpace = ShipManager.iShipId
+            
+            local weaponName = Projectile.extend.name
+            Projectile.extend.name = ""
+            for roomNumber = 0, Hyperspace.ShipGraph.GetShipInfo(targetSpace):RoomCount() - 1 do
+                local target = ShipManager:GetRoomCenter(roomNumber)
+                local blast = SpaceManager:CreateLaserBlast(blueprint, target, targetSpace, impactOwner, target, targetSpace, 0)
+                blast.extend.customDamage.accuracyMod = 2147483647
+            end
+            Projectile.extend.name = weaponName
         end
-        Hyperspace.Get_Projectile_Extend(Projectile).name = weaponName
     end
     return Defines.Chain.CONTINUE
 end)
