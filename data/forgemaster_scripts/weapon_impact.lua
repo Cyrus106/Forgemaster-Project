@@ -70,7 +70,7 @@ function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
     end
   
     if playTeleportSound then
-      Hyperspace.Global.GetInstance():GetSoundControl():PlaySoundMix("teleport",-1,false)
+      Hyperspace.Sounds:PlaySoundMix("teleport",-1,false)
     end
   end
   return Defines.Chain.CONTINUE

@@ -124,7 +124,7 @@ function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
     local impact = mods.inferno.impactBeams[Projectile.extend.name]
     if beamHitType ~= Defines.BeamHit.SAME_TILE and impact then
         local SpaceManager = Hyperspace.Global.GetInstance():GetCApp().world.space
-        local blueprint = Hyperspace.Global.GetInstance():GetBlueprints():GetWeaponBlueprint(impact)
+        local blueprint = Hyperspace.Blueprints:GetWeaponBlueprint(impact)
         local impactOwner = Projectile.ownerId
         local target = Hyperspace.Pointf(Location.x // 35 * 35 + 17.5, Location.y // 35 * 35 + 17.5)
         local targetSpace = ShipManager.iShipId
@@ -141,7 +141,7 @@ function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
     local bomb = mods.inferno.bombBeams[Projectile.extend.name]
     if beamHitType ~= Defines.BeamHit.SAME_TILE and bomb then
         local SpaceManager = Hyperspace.Global.GetInstance():GetCApp().world.space
-        local blueprint = Hyperspace.Global.GetInstance():GetBlueprints():GetWeaponBlueprint(bomb)
+        local blueprint = Hyperspace.Blueprints:GetWeaponBlueprint(bomb)
         local bombOwner = Projectile.ownerId
         local target = Hyperspace.Pointf(Location.x // 35 * 35 + 17.5, Location.y // 35 * 35 + 17.5)
         local targetSpace = ShipManager.iShipId
@@ -158,7 +158,7 @@ function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
         local roomDamage = mods.inferno.hitEveryRoom[Projectile.extend.name]
         if roomDamage then
             local SpaceManager = Hyperspace.Global.GetInstance():GetCApp().world.space
-            local blueprint = Hyperspace.Global.GetInstance():GetBlueprints():GetWeaponBlueprint(roomDamage)
+            local blueprint = Hyperspace.Blueprints:GetWeaponBlueprint(roomDamage)
             local impactOwner = Projectile.ownerId
             local targetSpace = ShipManager.iShipId
             
