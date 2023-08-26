@@ -23,8 +23,8 @@ function(projectile, weapon)
 end)
 
 local function GetRandomPoint(center, radius)
-  local radius = radius * (Hyperspace.random32() / 2147483647)
-  local angle = 2 * math.pi * (Hyperspace.random32() / 2147483647)
+  local radius = radius * math.random()
+  local angle = 2 * math.pi * math.random()
   local x = center.x + radius * math.cos(angle)
   local y = center.y + radius * math.sin(angle)
   return x, y

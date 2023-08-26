@@ -281,7 +281,7 @@ do
   function(ShipManager, Projectile, Damage, CollisionResponse)
       --Chance is integer between 0 and 1.
       local resChance = ShipManager:GetAugmentationValue("FMCORE_ASTEROID_RESIST_SHIELD") 
-      local rng = Hyperspace.random32() / 2147483647
+      local rng = math.random()
       if rng < resChance and Projectile:GetType() == 2 then
          return Defines.Chain.PREEMPT
       end    
