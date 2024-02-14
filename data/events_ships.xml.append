@@ -59,7 +59,7 @@
 	</event>
 	
 	<event name="FM_BOSS_CLAN1_SHIP_DESTROYED">
-		<playMusic></playMusic>
+		<playMusic/>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears to be a chemical replication lab that goes beyond modern science, labelled "Ambrosia". It gives off an otherworldly aura. The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
@@ -127,7 +127,7 @@
 	</event>
 
 	<event name="FM_BOSS_CLAN1_SHIP_DESTROYED2">
-		<playMusic></playMusic>
+		<playMusic/>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears to be a chemical replication lab that goes beyond modern science, labelled "Ambrosia". It gives off an otherworldly aura. The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
@@ -202,7 +202,7 @@
 	</event>
 
 	<event name="FM_BOSS_DUSK1_SHIP_DESTROYED">
-		<playMusic></playMusic>
+		<playMusic/>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears to be a set of strange looking vests, labelled "World Record". They give off an otherworldly aura. The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
@@ -264,7 +264,7 @@
 	</event>
 
 	<event name="FM_BOSS_DUSK1_SHIP_DESTROYED2">
-		<playMusic></playMusic>
+		<playMusic/>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears to be a set of strange looking vests, labelled "World Record". They give off an otherworldly aura. The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
@@ -325,7 +325,7 @@
 	</event>
 
 	<event name="FM_BOSS_ENGI1_DESTROYED">
-		<playMusic></playMusic>
+		<playMusic/>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears a strange-looking drone booster labelled "Kai". The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
@@ -389,7 +389,7 @@
 	</event>
 
 	<event name="FM_BOSS_ENGI1_DESTROYED2">
-		<playMusic></playMusic>
+		<playMusic/>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears a strange-looking drone booster labelled "Kai". The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
 		<item_modify>
@@ -461,7 +461,7 @@
 	</event>
 
 	<event name="FM_BOSS_FREE1_DESTROYED">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate a massive stash of tea, enough to feed an entire army. </text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -519,7 +519,7 @@
 	</event>
 
 	<event name="FM_BOSS_FREE1_DESTROYED2">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate a massive stash of tea, enough to feed an entire army.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -586,7 +586,7 @@
 	</event>
 
 	<event name="FM_BOSS_LOSTSUN1_DESTROYED">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate a strangely warped aperatus that seems to be technological in nature.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -645,7 +645,7 @@
 	</event>
 
 	<event name="FM_BOSS_LOSTSUN1_DESTROYED2">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate a strangely warped aperatus that seems to be technological in nature.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -831,7 +831,7 @@
 	</event>
 
 	<event name="FM_BOSS_MANTIS1_DESTROYED">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate a strange pheromone sack with an otherworldly glow.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -894,7 +894,7 @@
 	</event>
 
 	<event name="FM_BOSS_MANTIS1_DESTROYED2">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate a strange pheromone sack with an otherworldly glow.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<variable name="ach_fm_boss_mantis" op="set" val="1"/>
@@ -955,7 +955,7 @@
 	</event>
 
 	<event name="FM_BOSS_MONK1_DESTROYED">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate a red-colored Aether shield module...</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -1013,7 +1013,7 @@
 	</event>
 
 	<event name="FM_BOSS_MONK1_DESTROYED2">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate a red-colored Aether shield module...</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -1086,7 +1086,7 @@
 	</event>
 
 	<event name="FM_BOSS_R1_SHIP_DESTROYED">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also retrieve a mysterious tiny statue with an otherworldly aura.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -1144,7 +1144,7 @@
 	</event>
 
 	<event name="FM_BOSS_R1_SHIP_DESTROYED2">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also retrieve a mysterious tiny statue with an otherworldly aura</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -1215,7 +1215,7 @@
 	</event>
 
 	<event name="FM_BOSS_SEPA1_DESTROYED">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also retrieve a small, mysterious amulet from the ship; it has an otherworldly aura.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -1273,7 +1273,7 @@
 	</event>
 
 	<event name="FM_BOSS_SEPA1_DESTROYED2">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also retrieve a small, mysterious amulet from the ship; it has an otherworldly aura.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -1379,7 +1379,7 @@
 	</event>
 
 	<event name="FM_BOSS_SLUG1_DESTROYED">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate a packet of cigarettes.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -1437,7 +1437,7 @@
 	</event>
 
 	<event name="FM_BOSS_SLUG1_DESTROYED2">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate a packet of cigarettes.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -1507,7 +1507,7 @@
 	</event>
 
 	<event name="FM_BOSS_STEALTH1_DESTROYED">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also loca-[Engine Error!]
 
 			One or more VMT files could not be loaded!
@@ -1529,7 +1529,7 @@
 	</event>
 
 	<event name="FM_BOSS_STEALTH1_DESTROYED2">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears to be a small mini refrigerator, labelled "Property of Gozer". You also loca-[Engine Error!]
 
 			One or more VMT files could not be loaded!
@@ -1601,7 +1601,7 @@
 	</event>
 
 	<event name="FM_BOSS_ZOLTAN1_DESTROYED">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate a strange device that appears to radiate otherworldly energy.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -1659,7 +1659,7 @@
 	</event>
 
 	<event name="FM_BOSS_ZOLTAN1_DESTROYED2">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate a strange pheromone sack with an otherworldly glow.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -1721,7 +1721,7 @@
 	</event>
 
 	<event name="FM_BOSS_SHELL1_DESTROYED">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate an attache case with countless syringes filled with a neon purple liquid, and they don't appear to be properly sealed either. It appears to radiate otherworldly energy. You recall that the Shell told you to destroy it.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -1855,7 +1855,7 @@
 	</event>
 
 	<event name="FM_BOSS_ENGINEER1_DESTROYED">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate a high-tech drone booster.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -1914,7 +1914,7 @@
 	</event>
 
 	<event name="FM_BOSS_ENGINEER1_DESTROYED2">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate a high-tech drone booster.</text>
 		<item_modify>
 			<item type="scrap" min="100" max="100"/>
@@ -1975,7 +1975,7 @@
 	</event>
 
 	<event name="FM_BOSS_LANIUS1_DESTROYED">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate a burning, beating heart made of scrapmetal. It gives off an unnatural amount of heat.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -2033,7 +2033,7 @@
 	</event>
 
 	<event name="FM_BOSS_LANIUS1_DESTROYED2">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate a burning, beating heart made of scrapmetal. It gives off an unnatural amount of heat.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -2156,7 +2156,7 @@
 
 
 	<event name="FM_BOSS_KES1_SHIP_DESTROYED">
-		<playMusic></playMusic>
+		<playMusic/>
 		<status type="clear" target="player" system="teleporter" amount="100"/>
 		<status type="clear" target="player" system="weapons" amount="100"/>
 		<status type="clear" target="player" system="drones" amount="100"/>
@@ -2218,7 +2218,7 @@
 	</event>
 
 	<event name="FM_BOSS_KES1_SHIP_DESTROYED2">
-		<playMusic></playMusic>
+		<playMusic/>
 		<status type="clear" target="player" system="teleporter" amount="100"/>
 		<status type="clear" target="player" system="weapons" amount="100"/>
 		<status type="clear" target="player" system="drones" amount="100"/>
@@ -2315,7 +2315,7 @@
 	</event>
 
 	<event name="FM_BOSS_FED1_DESTROYED">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears a explosive replicator infused with a long forgotten technology.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -2373,7 +2373,7 @@
 	</event>
 
 	<event name="FM_BOSS_FED1_DESTROYED2">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears a explosive replicator infused with a long forgotten technology.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -2461,7 +2461,7 @@
 	</event>
 
 	<event name="FM_BOSS_ORCHID1_DESTROYED">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. A hidden escape pod is released from the destroyed vessel, you retreive it and bring it aboard. Four Orchids step out, and tell you that they always hated the Captain's jokes, and want to join your crew. They are quadruplets, and their parents gave them all the same name because they were sadistic parents, apparently.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -2478,7 +2478,7 @@
 	</event>
 
 	<event name="FM_BOSS_ORCHID1_DESTROYED2">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. A hidden escape pod is released from the defeated vessel, you retreive it and bring it aboard. Four Orchids step out, and tell you that they always hated the Captain's jokes, and want to join your crew. They are quadruplets, and their parents gave them all the same name because they were sadistic parents, apparently.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -2527,7 +2527,7 @@
 	</event>
 
 	<event name="FM_BOSS_CRYSTAL1_SHIP_DESTROYED">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You find a switch in the remains of the vessel that is still working, and allows you to replicate a unique crystalline shell for your ship's hull.
 			[NOTE: You cannot internalize this augment]
 		</text>
@@ -2546,7 +2546,7 @@
 	</event>
 
 	<event name="FM_BOSS_CRYSTAL1_SHIP_DESTROYED2">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You find a switch in the remains of the vessel that is still working, and allows you to replicate a unique crystalline shell for your ship's hull.
 			[NOTE: You cannot internalize this augment]
 		</text>
@@ -2604,7 +2604,7 @@
 	</event>
 
 	<event name="FM_BOSS_TUCO1_DESTROYED">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You find what remains of an old gift box. Inside is a golden figure, with an otherworldly aura.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -2663,7 +2663,7 @@
 	</event>
 
 	<event name="FM_BOSS_TUCO1_DESTROYED2">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate a strange pheromone sack with an otherworldly glow.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -2771,7 +2771,7 @@
 	</event>
 
 	<event name="FM_BOSS_LEECH1_DESTROYED">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears to be a small transmitter, with "J E X" written on it.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -2830,7 +2830,7 @@
 	</event>
 
 	<event name="FM_BOSS_LEECH1_DESTROYED2">
-		<playMusic></playMusic>
+		<playMusic/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears to be a small transmitter, with "J E X" written on it.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
@@ -2920,7 +2920,7 @@
 	</event>
 
 	<event name="FM_BOSS_CLAN1_SHIP_DESTROYED_NO_CORDS">
-		<playMusic></playMusic>
+		<playMusic/>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears to be a chemical replication lab that goes beyond modern science, labelled "Ambrosia". It gives off an otherworldly aura.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
@@ -2956,7 +2956,7 @@
 	</event>
 
 	<event name="FM_BOSS_CLAN1_SHIP_DESTROYED2_NO_CORDS">
-		<playMusic></playMusic>
+		<playMusic/>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears to be a chemical replication lab that goes beyond modern science, labelled "Ambrosia". It gives off an otherworldly aura.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
@@ -3028,7 +3028,7 @@
 	</event>
 
 	<event name="FM_BOSS_DUSK1_SHIP_DESTROYED_NO_CORDS">
-		<playMusic></playMusic>
+		<playMusic/>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears to be a set of strange looking vests, labelled "World Record". They give off an otherworldly aura.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
@@ -3062,7 +3062,7 @@
 	</event>
 
 	<event name="FM_BOSS_DUSK1_SHIP_DESTROYED2_NO_CORDS">
-		<playMusic></playMusic>
+		<playMusic/>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears to be a set of strange looking vests, labelled "World Record". They give off an otherworldly aura.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
@@ -3119,7 +3119,7 @@
 	</event>
 
 	<event name="FM_BOSS_ENGI1_DESTROYED_NO_CORDS">
-		<playMusic></playMusic>
+		<playMusic/>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears a strange-looking drone booster labelled "Kai".</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
@@ -3153,7 +3153,7 @@
 	</event>
 
 	<event name="FM_BOSS_ENGI1_DESTROYED2_NO_CORDS">
-		<playMusic></playMusic>
+		<playMusic/>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears a strange-looking drone booster labelled "Kai".</text>
 		<item_modify>

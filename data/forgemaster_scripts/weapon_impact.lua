@@ -54,23 +54,20 @@ hitEveryRoom.FM_TERMINUS = "FM_TERMINUS_STATBOOST"
 --SPECIAL CASES:
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT,
 function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
-  local doThing = nil
-  pcall(function() doThing = Hyperspace.Get_Projectile_Extend(Projectile).name == "FM_ABDUCT_LASER" end)
-  if doThing then
+  if Projectile and Projectile.extend.name == "FM_ABDUCT_LASER" then
     local targetRoomNumber = Hyperspace.ShipGraph.GetShipInfo(ShipManager.iShipId):GetSelectedRoom(Location.x, Location.y, true)
   
-
     local playTeleportSound = false
     for crew in vter(ShipManager.vCrewList) do
       if crew.iShipId == ShipManager.iShipId and crew.iRoomId == targetRoomNumber then --Only abducts enemy crew
         local arrivalRoomNumber = Hyperspace.random32() % Hyperspace.ShipGraph.GetShipInfo(Projectile.ownerId):RoomCount()
-        Hyperspace.Get_CrewMember_Extend(crew):InitiateTeleport(Projectile.ownerId, arrivalRoomNumber)
+        crew.extend:InitiateTeleport(Projectile.ownerId, arrivalRoomNumber)
         playTeleportSound = true
       end
     end
   
     if playTeleportSound then
-      Hyperspace.Global.GetInstance():GetSoundControl():PlaySoundMix("teleport",-1,false)
+      Hyperspace.Sounds:PlaySoundMix("teleport",-1,false)
     end
   end
   return Defines.Chain.CONTINUE

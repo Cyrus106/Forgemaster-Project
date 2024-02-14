@@ -68,23 +68,23 @@ local system_callbacks = {
       local sys = nil
       pcall(function() 
         if type(self.name) == 'string' then  
-          sys = Hyperspace.Global.GetInstance():GetShipManager(i)[self.name]
+          sys = Hyperspace.ships(i)[self.name]
         else 
-          sys = Hyperspace.Global.GetInstance():GetShipManager(i):GetSystem(self.name)
+          sys = Hyperspace.ships(i):GetSystem(self.name)
         end
       end)
       if sys then
         if sys.iLockCount == -1 then --if the system is locked
           if not self.just_on[i] then-- if the system is locked and was not activated last frame, meaning it was just turned on
-            Defines.SystemEvents.ON_ACTIVATE(Hyperspace.Global.GetInstance():GetShipManager(i), sys)
+            Defines.SystemEvents.ON_ACTIVATE(Hyperspace.ships(i), sys)
           end
           self.just_on[i] = true
           if not Hyperspace.Global.GetInstance():GetCApp().world.space.gamePaused then
-            Defines.SystemEvents.ON_RUN(Hyperspace.Global.GetInstance():GetShipManager(i), sys)
+            Defines.SystemEvents.ON_RUN(Hyperspace.ships(i), sys)
           end
         elseif self.just_on[i] then --if the system was locked (meaning activated) last frame and is no longer locked
           self.just_on[i] = false
-          Defines.SystemEvents.ON_SHUTDOWN(Hyperspace.Global.GetInstance():GetShipManager(i), sys)
+          Defines.SystemEvents.ON_SHUTDOWN(Hyperspace.ships(i), sys)
         end
       end
     end
@@ -131,7 +131,7 @@ script.on_internal_event(Defines.InternalEvents.ON_TICK,
 function()
   for i = 0, 1 do
     local weapons = nil
-    local ship = Hyperspace.Global.GetInstance():GetShipManager(i)
+    local ship = Hyperspace.ships(i)
     pcall(function() weapons = ship.weaponSystem.weapons end)
     if weapons and ship.weaponSystem:Powered() then 
       for weapon in vter(weapons) do
@@ -153,7 +153,7 @@ script.on_internal_event(Defines.InternalEvents.ON_TICK,
 function()
   for i = 0, 1 do
     local artilleries = nil
-    local ship = Hyperspace.Global.GetInstance():GetShipManager(i)
+    local ship = Hyperspace.ships(i)
     pcall(function() artilleries = ship.artillerySystems end)
     if artilleries then 
       for artillery in vter(artilleries) do

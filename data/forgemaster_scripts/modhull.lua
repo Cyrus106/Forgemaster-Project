@@ -112,7 +112,7 @@ end)
 script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE,
 function(projectile, weapon)
   if weapon:HasAugmentation("FM_MODULAR_HULL_WEAPON_IGNITE") > 0 and not weapon.isArtillery then
-    local ship = Hyperspace.Global.GetInstance():GetShipManager(projectile:GetOwnerId())
+    local ship = Hyperspace.ships(projectile:GetOwnerId())
     ship:StartFire(ship:GetSystem(3).roomId)
   end
 end)
