@@ -33,7 +33,10 @@
 			</req>
 		</req>
 		<req name="FMCORE_CAN_CALL_CURA" type="all">
-			<name>CURA_TASK_CHECK</name>
+			<req>
+				<name>CURA_TASK_CHECK</name>
+				<name>CURA_TASK_AND_LIGHTSPEED</name>
+			</req>
 			<req lvl="0" max_lvl="0">
 				<name>fmcore_called_cura</name>
 			</req>
@@ -96,19 +99,19 @@
 			<function name="FIRE_EXTINGUISHERS" value="999" useForReqs="true" warning="false"/>
 			<statBoosts>
 				<statBoost name="allDamageTakenMultiplier">
-						<boostType>SET</boostType>
-						<amount>0</amount>
-						<shipTarget>CURRENT_SHIP</shipTarget>
-						<crewTarget>ORIGINAL_ALLIES</crewTarget>
-						<priority>999999</priority>
-					</statBoost>
-					<statBoost name="sabotageSpeedMultiplier">
-							<boostType>SET</boostType>
-							<amount>0</amount>
-							<shipTarget>CURRENT_SHIP</shipTarget>
-							<crewTarget>ALL</crewTarget>
-							<priority>999999</priority>
-						</statBoost>
+					<boostType>SET</boostType>
+					<amount>0</amount>
+					<shipTarget>CURRENT_SHIP</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+				<statBoost name="sabotageSpeedMultiplier">
+					<boostType>SET</boostType>
+					<amount>0</amount>
+					<shipTarget>CURRENT_SHIP</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
 			</statBoosts>
 		</aug>
 		<aug name="IMMUNE_2">
@@ -121,19 +124,19 @@
 			<function name="FIRE_EXTINGUISHERS" value="999" useForReqs="true" warning="false"/>
 			<statBoosts>
 				<statBoost name="allDamageTakenMultiplier">
-						<boostType>SET</boostType>
-						<amount>0</amount>
-						<shipTarget>CURRENT_SHIP</shipTarget>
-						<crewTarget>ORIGINAL_ALLIES</crewTarget>
-						<priority>999999</priority>
-					</statBoost>
-					<statBoost name="sabotageSpeedMultiplier">
-							<boostType>SET</boostType>
-							<amount>0</amount>
-							<shipTarget>CURRENT_SHIP</shipTarget>
-							<crewTarget>ALL</crewTarget>
-							<priority>999999</priority>
-						</statBoost>
+					<boostType>SET</boostType>
+					<amount>0</amount>
+					<shipTarget>CURRENT_SHIP</shipTarget>
+					<crewTarget>ORIGINAL_ALLIES</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+				<statBoost name="sabotageSpeedMultiplier">
+					<boostType>SET</boostType>
+					<amount>0</amount>
+					<shipTarget>CURRENT_SHIP</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
 			</statBoosts>
 		</aug>
 		<aug name="FAST_WEAPONS">

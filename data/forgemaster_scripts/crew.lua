@@ -50,7 +50,7 @@ end)
 
 --Generate table-like string containing all races to be filled in later
 local crewTab = {}
-local parent = RapidXML.xml_document("data/hyperspace.xml"):first_node("FTL"):first_node("crew")
+--local parent = RapidXML.xml_document("data/hyperspace.xml"):first_node("FTL"):first_node("crew")
 while parent do
 	local child = parent:first_node("race")
 	while child do

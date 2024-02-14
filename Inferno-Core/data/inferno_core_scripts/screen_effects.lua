@@ -71,8 +71,8 @@ do
 	function()
 		if shakeTimer < shakeDuration then
 			Graphics.CSurface.GL_PushMatrix() 
-			local randomX = Hyperspace.random32() / 2147483647 * 10 * shakeTimer 
-			local randomY = Hyperspace.random32() / 2147483647 * 10
+			local randomX = math.random() * 10 * shakeTimer 
+			local randomY = math.random() * 10
 			Graphics.CSurface.GL_Translate(randomX, randomY)
 		end
 	end, 

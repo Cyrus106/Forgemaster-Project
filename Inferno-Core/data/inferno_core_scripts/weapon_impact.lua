@@ -226,7 +226,7 @@ function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
   return Defines.Chain.CONTINUE, beamHitType
 end)
 
-do 
+do
     local AsteroidResist = false
     local ResistAugs = {ROCK_ARMOR = true, SYSTEM_CASING = true}
     script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA,
@@ -269,20 +269,19 @@ do
 
    
 
-  end
-  
-  script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION_PRE, 
-  function(ShipManager, Projectile, Damage, CollisionResponse)
-      --Chance is integer between 0 and 1.
-      local resChance = ShipManager:GetAugmentationValue("FMCORE_ASTEROID_RESIST_SHIELD") 
-      local rng = Hyperspace.random32() / 2147483647
-      if rng < resChance and Projectile:GetType() == 2 then
-         return Defines.Chain.PREEMPT
-      end    
-      return Defines.Chain.CONTINUE
-  end)
+end
 
-  
+script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION_PRE, 
+function(ShipManager, Projectile, Damage, CollisionResponse)
+    --Chance is integer between 0 and 1.
+    local resChance = ShipManager:GetAugmentationValue("FMCORE_ASTEROID_RESIST_SHIELD")
+    if math.random() < resChance and Projectile:GetType() == 2 then
+        return Defines.Chain.PREEMPT
+    end    
+    return Defines.Chain.CONTINUE
+end)
+
+
 local AcidWeapons = {}
 setmetatable(AcidWeapons, {__index = function(table, key) return 0 end})
 --Acid room effect
@@ -291,7 +290,7 @@ do
     --INIT ACID TABLES
     script.on_internal_event(Defines.InternalEvents.SHIP_LOOP,
     function(ShipManager)
-        if not ShipManager.table[UNIQUE_KEY] then 
+        if not ShipManager.table[UNIQUE_KEY] then
             ShipManager.table[UNIQUE_KEY] = true
             for room in vter(ShipManager.ship.vRoomList) do
                 room.table[UNIQUE_KEY] = {timer = 0}
@@ -300,10 +299,12 @@ do
     end, 2147483647)
     --INCREMENT TIMER
     script.on_internal_event(Defines.InternalEvents.SHIP_LOOP,
-    function(ShipManager)   
-        for room in vter(ShipManager.ship.vRoomList) do
-            local acidTable = room.table[UNIQUE_KEY]
-            acidTable.timer = math.max(acidTable.timer - Hyperspace.FPS.SpeedFactor / 16, 0)
+    function(ShipManager)
+        if ShipManager.table[UNIQUE_KEY] then
+            for room in vter(ShipManager.ship.vRoomList) do
+                local acidTable = room.table[UNIQUE_KEY]
+                acidTable.timer = math.max(acidTable.timer - Hyperspace.FPS.SpeedFactor / 16, 0)
+            end
         end
     end)
 
@@ -332,7 +333,7 @@ do
         return Defines.Chain.CONTINUE
     end)
 
-    
+
 
     --APPROPIATELY MODIFY DAMAGE
     local function AcidDamage(ShipManager, Location, Damage)
@@ -397,4 +398,7 @@ do
             end
         end
     end)
+end
+function SetAcidWeapon(weapon,time)
+    AcidWeapons[weapon] = time
 end

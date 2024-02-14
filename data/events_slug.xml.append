@@ -121,7 +121,7 @@
 	</mod:findName>
 	
 	<mod:findName type="event" name="DISTRESS_SLOCKNOG_INVESTIGATE">
-		<mod:findLike type="choice">
+		<mod:findLike type="choice" limit="1">
 			<mod:findLike type="event">
 				<mod-append:choice req="LIST_CREW_PLATED" hidden="true" blue="true">
 					<text>(Plated Crew) Tell your plated crew to fix his ship completely.</text>

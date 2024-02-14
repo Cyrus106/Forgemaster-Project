@@ -2,14 +2,14 @@
 	<event name="FMCORE_ATLAS_EQUIPMENT">
 		<text>Choose what you wish to do aboard the ship while in hyperspeed, you have several options.</text>
 		<choice hidden="true" req="FMCORE_CAN_USE_HS_AUG" blue="false">
-			<text>Use an augment.</text>
+			<text>Use a jumpspeed augment.</text>
 			<event>
 				<loadEvent>ATLAS_EQUIPMENT</loadEvent>
 				<variable name="fmcore_used_hs_aug" op="set" val="1"/>
 			</event>
 		</choice>
 		<choice hidden="true" req="fmcore_used_hs_aug" blue="false">
-			<text>You already used an augment.</text>
+			<text>You already used a jumpspeed augment.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice hidden="true" req="FMCORE_CAN_CALL_CURA" blue="false">

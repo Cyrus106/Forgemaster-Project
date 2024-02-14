@@ -15536,7 +15536,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="allDamageTakenMultiplier">
 					<boostType>MULT</boostType>
-					<amount>3</amount>
+					<amount>1.5</amount>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 
@@ -15544,7 +15544,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 				<statBoost name="damageTakenMultiplier">
 					<boostType>MULT</boostType>
-					<amount>0.16666</amount>
+					<amount>0.334</amount>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 					<droneTarget>CREW</droneTarget>

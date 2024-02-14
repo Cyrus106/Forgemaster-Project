@@ -132,6 +132,32 @@
 	<value>1</value><!--Shield Piercing-->
 	<stackable>true</stackable>
 </augBlueprint>
+<augBlueprint name="AUG_EVERYTHING_PIERCE">
+	<title>Literally Everything Phase Frequencies</title>
+	<desc>Grants all weapons +1 shield piercing.</desc>
+	<cost>80</cost>
+	<rarity>0</rarity>
+	<value>1</value><!--Shield Piercing-->
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="AUG_BEAM_PIERCE_DRONE">
+	<title>Beam Phase Frequencies</title>
+	<desc>Grants all beam drones +1 shield piercing.</desc>
+	<cost>80</cost>
+	<rarity>0</rarity>
+	<value>1</value><!--Shield Piercing-->
+	<stackable>true</stackable>
+</augBlueprint>
+<augBlueprint name="AUG_EVERYTHING_PIERCE_DRONE">
+	<title>Literally Everything Phase Frequencies</title>
+	<desc>Grants all drones +1 shield piercing.</desc>
+	<cost>80</cost>
+	<rarity>0</rarity>
+	<value>1</value><!--Shield Piercing-->
+	<stackable>true</stackable>
+</augBlueprint>
+
 
 <augBlueprint name="RADIUS_REDUCTION">
 	<title>Radius Reduction</title>

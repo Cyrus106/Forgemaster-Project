@@ -4546,7 +4546,7 @@
 		<breachChance>2</breachChance>
 		<cooldown>20</cooldown>
 		<speed>65</speed>
-		<power>4</power>
+		<power>5</power>
 		<cost>230</cost>
 		<fireTime>0.6</fireTime>
 		<bp>2</bp>
@@ -5442,7 +5442,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<speed>20</speed>
-		<accuracyMod>100</accuracyMod>
+		<accuracyMod>115</accuracyMod>
 		<cost>0</cost>
 		<rarity>0</rarity>
 		<image/>
@@ -5542,7 +5542,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<speed>20</speed>
-		<accuracyMod>100</accuracyMod>
+		<accuracyMod>115</accuracyMod>
 		<cost>0</cost>
 		<rarity>0</rarity>
 		<image/>
@@ -5797,7 +5797,7 @@
 			Stats:
 			Required Power: 3
 			Charge Time: 20 seconds
-			Accuracy Bonus +100%
+			Accuracy Bonus +115%
 
 			Base Hull Damage: 10
 			Total System Damage: 10
@@ -5814,7 +5814,7 @@
 		<tooltip>EXPLOSIONNNN</tooltip>
 		<tooltipOverride>Required Power: 3
 			Charge Time: 20 seconds
-			Accuracy Bonus +100%
+			Accuracy Bonus +115%
 
 			Base Hull Damage: 10
 			Total System Damage: 10
@@ -5835,7 +5835,7 @@
 		<power>3</power>
 		<cooldown>20</cooldown>
 		<sp>20</sp>
-		<accuracyMod>100</accuracyMod>
+		<accuracyMod>115</accuracyMod>
 		<cost>900</cost>
 		<breachChance>10</breachChance>
 		<shots>1</shots>
@@ -5947,7 +5947,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<speed>20</speed>
-		<accuracyMod>100</accuracyMod>
+		<accuracyMod>115</accuracyMod>
 		<roomStatBoosts>
 			<statBoost name="canRepair">
 				<boostType>SET</boostType>
@@ -7840,6 +7840,7 @@
 		<sp>11</sp>
 		<fireChance>0</fireChance>
 		<breachChance>7</breachChance>
+		<stun>3</stun>
 		<cooldown>18</cooldown>
 		<color>
 			<r>133</r>
@@ -14283,6 +14284,7 @@
 		<sp>11</sp>
 		<fireChance>0</fireChance>
 		<breachChance>7</breachChance>
+		<stun>3</stun>
 		<cooldown>18</cooldown>
 		<color>
 			<r>133</r>
@@ -16755,7 +16757,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<speed>999</speed>
-		<accuracyMod>100</accuracyMod>
+		<accuracyMod>115</accuracyMod>
 		<spawnCrew>
 			<race>phantom</race>
 			<number>1</number>
@@ -16793,7 +16795,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<speed>999</speed>
-		<accuracyMod>100</accuracyMod>
+		<accuracyMod>115</accuracyMod>
 		<spawnCrew>
 			<race>phantom_alpha</race>
 			<number>1</number>
@@ -16831,7 +16833,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<speed>999</speed>
-		<accuracyMod>100</accuracyMod>
+		<accuracyMod>115</accuracyMod>
 		<spawnCrew>
 			<race>phantom_goul</race>
 			<number>1</number>
@@ -16869,7 +16871,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<speed>999</speed>
-		<accuracyMod>100</accuracyMod>
+		<accuracyMod>115</accuracyMod>
 		<spawnCrew>
 			<race>phantom_goul_alpha</race>
 			<number>1</number>
@@ -16907,7 +16909,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<speed>999</speed>
-		<accuracyMod>100</accuracyMod>
+		<accuracyMod>115</accuracyMod>
 		<spawnCrew>
 			<race>phantom_mare</race>
 			<number>1</number>
@@ -16945,7 +16947,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<speed>999</speed>
-		<accuracyMod>100</accuracyMod>
+		<accuracyMod>115</accuracyMod>
 		<spawnCrew>
 			<race>phantom_mare_alpha</race>
 			<number>1</number>
@@ -16983,7 +16985,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<speed>999</speed>
-		<accuracyMod>100</accuracyMod>
+		<accuracyMod>115</accuracyMod>
 		<spawnCrew>
 			<race>phantom_wraith</race>
 			<number>1</number>
@@ -17021,7 +17023,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<speed>999</speed>
-		<accuracyMod>100</accuracyMod>
+		<accuracyMod>115</accuracyMod>
 		<spawnCrew>
 			<race>phantom_wraith_alpha</race>
 			<number>1</number>
@@ -17059,7 +17061,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<speed>999</speed>
-		<accuracyMod>100</accuracyMod>
+		<accuracyMod>115</accuracyMod>
 		<spawnCrew>
 			<race>unique_dessius</race>
 			<number>1</number>
@@ -17097,7 +17099,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<speed>999</speed>
-		<accuracyMod>100</accuracyMod>
+		<accuracyMod>115</accuracyMod>
 		<spawnCrew>
 			<race>gbeleanor</race>
 			<number>1</number>
@@ -17135,7 +17137,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<speed>999</speed>
-		<accuracyMod>100</accuracyMod>
+		<accuracyMod>115</accuracyMod>
 		<spawnCrew>
 			<race>gbgozer</race>
 			<number>1</number>
@@ -17173,7 +17175,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<speed>999</speed>
-		<accuracyMod>100</accuracyMod>
+		<accuracyMod>115</accuracyMod>
 		<spawnCrew>
 			<race>gbpsych</race>
 			<number>1</number>
@@ -17211,7 +17213,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<speed>999</speed>
-		<accuracyMod>100</accuracyMod>
+		<accuracyMod>115</accuracyMod>
 		<spawnCrew>
 			<race>gbscoleri</race>
 			<number>1</number>
@@ -17249,7 +17251,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<speed>999</speed>
-		<accuracyMod>100</accuracyMod>
+		<accuracyMod>115</accuracyMod>
 		<spawnCrew>
 			<race>gbslimer</race>
 			<number>1</number>
@@ -17287,7 +17289,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<speed>999</speed>
-		<accuracyMod>100</accuracyMod>
+		<accuracyMod>115</accuracyMod>
 		<spawnCrew>
 			<race>gbvinz</race>
 			<number>1</number>
@@ -17325,7 +17327,7 @@
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<speed>999</speed>
-		<accuracyMod>100</accuracyMod>
+		<accuracyMod>115</accuracyMod>
 		<spawnCrew>
 			<race>gbzuul</race>
 			<number>1</number>
@@ -18900,8 +18902,8 @@
 		<stackable>true</stackable>
 	</augBlueprint>
 
-	<augBlueprint name="FM_MODULAR_HULL_FASTSHIELD">
-		<title>Infinitum Cyclo-Barrier</title>
+	<augBlueprint name="FM_MODULAR_HULL_FASTSHIELD"><!-- TODO: rework-->
+		<title>Infinitum Cyclo-Barrier</title><!-- -1sp for enemy, +50% recharge per unused bar, +20% chance to completly resist/delete a non-beam projectile, +10% per unused bar-->
 		<desc>+800% Shield recharge speed, shield limited to lvl 4 (2 bubble), but no shields manning</desc>
 		<cost>80</cost>
 		<rarity>0</rarity>
@@ -18918,9 +18920,9 @@
 		<stackable>true</stackable>
 	</augBlueprint>
 
-	<augBlueprint name="FM_MODULAR_HULL_CREWKILL">
+	<augBlueprint name="FM_MODULAR_HULL_CREWKILL"><!--nerfed-->
 		<title>Metaplasmatic Corrosion Aura</title>
-		<desc>enemy crew takes tripple damage, but only 50% combat damage</desc>
+		<desc>enemy crew takes 1.5x damage, but only 50% combat damage</desc>
 		<cost>105</cost>
 		<rarity>0</rarity>
 		<stackable>true</stackable>
@@ -18949,16 +18951,14 @@
 		<rarity>0</rarity>
 		<stackable>true</stackable>
 	</augBlueprint>
-
-	<!--dirty fix to encased systems not stacking at all-->
-	<mod:findName type="augBlueprint" name="SYSTEM_CASING">
-		<mod:findLike type="stackable">
-			<mod:setValue>true</mod:setValue>
-		</mod:findLike>
-	</mod:findName>
-
-
-
+	
+	<augBlueprint name="FM_MODULAR_HULL_OFFENSE_SCRAMBLE">
+		<title>Offense scrambler</title>
+		<desc>-40% reload speed to enemy, +10s cloaking cd, +15s hacking cd</desc>
+		<cost>100</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
 </FTL>
 
 
@@ -18966,6 +18966,22 @@
 <FTL>
 	<augBlueprint name="ANTIAUG_ROCK_ARMOR">
 		<title>Anti-Rock Armor</title>
+		<desc>-</desc>
+		<cost>100</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+	
+	<augBlueprint name="ANTIAUG_AUTO_COOLDOWN">
+		<title>Anti-Auto Reloader</title>
+		<desc>-</desc>
+		<cost>100</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+	
+	<augBlueprint name="ANTIAUG_SHIELD_RECHARGE">
+		<title>Anti-Shield booster</title>
 		<desc>-</desc>
 		<cost>100</cost>
 		<rarity>0</rarity>
@@ -18988,6 +19004,22 @@
 	</augBlueprint>
 	<augBlueprint name="ANTIAUG_FMCORE_NO_BREACH">
 		<title>Anti-Breach Repellent</title>
+		<desc>-</desc>
+		<cost>100</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+	
+	<augBlueprint name="ANTIAUG_FAST_CLOAK">
+		<title>Anti-Cloak Accelerator</title>
+		<desc>-</desc>
+		<cost>100</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+	
+	<augBlueprint name="ANTIAUG_FAST_HACK">
+		<title>Anti-Hacking Accelerator</title>
 		<desc>-</desc>
 		<cost>100</cost>
 		<rarity>0</rarity>

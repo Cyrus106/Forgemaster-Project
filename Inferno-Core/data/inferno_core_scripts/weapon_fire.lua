@@ -13,6 +13,7 @@ end)
 script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE,
 function(projectile, weapon)
   local beam_pierce_modifier = weapon:GetAugmentationValue("AUG_BEAM_PIERCE")
+  local pierce_modifier = weapon:GetAugmentationValue("AUG_EVERYTHING_PIERCE")
   if projectile:GetType() == 5 then
     --conditional fix for weapons with negative damage and nonnegative shield piercing
     if projectile.damage.iShieldPiercing >= 0 then
@@ -20,11 +21,26 @@ function(projectile, weapon)
     end
     projectile.damage.iShieldPiercing = projectile.damage.iShieldPiercing + beam_pierce_modifier
   end
+  projectile.damage.iShieldPiercing = projectile.damage.iShieldPiercing + pierce_modifier
+end)
+
+script.on_internal_event(Defines.InternalEvents.DRONE_FIRE, function(projectile, drone)
+  local ownerShip = Hyperspace.Global.GetInstance():GetShipManager(drone:GetOwnerId())
+  local beam_pierce_modifier = ownerShip:GetAugmentationValue("AUG_BEAM_PIERCE_DRONE")
+  local pierce_modifier = ownerShip:GetAugmentationValue("AUG_EVERYTHING_PIERCE_DRONE")
+  if projectile:GetType() == 5 then
+    --conditional fix for weapons with negative damage and nonnegative shield piercing
+    if projectile.damage.iShieldPiercing >= 0 then
+      projectile.damage.iShieldPiercing = math.max(projectile.damage.iShieldPiercing, 1 - projectile.damage.iDamage)
+    end
+    projectile.damage.iShieldPiercing = projectile.damage.iShieldPiercing + beam_pierce_modifier
+  end
+  projectile.damage.iShieldPiercing = projectile.damage.iShieldPiercing + pierce_modifier
 end)
 
 local function GetRandomPoint(center, radius)
-  local radius = radius * (Hyperspace.random32() / 2147483647)
-  local angle = 2 * math.pi * (Hyperspace.random32() / 2147483647)
+  local radius = radius * math.random()
+  local angle = 2 * math.pi * math.random()
   local x = center.x + radius * math.cos(angle)
   local y = center.y + radius * math.sin(angle)
   return x, y

@@ -2,9 +2,9 @@
   <title><![CDATA[ INFERNO-CORE]]></title>
   <threadUrl><![CDATA[n/a]]></threadUrl>
   <author><![CDATA[ Kommandant_Julk and Vertaalfout]]></author>
-   <version><![CDATA[ 1.0 ]]></version>
+   <version><![CDATA[ 1.2 ]]></version>
   <description><![CDATA[
-Dependency mod for Forgemaster.
+Dependency mod for Forgemaster. (and Forgotten races!)
 Features:
 - allows performing multiple actions during sector jump (one augment AND Cura)
 - Cura quests aren't lost on reroutes
@@ -14,6 +14,7 @@ Features:
 - some framework stuff for Forgemaster
 - some system cooldown related augment implementations
 - overwrites room resist images and implements dynamic rendering system
+... and more stuff
 ]]>
   </description>
 </metadata>

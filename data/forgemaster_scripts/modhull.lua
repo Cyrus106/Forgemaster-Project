@@ -30,9 +30,8 @@ function()
   for i = 1, guaranteedDamage do
     Hyperspace.ships.player:DamageArea(Hyperspace.ships.player:GetRandomRoomCenter(), damage, true)
   end
-  local damageChance = math.floor((augValue % 1) * 100)
-  local randomNumber = Hyperspace.random32() % 100
-  if randomNumber < damageChance then
+  local damageChance = math.floor((augValue % 1))
+  if math.random() < damageChance then
     Hyperspace.ships.player:DamageArea(Hyperspace.ships.player:GetRandomRoomCenter(), damage, true)
   end
 end)
@@ -90,9 +89,9 @@ script.on_game_event("FM_CREWKILL_TRACKER_EVENT", false, function() selfArm:rede
 
 script.on_internal_event(Defines.InternalEvents.GET_AUGMENTATION_VALUE,
 function(ShipManager, AugName, AugValue)
-  
+
   if AugName == "AUTO_COOLDOWN" and ShipManager:GetAugmentationValue("FM_MODULAR_HULL_FASTWEAPON") > 0 then
-    local emptyWeaponBars = ShipManager:GetSystemPowerMax(3) - ShipManager:GetSystemPower(3) - math.max(GetLimitAmount(ShipManager:GetSystem(3)),ShipManager:GetSystemPowerMax(3) - ShipManager:GetSystem(3).healthState.first) 
+    local emptyWeaponBars = ShipManager:GetSystemPowerMax(3) - ShipManager:GetSystemPower(3) - math.max(GetLimitAmount(ShipManager:GetSystem(3)),ShipManager:GetSystemPowerMax(3) - ShipManager:GetSystem(3).healthState.first)
     local cooldownModifier = (emptyWeaponBars * ShipManager:GetAugmentationValue("FM_MODULAR_HULL_FASTWEAPON")) --maybe i will later make it stackable
     AugValue = AugValue + cooldownModifier
   end
