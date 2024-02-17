@@ -144,6 +144,35 @@ function(ShipManager, Projectile, Damage, CollisionResponse)
   return Defines.Chain.CONTINUE
 end)
 
+local calculateCrits = function(ShipManager,Damage)
+  local extraNotches = ShipManager:GetAugmentationValue("FM_MODULAR_UPGRADE_EXTRANOTCHES") 
+  local critRate = 0.02*(ShipManager:HasEquipment("FM_HULL_UPGRADE_POINTS") - (15 + extraNotches))
+  local extraRecursions = ShipManager:HasEquipment("FM_HULL_CAPSTONES")-3
+  for i=0,extraRecursions do
+    if critRate<math.random() then
+      Damage.iDamage=Damage.iDamage*2
+      Damage.iIonDamage=Damage.iIonDamage*2
+      Damage.iSystemDamage=Damage.iSystemDamage*2
+    else
+      break
+    end
+  end
+end
+
+script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA,
+  function(ShipManager, Projectile, Location, Damage, forceHit, shipFriendlyFire)
+    calculateCrits(ShipManager,Damage)
+    return Defines.Chain.CONTINUE, forceHit, shipFriendlyFire
+  end, -1000)
+
+script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, 
+  function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
+    calculateCrits(ShipManager,Damage)
+    return Defines.Chain.CONTINUE, beamHitType
+  end, -1000)
+    
+    
+    
 --[[
 Must expose:
 

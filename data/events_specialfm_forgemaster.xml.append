@@ -6765,6 +6765,46 @@
 				<loadEvent>FM_MODULAR_HULL_MODULES_INSTALLED</loadEvent>
 			</event>
 		</choice>
+		<choice req="FM_CAPPED_HULL">
+			<text>I want more!</text>
+			<event>
+				<text>Alastair is taken aback by your request, "are you sure lad, i cannot garuantee your safety if we i install more modules for you..."
+					(your ship will be set on fire/breached with extra breaches when you take damage and there is a low chance for incoming damage to get multiplied(bigger multiplier with each extra capstone))</text>
+				<choice>
+					<text>pretty please?</text>
+					<event>
+						<text>Alastair sighs, "alright, just don't say i didn't warn ya"</text>
+						<metaVariable name="fm_infinite_upgradepoints" op="set" val="1"/>
+						<choice>
+							<text>Continue...</text>
+							<event>
+								<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+							</event>
+						</choice>
+					</event>
+				</choice>
+				<choice>
+					<text>Nevermind...</text>
+					<event>
+						<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice req="fm_infinite_upgradepoints" blue="false">
+			<text>I am fine with safe limits</text>
+			<event>
+				<text>"thank you for choosing safety, lad."</text>
+				<metaVariable name="fm_infinite_upgradepoints" op="set" val="0"/>
+				<choice>
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+					</event>
+				</choice>
+			</event>
+		</choice>
+				
 		<choice req="pilot" lvl="1" max_group="9" blue="false">
 			<text>Nevermind.</text>
 			<event>
@@ -8929,7 +8969,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_CREWKILL" lvl="0" max_lvl="0" blue="false">
-			<text>Metaplasmatic Corrosion Aura Capstone [105~]</text>
+			<text>Metaplasmatic Corrosion Aura Capstone [105~](nerfed.)</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_CREWKILL</loadEvent>
 			</event>
@@ -9345,7 +9385,7 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_CAPSTONE_OFFENSE_SCRAMBLE">
-		<text>Install the Offense Scrambler? [-20% reload speed to enemy, -20% shield recharge, +5s cloaking cd, +10s hacking cd]</text>
+		<text>Install the Offense Scrambler? [-20% reload speed to enemy, -30% shield recharge]</text><!--, +5s cloaking cd, +10s hacking cd-->
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Install the Offense Scrambler.</text>
 			<event>
@@ -9458,7 +9498,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_OFFENSE_SCRAMBLE" blue="false" hidden="true">
-			<text>Offense Scrambler[-20% reload speed to enemy, -20% shield recharge, +5s cloaking cd, +10s hacking cd]</text>
+			<text>Offense Scrambler[-20% reload speed to enemy, -30% shield recharge]</text><!--, +5s cloaking cd, +10s hacking cd-->
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_DEFENSE_SCRAMBLE" blue="false" hidden="true">

@@ -15435,9 +15435,9 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 		<aug name="FM_MODULAR_HULL_OFFENSE_SCRAMBLE">
 			<function name="ANTIAUG_AUTO_COOLDOWN" value="0.2"/>
-			<function name="SHIELD_RECHARGE" value="-0.2"/>
-			<function name="FAST_CLOAK" value="-1"/>
-			<function name="FAST_HACK" value="-2"/>
+			<function name="SHIELD_RECHARGE" value="-0.3"/>
+			<!--<function name="FAST_CLOAK" value="-1"/>-->
+			<!--<function name="FAST_HACK" value="-2"/>-->
 		</aug>
 		<aug name="FM_MODULAR_HULL_DEFENSE_SCRAMBLE">
 			<function name="ANTIAUG_SHIELD_RECHARGE" value="0.2"/>
@@ -15575,6 +15575,14 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
     		<name>FM_MODULAR_HULL_WEAPON_IGNITE</name>
 			<name>FM_MODULAR_HULL_OFFENSE_SCRAMBLE</name>
 			<name>FM_MODULAR_HULL_DEFENSE_SCRAMBLE</name>
+		</req>
+		<req name="FM_CAPPED_HULL" type="all">
+			<req lvl="3">
+				<name>FM_HULL_CAPSTONES</name>
+			</req>
+			<req lvl="0" max_lvl="0">
+				<name>fm_infinite_upgradepoints</name>
+			</req>
 		</req>
 		<req name="OVERCHARMED_RELOADING" type="sum">
 			<req type="sum" const="-15">
@@ -15783,6 +15791,33 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			  </req>
 			  <name>fm_infinite_upgradepoints</name>
 			</req>
+			<req type="all"><!--XIV-->
+				<req max_lvl="69">
+				 	<name>fm_hull_upgrade_points</name>
+				</req>
+				<req lvl="13" max_lvl="13">
+				  	<name>FM_HULL_CAPSTONES</name>
+				</req>
+				<name>fm_infinite_upgradepoints</name>
+			</req>
+			<req type="all"><!--XV-->
+				<req max_lvl="74">
+				 	<name>fm_hull_upgrade_points</name>
+				</req>
+				<req lvl="14" max_lvl="14">
+				 	 <name>FM_HULL_CAPSTONES</name>
+				</req>
+				<name>fm_infinite_upgradepoints</name>
+			</req>
+			<req type="all"><!--XVI-->
+				<req max_lvl="79">
+				 	<name>fm_hull_upgrade_points</name>
+				</req>
+				<req lvl="15" max_lvl="15">
+				 	 <name>FM_HULL_CAPSTONES</name>
+				</req>
+				<name>fm_infinite_upgradepoints</name>
+			</req>
 		</req>
 		<req name="CAN_INSTALL_CAPSTONE">
 			<req type="all"><!--pre-first capstone-->
@@ -15868,12 +15903,52 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			  </req>
 			</req>
 			<req type="all"><!--XI-->
-			  <req lvl="55">
-			    <name>fm_hull_upgrade_points</name>
-			  </req>
-			  <req lvl="10" max_lvl="10">
-			    <name>FM_HULL_CAPSTONES</name>
-			  </req>
+				<req lvl="55">
+					<name>fm_hull_upgrade_points</name>
+				</req>
+				<req lvl="10" max_lvl="10">
+					<name>FM_HULL_CAPSTONES</name>
+				</req>
+			</req>
+			<req type="all"><!--XII-->
+				<req lvl="60">
+					<name>fm_hull_upgrade_points</name>
+				</req>
+				<req lvl="11" max_lvl="11">
+					<name>FM_HULL_CAPSTONES</name>
+				</req>
+			</req>
+			<req type="all"><!--XII-->
+				<req lvl="65">
+					<name>fm_hull_upgrade_points</name>
+				</req>
+				<req lvl="12" max_lvl="12">
+					<name>FM_HULL_CAPSTONES</name>
+				</req>
+			</req>
+			<req type="all"><!--XIII-->
+				<req lvl="70">
+					<name>fm_hull_upgrade_points</name>
+				</req>
+				<req lvl="13" max_lvl="13">
+					<name>FM_HULL_CAPSTONES</name>
+				</req>
+			</req>
+			<req type="all"><!--XIV-->
+				<req lvl="75">
+					<name>fm_hull_upgrade_points</name>
+				</req>
+				<req lvl="14" max_lvl="14">
+					<name>FM_HULL_CAPSTONES</name>
+				</req>
+			</req>
+			<req type="all"><!--XV-->
+				<req lvl="80">
+					<name>fm_hull_upgrade_points</name>
+				</req>
+				<req lvl="15" max_lvl="15">
+					<name>FM_HULL_CAPSTONES</name>
+				</req>
 			</req>
 		</req>
 
