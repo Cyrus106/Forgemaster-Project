@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mod:findName type="event" name="NEBULA_NEW_PLANET">
+	<mod-append:choice hidden="true" req="FM_BEAM_MINING_2" >
+		<text>(Ishimura Beam) Nobody will miss one lousy planet. Get to planet cracking.</text>
+		<event>
+			<text>Diverting the majority of your ship's power to the Ishimura beam, you begin cracking open the planet, revealing parts of its surface and numerous valuable resources. Congratulations, you just caused the extinction of several thousand species as you tore a large chunk out of the planet.</text>
+			<changeBackground>FM_MOON_BOOM</changeBackground>
+			<img planet="PLANET_INVISIBLE"/>
+			<modifyPursuit amount="2"/>
+			<item_modify>
+				<item type="scrap" min="95" max="170"/>
+				<item type="fuel" min="3" max="9"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="MORALITY_UPDATE_FORGEMASTER_GENERAL"/>
+			</choice>
+		</event>
+	</mod-append:choice>
+</mod:findName>

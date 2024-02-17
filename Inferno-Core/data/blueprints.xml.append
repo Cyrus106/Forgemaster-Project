@@ -38,6 +38,26 @@
 	<stackable>true</stackable>
 </augBlueprint>
 
+<augBlueprint name="FAST_TELEPORT"><!--kinda redundant but eh-->
+	<title>Teleporter Accelerator</title>
+	<desc>Reduces the cooldown of the Teleporter System by 5 seconds.</desc>
+	<cost>45</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<value>1</value><!--One cycle of ion-->
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="FAST_BATTERY"><!--kinda redundant but eh-->
+	<title>Battery Accelerator</title>
+	<desc>Reduces the cooldown of the Temporal System by 5 seconds.</desc>
+	<cost>45</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<value>1</value><!--One cycle of ion-->
+	<stackable>true</stackable>
+</augBlueprint>
+
 <augBlueprint name="LONG_MIND">
 	<title>Mind Control Lengthener</title>
 	<desc>Doubles the length of the Mind Control System's uptime.</desc>
@@ -51,6 +71,15 @@
 <augBlueprint name="LONG_HACK">
 	<title>Hacking Lengthener</title>
 	<desc>Doubles the length of the Hacking System's uptime.</desc>
+	<cost>45</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<value>1</value><!--Doubles the effect duration-->
+	<stackable>true</stackable>
+</augBlueprint>
+<augBlueprint name="LONG_BATTERY">
+	<title>Battery Lengthener</title>
+	<desc>Doubles the length of the Battery System's uptime.</desc>
 	<cost>45</cost>
 	<bp>4</bp>
 	<rarity>0</rarity>
@@ -171,6 +200,17 @@
 <augBlueprint name="FIRE_IMMUNITY">
 	<title>Fire Immunity</title>
 	<desc>Systems don't take fire damage.</desc>
+	<cost>45</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<value>1</value>
+	<stackable>true</stackable>
+</augBlueprint>
+
+
+<augBlueprint name="DEIONIZATION_BOOST">
+	<title>Deipnization Booster</title>
+	<desc>Ion damage is removed faster.</desc>
 	<cost>45</cost>
 	<bp>4</bp>
 	<rarity>0</rarity>

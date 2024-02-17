@@ -1,21 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-
-
-<img x="-111" y="-78" w="710" h="401" />
+<img x="-84" y="-50" w="657" h="345" />
 <offsets>
-	<floor x="105" y="72" />
-	<cloak x="-10" y="-10" />
+	<floor x="78" y="44" />
+	<cloak x="-25" y="-25" />
 </offsets>
 <weaponMounts>
-	<mount x="576" y="105" rotate="true" mirror="true" gib="3" slide="up" />
-	<mount x="576" y="296" rotate="true" mirror="false" gib="3" slide="down" />
-	<mount x="188" y="365" rotate="true" mirror="false" gib="5" slide="down" />
-	<mount x="188" y="36" rotate="true" mirror="true" gib="4" slide="up" />
-	<mount x="676" y="220" rotate="true" mirror="true" gib="3" slide="no" />
+	<mount x="138" y="9" rotate="true" mirror="true" gib="3" slide="up" />
+	<mount x="138" y="336" rotate="true" mirror="false" gib="3" slide="down" />
+	<mount x="544" y="78" rotate="true" mirror="true" gib="5" slide="up" />
+	<mount x="544" y="267" rotate="true" mirror="false" gib="4" slide="down" />
+	<mount x="609" y="173" rotate="true" mirror="true" gib="3" slide="no" />
 </weaponMounts>
-<explosion><gib1><velocity min="0.11221690038256908" max="0.37405633460856363" /><direction min="262" max="278" /><angular min="-1.1572233190105679" max="1.1572233190105679" /><x>306</x><y>123</y></gib1><gib2><velocity min="0.1" max="0.1" /><direction min="77" max="93" /><angular min="-0.6561866192545766" max="0.6561866192545766" /><x>159</x><y>115</y></gib2><gib3><velocity min="0.3495675941584429" max="1.1652253138614763" /><direction min="262" max="278" /><angular min="-1.0031559873156488" max="1.0031559873156488" /><x>470</x><y>104</y></gib3><gib4><velocity min="0.2685157919126842" max="0.8950526397089473" /><direction min="60" max="76" /><angular min="-0.8058590433059722" max="0.8058590433059722" /><x>27</x><y>28</y></gib4><gib5><velocity min="0.2795014851892637" max="0.9316716172975458" /><direction min="104" max="120" /><angular min="-0.8395694666779004" max="0.8395694666779004" /><x>27</x><y>187</y></gib5></explosion>
 <thrusters sync="true">
-    <thruster x="18" y="44">mup_fed_thruster</thruster>
-    <thruster x="18" y="285">mup_fed_thruster</thruster>
+	<thruster x="-16" y="19">mup_federation_thruster_trio</thruster>
+	<thruster x="87" y="141">mup_federation_thruster_small</thruster>
+	<thruster x="87" y="181">mup_federation_thruster_small</thruster>
+	<thruster x="-16" y="261">mup_federation_thruster_trio</thruster>
 </thrusters>
+<explosion><gib1><velocity min="0.11221690038256908" max="0.37405633460856363" /><direction min="262" max="278" /><angular min="-1.1572233190105679" max="1.1572233190105679" /><x>306</x><y>123</y></gib1><gib2><velocity min="0.1" max="0.1" /><direction min="77" max="93" /><angular min="-0.6561866192545766" max="0.6561866192545766" /><x>159</x><y>115</y></gib2><gib3><velocity min="0.3495675941584429" max="1.1652253138614763" /><direction min="262" max="278" /><angular min="-1.0031559873156488" max="1.0031559873156488" /><x>470</x><y>104</y></gib3><gib4><velocity min="0.2685157919126842" max="0.8950526397089473" /><direction min="60" max="76" /><angular min="-0.8058590433059722" max="0.8058590433059722" /><x>27</x><y>28</y></gib4><gib5><velocity min="0.2795014851892637" max="0.9316716172975458" /><direction min="104" max="120" /><angular min="-0.8395694666779004" max="0.8395694666779004" /><x>27</x><y>187</y></gib5></explosion>

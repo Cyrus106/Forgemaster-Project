@@ -4,7 +4,7 @@ mods.Forgemaster = {}
 FORGEMASTER_INFO = {
   VERSION = {
     MAJOR = 0,
-    MINOR = 5,
+    MINOR = 6,
     FEATURE = 0,
   },
 }

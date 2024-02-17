@@ -101,7 +101,7 @@ local system_callbacks = {
   end,
 }
 
-
+system_callbacks:new('teleportSystem')
 system_callbacks:new('cloakSystem')
 system_callbacks:new('batterySystem')
 system_callbacks:new('mindSystem')

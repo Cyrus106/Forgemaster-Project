@@ -8612,7 +8612,7 @@
 		</spawnCrew>-->
 	</weaponBlueprint>
 
-	<weaponBlueprint name="FM_FOCUS_ADAPT">
+	<weaponBlueprint name="FM_FOCUS_ADAPT"><!--potentially give 3 -2s chains to keep up better with Cinquedea-->
 		<type>BEAM</type>
 		<tip>tip_adapter</tip>
 		<title>'Omiyari' Pinpoint</title>
@@ -11162,7 +11162,7 @@
 	    <power>2</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
-	    <speed>25</speed>
+	    <speed>12</speed>
 	    <cost>150</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_amber_drone</droneImage>
@@ -11217,10 +11217,10 @@
 	    <title>Crystalline Combat Drone</title>
 	    <short>C. Comb. Drone</short>
 	    <desc>This drone packs a powerful arsenal, launching a spray of breaching crystals with every shot.</desc>
-	    <power>2</power>
+	    <power>3</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
-	    <speed>25</speed>
+	    <speed>5</speed>
 	    <cost>100</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_crystal_drone</droneImage>
@@ -11353,7 +11353,7 @@
 	    <power>2</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
-	    <speed>25</speed>
+	    <speed>15</speed>
 	    <cost>100</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_flamethrower_drone</droneImage>
@@ -11433,7 +11433,7 @@
 	    <power>2</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>10</dodge>
-	    <speed>25</speed>
+	    <speed>13</speed>
 	    <cost>100</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_forgeman_drone</droneImage>
@@ -11446,7 +11446,7 @@
 		<title>'Valefor' Beam</title>
 		<short>'Valefor' B.</short>
 		<desc>Superheats the air creating multiple explosions as it sweeps across the enemy ship! Explosions deal damage to all crew in the room as well. Explosions deal Hull, System, and Crew Damage.</desc>
-		<damage>2</damage>
+		<damage>1</damage>
 		<sp>0</sp>
 		<fireChance>0</fireChance>
 		<breachChance>2</breachChance>
@@ -11502,7 +11502,7 @@
 	    <power>4</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
-	    <speed>10</speed>
+	    <speed>3</speed>
 	    <cost>100</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_ishimura_drone</droneImage>
@@ -11540,20 +11540,20 @@
 
 
 	<droneBlueprint name="FM_KESTREL_DRONE">
-			<type>COMBAT</type>
-			<title>Kestrel Combat Drone</title>
-			<short>K. Comb. Drone</short>
-			<desc>In true gunship fashion, this drone fires a scatter of lasers at its target.</desc>
-			<power>2</power>
-			<cooldown>1000</cooldown>
-			<dodge>0</dodge>
-			<speed>15</speed>
-			<cost>200</cost>
-			<bp>3</bp>
-			<droneImage>fm_kestrel_drone</droneImage>
-			<weaponBlueprint>FM_KESTREL_DRONE_WEAPON</weaponBlueprint>
-			<rarity>0</rarity>
-			<iconImage>combat</iconImage>
+		<type>COMBAT</type>
+		<title>Kestrel Combat Drone</title>
+		<short>K. Comb. Drone</short>
+		<desc>In true gunship fashion, this drone fires a scatter of lasers at its target.</desc>
+		<power>3</power>
+		<cooldown>1000</cooldown>
+		<dodge>0</dodge>
+		<speed>10</speed>
+		<cost>200</cost>
+		<bp>3</bp>
+		<droneImage>fm_kestrel_drone</droneImage>
+		<weaponBlueprint>FM_KESTREL_DRONE_WEAPON</weaponBlueprint>
+		<rarity>0</rarity>
+		<iconImage>combat</iconImage>
 	</droneBlueprint>
 	<weaponBlueprint name="FM_KESTREL_DRONE_WEAPON">
 	    <type>BURST</type>
@@ -11564,14 +11564,14 @@
 	    <shots>1</shots>
 	    <accuracyMod>0</accuracyMod>
 	    <rarity>0</rarity>
-			<projectiles>
-				<projectile count="3" fake="false">laser_burst</projectile>
-			</projectiles>
+		<projectiles>
+			<projectile count="3" fake="false">laser_burst</projectile>
+		</projectiles>
 	    <sp>0</sp>
 	    <launchSounds>
-					<sound>lightLaser1</sound>
-					<sound>lightLaser2</sound>
-					<sound>lightLaser3</sound>
+			<sound>lightLaser1</sound>
+			<sound>lightLaser2</sound>
+			<sound>lightLaser3</sound>
 	    </launchSounds>
 	    <hitShipSounds>
 	        <sound>hitHull2</sound>
@@ -11600,7 +11600,7 @@
 	    <title>MFK Kestrel Kombat Drone</title>
 	    <short>MFK. Kes. Drone</short>
 	    <desc>This ship fires several light lasers at its target.</desc>
-	    <power>2</power>
+	    <power>3</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
 	    <speed>10</speed>
@@ -11628,18 +11628,18 @@
 		</projectiles>
 		<sp>0</sp>
 		<launchSounds>
-				<sound>lightLaser1</sound>
-				<sound>lightLaser2</sound>
-				<sound>lightLaser3</sound>
+			<sound>lightLaser1</sound>
+			<sound>lightLaser2</sound>
+			<sound>lightLaser3</sound>
 		</launchSounds>
 		<hitShipSounds>
-				<sound>hitHull2</sound>
-				<sound>hitHull3</sound>
+			<sound>hitHull2</sound>
+			<sound>hitHull3</sound>
 		</hitShipSounds>
 		<hitShieldSounds>
-				<sound>hitShield1</sound>
-				<sound>hitShield2</sound>
-				<sound>hitShield3</sound>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
 		</hitShieldSounds>
 		<missSounds>
 				<sound>miss</sound>
@@ -11683,19 +11683,19 @@
 		<rarity>0</rarity>
 		<sp>0</sp>
 		<spawnCrew>
-				<race>human_mfk</race>
-				<lifetime>10</lifetime>
-				<number>1</number>
-				<noSlot>true</noSlot>
-				<statBoosts>
-						<statBoost name="noClone">
-								<boostType>SET</boostType>
-								<value>true</value>
-								<shipTarget>ALL</shipTarget>
-								<crewTarget>ALL</crewTarget>
-								<priority>999999</priority>
-						</statBoost>
-				</statBoosts>
+			<race>human_mfk</race>
+			<lifetime>10</lifetime>
+			<number>1</number>
+			<noSlot>true</noSlot>
+			<statBoosts>
+				<statBoost name="noClone">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+			</statBoosts>
 		</spawnCrew>
 		<image>laser_burst</image>
 		<launchSounds>
@@ -11726,10 +11726,10 @@
 	    <title>Siren Combat Drone</title>
 	    <short>Siren Drone</short>
 	    <desc>This drone will rapidly ionize the enemy shields, and can potentially keep crew stunned forever.</desc>
-	    <power>2</power>
+	    <power>3</power>
 	    <cooldown>1000</cooldown>
 	    <dodge>0</dodge>
-	    <speed>25</speed>
+	    <speed>8</speed>
 	    <cost>100</cost>
 	    <bp>3</bp>
 	    <droneImage>fm_siren_drone</droneImage>
@@ -11743,7 +11743,7 @@
 	    <short>Stun Proj.</short>
 	    <desc>Stuns affected crew for a long time and does ion damage.</desc>
 	    <damage>0</damage>
-			<ion>1</ion>
+		<ion>1</ion>
 	    <shots>1</shots>
 	    <accuracyMod>0</accuracyMod>
 	    <rarity>0</rarity>
@@ -18902,12 +18902,12 @@
 		<stackable>true</stackable>
 	</augBlueprint>
 
-	<augBlueprint name="FM_MODULAR_HULL_FASTSHIELD"><!-- TODO: rework-->
+	<augBlueprint name="FM_MODULAR_HULL_FASTSHIELD"><!-- reworked, sp reduction not included-->
 		<title>Infinitum Cyclo-Barrier</title><!-- -1sp for enemy, +50% recharge per unused bar, +20% chance to completly resist/delete a non-beam projectile, +10% per unused bar-->
-		<desc>+800% Shield recharge speed, shield limited to lvl 4 (2 bubble), but no shields manning</desc>
+		<desc>-1sp for enemy, +50% recharge per unused bar, 1-0.8^(empty bars+1) chance to completly resist/delete a non-beam projectile(it scales with bars)</desc>
 		<cost>80</cost>
 		<rarity>0</rarity>
-		<value>1</value>
+		<value>0.5</value>
 		<stackable>true</stackable>
 	</augBlueprint>
 
@@ -18930,7 +18930,7 @@
 
 	<augBlueprint name="FM_MODULAR_HULL_MAGNETIC">
 		<title>Electromagnetic Hull Body</title>
-		<desc>+80% ion resist, +10% system resist, +10% scarp, magnet arm blue options, -3 reactor power</desc>
+		<desc>+30% ion resist, +50% deionzation speed, +10% system resist, +10% scarp, magnet arm blue options, -3 reactor power</desc>
 		<cost>100</cost>
 		<rarity>0</rarity>
 		<stackable>true</stackable>
@@ -18954,7 +18954,15 @@
 	
 	<augBlueprint name="FM_MODULAR_HULL_OFFENSE_SCRAMBLE">
 		<title>Offense scrambler</title>
-		<desc>-40% reload speed to enemy, +10s cloaking cd, +15s hacking cd</desc>
+		<desc>-20% reload speed to enemy, -20% shield recharge, +5s cloaking cd, +5s hacking cd</desc>
+		<cost>100</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+	
+	<augBlueprint name="FM_MODULAR_HULL_DEFENSE_SCRAMBLE">
+		<title>Defence scrambler</title>
+		<desc>-30% shield recharge to enemy, +5s enemy cloaking cd</desc>
 		<cost>100</cost>
 		<rarity>0</rarity>
 		<stackable>true</stackable>

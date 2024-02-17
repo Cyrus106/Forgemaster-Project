@@ -1,0 +1,2129 @@
+<FTL><!--appending to inferno-Core-->
+	<mod:findName type="event" name="FMCORE_ONJUMP">
+		<mod-append:queueEvent>FM_JUMP_REMOVE_GHOST_PURGE</mod-append:queueEvent>
+		<mod-append:queueEvent>FM_JUMP_TUCO</mod-append:queueEvent>
+		<mod-append:queueEvent>FM_JUMP_LANIUS</mod-append:queueEvent>
+		<mod-append:queueEvent>FM_JUMP_LEECH</mod-append:queueEvent>
+		<mod-append:queueEvent>FM_JUMP_MONK</mod-append:queueEvent>
+		<mod-append:queueEvent>FM_JUMP_LOSTSUN</mod-append:queueEvent>
+		<mod-append:queueEvent>FM_JUMP_CREWKILL</mod-append:queueEvent>
+		<mod-append:queueEvent>FM_JUMP_HULLKILL</mod-append:queueEvent>
+		<!--<mod-append:queueEvent>FM_HULL_LIMITER_WEAPON</mod-append:queueEvent>
+		<mod-append:queueEvent>FM_HULL_LIMITER_SHIELD</mod-append:queueEvent>-->
+		<mod-append:queueEvent>FM_HULL_LIMITER_REACTOR</mod-append:queueEvent>
+	</mod:findName>
+	<mod:findName type="event" name="FMCORE_ONDAMAGE">
+		<!--<mod-append:queueEvent>FM_ONDAMAGE_MURALS</mod-append:queueEvent>-->
+		<!--<mod-append:queueEvent>FM_ONDAMAGE_OVERCHARMED</mod-append:queueEvent>-->
+		<!--<mod-append:queueEvent>FM_ONDAMAGE_HULL_ARM</mod-append:queueEvent>-->
+	</mod:findName>
+
+</FTL>
+<FTL><!--twisted ships-->
+	<!--twisted Lostsun-->
+	<event name="LOAD_DEATH_TIMER">
+		<triggeredEvent event="LOSTSUN_DEATH" time="75" thisFight="true">
+			<triggeredEventBox load="DEFAULT_SMALL">
+				<tooltip>Your time left in this realm...</tooltip>
+			</triggeredEventBox>
+			<timerSounds load="LOSTSUN_DEATH_TIMERSOUNDS"/>
+		</triggeredEvent>
+	</event>
+	<event name="LOSTSUN_DEATH">
+		<damage amount="9999" system="engines"/>
+	</event>
+
+	<!--twisted Leech-->
+	<event name="DEPRESS_CHARGE_INITIAL">
+		<triggeredEvent event="DEPRESS_CHARGED" time="10" thisFight="true">
+			<triggeredEventBox load="DEFAULT_SMALL">
+				<tooltip>Disruptor Preparing</tooltip>
+			</triggeredEventBox>
+		</triggeredEvent>
+		<triggeredEvent event="DEPRESS_DEACTIVATE" jumps="1"/>
+	</event>
+	<event name="DEPRESS_ACTIVATE">
+		<triggeredEvent event="DEPRESS_CHARGED" time="30" thisFight="true">
+			<triggeredEventBox load="DEFAULT_SMALL">
+				<tooltip>Disruptor Recharging</tooltip>
+			</triggeredEventBox>
+		</triggeredEvent>
+		<triggeredEvent event="DEPRESS_DEACTIVATE" time="15" thisFight="true">
+			<triggeredEventBox load="DEFAULT_SMALL">
+				<tooltip>Disruptor Active</tooltip>
+			</triggeredEventBox>
+		</triggeredEvent>
+		<hiddenAug>ABILITY_DEPRESS_TOGGLE</hiddenAug>
+	</event>
+
+	<event name="DEPRESS_DEACTIVATE">
+		<removeItem>HIDDEN ABILITY_DEPRESS_TOGGLE</removeItem>
+	</event>
+
+	<event name="DEPRESS_CHARGED">
+		<eventButton name="UI_DEPRESS_ACTIVATE">
+			<event load="DEPRESS_ACTIVATE"/>
+			<image border="12">statusUI/top_storage_on</image>
+			<text border="3">DEPRESS</text>
+			<location>0</location>
+			<tooltip>Press to Depress</tooltip>
+			<inactiveTooltip>Inactive</inactiveTooltip>
+			<color r="235" g="245" b="229"/>
+			<activeColor r="235" g="245" b="229"/>
+			<inactiveColor r="164" g="171" b="160"/>
+			<selectedColor r="255" g="230" b="94"/>
+			<textColor r="25" g="49" b="51"/>
+			<jumpClear>true</jumpClear>
+			<once>true</once>
+			<noDanger>false</noDanger>
+			<hideInactive>false</hideInactive>
+		</eventButton>
+	</event>
+
+	<!--Twisted Lanius-->
+	<event name="TWISTED_LANIUS_SURGE_BUTTON_SPAWN_INITIAL">
+		<triggeredEvent event="TWISTED_LANIUS_SURGE_BUTTON_SPAWN" time="10" thisFight="true">
+			<triggeredEventBox load="DEFAULT_SMALL">
+				<tooltip>Charging Surge!</tooltip>
+			</triggeredEventBox>
+		</triggeredEvent>
+	</event>
+
+	<event name="TWISTED_LANIUS_SURGE_BUTTON_SPAWN">
+		<eventButton name="UI_TWISTED_LANIUS_SURGE_BUTTON">
+			<event load="TWISTED_LANIUS_SURGE"/>
+			<image>statusUI/button_surge_defend</image>
+			<location>0</location>
+			<customLocation x="150" y="94"/>
+			<tooltip>Fire a surge of all your equipped flaks.</tooltip>
+			<inactiveTooltip>Unavailable: Already fired.</inactiveTooltip>
+			<color r="255" g="255" b="255"/>
+			<activeColor r="255" g="255" b="255"/>
+			<inactiveColor r="160" g="162" b="171"/>
+			<selectedColor r="58" g="127" b="255"/>
+			<textColor r="23" g="44" b="62"/>
+			<jumpClear>false</jumpClear>
+			<noDanger>false</noDanger>
+			<once>true</once>
+			<hideInactive>false</hideInactive>
+		</eventButton>
+	</event>
+	<!--Do not touch the following comment, it is a marker string for a script-->
+	<!--START_OF_FLAK_INSERTION-->
+
+
+	<event name="TWISTED_LANIUS_SURGE">
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_1_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_1_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_2_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_2_PLAYER_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_3_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_4_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_CHARGE_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_CHAIN_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_INSTANT_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_FIRE_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_ION_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_PLAYER_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_3_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_LOOT_LEECH_1_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_LOOT_AUG_1_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_ION_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_TOXIC_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_ARTILLERY_FLAK_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_ION_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_TEST_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_CURSED_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_INVIS_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_SHOTGUN_SHADOW_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_OMEGA_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_GOLD_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_LEAD_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_BOMB_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_UNSTABLE_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_BATTERY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_HELL_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_RAPTORS_OWN_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_ENEMY_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_2_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_3_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_4_INITIATE</queueEvent>
+		<queueEvent>TWISTED_LANIUS_SURGE_EE_SHOTGUN_FROST_INITIATE</queueEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_1_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_1" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_1_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_1_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_1_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_1_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_1_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_1_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_1_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_1_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_1_ENEMY_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_1_ENEMY_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_1_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_1_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_1_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_1_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_2_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_2" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_2_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_2_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_2_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_2_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_2_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_2_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_2_PLAYER_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_2_PLAYER" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_2_PLAYER_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_2_PLAYER_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_2_PLAYER_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_2_PLAYER_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_2_PLAYER_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_2_PLAYER_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_3_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_3" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_3_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_3_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_3_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_3_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_3_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_3_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_4_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_4" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_4_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_4_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_4_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_4_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_4_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_4_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_CHARGE_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_CHARGE" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_CHARGE_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_CHARGE_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_CHARGE_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_CHARGE_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_CHARGE_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_CHARGE_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_CHAIN_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_CHAIN" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_CHAIN_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_CHAIN_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_CHAIN_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_CHAIN_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_CHAIN_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_CHAIN_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_INSTANT_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_INSTANT" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_INSTANT_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_INSTANT_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_INSTANT_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_INSTANT_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_INSTANT_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_INSTANT_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_FIRE_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_FIRE" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_FIRE_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_FIRE_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_FIRE_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_FIRE_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_FIRE_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_FIRE_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_ION_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_ION" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_ION_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_ION_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_ION_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_ION_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_ION_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_ION_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_TOXIC" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOXIC_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_PLAYER_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_TOXIC_PLAYER" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_PLAYER_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_PLAYER_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOXIC_PLAYER_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_PLAYER_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_PLAYER_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_TOXIC_PLAYER_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_3_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_GOLD_3" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_3_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_3_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_GOLD_3_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_3_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_3_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_3_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_GOLD" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_GOLD_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_GOLD_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_LOOT_LEECH_1_INITIATE">
+		<variable name="flak_calc" op="set" var="LOOT_LEECH_1" />
+		<loadEvent>TWISTED_LANIUS_SURGE_LOOT_LEECH_1_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_LOOT_LEECH_1_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_LOOT_LEECH_1_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_LOOT_LEECH_1_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_LOOT_LEECH_1_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_LOOT_LEECH_1_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_LOOT_AUG_1_INITIATE">
+		<variable name="flak_calc" op="set" var="LOOT_AUG_1" />
+		<loadEvent>TWISTED_LANIUS_SURGE_LOOT_AUG_1_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_LOOT_AUG_1_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_LOOT_AUG_1_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_LOOT_AUG_1_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_LOOT_AUG_1_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_LOOT_AUG_1_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_TOGGLE_FIRE" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_ION_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_TOGGLE_ION" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_ION_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_ION_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_ION_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_ION_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_ION_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_ION_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_TOXIC_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_TOGGLE_TOXIC" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_TOXIC_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_TOXIC_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_TOXIC_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_TOXIC_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_TOXIC_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_TOXIC_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_ARTILLERY_FLAK_INITIATE">
+		<variable name="flak_calc" op="set" var="ARTILLERY_FLAK" />
+		<loadEvent>TWISTED_LANIUS_SURGE_ARTILLERY_FLAK_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_ARTILLERY_FLAK_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_ARTILLERY_FLAK_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_ARTILLERY_FLAK_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_ARTILLERY_FLAK_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_ARTILLERY_FLAK_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_ION_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_ENERGY_ION" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_ION_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_ION_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_ENERGY_ION_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_ION_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_ION_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_ION_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_TEST_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_ENERGY_TEST" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_TEST_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_TEST_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_ENERGY_TEST_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_TEST_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_TEST_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_ENERGY_TEST_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_AETHER" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_AETHER_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_BRONZE" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_BRONZE_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_INDIUM" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_INDIUM_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_RHENIUM" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_RHENIUM_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_SILVER" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_SILVER_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_PALLADIUM" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PALLADIUM_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_IRIDIUM" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_IRIDIUM_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_PLATINUM" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PLATINUM_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_OSMIUM" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_OSMIUM_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_NOBELIUM" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_NOBELIUM_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_HASSIUM" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_HASSIUM_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_CURSED_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_CURSED" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_CURSED_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_CURSED_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_CURSED_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_CURSED_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_CURSED_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_CURSED_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_INVIS_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_TOGGLE_FIRE_INVIS" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_INVIS_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_INVIS_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_TOGGLE_FIRE_INVIS_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_INVIS_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_INVIS_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_TOGGLE_FIRE_INVIS_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_AETHER_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_ENEMY_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_ENEMY_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_AETHER_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_AETHER_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_BRONZE_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_ENEMY_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_ENEMY_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_BRONZE_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_BRONZE_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_INDIUM_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_ENEMY_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_ENEMY_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_INDIUM_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_INDIUM_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_RHENIUM_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_ENEMY_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_ENEMY_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_RHENIUM_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_RHENIUM_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_SILVER_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_ENEMY_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_ENEMY_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_SILVER_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_SILVER_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_PALLADIUM_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_ENEMY_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_ENEMY_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PALLADIUM_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PALLADIUM_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_IRIDIUM_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_ENEMY_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_ENEMY_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_IRIDIUM_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_IRIDIUM_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_PLATINUM_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_ENEMY_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_ENEMY_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_PLATINUM_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_PLATINUM_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_OSMIUM_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_ENEMY_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_ENEMY_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_OSMIUM_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_OSMIUM_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_NOBELIUM_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_ENEMY_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_ENEMY_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_NOBELIUM_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_NOBELIUM_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="FM_SHOTGUN_HASSIUM_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_ENEMY_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_ENEMY_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_FM_SHOTGUN_HASSIUM_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_FM_SHOTGUN_HASSIUM_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_SHADOW_INITIATE">
+		<variable name="flak_calc" op="set" var="SHOTGUN_SHADOW" />
+		<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_SHADOW_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_SHADOW_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_SHOTGUN_SHADOW_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_SHOTGUN_SHADOW_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_SHOTGUN_SHADOW_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_SHOTGUN_SHADOW_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_OMEGA_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_SHOTGUN_OMEGA" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_OMEGA_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_OMEGA_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_OMEGA_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_OMEGA_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_OMEGA_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_SHOTGUN_OMEGA_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_GOLD_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_SHOTGUN_GOLD" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_GOLD_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_GOLD_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_GOLD_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_GOLD_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_GOLD_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_SHOTGUN_GOLD_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_LEAD_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_SHOTGUN_LEAD" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_LEAD_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_LEAD_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_LEAD_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_LEAD_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_LEAD_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_SHOTGUN_LEAD_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_BOMB_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_SHOTGUN_BOMB" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_BOMB_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_BOMB_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_BOMB_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_BOMB_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_BOMB_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_SHOTGUN_BOMB_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_UNSTABLE_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_SHOTGUN_UNSTABLE" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_UNSTABLE_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_UNSTABLE_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_UNSTABLE_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_UNSTABLE_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_UNSTABLE_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_SHOTGUN_UNSTABLE_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_BATTERY_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_SHOTGUN_BATTERY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_BATTERY_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_BATTERY_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_BATTERY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_BATTERY_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_BATTERY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_SHOTGUN_BATTERY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_HELL_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_SHOTGUN_HELL" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_HELL_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_HELL_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_TC_SHOTGUN_HELL_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_SHOTGUN_HELL_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_SHOTGUN_HELL_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_SHOTGUN_HELL_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_RAPTORS_OWN_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_RAPTORS_OWN" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_RAPTORS_OWN_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_RAPTORS_OWN_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_TC_RAPTORS_OWN_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_RAPTORS_OWN_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_RAPTORS_OWN_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_RAPTORS_OWN_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_BOMB_SHOTGUN_1" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_ENEMY_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_BOMB_SHOTGUN_1_ENEMY" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_ENEMY_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_ENEMY_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_1_ENEMY_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_ENEMY_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_ENEMY_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_1_ENEMY_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_2_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_BOMB_SHOTGUN_2" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_2_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_2_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_2_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_2_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_2_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_2_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_3_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_BOMB_SHOTGUN_3" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_3_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_3_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_3_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_3_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_3_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_3_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_4_INITIATE">
+		<variable name="flak_calc" op="set" var="TC_BOMB_SHOTGUN_4" />
+		<loadEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_4_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_4_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_TC_BOMB_SHOTGUN_4_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_4_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_4_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_TC_BOMB_SHOTGUN_4_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_EE_SHOTGUN_FROST_INITIATE">
+		<variable name="flak_calc" op="set" var="EE_SHOTGUN_FROST" />
+		<loadEvent>TWISTED_LANIUS_SURGE_EE_SHOTGUN_FROST_LOADEVENTLIST</loadEvent>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_EE_SHOTGUN_FROST_LOADEVENTLIST">
+		<loadEventList seeded="false" generate="false" first="true" default="TRUENOTHING">
+			<event req="flak_calc" lvl="1">
+				<superBarrage player="true" name="TWISTED_LANIUS_EE_SHOTGUN_FROST_SURGE" />
+				<variable name="flak_calc" op="add" val="-1" />
+				<loadEvent>TWISTED_LANIUS_SURGE_EE_SHOTGUN_FROST_LOADEVENTLIST_CYCLE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_LANIUS_SURGE_EE_SHOTGUN_FROST_LOADEVENTLIST_CYCLE">
+		<loadEventList seeded="false" generate="false" default="TRUENOTHING">
+			<event load="TWISTED_LANIUS_SURGE_EE_SHOTGUN_FROST_LOADEVENTLIST" req="flak_calc" />
+		</loadEventList>
+	</event>
+
+
+		<!--END_OF_FLAK_INSERTION-->
+		<!--Do not touch the previous comment, it is a marker string for a script-->
+		
+	<!--Twisted Tuco-->
+
+	<event name="TWISTED_TUCO_BUTTON_SPAWN_INITIAL">
+		<triggeredEvent event="TWISTED_TUCO_BUTTON_SPAWN" time="10" thisFight="true">
+			<triggeredEventBox load="DEFAULT_SMALL">
+				<tooltip>Shuffling Cards</tooltip>
+			</triggeredEventBox>
+		</triggeredEvent>
+	</event>
+
+
+	<event name="TWISTED_TUCO_BUTTON_SPAWN">
+		<eventButton name="UI_TAROT_ACTIVATE">
+			<event load="TAROT_ACTIVATE"/>
+			<image border="12">statusUI/top_storage_on</image>
+			<text border="3">CARDS (WIP)</text>
+			<location>0</location>
+			<tooltip>Draw a card (WIP)</tooltip>
+			<inactiveTooltip>Inactive</inactiveTooltip>
+			<color r="235" g="245" b="229"/>
+			<activeColor r="235" g="245" b="229"/>
+			<inactiveColor r="164" g="171" b="160"/>
+			<selectedColor r="255" g="230" b="94"/>
+			<textColor r="25" g="49" b="51"/>
+			<jumpClear>true</jumpClear>
+			<once>true</once>
+			<noDanger>false</noDanger>
+			<hideInactive>false</hideInactive>
+		</eventButton>
+	</event>
+
+	<eventList name="TAROT_ACTIVATE">
+		<event><!--The Fool Good-->
+			<text>You flip the card to reveal a flash of white that fades to reveal a cube, etched in green with facets that seem to rearrange themselves to some twisted tune as if dancing. Species of all kinds in various garments of study are observing it, as it begins to unfold it reveals a twisting mass of white hot energy suspended in a bubble; the birth of a new dimension. The truth behind the multiverse drives that even the ancients failed to recognize.</text>
+
+			<choice>
+				<text>Gaze into its depths</text>
+				<event> <!--Quest-->
+					<text>You gaze deeply into the folds of the cube, your mind straining to understand the contortions of the energy within. Suddenly your visions rush with galaxies, expanding to reveal their stars, which in turn reveal their planets. You watch in awe as the vision slowly settles to reveal your own ship, orbiting a nearby world.</text>
+				</event>
+			</choice>
+
+			<choice>
+				<text>Examine its exterior</text>
+				<event> <!--External Engine Booster-->
+					<text>You fix your sights upon the outside of the box, searching for something recognizable among its faces. The symbols don't fully make sense, but they inspire you with a creative way to optimize your engines.</text>
+				</event>
+			</choice>
+
+
+		</event>
+
+		<event><!--The Fool Bad-->
+			<text>You flip the card to see nothing; an inky black void devoid of stars, planets or light. The only thing recognizable is the outline of a cube, its shape slowly changing as it opens. Inside is a small swirling galaxy; it begins to bubble and tear apart as stars, systems and eventually clusters begin to violently decay. The cube suddenly slams shut and begins shifting once more, not unlike a mouth chewing its food.</text>
+
+			<choice>
+				<text>Try to force it back open</text>
+				<event>
+					<text></text>
+				</event>
+			</choice>
+
+			<choice>
+				<text>Wait until it stops moving</text>
+				<event>
+					<text></text>
+				</event>
+			</choice>
+		</event>
+
+		<event><!--The Magician Good-->
+			<text>You flip the card to reveal a ship slowly touching down upon a primitive world, surrounded by curious, reptilian natives. They watch with awe as the crew steps out, taking in the mysterious new technologies with delight. The scene speeds up, and the outlines of magnificent glass buildings race towards the sky, citadels of communication and study, bestowing students with a mastery of technology beyond comprehension. The scene ends as a single ship, manned by a combination of lizards and slugs, jumps towards the stars.</text>
+		</event>
+
+		<event><!--The Magician Bad-->
+			<text>You flip the card to reveal a dismal sweatshop full of lizards, overseen by a miserable-looking slug. They toil away mindlessly at their tasks, pushing marked boxes down a conveyer belt with their heads hung low. Each one avoids eye contact with the others, evading the notice of their overseer. One of the lizards is drawing a diagram, hiding it from the view of the supervisor until the supervisor points to them, and demands to speak with them. An airlock opens in the distance, and the sweatshop returns to a dismal silence.</text>
+		</event>
+
+		<event><!--The High Priestess Good-->
+			<text>You flip the card to reveal a Shell Scientist, lost deep in thought as they ponder the notes in front of them. The door to their office is left open, and youths of all species trickle in one-by-one, each with a question to ask. The Scientist smiles, and answers the questions of each student in detail until they walk away, their eyes full of understanding.</text>
+		</event>
+
+		<event><!--The High Priestess Bad-->
+			<text>You flip the card to reveal a dark and dingy laboratory, with strange blob-like masses shifting within shadowed vats. A Shell Scientist is watching them intently, scribbling notes and talking to themselves in a whisper as their colleagues watch with concern. The lights flicker on, revealing the emaciated figure of the Scientist, trembling slightly. Their eyes are sunken and twitching, fixed firmly upon the vats in front of them.</text>
+		</event>
+
+		<event><!--The Empress Good--> <!--All crew become immune to suffocation for 3 jumps-->
+			<text>You flip the card to reveal a Lanius ship, glowing vibrant and pink as it sets down upon a green world. A crowd of Orchids watch as the captain debarks. A Chieftain rushes forward to wordlessly present a gift, and the Lanius takes it from them to the cheering of the crowd.</text>
+		</event>
+
+		<event><!--The Empress Bad--> <!--Set fires and create a star while giving an extremely low-tier piece of ancient equipment, so like a mender or harbinger 1-->
+			<text>You flip the card to reveal a raging sun. A desolated ship orbits low, dwarfed by the immense flares thrown off by the star's surface. A strange Lanius vessel flickers pink as it approaches, only to be engulfed by flames shortly after.</text>
+		</event>
+
+		<event><!--The Emperor Good-->
+			<text>You flip the card to reveal The Federation of Universe 0, celebrating a grand victory over the rebellion. Peace has been brokered between the two factions, and Admiral Vance of the rebellion fleet is standing alongside Admiral, now President Tully. The Rebel Flagship is stationed in planetary orbit, fully retrofitted in a new color scheme of silvers, blues and black with an insignia combining the rebels and the federations identities.</text>
+		</event>
+
+		<event><!--The Emperor Bad-->
+			<text>You flip the card to reveal a wasteland of shattered ships, cold corpses and a cracked planet where the federation was once stationed. The MFK Flagship Ace floats in orbit, now shining with an inner light of immense power and outfitted with a massive laser that looks suspiciously like Zulfiqar tech, upscaled to seal their fate. Admiral Vance is standing at the viewing deck of the Flagship, looking all the world like a man who has conquered an empire.</text>
+		</event>
+
+		<event><!--The Hierophant Good-->
+			<text>You flip the card to reveal The Great Eye, twisting in ways that seem to give glimpses of other realities; Pots full of rare gemstones, an ocean planet teeming with leviathans, The Sol sector being ravaged by beings of metal, clones and corporations. The Eye seems to gaze back at you and blinks, glowing all the colors of a midnight sunrise.</text>
+		</event>
+
+		<event><!--The Hierophant Bad-->
+			<text>You flip the card to reveal a cataclysmic scene, The Great Eye swirling with black energies and colors that can only be described as hateful and repulsive. The Eye is shifting rapidly, searching for the source of its ire and locks eyes with you; a cold feeling begins to creep up your spine as the eye stares back unblinking, willing you to all the misfortunes in this multiverse and the next.</text>
+		</event>
+
+		<event><!--The Lovers Good-->
+			<text>You flip the card to reveal a hooded slug alongside a towering salt figure. They enter a tavern together, the room loud with banter and noise. The slug takes their companion to a quiet back room, the pair sitting at a table before the slug removes a deck of cards from their robe. The image fades out as the pair smiles, the slug dealing them both a hand.</text>
+		</event>
+
+		<event><!--The Lovers Bad--> <!---->
+			<text>You flip the card to reveal a crystalline white ship. A slug glides up the ship's ramp to greet its captain, who smiles in return. They navigate the halls of the vessel before the slug stumbles and collapses to the floor, quivering. Their companion reaches out to help, only to be met with a grotesque sizzling upon contact.</text>
+		</event>
+
+		<event><!--The Chariot Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Chariot Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--Justice Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--Justice Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Hermit Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Hermit Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--Wheel of Fortune Good-->
+			<text>You flip the card to the sound of slots, an interstellar luxury cruiser and Not-so-Fat Tony Sr at the helm, covered in gold and jewels. The ship bears the logo of Hektar half scrubbed off with Tony's face covering most of the side, grinning with teeth studded with jewels and metals. The spectacle is being broadcast to every stretch of the galaxy in every dialect imaginable, paying special attention to a rotund yellow slug struggling from the bow of the ship where he is tied up.</text>
+		</event>
+
+		<event><!--Wheel of Fortune Bad-->
+			<text>You flip the card to reveal a lone derelict space station, one section hanging loosely as if hit with a hammer. A singular ghost white leech remains in the last breathable part of the station, surrounded by countless bottles and a blaster. Around him is a ring of Hektar drones, prepared to fire if he were to try and leave his tomb; but the only motion the limp leech makes is to point the blaster to his throat. He pulls the trigger, ending himself, but is spat back out by a cloning vat hanging in the ceiling; lying and retching on the floor, he again reaches for the blaster.</text>
+		</event>
+
+		<event><!--Strength Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--Strength Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Hanged Man Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Hanged Man Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--Death Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--Death Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--Temperance Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--Temperance Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Devil Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Devil Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Tower Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Tower Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Star Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Star Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Moon Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Moon Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Sun Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The Sun Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--Judgement Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--Judgement Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The World Good-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+		<event><!--The World Bad-->
+			<text>I'm looking at your X-Ray, and I'm afraid YOU SUCK!</text>
+		</event>
+
+	</eventList>
+
+
+
+	<!--twisted Monk	-->
+	<event name="TWISTED_BLESSING_KILLCOUNT"> <!--this checks if enemy has crew in first place so auto ships can't be ck-d-->
+		<triggeredEvent event="TWISTED_BLESSING_CREWKILL_CHECK" thisFight="true">
+			<enemyDeaths amount="1" includeClonebay="false" countNewCrew="false"/>
+			<!--<enemyCrew min="1" max="999" includeClonebay="false" countNewCrew="false"/>-->
+		</triggeredEvent>
+	</event>
+	<event name="TWISTED_BLESSING_CREWKILL_CHECK"> <!-- this checks if enemy has no more crew-->
+		<triggeredEvent event="TWISTED_BLESSING_KILLCOUNT_INCREMENT" thisFight="true">
+			<enemyCrew amount="0" includeClonebay="true"/>
+		</triggeredEvent>
+	</event>
+	<!-- this adds one to the twisted blessing counter every time you get a crew kill-->
+	<event name= "TWISTED_BLESSING_KILLCOUNT_INCREMENT">
+		<text>An efficient and brutal victory. Your benefactors are undoubtedly pleased with your work. (1 rage gained)</text>
+		<variable name = "twisted_blessing_counter" op = "add" val = "1"/>
+	</event>
+</FTL>
+
+<FTL><!--Generic Kill Events-->
+	<event name="FM_CREWKILL_TRACKER"> <!--Autoship check so crew kill doesn't trigger on autos-->
+		<triggeredEvent event="FM_CREWKILL_TRACKER_2" thisFight="true">
+			<enemyDeaths amount="1" includeClonebay="false" countNewCrew="false"/>
+			<!--<enemyCrew min="1" max="999" includeClonebay="false" countNewCrew="false"/>-->
+		</triggeredEvent>
+	</event>
+	<event name="FM_CREWKILL_TRACKER_2"> <!-- this checks if enemy has no more crew-->
+		<triggeredEvent event="FM_CREWKILL_TRACKER_EVENT">
+			<enemyCrew amount="0" includeClonebay="true"/>
+		</triggeredEvent>
+	</event>
+
+	<event name="FM_CREWKILL_TRACKER_EVENT">
+		<loadEventList seeded="false" default="FM_PURGE_1"><!--Purge event will only trigger if the others do not, change later-->
+			<event name="TWISTED_KESTREL_KILL" req="gbgozer_player"/>
+			<event name="TWISTED_ROCK_KILL" req="TWISTED_HULL_ARM"/>
+		</loadEventList>
+	</event>
+
+
+
+
+	<event name="FM_HULLKILL_TRACKER"> <!-- this checks if enemy has no more hull-->
+		<triggeredEvent event="FM_HULLKILL_TRACKER_EVENT" enemyHull="0"/>
+	</event>
+
+	<event name="FM_HULLKILL_TRACKER_EVENT"><!--Potential events to trigger on crewkill-->
+		<loadEventList seeded="false" default="TRUENOTHING">
+			<event name="TWISTED_KESTREL_KILL" req="gbgozer_player"/>
+			<event name="TWISTED_ROCK_KILL" req="TWISTED_HULL_ARM"/>
+		</loadEventList>
+	</event>
+
+
+	<eventList name="TWISTED_KESTREL_KILL">
+
+		<event>
+			<text>With the final spark of power in the opposing ship going dark, the Fridge shakes - a rumble echoes from within, and you feel the myriad of ghosts in its unknowable interior hum with approval. With a rush of whispering gases, a Phantom coalesces before you - ready to serve.</text>
+			<crewMember amount="1" class="phantom"/>
+
+			<!--jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>-->
+		</event>
+
+		<event>
+			<text>With the final spark of power in the opposing ship going dark, the Fridge shakes - a rumble echoes from within, and you feel the myriad of ghosts in its unknowable interior hum with approval. With a rush of whispering gases and a violent crackle of energy, a Wraith coalesces before you - ready to serve.</text>
+			<crewMember amount="1" class="phantom_wraith"/>
+
+			<!--jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>-->
+		</event>
+
+		<event>
+			<text>With the final spark of power in the opposing ship going dark, the Fridge shakes - a rumble echoes from within, and you feel the myriad of ghosts in its unknowable interior hum with approval. With a rush of whispering gases and the shimmer of heat washing over your surroundings, a Goul coalesces before you - ready to serve.</text>
+			<crewMember amount="1" class="phantom_goul"/>
+			
+			<!--jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>-->
+		</event>
+
+		<event>
+			<text>With the final spark of power in the opposing ship going dark, the Fridge shakes - a rumble echoes from within, and you feel the myriad of ghosts in its unknowable interior hum with approval. With a thumping howl of gases moving that cause your hull to tremble slightly, a Mare coalesces before you - ready to serve.</text>
+			<crewMember amount="1" class="phantom_mare"/>
+
+			<!--jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>-->
+		</event>
+
+		<event>
+			<text>With the final spark of power in the opposing ship going dark, the Fridge shakes violently - a rumble echoes from within, louder than usual, and you feel the presence of a mightier entity from its unknowable interior hum with approval. With a torrential outpour of agitated white gases, an Alpha Phantom coalesces before you - ready to serve.</text>
+			<crewMember amount="1" class="phantom_alpha"/>
+
+			<!--jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>-->
+		</event>
+
+		<event>
+			<text>With the final spark of power in the opposing ship going dark, the Fridge shakes violently - a rumble echoes from within, louder than usual, and you feel the presence of a mightier entity from its unknowable interior hum with approval. With a violent, acidic hiss, an Alpha Mare coalesces before you - ready to serve.</text>
+			<crewMember amount="1" class="phantom_mare_alpha"/>
+
+			<!--jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>-->
+		</event>
+
+
+		<event>
+			<text>With the final spark of power in the opposing ship going dark, the Fridge shakes violently - a rumble echoes from within, louder than usual, and you feel the presence of a mightier entity from its unknowable interior hum with approval. The room smolders ominously as an Alpha Goul coalesces before you - ready to serve.</text>
+			<crewMember amount="1" class="phantom_goul_alpha"/>
+
+			<!--jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>-->
+		</event>
+
+		<event>
+			<text>With the final spark of power in the opposing ship going dark, the Fridge shakes violently - a rumble echoes from within, louder than usual, and you feel the presence of a mightier entity from its unknowable interior hum with approval. A bolt of electricity snaps against the hull of your ship as an Alpha Wraith coalesces before you - ready to serve.</text>
+			<crewMember amount="1" class="phantom_wraith_alpha"/>
+
+			<!--jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>-->
+		</event>
+
+		<event>
+			<text>With the final spark of power in the opposing ship going dark, the Fridge shakes uncontrollably - a howl screams forth, shaking the ship menacingly. An overwhelming sense of horrible amusement emanates from within its walls. The howls die slowly as one of the Haunts coalesces before you - ready to serve.</text>
+			<crewMember amount="1" class="FM_LIST_CREW_HAUNTS"/>
+
+			<!--jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>-->
+		</event>
+
+
+		<event>
+				<text>With the final spark of power in the opposing ship going dark, the Fridge nearly cracks as it slams back against the hull of the ship - an ear-piercing scream blasts from within, sending you reeling. The bright void outside, or perhaps only your vision, dims slightly. A magnificent ghost clad in armor forms elegantly before you, some version of the Phantom King himself. He kneels before you... Ready to serve. </text>
+				<crewMember amount="1" class="unique_dessius"/>
+
+				<!--jumpEvent>REMOVE_GHOST_PURGE</jumpEvent>-->
+		</event>
+
+	</eventList>
+
+	<event name="REMOVE_GHOST_PURGE">
+		<removeItem>HIDDEN TWISTED_KESTREL_GHOST_PURGE</removeItem>
+	</event>
+
+	<event name="TWISTED_ROCK_KILL">
+		<!--	<disableScrapScore/> Any scrap gained from this event is not added to the player's score.
+		<disableScrapAugments/>
+		<item_modify>
+			<item type="scrap" min="twisted_rock_scrap_counter" max="twisted_rock_scrap_counter"/>
+		</item_modify>-->
+		<!--<variable name="twisted_rock_scrap_counter" op="set" val="0"/>-->
+		<loadEventList seeded="false" first="true" default="TRUENOTHING">
+			<event req="twisted_rock_scrap_counter" lvl="16">
+				<disableScrapScore />
+				<disableScrapAugments />
+				<item_modify>
+					<item type="scrap" min="16" max="16" />
+				</item_modify>
+				<loadEvent>TWISTED_ROCK_LOOP</loadEvent>
+				<variable name="twisted_rock_scrap_counter" op="add" val="-16" />
+			</event>
+			<event req="twisted_rock_scrap_counter" lvl="8">
+				<disableScrapScore />
+				<disableScrapAugments />
+				<item_modify>
+					<item type="scrap" min="8" max="8" />
+				</item_modify>
+				<loadEvent>TWISTED_ROCK_LOOP</loadEvent>
+				<variable name="twisted_rock_scrap_counter" op="add" val="-8" />
+			</event>
+			<event req="twisted_rock_scrap_counter" lvl="4">
+				<disableScrapScore />
+				<disableScrapAugments />
+				<item_modify>
+					<item type="scrap" min="4" max="4" />
+				</item_modify>
+				<loadEvent>TWISTED_ROCK_LOOP</loadEvent>
+				<variable name="twisted_rock_scrap_counter" op="add" val="-4" />
+			</event>
+			<event req="twisted_rock_scrap_counter" lvl="2">
+				<disableScrapScore />
+				<disableScrapAugments />
+				<item_modify>
+					<item type="scrap" min="2" max="2" />
+				</item_modify>
+				<loadEvent>TWISTED_ROCK_LOOP</loadEvent>
+				<variable name="twisted_rock_scrap_counter" op="add" val="-2" />
+			</event>
+			<event req="twisted_rock_scrap_counter" lvl="1">
+				<disableScrapScore />
+				<disableScrapAugments />
+				<item_modify>
+					<item type="scrap" min="1" max="1" />
+				</item_modify>
+				<loadEvent>TWISTED_ROCK_LOOP</loadEvent>
+				<variable name="twisted_rock_scrap_counter" op="add" val="-1" />
+			</event>
+		</loadEventList>
+	</event>
+	<event name="TWISTED_ROCK_LOOP">
+		<loadEventList seeded="false" first="true" default="TRUENOTHING">
+			<event req="twisted_rock_scrap_counter" lvl="1">
+				<loadEvent>TWISTED_ROCK_KILL</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+
+
+
+</FTL>
+
+<!--
+The Virgin Efficient Code:
+
+Is submissive, does what you ask
+Is tiny, and can easily be overlooked and scrolled past
+Collaborates with slower and weaker computers
+
+The Chad “I’ll Fix It Later” Code:
+
+Is dominant, does what it wants
+Is massive, takes up thousands of lines
+Breaks stuff and doesn’t care who it crosses
+Only respects stronger computers
+-->
+
+
+
+<FTL><!--FM spawning-->
+	<event name="FORGEMASTER_SPAWNER">
+		<loadEventList seeded="false" default="TRUENOTHING">
+			<event name="SPAWNFM_FIRSTMEETING" req="FMSPAWN_FIRSTMEET"/>
+			<event name="SPAWNFM_PHONECALL" req="FMSPAWN_CALL" />
+		</loadEventList>
+	</event>
+
+
+	<event name="SPAWNFM_FIRSTMEETING">
+		<!--<text>[Forgemaster deployed!]</text>-->
+		<!--<noQuestText/>-->
+		<!--<quest event="FORGEMASTER"/>-->
+		<variable name="forgemaster_spawntriggered" op="add" val="1"/>
+		<!--<loadEvent>TRUENOTHING</loadEvent>-->
+	</event>
+
+	<event name="SPAWNFM_PHONECALL">
+		<!--<text>[Alastair the Forgemaster has arrived!]</text>-->
+		<!--<noQuestText/>-->
+		<quest event="FORGEMASTER_PHONE_CALL"/>
+		<variable name="forgemaster_spawntriggered" op="add" val="1"/>
+		<loadEvent>FM_CALL_END</loadEvent>
+	</event>
+	<event name="FM_CALL_END">
+		<variable name="fm_forgemaster_called" op="set" val="0"/>
+	</event>
+</FTL>
+
+<FTL><!--all the modular armor stuff-->
+	<!--special module effect events-->
+
+	<event name="FM_ONJUMP_STUFF_LOAD">
+		<loadEvent>FM_JUMP_REMOVE_GHOST_PURGE</loadEvent>
+	</event>
+	<!-- old version of the on jump stuff
+	<event name="FM_JUMP_REMOVE_GHOST_PURGE">
+		<loadEventList default="FM_JUMP_TUCO">
+			<event req="TWISTED_KESTREL_GHOST_PURGE" lvl="1">
+				<loadEvent>REMOVE_GHOST_PURGE</loadEvent>
+				<queueEvent>FM_JUMP_TUCO</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="FM_JUMP_TUCO">
+		<loadEventList default="FM_JUMP_LOSTSUN">
+			<event req="LOCKED_TAROT_CARDS" lvl="1">
+				<loadEvent>FM_JUMP_LOSTSUN</loadEvent>
+				<queueEvent>TWISTED_TUCO_BUTTON_SPAWN_INITIAL</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="FM_JUMP_LOSTSUN">
+		<loadEventList default="FM_JUMP_LEECH">
+			<event req="TWISTED_LOSTSUN" lvl="1">
+				<loadEvent>FM_JUMP_LEECH</loadEvent>
+				<queueEvent>LOAD_DEATH_TIMER</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="FM_JUMP_LEECH">
+		<loadEventList default="FM_JUMP_MONK">
+			<event req="LOCKED_SUPER_DEPRESSION" lvl="1">
+				<loadEvent>FM_JUMP_MONK</loadEvent>
+				<queueEvent>DEPRESS_CHARGE_INITIAL</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="FM_JUMP_MONK">
+		<loadEventList default="FM_JUMP_CREWKILL">
+			<event req="TWISTED_BLESSING" lvl="1">
+				<loadEvent>FM_JUMP_CREWKILL</loadEvent>
+				<queueEvent>TWISTED_BLESSING_KILLCOUNT</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="FM_JUMP_CREWKILL">
+		<loadEventList default="FM_JUMP_HULLKILL">
+			<event>
+				<loadEvent>FM_JUMP_HULLKILL</loadEvent>
+				<queueEvent>FM_CREWKILL_TRACKER</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="FM_JUMP_HULLKILL">
+		<loadEventList default="FM_HULL_LIMITER_WEAPON">
+			<event>
+				<loadEvent>FM_HULL_LIMITER_WEAPON</loadEvent>
+				<queueEvent>FM_HULLKILL_TRACKER</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="FM_HULL_LIMITER_WEAPON">
+		<loadEventList default="FM_HULL_LIMITER_SHIELD">
+			<event req="LIMIT_CHECK_WEAPON" lvl="3">
+				<loadEvent>FM_HULL_LIMITER_SHIELD</loadEvent>
+				<queueEvent>LOAD_FASTWEAPON</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="FM_HULL_LIMITER_SHIELD">
+		<loadEventList default="FM_HULL_LIMITER_REACTOR">
+			<event req="LIMIT_CHECK_SHIELD" lvl="4">
+				<loadEvent>FM_HULL_LIMITER_REACTOR</loadEvent>
+				<queueEvent>LOAD_FASTSHIELD</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="FM_HULL_LIMITER_REACTOR">
+		<loadEventList default="FM_JUMP_END">
+			<event req="LIMIT_CHECK_REACTOR" lvl="3">
+				<loadEvent>FM_JUMP_END</loadEvent>
+				<queueEvent>LOAD_MAGNETIC</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="FM_JUMP_END">
+		<triggeredEvent name="FM_ONJUMP_STUFF" event="FM_ONJUMP_STUFF_LOAD">
+			<jumps amount="1" type="0"/>
+		</triggeredEvent>
+	</event>-->
+	<!-- the modified versions of the events for jumping-->
+	<event name="FM_JUMP_REMOVE_GHOST_PURGE">
+		<loadEventList>
+			<event req="TWISTED_KESTREL_GHOST_PURGE" lvl="1">
+				<loadEvent>REMOVE_GHOST_PURGE</loadEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="FM_JUMP_TUCO">
+		<loadEventList>
+			<event req="LOCKED_TAROT_CARDS" lvl="1">
+				<queueEvent>TWISTED_TUCO_BUTTON_SPAWN_INITIAL</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+
+	<event name="FM_JUMP_LANIUS">
+		<loadEventList>
+			<event req="TWISTED_FLAK_FORGE" lvl="1">
+				<queueEvent>TWISTED_LANIUS_SURGE_BUTTON_SPAWN_INITIAL</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="FM_JUMP_LOSTSUN">
+		<loadEventList>
+			<event req="TWISTED_LOSTSUN" lvl="1">
+				<queueEvent>LOAD_DEATH_TIMER</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="FM_JUMP_LEECH">
+		<loadEventList>
+			<event req="LOCKED_SUPER_DEPRESSION" lvl="1">
+				<queueEvent>DEPRESS_CHARGE_INITIAL</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="FM_JUMP_MONK">
+		<loadEventList>
+			<event req="TWISTED_BLESSING" lvl="1">
+				<queueEvent>TWISTED_BLESSING_KILLCOUNT</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="FM_JUMP_CREWKILL">
+		<loadEventList>
+			<event>
+				<queueEvent>FM_CREWKILL_TRACKER</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="FM_JUMP_HULLKILL">
+		<loadEventList>
+			<event>
+				<queueEvent>FM_HULLKILL_TRACKER</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="FM_HULL_LIMITER_WEAPON">
+		<loadEventList>
+			<event req="LIMIT_CHECK_WEAPON" lvl="3">
+				<queueEvent>LOAD_FASTWEAPON</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="FM_HULL_LIMITER_SHIELD">
+		<loadEventList>
+			<event req="LIMIT_CHECK_SHIELD" lvl="4">
+				<queueEvent>LOAD_FASTSHIELD</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+	<event name="FM_HULL_LIMITER_REACTOR">
+		<loadEventList>
+			<event req="LIMIT_CHECK_REACTOR" lvl="3">
+				<queueEvent>LOAD_MAGNETIC</queueEvent>
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="LOAD_FASTWEAPON">
+		<status type="limit" target="player" system="weapons" amount="3" />
+	</event>
+	<event name="LOAD_FASTSHIELD">
+		<status type="limit" target="player" system="shields" amount="4" />
+	</event>
+	<event name="LOAD_MAGNETIC">
+		<loadEventList first="true">
+			<event req="reactor" lvl="3">
+				<status type="loss" target="player" system="reactor" amount="3" />
+			</event>
+			<event req="reactor" lvl="2">
+				<status type="loss" target="player" system="reactor" amount="2" />
+			</event>
+			<event req="reactor" lvl="1">
+				<status type="loss" target="player" system="reactor" amount="1" />
+			</event>
+		</loadEventList>
+	</event>
+
+	<event name="RELIMIT_WEAPONS_0">
+		<status type="limit" target="player" system="weapons" amount="0"/>
+	</event>
+	<event name="RELIMIT_WEAPONS_1">
+		<status type="limit" target="player" system="weapons" amount="1"/>
+	</event>
+	<event name="RELIMIT_WEAPONS_2">
+		<status type="limit" target="player" system="weapons" amount="2"/>
+	</event>
+
+	<event name="RELIMIT_SHIELDS_0">
+		<status type="limit" target="player" system="shields" amount="0"/>
+	</event>
+	<event name="RELIMIT_SHIELDS_1">
+		<status type="limit" target="player" system="shields" amount="1"/>
+	</event>
+	<event name="RELIMIT_SHIELDS_2">
+		<status type="limit" target="player" system="shields" amount="2"/>
+	</event>
+	<event name="RELIMIT_SHIELDS_3">
+		<status type="limit" target="player" system="shields" amount="3"/>
+	</event>
+
+
+	<!--overcharmd stuff, if more than 15 notches used-->
+	<event name="OVERCHARMED">
+		<variable name="overcharmed_active" op="set" val="1"/>
+		<loadEvent>OVERCHARMED_MESSAGE</loadEvent>
+		<queueEvent>FORGEMASTER_PHONE_EVENT_LOAD</queueEvent>
+	</event>
+	<event name="OVERCHARMED_MESSAGE">
+		<text>As you finish installing your modules you notice that you have exeeded the structural limit of the modular hull, causing instability. It appears that due to that it has become very prone to exploding. Lets hope it won't impeede you too much.</text>
+	</event>
+
+
+</FTL>
+<FTL>
+	<event name="SURGE_FLAK_DEFEND">
+		<superBarrage player="true" name="SURGE_FLAK_DEFEND"/>
+	</event>
+	<event name="SURGE_FLAK_DEFEND2">
+		<superBarrage player="true" name="SURGE_FLAK_DEFEND2"/>
+	</event>
+	<event name="DEFENSE_FLAK_SPAWN">
+		<eventButton name="UI_FLAK_DEFEND_BUTTON">
+			<event load="SURGE_FLAK_DEFEND"/>
+			<image>statusUI/button_surge_defend</image>
+			<location>0</location>
+			<customLocation x="116" y="489"/>
+			<tooltip>funny flak surge!</tooltip>
+			<inactiveTooltip>Unavailable: You cannot do this while in danger!</inactiveTooltip>
+			<color r="255" g="255" b="255"/>
+			<activeColor r="255" g="255" b="255"/>
+			<inactiveColor r="160" g="162" b="171"/>
+			<selectedColor r="58" g="127" b="255"/>
+			<textColor r="23" g="44" b="62"/>
+			<jumpClear>false</jumpClear>
+			<noDanger>false</noDanger>
+		</eventButton>
+	</event>
+	<event name="DEFENSE_FLAK_SPAWN2">
+		<eventButton name="UI_FLAK_DEFEND_BUTTON2">
+			<event load="SURGE_FLAK_DEFEND2"/>
+			<image>statusUI/button_surge_defend</image>
+			<location>0</location>
+			<customLocation x="116" y="440"/>
+			<tooltip>funny flak surge2!</tooltip>
+			<inactiveTooltip>Unavailable: You cannot do this while in danger!</inactiveTooltip>
+			<color r="255" g="255" b="255"/>
+			<activeColor r="255" g="255" b="255"/>
+			<inactiveColor r="160" g="162" b="171"/>
+			<selectedColor r="58" g="127" b="255"/>
+			<textColor r="23" g="44" b="62"/>
+			<jumpClear>false</jumpClear>
+			<noDanger>false</noDanger>
+		</eventButton>
+	</event>
+
+	<event name="LOL">
+		<hiddenAug>CREW_STIMS_ULTRA</hiddenAug>
+		<hiddenAug>SYSTEM_UNBREAKING</hiddenAug>
+		<hiddenAug>HULL_UNBREAKING</hiddenAug>
+		<hiddenAug>FTL_JUMPER_GOOD</hiddenAug>
+		<crewMember amount="5" class="unique_jerry_pony_crystal">Skill Issue</crewMember>
+		<weapon name="FM_GATLING_ANCIENT"/>
+	</event>
+
+
+
+	<event name="FM_PURGE_1">
+		<hiddenAug>FM_PURGE_AUG</hiddenAug>
+		<triggeredEvent event="FM_PURGE_2" loops="1" time="0.1"/>
+	</event>
+
+
+
+	<event name="FM_PURGE_2">
+		<removeItem>HIDDEN FM_PURGE_AUG</removeItem>
+	</event>
+
+
+
+	<event name="OXYGEN_FORCE_UPGRADE">
+		<text>You upgrade your oxygen by force.</text>
+	</event>
+
+	<event name="WEAPONS_FORCE_UPGRADE">
+		<text>You upgrade your weapons by force.</text>
+	</event>
+
+	<event name="SHIELDS_FORCE_UPGRADE">
+		<text>You upgrade your shields by force.</text>
+	</event>
+
+	<event name="MBA"><!--MANTIS BOMBER ABUSE, EASIER TO TYPE, downgrades relevant systems in LUA, doesn't actually load mantis bomber because I got the BOON OF NO FRICKS GIVEN-->
+		<hiddenAug>ENERGY_SHIELD</hiddenAug>
+		<ship load="SHIP_PLEASURE_BARGE" hostile="true"/>
+		<queueEvent>MBA_2</queueEvent>
+	</event>
+
+	<event name="MBA_2"/>
+
+	<event name="DRAW">
+		<text>You try to draw a thing on your screen, at least later!</text>
+	</event>
+
+	<event name="TOGGLE_HACK">
+		<text>You toggle the weird hacking command</text>
+
+	</event>
+
+
+</FTL>

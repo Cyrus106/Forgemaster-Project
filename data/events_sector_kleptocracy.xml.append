@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FTL>
+
+	<mod:findName type="eventList" name="SLUG_DISTRESS_QUESTION_LIST">
+		<mod:findLike type="event">
+			<mod:findLike type="choice">
+				<mod:findLike type="event">
+					<mod-append:choice hidden="true" req="FM_BEAM_MINING_2" >
+						<text>(Ishimura Beam) Zero.</text>
+						<event>
+							<text>As soon as the rude slug sees you charging your weapons, they quickly jump, fleeing for their life and most likely pissing themselves. Unfortunately for them, you locked on to their jump signature, and may pursue them if you wish.</text> <!--  Initial Beacon -->
+							<quest event="SLUG_DISTRESS_QUESTION_BOOM"/>
+							<choice>
+								<text>Do something onboard the ship.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+							<choice>
+								<text>Do nothing.</text>
+								<event/>
+							</choice>
+						</event>
+					</mod-append:choice>
+				</mod:findLike>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findName>
+
+
+
+	<event name="SLUG_DISTRESS_QUESTION_BOOM">
+		<quest>
+			<nonNebulaBeacon>true</nonNebulaBeacon>
+			<nebulaBeacon>false</nebulaBeacon>
+			<currentSector>true</currentSector>
+			<nextSector>true</nextSector>
+			<sectorEight>false</sectorEight>
+			<lastStand>false</lastStand>
+		</quest>
+		<img back="FM_CALM" planet="PLANET_INVISIBLE"/>
+		<text>You caught up with the Slug. In his panic, it appears you have pushed his engines too far, leaving him cornered and unable to escape. There is one lone moon floating in empty space nearby, with a planet behind you.</text>
+		<choice hidden="true" req="FM_BEAM_MINING_2">
+			<text>(Ishimura) Hail them, with your giant mining beam at the ready. How dare they waste your time.</text>
+			<event>
+				<text>You lecture the Slug on how truly obnoxious it is to be given pop-quizzes on the number of moons in a stupid nebula in the middle of nowhere, especially by some rude Slug. "I'm ssssorry I thoug-" the Slug stammers, but you don't let him finish.</text>
+				<choice hidden="true">
+					<text>Ask them how many moons are at this beacon.</text>
+					<event>
+						<text>"Uh....One?" the Slug replies nervously.</text>
+						<choice hidden="true" blue="true" req="pilot" lvl="1" >
+							<text>(Ishimura) Zero.</text>
+							<event>
+								<changeBackground>FM_MOON_BOOM</changeBackground>
+								<text>You obliterate the small moon behind the Slug, sending chunks of it flying everywhere. The Slug ship ends up being crushed as collateral when chunks of the moon ram into it, as it is unable to avoid them. Might as well collect some scrap from the damage you have caused.</text>
+								<item_modify>
+									<item type="scrap" min="40" max="73"/>
+									<item type="fuel" min="3" max="5"/>
+								</item_modify>
+								<choice hidden="true">
+									<text>Continue...</text>
+									<event load="MORALITY_UPDATE_FORGEMASTER_GENERAL"/>
+								</choice>
+							</event>
+						</choice>
+					</event>
+				</choice>
+			</event>
+		</choice>
+
+		<choice hidden="true" >
+			<text>Hail them, explaining you just want to talk.</text>
+			<event>
+				<text>You lecture the Slug on how truly obnoxious it is to be given pop-quizzes on the number of moons in a stupid nebula in the middle of nowhere, especially by some rude Slug. "I'm sorry I thoug-" the Slug stammers, but you don't let him finish.</text>
+				<choice hidden="true">
+					<text>Ask them what possessed them to be so truly obnoxious.</text>
+					<event>
+						<text>"Uh....I thought it was funny?" the Slug replies nervously.</text>
+						<choice hidden="true" >
+							<text>It wasn't, don't let me catch you doing it again.</text>
+							<event>
+								<text>The slug agrees to never do this again, and sends you a small gift as thanks.</text>
+								<item_modify>
+									<item type="missiles" min="5" max="10"/>
+									<item type="drones" min="3" max="7"/>
+								</item_modify>
+
+							</event>
+						</choice>
+					</event>
+				</choice>
+			</event>
+		</choice>
+	</event>
+
+	<mod:findName type="event" name="NEBULA_SALT_QUEST_2">
+
+		<mod:findLike type="choice">
+			<mod:findLike type="event">
+				<mod:findLike type="choice">
+					<mod:findLike type="event">
+
+						<mod-append:choice req="SHIP_TWISTED_ROCK" hidden="true" blue="true">
+							<text>("Cloaking") Hide!</text>
+							<event>
+								<text>You activate your "cloaking" system, but as you should have expected, it does absolutely nothing. The Clansmen laugh at you, and fire a volley straight into your ship's hull! They quickly stop laughing, however, once they see your ship tank the blow like it's nothing.</text>
+								<choice hidden="true">
+									<text>Continue...</text>
+									<event load="SALT_QUEST_2_STUPID"/>
+								</choice>
+							</event>
+						</mod-append:choice>
+
+						<mod:findWithChildLike type="choice" child-type="text">
+							<mod:selector>Nah.</mod:selector>
+							<mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>
+						</mod:findWithChildLike>
+
+					</mod:findLike>
+				</mod:findLike>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findName>
+	
+	<mod:findName type="event" name="DISTRESS_SLOCKNOG_INVESTIGATE">
+		<mod:findLike type="choice" limit="1">
+			<mod:findLike type="event">
+				<mod-append:choice req="LIST_CREW_PLATED" hidden="true" blue="true">
+					<text>(Plated Crew) Tell your plated crew to fix his ship completely.</text>
+					<event>
+						<text>"Oh, you are truly an unexpected blessssing. I have ssspent sso long running thisss empire, I have nearly forgotten the kindnessss othersss outside these nebulasss often have..."</text>
+						<choice hidden="true">
+							<text>Wait, did you say RUNNING this empire?</text>
+							<event load="SLOCKNOG_REVEAL"/>
+						</choice>
+					</event>
+				</mod-append:choice>
+
+				<mod:findWithChildLike type="choice" child-type="text">
+					<mod:selector>Refuse.</mod:selector>
+					<mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>
+				</mod:findWithChildLike>
+
+					
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findName>
+
+
+</FTL>

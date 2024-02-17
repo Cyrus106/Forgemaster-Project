@@ -28,9 +28,10 @@
 		<explore>Bellona Station 3.ogg</explore>
 	</track>
 
-	<track>
+	<track><!--composed by Altzeus-->
 		<name>Twisted</name>
-		<explore>Twisted.ogg</explore>
+		<explore>twistedAltEXPLORE.ogg</explore>
+		<combat>twistedAltBATTLE.ogg</combat>
 	</track>
 
 	</music>
@@ -57,6 +58,6 @@
 <fm_terminus_hit1 volume="4">weapons/fm_terminus1.ogg</fm_terminus_hit1>
 <fm_terminus_hit2 volume="4">weapons/fm_terminus2.ogg</fm_terminus_hit2>
 <fm_terminus_launch volume="5">weapons/fm_terminus_launch.ogg</fm_terminus_launch>
-<fm_hellflashShoot volume ="4">weapons/fm_chaingun_fire.ogg</fm_hellflashShoot>
+<fm_hellflashShoot volume="4">weapons/fm_chaingun_fire.ogg</fm_hellflashShoot>
 
 <silence volume="5">explosions/silence.ogg</silence>

@@ -2,22 +2,22 @@
 
 
 
-
-<img x="-78" y="-73" w="401" h="710" />
+<img x="-50" y="-39" w="345" h="657" />
 <offsets>
-	<floor x="200" y="355" />
-	<cloak x="-10" y="-10" />
+	<floor x="172" y="328" />
+	<cloak x="-25" y="-25" />
 </offsets>
-<weaponMounts>
-	<mount x="105" y="134" rotate="false" mirror="true" gib="4" slide="left" />
-	<mount x="296" y="134" rotate="false" mirror="false" gib="4" slide="right" />
-	<mount x="365" y="522" rotate="false" mirror="false" gib="5" slide="right" />
-	<mount x="36" y="522" rotate="false" mirror="true" gib="1" slide="left" />
-	<mount x="220" y="34" rotate="false" mirror="true" gib="4" slide="no" />
-</weaponMounts>
-<explosion>
-	<gib1><velocity min="0.2906228984643908" max="0.9687429948813028" /><direction min="148" max="164" /><angular min="-0.8685668213810986" max="0.8685668213810986" /><x>28</x><y>417</y></gib1><gib2><velocity min="0.19248004490533527" max="0.6416001496844509" /><direction min="169" max="185" /><angular min="-1.2071655713377145" max="1.2071655713377145" /><x>108</x><y>359</y></gib2><gib3><velocity min="0.11325527897553792" max="0.3775175965851264" /><direction min="-7" max="9" /><angular min="-1.13997997997998" max="1.13997997997998" /><x>121</x><y>181</y></gib3><gib4><velocity min="0.3478546438470526" max="1.1595154794901754" /><direction min="-8" max="8" /><angular min="-0.9959870064967515" max="0.9959870064967515" /><x>104</x><y>26</y></gib4><gib5><velocity min="0.2832852073334776" max="0.9442840244449254" /><direction min="195" max="211" /><angular min="-0.8538128695056122" max="0.8538128695056122" /><x>193</x><y>417</y></gib5></explosion>
 <thrusters sync="true">
-    <thruster x="47" y="671">mu_kestrel</thruster>
-    <thruster x="288" y="671">mu_kestrel</thruster>
+    <thruster x="19" y="645">mu_fed_cruiser_thruster_trio</thruster>
+    <thruster x="261" y="645">mu_fed_cruiser_thruster_trio</thruster>
+    <thruster x="141" y="548">mu_fed_cruiser_thruster_small</thruster>
+    <thruster x="181" y="548">mu_fed_cruiser_thruster_small</thruster>
 </thrusters>
+<weaponMounts>
+	<mount x="77" y="107" rotate="false" mirror="true" gib="4" slide="left" />
+	<mount x="268" y="107" rotate="false" mirror="false" gib="4" slide="right" />
+	<mount x="337" y="495" rotate="false" mirror="false" gib="5" slide="right" />
+	<mount x="8" y="495" rotate="false" mirror="true" gib="1" slide="left" />
+	<mount x="172" y="27" rotate="false" mirror="true" gib="4" slide="no" />
+</weaponMounts>
+<gib1><velocity min="0.2906228984643908" max="0.9687429948813028" /><direction min="148" max="164" /><angular min="-0.8685668213810986" max="0.8685668213810986" /><x>28</x><y>417</y></gib1><gib2><velocity min="0.19248004490533527" max="0.6416001496844509" /><direction min="169" max="185" /><angular min="-1.2071655713377145" max="1.2071655713377145" /><x>108</x><y>359</y></gib2><gib3><velocity min="0.11325527897553792" max="0.3775175965851264" /><direction min="-7" max="9" /><angular min="-1.13997997997998" max="1.13997997997998" /><x>121</x><y>181</y></gib3><gib4><velocity min="0.3478546438470526" max="1.1595154794901754" /><direction min="-8" max="8" /><angular min="-0.9959870064967515" max="0.9959870064967515" /><x>104</x><y>26</y></gib4><gib5><velocity min="0.2832852073334776" max="0.9442840244449254" /><direction min="195" max="211" /><angular min="-0.8538128695056122" max="0.8538128695056122" /><x>193</x><y>417</y></gib5></explosion>

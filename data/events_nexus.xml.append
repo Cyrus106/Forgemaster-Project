@@ -1,8 +1,0 @@
-<!--<mod:findName type="event" name="START_NEXUS">
-    <mod-append:triggeredEvent event="RELIMIT_WEAPONS_0" thisFight="true" clearOnJump="true">
-        <time amount="0.1"/>
-    </mod-append:triggeredEvent>
-    <mod-append:triggeredEvent event="RELIMIT_SHIELDS_0" thisFight="true" clearOnJump="true">
-        <time amount="0.1"/>
-    </mod-append:triggeredEvent>/>
-</mod:findName>-->

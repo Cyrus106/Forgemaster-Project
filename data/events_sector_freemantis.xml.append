@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mod:findName type = "event" name = "FREEMANTIS_WEIRD_TRADE">
+	<mod-append:choice req="SHIP_GUNBOM" lvl="1" max_group="600" hidden="true" blue="true">
+		<text>(GunBom) Am I truly not worthy?</text>
+		<event>
+			<text>The strange Mantis is silent for a moment, then seems to grow excited. "You! I know ship. This Winchester ship, very popular! I have nothing to to offer you but these coordinates to an old friend of mine. He treat good tasting humans well!</text>
+			<quest event="QUEST_MANTIS_CULTURE"/>
+			<choice hidden="true">
+				<text>See what they're selling.</text>
+				<event load="STORE_LOAD_FREEMANTIS"/>
+			</choice>
+		</event>
+	
+	</mod-append:choice>
+
+</mod:findName>	
+
+
+<event name="QUEST_MANTIS_CULTURE" unique="true">
+	<text>Soon after jumping in a Mantis vessel hails you.</text>
+	<ship load="SHIP_MANTIS_FIGHT" hostile="false"/> 
+	<choice hidden="true">
+		<text>Respond.</text>
+		<event>
+			<text>The screen flickers to show an overweight Mantis in tattered blue clothing. "Ah! Finally, Federation ship who respond to hail. Name is Kasaymiiikor the Flayer, but not be concerned. I have live long life of piracy and slaving, but now find myself filled with regret. I wish share with you less violent sides of Mantis culture."</text>
+			<choice hidden="true">
+				<text>Hear him out.</text>
+				<event>
+					<text>"Excellent! Excellent! You find my establishment at coordinates! I'll waiting for you."</text>
+					<quest event="QUEST_MANTIS_CULTURE_ARRIVAL"/>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>There are no peaceful parts of Mantis culture. Attack the monster.</text>
+				<event>
+					<text>Whatever the Mantis has in store, it can't be good. You prepare for combat.</text>
+					<ship hostile="true"/> 
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Not worth our time.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Fight the ship!</text>
+		<event>
+			<text>Whatever the Mantis has to say, you aren't interested. You prepare for combat.</text>
+			<ship hostile="true"/> 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ignore the ship.</text>
+		<event>
+			<text>You have no interest in the Mantis ship.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+<event name="QUEST_MANTIS_CULTURE_ARRIVAL">
+	<text>You find nothing at this beacon. You suspect it may be a trap, but quickly realize the co-ordinates must have been given in the incorrect order. You switch the co-ordiantes to the correct positions and continue exploring until you find a small Mantis station, with bloostains partly washed from the hull.</text>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>"Ah, Federation ship arrived! I hope you prepared for delectable Mantis cuisine!"</text>
+			<choice hidden="true">
+				<text>Sure...</text>
+				<event>
+					<text>Kasaymiiikor leads you and your crew to the dining table, where fist sized salt-crystals and entire bell-peppers are placed at the center. He then vanishes behind a door, followed not long after by shouts of "Oh by the queen's left pincer, my dish is ruined. But what if... what if I were to use human food, and disguise if as my own dish? Oh ho ho! Delightfully wicked, Kasaymiiikor."</text>
+					<choice hidden="true">
+						<text>We should see what's going on in there.</text>
+						<event>
+							<text>You burst into his kitchen, and the Mantis cries out in shock, its pincer resting on the handle of an old-Earth human microwave. "Ah! My friends! I was just... Flexing my pincers on the microwave, a common warrior exercise back on homeworld, care to join me?</text>
+							<choice hidden="true">
+								<text>Uh, no thanks.</text>
+								<event>
+									<text>You exit the kitchen and return to your seat.</text>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="QUEST_MANTIS_CULTURE_CONVERSATION"/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>Sure.</text>
+								<event>
+									<text>You try to flex on the microwave. You and the Mantis have a few moments moments of awkward silence before you return back to your seat.</text>
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="QUEST_MANTIS_CULTURE_CONVERSATION"/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Ransack the place.</text>
+						<event>
+							<text>The Mantis comes back out from the kitchen to find you looting everything in sight. He screams in terror and you're forced to kill him.</text>
+							<autoReward level="LOW">stuff</autoReward>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>This is getting really strange, we should leave.</text>
+						<event>
+							<text>You quickly leave the station and fly away as far as possible before the Mantis can return.</text>
+							<choice>
+								<text>Do something onboard the ship.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+							<choice>
+								<text>Do nothing.</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+<event name="QUEST_MANTIS_CULTURE_CONVERSATION">
+	<text>The Mantis emerges from the kitchen, carrying a dish that looks very strangely like old-Earth hamburgers.</text>
+	<choice hidden="true">
+		<text>I thought you said we were having Mantis cuisine?</text>
+		<event>
+			<text>"No no, I said cuisine of Mantis! Not be confused with the similar term "Mantis cuisine" which stand for food which made by Mantis!"</text>
+			<choice hidden="true">
+				<text>There's a difference?</text>
+				<event>
+					<text>"Y...yes? It is depend on regional dialect, yes."</text>
+					<choice hidden="true">
+						<text>What region?</text>
+						<event>
+							<text>"Uh... Faahakahak district."</text>
+							<choice hidden="true">
+								<text>I see...</text>
+								<event>
+									<text>You eat in silence for a while, save for the scratching sounds from the Mantis scraping its claws on the table. The hamburgers are overcooked, and hard to swallow. You cough, noticing the smoke billowing out from underneath the door.</text>
+									<choice hidden="true">
+										<text>Point out the fire.</text>
+										<event>
+											<text>The Mantis chokes for a minute. "I should, uh, would you excuse me for one second?"</text>
+											<choice hidden="true">
+												<text>Sure.</text>
+												<event>
+													<text>Kasaymiiikor scurries into the kitchen, and not long after returns. You can see a bright glow emitting from under the door now, and a quiet whistling noise. "Well, that wonderful, good time had by all, time to go!"</text>
+													<choice hidden="true">
+														<text>What is going on in there?</text>
+														<event>
+															<text>"Zoltan circus! Yes, very bright."</text>
+															<choice hidden="true">
+																<text>There's a Zoltan circus in your kitchen?</text>
+																<event>
+																	<text>"Yyyyess..."</text>
+																	<choice hidden="true">
+																		<text>May we see it?</text>
+																		<event>
+																			<text>"No."</text>
+																			<choice hidden="true">
+																				<text>Ok...</text>
+																				<event>
+																					<text>You wipe your mouth and leave the station. The Mantis waves as you go, as the station burns behind him. As you return to your ship, you find several crates wrapped up with ribbons. "From Kasaymiiikor with platonic love" it reads. When did he have time to do this?</text>
+																					<weapon name="LOOT_MANTIS_2"/>
+																						<item_modify>
+																							<item type="scrap" min="40" max="78"/>
+																							<item type="missiles" min="3" max="7"/>
+																							<item type="drones" min="2" max="4"/>
+																						</item_modify>
+																						<choice hidden="true">
+																						<text>Open another crate.</text>
+																						<event>
+																						<text>You open the crate</text>
+																						<drone name="FM_DEFENSE_3_MEGA" />
+																						<item_modify>
+																						<item type="scrap" min="23" max="78"/>
+																						<item type="missiles" min="2" max="7"/>
+																						<item type="drones" min="2" max="4"/>
+																						</item_modify>
+																						<choice hidden="true">
+																						<text>Open another crate.</text>
+																						<event>
+																						<text>You open the crate</text>
+																						<weapon name="LOOT_FEDERATION_1"/>
+																						<item_modify>
+																						<item type="scrap" min="23" max="78"/>
+																						<item type="missiles" min="3" max="7"/>
+																						<item type="drones" min="1" max="4"/>
+																						</item_modify>
+																						</event>
+																				</choice>
+																			</event>
+																		</choice>
+																</event>
+															</choice>
+														</event>
+													</choice>
+											</event>
+								</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		
+											<choice hidden="true">
+												<text>You've kept us here long enough. It's time we leave.</text>
+												<event>
+													<text>You gather up your crew and march out of the burning station. As you return to your ship, you find several crates wrapped up with ribbons. "From Kasaymiiikor with platonic love" it reads. When did he have time to do this? You open the first crate</text>
+													<weapon name="LOOT_FREEMANTIS_1"/>
+													<item_modify>
+													<item type="scrap" min="78" max="78"/>
+													<item type="missiles" min="7" max="7"/>
+													<item type="drones" min="4" max="4"/>
+													</item_modify>
+													<choice hidden="true">
+												<text>Open another crate.</text>
+												<event>
+													<text>You open the crate</text>
+													<drone name="FM_COMBAT_2_LASER_PLAYER" />
+													<item_modify>
+													<item type="scrap" min="78" max="78"/>
+													<item type="missiles" min="7" max="7"/>
+													<item type="drones" min="4" max="4"/>
+													</item_modify>
+													
+												
+											<choice hidden="true">
+												<text>Open another crate.</text>
+												<event>
+													<text>You open the crate</text>
+													<weapon name="LOOT_ZOLTAN_1"/>
+													<item_modify>
+													<item type="scrap" min="78" max="78"/>
+													<item type="missiles" min="7" max="7"/>
+													<item type="drones" min="4" max="4"/>
+													</item_modify>
+													</event>
+											</choice>
+												</event>
+											</choice>
+												</event>
+											</choice>
+										</event>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>

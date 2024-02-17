@@ -1,0 +1,60 @@
+<event name="BOON_SELECT_FM_PLATED">
+	<text>From nowhere, you hear a voice speaking to you. "The Boon... of Plated. Your Plated crew will gain... +1 Ability Charge. You may... thank the previous challenger. Or maybe you... do not? Who can say..."</text>
+	<hiddenAug>JUDGE_BOON_FM_PLATED</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="BOON_SELECT_FM_FORGEARMOR">
+	<text>From nowhere, you hear a voice speaking to you. "Grant of [Armouring] i-i-installed. Installed! Grant provides: Modular Hull stability increased, provides +2 usable upgrade notches. If -you- witness p-p-previous challenger; provide thanks. I advise you -visit- me as well."</text>
+	<hiddenAug>JUDGE_BOON_FM_FORGEARMOR</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="BOON_SELECT_FM_FORGEWEAPON">
+	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the BLESSING OF FORGES! Alastiar will visit all sectors free of charge, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
+	<hiddenAug>JUDGE_BOON_FM_FORGEWEAPON</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="BOON_SELECT_FM_FORGEWEAPON_2">
+	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the GREATER BLESSING OF FORGES! Alastiar will provide high grade crafting materials at every encounter, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
+	<hiddenAug>JUDGE_BOON_FM_FORGEWEAPON_2</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="BOON_SELECT_FM_ANCWEAPON">
+	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the BLESSING OF THE FOOLHARDY! Ancagalon Crystals created by ancagalon Weapons take 50% less damage, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
+	<hiddenAug>JUDGE_BOON_FM_ANCWEAPON</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="BOON_SELECT_FM_TERMINUS">
+	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the BLESSING OF TWISTEDNESS! Your Ship and Crew are 5% stronger in all stats, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
+	<hiddenAug>JUDGE_BOON_FM_TERMINUS</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>

@@ -1,0 +1,34 @@
+<mod:findName type="event" name="GARDEN_KERNEL_FOREST">
+	<mod-append:choice hidden="true" req="FM_FLAMETHROWER" >
+		<text>(Dazhbog) You have a raging pollen allergy and you swear this planet has more pollen than it has air. Time to burn it all to the ground.</text>
+		<event>
+			<text>After a few sweeping runs across the beautiful Orchid gardens, you successfully ignite as much of it as you can within your sightline. You then proceed to loot the bodies and vessels of the dead Orchids, while the survivors stare, too mortified to fight back.</text>
+
+			<item_modify>
+				<item type="scrap" min="56" max="78"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="MORALITY_UPDATE_FORGEMASTER_ORCHID"/>
+			</choice>
+		</event>
+	</mod-append:choice>
+</mod:findName>
+
+<event name="FM_ORCHID_MESSEDUP">
+	<text>[NOTORIETY INCREASED]
+	Your actions here, justifiable or not, will likely not go over well with the Forgemaster, as well as the Orchid. Continuously perform actions like this and you might start to see negative reactions from certain guards, Orchid forces, or the Forgemaster himself.
+
+		The acts you committed were so heinous, that a karmic rift in space tears open, releasing a very powerful, and VERY pissed off Orchid Multiverse Traveller. </text>
+	<ship load="SHIP_FM_MTBOSS_ORCHID_B_EXTREME" hostile="true"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text> The Orchid makes numerous insulting and offensive gestures in sign language at you, then quickly powers its weapons. </text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+</event>

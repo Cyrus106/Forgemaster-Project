@@ -4,6 +4,9 @@ local SetLimitAmount = mods.inferno.SetLimitAmount
 local real_projectile = mods.inferno.real_projectile
 local randomInt = mods.inferno.randomInt
 
+local getEmptyBars = function(ShipManager,sysId)
+  return ShipManager:GetSystemPowerMax(sysId) - ShipManager:GetSystemPower(sysId) - math.max(GetLimitAmount(ShipManager:GetSystem(sysId)),ShipManager:GetSystemPowerMax(sysId) - ShipManager:GetSystem(sysId).healthState.first)
+end
 
 --Overcharmed
 script.on_game_event("FMCORE_ONDAMAGE",false,
@@ -91,14 +94,25 @@ script.on_internal_event(Defines.InternalEvents.GET_AUGMENTATION_VALUE,
 function(ShipManager, AugName, AugValue)
 
   if AugName == "AUTO_COOLDOWN" and ShipManager:GetAugmentationValue("FM_MODULAR_HULL_FASTWEAPON") > 0 then
-    local emptyWeaponBars = ShipManager:GetSystemPowerMax(3) - ShipManager:GetSystemPower(3) - math.max(GetLimitAmount(ShipManager:GetSystem(3)),ShipManager:GetSystemPowerMax(3) - ShipManager:GetSystem(3).healthState.first)
+    local emptyWeaponBars = getEmptyBars(ShipManager,3)
     local cooldownModifier = (emptyWeaponBars * ShipManager:GetAugmentationValue("FM_MODULAR_HULL_FASTWEAPON")) --maybe i will later make it stackable
     AugValue = AugValue + cooldownModifier
   end
 
   return Defines.Chain.CONTINUE, AugValue
 end)
+script.on_internal_event(Defines.InternalEvents.GET_AUGMENTATION_VALUE,
+function(ShipManager, AugName, AugValue)
 
+  if AugName == "SHIELD_RECHARGE" and ShipManager:GetAugmentationValue("FM_MODULAR_HULL_FASTSHIELD") > 0 then
+    local emptyWeaponBars = getEmptyBars(ShipManager,0)
+    local cooldownModifier = (emptyWeaponBars * ShipManager:GetAugmentationValue("FM_MODULAR_HULL_FASTSHIELD")) --maybe i will later make it stackable
+    AugValue = AugValue + cooldownModifier
+  end
+
+  return Defines.Chain.CONTINUE, AugValue
+end)
+--[[
 script.on_game_event("FMCORE_ONJUMP", false, 
 function()
   if Hyperspace.ships.player:GetAugmentationValue("FM_MODULAR_HULL_FASTSHIELD") > 0 then
@@ -107,7 +121,7 @@ function()
     local newLimit = math.max(oldLimit, 4)
     SetLimitAmount(shieldSystem, newLimit)
   end
-end)
+end)--]]
 
 script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE,
 function(projectile, weapon)
@@ -115,6 +129,19 @@ function(projectile, weapon)
     local ship = Hyperspace.ships(projectile:GetOwnerId())
     ship:StartFire(ship:GetSystem(3).roomId)
   end
+end)
+
+script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION_PRE,
+function(ShipManager, Projectile, Damage, CollisionResponse)
+  if ShipManager:HasAugmentation("FM_MODULAR_HULL_FASTSHIELD") > 0 then
+    local rng = math.random()
+    local resChance = 1-0.8^(getEmptyBars(ShipManager,0)+1)
+    if rng < resChance and Projectile:GetType() ~= 5 then
+      Projectile:Kill()
+      return Defines.Chain.PREEMPT
+    end
+  end
+  return Defines.Chain.CONTINUE
 end)
 
 --[[

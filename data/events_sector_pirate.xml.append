@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mod:findName type = "eventList" name = "SMUGGLER_PLAYER_WEPS_LIST">
+		
+	<!--<mod-append:event>
+		<weapon name="LASER_FROST_2_PLAYER"/>
+		<item_modify>
+			<item type="scrap" min="-60" max="-80"/>
+		</item_modify> 
+	</mod-append:event>
+
+
+	<mod-append:event>
+		<weapon name="SHOTGUN_TOXIC_PLAYER"/>
+		<item_modify>
+			<item type="scrap" min="-80" max="-90"/>
+		</item_modify>
+	</mod-append:event>-->
+
+	<mod-append:event>
+		<weapon name="MISSILES_4_PLAYER"/>
+		<item_modify>
+			<item type="scrap" min="-80" max="-90"/>
+		</item_modify>
+	</mod-append:event>
+	
+	<!--<mod-append:event>
+		<weapon name="BEAM_GUILLOTINE_PLAYER"/>
+		<item_modify>
+			<item type="scrap" min="-60" max="-90"/>
+		</item_modify>
+	</mod-append:event>
+	
+	<mod-append:event>
+		<weapon name="BEAM_GUILLOTINE_PLAYER"/>
+		<item_modify>
+			<item type="scrap" min="-60" max="-90"/>
+		</item_modify>
+	</mod-append:event>
+	
+	<mod-append:event>
+		<weapon name="BEAM_2_PLAYER"/>
+		<item_modify>
+			<item type="scrap" min="-60" max="-90"/>
+		</item_modify>
+	</mod-append:event>-->
+	
+	
+
+</mod:findName>
+
+

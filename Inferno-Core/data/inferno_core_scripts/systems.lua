@@ -12,6 +12,7 @@ script.on_system_event(
     2147483647)--priority
 
 local COOLDOWN_AUGS = {
+  [9] = "FAST_TELEPORT",
   [10] = "FAST_CLOAK",
   [12] = "FAST_BATTERY",
   [14] = "FAST_MIND",
@@ -40,9 +41,9 @@ end)
 
 script.on_system_event(Defines.SystemEvents.ON_RUN,
 function(ship, sys)
-  if sys:GetId() == 15 then
+  if sys:GetId() == 12 then
     local increment = Hyperspace.FPS.SpeedFactor / 16
-    local modifier = 2 ^ ship:GetAugmentationValue("LONG_HACK") --Negative values make the duration shorter, longer values make it longer.
+    local modifier = 2 ^ ship:GetAugmentationValue("LONG_BATTERY") --Negative values make the duration shorter, longer values make it longer.
     sys.effectTimer.first = sys.effectTimer.first + (1 / modifier - 1) * increment
   end
 end)
@@ -66,5 +67,13 @@ function(shipManager)
         local fireImmunity = math.min(augValue, 1) / 2
         sys:PartialDamage(-fireImmunity * fires)
     end
+  end
+end)
+
+script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, 
+function(ShipManager)
+  local deionizationBoost = ShipManager:GetAugmentationValue("DEIONIZATION_BOOST")
+  for sys in vter(ShipManager.vSystemList) do
+    sys.lockTimer.currTime=sys.lockTimer.currTime + Hyperspace.FPS.SpeedFactor /16 * deionizationBoost
   end
 end)
