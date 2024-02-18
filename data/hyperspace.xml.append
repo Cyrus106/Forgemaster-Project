@@ -593,7 +593,11 @@
 			<hiddenAug>SHIP_LANIUS</hiddenAug>
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<crewLimit>10</crewLimit>
-			<systemLimit>8</systemLimit>
+			<crew>
+				<unique_eater name="bacon" room="0"/>
+				<unique_eater name="Speck" room="5"/>
+				<lanius_welder room="9"/>
+			</crew>
 			<customReactor maxLevel="35"/>
 		</mod-append:customShip>
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED5_2"><!--Shell-->
@@ -693,6 +697,14 @@
 					<roomAnim renderLayer="3">tele_ico</roomAnim>
 				</room>
 			</rooms>
+			<crew>
+				<human_engineer room="0" name="Zed"/>
+				<human_engineer room="3" name="Maynard"/>
+				<engi room="9" name="Dell"/>
+				<human_medic room="7" name="Ludwig"/>
+			</crew>
+			<systemLimit>10</systemLimit>
+			<customReactor maxLevel="35" />
 		</mod-append:customShip>
 
 		<mod-append:customShip name="PLAYER_SHIP_TWISTED6"><!--kestrel-->
@@ -2792,163 +2804,6 @@
 	<events> <!-- CRAFTING WEAPONS STORAGE CHECK EVENTS, Involves the Primary Menu, and Recursion checks to prevent infinite loops -->
 		<!-- AFTER THE <req>lists above are declared, the "STORAGE_CHECK_CREATE_XXX" code is needed, for taking you to the different sub menus of both selecting a weapon to craft, and crafting it!  -->
 
-
-		<!-- CRAFTING SELECT A WEAPON LIST! CREATE_LOAD IS WHAT ALLOWS THE STORAGE CHECK TO BE "recursive" and prevent infinite loops and crashes. CREATE_LOAD MUST call the regular version. so CREATE_LOAD must call CREATE, CREATE_LASER_LOAD must call CREATE_LASER, etc.
-		\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-		CRAFTING WEAPONS
-		\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
-		<event name="STORAGE_CHECK_CREATE" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<!-- CRAFTING WEAPONS THE SIX INITIAL CATEGORIES, RECURSIVE CHECKS TO PREVENT CRASHES. THESE ARE CALLED IN EVENTS_STORAGE.XML
-		\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-		CRAFTING WEAPONS
-		\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
-
-
-
-		<event name="STORAGE_CHECK_CREATE_LASER" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_LASER_ANOMALY_1" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_FM_FLAMETHROWER" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_FM_PHASER_SUFFOCATION" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_ION" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_FM_ENERGY_DISC1" recursive="true">
-			<checkCargo/>
-		</event>
-
-
-
-		<event name="STORAGE_CHECK_CREATE_FM_ENERGY_DISC1" recursive="true">
-			<checkCargo/>
-		</event>
-
-
-
-
-		<event name="STORAGE_CHECK_CREATE_BEAM" recursive="true">
-			<checkCargo/>
-		</event>
-
-
-
-		<event name="STORAGE_CHECK_CREATE_FM_BEAM_MINING_2" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_FM_BEAM_MINING_3" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_FM_BEAM_PARTICLE_PIERCE" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_FM_BEAM_GUILLOTINE_CHAIN" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_PINPOINT" recursive="true">
-			<checkCargo/>
-		</event>
-
-
-		<event name="STORAGE_CHECK_CREATE_FM_FOCUS_FUELED_1" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_1" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_2" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_FM_FOCUS_ENERGY_3" recursive="true">
-			<checkCargo/>
-		</event>
-		
-		<event name="STORAGE_CHECK_CREATE_FM_FOCUS_VIRUS" recursive="true">
-			<checkCargo/>
-		</event>
-
-
-		<event name="STORAGE_CHECK_CREATE_FLAK" recursive="true">
-			<checkCargo/>
-		</event>
-
-
-		<event name="STORAGE_CHECK_CREATE_FM_SHOTGUN_ANOMALY" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_EXPLOSIVES" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_FM_MISSILES_BURST_FIRE" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_FM_MISSILES_CLOAK_STUN" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_FM_BOMB_CRYSTAL_FIRE" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_FM_BOMB_CRYSTAL_BIO" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_ORGANIC" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_FM_BEAM_BASILISK" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_DRONES_BATTLE" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_DRONES_BATTLE" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_CREATE_UPGRADE" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="STORAGE_CHECK_UPGRADE_LISTFULL" recursive="true">
-			<checkCargo/>
-		</event>
-
-
 	</events>
 
 
@@ -2957,101 +2812,6 @@
 
 
 	<events> <!-- FORGEMASTER NPC CRAFT MENU -->
-		<event name="FM_FORGE_WEAPON_LOAD">
-			<loadEvent>FM_FORGE_WEAPON</loadEvent>
-		</event>
-		<event name="FM_FORGE_WEAPON" recursive="true">
-			<checkCargo/>
-		</event>
-
-
-
-		<event name="FM_FORGE_WEAPON_LASER_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_LASER_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->
-			<loadEvent>FM_FORGE_WEAPON_LASER</loadEvent>
-		</event>
-		<event name="FM_FORGE_WEAPON_LASER" recursive="true">
-			<checkCargo/>
-		</event>
-
-
-
-		<event name="FM_FORGE_WEAPON_ION_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_ION_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->
-			<loadEvent>FM_FORGE_WEAPON_ION</loadEvent>
-		</event>
-		<event name="FM_FORGE_WEAPON_ION" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="FM_FORGE_WEAPON_BEAM_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_BEAM_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->
-			<loadEvent>FM_FORGE_WEAPON_BEAM</loadEvent>
-		</event>
-		<event name="FM_FORGE_WEAPON_BEAM" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="FM_FORGE_WEAPON_PINPOINT_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_PINPOINT_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->
-			<loadEvent>FM_FORGE_WEAPON_PINPOINT</loadEvent>
-		</event>
-		<event name="FM_FORGE_WEAPON_PINPOINT" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="FM_FORGE_WEAPON_FLAK_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_FLAK_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->
-			<loadEvent>FM_FORGE_WEAPON_FLAK</loadEvent>
-		</event>
-		<event name="FM_FORGE_WEAPON_FLAK" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE_LOAD">
-			<loadEvent>NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE</loadEvent>
-		</event>
-		<event name="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE" recursive="true">
-			<checkCargo/>
-		</event>
-
-
-
-		<event name="FM_FORGE_WEAPON_EXPLOSIVES_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_EXPLOSIVE_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->
-			<loadEvent>FM_FORGE_WEAPON_EXPLOSIVES</loadEvent>
-		</event>
-		<event name="FM_FORGE_WEAPON_EXPLOSIVES" recursive="true">
-			<checkCargo/>
-		</event>
-
-
-
-		<event name="FM_FORGE_WEAPON_ORGANIC_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_ORGANIC_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->
-			<loadEvent>FM_FORGE_WEAPON_ORGANIC</loadEvent>
-		</event>
-		<event name="FM_FORGE_WEAPON_ORGANIC" recursive="true">
-			<checkCargo/>
-		</event>
-
-
-
-		<event name="FM_FORGE_WEAPON_UPGRADE_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_UPGRADE_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->
-			<loadEvent>FM_FORGE_WEAPON_UPGRADE</loadEvent>
-		</event>
-		<event name="FM_FORGE_WEAPON_UPGRADE" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="NPC_STORAGE_CHECK_UPGRADE_LISTFULL_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_UPGRADE_LISTFULL_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->
-			<loadEvent>NPC_STORAGE_CHECK_UPGRADE_LISTFULL</loadEvent>
-		</event>
-		<event name="NPC_STORAGE_CHECK_UPGRADE_LISTFULL" recursive="true">
-			<checkCargo/>
-		</event>
-
-		<event name="FM_FORGE_COMBAT_DRONE_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_UPGRADE_LISTFULL_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->
-			<loadEvent>FM_FORGE_COMBAT_DRONE</loadEvent>
-		</event>
-		<event name="FM_FORGE_COMBAT_DRONE" recursive="true">
-			<checkCargo/>
-		</event>
-
-
 
 	</events>
 
@@ -3837,9 +3597,6 @@
 
 	<events> <!-- Forgemaster new Blue options -->
 
-		<event name="DISTRESS_ENGI_PARTY_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_LASER_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->
-			<loadEvent>DISTRESS_ENGI_PARTY_REPEAT</loadEvent>
-		</event>
 		<event name="DISTRESS_ENGI_PARTY_REPEAT" recursive="true">
 
 		</event>
@@ -4002,26 +3759,11 @@
 	</events>
 
 	<events> <!-- Forgemaster event Story events -->
-		<event name="FM_STORAGE_CHECK_JOURNAL_LOAD">
-			<loadEvent>FM_STORAGE_CHECK_JOURNAL</loadEvent>
-		</event>
 		<event name="FM_STORAGE_CHECK_JOURNAL" recursive="true">
 
 		</event>
-
-		<event name="FM_LORE_ABSOLUTION_READ_LOAD">
-			<loadEvent>FM_LORE_ABSOLUTION_READ</loadEvent>
-		</event>
 		<event name="FM_LORE_ABSOLUTION_READ" recursive="true">
 
-		</event>
-
-		<event name="FORGEMASTER_PHONE_EVENT_LOAD">
-			<loadEvent ignoreUnique="true">FORGEMASTER_PHONE_EVENT</loadEvent>
-		</event>
-
-		<event name="FORGEMASTER_SECOND_PROMPT_LOAD">
-			<loadEvent>FORGEMASTER_SECOND_PROMPT</loadEvent>
 		</event>
 		<event name="FORGEMASTER_SECOND_PROMPT" recursive="true">
 
@@ -4107,28 +3849,15 @@
 			<loadEvent>FM_ATTACK_SECOND</loadEvent>
 		</event>
 
-		<event name="FM_ATTACK_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_LASER_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->
-			<loadEvent>FM_ATTACK</loadEvent>
-		</event>
 
-		<event name="FM_ATTACK" recursive="true">
-			<checkCargo/>
-		</event>
+		
 
-		<event name="FM_ATTACK_SECOND_LOAD"> <!-- RECURSIVE LOAD CHECK, FIND THE SAME EVENT NAME IN HYPERSPACE.XML "STORAGE_CHECK_CREATE_LASER_LOAD". This allows you to call an event in events_storage.xml without making an infinite loop! Needs both this end, and the hyperspace.xml side to work  -->
-			<loadEvent>FM_ATTACK_SECOND</loadEvent>
-		</event>
 
-		<event name="FM_ATTACK_SECOND" recursive="true">
-			<checkCargo/>
-		</event>
+		
 	</events>
 
 	<events> <!-- Forgemaster GET phone -->
 
-		<event name="FM_ATLAS_EQUIPMENT_LOAD">
-			<loadEvent>FM_ATLAS_EQUIPMENT</loadEvent>
-		</event>
 		<event name="FM_ATLAS_EQUIPMENT" recursive="true">
 
 		</event>
@@ -4198,6 +3927,9 @@
 		<variable name="fm_obtainedtwin" op="set" val="0"/> <!--did you get a twin from gunbom?-->
 		<variable name="fm_gunbomquest_taken" op="set" val="0"/> <!--accpetd gunbom quest-->
 		<variable name="fm_gunbomquest_rescued" op="set" val="0"/> <!--finished gunbom quest, helped winchester-->
+		<variable name="fm_arborealquest_exe" op="set" val="0"/><!--that other quest?-->
+		<variable name="fm_arborealquest_rev" op="set" val="0"/>
+		<variable name="fm_arborealquest_taken" op="set" val="0"/>
 		<variable name="twisted_blessing_counter" op="set" val="0"/> <!--"blessing" counter for twisted monk-->
 		<variable name="flak_resource_counter" op="set" val="0"/><!--Base flak resource counter for the Flak Forge-->
 		<variable name="flak_special_resource_counter" op= "set" val="0"/><!--Special flak resource counter for the Flak Forge-->
@@ -4505,50 +4237,6 @@
 		</race>
 	</crew>
 
-	<crew> <!-- Hull Repair crew -->
-		<race name="fm_repair_hull">
-			<maxHealth>0</maxHealth>
-			<repairSpeed>0</repairSpeed>
-			<canFight>false</canFight>
-			<canRepair>false</canRepair>
-			<canSabotage>false</canSabotage>
-			<canSuffocate>false</canSuffocate>
-			<fireDamageMultiplier>0</fireDamageMultiplier>
-			<resistsMindControl>true</resistsMindControl>
-			<canMan>false</canMan>
-			<noClone>true</noClone>
-			<canTeleport>false</canTeleport>
-			<noSlot>true</noSlot>
-			<noAI>true</noAI>
-			<validTarget>false</validTarget>
-			<canMove>false</canMove>
-			<snapToSlot>true</snapToSlot>
-			<controllable>false</controllable>
-			<selectable>false</selectable>
-			<canPhaseThroughDoors>true</canPhaseThroughDoors>
-			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
-			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
-			<damageMultiplier>0</damageMultiplier>
-			<damageTakenMultiplier>0.0</damageTakenMultiplier>
-			<animBase>mantis</animBase>
-			<deathSounds>
-				<deathSound>silence</deathSound>
-			</deathSounds>
-			<shootingSounds>
-				<shootingSound>mantisSpit1</shootingSound>
-				<shootingSound>mantisSpit2</shootingSound>
-				<shootingSound>mantisSpit3</shootingSound>
-			</shootingSounds>
-			<deathEffect>
-				<sysDamage>0</sysDamage>
-				<persDamage>0</persDamage>
-				<damage>-1</damage>
-				<friendlyFire>true</friendlyFire>
-				<shipFriendlyFire>true</shipFriendlyFire>
-			</deathEffect>
-		</race>
-	</crew>
-
 	<crew> <!-- Ion Anomaly crew -->
 		<race name="fm_ion_anomaly_crew">
 			<lowHealthThreshold>-1</lowHealthThreshold>
@@ -4799,180 +4487,6 @@
 		</race>
 	</crew>
 
-	<crew> <!-- Kontos Ion crew, 1 ion damage -->
-		<race name="fm_ion_instant_1">
-			<maxHealth>0</maxHealth>
-			<repairSpeed>0</repairSpeed>
-			<canFight>false</canFight>
-			<canRepair>false</canRepair>
-			<canSabotage>false</canSabotage>
-			<canSuffocate>false</canSuffocate>
-			<fireDamageMultiplier>0</fireDamageMultiplier>
-			<canMan>false</canMan>
-			<noClone>true</noClone>
-			<noSlot>true</noSlot>
-			<noAI>true</noAI>
-			<controllable>false</controllable>
-			<selectable>false</selectable>
-			<resistsMindControl>true</resistsMindControl>
-			<canTeleport>false</canTeleport>
-			<canPhaseThroughDoors>true</canPhaseThroughDoors>
-			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
-			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
-			<damageMultiplier>0</damageMultiplier>
-			<damageTakenMultiplier>0.0</damageTakenMultiplier>
-			<animBase>mantis</animBase>
-			<deathSounds>
-				<deathSound>silence</deathSound>
-			</deathSounds>
-			<shootingSounds>
-				<shootingSound>mantisSpit1</shootingSound>
-				<shootingSound>mantisSpit2</shootingSound>
-				<shootingSound>mantisSpit3</shootingSound>
-			</shootingSounds>
-			<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
-			<hasDeathExplosion>true</hasDeathExplosion>
-			<deathEffect>
-				<ion>1</ion>
-				<stun>3</stun>
-				<friendlyFire>true</friendlyFire>
-				<shipFriendlyFire>true</shipFriendlyFire>
-			</deathEffect>
-
-
-
-		</race>
-	</crew>
-
-	<crew> <!-- Ebony Ion crew, 2 ion damage -->
-		<race name="fm_ion_instant_2">
-			<maxHealth>0</maxHealth>
-			<repairSpeed>0</repairSpeed>
-			<canFight>false</canFight>
-			<canRepair>false</canRepair>
-			<canSabotage>false</canSabotage>
-			<canSuffocate>false</canSuffocate>
-			<fireDamageMultiplier>0</fireDamageMultiplier>
-			<canTeleport>false</canTeleport>
-			<resistsMindControl>true</resistsMindControl>
-			<canMan>false</canMan>
-			<noClone>true</noClone>
-			<noSlot>true</noSlot>
-			<noAI>true</noAI>
-			<controllable>false</controllable>
-			<selectable>false</selectable>
-			<canPhaseThroughDoors>true</canPhaseThroughDoors>
-			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
-			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
-			<damageMultiplier>0</damageMultiplier>
-			<damageTakenMultiplier>0.0</damageTakenMultiplier>
-			<animBase>mantis</animBase>
-			<deathSounds>
-				<deathSound>silence</deathSound>
-			</deathSounds>
-			<shootingSounds>
-				<shootingSound>mantisSpit1</shootingSound>
-				<shootingSound>mantisSpit2</shootingSound>
-				<shootingSound>mantisSpit3</shootingSound>
-			</shootingSounds>
-			<deathEffect>
-				<ion>2</ion>
-				<stun>3</stun>
-				<friendlyFire>true</friendlyFire>
-				<shipFriendlyFire>true</shipFriendlyFire>
-			</deathEffect>
-
-
-
-		</race>
-	</crew>
-
-	<crew> <!-- Hemlock Ion crew, 3 ion damage-->
-		<race name="fm_ion_instant_3">
-			<maxHealth>0</maxHealth>
-			<repairSpeed>0</repairSpeed>
-			<canFight>false</canFight>
-			<canRepair>false</canRepair>
-			<canSabotage>false</canSabotage>
-			<canSuffocate>false</canSuffocate>
-			<fireDamageMultiplier>0</fireDamageMultiplier>
-			<canMan>false</canMan>
-			<noClone>true</noClone>
-			<noSlot>true</noSlot>
-			<noAI>true</noAI>
-			<controllable>false</controllable>
-			<selectable>false</selectable>
-			<canPhaseThroughDoors>true</canPhaseThroughDoors>
-			<resistsMindControl>true</resistsMindControl>
-			<canTeleport>false</canTeleport>
-			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
-			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
-			<damageMultiplier>0</damageMultiplier>
-			<damageTakenMultiplier>0.0</damageTakenMultiplier>
-			<animBase>mantis</animBase>
-			<deathSounds>
-				<deathSound>silence</deathSound>
-			</deathSounds>
-			<shootingSounds>
-				<shootingSound>mantisSpit1</shootingSound>
-				<shootingSound>mantisSpit2</shootingSound>
-				<shootingSound>mantisSpit3</shootingSound>
-			</shootingSounds>
-			<deathEffect>
-				<ion>3</ion>
-				<stun>5</stun>
-				<friendlyFire>true</friendlyFire>
-				<shipFriendlyFire>true</shipFriendlyFire>
-			</deathEffect>
-
-
-
-		</race>
-	</crew>
-
-	<crew> <!-- Green Heart Ion crew, 4 ion damage -->
-		<race name="fm_ion_instant_4">
-			<maxHealth>0</maxHealth>
-			<repairSpeed>0</repairSpeed>
-			<canFight>false</canFight>
-			<canRepair>false</canRepair>
-			<canSabotage>false</canSabotage>
-			<canSuffocate>false</canSuffocate>
-			<fireDamageMultiplier>0</fireDamageMultiplier>
-			<canMan>false</canMan>
-			<noClone>true</noClone>
-			<noSlot>true</noSlot>
-			<noAI>true</noAI>
-			<controllable>false</controllable>
-			<canTeleport>false</canTeleport>
-			<resistsMindControl>true</resistsMindControl>
-			<selectable>false</selectable>
-			<canPhaseThroughDoors>true</canPhaseThroughDoors>
-			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
-			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
-			<damageMultiplier>0</damageMultiplier>
-			<damageTakenMultiplier>0.0</damageTakenMultiplier>
-			<animBase>mantis</animBase>
-			<deathSounds>
-				<deathSound>silence</deathSound>
-			</deathSounds>
-			<shootingSounds>
-				<shootingSound>mantisSpit1</shootingSound>
-				<shootingSound>mantisSpit2</shootingSound>
-				<shootingSound>mantisSpit3</shootingSound>
-			</shootingSounds>
-			<deathEffect>
-				<ion>4</ion>
-				<stun>6</stun>
-				<friendlyFire>true</friendlyFire>
-				<shipFriendlyFire>true</shipFriendlyFire>
-			</deathEffect>
-
-
-
-		</race>
-	</crew>
-
 	<crew> <!--Energy Flak Drain-->
 		<race name="fm_power_drain">
 			<maxHealth>0</maxHealth>
@@ -5046,45 +4560,6 @@
 			</passiveStatBoosts>
 
 
-
-		</race>
-	</crew>
-
-	<crew> <!-- Valefor Explosion crew -->
-		<race name="fm_explode_instant">
-			<maxHealth>0</maxHealth>
-			<repairSpeed>0</repairSpeed>
-			<canFight>false</canFight>
-			<canRepair>false</canRepair>
-			<canSabotage>false</canSabotage>
-			<canSuffocate>false</canSuffocate>
-			<fireDamageMultiplier>0</fireDamageMultiplier>
-			<resistsMindControl>true</resistsMindControl>
-			<canTeleport>false</canTeleport>
-			<canMan>false</canMan>
-			<noClone>true</noClone>
-			<noSlot>true</noSlot>
-			<noAI>true</noAI>
-			<controllable>false</controllable>
-			<selectable>false</selectable>
-			<canPhaseThroughDoors>true</canPhaseThroughDoors>
-			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
-			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
-			<damageMultiplier>0</damageMultiplier>
-			<damageTakenMultiplier>0.0</damageTakenMultiplier>
-			<animBase>mantis</animBase>
-			<deathSounds>
-				<deathSound>explosion_heavy</deathSound>
-			</deathSounds>
-			<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
-			<hasDeathExplosion>true</hasDeathExplosion>
-			<deathEffect>
-				<damage>1</damage>
-				<breachChance>2</breachChance>
-				<stun>6</stun>
-				<friendlyFire>true</friendlyFire>
-				<shipFriendlyFire>true</shipFriendlyFire>
-			</deathEffect>
 
 		</race>
 	</crew>
@@ -9688,10 +9163,6 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</mod:findLike>
 		</mod:findName>
 	</mod:findLike>
-
-	<augments> <!--TWILIGHT VESTS -->
-		<!--why was this here?-->
-	</augments>
 
 	<!--E-GRID IMMUNITY -->
 	<mod:findLike type="augments"> <!-- NO_GHOST -->

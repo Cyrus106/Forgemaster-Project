@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <event name="DISTRESS_ENGI_PARTY_LOAD"> <!--  Recursion call -->
-	<event/>
+	<loadEvent>DISTRESS_ENGI_PARTY_REPEAT</loadEvent>
 </event>
 
 <event name="DISTRESS_ENGI_PARTY_REPEAT">

@@ -93,7 +93,7 @@ script.on_game_event("FM_CREWKILL_TRACKER_EVENT", false, function() selfArm:rede
 script.on_internal_event(Defines.InternalEvents.GET_AUGMENTATION_VALUE,
 function(ShipManager, AugName, AugValue)
 
-  if AugName == "AUTO_COOLDOWN" and ShipManager:GetAugmentationValue("FM_MODULAR_HULL_FASTWEAPON") > 0 then
+  if ShipManager and AugName == "AUTO_COOLDOWN" and ShipManager:GetAugmentationValue("FM_MODULAR_HULL_FASTWEAPON") > 0 then
     local emptyWeaponBars = getEmptyBars(ShipManager,3)
     local cooldownModifier = (emptyWeaponBars * ShipManager:GetAugmentationValue("FM_MODULAR_HULL_FASTWEAPON")) --maybe i will later make it stackable
     AugValue = AugValue + cooldownModifier
@@ -104,7 +104,7 @@ end)
 script.on_internal_event(Defines.InternalEvents.GET_AUGMENTATION_VALUE,
 function(ShipManager, AugName, AugValue)
 
-  if AugName == "SHIELD_RECHARGE" and ShipManager:GetAugmentationValue("FM_MODULAR_HULL_FASTSHIELD") > 0 then
+  if ShipManager and AugName == "SHIELD_RECHARGE" and ShipManager:GetAugmentationValue("FM_MODULAR_HULL_FASTSHIELD") > 0 then
     local emptyWeaponBars = getEmptyBars(ShipManager,0)
     local cooldownModifier = (emptyWeaponBars * ShipManager:GetAugmentationValue("FM_MODULAR_HULL_FASTSHIELD")) --maybe i will later make it stackable
     AugValue = AugValue + cooldownModifier
@@ -146,16 +146,22 @@ end)
 
 local calculateCrits = function(ShipManager,Damage)
   local extraNotches = ShipManager:GetAugmentationValue("FM_MODULAR_UPGRADE_EXTRANOTCHES") 
-  local critRate = 0.02*(ShipManager:HasEquipment("FM_HULL_UPGRADE_POINTS") - (15 + extraNotches))
+  local critRate = 0.01*(ShipManager:HasEquipment("FM_HULL_UPGRADE_POINTS") - (15 + extraNotches))
   local extraRecursions = ShipManager:HasEquipment("FM_HULL_CAPSTONES")-3
+  local critmult=1
+  if Damage.iDamage==0 and Damage.iIonDamage==0 and Damage.iSystemDamage==0 then return end
   for i=0,extraRecursions do
-    if critRate<math.random() then
+    if critRate>math.random() then
       Damage.iDamage=Damage.iDamage*2
-      Damage.iIonDamage=Damage.iIonDamage*2
+      Damage.iIonDamage=math.min(Damage.iIonDamage*2,11)--fix for crash
       Damage.iSystemDamage=Damage.iSystemDamage*2
+      critmult=critmult*2
     else
       break
     end
+  end
+  if critmult>1 then
+    print(" you have taken a CRITICAL HIT: "..critmult.."x! ("..100*critRate^math.log(critmult,2).."%% chance)")
   end
 end
 
@@ -170,9 +176,9 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
     calculateCrits(ShipManager,Damage)
     return Defines.Chain.CONTINUE, beamHitType
   end, -1000)
-    
-    
-    
+
+
+
 --[[
 Must expose:
 

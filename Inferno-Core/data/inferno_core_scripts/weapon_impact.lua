@@ -273,20 +273,18 @@ do
       return Defines.Chain.CONTINUE, AugValue
     end)
 
-   
+end
 
-  end
-  
-  script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION_PRE, 
-  function(ShipManager, Projectile, Damage, CollisionResponse)
-      --Chance is integer between 0 and 1.
-      local resChance = ShipManager:GetAugmentationValue("FMCORE_ASTEROID_RESIST_SHIELD") 
-      local rng = math.random()
-      if rng < resChance and Projectile:GetType() == 2 then
-         return Defines.Chain.PREEMPT
-      end    
-      return Defines.Chain.CONTINUE
-  end)
+script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION_PRE, 
+function(ShipManager, Projectile, Damage, CollisionResponse)
+    --Chance is integer between 0 and 1.
+    local resChance = ShipManager:GetAugmentationValue("FMCORE_ASTEROID_RESIST_SHIELD") 
+    local rng = math.random()
+    if rng < resChance and Projectile:GetType() == 2 then
+        return Defines.Chain.PREEMPT
+    end    
+    return Defines.Chain.CONTINUE
+end)
 
 
 local AcidWeapons = {}

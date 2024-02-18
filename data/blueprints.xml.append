@@ -89,7 +89,7 @@
 		<health amount="30" />
 		<maxPower amount="9" />
 		<aug name="FM_CRUCIBLE_PLATING_PLAYER" />
-		<shieldImage>mupc_ariadne</shieldImage>
+		<shieldImage>mup_small_long2</shieldImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_GUNSHIP_FM" layout="zfm_gunhydra_a" img="zfm_gunhydra_a">
 		<class>GunBomination</class>
@@ -157,7 +157,7 @@
 		<maxPower amount="10" />
 		<aug name="EX_DRONE_SPEED" />
 		<aug name="DRONE_RECOVERY" />
-		<shieldImage>mup_kestrel_a</shieldImage>
+		<shieldImage>mup_standard1</shieldImage>
 		<cloakImage>mup_kestrel_a</cloakImage>
 	</shipBlueprint>
 
@@ -225,7 +225,7 @@
 		<maxPower amount="10" />
 		<aug name="EX_DRONE_SPEED" />
 		<aug name="DRONE_RECOVERY" />
-		<shieldImage>mup_kestrel_a</shieldImage>
+		<shieldImage>mup_standard1</shieldImage>
 		<cloakImage>mup_kestrel_a</cloakImage>
 	</shipBlueprint>
 
@@ -294,7 +294,7 @@
 		<maxPower amount="10" />
 		<aug name="REPAIR_ARM" />
 		<aug name="LOCKED_RAMMING_SPEED" />
-		<shieldImage>mup_kestrel_a</shieldImage>
+		<shieldImage>mup_standard1</shieldImage>
 		<cloakImage>mup_kestrel_a</cloakImage>
 	</shipBlueprint>
 
@@ -371,7 +371,7 @@
 		<maxPower amount="10" />
 		<aug name="EX_DRONE_SPEED" />
 		<aug name="DRONE_RECOVERY" />
-		<shieldImage>mup_kestrel_a</shieldImage>
+		<shieldImage>mup_standard1</shieldImage>
 		<cloakImage>mup_kestrel_a</cloakImage>
 	</shipBlueprint>
 
@@ -454,7 +454,7 @@
 		<aug name="EX_AUTO_COOLDOWN" />
 		<aug name="EX_AUTO_COOLDOWN" />
 		<aug name="EX_AUTO_COOLDOWN" />
-		<shieldImage>mup_kestrel_a</shieldImage>
+		<shieldImage>mup_standard1</shieldImage>
 		<cloakImage>mup_kestrel_a</cloakImage>
 	</shipBlueprint>
 
@@ -534,7 +534,7 @@
 		<health amount="30" />
 		<maxPower amount="13" />
 		<aug name="NANOBOT_DEFENSE_SYSTEM" />
-		<shieldImage>mup_kestrel_a</shieldImage>
+		<shieldImage>mup_standard1</shieldImage>
 		<cloakImage>mup_kestrel_a</cloakImage>
 	</shipBlueprint>
 
@@ -612,8 +612,9 @@
 		<maxPower amount="9" />
 		<aug name="LOCKED_SLUG_GEL" />
 		<aug name="BRAIN_DONATION" />
-		<shieldImage>mupc_irwin</shieldImage>
-		<cloakImage>mupc_irwin</cloakImage>
+		<shieldImage>mup_wide4</shieldImage>
+		<cloakImage>mup_clan_a</cloakImage>
+    	<mv-mapImage>map_icon_mup_clan_a</mv-mapImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED1_2" layout="zmt_player_duskbringer_suicide" img="player_ship_cracked_zmt_boss_duskbringer_suicide">
 		<class>Twisted Renegade Dusk</class>
@@ -693,7 +694,8 @@
 		<maxPower amount="8" />
 		<aug name="LOCKED_ENERGY_SHIELD" />
 		<aug name="ORCHID_KIDS" />
-		<shieldImage>mup_dusk_a</shieldImage>
+		<shieldImage>mup_small_long1</shieldImage>
+    	<mv-mapImage>map_icon_mup_dusk_a</mv-mapImage>
 		<cloakImage>mup_dusk_a</cloakImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED1_3" layout="zmt_player_engi_suicide" img="zmt_player_engi_suicide">
@@ -771,8 +773,9 @@
 		<maxPower amount="9" />
 		<aug name="EX_MEDBAY_NANO" />
 		<aug name="FM_DRONE_REPAIR_SYSTEM" />
-		<shieldImage>mup_engi_a</shieldImage>
+		<shieldImage>mup_orb1</shieldImage>
 		<cloakImage>mup_engi_a</cloakImage>
+    	<mv-mapImage>map_icon_mup_mvengi_a</mv-mapImage>
 	</shipBlueprint>
 
 	<shipBlueprint name="PLAYER_SHIP_TWISTED2" layout="zmt_player_freemantis_suicide" img="zmt_player_freemantis_suicide">
@@ -851,7 +854,8 @@
 			<unique_freddy room="7" name="Freddy" />
 		</crew>
 		<aug name="TWISTED_MANTIS_UPGRADER"/>
-		<shieldImage>mup_freemantis_a</shieldImage>
+		<shieldImage>mup_disk</shieldImage>
+   		<mv-mapImage>map_icon_mup_freemantis_a</mv-mapImage>
 		<cloakImage>mup_freemantis_a</cloakImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED2_2" layout="zmt_player_separatist_suicide" img="zmt_player_separatist_suicide">
@@ -932,8 +936,9 @@
 		<crewCount amount="1" class="fm_separatist_bronze" />
 		<crewCount amount="1" class="fm_separatist_cobalt" />
 		<aug name="TWISTED_SEPARATIST_TELEPORT" />
-		<shieldImage>mup_separatist_a</shieldImage>
+		<shieldImage>mup_orb1</shieldImage>
 		<cloakImage>mup_separatist_a</cloakImage>
+    	<mv-mapImage>map_icon_mup_separatist_a</mv-mapImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED2_3" layout="zmt_player_mantis_suicide" img="zmt_player_mantis_suicide">
 		<class>Twisted Renegade Mantis</class>
@@ -1007,8 +1012,9 @@
 		<health amount="30" />
 		<maxPower amount="9" />
 		<aug name="LOCKED_ZERG_CREW_STIMS" />
-		<shieldImage>mup_mantis_a</shieldImage>
+		<shieldImage>mup_long2</shieldImage>
 		<cloakImage>mup_mantis_a</cloakImage>
+		<mv-mapImage>map_icon_mup_mantis_a</mv-mapImage>
 	</shipBlueprint>
 
 	<shipBlueprint name="PLAYER_SHIP_TWISTED3" layout="zmt_player_monk_suicide" img="zmt_player_monk_suicide">
@@ -1089,8 +1095,9 @@
 		<crewCount amount="1" class="zoltan_monk" />
 		<crewCount amount="1" class="zoltan_monk" />
 		<aug name="PACIFISTIC_REGENERATION" />
-		<shieldImage>mup_monk_a</shieldImage>
+		<shieldImage>mup_small_long1</shieldImage>
 		<cloakImage>mup_monk_b</cloakImage>
+		<mv-mapImage>map_icon_mup_monk_a</mv-mapImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED3_2" layout="zmt_player_rock_suicide" img="zmt_player_rock_suicide">
 		<class>Twisted Renegade Rock</class>
@@ -1170,8 +1177,9 @@
 		<crewCount amount="1" class="rock" />
 		<aug name="OBSIDIAN_ARMOR_1" />
 		<aug name="TWISTED_HULL_ARM"/>
-		<shieldImage>mupc_ariadne</shieldImage>
+		<shieldImage>mup_small_long2</shieldImage>
 		<cloakImage>mup_rock_a</cloakImage>
+		<mv-mapImage>map_icon_mup_rock_a</mv-mapImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED3_3" layout="zmt_player_lostsun_suicide" img="zmt_player_lostsun_suicide">
 		<class>Twisted Renegade Lostsun</class>
@@ -1244,8 +1252,9 @@
 		<maxPower amount="12" />
 		<aug name="TWISTED_LOSTSUN" />
 		<aug name="REGEN_ARMOR" />
-		<shieldImage>mupc_ariadne</shieldImage>
-		<cloakImage>mup_lostsun_a</cloakImage>
+		<shieldImage>mup_small_long2</shieldImage>
+		<cloakImage>mup_lostsun_b</cloakImage>
+		<mv-mapImage>map_icon_mup_lostsun_a</mv-mapImage>
 	</shipBlueprint>
 
 	<shipBlueprint name="PLAYER_SHIP_TWISTED4" layout="zmt_player_kleptocracy_suicide" img="zmt_player_kleptocracy_suicide">
@@ -1323,8 +1332,9 @@
 		<crewCount amount="1" class="unique_slocknog" />
 		<crewCount amount="1" class="husk_slug_player" />
 		<aug name="TWISTED_ANCIENT_BOUNTY"/>
-		<shieldImage>mupc_ariadne</shieldImage>
-		<cloakImage>mupc_slocknog</cloakImage>
+		<shieldImage>mup_small_long2</shieldImage>
+		<cloakImage>mup_slug_a</cloakImage>
+		<mv-mapImage>map_icon_mup_slug_a</mv-mapImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED4_2" layout="zmt_player_stealth_suicide" img="zmt_player_stealth_suicide">
 		<class>Twisted Renegade [stealth]</class>
@@ -1403,8 +1413,9 @@
 		</crew>
 		<aug name="EX_CLOAK_FIRE" />
 		<aug name="EX_AUTO_COOLDOWN" />
-		<shieldImage>mupc_alkali</shieldImage>
+		<shieldImage>mup_standard2</shieldImage>
 		<cloakImage>mup_stealth_b</cloakImage>
+		<mv-mapImage>map_icon_mup_mvstealth_a</mv-mapImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED4_3" layout="zmt_player_zoltan_suicide" img="zmt_player_zoltan_suicide">
 		<class>Twisted Renegade Zoltan</class>
@@ -1478,8 +1489,9 @@
 		<health amount="30" />
 		<maxPower amount="7" />
 		<aug name="LAB_ZOLTAN_LIMIT_RELEASE" />
-		<shieldImage>mup_zoltan_a</shieldImage>
+		<shieldImage>mup_small_long1</shieldImage>
 		<cloakImage>mup_zoltan_a</cloakImage>
+		<mv-mapImage>map_icon_mup_zoltan_a</mv-mapImage>
 	</shipBlueprint>
 
 	<shipBlueprint name="PLAYER_SHIP_TWISTED5" layout="zmt_player_lanius_suicide" img="zmt_player_lanius_suicide">
@@ -1488,7 +1500,7 @@
 		<unlock id="ship_PLAYER_SHIP_TWISTED_LANIUS_unlock"/>
 		<desc>The Lanius race is well known for their metal-manipulation abilities, and this ship heavily capitalizes upon that. Using a special forge, this ship can repurpose other weapons into flak! (Can also install 10 toggle flak artillery for the time being, for the funny)</desc>
 		<systemList>
-			<artillery power="1" room="1" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+			<!--<artillery power="1" room="1" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
 			<artillery power="1" room="2" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
 			<artillery power="1" room="6" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
 			<artillery power="1" room="7" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
@@ -1496,7 +1508,7 @@
 			<artillery power="1" room="15" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
 			<artillery power="1" room="18" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
 			<artillery power="1" room="19" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
-			<artillery power="1" room="21" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />
+			<artillery power="1" room="21" start="false" weapon="SHOTGUN_TOGGLE_FIRE_INVIS" img="room_artillery" />-->
 			<battery power="1" max="2" room="22" start="false" img="room_battery_10" />
 			<cloaking power="1" room="20" start="false" img="room_cloaking_3" />
 			<clonebay power="1" room="4" start="false">
@@ -1559,15 +1571,11 @@
 		<droneList drones="5" count="2" />
 		<health amount="30" />
 		<maxPower amount="7" />
-		<crew>
-			<unique_eater name="bacon" room="0"/>
-			<unique_eater name="Speck" room="5"/>
-			<lanius_welder room="9"/>
-		</crew>
 		<aug name="EX_AUTO_COOLDOWN" />
 		<aug name="TWISTED_FLAK_FORGE"/>
-		<shieldImage>mupc_anointed</shieldImage>
-		<cloakImage>mupc_eater</cloakImage>
+		<shieldImage>mup_disk</shieldImage>
+		<cloakImage>mup_lanius_a</cloakImage>
+		<mv-mapImage>map_icon_mup_lanius_a</mv-mapImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED5_2" layout="zmt_player_shell_suicide" img="zmt_player_shell_suicide">
 		<class>Twisted Renegade Shell</class>
@@ -1644,8 +1652,9 @@
 		<crewCount amount="1" class="shell_mechanic" />
 		<crewCount amount="1" class="shell_guardian" />
 		<aug name="LOCKED_DECONSTRUCTIVE_GAS" />
-		<shieldImage>mupc_alkali</shieldImage>
+		<shieldImage>mup_standard2</shieldImage>
 		<cloakImage>mup_shell_c</cloakImage>
+		<mv-mapImage>map_icon_mup_shell_a</mv-mapImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED5_3" layout="zmt_player_engineer_suicide" img="zmt_player_engineer_suicide">
 		<class>Twisted Renegade Engineer</class>
@@ -1719,17 +1728,10 @@
 		</droneList>
 		<health amount="30" />
 		<maxPower amount="8" />
-		<crew>
-			<human_engineer room="0" name="Zed"/>
-			<human_engineer room="3" name="Maynard"/>
-			<engi room="9" name="Dell"/>
-			<human_medic room="7" name="Ludwig"/>
-		</crew>
-		<systemLimit>10</systemLimit>
-		<customReactor maxLevel="35" />
 		<aug name="EX_DRONE_SPEED" />
-		<shieldImage>mupc_a55</shieldImage>
-		<cloakImage>mupc_a55</cloakImage>
+		<shieldImage>mup_giant</shieldImage>
+		<cloakImage>mup_engineer_a</cloakImage>
+		<mv-mapImage>map_icon_mup_engineer_a</mv-mapImage>
 	</shipBlueprint>
 
 
@@ -1808,7 +1810,7 @@
 		<crewCount amount="1" class="gbzuul" />
 		<crewCount amount="1" class="gbvinz" />
 		<aug name="TWISTED_KESTREL_GHOST_SUMMON"/>
-		<shieldImage>mup_kestrel_a</shieldImage>
+		<shieldImage>mup_standard1</shieldImage>
 		<cloakImage>mup_kestrel_a</cloakImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED6_2" layout="zmt_player_fed_suicide" img="zmt_player_fed_suicide">
@@ -1881,8 +1883,9 @@
 		<health amount="30" />
 		<maxPower amount="9" />
 		<aug name="EX_AUTO_COOLDOWN" />
-		<shieldImage>mup_federation_a</shieldImage>
+		<shieldImage>mup_long3</shieldImage>
 		<cloakImage>mup_federation_a</cloakImage>
+		<mv-mapImage>map_icon_mup_mvfed_a</mv-mapImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED6_3" layout="zmt_player_orchid_suicide" img="zmt_player_orchid_suicide">
 		<class>Twisted Renegade Orchid</class>
@@ -1911,7 +1914,7 @@
 				</slot>
 			</engines>
 			<hacking power="1" room="2" start="false" img="room_hacking_5" />
-			<medbay power="1" room="11" start="true" img="room_medbay">
+			<medbay power="2" room="11" start="true" img="room_medbay">
 				<slot>
 					<number>1</number>
 				</slot>
@@ -1956,10 +1959,11 @@
 		</droneList>
 		<health amount="30" />
 		<maxPower amount="10" />
-		<aug name="LAB_ORCHID_THORNS" />
-		<aug name="FM_ORCHID_HEAL" />
-		<shieldImage>mupc_alkali</shieldImage>
-		<cloakImage>mupe_orchid</cloakImage>
+		<!--<aug name="LAB_ORCHID_THORNS" />
+		<aug name="FM_ORCHID_HEAL" />-->
+		<shieldImage>mup_standard2</shieldImage>
+		<cloakImage>mup_orchid_a</cloakImage>
+		<mv-mapImage>map_icon_mup_orchid_a</mv-mapImage>
 	</shipBlueprint>
 
 	<shipBlueprint name="PLAYER_SHIP_TWISTED7" layout="zmt_player_crystal_suicide" img="zmt_player_crystal_suicide">
@@ -2038,8 +2042,9 @@
 		<crewCount amount="1" class="crystal" />
 		<aug name="LOCKED_TWISTED_CRYSTAL_ARMOR_50" />
 		<aug name="COMBAT_REPAIR" />
-		<shieldImage>mupc_alkram</shieldImage>
-		<cloakImage>mupc_ruwen</cloakImage>
+		<shieldImage>mup_long2</shieldImage>
+		<cloakImage>mup_crystal_a</cloakImage>
+		<mv-mapImage>map_icon_mup_mvcrystal_a</mv-mapImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED7_2" layout="zmt_player_tuco_suicide" img="zmt_player_tuco_suicide">
 		<class>Twisted Renegade Tuco</class>
@@ -2116,8 +2121,9 @@
 		<crewCount amount="1" class="blobswarm" />
 		<crewCount amount="1" class="blobswarm" />
 		<!-- <aug name="LOCKED_TAROT_CARDS"/> -->
-		<shieldImage>mup_tuco_a</shieldImage>
+		<shieldImage>mup_small_long2</shieldImage>
 		<cloakImage>mup_tuco_a</cloakImage>
+		<mv-mapImage>map_icon_mup_tuco_a</mv-mapImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED7_3" layout="zmt_player_leech_suicide" img="player_ship_cracked_zmt_boss_leech_suicide">
 		<class>Twisted Renegade Leech</class>
@@ -2198,8 +2204,9 @@
 		<crewCount amount="1" class="leech" />
 		<aug name="EX_ION_ARMOR" />
 		<aug name="LOCKED_SUPER_DEPRESSION" />
-		<shieldImage>mupc_alkali</shieldImage>
-		<cloakImage>mupc_tyrdeo</cloakImage>
+		<shieldImage>mup_disk</shieldImage>
+		<cloakImage>mup_leech_a</cloakImage>
+		<mv-mapImage>map_icon_mup_leech_a</mv-mapImage>
 	</shipBlueprint>
 
 
@@ -2331,80 +2338,7 @@
 			<power>Every 9 seconds, automatically deals 1 ion damage to the current room and briefly stuns all crew there. Deals low damage in combat. Slows the movement speed of all other crew in the room. Deals 2 ion damage on death.</power>
 		</powerList>
 	</crewBlueprint>
-
-	<crewBlueprint name="fm_ion_instant_1"> <!--Kontos ion-->
-
-		<desc>Ion Pulse</desc>
-		<title>Ion Pulse</title>
-		<short>Ion Pulse</short>
-		<cost>50</cost>
-		<bp>2</bp>
-		<rarity>0</rarity>
-		<powerList>
-			<power>: -how'd you actually manage to select this</power>
-			<power>: -seriously, it is quite impressive</power>
-		</powerList>
-		<colorList>
-			<layer>
-				<color r="17" g="255" b="0" a="0.7"/>
-			</layer>
-		</colorList>
-	</crewBlueprint>
-
-	<crewBlueprint name="fm_ion_instant_2"> <!--Ebony ion-->
-		<desc>Ion Pulse</desc>
-		<title>Ion Pulse</title>
-		<short>Ion Pulse</short>
-		<cost>50</cost>
-		<bp>2</bp>
-		<rarity>0</rarity>
-		<powerList>
-			<power>: -how'd you actually manage to select this</power>
-			<power>: -seriously, it is quite impressive</power>
-		</powerList>
-		<colorList>
-			<layer>
-				<color r="17" g="255" b="0" a="0.7"/>
-			</layer>
-		</colorList>
-	</crewBlueprint>
-
-	<crewBlueprint name="fm_ion_instant_3"> <!--Hemlock ion-->
-		<desc>Ion Pulse</desc>
-		<title>Ion Pulse</title>
-		<short>Ion Pulse</short>
-		<cost>50</cost>
-		<bp>2</bp>
-		<rarity>0</rarity>
-		<powerList>
-			<power>: -how'd you actually manage to select this</power>
-			<power>: -seriously, it is quite impressive</power>
-		</powerList>
-		<colorList>
-			<layer>
-				<color r="17" g="255" b="0" a="0.7"/>
-			</layer>
-		</colorList>
-	</crewBlueprint>
-
-	<crewBlueprint name="fm_ion_instant_4">  <!--Green Heart ion-->
-		<desc>Ion Pulse</desc>
-		<title>Ion Pulse</title>
-		<short>Ion Pulse</short>
-		<cost>50</cost>
-		<bp>2</bp>
-		<rarity>0</rarity>
-		<powerList>
-			<power>: -how'd you actually manage to select this</power>
-			<power>: -seriously, it is quite impressive</power>
-		</powerList>
-		<colorList>
-			<layer>
-				<color r="17" g="255" b="0" a="0.7"/>
-			</layer>
-		</colorList>
-	</crewBlueprint>
-
+	
 	<crewBlueprint name="fm_power_drain"> <!--Energy Flak Drain-->
 		<desc>Power Drain</desc>
 		<title>Power Drain</title>
@@ -2414,62 +2348,6 @@
 		<rarity>0</rarity>
 		<powerList>
 			<power>: -Draining 2 power from any system in the room for 12 seconds</power>
-		</powerList>
-		<colorList>
-			<layer>
-				<color r="17" g="255" b="0" a="0.7"/>
-			</layer>
-		</colorList>
-	</crewBlueprint>
-
-	<crewBlueprint name="fm_explode_instant">   <!--Explosion Beam-->
-		<desc>Explosion beam</desc>
-		<title>Explosion beam</title>
-		<short>Explosion beam</short>
-		<cost>50</cost>
-		<bp>2</bp>
-		<rarity>0</rarity>
-		<powerList>
-			<power>: -how'd you actually manage to select this</power>
-			<power>: -seriously, it is quite impressive</power>
-		</powerList>
-		<colorList>
-			<layer>
-				<color r="17" g="255" b="0" a="0.7"/>
-			</layer>
-		</colorList>
-	</crewBlueprint>
-
-	<crewBlueprint name="fm_repair_hull"> <!--Heals 1 hull damage-->
-
-		<desc>Hull Repair</desc>
-		<title>Hull Repair</title>
-		<short>Hull Repair</short>
-		<cost>50</cost>
-		<bp>2</bp>
-		<rarity>0</rarity>
-		<powerList>
-			<power>: -how'd you actually manage to select this</power>
-			<power>: -seriously, it is quite impressive</power>
-		</powerList>
-		<colorList>
-			<layer>
-				<color r="17" g="255" b="0" a="0.7"/>
-			</layer>
-		</colorList>
-	</crewBlueprint>
-
-	<crewBlueprint name="fm_human_rip"> <!--Rebel Ripper-->
-
-		<desc>Hull Repair</desc>
-		<title>Hull Repair</title>
-		<short>Hull Repair</short>
-		<cost>50</cost>
-		<bp>2</bp>
-		<rarity>0</rarity>
-		<powerList>
-			<power>: -how'd you actually manage to select this</power>
-			<power>: -seriously, it is quite impressive</power>
 		</powerList>
 		<colorList>
 			<layer>

@@ -2946,7 +2946,7 @@
 				<choice hidden="true">
 					<text>Continue...</text>
 					<event>
-						<loadEvent>FM_FORGE_WEAPON_LOAD</loadEvent>
+						<loadEvent>STORAGE_CHECK_CREATE_LOAD</loadEvent>
 					</event>
 				</choice>
 			</event>

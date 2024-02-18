@@ -249,12 +249,8 @@
 	<event name="FORGEMASTER_COUNTER">
 		<text>A sudden hail flashes on your screen, and Alastair appears. "A warrior's spirit in you lad! Let's make sure you fight me fairly, aye?" Alastair's hand on the communication display flashes with a brilliant light, and you feel your ship shift slightly.</text>
 		<status type="limit" target="player" system="hacking" amount="1"/>
-		<status type="limit" target="player" system="cloaking" amount="4"/>
-		<status type="limit" target="player" system="clonebay" amount="3"/>
-		<status type="limit" target="player" system="medbay" amount="3"/>
 		<status type="limit" target="player" system="teleporter" amount="3"/>
 		<status type="limit" target="player" system="shields" amount="7"/>
-		<status type="limit" target="player" system="mind" amount="2"/>
 		<status type="limit" target="enemy" system="teleporter" amount="0"/>
 		<boarders min="2" max="2" class="fm_fire_intruder"/>
 
@@ -697,7 +693,7 @@
 			<event load="FM_QUEST_ARBOREAL_TAKEN"/>
 		</choice>
 
-		<choice hidden="true" req="SEC SECTOR_ORCHID_UNIQUE" lvl="1" max_group="1" blue="true"> <!--  ARBOREAL QUEST-->
+		<choice hidden="true" req="SEC SECTOR_GATHERING_UNIQUE" lvl="1" max_group="1" blue="true"> <!--  ARBOREAL QUEST-->
 			<text>Examine a glass case containing a shattered green crystal.</text>
 			<event load="FM_QUEST_ARBOREAL_INTRO"/>
 		</choice>
@@ -752,7 +748,7 @@
 
 
 	<event name="FORGEMASTER_PHONE_EVENT_LOAD"> <!--  Recursion call -->
-		<event/>
+		<loadEvent ignoreUnique="true">FORGEMASTER_PHONE_EVENT</loadEvent>
 	</event>
 	<event name="FORGEMASTER_PHONE_EVENT" >     <!--  The primary event you will encounter him, removes your "phone call" aug if you called him -->
 		<text load="TEXT_FORGEMASTER_GENERIC"/>
@@ -900,7 +896,7 @@
 	</event>
 
 	<event name="FM_ATTACK_LOAD">	<!--LASERS CRAFT CATEGORY-->
-		<event/>
+		<loadEvent>FM_ATTACK</loadEvent>
 	</event>
 	<event name="FM_ATTACK"> <!--  Attack him -->
 		<text>For some insane reason, you have decided to attack the Forgemaster. Are you really sure you want to do this? He's been so friendly! What could you possibly have to gain?.</text> <!--  PLACEHOLDER TEXT, REPLACE!! -->
@@ -965,9 +961,6 @@
 		</choice>
 	</event>
 
-	<event name="FM_ATTACK_SECOND_LOAD">	<!--LASERS CRAFT CATEGORY-->
-		<event/>
-	</event>
 	<event name="FM_ATTACK_SECOND"> <!--  For the Jump event -->
 		<text>For some insane reason, you have decided to attack the Forgemaster. Are you really sure you want to do this? He's been so friendly! What could you possibly have to gain?.</text>
 		<choice hidden="true">
@@ -1068,7 +1061,7 @@
 
 
 	<event name="FORGEMASTER_SECOND_PROMPT_LOAD">	<!--RECURSION-->
-		<event/>
+		<loadEvent>FORGEMASTER_SECOND_PROMPT</loadEvent>
 	</event>
 	<event name="FORGEMASTER_SECOND_PROMPT" > <!--  Triggers if you visit the store, then try to jump -->
 		<text>Alastair speaks up over your comms "Before you go lad, are you sure you don't need to craft anything?</text>
@@ -1245,7 +1238,7 @@
 	choice required be a weapon list (such as a list of beams used as components) instead!
 	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
 	<event name="FM_FORGE_WEAPON_LOAD">
-		<event/>
+		<loadEvent>FM_FORGE_WEAPON</loadEvent>
 	</event>
 	<event name="FM_FORGE_WEAPON">
 		<text>Select a weapon category to forge.</text>
@@ -1376,7 +1369,7 @@
 
 	<!--LASERS CRAFT CATEGORY-->
 	<event name="FM_FORGE_WEAPON_LASER_LOAD">	<!--LASERS CRAFT CATEGORY-->
-		<event/>
+		<loadEvent>FM_FORGE_WEAPON_LASER</loadEvent>
 	</event>
 	<event name="FM_FORGE_WEAPON_LASER">
 
@@ -1491,7 +1484,7 @@
 
 	<!--ION/ENERGY CRAFT CATEGORY-->
 	<event name="FM_FORGE_WEAPON_ION_LOAD">	<!--ION/ENERGY CRAFT CATEGORY-->
-		<event/>
+		<loadEvent>FM_FORGE_WEAPON_ION</loadEvent>
 	</event>
 	<event name="FM_FORGE_WEAPON_ION">
 		<text>Which weapon would you like to craft?</text>
@@ -1587,7 +1580,7 @@
 
 	<!--BEAM/Pinpoint CRAFT CATEGORY-->
 	<event name="FM_FORGE_WEAPON_BEAM_LOAD">	<!--BEAMCRAFT CATEGORY-->
-		<event/>
+		<loadEvent>FM_FORGE_WEAPON_BEAM</loadEvent>
 	</event>
 	<event name="FM_FORGE_WEAPON_BEAM">
 		<text>Which weapon would you like to craft?</text>
@@ -1671,7 +1664,7 @@
 
 
 	<event name="FM_FORGE_WEAPON_PINPOINT_LOAD">	<!--BEAM/Pinpoint CRAFT CATEGORY-->
-		<event/>
+		<loadEvent>FM_FORGE_WEAPON_PINPOINT</loadEvent>
 	</event>
 	<event name="FM_FORGE_WEAPON_PINPOINT">
 		<text>Which weapon would you like to craft?</text>
@@ -1767,7 +1760,7 @@
 
 	<!--FLAK CRAFT CATEGORY-->
 	<event name="FM_FORGE_WEAPON_FLAK_LOAD">	<!--FLAK CRAFT CATEGORY-->
-		<event/>
+		<loadEvent>FM_FORGE_WEAPON_FLAK</loadEvent>
 	</event>
 	<event name="FM_FORGE_WEAPON_FLAK">
 		<text>Which weapon would you like to craft?</text>
@@ -1784,7 +1777,7 @@
 
 		<choice req="FM_SHOTGUN_BRONZE_LIST_FORGE" lvl="1" blue="false" hidden="true">
 			<text>Infuse your Flak II with crystalline growths to forge the Bronze Flak.[Cost: 10~]</text>
-			<event load="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE"/>
+			<event load="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE_LOAD"/>
 		</choice>
 
 		<choice req="FM_SHOTGUN_BRONZE_LIST_FORGE" lvl="0" max_lvl="0" blue="false" hidden="true">
@@ -1833,7 +1826,7 @@
 
 	<!--EXPLOSIVE CRAFT CATEGORY-->
 	<event name="FM_FORGE_WEAPON_EXPLOSIVES_LOAD">	<!--EXPLOSIVE CRAFT CATEGORY-->
-		<event/>
+		<loadEvent>FM_FORGE_WEAPON_EXPLOSIVES</loadEvent>
 	</event>
 	<event name="FM_FORGE_WEAPON_EXPLOSIVES">
 		<text>Which weapon would you like to craft?</text>
@@ -1953,7 +1946,7 @@
 
 	<!--ORGANIC CRAFT CATEGORY-->
 	<event name="FM_FORGE_WEAPON_ORGANIC_LOAD">	<!--ORGANIC CRAFT CATEGORY-->
-		<event/>
+		<loadEvent>FM_FORGE_WEAPON_ORGANIC</loadEvent>
 	</event>
 	<event name="FM_FORGE_WEAPON_ORGANIC">
 		<text>Which weapon would you like to craft?</text>
@@ -1978,7 +1971,7 @@
 
 	<!--UPGRADE CRAFT CATEGORY-->
 	<event name="FM_FORGE_WEAPON_UPGRADE_LOAD">	<!--UPGRADE CRAFT CATEGORY-->
-		<event/>
+		<loadEvent>FM_FORGE_WEAPON_UPGRADE</loadEvent>
 	</event>
 	<event name="FM_FORGE_WEAPON_UPGRADE">
 		<text>Which weapon would you like to craft?</text>
@@ -1986,7 +1979,7 @@
 
 		<choice req="FM_SHOTGUN_BRONZE_LIST_UPGRADE" lvl="1" blue="false" hidden="true" max_group="1">
 			<text>Upgrade the Metal Flak Line</text>
-			<event load="NPC_STORAGE_CHECK_UPGRADE_LISTFULL"/>
+			<event load="NPC_STORAGE_CHECK_UPGRADE_LISTFULL_LOAD"/>
 		</choice>
 
 		<choice req="FM_SHOTGUN_BRONZE_LIST_UPGRADE" lvl="0" blue="false" hidden="true" max_group="1">
@@ -3824,7 +3817,7 @@
 	Hide any options that the player doesn't have, grey out option only if they have none!-->
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE_LOAD">	<!--SHOTGUN BRONZE LOAD-->
-		<event/>
+		<loadEvent>NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE</loadEvent>
 	</event>
 
 	<event name="NPC_STORAGE_CHECK_CREATE_FM_SHOTGUN_BRONZE">
@@ -5133,7 +5126,7 @@
 
 	<!--UPGRADE CRAFT CATEGORY-->
 	<event name="NPC_STORAGE_CHECK_UPGRADE_LISTFULL_LOAD">	<!--UPGRADE CRAFT CATEGORY-->
-		<event/>
+		<loadEvent>NPC_STORAGE_CHECK_UPGRADE_LISTFULL</loadEvent>
 	</event>
 	<event name="NPC_STORAGE_CHECK_UPGRADE_LISTFULL">
 		<checkCargo/>
@@ -5879,7 +5872,7 @@
 	</event>
 	<!--COMBAT DRONE CRAFT CATEGORY-->
 	<event name="FM_FORGE_COMBAT_DRONE_LOAD">
-		<event/>
+		<loadEvent>FM_FORGE_COMBAT_DRONE</loadEvent>
 	</event>
 
 	<event name="FM_FORGE_COMBAT_DRONE">
@@ -6765,7 +6758,7 @@
 				<loadEvent>FM_MODULAR_HULL_MODULES_INSTALLED</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_CAPPED_HULL">
+		<choice req="FM_CAPPED_HULL" max_group="9">
 			<text>I want more!</text>
 			<event>
 				<text>Alastair is taken aback by your request, "are you sure lad, i cannot garuantee your safety if we i install more modules for you..."
@@ -6791,7 +6784,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice req="fm_infinite_upgradepoints" blue="false">
+		<choice req="fm_infinite_upgradepoints" max_group="9" blue="false">
 			<text>I am fine with safe limits</text>
 			<event>
 				<text>"thank you for choosing safety, lad."</text>
@@ -6805,7 +6798,7 @@
 			</event>
 		</choice>
 				
-		<choice req="pilot" lvl="1" max_group="9" blue="false">
+		<choice req="pilot" lvl="1" max_group="10" blue="false">
 			<text>Nevermind.</text>
 			<event>
 				<loadEventList default="FORGEMASTER_PHONE_EVENT_LOAD">
