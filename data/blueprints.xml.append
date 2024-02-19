@@ -90,6 +90,7 @@
 		<maxPower amount="9" />
 		<aug name="FM_CRUCIBLE_PLATING_PLAYER" />
 		<shieldImage>mup_small_long2</shieldImage>
+		<mv-mapImage>map_icon_Forgemaster_cruiser_1</mv-mapImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_GUNSHIP_FM" layout="zfm_gunhydra_a" img="zfm_gunhydra_a">
 		<class>GunBomination</class>
@@ -159,6 +160,7 @@
 		<aug name="DRONE_RECOVERY" />
 		<shieldImage>mup_standard1</shieldImage>
 		<cloakImage>mup_kestrel_a</cloakImage>
+		<mv-mapImage>map_icon_zfm_gunhydra_a</mv-mapImage>
 	</shipBlueprint>
 
 	<shipBlueprint name="PLAYER_SHIP_GUNSHIP_FM_2" layout="zfm_gunhydra_b" img="zfm_gunhydra_b">
@@ -227,6 +229,7 @@
 		<aug name="DRONE_RECOVERY" />
 		<shieldImage>mup_standard1</shieldImage>
 		<cloakImage>mup_kestrel_a</cloakImage>
+		<mv-mapImage>map_icon_zfm_gunhydra_a</mv-mapImage>
 	</shipBlueprint>
 
 	<shipBlueprint name="PLAYER_SHIP_GUNSHIP_FM_3" layout="zfm_gunhydra_c" img="zfm_gunhydra_c">
@@ -296,6 +299,7 @@
 		<aug name="LOCKED_RAMMING_SPEED" />
 		<shieldImage>mup_standard1</shieldImage>
 		<cloakImage>mup_kestrel_a</cloakImage>
+		<mv-mapImage>map_icon_zfm_gunhydra_a</mv-mapImage>
 	</shipBlueprint>
 
 	<shipBlueprint name="PLAYER_SHIP_GUNSHIP_ELITE" layout="zfm_gunhydra_elite" img="zfm_gunhydra_elite">
@@ -373,6 +377,7 @@
 		<aug name="DRONE_RECOVERY" />
 		<shieldImage>mup_standard1</shieldImage>
 		<cloakImage>mup_kestrel_a</cloakImage>
+		<mv-mapImage>map_icon_zfm_gunhydra_a</mv-mapImage>
 	</shipBlueprint>
 
 	<shipBlueprint name="PLAYER_SHIP_GUNSHIP_ELITE_2" layout="zfm_gunhydra_elite_b" img="zfm_gunhydra_elite_b">
@@ -456,6 +461,7 @@
 		<aug name="EX_AUTO_COOLDOWN" />
 		<shieldImage>mup_standard1</shieldImage>
 		<cloakImage>mup_kestrel_a</cloakImage>
+		<mv-mapImage>map_icon_zfm_gunhydra_elite_b</mv-mapImage>
 	</shipBlueprint>
 
 	<shipBlueprint name="PLAYER_SHIP_GUNSHIP_FUTURE" layout="zfm_gunhydra_future" img="zfm_gunhydra_future">
@@ -536,6 +542,7 @@
 		<aug name="NANOBOT_DEFENSE_SYSTEM" />
 		<shieldImage>mup_standard1</shieldImage>
 		<cloakImage>mup_kestrel_a</cloakImage>
+		<mv-mapImage>map_icon_zfm_gunhydra_a</mv-mapImage>
 	</shipBlueprint>
 
 
@@ -1415,7 +1422,7 @@
 		<aug name="EX_AUTO_COOLDOWN" />
 		<shieldImage>mup_standard2</shieldImage>
 		<cloakImage>mup_stealth_b</cloakImage>
-		<mv-mapImage>map_icon_mup_mvstealth_a</mv-mapImage>
+		<mv-mapImage>map_icon_zmt_player_stealth_suicide</mv-mapImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED4_3" layout="zmt_player_zoltan_suicide" img="zmt_player_zoltan_suicide">
 		<class>Twisted Renegade Zoltan</class>
@@ -1812,6 +1819,7 @@
 		<aug name="TWISTED_KESTREL_GHOST_SUMMON"/>
 		<shieldImage>mup_standard1</shieldImage>
 		<cloakImage>mup_kestrel_a</cloakImage>
+		<mv-mapImage>map_icon_zmt_player_kestrel_suicide</mv-mapImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED6_2" layout="zmt_player_fed_suicide" img="zmt_player_fed_suicide">
 		<class>Twisted Renegade Federation</class>
@@ -2123,7 +2131,7 @@
 		<!-- <aug name="LOCKED_TAROT_CARDS"/> -->
 		<shieldImage>mup_small_long2</shieldImage>
 		<cloakImage>mup_tuco_a</cloakImage>
-		<mv-mapImage>map_icon_mup_tuco_a</mv-mapImage>
+		<mv-mapImage>map_icon_zmt_player_tuco_suicide</mv-mapImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED7_3" layout="zmt_player_leech_suicide" img="player_ship_cracked_zmt_boss_leech_suicide">
 		<class>Twisted Renegade Leech</class>
@@ -2212,7 +2220,7 @@
 
 
 	<!--ay TESTER SHIP COMMENTED OUT-->
-	<shipBlueprint name="PLAYER_SHIP_FMTESTING" layout="testerfm" img="testerfm">
+	<!--<shipBlueprint name="PLAYER_SHIP_FMTESTING" layout="testerfm" img="testerfm">
 		<class id="text_PLAYER_SHIP_FMTESTING_class">Ultimate Testing cruiser</class>
 		<name id="text_PLAYER_SHIP_FMTESTING_name">The True Tester</name>
 		<desc id="text_PLAYER_SHIP_FMTESTING_desc">A cruiser made specifically for playtesting forgemaster, but can probably be used outside of it too. Has all the stuff you need to test things properly, but the UI is glitchy, be aware. FOR ANY GLITCHES WITH THIS THING PLEASE COMPLAIN TO DIGGER NOT CYRUS.</desc>
@@ -2282,7 +2290,7 @@
 		<health amount="80085" />
 		<maxPower amount="100" />
 		<aug name="SYSTEM_UNBREAKING" />
-	</shipBlueprint>
+	</shipBlueprint>-->
 	<!-- don't worry, it doesn't show up in game, but can be anabld with 1 line in hs file-->
 
 
@@ -17515,6 +17523,14 @@
 		<desc>Heals your crew ship-wipe while med bay is powered. Heals at 1hp/s. Scales with system power.</desc>
 		<cost>50</cost>
 		<bp>5</bp>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+	
+	<augBlueprint name="FM_REVIVE">
+		<title>ship-not-die-maker</title>
+		<desc>this should be given as a hidden augmnet, always.</desc>
+		<cost>0</cost>
 		<rarity>0</rarity>
 		<stackable>true</stackable>
 	</augBlueprint>

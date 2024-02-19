@@ -41,10 +41,19 @@ end)
 
 script.on_system_event(Defines.SystemEvents.ON_RUN,
 function(ship, sys)
+  if sys:GetId() == 15 then
+    local increment = Hyperspace.FPS.SpeedFactor / 16
+    local modifier = 2 ^ ship:GetAugmentationValue("LONG_HACK") --Negative values make the duration shorter, longer values make it longer.
+    sys.effectTimer.first = sys.effectTimer.first + (1 / modifier - 1) * increment
+  end
+end)
+
+script.on_system_event(Defines.SystemEvents.ON_RUN,
+function(ship, sys)
   if sys:GetId() == 12 then
     local increment = Hyperspace.FPS.SpeedFactor / 16
     local modifier = 2 ^ ship:GetAugmentationValue("LONG_BATTERY") --Negative values make the duration shorter, longer values make it longer.
-    sys.effectTimer.first = sys.effectTimer.first + (1 / modifier - 1) * increment
+    sys.timer.first = sys.timer.first + (1 / modifier - 1) * increment
   end
 end)
 

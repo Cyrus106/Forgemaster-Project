@@ -19,9 +19,9 @@
 	
 	<ship name="SHIP_FM_FORGEMASTER" auto_blueprint="FM_FORGEMASTER_CRUISER_ENEMY">
 		<triggeredEvent name="FORGEMASTER_SPARES_YOU" event="FORGEMASTER_SPARE" playerHull="3" playerCrew="1" thisFight="true"/>
-		<triggeredEvent name="FORGEMASTER_IS_HURT_FIRST" event="FORGEMASTER_COUNTER" enemyHull="20" enemyCrew="9" thisFight="true"/>
+		<!--<triggeredEvent name="FORGEMASTER_IS_HURT_FIRST" event="FORGEMASTER_COUNTER" enemyHull="20" enemyCrew="9" thisFight="true"/>
 		<triggeredEvent name="FORGEMASTER_IS_HURT" event="FORGEMASTER_RETALIATE" enemyHull="10" enemyCrew="6" thisFight="true"/>
-		<triggeredEvent name="FORGEMASTER_IS_HURT_BAD" event="FORGEMASTER_RETALIATE_STRONK" enemyHull="5" enemyCrew="2" thisFight="true"/>
+		<triggeredEvent name="FORGEMASTER_IS_HURT_BAD" event="FORGEMASTER_RETALIATE_STRONK" enemyHull="5" enemyCrew="2" thisFight="true"/>-->
 		<destroyed load="FORGEMASTER_DESTRUCTION"/>
 		<deadCrew load="FORGEMASTER_DESTRUCTION_CREW"/>
 	</ship>

@@ -10,6 +10,7 @@
 		<mod-append:script>data/forgemaster_scripts/weapon_impact.lua</mod-append:script>
 		<mod-append:script>data/forgemaster_scripts/abilities.lua</mod-append:script>
 		<mod-append:script>data/forgemaster_scripts/crew.lua</mod-append:script>
+		<mod-append:script>data/forgemaster_scripts/forge_fight.lua</mod-append:script>
 	</mod:findLike>
 </FTL>
 
@@ -784,6 +785,11 @@
 			<hiddenAug>ENERGIZED_ROOM_CLOAKING</hiddenAug>
 			<hiddenAug>ENERGIZED_ROOM_WEAPONS</hiddenAug>
 			<hiddenAug>ENERGIZED_ROOM_MEDBAY</hiddenAug>
+			<hiddenAug>FM_REVIVE</hiddenAug>
+			<hiddenAug>FM_REVIVE</hiddenAug>
+			<hiddenAug>FM_REVIVE</hiddenAug>
+			<hiddenAug>FM_REVIVE</hiddenAug>
+			<hiddenAug>FM_REVIVE</hiddenAug>
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 			</shipIcons>

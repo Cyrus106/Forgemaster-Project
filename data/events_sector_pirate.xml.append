@@ -17,12 +17,12 @@
 		</item_modify>
 	</mod-append:event>-->
 
-	<mod-append:event>
+	<!--<mod-append:event>
 		<weapon name="MISSILES_4_PLAYER"/>
 		<item_modify>
 			<item type="scrap" min="-80" max="-90"/>
 		</item_modify>
-	</mod-append:event>
+	</mod-append:event>-->
 	
 	<!--<mod-append:event>
 		<weapon name="BEAM_GUILLOTINE_PLAYER"/>
