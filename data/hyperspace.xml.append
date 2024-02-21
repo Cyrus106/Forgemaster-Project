@@ -781,36 +781,19 @@
 		<!--ENEMY SHIPS -->
 
 		<mod-append:customShip name="FM_FORGEMASTER_CRUISER_ENEMY">
-			<hiddenAug>ENERGIZED_ROOM_SHIELDS</hiddenAug>
+			<!--<hiddenAug>ENERGIZED_ROOM_SHIELDS</hiddenAug>
 			<hiddenAug>ENERGIZED_ROOM_CLOAKING</hiddenAug>
 			<hiddenAug>ENERGIZED_ROOM_WEAPONS</hiddenAug>
-			<hiddenAug>ENERGIZED_ROOM_MEDBAY</hiddenAug>
+			<hiddenAug>ENERGIZED_ROOM_MEDBAY</hiddenAug>-->
+			<hiddenAug>UPG_MEDBAY_NANO_FORGEMASTER_ENEMY</hiddenAug>
 			<hiddenAug>FM_REVIVE</hiddenAug>
 			<hiddenAug>FM_REVIVE</hiddenAug>
 			<hiddenAug>FM_REVIVE</hiddenAug>
-			<hiddenAug>FM_REVIVE</hiddenAug>
-			<hiddenAug>FM_REVIVE</hiddenAug>
+			<hiddenAug>UPG_CLONEBAY_DNA</hiddenAug>
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
+				<shipIcon>icon_backupdna</shipIcon>
 			</shipIcons>
-			<rooms>
-				<room id="5"> <!--medbay-->
-					<roomAnim renderLayer="0">fm_energy_resist_2x2</roomAnim>
-					<roomAnim renderLayer="3">energized_icon</roomAnim>
-				</room>
-				<room id="8"> <!--weapons-->
-					<roomAnim renderLayer="0">fm_energy_resist_2x2</roomAnim>
-					<roomAnim renderLayer="3">energized_icon</roomAnim>
-				</room>
-				<room id="1"> <!--shields-->
-					<roomAnim renderLayer="0">fm_energy_resist_3x2</roomAnim>
-					<roomAnim renderLayer="3">energized_icon</roomAnim>
-				</room>
-				<room id="15"> <!--cloaking-->
-					<roomAnim renderLayer="0">fm_energy_resist_1x2</roomAnim>
-					<roomAnim renderLayer="3">energized_icon</roomAnim>
-				</room>
-			</rooms>
 			<hpCap>35</hpCap>
 			<crew>
 				<fm_plated room="17" name="Volpe"/>  <!--pilot--> <!-- Ludo -->
@@ -1815,79 +1798,126 @@
 			<shipIcon>	<!-- Forged Accelerant -->
 				<name>icon_forgemaster_hull</name>
 				<tooltip>FORGED ACCELERANT:
-					The unique armor on this enemy grants it a 25 chance to resist ALL types of damage from your weapons.Extinguishes flames, seals breaches very slowly, halves suffocation, and the crew repairs specific systems significantly faster.
-				</tooltip>
+					The unique armor on this enemy grants it a 25 chance to resist ALL types of damage from your weapons.Extinguishes flames, seals breaches very slowly, halves suffocation, and the crew repairs specific systems significantly faster.</tooltip>
 			</shipIcon>
 
 			<shipIcon> 	<!-- Forged Medbots -->
 				<name>icon_fm_med</name>
 				<tooltip>FORGED MEDBOTS:
-					This unique med bay heals all allied crew and gives them 20% weapon damage resistance, but its strength and resistance scales with how much power is put into the medbay. It still lightly heals crew if destroyed or unpowered. Base healing is 1hp/s, and 2.5hp/s at 4 power.
-				</tooltip>
+					This unique med bay heals all allied crew and gives them 20% weapon damage resistance, but its strength and resistance scales with how much power is put into the medical system. It still lightly heals crew if destroyed or unpowered. Base healing is 1hp/s, and 2.5hp/s at 4 power.</tooltip>
 			</shipIcon>
 
 			<shipIcon> 	<!-- Dimensional Rift Augment, -->
 				<name>icon_fm_uniquetech</name>
 				<tooltip>DIMENSIONAL RIFT AUGMENT:
-					This ship is utilizing technology from another dimension. If you can defeat this insane vessel, you will be able to claim tech such as this for yourself!
-				</tooltip>
+					This ship is utilizing technology from another dimension. If you can defeat this insane vessel, you will be able to claim tech such as this for yourself!</tooltip>
 			</shipIcon>
 
 			<shipIcon> 	<!-- Physical Trauma Nanomachines-->
 				<name>icon_fm_drone_buff</name>
 				<tooltip>PHYSICAL TRAUMA NANOMACHINES:
-					The Unique nanomachines dispensed by this ship's manning drones boost the Engi captain's health and damage resistance. Take out the drones so you can take out the Engi Captain!
-				</tooltip>
+					The Unique nanomachines dispensed by this ship's manning drones boost the Engi captain's health and damage resistance. Take out the drones so you can take out the Engi Captain!</tooltip>
 			</shipIcon>
 
 			<shipIcon> 	<!-- Gozer the Destroyer -->
 				<name>icon_fm_gozer_splitter</name>
 				<tooltip>GOZER THE DESTROYER:
-					Using some strange splitting abilities, this ship will slowly and forcefully "split" its crew, and re-materialize them onto your ship. Take out their crew to stop the ship!
-				</tooltip>
+					Using some strange splitting abilities, this ship will slowly and forcefully "split" its crew, and re-materialize them onto your ship. Take out their crew to stop the ship!</tooltip>
 			</shipIcon>
 
 			<shipIcon> 	<!-- Murder-Bot Dispersal -->
 				<name>icon_nano_defense</name>
 				<tooltip>MURDER-BOT DISPERSAL:
-					This enemy ship is filled with murderous nanobots which will passively damage your crew over time. The name makes it sound a lot more violent than it is.
-				</tooltip>
+					This enemy ship is filled with murderous nanobots which will passively damage your crew over time. The name makes it sound a lot more violent than it is.</tooltip>
 			</shipIcon>
 
 			<shipIcon> 	<!-- Twisted Crystalline Armor -->
 				<name>icon_hull_twisted_crystal</name>
 				<tooltip>TWISTED CRYSTALLINE ARMOR:
-					Every time you deal hull damage to this enemy with your weapons, there is a 50% chance that 3x Crystal Mines will break off and fly towards your ship. They will pierce any shields, and will do 1 damage to a random room if it hits, as well as stunning crew and locking down the room.
-				</tooltip>
+					Every time you deal hull damage to this enemy with your weapons, there is a 50% chance that 3x Crystal Mines will break off and fly towards your ship. They will pierce any shields, and will do 1 damage to a random room if it hits, as well as stunning crew and locking down the room.</tooltip>
 			</shipIcon>
 
 			<shipIcon>  <!-- Resistant Room Variant -->
 				<name>icon_resist_variant</name>
 				<tooltip>RESISTANT ROOMS, VARIANT:
 					This enemy has one or more resistant rooms, marked by the grey border and R icon in the top left. Resistant rooms will NORMALLY take no system damage from weapons, but can be damaged by crew and fires. Resistant rooms will take ion and hull damage as normal.
-					The "R" icon on the ship's room indicates this status, and depending on how full the icon is the room is more likely to resist weapon damage.
-				</tooltip>
+					The "R" icon on the ship's room indicates this status, and depending on how full the icon is the room is more likely to resist weapon damage.</tooltip>
 			</shipIcon>
 
 			<shipIcon>  <!-- Energized Room FM -->
 				<name>icon_energized_fm</name>
 				<tooltip>FORGED ENERGIZED ROOMS:
-					This enemy has one or more energized rooms, Alastair appears to have customized these versions. These "Energized" rooms are an extra 50% resistant to sabotage, and enemy crew take 30% less damage while inside. Additionally, your crew take 3 dmg/sec in these rooms.
-				</tooltip>
+					This enemy has one or more energized rooms, Alastair appears to have customized these versions. These "Energized" rooms are an extra 50% resistant to sabotage, and enemy crew take 30% less damage while inside. Additionally, your crew take 3 dmg/sec in these rooms.</tooltip>
 			</shipIcon>
 
 			<shipIcon>  <!-- Mantis Buff -->
 				<name>icon_mantis_reloader</name>
 				<tooltip>EMPOWERING PHEROMONES:
-					This enemy ship is filled with pheromones. These provide their crew with 1.5x max hp, 20% damage reduction, and 80% suffocation resist.
-				</tooltip>
+					This enemy ship is filled with pheromones. These provide their crew with 1.5x max hp, 20% damage reduction, and 80% suffocation resist.</tooltip>
 			</shipIcon>
 
 			<shipIcon> <!-- Lostsun death timer thing icon-->
 				<name>icon_fm_lostsun_deathtimer</name>
 				<tooltip>REALITY BENT SYSTEMS:
-					This enemy posseses a powerful array of weapons and systems, but due to extreme stretching of space-time its systems and hull are damaged every 15 seconds.
-				</tooltip>
+					This enemy posseses a powerful array of weapons and systems, but due to extreme stretching of space-time its systems and hull are damaged every 15 seconds.</tooltip>
+			</shipIcon>
+			
+			<!--modular hull capstones-->
+			
+			<shipIcon>
+				<name>icon_fm_modhull_capstone</name>
+				<tooltip>MODULAR HULL CAPSTONE:
+					you shouldn't see this</tooltip>
+			</shipIcon>
+			<shipIcon>
+				<name>icon_fm_modhull_capstone_compress</name>
+				<tooltip>COMPRESSOR BYPASS MANIFOLDS:
+					enemy weapons charge 30% faster, but their shields charge 60% slower</tooltip>
+			</shipIcon>
+			<shipIcon>
+				<name>icon_fm_modhull_capstone_fastshield</name>
+				<tooltip>INFINITUM CYCLO-BARRIER:
+					20% chance for incoming projectiles to get destroyed by the shields, for every unpowered bar of the shields system the chance for a projectile to not get destroyed is reduced by a relative 20%, also +50% shield recharge for each unpowered bar</tooltip>
+			</shipIcon>
+			<shipIcon>
+				<name>icon_fm_modhull_capstone_fastweapon</name>
+				<tooltip>INFINITUM CYCLO-BARRIER:
+					enemy weapons charge 5% slower but charge 15% faster for every unpowered bar of the weapon system</tooltip>
+			</shipIcon>
+			<shipIcon>
+				<name>icon_fm_modhull_capstone_magnetic</name>
+				<tooltip>ELECTROMAGNEITC HULL BODY:
+					10% chance to resist system damage, 30% chance to resist ion damage, deionization speed +50%</tooltip>
+			</shipIcon>
+			<shipIcon>
+				<name>icon_fm_modhull_capstone_particle</name>
+				<tooltip>PARTICLIZED SHIELDS:
+					enemy shields charge 50% slower but they gain additional 8 energy shield integrity</tooltip>
+			</shipIcon>
+			<shipIcon>
+				<name>icon_fm_modhull_capstone_resistsmash</name>
+				<tooltip>Ineffable Ordinance Calibrator:
+					enemy weapons charge 10% slower but your hull, system and ion resist chance are reduced by 15% and breaching attacks gain +40% breach chance</tooltip>
+			</shipIcon>
+			<shipIcon>
+				<name>icon_fm_modhull_capstone_weapon_ignite</name>
+				<tooltip>WEAPON IGNITER:
+					enemy weapons charge 50% faster but the weapon room is ignited every time they shoot</tooltip>
+			</shipIcon>
+			<shipIcon>
+				<name>icon_fm_modhull_capstone_offense_scramble</name>
+				<tooltip>OFFENSE SCRAMBLER:
+					YOUR weapons charge 20% slower but the enemy shields recharge 30% slower</tooltip>
+			</shipIcon>
+			<shipIcon>
+				<name>icon_fm_modhull_capstone_defense_scramble</name>
+				<tooltip>DEFENCE SCRAMBLER:
+					YOUR shields charge 30% slower and your cloaking system has 5s more cooldown</tooltip>
+			</shipIcon>
+			<shipIcon>
+				<name>icon_fm_revive</name>
+				<tooltip>EMERGENCY REPAIR SYSTEM:
+					This ship has some sort of emergency repair system in case of critical hull damage.</tooltip>
 			</shipIcon>
 
 		</mod-append:shipIcons>
@@ -2139,7 +2169,7 @@
 	<events>   <!-- BEAM/PINPOINT WEAPON LIST Reqs! -->
 
 		<!-- BEAM/PINPOINT WEAPON LIST! -->
-		<req name="FM_BEAM_MINING_2_LIST" type="all"> <!-- Mining Beam + Pike II -->
+		<req name="FM_BEAM_MINING_2_LIST" type="all"> <!-- Mining Beam + 'Sarissa' Beam -->
 			<name>BEAM_MINING</name>
 			<name>BEAM_LONG_2</name>
 		</req>
@@ -3268,7 +3298,7 @@
 				</item>
 				<chance>100</chance>
 			</category>
-			<!--<category type="DRONES">
+			<category type="DRONES">
 				<customTitle>DRONES</customTitle>
 				<item>
 					<blueprint>FM_SHOP_FORGEMASTER_DRONE_1_PLAYER</blueprint>
@@ -3285,7 +3315,7 @@
 					<modifier min="1.2" max="1.2" flat="false"/>
 					<price>-1</price>
 				</item>
-			</category>-->
+			</category>
 		</customStore>
 
 		<customStore id="FM_RARE_STORE">
@@ -3376,7 +3406,7 @@
 				</item>
 				<chance>100</chance>
 			</category>
-			<!--<category type="DRONES">
+			<category type="DRONES">
 				<customTitle>DRONES</customTitle>
 				<item>
 					<blueprint>FM_SHOP_FORGEMASTER_DRONE_1_PLAYER</blueprint>
@@ -3393,7 +3423,7 @@
 					<modifier min="1.2" max="1.2" flat="false"/>
 					<price>-1</price>
 				</item>
-			</category>-->
+			</category>
 
 		</customStore>
 
@@ -3434,7 +3464,7 @@
 					<price>-1</price>
 				</item>
 			</category>
-			<!--<category type="DRONES">
+			<category type="DRONES">
 				<customTitle>DRONES</customTitle>
 				<item>
 					<blueprint>FM_SHOP_FORGEMASTER_DRONE_1_PLAYER</blueprint>
@@ -3451,7 +3481,7 @@
 					<modifier min="1.2" max="1.2" flat="false"/>
 					<price>-1</price>
 				</item>
-			</category>-->
+			</category>
 			<category type="CREW">
 				<customTitle>DECKHANDS</customTitle>
 				<allowDuplicates/>
@@ -3562,7 +3592,7 @@
 				</item>
 				<chance>100</chance>
 			</category>
-			<!--<category type="DRONES">
+			<category type="DRONES">
 				<customTitle>DRONES</customTitle>
 				<item>
 					<blueprint>FM_SHOP_FORGEMASTER_DRONE_1_PLAYER</blueprint>
@@ -3579,7 +3609,7 @@
 					<modifier min="1.2" max="1.2" flat="false"/>
 					<price>-1</price>
 				</item>
-			</category>-->
+			</category>
 			<category type="CREW">
 				<customTitle>DECKHANDS</customTitle>
 				<allowDuplicates/>
@@ -3828,35 +3858,6 @@
 
 		</req>
 
-
-		<!--  Attack him AGAIN while in attack menu -->
-
-		<event name="FM_ATTACK_AGAIN"> <!-- If you are using the internalize addon, this removes the internalize Murder bots upgrade-->
-
-
-			<loadEvent>FM_ATTACK_AGAIN_REC</loadEvent>
-		</event>
-
-		<event name="FM_ATTACK_SECOND_AGAIN"> <!-- If you are using the internalize addon, this removes the internalize Murder bots upgrade-->
-
-
-			<loadEvent>FM_ATTACK_SECOND_AGAIN_REC</loadEvent>
-		</event>
-
-		<event name="FM_ATTACK_AGAIN_REC"> <!-- If you are using the internalize addon, this removes the internalize Murder bots upgrade-->
-
-
-			<loadEvent>FM_ATTACK</loadEvent>
-		</event>
-
-		<event name="FM_ATTACK_SECOND_AGAIN_REC"> <!-- If you are using the internalize addon, this removes the internalize Murder bots upgrade-->
-
-
-			<loadEvent>FM_ATTACK_SECOND</loadEvent>
-		</event>
-
-
-		
 
 
 		
@@ -4711,8 +4712,9 @@
 			<canSuffocate>true</canSuffocate>
 			<damageMultiplier>2.0</damageMultiplier>
 			<rangedDamageMultiplier>1.5</rangedDamageMultiplier>
-			<damageTakenMultiplier>0.5</damageTakenMultiplier>
-			<suffocationModifier>0.5</suffocationModifier>
+			<allDamageTakenMultiplier>0.5</allDamageTakenMultiplier>
+			<!--<damageTakenMultiplier>0.5</damageTakenMultiplier>
+			<suffocationModifier>0.5</suffocationModifier>-->
 			<canBurn>false</canBurn>
 			<stunMultiplier>0.01</stunMultiplier>
 			<fireRepairMultiplier>5.0</fireRepairMultiplier>
@@ -4793,8 +4795,9 @@
 			<canSuffocate>true</canSuffocate>
 			<damageMultiplier>2.0</damageMultiplier>
 			<rangedDamageMultiplier>0.5</rangedDamageMultiplier>
-			<damageTakenMultiplier>0.5</damageTakenMultiplier>
-			<suffocationModifier>0.5</suffocationModifier>
+			<allDamageTakenMultiplier>0.5</allDamageTakenMultiplier>
+			<!--<damageTakenMultiplier>0.5</damageTakenMultiplier>
+			<suffocationModifier>0.5</suffocationModifier>-->
 			<canBurn>false</canBurn>
 			<stunMultiplier>0.01</stunMultiplier>
 			<fireRepairMultiplier>5.0</fireRepairMultiplier>
@@ -4875,7 +4878,7 @@
 			<rangedDamageMultiplier>0.75</rangedDamageMultiplier>
 			<damageTakenMultiplier>0.73</damageTakenMultiplier>
 			<suffocationModifier>0.55</suffocationModifier>
-			<fireDamageMultiplier>0.0</fireDamageMultiplier>
+			<canBurn>false</canBurn>
 			<stunMultiplier>0.3</stunMultiplier>
 			<fireRepairMultiplier>3.0</fireRepairMultiplier>
 			<canMan>true</canMan>
@@ -5957,12 +5960,6 @@
 			<req type="any">
 				<name>unique_mossberg</name>
 				<name>unique_remington</name>
-			</req>
-		</req>
-		<req name="TWISTED_CLOAK_UPGRADE_CHECK" type="all">
-			<name>SHIP_TWISTED_STEALTH</name>
-			<req lvl="5" max_lvl="5">
-				<name>cloaking</name>
 			</req>
 		</req>
 	</events>
@@ -7272,6 +7269,7 @@
 			<canMan>false</canMan>
 			<noClone>true</noClone>
 			<maxHealth>190</maxHealth>
+			<canTeleport>false</canTeleport>
 
 			<damageMultiplier>1.1</damageMultiplier>
 			<fireDamageMultiplier>0.0</fireDamageMultiplier>
@@ -7303,8 +7301,8 @@
 					<duration>2</duration>
 					<cooldownColor r="10" g="255" b="255"/>
 					<controllable>false</controllable>
-					<damageTakenMultiplier>0</damageTakenMultiplier>
-					<invulnerable>true</invulnerable>
+					<!--<damageTakenMultiplier>0</damageTakenMultiplier>-->
+					<!--<invulnerable>true</invulnerable>-->
 					<canFight>false</canFight>
 					<canRepair>false</canRepair>
 					<canSabotage>false</canSabotage>
@@ -7329,6 +7327,7 @@
 			<resistsMindControl>true</resistsMindControl>
 			<canMan>false</canMan>
 			<noClone>true</noClone>
+			<canTeleport>false</canTeleport>
 
 			<maxHealth>250</maxHealth>
 
@@ -7401,6 +7400,7 @@
 			<resistsMindControl>true</resistsMindControl>      <!-- If true, resists mind control and can see into adjacent rooms (slug). -->
 			<canMan>false</canMan>
 			<noClone>true</noClone>
+			<canTeleport>false</canTeleport>
 
 			<maxHealth>150</maxHealth>
 
@@ -9344,7 +9344,9 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 
 
 
-
+		<aug name="FM_REVIVE">
+			<icon>icon_fm_revive</icon>
+		</aug>
 
 		<aug name="LOCKED_RAMMING_SPEED">
 			<function name="RAMMING_SPEED" value="1" useForReqs="true" warning="false"/>
@@ -9363,6 +9365,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<priority>0</priority>
 					<systemPowerDependency>
 						<medbay/>
+						<clonebay/>
 					</systemPowerDependency>
 					<systemPowerScaling>
 						<noSys>1</noSys>
@@ -9374,50 +9377,44 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					</systemPowerScaling>
 				</statBoost>
 				<statBoost name="allDamageTakenMultiplier">
-					<boostType>SET</boostType>
+					<boostType>MULT</boostType>
 					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
-					<amount>0.8</amount>
+					<amount>1</amount>
 					<priority>2</priority>
 					<systemPowerDependency>
 						<medbay/>
+						<clonebay/>
 					</systemPowerDependency>
 					<systemPowerScaling>
 						<noSys>1</noSys>
 						<noPwr>1</noPwr>
-						<onePwr>1</onePwr>
-						<twoPwr>0.9</twoPwr>
-						<threePwr>0.85</threePwr>
-						<fourPwr>0.8</fourPwr>
+						<onePwr>0.8</onePwr>
+						<twoPwr>0.64</twoPwr>
+						<threePwr>0.512</threePwr>
+						<fourPwr>0.4096</fourPwr>
 					</systemPowerScaling>
-					<systemRoomTarget>NONE</systemRoomTarget>
-					<systemList>
-						<medbay/>
-					</systemList>
 				</statBoost>
 				<statBoost name="damageTakenMultiplier">
-					<boostType>SET</boostType>
+					<boostType>MULT</boostType>
 					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
-					<amount>1.2</amount>
+					<amount>1</amount><!--this should increase damage taken in cobmat to not make him too hard to fight-->
 					<priority>1</priority>
 					<systemPowerDependency>
 						<medbay/>
+						<clonebay/>
 					</systemPowerDependency>
 					<systemPowerScaling>
 						<noSys>1</noSys>
 						<noPwr>1</noPwr>
-						<onePwr>1</onePwr>
-						<twoPwr>1.1</twoPwr>
-						<threePwr>1.15</threePwr>
-						<fourPwr>1.2</fourPwr>
+						<onePwr>1.25</onePwr>
+						<twoPwr>1.5625</twoPwr>
+						<threePwr>1.953125</threePwr>
+						<fourPwr>2.44140625</fourPwr>
 					</systemPowerScaling>
-					<systemRoomTarget>NONE</systemRoomTarget>
-					<systemList>
-						<medbay/>
-					</systemList>
 				</statBoost>
 
 			</statBoosts>
@@ -11870,11 +11867,11 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<statBoost name="trueHealAmount">
 						<boostType>FLAT</boostType>
 						<amount>2</amount>
-						<shipTarget>PLAYER_SHIP</shipTarget>
+						<shipTarget>ORIGINAL_SHIP</shipTarget>
 						<crewTarget>ENEMIES</crewTarget>
 						<priority>0</priority>
 					</statBoost>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 				</statBoost>
 			</statBoosts>
@@ -12879,7 +12876,14 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		
 	</augments>
 
-
+	<augments><!--reward augments for sparring in FM fight-->
+		<aug name="FM_RELOADER_REWARD_2">
+			<function name="AUTO_COOLDOWN" value="0.07"/>
+		</aug>
+		<aug name="FM_RELOADER_REWARD_3">
+			<function name="AUTO_COOLDOWN" value="0.1"/>
+		</aug>
+	</augments>
 
 
 	<augments> <!--FORGEMASTER AUGMENTS for Energized Rooms -->
@@ -13505,7 +13509,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<statBoost name="allDamageTakenMultiplier">
 					<boostType>MULT</boostType>
 					<amount>0.87</amount>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<priority>0</priority>
 				</statBoost>
@@ -13517,7 +13521,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<statBoost name="moveSpeedMultiplier">
 					<boostType>MULT</boostType>
 					<amount>1.45</amount>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<priority>0</priority>
 				</statBoost>
@@ -13525,7 +13529,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<statBoost name="moveSpeedMultiplier">
 					<boostType>MULT</boostType>
 					<amount>0.85</amount>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 					<priority>0</priority>
 				</statBoost>
@@ -13537,24 +13541,27 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<statBoost name="powerRechargeMultiplier">
 					<boostType>FLAT</boostType>
 					<amount>1</amount>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
 					<priority>999</priority>
 				</statBoost>
 				
 				<statBoost name="powerRechargeMultiplier">
 					<boostType>FLAT</boostType>
 					<amount>0.5</amount>
-					<shipTarget>ENEMY_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_OTHER_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
 					<priority>999</priority>
 				</statBoost>
 
 				<statBoost name="powerRechargeMultiplier">
 					<boostType>MULT</boostType>
 					<amount>0.7</amount>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
 					<priority>999</priority>
 				</statBoost>
 			</statBoosts>
@@ -13565,7 +13572,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<statBoost name="suffocationModifier">
 					<boostType>MULT</boostType>
 					<amount>1</amount>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<priority>0</priority>
 					<systemPowerDependency>
@@ -13633,7 +13640,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 
 					<amount>-7</amount>
@@ -13654,7 +13661,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 
 					<amount>-7</amount>
@@ -13675,38 +13682,12 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 			</statBoosts>
 		</aug>
-
-		<!--
-			<aug name="FM_MODULAR_HULL_TURRET_CLONE">
-				<statBoosts>
-					<statBoost name="trueHealAmount">
-						<boostType>FLAT</boostType>
-						<shipTarget>PLAYER_SHIP</shipTarget>
-						<crewTarget>ENEMIES</crewTarget>
-
-						<amount>-7</amount>
-						<priority>0</priority>
-						<systemRoomTarget>ALL</systemRoomTarget>
-						<systemList>
-							<clonebay/>
-						</systemList>
-						<systemPowerDependency>
-							<clonebay/>
-						</systemPowerDependency>
-						<systemPowerScaling>
-							<noSys>0</noSys>
-							<noPwr>0</noPwr>
-							<onePwr>1</onePwr>
-						</systemPowerScaling>
-					</statBoost>
-				</statBoosts>
-			</aug>
-		-->
+		
 		<aug name="FM_MODULAR_HULL_TURRET_OXYGEN">
 			<statBoosts>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 
 					<amount>-7</amount>
@@ -13732,7 +13713,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 
 					<amount>-7</amount>
@@ -13758,7 +13739,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 
 					<amount>-7</amount>
@@ -13784,7 +13765,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 
 					<amount>-7</amount>
@@ -13810,7 +13791,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 
 					<amount>-7</amount>
@@ -13836,7 +13817,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 
 					<amount>-7</amount>
@@ -13862,7 +13843,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 
 					<amount>-7</amount>
@@ -13888,7 +13869,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 
 					<amount>-7</amount>
@@ -13914,7 +13895,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 
 					<amount>-7</amount>
@@ -13940,7 +13921,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 
 					<amount>-7</amount>
@@ -13966,7 +13947,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 
 					<amount>-7</amount>
@@ -13992,7 +13973,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 
 					<amount>-7</amount>
@@ -14018,7 +13999,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 
 					<amount>-7</amount>
@@ -14044,7 +14025,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 
 					<amount>-7</amount>
@@ -14070,7 +14051,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 
 					<amount>-7</amount>
@@ -14096,7 +14077,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="repairSpeed">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<amount>1.4</amount>
@@ -14108,7 +14089,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 				<statBoost name="sabotageSpeedMultiplier">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<amount>0.6</amount>
@@ -14126,7 +14107,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="repairSpeed">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<amount>1.4</amount>
@@ -14138,7 +14119,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 				<statBoost name="sabotageSpeedMultiplier">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<amount>0.6</amount>
@@ -14155,7 +14136,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="repairSpeed">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<amount>1.4</amount>
@@ -14167,7 +14148,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 				<statBoost name="sabotageSpeedMultiplier">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<amount>0.6</amount>
@@ -14179,7 +14160,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 				<statBoost name="repairSpeed">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<amount>1.4</amount>
@@ -14191,7 +14172,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 				<statBoost name="sabotageSpeedMultiplier">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<amount>0.6</amount>
@@ -14209,7 +14190,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<statBoosts>
 					<statBoost name="repairSpeed">
 						<boostType>MULT</boostType>
-						<shipTarget>PLAYER_SHIP</shipTarget>
+						<shipTarget>ORIGINAL_SHIP</shipTarget>
 						<crewTarget>ALLIES</crewTarget>
 						<droneTarget>CREW</droneTarget>
 						<amount>1.4</amount>
@@ -14221,7 +14202,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					</statBoost>
 					<statBoost name="sabotageSpeedMultiplier">
 						<boostType>MULT</boostType>
-						<shipTarget>PLAYER_SHIP</shipTarget>
+						<shipTarget>ORIGINAL_SHIP</shipTarget>
 						<crewTarget>ALL</crewTarget>
 						<droneTarget>ALL</droneTarget>
 						<amount>0.6</amount>
@@ -14238,7 +14219,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="repairSpeed">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<amount>1.4</amount>
@@ -14250,7 +14231,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 				<statBoost name="sabotageSpeedMultiplier">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<amount>0.6</amount>
@@ -14267,7 +14248,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="repairSpeed">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<amount>1.4</amount>
@@ -14279,7 +14260,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 				<statBoost name="sabotageSpeedMultiplier">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<amount>0.6</amount>
@@ -14296,7 +14277,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="repairSpeed">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<amount>1.4</amount>
@@ -14308,7 +14289,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 				<statBoost name="sabotageSpeedMultiplier">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<amount>0.6</amount>
@@ -14325,7 +14306,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="repairSpeed">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<amount>1.4</amount>
@@ -14337,7 +14318,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 				<statBoost name="sabotageSpeedMultiplier">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<amount>0.6</amount>
@@ -14354,7 +14335,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="repairSpeed">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<amount>1.4</amount>
@@ -14366,7 +14347,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 				<statBoost name="sabotageSpeedMultiplier">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<amount>0.6</amount>
@@ -14383,7 +14364,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="repairSpeed">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<amount>1.4</amount>
@@ -14395,7 +14376,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 				<statBoost name="sabotageSpeedMultiplier">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<amount>0.6</amount>
@@ -14412,7 +14393,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="repairSpeed">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<amount>1.4</amount>
@@ -14424,7 +14405,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 				<statBoost name="sabotageSpeedMultiplier">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<amount>0.6</amount>
@@ -14441,7 +14422,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="repairSpeed">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<amount>1.4</amount>
@@ -14453,7 +14434,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 				<statBoost name="sabotageSpeedMultiplier">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<amount>0.6</amount>
@@ -14470,7 +14451,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="repairSpeed">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<amount>1.4</amount>
@@ -14482,7 +14463,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 				<statBoost name="sabotageSpeedMultiplier">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<amount>0.6</amount>
@@ -14499,7 +14480,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="repairSpeed">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<amount>1.4</amount>
@@ -14511,7 +14492,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 				<statBoost name="sabotageSpeedMultiplier">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<amount>0.6</amount>
@@ -14528,7 +14509,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="repairSpeed">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<amount>1.4</amount>
@@ -14540,7 +14521,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 				<statBoost name="sabotageSpeedMultiplier">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<amount>0.6</amount>
@@ -14557,7 +14538,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="repairSpeed">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<amount>1.4</amount>
@@ -14569,7 +14550,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 				<statBoost name="sabotageSpeedMultiplier">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<droneTarget>ALL</droneTarget>
 					<amount>0.6</amount>
@@ -14586,7 +14567,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<statBoosts>
 				<statBoost name="healSpeed">
 					<boostType>MULT</boostType>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ENEMIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
 					<amount>1.1</amount>  <!--This should make enemies heal 10% faster on your ship, which should result in them taking 10% more damage from DoT effects such as Murderbots or E-Grid.-->
@@ -14603,7 +14584,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
 					<amount>-0.5</amount>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<droneTarget>CREW</droneTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>0</priority>
@@ -14617,6 +14598,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					</blackList>
 				</statBoost>
 			</statBoosts>
+			<icon>icon_fm_modhull_capstone</icon>
 		</aug>
 
 		<aug name="FM_MODULAR_HULL_DUSK">
@@ -14673,11 +14655,13 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<priority>0</priority>
 				</statBoost>
 			</statBoosts>
+			<icon>icon_fm_modhull_capstone</icon>
 		</aug>
 
 		<aug name="FM_MODULAR_HULL_COMPRESS">
 			<function name="AUTO_COOLDOWN" value="0.30" useForReqs="false" warning="false"/>
 			<function name="SHIELD_RECHARGE" value="-0.60" useForReqs="false" warning="false"/>
+			<icon>icon_fm_modhull_capstone_compress</icon>
 		</aug>
 
 		<aug name="FM_MODULAR_HULL_PARTICLE">
@@ -14687,6 +14671,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<color r="255" g="119" b="0" a="1.0"/>
 				<shieldImage>ship/enemy_shields_white.png</shieldImage>
 			</superShield>
+			<icon>icon_fm_modhull_capstone_particle</icon>
 		</aug>
 
 		<aug name="FM_MODULAR_HULL_UPLINK">
@@ -14725,7 +14710,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				<statBoost name="damageTakenMultiplier">
 					<boostType>MULT</boostType>
 					<amount>0.95</amount>
-					<shipTarget>PLAYER_SHIP</shipTarget>
+					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<priority>0</priority>
 					<systemPowerDependency>
@@ -14753,6 +14738,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					</systemPowerScaling>
 				</statBoost>
 			</statBoosts>
+			<icon>icon_fm_modhull_capstone</icon>
 		</aug>
 
 		<aug name="FM_MODULAR_HULL_PERFECT">
@@ -14808,6 +14794,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<priority>0</priority>
 				</statBoost>
 			</statBoosts>
+			<icon>icon_fm_modhull_capstone</icon>
 		</aug>
 
 		<aug name="FM_MODULAR_HULL_MURAL">
@@ -14861,14 +14848,17 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<priority>0</priority>
 				</statBoost>
 			</statBoosts>
+			<icon>icon_fm_modhull_capstone</icon>
 		</aug>
 
 		<aug name="FM_MODULAR_HULL_FASTSHIELD">
 			<!--<function name="SHIELD_RECHARGE" value="8" useForReqs="false" warning="false"/>-->
+			<icon>icon_fm_modhull_capstone_fastshield</icon>
 		</aug>
 
 		<aug name="FM_MODULAR_HULL_FASTWEAPON">
 			<function name="AUTO_COOLDOWN" value="-0.05" useForReqs="false" warning="false"/>
+			<icon>icon_fm_modhull_capstone_fastweapon</icon>
 		</aug>
 
 		<aug name="FM_MODULAR_HULL_CREWKILL">
@@ -14890,6 +14880,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<priority>998</priority>
 				</statBoost>
 			</statBoosts>
+			<icon>icon_fm_modhull_capstone</icon>
 		</aug>
 
 		<aug name="FM_MODULAR_HULL_MAGNETIC">
@@ -14898,6 +14889,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<function name="SCRAP_COLLECTOR" value="0.1" useForReqs="false"/>
 			<function name="DEIONIZATION_BOOST" value="0.5"/>
 			<function name="MAGNET_ARM" value="0" useForReqs="true"/>
+			<icon>icon_fm_modhull_capstone_magnetic</icon>
 		</aug>
 		
 		<aug name="FM_MODULAR_HULL_RESISTSMASH">
@@ -14906,19 +14898,23 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<function name="ANTIAUG_ION_ARMOR" value="0.15"/>
 			<function name="ANTIAUG_ROCK_ARMOR" value="0.15"/>
 			<function name="ANTIAUG_FMCORE_NO_BREACH" value="4"/>
+			<icon>icon_fm_modhull_capstone_resistsmash</icon>
 		</aug>
 		<aug name="FM_MODULAR_HULL_WEAPON_IGNITE">
 			<function name="AUTO_COOLDOWN" value="0.5"/>
+			<icon>icon_fm_modhull_capstone_weapon_ignite</icon>
 		</aug>
 		<aug name="FM_MODULAR_HULL_OFFENSE_SCRAMBLE">
 			<function name="ANTIAUG_AUTO_COOLDOWN" value="0.2"/>
 			<function name="SHIELD_RECHARGE" value="-0.3"/>
 			<!--<function name="FAST_CLOAK" value="-1"/>-->
 			<!--<function name="FAST_HACK" value="-2"/>-->
+			<icon>icon_fm_modhull_capstone_offense_scramble</icon>
 		</aug>
 		<aug name="FM_MODULAR_HULL_DEFENSE_SCRAMBLE">
-			<function name="ANTIAUG_SHIELD_RECHARGE" value="0.2"/>
+			<function name="ANTIAUG_SHIELD_RECHARGE" value="0.3"/>
 			<function name="ANTIAUG_FAST_CLOAK" value="1"/>
+			<icon>icon_fm_modhull_capstone_defense_scramble</icon>
 		</aug>
 	</augments>
 	<events>

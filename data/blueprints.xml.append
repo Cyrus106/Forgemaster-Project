@@ -1351,7 +1351,7 @@
 		<systemList>
 			<artillery power="1" room="10" start="false" weapon="SHOTGUN_SHADOW" img="room_artillery" />
 			<battery max="2" power="1" room="8" start="false" img="room_battery_7" />
-			<cloaking max="6" power="2" room="6" start="true" img="room_cloaking" />
+			<cloaking power="2" room="6" start="true" img="room_cloaking" />
 			<clonebay power="1" room="12" start="false">
 				<slot>
 					<number>3</number>
@@ -3356,7 +3356,7 @@
 		<title>Fire Intruder</title>
 		<short>Fire Intruder</short>
 		<desc>[CURRENT MODE: Boarding] Gallivants around the enemy ship, burning wherever it goes. And ionizing, just for fun.</desc>
-		<power>1</power>
+		<power>3</power>
 		<speed>25</speed>
 		<cost>50</cost>
 		<rarity>0</rarity>
@@ -4974,34 +4974,9 @@
 				</whiteList>
 
 			</statBoost>
-			<statBoost name="moveSpeedMultiplier">
-				<boostType>MULT</boostType>
-				<amount>0.33</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<affectsSelf>true</affectsSelf>
-				<maxStacks>1</maxStacks>
-				<duration>10</duration>
-				<boostAnim>bio_poison</boostAnim>
-			</statBoost>
-			<statBoost name="stunMultiplier">
-				<boostType>MULT</boostType>
-				<amount>1.75</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<affectsSelf>true</affectsSelf>
-				<maxStacks>1</maxStacks>
-				<duration>10</duration>
-			</statBoost>
-			<statBoost name="repairSpeed">
-				<boostType>MULT</boostType>
-				<amount>0.33</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<affectsSelf>true</affectsSelf>
-				<maxStacks>1</maxStacks>
-				<duration>10</duration>
-			</statBoost>
+			<statBoost name="moveSpeedMultiplier" load="RAD_MOVE"/>
+			<statBoost name="stunMultiplier" load="RAD_STUN"/>
+			<statBoost name="repairSpeed" load="RAD_REPAIR"/>
 		</statBoosts>
 		<rarity>0</rarity>
 		<projectiles>
@@ -5152,36 +5127,9 @@
 				</blackList>
 				<priority>-100</priority>
 			</statBoost>
-
-			<statBoost name="moveSpeedMultiplier">
-				<boostType>MULT</boostType>
-				<amount>0.33</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<affectsSelf>true</affectsSelf>
-				<maxStacks>1</maxStacks>
-				<duration>10</duration>
-				<boostAnim>bio_poison</boostAnim>
-			</statBoost>
-			<statBoost name="stunMultiplier">
-				<boostType>MULT</boostType>
-				<amount>1.75</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<affectsSelf>true</affectsSelf>
-				<maxStacks>1</maxStacks>
-				<duration>10</duration>
-			</statBoost>
-			<statBoost name="repairSpeed">
-				<boostType>MULT</boostType>
-				<amount>0.33</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<affectsSelf>true</affectsSelf>
-				<maxStacks>1</maxStacks>
-				<duration>10</duration>
-			</statBoost>
-
+			<statBoost name="moveSpeedMultiplier" load="RAD_MOVE"/>
+			<statBoost name="stunMultiplier" load="RAD_STUN"/>
+			<statBoost name="repairSpeed" load="RAD_REPAIR"/>
 		</statBoosts>
 
 
@@ -7279,34 +7227,9 @@
 		<fireChance>5</fireChance>
 		<cooldown>15</cooldown>
 		<statBoosts>
-			<statBoost name="moveSpeedMultiplier">
-				<boostType>MULT</boostType>
-				<amount>0.33</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<affectsSelf>true</affectsSelf>
-				<maxStacks>1</maxStacks>
-				<duration>10</duration>
-				<boostAnim>bio_poison</boostAnim>
-			</statBoost>
-			<statBoost name="stunMultiplier">
-				<boostType>MULT</boostType>
-				<amount>1.75</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<affectsSelf>true</affectsSelf>
-				<maxStacks>1</maxStacks>
-				<duration>10</duration>
-			</statBoost>
-			<statBoost name="repairSpeed">
-				<boostType>MULT</boostType>
-				<amount>0.33</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<affectsSelf>true</affectsSelf>
-				<maxStacks>1</maxStacks>
-				<duration>10</duration>
-			</statBoost>
+			<statBoost name="moveSpeedMultiplier" load="RAD_MOVE"/>
+			<statBoost name="stunMultiplier" load="RAD_STUN"/>
+			<statBoost name="repairSpeed" load="RAD_REPAIR"/>
 		</statBoosts>
 		<color>
 			<r>255</r>
@@ -7348,34 +7271,9 @@
 		<fireChance>5</fireChance>
 		<cooldown>15</cooldown>
 		<statBoosts>
-			<statBoost name="moveSpeedMultiplier">
-				<boostType>MULT</boostType>
-				<amount>0.33</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<affectsSelf>true</affectsSelf>
-				<maxStacks>1</maxStacks>
-				<duration>10</duration>
-				<boostAnim>bio_poison</boostAnim>
-			</statBoost>
-			<statBoost name="stunMultiplier">
-				<boostType>MULT</boostType>
-				<amount>1.75</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<affectsSelf>true</affectsSelf>
-				<maxStacks>1</maxStacks>
-				<duration>10</duration>
-			</statBoost>
-			<statBoost name="repairSpeed">
-				<boostType>MULT</boostType>
-				<amount>0.33</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<affectsSelf>true</affectsSelf>
-				<maxStacks>1</maxStacks>
-				<duration>10</duration>
-			</statBoost>
+			<statBoost name="moveSpeedMultiplier" load="RAD_MOVE"/>
+			<statBoost name="stunMultiplier" load="RAD_STUN"/>
+			<statBoost name="repairSpeed" load="RAD_REPAIR"/>
 		</statBoosts>
 		<color>
 			<r>255</r>
@@ -8564,11 +8462,11 @@
 				<priority>-100</priority>
 			</statBoost>
 
-			<!--<statBoost name="statBoost">
+			<statBoost name="statBoost">
 				<boostType>FLAT</boostType>
 				<shipTarget>CURRENT_ROOM</shipTarget>
 				<crewTarget>ALL</crewTarget>
-				<duration>60</duration>-->
+				<duration>60</duration>
 
 				<statBoost name="trueHealAmount">
 					<boostType>FLAT</boostType>
@@ -8583,12 +8481,12 @@
 					</blackList>
 					<priority>-100</priority>
 				</statBoost>
-				<!--<blackList>
+				<blackList>
 					<FM_PLSNOEFFECT/>
 				</blackList>
-				<priority>-100</priority>-->
+				<priority>-100</priority>
 
-			<!--</statBoost>-->
+			</statBoost>
 		</statBoosts>
 		<image>beam_contact</image>
 		<length>1</length>
@@ -8599,7 +8497,7 @@
 		<iconImage>beam</iconImage>
 	</weaponBlueprint>
 
-	<weaponBlueprint name="FM_FOCUS_VIRUS_PLAYER"> <!-- Crafted with Corrosive Hull 2 and Anelace Pinpoint -->
+	<weaponBlueprint name="FM_FOCUS_VIRUS_PLAYER"> <!-- Crafted with Corrosive Hull 2 and Anelace Pinpoint --><!--unobtainable due to analace beitn 1 power always now-->
 		<type>BEAM</type>
 		<tip>fm_tip_corrosive</tip>
 		<title>'Aegrotatio' Pinpoint†</title>
@@ -8607,8 +8505,8 @@
 		<desc>An incredibly unstable bio-weapon developed by only the most criminally insane shell scientists, this weapon inflicts crew with a deadly spreading virus, slowly wiping out the crew of enemy ships.</desc>
 		<tooltip>Beware! A misfire from this weapon once wiped out an entire shell colony, so maybe don't fire it too close to your boarders.</tooltip>
 		<damage>2</damage>
-    <sysDamage>-1</sysDamage>
-    <persDamage>-2</persDamage>
+		<sysDamage>-1</sysDamage>
+		<persDamage>-2</persDamage>
 		<sp>2</sp>
 		<fireChance>0</fireChance>
 		<breachChance>2</breachChance>
@@ -10410,36 +10308,9 @@
 				<priority>999999</priority>
 				<duration>10</duration>
 			</statBoost>
-			<statBoost name="moveSpeedMultiplier">
-				<boostType>MULT</boostType>
-				<amount>0.33</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<affectsSelf>true</affectsSelf>
-				<maxStacks>1</maxStacks>
-				<duration>10</duration>
-				<boostAnim>bio_poison</boostAnim>
-			</statBoost>
-			<statBoost name="stunMultiplier">
-				<boostType>MULT</boostType>
-				<amount>1.75</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<affectsSelf>true</affectsSelf>
-				<maxStacks>1</maxStacks>
-				<duration>10</duration>
-			</statBoost>
-			<statBoost name="repairSpeed">
-				<boostType>MULT</boostType>
-				<amount>0.33</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<affectsSelf>true</affectsSelf>
-				<maxStacks>1</maxStacks>
-				<duration>10</duration>
-			</statBoost>
-
-
+			<statBoost name="moveSpeedMultiplier" load="RAD_MOVE"/>
+			<statBoost name="stunMultiplier" load="RAD_STUN"/>
+			<statBoost name="repairSpeed" load="RAD_REPAIR"/>
 		</statBoosts>
 
 		<cooldown>12</cooldown>
@@ -11978,6 +11849,11 @@
 		<rarity>0</rarity>
 		<length>170</length>
 		<image>beam_contact</image>
+		<statBoosts>
+			<statBoost name="moveSpeedMultiplier" load="RAD_MOVE"/>
+			<statBoost name="stunMultiplier" load="RAD_STUN"/>
+			<statBoost name="repairSpeed" load="RAD_REPAIR"/>
+		</statBoosts>
 		<boost>
 			<type>cooldown</type>
 			<amount>6</amount>
@@ -12912,36 +12788,11 @@
 		<shots>1</shots>
 		<sp>0</sp>
 		<breachChance>3</breachChance>
-		<cooldown>6</cooldown>
-		<statBoosts> <!--5/10/15/20/25-->
-			<statBoost name="moveSpeedMultiplier">
-				<boostType>MULT</boostType>
-				<amount>0.33</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<affectsSelf>true</affectsSelf>
-				<maxStacks>1</maxStacks>
-				<duration>5</duration>
-				<boostAnim>bio_poison</boostAnim>
-			</statBoost>
-			<statBoost name="stunMultiplier">
-				<boostType>MULT</boostType>
-				<amount>1.75</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<affectsSelf>true</affectsSelf>
-				<maxStacks>1</maxStacks>
-				<duration>5</duration>
-			</statBoost>
-			<statBoost name="repairSpeed">
-				<boostType>MULT</boostType>
-				<amount>0.33</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<affectsSelf>true</affectsSelf>
-				<maxStacks>1</maxStacks>
-				<duration>5</duration>
-			</statBoost>
+		<cooldown>6</cooldown><!--5/10/15/20/25-->
+		<statBoosts>
+			<statBoost name="moveSpeedMultiplier" load="RAD_MOVE"/>
+			<statBoost name="stunMultiplier" load="RAD_STUN"/>
+			<statBoost name="repairSpeed" load="RAD_REPAIR"/>
 		</statBoosts>
 		<power>1</power>
 		<bp>4</bp>
@@ -14054,34 +13905,9 @@
 		<cost>300</cost>
 		<bp>5</bp>
 		<statBoosts>
-			<statBoost name="moveSpeedMultiplier">
-				<boostType>MULT</boostType>
-				<amount>0.33</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<affectsSelf>true</affectsSelf>
-				<maxStacks>1</maxStacks>
-				<duration>10</duration>
-				<boostAnim>bio_poison</boostAnim>
-			</statBoost>
-			<statBoost name="stunMultiplier">
-				<boostType>MULT</boostType>
-				<amount>1.75</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<affectsSelf>true</affectsSelf>
-				<maxStacks>1</maxStacks>
-				<duration>10</duration>
-			</statBoost>
-			<statBoost name="repairSpeed">
-				<boostType>MULT</boostType>
-				<amount>0.33</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<affectsSelf>true</affectsSelf>
-				<maxStacks>1</maxStacks>
-				<duration>10</duration>
-			</statBoost>
+			<statBoost name="moveSpeedMultiplier" load="RAD_MOVE"/>
+			<statBoost name="stunMultiplier" load="RAD_STUN"/>
+			<statBoost name="repairSpeed" load="RAD_REPAIR"/>
 		</statBoosts>
 		<rarity>0</rarity>
 		<length>170</length>
@@ -18076,14 +17902,30 @@
 		<bp>0</bp>
 	</augBlueprint>
 
-	<mod:findName type="augBlueprint" name="EX_MEDBAY_SPEED">   <!--PRICE TWEAK. -->
+	<!--<mod:findName type="augBlueprint" name="EX_MEDBAY_SPEED">
 		<mod-overwrite:cost>60</mod-overwrite:cost>
-	</mod:findName>
+	</mod:findName>-->
 
 	<!--Abstrusity — Yesterday at 19:10
 	solution: make the augment 'self arm'
 	"a versatile arm capable of grabbing drones and magnetizing debris - additionally, it can grab ripped-off pieces of your hull to deconstruct for shiny golden scrap."-->
-
+		
+	<augBlueprint name="FM_RELOADER_REWARD_2">
+		<title>Damaged Reloader</title>
+		<desc>7% reloader</desc>
+		<cost>150</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+		<bp>0</bp>
+	</augBlueprint>
+	<augBlueprint name="FM_RELOADER_REWARD_3">
+		<title>Custom Reloader</title>
+		<desc>10% reloader</desc>
+		<cost>150</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+		<bp>0</bp>
+	</augBlueprint>
 </FTL>
 <FTL><!--BOONS-->
 	<!--Theist-->

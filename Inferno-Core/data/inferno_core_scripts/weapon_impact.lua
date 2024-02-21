@@ -238,7 +238,7 @@ do
     script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA,
     function(ShipManager, Projectile, Location, Damage, forceHit, shipFriendlyFire)
     --If projectile is an asteroid, set AsteroidResist to true so resistances are triggered during the following resist augment checks in DamageArea
-      if Projectile:GetType() == 2 then 
+      if Projectile and Projectile:GetType() == 2 then 
         AsteroidResist = true 
         --Prevent subsequent callbacks from running as we do not want this to register as a regular impact 
         --Additionally we do not want any subsequent callbacks to call GetAugmentationValue("SYSTEM_CASING") which will prevent the resistances from being modified

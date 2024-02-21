@@ -18,7 +18,8 @@
 <FTL> <!-- Ships, Destruction Events, Ship Fight Events -->
 	
 	<ship name="SHIP_FM_FORGEMASTER" auto_blueprint="FM_FORGEMASTER_CRUISER_ENEMY">
-		<triggeredEvent name="FORGEMASTER_SPARES_YOU" event="FORGEMASTER_SPARE" playerHull="3" playerCrew="1" thisFight="true"/>
+		<triggeredEvent name="FORGEMASTER_SPARES_YOU" event="FORGEMASTER_SPARE" playerCrew="1" thisFight="true"/>
+		<triggeredEvent name="FORGEMASTER_SPARES_YOU" event="FORGEMASTER_SPARE" playerHull="3" thisFight="true"/>
 		<!--<triggeredEvent name="FORGEMASTER_IS_HURT_FIRST" event="FORGEMASTER_COUNTER" enemyHull="20" enemyCrew="9" thisFight="true"/>
 		<triggeredEvent name="FORGEMASTER_IS_HURT" event="FORGEMASTER_RETALIATE" enemyHull="10" enemyCrew="6" thisFight="true"/>
 		<triggeredEvent name="FORGEMASTER_IS_HURT_BAD" event="FORGEMASTER_RETALIATE_STRONK" enemyHull="5" enemyCrew="2" thisFight="true"/>-->
@@ -82,7 +83,7 @@
 		<autoReward level="MED">standard</autoReward>
 		<variable name="fm_gunbomquest_rescued" op="set" val="1"/>
 		<queueEvent>MORALITY_REMOVE_FORGEMASTER</queueEvent>
-		<queueEvent>MORALITY_UPDATE_SLUG</queueEvent>
+		<!--<queueEvent>MORALITY_UPDATE_SLUG</queueEvent>-->
 		<choice hidden="true">
 			<text>Alastair asked me to help...</text>
 			<event name="DEBTCOLLECT_DIALOG">
@@ -167,7 +168,7 @@
 		</text>
 		<variable name="fm_gunbomquest_rescued" op="set" val="1"/>
 		<queueEvent>MORALITY_REMOVE_FORGEMASTER</queueEvent>
-		<queueEvent>MORALITY_UPDATE_SLUG</queueEvent>
+		<!--queueEvent>MORALITY_UPDATE_SLUG</queueEvent>-->
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Alastair asked me to help...</text>
@@ -229,7 +230,7 @@
 
 	<event name="FORGEMASTER_SPARE">
 		<text>It seems you're on your last legs. You won't survive much longer, Alastair offers to spare you. "There doesn't need to be any more bloodshed, lad."</text>
-		<clearTriggeredEvent name="FORGEMASTER_SPARES_YOU"/>
+		<!--<clearTriggeredEvent name="FORGEMASTER_SPARES_YOU"/>-->
 		<choice hidden="true">
 			<text>Surrender.</text>
 			<event>
@@ -251,7 +252,7 @@
 		<status type="limit" target="player" system="hacking" amount="1"/>
 		<status type="limit" target="player" system="teleporter" amount="3"/>
 		<status type="limit" target="player" system="shields" amount="7"/>
-		<status type="limit" target="enemy" system="teleporter" amount="0"/>
+		<!--<status type="limit" target="enemy" system="teleporter" amount="0"/>-->
 		<boarders min="2" max="2" class="fm_fire_intruder"/>
 
 	</event>
@@ -270,6 +271,113 @@
 		<boarders min="2" max="2" class="fm_ancalagon_monitor"/>
 
 	</event>
+	<event name="FORGEMASTER_PHASE_1_END">
+		<text>Moments before destruction all plated on Alastair's ship began mending the hull, rapidly restoring it back to peak condition! A sudden hail flashes on your screen, and Alastair appears. "A warrior's spirit in you lad! Let's see if you can keep this up, aye?" Alastair puts his hand on the ship's terminal, a light on it flashes with a brilliant light, and you notice his ship shift slightly as he powers up his systems further.</text>
+		<choice>
+			<text>Continue...</text>
+			<event/>
+		</choice>
+		<choice>
+			<text>Stand down.</text>
+			<event>
+				<ship hostile="false"/>
+				<text>Alastair powers down his weapons before hailing you again. "Not bad, lad, not bad at all! You certainly know how to handle that ship of yours. I'm sure I have something for you, and let me fix up your hull too! You fought well." He patches up your hull and teleports over a few crates of resources...</text>
+				<autoReward level="LOW">scrap_only</autoReward>
+				<damage amount="-20"/>
+				<item_modify>
+					<item type="fuel" min="1" max="2"/>
+					<item type="missiles" min="1" max="3"/>
+					<item type="drones" min="1" max="2"/>
+				</item_modify>
+				<choice>
+					<text>Continue...</text>
+					<event load="FM_SPARRING_REWARD"/>
+				</choice>
+			</event>
+		</choice>
+	</event>
+	<event name="FORGEMASTER_PHASE_2_END">
+		<text>You expect this would be it, but instead you detect a surge of nanites as a Repair-bot dispersal is activated, swiftly undoign your damage! "A fine effort, lad, but you'll have to do more than that! My ship is well equipped for repairs; so many pirates thinking they can steal my cargo made that almost required to go through their sectors!" Scans indicate further increase in power.</text>
+		<choice>
+			<text>Continue...</text>
+			<event/>
+		</choice>
+		<choice>
+			<text>Stand down.</text>
+			<event>
+				<ship hostile="false"/>
+				<text>Alastair powers down his weapons before hailing you again. "Most impressive, lad! You fight with prowess not many to face me have ever shown! Take these resources, and a weapon from my storage - a fine reward for our battle!" Alistair teleports a few small crates of various resources onto your ship, as well as a weapon from his stock.</text>
+				<autoReward level="MED">scrap_only</autoReward>
+				<damage amount="-20"/>
+				<item_modify>
+					<item type="fuel" min="1" max="3"/>
+					<item type="missiles" min="1" max="4"/>
+					<item type="drones" min="1" max="3"/>
+				</item_modify>
+				<choice>
+					<text>Continue...</text>
+					<event load="FM_SPARRING_REWARD_2"/>
+				</choice>
+			</event>
+		</choice>
+	</event>
+	<event name="FORGEMASTER_PHASE_3_END">
+		<text>An emergency repair system triggers on the Forgemaster's ship, dozens of repair bombs detonate at once. "You really are pushing me to my limits, lad..." Your scanners detect another increase in the power of his ship. "lets end it here, alright lad?"</text>
+		<choice>
+			<text>End it here.</text>
+			<event>
+				<ship hostile="false"/>
+				<text>Alastair powers down his weapons before hailing you again. "You really know how to stand your ground, lad! For your valiant effort, I shall bestow upon you a mighty haul, as well as a weapon from my own Forge! Alistair teleports over a few crates of resources, as well as a weapon from his forge. "And let me patch up that hull of yours, lad! A fine battle indeed!" Alistair sends a few plated onto your ship, who quickly fix up your ship's hull and bring over some crates of resources...</text>
+				<autoReward level="HIGH">scrap_only</autoReward>
+				<damage amount="-30"/>
+				<item_modify>
+					<item type="fuel" min="2" max="3"/>
+					<item type="missiles" min="2" max="5"/>
+					<item type="drones" min="2" max="4"/>
+				</item_modify>
+				<choice>
+					<text>Continue...</text>
+					<event load="FM_SPARRING_REWARD_3"/>
+				</choice>
+			</event>
+		</choice>
+		<choice>
+			<text>Continue to fight...</text>
+			<event>
+				<text>"oh, if a fight is what you want, then you shall get it, lad" a pair of unusual drone pods launch into your ship...</text>
+				<boarders min="2" max="2" class="fm_ancalagon_battle"/>
+			</event>
+		</choice>
+	</event>
+	<eventList name="FM_SPARRING_REWARD">
+		<!--<event>
+			<text>One of the crates contains an old damaged weapon. "one of my plated tried to make something from it, the weapon sadly broke down, maybe you will find a use for it lad."</text>
+			<weapon name="GIFTLIST_FREE"/>
+			<hiddenAug>FM_RELOADER_REWARD_1</hiddenAug>
+		</event>-->
+		<event>
+			<text>One of the crates contains a damaged rusty weapon. "Lad, this may be a bit crude of me, but I'm starting to run low on space to store all my scrap weapons. These weapons are still worth something, and I believe that was a fine duel, so if it's alright with you, lad, I'd like you to shave a little off this growing scrap pile. And take a little more - consider it payment for taking the rusty weapons off my hands!"</text>
+			<weapon name="GIFTLIST_RUSTY"/>
+		</event>
+	</eventList>
+	<eventList name="FM_SPARRING_REWARD_2">
+		<!--<event>
+			<text>One of the crates contains an old damaged weapon. "one of my plated tried to make something from it, the weapon broken but they managed to make a small augment that increases weaon charge speed, you can have it lad." [+7% reload speed gained]</text>
+			<weapon name="GIFTLIST_RUSTY"/>
+		</event>-->
+		<event>
+			<text>One of the crates contains a weapon that looks good as new. "I get pirates biting off more they can chew quite often, you see. I took some time to fix up one of their weapons, and managed to salvage one of their reloaders. It's not in the best condition, but I'm sure it'll still serve you well, lad." [+7% reload speed gained]</text>
+			<weapon name="GIFTLIST_FREE"/>
+			<hiddenAug>FM_RELOADER_REWARD_2</hiddenAug>
+		</event>
+	</eventList>
+	<eventList name="FM_SPARRING_REWARD_3">
+		<event>
+			<text>One of the crates contains an new crafted weapon and what appears to be a custom made reloader. "The one who ordered this wasn't quite satisfied - in fact, they left me with the reloader module I made for them! I think you'd be a better judge of quality than them, lad, so I think it's better in your hands than theirs!" [+10% reload speed gained]</text>
+			<weapon name="FM_WEAPON_LOW_TIER_REWARD"/>
+			<hiddenAug>FM_RELOADER_REWARD_3</hiddenAug>
+		</event>
+	</eventList>
 
 	<event name="GUNBOM_FULL">
 
@@ -678,22 +786,22 @@
 			<event load="FM_QUEST_GUNBOM_INTRO"/>
 		</choice>
 		
-		<choice hidden="true" req="fm_arborealquest_exe" lvl="1" max_group="1" blue="true"> <!--  ARBOREAL QUEST-->
+		<choice hidden="true" req="fm_arborealquest_exe" lvl="1" max_group="2" blue="true"> <!--  ARBOREAL QUEST-->
 			<text>Inform Alastair about the result of your quest.</text>
 			<event load="FM_QUEST_ARBOREAL_COMPLETED_EXE"/>
 		</choice>
 		
-		<choice hidden="true" req="fm_arborealquest_rev" lvl="1" max_group="1" blue="true"> <!--  ARBOREAL QUEST-->
+		<choice hidden="true" req="fm_arborealquest_rev" lvl="1" max_group="2" blue="true"> <!--  ARBOREAL QUEST-->
 			<text>Inform Alastair about the result of your quest.</text>
 			<event load="FM_QUEST_ARBOREAL_COMPLETED_REV"/>
 		</choice>
 
-		<choice hidden="true" req="fm_arborealquest_taken" lvl="1" max_group="1" blue="true"> <!--  ARBOREAL QUEST-->
+		<choice hidden="true" req="fm_arborealquest_taken" lvl="1" max_group="2" blue="true"> <!--  ARBOREAL QUEST-->
 			<text>Inquire again about Kyriet and Mandelbriss.</text>
 			<event load="FM_QUEST_ARBOREAL_TAKEN"/>
 		</choice>
 
-		<choice hidden="true" req="SEC SECTOR_GATHERING_UNIQUE" lvl="1" max_group="1" blue="true"> <!--  ARBOREAL QUEST-->
+		<choice hidden="true" req="SEC SECTOR_GATHERING_UNIQUE" lvl="1" max_group="2" blue="true"> <!--  ARBOREAL QUEST-->
 			<text>Examine a glass case containing a shattered green crystal.</text>
 			<event load="FM_QUEST_ARBOREAL_INTRO"/>
 		</choice>
@@ -899,7 +1007,7 @@
 		<loadEvent>FM_ATTACK</loadEvent>
 	</event>
 	<event name="FM_ATTACK"> <!--  Attack him -->
-		<text>For some insane reason, you have decided to attack the Forgemaster. Are you really sure you want to do this? He's been so friendly! What could you possibly have to gain?.</text> <!--  PLACEHOLDER TEXT, REPLACE!! -->
+		<text>For some insane reason, you have decided to attack the Forgemaster. Are you really sure you want to do this? He's been so friendly! What could you possibly have to gain?</text> <!--  PLACEHOLDER TEXT, REPLACE!! -->
 		<choice hidden="true">
 			<text>Yes!</text>
 			<event>
@@ -970,10 +1078,10 @@
 				<clearEventButton name="UI_FORGEMASTER_SECOND_PROMPT"/>
 
 				<ship hostile="true"/>
-				<triggeredEvent name="FORGEMASTER_SPARES_YOU" event="FORGEMASTER_SPARE" playerHull="3" playerCrew="1" thisFight="true"/>
+				<!--<triggeredEvent name="FORGEMASTER_SPARES_YOU" event="FORGEMASTER_SPARE" playerHull="3" playerCrew="1" thisFight="true"/>
 				<triggeredEvent name="FORGEMASTER_IS_HURT_FIRST" event="FORGEMASTER_COUNTER" enemyHull="20" enemyCrew="9" thisFight="true"/>
 				<triggeredEvent name="FORGEMASTER_IS_HURT" event="FORGEMASTER_RETALIATE" enemyHull="10" enemyCrew="6" thisFight="true"/>
-				<triggeredEvent name="FORGEMASTER_IS_HURT_BAD" event="FORGEMASTER_RETALIATE_STRONK" enemyHull="5" enemyCrew="2" thisFight="true"/>
+				<triggeredEvent name="FORGEMASTER_IS_HURT_BAD" event="FORGEMASTER_RETALIATE_STRONK" enemyHull="5" enemyCrew="2" thisFight="true"/>-->
 				<choice hidden="true">
 					<text>Continue...</text>
 					<event load="COMBAT_CHECK"/>
@@ -1031,19 +1139,19 @@
 
 
 	<event name="FM_ATTACK_AGAIN"> <!--  Attack him AGAIN while in attack menu -->
-		<event/>
+		<loadEvent>FM_ATTACK_AGAIN_REC</loadEvent>
 	</event>
 
 	<event name="FM_ATTACK_SECOND_AGAIN"> <!--  Attack him AGAIN while in attack menu for Jump Event -->
-		<event/>
+		<loadEvent>FM_ATTACK_SECOND_AGAIN_REC</loadEvent>
 	</event>
 
 	<event name="FM_ATTACK_AGAIN_REC"> <!--  Attack him AGAIN while in attack menu -->
-		<event/>
+		<loadEvent>FM_ATTACK</loadEvent>
 	</event>
 
 	<event name="FM_ATTACK_SECOND_AGAIN_REC"> <!--  Attack him AGAIN while in attack menu for Jump Event -->
-		<event/>
+		<loadEvent>FM_ATTACK_SECOND</loadEvent>
 	</event>
 
 
@@ -1139,7 +1247,7 @@
 		</choice>
 
 
-		<choice hidden="true" req="pilot" lvl="1" max_group="5" blue="false"> <!--  Do nothing -->
+		<choice hidden="true" req="pilot" lvl="5" max_group="5" blue="false"> <!--  Do nothing -->
 			<text>Decline his offer.</text>
 			<event>
 				<text>Alastair looks crestfallen. "Come back later when you want me to make something awesome, lad. I guess."</text>
@@ -1587,12 +1695,12 @@
 		<checkCargo/>
 
 		<choice req="FM_BEAM_MINING_2_LIST" lvl="1" blue="false" hidden="true">
-			<text>Dissassemble and combine the Pike II and Mining beams to forge the Ishimura Beam.[Cost: 120~]</text>
+			<text>Dissassemble and combine the 'Sarissa' Beam and Mining beams to forge the Ishimura Beam.[Cost: 120~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_MINING_2"/>
 		</choice>
 
 		<choice req="FM_BEAM_MINING_2_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
-			<text>You must have a Pike II and Mining beam to forge this weapon.</text>
+			<text>You must have a 'Sarissa' Beam and Mining beam to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
@@ -9017,7 +9125,7 @@
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_DEFENSE_SCRAMBLE</loadEvent>
 			</event>
 		</choice>
-		<choice req="FM_MODULAR_HULL_WEAPON_IGNITE" lvl="1" blue="false" hidden="true">
+		<choice req="FM_MODULAR_HULL_DEFENSE_SCRAMBLE" lvl="1" blue="false" hidden="true">
 			<text>Defence Scrambler Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>

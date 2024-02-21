@@ -13,7 +13,7 @@ local augBox = {
   RenderCondition = function(self)
     return true
   end,
-  ShoulRender = function(self)
+  ShouldRender = function(self)
     return Hyperspace.ships.player:GetAugmentationValue(self.augName) ~= 0 and self:RenderCondition()
   end,
 
@@ -83,7 +83,7 @@ function()
     Graphics.CSurface.GL_LoadIdentity()
     Graphics.CSurface.GL_Translate(xOffset, yOffset)
     for _, augBox in ipairs(augBoxes) do
-      if augBox:ShoulRender() then
+      if augBox:ShouldRender() then
         Graphics.CSurface.GL_Translate(0, 24)
         augBox:Render()
       end

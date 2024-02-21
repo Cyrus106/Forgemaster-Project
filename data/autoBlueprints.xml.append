@@ -9,21 +9,31 @@
 	<minSector>1</minSector>
 	<maxSector>8</maxSector>
 	<systemList>
-		<cloaking power="3" max="3" room="15" start="true" />
-		<medbay power="4" max="4" room="5" start="true" />
-		<doors power="4" max="4" room="12" start="true" />
-		<drones power="6" max="6" room="0" start="true" />
+		<cloaking power="1" max="1" room="15" start="true" /><!--gets upgraded up t 4-->
+		<!--<medbay power="4" max="4" room="5" start="true" />-->
+		<clonebay power="1" max="1" room="5" start="true" />
+		<doors power="3" max="3" room="12" start="true" />
+		<drones power="3" max="3" room="0" start="true" />
 		<engines power="2" max="2" room="2" start="true" />
 		<oxygen power="2" max="3" room="3" start="true" />
 		<pilot power="3" max="3" room="17" start="true" />
 		<shields power="4" max="4" room="1" start="true" />
 		<weapons power="12" max="12" room="8" start="true" />
+		<teleporter power="1" max="1" room="4" start="true"/>
 	</systemList>
 	<weaponSlots>4</weaponSlots>
-	<droneSlots>2</droneSlots>
+	<droneSlots>10</droneSlots>
 	<weaponList missiles="50" count="4" load="FM_FORGEMASTER_LOADOUT" />
 
 	<droneList drones="20" count="6">
+		<drone name="FM_FIRE_INTRUDER" />
+		<drone name="FM_FIRE_INTRUDER" />
+		<drone name="FM_FIRE_INTRUDER" />
+		<drone name="FM_FIRE_INTRUDER" />
+		<drone name="FM_FIRE_INTRUDER" />
+		<drone name="FM_FIRE_INTRUDER" />
+		<drone name="FM_FIRE_INTRUDER" />
+		<drone name="FM_FIRE_INTRUDER" />
 		<drone name="FM_FIRE_INTRUDER" />
 		<drone name="FM_FIRE_INTRUDER" />
 
@@ -33,7 +43,6 @@
 	<crewCount amount="1" max="3" class="fm_plated" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="FM_NANO_FORGE_ACCELERANT" />
-	<aug name="UPG_MEDBAY_NANO_FORGEMASTER_ENEMY" />
 
 </shipBlueprint>
 
@@ -2687,6 +2696,27 @@
 	<name>FM_SHOTGUN_BRONZE</name><!--remmbr other tiers too pls!-->
 	<name>FM_SHOTGUN_CURSED</name>
 	<name>FM_RVS_AC_CHARGE</name>
+</blueprintList>
+<blueprintList name="FM_WEAPON_LOW_TIER_REWARD">
+	<name>FM_LASER_ANOMALY_1</name>
+	<name>FM_FLAMETHROWER</name>
+	<name>FM_PHASER_SUFFOCATION</name>
+	<name>FM_LASER_PHOTON</name>
+	<name>FM_LASER_HUMAN</name>
+	<name>FM_CHAINGUN_FIRE</name>
+	<name>FM_ION_TRI_FIRE</name>
+	<name>FM_ENERGY_DISC</name>
+	<name>FM_CHAINGUN_ION</name>
+	<name>FM_PULSE_1</name>
+	<name>FM_PULSE_2</name>
+	<name>FM_PULSEDEEP</name>
+	<name>FM_BEAM_PARTICLE_PIERCE</name>
+	<name>FM_BEAM_ION_PIERCE</name>
+	<name>FM_FOCUS_ENERGY_1</name>
+	<name>FM_FOCUS_ENERGY_2</name>
+	<name>FM_SHOTGUN_ANOMALY</name>
+	<name>FM_SHOTGUN_BRONZE</name><!--remmbr other tiers too pls!-->
+	<name>FM_SHOTGUN_CURSED</name>
 </blueprintList>
 <blueprintList name="FM_WEAPON_HIGH_TIER">
 	<name>FM_LASER_ION_MEGA</name>

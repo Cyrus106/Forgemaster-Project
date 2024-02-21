@@ -3,6 +3,7 @@ local GetLimitAmount = mods.inferno.GetLimitAmount
 local SetLimitAmount = mods.inferno.SetLimitAmount
 local real_projectile = mods.inferno.real_projectile
 local randomInt = mods.inferno.randomInt
+local RoomEffect = mods.inferno.RoomEffect
 
 local getEmptyBars = function(ShipManager,sysId)
   return ShipManager:GetSystemPowerMax(sysId) - ShipManager:GetSystemPower(sysId) - math.max(GetLimitAmount(ShipManager:GetSystem(sysId)),ShipManager:GetSystemPowerMax(sysId) - ShipManager:GetSystem(sysId).healthState.first)
@@ -125,7 +126,7 @@ end)--]]
 
 script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE,
 function(projectile, weapon)
-  if weapon:HasAugmentation("FM_MODULAR_HULL_WEAPON_IGNITE") > 0 and not weapon.isArtillery then
+  if weapon:HasAugmentation("FM_MODULAR_HULL_WEAPON_IGNITE") > 0 and not weapon.isArtillery and mods.multiverse.is_first_shot(weapon,true) then
     local ship = Hyperspace.ships(projectile:GetOwnerId())
     ship:StartFire(ship:GetSystem(3).roomId)
   end
@@ -177,7 +178,54 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
     return Defines.Chain.CONTINUE, beamHitType
   end, -1000)
 
-
+-- rendering of turrets/repair sys Update
+local sysIdToAug={
+  [0]="SHIELDS","ENGINES","OXYGEN","WEAPONS","DRONES","MED","PILOT","SENORS","DOORS","TELEPORTER","CLOAKING",
+  "ARTILLERY","BATTERY","MED","MIND","HACKING",[20]="TEMPORAL"
+}
+mods.Forgemaster.augs={}
+mods.Forgemaster.augs.UpdateEffect = RoomEffect:New {
+  borderColor = Graphics.GL_Color(52 / 255, 55 / 255, 71 / 255, 0.75),
+  roomColor = Graphics.GL_Color(58 / 255, 80 / 255, 130 / 255, 0.5),
+  --[[
+  gradient = {
+      Graphics.GL_Color(1 / 255, 169 / 255, 58 / 255, 1),
+      Graphics.GL_Color(2 / 255, 184 / 255, 53 / 255, 1),
+      Graphics.GL_Color(4 / 255, 200 / 255, 48 / 255, 1),
+      Graphics.GL_Color(6 / 255, 215 / 255, 43 / 255, 1),
+      Graphics.GL_Color(7 / 255, 229 / 255, 38 / 255, 1),
+  },
+  --]]
+}
+mods.Forgemaster.augs.TurretEffect = RoomEffect:New {
+  borderColor = Graphics.GL_Color(71 / 255, 61 / 255, 52 / 255, 0.75),
+  roomColor = Graphics.GL_Color(130 / 255, 80 / 255, 58 / 255, 0.5),
+  --[[
+  gradient = {
+      Graphics.GL_Color(1 / 255, 169 / 255, 58 / 255, 1),
+      Graphics.GL_Color(2 / 255, 184 / 255, 53 / 255, 1),
+      Graphics.GL_Color(4 / 255, 200 / 255, 48 / 255, 1),
+      Graphics.GL_Color(6 / 255, 215 / 255, 43 / 255, 1),
+      Graphics.GL_Color(7 / 255, 229 / 255, 38 / 255, 1),
+  },
+  --]]
+}
+local UpdateEffect = mods.Forgemaster.augs.UpdateEffect
+local TurretEffect = mods.Forgemaster.augs.TurretEffect
+script.on_render_event(Defines.RenderEvents.SHIP_FLOOR, function(Ship, experimental) end,
+function(Ship, experimental)
+  for sys in vter(Hyperspace.ships(Ship.iShipId).vSystemList) do
+    local room = Ship.vRoomList[sys:GetRoomId()]
+    if not room.bBlackedOut then
+      if Ship:HasAugmentation("FM_MODULAR_HULL_UPDATE_"..sysIdToAug[sys:GetId()]) > 0 then
+        UpdateEffect:Render(room)
+      end
+      if Ship:HasAugmentation("FM_MODULAR_HULL_TURRET_"..sysIdToAug[sys:GetId()]) > 0 then
+        TurretEffect:Render(room)
+      end
+    end
+  end
+end)
 
 --[[
 Must expose:

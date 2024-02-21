@@ -25,6 +25,7 @@
 		<req name="FMCORE_LIST_JUMPSPACE_EQUIPMENT">
 			<name>LIST_JUMPSPACE_EQUIPMENT</name>
 			<name>CURA_TASK_CHECK</name>
+			<name>CURA_TASK_AND_LIGHTSPEED</name>
 		</req>
 		<req name="FMCORE_CAN_USE_HS_AUG" type="all">
 			<name>LIST_JUMPSPACE_EQUIPMENT</name>

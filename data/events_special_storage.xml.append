@@ -1055,12 +1055,12 @@
 
 
 		<choice req="FM_BEAM_MINING_2_LIST" lvl="1" blue="false" hidden="true">
-			<text>Dissassemble and combine the Pike II and Mining beams to forge the Ishimura Beam.[Cost: 150~]</text>
+			<text>Dissassemble and combine the 'Sarissa' Beam and Mining beams to forge the Ishimura Beam.[Cost: 150~]</text>
 			<event load="STORAGE_CHECK_CREATE_FM_BEAM_MINING_2"/>
 		</choice>
 
 		<choice req="FM_BEAM_MINING_2_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
-			<text>You must have a Pike II and Mining beam to forge this weapon.</text>
+			<text>You must have a 'Sarissa' Beam and Mining beam to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
