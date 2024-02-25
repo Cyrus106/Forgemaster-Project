@@ -41,3 +41,19 @@ function(ActivatedPower, ShipManager)
     room.extend.sysDamageResistChance = room.extend.sysDamageResistChance + shellFortify.strength
   end
 end)
+
+
+--[[
+script.on_internal_event(Defines.InternalEvents.ACTIVATE_POWER,
+function(ActivatedPower, ShipManager)
+  if ActivatedPower.def.name == "fm_virus_pinpoint_virus" then
+    local SpaceManager = Hyperspace.Global.GetInstance():GetCApp().world.space
+    local blueprint = Hyperspace.Blueprints:GetWeaponBlueprint("FM_VIRUS_PINPOINT_VIRUS_LASER")
+    local target = ShipManager:GetRoomCenter(ActivatedPower.crew.iRoomId)
+    local crewOwner = ActivatedPower.crew.iShipId
+    local targetSpace = ShipManager.iShipId
+    if Hyperspace.ShipGraph.GetShipInfo(targetSpace):GetSelectedRoom(target.x, target.y, true) ~= -1 then
+        local blast = SpaceManager:CreateLaserBlast(blueprint, target, targetSpace, crewOwner, target, targetSpace, 0)
+    end
+  end
+end)--]]

@@ -2455,20 +2455,20 @@
 	</crewBlueprint>
 	
 	<crewBlueprint name="fm_fallen">
-    <desc>Randall Curtain, Unique Mercenary Crew. Ex-angel who faked his death to leave the Angels, now working in utmost secrecy for anyone who'll cough up the dough. 
-	    The Ancalagon Division has a lot of dough to go around.</desc>
-    <cost>125</cost>
-    <title>Fallen</title>
-    <short>Fallen</short>
-    <rarity>0</rarity>
-    <powerList>
-        <power>Inflicts 1.5x damage in combat</power>
-	<power>2x ranged damage multiplier</power>
-	<power>1.6x movement speed</power>
-        <power>Takes 0.7x damage from combat, half from hazards, is highly resistant to stuns</power>
-        <power>Trained in lvl2 skills</power>
-    </powerList>
-</crewBlueprint>
+		<desc>Randall Curtain, Unique Mercenary Crew. Ex-angel who faked his death to leave the Angels, now working in utmost secrecy for anyone who'll cough up the dough. 
+			The Ancalagon Division has a lot of dough to go around.</desc>
+		<cost>125</cost>
+		<title>Fallen</title>
+		<short>Fallen</short>
+		<rarity>0</rarity>
+		<powerList>
+			<power>Inflicts 1.5x damage in combat</power>
+		<power>2x ranged damage multiplier</power>
+		<power>1.6x movement speed</power>
+			<power>Takes 0.7x damage from combat, half from hazards, is highly resistant to stuns</power>
+			<power>Trained in lvl2 skills</power>
+		</powerList>
+	</crewBlueprint>
 
 	<crewBlueprint name="fm_crystal_red">
 		<desc>A dangerous anomalous crystal spawned by Ancalagon technology.</desc>
@@ -2729,23 +2729,6 @@
 		</colorList>
 	</crewBlueprint>
 
-	<crewBlueprint name="fm_bio_cloud"> <!--Bio Minelauncher Cloud-->
-		<desc>Life Drain</desc>
-		<title>Murder</title>
-		<short>Die real</short>
-		<cost>50</cost>
-		<bp>2</bp>
-		<rarity>0</rarity>
-		<powerList>
-			<power>: -Does 4 dps to any crew in the room.</power>
-		</powerList>
-		<colorList>
-			<layer>
-				<color r="17" g="255" b="0" a="0.7"/>
-			</layer>
-		</colorList>
-	</crewBlueprint>
-
 	<crewBlueprint name="fm_missile_ion"> <!--Ion Missile-->
 
 		<desc>Ion Missile</desc>
@@ -2785,7 +2768,7 @@
 	</crewBlueprint>
 
 
-        <crewBlueprint name="fm_separatist_twisted">
+	<crewBlueprint name="fm_separatist_twisted">
 		<desc>The combination of a Brass Separatist and a Cobalt Separatist, this amalgamation is a combination of both. </desc>
 		<title>Twisted Separatist</title>
 		<short>T. Separatist</short>
@@ -3588,6 +3571,47 @@
 			<power>Funniest shit I've ever seen.</power>
 		</powerList>
 	</crewBlueprint>
+	<weaponBlueprint name="FM_HOLYSHIT_10_EFFECT">
+		<type>LASER</type>
+		<title>Laser for holyshit10</title>
+		<short>Vindicator</short>
+		<tip>tip_laser</tip>
+		<desc>Let it hit you and you're already dead.</desc>
+		<tooltip></tooltip>
+		<damage>0</damage>
+		<shots>1</shots>
+		<cooldown>20</cooldown>
+		<power>2</power>
+		<cost>100</cost>
+		<spawnCrew>
+			<race>fm_holy10</race>
+			<number>1</number>
+			<lifetime>5</lifetime>
+		</spawnCrew>
+		<bp>7</bp>
+		<accuracyMod>115</accuracyMod>
+		<rarity>0</rarity>
+		<image>laser_prime</image>
+		<explosion>scan_exp</explosion>
+		<launchSounds>
+			<sound>ancient_laser</sound>
+			<sound>ancient_laser</sound>
+			<sound>ancient_laser</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>prime_laser</weaponArt>
+		<iconImage>laser</iconImage>
+	</weaponBlueprint>
 
 	<crewBlueprint name="fm_holy11"> <!--Spider on fire-->
 		<desc>HELPPPP MEEEE</desc>
@@ -3606,6 +3630,47 @@
 			</layer>
 		</colorList>
 	</crewBlueprint>
+	<weaponBlueprint name="FM_HOLYSHIT_11_EFFECT">
+		<type>LASER</type>
+		<title>Laser for holyshit11</title>
+		<short>Vindicator</short>
+		<tip>tip_laser</tip>
+		<desc>Let it hit you and you're already dead.</desc>
+		<tooltip></tooltip>
+		<damage>0</damage>
+		<shots>1</shots>
+		<cooldown>20</cooldown>
+		<power>2</power>
+		<cost>100</cost>
+		<spawnCrew>
+			<race>fm_holy11</race>
+			<number>1</number>
+			<lifetime>5</lifetime>
+		</spawnCrew>
+		<accuracyMod>115</accuracyMod>
+		<bp>7</bp>
+		<rarity>0</rarity>
+		<image>laser_prime</image>
+		<explosion>scan_exp</explosion>
+		<launchSounds>
+			<sound>ancient_laser</sound>
+			<sound>ancient_laser</sound>
+			<sound>ancient_laser</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>prime_laser</weaponArt>
+		<iconImage>laser</iconImage>
+	</weaponBlueprint>
 
 	<crewBlueprint name="fm_holy12"> <!--Drain Lots of oxygen-->
 		<desc>-</desc>
@@ -3750,6 +3815,56 @@
 			</layer>
 		</colorList>
 	</crewBlueprint>
+	<weaponBlueprint name="FM_HOLYSHIT_19_EFFECT">
+		<type>LASER</type>
+		<title>Laser for holyshit19</title>
+		<short>Vindicator</short>
+		<tip>tip_laser</tip>
+		<desc>Let it hit you and you're already dead.</desc>
+		<tooltip></tooltip>
+		<damage>0</damage>
+		<shots>1</shots>
+		<cooldown>20</cooldown>
+		<power>2</power>
+		<cost>100</cost>
+		<statBoosts>
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<amount>50</amount>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ENEMIES</crewTarget>
+				<droneTarget>ALL</droneTarget>
+				<boostAnim>pheromones_f</boostAnim>
+				<blackList>
+					<blueprintList load="LIST_FM_PLSNOEFFECT"/>
+				</blackList>
+				<priority>-100</priority>
+			</statBoost>
+		</statBoosts>
+		<bp>7</bp>
+		<accuracyMod>115</accuracyMod>
+		<rarity>0</rarity>
+		<image>laser_prime</image>
+		<explosion>scan_exp</explosion>
+		<launchSounds>
+			<sound>ancient_laser</sound>
+			<sound>ancient_laser</sound>
+			<sound>ancient_laser</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>prime_laser</weaponArt>
+		<iconImage>laser</iconImage>
+	</weaponBlueprint>
 
 	<crewBlueprint name="fm_holy20">	 <!--Unknown-->
 		<desc>-</desc>
@@ -3768,6 +3883,56 @@
 			</layer>
 		</colorList>
 	</crewBlueprint>
+	<weaponBlueprint name="FM_HOLYSHIT_20_EFFECT">
+		<type>LASER</type>
+		<title>Laser for holyshit20</title>
+		<short>Vindicator</short>
+		<tip>tip_laser</tip>
+		<desc>Let it hit you and you're already dead.</desc>
+		<tooltip></tooltip>
+		<damage>0</damage>
+		<shots>1</shots>
+		<cooldown>20</cooldown>
+		<power>2</power>
+		<cost>100</cost>
+		<statBoosts>
+			<statBoost name="trueHealAmount">
+				<boostType>FLAT</boostType>
+				<amount>50</amount>
+				<shipTarget>CURRENT_ROOM</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>ALL</droneTarget>
+				<boostAnim>pheromones_f</boostAnim>
+				<blackList>
+					<blueprintList load="LIST_FM_PLSNOEFFECT"/>
+				</blackList>
+				<priority>-100</priority>
+			</statBoost>
+		</statBoosts>
+		<accuracyMod>115</accuracyMod>
+		<bp>7</bp>
+		<rarity>0</rarity>
+		<image>laser_prime</image>
+		<explosion>scan_exp</explosion>
+		<launchSounds>
+			<sound>ancient_laser</sound>
+			<sound>ancient_laser</sound>
+			<sound>ancient_laser</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>prime_laser</weaponArt>
+		<iconImage>laser</iconImage>
+	</weaponBlueprint>
 
 </FTL>
 
@@ -6724,7 +6889,7 @@
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
 				<priority>999999</priority>
-				<!--<blackList load="LIST_FM_PLSNOEFFECT"/>-->
+				<blackList load="LIST_FM_PLSNOEFFECT"/>
 				<powerEffect>
 					<cooldown>4</cooldown>
 					<activateWhenReady enemiesOnly="false">true</activateWhenReady>
@@ -8453,40 +8618,105 @@
 				<amount>-7</amount>
 				<shipTarget>ENEMY_SHIP</shipTarget>
 				<crewTarget>ALL</crewTarget>
-				<duration>60</duration>
+				<duration>10</duration>
 				<boostAnim>pheromones</boostAnim>
 				<maxStacks>1</maxStacks>
-				<blackList>
-					<FM_PLSNOEFFECT/>
-				</blackList>
+				<blackList load="FM_PLSNOEFFECT"/>
 				<priority>-100</priority>
 			</statBoost>
-
-			<statBoost name="statBoost">
-				<boostType>FLAT</boostType>
-				<shipTarget>CURRENT_ROOM</shipTarget>
+			<statBoost name="powerEffect">
+				<boostType>ADD</boostType>
+				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
-				<duration>60</duration>
-
-				<statBoost name="trueHealAmount">
-					<boostType>FLAT</boostType>
-					<amount>-4</amount>
-					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<duration>60</duration>
-					<boostAnim>bio_poison</boostAnim>
-					<maxStacks>1</maxStacks>
-					<blackList>
-						<FM_PLSNOEFFECT/>
-					</blackList>
-					<priority>-100</priority>
-				</statBoost>
-				<blackList>
-					<FM_PLSNOEFFECT/>
-				</blackList>
-				<priority>-100</priority>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<duration>10</duration>
+				<maxStacks id="fm_virus_pinpoint_virus">1</maxStacks>
+				<powerEffect name="fm_virus_pinpoint_virus">
+					<groupName>fm_virus_pinpoint_virus</groupName>
+					<cooldown>1</cooldown>
+					<jumpCooldown>full</jumpCooldown>
+					<initialCooldownFraction>0</initialCooldownFraction>
+					<powerSounds>
+						<powerSound>kernel_launch1</powerSound>
+						<powerSound>kernel_launch2</powerSound>
+						<powerSound>kernel_launch3</powerSound>
+					</powerSounds>
+					<!--<hideCooldown>true</hideCooldown>-->
+					<friendlyFire>true</friendlyFire>
+					<shipFriendlyFire>true</shipFriendlyFire>
+					<buttonText>COUGH</buttonText>
+					<tooltip>Ready: fill the room with that silly virus.</tooltip>
+					<cooldownColor r="170" g="206" b="39"/>
+					<effectAnim>bio_poison</effectAnim>
+					<activateWhenReady>true</activateWhenReady>
+					<!--<chargeReq>
+						<extraConditions type="or" text="could really use some air">
+							<suffocating>false</suffocating>
+						</extraConditions>
+					</chargeReq>-->
+					<!--<roomStatBoosts>
+						<statBoost name="powerEffect">
+							<boostType>ADD</boostType>
+							<shipTarget>ALL</shipTarget>
+							<crewTarget>ALL</crewTarget>
+							<priority>999999</priority>
+							<duration>10</duration>
+							<maxStacks>5</maxStacks>
+							<powerEffect load="fm_virus_pinpoint_virus"/>
+							<blackList>
+								<blackList load="FM_PLSNOEFFECT"/>
+							</blackList>
+						</statBoost>
+						<statBoost name="trueHealAmount">
+							<boostType>FLAT</boostType>
+							<amount>-4</amount>
+							<shipTarget>ALL</shipTarget>
+							<crewTarget>ALL</crewTarget>
+							<affectsSelf>true</affectsSelf>
+							<droneTarget>CREW</droneTarget>
+							<duration>10</duration>
+							<jumpClear>true</jumpClear>
+							<boostAnim>bio_poison</boostAnim>
+							<maxStacks>1</maxStacks>
+							<priority>10000</priority>
+							<blackList load="FM_PLSNOEFFECT"/>
+							<dangerRating>0.1</dangerRating>
+							<roomAnim renderLayer="1">
+								<anim animType="default" animBorder="2">nothing</anim>
+								<tileAnim>pheromones_f</tileAnim>
+							</roomAnim>
+						</statBoost>
+					</roomStatBoosts>-->
+					<statBoosts>
+						<statBoost name="powerEffect">
+							<boostType>ADD</boostType>
+							<shipTarget>CURRENT_ROOM</shipTarget>
+							<crewTarget>ALL</crewTarget>
+							<affectSelf>false</affectSelf>
+							<priority>999998</priority>
+							<duration>10</duration>
+							<maxStacks id="fm_virus_pinpoint_virus">1</maxStacks>
+							<blackList load="FM_PLSNOEFFECT"/>
+							<powerEffect load="fm_virus_pinpoint_virus"/>
+						</statBoost>
+						<statBoost name="trueHealAmount">
+							<boostType>FLAT</boostType>
+							<amount>-4</amount>
+							<shipTarget>CURRENT_ROOM</shipTarget>
+							<crewTarget>ALL</crewTarget>
+							<duration>10</duration>
+							<boostAnim>pheromones</boostAnim>
+							<maxStacks>1</maxStacks>
+							<blackList load="FM_PLSNOEFFECT"/>
+							<priority>-100</priority>
+						</statBoost>
+					</statBoosts>
+				</powerEffect>
 
 			</statBoost>
+
+			
 		</statBoosts>
 		<image>beam_contact</image>
 		<length>1</length>
@@ -8517,45 +8747,30 @@
 		<cost>140</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
-	        <statBoosts>
+		<statBoosts>
 			<statBoost name="trueHealAmount">
 				<boostType>FLAT</boostType>
 				<amount>-7</amount>
 				<shipTarget>ENEMY_SHIP</shipTarget>
 				<crewTarget>ALL</crewTarget>
-				<duration>60</duration>
+				<duration>10</duration>
 				<boostAnim>pheromones</boostAnim>
 				<maxStacks>1</maxStacks>
-				<blackList>
-					<FM_PLSNOEFFECT/>
-				</blackList>
+				<blackList load="FM_PLSNOEFFECT"/>
 				<priority>-100</priority>
 			</statBoost>
 
-			<!--<statBoost name="statBoost">
-				<boostType>FLAT</boostType>
-				<shipTarget>CURRENT_ROOM</shipTarget>
+			<statBoost name="powerEffect">
+				<boostType>ADD</boostType>
+				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALL</crewTarget>
-				<duration>60</duration>-->
-
-				<statBoost name="trueHealAmount">
-					<boostType>FLAT</boostType>
-					<amount>-4</amount>
-					<shipTarget>CURRENT_ROOM</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<duration>60</duration>
-					<boostAnim>bio_poison</boostAnim>
-					<maxStacks>1</maxStacks>
-					<blackList>
-						<FM_PLSNOEFFECT/>
-					</blackList>
-					<priority>-100</priority>
-				</statBoost>
-				<!--<blackList>
-					<FM_PLSNOEFFECT/>
-				</blackList>
-				<priority>-100</priority>-->
-	        </statBoosts>
+				<droneTarget>CREW</droneTarget>
+				<priority>999999</priority>
+				<duration>10</duration>
+				<maxStacks id="fm_virus_pinpoint_virus">1</maxStacks>
+				<powerEffect load="fm_virus_pinpoint_virus"/>
+			</statBoost>
+		</statBoosts>
 		<image>beam_contact</image>
 		<length>1</length>
 		<launchSounds>
@@ -8578,25 +8793,25 @@
 		<sp>3</sp>
 		<fireChance>7</fireChance>
 		<cooldown>16</cooldown>
-		<spawnCrew>
+		<!--<spawnCrew>
 			<race>fm_generic_crewjank</race>
 			<number>1</number>
-			<enemy>true</enemy><!--So you don't ever see the crew-->
+			<enemy>true</enemy>
 			<lifetime>0</lifetime>
 			<noSlot>true</noSlot>
 			<statBoosts>
 
-				<statBoost name="deathEffect"><!--This modifies the stat of the crew, so that the same crew can be used for multiple weapons-->
+				<statBoost name="deathEffect">
 					<boostType>SET</boostType>
 
 
-					<deathEffect><!--When template crew dies (on weapon impact) these statBoosts are applied -->
+					<deathEffect>
 						<statBoosts>
 
 							<statBoost name="powerEffect">
-								<boostType>SET</boostType> <!-- Set to FLAT if you dont wanna overwrite or want it to stack, set it to SET if you want it to replace overwrite and max out at 1 -->
+								<boostType>SET</boostType> 
 								<shipTarget>ORIGINAL_SHIP</shipTarget>
-								<crewTarget>ALLIES</crewTarget><!--Affects the allies of the spawned crew, so YOUR enemies-->
+								<crewTarget>ALLIES</crewTarget>
 								<priority>999999</priority>
 								<duration>0.2</duration>
 								<blackList load="LIST_FM_PLSNOEFFECT"/>
@@ -8627,7 +8842,7 @@
 
 
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 		<color>
 			<r>255</r>
 			<g>0</g>
@@ -8648,7 +8863,46 @@
 		<weaponArt>fm_crystal_beam_1</weaponArt>
 		<iconImage>beam</iconImage>
 	</weaponBlueprint>
-	
+	<weaponBlueprint name="FM_CRYSTAL_BEAM_LASER">
+		<type>LASER</type>
+		<title>Laser for lockdown</title>
+		<short>Vindicator</short>
+		<tip>tip_laser</tip>
+		<desc>Let it hit you and you're already dead.</desc>
+		<tooltip></tooltip>
+		<damage>0</damage>
+		<shots>1</shots>
+		<sp>1</sp>
+		<fireChance>0</fireChance>
+		<breachChance>0</breachChance>
+		<lockdown>1</lockdown>
+		<cooldown>20</cooldown>
+		<power>2</power>
+		<cost>100</cost>
+		<bp>7</bp>
+		<rarity>0</rarity>
+		<accuracyMod>115</accuracyMod>
+		<image>laser_prime</image>
+		<explosion>scan_exp</explosion>
+		<launchSounds>
+			<sound>ancient_laser</sound>
+			<sound>ancient_laser</sound>
+			<sound>ancient_laser</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>silence</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>prime_laser</weaponArt>
+		<iconImage>laser</iconImage>
+	</weaponBlueprint>
 	
 </FTL>
 
@@ -10087,29 +10341,6 @@
 		<speed>20</speed>
 		<bp>5</bp>
 		<rarity>0</rarity>
-	<!--<spawnCrew>
-	        <race>fm_bio_cloud</race>
-	        <number>1</number>
-	        <noSlot>true</noSlot>
-					<enemy>true</enemy>
-					<lifetime>10</lifetime>
-	       <statBoosts>
-				<statBoost name="noClone">
-				    <boostType>SET</boostType>
-				    <value>true</value>
-				    <shipTarget>ALL</shipTarget>
-				    <crewTarget>ALL</crewTarget>
-				    <priority>999999</priority>
-				</statBoost>
-					  	<statBoost name="maxHealth">
-				    <boostType>FLAT</boostType>
-				    <amount>-1000000</amount>
-				    <shipTarget>ALL</shipTarget>
-				    <crewTarget>ALL</crewTarget>
-				    <priority>999999</priority>
-				</statBoost>
-	        </statBoosts>
-	    </spawnCrew>-->
 		<roomStatBoostChance>10</roomStatBoostChance>
 		<roomStatBoosts>
 
@@ -11591,10 +11822,10 @@
 		<shots>1</shots>
 		<sp>2</sp>
 		<iconScale>0.1</iconScale>
-		<crewSpawnChance>5</crewSpawnChance>
-		<cooldown>5</cooldown>
-		<spawnCrew>
-			<race>LIST_FM_HOLYSHIT</race><!--Left as allied crewspawn for now because this is a funny haha gun-->
+		<!--<crewSpawnChance>5</crewSpawnChance>-->
+		<cooldown>5</cooldown><!--Left as allied crewspawn for now because this is a funny haha gun-->
+		<!--<spawnCrew>
+			<race>LIST_FM_HOLYSHIT</race>
 			<number>1</number>
 			<lifetime>8</lifetime>
 			<noSlot>true</noSlot>
@@ -11615,7 +11846,7 @@
 				</statBoost>
 
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 
 		<speed>10</speed>
 		<power>1</power>
@@ -11673,15 +11904,15 @@
 			Base Cooldown: 45
 		</desc>
 		<tooltip>A very rare gun applied to the ship, even though you cant see it under all these weapons. Inflicts 20 different random effects. Who knows what madman would make something like this? </tooltip>
-		<radius>120</radius>
+		<radius>70</radius><!--flak on artillery works differently from in a weapon slot-->
 		<damage>0</damage>
 		<shots>1</shots>
 		<sp>2</sp>
 		<iconScale>0.1</iconScale>
 		<crewSpawnChance>5</crewSpawnChance>
-		<cooldown>45</cooldown>
-		<spawnCrew>
-			<race>LIST_FM_HOLYSHIT</race><!--Left as allied crewspawn for now because this is a funny haha gun-->
+		<cooldown>45</cooldown><!--Left as allied crewspawn for now because this is a funny haha gun-->
+		<!--<spawnCrew>
+			<race>LIST_FM_HOLYSHIT</race>
 			<number>1</number>
 			<lifetime>5</lifetime>
 			<noSlot>true</noSlot>
@@ -11702,7 +11933,7 @@
 				</statBoost>
 
 			</statBoosts>
-		</spawnCrew>
+		</spawnCrew>-->
 		<hitShipSounds>
 			<sound>hitHull1</sound>
 			<sound>hitHull2</sound>
@@ -11770,14 +12001,14 @@
 		<title>'Absolution' Rift Inducer</title>
 		<short>Absolution</short>
 		<desc>The laboratory that created this was destroyed in a mysterious accident, but the blueprints survived. Unleashes sentient storms of ionic destruction on hit, pierces all shields.</desc>
-		<tooltip>The laboratory that created this was destroyed in a mysterious accident, but the blueprints survived. Unleashes sentient storms of ionic destruction on hit, pierces all shields. </tooltip>
+		<tooltip>The laboratory that created this was destroyed in a mysterious accident, but the blueprints survived. Unleashes sentient storms of ionic destruction on hit, pierces 2 shields. </tooltip>
 		<damage>1</damage>
 		<sysDamage>-1</sysDamage>
 		<persDamage>-1</persDamage>
 		<stun>10</stun>
 		<radius>35</radius>
-		<shots>5</shots>
-		<sp>10</sp>
+		<shots>3</shots>
+		<sp>2</sp>
 		<fireTime>0.2</fireTime>
 		<fireChance>2</fireChance>
 		<breachChance>4</breachChance>
@@ -13613,7 +13844,7 @@
 		<type>LASER</type>
 		<title>'Absolution' Rift Inducer</title>
 		<short>Absolution</short>
-		<desc>The laboratory that created this was destroyed in a mysterious accident, but the blueprints survived. Unleashes sentient storms of ionic destruction on hit, pierces all shields.</desc>
+		<desc>The laboratory that created this was destroyed in a mysterious accident, but the blueprints survived. Unleashes sentient storms of ionic destruction on hit, pierces 2 shields.</desc>
 		<tooltip>Anomaly Laser, fires 2 projectiles, 1 system damage, pierces 3 shields. Many status effects.</tooltip>
 		<damage>1</damage>
 		<sysDamage>-1</sysDamage>
@@ -19665,3 +19896,80 @@
 </mod:findName>
 
 </FTL>
+<!--<statBoost name="powerEffect">
+	<boostType>ADD</boostType>
+	<shipTarget>ALL</shipTarget>
+	<crewTarget>ALL</crewTarget>
+	<droneTarget>CREW</droneTarget>
+	<priority>999999</priority>
+	<duration>60</duration>
+	<maxStacks>1</maxStacks>
+	<powerEffect name="fm_virus_pinpoint_virus">
+		<groupName>fm_virus_pinpoint_virus</groupName>
+		<cooldown>1</cooldown>
+		<jumpCooldown>full</jumpCooldown>
+		<initialCooldownFraction>0</initialCooldownFraction>
+		<powerSounds>
+			<powerSound>explosionShell</powerSound>
+		</powerSounds>
+		<hideCooldown>true</hideCooldown>
+		<friendlyFire>false</friendlyFire>
+		<shipFriendlyFire>false</shipFriendlyFire>
+		<buttonText>COUGH</buttonText>
+		<tooltip>Ready: fill the room with that silly virus.</tooltip>
+		<cooldownColor r="170" g="206" b="39"/>
+		<effectAnim>explosion_shell_death</effectAnim>
+		<activateWhenReady>true</activateWhenReady> 
+		<roomStatBoosts>
+			<statBoost name="powerEffect">
+				<boostType>ADD</boostType>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<priority>999999</priority>
+				<duration>10</duration>
+				<maxStacks>1</maxStacks>
+				<powerEffect load="fm_virus_pinpoint_virus"/>
+				<blackList>
+					<FM_PLSNOEFFECT/>
+				</blackList>
+			</statBoost>
+		</roomStatBoosts>
+		<statBoosts>
+			<statBoost name="powerEffect">
+				<boostType>REPLACE_POWER</boostType>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>SELF</crewTarget>
+				<priority>999998</priority>
+				<duration>10</duration>
+				<powerEffect load="fm_virus_pinpoint_virus"/>
+				<maxStacks>1</maxStacks>
+				<whiteList>
+					<fm_virus_pinpoint_virus/>
+				</whiteList>
+			</statBoost>
+		</statBoosts>
+	</powerEffect>
+
+</statBoost>
+
+
+<statBoost name="trueHealAmount">
+	<boostType>FLAT</boostType>
+	<amount>-4</amount>
+	<shipTarget>ALL</shipTarget>
+	<crewTarget>ALL</crewTarget>
+	<affectsSelf>true</affectsSelf>
+	<droneTarget>CREW</droneTarget>
+	<permanent>true</permanent>
+	<jumpClear>true</jumpClear>
+	<boostAnim>bio_poison</boostAnim>
+	<maxStacks>1</maxStacks>
+	<priority>10000</priority>
+	<blackList>
+		<FM_PLSNOEFFECT/>
+	</blackList>
+	<roomAnim renderLayer="1">
+		<anim animType="default" animBorder="2">nothing</anim>
+		<tileAnim>pheromones_f</tileAnim>
+	</roomAnim>
+</statBoost>-->

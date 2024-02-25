@@ -37,7 +37,7 @@ mods.inferno.impactBeams = {}
 Simulates an impact of the specified weapon on a per-tile bases for beam weapons. (Will work best with LASER <weaponBlueprints>, but can work with others.)
 
 This can be used to for more complex effects previously delegated to "crewjank" (Such as damage plus animations and sound effects.)
-
+IMPORTANT: set <accuracyMod> of the impact weapon if you want it to always hit
 
 Usage:
 mods.inferno.impactBeams.FM_BEAM_EXPLOSION = "FM_BEAM_EXPLOSION_LASER"
@@ -48,6 +48,16 @@ Spawns a bomb on every hit tile (for beam weapons). Similar to impactBeams, exce
 
 Usage:
 mods.inferno.impactBeams.FM_BEAM_EXPLOSION = "FM_BEAM_EXPLOSION_BOMB"
+--]]
+mods.inferno.impactWeapons = {}
+--[[
+Simulates an impact of the specified weapon on hit for projectile weapons weapons. (Will work best with LASER <weaponBlueprints>, but can work with others.)
+
+This can be used to for more complex effects previously delegated to "crewjank" (Such as damage plus animations and sound effects.)
+IMPORTANT: set <accuracyMod> of the impact weapon if you want it to always hit
+
+Usage:
+mods.inferno.impactWeapons.FM_HOLYSHIT_10 = "FM_HOLYSHIT_10_EFFECT"
 --]]
 mods.inferno.hitEveryRoom = {}
 --[[
@@ -130,7 +140,7 @@ function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
         local targetSpace = ShipManager.iShipId
         if Hyperspace.ShipGraph.GetShipInfo(targetSpace):GetSelectedRoom(target.x, target.y, true) ~= -1 then
             local blast = SpaceManager:CreateLaserBlast(blueprint, target, targetSpace, impactOwner, target, targetSpace, 0)
-            blast.extend.customDamage.accuracyMod = 2147483647
+            --blast.extend.customDamage.accuracyMod = 2147483647
         end
     end
     return Defines.Chain.CONTINUE, beamHitType
@@ -150,6 +160,24 @@ function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
         end
     end
     return Defines.Chain.CONTINUE, beamHitType
+end)
+script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, 
+function(ShipManager, Projectile, Location, Damage, forceHit, shipFriendlyFire)
+    if Projectile then
+        local impact = mods.inferno.impactWeapons[Projectile.extend.name]
+        if impact then
+            local SpaceManager = Hyperspace.Global.GetInstance():GetCApp().world.space
+            local blueprint = Hyperspace.Blueprints:GetWeaponBlueprint(impact)
+            local impactOwner = Projectile.ownerId
+            local target = Hyperspace.Pointf(Location.x // 35 * 35 + 17.5, Location.y // 35 * 35 + 17.5)
+            local targetSpace = ShipManager.iShipId
+            if Hyperspace.ShipGraph.GetShipInfo(targetSpace):GetSelectedRoom(target.x, target.y, true) ~= -1 then
+                local blast = SpaceManager:CreateLaserBlast(blueprint, target, targetSpace, impactOwner, target, targetSpace, 0)
+                --blast.extend.customDamage.accuracyMod = 2147483647
+            end
+        end
+    end
+    return Defines.Chain.CONTINUE, forceHit, shipFriendlyFire
 end)
 
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, 

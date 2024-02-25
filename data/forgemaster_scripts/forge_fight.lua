@@ -191,17 +191,23 @@ local forgeFightEvents ={
 local undyingShip = function(ShipManager,Damage)
   local revives = ShipManager:HasAugmentation("FM_REVIVE")
   if revives>0 and (ShipManager.ship.hullIntegrity.first-Damage.iDamage<1 or Damage.bhullBuster and ShipManager.ship.hullIntegrity.first-Damage.iDamage*2<1) then
+    local space = Hyperspace.Global.GetInstance():GetCApp().world.space
+    for proj in vter(space.projectiles) do
+      if proj.targetId==ShipManager.iShipId and proj.currentSpace == ShipManager.iShipId then
+        proj:Kill()
+      end
+    end
     Damage.iDamage=0
     ShipManager.ship.hullIntegrity.first=ShipManager.ship.hullIntegrity.second
+    ShipManager:RemoveItem("HIDDEN FM_REVIVE")
     if ShipManager.myBlueprint.blueprintName == "FM_FORGEMASTER_CRUISER_ENEMY" then
       --ShipManager.ship.hullIntegrity.second = ShipManager.ship.hullIntegrity.second*2
+      forgeFightEvents[revives](ShipManager)
       fixAllSys(ShipManager)
       upAllMainSys(ShipManager)
       upSpecialSys(ShipManager)
       installNextCapstone(ShipManager)
-      forgeFightEvents[revives](ShipManager)
     end
-    ShipManager:RemoveItem("HIDDEN FM_REVIVE")
     --print("good thing he had a totem of undying :)")
   end
 end
@@ -219,7 +225,29 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
     return Defines.Chain.CONTINUE, beamHitType
   end, 1000
 )
+--[[script.on_internal_event(Defines.InternalEvents.DAMAGE_SYSTEM, 
+  function(ShipManager, Projectile,roomId, Damage)
+    undyingShip(ShipManager,Damage)
+    return Defines.Chain.CONTINUE
+  end, 1000
+)--]]
+script.on_internal_event(Defines.InternalEvents.SHIP_LOOP,
+function(ship)
+  if ship:HasAugmentation("FM_REVIVE") and ship.ship.hullIntegrity.first<6 then
+    local dmg = Hyperspace.Damage()
+    dmg.iDamage=1
+    undyingShip(ship,dmg)
+  end
+end, 1000)
 
+function spawnAncBoarder(ShipManager)
+  local bp = Hyperspace.Global.GetInstance():GetBlueprints():GetDroneBlueprint("FM_ANCALAGON_BATTLE")
+  local drone = ShipManager:CreateSpaceDrone(bp)
+  drone.powerRequired=0
+  drone.powered=true
+  drone:SetDeployed(true)
+  return drone
+end
 
 
 --[[he won't need this anymore
@@ -242,4 +270,14 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
 				<roomAnim renderLayer="3">energized_icon</roomAnim>
 			</room>
 		</rooms>
+]]
+
+--[[
+  LUA WPN=BP:GetWeaponBlueprint("ROYAL_DREAD")
+LUA pds = Hyperspace.Global.GetInstance():GetCApp().world.space:CreatePDSFire(WPN,Hyperspace.Point(0,0),Hyperspace.Pointf(20,20),1,true)
+custom ASB anyone?
+
+LUA ANIM=animControl:GetAnimation("detergent")
+LUA for proj in mods.inferno.vter(Hyperspace.Global.GetInstance():GetCApp().world.space.projectiles) do proj.flight_animation = ANIM end
+detergent ASB when?
 ]]

@@ -25,8 +25,8 @@
 	<droneSlots>10</droneSlots>
 	<weaponList missiles="50" count="4" load="FM_FORGEMASTER_LOADOUT" />
 
-	<droneList drones="20" count="6">
-		<drone name="FM_FIRE_INTRUDER" />
+	<droneList drones="30" count="10">
+		<drone name="DIVREPAIR" />
 		<drone name="FM_FIRE_INTRUDER" />
 		<drone name="FM_FIRE_INTRUDER" />
 		<drone name="FM_FIRE_INTRUDER" />
@@ -1244,7 +1244,6 @@
 	<name>fm_ion_anomaly_crew_enemy</name>
 	<name>fm_drone_hack</name>
 	<name>fm_terminus</name>
-	<name>fm_bio_cloud</name>
 </blueprintList>
 
 
@@ -1252,27 +1251,7 @@
 	<name>LIST_FM_PLSNOEFFECT</name>
 	<name>LIST_CREW_SHELL</name>
 	<name>LIST_CREW_ENGI</name>
-	<name>LIST_CREW_COGNITIVE_ALL</name>
-</blueprintList>
-<blueprintList name="LIST_FM_PLSNOEFFECT_DEATH">
-	<name>LIST_FM_PLSNOEFFECT</name>
-	<name>human_legion_pyro</name>
-	<name>unique_jerry_pony</name>
-	<name>unique_jerry_pony_crystal</name>
-	<name>zoltan</name>
-	<name>zoltan_devotee</name>
-	<name>zoltan_martyr</name>
-	<name>zoltan_peacekeeper</name>
-	<name>zoltan_monk</name>
-	<name>unique_devorak</name>
-	<name>unique_symbiote</name>
-	<name>crystal_sentinel</name>
-	<name>unique_ruwen</name>
-	<name>shell_radiant</name>
-	<name>goldtoxic</name>
-	<name>technomender</name>
-	<name>hologram</name>
-	<name>eldritch_cat</name>
+	<!--<name>LIST_CREW_COGNITIVE_ALL</name>-->
 </blueprintList>
 <blueprintList name="LIST_FM_FAKEDRONES">
 	<name>divrepair</name>

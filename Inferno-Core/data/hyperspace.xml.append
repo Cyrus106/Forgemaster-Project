@@ -1,6 +1,6 @@
 <FTL><!--Inferno-Core-->
 	<events>
-		<variable name="fmcore_conservative_fix" op="set" val="0"/>
+		<!--<metaVariable name="fmcore_augbox_active_default" op="set" val="1"/>-->
 		<variable name="fmcore_augbox_active" op="set" val="1"/>
 		<variable name="fmcore_buttons_visible" op="set" val="1"/>
 
@@ -89,6 +89,15 @@
 		<mod-append:script>data/inferno_core_scripts/dialogueBoxes.lua</mod-append:script>
 		<mod-append:script>data/inferno_core_scripts/resist_indicators.lua</mod-append:script>
 		<mod-append:script>data/inferno_core_scripts/patch_error.lua</mod-append:script>
+		
+		<mod-append:script>data/inferno_core_scripts/autoUtil.lua</mod-append:script><!--this was in AutoLibrary-->
+	</mod:findLike>
+	
+	<mod:findLike type="events" limit="1">
+		<!--Use this to check if the player ship is automated by default-->
+		<mod-append:variable name="is_base_automated" op="set" val="0"/>
+		<!--Used for the overrideBaseAutomated function because you can't save Lua variables yet-->
+		<mod-append:variable name="override_base_automated" op="set" val="0"/>
 	</mod:findLike>
 
 	<augments>

@@ -63,7 +63,7 @@ local selfArm = {
 
     onDamage = function(self)
       if Hyperspace.ships.player:HasAugmentation("TWISTED_HULL_ARM") ~= 0 then
-        local scrapGain = randomInt(10, 20)
+        local scrapGain = math.random(10, 20)
         self.queuedScrap = self.queuedScrap + scrapGain
       end
     end,

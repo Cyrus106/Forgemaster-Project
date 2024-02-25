@@ -256,3 +256,88 @@
 	<value>1</value>
 	<stackable>true</stackable>
 </augBlueprint>
+
+<FTL><!-- AutoLib stuff-->
+	<!--
+	DO NOT USE ANY OF THESE AUGMENTS DIRECTLY!
+	Instead, create an augment that will use the function, then create hyperspace.xml.append and put something like:
+	
+	<mod:findLike type="augments">
+		<mod-append:aug name="YOUR_AUG_ID">
+			<function name="AUTOMATED_SHIP" value="1"/>
+		</mod-append:aug>
+		... (any other augments, in the same format)
+	</mod:findLike>
+	
+	in it.
+	-->
+	
+	<!--
+	Augments with this function will make a ship become fully automated.
+	This includes: automatic repair, manning, and being able to play without crew.
+	
+	A value of 0 will make the augment do nothing (except count for blue options)
+	Setting value higher than 1 increases the manning level and repair speed, in the same way as AUTOMATED_MANNING and AUTOMATED_REPAIR.
+	
+	If you want a blue option that works for both an augment with this function and a ship that's automated by default, create a req type="any"
+	with this augment and the variable is_base_automated.
+	-->
+	<augBlueprint name="AUTOMATED_SHIP">
+		<title>Automated Ship Function</title>
+		<desc>Makes your ship auto. YOU SHOULD NEVER SEE THIS.</desc>
+		<cost>0</cost>
+		<bp>4</bp>
+		<rarity>0</rarity>
+		<value>1</value>
+		<stackable>true</stackable>
+	</augBlueprint>
+	
+	<!--
+	Augments with this function will make a ship man systems without needing crew assigned.
+	This will not: automatically repair, or allow you to play without crew.
+	
+	Setting value higher than 1 increases the level of manning:
+	
+	Function level 0 will do nothing (except count for blue options)
+	Function level 1 will give unskilled manning
+	Function level 2 will give level 1 manning
+	Function level 3+ will give level 2 manning
+	Negative function values will subtract from other auto-manning augments or the auto-manning of base Auto-Ships.
+	However, it will not subtract piloting if it would become 0.
+	
+	You can use this function with AUTOMATED_SHIP or a normal Auto-Ship with no problems. Just subtract one from the value you want.
+	So if you wanted an Auto-Ship that manned at level 2 skills, you could give it an augment with this function at a value of 2.
+	-->
+	<augBlueprint name="AUTOMATED_MANNING">
+		<title>Automated Manning Function</title>
+		<desc>Mans ship systems. YOU SHOULD NEVER SEE THIS.</desc>
+		<cost>0</cost>
+		<bp>4</bp>
+		<rarity>0</rarity>
+		<value>1</value>
+		<stackable>true</stackable>
+	</augBlueprint>
+	
+	<!--
+	Augments with this function will make a ship automatically repair systems.
+	This will not: man systems, or allow you to play without crew.
+	
+	The speed of repair is multiplied by the value. For example,
+	Function level 1 is the normal Auto-Ship repair speed
+	Function level 0.5 is half the normal Auto-Ship repair speed
+	Function level 2 is double the normal Auto-Ship repair speed
+	Function level -1 won't damage systems, but will reverse repairs.
+	
+	You can use this function with AUTOMATED_SHIP or a normal Auto-Ship with no problems. However, it will add the repair speed to the normal Auto-Ship repair speed.
+	So if you wanted an Auto-Ship that repaired at double speed, you would give it an augment with this function at a value of 1.
+	-->
+	<augBlueprint name="AUTOMATED_REPAIR">
+		<title>Automated Repair Function</title>
+		<desc>Repairs ship systems. YOU SHOULD NEVER SEE THIS.</desc>
+		<cost>0</cost>
+		<bp>4</bp>
+		<rarity>0</rarity>
+		<value>1</value>
+		<stackable>true</stackable>
+	</augBlueprint>
+</FTL>

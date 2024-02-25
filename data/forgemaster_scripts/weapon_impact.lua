@@ -41,6 +41,13 @@ impactBeams.FM_BEAM_EXPLOSION_PLAYER = "FM_BEAM_EXPLOSION_LASER"
 impactBeams.FM_BEAM_EXPLOSION_EGG = "FM_BEAM_EXPLOSION_LASER"
 impactBeams.FM_BEAM_EXPLOSION_ENEMY = "FM_BEAM_EXPLOSION_LASER"
 impactBeams.FM_FORGEMAN_DRONE_WEAPON = "FM_BEAM_EXPLOSION_LASER"
+impactBeams.FM_CRYSTAL_BEAM = "FM_CRYSTAL_BEAM_LASER"
+
+local impactWeapons = mods.inferno.impactWeapons
+impactWeapons.FM_HOLYSHIT_10 = "FM_HOLYSHIT_10_EFFECT"
+impactWeapons.FM_HOLYSHIT_11 = "FM_HOLYSHIT_11_EFFECT"
+impactWeapons.FM_HOLYSHIT_19 = "FM_HOLYSHIT_19_EFFECT"
+impactWeapons.FM_HOLYSHIT_20 = "FM_HOLYSHIT_20_EFFECT"
 
 --To hit every room on the targeted ship with an effect (Until accuracy stats are exposed, please ensure all weapons used in hitEveryRoom have accuracy 100)
 local hitEveryRoom = mods.inferno.hitEveryRoom
@@ -69,6 +76,16 @@ function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
     if playTeleportSound then
       Hyperspace.Sounds:PlaySoundMix("teleport",-1,false)
     end
+  end
+  return Defines.Chain.CONTINUE
+end)
+
+
+script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT,
+function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
+  if Projectile and Projectile.extend.name == "FM_HOLYSHIT_12" and ShipManager.oxygenSystem then
+    local targetRoomNumber = Hyperspace.ShipGraph.GetShipInfo(ShipManager.iShipId):GetSelectedRoom(Location.x, Location.y, true)
+    ShipManager.oxygenSystem.oxygenLevels[targetRoomNumber]=math.max(0,ShipManager.oxygenSystem.oxygenLevels[targetRoomNumber]-0.9)
   end
   return Defines.Chain.CONTINUE
 end)

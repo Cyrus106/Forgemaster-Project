@@ -17,8 +17,8 @@ local augBox = {
     return Hyperspace.ships.player:GetAugmentationValue(self.augName) ~= 0 and self:RenderCondition()
   end,
 
-  Render = function(self)
-    Graphics.CSurface.GL_RenderPrimitive(self.boxPrimitive)
+  Render = function(self,alpha)
+    Graphics.CSurface.GL_RenderPrimitiveWithAlpha(self.boxPrimitive,alpha or 1)
     Graphics.freetype.easy_print(
       0,
       35, 
@@ -71,7 +71,7 @@ local augBoxes = {
     baseValue = 1,
   },
 }
-
+--[[
 local xOffset = 110
 local yOffset = 204
 
@@ -91,7 +91,88 @@ function()
     Graphics.CSurface.GL_PopMatrix()
   end
 end)
+--]]
+-- [[ --the version with dragging the boxes
+local dragging = false
+local defaultX = 110
+local defaultY = 204
+--local xOffset = 110
+--local yOffset = 204
+local offsetX = 0
+local offsetY = 0
+local deltaX = 0
+local deltaY = 0
+local renderableBoxes = 0
 
+local function dragBegin()
+  local cApp = Hyperspace.Global.GetInstance():GetCApp()
+  if not cApp.world.bStartedGame or cApp.gui.menu_pause then
+      return
+  end
+  local playerShip = Hyperspace.ships.player
+  renderableBoxes=0
+  for _, augBox in ipairs(augBoxes) do
+    if augBox:ShouldRender() then
+      renderableBoxes = renderableBoxes + 1
+    end
+  end
+  if not (playerShip and not playerShip.bJumping) or renderableBoxes==0 then
+      return
+  end
+  local currentX = defaultX + offsetX
+  local currentY = defaultY + offsetY
+  local mouse = Hyperspace.Mouse.position
+  local iconWidth = 117
+  local iconHeight = renderableBoxes * 24+2
+  if currentX <= mouse.x and mouse.x < currentX + iconWidth and
+      currentY <= mouse.y and mouse.y < currentY + iconHeight then
+      dragging = true
+      deltaX = mouse.x - currentX
+      deltaY = mouse.y - currentY
+  end
+end
+
+script.on_internal_event(Defines.InternalEvents.ON_MOUSE_R_BUTTON_DOWN, dragBegin)
+script.on_internal_event(Defines.InternalEvents.ON_MOUSE_R_BUTTON_UP, function()
+  dragging = false
+  deltaX = 0
+  deltaY = 0
+end)
+script.on_render_event(Defines.RenderEvents.LAYER_PLAYER, function() end,
+function()
+  if not Hyperspace.ships.player.bJumping and Hyperspace.ships.player:HasEquipment("fmcore_augbox_active") == 1 then
+    local defaultX = defaultX
+	  local defaultY = defaultY
+    local currentX = defaultX + offsetX
+    local currentY = defaultY + offsetY
+    local mouse = Hyperspace.Mouse.position
+    local iconWidth = 117
+    local iconHeight = renderableBoxes * 24
+    local alpha = 1.0
+    if dragging then
+        currentX = mouse.x - deltaX
+        currentY = mouse.y - deltaY
+        offsetX = math.max(math.min(currentX - defaultX,1100),-100)
+        offsetY = math.max(math.min(currentY - defaultY,500),-200)
+    else
+        if currentX <= mouse.x and mouse.x < currentX + iconWidth and
+            currentY <= mouse.y and mouse.y < currentY + iconHeight then
+            alpha = 0.4
+        end
+    end
+    Graphics.CSurface.GL_PushMatrix()
+    Graphics.CSurface.GL_LoadIdentity()
+    Graphics.CSurface.GL_Translate(currentX, currentY)
+    for _, augBox in ipairs(augBoxes) do
+      if augBox:ShouldRender() then
+        augBox:Render(alpha)
+        Graphics.CSurface.GL_Translate(0, 24)
+      end
+    end
+    Graphics.CSurface.GL_PopMatrix()
+  end
+end)
+--]]
 -- display of enemy ammo and drone parts
 local missileBox = CreateDefaultPrimitive("statusUI/top_missiles_on.png")
 local missileBoxOff = CreateDefaultPrimitive("statusUI/top_missiles_on_red.png")

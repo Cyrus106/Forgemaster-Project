@@ -2,7 +2,7 @@ local vter = mods.inferno.vter
 local real_projectile = mods.inferno.real_projectile
 local randomInt = mods.inferno.randomInt
 
-script.on_game_event("FMCORE_ONCREWZERO", false,
+--[[script.on_game_event("FMCORE_ONCREWZERO", false,
 function()
   if Hyperspace.ships.enemy and not Hyperspace.ships.enemy.bAutomated then 
     Hyperspace.ships.enemy:AddAugmentation("HIDDEN FM_PURGE_AUG")
@@ -10,7 +10,7 @@ function()
         Hyperspace.ships.enemy:AddAugmentation("HIDDEN TWISTED_KESTREL_GHOST_PURGE")
       end
   end
-end)
+end)--]]
 
 script.on_game_event("FM_BOSS_KES1_SUICIDE", false,
 function()
