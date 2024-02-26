@@ -4541,13 +4541,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_FOCUS_FUELED_2"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -4563,13 +4559,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_FOCUS_FUELED_3"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -4585,13 +4577,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_FOCUS_FUELED_4"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -4607,25 +4595,17 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_FOCUS_FUELED_5"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 	<event name="FM_COMBAT_CHECK_AMP_FOCUS_2">
@@ -4642,13 +4622,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_FOCUS_FUELED_1"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -4664,13 +4640,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_FOCUS_FUELED_3"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -4686,13 +4658,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_FOCUS_FUELED_4"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -4708,25 +4676,17 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_FOCUS_FUELED_5"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 	<event name="FM_COMBAT_CHECK_AMP_FOCUS_3">
@@ -4743,13 +4703,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_FOCUS_FUELED_1"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -4765,13 +4721,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_FOCUS_FUELED_2"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -4787,13 +4739,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_FOCUS_FUELED_4"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -4809,25 +4757,17 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_FOCUS_FUELED_5"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 	<event name="FM_COMBAT_CHECK_AMP_FOCUS_4">
@@ -4844,13 +4784,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_FOCUS_FUELED_1"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -4866,13 +4802,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_FOCUS_FUELED_2"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -4888,13 +4820,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_FOCUS_FUELED_3"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -4910,25 +4838,17 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_FOCUS_FUELED_5"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 	<event name="FM_COMBAT_CHECK_AMP_FOCUS_5">
@@ -4945,13 +4865,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_FOCUS_FUELED_1"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -4967,13 +4883,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_FOCUS_FUELED_2"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -4989,13 +4901,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_FOCUS_FUELED_3"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -5011,25 +4919,17 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_FOCUS_FUELED_4"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 
@@ -5049,13 +4949,9 @@
 					<event>
 						<text>You finish calibrating the drone successfully.</text>
 						<drone name="FM_ANCALAGON_BATTLE"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -5093,25 +4989,17 @@
 					<event>
 						<text>You finish calibrating the drone successfully.</text>
 						<drone name="FM_COMBAT_2_BEAM_PLAYER"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 	<event name="FM_COMBAT_CHECK_COMBAT2_BEAM_PLAYER">
@@ -5126,25 +5014,17 @@
 					<event>
 						<text>You finish calibrating the drone successfully.</text>
 						<drone name="FM_COMBAT_2_LASER_PLAYER"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 
@@ -5167,13 +5047,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_GATLING_ANCIENT_PHOTON"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -5189,13 +5065,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_GATLING_ANCIENT_ION"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -5211,25 +5083,17 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_GATLING_ANCIENT_YES"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 	<event name="FM_COMBAT_CHECK_FM_GATLING_ANCIENT_PHOTON">
@@ -5246,13 +5110,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_GATLING_ANCIENT"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -5268,13 +5128,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_GATLING_ANCIENT_ION"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -5290,25 +5146,17 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_GATLING_ANCIENT_YES"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 	<event name="FM_COMBAT_CHECK_FM_GATLING_ANCIENT_ION">
@@ -5325,13 +5173,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_GATLING_ANCIENT"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -5347,13 +5191,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_GATLING_ANCIENT_PHOTON"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -5369,25 +5209,17 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_GATLING_ANCIENT_YES"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 	<event name="FM_COMBAT_CHECK_FM_GATLING_ANCIENT_YES">
@@ -5404,13 +5236,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_GATLING_ANCIENT"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -5426,13 +5254,9 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_GATLING_ANCIENT_PHOTON"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
@@ -5448,25 +5272,17 @@
 					<event>
 						<text>You finish calibrating the weapon successfully.</text>
 						<weapon name="FM_GATLING_ANCIENT_ION"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 
@@ -5571,42 +5387,21 @@
 			<text id="text_GB_AMMO_LOAD_1"/>
 			<event name="GET_AC_CHARGE_STANDARD">
 				<weapon name="FM_RVS_AC_CHARGE"/>
-				<loadEventList>
-					<event req="loc_flagship" lvl="0">
-						<loadEvent>COMBAT_CHECK</loadEvent>
-					</event>
-					<event req="loc_flagship" lvl="1">
-						<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
-					</event>
-				</loadEventList>
+				<loadEvent>COMBAT_CHECK</loadEvent>
 			</event>
 		</choice>
 		<choice req="GB_CURRENT_AMMO2" lvl="0" max_lvl="0" blue="false" hidden="false"> <!-- Caseless Ammo Type -->
 			<text id="text_GB_AMMO_LOAD_2"/>
 			<event name="GET_AC_CHARGE_CASELESS">
 				<weapon name="FM_RVS_AC_CHARGE_CASELESS"/>
-				<loadEventList>
-					<event req="loc_flagship" lvl="0">
-						<loadEvent>COMBAT_CHECK</loadEvent>
-					</event>
-					<event req="loc_flagship" lvl="1">
-						<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
-					</event>
-				</loadEventList>
+				<loadEvent>COMBAT_CHECK</loadEvent>
 			</event>
 		</choice>
 		<choice req="GB_CURRENT_AMMO3" lvl="0" max_lvl="0" blue="false" hidden="false"> <!-- High Velocity Ammo Type -->
 			<text id="text_GB_AMMO_LOAD_3"/>
 			<event name="GET_AC_CHARGE_HV">
 				<weapon name="FM_RVS_AC_CHARGE_HV"/>
-				<loadEventList>
-					<event req="loc_flagship" lvl="0">
-						<loadEvent>COMBAT_CHECK</loadEvent>
-					</event>
-					<event req="loc_flagship" lvl="1">
-						<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
-					</event>
-				</loadEventList>
+				<loadEvent>COMBAT_CHECK</loadEvent>
 			</event>
 		</choice>
 		<choice req="GB_AMMO_4_NO" blue="false" hidden="true"> <!-- Recycler Ammo Type -->
@@ -5617,56 +5412,28 @@
 			<text id="text_GB_AMMO_LOAD_4"/>
 			<event name="GET_AC_CHARGE_FREE">
 				<weapon name="FM_RVS_AC_CHARGE_FREE"/>
-				<loadEventList>
-					<event req="loc_flagship" lvl="0">
-						<loadEvent>COMBAT_CHECK</loadEvent>
-					</event>
-					<event req="loc_flagship" lvl="1">
-						<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
-					</event>
-				</loadEventList>
+				<loadEvent>COMBAT_CHECK</loadEvent>
 			</event>
 		</choice>
 		<choice req="GB_CURRENT_AMMO5" lvl="0" max_lvl="0" blue="false" hidden="false"> <!-- Concussive Ammo Type -->
 			<text id="text_GB_AMMO_LOAD_5"/>
 			<event name="GET_AC_CHARGE_HE">
 				<weapon name="FM_RVS_AC_CHARGE_HE"/>
-				<loadEventList>
-					<event req="loc_flagship" lvl="0">
-						<loadEvent>COMBAT_CHECK</loadEvent>
-					</event>
-					<event req="loc_flagship" lvl="1">
-						<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
-					</event>
-				</loadEventList>
+				<loadEvent>COMBAT_CHECK</loadEvent>
 			</event>
 		</choice>
 		<choice req="GB_CURRENT_AMMO6" lvl="0" max_lvl="0" blue="false" hidden="false"> <!-- EMP Ammo Type -->
 			<text id="text_GB_AMMO_LOAD_6"/>
 			<event name="GET_AC_CHARGE_EMP">
 				<weapon name="FM_RVS_AC_CHARGE_EMP"/>
-				<loadEventList>
-					<event req="loc_flagship" lvl="0">
-						<loadEvent>COMBAT_CHECK</loadEvent>
-					</event>
-					<event req="loc_flagship" lvl="1">
-						<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
-					</event>
-				</loadEventList>
+				<loadEvent>COMBAT_CHECK</loadEvent>
 			</event>
 		</choice>
 		<choice req="GB_CURRENT_AMMO7" lvl="0" max_lvl="0" blue="false" hidden="false"> <!-- Particle Ammo Type -->
 			<text id="text_GB_AMMO_LOAD_7"/>
 			<event name="GET_AC_CHARGE_HEAT">
 				<weapon name="FM_RVS_AC_CHARGE_HEAT"/>
-				<loadEventList>
-					<event req="loc_flagship" lvl="0">
-						<loadEvent>COMBAT_CHECK</loadEvent>
-					</event>
-					<event req="loc_flagship" lvl="1">
-						<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
-					</event>
-				</loadEventList>
+				<loadEvent>COMBAT_CHECK</loadEvent>
 			</event>
 		</choice>
 		<choice req="GB_AMMO_8_NO" blue="false" hidden="true"> <!-- Incendiary Ammo Type -->
@@ -5677,28 +5444,14 @@
 			<text id="text_GB_AMMO_LOAD_8"/>
 			<event name="GET_AC_CHARGE_INCENDIARY">
 				<weapon name="FM_RVS_AC_CHARGE_INCENDIARY"/>
-				<loadEventList>
-					<event req="loc_flagship" lvl="0">
-						<loadEvent>COMBAT_CHECK</loadEvent>
-					</event>
-					<event req="loc_flagship" lvl="1">
-						<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
-					</event>
-				</loadEventList>
+				<loadEvent>COMBAT_CHECK</loadEvent>
 			</event>
 		</choice>
 		<choice req="GB_CURRENT_AMMO9" lvl="0" max_lvl="0" blue="false" hidden="false"> <!-- Flechette Ammo Type -->
 			<text id="text_GB_AMMO_LOAD_9"/>
 			<event name="GET_AC_CHARGE_FLECHETTE">
 				<weapon name="FM_RVS_AC_CHARGE_FLECHETTE"/>
-				<loadEventList>
-					<event req="loc_flagship" lvl="0">
-						<loadEvent>COMBAT_CHECK</loadEvent>
-					</event>
-					<event req="loc_flagship" lvl="1">
-						<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
-					</event>
-				</loadEventList>
+				<loadEvent>COMBAT_CHECK</loadEvent>
 			</event>
 		</choice>
 		<choice req="GB_AMMO_10_NO" blue="false" hidden="true"> <!-- Radiation Ammo Type -->
@@ -5709,14 +5462,7 @@
 			<text id="text_GB_AMMO_LOAD_10"/>
 			<event name="GET_AC_CHARGE_RAD">
 				<weapon name="FM_RVS_AC_CHARGE_RAD"/>
-				<loadEventList>
-					<event req="loc_flagship" lvl="0">
-						<loadEvent>COMBAT_CHECK</loadEvent>
-					</event>
-					<event req="loc_flagship" lvl="1">
-						<loadEvent>COMBAT_CHECK_FLAGSHIP</loadEvent>
-					</event>
-				</loadEventList>
+				<loadEvent>COMBAT_CHECK</loadEvent>
 			</event>
 		</choice>
 
@@ -5782,14 +5528,6 @@
 	<!-- Move other menus example options to the bottom -->
 
 
-	<mod:findName type="event" name="COMBAT_CHECK_FLAGSHIP_REAL">
-		<mod-append:choice req="LOCKED_RAMMING_SPEED" lvl="1" max_group="602" hidden="true" blue="true">
-			<text>Show options to ram this hunk of inert weaponry into an enemy system, dealing damage to your engines, your hull, as well as the target's.</text>
-			<event load="COMBAT_CHECK_RAMMING_MENU"/>
-		</mod-append:choice>
-	</mod:findName>
-
-
 	<!--
 	<<mod-append:choice req="RAMMING_SPEED_FM_AETHER_4" lvl="1" max_group="602" hidden="true" blue="true">
 	<text>(Aether Overdrive)Show Ramming Speed Aether Engines options. Deals 12 damage and 10 to yourself.</text>
@@ -5851,13 +5589,9 @@
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 
@@ -5965,13 +5699,9 @@
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 
@@ -6076,13 +5806,9 @@
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 
@@ -6185,13 +5911,9 @@
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 
@@ -6292,13 +6014,9 @@
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 
@@ -6401,13 +6119,9 @@
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 
@@ -6510,13 +6224,9 @@
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 
@@ -6533,25 +6243,17 @@
 					<event>
 						<text>You finish calibrating the drone successfully.</text>
 						<drone name="TWISTED_YINYANG_BOARDER"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 	<event name="FM_COMBAT_CHECK_YINYANG_BOARDER">
@@ -6566,25 +6268,17 @@
 					<event>
 						<text>You finish calibrating the drone successfully.</text>
 						<drone name="TWISTED_YINYANG_BATTLE"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 
@@ -6600,25 +6294,17 @@
 					<event>
 						<text>You finish calibrating the drone successfully.</text>
 						<drone name="TWISTED_BATTLETOG2_BOARDER"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 	<event name="FM_COMBAT_CHECK_BATTLETOG2_BOARDER">
@@ -6633,25 +6319,17 @@
 					<event>
 						<text>You finish calibrating the drone successfully.</text>
 						<drone name="TWISTED_BATTLETOG2_DEFEND"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 
@@ -6667,25 +6345,17 @@
 					<event>
 						<text>You finish calibrating the drone successfully.</text>
 						<drone name="TWISTED_SURGEON_BOARDER"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 	<event name="FM_COMBAT_CHECK_SURGEON_BOARDER">
@@ -6700,25 +6370,17 @@
 					<event>
 						<text>You finish calibrating the drone successfully.</text>
 						<drone name="TWISTED_SURGEON_BATTLE"/>
-						<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
+						<choice>
 							<text>Continue...</text>
 							<event load="COMBAT_CHECK"/>
-						</choice>
-						<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-							<text>Continue...</text>
-							<event load="COMBAT_CHECK_FLAGSHIP"/>
 						</choice>
 					</event>
 				</choice>
 			</event>
 		</choice>
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 	</event>
 
@@ -9584,14 +9246,9 @@
 				<event load="OPTION_INVALID"/>
 		</choice>
 
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
+		<choice>
 			<text>Do something else instead.</text>
 			<event load="COMBAT_CHECK"/>
-		</choice>
-
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
 		</choice>
 
 		<choice>
@@ -9663,114 +9320,6 @@
 			<loadEvent>STORAGE_CHECK</loadEvent>
 			</event>
 			</choice>
-	</event>
-
-	<mod:findName type="event" name="COMBAT_CHECK_FLAGSHIP_REAL">
-		<mod-append:choice req="TWISTED_BLESSING" hidden="true">
-			<text>Draw upon your stored rage.</text>
-			<event load="COMBAT_CHECK_TWISTED_BLESSING_MENU_FLAGSHIP"/>
-		</mod-append:choice>
-	</mod:findName>
-
-	<event name="COMBAT_CHECK_TWISTED_BLESSING_MENU_FLAGSHIP">
-		<text>You consider your options. If ever, now is the time to strike.</text>
-
-		<choice req="twisted_blessing_counter" lvl="1" blue="false" max_group="2">
-
-			<text>Release a trivial amount of rage.(1 hull damage to the Flagship, 1 rage cost)</text>
-				<event>
-					<text>A negligable first strike, a mere drop in the bucket against such a formidable foe. Yet as the first of many, it heralds the start of your ultimate battle.</text>
-					<variable name="twisted_blessing_counter" op="add" val="-1"/>
-					<enemyDamage amount="1"/>
-				</event>
-		</choice>
-
-
-		<choice req="twisted_blessing_counter" max_lvl="0" blue="false" hidden="true" max_group="2">
-
-			<text>Release a trivial amount of rage.(1 hull damage to the Flagship, 1 rage cost)</text>
-			<event load="OPTION_INVALID"/>
-		</choice>
-
-
-
-		<choice req="twisted_blessing_counter" lvl="7" blue="false" max_group="3">
-				<text>Draw upon a considerable amount of rage.(7 hull damage to the Flagship, minor status effect, 7 rage cost)</text>
-				<event>
-					<text>A decisive blow, setting the field of combat in motion. The eyes of the Federation are upon you, and they are not the only ones. </text>
-					<variable name="twisted_blessing_counter" op="add" val="-7"/>
-					<enemyDamage amount="2"	system="random" effect="random"/>
-					<enemyDamage amount="5"/>
-				</event>
-		</choice>
-
-
-		<choice req="twisted_blessing_counter" max_lvl="6" blue="false" hidden="true" max_group="3">
-				<text>Draw upon a considerable amount of rage.(7 hull damage to the Flagship, minor status effect, 7 rage cost)</text>
-				<event load="OPTION_INVALID"/>
-		</choice>
-
-
-
-		<choice req="twisted_blessing_counter" lvl="14" blue="false" max_group="4">
-				<text>Unleash a significant amount of rage.(14 hull damage to the Flagship, status effects, 14 rage cost)</text>
-				<event>
-					<text>A devastating strike, sending the Flagship reeling as you press on to finish the job. The ship pulses with an otherworldly light.</text>
-					<variable name="twisted_blessing_counter" op="add" val="-14"/>
-					<enemyDamage amount="7" effect="random"/>
-					<enemyDamage amount="3"	system="random" effect="random"/>
-					<enemyDamage amount="2"	system="random"/>
-					<enemyDamage amount="2"/>
-				</event>
-		</choice>
-
-
-
-		<choice req="twisted_blessing_counter" max_lvl="13" blue="false" hidden="true" max_group="4">
-				<text>Unleash a significant amount of rage.(14 hull damage to the Flagship, status effects, 14 rage cost)</text>
-				<event load="OPTION_INVALID"/>
-		</choice>
-
-			<choice req="twisted_blessing_counter" lvl="21" blue="false" max_group="5">
-				<text>Unleash a devastating amount of rage.(21 hull damage to the Flagship, status effects, ignores resist, 21 rage cost)</text>
-				<event>
-					<text>A merciless strike against your truest foe. You turn to command your crew, but the words that come out are not your own. </text>
-					<variable name="twisted_blessing_counter" op="add" val="-21"/>
-					<enemyDamage amount="7" effect="random"/>
-					<enemyDamage amount="3"	system="random" effect="all" force="true"/>
-					<enemyDamage amount="2"	system="random" effect="random" force="true"/>
-					<enemyDamage amount="2"	system="random" effect="random" force="true" />
-					<enemyDamage amount="2"	system="oxygen" effect="breach" force="true" />
-					<enemyDamage amount="1"	system="pilot" effect="fire" force="true" />
-					<enemyDamage amount="4"/>
-				</event>
-		</choice>
-
-
-		<choice req="twisted_blessing_counter" max_lvl="20" blue="false" hidden="true" max_group="5">
-				<text>Unleash a devastating amount of rage.(21 hull damage to the Flagship, status effects, ignores resist, 21 rage cost)</text>
-				<event load="OPTION_INVALID"/>
-		</choice>
-
-
-		<choice blue="false" req="loc_flagship" lvl="0" max_group="1"  >
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK"/>
-		</choice>
-
-		<choice blue="false" req="loc_flagship" lvl="1" max_group="1">
-			<text>Do something else instead.</text>
-			<event load="COMBAT_CHECK_FLAGSHIP"/>
-		</choice>
-
-		<choice>
-			<text>Nevermind, let's fight!</text>
-			<event>
-				<text>You decide not to do anything and prepare to fight.</text>
-				<status type="clear" target="enemy" system="teleporter" amount="100"/>
-			</event>
-		</choice>
-
 	</event>
 
 	<!--<mod:findName type="event" name="COMBAT_CHECK_EQUALIZER">

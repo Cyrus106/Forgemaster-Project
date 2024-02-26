@@ -9,16 +9,6 @@
         <mod:setAttributes req="pilot" lvl="1" max_group="2" blue="false"/>
     </mod:findWithChildLike>
   </mod:findName>
-  <mod:findName type="event" name="COMBAT_CHECK_FLAGSHIP_REAL">
-    <mod:findWithChildLike type="choice" child-type="text">
-        <mod:selector>Do some last minute check-ups.</mod:selector>
-        <mod:setAttributes req="pilot" lvl="1" max_group="1" blue="false"/>
-    </mod:findWithChildLike>
-    <mod:findWithChildLike type="choice" child-type="text">
-        <mod:selector>Do nothing.</mod:selector>
-        <mod:setAttributes req="pilot" lvl="1" max_group="2" blue="false"/>
-    </mod:findWithChildLike>
-  </mod:findName>
 <!--
 <mod:findName type="event" name="COMBAT_CHECK_TOGGLE">
   <mod-append:choice req="fmcore_conservative_fix" lvl="1" max_lvl="1" blue="false">
