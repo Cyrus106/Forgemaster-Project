@@ -195,7 +195,7 @@ function(ShipManager, Projectile, Location, Damage, shipFriendlyFire)
             for roomNumber = 0, Hyperspace.ShipGraph.GetShipInfo(targetSpace):RoomCount() - 1 do
                 local target = ShipManager:GetRoomCenter(roomNumber)
                 local blast = SpaceManager:CreateLaserBlast(blueprint, target, targetSpace, impactOwner, target, targetSpace, 0)
-                blast.extend.customDamage.accuracyMod = 2147483647
+                --blast.extend.customDamage.accuracyMod = 2147483647 --this breaks it annoyingly
             end
             Projectile.extend.name = weaponName
         end

@@ -23,7 +23,7 @@ local modulesToCap={
   ["FM_MODULAR_HULL_FORTIFIED"]=5,
   ["FM_MODULAR_HULL_NO_BREACH"]=5,
   ["FM_MODULAR_HULL_NO_FIRE"]=5,
-  ["FM_MODULAR_HULL_RESILIENT"]=15,
+  ["FM_MODULAR_HULL_RESILIENT"]=5,
   ["FM_MODULAR_HULL_GUARDIAN"]=5,
   ["FM_MODULAR_HULL_FLOORING"]=5,
   ["FM_MODULAR_HULL_VENGEANCE1"]=5,
@@ -41,14 +41,14 @@ local modulesToCap={
   --turrets
   ["FM_MODULAR_HULL_TURRET_WEAPONS"]=1,
   ["FM_MODULAR_HULL_TURRET_SHIELDS"]=1,
-  --["FM_MODULAR_HULL_TURRET_ENGINES"]=1,
+  ["FM_MODULAR_HULL_TURRET_ENGINES"]=1,
   ["FM_MODULAR_HULL_TURRET_MED"]=1,
-  --["FM_MODULAR_HULL_TURRET_DRONES"]=1,
-  --["FM_MODULAR_HULL_TURRET_OXYGEN"]=1,
-  --["FM_MODULAR_HULL_TURRET_TELEPORTER"]=1,
+  ["FM_MODULAR_HULL_TURRET_DRONES"]=1,
+  ["FM_MODULAR_HULL_TURRET_OXYGEN"]=1,
+  ["FM_MODULAR_HULL_TURRET_TELEPORTER"]=1,
   ["FM_MODULAR_HULL_TURRET_CLOAKING"]=1,
-  --["FM_MODULAR_HULL_TURRET_PILOT"]=1,
-  --["FM_MODULAR_HULL_TURRET_DOORS"]=1,
+  ["FM_MODULAR_HULL_TURRET_PILOT"]=1,
+  ["FM_MODULAR_HULL_TURRET_DOORS"]=1,
   --sys cd
   ["FM_MODULAR_HULL_CLOAK_COOLDOWN"]=1,
   --more expensive stuff
@@ -78,14 +78,14 @@ local modules={
   --turrets
   "FM_MODULAR_HULL_TURRET_WEAPONS",
   "FM_MODULAR_HULL_TURRET_SHIELDS",
-  --"FM_MODULAR_HULL_TURRET_ENGINES",
+  "FM_MODULAR_HULL_TURRET_ENGINES",
   "FM_MODULAR_HULL_TURRET_MED",
-  --"FM_MODULAR_HULL_TURRET_DRONES",
-  --"FM_MODULAR_HULL_TURRET_OXYGEN",
-  --"FM_MODULAR_HULL_TURRET_TELEPORTER",
+  "FM_MODULAR_HULL_TURRET_DRONES",
+  "FM_MODULAR_HULL_TURRET_OXYGEN",
+  "FM_MODULAR_HULL_TURRET_TELEPORTER",
   "FM_MODULAR_HULL_TURRET_CLOAKING",
-  --"FM_MODULAR_HULL_TURRET_PILOT",
-  --"FM_MODULAR_HULL_TURRET_DOORS",
+  "FM_MODULAR_HULL_TURRET_PILOT",
+  "FM_MODULAR_HULL_TURRET_DOORS",
   --sys cd
   "FM_MODULAR_HULL_CLOAK_COOLDOWN",
   --more expensive stuff
@@ -119,17 +119,34 @@ local getNewRandomModularThingy = function(ShipManager,thingy,cap)
       ["remainingCapstones"] = copyTable(capstones),
     }
   end
-  local rand=math.random(#ShipManager.table[UNIQUE_KEY][thingy])
-  local randomThingy = ShipManager.table[UNIQUE_KEY][thingy][rand]
+  local rand = nil
+  local randomThingy = nil
+  if #ShipManager.table[UNIQUE_KEY][thingy]>0 then 
+    rand=math.random(#ShipManager.table[UNIQUE_KEY][thingy])
+    randomThingy = ShipManager.table[UNIQUE_KEY][thingy][rand]
+  else
+    if thingy=="remainingMods" then
+      rand=math.random(#modules)
+      randomThingy = modules[rand]
+    else
+      rand=math.random(#capstones)
+      randomThingy = capstones[rand]
+    end
+  end
   while true do
     if not cap then cap={} end
     if ShipManager:HasAugmentation(randomThingy) < (cap[randomThingy] or 1) then
       return randomThingy
     end
+    if #ShipManager.table[UNIQUE_KEY][thingy]<=0 then
+      break
+    elseif #ShipManager.table[UNIQUE_KEY][thingy]==1 then
+      table.remove(ShipManager.table[UNIQUE_KEY][thingy],rand)
+      break
+    end
     table.remove(ShipManager.table[UNIQUE_KEY][thingy],rand)
-    if #ShipManager.table[UNIQUE_KEY][thingy]<=0 then break end
-    rand=math.random(#ShipManager.table[UNIQUE_KEY].remainingMods)
-    randomThingy = ShipManager.table[UNIQUE_KEY][thingy][rand]
+    rand=math.random(#ShipManager.table[UNIQUE_KEY][thingy])
+    randomThingy = ShipManager.table[UNIQUE_KEY][thingy][rand] or randomThingy
   end
   return randomThingy
 end
@@ -142,16 +159,21 @@ local getNewRandomCapstone = function(ShipManager)
   return getNewRandomModularThingy(ShipManager,"remainingCapstones")
 end
 
-local function installNextCapstone(ShipManager) 
+local function installNextCapstone(ShipManager)
   local currentNotches = ShipManager:HasEquipment("FM_HULL_UPGRADE_POINTS")
   local currentCapstones = ShipManager:HasEquipment("FM_HULL_CAPSTONES")
   while true do 
     if currentNotches-5*currentCapstones>4 then
-      addHiddenAugmentation(ShipManager,getNewRandomCapstone(ShipManager))
+      local newthing=getNewRandomCapstone(ShipManager)
+      --print(currentNotches.." "..newthing)
+      addHiddenAugmentation(ShipManager,newthing)
       return
     end
-    addHiddenAugmentation(ShipManager,getNewRandomModule(ShipManager))
+    local newthing=getNewRandomModule(ShipManager)
+    --print(newthing)
+    addHiddenAugmentation(ShipManager,newthing)
     currentNotches = ShipManager:HasEquipment("FM_HULL_UPGRADE_POINTS")
+    --print(currentNotches)
   end
 end
 
@@ -163,22 +185,32 @@ local fixAllSys = function(ShipManager)
 end
 local upAllMainSys = function(ShipManager)
   for sys in vter(ShipManager.vSystemList) do
-    if not Hyperspace.ShipSystem.IsSubsystem(sys:GetId()) then
-      sys:UpgradeSystem(1)
+    local sysId = sys:GetId()
+    if not Hyperspace.ShipSystem.IsSubsystem(sysId) then
+      if not (((sysId==9 or sysId==13) and sys.healthState.second>=4) or (sysId==1 and sys.healthState.second>=8) or (sysId==10 and sys.healthState.second>=3)) and sys.healthState.second<30 then 
+        sys:UpgradeSystem(1)
+      end
     end
   end
 end
 local upSpecialSys = function(ShipManager)
-  ShipManager:GetSystem(0):UpgradeSystem(1)
+  local sysIds={[0]=1,[1]=1,[3]=2,[4]=2}
+  for k,v in pairs(sysIds) do
+    local sys = ShipManager:GetSystem(k)
+    if sys.healthState.second<30 and not (sys.healthState.second>7 and k==1)then
+      sys:UpgradeSystem(math.min(v,30-sys.healthState.second))
+    end
+  end
+  --[[ShipManager:GetSystem(0):UpgradeSystem(1)
   ShipManager:GetSystem(1):UpgradeSystem(1)
   ShipManager:GetSystem(3):UpgradeSystem(2)
-  ShipManager:GetSystem(4):UpgradeSystem(2)
+  ShipManager:GetSystem(4):UpgradeSystem(2)--]]
 end
 
 local forgeFightEvents ={
   function(ship)
     loadEvent("FORGEMASTER_PHASE_3_END")
-    ship:GetSystem(4):UpgradeSystem(6)
+    ship:GetSystem(4):UpgradeSystem(math.min(6,30-ship:GetSystem(4).healthState.second))
   end,
   function(ship)
     loadEvent("FORGEMASTER_PHASE_2_END")
@@ -188,9 +220,10 @@ local forgeFightEvents ={
   end,
 }
 
-local undyingShip = function(ShipManager,Damage)
+local undyingShip = function(ShipManager,Damage,Projectile)
   local revives = ShipManager:HasAugmentation("FM_REVIVE")
   if revives>0 and (ShipManager.ship.hullIntegrity.first-Damage.iDamage<1 or Damage.bhullBuster and ShipManager.ship.hullIntegrity.first-Damage.iDamage*2<1) then
+    if Projectile then Projectile:Kill() end
     local space = Hyperspace.Global.GetInstance():GetCApp().world.space
     for proj in vter(space.projectiles) do
       if proj.targetId==ShipManager.iShipId and proj.currentSpace == ShipManager.iShipId then
@@ -199,30 +232,45 @@ local undyingShip = function(ShipManager,Damage)
     end
     Damage.iDamage=0
     ShipManager.ship.hullIntegrity.first=ShipManager.ship.hullIntegrity.second
+    --print("fixedShip")
     ShipManager:RemoveItem("HIDDEN FM_REVIVE")
     if ShipManager.myBlueprint.blueprintName == "FM_FORGEMASTER_CRUISER_ENEMY" then
       --ShipManager.ship.hullIntegrity.second = ShipManager.ship.hullIntegrity.second*2
-      forgeFightEvents[revives](ShipManager)
+      if forgeFightEvents[revives] then
+        forgeFightEvents[revives](ShipManager)
+      end
       fixAllSys(ShipManager)
+      --print("fixedSystems")
       upAllMainSys(ShipManager)
+      --print("Upgraded1")
       upSpecialSys(ShipManager)
+      --print("Upgraded2")
       installNextCapstone(ShipManager)
+      --print(ShipManager:HasEquipment("FM_HULL_CAPSTONES").."th Capstone given")
     end
+    return true
     --print("good thing he had a totem of undying :)")
   end
+  return false
 end
 
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA,
   function(ShipManager, Projectile, Location, Damage, forceHit, shipFriendlyFire)
-    undyingShip(ShipManager,Damage)
-    return Defines.Chain.CONTINUE, forceHit, shipFriendlyFire
+    if undyingShip(ShipManager,Damage,Projectile) then
+      return Defines.Chain.PREEMPT, forceHit, shipFriendlyFire
+    else
+      return Defines.Chain.CONTINUE, forceHit, shipFriendlyFire
+    end
   end, 1000
 )
 
 script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, 
   function(ShipManager, Projectile, Location, Damage, realNewTile, beamHitType)
-    undyingShip(ShipManager,Damage)
-    return Defines.Chain.CONTINUE, beamHitType
+    if undyingShip(ShipManager,Damage,Projectile) then
+      return Defines.Chain.PREEMPT, beamHitType
+    else
+      return Defines.Chain.CONTINUE, beamHitType
+    end
   end, 1000
 )
 --[[script.on_internal_event(Defines.InternalEvents.DAMAGE_SYSTEM, 
@@ -233,13 +281,29 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
 )--]]
 script.on_internal_event(Defines.InternalEvents.SHIP_LOOP,
 function(ship)
-  if ship:HasAugmentation("FM_REVIVE") and ship.ship.hullIntegrity.first<6 then
+  if ship:HasAugmentation("FM_REVIVE")>0 and ship.ship.hullIntegrity.first<6 then
     local dmg = Hyperspace.Damage()
-    dmg.iDamage=1
+    dmg.iDamage=2
     undyingShip(ship,dmg)
   end
 end, 1000)
 
+function giveRevive(shipId)
+  addHiddenAugmentation(Hyperspace.ships(shipId),"FM_REVIVE")
+  return Hyperspace.ships(shipId):HasAugmentation("FM_REVIVE")
+end
+function forceCapstone(shipId)
+  installNextCapstone(Hyperspace.ships(shipId))
+end
+function forcenextPhase(shipId)
+  local ship=Hyperspace.ships(shipId)
+  if ship:HasAugmentation("FM_REVIVE")>0 and ship.ship.hullIntegrity.first<6 then
+    local dmg = Hyperspace.Damage()
+    dmg.iDamage=30
+    undyingShip(ship,dmg)
+  end
+end
+--[[
 function spawnAncBoarder(ShipManager)
   local bp = Hyperspace.Global.GetInstance():GetBlueprints():GetDroneBlueprint("FM_ANCALAGON_BATTLE")
   local drone = ShipManager:CreateSpaceDrone(bp)
@@ -248,7 +312,7 @@ function spawnAncBoarder(ShipManager)
   drone:SetDeployed(true)
   return drone
 end
-
+--]]
 
 --[[he won't need this anymore
   

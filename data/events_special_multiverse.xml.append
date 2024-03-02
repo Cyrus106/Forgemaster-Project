@@ -41,7 +41,7 @@
 			<mod:setAttributes max_group="1" req="pilot" blue="false"/>
 		</mod:findWithChildLike>
 		<mod-append:choice req="FM_WEAPON_LOW_TIER" blue="false">
-			<text>Present a reguar Forged Weapon.</text>
+			<text>Present a regular Forged Weapon.</text>
 			<event>
 				<text>"Hmph. FORGED weaponry? Sure. This is tribute, I suppose. NOT Alastair's best work. He can do BETTER than this. I would think him SHAMEFUL to arm a Renegade with a TOOL so MEASLY. Hmph. I should like to SPEAK to him again. NEVERTHELESS! I shall BLESS you with the BLESSING OF FORGES. But have PATIENCE. It is not for now, but for LATER!"</text>
 				<metaVariable name="prof_r_boon_fm_forgeweapon" op="set" val="1"/>

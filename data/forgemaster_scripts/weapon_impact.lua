@@ -51,7 +51,7 @@ impactWeapons.FM_HOLYSHIT_20 = "FM_HOLYSHIT_20_EFFECT"
 
 --To hit every room on the targeted ship with an effect (Until accuracy stats are exposed, please ensure all weapons used in hitEveryRoom have accuracy 100)
 local hitEveryRoom = mods.inferno.hitEveryRoom
-hitEveryRoom.hitEveryRoomFM_ARBOREAL_EXE = "FM_ARBOREAL_EXE_STATBOOST"
+hitEveryRoom.FM_ARBOREAL_EXE = "FM_ARBOREAL_EXE_STATBOOST"
 hitEveryRoom.FM_ARBOREAL_REV = "FM_ARBOREAL_REV_STATBOOST"
 
 hitEveryRoom.FM_TERMINUS = "FM_TERMINUS_STATBOOST"

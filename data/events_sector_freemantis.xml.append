@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mod:findName type = "event" name = "FREEMANTIS_WEIRD_TRADE">
+<mod:findName type="event" name="FREEMANTIS_WEIRD_TRADE">
 	<mod-append:choice req="SHIP_GUNBOM" lvl="1" max_group="600" hidden="true" blue="true">
 		<text>(GunBom) Am I truly not worthy?</text>
 		<event>

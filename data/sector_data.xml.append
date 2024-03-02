@@ -4,7 +4,7 @@
 		<name>Twisted Sector</name>
 	</nameList>
 	<trackList>
-      <track>twisted</track>
+      <track>Twisted</track>
 		<track>crystal</track>
 	</trackList>
 	<startEvent>FM_START_TWISTED</startEvent>
@@ -15,13 +15,13 @@
 </sectorDescription>
 
 
-<mod:findName type="sectorDescription" name="SECTOR_ZOLTAN">
+<mod:findName type="sectorDescription" name="SECTOR_MINISTRY">
    <mod:findLike type="rarityList">
       <mod-append:blueprint name="FM_LASER_BURST_3" rarity="5"/>
    </mod:findLike>
 </mod:findName>
 
-<mod:findName type="sectorDescription" name="SECTOR_SHELL">
+<mod:findName type="sectorDescription" name="SECTOR_GENIOCRACY">
    <mod:findLike type="rarityList">
       <mod-append:blueprint name="FM_CORROSIVE_1" rarity="4"/>
       <mod-append:blueprint name="FM_CORROSIVE_2" rarity="4"/>
@@ -29,7 +29,7 @@
    </mod:findLike>
 </mod:findName>
 
-<mod:findName type="sectorDescription" name="SECTOR_SHELL_UNIQUE">
+<mod:findName type="sectorDescription" name="SECTOR_GENIOCRACY_UNIQUE">
    <mod:findLike type="rarityList">
       <mod-append:blueprint name="FM_CORROSIVE_1" rarity="3"/>
       <mod-append:blueprint name="FM_CORROSIVE_2" rarity="3"/>
@@ -37,7 +37,7 @@
    </mod:findLike>
 </mod:findName>
 
-<mod:findName type="sectorDescription" name="SECTOR_MORPH">
+<mod:findName type="sectorDescription" name="SECTOR_MORPH_UNIQUE">
    <mod:findLike type="rarityList">
       <mod-append:blueprint name="FM_CORROSIVE_1" rarity="3"/>
       <mod-append:blueprint name="FM_CORROSIVE_2" rarity="3"/>
@@ -45,13 +45,13 @@
    </mod:findLike>
 </mod:findName>
 
-<mod:findName type="sectorDescription" name="SECTOR_ZOLTAN_UNIQUE">
+<mod:findName type="sectorDescription" name="SECTOR_MINISTRY_UNIQUE">
    <mod:findLike type="rarityList">
       <mod-append:blueprint name="FM_LASER_BURST_3" rarity="5"/>
    </mod:findLike>
 </mod:findName>
 
-<mod:findName type="sectorDescription" name="SECTOR_MONK">
+<mod:findName type="sectorDescription" name="SECTOR_MONK_UNIQUE">
    <mod:findLike type="rarityList">
       <mod-append:blueprint name="FM_LASER_BURST_3" rarity="5"/>
    </mod:findLike>

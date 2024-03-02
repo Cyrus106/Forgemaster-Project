@@ -1,4 +1,4 @@
-<mod:findName type="event" name="GARDEN_KERNEL_FOREST">
+<mod:findName type="event" name="ORCHID_KERNEL_FOREST">
 	<mod-append:choice hidden="true" req="FM_FLAMETHROWER" >
 		<text>(Dazhbog) You have a raging pollen allergy and you swear this planet has more pollen than it has air. Time to burn it all to the ground.</text>
 		<event>

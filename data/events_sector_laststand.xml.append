@@ -64,51 +64,49 @@
 	</mod:findName>
 
 
-<mod:findName type="event" name="BOSS_GROUND_FIGHT">
-	<mod:findLike type="choice" limit="1">
-		<mod:findLike type="event">
-			<mod:findLike type="choice">
-				<mod:findLike type="event">
-					<mod-append:choice hidden="true" max_group="600" req="LIST_CREW_PLATED" blue="true">
-						<text>(Plated) Send a Plated down for repairs and support.</text>
-						<event>
-							<text>"Perfect, this'll help us greatly. Thank you Captain."</text>
-
-							<choice hidden="true">
-								<text>Continue...</text>
-								<event load="BOSS_GROUND_FIGHT_HELP"/>
-							</choice>
-						</event>
-					</mod-append:choice>
-					<mod-append:choice hidden="true" max_group="601" req="fm_forgemasterperson" blue="true">
-						<text>(Alastair) Send Alastair to quickly repair some equipment, and perhaps crack a few skulls while he's at it.</text>
+	<mod:findName type="event" name="NODE17_BLOCKADE">
+		<mod:findLike type="choice" limit="1">
+			<mod:findLike type="event">
+				<mod:findLike type="choice">
+					<mod:findLike type="event">
+						<mod-append:choice hidden="true" max_group="600" req="LIST_CREW_PLATED" blue="true">
+							<text>(Plated) Send a Plated down for repairs and support.</text>
 							<event>
-								<text>"Perfect, this'll help us greatly. Thank you so much Captain. This Rock soldier you sent down to assist is certainly something else!"</text>
-
+								<text>"Perfect, this'll help us greatly. Thank you Captain."</text>
 								<choice hidden="true">
 									<text>Continue...</text>
-									<event load="BOSS_GROUND_FIGHT_HELP"/>
+									<event load="NODE17_BLOCKADE_HELP"/>
 								</choice>
 							</event>
-					</mod-append:choice>
-					<mod:findWithChildLike type="choice" child-type="text">
-						<mod:selector>We can't help.</mod:selector>
-						<mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>
-					</mod:findWithChildLike>
+						</mod-append:choice>
+						<mod-append:choice hidden="true" max_group="601" req="fm_forgemasterperson" blue="true">
+							<text>(Alastair) Send Alastair to quickly repair some equipment, and perhaps crack a few skulls while he's at it.</text>
+							<event>
+								<text>"Perfect, this'll help us greatly. Thank you so much Captain. This Rock soldier you sent down to assist is certainly something else!"</text>
+								<choice hidden="true">
+									<text>Continue...</text>
+									<event load="NODE17_BLOCKADE_HELP"/>
+								</choice>
+							</event>
+						</mod-append:choice>
+						<mod:findWithChildLike type="choice" child-type="text">
+							<mod:selector>We can't help.</mod:selector>
+							<mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>
+						</mod:findWithChildLike>
+					</mod:findLike>
 				</mod:findLike>
 			</mod:findLike>
 		</mod:findLike>
-	</mod:findLike>
-</mod:findName>
+	</mod:findName>
 
-<mod:findName type="event" name="LASTSTAND_WARP_REAL">
-	<mod-append:variable name="forgemaster_spawntriggered" op="set" val="0"/>
-</mod:findName>
+	<mod:findName type="event" name="LASTSTAND_WARP_REAL">
+		<mod-append:variable name="forgemaster_spawntriggered" op="set" val="0"/>
+	</mod:findName>
 
-<mod:findName type="event" name="TRUE_LAST_STAND_START_EXTREME">
-	<mod-append:queueEvent>FORGEMASTER_SPAWNER</mod-append:queueEvent>
-</mod:findName>
-	</FTL>
+	<mod:findName type="event" name="TRUE_LAST_STAND_START_EXTREME">
+		<mod-append:queueEvent>FORGEMASTER_SPAWNER</mod-append:queueEvent>
+	</mod:findName>
+</FTL>
 		<!--
 			<choice hidden="true" max_group="1" req="SHIP_GUNBOM" blue="false">
 				<text>Contact Federation command.</text>

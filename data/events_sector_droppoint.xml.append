@@ -1,7 +1,16 @@
-
+<mod:findName type="event" name="MV_ASTEROID_EXPLORE">
+	<mod-append:choice hidden="true" req="FM_BEAM_MINING_2" >
+		<text>(Ishimura Beam) Attempt to mine the much larger asteroids.</text>
+		<event>
+			<text>You effortlessly mine a very high amount of usable material from the nearest asteroids while waiting for the FTL to charge.</text>
+			<item_modify>
+				<item type="scrap" min="56" max="78"/>
+			</item_modify>
+		</event>
+	</mod-append:choice>
+</mod:findName>
 
 <mod:findName type="event" name="MV_TERRAFORMING_SCAN">
-
 	<mod-append:choice hidden="true" req="FM_BEAM_MINING_2" >
         <text>(Ishimura Beam) "Terraform" the moon yourself, first.</text>
 		<event>
@@ -51,3 +60,21 @@
 		<event load="MORALITY_UPDATE_FORGEMASTER_GENERAL"/>
 	</choice>
 </event>
+
+<mod:findName type="event" name="MV_DISTRESS_CRASH_LANDING"><!--DISTRESS_CRASH_LANDING-->
+	<mod-append:choice hidden="true" req="FM_BEAM_MINING_2" >
+		<text>(Ishimura Beam) Forget the signal, crack open the planet for resources, you're sure it's uninhabited!</text>
+		<event>
+			<text>Diverting the majority of your ship's power to the Ishimura beam, you begin cracking open the planet, revealing parts of its surface and numerous valuable resources. After a long and tedious process, you procure a massive amount of scrap. The magma you revealed from cracking open the planet's surface flows onto nearby structures that look a bit like buildings. You grab the massive quantity of scrap and leave as quickly as able. Deep down, you know what you've done...</text>
+			<modifyPursuit amount="2"/>
+			<item_modify>
+				<item type="scrap" min="95" max="170"/>
+				<item type="fuel" min="3" max="9"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="MORALITY_UPDATE_FORGEMASTER_GENERAL"/>
+			</choice>
+		</event>
+	</mod-append:choice>
+</mod:findName>

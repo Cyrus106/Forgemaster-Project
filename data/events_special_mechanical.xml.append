@@ -1554,7 +1554,7 @@
 	<!-- this adds one to the twisted blessing counter every time you get a crew kill-->
 	<event name= "TWISTED_BLESSING_KILLCOUNT_INCREMENT">
 		<text>An efficient and brutal victory. Your benefactors are undoubtedly pleased with your work. (1 rage gained)</text>
-		<variable name = "twisted_blessing_counter" op = "add" val = "1"/>
+		<variable name="twisted_blessing_counter" op="add" val="1"/>
 	</event>
 </FTL>
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mod:findName type = "event" name = "ASTEROID_EXPLORE_LOSTSUN">
+<mod:findName type="event" name="ASTEROID_EXPLORE_LOSTSUN">
 	<mod-append:choice hidden="true" req="FM_BEAM_MINING_2" >
 		<text>(Ishimura Beam) Attempt to mine the much larger asteroids.</text>
 		<event>

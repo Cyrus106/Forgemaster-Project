@@ -12429,7 +12429,7 @@
 		<tooltip>Chaining 45 crew dmg beam(instakills zoltans)</tooltip>
 		<damage>0</damage>
 		<persDamage>3</persDamage>
-		<sp>10</sp>
+		<sp>11</sp>
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<cooldown>35</cooldown>
@@ -15462,7 +15462,7 @@
 		<tooltip>Chaining 45 crew dmg beam(instakills zoltans)</tooltip>
 		<damage>0</damage>
 		<persDamage>3</persDamage>
-		<sp>10</sp>
+		<sp>11</sp>
 		<fireChance>0</fireChance>
 		<breachChance>0</breachChance>
 		<cooldown>70</cooldown>
@@ -18171,7 +18171,7 @@
 	<!--Corby-->
 	<augBlueprint name="JUDGE_BOON_FM_FORGEARMOR">
 		<title>Grant of Armoring</title>
-		<desc>Modular Hull has +2 notches.</desc>
+		<desc>Modular Hull has +5 notches.</desc>
 		<cost>0</cost>
 		<rarity>0</rarity>
 		<stackable>false</stackable>
@@ -19973,3 +19973,16 @@
 		<tileAnim>pheromones_f</tileAnim>
 	</roomAnim>
 </statBoost>-->
+<mod:findName type="shipBlueprint" name="PLAYER_SHIP_TUTORIAL">
+	<mod-overwrite:weaponSlots>6</mod-overwrite:weaponSlots>
+	<mod-append:unlock>Win with the type A of the Kestral Cruiser.</mod-append:unlock>
+	<mod:findLike type="weaponList">
+		<mod:setAttributes count="4"/>
+		<mod-append:weapon name="GATLING_ANCIENT"/>
+		<mod-append:weapon name="GATLING_ANCIENT"/>
+		<mod-append:weapon name="BEAM_1"/>
+	</mod:findLike>
+	<mod-append:aug name="IMMUNE"/>
+	<mod-append:aug name="IMMUNE"/>
+	<mod-append:hiddenAug>AUTOMATED_SHIP</mod-append:hiddenAug>
+</mod:findName>

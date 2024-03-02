@@ -127,7 +127,7 @@ end)--]]
 script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE,
 function(projectile, weapon)
   if weapon:HasAugmentation("FM_MODULAR_HULL_WEAPON_IGNITE") > 0 and not weapon.isArtillery and mods.multiverse.is_first_shot(weapon,true) then
-    local ship = Hyperspace.ships(projectile:GetOwnerId())
+    local ship = Hyperspace.ships(weapon.iShipId)
     ship:StartFire(ship:GetSystem(3).roomId)
   end
 end)
@@ -136,13 +136,32 @@ script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION_PRE,
 function(ShipManager, Projectile, Damage, CollisionResponse)
   if ShipManager:HasAugmentation("FM_MODULAR_HULL_FASTSHIELD") > 0 then
     local rng = math.random()
-    local resChance = 1-0.8^(getEmptyBars(ShipManager,0)+1)
+    local resChance = 1-0.85^(getEmptyBars(ShipManager,0)+1)
     if rng < resChance and Projectile:GetType() ~= 5 then
       Projectile:Kill()
       return Defines.Chain.PREEMPT
     end
   end
   return Defines.Chain.CONTINUE
+end)
+
+-- AI for the funny fast shield recharge augment
+script.on_internal_event(Defines.InternalEvents.SHIP_LOOP,
+function(ship)
+  if ship:HasAugmentation("FM_MODULAR_HULL_FASTSHIELD") > 0 and ship.iShipId==1 and ship.shieldSystem ~= nil then
+    local shieldState = ship:GetShieldPower()
+    local missingBubbles = shieldState.second - shieldState.first
+    local shieldRecharge = ship:GetAugmentationValue("SHIELD_RECHARGE")+1
+    local shieldSys = ship.shieldSystem
+    if shieldSys.iLockCount<=0 and shieldSys.iHackEffect ~= 2 then
+      shieldSys:LockSystem(-1)
+      if missingBubbles>1 and shieldSys.powerState.first>2 then
+        shieldSys:ForceDecreasePower(2)
+      elseif (shieldRecharge>1 and missingBubbles<=0) or (shieldSys.powerState.first<=1 and shieldSys.healthState.first>1) then
+        shieldSys:ForceIncreasePower(1)
+      end
+    end
+  end
 end)
 
 local calculateCrits = function(ShipManager,Damage)
@@ -154,16 +173,16 @@ local calculateCrits = function(ShipManager,Damage)
   for i=0,extraRecursions do
     if critRate>math.random() then
       Damage.iDamage=Damage.iDamage*2
-      Damage.iIonDamage=math.min(Damage.iIonDamage*2,11)--fix for crash
+      Damage.iIonDamage=Damage.iIonDamage*2
       Damage.iSystemDamage=Damage.iSystemDamage*2
       critmult=critmult*2
     else
       break
     end
   end
-  if critmult>1 then
+  --[[if critmult>1 then
     print(" you have taken a CRITICAL HIT: "..critmult.."x! ("..100*critRate^math.log(critmult,2).."%% chance)")
-  end
+  end--]]
 end
 
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA,
@@ -180,7 +199,7 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM,
 
 -- rendering of turrets/repair sys Update
 local sysIdToAug={
-  [0]="SHIELDS","ENGINES","OXYGEN","WEAPONS","DRONES","MED","PILOT","SENORS","DOORS","TELEPORTER","CLOAKING",
+  [0]="SHIELDS","ENGINES","OXYGEN","WEAPONS","DRONES","MED","PILOT","SENSORS","DOORS","TELEPORTER","CLOAKING",
   "ARTILLERY","BATTERY","MED","MIND","HACKING",[20]="TEMPORAL"
 }
 mods.Forgemaster.augs={}

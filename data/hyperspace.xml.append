@@ -812,7 +812,7 @@
 
 
 			</crew>
-
+			<noFuelStalemate/>
 		</mod-append:customShip>
 
 		<mod-append:customShip name="FM_FORGEMASTER_CRUISER_ENEMY_LAST_STRAW">
@@ -859,7 +859,7 @@
 
 
 			</crew>
-
+			<noFuelStalemate/>
 		</mod-append:customShip>
 
 		<!--MV Traveller Variants -->
@@ -1878,7 +1878,7 @@
 			<shipIcon>
 				<name>icon_fm_modhull_capstone_fastshield</name>
 				<tooltip>INFINITUM CYCLO-BARRIER:
-					20% chance for incoming projectiles to get destroyed by the shields, for every unpowered bar of the shields system the chance for a projectile to not get destroyed is reduced by a relative 20%, also +50% shield recharge for each unpowered bar</tooltip>
+					15% chance for incoming projectiles to get destroyed by the shields, for every unpowered bar of the shields system the chance for a projectile to not get destroyed is reduced by a relative 15%, also +50% shield recharge for each unpowered bar</tooltip>
 			</shipIcon>
 			<shipIcon>
 				<name>icon_fm_modhull_capstone_fastweapon</name>
@@ -3688,7 +3688,8 @@
 
 	<events> <!-- Forgemaster QUEST Hub -->
 		<req name="FM_QUEST_LIST" type="any">
-			<name>SEC SECTOR_MANTIS</name>
+			<name>SEC SECTOR_FREEMANTIS</name>
+			<name>SEC SECTOR_GATHERING_UNIQUE</name>
 		</req>
 
 
@@ -9382,7 +9383,8 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<function name="SYSTEM_CASING" value="0.25" useForReqs="false"/>
 			<function name="FIRE_EXTINGUISHERS" value="5" useForReqs="false" warning="false"/>
 			<function name="SLUG_GEL" value="1" useForReqs="false" warning="false"/>
-			<function name="SYSTEM_CASING" value="0.35" useForReqs="true" warning="false"/>
+			<function name="FM_MODULAR_UPGRADE_EXTRANOTCHES" value="100" useforReqs="true"/>
+			<!--<function name="SYSTEM_CASING" value="0.35" useForReqs="true" warning="false"/>--><!--ffs Cyrus-->
 			<!--<function name="AUTOMATED_SHIP" value="1"/>-->
 			<function name="AUTOMATED_REPAIR" value="-1"/>
 			<function name="AUTOMATED_MANNING" value="-1"/>
@@ -10192,8 +10194,8 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<aug name="LAB_ZOLTAN_LIMIT_RELEASE">
 			<superShield>
 				<add>5</add>
-				<color r="0" g="255" b="0" a="0.8"/>
-				<shieldImage>ship/enemy_shields_white.png</shieldImage>
+				<color r="0" g="255" b="0" a="1"/>
+				<shieldImage>ship/shield_base_bubble.png</shieldImage>
 			</superShield>
 			<statBoosts>
 				<statBoost name="powerEffect">
@@ -11529,16 +11531,16 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<aug name="FM_UPG_AETHER_SHIELDS">
 			<superShield>
 				<add>6</add>
-				<color r="255" g="0" b="6" a="0.8"/>
-				<shieldImage>ship/enemy_shields_white.png</shieldImage>
+				<color r="255" g="0" b="6" a="1"/>
+				<shieldImage>ship/shield_base_bubble.png</shieldImage>
 			</superShield>
 		</aug>
 
 		<aug name="HID_FM_UPG_AETHER_SHIELDS">
 			<superShield>
 				<add>6</add>
-				<color r="170" g="40" b="25" a="0.5"/>
-				<shieldImage>ship/enemy_shields_white.png</shieldImage>
+				<color r="170" g="40" b="25" a="1"/>
+				<shieldImage>ship/shield_base_bubble.png</shieldImage>
 			</superShield>
 		</aug>
 
@@ -11796,7 +11798,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<superShield>
 				<add>5</add>
 				<color r="222" g="10" b="10" a="1.0"/>
-				<shieldImage>ship/enemy_shields_white.png</shieldImage>
+				<shieldImage>ship/shield_base_bubble.png</shieldImage>
 			</superShield>
 			<statBoosts>
 				<statBoost name="statBoost">
@@ -12686,7 +12688,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</statBoost>
 			</statBoosts>
 		</aug>
-		<aug name="JUDGE_BOON_FM_PLATED">
+		<aug name="JUDGE_BOON_FM_FORGEARMOR">
 			<function name="FM_MODULAR_UPGRADE_EXTRANOTCHES" value="2" useforReqs="true"/>
 		</aug>
 		<aug name="JUDGE_BOON_FM_ANCWEAPON">
@@ -14605,7 +14607,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<superShield>
 				<add>8</add>
 				<color r="255" g="119" b="0" a="1.0"/>
-				<shieldImage>ship/enemy_shields_white.png</shieldImage>
+				<shieldImage>ship/shield_base_bubble.png</shieldImage>
 			</superShield>
 			<icon>icon_fm_modhull_capstone_particle</icon>
 		</aug>
@@ -15885,7 +15887,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<name>Grant of Armouring</name>
 					<secretDescription>Receive the Grant of Armouring from Corby.</secretDescription>
 					<description>Show Modular Hull to Corby. 
-					While in effect; Modular Hull gains +2 notch capacity.</description>
+					While in effect; Modular Hull gains +5 notch capacity.</description>
 					<header>Boon Received</header>
 					<icon>ach_boon_fm_forgearmor</icon>
 					<multiDifficulty>false</multiDifficulty>

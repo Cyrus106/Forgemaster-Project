@@ -7,7 +7,7 @@ local blueShot = Hyperspace.Resources:GetImageId "weapon_projectiles/fm_surge_la
 
 script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE,
 function(projectile, weapon)
-  local otherShip = Hyperspace.ships(1 - projectile:GetOwnerId())
+  local otherShip = Hyperspace.ships(1 - weapon.iShipId)--projectile:GetOwnerId())
   if weapon.blueprint.name == "FM_SURGE_LASER" then
     local projectile_number = (weapon.numShots - weapon.queuedProjectiles:size()) % weapon.numShots --modulus for when weapon fires fast enough to queue more shots
       if projectile_number <= 5 then --projectiles that aim towards the targetted system

@@ -257,6 +257,11 @@
 	<stackable>true</stackable>
 </augBlueprint>
 
+
+<mod:findName type="weaponBlueprint" name="BEAM_REPAIR">
+	<mod-overwrite:sp>-1</mod-overwrite:sp>
+</mod:findName>
+
 <FTL><!-- AutoLib stuff-->
 	<!--
 	DO NOT USE ANY OF THESE AUGMENTS DIRECTLY!

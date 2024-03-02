@@ -1,0 +1,61 @@
+
+<mod:findName type="eventList" name="DISTRESS_FEDERATION_LOST_HAIL">
+	<mod:findLike type="event" start="0" limit="1">
+		<mod-append:choice hidden="true" req="LIST_CREW_PLATED" >
+			<text>(Plated) Have your Plated repair their ship.</text>
+			<event>
+				<text>The Plated repairs their ship surprisingly fast. The Federation ship is very impressed with their work, and sends you a gift as thanks.</text>
+				<item_modify>
+					<item type="scrap" min="37" max="52"/>
+					<item type="missiles" min="3" max="5"/>
+				</item_modify>
+			</event>
+		</mod-append:choice>
+		<mod-append:choice hidden="true" req="fm_forgemasterperson" >
+			<text>(Alastair) Have Alastair work his magic on the repair process.</text>
+			<event>
+				<text>Alastair repairs the ship with relative ease, and even improves the efficiency of the ship's on-board systems for them as a gift. The Federation ship is extremely impressed with his work, and sends you a very hefty gift as thanks.</text>
+				<weapon name="GIFTLIST_FEDERATION"/>
+				<item_modify>
+					<item type="scrap" min="37" max="52"/>
+					<item type="missiles" min="3" max="5"/>
+				</item_modify>
+			</event>
+		</mod-append:choice>
+		<mod:findWithChildLike type="choice" child-type="text">
+			<mod:selector>We can't help.</mod:selector>
+			<mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>
+		</mod:findWithChildLike>
+	</mod:findLike>
+</mod:findName>
+
+<mod:findName type="eventList" name="DISTRESS_FEDERATION_LOST_LOGS">
+	<mod:findLike type="event" start="0" limit="1" >
+		<mod-append:choice hidden="true" req="LIST_CREW_PLATED" >
+			<text>(Plated) Have your Plated repair their ship.</text>
+			<event>
+				<text>The Plated repairs their ship surprisingly fast. The Federation ship is very impressed with their work, and sends you a gift as thanks.</text>
+				<item_modify>
+					<item type="scrap" min="37" max="52"/>
+					<item type="missiles" min="3" max="5"/>
+				</item_modify>
+			</event>
+		</mod-append:choice>
+		<mod-append:choice hidden="true" req="fm_forgemasterperson" >
+			<text>(Alastair) Have Alastair work his magic on the repair process.</text>
+			<event>
+				<text>Alastair repairs the ship with relative ease, and even improves the efficiency of the ship's on-board systems for them as a gift. The Federation ship is extremely impressed with his work, and sends you a very hefty gift as thanks.</text>
+				<weapon name="GIFTLIST_FEDERATION"/>
+
+				<item_modify>
+					<item type="scrap" min="37" max="52"/>
+					<item type="missiles" min="3" max="5"/>
+				</item_modify>
+			</event>
+		</mod-append:choice>
+		<mod:findWithChildLike type="choice" child-type="text">
+			<mod:selector>We can't help.</mod:selector>
+			<mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/>
+		</mod:findWithChildLike>
+	</mod:findLike>
+</mod:findName>

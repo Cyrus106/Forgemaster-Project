@@ -297,6 +297,7 @@
 		</choice>
 	</event>
 	<event name="FORGEMASTER_PHASE_2_END">
+		<superShields player="false"/>
 		<text>You expect this would be it, but instead you detect a surge of nanites as a Repair-bot dispersal is activated, swiftly undoign your damage! "A fine effort, lad, but you'll have to do more than that! My ship is well equipped for repairs; so many pirates thinking they can steal my cargo made that almost required to go through their sectors!" Scans indicate further increase in power.</text>
 		<choice>
 			<text>Continue...</text>
@@ -322,6 +323,7 @@
 		</choice>
 	</event>
 	<event name="FORGEMASTER_PHASE_3_END">
+		<superShields player="false"/>
 		<text>An emergency repair system triggers on the Forgemaster's ship, dozens of repair bombs detonate at once. "You really are pushing me to my limits, lad..." Your scanners detect another increase in the power of his ship. "lets end it here, alright lad?"</text>
 		<choice>
 			<text>End it here.</text>
@@ -598,7 +600,7 @@
 		</choice>
 
 
-		<choice hidden="true" req="SEC SECTOR_FREEMANTIS" lvl="1" max_group="4" blue="true"> <!--  RELIC MENU BLUE TESTS -->
+		<choice hidden="true" req="FM_QUEST_LIST" lvl="1" max_group="4" blue="true"> <!--  RELIC MENU BLUE TESTS -->
 
 			<text>Browse his proud collection of Relics(Quest Available).</text>
 			<event load="FM_RELIC_COLLECTION"/>
@@ -887,7 +889,7 @@
 
 
 
-		<choice hidden="true" req="SEC SECTOR_FREEMANTIS" lvl="1" max_group="4" blue="true"> <!--  RELIC MENU BLUE TESTS -->
+		<choice hidden="true" req="FM_QUEST_LIST" lvl="1" max_group="4" blue="true"> <!--  RELIC MENU BLUE TESTS -->
 
 			<text>Browse his proud collection of Relics. [Quest Available!]</text>
 			<event load="FM_RELIC_COLLECTION"/>
@@ -960,7 +962,7 @@
 			<event load="FM_NPC_CREATE"/>
 		</choice>
 
-		<choice hidden="true" req="SEC SECTOR_FREEMANTIS" lvl="1" max_group="4" blue="true"> <!--  RELIC MENU BLUE TESTS -->
+		<choice hidden="true" req="FM_QUEST_LIST" lvl="1" max_group="4" blue="true"> <!--  RELIC MENU BLUE TESTS -->
 
 			<text>Browse his proud collection of Relics. [Quest Available!]</text>
 			<event load="FM_RELIC_COLLECTION"/>
@@ -1041,6 +1043,10 @@
 					<event load="FM_NPC_CREATE_NONE"/>
 				</choice>
 
+				<choice hidden="true" req="FM_QUEST_LIST" lvl="1" max_group="4" blue="false"> <!--  RELIC MENU -->
+					<text>Browse his proud collection of relics and oddities.</text>
+					<event load="FM_RELIC_COLLECTION"/>
+				</choice>
 				<choice hidden="true" req="pilot" lvl="1" max_group="4" blue="false"> <!--  RELIC MENU -->
 					<text>Browse his proud collection of relics and oddities.</text>
 					<event load="FM_RELIC_COLLECTION"/>
@@ -1274,7 +1280,7 @@
 			</event>
 		</choice>
 		<choice hidden="true" req="pilot" lvl="1" max_group="6" blue="false"> <!--  Do nothing -->
-			<text>Decline his offer, but it takes you straight back.</text>
+			<text>Decline his offer.</text>
 			<event>
 				<loadEvent>FORGEMASTER_PHONE_EVENT</loadEvent>				
 			</event>
@@ -1299,7 +1305,7 @@
 		</choice>
 
 
-		<choice hidden="true" req="pilot" lvl="1" max_group="5" blue="false"> <!--  Do nothing -->
+		<choice hidden="true" req="pilot" lvl="5" max_group="5" blue="false"> <!--  Do nothing -->
 			<text>Decline his offer.</text>
 			<event>
 				<text>Alastair looks crestfallen. "Come back later when you want me to make something awesome, lad. I guess."</text>
@@ -1322,6 +1328,13 @@
 					</event>
 
 				</choice>
+			</event>
+		</choice>
+		
+		<choice hidden="true" req="pilot" lvl="1" max_group="6" blue="false"> <!--  Do nothing -->
+			<text>Decline his offer.</text>
+			<event>
+				<loadEvent>FORGEMASTER_PHONE_EVENT</loadEvent>				
 			</event>
 		</choice>
 
@@ -9320,7 +9333,7 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_CAPSTONE_FASTSHIELD">
-		<text>Install Infinitum Cyclo-Barrier? [+50% Shield recharge per unpowered bar of the shield system, +20% chance to harmlessly absorb any non-beam projectile, chance of damage reduced by 20% multiplicatively per unpowered bar]</text>
+		<text>Install Infinitum Cyclo-Barrier? [+50% Shield recharge per unpowered bar of the shield system, +15% chance to harmlessly absorb any non-beam projectile, chance of damage reduced by 15% multiplicatively per unpowered bar]</text>
 		<choice req="shields" lvl="0" max_group="1" blue="false" hidden="true">
 			<text>you can't install the Infinitum Cyclo-Barrier, you need a Shield system to direct power to.</text>
 			<event load="OPTION_INVALID"/>
@@ -9575,7 +9588,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_FASTSHIELD" blue="false" hidden="true">
-			<text>Infinitum Cyclo-Barrier[+50% Shield recharge per unused shield power, +20% chance to harmlessly absorb any non-beam projectile, remaining chance of damage reduced by 20% per unused shield power,multiplicatively]</text>
+			<text>Infinitum Cyclo-Barrier[+50% Shield recharge per unused shield power, +15% chance to harmlessly absorb any non-beam projectile, remaining chance of damage reduced by 15% per unused shield power,multiplicatively]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_FASTWEAPON" blue="false" hidden="true">
@@ -14387,7 +14400,7 @@
 
 <!--<FTL> Misc Interactions ALASTAIR HAIL SYLVAN
 
-<mod:findName type = "event" name = "SYLVAN_DROPPOINT_GIFT">
+<mod:findName type="event" name="SYLVAN_DROPPOINT_GIFT">
 <mod-append:choice req="fm_forgemasterperson" lvl="1" max_group="600" hidden="true" blue="true">
 <text>(Alastair) Use Alastair to hail Sylvan.</text>
 <event>
@@ -14401,7 +14414,7 @@
 <mod:setAttributes req="pilot" lvl="1" max_group="620" blue="false"/></mod:findWithChildLike></mod:findName>
 
 
-<mod:findName type = "event" name = "SYLVAN_DROPPOINT_NOGIFT">
+<mod:findName type="event" name="SYLVAN_DROPPOINT_NOGIFT">
 <mod-append:choice req="fm_forgemasterperson" lvl="1" max_group="600" hidden="true" blue="true">
 <text>(Alastair) Use Alastair to hail Sylvan.</text>
 <event>
@@ -14417,7 +14430,7 @@
 </mod:findName>
 
 
-<mod:findName type = "event" name = "SYLVAN_STANDARD">
+<mod:findName type="event" name="SYLVAN_STANDARD">
 	<mod-append:choice req="fm_forgemasterperson" lvl="1" max_group="600" hidden="true" blue="false">
 		<text>(Alastair) Use Alastair to hail Sylvan.</text>
 		<event>
