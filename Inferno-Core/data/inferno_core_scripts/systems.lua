@@ -47,7 +47,7 @@ function(ship, sys)
     sys.effectTimer.first = sys.effectTimer.first + (1 / modifier - 1) * increment
   end
 end)
-
+--[[--currently not working, battery timer not exposed
 script.on_system_event(Defines.SystemEvents.ON_RUN,
 function(ship, sys)
   if sys:GetId() == 12 then
@@ -56,7 +56,7 @@ function(ship, sys)
     sys.timer.first = sys.timer.first + (1 / modifier - 1) * increment
   end
 end)
-
+--]]
 script.on_system_event(Defines.SystemEvents.ON_RUN,
 function(ship, sys)
   if sys:GetId() == 15 then

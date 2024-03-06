@@ -1,3 +1,14 @@
+<mod:findName type="event" name="FILLER_EXPLORE">
+	<mod-append:choice hidden="true" req="FM_BEAM_MINING_2" >
+		<text>(Ishimura Beam) Attempt to mine the much larger asteroids.</text>
+		<event>
+			<text>You effortlessly mine a very high amount of usable material from the nearest asteroids while waiting for the FTL to charge.</text>
+			<item_modify>
+				<item type="scrap" min="56" max="78"/>
+			</item_modify>
+		</event>
+	</mod-append:choice>
+</mod:findName>
 
 <mod:findName type="eventList" name="DISTRESS_FEDERATION_LOST_HAIL">
 	<mod:findLike type="event" start="0" limit="1">

@@ -870,14 +870,14 @@
 				<shipIcon>icon_specialwep</shipIcon>
 			</shipIcons>
 			<crew>
-				<orchid_chieftain room="0"/> <!--piloting-->
+				<orchid_caretaker room="0"/> <!--piloting-->
 				<shell_radiant room="4"/> <!--shields-->
 				<orchid_vampweed room="6"/> <!--weapons-->
 				<shell_radiant room="4"/> <!--shields-->
 				<orchid_vampweed room="6"/> <!--weapons-->
 				<lanius_welder room="19"/> <!--engines-->
 				<lanius_welder room="19"/> <!--engines-->
-				<orchid_chieftain room="8"/> <!--oxygen-->
+				<orchid_caretaker room="8"/> <!--oxygen-->
 
 				<rock_commando room="13"/> <!--empty-->
 			</crew>
@@ -1586,7 +1586,7 @@
 				<zoltan_peacekeeper room="17"/> <!--shields-->
 				<zoltan_peacekeeper room="17"/> <!--shields-->
 				<engi room="6"/> <!--doors-->
-				<orchid_chieftain room="6"/> <!--doors-->
+				<orchid_caretaker room="6"/> <!--doors-->
 				<rock room="12"/> <!--weapons-->
 			</crew>
 			<noFuelStalemate/>
@@ -14854,6 +14854,12 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<function name="ANTIAUG_FAST_CLOAK" value="1"/>
 			<icon>icon_fm_modhull_capstone_defense_scramble</icon>
 		</aug>
+		<aug name="FM_MODULAR_HULL_BEAM_PIERCE">
+			<function name="AUTO_COOLDOWN" value="-0.1"/>
+			<function name="AUG_BEAM_PIERCE" value="1"/>
+			<function name="AUG_BEAM_PIERCE_DRONE" value="1"/>
+			<icon>icon_fm_modhull_capstone</icon>
+		</aug>
 	</augments>
 	<events>
 		<metaVariable name="fm_infinite_upgradepoints" op="set" val="0"/>
@@ -14986,6 +14992,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
     		<name>FM_MODULAR_HULL_WEAPON_IGNITE</name>
 			<name>FM_MODULAR_HULL_OFFENSE_SCRAMBLE</name>
 			<name>FM_MODULAR_HULL_DEFENSE_SCRAMBLE</name>
+			<name>FM_MODULAR_HULL_BEAM_PIERCE</name>
 		</req>
 		<req name="FM_CAPPED_HULL" type="all">
 			<req lvl="3">

@@ -214,6 +214,7 @@ local forgeFightEvents ={
   end,
   function(ship)
     loadEvent("FORGEMASTER_PHASE_2_END")
+    ship:GetSystem(9):ClearStatus()
   end,
   function(ship)
     loadEvent("FORGEMASTER_PHASE_1_END")

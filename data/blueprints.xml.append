@@ -4744,28 +4744,26 @@
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
 				</statBoost>
-				<statBoost name="trueHealAmount">
+				<statBoost name="canTeleport">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+				<statBoost name="noWarning">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+				<statBoost name="lowHealthThreshold">
 					<boostType>FLAT</boostType>
 					<amount>-1</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
-					<whiteList>
-
-						<phantom_goul/>
-					</whiteList>
-				</statBoost>
-				<statBoost name="trueHealAmount">
-					<boostType>FLAT</boostType>
-					<amount>-9999999</amount>
-					<shipTarget>PLAYER_SHIP</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-					<whiteList>
-						<acid/>
-						<phantom_goul/>
-					</whiteList>
-
 				</statBoost>
 			</statBoosts>
 		</spawnCrew>
@@ -5083,8 +5081,7 @@
 			Shield Piercing: 10
 
 			Fire Chance: 10%
-			Breach Chance: 10% (Adjusted: 9%)
-		</tooltipOverride>
+			Breach Chance: 10% (Adjusted: 9%)</tooltipOverride>
 		<damage>0</damage>
 		<sysDamage>1</sysDamage>
 		<persDamage>1</persDamage>
@@ -11380,6 +11377,27 @@
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
 				</statBoost>
+				<statBoost name="canTeleport">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+				<statBoost name="noWarning">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+				<statBoost name="lowHealthThreshold">
+					<boostType>FLAT</boostType>
+					<amount>-1</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
 			</statBoosts>
 		</spawnCrew>
 		<rarity>0</rarity>
@@ -12133,31 +12151,26 @@
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
 				</statBoost>
-
-
-
-				<statBoost name="trueHealAmount">
+				<statBoost name="canTeleport">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+				<statBoost name="noWarning">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+				<statBoost name="lowHealthThreshold">
 					<boostType>FLAT</boostType>
 					<amount>-1</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
-					<whiteList>
-
-						<phantom_goul/>
-					</whiteList>
-				</statBoost>
-				<statBoost name="trueHealAmount">
-					<boostType>FLAT</boostType>
-					<amount>-9999999</amount>
-					<shipTarget>PLAYER_SHIP</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-					<whiteList>
-						<acid/>
-						<phantom_goul/>
-					</whiteList>
-
 				</statBoost>
 			</statBoosts>
 		</spawnCrew>
@@ -13081,7 +13094,7 @@
 		<rarity>0</rarity>
 		<spawnCrew>
 			<number>1</number>
-			<race>orchid_chieftain</race>
+			<race>orchid_caretaker</race>
 			<lifetime>20</lifetime>
 			<statBoosts>
 				<statBoost name="noClone">
@@ -13519,31 +13532,26 @@
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
 				</statBoost>
-
-
-
-				<statBoost name="trueHealAmount">
+				<statBoost name="canTeleport">
+					<boostType>SET</boostType>
+					<value>false</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+				<statBoost name="noWarning">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+				<statBoost name="lowHealthThreshold">
 					<boostType>FLAT</boostType>
 					<amount>-1</amount>
 					<shipTarget>CURRENT_ROOM</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
-					<whiteList>
-
-						<phantom_goul/>
-					</whiteList>
-				</statBoost>
-				<statBoost name="trueHealAmount">
-					<boostType>FLAT</boostType>
-					<amount>-9999999</amount>
-					<shipTarget>PLAYER_SHIP</shipTarget>
-					<crewTarget>ALL</crewTarget>
-					<priority>999999</priority>
-					<whiteList>
-						<acid/>
-						<phantom_goul/>
-					</whiteList>
-
 				</statBoost>
 			</statBoosts>
 		</spawnCrew>
@@ -15129,10 +15137,10 @@
 		<speed>70</speed>
 		<damage>2</damage>
 		<missiles>1</missiles>
-		<accuracyMod>10</accuracyMod>
+		<!--<accuracyMod>10</accuracyMod>-->
 		<shots>1</shots>
 		<sp>10</sp>
-		<hullBust>1</hullBust>
+		<!--<hullBust>1</hullBust>-->
 		<fireChance>4</fireChance>
 		<breachChance>5</breachChance>
 		<stun>7</stun>
@@ -15947,7 +15955,7 @@
 		<rarity>0</rarity>
 		<spawnCrew>
 			<number>1</number>
-			<race>orchid_chieftain</race>
+			<race>orchid_caretaker</race>
 			<lifetime>20</lifetime>
 			<statBoosts>
 				<statBoost name="noClone">
@@ -18930,6 +18938,24 @@
 	<augBlueprint name="FM_MODULAR_HULL_DEFENSE_SCRAMBLE">
 		<title>Defence scrambler</title>
 		<desc>-30% shield recharge to enemy, +5s enemy cloaking cd</desc>
+		<cost>100</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+	
+	<augBlueprint name="FM_MODULAR_HULL_BEAM_PIERCE">
+		<title>Beam phase frequencies</title>
+		<desc>-10% reload, +1 beam weapon/drone pierce</desc>
+		<cost>100</cost>
+		<rarity>0</rarity>
+		<stackable>true</stackable>
+	</augBlueprint>
+	
+	
+	
+	<augBlueprint name="FM_MODULAR_HULL_INFERNO_CORE">
+		<title>The Inferno Core</title>
+		<desc>+1sp per 30% fire chance, +30% fire chance (doesn't impact the first effect)</desc>
 		<cost>100</cost>
 		<rarity>0</rarity>
 		<stackable>true</stackable>

@@ -582,7 +582,7 @@
 	<minSector>1</minSector>
 	<maxSector>8</maxSector>
 	<systemList>
-		<cloaking power="4" max="4" room="11" start="true" />
+		<cloaking power="3" max="3" room="11" start="true" />
 		<doors power="3" max="3" room="8" start="true" />
 		<engines power="3" max="3" room="16" start="true" />
 		<medbay power="3" max="3" room="9" start="true" />

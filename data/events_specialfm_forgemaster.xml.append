@@ -289,7 +289,7 @@
 					<item type="missiles" min="1" max="3"/>
 					<item type="drones" min="1" max="2"/>
 				</item_modify>
-				<choice>
+				<choice hidden="true">
 					<text>Continue...</text>
 					<event load="FM_SPARRING_REWARD"/>
 				</choice>
@@ -315,7 +315,7 @@
 					<item type="missiles" min="1" max="4"/>
 					<item type="drones" min="1" max="3"/>
 				</item_modify>
-				<choice>
+				<choice hidden="true">
 					<text>Continue...</text>
 					<event load="FM_SPARRING_REWARD_2"/>
 				</choice>
@@ -337,7 +337,7 @@
 					<item type="missiles" min="2" max="5"/>
 					<item type="drones" min="2" max="4"/>
 				</item_modify>
-				<choice>
+				<choice hidden="true">
 					<text>Continue...</text>
 					<event load="FM_SPARRING_REWARD_3"/>
 				</choice>
@@ -576,6 +576,7 @@
 		<text>"Oh ho, my lad! Do come in, do come in! What is it you've brought for me today? Here, take this subspace identifier - you should be able to contact me in the future. And have a small token of my friendship."</text> <!--  A STATIC, first line. make sure to mention his phone or whatever we'd like to call it. Not like player will see the aug name! -->
 		<autoReward level="MED">scrap_only</autoReward>
 		<ship load="SHIP_FM_FORGEMASTER" hostile="false"/>
+		<status type="limit" target="enemy" system="teleporter" amount="0"/>
 		<variable name="fm_forgemaster_phone" op="set" val="1"/>
 		<choice hidden="true"> <!--  STORE -->
 			<text>See what he's offering. (He sells crafting components.)</text> <!--  Visit store text -->
@@ -770,7 +771,7 @@
 	<event name="FM_RELIC_COLLECTION">
 		<text>You make your way into a dimly lit room where several objects of odd character rest on metallic plinths.
 
-			[This is the Quest Hub for Forgemaster! In future updates you will be able to obtain sector-specific quests from Alastair here! For now only one is available in the Free Mantis Sector!]
+			[This is the Quest Hub for Forgemaster! In future updates you will be able to obtain sector-specific quests from Alastair here! For now there is one available in the Free Mantis Sector! (and also a second one somewhere else)]
 		</text>
 
 		<choice hidden="true" req="fm_gunbomquest_rescued" lvl="1" max_group="1" blue="true"> <!--  GUNBOM QUEST-->
@@ -864,6 +865,7 @@
 		<text load="TEXT_FORGEMASTER_GENERIC"/>
 
 		<ship load="SHIP_FM_FORGEMASTER" hostile="false"/>
+		<status type="limit" target="enemy" system="teleporter" amount="0"/>
 
 		<choice hidden="true"> <!--  STORE -->
 			<text>See what he's offering. (He sells crafting components.)</text>
@@ -939,6 +941,7 @@
 
 		<!--	<autoReward level="MED">scrap_only</autoReward> -->
 		<ship load="SHIP_FM_FORGEMASTER" hostile="false"/>
+		<status type="limit" target="enemy" system="teleporter" amount="0"/>
 
 		<choice hidden="true"> <!--  STORE -->
 			<text>See what he's offering.</text>
@@ -6882,12 +6885,12 @@
 		<choice req="FM_CAPPED_HULL" max_group="9">
 			<text>I want more!</text>
 			<event>
-				<text>Alastair is taken aback by your request, "are you sure lad, i cannot garuantee your safety if we i install more modules for you..."
+				<text>Alastair is taken aback by your request, "Are you sure, lad? I cannot guarantee your safety if we install more modules..."
 					(your ship will be set on fire/breached with extra breaches when you take damage and there is a low chance for incoming damage to get multiplied(bigger multiplier with each extra capstone))</text>
 				<choice>
 					<text>pretty please?</text>
 					<event>
-						<text>Alastair sighs, "alright, just don't say i didn't warn ya"</text>
+						<text>Alastair sighs, "Alright, just don't say i didn't warn ya"</text>
 						<metaVariable name="fm_infinite_upgradepoints" op="set" val="1"/>
 						<choice>
 							<text>Continue...</text>
@@ -7273,7 +7276,7 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_MODULE_NO_FIRE">
-		<text>Install Fire Repellent? [removes a flat 10% of enemy attacks' fire chance, 5 can be installed, uses 2 upgrade notches]</text>
+		<text>Install Fire Repellent? [removes a flat 10% of enemy attacks' fire chance, 5 can be installed, uses 1 upgrade notches]</text>
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Install the Fire Repellents.</text>
 			<event>
@@ -9142,6 +9145,17 @@
 			<text>Defence Scrambler Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
+		<choice req="FM_MODULAR_HULL_BEAM_PIERCE" lvl="0" max_lvl="0" blue="false">
+			<text>Beam Phase Frequencies Capstone [100~](new!)</text>
+			<event>
+				<loadEvent>FM_MODULAR_HULL_CAPSTONE_BEAM_PIERCE</loadEvent>
+			</event>
+		</choice>
+		<choice req="FM_MODULAR_HULL_BEAM_PIERCE" lvl="1" blue="false" hidden="true">
+			<text>Beam Phase Frequencies Capstone [installed]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		
 		<choice req="pilot" max_group="1" blue="false">
 			<text>Nevermind.</text>
 			<event>
@@ -9548,6 +9562,31 @@
 			</event>
 		</choice>
 	</event>
+	<event name="FM_MODULAR_HULL_CAPSTONE_BEAM_PIERCE">
+		<text>Install the Beam Phase Frequencies? [-10% reload speed, +1 shield pierce to beam weapons(and beam drones)]</text>
+		<choice req="pilot" max_group="1" blue="false">
+			<text>Install the Beam Phase Frequencies.</text>
+			<event>
+				<text>The Beam Phase Frequencies has been installed!</text>
+				<hiddenAug>FM_MODULAR_HULL_BEAM_PIERCE</hiddenAug>
+				<item_modify>
+					<item type="scrap" min="-100" max="-100"/>
+				</item_modify>
+				<choice blue="false">
+					<text>Continue...</text>
+					<event>
+						<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice req="pilot" max_group="2" blue="false">
+			<text>Nevermind.</text>
+			<event>
+				<loadEvent>FM_MODULAR_HULL_MAIN_LOAD</loadEvent>
+			</event>
+		</choice>
+	</event>
 
 	<!--installed module list-->
 	<event name="FM_MODULAR_HULL_MODULES_INSTALLED">
@@ -9617,6 +9656,10 @@
 		</choice>
 		<choice req="FM_MODULAR_HULL_DEFENSE_SCRAMBLE" blue="false" hidden="true">
 			<text>Defence Scrambler[-30% shield recharge to enemy, +5s enemy cloaking cd]</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+		<choice req="FM_MODULAR_HULL_BEAM_PIERCE" blue="false" hidden="true">
+			<text>Beam Phase Frequencies[-10% reload speed, +1 pierce to beam weapons/drones]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		
@@ -10657,7 +10700,7 @@
 				 <choice>
 					 <text>Fight the mercenary.</text>
 					 <event>
-						<text>As you return to your ship, the strange Angel fighter roars overhead. Entering battle stations, you recieve a brief hail from the enemy aircraft. "I am Randall Curtain, ex-angel. And you, renegade? You're finished."</text>
+						<text>As you return to your ship, the strange Angel fighter roars overhead. Entering battle stations, you recieve a brief hail from the enemy ship. "I am Randall Curtain, ex-angel. And you, renegade? You're finished."</text>
 						<ship load="SHIP_FALLEN" hostile="true"/>
 						<choice hidden="true">
 							<text>Continue...</text>

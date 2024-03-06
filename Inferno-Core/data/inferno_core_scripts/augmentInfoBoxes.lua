@@ -101,7 +101,7 @@ local augBoxes = {
     end,
   },
   sysCdAugBox:New {
-    augName = "FAST_HACKING",
+    augName = "FAST_HACK",
     baseValue = 4,
     RenderCondition = function(self,shipId)
       return Hyperspace.ships(shipId).hackingSystem ~= nil
