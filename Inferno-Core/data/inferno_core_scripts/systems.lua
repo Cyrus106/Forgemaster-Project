@@ -65,15 +65,33 @@ function(ship, sys)
   end
 end)
 
-
+--list of crew/drones that affect fire speed in a room
+mods.inferno.burnSpeedCrew ={
+  --exampleCrew = {0.5, 2} --makes fires in your ship slower and those on enemy faster
+}
+local fireFaster = mods.inferno.burnSpeedCrew
 script.on_internal_event(Defines.InternalEvents.SHIP_LOOP,
 function(shipManager)
+  local roomFireMult = {}
+  for crew in vter(shipManager.vCrewList) do
+    local fireMod = fireFaster[crew:GetSpecies()]
+    if fireMod then
+      local room = crew.iRoomId
+      if crew:GetIntruder() then
+        roomFireMult[room] = (roomFireMult[room] or 1) * fireMod[2]
+      else
+        roomFireMult[room] = (roomFireMult[room] or 1) * fireMod[1]
+      end
+    end
+  end
   for sys in vter(shipManager.vSystemList) do
     local roomNumber = sys:GetRoomId()
     local fires = shipManager:GetFireCount(roomNumber)
     if fires ~= 0 then --this line makes it so half-sabotaged systems can reset, because running this every tick apparently prevents that
         local augValue = shipManager:GetAugmentationValue("FIRE_IMMUNITY")
-        local fireImmunity = math.min(augValue, 1) / 2
+        local fireMult = (1-math.min(augValue, 1))*(roomFireMult[roomNumber] or 1)
+        --local fireImmunity = math.min(augValue, 1) / 2
+        local fireImmunity = (1-fireMult)/2
         sys:PartialDamage(-fireImmunity * fires)
     end
   end

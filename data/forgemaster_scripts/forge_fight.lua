@@ -206,24 +206,103 @@ local upSpecialSys = function(ShipManager)
   ShipManager:GetSystem(3):UpgradeSystem(2)
   ShipManager:GetSystem(4):UpgradeSystem(2)--]]
 end
-
+local multiStageFightEvents ={
+  FM_FORGEMASTER_CRUISER_ENEMY = {
+    default = function(ShipManager)
+      loadEvent("FORGEMASTER_PHASE_DEFAULT_END")
+      fixAllSys(ShipManager)
+      upAllMainSys(ShipManager)
+      upSpecialSys(ShipManager)
+      installNextCapstone(ShipManager)
+    end,
+    function(ShipManager)
+      loadEvent("FORGEMASTER_PHASE_3_END")
+      ShipManager:GetSystem(4):UpgradeSystem(math.min(6,30-ShipManager:GetSystem(4).healthState.second))
+      fixAllSys(ShipManager)
+      upAllMainSys(ShipManager)
+      upSpecialSys(ShipManager)
+      installNextCapstone(ShipManager)
+    end,
+    function(ShipManager)
+      loadEvent("FORGEMASTER_PHASE_2_END")
+      ShipManager:GetSystem(9):ClearStatus()
+      fixAllSys(ShipManager)
+      upAllMainSys(ShipManager)
+      upSpecialSys(ShipManager)
+      installNextCapstone(ShipManager)
+    end,
+    function(ShipManager)
+      loadEvent("FORGEMASTER_PHASE_1_END")
+      fixAllSys(ShipManager)
+      upAllMainSys(ShipManager)
+      upSpecialSys(ShipManager)
+      installNextCapstone(ShipManager)
+    end,
+  },
+  FM_FORGEMASTER_CRUISER_ENEMY_LAST_STRAW = {
+    default = function(ShipManager)
+      loadEvent("FORGEMASTER_PHASE_DEFAULT_END_NOMERCY")
+      fixAllSys(ShipManager)
+      upAllMainSys(ShipManager)
+      upSpecialSys(ShipManager)
+      installNextCapstone(ShipManager)
+      installNextCapstone(ShipManager)
+    end,
+    [4] = function(ShipManager)
+      loadEvent("FORGEMASTER_RETALIATE")
+      fixAllSys(ShipManager)
+      upAllMainSys(ShipManager)
+      upSpecialSys(ShipManager)
+      installNextCapstone(ShipManager)
+      installNextCapstone(ShipManager)
+    end,
+    [2] = function(ShipManager)
+      loadEvent("FORGEMASTER_RETALIATE_STRONK")
+      fixAllSys(ShipManager)
+      upAllMainSys(ShipManager)
+      upSpecialSys(ShipManager)
+      installNextCapstone(ShipManager)
+      installNextCapstone(ShipManager)
+    end,
+  }
+}
 local forgeFightEvents ={
-  function(ship)
+  default = function(ShipManager)
     loadEvent("FORGEMASTER_PHASE_3_END")
-    ship:GetSystem(4):UpgradeSystem(math.min(6,30-ship:GetSystem(4).healthState.second))
+    ShipManager:GetSystem(4):UpgradeSystem(math.min(6,30-ShipManager:GetSystem(4).healthState.second))
+    fixAllSys(ShipManager)
+    upAllMainSys(ShipManager)
+    upSpecialSys(ShipManager)
+    installNextCapstone(ShipManager)
   end,
-  function(ship)
+  function(ShipManager)
+    loadEvent("FORGEMASTER_PHASE_3_END")
+    ShipManager:GetSystem(4):UpgradeSystem(math.min(6,30-ShipManager:GetSystem(4).healthState.second))
+    fixAllSys(ShipManager)
+    upAllMainSys(ShipManager)
+    upSpecialSys(ShipManager)
+    installNextCapstone(ShipManager)
+  end,
+  function(ShipManager)
     loadEvent("FORGEMASTER_PHASE_2_END")
-    ship:GetSystem(9):ClearStatus()
+    ShipManager:GetSystem(9):ClearStatus()
+    fixAllSys(ShipManager)
+    upAllMainSys(ShipManager)
+    upSpecialSys(ShipManager)
+    installNextCapstone(ShipManager)
   end,
-  function(ship)
+  function(ShipManager)
     loadEvent("FORGEMASTER_PHASE_1_END")
+    fixAllSys(ShipManager)
+    upAllMainSys(ShipManager)
+    upSpecialSys(ShipManager)
+    installNextCapstone(ShipManager)
   end,
 }
 
 local undyingShip = function(ShipManager,Damage,Projectile)
   local revives = ShipManager:HasAugmentation("FM_REVIVE")
-  if revives>0 and (ShipManager.ship.hullIntegrity.first-Damage.iDamage<1 or Damage.bhullBuster and ShipManager.ship.hullIntegrity.first-Damage.iDamage*2<1) then
+  if revives>0 and (ShipManager.ship.hullIntegrity.first-Damage.iDamage<1 or (Damage.bhullBuster==true and ShipManager.ship.hullIntegrity.first-Damage.iDamage*2<1)) then
     if Projectile then Projectile:Kill() end
     local space = Hyperspace.Global.GetInstance():GetCApp().world.space
     for proj in vter(space.projectiles) do
@@ -235,6 +314,14 @@ local undyingShip = function(ShipManager,Damage,Projectile)
     ShipManager.ship.hullIntegrity.first=ShipManager.ship.hullIntegrity.second
     --print("fixedShip")
     ShipManager:RemoveItem("HIDDEN FM_REVIVE")
+    if multiStageFightEvents[ShipManager.myBlueprint.blueprintName] then
+      if multiStageFightEvents[ShipManager.myBlueprint.blueprintName][revives] then
+        multiStageFightEvents[ShipManager.myBlueprint.blueprintName][revives](ShipManager)
+      else
+        multiStageFightEvents[ShipManager.myBlueprint.blueprintName]["default"](ShipManager)
+      end
+    end
+    --[[
     if ShipManager.myBlueprint.blueprintName == "FM_FORGEMASTER_CRUISER_ENEMY" then
       --ShipManager.ship.hullIntegrity.second = ShipManager.ship.hullIntegrity.second*2
       if forgeFightEvents[revives] then
@@ -249,6 +336,7 @@ local undyingShip = function(ShipManager,Damage,Projectile)
       installNextCapstone(ShipManager)
       --print(ShipManager:HasEquipment("FM_HULL_CAPSTONES").."th Capstone given")
     end
+    --]]
     return true
     --print("good thing he had a totem of undying :)")
   end

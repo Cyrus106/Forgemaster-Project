@@ -417,7 +417,7 @@
 				</slot>
 			</medbay>
 			<mind power="1" room="10" start="false" img="room_mind_12" />
-			<oxygen power="2" room="5" start="true" img="room_battery_orchid" />
+			<oxygen power="2" room="5" start="true" img="room_battery_5" />
 			<pilot power="1" room="0" start="true" img="room_pilot">
 				<slot>
 					<direction>right</direction>
@@ -568,7 +568,7 @@
 				</slot>
 			</doors>
 			<drones power="2" max="8" room="9" start="false" img="room_drones_6" />
-			<engines power="1" room="15" start="true" img="room_engines_orchid_3">
+			<engines power="1" room="15" start="true" img="room_engines_3">
 				<slot>
 					<direction>right</direction>
 					<number>1</number>
@@ -954,7 +954,7 @@
 		<desc>The Mantis went all in on their teleporter. It's about to get real cramped on the enemy ship! As a downside, the shields are capped at three bubbles.</desc>
 		<systemList>
 			<battery max="2" power="1" room="13" start="true" img="room_battery_7" />
-			<cloaking power="1" room="3" start="false" img="room_cloaking_orchid_3" />
+			<cloaking power="1" room="3" start="false" img="room_cloaking_5" />
 			<clonebay power="1" room="12" start="true">
 				<slot>
 					<number>2</number>
@@ -1136,7 +1136,7 @@
 					<number>1</number>
 				</slot>
 			</engines>
-			<hacking power="1" room="14" start="false" img="room_hacking_orchid" />
+			<hacking power="1" room="14" start="false" img="room_hacking_10" />
 			<medbay power="1" room="5" start="true" img="room_medbay_7">
 				<slot>
 					<number>2</number>
@@ -1431,7 +1431,7 @@
 		<desc>These Zoltans are tired of being pushed around and being treated like living batteries. They may not be as experienced as peacekeepers, but these zoltans have a few tricks up their sleeves!</desc>
 		<systemList>
 			<battery max="2" power="1" room="7" start="false" img="room_battery_11" />
-			<cloaking power="1" room="18" start="false" img="room_cloaking_orchid_3" />
+			<cloaking power="1" room="18" start="false" img="room_cloaking_13" />
 			<clonebay max="4" power="1" room="4" start="true">
 				<slot>
 					<number>1</number>
@@ -1443,14 +1443,14 @@
 					<number>1</number>
 				</slot>
 			</doors>
-			<drones power="1" max="8" room="11" start="true" img="room_drones_orchid_3" />
+			<drones power="1" max="8" room="11" start="true" img="room_drones_15" />
 			<engines power="2" max="8" room="8" start="true" img="room_engines">
 				<slot>
 					<direction>down</direction>
 					<number>2</number>
 				</slot>
 			</engines>
-			<hacking power="1" room="2" start="false" img="room_hacking_orchid" />
+			<hacking power="1" room="2" start="false" img="room_hacking_7" />
 			<medbay max="4" power="1" room="4" start="false" img="room_medbay">
 				<slot>
 					<number>1</number>
@@ -1841,7 +1841,7 @@
 					<number>1</number>
 				</slot>
 			</doors>
-			<drones power="2" max="8" room="13" start="true" img="room_drones_orchid_3" />
+			<drones power="2" max="8" room="13" start="true" img="room_drones_18" />
 			<engines power="2" max="8" room="10" start="true" img="room_engines">
 				<slot>
 					<direction>down</direction>
@@ -1914,7 +1914,7 @@
 					<number>1</number>
 				</slot>
 			</doors>
-			<drones power="2" max="8" room="5" start="true" img="room_drones_orchid" />
+			<drones power="2" max="8" room="5" start="true" img="room_drones_5" />
 			<engines power="3" max="8" room="19" start="true" img="room_engines">
 				<slot>
 					<direction>down</direction>
@@ -6142,7 +6142,6 @@
 		<cost>130</cost>
 		<bp>3</bp>
 		<rarity>0</rarity>
-		<spin>0</spin>
 		<projectiles>
 			<projectile count="3" fake="false">ion_fire</projectile>
 		</projectiles>
@@ -6234,6 +6233,7 @@
 		<cost>190</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
+		<spin>720</spin>
 		<explosion>explosion_small_ion</explosion>
 		<boost>
 			<type>cooldown</type>
@@ -7153,8 +7153,8 @@
 		<drone_targetable>0</drone_targetable>
 		<title>Dinky Ion</title>
 		<short>Dinky I.</short>
-		<desc>They says smaller weapons deal less damage but fire faster, but this is a bit much...</desc>
-		<descriptionOverride>They says smaller weapons deal less damage but fire faster, but this is a bit much...
+		<desc>An ion weapon stripped to its bare minimum at the cost of accuracy.</desc>
+		<!--<descriptionOverride>They says smaller weapons deal less damage but fire faster, but this is a bit much...
 
 			Stats:
 			Requires no Power
@@ -7177,12 +7177,12 @@
 			Average Ion Damage: 0.5
 
 			Stun Chance: 10% (3 seconds long)
-		</tooltipOverride>
+		</tooltipOverride>-->
 
 		<tooltip>Cooldown drops the more it fires.</tooltip>
-		<radius>0</radius>
+		<radius>100</radius>
 		<damage>0</damage>
-		<ion>0</ion>
+		<ion>1</ion>
 		<shots>1</shots>
 		<sp>0</sp>
 		<speed>30</speed>
@@ -7193,9 +7193,10 @@
 		<cost>10</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
+		<spin>720</spin>
 		<explosion>explosion_small_ion</explosion>
 		<projectiles>
-			<projectile count="1" fake="false" blueprint="LIST_FM_ION_0_SHOTS">fm_ion_0_shot</projectile>
+			<projectile count="1" fake="false" >fm_ion_0_shot</projectile><!--blueprint="LIST_FM_ION_0_SHOTS"-->
 		</projectiles>
 		<launchSounds>
 			<sound>ionShoot1</sound>
@@ -7237,6 +7238,7 @@
 		<cost>130</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
+		<spin>720</spin>
 		<image>ion_barrage</image>
 		<explosion>explosion_small_ion</explosion>
 		<launchSounds>
@@ -11290,12 +11292,19 @@
 	        <race>human_technician_drone</race>
 			<name>CURA Drone</name>
 	        <number>1</number>
-
+			<lifetime>25</lifetime>
 	        <noSlot>true</noSlot>
 	        <statBoosts>
 				<statBoost name="noClone">
 					<boostType>SET</boostType>
 					<value>true</value>
+					<shipTarget>ALL</shipTarget>
+					<crewTarget>ALL</crewTarget>
+					<priority>999999</priority>
+				</statBoost>
+				<statBoost name="canTeleport">
+					<boostType>SET</boostType>
+					<value>false</value>
 					<shipTarget>ALL</shipTarget>
 					<crewTarget>ALL</crewTarget>
 					<priority>999999</priority>
@@ -13585,25 +13594,13 @@
 		<breachChance>4</breachChance>
 		<cooldown>15</cooldown>
 		<statBoosts>
-			<statBoost name="suffocationModifier"> <!--Nice try you filty Welders. SUFFOCATE-->
-
-				<boostType>SET</boostType>
-				<amount>1.0</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
-				<priority>999999</priority>
-				<whiteList>
-					<lanius_welder/>
-				</whiteList>
-				<duration>15</duration>
-			</statBoost>
-
 			<statBoost name="suffocationModifier"> <!--Everybody suffocates more-->
 				<boostType>MULT</boostType>
-				<amount>1.5</amount>
+				<amount>2</amount>
 				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
+				<crewTarget>ENEMIES</crewTarget>
 				<priority>999999</priority>
+
 				<duration>15</duration>
 			</statBoost>
 
@@ -13611,17 +13608,18 @@
 				<boostType>SET</boostType>
 				<value>true</value>
 				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
+				<crewTarget>ENEMIES</crewTarget>
 				<priority>999999</priority>
 				<duration>15</duration>
 			</statBoost>
 
 			<statBoost name="oxygenChangeSpeed"> <!--Remove oxygen from the room like a Lanius-->
-				<boostType>SET</boostType>
-				<amount>-1.5</amount>
+				<boostType>FLAT</boostType>
+				<amount>-0.9</amount>
 				<shipTarget>ALL</shipTarget>
-				<crewTarget>ALL</crewTarget>
+				<crewTarget>ENEMIES</crewTarget>
 				<priority>999999</priority>
+
 				<duration>15</duration>
 			</statBoost>
 
@@ -13941,7 +13939,6 @@
 		<cost>130</cost>
 		<bp>3</bp>
 		<rarity>0</rarity>
-		<spin>0</spin>
 		<projectiles>
 			<projectile count="3" fake="false">ion_fire</projectile>
 		</projectiles>
@@ -14034,6 +14031,7 @@
 		<bp>2</bp>
 		<rarity>0</rarity>
 		<explosion>explosion_small_ion</explosion>
+		<spin>720</spin>
 		<boost>
 			<type>cooldown</type>
 			<amount>2.0</amount>
@@ -15697,6 +15695,7 @@
 		<cost>190</cost>
 		<bp>2</bp>
 		<rarity>0</rarity>
+		<spin>720</spin>
 		<explosion>explosion_small_ion</explosion>
 		<boost>
 			<type>cooldown</type>

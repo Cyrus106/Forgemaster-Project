@@ -18,13 +18,15 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP,
 function(ShipManager)
   for room in vter(ShipManager.ship.vRoomList) do
     local effectVector = room.table[UNIQUE_KEY]
-    if room.extend.sysDamageResistChance ~= effectVector.lastVal then --If the resist has been changed by another method, clear effects to be safe.
-      effectVector:Clear() 
-    else
-      local modifier = effectVector:Update()
-      room.extend.sysDamageResistChance = room.extend.sysDamageResistChance - modifier
+    if effectVector then
+      if room.extend.sysDamageResistChance ~= effectVector.lastVal then --If the resist has been changed by another method, clear effects to be safe.
+        effectVector:Clear() 
+      else
+        local modifier = effectVector:Update()
+        room.extend.sysDamageResistChance = room.extend.sysDamageResistChance - modifier
+      end
+      effectVector.lastVal = room.extend.sysDamageResistChance
     end
-    effectVector.lastVal = room.extend.sysDamageResistChance
   end
 end)
 

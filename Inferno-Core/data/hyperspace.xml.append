@@ -1,8 +1,12 @@
 <FTL><!--Inferno-Core-->
 	<events>
-		<!--<metaVariable name="fmcore_augbox_active_default" op="set" val="1"/>-->
+		<metaVariable name="fmcore_augbox_invert" op="set" val="0"/>
 		<variable name="fmcore_augbox_active" op="set" val="1"/>
 		<variable name="fmcore_buttons_visible" op="set" val="1"/>
+		<req name="FMCORE_AUGBOX_VISIBLE" lvl="1" max_lvl="1" type="sum">
+			<name>fmcore_augbox_active</name>
+			<name>fmcore_augbox_invert</name>
+		</req>
 
 		<variable name="fmcore_called_cura" op="set" val="0"/>
 		<variable name="fmcore_used_hs_aug" op="set" val="0"/>

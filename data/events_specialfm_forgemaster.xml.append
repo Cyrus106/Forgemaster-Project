@@ -28,10 +28,10 @@
 	</ship>
 
 	<ship name="SHIP_FM_FORGEMASTER_LAST" auto_blueprint="FM_FORGEMASTER_CRUISER_ENEMY_LAST_STRAW">
-		<triggeredEvent name="FORGEMASTER_IS_HURT" event="FORGEMASTER_RETALIATE" enemyHull="15" enemyCrew="1" thisFight="true"/>
-		<triggeredEvent name="FORGEMASTER_IS_HURT_BAD" event="FORGEMASTER_RETALIATE_STRONK" enemyHull="5" enemyCrew="1" thisFight="true"/>
+		<!--<triggeredEvent name="FORGEMASTER_IS_HURT" event="FORGEMASTER_RETALIATE" enemyHull="15" enemyCrew="1" thisFight="true"/>
+		<triggeredEvent name="FORGEMASTER_IS_HURT_BAD" event="FORGEMASTER_RETALIATE_STRONK" enemyHull="5" enemyCrew="1" thisFight="true"/>-->
 		<destroyed load="FORGEMASTER_DESTRUCTION"/>
-		<deadCrew load="FORGEMASTER_DESTRUCTION"/>
+		<deadCrew load="FORGEMASTER_DESTRUCTION_CREW"/>
 	</ship>
 
 	<ship name="SHIP_FM_MTBOSS_ORCHID_B_EXTREME" auto_blueprint="FM_MT_BOSS_ORCHID_EXTREME">
@@ -259,6 +259,7 @@
 
 
 	<event name="FORGEMASTER_RETALIATE">
+		<superShields player="false"/>
 		<text>Alastair's ship glows brightly for a moment, and fires two unusually colored Drone pods into your ship. This isn't good.</text>
 
 		<boarders min="2" max="2" class="fm_ancalagon_battle"/>
@@ -266,12 +267,54 @@
 	</event>
 
 	<event name="FORGEMASTER_RETALIATE_STRONK">
+		<superShields player="false"/>
 		<text>Alastair's ship glows brightly again, launching two familiarly colored Drone pods into your hull. The moment they appear on your scanners, you, and likely the rest of your crew, suddenly feel terrible. Finish this quickly, before it gets out of hand.</text>
 
 		<boarders min="2" max="2" class="fm_ancalagon_monitor"/>
 
 	</event>
+	<event name="FORGEMASTER_PHASE_DEFAULT_END">
+		<superShields player="false"/>
+		<text>The fight continues...</text>
+		<!--<text>Moments before destruction all plated on Alastair's ship began mending the hull, rapidly restoring it back to peak condition! A sudden hail flashes on your screen, and Alastair appears. "A warrior's spirit in you lad! Let's see if you can keep this up, aye?" Alastair puts his hand on the ship's terminal, a light on it flashes with a brilliant light, and you notice his ship shift slightly as he powers up his systems further.</text>-->
+		<choice>
+			<text>Continue...</text>
+			<event/>
+		</choice>
+		<choice>
+			<text>Stand down.(this is a placeholder option, it only gives the lowest reward.)</text>
+			<event>
+				<ship hostile="false"/>
+				<text>Alastair powers down his weapons before hailing you again. "Not bad, lad, not bad at all! You certainly know how to handle that ship of yours. I'm sure I have something for you, and let me fix up your hull too! You fought well." He patches up your hull and teleports over a few crates of resources...</text>
+				<autoReward level="LOW">scrap_only</autoReward>
+				<damage amount="-20"/>
+				<item_modify>
+					<item type="fuel" min="1" max="2"/>
+					<item type="missiles" min="1" max="3"/>
+					<item type="drones" min="1" max="2"/>
+				</item_modify>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event load="FM_SPARRING_REWARD"/>
+				</choice>
+			</event>
+		</choice>
+	</event>
+	<event name="FORGEMASTER_PHASE_DEFAULT_END_NOMERCY">
+		<superShields player="false"/>
+		<text>The fight continues...</text>
+		<!--<text>Moments before destruction all plated on Alastair's ship began mending the hull, rapidly restoring it back to peak condition! A sudden hail flashes on your screen, and Alastair appears. "A warrior's spirit in you lad! Let's see if you can keep this up, aye?" Alastair puts his hand on the ship's terminal, a light on it flashes with a brilliant light, and you notice his ship shift slightly as he powers up his systems further.</text>-->
+		<choice>
+			<text>Continue...</text>
+			<event/>
+		</choice>
+		<choice hidden="true">
+			<text>It looks like mercy is off the table...</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+	</event>
 	<event name="FORGEMASTER_PHASE_1_END">
+		<superShields player="false"/>
 		<text>Moments before destruction all plated on Alastair's ship began mending the hull, rapidly restoring it back to peak condition! A sudden hail flashes on your screen, and Alastair appears. "A warrior's spirit in you lad! Let's see if you can keep this up, aye?" Alastair puts his hand on the ship's terminal, a light on it flashes with a brilliant light, and you notice his ship shift slightly as he powers up his systems further.</text>
 		<choice>
 			<text>Continue...</text>
@@ -298,7 +341,7 @@
 	</event>
 	<event name="FORGEMASTER_PHASE_2_END">
 		<superShields player="false"/>
-		<text>You expect this would be it, but instead you detect a surge of nanites as a Repair-bot dispersal is activated, swiftly undoign your damage! "A fine effort, lad, but you'll have to do more than that! My ship is well equipped for repairs; so many pirates thinking they can steal my cargo made that almost required to go through their sectors!" Scans indicate further increase in power.</text>
+		<text>You expect this would be it, but instead you detect a surge of nanites as a Repair-bot dispersal is activated, swiftly undoing your damage! "A fine effort, lad, but you'll have to do more than that! My ship is well equipped for repairs; so many pirates thinking they can steal my cargo made that almost required to go through their sectors!" Scans indicate further increase in power.</text>
 		<choice>
 			<text>Continue...</text>
 			<event/>
@@ -553,11 +596,13 @@
 	
 	<event name="FORGEMASTER">
 		<preventQuest/>
-		<nonNebulaBeacon>true</nonNebulaBeacon>
-		<nebulaBeacon>false</nebulaBeacon>
-		<currentSector>true</currentSector>
-		<sectorEight>false</sectorEight>
-		<lastStand>false</lastStand>
+		<quest>
+			<nonNebulaBeacon>true</nonNebulaBeacon>
+			<nebulaBeacon>false</nebulaBeacon>
+			<currentSector>true</currentSector>
+			<sectorEight>false</sectorEight>
+			<lastStand>false</lastStand>
+		</quest>
 		<runFromFleet closest="true"/>
 
 		<beaconType id="map_icon_forgemaster" global="true"> <!--  SPAWNS HIS NODE ON MAP -->
@@ -835,11 +880,13 @@
 
 	<event name="FORGEMASTER_PHONE_CALL"> <!--  Initial Beacon -->
 		<preventQuest/>
-		<nonNebulaBeacon>true</nonNebulaBeacon>
-		<nebulaBeacon>false</nebulaBeacon>
-		<currentSector>true</currentSector>
-		<sectorEight>false</sectorEight>
-		<lastStand>false</lastStand>
+		<quest>
+			<nonNebulaBeacon>true</nonNebulaBeacon>
+			<nebulaBeacon>false</nebulaBeacon>
+			<currentSector>true</currentSector>
+			<!--<sectorEight>false</sectorEight>-->
+			<!--<lastStand>false</lastStand>-->
+		</quest>
 		<runFromFleet closest="true"/>
 		<preventBossFleet forever="true"/>
 		<beaconType id="map_icon_forgemaster_2" global="true">
@@ -850,7 +897,7 @@
 		</beaconType>
 		<loadEventList seeded="false" first="true" default="FORGEMASTER_PHONE_EVENT_GIFT">
 
-			<event name="NEUTRAL_EVENTS" req="MARKER_KILLED_FORGEMASTER_BEACON"/>
+			<event name="FILLER_LIST" req="MARKER_KILLED_FORGEMASTER_BEACON"/>
 			<event name="FORGEMASTER_DISAPPOINT" req="FM_LAST_STRAW"/>
 			
 		</loadEventList>
@@ -1765,7 +1812,7 @@
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_ETERNITY"/>
 		</choice>
 
-		<choice req="FM_BEAM_ETERNITY_LIST" lvl="0" blue="false" hidden="true">
+		<choice req="FM_BEAM_ETERNITY_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
 			<text>You must have a 'Pike' beam and 'Scythe' beam to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -1775,7 +1822,7 @@
 			<event load="NPC_STORAGE_CHECK_CREATE_BEAM_PRISM_SCATTER"/>
 		</choice>
 
-		<choice req="BEAM_PRISM_SCATTER_LIST" lvl="0" blue="false" hidden="true">
+		<choice req="BEAM_PRISM_SCATTER_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
 			<text>[CNC + AA] You must have a Prism Cannon and Prismatic Ion Barrage to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -1934,7 +1981,7 @@
 	<event load="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_RAILBLENDER"/>
 	</choice>
 
-	<choice req="FM_ENERGY_RAILBLENDER_FORGE_LIST" lvl="0" blue="false" hidden="true">
+	<choice req="FM_ENERGY_RAILBLENDER_FORGE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
 	<text>You must have a Charge Flak and Charge Energy to forge this weapon.</text>
 	<event load="OPTION_INVALID"/>
 	</choice>
@@ -2081,7 +2128,7 @@
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_BASILISK"/>
 		</choice>
 
-		<choice req="FM_BEAM_BASILISK_FORGE_LIST" lvl="0" blue="false" hidden="true" max_group="1">
+		<choice req="FM_BEAM_BASILISK_FORGE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true" max_group="1">
 			<text>You must have a truly ravenous creature and a high-quality salad to sate its appetite to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -2106,7 +2153,7 @@
 			<event load="NPC_STORAGE_CHECK_UPGRADE_LISTFULL_LOAD"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_BRONZE_LIST_UPGRADE" lvl="0" blue="false" hidden="true" max_group="1">
+		<choice req="FM_SHOTGUN_BRONZE_LIST_UPGRADE" lvl="0" max_lvl="0" blue="false" hidden="true" max_group="1">
 			<text>You require a Bronze Flak-Line weapon Tier 1--->Tier 9 to proceed</text>
 			<event load="OPTION_INVALID"/>
 		</choice>

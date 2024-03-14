@@ -336,7 +336,9 @@ do
         if ShipManager.table[UNIQUE_KEY] then
             for room in vter(ShipManager.ship.vRoomList) do
                 local acidTable = room.table[UNIQUE_KEY]
-                acidTable.timer = math.max(acidTable.timer - Hyperspace.FPS.SpeedFactor / 16, 0)
+                if acidTable then
+                    acidTable.timer = math.max(acidTable.timer - Hyperspace.FPS.SpeedFactor / 16, 0)
+                end
             end
         end
     end)
@@ -405,7 +407,7 @@ do
     script.on_render_event(Defines.RenderEvents.SHIP_FLOOR, function(Ship, experimental) end,
     function(Ship, experimental)
         for room in vter(Ship.vRoomList) do
-            if not room.bBlackedOut and room.table[UNIQUE_KEY].timer > 0 then
+            if not room.bBlackedOut and room.table[UNIQUE_KEY] and room.table[UNIQUE_KEY].timer > 0 then
                 AcidEffect:Render(room)
             end
         end
@@ -423,15 +425,37 @@ do
             for room in vter(ShipManager.ship.vRoomList) do
                 local x = room.rect.x + room.rect.w - 6 --- 5
                 local y = room.rect.y + 5 --+ 5
-                local timer = room.table[UNIQUE_KEY].timer
-                if timer > 0 then
-                    Graphics.CSurface.GL_SetColor(AcidEffect.borderColor) 
-                    Graphics.freetype.easy_printRightAlign(51, x, y, string.format("%.0f", timer))
+                if room.table[UNIQUE_KEY] then
+                    local timer = room.table[UNIQUE_KEY].timer
+                    if timer > 0 then
+                        Graphics.CSurface.GL_SetColor(AcidEffect.borderColor) 
+                        Graphics.freetype.easy_printRightAlign(51, x, y, string.format("%.0f", timer))
+                    end
                 end
             end
         end
     end)
 end
-function SetAcidWeapon(weapon,time)
+function mods.inferno.setAcidWeapon(weapon,time)
     AcidWeapons[weapon] = time
 end
+
+--[[--WIP
+script.on_internal_event(Defines.InternalEvents.SHIELD_COLLISION_PRE, 
+function(ShipManager, Projectile, Damage, CollisionResponse)
+    --local resChance = ShipManager:GetAugmentationValue("FMCORE_ASTEROID_RESIST_SHIELD")
+    --local rng = math.random()
+    local shieldPower = ShipManager:GetShieldPower()
+    if Projectile:GetType() == 5 then
+        local bubbles=shieldPower.first
+        if bubbles>0 then
+            bubbles=math.max(0,bubbles-Damage.iShieldPiercing)
+            Damage.iDamage=Damage.iDamage-bubbles
+        end
+        return Defines.Chain.PREEMPT
+    end
+    if rng < resChance and Projectile:GetType() == 2 then
+        return Defines.Chain.PREEMPT
+    end
+    return Defines.Chain.CONTINUE
+end)--]]

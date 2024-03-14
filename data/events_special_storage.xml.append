@@ -235,73 +235,79 @@
 
 		<text>Reviewing gathered Forgemaster Lore...(Lets you re-experience Forgemaster Lore you have encountered.)</text>
 		<checkCargo/>
-		<choice req="FM_LORE_ABSOLUTION" lvl="1" blue="false" hidden="true" max_group="1">
+		<choice req="FM_LORE_ABSOLUTION" lvl="1" blue="false" hidden="true">
 			<text>Review Absolution Laser lore.</text>
 			<event>
 				<loadEvent>FM_LORE_ABSOLUTION_READ</loadEvent>
 			</event>
 		</choice>
 
-		<choice req="FM_LORE_ISHIMURA" lvl="1" blue="false" hidden="true" max_group="2">
+		<choice req="FM_LORE_ISHIMURA" lvl="1" blue="false" hidden="true">
 			<text>Review Ishimura Beam lore.</text>
 			<event>
 				<loadEvent>FM_LORE_ISHIMURA_READ</loadEvent>
 			</event>
 		</choice>
 
-		<choice req="FM_LORE_EARSPOON" lvl="1" blue="false" hidden="true" max_group="3">
+		<choice req="FM_LORE_EARSPOON" lvl="1" blue="false" hidden="true">
 			<text>Review Earspoon Beam lore.</text>
 			<event>
 				<loadEvent>FM_LORE_EARSPOON_READ</loadEvent>
 			</event>
 		</choice>
 
-		<choice req="FM_LORE_CERBERUS" lvl="1" blue="false" hidden="true" max_group="4">
+		<choice req="FM_LORE_CERBERUS" lvl="1" blue="false" hidden="true">
 			<text>Review Cerberus Ion lore.</text>
 			<event>
 				<loadEvent>FM_LORE_CERBERUS_READ</loadEvent>
 			</event>
 		</choice>
 
-		<choice req="FM_LORE_BRONZE" lvl="1" blue="false" hidden="true" max_group="5">
+		<choice req="FM_LORE_BRONZE" lvl="1" blue="false" hidden="true">
 			<text>Review Bronze Flak lore.</text>
 			<event>
 				<loadEvent>FM_LORE_BRONZE_READ</loadEvent>
 			</event>
 		</choice>
 
-		<choice req="FM_LORE_PROJECT7" lvl="1" blue="false" hidden="true" max_group="6">
+		<choice req="FM_LORE_PROJECT7" lvl="1" blue="false" hidden="true">
 			<text>Review Project #7: Burning End lore.</text>
 			<event>
 				<loadEvent>FM_LORE_PROJECT7_READ</loadEvent>
 			</event>
 		</choice>
 
-		<choice req="FM_LORE_PROJECT22" lvl="1" blue="false" hidden="true" max_group="7">
+		<choice req="FM_LORE_PROJECT22" lvl="1" blue="false" hidden="true">
 			<text>Review Project #22: Unnamed lore.</text>
 			<event>
 				<loadEvent>FM_LORE_PROJECT22_READ</loadEvent>
 			</event>
 		</choice>
 
-		<choice req="FM_LORE_PHOTON" lvl="1" blue="false" hidden="true" max_group="8">
+		<choice req="FM_LORE_PHOTON" lvl="1" blue="false" hidden="true">
 			<text>Review Photon Laser I Lore.</text>
 			<event>
 				<loadEvent>FM_LORE_PHOTON_READ</loadEvent>
 			</event>
 		</choice>
 
-		<choice req="FM_LORE_PHOTON2" lvl="1" blue="false" hidden="true" max_group="9">
+		<choice req="FM_LORE_PHOTON2" lvl="1" blue="false" hidden="true">
 			<text>Review Photon Laser II Lore.</text>
 			<event>
 				<loadEvent>FM_LORE_PHOTON2_READ</loadEvent>
 			</event>
 		</choice>
 
-		<choice req="FM_LORE_MENAULION" lvl="1" blue="false" hidden="true" max_group="10">
+		<choice req="FM_LORE_MENAULION" lvl="1" blue="false" hidden="true">
 			<text>Review Menaulion Beam Lore.</text>
 			<event>
 				<loadEvent>FM_LORE_MENAULION_READ</loadEvent>
+			</event>
+		</choice>
+		<choice req="FM_LORE_CHAINGUN_FIRE" lvl="1" blue="false" hidden="true">
+			<text>Review 'Hellflash' Gatling Gun Lore.</text>
+			<event>
+				<loadEvent>FM_LORE_CHAINGUN_FIRE_READ</loadEvent>
 			</event>
 		</choice>
 
@@ -664,6 +670,43 @@
 									<text>Continue...</text>
 									<event>
 										<text id="text_CREATE_FM_BEAM_GUILLOTINE_CHAIN_4"/>
+										<choice hidden="true">
+											<text>Continue...</text>
+											<event load="FM_STORAGE_CHECK_JOURNAL_LOAD"/>
+										</choice>
+									</event>
+								</choice>
+							</event>
+						</choice>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice hidden="false">
+			<text>Nevermind.</text>
+			<event load="FM_STORAGE_CHECK_JOURNAL_LOAD"/>
+		</choice>
+	</event>
+
+	<event name="FM_LORE_CHAINGUN_FIRE_READ">
+		<checkCargo/>
+		<text>Currently viewing the 'Hellflash' Gatling Gun.</text>
+		<choice hidden="true">
+			<text>Read the lore entry.</text>
+			<event>
+				<text id="text_CREATE_FM_CHAINGUN_FIRE_1_1"/>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event>
+						<text id="text_CREATE_FM_CHAINGUN_FIRE_1_2"/>
+						<choice hidden="true">
+							<text>Continue...</text>
+							<event>
+								<text id="text_CREATE_FM_CHAINGUN_FIRE_1_3"/>
+								<choice hidden="true">
+									<text>Continue...</text>
+									<event>
+										<text id="text_CREATE_FM_CHAINGUN_FIRE_1_4"/>
 										<choice hidden="true">
 											<text>Continue...</text>
 											<event load="FM_STORAGE_CHECK_JOURNAL_LOAD"/>
@@ -1109,7 +1152,7 @@
 			<event load="STORAGE_CHECK_CREATE_FM_BEAM_ETERNITY"/>
 		</choice>
 
-		<choice req="FM_BEAM_ETERNITY_LIST" lvl="0" blue="false" hidden="true">
+		<choice req="FM_BEAM_ETERNITY_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
 			<text>You must have a 'Pike' beam and 'Scythe' beam to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -1119,7 +1162,7 @@
 			<event load="STORAGE_CHECK_CREATE_BEAM_PRISM_SCATTER"/>
 		</choice>
 
-		<choice req="BEAM_PRISM_SCATTER_LIST" lvl="0" blue="false" hidden="true">
+		<choice req="BEAM_PRISM_SCATTER_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
 			<text>[CNC + AA] You must have a Prism Cannon and Prismatic Ion Barrage to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -1285,7 +1328,7 @@
 			<event load="STORAGE_CHECK_CREATE_FM_ENERGY_RAILBLENDER"/>
 		</choice>
 
-		<choice req="FM_ENERGY_RAILBLENDER_FORGE_LIST" lvl="0" blue="false" hidden="true">
+		<choice req="FM_ENERGY_RAILBLENDER_FORGE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
 			<text>You must have a Charge Flak and Charge Energy to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -1432,7 +1475,7 @@
 			<event load="STORAGE_CHECK_CREATE_FM_BEAM_BASILISK"/>
 		</choice>
 
-		<choice req="FM_BEAM_BASILISK_FORGE_LIST" lvl="0" blue="false" hidden="true" max_group="1">
+		<choice req="FM_BEAM_BASILISK_FORGE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true" max_group="1">
 			<text>You must have a truly ravenous creature and a high-quality salad to sate its appetite to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -1460,7 +1503,7 @@
 			<event load="STORAGE_CHECK_UPGRADE_LISTFULL"/>
 		</choice>
 
-		<choice req="FM_SHOTGUN_BRONZE_LIST_UPGRADE" lvl="0" blue="false" hidden="true" max_group="1">
+		<choice req="FM_SHOTGUN_BRONZE_LIST_UPGRADE" lvl="0" max_lvl="0" blue="false" hidden="true" max_group="1">
 			<text>You require a Bronze Flak-Line weapon Tier 1--->Tier 9 to proceed</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -6495,7 +6538,11 @@
 			[NOTE: All rewards from these bosses DO NOT stack.]
 		</text>
 
-
+		
+		<choice>
+			<text>Nevermind, do something else.</text>
+			<event load="STORAGE_CHECK"/>
+		</choice>
 		<choice req="ach_fm_boss_crystal" lvl="1" max_group="1" hidden="true" blue="false">
 			<text>You already defeated the Twisted Crystal.</text>
 			<event load="OPTION_INVALID"/>
@@ -6574,7 +6621,7 @@
 			</event>
 		</choice>
 		<choice req="FM_BOSS_LIST_15" lvl="1" max_group="3" hidden="false" blue="false">
-			<text>Twisted Orchid B - Drops some friends.</text>
+			<text>Twisted Orchid C - Drops some friends.</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
 				<item_modify>
@@ -6839,6 +6886,187 @@
 			</event>
 		</choice>
 
+		<choice req="FM_BOSS_2_1" lvl="1"  blue="false">
+			<text>Twisted Free Mantis B - Drops a refreshment.</text>
+			<event>
+				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+				<item_modify>
+					<item type="fuel" min="-2" max="-2"/>
+				</item_modify>
+				<quest event="FM_BOSS_FREE1_SUICIDE"/>
+			</event>
+		</choice>
+		<choice req="FM_BOSS_2_2" lvl="1" blue="false">
+			<text>Twisted Separatist B - Drops Magatama</text>
+			<event>
+				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+				<item_modify>
+					<item type="fuel" min="-2" max="-2"/>
+				</item_modify>
+				<quest event="FM_BOSS_SEPA1_SUICIDE"/>
+			</event>
+		</choice>
+		<choice req="FM_BOSS_2_3" lvl="1" blue="false">
+			<text>Twisted Mantis B - Drops Pheromone Accelerator</text>
+			<event>
+				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+				<item_modify>
+					<item type="fuel" min="-2" max="-2"/>
+				</item_modify>
+				<quest event="FM_BOSS_MANTIS1_SUICIDE"/>
+			</event>
+		</choice>
+		<choice req="FM_BOSS_3_1" lvl="1" blue="false">
+			<text>Twisted Monk B - Drops Aether Ascension Shields</text>
+			<event>
+				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+				<item_modify>
+					<item type="fuel" min="-2" max="-2"/>
+				</item_modify>
+				<quest event="FM_BOSS_MONK1_SUICIDE"/>
+			</event>
+		</choice>
+		<choice req="FM_BOSS_3_2" lvl="1" blue="false">
+			<text>Twisted Rock C - Drops the Rockmen Relic of Freedom</text>
+			<event>
+				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+				<item_modify>
+					<item type="fuel" min="-2" max="-2"/>
+				</item_modify>
+				<quest event="FM_BOSS_R1_SUICIDE"/>
+			</event>
+		</choice>
+		<choice req="FM_BOSS_3_3" lvl="1" blue="false">
+			<text>Twisted Lost Sun B - Drops Reality-Bent Reloader.</text>
+			<event>
+				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+				<item_modify>
+					<item type="fuel" min="-2" max="-2"/>
+				</item_modify>
+				<quest event="FM_BOSS_LOSTSUN1_SUICIDE"/>
+			</event>
+		</choice>
+		<choice req="FM_BOSS_4_1" lvl="1" blue="false">
+			<text>Twisted Slug C - Drops Malboro.</text>
+			<event>
+				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+				<item_modify>
+					<item type="fuel" min="-2" max="-2"/>
+				</item_modify>
+				<quest event="FM_BOSS_SLUG1_SUICIDE"/>
+			</event>
+		</choice>
+		<choice req="FM_BOSS_4_2" lvl="1" blue="false">
+			<text>Twisted Stealth B - Drops ?13Xzzzzzzz$</text>
+			<event>
+				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+				<item_modify>
+					<item type="fuel" min="-2" max="-2"/>
+				</item_modify>
+				<quest event="FM_BOSS_STEALTH1_SUICIDE"/>
+			</event>
+		</choice>
+		<choice req="FM_BOSS_4_3" lvl="1" blue="false">
+			<text>Twisted Zoltan C - Drops Limiter Removal</text>
+			<event>
+				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+				<item_modify>
+					<item type="fuel" min="-2" max="-2"/>
+				</item_modify>
+				<quest event="FM_BOSS_ZOLTAN1_SUICIDE"/>
+			</event>
+		</choice>
+		<choice req="FM_BOSS_5_1" lvl="1" blue="false">
+			<text>Twisted Lanius B - Drops a Heart.</text>
+			<event>
+				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+				<item_modify>
+					<item type="fuel" min="-2" max="-2"/>
+				</item_modify>
+				<quest event="FM_BOSS_LANIUS1_SUICIDE"/>
+			</event>
+		</choice>
+		<choice req="FM_BOSS_5_2" lvl="1" blue="false">
+			<text>Twisted Shell C - Drops an attache case.</text>
+			<event>
+				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+				<item_modify>
+					<item type="fuel" min="-2" max="-2"/>
+				</item_modify>
+				<quest event="FM_BOSS_SHELL1_SUICIDE"/>
+			</event>
+		</choice>
+		<choice req="FM_BOSS_5_3" lvl="1" blue="false">
+			<text>Twisted Engineer B - Drops Drone Booster II</text>
+			<event>
+				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+				<item_modify>
+					<item type="fuel" min="-2" max="-2"/>
+				</item_modify>
+				<quest event="FM_BOSS_ENGINEER1_SUICIDE"/>
+			</event>
+		</choice>
+		<choice req="FM_BOSS_6_1" lvl="1" blue="false">
+			<text>Twisted Kestrel B - A....fridge?</text>
+			<event>
+				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+				<item_modify>
+					<item type="fuel" min="-2" max="-2"/>
+				</item_modify>
+				<quest event="FM_BOSS_KES1_SUICIDE"/>
+			</event>
+		</choice>
+		<choice req="FM_BOSS_6_2" lvl="1" blue="false">
+			<text>Twisted Federation B - Drops an unique replicator.</text>
+			<event>
+				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+				<item_modify>
+					<item type="fuel" min="-2" max="-2"/>
+				</item_modify>
+				<quest event="FM_BOSS_FED1_SUICIDE"/>
+			</event>
+		</choice>
+		<choice req="FM_BOSS_6_3" lvl="1" blue="false">
+			<text>Twisted Orchid C - Drops some friends.</text>
+			<event>
+				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+				<item_modify>
+					<item type="fuel" min="-2" max="-2"/>
+				</item_modify>
+				<quest event="FM_BOSS_ORCHID1_SUICIDE"/>
+			</event>
+		</choice>
+		<choice req="FM_BOSS_7_1" lvl="1" blue="false">
+			<text>Twisted Crystal C - Drops Twisted Crystal Armor</text>
+			<event>
+				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+				<item_modify>
+					<item type="fuel" min="-2" max="-2"/>
+				</item_modify>
+				<quest event="FM_BOSS_CRYSTAL1_SUICIDE"/>
+			</event>
+		</choice>
+		<choice req="FM_BOSS_7_2" lvl="1" blue="false">
+			<text>Twisted Tuco B - Drops a rare collectable.</text>
+			<event>
+				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+				<item_modify>
+					<item type="fuel" min="-2" max="-2"/>
+				</item_modify>
+				<quest event="FM_BOSS_TUCO1_SUICIDE"/>
+			</event>
+		</choice>
+		<choice req="FM_BOSS_7_3" lvl="1" blue="false">
+			<text>Twisted Leech C - Drops a strange emitter</text>
+			<event>
+				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+				<item_modify>
+					<item type="fuel" min="-2" max="-2"/>
+				</item_modify>
+				<quest event="FM_BOSS_LEECH1_SUICIDE"/>
+			</event>
+		</choice>
+
 
 		<choice req="pilot" lvl="1" max_group="1" hidden="false" blue="false">
 			<text>Twisted Clansman B - Drops Mind Clouder</text>
@@ -6870,10 +7098,7 @@
 				<quest event="FM_BOSS_ENGI1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice>
-			<text>Nevermind, do something else.</text>
-			<event load="STORAGE_CHECK"/>
-		</choice>
+		
 
 	</event>
 
@@ -9127,39 +9352,6 @@
 
 
 
-</FTL>
-
-<FTL><!--twisted Stealth stuff-->
-	<mod:findName type="event" name="STORAGE_CHECK_SYSTEM_CLOAK">
-		<mod-append:choice req="TWISTED_CLOAK_UPGRADE_CHECK">
-			<text>Level 6 cloaking [Cost: 170~, 5{, 1|]</text>
-			<event load="STORAGE_CHECK_SYSTEM_CLOAK_LEVEL6" />
-		</mod-append:choice>
-	</mod:findName>
-	<event name="STORAGE_CHECK_SYSTEM_CLOAK_LEVEL6">
-		<text>You are about to upgrade the cloaking to level 6.
-		[Effects: 30 second cloak, is compatible with Shadow Weaponry]</text>
-		<choice req="UPG_CLOAK_FIRE" lvl="0" max_group="0" blue="false" hidden="true">
-			<text>Perform the upgrade. [Cost: 170~, 5{, 1|]</text>
-			<event>
-				<text>You install the upgrade.</text>
-				<upgrade amount="1" system="cloaking" />
-				<item_modify>
-					<item type="fuel" min="-5" max="-5" />
-					<item type="drones" min="-1" max="-1" />
-					<item type="scrap" min="-170" max="-170" />
-				</item_modify>
-				<choice>
-					<text>Continue...</text>
-					<event load="STORAGE_CHECK_SYSTEM_LOAD" />
-				</choice>
-			</event>
-		</choice>
-		<choice req="pilot" lvl="1" max_group="1" blue="false" hidden="true">
-			<text>Nevermind.</text>
-			<event load="STORAGE_CHECK_SYSTEM_LOAD" />
-		</choice>
-	</event>
 </FTL>
 
 <FTL>

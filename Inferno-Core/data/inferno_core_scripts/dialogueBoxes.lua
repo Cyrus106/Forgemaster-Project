@@ -7,7 +7,8 @@ tutorialBox = dialogueBox:New {
   w = 400, --width of the dialogue box, including border (in pixels)
   h = 100, --height of the dialogue box, including border (in pixels)
   textSpeed = 30,
-  text = {"Hello, welcome to the tutorial test, to the left you can see the broken tutorial text box, just ignore it please, we will remove it soon, then there will be only me. :)"} --An array of messages to display
+  text = {"Hello, welcome to the tutorial test, to the left you can see the broken tutorial text box, just ignore it please, we will remove it soon, then there will be only me. :)"}, --An array of messages to display
+  active=false
 }
 
 

@@ -10,6 +10,7 @@
 		<mod-append:script>data/forgemaster_scripts/weapon_impact.lua</mod-append:script>
 		<mod-append:script>data/forgemaster_scripts/abilities.lua</mod-append:script>
 		<mod-append:script>data/forgemaster_scripts/crew.lua</mod-append:script>
+		<mod-append:script>data/forgemaster_scripts/names.lua</mod-append:script>
 		<mod-append:script>data/forgemaster_scripts/forge_fight.lua</mod-append:script>
 	</mod:findLike>
 </FTL>
@@ -816,31 +817,23 @@
 		</mod-append:customShip>
 
 		<mod-append:customShip name="FM_FORGEMASTER_CRUISER_ENEMY_LAST_STRAW">
-			<hiddenAug>ENERGIZED_ROOM_SHIELDS</hiddenAug>
+			<!--<hiddenAug>ENERGIZED_ROOM_SHIELDS</hiddenAug>
 			<hiddenAug>ENERGIZED_ROOM_CLOAKING</hiddenAug>
 			<hiddenAug>ENERGIZED_ROOM_WEAPONS</hiddenAug>
-			<hiddenAug>ENERGIZED_ROOM_MEDBAY</hiddenAug>
+			<hiddenAug>ENERGIZED_ROOM_MEDBAY</hiddenAug>-->
+			<hiddenAug>UPG_MEDBAY_NANO_FORGEMASTER_ENEMY</hiddenAug>
+			<hiddenAug>SYSTEM_CASING_NEW</hiddenAug>
+			<hiddenAug>FM_REVIVE</hiddenAug>
+			<hiddenAug>FM_REVIVE</hiddenAug>
+			<hiddenAug>FM_REVIVE</hiddenAug>
+			<hiddenAug>FM_REVIVE</hiddenAug>
+			<hiddenAug>UPG_CLONEBAY_DNA</hiddenAug>
+			<hiddenAug>FM_MODULAR_HULL_PARTICLE</hiddenAug>
+			<autoShipForce>true</autoShipForce>
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
+				<shipIcon>icon_backupdna</shipIcon>
 			</shipIcons>
-			<rooms>
-				<room id="5"> <!--medbay-->
-					<roomAnim renderLayer="0">fm_energy_resist_2x2</roomAnim>
-					<roomAnim renderLayer="3">energized_icon</roomAnim>
-				</room>
-				<room id="8"> <!--weapons-->
-					<roomAnim renderLayer="0">fm_energy_resist_2x2</roomAnim>
-					<roomAnim renderLayer="3">energized_icon</roomAnim>
-				</room>
-				<room id="1"> <!--shields-->
-					<roomAnim renderLayer="0">fm_energy_resist_3x2</roomAnim>
-					<roomAnim renderLayer="3">energized_icon</roomAnim>
-				</room>
-				<room id="15"> <!--cloaking-->
-					<roomAnim renderLayer="0">fm_energy_resist_1x2</roomAnim>
-					<roomAnim renderLayer="3">energized_icon</roomAnim>
-				</room>
-			</rooms>
 			<noJump/>
 			<hpCap>50</hpCap>
 			<crew>
@@ -1799,7 +1792,7 @@
 			<shipIcon>	<!-- Forged Accelerant -->
 				<name>icon_forgemaster_hull</name>
 				<tooltip>FORGED ACCELERANT:
-					The unique armor on this enemy grants it a 25 chance to resist ALL types of damage from your weapons.Extinguishes flames, seals breaches very slowly, halves suffocation, and the crew repairs specific systems significantly faster and repair progress isn't lost on interruption.</tooltip>
+					The unique armor on this enemy grants it a 25 chance to resist ALL types of damage from your weapons.Fires burn 50% slower, seals breaches very slowly, halves suffocation, and the crew repairs specific systems significantly faster and repair progress isn't lost on interruption(and piloting is always manned btw).</tooltip>
 			</shipIcon>
 
 			<shipIcon> 	<!-- Forged Medbots -->
@@ -1882,7 +1875,7 @@
 			</shipIcon>
 			<shipIcon>
 				<name>icon_fm_modhull_capstone_fastweapon</name>
-				<tooltip>INFINITUM CYCLO-BARRIER:
+				<tooltip>INFINITUM CYCLO-ARSENAL:
 					enemy weapons charge 5% slower but charge 15% faster for every unpowered bar of the weapon system</tooltip>
 			</shipIcon>
 			<shipIcon>
@@ -3791,6 +3784,115 @@
 			<name>ach_fm_boss_kestrel</name>
 			<name>ach_fm_boss_federation</name>
 			<name>ach_fm_boss_orchid</name>
+		</req>
+		
+		<req name="FM_BOSS_2_1" type="all">
+			<name>ACH ACH_TWISTED_REN_FREEMANTIS</name>
+			<req lvl="0" max_lvl="0">
+				<name>ach_fm_boss_freemantis</name>
+			</req>
+		</req>
+		<req name="FM_BOSS_2_2" type="all">
+			<name>ACH ACH_TWISTED_REN_SEPARATIST</name>
+			<req lvl="0" max_lvl="0">
+				<name>ach_fm_boss_spearatist</name>
+			</req>
+		</req>
+		<req name="FM_BOSS_2_3" type="all">
+			<name>ACH ACH_TWISTED_REN_MANTIS</name>
+			<req lvl="0" max_lvl="0">
+				<name>ach_fm_boss_manits</name>
+			</req>
+		</req>
+		<req name="FM_BOSS_3_1" type="all">
+			<name>ACH ACH_TWISTED_REN_MONK</name>
+			<req lvl="0" max_lvl="0">
+				<name>ach_fm_boss_monk</name>
+			</req>
+		</req>
+		<req name="FM_BOSS_3_2" type="all">
+			<name>ACH ACH_TWISTED_REN_ROCK</name>
+			<req lvl="0" max_lvl="0">
+				<name>ach_fm_boss_rock</name>
+			</req>
+		</req>
+		<req name="FM_BOSS_3_3" type="all">
+			<name>ACH ACH_TWISTED_REN_LOSTSUN</name>
+			<req lvl="0" max_lvl="0">
+				<name>ach_fm_boss_lostsun</name>
+			</req>
+		</req>
+		<req name="FM_BOSS_4_1" type="all">
+			<name>ACH ACH_TWISTED_REN_SLUG</name>
+			<req lvl="0" max_lvl="0">
+				<name>ach_fm_boss_slug</name>
+			</req>
+		</req>
+		<req name="FM_BOSS_4_2" type="all">
+			<name>ACH ACH_TWISTED_REN_STEALTH</name>
+			<req lvl="0" max_lvl="0">
+				<name>ach_fm_boss_stealth</name>
+			</req>
+		</req>
+		<req name="FM_BOSS_4_3" type="all">
+			<name>ACH ACH_TWISTED_REN_ZOLTAN</name>
+			<req lvl="0" max_lvl="0">
+				<name>ach_fm_boss_zoltan</name>
+			</req>
+		</req>
+		<req name="FM_BOSS_5_1" type="all">
+			<name>ACH ACH_TWISTED_REN_SHELL</name>
+			<req lvl="0" max_lvl="0">
+				<name>ach_fm_boss_shell</name>
+			</req>
+		</req>
+		<req name="FM_BOSS_5_2" type="all">
+			<name>ACH ACH_TWISTED_REN_ENGINEER</name>
+			<req lvl="0" max_lvl="0">
+				<name>ach_fm_boss_rock</name>
+			</req>
+		</req>
+		<req name="FM_BOSS_5_3" type="all">
+			<name>ACH ACH_TWISTED_REN_LANIUS</name>
+			<req lvl="0" max_lvl="0">
+				<name>ach_fm_boss_lanius</name>
+			</req>
+		</req>
+		<req name="FM_BOSS_6_1" type="all">
+			<name>ACH ACH_TWISTED_REN_KESTREL</name>
+			<req lvl="0" max_lvl="0">
+				<name>ach_fm_boss_kestrel</name>
+			</req>
+		</req>
+		<req name="FM_BOSS_6_2" type="all">
+			<name>ACH ACH_TWISTED_REN_FED</name>
+			<req lvl="0" max_lvl="0">
+				<name>ach_fm_boss_FED</name>
+			</req>
+		</req>
+		<req name="FM_BOSS_6_3" type="all">
+			<name>ACH ACH_TWISTED_REN_ORCHID</name>
+			<req lvl="0" max_lvl="0">
+				<name>ach_fm_boss_orchid</name>
+			</req>
+		</req>
+		<req name="FM_BOSS_7_1" type="all">
+			<name>ACH ACH_TWISTED_REN_CRYSTAL</name>
+			<req lvl="0" max_lvl="0">
+				<name>ach_fm_boss_kestrel</name>
+			</req>
+		</req>
+		<req name="FM_BOSS_7_2" type="all">
+			<name>ACH ACH_TWISTED_REN_TUCO</name>
+			<req lvl="0" max_lvl="0">
+				<name>ach_fm_boss_FED</name>
+			</req>
+		</req>
+		<req name="FM_BOSS_7_3" type="all">
+			<name>ACH ACH_TWISTED_REN_LEECH</name>
+			<req lvl="0" max_lvl="0">
+				<name>ach_fm_boss_leech</name>
+			</req>
 		</req>
 
 
@@ -7288,9 +7390,23 @@
 			<stunMultiplier>0.25</stunMultiplier>
 			<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
 			<hasDeathExplosion>true</hasDeathExplosion>
+			<passiveStatBoosts>
+				<statBoost name="silenced">
+					<boostType>SET</boostType>
+					<value>true</value>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>SELF</crewTarget>
+					<droneTarget>ALL</droneTarget>
+					<affectsSelf>TRUE</affectsSelf>
+					<extraConditions>
+						<dying>true</dying>
+					</extraConditions>
+				</statBoost>
+			</passiveStatBoosts>
 			<powerEffect>
 				<cooldown>12</cooldown>
 				<jumpCooldown>full</jumpCooldown>
+				<disabledCooldown>zero</disabledCooldown>
 				<req>
 					<minHealth>1</minHealth>
 				</req>
@@ -7311,7 +7427,8 @@
 				<temporaryEffect>
 					<duration>2</duration>
 					<cooldownColor r="10" g="255" b="255"/>
-					<controllable>false</controllable>
+					<selectable>false</selectable>
+					<!--<controllable>false</controllable>-->
 					<!--<damageTakenMultiplier>0</damageTakenMultiplier>-->
 					<!--<invulnerable>true</invulnerable>-->
 					<canFight>false</canFight>
@@ -9381,7 +9498,8 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<function name="ION_ARMOR" value="0.25" useForReqs="true"/>
 			<function name="ROCK_ARMOR" value="0.25" useForReqs="false"/>
 			<function name="SYSTEM_CASING" value="0.25" useForReqs="false"/>
-			<function name="FIRE_EXTINGUISHERS" value="5" useForReqs="false" warning="false"/>
+			<function name="FIRE_IMMUNITY" value="0.5" useForReqs="false"/>
+			<!--<function name="FIRE_EXTINGUISHERS" value="5" useForReqs="false" warning="false"/>-->
 			<function name="SLUG_GEL" value="1" useForReqs="false" warning="false"/>
 			<function name="FM_MODULAR_UPGRADE_EXTRANOTCHES" value="100" useforReqs="true"/>
 			<!--<function name="SYSTEM_CASING" value="0.35" useForReqs="true" warning="false"/>--><!--ffs Cyrus-->
@@ -13390,6 +13508,9 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		<mod:findName name="COORDS">
 			<mod-append:name>coords_twisted</mod-append:name>
 		</mod:findName>
+		<mod:findName name="COORDS_BOSS">
+			<mod-append:name>coords_twisted</mod-append:name>
+		</mod:findName>
 		<mod:findName name="LIST_CHECK_AUGMENTS">
 			<mod-append:name>TWISTED_ANCIENT_BOUNTY</mod-append:name>
 			<mod-append:name>CURA_MVBOSS_SPAWNER</mod-append:name>
@@ -15825,7 +15946,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 				</achievement>
 				<achievement name="ACH_TWISTED_REN_ORCHID">
 					<name>Fun-Guy</name>
-					<description>Defeat the Twisted Orchid B Renegade and get some friends.</description>
+					<description>Defeat the Twisted Orchid C Renegade and get some friends.</description>
 					<icon>renegade_orchid_b</icon>
 					<header>Twisted Renegade Defeated</header>
 					<secretDescription>???</secretDescription>

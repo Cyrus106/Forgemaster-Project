@@ -31,6 +31,20 @@
         <queueEvent>ADDON_FMCORE_INFO</queueEvent>
       </event>
     </choice>
+    <choice req="fmcore_augbox_invert" lvl="0" max_lvl="0">
+      <text>Enable Inverted Enabledness of Augment Stat Screen</text>
+      <event>
+        <variable name="fmcore_augbox_invert" op="set" val="1"/>
+        <queueEvent>ADDON_FMCORE_INFO</queueEvent>
+      </event>
+    </choice>
+    <choice req="fmcore_augbox_invert">
+      <text>Disable Inverted Enabledness of Augment Stat Screen</text>
+      <event>
+        <variable name="fmcore_augbox_invert" op="set" val="0"/>
+        <queueEvent>ADDON_FMCORE_INFO</queueEvent>
+      </event>
+    </choice>
     <choice req="fmcore_buttons_visible" lvl="0" max_lvl="0"><!--placeholder-->
       <text>Show addon info buttons</text>
       <event>
@@ -90,6 +104,15 @@
       </event>
     </choice>
 	</event>
+  <event name="ADDON_RAD_INFO">
+    <text>R&amp;D
+Developed by: Arc
+Currently Disabled.
+  
+An addon designed around the use of Lua to create fun and unique gimmicks, this includes a variety of ships, weapons, crew, drones, and quests, although not entirely balanced they all try to introduce and focus on a unique gimmick you wouldn't find in MV otherwise.
+You can download it from the MV forums.
+    </text>
+  </event>
 	<mod:findName type="event" name="START_BEACON_REAL">
 		<mod-append:eventButton name="ADDON_FMCORE">
       <event load="ADDON_FMCORE_INFO"/>
@@ -174,6 +197,16 @@
       <image border="0">addons/tcc</image>
       <customLocation x="331" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
       <tooltip id="addon_hover_tcc"/>
+      <jumpClear>false</jumpClear>
+      <noDanger>false</noDanger>
+      <hideInactive>true</hideInactive>
+      <req>fmcore_buttons_visible</req>
+    </mod-append:eventButton>
+    <mod-append:eventButton name="ADDON_RAD">
+      <event load="ADDON_RAD_INFO"/>
+      <image border="0">addons/tcc</image>
+      <customLocation x="355" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
+      <tooltip id="addon_hover_rad2"/>
       <jumpClear>false</jumpClear>
       <noDanger>false</noDanger>
       <hideInactive>true</hideInactive>

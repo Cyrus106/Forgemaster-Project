@@ -26,7 +26,8 @@
 	<weaponList missiles="50" count="4" load="FM_FORGEMASTER_LOADOUT" />
 
 	<droneList drones="30" count="10">
-		<drone name="DIVREPAIR" />
+		<!--<drone name="DIVREPAIR" />-->
+		<drone name="FM_FIRE_INTRUDER" />
 		<drone name="FM_FIRE_INTRUDER" />
 		<drone name="FM_FIRE_INTRUDER" />
 		<drone name="FM_FIRE_INTRUDER" />
@@ -46,20 +47,21 @@
 
 </shipBlueprint>
 
-<shipBlueprint name="FM_FORGEMASTER_CRUISER_ENEMY_LAST_STRAW" layout="z_FM_FORGEMASTER_CRUISER_ENEMY" img="FM_FORGEMASTER_CRUISER_ENEMY">
+<shipBlueprint name="FM_FORGEMASTER_CRUISER_ENEMY_LAST_STRAW" layout="FM_FORGEMASTER_CRUISER_ENEMY" img="FM_FORGEMASTER_CRUISER_ENEMY">
 	<class>Forgemaster Cruiser</class>
 	<minSector>1</minSector>
 	<maxSector>8</maxSector>
 	<systemList>
 		<cloaking power="3" max="3" room="15" start="true" />
 		<clonebay power="2" max="3" room="5" start="true" />
-		<doors power="4" max="4" room="12" start="true" />
+		<doors power="3" max="3" room="12" start="true" />
 		<drones power="12" max="12" room="0" start="true" />
 		<engines power="4" max="4" room="2" start="true" />
 		<oxygen power="2" max="3" room="3" start="true" />
 		<pilot power="3" max="3" room="17" start="true" />
 		<shields power="4" max="4" room="1" start="true" />
 		<weapons power="12" max="12" room="8" start="true" />
+		<teleporter power="1" max="1" room="4" start="true"/>
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>6</droneSlots>
@@ -68,7 +70,7 @@
 		<weapon name="FM_MISSILES_BURST_FIRE_MEGA_PISSED" />
 		<weapon name="FM_MISSILES_BURST_FIRE_MEGA_PISSED" />
 		<weapon name="FM_LASER_ANOMALY_1" />
-		</weaponList>
+	</weaponList>
 	<droneList drones="20" count="6">
 		<drone name="FM_FIRE_INTRUDER" />
 		<drone name="FM_FIRE_INTRUDER" />
@@ -83,9 +85,9 @@
 	<crewCount amount="1" max="1" class="fm_plated" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="FM_NANO_FORGE_ACCELERANT" />
-	<aug name="UPG_MEDBAY_NANO_FORGEMASTER_ENEMY" />
-	<aug name="SYSTEM_CASING" />
-	<aug name="FM_SUPER_AUTO_COOLDOWN" />
+	<!--<aug name="UPG_MEDBAY_NANO_FORGEMASTER_ENEMY" />-->
+	<!--<aug name="SYSTEM_CASING" />-->
+	<!--<aug name="FM_SUPER_AUTO_COOLDOWN" />-->
 
 </shipBlueprint>
 
@@ -1779,9 +1781,6 @@
 <mod:findName type="blueprintList" name="LIST_CREW_SLUG">
     <mod-append:name>husk_slug_player</mod-append:name>
 </mod:findName>
-<mod:findName type="blueprintList" name="LIST_CREW_MORPH_SLUG">
-    <mod-append:name>husk_slug_player</mod-append:name>
-</mod:findName>
 <mod:findName type="blueprintList" name="LIST_CREW_ALL_CRAPBUCKET">
     <mod-append:name>husk_slug_player</mod-append:name>
 	<mod-append:name>fm_plated</mod-append:name>
@@ -1800,10 +1799,6 @@
 	<mod-append:name>fm_plated_shell</mod-append:name>
 </mod:findName>
 
-<mod:findName type="blueprintList" name="LIST_CREW_MORPH_HUMAN">
-	<mod-append:name>fm_human_texture</mod-append:name>
-</mod:findName>
-
 <mod:findName type="blueprintList" name="LIST_CREW_HUMAN">
 	<mod-append:name>fm_human_texture</mod-append:name>
 </mod:findName>
@@ -1820,13 +1815,16 @@
 	<mod-append:name>unique_mossberg</mod-append:name>
 </mod:findName>
 
-<mod:findName type="blueprintList" name="LIST_CREW_MORPH_ROCK">
+<!--<mod:findName type="blueprintList" name="LIST_CREW_MORPH_ROCK">
 	<mod-append:name>fm_plated</mod-append:name>
 	<mod-append:name>fm_forgemasterperson</mod-append:name>
 	<mod-append:name>fm_forgemasterperson_player</mod-append:name>
-</mod:findName>
+</mod:findName>-->
 
 <mod:findName type="blueprintList" name="LIST_CREW_ORCHID">
+    <mod-append:name>orchid_fire</mod-append:name>
+</mod:findName>
+<mod:findName type="blueprintList" name="LIST_CREW_FLORAL">
     <mod-append:name>orchid_fire</mod-append:name>
 </mod:findName>
 
@@ -1834,13 +1832,17 @@
     <mod-append:name>fm_plated_shell</mod-append:name>
 </mod:findName>
 
+<mod:findName type="blueprintList" name="LIST_CREW_GAS">
+    <mod-append:name>fm_plated_shell</mod-append:name>
+</mod:findName>
+
 <mod:findName type="blueprintList" name="LIST_CREW_MORPH_ORCHID">
     <mod-append:name>orchid_fire</mod-append:name>
 </mod:findName>
 
-<mod:findName type="blueprintList" name="LIST_CREW_MORPH_SHELL">
+<!--<mod:findName type="blueprintList" name="LIST_CREW_MORPH_SHELL">
     <mod-append:name>fm_plated_shell</mod-append:name>
-</mod:findName>
+</mod:findName>-->
 
 <mod:findName type="blueprintList" name="LIST_CREW_MANTIS">
 	<mod-append:name>mantis_crackerjack</mod-append:name>
@@ -1849,7 +1851,7 @@
 <mod:findName type="blueprintList" name="LIST_CREW_FREEMAN">
 	<mod-append:name>mantis_crackerjack</mod-append:name>
 </mod:findName>
-
+<!--
 <mod:findName type="blueprintList" name="LIST_CREW_MORPH_FREEMANTIS">
 	<mod-append:name>mantis_crackerjack</mod-append:name>
 </mod:findName>
@@ -1859,7 +1861,7 @@
 	<mod-append:name>fm_forgemasterperson</mod-append:name>
 	<mod-append:name>fm_forgemasterperson_player</mod-append:name>
 </mod:findName>
-
+-->
 <mod:findName type="blueprintList" name="BLUELIST_CREW_NOFIRE">
 	<mod-append:name>fm_forgemasterperson_player</mod-append:name>
 	<mod-append:name>fm_plated</mod-append:name>
@@ -1915,7 +1917,7 @@
 <mod:findName type="blueprintList" name="LIST_CREW_PARAGON_UNIQUE">
     <mod-append:name>fm_plated</mod-append:name>
 	<mod-append:name>fm_forgemasterperson</mod-append:name>
-	 <mod-append:name>fm_forgemasterperson_player</mod-append:name>
+	<mod-append:name>fm_forgemasterperson_player</mod-append:name>
 </mod:findName>
 
 
@@ -1941,12 +1943,12 @@
 	<mod-append:name>fm_separatist_twisted</mod-append:name>
 
 </mod:findName>
-
+<!--
 <mod:findName type="blueprintList" name="LIST_CHECKCREW_ENGI">
     <mod-append:name>unique_remington</mod-append:name>
 	<mod-append:name>unique_mossberg</mod-append:name>
 </mod:findName>
-
+-->
 <mod:findName type="blueprintList" name="LIST_CREW_ELITE">
 	<mod-append:name>unique_remington</mod-append:name>
 	<mod-append:name>unique_mossberg</mod-append:name>
@@ -2337,7 +2339,7 @@
 	<name>FM_SHOP_DRONES_2</name>
 	<name>FM_SHOP_DRONES_2</name>
 	<name>FM_SHOP_DRONES_3</name>
-	<name>FM_SHOP_DRONES_3</name>
+	<!--<name>FM_SHOP_DRONES_3</name>-->
 </blueprintList>
 
 <blueprintList name="FM_SHOP_WEAPONS_ALL">
