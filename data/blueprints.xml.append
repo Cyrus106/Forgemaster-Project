@@ -6989,7 +6989,7 @@
 		<breachChance>0</breachChance>
 		<cooldown>7</cooldown>
 		<power>3</power>
-		<cost>0</cost>
+		<cost>200</cost>
 		<rarity>0</rarity>
 		<chargeLevels>3</chargeLevels>
 		<projectiles>
@@ -7123,7 +7123,7 @@
 		<breachChance>0</breachChance>
 		<cooldown>7</cooldown>
 		<power>3</power>
-		<cost>0</cost>
+		<cost>200</cost>
 		<rarity>0</rarity>
 		<chargeLevels>3</chargeLevels>
 		<projectiles>
@@ -9527,6 +9527,475 @@
 		<breachChance>4</breachChance>
 		<cooldown>11</cooldown>
 		<power>2</power>
+		<cost>2250</cost>
+		<bp>10</bp>
+		<speed>5</speed>
+		<rarity>0</rarity>
+		<projectiles>
+			<projectile count="12" fake="false">fm_hassium_shot</projectile>
+			<projectile count="5" fake="false">debris_large</projectile>
+			<projectile count="12" fake="true">debris_small</projectile>
+		</projectiles>
+		<launchSounds>
+			<sound>flak</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>flakImpact1</sound>
+			<sound>flakImpact2</sound>
+			<sound>flakImpact3</sound>
+			<sound>flakImpact4</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_shotgun_upgradeable_god</weaponArt>
+		<iconImage>flak</iconImage>
+	</weaponBlueprint>
+	
+	<weaponBlueprint name="FM_SHOTGUN_BRONZE_PLAYER">
+		<type>BURST</type>
+		<drone_targetable>1</drone_targetable>
+		<title>Bronze Flak†</title>
+		<short>Bronze F.†</short>
+		<desc>A heavy metallic flak weapon forged with crystals. Maybe you could make it denser?</desc>
+		<tooltip>A heavy metallic flak weapon forged with crystals. Maybe you could make it denser?</tooltip>
+		<radius>55</radius>
+		<damage>1</damage>
+		<spin>720</spin>
+		<shots>1</shots>
+		<sp>0</sp>
+		<fireChance>0</fireChance>
+		<breachChance>2</breachChance>
+		<cooldown>8</cooldown>
+		<power>1</power>
+		<cost>110</cost>
+		<bp>10</bp>
+		<speed>50</speed>
+		<rarity>0</rarity>
+		<projectiles>
+			<projectile count="1" fake="false">debris_large</projectile>
+			<projectile count="2" fake="false">debris_med</projectile>
+			<projectile count="3" fake="true">debris_small</projectile>
+		</projectiles>
+		<launchSounds>
+			<sound>flak</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>flakImpact1</sound>
+			<sound>flakImpact2</sound>
+			<sound>flakImpact3</sound>
+			<sound>flakImpact4</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_shotgun_upgradeable_bronze</weaponArt>
+		<iconImage>flak</iconImage>
+	</weaponBlueprint>
+
+	<weaponBlueprint name="FM_SHOTGUN_INDIUM_PLAYER">
+		<type>BURST</type>
+		<drone_targetable>1</drone_targetable>
+		<title>Indium Flak†</title>
+		<short>Indium F.†</short>
+		<desc>A heavier metallic flak weapon infused with crystals that fires additional projectiles. Maybe you could make it denser still?</desc>
+		<tooltip>A heavier metallic flak weapon infused with crystals that fires additional projectiles. Maybe you could make it denser still?</tooltip>
+		<radius>55</radius>
+		<damage>1</damage>
+		<spin>720</spin>
+		<shots>1</shots>
+		<sp>0</sp>
+		<fireChance>0</fireChance>
+		<breachChance>2</breachChance>
+		<cooldown>8</cooldown>
+		<power>1</power>
+		<cost>210</cost>
+		<bp>10</bp>
+		<speed>48</speed>
+		<rarity>0</rarity>
+		<projectiles>
+			<projectile count="1" fake="false">debris_large</projectile>
+			<projectile count="3" fake="false">debris_med</projectile>
+			<projectile count="3" fake="true">debris_small</projectile>
+		</projectiles>
+		<launchSounds>
+			<sound>flak</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>flakImpact1</sound>
+			<sound>flakImpact2</sound>
+			<sound>flakImpact3</sound>
+			<sound>flakImpact4</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_shotgun_upgradeable_indium</weaponArt>
+		<iconImage>flak</iconImage>
+	</weaponBlueprint>
+
+	<weaponBlueprint name="FM_SHOTGUN_RHENIUM_PLAYER">
+		<type>BURST</type>
+		<drone_targetable>1</drone_targetable>
+		<title>Rhenium Flak†</title>
+		<short>Rhenium F.†</short>
+		<desc>An even heavier metallic flak weapon infused with crystals that fires additional projectiles. Maybe you could make it denser still?</desc>
+		<tooltip>An even heavier metallic flak weapon infused with crystals that fires additional projectiles. Maybe you could make it denser still?</tooltip>
+		<radius>52</radius>
+		<damage>1</damage>
+		<persDamage>2</persDamage>
+		<spin>720</spin>
+		<shots>1</shots>
+		<sp>0</sp>
+		<fireChance>0</fireChance>
+		<breachChance>3</breachChance>
+		<cooldown>9</cooldown>
+		<power>1</power>
+		<cost>360</cost>
+		<bp>10</bp>
+		<speed>26</speed>
+		<rarity>0</rarity>
+		<projectiles>
+			<projectile count="2" fake="false">debris_large</projectile>
+			<projectile count="3" fake="false">debris_med</projectile>
+			<projectile count="3" fake="true">debris_small</projectile>
+		</projectiles>
+		<launchSounds>
+			<sound>flak</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>flakImpact1</sound>
+			<sound>flakImpact2</sound>
+			<sound>flakImpact3</sound>
+			<sound>flakImpact4</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_shotgun_upgradeable_rhenium</weaponArt>
+		<iconImage>flak</iconImage>
+	</weaponBlueprint>
+
+	<weaponBlueprint name="FM_SHOTGUN_SILVER_PLAYER">
+		<type>BURST</type>
+		<drone_targetable>1</drone_targetable>
+		<title>Silver Flak†</title>
+		<short>Silver F.†</short>
+		<desc>An even heavier still metallic flak weapon infused with crystals that fires additional projectiles. Maybe you could make it even denser, perhaps?</desc>
+		<tooltip>An even heavier still metallic flak weapon infused with crystals that fires additional projectiles. Maybe you could make it even denser, perhaps?</tooltip>
+		<radius>51</radius>
+		<damage>1</damage>
+		<persDamage>2</persDamage>
+		<spin>720</spin>
+		<shots>1</shots>
+		<sp>0</sp>
+		<fireChance>0</fireChance>
+		<breachChance>3</breachChance>
+		<cooldown>9</cooldown>
+		<power>1</power>
+		<cost>560</cost>
+		<bp>10</bp>
+		<speed>26</speed>
+		<rarity>0</rarity>
+		<projectiles>
+			<projectile count="2" fake="false">debris_large</projectile>
+			<projectile count="4" fake="false">debris_med</projectile>
+			<projectile count="3" fake="true">debris_small</projectile>
+		</projectiles>
+		<launchSounds>
+			<sound>flak</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>flakImpact1</sound>
+			<sound>flakImpact2</sound>
+			<sound>flakImpact3</sound>
+			<sound>flakImpact4</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_shotgun_upgradeable_silver</weaponArt>
+		<iconImage>flak</iconImage>
+	</weaponBlueprint>
+
+	<weaponBlueprint name="FM_SHOTGUN_PALLADIUM_PLAYER">
+		<type>BURST</type>
+		<drone_targetable>1</drone_targetable>
+		<title>Palladium Flak†</title>
+		<short>Palladium F.†</short>
+		<desc>This one's getting harder to lift. That won't stop you.</desc>
+		<tooltip>This one's getting harder to lift. That won't stop you.</tooltip>
+		<radius>45</radius>
+		<damage>1</damage>
+		<persDamage>2</persDamage>
+		<spin>720</spin>
+		<shots>1</shots>
+		<sp>0</sp>
+		<fireChance>0</fireChance>
+		<breachChance>3</breachChance>
+		<cooldown>10</cooldown>
+		<power>1</power>
+		<cost>810</cost>
+		<bp>10</bp>
+		<speed>22</speed>
+		<rarity>0</rarity>
+		<projectiles>
+			<projectile count="3" fake="false">debris_large</projectile>
+			<projectile count="4" fake="false">debris_med</projectile>
+			<projectile count="4" fake="true">debris_small</projectile>
+		</projectiles>
+		<launchSounds>
+			<sound>flak</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>flakImpact1</sound>
+			<sound>flakImpact2</sound>
+			<sound>flakImpact3</sound>
+			<sound>flakImpact4</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_shotgun_upgradeable_palladium</weaponArt>
+		<iconImage>flak</iconImage>
+	</weaponBlueprint>
+
+	<weaponBlueprint name="FM_SHOTGUN_IRIDIUM_PLAYER">
+		<type>BURST</type>
+		<drone_targetable>1</drone_targetable>
+		<title>Iridium Flak†</title>
+		<short>Iridium F.†</short>
+		<desc>Your crew groan loudly when you try to mount this. Even in space, moving this thing is nearly impossible due to its monstrous density.</desc>
+		<tooltip>Your crew groan loudly when you try to mount this. Even in space, moving this thing is nearly impossible due to its monstrous density.</tooltip>
+		<radius>40</radius>
+		<damage>1</damage>
+		<persDamage>2</persDamage>
+		<spin>720</spin>
+		<shots>1</shots>
+		<sp>0</sp>
+		<fireChance>0</fireChance>
+		<breachChance>3</breachChance>
+		<cooldown>10</cooldown>
+		<power>1</power>
+		<cost>1140</cost>
+		<bp>10</bp>
+		<speed>18</speed>
+		<rarity>0</rarity>
+		<projectiles>
+			<projectile count="3" fake="false">debris_large</projectile>
+			<projectile count="5" fake="false">debris_med</projectile>
+			<projectile count="5" fake="true">debris_small</projectile>
+		</projectiles>
+		<launchSounds>
+			<sound>flak</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>flakImpact1</sound>
+			<sound>flakImpact2</sound>
+			<sound>flakImpact3</sound>
+			<sound>flakImpact4</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_shotgun_upgradeable_iridium</weaponArt>
+		<iconImage>flak</iconImage>
+	</weaponBlueprint>
+
+	<weaponBlueprint name="FM_SHOTGUN_PLATINUM_PLAYER">
+		<type>BURST</type>
+		<drone_targetable>1</drone_targetable>
+		<title>Platinum Flak†</title>
+		<short>Platinum F.†</short>
+		<desc>You're fairly sure this is the heaviest weapon ever made.</desc>
+		<tooltip>You're fairly sure this is the heaviest weapon ever made.</tooltip>
+		<radius>39</radius>
+		<damage>1</damage>
+		<persDamage>2</persDamage>
+		<spin>720</spin>
+		<shots>1</shots>
+		<sp>0</sp>
+		<fireChance>0</fireChance>
+		<breachChance>3</breachChance>
+		<cooldown>11</cooldown>
+		<power>1</power>
+		<cost>1400</cost>
+		<bp>10</bp>
+		<speed>16</speed>
+		<rarity>0</rarity>
+		<projectiles>
+			<projectile count="3" fake="false">debris_large</projectile>
+			<projectile count="6" fake="false">debris_med</projectile>
+			<projectile count="6" fake="true">debris_small</projectile>
+		</projectiles>
+		<launchSounds>
+			<sound>flak</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>flakImpact1</sound>
+			<sound>flakImpact2</sound>
+			<sound>flakImpact3</sound>
+			<sound>flakImpact4</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_shotgun_upgradeable_platinum</weaponArt>
+		<iconImage>flak</iconImage>
+	</weaponBlueprint>
+
+	<weaponBlueprint name="FM_SHOTGUN_OSMIUM_PLAYER">
+		<type>BURST</type>
+		<drone_targetable>1</drone_targetable>
+		<title>Osmium Flak†</title>
+		<short>Osmium F.†</short>
+		<desc>Nope, found a heavier one.</desc>
+		<tooltip>Nope, found a heavier one.</tooltip>
+		<radius>37</radius>
+		<damage>1</damage>
+		<persDamage>2</persDamage>
+		<spin>720</spin>
+		<shots>1</shots>
+		<sp>0</sp>
+		<fireChance>0</fireChance>
+		<breachChance>4</breachChance>
+		<cooldown>11</cooldown>
+		<power>1</power>
+		<cost>1660</cost>
+		<bp>10</bp>
+		<speed>12</speed>
+		<rarity>0</rarity>
+		<projectiles>
+			<projectile count="4" fake="false">debris_large</projectile>
+			<projectile count="7" fake="false">debris_med</projectile>
+			<projectile count="6" fake="true">debris_small</projectile>
+		</projectiles>
+		<launchSounds>
+			<sound>flak</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>flakImpact1</sound>
+			<sound>flakImpact2</sound>
+			<sound>flakImpact3</sound>
+			<sound>flakImpact4</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_shotgun_upgradeable_osmium</weaponArt>
+		<iconImage>flak</iconImage>
+	</weaponBlueprint>
+
+	<weaponBlueprint name="FM_SHOTGUN_NOBELIUM_PLAYER">
+		<type>BURST</type>
+		<drone_targetable>1</drone_targetable>
+		<title>Nobelium Flak†</title>
+		<short>Nobelium F.†</short>
+		<desc>You start to fall asleep when you think about this flak. It's so heavy that the IDEA of it makes your head heavy.</desc>
+		<tooltip>You start to fall asleep when you think about this flak. It's so heavy that the IDEA of it makes your head heavy.</tooltip>
+		<radius>35</radius>
+		<damage>1</damage>
+		<persDamage>2</persDamage>
+		<spin>480</spin>
+		<shots>1</shots>
+		<sp>0</sp>
+		<fireChance>0</fireChance>
+		<breachChance>4</breachChance>
+		<cooldown>11</cooldown>
+		<power>1</power>
+		<cost>1920</cost>
+		<bp>10</bp>
+		<speed>9</speed>
+		<rarity>0</rarity>
+		<projectiles>
+			<projectile count="8" fake="false">debris_large</projectile>
+			<projectile count="4" fake="false">debris_med</projectile>
+			<projectile count="12" fake="true">debris_small</projectile>
+		</projectiles>
+		<launchSounds>
+			<sound>flak</sound>
+		</launchSounds>
+		<hitShipSounds>
+			<sound>flakImpact1</sound>
+			<sound>flakImpact2</sound>
+			<sound>flakImpact3</sound>
+			<sound>flakImpact4</sound>
+		</hitShipSounds>
+		<hitShieldSounds>
+			<sound>hitShield1</sound>
+			<sound>hitShield2</sound>
+			<sound>hitShield3</sound>
+		</hitShieldSounds>
+		<missSounds>
+			<sound>miss</sound>
+		</missSounds>
+		<weaponArt>fm_shotgun_upgradeable_nobelium</weaponArt>
+		<iconImage>flak</iconImage>
+	</weaponBlueprint>
+
+	<weaponBlueprint name="FM_SHOTGUN_HASSIUM_PLAYER">
+		<type>BURST</type>
+		<drone_targetable>1</drone_targetable>
+		<title>Hassium Flak†</title>
+		<short>Hassium F.†</short>
+		<desc>The big one. The heaviest lad. Crush 'em.</desc>
+		<tooltip>The big one. The heaviest lad. Crush 'em.</tooltip>
+		<radius>33</radius>
+		<damage>1</damage>
+		<persDamage>5</persDamage> <!--90 Crew Damage-->
+		<spin>360</spin>
+		<shots>1</shots>
+		<sp>0</sp>
+		<hullBust>1</hullBust>
+		<fireChance>0</fireChance>
+		<breachChance>4</breachChance>
+		<cooldown>11</cooldown>
+		<power>1</power>
 		<cost>2250</cost>
 		<bp>10</bp>
 		<speed>5</speed>

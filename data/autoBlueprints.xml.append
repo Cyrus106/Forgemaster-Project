@@ -1676,6 +1676,9 @@
 	<mod-append:name>FM_SHOTGUN_OSMIUM</mod-append:name>
 	<mod-append:name>FM_SHOTGUN_NOBELIUM</mod-append:name>
 	<mod-append:name>FM_SHOTGUN_HASSIUM</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_OSMIUM_PLAYER</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_NOBELIUM_PLAYER</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_HASSIUM_PLAYER</mod-append:name>
 	<mod-append:name>FM_ROYAL_MINELAUNCHER</mod-append:name>
 
 </mod:findName>
@@ -2016,11 +2019,19 @@
 	<mod-append:name>FM_SHOTGUN_PLATINUM</mod-append:name>
 	<mod-append:name>FM_SHOTGUN_OSMIUM</mod-append:name>
 	<mod-append:name>FM_SHOTGUN_NOBELIUM</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_RHENIUM_PLAYER</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_SILVER_PLAYER</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_PALLADIUM_PLAYER</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_IRIDIUM_PLAYER</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_PLATINUM_PLAYER</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_OSMIUM_PLAYER</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_NOBELIUM_PLAYER</mod-append:name>
 	<mod-append:name>BOMB_BREACH_1_ENEMY_ARTY_CHAIN</mod-append:name>
 	<mod-append:name>FM_LASER_DEBT_COLLECT</mod-append:name>
 	<mod-append:name>FM_BOMB_CRYSTAL_BIO</mod-append:name>
 	<mod-append:name>FM_MINELAUNCHER_BIO</mod-append:name>
 	<mod-append:name>FM_SHOTGUN_HASSIUM</mod-append:name>
+	<mod-append:name>FM_SHOTGUN_HASSIUM_PLAYER</mod-append:name>
 	<mod-append:name>LIST_FM_GATLING_ANCIENT</mod-append:name>
 </mod:findName>
 
@@ -2674,7 +2685,20 @@
 	<name>FM_SHOTGUN_ANOMALY</name>
 	<name>FM_SHOTGUN_ANOMALY_PLAYER</name>
 	<name>FM_SHOTGUN_ANOMALY_MEGA</name>
-	<name>FM_SHOTGUN_BRONZE</name><!--remmbr other tiers too pls!-->
+	<name>FM_SHOTGUN_BRONZE</name>
+	<name>FM_SHOTGUN_INDIUM</name>
+	<name>FM_SHOTGUN_RHENIUM</name>
+	<name>FM_SHOTGUN_SILVER</name>
+	<name>FM_SHOTGUN_PALLADIUM</name>
+	<name>FM_SHOTGUN_IRIDIUM</name>
+	<name>FM_SHOTGUN_PLATINUM</name>
+	<name>FM_SHOTGUN_BRONZE_PLAYER</name>
+	<name>FM_SHOTGUN_INDIUM_PLAYER</name>
+	<name>FM_SHOTGUN_RHENIUM_PLAYER</name>
+	<name>FM_SHOTGUN_SILVER_PLAYER</name>
+	<name>FM_SHOTGUN_PALLADIUM_PLAYER</name>
+	<name>FM_SHOTGUN_IRIDIUM_PLAYER</name>
+	<name>FM_SHOTGUN_PLATINUM_PLAYER</name>
 	<name>FM_SHOTGUN_CURSED</name>
 	<name>FM_RVS_AC_CHARGE</name>
 </blueprintList>
@@ -2725,7 +2749,11 @@
 	<name>FM_SHOTGUN_OSMIUM</name>
 	<name>FM_SHOTGUN_NOBELIUM</name>
 	<name>FM_SHOTGUN_HASSIUM</name>
+	<name>FM_SHOTGUN_OSMIUM_PLAYER</name>
+	<name>FM_SHOTGUN_NOBELIUM_PLAYER</name>
+	<name>FM_SHOTGUN_HASSIUM_PLAYER</name>
 	<name>FM_ENERGY_RAILBLENDER</name>
+	<name>FM_ENERGY_RAILBLENDER_PLAYER</name>
 	<name>FM_MISSILES_BURST_FIRE</name>
 	<name>FM_MISSILES_BURST_FIRE_PLAYER</name>
 	<name>FM_MISSILES_BURST_FIRE_MEGA</name>

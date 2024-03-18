@@ -292,7 +292,7 @@
 				</event>
 			</mod-append:choice>
 
-			<mod-append:choice req="FM_SHOTGUN_NOBELIUM" lvl="1" max_group="602" hidden="true" blue="true">
+			<mod-append:choice req="ANY_FM_SHOTGUN_NOBELIUM" lvl="1" max_group="602" hidden="true" blue="true">
 				<text>(Nobelium) Shred these partying coward's ships to pieces, how dare they party during a civil war?</text>
 				<event>
 					<text id="text_DISTRESS_ENGI_PARTY_1"/>
@@ -404,7 +404,7 @@
 
 			</mod-append:choice>
 
-			<mod-append:choice req="FM_SHOTGUN_HASSIUM" lvl="1" max_group="603" hidden="true" blue="true">
+			<mod-append:choice req="ANY_FM_SHOTGUN_HASSIUM" lvl="1" max_group="603" hidden="true" blue="true">
 				<text>(Hassium) Shred these partying coward's ships to pieces, how dare they party during a civil war?</text>
 				<event>
 					<text id="text_DISTRESS_ENGI_PARTY_1"/>

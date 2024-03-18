@@ -2,7 +2,7 @@
 <FTL><!--appending to Inferno-Core-->
 	<mod:findName type="event" name="FMCORE_ATLAS_EQUIPMENT">
 		<mod-append:choice req="FM_CAN_CALL_FORGEMASTER" blue="false">
-			<text>[Forgemaster] Contact Alastair.</text>
+			<text>[Forgemaster] Contact Alatsair.</text>
 			<event>
 				<loadEvent>FM_ATLAS_EQUIPMENT</loadEvent>
 				<variable name="fm_called_forgemaster" op="set" val="1"/>

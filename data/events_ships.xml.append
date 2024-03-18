@@ -78,7 +78,7 @@
 			<text id="text_HAVE_BRAIN_DONATION"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_BRAIN_DONATION"/>
 			<event name="GET_BRAIN_DONATION">
 				<hiddenAug>HID_BRAIN_DONATION</hiddenAug>
@@ -98,7 +98,7 @@
 
 
 
-		<choice hidden="false" req="HID_BRAIN_DONATION" max_group="2" blue="false">
+		<choice req="HID_BRAIN_DONATION" max_group="2" blue="false">
 			<text id="text_HAVE_BRAIN_DONATION"/>
 			<event name="FM_ONE_FUEL">
 				<text>...</text>
@@ -107,11 +107,11 @@
 				</item_modify>
 			</event>
 		</choice>
-		<choice hidden="false" req="scrapped_clan" max_group="2" blue="false">
+		<choice req="scrapped_clan" max_group="2" blue="false">
 			<text id="text_SCRAPPED_BRAIN_DONATION"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text id="text_SCRAP_BRAIN_DONATION"/>
 			<event name="SCRAP_BRAIN_DONATION">
 				<text>You scrap the Mind Clouder for valuable resources.</text>
@@ -146,20 +146,20 @@
 			<text id="text_HAVE_BRAIN_DONATION"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_BRAIN_DONATION"/>
 			<event load="GET_BRAIN_DONATION"/>
 		</choice>
 		
-		<choice hidden="false" req="HID_BRAIN_DONATION" max_group="2" blue="false">
+		<choice req="HID_BRAIN_DONATION" max_group="2" blue="false">
 			<text id="text_HAVE_BRAIN_DONATION"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_clan" max_group="2" blue="false">
+		<choice req="scrapped_clan" max_group="2" blue="false">
 			<text id="text_SCRAPPED_BRAIN_DONATION"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text id="text_SCRAP_BRAIN_DONATION"/>
 			<event load="SCRAP_BRAIN_DONATION"/>
 		</choice>
@@ -221,10 +221,10 @@
 			<text id="text_HAVE_DEATH_VESTS2"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_DEATH_VESTS2"/>
 			<event name="GET_DEATH_VESTS2">
-				<text>You retrieve the Twlight Vests and force all crew to put them on. Strangely, none resist or argue, as if hypnotized by the vest's aura. </text>
+				<text>You retrieve the Twilight Vests and force all crew to put them on. Strangely, none resist or argue, as if hypnotized by the vest's aura. </text>
 				<choice hidden="true">
 					<text>Continue...</text>
 					<event>
@@ -240,15 +240,15 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="HID_DEATH_VESTS2" max_group="2" blue="false">
+		<choice req="HID_DEATH_VESTS2" max_group="2" blue="false">
 			<text id="text_HAVE_DEATH_VESTS2"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_dusk" max_group="2" blue="false">
+		<choice req="scrapped_dusk" max_group="2" blue="false">
 			<text id="text_SCRAPPED_DEATH_VESTS2"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text id="text_SCRAP_DEATH_VESTS2"/>
 			<event name="SCRAP_DEATH_VESTS2">
 				<text>You scrap the Twilight Vests for valuable resources.</text>
@@ -282,20 +282,20 @@
 			<text id="text_HAVE_DEATH_VESTS2"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_DEATH_VESTS2"/>
 			<event load="GET_DEATH_VESTS2"/>
 		</choice>
 
-		<choice hidden="false" req="HID_DEATH_VESTS2" max_group="2" blue="false">
+		<choice req="HID_DEATH_VESTS2" max_group="2" blue="false">
 			<text id="text_HAVE_DEATH_VESTS2"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_dusk" max_group="2" blue="false">
+		<choice req="scrapped_dusk" max_group="2" blue="false">
 			<text id="text_SCRAPPED_DEATH_VESTS2"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text id="text_SCRAP_DEATH_VESTS2"/>
 			<event load="SCRAP_DEATH_VESTS2"/>
 		</choice>
@@ -346,7 +346,7 @@
 			<text id="text_HAVE_UPG_DRONE_COOLDOWN"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_UPG_DRONE_COOLDOWN"/>
 			<event name="GET_UPG_DRONE_COOLDOWN">
 				<hiddenAug>HID_UPG_DRONE_COOLDOWN</hiddenAug>
@@ -365,15 +365,15 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="HID_UPG_DRONE_COOLDOWN" max_group="2" blue="false">
+		<choice req="HID_UPG_DRONE_COOLDOWN" max_group="2" blue="false">
 			<text id="text_HAVE_UPG_DRONE_COOLDOWN"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_engi" max_group="2" blue="false">
+		<choice req="scrapped_engi" max_group="2" blue="false">
 			<text id="text_SCRAPPED_UPG_DRONE_COOLDOWN"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text id="text_SCRAP_UPG_DRONE_COOLDOWN"/>
 			<event name="SCRAP_UPG_DRONE_COOLDOWN">
 				<text>You scrap the Drone Booster "Kai" for valuable resources.</text>
@@ -405,20 +405,20 @@
 			<text id="text_HAVE_UPG_DRONE_COOLDOWN"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_UPG_DRONE_COOLDOWN"/>
 			<event load="GET_UPG_DRONE_COOLDOWN"/>
 		</choice>
 
-		<choice hidden="false" req="HID_UPG_DRONE_COOLDOWN" max_group="2" blue="false">
+		<choice req="HID_UPG_DRONE_COOLDOWN" max_group="2" blue="false">
 			<text id="text_HAVE_UPG_DRONE_COOLDOWN"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_engi" max_group="2" blue="false">
+		<choice req="scrapped_engi" max_group="2" blue="false">
 			<text id="text_SCRAPPED_UPG_DRONE_COOLDOWN"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text id="text_SCRAP_UPG_DRONE_COOLDOWN"/>
 			<event load="SCRAP_UPG_DRONE_COOLDOWN"/>
 		</choice>
@@ -476,7 +476,7 @@
 			<text>You already have the Earl Grey tea.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_TEA_EARL"/>
 			<event name="GET_TEA_EARL">
 				<hiddenAug>HID_TEA_EARL</hiddenAug>
@@ -495,15 +495,15 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="HID_TEA_EARL" max_group="2" blue="false">
+		<choice req="HID_TEA_EARL" max_group="2" blue="false">
 			<text>You already have the Earl Grey tea.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_freemantis" max_group="2" blue="false">
+		<choice req="scrapped_freemantis" max_group="2" blue="false">
 			<text>You already scrapped the Earl Grey tea.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Earl Grey tea.</text>
 			<event name="SCRAP_TEA_EARL">
 				<text>You scrap the Earl Grey tea for valuable resources.</text>
@@ -534,20 +534,20 @@
 			<text>You already have the Earl Grey tea.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_TEA_EARL"/>
 			<event load="GET_TEA_EARL"/>
 		</choice>
 
-		<choice hidden="false" req="HID_TEA_EARL" max_group="2" blue="false">
+		<choice req="HID_TEA_EARL" max_group="2" blue="false">
 			<text>You already have the Earl Grey tea.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_freemantis" max_group="2" blue="false">
+		<choice req="scrapped_freemantis" max_group="2" blue="false">
 			<text>You already scrapped the Earl Grey tea.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Earl Grey tea.</text>
 			<event load="SCRAP_TEA_EARL"/>
 		</choice>
@@ -601,7 +601,7 @@
 			<text>You already have the Reality Reloader.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_REALITY_RELOADER"/>
 			<event name="GET_REALITY_RELOADER">
 				<hiddenAug>HID_REALITY_RELOADER</hiddenAug>
@@ -621,15 +621,15 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="HID_REALITY_RELOADER" max_group="2" blue="false">
+		<choice req="HID_REALITY_RELOADER" max_group="2" blue="false">
 			<text>You already have the Reality Reloader.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_lostsun" max_group="2" blue="false">
+		<choice req="scrapped_lostsun" max_group="2" blue="false">
 			<text>You already scrapped the Reality Reloader.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Reality Reloader.</text>
 			<event name="SCRAP_REALITY_RELOADER">
 				<text>You scrap the Reality Reloader for valuable resources.</text>
@@ -659,20 +659,20 @@
 			<text>You already have the Reality Reloader.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_REALITY_RELOADER"/>
 			<event load="GET_REALITY_RELOADER"/>
 		</choice>
 
-		<choice hidden="false" req="HID_REALITY_RELOADER" max_group="2" blue="false">
+		<choice req="HID_REALITY_RELOADER" max_group="2" blue="false">
 			<text>You already have the Reality Reloader.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_lostsun" max_group="2" blue="false">
+		<choice req="scrapped_lostsun" max_group="2" blue="false">
 			<text>You already scrapped the Reality Reloader.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Reality Reloader.</text>
 			<event load="SCRAP_REALITY_RELOADER"/>
 		</choice>
@@ -849,7 +849,7 @@
 			<text>You already have the Pheromone Accelerator.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_MANTIS_RELOADER"/>
 			<event name="GET_MANTIS_RELOADER">
 				<hiddenAug>HID_MANTIS_RELOADER</hiddenAug>
@@ -870,15 +870,15 @@
 		</choice>
 
 
-		<choice hidden="false" req="HID_MANTIS_RELOADER" max_group="2" blue="false">
+		<choice req="HID_MANTIS_RELOADER" max_group="2" blue="false">
 			<text>You already have the Pheromone Accelerator.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_mantis" max_group="2" blue="false">
+		<choice req="scrapped_mantis" max_group="2" blue="false">
 			<text>You already scrapped the Pheromone Accelerator.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Pheromone Accelerator.</text>
 			<event name="SCRAP_MANTIS_RELOADER">
 				<text>You scrap the Pheromone Accelerator for valuable resources.</text>
@@ -912,20 +912,20 @@
 			<text>You already have the Pheromone Accelerator.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_MANTIS_RELOADER"/>
 			<event load="GET_MANTIS_RELOADER"/>
 		</choice>
 
-		<choice hidden="false" req="HID_MANTIS_RELOADER" max_group="2" blue="false">
+		<choice req="HID_MANTIS_RELOADER" max_group="2" blue="false">
 			<text>You already have the Pheromone Accelerator.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_mantis" max_group="2" blue="false">
+		<choice req="scrapped_mantis" max_group="2" blue="false">
 			<text>You already scrapped the Pheromone Accelerator.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Pheromone Accelerator.</text>
 			<event load="SCRAP_MANTIS_RELOADER"/>
 		</choice>
@@ -969,7 +969,7 @@
 			<text>You already have the Aether Ascension Shields.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_FM_UPG_AETHER_SHIELDS"/>
 			<event name="GET_FM_UPG_AETHER_SHIELDS">
 				<hiddenAug>HID_FM_UPG_AETHER_SHIELDS</hiddenAug>
@@ -989,15 +989,15 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="HID_FM_UPG_AETHER_SHIELDS" max_group="2" blue="false">
+		<choice req="HID_FM_UPG_AETHER_SHIELDS" max_group="2" blue="false">
 			<text>You already have the Aether Ascension Shields.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_monk" max_group="2" blue="false">
+		<choice req="scrapped_monk" max_group="2" blue="false">
 			<text>You already scrapped the Aether Ascension Shields.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Aether Ascension Shields.</text>
 			<event name="SCRAP_FM_UPG_AETHER_SHIELDS">
 				<text>You scrap the Aether Ascension Shields for valuable resources.</text>
@@ -1027,20 +1027,20 @@
 			<text>You already have the Aether Ascension Shields.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_FM_UPG_AETHER_SHIELDS"/>
 			<event load="GET_FM_UPG_AETHER_SHIELDS"/>
 		</choice>
 
-		<choice hidden="false" req="HID_FM_UPG_AETHER_SHIELDS" max_group="2" blue="false">
+		<choice req="HID_FM_UPG_AETHER_SHIELDS" max_group="2" blue="false">
 			<text>You already have the Aether Ascension Shields.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_monk" max_group="2" blue="false">
+		<choice req="scrapped_monk" max_group="2" blue="false">
 			<text>You already scrapped the Aether Ascension Shields.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Aether Ascension Shields.</text>
 			<event load="SCRAP_FM_UPG_AETHER_SHIELDS"/>
 		</choice>
@@ -1100,7 +1100,7 @@
 			<text>You already have the Rockmen Relic of Freedom.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_FREEDOM_ROCK"/>
 			<event name="GET_FREEDOM_ROCK">
 				<hiddenAug>HID_FREEDOM_ROCK</hiddenAug>
@@ -1120,15 +1120,15 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="HID_FREEDOM_ROCK" max_group="2" blue="false">
+		<choice req="HID_FREEDOM_ROCK" max_group="2" blue="false">
 			<text>You already have the Rockmen Relic of Freedom.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_rock" max_group="2" blue="false">
+		<choice req="scrapped_rock" max_group="2" blue="false">
 			<text>You already scrapped the Rockmen Relic of Freedom.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Rockmen Relic of Freedom.</text>
 			<event name="SCRAP_FREEDOM_ROCK">
 				<text>You scrap the Rockmen Relic of Freedom for valuable resources.</text>
@@ -1158,20 +1158,20 @@
 			<text>You already have the Rockmen Relic of Freedom.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_FREEDOM_ROCK"/>
 			<event load="GET_FREEDOM_ROCK"/>
 		</choice>
 
-		<choice hidden="false" req="HID_FREEDOM_ROCK" max_group="2" blue="false">
+		<choice req="HID_FREEDOM_ROCK" max_group="2" blue="false">
 			<text>You already have the Rockmen Relic of Freedom.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_rock" max_group="2" blue="false">
+		<choice req="scrapped_rock" max_group="2" blue="false">
 			<text>You already scrapped the Rockmen Relic of Freedom.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Rockmen Relic of Freedom.</text>
 			<event load="SCRAP_FREEDOM_ROCK"/>
 		</choice>
@@ -1229,7 +1229,7 @@
 			<text>You already have the Magatama.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_AUG_MAGATAMA"/>
 			<event name="GET_AUG_MAGATAMA">
 				<hiddenAug>AUG_MAGATAMA</hiddenAug>
@@ -1249,15 +1249,15 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="AUG_MAGATAMA" max_group="2" blue="false">
+		<choice req="AUG_MAGATAMA" max_group="2" blue="false">
 			<text>You already have the Magatama.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_separatist" max_group="2" blue="false">
+		<choice req="scrapped_separatist" max_group="2" blue="false">
 			<text>You already scrapped the Magatama.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Magatama.</text>
 			<event name="SCRAP_AUG_MAGATAMA">
 				<text>You scrap the Magatama for valuable resources.</text>
@@ -1287,20 +1287,20 @@
 			<text>You already have the Magatama.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_AUG_MAGATAMA"/>
 			<event load="GET_AUG_MAGATAMA"/>
 		</choice>
 
-		<choice hidden="false" req="AUG_MAGATAMA" max_group="2" blue="false">
+		<choice req="AUG_MAGATAMA" max_group="2" blue="false">
 			<text>You already have the Magatama.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_separatist" max_group="2" blue="false">
+		<choice req="scrapped_separatist" max_group="2" blue="false">
 			<text>You already scrapped the Magatama.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Magatama.</text>
 			<event load="SCRAP_AUG_MAGATAMA"/>
 		</choice>
@@ -1393,7 +1393,7 @@
 			<text>You already have the Malboro Quasar.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_MALBORO_RED"/>
 			<event name="GET_MALBORO_RED">
 				<hiddenAug>HID_MALBORO_RED</hiddenAug>
@@ -1413,15 +1413,15 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="HID_MALBORO_RED" max_group="2" blue="false">
+		<choice req="HID_MALBORO_RED" max_group="2" blue="false">
 			<text>You already have the Malboro Quasar.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_slug" max_group="2" blue="false">
+		<choice req="scrapped_slug" max_group="2" blue="false">
 			<text>You already scrapped the Malboro Quasar.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Malboro Quasar.</text>
 			<event name="SCRAP_MALBORO_RED">
 				<text>You scrap the Malboro Quasar for valuable resources.</text>
@@ -1451,20 +1451,20 @@
 			<text>You already have the Malboro Quasar.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_MALBORO_RED"/>
 			<event load="GET_MALBORO_RED"/>
 		</choice>
 
-		<choice hidden="false" req="HID_MALBORO_RED" max_group="2" blue="false">
+		<choice req="HID_MALBORO_RED" max_group="2" blue="false">
 			<text>You already have the Malboro Quasar.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_slug" max_group="2" blue="false">
+		<choice req="scrapped_slug" max_group="2" blue="false">
 			<text>You already scrapped the Malboro Quasar.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Malboro Quasar.</text>
 			<event load="SCRAP_MALBORO_RED"/>
 		</choice>
@@ -1583,7 +1583,7 @@
 						</choice>
 					</event>
 				</choice>
-				<choice hidden="false">
+				<choice>
 					<text>I want nothing that you are offering.</text>
 					<event>
 
@@ -1615,7 +1615,7 @@
 			<text>You already have the Limit Release.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_LAB_ZOLTAN_LIMIT_RELEASE"/>
 			<event name="GET_LAB_ZOLTAN_LIMIT_RELEASE">
 				<text>You add the Limit Release into your ship's armory. </text>
@@ -1635,15 +1635,15 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="HID_LAB_ZOLTAN_LIMIT_RELEASE" max_group="2" blue="false">
+		<choice req="HID_LAB_ZOLTAN_LIMIT_RELEASE" max_group="2" blue="false">
 			<text>You already have the Limit Release.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_zoltan" max_group="2" blue="false">
+		<choice req="scrapped_zoltan" max_group="2" blue="false">
 			<text>You already scrapped the Limit Release.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Limit Release.</text>
 			<event name="SCRAP_LAB_ZOLTAN_LIMIT_RELEASE">
 				<text>You scrap the Limit Release for valuable resources.</text>
@@ -1673,20 +1673,20 @@
 			<text>You already have the Limit Release.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_LAB_ZOLTAN_LIMIT_RELEASE"/>
 			<event load="GET_LAB_ZOLTAN_LIMIT_RELEASE"/>
 		</choice>
 
-		<choice hidden="false" req="HID_LAB_ZOLTAN_LIMIT_RELEASE" max_group="2" blue="false">
+		<choice req="HID_LAB_ZOLTAN_LIMIT_RELEASE" max_group="2" blue="false">
 			<text>You already have the Limit Release.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_zoltan" max_group="2" blue="false">
+		<choice req="scrapped_zoltan" max_group="2" blue="false">
 			<text>You already scrapped the Limit Release.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Limit Release.</text>
 			<event load="SCRAP_LAB_ZOLTAN_LIMIT_RELEASE"/>
 		</choice>
@@ -1735,7 +1735,7 @@
 			<text>You already have the Combustion Bioweapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text>Internalize the Combustion Bioweapon...
 				[This Bioweapon infects all of your crew, giving all of them the active ability Combust. For the Shell race, its existing Combust abilities are upgraded, typically costing less health or being more potent.]
 			</text>
@@ -1756,15 +1756,15 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="HID_COMBUSTION_VIRUS" max_group="2" blue="false">
+		<choice req="HID_COMBUSTION_VIRUS" max_group="2" blue="false">
 			<text>You already have the Combustion Bioweapon.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_shell" max_group="2" blue="false">
+		<choice req="scrapped_shell" max_group="2" blue="false">
 			<text>You already scrapped the Combustion Bioweapon.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Destroy the Combustion Bioweapon.</text>
 			<event>
 				<text>You destroy the Combustion Bioweapon(as safely as you can) and jettison it from your ship, then scrap the remains of the enemy ship for valuable resources.</text>
@@ -1786,7 +1786,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<hiddenAug>ACH_FM_BOSS_SHELL1</hiddenAug>
-		<choice hidden="false">
+		<choice>
 			<text>Internalize the Combustion Bioweapon...
 				[This Bioweapon infects all of your crew, giving all of them the active ability Combust. The Shell race, its existing Combust abilities are upgraded, typically costing less health or being more potent.]
 			</text>
@@ -1805,7 +1805,7 @@
 				</choice>
 			</event>
 		</choice>
-		<choice hidden="false">
+		<choice>
 			<text>Destroy the Combustion Bioweapon.</text>
 			<event>
 				<text>You destroy the Combustion Bioweapon(as safely as you can) and jettison it from your ship, then scrap the remains of the enemy ship for valuable resources.</text>
@@ -1822,7 +1822,7 @@
 	<event name="FM_BOSS_SHELL1_DESTROYED2">
 		<text>It seems as though this is the end of the poor Shell, but his ship dispenses a wave of horrific-looking drones onto yours! Perhaps it is an act of retaliation?</text>
 		<boarders min="1" max="1" class="technoroomba"/>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Continue...</text>
 			<event>
 				<text>They just keep coming! You'll have to destroy the ship itself!</text>
@@ -1870,7 +1870,7 @@
 			<text>You already the have Drone Boost MK II.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_UPG_DRONE_SPEED_2"/>
 			<event name="GET_UPG_DRONE_SPEED_2">
 				<hiddenAug>HID_UPG_DRONE_SPEED_2</hiddenAug>
@@ -1890,15 +1890,15 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="HID_UPG_DRONE_SPEED_2" max_group="2" blue="false">
+		<choice req="HID_UPG_DRONE_SPEED_2" max_group="2" blue="false">
 			<text>You already have the Drone Boost MK II.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_engineer" max_group="2" blue="false">
+		<choice req="scrapped_engineer" max_group="2" blue="false">
 			<text>You already scrapped the Drone Boost MK II.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Drone Boost MK II.</text>
 			<event  name="SCRAP_UPG_DRONE_SPEED_2">
 				<text>You scrap the Drone Boost MK IIfor valuable resources.</text>
@@ -1930,20 +1930,20 @@
 			<text>You already have the Drone Boost MK II.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_UPG_DRONE_SPEED_2"/>
 			<event load="GET_UPG_DRONE_SPEED_2"/>
 		</choice>
 
-		<choice hidden="false" req="HID_UPG_DRONE_SPEED_2" max_group="2" blue="false">
+		<choice req="HID_UPG_DRONE_SPEED_2" max_group="2" blue="false">
 			<text>You already have the Drone Boost MK II.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_engineer" max_group="2" blue="false">
+		<choice req="scrapped_engineer" max_group="2" blue="false">
 			<text>You already scrapped the Drone Boost MK II.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Drone Boost MK II.</text>
 			<event load="SCRAP_UPG_DRONE_SPEED_2"/>
 		</choice>
@@ -1989,7 +1989,7 @@
 			<text>You already have the Scrapmetal Fireheart.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_FIRE_HEART"/>
 			<event name="GET_FIRE_HEART">
 				<hiddenAug>HID_FIRE_HEART</hiddenAug>
@@ -2009,15 +2009,15 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="HID_FIRE_HEART" max_group="2" blue="false">
+		<choice req="HID_FIRE_HEART" max_group="2" blue="false">
 			<text>You already have the Scrapmetal Fireheart.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_lanius" max_group="2" blue="false">
+		<choice req="scrapped_lanius" max_group="2" blue="false">
 			<text>You already scrapped the Scrapmetal Fireheart.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Scrapmetal Fireheart.</text>
 			<event name="SCRAP_FIRE_HEART">
 				<text>You scrap the Scrapmetal Fireheart for valuable resources.</text>
@@ -2047,20 +2047,20 @@
 			<text>You already have the Scrapmetal Fireheart.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_FIRE_HEART"/>
 			<event load="GET_FIRE_HEART"/>
 		</choice>
 
-		<choice hidden="false" req="HID_FIRE_HEART" max_group="2" blue="false">
+		<choice req="HID_FIRE_HEART" max_group="2" blue="false">
 			<text>You already have the Scrapmetal Fireheart.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_lanius" max_group="2" blue="false">
+		<choice req="scrapped_lanius" max_group="2" blue="false">
 			<text>You already scrapped the Scrapmetal Fireheart.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Scrapmetal Fireheart.</text>
 			<event load="SCRAP_FIRE_HEART"/>
 		</choice>
@@ -2079,11 +2079,11 @@
 			<text>Continue...</text>
 			<event>
 				<text>You are immediately hailed by the ship. "Are you the Gatekeeper?" An otherworldly chorus of voices asks, but you can't make out much on the screen.</text>
-				<choice hidden="false" req="TWISTED_LOSTSUN" lvl="1" max_group="1" blue="true">
+				<choice req="TWISTED_LOSTSUN" lvl="1" max_group="1" blue="true">
 					<text>(Twisted Lostsun) I seriously don't have time for games.</text>
 					<event>
 						<text>"O-Oh...I had a whole speech planned about keys and gates, I s-suppose that was rude of me."</text>
-						<choice hidden="false" req="TWISTED_LOSTSUN" lvl="1" max_group="1" blue="false">
+						<choice req="TWISTED_LOSTSUN" lvl="1" max_group="1" blue="false">
 							<text>Yeah, it kinda was.</text>
 							<event>
 								<status type="limit" target="enemy" system="weapons" amount="0"/>
@@ -2174,7 +2174,7 @@
 			<text>You already have Gozer's Fridge.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_GOZER_FRIDGE"/>
 			<event name="GET_GOZER_FRIDGE">
 				<hiddenAug>HID_GOZER_FRIDGE</hiddenAug>
@@ -2194,15 +2194,15 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="HID_GOZER_FRIDGE" max_group="2" blue="false">
+		<choice req="HID_GOZER_FRIDGE" max_group="2" blue="false">
 			<text>You already have Gozer's Fridge.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_kestrel" max_group="2" blue="false">
+		<choice req="scrapped_kestrel" max_group="2" blue="false">
 			<text>You already scrapped Gozer's Fridge.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap Gozer's Fridge.</text>
 			<event name="SCRAP_GOZER_FRIDGE">
 				<text>You scrap Gozer's Fridge for valuable resources.</text>
@@ -2236,20 +2236,20 @@
 			<text>You already have Gozer's Fridge.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_GOZER_FRIDGE"/>
 			<event load="GET_GOZER_FRIDGE"/>
 		</choice>
 
-		<choice hidden="false" req="HID_GOZER_FRIDGE" max_group="2" blue="false">
+		<choice req="HID_GOZER_FRIDGE" max_group="2" blue="false">
 			<text>You already have Gozer's Fridge.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_kestrel" max_group="2" blue="false">
+		<choice req="scrapped_kestrel" max_group="2" blue="false">
 			<text>You already scrapped Gozer's Fridge.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap Gozer's Fridge.</text>
 			<event load="SCRAP_GOZER_FRIDGE"/>
 		</choice>
@@ -2329,7 +2329,7 @@
 			<text>You already have the Twisted Ammo Fabricator.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_UPG_WEAPONS_REPLICATOR_2"/>
 			<event name="GET_UPG_WEAPONS_REPLICATOR_2">
 				<hiddenAug>HID_UPG_WEAPONS_REPLICATOR_2</hiddenAug>
@@ -2349,15 +2349,15 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="HID_UPG_WEAPONS_REPLICATOR_2" max_group="2" blue="false">
+		<choice req="HID_UPG_WEAPONS_REPLICATOR_2" max_group="2" blue="false">
 			<text>You already have the Twisted Ammo Fabricator.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_federation" max_group="2" blue="false">
+		<choice req="scrapped_federation" max_group="2" blue="false">
 			<text>You already scrapped the Twisted Ammo Fabricator.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Twisted Ammo Fabricator.</text>
 			<event name="SCRAP_UPG_WEAPONS_REPLICATOR_2">
 				<text>You scrap the Twisted Ammo Fabricator for valuable resources.</text>
@@ -2387,20 +2387,20 @@
 			<text>You already have the Twisted Ammo Fabricator.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_UPG_WEAPONS_REPLICATOR_2"/>
 			<event load="GET_UPG_WEAPONS_REPLICATOR_2"/>
 		</choice>
 
-		<choice hidden="false" req="HID_UPG_WEAPONS_REPLICATOR_2" max_group="2" blue="false">
+		<choice req="HID_UPG_WEAPONS_REPLICATOR_2" max_group="2" blue="false">
 			<text>You already have the Twisted Ammo Fabricator.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_federation" max_group="2" blue="false">
+		<choice req="scrapped_federation" max_group="2" blue="false">
 			<text>You already scrapped the Twisted Ammo Fabricator.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Twisted Ammo Fabricator.</text>
 			<event load="SCRAP_UPG_WEAPONS_REPLICATOR_2"/>
 		</choice>
@@ -2619,7 +2619,7 @@
 			<text>You already have the Golden Tuco.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_GOLDEN_TUCO"/>
 			<event name="GET_GOLDEN_TUCO">
 				<hiddenAug>HID_GOLDEN_TUCO</hiddenAug>
@@ -2639,15 +2639,15 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="HID_GOLDEN_TUCO" max_group="2" blue="false">
+		<choice req="HID_GOLDEN_TUCO" max_group="2" blue="false">
 			<text>You already have the Golden Tuco.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_tuco" max_group="2" blue="false">
+		<choice req="scrapped_tuco" max_group="2" blue="false">
 			<text>You already scrapped the Golden Tuco.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Golden Tuco.</text>
 			<event name="SCRAP_GOLDEN_TUCO">
 				<text>You scrap the Golden Tuco for valuable resources.</text>
@@ -2677,20 +2677,20 @@
 			<text>You already have the Golden Tuco.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_GOLDEN_TUCO"/>
 			<event load="GET_GOLDEN_TUCO"/>
 		</choice>
 
-		<choice hidden="false" req="HID_GOLDEN_TUCO" max_group="2" blue="false">
+		<choice req="HID_GOLDEN_TUCO" max_group="2" blue="false">
 			<text>You already have the Golden Tuco.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_tuco" max_group="2" blue="false">
+		<choice req="scrapped_tuco" max_group="2" blue="false">
 			<text>You already scrapped the Golden Tuco.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Golden Tuco.</text>
 			<event load="SCRAP_GOLDEN_TUCO"/>
 		</choice>
@@ -2786,7 +2786,7 @@
 			<text>You already have the Depression Emitter.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_DEPRESSION_EMITTER"/>
 			<event name="GET_DEPRESSION_EMITTER">
 				<hiddenAug>HID_DEPRESSION_EMITTER</hiddenAug>
@@ -2806,15 +2806,15 @@
 			</event>
 		</choice>
 
-		<choice hidden="false" req="HID_DEPRESSION_EMITTER" max_group="2" blue="false">
+		<choice req="HID_DEPRESSION_EMITTER" max_group="2" blue="false">
 			<text>You already have the Depression Emitter.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_leech" max_group="2" blue="false">
+		<choice req="scrapped_leech" max_group="2" blue="false">
 			<text>You already scrapped the Depression Emitter.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Depression Emitter.</text>
 			<event name="SCRAP_DEPRESSION_EMITTER">
 				<text>You scrap the Depression Emitter for valuable resources.</text>
@@ -2844,20 +2844,20 @@
 			<text>You already have the Depression Emitter.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_DEPRESSION_EMITTER"/>
 			<event load="GET_DEPRESSION_EMITTER"/>
 		</choice>
 
-		<choice hidden="false" req="HID_DEPRESSION_EMITTER" max_group="2" blue="false">
+		<choice req="HID_DEPRESSION_EMITTER" max_group="2" blue="false">
 			<text>You already have the Depression Emitter.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_leech" max_group="2" blue="false">
+		<choice req="scrapped_leech" max_group="2" blue="false">
 			<text>You already scrapped the Depression Emitter.</text>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text>Scrap the Depression Emitter.</text>
 			<event load="SCRAP_DEPRESSION_EMITTER"/>
 		</choice>
@@ -2934,22 +2934,22 @@
 			<text id="text_HAVE_BRAIN_DONATION"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_BRAIN_DONATION"/>
 			<event load="GET_BRAIN_DONATION"/>
 		</choice>
 
 
 
-		<choice hidden="false" req="HID_BRAIN_DONATION" max_group="2" blue="false">
+		<choice req="HID_BRAIN_DONATION" max_group="2" blue="false">
 			<text id="text_HAVE_BRAIN_DONATION"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_clan" max_group="2" blue="false">
+		<choice req="scrapped_clan" max_group="2" blue="false">
 			<text id="text_SCRAPPED_BRAIN_DONATION"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text id="text_SCRAP_BRAIN_DONATION"/>
 			<event load="SCRAP_BRAIN_DONATION"/>
 		</choice>
@@ -2970,20 +2970,20 @@
 			<text id="text_HAVE_BRAIN_DONATION"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_BRAIN_DONATION"/>
 			<event load="GET_BRAIN_DONATION"/>
 		</choice>
 
-		<choice hidden="false" req="HID_BRAIN_DONATION" max_group="2" blue="false">
+		<choice req="HID_BRAIN_DONATION" max_group="2" blue="false">
 			<text id="text_HAVE_BRAIN_DONATION"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_clan" max_group="2" blue="false">
+		<choice req="scrapped_clan" max_group="2" blue="false">
 			<text id="text_SCRAPPED_BRAIN_DONATION"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text id="text_SCRAP_BRAIN_DONATION"/>
 			<event load="SCRAP_BRAIN_DONATION"/>
 		</choice>
@@ -3042,20 +3042,20 @@
 			<text id="text_HAVE_DEATH_VESTS2"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_DEATH_VESTS2"/>
 			<event load="GET_DEATH_VESTS2"/>
 		</choice>
 
-		<choice hidden="false" req="HID_DEATH_VESTS2" max_group="2" blue="false">
+		<choice req="HID_DEATH_VESTS2" max_group="2" blue="false">
 			<text id="text_HAVE_DEATH_VESTS2"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_dusk" max_group="2" blue="false">
+		<choice req="scrapped_dusk" max_group="2" blue="false">
 			<text id="text_SCRAPPED_DEATH_VESTS2"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text id="text_SCRAP_DEATH_VESTS2"/>
 			<event load="SCRAP_DEATH_VESTS2"/>
 		</choice>
@@ -3076,20 +3076,20 @@
 			<text id="text_HAVE_DEATH_VESTS2"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_DEATH_VESTS2"/>
 			<event load="GET_DEATH_VESTS2"/>
 		</choice>
 
-		<choice hidden="false" req="HID_DEATH_VESTS2" max_group="2" blue="false">
+		<choice req="HID_DEATH_VESTS2" max_group="2" blue="false">
 			<text id="text_HAVE_DEATH_VESTS2"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_dusk" max_group="2" blue="false">
+		<choice req="scrapped_dusk" max_group="2" blue="false">
 			<text id="text_SCRAPPED_DEATH_VESTS2"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text id="text_SCRAP_DEATH_VESTS2"/>
 			<event load="SCRAP_DEATH_VESTS2"/>
 		</choice>
@@ -3133,20 +3133,20 @@
 			<text id="text_HAVE_UPG_DRONE_COOLDOWN"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_UPG_DRONE_COOLDOWN"/>
 			<event load="GET_UPG_DRONE_COOLDOWN"/>
 		</choice>
 
-		<choice hidden="false" req="HID_UPG_DRONE_COOLDOWN" max_group="2" blue="false">
+		<choice req="HID_UPG_DRONE_COOLDOWN" max_group="2" blue="false">
 			<text id="text_HAVE_UPG_DRONE_COOLDOWN"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_engi" max_group="2" blue="false">
+		<choice req="scrapped_engi" max_group="2" blue="false">
 			<text id="text_SCRAPPED_UPG_DRONE_COOLDOWN"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text id="text_SCRAP_UPG_DRONE_COOLDOWN"/>
 			<event load="SCRAP_UPG_DRONE_COOLDOWN"/>
 		</choice>
@@ -3167,20 +3167,20 @@
 			<text id="text_HAVE_UPG_DRONE_COOLDOWN"/>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="1" blue="false">
+		<choice req="pilot" lvl="1" max_group="1" blue="false">
 			<text id="text_GET_UPG_DRONE_COOLDOWN"/>
 			<event load="GET_UPG_DRONE_COOLDOWN"/>
 		</choice>
 
-		<choice hidden="false" req="HID_UPG_DRONE_COOLDOWN" max_group="2" blue="false">
+		<choice req="HID_UPG_DRONE_COOLDOWN" max_group="2" blue="false">
 			<text id="text_HAVE_UPG_DRONE_COOLDOWN"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="scrapped_engi" max_group="2" blue="false">
+		<choice req="scrapped_engi" max_group="2" blue="false">
 			<text id="text_SCRAPPED_UPG_DRONE_COOLDOWN"/>
 			<event load="FM_ONE_FUEL"/>
 		</choice>
-		<choice hidden="false" req="pilot" lvl="1" max_group="2" blue="false">
+		<choice req="pilot" lvl="1" max_group="2" blue="false">
 			<text id="text_SCRAP_UPG_DRONE_COOLDOWN"/>
 			<event load="SCRAP_UPG_DRONE_COOLDOWN"/>
 		</choice>

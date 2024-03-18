@@ -2,12 +2,13 @@
 <FTL>
 	<mod:findName type="event" name="LAST_STAND_START"><!--appending the part of the code that resets the makres for which menus were used-->
 		<mod-append:variable name="fm_called_forgemaster" op="set" val="0"/>
+		<mod-append:variable name="forgemaster_spawntriggered" op="set" val="0"/>
 	</mod:findName>
 
 
 	<mod:findName type="event" name="TRUE_LAST_STAND_START">
-		<mod-append:queueEvent>FORGEMASTER_SPAWNER</mod-append:queueEvent>
-		<mod:findLike type="choice"><mod:selector lvl="-2147483648" />
+		<!--<mod-append:queueEvent>FORGEMASTER_SPAWNER</mod-append:queueEvent>-->
+		<mod:findLike type="choice"><mod:selector lvl="-999" />
 			<mod:findLike type="event">
 				<mod-append:choice hidden="true" max_group="1" req="SHIP_GUNBOM" blue="false">
 					<text>Contact Federation command.</text>
@@ -99,13 +100,10 @@
 		</mod:findLike>
 	</mod:findName>
 
-	<mod:findName type="event" name="LASTSTAND_WARP_REAL">
-		<mod-append:variable name="forgemaster_spawntriggered" op="set" val="0"/>
-	</mod:findName>
 
-	<mod:findName type="event" name="TRUE_LAST_STAND_START_EXTREME">
+	<!--<mod:findName type="event" name="TRUE_LAST_STAND_START_EXTREME">
 		<mod-append:queueEvent>FORGEMASTER_SPAWNER</mod-append:queueEvent>
-	</mod:findName>
+	</mod:findName>-->
 </FTL>
 		<!--
 			<choice hidden="true" max_group="1" req="SHIP_GUNBOM" blue="false">

@@ -86,7 +86,7 @@
 
 	</mod-append:choice>
 
-	<mod-append:choice req="FM_SHOTGUN_NOBELIUM" lvl="1" max_group="602" hidden="true" blue="true">
+	<mod-append:choice req="ANY_FM_SHOTGUN_NOBELIUM" lvl="1" max_group="602" hidden="true" blue="true">
 		<text>(Nobelium) You cannot resist the urge to interfere...!</text>
 		<event>
 			<text>Using the sheer firepower of the Nobelium flak, you fire upon both vessels, nearly destroying them in one volley. They both immediately surrender to you, not daring risk another volley. "You've shown your hand you psychopath, what do you want?" The Zoltan asks. The Mantis ship sends you a generic template for a "Sureender Messahge", which seems to indicate they like to surrender quickly and without words. What a strange Mantis.</text>
@@ -124,7 +124,7 @@
 		</event>
 	</mod-append:choice>
 
-	<mod-append:choice req="FM_SHOTGUN_HASSIUM" lvl="1" max_group="603" hidden="true" blue="true">
+	<mod-append:choice req="ANY_FM_SHOTGUN_HASSIUM" lvl="1" max_group="603" hidden="true" blue="true">
 		<text>(Hassium) You cannot resist the urge to interfere...!</text>
 		<event>
 			<text>Using the sheer firepower of the Hassium flak, you fire upon both vessels, nearly destroying them in one volley. They both immediately surrender to you, not daring risk another volley. "You've shown your hand you psychopath, what do you want?" The Zoltan asks. The Mantis ship sends you a generic template for a "Sureender Messahge", which seems to indicate they like to surrender quickly and without words. What a strange Mantis.</text>

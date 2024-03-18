@@ -204,7 +204,7 @@ You can download it from the MV forums.
     </mod-append:eventButton>
     <mod-append:eventButton name="ADDON_RAD">
       <event load="ADDON_RAD_INFO"/>
-      <image border="0">addons/tcc</image>
+      <image border="0">addons/rad</image>
       <customLocation x="355" y="7"/><!--the image is 24 pixels wide so the x is bigger by 24 for each button-->
       <tooltip id="addon_hover_rad2"/>
       <jumpClear>false</jumpClear>

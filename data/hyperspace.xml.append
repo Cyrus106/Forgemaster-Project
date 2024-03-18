@@ -2411,194 +2411,70 @@
 			<name>FM_ENERGY_RAILBLENDER_LIST_PLUS</name>
 		</req>
 
-		<!-- BRONZE FLAK SUB-LIST -->
-		<req name="FM_SHOTGUN_BRONZE_LIST_1" type="all"> <!-- Crystal Burst Mark I + Flak I -->
-			<name>SHOTGUN_2</name>
+		<!-- BRONZE FLAK SUB-LIST -->		
+		<req name="FM_WEAPONS_CRYSTAL_NOELITE">
 			<name>CRYSTAL_BURST_1</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_2" type="all"> <!-- Elite Crystal Burst Mark I + Flak I -->
-			<name>SHOTGUN_2</name>
-			<name>CRYSTAL_BURST_1_RED</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_3" type="all"> <!-- Crystal Burst Mark II + Flak I -->
-			<name>SHOTGUN_2</name>
 			<name>CRYSTAL_BURST_2</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_4" type="all"> <!-- Elite Crystal Burst Mark II + Flak I -->
-			<name>SHOTGUN_2</name>
-			<name>CRYSTAL_BURST_2_RED</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_5" type="all"> <!-- Heavy Crystal Mark I + Flak I -->
-			<name>SHOTGUN_2</name>
 			<name>CRYSTAL_HEAVY_1</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_6" type="all"> <!-- Elite Heavy Crystal Mark I + Flak I -->
-			<name>SHOTGUN_2</name>
-			<name>CRYSTAL_HEAVY_1_RED</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_7" type="all"> <!-- Heavy Crystal Mark II + Flak I -->
-			<name>SHOTGUN_2</name>
 			<name>CRYSTAL_HEAVY_2</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_8" type="all"> <!-- Elite Heavy Crystal Mark II + Flak I -->
-			<name>SHOTGUN_2</name>
-			<name>CRYSTAL_HEAVY_2_RED</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_9" type="all"> <!-- Blunt Crystal Burst + Flak I -->
-			<name>SHOTGUN_2</name>
 			<name>CRYSTAL_STUN</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_10" type="all"> <!-- Elite Blunt Crystal Burst + Flak I -->
-			<name>SHOTGUN_2</name>
-			<name>CRYSTAL_STUN_RED</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_11" type="all"> <!-- Crystal Scatter + Flak I -->
-			<name>SHOTGUN_2</name>
 			<name>CRYSTAL_SHOTGUN</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_12" type="all"> <!-- Elite Crystal Scatter + Flak I -->
-			<name>SHOTGUN_2</name>
-			<name>CRYSTAL_SHOTGUN_RED</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_13" type="all"> <!-- Crystal Charger + Flak I -->
-			<name>SHOTGUN_2</name>
 			<name>CRYSTAL_CHARGEGUN</name>
+			<name>BOMB_LOCK</name>
 		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_14" type="all"> <!-- Elite Crystal Charger + Flak I -->
-			<name>SHOTGUN_2</name>
+		<req name="FM_WEAPONS_CRYSTAL_ELITE">
+			<name>CRYSTAL_BURST_1_RED</name>
+			<name>CRYSTAL_BURST_2_RED</name>
+			<name>CRYSTAL_HEAVY_1_RED</name>
+			<name>CRYSTAL_HEAVY_2_RED</name>
+			<name>CRYSTAL_STUN_RED</name>
+			<name>CRYSTAL_SHOTGUN_RED</name>
 			<name>CRYSTAL_CHARGEGUN_RED</name>
-		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_15" type="all"> <!-- Shard Launcher + Flak I -->
-			<name>SHOTGUN_2</name>
 			<name>MINELAUNCHER_CRYSTAL</name>
 		</req>
-
-		<req name="FM_SHOTGUN_BRONZE_LIST_FORGE" type="any"> <!-- Do you have the ingredients for a Bronze Flak ? If so, light up the category option BLUE in the crafting category menu! -->
-			<name>FM_SHOTGUN_BRONZE_LIST_1</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_2</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_3</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_4</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_5</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_6</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_7</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_8</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_9</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_10</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_11</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_12</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_13</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_14</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_15</name>
+		
+		<req name="FM_SHOTGUN_BRONZE_LIST_FORGE" type="all"> <!-- Do you have the ingredients for a Bronze Flak ? If so, light up the category option BLUE in the crafting category menu! -->
+			<name>SHOTGUN_2</name>
+			<req>
+				<name>FM_WEAPONS_CRYSTAL_NOELITE</name>
+				<name>FM_WEAPONS_CRYSTAL_ELITE</name>
+			</req>
+		</req>
+		<req name="FM_SHOTGUN_BRONZE_LIST_FORGE_PLAYER" type="all"> <!-- Do you have the ingredients for a Bronze Flak ? If so, light up the category option BLUE in the crafting category menu! -->
+			<name>SHOTGUN_2_PLAYER</name>
+			<req>
+				<name>FM_WEAPONS_CRYSTAL_NOELITE</name>
+				<name>FM_WEAPONS_CRYSTAL_ELITE</name>
+			</req>
+		</req>
+		
+		<req name="FM_SHOTGUN_BRONZE_LIST_FORGE_LIST">
+			<name>FM_SHOTGUN_BRONZE_LIST_FORGE</name>
+			<name>FM_SHOTGUN_BRONZE_LIST_FORGE_PLAYER</name>
 		</req>
 
 
 		<!-- PALLADIUM SUB SUB-LIST -->
-
-		<req name="FM_SHOTGUN_PALLADIUM_LIST_1" type="all"> <!-- Elite Crystal Burst Mark I + Palladium -->
+		<req name="FM_SHOTGUN_PALLADIUM_LIST_FULL" type="all"> <!-- Elite Crystal + Palladium -->
 			<name>FM_SHOTGUN_PALLADIUM</name>
-			<name>CRYSTAL_BURST_1_RED</name>
+			<name>FM_WEAPONS_CRYSTAL_ELITE</name>
 		</req>
-
-		<req name="FM_SHOTGUN_PALLADIUM_LIST_2" type="all"> <!-- Elite Crystal Burst Mark II + Palladium -->
-			<name>FM_SHOTGUN_PALLADIUM</name>
-			<name>CRYSTAL_BURST_2_RED</name>
-		</req>
-
-		<req name="FM_SHOTGUN_PALLADIUM_LIST_3" type="all"> <!-- Elite Heavy Crystal Mark I + Palladium -->
-			<name>FM_SHOTGUN_PALLADIUM</name>
-			<name>CRYSTAL_HEAVY_1_RED</name>
-		</req>
-
-		<req name="FM_SHOTGUN_PALLADIUM_LIST_4" type="all"> <!-- Elite Heavy Crystal Mark II + Palladium -->
-			<name>FM_SHOTGUN_PALLADIUM</name>
-			<name>CRYSTAL_HEAVY_2_RED</name>
-		</req>
-
-		<req name="FM_SHOTGUN_PALLADIUM_LIST_5" type="all"> <!-- Elite Blunt Crystal Burst + Palladium -->
-			<name>FM_SHOTGUN_PALLADIUM</name>
-			<name>CRYSTAL_STUN_RED</name>
-		</req>
-
-		<req name="FM_SHOTGUN_PALLADIUM_LIST_6" type="all"> <!-- Elite Crystal Scatter + Palladium -->
-			<name>FM_SHOTGUN_PALLADIUM</name>
-			<name>CRYSTAL_SHOTGUN_RED</name>
-		</req>
-
-		<req name="FM_SHOTGUN_PALLADIUM_LIST_7" type="all"> <!-- Elite Crystal Charger + Palladium -->
-			<name>FM_SHOTGUN_PALLADIUM</name>
-			<name>CRYSTAL_CHARGEGUN_RED</name>
-		</req>
-
-		<req name="FM_SHOTGUN_PALLADIUM_LIST_FULL" type="any"> <!-- Elite Crystal Charger + Palladium -->
-			<name>FM_SHOTGUN_PALLADIUM_LIST_1</name>
-			<name>FM_SHOTGUN_PALLADIUM_LIST_2</name>
-			<name>FM_SHOTGUN_PALLADIUM_LIST_3</name>
-			<name>FM_SHOTGUN_PALLADIUM_LIST_4</name>
-			<name>FM_SHOTGUN_PALLADIUM_LIST_5</name>
-			<name>FM_SHOTGUN_PALLADIUM_LIST_6</name>
-			<name>FM_SHOTGUN_PALLADIUM_LIST_7</name>
+		<req name="FM_SHOTGUN_PALLADIUM_LIST_FULL_PLAYER" type="all"> <!-- Elite Crystal + Palladium -->
+			<name>FM_SHOTGUN_PALLADIUM_PLAYER</name>
+			<name>FM_WEAPONS_CRYSTAL_ELITE</name>
 		</req>
 
 
 		<!-- NOBELLIUM SUB SUB-LIST -->
 
-		<req name="FM_SHOTGUN_NOBELIUM_LIST_1" type="all"> <!-- Elite Crystal Burst Mark I + Nobelium -->
-			<name>FM_SHOTGUN_NOBELIUM</name>
-			<name>CRYSTAL_BURST_1_RED</name>
-		</req>
 
-		<req name="FM_SHOTGUN_NOBELIUM_LIST_2" type="all"> <!-- Elite Crystal Burst Mark II + Nobelium -->
+		<req name="FM_SHOTGUN_NOBELIUM_LIST_FULL" type="all"> <!-- Elite Crystal + Palladium -->
 			<name>FM_SHOTGUN_NOBELIUM</name>
-			<name>CRYSTAL_BURST_2_RED</name>
+			<name>FM_WEAPONS_CRYSTAL_ELITE</name>
 		</req>
-
-		<req name="FM_SHOTGUN_NOBELIUM_LIST_3" type="all"> <!-- Elite Heavy Crystal Mark I + Nobelium -->
-			<name>FM_SHOTGUN_NOBELIUM</name>
-			<name>CRYSTAL_HEAVY_1_RED</name>
-		</req>
-
-		<req name="FM_SHOTGUN_NOBELIUM_LIST_4" type="all"> <!-- Elite Heavy Crystal Mark II + Nobelium -->
-			<name>FM_SHOTGUN_NOBELIUM</name>
-			<name>CRYSTAL_HEAVY_2_RED</name>
-		</req>
-
-		<req name="FM_SHOTGUN_NOBELIUM_LIST_5" type="all"> <!-- Elite Blunt Crystal Burst + Nobelium -->
-			<name>FM_SHOTGUN_NOBELIUM</name>
-			<name>CRYSTAL_STUN_RED</name>
-		</req>
-
-		<req name="FM_SHOTGUN_NOBELIUM_LIST_6" type="all"> <!-- Elite Crystal Scatter + Nobelium -->
-			<name>FM_SHOTGUN_NOBELIUM</name>
-			<name>CRYSTAL_SHOTGUN_RED</name>
-		</req>
-
-		<req name="FM_SHOTGUN_NOBELIUM_LIST_7" type="all"> <!-- Elite Crystal Charger + Nobelium -->
-			<name>FM_SHOTGUN_NOBELIUM</name>
-			<name>CRYSTAL_CHARGEGUN_RED</name>
-		</req>
-
-		<req name="FM_SHOTGUN_NOBELIUM_LIST_FULL" type="any"> <!-- Elite Crystal Charger + Palladium -->
-			<name>FM_SHOTGUN_NOBELIUM_LIST_1</name>
-			<name>FM_SHOTGUN_NOBELIUM_LIST_2</name>
-			<name>FM_SHOTGUN_NOBELIUM_LIST_3</name>
-			<name>FM_SHOTGUN_NOBELIUM_LIST_4</name>
-			<name>FM_SHOTGUN_NOBELIUM_LIST_5</name>
-			<name>FM_SHOTGUN_NOBELIUM_LIST_6</name>
-			<name>FM_SHOTGUN_NOBELIUM_LIST_7</name>
+		<req name="FM_SHOTGUN_NOBELIUM_LIST_FULL_PLAYER" type="all"> <!-- Elite Crystal + Palladium -->
+			<name>FM_SHOTGUN_NOBELIUM_PLAYER</name>
+			<name>FM_WEAPONS_CRYSTAL_ELITE</name>
 		</req>
 		<!-- BRONZE FLAK SUB-LIST END -->
 
@@ -2934,7 +2810,7 @@
 		<req name="FM_FLAK_FORGE_LIST" type="any"> <!-- Do you have the ingredients for a Flak weapon? If so, light up the category option BLUE in the crafting category menu! -->
 			<name>FM_SHOTGUN_ANOMALY_FORGE_LIST</name>
 			<name>FM_SHOTGUN_AETHER_LIST</name>
-			<name>FM_SHOTGUN_BRONZE_LIST_FORGE</name>
+			<name>FM_SHOTGUN_BRONZE_LIST_FORGE_LIST</name>
 			<name>FM_SHOTGUN_CURSED_LIST</name>
 			<name>FM_ENERGY_RAILBLENDER_FORGE_LIST</name>
 		</req>
@@ -3023,6 +2899,15 @@
 			<name>FM_SHOTGUN_PLATINUM</name>
 			<name>FM_SHOTGUN_OSMIUM</name>
 			<name>FM_SHOTGUN_NOBELIUM</name>
+			<name>FM_SHOTGUN_BRONZE_PLAYER</name>
+			<name>FM_SHOTGUN_INDIUM_PLAYER</name>
+			<name>FM_SHOTGUN_RHENIUM_PLAYER</name>
+			<name>FM_SHOTGUN_SILVER_PLAYER</name>
+			<name>FM_SHOTGUN_PALLADIUM_PLAYER</name>
+			<name>FM_SHOTGUN_IRIDIUM_PLAYER</name>
+			<name>FM_SHOTGUN_PLATINUM_PLAYER</name>
+			<name>FM_SHOTGUN_OSMIUM_PLAYER</name>
+			<name>FM_SHOTGUN_NOBELIUM_PLAYER</name>
 		</req>
 
 		<req name="FM_COMBAT_DRONE_FORGE_LIST_STORAGE" type="all">
@@ -3640,6 +3525,14 @@
 			<name>FM_BEAM_GUILLOTINE_CHAIN_PLAYER</name>
 			<name>FM_BEAM_GUILLOTINE_CHAIN_PLAYER_INVIS</name>
 		</req>
+		<req name="ANY_FM_SHOTGUN_NOBELIUM">
+			<name>FM_SHOTGUN_NOBELIUM</name>
+			<name>FM_SHOTGUN_NOBELIUM_PLAYER</name>
+		</req>
+		<req name="ANY_FM_SHOTGUN_HASSIUM">
+			<name>FM_SHOTGUN_HASSIUM</name>
+			<name>FM_SHOTGUN_HASSIUM_PLAYER</name>
+		</req>
 	</events>
 
 	<events> <!-- Forgemaster Crew Talks -->
@@ -3795,7 +3688,7 @@
 		<req name="FM_BOSS_2_2" type="all">
 			<name>ACH ACH_TWISTED_REN_SEPARATIST</name>
 			<req lvl="0" max_lvl="0">
-				<name>ach_fm_boss_spearatist</name>
+				<name>ach_fm_boss_separatist</name>
 			</req>
 		</req>
 		<req name="FM_BOSS_2_3" type="all">
@@ -3849,7 +3742,7 @@
 		<req name="FM_BOSS_5_2" type="all">
 			<name>ACH ACH_TWISTED_REN_ENGINEER</name>
 			<req lvl="0" max_lvl="0">
-				<name>ach_fm_boss_rock</name>
+				<name>ach_fm_boss_engineer</name>
 			</req>
 		</req>
 		<req name="FM_BOSS_5_3" type="all">
@@ -3867,7 +3760,7 @@
 		<req name="FM_BOSS_6_2" type="all">
 			<name>ACH ACH_TWISTED_REN_FED</name>
 			<req lvl="0" max_lvl="0">
-				<name>ach_fm_boss_FED</name>
+				<name>ach_fm_boss_fed</name>
 			</req>
 		</req>
 		<req name="FM_BOSS_6_3" type="all">
@@ -3879,13 +3772,13 @@
 		<req name="FM_BOSS_7_1" type="all">
 			<name>ACH ACH_TWISTED_REN_CRYSTAL</name>
 			<req lvl="0" max_lvl="0">
-				<name>ach_fm_boss_kestrel</name>
+				<name>ach_fm_boss_crystal</name>
 			</req>
 		</req>
 		<req name="FM_BOSS_7_2" type="all">
 			<name>ACH ACH_TWISTED_REN_TUCO</name>
 			<req lvl="0" max_lvl="0">
-				<name>ach_fm_boss_FED</name>
+				<name>ach_fm_boss_tuco</name>
 			</req>
 		</req>
 		<req name="FM_BOSS_7_3" type="all">
@@ -3982,6 +3875,9 @@
 				<name>fm_forgemaster_called</name>
 			</req>
 			<req type="any" lvl="0" max_lvl="0">
+				<req lvl="0" max_lvl="0">
+					<name>fm_forgemaster_phone</name>
+				</req>
 				<name>fm_forgemaster_dead</name>
 				<name>forgemaster_spawntriggered</name>
 				<name>SEC SECRET_SYLVAN</name>
@@ -13509,7 +13405,16 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<mod-append:name>coords_twisted</mod-append:name>
 		</mod:findName>
 		<mod:findName name="COORDS_BOSS">
-			<mod-append:name>coords_twisted</mod-append:name>
+			<mod:findWithChildLike type="req" child-type="name">
+				<mod:selector>coords_spider</mod:selector>
+				<mod-append:name>coords_twisted</mod-append:name>
+			</mod:findWithChildLike>
+		</mod:findName>
+		<mod:findName name="COORDS_BOSS_TOOLATE">
+			<mod:findWithChildLike type="req" child-type="name">
+				<mod:selector>coords_spider</mod:selector>
+				<mod-append:name>coords_twisted</mod-append:name>
+			</mod:findWithChildLike>
 		</mod:findName>
 		<mod:findName name="LIST_CHECK_AUGMENTS">
 			<mod-append:name>TWISTED_ANCIENT_BOUNTY</mod-append:name>
@@ -15807,7 +15712,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 <FTL>
 	<mod:findLike type="achievements" limit="1">
 		<mod-append:page>
-			<section text="Impossible Task" hidden="false">
+			<section text="Impossible Task" hidden="true">
 				<achievement name="ACH_TWISTED_REN_CLAN">
 					<name>Organs Please!</name>
 					<description>Defeat the Twisted Guild B Renegade and get the Mind Clouder.</description>
