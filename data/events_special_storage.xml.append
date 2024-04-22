@@ -1553,10 +1553,10 @@
 		<text>Which COMBAT DRONE would you like to craft?</text>
 		<checkCargo/>
 
-		<choice req="pilot" lvl="1" blue="false" hidden="true" max_group="1">
+		<!--<choice req="pilot" lvl="1" blue="false" hidden="true" max_group="1">
 			<text>COMING SOON in 0.4.1!</text>
 			<event load="STORAGE_CHECK"/>
-		</choice>
+		</choice>-->
 
 		<choice req="FM_ENERGY_COMBAT_BEAM1_LIST" lvl="1" blue="false" hidden="true">
 			<text>Align the central energy core of the Amp Energy Drone with the lenses of the Combat Drone MK. II's beam weapon to forge the 'Somebody Else Name This (Boo Womp)' Energy Beam Drone.</text>
@@ -6877,26 +6877,24 @@
 		<text>You check what ships are available to be summoned currently. For each set of 3 ships you defeat, 3 more will become available to challenge. Summoning an Twisted MV boss will take 2{.
 			[NOTE: All rewards from these bosses DO NOT stack.]
 		</text>
-
-		
 		<choice>
 			<text>Nevermind, do something else.</text>
 			<event load="STORAGE_CHECK"/>
 		</choice>
-		<choice req="ach_fm_boss_crystal" lvl="1" max_group="1" hidden="true" blue="false">
+		<choice req="FM_BOSS_1_COMPLETION" lvl="7" max_group="1" hidden="true" blue="false">
 			<text>You already defeated the Twisted Crystal.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="ach_fm_boss_tuco" lvl="1" max_group="2" hidden="true" blue="false">
+		<choice req="FM_BOSS_2_COMPLETION" lvl="7" max_group="2" hidden="true" blue="false">
 			<text>You already defeated the Twisted Tuco.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="ach_fm_boss_leech" lvl="1" max_group="3" hidden="true" blue="false">
+		<choice req="FM_BOSS_3_COMPLETION" lvl="7" max_group="3" hidden="true" blue="false">
 			<text>You already defeated the Twisted Leech.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<choice req="FM_BOSS_LIST_18" lvl="1" max_group="1" blue="false">
+		<choice req="FM_BOSS_LIST_18" lvl="6" max_group="1" blue="false">
 			<text>Twisted Crystal C - Drops Twisted Crystal Armor</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -6906,7 +6904,7 @@
 				<quest event="FM_BOSS_CRYSTAL1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_LIST_18" lvl="1" max_group="2" blue="false">
+		<choice req="FM_BOSS_LIST_18" lvl="6" max_group="2" blue="false">
 			<text>Twisted Tuco B - Drops a rare collectable.</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -6916,7 +6914,7 @@
 				<quest event="FM_BOSS_TUCO1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_LIST_18" lvl="1" max_group="3" blue="false">
+		<choice req="FM_BOSS_LIST_18" lvl="6" max_group="3" blue="false">
 			<text>Twisted Leech C - Drops a strange emitter</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -6927,20 +6925,20 @@
 			</event>
 		</choice>
 
-		<choice req="ach_fm_boss_kestrel" lvl="1" max_group="1" hidden="true" blue="false">
+		<choice req="FM_BOSS_1_COMPLETION" lvl="6" max_group="1" hidden="true" blue="false">
 			<text>You already defeated the Twisted Kestrel.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="ach_fm_boss_federation" lvl="1" max_group="2" hidden="true" blue="false">
+		<choice req="FM_BOSS_2_COMPLETION" lvl="6" max_group="2" hidden="true" blue="false">
 			<text>You already defeated the Twisted Federation.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="ach_fm_boss_orchid" lvl="1" max_group="3" hidden="true" blue="false">
+		<choice req="FM_BOSS_3_COMPLETION" lvl="6" max_group="3" hidden="true" blue="false">
 			<text>You already defeated the Twisted Orchid.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<choice req="FM_BOSS_LIST_15" lvl="1" max_group="1" blue="false">
+		<choice req="FM_BOSS_LIST_15" lvl="5" max_group="1" blue="false">
 			<text>Twisted Kestrel B - A....fridge?</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -6950,7 +6948,7 @@
 				<quest event="FM_BOSS_KES1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_LIST_15" lvl="1" max_group="2" blue="false">
+		<choice req="FM_BOSS_LIST_15" lvl="5" max_group="2" blue="false">
 			<text>Twisted Federation B - Drops an unique replicator.</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -6960,7 +6958,7 @@
 				<quest event="FM_BOSS_FED1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_LIST_15" lvl="1" max_group="3" blue="false">
+		<choice req="FM_BOSS_LIST_15" lvl="5" max_group="3" blue="false">
 			<text>Twisted Orchid C - Drops some friends.</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -6971,15 +6969,15 @@
 			</event>
 		</choice>
 
-		<choice req="ach_fm_boss_lanius" lvl="1" max_group="1" hidden="true" blue="false">
+		<choice req="FM_BOSS_1_COMPLETION" lvl="5" max_group="1" hidden="true" blue="false">
 			<text>You already defeated the Twisted Lanius.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="ach_fm_boss_shell" lvl="1" max_group="2" hidden="true" blue="false">
+		<choice req="FM_BOSS_2_COMPLETION" lvl="5" max_group="2" hidden="true" blue="false">
 			<text>You already defeated the Twisted Shell.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="ach_fm_boss_engineer" lvl="1" max_group="3" hidden="true" blue="false">
+		<choice req="FM_BOSS_3_COMPLETION" lvl="5" max_group="3" hidden="true" blue="false">
 			<text>You already defeated the Twisted Engineer.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -7018,7 +7016,7 @@
 		<choice req="ACH_FM_BOSS_ENGINEER1" lvl="1" max_group="6" hidden="true" blue="false">
 		<text>You already defeated the Twisted Engineer.</text>
 		<event load="OPTION_INVALID"/></choice>-->
-		<choice req="FM_BOSS_LIST_12" lvl="1" max_group="1" blue="false">
+		<choice req="FM_BOSS_LIST_12" lvl="4" max_group="1" blue="false">
 			<text>Twisted Lanius B - Drops a Heart.</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7028,7 +7026,7 @@
 				<quest event="FM_BOSS_LANIUS1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_LIST_12" lvl="1" max_group="2" blue="false">
+		<choice req="FM_BOSS_LIST_12" lvl="4" max_group="2" blue="false">
 			<text>Twisted Shell C - Drops an attache case.</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7038,7 +7036,7 @@
 				<quest event="FM_BOSS_SHELL1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_LIST_12" lvl="1" max_group="3" blue="false">
+		<choice req="FM_BOSS_LIST_12" lvl="4" max_group="3" blue="false">
 			<text>Twisted Engineer B - Drops Drone Booster II</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7049,20 +7047,20 @@
 			</event>
 		</choice>
 
-		<choice req="ach_fm_boss_slug" lvl="1" max_group="1" hidden="true" blue="false">
+		<choice req="FM_BOSS_1_COMPLETION" lvl="4" max_group="1" hidden="true" blue="false">
 			<text>You already defeated the Twisted Slug.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="ach_fm_boss_stealth" lvl="1" max_group="2" hidden="true" blue="false">
+		<choice req="FM_BOSS_2_COMPLETION" lvl="4" max_group="2" hidden="true" blue="false">
 			<text>You already defeated the Twisted Stealth.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="ach_fm_boss_zoltan" lvl="1" max_group="3" hidden="true" blue="false">
+		<choice req="FM_BOSS_3_COMPLETION" lvl="4" max_group="3" hidden="true" blue="false">
 			<text>You already defeated the Twisted Zoltan.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<choice req="FM_BOSS_LIST_9" lvl="1" max_group="1" blue="false">
+		<choice req="FM_BOSS_LIST_9" lvl="3" max_group="1" blue="false">
 			<text>Twisted Slug C - Drops Malboro.</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7072,7 +7070,7 @@
 				<quest event="FM_BOSS_SLUG1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_LIST_9" lvl="1" max_group="2" blue="false">
+		<choice req="FM_BOSS_LIST_9" lvl="3" max_group="2" blue="false">
 			<text>Twisted Stealth B - Drops ?13Xzzzzzzz$</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7082,7 +7080,7 @@
 				<quest event="FM_BOSS_STEALTH1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_LIST_9" lvl="1" max_group="3" blue="false">
+		<choice req="FM_BOSS_LIST_9" lvl="3" max_group="3" blue="false">
 			<text>Twisted Zoltan C - Drops Limiter Removal</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7093,20 +7091,20 @@
 			</event>
 		</choice>
 
-		<choice req="ach_fm_boss_monk" lvl="1" max_group="1" hidden="true" blue="false">
+		<choice req="FM_BOSS_1_COMPLETION" lvl="3" max_group="1" hidden="true" blue="false">
 			<text>You already defeated the Twisted Monk.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="ach_fm_boss_rock" lvl="1" max_group="2" hidden="true" blue="false">
+		<choice req="FM_BOSS_2_COMPLETION" lvl="3" max_group="2" hidden="true" blue="false">
 			<text>You already defeated the Twisted Rockman.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="ach_fm_boss_lostsun" lvl="1" max_group="3" hidden="true" blue="false">
+		<choice req="FM_BOSS_3_COMPLETION" lvl="3" max_group="3" hidden="true" blue="false">
 			<text>You already defeated the Twisted Lost Sun.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
-		<choice req="FM_BOSS_LIST_6" lvl="1" max_group="1" blue="false">
+		<choice req="FM_BOSS_LIST_6" lvl="2" max_group="1" blue="false">
 			<text>Twisted Monk B - Drops Aether Ascension Shields</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7116,7 +7114,7 @@
 				<quest event="FM_BOSS_MONK1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_LIST_6" lvl="1" max_group="2" blue="false">
+		<choice req="FM_BOSS_LIST_6" lvl="2" max_group="2" blue="false">
 			<text>Twisted Rock C - Drops the Rockmen Relic of Freedom</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7126,7 +7124,7 @@
 				<quest event="FM_BOSS_R1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_LIST_6" lvl="1" max_group="3" blue="false">
+		<choice req="FM_BOSS_LIST_6" lvl="2" max_group="3" blue="false">
 			<text>Twisted Lost Sun B - Drops Reality-Bent Reloader.</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7137,15 +7135,15 @@
 			</event>
 		</choice>
 
-		<choice req="ach_fm_boss_freemantis" lvl="1" max_group="1" hidden="true" blue="false">
+		<choice req="FM_BOSS_1_COMPLETION" lvl="2" max_group="1" hidden="true" blue="false">
 			<text>You already defeated the Twisted Free Mantis.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="ach_fm_boss_separatist" lvl="1" max_group="2" hidden="true" blue="false">
+		<choice req="FM_BOSS_2_COMPLETION" lvl="2" max_group="2" hidden="true" blue="false">
 			<text>You already defeated the Twisted Separatist.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="ach_fm_boss_mantis" lvl="1" max_group="3" hidden="true" blue="false">
+		<choice req="FM_BOSS_3_COMPLETION" lvl="2" max_group="3" hidden="true" blue="false">
 			<text>You already defeated the Twisted Mantis.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -7181,16 +7179,15 @@
 			</event>
 		</choice>
 
-
-		<choice req="ach_fm_boss_clan" lvl="1" max_group="1" hidden="true" blue="false">
+		<choice req="FM_BOSS_1_COMPLETION" lvl="1" max_group="1" hidden="true" blue="false">
 			<text>You already defeated the Twisted Clansman.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="ach_fm_boss_dusk" lvl="1" max_group="2" hidden="true" blue="false">
+		<choice req="FM_BOSS_2_COMPLETION" lvl="1" max_group="2" hidden="true" blue="false">
 			<text>You already defeated the Twisted Duskbringer.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
-		<choice req="ach_fm_boss_engi" lvl="1" max_group="3" hidden="true" blue="false">
+		<choice req="FM_BOSS_3_COMPLETION" lvl="1" max_group="3" hidden="true" blue="false">
 			<text>You already defeated the Twisted Engi.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
@@ -7226,7 +7223,7 @@
 			</event>
 		</choice>
 
-		<choice req="FM_BOSS_2_1" lvl="1"  blue="false">
+		<choice req="FM_BOSS_2_1" lvl="1" blue="false" max_group="4">
 			<text>Twisted Free Mantis B - Drops a refreshment.</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7236,7 +7233,7 @@
 				<quest event="FM_BOSS_FREE1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_2_2" lvl="1" blue="false">
+		<choice req="FM_BOSS_2_2" lvl="1" blue="false" max_group="5">
 			<text>Twisted Separatist B - Drops Magatama</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7246,7 +7243,7 @@
 				<quest event="FM_BOSS_SEPA1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_2_3" lvl="1" blue="false">
+		<choice req="FM_BOSS_2_3" lvl="1" blue="false" max_group="6">
 			<text>Twisted Mantis B - Drops Pheromone Accelerator</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7256,7 +7253,7 @@
 				<quest event="FM_BOSS_MANTIS1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_3_1" lvl="1" blue="false">
+		<choice req="FM_BOSS_3_1" lvl="1" blue="false" max_group="7">
 			<text>Twisted Monk B - Drops Aether Ascension Shields</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7266,7 +7263,7 @@
 				<quest event="FM_BOSS_MONK1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_3_2" lvl="1" blue="false">
+		<choice req="FM_BOSS_3_2" lvl="1" blue="false" max_group="8">
 			<text>Twisted Rock C - Drops the Rockmen Relic of Freedom</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7276,7 +7273,7 @@
 				<quest event="FM_BOSS_R1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_3_3" lvl="1" blue="false">
+		<choice req="FM_BOSS_3_3" lvl="1" blue="false" max_group="9">
 			<text>Twisted Lost Sun B - Drops Reality-Bent Reloader.</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7286,7 +7283,7 @@
 				<quest event="FM_BOSS_LOSTSUN1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_4_1" lvl="1" blue="false">
+		<choice req="FM_BOSS_4_1" lvl="1" blue="false" max_group="10">
 			<text>Twisted Slug C - Drops Malboro.</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7296,7 +7293,7 @@
 				<quest event="FM_BOSS_SLUG1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_4_2" lvl="1" blue="false">
+		<choice req="FM_BOSS_4_2" lvl="1" blue="false" max_group="11">
 			<text>Twisted Stealth B - Drops ?13Xzzzzzzz$</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7306,7 +7303,7 @@
 				<quest event="FM_BOSS_STEALTH1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_4_3" lvl="1" blue="false">
+		<choice req="FM_BOSS_4_3" lvl="1" blue="false" max_group="12">
 			<text>Twisted Zoltan C - Drops Limiter Removal</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7316,7 +7313,7 @@
 				<quest event="FM_BOSS_ZOLTAN1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_5_1" lvl="1" blue="false">
+		<choice req="FM_BOSS_5_1" lvl="1" blue="false" max_group="13">
 			<text>Twisted Lanius B - Drops a Heart.</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7326,7 +7323,7 @@
 				<quest event="FM_BOSS_LANIUS1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_5_2" lvl="1" blue="false">
+		<choice req="FM_BOSS_5_2" lvl="1" blue="false" max_group="14">
 			<text>Twisted Shell C - Drops an attache case.</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7336,7 +7333,7 @@
 				<quest event="FM_BOSS_SHELL1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_5_3" lvl="1" blue="false">
+		<choice req="FM_BOSS_5_3" lvl="1" blue="false" max_group="15">
 			<text>Twisted Engineer B - Drops Drone Booster II</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7346,7 +7343,7 @@
 				<quest event="FM_BOSS_ENGINEER1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_6_1" lvl="1" blue="false">
+		<choice req="FM_BOSS_6_1" lvl="1" blue="false" max_group="16">
 			<text>Twisted Kestrel B - A....fridge?</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7356,7 +7353,7 @@
 				<quest event="FM_BOSS_KES1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_6_2" lvl="1" blue="false">
+		<choice req="FM_BOSS_6_2" lvl="1" blue="false" max_group="17">
 			<text>Twisted Federation B - Drops an unique replicator.</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7366,7 +7363,7 @@
 				<quest event="FM_BOSS_FED1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_6_3" lvl="1" blue="false">
+		<choice req="FM_BOSS_6_3" lvl="1" blue="false" max_group="18">
 			<text>Twisted Orchid C - Drops some friends.</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7376,7 +7373,7 @@
 				<quest event="FM_BOSS_ORCHID1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_7_1" lvl="1" blue="false">
+		<choice req="FM_BOSS_7_1" lvl="1" blue="false" max_group="19">
 			<text>Twisted Crystal C - Drops Twisted Crystal Armor</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7386,7 +7383,7 @@
 				<quest event="FM_BOSS_CRYSTAL1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_7_2" lvl="1" blue="false">
+		<choice req="FM_BOSS_7_2" lvl="1" blue="false" max_group="20">
 			<text>Twisted Tuco B - Drops a rare collectable.</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
@@ -7396,7 +7393,7 @@
 				<quest event="FM_BOSS_TUCO1_SUICIDE"/>
 			</event>
 		</choice>
-		<choice req="FM_BOSS_7_3" lvl="1" blue="false">
+		<choice req="FM_BOSS_7_3" lvl="1" blue="false" max_group="21">
 			<text>Twisted Leech C - Drops a strange emitter</text>
 			<event>
 				<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>

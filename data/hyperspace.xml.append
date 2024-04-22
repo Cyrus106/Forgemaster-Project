@@ -1810,7 +1810,7 @@
 			<shipIcon> 	<!-- Physical Trauma Nanomachines-->
 				<name>icon_fm_drone_buff</name>
 				<tooltip>PHYSICAL TRAUMA NANOMACHINES:
-					The Unique nanomachines dispensed by this ship's manning drones boost the Engi captain's health and damage resistance. Take out the drones so you can take out the Engi Captain!</tooltip>
+					The unique nanomachines dispensed by this ship's manning drones boost the Engi captain's health and damage resistance. Take out the drones so you can take out the Engi Captain!</tooltip>
 			</shipIcon>
 
 			<shipIcon> 	<!-- Gozer the Destroyer -->
@@ -3068,7 +3068,7 @@
 			<name>FM_EXPLOSIVE_FORGE_LIST</name>
 			<name>FM_FLAK_FORGE_LIST</name>
 			<name>FM_ORGANIC_FORGE_LIST</name>
-			<!--<name>FM_COMBAT_DRONE_FORGE_LIST</name>-->
+			<name>FM_COMBAT_DRONE_FORGE_LIST</name>
 		</req>
 		<!-- FULL CHECK, CHECKS ALL LISTS FOR VERY SPECIFIC EVENTS. STORAGE CHECK VERSION -->
 		<req name="FM_FORGE_LIST_CHECK_STORAGE" type="all"> <!-- If none are met, show the recipe list at the storage check! These are all ingredient checks -->
@@ -3644,39 +3644,164 @@
 			<name>ach_fm_boss_engi</name>
 		</req>
 
-		<req name="FM_BOSS_LIST_6" type="all">
+		<req name="FM_BOSS_LIST_6" type="all" mult="2">
 			<name>FM_BOSS_LIST_3</name>
 			<name>ach_fm_boss_freemantis</name>
 			<name>ach_fm_boss_separatist</name>
 			<name>ach_fm_boss_mantis</name>
 		</req>
 
-		<req name="FM_BOSS_LIST_9" type="all">
+		<req name="FM_BOSS_LIST_9" type="all" mult="3">
 			<name>FM_BOSS_LIST_6</name>
 			<name>ach_fm_boss_monk</name>
 			<name>ach_fm_boss_rock</name>
 			<name>ach_fm_boss_lostsun</name>
 		</req>
 
-		<req name="FM_BOSS_LIST_12" type="all">
+		<req name="FM_BOSS_LIST_12" type="all" mult="4">
 			<name>FM_BOSS_LIST_9</name>
 			<name>ach_fm_boss_slug</name>
 			<name>ach_fm_boss_stealth</name>
 			<name>ach_fm_boss_zoltan</name>
 		</req>
 
-		<req name="FM_BOSS_LIST_15" type="all">
+		<req name="FM_BOSS_LIST_15" type="all" mult="5">
 			<name>FM_BOSS_LIST_12</name>
+			<name>ach_fm_boss_lanius</name>
 			<name>ach_fm_boss_shell</name>
 			<name>ach_fm_boss_engineer</name>
-			<name>ach_fm_boss_lanius</name>
 		</req>
 
-		<req name="FM_BOSS_LIST_18" type="all">
+		<req name="FM_BOSS_LIST_18" type="all" mult="6">
 			<name>FM_BOSS_LIST_15</name>
 			<name>ach_fm_boss_kestrel</name>
 			<name>ach_fm_boss_federation</name>
 			<name>ach_fm_boss_orchid</name>
+		</req>
+		<req name="FM_BOSS_1_COMPLETION" type="sum">
+			<name>ach_fm_boss_clan</name>
+			<req type="all">
+				<name>ach_fm_boss_clan</name>
+				<name>ach_fm_boss_freemantis</name>
+			</req>
+			<req type="all">
+				<name>ach_fm_boss_clan</name>
+				<name>ach_fm_boss_freemantis</name>
+				<name>ach_fm_boss_monk</name>
+			</req>
+			<req type="all">
+				<name>ach_fm_boss_clan</name>
+				<name>ach_fm_boss_freemantis</name>
+				<name>ach_fm_boss_monk</name>
+				<name>ach_fm_boss_slug</name>
+			</req>
+			<req type="all">
+				<name>ach_fm_boss_clan</name>
+				<name>ach_fm_boss_freemantis</name>
+				<name>ach_fm_boss_monk</name>
+				<name>ach_fm_boss_slug</name>
+				<name>ach_fm_boss_lanius</name>
+			</req>
+			<req type="all">
+				<name>ach_fm_boss_clan</name>
+				<name>ach_fm_boss_freemantis</name>
+				<name>ach_fm_boss_monk</name>
+				<name>ach_fm_boss_slug</name>
+				<name>ach_fm_boss_lanius</name>
+				<name>ach_fm_boss_kestrel</name>
+			</req><req type="all">
+				<name>ach_fm_boss_clan</name>
+				<name>ach_fm_boss_freemantis</name>
+				<name>ach_fm_boss_monk</name>
+				<name>ach_fm_boss_slug</name>
+				<name>ach_fm_boss_lanius</name>
+				<name>ach_fm_boss_kestrel</name>
+				<name>ach_fm_boss_crystal</name>
+			</req>
+		</req>
+		<req name="FM_BOSS_2_COMPLETION" type="sum">
+			<name>ach_fm_boss_dusk</name>
+			<req type="all">
+				<name>ach_fm_boss_dusk</name>
+				<name>ach_fm_boss_separatist</name>
+			</req>
+			<req type="all">
+				<name>ach_fm_boss_dusk</name>
+				<name>ach_fm_boss_separatist</name>
+				<name>ach_fm_boss_rock</name>
+			</req>
+			<req type="all">
+				<name>ach_fm_boss_dusk</name>
+				<name>ach_fm_boss_separatist</name>
+				<name>ach_fm_boss_rock</name>
+				<name>ach_fm_boss_stealth</name>
+			</req>
+			<req type="all">
+				<name>ach_fm_boss_dusk</name>
+				<name>ach_fm_boss_separatist</name>
+				<name>ach_fm_boss_rock</name>
+				<name>ach_fm_boss_stealth</name>
+				<name>ach_fm_boss_shell</name>
+			</req>
+			<req type="all">
+				<name>ach_fm_boss_dusk</name>
+				<name>ach_fm_boss_separatist</name>
+				<name>ach_fm_boss_rock</name>
+				<name>ach_fm_boss_stealth</name>
+				<name>ach_fm_boss_shell</name>
+				<name>ach_fm_boss_federation</name>
+			</req>
+			<req type="all">
+				<name>ach_fm_boss_dusk</name>
+				<name>ach_fm_boss_separatist</name>
+				<name>ach_fm_boss_rock</name>
+				<name>ach_fm_boss_stealth</name>
+				<name>ach_fm_boss_shell</name>
+				<name>ach_fm_boss_federation</name>
+				<name>ach_fm_boss_tuco</name>
+			</req>
+		</req>
+		<req name="FM_BOSS_3_COMPLETION" type="sum">
+			<name>ach_fm_boss_engi</name>
+			<req type="all">
+				<name>ach_fm_boss_engi</name>
+				<name>ach_fm_boss_mantis</name>
+			</req>
+			<req type="all">
+				<name>ach_fm_boss_engi</name>
+				<name>ach_fm_boss_mantis</name>
+				<name>ach_fm_boss_lostsun</name>
+			</req>
+			<req type="all">
+				<name>ach_fm_boss_engi</name>
+				<name>ach_fm_boss_mantis</name>
+				<name>ach_fm_boss_lostsun</name>
+				<name>ach_fm_boss_zoltan</name>
+			</req>
+			<req type="all">
+				<name>ach_fm_boss_engi</name>
+				<name>ach_fm_boss_mantis</name>
+				<name>ach_fm_boss_lostsun</name>
+				<name>ach_fm_boss_zoltan</name>
+				<name>ach_fm_boss_engineer</name>
+			</req>
+			<req type="all">
+				<name>ach_fm_boss_engi</name>
+				<name>ach_fm_boss_mantis</name>
+				<name>ach_fm_boss_lostsun</name>
+				<name>ach_fm_boss_zoltan</name>
+				<name>ach_fm_boss_engineer</name>
+				<name>ach_fm_boss_orchid</name>
+			</req>
+			<req type="all">
+				<name>ach_fm_boss_engi</name>
+				<name>ach_fm_boss_mantis</name>
+				<name>ach_fm_boss_lostsun</name>
+				<name>ach_fm_boss_zoltan</name>
+				<name>ach_fm_boss_engineer</name>
+				<name>ach_fm_boss_orchid</name>
+				<name>ach_fm_boss_leech</name>
+			</req>
 		</req>
 		
 		<req name="FM_BOSS_2_1" type="all">
@@ -3694,7 +3819,7 @@
 		<req name="FM_BOSS_2_3" type="all">
 			<name>ACH ACH_TWISTED_REN_MANTIS</name>
 			<req lvl="0" max_lvl="0">
-				<name>ach_fm_boss_manits</name>
+				<name>ach_fm_boss_mantis</name>
 			</req>
 		</req>
 		<req name="FM_BOSS_3_1" type="all">
@@ -3734,21 +3859,21 @@
 			</req>
 		</req>
 		<req name="FM_BOSS_5_1" type="all">
+			<name>ACH ACH_TWISTED_REN_LANIUS</name>
+			<req lvl="0" max_lvl="0">
+				<name>ach_fm_boss_lanius</name>
+			</req>
+		</req>
+		<req name="FM_BOSS_5_2" type="all">
 			<name>ACH ACH_TWISTED_REN_SHELL</name>
 			<req lvl="0" max_lvl="0">
 				<name>ach_fm_boss_shell</name>
 			</req>
 		</req>
-		<req name="FM_BOSS_5_2" type="all">
+		<req name="FM_BOSS_5_3" type="all">
 			<name>ACH ACH_TWISTED_REN_ENGINEER</name>
 			<req lvl="0" max_lvl="0">
 				<name>ach_fm_boss_engineer</name>
-			</req>
-		</req>
-		<req name="FM_BOSS_5_3" type="all">
-			<name>ACH ACH_TWISTED_REN_LANIUS</name>
-			<req lvl="0" max_lvl="0">
-				<name>ach_fm_boss_lanius</name>
 			</req>
 		</req>
 		<req name="FM_BOSS_6_1" type="all">
@@ -3760,7 +3885,7 @@
 		<req name="FM_BOSS_6_2" type="all">
 			<name>ACH ACH_TWISTED_REN_FED</name>
 			<req lvl="0" max_lvl="0">
-				<name>ach_fm_boss_fed</name>
+				<name>ach_fm_boss_federation</name>
 			</req>
 		</req>
 		<req name="FM_BOSS_6_3" type="all">
@@ -4687,7 +4812,7 @@
 			<powerEffect>
 				<cooldown>13</cooldown>
 				<activateWhenReady enemiesOnly="false">true</activateWhenReady>
-				<ion>2</ion>
+				<ion>3</ion>
 				<friendlyFire>true</friendlyFire>
 				<shipFriendlyFire>true</shipFriendlyFire>
 			</powerEffect>
@@ -9397,7 +9522,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<function name="FIRE_IMMUNITY" value="0.5" useForReqs="false"/>
 			<!--<function name="FIRE_EXTINGUISHERS" value="5" useForReqs="false" warning="false"/>-->
 			<function name="SLUG_GEL" value="1" useForReqs="false" warning="false"/>
-			<function name="FM_MODULAR_UPGRADE_EXTRANOTCHES" value="100" useforReqs="true"/>
+			<function name="FM_MODULAR_UPGRADE_EXTRANOTCHES" value="100" useForReqs="true"/>
 			<!--<function name="SYSTEM_CASING" value="0.35" useForReqs="true" warning="false"/>--><!--ffs Cyrus-->
 			<!--<function name="AUTOMATED_SHIP" value="1"/>-->
 			<function name="AUTOMATED_REPAIR" value="-1"/>
@@ -12703,7 +12828,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</statBoosts>
 		</aug>
 		<aug name="JUDGE_BOON_FM_FORGEARMOR">
-			<function name="FM_MODULAR_UPGRADE_EXTRANOTCHES" value="2" useforReqs="true"/>
+			<function name="FM_MODULAR_UPGRADE_EXTRANOTCHES" value="2" useForReqs="true"/>
 		</aug>
 		<aug name="JUDGE_BOON_FM_ANCWEAPON">
 			<statBoosts>
@@ -12719,13 +12844,13 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</statBoosts>
 		</aug>
 		<aug name="JUDGE_BOON_FM_TERMINUS"> <!--5% boost of all crew and ship stats -->
-			<function name="SCRAP_COLLECTOR" value="0.05" useforReqs="false"/>
-			<function name="ROCK_ARMOR" value="0.05" useforReqs="false"/>
-			<function name="ION_ARMOR" value="0.05" useforReqs="false"/>
-			<function name="SYSTEM_CASING" value="0.05" useforReqs="false"/>
-			<function name="AUTO_COOLDOWN" value="0.05" useforReqs="false"/>
-			<function name="SHIELD_RECHARGE" value="0.05" useforReqs="false"/>
-			<function name="FTL_BOOSTER" value="0.05" useforReqs="false"/>
+			<function name="SCRAP_COLLECTOR" value="0.05" useForReqs="false"/>
+			<function name="ROCK_ARMOR" value="0.05" useForReqs="false"/>
+			<function name="ION_ARMOR" value="0.05" useForReqs="false"/>
+			<function name="SYSTEM_CASING" value="0.05" useForReqs="false"/>
+			<function name="AUTO_COOLDOWN" value="0.05" useForReqs="false"/>
+			<function name="SHIELD_RECHARGE" value="0.05" useForReqs="false"/>
+			<function name="FTL_BOOSTER" value="0.05" useForReqs="false"/>
 			<statBoosts>
 				<statBoost name="maxHealth">
 					<boostType>MULT</boostType>

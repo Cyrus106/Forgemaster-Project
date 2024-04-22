@@ -75,6 +75,37 @@
 			</choice>
 		</event>
 	</choice>
+	<choice>
+		<text>Very Hard task please.</text>
+		<event>
+			<text>"You need to be more specific with this request, renegade."</text>
+			<choice>
+				<text>I want a task that is worthy of my skills.</text>
+				<event>
+					<text>"How bold, Renegade. You think my other tasks are too easy for you? Very well, I am willing to humor your absurd request, but only on my terms. Do you accept?</text>
+					<choice hidden="true">
+						<text>Sure, why not.</text>
+						<event>
+							<text>"Understood, I can give battles you cannot win. If you succeed at all of them, I calculate it will be well worth your while. It appears we are in agreement."</text>
+							<variable name="loc_impossible_task" op="set" val="1"/>
+							<choice>
+								<text>Continue...</text>
+								<event>
+									<loadEvent>CURA_BOSS_RUSH_PREVIEW</loadEvent>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Nevermind, forget I even mentioned it.</text>
+						<event>
+							<loadEvent>CURA_TASK_MENU</loadEvent>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
 </event>
 
 <event name="CURA_BOSS_RUSH_PREVIEW">

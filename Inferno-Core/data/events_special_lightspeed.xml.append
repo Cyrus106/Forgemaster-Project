@@ -50,6 +50,9 @@
 		<mod:findWithChildLike type="choice" child-type="event">
 			<mod:selector load="ATLAS_EQUIPMENT"/>
 			<mod:setAttributes req="FMCORE_LIST_JUMPSPACE_EQUIPMENT"/>
+			<mod:findLike type="text">
+				<mod:setValue>Do jumpspeed things.</mod:setValue>
+			</mod:findLike>
 			<mod:findLike type="event">
 				<mod:setAttributes load="FMCORE_ATLAS_EQUIPMENT"/>
 			</mod:findLike>

@@ -7,15 +7,14 @@
 	Currently Enabled.
 
 	Features:
-	- allows performing multiple actions during sector jump (one augment AND Cura)
+	- an alternate implementation of allowing performing multiple actions during sector jump (in any order)(one augment AND Cura)
 	- Cura quests aren't lost on reroutes
 	- Beam Pierce augment (beams gain +1 sp) 
-	- Fixes lvl 4 MC
 	- Info buttons for some addons
 	- some framework stuff for Forgemaster
 	- some system cooldown related augment implementations
 	(if an addon says disabled despite being patched in it was patched above Inferno-Core or isn't updated to support the buttons)
-	</text>
+</text><!--- Fixes lvl 4 MC-->
 
 	<text name="addon_hover_forgemaster">FORGEMASTER
 	Currently Disabled.
@@ -64,17 +63,11 @@
 	Developed by Gabriel Cooper and HereticChurch
 	Currently Disabled.
 
-	This addon adds actual content to the extinct third Obelisk race: the Commonwealth. Currently in base MV, they are long extinct, with the only thing surviving from their arsenal being the Ancient C cruiser and the broken down body of a commonwealth obelisk in Sylvan A.
+	This mod brings back the in-cannon extinct subclass of the Ancients/Obelisks called the "Commonwealth". It adds content for the now almost extinct salt people race and a new cruiser line for the osmians, as well as a brand new sector with unique music and a few unlocks beacons all throughout the game.
 
-The content included for this race consists of: A commonwealth version of almost all obelisk content, including drones, weapons and even a Cognitive. The addon also includes a revamped commonwealth ship which you can unlock, and said ship has a exclusive augment that lets you craft the CW content.
+	Forgotten Races also adds 128 new ships, 137 weapons and drones not counting artilleries (mostly exclusive to said ships), 49 new crews that can be found on the new ships, a revived questline with dozens of unlocks that wasn't implemented to multiverse years ago and 2 new renegade bosses, both with exclusive weapons. 
 
-This addon, however, includes a lot more than just blue cubes, it adds a blue lanius crew type and ship which mirrors the augmented and the Augmented Queen, just blue to reflect their consumption of commonwealth material.
-
-Other content also includes: a brand new race of the Metal diamonds with lanius and cognitive equivalents for their stuff, as well as weapons and ships for them (there's 3 metal diamond types in total, each focusing on their own strengths and weaknesses). The addon also adds the Tester, a ship that exists in the files but was never added officially for people to play with with layout B and C to boot, as well as the Legion Flagship line.
-
-Be weary, the balance in the addon is rather volatile and might not be for everyone's taste, while the dev does try to have the content be somewhat balanced around itself, it's not the same approach as base MV has.
-
-	tl;dr: more cubes and cube flavored lanius, balance not perfect, typo checking not guaranteed
+	Those ships all have some kinda gimmick, not all of them have a very complicated one however.
 
 	To enable Forgotten Races, go to the multiverse forums!
 	</text>

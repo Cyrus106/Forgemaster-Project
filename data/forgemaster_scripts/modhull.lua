@@ -126,7 +126,7 @@ end)--]]
 
 script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE,
 function(projectile, weapon)
-  if weapon:HasAugmentation("FM_MODULAR_HULL_WEAPON_IGNITE") > 0 and not weapon.isArtillery and mods.multiverse.is_first_shot(weapon,true) then
+  if weapon:HasAugmentation("FM_MODULAR_HULL_WEAPON_IGNITE") > 0 and not weapon.isArtillery and (mods.multiverse.is_first_shot(weapon,true) or projectile:GetType()==5) then
     local ship = Hyperspace.ships(weapon.iShipId)
     ship:StartFire(ship:GetSystem(3).roomId)
   end

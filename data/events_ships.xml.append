@@ -22,6 +22,16 @@
 
 	**********************************************************************************************************************-->
 
+	<event name="FM_BOSS_COORDS_GIVER">
+		<loadEventList default="TRUENOTHING">
+			<event req="loc_coords_twisted" lvl="0" max_lvl="0">
+				<text>The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
+				<variable name="coords_twisted" op="add" val="1"/>
+				<variable name="loc_coords_twisted" op="add" val="1"/>
+			</event>
+		</loadEventList>
+		
+	</event>
 	<!--CLANSMAN B-->
 
 	<ship name="FM_BOSS_CLAN1" auto_blueprint="FM_MT_BOSS_CLAN_SUICIDE">
@@ -61,14 +71,13 @@
 	<event name="FM_BOSS_CLAN1_SHIP_DESTROYED">
 		<playMusic/>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
-		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears to be a chemical replication lab that goes beyond modern science, labelled "Ambrosia". It gives off an otherworldly aura. The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
+		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears to be a chemical replication lab that goes beyond modern science, labelled "Ambrosia". It gives off an otherworldly aura.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_clan" op="set" val="1"/>
-		<variable name="coords_twisted" op="add" val="1"/>
-		<variable name="loc_coords_twisted" op="add" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_CLAN</achievement>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_CLAN" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
@@ -129,14 +138,13 @@
 	<event name="FM_BOSS_CLAN1_SHIP_DESTROYED2">
 		<playMusic/>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
-		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears to be a chemical replication lab that goes beyond modern science, labelled "Ambrosia". It gives off an otherworldly aura. The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
+		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears to be a chemical replication lab that goes beyond modern science, labelled "Ambrosia". It gives off an otherworldly aura.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_clan" op="set" val="1"/>
-		<variable name="coords_twisted" op="add" val="1"/>
-		<variable name="loc_coords_twisted" op="add" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_CLAN</achievement>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_CLAN" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
@@ -204,14 +212,13 @@
 	<event name="FM_BOSS_DUSK1_SHIP_DESTROYED">
 		<playMusic/>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
-		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears to be a set of strange looking vests, labelled "World Record". They give off an otherworldly aura. The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
+		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears to be a set of strange looking vests, labelled "World Record". They give off an otherworldly aura.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_dusk" op="set" val="1"/>
-		<variable name="coords_twisted" op="add" val="1"/>
-		<variable name="loc_coords_twisted" op="add" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_DUSK</achievement>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
@@ -266,14 +273,13 @@
 	<event name="FM_BOSS_DUSK1_SHIP_DESTROYED2">
 		<playMusic/>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
-		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears to be a set of strange looking vests, labelled "World Record". They give off an otherworldly aura. The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
+		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears to be a set of strange looking vests, labelled "World Record". They give off an otherworldly aura.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_dusk" op="set" val="1"/>
-		<variable name="coords_twisted" op="add" val="1"/>
-		<variable name="loc_coords_twisted" op="add" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_DUSK</achievement>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>-->
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
@@ -327,14 +333,13 @@
 	<event name="FM_BOSS_ENGI1_DESTROYED">
 		<playMusic/>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
-		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears a strange-looking drone booster labelled "Kai". The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
+		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate what appears a strange-looking drone booster labelled "Kai".</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_engi" op="set" val="1"/>
-		<variable name="coords_twisted" op="add" val="1"/>
-		<variable name="loc_coords_twisted" op="add" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_ENGI</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ENGI_3" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_ENGI" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
@@ -391,14 +396,13 @@
 	<event name="FM_BOSS_ENGI1_DESTROYED2">
 		<playMusic/>
 		<metaVariable name="juke_twisted" op="set" val="1"/>
-		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears a strange-looking drone booster labelled "Kai". The software C.U.R.A provided you with also allows you to scan the rift the vessel arrived from, it quickly uploads coordinates to your database. The software displays a simple message in reference to these coordinates "Meet them here, Renegade."</text>
+		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate what appears a strange-looking drone booster labelled "Kai".</text>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<variable name="ach_fm_boss_engi" op="set" val="1"/>
-		<variable name="coords_twisted" op="add" val="1"/>
-		<variable name="loc_coords_twisted" op="add" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_ENGI</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ENGI_3" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
 		<choice hidden="true" req="HID_UPG_DRONE_COOLDOWN" max_group="1" blue="false">
@@ -468,6 +472,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_freemantis" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_FREEMANTIS</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS_2" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
@@ -526,6 +531,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_freemantis" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_FREEMANTIS</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS_2" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_FREEMANTIS" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
@@ -593,6 +599,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_lostsun" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_LOSTSUN</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN_2" silent="false">PLAYER_SHIP_TWISTED3_3</unlockCustomShip>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN" silent="false">PLAYER_SHIP_TWISTED2</unlockCustomShip>
@@ -652,6 +659,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_lostsun" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_LOSTSUN</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_LOSTSUN_2" silent="false">PLAYER_SHIP_TWISTED3_3</unlockCustomShip>
 
@@ -838,6 +846,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_mantis" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_MANTIS</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_HIVE_2" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
 		<!--<unlockCustomShip shipReq="PLAYER_SHIP_HIVE" silent="false">PLAYER_SHIP_TWISTED2_3</unlockCustomShip>
@@ -898,6 +907,7 @@
 		<text>The bizarre vessel has been vanquished! Within the now cleared cruiser, plenty of scrap and supplies remain for the taking. You also locate a strange pheromone sack with an otherworldly glow.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<variable name="ach_fm_boss_mantis" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_MANTIS</achievement>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -962,6 +972,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_monk" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_MONK</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_MONK_2" silent="false">PLAYER_SHIP_TWISTED3</unlockCustomShip>
 
@@ -1020,6 +1031,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_monk" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_MONK</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_MONK_2" silent="false">PLAYER_SHIP_TWISTED3</unlockCustomShip>
 
@@ -1093,6 +1105,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_rock" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_ROCK</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ROCKMAN_3" silent="false">PLAYER_SHIP_TWISTED3_2</unlockCustomShip>
 
@@ -1151,6 +1164,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_rock" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_ROCK</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ROCKMAN_3" silent="false">PLAYER_SHIP_TWISTED3_2</unlockCustomShip>
 
@@ -1222,6 +1236,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_separatist" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_SEPARATIST</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_SEPARATIST_2" silent="false">PLAYER_SHIP_TWISTED2_2</unlockCustomShip>
 
@@ -1280,6 +1295,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_separatist" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_SEPARATIST</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_SEPARATIST_2" silent="false">PLAYER_SHIP_TWISTED2_2</unlockCustomShip>
 
@@ -1386,6 +1402,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_slug" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_SLUG</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_SLUG_3" silent="false">PLAYER_SHIP_TWISTED4</unlockCustomShip>
 
@@ -1444,6 +1461,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_slug" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_SLUG</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_SLUG_3" silent="false">PLAYER_SHIP_TWISTED4</unlockCustomShip>
 
@@ -1519,6 +1537,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_stealth" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_STEALTH</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLOAK_2" silent="false">PLAYER_SHIP_TWISTED4_2</unlockCustomShip>
 		<weapon name="CRASH_LASER"/>
@@ -1541,6 +1560,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_stealth" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_STEALTH</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLOAK_2" silent="false">PLAYER_SHIP_TWISTED4_2</unlockCustomShip>
 		<weapon name="CRASH_LASER"/>
@@ -1608,6 +1628,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_zoltan" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_ZOLTAN</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ZOLTAN_3" silent="false">PLAYER_SHIP_TWISTED4_3</unlockCustomShip>
 
@@ -1666,6 +1687,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_zoltan" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_ZOLTAN</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ZOLTAN_3" silent="false">PLAYER_SHIP_TWISTED4_3</unlockCustomShip>
 
@@ -1728,6 +1750,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_shell" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_SHELL</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_SHELL_3" silent="false">PLAYER_SHIP_TWISTED5_2</unlockCustomShip>
 
@@ -1862,6 +1885,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_engineer" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_ENGINEER</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ENGINEER_2" silent="false">PLAYER_SHIP_TWISTED5_3</unlockCustomShip>
 
@@ -1923,6 +1947,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_engineer" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_ENGINEER</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ENGINEER_2" silent="false">PLAYER_SHIP_TWISTED5_3</unlockCustomShip>
 
@@ -1982,6 +2007,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_lanius" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_LANIUS</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_LANIUS_2" silent="false">PLAYER_SHIP_TWISTED5</unlockCustomShip>
 
@@ -2040,6 +2066,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_lanius" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_LANIUS</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_LANIUS_2" silent="false">PLAYER_SHIP_TWISTED5</unlockCustomShip>
 
@@ -2167,6 +2194,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_kestrel" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_KESTREL</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_KESTREL_2" silent="false">PLAYER_SHIP_TWISTED6</unlockCustomShip>
 
@@ -2229,6 +2257,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_kestrel" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_KESTREL</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_KESTREL_2" silent="false">PLAYER_SHIP_TWISTED6</unlockCustomShip>
 
@@ -2322,6 +2351,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_federation" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_FED</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_FEDERATION_2" silent="false">PLAYER_SHIP_TWISTED6_2</unlockCustomShip>
 
@@ -2380,6 +2410,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_federation" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_FED</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_FEDERATION_2" silent="false">PLAYER_SHIP_TWISTED6_2</unlockCustomShip>
 
@@ -2468,8 +2499,9 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_orchid" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_ORCHID</achievement>
-		<unlockCustomShip shipReq="PLAYER_SHIP_ORCHID_2" silent="false">PLAYER_SHIP_TWISTED6_3</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_ORCHID_3" silent="false">PLAYER_SHIP_TWISTED6_3</unlockCustomShip>
 		<crewMember amount="4" class="orchid_fire"/>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -2485,8 +2517,9 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_orchid" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_ORCHID</achievement>
-		<unlockCustomShip shipReq="PLAYER_SHIP_ORCHID_2" silent="false">PLAYER_SHIP_TWISTED6_3</unlockCustomShip>
+		<unlockCustomShip shipReq="PLAYER_SHIP_ORCHID_3" silent="false">PLAYER_SHIP_TWISTED6_3</unlockCustomShip>
 		<crewMember amount="4" class="orchid_fire"/>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -2536,6 +2569,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_crystal" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_CRYSTAL</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CRYSTALLINE_3" silent="false">PLAYER_SHIP_TWISTED7</unlockCustomShip>
 		<augment name="TWISTED_CRYSTAL_ARMOR_50"/>
@@ -2555,6 +2589,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_crystal" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_CRYSTAL</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CRYSTALLINE_3" silent="false">PLAYER_SHIP_TWISTED7</unlockCustomShip>
 		<augment name="TWISTED_CRYSTAL_ARMOR_50"/>
@@ -2611,6 +2646,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_tuco" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_TUCO</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_TUCO_2" silent="false">PLAYER_SHIP_TWISTED7_2</unlockCustomShip>
 
@@ -2670,6 +2706,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_tuco" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_TUCO</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_TUCO_2" silent="false">PLAYER_SHIP_TWISTED7_2</unlockCustomShip>
 
@@ -2778,6 +2815,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_leech" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_LEECH</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_LEECH_3" silent="false">PLAYER_SHIP_TWISTED7_3</unlockCustomShip>
 
@@ -2837,6 +2875,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_leech" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_LEECH</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_LEECH_3" silent="false">PLAYER_SHIP_TWISTED7_3</unlockCustomShip>
 
@@ -2928,6 +2967,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_clan" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_CLAN</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<choice hidden="true" req="HID_BRAIN_DONATION" max_group="1" blue="false">
@@ -2964,6 +3004,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_clan" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_CLAN</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_CLAN_2" silent="false">PLAYER_SHIP_TWISTED1</unlockCustomShip>
 		<choice hidden="true" req="HID_BRAIN_DONATION" max_group="1" blue="false">
@@ -3036,6 +3077,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_dusk" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_DUSK</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<choice hidden="true" req="HID_DEATH_VESTS2" max_group="1" blue="false">
@@ -3070,6 +3112,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_dusk" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_DUSK</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_DUSKBRINGER_2" silent="false">PLAYER_SHIP_TWISTED1_2</unlockCustomShip>
 		<choice hidden="true" req="HID_DEATH_VESTS2" max_group="1" blue="false">
@@ -3127,6 +3170,7 @@
 			<item type="fuel" min="2" max="2"/>
 		</item_modify>
 		<variable name="ach_fm_boss_engi" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_ENGI</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ENGI_3" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
 		<choice hidden="true" req="HID_UPG_DRONE_COOLDOWN" max_group="1" blue="false">
@@ -3161,6 +3205,7 @@
 		</item_modify>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<variable name="ach_fm_boss_engi" op="set" val="1"/>
+		<queueEvent>FM_BOSS_COORDS_GIVER</queueEvent>
 		<achievement silent="false">ACH_TWISTED_REN_ENGI</achievement>
 		<unlockCustomShip shipReq="PLAYER_SHIP_ENGI_3" silent="false">PLAYER_SHIP_TWISTED1_3</unlockCustomShip>
 		<choice hidden="true" req="HID_UPG_DRONE_COOLDOWN" max_group="1" blue="false">

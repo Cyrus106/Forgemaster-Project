@@ -236,7 +236,7 @@
 		<class>GunBomination</class>
 		<name>Gun TitanoBoa</name>
 		<unlock id="ship_PLAYER_SHIP_GUNSHIP_FM_3_unlock"/>
-		<desc>After his second failed project, the wealthy Free Mantis went on a drunken bender and decided the best course of action is to bring the weapons to the enemy. This ship is equipped for f speeds and has a built-in drone recovery!</desc>
+		<desc>After his second failed project, the wealthy Free Mantis went on a drunken bender and decided the best course of action is to bring the weapons to the enemy. This ship is equipped for for speeds and has a built-in drone recovery!</desc>
 		<systemList>
 			<battery max="2" power="1" room="14" start="true" img="room_battery_8" />
 			<cloaking power="1" room="2" start="false" img="room_cloaking_11" />
@@ -1107,7 +1107,7 @@
 		<mv-mapImage>map_icon_mup_monk_a</mv-mapImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED3_2" layout="zmt_player_rock_suicide" img="zmt_player_rock_suicide">
-		<class>Twisted Renegade Rock</class>
+		<class>Twisted Renegade Theocracy</class>
 		<name>The Vulture</name>
 		<unlock id="ship_PLAYER_SHIP_TWISTED_ROCK_unlock"/>
 		<desc>In an effort to become truly invulnerable, these Rockmen attempted to make their ship’s cloaking system last indefinitely by redirecting all the energy out of the shield system. They succeeded, although only the cloaking system itself managed to actually disappear, leaving its armor as the only defense.</desc>
@@ -5174,7 +5174,7 @@
 		<sysDamage>-1</sysDamage>
 		<persDamage>-1</persDamage>
 		<stun>10</stun>
-		<radius>35</radius>
+		<radius>-16</radius>
 		<shots>3</shots>
 		<sp>2</sp>
 		<fireTime>0.2</fireTime>
@@ -6292,7 +6292,7 @@
 			Buy/Sell Price: 190~/95~
 		</descriptionOverride>-->
 		<tooltip>Cooldown drops the more it fires.</tooltip>
-		<radius>75</radius>
+		<radius>45</radius>
 		<damage>0</damage>
 		<sysDamage>1</sysDamage>
 		<persDamage>2</persDamage>
@@ -12502,7 +12502,7 @@
 		<sysDamage>-1</sysDamage>
 		<persDamage>-1</persDamage>
 		<stun>10</stun>
-		<radius>35</radius>
+		<radius>-16</radius>
 		<shots>3</shots>
 		<sp>2</sp>
 		<fireTime>0.2</fireTime>
@@ -14325,7 +14325,7 @@
 		<sysDamage>-1</sysDamage>
 		<persDamage>-1</persDamage>
 		<stun>10</stun>
-		<radius>35</radius>
+		<radius>-16</radius>
 		<shots>3</shots>
 		<sp>2</sp>
 		<fireTime>0.2</fireTime>
@@ -20256,6 +20256,9 @@
 
 	<!--   dlcblueprint stuff in-case it is moved to blueprints. -->
 	<mod:findName type="weaponBlueprint" name="SHOTGUN_2">
+		<mod-overwrite:tip>fm_tip_shotgun_2</mod-overwrite:tip>
+	</mod:findName>
+	<mod:findName type="weaponBlueprint" name="SHOTGUN_2_PLAYER">
 		<mod-overwrite:tip>fm_tip_shotgun_2</mod-overwrite:tip>
 	</mod:findName>
 

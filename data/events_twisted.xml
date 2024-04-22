@@ -69,20 +69,20 @@
 		<event/>
 		</event>
 	</choice>
-	<choice req="ach_fm_boss_crystal" lvl="1" max_group="1" hidden="true" blue="false">
+	<choice req="FM_BOSS_1_COMPLETION" lvl="7" max_group="1" hidden="true" blue="false">
 		<text>You already defeated the Twisted Crystal.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ach_fm_boss_tuco" lvl="1" max_group="2" hidden="true" blue="false">
+	<choice req="FM_BOSS_2_COMPLETION" lvl="7" max_group="2" hidden="true" blue="false">
 		<text>You already defeated the Twisted Tuco.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ach_fm_boss_leech" lvl="1" max_group="3" hidden="true" blue="false">
+	<choice req="FM_BOSS_3_COMPLETION" lvl="7" max_group="3" hidden="true" blue="false">
 		<text>You already defeated the Twisted Leech.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 
-	<choice req="FM_BOSS_LIST_18" lvl="1" max_group="1" blue="false">
+	<choice req="FM_BOSS_LIST_18" lvl="6" max_group="1" blue="false">
 		<text>Twisted Crystal C - Drops Twisted Crystal Armor.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -95,7 +95,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_LIST_18" lvl="1" max_group="2" blue="false">
+	<choice req="FM_BOSS_LIST_18" lvl="6" max_group="2" blue="false">
 		<text>Twisted Tuco B - Drops a rare collectable.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -108,7 +108,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_LIST_18" lvl="1" max_group="3" blue="false">
+	<choice req="FM_BOSS_LIST_18" lvl="6" max_group="3" blue="false">
 		<text>Twisted Leech C - Drops a strange emitter.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -122,20 +122,20 @@
 		</event>
 	</choice>
 
-	<choice req="ach_fm_boss_kestrel" lvl="1" max_group="1" hidden="true" blue="false">
+	<choice req="FM_BOSS_1_COMPLETION" lvl="6" max_group="1" hidden="true" blue="false">
 		<text>You already defeated the Twisted Kestrel.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ach_fm_boss_federation" lvl="1" max_group="2" hidden="true" blue="false">
+	<choice req="FM_BOSS_2_COMPLETION" lvl="6" max_group="2" hidden="true" blue="false">
 		<text>You already defeated the Twisted Federation.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ach_fm_boss_orchid" lvl="1" max_group="3" hidden="true" blue="false">
+	<choice req="FM_BOSS_3_COMPLETION" lvl="6" max_group="3" hidden="true" blue="false">
 		<text>You already defeated the Twisted Orchid.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 
-	<choice req="FM_BOSS_LIST_15" lvl="1" max_group="1" blue="false">
+	<choice req="FM_BOSS_LIST_15" lvl="5" max_group="1" blue="false">
 		<text>Twisted Kestrel B - A... fridge?</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -148,7 +148,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_LIST_15" lvl="1" max_group="2" blue="false">
+	<choice req="FM_BOSS_LIST_15" lvl="5" max_group="2" blue="false">
 		<text>Twisted Federation B - Drops an unique replicator.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -161,7 +161,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_LIST_15" lvl="1" max_group="3" blue="false">
+	<choice req="FM_BOSS_LIST_15" lvl="5" max_group="3" blue="false">
 		<text>Twisted Orchid B - Drops some friends.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -175,15 +175,15 @@
 		</event>
 	</choice>
 
-	<choice req="ach_fm_boss_lanius" lvl="1" max_group="1" hidden="true" blue="false">
+	<choice req="FM_BOSS_1_COMPLETION" lvl="5" max_group="1" hidden="true" blue="false">
 		<text>You already defeated the Twisted Lanius.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ach_fm_boss_shell" lvl="1" max_group="2" hidden="true" blue="false">
+	<choice req="FM_BOSS_2_COMPLETION" lvl="5" max_group="2" hidden="true" blue="false">
 		<text>You already defeated the Twisted Shell.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ach_fm_boss_engineer" lvl="1" max_group="3" hidden="true" blue="false">
+	<choice req="FM_BOSS_3_COMPLETION" lvl="5" max_group="3" hidden="true" blue="false">
 		<text>You already defeated the Twisted Engineer.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
@@ -235,7 +235,7 @@
 		<event load="OPTION_INVALID"/>
 	</choice>
 	-->
-	<choice req="FM_BOSS_LIST_12" lvl="1" max_group="1" blue="false">
+	<choice req="FM_BOSS_LIST_12" lvl="4" max_group="1" blue="false">
 		<text>Twisted Lanius B - Drops a Heart.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -248,7 +248,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_LIST_12" lvl="1" max_group="2" blue="false">
+	<choice req="FM_BOSS_LIST_12" lvl="4" max_group="2" blue="false">
 		<text>Twisted Shell C - Drops an attache case.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -261,7 +261,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_LIST_12" lvl="1" max_group="3" blue="false">
+	<choice req="FM_BOSS_LIST_12" lvl="4" max_group="3" blue="false">
 		<text>Twisted Engineer B - Drops Drone Booster II.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -275,20 +275,20 @@
 		</event>
 	</choice>
 
-	<choice req="ach_fm_boss_slug" lvl="1" max_group="1" hidden="true" blue="false">
+	<choice req="FM_BOSS_1_COMPLETION" lvl="4" max_group="1" hidden="true" blue="false">
 		<text>You already defeated the Twisted Slug.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ach_fm_boss_stealth" lvl="1" max_group="2" hidden="true" blue="false">
+	<choice req="FM_BOSS_2_COMPLETION" lvl="4" max_group="2" hidden="true" blue="false">
 		<text>You already defeated the Twisted Stealth.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ach_fm_boss_zoltan" lvl="1" max_group="3" hidden="true" blue="false">
+	<choice req="FM_BOSS_3_COMPLETION" lvl="4" max_group="3" hidden="true" blue="false">
 		<text>You already defeated the Twisted Zoltan.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 
-	<choice req="FM_BOSS_LIST_9" lvl="1" max_group="1" blue="false">
+	<choice req="FM_BOSS_LIST_9" lvl="3" max_group="1" blue="false">
 		<text>Twisted Slug C - Drops Malboro.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -301,7 +301,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_LIST_9" lvl="1" max_group="2" blue="false">
+	<choice req="FM_BOSS_LIST_9" lvl="3" max_group="2" blue="false">
 		<text>Twisted Stealth B - Drops ?13Xzzzzzzz$</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -314,7 +314,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_LIST_9" lvl="1" max_group="3" blue="false">
+	<choice req="FM_BOSS_LIST_9" lvl="3" max_group="3" blue="false">
 		<text>Twisted Zoltan C - Drops Limit Release.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -328,20 +328,20 @@
 		</event>
 	</choice>
 
-	<choice req="ach_fm_boss_monk" lvl="1" max_group="1" hidden="true" blue="false">
+	<choice req="FM_BOSS_1_COMPLETION" lvl="3" max_group="1" hidden="true" blue="false">
 		<text>You already defeated the Twisted Monk.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ach_fm_boss_rock" lvl="1" max_group="2" hidden="true" blue="false">
+	<choice req="FM_BOSS_2_COMPLETION" lvl="3" max_group="2" hidden="true" blue="false">
 		<text>You already defeated the Twisted Rockman.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ach_fm_boss_lostsun" lvl="1" max_group="3" hidden="true" blue="false">
+	<choice req="FM_BOSS_3_COMPLETION" lvl="3" max_group="3" hidden="true" blue="false">
 		<text>You already defeated the Twisted Lost Sun.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 
-	<choice req="FM_BOSS_LIST_6" lvl="1" max_group="1" blue="false">
+	<choice req="FM_BOSS_LIST_6" lvl="2" max_group="1" blue="false">
 		<text>Twisted Monk B - Drops Aether Ascension Shields.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -354,7 +354,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_LIST_6" lvl="1" max_group="2" blue="false">
+	<choice req="FM_BOSS_LIST_6" lvl="2" max_group="2" blue="false">
 		<text>Twisted Rock C - Drops the Rockmen Relic of Freedom.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -367,7 +367,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_LIST_6" lvl="1" max_group="3" blue="false">
+	<choice req="FM_BOSS_LIST_6" lvl="2" max_group="3" blue="false">
 		<text>Twisted Lost Sun B - Drops Reality-Bent Reloader.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -381,15 +381,15 @@
 		</event>
 	</choice>
 
-	<choice req="ach_fm_boss_freemantis" lvl="1" max_group="1" hidden="true" blue="false">
+	<choice req="FM_BOSS_1_COMPLETION" lvl="2" max_group="1" hidden="true" blue="false">
 		<text>You already defeated the Twisted Free Mantis.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ach_fm_boss_separatist" lvl="1" max_group="2" hidden="true" blue="false">
+	<choice req="FM_BOSS_2_COMPLETION" lvl="2" max_group="2" hidden="true" blue="false">
 		<text>You already defeated the Twisted Separatist.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ach_fm_boss_mantis" lvl="1" max_group="3" hidden="true" blue="false">
+	<choice req="FM_BOSS_3_COMPLETION" lvl="2" max_group="3" hidden="true" blue="false">
 		<text>You already defeated the Twisted Mantis.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
@@ -434,15 +434,15 @@
 		</event>
 	</choice>
 
-	<choice req="ach_fm_boss_clan" lvl="1" max_group="1" hidden="true" blue="false">
+	<choice req="FM_BOSS_1_COMPLETION" lvl="1" max_group="1" hidden="true" blue="false">
 		<text>You already defeated the Twisted Clansman.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ach_fm_boss_dusk" lvl="1" max_group="2" hidden="true" blue="false">
+	<choice req="FM_BOSS_2_COMPLETION" lvl="1" max_group="2" hidden="true" blue="false">
 		<text>You already defeated the Twisted Duskbringer.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
-	<choice req="ach_fm_boss_engi" lvl="1" max_group="3" hidden="true" blue="false">
+	<choice req="FM_BOSS_3_COMPLETION" lvl="1" max_group="3" hidden="true" blue="false">
 		<text>You already defeated the Twisted Engi.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
@@ -526,7 +526,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_2_1" blue="false">
+	<choice req="FM_BOSS_2_1" blue="false" max_group="4">
 		<text>Twisted Free Mantis B - Drops a refreshment.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -539,7 +539,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_2_2" blue="false">
+	<choice req="FM_BOSS_2_2" blue="false" max_group="5">
 		<text>Twisted Separatist B - Drops Magatama.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -552,7 +552,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_2_3" blue="false">
+	<choice req="FM_BOSS_2_3" blue="false" max_group="6">
 		<text>Twisted Mantis B - Drops Pheromone Accelerator.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -565,7 +565,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_3_1" blue="false">
+	<choice req="FM_BOSS_3_1" blue="false" max_group="7">
 		<text>Twisted Monk B - Drops Aether Ascension Shields.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -578,7 +578,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_3_2" blue="false">
+	<choice req="FM_BOSS_3_2" blue="false" max_group="8">
 		<text>Twisted Rock C - Drops the Rockmen Relic of Freedom.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -591,7 +591,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_3_3" blue="false">
+	<choice req="FM_BOSS_3_3" blue="false" max_group="9">
 		<text>Twisted Lost Sun B - Drops Reality-Bent Reloader.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -604,7 +604,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_4_1" blue="false">
+	<choice req="FM_BOSS_4_1" blue="false" max_group="10">
 		<text>Twisted Slug C - Drops Malboro.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -617,7 +617,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_4_2" blue="false">
+	<choice req="FM_BOSS_4_2" blue="false" max_group="11">
 		<text>Twisted Stealth B - Drops ?13Xzzzzzzz$</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -630,7 +630,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_4_3" blue="false">
+	<choice req="FM_BOSS_4_3" blue="false" max_group="12">
 		<text>Twisted Zoltan C - Drops Limit Release.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -643,7 +643,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_5_1" blue="false">
+	<choice req="FM_BOSS_5_1" blue="false" max_group="13">
 		<text>Twisted Lanius B - Drops a Heart.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -656,7 +656,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_5_1" blue="false">
+	<choice req="FM_BOSS_5_2" blue="false" max_group="14">
 		<text>Twisted Shell C - Drops an attache case.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -669,7 +669,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_5_1" blue="false">
+	<choice req="FM_BOSS_5_3" blue="false" max_group="15">
 		<text>Twisted Engineer B - Drops Drone Booster II.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -682,7 +682,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_6_1" blue="false">
+	<choice req="FM_BOSS_6_1" blue="false" max_group="16">
 		<text>Twisted Kestrel B - A... fridge?</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -695,7 +695,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_6_1" blue="false">
+	<choice req="FM_BOSS_6_2" blue="false" max_group="17">
 		<text>Twisted Federation B - Drops an unique replicator.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -708,7 +708,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_6_1" blue="false">
+	<choice req="FM_BOSS_6_3" blue="false" max_group="18">
 		<text>Twisted Orchid B - Drops some friends.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -721,7 +721,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_7_1" blue="false">
+	<choice req="FM_BOSS_7_1" blue="false" max_group="19">
 		<text>Twisted Crystal C - Drops Twisted Crystal Armor.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -734,7 +734,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_7_2" blue="false">
+	<choice req="FM_BOSS_7_2" blue="false" max_group="20">
 		<text>Twisted Tuco B - Drops a rare collectable.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
@@ -747,7 +747,7 @@
 			 </choice>
 		</event>
 	</choice>
-	<choice req="FM_BOSS_7_3" blue="false">
+	<choice req="FM_BOSS_7_3" blue="false" max_group="21">
 		<text>Twisted Leech C - Drops a strange emitter.</text>
 		<event>
 			<text>You power up the Drive Hacker to its maximum strength and watch as a rift opens, shaking your ship as another Renegade comes through it.</text>
