@@ -89,7 +89,7 @@ local holyShitProjectiles = {
   "babyorchid",
   "detergent"
 }
-local animControl = Hyperspace.Global.GetInstance():GetAnimationControl()
+local animControl = Hyperspace.Animations
 local function makeNewDamage(t)
   local dmg = Hyperspace.Damage()
   for k,v in pairs(t) do

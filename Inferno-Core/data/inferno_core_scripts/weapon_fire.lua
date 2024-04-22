@@ -25,7 +25,7 @@ function(projectile, weapon)
 end)
 
 script.on_internal_event(Defines.InternalEvents.DRONE_FIRE, function(projectile, drone)
-  local ownerShip = Hyperspace.Global.GetInstance():GetShipManager(drone:GetOwnerId())
+  local ownerShip = Hyperspace.ships(drone:GetOwnerId())
   local beam_pierce_modifier = ownerShip:GetAugmentationValue("AUG_BEAM_PIERCE_DRONE")
   local pierce_modifier = ownerShip:GetAugmentationValue("AUG_EVERYTHING_PIERCE_DRONE")
   if projectile:GetType() == 5 then

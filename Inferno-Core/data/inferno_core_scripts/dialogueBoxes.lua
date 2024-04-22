@@ -37,7 +37,7 @@ local shipStatBox = dialogueBox:New {
 			else -- if not done, play sound
 				if self.soundTimer > 0.07 then
 					self.soundTimer = 0
-					Hyperspace.Global.GetInstance():GetSoundControl():PlaySoundMix(self.sound, 1, false)
+					Hyperspace.Sounds:PlaySoundMix(self.sound, 1, false)
 				end
 				self.soundTimer = self.soundTimer + Hyperspace.FPS.SpeedFactor / 16
 			end
