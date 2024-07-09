@@ -2636,7 +2636,7 @@
 		</event>
 	</choice>
 	<choice req="MINELAUNCHER_2">
-		<text>Redeem a 'Osiris' Mine Launcher for 13 Flak Points</text>
+		<text>Redeem an 'Osiris' Mine Launcher for 13 Flak Points</text>
 		<event>
 			<text>You have successfully redeemed your weapon</text>
 			<variable name="flak_resource_counter" op="add" val="13" />
@@ -3404,7 +3404,7 @@
 		</event>
 	</choice>
 	<choice req="GATLING_VERSION6">
-		<text>Redeem a 'Excaliber' for 30 Special Flak Points</text>
+		<text>Redeem an 'Excaliber' for 30 Special Flak Points</text>
 		<event>
 			<text>You have successfully redeemed your weapon</text>
 			<variable name="flak_special_resource_counter" op="add" val="30" />

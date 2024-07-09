@@ -75,7 +75,7 @@
 	</choice>
 </event>
 <event name="QUEST_MANTIS_CULTURE_ARRIVAL">
-	<text>You find nothing at this beacon. You suspect it may be a trap, but quickly realize the co-ordinates must have been given in the incorrect order. You switch the co-ordiantes to the correct positions and continue exploring until you find a small Mantis station, with bloostains partly washed from the hull.</text>
+	<text>You find nothing at this beacon. You suspect it may be a trap, but quickly realize the co-ordinates must have been given in the incorrect order. You switch the co-ordinates to the correct positions and continue exploring until you find a small Mantis station, with bloodstains partly washed from the hull.</text>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>

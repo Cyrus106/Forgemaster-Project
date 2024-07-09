@@ -34,7 +34,7 @@
 				<event>
 					<text>"Do not strain our relationship, Renegade. I merely need you to assist me in the collection of artifacts relating to Mr. Wentworth. Do we have an understanding?"</text>
 					<choice hidden="true">
-						<text>How about I find you, wipe your memory, and then replace your core programming with the game "Solitare"? How's that sound, jackass? You're hiding something.</text>
+						<text>How about I find you, wipe your memory, and then replace your core programming with the game "Solitaire"? How's that sound, jackass? You're hiding something.</text>
 						<event>
 							<text>"... Data collection complete. There is an 87% probability that the Renegade is somehow aware of our past betrayal where they eventually destroyed C.U.R.A. Supreme. I have decided to drop the facade, if only for a moment, Renegade. What do you want?" </text>
 							<choice hidden="true">

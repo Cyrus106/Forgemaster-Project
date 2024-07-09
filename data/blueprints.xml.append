@@ -1189,7 +1189,7 @@
 		<mv-mapImage>map_icon_mup_rock_a</mv-mapImage>
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED3_3" layout="zmt_player_lostsun_suicide" img="zmt_player_lostsun_suicide">
-		<class>Twisted Renegade Lostsun</class>
+		<class>Twisted Renegade Lost Sun</class>
 		<name>Deja Mort</name>
 		<unlock id="ship_PLAYER_SHIP_TWISTED_LOSTSUN_unlock"/>
 		<desc>This Lost Sun vessel is equipped with some of the most powerful ancient equipment money could buy, but due to a mistake made during their FTL drive experiments, the ship is rendered unstable. It cannot sustain itself for more than 75 seconds without needing to perform another FTL jump, otherwise the drive will fail catastrophically and destroy the vessel. Hope you're quick!</desc>
@@ -1899,7 +1899,7 @@
 		<class>Twisted Renegade Orchid</class>
 		<name>Wortspiel</name>
 		<unlock id="ship_PLAYER_SHIP_TWISTED_ORCHID_unlock"/>
-		<desc>Why did no one laugh at the gardener's jokes? Because they were too corney! What is the gardener's favourite book? War and Peas!</desc>
+		<desc>Why did no one laugh at the gardener's jokes? Because they were too corny! What is the gardener's favourite book? War and Peas!</desc>
 		<systemList>
 			<battery max="2" power="1" room="1" start="false" img="room_battery_17" />
 			<cloaking power="1" room="13" start="false" img="room_cloaking_4" />
@@ -2135,7 +2135,7 @@
 	</shipBlueprint>
 	<shipBlueprint name="PLAYER_SHIP_TWISTED7_3" layout="zmt_player_leech_suicide" img="player_ship_cracked_zmt_boss_leech_suicide">
 		<class>Twisted Renegade Leech</class>
-		<name>Despondancy</name>
+		<name>Despondency</name>
 		<unlock id="ship_PLAYER_SHIP_TWISTED_LEECH_unlock"/>
 		<desc>The depressed leech owner of this ship installed a special custom-made device into it that allowed everyone to feel the pain he felt. He named it the Motivation Succer, and it makes all crew on the enemy ship drain power from their own ship.</desc>
 		<systemList>
@@ -2374,7 +2374,7 @@
 		<rarity>0</rarity>
 		<powerList>
 			<power>: -Hacks Rooms for 6 seconds, 12 second cooldown. Also stuns enemies during the hack</power>
-			<power>: -Very brittle and easy to smash, 60 hp.</power>
+			<power>: -Very brittle and easy to smash, 60  HP.</power>
 		</powerList>
 		<colorList>
 			<layer>
@@ -2493,7 +2493,7 @@
 		<rarity>0</rarity>
 		<powerList>
 			<power>Stuns enemies and deals 1 Ion every 10 seconds.</power>
-			<power>165 hp, immobile. Heals itself for 10 HP every 7 seconds.</power>
+			<power>165 HP, immobile. Heals itself for 10 HP every 7 seconds.</power>
 
 		</powerList>
 	</crewBlueprint>
@@ -2541,14 +2541,14 @@
 	</crewBlueprint>
 
 	<crewBlueprint name="fm_crystal_prison">
-		<desc>A crystallized crew member, imprisonned and helpless.</desc>
+		<desc>A crystallized crew member, imprisoned and helpless.</desc>
 		<title>Crystal Prison</title>
 		<short>Crystal Prison.</short>
 		<cost>150</cost>
 		<bp>4</bp>
 		<rarity>0</rarity>
 		<powerList>
-			<power>125 hp, immobile. Takes 2x damage from combat and 1.3x damage from all other sources.</power>
+			<power>125 HP, immobile. Takes 2x damage from combat and 1.3x damage from all other sources.</power>
 			<power>Cannot heal, or be cloned if destroyed.</power>
 			<power>Reverts to normal after 10 seconds.</power>
 		</powerList>
@@ -2563,7 +2563,7 @@
 		<rarity>0</rarity>
 		<powerList>
 			<power>Active Ability: Temporarily takes only 20% damage and reduces suffocation damage for nearby allies by 50%.</power>
-			<power>Active Ability: Buffs their twin's hp and movespeed by 10% while in the same room.</power>
+			<power>Active Ability: Buffs their twin's HP and movespeed by 10% while in the same room.</power>
 			<power>x2.5 repair speed, x0.6 combat damage</power>
 			<power>Greatly reduced burn and suffocation damage</power>
 		</powerList>
@@ -2585,7 +2585,7 @@
 		<rarity>0</rarity>
 		<powerList>
 			<power>Active Ability: Temporarily takes only 20% damage and reduces fire damage for nearby allies by 50%.</power>
-			<power>Active Ability: Buffs their twin's hp and movespeed by 10% while in the same room.</power>
+			<power>Active Ability: Buffs their twin's HP and movespeed by 10% while in the same room.</power>
 			<power>x2.5 repair speed, x0.6 combat damage</power>
 			<power>Greatly reduced burn and suffocation damage</power>
 
@@ -2793,7 +2793,7 @@
 		<rarity>0</rarity>
 		<powerList>
 			<power>Takes 0.75x damage in combat, but moves at 0.8x speed.</power>
-			<power>2x Repair speed, halfed suffocation damage.</power>
+			<power>2x Repair speed, halved suffocation damage.</power>
 			<power>Passive Ability: Upon reaching 25 or lower health, engages survival mode and becomes immune to most sources of damage.</power>
 		</powerList>
 	</crewBlueprint>
@@ -2823,7 +2823,7 @@
 		<powerList>
 			<power>Targeted enemies take -12hp/s, but only attacks for 0.4x damage.</power>
 			<power>Repairs at 0.75x speed, but puts out fires at 2.25x speed.</power>
-			<power>Active Ability: Merge with a Cobalt Separatist to form a Twisted Seperatist.</power>
+			<power>Active Ability: Merge with a Cobalt Separatist to form a Twisted Separatist.</power>
 			<!--<power>Passive Ability: When an enemy it is targeting dies, spreads fires through the current room. Cannot burn.</power>-->
 		</powerList>
 	</crewBlueprint>
@@ -2990,7 +2990,7 @@
 	<rarity>0</rarity>
 	<powerList>
 	<power>Spawns fires every 7 seconds, and generates O2 to feed the fire.</power>
-	<power>120 hp, immobile. Slowly heals itself every 7 seconds</power>
+	<power>120 HP, immobile. Slowly heals itself every 7 seconds</power>
 	<power></power>		</powerList>	</crewBlueprint>
 
 	<crewBlueprint name="phantomomega">
@@ -3002,7 +3002,7 @@
 	<rarity>0</rarity>
 	<powerList>
 	<power>Spawns fires every 7 seconds, and generates O2 to feed the fire.</power>
-	<power>120 hp, immobile. Slowly heals itself every 7 seconds</power>
+	<power>120 HP, immobile. Slowly heals itself every 7 seconds</power>
 	<power></power>		</powerList>	</crewBlueprint>
 
 	<crewBlueprint name="mareomega">
@@ -3014,7 +3014,7 @@
 	<rarity>0</rarity>
 	<powerList>
 	<power>Spawns fires every 7 seconds, and generates O2 to feed the fire.</power>
-	<power>120 hp, immobile. Slowly heals itself every 7 seconds</power>
+	<power>120 HP, immobile. Slowly heals itself every 7 seconds</power>
 	<power></power>		</powerList>	</crewBlueprint>
 
 	<crewBlueprint name="wraithomega">
@@ -3026,7 +3026,7 @@
 	<rarity>0</rarity>
 	<powerList>
 	<power>Spawns fires every 7 seconds, and generates O2 to feed the fire.</power>
-	<power>120 hp, immobile. Slowly heals itself every 7 seconds</power>
+	<power>120 HP, immobile. Slowly heals itself every 7 seconds</power>
 	<power></power>		</powerList>	</crewBlueprint>-->
 
 
@@ -3070,7 +3070,7 @@
 		<powerList>
 			<power>150 health, deals 0.3x damage in combat.</power>
 			<power>Passively drains health from enemies in the room, and prevents them from being cloned if they die in the same room as this drone.</power>
-			<power>Occasionally surges with energy, healing all allies on both ships for 20 hp, and damaging all enemy crew for 10hp.</power>
+			<power>Occasionally surges with energy, healing all allies on both ships for 20 HP, and damaging all enemy crew for 10hp.</power>
 		</powerList>
 	</crewBlueprint>
 
@@ -3367,7 +3367,7 @@
 		<title>Ancalagon Warbringer</title>
 		<short>Warbringer</short>
 		<desc>[CURRENT MODE: Anti-Person] An extremely powerful combat drone that regularly surges with energy.
-			Inflicts: 1 ion, 1 system damage, a 4 second stun, deal 10 damage to enemy crew, and then heals itself for 20 hp.
+			Inflicts: 1 ion, 1 system damage, a 4 second stun, deal 10 damage to enemy crew, and then heals itself for 20 HP.
 			Has higher health and damage
 		</desc>
 		<power>3</power>
@@ -3384,7 +3384,7 @@
 		<title>Ancalagon Warbringer</title>
 		<short>Warbringer</short>
 		<desc>[CURRENT MODE: Boarding] An extremely powerful combat drone that regularly surges with energy.
-			Inflicts: 1 ion, 1 system damage, a 4 second stun, deal 10 damage to enemy crew, and then heals itself for 20 hp.
+			Inflicts: 1 ion, 1 system damage, a 4 second stun, deal 10 damage to enemy crew, and then heals itself for 20 HP.
 			Has higher health and damage
 		</desc>
 		<power>3</power>
@@ -7548,7 +7548,7 @@
 	</weaponBlueprint>
 	<weaponBlueprint name="FM_BEAM_EXPLOSION_LASER">
 		<type>LASER</type>
-		<title>Laser for explosiom</title>
+		<title>Laser for explosion</title>
 		<short>Vindicator</short>
 		<tip>tip_laser</tip>
 		<desc>Let it hit you and you're already dead.</desc>
@@ -7912,8 +7912,8 @@
 		<type>BEAM</type>
 		<title>'HD_Hotfix_26v7' Beam</title>
 		<short>'HD_Hotfix_26v7'</short>
-		<desc>An experimental anti-harmony ionic beam weapon. It is designed to real increased damage to Engi crew.</desc>
-		<descriptionOverride>An experimental anti-harmony ionic beam weapon. It is designed to deal increased damage to Engi crew.
+		<desc>An experimental anti-Harmony ionic beam weapon. It is designed to real increased damage to Engi crew.</desc>
+		<descriptionOverride>An experimental anti-Harmony ionic beam weapon. It is designed to deal increased damage to Engi crew.
 
 			Stats:
 			Required Power: 3
@@ -7991,7 +7991,7 @@
 		<type>BEAM</type>
 		<title>'Eternity' Beam</title>
 		<short>'Eternity' B.</short>
-		<desc>Cuts fleets like it's terrestial couterpart cuts grass.</desc>
+		<desc>Cuts fleets like it's terrestrial counterpart cuts grass.</desc>
 		<tooltip>Beam weapon, 2 damage to hull, 3 damage to system per room.</tooltip>
 		<damage>1</damage>
 		<sp>1</sp>
@@ -8785,7 +8785,7 @@
 		<tip>tip_bio</tip>
 		<title>Crystallised Nanobeam</title>
 		<short>C. Nanobeam</short>
-		<desc>This child of Crystal Science uses strange crystalised nanobots to trap your opponents, causing all enemy crew on the opposing ship to lockdown the room they are currently in.</desc>
+		<desc>This child of Crystal Science uses strange crystallised nanobots to trap your opponents, causing all enemy crew on the opposing ship to lockdown the room they are currently in.</desc>
 		<tooltip> Beam weapon that greatly damages enemy crew. Stuns, pierces shields, and starts fires. Extremely expensive but excellent for crew killing.</tooltip>
 		<!--<damage>6</damage>-->
 		<damage>0</damage>
@@ -10694,11 +10694,11 @@
 		<type>BURST</type>
 		<title>'Ba-Pef' Mine Launcher</title>
 		<short>'Ba-Pef'</short>
-		<desc>Like its' name-sake, a Minelauncher of Terror. Fires 5 Mines in a slightly smaller radius, deals 2x damage to systemless rooms.
+		<desc>Like its' name-sake, a Mine Launcher of Terror. Fires 5 Mines in a slightly smaller radius, deals 2x damage to systemless rooms.
 
 			At empty beacons provides 5 fleet delay for 21 missiles
 		</desc>
-		<tooltip>>Like its' name-sake, a Minelauncher of Terror. Fires 5 Mines in a slightly smaller radius, deals 2x damage to systemless rooms.
+		<tooltip>>Like its' name-sake, a Mine Launcher of Terror. Fires 5 Mines in a slightly smaller radius, deals 2x damage to systemless rooms.
 
 			At empty beacons provides 5 fleet delay for 21 missiles
 		</tooltip>
@@ -10736,7 +10736,7 @@
 	<weaponBlueprint name="FM_ROYAL_MINELAUNCHER">
 		<type>BURST</type>
 		<tip>tip_ancient</tip>
-		<flavorType>Aether Minelauncher</flavorType>
+		<flavorType>Aether Mine Launcher</flavorType>
 		<title>Onslaught Launcher</title>
 		<short>Onslaught</short>
 		<desc>It seems the Mine Launchers go farther back then you expected. This one appears to be much stronger than its modern cousins.
@@ -10907,7 +10907,7 @@
 		<tip>bomb_crime</tip>
 		<title>Project #7: Burning End</title>
 		<short>Project #7</short>
-		<desc>The blueprints of this weapon and its counterpart, the Project #22, were created by a Crystal scientist devoted to learning how to kill every lifeform in the galaxy. She's gone now, but you're proud to uphold her heritage. This one uses flourine-infused crystals to ignite ANYTHING.</desc>
+		<desc>The blueprints of this weapon and its counterpart, the Project #22, were created by a Crystal scientist devoted to learning how to kill every lifeform in the galaxy. She's gone now, but you're proud to uphold her heritage. This one uses fluorine-infused crystals to ignite ANYTHING.</desc>
 		<tooltip>Makes all crew types burn, even rocks. All crew hit take 1.75x damage from fire, and put out fires 70% slower. 15 second duration.</tooltip>
 		<damage>0</damage>
 		<sysDamage>0</sysDamage>
@@ -15644,8 +15644,8 @@
 		<type>BURST</type>
 		<title>'Ba-Pef' Mine Launcher</title>
 		<short>'Ba-Pef'</short>
-		<desc>Like its' name-sake, a Minelauncher of Terror. Fires 5 Mines in a slightly smaller radius, deals 2x damage to systemless rooms.   </desc>
-		<tooltip>Like its' name-sake, a Minelauncher of Terror. Fires 5 Mines in a slightly smaller radius, deals 2x damage to systemless rooms.  </tooltip>
+		<desc>Like its' name-sake, a Mine Launcher of Terror. Fires 5 Mines in a slightly smaller radius, deals 2x damage to systemless rooms.   </desc>
+		<tooltip>Like its' name-sake, a Mine Launcher of Terror. Fires 5 Mines in a slightly smaller radius, deals 2x damage to systemless rooms.  </tooltip>
 		<damage>1</damage>
 		<sysDamage>-1</sysDamage>
 		<missiles>1</missiles>
@@ -15686,7 +15686,7 @@
 		<tip>bomb_crime</tip>
 		<title>Ovenator</title>
 		<short>Ovenator</short>
-		<desc>The blueprints of this weapon and its counterpart, Project #22, were created by a Crystal scientist devoted to learning how to kill every lifeform in the galaxy. She's gone now, but you're proud to uphold her heritage. This one uses flourine-infused crystals to ignite ANYTHING.</desc>
+		<desc>The blueprints of this weapon and its counterpart, Project #22, were created by a Crystal scientist devoted to learning how to kill every lifeform in the galaxy. She's gone now, but you're proud to uphold her heritage. This one uses fluorine-infused crystals to ignite ANYTHING.</desc>
 		<tooltip>Makes all crew types burn, even rocks. All crew hit take 2x damage from fire, and put out fires 70% slower. 15 second duration.</tooltip>
 		<damage>0</damage>
 		<sysDamage>0</sysDamage>
@@ -15815,7 +15815,7 @@
 		<short>Compactinator</short>
 		<desc>Compactinator FLAVOR HERE</desc>
 		<damage>0</damage>
-		<tooltip>Compatinator</tooltip>
+		<tooltip>Compactinator</tooltip>
 		<missiles>20</missiles>
 		<sysDamage>0</sysDamage>
 		<persDamage>0</persDamage>   <!--60 crew damage-->
@@ -18106,7 +18106,7 @@
 
 	<augBlueprint name="LAB_PLATED_REGEN">
 		<title>Forgemaster </title>
-		<desc>less max hp, boosts regen</desc>
+		<desc>less max HP, boosts regen</desc>
 		<cost>0</cost>
 		<rarity>0</rarity>
 		<stackable>false</stackable>
@@ -18115,7 +18115,7 @@
 
 	<augBlueprint name="LAB_PLATED_BIG">
 		<title>Forgemaster </title>
-		<desc>double damage reduction, halve hp</desc>
+		<desc>double damage reduction, halve HP</desc>
 		<cost>0</cost>
 		<rarity>0</rarity>
 		<stackable>false</stackable>
@@ -18449,7 +18449,7 @@
 	</augBlueprint>
 	<augBlueprint name="PACIFISTIC_REGENERATION">
 		<title>Pacifistic Regeneration</title>
-		<desc>For every living enemy crew aboard your ship, all allied crew on board your ship constantly regenerate at 2.0 hp/s. Provides a 5 HP Energy Shield as well.</desc>
+		<desc>For every living enemy crew aboard your ship, all allied crew on board your ship constantly regenerate at 2.0 HP/s. Provides a 5 HP Energy Shield as well.</desc>
 		<cost>50</cost>
 		<rarity>0</rarity>
 		<stackable>false</stackable>

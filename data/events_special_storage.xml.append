@@ -989,12 +989,12 @@
 		<checkCargo/>
 
 		<choice req="FM_DISC_LAUNCHER_FORGE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Load scrap into a minelauncher and energize it with the Hullbuster Energy weapon to forge the TARANIS Energized Disc.</text>
+			<text>Load scrap into a mine launcher and energize it with the Hullbuster Energy weapon to forge the TARANIS Energized Disc.</text>
 			<event load="STORAGE_CHECK_CREATE_FM_ENERGY_DISC"/>
 		</choice>
 
 		<choice req="FM_DISC_LAUNCHER_FORGE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
-			<text>You must have a basic minelauncher and Hullbuster Energy weapon to forge this weapon.</text>
+			<text>You must have a basic mine launcher and Hullbuster Energy weapon to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
@@ -1098,7 +1098,7 @@
 
 
 		<choice req="FM_BEAM_MINING_2_LIST" lvl="1" blue="false" hidden="true">
-			<text>Dissassemble and combine the 'Sarissa' Beam and Mining beams to forge the Ishimura Beam.[Cost: 150~]</text>
+			<text>Disassemble and combine the 'Sarissa' Beam and Mining beams to forge the Ishimura Beam.[Cost: 150~]</text>
 			<event load="STORAGE_CHECK_CREATE_FM_BEAM_MINING_2"/>
 		</choice>
 
@@ -1352,7 +1352,7 @@
 		<checkCargo/>
 
 		<choice req="FM_MISSILES_BURST_FIRE_FORGE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Dissassemble and combine the Ares and Hades missiles to forge the 'Hellfire' Burst Missile.</text>
+			<text>Disassemble and combine the Ares and Hades missiles to forge the 'Hellfire' Burst Missile.</text>
 			<event load="STORAGE_CHECK_CREATE_FM_MISSILES_BURST_FIRE"/>
 		</choice>
 
@@ -1407,7 +1407,7 @@
 		</choice>
 
 		<choice req="FM_MINELAUNCHER_BIO_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
-			<text>You must have an Ascelpius Missile and an Osiris Minelauncher to forge this weapon.</text>
+			<text>You must have an Ascelpius Missile and an Osiris Mine Launcher to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
@@ -2068,7 +2068,7 @@
 		<checkCargo/>
 		<text>Currently viewing the 'TARANIS' Energized Disc.</text>
 		<choice req="MINELAUNCHER_1" blue="false">
-			<text>Craft the 'TARANIS' Energized Disc using the Geb Minelauncher.</text>
+			<text>Craft the 'TARANIS' Energized Disc using the Geb Mine Launcher.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_ENERGY_DISC"/>
@@ -2084,7 +2084,7 @@
 		</choice>
 
 		<choice req="MINELAUNCHER_2" blue="false">
-			<text>Craft the 'TARANIS' Energized Disc using the Osirus Minelauncher.</text>
+			<text>Craft the 'TARANIS' Energized Disc using the Osiris Mine Launcher.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_ENERGY_DISC"/>
@@ -2100,7 +2100,7 @@
 		</choice>
 
 		<choice req="MINELAUNCHER_FIRE" blue="false">
-			<text>Craft the 'TARANIS' Energized Disc using the Sekhmet Minelauncher.</text>
+			<text>Craft the 'TARANIS' Energized Disc using the Sekhmet Mine Launcher.</text>
 
 			<event>
 				<text>Proceed with crafting?</text>
@@ -2117,7 +2117,7 @@
 		</choice>
 
 		<choice req="MINELAUNCHER_STUN" blue="false">
-			<text>Craft the 'TARANIS' Energized Disc using the Anubis Minelauncher.</text>
+			<text>Craft the 'TARANIS' Energized Disc using the Anubis Mine Launcher.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_ENERGY_DISC"/>
@@ -7724,7 +7724,7 @@
 			<weapon name="LIST_ABC_AUGMENTEDLANIUS_WEAPONREWARD"/>
 		</event>
 		<event>
-			<text>Closer scans of the ship reveal that its inner augmentations are relatively new, and haven't yet been irreversably assimilated into the hull. You're able to uninstall an advanced piece of ship equipment from their systems, and find it to be compatable with your own.</text>
+			<text>Closer scans of the ship reveal that its inner augmentations are relatively new, and haven't yet been irreversibly assimilated into the hull. You're able to uninstall an advanced piece of ship equipment from their systems, and find it to be compatible with your own.</text>
 			<augment name="LIST_ABC_AUGMENTEDLANIUS_AUGMENTREWARD"/>
 		</event>
 	</eventList>
@@ -7836,7 +7836,7 @@
 
 	<eventList name="ABC_ROYALOBELISK_EXTRA_REWARDS">
 		<event>
-			<text>You find a piece of Obelisk tech in the ship's cargo, in perfect condidion. It's even more advanced than the usual variety, and will no doubt be a useful piece of equipment.</text>
+			<text>You find a piece of Obelisk tech in the ship's cargo, in perfect condition. It's even more advanced than the usual variety, and will no doubt be a useful piece of equipment.</text>
 			<weapon name="GIFTLIST_ROYAL"/>
 		</event>
 		<event>
@@ -8041,7 +8041,7 @@
 
 	<!--Flavor text list for upgrading free mantis to hive mantis-->
 	<textList name="TEXT_TWISTED_MANTIS_UPGRADE_FREE_MANTIS_TO_MANTIS">
-		<text>Your Free Mantis is greedily inhaling some pheromones in their quarters. They gaze at you in awe as you approach with the Queen's Tea, and ask if they can have some. As they drink, their expression changes, and they knock their phermones to the ground in disgust. "What was I thinkings, Captain? Natural pheromones much betters!"</text>
+		<text>Your Free Mantis is greedily inhaling some pheromones in their quarters. They gaze at you in awe as you approach with the Queen's Tea, and ask if they can have some. As they drink, their expression changes, and they knock their pheremones to the ground in disgust. "What was I thinkings, Captain? Natural pheromones much betters!"</text>
 		<text>Your Free Mantis is bragging to the others about "How Captain is think favorite of them," and they grin triumphantly as you approach with your gift. Their idolization of you is tiresome at times, but you're still going to miss it a little...</text>
 		<text>You find your Free Mantis "playing chess" in the dining hall. They're concentrating hard, and they turn to you to ask "Captain, which one is pawn again?" You sigh, and ask if they want a break to have some tea. They drink up, and thank you "Brain is much more cleared, Captain!" They confidently move their knight forward by a space, and you don't bother to correct them.</text>
 		<text>To your surprise, you find your Free Mantis trying to make tea on their own! As you take in the scene, it's clear they don't have any idea what they're doing. They've tried using pheromones instead of water, and the contents of the tea bag are all over the floor. You offer to make the tea yourself, and they gratefully accept. "You are biggest smartest, Captain!"</text>
@@ -8052,13 +8052,13 @@
 		<text>Your Free Mantis is brewing up some pheromones in their quarters. You ask them if they'd like something to drink, and present the Queen's Tea. They take it, and they pour the whole thing in with their pheromone mixture! Later, you notice the growths of their head plate have become much more prominent. Guess you can't argue with results...</text>
 		<text>You walk around the ship, and find your Free Mantis debating over what kind of music is the best. They stop for a moment to drink the tea that you've brought them, and continue their debate with new vigor. You're almost certain that none of these genres actually exist, but you're not going to argue with a freshly-made Warlord.</text>
 		<text>Your Free Mantis has just finished taking some of their pheromones, and is gazing up at the ceiling sleepily. When they go to drink the Queen's Tea, nearly half of it dribbles down their face. Their focus sharpens quickly, and they rise up, quickly moving to make more pheromones. "Am suddenly wanting more, Captain! Want sharings?" You respectfully decline, and leave before the fumes get to you.</text>
-		<text>As you take stock of the ship's resources, you notice an unusally large surplus of pheromones in the cargo. You question your Free Mantis about this over a cup of tea, but you're unable to get a coherent response out of them. The issue resolves itself in a few hours, as they rapidly burn through their supply.</text>
+		<text>As you take stock of the ship's resources, you notice an unusually large surplus of pheromones in the cargo. You question your Free Mantis about this over a cup of tea, but you're unable to get a coherent response out of them. The issue resolves itself in a few hours, as they rapidly burn through their supply.</text>
 	</textList>
 
 	<!--Flavor text list for upgrading warlord to crackerjack-->
 	<textList name="TEXT_TWISTED_MANTIS_UPGRADE_WARLORD_TO_CRACKERJACK">
 		<text>You turn to your Free Mantis Warlord and offer them the Queen's Tea. They accept the now-familiar challenge with gusto, draining the whole pot in seconds! "Queen herself would be proud, Captain!" You assure them that Leikonpliiinakra would be very impressed, and they look at you in confusion. "Why would Leikonpliiinakra be caring of tea? Am talking about REAL Queen!"</text>
-		<text>Your Free Mantis Warlord drinks the tea in front of you with vigor. You avert your eyes for a moment as they guzzle the tea with a complete lack of poise or etiquette. You look back at them once they're finished, and are surpised by their new outfit! You're not sure where they got a bearskin hat so quickly, but you know better than to ask questions... </text>
+		<text>Your Free Mantis Warlord drinks the tea in front of you with vigor. You avert your eyes for a moment as they guzzle the tea with a complete lack of poise or etiquette. You look back at them once they're finished, and are surprised by their new outfit! You're not sure where they got a bearskin hat so quickly, but you know better than to ask questions... </text>
 		<text>Your Free Mantis Warlord is exchanging jokes with the rest of the crew, bursting into laughter before anybody can even get to the punchline. You wait for them to catch their breath, and present the Queen's Tea to them. Later, you watch as the crew tries for hours to make them laugh as they stand stoically in front of their quarters.</text>
 		<text>You hold your breath as you enter your Warlord's quarters, and your eyes burn as their mixture of pheromones bubbles furiously. You wave to get their attention, and quickly hand the tea to them before you pass out from the fumes. A few hours later, you walk by their doorway and are surprised by a rather pleasant smell. Are they making... Tea?</text>
 	</textList>
@@ -9800,7 +9800,7 @@
 		<text>Your Plated Rockman tells you a story about how one time Alastair dropped his wedding ring into the forge. He slammed his arm into the forge so fast to get it out he nearly broke the forge.</text>
 		<text>Your Plated Rockman tells you about an object they read about in a book called a "kite". They ask if you would like to go fly one sometime on a nearby planet.</text>
 		<text>You walk in to observe your Plated Rockman using a nearby wall to scratch their back. You decide to leave them to their business.</text>
-		<text>Your spot your Plated Rockman at the cafeteria, they are eating enough to kill a bear. You sit next to them and they clap you on the back with their arm, a hearty grin on their face.  You dont have the heart to tell them they almost broke your back. </text>
+		<text>Your spot your Plated Rockman at the cafeteria, they are eating enough to kill a bear. You sit next to them and they clap you on the back with their arm, a hearty grin on their face.  You don't have the heart to tell them they almost broke your back. </text>
 		<text>Your Plate Rockman bashfully approaches you and asks if the hat they are wearing looks good with their duds. You don't have the heart to tell them a top hat doesn't match electroplating.</text>
 		<text>You ask your Plated Rockman what they thinks about the Mantis. They think on it for a moment, then responds "They make cool bombs. I love taking them apart." You're pretty sure thats what you meant.</text>
 		<text>Some of your crew complain about the heat being too high. You catch the culprit, your Plated Rockman. They claim it is "too cold on the ship." The crew is sweating so much that they could fill a swimming pool, you scold them to not do this anymore.</text>
@@ -9922,9 +9922,9 @@
 		<text>You receive a message on an encrypted channel from Admiral Tully himself. He gets straight to the point: "Listen to me, the Federation's entire database keeps getting replaced with a fictional story called 'Catboy Tully's adventures :3'. Thank god the one who does it puts our database back up an hour later. We have traced these database changes back to a terminal belonging to an individual named 'Mossberg' that is aboard your vessel. Son, is this a joke to you? Get your crew in line or I'll do it myself." He hangs up on you before you can answer. </text>
 		<text>You find Remington in the cafeteria "singing" via beeps. His song is surprisingly catchy and a few of the other crew members are humming along or snapping their fingers, if they have any.</text>
 		<text>You find a drawing on your door. Remington drew a crude drawing of you, your crew, and him in a group pose. It has a single word written on the back of the drawing: "Friend".</text>
-		<text>Remington asks you if there is a way to seperate all Engis from the Harmony without killing them. You don't have any satisfactory answers for him, he seems disappointed.</text>
+		<text>Remington asks you if there is a way to separate all Engis from the Harmony without killing them. You don't have any satisfactory answers for him, he seems disappointed.</text>
 		<text>You ask Remington how he feels about his brother Mossberg. "I would take a bullet for my brother, then whatever nanomachines left on my person would take twelve more. Any other questions, Captain?"</text>
-		<text>You find Remington trying to paint a superhero motif on one of your ship's consoles, presumably from one of his comics. You sterly tell him to cease painting on delicate equipment.</text>
+		<text>You find Remington trying to paint a superhero motif on one of your ship's consoles, presumably from one of his comics. You sternly tell him to cease painting on delicate equipment.</text>
 	</textList>
 
 	<event name="STORAGE_CHECK_CREW_MOSSBERG"> <!-- Loves puzzles, especially crosswords. -->
@@ -9978,7 +9978,7 @@
 
 			Mossberg hands you the diagram. It is a black and white photo of a bat with some sort of fragmentation bomb attached to it. The document is also clearly classified. You confiscate it.
 		</text>
-		<text>Mossberg visits your quarters again, with what appears to be a diagram. "Captain, I am CERTAIN this was a terrestial project that involved tiny avians and a nuclear bomb. Why were the tiny avians put near to bomb to "keep it warm". Were humans just an earlier OS version back then? Design seems...illogical."
+		<text>Mossberg visits your quarters again, with what appears to be a diagram. "Captain, I am CERTAIN this was a terrestrial project that involved tiny avians and a nuclear bomb. Why were the tiny avians put near to bomb to "keep it warm". Were humans just an earlier OS version back then? Design seems...illogical."
 
 			You stare at the Engi for 12 long, tense seconds, then snatch the paper and read the (unsurprisingly) confidential document he probably hacked from the Federation database again. You are confused to find that what he describes is....real??
 		</text>
@@ -10040,14 +10040,14 @@
 
 
 	<textList name="TEXT_CREW_TALK_ENGI_TWINS" ignoreUnique="true">
-		<text> You overhear the two engi brothers arguing about something.
+		<text> You overhear the two Engi brothers arguing about something.
 			"Unorthodox colors and inelegant gameboard = disposable." "Disregard conclusion. Colors contain context of terrestrial origins giving significance => similar activities."
 			The first  brother makes an irritated looking gesture and says "you malfunction."
 		</text>
 		<text>The twins are arguing again. Remington is shouting. "SO F1--->HELP ME IF YOU THROW OUT MY GRAPHICS DRIVE AGAIN I WILL-"
 			his voice cuts off suddenly. A small automated voice plays: "system error, please contact customer support." Mossberg sighs, calms themselves, and starts helping repair their brother.
 		</text>
-		<text>You run into the twins at the cafeteria. Remington looks extremely nervous as he slowly approaches....the microwave?! His brother quickly grabs him and pulls him away from it. "Its league > your league. Don't embarass yourself in front of her brother. You would achieve >= results calculating the square root of pie." Mossberg explains sternly to his brother. You start hiding the microwave from the twins.</text>
+		<text>You run into the twins at the cafeteria. Remington looks extremely nervous as he slowly approaches....the microwave?! His brother quickly grabs him and pulls him away from it. "Its league > your league. Don't embarrass yourself in front of her brother. You would achieve >= results calculating the square root of pie." Mossberg explains sternly to his brother. You start hiding the microwave from the twins.</text>
 		<text>While checking in on the twins you find a video one of them was recording on their terminal.
 
 			You hear one of the twins imitating a human voice you have never heard before,"Hi, I'm Mossberg and welcome to jackass!!" The twin then proceeded to throw itself out the airlock with what appears to be a life support tube tied around its waist, but forgot to tie the other end to anything! The video cuts abruptly after hearing Winchester yelling "Mossberg get idiot brother back here right damn now!!"
@@ -10055,13 +10055,13 @@
 		<text>You overhear the twin brothers laughing together about a joke you don't quite understand. But it is nice to see them enjoying themselves.</text>
 		<text>You find the two Engi brothers at the cafeteria. They are playing a word game together where they have a conversation and start each sentence with the next letter in the human alphabet, and go back and forth with this game to get the other crew members to laugh. "Attention Remington, you are a potato-battery!" Mossberg says with a chuckle. "Be reasonable Mossberg, you haven't even seen a potato before." Remington responds back. "Clearly, you haven't seen my image folder on my terminal." Mossberg shoots back. "Disgusting, that is all I have to say." Remington says, concluding the game and agreeing that Mossberg wins this round. Their score is 453,752 - 462, 319.
 		</text>
-		<text>You find the two Engi brothers looking over a diagram of an Engi. They appear to be discussing how to most efficiently destroy them, or forcefully seperate an individual Engi from the Harmony.</text>
+		<text>You find the two Engi brothers looking over a diagram of an Engi. They appear to be discussing how to most efficiently destroy them, or forcefully separate an individual Engi from the Harmony.</text>
 
 
 	</textList>
 
 	<textList name="TEXT_CREW_TALK_ENGI_TWINS_COLLECTION" >
-		<text>You browse Remington's boardgame collection. One of them catches your eye today, it is a game called THE KING IN CYAN. It depicts a robed humanoid figure in a bright cyan colored cloak standing over a ritual circle, perhaps some type of diety? You try to read the instruction manual, but it is 20 pages long, and you change your mind.</text>
+		<text>You browse Remington's boardgame collection. One of them catches your eye today, it is a game called THE KING IN CYAN. It depicts a robed humanoid figure in a bright cyan colored cloak standing over a ritual circle, perhaps some type of deity? You try to read the instruction manual, but it is 20 pages long, and you change your mind.</text>
 		<text>You browse Remington's boardgame collection. One of them catches your eye today, it is a game called THEOCRACY. It involves rolling dice to move pieces around a board and claim different beacons, then gather "scrap leases" from other players that land on your beacons. The goal is to bankrupt the other players and take control of the government.</text>
 		<text>You browse Remington's boardgame collection. One of them catches your eye today, it is a game called HUNGRY HUNGRY LANIUS. The game board is surrounded by four mechanical, colorful, plastic Lanius heads operated by levers on the backs of their head.
 
@@ -10070,7 +10070,7 @@
 			Colored plastic ship hulls are dispensed into the board by each player, and the players repeatedly press the lever on their Lanius in order to have it "eat" the hulls, which travel down from under the Lanius into a small scoring area for each player. Once all hulls have been eaten, the player who has collected the most is the winner.
 		</text>
 		<text>You browse Remington's boardgame collection. One of them catches your eye today, it is a game called SPECULATE SOMEONE?: MANTIS EDITION. It has functionally the same ruleset as the boardgame SPECULATE SOMEONE? but it only has 24 characters and 1 race: the Mantis. You assume this is a simplified version for the Mantis to play. </text>
-		<text>You browse Mossberg's comic collection. One of them catches your eye today, it is a comic called DEATH TO XENOS: THE CRUSADE. It is a crudely drawn comic book spreading Rebel propoganda about how bad the other alien species' continued existance is for the Rebel faction. You ask Mossberg about it, he says he keeps it "ironically" because it is so outlandish it becomes humorous.</text>
+		<text>You browse Mossberg's comic collection. One of them catches your eye today, it is a comic called DEATH TO XENOS: THE CRUSADE. It is a crudely drawn comic book spreading Rebel propaganda about how bad the other alien species' continued existence is for the Rebel faction. You ask Mossberg about it, he says he keeps it "ironically" because it is so outlandish it becomes humorous.</text>
 		<text>You browse Remington's boardgame collection. One of them catches your eye today, it is a game called SPECULATE SOMEONE?. Each player starts the game with a board that includes cartoon images of 336 people, 24 for each race. Each player selects a card of their choice from a separate pile of cards containing the same 336 images.
 			The objective of the game is to be the first to determine which card one's opponent has selected.
 
@@ -10137,7 +10137,7 @@
 		<choice req="twisted_blessing_counter" lvl="1" blue="false" max_group="2">
 				<text>Release a trivial amount of rage.(1 hull damage to enemy, 1 rage cost)</text>
 				<event>
-					<text>A negligable effect, to be sure. Yet no strike is wasted in the field of battle.</text>
+					<text>A negligible effect, to be sure. Yet no strike is wasted in the field of battle.</text>
 					<variable name="twisted_blessing_counter" op="add" val="-1"/>
 					<enemyDamage amount="1"/>
 				</event>
@@ -10246,7 +10246,7 @@
 			<choice hidden="true" req="loc_laststand" lvl="0" max_group="1" blue="false">
 					<text>Meditate for 2 jumps. (14 rage gained)</text>
 					<event>
-							<text>You recall the last time one of your crew was taken too soon. Unavoidable or not, it cannnot be tolerated.</text>
+							<text>You recall the last time one of your crew was taken too soon. Unavoidable or not, it cannot be tolerated.</text>
 				<variable name="twisted_blessing_counter" op="add" val="14"/>
 							<modifyPursuit amount="2"/>
 					</event>

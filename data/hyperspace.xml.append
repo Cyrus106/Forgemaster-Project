@@ -1080,7 +1080,7 @@
 			<noFuelStalemate/>
 		</mod-append:customShip>
 
-		<mod-append:customShip name="FM_BOSS_KES1"> <!-- SUICIDE MISSION KESTRAL -->
+		<mod-append:customShip name="FM_BOSS_KES1"> <!-- SUICIDE MISSION KESTREL -->
 			<shipIcons>
 				<shipIcon>icon_threat</shipIcon>
 				<shipIcon>icon_fm_uniquetech</shipIcon>
@@ -1853,7 +1853,7 @@
 			<shipIcon> <!-- Lostsun death timer thing icon-->
 				<name>icon_fm_lostsun_deathtimer</name>
 				<tooltip>REALITY BENT SYSTEMS:
-					This enemy posseses a powerful array of weapons and systems, but due to extreme stretching of space-time its systems and hull are damaged every 15 seconds.</tooltip>
+					This enemy possesses a powerful array of weapons and systems, but due to extreme stretching of space-time its systems and hull are damaged every 15 seconds.</tooltip>
 			</shipIcon>
 			
 			<!--modular hull capstones-->
@@ -1885,7 +1885,7 @@
 			</shipIcon>
 			<shipIcon>
 				<name>icon_fm_modhull_capstone_particle</name>
-				<tooltip>PARTICLIZED SHIELDS:
+				<tooltip>PARTICALIZED SHIELDS:
 					enemy shields charge 50% slower but they gain additional 8 energy shield integrity</tooltip>
 			</shipIcon>
 			<shipIcon>
@@ -1905,7 +1905,7 @@
 			</shipIcon>
 			<shipIcon>
 				<name>icon_fm_modhull_capstone_defense_scramble</name>
-				<tooltip>DEFENCE SCRAMBLER:
+				<tooltip>DEFENSE SCRAMBLER:
 					YOUR shields charge 30% slower and your cloaking system has 5s more cooldown</tooltip>
 			</shipIcon>
 			<shipIcon>
@@ -2302,7 +2302,7 @@
 		  <name>FOCUS_1</name>
 		</req>
 		
-		<req name="FM_FOCUS_VIRUS_FORGE_LIST" type="any"> <!--congrats to whoever thougth all was the correct type-->
+		<req name="FM_FOCUS_VIRUS_FORGE_LIST" type="any"> <!--congrats to whoever thought all was the correct type-->
 		  <name>FM_FOCUS_VIRUS_LIST</name>
 		  <name>FM_FOCUS_VIRUS_LIST_PLUS</name>
 		</req>
@@ -4053,11 +4053,11 @@
 				</req>
 			</req>
 		</req>
-		<variable name="flak_calc" op="set" val="0"/><!--Persistant Flak Surge Calculation Variable-->
+		<variable name="flak_calc" op="set" val="0"/><!--Persistent Flak Surge Calculation Variable-->
 		<variable name="forgemaster_spawntriggered" op="set" val="0"/> <!--counter for how often the FMspawner was activated, if not 0 the spawner will not work-->
 		<variable name="rep_forgemaster" op="set" val="0"/> <!--forgemaster Notoriety-->
 		<variable name="fm_obtainedtwin" op="set" val="0"/> <!--did you get a twin from gunbom?-->
-		<variable name="fm_gunbomquest_taken" op="set" val="0"/> <!--accpetd gunbom quest-->
+		<variable name="fm_gunbomquest_taken" op="set" val="0"/> <!--accepted gunbom quest-->
 		<variable name="fm_gunbomquest_rescued" op="set" val="0"/> <!--finished gunbom quest, helped winchester-->
 		<variable name="fm_arborealquest_exe" op="set" val="0"/><!--that other quest?-->
 		<variable name="fm_arborealquest_rev" op="set" val="0"/>
@@ -5283,7 +5283,7 @@
 			<shipFriendlyFire>true</shipFriendlyFire>
 			<buttonText>REFORM</buttonText>
 			<tooltip>[COOLDOWN:20s]
-				Reform into a Cobalt Seperatist, deal 1 hull and system damage, and breach the current room.</tooltip>
+				Reform into a Cobalt Separatist, deal 1 hull and system damage, and breach the current room.</tooltip>
 			<cooldownColor r="50" g="121" b="168"/>
 			<transformRace>fm_separatist_cobalt</transformRace>
 			<effectAnim>explosion_random</effectAnim>
@@ -5379,7 +5379,7 @@
 			</powerSounds>
 			<buttonText>Absorb</buttonText>
 			<tooltip>[COOLDOWN:20s]
-				Absorbs all friendly crew in the room, granting permanant boosts.</tooltip>
+				Absorbs all friendly crew in the room, granting permanent boosts.</tooltip>
 			<cooldownColor r="132" g="45" b="39"/>
 			<statBoosts>
 				<statBoost name="noClone">
@@ -5823,7 +5823,7 @@
 		</race>
 	</crew>
 
-	<crew> <!-- Immprisiment Crystal Prison-->
+	<crew> <!-- Imprisment Crystal Prison-->
 		<race name="fm_crystal_prison">
 			<maxHealth>125</maxHealth>
 			<healSpeed>0.00</healSpeed>
@@ -6109,7 +6109,7 @@
 				</powerSounds>
 				<jumpCooldown>continue</jumpCooldown>
 				<buttonText>HIDE</buttonText>
-				<tooltip>Ready: Click to phase out of existance allowing the panther to sneak away and heal from other sources without worry of damage, however they can't hunt while hiding.</tooltip>
+				<tooltip>Ready: Click to phase out of existence allowing the panther to sneak away and heal from other sources without worry of damage, however they can't hunt while hiding.</tooltip>
 				<cooldownColor r="38" g="130" b="152"/>
 				<temporaryEffect>
 					<duration>10</duration>
@@ -6150,7 +6150,7 @@
 				</powerSounds>
 				<jumpCooldown>continue</jumpCooldown>
 				<buttonText>HIDE</buttonText>
-				<tooltip>Ready: Click to phase out of existance allowing the panther to sneak away and heal from other sources without worry of damage, however they can't hunt while hiding.</tooltip>
+				<tooltip>Ready: Click to phase out of existence allowing the panther to sneak away and heal from other sources without worry of damage, however they can't hunt while hiding.</tooltip>
 				<cooldownColor r="38" g="130" b="152"/>
 				<temporaryEffect>
 					<duration>15</duration>
@@ -6193,7 +6193,7 @@
 				</powerSounds>
 				<jumpCooldown>continue</jumpCooldown>
 				<buttonText>HIDE</buttonText>
-				<tooltip>Ready: Click to phase out of existance allowing the panther to sneak away and heal from other sources without worry of damage, however they can't hunt while hiding.</tooltip>
+				<tooltip>Ready: Click to phase out of existence allowing the panther to sneak away and heal from other sources without worry of damage, however they can't hunt while hiding.</tooltip>
 				<cooldownColor r="38" g="130" b="152"/>
 				<temporaryEffect>
 					<duration>20</duration>
@@ -6234,7 +6234,7 @@
 				</powerSounds>
 				<jumpCooldown>continue</jumpCooldown>
 				<buttonText>HUNT</buttonText>
-				<tooltip>Ready: Click to phase out of existance allowing the panther to stalk prey without worry of damage, however they can't heal while hunting.</tooltip>
+				<tooltip>Ready: Click to phase out of existence allowing the panther to stalk prey without worry of damage, however they can't heal while hunting.</tooltip>
 				<cooldownColor r="38" g="130" b="152"/>
 				<temporaryEffect>
 					<duration>10</duration>
@@ -6274,7 +6274,7 @@
 				</powerSounds>
 				<jumpCooldown>continue</jumpCooldown>
 				<buttonText>HUNT</buttonText>
-				<tooltip>Ready: Click to phase out of existance allowing the panther to stalk prey without worry of damage, however they can't heal while hunting.</tooltip>
+				<tooltip>Ready: Click to phase out of existence allowing the panther to stalk prey without worry of damage, however they can't heal while hunting.</tooltip>
 				<cooldownColor r="38" g="130" b="152"/>
 				<temporaryEffect>
 					<duration>15</duration>
@@ -6316,7 +6316,7 @@
 				</powerSounds>
 				<jumpCooldown>continue</jumpCooldown>
 				<buttonText>HUNT</buttonText>
-				<tooltip>Ready: Click to phase out of existance allowing the panther to stalk prey without worry of damage, however they can't heal while hunting.</tooltip>
+				<tooltip>Ready: Click to phase out of existence allowing the panther to stalk prey without worry of damage, however they can't heal while hunting.</tooltip>
 				<cooldownColor r="38" g="130" b="152"/>
 				<temporaryEffect>
 					<duration>20</duration>
@@ -6356,7 +6356,7 @@
 				</powerSounds>
 				<jumpCooldown>continue</jumpCooldown>
 				<buttonText>HIDE</buttonText>
-				<tooltip>Ready: Click to phase out of existance allowing the panther to sneak away and heal from other sources without worry of damage, however they can't hunt while hiding.</tooltip>
+				<tooltip>Ready: Click to phase out of existence allowing the panther to sneak away and heal from other sources without worry of damage, however they can't hunt while hiding.</tooltip>
 				<cooldownColor r="38" g="130" b="152"/>
 				<temporaryEffect>
 					<duration>10</duration>
@@ -6522,7 +6522,7 @@
 				</powerSounds>
 				<jumpCooldown>continue</jumpCooldown>
 				<buttonText>HUNT</buttonText>
-				<tooltip>Ready: Click to phase out of existance allowing the panther to stalk prey without worry of damage, however they can't heal while hunting.</tooltip>
+				<tooltip>Ready: Click to phase out of existence allowing the panther to stalk prey without worry of damage, however they can't heal while hunting.</tooltip>
 				<cooldownColor r="38" g="130" b="152"/>
 				<temporaryEffect>
 					<duration>15</duration>
@@ -6564,7 +6564,7 @@
 				</powerSounds>
 				<jumpCooldown>continue</jumpCooldown>
 				<buttonText>HUNT</buttonText>
-				<tooltip>Ready: Click to phase out of existance allowing the panther to stalk prey without worry of damage, however they can't heal while hunting.</tooltip>
+				<tooltip>Ready: Click to phase out of existence allowing the panther to stalk prey without worry of damage, however they can't heal while hunting.</tooltip>
 				<cooldownColor r="38" g="130" b="152"/>
 				<temporaryEffect>
 					<duration>20</duration>
@@ -6609,7 +6609,7 @@
 				</powerSounds>
 				<jumpCooldown>continue</jumpCooldown>
 				<buttonText>HUNT</buttonText>
-				<tooltip>Ready: Click to phase out of existance allowing the panther to stalk prey without worry of damage, however they can't heal while hunting.</tooltip>
+				<tooltip>Ready: Click to phase out of existence allowing the panther to stalk prey without worry of damage, however they can't heal while hunting.</tooltip>
 				<cooldownColor r="38" g="130" b="152"/>
 				<temporaryEffect>
 					<duration>10</duration>
@@ -9491,7 +9491,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 					<shipTarget>ORIGINAL_SHIP</shipTarget>
 					<crewTarget>ALLIES</crewTarget>
 					<droneTarget>CREW</droneTarget>
-					<amount>1</amount><!--this should increase damage taken in cobmat to not make him too hard to fight-->
+					<amount>1</amount><!--this should increase damage taken in combat to not make him too hard to fight-->
 					<priority>1</priority>
 					<systemPowerDependency>
 						<medbay/>

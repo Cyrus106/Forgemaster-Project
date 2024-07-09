@@ -9,7 +9,7 @@
 <!--	 ¶ ¶ = Craft 'NPC (Forgemaster)' Menu, Recursion event checks. -->
 <!--	 Ÿ Ÿ = Jump Event Crafting Menu -->
 <!--	 Q Q = Quests  -->
-<!--	 ‡ ‡ = MISCELLANIOUS CHECKS AND APPENDS  -->
+<!--	 ‡ ‡ = MISCELLANEOUS CHECKS AND APPENDS  -->
 
 <!-- ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ -->
 <!-- ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ -->
@@ -43,7 +43,7 @@
 	<ship name="SHIP_FM_GUNHYDRA_ENEMY" auto_blueprint="FM_GUNHYDRA_ENEMY">
 		<triggeredEvent name="GUNBOM_IS_HURT" event="GUNBOM_FULL" enemyHull="12" enemyCrew="4" thisFight="true"/>
 		<destroyed>
-			<text>As the ship blows apart, you begin to scrap some of it, and are hailed by the Clairvoyants,"You sssucceeded. We sssuppossse some Federation aren't bassstardsss after alll. We will transmit some of the bounty to you for Winchester'sss death, and you may also have this blueprint we recovered from that Mantis' old warehoussse. Here's a lovely tool if you'd like to help us collect debtsss in the future... jusssst a ssssugesssstion"</text>
+			<text>As the ship blows apart, you begin to scrap some of it, and are hailed by the Clairvoyants,"You sssucceeded. We sssuppossse some Federation aren't bassstardsss after alll. We will transmit some of the bounty to you for Winchester'sss death, and you may also have this blueprint we recovered from that Mantis' old warehoussse. Here's a lovely tool if you'd like to help us collect debtsss in the future... jusssst a ssssuggesssstion"</text>
 			<unlockCustomShip silent="false">PLAYER_SHIP_GUNSHIP_FM_2</unlockCustomShip>
 			<weapon name="FM_LASER_DEBT_COLLECT"/>
 			<queueEvent>MORALITY_UPDATE_FORGEMASTER</queueEvent>
@@ -57,7 +57,7 @@
 
 		<deadCrew>
 			<text>The Engi twins lie dead inside their ship, while Winchester gasps and fights desperately for life. "You....why....Harmony....stop..." the Mantis says, with the last of its strength. Your crew begins to scrap some of the ship, and you are hailed by the Clairvoyants. "You sssucceeded. We sssuppossse sssome Fedsss aren't bassstardsss after all. We will transssmit sssome of the bounty to you for Winchester'sss death, and you may also have thisss blueprint we recovered from that Mantis' old warehoussse. Here'sss a lovely tool if you'd like to help usss collect debtsss in the future... jussst a sssuggessstion."</text>
-			<!--<text>The Engi twins lie dead inside their ship, while Winchester gasps and fights desperately for life "You....why....Harmony....stop...", the Mantis says, with the last of its' strength. Your crew begins to scrap some of the ship, and you are hailed by the Clairvoyants,"You sssucceeded. We sssuppossse some Federation aren't bassstardsss after alll. We will transmit some of the bounty to you for Winchester'sss death, and you may also have this blueprint we recovered from that Mantis' old warehoussse. Here's a lovely tool if you'd like to help us collect debtsss in the future... jusssst a ssssugesssstion"</text>-->
+			<!--<text>The Engi twins lie dead inside their ship, while Winchester gasps and fights desperately for life "You....why....Harmony....stop...", the Mantis says, with the last of its' strength. Your crew begins to scrap some of the ship, and you are hailed by the Clairvoyants,"You sssucceeded. We sssuppossse some Federation aren't bassstardsss after alll. We will transmit some of the bounty to you for Winchester'sss death, and you may also have this blueprint we recovered from that Mantis' old warehoussse. Here's a lovely tool if you'd like to help us collect debtsss in the future... jusssst a ssssuggesssstion"</text>-->
 			<unlockCustomShip silent="false">PLAYER_SHIP_GUNSHIP_FM_2</unlockCustomShip>
 			<weapon name="FM_LASER_DEBT_COLLECT"/>
 			<queueEvent>MORALITY_UPDATE_FORGEMASTER</queueEvent>
@@ -138,7 +138,7 @@
 						<choice hidden="true">
 							<text>What in the world do you need that ship for?</text>
 							<event>
-								<text>"I save engi twins from slaver ship, they tell me truth about Harmony. Harmony bad, more bad than Rebel ever ever. I plan to destroy all of it..." Winchester laughs for a moment, and continues. "I say to myself, many gun solve all problem. But I may have used too many gun, now I search for way to power ship." Winchester has no time left to talk, and with that his crew wishes you good luck on your mission while Winchester begins powering his FTL drive.</text>
+								<text>"I save Engi twins from slaver ship, they tell me truth about Harmony. Harmony bad, more bad than Rebel ever ever. I plan to destroy all of it..." Winchester laughs for a moment, and continues. "I say to myself, many gun solve all problem. But I may have used too many gun, now I search for way to power ship." Winchester has no time left to talk, and with that his crew wishes you good luck on your mission while Winchester begins powering his FTL drive.</text>
 								<choice hidden="true">
 									<text>Let them go...</text>
 									<event load="DEBTCOLLECT_WINCHESTER_LEAVE"/>
@@ -183,7 +183,7 @@
 	</ship>
 
 	<event name="FALLEN_DESTROY">
-		<text>"Goddamnit... knew I shouldn'ta gotten in cahoots... with the division..." As what's left of Randall's ship crashes and burns, you recieve a hail from the Arbor thanking you for your good deed and transferring you to Mandelbriss and Kyriet. "I suppose we owe you and Alastair an explanation. You see, we used to be the best of friends, Kyriet and I, but issues popped up between us when we finally got around to thinking of what we'd actually do with our marvelous technology. You see, I -" "He wanted to use our research and technology to create weapons of war instead of using our knowledge to spread peace and prosperity." "Spread peace all you want Ky, but when it really comes down to it weapons are what seperates saviors like this Renegade here and cowards like us, huddling under a table to avoid danger."</text>
+		<text>"Goddamnit... knew I shouldn'ta gotten in cahoots... with the division..." As what's left of Randall's ship crashes and burns, you receive a hail from the Arbor thanking you for your good deed and transferring you to Mandelbriss and Kyriet. "I suppose we owe you and Alastair an explanation. You see, we used to be the best of friends, Kyriet and I, but issues popped up between us when we finally got around to thinking of what we'd actually do with our marvelous technology. You see, I -" "He wanted to use our research and technology to create weapons of war instead of using our knowledge to spread peace and prosperity." "Spread peace all you want Ky, but when it really comes down to it weapons are what separates saviors like this Renegade here and cowards like us, huddling under a table to avoid danger."</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
 			<text>Mediate their conflict.</text>
@@ -192,7 +192,7 @@
 	</event>
 			
 	<event name="FALLEN_KILLED">
-		<text>"Goddamnit... knew I shouldn'ta gotten in cahoots... with the division..." As you scrap the hollow shell of an Angel fighter, you recieve a hail from the Arbor thanking you for your good deed and transferring you to Mandelbriss and Kyriet. "I suppose we owe you and Alastair an explanation. You see, we used to be the best of friends, Kyriet and I, but issues popped up between us when we finally got around to thinking of what we'd actually do with our marvelous technology. You see, I -" "He wanted to use our research and technology to create weapons of war instead of using our knowledge to spread peace and prosperity." "Spread peace all you want Ky, but when it really comes down to it weapons are what seperates saviors like this Renegade here and cowards like us, huddling under a table to avoid danger.</text>
+		<text>"Goddamnit... knew I shouldn'ta gotten in cahoots... with the division..." As you scrap the hollow shell of an Angel fighter, you receive a hail from the Arbor thanking you for your good deed and transferring you to Mandelbriss and Kyriet. "I suppose we owe you and Alastair an explanation. You see, we used to be the best of friends, Kyriet and I, but issues popped up between us when we finally got around to thinking of what we'd actually do with our marvelous technology. You see, I -" "He wanted to use our research and technology to create weapons of war instead of using our knowledge to spread peace and prosperity." "Spread peace all you want Ky, but when it really comes down to it weapons are what separates saviors like this Renegade here and cowards like us, huddling under a table to avoid danger.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
 			<text>Mediate their conflict.</text>
@@ -217,7 +217,7 @@
 			<choice>
 				<text>There's more to being strong than having big guns. (Side with Kyriet)</text>
 				<event>
-					<text>"Hmm... I guess I can see your point. Strong weapons can't bring a man back from the brink of death, and god knows big guns didn't save the Federation during the Node 17 massacre. Alright, fine, I'll finish off Kyriet's prototype and we'll give it to you to use for whatever you want." As Mandelbriss leaves the line to go finish the prototype, Kuriet briefly thanks you before going to do the same. Soon after, they arrive outside your ship with a brand new weapon.</text>
+					<text>"Hmm... I guess I can see your point. Strong weapons can't bring a man back from the brink of death, and god knows big guns didn't save the Federation during the Node 17 massacre. Alright, fine, I'll finish off Kyriet's prototype and we'll give it to you to use for whatever you want." As Mandelbriss leaves the line to go finish the prototype, Kyriet briefly thanks you before going to do the same. Soon after, they arrive outside your ship with a brand new weapon.</text>
 					<weapon name="FM_ARBOREAL_REV"/>
 					<variable name="fm_arborealquest_rev" op="set" val="1"/>
 					<choice>
@@ -351,7 +351,7 @@
 			<text>Stand down.</text>
 			<event>
 				<ship hostile="false"/>
-				<text>Alastair powers down his weapons before hailing you again. "Most impressive, lad! You fight with prowess not many to face me have ever shown! Take these resources, and a weapon from my storage - a fine reward for our battle!" Alistair teleports a few small crates of various resources onto your ship, as well as a weapon from his stock.</text>
+				<text>Alastair powers down his weapons before hailing you again. "Most impressive, lad! You fight with prowess not many to face me have ever shown! Take these resources, and a weapon from my storage - a fine reward for our battle!" Alastair teleports a few small crates of various resources onto your ship, as well as a weapon from his stock.</text>
 				<autoReward level="MED">scrap_only</autoReward>
 				<damage amount="-20"/>
 				<item_modify>
@@ -373,7 +373,7 @@
 			<text>End it here.</text>
 			<event>
 				<ship hostile="false"/>
-				<text>Alastair powers down his weapons before hailing you again. "You really know how to stand your ground, lad! For your valiant effort, I shall bestow upon you a mighty haul, as well as a weapon from my own Forge! Alistair teleports over a few crates of resources, as well as a weapon from his forge. "And let me patch up that hull of yours, lad! A fine battle indeed!" Alistair sends a few plated onto your ship, who quickly fix up your ship's hull and bring over some crates of resources...</text>
+				<text>Alastair powers down his weapons before hailing you again. "You really know how to stand your ground, lad! For your valiant effort, I shall bestow upon you a mighty haul, as well as a weapon from my own Forge! Alastair teleports over a few crates of resources, as well as a weapon from his forge. "And let me patch up that hull of yours, lad! A fine battle indeed!" Alastair sends a few plated onto your ship, who quickly fix up your ship's hull and bring over some crates of resources...</text>
 				<autoReward level="HIGH">scrap_only</autoReward>
 				<damage amount="-30"/>
 				<item_modify>
@@ -408,7 +408,7 @@
 	</eventList>
 	<eventList name="FM_SPARRING_REWARD_2">
 		<!--<event>
-			<text>One of the crates contains an old damaged weapon. "one of my plated tried to make something from it, the weapon broken but they managed to make a small augment that increases weaon charge speed, you can have it lad." [+7% reload speed gained]</text>
+			<text>One of the crates contains an old damaged weapon. "one of my plated tried to make something from it, the weapon broken but they managed to make a small augment that increases weapon charge speed, you can have it lad." [+7% reload speed gained]</text>
 			<weapon name="GIFTLIST_RUSTY"/>
 		</event>-->
 		<event>
@@ -667,7 +667,7 @@
 		<!--<choice hidden="true" req="fm_forgemasterperson" lvl="1" max_group="6" blue="true"> Alastair Hails Alastair
 		<text>(Alastair) Use Alastair to hail Alastair.</text>
 		<event>
-		<text>"SSSSSSSSSSSSSSStranger, IF I actually say any lore here, the diety known assssssssssssssssssssssssssssssssssssssssssss Maxine will atomize me" Sylvan says. Alastair nods in agreement.</text>
+		<text>"SSSSSSSSSSSSSSStranger, IF I actually say any lore here, the deity known assssssssssssssssssssssssssssssssssssssssssss Maxine will atomize me" Sylvan says. Alastair nods in agreement.</text>
 		<choice hidden="true">
 		<text>Continue...</text>
 		<event>
@@ -700,7 +700,7 @@
 		<text>"Figured I'd show up to congratulate you, lad! You managed to find yourself the best smith in the Multiverse!"</text>
 		<text>"Oho, good to see you again, lad! I'd worried you'd right forgotten me! Take a look around, see what interests you."</text>
 		<text>The sound of a ringing anvil sounds over the comm. "Good to see you, lad! Bit busy at the moment, but feel free to come right on in!"</text>
-		<text>"Ever wonder why I wear this mask, lad? Me too! Now come in, we don't have the entire millenium."</text>
+		<text>"Ever wonder why I wear this mask, lad? Me too! Now come in, we don't have the entire millennium."</text>
 		<text>"Aye, that's you, isn't it! Welcome! My services are yours to requisition!"</text>
 		<text>"HI LAD! COME IN, COME IN! LOOKS LIKE I FORGOT TO TURN DOWN THE VOLUME ON THIS THIng again. There we go. Take a look around!"</text>
 		<text>"Welcome, lad! Oh, be very welcome indeed! Lovely seeing you again, and I do hope I have something you'll find worth your while."</text>
@@ -1663,12 +1663,12 @@
 		<checkCargo/>
 
 		<choice req="FM_DISC_LAUNCHER_FORGE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Load scrap into a minelauncher and energize it with the Hullbuster Energy weapon to forge the TARANIS Energized Disc.[Cost: 50~]</text>
+			<text>Load scrap into a Mine Launcher and energize it with the Hullbuster Energy weapon to forge the TARANIS Energized Disc.[Cost: 50~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_ENERGY_DISC"/>
 		</choice>
 
 		<choice req="FM_DISC_LAUNCHER_FORGE_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
-			<text>You must have a basic minelauncher and Hullbuster Energy weapon to forge this weapon.</text>
+			<text>You must have a basic Mine Launcher and Hullbuster Energy weapon to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
@@ -1759,7 +1759,7 @@
 		<checkCargo/>
 
 		<choice req="FM_BEAM_MINING_2_LIST" lvl="1" blue="false" hidden="true">
-			<text>Dissassemble and combine the 'Sarissa' Beam and Mining beams to forge the Ishimura Beam.[Cost: 120~]</text>
+			<text>Disassemble and combine the 'Sarissa' Beam and Mining beams to forge the Ishimura Beam.[Cost: 120~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_MINING_2"/>
 		</choice>
 
@@ -2005,7 +2005,7 @@
 		<checkCargo/>
 
 		<choice req="FM_MISSILES_BURST_FIRE_FORGE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Dissassemble and combine the Ares and Hades missiles to forge the 'Hellfire' Burst Missile.[Cost: 90~]</text>
+			<text>Disassemble and combine the Ares and Hades missiles to forge the 'Hellfire' Burst Missile.[Cost: 90~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_MISSILES_BURST_FIRE"/>
 		</choice>
 
@@ -2060,7 +2060,7 @@
 		</choice>
 
 		<choice req="FM_MINELAUNCHER_BIO_LIST" lvl="0" max_lvl="0" blue="false" hidden="true">
-			<text>You must have an Ascelpius Missile and an Osiris Minelauncher to forge this weapon.</text>
+			<text>You must have an Ascelpius Missile and an Osiris Mine Launcher to forge this weapon.</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 
@@ -2680,7 +2680,7 @@
 		</choice>
 
 		<choice req="MINELAUNCHER_2" blue="false">
-			<text>Craft the 'TARANIS' Energized Disc using the Osiris Minelauncher.</text>
+			<text>Craft the 'TARANIS' Energized Disc using the Osiris Mine Launcher.</text>
 			<event>
 				<text>Proceed with crafting?</text>
 				<weapon name="FM_ENERGY_DISC"/>
@@ -7714,7 +7714,7 @@
 		</choice>
 		<!--vengeance modules--><!--
 		<choice req="CAN_INSTALL_MODULE_TRUE" lvl="1" max_group="4" blue="false" hidden="true">
-			<text>Install vengenace modules.</text>
+			<text>Install vengeance modules.</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_MODULES_VENGEANCE</loadEvent>
 			</event>
@@ -7725,7 +7725,7 @@
 		</choice>-->
 		<!--More vengeance modules--><!--
 		<choice req="CAN_INSTALL_MODULE_TRUE" lvl="1" max_group="5" blue="false" hidden="true">
-			<text>Install more vengenace modules</text>
+			<text>Install more vengeance modules</text>
 			<event>
 				<loadEvent>VENGEFUL_INSTALL</loadEvent>
 			</event>
@@ -7946,7 +7946,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<!--<choice>
-			<text>Install more vengenace modules.</text>
+			<text>Install more vengeance modules.</text>
 			<event>
 				<loadEvent>VENGEFUL_INSTALL</loadEvent>
 			</event>
@@ -9946,13 +9946,13 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_PARTICLE" lvl="0" max_lvl="0" blue="false">
-			<text>Particlized Shields Capstone [100~]</text>
+			<text>Particalized Shields Capstone [100~]</text>
 			<event>
 				<loadEvent>FM_MODULAR_HULL_CAPSTONE_PARTICLE</loadEvent>
 			</event>
 		</choice>
 		<choice req="FM_MODULAR_HULL_PARTICLE" lvl="1" blue="false" hidden="true">
-			<text>Particlized Shields Capstone [installed]</text>
+			<text>Particalized Shields Capstone [installed]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_UPLINK" lvl="0" max_lvl="0" blue="false">
@@ -10179,11 +10179,11 @@
 		</choice>
 	</event>
 	<event name="FM_MODULAR_HULL_CAPSTONE_PARTICLE">
-		<text>Install the Particlized Shields? [8 Layer Energy Shield (Stacks with others), but Shields recharge speed is reduced by 50%]</text>
+		<text>Install the Particalized Shields? [8 Layer Energy Shield (Stacks with others), but Shields recharge speed is reduced by 50%]</text>
 		<choice req="pilot" max_group="1" blue="false">
-			<text>Install the Particlized Shields.</text>
+			<text>Install the Particalized Shields.</text>
 			<event>
-				<text>The Particlized Shields have been installed!</text>
+				<text>The Particalized Shields have been installed!</text>
 				<hiddenAug>FM_MODULAR_HULL_PARTICLE</hiddenAug>
 
 				<item_modify>
@@ -10525,7 +10525,7 @@
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_PARTICLE" blue="false" hidden="true">
-			<text>Particlized Shields[+8zs, -50% shield recharge]</text>
+			<text>Particalized Shields[+8zs, -50% shield recharge]</text>
 			<event load="OPTION_INVALID"/>
 		</choice>
 		<choice req="FM_MODULAR_HULL_UPLINK" blue="false" hidden="true">
@@ -11370,7 +11370,7 @@
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event>
-				<text> Winchester the Mantis, captain of the vessel, hails your ship: "Federation please help! Me pay back every scrap, all of it, but  Slug no patience!" he quickly explains. You observe a pair of black and white engi, presumably twins, running around in the background, powering up systems and prepping drones to launch for a seemingly inevitable battle.
+				<text> Winchester the Mantis, captain of the vessel, hails your ship: "Federation please help! Me pay back every scrap, all of it, but  Slug no patience!" he quickly explains. You observe a pair of black and white Engi, presumably twins, running around in the background, powering up systems and prepping drones to launch for a seemingly inevitable battle.
 					You receive a second hail right after, from the black and red Clairvoyant vessel. "Ssstand aside, Federation. He owesss usss every lassst ssscrap!"
 				</text>
 				<choice hidden="true">
@@ -11387,7 +11387,7 @@
 				<choice hidden="true">
 					<text>Aid the Clairvoyant Debt Collectors.</text>
 					<event>
-						<text>Why would you ever support a ship that looks THAT ridiculous?! You decide to aid the debt collectors, Winchester had it coming. You fire a warning shot at the bizarre ship. You are hailed by a pair of black and white engi immediately. "Ceasefire suggested. Winchester is a good Mantis, just mislead by their passion for engineering. Winchester = Friend. Winchester =/= Foe. Proposition: If you change your mind, one of us will accompany you as thanks.</text>
+						<text>Why would you ever support a ship that looks THAT ridiculous?! You decide to aid the debt collectors, Winchester had it coming. You fire a warning shot at the bizarre ship. You are hailed by a pair of black and white Engi immediately. "Ceasefire suggested. Winchester is a good Mantis, just mislead by their passion for engineering. Winchester = Friend. Winchester =/= Foe. Proposition: If you change your mind, one of us will accompany you as thanks.</text>
 						<choice hidden="true">
 							<text>Accept their offer to turn on the Clairvoyant vessel.</text>
 							<event load="FM_QUEST_GUNBOM_TWINS"/>
@@ -11396,7 +11396,7 @@
 						<choice hidden="true">
 							<text>Stick to your word, shouldn't have gotten into debt in the first place.</text>
 							<event>
-								<text> The pair of engi look very disappointed. "You = cruel. Disgust us. Initiating protocol: Defend best friend."</text>
+								<text> The pair of Engi look very disappointed. "You = cruel. Disgust us. Initiating protocol: Defend best friend."</text>
 								<ship load="SHIP_FM_GUNHYDRA_ENEMY" hostile="true"/>
 								<status type="limit" target="enemy" system="drones" amount="7"/>
 								<choice hidden="true">
@@ -11426,7 +11426,7 @@
 							<item type="scrap" min="-1100" max="-1100"/>
 
 						</item_modify>
-						<text>"Ssshut up!" the slug says, nearly in shock "We don't have time for gamesss." they explain. Your crew begins transporting all 1,100 scrap to the Debt Shark and they seem rather perplexed at first. Winchester is speechless.  The debt-ridden, once-wealthy Freemantis, is now a free bug once again. The Clarivoyants call off the headhunt on Winchester the Freemantis, and regard you as they are leaving. "Thanksss, we hopefully will not be ssseeing you again." Their ship disappears into an FTL jump.
+						<text>"Ssshut up!" the slug says, nearly in shock "We don't have time for gamesss." they explain. Your crew begins transporting all 1,100 scrap to the Debt Shark and they seem rather perplexed at first. Winchester is speechless.  The debt-ridden, once-wealthy Freemantis, is now a free bug once again. The Clarvoyants call off the headhunt on Winchester the Freemantis, and regard you as they are leaving. "Thanksss, we hopefully will not be ssseeing you again." Their ship disappears into an FTL jump.
 						</text>
 						<choice hidden="true">
 							<text>Continue...</text>
@@ -11464,7 +11464,7 @@
 	<eventList name="FM_QUEST_GUNBOM_TWINS">
 		<event>
 			<crewMember amount="1" class="unique_remington">Remington</crewMember>
-			<text>You power up your weapons and attack the Clairvoyant Debt Collector ship head on. One of the engi flies towards your vessel in a small shuttle, and is let in by your crew. "You = Intriguing. Talk later, focus on saving Winchester."</text>
+			<text>You power up your weapons and attack the Clairvoyant Debt Collector ship head on. One of the Engi flies towards your vessel in a small shuttle, and is let in by your crew. "You = Intriguing. Talk later, focus on saving Winchester."</text>
 			<ship load="SHIP_CLAIRVOYANT_DEBTCOLLECT" hostile="true"/>
 			<variable name="fm_obtainedtwin" op="set" val="1"/>
 			<choice hidden="true">
@@ -11474,7 +11474,7 @@
 		</event>
 		<event>
 			<crewMember amount="1" class="unique_mossberg">Mossberg</crewMember>
-			<text>You power up your weapons and attack the Clairvoyant Debt Collector ship head on. One of the engi flies towards your vessel in a small shuttle, and is let in by your crew. "You = Intriguing. Talk later, focus on saving Winchester."</text>
+			<text>You power up your weapons and attack the Clairvoyant Debt Collector ship head on. One of the Engi flies towards your vessel in a small shuttle, and is let in by your crew. "You = Intriguing. Talk later, focus on saving Winchester."</text>
 			<ship load="SHIP_CLAIRVOYANT_DEBTCOLLECT" hostile="true"/>
 			<variable name="fm_obtainedtwin" op="set" val="1"/>
 			<choice hidden="true">
@@ -11507,11 +11507,11 @@
 
 </FTL>
 <FTL>
-        <!--KURIET AND MANDELBRISS QUEST FOR FORGEMASTER-->
+        <!--KYRIET AND MANDELBRISS QUEST FOR FORGEMASTER-->
 	
 	<!-- GUNBOM QUEST FOR FORGEMASTER-->
 	<event name="FM_QUEST_ARBOREAL_INTRO">
-		<text>You question Alastair about the strange crystal inside the case. "Ah, that old thing. A miracle of technology that, forged by two great students I met a long time ago. An Orchid scientist and a Crystal noble - an odd pair for sure, but despite their differences became fast friends. Mandelbriss and Kyriet commisioned me to make casing for an experimental weapon once, one utilising a marvelous combination of both Orchid and Crystal technologies, a relic of which you see before you now." Alastair pauses for a moment, as if deep in thought. "I do wonder what happened to those two... last I heard, they had a falling out involving their work. Would you mind checking on them for me, lad? I heard Kyriet is returning to the region, but I'll transfer you Mandelbriss' co-ordinates."</text>
+		<text>You question Alastair about the strange crystal inside the case. "Ah, that old thing. A miracle of technology that, forged by two great students I met a long time ago. An Orchid scientist and a Crystal noble - an odd pair for sure, but despite their differences became fast friends. Mandelbriss and Kyriet commissioned me to make casing for an experimental weapon once, one utilising a marvelous combination of both Orchid and Crystal technologies, a relic of which you see before you now." Alastair pauses for a moment, as if deep in thought. "I do wonder what happened to those two... last I heard, they had a falling out involving their work. Would you mind checking on them for me, lad? I heard Kyriet is returning to the region, but I'll transfer you Mandelbriss' co-ordinates."</text>
 		<variable name="fm_arborealquest_taken" op="set" val="1"/>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -11588,7 +11588,7 @@
 					</event>
 				</choice>
 				<choice hidden="true" req="LIST_CREW_ORCHID" blue="true"> 
-					<text>(Orchid) Your orchid already has a membership.</text>
+					<text>(Orchid) Your Orchid already has a membership.</text>
 					<event>
 						<text>"Thank you. Enjoy your stay."</text>
 						<choice>
@@ -11602,9 +11602,9 @@
 	 </event>
 	
 	<event name="FM_QUEST_ARBOREAL_ENTRANCE">
-		<text>As you enter the Arbor, you ask around with the Orchids for Mandelbriss and it doesn't take long for you to find him outside one of the labs - and surprisingly enough, Kyriet too! As you walk over to introduce yourself, you briefly overhear part of their conversation. "We've discussed this before, Mandelbriss - I will not let our research be used to make weapons of war!" "But Kyriet, I - oh, hello there! Who would you happen to be?" You tell them that you're a Renegade sent by Alastair to check up on them, but before they have a chance to respond the entire building quakes and several alarms go off. Shortly after, you recieve a hail.</text>
+		<text>As you enter the Arbor, you ask around with the Orchids for Mandelbriss and it doesn't take long for you to find him outside one of the labs - and surprisingly enough, Kyriet too! As you walk over to introduce yourself, you briefly overhear part of their conversation. "We've discussed this before, Mandelbriss - I will not let our research be used to make weapons of war!" "But Kyriet, I - oh, hello there! Who would you happen to be?" You tell them that you're a Renegade sent by Alastair to check up on them, but before they have a chance to respond the entire building quakes and several alarms go off. Shortly after, you receive a hail.</text>
 		<choice>
-			<text>Recieve the hail.</text>
+			<text>Receive the hail.</text>
 			<event>
 				<text>You are greeted by the face of a man wearing MFK armor, painted over in blue similar to that of the elusive Angels. "Hand over Mandelbriss, Kyriet and their research or die." Looking over at the pair, they are understandably shocked and terrified.</text>
 				<choice>
@@ -11621,7 +11621,7 @@
 				<choice>
 					<text>Have your crew capture the pair and hand them over.</text>
 					<event>
-						<text>As your crew restrain the two scientists and haul them off, you recieve a second hail from the mercenary. "Wise choice, renegade. We'll both come out of this as richer men." You catch a final glance at their faces, Kyriet wide-eyed in terror and Mandelbriss screaming words at you that fall on deaf ears. You may not care, but the rest of the galaxy certainly will.</text>
+						<text>As your crew restrain the two scientists and haul them off, you receive a second hail from the mercenary. "Wise choice, renegade. We'll both come out of this as richer men." You catch a final glance at their faces, Kyriet wide-eyed in terror and Mandelbriss screaming words at you that fall on deaf ears. You may not care, but the rest of the galaxy certainly will.</text>
 						<choice>
 							<text>Continue...</text>
 							<event load="MORALITY_UPDATE_FORGEMASTER_ORCHID_CRYSTAL"/>
@@ -11637,7 +11637,7 @@
 <FTL> <!-- HARMONY BLEAK FUTURE ENDING. MAKE SURE TO COME BACK AND COMMENT ALL THIS CODE AFTER IT IS STABLE!!!!!-->
 	<event name="FM_QUEST_GUNBOM_FUTURE">
 		<changeBackground>FM_WORMHOLE</changeBackground>
-		<text> As your ship tumbles thru the wormhole, your realize it is both figuratively and literally a worm hole, as what appears to be thousands of giant worms slam agains your hull, covering it in fecal matter, bile, and slime, but otherwise not harming it.	</text>
+		<text> As your ship tumbles thru the wormhole, your realize it is both figuratively and literally a worm hole, as what appears to be thousands of giant worms slam against your hull, covering it in fecal matter, bile, and slime, but otherwise not harming it.	</text>
 
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -11940,7 +11940,7 @@
 	<event name="FM_FS_SECURITY_CARD_CHILD_RUN">
 		<text>You run back into the hallway, the door shutting automatically behind you.
 			The Orchid child screams once, in a high, squealing voice and bangs on the door behind you.
-			Then you hear their tiny orchid feet run in the opposite direction and some clattering. It appears it cannot follow you, it must not have a Security Card on its' person.
+			Then you hear their tiny Orchid feet run in the opposite direction and some clattering. It appears it cannot follow you, it must not have a Security Card on its' person.
 		</text>
 		<variable name="marker_orchid_child_alive" op="set" val="1"/>
 		<choice req="pilot" lvl="1" max_group="1" blue="false">
@@ -12590,7 +12590,7 @@
 	</event>
 
 	<event name="FM_FS_APARTMENT_107A_DESK_TERMINAL_MUSIC_324_2"> <!--  APARTMENT 107A TERMINAL AUDIO LOGS -->
-		<text>The man's voice sounds almost thankful "Dana, for once I'm glad you are no longer with us. This screwed up galatic conflict never ends, it's not a world for a beautiful soul like you....."
+		<text>The man's voice sounds almost thankful "Dana, for once I'm glad you are no longer with us. This screwed up galactic conflict never ends, it's not a world for a beautiful soul like you....."
 
 			He quietly sobs for a few moments.
 

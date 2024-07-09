@@ -65,7 +65,7 @@
 			</event>
 		</mod-append:choice>
 		<mod-append:choice req="LIST_ANCALAGON_ALL" blue="false">
-			<text>Present Ancagalon Tech.</text>
+			<text>Present Ancalagon Tech.</text>
 			<event>
 				<text>Wakeson stands silently for a moment. "Renegade. WHERE did this ABOMINATION come from? It should NEVER have been CREATED. Would like that I had not SEEN it. But information it is. I had HOPED that none would have FOUND the secret. Still, our RULES dictate I REWARD you for this. Do not MEDDLE again, Renegade. I shall BLESS you with the BLESSING OF THE FOOLHARDY. But have PATIENCE. It is not for now, but for LATER!"</text>
 				<metaVariable name="prof_r_boon_fm_ancweapon" op="set" val="1"/>

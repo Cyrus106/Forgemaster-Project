@@ -19,7 +19,7 @@
 	</choice>
 </event>
 <event name="BOON_SELECT_FM_FORGEWEAPON">
-	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the BLESSING OF FORGES! Alastiar will visit all sectors free of charge, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
+	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the BLESSING OF FORGES! Alastair will visit all sectors free of charge, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
 	<hiddenAug>JUDGE_BOON_FM_FORGEWEAPON</hiddenAug>
 	<choice hidden="true">
 		<text>Continue...</text>
@@ -29,7 +29,7 @@
 	</choice>
 </event>
 <event name="BOON_SELECT_FM_FORGEWEAPON_2">
-	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the GREATER BLESSING OF FORGES! Alastiar will provide high grade crafting materials at every encounter, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
+	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the GREATER BLESSING OF FORGES! Alastair will provide high grade crafting materials at every encounter, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
 	<hiddenAug>JUDGE_BOON_FM_FORGEWEAPON_2</hiddenAug>
 	<choice hidden="true">
 		<text>Continue...</text>
@@ -39,7 +39,7 @@
 	</choice>
 </event>
 <event name="BOON_SELECT_FM_ANCWEAPON">
-	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the BLESSING OF THE FOOLHARDY! Ancagalon Crystals created by ancagalon Weapons take 50% less damage, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
+	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the BLESSING OF THE FOOLHARDY! Ancalagon Crystals created by Ancalagon Weapons take 50% less damage, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
 	<hiddenAug>JUDGE_BOON_FM_ANCWEAPON</hiddenAug>
 	<choice hidden="true">
 		<text>Continue...</text>

@@ -593,7 +593,7 @@
 
 	<event name="FM_BOSS_LOSTSUN1_DESTROYED">
 		<playMusic/>
-		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate a strangely warped aperatus that seems to be technological in nature.</text>
+		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate a strangely warped apparatus that seems to be technological in nature.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -653,7 +653,7 @@
 
 	<event name="FM_BOSS_LOSTSUN1_DESTROYED2">
 		<playMusic/>
-		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate a strangely warped aperatus that seems to be technological in nature.</text>
+		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. You also locate a strangely warped apparatus that seems to be technological in nature.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
@@ -1494,7 +1494,7 @@
 		<deadCrew load="FM_BOSS_STEALTH1_DESTROYED2"/>
 	</ship>
 	<event name="FM_BOSS_STEALTH1_SUICIDE">
-		<text>From out of the tunnel comes a massive cruiser vessel, of Stealth design! There appears to be something... very wrong with its camoflague. Purple?</text>
+		<text>From out of the tunnel comes a massive cruiser vessel, of Stealth design! There appears to be something... very wrong with its camouflage. Purple?</text>
 		<ship load="FM_BOSS_STEALTH1_SHIP" hostile="false"/>
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -2493,7 +2493,7 @@
 
 	<event name="FM_BOSS_ORCHID1_DESTROYED">
 		<playMusic/>
-		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. A hidden escape pod is released from the destroyed vessel, you retreive it and bring it aboard. Four Orchids step out, and tell you that they always hated the Captain's jokes, and want to join your crew. They are quadruplets, and their parents gave them all the same name because they were sadistic parents, apparently.</text>
+		<text>The bizarre vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking. A hidden escape pod is released from the destroyed vessel, you retrieve it and bring it aboard. Four Orchids step out, and tell you that they always hated the Captain's jokes, and want to join your crew. They are quadruplets, and their parents gave them all the same name because they were sadistic parents, apparently.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<item_modify>
 			<item type="fuel" min="2" max="2"/>
