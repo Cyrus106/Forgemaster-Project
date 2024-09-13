@@ -1,9 +1,9 @@
-local vter = mods.inferno.vter
-local GetLimitAmount = mods.inferno.GetLimitAmount
-local SetLimitAmount = mods.inferno.SetLimitAmount
-local real_projectile = mods.inferno.real_projectile
-local randomInt = mods.inferno.randomInt
-local RoomEffect = mods.inferno.RoomEffect
+local vter = mods.fusion.vter
+local GetLimitAmount = mods.fusion.GetLimitAmount
+local SetLimitAmount = mods.fusion.SetLimitAmount
+local real_projectile = mods.fusion.real_projectile
+local randomInt = mods.fusion.randomInt
+local RoomEffect = mods.fusion.RoomEffect
 
 local getEmptyBars = function(ShipManager,sysId)
   return ShipManager:GetSystemPowerMax(sysId) - ShipManager:GetSystemPower(sysId) - math.max(GetLimitAmount(ShipManager:GetSystem(sysId)),ShipManager:GetSystemPowerMax(sysId) - ShipManager:GetSystem(sysId).healthState.first)

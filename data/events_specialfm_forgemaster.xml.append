@@ -1799,7 +1799,7 @@
 		</choice>
 
 		<choice req="FM_BEAM_ION_PIERCE_FORGE_LIST" lvl="1" blue="false" hidden="true">
-			<text>Combine the 'Ranseur' with a Basic Ion or Ion Barrage Mark I to forge this weapon. [Cost: 100~]</text>
+			<text>Combine the 'Ranseur' with a Basic Ion or Ion Barrage Mark I to forge this weapon. [Cost: 60-100~]</text>
 			<event load="NPC_STORAGE_CHECK_CREATE_FM_BEAM_ION_PIERCE"/>
 		</choice>
 

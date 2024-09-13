@@ -1,7 +1,7 @@
-local vter = mods.inferno.vter
+local vter = mods.fusion.vter
 
 -- Make photon-like guns pop shields
-local popWeapons = mods.inferno.popWeapons
+local popWeapons = mods.fusion.popWeapons
 popWeapons.FM_LASER_PHOTON = {count = 1, countSuper = 1}
 popWeapons.FM_LASER_PHOTON_2 = {count = 1, countSuper = 1}
 popWeapons.FM_LASER_PHOTON_ENEMY = {count = 1, countSuper = 1}
@@ -13,7 +13,7 @@ popWeapons.FM_GATLING_ANCIENT_PHOTON = {count = 1, countSuper = 1}
 
 
 -- Weapons that do extra damage of a certain type on room hit
-local roomDamageWeapons = mods.inferno.roomDamageWeapons
+local roomDamageWeapons = mods.fusion.roomDamageWeapons
 roomDamageWeapons.FM_PULSEDEEP = {ion = 2}
 roomDamageWeapons.FM_MISSILES_CLOAK_STUN = {ion = 3}
 roomDamageWeapons.FM_MISSILES_CLOAK_STUN_PLAYER = {ion = 3}
@@ -23,7 +23,7 @@ roomDamageWeapons.FM_RVS_AC_CHARGE_EMP = {ion = 1}
 roomDamageWeapons.FM_TERMINUS = {hull = 10}
 
 
-local tileDamageWeapons = mods.inferno.tileDamageWeapons
+local tileDamageWeapons = mods.fusion.tileDamageWeapons
 tileDamageWeapons.FM_BEAM_ION_PIERCE = {ion = 1}
 tileDamageWeapons.FM_FOCUS_ENERGY_1 = {ion = 2}
 tileDamageWeapons.FM_FOCUS_ENERGY_2 = {ion = 3}
@@ -35,7 +35,7 @@ tileDamageWeapons.FM_FOCUS_ENERGY_1_ENEMY = {ion = 2}
 tileDamageWeapons.FM_FOCUS_ENERGY_2_ENEMY =  {ion = 3}
 tileDamageWeapons.FM_FOCUS_ENERGY_3_ENEMY = {ion = 4}
 
-local impactBeams = mods.inferno.impactBeams
+local impactBeams = mods.fusion.impactBeams
 impactBeams.FM_BEAM_EXPLOSION = "FM_BEAM_EXPLOSION_LASER"
 impactBeams.FM_BEAM_EXPLOSION_PLAYER = "FM_BEAM_EXPLOSION_LASER"
 impactBeams.FM_BEAM_EXPLOSION_EGG = "FM_BEAM_EXPLOSION_LASER"
@@ -43,14 +43,14 @@ impactBeams.FM_BEAM_EXPLOSION_ENEMY = "FM_BEAM_EXPLOSION_LASER"
 impactBeams.FM_FORGEMAN_DRONE_WEAPON = "FM_BEAM_EXPLOSION_LASER"
 impactBeams.FM_CRYSTAL_BEAM = "FM_CRYSTAL_BEAM_LASER"
 
-local impactWeapons = mods.inferno.impactWeapons
+local impactWeapons = mods.fusion.impactWeapons
 impactWeapons.FM_HOLYSHIT_10 = "FM_HOLYSHIT_10_EFFECT"
 impactWeapons.FM_HOLYSHIT_11 = "FM_HOLYSHIT_11_EFFECT"
 impactWeapons.FM_HOLYSHIT_19 = "FM_HOLYSHIT_19_EFFECT"
 impactWeapons.FM_HOLYSHIT_20 = "FM_HOLYSHIT_20_EFFECT"
 
 --To hit every room on the targeted ship with an effect (Until accuracy stats are exposed, please ensure all weapons used in hitEveryRoom have accuracy 100)
-local hitEveryRoom = mods.inferno.hitEveryRoom
+local hitEveryRoom = mods.fusion.hitEveryRoom
 hitEveryRoom.FM_ARBOREAL_EXE = "FM_ARBOREAL_EXE_STATBOOST"
 hitEveryRoom.FM_ARBOREAL_REV = "FM_ARBOREAL_REV_STATBOOST"
 

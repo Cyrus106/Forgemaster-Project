@@ -12,13 +12,14 @@
 		<mod-append:script>data/forgemaster_scripts/crew.lua</mod-append:script>
 		<mod-append:script>data/forgemaster_scripts/names.lua</mod-append:script>
 		<mod-append:script>data/forgemaster_scripts/forge_fight.lua</mod-append:script>
+		<mod-append:script>data/forgemaster_scripts/recipe_hover.lua</mod-append:script>
 	</mod:findLike>
 </FTL>
 
 
 
 
-<FTL><!--appending to Inferno-Core-->
+<FTL><!--appending to Fusion-->
 	<events>
 		<variable name="fm_called_forgemaster" op="set" val="0"/>
 		<req name="FM_CAN_CALL_FORGEMASTER" type="all">
@@ -53,7 +54,7 @@
 		</req>
 	</events>
 	<mod:findLike type="events">
-		<mod:findName type="req" name="FMCORE_LIST_JUMPSPACE_EQUIPMENT">
+		<mod:findName type="req" name="FUSION_LIST_JUMPSPACE_EQUIPMENT">
 			<mod-append:name>fm_forgemaster_phone</mod-append:name>
 			<mod-append:name>fm_forgemaster_dead</mod-append:name>
 		</mod:findName>
@@ -13574,11 +13575,11 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 		</aug>
 		
 		<aug name="FM_MODULAR_HULL_NO_BREACH">
-			<function name="FMCORE_NO_BREACH" value="1" useForReqs="false"/>
+			<function name="FUSION_NO_BREACH" value="1" useForReqs="false"/>
 		</aug>
 		
 		<aug name="FM_MODULAR_HULL_NO_FIRE">
-			<function name="FMCORE_NO_FIRE" value="1" useForReqs="false"/>
+			<function name="FUSION_NO_FIRE" value="1" useForReqs="false"/>
 		</aug>
 
 		<aug name="FM_MODULAR_HULL_RESILIENT">
@@ -14986,7 +14987,7 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			<function name="ANTIAUG_SYSTEM_CASING" value="0.15"/>
 			<function name="ANTIAUG_ION_ARMOR" value="0.15"/>
 			<function name="ANTIAUG_ROCK_ARMOR" value="0.15"/>
-			<function name="ANTIAUG_FMCORE_NO_BREACH" value="4"/>
+			<function name="ANTIAUG_FUSION_NO_BREACH" value="4"/>
 			<icon>icon_fm_modhull_capstone_resistsmash</icon>
 		</aug>
 		<aug name="FM_MODULAR_HULL_WEAPON_IGNITE">

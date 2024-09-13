@@ -1,4 +1,4 @@
-local vter = mods.inferno.vter
+local vter = mods.fusion.vter
 local eventParser = Hyperspace.CustomEventsParser.GetInstance()
 local capp = Hyperspace.Global.GetInstance():GetCApp()
 local function copyTable(t)
@@ -440,6 +440,6 @@ LUA pds = Hyperspace.Global.GetInstance():GetCApp().world.space:CreatePDSFire(WP
 custom ASB anyone?
 
 LUA ANIM=animControl:GetAnimation("detergent")
-LUA for proj in mods.inferno.vter(Hyperspace.Global.GetInstance():GetCApp().world.space.projectiles) do proj.flight_animation = ANIM end
+LUA for proj in mods.fusion.vter(Hyperspace.Global.GetInstance():GetCApp().world.space.projectiles) do proj.flight_animation = ANIM end
 detergent ASB when?
 ]]

@@ -1,5 +1,5 @@
-local vter = mods.inferno.vter
-local DefaultTable = mods.inferno.DefaultTable
+local vter = mods.fusion.vter
+local DefaultTable = mods.fusion.DefaultTable
 
 --BLOOD MORPH
 

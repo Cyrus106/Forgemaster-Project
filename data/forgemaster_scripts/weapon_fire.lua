@@ -1,6 +1,6 @@
-local vter = mods.inferno.vter
-local real_projectile = mods.inferno.real_projectile
-local randomInt = mods.inferno.randomInt
+local vter = mods.fusion.vter
+local real_projectile = mods.fusion.real_projectile
+local randomInt = mods.fusion.randomInt
 
 local redShot = Hyperspace.Resources:GetImageId "weapon_projectiles/fm_surge_laser_proj_red.png"
 local blueShot = Hyperspace.Resources:GetImageId "weapon_projectiles/fm_surge_laser_proj_blue.png"

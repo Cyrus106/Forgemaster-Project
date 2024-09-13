@@ -8,7 +8,6 @@ FORGEMASTER_INFO = {
     FEATURE = 0,
   },
 }
-if not INFERNO_CORE_INFO then 
-  error("Warning! Inferno-Core was not patched before Forgemaster! Please re-patch your mods, or the game will not work!") 
+if not FUSION_INFO then 
+  error("Warning! Fusion was not patched before Forgemaster! Please re-patch your mods, or the game will not work!") 
 end
-

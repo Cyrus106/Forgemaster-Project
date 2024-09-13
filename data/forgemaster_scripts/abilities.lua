@@ -1,5 +1,6 @@
-local vter = mods.inferno.vter
-local EffectVector = mods.inferno.EffectVector
+local vter = mods.fusion.vter
+local EffectVector = mods.fusion.EffectVector
+local draw_room_resist_temp = mods.fusion.draw_room_resist_temp
 
 local UNIQUE_KEY = {}
 --Init EffectVectors
@@ -41,6 +42,7 @@ function(ActivatedPower, ShipManager)
 
     effectVector:Apply(shellFortify)
     room.extend.sysDamageResistChance = room.extend.sysDamageResistChance + shellFortify.strength
+    draw_room_resist_temp(ShipManager, room, shellFortify.duration)
   end
 end)
 
