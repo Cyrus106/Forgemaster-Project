@@ -774,7 +774,7 @@ local function ingredient_title_from_entry(ingredient,index)
     ret = Hyperspace.Blueprints:GetDroneBlueprint(name):GetNameShort()
     if string.len(ret) > 0 then return ret end
     local aug = Hyperspace.Blueprints:GetAugmentBlueprint(name)
-    if aug.GetNameShort and string.len(aug:GetNameShort()) > 0 then return aug:GetNameShort() end
+    if not tostring(Hyperspace.version):find("1.13") and string.len(aug:GetNameShort()) > 0 then return aug:GetNameShort() end
     ret = Hyperspace.Blueprints:GetCrewBlueprint(name):GetNameShort()
     if (ingredient == "human" or ret ~= Hyperspace.Blueprints:GetCrewBlueprint("human"):GetNameShort()) then return ret end
     return false
