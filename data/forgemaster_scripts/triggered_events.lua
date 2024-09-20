@@ -2,7 +2,7 @@ local vter = mods.fusion.vter
 local real_projectile = mods.fusion.real_projectile
 local randomInt = mods.fusion.randomInt
 
---[[script.on_game_event("FMCORE_ONCREWZERO", false,
+--[[script.on_game_event("FUSION_ONCREWZERO", false,
 function()
   if Hyperspace.ships.enemy and not Hyperspace.ships.enemy.bAutomated then 
     Hyperspace.ships.enemy:AddAugmentation("HIDDEN FM_PURGE_AUG")

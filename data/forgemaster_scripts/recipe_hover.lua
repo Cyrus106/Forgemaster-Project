@@ -34,10 +34,10 @@ local function get_cost_string(costs)
             table.insert(ret,costs[1].."~")
         end
         if costs[2] and costs[2]>0 then
-            table.insert(ret,costs[1].."}")
+            table.insert(ret,costs[2].."}")
         end
         if costs[3] and costs[3]>0 then
-            table.insert(ret,costs[1].."}")
+            table.insert(ret,costs[3].."|")
         end
     else
         return costs.."~"
@@ -534,7 +534,7 @@ mods.Forgemaster.recipes = {
 		}
     },
 
-    FM_BOMBLAUNCHER_HULL = {
+    FM_MINELAUNCHER_HULL = {
         { 
             costs = 90,
 			{"LASER_HULL_2"},
@@ -710,6 +710,20 @@ mods.Forgemaster.recipes = {
 		}
     },
     
+    
+    
+    rock = {
+        {
+            "FISH_FOOD_ROCK",
+            "human",
+            "aaaaaaaaaaaa"
+        }
+    },
+    shell = {
+        "FISH_FOOD_TINCAN",
+        "slug",
+        "aaaaaaaaaaaa"
+    },
 }
 -- Table of all FM ingredients and what they are used in
 mods.Forgemaster.ingredients = {}

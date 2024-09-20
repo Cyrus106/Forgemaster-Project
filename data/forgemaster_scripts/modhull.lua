@@ -10,7 +10,7 @@ local getEmptyBars = function(ShipManager,sysId)
 end
 
 --Overcharmed
-script.on_game_event("FMCORE_ONDAMAGE",false,
+script.on_game_event("FUSION_ONDAMAGE",false,
 function()
   local extraNotches = Hyperspace.ships.player:GetAugmentationValue("FM_MODULAR_UPGRADE_EXTRANOTCHES") 
   local damageQuantity = Hyperspace.ships.player:HasEquipment("FM_HULL_UPGRADE_POINTS") - (15 + extraNotches)
@@ -25,7 +25,7 @@ end
 )
 
 --Murals
-script.on_game_event("FMCORE_ONDAMAGE",false,
+script.on_game_event("FUSION_ONDAMAGE",false,
 function()
   local augValue = Hyperspace.ships.player:GetAugmentationValue("FM_MODULAR_HULL_MURAL") 
   local guaranteedDamage = math.floor(augValue)
@@ -85,8 +85,8 @@ function()
   selfArm:render() 
 end)
 script.on_game_event("START_BEACON_REAL", false, function() selfArm:reset() end)
-script.on_game_event("FMCORE_ONJUMP", false, function() selfArm:reset() end)
-script.on_game_event("FMCORE_ONDAMAGE", false, function() selfArm:onDamage() end)
+script.on_game_event("FUSION_ONJUMP", false, function() selfArm:reset() end)
+script.on_game_event("FUSION_ONDAMAGE", false, function() selfArm:onDamage() end)
 script.on_game_event("FM_HULLKILL_TRACKER_EVENT", false, function() selfArm:redeem() end) --We can find a better check for kills later.
 script.on_game_event("FM_CREWKILL_TRACKER_EVENT", false, function() selfArm:redeem() end)
 
@@ -114,7 +114,7 @@ function(ShipManager, AugName, AugValue)
   return Defines.Chain.CONTINUE, AugValue
 end)
 --[[
-script.on_game_event("FMCORE_ONJUMP", false, 
+script.on_game_event("FUSION_ONJUMP", false, 
 function()
   if Hyperspace.ships.player:GetAugmentationValue("FM_MODULAR_HULL_FASTSHIELD") > 0 then
     local shieldSystem = Hyperspace.ships.player:GetSystem(0)

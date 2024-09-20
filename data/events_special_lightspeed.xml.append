@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FTL><!--appending to Inferno-Core-->
-	<mod:findName type="event" name="FMCORE_ATLAS_EQUIPMENT">
+	<mod:findName type="event" name="FUSION_ATLAS_EQUIPMENT">
 		<mod-append:choice req="FM_CAN_CALL_FORGEMASTER" blue="false">
 			<text>[Forgemaster] Contact Alastair.</text>
 			<event>
@@ -13,7 +13,7 @@
 			<event load="OPTION_INVALID"/>
 		</mod-append:choice>
 	</mod:findName>
-	<mod:findName type="event" name="FMCORE_SPAWNER">
+	<mod:findName type="event" name="FUSION_SPAWNER">
 		<mod-append:queueEvent>FORGEMASTER_SPAWNER</mod-append:queueEvent>
 	</mod:findName>
 </FTL>
@@ -26,7 +26,7 @@
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event>
-			<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+			<loadEvent>FUSION_ATLAS_EQUIPMENT</loadEvent>
 		</event>
 	</choice>
 
@@ -132,7 +132,7 @@
 		<text>Nevermind.</text>
 		<event>
 			<variable name="fm_called_forgemaster" op="set" val="0"/>
-			<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+			<loadEvent>FUSION_ATLAS_EQUIPMENT</loadEvent>
 		</event>
 	</choice>
 

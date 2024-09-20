@@ -157,7 +157,7 @@
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
-					<loadEvent>FMCORE_ATLAS_EQUIPMENT</loadEvent>
+					<loadEvent>FUSION_ATLAS_EQUIPMENT</loadEvent>
 				</event>
 			</choice>
 		</event>

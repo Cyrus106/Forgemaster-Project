@@ -13460,6 +13460,9 @@ EXAMPLE OF CREW HAZARD THAT CAN HARM AND DISABLE ACTIONS OF CREW HIT
 			</mod-append:req>
 
 		</mod:findName>
+		<mod:findName type="req" name="LIST_CHECK_ENERGY_SHIELD">
+			<mod-append:name>FM_MODULAR_HULL_PARTICLE</mod-append:name>
+		</mod:findName>
 		
 		<mod:findName type="req" name="ALL_BOONS">
 			<mod-append:name>prof_z_boon_fm_plated</mod-append:name>

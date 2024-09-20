@@ -1,5 +1,5 @@
 <FTL><!--appending to inferno-Core-->
-	<mod:findName type="event" name="FMCORE_ONJUMP">
+	<mod:findName type="event" name="FUSION_ONJUMP">
 		<mod-append:queueEvent>FM_JUMP_REMOVE_GHOST_PURGE</mod-append:queueEvent>
 		<mod-append:queueEvent>FM_JUMP_TUCO</mod-append:queueEvent>
 		<mod-append:queueEvent>FM_JUMP_LANIUS</mod-append:queueEvent>
@@ -12,7 +12,7 @@
 		<mod-append:queueEvent>FM_HULL_LIMITER_SHIELD</mod-append:queueEvent>-->
 		<mod-append:queueEvent>FM_HULL_LIMITER_REACTOR</mod-append:queueEvent>
 	</mod:findName>
-	<mod:findName type="event" name="FMCORE_ONDAMAGE">
+	<mod:findName type="event" name="FUSION_ONDAMAGE">
 		<!--<mod-append:queueEvent>FM_ONDAMAGE_MURALS</mod-append:queueEvent>-->
 		<!--<mod-append:queueEvent>FM_ONDAMAGE_OVERCHARMED</mod-append:queueEvent>-->
 		<!--<mod-append:queueEvent>FM_ONDAMAGE_HULL_ARM</mod-append:queueEvent>-->
